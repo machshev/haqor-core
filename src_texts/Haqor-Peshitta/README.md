@@ -14439,109 +14439,122 @@ Source checks for Revelation 12:
 
 Source checks for Revelation 13:
 
-- 13:1: The source opens with FIRST-person singular stood on the sand of the sea, then
-  I-saw, rather than Murdock's previous-chapter third-person standing sentence. The
-  ascending beast has ten horns, seven heads and ten diadems. Name is SINGULAR on its
-  plural heads, not Murdock's names. Short ascending/beast and existential/dative units
-  give normal English order and possession.
-- 13:2: Likeness is an actual noun, retained in was-in-the-likeness of a leopard. The
-  feet are compared with a BEAR, not Murdock's wolf; lions is plural in the mouth
-  comparison. English supplies the understood feet/mouth in those comparisons. The
-  give/to-it/dragon unit retains the dragon as giver and the beast as recipient. HIS
-  power and HIS throne belong to the dragon, distinct from the beast's feminine suffixes
-  on its feet and mouth.
-- 13:3: One of its heads is as though battered to death. The export has no gloss for
-  `פעיעתא`; Ginoskos lists the exact lemma `ܦܥܝܥܐ` as battered/beaten/bruised/worn and
-  the related `ܦܥ` as beat/wound
-  (https://ginoskos.com/dictionary?o%5Bascension%5D=desc&o%5Bcolumn%5D=lemma&p%5Bpage%5D=74&p%5Bsize%5D=20).
-  Battered follows that lexical evidence, with to-death supplied by the next source
-  word, rather than guessing from an empty gloss. The separate wound-of-its-death
-  construction is idiomatically its-mortal-wound, healed passively. All's suffix
-  anticipates earth. Following renders the after/behind relation of the earth's
-  amazement toward the beast.
-- 13:4: Both worship clauses remain: worship of the dragon because he gave authority,
-  then worship of the beast. The saying infinitive introduces BOTH questions, including
-  who resembles this beast, absent from the reference. Fight-with-it uses the fighting
-  sense of the infinitive's root in context; ability is a separate active participle.
-- 13:5: A mouth and authority are given to the beast in two separate passive clauses.
-  Speaking is an active participle modifying mouth; great things is plural, and
-  blasphemy is a mass noun. Authority is to act for forty-two months, with the
-  three-position duration retaining both numerals and months.
-- 13:6: Opened is a feminine singular perfect referring to the beast. Blaspheme occurs
-  twice: an infinitive, then an imperfect purpose clause. Name and lodging have NO
-  possessive suffixes; lodging belongs to THOSE WHO ARE LODGED in heaven. The latter is
-  a passive-participle state. The English keeps the against/in relations with both
-  objects without importing Murdock's his-name/his-tabernacle or a separate and-them
-  object.
-- 13:7: The permission to make war with the saints and overcome THEM precedes the giving
-  of authority, unlike the reference order. All's feminine plural suffix anticipates the
-  list of plural tribes, nations, languages and peoples. The two giving clauses remain
-  passive; the two actions granted are infinitives.
-- 13:8: The future worship predicate becomes English passive worship-will-be-offered TO
-  the beast BY all the inhabitants, preserving both actor and recipient without a long
-  reordered span. Those who are not inscribed are the people themselves: this source has
-  no names noun here. The book of life is further identified as that of the Lamb.
-  `קטילא` is slain/killed, despite the erroneous SEDRA stain gloss; CAL explicitly lists
-  the derived adjective qṭīl as murdered/killed
-  (https://cal.huc.edu/oneentry.php?cits=all&lemma=q%2Bl+V). This nominal adjective is
-  not mislabeled as numeric tense 6 in the export. The source says BEFORE the plural
-  foundations of the world, not Murdock's from; the foundation suffix anticipates world.
-- 13:9: The existential plus dative is idiomatic has; ears is plural. The final
-  third-singular imperfect has the exhortative force let-him-hear, rather than an
-  invented second-person imperative.
-- 13:10: Lead-away is an ACTIVE participle in a generic captor clause; others supplies
-  its understood transitive object. The captor goes into captivity, and whoever kills
-  with the sword will be killed by the sword. The latter is passive imperfect, not a
-  passive participle. Here is FAITH then ENDURANCE of the saints, in the actual source
-  order.
-- 13:11: The second beast ascends from earth and has two horns. Resemble is feminine
-  SINGULAR, so the BEAST itself resembles a lamb; the source does not attach that
-  comparison merely to plural horns. The existential/past/dative unit supplies it-had.
-  Speaking is an active participle with an explicit past auxiliary, like the dragon.
-- 13:12: The first beast's authority is fronted as object, with all-of-it resuming
-  authority. Exercise and cause are imperfects, rendered prospectively will in the
-  vision's prediction; the preceding past vision and this prospective description remain
-  distinct. Before-HIM has a genuine masculine singular suffix: the English leaves its
-  antecedent unresolved rather than silently changing the source form or confidently
-  identifying a different actor. The complete earth-and-dwellers worship clause, omitted
-  by the reference, remains. English normalizes the coordinated result as
-  cause-them-to-worship. A four-position relative/passive unit gives
-  whose-mortal-wound-was-healed, retaining relative, healing, wound and its-death
-  relation.
-- 13:13: The beast will perform great signs; fire is fronted as the object it will cause
-  to descend. Both make/do predicates are imperfects; descend is infinitive. From
-  heaven, on earth, and before human beings are three distinct relations. The
-  great-signs noun/adjective unit does not hide another source actor or event.
-- 13:14: Deceive is imperfect, rendered prospectively. The means are signs granted to
-  the second beast TO PERFORM before the first beast, a full clause absent from the
-  reference. English plural were-granted agrees with signs although the preceding Syriac
-  passive is encoded singular. Telling is the continuing force of the saying infinitive.
-  The earth-dwellers are told to make an image FOR the beast which has the sword wound
-  AND LIVED; lived is perfect, not a future recovery verb.
-- 13:15: Granted and give are separate source verbs; the gift is BREATH/spirit to the
-  beast's image, not an independent life lexeme. The following cause verb is feminine
-  singular, identifying the SECOND BEAST as the one causing the deaths, rather than the
-  masculine image. The source has no image-speaking clause. The anticipatory masculine
-  object at to-it/the-image is rendered as one short object unit. Those refusing worship
-  are to be killed passively.
-- 13:16: The prospective cause predicate is bring-it-about, with both the
-  for-all-of-them scope and the later to-them recipient retained. Small precedes great;
-  rich and poor are followed by MASTERS AND SERVANTS, not Murdock's bond and free. A
-  mark is to be given passively on their RIGHT HANDS, plural, or on the space BETWEEN
-  THEIR EYES. Space supplies normal English grammar for on-between, without substituting
-  an absent forehead noun.
-- 13:17: This clause continues the mark arrangement: no one may buy or sell AGAIN except
-  the marked person. The buy/sell distinction follows peal versus pael vocalization of
-  the same root; there is no independent ability word. The mark is OF THE NAME of the
-  beast, not mark-OR-name. On-him retains the actual locative suffix, while its-name
-  refers to the beast.
-- 13:18: Here-is-wisdom has an anticipatory feminine singular existential suffix, not a
-  second owner of wisdom. And-whoever-has-within-him understanding retains the relative
-  prefix, conjunction and in-him relation. Let-him-calculate is a third-singular
-  imperfect exhortation; its object suffix anticipates the explicit number. A short
-  number/is/for unit moves postpositive FOR into natural English order. The number is of
-  a human being, followed directly by SIX HUNDRED AND SIXTY AND SIX; no extra
-  its-number-is clause is imported.
+- All 18 verses and 285 exact source words were checked for morphology,
+  clause meaning, ownership and continuous English. All 24 original shared
+  spans were reviewed; six narrow exceptions remain: having (13:1), has
+  (13:9, 13:14, 13:18), past had (13:11), and the anticipatory image object
+  (13:15). Ordinary noun phrases, subjects, recipients, copulas, numerals,
+  modifiers, negation and postpositive particles have separate owners.
+- 13:1-2: The source opens with first-singular I-stood on the sand of the
+  sea, followed by I-saw. Ascending and beast are separately linked; the
+  existential/dative ith lah supplies one having predicate. The beast has
+  ten horns, seven heads and ten diadems on its horns. Name is singular
+  on its plural heads. Likeness is an actual noun, separately owned from
+  the perfect past auxiliary was. Feet are compared with a bear's and the
+  mouth with that of plural lions. English supplies the understood feet
+  and mouth in those comparisons. The dragon, gave, and to-it recipient
+  are independent. The masculine his-power and his-throne belong to the
+  dragon, distinct from the beast's feminine suffixes. And/great/authority
+  are separately linked.
+- 13:3-5: One of its heads is as though battered to death. The export's
+  empty gloss for פעיעתא is checked against the exact lemma פעיעא:
+  https://ginoskos.com/dictionary?o%5Bascension%5D=desc&o%5Bcolumn%5D=lemma&p%5Bpage%5D=74&p%5Bsize%5D=20.
+  That entry gives battered/beaten/bruised/worn and the related root as
+  beat/wound. To-death remains separately owned. In the following wound-
+  of-its-death construction, the death word owns its-mortal, the wound
+  noun separately owns wound and and, and healing is passive perfect.
+  Amazed, all and earth are separately linked. All's feminine suffix
+  anticipates earth (Muraoka §112); following renders the after/behind
+  relation rather than inventing another finite action. Both worship
+  clauses remain: dragon because he gave authority, then beast. The saying
+  infinitive introduces both questions, including who resembles this
+  beast. This and beast, ability and fighting infinitive are independent.
+  Mouth and authority are given in two passive Ethpeal perfect clauses.
+  Speaking is Pael active participle; great-things is plural and blasphemy
+  is a mass noun. The forty/two/months duration has separate owners.
+- 13:6-8: Opened is feminine singular perfect, referring to the beast.
+  Both blaspheming predicates remain, infinitive then imperfect purpose.
+  Name and lodging have no possessive suffixes. Lodging belongs to those
+  lodged in heaven, the latter an actual passive-participial state; no
+  his-name, his-tabernacle or extra and-them object is imported. Permission
+  to make war with the saints and overcome them precedes authority over
+  tribes, nations, languages and peoples. All's feminine plural suffix
+  anticipates that list. The giving clauses are passive; their granted
+  actions are infinitives. The worship verb in 13:8 is active Peal third-
+  plural imperfect, rendered all-the-inhabitants ... will-worship-it. And,
+  subject and object have independent owners. Those who are not inscribed
+  are the people themselves; no names noun occurs. The English copula
+  belongs to the passive inscribed predicate, separately from not. The
+  book of life is identified as that of the Lamb. Qtila is the nominal
+  slain/killed adjective despite the erroneous stain gloss; CAL lists the
+  derived qtil as murdered/killed:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=q%2Bl+V.
+  It is not labeled a numeric-tense-6 verb in this export. The source says
+  before the plural foundations of the world. The foundation suffix
+  anticipates world, rather than adding another his.
+- 13:9-11: Ith leh expresses one possession predicate has, with plural
+  ears independently owned. Let-him-hear is a third-singular imperfect
+  exhortation, not a second-person imperative. Lead-away is active Aphel
+  participle; others supplies its understood transitive object. Goes and
+  kills are active participles in generic clauses; will-be-killed is
+  passive imperfect. These clauses are reordered into continuous English
+  without changing the captor, killer or sword relation. Faith precedes
+  endurance, in the source order. The second beast ascends from earth and
+  has two horns. Its feminine singular resembling participle means the
+  beast itself resembles a lamb, not just its horns. Ith hwa lah expresses
+  one past had; and is separately at the existential and it at the
+  feminine dative suffix. Hwa is the perfect past auxiliary, not a pronoun.
+  The separate speaking participle and past auxiliary have their own owners.
+- 13:12-14: The first beast's authority and its resumptive all-of-it are
+  reordered as it-will-exercise-all-the-authority. The suffix points to
+  that same authority and does not add another owner. Exercise and cause
+  are feminine imperfects, prospective in the vision. Before-him has a
+  genuine masculine suffix whose antecedent is left unresolved. The full
+  earth-and-dwellers worship clause remains. First and beast are separate
+  in both occurrences. The healed-wound relative is split: the-one from
+  the demonstrative, whose-mortal from death and its feminine suffix,
+  wound from its noun, and was-healed from the passive perfect. Great and
+  signs are independent. The two make/do imperfects and descending
+  infinitive retain fire, heaven, earth and human beings as distinct
+  arguments/relations, with fire moved after cause for English word order.
+  Deceive is imperfect. The signs were granted to the second beast to
+  perform before the first beast; that whole clause remains. English
+  were-granted agrees with signs though the Syriac passive is encoded
+  singular. Telling renders the continuing saying infinitive. An image is
+  made for the beast that has the sword wound and lived: ith lah supplies
+  has, while that is separately linked to its relative prefix. Lah is the
+  beast as possessor, not an anticipatory pronoun referring to wound.
+  Lived is perfect, not a future recovery verb.
+- 13:15-16: Granted and give are separate verbs. The gift to the image is
+  breath/spirit, not an imported life noun. The feminine cause verb refers
+  to the second beast, rather than the masculine image; no image-speaking
+  clause occurs. In the later worship object, masculine leh anticipates
+  l-salma, the image (Muraoka §112). Only the English head image retains
+  joint ownership of that one pronominal and explicit object; the article
+  stays on the explicit noun. No second it/object is invented. The
+  relative linker, do-support, not and worship are separately linked;
+  do belongs to the imperfect verb. Killing is passive. Bring-it-about
+  retains both for-all-of-them scope and the later to-them recipient.
+  Small/great, rich/poor, masters/servants follow the actual source; no
+  bond/free pair is substituted. A mark is given on plural right hands,
+  with their/right/hands separately linked, or on the space between their
+  eyes. On owns only the preposition; between owns its English nominal
+  support the-space-between. No forehead noun is imported.
+- 13:17-18: So-that, no and one have distinct owners. Buy and sell are
+  imperfects of the same root in Peal versus Pael; again remains explicit
+  and no independent ability verb is added. The marked-person exception
+  is rendered the-one/on-whom/there-is/the-mark: the existential and actual
+  locative suffix retain independent owners without assigning has to an
+  isolated existential word. The mark is of-the-name of the beast, or
+  the number of its name. Here-is-wisdom has an anticipatory feminine
+  existential suffix, not an extra possessor. Ith beh expresses
+  understanding within a person as has-within-him; only has retains joint
+  existential/locative ownership, while and-whoever and within-him are
+  separately linked. Let-him-calculate is a third-singular imperfect
+  exhortation; its object suffix anticipates the explicit number. For,
+  it-is and number have separate owners, moving postpositive for into
+  normal English order. The number is of a human being, followed directly
+  by six hundred and sixty and six. No extra its-number-is clause occurs.
 
 Source checks for Revelation 14:
 
