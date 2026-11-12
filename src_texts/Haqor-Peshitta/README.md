@@ -10871,15 +10871,119 @@ Source checks for Hebrews 12:
 
 Source checks for Hebrews 13:
 
-- In 13:1–2, the continued brotherly love and the hospitality instruction are rendered as genuine English exhortations. The hospitality verse retains both the source's worthiness/privilege predicate and the receiving of angels without awareness, rather than assigning remembered English words to unrelated positions.
-- In 13:4, the contrast particle introduces God's judgment of fornicators and adulterers; it does not contrast the two groups with one another. The bed retains its possessive. In 13:5, the mind/money negative exhortation, sufficiency construction, and two datives belong to their actual clauses. The following emphatic subject identifies the Lord himself as the speaker, without borrowing an extra “you” from the preceding clause. Both negatives and the hand image remain in his promise.
-- In 13:6, the first-person confidence construction and its dative are interpreted together, while the quoted helper/fear/human-action clause retains its own persons. In 13:8, `הויו` functions as an identity/copular expression in the assertion about Jesus the Messiah; the English does not strand the dictionary's “i.e.” gloss before “forever.”
-- In 13:9, the strengthening verb is active first-person plural and the hearts are “our hearts,” rather than a passive statement about “your hearts.” The final benefiting verb is passive: those who walked in the foods were not benefited. In 13:11, the animals/blood relative and the burned-flesh comment are joined without treating the first half as an independent sentence; the chief priest, sanctuary, sins, flesh, and encampment retain their source relationships.
-- In 13:12–14, Jesus suffers outside the city and the readers are called to go to him outside the encampment. The source's coming-city expression is retained, with the explanatory particle introducing the lack of an abiding city here. In 13:15, praise, fruit, lips, confession, and his name remain linked to their actual words.
-- In 13:16, compassion and sharing with the poor are followed by the source's approval construction: these sacrifices make a person pleasing before God. In 13:17, the leaders' watching, the readers' souls and account, and the warning about unprofitable groaning retain their actual subjects and suffixes.
-- In 13:18, the explanatory particle belongs to “for we are confident,” followed by the conscience complement and conduct rationale. It is not moved into a new independent conscience clause. In 13:19, the quickness modifies the writer's return. In 13:20, the great Shepherd is identified as Jesus the Messiah, our Lord; the covenant is not made the antecedent of that identification.
-- In 13:21, the second-person plural recipients of “make you complete” are distinct from `בנ`, “in us,” in the following working/accomplishing clause. The blessing retains its volitional force. In 13:23, “with him” belongs to the writer's seeing the readers with Timothy after his arrival, not to Timothy arriving with himself.
-- In 13:24, the first greeting is an imperative, but the Italy greeting is a declaration with those from Italy as its subject. The final grace greeting retains its plural recipients and Amen.
+- All 25 verses and 321 source positions were checked against exact
+  forms, morphology and connected English. The 67 original shared spans
+  become seven narrow exceptions: a hypothetical comparison, two relative
+  resumptions, three exterior spatial relations and the patience idiom.
+  Ordinary noun phrases, titles, negation, auxiliaries and clauses retain
+  separate owners.
+- In 13:1–2, love and brothers/strangers are separate. Let remain and
+  do not forget preserve the exhortations. People is a collective noun
+  with a plural worthiness predicate, rendered were privileged. While,
+  not and aware remain distinct, as does receiving angels. Regishin is
+  a stative aware participle; passive-form participles need not have
+  passive English meaning, as Muraoka section 84 explains.
+- In 13:3, ayk haw introduces as if, with the second-person pronoun,
+  being bound and with them separately linked. The second comparison
+  is as people who are clothed in flesh; the explicit second-plural
+  enclitic supplies are, and the flesh word's relative prefix and
+  preposition retain separate English spans.
+- In 13:4, honored, is, marriage, their bed, pure and its copula remain
+  separate. God is the subject of the judging participle; the contrast
+  introduces judgment of both fornicators and adulterers, rather than
+  contrasting those groups with one another.
+- In 13:5, the mind's negative exhortation retains the being predicate,
+  loving and money separately. The suffice predicate's beneficiary
+  and the possession dative are distinct; whatever is yours supplies
+  the latter relation. Himself belongs to the emphatic hu referring
+  to the Lord. Both promise negatives are separate, with no added
+  never adverb. Idaiya is plural hands; the hands and toward you retain
+  their actual source owners and the hand image is preserved.
+- In 13:6–7, the first-plural existential and its dative are split as
+  it is for us to say confidently. The helper quotation keeps its own
+  first-singular suffixes and interrogative what; it is not converted
+  into an object clause of fearing. Be mindful splits hwaytun from
+  the remembering participle. The advice construction, rather than
+  mechanical past tense, follows Muraoka section 87. Spoken words,
+  God, examining the outcome, the guides' ways and imitating their
+  faith retain their separate owners.
+- In 13:8, huyu is the identity/copular expression, not an isolated
+  i.e. dictionary gloss. Muraoka section 10 analyzes hu with its enclitic
+  as an identifying pronoun/copular expression. Is the same renders
+  that identity in the temporal assertion about Jesus the Messiah;
+  yesterday, and today, and forever have separate links.
+- In 13:9, the teachings and both plural modifiers are separate.
+  The strengthening predicate is active first-plural and its object
+  is our hearts; it is not made a passive statement about your hearts.
+  Those who walked in the foods were not benefited, preserving the
+  passive perfect and its negation. In 13:10, the altar's relative
+  prefix and resumed from it supply only from which; may, not, eat,
+  those serving and the tabernacle remain separately linked.
+- In 13:11, the chief of priests actively was bringing the animals'
+  blood, correcting the baseline's passive present. Whose combines
+  only the relative prefix on the bringing predicate and the resumed
+  third-feminine-plural possessive on blood. Blood, chief, priests,
+  the past auxiliary, bringing, sanctuary house and sins are separate.
+  The flesh's burning participle and past auxiliary remain distinct;
+  it was burning, not a supplied present passive.
+- In 13:11–13, l-bar men is the exterior relation outside. Only outside
+  combines its components, separately for the encampment, city and
+  second encampment reference. Jesus suffered so that he might
+  sanctify his people through his blood; the purpose is an imperfect
+  subordinate clause. The readers' going out to him and bearing his
+  reproach keep their actual source words.
+- In 13:14, for belongs only to gir. The negative existential and
+  dative are now there is no and for us, correcting the baseline's
+  assignment of all three words to for. City, abiding and here remain
+  separate. Atida has its future sense, that is to come, not a forced
+  literal prepared; compare Muraoka's glossary entry for atid.
+- In 13:15, nasseq permits first-plural let us offer despite the export's
+  third-singular tag: these imperfect forms share the nun prefix and
+  lack a distinguishing ending (Muraoka section 54). The surrounding
+  first-plural exhortation determines the reading. The singular
+  feminine d-itheh refers to praise, rendered explanatory that is,
+  rather than being made a plural copula for the sacrifices. Fruits
+  is plural, and lips, confessing and his name remain separate.
+- In 13:16, by these sacrifices is an instrumental phrase. A person
+  is the subject of the Peal pleasing predicate; the sacrifices do
+  not become a causative subject making a person pleasing. Compassion,
+  fellowship, poor, the negative and forgetting retain separate links.
+- In 13:17, persuaded and obey them retain their own predicates and
+  object dative. The leaders watch for the readers' plural souls as
+  people who give their account. The purpose prefix, joy, modal being
+  auxiliary and doing predicate have separate links. Groans is plural.
+  Paqha means profit in this context, rather than the supplied blossom
+  gloss; the negative and affected you remain separate. The profit
+  connection is also recorded among the lexical cross-references to
+  paqeh in the [Sureth dictionary's prosper entry](https://www.assyrianlanguages.org/sureth/dosearch.php?language=id&searchkey=40857).
+- In 13:18–19, for belongs to we are confident, followed by the good
+  conscience and possession clause. Since in everything, desiring,
+  conducting ourselves and well remain distinct. I and request are
+  separately linked, and quickly modifies the writer's return.
+- In 13:20–21, the God of peace raised the great Shepherd from among
+  the dead by the blood of the eternal covenant. From, among, the
+  dead, Shepherd, great, flock, blood, eternal and covenant are separate.
+  Jesus the Messiah, our Lord identifies the Shepherd; the covenant
+  is not the antecedent of the masculine who is. May he make you
+  complete retains the prayer's volitional force with separate pronoun
+  and predicate links. In us is first plural, distinct from the
+  second-plural recipients. Something good before him, through Jesus
+  the Messiah, glory and for the age of ages retain separate owners.
+- In 13:22, the Aphel of ngr with possessed ruha is the patience idiom,
+  literally lengthening the spirit. The [Syriac dictionary's ruha entry](https://syriacdictionary.net/mobile/index.cgi?hidden=Search&word=%DC%AA%DC%BD%DC%98%DC%9A%DC%B3%DC%90)
+  lists this construction as be patient. Only be patient combines
+  that lexical expression; that you remains on the verbal word.
+  My brothers retains the first-singular possessor. With the word
+  renders b-melta with the patience predicate. In few words and that
+  split d-b-zeuriyatha around the focal copula it is; words is supplied
+  from the writing context, as in Murdock. The brevity describes the
+  writing rather than a supplied new subject.
+- In 13:23–25, Timotheus was released; if he comes quickly, with him
+  belongs to the writer seeing the readers. The first greeting is
+  an imperative, but all from Italy greet is a declaration. Both
+  greetings explicitly retain peace; the final one separates you
+  from with peace within its one suffixed source word. Grace be
+  expresses the nominal blessing, with, all of you and Amen separate.
 
 Source checks for James 1:
 
