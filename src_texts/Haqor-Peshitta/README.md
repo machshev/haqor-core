@@ -12042,47 +12042,138 @@ Source checks for 1 Peter 5:
 
 Source checks for 2 Peter 1:
 
-- 1:1 retains the plural finite worthiness predicate. The Lord and Saviour
-  possessives are first person plural.
-- 1:3 uses a topical introduction and fronted object to preserve the late
-  giving verb at position 11. `מנ` is the relative form, not the preposition
-  "from". Recognition and calling retain their own source positions.
-- 1:4 distinguishes the initial feminine plural reference to the preceding
-  glory/excellence from the later reference to the promises. The plural
-  promises are the fronted object of giving, not its means. Positions 8-11
-  retain becoming, partakers, nature, and divine in order.
-- 1:5-7 keep the additive virtues as an elliptical imperative list. In 1:8,
-  the causative `מקימנ` and its object describe the virtues rendering the
-  addressees neither idle nor unfruitful, rather than standing in them.
-- 1:9 retains the passive lack of these qualities and forgotten cleansing of
-  former sins. In 1:10, calling and choice belong to the addressees. The noun
-  `גביתא` supports choice as well as collection; see the
-  [CAL index](https://cal.huc.edu/browseSKEYheaders.php?direction=1&sortkey=cb+g).
-  The intensity adverb and possessive on brothers are retained.
-- 1:13-15 preserve the judgment of what is proper, causal knowledge of bodily
-  departure, and making remembrance afterward. In 1:14, the disclosure verb
-  has a first-person singular recipient, while the Lord title has a
-  first-person plural possessive despite Murdock's singular title.
-- 1:16 retains first-person plural going and making known, the second-person
-  plural recipient, and the first-person plural Lord title. The fables are
-  described as fashioned artfully, not as a preceding temporal event.
-- 1:17-18 form a continuous sentence around the voice report. The declaration
-  keeps the copula, "my Son", and the speaker's pleasure. The glory's feminine
-  possessive differs from the Son's masculine referent. In 1:18, the first
-  `ל` pronoun anticipates the following voice object; it is absorbed into the
-  English object. The later recipient of the voice's coming remains explicit.
-- 1:19 keeps the additive particle and the relative connection to attending
-  to the prophetic word. The place noun and its following adjective form a
-  small phrase. The knowing construction in 1:20 continues this sentence.
-- 1:20 retains writing and its possessive, rather than substituting a claim
-  about private interpretation. The verbal noun `שריא` is contextually an
-  interpretation or exposition: its root has a metaphorical expounding sense
-  in [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24ry+V), and
-  [Murdock's translation and note](https://aramaicnewtestament.org/peshitta/murdock/epistle/2peter_1.htm)
-  support this reading. CAL's noun gloss "release" alone does not settle the
-  metaphorical meaning.
-- 1:21 distinguishes being moved from speaking. The Holy Spirit occupies
-  positions 11-13; the speakers are third-person plural holy people of God.
+- All 21 verses and 349 source words were checked against exact forms,
+  morphology and continuous English. All 85 original shared spans were
+  reviewed; eight narrow exceptions remain in the alignment ledger.
+- 1:1 separates servant, apostle, Jesus and Messiah. Feminine singular
+  shawyath agrees with faith, not the plural recipients: "a faith equal in
+  honor with us". The relative prefix and faith preposition share their
+  word at 7, while the third-person plural Ethpeal perfect at 11 remains
+  "were counted worthy". The
+  [CAL shwy entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24wy+V)
+  explicitly documents Ethpeal being considered worthy; this is not an
+  active obtaining verb or a singular faith subject. Both Lord and Saviour
+  retain their first-person plural possessives.
+- 1:2 separates grace and peace; the imperfect is the opening wish "May
+  ... increase". Our Lord, Jesus and Messiah retain separate owners.
+- 1:3 continues the preceding title with "as the one who gave", rather
+  than the detached "As for him". Man is the relative/dummy antecedent,
+  not the preposition from. The relative prefix on all at 2 introduces the
+  late third-person singular perfect giving verb at 11; it owns "who" and
+  "all" in English order. Those things, their existence, divine power,
+  life and fear of God remain separate. Recognition and calling retain
+  their own words; us belongs to the calling clause at 16, without being
+  duplicated as another giving recipient. The b- prefix at 17 is "by his
+  own glory and excellence", rather than changing it to a destination.
+- 1:4 "through which" retains the relative prefix and feminine plural
+  suffix referring back to glory and excellence. Masculine plural promises
+  are the giving object, not its means. Great, precious, giving, you,
+  through these, becoming, partakers, nature and divine are separately
+  owned. The fleeing participle and explicit plural subject are distinct;
+  lusts is plural, with the following world relative retained.
+- 1:5 renders the reinforced demonstrative/topic introduction as "And as
+  for this now", without inventing a copular complement. Hi and hada can
+  form a topic sequence; compare whi hada in the Ps-Clement Recogs 2.82:25
+  example under [CAL m'n](https://cal.huc.edu/oneentry.php?cits=all&lemma=m%29n+V).
+  Applying diligence and its explicit you are separate; all and diligence,
+  add, to, your faith and excellence each retain their own word. The repeated
+  den connectors and al prepositions in 1:5-7 are split into "and" and
+  "to". Fear of God and love of the brotherhood are ordinary split noun
+  phrases; the distinct final love noun is retained.
+- 1:8 keeps found and its recipients, then the feminine plural causative
+  Aphel participle: these qualities render the addressees idle or fruitful,
+  not the qualities themselves. La hwa is the present negative frame,
+  rendered "do not", rather than automatic past tense; compare Muraoka
+  sections 93 and 110. Idle, nor, without, fruit, render and you are split.
+  The possessive on recognition anticipates the following Lord genitive.
+- 1:9 retains the passive plural found predicate, explicit these and the
+  singular blind person's copula. "In whom" combines the relative prefix
+  and resumed dative possessor; negation and found remain separate. The
+  second negative seeing clause and perfect forgetting clause are retained.
+  Cleansing, his sins and former each retain their actual owner.
+- 1:10 keeps the causal preposition and demonstrative separately as "And
+  because of that". My brothers, exceedingly and be diligent remain distinct.
+  The d- prefix on by introduces the following second-person plural
+  imperfect purpose: "so that by your good deeds you may make your calling
+  and your choice firm". This replaces the detached imperative semicolon.
+  [CAL gbyh](https://cal.huc.edu/oneentry.php?cits=all&lemma=gbyh+N)
+  directly documents the noun's choice sense, alongside collection. The
+  following condition, doing, explicit subjects, negative, ever and
+  stumbling are split; the participle has a prospective sense in context.
+- 1:11 separates for, thus, entrance, giving, recipients and abundantly.
+  Eternal qualifies the kingdom. Both Lord and Saviour retain our.
+- 1:12 renders the Aphel participle with min as "I do not refrain from
+  reminding", rather than making it merely fatigue. The
+  [CAL m'n entry](https://cal.huc.edu/oneentry.php?cits=all&lemma=m%29n+V)
+  cites this verse directly under Aphel refusal with min. The English
+  controlled gerund reminding retains only its participle and repeated
+  first-person pronoun in a shared span; from is separate at 5. Constantly,
+  concerning, these things, although, very well, also, knowing and its
+  plural subject are separate. No unexpressed object them is added to know.
+  The passive established predicate and its explicit subject remain
+  distinct, followed by on, this and truth.
+- 1:13 keeps the feminine appropriate predicate, third-person feminine
+  singular seeming verb and "to me" separately; it does not misread the
+  seeming verb as first-person "I thought". The subordinate temporal
+  construction is "that, as long as I am in this body, I should awaken
+  you"; the first-person imperfect awakening verb retains its plural object.
+- 1:14 separates since, knowing and its explicit first-person pronoun.
+  Departure belongs to my body; its being and soon are split. Our Lord has
+  a plural possessive, while the perfect Aphel disclosure verb has the
+  first-person singular recipient: he made known to me.
+- 1:15 preserves both the existential availability construction and the
+  second-person plural imperfect plus participle: "that it may always be
+  possible for you also, even after my departure, to be making remembrance
+  of these things". It does not insert an opportunity noun. Ith plus l- and
+  a following verbal complement can express ability; compare the GregOr
+  41 99.18.7 example, ith lan d-nd'a, under
+  [CAL mlh](https://cal.huc.edu/oneentry.php?cits=all&lemma=mlh+N).
+  Both d-ap particles are represented. The second owns even and the
+  English infinitive complement marker to; tehwon owns be and the following
+  participle making. Min bathar is the shared temporal after expression;
+  my and departure remain separate.
+- 1:16 preserves the negative focus frame, "it was not while ... that we
+  made known ... but when ...". Going and after remain separate, expressing
+  following fables rather than a preceding event. The fables' relative
+  passive fashioning and artfully each retain their word. Making known has
+  first-person plural actors and second-person plural recipients; power
+  and coming have anticipatory possessives referring to our Lord. The final
+  first-person plural perfect copula is were, not an added became; his and
+  greatness are split.
+- 1:17-18 remain one sentence: the when clauses frame the main "we also
+  heard" in 1:18. Receiving, from, God, Father, honor and glory are split.
+  The voice, coming and its recipient, like, this and from are distinct.
+  Splendid is the contextual beautiful sense of paith modifying feminine
+  glory; the [CAL index](https://cal.huc.edu/browseSKEYheaders.php?direction=-1&sortkey=qat+a)
+  lists p'y as beautiful. Its greatness has a feminine suffix referring to
+  glory, not the masculine Son. The quotation retains this-is, my Son,
+  beloved, its deictic determiner and the speaker's pleasure. In whom shares
+  only the dummy antecedent and its locative relative. In 1:18 the first
+  leh anticipates the marked this-voice object; it is absorbed into the
+  shared this span without an extra it. The later to-him recipient remains
+  explicit. From and heaven, we and were, holy and mountain are split.
+- 1:19 splits the existential "And for us there is also a sure word of
+  prophecy". The deictic/relative and resumed locative together yield to
+  which. "You do well to pay attention" is the controlled-infinitive English
+  equivalent of the source's "you do well when you pay attention"; the
+  looking participle and repeated plural subject alone share pay attention.
+  The lamp comparison, shining relative, dark place, until, daylight,
+  shining, sun, rising and plural your hearts retain separate owners.
+- 1:20 continues with the circumstantial "while you know this beforehand".
+  Each prophecy is the subject of the negated nominal interpretation
+  predicate. Writing and its feminine possessive remain distinct; the
+  possessive refers to prophecy, rather than adding private interpretation.
+  Shry has a metaphorical expounding/interpretation sense in
+  [CAL](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24ry+V), and
+  [Murdock's rendering and note](https://aramaicnewtestament.org/peshitta/murdock/epistle/2peter_1.htm)
+  support interpretation of its own writing. The base noun gloss release
+  alone does not settle this contextual meaning.
+- 1:21 separates the negative focus frame, human will, prophecy and coming.
+  Min methom supplies the shared temporal at-any-time expression. Holy men
+  of God are the actors of speaking and the recipients of being led; the
+  passive/reflexive leading participle remains separate from the perfect
+  speaking verb. The Spirit is the agent; by, Spirit and Holy have distinct
+  source owners. No personal pronoun for the Spirit is introduced.
 
 Source checks for 2 Peter 2:
 
