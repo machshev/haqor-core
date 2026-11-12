@@ -15360,104 +15360,164 @@ Source checks for Revelation 19:
 
 Source checks for Revelation 20:
 
-- All 15 verses and 237 actual source positions were checked against the inflected
-  forms, every supplied gloss alternative, numeric morphology, suffixes, and final
-  English owners. Each source position occurs once in ascending order. Two- and
-  three-position noun phrases, compound prepositions, negative verb units, and short
-  verb/subject units give grammatical English without hiding long clauses in combined
-  links. The source's five ITH constructions have no HWA auxiliary: none is inherently a
-  past existential, and no extra past/present assertion is manufactured. Supplied
-  articles, copulas, and relative constructions support English grammar without
-  replacing the actual lexical owners.
-
-- In 20:1 ANOTHER angel is explicit. He descended is perfect; the following relative
-  existential preserves the key UPON HIM and the separate great chain IN HIS HAND. In
-  20:2 the seizure suffix anticipates the dragon object rather than adding another
-  person. The FIRST serpent, the identifying existential, ACCUSER, Satan, bound HIM, and
-  a thousand years remain. There is no source clause about deceiving the whole habitable
-  world to import from the reference.
-
-- In 20:3 the casting, closing, and sealing are perfect actions. English "it" supplies
-  the understood abyss object for closing and sealing; it does not introduce a door
-  noun. L'EL MIN is the short compound "above," with HIM as its genuine pronominal
-  complement, not an extra independent "from him" clause. The negative, AGAIN, and
-  imperfect deception verb form the short unit "so that he would not again deceive,"
-  followed by ALL THE NATIONS. There is no source "until these thousand years are completed"
-  clause. AFTER THESE THINGS is followed by YIHIV, a passive participle, and the
-  infinitive TO RELEASE HIM for a little time. "It is granted" retains an impersonal
-  passive permission construction rather than inventing an active giver or turning the
-  following infinitive into an independent future event. CAL yhb G sense 3 confirms
-  permit/allow beyond the simple give gloss.
-
-- In 20:4 the parenthetical sitting and grant of judgment preserve the initial I SAW as
-  governing seats AND THE SOULS; the souls noun has no recipient L-prefix, so no "and TO
-  the souls" is supplied. The English "of those" gives the souls' human referents,
-  retaining the demonstrative and following relative construction; AND OF THOSE at
-  position 16 remains a second explicit genitive group. ETPSEQ is encoded as a masculine
-  singular passive perfect; English "who were cut off" agrees with the plural human
-  referents without inventing a HEAD noun or silently claiming the source verb is
-  plural. Both causal phrases, testimony of Jesus and word of God, remain. All three
-  worship/image/mark negatives are kept. ON BETWEEN THEIR EYES is rendered "on the
-  space between their eyes," with a supplied English nominal head for the locative,
-  rather than replacing EYES with forehead. THEIR HANDS are plural. D'HAYAW gives the
-  relative WHO LIVED, followed by the perfect AND REIGNED; the Messiah has no THEIR
-  suffix, and the thousand years have no THESE demonstrative. Verse 20:5 has only "And
-  this is the first resurrection"; no rest-of-the-dead clause is imported from another
-  textual tradition.
-
-- In 20:6 blessed and holy, the singular person with a share, the first resurrection,
-  and OVER THESE retain their actual owners. LAYT explicitly negates the authority
-  available to the second death. "They will be" is imperfect, not an additional present
-  "are"; priests belong to God AND THE MESSIAH, with no HIS suffix on Messiah. They WILL
-  REIGN WITH HIM for a thousand years. In 20:7 MA D- is temporal WHEN, and the perfect
-  completion form presents the years as completed before the future release. English
-  uses "have been completed" in the temporal clause; a short three-position unit gives
-  the verb and count phrase in grammatical English order. Satan WILL BE RELEASED is
-  passive imperfect. His imprisonment retains its genuine singular possessor; no THESE
-  is added to the years.
-
-- In 20:8 he WILL GO OUT, with two purpose infinitives, to deceive ALL the nations and
-  to gather THEM for battle. The corners suffix anticipates earth, and the numeral FOUR
-  remains. L-Gog and L-Magog are definite direct-object markers in apposition to the
-  nations, not new recipients requiring English "to Gog." Syriac's L-prefix can mark
-  definite direct objects (Robinson/Coakley, sections 7 and 18). The final relative
-  keeps THOSE, THEIR NUMBER, and the comparison with the sand of the sea; no plural
-  actor replaces singular Satan.
-
-- In 20:9 the breadth suffix anticipates EARTH and the surrounding suffix anticipates
-  the named CITY. The source explicitly has THE CITY OF THE ENCAMPMENT OF THE HOLY ONES
-  and then THE BELOVED CITY; the first CITY is not omitted as in the reference, and
-  encampment is a noun, not an adjective modifying holy ones. The fire DESCENDED FROM
-  HEAVEN, FROM GOD, in that order, and CONSUMED THEM. In 20:10 the Accuser is THEIR
-  DECEIVER, an owned noun rather than a new past deception verb. He WAS CAST into the
-  lake of fire AND sulfur; WHERE introduces the beast and false prophet, without an
-  additional ALSO. The torment is a passive imperfect, WILL BE TORMENTED, day and night
-  for the age of ages. Both source age nouns remain.
-
-- In 20:11 the great white throne and the one SITTING ABOVE IT retain the actual
-  participle and L'EL MIN compound. The resumed THE ONE introduces FROM BEFORE WHOSE
-  FACE the earth and heaven FLED; FACE has the idiomatic plural form with a singular
-  possessor, naturally singular English face. A PLACE WAS NOT FOUND FOR THEM is passive
-  perfect; there is no possessive suffix on place or THIS demonstrative. In 20:12 the
-  dead STOOD (perfect, not an active participle) before the throne. BOOKS plural were
-  opened, then ANOTHER BOOK singular was opened, WHICH IS OF JUDGMENT, not the
-  reference's life. The dead WERE JUDGED from the written things IN THE BOOK, singular
-  in the actual vocalization and metadata, according to THEIR DEEDS. No source noun is
-  moved to own the judgment verb or FROM particle.
-
-- In 20:13 the sea GAVE UP its dead, and DEATH AND SHEOL GAVE UP those WITH THEM. The
-  passive judgment verb is singular, followed by the distributive HAD HAD, EACH ONE OF
-  THEM; the final possessor remains THEIR DEEDS, not the reference's his deeds. In 20:14
-  death and Sheol WERE CAST into the lake of fire, followed only by THIS IS THE SECOND
-  DEATH. There is no repeated "namely, this lake of fire" clause. In 20:15 AND WHOEVER
-  introduces the negative passive finding, with MARKED as a passive participle, IN THE
-  BOOK OF LIFE; the main casting verb is a separate passive perfect. No IF or THIS
-  before the lake is imported from the reference.
-
-Lexical and grammatical support:
-https://cal.huc.edu/oneentry.php?cits=all&lemma=yhb+V ;
-https://cal.huc.edu/cal_entry_web.php?lemma=l%28yl+X ;
-https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf .
+- All 15 verses and 237 exact source words were checked for morphology,
+  suffixes, actors, voice, tense, negation, lexical and clause ownership,
+  and continuous English. All 26 original shared spans were reviewed.
+  Six narrow exceptions remain: relative whom (20:1), compound above
+  (20:3), possession has (20:6), compound above and relative whose (20:11),
+  and distributive each-one (20:13). Ordinary nouns, modifiers, numerals, verbs, auxiliaries,
+  subjects, pronouns, negatives and prepositions have independent owners.
+  Reordered English and repeated source positions across separate spans
+  retain their distinct grammatical contributions.
+- 20:1-2: I-saw is first-singular perfect; another angel is explicit, with
+  masculine singular perfect who-descended, not a descending participle.
+  From/heaven remains separate. Upon/whom/there-is narrows the original
+  joint locative clause: whom alone combines the relative d-prefix on
+  ith at 6 with the masculine singular pronominal complement of upon at 7.
+  Upon and there-is have their own prepositional and existential owners,
+  with the-key/of-the-abyss independent. And-a/great/chain separately links
+  the feminine singular noun and adjective; in-his-hand retains its genuine
+  masculine singular possessor and singular hand noun. In 20:2 seized is
+  masculine singular perfect, with an anticipatory masculine object suffix
+  referring to the following dragon, not another person. The/first/serpent
+  has separate noun and ordinal owners. The-one/who-is/the-Accuser/and-Satan
+  retains the demonstrative and identifying suffixed existential. Bound-him
+  is another perfect with a genuine masculine singular object. For-a-
+  thousand/years keeps the numeral and plural years, with for supplied for
+  duration. No whole-inhabited-world deception clause occurs here.
+- 20:3: Cast-him is masculine singular Aphel perfect, followed by perfect
+  closed-it and sealed-it; their understood abyss object does not introduce
+  a door noun. Above alone joins leel and min; him separately renders
+  the genuine masculine singular suffix. Robinson/Coakley section 11,
+  printed p. 52, documents this group of adverbs followed by min as
+  compound prepositions, including above:
+  https://www.syriac-eschool.com/wp-content/uploads/2022/02/Coakley_Robinson_Syriac_Grammar.pdf.
+  CAL independently records the above sense of leel:
+  https://cal.huc.edu/cal_entry_web.php?lemma=l%28yl+X.
+  So-that/not belongs to d-la at 6, he-would/deceive to the masculine
+  singular Aphel imperfect at 8, and again to 7. All has a proleptic plural
+  suffix anticipating nations. No until-the-thousand-years clause occurs.
+  After/these-things is separate from impersonal it-is-granted, a Peal
+  passive participle, and to-release-him, a Peal infinitive with a genuine
+  masculine singular object suffix. The passive permission does not invent
+  an active giver or turn release into a separate future event. CAL yhb
+  includes permit/allow beyond the bare give gloss:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=yhb+V.
+  For-a/little/time has separate duration head and modifier owners; little
+  is encoded absolute and time emphatic, not an encoded construct phrase.
+- 20:4-5: First-singular I-saw governs seats and the-souls, with the
+  intervening plural perfect they-sat/on-them and passive perfect judgment/
+  was-given/to-them retained parenthetically. Souls lacks a recipient
+  l-prefix, so no and-to-the-souls is introduced. Of-those and who-were-
+  cut-off retain the demonstrative and relative verb; cut-off is encoded
+  masculine singular Ethpeal perfect, with English plural agreement for
+  the plural human referents. It is not a participle or a source head noun.
+  Both because-of relations remain, with testimony/of-Jesus and word/
+  of-God independent. And-of-those is a second genitive group. Who/not
+  belongs to 17, did/worship to perfect 18; nor belongs to 20, retaining
+  its-image with a genuine feminine singular possessor. And/not at 22 is
+  distinct from did/receive at perfect 23. All three negatives remain.
+  The-mark/on/the-space-between/their-eyes separately links 24/25/26/27.
+  Space is the supplied English nominal head for between's locative
+  relation, not a replacement forehead noun. Or/on/their-hands retains
+  actual plural eyes and hands with genuine masculine plural possessors.
+  Who-lived and and-reigned are plural perfects, the latter Aphel, followed
+  by with/the-Messiah/for-a-thousand/years. No their suffix on Messiah or
+  these demonstrative on the years is added. In 20:5 And-this/is/the/first/
+  resurrection separates the ordinal from its noun; is belongs to explicit
+  feminine singular pronominal copula hi, not an existential ith. This
+  verse contains no rest-of-the-dead clause.
+- 20:6-8: Blessed/and-holy/is separates both predicates from explicit
+  masculine singular pronominal copula hu at 1. The-one is distinct from
+  who/has: who belongs to relative d-prefix 4, while has alone joins
+  existential ith and masculine singular dative possessor 5. A-share/in-
+  the/first/resurrection gives the ordinary nouns, relation and ordinal
+  independent owners. And-over/these/there-is-no/authority/for-the/second/
+  death retains the plural demonstrative and layt's explicit negative
+  existential; no auxiliary is borrowed from the death noun. But/they-
+  will-be/priests/of-God/and-of-the-Messiah retains the plural imperfect
+  and both genitives without a his suffix on Messiah. And-will-reign is
+  plural Aphel imperfect, with-him has a genuine masculine singular object,
+  and a-thousand/years remains separate. In 20:7 And-when renders ma d-
+  introducing a temporal clause. A-thousand/years/have-been-completed
+  reorders the count and completion verb independently; the source verb
+  is masculine singular Ethpaal perfect, with English plural agreement
+  for the duration. The temporal perfect precedes the future release.
+  Satan/will-be-released separately links subject and masculine singular
+  Ethpeal imperfect, followed by from/his-imprisonment with its genuine
+  masculine singular possessor. In 20:8 he-will-go-out remains singular,
+  with purpose infinitives to-deceive (Aphel) and and-to-gather (Pael).
+  Both all/the-nations and in-the-four/corners/of-the-earth remain; corners
+  has a proleptic feminine singular suffix anticipating earth. Gog and
+  Magog are appositional definite objects, with l-markers, not new
+  beneficiaries. The separate plural object them, for-battle, those and
+  whose-number/is-like/the-sand/of-the-sea remain. Number is singular with
+  a genuine masculine plural possessor; supplied is belongs to the comparison
+  predicate like at 14, not to the number subject noun at 13 or those at 12.
+- 20:9-10: They-went-up and surrounded are active plural perfects; the
+  breadth suffix anticipates earth, and the surrounding object suffix
+  anticipates city. The-city/of-the-encampment/of-the-holy-ones retains the
+  explicit first city noun and its two genitives. And-the/beloved/city
+  separates the second city and its feminine singular modifier. And/fire/
+  descended reorders the active feminine singular perfect and its subject,
+  with and/descended independently owned at 10. From/heaven/from/God
+  retains both source relations in their actual order; and-it-consumed/
+  them keeps the feminine singular perfect and explicit plural object.
+  In 20:10 the-Accuser/their-deceiver/was-cast retains the owned agent noun,
+  with its genuine masculine plural possessor, and masculine singular
+  Ethpeal perfect; it is not an added past deceived verb. Into-the-lake/
+  of-fire/and-sulfur remains separate. Where/the-beast/and-the/false/
+  prophet/are independently links the locative adverb 6, the two nouns
+  and ordinary adjective; supplied are belongs to the where predicate at
+  6. No ith or also occurs in that clause. And-they-will-be-tormented is
+  plural Ethpaal imperfect, followed by day/and-night/for-the-age/of-ages.
+- 20:11-12: I-saw is perfect. A/great/white/throne independently links
+  the noun and both adjectives; the-one-sitting is participial. Above
+  alone joins leel min as in 20:3, with it separately owned by the genuine
+  masculine singular suffix at 6, referring to the masculine throne.
+  The-one/from/before/whose/face preserves the resumed demonstrative,
+  relative prefix and two separate prepositions. Whose alone joins the
+  d-relative at 8 with the genuine possessive suffix at 10; from remains
+  independently linked to min at 8, before to 9, and face to the noun at 10.
+  This follows the same minimal relative ownership as whom in 20:1.
+  Face has the idiomatic
+  plural noun form with a genuine masculine singular possessor, naturally
+  singular English face. Fled is feminine singular perfect, with earth
+  and heaven as the coordinated English subject. A-place/was/not/found/
+  for-them separates singular place, masculine singular Ethpeal perfect,
+  negative at 15 and genuine plural dative suffix. No possessive suffix on
+  place or this demonstrative is introduced. In 20:12 the-dead/the-great/
+  and-the-little/who-stood retains the plural people and actual perfect
+  standing, not a standing participle. Before/the-throne is separate.
+  Books/were-opened is plural; another/book/was-opened singular, both
+  Ethpeal perfects. Which-is/of-judgment keeps the suffixed existential
+  and actual judgment noun, not the familiar life noun from the reference.
+  And/the-dead/were-judged independently links the conjunction/passive
+  Ethpeal perfect at 14 and plural subject at 15. From/those-things/written/
+  in-the-book/according-to/their-deeds retains the feminine plural passive
+  writing participle, actual singular book, and genuine masculine plural
+  deed possessor. No judgment verb is assigned to the source subject noun.
+- 20:13-15: And/the-sea/gave-up separately links the conjunction/masculine
+  singular Peal perfect at 0 and masculine singular sea at 1. The-dead/
+  in-it keeps the relative locative with a genuine masculine singular
+  suffix. Death and Sheol are the subjects of plural perfect gave-up,
+  followed by the-dead/that-were-with-them; with-them has a genuine
+  masculine plural suffix. And/each-one/of-them/was-judged reorders the
+  distributive subject and masculine singular Ethpeal perfect naturally.
+  Each-one alone joins repeated had had, the distributive expression
+  documented in CAL, rather than two people or an imposed sequential
+  one-by-one reading:
+  https://cal.huc.edu/cal_entry_web.php?lemma=xdxd+X.
+  According-to/their-deeds retains the plural possessor, not a substituted
+  his-deeds phrase. In 20:14 death/and-Sheol/were-cast is plural Ethpeal
+  perfect, with into-the-lake/of-fire separate. This/is/the/second/death
+  retains masculine singular demonstrative hana and suffixed existential
+  copula, with noun and ordinal independently owned. No repeated namely-
+  this-lake-of-fire clause occurs. In 20:15 And-whoever/was/not/found/
+  marked/in-the-book/of-life separates the relative, negative, masculine
+  singular Ethpeal perfect and passive marked participle. Was-cast is a
+  separate masculine singular Ethpeal perfect, followed by into-the-lake/
+  of-fire. No if particle or this before lake is imported from the reference.
 
 Source checks for Revelation 21:
 
