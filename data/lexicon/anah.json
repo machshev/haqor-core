@@ -16,17 +16,17 @@
     "purpose",
     "work"
   ],
-  "gloss": "answer, attend to; be bowed down (under), afflict; (also) time, now; for the sake of",
-  "summary": "Both verbs of the root are being taken up with something. Turned toward a person, עָנָה is to answer: to reply, to answer against in court, to answer in song, and of Yahweh to attend to the one who calls and meet his need (Isa 41:17; Hos 2:23–24). Held under a load, it is to be bowed down: Israel afflicted with burdens in Egypt (Exo 1:11), the toil God gave men to be occupied with (Ecc 1:13), the soul humbled by fasting on יוֹם הַכִּפֻּרִים (Lev 23:27–32); from it come עָנִי “afflicted, poor” and עָנָו “humble”, and scripture keeps the two together: “answer me, for I am afflicted” (Psa 86:1). Cognates show ʿ behind both, and Arabic keeps “attend to a need” and “toil, captivity, lowliness” in one root, so one older sense is likely though not shown; the purpose words (לְמַעַן; מַעֲנֶה “answer” and “purpose”, Pro 16:1, 4) go with answering, while the link of עֵת “time” and עַתָּה “now” is not clear.",
+  "gloss": "be taken up with: answer, attend to; be bowed down (under), afflict; what befalls: time, now; what concerns: for the sake of, because",
+  "summary": "Both verbs of the root are being taken up with something. Turned toward a person, עָנָה is to answer: to reply, to answer against in court, to answer in song, and of Yahweh to attend to the one who calls and meet his need (Isa 41:17; Hos 2:23–24). Held under a load, it is to be bowed down: Israel afflicted with burdens in Egypt (Exo 1:11), the toil God gave men to be occupied with (Ecc 1:13), the soul humbled by fasting on יוֹם הַכִּפֻּרִים (Lev 23:27–32); from it come עָנִי “afflicted, poor” and עָנָו “humble”, and scripture keeps the two together: “answer me, for I am afflicted” (Psa 86:1). Cognates show ʿ behind both, and Arabic keeps “attend to a need” and “toil, captivity, lowliness” in one root, so one older sense is likely though not shown; the purpose words are what one is taken up with seen as one's concern: Arabic عَنَاهُ is “it concerned him”, “it related to him”, and عَنَى بِالقَوْلِ “he meant by the saying”, so לְמַעַן is “for the concern of”, “for the sake of”, and יַעַן “because” is said where an answer was withheld: “because I called and you did not answer” (Isa 65:12; 66:4; Jer 7:13; 35:17); מַעֲנֶה is both “answer” and “purpose” (Pro 16:1, 4). עֵת “time” and עַתָּה “now” may be the same sense seen from the other side: Arabic عَنَانِي كَذَا is “such a thing occurred to me, and occupied me” (Lane), one verb for befalling and occupying, so a time is what comes upon a man and takes him up; Ecclesiastes follows its “time for everything” (Ecc 3:1–8) with the עִנְיָן God gave men to be occupied with (Ecc 3:10). This link is possible, not shown.",
   "words": [
     {
       "lemma": "עַתָּה",
       "pos": "adverb",
-      "gloss": "now; and now (so then)",
+      "gloss": "at the time: now; and now (so then)",
       "bdb": [
         "p.dt.ae"
       ],
-      "summary": "The commonest word of the root. Its link to the verbs is not clear; Ugaritic ʿnt “now” and Aramaic כְּעַן, כְּעֶנֶת “now” keep the n that Hebrew assimilates (ʿant- > עַתָּה), which ties it to עֵת “time”.",
+      "summary": "Built on עֵת “time”: “at the time”, so “now”. The commonest word of the root. Ugaritic ʿnt “now” and Aramaic כְּעַן, כְּעֶנֶת “now” keep the n that Hebrew assimilates (ʿant- > עַתָּה), which ties it to עֵת; its link to the verbs is the link of עֵת, possible but not shown.",
       "cognate_ids": [
         "uga-nt-now",
         "phn-t-time"
@@ -106,16 +106,42 @@
       "lemma": "עֵת",
       "pos": "noun",
       "gender": "f",
-      "gloss": "time, season; the right time",
+      "gloss": "what befalls, the occasion; time, season; the right time",
       "bdb": [
         "p.dt.ac"
       ],
-      "summary": "A point or span of time, especially the time when something happens or is fitting. Phoenician ʿt “time, season” and Ugaritic ʿnt “now” are its cognates; how it relates to the verbs of the root is not clear. Arabic ʿanā also means “it befell, occurred”, and scripture sets עֵת beside פֶּגַע “chance” (Ecc 9:11) and speaks of “the times that passed over” David (1Ch 29:30): it may be “what befalls”, but this is not shown.",
+      "summary": "Possibly “what befalls”: the occasion that comes upon a man and takes him up, and so a point or span of time, above all the time when something happens or is fitting. The noun is *ʿint- (Ugaritic ʿnt “now”, Aramaic כְּעֶנֶת “now”, Phoenician ʿt “time, season”), with the root's ʿ and n. Arabic عَنَانِي كَذَا is “such a thing occurred to me, and occupied me” (Lane), one verb for befalling and occupying, and scripture speaks of עֵת the same way: time and chance “befall” all men and an evil time “falls upon” them (Ecc 9:11–12), “the times that passed over” David (1Ch 29:30), and the “time for everything” (Ecc 3:1–8) is followed by the עִנְיָן God gave men to be occupied with (Ecc 3:10). A time of favour is a time of answering (Isa 49:8; Psa 69:14). No verse uses עֵת plainly for “what occupies”, so the link is possible, not shown.",
       "cognate_ids": [
         "phn-t-time",
-        "uga-nt-now"
+        "uga-nt-now",
+        "ar-ana-concern"
       ],
       "senses": [
+        {
+          "id": "et-befall",
+          "gloss": "what befalls; one's times",
+          "definition": "What comes upon a man: the events of a life, which pass over him and fall upon him.",
+          "evidence": [
+            {
+              "ref": "Ecc.9.11",
+              "role": "defining",
+              "note": "“Time and chance (עֵת וָפֶגַע) befall them all.”"
+            },
+            {
+              "ref": "Ecc.9.12",
+              "role": "defining",
+              "note": "“Man does not know his time… snared at an evil time, when it falls upon them suddenly.”"
+            },
+            {
+              "ref": "1Ch.29.30",
+              "note": "“The times that passed over him, and over Israel.”"
+            },
+            {
+              "ref": "Psa.31.16",
+              "note": "“My times are in your hand.”"
+            }
+          ]
+        },
         {
           "gloss": "time, hour (of day or event)",
           "definition": "The time at which something happens: a time of day, or the time of an event.",
@@ -158,10 +184,6 @@
             {
               "ref": "Deu.11.14",
               "note": "Rain for your land in its season."
-            },
-            {
-              "ref": "Psa.31.16",
-              "note": "“My times are in your hand.”"
             }
           ]
         },
@@ -248,12 +270,13 @@
     {
       "lemma": "מַעַן",
       "pos": "preposition",
-      "gloss": "(לְמַעַן) for the sake of; so that",
+      "gloss": "concern, intent: (לְמַעַן) for the sake of; so that",
       "bdb": [
         "p.dt.aj"
       ],
-      "summary": "Almost always as לְמַעַן: the purpose or the person for whose sake something is done. Its link to the root is not clear; Pro 16:4 uses מַעֲנֶה in the same sense (“for its purpose”), and Arabic maʿnā is “meaning, what is intended”.",
+      "summary": "Literally “concern, intent”, what one's mind is taken up with; almost always as לְמַעַן, “for the concern of”: the purpose or the person for whose sake something is done (לְמַעַן שְׁמוֹ “for his name's sake”). Arabic keeps the steps in one verb: عَنَاهُ “it occupied him, concerned him; it related, belonged to him”, and عَنَى بِالقَوْلِ “he meant, intended by the saying”, مَعْنًى “meaning, what is intended” (Lane). Pro 16:4 uses מַעֲנֶה for this “purpose” three verses after מַעֲנֵה לָשׁוֹן “the answer of the tongue” (Pro 16:1). The Arabic makes the link likely; no Hebrew verse shows it directly.",
       "cognate_ids": [
+        "ar-ana-concern",
         "ar-mana-meaning"
       ],
       "senses": [
@@ -358,11 +381,11 @@
     {
       "lemma": "יַעַן",
       "pos": "conjunction",
-      "gloss": "because, since",
+      "gloss": "concern, intent: because, on account of",
       "bdb": [
         "p.dt.ah"
       ],
-      "summary": "Gives the ground of a judgment or a promise, very often in the prophets' “because… therefore”. Its link to the root is not clear, and no cognate has been found that shares it.",
+      "summary": "Like מַעַן, a noun “concern, intent” used only as a preposition or conjunction: “on account of”, “concerning (that)”, “because”. It gives the ground of a judgment or a promise, very often in the prophets' “because… therefore”. The prophets join it to the answer verb: “because I called and you did not answer” (Isa 65:12; 66:4; Jer 7:13; 35:17; cf. Pro 1:24, 28), the judgment answering an answer withheld. No cognate has been found for the form itself; its link rests on מַעַן's and on this pairing.",
       "senses": [
         {
           "gloss": "because, on account of",
@@ -399,16 +422,19 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-ana-concern"
       ]
     },
     {
       "lemma": "עָנָה",
       "pos": "verb",
-      "gloss": "answer, respond, attend to; testify; answer in song",
+      "gloss": "attend to: answer, respond; meet a need; testify; answer in song",
       "bdb": [
         "p.dt.aa"
       ],
-      "summary": "To answer: to take up what someone has said, or the occasion itself (“answered and said” where no one has spoken), and to meet a need. Of Yahweh it is to attend to the one who calls and act for him; the heavens “answer” the earth with rain (Hos 2:23–24), and the king who would “answer” the people is the one who pleases them (1Ki 12:7; 2Ch 10:7). Before a court it is to testify (“answer against”), and in worship to answer in song (Exo 15:21; Ezr 3:11). Ugaritic ʿny “answer” and mʿn “answer, reply” show ʿ, the same sound as the humbling verb.",
+      "summary": "To attend to: to take up what is said, or the occasion itself (“answered and said” where no one has spoken), and to meet a need. Of Yahweh it is to attend to the one who calls and act for him; the heavens “answer” the earth with rain (Hos 2:23–24), and the king who would “answer” the people is the one who pleases them (1Ki 12:7; 2Ch 10:7). Before a court it is to testify (“answer against”), and in worship to answer in song (Exo 15:21; Ezr 3:11). Ugaritic ʿny “answer” and mʿn “answer, reply” show ʿ, the same sound as the humbling verb.",
       "cognate_ids": [
         "uga-ny-answer",
         "arc-ane-answer",
@@ -741,7 +767,7 @@
     {
       "lemma": "עָנָה",
       "pos": "verb",
-      "gloss": "be bowed down (under a load); humble, afflict; be occupied with toil",
+      "gloss": "be bowed down (under a load), be taken up (with toil); humble, afflict",
       "bdb": [
         "p.dv.aa"
       ],
@@ -1196,11 +1222,11 @@
     {
       "lemma": "עָנִי",
       "pos": "adjective",
-      "gloss": "afflicted, poor, lowly",
+      "gloss": "brought low: afflicted, poor, lowly",
       "bdb": [
         "p.dv.ae"
       ],
-      "summary": "One who is brought low: the poor and oppressed whom the law protects and Yahweh hears, and the lowly in spirit; the coming king is עָנִי (Zec 9:9). Its written and read forms interchange with עָנָו (Psa 9:13; Pro 3:34).",
+      "summary": "One bowed down, the adjective of the afflict verb: the poor and oppressed whom the law protects and Yahweh hears, and the lowly in spirit; the coming king is עָנִי (Zec 9:9). Its written and read forms interchange with עָנָו (Psa 9:13; Pro 3:34).",
       "cognate_ids": [
         "arc-anya-poor"
       ],
@@ -1345,11 +1371,11 @@
       "lemma": "עֳנִי",
       "pos": "noun",
       "gender": "m",
-      "gloss": "affliction, misery",
+      "gloss": "being brought low: affliction, misery",
       "bdb": [
         "p.dv.af"
       ],
-      "summary": "The state of being brought low: oppression, misery, want, set beside toil (Gen 31:42; Deu 26:7; Psa 25:18). Yahweh sees and hears it.",
+      "summary": "The state of being bowed down: oppression, misery, want, set beside toil (Gen 31:42; Deu 26:7; Psa 25:18). Yahweh sees and hears it.",
       "senses": [
         {
           "gloss": "affliction, misery",
@@ -1477,11 +1503,11 @@
       "lemma": "עֲנָה",
       "lang": "arc",
       "pos": "verb",
-      "gloss": "answer; speak up",
+      "gloss": "take up (what is said): answer; speak up",
       "bdb": [
         "xp.ai.aa"
       ],
-      "summary": "The Aramaic of Daniel uses it as Hebrew uses עָנָה, almost always in “answered and said”, of a reply or of speaking up in response to what has happened.",
+      "summary": "The Aramaic of Daniel uses it as Hebrew uses עָנָה: taking up what has been said or has happened, almost always in “answered and said”.",
       "cognate_ids": [
         "arc-ane-answer"
       ],
@@ -1525,7 +1551,7 @@
       "lemma": "עְנָא",
       "lang": "syc",
       "pos": "verb",
-      "gloss": "answer, respond",
+      "gloss": "take up (what is said): answer, respond",
       "summary": "The Peshitta's verb for answering, the Syriac form of the root, in the gospels' “answered and said”, and at 2Co 6:2 for “I answered you” of Isa 49:8.",
       "cognate_ids": [
         "arc-ane-answer"
@@ -1574,11 +1600,11 @@
     {
       "lemma": "עָנָו",
       "pos": "adjective",
-      "gloss": "humble, meek, lowly",
+      "gloss": "bowed down: humble, meek, lowly",
       "bdb": [
         "p.dv.ab"
       ],
-      "summary": "Lowly before God and dependent on him: the humble whom Yahweh guides, hears and lifts up, who will inherit the land. Moses is the model (Num 12:3). It is also said of the oppressed poor (Amo 2:7; Isa 61:1).",
+      "summary": "One bowed down before God and dependent on him, from the afflict verb: the humble whom Yahweh guides, hears and lifts up, who will inherit the land. Moses is the model (Num 12:3). It is also said of the oppressed poor (Amo 2:7; Isa 61:1).",
       "cognate_ids": [
         "ar-ana-humble",
         "uga-nw-downcast"
@@ -1761,7 +1787,7 @@
       "lemma": "עְנָא",
       "lang": "syc",
       "pos": "verb",
-      "gloss": "be occupied, devote oneself",
+      "gloss": "be taken up (with): be occupied, devote oneself",
       "summary": "A second Peshitta use of the Syriac verb (SEDRA lexeme 2363): to be taken up with something, matching Ecclesiastes' עָנָה. At 1Co 7:5 it is devoting oneself to fasting and prayer, what Hebrew calls humbling the soul (Lev 23:27; Isa 58:3).",
       "cognate_ids": [
         "ar-ana-concern"
@@ -1807,11 +1833,11 @@
       "lemma": "מַעֲנֶה",
       "pos": "noun",
       "gender": "m",
-      "gloss": "answer, reply; purpose",
+      "gloss": "what answers: answer, reply; what is intended: purpose",
       "bdb": [
         "p.dt.ai"
       ],
-      "summary": "The answer one gives, especially the answer of the mouth. Ugaritic has the same noun, mʿn “answer, reply”. In Pro 16:4 it is the end a thing is made for.",
+      "summary": "A noun of place or thing from the verb, “what answers”: the answer one gives, especially the answer of the mouth. Ugaritic has the same noun, mʿn “answer, reply”. In Pro 16:4 it is “what is intended”, the end a thing is made for, as מַעַן is.",
       "cognate_ids": [
         "uga-mn-answer"
       ],
@@ -1872,11 +1898,11 @@
       "lemma": "עִנְיָן",
       "pos": "noun",
       "gender": "m",
-      "gloss": "occupation, business, task",
+      "gloss": "what one is taken up with: occupation, business, task",
       "bdb": [
         "p.du.ab"
       ],
-      "summary": "Only in Ecclesiastes: the task men are taken up with under the sun, set beside עָמָל “toil” as עֳנִי “affliction” is elsewhere (Ecc 2:22–23; 4:8; Deu 26:7). The noun of the verb's “be occupied (with toil)”.",
+      "summary": "Only in Ecclesiastes: what men are taken up with under the sun, set beside עָמָל “toil” as עֳנִי “affliction” is elsewhere (Ecc 2:22–23; 4:8; Deu 26:7). The noun of the verb's “be occupied (with toil)”; it follows the “time for everything” in Ecc 3:10.",
       "cognate_ids": [
         "ar-ana-concern",
         "arc-inyana",
@@ -1947,11 +1973,11 @@
       "lemma": "עֲנָוָה",
       "pos": "noun",
       "gender": "f",
-      "gloss": "humility, lowliness",
+      "gloss": "being bowed down: humility, lowliness",
       "bdb": [
         "p.dv.ac"
       ],
-      "summary": "The quality of the עָנָו: lowliness before God, which goes before honour.",
+      "summary": "The quality of the עָנָו, one bowed down: lowliness before God, which goes before honour; once Yahweh's own stooping to help.",
       "cognate_ids": [
         "ar-ana-humble"
       ],
@@ -2007,11 +2033,11 @@
       "lemma": "עֱנוּת",
       "pos": "noun",
       "gender": "f",
-      "gloss": "affliction",
+      "gloss": "being brought low: affliction",
       "bdb": [
         "p.dv.ad"
       ],
-      "summary": "Used once, in the Psalm whose opening cry Jesus took up on the cross.",
+      "summary": "Used once, in the Psalm whose opening cry Jesus took up on the cross: the state of one bowed down.",
       "senses": [
         {
           "gloss": "affliction",
@@ -2036,11 +2062,11 @@
       "lemma": "תַּעֲנִית",
       "pos": "noun",
       "gender": "f",
-      "gloss": "self-humbling, fasting",
+      "gloss": "bringing (one's soul) low: self-humbling, fasting",
       "bdb": [
         "p.dv.ag"
       ],
-      "summary": "Once: Ezra's fasting in mourning over the people's sin, the noun of “humble one's soul”.",
+      "summary": "Once: Ezra's fasting in mourning over the people's sin, the noun of “humble one's soul”, bringing it low.",
       "senses": [
         {
           "gloss": "self-humbling (fasting)",
@@ -2079,11 +2105,11 @@
     {
       "lemma": "עִתִּי",
       "pos": "adjective",
-      "gloss": "ready, appointed (for the time)",
+      "gloss": "of the time: ready, appointed (for the time)",
       "bdb": [
         "p.dt.ag"
       ],
-      "summary": "Once, of the man who leads away the goat on יוֹם הַכִּפֻּרִים; formed from עֵת.",
+      "summary": "Once, of the man who leads away the goat on יוֹם הַכִּפֻּרִים: an adjective formed from עֵת, one held for the time.",
       "cognate_ids": [
         "phn-t-time"
       ],
@@ -2108,7 +2134,7 @@
       "lemma": "עֹנָה",
       "pos": "noun",
       "gender": "f",
-      "gloss": "marital due (cohabitation)",
+      "gloss": "(her time?): marital due (cohabitation)",
       "bdb": [
         "p.dt.ab"
       ],
@@ -2131,11 +2157,11 @@
       "lemma": "מַעֲנָה",
       "pos": "noun",
       "gender": "f",
-      "gloss": "furrow, ploughing strip",
+      "gloss": "(the ploughman's task?): furrow, ploughing strip",
       "bdb": [
         "p.du.ac"
       ],
-      "summary": "A furrow or the strip a yoke ploughs; the form מַעֲנִית at Psa 129:3 is the same word. Its link to the root is not clear (the ploughman's “task”?), and no cognate has been found.",
+      "summary": "A furrow or the strip a yoke ploughs; the form מַעֲנִית at Psa 129:3 is the same word. Its link to the root is not clear (the ploughman's “task”, what he is taken up with?), and no cognate has been found.",
       "senses": [
         {
           "gloss": "furrow",
@@ -2159,11 +2185,11 @@
       "lemma": "כְּעַן",
       "lang": "arc",
       "pos": "adverb",
-      "gloss": "now",
+      "gloss": "at the time: now",
       "bdb": [
         "xp.ai.ab"
       ],
-      "summary": "Biblical Aramaic “now” (כְּ + ʿan), keeping the n that Hebrew עַתָּה assimilates.",
+      "summary": "Biblical Aramaic “now”: כְּ + ʿan, “at the time”, keeping the n that Hebrew עַתָּה assimilates.",
       "cognate_ids": [
         "uga-nt-now"
       ],
@@ -2200,11 +2226,11 @@
       "lemma": "כְּעֶנֶת",
       "lang": "arc",
       "pos": "adverb",
-      "gloss": "and now (in letters)",
+      "gloss": "at the time: and now (in letters)",
       "bdb": [
         "xp.ai.ac"
       ],
-      "summary": "The letter form of “now”, closing a greeting and opening the business (once written כְּעֶת).",
+      "summary": "The letter form of “now”, כְּ + ʿenet, “at the time”: it closes a greeting and opens the business (once written כְּעֶת).",
       "cognate_ids": [
         "uga-nt-now"
       ],
@@ -2238,11 +2264,11 @@
       "lemma": "עֲנֵה",
       "lang": "arc",
       "pos": "adjective",
-      "gloss": "poor, afflicted",
+      "gloss": "brought low: poor, afflicted",
       "bdb": [
         "xp.aj.ab"
       ],
-      "summary": "Biblical Aramaic for the Hebrew עָנִי, once.",
+      "summary": "Biblical Aramaic for the Hebrew עָנִי, one bowed down; once.",
       "cognate_ids": [
         "arc-anya-poor"
       ],
@@ -2444,7 +2470,7 @@
       "translit": "maʿnan; ʿanā bi-",
       "gloss": "meaning, intended sense; (ʿanā bi-l-qawl) he meant, intended by the saying",
       "relation": "possible",
-      "note": "Lane: عَنَى بِالقَوْلِ كَذَا “he meant, or intended, by the saying such a thing” (syn. qaṣada). A possible link to מַעַן “purpose, sake”; not shown.",
+      "note": "Lane: عَنَى بِالقَوْلِ كَذَا “he meant, or intended, by the saying such a thing” (syn. qaṣada). The same verb runs from “it occupied him” to “it concerned, related to him” to “he meant”, which leads to מַעַן “concern, purpose”; Hebrew has no verse that shows the step, so it stays possible.",
       "sounds": {
         "ע": "ʿ"
       },
@@ -2719,5 +2745,5 @@
       ]
     }
   ],
-  "note": "RE-EVALUATED 2026-11-12 (user asked for one unifying sense). Folded: Ecclesiastes' “be occupied” (p.du.aa) is now a sense of the afflict verb (toil: עֳנִי and עִנְיָן both stand beside עָמָל, Gen 31:42; Deu 26:7; Psa 25:18; Ecc 2:22–23; 4:8; Exo 1:11; Peshitta ʿnā at 1Co 7:5); “sing” (p.dw.aa) is now answering in song under the answer verb, Arabic ġannā demoted to possible. Their BDB keys list the same tokens as p.dv.aa and p.dt.aa, so dropping them loses no uses. Bridge between answer and afflict: Arabic عنى “attend to a need / be troubled, toil” (ar-uniya-attend, possible); scripture pairs them (Psa 86:1; Isa 58:3, 9, 10; Deu 26:5–7; Psa 22:22, 25) and some verses read either way (Rut 1:21; Psa 55:20; 1Ki 8:35; 2Sa 22:36 beside Psa 18:36). Against: Ugaritic lists ʿny and ʿnw apart (but tʿn hides the third letter), Arabic has no speech sense; the w/y third letter does not separate the senses (עָנָו, עֲנָוָה w; עָנִי, עֳנִי, תַּעֲנִית y). Rated likely, not shown. Akkadian enû “change, revoke” not recorded. Drafted 2026-11-11 for Lev 23 (23:27, 29, 32). SOUNDS behind ע: answer (Ugaritic ʿny, mʿn; Aramaic ʿny), humble/afflict (Ugaritic ʿnw (Segert's query), Arabic ʿnw/ʿny, Phoenician ʿny piel “subdue”), be occupied (Arabic ʿanā “concern, occupy”), now/time (Ugaritic ʿnt, Phoenician ʿt) all show ʿ. Only “sing” has a ġ cognate (Arabic ġannā). So answer and afflict are NOT a ʿ/ġ split: whether they are one older root or two is not decided by sounds; Segert lists ʿny and ʿnw as separate Ugaritic roots. Arabic ġaniya “be free from want, rich” (Lane p. 2301, n32540) is a ġ root of the opposite meaning to עָנִי; not recorded as a cognate. Whether “sing” is its own root (ġny) or “answer in song” is open: Exo 15:21 and 1Sa 18:7 read well either way. Syriac ʿānā “flock” (SEDRA 2364, Arabic ġanam) is another root; not recorded. TIME/NOW and PURPOSE words: עֵת, עַתָּה, עִתִּי, כְּעַן, כְּעֶנֶת are kept as the brief files them under the root (the n of Ugaritic ʿnt and Aramaic כְּעַן, כְּעֶנֶת supports *ʿnt); whether they share the verbs' root is not shown. Akkadian enna/inanna “now” (Oracc) might belong with them; not recorded. מַעַן/יַעַן: no cognate shares them; Arabic maʿnā recorded as possible only. עֹנָה (Exo 21:10) and מַעֲנָה “furrow” links unclear. BDB KEYS: Most “answer” tokens (Gen 18:27, 1Ki 18:37 etc.) are analysed in the database under root עונ, not ענה, so they are not counted at all: a root-analysis fault in the generated data to report, not fixable here. xp.ai.aa (Aramaic answer) also counts 5 tokens of the name Anath (Jos 19:38, Jdg 1:33, 3:31, 5:6). מַעֲנִית (p.du.ad, 0 tokens) is folded into מַעֲנָה; Psa 129:3 cited there. Cross-reference keys with no tokens (j.cg.ag, l.bq.ak, m.cz.ak, m.cz.al, p.dx.ae, p.dx.ag, p.gh.aj, p.gi.ad, w.bh.aj, xk.af.ae, xp.ak.af) are left off. LEFT OUT (names): עֲנָה Anah (p.dw.ab), עַתַּי Attai (p.dt.af), עֵת קָצִין (p.dt.ad), עֲנָת Anath, בַּעֲנָה, עֻנִּי, בֵּית עֲנוֹת. KETIV/QERE: עָנָו and עָנִי interchange in written and read forms (Num 12:3; Psa 9:13; Pro 3:34; and others), so the two adjectives' token lists may be split by which form is counted. PESHITTA: the brief found no Peshitta root because SEDRA keys it ענא; lexemes 2362 (answer, 158) and 2363 (be occupied, 5; its 1Co 9:7 token is ‘flock’ mislabelled and is not cited) are used here. The Peshitta renders “humble/meek” with other roots. UNVERIFIED: Krahmalkov page numbers are from the local text extraction only (no PDF renderer), page unverified. Segert pp. 192 and 196 were checked against the page images (leaves n219, n223). Not consulted: Old South Arabian (Biella's OCR is too damaged to search; Segert cites ESA ʿnw “be humble”), Ge'ez (Dillmann, Leslau), Akkadian for answer/humble. Aramaic עֲנֵי “tarry, be detained” (Jastrow P00973, Pa.) resembles Arabic ʿnw II “confine”; not recorded. Num 12:3 and Psa 37:11 עָנָו tokens may sit under the read form's key; check counts in lexicon-support. Isa 53:8 עֹצֶר, quoted at Act 8:33, is in the atsar entry."
+  "note": "RE-EVALUATED 2026-11-12 (user asked for one unifying sense). Folded: Ecclesiastes' “be occupied” (p.du.aa) is now a sense of the afflict verb (toil: עֳנִי and עִנְיָן both stand beside עָמָל, Gen 31:42; Deu 26:7; Psa 25:18; Ecc 2:22–23; 4:8; Exo 1:11; Peshitta ʿnā at 1Co 7:5); “sing” (p.dw.aa) is now answering in song under the answer verb, Arabic ġannā demoted to possible. Their BDB keys list the same tokens as p.dv.aa and p.dt.aa, so dropping them loses no uses. Bridge between answer and afflict: Arabic عنى “attend to a need / be troubled, toil” (ar-uniya-attend, possible); scripture pairs them (Psa 86:1; Isa 58:3, 9, 10; Deu 26:5–7; Psa 22:22, 25) and some verses read either way (Rut 1:21; Psa 55:20; 1Ki 8:35; 2Sa 22:36 beside Psa 18:36). Against: Ugaritic lists ʿny and ʿnw apart (but tʿn hides the third letter), Arabic has no speech sense; the w/y third letter does not separate the senses (עָנָו, עֲנָוָה w; עָנִי, עֳנִי, תַּעֲנִית y). Rated likely, not shown. Akkadian enû “change, revoke” not recorded. Drafted 2026-11-11 for Lev 23 (23:27, 29, 32). SOUNDS behind ע: answer (Ugaritic ʿny, mʿn; Aramaic ʿny), humble/afflict (Ugaritic ʿnw (Segert's query), Arabic ʿnw/ʿny, Phoenician ʿny piel “subdue”), be occupied (Arabic ʿanā “concern, occupy”), now/time (Ugaritic ʿnt, Phoenician ʿt) all show ʿ. Only “sing” has a ġ cognate (Arabic ġannā). So answer and afflict are NOT a ʿ/ġ split: whether they are one older root or two is not decided by sounds; Segert lists ʿny and ʿnw as separate Ugaritic roots. Arabic ġaniya “be free from want, rich” (Lane p. 2301, n32540) is a ġ root of the opposite meaning to עָנִי; not recorded as a cognate. Whether “sing” is its own root (ġny) or “answer in song” is open: Exo 15:21 and 1Sa 18:7 read well either way. Syriac ʿānā “flock” (SEDRA 2364, Arabic ġanam) is another root; not recorded. TIME/NOW and PURPOSE words: עֵת, עַתָּה, עִתִּי, כְּעַן, כְּעֶנֶת are kept as the brief files them under the root (the n of Ugaritic ʿnt and Aramaic כְּעַן, כְּעֶנֶת supports *ʿnt); whether they share the verbs' root is not shown. Akkadian enna/inanna “now” (Oracc) might belong with them; not recorded. מַעַן/יַעַן: no cognate shares them; Arabic maʿnā recorded as possible only. עֹנָה (Exo 21:10) and מַעֲנָה “furrow” links unclear. BDB KEYS: Most “answer” tokens (Gen 18:27, 1Ki 18:37 etc.) are analysed in the database under root עונ, not ענה, so they are not counted at all: a root-analysis fault in the generated data to report, not fixable here. xp.ai.aa (Aramaic answer) also counts 5 tokens of the name Anath (Jos 19:38, Jdg 1:33, 3:31, 5:6). מַעֲנִית (p.du.ad, 0 tokens) is folded into מַעֲנָה; Psa 129:3 cited there. Cross-reference keys with no tokens (j.cg.ag, l.bq.ak, m.cz.ak, m.cz.al, p.dx.ae, p.dx.ag, p.gh.aj, p.gi.ad, w.bh.aj, xk.af.ae, xp.ak.af) are left off. LEFT OUT (names): עֲנָה Anah (p.dw.ab), עַתַּי Attai (p.dt.af), עֵת קָצִין (p.dt.ad), עֲנָת Anath, בַּעֲנָה, עֻנִּי, בֵּית עֲנוֹת. KETIV/QERE: עָנָו and עָנִי interchange in written and read forms (Num 12:3; Psa 9:13; Pro 3:34; and others), so the two adjectives' token lists may be split by which form is counted. PESHITTA: the brief found no Peshitta root because SEDRA keys it ענא; lexemes 2362 (answer, 158) and 2363 (be occupied, 5; its 1Co 9:7 token is ‘flock’ mislabelled and is not cited) are used here. The Peshitta renders “humble/meek” with other roots. UNVERIFIED: Krahmalkov page numbers are from the local text extraction only (no PDF renderer), page unverified. Segert pp. 192 and 196 were checked against the page images (leaves n219, n223). Not consulted: Old South Arabian (Biella's OCR is too damaged to search; Segert cites ESA ʿnw “be humble”), Ge'ez (Dillmann, Leslau), Akkadian for answer/humble. Aramaic עֲנֵי “tarry, be detained” (Jastrow P00973, Pa.) resembles Arabic ʿnw II “confine”; not recorded. Num 12:3 and Psa 37:11 עָנָו tokens may sit under the read form's key; check counts in lexicon-support. Isa 53:8 עֹצֶר, quoted at Act 8:33, is in the atsar entry. RE-EVALUATED 2026-11-12 (2): word glosses now lead with the literal sense. TIME: עֵת read as possibly “what befalls” (Lane n30836 عَنَانِي كَذَا “occurred to me and occupied me”; BDB p.dt.ac has “experience, fortunes; occurrence, occasion”); new sense et-befall (Ecc 9:11–12; 1Ch 29:30; Psa 31:16 moved from et-season). PURPOSE: מַעַן and יַעַן glossed “concern, intent” (BDB: “purpose, intention”); Arabic عَنَاهُ “concerned him, related to him” bridges occupy → concern → intend; יַעַן stands with the answer verb in Isa 65:12; 66:4; Jer 7:13; 35:17 (cf. Pro 1:24, 28)."
 }
