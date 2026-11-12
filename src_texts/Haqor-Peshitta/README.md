@@ -12475,32 +12475,84 @@ Source checks for 2 Peter 3:
 
 Source checks for 1 John 1:
 
-- 1:1 retains the source's opening first-person plural declaration. The
-  seeing verb's resumptive object is absorbed into the English relative
-  construction, rather than duplicating its object. The coordinated seeing,
-  looking, and touching predicates retain the same first-person participants.
-- 1:2 distinguishes the past manifestation and seeing from the present
-  testimony and proclamation. Positions 3-4 are active participles without
-  a past auxiliary; they are not rendered as past actions. The later
-  existential/copula and past auxiliary are a small combined construction.
-- 1:3 retains the postpositive contrastive particle and both possessive
-  forms as "and yet our own fellowship". It does not turn the contrastive
-  particle into a relative pronoun. The possession/existence construction
-  describing the addressees' fellowship is rendered as a small grammatical unit.
-- 1:4 has first-person plural "our joy" and second-person plural "in you";
-  neither participant is substituted for the other.
-- 1:5 combines the light noun and its actual following copula. It does not
-  assign an unsupported "indeed" to that copula. The conjunction before
-  darkness and the full emphatic negation remain explicit. In 1:6 the
-  conjunction coordinating the negative walking clause is likewise retained.
-- 1:6, 1:8, and 1:10 retain the initial "and if" prefix. The postpositive
-  contrast in 1:7 and 1:9 is English "but if". The conditional subjects,
-  first-person objects, and the negative scope in all five clauses are kept.
-- 1:9's trustworthiness expression is a passive-participial/adjectival
-  construction with its copular pronoun, rather than an active believing
-  action. Forgiveness and cleansing retain their third-person agent and
-  first-person plural recipients. In 1:10 the source says the word is not
-  "with us", which is retained rather than replaced from another text.
+- All ten verses and 143 source words were checked against exact forms,
+  morphology and continuous English. All sixteen original shared spans
+  were reviewed; four narrow exceptions remain in the alignment ledger.
+- 1:1 retains the source's opening first-person plural declaration. That,
+  the relative prefix which and the past copular complex are distinct:
+  only was shares ithawhi plus hwa at 3-4. The next demonstrative remains
+  separate at 7. Which at 8-9 combines the relative prefix on heard with
+  the resumed masculine singular object suffix on saw. Heard and saw
+  retain their own source words; adding another it after saw would repeat
+  the English relative object. Eyes, looking, touching and hands retain the
+  same first-person plural participants and possessives. The final that,
+  which-is, word and life are separately owned. No personal he pronoun is
+  introduced for the word.
+- 1:2 distinguishes past manifestation and seeing from present testimony
+  and proclamation. The latter are active participles without a past
+  auxiliary. Life is the Syriac lexical plural hayye, rendered as English
+  mass singular life; [CAL hayyin](https://cal.huc.edu/oneentry.php?cits=all&lemma=xyyn+N)
+  explicitly lists the noun as masculine plural meaning life, lifetime,
+  salvation or life force. The agreeing plural source forms do not require
+  English counted lives or singular life with were. The eternal adjective
+  and life noun are split. That at 8 and which at 9 retain the dummy
+  antecedent/relative sequence; only was shares the copular-existential
+  form at 9 and past auxiliary at 10. With, Father, past revelation and
+  to us are separate.
+- 1:3 separates the shared words into their own source spans, including
+  the purpose: so that there may be fellowship for you with us. The
+  feminine singular being verb agrees with fellowship, and the plural
+  addressees remain the dative beneficiaries. The next postpositive den
+  is contrastive yet, not a relative pronoun. And, our, own, fellowship,
+  its explicit feminine copula, with, Father, and with, his Son, Jesus and
+  Messiah are separately linked. Our on fellowship and the following
+  first-person plural own expression retain both possessive contributions.
+- 1:4 keeps first-person plural our joy and second-person plural in you.
+  The prefix on joy introduces so that; the joy noun remains separately
+  linked to the same word. May be and the passive/resultative complete
+  predicate remain distinct.
+- 1:5 separates the first feminine copula from the message and the later
+  masculine copula from light: that God is light. The content conjunction
+  belongs to God at 7, not an unsupported indeed assigned to the copula.
+  The conjunction before darkness, the negative existence predicate and
+  in him are separate. Only the doubled all/all intensifier is shared as
+  at all; the negation is not hidden inside that idiom. Him refers to God,
+  the personal subject of the light predication.
+- 1:6 retains And if, the saying predicate and the content prefix on
+  fellowship. There is, fellowship, for us and with him are separately
+  owned, rather than treating the whole clause as one possessive noun
+  phrase. Walking, darkness, the explicit we/are copular pronoun and
+  liars are split. The conjunction in w-law and its negative remain at 10;
+  the walking predicate and in truth are separate, without adding indeed.
+- 1:7 splits the postpositive But from if, then the first-person plural
+  walking predicate from its light phrase. He, is and in the light each
+  retain their source word; he refers to God from 1:5, rather than
+  personifying a separate entity called light. The next existential
+  possession clause is there is fellowship for us with one another,
+  with each constituent separately linked. Blood is the singular actor
+  of cleansing; Jesus and his Son remain appositional, with us as the
+  first-person plural recipient. Hat-hayin at 20 includes the first-person
+  plural possessive: all our sins corrects the former all sins. The
+  anticipatory suffix on all refers to the following sins, without adding
+  a second them.
+- 1:8 retains And if and the first-person plural imperfect saying verb.
+  The negative existential and dative possession are split as that, we,
+  have, no and sin; the negative is not lost in have. The deceiving
+  predicate is first-person plural Aphel, with ourselves as its separately
+  owned object. And truth, is not and in us retain their source words.
+- 1:9 separates But and if, confession and our sins. Maheyman is a
+  passive-participial/adjectival Paiel form meaning trustworthy or faithful,
+  not an active believing action. Its copular pronoun owns he is, while
+  trustworthy retains its own word. Righteous is separate. The dependent
+  imperfect forgiveness predicate is English to forgive with its actor
+  controlled by he; us and our sins are separately owned. The following
+  cleansing imperfect has its own first-person plural object suffix,
+  and cleanse us. From, all and our iniquity are distinct.
+- 1:10 separates And if, saying, the content/negative word, past sinning,
+  making, him and a liar. That and not share their actual source word
+  at 2 in separate English spans; we have and sinned similarly belong
+  to the same perfect verb at 3. The final source says his word is not
+  with us, retained without replacing with by in from another text.
 
 Source checks for 1 John 2:
 
