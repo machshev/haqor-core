@@ -28777,6 +28777,59 @@
           "reason": "Existential ith plus suffixed dative li expresses possession, literally there is to me, rendered by have; the topical and I is separately linked to the earlier dative at position 7."
         }
       ]
+    },
+    "59:3": {
+      "sha256": "eca61f62bae6926ca29da4a2ca4ca336ca4a75f6721b9587507bb93c14dd9cfe",
+      "original_shared_spans": 78,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 6,
+          "english": "And the tongue,",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "The independent masculine singular pronoun hu anticipates the explicit subject tongue; both specify one subject, expressed once as the tongue in English, with and belonging to the pronoun word."
+        },
+        {
+          "verse": 6,
+          "english": "body,",
+          "positions": [
+            14,
+            16
+          ],
+          "reason": "The suffixed object marker leh anticipates the explicit object our body; its referent and the body noun jointly become body once in English. Our from position 16 and whole from position 15 remain separately linked."
+        },
+        {
+          "verse": 11,
+          "english": "Can",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Rhetorical interrogative dalma plus the ability predicate jointly become the single English interrogative modal Can. The interrogative force and ability are one English question-word; the following intransitive flow predicate and from-phrase remain separate."
+        },
+        {
+          "verse": 12,
+          "english": "can",
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Rhetorical interrogative dalma plus the ability predicate jointly become the single English interrogative modal can. The initial or, fig tree, bear, and olives retain separate owners."
+        },
+        {
+          "verse": 17,
+          "english": "show partiality.",
+          "positions": [
+            17,
+            19
+          ],
+          "reason": "Taking faces is the lexical partiality idiom; the verb and faces jointly become show partiality. The conjunction from position 17, auxiliary from position 19, and negative from position 18 remain separate."
+        }
+      ]
     }
   }
 }

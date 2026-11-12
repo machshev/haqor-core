@@ -11134,13 +11134,87 @@ Source checks for James 2:
 
 Source checks for James 3:
 
-- 3:1 preserves the prohibition on many becoming teachers, the direct address to brothers, and first-person plural liability to a greater judgment.
-- 3:2-4 retains the source's progression from many/for/all stumbling to the tongue, bridles, and the ship's small timber; causal particles and the singular mouth are represented.
-- 3:5-6 preserves the tongue's small-member and raised/arrogant construction, the fire/forest image, the tongue's defiling, the course of generations, the wheel, and the final fire assertion.
-- 3:7-9 keeps the passive subjection of animals, the tongue's inability to be subdued, and the human beings made in God's likeness.
-- 3:10-12 retains the same-mouth contrast, the fountain question, and the fig-tree/vine/fruit and salty-water impossibilities.
-- 3:13-16 preserves the wise person's conduct, bitter envy/contention, the prohibition on boasting against truth, and the causal confusion/evil result.
-- 3:17-18 retains the source's wisdom qualities, including mercy, good fruits, no partiality, no respect of persons, and the peace-mediated sowing of righteous fruits.
+- All 18 verses and 249 source positions were checked against the exact
+  forms, morphology, suffixes, clause ownership, and continuous English.
+  Ordinary phrases have individual owners; the five remaining shared
+  spans have specific linguistic reasons in the review ledger.
+- In 3:1, among you belongs to bekhun, separately from my brothers. Many,
+  become, and teachers have their own owners. Hwaytun before knowing is
+  general advice, you should know, rather than a narrative past; compare
+  Muraoka section 87. We are liable retains the first-person plural suffix,
+  and greater qualifies judgment.
+- In 3:2, everyone begins the second clause. The relative prefix on
+  in speech owns who, and the word's stem owns speech; in every matter
+  is not added to the preceding statement about everyone stumbling.
+  This one identifies the person who does not stumble in speech. The
+  ability and subduing predicates remain separate, as do whole and his body.
+- In 3:3, the mouth noun is singular with plural horses. The purpose
+  construction is so that they may be subjected to us; the derived verb
+  is not mechanically treated as active. Their whole body is singular,
+  while bridles and horses are plural.
+- In 3:4, mighty ships are driven by strong winds, then pulled by a small
+  piece of wood toward the place where the guide's will looks. Dbiran is
+  passive in form but active in lexical meaning: strong winds drive them,
+  with the separate suffixed object lehen. See [CAL, dbyr](https://cal.huc.edu/cal_entry_web.php?lemma=dbyr+A),
+  including an attested leading him construction, and Muraoka section 84
+  on passive-form participles with active meaning. Small modifies the
+  singular wood noun. The relative prefix on looks, the will noun, the
+  one, and who guides have their own owners.
+- In 3:5, the tongue is a small member and exalts itself; the reflexive
+  stem is not an automatic passive. A small fire kindles many forests.
+  In 3:6, the tongue is fire, while the world of sin is like a forest.
+  The independent pronoun and explicit tongue jointly name one subject.
+  The suffixed object before our whole body anticipates the body and is
+  expressed once, with whole separately owned.
+- The courses, our generations, and wheels in 3:6 are all plural. The
+  masculine plural running-form agrees with courses; the generations
+  noun is feminine plural. The tongue kindles these courses and itself
+  also burns in fire. Burns belongs to the final yqd participle, in fire
+  to the following prepositional noun; neither is replaced by a mere
+  assertion that the tongue is fire. No additional Greek fire-source
+  phrase is inserted.
+- In 3:7, all the natures is plural, as is the subjecting predicate.
+  Birds and creeping things are English collective renderings of the
+  source category nouns. The creatures of sea and land are subjected to
+  the nature of humanity; humanity is an explicit source noun, not an
+  omitted complement of nature.
+- In 3:8, no person has been able retains the perfect ability verb; to
+  subdue it retains its object suffix and the tongue's topical role.
+  This is an evil preserves the feminine demonstrative, and that is not
+  restrained retains the relative and negation separately. It is full
+  returns to the tongue; deadly qualifies poison through of death.
+- In 3:9, both instrumental with it phrases belong to their suffixed
+  prepositions. Lord and Father have separate owners. The people have
+  been made in God's likeness: the made-form is a resultative passive
+  participle (Muraoka section 84), not an active making predicate.
+  In 3:10, from it and from the mouth retain the repeated preposition
+  explicitly. Blessings and curses are plural. The final derived
+  verb is should be done, rather than a generic be-form.
+- In 3:11, sweet and bitter water is the subject of intransitive flow;
+  the fountain is introduced by from, not made the actor of send out.
+  In 3:11-12, each rhetorical dalma plus ability predicate jointly becomes
+  the English question-word can; each narrow combination has a ledger
+  entry. Compare [CAL on dalma](https://cal.huc.edu/getlex.php?coord=620480601&word=15).
+  Fig tree, olives, vine, and figs have separate owners. In the salt-water
+  clause, can, not, be made, and sweet each retain their actual owners.
+- In 3:13, who is it, among you, wise, and instructed retain their
+  respective owners; good conduct and humble wisdom are separate phrases.
+  In 3:14, bitter envy is in you, or contention in your hearts. The one
+  negative governs boasting against the truth and lying; English repeats
+  not for the coordinated prohibitions, both linked to that negative.
+  The second predicate is lie, not a duplicate boast: see [CAL, dgl, Pael](https://cal.huc.edu/oneentry.php?cits=all&lemma=dgl+V).
+- In 3:15, did not descend retains the perfect descend-form. From and
+  above belong to positions 3 and 4, but to position 7. Earthly wisdom
+  is from thoughts of the soul and from demons. In 3:16, envy and
+  contention lead to confusion and everything that is evil.
+- In 3:17, the two full predicates explicitly govern peace and mercy;
+  humble, obedient, and good fruits retain their actual source owners.
+  Without division is distinct from the final negated face-taking idiom,
+  does not show partiality. The copula before the last clause remains
+  explicit. In 3:18, fruits is plural; the fruits of righteousness are
+  sown in peace by those who make peace. In peace, those, who make, and
+  peace belong to positions 3, 5, 6, and 7. Lamadh can mark the agent of
+  a passive predicate, supporting by those (Muraoka section 94).
 
 Source checks for James 4:
 
