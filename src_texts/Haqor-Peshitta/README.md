@@ -14153,66 +14153,71 @@ Source checks for Revelation 9:
 
 Source checks for Revelation 10:
 
-- 10:1-2: The seer sees another angel descending from heaven and clothed
-  with a cloud. There is no source adjective "mighty." The rainbow's
-  heaven relation is retained, and the sun comparison is his appearance,
-  not an imported face noun. His feet resemble fire pillars. Existential
-  possession is idiomatic "he had" an open booklet in his hand. The right
-  foot is placed upon the sea; the left, however, is upon land. The
-  postpositive contrastive particle remains after the left-foot phrase.
-- 10:3-4: The angel cries with a loud voice like a roaring lion. The seven
-  thunders speak with their plural voices. Short subject/verb units keep
-  the postverbal thunders grammatical in English without losing the
-  independent voice noun. The seer's preparation and hearing are first
-  singular. The source's "of seven" after heaven in 10:4 is read as "the
-  seventh heaven," using the same noun-plus-cardinal ordinal construction
-  as "the seventh angel" in 10:7. This is an explicit syntactic reading;
-  the raw gloss remains "seven." The independently published Syriac text
-  confirms the extra word (https://betaportal.textgrid.d.sub.uni-goettingen.de/browse/49fh6.0).
-  It is not omitted to match the reference English. Both seal and do-not-
-  write commands address the seer in the second singular; the writing
-  verb's object suffix is singular "it," referring to what was spoken.
-- 10:5-7: The angel raises his hand and swears; no unsupported "right"
-  adjective is added to the hand. The first verse continues into the oath
-  across the boundary. He swears by the living one, creator of heaven,
-  its contents, earth, and its contents; this source has no separate sea
-  creation clause. The creation verb's anticipatory object suffix resolves
-  into its following object. The negative copular time clause uses one
-  short four-position unit so again/further, time, not, and be all remain
-  represented in grammatical English. In the seventh angel's days, when
-  ready to sound, God's mystery is to be completed. The ma d- construction
-  has its established temporal sense "when," rather than the isolated
-  pronominal gloss "what" (https://cal.huc.edu/oneentry.php?cits=all&lemma=mh%40d_+c).
-  The source's perfect
-  completion is rendered prospectively within the oath's future setting,
-  and its resumptive conjunction becomes English "then." It is not made
-  into an already completed event in the narrator's present. God declared
-  this mystery to his servants, the prophets; the active declarer and the
-  appositional mystery reference remain distinct.
-- 10:8-9: The voice again speaks with the seer and gives second-singular
-  go/take commands. The booklet has no repeated open adjective in 10:8.
-  The angel's locations are land then sea in that verse, preserving the
-  source order. Hand-of-angel suffixes resolve idiomatically rather than
-  becoming duplicated possessors. The seer goes to the angel while telling
-  him to give the booklet; the participle plus explicit pronoun is first
-  person, not an imported third-person speaker. The angel's take/eat
-  commands are second singular, with the booklet as "it." The causative
-  bitter verb, affected-person dative, and possessed belly form a short
-  three-position unit: "it will make your belly bitter." This absorbs the
-  repeated possessor without inventing a separate beneficiary. Belly is
-  singular. In the mouth it will be like honey; no absent sweet adjective
-  is supplied in 10:9.
-- 10:10-11: The seer takes the booklet from the angel's hand and eats it.
-  The explicit sweet state follows the honey comparison in the source;
-  their short three-position comparative unit gives "sweet as honey."
-  English inversion retains the bitter predicate before "my belly," with
-  the seer as eater and the belly as the affected singular subject. The
-  final speech retains passive-participial "given," the second-person
-  recipient, again, and the actual time noun, rather than replacing the
-  whole commission with an unsupported modal. The prophecy concerns
-  peoples, nations, languages, and many kings; the source has no princes
-  noun. The final adjective is kept with the immediately preceding kings
-  in a short noun/adjective unit.
+- All 11 verses and 175 source words were checked against exact forms,
+  morphology, gloss alternatives and continuous English. All 16 original
+  shared spans were reviewed; three narrow exceptions remain: possessive
+  "had" (10:2), repeated possessor "your" (10:9), and past existential
+  "was" (10:10). Conjunctions, subjects, nouns, modifiers, comparisons,
+  numerals and negation have separate owners wherever possible.
+- 10:1-2: The angel descends from heaven and is clothed with a cloud. No
+  absent "mighty" adjective or face noun is supplied. His appearance is
+  like the sun; his feet resemble fire pillars. The rainbow's heaven
+  relation is retained. Existential ith plus leh expresses possession as
+  one English "had"; "and" and "he" have separate links to the conjunction
+  and dative possessor. The booklet and open adjective, and the foot,
+  possessive suffix and right modifier, retain their own owners. The
+  postpositive contrastive particle owns only "however"; the supplied
+  English copula accompanies the following location predicate.
+- 10:3-4: The loud modifier and voice noun are separate, as are the seven
+  thunders and their speaking verb. Their final voices are plural. The
+  seer's preparation is Pael active participle with first-person hwayt:
+  "I was" and "preparing" have distinct owners. The source's extra d-shaba
+  after heaven is retained as "seventh," an explicit syntactic reading of
+  d- plus cardinal, also used for the seventh angel in 10:7 (Muraoka §44b).
+  The published Syriac confirms the extra word:
+  https://betaportal.textgrid.d.sub.uni-goettingen.de/browse/49fh6.0.
+  The second-singular seal command and negative imperfect write command
+  remain distinct. The writing verb owns English do-support and its
+  singular object "it"; the negator owns "not."
+- 10:5-7: The angel's raising verb is perfect Aphel, not a participle; no
+  absent right adjective is supplied for his hand. His oath continues
+  across the verse boundary. Its creator clause names heaven and earth
+  and their contents, without an imported sea-creation clause. The
+  creation verb's anticipatory object suffix resolves into the following
+  heaven object; the mystery's suffix resolves into "of God" (Muraoka
+  §112). Neither construction adds a duplicate it/his. In the time clause,
+  d-tub owns both "that" and "more," the negator only "no," the imperfect
+  "there would be," and the time noun "time." No shared clause is needed.
+  In 10:7 ma d- has its temporal sense "when," as documented by CAL:
+  https://cal.huc.edu/oneentry.php?cits=all&lemma=mh%40d_+c.
+  The Ethpaal perfect completion is prospective in the oath's future
+  temporal setting (Muraoka §81), rendered "would be completed"; its
+  resumptive conjunction supplies "then." The mystery apposition and
+  declaration to God's servants, the prophets, precede that predicate in
+  English. No absent voice-of-the-angel phrase is added.
+- 10:8-9: The voice speaks again, with second-singular go/take commands.
+  The booklet has no repeated open adjective, and the angel's locations
+  remain land then sea. The hand's proleptic suffix resolves into the
+  following angel genitive, without an extra his. The seer's speech is a
+  first-person Peal active participle plus explicit ana: "I" belongs to
+  the pronoun, "was telling" to the contextual ongoing predicate. Take/eat
+  address the seer; the booklet is the singular object "it." The Aphel
+  imperfect owns "and it will make" and "bitter," while the noun separately
+  owns "belly." Only "your" is shared between the affected-person dative
+  lekh and the repeated possessive suffix on karsakh: both refer to the
+  eater whose belly is affected, not an additional beneficiary. This
+  preserves both source relations without sharing the whole clause.
+  The mouth clause says "like honey"; no absent sweet adjective is added.
+- 10:10-11: The seer takes and eats the booklet. Ith hwa expresses one
+  past existential/copular "was" (Muraoka §109). Hwa is the perfect past
+  auxiliary, not a pronoun. Only "was" retains joint ownership; "and" and
+  the resumed subject "it" separately belong to the existential word.
+  Sweet, as and honey are independently linked. The feminine perfect
+  bitter verb agrees with the singular belly, rendered "my belly became
+  bitter." The final commission retains passive "given," its recipient,
+  again, time and the prophesying infinitive. Peoples, nations, languages
+  and many kings remain distinct; there is no princes noun. "And," "many"
+  and "kings" have separate spans, with the conjunction on the king noun.
 
 Source checks for Revelation 11:
 
