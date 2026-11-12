@@ -28697,6 +28697,86 @@
           "reason": "The independent feminine plural object pronoun enen anticipates the explicit object your souls; the two name one object, expressed once in English (independent-pronoun prolepsis)."
         }
       ]
+    },
+    "59:2": {
+      "sha256": "4d1238c737024ac310b11c985f668700690066f7a7c62c805bddb7ac5648511b",
+      "original_shared_spans": 82,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 1,
+          "english": "with partiality.",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Taking faces is the lexical idiom for partiality, here a nominal prepositional expression with partiality; separate literal taking/faces would not express the idiomatic social discrimination."
+        },
+        {
+          "verse": 3,
+          "english": "to the poor man,",
+          "positions": [
+            11,
+            13
+          ],
+          "reason": "The l-marked poor man and resumed suffixed dative to him identify the same recipient of say, expressed once as to the poor man; the conjunction from position 11 remains separately linked."
+        },
+        {
+          "verse": 9,
+          "english": "show partiality,",
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "The face-taking verb expression is the idiom show partiality; its social-discrimination sense belongs to the combination, not independently to faces or take."
+        },
+        {
+          "verse": 12,
+          "english": "who",
+          "positions": [
+            8,
+            11
+          ],
+          "reason": "The relative prefix and explicit second-person plural pronoun jointly become the English relative subject who; the same source word at position 8 separately owns by the law. The addressed people are expressed as the relative-clause subject once."
+        },
+        {
+          "verse": 14,
+          "english": "“I have",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Positive existential ith plus first-person suffixed dative li expresses possession, literally there is to me, idiomatically I have; no single source word independently means have."
+        },
+        {
+          "verse": 14,
+          "english": "he has no",
+          "positions": [
+            10,
+            11
+          ],
+          "reason": "Negative existential layt plus third-person suffixed dative leh expresses absence of possession, literally there is not to him, idiomatically he has no."
+        },
+        {
+          "verse": 18,
+          "english": "have",
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Existential ith plus suffixed dative lakh expresses possession, literally there is to you, rendered by have; the topical possessor You is separately linked to the earlier dative at position 3."
+        },
+        {
+          "verse": 18,
+          "english": "have",
+          "positions": [
+            8,
+            9
+          ],
+          "reason": "Existential ith plus suffixed dative li expresses possession, literally there is to me, rendered by have; the topical and I is separately linked to the earlier dative at position 7."
+        }
+      ]
     }
   }
 }

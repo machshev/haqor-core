@@ -11052,13 +11052,85 @@ Source checks for James 1:
 
 Source checks for James 2:
 
-- 2:1 retains the face-taking/partiality relation explicitly.
-- 2:5 preserves the contrastive particle: God chose the poor, but rich in faith, as heirs.
-- 2:7 retains the passive/name invocation: the good name called over the readers.
-- 2:10 renders the one-point stumble without adding an unsupported commandment word.
-- 2:13 positions 10-14 are second-person plural and passive; the imperfect is rendered “you will be raised by mercy above judgment,” rather than making mercy the grammatical subject.
-- 2:20 retains the contrastive particle in “But do you want to know.”
-- 2:21-25 preserve the work/faith argument and named Abraham, Isaac, Rahab relations in source order.
+- All 26 verses and 358 source positions were checked against the exact
+  forms, morphology, suffixes, clause ownership, and continuous English.
+  Ordinary phrases have individual owners; the eight remaining shared
+  spans have specific linguistic reasons in the review ledger.
+- In 2:1 and 2:9, taking faces is the idiom for partiality. The combined
+  idiom alone remains shared; the finite be-form and holding participle
+  in 2:1 retain the prohibition do not hold. Faith, glory, our Lord,
+  Jesus, and Messiah have separate owners.
+- In 2:2, rings is plural with a masculine singular possessive suffix;
+  gold describes the rings. Or, rather than and, joins this to the
+  alternative whose garments are beautiful. The poor man's garments are
+  plural and filthy. In 2:3, the two explicit you pronouns remain in the
+  quoted instructions. The good-place expression renders shapir, well,
+  in the seating context; it is not a separate source noun for place.
+  The dative poor man and its resumed to him name one recipient. The
+  second sit retains its subject-related dative as yourself. The footstool
+  is of our feet: the feet noun has a first-person plural suffix, not my.
+- In 2:4, the perfect verbs are become divided and become judges. The
+  subject-related dative is you yourselves, distinct from within yourselves.
+  Ha in the rhetorical negatives of 2:4, 2:6, and 2:7 is retained as indeed.
+  In 2:5, God actively chose the poor of the world, but rich in faith, to
+  be heirs in the promised kingdom; but is explicit. Has not renders the
+  rhetorical negative and be-form with the perfect chose, without inventing
+  a passive chosen-form.
+- In 2:6, the rich exalt themselves over the readers; and they belongs to
+  the following dragging clause. The house of judgment is singular.
+  In 2:7, the name was called over the readers; the calling is passive.
+  In 2:8, the opening conjunction is and, in this has its own source word,
+  and it is written belongs to the write participle, rather than to a
+  supplied Scripture noun. The object is the law of God, not an imported
+  royal-law wording.
+- In 2:10, one point leaves the unstated unit general rather than adding
+  a commandment noun; has become guilty preserves the perfect derived
+  verb. In 2:11, himself identifies the same speaker of both prohibitions;
+  there is no independent also particle. The later subject-related dative
+  is you yourself. Both transgressing expressions retain against the law.
+- In 2:12, be-form followed by participle expresses general advice,
+  you should be speaking and acting, rather than a narrative past. Compare
+  Muraoka section 87 on non-enclitic hwa before a participle. The relative
+  marker and explicit second-person plural pronoun jointly become who in
+  the English relative clause. Are going renders atidin's prospective
+  sense; to be judged retains the passive infinitive.
+- In 2:13, the first be-form and does not practice are participles in a
+  generic statement. The final meshta'lin antun is a second-person plural
+  participial predicate, not an imperfect or an automatic future passive.
+  You prevail through mercy over judgment retains the personal subject,
+  the intransitive/reflexive stem, the means through mercy, and the
+  comparison over judgment. The same stem in 2:6 describes self-exaltation.
+  See [CAL, sh'ly, Qt](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24%28ly+V),
+  which distinguishes raising oneself, self-exaltation, and prevailing.
+  Mercy is not substituted as the grammatical subject.
+- In 2:14, positive and negative existential-plus-dative constructions
+  express I have and he has no; each is an individually justified shared
+  possession expression. Can it be that preserves the interrogative
+  particle separately from is able and to save him. In 2:15, should be
+  renders the conditional imperfect without forcing English plural
+  agreement onto brother or sister; the Syriac predicates are plural.
+  Food for the day preserves the separate food and day nouns. In 2:16,
+  the quoted plural imperatives are go, be warm, and be full; the body
+  owns the possessive relation in what the body needs.
+- In 2:17 and 2:20, without works modifies faith, and the copula belongs
+  to its pronoun, separately from dead. In 2:18, for replaces the baseline's
+  unsupported but. The repeated dative possessors are expressed as You
+  have and and I have; each have jointly renders existential plus dative.
+  And as for me, I retains the later topic pronoun and explicit subject
+  separately. My faith and my works retain their possessive suffixes.
+  In 2:19, God is one, and the demons both believe and tremble.
+- In 2:21, our father Abraham is justified by works, in the offering up
+  of Isaac his son on the altar. In 2:22, his faith has its explicit
+  possessive suffix in both occurrences; it aided his works and was made
+  complete by works. In 2:23, the Scripture was fulfilled and which said
+  have their actual owners. Abraham believed in God, and the reckoning
+  and being called God's friend are passive.
+- In 2:24, the negative be-form is nominal negation, rendered it is not,
+  rather than forcing past time into the contrast with faith alone. In
+  2:25, likewise and also have their own owners; no initial and is added.
+  Rahab received plural spies and sent them out by another way. In 2:26,
+  there is no opening for particle: as the body without the spirit is
+  dead, so also faith without works is dead.
 
 Source checks for James 3:
 
