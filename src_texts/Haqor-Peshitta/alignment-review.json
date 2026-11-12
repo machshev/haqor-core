@@ -30076,6 +30076,41 @@
           "reason": "Ith hwa is the past existential/copular compound in a possession construction. Had renders the single past predicate; I separately owns the first-person dative at 3, and many things remains at 0."
         }
       ]
+    },
+    "65:1": {
+      "sha256": "5ca426592ca1728b82dce836b63b98cc50184344de70f9521cd43151011e476e",
+      "original_shared_spans": 72,
+      "independent_review": true,
+      "scope": "All original shared spans checked against exact source forms, morphology and context; final changed mappings and running English independently reviewed.",
+      "exceptions": [
+        {
+          "verse": 7,
+          "english": "in",
+          "positions": [
+            5,
+            6
+          ],
+          "reason": "D-beh b-dmutha repeats the in-preposition with an anticipatory reference to the following likeness or manner noun. One English in renders that relation; which separately owns the relative prefix at 5, the same way stays at 6 and as these stays at 7."
+        },
+        {
+          "verse": 8,
+          "english": "in",
+          "positions": [
+            0,
+            1
+          ],
+          "reason": "Beh b-dmutha repeats the in-preposition with an anticipatory in-it reference to the following likeness or manner noun. One English in renders the single relation; the same way remains separately at 1."
+        },
+        {
+          "verse": 19,
+          "english": "have",
+          "positions": [
+            6,
+            7
+          ],
+          "reason": "Layt lehon expresses negative existential possession, idiomatically have no. Have owns the possession relation, no stays separately at negative existential 6, and the relative and Spirit noun remain at 5. The dative does not add a second recipient."
+        }
+      ]
     }
   }
 }

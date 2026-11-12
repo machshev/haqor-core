@@ -13168,6 +13168,136 @@ Source checks for 3 John 1:
   and the greeting noun under
   [CAL, shlama](https://cal.huc.edu/oneentry.php?cits=all&lemma=%24lm+N).
 
+Source checks for Jude 1:
+
+- All 25 verses, 415 ordered source words and 72 original shared spans
+  were checked against exact forms, morphology and continuous English.
+  Ordinary noun phrases, negation, auxiliaries, copulas and clauses have
+  separate owners. Three retained shared spans have individual reasons
+  in the review ledger: two repeated prepositions and one negative
+  existential possession. One source word may own separated English
+  spans for prefixes, stems, suffixes or English grammar. English order
+  need not follow Aramaic order.
+- In 1:1 brother, the contrastive particle, called and people are separate.
+  `דבאלהא` has both a relative prefix and Beth: who ... in God. It is not
+  merely of God. Beloved and preserved are passive/result participles,
+  with God, Father, Jesus and Messiah individually linked. In 1:2 the
+  Peal imperfect increase is intransitive; its English wish is may increase.
+- In 1:3 all, diligence, I and exercising have their own words. Our,
+  common and life are separate; life remains an English mass noun despite
+  its Syriac lexical plural. It is, necessary and for me separately render
+  the necessity construction. The struggle noun owns its content prefix
+  that and a struggle, while the second-person plural imperfect owns
+  you should engage in. This verb is not an imperative. One and time
+  separately render the temporal count, without adding for all.
+- In 1:4 obtained is perfect, with some people as subject and entrance
+  as object. Written and beforehand have separate owners. Under, this,
+  condemnation, wicked and people are also split. The relative prefix
+  before grace and the conjunction before him have separated English
+  spans belonging to the same source words. The grace suffix anticipates
+  the explicit of our God and does not add another his. Denying, the
+  relative/copula, alone, Lord, God and our Lord Jesus the Messiah retain
+  their actual owners, without adding a named antecedent for him.
+- In 1:5 wishing, I, reminding you, knowing and its explicit you are
+  separate. One and time are split; the later pronominal temporal element
+  and ordinal separately own time and a second. God is the source's
+  named rescuer and destroyer. In 1:6 the angels' not-keeping and leaving
+  are perfect, but God's keeping is a present active participle: he keeps.
+  Their own, dwelling, judgment, of the day and great have distinct owners.
+  The chains are not known; no Greek-derived eternal adjective replaces
+  the actual negator and known adjective.
+- In 1:7-8 the anticipatory in-it/in-the-likeness prepositions have narrow
+  in exceptions; the same way and as these are separately linked.
+  Compare section 112(a) of
+  [Muraoka's grammar](https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Syriac%2C%20Classical%20-%20A%20Basic%20Grammar%20with%20a%20Chrestomathy%20%28Muraoka%29.pdf).
+  The comparison beginning As in 1:7 continues into in the same way in
+  1:8. Strange and flesh are separate. Are set, under, an example, of fire
+  and everlasting retain their actual source words; the under preposition
+  is not silently replaced by as or omitted. The condemning participle
+  is passive, with judgment as complement.
+- In 1:8 the dreams noun and reflexive fantasy predicate are distinct:
+  who in dreams indulge in fantasies. Muraoka section 49 explicitly gives
+  the rare Eth-pattern of this root as indulging in fantasies. `מַנ` is
+  indeed, contrasted with but; it is not `מֵנ`, from. Defiling has flesh
+  as object, despising has authority, and reviling has the singular glory
+  noun. Those objects do not turn into additional actors.
+- In 1:9 chief and the plural angels are split. `הַו` is the demonstrative
+  he before the relative clause, not the differently vocalised copular
+  pronoun. The English apposition puts while contending with the false
+  accuser before was speaking, with each owner preserved. Speaking and
+  the enclitic past-being auxiliary are distinct; compare Muraoka section
+  86. The body suffix anticipates of Moses. Not, daring, bringing, against
+  him, judgment and of reviling are separate. May and rebuke come from
+  the same imperfect, with the Lord as explicit subject between them in
+  English; no future certainty replaces that wish.
+- In 1:10 the first knowing predicate is active. The later passive
+  participle is a state of being convinced, with naturally separate;
+  compare [CAL, pys, C passive participle](https://cal.huc.edu/oneentry.php?cits=all&lemma=pys+V).
+  The animals are mute, rather than importing unreasoning from another
+  source. The later corrupting predicate is the non-active/reflexive form,
+  rendered they are corrupted, with in these separately linked.
+  Verse 1:11's existing individual links were reviewed and remain unchanged:
+  Cain's way, Balaam's error and Korah's rebellion have the correct
+  anticipatory possessors; going, lusting and perishing remain perfect.
+- In 1:12 the source has their recreations, with an active causing
+  defilement predicate that has no explicit reflexive object. The later
+  selves noun belongs to feeding themselves. Reveling remains distinct
+  from both predicates. Without and fear are separate, as are without
+  and rain. The clouds' wandering is active, and the prefixed from-word
+  supplies which and the causal because of winds, without inventing
+  another cloud-moving actor. Their fruit and has failed retain their
+  actual owners; the first is a suffixed noun, the second a perfect verb.
+  Without, fruit, died and twice are split. Peal came up, from and their
+  roots preserve the intransitive uprooting image after twice-dead;
+  the verb is not silently changed into an Aphel causative. Compare
+  [CAL, slq, G](https://cal.huc.edu/oneentry.php?cits=all&lemma=slq+V).
+- In 1:13 raging, waves, through, their foam, showing and their shame
+  are distinct. Deceiving renders the source's masculine plural noun
+  deceivers as a modifier of stars, rather than importing wandering;
+  compare Muraoka section 95 on adjectival use of agent nouns. The
+  blackness, of darkness, forever, for them and passive reserved state
+  are split; both the initial for these and resumed for them are explicit.
+- In 1:14 prophesying is perfect, but saying and coming are active
+  participles: he says and comes. But, also, Enoch, he, who is, seventh,
+  from and Adam have individual owners. The myriads and holy ones do not
+  acquire Murdock's extra his. The quotation continues through 1:15,
+  which separately links executing, judgment, upon, all, convicting,
+  all souls, deeds, wicked action, hard words and ungodly sinners. Souls
+  is explicitly plural; it is not replaced by the other version's wicked.
+- In 1:16 the about-all preposition/quantifier is distinct from plural
+  things, not a desire noun. Their own and lusts are separate, the singular
+  mouth agrees with speaking, and flattering people retains its source
+  verb and object. In 1:17-18 beforehand and were spoken are split; the
+  apostles' suffix anticipates of our Lord. The later saying participle
+  and plural past-being auxiliary are distinct, followed by the reported
+  future scoffers and their lusts/ungodliness clause.
+- In 1:19 natural people reflects the source adjective without adding a
+  narrower sexual label. The relative prefix and Spirit noun share one
+  source word; only have joins the negative existential and possessive
+  dative, with no separately at the negative word. In 1:20 the addressed
+  plural imperative is build yourselves up; faith, your and holy are
+  separate. From and the beginning retain their own words, as do in,
+  Holy and Spirit. In 1:21 the source changes to first-person plural:
+  let us keep ourselves, we await, and our everlasting life. Mercy's
+  anticipatory possessor is the explicit our Lord, not another his.
+- In 1:22 the initial word supplies both and and some of them; bare MAN
+  independently owns indeed, while the next MIN is from. Snatching is
+  plural imperative. In 1:23 the repenters are those receiving compassion;
+  the explicit second-person plural subject belongs to hating. The tunic's
+  passive participle is defiled and MIN supplies its by/from flesh relation.
+  Muraoka section 94's scanned page 75 gives MIN as the common passive-agent
+  marker; a faulty OCR rendition reading Beth is not used as evidence.
+- In 1:24 the actual first-person plural object is us, despite Murdock's
+  you. English repeats that same us for the coordinated establishing
+  predicate, without adding another object. Without, stumbling, stain and
+  blemish have separate owners. The sentence continues into 1:25: before
+  his glory with joy is reordered before the parenthetical identifying
+  God phrase so that it can complete establishing. All of those words
+  still link to their own 1:25 positions; no source index crosses a verse.
+  The only God, our Deliverer, through Jesus the Messiah our Lord,
+  to him, praise, dominion, honor and majesty remain source-visible.
+  Both, now, and in all and ages are separately linked, followed by Amen.
+
 Source checks for Revelation 1:
 
 - In 1:1, the passive giving construction with the being infinitive is
