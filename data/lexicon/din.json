@@ -1,0 +1,1803 @@
+{
+  "id": "din",
+  "root": "דינ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "judgment",
+    "law",
+    "justice",
+    "poor",
+    "kingdom",
+    "government",
+    "strife"
+  ],
+  "gloss": "judge, plead a cause, vindicate; judgment, cause; judge; province; strife",
+  "summary": "דִּין is to judge: to sit over a people and give judgment (Gen 49:16; Psa 72:2), and above all to take up someone’s cause and see them righted, as Rachel said “God has judged me” when he gave her a son (Gen 30:6) and as Yahweh “judges his people” when their strength is gone (Deu 32:36). The noun דִּין is the cause or legal claim that is judged, most often of the poor, the fatherless and the widow, which the righteous plead and the wicked turn aside (Jer 22:16; Pro 31:8–9); דַּיָּן is the judge, God as “judge of widows” (Psa 68:6); מְדִינָה is a district under a ruler’s jurisdiction, a province; and the same root gives מָדוֹן, strife, contention. In Daniel’s Aramaic the court sits, the beast’s dominion is taken away, and judgment is given to the saints, who possess the kingdom (Dan 7:10, 22, 26). Akkadian diānu, dīnu, dayyānu and Ugaritic dn are the same verb, judgment and judge.",
+  "words": [
+    {
+      "lemma": "דִּין",
+      "pos": "verb",
+      "gloss": "judge, give judgment; plead a cause, vindicate; contend",
+      "bdb": [
+        "d.bh.aa"
+      ],
+      "cognate_ids": [
+        "akk-dianu",
+        "uga-dyn",
+        "ar-dana",
+        "arc-din"
+      ],
+      "summary": "Mostly in poetry and the prophets, and mostly of Yahweh. To judge a people is to rule them with justice, and to judge a person or a cause is usually to take it up and see it righted, so that the verb is close to “vindicate”. Its imperfect also takes the hollow form יָדוֹן (Gen 6:3), and its niphal נָדוֹן is “be at strife” (2Sa 19:10), the sense of the noun מָדוֹן. The BDB key also holds about 25 tokens of the name דָּן, which share its spelling.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "judge; plead the cause of, vindicate; contend",
+          "senses": [
+            {
+              "id": "din-judge",
+              "gloss": "judge, give judgment over a people",
+              "definition": "To sit over a people as judge and ruler and give judgment among them, of a tribe, a king, a priest, and above all of Yahweh, who judges the peoples and the ends of the earth; where it is a nation that has wronged his people, to judge it is to punish it.",
+              "evidence": [
+                {
+                  "ref": "Gen.49.16",
+                  "role": "defining",
+                  "note": "דָּן יָדִין עַמּוֹ, “Dan shall judge his people as one of the tribes of Israel”: the blessing plays on his name."
+                },
+                {
+                  "ref": "Psa.72.2",
+                  "role": "defining",
+                  "note": "Of the king’s son: “May he judge (יָדִין) your people with righteousness and your poor with justice (מִשְׁפָּט).”"
+                },
+                {
+                  "ref": "Psa.9.9",
+                  "role": "defining",
+                  "note": "“He shall judge (יִשְׁפֹּט) the world in righteousness; he shall judge (יָדִין) the peoples with uprightness”: the two verbs in parallel."
+                },
+                {
+                  "ref": "Psa.96.10",
+                  "note": "“Say among the nations, Yahweh reigns … he shall judge the peoples with uprightness.”"
+                },
+                {
+                  "ref": "1Sa.2.10",
+                  "role": "defining",
+                  "note": "Hannah: “Yahweh shall judge the ends of the earth, and give strength to his king, and exalt the horn of his anointed.”"
+                },
+                {
+                  "ref": "Psa.7.9",
+                  "note": "“Yahweh judges (יָדִין) the peoples; judge me (שָׁפְטֵנִי), Yahweh, according to my righteousness.”"
+                },
+                {
+                  "ref": "Isa.3.13",
+                  "note": "Yahweh stands up to contend (לָרִיב) and stands to judge (לָדִין) the peoples."
+                },
+                {
+                  "ref": "Psa.50.4",
+                  "note": "He calls to the heavens above and to the earth, “to judge his people”."
+                },
+                {
+                  "ref": "Job.36.31",
+                  "note": "“By them he judges the peoples; he gives food in abundance”: the rain and the lightning."
+                },
+                {
+                  "ref": "Zec.3.7",
+                  "role": "defining",
+                  "note": "To Joshua the high priest: if you walk in my ways, “you shall also judge my house, and keep my courts”."
+                },
+                {
+                  "ref": "Psa.110.6",
+                  "note": "Of the one seated at Yahweh’s right hand: “He shall judge among the nations; he shall fill them with dead bodies.”"
+                },
+                {
+                  "ref": "Gen.15.14",
+                  "role": "defining",
+                  "note": "“The nation whom they shall serve, I will judge (דָּן אָנֹכִי), and afterward they shall come out with great substance”: judging Egypt is the plagues. Quoted in Act 7:7."
+                },
+                {
+                  "ref": "Act.7.7",
+                  "note": "Stephen quotes Gen 15:14, κρινῶ ἐγώ; the Peshitta has the same root, ܐܕܘܢܝܘܗܝ."
+                },
+                {
+                  "ref": "Act.17.31",
+                  "note": "God “will judge the world in righteousness by the man whom he has appointed”, the words of Psa 9:9 and 96:13."
+                }
+              ]
+            },
+            {
+              "id": "din-vindicate",
+              "gloss": "plead the cause of, do justice to, vindicate",
+              "definition": "To take up someone’s cause and give judgment for them, so that the wronged are righted: what Yahweh does for his people and for a barren wife, and what a king owes the poor and the fatherless.",
+              "evidence": [
+                {
+                  "ref": "Gen.30.6",
+                  "role": "defining",
+                  "note": "Rachel: דָּנַנִּי אֱלֹהִים, “God has judged me, and has also heard my voice and given me a son; therefore she called his name Dan.”"
+                },
+                {
+                  "ref": "Deu.32.36",
+                  "role": "defining",
+                  "note": "“Yahweh shall judge his people and repent himself for his servants, when he sees that their power is gone”: his judging is his coming to their help. Again Psa 135:14."
+                },
+                {
+                  "ref": "Psa.135.14"
+                },
+                {
+                  "ref": "Psa.54.3",
+                  "role": "defining",
+                  "note": "“Save me, God, by your name, and by your might judge me (תְדִינֵנִי)”: judging set beside saving."
+                },
+                {
+                  "ref": "Jer.22.16",
+                  "role": "defining",
+                  "note": "Of Josiah: דָּן דִּין עָנִי וְאֶבְיוֹן, “he judged the cause of the poor and needy; then it was well. Was not this to know me?”"
+                },
+                {
+                  "ref": "Jer.5.28",
+                  "role": "defining",
+                  "note": "“They do not judge the cause (דִּין לֹא דָנוּ), the cause of the fatherless … and the right of the needy they do not judge (שָׁפָטוּ).”"
+                },
+                {
+                  "ref": "Jer.30.13",
+                  "note": "To Zion: “There is none to judge your cause (אֵין דָּן דִּינֵךְ).”"
+                },
+                {
+                  "ref": "Pro.31.9",
+                  "role": "defining",
+                  "note": "“Open your mouth, judge righteously, and plead the cause of (וְדִין) the poor and needy.”"
+                },
+                {
+                  "ref": "Jer.21.12",
+                  "note": "To the house of David: “Execute judgment (דִּינוּ מִשְׁפָּט) in the morning, and deliver the one robbed out of the hand of the oppressor.”"
+                },
+                {
+                  "ref": "Heb.10.30",
+                  "note": "“The Lord shall judge his people”, quoting Deu 32:36, κρινεῖ."
+                }
+              ]
+            },
+            {
+              "id": "din-contend",
+              "gloss": "contend, dispute (with)",
+              "definition": "To have a case against someone, to contend with them as at law; and, in Gen 6:3, of Yahweh’s spirit with man, a use whose exact sense is not certain.",
+              "evidence": [
+                {
+                  "ref": "Ecc.6.10",
+                  "role": "defining",
+                  "note": "Man “cannot contend (לָדִין) with one who is mightier than he”."
+                },
+                {
+                  "ref": "Gen.6.3",
+                  "note": "לֹא יָדוֹן רוּחִי בָאָדָם לְעֹלָם, “my spirit shall not contend with (or judge in) man for ever, for he is also flesh; his days shall be a hundred and twenty years.” The hollow form יָדוֹן; read with the qal of this root."
+                },
+                {
+                  "ref": "1Pe.3.20",
+                  "note": "“The longsuffering of God waited in the days of Noah, while the ark was being prepared”: the time Gen 6:3 sets."
+                }
+              ],
+              "kin": [
+                "madon-strife"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be at strife, dispute together",
+          "senses": [
+            {
+              "id": "din-niphal-strife",
+              "gloss": "be at strife, dispute one with another",
+              "definition": "Of a people arguing among themselves over what should be done.",
+              "evidence": [
+                {
+                  "ref": "2Sa.19.10",
+                  "role": "defining",
+                  "note": "“All the people were at strife (נָדוֹן) throughout all the tribes of Israel, saying, The king delivered us … and now he has fled the land”: arguing over bringing David back."
+                }
+              ],
+              "kin": [
+                "madon-strife"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κρίνω",
+          "gloss": "judge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 15:14 word 6",
+              "note": "κρινῶ for דָּן, “I will judge”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 32:36 word 2",
+              "note": "κρινεῖ for יָדִין; so Psa 9:9, 72:2, 135:14."
+            },
+            {
+              "ref": "Act.7.7",
+              "role": "defining",
+              "note": "“The nation to which they shall be in bondage I will judge”, quoting Gen 15:14."
+            },
+            {
+              "ref": "Heb.10.30",
+              "role": "defining",
+              "note": "“The Lord shall judge his people”, quoting Deu 32:36 as a warning: “it is a fearful thing to fall into the hands of the living God” (10:31)."
+            },
+            {
+              "ref": "Act.17.31",
+              "note": "“He will judge the world in righteousness”, the words of Psa 9:9."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁפַט",
+            "note": "“Judge”, the commoner verb, beside it in the same line.",
+            "evidence": [
+              {
+                "ref": "Psa.9.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.7.9"
+              },
+              {
+                "ref": "Jer.5.28"
+              },
+              {
+                "ref": "Pro.31.9"
+              }
+            ]
+          },
+          {
+            "lemma": "רִיב",
+            "note": "“Contend, plead a case”, beside it of Yahweh.",
+            "evidence": [
+              {
+                "ref": "Isa.3.13",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יָשַׁע",
+            "note": "“Save”, beside it in prayer.",
+            "evidence": [
+              {
+                "ref": "Psa.54.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "דִּין דִּין",
+            "gloss": "judge the cause (of the poor, the fatherless)",
+            "evidence": [
+              {
+                "ref": "Jer.22.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.5.28"
+              },
+              {
+                "ref": "Jer.30.13"
+              }
+            ]
+          },
+          {
+            "phrase": "יָדִין יַהְוֶה עַמּוֹ",
+            "gloss": "Yahweh shall judge (vindicate) his people",
+            "evidence": [
+              {
+                "ref": "Deu.32.36",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.135.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "דִּין",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cause, legal claim; judgment",
+      "bdb": [
+        "d.bh.ab"
+      ],
+      "cognate_ids": [
+        "akk-dinu",
+        "uga-dn",
+        "ar-din",
+        "arc-dina"
+      ],
+      "summary": "What is brought to judgment and what judgment gives: a case at law, the claim of someone who needs it upheld (most often the poor, the fatherless, the needy), and the judging itself.",
+      "senses": [
+        {
+          "id": "din-cause",
+          "gloss": "cause, case, legal claim",
+          "definition": "A matter brought for judgment, and especially a person’s right as a case to be upheld: the claim of the poor, which the righteous know and plead and the wicked pervert.",
+          "evidence": [
+            {
+              "ref": "Deu.17.8",
+              "role": "defining",
+              "note": "Matters too hard to judge, “between blood and blood, between דִּין and דִּין, between stroke and stroke, matters of dispute (רִיבֹת) in your gates”, go up to the place Yahweh chooses."
+            },
+            {
+              "ref": "Pro.29.7",
+              "role": "defining",
+              "note": "“The righteous knows the cause (דִּין) of the poor; the wicked does not understand knowledge.”"
+            },
+            {
+              "ref": "Pro.31.5",
+              "note": "Lest kings drink, forget what is decreed, “and pervert the cause of all the afflicted”."
+            },
+            {
+              "ref": "Pro.31.8",
+              "role": "defining",
+              "note": "“Open your mouth for the dumb, for the cause of all those appointed to pass away.”"
+            },
+            {
+              "ref": "Jer.22.16",
+              "note": "“He judged the cause (דִּין) of the poor and needy.”"
+            },
+            {
+              "ref": "Jer.5.28",
+              "note": "“The cause of the fatherless” they do not judge."
+            },
+            {
+              "ref": "Jer.30.13",
+              "note": "“There is none to judge your cause.”"
+            },
+            {
+              "ref": "Psa.140.13",
+              "role": "defining",
+              "note": "“Yahweh will maintain the cause (דִּין) of the afflicted, the right (מִשְׁפַּט) of the needy.”"
+            },
+            {
+              "ref": "Psa.9.5",
+              "note": "“You have maintained my right and my cause (וְדִינִי); you sat on the throne judging righteously.”"
+            },
+            {
+              "ref": "Isa.10.2",
+              "note": "Decrees “to turn aside the needy from judgment (מִדִּין) and to rob the poor of my people of their right”."
+            },
+            {
+              "ref": "Job.35.14",
+              "note": "“Though you say you do not see him, the cause is before him; wait for him.”"
+            },
+            {
+              "ref": "Pro.22.10",
+              "note": "“Cast out the scoffer, and strife (מָדוֹן) goes out; and דִּין and disgrace cease”: here a quarrel at law, set beside מָדוֹן."
+            }
+          ],
+          "kin": [
+            "din-vindicate"
+          ]
+        },
+        {
+          "id": "din-judgment",
+          "gloss": "judgment, sentence; judging",
+          "definition": "The judging itself and the verdict given: what God makes heard from heaven, the seat of a king who judges, and the sentence the wicked incur.",
+          "evidence": [
+            {
+              "ref": "Psa.76.9",
+              "role": "defining",
+              "note": "“From heaven you made judgment (דִּין) heard; the earth feared and was still, when God arose to judgment (לַמִּשְׁפָּט).”"
+            },
+            {
+              "ref": "Pro.20.8",
+              "role": "defining",
+              "note": "“A king who sits on the throne of judgment (כִּסֵּא דִין) scatters all evil with his eyes.”"
+            },
+            {
+              "ref": "Job.36.17",
+              "note": "“You are full of the judgment of the wicked; judgment and justice (דִּין וּמִשְׁפָּט) take hold of you.”"
+            },
+            {
+              "ref": "Est.1.13",
+              "note": "The king consults “all who knew law and judgment (דָּת וָדִין)”."
+            },
+            {
+              "ref": "Job.19.29",
+              "note": "“That you may know there is a judgment”: the read text שַׁדּוּן is שֶׁ with this noun (the written text has שדין); the database files the token under no key."
+            }
+          ],
+          "kin": [
+            "din-judge"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κρίσις",
+          "gloss": "judgment, justice",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 76:9 word 3",
+              "note": "κρίσιν for דִּין, “judgment from heaven”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 140:13 word 6",
+              "note": "κρίσιν for דִּין עָנִי, “the cause of the poor”."
+            },
+            {
+              "ref": "Jhn.5.22",
+              "note": "“The Father judges no one, but has given all judgment (κρίσιν) to the Son.” The Peshitta has ܕܝܢܐ."
+            },
+            {
+              "ref": "Jhn.5.27"
+            },
+            {
+              "ref": "Heb.9.27",
+              "note": "“It is appointed to men once to die, and after this judgment.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִשְׁפָּט",
+            "note": "“Justice, right”: דִּין is the case, מִשְׁפָּט the right judgment of it.",
+            "evidence": [
+              {
+                "ref": "Psa.140.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.9.5"
+              },
+              {
+                "ref": "Isa.10.2"
+              },
+              {
+                "ref": "Job.36.17"
+              }
+            ]
+          },
+          {
+            "lemma": "דָּת",
+            "note": "“Law, decree”, beside it in Persian court language.",
+            "evidence": [
+              {
+                "ref": "Est.1.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כִּסֵּא דִין",
+            "gloss": "throne of judgment",
+            "evidence": [
+              {
+                "ref": "Pro.20.8",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּין דִּין לְדִין",
+            "gloss": "between one case and another",
+            "evidence": [
+              {
+                "ref": "Deu.17.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְדִינָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "province, district (under a ruler’s jurisdiction)",
+      "bdb": [
+        "d.bh.am"
+      ],
+      "cognate_ids": [
+        "arc-medinta",
+        "ar-madina"
+      ],
+      "summary": "An administrative district, the land within a ruler’s jurisdiction: the districts of Ahab’s princes, the hundred and twenty-seven provinces of Persia, and Judah as a province after the exile. Nearly all its uses are in Esther and the books of the exile and return. The tie to the root is the place where a ruler’s judgment runs: Ecc 5:7 speaks of justice perverted “in the province” under officials set one above another, and the Aramaic and Arabic forms (מְדִינְתָּא, madīna) are the district or city held under authority.",
+      "senses": [
+        {
+          "gloss": "province, district",
+          "definition": "A region governed as one unit under a king, with its own governors and officials; in the Persian empire, each of the satrapies’ provinces.",
+          "evidence": [
+            {
+              "ref": "Est.1.1",
+              "role": "defining",
+              "note": "Ahasuerus reigned “from India to Cush, over a hundred and twenty-seven provinces (מְדִינָה)”."
+            },
+            {
+              "ref": "Est.3.12",
+              "role": "defining",
+              "note": "Letters to the satraps, “to the governors who were over every province (מְדִינָה וּמְדִינָה)”, each in its own script."
+            },
+            {
+              "ref": "1Ki.20.14",
+              "role": "defining",
+              "note": "“By the young men of the princes of the districts (שָׂרֵי הַמְּדִינוֹת)”: Ahab’s district governors."
+            },
+            {
+              "ref": "Ecc.5.7",
+              "role": "defining",
+              "note": "“If you see the oppression of the poor and the violent perverting of judgment and righteousness in the province, do not marvel, for one high above the high watches.”"
+            },
+            {
+              "ref": "Est.1.22",
+              "note": "Letters “to every province according to its script”."
+            },
+            {
+              "ref": "Est.3.8",
+              "note": "A people scattered “in all the provinces of your kingdom”, whose laws differ."
+            },
+            {
+              "ref": "Est.9.28",
+              "note": "Purim kept “in every family, every province and every city”."
+            },
+            {
+              "ref": "Lam.1.1",
+              "role": "defining",
+              "note": "Jerusalem, “princess among the provinces, has become tributary”."
+            },
+            {
+              "ref": "Ezr.2.1",
+              "note": "“These are the sons of the province (בְּנֵי הַמְּדִינָה) who came up out of the captivity”: Judah as a Persian province."
+            },
+            {
+              "ref": "Neh.1.3",
+              "note": "The remnant “there in the province” are in great evil and reproach."
+            },
+            {
+              "ref": "Neh.11.3",
+              "note": "“The heads of the province who dwelt in Jerusalem.”"
+            },
+            {
+              "ref": "Dan.8.2",
+              "note": "Shushan the citadel, “in the province of Elam”."
+            },
+            {
+              "ref": "Dan.11.24",
+              "note": "He shall come peaceably “into the richest places of the province”."
+            },
+            {
+              "ref": "Ezk.19.8",
+              "note": "The nations set against Judah’s prince “from the provinces round about”."
+            },
+            {
+              "ref": "Ecc.2.8",
+              "note": "“The treasure of kings and of the provinces.”"
+            }
+          ],
+          "kin": [
+            "arc-medinah-province"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χώρα",
+          "gloss": "country, region",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EST 1:1 word 13",
+              "note": "χωρῶν for מְדִינָה, the 127 provinces; χώρα renders it 22 times."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "1KI 20:14 word 10"
+            },
+            {
+              "ref": "Act.8.1",
+              "note": "“Scattered throughout the regions (χώρας) of Judea and Samaria.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "מְדִינָה וּמְדִינָה",
+            "gloss": "province by province, every province",
+            "evidence": [
+              {
+                "ref": "Est.1.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.3.12"
+              },
+              {
+                "ref": "Est.9.28"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּנֵי הַמְּדִינָה",
+            "gloss": "the people of the province (Judah)",
+            "evidence": [
+              {
+                "ref": "Ezr.2.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.7.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָדוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "strife, contention, quarrel",
+      "bdb": [
+        "d.bh.ah"
+      ],
+      "summary": "Strife between people: the quarrel a hot-tempered or perverse man stirs up and a patient one calms. Almost all its uses are in Proverbs, often in the plural מְדָנִים, written מִדְיָנִים in some verses. It is the contention of the verb’s niphal and of its qal “contend” (2Sa 19:10; Ecc 6:10), and stands beside דִּין and רִיב, the case and the dispute at law (Pro 22:10; Hab 1:3).",
+      "senses": [
+        {
+          "id": "madon-strife",
+          "gloss": "strife, contention, quarrel",
+          "definition": "Contention between people, a quarrel stirred up by anger, greed, hatred or whispering, which spreads like fire and is quieted by patience, love or the lot.",
+          "evidence": [
+            {
+              "ref": "Pro.15.18",
+              "role": "defining",
+              "note": "“A wrathful man stirs up strife (מָדוֹן), but one slow to anger calms a dispute (רִיב).”"
+            },
+            {
+              "ref": "Pro.10.12",
+              "role": "defining",
+              "note": "“Hatred stirs up strifes (מְדָנִים), but love covers all transgressions.”"
+            },
+            {
+              "ref": "Pro.26.20",
+              "role": "defining",
+              "note": "“Where there is no wood the fire goes out, and where there is no whisperer strife (מָדוֹן) is silent.” 26:21: “a man of strifes (מִדְיָנִים) to kindle a dispute”."
+            },
+            {
+              "ref": "Pro.26.21"
+            },
+            {
+              "ref": "Pro.17.14",
+              "note": "“The beginning of strife is like letting out water; leave off before the quarrel breaks out.”"
+            },
+            {
+              "ref": "Pro.6.19",
+              "note": "Among what Yahweh hates: one “who sows strifes (מְדָנִים) among brothers”; also 6:14."
+            },
+            {
+              "ref": "Pro.6.14"
+            },
+            {
+              "ref": "Pro.16.28",
+              "note": "“A perverse man sends out strife, and a whisperer separates close friends.”"
+            },
+            {
+              "ref": "Pro.18.18",
+              "note": "“The lot causes strifes (מִדְיָנִים) to cease, and parts the mighty.”"
+            },
+            {
+              "ref": "Pro.18.19"
+            },
+            {
+              "ref": "Pro.21.9",
+              "note": "“Better to dwell in a corner of the housetop than with a woman of strifes”; also 21:19, 25:24, 27:15, 19:13."
+            },
+            {
+              "ref": "Pro.21.19"
+            },
+            {
+              "ref": "Pro.25.24"
+            },
+            {
+              "ref": "Pro.27.15"
+            },
+            {
+              "ref": "Pro.19.13"
+            },
+            {
+              "ref": "Pro.22.10",
+              "note": "“Cast out the scoffer, and strife goes out, and דִּין and disgrace cease.”"
+            },
+            {
+              "ref": "Pro.23.29",
+              "note": "“Who has contentions?” Those who linger long at the wine."
+            },
+            {
+              "ref": "Pro.28.25",
+              "note": "“He who is of a greedy soul stirs up strife, but he who trusts in Yahweh shall be made fat.”"
+            },
+            {
+              "ref": "Pro.29.22",
+              "note": "“An angry man stirs up strife.”"
+            },
+            {
+              "ref": "Jer.15.10",
+              "role": "defining",
+              "note": "Jeremiah: “Woe is me, my mother, that you bore me a man of dispute (רִיב) and a man of strife (מָדוֹן) to the whole earth.”"
+            },
+            {
+              "ref": "Hab.1.3",
+              "note": "“There is dispute (רִיב), and strife (מָדוֹן) rises up.”"
+            },
+            {
+              "ref": "Psa.80.7",
+              "note": "“You make us a strife to our neighbours.”"
+            }
+          ],
+          "kin": [
+            "din-contend",
+            "din-niphal-strife"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀντιλογία",
+          "gloss": "contradiction, dispute",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 80:7 word 2",
+              "note": "ἀντιλογίαν for מָדוֹן, “a strife to our neighbours”; once only."
+            },
+            {
+              "ref": "Heb.12.3",
+              "note": "“Consider him who endured such contradiction (ἀντιλογίαν) of sinners against himself.”"
+            },
+            {
+              "ref": "Jud.1.11",
+              "note": "“The gainsaying (ἀντιλογίᾳ) of Korah.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רִיב",
+            "note": "“Dispute, contention at law”, its constant companion.",
+            "evidence": [
+              {
+                "ref": "Pro.15.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.15.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Hab.1.3"
+              },
+              {
+                "ref": "Pro.17.14"
+              },
+              {
+                "ref": "Pro.26.21"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אֶרֶךְ אַפַּיִם",
+            "note": "“Slow to anger”, which calms what the wrathful stirs up.",
+            "evidence": [
+              {
+                "ref": "Pro.15.18",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "אַהֲבָה",
+            "note": "“Love”, which covers what hatred stirs up.",
+            "evidence": [
+              {
+                "ref": "Pro.10.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יְגָרֶה מָדוֹן",
+            "gloss": "stirs up strife",
+            "evidence": [
+              {
+                "ref": "Pro.15.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.28.25"
+              },
+              {
+                "ref": "Pro.29.22"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵשֶׁת מִדְיָנִים",
+            "gloss": "a woman of strifes, a quarrelsome wife",
+            "evidence": [
+              {
+                "ref": "Pro.21.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.27.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "דַּיָּן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "judge",
+      "bdb": [
+        "d.bh.af"
+      ],
+      "cognate_ids": [
+        "akk-dayyanu",
+        "ar-dayyan",
+        "arc-dayyana"
+      ],
+      "summary": "One who judges: only twice in Hebrew, both of God as the judge who takes up the cause of the wronged.",
+      "senses": [
+        {
+          "id": "dayyan-judge",
+          "gloss": "judge, defender of a cause",
+          "definition": "A judge, in both uses God, who gives judgment between two parties and upholds the weaker one’s cause.",
+          "evidence": [
+            {
+              "ref": "1Sa.24.16",
+              "role": "defining",
+              "note": "David to Saul: “Yahweh be judge (לְדַיָּן) and judge (וְשָׁפַט) between me and you, and see, and plead my cause, and deliver me out of your hand.”"
+            },
+            {
+              "ref": "Psa.68.6",
+              "role": "defining",
+              "note": "“A father of the fatherless and a judge of widows (וְדַיַּן אַלְמָנוֹת) is God in his holy habitation.”"
+            },
+            {
+              "ref": "Luk.18.2",
+              "note": "The judge (κριτής, Peshitta ܕܝܢܐ) “in a city” and the widow who cried “avenge me of my adversary” (18:3): set against the God of Psa 68:6, who “will avenge his own elect” (18:7)."
+            }
+          ],
+          "kin": [
+            "din-vindicate"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κριτής",
+          "gloss": "judge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1SA 24:16 word 3",
+              "note": "κριτὴν for דַּיָּן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 68:6 word 3",
+              "note": "κριτοῦ τῶν χηρῶν, “judge of the widows”."
+            },
+            {
+              "ref": "Luk.18.6",
+              "note": "“Hear what the unrighteous judge says.”"
+            },
+            {
+              "ref": "Act.10.42",
+              "role": "defining",
+              "note": "Christ “ordained of God to be judge of the living and the dead”."
+            },
+            {
+              "ref": "2Ti.4.8",
+              "note": "“The crown of righteousness, which the Lord, the righteous judge, shall give me at that day.”"
+            },
+            {
+              "ref": "Heb.12.23",
+              "note": "“God the judge of all.”"
+            },
+            {
+              "ref": "Jas.4.12",
+              "note": "“There is one lawgiver and judge, who is able to save and to destroy.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֲבִי יְתוֹמִים",
+            "note": "“Father of the fatherless”, the line’s other half: judge and father alike stand for those with no one to plead for them.",
+            "evidence": [
+              {
+                "ref": "Psa.68.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁפַט",
+            "note": "The verb “judge” follows it in the same breath.",
+            "evidence": [
+              {
+                "ref": "1Sa.24.16",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "דִּין",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "judgment, justice; the court; sentence",
+      "bdb": [
+        "xd.ah.ab"
+      ],
+      "cognate_ids": [
+        "arc-dina",
+        "akk-dinu"
+      ],
+      "summary": "Daniel’s and Ezra’s Aramaic: the justice of God’s ways, the court that sits in Daniel’s vision of the Ancient of Days, the judgment given to the saints, and the sentence executed on one who will not keep God’s law. The BDB key also holds tokens of the Hebrew noun and of the name דִּינָה, which share its spelling.",
+      "senses": [
+        {
+          "id": "arc-din-justice",
+          "gloss": "justice, right",
+          "definition": "What is just: the character of God’s ways.",
+          "evidence": [
+            {
+              "ref": "Dan.4.34",
+              "role": "defining",
+              "note": "Nebuchadnezzar praises the King of heaven, “all of whose works are truth (קְשֹׁט) and his ways justice (דִּין); and those who walk in pride he is able to abase”."
+            }
+          ]
+        },
+        {
+          "id": "arc-din-court",
+          "gloss": "judgment, the court in session",
+          "definition": "Judgment as a sitting of court, with books opened, which takes the dominion from the beast and gives the kingdom to the saints.",
+          "evidence": [
+            {
+              "ref": "Dan.7.10",
+              "role": "defining",
+              "note": "Before the Ancient of Days, “the judgment (דִּינָא) sat, and the books were opened”."
+            },
+            {
+              "ref": "Dan.7.26",
+              "role": "defining",
+              "note": "“The judgment shall sit, and they shall take away his dominion, to consume and destroy it to the end.”"
+            },
+            {
+              "ref": "Dan.7.22",
+              "role": "defining",
+              "note": "“Until the Ancient of Days came, and judgment was given to (or for) the saints of the Most High, and the time came, and the saints possessed the kingdom.”"
+            },
+            {
+              "ref": "Rev.20.4",
+              "note": "“I saw thrones, and they sat on them, and judgment was given to them”: κρίμα, Peshitta ܕܝܢܐ, the words of Dan 7:22."
+            },
+            {
+              "ref": "Rev.20.12",
+              "note": "“And the books were opened … and the dead were judged”, as Dan 7:10."
+            }
+          ],
+          "kin": [
+            "din-judgment"
+          ]
+        },
+        {
+          "id": "arc-din-sentence",
+          "gloss": "sentence, punishment",
+          "definition": "The judgment executed on an offender.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.26",
+              "role": "defining",
+              "note": "Whoever will not do the law of your God and the law of the king, “let judgment (דִּינָה) be executed on him speedily, whether to death, or banishment, or confiscation of goods, or imprisonment”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דִּין",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "judge",
+      "bdb": [
+        "xd.ah.aa"
+      ],
+      "cognate_ids": [
+        "arc-din"
+      ],
+      "summary": "Once, as a participle, in Artaxerxes’ letter to Ezra; the database files the token under no key, so the count shows none.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "judge",
+          "senses": [
+            {
+              "gloss": "judge (a people)",
+              "definition": "To act as judge over a people.",
+              "evidence": [
+                {
+                  "ref": "Ezr.7.25",
+                  "role": "defining",
+                  "note": "“Appoint magistrates and judges who may judge (דָּאיְנִין) all the people beyond the River, all who know the laws of your God.”"
+                }
+              ],
+              "kin": [
+                "din-judge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דַּיָּן",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "judge",
+      "bdb": [
+        "xd.ah.ac"
+      ],
+      "cognate_ids": [
+        "arc-dayyana",
+        "akk-dayyanu"
+      ],
+      "senses": [
+        {
+          "gloss": "judge",
+          "definition": "An appointed judge, beside the magistrates.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.25",
+              "role": "defining",
+              "note": "“Appoint magistrates (שָׁפְטִין) and judges (וְדַיָּנִין) who may judge all the people.”"
+            }
+          ],
+          "kin": [
+            "dayyan-judge"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְדִינָה",
+      "lang": "arc",
+      "root": "מדינה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "province",
+      "bdb": [
+        "xd.ah.ad"
+      ],
+      "cognate_ids": [
+        "arc-medinta"
+      ],
+      "summary": "The Aramaic of Daniel and Ezra, as the Hebrew: a province of the Babylonian or Persian empire. The database keys its root as מדינה.",
+      "senses": [
+        {
+          "id": "arc-medinah-province",
+          "gloss": "province",
+          "definition": "A province with its own rulers, such as Babylon, Judah or Media.",
+          "evidence": [
+            {
+              "ref": "Dan.2.48",
+              "role": "defining",
+              "note": "The king made Daniel “ruler over the whole province of Babylon”."
+            },
+            {
+              "ref": "Dan.3.1",
+              "note": "The image set up “in the plain of Dura, in the province of Babylon”."
+            },
+            {
+              "ref": "Dan.3.2",
+              "note": "“All the rulers of the provinces” summoned to the dedication."
+            },
+            {
+              "ref": "Ezr.5.8",
+              "role": "defining",
+              "note": "“We went into the province of Judah (יְהוּד מְדִינְתָּא), to the house of the great God.”"
+            },
+            {
+              "ref": "Ezr.6.2",
+              "note": "At Achmetha, “in the province of Media”."
+            },
+            {
+              "ref": "Ezr.7.16"
+            },
+            {
+              "ref": "Dan.3.12"
+            },
+            {
+              "ref": "Dan.3.30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דִּינָיֵא",
+      "lang": "arc",
+      "pos": "noun",
+      "gloss": "judges (?); or a people, the Dinaites",
+      "bdb": [
+        "xd.ah.af"
+      ],
+      "summary": "Once, in the list of those who wrote against Jerusalem. Pointed as a gentilic, “the Dinaites”, a people otherwise unknown; its consonants are also the plural of דַּיָּן, “the judges”, which suits the officials named beside it. Which it is, and so whether it is a word of this root at all, is not clear.",
+      "senses": [
+        {
+          "gloss": "judges (?), or the Dinaites",
+          "definition": "A class of officials or a people among Rehum’s companions.",
+          "evidence": [
+            {
+              "ref": "Ezr.4.9",
+              "role": "defining",
+              "note": "“Rehum the commander, Shimshai the scribe, and the rest of their companions, דִּינָיֵא, and the Apharsathchites …”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּן",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "judge; (ethpeel) be judged, go to law",
+      "summary": "The Peshitta’s ܕܢ (dān), its verb for κρίνω: to judge, condemn, and go to law; the ethpeel is to be judged or to have a case at law.",
+      "cognate_ids": [
+        "arc-din"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "judge, condemn; contend at law",
+          "senses": [
+            {
+              "gloss": "judge",
+              "definition": "To judge, as the Hebrew, of God, of Christ, of the saints and of men; also to sue someone at law.",
+              "evidence": [
+                {
+                  "ref": "Act.17.31",
+                  "role": "defining",
+                  "note": "“He has appointed a day in which he will judge (ܕܢܕܘܢ) the world in righteousness by the man whom he has ordained.”"
+                },
+                {
+                  "ref": "Act.7.7",
+                  "role": "defining",
+                  "note": "Gen 15:14: “The nation which they shall serve I will judge.”"
+                },
+                {
+                  "ref": "Heb.10.30",
+                  "role": "defining",
+                  "note": "Deu 32:36: “The Lord shall judge his people.”"
+                },
+                {
+                  "ref": "Jhn.5.22",
+                  "note": "“The Father judges no one.”"
+                },
+                {
+                  "ref": "1Co.6.2",
+                  "role": "defining",
+                  "note": "“Do you not know that the saints shall judge the world?”"
+                },
+                {
+                  "ref": "1Co.6.3"
+                },
+                {
+                  "ref": "Mat.19.28",
+                  "note": "“You shall sit on twelve thrones, judging the twelve tribes of Israel.”"
+                },
+                {
+                  "ref": "Mat.7.1",
+                  "note": "“Judge not, that you be not judged.”"
+                },
+                {
+                  "ref": "Mat.5.40",
+                  "note": "“If anyone will go to law with you (ܕܢܕܘܢ)”: the sense “contend at law”."
+                },
+                {
+                  "ref": "2Ti.4.1",
+                  "note": "“Who shall judge the living and the dead at his appearing and his kingdom.”"
+                }
+              ],
+              "kin": [
+                "din-judge"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be judged; go to law",
+          "senses": [
+            {
+              "gloss": "be judged; have a case at law",
+              "definition": "To be judged, or to go to law with someone.",
+              "evidence": [
+                {
+                  "ref": "Rev.20.12",
+                  "role": "defining",
+                  "note": "“The dead were judged (ܘܐܬܕܝܢܘ) out of the things written in the books.”"
+                },
+                {
+                  "ref": "Rev.20.13"
+                },
+                {
+                  "ref": "Mat.7.1"
+                },
+                {
+                  "ref": "1Co.6.6",
+                  "role": "defining",
+                  "note": "“Brother goes to law (ܡܬܕܝܢ) with brother, and that before unbelievers.”"
+                },
+                {
+                  "ref": "1Co.6.1"
+                }
+              ],
+              "kin": [
+                "din-contend"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דִּינָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "judgment; lawsuit; justice",
+      "summary": "The Peshitta’s ܕܝܢܐ (dīnā), for κρίσις and κρίμα: judgment, a case at law, and justice.",
+      "cognate_ids": [
+        "arc-dina"
+      ],
+      "senses": [
+        {
+          "gloss": "judgment",
+          "definition": "Judgment given, especially God’s judgment, and the judgment committed to the Son and given to the saints.",
+          "evidence": [
+            {
+              "ref": "Jhn.5.22",
+              "role": "defining",
+              "note": "“He has given all judgment (ܕܝܢܐ) to the Son.”"
+            },
+            {
+              "ref": "Jhn.5.27",
+              "role": "defining",
+              "note": "“He has given him authority to execute judgment also, because he is the Son of man.”"
+            },
+            {
+              "ref": "Rev.20.4",
+              "role": "defining",
+              "note": "“Judgment was given to them”, Dan 7:22."
+            },
+            {
+              "ref": "Heb.9.27"
+            },
+            {
+              "ref": "Mat.12.18",
+              "note": "“He shall show judgment to the nations”, quoting Isa 42:1, where the Hebrew has מִשְׁפָּט."
+            },
+            {
+              "ref": "Mat.23.23",
+              "note": "“The weightier matters of the law: judgment, mercy and faith.”"
+            }
+          ],
+          "kin": [
+            "din-judgment",
+            "arc-din-court"
+          ]
+        },
+        {
+          "gloss": "case, lawsuit",
+          "definition": "A matter brought to judgment between two parties.",
+          "evidence": [
+            {
+              "ref": "Luk.18.3",
+              "role": "defining",
+              "note": "The widow: “avenge me of ܒܥܠ ܕܝܢܝ”, the master of my case, my adversary at law."
+            },
+            {
+              "ref": "1Co.6.4",
+              "note": "“If then you have judgments of things pertaining to this life.”"
+            },
+            {
+              "ref": "Act.25.15"
+            }
+          ],
+          "kin": [
+            "din-cause"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דַּיָּנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "judge",
+      "summary": "The Peshitta’s ܕܝܢܐ (dayyānā), for κριτής.",
+      "cognate_ids": [
+        "arc-dayyana"
+      ],
+      "senses": [
+        {
+          "gloss": "judge",
+          "definition": "A judge: the unrighteous judge of the parable, and God and Christ as judge of all.",
+          "evidence": [
+            {
+              "ref": "Luk.18.2",
+              "role": "defining",
+              "note": "“There was a judge (ܕܝܢܐ) in a city (ܒܡܕܝܢܬܐ) who did not fear God.”"
+            },
+            {
+              "ref": "Act.10.42",
+              "role": "defining",
+              "note": "“Ordained of God to be judge of the living and the dead.”"
+            },
+            {
+              "ref": "Heb.12.23",
+              "note": "“God the judge of all.”"
+            },
+            {
+              "ref": "2Ti.4.8"
+            },
+            {
+              "ref": "Jas.4.12"
+            },
+            {
+              "ref": "Act.7.27",
+              "note": "“Who made you a ruler and a judge over us?”, Exo 2:14, where the Hebrew has שֹׁפֵט."
+            }
+          ],
+          "kin": [
+            "dayyan-judge"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְדִינְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "city",
+      "summary": "The Peshitta’s ܡܕܝܢܬܐ (mdīntā), its ordinary word for πόλις, a city; the Hebrew and Biblical Aramaic מְדִינָה is a province. The city of God that Abraham looked for is called by this word.",
+      "cognate_ids": [
+        "arc-medinta"
+      ],
+      "senses": [
+        {
+          "gloss": "city",
+          "definition": "A city or town, and the city whose builder is God, the new Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Mat.5.14",
+              "role": "defining",
+              "note": "“A city set on a hill cannot be hid.”"
+            },
+            {
+              "ref": "Luk.18.2",
+              "note": "A judge “in a city”."
+            },
+            {
+              "ref": "Heb.11.10",
+              "role": "defining",
+              "note": "Abraham “looked for the city which has foundations, whose builder and maker is God”."
+            },
+            {
+              "ref": "Heb.11.16"
+            },
+            {
+              "ref": "Heb.12.22",
+              "note": "“The city of the living God, the heavenly Jerusalem.”"
+            },
+            {
+              "ref": "Heb.13.14"
+            },
+            {
+              "ref": "Rev.21.2",
+              "note": "“The holy city, new Jerusalem, coming down from God out of heaven.”"
+            }
+          ],
+          "kin": [
+            "arc-medinah-province"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-dianu",
+      "lang": "akk",
+      "form": "diānu",
+      "translit": "diānu, dânu",
+      "gloss": "judge, give judgment, administer justice; initiate litigation",
+      "relation": "cognate",
+      "note": "The same verb, with “initiate litigation” for the Hebrew’s “contend”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000023030, diānu [judge] V",
+          "note": "administer justice; give judgement; initiating litigation; judge; pass judgement (×153)."
+        },
+        {
+          "source": "oracc",
+          "locator": "cmawro x000003470, dânu [judge] V",
+          "note": "administer justice; judge (×132)."
+        }
+      ]
+    },
+    {
+      "id": "akk-dinu",
+      "lang": "akk",
+      "form": "dīnu",
+      "translit": "dīnu",
+      "gloss": "legal decision, judgment, verdict; case, lawsuit, claim; court",
+      "relation": "cognate",
+      "note": "Over six thousand uses: the case brought, the claim, the court and the verdict, the range of Hebrew and Aramaic דִּין.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tsae x000001950, dīnu [legal decision] N",
+          "note": "(legal) case; claim; court; decision; judgement; justice; lawsuit; sentence; trial (×6178)."
+        }
+      ]
+    },
+    {
+      "id": "akk-dayyanu",
+      "lang": "akk",
+      "form": "dayyānu",
+      "translit": "dayyānu",
+      "gloss": "judge; divine judge",
+      "relation": "cognate",
+      "note": "The same pattern as דַּיָּן, used of men and of gods.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000003290, dayyānu [judge] N",
+          "note": "divine judge; judge (×706)."
+        }
+      ]
+    },
+    {
+      "id": "uga-dyn",
+      "lang": "uga",
+      "form": "𐎄𐎐",
+      "translit": "dn (d-y-n)",
+      "gloss": "judge",
+      "relation": "cognate",
+      "note": "In the Keret epic the king is rebuked, “you do not judge the judgment of the widow (ltdn dn almnt)”, with ṯpṭ “judge” in the parallel line: the Hebrew’s pairing of דִּין with שָׁפַט and its concern for the widow (Psa 68:6; Jer 5:28).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 183, §93 Glossary, /d-y-n/",
+          "note": "“tdn, dn 1.12:II:58 … ‘to judge’ (H., Aram., Arab. d-y-n, Akkad. d(i?)ânu)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 143, §85.1, notes to KTU 1.16:VI:45–47",
+          "note": "Negative with imperfect 2 sing. of /d-y-n/ “to judge”, cf. Jer 5:28, Ps 7:9; acc. /dīna/ “judgment, cause”; almnt “widow”, cf. Isa 10:2; /ṯ-p-ṭ/ “to adjudicate”, the B-word to /d-y-n/."
+        }
+      ]
+    },
+    {
+      "id": "uga-dn",
+      "lang": "uga",
+      "form": "𐎄𐎐",
+      "translit": "dn (dīn-)",
+      "gloss": "judgment, cause",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 183, §93 Glossary, dn /dīn-/",
+          "note": "“judgment, cause” (H., Aram., Arab., Akkad. dīn)."
+        }
+      ]
+    },
+    {
+      "id": "ar-dana",
+      "lang": "ar",
+      "form": "دَانَ",
+      "translit": "dāna",
+      "gloss": "requite, repay; rule, govern; (III) summon to the judge, litigate; also obey, be submissive",
+      "relation": "cognate",
+      "note": "Lane’s sources set “obey, be abased” first, but give also “repaid, requited him for his deed”, “ruled, governed, managed”, and for form III مُحَاكَمَةٌ, summoning another to the judge and litigating with him: the Hebrew’s judging, ruling and contending. Its noun دَيْنٌ, a debt, is a further Arabic development.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 942, root دين, دَانَ (n13578)",
+          "note": "“He repaid, requited, compensated, or recompensed, him, بِفِعْلِهِ for his deed … And دِنْتُهُ, inf. n. دِينٌ, I ruled, governed, or managed, him, or it.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 943, root دين, دَايَنْتُهُ (n13580)",
+          "note": "“Each of the inf. ns. mentioned above is also syn. with مُحَاكَمَةٌ [The summoning another to the judge, and litigating with him].”"
+        }
+      ]
+    },
+    {
+      "id": "ar-din",
+      "lang": "ar",
+      "form": "دِينٌ",
+      "translit": "dīn",
+      "gloss": "requital, recompense; a reckoning; rule, authority; obedience, religion",
+      "relation": "cognate",
+      "note": "يَوْمُ الدِّينِ, “the day of requital” or “of reckoning”, is the Arabic of the day of judgment.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 944, root دين, دِينٌ (n13587)",
+          "note": "“Repayment, requital, compensation, or recompense … Hence, مَالِكِ يَوْمِ الدِّينِ, i. e. [The King] of the day of requital … A reckoning … power; or power of dominion … the exercise, or possession, of authority.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-dayyan",
+      "lang": "ar",
+      "form": "دَيَّانٌ",
+      "translit": "dayyān",
+      "gloss": "requiter; judge; ruler, governor; (with the article) God",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 944, root دين, دَيَّانٌ (n13591)",
+          "note": "“A requiter, who neglects not any deed, but requites it … a judge; a ruler, or governor … applied to a man; and, with the article ال, to God.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-madina",
+      "lang": "ar",
+      "form": "مَدِينَةٌ",
+      "translit": "madīna",
+      "gloss": "city",
+      "relation": "possible",
+      "note": "Lane files it under دين, “so called because had, or held, in possession, or under authority”, and also refers to a root مدن; the Arabic may have come from Aramaic מְדִינְתָּא. It agrees with the Peshitta’s “city”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 945, root دين, مَدِينَةٌ (n13595)",
+          "note": "“A city … so called because had, or held, in possession, or under authority. [See also art. مدن.]”"
+        }
+      ]
+    },
+    {
+      "id": "arc-din",
+      "lang": "arc",
+      "form": "דִּין",
+      "translit": "dīn",
+      "gloss": "judge, hold court, pass sentence",
+      "relation": "cognate",
+      "note": "The Targums’ verb, participle דָּאֵין, “judge”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דִּין I (D00633); s.v. דִּין (ch.) (D00634)",
+          "note": "“to hold court, pass sentence, punish”; Aramaic participle דָּאֵין, Targ. Is. XVI, 5; Targ. O. Ex. XVIII, 16."
+        }
+      ]
+    },
+    {
+      "id": "arc-dina",
+      "lang": "arc",
+      "form": "דִּינָא",
+      "translit": "dīnā",
+      "gloss": "law, decision; cause; lawsuit, judgment",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דִּין ² (D00636); s.v. דִּין II (D00635)",
+          "note": "“law, decision; cause &c.”, Targ. Prov. XX, 8; “law-suit, claim; judgment, justice, law”."
+        }
+      ]
+    },
+    {
+      "id": "arc-dayyana",
+      "lang": "arc",
+      "form": "דַּיָּינָא",
+      "translit": "dayyānā",
+      "gloss": "judge",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דַּיָּין ² (D00561)",
+          "note": "Targ. Ps. VII, 12; pl. דַּיָּינִין, Targ. Deut. XVI, 18."
+        }
+      ]
+    },
+    {
+      "id": "arc-medinta",
+      "lang": "arc",
+      "form": "מְדִינְתָּא",
+      "translit": "mədīntā",
+      "gloss": "province, district; city",
+      "relation": "cognate",
+      "note": "In the Targum of Proverbs it renders Hebrew עִיר, “city”, as the Peshitta’s word does.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְדִינְתָּא (M00297); s.v. מְדִינָה (M00295)",
+          "note": "Targ. Prov. XVI, 32 (Hebrew text עיר); מְדִינָה “[jurisdiction,] district, country … province; large town, capital”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "judgment",
+      "statement": "Hannah sets Yahweh’s judging the ends of the earth beside his giving strength to his king and exalting the horn of his anointed (1Sa 2:10). Psalm 72 asks that the king’s son judge Yahweh’s people with righteousness, and Psalm 110 says of the one seated at Yahweh’s right hand, “he shall judge among the nations”. The New Testament says God will judge the world in righteousness “by the man whom he has appointed”, having raised him from the dead (Act 17:31), that the Father has given all judgment to the Son “because he is the Son of man” (Jhn 5:22, 27), and that he is judge of the living and the dead (Act 10:42). So the judging the Psalms ascribe to Yahweh is done through his anointed, a man raised from the dead.",
+      "evidence": [
+        {
+          "ref": "1Sa.2.10"
+        },
+        {
+          "ref": "Psa.72.2"
+        },
+        {
+          "ref": "Psa.110.6"
+        },
+        {
+          "ref": "Psa.9.9"
+        },
+        {
+          "ref": "Act.17.31"
+        },
+        {
+          "ref": "Jhn.5.22"
+        },
+        {
+          "ref": "Jhn.5.27"
+        },
+        {
+          "ref": "Act.10.42"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "In Daniel’s vision the court sits, the books are opened, and the beast’s dominion is taken away (Dan 7:10, 26); then “judgment was given to the saints of the Most High, and the time came that the saints possessed the kingdom” (Dan 7:22), and the kingdom “under the whole heaven” is given to them (Dan 7:27). Paul asks, “Do you not know that the saints shall judge the world?” (1Co 6:2), and John sees thrones and “judgment was given to them”, and they reign with Christ (Rev 20:4). The saints’ judging is their share in ruling the kingdom on the earth, after the powers that held it have been judged and removed.",
+      "evidence": [
+        {
+          "ref": "Dan.7.10"
+        },
+        {
+          "ref": "Dan.7.22"
+        },
+        {
+          "ref": "Dan.7.26"
+        },
+        {
+          "ref": "Dan.7.27"
+        },
+        {
+          "ref": "1Co.6.2"
+        },
+        {
+          "ref": "Rev.20.4"
+        },
+        {
+          "ref": "Rev.5.10"
+        }
+      ]
+    },
+    {
+      "topic": "judgment-of-gods-people",
+      "statement": "“Yahweh shall judge his people, and repent himself for his servants, when he sees that their power is gone” (Deu 32:36; Psa 135:14): his judging his people is his taking up their cause, as Rachel said “God has judged me” when he gave her a son (Gen 30:6), and David prayed “by your might judge me” beside “save me” (Psa 54:3). Hebrews quotes the same words to those who despise the covenant: “The Lord shall judge his people. It is a fearful thing to fall into the hands of the living God” (Heb 10:30–31). The judge who vindicates his servants also calls them to account.",
+      "evidence": [
+        {
+          "ref": "Deu.32.36"
+        },
+        {
+          "ref": "Psa.135.14"
+        },
+        {
+          "ref": "Gen.30.6"
+        },
+        {
+          "ref": "Psa.54.3"
+        },
+        {
+          "ref": "Heb.10.30"
+        },
+        {
+          "ref": "Heb.10.31"
+        }
+      ]
+    },
+    {
+      "topic": "justice-for-the-poor",
+      "statement": "Of Josiah Yahweh says, “He judged the cause of the poor and needy; then it was well. Was not this to know me?” (Jer 22:16). God is “a father of the fatherless and a judge of widows” (Psa 68:6) and “will maintain the cause of the afflicted” (Psa 140:13); the king is told to open his mouth for the dumb and plead the cause of the poor (Pro 31:8–9), and Jerusalem is condemned because its men “do not judge the cause of the fatherless” (Jer 5:28). To know Yahweh is shown in taking up the cause of those who cannot plead their own, as he does.",
+      "evidence": [
+        {
+          "ref": "Jer.22.16"
+        },
+        {
+          "ref": "Psa.68.6"
+        },
+        {
+          "ref": "Psa.140.13"
+        },
+        {
+          "ref": "Pro.31.8"
+        },
+        {
+          "ref": "Pro.31.9"
+        },
+        {
+          "ref": "Jer.5.28"
+        },
+        {
+          "ref": "Luk.18.7"
+        }
+      ]
+    },
+    {
+      "topic": "flood",
+      "statement": "Before the flood Yahweh said that his spirit would not contend with man for ever, “for he also is flesh”, and that “his days shall be a hundred and twenty years” (Gen 6:3). Peter says that the longsuffering of God waited in the days of Noah while the ark was being prepared, and that Noah was a preacher of righteousness when God brought the flood on the world of the ungodly (1Pe 3:20; 2Pe 2:5). The hundred and twenty years were the time left to that world before the flood, and the reason given is that man is flesh: mortal, and answerable to God.",
+      "evidence": [
+        {
+          "ref": "Gen.6.3"
+        },
+        {
+          "ref": "Gen.6.13"
+        },
+        {
+          "ref": "1Pe.3.20"
+        },
+        {
+          "ref": "2Pe.2.5"
+        }
+      ]
+    }
+  ],
+  "note": "Proper names are left to their own entries: דָּן (names/dan.json) and אֲבִידָן (names/abidan.json, filed by BDB under אבה) are written; דָּנִיֵּאל, דִּינָה, מְדָן, יָדוֹן have no name entries yet, and the city Dan, the place מָדוֹן (Jos 11:1) and the place מִדִּין (Jos 15:61) are places. The gentilics דָּנִי “Danite” (d.bh.ae) and מִדְיָנִי “Midianite” (d.bh.al) are left with the names. מִדְיָן (Midian, d.bh.ak) is filed here by BDB, but nothing in scripture ties the name to “judge” or “strife”; left out until a name entry takes it up. דִּיפַת (1Ch 1:6) is Gen 10:3’s רִיפַת with ד for ר, a scribal variant, not this root. Spelling-only tokens: Jdg 5:10 מִדִּין “carpets” (from מַד, a garment) and 2Sa 21:20 מָדוֹן (written; read מִדִּין, “a man of stature”, 1Ch 20:6 מִדָּה) are filed under keys of this root but belong to מדד. The BDB key d.bh.aa holds about 25 tokens of the name Dan, and xd.ah.ab holds the Hebrew noun’s tokens and five of Dinah’s; the Aramaic verb’s one token (Ezr 7:25 דָּאיְנִין) and Job 19:29 שַׁדּוּן have no key in the database. Leads not followed: Ge’ez dayyana “judge” (Dillmann, Leslau; no scan here); Sabaean dyn “impose a fine, be subject to tax” and ʾdyn “obligations” (Biella 1982, pp. 81–82), which go with Arabic dayn “debt”, not with judging. Gen 6:3 יָדוֹן is read as this verb; the Septuagint has καταμείνῃ “remain”, and whether it is “contend with” or “judge, rule in” is open."
+}
