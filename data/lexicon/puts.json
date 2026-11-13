@@ -1,0 +1,971 @@
+{
+  "id": "puts",
+  "root": "פוצ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "scattering",
+    "exile",
+    "gathering",
+    "shepherd",
+    "judgment",
+    "war"
+  ],
+  "gloss": "scatter, disperse; be scattered; spread abroad, overflow",
+  "summary": "To come apart and spread out in every direction: an army routed or sent home, a flock with no shepherd, the nations from Babel, Israel among the peoples. Moses’ cry as the ark set out, “Rise, Yahweh, and let your enemies be scattered” (Num 10:35; Psa 68:2), uses the qal; in the hiphil it is chiefly Yahweh scattering a people in judgment, “among the nations and among the lands” (Deu 4:27; Ezk 12:15), with the promise to gather them again (Deu 30:3; Ezk 28:25). Christ took “strike the shepherd, and the flock will scatter” (Zec 13:7) for himself and his disciples (Mat 26:31). Arabic fāḍa “overflow, spread abroad” and fawḍā “in dispersion, with no chief” answer to it, as does the use of springs and cities spreading out with plenty (Pro 5:16; Zec 1:17).",
+  "words": [
+    {
+      "lemma": "פּוּץ",
+      "bdb": [
+        "q.aq.aa",
+        "q.cm.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be scattered, disperse; scatter; (polel) shatter",
+      "summary": "Qal and niphal, of people coming apart and spreading out; hiphil, of scattering them (and, intransitively, of their dispersing). The polel, pilpel and hithpolel (Jer 23:29; Job 16:12; Hab 3:6) are the regular reduplicated stems of a hollow root and are analysed so in the text, though some dictionaries file them under a root פצץ: they mean breaking into pieces that fly apart, scattering seen from the thing broken. The shattering rests on three verses, and no cognate yet shares it surely: Akkadian paʾāṣu “break up”, whose adjective also means “dispersed”, is possible only.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be scattered, disperse",
+          "cognate_ids": [
+            "ar-fada",
+            "ar-fawda"
+          ],
+          "senses": [
+            {
+              "id": "enemies-scatter",
+              "gloss": "be scattered in flight",
+              "definition": "Of enemies or a beaten force breaking up and running in every direction, so that no two are left together.",
+              "evidence": [
+                {
+                  "ref": "Num.10.35",
+                  "role": "defining",
+                  "note": "As the ark set out: “Rise, Yahweh, וְיָפֻצוּ your enemies, and let those who hate you flee from your face”: scattering set beside fleeing."
+                },
+                {
+                  "ref": "Psa.68.2",
+                  "role": "defining",
+                  "note": "Moses’ words taken up: “Let God arise, let his enemies scatter, and let those who hate him flee from his face.”"
+                },
+                {
+                  "ref": "1Sa.11.11",
+                  "role": "defining",
+                  "note": "The Ammonites left alive “scattered, and two among them were not left together”."
+                }
+              ]
+            },
+            {
+              "id": "flock-scatters",
+              "gloss": "be scattered, of a flock without a shepherd",
+              "definition": "Of sheep, and of the people as sheep, straying apart for want of a shepherd to keep them together.",
+              "evidence": [
+                {
+                  "ref": "Ezk.34.5",
+                  "role": "defining",
+                  "note": "“They scattered for lack of a shepherd, and became food for every beast of the field, and they scattered.”"
+                },
+                {
+                  "ref": "Zec.13.7",
+                  "role": "defining",
+                  "note": "“Strike the shepherd, and the flock will scatter.”"
+                },
+                {
+                  "ref": "Mat.26.31",
+                  "role": "defining",
+                  "note": "Christ quotes Zec 13:7 of himself and his disciples on the night he was betrayed: “the sheep of the flock will be scattered.”"
+                },
+                {
+                  "ref": "Mrk.14.27"
+                },
+                {
+                  "ref": "Mat.26.56",
+                  "note": "Fulfilled: “then all the disciples left him and fled.”"
+                },
+                {
+                  "ref": "Ezk.46.18",
+                  "note": "The prince is not to take the people’s inheritance, “so that my people are not scattered, each from his possession”."
+                }
+              ]
+            },
+            {
+              "gloss": "disperse, go off in all directions",
+              "definition": "Of people breaking up and going their own ways, without defeat: an army sent home, or men sent out among the people.",
+              "evidence": [
+                {
+                  "ref": "2Sa.20.22",
+                  "role": "defining",
+                  "note": "Joab blew the shofar “and they dispersed from the city, each to his tent”."
+                },
+                {
+                  "ref": "1Sa.14.34",
+                  "note": "“Disperse among the people and say to them, Bring me each his ox.”"
+                },
+                {
+                  "ref": "Gen.11.4",
+                  "role": "defining",
+                  "note": "“Let us build a city and a tower … lest we be scattered over the face of the whole earth”: what Babel was built against."
+                },
+                {
+                  "ref": "Zep.3.10",
+                  "note": "בַּת־פוּצַי, “the daughter of my scattered ones”, bringing Yahweh’s offering from beyond the rivers of Cush: the passive participle of those dispersed."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be scattered, be dispersed; spread out",
+          "cognate_ids": [
+            "ar-fada",
+            "ar-fawda"
+          ],
+          "senses": [
+            {
+              "gloss": "be scattered, of an army",
+              "definition": "Of soldiers breaking away from their king or leader when the battle is lost.",
+              "evidence": [
+                {
+                  "ref": "2Ki.25.5",
+                  "role": "defining",
+                  "note": "Zedekiah overtaken in the plains of Jericho, “and all his army was scattered from him”."
+                },
+                {
+                  "ref": "Jer.52.8"
+                },
+                {
+                  "ref": "Jer.40.15",
+                  "note": "If Gedaliah is killed, “all Judah who are gathered to you will be scattered”: scattered against gathered."
+                }
+              ]
+            },
+            {
+              "id": "flock-scattered",
+              "gloss": "be scattered, of the flock",
+              "definition": "Of Israel as sheep scattered on the hills and over the land, with no shepherd seeking them.",
+              "evidence": [
+                {
+                  "ref": "1Ki.22.17",
+                  "role": "defining",
+                  "note": "“I saw all Israel scattered on the hills, like sheep that have no shepherd.”"
+                },
+                {
+                  "ref": "2Ch.18.16"
+                },
+                {
+                  "ref": "Jer.10.21",
+                  "note": "The shepherds have not sought Yahweh, “and all their flock is scattered”."
+                },
+                {
+                  "ref": "Ezk.34.6",
+                  "role": "defining",
+                  "note": "“My flock was scattered over all the face of the earth, and no one searched or sought.”"
+                },
+                {
+                  "ref": "Ezk.34.12",
+                  "note": "Yahweh will seek out his sheep and deliver them “from all the places where they were scattered”."
+                }
+              ]
+            },
+            {
+              "id": "peoples-scattered",
+              "gloss": "be dispersed among the peoples",
+              "definition": "Of a people spread among other peoples and lands, the state from which Yahweh promises to gather them.",
+              "evidence": [
+                {
+                  "ref": "Gen.10.18",
+                  "role": "defining",
+                  "note": "“Afterward the clans of the Canaanites were spread abroad.”"
+                },
+                {
+                  "ref": "Ezk.11.17",
+                  "role": "defining",
+                  "note": "“I will gather you from the peoples and assemble you out of the lands where you have been scattered, and I will give you the land of Israel.”"
+                },
+                {
+                  "ref": "Ezk.20.34"
+                },
+                {
+                  "ref": "Ezk.20.41"
+                },
+                {
+                  "ref": "Ezk.28.25",
+                  "role": "defining",
+                  "note": "Gathered from the peoples among whom they were scattered, “they will dwell on their own land that I gave to my servant Jacob”."
+                },
+                {
+                  "ref": "Ezk.29.13",
+                  "note": "Egypt too, gathered after forty years from the peoples where they were scattered."
+                }
+              ]
+            },
+            {
+              "gloss": "spread out over",
+              "definition": "Of a battle spreading over the whole face of a country.",
+              "evidence": [
+                {
+                  "ref": "2Sa.18.8",
+                  "role": "defining",
+                  "note": "“The battle was spread there over the face of all the land” (נָפֹצֶת, the read form)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "scatter, disperse; spread abroad; (intransitive) disperse",
+          "cognate_ids": [
+            "ar-fada",
+            "ar-fawda"
+          ],
+          "senses": [
+            {
+              "id": "scatter-in-judgment",
+              "gloss": "scatter a people among the nations",
+              "definition": "Yahweh’s act of judgment, breaking up a people and spreading them among other peoples and lands; from Babel, and as the covenant’s curse on Israel’s unfaithfulness, with the promise to gather them again.",
+              "evidence": [
+                {
+                  "ref": "Gen.11.8",
+                  "role": "defining",
+                  "note": "“Yahweh scattered them from there over the face of the whole earth, and they stopped building the city.”"
+                },
+                {
+                  "ref": "Gen.11.9"
+                },
+                {
+                  "ref": "Deu.4.27",
+                  "role": "defining",
+                  "note": "“Yahweh will scatter you among the peoples, and you will be left few in number among the nations.”"
+                },
+                {
+                  "ref": "Deu.28.64",
+                  "role": "defining",
+                  "note": "“From one end of the earth to the other”, there to serve gods of wood and stone."
+                },
+                {
+                  "ref": "Deu.30.3",
+                  "role": "defining",
+                  "note": "Yahweh “will gather you again from all the peoples where Yahweh your God has scattered you”."
+                },
+                {
+                  "ref": "Neh.1.8",
+                  "note": "Nehemiah recalls the word to Moses: “If you act unfaithfully, I will scatter you among the peoples.”"
+                },
+                {
+                  "ref": "Ezk.12.15",
+                  "role": "defining",
+                  "note": "“When I scatter them among the nations and disperse them (זֵרִיתִי) among the lands”: the standing pair."
+                },
+                {
+                  "ref": "Ezk.11.16"
+                },
+                {
+                  "ref": "Ezk.20.23"
+                },
+                {
+                  "ref": "Ezk.22.15"
+                },
+                {
+                  "ref": "Ezk.36.19",
+                  "note": "“According to their ways and their deeds I judged them.”"
+                },
+                {
+                  "ref": "Jer.9.15"
+                },
+                {
+                  "ref": "Jer.13.24",
+                  "note": "“Like chaff blown away by the wind of the wilderness.”"
+                },
+                {
+                  "ref": "Jer.18.17",
+                  "note": "“Like an east wind I will scatter them before the enemy.”"
+                },
+                {
+                  "ref": "Jer.30.11",
+                  "note": "Yahweh will make a full end of all the nations where he scattered Israel, but not of Israel."
+                },
+                {
+                  "ref": "Ezk.29.12",
+                  "note": "Egypt scattered the same way."
+                },
+                {
+                  "ref": "Ezk.30.23"
+                },
+                {
+                  "ref": "Ezk.30.26"
+                },
+                {
+                  "ref": "Isa.24.1",
+                  "note": "Yahweh empties the land and scatters its inhabitants."
+                },
+                {
+                  "ref": "Gen.49.7",
+                  "note": "Of Simeon and Levi: “I will divide them in Jacob and scatter them in Israel.”"
+                }
+              ],
+              "kin": [
+                "dispersions"
+              ]
+            },
+            {
+              "gloss": "scatter, rout enemies",
+              "definition": "Drive a foe apart in battle, of Yahweh’s arrows and lightning and of a wind that blows them away.",
+              "evidence": [
+                {
+                  "ref": "2Sa.22.15",
+                  "role": "defining",
+                  "note": "“He sent out arrows and scattered them; lightning, and routed them.”"
+                },
+                {
+                  "ref": "Psa.18.15"
+                },
+                {
+                  "ref": "Psa.144.6",
+                  "role": "defining",
+                  "note": "“Flash lightning and scatter them; send out your arrows and rout them.”"
+                },
+                {
+                  "ref": "Isa.41.16",
+                  "note": "“You will winnow them, the wind will carry them off, and the storm will scatter them.”"
+                },
+                {
+                  "ref": "Hab.3.14",
+                  "note": "The enemy “stormed out to scatter me”."
+                },
+                {
+                  "ref": "Job.18.11",
+                  "note": "Terrors “scatter him at his heels”: drive him every way."
+                }
+              ]
+            },
+            {
+              "id": "shepherds-scatter",
+              "gloss": "scatter the flock",
+              "definition": "Of Israel’s shepherds, who scattered Yahweh’s flock by neglect and violence instead of keeping it together.",
+              "evidence": [
+                {
+                  "ref": "Jer.23.1",
+                  "role": "defining",
+                  "note": "“Woe to the shepherds who destroy and scatter the sheep of my pasture!”"
+                },
+                {
+                  "ref": "Jer.23.2",
+                  "role": "defining",
+                  "note": "“You have scattered my flock and driven them away, and have not attended to them.”"
+                },
+                {
+                  "ref": "Ezk.34.21",
+                  "note": "The strong sheep push the weak with side and shoulder and horn “until you have scattered them abroad”."
+                }
+              ]
+            },
+            {
+              "gloss": "scatter, spread, of things",
+              "definition": "Spread something out over a space: seed sown broadcast, a cloud, wind or light, the overflowing of anger.",
+              "evidence": [
+                {
+                  "ref": "Isa.28.25",
+                  "role": "defining",
+                  "note": "The farmer levels the ground “and scatters dill and sows cumin”."
+                },
+                {
+                  "ref": "Job.37.11",
+                  "note": "“He scatters the cloud of his lightning.”"
+                },
+                {
+                  "ref": "Job.38.24",
+                  "note": "The way “the east wind is spread over the earth”."
+                },
+                {
+                  "ref": "Job.40.11",
+                  "note": "“Scatter abroad the overflowings of your anger.”"
+                }
+              ]
+            },
+            {
+              "gloss": "disperse (intransitive)",
+              "definition": "Of a people going off in every direction.",
+              "evidence": [
+                {
+                  "ref": "Exo.5.12",
+                  "role": "defining",
+                  "note": "“So the people scattered through all the land of Egypt to gather stubble for straw.”"
+                },
+                {
+                  "ref": "1Sa.13.8",
+                  "note": "Saul’s people were scattering from him while he waited for Samuel; Saul says the same with נָפַץ in 1Sa 13:11."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "shatter",
+          "cognate_ids": [
+            "akk-paasu"
+          ],
+          "senses": [
+            {
+              "id": "shatter",
+              "gloss": "shatter, break in pieces",
+              "definition": "Break something hard so that its pieces fly apart.",
+              "evidence": [
+                {
+                  "ref": "Jer.23.29",
+                  "role": "defining",
+                  "note": "“Is not my word like fire, and like a hammer that shatters rock?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pilpel",
+          "gloss": "dash to pieces",
+          "cognate_ids": [
+            "akk-paasu"
+          ],
+          "senses": [
+            {
+              "gloss": "dash to pieces",
+              "definition": "Break a man apart, as Job says God has done to him.",
+              "evidence": [
+                {
+                  "ref": "Job.16.12",
+                  "role": "defining",
+                  "note": "“I was at ease, and he broke me apart; he seized me by the neck and dashed me to pieces.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "be shattered",
+          "cognate_ids": [
+            "akk-paasu"
+          ],
+          "senses": [
+            {
+              "gloss": "be shattered, burst apart",
+              "definition": "Of the ancient mountains breaking apart when God stands and looks.",
+              "evidence": [
+                {
+                  "ref": "Hab.3.6",
+                  "role": "defining",
+                  "note": "“He looked and made the nations start; the everlasting mountains were shattered, the ancient hills sank down.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "διασκορπίζω",
+          "gloss": "scatter abroad",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.10.35, יָפֻצוּ → διασκορπισθήτωσαν; Neh.1.8, אָפִיץ → διασκορπιῶ; Ezk.28.25, נָפֹצוּ → διεσκορπίσθησαν; διασκορπίζω renders פּוּץ ×10"
+            },
+            {
+              "ref": "Mat.26.31",
+              "role": "defining",
+              "note": "Zec 13:7 quoted: “I will strike the shepherd, and the sheep of the flock διασκορπισθήσεται.”"
+            },
+            {
+              "ref": "Mrk.14.27"
+            },
+            {
+              "ref": "Jhn.11.52",
+              "note": "Christ to die “to gather together into one the children of God τὰ διεσκορπισμένα”: the gathering of the scattered."
+            }
+          ]
+        },
+        {
+          "lemma": "διασπείρω",
+          "gloss": "scatter, disperse",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.11.8, וַיָּפֶץ → διέσπειρεν; Deu.4.27, וְהֵפִיץ → διασπερεῖ; διασπείρω renders פּוּץ ×19"
+            },
+            {
+              "ref": "Act.8.1",
+              "note": "The ecclesia at Jerusalem “were all scattered (διεσπάρησαν) through the regions of Judea and Samaria”."
+            },
+            {
+              "ref": "Act.8.4"
+            }
+          ]
+        },
+        {
+          "lemma": "σκορπίζω",
+          "gloss": "scatter",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Sa.22.15 and Psa.18.15, וַיְפִיצֵם → ἐσκόρπισεν"
+            },
+            {
+              "ref": "Jhn.16.32",
+              "role": "defining",
+              "note": "“You will be scattered (σκορπισθῆτε), each to his own, and will leave me alone”: Zec 13:7 again."
+            },
+            {
+              "ref": "Jhn.10.12",
+              "note": "The wolf “scatters” the sheep the hireling leaves."
+            },
+            {
+              "ref": "Mat.12.30",
+              "note": "“He who does not gather with me scatters”: gathering and scattering opposed."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זָרָה",
+            "note": "“Disperse, winnow”: scatter among the nations and disperse among the lands.",
+            "evidence": [
+              {
+                "ref": "Ezk.12.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.20.23"
+              },
+              {
+                "ref": "Ezk.22.15"
+              },
+              {
+                "ref": "Ezk.29.12"
+              },
+              {
+                "ref": "Ezk.30.23"
+              },
+              {
+                "ref": "Ezk.30.26"
+              },
+              {
+                "ref": "Ezk.36.19"
+              }
+            ]
+          },
+          {
+            "lemma": "נוּס",
+            "note": "“Flee”: the scattered enemies flee from Yahweh’s face.",
+            "evidence": [
+              {
+                "ref": "Num.10.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.68.2"
+              }
+            ]
+          },
+          {
+            "lemma": "נָדַח",
+            "note": "“Drive away”: the shepherds scattered the flock and drove them away.",
+            "evidence": [
+              {
+                "ref": "Jer.23.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "חָלַק",
+            "note": "“Divide”: Simeon and Levi divided in Jacob and scattered in Israel.",
+            "evidence": [
+              {
+                "ref": "Gen.49.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קָבַץ",
+            "note": "“Gather”: Yahweh gathers from the lands where he scattered them.",
+            "evidence": [
+              {
+                "ref": "Deu.30.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.11.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.20.34"
+              },
+              {
+                "ref": "Ezk.20.41"
+              },
+              {
+                "ref": "Ezk.28.25"
+              },
+              {
+                "ref": "Ezk.29.13"
+              },
+              {
+                "ref": "Jer.40.15",
+                "note": "Those gathered to Gedaliah would be scattered."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הֵפִיץ בַּגּוֹיִם וְזֵרָה בָּאֲרָצוֹת",
+            "gloss": "scatter among the nations and disperse among the lands",
+            "evidence": [
+              {
+                "ref": "Ezk.12.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.22.15"
+              },
+              {
+                "ref": "Ezk.29.12"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל־פְּנֵי כָל־הָאָרֶץ",
+            "gloss": "over the face of the whole earth",
+            "evidence": [
+              {
+                "ref": "Gen.11.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.11.8"
+              },
+              {
+                "ref": "Gen.11.9"
+              },
+              {
+                "ref": "2Sa.18.8"
+              }
+            ]
+          },
+          {
+            "phrase": "נְפֹצִים … כַּצֹּאן אֲשֶׁר אֵין־לָהֶם רֹעֶה",
+            "gloss": "scattered like sheep that have no shepherd",
+            "evidence": [
+              {
+                "ref": "1Ki.22.17",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.18.16"
+              },
+              {
+                "ref": "Ezk.34.5"
+              }
+            ]
+          },
+          {
+            "phrase": "קוּמָה יַהְוֶה וְיָפֻצוּ אֹיְבֶיךָ",
+            "gloss": "rise, Yahweh, and let your enemies be scattered",
+            "evidence": [
+              {
+                "ref": "Num.10.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.68.2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פּוּץ",
+      "bdb": [
+        "q.ar.aa"
+      ],
+      "pos": "verb",
+      "gloss": "overflow, spread out",
+      "summary": "Used twice, of springs and of cities spreading out with plenty. It may be the same verb as פּוּץ “scatter”, seen from the thing that spreads: Arabic fāḍa has both senses, “overflow” and “spread abroad, disperse”.",
+      "cognate_ids": [
+        "ar-fada"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "overflow, spread out",
+          "senses": [
+            {
+              "gloss": "overflow, spread abroad",
+              "definition": "Of water running out beyond its source, and of cities spreading out, full of good.",
+              "evidence": [
+                {
+                  "ref": "Pro.5.16",
+                  "role": "defining",
+                  "note": "“Should your springs be spread abroad outside, streams of water in the streets?” Beside פַּלְגֵי־מָיִם, “channels of water”."
+                },
+                {
+                  "ref": "Zec.1.17",
+                  "role": "defining",
+                  "note": "“My cities will again spread out (תְּפוּצֶינָה) with good, and Yahweh will again comfort Zion.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵפִיץ",
+      "bdb": [
+        "q.aq.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "scatterer; a club",
+      "summary": "The hiphil participle used as a noun: one who scatters. In Pro 25:18 it stands beside sword and arrow as a weapon, a club that smashes; whether that is this root or a spelling of מַפֵּץ “war club” from נפץ (Jer 51:20) is not clear.",
+      "cognate_ids": [
+        "ar-fada"
+      ],
+      "senses": [
+        {
+          "gloss": "scatterer",
+          "definition": "An enemy who comes to scatter a city’s people.",
+          "evidence": [
+            {
+              "ref": "Nam.2.2",
+              "role": "defining",
+              "note": "“A scatterer has come up against you; guard the rampart, watch the road.”"
+            }
+          ],
+          "kin": [
+            "scatter-in-judgment"
+          ]
+        },
+        {
+          "gloss": "club, shatterer",
+          "definition": "A weapon for smashing, named with sword and arrow.",
+          "evidence": [
+            {
+              "ref": "Pro.25.18",
+              "role": "defining",
+              "note": "“A club and a sword and a sharp arrow is a man who bears false witness against his neighbour.”"
+            }
+          ],
+          "kin": [
+            "shatter"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּפוֹצָה",
+      "bdb": [
+        "q.aq.ac"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "scattering, dispersion",
+      "summary": "Once, in the plural with suffix, of the shepherds’ coming scattering; its form and its place in the sentence are unusual, and the sense rests on that one verse and the verb.",
+      "cognate_ids": [
+        "ar-fada"
+      ],
+      "senses": [
+        {
+          "id": "dispersions",
+          "gloss": "scattering",
+          "definition": "The shepherds’ own scattering, set beside their slaughter as the days now come.",
+          "evidence": [
+            {
+              "ref": "Jer.25.34",
+              "role": "defining",
+              "note": "“Wail, you shepherds … for your days for slaughter and your scatterings (וּתְפוֹצוֹתֵיכֶם) are fulfilled, and you will fall like a choice vessel.”"
+            }
+          ],
+          "kin": [
+            "scatter-in-judgment"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-fada",
+      "lang": "ar",
+      "form": "فَاضَ، أَفَاضَ",
+      "translit": "fāḍa, ʾafāḍa",
+      "gloss": "overflow, pour forth; spread abroad; (form IV, of a crowd) push on and disperse",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Lane’s sources give fāḍa of water that “overflowed … flowed over the brink of the valley”, and of news that “spread abroad … among the people, like water”; ʾafāḍū min ʿArafāt is “they pushed on … with multitude” or “dispersed themselves from ʿArafāt”. It holds together the “overflow” of Pro 5:16 and Zec 1:17 and the “scatter, disperse” of the commoner verb. Arabic ḍ (ض), not ṣ (ص), stands behind צ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2471, root فيض, فَاضَ (n34961)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2472, افاض (n34962)",
+          "note": "afāḍū min ʿArafāt: pushed on with multitude, or dispersed themselves"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2473, مُسْتَفِيضٌ (n34975)",
+          "note": "a report spread abroad among the people"
+        }
+      ]
+    },
+    {
+      "id": "ar-fawda",
+      "lang": "ar",
+      "form": "فَوْضَى",
+      "translit": "fawḍā",
+      "gloss": "(people) in a state of dispersion; equals with no chief, none to collect them",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Lane’s sources give qawm fawḍā as “a company of men who are equals, having no chief … or separated, or in a state of dispersion … having no commander, nor any to collect them together”, and of wild animals “in a state of dispersion, going to and fro”; it is said to be the plural of fāʾiḍ, and fayḍūḍā of root فيض is given as the same word. It answers closely to Israel “scattered … like sheep that have no shepherd” (1Ki 22:17; Ezk 34:5).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2459, root فوض, قَوْمٌ فَوْضَى (n34822)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2473, أَمْرُهُمْ فَيْضُوضَى بَيْنَهُمْ (n34968)",
+          "note": "the same as fawḍā, under root فيض"
+        }
+      ]
+    },
+    {
+      "id": "akk-paasu",
+      "lang": "akk",
+      "form": "paʾāṣu, paʾṣu",
+      "translit": "paʾāṣu, paʾṣu",
+      "gloss": "break up, crush; (adjective) crushed, dispersed, stray",
+      "relation": "possible",
+      "note": "The verb is “break up, crush”, and its adjective is glossed “crushed; dispersed; stray”, which joins the shattering of the polel stems (Jer 23:29; Job 16:12; Hab 3:6) to the scattering of the rest. Possible only: its middle consonant is ʾ, not w, and Akkadian ṣ does not show which older sound stands behind צ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000044830, paʾāṣu [break up] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000049820, paʾṣu [crushed] AJ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "restoration-of-israel",
+      "statement": "Moses warned that if Israel were unfaithful Yahweh would scatter them among the peoples, from one end of the earth to the other (Deu 4:27; 28:64), and Nehemiah held Yahweh to that word (Neh 1:8). The same word promised the end of it: Yahweh would gather them from all the peoples where he had scattered them (Deu 30:3). Ezekiel says what the gathering is for: from the lands where they were scattered he will “give you the land of Israel”, and they will “dwell on their own land that I gave to my servant Jacob”, Yahweh being sanctified in them before the nations (Ezk 11:17; 28:25). Jeremiah adds that he will make a full end of the nations where he scattered them, but not of Israel (Jer 30:11). So the scattering is a judgment with a set end, and its end is a people gathered back to the land promised to the fathers.",
+      "evidence": [
+        {
+          "ref": "Deu.4.27"
+        },
+        {
+          "ref": "Deu.28.64"
+        },
+        {
+          "ref": "Neh.1.8"
+        },
+        {
+          "ref": "Deu.30.3"
+        },
+        {
+          "ref": "Ezk.11.17"
+        },
+        {
+          "ref": "Ezk.20.34"
+        },
+        {
+          "ref": "Ezk.28.25"
+        },
+        {
+          "ref": "Ezk.36.19"
+        },
+        {
+          "ref": "Jer.30.11"
+        }
+      ]
+    },
+    {
+      "topic": "the-good-shepherd",
+      "statement": "Israel’s shepherds scattered Yahweh’s flock, and the sheep scattered for want of a shepherd (Jer 23:1–2; Ezk 34:5–6); Yahweh promised to seek them out from all the places where they were scattered and to set over them one shepherd, his servant David (Ezk 34:12, 23). Zechariah’s “strike the shepherd, and the flock will scatter” (Zec 13:7) Christ applied to himself on the night he was betrayed (Mat 26:31; Mrk 14:27), and it came to pass when all the disciples left him and fled (Mat 26:56). He is the shepherd who lays down his life where the hireling lets the wolf scatter the sheep (Jhn 10:11–12), and he died to gather into one the children of God scattered abroad (Jhn 11:52): the scattering of the flock is undone by the shepherd struck for it.",
+      "evidence": [
+        {
+          "ref": "Jer.23.1"
+        },
+        {
+          "ref": "Jer.23.2"
+        },
+        {
+          "ref": "Ezk.34.5"
+        },
+        {
+          "ref": "Ezk.34.12"
+        },
+        {
+          "ref": "Ezk.34.23"
+        },
+        {
+          "ref": "Zec.13.7"
+        },
+        {
+          "ref": "Mat.26.31"
+        },
+        {
+          "ref": "Mat.26.56"
+        },
+        {
+          "ref": "Jhn.10.11"
+        },
+        {
+          "ref": "Jhn.10.12"
+        },
+        {
+          "ref": "Jhn.11.52"
+        }
+      ]
+    },
+    {
+      "topic": "babel-and-the-nations",
+      "statement": "After the flood the nations were divided in the earth from the families of Noah’s sons (Gen 10:32). Men built a city and tower so as not to be scattered over the face of the whole earth (Gen 11:4), and Yahweh scattered them from there over the face of the whole earth and confused their language (Gen 11:8–9). The spread of the peoples across the earth is therefore Yahweh’s own act, at one place and time after the flood, among men of one family; Paul says the same: God “made of one blood all nations of men to dwell on all the face of the earth” (Act 17:26).",
+      "evidence": [
+        {
+          "ref": "Gen.10.32"
+        },
+        {
+          "ref": "Gen.11.4"
+        },
+        {
+          "ref": "Gen.11.8"
+        },
+        {
+          "ref": "Gen.11.9"
+        },
+        {
+          "ref": "Act.17.26"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (וְיָפֻצוּ, Num 10:35). The corpus keys the root פוצ, as the task gave it. BDB key q.cm.aa (פָּצַץ “break, shatter”, root פצצ) is claimed for the verb because its three tokens (Jer 23:29 יְפֹצֵץ, Job 16:12 וַיְפַצְפְּצֵנִי, Hab 3:6 וַיִּתְפֹּצְצוּ) are the regular polel, pilpel and hithpolel of a hollow root and the corpus analyses them under פוצ; review whether they should go to a separate פצץ entry. The priestly name הַפִּצֵּץ (1Ch 24:15, q.cm.ab) is not entered. Left out, as the corpus and BDB put them under נפץ (n.em.aa “disperse”): Gen 9:19 נָפְצָה “overspread”, 1Sa 13:11 נָפַץ “scattered from me”, Isa 11:12 נְפֻצוֹת “the dispersed of Judah”, and Jer 22:28 נָפוּץ “shattered vessel”; whoever writes נפץ should weigh whether נפץ II is a by-form of this root. Zero-token cross-reference keys m.da.ba and w.bi.ak are not named. The surface index tags every form of the root with all its keys, so lexicon-support’s use counts for the two פּוּץ words and מֵפִיץ overlap. Pro 25:18 מֵפִיץ “club” may be מַפֵּץ (n.el.ad, נפץ), kept here as a sense of מֵפִיץ. Jer 25:34 תְּפוֹצוֹתֵיכֶם: form unusual; kept as a noun. LXX: Zec 13:7 renders by ἐκσπάσατε, but Mat 26:31 follows the Hebrew with διασκορπισθήσεται; Nah 2:2 by ἐμφυσῶν; Jer 23:1 by ἀπολλύοντες. Not entered: Arabic fāṣa (فاص, with ṣ) “went away into the land”, tafāwuṣ “being separated one from another” (Lane p. 2458 n34818, p. 2471 n34957), a look-alike with the other sound behind צ; Jewish Aramaic נְפַץ and post-biblical Hebrew פּוּץ (Jastrow), the first another root, the second not a cognate. Not consulted: Ugaritic, Geʿez (Dillmann, Leslau), Syriac (the Peshitta has no cognate root in the brief). Open for review: (1) q.cm.aa claimed here; (2) the doctrine topics, especially the-good-shepherd’s reading of Zec 13:7 and Jhn 11:52."
+}
