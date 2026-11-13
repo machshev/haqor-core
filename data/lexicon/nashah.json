@@ -1,0 +1,907 @@
+{
+  "id": "nashah",
+  "root": "נשה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "memory",
+    "debt",
+    "law",
+    "death",
+    "body"
+  ],
+  "gloss": "forget; lend, hold a claim against (creditor); the sinew of the hip",
+  "summary": "One spelling with two meanings. The first is to forget, or make forget: Joseph names his son מְנַשֶּׁה because “God has made me forget all my toil” (Gen 41:51), Yahweh tells Israel “you will not be forgotten by me” (Isa 44:21), and the grave is “the land of forgetfulness” (Psa 88:13). The second is to lend and so to hold a claim against someone: the נֹשֶׁה is the creditor, whom the law forbids a man to be to his poor brother (Exo 22:24), whose claims Yahweh's release cancels (Deu 15:2), and who takes a widow's sons for the debt (2Ki 4:1). Arabic keeps the two apart in nasiya “forget” and nasaʾa “defer payment, sell on credit”. The גִּיד הַנָּשֶׁה, the sinew Jacob's hip was touched on (Gen 32:33), has the same letters and answers to Arabic nasā “the sciatic vein”; its link to either verb is not known.",
+  "words": [
+    {
+      "lemma": "נָשָׁה",
+      "pos": "verb",
+      "gloss": "lend; hold a claim against; (participle) creditor",
+      "summary": "To lend and so to have a claim on the borrower, mostly in the participle נֹשֶׁה, “creditor”, and often with בְּ, “hold a claim against” someone (Deu 15:2; 24:11; Neh 5:10–11). The law sets it beside לָוָה “lend” and נֶשֶׁךְ “interest” (Exo 22:24). Arabic nasaʾa “defer, grant credit” shares the meaning. The same act is also spelled with א, נָשָׁא (Neh 5:7; Isa 24:2; 1Sa 22:2), which is not part of this entry.",
+      "bdb": [
+        "n.ft.aa"
+      ],
+      "cognate_ids": [
+        "ar-nasaa",
+        "akk-rasu"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lend; hold a claim against; (participle) creditor",
+          "senses": [
+            {
+              "id": "creditor",
+              "gloss": "creditor, one who holds a claim",
+              "definition": "The one to whom a debt is owed, who can come to collect it, even by taking the debtor's children as slaves or seizing all he has.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.24",
+                  "role": "defining",
+                  "note": "“If you lend (תַּלְוֶה) silver to my people, to the poor with you, you shall not be to him כְּנֹשֶׁה; you shall not lay interest (נֶשֶׁךְ) on him.”"
+                },
+                {
+                  "ref": "2Ki.4.1",
+                  "role": "defining",
+                  "note": "A prophet's widow: “וְהַנֹּשֶׁה has come to take my two children for himself as slaves.”"
+                },
+                {
+                  "ref": "Psa.109.11",
+                  "role": "defining",
+                  "note": "“Let נוֹשֶׁה snare all that is his, and strangers plunder his labour.”"
+                },
+                {
+                  "ref": "Isa.24.2",
+                  "role": "defining",
+                  "note": "In the list of opposites levelled by judgment: “as the lender (מַלְוֶה), so the borrower; כַּנֹּשֶׁה, so the one who has a claim against him (נֹשֵׁא בוֹ)”."
+                },
+                {
+                  "ref": "Isa.50.1",
+                  "role": "defining",
+                  "note": "“Which of מִנּוֹשַׁי is it to whom I sold you? Behold, for your iniquities you were sold.” Yahweh has no creditor."
+                },
+                {
+                  "ref": "Jer.15.10",
+                  "note": "Jeremiah: “I have not lent (נָשִׁיתִי), nor have they lent to me (נָשׁוּ־בִי), yet every one of them curses me”: lending and owing as the proverbial ground of hatred."
+                }
+              ]
+            },
+            {
+              "id": "hold-claim",
+              "gloss": "lend against, hold a claim against (with בְּ)",
+              "definition": "With בְּ of the borrower: to lend to someone on security, and so to have a claim against him.",
+              "evidence": [
+                {
+                  "ref": "Deu.24.11",
+                  "role": "defining",
+                  "note": "“The man אֲשֶׁר אַתָּה נֹשֶׁה בוֹ shall bring the pledge (עֲבוֹט) out to you.”"
+                },
+                {
+                  "ref": "Neh.5.10",
+                  "role": "defining",
+                  "note": "“I too, my brothers and my young men, are נֹשִׁים בָּהֶם silver and grain. Let us leave off this מַשָּׁא.”"
+                },
+                {
+                  "ref": "Neh.5.11",
+                  "note": "“Return to them … the hundredth of the silver and the grain … that you are נֹשִׁים בָּהֶם.”"
+                },
+                {
+                  "ref": "Neh.5.7",
+                  "note": "“You are נֹשִׁים, each against his brother.” The database analyses this token under another root; it is this verb."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "lend (on pledge) to",
+          "senses": [
+            {
+              "id": "lend-hiphil",
+              "gloss": "lend to, make a loan to",
+              "definition": "To make a loan to someone, with בְּ of the borrower, the loan secured by a pledge.",
+              "evidence": [
+                {
+                  "ref": "Deu.24.10",
+                  "role": "defining",
+                  "note": "“When תַשֶּׁה בְרֵעֲךָ a loan of anything, you shall not go into his house to take his pledge.”"
+                },
+                {
+                  "ref": "Deu.15.2",
+                  "role": "defining",
+                  "note": "“Every holder of מַשֵּׁה יָדוֹ, what יַשֶּׁה בְּרֵעֵהוּ, shall release it; he shall not exact it of his neighbour and his brother, for Yahweh's release has been proclaimed.”"
+                }
+              ],
+              "kin": [
+                "loan"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δανειστής",
+          "gloss": "moneylender, creditor",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ki.4.1, וְהַנֹּשֶׁה → δανιστής; Psa.109.11, נוֹשֶׁה → δανειστής"
+            },
+            {
+              "ref": "Luk.7.41",
+              "role": "defining",
+              "note": "“A certain δανειστής had two debtors”, and he forgave both (Luk 7:42): the creditor of the parable of forgiveness."
+            }
+          ]
+        },
+        {
+          "lemma": "ὀφείλω",
+          "gloss": "owe; (ὀφείλημα) debt",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.15.2, יַשֶּׁה → ὀφείλει; Deu.24.10, תַשֶּׁה → ὀφείλημα; Isa.24.2, נֹשֵׁא → ὀφείλει"
+            },
+            {
+              "ref": "Mat.6.12",
+              "role": "defining",
+              "note": "“Forgive us our ὀφειλήματα, as we also forgive our ὀφειλέταις”: sins as debts released."
+            },
+            {
+              "ref": "Mat.18.28",
+              "note": "The forgiven servant seizes a fellow servant: “pay what you ὀφείλεις”."
+            },
+            {
+              "ref": "Rom.13.8",
+              "note": "“Owe (ὀφείλετε) no one anything, except to love one another.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "לָוָה",
+            "note": "“Lend” (hiphil) and “borrow” (qal), beside it in the law of lending and in the list of Isa 24:2.",
+            "evidence": [
+              {
+                "ref": "Exo.22.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.24.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נֶשֶׁךְ",
+            "note": "“Interest”, which the creditor lays on the borrower and the law forbids toward the poor.",
+            "evidence": [
+              {
+                "ref": "Exo.22.24",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עֲבוֹט",
+            "note": "The pledge the lender takes as security.",
+            "evidence": [
+              {
+                "ref": "Deu.24.10",
+                "role": "defining",
+                "to": "Deu.24.11"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "נֹשֵׁא בוֹ",
+            "note": "The debtor, the one a claim is held against, set opposite the creditor.",
+            "evidence": [
+              {
+                "ref": "Isa.24.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נָשָׁה בְּ",
+            "gloss": "lend to, hold a claim against",
+            "evidence": [
+              {
+                "ref": "Deu.24.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.15.2"
+              },
+              {
+                "ref": "Neh.5.10"
+              },
+              {
+                "ref": "Jer.15.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נָשָׁה",
+      "pos": "verb",
+      "gloss": "forget; (piel, hiphil) make forget",
+      "summary": "To forget: to lose from mind, as a soul long in trouble loses all memory of good (Lam 3:17), or as Yahweh casts off those who pervert his word (Jer 23:39); and, in the causative stems, to make forget, as God made Joseph forget his toil (Gen 41:51) and made the ostrich forget wisdom (Job 39:17). Its opposite is זָכַר “remember” (Isa 44:21). Arabic nasiya, Akkadian mašû and Aramaic נְשֵׁי all mean “forget”. The commoner Hebrew word for forgetting is שָׁכַח.",
+      "bdb": [
+        "n.fu.aa"
+      ],
+      "cognate_ids": [
+        "ar-nasiya",
+        "akk-masu",
+        "arc-neshe",
+        "gez-nasaya",
+        "uga-nsy"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "forget",
+          "senses": [
+            {
+              "id": "forget-qal",
+              "gloss": "forget, lose from mind",
+              "definition": "To let something go from memory: of a man, to lose all sense of a good long gone; of Yahweh, to put a people out of mind and away from his presence.",
+              "evidence": [
+                {
+                  "ref": "Lam.3.17",
+                  "role": "defining",
+                  "note": "“My soul is cast off from peace; נָשִׁיתִי טוֹבָה”: I have forgotten what good is. Lam 3:19–21 answers with remembering (זְכָר, זָכוֹר) and hope."
+                },
+                {
+                  "ref": "Jer.23.39",
+                  "role": "defining",
+                  "note": "To those who say “the burden (מַשָּׂא) of Yahweh”: “וְנָשִׁיתִי אֶתְכֶם נָשֹׁא, and I will cast you off (וְנָטַשְׁתִּי) from my presence”, a play on מַשָּׂא and נָשָׂא “lift”."
+                },
+                {
+                  "ref": "Jer.23.40",
+                  "note": "“And I will put on you an everlasting reproach … which shall not be forgotten (תִשָּׁכֵחַ).”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be forgotten",
+          "senses": [
+            {
+              "gloss": "be forgotten (by)",
+              "definition": "To be let go from someone's memory; said of Israel, whom Yahweh will not forget.",
+              "evidence": [
+                {
+                  "ref": "Isa.44.21",
+                  "role": "defining",
+                  "note": "“Remember (זְכָר) these things, Jacob … I formed you, you are my servant; Israel, לֹא תִנָּשֵׁנִי, you will not be forgotten by me.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make forget",
+          "senses": [
+            {
+              "gloss": "make (someone) forget",
+              "definition": "To cause someone to forget a past trouble, so that it no longer weighs on him.",
+              "evidence": [
+                {
+                  "ref": "Gen.41.51",
+                  "role": "defining",
+                  "note": "“Joseph called the name of the firstborn מְנַשֶּׁה, for ‘God נַשַּׁנִי all my toil and all my father's house’.” Beside it Ephraim, “God has made me fruitful” (Gen 41:52)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make forget; let be forgotten",
+          "senses": [
+            {
+              "gloss": "make forget, withhold from mind",
+              "definition": "To make a creature forget, so that it lacks what it would otherwise know.",
+              "evidence": [
+                {
+                  "ref": "Job.39.17",
+                  "role": "defining",
+                  "note": "The ostrich: “for God הִשָּׁהּ wisdom, and has not given her a share in understanding”; the parallel “not given” fixes the sense."
+                }
+              ]
+            },
+            {
+              "gloss": "let be forgotten (of iniquity)",
+              "definition": "In Zophar's words, God's letting part of a man's iniquity be forgotten, so that he is not punished for all of it.",
+              "evidence": [
+                {
+                  "ref": "Job.11.6",
+                  "note": "“Know that God יַשֶּׁה לְךָ מֵעֲוֺנֶךָ”: lets some of your iniquity be forgotten for you. The same letters could be the lending verb (“exacts of you less than your iniquity”). Zophar's speech, of which God says the friends did not speak rightly of him (Job 42:7)."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπιλανθάνομαι",
+          "gloss": "forget",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lam.3.17, נָשִׁיתִי → ἐπελαθόμην; Isa.44.21, תִנָּשֵׁנִי → ἐπιλανθάνου"
+            },
+            {
+              "ref": "Luk.12.6",
+              "role": "defining",
+              "note": "“Not one of them (the sparrows) ἐστιν ἐπιλελησμένον before God”: what Isa 44:21 promises Israel, said of the least of creatures."
+            },
+            {
+              "ref": "Heb.6.10",
+              "role": "defining",
+              "note": "“God is not unrighteous ἐπιλαθέσθαι your work and the love you showed toward his name.”"
+            },
+            {
+              "ref": "Php.3.13",
+              "note": "“Forgetting (ἐπιλανθανόμενος) the things behind”: compare Joseph, Gen 41:51."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָטַשׁ",
+            "note": "“Cast off, abandon”, paired with Yahweh's forgetting.",
+            "evidence": [
+              {
+                "ref": "Jer.23.39",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "לֹא נָתַן בִּינָה",
+            "note": "“Not given understanding”, beside “made to forget wisdom”.",
+            "evidence": [
+              {
+                "ref": "Job.39.17",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "זָכַר",
+            "note": "“Remember”: Israel is to remember, and will not be forgotten.",
+            "evidence": [
+              {
+                "ref": "Isa.44.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.3.19",
+                "to": "Lam.3.20",
+                "note": "After “I have forgotten good” (3:17), “remember my affliction … my soul remembers”."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נָשֶׁה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the sinew of the hip (the sciatic sinew)",
+      "summary": "Only in גִּיד הַנָּשֶׁה, the sinew on the hollow of the thigh which Israel does not eat, because the man who wrestled with Jacob touched his hip there (Gen 32:33). Arabic nasā is the vein, or sinew, that runs down the inside of the thigh from the hip, and Jewish Aramaic keeps the word for this sinew; so the meaning is secure. Arabic files nasā under the same letters as nasiya “forget”, as BDB files נָשֶׁה here, but no verse or cognate shows how the sinew is tied to forgetting or lending: its link to the root's verbs is not known.",
+      "bdb": [
+        "n.fu.ad"
+      ],
+      "cognate_ids": [
+        "ar-nasa-vein",
+        "arc-nashya"
+      ],
+      "senses": [
+        {
+          "gloss": "the sinew of the hip, in גִּיד הַנָּשֶׁה",
+          "definition": "A sinew lying on the hollow of the thigh, where Jacob was touched as he wrestled; Israel did not eat it.",
+          "evidence": [
+            {
+              "ref": "Gen.32.33",
+              "role": "defining",
+              "note": "“Therefore the sons of Israel do not eat גִּיד הַנָּשֶׁה which is on the hollow of the thigh, to this day, because he touched the hollow of Jacob's thigh on גִּיד הַנָּשֶׁה.”"
+            },
+            {
+              "ref": "Gen.32.26",
+              "note": "“He touched the hollow of his thigh, and the hollow of Jacob's thigh was put out of joint as he wrestled with him.”"
+            },
+            {
+              "ref": "Gen.32.32",
+              "note": "Jacob limps on his thigh as he passes Penuel."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "גִּיד הַנָּשֶׁה",
+            "gloss": "the sinew of the hip",
+            "evidence": [
+              {
+                "ref": "Gen.32.33",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַשֶּׁה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "loan, a debt lent out",
+      "summary": "What is lent and owed back, a noun of the lending verb; only in Deu 15:2, in the law of the year of release.",
+      "bdb": [
+        "n.ft.ac"
+      ],
+      "cognate_ids": [
+        "ar-nasaa"
+      ],
+      "senses": [
+        {
+          "id": "loan",
+          "gloss": "loan; (בַּעַל מַשֵּׁה יָדוֹ) holder of a loan",
+          "definition": "A loan made to a neighbour, which the lender is to release in the seventh year.",
+          "evidence": [
+            {
+              "ref": "Deu.15.2",
+              "role": "defining",
+              "note": "“Every בַּעַל מַשֵּׁה יָדוֹ, the holder of the loan of his hand, what he has lent (יַשֶּׁה) to his neighbour, shall release it.”"
+            },
+            {
+              "ref": "Deu.15.1",
+              "note": "“At the end of seven years you shall make a release (שְׁמִטָּה).”"
+            },
+            {
+              "ref": "Deu.15.3",
+              "note": "“Of the foreigner you may exact it, but what is yours with your brother your hand shall release.”"
+            }
+          ],
+          "kin": [
+            "lend-hiphil",
+            "creditor"
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בַּעַל מַשֵּׁה יָדוֹ",
+            "gloss": "the holder of a loan, the creditor",
+            "evidence": [
+              {
+                "ref": "Deu.15.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נְשִׁיָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "forgetfulness, oblivion",
+      "summary": "A noun of the forgetting verb, only in Psa 88:13, where “the land of נְשִׁיָּה” is the grave: set beside darkness, the dead, Sheol and destruction.",
+      "bdb": [
+        "n.fu.ab"
+      ],
+      "cognate_ids": [
+        "ar-nasiya",
+        "akk-masu",
+        "arc-neshe"
+      ],
+      "senses": [
+        {
+          "gloss": "forgetfulness, oblivion; (אֶרֶץ נְשִׁיָּה) the grave",
+          "definition": "The state of being forgotten, and of forgetting; the land of it is the grave, where the dead neither remember nor are remembered.",
+          "evidence": [
+            {
+              "ref": "Psa.88.13",
+              "role": "defining",
+              "note": "“Will your wonder be known in the darkness, or your righteousness בְּאֶרֶץ נְשִׁיָּה?”"
+            },
+            {
+              "ref": "Psa.88.11",
+              "to": "Psa.88.12",
+              "role": "defining",
+              "note": "The parallel lines: the dead, Sheol, destruction (אֲבַדּוֹן): “Will your lovingkindness be declared in the grave?”"
+            },
+            {
+              "ref": "Psa.88.6",
+              "note": "The slain “whom you remember (זְכַרְתָּם) no more, and they are cut off from your hand”."
+            }
+          ],
+          "kin": [
+            "forget-qal"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπιλανθάνομαι",
+          "gloss": "forget; (perfect participle) forgotten",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.88.13, נְשִׁיָּה → ἐν γῇ ἐπιλελησμένῃ"
+            },
+            {
+              "ref": "Luk.12.6",
+              "note": "Not one sparrow is ἐπιλελησμένον before God."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חֹשֶׁךְ",
+            "note": "“Darkness”, the other half of the line.",
+            "evidence": [
+              {
+                "ref": "Psa.88.13",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "קֶבֶר",
+            "note": "“The grave”, with אֲבַדּוֹן, in the lines before.",
+            "evidence": [
+              {
+                "ref": "Psa.88.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֶרֶץ נְשִׁיָּה",
+            "gloss": "the land of forgetfulness: the grave",
+            "evidence": [
+              {
+                "ref": "Psa.88.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נְשִׁי",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "debt",
+      "summary": "What is owed to a creditor, only in the read form of 2Ki 4:7, where the written form is נשיכי. It closes the story that opens with the נֹשֶׁה coming for the widow's sons (2Ki 4:1). The database does not file the token under this word, so its one use is not counted.",
+      "bdb": [
+        "n.ft.ab"
+      ],
+      "cognate_ids": [
+        "ar-nasaa"
+      ],
+      "senses": [
+        {
+          "gloss": "debt",
+          "definition": "The sum owed to a creditor, paid off here from the oil Yahweh multiplied.",
+          "evidence": [
+            {
+              "ref": "2Ki.4.7",
+              "role": "defining",
+              "note": "“Go, sell the oil and pay אֶת־נִשְׁיֵךְ, your debt, and you and your sons live on the rest.”"
+            },
+            {
+              "ref": "2Ki.4.1",
+              "role": "defining",
+              "note": "The debt is the creditor's (נֹשֶׁה) claim, for which he came to take her sons."
+            }
+          ],
+          "kin": [
+            "creditor"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-nasiya",
+      "lang": "ar",
+      "form": "نَسِيَ",
+      "translit": "nasiya",
+      "gloss": "forget; (VI) tanāsā pretend to forget, forget",
+      "relation": "cognate",
+      "note": "The ordinary Arabic verb “forget”. Lane's root article (نسو / نسى) is short, but glosses form VI تَنَاسَاهُ as “he forgot it; like نَسِيَهُ”. Arabic s answers to Hebrew ש (shin) from š.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3033, art. نسو / نسى, تَنَاسَاهُ (n43966)",
+          "note": "“He pretended that he had forgotten it … and he forgot it; like نَسِيَهُ.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-masu",
+      "lang": "akk",
+      "form": "mašû",
+      "translit": "mašû",
+      "gloss": "forget; (Š) cause to forget; (adjective) forgotten",
+      "relation": "cognate",
+      "note": "Akkadian has m where the other languages have n, as the Proto-Semitic list sets it under *nšy “forget”. Its Š stem “cause to forget” matches the Hebrew piel and hiphil.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000023670, mašû [forget] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000023670.html",
+          "note": "“forget; be forgotten; cause to forget”, about 475 occurrences, Old Babylonian to Hellenistic."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000027720, mašû [forgotten] AJ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000278 nšy [forget] V, AKK006773 mašû [forget] V"
+        }
+      ]
+    },
+    {
+      "id": "arc-neshe",
+      "lang": "arc",
+      "form": "נְשֵׁי",
+      "translit": "nəšē",
+      "gloss": "forget; (aphel) cause to forget, forget; (ithpeel) be forgotten",
+      "relation": "cognate",
+      "note": "Jewish Aramaic. The Targum uses it for “forget” (Targ. Deut 8:19; Ps 137:5, where the Hebrew has שָׁכַח). Aramaic keeps š here, where an older ṯ would have become t.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "N01301, s.v. נְשֵׁי (נְשָּׁא)",
+          "note": "“to forget. Targ. Deut. VIII, 19 … Af. same. Targ. Ps. CXXXVII, 5”."
+        }
+      ]
+    },
+    {
+      "id": "gez-nasaya",
+      "lang": "gez",
+      "form": "ነሰየ",
+      "translit": "nasaya",
+      "gloss": "be forgotten, forget",
+      "relation": "cognate",
+      "note": "From the Proto-Semitic root list only; not yet checked in Dillmann or Leslau. Ge'ez s does not tell š from ṯ.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000278 nšy [forget] V, GEZ004026 nasaya [forgotten] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-nsy",
+      "lang": "uga",
+      "form": "𐎐𐎌𐎊",
+      "translit": "nšy",
+      "gloss": "forget (?)",
+      "relation": "possible",
+      "note": "Listed under *nšy “forget” in the Proto-Semitic list, and set by Fisher beside Ethiopic “forget” with a query; no Ugaritic text has been read for it here.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000278 nšy [forget] V, UGC003195 nšy"
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 139, nsy(?)",
+          "note": "OCR read only: Ugaritic nšy(?) beside Tigre and Ge'ez “forget”."
+        }
+      ]
+    },
+    {
+      "id": "ar-nasaa",
+      "lang": "ar",
+      "form": "نَسَأَ",
+      "translit": "nasaʾa",
+      "gloss": "postpone, defer; (IV) grant delay of payment, give credit; nasīʾa debt deferred, sale on credit",
+      "relation": "cognate",
+      "note": "The deferring of payment, which is what a loan is: form IV “he granted him a delay of payment, or granted him credit … in the case of a debt”, form X “he asked his creditor to grant him a delay”. The third letter is ʾ, as in Hebrew נָשָׁא, the same verb spelled with א (Neh 5:7; Isa 24:2).",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2785, art. نسأ, نَسَأَ (n39678); أَنْسَأَ (4)",
+          "note": "“He postponed, or delayed, a thing”; form IV “He granted him a delay of payment, or granted him credit, in a sale, or in the case of a debt.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2785, art. نسأ, استنسأهُ (n39680)",
+          "note": "“He asked him to postpone … the payment of his debt … He asked his creditor to grant him a delay in the payment of his debt.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2786, art. نسأ, نَسِيْئَةٌ (n39686)",
+          "note": "“A debt of which the payment is deferred by the creditor to a future period. A sale upon credit.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-rasu",
+      "lang": "akk",
+      "form": "rāšû",
+      "translit": "rāšû",
+      "gloss": "creditor; owner",
+      "relation": "possible",
+      "note": "The Akkadian creditor is rāšû, from rašû “acquire, get”; it would answer to נֹשֶׁה only if r and n interchange, which is argued but not shown.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003840, rāšû [creditor] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003840.html"
+        }
+      ]
+    },
+    {
+      "id": "ar-nasa-vein",
+      "lang": "ar",
+      "form": "النَّسَا",
+      "translit": "an-nasā",
+      "gloss": "the sciatic vein (or sinew) of the thigh",
+      "relation": "cognate",
+      "note": "“The portion, in the thigh, of the vein which … extends to the shank”, “proceeding from the hip, or haunch, lying within each thigh”; عِرْقُ النَّسَا is also sciatica, hip pain. The Hebrew sinew “on the hollow of the thigh” (Gen 32:33) is the same thing. Lane files it in the same article as “forget”.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3033, art. نسو / نسى, النَّسَا (n43967)",
+          "note": "“[vulg. عِرْقُ النَّسَا, app. The sciatic vein;] … a vein proceeding from the hip, or haunch, lying within each thigh, then passing by the hock … In the present day it seems to be applied by some to the sciatic nerve.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-nashya",
+      "lang": "arc",
+      "form": "נַשְׁיָא",
+      "translit": "našyāʾ",
+      "gloss": "the sciatic sinew",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targum's rendering of Gen 32:33 (גִּידָא דְנַשְׁיָא) and in the Talmud.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "N01303, s.v. נַשְׁיָא",
+          "note": "“= h. נָשֶׁה. Targ. Gen. XXXII, 33 גידא דנ׳.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "god-remembers-his-own",
+      "statement": "Yahweh tells Israel, “Remember these things, Jacob … I formed you, you are my servant; Israel, you will not be forgotten by me” (Isa 44:21), and asks whether a woman can forget her nursing child: “even these may forget, yet I will not forget you” (Isa 49:15). Of those who twist his word into their own “burden” he says the opposite: “I will utterly forget you and cast you off from my presence” (Jer 23:36, 39). Jesus says that not one sparrow “is forgotten before God”, and that his disciples are worth more than many sparrows (Luk 12:6–7); Hebrews, that “God is not unrighteous to forget your work and love” (Heb 6:10). From the verses: being remembered or forgotten by God is not a matter of his knowledge failing but of his choosing to hold to a people or to put them away, and he holds to those who are his servants and keep his word.",
+      "evidence": [
+        {
+          "ref": "Isa.44.21"
+        },
+        {
+          "ref": "Isa.49.15"
+        },
+        {
+          "ref": "Jer.23.36"
+        },
+        {
+          "ref": "Jer.23.39"
+        },
+        {
+          "ref": "Luk.12.6",
+          "to": "Luk.12.7"
+        },
+        {
+          "ref": "Heb.6.10"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Psalm 88 calls the grave “the land of forgetfulness” and sets it beside darkness, the dead, the grave and destruction: “will the dead rise and praise you? … will your righteousness be known in the land of forgetfulness?” (Psa 88:11–13); the slain are those God “remembers no more” (Psa 88:6). The rest of scripture says the same in plain words: “in death there is no remembrance of you” (Psa 6:6); “the dead know nothing … their love, their hatred and their envy have already perished” (Ecc 9:5–6); “the grave cannot praise you” (Isa 38:18). From the verses: the dead are not conscious, remembering or praising; they are in oblivion. The hope scripture gives is not in death but out of it, when “many of those who sleep in the dust of the earth shall awake” (Dan 12:2).",
+      "evidence": [
+        {
+          "ref": "Psa.88.11",
+          "to": "Psa.88.13"
+        },
+        {
+          "ref": "Psa.88.6"
+        },
+        {
+          "ref": "Psa.6.6"
+        },
+        {
+          "ref": "Ecc.9.5",
+          "to": "Ecc.9.6"
+        },
+        {
+          "ref": "Isa.38.18"
+        },
+        {
+          "ref": "Dan.12.2"
+        }
+      ]
+    },
+    {
+      "topic": "debt-and-release",
+      "statement": "The law forbade an Israelite to be a נֹשֶׁה, a creditor laying interest, to his poor brother (Exo 22:24), and every seventh year Yahweh's release cancelled what a man had lent to his neighbour (Deu 15:1–2). When the returned exiles became creditors of their own brothers, Nehemiah made them give back the fields and the interest (Neh 5:7–12). Yahweh himself has no creditor: “which of my creditors is it to whom I sold you? Behold, for your iniquities you were sold”, and “you were sold for nothing, and you shall be redeemed without money” (Isa 50:1; 52:3). Jesus teaches his disciples to pray “forgive us our debts, as we also forgive our debtors” (Mat 6:12), tells of a creditor who forgave two debtors (Luk 7:41–43), and of a forgiven servant condemned because he would not release his fellow's debt (Mat 18:32–33). From the verses: sin puts a man in debt, God's forgiveness is a release like the law's, freely given, and those released must release others.",
+      "evidence": [
+        {
+          "ref": "Exo.22.24"
+        },
+        {
+          "ref": "Deu.15.1",
+          "to": "Deu.15.2"
+        },
+        {
+          "ref": "Neh.5.7",
+          "to": "Neh.5.12"
+        },
+        {
+          "ref": "Isa.50.1"
+        },
+        {
+          "ref": "Isa.52.3"
+        },
+        {
+          "ref": "Mat.6.12"
+        },
+        {
+          "ref": "Luk.7.41",
+          "to": "Luk.7.43"
+        },
+        {
+          "ref": "Mat.18.32",
+          "to": "Mat.18.33"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Num 10:23 (Manasseh). TWO VERBS in one spelling: forget (n.fu.aa) and lend (n.ft.aa). Their cognates do not meet (Arabic nasiya vs nasaʾa), but both show š behind ש, so this is not a merged-letter split; whether they were ever one root is open. BDB files four tokens under both keys (Jer 15:10, Lam 3:17, Deu 15:2, Job 11:6): here Jer 15:10 and Deu 15:2 are cited under lend, Lam 3:17 and Job 11:6 under forget; lexicon-support will count those tokens for both words. Job 11:6 could be either. Neh 5:7 נֹשִׁים is analysed in the database under root נוש but is this verb (cited under hold-claim). Jer 23:39: some read נָשָׂא “lift up” for נָשִׁיתִי; MACULA aligns it under נשא. נְשִׁי (n.ft.ab) has 0 counted tokens: 2Ki 4:7 qere נִשְׁיֵךְ is analysed under root שיה with no BDB key. LEFT OUT: the same lending verb and nouns spelled with א (נָשָׁא n.fp.aa, מַשָּׁא n.fp.ab, מַשָּׁאָה n.fp.ac) and BDB's נָשָׁא “forget” (n.fr.aa, 0 tokens) belong to the נשא spelling's entry (none yet); they may be one root with this one (third-weak interchange, Arabic nasaʾa has ʾ). Cross-reference keys j.dv.ad and m.ds.ac (0 tokens) left off. NAMES: מְנַשֶּׁה Manasseh has its own entry (names/manasseh.json). יִשִּׁיָּה(וּ) Isshiah (n.fu.ac), which BDB files under this root, is not written here; its root is unclear (perhaps “Yah lends”, or another root). GREEK: Septuagint ἐνάρκησεν (“grew numb”) for נָשֶׁה at Gen 32:33 is not a word for the sinew and has no NT use; not recorded. Gen 41:51 LXX ἐπιλαθέσθαι με ἐποίησεν is not aligned in MACULA. NOT CONSULTED: Dillmann/Leslau for Ge'ez; a Ugaritic text for nšy; Payne Smith for Syriac (Syriac's usual “forget” is ṭʿā; SEDRA has no nšʾ root); CAD for Akkadian. Fisher p. 139 is from the OCR text and its page-number lines."
+}
