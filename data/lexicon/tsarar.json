@@ -1,0 +1,2193 @@
+{
+  "id": "tsarar",
+  "root": "צרר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "enemy",
+    "war",
+    "distress",
+    "prayer",
+    "binding",
+    "marriage",
+    "stone"
+  ],
+  "gloss": "bind up, be narrow; straits, distress; be hostile, adversary; rival wife; flint",
+  "summary": "One spelling for three older roots. The first is to bind up and so to be narrow: dough bound in cloaks, money in a bundle (צְרוֹר), and, said of a man, “it is narrow for him”, he is hemmed in; from it come צַר and צָרָה “straits, distress”, which scripture sets against רָחַב “room” (“in the strait you made room for me”, Psa 4:2; 118:5). The second is to be hostile: the participle צֹרֵר and the noun צַר are the adversary who presses on a person or a people, set beside אֹיֵב “enemy” (Num 10:9; Est 7:6), and צָרָה is also a rival wife (1Sa 1:6); Arabic keeps this root apart, ḍarra “harm”, ḍarrah “fellow-wife”, against ṣarra “tie up”. The third is צֹר “flint”, Arabic ẓirr. In Num 10:9 Israel, pressed by “the adversary who presses you”, blows the trumpets and is remembered before Yahweh and saved.",
+  "words": [
+    {
+      "lemma": "צַר",
+      "bdb": [
+        "r.ea.ab"
+      ],
+      "cognate_ids": [
+        "ar-darra-harm",
+        "uga-srt-enemy"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "adversary, foe",
+      "summary": "The one who stands against a person or people and presses on them: a people met in war, a personal foe, the adversaries of Yahweh, and once Yahweh himself “like an adversary” to Jerusalem (Lam 2:4). It is the noun of the hostile verb (Num 10:9 has both, הַצַּר הַצֹּרֵר), and Ugaritic ṣrt “enemy”, set beside ib “enemy” as here, and Arabic ḍarra “harm” share its sense. The spelling is also the noun “straits” and the adjective “narrow”; the context decides each use, and a few are open (Isa 59:19; Jer 48:5; Ezk 30:16).",
+      "senses": [
+        {
+          "id": "tsar-adversary",
+          "gloss": "adversary, foe",
+          "definition": "One who is hostile and acts against another: an enemy in war, a personal opponent, set beside אֹיֵב “enemy” and שֹׂנֵא “one who hates”.",
+          "kin": [
+            "tsarar-hostile"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.10.9",
+              "role": "defining",
+              "note": "“When you go to war in your land against הַצַּר הַצֹּרֵר אֶתְכֶם, the adversary who presses you … you will be saved from your enemies (אֹיְבֵיכֶם).”"
+            },
+            {
+              "ref": "Est.7.6",
+              "role": "defining",
+              "note": "“אִישׁ צַר וְאוֹיֵב, an adversary and an enemy: this evil Haman.”"
+            },
+            {
+              "ref": "Deu.32.41",
+              "role": "defining",
+              "note": "“I will return vengeance לְצָרָי, to my adversaries, and repay those who hate me.”"
+            },
+            {
+              "ref": "Lam.1.5",
+              "role": "defining",
+              "note": "“Her adversaries (צָרֶיהָ) have become the head, her enemies (אֹיְבֶיהָ) prosper … her children have gone into captivity before the adversary (צָר).”"
+            },
+            {
+              "ref": "Jos.5.13",
+              "role": "defining",
+              "note": "Joshua to the man with drawn sword: “Are you for us, or for our adversaries (לְצָרֵינוּ)?”"
+            },
+            {
+              "ref": "Gen.14.20",
+              "note": "God Most High “who delivered your adversaries into your hand”."
+            },
+            {
+              "ref": "Num.24.8",
+              "note": "Israel “shall eat up the nations, its adversaries”."
+            },
+            {
+              "ref": "Deu.32.27"
+            },
+            {
+              "ref": "Deu.32.43",
+              "note": "He “will return vengeance on his adversaries and make a covering for his land, his people”."
+            },
+            {
+              "ref": "Deu.33.7",
+              "note": "“Be a help to him from his adversaries.”"
+            },
+            {
+              "ref": "2Sa.24.13",
+              "note": "Three months of fleeing before “your adversaries”."
+            },
+            {
+              "ref": "Isa.1.24",
+              "note": "Yahweh: “I will ease me of my adversaries and avenge me of my enemies”, of rebels in Israel."
+            },
+            {
+              "ref": "Isa.9.10"
+            },
+            {
+              "ref": "Isa.26.11",
+              "role": "defining",
+              "note": "“The fire of your adversaries (צָרֶיךָ) shall devour them”: quoted in Heb 10:27."
+            },
+            {
+              "ref": "Isa.59.18"
+            },
+            {
+              "ref": "Isa.63.18"
+            },
+            {
+              "ref": "Isa.64.1",
+              "note": "“To make your name known to your adversaries.”"
+            },
+            {
+              "ref": "Jer.30.16"
+            },
+            {
+              "ref": "Jer.46.10",
+              "note": "“A day of vengeance, to avenge himself on his adversaries.”"
+            },
+            {
+              "ref": "Jer.50.7"
+            },
+            {
+              "ref": "Ezk.39.23",
+              "note": "“I gave them into the hand of their adversaries.”"
+            },
+            {
+              "ref": "Amo.3.11",
+              "note": "“An adversary, all round the land.”"
+            },
+            {
+              "ref": "Mic.5.8"
+            },
+            {
+              "ref": "Nam.1.2",
+              "note": "“Yahweh takes vengeance on his adversaries, and keeps wrath for his enemies.”"
+            },
+            {
+              "ref": "Zec.8.10",
+              "note": "“No peace to him who went out or came in because of the adversary.”"
+            },
+            {
+              "ref": "Psa.3.2",
+              "note": "“Yahweh, how many are my adversaries!”"
+            },
+            {
+              "ref": "Psa.13.5",
+              "note": "“Lest my enemy say, I have prevailed against him; my adversaries rejoice.”"
+            },
+            {
+              "ref": "Psa.27.2"
+            },
+            {
+              "ref": "Psa.27.12"
+            },
+            {
+              "ref": "Psa.44.6"
+            },
+            {
+              "ref": "Psa.44.8"
+            },
+            {
+              "ref": "Psa.44.11"
+            },
+            {
+              "ref": "Psa.60.13",
+              "note": "“Give us help from the adversary, for vain is the salvation of man.”"
+            },
+            {
+              "ref": "Psa.60.14"
+            },
+            {
+              "ref": "Psa.74.10",
+              "note": "“How long, O God, shall the adversary reproach?”"
+            },
+            {
+              "ref": "Psa.78.42",
+              "note": "“The day he redeemed them from the adversary.”"
+            },
+            {
+              "ref": "Psa.78.61"
+            },
+            {
+              "ref": "Psa.78.66"
+            },
+            {
+              "ref": "Psa.81.15"
+            },
+            {
+              "ref": "Psa.89.24",
+              "note": "“I will beat down his adversaries before him and strike those who hate him.”"
+            },
+            {
+              "ref": "Psa.89.43"
+            },
+            {
+              "ref": "Psa.97.3"
+            },
+            {
+              "ref": "Psa.105.24"
+            },
+            {
+              "ref": "Psa.106.11",
+              "note": "“The waters covered their adversaries”, at the sea."
+            },
+            {
+              "ref": "Psa.107.2",
+              "note": "“Let the redeemed of Yahweh say so, whom he redeemed from the hand of the adversary.”"
+            },
+            {
+              "ref": "Psa.108.13"
+            },
+            {
+              "ref": "Psa.108.14"
+            },
+            {
+              "ref": "Psa.112.8"
+            },
+            {
+              "ref": "Psa.119.139"
+            },
+            {
+              "ref": "Psa.119.157",
+              "note": "“Many are my persecutors and my adversaries.”"
+            },
+            {
+              "ref": "Psa.136.24"
+            },
+            {
+              "ref": "Job.6.23",
+              "note": "“Deliver me from the hand of the adversary.”"
+            },
+            {
+              "ref": "Job.16.9",
+              "note": "“My adversary sharpens his eyes against me.”"
+            },
+            {
+              "ref": "Lam.1.7"
+            },
+            {
+              "ref": "Lam.1.10",
+              "note": "“The adversary has spread out his hand on all her precious things.”"
+            },
+            {
+              "ref": "Lam.1.17"
+            },
+            {
+              "ref": "Lam.2.17"
+            },
+            {
+              "ref": "Lam.4.12",
+              "note": "“That the adversary and the enemy should enter the gates of Jerusalem.”"
+            },
+            {
+              "ref": "Est.7.4",
+              "note": "“The adversary is not worth the king’s loss.”"
+            },
+            {
+              "ref": "Ezr.4.1",
+              "role": "defining",
+              "note": "“The adversaries of Judah and Benjamin heard that the sons of the exile were building the temple”: the people of the land, who then hinder the work (Ezr 4:4–5)."
+            },
+            {
+              "ref": "Neh.4.5"
+            },
+            {
+              "ref": "Neh.9.27",
+              "note": "“You gave them into the hand of their adversaries, who pressed them (וַיָּצֵרוּ) … and you saved them from the hand of their adversaries.”"
+            },
+            {
+              "ref": "1Ch.12.18"
+            },
+            {
+              "ref": "1Ch.21.12"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "Yahweh as adversary",
+              "definition": "Yahweh himself turned against his people when they rebel: he set himself against Jerusalem as an adversary does.",
+              "evidence": [
+                {
+                  "ref": "Lam.2.4",
+                  "role": "defining",
+                  "note": "“He has bent his bow like an enemy, his right hand set like an adversary (כְּצָר).”"
+                },
+                {
+                  "ref": "Job.19.11",
+                  "note": "Job: “he counts me to him as his adversaries.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὑπεναντίος",
+          "gloss": "opposed; adversary",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.10.9, הַצַּר → ὑπεναντίους (הַצֹּרֵר → ἀνθεστηκότας); Isa.26.11, צָרֶיךָ → τοὺς ὑπεναντίους"
+            },
+            {
+              "ref": "Heb.10.27",
+              "role": "defining",
+              "note": "“A fearful expectation of judgment and a zeal of fire which will devour the adversaries (τοὺς ὑπεναντίους)”: Isa 26:11, “zeal … the fire of your adversaries shall devour them”."
+            },
+            {
+              "ref": "Col.2.14",
+              "note": "The handwriting “that was against us (ὑπεναντίον ἡμῖν)”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐχθρός",
+          "gloss": "enemy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "צַר → ἐχθρός ×23 (homographs pointed alike counted together); Psa.107.2, מִיַּד־צָר → ἐκ χειρὸς ἐχθροῦ"
+            },
+            {
+              "ref": "Luk.1.74",
+              "note": "“That we, delivered from the hand of our enemies, might serve him”: the words of Psa 107:2, “redeemed from the hand of the adversary”, though not a quotation."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֹיֵב",
+            "note": "“Enemy”, its constant companion.",
+            "evidence": [
+              {
+                "ref": "Num.10.9"
+              },
+              {
+                "ref": "Est.7.6"
+              },
+              {
+                "ref": "Lam.1.5"
+              },
+              {
+                "ref": "Lam.4.12"
+              },
+              {
+                "ref": "Nam.1.2"
+              },
+              {
+                "ref": "Psa.13.5"
+              }
+            ]
+          },
+          {
+            "lemma": "שֹׂנֵא",
+            "note": "“One who hates.”",
+            "evidence": [
+              {
+                "ref": "Deu.32.41"
+              },
+              {
+                "ref": "Psa.89.24"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִיַּד צָר",
+            "gloss": "from the hand of the adversary",
+            "evidence": [
+              {
+                "ref": "Psa.78.42"
+              },
+              {
+                "ref": "Psa.107.2"
+              },
+              {
+                "ref": "Job.6.23"
+              },
+              {
+                "ref": "Neh.9.27"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צָרָה",
+      "bdb": [
+        "r.dz.ad"
+      ],
+      "cognate_ids": [
+        "ar-sarra-bind",
+        "ar-darra-distress"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "straits, distress, trouble",
+      "summary": "Being hemmed in: the distress of one who is pressed with no way out, in war, siege, sickness, guilt or grief, and the occasion of calling on Yahweh, who brings out of it. The feminine of צַר “straits”, and like it set against “room” (Psa 4:2; 118:5); its tie to “narrow” (Arabic ṣarra, ṣ) is shown by scripture's use. Arabic ḍarrāʾ “hardship, straitness of condition”, with the other sound (ṣ́), also fits it, so which older root it continues is not settled by the cognates.",
+      "senses": [
+        {
+          "id": "tsarah-distress",
+          "gloss": "straits, distress, trouble",
+          "definition": "A state of being pressed in, from enemies, calamity or sickness, from which one cries out for deliverance; often “a day of” or “a time of” distress.",
+          "kin": [
+            "tsarar-narrow-for",
+            "tsar-straits"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.42.21",
+              "role": "defining",
+              "note": "Joseph's brothers: “we saw the distress of his soul (צָרַת נַפְשׁוֹ) when he pleaded with us … therefore this distress (הַצָּרָה) has come upon us.”"
+            },
+            {
+              "ref": "Gen.35.3",
+              "note": "“God, who answered me in the day of my distress.”"
+            },
+            {
+              "ref": "Deu.31.17",
+              "note": "“Many evils and distresses (רָעוֹת רַבּוֹת וְצָרוֹת) shall find them.”"
+            },
+            {
+              "ref": "Deu.31.21"
+            },
+            {
+              "ref": "Jdg.10.14",
+              "note": "“Let them save you in the time of your distress.”"
+            },
+            {
+              "ref": "1Sa.10.19",
+              "note": "Yahweh “who saves you from all your evils and your distresses”."
+            },
+            {
+              "ref": "1Sa.26.24"
+            },
+            {
+              "ref": "2Sa.4.9",
+              "note": "“Yahweh, who has redeemed my soul out of all distress.”"
+            },
+            {
+              "ref": "1Ki.1.29"
+            },
+            {
+              "ref": "2Ki.19.3",
+              "role": "defining",
+              "note": "“A day of distress, rebuke and contempt, for the children have come to the birth and there is no strength to bring forth.”"
+            },
+            {
+              "ref": "Isa.37.3"
+            },
+            {
+              "ref": "Isa.8.22",
+              "role": "defining",
+              "note": "“Behold distress and darkness, gloom of anguish (צָרָה וַחֲשֵׁכָה מְעוּף צוּקָה).”"
+            },
+            {
+              "ref": "Isa.30.6",
+              "note": "“A land of distress and anguish (צָרָה וְצוּקָה).”"
+            },
+            {
+              "ref": "Isa.33.2",
+              "note": "“Our salvation in the time of distress.”"
+            },
+            {
+              "ref": "Isa.46.7",
+              "note": "An idol: “he cries to it, yet it cannot answer nor save him out of his distress.”"
+            },
+            {
+              "ref": "Isa.63.9",
+              "role": "defining",
+              "note": "“In all their distress (צָרָתָם) he was distressed (לוֹ צָר), and the messenger of his presence saved them” (qere לוֹ; the ketiv reads לֹא)."
+            },
+            {
+              "ref": "Isa.65.16",
+              "note": "“The former distresses are forgotten.”"
+            },
+            {
+              "ref": "Jer.14.8",
+              "note": "“The hope of Israel, its saviour in the time of distress.”"
+            },
+            {
+              "ref": "Jer.15.11"
+            },
+            {
+              "ref": "Jer.16.19",
+              "note": "“My refuge in the day of distress.”"
+            },
+            {
+              "ref": "Jer.30.7",
+              "role": "defining",
+              "note": "“It is a time of distress for Jacob, yet he shall be saved out of it.”"
+            },
+            {
+              "ref": "Oba.1.12"
+            },
+            {
+              "ref": "Oba.1.14"
+            },
+            {
+              "ref": "Jon.2.3",
+              "role": "defining",
+              "note": "“I called out of my distress to Yahweh, and he answered me; out of the belly of the grave I cried.”"
+            },
+            {
+              "ref": "Nam.1.7",
+              "note": "“Yahweh is good, a stronghold in the day of distress.”"
+            },
+            {
+              "ref": "Nam.1.9"
+            },
+            {
+              "ref": "Hab.3.16"
+            },
+            {
+              "ref": "Zep.1.15",
+              "note": "“A day of distress and anguish (צָרָה וּמְצוּקָה).”"
+            },
+            {
+              "ref": "Zec.10.11"
+            },
+            {
+              "ref": "Psa.9.10",
+              "note": "“A stronghold in times of distress.”"
+            },
+            {
+              "ref": "Psa.10.1"
+            },
+            {
+              "ref": "Psa.20.2",
+              "note": "“Yahweh answer you in the day of distress.”"
+            },
+            {
+              "ref": "Psa.22.12",
+              "note": "“Be not far from me, for distress is near, for there is none to help.”"
+            },
+            {
+              "ref": "Psa.25.17",
+              "note": "“The distresses of my heart are enlarged (הִרְחִיבוּ).”"
+            },
+            {
+              "ref": "Psa.25.22"
+            },
+            {
+              "ref": "Psa.31.8"
+            },
+            {
+              "ref": "Psa.34.7"
+            },
+            {
+              "ref": "Psa.34.18"
+            },
+            {
+              "ref": "Psa.37.39"
+            },
+            {
+              "ref": "Psa.46.2",
+              "note": "“A help in distresses, very present.”"
+            },
+            {
+              "ref": "Psa.50.15",
+              "role": "defining",
+              "note": "“Call on me in the day of distress; I will deliver you, and you shall glorify me.”"
+            },
+            {
+              "ref": "Psa.54.9"
+            },
+            {
+              "ref": "Psa.71.20"
+            },
+            {
+              "ref": "Psa.77.3"
+            },
+            {
+              "ref": "Psa.78.49"
+            },
+            {
+              "ref": "Psa.81.8"
+            },
+            {
+              "ref": "Psa.86.7"
+            },
+            {
+              "ref": "Psa.91.15",
+              "note": "“I will be with him in distress; I will deliver him.”"
+            },
+            {
+              "ref": "Psa.116.3",
+              "note": "“The cords of death surrounded me, the straits of the grave (מְצָרֵי שְׁאוֹל) found me; I found distress and sorrow.”"
+            },
+            {
+              "ref": "Psa.120.1",
+              "note": "“In my distress I called to Yahweh, and he answered me.”"
+            },
+            {
+              "ref": "Psa.138.7"
+            },
+            {
+              "ref": "Psa.142.3"
+            },
+            {
+              "ref": "Psa.143.11"
+            },
+            {
+              "ref": "Pro.1.27",
+              "note": "“When distress and anguish come upon you.”"
+            },
+            {
+              "ref": "Pro.11.8",
+              "note": "“The righteous is delivered out of distress, and the wicked comes in his stead.”"
+            },
+            {
+              "ref": "Pro.12.13"
+            },
+            {
+              "ref": "Pro.17.17",
+              "note": "“A brother is born for distress.”"
+            },
+            {
+              "ref": "Pro.21.23"
+            },
+            {
+              "ref": "Pro.24.10",
+              "note": "“If you faint in the day of distress (צָרָה), your strength is narrow (צַר).”"
+            },
+            {
+              "ref": "Pro.25.19"
+            },
+            {
+              "ref": "Job.5.19"
+            },
+            {
+              "ref": "Job.27.9"
+            },
+            {
+              "ref": "Dan.12.1",
+              "role": "defining",
+              "note": "“There shall be a time of distress such as never was since there was a nation until that time; and at that time your people shall be delivered, everyone found written in the book.” Quoted in Mat 24:21."
+            },
+            {
+              "ref": "Neh.9.27"
+            },
+            {
+              "ref": "Neh.9.37",
+              "note": "“We are in great distress.”"
+            },
+            {
+              "ref": "2Ch.15.6"
+            },
+            {
+              "ref": "2Ch.20.9"
+            }
+          ]
+        },
+        {
+          "id": "tsarah-pangs",
+          "gloss": "anguish as of childbirth",
+          "definition": "The distress that seizes like a woman's labour: the straits of birth taken as the picture of terror before an enemy.",
+          "kin": [
+            "tsarar-labour"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.4.31",
+              "role": "defining",
+              "note": "“I heard a voice as of a woman in labour, distress (צָרָה) as of one bringing forth her first child.”"
+            },
+            {
+              "ref": "Jer.6.24",
+              "role": "defining",
+              "note": "“Distress has seized us, pain as of a woman in labour.”"
+            },
+            {
+              "ref": "Jer.49.24"
+            },
+            {
+              "ref": "Jer.50.43"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θλῖψις",
+          "gloss": "pressure, affliction, tribulation",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "צָרָה → θλῖψις ×49; Dan.12.1, עֵת צָרָה → ἡμέρα θλίψεως; Gen.42.21, צָרַת → θλῖψιν"
+            },
+            {
+              "ref": "Mat.24.21",
+              "role": "defining",
+              "note": "“Then shall be great tribulation (θλῖψις), such as has not been from the beginning of the world until now”: the words of Dan 12:1."
+            },
+            {
+              "ref": "Mrk.13.19",
+              "note": "The same, from Dan 12:1."
+            },
+            {
+              "ref": "Act.7.10",
+              "note": "Stephen: God “delivered him out of all his afflictions”, of Joseph, whose צָרָה his brothers saw (Gen 42:21)."
+            },
+            {
+              "ref": "Act.14.22",
+              "note": "“Through many tribulations we must enter the kingdom of God.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνάγκη",
+          "gloss": "constraint, distress",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "צָרָה → ἀνάγκη ×4 (Job.5.19; Job.27.9; Psa.31.8; Pro.17.17)"
+            },
+            {
+              "ref": "Luk.21.23",
+              "note": "“There shall be great distress (ἀνάγκη) on the land and wrath on this people”, Luke's account of the tribulation of Mat 24:21."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "צוּקָה",
+            "note": "“Anguish, constraint”, of the near root צוק “press”.",
+            "evidence": [
+              {
+                "ref": "Isa.8.22"
+              },
+              {
+                "ref": "Isa.30.6"
+              },
+              {
+                "ref": "Pro.1.27"
+              },
+              {
+                "ref": "Zep.1.15"
+              }
+            ]
+          },
+          {
+            "lemma": "חֲשֵׁכָה",
+            "note": "“Darkness.”",
+            "evidence": [
+              {
+                "ref": "Isa.8.22"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יוֹם צָרָה",
+            "gloss": "day of distress",
+            "evidence": [
+              {
+                "ref": "Gen.35.3"
+              },
+              {
+                "ref": "2Ki.19.3"
+              },
+              {
+                "ref": "Psa.20.2"
+              },
+              {
+                "ref": "Psa.50.15"
+              },
+              {
+                "ref": "Psa.86.7"
+              },
+              {
+                "ref": "Nam.1.7"
+              },
+              {
+                "ref": "Zep.1.15"
+              },
+              {
+                "ref": "Pro.24.10"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵת צָרָה",
+            "gloss": "time of distress",
+            "evidence": [
+              {
+                "ref": "Jdg.10.14"
+              },
+              {
+                "ref": "Isa.33.2"
+              },
+              {
+                "ref": "Jer.14.8"
+              },
+              {
+                "ref": "Jer.30.7"
+              },
+              {
+                "ref": "Psa.37.39"
+              },
+              {
+                "ref": "Dan.12.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צַר",
+      "bdb": [
+        "r.dz.ac"
+      ],
+      "cognate_ids": [
+        "ar-sarra-bind"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "straits, distress",
+      "summary": "A strait, a hemmed-in place: the masculine beside צָרָה, mostly in the phrase בַּצַּר לְ “when it is strait for”. Scripture fixes it by its opposite, room: “in the strait you made room for me” (Psa 4:2), “out of the mouth of the strait into a broad place” (Job 36:16).",
+      "senses": [
+        {
+          "id": "tsar-straits",
+          "gloss": "straits, distress",
+          "definition": "Being hemmed in, the opposite of having room; the distress of one pressed by enemies or trouble, in which he cries to Yahweh.",
+          "kin": [
+            "tsarar-narrow-for",
+            "tsarah-distress"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.4.2",
+              "role": "defining",
+              "note": "“In the strait (בַּצָּר) you made room for me (הִרְחַבְתָּ לִּי).”"
+            },
+            {
+              "ref": "Job.36.16",
+              "role": "defining",
+              "note": "“He would have drawn you out of the mouth of the strait (מִפִּי־צָר) into a broad place (רַחַב) where there is no constraint.”"
+            },
+            {
+              "ref": "Deu.4.30",
+              "role": "defining",
+              "note": "“When you are in straits (בַּצַּר לְךָ) and all these things have found you, in the latter days, you shall return to Yahweh your God.”"
+            },
+            {
+              "ref": "2Sa.22.7",
+              "note": "“In my strait I called on Yahweh”; the same Psa 18:7."
+            },
+            {
+              "ref": "Psa.18.7"
+            },
+            {
+              "ref": "Hos.5.15",
+              "note": "“In their strait they will seek me early.”"
+            },
+            {
+              "ref": "Isa.25.4",
+              "note": "“A stronghold to the needy in his strait.”"
+            },
+            {
+              "ref": "Isa.26.16",
+              "note": "“Yahweh, in the strait they visited you.”"
+            },
+            {
+              "ref": "Isa.30.20",
+              "note": "“Bread of straits and water of oppression.”"
+            },
+            {
+              "ref": "Isa.5.30",
+              "note": "“Darkness, a strait (חֹשֶׁךְ צַר), and the light darkened.”"
+            },
+            {
+              "ref": "Psa.32.7",
+              "note": "“You keep me from the strait (מִצַּר תִּצְּרֵנִי)”, playing on נצר “keep”."
+            },
+            {
+              "ref": "Psa.66.14"
+            },
+            {
+              "ref": "Psa.106.44",
+              "note": "“He looked on their strait when he heard their cry.”"
+            },
+            {
+              "ref": "Psa.107.6",
+              "note": "“They cried to Yahweh in their strait; he delivered them out of their distresses”; the refrain again in 107:13, 19, 28."
+            },
+            {
+              "ref": "Psa.107.13"
+            },
+            {
+              "ref": "Psa.107.19"
+            },
+            {
+              "ref": "Psa.107.28"
+            },
+            {
+              "ref": "Psa.119.143",
+              "note": "“Strait and constraint (צַר־וּמָצוֹק) have found me; your commandments are my delight.”"
+            },
+            {
+              "ref": "Job.7.11",
+              "note": "“I will speak in the strait of my spirit.”"
+            },
+            {
+              "ref": "Job.15.24",
+              "note": "“Strait and constraint (צַר וּמְצוּקָה) terrify him.”"
+            },
+            {
+              "ref": "Job.36.19"
+            },
+            {
+              "ref": "Job.38.23",
+              "note": "Hail “reserved for the time of strait, for the day of battle and war”."
+            },
+            {
+              "ref": "2Ch.15.4",
+              "note": "“When in their strait they turned to Yahweh God of Israel and sought him, he was found by them.”"
+            },
+            {
+              "ref": "1Sa.2.32",
+              "note": "“You shall see a strait (or a rival) in the dwelling”: the sense here is disputed."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θλῖψις",
+          "gloss": "pressure, affliction",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.4.2, בַּצָּר → ἐν θλίψει; Hos.5.15, בַּצַּר → ἐν θλίψει"
+            },
+            {
+              "ref": "2Co.4.8",
+              "note": "“Pressed (θλιβόμενοι) on every side, yet not hemmed in (στενοχωρούμενοι)”: the strait and the room of Psa 4:2 in Paul's words."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָצוֹק",
+            "note": "“Constraint”, of צוק “press”.",
+            "evidence": [
+              {
+                "ref": "Psa.119.143"
+              },
+              {
+                "ref": "Job.15.24"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רָחַב",
+            "note": "“Be wide, make room”; רַחַב “a broad place”.",
+            "evidence": [
+              {
+                "ref": "Psa.4.2"
+              },
+              {
+                "ref": "Job.36.16"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בַּצַּר לְ",
+            "gloss": "when it is strait for (someone), in (his) distress",
+            "evidence": [
+              {
+                "ref": "Deu.4.30"
+              },
+              {
+                "ref": "2Sa.22.7"
+              },
+              {
+                "ref": "Hos.5.15"
+              },
+              {
+                "ref": "Psa.106.44"
+              },
+              {
+                "ref": "Psa.107.6"
+              },
+              {
+                "ref": "2Ch.15.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צָרַר",
+      "bdb": [
+        "r.dz.aa",
+        "r.dz.ae"
+      ],
+      "cognate_ids": [
+        "ar-sarra-bind",
+        "arc-tserar-bind"
+      ],
+      "pos": "verb",
+      "gloss": "bind up, wrap; be narrow, be in straits; press hard",
+      "summary": "To bind something up close, to tie or wrap it; and of space, to be narrow, cramped. Said of a person, “it is narrow for him” (צַר לוֹ, וַיֵּצֶר לוֹ) is to be hemmed in, in straits, and the causative is to press someone hard. Arabic ṣarra “tie up (a purse)”, maṣrūr “bound; contracted, narrow”, and Aramaic צְרַר “tie up” share both halves of the sense.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bind up, wrap; be narrow; (impersonal) it is narrow for, be in straits",
+          "senses": [
+            {
+              "id": "tsarar-bind",
+              "gloss": "bind up, wrap, tie in",
+              "definition": "To tie or wrap something up so that it is held close and kept: dough in a cloak, a stone in a sling, waters in cloud, a life in a bundle, a testimony sealed.",
+              "evidence": [
+                {
+                  "ref": "Exo.12.34",
+                  "role": "defining",
+                  "note": "“Their kneading troughs bound up (צְרֻרֹת) in their cloaks on their shoulders.”"
+                },
+                {
+                  "ref": "Pro.30.4",
+                  "role": "defining",
+                  "note": "“Who has bound the waters in a garment?”"
+                },
+                {
+                  "ref": "Job.26.8",
+                  "role": "defining",
+                  "note": "“He binds up the waters in his thick clouds, and the cloud is not torn under them.”"
+                },
+                {
+                  "ref": "Pro.26.8",
+                  "note": "“As one who binds a stone in a sling, so is he who gives honour to a fool.”"
+                },
+                {
+                  "ref": "1Sa.25.29",
+                  "role": "defining",
+                  "note": "“The soul of my lord shall be bound (צְרוּרָה) in the bundle (בִּצְרוֹר) of the living with Yahweh your God.”"
+                },
+                {
+                  "ref": "Isa.8.16",
+                  "note": "“Bind up (צוֹר) the testimony, seal the law among my disciples.”"
+                },
+                {
+                  "ref": "Hos.4.19",
+                  "note": "“The wind has bound her up in its wings.”"
+                },
+                {
+                  "ref": "Hos.13.12",
+                  "role": "defining",
+                  "note": "“The iniquity of Ephraim is bound up; his sin is stored away (צְפוּנָה).”"
+                },
+                {
+                  "ref": "2Sa.20.3",
+                  "note": "David's ten concubines “were shut up (צְרֻרוֹת) until the day of their death, living as widows”."
+                }
+              ]
+            },
+            {
+              "id": "tsarar-cramped",
+              "gloss": "be narrow, cramped, restricted",
+              "definition": "Of a place or a path, to be too narrow, to give too little room; of a man's steps, to be hampered.",
+              "kin": [
+                "tsar-narrow"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.49.19",
+                  "role": "defining",
+                  "note": "“Your waste places … shall now be too narrow (תֵּצְרִי) for the inhabitants.”"
+                },
+                {
+                  "ref": "Pro.4.12",
+                  "role": "defining",
+                  "note": "“When you walk your steps shall not be hampered (לֹא־יֵצַר), and if you run you shall not stumble.”"
+                },
+                {
+                  "ref": "Job.18.7",
+                  "note": "“The steps of his strength are hampered.”"
+                }
+              ]
+            },
+            {
+              "id": "tsarar-narrow-for",
+              "gloss": "(it is) narrow for, be in straits, be distressed",
+              "definition": "Impersonal, with לְ: “it is narrow for him”, he is hemmed in, by enemies, by fear, by grief or by a desire he cannot meet.",
+              "kin": [
+                "tsar-straits",
+                "tsarah-distress"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.32.8",
+                  "role": "defining",
+                  "note": "“Jacob was greatly afraid, and it was narrow for him (וַיֵּצֶר לוֹ)”, before Esau's four hundred."
+                },
+                {
+                  "ref": "1Sa.13.6",
+                  "role": "defining",
+                  "note": "“The men of Israel saw that they were in a strait (צַר־לוֹ), for the people were pressed, and the people hid themselves in caves.”"
+                },
+                {
+                  "ref": "Jdg.2.15",
+                  "note": "“The hand of Yahweh was against them for evil … and it was very narrow for them.”"
+                },
+                {
+                  "ref": "Jdg.10.9"
+                },
+                {
+                  "ref": "Jdg.11.7",
+                  "note": "Jephthah: “Why have you come to me now, when you are in straits?”"
+                },
+                {
+                  "ref": "1Sa.28.15",
+                  "note": "Saul: “I am sore distressed, for the Philistines make war against me.”"
+                },
+                {
+                  "ref": "1Sa.30.6",
+                  "note": "“David was greatly distressed, for the people spoke of stoning him … but David strengthened himself in Yahweh his God.”"
+                },
+                {
+                  "ref": "2Sa.1.26",
+                  "note": "“I am distressed for you, my brother Jonathan.”"
+                },
+                {
+                  "ref": "2Sa.13.2",
+                  "note": "Amnon “was so distressed that he made himself sick” over Tamar."
+                },
+                {
+                  "ref": "2Sa.24.14",
+                  "role": "defining",
+                  "note": "“I am in a great strait; let us fall into the hand of Yahweh, for his mercies are many, and let me not fall into the hand of man”; the same 1Ch 21:13."
+                },
+                {
+                  "ref": "1Ch.21.13"
+                },
+                {
+                  "ref": "Isa.63.9",
+                  "note": "“In all their distress he was distressed (לוֹ צָר).”"
+                },
+                {
+                  "ref": "Psa.31.10",
+                  "note": "“Be gracious to me, Yahweh, for I am in distress.”"
+                },
+                {
+                  "ref": "Psa.59.17"
+                },
+                {
+                  "ref": "Psa.69.18"
+                },
+                {
+                  "ref": "Psa.102.3",
+                  "note": "“Do not hide your face from me in the day when I am in distress.”"
+                },
+                {
+                  "ref": "Lam.1.20",
+                  "note": "“See, Yahweh, for I am in distress.”"
+                },
+                {
+                  "ref": "Job.20.22",
+                  "note": "“In the fullness of his sufficiency he shall be in straits.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be bound up",
+          "senses": [
+            {
+              "gloss": "bound up, patched",
+              "definition": "Of worn wineskins, bound up where they were split.",
+              "evidence": [
+                {
+                  "ref": "Jos.9.4",
+                  "role": "defining",
+                  "note": "The Gibeonites took “wineskins old and torn and bound up (וּמְצֹרָרִים)”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "press hard, bring into straits; (participle) be in labour",
+          "senses": [
+            {
+              "id": "tsarar-press",
+              "gloss": "press hard, bring into straits",
+              "definition": "To hem someone in so that he is in straits: an enemy pressing on a city or king, and Yahweh bringing distress on the disobedient.",
+              "kin": [
+                "tsarar-hostile"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jer.10.18",
+                  "role": "defining",
+                  "note": "“I will sling out the inhabitants of the land … and will press them (וַהֲצֵרוֹתִי לָהֶם), that they may find it.”"
+                },
+                {
+                  "ref": "Zep.1.17",
+                  "role": "defining",
+                  "note": "“I will bring distress on men (וַהֲצֵרֹתִי לָאָדָם), and they shall walk like the blind, because they have sinned against Yahweh.”"
+                },
+                {
+                  "ref": "Neh.9.27",
+                  "role": "defining",
+                  "note": "“You gave them into the hand of their adversaries, and they pressed them (וַיָּצֵרוּ לָהֶם); and in the time of their distress they cried to you.”"
+                },
+                {
+                  "ref": "2Ch.28.20",
+                  "note": "Tiglath-pileser “came to him and pressed him, and did not strengthen him”."
+                },
+                {
+                  "ref": "2Ch.28.22",
+                  "note": "“In the time of his being pressed he trespassed yet more”: Ahaz."
+                },
+                {
+                  "ref": "2Ch.33.12",
+                  "role": "defining",
+                  "note": "“When he was in straits (וּכְהָצֵר לוֹ) he besought Yahweh his God and humbled himself greatly”: Manasseh."
+                },
+                {
+                  "ref": "1Ki.8.37",
+                  "note": "“If his enemy presses him in the land of his gates”; the same 2Ch 6:28. Possibly צוּר “besiege”."
+                },
+                {
+                  "ref": "2Ch.6.28"
+                },
+                {
+                  "ref": "Deu.28.52",
+                  "note": "“He shall press you in all your gates until your high walls come down”: possibly צוּר “besiege”."
+                }
+              ]
+            },
+            {
+              "id": "tsarar-labour",
+              "gloss": "(participle) a woman in labour",
+              "definition": "The woman in the straits of childbirth, the picture of a warrior's terror.",
+              "evidence": [
+                {
+                  "ref": "Jer.48.41",
+                  "role": "defining",
+                  "note": "“The heart of the mighty men of Moab shall be as the heart of a woman in labour (אִשָּׁה מְצֵרָה).”"
+                },
+                {
+                  "ref": "Jer.49.22",
+                  "note": "The same of Edom."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "צָפַן",
+            "note": "“Store away, hide”: what is bound up is kept.",
+            "evidence": [
+              {
+                "ref": "Hos.13.12"
+              }
+            ]
+          },
+          {
+            "lemma": "חָתַם",
+            "note": "“Seal.”",
+            "evidence": [
+              {
+                "ref": "Isa.8.16"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "צַר לִי",
+            "gloss": "it is narrow for me: I am in straits, distressed",
+            "evidence": [
+              {
+                "ref": "1Sa.28.15"
+              },
+              {
+                "ref": "2Sa.1.26"
+              },
+              {
+                "ref": "2Sa.24.14"
+              },
+              {
+                "ref": "Psa.31.10"
+              },
+              {
+                "ref": "Psa.69.18"
+              },
+              {
+                "ref": "Lam.1.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צָרַר",
+      "bdb": [
+        "r.ea.aa",
+        "r.ea.ad"
+      ],
+      "cognate_ids": [
+        "ar-darra-harm",
+        "uga-srt-enemy"
+      ],
+      "pos": "verb",
+      "gloss": "be hostile to, harass; (of a wife) be a rival to",
+      "summary": "To be hostile to someone and act on it: to harass, afflict, attack. Almost every use is the participle צֹרֵר, “the one who is hostile”, the adversary, set beside אֹיֵב. Once, of a second wife taken beside her sister, it is to be a rival (Lev 18:18), as the noun צָרָה is the rival wife. Arabic ḍarra “harm” and ḍarrah “fellow-wife” keep both senses in the one root, with ṣ́ behind צ, apart from ṣarra “tie up”.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be hostile to, harass; (participle) adversary; be a rival wife to",
+          "senses": [
+            {
+              "id": "tsarar-hostile",
+              "gloss": "be hostile to, harass; (participle) adversary",
+              "definition": "To treat someone as an enemy and press on him with harm or attack; the participle is the one who does so, the adversary.",
+              "kin": [
+                "tsar-adversary"
+              ],
+              "evidence": [
+                {
+                  "ref": "Exo.23.22",
+                  "role": "defining",
+                  "note": "“I will be an enemy to your enemies (וְאָיַבְתִּי אֶת־אֹיְבֶיךָ) and an adversary to your adversaries (וְצַרְתִּי אֶת־צֹרְרֶיךָ).”"
+                },
+                {
+                  "ref": "Num.10.9",
+                  "role": "defining",
+                  "note": "“The adversary who presses you (הַצֹּרֵר אֶתְכֶם).”"
+                },
+                {
+                  "ref": "Num.25.17",
+                  "role": "defining",
+                  "note": "“Harass the Midianites and strike them, for they harass you (צֹרְרִים הֵם לָכֶם) with their wiles” (25:17–18)."
+                },
+                {
+                  "ref": "Num.25.18"
+                },
+                {
+                  "ref": "Num.33.55",
+                  "note": "Those left in the land “shall be pricks in your eyes and thorns in your sides, and shall harass you in the land”."
+                },
+                {
+                  "ref": "Isa.11.13",
+                  "role": "defining",
+                  "note": "“The envy of Ephraim shall depart and the adversaries of Judah be cut off; Ephraim shall not envy Judah, and Judah shall not harass Ephraim.”"
+                },
+                {
+                  "ref": "Amo.5.12",
+                  "note": "“Afflicting the righteous, taking a bribe, turning aside the needy in the gate.”"
+                },
+                {
+                  "ref": "Psa.6.8"
+                },
+                {
+                  "ref": "Psa.7.5",
+                  "note": "“If I have repaid evil to him who was at peace with me, or plundered him who without cause is my adversary.”"
+                },
+                {
+                  "ref": "Psa.7.7",
+                  "note": "“Lift yourself up against the rage of my adversaries.”"
+                },
+                {
+                  "ref": "Psa.8.3",
+                  "role": "defining",
+                  "note": "“Out of the mouth of babes and sucklings you have founded strength because of your adversaries (צוֹרְרֶיךָ), to still the enemy and the avenger”: quoted by Jesus in Mat 21:16."
+                },
+                {
+                  "ref": "Psa.10.5"
+                },
+                {
+                  "ref": "Psa.23.5",
+                  "note": "“You prepare a table before me in the presence of my adversaries.”"
+                },
+                {
+                  "ref": "Psa.31.12",
+                  "note": "“Because of all my adversaries I have become a reproach.”"
+                },
+                {
+                  "ref": "Psa.42.11"
+                },
+                {
+                  "ref": "Psa.69.20"
+                },
+                {
+                  "ref": "Psa.74.4",
+                  "note": "“Your adversaries have roared in the midst of your meeting place.”"
+                },
+                {
+                  "ref": "Psa.74.23"
+                },
+                {
+                  "ref": "Psa.129.1",
+                  "role": "defining",
+                  "note": "“Much have they afflicted me (צְרָרוּנִי) from my youth, let Israel now say … yet they have not prevailed against me” (129:1–2)."
+                },
+                {
+                  "ref": "Psa.129.2"
+                },
+                {
+                  "ref": "Psa.143.12"
+                },
+                {
+                  "ref": "Est.3.10",
+                  "note": "“Haman … the adversary of the Jews (צֹרֵר הַיְּהוּדִים)”; so 8:1; 9:10, 24."
+                },
+                {
+                  "ref": "Est.8.1"
+                },
+                {
+                  "ref": "Est.9.10"
+                },
+                {
+                  "ref": "Est.9.24"
+                }
+              ]
+            },
+            {
+              "id": "tsarar-rival",
+              "gloss": "be a rival (wife) to",
+              "definition": "Of a woman taken in marriage beside her sister: to be set against her as a rival wife.",
+              "cognate_ids": [
+                "ar-darra-cowife",
+                "akk-serretu-cowife",
+                "phn-srt-cowife"
+              ],
+              "kin": [
+                "tsarah-rival"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.18.18",
+                  "role": "defining",
+                  "note": "“You shall not take a woman to her sister, to be a rival (לִצְרֹר), to uncover her nakedness beside her in her lifetime.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐχθρός",
+          "gloss": "enemy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.8.3, צוֹרְרֶיךָ → τῶν ἐχθρῶν σου; צָרַר → ἐχθρός ×6"
+            },
+            {
+              "ref": "Mat.21.16",
+              "role": "defining",
+              "note": "To the chief priests and scribes, indignant at the children's praise, Jesus quotes Psa 8:3, whose praise is “because of your adversaries, to still the enemy”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אָיַב",
+            "note": "“Be an enemy.”",
+            "evidence": [
+              {
+                "ref": "Exo.23.22"
+              },
+              {
+                "ref": "Num.10.9"
+              },
+              {
+                "ref": "Psa.8.3"
+              }
+            ]
+          },
+          {
+            "lemma": "קָנָא",
+            "note": "“Envy”, the root of the hostility between Ephraim and Judah.",
+            "evidence": [
+              {
+                "ref": "Isa.11.13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צַר",
+      "bdb": [
+        "r.dz.ab"
+      ],
+      "cognate_ids": [
+        "ar-sarra-bind"
+      ],
+      "pos": "adjective",
+      "gloss": "narrow, tight",
+      "summary": "Narrow: a place with no room to turn or too small to live in, a covering too narrow to wrap oneself in, a narrow well. Of a man's strength in trouble, it is small.",
+      "senses": [
+        {
+          "id": "tsar-narrow",
+          "gloss": "narrow, tight",
+          "definition": "Of a place or thing, with too little room; the opposite of broad.",
+          "kin": [
+            "tsarar-cramped"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.22.26",
+              "role": "defining",
+              "note": "The messenger of Yahweh stood “in a narrow place (בְּמָקוֹם צָר), where there was no way to turn to the right or to the left”."
+            },
+            {
+              "ref": "2Ki.6.1",
+              "role": "defining",
+              "note": "“The place where we dwell before you is too narrow for us (צַר מִמֶּנּוּ).”"
+            },
+            {
+              "ref": "Isa.49.20",
+              "role": "defining",
+              "note": "“The place is too narrow for me (צַר־לִי הַמָּקוֹם); make room for me to dwell.”"
+            },
+            {
+              "ref": "Isa.28.20",
+              "note": "“The bed is too short to stretch out on, and the covering too narrow (צָרָה) to wrap oneself in.”"
+            },
+            {
+              "ref": "Pro.23.27",
+              "note": "“A harlot is a deep ditch, and a foreign woman a narrow well.”"
+            },
+            {
+              "ref": "Job.41.7",
+              "note": "The scales of the beast, “shut up together as with a close (צָר) seal”."
+            },
+            {
+              "ref": "Pro.24.10",
+              "note": "“If you faint in the day of distress, your strength is narrow (צַר כֹּחֶכָה).”"
+            },
+            {
+              "ref": "Isa.59.19",
+              "note": "“He shall come like a narrow (pent-up) river, which the wind of Yahweh drives”; some read “the adversary shall come like a river”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "στενός",
+          "gloss": "narrow",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.22.26, מָקוֹם צָר → τόπῳ στενῷ; 2Ki.6.1 and Isa.49.20, צַר → στενός; Pro.23.27, בְּאֵר צָר → φρέαρ στενόν"
+            },
+            {
+              "ref": "Mat.7.14",
+              "note": "“Narrow (στενή) is the gate and pressed (τεθλιμμένη) the way that leads to life”: Greek words that answer to this word and to צַר “straits”, though no passage is quoted."
+            },
+            {
+              "ref": "Luk.13.24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צְרוֹר",
+      "bdb": [
+        "r.dz.af"
+      ],
+      "cognate_ids": [
+        "ar-sarra-bind",
+        "arc-tserar-bind"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bundle, bag, pouch",
+      "summary": "What is bound up: a tied bag or pouch, for money above all, and a sachet of myrrh. Arabic ṣurrah, from ṣarra “tie up”, is the same thing, “a purse”.",
+      "senses": [
+        {
+          "gloss": "bundle, bag, pouch",
+          "definition": "A bag tied shut to keep what is in it: money, myrrh, and in figure a man's sins or his life kept by God.",
+          "kin": [
+            "tsarar-bind"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.42.35",
+              "role": "defining",
+              "note": "“Every man's bundle of money (צְרוֹר־כַּסְפּוֹ) was in his sack; and they saw their bundles of money (צְרֹרוֹת כַּסְפֵּיהֶם).”"
+            },
+            {
+              "ref": "Pro.7.20",
+              "role": "defining",
+              "note": "“He has taken a bag of money (צְרוֹר־הַכֶּסֶף) with him.”"
+            },
+            {
+              "ref": "Hag.1.6",
+              "role": "defining",
+              "note": "“He who earns wages earns them into a bag with holes.”"
+            },
+            {
+              "ref": "Sng.1.13",
+              "note": "“A bundle of myrrh is my beloved to me.”"
+            },
+            {
+              "ref": "Job.14.17",
+              "note": "“My transgression is sealed up in a bag, and you fasten up my iniquity.”"
+            },
+            {
+              "ref": "1Sa.25.29",
+              "role": "defining",
+              "note": "“Bound in the bundle of the living (בִּצְרוֹר הַחַיִּים) with Yahweh your God”, against the enemies' souls slung away “from the hollow of a sling”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βαλλάντιον",
+          "gloss": "money bag, purse",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.14.17, בִּצְרוֹר → ἐν βαλλαντίῳ"
+            },
+            {
+              "ref": "Luk.12.33",
+              "note": "“Make yourselves purses (βαλλάντια) that do not grow old, a treasure in the heavens that does not fail”, against the bag with holes of Hag 1:6; not a quotation."
+            },
+            {
+              "ref": "Luk.10.4"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "צְרוֹר הַחַיִּים",
+            "gloss": "the bundle of the living",
+            "evidence": [
+              {
+                "ref": "1Sa.25.29"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צֹר",
+      "bdb": [
+        "r.eb.ac",
+        "r.eb.ab"
+      ],
+      "cognate_ids": [
+        "ar-zurar-flint",
+        "akk-surru-flint"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "flint; flint knife",
+      "summary": "Flint, the hard stone that flakes to a sharp edge, and a knife made of it. Arabic ẓurar is the same sharp-edged stone, and ẓarra “cut with such a stone”, with ṯ̣ behind צ, an older root apart from “bind” and “be hostile”. Also spelled צַר (Isa 5:28); צוּר in Jos 5:2–3 is filed under צוּר “rock”. Its tie to the other words of the spelling is only that of the shared letters.",
+      "senses": [
+        {
+          "gloss": "flint, flint knife",
+          "definition": "The hard sharp stone, used as a knife for circumcision, and the type of hardness.",
+          "evidence": [
+            {
+              "ref": "Exo.4.25",
+              "role": "defining",
+              "note": "“Zipporah took a flint (צֹר) and cut off the foreskin of her son.”"
+            },
+            {
+              "ref": "Ezk.3.9",
+              "role": "defining",
+              "note": "“As an adamant harder than flint (מִצֹּר) I have made your forehead.”"
+            },
+            {
+              "ref": "Isa.5.28",
+              "note": "“Their horses' hooves are counted like flint (כַּצַּר).”"
+            },
+            {
+              "ref": "Jos.5.2",
+              "note": "“Make for yourself knives of flint (חַרְבוֹת צֻרִים) and circumcise the sons of Israel again”: the same stone, under the spelling צוּר."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צְרוֹר",
+      "bdb": [
+        "r.eb.ad"
+      ],
+      "cognate_ids": [
+        "ar-zurar-flint",
+        "akk-surru-flint"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pebble, small stone",
+      "summary": "A small stone: the least stone left of a city dragged into a valley, the smallest piece that does not fall through a sieve. Arabic ẓurar “a stone” (and sharp stone) points to the root of צֹר “flint”, not to צְרוֹר “bundle”; the two words share the spelling only. Two uses, so the sense rests on little.",
+      "senses": [
+        {
+          "gloss": "pebble, small stone",
+          "definition": "A small stone, as the least thing that could be left or lost.",
+          "evidence": [
+            {
+              "ref": "2Sa.17.13",
+              "role": "defining",
+              "note": "“All Israel shall drag that city into the valley until not even a pebble (צְרוֹר) is found there.”"
+            },
+            {
+              "ref": "Amo.9.9",
+              "role": "defining",
+              "note": "“As one shakes with a sieve, yet not a pebble shall fall to the ground”: none of the house of Israel will be lost."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵצַר",
+      "bdb": [
+        "r.dz.ag"
+      ],
+      "cognate_ids": [
+        "ar-sarra-bind"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "strait, narrow place",
+      "summary": "A narrow place, where one is hemmed in: the pass where pursuers overtake, the straits of the grave, and the strait out of which the psalmist calls to Yah and is answered in a broad place.",
+      "senses": [
+        {
+          "gloss": "strait, narrow place",
+          "definition": "A place of narrowness, literal or figurative, the opposite of מֶרְחָב “broad place”.",
+          "kin": [
+            "tsar-straits",
+            "tsarar-narrow-for"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.118.5",
+              "role": "defining",
+              "note": "“Out of the strait (מִן־הַמֵּצַר) I called on Yah; Yah answered me in a broad place (בַמֶּרְחָב).”"
+            },
+            {
+              "ref": "Lam.1.3",
+              "role": "defining",
+              "note": "“All her pursuers overtook her between the straits (בֵּין הַמְּצָרִים).”"
+            },
+            {
+              "ref": "Psa.116.3",
+              "note": "“The cords of death surrounded me, and the straits of the grave (מְצָרֵי שְׁאוֹל) found me.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מֶרְחָב",
+            "note": "“Broad place.”",
+            "evidence": [
+              {
+                "ref": "Psa.118.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צָרָה",
+      "bdb": [
+        "r.ea.ac"
+      ],
+      "cognate_ids": [
+        "ar-darra-cowife",
+        "akk-serretu-cowife",
+        "phn-srt-cowife"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "rival wife",
+      "summary": "A wife's fellow-wife, her rival in the one household. One use in scripture, but Arabic ḍarrah “fellow-wife”, Akkadian ṣerretu and Phoenician ṣrt all name the same woman, so the sense is sure; Arabic shows ṣ́, the sound of the hostile verb.",
+      "senses": [
+        {
+          "id": "tsarah-rival",
+          "gloss": "rival wife",
+          "definition": "One of two wives of one husband, as she stands toward the other.",
+          "kin": [
+            "tsarar-rival"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.1.6",
+              "role": "defining",
+              "note": "“Her rival (צָרָתָהּ) also provoked her sorely, to make her fret, because Yahweh had shut up her womb”: Peninnah toward Hannah, the two wives of Elkanah (1Sa 1:2)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sarra-bind",
+      "lang": "ar",
+      "form": "صَرَّ، صُرَّةٌ، مَصْرُورٌ",
+      "translit": "ṣarra, ṣurrah, maṣrūr",
+      "gloss": "tie up (a purse, money in a purse); a purse; bound, (of a hoof) contracted, narrow",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "note": "Lane's sources give ṣarra “he tied up a purse, and money in a purse”, ṣarr “the act of binding”, ṣurrah “a purse for money”, and maṣrūr “bound, as a captive”, and of a hoof “contracted, narrow”; form VIII iṣṭarra of a hoof “became narrow, contracted”. One root for tying up and for narrowness, as the Hebrew verb and צְרוֹר “bag”. Arabic ص (ṣ), not ض (ḍ) or ظ (ẓ).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1671, root صر, صَرَّ (n24064)",
+          "note": "“صَرٌّ … The act of binding [a captive, &c.] … You say, صَرَّ … He tied up a purse, and money in a purse.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1672, صُرَّةٌ (n24070); اِصْطَرَّ",
+          "note": "صُرَّةٌ “A purse for money”; اصطرّ “said of a solid hoof, It was, or became, narrow, or contracted”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1673, مَصْرُورٌ (n24111)",
+          "note": "“Bound, as a captive … applied to a solid hoof, Contracted: or narrow.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-tserar-bind",
+      "lang": "arc",
+      "form": "צְרַר",
+      "translit": "ṣərar",
+      "gloss": "tie up, enclose (Jewish Aramaic)",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "note": "The Targums use it where the Hebrew binds up: Targ. Pro 30:4 (waters bound in a garment) and Targ. Ezk 5:3 (hairs bound in the skirts). Aramaic צ continues ṣ only (ṣ́ appears as ע or ק, ṯ̣ as ט).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. צְרַר",
+          "note": "“to tie up, enclose … Targ. Prov. XXX, 4. Targ. Ez. V, 3.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-darra-harm",
+      "lang": "ar",
+      "form": "ضَرَّ، ضُرٌّ",
+      "translit": "ḍarra, ḍurr",
+      "gloss": "harm, injure, hurt; harm, injury",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Lane's sources give ḍarrahu “he harmed, injured, hurt him; did to him an act that was evil”, the contrary of “benefited him”; ḍārra “harm in return”; ḍurr “harm, injury, hurt”. The hostile verb צָרַר and its participle צֹרֵר are the one who does harm. Arabic ض (ḍ) stands for the older ṣ́.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1775, root ضر, ضَرَّهُ (n25658)",
+          "note": "“He, or it, harmed, injured, hurt, marred, mischiefed, or damaged, him, or it; contr. of نَفَعَهُ.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1776, ضُرٌّ (n25665)",
+          "note": "“Harm, injury, hurt, mischief, or damage.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-darra-distress",
+      "lang": "ar",
+      "form": "ضَرَّآءُ، ضَرُورَةٌ",
+      "translit": "ḍarrāʾ, ḍarūrah",
+      "gloss": "hardship, distress, straitness of condition; necessity, need",
+      "relation": "possible",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Of the harm root (ṣ́): ḍarrāʾ “hardship, distress, or straitness of condition”, the contrary of sarrāʾ “prosperity”. It answers to צָרָה “distress” as well as ṣarra (ṣ) “contracted, narrow” does; scripture's pairing of צַר and צָרָה with רָחַב “room” favours ṣ, so this stays possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1777, ضَرَّآءُ (n25676)",
+          "note": "“A hurtful state or condition … or hardship, distress, or straitness of condition.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1777, ضَرُورَةٌ (n25673)",
+          "note": "“Necessity, necessitude, need, or want.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-darra-cowife",
+      "lang": "ar",
+      "form": "ضَرَّةٌ",
+      "translit": "ḍarrah",
+      "gloss": "a woman's fellow-wife, co-wife",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "“A woman's husband's wife; her fellow-wife”; ḍirr “taking a wife in addition to another”, and muḍirr “a man having two wives”. The same root as ḍarra “harm”, so the rival wife and the adversary belong together in Arabic as in Hebrew.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1776, ضَرَّةٌ (n25667)",
+          "note": "“A woman's husband's wife; her fellow-wife … pl. ضَرَائِرُ … Discordant things or affairs; likened to fellow-wives, who will not agree.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1776, ضِرٌّ (n25666); p. 1777, مُضِرٌّ (n25684)",
+          "note": "“The taking a wife in addition to another wife”; “A man having two wives.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-serretu-cowife",
+      "lang": "akk",
+      "form": "ṣerretu",
+      "translit": "ṣerretu",
+      "gloss": "secondary wife, concubine",
+      "relation": "cognate",
+      "note": "The woman taken beside the first wife, as צָרָה. Akkadian ṣ does not keep ṣ́ apart, so it shows no sound.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000127530, ṣerretu [concubine] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000127530.html"
+        }
+      ]
+    },
+    {
+      "id": "phn-srt-cowife",
+      "lang": "phn",
+      "form": "𐤑𐤓𐤕",
+      "translit": "ṣrt",
+      "gloss": "co-wife",
+      "relation": "cognate",
+      "note": "On a Phoenician memorial stele, partly restored: the stele “his co-wives” set up to Abdanat.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 421, ṢRT",
+          "note": "“[Heb. ṣārā] n.f. CO-WIFE. Magnanini, p. 21 no. 10 (Ph) … ‘that the six of his co-wives erected to him.’” Read from the PDF's text layer."
+        }
+      ]
+    },
+    {
+      "id": "uga-srt-enemy",
+      "lang": "uga",
+      "form": "𐎕𐎗𐎚",
+      "translit": "ṣrt",
+      "gloss": "enmity; enemy, adversaries",
+      "relation": "cognate",
+      "note": "In the Baal cycle Kothar says to Baal: “now your enemy (ibk), Baal, now your enemy you shall smite, now you shall destroy your adversaries (ṣrtk)” (KTU 1.2 IV 8–9): ṣrt beside ib “enemy”, as צַר beside אֹיֵב. Ugaritic ṣ does not keep ṣ́ apart, so it shows no sound.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 199, §93 Glossary, ṣrt (KTU 1.2:IV:9 = 88.51)",
+          "note": "“(‘enmity’ >) ‘enemy’ (cf. H. ṣar, Aram. ʿar, Arab. ḍarr …)”. OCR read; page from the running head."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§88.51, text 1.2:IV:8–9",
+          "note": "“ht ibk b‘lm ht ibk tmḫṣ ht tṣmt ṣrtk.” OCR read."
+        }
+      ]
+    },
+    {
+      "id": "ar-zurar-flint",
+      "lang": "ar",
+      "form": "ظُرَرٌ، ظِرٌّ، ظَرَّ",
+      "translit": "ẓurar, ẓirr, ẓarra",
+      "gloss": "sharp-edged hard stone, flint; a stone; cut (with such a stone)",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṯ̣"
+      },
+      "note": "ẓurar is “a sharp-edged hard stone; a stone having an edge like that of the knife”, broken and used to slaughter a camel; ẓarra “he cut [or split off] a fragment of hard stone, with a sharp edge, to be used as a knife”; miẓarrah “a stone with which one strikes fire … with which one cuts”. Zipporah's צֹר (Exo 4:25) and the flint knives of Jos 5:2 are the same use. Arabic ظ (ẓ) stands for the older ṯ̣.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1909, root ظر, ظُرَرٌ (n27517)",
+          "note": "“A sharp-edged hard stone: a stone having an edge like that of the knife … which a man breaks and with which he slaughters a camel … or a stone, in a general sense.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1909, ظَرَّ (n27514); مِظَرَّةٌ (n27525)",
+          "note": "“He cut [or split off] a مِظَرَّة [i. e. a fragment of hard stone, with a sharp edge, to be used as a knife]”; “A stone with which one strikes fire … with which one cuts.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-surru-flint",
+      "lang": "akk",
+      "form": "ṣurru",
+      "translit": "ṣurru",
+      "gloss": "flint, obsidian; (ṣurtu) flint blade",
+      "relation": "cognate",
+      "note": "Akkadian ṣ does not keep ṯ̣ apart, so it shows no sound.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000033560, ṣurru [obsidian] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000033560.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000149290, ṣurtu [flint (blade)] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-adversary",
+      "statement": "The צַר or צֹרֵר in scripture is whoever sets himself against another and presses on him: the nations that invade Israel’s land (Num 10:9), Haman “the adversary of the Jews” (Est 3:10; 7:6), the people of the land who opposed the rebuilding of the temple (Ezr 4:1, 4–5), Israel’s own leaders whom Yahweh calls “my adversaries” (Isa 1:23–24), and a rival brother tribe (Isa 11:13). Yahweh himself becomes one to his people when they rebel, “his right hand set like an adversary” (Lam 2:4; Isa 63:10), and promises to be “an adversary to your adversaries” when they obey (Exo 23:22). When the chief priests and scribes were indignant at the children’s praise in the temple, Jesus answered with Psa 8:3, whose praise is founded “because of your adversaries, to still the enemy” (Mat 21:15–16). From the verses: the adversary is not a name for one being but a role, filled by men who oppose God’s people or his purpose, and at times by God himself; the remedy is not a contest with an unseen power but turning to Yahweh, who delivers from the hand of the adversary (Psa 107:2).",
+      "evidence": [
+        {
+          "ref": "Num.10.9"
+        },
+        {
+          "ref": "Est.3.10"
+        },
+        {
+          "ref": "Est.7.6"
+        },
+        {
+          "ref": "Ezr.4.1"
+        },
+        {
+          "ref": "Ezr.4.4",
+          "to": "Ezr.4.5"
+        },
+        {
+          "ref": "Isa.1.23",
+          "to": "Isa.1.24"
+        },
+        {
+          "ref": "Isa.11.13"
+        },
+        {
+          "ref": "Lam.2.4"
+        },
+        {
+          "ref": "Isa.63.10"
+        },
+        {
+          "ref": "Exo.23.22"
+        },
+        {
+          "ref": "Mat.21.15",
+          "to": "Mat.21.16"
+        },
+        {
+          "ref": "Psa.8.3"
+        },
+        {
+          "ref": "Psa.107.2"
+        }
+      ]
+    },
+    {
+      "topic": "calling-from-the-strait",
+      "statement": "The law gave Israel a way to answer “the adversary who presses you”: “you shall sound an alarm with the trumpets, and you shall be remembered before Yahweh your God, and you shall be saved from your enemies” (Num 10:9), and the same trumpets were blown over the offerings at the feasts “for a remembrance before your God” (Num 10:10), as the first day of the seventh month is “a remembrance of blowing” (Lev 23:24). The rest of scripture keeps the pattern: “out of the strait I called on Yah; Yah answered me in a broad place” (Psa 118:5); “in the strait you made room for me” (Psa 4:2); Jonah from the belly of the grave (Jon 2:3); the four companies of Psa 107, each crying “in their strait” and each brought out (Psa 107:6, 13, 19, 28); and Moses foretells that “in your strait … in the latter days” Israel would return to Yahweh (Deu 4:30; Hos 5:15). Even Manasseh, “when he was in straits”, humbled himself and was heard (2Ch 33:12–13). Paul and Barnabas taught that “through many tribulations we must enter the kingdom of God” (Act 14:22), and Paul could say “pressed on every side, yet not hemmed in” (2Co 4:8). From the verses: distress is the narrow place in which God’s people are meant to call on him, and his answer is room.",
+      "evidence": [
+        {
+          "ref": "Num.10.9",
+          "to": "Num.10.10"
+        },
+        {
+          "ref": "Lev.23.24"
+        },
+        {
+          "ref": "Psa.118.5"
+        },
+        {
+          "ref": "Psa.4.2"
+        },
+        {
+          "ref": "Jon.2.3"
+        },
+        {
+          "ref": "Psa.107.6"
+        },
+        {
+          "ref": "Psa.107.13"
+        },
+        {
+          "ref": "Psa.107.19"
+        },
+        {
+          "ref": "Psa.107.28"
+        },
+        {
+          "ref": "Deu.4.30"
+        },
+        {
+          "ref": "Hos.5.15"
+        },
+        {
+          "ref": "2Ch.33.12",
+          "to": "2Ch.33.13"
+        },
+        {
+          "ref": "Act.14.22"
+        },
+        {
+          "ref": "2Co.4.8"
+        }
+      ]
+    },
+    {
+      "topic": "time-of-distress",
+      "statement": "Daniel is told of “a time of distress such as never was since there was a nation until that time”, in which his people would be delivered, “everyone found written in the book”, and after which “many of those who sleep in the dust of the earth shall awake” (Dan 12:1–2). Jesus took its words for the distress that would follow “the abomination of desolation standing in the holy place”, when those in Judea must flee: “then shall be great tribulation, such as has not been from the beginning of the world until now” (Mat 24:15–21; Mrk 13:19), and he said “this generation shall not pass until all these things happen” (Mat 24:34). Luke gives the same as “Jerusalem surrounded by armies … great distress on the land and wrath on this people … and Jerusalem shall be trodden down by the nations” (Luk 21:20–24). From the verses: the time of distress Jesus foretold from Daniel came on Judea and Jerusalem in the generation that heard him, when the Romans destroyed the city in AD 70; Daniel’s own words go on to the resurrection, so the pattern of distress followed by deliverance of those written in the book reaches forward to Christ’s return.",
+      "evidence": [
+        {
+          "ref": "Dan.12.1",
+          "to": "Dan.12.2"
+        },
+        {
+          "ref": "Mat.24.15",
+          "to": "Mat.24.21"
+        },
+        {
+          "ref": "Mrk.13.19"
+        },
+        {
+          "ref": "Mat.24.34"
+        },
+        {
+          "ref": "Luk.21.20",
+          "to": "Luk.21.24"
+        }
+      ]
+    },
+    {
+      "topic": "bundle-of-the-living",
+      "statement": "Abigail tells David, while Saul hunts him, “though a man has risen to pursue you and to seek your soul, the soul of my lord shall be bound in the bundle of the living (צְרוֹר הַחַיִּים) with Yahweh your God, and the souls of your enemies he shall sling out, as from the hollow of a sling” (1Sa 25:29). The figure is of the verb צָרַר: a man ties up in a bag what he means to keep (Gen 42:35; Pro 7:20), and slings away what he throws off. Ten days later Yahweh struck Nabal and he died (1Sa 25:38), and David lived to reign. From the verses: to be “bound in the bundle of the living” is to have one’s life kept safe by Yahweh among the living, against those who seek it; it is not a store of souls apart from the body.",
+      "evidence": [
+        {
+          "ref": "1Sa.25.29"
+        },
+        {
+          "ref": "Gen.42.35"
+        },
+        {
+          "ref": "Pro.7.20"
+        },
+        {
+          "ref": "1Sa.25.38"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10:9 (הַצַּר הַצֹּרֵר אֶתְכֶם). The database keys the root צרר (lexicon_entry), but the morphology analyses most finite and participle forms of both verbs as root צור (e.g. Num 10:9 הַצֹּרֵר, the Psalms' צֹרְרַי, Lev 18:18 לִצְרֹר) and the צָרָה tokens as root בצר; the word sheet joins by BDB key, so the entry keeps צרר. BDB keys are counted by spelling, not by word: r.dz.ab, r.dz.ac, r.ea.ab and r.eb.ab each count the same ~119 tokens of צַר/צָר (all three senses plus flint at Isa 5:28); r.dz.ad and r.ea.ac the same 74 of צָרָה (distress and rival); r.dz.aa, r.dz.ae, r.ea.aa and r.ea.ad the same verb forms, including tokens of צוּר “besiege” (Deu 20:12; 2Ki 6:24 etc.), יצר (Gen 6:5; Exo 32:4) and Tyre (צוֹר, Ezk 27:3); r.eb.ac's 31 are mostly Tyre (צֹר), with Exo 4:25 and Ezk 3:9 the only flint; r.dz.af and r.eb.ad share the ten צְרוֹר. Use counts in lexicon-support are therefore high and do not separate the words. Each verse was read and assigned by context. Not entered: the zero-token cross-references m.de.af, r.dr.al, r.ds.af, r.dv.ac (צֹרִי “Tyrian”, under Tyre) and r.ds.ae; the hollow forms of צוּר “bind, besiege” (Deu 14:25; 2Ki 5:23; Ezk 5:3 “bind up”), filed under r.bk.aa, which share the bind sense but are another key; Jos 5:2–3 צֻרִים (r.bn.ab, צוּר “rock”), cited only. Names left for names/ (not written in this task): צְרוֹר Zeror (1Sa 9:1, a person) and צֶרֶת Zereth (1Ch 4:7, a person); the places צֶרֶת הַשַּׁחַר, צָרְתָן and צְרֵרָה cannot be name entries. Sounds: ṣ (Arabic ṣarra; Aramaic צְרַר) behind bind/narrow; ṣ́ (Arabic ḍarra, ḍarrah) behind hostile/adversary/rival wife; ṯ̣ (Arabic ẓurar) behind flint and pebble. Distress (צַר, צָרָה) is placed with ṣ by scripture's own pairing with רָחַב and by the impersonal צַר לוֹ “it is narrow for him”; Arabic ḍarrāʾ (ṣ́) “distress” is entered as possible. Wiktionary gives Aramaic/Syriac ʿarrətā “co-wife” (ṣ́ > ʿ), which would confirm the sound; not cited, since no Aramaic or Syriac dictionary in sources.json was found to have it (Payne Smith and CAL not consulted). Segert read from OCR only (page 199 from the running head; ṣrt printed as “st”); Krahmalkov from the PDF text layer; page images unverified. No Peshitta root (the Peshitta renders θλῖψις by ܐܘܠܨܢܐ, another root). Open questions: (1) 1Sa 2:32 צַר מָעוֹן, “distress” or “a rival” in the dwelling; (2) Isa 59:19 “narrow river” or “adversary”; Jer 48:5 and Ezk 30:16 צָרֵי, “adversaries” or “distresses”; (3) Deu 28:52, 1Ki 8:37 and 2Ch 6:28 kept under the hiphil “press” though they may be צוּר “besiege”; (4) the time-of-distress doctrine applies Dan 12:1 through Mat 24 to AD 70, with the resurrection of Dan 12:2 carrying it forward to the return: a judgment call to review."
+}
