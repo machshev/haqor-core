@@ -1,0 +1,1415 @@
+{
+  "id": "chamesh",
+  "root": "חמש",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "number",
+    "time",
+    "feasts",
+    "law",
+    "war",
+    "body"
+  ],
+  "gloss": "five; fifty; fifth, a fifth part; (in array) armed; belly",
+  "summary": "חמש is the number five: חָמֵשׁ “five”, its plural חֲמִשִּׁים “fifty”, the ordinal חֲמִישִׁי “fifth”, whose feminine is also “a fifth part”, and the piel “take a fifth” (Gen 41:34). Scripture uses five as a count, as a small number against a great one (Lev 26:8; Isa 30:17), in dates (the fifteenth of the month for חַג הַמַּצּוֹת and חַג הַסֻּכּוֹת, Lev 23:6, 34), and the fifth part as the addition to a restitution (Lev 5:16; Num 5:7); fifty days counted from the waved sheaf bring the new grain offering (Lev 23:16), the day the New Testament calls Pentecost. Two rarer words share the spelling: חֲמֻשִׁים “arrayed for war” (Jos 1:14, where Moses had said חֲלוּצִים), tied to the number only by Arabic and Sabaic words for “army” from the same root, and חֹמֶשׁ “belly” (2Sa 20:10), whose cognates show another older root (ḥmṯ) behind the same letters. Arabic ḵams, Ugaritic ḫmš, Akkadian ḫamiš, Sabaic ḫms, Phoenician ḥmš and Aramaic חֲמֵשׁ all mean “five”.",
+  "words": [
+    {
+      "lemma": "חָמֵשׁ",
+      "pos": "numeral",
+      "gender": "mf",
+      "gloss": "five; (with עָשָׂר) fifteen; (with מֵאוֹת, אֲלָפִים) five hundred, five thousand",
+      "bdb": [
+        "h.dr.ab"
+      ],
+      "cognate_ids": [
+        "ar-khams",
+        "uga-hms",
+        "akk-hamis",
+        "sab-hms",
+        "phn-hms",
+        "arc-chamesh",
+        "gez-hams"
+      ],
+      "summary": "Feminine חָמֵשׁ (construct חֲמֵשׁ), masculine חֲמִשָּׁה (construct חֲמֵשֶׁת): as with the other numbers from three to ten, the form with ־ָה goes with masculine nouns (חֲמִשָּׁה בָקָר, Exo 21:37) and the shorter with feminine (חָמֵשׁ שָׁנִים, Gen 45:6). 343 uses, many in the counts and measures of Genesis, Exodus, Numbers, Ezekiel, Ezra and Chronicles.",
+      "senses": [
+        {
+          "id": "five",
+          "gloss": "five",
+          "definition": "The number five, counted beside the numbers around it: one more than four, five short of ten, the fifth part of fifty.",
+          "evidence": [
+            {
+              "ref": "Gen.18.28",
+              "role": "defining",
+              "note": "“Suppose the fifty righteous lack five (חֲמִשָּׁה)? … I will not destroy it if I find there forty-five (אַרְבָּעִים וַחֲמִשָּׁה).” Five is fifty less forty-five."
+            },
+            {
+              "ref": "Exo.21.37",
+              "role": "defining",
+              "note": "A stolen ox slaughtered or sold is repaid with five (חֲמִשָּׁה) oxen, a sheep with four: five set beside four."
+            },
+            {
+              "ref": "Gen.45.6",
+              "role": "defining",
+              "note": "“Two years the famine has been in the land, and five (חָמֵשׁ) years more”: the seven years of Gen 41:30 counted as two and five."
+            },
+            {
+              "ref": "Gen.43.34",
+              "note": "Benjamin’s portion was five times (חָמֵשׁ יָדוֹת) as much as any of theirs."
+            },
+            {
+              "ref": "Gen.45.22",
+              "note": "To Benjamin, three hundred pieces of silver and five changes of clothes."
+            },
+            {
+              "ref": "Exo.26.3",
+              "note": "Five curtains coupled one to another, and five more."
+            },
+            {
+              "ref": "Num.3.47",
+              "note": "Five shekels apiece (חֲמֵשֶׁת חֲמֵשֶׁת), the redemption of each firstborn beyond the Levites."
+            },
+            {
+              "ref": "1Sa.17.40",
+              "note": "David chose five smooth stones from the brook."
+            },
+            {
+              "ref": "Isa.19.18",
+              "note": "“In that day there shall be five cities in the land of Egypt that speak the language of Canaan and swear to Yahweh of hosts.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "five-few",
+              "gloss": "five: a few, a handful",
+              "definition": "Five as a small number, set against a hundred or a thousand: a handful.",
+              "evidence": [
+                {
+                  "ref": "Lev.26.8",
+                  "role": "defining",
+                  "note": "“Five (חֲמִשָּׁה) of you shall chase a hundred, and a hundred of you shall chase ten thousand.”"
+                },
+                {
+                  "ref": "Isa.30.17",
+                  "role": "defining",
+                  "note": "The curse turned round: “A thousand at the rebuke of one, at the rebuke of five (חֲמִשָּׁה) you shall flee.”"
+                }
+              ]
+            },
+            {
+              "id": "fifteen",
+              "gloss": "fifteen (חֲמִשָּׁה עָשָׂר, חֲמֵשׁ עֶשְׂרֵה)",
+              "definition": "Joined to ten, fifteen; above all the fifteenth day of the month, the first day of חַג הַמַּצּוֹת in the first month and of חַג הַסֻּכּוֹת in the seventh.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.6",
+                  "role": "defining",
+                  "note": "“On the fifteenth (בַּחֲמִשָּׁה עָשָׂר) day of this month is חַג הַמַּצּוֹת to Yahweh”, the day after the Passover of the fourteenth (23:5)."
+                },
+                {
+                  "ref": "Lev.23.34",
+                  "role": "defining",
+                  "note": "“On the fifteenth day of this seventh month is חַג הַסֻּכּוֹת, seven days to Yahweh.”"
+                },
+                {
+                  "ref": "Lev.23.39",
+                  "note": "On the fifteenth day of the seventh month, when the produce of the land is gathered in, keep the feast of Yahweh seven days."
+                },
+                {
+                  "ref": "Num.28.17",
+                  "note": "“On the fifteenth day of this month is a feast.”"
+                },
+                {
+                  "ref": "Num.29.12",
+                  "note": "The fifteenth day of the seventh month, a holy convocation."
+                },
+                {
+                  "ref": "2Ki.20.6",
+                  "role": "defining",
+                  "note": "“I will add to your days fifteen (חֲמֵשׁ עֶשְׂרֵה) years”, to Hezekiah."
+                }
+              ]
+            },
+            {
+              "id": "five-hundreds",
+              "gloss": "five hundred, five thousand, and in larger numbers",
+              "definition": "With hundreds and thousands, and as a part of the large numbers of the censuses and lifespans.",
+              "evidence": [
+                {
+                  "ref": "Num.31.28",
+                  "role": "defining",
+                  "note": "Yahweh’s tribute from the spoil: “one soul of five hundred (מֵחֲמֵשׁ הַמֵּאוֹת)”."
+                },
+                {
+                  "ref": "Gen.5.32",
+                  "note": "Noah was five hundred years old when he fathered Shem, Ham and Japheth."
+                },
+                {
+                  "ref": "Exo.30.23",
+                  "note": "Of pure myrrh five hundred shekels, for the holy anointing oil."
+                },
+                {
+                  "ref": "Ezk.45.2",
+                  "note": "The holy place, five hundred by five hundred."
+                }
+              ]
+            },
+            {
+              "id": "fifth-of-month",
+              "gloss": "the fifth (day of a month, year)",
+              "definition": "In a date, “on five” of the month is the fifth day.",
+              "evidence": [
+                {
+                  "ref": "Ezk.1.2",
+                  "role": "defining",
+                  "note": "“On the fifth (בַּחֲמִשָּׁה) of the month, that was the fifth (הַחֲמִישִׁית) year of king Jehoiachin’s exile”: the cardinal for the day, beside the ordinal for the year."
+                },
+                {
+                  "ref": "Ezk.1.1",
+                  "note": "In the fourth month, on the fifth of the month."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πέντε",
+          "gloss": "five",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "πέντε renders חָמֵשׁ ×198 (Gen.18.28, Lev.26.8 and the rest)"
+            },
+            {
+              "ref": "Mat.14.17",
+              "note": "“We have here only five loaves and two fish.”"
+            },
+            {
+              "ref": "Mat.25.2",
+              "note": "Five of the virgins were wise and five foolish."
+            },
+            {
+              "ref": "Jhn.4.18",
+              "note": "“You have had five husbands.”"
+            },
+            {
+              "ref": "1Co.14.19",
+              "note": "Five words with understanding rather than ten thousand in a tongue: five as a few, as in Lev 26:8."
+            },
+            {
+              "ref": "2Co.11.24",
+              "note": "Five times Paul received forty stripes less one, the limit of Deu 25:3."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מֵאָה",
+            "note": "A hundred: the few set against the many, in blessing and in curse.",
+            "evidence": [
+              {
+                "ref": "Lev.26.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.30.17",
+                "note": "Here against אֶלֶף, a thousand."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בַּחֲמִשָּׁה עָשָׂר יוֹם לַחֹדֶשׁ",
+            "gloss": "on the fifteenth day of the month",
+            "evidence": [
+              {
+                "ref": "Lev.23.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.34"
+              },
+              {
+                "ref": "Lev.23.39"
+              },
+              {
+                "ref": "Num.28.17"
+              },
+              {
+                "ref": "Num.29.12"
+              }
+            ]
+          },
+          {
+            "phrase": "חָמֵשׁ יָדוֹת",
+            "gloss": "five hands: five times as much",
+            "evidence": [
+              {
+                "ref": "Gen.43.34",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֲמִשִּׁים",
+      "pos": "numeral",
+      "gloss": "fifty; fiftieth; a company of fifty",
+      "bdb": [
+        "h.dr.ae"
+      ],
+      "cognate_ids": [
+        "ar-khamsun",
+        "uga-hmsm",
+        "akk-hamsa",
+        "sab-hms",
+        "phn-hmsm",
+        "arc-chamesh"
+      ],
+      "summary": "The plural of five, as the tens are formed (עֶשְׂרִים, שְׁלֹשִׁים, אַרְבָּעִים): fifty. It also counts the fiftieth year (Lev 25:10), and with suffix (חֲמִשָּׁיו, 2Ki 1:9) a captain’s company of fifty men.",
+      "senses": [
+        {
+          "id": "fifty",
+          "gloss": "fifty",
+          "definition": "The number fifty, five tens.",
+          "evidence": [
+            {
+              "ref": "Lev.23.16",
+              "role": "defining",
+              "note": "“Until the day after the seventh sabbath you shall count fifty (חֲמִשִּׁים) days”: seven sabbaths (49 days, 23:15) and the day after them."
+            },
+            {
+              "ref": "Gen.18.24",
+              "role": "defining",
+              "note": "“Suppose there are fifty righteous within the city”, counted down by fives and tens to ten (18:32)."
+            },
+            {
+              "ref": "Gen.6.15",
+              "note": "The ark: three hundred cubits long, fifty wide, thirty high."
+            },
+            {
+              "ref": "Lev.27.3",
+              "note": "The valuation of a male from twenty to sixty years, fifty shekels of silver."
+            },
+            {
+              "ref": "Num.8.25",
+              "role": "defining",
+              "note": "“From the age of fifty years they shall return from the service and serve no more”: the Levites serve from twenty-five (8:24), or thirty (4:3), to fifty."
+            },
+            {
+              "ref": "Num.4.3",
+              "note": "From thirty years old up to fifty years old, all who enter the service."
+            }
+          ]
+        },
+        {
+          "id": "fiftieth",
+          "gloss": "fiftieth (year)",
+          "definition": "In שְׁנַת הַחֲמִשִּׁים שָׁנָה “the year of the fifty years”, the fiftieth year, the יוֹבֵל, counted after seven sabbaths of years as the fiftieth day is counted after seven sabbaths of days; and in the kings’ regnal years.",
+          "evidence": [
+            {
+              "ref": "Lev.25.10",
+              "role": "defining",
+              "note": "“You shall make holy the fiftieth year (שְׁנַת הַחֲמִשִּׁים שָׁנָה) and proclaim liberty in the land”, after seven sabbaths of years, forty-nine years (25:8)."
+            },
+            {
+              "ref": "Lev.25.11",
+              "note": "“A יוֹבֵל shall that fiftieth year be to you.”"
+            },
+            {
+              "ref": "2Ki.15.23",
+              "note": "“In the fiftieth year of Azariah king of Judah.”"
+            }
+          ]
+        },
+        {
+          "id": "company-of-fifty",
+          "gloss": "a company of fifty; (שַׂר חֲמִשִּׁים) captain of fifty",
+          "definition": "A unit of fifty men under a captain, in Israel’s ordering of the people and of its armies.",
+          "evidence": [
+            {
+              "ref": "Exo.18.21",
+              "role": "defining",
+              "note": "Men of ability who fear God, set as rulers of thousands, of hundreds, of fifties (שָׂרֵי חֲמִשִּׁים) and of tens."
+            },
+            {
+              "ref": "2Ki.1.9",
+              "role": "defining",
+              "note": "The king sent to Elijah “a captain of fifty and his fifty (וַחֲמִשָּׁיו)”: the plural with a suffix is his company."
+            },
+            {
+              "ref": "Deu.1.15",
+              "note": "Moses’ account of the same ordering."
+            },
+            {
+              "ref": "1Sa.8.12",
+              "note": "The king will appoint captains of thousands and captains of fifties."
+            },
+            {
+              "ref": "Isa.3.3",
+              "note": "Among the props Yahweh takes from Jerusalem: “the captain of fifty and the man of rank”."
+            },
+            {
+              "ref": "1Ki.18.4",
+              "note": "Obadiah hid a hundred prophets, fifty to a cave."
+            },
+            {
+              "ref": "2Ki.2.7",
+              "note": "Fifty men of the sons of the prophets."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πεντήκοντα",
+          "gloss": "fifty",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.16, חֲמִשִּׁים יוֹם → πεντήκοντα ἡμέρας; πεντήκοντα renders the plural ×110"
+            },
+            {
+              "ref": "Mrk.6.40",
+              "note": "They sat down in ranks, by hundreds and by fifties: the companies of Exo 18:21."
+            },
+            {
+              "ref": "Luk.9.14",
+              "note": "“Make them sit down in companies, about fifty each.”"
+            },
+            {
+              "ref": "Jhn.8.57",
+              "note": "“You are not yet fifty years old”: the age at which a Levite left the service (Num 8:25)."
+            },
+            {
+              "ref": "Jhn.21.11",
+              "note": "A hundred and fifty-three great fish."
+            },
+            {
+              "ref": "Act.13.20"
+            }
+          ]
+        },
+        {
+          "lemma": "πεντηκοστή",
+          "gloss": "fiftieth (day): Pentecost",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.25.10 and Lev.25.11, שְׁנַת הַחֲמִשִּׁים → τὸ ἔτος τὸ πεντηκοστόν; 2Ki.15.23 and 15.27 → πεντηκοστῷ"
+            },
+            {
+              "ref": "Act.2.1",
+              "note": "“When the day of Pentecost (τῆς πεντηκοστῆς) had fully come”: the fiftieth day of Lev 23:16."
+            },
+            {
+              "ref": "Act.20.16",
+              "note": "Paul hastened to be in Jerusalem on the day of Pentecost."
+            },
+            {
+              "ref": "1Co.16.8",
+              "note": "“I will stay at Ephesus until Pentecost.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "שַׂר חֲמִשִּׁים",
+            "gloss": "captain of fifty",
+            "evidence": [
+              {
+                "ref": "2Ki.1.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.18.21"
+              },
+              {
+                "ref": "Exo.18.25"
+              },
+              {
+                "ref": "Isa.3.3"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁנַת הַחֲמִשִּׁים שָׁנָה",
+            "gloss": "the fiftieth year, the יוֹבֵל",
+            "evidence": [
+              {
+                "ref": "Lev.25.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֲמִישִׁי",
+      "pos": "adjective",
+      "gloss": "fifth; (fem. חֲמִישִׁית) a fifth part",
+      "bdb": [
+        "h.dr.af"
+      ],
+      "cognate_ids": [
+        "uga-hms",
+        "akk-hamsu",
+        "sab-hms",
+        "phn-hmsy"
+      ],
+      "summary": "The ordinal of five, masculine חֲמִישִׁי, feminine חֲמִישִׁית: the fifth day, month, year, son or time. The feminine stands alone for “a fifth part”, the fifth of the harvest Joseph laid on Egypt and the fifth added to a restitution or a redemption.",
+      "senses": [
+        {
+          "id": "fifth",
+          "gloss": "fifth (in order)",
+          "definition": "The fifth in a sequence: the fifth of the days, months, years or sons.",
+          "cognate_ids": [
+            "ar-khamis"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.1.23",
+              "role": "defining",
+              "note": "“And there was evening and there was morning, a fifth day (יוֹם חֲמִישִׁי)”: the day after the fourth (1:19) and before the sixth (1:31), of the six days of creation."
+            },
+            {
+              "ref": "2Sa.3.4",
+              "role": "defining",
+              "note": "David’s sons in Hebron: “the fourth Adonijah … and the fifth (וְהַחֲמִישִׁי) Shephatiah”."
+            },
+            {
+              "ref": "Num.7.36",
+              "note": "On the fifth day the leader of Simeon brought his offering."
+            },
+            {
+              "ref": "Num.33.38",
+              "note": "Aaron died on mount Hor in the fortieth year, in the fifth month, on the first of the month."
+            },
+            {
+              "ref": "2Ki.25.8",
+              "note": "In the fifth month Nebuzaradan came to Jerusalem and burnt the house of Yahweh."
+            },
+            {
+              "ref": "Jer.52.12"
+            },
+            {
+              "ref": "Zec.7.5",
+              "note": "“When you fasted and mourned in the fifth and in the seventh month these seventy years, did you fast at all to me?”"
+            },
+            {
+              "ref": "Zec.8.19",
+              "note": "The fast of the fifth month shall become joy and gladness and cheerful feasts to the house of Judah."
+            },
+            {
+              "ref": "Neh.6.5",
+              "note": "Sanballat sent his servant to Nehemiah a fifth time."
+            }
+          ]
+        },
+        {
+          "id": "fifth-part",
+          "gloss": "a fifth part (fem. חֲמִישִׁית)",
+          "definition": "The feminine as a noun: one part of five. Joseph’s fifth of Egypt’s harvest, and in the Law the fifth added to what is restored for a trespass or paid to redeem what was set apart.",
+          "cognate_ids": [
+            "ar-khums",
+            "akk-hamsu",
+            "arc-chumsha"
+          ],
+          "kin": [
+            "chomesh-fifth",
+            "take-a-fifth"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.47.24",
+              "role": "defining",
+              "note": "“You shall give a fifth (חֲמִישִׁית) to Pharaoh, and four parts (אַרְבַּע הַיָּדֹת) shall be your own”: one part against four."
+            },
+            {
+              "ref": "Lev.5.16",
+              "role": "defining",
+              "note": "He who sinned in a holy thing shall make it good and add its fifth (חֲמִישִׁתוֹ) to it, and the priest shall make covering for him with the ram of the guilt offering."
+            },
+            {
+              "ref": "Lev.5.24",
+              "note": "What was got by a false oath is restored in full, “and he shall add its fifths (וַחֲמִשִׁתָיו) to it”."
+            },
+            {
+              "ref": "Num.5.7",
+              "role": "defining",
+              "note": "“They shall confess their sin … and restore the wrong in full, and add its fifth to it.”"
+            },
+            {
+              "ref": "Lev.22.14",
+              "note": "One who eats a holy thing unwittingly adds its fifth."
+            },
+            {
+              "ref": "Lev.27.13",
+              "note": "To redeem a vowed beast, add a fifth to the valuation."
+            },
+            {
+              "ref": "Lev.27.31",
+              "note": "To redeem any of his tithe, a man adds its fifth."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πέμπτος",
+          "gloss": "fifth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.23, יוֹם חֲמִישִׁי → ἡμέρα πέμπτη; πέμπτος renders חֲמִישִׁי about 29 times"
+            },
+            {
+              "ref": "Rev.6.9",
+              "note": "When he opened the fifth seal."
+            },
+            {
+              "ref": "Rev.9.1",
+              "note": "The fifth angel sounded."
+            },
+            {
+              "ref": "Rev.16.10",
+              "note": "The fifth poured out his bowl on the throne of the beast."
+            },
+            {
+              "ref": "Rev.21.20",
+              "note": "The fifth foundation, sardonyx."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "וַחֲמִשִׁתוֹ יֹסֵף עָלָיו",
+            "gloss": "and he shall add its fifth to it",
+            "evidence": [
+              {
+                "ref": "Num.5.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.5.16"
+              },
+              {
+                "ref": "Lev.5.24"
+              },
+              {
+                "ref": "Lev.27.31"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֲמֻשִׁים",
+      "pos": "adjective",
+      "gloss": "arrayed for war, in battle order",
+      "bdb": [
+        "h.dt.ab"
+      ],
+      "cognate_ids": [
+        "ar-khamis-army",
+        "sab-hms-army"
+      ],
+      "summary": "A passive form found only in the masculine plural, four times, of Israel or its tribes going out ready for war. Its tie to the number rests on Arabic خَمِيس and Sabaic ḫms, both “army” and both of the root of “five”: Arab lexicographers explain the army as one of five parts, which scripture does not show, and the old reading “by fives” at Exo 13:18 has no support in the text. With only four uses, the sense rests on Jos 1:14’s repeating Moses’ חֲלוּצִים.",
+      "senses": [
+        {
+          "gloss": "arrayed, equipped for war",
+          "definition": "Going out as an ordered fighting force, in arms and in ranks: the word Joshua uses where Moses had said חֲלוּצִים “equipped”.",
+          "evidence": [
+            {
+              "ref": "Jos.1.14",
+              "role": "defining",
+              "note": "“You shall pass over arrayed (חֲמֻשִׁים) before your brothers, all the mighty men of valour (גִּבּוֹרֵי הַחַיִל)”: Joshua repeating Moses’ “you shall pass over equipped (חֲלוּצִים) before your brothers” (Deu 3:18)."
+            },
+            {
+              "ref": "Jos.4.12",
+              "role": "defining",
+              "note": "Reuben, Gad and half Manasseh “passed over arrayed (חֲמֻשִׁים) before the sons of Israel, as Moses had spoken to them”; the next verse counts them as about forty thousand “equipped for war (חֲלוּצֵי הַצָּבָא)” (4:13)."
+            },
+            {
+              "ref": "Exo.13.18",
+              "note": "“The sons of Israel went up arrayed (וַחֲמֻשִׁים) from the land of Egypt”: they went out “by their hosts” (צִבְאוֹתָם, Exo 12:51), though God led them away from the way of war (13:17)."
+            },
+            {
+              "ref": "Jdg.7.11",
+              "note": "Gideon went down “to the edge of the armed men (הַחֲמֻשִׁים) who were in the camp” of Midian: the troops, perhaps the outposts."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָלוּץ",
+            "note": "“Equipped, girded for war”: Moses’ word in Deu 3:18 and Num 32, which Jos 1:14 and 4:12 repeat as חֲמֻשִׁים.",
+            "evidence": [
+              {
+                "ref": "Deu.3.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.4.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.32.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֹמֶשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a fifth part",
+      "bdb": [
+        "h.dr.ac"
+      ],
+      "cognate_ids": [
+        "ar-khums",
+        "akk-hamsu",
+        "sab-hms",
+        "arc-chumsha"
+      ],
+      "summary": "Once, in the law Joseph made for Egypt’s land; the same thing is called חֲמִישִׁית two verses before (Gen 47:24).",
+      "senses": [
+        {
+          "id": "chomesh-fifth",
+          "gloss": "a fifth part",
+          "definition": "One part of five, Pharaoh’s share of the produce of Egypt’s land.",
+          "kin": [
+            "fifth-part",
+            "take-a-fifth"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.47.26",
+              "role": "defining",
+              "note": "Joseph made it a statute over the land of Egypt to this day, “to Pharaoh the fifth (לַחֹמֶשׁ)”: the חֲמִישִׁית of 47:24."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חִמֵּשׁ",
+      "pos": "verb",
+      "gloss": "take a fifth",
+      "bdb": [
+        "h.dr.ad"
+      ],
+      "summary": "A verb made from the number, once.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "take a fifth (of)",
+          "cognate_ids": [
+            "ar-khums"
+          ],
+          "senses": [
+            {
+              "id": "take-a-fifth",
+              "gloss": "take the fifth part",
+              "definition": "To take a fifth of the produce, laid up against famine.",
+              "kin": [
+                "fifth-part",
+                "chomesh-fifth"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.41.34",
+                  "role": "defining",
+                  "note": "“Let him appoint overseers over the land, and take a fifth of (וְחִמֵּשׁ) the land of Egypt in the seven years of plenty”; carried out as the fifth of 47:24, 26."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹמֶשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "belly, abdomen",
+      "bdb": [
+        "h.ds.ab"
+      ],
+      "cognate_ids": [
+        "akk-emsu",
+        "gez-hems"
+      ],
+      "summary": "Spelled as “a fifth part” but a different word: its cognates point to an older ḥmṯ, “belly”, where five is ḫmš, so two older roots stand behind one Hebrew spelling. All four uses are of a man struck a death blow אֶל־הַחֹמֶשׁ in the wars of David’s reign.",
+      "senses": [
+        {
+          "gloss": "belly, abdomen",
+          "definition": "The soft front of the body below the ribs, where a thrust is fatal and the bowels spill.",
+          "evidence": [
+            {
+              "ref": "2Sa.20.10",
+              "role": "defining",
+              "note": "Joab struck Amasa with the sword “in the belly (אֶל־הַחֹמֶשׁ) and shed out his bowels (מֵעָיו) to the ground”."
+            },
+            {
+              "ref": "2Sa.2.23",
+              "role": "defining",
+              "note": "Abner struck Asahel with the butt of the spear “in the belly”, and the spear came out behind him."
+            },
+            {
+              "ref": "2Sa.3.27",
+              "note": "Joab struck Abner there “in the belly”, for the blood of Asahel."
+            },
+            {
+              "ref": "2Sa.4.6",
+              "note": "Rechab and Baanah struck Ish-bosheth “in the belly”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַמְשָׁא",
+      "lang": "syc",
+      "pos": "numeral",
+      "gloss": "five; fifth; (in compounds) fifteen, five hundred",
+      "summary": "The Peshitta’s five: feminine חַמֵשׁ, masculine חַמְשָׁא. With דְּ it gives the ordinal (Rev 6:9). SEDRA files the compounds חַמְשַׁעְסַר “fifteen” and חַמֵשְׁמָאא “five hundred” as lexemes of their own under the root חמש.",
+      "cognate_ids": [
+        "ar-khams",
+        "uga-hms",
+        "akk-hamis",
+        "arc-chamesh"
+      ],
+      "senses": [
+        {
+          "gloss": "five",
+          "definition": "The number five.",
+          "kin": [
+            "five"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.14.17",
+              "role": "defining",
+              "note": "“We have here only five loaves and two fish.”"
+            },
+            {
+              "ref": "Mat.25.2",
+              "role": "defining",
+              "note": "Five wise and five foolish, of ten virgins."
+            },
+            {
+              "ref": "Luk.12.52",
+              "note": "Five in one house divided, three against two."
+            },
+            {
+              "ref": "Jhn.5.2",
+              "note": "A pool with five porches."
+            },
+            {
+              "ref": "Act.20.6",
+              "note": "To Troas in five days."
+            },
+            {
+              "ref": "2Co.11.24",
+              "note": "Five times forty stripes less one."
+            },
+            {
+              "ref": "Rev.17.10",
+              "note": "Seven kings: five are fallen, one is, the other is not yet come."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "five: a few",
+              "definition": "Five set against a great number.",
+              "kin": [
+                "five-few"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Co.14.19",
+                  "role": "defining",
+                  "note": "“I would rather speak five words with my understanding … than ten thousand words in a tongue.”"
+                }
+              ]
+            },
+            {
+              "gloss": "fifteen; five hundred",
+              "definition": "In the compounds fifteen and five hundred.",
+              "kin": [
+                "fifteen",
+                "five-hundreds"
+              ],
+              "evidence": [
+                {
+                  "ref": "Luk.3.1",
+                  "role": "defining",
+                  "note": "In the fifteenth year of Tiberius."
+                },
+                {
+                  "ref": "Gal.1.18",
+                  "note": "Paul stayed with Peter fifteen days."
+                },
+                {
+                  "ref": "Jhn.11.18",
+                  "note": "Bethany was about fifteen furlongs from Jerusalem."
+                },
+                {
+                  "ref": "1Co.15.6",
+                  "role": "defining",
+                  "note": "The risen Christ seen by more than five hundred brothers at once."
+                },
+                {
+                  "ref": "Luk.7.41",
+                  "note": "One debtor owed five hundred denarii, the other fifty."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gloss": "fifth (with דְּ)",
+          "definition": "With the relative דְּ, the fifth in order.",
+          "kin": [
+            "fifth"
+          ],
+          "evidence": [
+            {
+              "ref": "Rev.6.9",
+              "role": "defining",
+              "note": "When he opened the fifth seal."
+            },
+            {
+              "ref": "Rev.9.1",
+              "note": "The fifth angel sounded."
+            },
+            {
+              "ref": "Rev.16.10"
+            },
+            {
+              "ref": "Rev.21.20",
+              "note": "The fifth, sardonyx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַמְשִׁין",
+      "lang": "syc",
+      "pos": "numeral",
+      "gloss": "fifty",
+      "cognate_ids": [
+        "ar-khamsun",
+        "uga-hmsm",
+        "akk-hamsa",
+        "arc-chamesh"
+      ],
+      "senses": [
+        {
+          "gloss": "fifty",
+          "definition": "The number fifty; in the feeding of the crowds, companies of fifty.",
+          "kin": [
+            "fifty",
+            "company-of-fifty"
+          ],
+          "evidence": [
+            {
+              "ref": "Mrk.6.40",
+              "role": "defining",
+              "note": "They sat down in companies, by hundreds and by fifties."
+            },
+            {
+              "ref": "Luk.9.14",
+              "role": "defining",
+              "note": "“Make them sit down in companies of fifty each.”"
+            },
+            {
+              "ref": "Jhn.8.57",
+              "note": "“You are not yet fifty years old, and have you seen Abraham?”"
+            },
+            {
+              "ref": "Luk.16.6",
+              "note": "“Sit down quickly and write fifty.”"
+            },
+            {
+              "ref": "Jhn.21.11",
+              "note": "A hundred and fifty-three fish."
+            },
+            {
+              "ref": "Act.13.20",
+              "note": "About four hundred and fifty years."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-khams",
+      "lang": "ar",
+      "form": "خَمْسَة، خَمْس",
+      "translit": "ḵamsa, ḵams",
+      "gloss": "five",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "note": "Arabic خ is ḫ, and its س answers to Hebrew ש where the older sound is š (ṯ would be ث). Masculine خَمْسَة with feminine nouns and خَمْس with masculine, as Hebrew חֲמִשָּׁה / חָמֵשׁ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 810, root خمس, خَمْسَةٌ (n11503)",
+          "note": "“[Five;] a certain number … خَمْسَةُ رِجَالٍ [Five men], and خَمْسُ نِسْوَةٍ [Five women].”"
+        }
+      ]
+    },
+    {
+      "id": "ar-khamsun",
+      "lang": "ar",
+      "form": "خَمْسُونَ",
+      "translit": "ḵamsūna",
+      "gloss": "fifty; fiftieth",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 811, root خمس, خَمْسُونَ (n11504)",
+          "note": "“[Fifty, and fiftieth.]”"
+        }
+      ]
+    },
+    {
+      "id": "ar-khamis",
+      "lang": "ar",
+      "form": "خَامِس",
+      "translit": "ḵāmis",
+      "gloss": "fifth",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 811, root خمس, خَامِسٌ (n11509)",
+          "note": "“[Fifth].”"
+        }
+      ]
+    },
+    {
+      "id": "ar-khums",
+      "lang": "ar",
+      "form": "خُمُس، خُمْس؛ خَمَسَ",
+      "translit": "ḵumus, ḵums; ḵamasa",
+      "gloss": "a fifth part; take the fifth part",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "note": "The noun is the fifth part, and the verb is to take the fifth of people’s goods or of the spoil: the piel of Gen 41:34 and the fifth of Gen 47:24, 26.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 810, root خمس, خُمُسٌ (n11502)",
+          "note": "“A fifth part.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 810, root خمس, خَمَسَ القَوْمَ (n11496)",
+          "note": "“He took the fifth part of the possessions of the people … He took the fifth part of the property.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-khamis-army",
+      "lang": "ar",
+      "form": "خَمِيس",
+      "translit": "ḵamīs",
+      "gloss": "an army",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "note": "Of the same Arabic root as five. The Arab lexicographers explain it as an army of five parts (van, centre, two wings, rear) or as one among whom spoil is divided in fifths; Lane’s sources reject the second as too late. It shares the meaning of חֲמֻשִׁים, troops arrayed for war; the reason for the name is not shown.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 811, root خمس, خَمِيسٌ (n11506)",
+          "note": "“An army; because consisting of five parts, namely, the van, the body, the right wing, the left wing, and the rear … or an army having numerous weapons.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-hms",
+      "lang": "uga",
+      "form": "𐎃𐎎𐎌، 𐎃𐎎𐎌𐎚",
+      "translit": "ḫmš, ḫmšt",
+      "gloss": "five; fifth",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "note": "Ugaritic writes ḫ and ḥ, and š and ṯ, with different signs: five is ḫmš. The same spelling is the ordinal “fifth” (KTU 4.279:5).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 186, §93 Glossary, ḫmš, ḫmšt; ḫmš “fifth” (KTU 4.279:5)",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“/ḫam(i)š-/: ḫmšt “5” (H. ḥāmēš, Arab. ḫams, Akkad. ḫamšu, ḫamištu)”; “/ḫamiš-/(?) … “fifth””. Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "uga-hmsm",
+      "lang": "uga",
+      "form": "𐎃𐎎𐎌𐎎",
+      "translit": "ḫmšm",
+      "gloss": "fifty",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 186, §93 Glossary, ḫmšm",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“/ḫam(i)šūma/, /-īma/ “50” (H. ḥămiššīm, Arab. ḫamsūna)”."
+        }
+      ]
+    },
+    {
+      "id": "akk-hamis",
+      "lang": "akk",
+      "form": "ḫamiš",
+      "translit": "ḫamiš, ḫamšat",
+      "gloss": "five",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Akkadian keeps ḫ but writes old š and ṯ alike, so it shows only the first letter.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000009620, hamiš [five] NU"
+        }
+      ]
+    },
+    {
+      "id": "akk-hamsa",
+      "lang": "akk",
+      "form": "ḫamšā",
+      "translit": "ḫamšā",
+      "gloss": "fifty",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000019940, hamšā [fifty] NU",
+          "note": "Meanings: fifty; fifty each."
+        }
+      ]
+    },
+    {
+      "id": "akk-hamsu",
+      "lang": "akk",
+      "form": "ḫamšu",
+      "translit": "ḫamšu",
+      "gloss": "fifth; one-fifth",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000042750, hamšu [fifth] NU"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000133660, hamšu [one-fifth] NU"
+        }
+      ]
+    },
+    {
+      "id": "sab-hms",
+      "lang": "sem",
+      "form": "𐩭𐩣𐩪، 𐩭𐩣𐩪𐩩، 𐩭𐩣𐩪𐩹",
+      "translit": "ḫms¹, ḫms¹t, ḫms¹y",
+      "gloss": "five; fifth (part and ordinal); fifty",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "note": "Sabaean, which keeps ḫ apart from ḥ and s¹ (old š) apart from ṯ. Cardinal f. ḫms¹, m. ḫms¹t; the fraction and the ordinal “fifth”; ḫms¹y “fifty”.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 205, ḪMS¹ (num. five; s. fifth (fraction); adj. fifth (ordinal); fifty)",
+          "note": "R3960/4 “they dedicated these five statues”; J665/34 “eight hundred fifty”. Read from the OCR text."
+        }
+      ]
+    },
+    {
+      "id": "sab-hms-army",
+      "lang": "sem",
+      "form": "𐩭𐩣𐩪",
+      "translit": "ḫms¹",
+      "gloss": "army, troops; especially infantry",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "ש": "š"
+      },
+      "note": "Sabaean, in the same article as five. Biella sets it beside Arabic ḫamīs “army”. It shares the meaning of חֲמֻשִׁים.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 205, ḪMS¹ (noun: army, troops; specifically infantry)",
+          "note": "J665/15 “their whole army (ḫms¹y), seven hundred and fifty mounted soldiers”; J576/6 “they sent some of their army on a raid”."
+        }
+      ]
+    },
+    {
+      "id": "phn-hms",
+      "lang": "phn",
+      "form": "𐤇𐤌𐤔، 𐤇𐤌𐤔𐤕",
+      "translit": "ḥmš, ḥmšt",
+      "gloss": "five",
+      "relation": "cognate",
+      "note": "Phoenician writes ḥ and ḫ alike, so it shows neither sound.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 188, ḤMŠ, masc. ḤMŠT, num. FIVE",
+          "note": "KAI 69.5 (Punic) “the priests shall receive five (ḥmšt) for each”."
+        }
+      ]
+    },
+    {
+      "id": "phn-hmsy",
+      "lang": "phn",
+      "form": "𐤇𐤌𐤔𐤉",
+      "translit": "ḥmšy",
+      "gloss": "fifth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 188, ḤMŠY, num. FIFTH",
+          "note": "KAI 76 B 7 (Punic) ym hḥmšy “the fifth day”."
+        }
+      ]
+    },
+    {
+      "id": "phn-hmsm",
+      "lang": "phn",
+      "form": "𐤇𐤌𐤔𐤌",
+      "translit": "ḥmšm",
+      "gloss": "fifty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 188, ḤMŠM, num. FIFTY",
+          "note": "KAI 69.5/6 (Punic) “one hundred and fifty”."
+        }
+      ]
+    },
+    {
+      "id": "arc-chamesh",
+      "lang": "arc",
+      "form": "חֲמֵשׁ، חַמְשָׁא؛ חַמְשִׁין",
+      "translit": "ḥămēš, ḥamšā; ḥamšīn",
+      "gloss": "five; fifty",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The Targums’ Aramaic. Aramaic writes old ṯ as ת, so its ש shows that five had š.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲמֵשׁ (ch.), חַמְשָׁא",
+          "note": "Targ. Gen. XLV, 11; XLVII, 2; pl. חַמְשִׁין fifty, Targ. Num. XXXI, 47."
+        }
+      ]
+    },
+    {
+      "id": "arc-chumsha",
+      "lang": "arc",
+      "form": "חוּמְשָׁא",
+      "translit": "ḥumšā",
+      "gloss": "a fifth part",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חוּמְשָׁא",
+          "note": "Targ. Lev. V, 24; Targ. Y. Gen. XLVII, 26: the fifth added to a restitution, and Joseph’s fifth."
+        }
+      ]
+    },
+    {
+      "id": "gez-hams",
+      "lang": "gez",
+      "form": "ኀምስ، ኀምስቱ",
+      "translit": "ḫäms, ḫämsətu",
+      "gloss": "five",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Ge’ez ኀ is ḫ, apart from ሐ ḥ. Not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ኀምስ (ḫäms); ኀምስቱ (ḫämsətu)"
+        }
+      ]
+    },
+    {
+      "id": "akk-emsu",
+      "lang": "akk",
+      "form": "emšu",
+      "translit": "emšu, enšu",
+      "gloss": "lower body, abdomen",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Akkadian keeps ḫ (as in ḫamiš “five”) but loses ḥ, colouring the vowel to e: emšu therefore had ḥ, not the ḫ of five.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000000400, emšu [lower body] N",
+          "note": "Meanings: abdomen; lower body."
+        },
+        {
+          "source": "oracc",
+          "locator": "cmawro x000004250, emšu [lower body, abdomen] N"
+        }
+      ]
+    },
+    {
+      "id": "gez-hems",
+      "lang": "gez",
+      "form": "ሕምሥ",
+      "translit": "ḥəmś",
+      "gloss": "belly, stomach",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "With ሐ ḥ, against ኀ ḫ in ኀምስ “five”. Not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ሕምሥ (ḥəmś)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-fiftieth-day",
+      "statement": "From the day after the sabbath on which the first sheaf of the harvest is waved before Yahweh, Israel counts seven complete sabbaths, “until the day after the seventh sabbath you shall count fifty (חֲמִשִּׁים) days”, and then brings a new grain offering: two loaves baked with leaven, “firstfruits to Yahweh” (Lev 23:10–11, 15–17). The count ties the first sheaf to the first loaves. Christ was raised on the first day of the week, the day after the sabbath (Mat 28:1), and is “the firstfruits of those who have fallen asleep” (1Co 15:20, 23). On “the day of the fiftieth” (Act 2:1, πεντηκοστή) the holy spirit was poured out on the apostles, and about three thousand souls were added (Act 2:41); those whom God brought forth by the word of truth are “a kind of firstfruits of his creatures” (Jas 1:18). So the fifty days of Lev 23 run from the risen Christ, the first sheaf, to the first gathering of the ecclesia, the loaves of the new grain.",
+      "evidence": [
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.11"
+        },
+        {
+          "ref": "Lev.23.15",
+          "to": "Lev.23.17"
+        },
+        {
+          "ref": "Mat.28.1"
+        },
+        {
+          "ref": "1Co.15.20"
+        },
+        {
+          "ref": "1Co.15.23"
+        },
+        {
+          "ref": "Act.2.1"
+        },
+        {
+          "ref": "Act.2.41"
+        },
+        {
+          "ref": "Jas.1.18"
+        }
+      ]
+    },
+    {
+      "topic": "restitution",
+      "statement": "For a wrong done to a neighbour or in holy things, the Law asks more than an offering: the guilty “shall confess their sin … and restore the wrong in full, and add its fifth (וַחֲמִישִׁתוֹ) to it, and give it to the one he wronged”, and only then does the priest make covering with the ram of the guilt offering, and he is forgiven (Num 5:6–8; Lev 5:16, 24–26). The thief of an ox that he has killed or sold pays five (חֲמִשָּׁה) oxen for it (Exo 21:37). Zacchaeus, called by Jesus, says: “if I have taken anything from anyone by false accusation, I restore it fourfold”, and Jesus answers, “Today salvation has come to this house” (Luk 19:8–9); and Jesus tells the one bringing his gift to the altar first to be reconciled to his brother (Mat 5:23–24). Repentance in scripture is not words only: it makes good what was taken, and more.",
+      "evidence": [
+        {
+          "ref": "Num.5.6",
+          "to": "Num.5.8"
+        },
+        {
+          "ref": "Lev.5.16"
+        },
+        {
+          "ref": "Lev.5.24",
+          "to": "Lev.5.26"
+        },
+        {
+          "ref": "Exo.21.37"
+        },
+        {
+          "ref": "Luk.19.8",
+          "to": "Luk.19.9"
+        },
+        {
+          "ref": "Mat.5.23",
+          "to": "Mat.5.24"
+        }
+      ]
+    }
+  ],
+  "note": "Root key חמש as the database keys it (BDB h.dr, h.ds, h.dt). Two older roots in one spelling: five and its words show ḫ and š (Arabic, Ugaritic, Sabaean, Akkadian, Ge’ez; Aramaic ש rules out ṯ); חֹמֶשׁ “belly” shows ḥ (Akkadian emšu, Ge’ez ḥəmś), and the Wiktionary Proto-Semitic lead gives *ḥamṯ- with Ugaritic ḥmṯ, Syriac ḥumšā “loins, belly” and Tigre ḥəməs, not yet found in their own dictionaries (Segert’s glossary has no ḥmṯ; Fisher’s OCR is unreadable there). Syriac ḥumšā “belly” has š where Aramaic should have t from ṯ, so it may be borrowed from Hebrew; not recorded. חֲמֻשִׁים: the link to five rests on Arabic ḵamīs and Sabaean ḫms¹ “army”; the explanation by five divisions is the Arab lexicographers’ and is not cited as fact; the old rendering “by fives” (Exo 13:18) is not taken. Num 32:17 חֻשִׁים is filed elsewhere (BDB under חוּשׁ); some read it as חֲמֻשִׁים, not followed. The Peshitta does not use this root for Pentecost (Act 2:1 uses a Greek loan), so πεντηκοστή is recorded only as the Septuagint bridge through πεντηκοστὸν ἔτος (Lev 25:10–11). Segert p. 186 (leaf 213), Biella p. 205 (leaf 218) and Krahmalkov p. 188 were read from the OCR text only; check the page images. Ge’ez forms are from Wiktionary only; check Dillmann and Leslau. The fem. ordinal חֲמִישִׁית as “fifth part” (Gen 47:24; Lev 5:16 etc.) is under BDB h.dr.af with the ordinal, so it is a sense of חֲמִישִׁי, not a word. Not written: any doctrine from five as a number in itself; scripture draws none."
+}
