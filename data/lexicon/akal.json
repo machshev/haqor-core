@@ -1,0 +1,2152 @@
+{
+  "id": "akal",
+  "root": "אכל",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "food",
+    "eating",
+    "fire",
+    "judgment",
+    "feasts",
+    "sacrifice",
+    "life",
+    "death",
+    "creation",
+    "accusation"
+  ],
+  "gloss": "eat; devour, consume; food",
+  "summary": "To eat: to take food into the body, and so to live by it, as man eats bread and the beasts the green plant (Gen 1:29–30; 3:19). What eats its object makes an end of it, so fire, the sword, wild beasts, a land and an oppressor are all said to eat, that is to devour or consume (Lev 10:2; 2Sa 2:26; Gen 37:33; Num 13:32; Psa 14:4); Yahweh himself is “a fire that eats” (Deu 4:24). Its nouns are food (אֹכֶל, אָכְלָה, מַאֲכָל), the fire’s fuel (מַאֲכֹלֶת) and the knife (מַאֲכֶלֶת); in Aramaic to “eat someone’s pieces” is to accuse him (Dan 3:8), and from that phrase the Peshitta names the διάβολος, the false accuser. Every Semitic language has the root in the same sense: Akkadian akālu, Ugaritic ʾkl, Arabic ʾakala.",
+  "words": [
+    {
+      "lemma": "אָכַל",
+      "pos": "verb",
+      "gloss": "eat; devour, consume; (hiphil) feed",
+      "bdb": [
+        "a.dc.aa"
+      ],
+      "cognate_ids": [
+        "ar-akala",
+        "akk-akalu",
+        "uga-akl",
+        "phn-akl",
+        "arc-akal"
+      ],
+      "summary": "One of the commonest verbs of scripture, almost all qal. Of people and beasts it is to eat; of fire, sword, beasts, a land, a curse or an oppressor it is to devour, to consume so that nothing is left. The niphal is the passive of both, the hiphil is to feed, to make eat.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "eat; devour, consume",
+          "senses": [
+            {
+              "id": "eat-food",
+              "gloss": "eat",
+              "definition": "Take food into the mouth and swallow it, to live by it; of people and of beasts.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.16",
+                  "role": "defining",
+                  "note": "“From every tree of the garden אָכֹל תֹּאכֵל”, you may freely eat."
+                },
+                {
+                  "ref": "Gen.3.19",
+                  "role": "defining",
+                  "note": "“In the sweat of your face you shall eat bread until you return to the ground”: eating is how man lives until he dies."
+                },
+                {
+                  "ref": "Gen.3.6",
+                  "note": "She took of its fruit and ate, and gave to her husband and he ate."
+                },
+                {
+                  "ref": "Isa.11.7",
+                  "role": "defining",
+                  "note": "“The lion shall eat straw like the ox”: of beasts, with what they eat as object."
+                },
+                {
+                  "ref": "Isa.65.25"
+                },
+                {
+                  "ref": "Exo.16.35",
+                  "note": "Israel ate the manna forty years."
+                },
+                {
+                  "ref": "Psa.78.24",
+                  "role": "defining",
+                  "note": "“He rained manna on them לֶאֱכֹל, to eat”: quoted in Jhn 6:31, “he gave them bread from heaven to eat”."
+                },
+                {
+                  "ref": "Jhn.6.31",
+                  "note": "The quotation of Psa 78:24, φαγεῖν."
+                },
+                {
+                  "ref": "Lev.11.2",
+                  "note": "“These are the living things that you may eat”: the law of clean and unclean food."
+                },
+                {
+                  "ref": "Lev.17.14",
+                  "role": "defining",
+                  "note": "“You shall not eat the blood of any flesh, for the life of all flesh is its blood.” Also Gen 9:4; Deu 12:23."
+                },
+                {
+                  "ref": "Lev.23.6",
+                  "role": "defining",
+                  "note": "On the fifteenth of the first month, the feast of מַצּוֹת: “seven days מַצּוֹת תֹּאכֵלוּ”, you shall eat unleavened bread."
+                },
+                {
+                  "ref": "Lev.23.14",
+                  "role": "defining",
+                  "note": "“Bread, roasted grain and fresh ears you shall not eat until this very day, until you have brought the offering of your God”: none of the new harvest is eaten before the עֹמֶר is brought."
+                },
+                {
+                  "ref": "Jos.5.11",
+                  "to": "Jos.5.12",
+                  "note": "On the morrow after the Passover they ate of the produce of the land, and the manna ceased."
+                },
+                {
+                  "ref": "Exo.12.8",
+                  "note": "The Passover lamb eaten that night, roast, with מַצּוֹת and bitter herbs."
+                },
+                {
+                  "ref": "Exo.12.11"
+                },
+                {
+                  "ref": "Exo.24.11",
+                  "role": "defining",
+                  "note": "“They saw God, and ate and drank”: the covenant meal on the mountain."
+                },
+                {
+                  "ref": "Deu.12.7",
+                  "note": "“There you shall eat before Yahweh your God, and rejoice.” Also Deu 14:23."
+                },
+                {
+                  "ref": "Lev.10.17",
+                  "role": "defining",
+                  "note": "Moses: “Why have you not eaten the sin offering in the holy place? … he has given it to you to bear the iniquity of the congregation, to make covering for them before Yahweh.”"
+                },
+                {
+                  "ref": "Lev.22.10",
+                  "note": "No stranger shall eat a holy thing."
+                },
+                {
+                  "ref": "2Sa.9.7",
+                  "note": "Mephibosheth “shall eat bread at my table continually”: to eat bread is to take a meal."
+                },
+                {
+                  "ref": "Gen.37.25",
+                  "note": "They sat down to eat bread."
+                },
+                {
+                  "ref": "Exo.34.28",
+                  "role": "defining",
+                  "note": "Forty days and forty nights “bread he did not eat and water he did not drink”: fasting is not eating. Also Deu 9:9."
+                },
+                {
+                  "ref": "Est.4.16",
+                  "note": "“Fast for me, and neither eat nor drink three days.”"
+                },
+                {
+                  "ref": "1Ki.19.8",
+                  "note": "Elijah ate and drank and went in the strength of that food (אֲכִילָה) forty days."
+                },
+                {
+                  "ref": "Isa.22.13",
+                  "note": "“Let us eat and drink, for tomorrow we die”: quoted in 1Co 15:32 of those who deny the resurrection."
+                },
+                {
+                  "ref": "1Co.15.32",
+                  "note": "The quotation of Isa 22:13, φάγωμεν."
+                },
+                {
+                  "ref": "Exo.32.6",
+                  "note": "“The people sat down to eat and drink, and rose up to play”: quoted in 1Co 10:7."
+                },
+                {
+                  "ref": "Ecc.2.24",
+                  "note": "Nothing is better for a man than that he eat and drink and see good in his toil."
+                },
+                {
+                  "ref": "Gen.3.22",
+                  "role": "defining",
+                  "note": "“Lest he put out his hand and take also from the tree of life, and eat, and live forever.”"
+                }
+              ],
+              "kin": [
+                "food",
+                "for-food",
+                "food-thing"
+              ]
+            },
+            {
+              "id": "eat-words",
+              "gloss": "eat (a word, a scroll): take it in wholly",
+              "definition": "Of a prophet, to take Yahweh’s words into himself as one takes food, so that they are his own.",
+              "evidence": [
+                {
+                  "ref": "Ezk.3.1",
+                  "role": "defining",
+                  "note": "“Son of man, eat what you find; eat this scroll, and go, speak to the house of Israel.”"
+                },
+                {
+                  "ref": "Ezk.3.3",
+                  "note": "“So I ate it, and it was in my mouth as honey for sweetness.” Rev 10:9–10 takes up the same act."
+                },
+                {
+                  "ref": "Ezk.2.8"
+                },
+                {
+                  "ref": "Jer.15.16",
+                  "role": "defining",
+                  "note": "“Your words were found, and I ate them, and your word was to me the joy and gladness of my heart.”"
+                },
+                {
+                  "ref": "Rev.10.10",
+                  "note": "John took the little scroll and ate it (κατέφαγον): sweet in the mouth, bitter in the belly."
+                }
+              ]
+            },
+            {
+              "id": "eat-fruit",
+              "gloss": "eat the fruit of (one’s labour or deeds); enjoy, or bear, its outcome",
+              "definition": "To eat what one’s own work or ways have produced: of a man enjoying his labour, and of the wicked bearing the outcome of what they did.",
+              "evidence": [
+                {
+                  "ref": "Isa.3.10",
+                  "role": "defining",
+                  "note": "“Say to the righteous that it shall be well, for they shall eat the fruit of their doings.”"
+                },
+                {
+                  "ref": "Pro.1.31",
+                  "role": "defining",
+                  "note": "“They shall eat of the fruit of their own way, and be filled with their own devices.”"
+                },
+                {
+                  "ref": "Isa.65.21",
+                  "to": "Isa.65.22",
+                  "role": "defining",
+                  "note": "In the new heavens and earth they plant vineyards and eat their fruit; “they shall not plant and another eat”."
+                },
+                {
+                  "ref": "Psa.128.2",
+                  "note": "“You shall eat the labour of your hands.”"
+                },
+                {
+                  "ref": "Deu.28.33",
+                  "note": "The curse: a nation you do not know shall eat the fruit of your land and all your labour."
+                },
+                {
+                  "ref": "Pro.13.2"
+                },
+                {
+                  "ref": "Pro.18.21",
+                  "note": "Death and life are in the power of the tongue, and those who love it shall eat its fruit."
+                }
+              ]
+            },
+            {
+              "id": "fire-consume",
+              "gloss": "devour, consume (of fire)",
+              "definition": "Of fire, to burn a thing up so that it is gone; above all of fire from Yahweh, consuming an offering in acceptance or the guilty in judgment.",
+              "evidence": [
+                {
+                  "ref": "Lev.9.24",
+                  "role": "defining",
+                  "note": "Fire came out from before Yahweh and consumed the burnt offering and the fat on the altar. Also 1Ki 18:38; 2Ch 7:1; Jdg 6:21."
+                },
+                {
+                  "ref": "Lev.10.2",
+                  "role": "defining",
+                  "note": "Fire came out from before Yahweh “and devoured them, and they died”: Nadab and Abihu."
+                },
+                {
+                  "ref": "Num.16.35",
+                  "note": "Fire from Yahweh consumed the 250 men who offered incense."
+                },
+                {
+                  "ref": "2Ki.1.10",
+                  "note": "Fire came down from heaven and consumed the captain and his fifty."
+                },
+                {
+                  "ref": "Deu.4.24",
+                  "role": "defining",
+                  "note": "“Yahweh your God is a fire that eats (אֵשׁ אֹכְלָה), a jealous God”: quoted in Heb 12:29."
+                },
+                {
+                  "ref": "Deu.9.3",
+                  "note": "He goes over before you as a consuming fire; he will destroy them."
+                },
+                {
+                  "ref": "Isa.26.11",
+                  "role": "defining",
+                  "note": "“The fire of your adversaries shall devour them”: taken up in Heb 10:27, “a fury of fire about to devour the adversaries”."
+                },
+                {
+                  "ref": "Isa.33.14",
+                  "note": "“Who among us shall dwell with the fire that eats?” Answered in 33:15, he who walks righteously."
+                },
+                {
+                  "ref": "Isa.5.24",
+                  "note": "As the tongue of fire devours the stubble."
+                },
+                {
+                  "ref": "Oba.1.18",
+                  "role": "defining",
+                  "note": "The house of Jacob a fire, Esau stubble: “they shall burn among them and devour them, and there shall be no survivor”."
+                },
+                {
+                  "ref": "Amo.1.4",
+                  "note": "“I will send a fire on the house of Hazael, and it shall devour the citadels”: the refrain of Amos 1–2."
+                },
+                {
+                  "ref": "Ezk.15.4",
+                  "note": "The vine’s wood given to the fire as food; the fire eats both its ends."
+                },
+                {
+                  "ref": "Jol.2.3",
+                  "note": "A fire devours before the locust army."
+                }
+              ],
+              "kin": [
+                "fuel",
+                "fire-food"
+              ]
+            },
+            {
+              "id": "sword-devour",
+              "gloss": "devour (of the sword): kill",
+              "definition": "Of the sword, to kill in numbers, as if eating flesh.",
+              "evidence": [
+                {
+                  "ref": "2Sa.2.26",
+                  "role": "defining",
+                  "note": "Abner: “Shall the sword devour forever?”"
+                },
+                {
+                  "ref": "Deu.32.42",
+                  "role": "defining",
+                  "note": "“My sword shall eat flesh.”"
+                },
+                {
+                  "ref": "2Sa.11.25",
+                  "note": "“The sword devours one as well as another.”"
+                },
+                {
+                  "ref": "2Sa.18.8",
+                  "note": "The forest devoured more of the people than the sword devoured."
+                },
+                {
+                  "ref": "Jer.2.30",
+                  "note": "“Your own sword has devoured your prophets like a destroying lion.”"
+                },
+                {
+                  "ref": "Jer.46.10"
+                }
+              ],
+              "kin": [
+                "knife"
+              ]
+            },
+            {
+              "id": "beast-devour",
+              "gloss": "devour (of beasts and birds)",
+              "definition": "Of wild beasts, birds or insects, to devour prey or crops.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.33",
+                  "role": "defining",
+                  "note": "“An evil beast has devoured him; Joseph is torn in pieces.” Also 37:20."
+                },
+                {
+                  "ref": "1Ki.13.28",
+                  "note": "The lion had not eaten the body nor torn the donkey."
+                },
+                {
+                  "ref": "1Ki.14.11",
+                  "note": "Dogs and birds shall eat whoever of Jeroboam dies."
+                },
+                {
+                  "ref": "Jol.1.4",
+                  "role": "defining",
+                  "note": "What the cutting locust left, the swarming locust has eaten."
+                },
+                {
+                  "ref": "Exo.10.15",
+                  "note": "The locusts ate every plant of the land."
+                },
+                {
+                  "ref": "Isa.51.8",
+                  "note": "The moth shall eat them like a garment, the worm like wool."
+                },
+                {
+                  "ref": "Hos.13.8",
+                  "note": "“There I will devour them like a lion.”"
+                }
+              ],
+              "kin": [
+                "prey-food"
+              ]
+            },
+            {
+              "id": "consume-people",
+              "gloss": "devour, consume (people, land, goods): destroy, exploit",
+              "definition": "Of an oppressor, an enemy, a land or a curse, to use people or their goods up as one eats food: to exploit, plunder or destroy them.",
+              "evidence": [
+                {
+                  "ref": "Psa.14.4",
+                  "role": "defining",
+                  "note": "“Who eat up my people as they eat bread.” Also Psa 53:5."
+                },
+                {
+                  "ref": "Mic.3.3",
+                  "role": "defining",
+                  "note": "The rulers “who eat the flesh of my people, and flay their skin from them”."
+                },
+                {
+                  "ref": "Pro.30.14",
+                  "note": "A generation whose teeth are swords and whose jaw-teeth are knives (מַאֲכָלוֹת), to devour the poor from the earth."
+                },
+                {
+                  "ref": "Num.13.32",
+                  "role": "defining",
+                  "note": "The spies’ report: “a land that eats its inhabitants”."
+                },
+                {
+                  "ref": "Lev.26.38",
+                  "note": "“The land of your enemies shall eat you up.”"
+                },
+                {
+                  "ref": "Isa.24.6",
+                  "role": "defining",
+                  "note": "“Therefore a curse has devoured the earth, and its inhabitants are held guilty.”"
+                },
+                {
+                  "ref": "Gen.31.15",
+                  "note": "Rachel and Leah: Laban “has also quite devoured our money”."
+                },
+                {
+                  "ref": "Hos.7.9",
+                  "note": "“Strangers have devoured his strength, and he knows it not.”"
+                },
+                {
+                  "ref": "Isa.1.7",
+                  "note": "Your land, strangers devour it in your presence."
+                },
+                {
+                  "ref": "Jer.10.25",
+                  "note": "They have eaten Jacob, devoured him and consumed him."
+                },
+                {
+                  "ref": "Psa.69.10",
+                  "role": "defining",
+                  "note": "“The zeal of your house has eaten me up”: quoted in Jhn 2:17 of Jesus cleansing the temple."
+                },
+                {
+                  "ref": "Jhn.2.17",
+                  "note": "The quotation of Psa 69:10, καταφάγεταί με."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be eaten; be consumed",
+          "senses": [
+            {
+              "id": "niphal-eaten",
+              "gloss": "be eaten",
+              "definition": "The passive of eating: of food that may or may not be eaten, above all the holy food of the offerings.",
+              "evidence": [
+                {
+                  "ref": "Lev.7.6",
+                  "role": "defining",
+                  "note": "Every male among the priests shall eat it; “in a holy place it shall be eaten”."
+                },
+                {
+                  "ref": "Lev.6.16",
+                  "role": "defining",
+                  "note": "The priest’s grain offering is wholly burnt: “it shall not be eaten”."
+                },
+                {
+                  "ref": "Lev.19.7",
+                  "note": "If any of a peace offering is eaten on the third day it is foul and not accepted."
+                },
+                {
+                  "ref": "Exo.12.46",
+                  "note": "The Passover “shall be eaten in one house”."
+                },
+                {
+                  "ref": "Exo.13.3",
+                  "note": "“No leavened bread shall be eaten.” Also Exo 12:16; Num 28:17; Ezk 45:21."
+                },
+                {
+                  "ref": "Lev.11.47",
+                  "note": "To separate between the living thing that may be eaten and that may not."
+                },
+                {
+                  "ref": "Jer.24.2",
+                  "note": "Figs so bad they could not be eaten."
+                },
+                {
+                  "ref": "Job.6.6",
+                  "note": "Can what is tasteless be eaten without salt?"
+                }
+              ]
+            },
+            {
+              "id": "niphal-consumed",
+              "gloss": "be consumed (by fire)",
+              "definition": "The passive of the fire’s devouring.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.5",
+                  "role": "defining",
+                  "note": "If fire breaks out and stacked grain or a field is consumed, he who kindled it shall make it good."
+                },
+                {
+                  "ref": "Zep.1.18",
+                  "role": "defining",
+                  "note": "“In the fire of his jealousy the whole land shall be consumed.” Also Zep 3:8."
+                },
+                {
+                  "ref": "Zep.3.8"
+                },
+                {
+                  "ref": "Ezk.23.25",
+                  "note": "Your remnant shall be devoured by fire."
+                },
+                {
+                  "ref": "Zec.9.4",
+                  "note": "Tyre shall be devoured with fire."
+                },
+                {
+                  "ref": "Num.12.12",
+                  "note": "Like one dead from the womb, “half his flesh eaten away”: of Miriam’s leprosy."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be consumed, be devoured",
+          "senses": [
+            {
+              "id": "pual-consumed",
+              "gloss": "be consumed, be devoured (by fire, by the sword)",
+              "definition": "Passive forms אֻכַּל, of what fire or the sword devours; the bush that burned and was not consumed.",
+              "evidence": [
+                {
+                  "ref": "Exo.3.2",
+                  "role": "defining",
+                  "note": "“The bush was burning with fire, and the bush was not consumed (אֻכָּל).”"
+                },
+                {
+                  "ref": "Isa.1.20",
+                  "role": "defining",
+                  "note": "“If you refuse and rebel, by the sword you shall be devoured (תְּאֻכְּלוּ).”"
+                },
+                {
+                  "ref": "Nam.1.10",
+                  "note": "They are consumed like dry stubble."
+                },
+                {
+                  "ref": "Neh.2.3",
+                  "note": "Jerusalem’s gates consumed with fire. Also Neh 2:13."
+                },
+                {
+                  "ref": "Neh.2.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "feed, make eat",
+          "senses": [
+            {
+              "id": "feed",
+              "gloss": "feed, give to eat",
+              "definition": "To make someone eat: of Yahweh feeding his people, of feeding the hungry, and of making someone eat what is bitter as a punishment.",
+              "evidence": [
+                {
+                  "ref": "Deu.8.3",
+                  "role": "defining",
+                  "note": "“He humbled you and let you hunger and fed you (וַיַּאֲכִלְךָ) the manna … to make you know that man does not live by bread alone, but by every word that comes out of the mouth of Yahweh”: quoted in Mat 4:4."
+                },
+                {
+                  "ref": "Deu.8.16",
+                  "note": "“Who fed you in the wilderness with manna … to humble you and to test you, to do you good at your end.”"
+                },
+                {
+                  "ref": "Exo.16.32",
+                  "role": "defining",
+                  "note": "An omer of the manna kept, “that they may see the bread with which I fed you in the wilderness”."
+                },
+                {
+                  "ref": "Psa.81.17",
+                  "note": "“He would feed him with the finest of the wheat.”"
+                },
+                {
+                  "ref": "Hos.11.4",
+                  "note": "“I bent down to him and fed him.”"
+                },
+                {
+                  "ref": "Isa.58.14",
+                  "note": "“I will feed you with the heritage of Jacob your father.”"
+                },
+                {
+                  "ref": "Pro.25.21",
+                  "role": "defining",
+                  "note": "“If your enemy is hungry, feed him bread”: quoted in Rom 12:20."
+                },
+                {
+                  "ref": "Rom.12.20",
+                  "note": "The quotation of Pro 25:21, ψώμιζε."
+                },
+                {
+                  "ref": "2Ch.28.15",
+                  "note": "The captives of Judah clothed, fed and given drink."
+                },
+                {
+                  "ref": "Num.11.4",
+                  "note": "“Who will feed us flesh?” Also 11:18."
+                },
+                {
+                  "ref": "Ezk.3.2",
+                  "note": "“He made me eat that scroll.”"
+                },
+                {
+                  "ref": "Jer.9.14",
+                  "note": "“I will feed this people with wormwood.” Also Jer 23:15."
+                },
+                {
+                  "ref": "Psa.80.6",
+                  "note": "“You have fed them with the bread of tears.”"
+                },
+                {
+                  "ref": "1Ki.22.27",
+                  "note": "“Feed him with bread of affliction.” Also 2Ch 18:26."
+                },
+                {
+                  "ref": "Isa.49.26",
+                  "note": "“I will feed your oppressors with their own flesh.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁתָה",
+            "note": "“Drink”: eating and drinking together are a meal, a life’s enjoyment, or a feast.",
+            "evidence": [
+              {
+                "ref": "Exo.24.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.22.13"
+              },
+              {
+                "ref": "Ecc.2.24"
+              },
+              {
+                "ref": "Gen.24.54"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׂבַע",
+            "note": "“Be satisfied”: eating to the full.",
+            "evidence": [
+              {
+                "ref": "Deu.8.10",
+                "role": "defining",
+                "note": "“You shall eat and be full, and bless Yahweh your God.”"
+              },
+              {
+                "ref": "Deu.11.15"
+              },
+              {
+                "ref": "Rut.2.14"
+              },
+              {
+                "ref": "Psa.22.27"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּעַר",
+            "note": "“Burn”, beside the fire’s devouring.",
+            "evidence": [
+              {
+                "ref": "Num.11.1",
+                "role": "defining",
+                "note": "“The fire of Yahweh burned among them and devoured the outskirts of the camp.”"
+              },
+              {
+                "ref": "Isa.9.17",
+                "note": "Wickedness burns like fire; it devours briers and thorns."
+              },
+              {
+                "ref": "Exo.3.2",
+                "note": "The bush burning (בֹּעֵר) and not consumed (אֻכָּל)."
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רָעֵב",
+            "note": "“Be hungry”: Yahweh’s servants eat, the rebels hunger.",
+            "evidence": [
+              {
+                "ref": "Isa.65.13",
+                "role": "defining",
+                "note": "“My servants shall eat, but you shall be hungry.”"
+              },
+              {
+                "ref": "Isa.9.19"
+              }
+            ]
+          },
+          {
+            "lemma": "צוּם",
+            "note": "“Fast”: not eating.",
+            "evidence": [
+              {
+                "ref": "Est.4.16",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.12.21"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֵשׁ אֹכְלָה",
+            "gloss": "a fire that eats, a consuming fire (of Yahweh)",
+            "evidence": [
+              {
+                "ref": "Deu.4.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.9.3"
+              },
+              {
+                "ref": "Isa.33.14"
+              },
+              {
+                "ref": "Exo.24.17"
+              }
+            ]
+          },
+          {
+            "phrase": "אָכַל לֶחֶם",
+            "gloss": "eat bread: take a meal",
+            "evidence": [
+              {
+                "ref": "Gen.37.25",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.9.7"
+              },
+              {
+                "ref": "1Ki.13.8"
+              }
+            ]
+          },
+          {
+            "phrase": "אָכַל לִפְנֵי יַהְוֶה",
+            "gloss": "eat before Yahweh: the feast at his chosen place",
+            "evidence": [
+              {
+                "ref": "Deu.12.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.14.23"
+              },
+              {
+                "ref": "Deu.15.20"
+              },
+              {
+                "ref": "Deu.27.7"
+              }
+            ]
+          },
+          {
+            "phrase": "אֶרֶץ אֹכֶלֶת יוֹשְׁבֶיהָ",
+            "gloss": "a land that eats its inhabitants",
+            "evidence": [
+              {
+                "ref": "Num.13.32",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἐσθίω",
+          "gloss": "eat (aorist ἔφαγον)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.16, אָכֹל תֹּאכֵל → βρώσει φάγῃ; Lev.23.6, תֹּאכֵלוּ → ἔδεσθε; Lev.23.14 → φάγεσθε; Isa.22.13 → φάγωμεν; Psa.78.24 → φαγεῖν; φάγω ×308 and ἐσθίω ×169 render אָכַל"
+            },
+            {
+              "ref": "Jhn.6.31",
+              "role": "defining",
+              "note": "“He gave them bread from heaven to eat”, quoting Psa 78:24; Jesus goes on, “I am the bread of life” (6:35), “if anyone eats of this bread, he will live forever” (6:51)."
+            },
+            {
+              "ref": "1Co.15.32",
+              "note": "Quoting Isa 22:13."
+            },
+            {
+              "ref": "1Co.10.7",
+              "note": "Quoting Exo 32:6."
+            },
+            {
+              "ref": "Rev.2.7",
+              "role": "defining",
+              "note": "“To him who overcomes I will give to eat of the tree of life”: Gen 3:22 reversed."
+            },
+            {
+              "ref": "Heb.10.27",
+              "note": "“A fury of fire about to devour (ἐσθίειν) the adversaries”, from Isa 26:11."
+            },
+            {
+              "ref": "1Co.11.26",
+              "note": "As often as you eat this bread and drink the cup, you proclaim the Lord’s death until he comes."
+            }
+          ]
+        },
+        {
+          "lemma": "κατεσθίω",
+          "gloss": "devour, eat up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.10.2, וַתֹּאכַל → κατέφαγεν; Psa.69.10 (LXX 68:10), אֲכָלָתְנִי → κατέφαγέν με; Ezk.3.1 → κατάφαγε; κατεσθίω renders אָכַל ×98"
+            },
+            {
+              "ref": "Jhn.2.17",
+              "role": "defining",
+              "note": "“The zeal of your house will eat me up”, quoting Psa 69:10."
+            },
+            {
+              "ref": "Rev.10.10",
+              "note": "John “ate it up”, as Ezekiel ate the scroll (Ezk 3:1–3)."
+            },
+            {
+              "ref": "Gal.5.15",
+              "note": "“If you bite and devour one another.”"
+            }
+          ]
+        },
+        {
+          "lemma": "καταναλίσκω",
+          "gloss": "consume utterly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.4.24, אֵשׁ אֹכְלָה → πῦρ καταναλίσκον"
+            },
+            {
+              "ref": "Heb.12.29",
+              "role": "defining",
+              "note": "“For our God is a consuming fire”, quoting Deu 4:24."
+            }
+          ]
+        },
+        {
+          "lemma": "ψωμίζω",
+          "gloss": "feed (by morsels)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.8.3, וַיַּאֲכִלְךָ → ἐψώμισέν σε; Deu.8.16 → ψωμίσαντός σε (hiphil)"
+            },
+            {
+              "ref": "Rom.12.20",
+              "role": "defining",
+              "note": "“If your enemy hungers, feed (ψώμιζε) him”, quoting Pro 25:21, where the Septuagint has τρέφε."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֹכֶל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "food; an eating",
+      "bdb": [
+        "a.dc.ab"
+      ],
+      "cognate_ids": [
+        "ar-ukul",
+        "akk-akalu-food",
+        "akk-ukultu",
+        "uga-akl",
+        "sab-akl"
+      ],
+      "summary": "What is eaten: above all grain, the food Joseph stored and his brothers came to buy, and the food God gives every creature in its season. With a suffix it can be the measure one eats (“according to his eating”).",
+      "senses": [
+        {
+          "id": "food",
+          "gloss": "food, provisions (above all grain)",
+          "definition": "Food as a store or a supply: what is gathered, bought, given and eaten.",
+          "evidence": [
+            {
+              "ref": "Gen.41.35",
+              "role": "defining",
+              "note": "“Let them gather all the food of these good years … grain under Pharaoh’s hand for food in the cities.”"
+            },
+            {
+              "ref": "Gen.41.48"
+            },
+            {
+              "ref": "Gen.42.10",
+              "role": "defining",
+              "note": "“Your servants have come to buy food.” Also 42:7; 43:2, 20, 22; 44:1, 25."
+            },
+            {
+              "ref": "Gen.14.11",
+              "note": "The kings took the goods of Sodom and Gomorrah and all their food."
+            },
+            {
+              "ref": "Deu.2.6",
+              "note": "“You shall buy food from them for silver, that you may eat.”"
+            },
+            {
+              "ref": "Lev.25.37",
+              "note": "You shall not lend him your food for increase."
+            },
+            {
+              "ref": "Psa.104.27",
+              "role": "defining",
+              "note": "“All of them wait for you, to give them their food in its season.” Also Psa 145:15."
+            },
+            {
+              "ref": "Psa.104.21",
+              "note": "The young lions seek their food from God."
+            },
+            {
+              "ref": "Job.38.41",
+              "note": "Who provides the raven its food?"
+            },
+            {
+              "ref": "Psa.78.18",
+              "note": "They tested God by asking food for their craving."
+            },
+            {
+              "ref": "Jol.1.16",
+              "note": "Is not the food cut off before our eyes?"
+            },
+            {
+              "ref": "Hab.3.17",
+              "note": "Though the fields yield no food, yet I will rejoice in Yahweh."
+            },
+            {
+              "ref": "Lam.1.11"
+            },
+            {
+              "ref": "Rut.2.14",
+              "note": "“At mealtime (לְעֵת הָאֹכֶל) Boaz said to her, Come here and eat.”"
+            }
+          ],
+          "kin": [
+            "eat-food"
+          ]
+        },
+        {
+          "id": "eating-measure",
+          "gloss": "an eating: the measure one eats",
+          "definition": "With a suffix, “his eating”: as much as each eats, the measure of a portion.",
+          "evidence": [
+            {
+              "ref": "Exo.16.16",
+              "role": "defining",
+              "note": "Gather the manna “each according to his eating (לְפִי אָכְלוֹ)”. Also 16:18, 21."
+            },
+            {
+              "ref": "Exo.12.4",
+              "role": "defining",
+              "note": "The lamb reckoned “each according to his eating”."
+            },
+            {
+              "ref": "Exo.16.21"
+            }
+          ]
+        },
+        {
+          "id": "prey-food",
+          "gloss": "prey (food of birds of prey)",
+          "definition": "The food of an eagle or hawk: what it swoops on.",
+          "evidence": [
+            {
+              "ref": "Job.39.29",
+              "role": "defining",
+              "note": "The eagle “from there spies out food”."
+            },
+            {
+              "ref": "Job.9.26",
+              "note": "Like an eagle swooping on the food."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βρῶμα",
+          "gloss": "food",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.41.35, אֹכֶל → βρώματα; Gen.42.7 the same; βρῶμα renders אֹכֶל ×20"
+            },
+            {
+              "ref": "1Co.10.3",
+              "role": "defining",
+              "note": "“They all ate the same spiritual food (βρῶμα)”: the manna of Exo 16."
+            },
+            {
+              "ref": "Jhn.4.34",
+              "note": "“My food is to do the will of him who sent me.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַאֲכָל",
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "food",
+      "bdb": [
+        "a.dc.af",
+        "m.ad.ah"
+      ],
+      "cognate_ids": [
+        "ar-ukul",
+        "akk-akalu-food"
+      ],
+      "summary": "Food, what is for eating: most often in “a tree of food”, a fruit tree, and in the threat that corpses will be food for the birds and beasts.",
+      "senses": [
+        {
+          "id": "food-thing",
+          "gloss": "food, what is for eating",
+          "definition": "Anything that is for eating: fruit, the provisions of a table, and a body left to the birds.",
+          "evidence": [
+            {
+              "ref": "Gen.2.9",
+              "role": "defining",
+              "note": "Every tree pleasant to the sight and good לְמַאֲכָל, for food."
+            },
+            {
+              "ref": "Gen.3.6",
+              "role": "defining",
+              "note": "The woman saw that the tree was good לְמַאֲכָל."
+            },
+            {
+              "ref": "Lev.19.23",
+              "role": "defining",
+              "note": "“When you plant every tree of food (עֵץ מַאֲכָל)”: a fruit tree. Also Deu 20:20; Neh 9:25."
+            },
+            {
+              "ref": "Ezk.47.12",
+              "role": "defining",
+              "note": "By the river every tree of food: “its fruit shall be for food, and its leaf for healing”; taken up in Rev 22:2."
+            },
+            {
+              "ref": "Deu.28.26",
+              "role": "defining",
+              "note": "“Your carcass shall be food for every bird of the heavens.” Also Jer 7:33; 16:4; 19:7; 34:20; Psa 79:2."
+            },
+            {
+              "ref": "Jer.7.33"
+            },
+            {
+              "ref": "Psa.79.2"
+            },
+            {
+              "ref": "Jdg.14.14",
+              "note": "Samson’s riddle: “Out of the eater came forth food (מַאֲכָל).”"
+            },
+            {
+              "ref": "1Ki.10.5",
+              "note": "The food of Solomon’s table. Also 2Ch 9:4."
+            },
+            {
+              "ref": "Dan.1.10",
+              "note": "The king appointed your food and your drink."
+            },
+            {
+              "ref": "Gen.6.21",
+              "note": "“Take with you of every food that is eaten.”"
+            },
+            {
+              "ref": "Hag.2.12"
+            },
+            {
+              "ref": "Pro.6.8",
+              "note": "The ant gathers its food in the harvest."
+            }
+          ],
+          "kin": [
+            "eat-food"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βρῶσις",
+          "gloss": "food; eating",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.3.6, לְמַאֲכָל → εἰς βρῶσιν; βρῶσις renders מַאֲכָל ×9, and אָכַל in Isa.55.10, לָאֹכֵל → εἰς βρῶσιν"
+            },
+            {
+              "ref": "2Co.9.10",
+              "role": "defining",
+              "note": "“He who supplies seed to the sower and bread for food (εἰς βρῶσιν)”, from Isa 55:10."
+            },
+            {
+              "ref": "Jhn.6.27",
+              "note": "“Work not for the food that perishes, but for the food that endures to life everlasting.”"
+            },
+            {
+              "ref": "Col.2.16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָכְלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "food; what is eaten, devoured",
+      "bdb": [
+        "a.dc.ac"
+      ],
+      "cognate_ids": [
+        "ar-ukul",
+        "akk-ukultu"
+      ],
+      "summary": "Always with לְ, “for food”: the plants given to man and beast at creation, the manna, and in Ezekiel a people given as food to beasts or to the fire.",
+      "senses": [
+        {
+          "id": "for-food",
+          "gloss": "food (what is given to be eaten)",
+          "definition": "What God gives as food, to man and beast.",
+          "evidence": [
+            {
+              "ref": "Gen.1.29",
+              "role": "defining",
+              "note": "“I have given you every plant yielding seed … and every tree with fruit yielding seed; to you it shall be לְאָכְלָה.”"
+            },
+            {
+              "ref": "Gen.1.30",
+              "role": "defining",
+              "note": "“To every beast of the earth, every bird, every thing that creeps, in which there is a living soul, every green plant לְאָכְלָה.”"
+            },
+            {
+              "ref": "Gen.9.3",
+              "role": "defining",
+              "note": "After the flood: “every moving thing that lives shall be food for you; as the green plant, I have given you all”."
+            },
+            {
+              "ref": "Gen.6.21",
+              "note": "Food in the ark, for Noah and the beasts."
+            },
+            {
+              "ref": "Exo.16.15",
+              "role": "defining",
+              "note": "“It is the bread Yahweh has given you לְאָכְלָה.”"
+            },
+            {
+              "ref": "Lev.25.6",
+              "note": "The sabbath of the land shall be food for you, your servants and your sojourner."
+            },
+            {
+              "ref": "Lev.11.39",
+              "note": "A beast that is for you for food."
+            }
+          ],
+          "kin": [
+            "eat-food"
+          ]
+        },
+        {
+          "id": "devoured-food",
+          "gloss": "food for beasts: prey",
+          "definition": "A people given up to be devoured by beasts and birds, when there is no shepherd or in judgment.",
+          "evidence": [
+            {
+              "ref": "Ezk.34.5",
+              "role": "defining",
+              "note": "“They were scattered for lack of a shepherd, and became food for every beast of the field.” Also 34:8, 10."
+            },
+            {
+              "ref": "Ezk.34.8"
+            },
+            {
+              "ref": "Ezk.34.10",
+              "note": "“I will rescue my flock from their mouth, that they may not be food for them.”"
+            },
+            {
+              "ref": "Ezk.29.5",
+              "note": "Pharaoh given as food to the beasts and birds."
+            },
+            {
+              "ref": "Ezk.39.4"
+            },
+            {
+              "ref": "Jer.12.9"
+            },
+            {
+              "ref": "Ezk.35.12",
+              "note": "Edom: “they are given us to devour”."
+            },
+            {
+              "ref": "Ezk.23.37"
+            }
+          ],
+          "kin": [
+            "beast-devour"
+          ]
+        },
+        {
+          "id": "fire-food",
+          "gloss": "food for the fire: fuel",
+          "definition": "What is given to the fire to burn up.",
+          "evidence": [
+            {
+              "ref": "Ezk.15.4",
+              "role": "defining",
+              "note": "The vine’s wood “is given to the fire לְאָכְלָה”."
+            },
+            {
+              "ref": "Ezk.15.6",
+              "note": "So I give the inhabitants of Jerusalem."
+            },
+            {
+              "ref": "Ezk.21.37",
+              "note": "“You shall be food for the fire.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βρῶσις",
+          "gloss": "food",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.29, לְאָכְלָה → εἰς βρῶσιν; Ezk.34.5 → εἰς κατάβρωμα"
+            },
+            {
+              "ref": "Jhn.6.55",
+              "note": "“My flesh is true food (βρῶσις).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַאֲכֶלֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "knife (for slaughter)",
+      "bdb": [
+        "a.dc.ag"
+      ],
+      "cognate_ids": [
+        "ar-akilat-al-lahm"
+      ],
+      "summary": "The knife that cuts flesh: the knife Abraham took to slay Isaac, the knife the Levite used on his concubine. Named from eating, as Arabic calls the knife “the eater of flesh”: what eats flesh cuts it.",
+      "senses": [
+        {
+          "id": "knife",
+          "gloss": "knife",
+          "definition": "A slaughtering knife, for cutting up flesh.",
+          "evidence": [
+            {
+              "ref": "Gen.22.6",
+              "role": "defining",
+              "note": "Abraham took in his hand the fire and the knife."
+            },
+            {
+              "ref": "Gen.22.10",
+              "role": "defining",
+              "note": "He “took the knife to slay his son”."
+            },
+            {
+              "ref": "Jdg.19.29",
+              "role": "defining",
+              "note": "He took the knife and cut her limb by limb into twelve pieces."
+            },
+            {
+              "ref": "Pro.30.14",
+              "note": "Jaw-teeth that are knives (מַאֲכָלוֹת) to devour the poor: the knife and the eating together."
+            }
+          ],
+          "kin": [
+            "sword-devour"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַאֲכֹלֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "fuel (food of the fire)",
+      "bdb": [
+        "a.dc.ah"
+      ],
+      "cognate_ids": [
+        "ar-akala"
+      ],
+      "summary": "Only in מַאֲכֹלֶת אֵשׁ, “fuel of fire”, what the fire eats, twice in Isaiah 9.",
+      "senses": [
+        {
+          "id": "fuel",
+          "gloss": "fuel of fire",
+          "definition": "What the fire eats.",
+          "evidence": [
+            {
+              "ref": "Isa.9.4",
+              "role": "defining",
+              "note": "Every boot of the trampling warrior and the garment rolled in blood “shall be for burning, fuel of fire”."
+            },
+            {
+              "ref": "Isa.9.18",
+              "role": "defining",
+              "note": "Through Yahweh’s wrath the land is burnt, and the people are like fuel of fire."
+            }
+          ],
+          "kin": [
+            "fire-consume"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲכִילָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "food, a meal",
+      "bdb": [
+        "a.dc.ae"
+      ],
+      "cognate_ids": [
+        "arc-akal"
+      ],
+      "summary": "Once, of the meal the angel gave Elijah, in whose strength he went forty days.",
+      "senses": [
+        {
+          "gloss": "food, a meal",
+          "definition": "A meal eaten.",
+          "evidence": [
+            {
+              "ref": "1Ki.19.8",
+              "role": "defining",
+              "note": "“He went in the strength of that food (הָאֲכִילָה) forty days and forty nights to Horeb.”"
+            }
+          ],
+          "kin": [
+            "eat-food"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βρῶσις",
+          "gloss": "food",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.19.8, הָאֲכִילָה → τῆς βρώσεως"
+            },
+            {
+              "ref": "Jhn.6.27",
+              "note": "The food that endures to life everlasting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַכֹּלֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "food, provisions",
+      "bdb": [
+        "a.dc.ai",
+        "m.bx.ae"
+      ],
+      "cognate_ids": [
+        "ar-ukul"
+      ],
+      "summary": "Once, of the wheat Solomon gave Hiram as food for his household; a contracted form of מַאֲכֹלֶת.",
+      "senses": [
+        {
+          "gloss": "food, provisions",
+          "definition": "Food for a household.",
+          "evidence": [
+            {
+              "ref": "1Ki.5.25",
+              "role": "defining",
+              "note": "Twenty thousand cors of wheat, “food (מַכֹּלֶת) for his household”."
+            }
+          ],
+          "kin": [
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲכַל",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "eat, devour; (with קַרְצֵי) accuse",
+      "bdb": [
+        "xa.al.aa"
+      ],
+      "cognate_ids": [
+        "arc-akal",
+        "akk-akalu"
+      ],
+      "summary": "Daniel’s Aramaic: to eat (grass, like oxen), to devour (of the beasts of the visions), and in the phrase “eat the pieces of” someone, to accuse him, an idiom Akkadian has too (karṣī akālu).",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "eat, devour; accuse",
+          "senses": [
+            {
+              "gloss": "eat",
+              "definition": "To eat food, here grass as an ox eats it.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.30",
+                  "role": "defining",
+                  "note": "Nebuchadnezzar “ate grass like oxen”."
+                }
+              ],
+              "kin": [
+                "eat-food"
+              ]
+            },
+            {
+              "gloss": "devour (of beasts, of a kingdom)",
+              "definition": "Of the beasts of Daniel’s vision, and the kingdom the fourth beast is, to devour.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.5",
+                  "role": "defining",
+                  "note": "To the bear: “Arise, devour much flesh.”"
+                },
+                {
+                  "ref": "Dan.7.7",
+                  "note": "The fourth beast “devoured and broke in pieces”. Also 7:19."
+                },
+                {
+                  "ref": "Dan.7.19"
+                },
+                {
+                  "ref": "Dan.7.23",
+                  "role": "defining",
+                  "note": "The fourth kingdom “shall devour the whole earth, and tread it down, and break it in pieces”."
+                }
+              ],
+              "kin": [
+                "beast-devour",
+                "consume-people"
+              ]
+            },
+            {
+              "id": "accuse-arc",
+              "gloss": "eat the pieces of: accuse, slander",
+              "definition": "In the phrase אֲכַל קַרְצֵי פְּלָן, “eat the pieces of so-and-so”: to accuse a man before the king, to slander him to his ruin.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.8",
+                  "role": "defining",
+                  "note": "Certain Chaldeans came near “וַאֲכַלוּ קַרְצֵיהוֹן דִּי יְהוּדָיֵא”, and accused the Jews, telling the king they would not serve his gods."
+                },
+                {
+                  "ref": "Dan.6.25",
+                  "role": "defining",
+                  "note": "“The men who had accused Daniel (אֲכַלוּ קַרְצוֹהִי דִּי דָנִיֵּאל)” were cast into the den themselves."
+                }
+              ],
+              "cognate_ids": [
+                "akk-karsa-akalu",
+                "ar-akkala"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲכַל",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "eat, devour; (aphel) feed; (ethpeel, with ܩܪܨܐ) be accused",
+      "summary": "The Peshitta’s ܐܟܠ (ʾḵal), its ordinary verb for eating where the Greek has ἐσθίω, φαγεῖν or τρώγω; it also keeps the Aramaic idiom of accusing.",
+      "cognate_ids": [
+        "arc-akal"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "eat, devour",
+          "senses": [
+            {
+              "gloss": "eat; devour",
+              "definition": "To eat, as the Hebrew; and of fire and zeal, to devour.",
+              "evidence": [
+                {
+                  "ref": "Jhn.6.31",
+                  "role": "defining",
+                  "note": "“He gave them bread from heaven to eat”, quoting Psa 78:24."
+                },
+                {
+                  "ref": "Jhn.6.53",
+                  "role": "defining",
+                  "note": "“Unless you eat the flesh of the Son of man and drink his blood, you have no life in you.”"
+                },
+                {
+                  "ref": "Jhn.6.50",
+                  "note": "The bread from heaven, “that a man may eat of it and not die”."
+                },
+                {
+                  "ref": "1Co.10.3",
+                  "note": "They all ate the same spiritual food."
+                },
+                {
+                  "ref": "Rev.2.7",
+                  "note": "“I will give him to eat of the tree of life.”"
+                },
+                {
+                  "ref": "Jhn.2.17",
+                  "role": "defining",
+                  "note": "“The zeal of your house has eaten me”, quoting Psa 69:10."
+                },
+                {
+                  "ref": "Heb.10.27",
+                  "note": "The fire that devours the adversaries, from Isa 26:11."
+                },
+                {
+                  "ref": "Rev.10.10"
+                }
+              ],
+              "kin": [
+                "eat-food",
+                "consume-people"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "feed",
+          "senses": [
+            {
+              "gloss": "feed",
+              "definition": "To make eat, give food to.",
+              "evidence": [
+                {
+                  "ref": "Rom.12.20",
+                  "role": "defining",
+                  "note": "“If your enemy hungers, feed him”, quoting Pro 25:21, where the Hebrew has the hiphil."
+                },
+                {
+                  "ref": "1Co.13.3",
+                  "note": "“If I feed out all my goods.”"
+                }
+              ],
+              "kin": [
+                "feed"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be eaten; (with ܩܪܨܐ) be accused",
+          "senses": [
+            {
+              "gloss": "be accused",
+              "definition": "In the idiom of Dan 3:8, “his pieces were eaten”: he was accused.",
+              "evidence": [
+                {
+                  "ref": "Luk.16.1",
+                  "role": "defining",
+                  "note": "The steward “was accused (διεβλήθη)” to his master of wasting his goods."
+                }
+              ],
+              "kin": [
+                "accuse-arc"
+              ],
+              "cognate_ids": [
+                "akk-karsa-akalu",
+                "ar-akkala"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָכֶל־קַרְצָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "false accuser (for διάβολος)",
+      "summary": "The Peshitta’s ܐܟܠ ܩܪܨܐ (ʾāḵel qarṣā), “eater of pieces”, from the Aramaic idiom of Dan 3:8 and 6:25: an accuser, a slanderer. It renders διάβολος, of men (2Ti 3:3) and of the false accuser of the gospels and Revelation.",
+      "cognate_ids": [
+        "akk-karsa-akalu",
+        "ar-akkala"
+      ],
+      "senses": [
+        {
+          "id": "false-accuser",
+          "gloss": "false accuser, slanderer",
+          "definition": "One who accuses another, falsely, to his harm; the Peshitta’s word for διάβολος.",
+          "evidence": [
+            {
+              "ref": "2Ti.3.3",
+              "role": "defining",
+              "note": "Among the men of the last days, “false accusers (διάβολοι)”: of people."
+            },
+            {
+              "ref": "Jhn.8.44",
+              "role": "defining",
+              "note": "To men who sought to kill him: “You are of your father the false accuser … he was a man-killer from the beginning … a liar.”"
+            },
+            {
+              "ref": "Mat.4.1",
+              "note": "Jesus led into the wilderness “to be tested by the false accuser”. Also Mat 4:5, 8, 11; Luk 4:2–13."
+            },
+            {
+              "ref": "Luk.4.2"
+            },
+            {
+              "ref": "Rev.2.10",
+              "role": "defining",
+              "note": "“The false accuser is about to cast some of you into prison”: the ruling power that imprisons the ecclesia."
+            },
+            {
+              "ref": "Rev.12.9",
+              "note": "The great dragon, the ancient serpent, called false accuser and adversary. Also Rev 20:2, 10."
+            },
+            {
+              "ref": "Eph.4.27",
+              "note": "“Do not give place to the false accuser.”"
+            },
+            {
+              "ref": "Mat.25.41"
+            },
+            {
+              "ref": "Jud.1.9"
+            }
+          ],
+          "kin": [
+            "accuse-arc"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵאכַל־קַרְצָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "accusation, slander",
+      "summary": "The Peshitta’s ܡܐܟܠ ܩܪܨܐ, the act of the ʾāḵel qarṣā: an accusation, slander.",
+      "cognate_ids": [
+        "akk-karsa-akalu",
+        "ar-akkala"
+      ],
+      "senses": [
+        {
+          "gloss": "accusation; slander",
+          "definition": "A charge brought against someone; evil-speaking.",
+          "evidence": [
+            {
+              "ref": "Jhn.18.29",
+              "role": "defining",
+              "note": "Pilate: “What accusation (κατηγορία) do you bring against this man?”"
+            },
+            {
+              "ref": "1Pe.2.1",
+              "role": "defining",
+              "note": "“Put away … all evil-speakings (καταλαλιάς).”"
+            },
+            {
+              "ref": "2Co.12.20"
+            },
+            {
+              "ref": "Rom.1.30",
+              "note": "“Slanderers (καταλάλους).”"
+            }
+          ],
+          "kin": [
+            "false-accuser",
+            "accuse-arc"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵאכוּלְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "food",
+      "summary": "The Peshitta’s ܡܐܟܘܠܬܐ, for βρῶμα and βρῶσις.",
+      "cognate_ids": [
+        "ar-ukul",
+        "akk-ukultu"
+      ],
+      "senses": [
+        {
+          "gloss": "food",
+          "definition": "What is eaten.",
+          "evidence": [
+            {
+              "ref": "Jhn.4.34",
+              "role": "defining",
+              "note": "“My food is to do the will of him who sent me.”"
+            },
+            {
+              "ref": "Jhn.6.27",
+              "role": "defining",
+              "note": "“Work not for the food that perishes, but for the food that endures to life everlasting.”"
+            },
+            {
+              "ref": "Jhn.6.55",
+              "note": "“My flesh is truly food.”"
+            },
+            {
+              "ref": "1Co.10.3"
+            },
+            {
+              "ref": "Mat.3.4",
+              "note": "John’s food was locusts and wild honey."
+            }
+          ],
+          "kin": [
+            "food",
+            "food-thing"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-akala",
+      "lang": "ar",
+      "form": "أَكَلَ",
+      "translit": "ʾakala",
+      "gloss": "eat; (of fire) consume; (form IV) feed; feed the fire with fuel",
+      "relation": "cognate",
+      "note": "Lane’s sources: “He ate it, namely, food”; figuratively “the fire devoured, or consumed, the firewood”, “he consumed his life”, a town “which shall devour the other towns”, and “the knife’s cutting the flesh”; form IV ʾākala “he gave him to eat … he fed, or supplied, the fire with fuel”. The same spread of senses as the Hebrew verb, and the Arabic for feeding a fire answers to מַאֲכֹלֶת.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 71, أَكَلَهُ (n992)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 71, آكل form IV (n994)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000561 ʾkl [eat] V, ARB000680 A^akala"
+        }
+      ]
+    },
+    {
+      "id": "ar-ukul",
+      "lang": "ar",
+      "form": "أُكُلٌ، أُكْلٌ، مَأْكَلٌ",
+      "translit": "ʾukul, ʾukl, maʾkal",
+      "gloss": "what is eaten, food; fruit",
+      "relation": "cognate",
+      "note": "“What is eaten; any eatable”, and the fruit of palm-trees and other trees; maʾkal is both the verbal noun and the place or time of eating. The pattern of מַאֲכָל.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 72, أُكُلٌ (n1001)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 73, مَأْكَلٌ (n1020)"
+        }
+      ]
+    },
+    {
+      "id": "ar-akilat-al-lahm",
+      "lang": "ar",
+      "form": "آكِلَةُ ٱللَّحْمِ",
+      "translit": "ʾākilat al-laḥm",
+      "gloss": "“the eater of flesh”: the knife",
+      "relation": "cognate",
+      "note": "Lane: “The knife; because it cuts the flesh”, also said of fire and of whips. The same naming as מַאֲכֶלֶת, the knife as that which eats flesh.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 73, آكِلٌ (n1017)"
+        }
+      ]
+    },
+    {
+      "id": "ar-akkala",
+      "lang": "ar",
+      "form": "أَكَّلَ، يَأْكُلُ لُحُومَ ٱلنَّاسِ",
+      "translit": "ʾakkala; yaʾkulu luḥūm an-nās",
+      "gloss": "(form II) charge, accuse; “eat men’s flesh”: defame",
+      "relation": "cognate",
+      "note": "Lane: “أَكَّلْتَنِى مَا لَمْ آكُلْ … thou hast charged against me, or accused me of doing, what I have not done”; “he eats the flesh of men, means he defames men”; form IV ʾākala bayna n-nās, “he busied himself among the people with propagating calumnies”. The Arabic, like Daniel’s Aramaic and Akkadian, speaks of accusation and slander as eating.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 71, اَكَّلَ form II"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 71, أَكَلَهُ (n992), b5; p. 71, آكل form IV (n994), b5"
+        }
+      ]
+    },
+    {
+      "id": "akk-akalu",
+      "lang": "akk",
+      "form": "akālu",
+      "translit": "akālu",
+      "gloss": "eat; consume (with fire); devour, devastate; (Š) feed",
+      "relation": "cognate",
+      "note": "Over 3,900 attestations in the Oracc glossaries, with the senses “eat, consume (with fire), devour, devastate, give to eat, feed”: the Hebrew verb’s senses, the fire’s eating among them.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005120, akālu [eat] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000561 ʾkl [eat] V, AKK000266 akālu [eat]"
+        }
+      ]
+    },
+    {
+      "id": "akk-akalu-food",
+      "lang": "akk",
+      "form": "akalu",
+      "translit": "akalu",
+      "gloss": "bread, food",
+      "relation": "cognate",
+      "note": "The noun “bread, loaf, food”, the form of אֹכֶל.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000006100, akalu [bread] N; armep x000003640, akalu [food] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-ukultu",
+      "lang": "akk",
+      "form": "ukultu",
+      "translit": "ukultu",
+      "gloss": "food; devouring",
+      "relation": "cognate",
+      "note": "“Food, morsel; devouring”: like אָכְלָה, both food and what is devoured.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000032310, ukultu [food] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-karsa-akalu",
+      "lang": "akk",
+      "form": "karṣī akālu",
+      "translit": "karṣa/karṣī akālu",
+      "gloss": "“eat the pieces of”: slander, accuse",
+      "relation": "cognate",
+      "note": "Akkadian’s own idiom, karṣu “slander” (from karāṣu “pinch off”) with akālu: the phrase of Dan 3:8 and 6:25, אֲכַל קַרְצֵי, word for word, and the source of the Peshitta’s ʾāḵel qarṣā.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000150090, karṣa akālu [slander]; armep x000011270, karṣu [slander] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-akl",
+      "lang": "uga",
+      "form": "𐎀𐎋𐎍",
+      "translit": "ʾkl",
+      "gloss": "eat; food",
+      "relation": "cognate",
+      "note": "Segert’s glossary: /ʾ-k-l/ “to eat”, and akl /ʾakl-/ “food”, compared with Hebrew ʾākal and Arabic ʾakala, ʾakl.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 179, §93 glossary, /ʾ-k-l/ and akl"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000561 ʾkl [eat] V, UGC000239 ʾkl [eat]"
+        }
+      ]
+    },
+    {
+      "id": "phn-akl",
+      "lang": "phn",
+      "form": "𐤀𐤊𐤋",
+      "translit": "ʾkl",
+      "gloss": "consume (of fire)",
+      "relation": "cognate",
+      "note": "Krahmalkov: “v. qal CONSUME (of fire)”, from Kilamuwa of Samʾal (KAI 24.5–7): “I was like a fire that consumed the beard and like a fire that consumed the hand.” The Hebrew fire that eats.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 48, ʾ-K-L"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000561 ʾkl [eat] V, PUN000101 ʾkl [consume]"
+        }
+      ]
+    },
+    {
+      "id": "arc-akal",
+      "lang": "arc",
+      "form": "אֲכַל",
+      "translit": "ʾăḵal",
+      "gloss": "eat; (af.) give to eat; (ithpe.) be eaten, consumed; with קַרְצֵי, inform against",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: “same” as Hebrew אָכַל (Targ. Gen 2:16), Af. “to give to eat, to support”, Ithpe. “to be eaten, consumed”; and “with קרצי … to inform against”, citing Dan 3:8; 6:25 and Targ. Ps 15:3, where it renders Hebrew “he does not slander with his tongue”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "A01697, אֲכַל"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000561 ʾkl [eat] V, ARM001254 ʾKL [eat]"
+        }
+      ]
+    },
+    {
+      "id": "sab-akl",
+      "lang": "sem",
+      "form": "𐩱𐩫𐩡",
+      "translit": "ʾkl",
+      "gloss": "meal, grain, cereal crops",
+      "relation": "cognate",
+      "note": "Sabaic (Old South Arabian): ʾklm “meal or grain, cereal crops” (Gl 1537/7, “irrigation crops and cereals and vegetables”; C 548/12 an offering of “meal”), compared by Biella with Ethiopic ʾekl “wheat, meal”. Food as grain, as אֹכֶל is in Gen 41–44.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 15, ʾKL I"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Yahweh gave man every tree of the garden to eat but one, “for in the day you eat of it, dying you shall die” (Gen 2:16–17). They ate (Gen 3:6), and the sentence was that man would eat bread in toil “until you return to the ground, for dust you are, and to dust you shall return” (Gen 3:17–19). He was then barred from the tree of life, “lest he put out his hand and take also of the tree of life, and eat, and live forever” (Gen 3:22–24). So man was not made undying: living forever was to be had by eating what God gave, and was shut off by sin. Christ takes up the same terms: “if anyone eats of this bread he will live forever” (Jhn 6:51), “whoever eats my flesh and drinks my blood has life everlasting, and I will raise him up at the last day” (Jhn 6:54), and to him who overcomes “I will give to eat of the tree of life” (Rev 2:7; 22:2, 14). From the verses: death came by eating what was forbidden; life forever is not man’s by nature but a gift, given at the resurrection to those who have fed on Christ.",
+      "evidence": [
+        {
+          "ref": "Gen.2.16",
+          "to": "Gen.2.17"
+        },
+        {
+          "ref": "Gen.3.6"
+        },
+        {
+          "ref": "Gen.3.17",
+          "to": "Gen.3.19"
+        },
+        {
+          "ref": "Gen.3.22",
+          "to": "Gen.3.24"
+        },
+        {
+          "ref": "Jhn.6.51"
+        },
+        {
+          "ref": "Jhn.6.54"
+        },
+        {
+          "ref": "Rev.2.7"
+        },
+        {
+          "ref": "Rev.22.2"
+        },
+        {
+          "ref": "Rev.22.14"
+        }
+      ]
+    },
+    {
+      "topic": "creation",
+      "statement": "On the sixth day God gave man the seed-bearing plants and fruit-trees “for food” (לְאָכְלָה), and to every beast, bird and creeping thing in which there is a living soul “every green plant for food”; then he saw all he had made, “and behold, it was very good” (Gen 1:29–31). Only after the flood does he give flesh: “every moving thing that lives shall be food for you; as the green plant, I have given you all” (Gen 9:3), the “as the green plant” pointing back to Gen 1:29–30. And in the kingdom “the lion shall eat straw like the ox … they shall not hurt nor destroy in all my holy mountain” (Isa 11:7–9; 65:25). From the verses: as God made the world, no creature was food for another, man or beast; the eating of flesh came after sin and the flood, and the kingdom brings the first order back.",
+      "evidence": [
+        {
+          "ref": "Gen.1.29",
+          "to": "Gen.1.31"
+        },
+        {
+          "ref": "Gen.9.3"
+        },
+        {
+          "ref": "Isa.11.7",
+          "to": "Isa.11.9"
+        },
+        {
+          "ref": "Isa.65.25"
+        }
+      ]
+    },
+    {
+      "topic": "consuming-fire",
+      "statement": "Yahweh is “a fire that eats, a jealous God” (Deu 4:24; 9:3), and Hebrews repeats it to believers: “our God is a consuming fire” (Heb 12:29). What his fire eats is gone: it consumed the accepted offering on the altar (Lev 9:24; 1Ki 18:38); it “devoured” Nadab and Abihu, “and they died” (Lev 10:2); it consumed the 250 men (Num 16:35) and the captains of fifty (2Ki 1:10). Isaiah says the fire will devour Yahweh’s adversaries (Isa 26:11), and Hebrews applies it to those who turn back from Christ, “a fury of fire about to devour the adversaries” (Heb 10:27); Obadiah, that Esau will be stubble devoured “and there shall be no survivor” (Oba 1:18). From the verses: in scripture’s own picture, what the fire of judgment eats is consumed, brought to an end, not kept alive in it; and the one who may dwell with the fire that eats is “he who walks righteously” (Isa 33:14–15).",
+      "evidence": [
+        {
+          "ref": "Deu.4.24"
+        },
+        {
+          "ref": "Deu.9.3"
+        },
+        {
+          "ref": "Heb.12.29"
+        },
+        {
+          "ref": "Lev.9.24"
+        },
+        {
+          "ref": "1Ki.18.38"
+        },
+        {
+          "ref": "Lev.10.2"
+        },
+        {
+          "ref": "Num.16.35"
+        },
+        {
+          "ref": "2Ki.1.10"
+        },
+        {
+          "ref": "Isa.26.11"
+        },
+        {
+          "ref": "Heb.10.27"
+        },
+        {
+          "ref": "Oba.1.18"
+        },
+        {
+          "ref": "Isa.33.14",
+          "to": "Isa.33.15"
+        }
+      ]
+    },
+    {
+      "topic": "false-accuser",
+      "statement": "In Daniel’s Aramaic, to “eat the pieces of” a man is to accuse him: the Chaldeans did it to the Jews who would not worship the image (Dan 3:8), and the officials who did it to Daniel were cast to the lions (Dan 6:25). The Peshitta makes its word for the Greek διάβολος from this phrase, ʾāḵel qarṣā, “eater of pieces”: an accuser. It uses the word of men, the “false accusers” of the last days (2Ti 3:3), and the verb of the steward who “was accused” to his master (Luk 16:1). It is the word in Jesus’ saying to men who sought to kill him, “you are of your father the false accuser” (Jhn 8:44), in “the false accuser is about to cast some of you into prison” (Rev 2:10), which the ruling powers did, and in the wilderness (Mat 4:1–11; Luk 4:2–13), where the false accuser who offered Jesus the kingdoms if he would bow down was the delegation of the Jewish leaders, wanting him as their puppet king. From the verses: the word names what a person does, accusing falsely; it is said of men, and of powers made up of men.",
+      "evidence": [
+        {
+          "ref": "Dan.3.8"
+        },
+        {
+          "ref": "Dan.6.25"
+        },
+        {
+          "ref": "2Ti.3.3"
+        },
+        {
+          "ref": "Luk.16.1"
+        },
+        {
+          "ref": "Jhn.8.44"
+        },
+        {
+          "ref": "Rev.2.10"
+        },
+        {
+          "ref": "Mat.4.1",
+          "to": "Mat.4.11"
+        },
+        {
+          "ref": "Luk.4.2",
+          "to": "Luk.4.13"
+        }
+      ]
+    },
+    {
+      "topic": "feasts",
+      "statement": "Yahweh’s feasts were kept by eating. The Passover lamb was eaten that night with מַצּוֹת and bitter herbs (Exo 12:8–11), and for the seven days of the feast of מַצּוֹת “you shall eat unleavened bread” (Lev 23:6). Of the new harvest Israel could eat nothing, “neither bread nor roasted grain nor fresh ears, until this very day, until you have brought the offering of your God” (Lev 23:14): the עֹמֶר of firstfruits was Yahweh’s before any of it was theirs, and when they first ate of the land the manna ceased (Jos 5:11–12). The priests ate the sin offering “to bear the iniquity of the congregation, to make covering for them” (Lev 10:17), and the people ate “before Yahweh” and rejoiced (Deu 12:7). Paul names Christ “our Passover, sacrificed for us; therefore let us keep the feast … with the unleavened bread of sincerity and truth” (1Co 5:7–8), and “the firstfruits of those who have fallen asleep” (1Co 15:20, 23); and whenever believers eat the bread and drink the cup they “proclaim the Lord’s death until he comes” (1Co 11:26). From the verses: eating at Yahweh’s feasts was sharing in his offering; the firstfruits offered before the harvest is eaten is Christ raised first, and the harvest follows at his coming.",
+      "evidence": [
+        {
+          "ref": "Exo.12.8",
+          "to": "Exo.12.11"
+        },
+        {
+          "ref": "Lev.23.6"
+        },
+        {
+          "ref": "Lev.23.14"
+        },
+        {
+          "ref": "Jos.5.11",
+          "to": "Jos.5.12"
+        },
+        {
+          "ref": "Lev.10.17"
+        },
+        {
+          "ref": "Deu.12.7"
+        },
+        {
+          "ref": "1Co.5.7",
+          "to": "1Co.5.8"
+        },
+        {
+          "ref": "1Co.15.20"
+        },
+        {
+          "ref": "1Co.15.23"
+        },
+        {
+          "ref": "1Co.11.26"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (תֹּאכֵלוּ, Lev 23:6; תֹאכְלוּ, 23:14). Root key אכל as the database has it. Every BDB word under the root is kept. BDB key a.dc.aa also counts 2Sa 22:39 וָאֲכַלֵּם and Ezk 43:8 וָאֲכַל (piel), which are forms of כלה “finish, consume” (piel), not this root, so no piel stem is entered; and Ezk 21:33 לְהָכִיל (counted under the hiphil, “polished to consume”), which may be הֵכִיל “contain” (כול); BDB’s note on Pro 30:1 וְאֻכָל (read וָאֵכֶל, see כלה) is left out. Its ‘no stem’ tokens (Exo 12:4; 16:16, 18, 21; Mal 1:12, אָכְלוֹ) are also counted under אֹכֶל (a.dc.ab), where they are cited. The forms אֻכַּל (Exo 3:2; Isa 1:20; Nam 1:10; Neh 2:3, 13) are entered as pual; they may be a qal passive. The Aramaic key xa.al.aa counts seventeen Hebrew qal forms spelled אָכְלָה (Num 21:28; Jol 1:19 etc.) besides its seven tokens in Daniel (3:8; 4:30; 6:25; 7:5, 7, 19, 23), so its use count is high. m.ad.ah and m.bx.ae are zero-token cross-references, put on מַאֲכָל and מַכֹּלֶת. Klein’s אוֹכִיל (Hos 11:4) is the hiphil of the verb and is cited there. Peshitta: SEDRA root 89 ܐܟܠ, lexemes 112 ܐܟܠ (eat; accuse; feed), 113 ܐܟܠ ܩܪܨܐ (accuser, for διάβολος ×17), 116 ܡܐܟܘܠܬܐ (food), 117 ܡܐܟܠ ܩܪܨܐ (accusation), found in the BFBS word list; verse lists taken from it. Not entered: 111 ܐܟܘܠܐ glutton (Mat 11:19; Luk 7:34, for φάγος), 115 ܐܟܠܐ eater, moth (Mat 6:19–20; Heb 12:29 ‘devouring fire’), 118 ܡܐܟܠܐ food (Rom 14:17; Col 2:16; Heb 9:10); the Hebrew-script pointings of the Syriac lemmas are approximate and should be checked against Payne Smith. Not consulted: Geʿez (Dillmann, Leslau) for ʾəkl “grain, food”, known here only from Biella’s comparison; Payne Smith for the Syriac. No merged letters in the root. Judgment calls for review: (1) the doctrine ‘false-accuser’ states the wilderness reading of Mat 4 / Luk 4 and of Rev 2:10 as the ruling powers; (2) the ‘creation’ doctrine reads Gen 1:29–30 and 9:3 as no flesh-eating before the flood; (3) the ‘consuming-fire’ doctrine’s conclusion that judgment consumes rather than torments."
+}
