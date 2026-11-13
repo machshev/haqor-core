@@ -1,0 +1,1124 @@
+{
+  "id": "im",
+  "root": "אמ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "condition",
+    "oath",
+    "question",
+    "covenant"
+  ],
+  "gloss": "if; whether, or; (in an oath) surely not; (after a negative) except",
+  "summary": "אִם is the Hebrew Bible's commonest \"if\". It sets a condition: in the law's cases (\"and if they blow with one trumpet\", Num 10:4), in Yahweh's covenant (\"if you will indeed obey my voice\", Exo 19:5), in a wish (\"if only you would listen to me\", Psa 81:9), or in a concession (\"though your sins be as scarlet\", Isa 1:18). It also asks: \"whether\", and \"or\" in the second half of a double question (Jos 5:13). In an oath it stands before the curse the speaker leaves unsaid, so \"as I live, if they see the land\" means \"they shall surely not see it\" and אִם לֹא means \"surely\" (Num 14:23, 28; Psa 95:11 with Heb 3:11); after a negative, כִּי אִם is \"but, except\" (Gen 32:27; Mic 6:8). It has no root: no Hebrew verb or noun with these letters gives its sense, and the related languages keep it apart from אֵם \"mother\". Its kin are other particles, Phoenician ʾm, Ugaritic hm and ʾim, Sabaean hm, Arabic ʾin, Syriac ʾen, which share its senses down to the oath, so the entry is keyed by its own consonants.",
+  "words": [
+    {
+      "lemma": "אִם",
+      "bdb": [
+        "a.du.af"
+      ],
+      "cognate_ids": [
+        "ar-in",
+        "ar-am",
+        "uga-hm",
+        "uga-im",
+        "phn-m",
+        "sab-hm",
+        "gez-emma",
+        "akk-shumma"
+      ],
+      "pos": "conjunction",
+      "gloss": "if; though; when; O that; whether, or; (oath) surely not; (כִּי אִם) except",
+      "summary": "A particle and nothing more: it never inflects and comes from no verb or noun. The related languages show it with ʾ or h at the front (Ugaritic ʾim beside hm; Arabic ʾin, and hin in the dialect of Ṭayyiʾ) and with m or n at the end (Arabic ʾin, Syriac ʾen). This points to the same pointing particle as Hebrew and Aramaic הֵן \"lo; if\" (Jer 3:1; Dan 3:15), but that is a likely origin for a particle, not a root, and the link to הֵן rests on the languages' sound patterns, not on any verse.",
+      "senses": [
+        {
+          "id": "im-if",
+          "gloss": "if",
+          "definition": "Sets a condition on which what follows depends. In the law, a case opened by כִּי is divided into its sub-cases by אִם; elsewhere it lays down terms, sets out choices or names what Yahweh will do in either case.",
+          "evidence": [
+            {
+              "ref": "Num.10.4",
+              "role": "defining",
+              "note": "After \"when they blow with them (both)\" in Num 10:3: \"and if they blow with one, then the princes … shall gather to you\"."
+            },
+            {
+              "ref": "Exo.21.5",
+              "role": "defining",
+              "note": "The servant of Exo 21:2 (כִּי תִקְנֶה): \"if he came in by himself\" (21:3), \"if his master gives him a wife\" (21:4), \"and if the servant says plainly, I love my master\"."
+            },
+            {
+              "ref": "Lev.1.3",
+              "role": "defining",
+              "note": "After \"when (כִּי) any man brings an offering\" (Lev 1:2): \"if his offering is a burnt offering from the herd\", and \"if … from the flock\" (Lev 1:10)."
+            },
+            {
+              "ref": "Lev.1.10"
+            },
+            {
+              "ref": "Gen.18.26",
+              "note": "\"If I find in Sodom fifty righteous within the city, then I will spare all the place.\""
+            },
+            {
+              "ref": "Gen.4.7",
+              "note": "\"If you do well, will there not be lifting up? And if you do not do well, sin crouches at the door.\""
+            },
+            {
+              "ref": "1Ki.18.21",
+              "note": "\"If Yahweh is God, follow him; but if Baal, follow him.\""
+            },
+            {
+              "ref": "Jos.24.15",
+              "note": "\"If it is evil in your eyes to serve Yahweh, choose this day whom you will serve.\""
+            },
+            {
+              "ref": "Exo.19.5",
+              "note": "\"If you will indeed obey my voice and keep my covenant, you shall be my own treasure.\""
+            },
+            {
+              "ref": "Isa.7.9",
+              "note": "אִם לֹא תַאֲמִינוּ כִּי לֹא תֵאָמֵנוּ: \"if you will not believe, surely you shall not be established\"."
+            },
+            {
+              "ref": "Mal.3.10",
+              "note": "\"Prove me now in this … if I will not open to you the windows of heaven.\""
+            },
+            {
+              "ref": "Amo.3.6",
+              "note": "Put as a question: \"Is a trumpet blown in a city, and the people not afraid?\""
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "since, seeing that",
+              "definition": "A condition the speaker knows is already met: \"if (as is the case)\".",
+              "evidence": [
+                {
+                  "ref": "Gen.47.16",
+                  "role": "defining",
+                  "note": "\"Give your livestock, and I will give you bread for your livestock, if (since) the silver is gone.\""
+                },
+                {
+                  "ref": "Gen.43.11",
+                  "note": "אִם־כֵּן אֵפוֹא: \"if it must be so, then do this\"."
+                }
+              ]
+            },
+            {
+              "gloss": "if (it were so), were it so",
+              "definition": "A case put to show what would follow, though it is not or cannot be so.",
+              "evidence": [
+                {
+                  "ref": "Psa.50.12",
+                  "role": "defining",
+                  "note": "\"If I were hungry, I would not tell you, for the world is mine and its fullness.\""
+                },
+                {
+                  "ref": "Psa.139.8",
+                  "role": "defining",
+                  "note": "\"If I go up to heaven, you are there; if I make my bed in the grave (שְׁאוֹל), behold, you.\""
+                },
+                {
+                  "ref": "Amo.9.2",
+                  "note": "\"Though they dig into the grave, from there my hand shall take them.\""
+                },
+                {
+                  "ref": "Psa.73.15",
+                  "note": "\"If I had said, I will speak thus, behold, I would have dealt falsely with the generation of your children.\""
+                }
+              ]
+            },
+            {
+              "gloss": "though, even if",
+              "definition": "A condition granted that does not change the outcome.",
+              "evidence": [
+                {
+                  "ref": "Isa.1.18",
+                  "role": "defining",
+                  "note": "\"Though your sins be as scarlet, they shall be as white as snow.\""
+                },
+                {
+                  "ref": "Psa.27.3",
+                  "role": "defining",
+                  "note": "\"Though a host encamp against me, my heart shall not fear.\""
+                },
+                {
+                  "ref": "Isa.10.22",
+                  "note": "\"Though your people Israel be as the sand of the sea, a remnant of them shall return\"; Rom 9:27 renders the אִם by ἐάν."
+                },
+                {
+                  "ref": "Job.9.15",
+                  "note": "\"Though I were righteous, I would not answer him.\""
+                },
+                {
+                  "ref": "Job.14.8",
+                  "note": "Of the tree cut down: \"though its root grow old in the earth\"."
+                }
+              ]
+            },
+            {
+              "gloss": "when, whenever",
+              "definition": "A condition sure to come, or one that recurs, read as a time.",
+              "evidence": [
+                {
+                  "ref": "Num.36.4",
+                  "role": "defining",
+                  "note": "\"And when the jubilee of the sons of Israel comes\"."
+                },
+                {
+                  "ref": "Gen.38.9",
+                  "role": "defining",
+                  "note": "\"Whenever he went in to his brother's wife, he spilled it on the ground.\""
+                },
+                {
+                  "ref": "Psa.78.34",
+                  "note": "\"When he slew them, then they sought him.\""
+                },
+                {
+                  "ref": "Isa.24.13",
+                  "note": "\"As the gleaning of grapes when the vintage is done.\""
+                },
+                {
+                  "ref": "Amo.7.2",
+                  "note": "\"And when they had finished eating the grass of the land\"."
+                }
+              ]
+            },
+            {
+              "gloss": "O that, if only",
+              "definition": "A condition with nothing to follow it, so that it becomes a wish or plea.",
+              "evidence": [
+                {
+                  "ref": "Psa.81.9",
+                  "role": "defining",
+                  "note": "\"O Israel, if only you would listen to me!\""
+                },
+                {
+                  "ref": "Psa.95.7",
+                  "role": "defining",
+                  "note": "\"Today, if you would hear his voice!\": Heb 3:7, 15 and 4:7 read it as the call still open \"today\"."
+                },
+                {
+                  "ref": "Psa.139.19",
+                  "note": "\"O that you would slay the wicked, O God!\""
+                },
+                {
+                  "ref": "1Ch.4.10",
+                  "note": "Jabez: \"If you would bless me indeed, and enlarge my border!\""
+                },
+                {
+                  "ref": "Gen.23.13",
+                  "note": "\"But if you will, please hear me.\""
+                },
+                {
+                  "ref": "Exo.32.32",
+                  "role": "defining",
+                  "note": "Moses: \"And now, if you will forgive their sin —; and if not, blot me, I pray, out of your book.\" The first condition is left without its outcome."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "im-oath",
+          "gloss": "(in an oath) surely not",
+          "definition": "In an oath the speaker calls a curse on himself \"if\" a thing is done; the curse is usually left unsaid, so \"if\" alone means \"surely not\". Hebrews quotes Psa 95:11 with the same \"if\" (εἰ), and the Peshitta renders it \"that they shall not enter\".",
+          "evidence": [
+            {
+              "ref": "2Sa.3.35",
+              "role": "defining",
+              "note": "The full form: \"So may God do to me, and more also, if I taste bread or anything before the sun goes down\"."
+            },
+            {
+              "ref": "1Sa.3.17",
+              "role": "defining",
+              "note": "\"May God do so to you, and more also, if you hide from me a word.\""
+            },
+            {
+              "ref": "Num.14.23",
+              "role": "defining",
+              "note": "\"If they shall see the land that I swore to their fathers\": they shall not see it."
+            },
+            {
+              "ref": "Psa.95.11",
+              "role": "defining",
+              "note": "\"So I swore in my anger, if they shall enter into my rest.\""
+            },
+            {
+              "ref": "Heb.3.11",
+              "role": "defining",
+              "note": "Quotes Psa 95:11 with εἰ; the Peshitta has ܕܠܐ ܢܥܠܘܢ, \"that they shall not enter\"."
+            },
+            {
+              "ref": "Heb.4.3"
+            },
+            {
+              "ref": "Heb.4.5"
+            },
+            {
+              "ref": "Num.14.30",
+              "note": "\"If you shall come into the land … except Caleb … and Joshua.\""
+            },
+            {
+              "ref": "Gen.14.23",
+              "note": "Abram: \"if (I take) from a thread to a sandal strap\": not even that."
+            },
+            {
+              "ref": "1Sa.14.45",
+              "note": "\"As Yahweh lives, if one hair of his head falls to the ground.\""
+            },
+            {
+              "ref": "2Ki.2.2",
+              "note": "\"As Yahweh lives and as your soul lives, if I leave you\": I will not leave you."
+            },
+            {
+              "ref": "Ezk.14.16",
+              "note": "\"As I live … if they shall deliver sons or daughters\": they shall deliver neither."
+            },
+            {
+              "ref": "1Sa.3.14",
+              "note": "\"I have sworn to the house of Eli, if the iniquity of Eli's house shall be atoned for by sacrifice or offering forever.\""
+            },
+            {
+              "ref": "Mrk.8.12",
+              "note": "Jesus uses the same oath in Greek: \"Truly I say to you, if (εἰ) a sign shall be given to this generation\"; the Peshitta has ܕܠܐ, \"that … not\"."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "(אִם לֹא) surely",
+              "definition": "\"If not\" in an oath: the curse falls if the thing is not done, so it means \"surely\".",
+              "evidence": [
+                {
+                  "ref": "Num.14.28",
+                  "role": "defining",
+                  "note": "\"As I live, says Yahweh, surely (אִם־לֹא) as you have spoken in my ears, so I will do to you.\""
+                },
+                {
+                  "ref": "Isa.14.24",
+                  "role": "defining",
+                  "note": "\"Yahweh of hosts has sworn, saying, Surely as I have thought, so it shall come to pass.\""
+                },
+                {
+                  "ref": "Jos.14.9",
+                  "note": "\"Moses swore on that day, saying, Surely the land on which your foot has trodden shall be yours.\""
+                },
+                {
+                  "ref": "1Ki.20.23",
+                  "note": "\"Let us fight against them in the plain, and surely we shall be stronger than they.\""
+                },
+                {
+                  "ref": "Job.1.11",
+                  "note": "\"Touch all that he has, and surely he will curse you to your face.\""
+                },
+                {
+                  "ref": "Gen.24.38",
+                  "note": "\"But (אִם־לֹא) you shall go to my father's house.\""
+                }
+              ]
+            },
+            {
+              "gloss": "(adjuring) do not",
+              "definition": "After \"I adjure you\", the same form forbids.",
+              "evidence": [
+                {
+                  "ref": "Sng.2.7",
+                  "role": "defining",
+                  "note": "\"I adjure you, daughters of Jerusalem … that you do not stir up nor awaken love until it pleases.\""
+                },
+                {
+                  "ref": "Sng.3.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "im-question",
+          "gloss": "whether; or (in questions)",
+          "definition": "Introduces a question, most often the second half of a double question opened by הֲ (\"… or …?\"), or an indirect question (\"whether\"); repeated, אִם … אִם sets out alternatives, \"whether … or\".",
+          "evidence": [
+            {
+              "ref": "Jos.5.13",
+              "role": "defining",
+              "note": "הֲלָנוּ אַתָּה אִם־לְצָרֵינוּ: \"Are you for us, or for our adversaries?\""
+            },
+            {
+              "ref": "Num.13.18",
+              "role": "defining",
+              "note": "\"Whether they are strong or weak, few or many\"."
+            },
+            {
+              "ref": "Gen.27.21",
+              "note": "\"Whether you are my son Esau or not\"."
+            },
+            {
+              "ref": "Gen.37.32",
+              "note": "\"Know now whether it is your son's tunic or not.\""
+            },
+            {
+              "ref": "Exo.16.4",
+              "note": "\"That I may test them, whether they will walk in my law or not.\""
+            },
+            {
+              "ref": "Jdg.2.22",
+              "note": "\"Whether they will keep the way of Yahweh … or not.\""
+            },
+            {
+              "ref": "1Ki.1.27",
+              "note": "A question alone: \"Is this thing done by my lord the king?\""
+            },
+            {
+              "ref": "Job.6.12",
+              "note": "\"Is my strength the strength of stones? Is my flesh bronze?\""
+            },
+            {
+              "ref": "Jer.48.27",
+              "note": "\"Was he found among thieves?\""
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "whether (indirect question)",
+              "definition": "After a verb of asking, seeing or knowing: \"whether\".",
+              "evidence": [
+                {
+                  "ref": "2Ki.1.2",
+                  "role": "defining",
+                  "note": "\"Go, inquire of Baal-zebub … whether I shall recover from this sickness.\""
+                },
+                {
+                  "ref": "Gen.24.21",
+                  "role": "defining",
+                  "note": "\"To know whether Yahweh had made his journey prosper or not\"."
+                },
+                {
+                  "ref": "Sng.7.13",
+                  "note": "\"Let us see whether the vine has budded.\""
+                }
+              ]
+            },
+            {
+              "gloss": "whether … or (alternatives)",
+              "definition": "אִם … אִם, or אִם … וְאִם, sets out the alternatives a rule covers.",
+              "evidence": [
+                {
+                  "ref": "Lev.3.1",
+                  "role": "defining",
+                  "note": "\"Whether male or female (אִם־זָכָר אִם־נְקֵבָה), he shall offer it without blemish.\""
+                },
+                {
+                  "ref": "Exo.19.13",
+                  "role": "defining",
+                  "note": "\"Whether beast or man, it shall not live.\""
+                },
+                {
+                  "ref": "2Sa.15.21",
+                  "note": "Ittai: \"whether for death or for life, there will your servant be\"."
+                },
+                {
+                  "ref": "Deu.18.3",
+                  "note": "\"Whether ox or sheep\"."
+                },
+                {
+                  "ref": "Ecc.11.3",
+                  "note": "\"Whether a tree falls to the south or to the north\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "im-except",
+          "gloss": "(כִּי אִם, בִּלְתִּי אִם) but, except, unless",
+          "definition": "After a negative, or a question expecting \"nothing\", כִּי אִם brings in the only exception or the true alternative: \"except, unless\", \"but rather\".",
+          "evidence": [
+            {
+              "ref": "Gen.32.27",
+              "role": "defining",
+              "note": "\"I will not let you go unless you bless me.\""
+            },
+            {
+              "ref": "Gen.15.4",
+              "role": "defining",
+              "note": "\"This one shall not be your heir, but one who comes from your own body shall be your heir.\""
+            },
+            {
+              "ref": "Mic.6.8",
+              "role": "defining",
+              "note": "\"What does Yahweh require of you but to do justice, to love kindness, and to walk humbly with your God?\""
+            },
+            {
+              "ref": "1Sa.8.19",
+              "note": "\"No, but there shall be a king over us.\""
+            },
+            {
+              "ref": "Gen.39.9",
+              "note": "\"He has kept back nothing from me except you, because you are his wife.\""
+            },
+            {
+              "ref": "Gen.40.14",
+              "note": "\"But remember me when it is well with you.\""
+            },
+            {
+              "ref": "Gen.42.15",
+              "note": "\"You shall not go out from here unless your youngest brother comes here.\""
+            },
+            {
+              "ref": "Gen.47.18",
+              "note": "בִּלְתִּי אִם־גְּוִיָּתֵנוּ: \"nothing is left … except our bodies and our land\"."
+            },
+            {
+              "ref": "Amo.3.7",
+              "note": "\"The Lord Yahweh does nothing unless he reveals his secret to his servants the prophets.\""
+            },
+            {
+              "ref": "Ezk.33.11",
+              "note": "\"I have no pleasure in the death of the wicked, but rather that the wicked turn from his way and live.\""
+            },
+            {
+              "ref": "Isa.55.11",
+              "note": "\"It shall not return to me empty, but it shall accomplish what I please.\""
+            }
+          ]
+        },
+        {
+          "id": "im-until",
+          "gloss": "(עַד אִם, עַד אֲשֶׁר אִם) until",
+          "definition": "With עַד, the condition becomes the point things wait for: \"until\".",
+          "evidence": [
+            {
+              "ref": "Gen.24.19",
+              "role": "defining",
+              "note": "\"I will draw for your camels also, until they have finished drinking.\""
+            },
+            {
+              "ref": "Gen.24.33",
+              "note": "\"I will not eat until I have told my errand.\""
+            },
+            {
+              "ref": "Gen.28.15",
+              "note": "\"I will not leave you until I have done what I have spoken to you.\""
+            },
+            {
+              "ref": "Isa.6.11",
+              "note": "\"Until cities lie waste without inhabitant\"."
+            },
+            {
+              "ref": "Isa.30.17",
+              "note": "\"Until you are left as a flagstaff on the top of a mountain\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐάν",
+          "gloss": "if",
+          "evidence": [
+            {
+              "ref": "Heb.3.7",
+              "note": "Quotes Psa 95:7, \"today, if (ἐάν) you will hear his voice\"; again Heb 3:15 and 4:7."
+            },
+            {
+              "ref": "Heb.3.15"
+            },
+            {
+              "ref": "Heb.4.7"
+            },
+            {
+              "ref": "Rom.9.27",
+              "note": "Quotes Isa 10:22: \"though (ἐάν) the number of the sons of Israel be as the sand of the sea\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 10:4 word 1",
+              "note": "ἐάν for וְאִם־בְּאַחַת: \"and if with one\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 95:7 word 10",
+              "note": "ἐάν for אִם."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 10:22 word 2",
+              "note": "ἐάν for אִם."
+            }
+          ]
+        },
+        {
+          "lemma": "εἰ",
+          "gloss": "if; (in an oath, after Hebrew use) surely not",
+          "evidence": [
+            {
+              "ref": "Heb.3.11",
+              "note": "Quotes Psa 95:11: \"I swore in my wrath, if (εἰ) they shall enter into my rest\"; again Heb 4:3, 5."
+            },
+            {
+              "ref": "Heb.4.3"
+            },
+            {
+              "ref": "Heb.4.5"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 95:11 word 4",
+              "note": "εἰ for the oath's אִם."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 14:23 word 1",
+              "note": "εἰ for Abram's oath: \"if from a thread to a sandal strap\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 18:3 word 3",
+              "note": "εἰ in אִם־נָא מָצָאתִי חֵן."
+            }
+          ]
+        },
+        {
+          "lemma": "ἤ",
+          "gloss": "or; (after a negative) but, than",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "JOS 5:13 word 22",
+              "note": "ἤ for אִם in \"for us or for our adversaries?\""
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "MIC 6:8 word 11",
+              "note": "ἤ for כִּי אִם, \"but to do justice\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "1SA 8:19 word 9",
+              "note": "ἤ for כִּי אִם, \"no, but a king\"."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כִּי",
+            "note": "The law opens a case with כִּי \"when\" and divides it with אִם \"if\": the servant bought (Exo 21:2) and the sub-cases of 21:3–5; the offering brought (Lev 1:2) and its kinds (Lev 1:3, 10).",
+            "evidence": [
+              {
+                "ref": "Exo.21.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.21.3"
+              },
+              {
+                "ref": "Lev.1.2"
+              },
+              {
+                "ref": "Lev.1.3"
+              }
+            ]
+          },
+          {
+            "lemma": "הֲ",
+            "note": "The question particle opens a double question and אִם brings in its second half.",
+            "evidence": [
+              {
+                "ref": "Jos.5.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.13.18"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כִּי אִם",
+            "gloss": "but rather; except, unless",
+            "evidence": [
+              {
+                "ref": "Gen.32.27"
+              },
+              {
+                "ref": "Gen.15.4"
+              },
+              {
+                "ref": "Mic.6.8"
+              },
+              {
+                "ref": "Amo.3.7"
+              }
+            ]
+          },
+          {
+            "phrase": "אִם לֹא",
+            "gloss": "(in an oath) surely; (otherwise) if not",
+            "evidence": [
+              {
+                "ref": "Num.14.28"
+              },
+              {
+                "ref": "Isa.14.24"
+              },
+              {
+                "ref": "Isa.7.9"
+              }
+            ]
+          },
+          {
+            "phrase": "חַי יַהְוֶה אִם",
+            "gloss": "as Yahweh lives, (surely) not …",
+            "evidence": [
+              {
+                "ref": "1Sa.14.45"
+              },
+              {
+                "ref": "2Ki.2.2"
+              }
+            ]
+          },
+          {
+            "phrase": "חַי אָנִי אִם",
+            "gloss": "as I live, (surely) not …: Yahweh's own oath",
+            "evidence": [
+              {
+                "ref": "Ezk.14.16"
+              },
+              {
+                "ref": "Num.14.28"
+              }
+            ]
+          },
+          {
+            "phrase": "כֹּה יַעֲשֶׂה־לִּי אֱלֹהִים וְכֹה יֹסִיף אִם",
+            "gloss": "God do so to me and more also, if …: the oath's curse spelled out",
+            "evidence": [
+              {
+                "ref": "2Sa.3.35"
+              },
+              {
+                "ref": "1Sa.3.17"
+              }
+            ]
+          },
+          {
+            "phrase": "הֲ… אִם",
+            "gloss": "… or …?",
+            "evidence": [
+              {
+                "ref": "Jos.5.13"
+              },
+              {
+                "ref": "Num.13.18"
+              }
+            ]
+          },
+          {
+            "phrase": "אִם… אִם / אִם… וְאִם",
+            "gloss": "whether … or",
+            "evidence": [
+              {
+                "ref": "Lev.3.1"
+              },
+              {
+                "ref": "Exo.19.13"
+              },
+              {
+                "ref": "2Sa.15.21"
+              }
+            ]
+          },
+          {
+            "phrase": "וְאִם אַיִן / וְאִם לֹא",
+            "gloss": "and if not, or else",
+            "evidence": [
+              {
+                "ref": "Gen.30.1"
+              },
+              {
+                "ref": "Exo.32.32"
+              },
+              {
+                "ref": "Gen.18.21"
+              }
+            ]
+          },
+          {
+            "phrase": "אִם־נָא מָצָאתִי חֵן בְּעֵינֶיךָ",
+            "gloss": "if now I have found favour in your eyes",
+            "evidence": [
+              {
+                "ref": "Gen.18.3"
+              },
+              {
+                "ref": "Gen.33.10"
+              },
+              {
+                "ref": "Exo.33.13"
+              },
+              {
+                "ref": "Exo.34.9"
+              },
+              {
+                "ref": "Jdg.6.17"
+              }
+            ]
+          },
+          {
+            "phrase": "אִם־כֵּן",
+            "gloss": "if so",
+            "evidence": [
+              {
+                "ref": "Gen.25.22"
+              },
+              {
+                "ref": "Gen.43.11"
+              }
+            ]
+          },
+          {
+            "phrase": "עַד אִם / עַד אֲשֶׁר אִם",
+            "gloss": "until",
+            "evidence": [
+              {
+                "ref": "Gen.24.19"
+              },
+              {
+                "ref": "Gen.28.15"
+              },
+              {
+                "ref": "Isa.6.11"
+              }
+            ]
+          },
+          {
+            "phrase": "בִּלְתִּי אִם",
+            "gloss": "except",
+            "evidence": [
+              {
+                "ref": "Gen.47.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֶן",
+      "lang": "syc",
+      "root": "אנ",
+      "cognate_ids": [
+        "ar-in",
+        "sab-hm",
+        "uga-hm",
+        "gez-emma"
+      ],
+      "pos": "conjunction",
+      "gloss": "if; whether; though",
+      "summary": "The Peshitta's ܐܶܢ (ʾen), its word for εἰ and ἐάν (about 680 uses with its prefixes ܕ and ܘ), and its word for the Hebrew אִם where the New Testament quotes it (Heb 3:7; Rom 9:27). It ends in n where Hebrew has m, as Arabic ʾin does; where Psa 95:11's אִם is an oath, the Peshitta does not use it but writes \"that … not\" (Heb 3:11).",
+      "senses": [
+        {
+          "gloss": "if",
+          "definition": "Sets a condition, as Hebrew אִם does.",
+          "evidence": [
+            {
+              "ref": "Mat.4.3",
+              "role": "defining",
+              "note": "The tempter: \"If (ܐܢ) you are the Son of God, say that these stones become bread.\""
+            },
+            {
+              "ref": "Mat.4.6",
+              "note": "\"If you are the Son of God, cast yourself down.\""
+            },
+            {
+              "ref": "Mat.4.9",
+              "note": "\"All these I will give you, if you fall down and worship me.\""
+            },
+            {
+              "ref": "Heb.3.7",
+              "role": "defining",
+              "note": "Psa 95:7: \"Today, if (ܐܢ) you will hear his voice\"; again Heb 3:15 and 4:7."
+            },
+            {
+              "ref": "Heb.3.15"
+            },
+            {
+              "ref": "Heb.4.7"
+            }
+          ]
+        },
+        {
+          "gloss": "though",
+          "definition": "A condition granted that does not change the outcome.",
+          "evidence": [
+            {
+              "ref": "Rom.9.27",
+              "role": "defining",
+              "note": "Isa 10:22: \"though (ܕܐܢ) the number of the sons of Israel be as the sand of the sea, a remnant will be saved\"."
+            }
+          ]
+        },
+        {
+          "gloss": "whether (in a question)",
+          "definition": "Introduces a question, direct or indirect.",
+          "evidence": [
+            {
+              "ref": "Mat.12.10",
+              "role": "defining",
+              "note": "They asked him, \"Is it lawful (ܕܐܢ) to heal on the sabbath?\""
+            },
+            {
+              "ref": "Mrk.10.2",
+              "note": "\"Is it lawful for a man to put away his wife?\""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-in",
+      "lang": "ar",
+      "form": "إِنْ",
+      "translit": "ʾin",
+      "gloss": "if; though, whether; not; (in an oath) not",
+      "relation": "cognate",
+      "note": "Its uses match the Hebrew's closely: a conditional \"if\", \"though\" or \"whether (… or not)\", a negative (\"not … except\" with إِلَّا, as כִּי אִם after a negative), and a negative in an oath: وَٱللّٰهِ إِنْ فَعَلْتُ, \"by God, I did not\", as Hebrew's \"as Yahweh lives, if …\". The tribe of Ṭayyiʾ said هِنْ for it, with h for ʾ, as Ugaritic hm beside ʾim.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 106, art. ان, إِنْ, first (conditional): \"If thou come to me, I will come to thee\"; أَكْرِمْ زَيْدًا وَإِنْ قَعَدَ \"though he be sitting; or, whether he sit or not\"; Ṭayyiʾ هِنْ فَعَلْتَ"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, pp. 106–107, art. ان, إِنْ, second (negative)",
+          "note": "\"It is a negative\"; with إِلَّا, \"not … save\"; \"Sometimes it occurs [as a negative] in the complement of an oath: … وَٱللّٰهِ إِنْ فَعَلْتُ, meaning مَا فَعَلْتُ [By God, I did not].\""
+        }
+      ]
+    },
+    {
+      "id": "ar-am",
+      "lang": "ar",
+      "form": "أَمْ",
+      "translit": "ʾam",
+      "gloss": "or (in a question after أَ)",
+      "relation": "cognate",
+      "note": "Answers the interrogative أَ as אִם answers הֲ: أَزَيْدٌ فِى الدَّارِ أَمْ عَمْرٌو \"Is Zeyd in the house, or ʿAmr?\", the shape of Jos 5:13. Arabic إِمَّا … وَإِمَّا \"either … or\" is held to be إِنْ with مَا.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 88, art. ام, أَمْ",
+          "note": "\"It denotes interrogation … corresponding to the interrogative أَ … an interrogative after an interrogative.\""
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 93, art. اما, إِمَّا",
+          "note": "\"held by Sb to be a compound of إِنْ and مَا\"; \"either … or\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-hm",
+      "lang": "uga",
+      "form": "𐎅𐎎",
+      "translit": "hm",
+      "gloss": "if; whether; or (in double questions); perhaps O that",
+      "relation": "cognate",
+      "note": "The Hebrew range in Ugaritic: \"if\" (hm.yrgm.mlk \"if the king says\"), \"whether\" in indirect questions, \"or\" in double questions (\"are you hungry … or are you thirsty?\"), and perhaps a wish as at Psa 81:9. Written with h where Hebrew has א.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 80, §57.23 (disjunctive hm \"or\", KTU 1.4:IV:33–35) and §57.3 (conditional hm, KTU 2.33:30)"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 184, glossary, hm /him/ \"if; or; whether\"",
+          "note": "Compares Hebrew ʾim, Old South Arabian hm, Aramaic hēn."
+        }
+      ]
+    },
+    {
+      "id": "uga-im",
+      "lang": "uga",
+      "form": "𐎛𐎎",
+      "translit": "ʾim",
+      "gloss": "if",
+      "relation": "cognate",
+      "note": "A variant of hm with the same ʾ as Hebrew, also in wm \"and if\".",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 179, glossary, im /ʾim/ \"if\" (KTU 2.15:8); wm (KTU 3.9:6) \"and if\""
+        }
+      ]
+    },
+    {
+      "id": "phn-m",
+      "lang": "phn",
+      "form": "𐤀𐤌",
+      "translit": "ʾm",
+      "gloss": "if; or; whether … or; but",
+      "relation": "cognate",
+      "note": "The Hebrew spelling and the same senses: \"if you open (my coffin)\", \"whether male or female\" (ʾm ʾš ʾm ʾšt), \"or\". Phoenician keeps it apart from ʾm \"mother\", a separate word in the same letters.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 57–58, 'M II, conj.: 1. IF (KAI 10.13–16; 13.6–8); 2a. OR (KAI 14.6–8); 2b. 'M … 'M WHETHER … OR (CIS i 5511.6; KAI 69.3); 3. BUT"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 57, 'M I, n.f. MOTHER",
+          "note": "The separate noun \"mother\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-hm",
+      "lang": "sem",
+      "form": "𐩠𐩣",
+      "translit": "hm",
+      "gloss": "if (Sabaean)",
+      "relation": "cognate",
+      "note": "Sabaean, with h for ʾ as in Ugaritic: whm ʾl tʾḫd \"and if he does not give himself up\". Sabaean also has hn \"when; if\", with n as Arabic ʾin.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 111, HM I, cj. hm \"IF\" (C548/6; R4088#55/4)"
+        },
+        {
+          "source": "biella-1982",
+          "locator": "p. 114, HN I, cj. hn \"WHEN; IF\" (C542/7; C548/2)"
+        }
+      ]
+    },
+    {
+      "id": "gez-emma",
+      "lang": "gez",
+      "form": "እመ",
+      "translit": "ʾəmma",
+      "gloss": "if",
+      "relation": "cognate",
+      "note": "The Ge'ez conditional, with Hebrew's ʾ and m.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez እመ (ʾəmä), conj: if, introduces the protasis of a conditional sentence"
+        }
+      ]
+    },
+    {
+      "id": "akk-shumma",
+      "lang": "akk",
+      "form": "šumma",
+      "translit": "šumma",
+      "gloss": "if; whether; either … or; (introducing an oath)",
+      "relation": "possible",
+      "note": "Its uses are almost exactly the Hebrew's, the oath included, but it begins with š where the others have ʾ or h, and has a vowel u. The same š against h or ʾ appears in the third-person pronoun (Akkadian šū, Hebrew הוּא), which may be the pattern here, so it is kept as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000019410, šumma [if] MOD",
+          "note": "Meanings: if; whether; either; or; (introducing an oath)."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "conditional-covenant",
+      "statement": "Yahweh made his covenant at Sinai with an \"if\": \"if you will indeed obey my voice and keep my covenant, you shall be my own treasure\" (Exo 19:5). The blessings of the law begin \"if you walk in my statutes\" and the curses \"but if you will not listen to me\" (Lev 26:3, 14; Deu 28:1, 15). The throne promised to David's sons was held on the same terms, \"if your sons keep my covenant\" (Psa 132:12; 1Ki 9:4–6). Isaiah offers forgiveness in the same form: \"though your sins be as scarlet, they shall be as white as snow; if you are willing and obedient, you shall eat the good of the land; but if you refuse and rebel, you shall be devoured by the sword\" (Isa 1:18–20). He also says what the condition turns on: \"if you will not believe, surely you shall not be established\" (Isa 7:9). So it is Yahweh who makes the promises, but any generation enjoys them only by believing him and obeying.",
+      "evidence": [
+        {
+          "ref": "Exo.19.5"
+        },
+        {
+          "ref": "Lev.26.3"
+        },
+        {
+          "ref": "Lev.26.14"
+        },
+        {
+          "ref": "Deu.28.1"
+        },
+        {
+          "ref": "Deu.28.15"
+        },
+        {
+          "ref": "Psa.132.12"
+        },
+        {
+          "ref": "1Ki.9.4"
+        },
+        {
+          "ref": "1Ki.9.6"
+        },
+        {
+          "ref": "Isa.1.18"
+        },
+        {
+          "ref": "Isa.1.19"
+        },
+        {
+          "ref": "Isa.1.20"
+        },
+        {
+          "ref": "Isa.7.9"
+        }
+      ]
+    },
+    {
+      "topic": "entering-the-rest",
+      "statement": "Psalm 95 uses אִם twice. The first is a call: \"today, if you would hear his voice, do not harden your heart\" (Psa 95:7–8). The second is an oath: \"I swore in my anger, if they shall enter into my rest\" (Psa 95:11), which means they shall not enter, as when Yahweh swore at Kadesh, \"if they shall see the land\" and \"if you shall come into the land\", except Caleb and Joshua (Num 14:23, 28–30). Hebrews quotes both lines (Heb 3:7–11, 15; 4:3, 5, 7). It takes the oath as exclusion: they could not enter \"because of unbelief\" (Heb 3:18–19). It takes the call as still open, since God again sets a day, \"today\" (Heb 4:7). From this it concludes that \"there remains a sabbath rest for the people of God\" (Heb 4:9). The same \"if\" shut out the generation that would not believe and holds the rest open to those who hear his voice now.",
+      "evidence": [
+        {
+          "ref": "Psa.95.7"
+        },
+        {
+          "ref": "Psa.95.8"
+        },
+        {
+          "ref": "Psa.95.11"
+        },
+        {
+          "ref": "Num.14.23"
+        },
+        {
+          "ref": "Num.14.28"
+        },
+        {
+          "ref": "Num.14.30"
+        },
+        {
+          "ref": "Heb.3.7"
+        },
+        {
+          "ref": "Heb.3.11"
+        },
+        {
+          "ref": "Heb.3.18"
+        },
+        {
+          "ref": "Heb.3.19"
+        },
+        {
+          "ref": "Heb.4.3"
+        },
+        {
+          "ref": "Heb.4.5"
+        },
+        {
+          "ref": "Heb.4.7"
+        },
+        {
+          "ref": "Heb.4.9"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Num 10:4 (וְאִם־בְּאַחַת). Root investigation, as asked: (1) No Hebrew verb or noun spelled אמ/אממ/אמה/אמנ gives a sense \"if\" could grow from, as עַל does from עלה. אֵם \"mother\" (a.dx.ab) is excluded because every language that has both keeps them apart: Arabic ʾumm against ʾin, Ugaritic um against hm/ʾim, Akkadian ummu against šumma, Syriac ʾemmā against ʾen; Phoenician spells both ʾm but Krahmalkov files them as separate words. (2) The cognates suggest a pointing particle *hi-m/*hi-n with ʾ~h and m~n alternating (Ugaritic hm beside ʾim; Arabic ʾin, Ṭayyiʾ hin; Sabaean hm and hn; Aramaic hēn), close to Hebrew הֵן \"lo; if\" and הִנֵּה. That is a particle's origin, not a root, so the entry is keyed by its own consonants. Anderson–Moser 2024 also set *ʾim apart from *umm (Hebrew ʾim, Ge'ez ʾemma, Punic ʾm, Ugaritic hm, Aramaic hn); not cited, as a reconstruction. DATABASE FAULT: lexicon_entry files a.du.af (all ~1066 אִם tokens) under root אלצ (BDB's page section, beside אָלַץ \"urge\"), so `lexicon-brief אמ` finds no words; the brief for אלצ has them. Left unclaimed: k.bg.ab (BDB's כִּי אִם sub-entry under כִּי), because the corpus marks every אִם token \"also k.bg.ab\" by spelling, so naming it would count them twice; it belongs with a כִּי entry. Left out: Biblical Aramaic הֵן \"if, whether\" (xe.ai.aa), the Aramaic word doing אִם's work (Dan 3:15; Ezr 5:17; 7:26), because its form answers Hebrew הֵן \"lo; if\" (e.bz.aa; Jer 3:1), and because the corpus's xe.ai.aa count (113) includes Hebrew הֵן \"behold\" tokens by spelling; it should go with a future הֵן entry. The Peshitta word ܐܢ is included as a word of this entry (SEDRA lexeme 176, root ܐܢ; word ids 1356 ܐܢ ×417, 1361 ܕܐܢ ×67, 1364 ܘܐܢ ×196 in the BFBS text), on the m~n correspondence; its verses were checked against SEDRA's BFBS text (Mat 4:3, 6, 9; 12:10; Mrk 10:2; Rom 9:27; Heb 3:7, 15; 4:7). Heb 3:11, 4:3, 4:5 and Mrk 8:12 have ܕܠܐ (word 10863), not ܐܢ, in the oath. Not consulted: Dillmann and Leslau for Ge'ez እመ (cited from Wiktionary only); DULAT for Ugaritic; CAD Š/3 for šumma; Payne Smith for ܐܢ. Segert's page numbers are from the OCR's running heads."
+}
