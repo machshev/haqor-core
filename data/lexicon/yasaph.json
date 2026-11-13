@@ -1,0 +1,1141 @@
+{
+  "id": "yasaph",
+  "root": "יספ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "addition",
+    "increase",
+    "repetition",
+    "restitution",
+    "word-of-god",
+    "life"
+  ],
+  "gloss": "add, increase; do again, continue",
+  "summary": "To put more onto what is already there: a fifth added to the value of what is restored or redeemed (Lev 5:16; 27:13), days and years added to a life (Isa 38:5; Pro 10:27), sorrow added to pain (Jer 45:3). With another verb it says that an act is done again or goes on: “she added to bear” his brother Abel (Gen 4:2), and with “not”, never again: “I will not again curse the ground” (Gen 8:21). Israel is not to add to the word Yahweh commands nor take from it (Deu 4:2), for he himself spoke the ten words “and added no more” (Deu 5:22). Moabite, Phoenician and Aramaic use the same root for adding and for doing again.",
+  "words": [
+    {
+      "lemma": "יָסַף",
+      "pos": "verb",
+      "gloss": "add, increase; do again, continue",
+      "bdb": [
+        "j.bz.aa"
+      ],
+      "cognate_ids": [
+        "moab-ysp",
+        "phn-ysp",
+        "arc-ysp",
+        "akk-wasabu"
+      ],
+      "summary": "Qal and hiphil share both its uses, adding something to something and doing something again; the hiphil is far the commoner. The niphal is to be added or to join oneself to others.",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "add, increase; do again, do more",
+          "senses": [
+            {
+              "id": "add-increase",
+              "gloss": "add, increase",
+              "definition": "To put more to what there is, with עַל or ל of what it is added to: more years, more learning, more friends, more burden; its opposite is to take away (גָּרַע) or cut short (קָצַר).",
+              "evidence": [
+                {
+                  "ref": "Isa.38.5",
+                  "role": "defining",
+                  "note": "To Hezekiah: “Behold, I יוֹסִף עַל־יָמֶיךָ fifteen years”: years put onto the days he had."
+                },
+                {
+                  "ref": "Pro.10.27",
+                  "role": "defining",
+                  "note": "“The fear of Yahweh תּוֹסִיף יָמִים, but the years of the wicked will be cut short (תִּקְצֹרְנָה)”: adding is set against shortening."
+                },
+                {
+                  "ref": "Pro.9.11",
+                  "role": "defining",
+                  "note": "“By me your days will multiply (יִרְבּוּ), and years of life וְיוֹסִיפוּ to you”: in parallel with רָבָה."
+                },
+                {
+                  "ref": "Pro.3.2",
+                  "note": "Length of days, years of life and peace יוֹסִיפוּ לָךְ."
+                },
+                {
+                  "ref": "Lev.5.16",
+                  "role": "defining",
+                  "note": "What he sinned from the holy thing he shall repay, “and its fifth יוֹסֵף עָלָיו”: added on top of the sum restored."
+                },
+                {
+                  "ref": "Lev.5.24",
+                  "note": "Restoring what he swore falsely about, he repays it in full “and its fifths יֹסֵף עָלָיו”."
+                },
+                {
+                  "ref": "Num.5.7",
+                  "note": "He confesses, restores the trespass in full, and adds a fifth to it."
+                },
+                {
+                  "ref": "Lev.27.31",
+                  "note": "Redeeming a tithe, he adds a fifth."
+                },
+                {
+                  "ref": "Lev.19.25",
+                  "note": "In the fifth year eat its fruit, “לְהוֹסִיף לָכֶם its produce”: that the tree may yield you more."
+                },
+                {
+                  "ref": "Deu.1.11",
+                  "note": "“May Yahweh … add to you a thousand times as many as you are.”"
+                },
+                {
+                  "ref": "Psa.115.14",
+                  "note": "“Yahweh יֹסֵף עֲלֵיכֶם, upon you and upon your children.”"
+                },
+                {
+                  "ref": "Psa.61.7",
+                  "note": "“Days upon the days of the king תּוֹסִיף.”"
+                },
+                {
+                  "ref": "Job.42.10",
+                  "note": "Yahweh added to all that Job had, double."
+                },
+                {
+                  "ref": "Pro.1.5",
+                  "role": "defining",
+                  "note": "“A wise man will hear וְיוֹסֶף לֶקַח”: learning added to what he has."
+                },
+                {
+                  "ref": "Pro.9.9",
+                  "note": "Teach a righteous man and he will increase learning."
+                },
+                {
+                  "ref": "Pro.16.21",
+                  "note": "Sweetness of lips יֹסִיף לֶקַח."
+                },
+                {
+                  "ref": "Pro.19.4",
+                  "note": "“Wealth יֹסִיף many friends, but the poor is separated from his friend.”"
+                },
+                {
+                  "ref": "Ecc.1.18",
+                  "role": "defining",
+                  "note": "“He who יוֹסִיף knowledge יוֹסִיף pain.”"
+                },
+                {
+                  "ref": "1Ki.12.11",
+                  "note": "Rehoboam: “My father laid on you a heavy yoke, and I אוֹסִיף עַל־עֻלְּכֶם.”"
+                },
+                {
+                  "ref": "Job.34.37",
+                  "note": "“He adds rebellion to his sin.”"
+                },
+                {
+                  "ref": "2Ch.28.13",
+                  "note": "“You intend לְהֹסִיף עַל־חַטֹּאתֵינוּ וְעַל־אַשְׁמָתֵנוּ.”"
+                },
+                {
+                  "ref": "Ezk.5.16",
+                  "note": "“Famine I will add upon you.”"
+                },
+                {
+                  "ref": "1Ki.10.7",
+                  "note": "The queen of Sheba: “You have added wisdom and good to the report that I heard”: more than was told."
+                },
+                {
+                  "ref": "Gen.30.24",
+                  "note": "Rachel names Joseph: “יֹסֵף יַהְוֶה לִי another son”."
+                },
+                {
+                  "ref": "2Sa.24.3",
+                  "note": "Joab: “May Yahweh your God add to the people a hundred times as many as they are.”"
+                },
+                {
+                  "ref": "Psa.71.14",
+                  "note": "“I will add upon all your praise”: praise yet more."
+                },
+                {
+                  "ref": "Psa.120.3",
+                  "note": "“What shall he give you, and what shall he add to you, deceitful tongue?”"
+                }
+              ],
+              "kin": [
+                "add-syc"
+              ],
+              "senses": [
+                {
+                  "id": "add-to-word",
+                  "gloss": "add to (God’s word or work)",
+                  "definition": "To put something of one’s own onto what God has commanded or done; always forbidden or denied, and always set beside taking away (גָּרַע).",
+                  "evidence": [
+                    {
+                      "ref": "Deu.4.2",
+                      "role": "defining",
+                      "note": "“לֹא תֹסִפוּ עַל־הַדָּבָר which I command you, and you shall not take away (תִגְרְעוּ) from it, to keep the commandments of Yahweh your God.”"
+                    },
+                    {
+                      "ref": "Deu.13.1",
+                      "role": "defining",
+                      "note": "“All the word that I command you, that you shall keep to do; לֹא־תֹסֵף עָלָיו and you shall not take away from it.”"
+                    },
+                    {
+                      "ref": "Pro.30.6",
+                      "role": "defining",
+                      "note": "“אַל־תּוֹסְףְּ עַל־דְּבָרָיו, lest he reprove you and you be found a liar”: following “every word of God is refined” (Pro 30:5)."
+                    },
+                    {
+                      "ref": "Ecc.3.14",
+                      "role": "defining",
+                      "note": "“All that God does, it will be for ever; עָלָיו אֵין לְהוֹסִיף, and from it there is none to take away.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "do-again",
+              "gloss": "do again, do more; (with “not”) never again",
+              "definition": "With an infinitive, or a second verb, to add another doing to the first: to do again, go on doing, do yet more. With לֹא, and often עוֹד, it says the act will not be repeated: no more, never again.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.2",
+                  "role": "defining",
+                  "note": "“וַתֹּסֶף לָלֶדֶת his brother Abel”: she bore a second time."
+                },
+                {
+                  "ref": "Gen.8.21",
+                  "role": "defining",
+                  "note": "“לֹא־אֹסִף לְקַלֵּל עוֹד the ground for man’s sake … וְלֹא־אֹסִף עוֹד לְהַכּוֹת every living thing as I have done.”"
+                },
+                {
+                  "ref": "Gen.37.5",
+                  "role": "defining",
+                  "note": "Joseph told his dream, “וַיּוֹסִפוּ עוֹד שְׂנֹא אֹתוֹ”: they hated him yet more."
+                },
+                {
+                  "ref": "Gen.37.8",
+                  "note": "They hated him yet more for his dreams and his words."
+                },
+                {
+                  "ref": "Gen.4.12",
+                  "note": "To Cain: the ground “לֹא־תֹסֵף תֵּת its strength to you”: no longer."
+                },
+                {
+                  "ref": "Exo.14.13",
+                  "role": "defining",
+                  "note": "“The Egyptians you see today לֹא תֹסִיפוּ לִרְאֹתָם עוֹד for ever.”"
+                },
+                {
+                  "ref": "Exo.10.29",
+                  "note": "Moses to Pharaoh: “I will not see your face again.”"
+                },
+                {
+                  "ref": "Deu.18.16",
+                  "role": "defining",
+                  "note": "At Horeb: “לֹא אֹסֵף לִשְׁמֹעַ the voice of Yahweh my God, and this great fire let me not see any more, lest I die.”"
+                },
+                {
+                  "ref": "Deu.3.26",
+                  "note": "To Moses: “Enough! אַל־תּוֹסֶף דַּבֵּר to me any more of this matter.”"
+                },
+                {
+                  "ref": "Deu.25.3",
+                  "note": "Forty stripes, “he shall not add, lest he add to beat him above these”."
+                },
+                {
+                  "ref": "Num.22.15",
+                  "note": "“Balak sent yet again princes, more and more honourable.”"
+                },
+                {
+                  "ref": "Jdg.3.12",
+                  "role": "defining",
+                  "note": "“וַיֹּסִפוּ the sons of Israel לַעֲשׂוֹת the evil in the eyes of Yahweh”: again, as before (Jdg 3:7)."
+                },
+                {
+                  "ref": "Jdg.4.1"
+                },
+                {
+                  "ref": "Jdg.10.6"
+                },
+                {
+                  "ref": "Jdg.13.1"
+                },
+                {
+                  "ref": "Jdg.2.21",
+                  "note": "“I will not again drive out any from before them of the nations Joshua left.”"
+                },
+                {
+                  "ref": "1Sa.3.6",
+                  "note": "Yahweh called Samuel yet again."
+                },
+                {
+                  "ref": "1Sa.3.21",
+                  "note": "Yahweh appeared again in Shiloh."
+                },
+                {
+                  "ref": "Psa.78.17",
+                  "note": "“וַיּוֹסִיפוּ עוֹד לַחֲטֹא against him, to provoke the Most High in the desert.”"
+                },
+                {
+                  "ref": "Isa.1.5",
+                  "note": "“Why will you be struck any more? You will revolt more and more (תּוֹסִיפוּ סָרָה).”"
+                },
+                {
+                  "ref": "Isa.1.13",
+                  "note": "“לֹא תוֹסִיפוּ הָבִיא vain offerings.”"
+                },
+                {
+                  "ref": "Isa.11.11",
+                  "note": "“In that day יוֹסִיף אֲדֹנָי שֵׁנִית his hand to acquire the remnant of his people”: a second time, as at the exodus (Isa 11:16)."
+                },
+                {
+                  "ref": "Isa.52.1",
+                  "note": "Into Jerusalem “there will no more come the uncircumcised and the unclean”."
+                },
+                {
+                  "ref": "Hos.1.6",
+                  "role": "defining",
+                  "note": "Lo-ruhamah, “for I will no more have mercy on the house of Israel”."
+                },
+                {
+                  "ref": "Amo.7.8",
+                  "role": "defining",
+                  "note": "The plumb line: “לֹא־אוֹסִיף עוֹד עֲבוֹר לוֹ”: I will not again pass him by; the same words at the basket of summer fruit (Amo 8:2)."
+                },
+                {
+                  "ref": "Amo.8.2"
+                },
+                {
+                  "ref": "Amo.5.2",
+                  "note": "“She has fallen, she will no more rise, the virgin of Israel.”"
+                },
+                {
+                  "ref": "Lam.4.22",
+                  "note": "“Your iniquity is complete, daughter of Zion; he will no more carry you into exile.”"
+                },
+                {
+                  "ref": "Nam.2.1",
+                  "note": "“The worthless will no more pass through you; he is utterly cut off.”"
+                },
+                {
+                  "ref": "Psa.77.8",
+                  "note": "“Will Adonai cast off for ever, and will he be favourable no more?”"
+                },
+                {
+                  "ref": "Psa.10.18",
+                  "note": "That man of the earth may no more terrify."
+                },
+                {
+                  "ref": "Job.27.1",
+                  "role": "defining",
+                  "note": "“וַיֹּסֶף אִיּוֹב שְׂאֵת מְשָׁלוֹ”: Job took up his discourse again; the same at Job 29:1."
+                },
+                {
+                  "ref": "Job.29.1"
+                },
+                {
+                  "ref": "Job.40.5",
+                  "note": "“Once I have spoken, and I will not answer; twice, and I will add no more.”"
+                },
+                {
+                  "ref": "Job.38.11",
+                  "note": "To the sea: “Up to here you shall come, וְלֹא תֹסִיף”: and no further."
+                },
+                {
+                  "ref": "Est.8.3",
+                  "note": "Esther spoke again before the king."
+                },
+                {
+                  "ref": "Jon.2.5",
+                  "note": "“Yet I will look again toward your holy temple.”"
+                },
+                {
+                  "ref": "1Sa.18.29",
+                  "note": "Saul was yet more afraid of David."
+                },
+                {
+                  "ref": "2Sa.24.1",
+                  "note": "“The anger of Yahweh added to burn against Israel”: it burned again."
+                }
+              ],
+              "kin": [
+                "again-syc"
+              ]
+            },
+            {
+              "id": "oath-and-more",
+              "gloss": "and more also (in an oath)",
+              "definition": "In the oath “thus may God do to me, וְכֹה יֹסִיף”: and so may he add, calling on God to bring on the swearer what is named and more besides, if he fails of his word.",
+              "evidence": [
+                {
+                  "ref": "Rut.1.17",
+                  "role": "defining",
+                  "note": "Ruth: “כֹּה יַעֲשֶׂה יַהְוֶה לִי וְכֹה יֹסִיף, if anything but death parts me and you.”"
+                },
+                {
+                  "ref": "1Sa.3.17",
+                  "role": "defining",
+                  "note": "Eli to Samuel: “So may God do to you, and more also, if you hide from me a word.”"
+                },
+                {
+                  "ref": "1Sa.14.44"
+                },
+                {
+                  "ref": "1Sa.20.13"
+                },
+                {
+                  "ref": "1Sa.25.22"
+                },
+                {
+                  "ref": "2Sa.3.9"
+                },
+                {
+                  "ref": "2Sa.3.35"
+                },
+                {
+                  "ref": "2Sa.19.14"
+                },
+                {
+                  "ref": "1Ki.2.23"
+                },
+                {
+                  "ref": "1Ki.19.2",
+                  "note": "Jezebel, by her gods."
+                },
+                {
+                  "ref": "1Ki.20.10"
+                },
+                {
+                  "ref": "2Ki.6.31"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "add; do again, continue",
+          "senses": [
+            {
+              "id": "add-qal",
+              "gloss": "add",
+              "definition": "As the hiphil: to put more to something; in the law of things vowed, the fifth the owner adds to the valuation when he redeems it.",
+              "evidence": [
+                {
+                  "ref": "Lev.27.13",
+                  "role": "defining",
+                  "note": "“If he will redeem it, וְיָסַף חֲמִישִׁתוֹ עַל־עֶרְכֶּךָ”: he adds its fifth to your valuation."
+                },
+                {
+                  "ref": "Lev.27.15"
+                },
+                {
+                  "ref": "Lev.27.19"
+                },
+                {
+                  "ref": "Lev.27.27"
+                },
+                {
+                  "ref": "Lev.22.14",
+                  "role": "defining",
+                  "note": "One who eats a holy thing in error “shall add its fifth to it and give the holy thing to the priest”."
+                },
+                {
+                  "ref": "Deu.19.9",
+                  "role": "defining",
+                  "note": "“Then you shall add yet three cities for yourself, beside these three.”"
+                },
+                {
+                  "ref": "Isa.26.15",
+                  "note": "“יָסַפְתָּ לַגּוֹי, Yahweh, you have added to the nation; you are glorified; you have extended all the borders of the land.”"
+                },
+                {
+                  "ref": "1Sa.12.19",
+                  "role": "defining",
+                  "note": "“We have added to all our sins an evil, to ask for ourselves a king.”"
+                },
+                {
+                  "ref": "Jer.45.3",
+                  "note": "Baruch: “Yahweh has added sorrow to my pain.”"
+                },
+                {
+                  "ref": "Lev.26.21",
+                  "note": "“וְיָסַפְתִּי upon you a plague seven times according to your sins.”"
+                },
+                {
+                  "ref": "Isa.29.19",
+                  "note": "“The meek וְיָסְפוּ joy in Yahweh”: they increase their joy."
+                },
+                {
+                  "ref": "2Ki.19.30",
+                  "note": "The escaped of the house of Judah “וְיָסְפָה root downward and bear fruit upward”: take root again; the same at Isa 37:31."
+                },
+                {
+                  "ref": "Isa.37.31"
+                },
+                {
+                  "ref": "2Ch.9.6",
+                  "note": "“Not half was told me; יָסַפְתָּ upon the report I heard”: you exceed it."
+                }
+              ]
+            },
+            {
+              "id": "again-qal",
+              "gloss": "do again, continue; (with “not”) no more",
+              "definition": "As the hiphil: with an infinitive, to do again or go on doing; with “not”, never again.",
+              "evidence": [
+                {
+                  "ref": "Deu.5.22",
+                  "role": "defining",
+                  "note": "“These words Yahweh spoke to all your assembly in the mount out of the fire … a great voice, וְלֹא יָסָף; and he wrote them on two tablets of stone”: he spoke the ten words and added no more."
+                },
+                {
+                  "ref": "Deu.5.25",
+                  "role": "defining",
+                  "note": "“If we are יֹסְפִים to hear the voice of Yahweh our God any more, we shall die.”"
+                },
+                {
+                  "ref": "Gen.8.12",
+                  "role": "defining",
+                  "note": "The dove “לֹא־יָסְפָה to return to him again”."
+                },
+                {
+                  "ref": "Num.11.25",
+                  "role": "defining",
+                  "note": "When the spirit rested on the seventy elders “they prophesied, וְלֹא יָסָפוּ”: they did not do so again."
+                },
+                {
+                  "ref": "Gen.38.26",
+                  "note": "Judah “did not again know her”."
+                },
+                {
+                  "ref": "Lev.26.18",
+                  "note": "“וְיָסַפְתִּי to chasten you seven times for your sins.”"
+                },
+                {
+                  "ref": "Jdg.13.21",
+                  "note": "“The angel of Yahweh did not again appear to Manoah.”"
+                },
+                {
+                  "ref": "1Sa.7.13",
+                  "note": "“The Philistines were subdued, and did not again come into the border of Israel.”"
+                },
+                {
+                  "ref": "1Sa.15.35",
+                  "note": "“Samuel did not again see Saul until the day of his death.”"
+                },
+                {
+                  "ref": "Jdg.8.28",
+                  "note": "Midian “did not again lift up their head”."
+                },
+                {
+                  "ref": "2Sa.2.28"
+                },
+                {
+                  "ref": "2Ki.6.23"
+                },
+                {
+                  "ref": "Deu.20.8",
+                  "note": "“The officers shall speak further to the people.”"
+                },
+                {
+                  "ref": "Num.32.15",
+                  "note": "“He will yet again leave them in the wilderness.”"
+                },
+                {
+                  "ref": "1Sa.27.4",
+                  "note": "Saul sought David no more."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be added; join oneself",
+          "senses": [
+            {
+              "id": "be-added",
+              "gloss": "be added; join oneself to",
+              "definition": "To be put onto something else, or of people, to add oneself to another side; the participle נוֹסָפוֹת is “additions”, further things.",
+              "evidence": [
+                {
+                  "ref": "Num.36.3",
+                  "role": "defining",
+                  "note": "The daughters’ inheritance “will be taken away (וְנִגְרְעָה) from the inheritance of our fathers, וְנוֹסַף to the inheritance of the tribe” they marry into: added set against taken away."
+                },
+                {
+                  "ref": "Num.36.4"
+                },
+                {
+                  "ref": "Exo.1.10",
+                  "role": "defining",
+                  "note": "Pharaoh: “lest they multiply (יִרְבֶּה), and in war וְנוֹסַף גַּם־הוּא עַל־שֹׂנְאֵינוּ”: join himself to our enemies."
+                },
+                {
+                  "ref": "Jer.36.32",
+                  "role": "defining",
+                  "note": "Jeremiah’s second scroll had all the words of the one Jehoiakim burned, “and there were added to them besides many words like them”, from the prophet’s mouth."
+                },
+                {
+                  "ref": "Pro.11.24",
+                  "note": "“There is one who scatters וְנוֹסָף עוֹד, and one who withholds more than is right, only to want.”"
+                },
+                {
+                  "ref": "Isa.15.9",
+                  "note": "“I will put נוֹסָפוֹת on Dimon”: more besides, a lion for Moab’s escaped."
+                }
+              ],
+              "kin": [
+                "added-arc",
+                "added-syc"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προστίθημι",
+          "gloss": "add, put to; (with an infinitive) do again",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.4.2, תֹסִפוּ → προσθήσετε; Deu.13.1, תֹסֵף → προσθήσεις; Deu.5.22, יָסָף → προσέθηκεν; Gen.8.12, יָסְפָה → προσέθετο; προστίθημι renders יָסַף ×103 by lemma, and about 120 of the 198 aligned tokens counting its unlemmatised forms"
+            },
+            {
+              "ref": "Heb.12.19",
+              "role": "defining",
+              "note": "At Sinai those who heard the voice “begged that no word μὴ προστεθῆναι to them”: the people’s plea of Deu 5:25 and 18:16, “if we add to hear the voice of Yahweh our God any more, we shall die”."
+            },
+            {
+              "ref": "Luk.20.11",
+              "role": "defining",
+              "note": "In the parable, “προσέθετο πέμψαι another servant”, and again in Luk 20:12: the Hebrew idiom of adding to do, doing again."
+            },
+            {
+              "ref": "Luk.20.12"
+            },
+            {
+              "ref": "Luk.19.11",
+              "note": "“προσθεὶς εἶπεν a parable”: he went on to speak."
+            },
+            {
+              "ref": "Act.12.3",
+              "note": "Herod “προσέθετο συλλαβεῖν Peter also”."
+            },
+            {
+              "ref": "Mat.6.27",
+              "role": "defining",
+              "note": "“Which of you by being anxious can προσθεῖναι one cubit to his span?”: what Yahweh adds to a life (Pro 3:2; 10:27) man cannot."
+            },
+            {
+              "ref": "Mat.6.33",
+              "note": "“Seek first the kingdom of God … and all these things προστεθήσεται to you.”"
+            },
+            {
+              "ref": "Gal.3.19",
+              "note": "The law “προσετέθη because of transgressions, until the seed should come”."
+            },
+            {
+              "ref": "Act.2.41",
+              "note": "About three thousand souls “προσετέθησαν” that day."
+            },
+            {
+              "ref": "Act.2.47",
+              "note": "“The Lord προσετίθει daily to the ecclesia those being saved.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רָבָה",
+            "note": "“Multiply”, beside it of days and of a people.",
+            "evidence": [
+              {
+                "ref": "Pro.9.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.1.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "גָּרַע",
+            "note": "“Take away, diminish”: what may not be added to may not be taken from.",
+            "evidence": [
+              {
+                "ref": "Deu.4.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.13.1"
+              },
+              {
+                "ref": "Ecc.3.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.36.3"
+              }
+            ]
+          },
+          {
+            "lemma": "קָצַר",
+            "note": "“Be short”: days added against years cut short.",
+            "evidence": [
+              {
+                "ref": "Pro.10.27",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כֹּה יַעֲשֶׂה … וְכֹה יֹסִיף",
+            "gloss": "so may he do … and more also (an oath)",
+            "evidence": [
+              {
+                "ref": "Rut.1.17",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.3.17"
+              },
+              {
+                "ref": "2Ki.6.31"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא יָסַף עוֹד",
+            "gloss": "never again, no more",
+            "evidence": [
+              {
+                "ref": "Gen.8.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Amo.7.8"
+              },
+              {
+                "ref": "Jdg.13.21"
+              }
+            ]
+          },
+          {
+            "phrase": "יָסַף חֲמִישִׁית עַל",
+            "gloss": "add a fifth to (in restoring or redeeming)",
+            "evidence": [
+              {
+                "ref": "Lev.5.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.27.13"
+              },
+              {
+                "ref": "Num.5.7"
+              }
+            ]
+          },
+          {
+            "phrase": "יֹסִיף לֶקַח",
+            "gloss": "increase learning",
+            "evidence": [
+              {
+                "ref": "Pro.1.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.16.21"
+              },
+              {
+                "ref": "Pro.16.23"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא תֹסִפוּ עַל־הַדָּבָר",
+            "gloss": "you shall not add to the word",
+            "evidence": [
+              {
+                "ref": "Deu.4.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.13.1"
+              },
+              {
+                "ref": "Pro.30.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יְסַף",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "(hophal) be added",
+      "bdb": [
+        "xj.ah.aa"
+      ],
+      "cognate_ids": [
+        "arc-ysp"
+      ],
+      "summary": "Scripture’s Aramaic has the verb once, the passive of its causative stem (הוּסְפַת), in Nebuchadnezzar’s account of his restoring.",
+      "stems": [
+        {
+          "stem": "hophal",
+          "gloss": "be added",
+          "senses": [
+            {
+              "id": "added-arc",
+              "gloss": "be added",
+              "definition": "To be given in addition to what one had.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.33",
+                  "role": "defining",
+                  "note": "When his reason returned and he blessed the Most High, his kingdom was established to him “וּרְבוּ יַתִּירָה הוּסְפַת לִי”: and surpassing greatness was added to me."
+                }
+              ],
+              "kin": [
+                "be-added",
+                "added-syc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְסַף",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "(aphel) add, do again, go on; (ettaphal) be added",
+      "cognate_ids": [
+        "arc-ysp"
+      ],
+      "summary": "The Peshitta’s ܐܘܣܦ (ʾawsep), the causative stem, where the Greek has προστίθημι and some like words; it keeps the Hebrew idiom of adding to do a thing, doing it again (Luk 20:11). Its passive ܐܬܬܘܣܦ (ʾettawsap) is to be added, of believers to the ecclesia and of things given besides.",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "add; do again, go on to do",
+          "senses": [
+            {
+              "id": "add-syc",
+              "gloss": "add",
+              "definition": "To add one thing to another, as the Hebrew hiphil.",
+              "evidence": [
+                {
+                  "ref": "Mat.6.27",
+                  "role": "defining",
+                  "note": "“Who of you, being anxious, can למַוסָפֻו upon his stature one cubit?”"
+                },
+                {
+                  "ref": "Luk.12.25"
+                },
+                {
+                  "ref": "Luk.17.5",
+                  "role": "defining",
+                  "note": "The apostles to the Lord: “אַוסֵף לַן faith”: add to us."
+                },
+                {
+                  "ref": "Luk.3.20",
+                  "note": "Herod “added this also upon them all”, shutting John in prison."
+                },
+                {
+                  "ref": "Gal.2.6",
+                  "note": "Those of repute “added nothing to me”."
+                },
+                {
+                  "ref": "2Pe.1.5",
+                  "note": "“Add to your faith virtue, and to virtue knowledge.”"
+                },
+                {
+                  "ref": "Act.2.47",
+                  "note": "“Our Lord מַוסֵף הוָא daily those who were being saved in the ecclesia.”"
+                }
+              ],
+              "kin": [
+                "add-increase",
+                "add-qal"
+              ]
+            },
+            {
+              "id": "again-syc",
+              "gloss": "do again, go on to do",
+              "definition": "With a second verb, to do again or go on doing, as the Hebrew’s “add to do”.",
+              "evidence": [
+                {
+                  "ref": "Luk.20.11",
+                  "role": "defining",
+                  "note": "“וַאוסֵף and sent another servant”, for προσέθετο πέμψαι; and again in Luk 20:12."
+                },
+                {
+                  "ref": "Luk.20.12"
+                },
+                {
+                  "ref": "Luk.19.11",
+                  "role": "defining",
+                  "note": "“אַוסֵף to speak a parable”: he went on to speak."
+                },
+                {
+                  "ref": "Act.12.3",
+                  "note": "Herod “went on to take Simon Kepha also”."
+                }
+              ],
+              "kin": [
+                "do-again",
+                "again-qal"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ettaphal",
+          "gloss": "be added",
+          "senses": [
+            {
+              "id": "added-syc",
+              "gloss": "be added",
+              "definition": "To be added: of believers joined to the ecclesia, of things given besides, of the law given beside the promise, and of words spoken further.",
+              "evidence": [
+                {
+                  "ref": "Act.2.41",
+                  "role": "defining",
+                  "note": "Those who received his word were baptised, “וֵאתּתַּוסַפו that day about three thousand souls”."
+                },
+                {
+                  "ref": "Act.5.14",
+                  "note": "Believers in the Lord were added, multitudes of men and women."
+                },
+                {
+                  "ref": "Act.11.24"
+                },
+                {
+                  "ref": "Mat.6.33",
+                  "role": "defining",
+                  "note": "“Seek first the kingdom of God and his righteousness, and all these מֵתּתַּוספָן to you.”"
+                },
+                {
+                  "ref": "Luk.12.31"
+                },
+                {
+                  "ref": "Mrk.4.24",
+                  "note": "“With the measure you measure it will be measured to you, וּמֵתּתַּוסַף to you who hear.”"
+                },
+                {
+                  "ref": "Mat.25.29"
+                },
+                {
+                  "ref": "Gal.3.19",
+                  "note": "The law “אֵתּתַּוסַף because of transgressions until the seed should come”."
+                },
+                {
+                  "ref": "Heb.12.19",
+                  "role": "defining",
+                  "note": "They asked “דּלָא נֵתּתַּוסַף to speak with them”: that no more be spoken, the plea of Deu 5:25 and 18:16 in the Hebrew’s own root."
+                },
+                {
+                  "ref": "Act.13.36",
+                  "note": "David “slept, וֵאתּתַּוסַף to his fathers, and saw corruption”: following the Greek προσετέθη, where the Hebrew idiom has אָסַף, “be gathered”."
+                }
+              ],
+              "kin": [
+                "be-added",
+                "added-arc"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "moab-ysp",
+      "lang": "sem",
+      "form": "יספתי",
+      "translit": "yspty",
+      "gloss": "I added (cities to the land)",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele: Mesha speaks of the cities he added to his land, with עַל as the Hebrew has it (יָסַף עַל).",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, line 29",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "בקרנ אשר יספתי על הארצ."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, line 29",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"in the cities which I added to the land\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-ysp",
+      "lang": "phn",
+      "form": "𐤉𐤎𐤐",
+      "translit": "ysp",
+      "gloss": "(qal) add, annex; (yiphil) continue to do",
+      "relation": "cognate",
+      "note": "Both the Hebrew uses: the qal of territory annexed to a king’s land and of a cella added to a sanctuary, and the causative with an infinitive, “whoever shall continue to do work on this altar” (Yehawmilk of Byblos), as the hiphil “add to do”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 210, Y-S-P I",
+          "note": "“v. qal ADD, ANNEX KAI 14.18/20 (Ph) … wyspnnm ʿlt gbl ʾrṣ … ‘and we annexed them to the territory of <our> land.’ … KAI 159.5 (NPu) tw ʾ yspn ʿlt mqdšm, ‘We added his cella to his sanctuary.’ v. yiphʿil CONTINUE to do something KAI 10.11/13 (Ph) wkl ʾdm ʾš ysp lpʿl mlʾkt ʿlt mzbḥ zn … ‘And as for any person who shall continue to do work on that altar’.”"
+        }
+      ]
+    },
+    {
+      "id": "phn-ysp-name",
+      "lang": "phn",
+      "form": "𐤉𐤎𐤐",
+      "translit": "ysp",
+      "gloss": "personal name Yasop, short for “(god) add!”",
+      "relation": "cognate",
+      "note": "Punic names of the type DN-ysp, “(the god) add!”, are the same kind of name as אֶלְיָסָף and יוֹסִפְיָה: a god named as the one who adds (a child).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 210, YSP (p.n.)",
+          "note": "“p.n. YASOP, short form of the name-type DN-ysp, ‘DN add!’ Benz 128 (Pu). 1x.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-ysp",
+      "lang": "arc",
+      "form": "אוֹסִיף",
+      "translit": "ʾôsîp̄",
+      "gloss": "(aphel) add, increase; do again",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, the Targums: the causative stem in both the Hebrew senses; Onkelos uses it where the Hebrew has the hiphil of “may Yahweh add to you a thousand times” (Deu 1:11) and of Noah sending the dove again (Gen 8:10). Its passive (Ittaphal) is “be added”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יְסַף",
+          "note": "“Af. אוֹסִיף, אוֹסֵף same, to add, increase; to do again. Targ. Deut. I, 11.—Targ. Gen. VIII, 10 … Ittaf. to be added. Targ. Gen. XLIX, 26.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-wasabu",
+      "lang": "akk",
+      "form": "waṣābu",
+      "translit": "waṣābu",
+      "gloss": "add, increase",
+      "relation": "possible",
+      "note": "The same meaning, and the same first radical (Akkadian w for Hebrew initial י), but ṣ and b where Hebrew has ס and פ, which are not the regular correspondences; so at most a related root, not the same one.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000023520, waṣābu [add] V; armep x000078700, aṣābu [add] V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "add-not-to-the-word",
+      "statement": "At Horeb Yahweh spoke the ten words out of the fire “with a great voice, and added no more (וְלֹא יָסָף), and he wrote them on two tablets of stone” (Deu 5:22). The people, afraid to hear more, asked not to (Deu 5:25; 18:16), and Hebrews recalls that they “begged that no word be added to them” (Heb 12:19). Then Israel is told twice, “you shall not add to the word which I command you, and you shall not take away from it” (Deu 4:2; 13:1); Proverbs says, “every word of God is refined … do not add to his words, lest he reprove you and you be found a liar” (Pro 30:5–6); and the Preacher, that what God does is for ever, “there is no adding to it and no taking from it” (Ecc 3:14). When words were added to Jeremiah’s scroll, they came from the prophet’s mouth as the first did (Jer 36:32). The last book closes in the same terms: “if anyone adds to these things, God will add to him the plagues written in this book; and if anyone takes away … God will take away his part” (Rev 22:18–19). From the verses: what God has spoken is whole, and only he adds to it; what men add makes them liars, and what they take away is as great a fault.",
+      "evidence": [
+        {
+          "ref": "Deu.5.22"
+        },
+        {
+          "ref": "Deu.5.25"
+        },
+        {
+          "ref": "Deu.18.16"
+        },
+        {
+          "ref": "Heb.12.19"
+        },
+        {
+          "ref": "Deu.4.2"
+        },
+        {
+          "ref": "Deu.13.1"
+        },
+        {
+          "ref": "Pro.30.5",
+          "to": "Pro.30.6"
+        },
+        {
+          "ref": "Ecc.3.14"
+        },
+        {
+          "ref": "Jer.36.32"
+        },
+        {
+          "ref": "Rev.22.18",
+          "to": "Rev.22.19"
+        }
+      ]
+    },
+    {
+      "topic": "days-added-by-god",
+      "statement": "Scripture speaks of the length of a life as something Yahweh adds: “I will add to your days fifteen years” to Hezekiah, who had been told he would die (Isa 38:1, 5); “the fear of Yahweh adds days, but the years of the wicked will be cut short” (Pro 10:27); wisdom’s commands “add to you” length of days and years of life (Pro 3:1–2; 9:11); the psalmist prays “add days to the days of the king” (Psa 61:7). Jesus asks, “which of you by being anxious can add one cubit to his span?”, and bids his hearers seek first the kingdom of God, “and all these things will be added to you” (Mat 6:27, 33). From the verses: years, and what life needs, are added by God, not won by anxious effort, and he adds them to those who fear him and seek his kingdom.",
+      "evidence": [
+        {
+          "ref": "Isa.38.1"
+        },
+        {
+          "ref": "Isa.38.5"
+        },
+        {
+          "ref": "Pro.10.27"
+        },
+        {
+          "ref": "Pro.3.1",
+          "to": "Pro.3.2"
+        },
+        {
+          "ref": "Pro.9.11"
+        },
+        {
+          "ref": "Psa.61.7"
+        },
+        {
+          "ref": "Mat.6.27"
+        },
+        {
+          "ref": "Mat.6.33"
+        }
+      ]
+    },
+    {
+      "topic": "never-again-the-flood",
+      "statement": "After the flood, when Noah offered on the altar, Yahweh said in his heart, “I will not again (לֹא־אֹסִף) curse the ground for man’s sake … and I will not again smite every living thing, as I have done” (Gen 8:21), and made it a covenant: “never again shall all flesh be cut off by the waters of a flood” (Gen 9:11). What he will not do again is what he had done: the waters covered all the high mountains under all the heavens, and all flesh that moved on the earth died, save those in the ark (Gen 7:19–23). Peter sets that world, which “being flooded with water, perished”, beside the present heavens and earth kept for fire (2Pe 3:6–7). From the verses: the promise “not again” answers a flood that destroyed every living thing on the earth, and it stands as long as the earth remains (Gen 8:22).",
+      "evidence": [
+        {
+          "ref": "Gen.8.21"
+        },
+        {
+          "ref": "Gen.9.11"
+        },
+        {
+          "ref": "Gen.7.19",
+          "to": "Gen.7.23"
+        },
+        {
+          "ref": "2Pe.3.6",
+          "to": "2Pe.3.7"
+        },
+        {
+          "ref": "Gen.8.22"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (the name אֶלְיָסָף, Num 10:20; names/eliasaph.json); Leviticus 23 has no word of the root. BDB key j.bz.aa also counts some 200 tokens of the name יוֹסֵף (Joseph), its “no stem” group, so the verb’s use count is high by that much; j.bz.ab (the name) in turn counts four hiphil verbs (Lev 5:16; 2Sa 24:3; Jol 2:2; 1Ch 21:3), cited here under the hiphil. 2Sa 6:1 וַיֹּסֶף is filed under the verb by spelling but analysed as אָסַף, and is left out. Left out as names, for their own entries: יוֹסֵף / יְהוֹסֵף (Joseph, j.bz.ab; “may he add”, Gen 30:24) and יוֹסִפְיָה (Josiphiah, j.bz.ac, Ezr 8:10); j.ba.ag, a zero-token cross-reference, is left out. The forms סְפוּ (Isa 29:1; Jer 7:21) and סְפוֹת (Num 32:14; Deu 29:18; Isa 30:1), “add”, are keyed to ספה (o.cd.aa) in the database, not here; review whether they are imperatives and infinitives of this verb. Peshitta: SEDRA root 830 ܝܣܦ, lexeme 1394 (;SI), “add; increase”, aphel and ettaphal only in the New Testament; Payne Smith not read for it. Hebrew verse numbers are the database’s (Lev 5:24 = English 6:5; Deu 13:1 = English 12:32; Dan 4:33 = English 4:36; Psa 61:7 = English 61:6). Not entered: Ugaritic (no ysp in Segert’s glossary; DULAT not consulted); Arabic (Lane has no وسف or يسف in this sense); Geʿez wassaka “add” (Dillmann and Leslau not consulted, and k for פ is not a regular correspondence); Wiktionary’s Syriac ܬܘܣܦܬܐ “addition” (a lead, not checked in Payne Smith). Akkadian waṣābu is kept only as possible. Open questions for review: (1) whether Gal 3:19 “the law was added” deserves a doctrine point of its own; (2) the reading of Isa 11:11 “a second time” is left as a plain note under “do again”, with no prophetic conclusion drawn."
+}
