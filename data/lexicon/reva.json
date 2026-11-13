@@ -1,0 +1,2406 @@
+{
+  "id": "reva",
+  "root": "רבע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "number",
+    "time",
+    "feasts",
+    "offerings",
+    "measure",
+    "generations",
+    "prophecy",
+    "sexuality"
+  ],
+  "gloss": "four; forty; fourth, a fourth part; square; (another sense) lie down, couple",
+  "summary": "רבע is the number four: אַרְבַּע “four”, its plural אַרְבָּעִים “forty”, the ordinal רְבִיעִי “fourth”, whose feminine is also “a fourth part” (רְבִיעִת הַהִין, the wine of the drink offering in Lev 23:13), the nouns רֶבַע and רֹבַע “a quarter; a side”, רִבֵּעִים “the fourth generation”, and the verb רָבַע “be square”, four-sided (Exo 27:1). Scripture uses four for the four quarters of the earth and its winds (Isa 11:12; Ezk 37:9), in dates (the fourteenth of the first month is the Passover, Lev 23:5), and forty for set times of trial and of waiting: the rain of the flood, Moses on the mountain, Israel’s years in the wilderness, a day for a year (Num 14:34). A second רָבַע, “lie down; couple (of beasts)” (Lev 19:19; 20:16; Psa 139:3), has its own cognates in Aramaic and Syriac “lie, couch”; how it is tied to the number is not clear. Arabic ʾarbaʿ, Ugaritic arbʿ, Akkadian erbe, Phoenician ʾrbʿ, Sabaic ʾrbʿ, Ge’ez ʾarbaʿ and Aramaic אַרְבַּע all mean “four”.",
+  "words": [
+    {
+      "lemma": "אַרְבַּע",
+      "pos": "numeral",
+      "gender": "mf",
+      "gloss": "four; (with עָשָׂר) fourteen; (with מֵאוֹת, אֲלָפִים) four hundred, four thousand; (dual אַרְבַּעְתַּיִם) fourfold",
+      "bdb": [
+        "t.al.ab",
+        "a.fm.al",
+        "xa.be.ag"
+      ],
+      "cognate_ids": [
+        "ar-arbaa",
+        "uga-arb",
+        "akk-erbe",
+        "phn-arb",
+        "sab-arb",
+        "arc-arba",
+        "gez-arbau"
+      ],
+      "summary": "Feminine אַרְבַּע (construct אַרְבַּע), masculine אַרְבָּעָה (construct אַרְבַּעַת): as with the other numbers from three to ten, the form with ־ָה goes with masculine nouns (אַרְבָּעָה מְלָכִים, Gen 14:9) and the shorter with feminine (אַרְבַּע כַּנְפוֹת, Isa 11:12). With a suffix, “the four of them” (לְאַרְבַּעְתָּם, Ezk 1:10). Over three hundred uses; the count includes some tokens of the place name קִרְיַת אַרְבַּע (Gen 23:2; Jos 14:15), which the corpus files by spelling under this key.",
+      "senses": [
+        {
+          "id": "four",
+          "gloss": "four",
+          "definition": "The number four, counted beside the numbers around it: one more than three, one less than five.",
+          "evidence": [
+            {
+              "ref": "Gen.14.9",
+              "role": "defining",
+              "note": "“Four (אַרְבָּעָה) kings against the five”: the four of Chedorlaomer’s side against the five of Sodom’s."
+            },
+            {
+              "ref": "Exo.21.37",
+              "role": "defining",
+              "note": "A stolen ox slaughtered or sold is repaid with five oxen, a sheep “with four (וְאַרְבַּע) of the flock”: four set beside five."
+            },
+            {
+              "ref": "Gen.2.10",
+              "role": "defining",
+              "note": "The river out of Eden “parted and became four (לְאַרְבָּעָה) heads”, named one by one in 2:11–14, the fourth (הָרְבִיעִי) the Euphrates."
+            },
+            {
+              "ref": "Gen.47.24",
+              "note": "A fifth to Pharaoh, “and four (וְאַרְבַּע) parts shall be yours”: five parts in all."
+            },
+            {
+              "ref": "Exo.28.17",
+              "note": "Four rows of stones in the breastpiece."
+            },
+            {
+              "ref": "Isa.17.6",
+              "note": "Gleanings left as when an olive tree is beaten: “two or three berries in the top of the bough, four or five (אַרְבָּעָה חֲמִשָּׁה) in its fruitful branches”."
+            },
+            {
+              "ref": "Ezk.1.5",
+              "note": "“The likeness of four (אַרְבַּע) living creatures”, each with four faces and four wings (1:6), their faces to the four of them (1:10)."
+            },
+            {
+              "ref": "Job.42.16",
+              "note": "Job “saw his sons and his sons’ sons, four (אַרְבָּעָה) generations”."
+            },
+            {
+              "ref": "Jdg.11.40",
+              "note": "The daughters of Israel went yearly to lament Jephthah’s daughter four days in the year."
+            }
+          ],
+          "senses": [
+            {
+              "id": "on-all-fours",
+              "gloss": "(הֹלֵךְ עַל־אַרְבַּע) going on all fours",
+              "definition": "Of creatures that walk on four feet, or on all their feet, set apart in the law of clean and unclean.",
+              "evidence": [
+                {
+                  "ref": "Lev.11.27",
+                  "role": "defining",
+                  "note": "“Whatever goes on its paws, among all the beasts that go on four (עַל־אַרְבַּע), they are unclean to you.”"
+                },
+                {
+                  "ref": "Lev.11.20",
+                  "note": "“Every flying swarming thing that goes on four is detestable to you”, except those with jointed legs to leap with (11:21)."
+                },
+                {
+                  "ref": "Lev.11.42",
+                  "note": "Whatever goes on the belly, and whatever goes on four, or has many feet."
+                }
+              ]
+            },
+            {
+              "id": "four-quarters",
+              "gloss": "the four winds, corners, quarters: every side, the whole earth",
+              "definition": "Four as the full number of the directions: the four winds of heaven and the four corners of the land are every side at once, east, west, north and south.",
+              "evidence": [
+                {
+                  "ref": "1Ch.9.24",
+                  "role": "defining",
+                  "note": "“On the four (לְאַרְבַּע) winds were the gatekeepers: east, west, north and south”: the four winds named."
+                },
+                {
+                  "ref": "Isa.11.12",
+                  "role": "defining",
+                  "note": "Yahweh “will gather the scattered of Judah from the four corners (מֵאַרְבַּע כַּנְפוֹת) of the earth”, parallel to “assemble the outcasts of Israel”: from every side."
+                },
+                {
+                  "ref": "Jer.49.36",
+                  "role": "defining",
+                  "note": "“Upon Elam I will bring the four winds from the four ends of heaven, and scatter them toward all those winds”: four is “all”."
+                },
+                {
+                  "ref": "Ezk.37.9",
+                  "note": "“Come from the four winds (מֵאַרְבַּע רוּחוֹת), O breath, and breathe upon these slain, that they may live.”"
+                },
+                {
+                  "ref": "Ezk.7.2",
+                  "note": "“An end is come upon the four corners of the land.”"
+                },
+                {
+                  "ref": "Zec.2.10",
+                  "note": "“I have spread you abroad as the four winds of heaven.”"
+                },
+                {
+                  "ref": "Zec.6.5",
+                  "note": "The four chariots: “these are the four winds (spirits) of heaven, which go forth from standing before the Lord of all the earth”."
+                },
+                {
+                  "ref": "Dan.8.8",
+                  "note": "In place of the goat’s great horn came up four notable ones “toward the four winds of heaven”."
+                },
+                {
+                  "ref": "Job.1.19",
+                  "note": "A great wind struck the four corners of the house."
+                },
+                {
+                  "ref": "Ezk.48.16",
+                  "note": "The city’s measure: four thousand five hundred on each of its four sides, north, south, east and west."
+                }
+              ]
+            },
+            {
+              "id": "three-and-four",
+              "gloss": "(three … and four) one beyond the full count",
+              "definition": "In a graded saying, three and then four: the number named is reached and passed, so the list is full, or the sin is more than enough.",
+              "evidence": [
+                {
+                  "ref": "Pro.30.18",
+                  "role": "defining",
+                  "note": "“Three things are too wonderful for me, and four (וְאַרְבָּעָה) I know not”, and the four are then listed (30:19)."
+                },
+                {
+                  "ref": "Amo.1.3",
+                  "role": "defining",
+                  "note": "“For three transgressions of Damascus, and for four, I will not turn it back”: the saying is repeated for each nation in Amo 1–2."
+                },
+                {
+                  "ref": "Pro.30.15",
+                  "note": "“Three things are never satisfied, four never say, Enough.”"
+                },
+                {
+                  "ref": "Pro.30.21"
+                },
+                {
+                  "ref": "Pro.30.29"
+                },
+                {
+                  "ref": "Amo.2.6",
+                  "note": "The same words against Israel."
+                }
+              ]
+            },
+            {
+              "id": "fourteen",
+              "gloss": "fourteen (אַרְבָּעָה עָשָׂר, אַרְבַּע עֶשְׂרֵה); fourteenth",
+              "definition": "Joined to ten, fourteen; above all the fourteenth day of the first month, the day of the Passover.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.5",
+                  "role": "defining",
+                  "note": "“In the first month, on the fourteenth (בְּאַרְבָּעָה עָשָׂר) of the month, between the evenings, is Yahweh’s Passover”, the day before חַג הַמַּצּוֹת on the fifteenth (23:6)."
+                },
+                {
+                  "ref": "Exo.12.6",
+                  "role": "defining",
+                  "note": "The lamb is kept “until the fourteenth day of this month”, and killed between the evenings."
+                },
+                {
+                  "ref": "Num.9.3",
+                  "note": "In the second year, “on the fourteenth day of this month, between the evenings, you shall keep it in its appointed time”."
+                },
+                {
+                  "ref": "Num.9.11",
+                  "note": "The second Passover, on the fourteenth of the second month, for those unclean or far off."
+                },
+                {
+                  "ref": "Num.28.16"
+                },
+                {
+                  "ref": "Jos.5.10",
+                  "note": "Israel kept the Passover on the fourteenth of the month in the plains of Jericho."
+                },
+                {
+                  "ref": "2Ch.30.15",
+                  "note": "Hezekiah’s Passover, on the fourteenth of the second month."
+                },
+                {
+                  "ref": "2Ch.35.1"
+                },
+                {
+                  "ref": "Ezk.45.21",
+                  "note": "In the house of Ezekiel’s vision: “in the first month, on the fourteenth day of the month, you shall have the Passover”."
+                },
+                {
+                  "ref": "Est.9.17",
+                  "note": "The Jews rested on the fourteenth of Adar and made it a day of feasting and gladness."
+                },
+                {
+                  "ref": "Gen.31.41",
+                  "note": "Jacob served Laban fourteen years for his two daughters."
+                }
+              ]
+            },
+            {
+              "id": "four-hundreds",
+              "gloss": "four hundred, four thousand, and in larger numbers",
+              "definition": "With hundreds and thousands, and as part of the numbers of years, censuses and companies.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.13",
+                  "role": "defining",
+                  "note": "“Your seed shall be a stranger in a land not theirs … four hundred (אַרְבַּע מֵאוֹת) years.”"
+                },
+                {
+                  "ref": "Exo.12.40",
+                  "role": "defining",
+                  "note": "“The dwelling of the sons of Israel … was four hundred and thirty years”, ending “on that very day” (12:41)."
+                },
+                {
+                  "ref": "1Ki.6.1",
+                  "note": "“In the four hundred and eightieth year” after the exodus Solomon began to build the house."
+                },
+                {
+                  "ref": "1Sa.22.2",
+                  "note": "About four hundred men gathered to David at Adullam."
+                },
+                {
+                  "ref": "1Ki.18.19",
+                  "note": "The four hundred and fifty prophets of Baal, and the four hundred of the Asherah."
+                },
+                {
+                  "ref": "1Ch.23.5",
+                  "note": "Four thousand gatekeepers and four thousand praising Yahweh with instruments."
+                },
+                {
+                  "ref": "Num.1.29",
+                  "note": "Issachar numbered fifty-four thousand four hundred."
+                }
+              ]
+            },
+            {
+              "id": "fourth-in-dates",
+              "gloss": "(in a date) the fourth (day, year)",
+              "definition": "In a date the cardinal stands for the ordinal: “in the year four” is the fourth year, “on four of the month” the fourth day.",
+              "evidence": [
+                {
+                  "ref": "Zec.7.1",
+                  "role": "defining",
+                  "note": "“In the year four (בִּשְׁנַת אַרְבַּע) of king Darius … on the fourth (בְּאַרְבָּעָה) of the ninth month, Kislev.”"
+                },
+                {
+                  "ref": "1Ki.22.41",
+                  "note": "Jehoshaphat began to reign “in the fourth year of Ahab”."
+                },
+                {
+                  "ref": "Hag.2.10",
+                  "note": "“On the twenty-fourth of the ninth month.”"
+                }
+              ]
+            },
+            {
+              "id": "fourfold",
+              "gloss": "(אַרְבַּעְתַּיִם) fourfold",
+              "definition": "The dual, four times over: the restitution for a stolen sheep.",
+              "evidence": [
+                {
+                  "ref": "2Sa.12.6",
+                  "role": "defining",
+                  "note": "David’s judgment on the rich man of Nathan’s parable: “he shall restore the lamb fourfold (אַרְבַּעְתָּיִם)”, by the law of Exo 21:37."
+                },
+                {
+                  "ref": "Exo.21.37",
+                  "note": "Four sheep for a sheep."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τέσσαρες",
+          "gloss": "four",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "τέσσαρες renders אַרְבַּע ×168 (Gen.2.10, Lev.11.27, Isa.11.12 and the rest)"
+            },
+            {
+              "ref": "Rev.7.1",
+              "note": "“Four angels standing on the four corners of the earth, holding the four winds of the earth”: the four quarters of Isa 11:12 and Jer 49:36."
+            },
+            {
+              "ref": "Mat.24.31",
+              "note": "“They shall gather his elect from the four winds, from one end of heaven to the other”: the wording of Zec 2:10 and Deu 30:4."
+            },
+            {
+              "ref": "Mrk.13.27"
+            },
+            {
+              "ref": "Rev.4.6",
+              "note": "Four living creatures round the throne, with the faces of Ezk 1:10 (Rev 4:7)."
+            },
+            {
+              "ref": "Act.10.11",
+              "note": "A great sheet let down by four corners, holding “all the four-footed beasts of the earth” (10:12)."
+            },
+            {
+              "ref": "Jhn.11.17",
+              "note": "Lazarus had been in the tomb four days."
+            },
+            {
+              "ref": "Luk.19.8",
+              "note": "Zacchaeus: “if I have taken anything from anyone by false accusation, I restore it fourfold (τετραπλοῦν)”, the restitution of Exo 21:37 and 2Sa 12:6."
+            }
+          ]
+        },
+        {
+          "lemma": "τετρακόσιοι",
+          "gloss": "four hundred",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.15.13, אַרְבַּע מֵאוֹת שָׁנָה → τετρακόσια ἔτη"
+            },
+            {
+              "ref": "Act.7.6",
+              "role": "defining",
+              "note": "Stephen quotes Gen 15:13: “they shall bring them into bondage and ill-treat them four hundred years”."
+            },
+            {
+              "ref": "Gal.3.17",
+              "note": "The law came “four hundred and thirty years” after the covenant with Abraham: the years of Exo 12:40."
+            },
+            {
+              "ref": "Act.5.36",
+              "note": "About four hundred men joined Theudas."
+            }
+          ]
+        },
+        {
+          "lemma": "τεσσαρεσκαιδέκατος",
+          "gloss": "fourteenth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.5, בְּאַרְבָּעָה עָשָׂר → τῇ τεσσαρεσκαιδεκάτῃ"
+            },
+            {
+              "ref": "Act.27.27",
+              "note": "“When the fourteenth night was come.”"
+            },
+            {
+              "ref": "Act.27.33"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁלֹשׁ",
+            "note": "Three: in the graded sayings, three and then four.",
+            "evidence": [
+              {
+                "ref": "Pro.30.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Amo.1.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אַרְבַּע רוּחוֹת הַשָּׁמַיִם",
+            "gloss": "the four winds of heaven: every quarter",
+            "evidence": [
+              {
+                "ref": "Jer.49.36",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.37.9"
+              },
+              {
+                "ref": "Zec.2.10"
+              },
+              {
+                "ref": "Zec.6.5"
+              },
+              {
+                "ref": "Dan.8.8"
+              },
+              {
+                "ref": "Dan.11.4"
+              },
+              {
+                "ref": "1Ch.9.24"
+              }
+            ]
+          },
+          {
+            "phrase": "אַרְבַּע כַּנְפוֹת הָאָרֶץ",
+            "gloss": "the four corners of the earth, of the land",
+            "evidence": [
+              {
+                "ref": "Isa.11.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.7.2"
+              }
+            ]
+          },
+          {
+            "phrase": "הֹלֵךְ עַל־אַרְבַּע",
+            "gloss": "going on all fours",
+            "evidence": [
+              {
+                "ref": "Lev.11.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.11.20"
+              },
+              {
+                "ref": "Lev.11.21"
+              },
+              {
+                "ref": "Lev.11.42"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל־שְׁלֹשָׁה … וְעַל־אַרְבָּעָה",
+            "gloss": "for three … and for four",
+            "evidence": [
+              {
+                "ref": "Amo.1.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Amo.2.6"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּאַרְבָּעָה עָשָׂר יוֹם לַחֹדֶשׁ",
+            "gloss": "on the fourteenth day of the month",
+            "evidence": [
+              {
+                "ref": "Lev.23.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.12.6"
+              },
+              {
+                "ref": "Num.9.3"
+              },
+              {
+                "ref": "Num.28.16"
+              },
+              {
+                "ref": "Jos.5.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אַרְבָּעִים",
+      "pos": "numeral",
+      "gloss": "forty; fortieth",
+      "bdb": [
+        "t.al.ad"
+      ],
+      "cognate_ids": [
+        "ar-arbaun",
+        "uga-arbm",
+        "akk-erba",
+        "phn-arbm",
+        "sab-arb",
+        "arc-arba"
+      ],
+      "summary": "The plural of four, as the tens are formed (עֶשְׂרִים, שְׁלֹשִׁים, חֲמִשִּׁים): forty. It also counts the fortieth year (Deu 1:3). Forty days and forty years are scripture’s commonest set times: the rain of the flood, Moses on the mountain, the spies in the land and the wilderness years, the rests of the judges and the reigns of Saul, David and Solomon.",
+      "senses": [
+        {
+          "id": "forty",
+          "gloss": "forty",
+          "definition": "The number forty, four tens.",
+          "evidence": [
+            {
+              "ref": "Gen.18.28",
+              "role": "defining",
+              "note": "“Suppose the fifty righteous lack five?” “I will not destroy it if I find there forty and five (אַרְבָּעִים וַחֲמִשָּׁה)”; then “suppose forty are found there?” (18:29)."
+            },
+            {
+              "ref": "Deu.25.3",
+              "role": "defining",
+              "note": "“Forty (אַרְבָּעִים) stripes he may give him, not more”: the limit of a beating."
+            },
+            {
+              "ref": "Gen.25.20",
+              "note": "Isaac was forty years old when he took Rebekah."
+            },
+            {
+              "ref": "Exo.26.19",
+              "note": "Forty sockets of silver under the twenty boards."
+            },
+            {
+              "ref": "Jos.14.7",
+              "note": "Caleb: “forty years old was I when Moses sent me to spy out the land.”"
+            },
+            {
+              "ref": "2Ki.8.9",
+              "note": "A present of forty camels’ burden."
+            }
+          ]
+        },
+        {
+          "id": "forty-days",
+          "gloss": "forty days (and forty nights)",
+          "definition": "A set span of days, in judgment, in being with God, in going without food, and in waiting for an end.",
+          "evidence": [
+            {
+              "ref": "Gen.7.4",
+              "role": "defining",
+              "note": "“In seven days I will cause it to rain on the earth forty days and forty nights (אַרְבָּעִים יוֹם וְאַרְבָּעִים לָיְלָה).”"
+            },
+            {
+              "ref": "Gen.7.12",
+              "note": "The rain was on the earth forty days and forty nights."
+            },
+            {
+              "ref": "Exo.34.28",
+              "role": "defining",
+              "note": "Moses “was there with Yahweh forty days and forty nights; he neither ate bread nor drank water”, and wrote the ten words."
+            },
+            {
+              "ref": "Exo.24.18",
+              "note": "Moses on the mountain forty days and forty nights."
+            },
+            {
+              "ref": "Deu.9.9",
+              "note": "Moses’ own account: “I abode in the mountain forty days and forty nights, I neither ate bread nor drank water.”"
+            },
+            {
+              "ref": "Deu.9.18",
+              "note": "He fell down before Yahweh forty days and forty nights for Israel’s sin."
+            },
+            {
+              "ref": "1Ki.19.8",
+              "note": "Elijah “went in the strength of that food forty days and forty nights to Horeb, the mountain of God”."
+            },
+            {
+              "ref": "Num.13.25",
+              "note": "The spies returned at the end of forty days."
+            },
+            {
+              "ref": "Jon.3.4",
+              "role": "defining",
+              "note": "“Yet forty days, and Nineveh shall be overthrown”: a set time before the end, in which Nineveh repented (3:10)."
+            },
+            {
+              "ref": "1Sa.17.16",
+              "note": "Goliath presented himself morning and evening forty days."
+            },
+            {
+              "ref": "Gen.50.3",
+              "note": "Forty days were fulfilled for the embalming of Jacob."
+            }
+          ]
+        },
+        {
+          "id": "forty-years",
+          "gloss": "forty years",
+          "definition": "A generation’s span: the years in the wilderness, the rests of the land under the judges, and the reigns of the first kings.",
+          "evidence": [
+            {
+              "ref": "Num.14.33",
+              "role": "defining",
+              "note": "“Your sons shall be shepherds in the wilderness forty years … until your carcasses are consumed”: a generation dies out."
+            },
+            {
+              "ref": "Num.14.34",
+              "role": "defining",
+              "note": "“According to the number of the days you spied out the land, forty days, a day for a year (יוֹם לַשָּׁנָה), you shall bear your iniquities, forty years.”"
+            },
+            {
+              "ref": "Deu.8.2",
+              "role": "defining",
+              "note": "“Remember all the way which Yahweh your God led you these forty years in the wilderness, to humble you, to prove you, to know what was in your heart.”"
+            },
+            {
+              "ref": "Deu.29.4",
+              "note": "“I have led you forty years in the wilderness; your clothes have not worn out.”"
+            },
+            {
+              "ref": "Psa.95.10",
+              "note": "“Forty years I loathed that generation, and said, It is a people that err in heart.”"
+            },
+            {
+              "ref": "Amo.2.10",
+              "note": "“I led you forty years in the wilderness to possess the land of the Amorite.”"
+            },
+            {
+              "ref": "Jdg.3.11",
+              "note": "“And the land had rest forty years.”"
+            },
+            {
+              "ref": "Jdg.13.1",
+              "note": "Israel delivered into the hand of the Philistines forty years."
+            },
+            {
+              "ref": "2Sa.5.4",
+              "note": "David reigned forty years."
+            },
+            {
+              "ref": "1Ki.11.42",
+              "note": "Solomon reigned in Jerusalem over all Israel forty years."
+            },
+            {
+              "ref": "Ezk.4.6",
+              "role": "defining",
+              "note": "Ezekiel lies on his right side forty days for the iniquity of Judah: “a day for a year, a day for a year, I have given it to you”."
+            },
+            {
+              "ref": "Ezk.29.11",
+              "note": "Egypt shall be uninhabited forty years."
+            }
+          ]
+        },
+        {
+          "id": "fortieth",
+          "gloss": "fortieth (year)",
+          "definition": "In a date, “in the forty year” is the fortieth year.",
+          "evidence": [
+            {
+              "ref": "Deu.1.3",
+              "role": "defining",
+              "note": "“In the fortieth year (בְּאַרְבָּעִים שָׁנָה), in the eleventh month, on the first of the month, Moses spoke to the sons of Israel.”"
+            },
+            {
+              "ref": "Num.33.38",
+              "note": "Aaron died on Mount Hor “in the fortieth year after the sons of Israel came out of Egypt”."
+            },
+            {
+              "ref": "1Ch.26.31",
+              "note": "In the fortieth year of David’s reign."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τεσσαράκοντα",
+          "gloss": "forty",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.7.4, אַרְבָּעִים יוֹם וְאַרְבָּעִים לָיְלָה → τεσσαράκοντα ἡμέρας καὶ τεσσαράκοντα νύκτας; τεσσαράκοντα stands for אַרְבָּעִים ×94 (the alignment’s lemma column gives ἑκατόν in error; the Greek word itself is τεσσαράκοντα)"
+            },
+            {
+              "ref": "Mat.4.2",
+              "role": "defining",
+              "note": "Jesus “fasted forty days and forty nights”, as Moses had on the mountain (Exo 34:28; Deu 9:9), and answered from Deu 8:3, the chapter of the forty years (Mat 4:4)."
+            },
+            {
+              "ref": "Act.7.36",
+              "note": "Moses “brought them out, after he had shown wonders and signs in Egypt, at the Red Sea, and in the wilderness forty years”."
+            },
+            {
+              "ref": "Act.7.30",
+              "note": "When forty years were fulfilled, the angel appeared to Moses in the wilderness of Mount Sinai."
+            },
+            {
+              "ref": "Heb.3.9",
+              "to": "Heb.3.10",
+              "note": "Psa 95:9–10 quoted: “your fathers tested me … and saw my works forty years”."
+            },
+            {
+              "ref": "Heb.3.17",
+              "note": "“With whom was he grieved forty years? Was it not with those who sinned, whose carcasses fell in the wilderness?” (Num 14:29, 33)."
+            },
+            {
+              "ref": "Act.13.18",
+              "note": "“About forty years he bore with their ways in the wilderness.”"
+            },
+            {
+              "ref": "Act.13.21",
+              "note": "God gave them Saul for forty years."
+            },
+            {
+              "ref": "Act.1.3",
+              "note": "The risen Christ was seen by the apostles forty days, speaking of the kingdom of God."
+            },
+            {
+              "ref": "2Co.11.24",
+              "note": "“Five times I received forty stripes less one”: kept under the limit of Deu 25:3."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "אַרְבָּעִים יוֹם וְאַרְבָּעִים לָיְלָה",
+            "gloss": "forty days and forty nights",
+            "evidence": [
+              {
+                "ref": "Gen.7.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.7.12"
+              },
+              {
+                "ref": "Exo.24.18"
+              },
+              {
+                "ref": "Exo.34.28"
+              },
+              {
+                "ref": "Deu.9.9"
+              },
+              {
+                "ref": "Deu.9.11"
+              },
+              {
+                "ref": "Deu.9.18"
+              },
+              {
+                "ref": "Deu.9.25"
+              },
+              {
+                "ref": "Deu.10.10"
+              },
+              {
+                "ref": "1Ki.19.8"
+              }
+            ]
+          },
+          {
+            "phrase": "יוֹם לַשָּׁנָה",
+            "gloss": "a day for a year",
+            "evidence": [
+              {
+                "ref": "Num.14.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.4.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רְבִיעִי",
+      "pos": "adjective",
+      "gloss": "fourth; (fem. רְבִיעִית) a fourth part; foursquare",
+      "bdb": [
+        "t.al.ah"
+      ],
+      "cognate_ids": [
+        "ar-rabi",
+        "uga-rb",
+        "akk-rebu",
+        "phn-arbay",
+        "sab-rb",
+        "arc-rebiaa"
+      ],
+      "summary": "The ordinal of four, masculine רְבִיעִי, feminine רְבִיעִית (also written רְבִעִית): the fourth day, month, year, son or generation. The feminine stands alone for “a fourth part”, above all the quarter of a hin of the drink offering, and once for “foursquare” (Ezk 48:20).",
+      "senses": [
+        {
+          "id": "fourth",
+          "gloss": "fourth (in order)",
+          "definition": "The fourth in a sequence: of the days, months, years, sons, rivers or kings.",
+          "evidence": [
+            {
+              "ref": "Gen.1.19",
+              "role": "defining",
+              "note": "“And there was evening and there was morning, a fourth day (יוֹם רְבִיעִי)”: the day the lights were made (1:14–18), after the third (1:13) and before the fifth (1:23)."
+            },
+            {
+              "ref": "2Sa.3.4",
+              "role": "defining",
+              "note": "David’s sons in Hebron: Amnon, Chileab, Absalom, “and the fourth (וְהָרְבִיעִי) Adonijah”, then the fifth."
+            },
+            {
+              "ref": "Gen.2.14",
+              "note": "“And the fourth river is the Euphrates.”"
+            },
+            {
+              "ref": "Lev.19.24",
+              "note": "“In the fourth year all its fruit shall be holy, for praise to Yahweh”, after three years uncircumcised (19:23)."
+            },
+            {
+              "ref": "1Ki.6.37",
+              "note": "“In the fourth year the foundation of the house of Yahweh was laid, in the month Ziv.”"
+            },
+            {
+              "ref": "Jer.25.1",
+              "note": "“In the fourth year of Jehoiakim … that was the first year of Nebuchadnezzar.”"
+            },
+            {
+              "ref": "Jer.39.2",
+              "note": "In the fourth month, on the ninth of the month, the city was broken up."
+            },
+            {
+              "ref": "Zec.8.19",
+              "note": "“The fast of the fourth month, and the fast of the fifth … shall be to the house of Judah joy and gladness.”"
+            },
+            {
+              "ref": "Num.7.30",
+              "note": "On the fourth day Elizur son of Shedeur, leader of Reuben, brought his offering."
+            },
+            {
+              "ref": "Ezk.10.14",
+              "note": "“The fourth (face) the face of an eagle.”"
+            },
+            {
+              "ref": "Zec.6.3",
+              "note": "“In the fourth chariot dappled strong horses.”"
+            },
+            {
+              "ref": "Dan.11.2",
+              "note": "“Three more kings shall stand up in Persia, and the fourth shall be far richer than all.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "fourth-generation",
+              "gloss": "the fourth generation",
+              "definition": "The fourth generation from a man: his sons’ sons’ sons; in Gen 15:16 the generation that returns from Egypt.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.16",
+                  "role": "defining",
+                  "note": "“In the fourth generation (וְדוֹר רְבִיעִי) they shall return here, for the iniquity of the Amorite is not yet full”, after the four hundred years of 15:13."
+                },
+                {
+                  "ref": "2Ki.10.30",
+                  "role": "defining",
+                  "note": "To Jehu: “your sons of the fourth generation (בְּנֵי רְבִעִים) shall sit on the throne of Israel”."
+                },
+                {
+                  "ref": "2Ki.15.12",
+                  "note": "Fulfilled in Zechariah son of Jeroboam: “this was the word of Yahweh which he spoke to Jehu … and so it was”."
+                }
+              ],
+              "kin": [
+                "fourth-generation-ribbea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fourth-part",
+          "gloss": "(fem. רְבִיעִית) a fourth part, a quarter",
+          "definition": "One of four equal parts: of a hin, the measure of the oil and wine of the daily and feast offerings; of a day.",
+          "evidence": [
+            {
+              "ref": "Lev.23.13",
+              "role": "defining",
+              "note": "With the lamb of the waved sheaf: two tenths of fine flour mixed with oil, “and its drink offering, wine, a fourth of the hin (רְבִיעִת הַהִין)”."
+            },
+            {
+              "ref": "Exo.29.40",
+              "role": "defining",
+              "note": "For each daily lamb, a tenth of flour mixed with “a fourth of a hin (רֶבַע הַהִין)” of beaten oil, “and a drink offering, a fourth of a hin (רְבִעִית הַהִין) of wine”: the two words side by side for the same measure."
+            },
+            {
+              "ref": "Num.15.4",
+              "to": "Num.15.5",
+              "note": "With a lamb, a tenth of flour mixed with a fourth of a hin of oil, and a fourth of a hin of wine."
+            },
+            {
+              "ref": "Num.28.7",
+              "note": "“Its drink offering a fourth of a hin for the one lamb.”"
+            },
+            {
+              "ref": "Num.28.14",
+              "note": "Half a hin for a bull, a third for a ram, a fourth for a lamb."
+            },
+            {
+              "ref": "Neh.9.3",
+              "role": "defining",
+              "note": "“They read in the book of the law of Yahweh their God a fourth of the day, and a fourth (they were) confessing and bowing down.”"
+            },
+            {
+              "ref": "1Ki.6.33",
+              "note": "The doorposts of olive wood for the entrance of the temple “from a fourth (מֵאֵת רְבִעִית)”: whether a fourth of the wall or four-sided is not clear."
+            }
+          ],
+          "kin": [
+            "fourth-part-reba",
+            "quarter-rova"
+          ]
+        },
+        {
+          "id": "foursquare-ordinal",
+          "gloss": "(fem. רְבִיעִית) foursquare",
+          "definition": "Of an area with four equal sides: the holy offering of the land in Ezekiel’s division.",
+          "evidence": [
+            {
+              "ref": "Ezk.48.20",
+              "role": "defining",
+              "note": "“All the offering, twenty-five thousand by twenty-five thousand, foursquare (רְבִיעִית) you shall offer the holy offering with the possession of the city.”"
+            }
+          ],
+          "kin": [
+            "square"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τέταρτος",
+          "gloss": "fourth; a fourth part",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.19, יוֹם רְבִיעִי → ἡμέρα τετάρτη; Lev.23.13, רְבִיעִת הַהִין → τὸ τέταρτον τοῦ ιν; τέταρτος renders רְבִיעִי ×45"
+            },
+            {
+              "ref": "Rev.4.7",
+              "note": "“The fourth living creature was like a flying eagle”: Ezk 1:10; 10:14."
+            },
+            {
+              "ref": "Mat.14.25",
+              "note": "“In the fourth watch of the night Jesus went to them, walking on the sea.”"
+            },
+            {
+              "ref": "Rev.6.8",
+              "note": "Power given “over the fourth part of the earth (τὸ τέταρτον τῆς γῆς)”."
+            },
+            {
+              "ref": "Rev.6.7"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "רְבִיעִת הַהִין",
+            "gloss": "a fourth of a hin (of oil, of wine)",
+            "evidence": [
+              {
+                "ref": "Lev.23.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.29.40"
+              },
+              {
+                "ref": "Num.15.4"
+              },
+              {
+                "ref": "Num.15.5"
+              },
+              {
+                "ref": "Num.28.5"
+              },
+              {
+                "ref": "Num.28.7"
+              },
+              {
+                "ref": "Num.28.14"
+              }
+            ]
+          },
+          {
+            "phrase": "דּוֹר רְבִיעִי",
+            "gloss": "the fourth generation",
+            "evidence": [
+              {
+                "ref": "Gen.15.16",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רִבֵּעַ",
+      "pos": "adjective",
+      "gloss": "(pl. רִבֵּעִים) of the fourth generation, great-grandchildren’s children",
+      "bdb": [
+        "t.al.ai"
+      ],
+      "cognate_ids": [
+        "arc-rebiaa"
+      ],
+      "summary": "Only in the plural, beside שִׁלֵּשִׁים “those of the third generation”, in the saying that Yahweh visits the iniquity of the fathers on the sons “to the third and to the fourth”. Four uses.",
+      "senses": [
+        {
+          "id": "fourth-generation-ribbea",
+          "gloss": "those of the fourth generation",
+          "definition": "The fourth generation counted from the fathers: sons, then the third, then the fourth.",
+          "evidence": [
+            {
+              "ref": "Exo.20.5",
+              "role": "defining",
+              "note": "“Visiting the iniquity of the fathers on the sons, on the third (שִׁלֵּשִׁים) and on the fourth (רִבֵּעִים) of those who hate me”, against “showing mercy to thousands of those who love me” (20:6)."
+            },
+            {
+              "ref": "Exo.34.7",
+              "role": "defining",
+              "note": "“On the sons and on the sons’ sons, on the third and on the fourth”: the generations spelled out."
+            },
+            {
+              "ref": "Num.14.18",
+              "note": "Moses pleads the words of Exo 34:6–7 after the spies’ report."
+            },
+            {
+              "ref": "Deu.5.9"
+            }
+          ],
+          "kin": [
+            "fourth-generation"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שִׁלֵּשִׁים",
+            "note": "Those of the third generation, always beside it.",
+            "evidence": [
+              {
+                "ref": "Exo.20.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.7"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אֲלָפִים",
+            "note": "Thousands: the iniquity is visited to the fourth generation, the mercy shown to thousands.",
+            "evidence": [
+              {
+                "ref": "Exo.20.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.7"
+              },
+              {
+                "ref": "Deu.5.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רֶבַע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a fourth part, a quarter; (pl.) the four sides",
+      "bdb": [
+        "t.al.af"
+      ],
+      "cognate_ids": [
+        "ar-rub",
+        "akk-rebu",
+        "phn-rb",
+        "sab-rb",
+        "arc-rubea"
+      ],
+      "summary": "A quarter of a measure (a hin, a shekel), and in the plural with a suffix the four sides of a thing, its quarters. The count under its key also takes in some tokens of רְבִיעִית and of the name of the Midianite king Reba (Num 31:8; Jos 13:21), filed by spelling.",
+      "senses": [
+        {
+          "id": "fourth-part-reba",
+          "gloss": "a fourth part, a quarter",
+          "definition": "A quarter of a measure or weight.",
+          "evidence": [
+            {
+              "ref": "Exo.29.40",
+              "role": "defining",
+              "note": "“A tenth of flour mixed with a fourth of a hin (רֶבַע הַהִין) of beaten oil”, beside רְבִעִית הַהִין of wine."
+            },
+            {
+              "ref": "1Sa.9.8",
+              "role": "defining",
+              "note": "Saul’s servant: “I have in my hand a fourth of a shekel (רֶבַע שֶׁקֶל) of silver; I will give it to the man of God.”"
+            }
+          ],
+          "kin": [
+            "fourth-part",
+            "quarter-rova"
+          ]
+        },
+        {
+          "id": "sides",
+          "gloss": "(pl. with suffix) its four sides",
+          "definition": "The four sides or quarters of a square thing, or of the living creatures that go straight toward each of them.",
+          "evidence": [
+            {
+              "ref": "Ezk.43.16",
+              "role": "defining",
+              "note": "The altar hearth, twelve long by twelve wide, “square to its four sides (אֶל אַרְבַּעַת רְבָעָיו)”."
+            },
+            {
+              "ref": "Ezk.1.8",
+              "role": "defining",
+              "note": "Hands of a man under their wings “on their four sides (עַל אַרְבַּעַת רִבְעֵיהֶם)”."
+            },
+            {
+              "ref": "Ezk.1.17",
+              "note": "The wheels “went on their four sides; they turned not when they went”."
+            },
+            {
+              "ref": "Ezk.10.11"
+            },
+            {
+              "ref": "Ezk.43.17",
+              "note": "The ledge, fourteen by fourteen, on its four sides."
+            }
+          ],
+          "kin": [
+            "square"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μέρος",
+          "gloss": "part, side",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.1.8, רִבְעֵיהֶם → μέρη; also Ezk.1.17, 10.11, 43.17 (μέρος ×4)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֹבַע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a fourth part, a quarter",
+      "bdb": [
+        "t.al.ag"
+      ],
+      "cognate_ids": [
+        "ar-rub",
+        "phn-rb",
+        "sab-rb",
+        "arc-rubea",
+        "akk-tarbutu"
+      ],
+      "summary": "Two uses. In 2Ki 6:25 a quarter of a kab. In Balaam’s first saying, “who has counted the dust of Jacob, or numbered the fourth part of Israel?” (Num 23:10): Israel lay encamped by its tribes under four standards (Num 2; 24:2), so that not even one quarter of it could be numbered. The parallel “dust” has suggested a word for dust here, and Akkadian has a noun tarbuʾtu “dust”; it is recorded as possible only, since the plain sense “quarter” fits the camp of Num 2.",
+      "senses": [
+        {
+          "id": "quarter-rova",
+          "gloss": "a fourth part, a quarter",
+          "definition": "A quarter of a measure; of a people, one of its four divisions.",
+          "evidence": [
+            {
+              "ref": "2Ki.6.25",
+              "role": "defining",
+              "note": "In the siege of Samaria “a fourth of a kab (וְרֹבַע הַקַּב) of doves’ dung for five pieces of silver”."
+            },
+            {
+              "ref": "Num.23.10",
+              "role": "defining",
+              "note": "“Who has counted the dust (עֲפַר) of Jacob, or numbered (אֶת־)רֹבַע יִשְׂרָאֵל?”: Israel encamped in four camps of three tribes each (Num 2:3, 10, 18, 25); even a quarter of it is past counting."
+            }
+          ],
+          "kin": [
+            "fourth-part",
+            "fourth-part-reba"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָפָר",
+            "note": "Dust: “the dust of Jacob” beside “the fourth part of Israel”, each a multitude past counting (Gen 13:16; 28:14).",
+            "evidence": [
+              {
+                "ref": "Num.23.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רָבַע",
+      "pos": "verb",
+      "gloss": "be square, four-sided",
+      "bdb": [
+        "t.al.ae"
+      ],
+      "cognate_ids": [
+        "ar-murabba",
+        "akk-rebitu"
+      ],
+      "summary": "Only in passive forms: the qal passive participle רָבוּעַ and the pual participle מְרֻבָּע, “squared, square”, of things whose length equals their breadth: the altars, the breastpiece, the temple courts and Ezekiel’s holy portion.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "(passive participle רָבוּעַ) square",
+          "senses": [
+            {
+              "id": "square",
+              "gloss": "square, four-sided with equal sides",
+              "definition": "Of a thing whose length and breadth are the same.",
+              "evidence": [
+                {
+                  "ref": "Exo.27.1",
+                  "role": "defining",
+                  "note": "The altar of burnt offering “five cubits long and five cubits wide; the altar shall be square (רָבוּעַ)”."
+                },
+                {
+                  "ref": "Exo.30.2",
+                  "role": "defining",
+                  "note": "The altar of incense: “a cubit its length and a cubit its breadth; square it shall be”."
+                },
+                {
+                  "ref": "Exo.28.16",
+                  "role": "defining",
+                  "note": "The breastpiece: “square it shall be, doubled; a span its length and a span its breadth”."
+                },
+                {
+                  "ref": "Exo.37.25"
+                },
+                {
+                  "ref": "Exo.38.1"
+                },
+                {
+                  "ref": "Exo.39.9"
+                },
+                {
+                  "ref": "Ezk.43.16",
+                  "note": "The altar hearth, twelve by twelve, square to its four sides."
+                },
+                {
+                  "ref": "1Ki.7.5",
+                  "note": "Doors and posts “square in frame”."
+                },
+                {
+                  "ref": "Ezk.41.21",
+                  "note": "“The doorposts of the temple were squared.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "(participle מְרֻבָּע) squared",
+          "senses": [
+            {
+              "id": "squared",
+              "gloss": "squared, made square",
+              "definition": "Laid out or made with equal sides; set against round.",
+              "evidence": [
+                {
+                  "ref": "Ezk.40.47",
+                  "role": "defining",
+                  "note": "The inner court, “a hundred cubits long and a hundred cubits wide, squared (מְרֻבַּעַת)”."
+                },
+                {
+                  "ref": "Ezk.45.2",
+                  "role": "defining",
+                  "note": "For the sanctuary “five hundred by five hundred, squared round about”."
+                },
+                {
+                  "ref": "1Ki.7.31",
+                  "role": "defining",
+                  "note": "The panels of the stands “were square (מְרֻבָּעוֹת), not round (עֲגֻלּוֹת)”."
+                }
+              ],
+              "kin": [
+                "foursquare-ordinal",
+                "sides"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τετράγωνος",
+          "gloss": "square, foursquare",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.27.1, רָבוּעַ → τετράγωνον; also Exo.28.16, 30.2, 39.9, 1Ki.7.5, Ezk.41.21, 45.2"
+            },
+            {
+              "ref": "Rev.21.16",
+              "role": "defining",
+              "note": "“The city lies foursquare (τετράγωνος), and its length is as great as its breadth”: measured on four equal sides, as the city and holy portion of Ezk 45:2 and 48:16–20."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "עָגֹל",
+            "note": "Round: the panels were square, not round.",
+            "evidence": [
+              {
+                "ref": "1Ki.7.31",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רָבַע",
+      "pos": "verb",
+      "gloss": "lie down; (of beasts) couple, mate",
+      "bdb": [
+        "t.am.aa"
+      ],
+      "cognate_ids": [
+        "arc-reba-lie",
+        "syc-reba-lie",
+        "ar-rabaa-abide"
+      ],
+      "summary": "Lying down, of a man at rest (Psa 139:3), and lying with, of beasts mating: the law forbids a woman to come to a beast to lie with it (Lev 18:23; 20:16), and the hiphil is to let cattle breed with another kind (Lev 19:19). Aramaic and Syriac רְבַע “lie, couch” are the same word. How this sense is tied to the number four is not clear; it is kept here as the same spelling.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lie down; lie with (a beast)",
+          "senses": [
+            {
+              "id": "lie-down",
+              "gloss": "lie down (to rest)",
+              "definition": "Lying down, set against going on one’s way: the whole of a man’s life, at rest and in motion.",
+              "evidence": [
+                {
+                  "ref": "Psa.139.3",
+                  "role": "defining",
+                  "note": "“My path (אָרְחִי) and my lying down (וְרִבְעִי) you sift, and are acquainted with all my ways”, as “my sitting down and my rising up” in 139:2."
+                }
+              ]
+            },
+            {
+              "id": "lie-with-beast",
+              "gloss": "lie with, mate with (a beast)",
+              "definition": "Of a woman giving herself to a beast to couple with it, forbidden on pain of death.",
+              "evidence": [
+                {
+                  "ref": "Lev.20.16",
+                  "role": "defining",
+                  "note": "“A woman who approaches any beast to lie with it (לְרִבְעָה אֹתָהּ), you shall kill the woman and the beast.”"
+                },
+                {
+                  "ref": "Lev.18.23",
+                  "role": "defining",
+                  "note": "“With any beast you shall not give your lying (שְׁכָבְתְּךָ) … nor shall a woman stand before a beast to lie with it (לְרִבְעָהּ): it is confusion”: רָבַע beside שְׁכָבָה."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "let (cattle) breed",
+          "senses": [
+            {
+              "id": "let-breed",
+              "gloss": "cause to couple, let breed",
+              "definition": "Make cattle couple: forbidden with two kinds.",
+              "evidence": [
+                {
+                  "ref": "Lev.19.19",
+                  "role": "defining",
+                  "note": "“You shall not let your cattle breed (לֹא־תַרְבִּיעַ) two kinds; you shall not sow your field with two kinds”: mixing kinds in beasts, seed and cloth."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁכַב",
+            "note": "Lie, lie with: Lev 18:23 sets שְׁכָבָה and רָבַע side by side.",
+            "evidence": [
+              {
+                "ref": "Lev.18.23",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אֹרַח",
+            "note": "The path, going on one’s way, against lying down at rest.",
+            "evidence": [
+              {
+                "ref": "Psa.139.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אַרְבַּע",
+      "lang": "arc",
+      "pos": "numeral",
+      "gender": "mf",
+      "gloss": "four; (with מְאָה) four hundred",
+      "bdb": [
+        "xt.ad.ab"
+      ],
+      "cognate_ids": [
+        "arc-arba",
+        "ar-arbaa",
+        "uga-arb",
+        "akk-erbe"
+      ],
+      "summary": "Biblical Aramaic אַרְבַּע, masculine אַרְבְּעָה, in Daniel and Ezra: the same word as the Hebrew. The corpus files Hebrew tokens of the same spelling under this key too, so its count is far above the Aramaic’s handful of uses (Dan 3:25; 7:2, 3, 6, 17; Ezr 6:17).",
+      "senses": [
+        {
+          "id": "aramaic-four",
+          "gloss": "four",
+          "definition": "The number four: the four men in the fire, the four beasts and four winds of Daniel’s vision.",
+          "evidence": [
+            {
+              "ref": "Dan.3.25",
+              "role": "defining",
+              "note": "“Lo, I see four (אַרְבְּעָה) men loose, walking in the midst of the fire”, where three had been bound (3:23–24)."
+            },
+            {
+              "ref": "Dan.7.17",
+              "role": "defining",
+              "note": "“These great beasts, which are four (אַרְבַּע), are four (אַרְבְּעָה) kings, who shall arise out of the earth.”"
+            },
+            {
+              "ref": "Dan.7.2",
+              "note": "“The four winds of heaven were stirring up the great sea”: the phrase of the Hebrew."
+            },
+            {
+              "ref": "Dan.7.3",
+              "note": "Four great beasts came up from the sea, different one from another."
+            },
+            {
+              "ref": "Dan.7.6",
+              "note": "The leopard with four wings of a bird and four heads."
+            },
+            {
+              "ref": "Ezr.6.17",
+              "note": "At the dedication of the house: a hundred bulls, two hundred rams, four hundred lambs."
+            }
+          ],
+          "kin": [
+            "four",
+            "four-quarters",
+            "four-hundreds"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רְבִיעָי",
+      "lang": "arc",
+      "pos": "adjective",
+      "gloss": "fourth",
+      "bdb": [
+        "xt.ad.ac"
+      ],
+      "cognate_ids": [
+        "arc-rebiaa",
+        "ar-rabi",
+        "akk-rebu"
+      ],
+      "summary": "Biblical Aramaic ordinal, masculine רְבִיעָאָה, feminine רְבִיעָיָא (רְבִיעָיְתָא): the fourth kingdom of the image and the fourth beast, and the fourth figure in the furnace. The corpus keys only Dan 7:19 and 7:23 to it; Dan 2:40, 3:25 and 7:7 are spelled differently.",
+      "senses": [
+        {
+          "id": "aramaic-fourth",
+          "gloss": "fourth",
+          "definition": "The fourth in order: of the kingdoms of the image, of the beasts from the sea, and of those seen in the fire.",
+          "evidence": [
+            {
+              "ref": "Dan.7.23",
+              "role": "defining",
+              "note": "“The fourth beast (חֵיוְתָא רְבִיעָיְתָא) shall be a fourth kingdom (מַלְכוּ רְבִיעָאָה) on the earth, which shall be different from all kingdoms.”"
+            },
+            {
+              "ref": "Dan.2.40",
+              "role": "defining",
+              "note": "“And a fourth kingdom (וּמַלְכוּ רְבִיעָאָה) shall be strong as iron”, after the gold, silver and bronze (2:38–39)."
+            },
+            {
+              "ref": "Dan.7.7",
+              "note": "“A fourth beast, dreadful and terrible and exceedingly strong, with great iron teeth.”"
+            },
+            {
+              "ref": "Dan.7.19",
+              "note": "Daniel would know the truth of the fourth beast."
+            },
+            {
+              "ref": "Dan.3.25",
+              "note": "“And the form of the fourth (דִּי רְבִיעָאָה) is like a son of the gods.”"
+            }
+          ],
+          "kin": [
+            "fourth"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַרְבְּעָא",
+      "lang": "syc",
+      "pos": "numeral",
+      "gloss": "four; (in compounds) fourteen, four hundred",
+      "cognate_ids": [
+        "ar-arbaa",
+        "uga-arb",
+        "akk-erbe",
+        "arc-arba"
+      ],
+      "summary": "The Peshitta’s four: feminine אַרְבַּע, masculine אַרְבְּעָא. SEDRA files אַרְבַּעְסַר “fourteen” and אַרְבַּעְמָאא “four hundred” as lexemes of their own under the root רבע.",
+      "senses": [
+        {
+          "gloss": "four",
+          "definition": "The number four: of days, months, corners, winds and living creatures.",
+          "kin": [
+            "four",
+            "four-quarters"
+          ],
+          "evidence": [
+            {
+              "ref": "Jhn.11.17",
+              "role": "defining",
+              "note": "Lazarus had lain in the tomb four days."
+            },
+            {
+              "ref": "Jhn.4.35",
+              "role": "defining",
+              "note": "“Do you not say, There are yet four months, and then comes the harvest?”"
+            },
+            {
+              "ref": "Mrk.2.3",
+              "note": "A paralytic carried by four."
+            },
+            {
+              "ref": "Rev.7.1",
+              "note": "Four angels on the four corners of the earth, holding the four winds."
+            },
+            {
+              "ref": "Mat.24.31",
+              "note": "The elect gathered from the four winds."
+            },
+            {
+              "ref": "Act.10.11",
+              "note": "A sheet let down by its four corners."
+            },
+            {
+              "ref": "Rev.4.6"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "fourteen; four hundred; fourfold",
+              "definition": "In the compounds fourteen and four hundred, and in the restitution “fourfold”.",
+              "kin": [
+                "fourteen",
+                "four-hundreds",
+                "fourfold"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.1.17",
+                  "role": "defining",
+                  "note": "“From Abraham to David are fourteen generations.”"
+                },
+                {
+                  "ref": "Gal.2.1",
+                  "note": "“Then after fourteen years I went up again to Jerusalem.”"
+                },
+                {
+                  "ref": "Act.7.6",
+                  "role": "defining",
+                  "note": "Four hundred years of bondage, from Gen 15:13."
+                },
+                {
+                  "ref": "Gal.3.17",
+                  "note": "Four hundred and thirty years."
+                },
+                {
+                  "ref": "Luk.19.8",
+                  "role": "defining",
+                  "note": "Zacchaeus restores fourfold, as Exo 21:37 and 2Sa 12:6."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַרְבְּעִין",
+      "lang": "syc",
+      "pos": "numeral",
+      "gloss": "forty",
+      "cognate_ids": [
+        "ar-arbaun",
+        "uga-arbm",
+        "akk-erba",
+        "arc-arba"
+      ],
+      "senses": [
+        {
+          "gloss": "forty",
+          "definition": "The number forty: of the days of the fast and of the risen Christ’s appearing, and of the years in the wilderness.",
+          "kin": [
+            "forty",
+            "forty-days",
+            "forty-years"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.4.2",
+              "role": "defining",
+              "note": "He fasted forty days and forty nights."
+            },
+            {
+              "ref": "Mrk.1.13",
+              "note": "He was in the wilderness forty days."
+            },
+            {
+              "ref": "Act.1.3",
+              "note": "Seen by the apostles forty days."
+            },
+            {
+              "ref": "Act.7.36",
+              "role": "defining",
+              "note": "Signs in Egypt, at the Red Sea and in the wilderness forty years."
+            },
+            {
+              "ref": "Heb.3.17",
+              "note": "“With whom was he grieved forty years?”"
+            },
+            {
+              "ref": "2Co.11.24",
+              "note": "Forty stripes less one."
+            },
+            {
+              "ref": "Rev.11.2",
+              "note": "The holy city trodden underfoot forty-two months."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רְבִיעָיָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "fourth; (רְבִיעַ רֵישָׁא) ruler of a fourth, tetrarch",
+      "cognate_ids": [
+        "ar-rabi",
+        "akk-rebu",
+        "arc-rebiaa"
+      ],
+      "senses": [
+        {
+          "gloss": "fourth",
+          "definition": "The fourth in order; in the title of the rulers of parts of Herod’s kingdom, “head of a fourth”.",
+          "kin": [
+            "fourth"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.14.25",
+              "role": "defining",
+              "note": "“In the fourth watch of the night.”"
+            },
+            {
+              "ref": "Mrk.6.48",
+              "note": "About the fourth watch of the night."
+            },
+            {
+              "ref": "Luk.3.1",
+              "role": "defining",
+              "note": "Herod, Philip and Lysanias each “head of a fourth” (Greek τετρααρχέω, “tetrarch”), rulers of parts of a divided kingdom."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רוּבְעָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a fourth part",
+      "cognate_ids": [
+        "ar-rub",
+        "arc-rubea"
+      ],
+      "senses": [
+        {
+          "gloss": "a fourth part",
+          "definition": "A quarter of a whole.",
+          "kin": [
+            "fourth-part",
+            "quarter-rova"
+          ],
+          "evidence": [
+            {
+              "ref": "Rev.6.8",
+              "role": "defining",
+              "note": "Power over the fourth part of the earth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרַבְּעָאִית",
+      "lang": "syc",
+      "pos": "adverb",
+      "gloss": "foursquare",
+      "cognate_ids": [
+        "ar-murabba"
+      ],
+      "senses": [
+        {
+          "gloss": "foursquare",
+          "definition": "Laid out with four equal sides.",
+          "kin": [
+            "square",
+            "foursquare-ordinal"
+          ],
+          "evidence": [
+            {
+              "ref": "Rev.21.16",
+              "role": "defining",
+              "note": "“The city lies foursquare, its length as great as its breadth.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-arbaa",
+      "lang": "ar",
+      "form": "أَرْبَعَة، أَرْبَع",
+      "translit": "ʾarbaʿa, ʾarbaʿ",
+      "gloss": "four",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Masculine and feminine as in Hebrew; ذَوَاتُ الأَرْبَعِ “those (that go on) the four” are the quadrupeds, as Hebrew הֹלֵךְ עַל־אַרְבַּע (Lev 11:27). Arabic ʿ (ع), not ġ (غ), stands behind ע.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1019, root ربع, أَرْبَعَةٌ (n14555)",
+          "note": "“[Four;] a masc. n. of number; fem. أَرْبَعٌ”; ذَوَاتُ الأَرْبَعِ “The quadrupeds”; أَرْبَعَةَ عَشَرَ “Fourteen”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1016, root ربع, اربع القَوْمُ (n14525)",
+          "note": "“The party of men (three in number) became four.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-arbaun",
+      "lang": "ar",
+      "form": "أَرْبَعُونَ",
+      "translit": "ʾarbaʿūna",
+      "gloss": "forty; fortieth",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1020, root ربع, أَرْبَعُونَ (n14557)",
+          "note": "“[Forty;] a certain number, after ثَلَاثُونَ. [Also Fortieth.]”"
+        }
+      ]
+    },
+    {
+      "id": "ar-rabi",
+      "lang": "ar",
+      "form": "رَابِع؛ رَبَعَ",
+      "translit": "rābiʿ; rabaʿa",
+      "gloss": "fourth; become the fourth of (three)",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1019, root ربع, رَابِعٌ (n14553)",
+          "note": "هُوَ رَابِعُ أَرْبَعَةٍ “He is the fourth of four”; رَابِعَ عَشَرَ “Fourteenth”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1015, root ربع, رَبَعَهُمْ (n14522)",
+          "note": "“He became the fourth of them”; also “He took the fourth part of their property”."
+        }
+      ]
+    },
+    {
+      "id": "ar-rub",
+      "lang": "ar",
+      "form": "رُبْع، رُبُع",
+      "translit": "rubʿ, rubuʿ",
+      "gloss": "a fourth part, a quarter",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1017, root ربع, رُبْعٌ (n14531)",
+          "note": "“A fourth part; one of four parts.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-murabba",
+      "lang": "ar",
+      "form": "مُرَبَّع؛ رَبَّعَ",
+      "translit": "murabbaʿ; rabbaʿa",
+      "gloss": "having four sides, square; make four, make four-sided",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "The passive participle of the doubled stem, as Hebrew pual מְרֻבָּע (Ezk 45:2).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1020, root ربع, مُرَبَّعٌ (n14563)",
+          "note": "“Having four portions [or sides or faces or angles &c.; generally meaning either square or quadrilateral].”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1016, root ربع, ربّعهُ (n14523)",
+          "note": "“He made it four … He made it (a thing) مُرَبَّع; i. e. he made it to have four portions [or sides …].”"
+        }
+      ]
+    },
+    {
+      "id": "ar-rabaa-abide",
+      "lang": "ar",
+      "form": "رَبَعَ (بِالمَكَانِ)؛ تَرَبَّعَ",
+      "translit": "rabaʿa (bi-l-makān); tarabbaʿa",
+      "gloss": "remain, abide, dwell in a place; sit cross-legged",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Lane’s sources give the verb’s “primary acceptation” as abiding in a place in the season رَبِيع (spring pasture), and then abiding anywhere; form V is to sit cross-legged, explained as occupying a square space. Either might answer to Hebrew רָבַע “lie down” (Psa 139:3), but neither is lying down as such, so the tie is recorded as possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1015, root ربع, رَبَعَهُمْ (n14522)",
+          "note": "رَبَعَ “in its primary acceptation, signifies He remained, abode, or dwelt, in the place in the [season called] رَبِيع … He remained, abode, or dwelt, in the place, in any circumstances, and at any time; he took it as his home.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1016, root ربع, تربّع فِى جُلُوسِهِ (n14526)",
+          "note": "“He crossed his legs in his sitting; i. e. he sat cross-legged.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-arb",
+      "lang": "uga",
+      "form": "𐎀𐎗𐎁𐎓، 𐎀𐎗𐎁𐎓𐎚",
+      "translit": "arbʿ, arbʿt",
+      "gloss": "four; (with ʿšr) fourteen",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 180, §93 Glossary, arbʿ, arbʿt",
+          "note": "“4”; arbʿ ʿšr(t) “14”."
+        }
+      ]
+    },
+    {
+      "id": "uga-arbm",
+      "lang": "uga",
+      "form": "𐎀𐎗𐎁𐎓𐎎",
+      "translit": "arbʿm",
+      "gloss": "forty",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 180, §93 Glossary, arbʿm",
+          "note": "“40”."
+        }
+      ]
+    },
+    {
+      "id": "uga-rb",
+      "lang": "uga",
+      "form": "𐎗𐎁𐎓",
+      "translit": "rbʿ",
+      "gloss": "fourth",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 200, §93 Glossary, rbʿ (KTU 4.279:4)",
+          "note": "“fourth”."
+        }
+      ]
+    },
+    {
+      "id": "akk-erbe",
+      "lang": "akk",
+      "form": "erbe, arbaʾu",
+      "translit": "erbe, erbet(ti), arbaʾu",
+      "gloss": "four",
+      "relation": "cognate",
+      "note": "Akkadian loses the ʿ, leaving its trace in the vowel e.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000007180, erbe [four] NU"
+        },
+        {
+          "source": "oracc",
+          "locator": "tsae x000054560, arbaʾu [four] NU"
+        }
+      ]
+    },
+    {
+      "id": "akk-erba",
+      "lang": "akk",
+      "form": "erbâ",
+      "translit": "erbâ",
+      "gloss": "forty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008960, erbâ [forty] NU"
+        }
+      ]
+    },
+    {
+      "id": "akk-rebu",
+      "lang": "akk",
+      "form": "rebû",
+      "translit": "rebû",
+      "gloss": "fourth; one-fourth, quarter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000002170, rebû [fourth] NU (fourth; one-fourth; quarter)"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000128440, rebû [fourth] AJ"
+        }
+      ]
+    },
+    {
+      "id": "akk-rebitu",
+      "lang": "akk",
+      "form": "rebītu",
+      "translit": "rebītu",
+      "gloss": "square, open space; city quarter; street",
+      "relation": "cognate",
+      "note": "A city’s open square or quarter: the four-sided space, as Hebrew רָבוּעַ is the four-sided thing.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000015680, rebītu [square] N (abdomen; city square; open space; quarter; square; street)"
+        }
+      ]
+    },
+    {
+      "id": "akk-tarbutu",
+      "lang": "akk",
+      "form": "tarbuʾtu",
+      "translit": "tarbuʾtu, turbuʾtu",
+      "gloss": "dust, dust cloud",
+      "relation": "possible",
+      "note": "Put forward for רֹבַע in Num 23:10, where it stands beside עֲפַר “dust”. A t-prefixed noun whose root may be rbʾ rather than rbʿ; Akkadian cannot tell them apart. Not adopted: “a fourth part” fits Israel’s four camps.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000144330, tarbuʾtu [dust] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000073290, tarbuʾtu [dust (storm)] N"
+        }
+      ]
+    },
+    {
+      "id": "phn-arb",
+      "lang": "phn",
+      "form": "𐤀𐤓𐤁𐤏، 𐤀𐤓𐤁𐤏𐤕",
+      "translit": "ʾrbʿ, ʾrbʿt",
+      "gloss": "four",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 69, ʾRBʿ, masc. ʾRBʿT, num. FOUR",
+          "note": "KAI 14.1, bšnt ʿsr wʾrbʿ “in year fourteen”."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 70, ʾRBʿT, n.f. GROUP OF FOUR"
+        }
+      ]
+    },
+    {
+      "id": "phn-arbay",
+      "lang": "phn",
+      "form": "𐤀𐤓𐤁𐤏𐤉",
+      "translit": "ʾrbʿy",
+      "gloss": "fourth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 69, ʾRBʿY, fem. ʾRBʿT, num. FOURTH",
+          "note": "KAI 16 B 1, ym hʾrbʿy “the fourth day”."
+        }
+      ]
+    },
+    {
+      "id": "phn-arbm",
+      "lang": "phn",
+      "form": "𐤀𐤓𐤁𐤏𐤌",
+      "translit": "ʾrbʿm",
+      "gloss": "forty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 69, ʾRBʿM, num. FORTY"
+        }
+      ]
+    },
+    {
+      "id": "phn-rb",
+      "lang": "phn",
+      "form": "𐤓𐤁𐤏",
+      "translit": "rbʿ",
+      "gloss": "one fourth, a quarter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 440, RBʿ, num. ONE FOURTH",
+          "note": "Lapethos inscription, line 4: a weight of “fifty-five and one quarter (wrbʿ) drachmas”; RBʿ ŠLŠT “three fourths”."
+        }
+      ]
+    },
+    {
+      "id": "sab-arb",
+      "lang": "sem",
+      "form": "𐩱𐩧𐩨𐩲، 𐩱𐩧𐩨𐩲𐩩، 𐩱𐩧𐩨𐩲𐩺",
+      "translit": "ʾrbʿ, ʾrbʿt, ʾrbʿy",
+      "gloss": "four; (adv. ʾrbʿm) fourfold; forty; fourteen",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Sabaic (Old South Arabian). As in Hebrew, ʾrbʿm also serves as “fourfold” compensation, as in Exo 21:37 and 2Sa 12:6.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 477, RBʿ (cardinal ʾrbʿ, ʾrbʿt: FOUR; as adv. ʾrbʿm: FOURFOLD; ʾrbʿy: FORTY; ʾrbʿʿšrhw: FOURTEEN)"
+        }
+      ]
+    },
+    {
+      "id": "sab-rb",
+      "lang": "sem",
+      "form": "𐩧𐩨𐩲، 𐩧𐩨𐩲𐩬",
+      "translit": "rbʿ, rbʿn",
+      "gloss": "a quarter, fourth part; division of a clan; fourth (ordinal)",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Sabaic rbʿn “division of a clan” (pl. ʾrbʿ) shows a people counted in quarters, as the camp of Israel in four divisions (Num 2) behind רֹבַע יִשְׂרָאֵל (Num 23:10).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 477–478, RBʿ (s. rbʿ(n): QUARTER, FOURTH; rbʿn: DIVISION of a clan; adj. rbʿn: FOURTH (ordinal))"
+        }
+      ]
+    },
+    {
+      "id": "arc-arba",
+      "lang": "arc",
+      "form": "אַרְבַּע، אַרְבְּעָה؛ אַרְבְּעִין",
+      "translit": "ʾarbaʿ, ʾarbəʿā; ʾarbəʿīn",
+      "gloss": "four; forty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אַרְבְּעָה (ch.), אַרְבַּע",
+          "note": "“four”; Targ. O. Gen. XIV, 9."
+        }
+      ]
+    },
+    {
+      "id": "arc-rebiaa",
+      "lang": "arc",
+      "form": "רְבִיעָאָה، רְבִיעַי",
+      "translit": "rəbīʿāʾā, rəbīʿay",
+      "gloss": "fourth; (pl.) those of the fourth generation",
+      "relation": "cognate",
+      "note": "The Targums use the plural for Hebrew רִבֵּעִים and בְּנֵי רְבִעִים (Exo 20:5; 2Ki 10:30; 15:12).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רְבִיעָאָה",
+          "note": "“= h. רְבִיעִי, fourth. Targ. Gen. I, 19 … Pl. … Targ. II Kings X, 30; XV, 12. Targ. Y. Ex. XX, 5.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-rubea",
+      "lang": "arc",
+      "form": "רוּבְעָא",
+      "translit": "rubʿā",
+      "gloss": "one fourth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רוּבְעָא (ch.)",
+          "note": "“one fourth”."
+        }
+      ]
+    },
+    {
+      "id": "arc-reba-lie",
+      "lang": "arc",
+      "form": "רְבַע",
+      "translit": "rəbaʿ",
+      "gloss": "lie, couch",
+      "relation": "cognate",
+      "note": "Onkelos renders Hebrew רָבַץ “lie down” (of Balaam’s ass, Num 22:27) by this verb: Aramaic רְבַע is the common word for lying down.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רְבַע (ch.)",
+          "note": "“to lie, couch. Targ. Num. XXII, 27 (h. text רבץ). Targ. Y. Gen. XLIX, 25.”"
+        }
+      ]
+    },
+    {
+      "id": "syc-reba-lie",
+      "lang": "syc",
+      "form": "ܪܒܥ؛ ܡܪܒܥܐ",
+      "translit": "rbaʿ; marbʿā",
+      "gloss": "lie down; (noun) womb",
+      "relation": "cognate",
+      "note": "SEDRA files this root apart from the root of four. Its noun ܡܪܒܥܐ “womb” is the Peshitta’s word in Luk 2:23 (“every male that opens the womb”) and Rom 4:19 (the deadness of Sarah’s womb).",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2924, RBE (root 1724), lie down; lexeme 2923, MRBEA (root 1724), womb"
+        }
+      ]
+    },
+    {
+      "id": "gez-arbau",
+      "lang": "gez",
+      "form": "አርባዕ، አርባዕቱ",
+      "translit": "ʾarbaʿ, ʾarbaʿtu",
+      "gloss": "four",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez አርባዕ (ʾärbaʿ); አርባዕቱ (ʾärbaʿtu)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "iniquity-of-the-fathers",
+      "statement": "Yahweh “visits the iniquity of the fathers on the sons, on the third and on the fourth (רִבֵּעִים) of those who hate me, and shows mercy to thousands of those who love me and keep my commandments” (Exo 20:5–6; Deu 5:9–10). The visiting reaches those “who hate me”: the sons who carry on the fathers’ ways. The law itself says “the fathers shall not be put to death for the sons, nor the sons for the fathers; each shall die for his own sin” (Deu 24:16), and Ezekiel, “the son shall not bear the iniquity of the father … the soul that sins, it shall die” (Ezk 18:20). Four generations is as far as a man lives to see (Job 42:16; Gen 50:23), and the same reach is given in blessing: Jehu’s sons to the fourth generation sat on the throne, “and so it was” (2Ki 10:30; 15:12). From the verses: the fruit of a father’s sin runs on in a household as long as its sons go on hating God, but no further than his own lifetime’s generations; the mercy runs to thousands, which is the measure of how much greater it is.",
+      "evidence": [
+        {
+          "ref": "Exo.20.5",
+          "to": "Exo.20.6"
+        },
+        {
+          "ref": "Deu.5.9",
+          "to": "Deu.5.10"
+        },
+        {
+          "ref": "Exo.34.7"
+        },
+        {
+          "ref": "Deu.24.16"
+        },
+        {
+          "ref": "Ezk.18.20"
+        },
+        {
+          "ref": "Job.42.16"
+        },
+        {
+          "ref": "Gen.50.23"
+        },
+        {
+          "ref": "2Ki.10.30"
+        },
+        {
+          "ref": "2Ki.15.12"
+        }
+      ]
+    },
+    {
+      "topic": "forty-years-of-proving",
+      "statement": "Israel spied out the land forty days and refused it, and Yahweh answered: “according to the number of the days … forty days, a day for a year, you shall bear your iniquities, forty years”, until that generation died in the wilderness (Num 14:33–34; Heb 3:17). Moses told the next generation what the forty years had been for: “to humble you, to prove you, to know what was in your heart, whether you would keep his commandments or not … that he might make you know that man does not live by bread alone, but by every word that proceeds from the mouth of Yahweh” (Deu 8:2–3). Moses had himself been forty days and nights on the mountain without bread or water (Exo 34:28; Deu 9:9), and Elijah went forty days in the strength of one meal (1Ki 19:8). Jesus, led into the wilderness, fasted forty days and forty nights and answered from that chapter: “man shall not live by bread alone” (Mat 4:2, 4). From the verses: forty, days or years, is the time God sets for proving what is in the heart; Israel in its forty years tested God and fell (Psa 95:10; Heb 3:9–10), and the Son in his forty days kept the word by which Israel was to live.",
+      "evidence": [
+        {
+          "ref": "Num.14.33",
+          "to": "Num.14.34"
+        },
+        {
+          "ref": "Heb.3.17"
+        },
+        {
+          "ref": "Deu.8.2",
+          "to": "Deu.8.3"
+        },
+        {
+          "ref": "Exo.34.28"
+        },
+        {
+          "ref": "Deu.9.9"
+        },
+        {
+          "ref": "1Ki.19.8"
+        },
+        {
+          "ref": "Mat.4.2"
+        },
+        {
+          "ref": "Mat.4.4"
+        },
+        {
+          "ref": "Psa.95.10"
+        },
+        {
+          "ref": "Heb.3.9",
+          "to": "Heb.3.10"
+        }
+      ]
+    },
+    {
+      "topic": "day-for-a-year",
+      "statement": "Twice Yahweh himself sets a day for a year with the number forty. The forty days of the spies became forty years in the wilderness, “a day for a year, a day for a year” (Num 14:34). Ezekiel lay on his left side three hundred and ninety days for the iniquity of Israel and on his right side forty days for Judah: “a day for a year, a day for a year, I have given it to you” (Ezk 4:5–6). From the verses: in a sign or a prophecy God may let a day stand for a year, and he says so where he does; this is the scale scripture itself supplies for the times of a prophecy given in days.",
+      "evidence": [
+        {
+          "ref": "Num.14.34"
+        },
+        {
+          "ref": "Ezk.4.5",
+          "to": "Ezk.4.6"
+        }
+      ]
+    },
+    {
+      "topic": "gathered-from-four-corners",
+      "statement": "Four in scripture is every side at once: “the four winds, east, west, north and south” (1Ch 9:24). Israel was scattered “as the four winds of heaven” (Zec 2:10), and Elam to all four winds (Jer 49:36). In the day when “the root of Jesse … stands for an ensign of the peoples”, Yahweh “will set up an ensign for the nations, and assemble the outcasts of Israel, and gather the scattered of Judah from the four corners of the earth” (Isa 11:10–12); Paul reads the root of Jesse as Christ, in whom the Gentiles hope (Rom 15:12). Ezekiel calls the breath “from the four winds” into the slain of Israel, and Yahweh explains: “I will open your graves … and bring you into the land of Israel” (Ezk 37:9–12). From the verses: the gathering of Israel from every quarter of the earth, and the giving of life to the dead, are the work of the root of Jesse, Christ.",
+      "evidence": [
+        {
+          "ref": "1Ch.9.24"
+        },
+        {
+          "ref": "Zec.2.10"
+        },
+        {
+          "ref": "Jer.49.36"
+        },
+        {
+          "ref": "Isa.11.10",
+          "to": "Isa.11.12"
+        },
+        {
+          "ref": "Rom.15.12"
+        },
+        {
+          "ref": "Ezk.37.9",
+          "to": "Ezk.37.12"
+        }
+      ]
+    },
+    {
+      "topic": "the-fourth-day",
+      "statement": "The lights in the firmament, the greater to rule the day and the lesser the night, and the stars, were made on “a fourth day (יוֹם רְבִיעִי)”, closed like the others with evening and morning (Gen 1:14–19); there had been light since the first day (1:3–5) and plants since the third (1:11–13). The fourth commandment rests on the same count: “in six days Yahweh made heaven and earth, the sea and all that is in them, and rested the seventh day” (Exo 20:11). From the verses: the fourth day is an ordinary day of the week of creation, numbered like the days Israel worked; the sun was made in that week, after the earth and its plants, not before them.",
+      "evidence": [
+        {
+          "ref": "Gen.1.14",
+          "to": "Gen.1.19"
+        },
+        {
+          "ref": "Gen.1.3",
+          "to": "Gen.1.5"
+        },
+        {
+          "ref": "Gen.1.11",
+          "to": "Gen.1.13"
+        },
+        {
+          "ref": "Exo.20.11"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (בְּאַרְבָּעָה עָשָׂר, Lev 23:5; רְבִיעִת הַהִין, Lev 23:13); no word of the root occurs in Numbers 10. Root key רבע as the database keys it (BDB t.al, t.am; Aramaic xt.ad). Keys claimed: t.al.ab (four; its tokens include the place name קִרְיַת אַרְבַּע by spelling), a.fm.al and xa.be.ag (zero-token “see רבע” cross-references), t.al.ad, t.al.ah, t.al.ai, t.al.af, t.al.ag, t.al.ae (square), t.am.aa (lie down), xt.ad.ab (Aramaic four; also counts many Hebrew tokens of the same spelling, so its use count is far too high), xt.ad.ac (Aramaic fourth; only Dan 7:19, 23). Left unclaimed: t.am.ab רֶבַע, Reba king of Midian (Num 31:8; Jos 13:21), a person, for names/ (not written in this task; its key also takes the tokens of רֶבַע “quarter” in Exo 29:40 and 1Sa 9:8 by spelling); t.al.ac and s.dc.ak, the place קִרְיַת אַרְבַּע (Kiriath-arba, Hebron) and BDB’s אַרְבַּע “see קִרְיַת א׳”; Arba the man (Jos 14:15; 15:13; 21:11) is not written either. Two older roots or one: BDB files רָבַע “lie down” (t.am) apart from the root of four (t.al); the Arabic, Ugaritic, Sabaic and Ge’ez cognates of four all show ʿ, and Arabic rabaʿa “abide” (possible for “lie down”) also shows ʿ, so no split by sound is shown; SEDRA likewise files Syriac ܪܒܥ “lie down” (root 1724) apart from four (root 202). Num 23:10 רֹבַע: read “quarter” (Israel’s four camps, Num 2; Sabaic rbʿn “clan division”); Akkadian tarbuʾtu “dust” recorded as possible. 1Ki 6:33 מֵאֵת רְבִעִית left unexplained. Ezk 48:20 רְבִיעִית “foursquare” kept under the ordinal as BDB files it. Peshitta words checked against SEDRA’s word tables (BFBS.TXT): lexemes 267 (four), 268 (forty), 269 (four hundred: Act 5:36; 7:6), 270 (fourteen: Mat 1:17; Act 27:27, 33; 2Co 12:2; Gal 2:1), 271 (foursquare, Rev 21:16), 272 (fourth: Mat 14:25; Mrk 6:48; Luk 3:1), 274 (a liquid measure, Jhn 2:6; not entered), 275 (fourth part, Rev 6:8). The Peshitta’s reading at Luk 19:8 (fourfold) and Mrk 2:3 is from the lexeme index, not checked word by word. MACULA-LXX’s lemma column gives ἑκατόν for τεσσαράκοντα; counts are from the surface Greek. Segert pp. 180, 200, Krahmalkov pp. 69–70, 440 and Biella pp. 477–478 read from the OCR or text layer only; check the page images. Ge’ez from Wiktionary only; Dillmann and Leslau not consulted, nor DULAT or CAD. Open questions: (1) the day-for-a-year doctrine states the principle generally from Num 14:34 and Ezk 4:6; (2) gathered-from-four-corners reads Isa 11:12 and Ezk 37 of Christ’s gathering of Israel; (3) whether רָבַע “lie down” belongs to this root at all."
+}
