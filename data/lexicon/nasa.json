@@ -1,0 +1,837 @@
+{
+  "id": "nasa",
+  "root": "נסע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "journey",
+    "wilderness",
+    "camp",
+    "movement",
+    "tent"
+  ],
+  "gloss": "pull up (tent pegs), break camp, set out; journey by stages; a stage of the journey",
+  "summary": "The verb is first to pull something up or out: a city gate with its bar, a loom's pin, a tent's stakes (Jdg 16:3, 14; Isa 33:20). From pulling up the pegs it is to break camp and set out, the word of the wilderness march, set over and over against חָנָה, encamp: “at the mouth of Yahweh they camped, and at the mouth of Yahweh they set out” (Num 9:20, 23). מַסַּע is a setting out, and in the plural the stages of the journey that Moses wrote down (Num 10:2; 33:1–2). The hiphil leads a people out on the march (Exo 15:22; Psa 78:52) or pulls up and removes: a vine from Egypt, stones from the quarry (Psa 80:9; 1Ki 5:31); and a life ended is a tent pulled up (Job 4:21; Isa 38:12).",
+  "words": [
+    {
+      "lemma": "נָסַע",
+      "pos": "verb",
+      "gloss": "pull up; break camp, set out, journey",
+      "bdb": [
+        "n.dz.aa"
+      ],
+      "cognate_ids": [
+        "uga-nsa",
+        "arc-nesa"
+      ],
+      "summary": "Over two-thirds of its uses are Israel's march from Egypt to the plains of Moab in Exodus, Numbers and Deuteronomy, a third of them in the list of stages in Numbers 33. The qal's few transitive uses (Jdg 16:3, 14; Isa 33:20) keep the older sense, pulling up or out, from which “break camp” comes.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pull up, pull out; break camp, set out; journey on",
+          "senses": [
+            {
+              "id": "pull-up",
+              "gloss": "pull up, pull out",
+              "definition": "Pull something fixed up or out of its place: a gate with its posts and bar, a peg from a loom, a tent's stakes.",
+              "evidence": [
+                {
+                  "ref": "Jdg.16.3",
+                  "role": "defining",
+                  "note": "Samson takes hold of the doors of the city gate and the two posts “וַיִּסָּעֵם with the bar”, pulls them up, and carries them to the hilltop."
+                },
+                {
+                  "ref": "Jdg.16.14",
+                  "role": "defining",
+                  "note": "He woke “and pulled out (וַיִּסַּע) the pin of the loom and the web”."
+                },
+                {
+                  "ref": "Isa.33.20",
+                  "role": "defining",
+                  "note": "Jerusalem “a tent that will not be taken down; its stakes will never be pulled up (בַּל־יִסַּע), and none of its cords broken”: the act from which “break camp” is named."
+                }
+              ],
+              "cognate_ids": [
+                "uga-nsa",
+                "ar-naza"
+              ]
+            },
+            {
+              "id": "set-out",
+              "gloss": "break camp, set out, depart",
+              "definition": "Strike camp and move off from a place, the opposite of encamping (חָנָה); of Israel by its camps and standards, the ark and the tent of meeting, a household, an army, a king.",
+              "evidence": [
+                {
+                  "ref": "Num.9.17",
+                  "role": "defining",
+                  "note": "When the cloud is taken up from the tent, “after that the sons of Israel set out (יִסְעוּ), and in the place where the cloud settles, there the sons of Israel camp (יַחֲנוּ)”."
+                },
+                {
+                  "ref": "Num.9.20",
+                  "role": "defining",
+                  "note": "“At the mouth of Yahweh they camped, and at the mouth of Yahweh they set out.”"
+                },
+                {
+                  "ref": "Num.9.22",
+                  "note": "Two days, a month or longer, while the cloud stayed “they camped and did not set out; and when it was taken up they set out”."
+                },
+                {
+                  "ref": "Num.9.23"
+                },
+                {
+                  "ref": "Num.2.17",
+                  "role": "defining",
+                  "note": "The tent of meeting sets out in the middle of the camps: “as they camp, so they shall set out, each in his place, by their standards”."
+                },
+                {
+                  "ref": "Num.10.5",
+                  "role": "defining",
+                  "note": "“When you blow an alarm, the camps that camp on the east shall set out.”"
+                },
+                {
+                  "ref": "Num.10.6"
+                },
+                {
+                  "ref": "Num.10.12",
+                  "note": "“The sons of Israel set out by their stages (לְמַסְעֵיהֶם) from the wilderness of Sinai.”"
+                },
+                {
+                  "ref": "Num.10.13",
+                  "note": "“They set out for the first time at the mouth of Yahweh by the hand of Moses.”"
+                },
+                {
+                  "ref": "Num.10.14",
+                  "to": "Num.10.28",
+                  "note": "Judah's standard first, then the Dwelling, Reuben, the Kohathites with the holy things, Ephraim and Dan last, “and they set out”."
+                },
+                {
+                  "ref": "Num.10.29",
+                  "note": "Moses to Hobab: “We are setting out (נֹסְעִים) to the place of which Yahweh said, I will give it to you.”"
+                },
+                {
+                  "ref": "Num.10.33",
+                  "role": "defining",
+                  "note": "They set out from the mountain of Yahweh three days' journey, “and the ark of the covenant of Yahweh setting out (נֹסֵעַ) before them … to seek out a resting place for them”."
+                },
+                {
+                  "ref": "Num.10.35",
+                  "note": "“When the ark set out (בִּנְסֹעַ), Moses said, Rise up, Yahweh, and let your enemies be scattered.”"
+                },
+                {
+                  "ref": "Exo.40.36",
+                  "to": "Exo.40.37"
+                },
+                {
+                  "ref": "Exo.12.37",
+                  "note": "From Rameses to Succoth, the first stage out of Egypt."
+                },
+                {
+                  "ref": "Exo.14.19",
+                  "note": "The angel of God “moved (וַיִּסַּע) and went behind them, and the pillar of cloud moved from before them”."
+                },
+                {
+                  "ref": "Num.33.3",
+                  "to": "Num.33.48",
+                  "note": "The list of stages: “and they set out from … and camped at …”, forty-one times."
+                },
+                {
+                  "ref": "Jos.3.3",
+                  "note": "“When you see the ark … you shall set out from your place and go after it.”"
+                },
+                {
+                  "ref": "Jos.3.14"
+                },
+                {
+                  "ref": "Gen.35.5",
+                  "note": "Jacob's household sets out from Shechem, and a terror from God is on the cities around."
+                },
+                {
+                  "ref": "Gen.35.21",
+                  "note": "“Israel set out and spread his tent beyond Migdal-eder”: the move from tent to tent."
+                },
+                {
+                  "ref": "2Ki.3.27",
+                  "note": "After the king of Moab sacrifices his son, “they departed from him and returned to their land”."
+                },
+                {
+                  "ref": "2Ki.19.8",
+                  "note": "The king of Assyria “had departed from Lachish”."
+                },
+                {
+                  "ref": "2Ki.19.36",
+                  "note": "“So Sennacherib king of Assyria departed and went and returned.”"
+                },
+                {
+                  "ref": "Jer.4.7",
+                  "note": "“A lion has gone up from his thicket; a destroyer of nations has set out (נָסַע), he has gone out from his place.”"
+                },
+                {
+                  "ref": "Ezr.8.31",
+                  "note": "“We set out from the river Ahava on the twelfth of the first month to go to Jerusalem.”"
+                }
+              ],
+              "cognate_ids": [
+                "arc-nesa"
+              ],
+              "kin": [
+                "setting-out"
+              ]
+            },
+            {
+              "id": "journey-on",
+              "gloss": "journey on, move from place to place",
+              "definition": "Travel on by stages, or keep moving about as herdsmen do, rather than one departure.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.9",
+                  "role": "defining",
+                  "note": "“Abram set out, going on and journeying (הָלוֹךְ וְנָסוֹעַ) toward the Negev.”"
+                },
+                {
+                  "ref": "Gen.20.1",
+                  "note": "Abraham journeyed from there toward the Negev and sojourned in Gerar."
+                },
+                {
+                  "ref": "Gen.11.2",
+                  "note": "“As they journeyed from the east, they found a plain in the land of Shinar and settled there.”"
+                },
+                {
+                  "ref": "Gen.33.12",
+                  "note": "Esau to Jacob: “Let us journey on and go (נִסְעָה וְנֵלֵכָה).”"
+                },
+                {
+                  "ref": "Jer.31.24",
+                  "role": "defining",
+                  "note": "Judah shall dwell in the land, “farmers and those who move about (נָסְעוּ) with the flocks”."
+                },
+                {
+                  "ref": "Zec.10.2",
+                  "role": "defining",
+                  "note": "Because the teraphim spoke iniquity, “they wander off (נָסְעוּ) like sheep; they are afflicted, because there is no shepherd”."
+                }
+              ],
+              "kin": [
+                "stages"
+              ]
+            },
+            {
+              "gloss": "go forth (of wind)",
+              "definition": "Of a wind, to go forth from where it is sent.",
+              "evidence": [
+                {
+                  "ref": "Num.11.31",
+                  "role": "defining",
+                  "note": "“A wind went forth (נָסַע) from Yahweh and brought quail from the sea.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be pulled up",
+          "senses": [
+            {
+              "id": "tent-pulled-up",
+              "gloss": "be pulled up (a tent), of death",
+              "definition": "Of a tent or its cord, to be pulled up; said of a life ended.",
+              "evidence": [
+                {
+                  "ref": "Job.4.21",
+                  "role": "defining",
+                  "note": "Men who dwell in houses of clay: “Is not their tent cord pulled up (נִסַּע) within them? They die, and not in wisdom.”"
+                },
+                {
+                  "ref": "Isa.38.12",
+                  "role": "defining",
+                  "note": "Hezekiah: “My dwelling is pulled up (נִסַּע) and carried away from me like a shepherd's tent; I have rolled up my life like a weaver.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "lead out on the march; pull up, remove",
+          "senses": [
+            {
+              "id": "lead-out",
+              "gloss": "make set out, lead on the march",
+              "definition": "Cause a people to break camp and move on; of a wind, send it forth.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.22",
+                  "role": "defining",
+                  "note": "“Moses made Israel set out (וַיַּסַּע) from the Sea of Reeds, and they went out into the wilderness of Shur.”"
+                },
+                {
+                  "ref": "Psa.78.52",
+                  "role": "defining",
+                  "note": "“He made his people set out like sheep, and guided them in the wilderness like a flock.”"
+                },
+                {
+                  "ref": "Psa.78.26",
+                  "note": "“He made the east wind set out (יַסַּע) in the heavens, and by his power he guided the south wind”: of the quail, as Num 11:31.",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "remove",
+              "gloss": "pull up, remove; quarry (stones)",
+              "definition": "Pull something up from where it stands or lies and take it away: a vine to be replanted, a tree, stones from the rock, full vessels from the pouring.",
+              "evidence": [
+                {
+                  "ref": "Psa.80.9",
+                  "role": "defining",
+                  "note": "“You pulled up (תַּסִּיעַ) a vine from Egypt; you drove out nations and planted it”: set against נָטַע, plant."
+                },
+                {
+                  "ref": "Job.19.10",
+                  "role": "defining",
+                  "note": "“He has broken me down on every side and I am gone, and he has pulled up my hope like a tree.”"
+                },
+                {
+                  "ref": "1Ki.5.31",
+                  "role": "defining",
+                  "note": "At the king's command “they quarried (וַיַּסִּעוּ) great stones, costly stones, to lay the foundation of the house”."
+                },
+                {
+                  "ref": "Ecc.10.9",
+                  "note": "“He who quarries stones (מַסִּיעַ אֲבָנִים) will be hurt by them; he who splits wood is endangered by it.”"
+                },
+                {
+                  "ref": "2Ki.4.4",
+                  "note": "Elisha to the widow: pour into all the vessels, “and set aside (תַּסִּיעִי) the full one”."
+                }
+              ],
+              "cognate_ids": [
+                "ar-naza",
+                "arc-nesa"
+              ],
+              "kin": [
+                "quarry"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀπαίρω",
+          "gloss": "lift off, take away; (intransitive) depart",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נָסַע → ἀπαίρω ×72 (lemma count, MACULA alignment); Gen.12.9, Exo.12.37, Num.33.3–48",
+              "note": "The Septuagint's usual word for setting out on the march."
+            },
+            {
+              "ref": "Luk.5.35",
+              "note": "“The days will come when the bridegroom is taken away (ἀπαρθῇ) from them”: the New Testament's use, in the transitive sense; it quotes no verse with נָסַע."
+            },
+            {
+              "ref": "Mat.9.15"
+            },
+            {
+              "ref": "Mrk.2.20"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐξαίρω",
+          "gloss": "lift out, remove; set out",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נָסַע → ἐξαίρω about 30 times, most in Numbers (MACULA alignment, lemma ἐξαίρω ×8 plus forms such as ἐξαροῦσιν, ἐξῆραν whose lemma is not filled); Num.10.5, 10.6, 10.12–33",
+              "note": "The rendering throughout Num 10."
+            },
+            {
+              "ref": "1Co.5.13",
+              "note": "“Put away (ἐξαρεῖτε) the wicked man from among yourselves”: the New Testament's use, quoting Deuteronomy's בִּעַרְתָּ, not this word."
+            }
+          ]
+        },
+        {
+          "lemma": "μεταίρω",
+          "gloss": "remove, transfer; depart",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.80.9 (LXX 79:9), תַּסִּיעַ → μετῆρας"
+            },
+            {
+              "ref": "Mat.19.1",
+              "note": "“Jesus departed (μετῆρεν) from Galilee”: the New Testament's use, of setting out on a journey."
+            },
+            {
+              "ref": "Mat.13.53"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "הָלַךְ",
+            "note": "“Go”, beside it of moving on.",
+            "evidence": [
+              {
+                "ref": "Gen.12.9",
+                "role": "defining",
+                "note": "הָלוֹךְ וְנָסוֹעַ"
+              },
+              {
+                "ref": "Gen.33.12"
+              },
+              {
+                "ref": "Jos.3.3"
+              },
+              {
+                "ref": "2Ki.19.36"
+              }
+            ]
+          },
+          {
+            "lemma": "יָצָא",
+            "note": "“Go out”: the lion “has set out, he has gone out from his place”; Moses wrote their מוֹצָאִים, goings out, by their מַסָּעִים.",
+            "evidence": [
+              {
+                "ref": "Jer.4.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.33.2"
+              },
+              {
+                "ref": "Exo.15.22"
+              }
+            ]
+          },
+          {
+            "lemma": "נָהַג",
+            "note": "“Drive, guide” (piel), beside the hiphil: he made them set out and guided them like a flock.",
+            "evidence": [
+              {
+                "ref": "Psa.78.52",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.26"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "חָנָה",
+            "note": "“Encamp”: the halt that every setting out ends in.",
+            "evidence": [
+              {
+                "ref": "Num.9.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.9.20"
+              },
+              {
+                "ref": "Num.9.22"
+              },
+              {
+                "ref": "Num.2.17"
+              },
+              {
+                "ref": "Num.33.5",
+                "to": "Num.33.48"
+              }
+            ]
+          },
+          {
+            "lemma": "נָטַע",
+            "note": "“Plant”: the vine pulled up from Egypt is planted in the land.",
+            "evidence": [
+              {
+                "ref": "Psa.80.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁכַן",
+            "note": "“Dwell, settle”: the cloud settling on the Dwelling keeps the camp from setting out.",
+            "evidence": [
+              {
+                "ref": "Num.9.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.9.22"
+              },
+              {
+                "ref": "Num.10.12"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עַל־פִּי יַהְוֶה יִסָּעוּ",
+            "gloss": "at the mouth (command) of Yahweh they set out",
+            "evidence": [
+              {
+                "ref": "Num.9.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.9.20"
+              },
+              {
+                "ref": "Num.9.23"
+              },
+              {
+                "ref": "Num.10.13"
+              }
+            ]
+          },
+          {
+            "phrase": "הָלוֹךְ וְנָסוֹעַ",
+            "gloss": "going on and journeying, ever moving on",
+            "evidence": [
+              {
+                "ref": "Gen.12.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "וַיְהִי בִּנְסֹעַ הָאָרֹן",
+            "gloss": "when the ark set out (Moses' words: “Rise up, Yahweh”)",
+            "evidence": [
+              {
+                "ref": "Num.10.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.68.2",
+                "note": "“Let God rise up, let his enemies be scattered”: Moses' words at the ark's setting out, taken up in the psalm."
+              }
+            ]
+          },
+          {
+            "phrase": "וַיִּסְעוּ מִ… וַיַּחֲנוּ בְּ…",
+            "gloss": "they set out from … and camped at …: the form of the itinerary",
+            "evidence": [
+              {
+                "ref": "Num.33.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.21.10",
+                "to": "Num.21.13"
+              },
+              {
+                "ref": "Exo.17.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַסַּע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a setting out, breaking camp; stage of a journey",
+      "bdb": [
+        "n.dz.ab"
+      ],
+      "cognate_ids": [
+        "arc-nesa"
+      ],
+      "summary": "The verb's noun: the act of breaking camp, and in the plural the stages by which a journey is made, one camp to the next. All but one use is of the wilderness march; Abram's “by his stages” (Gen 13:3) is the other.",
+      "senses": [
+        {
+          "id": "setting-out",
+          "gloss": "a setting out, breaking camp",
+          "definition": "The moving off of the camp, signalled by the trumpets; or a departure on the road.",
+          "evidence": [
+            {
+              "ref": "Num.10.2",
+              "role": "defining",
+              "note": "Two silver trumpets “for calling the congregation and for the setting out (וּלְמַסַּע) of the camps”."
+            },
+            {
+              "ref": "Num.10.6",
+              "role": "defining",
+              "note": "“They shall blow an alarm for their setting out (לְמַסְעֵיהֶם).”"
+            },
+            {
+              "ref": "Deu.10.11",
+              "note": "“Arise, go on the setting out (לְמַסַּע) before the people, that they may go in and possess the land.”"
+            }
+          ],
+          "kin": [
+            "set-out"
+          ]
+        },
+        {
+          "id": "stages",
+          "gloss": "stages, journeyings (plural)",
+          "definition": "The journey taken stage by stage; the successive departures and camps of a march, as Moses recorded them.",
+          "evidence": [
+            {
+              "ref": "Num.33.1",
+              "role": "defining",
+              "note": "“These are the מַסְעֵי of the sons of Israel who went out of the land of Egypt by their armies”, followed by the list of camps."
+            },
+            {
+              "ref": "Num.33.2",
+              "role": "defining",
+              "note": "“Moses wrote their goings out by their stages (לְמַסְעֵיהֶם) at the mouth of Yahweh; and these are their stages by their goings out.”"
+            },
+            {
+              "ref": "Num.10.12",
+              "note": "They set out from Sinai “by their stages”, in the order Num 2 sets."
+            },
+            {
+              "ref": "Num.10.28",
+              "note": "“These were the מַסְעֵי of the sons of Israel by their armies; and they set out.”"
+            },
+            {
+              "ref": "Exo.17.1",
+              "note": "From the wilderness of Sin “by their stages, at the mouth of Yahweh”."
+            },
+            {
+              "ref": "Exo.40.36",
+              "note": "When the cloud was taken up they set out “in all their journeyings”."
+            },
+            {
+              "ref": "Exo.40.38",
+              "note": "The cloud by day and fire by night before all Israel “in all their journeyings”."
+            },
+            {
+              "ref": "Gen.13.3",
+              "role": "defining",
+              "note": "Abram “went by his stages (לְמַסָּעָיו) from the Negev to Bethel, to the place where his tent had been at the beginning”."
+            }
+          ],
+          "kin": [
+            "journey-on"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַסָּע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "quarrying; stone as quarried",
+      "bdb": [
+        "n.dz.ac"
+      ],
+      "cognate_ids": [
+        "ar-naza"
+      ],
+      "summary": "Once, of the temple's stones: they were dressed where they were quarried, so no iron tool was heard in the house. The hiphil “pull out” stones from the rock (1Ki 5:31; Ecc 10:9) ties it to the root. BDB's key n.dz.ac also counts Job 41:18, which is the dart (next word), and n.ea.ab counts 1Ki 6:7; each word's uses are therefore over-counted by one.",
+      "senses": [
+        {
+          "id": "quarry",
+          "gloss": "quarrying, as quarried",
+          "definition": "The pulling out of stone from the rock; used adverbially of stone made ready at the quarry.",
+          "evidence": [
+            {
+              "ref": "1Ki.6.7",
+              "role": "defining",
+              "note": "“The house, when it was built, was built of whole stone מַסָּע; no hammer, axe or any tool of iron was heard in the house while it was being built.”"
+            },
+            {
+              "ref": "1Ki.5.31",
+              "note": "The same stones in the hiphil: “they quarried (וַיַּסִּעוּ) great stones … to lay the foundation of the house”."
+            }
+          ],
+          "kin": [
+            "remove"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַסָּע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dart, missile",
+      "bdb": [
+        "n.ea.ab"
+      ],
+      "cognate_ids": [
+        "ar-naza"
+      ],
+      "summary": "Once, in a list of weapons that cannot pierce Leviathan. Its link to the root is not clear: it may be a weapon drawn or let fly, as Arabic nazaʿa is used of drawing a bow, but nothing in the text shows it. BDB files it under a second root of the same spelling; one spelling, one entry keeps it here.",
+      "senses": [
+        {
+          "gloss": "dart",
+          "definition": "A hand-thrown or launched weapon, named between the spear and the javelin.",
+          "evidence": [
+            {
+              "ref": "Job.41.18",
+              "role": "defining",
+              "note": "“The sword that reaches him cannot stand, the spear, the מַסָּע, or the javelin.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-nsa",
+      "lang": "uga",
+      "form": "𐎐𐎒𐎓",
+      "translit": "nsʿ",
+      "gloss": "pull out; (of silver) pay out?",
+      "relation": "cognate",
+      "note": "In a Ugaritic deed of a marzeaḥ association, the imperfect issaʿ, “I will pull out (= pay)” fifty shekels of silver. The consonants answer regularly to the Hebrew, with ʿ; the sense “pull out” is the Hebrew qal's transitive sense, the “pay” only a likely extension.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 194, §93 Glossary, /n-s-ʿ/ (KTU 3.9:10, 17); text §84.2, p. 140, note to line 10",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“ysʿ, isʿ ‘to pull out’ > ‘to pay’(?) 3.9:10, 17 … (cf. H. nasaʿ, yissaʿ ‘to pull out, depart’)”; at the text: “imperf. 1. sing. /n-s-ʿ/? ‘to pull out, to pay’(?)”."
+        }
+      ]
+    },
+    {
+      "id": "arc-nesa",
+      "lang": "arc",
+      "form": "נְסַע",
+      "translit": "nəsaʿ",
+      "gloss": "move on, set out; (aphel) remove",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, of moving on from a place (“they moved from the east”, on Gen 11:2), with an aphel “remove”, as the Hebrew qal and hiphil. Thin: the Targums render the Hebrew verb with נְטַל, and the word may be taken over from the Hebrew of the rabbis.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְסַע (ch.)",
+          "note": "“Gen. R. s. 38 (ref. to Gen. XI, 2) נַסְעוּ מן מדינחא … they moved from the east … Af. to remove.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-naza",
+      "lang": "ar",
+      "form": "نَزَعَ",
+      "translit": "nazaʿa",
+      "gloss": "pull, pluck or draw out or up; remove from its place; draw (a bow)",
+      "relation": "possible",
+      "note": "The meaning matches the Hebrew qal's “pull up” and the hiphil's “remove” closely, and the ʿ answers; but Arabic z for Hebrew ס is not the regular correspondence (Hebrew ס answers Arabic s), so the link is argued, not shown. The Arabic root نسع (a plaited girth) does not share the meaning.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3030, root نزع, نَزَعَ (n43903)",
+          "note": "“نَزَعَ and اِنْتَزَعَ He pulled, plucked, or drew, out, or up, or off; removed from his or its place; displaced … نَزَعَ فِى القُوْسِ He drew the bow.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-nesu",
+      "lang": "akk",
+      "form": "nesû",
+      "translit": "nesû",
+      "gloss": "be(come) distant, depart, withdraw; (D) remove, take away",
+      "relation": "possible",
+      "note": "Akkadian lost ʿ, often leaving e in its place, so nesû could answer to nsʿ; but Ugaritic has a distinct root n-s-y “remove” which may be its match instead. Shares the sense “depart, go away” and the hiphil's “remove”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000012870, nesû [be(come) distant] V",
+          "url": "https://oracc.museum.upenn.edu/cmawro/cbd/akk/x000012870.html",
+          "note": "Meanings: “abandon; be taken away; be(come) distant; depart; drive away; eradicate; keep away; leave; remove; retreat; take away; withdraw”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "led-by-god-on-the-journey",
+      "statement": "Israel did not choose when to move: “at the mouth of Yahweh they camped, and at the mouth of Yahweh they set out”, whether the cloud stayed two days or a year (Num 9:18–23); the trumpets sounded the setting out (Num 10:2–6); the ark set out before them “to seek out a resting place for them” (Num 10:33), and Moses wrote down every stage “at the mouth of Yahweh” (Num 33:1–2). Abraham before them lived the same way, “going on and journeying” and living in tents (Gen 12:9; 13:3). Hebrews says Abraham went out “not knowing where he went”, dwelt in tents in the land of promise, and “looked for a city which has foundations, whose builder and maker is God”, confessing that he and his sons were strangers and sojourners on the earth (Heb 11:8–10, 13–16); that “here we have no continuing city, but we seek one to come” (Heb 13:14); and that the rest the ark went to seek remains for the people of God (Heb 4:8–9). Paul says the wilderness journey “happened to them as examples, and they were written for our admonition” (1Co 10:1–11). From the verses: the believer's life is a march by stages under God's direction, toward the land and city promised to Abraham, not a settled home here.",
+      "evidence": [
+        {
+          "ref": "Num.9.18",
+          "to": "Num.9.23"
+        },
+        {
+          "ref": "Num.10.2",
+          "to": "Num.10.6"
+        },
+        {
+          "ref": "Num.10.33"
+        },
+        {
+          "ref": "Num.33.1",
+          "to": "Num.33.2"
+        },
+        {
+          "ref": "Gen.12.9"
+        },
+        {
+          "ref": "Gen.13.3"
+        },
+        {
+          "ref": "Heb.11.8",
+          "to": "Heb.11.10"
+        },
+        {
+          "ref": "Heb.11.13",
+          "to": "Heb.11.16"
+        },
+        {
+          "ref": "Heb.13.14"
+        },
+        {
+          "ref": "Heb.4.8",
+          "to": "Heb.4.9"
+        },
+        {
+          "ref": "1Co.10.1",
+          "to": "1Co.10.11"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Eliphaz says of men who dwell in houses of clay, “Is not their tent cord pulled up (נִסַּע) within them? They die” (Job 4:19–21); Hezekiah, sick to death, “my dwelling is pulled up and carried away from me like a shepherd's tent”, and he goes on, “the grave cannot praise you, death cannot celebrate you … the living, the living, he shall praise you” (Isa 38:12, 18–19). Against the pulled-up tent Isaiah sets Zion, “a tent that will not be taken down; its stakes will never be pulled up” (Isa 33:20). Paul uses the same figure: “if our earthly house of this tent is dissolved, we have a building from God … not that we would be unclothed but clothed upon, that mortality might be swallowed up by life” (2Co 5:1–4), and Peter calls his death “the putting off of my tent” (2Pe 1:13–14). From the verses: man's life is a tent that death pulls up, with no praise of God in the grave; what lasts is the dwelling God gives, mortality swallowed up by life, not a soul that survives the tent's taking down.",
+      "evidence": [
+        {
+          "ref": "Job.4.19",
+          "to": "Job.4.21"
+        },
+        {
+          "ref": "Isa.38.12"
+        },
+        {
+          "ref": "Isa.38.18",
+          "to": "Isa.38.19"
+        },
+        {
+          "ref": "Isa.33.20"
+        },
+        {
+          "ref": "2Co.5.1",
+          "to": "2Co.5.4"
+        },
+        {
+          "ref": "2Pe.1.13",
+          "to": "2Pe.1.14"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (נָסַע, Num 10:5–35; מַסַּע, Num 10:2, 6, 12, 28). The database keys the root נסע, as the task gave it. BDB keys: n.dz.aa (verb), n.dz.ab (מַסַּע), n.dz.ac (מַסָּע quarry) and n.ea.ab (מַסָּע dart, under BDB's second root n.ea.aa); n.dz.ac and n.ea.ab each count both 1Ki 6:7 and Job 41:18, so each מַסָּע shows two uses where it has one. Zero-token cross-references m.cs.ae and m.cs.af are left out. No proper names of people from this root. No Biblical Aramaic or Peshitta word: the Peshitta has no cognate root (SEDRA), rendering the Greek with other verbs. Not entered: Ugaritic KTU 1.6 VI 27 (l ysʿ alt ṯbtk, “he will surely pull up the support of your seat”), often read with this root, is not in Segert's selected texts and no other Ugaritic dictionary is available; Geʿez nazʿa “pull out” (Dillmann, Leslau) not consulted, no page to cite, and it shares Arabic's irregular z; Sabaic NSʿ “undertake (a campaign), take away” in Biella pp. 318–319 (OCR only, root letter unreadable, and Biella compares Arabic našaʾa and Geʿez naśʾa, so probably the root of נשׂא); Punic N-S-ʾ in Krahmalkov p. 336 is נשׂא. Greek: ἀπαίρω and ἐξαίρω are the Septuagint's words, but no New Testament verse quotes or expounds a verse with נסע, so their New Testament verses are uses only. Open questions for review: (1) whether Arabic نزع should stand as a possible cognate given z for ס; (2) whether the dart belongs to the root at all; (3) the mortality doctrine's reach from Job 4:21 and Isa 38:12."
+}
