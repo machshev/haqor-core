@@ -1,0 +1,2099 @@
+{
+  "id": "ken",
+  "root": "כונ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "firmness",
+    "truth",
+    "preparation",
+    "creation",
+    "kingdom-of-god"
+  ],
+  "gloss": "be firm, stand fast; establish, prepare; right, true; (particle כֵּן) so, thus, yes",
+  "summary": "The root is to stand firm. The verb כּוּן is to be set firm or established, to be ready, and, of a word or report, to be certain and true; in its active stems, to set up, establish, prepare and make ready, and to set the heart firm toward Yahweh. מָכוֹן is the fixed place where something stands, Yahweh’s dwelling or the foundation of his throne, and מְכוֹנָה a stand or base. The adjective כֵּן is right, true, honest (Gen 42:11), and the particle כֵּן, “so, thus”, spelled the same, is best taken as the same word: what is so is what stands firm, as Hebrew shows by setting it beside אָמֵן “amen” (1Ki 1:36), using it for “yes” (Jos 2:4) and “rightly” (Num 27:7), and pairing it with “stand” (Isa 14:24). Akkadian makes “yes” the same way from kīnu “true”, and Phoenician has kn for both “honest” and “thus”; but the k- of כְּ “like” and כֹּה “thus” could also lie behind it, so the derivation is likely, not proved.",
+  "words": [
+    {
+      "lemma": "כֵּן",
+      "bdb": [
+        "k.by.aa"
+      ],
+      "cognate_ids": [
+        "phn-kn-thus",
+        "uga-kn-so"
+      ],
+      "pos": "adverb",
+      "gloss": "so, thus; likewise; yes; therefore (עַל־כֵּן, לָכֵן); afterwards (אַחֲרֵי־כֵן)",
+      "summary": "Never inflected. It points back to what has been said or done and says it stands so: “and it was so”, “so they did”, “as … so”. Alone it can answer “yes, so it is”; with a preposition it gives the reason (עַל־כֵּן, לָכֵן “on this ground, therefore”) or the time (אַחֲרֵי־כֵן “after this”). Its tie to the root is argued from its uses as “right” and “yes”, which it shares with the adjective כֵּן and the niphal נָכוֹן, and from Akkadian and Phoenician (see the root summary); a deictic origin, from the k- of כְּ and כֹּה, is the alternative.",
+      "senses": [
+        {
+          "id": "so-thus",
+          "gloss": "so, thus (as said or done)",
+          "definition": "Of what has just been said or commanded: it stands, or is done, exactly so.",
+          "cognate_ids": [
+            "akk-akanna",
+            "syc-hakanna"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.6.22",
+              "role": "defining",
+              "note": "“Noah did according to all that God commanded him; so (כֵּן) he did.”"
+            },
+            {
+              "ref": "Num.8.4",
+              "role": "defining",
+              "note": "“According to the pattern which Yahweh showed Moses, so he made the lampstand.”"
+            },
+            {
+              "ref": "Num.9.16",
+              "note": "“So it was always: the cloud covered it by day, and the appearance of fire by night.”"
+            },
+            {
+              "ref": "Jdg.6.40",
+              "note": "“And God did so that night”: as Gideon asked."
+            },
+            {
+              "ref": "Gen.29.26",
+              "note": "לֹא־יֵעָשֶׂה כֵן: “it is not done so in our place”."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "and it was so (וַיְהִי־כֵן)",
+              "definition": "The refrain of the creation account: what God said came to be and stood as he said it.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.7",
+                  "role": "defining",
+                  "note": "God made the expanse and divided the waters, “and it was so”."
+                },
+                {
+                  "ref": "Gen.1.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.1.11"
+                },
+                {
+                  "ref": "Gen.1.15"
+                },
+                {
+                  "ref": "Gen.1.24"
+                },
+                {
+                  "ref": "Gen.1.30"
+                }
+              ]
+            },
+            {
+              "gloss": "so they did (of obedience)",
+              "definition": "Closes the account of a command carried out to the letter: “as Yahweh commanded … so they did”.",
+              "evidence": [
+                {
+                  "ref": "Exo.12.28",
+                  "role": "defining",
+                  "note": "“As Yahweh commanded Moses and Aaron, so they did”: the first Passover."
+                },
+                {
+                  "ref": "Exo.40.16"
+                },
+                {
+                  "ref": "Num.8.20",
+                  "note": "The Levites set apart: “according to all that Yahweh commanded Moses … so the sons of Israel did to them”."
+                },
+                {
+                  "ref": "Num.36.10",
+                  "note": "“As Yahweh commanded Moses, so the daughters of Zelophehad did.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "likewise",
+          "gloss": "so, likewise (in comparison)",
+          "definition": "Answers כְּ “like” or כַּאֲשֶׁר “as” in the clause before: as the one thing is, so is the other.",
+          "evidence": [
+            {
+              "ref": "Isa.55.11",
+              "role": "defining",
+              "note": "After “as the rain comes down … and does not return there” (55:10): “so shall my word be that goes out of my mouth; it shall not return to me empty”."
+            },
+            {
+              "ref": "Psa.42.2",
+              "role": "defining",
+              "note": "“As a deer pants for streams of water, so my soul pants for you, God.”"
+            },
+            {
+              "ref": "Psa.48.9",
+              "note": "“As we have heard, so we have seen in the city of Yahweh of armies.”"
+            },
+            {
+              "ref": "Exo.1.12",
+              "note": "כַּאֲשֶׁר … כֵּן: “the more they afflicted them, the more they multiplied”."
+            },
+            {
+              "ref": "Pro.27.8",
+              "note": "“Like a bird that wanders from her nest, so is a man who wanders from his place.”"
+            },
+            {
+              "ref": "Ecc.3.19",
+              "note": "“As the one dies, so dies the other”: man and beast."
+            },
+            {
+              "ref": "Psa.123.2"
+            },
+            {
+              "ref": "Jer.24.5"
+            }
+          ]
+        },
+        {
+          "id": "yes-so",
+          "gloss": "yes; so be it",
+          "definition": "Said in answer, it affirms that something is so, or agrees that it shall be so; after אָמֵן it repeats the amen.",
+          "cognate_ids": [
+            "akk-kena",
+            "akk-kinu"
+          ],
+          "kin": [
+            "right",
+            "be-certain"
+          ],
+          "evidence": [
+            {
+              "ref": "Jos.2.4",
+              "role": "defining",
+              "note": "Rahab to the king’s men: כֵּן בָּאוּ אֵלַי הָאֲנָשִׁים, “Yes, the men came to me, but I did not know where they were from”."
+            },
+            {
+              "ref": "Gen.44.10",
+              "role": "defining",
+              "note": "“Now also according to your words, so be it (כֶּן־הוּא).”"
+            },
+            {
+              "ref": "Gen.18.5",
+              "note": "The three men to Abraham: “Do so (כֵּן תַּעֲשֶׂה), as you have said.”"
+            },
+            {
+              "ref": "1Ki.1.36",
+              "role": "defining",
+              "note": "אָמֵן כֵּן יֹאמַר יַהְוֶה: “Amen! So may Yahweh … say”: כֵּן beside אָמֵן."
+            },
+            {
+              "ref": "Jer.28.6",
+              "note": "Jeremiah to Hananiah: “Amen! So may Yahweh do; may Yahweh establish (יָקֵם) your words”."
+            },
+            {
+              "ref": "Job.9.2",
+              "note": "אָמְנָם יָדַעְתִּי כִי־כֵן: “Truly I know that it is so”."
+            }
+          ]
+        },
+        {
+          "id": "therefore",
+          "gloss": "therefore, for this reason (עַל־כֵּן, לָכֵן)",
+          "definition": "With עַל “on” or לְ “to”, the thing just stated is the ground of what follows: “on this ground”, “that is why”. In the prophets לָכֵן brings in the judgment that follows from the charge.",
+          "evidence": [
+            {
+              "ref": "Gen.2.24",
+              "role": "defining",
+              "note": "“Therefore (עַל־כֵּן) a man shall leave his father and his mother and cling to his wife”, quoted by Jesus (Mat 19:5) and Paul (Eph 5:31)."
+            },
+            {
+              "ref": "Gen.11.9",
+              "role": "defining",
+              "note": "“Therefore its name was called Babel, because there Yahweh confused the language of all the earth.”"
+            },
+            {
+              "ref": "Num.21.14",
+              "note": "“Therefore it is said in the book of the wars of Yahweh”."
+            },
+            {
+              "ref": "Psa.45.8",
+              "note": "“You have loved righteousness and hated wickedness; therefore God, your God, has anointed you”, quoted at Heb 1:9."
+            },
+            {
+              "ref": "Psa.1.5",
+              "note": "“Therefore the wicked shall not stand in the judgment.”"
+            },
+            {
+              "ref": "Jdg.11.8",
+              "role": "defining",
+              "note": "לָכֵן עַתָּה שַׁבְנוּ אֵלֶיךָ: “That is why we have now come back to you”."
+            },
+            {
+              "ref": "Gen.4.15",
+              "note": "לָכֵן: “Therefore whoever kills Cain, vengeance shall be taken on him sevenfold”."
+            },
+            {
+              "ref": "Amo.4.12",
+              "note": "“Therefore thus will I do to you, Israel … prepare to meet your God”."
+            },
+            {
+              "ref": "Jer.30.16"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "since, inasmuch as (כִּי עַל־כֵּן)",
+              "definition": "With כִּי, the reason already given by the circumstances: “for that is why”, “seeing that”.",
+              "evidence": [
+                {
+                  "ref": "Num.10.31",
+                  "role": "defining",
+                  "note": "Moses to Hobab: “Do not leave us, since (כִּי עַל־כֵּן) you know where we should camp in the wilderness, and you will be eyes for us.”"
+                },
+                {
+                  "ref": "Gen.18.5",
+                  "role": "defining",
+                  "note": "“Since you have come by your servant.”"
+                },
+                {
+                  "ref": "Gen.19.8",
+                  "note": "“For that is why they came under the shadow of my roof.”"
+                },
+                {
+                  "ref": "Gen.33.10"
+                },
+                {
+                  "ref": "Num.14.43",
+                  "note": "“Because you have turned back from following Yahweh, Yahweh will not be with you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gloss": "afterwards (אַחֲרֵי־כֵן); and so, then (וּבְכֵן)",
+          "definition": "With אַחֲרֵי “after” it marks what follows in time; with בְּ, “in this way, so then”.",
+          "evidence": [
+            {
+              "ref": "Gen.15.14",
+              "role": "defining",
+              "note": "“And afterwards they shall come out with great possessions.”"
+            },
+            {
+              "ref": "Gen.6.4",
+              "note": "“in those days, and also afterwards”."
+            },
+            {
+              "ref": "2Sa.10.1",
+              "note": "וַיְהִי אַחֲרֵי־כֵן: “And it came to pass after this”."
+            },
+            {
+              "ref": "Est.4.16",
+              "role": "defining",
+              "note": "“I and my maidens will fast likewise (כֵּן), and so (וּבְכֵן) I will go in to the king.”"
+            },
+            {
+              "ref": "Ecc.8.10"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "οὕτως",
+          "gloss": "so, thus",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 1:9 word 13",
+              "note": "καὶ ἐγένετο οὕτως for וַיְהִי־כֵן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "1KI 1:36 word 9",
+              "note": "γένοιτο οὕτως for אָמֵן כֵּן."
+            }
+          ]
+        },
+        {
+          "lemma": "τοῦτο",
+          "gloss": "this (διὰ τοῦτο, ἕνεκεν τούτου: for this reason)",
+          "evidence": [
+            {
+              "ref": "Mat.19.5",
+              "note": "ἕνεκεν τούτου, quoting Gen 2:24 עַל־כֵּן."
+            },
+            {
+              "ref": "Mrk.10.7",
+              "note": "ἕνεκεν τούτου, quoting Gen 2:24."
+            },
+            {
+              "ref": "Eph.5.31",
+              "note": "ἀντὶ τούτου, quoting Gen 2:24."
+            },
+            {
+              "ref": "Heb.1.9",
+              "note": "διὰ τοῦτο, quoting Psa 45:8 עַל־כֵּן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 2:24 words 1–2",
+              "note": "ἕνεκεν τούτου for עַל־כֵּן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 45:8 words 5–6",
+              "note": "διὰ τοῦτο for עַל־כֵּן."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קוּם",
+            "note": "“As I have purposed, so (כֵּן) it shall be; as I have planned, it shall stand (תָקוּם)”: what is כֵּן is what stands.",
+            "evidence": [
+              {
+                "ref": "Isa.14.24"
+              }
+            ]
+          },
+          {
+            "lemma": "אָמֵן",
+            "note": "Said together in assent: “Amen! So may Yahweh say / do”.",
+            "evidence": [
+              {
+                "ref": "1Ki.1.36"
+              },
+              {
+                "ref": "Jer.28.6"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַיְהִי־כֵן",
+            "gloss": "and it was so",
+            "evidence": [
+              {
+                "ref": "Gen.1.7"
+              },
+              {
+                "ref": "Gen.1.9"
+              },
+              {
+                "ref": "Gen.1.11"
+              }
+            ]
+          },
+          {
+            "phrase": "כַּאֲשֶׁר / כְּכֹל אֲשֶׁר … כֵּן עָשָׂה",
+            "gloss": "as (Yahweh commanded) … so he did",
+            "evidence": [
+              {
+                "ref": "Gen.6.22"
+              },
+              {
+                "ref": "Exo.12.28"
+              },
+              {
+                "ref": "Exo.40.16"
+              },
+              {
+                "ref": "Num.8.20"
+              }
+            ]
+          },
+          {
+            "phrase": "כְּ… / כַּאֲשֶׁר … כֵּן",
+            "gloss": "as … so; like … so",
+            "evidence": [
+              {
+                "ref": "Psa.42.2"
+              },
+              {
+                "ref": "Isa.55.10",
+                "to": "Isa.55.11"
+              },
+              {
+                "ref": "Psa.48.9"
+              },
+              {
+                "ref": "Zec.1.6"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל־כֵּן",
+            "gloss": "therefore, for this reason",
+            "evidence": [
+              {
+                "ref": "Gen.2.24"
+              },
+              {
+                "ref": "Gen.11.9"
+              },
+              {
+                "ref": "Psa.45.8"
+              }
+            ]
+          },
+          {
+            "phrase": "כִּי־עַל־כֵּן",
+            "gloss": "since, seeing that",
+            "evidence": [
+              {
+                "ref": "Gen.18.5"
+              },
+              {
+                "ref": "Num.10.31"
+              },
+              {
+                "ref": "Num.14.43"
+              }
+            ]
+          },
+          {
+            "phrase": "לָכֵן",
+            "gloss": "therefore; that is why",
+            "evidence": [
+              {
+                "ref": "Gen.4.15"
+              },
+              {
+                "ref": "Jdg.11.8"
+              },
+              {
+                "ref": "Jer.30.16"
+              }
+            ]
+          },
+          {
+            "phrase": "אַחֲרֵי־כֵן",
+            "gloss": "afterwards",
+            "evidence": [
+              {
+                "ref": "Gen.15.14"
+              },
+              {
+                "ref": "2Sa.10.1"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא־כֵן",
+            "gloss": "not so",
+            "evidence": [
+              {
+                "ref": "Gen.48.18",
+                "note": "“Not so, my father: this is the firstborn.”"
+              },
+              {
+                "ref": "Psa.1.4",
+                "note": "“Not so the wicked.”"
+              }
+            ]
+          },
+          {
+            "phrase": "אָמֵן כֵּן",
+            "gloss": "amen, so (may Yahweh say/do)",
+            "evidence": [
+              {
+                "ref": "1Ki.1.36"
+              },
+              {
+                "ref": "Jer.28.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כֵּן",
+      "bdb": [
+        "k.aw.ab"
+      ],
+      "cognate_ids": [
+        "akk-kinu",
+        "phn-kn-honest"
+      ],
+      "pos": "adjective",
+      "gloss": "right, true; honest",
+      "summary": "The adjective of the root, inflected (כֵּנִים) where it describes people, and otherwise said of speech or deeds that are right. It is spelled like the particle כֵּן, and in “you have spoken כֵּן” (Exo 10:29) and “they do not speak כֵּן” (Jer 8:6) the two meet: “so” and “rightly”.",
+      "senses": [
+        {
+          "id": "honest",
+          "gloss": "honest, true (of men)",
+          "definition": "Men whose word stands, who are what they say they are; set against spies, who are not.",
+          "evidence": [
+            {
+              "ref": "Gen.42.11",
+              "role": "defining",
+              "note": "“We are all sons of one man; we are honest men (כֵּנִים); your servants are not spies.”"
+            },
+            {
+              "ref": "Gen.42.34",
+              "role": "defining",
+              "note": "“Then I shall know that you are not spies, but that you are honest men.”"
+            },
+            {
+              "ref": "Gen.42.19"
+            },
+            {
+              "ref": "Gen.42.31"
+            },
+            {
+              "ref": "Gen.42.33"
+            }
+          ]
+        },
+        {
+          "id": "right",
+          "gloss": "right, rightly (of speech or action)",
+          "definition": "Of a claim or a deed that is right, as it ought to be; with לֹא, what is not right.",
+          "kin": [
+            "what-is-right",
+            "yes-so"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.27.7",
+              "role": "defining",
+              "note": "“The daughters of Zelophehad speak right (כֵּן … דֹּבְרֹת): you shall surely give them a possession of inheritance.”"
+            },
+            {
+              "ref": "Num.36.5",
+              "role": "defining",
+              "note": "“The tribe of the sons of Joseph speaks right.”"
+            },
+            {
+              "ref": "Exo.10.29",
+              "note": "Moses to Pharaoh: “You have spoken right (כֵּן דִּבַּרְתָּ); I will not see your face again.”"
+            },
+            {
+              "ref": "2Ki.7.9",
+              "role": "defining",
+              "note": "The lepers: “We are not doing right (לֹא־כֵן); this day is a day of good news, and we are keeping silent.”"
+            },
+            {
+              "ref": "Jer.8.6",
+              "note": "“I listened and heard: they do not speak right; no man repents of his evil.”"
+            },
+            {
+              "ref": "Isa.16.6",
+              "note": "Of Moab: “his empty talk is not right (לֹא־כֵן בַּדָּיו)”."
+            },
+            {
+              "ref": "Jer.48.30"
+            },
+            {
+              "ref": "Pro.15.7",
+              "note": "“The lips of the wise spread knowledge, but the heart of fools is not right (לֹא־כֵן).”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὀρθῶς",
+          "gloss": "rightly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 27:7 word 1",
+              "note": "ὀρθῶς for כֵּן: “the daughters of Zelophehad have spoken rightly”."
+            }
+          ]
+        },
+        {
+          "lemma": "εἰρηνικός",
+          "gloss": "peaceable",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 42:11 word 6",
+              "note": "εἰρηνικοί for כֵּנִים, “honest men”: a paraphrase, not a rendering of the sense."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מְרַגְּלִים",
+            "note": "spies: “we are honest men, your servants are not spies”.",
+            "evidence": [
+              {
+                "ref": "Gen.42.11"
+              },
+              {
+                "ref": "Gen.42.34"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כּוּן",
+      "bdb": [
+        "k.aw.aa"
+      ],
+      "cognate_ids": [
+        "akk-kanu",
+        "phn-kn-be",
+        "uga-kn-be",
+        "ar-kana"
+      ],
+      "pos": "verb",
+      "gloss": "be firm, established, ready, certain; establish, set up, prepare",
+      "summary": "No qal in scripture. The niphal is to stand firm: a throne or a world established, people ready, a report certain, a heart steadfast. The polel is to set up and make firm, above all of Yahweh founding the earth and David’s throne; the hiphil is to prepare or make ready, and also to establish; the hophal and hithpolel are passive and reflexive. Hebrew sets it again and again beside אמן “be firm, faithful” and אֱמֶת “truth” (Deu 13:15; 2Sa 7:16; Psa 78:37; Pro 12:19).",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be established, stand firm; be ready; be certain, right; be steadfast",
+          "senses": [
+            {
+              "id": "be-established",
+              "gloss": "be established, stand firm",
+              "definition": "Of a throne, a kingdom, a world or a mountain: set firm so that it stands and is not moved.",
+              "evidence": [
+                {
+                  "ref": "2Sa.7.16",
+                  "role": "defining",
+                  "note": "“Your house and your kingdom shall be made sure (נֶאְמַן) forever before you; your throne shall be established (נָכוֹן) forever.”"
+                },
+                {
+                  "ref": "Psa.93.1",
+                  "role": "defining",
+                  "note": "“Yahweh reigns … the world is established; it shall not be moved.”"
+                },
+                {
+                  "ref": "1Ki.2.12",
+                  "note": "“Solomon sat on the throne of David his father, and his kingdom was firmly established.”"
+                },
+                {
+                  "ref": "1Ki.2.45"
+                },
+                {
+                  "ref": "Psa.96.10"
+                },
+                {
+                  "ref": "Isa.2.2",
+                  "note": "“In the last days the mountain of Yahweh’s house shall be established at the head of the mountains.”"
+                },
+                {
+                  "ref": "Mic.4.1"
+                },
+                {
+                  "ref": "Pro.12.19",
+                  "role": "defining",
+                  "note": "“The lip of truth shall be established forever, but a lying tongue is but for a moment.”"
+                },
+                {
+                  "ref": "Pro.4.26",
+                  "note": "“and all your ways shall be established”."
+                }
+              ]
+            },
+            {
+              "id": "be-ready",
+              "gloss": "be ready, prepared",
+              "definition": "Of people standing ready for what is coming, or of things made ready.",
+              "evidence": [
+                {
+                  "ref": "Exo.19.11",
+                  "role": "defining",
+                  "note": "“Let them be ready (נְכֹנִים) for the third day, for on the third day Yahweh will come down.”"
+                },
+                {
+                  "ref": "Amo.4.12",
+                  "role": "defining",
+                  "note": "הִכּוֹן לִקְרַאת־אֱלֹהֶיךָ: “prepare to meet your God, Israel”."
+                },
+                {
+                  "ref": "Exo.19.15"
+                },
+                {
+                  "ref": "Exo.34.2",
+                  "note": "“Be ready in the morning, and come up to Mount Sinai.”"
+                },
+                {
+                  "ref": "Jos.8.4"
+                },
+                {
+                  "ref": "Neh.8.10",
+                  "note": "“Send portions to him for whom nothing is prepared.”"
+                }
+              ]
+            },
+            {
+              "id": "be-certain",
+              "gloss": "be certain, sure, true",
+              "definition": "Of a word, a report or a matter: established as fact, certain. Set beside אֱמֶת “truth”.",
+              "kin": [
+                "yes-so"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.13.15",
+                  "role": "defining",
+                  "note": "“And behold, it is truth, the thing is certain (אֱמֶת נָכוֹן הַדָּבָר)”."
+                },
+                {
+                  "ref": "Gen.41.32",
+                  "role": "defining",
+                  "note": "The dream doubled “because the thing is established by God, and God will hasten to do it”."
+                },
+                {
+                  "ref": "Deu.17.4"
+                },
+                {
+                  "ref": "1Sa.23.23",
+                  "note": "“Come back to me with certainty (אֶל־נָכוֹן).”"
+                },
+                {
+                  "ref": "1Sa.26.4",
+                  "note": "David “knew that Saul had certainly come”."
+                },
+                {
+                  "ref": "Hos.6.3",
+                  "note": "“His going forth is sure as the dawn.”"
+                }
+              ]
+            },
+            {
+              "id": "what-is-right",
+              "gloss": "right, fitting; what is right",
+              "definition": "What is right to do or to say; the feminine participle נְכוֹנָה is “what is right”, true speech.",
+              "kin": [
+                "right"
+              ],
+              "evidence": [
+                {
+                  "ref": "Exo.8.22",
+                  "role": "defining",
+                  "note": "לֹא נָכוֹן לַעֲשׂוֹת כֵּן: “It is not right to do so”: the participle and the particle together."
+                },
+                {
+                  "ref": "Job.42.7",
+                  "role": "defining",
+                  "note": "“You have not spoken of me what is right (נְכוֹנָה), as my servant Job has.”"
+                },
+                {
+                  "ref": "Job.42.8"
+                },
+                {
+                  "ref": "Psa.5.10",
+                  "note": "“There is nothing right (נְכוֹנָה) in their mouth.”"
+                }
+              ]
+            },
+            {
+              "id": "steadfast",
+              "gloss": "be steadfast (of the heart or spirit)",
+              "definition": "A heart set firm toward God, which does not waver; set beside being faithful (נֶאֱמַן).",
+              "evidence": [
+                {
+                  "ref": "Psa.57.8",
+                  "role": "defining",
+                  "note": "“My heart is steadfast, God, my heart is steadfast; I will sing.”"
+                },
+                {
+                  "ref": "Psa.78.37",
+                  "role": "defining",
+                  "note": "“Their heart was not steadfast with him, and they were not faithful in his covenant.”"
+                },
+                {
+                  "ref": "Psa.112.7",
+                  "note": "“His heart is steadfast, trusting in Yahweh.”"
+                },
+                {
+                  "ref": "Psa.51.12",
+                  "note": "“Create in me a clean heart, God, and renew a steadfast spirit within me.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "set up, establish, make firm; fashion; make ready, aim",
+          "senses": [
+            {
+              "id": "set-up",
+              "gloss": "set up, establish, make firm",
+              "definition": "To set something in its place so that it stands: the earth, the heavens, a throne, a city, a sanctuary.",
+              "evidence": [
+                {
+                  "ref": "Psa.119.90",
+                  "role": "defining",
+                  "note": "“You established the earth, and it stands (וַתַּעֲמֹד).”"
+                },
+                {
+                  "ref": "2Sa.7.13",
+                  "role": "defining",
+                  "note": "“I will establish the throne of his kingdom forever.”"
+                },
+                {
+                  "ref": "Psa.24.2",
+                  "note": "“He founded it upon the seas and established it upon the rivers.”"
+                },
+                {
+                  "ref": "Isa.45.18",
+                  "role": "defining",
+                  "note": "“He established it; he did not create it a waste, he formed it to be inhabited.”"
+                },
+                {
+                  "ref": "Pro.3.19",
+                  "note": "“By understanding he established the heavens.”"
+                },
+                {
+                  "ref": "Psa.8.4",
+                  "note": "“the moon and the stars, which you have established”."
+                },
+                {
+                  "ref": "Exo.15.17",
+                  "note": "“the sanctuary, Lord, which your hands have established”."
+                },
+                {
+                  "ref": "Psa.48.9",
+                  "note": "“God will establish it forever”: his city."
+                },
+                {
+                  "ref": "Psa.90.17",
+                  "note": "“Establish the work of our hands for us.”"
+                },
+                {
+                  "ref": "Hab.2.12"
+                }
+              ]
+            },
+            {
+              "gloss": "form, fashion (a man)",
+              "definition": "Of God shaping a man or a people, set beside “make”.",
+              "evidence": [
+                {
+                  "ref": "Psa.119.73",
+                  "role": "defining",
+                  "note": "“Your hands made me and fashioned me.”"
+                },
+                {
+                  "ref": "Deu.32.6",
+                  "role": "defining",
+                  "note": "“Is he not your father who bought you? He made you and established you.”"
+                },
+                {
+                  "ref": "Job.31.15",
+                  "note": "“Did not one fashion us in the womb?”"
+                }
+              ]
+            },
+            {
+              "gloss": "make ready, aim (a weapon)",
+              "definition": "To set an arrow on the string or a bow ready to shoot.",
+              "evidence": [
+                {
+                  "ref": "Psa.11.2",
+                  "role": "defining",
+                  "note": "“They have set their arrow on the string.”"
+                },
+                {
+                  "ref": "Psa.7.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polal",
+          "gloss": "be established, be set firm",
+          "senses": [
+            {
+              "gloss": "be established",
+              "definition": "Passive of the polel.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.23",
+                  "role": "defining",
+                  "note": "“The steps of a man are established by Yahweh.”"
+                },
+                {
+                  "ref": "Ezk.28.13",
+                  "note": "“in the day you were created they were established”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "prepare, make ready; establish; set (the heart) firm",
+          "senses": [
+            {
+              "id": "prepare",
+              "gloss": "prepare, make ready, provide",
+              "definition": "To get something ready beforehand: a meal, provisions, materials, a place.",
+              "evidence": [
+                {
+                  "ref": "Gen.43.16",
+                  "role": "defining",
+                  "note": "“Slaughter an animal and prepare it, for the men will eat with me at noon.”"
+                },
+                {
+                  "ref": "Exo.16.5",
+                  "role": "defining",
+                  "note": "“On the sixth day they shall prepare what they bring in, and it shall be twice as much.”"
+                },
+                {
+                  "ref": "Exo.23.20",
+                  "note": "“to bring you to the place that I have prepared”."
+                },
+                {
+                  "ref": "Jos.1.11",
+                  "note": "“Prepare provisions for yourselves, for within three days you are crossing the Jordan.”"
+                },
+                {
+                  "ref": "1Ki.5.32"
+                },
+                {
+                  "ref": "1Ch.29.2"
+                },
+                {
+                  "ref": "Pro.30.25",
+                  "note": "The ants “prepare their food in the summer”."
+                },
+                {
+                  "ref": "Est.7.10"
+                },
+                {
+                  "ref": "Job.38.41",
+                  "note": "“Who provides for the raven its food?”"
+                },
+                {
+                  "ref": "Jdg.12.6",
+                  "note": "וְלֹא יָכִין לְדַבֵּר כֵּן: he “could not manage to say it right”."
+                }
+              ]
+            },
+            {
+              "gloss": "establish, make firm; direct",
+              "definition": "To make firm and lasting, as the polel; of steps, to direct them aright.",
+              "evidence": [
+                {
+                  "ref": "2Sa.7.12",
+                  "role": "defining",
+                  "note": "“I will raise up your seed after you … and I will establish his kingdom.”"
+                },
+                {
+                  "ref": "Isa.9.6",
+                  "role": "defining",
+                  "note": "“on the throne of David and over his kingdom, to establish it and to uphold it with justice and righteousness from now and forever”."
+                },
+                {
+                  "ref": "1Ch.17.11"
+                },
+                {
+                  "ref": "Psa.89.5",
+                  "note": "“Your seed I will establish forever, and build your throne for all generations.”"
+                },
+                {
+                  "ref": "Jer.10.12",
+                  "note": "“who established the world by his wisdom”."
+                },
+                {
+                  "ref": "Pro.16.9",
+                  "note": "“A man’s heart plans his way, but Yahweh directs his step.”"
+                },
+                {
+                  "ref": "Jer.10.23",
+                  "note": "“it is not in man who walks to direct his steps”."
+                },
+                {
+                  "ref": "Jos.3.17",
+                  "note": "הָכֵן: the priests stood “firm” on dry ground in the midst of the Jordan."
+                }
+              ]
+            },
+            {
+              "id": "set-heart",
+              "gloss": "set the heart firm (הֵכִין לֵב)",
+              "definition": "To fix one’s heart on Yahweh or on seeking him, so that it does not waver.",
+              "evidence": [
+                {
+                  "ref": "1Sa.7.3",
+                  "role": "defining",
+                  "note": "“Put away the foreign gods … and set your hearts firm toward Yahweh and serve him only.”"
+                },
+                {
+                  "ref": "Ezr.7.10",
+                  "role": "defining",
+                  "note": "“Ezra had set his heart to seek the law of Yahweh, and to do it, and to teach.”"
+                },
+                {
+                  "ref": "Psa.78.8",
+                  "role": "defining",
+                  "note": "“a generation that did not set its heart firm, whose spirit was not faithful with God”."
+                },
+                {
+                  "ref": "2Ch.30.19"
+                },
+                {
+                  "ref": "Psa.10.17",
+                  "note": "“You will make their heart firm; you will cause your ear to hear.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be established; be made ready",
+          "senses": [
+            {
+              "gloss": "be established; be made ready",
+              "definition": "Passive of the hiphil.",
+              "evidence": [
+                {
+                  "ref": "Isa.16.5",
+                  "role": "defining",
+                  "note": "“A throne shall be established in steadfast love, and one shall sit on it in truth in the tent of David.”"
+                },
+                {
+                  "ref": "Pro.21.31",
+                  "role": "defining",
+                  "note": "“The horse is made ready for the day of battle, but salvation is Yahweh’s.”"
+                },
+                {
+                  "ref": "Zec.5.11"
+                },
+                {
+                  "ref": "Isa.30.33"
+                },
+                {
+                  "ref": "Nam.2.6"
+                },
+                {
+                  "ref": "Ezk.40.43"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "be established; make oneself ready",
+          "senses": [
+            {
+              "gloss": "be established; make oneself ready",
+              "definition": "Of a house or a people, to be made firm; of men, to get ready.",
+              "evidence": [
+                {
+                  "ref": "Pro.24.3",
+                  "role": "defining",
+                  "note": "“By wisdom a house is built, and by understanding it is established.”"
+                },
+                {
+                  "ref": "Isa.54.14",
+                  "role": "defining",
+                  "note": "“In righteousness you shall be established.”"
+                },
+                {
+                  "ref": "Num.21.27",
+                  "note": "“Let the city of Sihon be built and established.”"
+                },
+                {
+                  "ref": "Psa.59.5",
+                  "note": "“They run and make themselves ready.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἑτοιμάζω",
+          "gloss": "prepare, make ready",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 23:20 word 12",
+              "note": "ἡτοίμασα for הֲכִנֹתִי, “the place that I have prepared”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 15:17 word 11",
+              "note": "ἡτοίμασαν for כּוֹנְנוּ."
+            },
+            {
+              "ref": "Jhn.14.2",
+              "note": "“I go to prepare (ἑτοιμάσαι) a place for you”: the verb the Septuagint uses for Yahweh preparing a place for his people (Exo 23:20)."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνορθόω",
+          "gloss": "set up again, make straight",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2SA 7:13 word 5",
+              "note": "ἀνορθώσω for וְכֹנַנְתִּי, “I will establish the throne of his kingdom”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אמן",
+            "note": "be firm, faithful; truth: נָכוֹן beside נֶאְמַן and אֱמֶת.",
+            "evidence": [
+              {
+                "ref": "2Sa.7.16"
+              },
+              {
+                "ref": "Deu.13.15"
+              },
+              {
+                "ref": "Psa.78.37"
+              },
+              {
+                "ref": "Pro.12.19"
+              }
+            ]
+          },
+          {
+            "lemma": "יָסַד",
+            "note": "found: Yahweh founds and establishes the earth and the heavens.",
+            "evidence": [
+              {
+                "ref": "Psa.24.2"
+              },
+              {
+                "ref": "Pro.3.19"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּנָה",
+            "note": "build: a house or city is built and established.",
+            "evidence": [
+              {
+                "ref": "Pro.24.3"
+              },
+              {
+                "ref": "Num.21.27"
+              },
+              {
+                "ref": "2Sa.7.13"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "מוט",
+            "note": "totter, be moved: the world established “shall not be moved”.",
+            "evidence": [
+              {
+                "ref": "Psa.93.1"
+              },
+              {
+                "ref": "Psa.96.10"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הֵכִין לֵב",
+            "gloss": "set the heart firm (toward Yahweh)",
+            "evidence": [
+              {
+                "ref": "1Sa.7.3"
+              },
+              {
+                "ref": "Ezr.7.10"
+              },
+              {
+                "ref": "Psa.78.8"
+              }
+            ]
+          },
+          {
+            "phrase": "נָכוֹן הַדָּבָר",
+            "gloss": "the thing is certain",
+            "evidence": [
+              {
+                "ref": "Gen.41.32"
+              },
+              {
+                "ref": "Deu.13.15"
+              },
+              {
+                "ref": "Deu.17.4"
+              }
+            ]
+          },
+          {
+            "phrase": "כִּסֵּא … נָכוֹן עַד־עוֹלָם",
+            "gloss": "a throne established forever",
+            "evidence": [
+              {
+                "ref": "2Sa.7.16"
+              },
+              {
+                "ref": "1Ch.17.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָכוֹן",
+      "bdb": [
+        "k.aw.ah"
+      ],
+      "cognate_ids": [
+        "ar-makana"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "fixed place, dwelling-place; foundation",
+      "summary": "The place where something is set firm: almost always Yahweh’s dwelling, in the sanctuary or in the heavens; and the foundation of his throne or of the earth.",
+      "senses": [
+        {
+          "id": "fixed-place",
+          "gloss": "fixed place, dwelling-place",
+          "definition": "The settled place where one dwells, above all Yahweh’s: the sanctuary his hands established, the house Solomon built, the heavens.",
+          "kin": [
+            "set-up"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.15.17",
+              "role": "defining",
+              "note": "“the place for your dwelling (מָכוֹן לְשִׁבְתְּךָ) which you have made, Yahweh, the sanctuary which your hands have established (כּוֹנְנוּ)”."
+            },
+            {
+              "ref": "1Ki.8.13",
+              "role": "defining",
+              "note": "“I have built you an exalted house, a place for your dwelling forever.”"
+            },
+            {
+              "ref": "1Ki.8.39",
+              "note": "“Hear in the heavens, the place of your dwelling.”"
+            },
+            {
+              "ref": "1Ki.8.43"
+            },
+            {
+              "ref": "1Ki.8.49"
+            },
+            {
+              "ref": "Psa.33.14",
+              "note": "“From the place of his dwelling he looks on all the inhabitants of the earth.”"
+            },
+            {
+              "ref": "Isa.18.4"
+            },
+            {
+              "ref": "Isa.4.5"
+            },
+            {
+              "ref": "Ezr.2.68",
+              "note": "“to set up the house of God on its place”."
+            },
+            {
+              "ref": "Dan.8.11",
+              "note": "“the place of his sanctuary was cast down”."
+            }
+          ]
+        },
+        {
+          "gloss": "foundation",
+          "definition": "What a throne or the earth rests on.",
+          "evidence": [
+            {
+              "ref": "Psa.89.15",
+              "role": "defining",
+              "note": "“Righteousness and justice are the foundation of your throne.”"
+            },
+            {
+              "ref": "Psa.97.2"
+            },
+            {
+              "ref": "Psa.104.5",
+              "role": "defining",
+              "note": "“He founded the earth on its foundations, that it should not be moved forever and ever.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἕτοιμος",
+          "gloss": "ready, prepared",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 15:17 word 5",
+              "note": "ἕτοιμον κατοικητήριον, “a prepared dwelling”, for מָכוֹן לְשִׁבְתְּךָ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְכוֹנָה",
+      "bdb": [
+        "k.aw.ai"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "stand, base",
+      "summary": "What a thing is set on: the ten wheeled bronze stands for the lavers of Solomon’s house, and the base an altar or a figure is set on. No cognate is cited for it; its tie to the root rests on the verb and on מָכוֹן.",
+      "senses": [
+        {
+          "gloss": "stand (for a laver)",
+          "definition": "The bronze stands, on wheels, that carried the ten lavers in Solomon’s house.",
+          "kin": [
+            "fixed-place",
+            "set-up"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.7.27",
+              "role": "defining",
+              "note": "“He made the ten stands of bronze; four cubits the length of each stand.”"
+            },
+            {
+              "ref": "1Ki.7.38",
+              "role": "defining",
+              "note": "“one laver on each stand, for the ten stands”."
+            },
+            {
+              "ref": "1Ki.7.43"
+            },
+            {
+              "ref": "2Ki.25.13",
+              "note": "The Chaldeans broke up the pillars and the stands and the bronze sea."
+            },
+            {
+              "ref": "Jer.27.19"
+            },
+            {
+              "ref": "Jer.52.17"
+            },
+            {
+              "ref": "2Ch.4.14"
+            }
+          ]
+        },
+        {
+          "gloss": "base, place set on",
+          "definition": "The base on which something is set down in its place.",
+          "kin": [
+            "fixed-place"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.3.3",
+              "role": "defining",
+              "note": "“They set the altar on its base (עַל־מְכוֹנֹתָיו).”"
+            },
+            {
+              "ref": "Zec.5.11",
+              "role": "defining",
+              "note": "“It shall be established, and she shall be set down there on her base.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּכוּנָה",
+      "bdb": [
+        "k.aw.ak"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "arrangement; store; fixed place",
+      "summary": "Three uses, each a different side of the verb: how a house is set out, what is laid up ready, and the place where someone is set. No cognate is cited for it.",
+      "senses": [
+        {
+          "gloss": "arrangement",
+          "definition": "The way a building is set out.",
+          "kin": [
+            "set-up"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.43.11",
+              "role": "defining",
+              "note": "“the form of the house and its arrangement, its exits and its entrances”."
+            }
+          ]
+        },
+        {
+          "gloss": "store, supply",
+          "definition": "What has been prepared and laid up.",
+          "kin": [
+            "prepare"
+          ],
+          "evidence": [
+            {
+              "ref": "Nam.2.10",
+              "role": "defining",
+              "note": "“Plunder silver, plunder gold; there is no end to the store.”"
+            }
+          ]
+        },
+        {
+          "gloss": "fixed place, seat",
+          "definition": "The place where one is set.",
+          "kin": [
+            "fixed-place"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.23.3",
+              "role": "defining",
+              "note": "“Oh that I knew where I might find him, that I might come to his seat!”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כַּוָּן",
+      "bdb": [
+        "k.aw.al"
+      ],
+      "cognate_ids": [
+        "akk-kamanu"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cake (offered to the queen of heaven)",
+      "summary": "Twice, of the cakes the women of Judah baked for “the queen of heaven”. It is very likely the Akkadian kamānu, a sweet cake used in the Assyrian and Babylonian cult, borrowed with the worship, and not a word formed from this root; it is kept here only because it is spelled with these letters.",
+      "senses": [
+        {
+          "gloss": "cake",
+          "definition": "A cake made for an idol’s offering.",
+          "evidence": [
+            {
+              "ref": "Jer.7.18",
+              "role": "defining",
+              "note": "“the women knead dough to make cakes for the queen of heaven”."
+            },
+            {
+              "ref": "Jer.44.19",
+              "role": "defining",
+              "note": "“Did we make cakes for her to portray her … without our husbands?”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָכֵן",
+      "root": "אכנ",
+      "bdb": [
+        "a.dd.aa"
+      ],
+      "cognate_ids": [
+        "akk-kittu",
+        "akk-kena"
+      ],
+      "pos": "adverb",
+      "gloss": "surely, truly; but in truth, yet",
+      "summary": "An exclamation that something is so after all, often against what was thought: “surely Yahweh is in this place, and I did not know it”. It looks like כֵּן “so” with a prefixed א, as Hebrew has אָמְנָם beside אָמֵן; that is a reading of its form, not shown by a verse.",
+      "senses": [
+        {
+          "gloss": "surely, truly",
+          "definition": "Affirms that a thing is so, usually a realisation that it is so after all.",
+          "kin": [
+            "yes-so",
+            "be-certain"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.28.16",
+              "role": "defining",
+              "note": "Jacob waking: “Surely Yahweh is in this place, and I did not know it.”"
+            },
+            {
+              "ref": "Exo.2.14",
+              "role": "defining",
+              "note": "Moses afraid: “Surely the thing is known.”"
+            },
+            {
+              "ref": "Isa.53.4",
+              "role": "defining",
+              "note": "“Surely he has borne our sicknesses and carried our pains”, which Matthew applies to Jesus’ healing (Mat 8:17)."
+            },
+            {
+              "ref": "Mat.8.17"
+            },
+            {
+              "ref": "1Sa.15.32",
+              "note": "Agag: “Surely the bitterness of death is past.”"
+            },
+            {
+              "ref": "Isa.40.7",
+              "note": "“Surely the people is grass.”"
+            },
+            {
+              "ref": "Jer.3.23",
+              "note": "“Surely in Yahweh our God is the salvation of Israel.”"
+            }
+          ]
+        },
+        {
+          "gloss": "but in truth, yet",
+          "definition": "Sets the truth against what was said or supposed before.",
+          "evidence": [
+            {
+              "ref": "Psa.82.7",
+              "role": "defining",
+              "note": "After “you are gods”: “but in truth (אָכֵן) you shall die like men”."
+            },
+            {
+              "ref": "Isa.49.4",
+              "role": "defining",
+              "note": "“I said, I have laboured in vain … yet surely my judgment is with Yahweh.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כֵּן",
+      "lang": "arc",
+      "bdb": [
+        "xk.ad.ac"
+      ],
+      "cognate_ids": [
+        "phn-kn-thus",
+        "uga-kn-so"
+      ],
+      "pos": "adverb",
+      "gloss": "thus, so",
+      "summary": "Scripture’s Aramaic uses it only to bring in what is said or written next: “and thus he said”.",
+      "senses": [
+        {
+          "gloss": "thus (introducing speech or writing)",
+          "definition": "Points forward to the words that follow.",
+          "kin": [
+            "so-thus"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.24",
+              "role": "defining",
+              "note": "וְכֵן אֲמַר לֵהּ: “and thus he said to him: Do not destroy the wise men of Babylon”."
+            },
+            {
+              "ref": "Ezr.6.2",
+              "role": "defining",
+              "note": "וְכֵן כְּתִיב בְּגַוַּהּ: “and thus was written in it”."
+            },
+            {
+              "ref": "Dan.2.25"
+            },
+            {
+              "ref": "Dan.4.11"
+            },
+            {
+              "ref": "Dan.6.7"
+            },
+            {
+              "ref": "Dan.7.5"
+            },
+            {
+              "ref": "Dan.7.23",
+              "note": "כֵּן אֲמַר: “Thus he said: the fourth beast shall be a fourth kingdom on earth”."
+            },
+            {
+              "ref": "Ezr.5.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּנֵמָא",
+      "lang": "arc",
+      "root": "כנמא",
+      "bdb": [
+        "xk.ad.ad"
+      ],
+      "cognate_ids": [
+        "phn-kn-thus",
+        "uga-kn-so"
+      ],
+      "pos": "adverb",
+      "gloss": "thus, as follows; accordingly",
+      "summary": "Used only in the Aramaic letters and reports of Ezra. It appears to be כֵּן with an added -מָא, but how it is formed is not shown in scripture.",
+      "senses": [
+        {
+          "gloss": "thus, as follows",
+          "definition": "Brings in the words of a letter or a question.",
+          "kin": [
+            "so-thus"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.4.8",
+              "role": "defining",
+              "note": "“Rehum … and Shimshai wrote a letter against Jerusalem to Artaxerxes the king, as follows (כְּנֵמָא).”"
+            },
+            {
+              "ref": "Ezr.5.4"
+            },
+            {
+              "ref": "Ezr.5.9"
+            },
+            {
+              "ref": "Ezr.5.11",
+              "note": "“And thus they answered us”."
+            }
+          ]
+        },
+        {
+          "gloss": "accordingly",
+          "definition": "In the way that has been commanded.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.13",
+              "role": "defining",
+              "note": "“According to what Darius the king had sent, so (כְּנֵמָא) they did with all diligence.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כֵּאנָא",
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-kinu",
+        "phn-kn-honest"
+      ],
+      "pos": "adjective",
+      "gloss": "just, upright (Peshitta)",
+      "summary": "The Peshitta’s word for δίκαιος, “just”, and its adverb כֵּאנָאִית for “justly”; the Syriac dictionary files it under the root kwn. It carries the Hebrew adjective’s “right, honest” over to a man’s whole standing.",
+      "senses": [
+        {
+          "gloss": "just, upright",
+          "definition": "Right in conduct before God and men.",
+          "kin": [
+            "honest",
+            "right"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.1.19",
+              "role": "defining",
+              "note": "“Joseph her husband, being a just man”."
+            },
+            {
+              "ref": "Heb.10.38",
+              "role": "defining",
+              "note": "“The just shall live by faith”, quoting Hab 2:4, where the Hebrew is צַדִּיק."
+            },
+            {
+              "ref": "Mat.5.45",
+              "note": "“he sends rain on the just and the unjust”."
+            },
+            {
+              "ref": "2Pe.2.8",
+              "note": "Lot, “that just man”."
+            },
+            {
+              "ref": "Eph.6.1",
+              "note": "“Children, obey your parents in the Lord, for this is right.”"
+            },
+            {
+              "ref": "Luk.23.41",
+              "role": "defining",
+              "note": "The adverb: “and we indeed justly (כֵּאנָאִית), for we receive what our deeds deserve”."
+            },
+            {
+              "ref": "1Th.2.10",
+              "note": "The adverb: “how holily and justly and blamelessly we behaved”."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-kanu",
+      "lang": "akk",
+      "form": "kânu",
+      "translit": "kânu",
+      "gloss": "be firm, permanent, stable; be true, loyal; (D) establish, set up, confirm, prove",
+      "relation": "cognate",
+      "note": "The same range as the Hebrew verb: standing firm, establishing, and being proved true.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000011810, kânu [be(come) permanent] V",
+          "note": "“be firmly in place; be(come) firm; be(come) firmly established; be(come) true … establish; set up; confirm; prove”."
+        }
+      ]
+    },
+    {
+      "id": "akk-kinu",
+      "lang": "akk",
+      "form": "kīnu",
+      "translit": "kīnu, kēnu",
+      "gloss": "firm, permanent; true, honest, loyal, righteous, correct",
+      "relation": "cognate",
+      "note": "The verbal adjective of kânu, as כֵּן “honest, right” is of כּוּן.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000011380, kīnu [permanent] AJ",
+          "note": "“correct; fair; faithful; firm; honest; legitimate; loyal; permanent; reliable; righteous; true; trustworthy; truthful”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian kīnum, adj.",
+          "url": "https://en.wiktionary.org/wiki/k%C4%ABnum",
+          "note": "“verbal adjective of kânum: permanent, firm; true, reliable, just; honest, decent, loyal; correct”."
+        }
+      ]
+    },
+    {
+      "id": "akk-kittu",
+      "lang": "akk",
+      "form": "kittu",
+      "translit": "kittu, kettu",
+      "gloss": "truth, justice, loyalty; (adverbially) indeed, really, truly",
+      "relation": "cognate",
+      "note": "The abstract noun of kânu (from *kint-), used for “truly, indeed”, as אָכֵן and כֵּן affirm that a thing is so.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000001050, kittu [truth] N",
+          "note": "“genuine; indeed; really; righteousness; true; truly; truth; truthfulness”."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000026260, kittu [steadiness] N",
+          "note": "“indeed; justice; loyalty; reliability; stability; steadiness; truth”."
+        }
+      ]
+    },
+    {
+      "id": "akk-kena",
+      "lang": "akk",
+      "form": "kēna",
+      "translit": "kēna",
+      "gloss": "yes",
+      "relation": "cognate",
+      "note": "An adverb of kēnu “true”: Akkadian’s “yes” is “truly”, the path this entry takes for כֵּן. Cited from Wiktionary only; the CAD (K volume, s.v. kēnu / kīnu) is still to be checked.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian kēna, adv.",
+          "url": "https://en.wiktionary.org/wiki/k%C4%93na",
+          "note": "“yes”; “Cognate with Biblical Hebrew כֵּן (so, thus; yes).”"
+        }
+      ]
+    },
+    {
+      "id": "akk-akanna",
+      "lang": "akk",
+      "form": "akanna",
+      "translit": "akanna, kannâ",
+      "gloss": "so, thus; here, now",
+      "relation": "possible",
+      "note": "Assyrian “thus” and “here”, built on a deictic k(a)-; with Syriac hākannā it is the evidence for deriving כֵּן from a pointing word rather than from כּוּן.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tcma x000001120, akanna [so, thus] AV"
+        },
+        {
+          "source": "oracc",
+          "locator": "tsae x000041600, akanna [here] AV",
+          "note": "“here; hither; now; there; where”."
+        }
+      ]
+    },
+    {
+      "id": "phn-kn-be",
+      "lang": "phn",
+      "form": "𐤊𐤍",
+      "translit": "kn",
+      "gloss": "be, exist; endure, last; reside; (niphal) become established, firm",
+      "relation": "cognate",
+      "note": "Phoenician’s ordinary verb “be”; it also means “endure” (“the name of Azatiwada shall endure forever”) and, in the niphal, “become established”, as Hebrew נָכוֹן.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 231–233, K-N I",
+          "note": "“v. qal 1. BE … 2. EXIST … 5. ENDURE, LAST, KAI 26 A III 12–IV 3 … v. niphʿal BECOME ESTABLISHED, FIRM, KAI 76 B 3/4”."
+        }
+      ]
+    },
+    {
+      "id": "phn-kn-honest",
+      "lang": "phn",
+      "form": "𐤊𐤍",
+      "translit": "kn",
+      "gloss": "honest(ly), truthful(ly)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 234, KN III",
+          "note": "“[Heb. ken, truthful] adj./adv. HONEST(LY), TRUTHFUL(LY), KAI 165.3/4 (NPu) kl bn ʾdm kn nḥr, ‘He treated every person honestly’”."
+        }
+      ]
+    },
+    {
+      "id": "phn-kn-thus",
+      "lang": "phn",
+      "form": "𐤊𐤍",
+      "translit": "kn",
+      "gloss": "so, thus",
+      "relation": "cognate",
+      "note": "The same particle as Hebrew כֵּן; Krahmalkov lists it apart from kn “honest”, so it does not by itself decide the derivation.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 234, KN IV",
+          "note": "“[Heb. ken] adv. 1. SO, THUS, Byb. 13.1 (Ph) wkn hn ʾnk škb bʾrn zn, ‘And so here I lie in this coffin.’ See also ʿL KN, for this reason.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-kn-be",
+      "lang": "uga",
+      "form": "𐎋𐎐",
+      "translit": "k-w-n, ykn",
+      "gloss": "be",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, glossary /k-w-n/",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“ykn ‘to be’ (Phoen. kn, chon, ykn; Old-Canaan. ku-na imper. EA 147:36; Arab. kāna, yakūnu; cf. H. k-w-n Ni. ‘to be firm’, cf. Akkad. kânu ‘to stay’)”."
+        }
+      ]
+    },
+    {
+      "id": "uga-kn-so",
+      "lang": "uga",
+      "form": "𐎋𐎐",
+      "translit": "kn",
+      "gloss": "so, thus",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, glossary kn; KTU 1.12 II 53",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“kn /kin-/(?) 1.12:II:53 = 88.4 ‘so’ (H. ken)”; the text: kn npl bʿl, “thus Baal fell”."
+        }
+      ]
+    },
+    {
+      "id": "ar-kana",
+      "lang": "ar",
+      "form": "كَانَ",
+      "translit": "kāna",
+      "gloss": "be, exist; (V) come into being",
+      "relation": "cognate",
+      "note": "Arabic, like Phoenician and Ugaritic, has the root as the verb “be”; Hebrew’s “stand firm, be established” is the narrower sense.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3004, root كون, كَانَ (n43163); تَكَوَّنَ (n43164)",
+          "note": "“He or it was”; form V “He, or it, received, or took, his, or its, being, or existence; came into existence”."
+        }
+      ]
+    },
+    {
+      "id": "ar-makana",
+      "lang": "ar",
+      "form": "مَكَانَةٌ",
+      "translit": "makāna",
+      "gloss": "place of being; standing, state",
+      "relation": "cognate",
+      "note": "A noun of place from kwn, as מָכוֹן is.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3004, root كون, مَكَانَةٌ (n43168)",
+          "note": "“A particular place of being or existence … State, or condition”."
+        }
+      ]
+    },
+    {
+      "id": "syc-hakanna",
+      "lang": "syc",
+      "form": "ܗܵܟܲܢܵܐ",
+      "translit": "hākannā",
+      "gloss": "thus",
+      "relation": "possible",
+      "note": "The Peshitta’s “thus” (Mat 1:18, “the birth of Jesus the Messiah was thus”). SEDRA files it under its own root hkn, apart from kēʾnā “just” under kwn; its doubled n, like Assyrian akanna, points to a deictic base.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 793, HCNA (root 504 HCN), thus"
+        }
+      ]
+    },
+    {
+      "id": "akk-kamanu",
+      "lang": "akk",
+      "form": "kamānu",
+      "translit": "kamānu",
+      "gloss": "a loaf or sweet cake, honey cake",
+      "relation": "loan",
+      "note": "The likely source of כַּוָּן, borrowed into Hebrew with the cult of the queen of heaven.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000045350, kamānu [(a loaf or cake)] N",
+          "note": "“(a loaf or cake); (a sweetened cake); honey cake”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "word-of-god-stands",
+      "statement": "Six times in Gen 1 God speaks and “it was so” (וַיְהִי־כֵן): each thing came to be as he said, on the day he said it (Gen 1:7, 9, 11, 15, 24, 30). The psalm says the same: “he spoke, and it was; he commanded, and it stood” (Psa 33:9). Yahweh swears, “As I have purposed, so (כֵּן) it shall be; as I have planned, it shall stand” (Isa 14:24), and “so shall my word be that goes out of my mouth: it shall not return to me empty” (Isa 55:10–11); and those who had despised the prophets confessed, “as Yahweh purposed to do to us, so he has done” (Zec 1:6). From the verses: what God says is כֵּן, firm, and comes to pass as he says it; creation itself is the first proof of this, and his promises rest on the same ground.",
+      "evidence": [
+        {
+          "ref": "Gen.1.7"
+        },
+        {
+          "ref": "Gen.1.9"
+        },
+        {
+          "ref": "Gen.1.11"
+        },
+        {
+          "ref": "Gen.1.15"
+        },
+        {
+          "ref": "Gen.1.24"
+        },
+        {
+          "ref": "Gen.1.30"
+        },
+        {
+          "ref": "Psa.33.9"
+        },
+        {
+          "ref": "Isa.14.24"
+        },
+        {
+          "ref": "Isa.55.10",
+          "to": "Isa.55.11"
+        },
+        {
+          "ref": "Zec.1.6"
+        }
+      ]
+    },
+    {
+      "topic": "throne-of-david",
+      "statement": "Yahweh promised David: “I will raise up your seed after you … and I will establish (הֲכִינֹתִי) his kingdom … I will establish (כֹנַנְתִּי) the throne of his kingdom forever … your throne shall be established (נָכוֹן) forever” (2Sa 7:12–16; 1Ch 17:11–14), and swore, “your seed I will establish forever” (Psa 89:5). Isaiah names the child whose government has no end, “on the throne of David and over his kingdom, to establish it … from now and forever” (Isa 9:5–6), and a throne “established in steadfast love” with one sitting on it in truth “in the tent of David” (Isa 16:5). Gabriel tells Mary that the Lord God will give her son “the throne of his father David, and he shall reign over the house of Jacob forever” (Luk 1:32–33), and Hebrews applies the promise’s next words, “I will be to him a father”, to Jesus (Heb 1:5; 2Sa 7:14). From the verses: the throne God establishes forever is David’s own throne over Israel, given to Jesus as David’s seed; and in the last days the mountain of Yahweh’s house will be established at the head of the mountains, with the nations streaming to it (Isa 2:2; Mic 4:1).",
+      "evidence": [
+        {
+          "ref": "2Sa.7.12",
+          "to": "2Sa.7.16"
+        },
+        {
+          "ref": "1Ch.17.11",
+          "to": "1Ch.17.14"
+        },
+        {
+          "ref": "Psa.89.5"
+        },
+        {
+          "ref": "Isa.9.5",
+          "to": "Isa.9.6"
+        },
+        {
+          "ref": "Isa.16.5"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        },
+        {
+          "ref": "Heb.1.5"
+        },
+        {
+          "ref": "Isa.2.2"
+        },
+        {
+          "ref": "Mic.4.1"
+        }
+      ]
+    },
+    {
+      "topic": "earth-established",
+      "statement": "Yahweh “established” the earth: “he did not create it a waste, he formed it to be inhabited” (Isa 45:18); “you established the earth, and it stands” (Psa 119:90); he “founded the earth on its foundations (מְכוֹנֶיהָ), that it should not be moved forever and ever” (Psa 104:5). Twice the psalms join this to his reign: “Yahweh reigns … the world is established, it shall not be moved; he will judge the peoples with equity” (Psa 93:1; 96:10). From the verses: the earth was made firm to be lived in, and it abides as the place where Yahweh’s rule and judgment are to be seen.",
+      "evidence": [
+        {
+          "ref": "Isa.45.18"
+        },
+        {
+          "ref": "Psa.119.90"
+        },
+        {
+          "ref": "Psa.104.5"
+        },
+        {
+          "ref": "Psa.93.1"
+        },
+        {
+          "ref": "Psa.96.10"
+        }
+      ]
+    },
+    {
+      "topic": "steadfast-heart",
+      "statement": "Samuel told Israel to put away foreign gods and “set your hearts firm (הָכִינוּ) toward Yahweh and serve him only” (1Sa 7:3); Ezra “set his heart to seek the law of Yahweh, and to do it, and to teach” (Ezr 7:10). The wilderness generation is the warning: “a generation that did not set its heart firm, whose spirit was not faithful with God”, “their heart was not steadfast with him, and they were not faithful in his covenant” (Psa 78:8, 37). David asks God to “renew a steadfast spirit within me” (Psa 51:12), and the righteous man “is not afraid of bad news; his heart is steadfast, trusting in Yahweh” (Psa 112:7). From the verses: the heart that pleases God is one fixed on him, which is the same thing as being faithful; and since the psalmist asks God to make it so, it is God’s work in a man as well as the man’s own choice (Psa 10:17).",
+      "evidence": [
+        {
+          "ref": "1Sa.7.3"
+        },
+        {
+          "ref": "Ezr.7.10"
+        },
+        {
+          "ref": "Psa.78.8"
+        },
+        {
+          "ref": "Psa.78.37"
+        },
+        {
+          "ref": "Psa.51.12"
+        },
+        {
+          "ref": "Psa.112.7"
+        },
+        {
+          "ref": "Psa.10.17"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Num 10:31 (כִּי עַל־כֵּן). The task asked whether the particle כֵּן has a root. Keyed under כונ because (1) Hebrew has an adjective כֵּן “right, honest”, inflected כֵּנִים (Gen 42), from this root, and the particle’s uses “rightly” (Num 27:7; Exo 10:29), “yes” (Jos 2:4) and “so be it” after אָמֵן (1Ki 1:36; Jer 28:6) shade into it; (2) the root repeatedly pairs with אמן (Deu 13:15; 2Sa 7:16; Psa 78:37), and אמן also yields an affirming particle (אָמֵן, אָמְנָם); (3) Isa 14:24 sets כֵּן beside תָקוּם “it shall stand”; (4) Akkadian kēna “yes” and kittu “indeed, truth” come from kânu, and Phoenician kn is both “honest” and “thus”. Against: Krahmalkov and Segert list kn “thus” apart from kn “be/honest”; Hebrew pairs כֵּן with comparative כְּ and has the deictic כֹּה “thus”; Assyrian akanna and Syriac hākannā “thus” have a doubled n that points to a deictic *kan-; Syriac kēn (SEDRA 1545) is “afterwards”, a different use. A reviewer may prefer to give the particle its own entry keyed כנ with a deictic origin; the bdb keys k.by.aa and xk.ad.ac would move with it. BDB keys: the adverb (k.by.aa) and the adjective (k.aw.ab) share every token spelled כן in the database, so their use counts are both inflated (776 each, mostly the particle); Gen 42 כֵּנִים and the predicate uses in Num 27:7; 36:5; Exo 10:29; 2Ki 7:9; Jer 8:6; Isa 16:6; Jer 48:30; Pro 15:7 are filed under the adjective. Biblical Aramaic כֵּן (xk.ad.ac) is likewise counted on every כן. The verb key k.aw.aa counts נָכוֹן also under the name key k.aw.aj (Nacon) and יָכִין under k.aw.ae (Jachin). Left out: כּוֹס “cup” and “owl” (k.aw.am, k.aw.an), which the database files under כונ but whose root is כוס (Akkadian kāsu, Ugaritic ks); כֵּן “base, place, office” (k.ca.ab) and כַּנָּה (k.cb.ac), with doubled n (כַּנּוֹ, Gen 40:13), under כננ, which may be the geminate twin of this root (a reviewer may want them here); כֵּן “gnat” (k.cb.ab); מַתְכֹּנֶת “quota” (Exo 5:8), root תכנ; BDB’s כַּאֲשֶׁר (k.ab.ab), whose tokens are already counted under אֲשֶׁר’s key a.gk.aa in ashar, which has the sense “as, just as; when (כַּאֲשֶׁר)”, so no change was made there; the zero-token cross-references k.by.ab, k.bz.af, m.bw.aq, w.ao.ab, l.bp.ag. Names not written (task: no names for this root): Jachin (k.aw.ae, a son of Simeon, a priest, and the temple pillar), Jachinite (k.aw.af), Jeconiah (k.aw.ag), Conaniah (k.aw.ad, k.ca.ae), Kenani/Kenaniah (k.ca.ac–ad, root כננ); places Cun (k.aw.ac) and the threshing floor of Nacon (k.aw.aj) cannot be name entries. Peshitta: SEDRA root 882 (kwn) lexemes 1487 ܟܐܢܐ (Mat 1:19; 5:45; Eph 6:1; Heb 10:38; 2Pe 2:8 and others) and 1488 ܟܐܢܐܝܬ (Luk 23:41; 1Th 2:10), located through the BFBS word list; Payne Smith not consulted. Not consulted: CAD K for kēna; Ge’ez konä “be” (Dillmann, Leslau); DULAT for Ugaritic kn; CAL for Jewish Aramaic כֵּן and כְּנֵמָא. Krahmalkov read from the local PDF text layer only. Open questions: (1) the root decision above; (2) whether Jos 3:17 and 4:3 הָכֵן “firm” is the hiphil infinitive used as an adverb, as taken here; (3) Psa 127:2 כֵּן and Pro 11:19 כֵּן (“so” or “right”) left uncited."
+}
