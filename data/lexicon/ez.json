@@ -1,0 +1,740 @@
+{
+  "id": "ez",
+  "root": "ענז",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "animals",
+    "flock",
+    "sacrifice",
+    "sin-offering",
+    "feasts",
+    "tabernacle"
+  ],
+  "gloss": "she-goat; goats; goats' hair",
+  "summary": "עֵז is the goat: in the singular the she-goat, set against the he-goat and beside the ewe (Gen 32:15; 31:38), and in the plural goats as a kind of the flock beside the sheep (Exo 12:5; Lev 1:10). Most of its uses name the animals of the altar: “a buck of the goats for a sin offering” at every new moon and feast (Lev 23:19; Num 28:15), on the day of coverings (Lev 16:5) and at the tabernacle's dedication (Num 7). The plural alone is also goats' hair, spun and woven for the tent over the tabernacle (Exo 26:7; 35:26). Arabic ʿanz, Akkadian enzu, Ugaritic and Phoenician ʿz all mean goat; the n kept in Arabic and Akkadian shows the root is ענז, its n taken into the doubled z of עִזִּים, and not עזז “be strong”.",
+  "words": [
+    {
+      "lemma": "עֵז",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "she-goat; goat; (pl.) goats, goats' hair",
+      "bdb": [
+        "p.dx.ab"
+      ],
+      "cognate_ids": [
+        "ar-anz",
+        "akk-enzu",
+        "uga-iz",
+        "phn-iz",
+        "arc-iz"
+      ],
+      "summary": "The singular is the female, with feminine agreement (Gen 15:9; Num 15:27); the plural עִזִּים, mostly in construct after another noun (שְׂעִיר, גְּדִי, צְפִיר), names the kind, so that “a buck of the goats” is a male. Most of its 74 uses are in the law of offerings and the history of sacrifice.",
+      "senses": [
+        {
+          "id": "she-goat",
+          "gloss": "she-goat",
+          "definition": "The female goat of the flock, counted apart from the he-goats and beside the ewes; the singular and the unqualified plural of the herd.",
+          "evidence": [
+            {
+              "ref": "Gen.32.15",
+              "role": "defining",
+              "note": "Jacob's gift to Esau: “עִזִּים two hundred and he-goats (תְיָשִׁים) twenty, ewes (רְחֵלִים) two hundred and rams twenty”: she-goats against he-goats as ewes against rams."
+            },
+            {
+              "ref": "Gen.31.38",
+              "role": "defining",
+              "note": "“Your ewes and your עִזִּים have not miscarried”: the females that bear."
+            },
+            {
+              "ref": "Gen.15.9",
+              "role": "defining",
+              "note": "“A heifer three years old, and an עֵז three years old (מְשֻׁלֶּשֶׁת, feminine), and a ram three years old.”"
+            },
+            {
+              "ref": "Num.15.27",
+              "role": "defining",
+              "note": "One who sins unwittingly brings “an עֵז, a daughter of her year, for a sin offering”."
+            },
+            {
+              "ref": "Gen.30.35",
+              "note": "Laban removes the streaked and spotted he-goats (הַתְּיָשִׁים) and all the speckled and spotted עִזִּים (feminine adjectives)."
+            },
+            {
+              "ref": "Gen.30.32",
+              "to": "Gen.30.33",
+              "note": "The spotted and speckled “among the goats” are to be Jacob's wages."
+            },
+            {
+              "ref": "Pro.27.27",
+              "note": "“Goats' milk enough for your food”: the she-goats of the household."
+            },
+            {
+              "ref": "1Sa.25.2",
+              "note": "Nabal had three thousand sheep and a thousand עִזִּים."
+            },
+            {
+              "ref": "Sng.4.1",
+              "note": "“Your hair is like a flock of goats (עֵדֶר הָעִזִּים) that flow down from mount Gilead”; again Sng 6:5."
+            },
+            {
+              "ref": "Sng.6.5"
+            },
+            {
+              "ref": "1Ki.20.27",
+              "note": "Israel camped before Aram “like two little flocks of goats”."
+            }
+          ]
+        },
+        {
+          "id": "goats-kind",
+          "gloss": "goat, goats (the kind)",
+          "definition": "Goats as one of the kinds of the flock and of clean animals, beside cattle and sheep, of either sex: the plural after a noun naming the animal (“a kid of the goats”, “a buck of the goats”), and the singular in lists of ox, sheep and goat.",
+          "evidence": [
+            {
+              "ref": "Exo.12.5",
+              "role": "defining",
+              "note": "The Passover שֶׂה, a male of the first year: “from the sheep or from the goats you shall take it.”"
+            },
+            {
+              "ref": "Lev.1.10",
+              "role": "defining",
+              "note": "An offering “from the flock, from the sheep or from the goats”, a male without blemish."
+            },
+            {
+              "ref": "Deu.14.4",
+              "role": "defining",
+              "note": "The clean animals: the ox, “the שֵׂה of the sheep and the שֵׂה of the goats”."
+            },
+            {
+              "ref": "Lev.7.23",
+              "role": "defining",
+              "note": "“No fat of ox or sheep or עֵז shall you eat”: the three kinds of the altar."
+            },
+            {
+              "ref": "Lev.17.3"
+            },
+            {
+              "ref": "Lev.22.27",
+              "note": "“An ox or a sheep or an עֵז, when it is born (יִוָּלֵד, masculine)”: the kind, of either sex."
+            },
+            {
+              "ref": "Num.18.17",
+              "note": "“The firstborn of an עֵז you shall not redeem; they are holy.”"
+            },
+            {
+              "ref": "Lev.22.19"
+            },
+            {
+              "ref": "Num.15.11"
+            },
+            {
+              "ref": "2Ch.35.7",
+              "note": "Josiah gives lambs and בְּנֵי עִזִּים, young goats, for the Passover offerings."
+            }
+          ],
+          "senses": [
+            {
+              "id": "kid-of-goats",
+              "gloss": "kid of the goats",
+              "definition": "גְּדִי עִזִּים, a young goat taken from the flock: food for a guest or a gift, and in Judges an offering to Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Gen.27.9",
+                  "role": "defining",
+                  "note": "“Two good kids of the goats” made into the savoury food Isaac loved."
+                },
+                {
+                  "ref": "Gen.27.16",
+                  "note": "Their skins put on Jacob's hands and neck."
+                },
+                {
+                  "ref": "Gen.38.17",
+                  "note": "Judah promises Tamar “a kid of the goats from the flock”."
+                },
+                {
+                  "ref": "Gen.38.20"
+                },
+                {
+                  "ref": "Jdg.6.19",
+                  "note": "Gideon prepares a kid of the goats for the messenger of Yahweh."
+                },
+                {
+                  "ref": "Jdg.13.15",
+                  "to": "Jdg.13.19",
+                  "note": "Manoah's kid of the goats, offered on the rock to Yahweh."
+                },
+                {
+                  "ref": "Jdg.15.1"
+                },
+                {
+                  "ref": "1Sa.16.20"
+                }
+              ]
+            },
+            {
+              "id": "goat-sin-offering",
+              "gloss": "buck (or female) of the goats for a sin offering",
+              "definition": "שְׂעִיר עִזִּים, a male goat, and שְׂעִירַת עִזִּים, a female, brought as a sin offering: the male for a ruler and for the congregation at every new moon and feast, the female for one of the people.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.19",
+                  "role": "defining",
+                  "note": "At the feast of weeks: “you shall offer one שְׂעִיר עִזִּים for a sin offering, and two lambs of the first year for a sacrifice of peace offerings.”"
+                },
+                {
+                  "ref": "Lev.4.23",
+                  "role": "defining",
+                  "note": "A ruler who sins brings “a שְׂעִיר עִזִּים, a male without blemish”."
+                },
+                {
+                  "ref": "Lev.4.28",
+                  "role": "defining",
+                  "note": "One of the people brings “a שְׂעִירַת עִזִּים, without blemish, a female”."
+                },
+                {
+                  "ref": "Lev.5.6",
+                  "note": "“A female from the flock, a lamb or a שְׂעִירַת עִזִּים, for a sin offering.”"
+                },
+                {
+                  "ref": "Lev.9.3",
+                  "note": "On the eighth day of the priests' consecration Israel takes a buck of the goats for a sin offering."
+                },
+                {
+                  "ref": "Lev.16.5",
+                  "role": "defining",
+                  "note": "On the day of coverings, “two bucks of the goats for a sin offering”, one for Yahweh and one for עֲזָאזֵל (Lev 16:8)."
+                },
+                {
+                  "ref": "Num.7.16",
+                  "note": "Each prince's dedication gift has “one buck of the goats for a sin offering”, twelve days over (Num 7:16–82), twelve in all (Num 7:87)."
+                },
+                {
+                  "ref": "Num.7.87"
+                },
+                {
+                  "ref": "Num.15.24",
+                  "note": "For the congregation's unwitting sin."
+                },
+                {
+                  "ref": "Num.28.15",
+                  "role": "defining",
+                  "note": "At each new moon: “one buck of the goats for a sin offering to Yahweh”, besides the continual burnt offering."
+                },
+                {
+                  "ref": "Num.28.30",
+                  "note": "At the day of firstfruits, “to make a covering for you”."
+                },
+                {
+                  "ref": "Num.29.5"
+                },
+                {
+                  "ref": "Num.29.11",
+                  "note": "On the day of coverings, besides the sin offering of coverings."
+                },
+                {
+                  "ref": "Num.29.16",
+                  "note": "Each day of the feast of booths (Num 29:16–38)."
+                },
+                {
+                  "ref": "Num.29.19"
+                },
+                {
+                  "ref": "Num.29.25"
+                },
+                {
+                  "ref": "Ezk.43.22",
+                  "note": "In Ezekiel's house, a buck of the goats without blemish to cleanse the altar."
+                },
+                {
+                  "ref": "Ezk.45.23"
+                },
+                {
+                  "ref": "2Ch.29.21",
+                  "note": "Hezekiah's seven bucks of the goats “for a sin offering for the kingdom, the sanctuary and Judah”."
+                },
+                {
+                  "ref": "Gen.37.31",
+                  "note": "Outside the law: Joseph's brothers kill a שְׂעִיר עִזִּים and dip his coat in its blood."
+                }
+              ]
+            },
+            {
+              "id": "he-goat-vision",
+              "gloss": "he-goat (in Daniel's vision)",
+              "definition": "צְפִיר הָעִזִּים, a he-goat of the goats, the beast of Daniel's vision, which the vision itself names the king of Javan.",
+              "evidence": [
+                {
+                  "ref": "Dan.8.5",
+                  "role": "defining",
+                  "note": "“A he-goat of the goats came from the west over the face of all the earth and did not touch the ground, with a conspicuous horn between its eyes.”"
+                },
+                {
+                  "ref": "Dan.8.8",
+                  "note": "It grew very great; the great horn was broken and four came up in its place."
+                },
+                {
+                  "ref": "Dan.8.21",
+                  "role": "defining",
+                  "note": "“The shaggy he-goat is the king of Javan, and the great horn between its eyes is the first king.” (Here צָפִיר and שָׂעִיר stand without עִזִּים.)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "goats-hair",
+          "gloss": "goats' hair",
+          "definition": "The plural alone of the material: goats' hair spun by the women and woven into the eleven curtains of the tent over the tabernacle, and into other work.",
+          "evidence": [
+            {
+              "ref": "Exo.26.7",
+              "role": "defining",
+              "note": "“You shall make curtains of עִזִּים for a tent over the tabernacle; eleven curtains.”"
+            },
+            {
+              "ref": "Exo.35.26",
+              "role": "defining",
+              "note": "“All the women whose heart stirred them up in wisdom spun the עִזִּים”: a thing spun is hair."
+            },
+            {
+              "ref": "Exo.25.4",
+              "note": "Among the offerings for the sanctuary, after blue, purple, scarlet and fine linen."
+            },
+            {
+              "ref": "Exo.35.6"
+            },
+            {
+              "ref": "Exo.35.23"
+            },
+            {
+              "ref": "Exo.36.14"
+            },
+            {
+              "ref": "Num.31.20",
+              "role": "defining",
+              "note": "“Every garment, every article of skin, all work of עִזִּים and every article of wood you shall purify.”"
+            },
+            {
+              "ref": "1Sa.19.13",
+              "note": "Michal puts “the כְּבִיר of goats' hair” at the head of the bed, beside the teraphim; again 1Sa 19:16."
+            },
+            {
+              "ref": "1Sa.19.16"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αἴγειος",
+          "gloss": "of goats (adjective of αἴξ, goat)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עֵז → αἰγῶν/αἶγα (forms of αἴξ, which MACULA's lemma column files as αἴγειος and ἔριφος), ×50; Lev.23.19, עִזִּים → αἰγῶν"
+            },
+            {
+              "ref": "Heb.11.37",
+              "note": "The faithful “went about in sheepskins and in goatskins (αἰγείοις δέρμασιν)”; the Peshitta has ܥܙܐ, the Syriac word of this root."
+            }
+          ]
+        },
+        {
+          "lemma": "ἔριφος",
+          "gloss": "kid, young goat",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.27.9, גְּדָיֵי עִזִּים → ἐρίφους; Exo.12.5 and Lev.1.10, הָעִזִּים → ἐρίφων"
+            },
+            {
+              "ref": "Mat.25.32",
+              "note": "The shepherd separates the sheep from the ἔριφοι."
+            },
+            {
+              "ref": "Luk.15.29",
+              "note": "“You never gave me a kid (ἔριφον), that I might make merry with my friends”: the kid of the goats of Gen 27:9 and Jdg 6:19."
+            }
+          ]
+        },
+        {
+          "lemma": "τρίχινος",
+          "gloss": "of hair",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.26.7, יְרִיעֹת עִזִּים → (δέρρεις) τριχίνας"
+            },
+            {
+              "ref": "Rev.6.12",
+              "note": "“The sun became black as sackcloth of hair (σάκκος τρίχινος).”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כֶּשֶׂב",
+            "note": "Sheep beside goats: the two kinds of the flock (צֹאן) from which a lamb or offering may be taken.",
+            "evidence": [
+              {
+                "ref": "Exo.12.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.1.10"
+              },
+              {
+                "ref": "Lev.7.23"
+              },
+              {
+                "ref": "Deu.14.4"
+              },
+              {
+                "ref": "Gen.30.32"
+              }
+            ]
+          },
+          {
+            "lemma": "רָחֵל",
+            "note": "Ewes beside she-goats, the breeding females of the flock.",
+            "evidence": [
+              {
+                "ref": "Gen.31.38",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.32.15"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "תַּיִשׁ",
+            "note": "The he-goat, set against the she-goats as rams against ewes.",
+            "evidence": [
+              {
+                "ref": "Gen.32.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.30.35"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שְׂעִיר עִזִּים",
+            "gloss": "a buck of the goats, a male goat (mostly for a sin offering)",
+            "evidence": [
+              {
+                "ref": "Lev.23.19"
+              },
+              {
+                "ref": "Lev.4.23"
+              },
+              {
+                "ref": "Lev.16.5"
+              },
+              {
+                "ref": "Num.28.15"
+              },
+              {
+                "ref": "Gen.37.31"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׂעִירַת עִזִּים",
+            "gloss": "a female goat",
+            "evidence": [
+              {
+                "ref": "Lev.4.28"
+              },
+              {
+                "ref": "Lev.5.6"
+              }
+            ]
+          },
+          {
+            "phrase": "גְּדִי עִזִּים",
+            "gloss": "a kid of the goats",
+            "evidence": [
+              {
+                "ref": "Gen.38.17"
+              },
+              {
+                "ref": "Jdg.6.19"
+              },
+              {
+                "ref": "1Sa.16.20"
+              }
+            ]
+          },
+          {
+            "phrase": "צְפִיר הָעִזִּים",
+            "gloss": "a he-goat",
+            "evidence": [
+              {
+                "ref": "Dan.8.5"
+              },
+              {
+                "ref": "2Ch.29.21"
+              }
+            ]
+          },
+          {
+            "phrase": "יְרִיעֹת עִזִּים",
+            "gloss": "curtains of goats' hair",
+            "evidence": [
+              {
+                "ref": "Exo.26.7"
+              },
+              {
+                "ref": "Exo.36.14"
+              }
+            ]
+          },
+          {
+            "phrase": "כְּבִיר הָעִזִּים",
+            "gloss": "the netting (or quilt) of goats' hair",
+            "evidence": [
+              {
+                "ref": "1Sa.19.13"
+              },
+              {
+                "ref": "1Sa.19.16"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵדֶר הָעִזִּים",
+            "gloss": "a flock of goats",
+            "evidence": [
+              {
+                "ref": "Sng.4.1"
+              },
+              {
+                "ref": "Sng.6.5"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲלֵב עִזִּים",
+            "gloss": "goats' milk",
+            "evidence": [
+              {
+                "ref": "Pro.27.27"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֵז",
+      "lang": "arc",
+      "root": "עז",
+      "bdb": [
+        "xp.ak.ab"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "goat",
+      "cognate_ids": [
+        "arc-iz"
+      ],
+      "summary": "Biblical Aramaic, once, in the plural עִזִּין, in the same phrase as Hebrew צְפִירֵי עִזִּים.",
+      "senses": [
+        {
+          "gloss": "goats (he-goats for a sin offering)",
+          "definition": "In צְפִירֵי עִזִּין, he-goats of the goats, offered at the dedication of the rebuilt house as a sin offering for all Israel.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.17",
+              "role": "defining",
+              "note": "“And for a sin offering for all Israel, twelve he-goats of the goats (צְפִירֵי עִזִּין), by the number of the tribes of Israel”: as Hebrew צְפִירֵי עִזִּים in 2Ch 29:21."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵזָא",
+      "lang": "syc",
+      "root": "עזא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "goat",
+      "cognate_ids": [
+        "arc-iz"
+      ],
+      "summary": "The Peshitta's word for goat (SEDRA lexeme 2294), used once in its New Testament, for the goatskins of Heb 11:37.",
+      "senses": [
+        {
+          "gloss": "goat (its skin)",
+          "definition": "The goat whose skins the faithful wore when driven out and destitute.",
+          "evidence": [
+            {
+              "ref": "Heb.11.37",
+              "role": "defining",
+              "note": "“They went about in skins of sheep and of goats (ܕܥܙܐ)”, for Greek αἰγείοις δέρμασιν."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-anz",
+      "lang": "ar",
+      "form": "عَنْزٌ",
+      "translit": "ʿanz",
+      "gloss": "she-goat; the female of the mountain goat and of the gazelle",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "ז": "z"
+      },
+      "note": "Lane's sources give “a she-goat; the female of the common goat … and the female of the mountain-goat; and of the gazelle”, pl. aʿnuz, ʿunūz: female, as the Hebrew singular is. Arabic keeps the n that Hebrew assimilates into the doubled z of עִזִּים, and shows ʿ (ع), not ġ, behind ע. The same Arabic root has a verb ʿanaza “turn away, retire aside” (p. 2172, n30744); no link to the goat is shown there.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2173, root عنز, عَنْزٌ (n30747)"
+        }
+      ]
+    },
+    {
+      "id": "akk-enzu",
+      "lang": "akk",
+      "form": "enzu",
+      "translit": "enzu",
+      "gloss": "she-goat; goat",
+      "relation": "cognate",
+      "note": "Oracc glossaries give enzu “female goat; goat; she-goat”, pl. enzātu, 252 instances from Middle Assyrian to Seleucid times. It keeps the n, as Arabic does. Akkadian has lost ʿ, so it cannot show which sound stands behind ע.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008950, enzu [goat] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000008950.html"
+        }
+      ]
+    },
+    {
+      "id": "uga-iz",
+      "lang": "uga",
+      "form": "𐎓𐎇",
+      "translit": "ʿz /ʿizz-/",
+      "gloss": "goat",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "ז": "z"
+      },
+      "note": "Segert's glossary lists ʿz /ʿizz-/ “goat” (KTU 1.127:30, 1.80:4), with the doubled z of Hebrew עִזִּים; Ugaritic writes ʿ, not ġ, as Arabic does.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 195, §93 Glossary, ʿz /ʿizz-/ “goat”"
+        }
+      ]
+    },
+    {
+      "id": "phn-iz",
+      "lang": "phn",
+      "form": "עז",
+      "translit": "ʿz",
+      "gloss": "goat",
+      "relation": "cognate",
+      "note": "In the Punic sacrificial tariffs, as in Leviticus, beside the ram among the animals offered: “for an entire ram or goat (ʾm bʿz), whether cut in pieces or entirely intact, the priests shall receive…” (KAI 69.7), and “the skin of the goats (hʿzm) shall belong to the priests” (KAI 74.4).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 362, ʿZ III, n.m. GOAT (KAI 69.7)"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 388, ʿRT, KAI 74.4 (hʿzm)"
+        }
+      ]
+    },
+    {
+      "id": "arc-iz",
+      "lang": "arc",
+      "form": "עִיז, עִזָּא",
+      "translit": "ʿīz, ʿizzā",
+      "gloss": "goat",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, “= h. עֵז, goat”, pl. עִיזִּין, in the Targums for Hebrew עֵז (Targ. O. Lev 22:27; Gen 15:9; 27:9). Aramaic ע does not show ʿ or ġ.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עִיז (עִיזָּא, עִזָּא)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "sin-offering",
+      "statement": "At every new moon and every feast, on the day of coverings and at the dedication of altar and house, the law set “one buck of the goats for a sin offering” beside the burnt offerings (Lev 23:19; Num 28:15, 30; 29:5, 11; Num 7:16, 87; Ezr 6:17); the people had to bring them again and again, and on the day of coverings two goats were taken, one slain for a sin offering and one bearing the people's iniquities away into the wilderness (Lev 16:5, 15, 21–22). Hebrews reads these offerings: Christ entered the holy place “not by the blood of goats and calves, but by his own blood, once for all, having obtained eternal redemption” (Heb 9:12), for “it is not possible that the blood of bulls and goats should take away sins” (Heb 10:4), and the repeating of them was “a remembrance of sins every year” (Heb 10:3). From the verses: the goats of the sin offering covered sin only as a shadow, and the shadow pointed to the one offering of Christ, who “bore the sins of many” (Heb 9:28).",
+      "evidence": [
+        {
+          "ref": "Lev.23.19"
+        },
+        {
+          "ref": "Num.28.15"
+        },
+        {
+          "ref": "Num.29.11"
+        },
+        {
+          "ref": "Num.7.87"
+        },
+        {
+          "ref": "Ezr.6.17"
+        },
+        {
+          "ref": "Lev.16.5"
+        },
+        {
+          "ref": "Lev.16.15"
+        },
+        {
+          "ref": "Lev.16.21",
+          "to": "Lev.16.22"
+        },
+        {
+          "ref": "Heb.9.12"
+        },
+        {
+          "ref": "Heb.9.28"
+        },
+        {
+          "ref": "Heb.10.3",
+          "to": "Heb.10.4"
+        }
+      ]
+    },
+    {
+      "topic": "kingdoms-in-prophecy",
+      "statement": "Daniel's vision shows a he-goat of the goats coming from the west over the whole earth without touching the ground, which tramples the two-horned ram; its great horn is broken at the height of its strength and four horns rise in its place (Dan 8:5–8). The vision is interpreted in the chapter itself: the ram is the kings of Media and Persia, “the shaggy he-goat is the king of Javan, and the great horn between its eyes is the first king”, and the four are “four kingdoms that shall stand up out of the nation, but not with his power” (Dan 8:20–22). So the goat is Greece, its first king the one who overran Persia with that speed, Alexander, and the four horns the four kingdoms into which his empire was divided at his death.",
+      "evidence": [
+        {
+          "ref": "Dan.8.5",
+          "to": "Dan.8.8"
+        },
+        {
+          "ref": "Dan.8.20",
+          "to": "Dan.8.22"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Lev 23:19 (and the feasts of Num 28–29). ROOT KEY: the database keys עֵז under ענז (p.dx.ab), as the task gave. עָזַז “be strong” (p.bx.aa–, root עזז) is a different root and is not in this entry: Arabic عَنْز and Akkadian enzu keep an n that עזז lacks (Arabic عَزَّ ʿazza, Ugaritic ʿz /ʿazz-/ “strong”, Segert p. 195, listed apart from ʿz /ʿizz-/ “goat”); the doubled z of עִזִּים is the assimilated n, as in אַף. LEFT OUT: the BDB section p.dx files four other words with ענז that are not of it: עֻנִּי Unni (p.dx.ac, with p.dw.ac) and עֲנָיָה Anaiah (p.dx.ad), personal names of the root ענה (the anah entry lists עֻנִּי as left out to names); עֲנָמִים Anamim (p.dx.ai), a people of Mizraim (Gen 10:13), not a person; עֲנַמֶּלֶךְ Anammelech (p.dx.aj), a god of Sepharvaim (2Ki 17:31), whose first element is Akkadian Anu. Cross-reference keys with no tokens (p.dx.aa, p.bu.ad, xp.ad.ae, xp.ak.aa) are left off. AZAZEL: עֲזָאזֵל (p.bu.ae, filed by the database under עות; Lev 16:8, 10, 26) is not claimed here. One reading takes it as עֵז + אָזַל “the goat that goes away” (which would put it in this entry); another takes it from a root עזל, with Arabic عَزَلَ “remove, set aside” — not yet followed in Lane. Either way the text's own use is the goat sent away into the wilderness bearing the iniquities (Lev 16:10, 21–22), not a being. Reviewer to decide where it belongs. GREEK: MACULA's lemma column files αἰγῶν as αἴγειος and αἶγα as ἔριφος; the Septuagint's word is αἴξ, which the New Testament does not use; its adjective αἴγειος (Heb 11:37) is recorded. Hebrews 9:12–13, 19 and 10:4 have τράγος, which renders עַתּוּד and שָׂעִיר, not עֵז; they are cited in the doctrine only, through Lev 16 and Num 28–29. NOT CONSULTED: CAD E (enzu), Ge'ez (Dillmann, Leslau), Old South Arabian. Krahmalkov page numbers are from the local text extraction (page footers), not checked against the scan; Segert p. 195 from the running header in the text extraction. The Peshitta word ܥܙܐ (SEDRA 2294, root ܥܙܐ, keyed עזא) occurs once in the NT, at Heb 11:37 (BFBS reference 701103715); the Peshitta OT was not searched."
+}
