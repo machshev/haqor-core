@@ -1,0 +1,588 @@
+{
+  "id": "matsah",
+  "root": "מצצ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "food",
+    "feasts",
+    "passover",
+    "offering",
+    "sacrifice"
+  ],
+  "gloss": "suck out, drain; unleavened bread",
+  "summary": "The verb מָצַץ, found once, is to suck or drain out, set beside יָנַק “suck” as Zion’s children draw deep from her fullness (Isa 66:11); Arabic maṣṣa and Aramaic מְצַץ are the same verb. מַצָּה is bread baked without leaven: the quick bread set before a guest (Gen 19:3; Jdg 6:19), the bread Israel ate with the Passover and for seven days after it, because they left Egypt in haste before the dough could rise (Exo 12:39; Deu 16:3), so that the feast that follows the Passover is חַג הַמַּצּוֹת, the Feast of Unleavened Bread (Lev 23:6), and the bread of the grain offerings and the priests’ consecration. How the bread’s name comes from the verb is not clear.",
+  "words": [
+    {
+      "lemma": "מַצָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "unleavened bread; (pl.) unleavened cakes; the Feast of Unleavened Bread",
+      "summary": "Nearly always plural, מַצּוֹת, “unleavened cakes”, set against חָמֵץ, what is leavened. Its tie to the verb “suck, drain” is not understood: no cognate shares the meaning “unleavened bread”, and scripture explains the bread by Israel’s haste (Exo 12:39; Deu 16:3), not by its name.",
+      "bdb": [
+        "m.de.ab",
+        "m.dc.ab"
+      ],
+      "senses": [
+        {
+          "id": "matsah-bread",
+          "gloss": "unleavened bread, quickly baked",
+          "definition": "Bread baked from dough without leaven, made at once for a guest or in need: what is kneaded and baked straight away, without waiting for the dough to rise.",
+          "evidence": [
+            {
+              "ref": "Gen.19.3",
+              "role": "defining",
+              "note": "Lot makes the two messengers a feast and bakes מַצּוֹת, and they eat."
+            },
+            {
+              "ref": "1Sa.28.24",
+              "role": "defining",
+              "note": "The woman of En-dor hurries, kills the calf, takes flour, kneads it and bakes it מַצּוֹת for Saul."
+            },
+            {
+              "ref": "Jdg.6.19",
+              "note": "Gideon prepares a kid and מַצּוֹת from an ephah of flour for the messenger of Yahweh."
+            },
+            {
+              "ref": "Jdg.6.20"
+            },
+            {
+              "ref": "Jdg.6.21",
+              "note": "Fire from the rock consumes the meat and the מַצּוֹת."
+            },
+            {
+              "ref": "Jos.5.11",
+              "note": "On the morrow of the Passover Israel eat of the produce of the land, מַצּוֹת and roasted grain."
+            }
+          ]
+        },
+        {
+          "id": "matsah-passover",
+          "gloss": "the unleavened bread of the Passover and its seven days",
+          "definition": "The bread Israel was commanded to eat with the Passover lamb and for seven days after it, from the evening of the fourteenth of the first month to the twenty-first, with all leaven put out of their houses: the memorial of their going out of Egypt in haste, when the dough had no time to rise.",
+          "evidence": [
+            {
+              "ref": "Exo.12.39",
+              "role": "defining",
+              "note": "They baked the dough they brought out of Egypt into עֻגֹת מַצּוֹת, “for it was not leavened, because they were driven out of Egypt and could not delay”."
+            },
+            {
+              "ref": "Deu.16.3",
+              "role": "defining",
+              "note": "“You shall not eat חָמֵץ with it; seven days you shall eat מַצּוֹת with it, the bread of affliction, for in haste you came out of the land of Egypt.”"
+            },
+            {
+              "ref": "Exo.12.15",
+              "role": "defining",
+              "note": "Seven days מַצּוֹת; leaven (שְׂאֹר) put away, and whoever eats what is leavened is cut off from Israel."
+            },
+            {
+              "ref": "Exo.12.8",
+              "note": "The lamb is eaten roast with מַצּוֹת and bitter herbs."
+            },
+            {
+              "ref": "Exo.12.18",
+              "note": "From the fourteenth day at evening to the twenty-first at evening."
+            },
+            {
+              "ref": "Exo.12.20"
+            },
+            {
+              "ref": "Exo.13.6"
+            },
+            {
+              "ref": "Exo.13.7",
+              "role": "defining",
+              "note": "מַצּוֹת eaten seven days, and no חָמֵץ or שְׂאֹר seen in all Israel’s borders."
+            },
+            {
+              "ref": "Lev.23.6",
+              "note": "“Seven days you shall eat מַצּוֹת.”"
+            },
+            {
+              "ref": "Num.9.11",
+              "note": "The second Passover is eaten likewise, with מַצּוֹת and bitter herbs."
+            },
+            {
+              "ref": "Num.28.17"
+            },
+            {
+              "ref": "Deu.16.8"
+            },
+            {
+              "ref": "Ezk.45.21",
+              "note": "In Ezekiel’s temple the Passover on the fourteenth of the first month, and seven days of מַצּוֹת."
+            },
+            {
+              "ref": "Mrk.14.12",
+              "note": "“On the first day of the ἄζυμα, when they sacrificed the Passover”: the New Testament names the days by this bread."
+            },
+            {
+              "ref": "1Co.5.7",
+              "to": "1Co.5.8",
+              "note": "Paul expounds the bread: “purge out the old leaven, that you may be a new lump, as you are ἄζυμοι; for Christ our Passover was sacrificed for us.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "matsah-feast",
+              "gloss": "the Feast of Unleavened Bread",
+              "definition": "The seven days named by their bread: חַג הַמַּצּוֹת, from the fifteenth of the first month, one of the three feasts at which every male appeared before Yahweh; also simply “the מַצּוֹת”.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.6",
+                  "role": "defining",
+                  "note": "“On the fifteenth day of this month is חַג הַמַּצּוֹת to Yahweh.”"
+                },
+                {
+                  "ref": "Exo.12.17",
+                  "role": "defining",
+                  "note": "“You shall keep the מַצּוֹת, for on this very day I brought your hosts out of the land of Egypt.”"
+                },
+                {
+                  "ref": "Exo.23.15",
+                  "note": "Kept at the appointed time in the month Abib, “for in it you came out of Egypt”."
+                },
+                {
+                  "ref": "Exo.34.18"
+                },
+                {
+                  "ref": "Deu.16.16",
+                  "role": "defining",
+                  "note": "First of the three feasts: Unleavened Bread, Weeks and Booths."
+                },
+                {
+                  "ref": "2Ch.8.13"
+                },
+                {
+                  "ref": "2Ch.30.13",
+                  "note": "Hezekiah’s feast, kept in the second month."
+                },
+                {
+                  "ref": "2Ch.30.21"
+                },
+                {
+                  "ref": "2Ch.35.17",
+                  "note": "Josiah’s Passover, and the Feast of Unleavened Bread seven days."
+                },
+                {
+                  "ref": "Ezr.6.22",
+                  "note": "Kept seven days with joy by those returned from exile."
+                },
+                {
+                  "ref": "Luk.22.1",
+                  "note": "“The feast of the ἄζυμα, which is called the Passover.”"
+                },
+                {
+                  "ref": "Act.12.3"
+                },
+                {
+                  "ref": "Act.20.6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "matsah-offering",
+          "gloss": "unleavened bread of the offerings",
+          "definition": "The cakes and wafers of fine flour, mixed or anointed with oil, brought as a grain offering or with the peace offering, at the priests’ consecration and at the end of a Nazirite’s vow; what remained of the grain offering the priests ate unleavened in the holy place. Nothing leavened went on the altar.",
+          "evidence": [
+            {
+              "ref": "Lev.2.4",
+              "role": "defining",
+              "note": "An oven-baked grain offering: חַלּוֹת מַצֹּת mixed with oil, or רְקִיקֵי מַצּוֹת anointed with oil."
+            },
+            {
+              "ref": "Lev.2.5",
+              "note": "On the griddle: fine flour mixed with oil, מַצָּה."
+            },
+            {
+              "ref": "Lev.6.9",
+              "role": "defining",
+              "note": "The rest of the grain offering Aaron and his sons eat as מַצּוֹת in a holy place."
+            },
+            {
+              "ref": "Lev.10.12",
+              "note": "“Eat it מַצּוֹת beside the altar, for it is most holy.”"
+            },
+            {
+              "ref": "Lev.7.12",
+              "note": "With the thanksgiving sacrifice, unleavened cakes mixed with oil and unleavened wafers."
+            },
+            {
+              "ref": "Exo.29.2",
+              "note": "For the priests’ consecration: לֶחֶם מַצּוֹת, cakes and wafers of fine wheat flour."
+            },
+            {
+              "ref": "Exo.29.23"
+            },
+            {
+              "ref": "Lev.8.2",
+              "note": "“The basket of the מַצּוֹת.”"
+            },
+            {
+              "ref": "Lev.8.26"
+            },
+            {
+              "ref": "Num.6.15",
+              "note": "The Nazirite at the end of his vow brings a basket of מַצּוֹת."
+            },
+            {
+              "ref": "Num.6.17"
+            },
+            {
+              "ref": "Num.6.19"
+            },
+            {
+              "ref": "1Ch.23.29",
+              "note": "The Levites in charge of the unleavened wafers among the bread of the sanctuary."
+            },
+            {
+              "ref": "2Ki.23.9",
+              "note": "The priests of the high places did not come up to Yahweh’s altar but ate מַצּוֹת among their brothers: the priests’ portion without the altar’s service."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἄζυμος",
+          "gloss": "unleavened; (pl.) unleavened bread, the feast of unleavened bread",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מַצָּה → ἄζυμος ×49 (lemma count, MACULA alignment); Lev.23.6, חַג הַמַּצּוֹת → ἑορτὴ τῶν ἀζύμων"
+            },
+            {
+              "ref": "Mat.26.17",
+              "role": "defining",
+              "note": "“On the first day of the ἄζυμα the disciples came to Jesus, saying, Where will you that we prepare for you to eat the Passover?”"
+            },
+            {
+              "ref": "Mrk.14.1"
+            },
+            {
+              "ref": "Mrk.14.12"
+            },
+            {
+              "ref": "Luk.22.1"
+            },
+            {
+              "ref": "Luk.22.7"
+            },
+            {
+              "ref": "Act.12.3"
+            },
+            {
+              "ref": "Act.20.6"
+            },
+            {
+              "ref": "1Co.5.7",
+              "role": "defining",
+              "note": "“That you may be a new lump, as you are ἄζυμοι.”"
+            },
+            {
+              "ref": "1Co.5.8",
+              "role": "defining",
+              "note": "“Let us keep the feast … with the ἄζυμα of sincerity and truth.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "חָמֵץ",
+            "note": "What is leavened, forbidden through the seven days of מַצּוֹת.",
+            "evidence": [
+              {
+                "ref": "Exo.12.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.13.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.16.3"
+              }
+            ]
+          },
+          {
+            "lemma": "שְׂאֹר",
+            "note": "Leaven, the sourdough that raises bread, to be put out of the house.",
+            "evidence": [
+              {
+                "ref": "Exo.12.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.13.7"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "מְרֹרִים",
+            "note": "Bitter herbs, eaten with the Passover beside the unleavened bread.",
+            "evidence": [
+              {
+                "ref": "Exo.12.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.9.11"
+              }
+            ]
+          },
+          {
+            "lemma": "לֶחֶם עֹנִי",
+            "note": "“The bread of affliction”, Moses’ name for the מַצּוֹת, recalling the haste of the going out.",
+            "evidence": [
+              {
+                "ref": "Deu.16.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חַג הַמַּצּוֹת",
+            "gloss": "the Feast of Unleavened Bread",
+            "evidence": [
+              {
+                "ref": "Lev.23.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.23.15"
+              },
+              {
+                "ref": "Exo.34.18"
+              },
+              {
+                "ref": "Deu.16.16"
+              },
+              {
+                "ref": "2Ch.8.13"
+              },
+              {
+                "ref": "2Ch.30.13"
+              },
+              {
+                "ref": "2Ch.30.21"
+              },
+              {
+                "ref": "2Ch.35.17"
+              },
+              {
+                "ref": "Ezr.6.22"
+              }
+            ]
+          },
+          {
+            "phrase": "סַל הַמַּצּוֹת",
+            "gloss": "the basket of unleavened bread",
+            "evidence": [
+              {
+                "ref": "Lev.8.2"
+              },
+              {
+                "ref": "Lev.8.26"
+              },
+              {
+                "ref": "Exo.29.23"
+              },
+              {
+                "ref": "Num.6.15"
+              },
+              {
+                "ref": "Num.6.17"
+              }
+            ]
+          },
+          {
+            "phrase": "רְקִיקֵי מַצּוֹת",
+            "gloss": "unleavened wafers",
+            "evidence": [
+              {
+                "ref": "Exo.29.2"
+              },
+              {
+                "ref": "Lev.2.4"
+              },
+              {
+                "ref": "Lev.7.12"
+              },
+              {
+                "ref": "Num.6.15"
+              }
+            ]
+          },
+          {
+            "phrase": "חַלּוֹת מַצּוֹת",
+            "gloss": "unleavened cakes",
+            "evidence": [
+              {
+                "ref": "Exo.29.2"
+              },
+              {
+                "ref": "Lev.2.4"
+              },
+              {
+                "ref": "Lev.7.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָצַץ",
+      "pos": "verb",
+      "gloss": "suck out, drain",
+      "bdb": [
+        "m.de.aa"
+      ],
+      "cognate_ids": [
+        "ar-massa",
+        "arc-mesas",
+        "gez-mss"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "suck out, drain, drink deep",
+          "senses": [
+            {
+              "id": "matsats-suck",
+              "gloss": "suck out, drain",
+              "definition": "To draw liquid out by sucking until one has one’s fill: said of children at the breast, set beside יָנַק “suck” and שָׂבַע “be satisfied”.",
+              "evidence": [
+                {
+                  "ref": "Isa.66.11",
+                  "role": "defining",
+                  "note": "“That you may suck (תִּינְקוּ) and be satisfied from the breast of her consolations, that you may drain out (תָּמֹצּוּ) and delight yourselves from the abundance of her glory”: Zion’s children drink their fill of Jerusalem restored."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָנַק",
+            "note": "Suck, nurse: the first half of the parallel couplet.",
+            "evidence": [
+              {
+                "ref": "Isa.66.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-massa",
+      "lang": "ar",
+      "form": "مَصَّ، مُصَاص",
+      "translit": "maṣṣa, muṣāṣ",
+      "gloss": "suck, sip; what is sucked from a thing, the pure or choice part of it",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "note": "Lane’s sources: maṣṣa “he sucked it, or sucked it in; or sipped it … he drank it with a minute draught”; form VIII imtaṣṣa the same; form IV “he made him to suck”; muṣāṣ “what is sucked from, or of, a thing”. The Hebrew verb’s sense exactly, with Arabic ص (ṣ) behind both צ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2717, root مص, مَصَّهُ (n38621)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2717, امصّهُ form IV (n38622); p. 2718, مُصَاصٌ (n38625)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000241 mṣṣ [suck] V, ARB037414 maS~a"
+        }
+      ]
+    },
+    {
+      "id": "arc-mesas",
+      "lang": "arc",
+      "form": "מְצַץ",
+      "translit": "mǝṣaṣ",
+      "gloss": "suck, drain; (pael) wring, press",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums: “to suck, drain”, Targum Psalms 12:9 and 75:9, the latter of draining the cup of wrath to its dregs, the image Hebrew gives מָצָה in the same verse.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "M02350, מְצַּץ",
+          "note": "Targ. Ps. XII, 9; LXXV, 9."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000241 mṣṣ [suck] V, ARM017439 MṢṢ"
+        }
+      ]
+    },
+    {
+      "id": "gez-mss",
+      "lang": "gez",
+      "form": "መጸጸ",
+      "translit": "mṣṣ",
+      "gloss": "suck",
+      "relation": "cognate",
+      "note": "Listed in the Proto-Semitic root set *mṣṣ “suck” beside the Arabic, Aramaic and Hebrew. Not yet checked in Dillmann or Leslau; the Geʿez script form is from the transliteration and wants confirming.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000241 mṣṣ [suck] V, GEZ003741 mṣṣ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "unleavened-after-passover",
+      "statement": "Israel ate מַצּוֹת because they left Egypt in haste, their dough not yet leavened (Exo 12:39; Deu 16:3); for seven days after the Passover all leaven was to be put out of their houses, and whoever ate what was leavened was cut off from Israel (Exo 12:15, 19), and nothing leavened went on Yahweh’s altar (Lev 2:11). Paul reads the feast of Christ: “purge out the old leaven, that you may be a new lump, as you are unleavened; for Christ our Passover was sacrificed for us; so let us keep the feast, not with old leaven, nor with the leaven of malice and wickedness, but with the unleavened bread of sincerity and truth” (1Co 5:7–8), and Jesus warned of the leaven of the Pharisees, which was their teaching (Mat 16:6, 12). From the verses: as the seven days of unleavened bread followed the lamb’s death at once, so those whom Christ’s sacrifice has redeemed are to leave the old way of sin and false teaching wholly behind and live the whole of their days in sincerity and truth.",
+      "evidence": [
+        {
+          "ref": "Exo.12.39"
+        },
+        {
+          "ref": "Deu.16.3"
+        },
+        {
+          "ref": "Exo.12.15"
+        },
+        {
+          "ref": "Exo.12.19"
+        },
+        {
+          "ref": "Lev.2.11"
+        },
+        {
+          "ref": "1Co.5.7",
+          "to": "1Co.5.8"
+        },
+        {
+          "ref": "Mat.16.6"
+        },
+        {
+          "ref": "Mat.16.12"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (חַג הַמַּצּוֹת, Lev 23:6). The database keys the root מצצ, as given. BDB’s m.dc.ab is a zero-token cross-reference (“see מצץ”) and is named on the noun so no other entry takes it. The noun’s key m.de.ab also counts Pro 13:10 and 17:19, which are מַצָּה “strife” (n.er.ab, root נצה), so its use count is two high; those verses are not cited here and the strife noun is left to the נצה entry. Lev 2:5, 8:26 and Num 6:19 are double-filed under n.er.ab as well, but are the bread. The noun’s derivation is uncertain: the old link to מָצַץ (“drained”, i.e. dry, of leaven) has no cognate support, and a derivation from נצה “hasten” (Arabic naḍā) or a loan related to Greek μᾶζα “barley cake” are suggested elsewhere; neither is followed to its evidence here. Collateral roots not entered: מָצָה “drain, wring out” (m.dc.aa; Lev 1:15; 5:9; Jdg 6:38; Isa 51:17; Ezk 23:34; Psa 73:10; 75:9) and מיץ “press, squeeze” (Pro 30:33), which share the sense of the verb and may want cross-reference when drafted. Not consulted: Payne Smith and Brockelmann for Syriac ܡܨ “suck” (SEDRA has no such root); Dillmann and Leslau for the Geʿez; the Akkadian mazāqu “suck” that Anderson–Moser set with *mṣṣ is left out, its consonants not answering to the Hebrew."
+}
