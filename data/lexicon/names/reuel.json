@@ -1,0 +1,79 @@
+{
+  "id": "reuel",
+  "name": "רְעוּאֵל",
+  "english": "Reuel",
+  "root": "רעה",
+  "entry": "raah-shepherd",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "bdb": [
+    "t.dl.aj"
+  ],
+  "people": [
+    "Jethro@Exo.2.18",
+    "Reuel@Gen.36.4",
+    "Reuel@1Ch.9.8",
+    "Deuel@Num.1.14"
+  ],
+  "gloss": "friend of God; or God shepherds",
+  "summary": "Borne by four men: the priest of Midian, father of Zipporah and of Hobab, Moses’ father-in-law, called Jethro elsewhere (Exo 2:16–21; 3:1; Num 10:29); a son of Esau by Basemath, father of Edomite chiefs (Gen 36:4, 10–17); a Benjamite of the return (1Ch 9:8); and the Gadite whom Num 2:14 so names, Deuel elsewhere. The name joins אֵל “God” to the root’s letters with the linking -וּ- of פְּנוּאֵל “face of God”, which the text itself explains (Gen 32:31). Read with רֵעַ “friend”, as Yahweh spoke with Moses “as a man speaks to his רֵעַ” (Exo 33:11), it is “friend of God”; read with the verb “shepherd”, as Jacob’s “God who shepherded me” (Gen 48:15), “God shepherds”. The form does not settle which.",
+  "evidence": [
+    {
+      "ref": "Exo.2.18",
+      "role": "defining",
+      "note": "Zipporah and her sisters “came to רְעוּאֵל their father”, the priest of Midian, after Moses watered their flock."
+    },
+    {
+      "ref": "Num.10.29",
+      "role": "defining",
+      "note": "Moses said “to Hobab the son of רְעוּאֵל the Midianite, Moses’ father-in-law: We are setting out.”"
+    },
+    {
+      "ref": "Exo.3.1",
+      "note": "Moses “was shepherding the flock of Jethro his father-in-law, the priest of Midian”: the same man under another name."
+    },
+    {
+      "ref": "Gen.36.4",
+      "role": "defining",
+      "note": "“Basemath bore רְעוּאֵל” to Esau."
+    },
+    {
+      "ref": "Gen.36.17",
+      "note": "“These are the sons of Reuel, Esau’s son: chief Nahath, chief Zerah, chief Shammah, chief Mizzah.”"
+    },
+    {
+      "ref": "1Ch.1.35"
+    },
+    {
+      "ref": "1Ch.9.8",
+      "role": "defining",
+      "note": "Among the Benjamites in Jerusalem: Meshullam son of Shephatiah, son of רְעוּאֵל, son of Ibnijah."
+    },
+    {
+      "ref": "Num.2.14",
+      "note": "“Eliasaph the son of רְעוּאֵל”, elsewhere son of Deuel (Num 1:14; 10:20)."
+    },
+    {
+      "ref": "Gen.32.31",
+      "note": "פְּנִיאֵל “for I have seen God face to face”; the name is written פְּנוּאֵל in the next verse: noun, linking -וּ-, אֵל."
+    },
+    {
+      "ref": "Exo.33.11",
+      "note": "The root’s noun: “as a man speaks to his רֵעַ”."
+    },
+    {
+      "ref": "Gen.48.15",
+      "note": "The root’s verb: “the God who has shepherded me (הָרֹעֶה אֹתִי)”."
+    },
+    {
+      "source": "oracc",
+      "locator": "armep x000072560, rūʾu [colleague] N",
+      "note": "Akkadian rūʾu “companion, friend”."
+    }
+  ],
+  "cognate_ids": [
+    "akk-ruu",
+    "uga-ra"
+  ],
+  "note": "TIPNR merges Reuel of Exo 2:18 with Jethro (Jethro@Exo.2.18), and Num 10:29 may make either Hobab or Reuel Moses’ חֹתֵן (see names/hobab.json). Num 2:14 is the only רְעוּאֵל for the Gadite, whose record (Deuel@Num.1.14) is also tagged by names/deuel.json; it is listed here because the word sheet shows this entry on Num 2:14’s token under t.dl.aj. The Greek has Ραγουηλ throughout, and Tobit’s Raguel is the same name. The gloss puts “friend of God” first because Hebrew names in -וּאֵל formed with a noun (פְּנוּאֵל) read noun + God; the verbal reading is not excluded."
+}
