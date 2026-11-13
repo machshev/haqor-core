@@ -1,0 +1,1728 @@
+{
+  "id": "halak",
+  "root": "הלכ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "movement",
+    "conduct",
+    "walk-with-god",
+    "death",
+    "journey"
+  ],
+  "gloss": "go, walk; walk (live) in a way; go away, pass, die",
+  "summary": "הָלַךְ is to go on one’s feet or to move along: a man on the road, a serpent on its belly, the ark on the waters, a river on its course (Gen 3:14; 7:18; Ecc 1:7). Scripture uses the same word for the course of a life: to walk in Yahweh’s ways or after other gods, and in the hithpael to walk with God or before him, as Enoch, Noah and Abraham did (Deu 10:12; 13:5; Gen 5:24; 17:1). Going away is also dying, “the way of all the earth”, a going from which one does not return (1Ki 2:2; Job 16:22). The hiphil leads or carries, as Yahweh led Israel forty years in the wilderness (Deu 8:2); the nouns name a going: a traveller, a journey, a procession, the caravans of Sheba.",
+  "words": [
+    {
+      "lemma": "הָלַךְ",
+      "bdb": [
+        "e.bn.aa"
+      ],
+      "cognate_ids": [
+        "akk-alaku",
+        "uga-hlk",
+        "phn-hlk",
+        "arc-halak"
+      ],
+      "pos": "verb",
+      "gloss": "go, walk; live, conduct oneself; go away, die; lead (hiphil)",
+      "summary": "One of the commonest verbs of the Old Testament, about 1,550 times. Its forms drop the ה like those of a verb beginning with י (יֵלֵךְ, לֵךְ, לֶכֶת), and its hiphil is הוֹלִיךְ; the hithpael הִתְהַלֵּךְ keeps the ה.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "go, walk, come; walk in a way of life; go away, die; go on (growing)",
+          "senses": [
+            {
+              "id": "go-walk",
+              "gloss": "go, walk, travel",
+              "definition": "Move from place to place, on foot or on a journey; of animals, things and waters too, move along their course.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.14",
+                  "role": "defining",
+                  "note": "“On your belly you shall go (תֵלֵךְ)”: the serpent’s manner of moving."
+                },
+                {
+                  "ref": "Gen.7.18",
+                  "role": "defining",
+                  "note": "“The ark went (וַתֵּלֶךְ) on the face of the waters.”"
+                },
+                {
+                  "ref": "Ecc.1.7",
+                  "role": "defining",
+                  "note": "All the streams go (הֹלְכִים) to the sea, and return to the place they go from."
+                },
+                {
+                  "ref": "Gen.2.14",
+                  "note": "The Tigris “goes” east of Asshur: of a river’s course."
+                },
+                {
+                  "ref": "Gen.12.4",
+                  "note": "Abram went as Yahweh had spoken to him."
+                },
+                {
+                  "ref": "Num.10.30",
+                  "role": "defining",
+                  "note": "Hobab: “I will not go (לֹא אֵלֵךְ), but to my land and to my kindred I will go.”"
+                },
+                {
+                  "ref": "Jon.3.3",
+                  "note": "Jonah arose and went to Nineveh, a city of three days’ journey (מַהֲלַךְ)."
+                },
+                {
+                  "ref": "Ezk.1.21",
+                  "note": "“When they went they went, and when they stood they stood”: going set against standing."
+                }
+              ],
+              "kin": [
+                "traveller",
+                "journey"
+              ],
+              "senses": [
+                {
+                  "id": "go-imperative",
+                  "gloss": "go!; come!, come, let us…",
+                  "definition": "The imperative לֵךְ, לְכָה, לְכוּ sends someone off (“go”), or invites and urges him to come along or to act together (“come, let us…”).",
+                  "evidence": [
+                    {
+                      "ref": "Num.10.29",
+                      "role": "defining",
+                      "note": "Moses to Hobab: “We are setting out for the place Yahweh said he would give us; come (לְכָה) with us, and we will do you good.”"
+                    },
+                    {
+                      "ref": "Isa.1.18",
+                      "role": "defining",
+                      "note": "“Come now (לְכוּ־נָא) and let us reason together, says Yahweh.”"
+                    },
+                    {
+                      "ref": "Isa.2.3",
+                      "note": "“Come, let us go up to the mountain of Yahweh … and we will walk in his paths.”"
+                    },
+                    {
+                      "ref": "Isa.6.9",
+                      "role": "defining",
+                      "note": "“Go (לֵךְ) and say to this people”, quoted at Act 28:26 with πορεύθητι."
+                    },
+                    {
+                      "ref": "Act.28.26",
+                      "note": "Paul quotes Isa 6:9: “Go to this people and say…”."
+                    }
+                  ]
+                },
+                {
+                  "id": "go-with",
+                  "gloss": "go with, accompany; go before",
+                  "definition": "With עִם or אֶת, go in company with someone; with לִפְנֵי, go ahead of a company as its guide.",
+                  "evidence": [
+                    {
+                      "ref": "Num.10.32",
+                      "role": "defining",
+                      "note": "“If you go with us (תֵלֵךְ עִמָּנוּ), the good Yahweh does with us we will do to you.”"
+                    },
+                    {
+                      "ref": "Rut.1.16",
+                      "role": "defining",
+                      "note": "“Where you go I will go.”"
+                    },
+                    {
+                      "ref": "Jdg.4.8",
+                      "note": "Barak: “If you go with me I will go; if you do not go with me I will not go.”"
+                    },
+                    {
+                      "ref": "Exo.13.21",
+                      "role": "defining",
+                      "note": "Yahweh went before them by day in a pillar of cloud."
+                    },
+                    {
+                      "ref": "Exo.32.1",
+                      "note": "“Make us gods who will go before us”, quoted by Stephen at Act 7:40."
+                    },
+                    {
+                      "ref": "Act.7.40",
+                      "note": "Stephen quotes Exo 32:1: gods “who will go before us” (προπορεύσονται)."
+                    }
+                  ]
+                },
+                {
+                  "id": "go-away",
+                  "gloss": "go away, depart; pass, vanish",
+                  "definition": "Leave a place or a person; of transient things, pass away and be gone.",
+                  "evidence": [
+                    {
+                      "ref": "Gen.18.33",
+                      "role": "defining",
+                      "note": "Yahweh went (וַיֵּלֶךְ) when he had finished speaking with Abraham, and Abraham returned to his place."
+                    },
+                    {
+                      "ref": "Hos.6.4",
+                      "role": "defining",
+                      "note": "Ephraim’s kindness is like a morning cloud and like the dew that goes early (הֹלֵךְ)."
+                    },
+                    {
+                      "ref": "Psa.78.39",
+                      "role": "defining",
+                      "note": "Men are flesh, “a wind that goes and does not return”."
+                    },
+                    {
+                      "ref": "Job.7.9",
+                      "note": "As a cloud is consumed and goes, so he who goes down to the grave does not come up."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "walk-conduct",
+              "gloss": "walk (in a way), live, conduct oneself",
+              "definition": "Of a course of life: to walk in Yahweh’s ways, statutes or law, or in one’s own counsel; to walk after (אַחֲרֵי) Yahweh or after other gods is to follow and serve them. Walking “contrary” (קֶרִי) to Yahweh is a life set against him.",
+              "evidence": [
+                {
+                  "ref": "Deu.10.12",
+                  "role": "defining",
+                  "note": "Yahweh asks “to fear Yahweh your God, to walk in all his ways, and to love him and to serve him”: walking stands with fearing, loving and serving."
+                },
+                {
+                  "ref": "Lev.26.3",
+                  "role": "defining",
+                  "note": "“If you walk in my statutes and keep my commandments and do them.”"
+                },
+                {
+                  "ref": "Lev.26.21",
+                  "role": "defining",
+                  "note": "“If you walk with me contrary (קֶרִי), and will not hear me”; Lev 26:23–24, 27–28 answer that Yahweh will walk contrary with them."
+                },
+                {
+                  "ref": "Psa.1.1",
+                  "role": "defining",
+                  "note": "The man who has not walked in the counsel of the wicked, nor stood in the way of sinners, nor sat in the seat of scorners."
+                },
+                {
+                  "ref": "Deu.13.5",
+                  "role": "defining",
+                  "note": "“After Yahweh your God you shall walk, and him you shall fear, and his commandments you shall keep.”"
+                },
+                {
+                  "ref": "Deu.6.14",
+                  "note": "“You shall not go after other gods.”"
+                },
+                {
+                  "ref": "1Ki.18.21",
+                  "role": "defining",
+                  "note": "Elijah: “If Yahweh is God, go after him; and if Baal, go after him.”"
+                },
+                {
+                  "ref": "Hos.2.7",
+                  "note": "“I will go after my lovers”: idolatry pictured as a wife going after other men."
+                },
+                {
+                  "ref": "Mic.6.8",
+                  "role": "defining",
+                  "note": "“To do justice, to love kindness, and to walk humbly (הַצְנֵעַ לֶכֶת) with your God.”"
+                },
+                {
+                  "ref": "Pro.10.9",
+                  "note": "“He who walks in integrity walks securely.”"
+                },
+                {
+                  "ref": "Isa.2.5",
+                  "note": "“House of Jacob, come and let us walk in the light of Yahweh.”"
+                },
+                {
+                  "ref": "Ezk.36.27",
+                  "note": "Yahweh will put his spirit within them and cause that they walk in his statutes."
+                },
+                {
+                  "ref": "Act.14.16",
+                  "note": "God let all the nations “walk (πορεύεσθαι) in their own ways”, the idiom of Mic 4:5."
+                }
+              ],
+              "cognate_ids": [
+                "akk-alaktu",
+                "sab-hlk"
+              ],
+              "kin": [
+                "peshitta-walk-conduct"
+              ]
+            },
+            {
+              "id": "go-die",
+              "gloss": "go away, die",
+              "definition": "Go the way of all the earth: depart in death, to the dust and the grave, a going from which one does not come back.",
+              "evidence": [
+                {
+                  "ref": "1Ki.2.2",
+                  "role": "defining",
+                  "note": "David: “I am going (הֹלֵךְ) in the way of all the earth.”"
+                },
+                {
+                  "ref": "Jos.23.14",
+                  "role": "defining",
+                  "note": "Joshua, the same words: “I am going today in the way of all the earth.”"
+                },
+                {
+                  "ref": "Psa.39.14",
+                  "role": "defining",
+                  "note": "“Before I go (אֵלֵךְ) and am no more.”"
+                },
+                {
+                  "ref": "Job.16.22",
+                  "role": "defining",
+                  "note": "“I shall go the path from which I shall not return.”"
+                },
+                {
+                  "ref": "Job.10.21",
+                  "note": "“Before I go, and do not return, to the land of darkness and the shadow of death.”"
+                },
+                {
+                  "ref": "Ecc.3.20",
+                  "role": "defining",
+                  "note": "“All go to one place; all are from the dust, and all return to the dust.”"
+                },
+                {
+                  "ref": "Ecc.12.5",
+                  "note": "“Man goes to his eternal house, and the mourners go about in the street.”"
+                },
+                {
+                  "ref": "2Sa.12.23",
+                  "note": "David of his dead child: “I shall go to him, but he will not return to me.”"
+                },
+                {
+                  "ref": "Gen.15.2",
+                  "note": "“I go childless”: Abram speaks of his life going on toward its end without an heir."
+                },
+                {
+                  "ref": "Dan.12.13",
+                  "note": "“Go your way to the end; you shall rest, and stand in your lot at the end of the days.”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-halaka"
+              ]
+            },
+            {
+              "id": "go-on",
+              "gloss": "go on, continue; grow steadily",
+              "definition": "The infinitive absolute הָלוֹךְ or the participle, set before another verb or adjective, says that an action went on and increased: “went on growing”, “kept going and returning”.",
+              "evidence": [
+                {
+                  "ref": "Gen.26.13",
+                  "role": "defining",
+                  "note": "Isaac “went on going and growing great (הָלוֹךְ וְגָדֵל), until he was very great”."
+                },
+                {
+                  "ref": "2Sa.3.1",
+                  "role": "defining",
+                  "note": "David went on growing stronger (הֹלֵךְ וְחָזֵק), and the house of Saul went on growing weaker."
+                },
+                {
+                  "ref": "Gen.8.3",
+                  "role": "defining",
+                  "note": "The waters returned from the earth, “going and returning” (הָלוֹךְ וָשׁוֹב): receding steadily."
+                },
+                {
+                  "ref": "Jdg.4.24",
+                  "note": "The hand of Israel went on bearing harder on Jabin until they cut him off."
+                },
+                {
+                  "ref": "Pro.4.18",
+                  "note": "The path of the righteous is like the light of dawn, going on and shining until the full day."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "walk, go about (poetic); flow, travel",
+          "senses": [
+            {
+              "gloss": "walk, go about",
+              "definition": "The same as the qal, mostly in poetry: to walk, of a way of life or of a mourner going about; of springs, ships and arrows, to run or travel their course.",
+              "evidence": [
+                {
+                  "ref": "Psa.86.11",
+                  "role": "defining",
+                  "note": "“Teach me your way, Yahweh; I will walk (אֲהַלֵּךְ) in your truth.”"
+                },
+                {
+                  "ref": "Pro.8.20",
+                  "role": "defining",
+                  "note": "Wisdom: “I walk in the path of righteousness, in the midst of the paths of judgment.”"
+                },
+                {
+                  "ref": "Psa.38.7",
+                  "role": "defining",
+                  "note": "“All the day I go about (הִלַּכְתִּי) mourning.”"
+                },
+                {
+                  "ref": "Psa.81.14",
+                  "note": "“If only Israel would walk in my ways.”"
+                },
+                {
+                  "ref": "Psa.104.3",
+                  "note": "Yahweh “walks on the wings of the wind”."
+                },
+                {
+                  "ref": "Psa.104.10",
+                  "role": "defining",
+                  "note": "Springs “go” between the hills: of flowing water."
+                },
+                {
+                  "ref": "Psa.104.26",
+                  "note": "There the ships go."
+                },
+                {
+                  "ref": "Hab.3.11",
+                  "note": "Yahweh’s arrows went (יְהַלֵּכוּ) at the light."
+                },
+                {
+                  "ref": "1Ki.21.27",
+                  "note": "Ahab in sackcloth “went softly”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "walk about, go to and fro; walk with God, live before him",
+          "senses": [
+            {
+              "id": "walk-about",
+              "gloss": "walk about, go to and fro",
+              "definition": "Walk here and there over an area, to and fro, or up and down: to view a land, patrol the earth, or walk abroad when recovered.",
+              "evidence": [
+                {
+                  "ref": "Gen.13.17",
+                  "role": "defining",
+                  "note": "“Arise, walk about in the land, through its length and its breadth.”"
+                },
+                {
+                  "ref": "Zec.1.11",
+                  "role": "defining",
+                  "note": "The horsemen: “We have walked to and fro in the earth, and behold, all the earth sits at rest.”"
+                },
+                {
+                  "ref": "Job.1.7",
+                  "note": "The adversary comes “from roaming in the earth and from walking about (הִתְהַלֵּךְ) in it”."
+                },
+                {
+                  "ref": "Exo.21.19",
+                  "role": "defining",
+                  "note": "If the injured man rises and walks about outside on his staff."
+                },
+                {
+                  "ref": "Psa.105.13",
+                  "note": "The fathers went about from nation to nation."
+                },
+                {
+                  "ref": "Jos.18.8",
+                  "note": "The men sent to walk through the land and write it down."
+                }
+              ],
+              "cognate_ids": [
+                "akk-atalluku"
+              ]
+            },
+            {
+              "id": "walk-with-god",
+              "gloss": "walk with God, walk before him",
+              "definition": "Live one’s life in God’s company and in his sight: with אֶת “walk with God”, with לִפְנֵי “walk before” him, of a life faithful and whole toward him.",
+              "evidence": [
+                {
+                  "ref": "Gen.5.22",
+                  "role": "defining",
+                  "note": "“Enoch walked with God (וַיִּתְהַלֵּךְ … אֶת־הָאֱלֹהִים) after he fathered Methuselah, three hundred years.”"
+                },
+                {
+                  "ref": "Gen.5.24",
+                  "note": "“Enoch walked with God, and he was not, for God took him”; Heb 11:5 takes it up."
+                },
+                {
+                  "ref": "Gen.6.9",
+                  "role": "defining",
+                  "note": "“Noah was a righteous man, whole (תָּמִים) in his generations; Noah walked with God.”"
+                },
+                {
+                  "ref": "Gen.17.1",
+                  "role": "defining",
+                  "note": "“I am God Almighty; walk before me and be whole.”"
+                },
+                {
+                  "ref": "2Ki.20.3",
+                  "role": "defining",
+                  "note": "Hezekiah: “I have walked before you in truth and with a whole heart, and have done what is good in your eyes.”"
+                },
+                {
+                  "ref": "Gen.48.15",
+                  "note": "“The God before whom my fathers Abraham and Isaac walked.”"
+                },
+                {
+                  "ref": "Psa.116.9",
+                  "note": "“I will walk before Yahweh in the lands of the living.”"
+                },
+                {
+                  "ref": "1Sa.2.30",
+                  "note": "Eli’s house was to walk before Yahweh for ever, until it despised him."
+                },
+                {
+                  "ref": "Heb.11.5",
+                  "note": "Enoch “was witnessed to have pleased God” (εὐηρεστηκέναι), the Septuagint’s word for “walked with God”."
+                }
+              ],
+              "cognate_ids": [
+                "phn-hlk"
+              ]
+            },
+            {
+              "id": "god-walks",
+              "gloss": "walk among (of God’s presence)",
+              "definition": "Of Yahweh moving among his people: in the garden, with the tent, in the camp, as a presence that requires holiness.",
+              "evidence": [
+                {
+                  "ref": "Lev.26.12",
+                  "role": "defining",
+                  "note": "“I will walk among you, and be your God, and you shall be my people”; quoted at 2Co 6:16."
+                },
+                {
+                  "ref": "Deu.23.15",
+                  "role": "defining",
+                  "note": "“Yahweh your God walks in the midst of your camp … therefore your camp shall be holy.”"
+                },
+                {
+                  "ref": "2Sa.7.6",
+                  "role": "defining",
+                  "note": "“I have not dwelt in a house … but I have been walking in a tent and in a tabernacle.”"
+                },
+                {
+                  "ref": "Gen.3.8",
+                  "note": "The sound of Yahweh God walking in the garden in the breeze of the day."
+                },
+                {
+                  "ref": "2Co.6.16",
+                  "note": "Paul quotes Lev 26:12 of the believers as the temple of the living God."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "lead, make go; carry, bring; carry away",
+          "senses": [
+            {
+              "id": "lead",
+              "gloss": "lead, make walk",
+              "definition": "Make someone go: lead a people on a way, guide them, or make them walk.",
+              "evidence": [
+                {
+                  "ref": "Deu.8.2",
+                  "role": "defining",
+                  "note": "“Remember all the way which Yahweh your God led you (הֹלִיכֲךָ) these forty years in the wilderness, to humble you, to test you.”"
+                },
+                {
+                  "ref": "Deu.29.4",
+                  "role": "defining",
+                  "note": "“I have led you forty years in the wilderness; your clothes have not worn out.”"
+                },
+                {
+                  "ref": "Amo.2.10",
+                  "note": "“I brought you up from Egypt and led you forty years in the wilderness.”"
+                },
+                {
+                  "ref": "Psa.136.16",
+                  "note": "“To him who led his people through the wilderness.”"
+                },
+                {
+                  "ref": "Isa.63.13",
+                  "note": "“Who led them through the depths, like a horse in the wilderness.”"
+                },
+                {
+                  "ref": "Lev.26.13",
+                  "role": "defining",
+                  "note": "“I broke the bars of your yoke and made you walk upright (וָאוֹלֵךְ אֶתְכֶם קוֹמְמִיּוּת).”"
+                },
+                {
+                  "ref": "Jer.31.9",
+                  "note": "“I will lead them to streams of water in a straight way.”"
+                },
+                {
+                  "ref": "Hos.2.16",
+                  "note": "“I will lead her into the wilderness and speak to her heart.”"
+                }
+              ]
+            },
+            {
+              "gloss": "carry, bring; carry away",
+              "definition": "Make a thing go: bring or carry it; of people, carry them away captive; of the sea, drive it back.",
+              "evidence": [
+                {
+                  "ref": "Exo.2.9",
+                  "role": "defining",
+                  "note": "“Take this child away and nurse him for me.”"
+                },
+                {
+                  "ref": "Num.17.11",
+                  "note": "“Take the censer … and carry it quickly to the congregation.”"
+                },
+                {
+                  "ref": "Ecc.10.20",
+                  "role": "defining",
+                  "note": "“A bird of the heavens will carry the voice.”"
+                },
+                {
+                  "ref": "2Ki.24.15",
+                  "role": "defining",
+                  "note": "Nebuchadnezzar carried away (הוֹלִיךְ) the mighty of the land into exile from Jerusalem to Babylon."
+                },
+                {
+                  "ref": "Deu.28.36",
+                  "note": "“Yahweh will bring you and your king … to a nation you have not known.”"
+                },
+                {
+                  "ref": "Exo.14.21",
+                  "note": "Yahweh made the sea go back by a strong east wind all night."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be gone, pass away",
+          "senses": [
+            {
+              "gloss": "be gone, pass away",
+              "definition": "Once: “like a shadow when it lengthens I am gone”, of a life fading away.",
+              "evidence": [
+                {
+                  "ref": "Psa.109.23",
+                  "role": "defining",
+                  "note": "“Like a shadow when it lengthens I am gone (נֶהֱלָכְתִּי); I am shaken off like the locust.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πορεύομαι",
+          "gloss": "go, journey; live, walk (in a way)",
+          "evidence": [
+            {
+              "ref": "Act.28.26",
+              "note": "“Go (πορεύθητι) to this people and say”: Isa 6:9’s לֵךְ."
+            },
+            {
+              "ref": "Act.14.16",
+              "note": "God let the nations “walk (πορεύεσθαι) in their own ways”: the Hebrew idiom of conduct (Mic 4:5)."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 6:9 word 2",
+              "note": "πορεύθητι for לֵךְ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 10:30 word 4",
+              "note": "πορεύσομαι for Hobab’s אֵלֵךְ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "MIC 4:5 word 4",
+              "note": "πορεύσονται for יֵלְכוּ, “walk each in the name of his god”."
+            }
+          ]
+        },
+        {
+          "lemma": "περιπατέω",
+          "gloss": "walk, walk about; live",
+          "evidence": [
+            {
+              "ref": "Jhn.8.12",
+              "note": "“He who follows me shall not walk in darkness”: the walking in darkness of Isa 9:1 and 50:10."
+            },
+            {
+              "ref": "1Jn.1.7",
+              "note": "“If we walk in the light, as he is in the light”: the Hebrew walking of conduct (Isa 2:5)."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 3:8 word 6",
+              "note": "περιπατοῦντος for the hithpael מִתְהַלֵּךְ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PRO 8:20 word 3",
+              "note": "περιπατῶ for the piel אֲהַלֵּךְ."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐμπεριπατέω",
+          "gloss": "walk about in, walk among",
+          "evidence": [
+            {
+              "ref": "2Co.6.16",
+              "note": "“I will dwell in them and walk among them (ἐμπεριπατήσω)”, quoting Lev 26:12."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 26:12 word 1",
+              "note": "ἐμπεριπατήσω for וְהִתְהַלַּכְתִּי."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 23:15 word 4",
+              "note": "ἐμπεριπατεῖ for מִתְהַלֵּךְ, Yahweh walking in the camp."
+            }
+          ]
+        },
+        {
+          "lemma": "εὐαρεστέω",
+          "gloss": "please, be well-pleasing",
+          "evidence": [
+            {
+              "ref": "Heb.11.5",
+              "note": "Enoch “was witnessed to have pleased God”, the Septuagint’s rendering of “walked with God” (Gen 5:24)."
+            },
+            {
+              "ref": "Heb.11.6",
+              "note": "“Without faith it is impossible to please (εὐαρεστῆσαι) him.”"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 5:24 word 1",
+              "note": "εὐηρέστησεν for the hithpael וַיִּתְהַלֵּךְ; so Gen 5:22; 6:9; 17:1; 24:40; 48:15."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָמַד",
+            "note": "Walking, standing and sitting are three steps into the company of the wicked.",
+            "evidence": [
+              {
+                "ref": "Psa.1.1",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַר",
+            "note": "Walking in the statutes stands beside keeping the commandments.",
+            "evidence": [
+              {
+                "ref": "Lev.26.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.13.5"
+              }
+            ]
+          },
+          {
+            "lemma": "יָרֵא",
+            "note": "Walking in his ways stands with fearing, loving and serving Yahweh.",
+            "evidence": [
+              {
+                "ref": "Deu.10.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שׁוּב",
+            "note": "Going away is set against returning: of the waters receding, the streams’ round, and the dead who go and do not return.",
+            "evidence": [
+              {
+                "ref": "2Sa.12.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.16.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.39"
+              },
+              {
+                "ref": "Gen.8.3"
+              }
+            ]
+          },
+          {
+            "lemma": "עָמַד",
+            "note": "Going set against standing still.",
+            "evidence": [
+              {
+                "ref": "Ezk.1.21",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הָלַךְ אַחֲרֵי",
+            "gloss": "go after: follow and serve (Yahweh, or other gods)",
+            "evidence": [
+              {
+                "ref": "Deu.13.5",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.18.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.6.14"
+              }
+            ]
+          },
+          {
+            "phrase": "הָלַךְ בִּדְרָכָיו",
+            "gloss": "walk in his ways: live as Yahweh directs",
+            "evidence": [
+              {
+                "ref": "Deu.10.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.3.7"
+              }
+            ]
+          },
+          {
+            "phrase": "הִתְהַלֵּךְ אֶת־הָאֱלֹהִים",
+            "gloss": "walk with God",
+            "evidence": [
+              {
+                "ref": "Gen.5.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.6.9"
+              }
+            ]
+          },
+          {
+            "phrase": "הִתְהַלֵּךְ לִפְנֵי",
+            "gloss": "walk before (God): live in his sight",
+            "evidence": [
+              {
+                "ref": "Gen.17.1",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.20.3"
+              }
+            ]
+          },
+          {
+            "phrase": "הֹלֵךְ בְּדֶרֶךְ כָּל־הָאָרֶץ",
+            "gloss": "go the way of all the earth: die",
+            "evidence": [
+              {
+                "ref": "1Ki.2.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.23.14"
+              }
+            ]
+          },
+          {
+            "phrase": "הָלַךְ עִם … קֶרִי",
+            "gloss": "walk contrary with: set oneself against",
+            "evidence": [
+              {
+                "ref": "Lev.26.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.26.24"
+              }
+            ]
+          },
+          {
+            "phrase": "הָלוֹךְ וְ…",
+            "gloss": "go on …ing: steady continuance or increase",
+            "evidence": [
+              {
+                "ref": "Gen.26.13",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.3.1"
+              }
+            ]
+          },
+          {
+            "phrase": "לְכוּ וְנֵלְכָה",
+            "gloss": "come, let us go (walk)",
+            "evidence": [
+              {
+                "ref": "Isa.2.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.2.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֲלַךְ",
+      "lang": "arc",
+      "bdb": [
+        "xe.ag.aa"
+      ],
+      "cognate_ids": [
+        "arc-halak",
+        "akk-alaku"
+      ],
+      "pos": "verb",
+      "gloss": "go; walk, walk about",
+      "summary": "Scripture’s Aramaic verb, seven times in Ezra and Daniel; the peal’s imperfect and infinitive are contracted (יְהָךְ, מְהָךְ).",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "go",
+          "senses": [
+            {
+              "gloss": "go, come",
+              "definition": "Go to a place; of a report, come to the king; of the temple vessels, go back to their place.",
+              "evidence": [
+                {
+                  "ref": "Ezr.7.13",
+                  "role": "defining",
+                  "note": "Artaxerxes’ decree: whoever is willing “to go (לִמְהָךְ) to Jerusalem with you, may go (יְהָךְ)”."
+                },
+                {
+                  "ref": "Ezr.6.5",
+                  "role": "defining",
+                  "note": "The vessels Nebuchadnezzar took are to be returned, “and go (וִיהָךְ) to the temple in Jerusalem, to its place”."
+                },
+                {
+                  "ref": "Ezr.5.5",
+                  "note": "They were not stopped until the report should go to Darius."
+                }
+              ],
+              "kin": [
+                "go-walk"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "walk",
+          "senses": [
+            {
+              "gloss": "walk",
+              "definition": "Walk about on a place.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.26",
+                  "role": "defining",
+                  "note": "At the end of twelve months Nebuchadnezzar was walking (מְהַלֵּךְ) on the palace of the kingdom of Babylon."
+                }
+              ],
+              "kin": [
+                "walk-about"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "walk about; live (in pride)",
+          "senses": [
+            {
+              "gloss": "walk about",
+              "definition": "Walk about in a place.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.25",
+                  "role": "defining",
+                  "note": "“I see four men loose, walking (מַהְלְכִין) in the midst of the fire, and there is no hurt in them.”"
+                }
+              ],
+              "kin": [
+                "walk-about"
+              ]
+            },
+            {
+              "gloss": "walk, live (in a way)",
+              "definition": "Of a course of life, as the Hebrew walks in a way: those who walk in pride.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.34",
+                  "role": "defining",
+                  "note": "“Those who walk (מַהְלְכִין) in pride he is able to humble”: Nebuchadnezzar’s own lesson."
+                }
+              ],
+              "kin": [
+                "walk-conduct"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "περιπατέω",
+          "gloss": "walk about",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DAN 3:25 word 9",
+              "note": "περιπατοῦντας for מַהְלְכִין."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֲלִיכָה",
+      "bdb": [
+        "e.bn.ad"
+      ],
+      "cognate_ids": [
+        "akk-alaktu",
+        "uga-hlk-course"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "going, way; procession; caravan",
+      "summary": "A going: God’s ways and processions, the goings-on of a household, a company travelling together. Five uses keyed, and a sixth in Nah 2:6.",
+      "senses": [
+        {
+          "gloss": "going, way, course",
+          "definition": "A going taken as a course of action: God’s ancient ways, the ways of a household, the march of warriors.",
+          "evidence": [
+            {
+              "ref": "Hab.3.6",
+              "role": "defining",
+              "note": "“The everlasting mountains were scattered … his goings (הֲלִיכוֹת) are everlasting.”"
+            },
+            {
+              "ref": "Pro.31.27",
+              "role": "defining",
+              "note": "She watches over the ways (הֲלִיכוֹת) of her household, and does not eat the bread of idleness."
+            },
+            {
+              "ref": "Nam.2.6",
+              "note": "“They stumble in their going (בַּהֲלִיכָתָם)”: the database does not key this token."
+            }
+          ],
+          "kin": [
+            "walk-conduct"
+          ]
+        },
+        {
+          "gloss": "procession",
+          "definition": "A going in solemn order: God’s processions into the holy place.",
+          "evidence": [
+            {
+              "ref": "Psa.68.25",
+              "role": "defining",
+              "note": "“They have seen your processions, God, the processions of my God, my king, into the holy place”; singers before, players after (68:26)."
+            }
+          ]
+        },
+        {
+          "gloss": "caravan, travelling company",
+          "definition": "A company going together on a journey.",
+          "evidence": [
+            {
+              "ref": "Job.6.19",
+              "role": "defining",
+              "note": "“The caravans of Tema looked, the travelling companies (הֲלִיכֹת) of Sheba hoped for them”: in parallel with אֹרְחוֹת, caravans, in the same verse."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πορεία",
+          "gloss": "going, journey; way of life",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "HAB 3:6 word 13",
+              "note": "πορείας for הֲלִיכוֹת."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַהֲלָךְ",
+      "bdb": [
+        "e.bn.ae"
+      ],
+      "cognate_ids": [
+        "akk-malaku"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "journey; walkway, passage; access",
+      "summary": "A place or distance for walking: a day’s or three days’ journey, a passage before the temple chambers, a place to go among those standing before Yahweh. Akkadian mālaku, of the same pattern, is a walk, route or passage.",
+      "senses": [
+        {
+          "id": "journey",
+          "gloss": "journey, distance walked",
+          "definition": "A journey, and the distance it covers measured in days.",
+          "evidence": [
+            {
+              "ref": "Jon.3.3",
+              "role": "defining",
+              "note": "Nineveh was a great city, “a journey (מַהֲלַךְ) of three days”."
+            },
+            {
+              "ref": "Jon.3.4",
+              "role": "defining",
+              "note": "Jonah began to go into the city “a journey of one day”."
+            },
+            {
+              "ref": "Neh.2.6",
+              "role": "defining",
+              "note": "The king: “How long will your journey be, and when will you return?”"
+            }
+          ]
+        },
+        {
+          "gloss": "walkway, passage",
+          "definition": "A way to walk in a building.",
+          "evidence": [
+            {
+              "ref": "Ezk.42.4",
+              "role": "defining",
+              "note": "Before the chambers “a walkway (מַהֲלַךְ) ten cubits wide”, in the house shown to Ezekiel."
+            }
+          ]
+        },
+        {
+          "gloss": "access, place to walk",
+          "definition": "Places to go to and fro among those who stand before Yahweh: free access in his court.",
+          "evidence": [
+            {
+              "ref": "Zec.3.7",
+              "role": "defining",
+              "note": "To Joshua the high priest: “If you walk in my ways … I will give you places to walk (מַהְלְכִים) among these who stand here.”"
+            }
+          ],
+          "kin": [
+            "walk-about"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὁδός",
+          "gloss": "way, road, journey",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "JON 3:3 word 13",
+              "note": "ὁδοῦ for מַהֲלַךְ, “a journey of three days”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֲלָךְ",
+      "lang": "arc",
+      "bdb": [
+        "xe.ag.ab"
+      ],
+      "cognate_ids": [
+        "akk-ilku",
+        "arc-halak-toll"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "toll, due",
+      "summary": "A royal due, always listed with מִנְדָּה “tribute” and בְּלוֹ. Its link to “go” runs through Akkadian ilku, the service and dues owed to the state, a noun of alāku “go”: the Aramaic word looks borrowed from it, so its tie to the root is the Akkadian’s, not a sense scripture builds from “go”.",
+      "senses": [
+        {
+          "gloss": "toll, due (to the king)",
+          "definition": "A payment owed to the king, named beside tribute and another due.",
+          "evidence": [
+            {
+              "ref": "Ezr.4.13",
+              "role": "defining",
+              "note": "If the city is rebuilt “they will not pay tribute (מִנְדָּה), custom (בְלוֹ) or toll (הֲלָךְ), and the revenue of the kings will suffer”."
+            },
+            {
+              "ref": "Ezr.4.20",
+              "note": "Mighty kings over Jerusalem received tribute, custom and toll."
+            },
+            {
+              "ref": "Ezr.7.24",
+              "role": "defining",
+              "note": "No tribute, custom or toll may be laid on the priests, Levites and temple servants."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֵלֶךְ",
+      "bdb": [
+        "e.bn.ab"
+      ],
+      "cognate_ids": [
+        "akk-aliku",
+        "phn-hlk-traveller"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "traveller; flow",
+      "summary": "Twice: one who goes, a traveller; and a going of honey, its flow. Punic hlk “traveller, passer-by, guest-friend” and Akkadian āliku “goer, traveller” are the same noun.",
+      "senses": [
+        {
+          "id": "traveller",
+          "gloss": "traveller, wayfarer",
+          "definition": "One who is going on a journey and comes to a house as a guest.",
+          "evidence": [
+            {
+              "ref": "2Sa.12.4",
+              "role": "defining",
+              "note": "“A traveller (הֵלֶךְ) came to the rich man”, then called the wayfarer (אֹרֵחַ) and the man who came to him."
+            }
+          ]
+        },
+        {
+          "gloss": "flow, running",
+          "definition": "A going of liquid: honey running in the forest.",
+          "evidence": [
+            {
+              "ref": "1Sa.14.26",
+              "role": "defining",
+              "note": "“Behold, a flow (הֵלֶךְ) of honey”; compare streams “going” to the sea (Ecc 1:7) and springs in the piel (Psa 104:10)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הָלִיךְ",
+      "bdb": [
+        "e.bn.ac"
+      ],
+      "cognate_ids": [
+        "akk-alaku"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "step",
+      "summary": "Once, in Job’s memory of his prosperity; a word scripture barely fixes, read from its verse as the steps one walks with.",
+      "senses": [
+        {
+          "gloss": "step",
+          "definition": "A step, a going of the feet.",
+          "evidence": [
+            {
+              "ref": "Job.29.6",
+              "role": "defining",
+              "note": "“When my steps (הֲלִיכַי) were washed in butter, and the rock poured out for me streams of oil.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּהֲלוּכָה",
+      "bdb": [
+        "e.bn.af"
+      ],
+      "cognate_ids": [
+        "akk-tallaktu"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "procession",
+      "summary": "Once, of the procession on Jerusalem’s wall at its dedication. Akkadian tallaktu, of the same pattern, is a walkway and a processional walk.",
+      "senses": [
+        {
+          "gloss": "procession",
+          "definition": "A company going in solemn order.",
+          "evidence": [
+            {
+              "ref": "Neh.12.31",
+              "role": "defining",
+              "note": "Nehemiah set two great thanksgiving choirs “and processions (וְתַהֲלֻכֹת)” on the wall; one went to the right (12:31), the other to the left (12:38, הַהוֹלֶכֶת)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הַלֵּךְ",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "walk",
+      "summary": "The Peshitta’s ܗܠܟ, used in its pael for walking, of the feet and of a way of life. Its New Testament renders the Greek περιπατέω with it, and its quotation of Lev 26:12 at 2Co 6:16 keeps the Hebrew root.",
+      "cognate_ids": [
+        "arc-halak"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "walk; live, conduct oneself",
+          "senses": [
+            {
+              "gloss": "walk",
+              "definition": "Walk on one’s feet.",
+              "evidence": [
+                {
+                  "ref": "Mat.9.5",
+                  "role": "defining",
+                  "note": "Peshitta: “Rise and walk (הַלֵּךְ).”"
+                },
+                {
+                  "ref": "Mat.14.25",
+                  "role": "defining",
+                  "note": "Peshitta: Jesus came to them walking (מְהַלֵּךְ) on the waters."
+                }
+              ],
+              "kin": [
+                "go-walk"
+              ]
+            },
+            {
+              "id": "peshitta-walk-conduct",
+              "gloss": "walk, live (in a way)",
+              "definition": "Live a life of a given kind, the Hebrew walking of conduct.",
+              "evidence": [
+                {
+                  "ref": "1Jn.1.7",
+                  "role": "defining",
+                  "note": "Peshitta: “If we walk (מְהַלְּכִין) in the light, as he is in the light.”"
+                },
+                {
+                  "ref": "Rom.6.4",
+                  "role": "defining",
+                  "note": "Peshitta: “So we also should walk (נְהַלֵּךְ) in newness of life.”"
+                },
+                {
+                  "ref": "Rom.8.4",
+                  "note": "Peshitta: those who walk not according to the flesh but according to the spirit."
+                },
+                {
+                  "ref": "2Co.6.16",
+                  "role": "defining",
+                  "note": "Peshitta’s quotation of Lev 26:12: “I will dwell in them and walk (וְאֶהַלֵּךְ) among them.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הַלְכְתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "walk, way of life",
+      "summary": "The Peshitta’s noun of the root (SEDRA: walk, way, footsteps), once in its New Testament.",
+      "cognate_ids": [
+        "akk-alaktu"
+      ],
+      "senses": [
+        {
+          "gloss": "walk, way of life",
+          "definition": "The manner of one’s walking: one’s way of life.",
+          "evidence": [
+            {
+              "ref": "1Jn.2.6",
+              "role": "defining",
+              "note": "Peshitta: he who says he abides in him ought to walk (נְהַלֵּךְ) according to his walk (הַלְכָתֵהּ)."
+            }
+          ],
+          "kin": [
+            "peshitta-walk-conduct",
+            "walk-conduct"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-alaku",
+      "lang": "akk",
+      "form": "alāku",
+      "translit": "alāku",
+      "gloss": "go, come, walk, travel, march; live, behave",
+      "relation": "cognate",
+      "note": "The common Akkadian verb of going, used of people, armies, water, wind and fire, and of the conduct of a life. The initial h is lost in Akkadian, as all its initial laryngeals are.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000002990, alāku [go] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000114 hlk [go], AKK000325 alāku [go]"
+        }
+      ]
+    },
+    {
+      "id": "akk-atalluku",
+      "lang": "akk",
+      "form": "atalluku",
+      "translit": "atalluku",
+      "gloss": "walk about, go to and fro (Gtn of alāku); perambulation",
+      "relation": "cognate",
+      "note": "Akkadian forms a stem of repeated going (Gtn, itallak) from alāku, “walk about, go to and fro”, the same meaning the Hebrew hithpael has (Gen 13:17; Zec 1:11). Oracc lists the verbal noun atalluku “perambulation”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000085140, atalluku [perambulation] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000002990, alāku [go] V: “go about”, “walk about”, “roam about”, “go repeatedly”"
+        }
+      ]
+    },
+    {
+      "id": "akk-alaktu",
+      "lang": "akk",
+      "form": "alaktu",
+      "translit": "alaktu",
+      "gloss": "way, course, journey; course of life, behaviour; caravan",
+      "relation": "cognate",
+      "note": "A noun of alāku that, like הֲלִיכָה, is both a way taken (journey, course) and a company travelling (caravan, Job 6:19), and also a way of life, like the Hebrew verb’s walk of conduct.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000006440, alaktu [way] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-malaku",
+      "lang": "akk",
+      "form": "mālaku",
+      "translit": "mālaku",
+      "gloss": "walk, course, route, passage, procession",
+      "relation": "cognate",
+      "note": "The same ma- noun as מַהֲלָךְ, with the same range: a way walked, a distance, a passage.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000047210, mālaku [walk] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-aliku",
+      "lang": "akk",
+      "form": "āliku",
+      "translit": "āliku",
+      "gloss": "goer, traveller; going, flowing",
+      "relation": "cognate",
+      "note": "The participle of alāku as a noun, “one who goes, traveller”, and as an adjective of water and wind, “flowing, blowing”: both senses of הֵלֶךְ (2Sa 12:4; 1Sa 14:26).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000002010, āliku [goer] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "cmawro x000019740, āliku [going] AJ: “flowing”, “blowing”"
+        }
+      ]
+    },
+    {
+      "id": "akk-tallaktu",
+      "lang": "akk",
+      "form": "tallaktu",
+      "translit": "tallaktu",
+      "gloss": "walkway, path, processional walk; way of life",
+      "relation": "cognate",
+      "note": "The same ta- noun of the root as תַּהֲלוּכָה, among whose meanings is a processional walk.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000031170, tallaktu [walkway] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-ilku",
+      "lang": "akk",
+      "form": "ilku",
+      "translit": "ilku",
+      "gloss": "(state) service; due",
+      "relation": "loan",
+      "note": "A noun of alāku for the service, and the dues in its place, owed to the state. Biblical Aramaic הֲלָךְ, a royal due listed with tribute (Ezr 4:13), answers to it in sense and form, and looks borrowed from it in Mesopotamian administration.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000004300, ilku [state service] N: “due”, “state service”"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000025540, ilku [(state) service] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-hlk",
+      "lang": "uga",
+      "form": "𐎅𐎍𐎋",
+      "translit": "hlk",
+      "gloss": "go; (Gt) walk, stroll",
+      "relation": "cognate",
+      "note": "G “to go” (“Il went to his house”, KTU 1.114:17), with a Gt stem “to walk, stroll” that answers to the Hebrew hithpael.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 184, §93 glossary, /h-l-k/ “to go”; Gt “to walk, stroll”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000114 hlk [go], UGC001739 hlk [go]"
+        }
+      ]
+    },
+    {
+      "id": "uga-hlk-course",
+      "lang": "uga",
+      "form": "𐎅𐎍𐎋",
+      "translit": "hlk",
+      "gloss": "course, going",
+      "relation": "cognate",
+      "note": "A noun, “course”, in Paghat “knowing the course of the stars” (hlk kbkbm, KTU 1.19 II 6–7): a going taken as a course, like the הֲלִיכוֹת of God (Hab 3:6).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 184, §93 glossary, hlk /hilk-/ (?) “course”"
+        }
+      ]
+    },
+    {
+      "id": "phn-hlk",
+      "lang": "phn",
+      "form": "𐤄𐤋𐤊",
+      "translit": "hlk",
+      "gloss": "go, go away; march; walk, travel; (yiphil) send, bring; (hitpael) go about, behave",
+      "relation": "cognate",
+      "note": "Phoenician and Punic use the verb as Hebrew does: “a woman walks alone” on roads once feared (KAI 26 A II 3–6); the causative “bring a sacrifice”; and a stem with t, “go about”, figuratively “comport oneself, behave” (KAI 24.9–10), the hithpael’s walk of conduct.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 156–157, H-L-K I"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000114 hlk [go], PUN000582 hlk [go]"
+        }
+      ]
+    },
+    {
+      "id": "phn-hlk-traveller",
+      "lang": "phn",
+      "form": "𐤄𐤋𐤊",
+      "translit": "hlk",
+      "gloss": "traveller, passer-by; host, guest-friend",
+      "relation": "cognate",
+      "note": "The noun of הֵלֶךְ: “Tarry, traveller, and read the inscription” (KAI 165.1–3); in Plautus’ Punic, a guest-friend. The traveller received as a guest is the הֵלֶךְ of 2Sa 12:4.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 157, HLK II"
+        }
+      ]
+    },
+    {
+      "id": "arc-halak",
+      "lang": "arc",
+      "form": "הֲלַךְ",
+      "translit": "hălak",
+      "gloss": "walk; (pael) walk",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums, with the contracted forms יְהָךְ, מְהָךְ that Ezra’s Aramaic has.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "E00562, הֲלַךְ",
+          "note": "“to walk”, Targ. Ps. 126:6; Pa. “same”; contr. יְהָךְ, מְהָךְ."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000114 hlk [go], ARM008085 HLK [go]"
+        }
+      ]
+    },
+    {
+      "id": "arc-halak-toll",
+      "lang": "arc",
+      "form": "הֲלָךְ",
+      "translit": "hălāk",
+      "gloss": "a tax",
+      "relation": "cognate",
+      "note": "Jewish Aramaic keeps Ezra’s word as the name of a tax.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "E00563, הֲלָךְ",
+          "note": "“name of a tax”, B. Bath. 8a; Ned. 62b."
+        }
+      ]
+    },
+    {
+      "id": "ar-halaka",
+      "lang": "ar",
+      "form": "هَلَكَ",
+      "translit": "halaka",
+      "gloss": "perish, die, pass away; go away, no one knew whither",
+      "relation": "cognate",
+      "note": "Arabic has the root only for perishing: “he perished, came to nought, passed away, was no more … or went away, no one knew whither: he died.” That is the Hebrew going away in death (1Ki 2:2; Psa 39:14 “before I go and am no more”), and nowhere the ordinary going.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3044, root هلك, هَلَكَ (n44327)"
+        }
+      ]
+    },
+    {
+      "id": "sab-hlk",
+      "lang": "sem",
+      "form": "hlk",
+      "translit": "hlk",
+      "gloss": "conform, comply (?)",
+      "relation": "possible",
+      "note": "Old South Arabian (Sabaic), once, with the sense guessed from Hebrew “go, direct oneself”; it adds nothing until its meaning is fixed in its own texts.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 111, HLK"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "walking-with-god",
+      "statement": "Scripture speaks of a life as a walk: a course kept day by day, in a direction, and in someone’s company. Enoch walked with God for three hundred years, Noah, “whole in his generations”, walked with God, and Abraham was told “walk before me and be whole” (Gen 5:22; 6:9; 17:1). Israel was to walk in all Yahweh’s ways, beside fearing, loving and serving him, and to walk after him and not after other gods (Deu 10:12; 13:5; 6:14); Micah sums up what Yahweh requires as doing justice, loving kindness and walking humbly with God (Mic 6:8). The Septuagint renders “walked with God” as “pleased God”, and Hebrews takes it up: Enoch “was witnessed to have pleased God”, and “without faith it is impossible to please him” (Heb 11:5–6). The New Testament keeps the Hebrew figure: “if we walk in the light, as he is in the light”, and “he who says he abides in him ought himself to walk as he walked” (1Jn 1:7; 2:6). From the verses: walking with God is the whole course of a life lived in his company, which faith produces and which pleases him; it is not an act once done, nor a feeling, but a road kept.",
+      "evidence": [
+        {
+          "ref": "Gen.5.22"
+        },
+        {
+          "ref": "Gen.5.24"
+        },
+        {
+          "ref": "Gen.6.9"
+        },
+        {
+          "ref": "Gen.17.1"
+        },
+        {
+          "ref": "Deu.10.12"
+        },
+        {
+          "ref": "Deu.13.5"
+        },
+        {
+          "ref": "Deu.6.14"
+        },
+        {
+          "ref": "Mic.6.8"
+        },
+        {
+          "ref": "Heb.11.5",
+          "to": "Heb.11.6"
+        },
+        {
+          "ref": "1Jn.1.7"
+        },
+        {
+          "ref": "1Jn.2.6"
+        }
+      ]
+    },
+    {
+      "topic": "god-among-his-people",
+      "statement": "Yahweh is said to walk among his people: in the garden (Gen 3:8), with the tent and tabernacle from the exodus to David’s day (2Sa 7:6–7), and in the camp, which was therefore to be holy so that he would see nothing unclean and turn away (Deu 23:15). He promised, “I will walk among you, and be your God, and you shall be my people” (Lev 26:12). Paul quotes the promise of the believers: “you are the temple of the living God; as God said, I will dwell in them and walk among them” (2Co 6:16), and draws the same conclusion Deuteronomy drew of the camp: come out and be separate, and cleanse yourselves from all defilement of flesh and spirit (2Co 6:17–7:1). From the verses: the people among whom God walks are his dwelling, and his presence requires their holiness.",
+      "evidence": [
+        {
+          "ref": "Gen.3.8"
+        },
+        {
+          "ref": "2Sa.7.6",
+          "to": "2Sa.7.7"
+        },
+        {
+          "ref": "Deu.23.15"
+        },
+        {
+          "ref": "Lev.26.12"
+        },
+        {
+          "ref": "2Co.6.16",
+          "to": "2Co.6.18"
+        },
+        {
+          "ref": "2Co.7.1"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Dying is called a going: “I am going the way of all the earth” (Jos 23:14; 1Ki 2:2). The verses say where it goes: “all go to one place; all are from the dust, and all return to the dust” (Ecc 3:20); “before I go and am no more” (Psa 39:14); “before I go, and do not return, to the land of darkness” (Job 10:21; 16:22). David says of his dead child, “I shall go to him, but he will not return to me” (2Sa 12:23). Man “goes to his eternal house”, the dust returning to the earth as it was (Ecc 12:5, 7). The going of death is to the dust and the grave, into being no more, and not a going on into another life. Its one way back is the one Daniel is given: “go your way to the end; you shall rest, and stand in your lot at the end of the days” (Dan 12:13), rest in death until the resurrection at the end (Dan 12:2).",
+      "evidence": [
+        {
+          "ref": "Jos.23.14"
+        },
+        {
+          "ref": "1Ki.2.2"
+        },
+        {
+          "ref": "Ecc.3.20"
+        },
+        {
+          "ref": "Psa.39.14"
+        },
+        {
+          "ref": "Job.10.21"
+        },
+        {
+          "ref": "Job.16.22"
+        },
+        {
+          "ref": "2Sa.12.23"
+        },
+        {
+          "ref": "Ecc.12.5"
+        },
+        {
+          "ref": "Ecc.12.7"
+        },
+        {
+          "ref": "Dan.12.13"
+        },
+        {
+          "ref": "Dan.12.2"
+        }
+      ]
+    }
+  ],
+  "note": "The database keys the root הלכ. The brief’s 510 “no stem” tokens under e.bn.aa are the spellings לְךָ (to you) and נָּא, which the spelling index files under the verb as well as under their own keys (k.dh.aa, n.ab.aa); they are not uses of the verb and inflate its count, so the stated ~1,550 uses count the stems only. Nah 2:6 בַּהֲלִיכָתָם (Kt בהלוכתם) has no key in the database and is cited under הֲלִיכָה by hand. BDB’s redirect keys l.bo.af (לְךָ), l.bp.ad (לְכָה), m.ap.ab (מַהֲלָךְ) and w.ag.ae (תַּהֲלוּכָה) have no tokens and add no word; they are left unclaimed. The Peshitta words are given lemmas in Hebrew script from SEDRA lexemes 797 (HLC) and 798 (HLCTA); their verses were read from the database’s Peshitta tokens (pael forms, 110 tokens; the noun once, 1Jn 2:6). Zec 3:7 מַהְלְכִים is filed by BDB as a plural of מַהֲלָךְ; it could also be read as a hiphil participle “those who lead”, to be checked. הֲלָךְ “toll” is taken as a loan from Akkadian ilku; the derivation is a lead to confirm in CAD (ilku) before review. Fisher 1969 has an entry for hlk (comparing Ge’ez) not read here because of its OCR; Ge’ez has no ordinary verb of this root. Hobab (Num 10:29) bears a name of another root and is not a name of this one."
+}
