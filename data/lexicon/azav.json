@@ -1,0 +1,1458 @@
+{
+  "id": "azav",
+  "root": "עזב",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "leaving",
+    "forsaking",
+    "apostasy",
+    "faithfulness",
+    "poor",
+    "repentance",
+    "deliverance"
+  ],
+  "gloss": "leave, leave behind; forsake, abandon; let go",
+  "summary": "To leave: to go away from someone (a man leaves father and mother, Gen 2:24; “do not leave us”, Num 10:31), to leave something behind for another (the gleanings left for the poor and the stranger, Lev 23:22), to leave in someone’s hand, and to let go of a way or a sin (Isa 55:7). Most often it is to forsake: Israel forsaking Yahweh and his covenant (Jer 2:13), and Yahweh’s promise that he will not forsake those who seek him (Deu 31:6; Psa 9:11), which Hebrews and the cry from the cross take up (Heb 13:5; Mat 27:46). Akkadian ezēbu “leave, abandon” is the same verb, and its causative “cause to leave (danger), save” was borrowed into Aramaic as שֵׁיזִב, “deliver”, in Daniel. A second verb of the same spelling, “restore, repair”, is used of the wall of Jerusalem (Neh 3:8).",
+  "words": [
+    {
+      "lemma": "עָזַב",
+      "bdb": [
+        "p.bv.aa"
+      ],
+      "pos": "verb",
+      "gloss": "leave, forsake, abandon; leave behind; let go",
+      "cognate_ids": [
+        "akk-ezebu",
+        "ar-adhaba",
+        "ar-azaba",
+        "arc-azab"
+      ],
+      "summary": "Some 215 uses, nearly all qal. The object is what is left: a person or place gone away from, a thing left behind or left with someone, a god or a law forsaken, a sin let go. Over a third of its uses are of forsaking Yahweh or of Yahweh forsaking or not forsaking his people.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "leave, forsake; leave behind; let go",
+          "senses": [
+            {
+              "id": "leave-go-away",
+              "gloss": "leave, go away from",
+              "definition": "Go away from a person or a place, so that one is no longer with them; the opposite of cleaving to them or going with them.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.24",
+                  "role": "defining",
+                  "note": "A man leaves his father and mother and cleaves (דָּבַק) to his wife."
+                },
+                {
+                  "ref": "Num.10.31",
+                  "role": "defining",
+                  "note": "Moses to Hobab: “Please do not leave us, for you know where we should camp in the wilderness, and you will be eyes for us.”"
+                },
+                {
+                  "ref": "Rut.1.16",
+                  "role": "defining",
+                  "note": "“Do not urge me to leave you, to turn back from following after you”: leaving set against going where she goes (Rut 1:14, Ruth cleaves to her)."
+                },
+                {
+                  "ref": "Gen.44.22",
+                  "note": "The boy cannot leave his father; if he leaves him, he will die."
+                },
+                {
+                  "ref": "2Ki.2.2",
+                  "note": "Elisha to Elijah, three times: “I will not leave you.”"
+                },
+                {
+                  "ref": "Rut.2.11",
+                  "note": "Ruth left her father and mother and the land of her birth."
+                },
+                {
+                  "ref": "1Ki.19.20",
+                  "note": "Elisha leaves the oxen and runs after Elijah."
+                },
+                {
+                  "ref": "2Ki.7.7",
+                  "note": "The Arameans abandon tents, horses and donkeys and flee."
+                },
+                {
+                  "ref": "Gen.39.12",
+                  "note": "Joseph leaves his garment in her hand and flees."
+                },
+                {
+                  "ref": "Jer.51.9",
+                  "note": "“Leave her, and let us go each to his own land.”"
+                }
+              ]
+            },
+            {
+              "id": "leave-behind",
+              "gloss": "leave behind, leave remaining (for another)",
+              "definition": "Leave something where it is, not taking it, so that it remains; with לְ, leave it for someone. The gleanings and the edges of the field are left for the poor and the stranger.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.22",
+                  "role": "defining",
+                  "note": "“You shall not finish the edge of your field… nor glean the gleaning; for the poor and for the stranger you shall leave them.”"
+                },
+                {
+                  "ref": "Lev.19.10",
+                  "role": "defining",
+                  "note": "The vineyard’s gleanings and fallen grapes: “for the poor and for the stranger you shall leave them.”"
+                },
+                {
+                  "ref": "Rut.2.16",
+                  "note": "Boaz: pull out some from the bundles “and leave them, and let her glean”."
+                },
+                {
+                  "ref": "Mal.3.19",
+                  "role": "defining",
+                  "note": "The day that burns as an oven “will leave them neither root nor branch”: nothing remaining."
+                },
+                {
+                  "ref": "Psa.49.11",
+                  "note": "The wise and the fool die alike and leave their wealth to others."
+                },
+                {
+                  "ref": "Gen.50.8",
+                  "note": "Only their little ones and flocks they left in Goshen."
+                },
+                {
+                  "ref": "2Sa.15.16",
+                  "note": "David leaves ten concubines to keep the house."
+                },
+                {
+                  "ref": "Jdg.2.21",
+                  "note": "The nations Joshua left when he died."
+                },
+                {
+                  "ref": "Job.39.14",
+                  "note": "The ostrich leaves her eggs on the earth."
+                },
+                {
+                  "ref": "1Ch.16.37",
+                  "note": "David left Asaph and his brothers there before the ark, to minister."
+                }
+              ]
+            },
+            {
+              "id": "leave-with",
+              "gloss": "leave with, entrust, commit (to someone’s hand)",
+              "definition": "Leave something or someone in another’s hand or care, trusting them with it.",
+              "evidence": [
+                {
+                  "ref": "Gen.39.6",
+                  "role": "defining",
+                  "note": "Potiphar “left all that he had in Joseph’s hand”, and knew nothing of what he had."
+                },
+                {
+                  "ref": "Psa.10.14",
+                  "role": "defining",
+                  "note": "“The helpless commits himself to you; you have been the helper of the fatherless.”"
+                },
+                {
+                  "ref": "Jer.49.11",
+                  "role": "defining",
+                  "note": "“Leave your fatherless children; I will keep them alive, and let your widows trust in me.”"
+                },
+                {
+                  "ref": "Job.39.11",
+                  "note": "“Will you trust it because its strength is great, and leave your labour to it?” (the wild ox)."
+                },
+                {
+                  "ref": "Isa.10.3",
+                  "note": "“Where will you leave your glory?” in the day of visitation: where deposit it for safe keeping."
+                }
+              ]
+            },
+            {
+              "id": "forsake",
+              "gloss": "forsake, abandon",
+              "definition": "Leave one to whom one belongs or owes faithfulness, or a way, law or covenant one was bound to keep; to withdraw one’s presence and help. Parallel to forgetting and casting off; opposite to seeking and gathering.",
+              "evidence": [
+                {
+                  "ref": "Jer.2.13",
+                  "role": "defining",
+                  "note": "“They have forsaken me, the fountain of living waters, to hew themselves cisterns.”"
+                },
+                {
+                  "ref": "Isa.49.14",
+                  "role": "defining",
+                  "note": "“Yahweh has forsaken me, and my Lord has forgotten me”: forsaking beside forgetting."
+                },
+                {
+                  "ref": "Psa.27.10",
+                  "role": "defining",
+                  "note": "“My father and my mother have forsaken me, but Yahweh will gather me.”"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "forsake-yahweh",
+                  "gloss": "forsake Yahweh, his law or covenant",
+                  "definition": "Of Israel turning from Yahweh to other gods, or setting aside his law, commandments and covenant.",
+                  "evidence": [
+                    {
+                      "ref": "Jdg.2.12",
+                      "role": "defining",
+                      "note": "“They forsook Yahweh the God of their fathers… and went after other gods.”"
+                    },
+                    {
+                      "ref": "1Sa.12.10",
+                      "role": "defining",
+                      "note": "“We have sinned, because we have forsaken Yahweh and have served the Baals.”"
+                    },
+                    {
+                      "ref": "Deu.29.24",
+                      "role": "defining",
+                      "note": "“Because they forsook the covenant of Yahweh.”"
+                    },
+                    {
+                      "ref": "Deu.31.16",
+                      "note": "“This people will… forsake me and break my covenant.”"
+                    },
+                    {
+                      "ref": "Jdg.10.10"
+                    },
+                    {
+                      "ref": "1Ki.11.33"
+                    },
+                    {
+                      "ref": "1Ki.18.18",
+                      "note": "“You have forsaken the commandments of Yahweh and gone after the Baals.”"
+                    },
+                    {
+                      "ref": "2Ki.17.16",
+                      "note": "“They forsook all the commandments of Yahweh their God.”"
+                    },
+                    {
+                      "ref": "Isa.1.4"
+                    },
+                    {
+                      "ref": "Jer.9.12",
+                      "note": "“Because they have forsaken my law which I set before them.”"
+                    },
+                    {
+                      "ref": "Psa.89.31",
+                      "note": "“If his sons forsake my law.”"
+                    },
+                    {
+                      "ref": "Psa.119.53"
+                    },
+                    {
+                      "ref": "Pro.28.4",
+                      "note": "“Those who forsake the law praise the wicked.”"
+                    },
+                    {
+                      "ref": "Dan.11.30",
+                      "note": "“Those who forsake the holy covenant.”"
+                    },
+                    {
+                      "ref": "Ezr.9.10"
+                    },
+                    {
+                      "ref": "2Ch.7.19"
+                    },
+                    {
+                      "ref": "2Ch.12.1"
+                    },
+                    {
+                      "ref": "2Ch.24.20"
+                    },
+                    {
+                      "ref": "Pro.2.13",
+                      "note": "“Who leave the paths of uprightness to walk in the ways of darkness.”"
+                    }
+                  ]
+                },
+                {
+                  "id": "yahweh-forsake",
+                  "gloss": "(of Yahweh) forsake, or not forsake, his people",
+                  "definition": "Yahweh’s leaving his people without his presence and help; most often in the promise that he will not.",
+                  "evidence": [
+                    {
+                      "ref": "Deu.31.6",
+                      "role": "defining",
+                      "note": "“Yahweh your God, he goes with you; he will not fail you nor forsake you.”"
+                    },
+                    {
+                      "ref": "Deu.31.8"
+                    },
+                    {
+                      "ref": "Jos.1.5",
+                      "role": "defining",
+                      "note": "“As I was with Moses, so I will be with you; I will not fail you nor forsake you.”"
+                    },
+                    {
+                      "ref": "Gen.28.15",
+                      "note": "“I will not leave you until I have done what I have spoken to you.”"
+                    },
+                    {
+                      "ref": "1Ki.8.57",
+                      "note": "“May he not leave us nor cast us off (יִטְּשֵׁנוּ).”"
+                    },
+                    {
+                      "ref": "Psa.9.11",
+                      "role": "defining",
+                      "note": "“You, Yahweh, have not forsaken those who seek you.”"
+                    },
+                    {
+                      "ref": "Psa.37.28"
+                    },
+                    {
+                      "ref": "Psa.94.14"
+                    },
+                    {
+                      "ref": "2Ch.15.2",
+                      "role": "defining",
+                      "note": "“If you seek him, he will be found by you; but if you forsake him, he will forsake you.”"
+                    },
+                    {
+                      "ref": "2Ch.12.5",
+                      "note": "“You have forsaken me, so I also have left you in the hand of Shishak.”"
+                    },
+                    {
+                      "ref": "Deu.31.17",
+                      "note": "“I will forsake them and hide my face from them.”"
+                    },
+                    {
+                      "ref": "Isa.54.7",
+                      "role": "defining",
+                      "note": "“For a small moment I forsook you, but with great compassions I will gather you.”"
+                    },
+                    {
+                      "ref": "Psa.22.2",
+                      "note": "“My God, my God, why have you forsaken me?”, taken up on the cross (Mat 27:46; Mrk 15:34)."
+                    },
+                    {
+                      "ref": "Ezk.8.12",
+                      "note": "The elders say, “Yahweh has forsaken the land.”"
+                    },
+                    {
+                      "ref": "Neh.9.17",
+                      "note": "“You did not forsake them”, in the wilderness."
+                    },
+                    {
+                      "ref": "Ezr.9.9",
+                      "note": "“In our bondage our God has not forsaken us.”"
+                    },
+                    {
+                      "ref": "Mat.27.46"
+                    },
+                    {
+                      "ref": "Heb.13.5",
+                      "note": "Hebrews takes up Deu 31:6 / Jos 1:5: “I will never leave you nor forsake you.”"
+                    }
+                  ]
+                },
+                {
+                  "id": "abandon-to",
+                  "gloss": "abandon to, give over to (another’s power, death)",
+                  "definition": "Leave someone in the hand or power of an enemy or of death, not delivering them.",
+                  "evidence": [
+                    {
+                      "ref": "Psa.16.10",
+                      "role": "defining",
+                      "note": "“You will not leave my soul to the grave, nor give your faithful one to see the pit”: leaving beside giving over."
+                    },
+                    {
+                      "ref": "Psa.37.33",
+                      "role": "defining",
+                      "note": "“Yahweh will not leave him in his hand.”"
+                    },
+                    {
+                      "ref": "Neh.9.28",
+                      "note": "“You left them in the hand of their enemies.”"
+                    },
+                    {
+                      "ref": "2Ch.32.31",
+                      "note": "God left Hezekiah, to test him, to know all that was in his heart."
+                    },
+                    {
+                      "ref": "Act.2.27",
+                      "note": "Peter quotes Psa 16:10 of the resurrection of Christ (Act 2:31)."
+                    }
+                  ]
+                },
+                {
+                  "id": "forsake-people",
+                  "gloss": "forsake, neglect (a person, a charge)",
+                  "definition": "Fail one who depends on you or whom you are bound to care for: the Levite, a friend, a flock, a companion, the house of God.",
+                  "evidence": [
+                    {
+                      "ref": "Deu.14.27",
+                      "role": "defining",
+                      "note": "“The Levite within your gates, do not forsake him, for he has no portion or inheritance with you.”"
+                    },
+                    {
+                      "ref": "Deu.12.19"
+                    },
+                    {
+                      "ref": "Pro.27.10",
+                      "note": "“Your own friend and your father’s friend, do not forsake.”"
+                    },
+                    {
+                      "ref": "Zec.11.17",
+                      "role": "defining",
+                      "note": "“Woe to the worthless shepherd who forsakes the flock.”"
+                    },
+                    {
+                      "ref": "Pro.2.17",
+                      "note": "The strange woman “forsakes the companion of her youth and forgets the covenant of her God.”"
+                    },
+                    {
+                      "ref": "Neh.10.40",
+                      "note": "“We will not forsake the house of our God.”"
+                    },
+                    {
+                      "ref": "Job.20.19",
+                      "note": "He has oppressed and forsaken the poor."
+                    },
+                    {
+                      "ref": "1Sa.30.13",
+                      "note": "“My master left me, because I fell sick three days ago.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "leave-off",
+              "gloss": "let go of, give up, leave off (a way, a sin, a feeling)",
+              "definition": "Cease from and put away something one has held to: a way, anger, a sin, a practice.",
+              "evidence": [
+                {
+                  "ref": "Isa.55.7",
+                  "role": "defining",
+                  "note": "“Let the wicked forsake his way and the man of iniquity his thoughts, and let him return to Yahweh.”"
+                },
+                {
+                  "ref": "Pro.28.13",
+                  "role": "defining",
+                  "note": "“He who confesses and forsakes them [his transgressions] will obtain mercy.”"
+                },
+                {
+                  "ref": "Psa.37.8",
+                  "role": "defining",
+                  "note": "“Cease from anger and forsake wrath”: forsake beside רָפָה, let drop."
+                },
+                {
+                  "ref": "Neh.5.10",
+                  "note": "“Let us leave off this lending at interest.”"
+                },
+                {
+                  "ref": "Pro.9.6",
+                  "note": "“Leave the simple and live.”"
+                },
+                {
+                  "ref": "Ezk.23.8",
+                  "note": "She did not leave her harlotries from Egypt."
+                },
+                {
+                  "ref": "Ezk.20.8",
+                  "note": "They did not forsake the idols of Egypt."
+                },
+                {
+                  "ref": "Hos.4.10",
+                  "note": "“They have left off keeping to Yahweh.”"
+                },
+                {
+                  "ref": "Rut.2.20",
+                  "note": "Yahweh “has not left off his kindness to the living and the dead.”"
+                },
+                {
+                  "ref": "Gen.24.27",
+                  "note": "Who “has not forsaken his kindness and his truth” toward my master."
+                },
+                {
+                  "ref": "Jon.2.9",
+                  "note": "“Those who regard worthless vanities forsake their own kindness.”"
+                },
+                {
+                  "ref": "Job.9.27",
+                  "note": "“Let me forget my complaint, let me leave off my sad face.”"
+                },
+                {
+                  "ref": "Job.10.1",
+                  "note": "“I will let my complaint loose upon myself.”"
+                },
+                {
+                  "ref": "Job.20.13",
+                  "note": "The wicked spares his evil “and will not let it go”, keeping it in his mouth."
+                }
+              ]
+            },
+            {
+              "id": "set-free",
+              "gloss": "let loose, set free; (pass. ptc.) one at large",
+              "definition": "Release, loose from a restraint. The passive participle עָזוּב, “one let go, at large”, is paired with עָצוּר, “one shut up, kept back”, to take in everyone.",
+              "evidence": [
+                {
+                  "ref": "2Ki.14.26",
+                  "role": "defining",
+                  "note": "“There was neither one shut up nor one let go, and no helper for Israel”: no one at all."
+                },
+                {
+                  "ref": "Deu.32.36",
+                  "note": "Yahweh sees “that there is none shut up or let go”."
+                },
+                {
+                  "ref": "1Ki.14.10",
+                  "note": "Cut off from Jeroboam every male, “shut up and let go in Israel”."
+                },
+                {
+                  "ref": "1Ki.21.21"
+                },
+                {
+                  "ref": "2Ki.9.8"
+                },
+                {
+                  "ref": "Exo.23.5",
+                  "note": "The enemy’s donkey lying under its burden: “you shall refrain from leaving it to him; you shall surely loose it with him.” The second verb may instead be עזב “set right, help” (the second verb of this entry); the verse plays on the two."
+                }
+              ]
+            },
+            {
+              "id": "forsaken-ptc",
+              "gloss": "(pass. ptc.) forsaken, deserted",
+              "definition": "The passive participle as an adjective: a forsaken wife, a deserted city; “Forsaken” as Zion’s name, which Yahweh replaces.",
+              "evidence": [
+                {
+                  "ref": "Isa.62.4",
+                  "role": "defining",
+                  "note": "“You shall no longer be called עֲזוּבָה, Forsaken… but you shall be called Hephzibah, My Delight is in Her.”"
+                },
+                {
+                  "ref": "Isa.54.6",
+                  "role": "defining",
+                  "note": "“Like a wife forsaken and grieved in spirit, a wife of youth when she is rejected.”"
+                },
+                {
+                  "ref": "Isa.60.15",
+                  "note": "“Whereas you have been forsaken and hated.”"
+                },
+                {
+                  "ref": "Jer.4.29",
+                  "note": "“Every city is forsaken, and no man dwells in them.”"
+                },
+                {
+                  "ref": "Zep.2.4",
+                  "note": "“Gaza shall be forsaken”: עַזָּה עֲזוּבָה, a play on sound."
+                },
+                {
+                  "ref": "Isa.10.14",
+                  "note": "As one gathers abandoned eggs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be forsaken, be left, be deserted",
+          "senses": [
+            {
+              "id": "forsaken-land",
+              "gloss": "be forsaken, left empty (of land, city, house)",
+              "definition": "Be left without its people or its keepers, empty and desolate.",
+              "evidence": [
+                {
+                  "ref": "Lev.26.43",
+                  "role": "defining",
+                  "note": "“The land shall be left by them and shall enjoy its sabbaths while it lies desolate without them.”"
+                },
+                {
+                  "ref": "Isa.62.12",
+                  "role": "defining",
+                  "note": "“You shall be called Sought Out, A City Not Forsaken”: forsaken against sought."
+                },
+                {
+                  "ref": "Isa.27.10",
+                  "note": "The fortified city is solitary, a habitation sent away and forsaken like the wilderness."
+                },
+                {
+                  "ref": "Ezk.36.4",
+                  "note": "“The forsaken cities, which have become a prey.”"
+                },
+                {
+                  "ref": "Isa.7.16",
+                  "note": "The land whose two kings you dread will be forsaken."
+                },
+                {
+                  "ref": "Neh.13.11",
+                  "note": "“Why is the house of God forsaken?”, its Levites gone for want of their portions."
+                },
+                {
+                  "ref": "Isa.18.6",
+                  "note": "They will be left together to the birds of the mountains and the beasts."
+                },
+                {
+                  "ref": "Job.18.4",
+                  "note": "“Shall the earth be forsaken for your sake?”"
+                }
+              ]
+            },
+            {
+              "gloss": "be forsaken (of a person)",
+              "definition": "Be left without help.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.25",
+                  "role": "defining",
+                  "note": "“I have not seen the righteous forsaken, nor his seed begging bread.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be forsaken, deserted",
+          "senses": [
+            {
+              "gloss": "be deserted (of a city)",
+              "definition": "Be left empty of its people.",
+              "evidence": [
+                {
+                  "ref": "Isa.32.14",
+                  "role": "defining",
+                  "note": "“The palace is forsaken (נֻטָּשׁ), the throng of the city deserted.”"
+                },
+                {
+                  "ref": "Jer.49.25",
+                  "note": "“How is the city of praise not forsaken?” The form עֻזְּבָה may be a qal passive; entered here."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐγκαταλείπω",
+          "gloss": "forsake, abandon, leave behind",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עָזַב → ἐγκαταλείπω ×72 (lemma count, MACULA alignment); Psa.22.2 עֲזַבְתָּנִי → ἐγκατέλιπές; Psa.16.10 תַעֲזֹב → ἐγκαταλείψεις; Deu.31.6 יַעַזְבֶךָּ → ἐγκαταλίπῃ; Num.10.31 → ἐγκαταλίπῃς"
+            },
+            {
+              "ref": "Mat.27.46",
+              "note": "“My God, my God, why have you forsaken me?” (Psa 22:2)."
+            },
+            {
+              "ref": "Mrk.15.34"
+            },
+            {
+              "ref": "Act.2.27",
+              "note": "“You will not leave my soul in Hades” (Psa 16:10)."
+            },
+            {
+              "ref": "Heb.13.5",
+              "note": "“I will never leave you nor forsake you” (Deu 31:6; Jos 1:5)."
+            },
+            {
+              "ref": "2Co.4.9",
+              "note": "“Persecuted, but not forsaken.”"
+            }
+          ]
+        },
+        {
+          "lemma": "καταλείπω",
+          "gloss": "leave, leave behind",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עָזַב → καταλείπω ×17 (lemma count, MACULA alignment); Gen.2.24 יַעֲזָב → καταλείψει"
+            },
+            {
+              "ref": "Mat.19.5",
+              "note": "“For this cause a man shall leave father and mother” (Gen 2:24)."
+            },
+            {
+              "ref": "Mrk.10.7"
+            },
+            {
+              "ref": "Eph.5.31"
+            },
+            {
+              "ref": "2Pe.2.15",
+              "note": "“Having left the straight way”, echoing Pro 2:13."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָטַשׁ",
+            "note": "Cast off, let lie: “do not cast me off nor forsake me”.",
+            "evidence": [
+              {
+                "ref": "Psa.27.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.94.14"
+              },
+              {
+                "ref": "1Ki.8.57"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁכַח",
+            "note": "Forget: forsaking is forgetting one bound to you.",
+            "evidence": [
+              {
+                "ref": "Isa.49.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.5.20"
+              },
+              {
+                "ref": "Pro.2.17"
+              }
+            ]
+          },
+          {
+            "lemma": "רָפָה",
+            "note": "(hiphil) let drop, fail: the fixed pair “he will not fail you nor forsake you”.",
+            "evidence": [
+              {
+                "ref": "Deu.31.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.31.8"
+              },
+              {
+                "ref": "Jos.1.5"
+              },
+              {
+                "ref": "1Ch.28.20"
+              }
+            ]
+          },
+          {
+            "lemma": "מָאַס",
+            "note": "Reject: the forsaken wife beside the wife of youth rejected.",
+            "evidence": [
+              {
+                "ref": "Isa.54.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "דָּבַק",
+            "note": "Cleave: leaving father and mother against cleaving to a wife; Orpah kisses and goes, Ruth cleaves and will not leave.",
+            "evidence": [
+              {
+                "ref": "Gen.2.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Rut.1.14",
+                "to": "Rut.1.16"
+              }
+            ]
+          },
+          {
+            "lemma": "דָּרַשׁ",
+            "note": "Seek: those who seek Yahweh he does not forsake; those who forsake him he forsakes.",
+            "evidence": [
+              {
+                "ref": "Psa.9.11",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.15.2",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ch.28.9"
+              },
+              {
+                "ref": "Isa.62.12"
+              }
+            ]
+          },
+          {
+            "lemma": "אָסַף",
+            "note": "Gather in, take up: “my father and my mother have forsaken me, but Yahweh will gather me”.",
+            "evidence": [
+              {
+                "ref": "Psa.27.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "קָבַץ",
+            "note": "(piel) gather: “for a small moment I forsook you, but with great compassions I will gather you”.",
+            "evidence": [
+              {
+                "ref": "Isa.54.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לֹא יַרְפְּךָ וְלֹא יַעַזְבֶךָּ",
+            "gloss": "he will not fail you nor forsake you",
+            "evidence": [
+              {
+                "ref": "Deu.31.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.31.8"
+              },
+              {
+                "ref": "Jos.1.5"
+              },
+              {
+                "ref": "1Ch.28.20"
+              },
+              {
+                "ref": "Heb.13.5"
+              }
+            ]
+          },
+          {
+            "phrase": "עָזַב אֶת־יַהְוֶה",
+            "gloss": "forsake Yahweh (for other gods)",
+            "evidence": [
+              {
+                "ref": "Jdg.2.12",
+                "to": "Jdg.2.13"
+              },
+              {
+                "ref": "1Sa.12.10"
+              },
+              {
+                "ref": "Isa.1.4"
+              },
+              {
+                "ref": "Jer.2.13"
+              }
+            ]
+          },
+          {
+            "phrase": "עָצוּר וְעָזוּב",
+            "gloss": "shut up and let go: everyone, bond and free",
+            "evidence": [
+              {
+                "ref": "Deu.32.36"
+              },
+              {
+                "ref": "1Ki.14.10"
+              },
+              {
+                "ref": "1Ki.21.21"
+              },
+              {
+                "ref": "2Ki.9.8"
+              },
+              {
+                "ref": "2Ki.14.26",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עָזַב בְּיַד",
+            "gloss": "leave in the hand of: entrust to, or abandon to",
+            "evidence": [
+              {
+                "ref": "Gen.39.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.37.33",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.9.28"
+              }
+            ]
+          },
+          {
+            "phrase": "לֶעָנִי וְלַגֵּר תַּעֲזֹב אֹתָם",
+            "gloss": "for the poor and the stranger you shall leave them",
+            "evidence": [
+              {
+                "ref": "Lev.19.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.22",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָזַב",
+      "pos": "verb",
+      "gloss": "restore, repair (a wall)",
+      "cognate_ids": [
+        "sab-adhab",
+        "uga-adb",
+        "gez-azzaba"
+      ],
+      "summary": "A second verb spelled עזב, of rebuilding Jerusalem’s wall. Its uses are not counted separately, because the corpus files every token of the spelling under both verbs; only Neh 3:8 and 3:34 are clear, and Exo 23:5 may be a third. Sabaic ʿḏb “repair” and Ugaritic ʿdb “prepare, set” share the sense. Whether it is at root the same verb as “leave” is not known: Sabaic’s ḏ matches the ḏ Arabic shows for “leave, quit” (see the cognates), but nothing in the text links the two senses.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "restore, repair",
+          "senses": [
+            {
+              "gloss": "restore, repair, set in order",
+              "definition": "Put a damaged wall back in order: the work of rebuilding Jerusalem’s wall under Nehemiah.",
+              "evidence": [
+                {
+                  "ref": "Neh.3.8",
+                  "role": "defining",
+                  "note": "“And they restored Jerusalem as far as the Broad Wall”, in a chapter where every other builder “repaired” (הֶחֱזִיק)."
+                },
+                {
+                  "ref": "Neh.3.34",
+                  "role": "defining",
+                  "note": "Sanballat mocks: “Will they restore for themselves? Will they sacrifice? Will they finish in a day? Will they revive the stones out of the heaps of rubbish?”"
+                },
+                {
+                  "ref": "Exo.23.5",
+                  "note": "“You shall surely help (or loose) with him”: if this verb, setting the fallen load right. The verse’s first עֲזֹב is “leave”."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲזוּבָה",
+      "bdb": [
+        "p.bv.ab"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "forsakenness; deserted place",
+      "summary": "The feminine passive participle used as a noun: what has been left empty. One use as a noun proper; the same form is Zion’s name “Forsaken” and the woman’s name Azubah.",
+      "cognate_ids": [
+        "akk-ezebu"
+      ],
+      "senses": [
+        {
+          "gloss": "deserted place, desolation",
+          "definition": "Land left empty of its people after Yahweh has sent them far away.",
+          "kin": [
+            "forsaken-land",
+            "forsaken-ptc"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.6.12",
+              "role": "defining",
+              "note": "“Yahweh has removed men far away, and the forsaken places are many in the midst of the land.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עִזָּבוֹן",
+      "bdb": [
+        "p.bv.ad"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wares, merchandise (given in exchange)",
+      "summary": "Only in the plural, seven times in Ezekiel’s lament over Tyre’s trade. The link to “leave” is not certain: the likeliest is goods left with, or handed over to, the trader in exchange, as Akkadian ezēbu is “leave with, deposit, entrust”.",
+      "cognate_ids": [
+        "akk-ezebu"
+      ],
+      "senses": [
+        {
+          "gloss": "wares, goods traded",
+          "definition": "The goods Tyre received and sent out in trade: the nations “gave” silver, iron, horses, spices for them, and they “went out from the seas”.",
+          "kin": [
+            "leave-with"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.27.12",
+              "role": "defining",
+              "note": "“Tarshish… with silver, iron, tin and lead they gave (for) your wares.”"
+            },
+            {
+              "ref": "Ezk.27.33",
+              "role": "defining",
+              "note": "“When your wares went out from the seas, you satisfied many peoples.”"
+            },
+            {
+              "ref": "Ezk.27.14"
+            },
+            {
+              "ref": "Ezk.27.16"
+            },
+            {
+              "ref": "Ezk.27.19"
+            },
+            {
+              "ref": "Ezk.27.22"
+            },
+            {
+              "ref": "Ezk.27.27",
+              "note": "Beside הוֹן, wealth, and מַעֲרָב, merchandise."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׁיזִב",
+      "lang": "arc",
+      "root": "שיזב",
+      "bdb": [
+        "xv.al.ab"
+      ],
+      "pos": "verb",
+      "gloss": "deliver, rescue",
+      "summary": "Biblical Aramaic, nine times in Daniel. It is the Akkadian causative of ezēbu, šūzubu “cause to leave (danger), save”, borrowed into Aramaic: “leave” made to happen, so “bring out safe”.",
+      "cognate_ids": [
+        "akk-shuzubu"
+      ],
+      "stems": [
+        {
+          "stem": "shaphel",
+          "gloss": "deliver, rescue",
+          "senses": [
+            {
+              "id": "deliver",
+              "gloss": "deliver, rescue (from death)",
+              "definition": "Bring someone out safe from a power that would destroy them: the furnace, the lions, the king’s hand. Parallel to הַצֵּל, deliver.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.28",
+                  "role": "defining",
+                  "note": "“He delivers and rescues (מְשֵׁיזִב וּמַצִּל)… who has delivered Daniel from the power of the lions.”"
+                },
+                {
+                  "ref": "Dan.3.17",
+                  "role": "defining",
+                  "note": "“Our God whom we serve is able to deliver us from the burning fiery furnace, and he will deliver us from your hand, O king.”"
+                },
+                {
+                  "ref": "Dan.3.15",
+                  "note": "“Who is the god that will deliver you out of my hands?”"
+                },
+                {
+                  "ref": "Dan.3.28",
+                  "note": "God “sent his angel and delivered his servants who trusted in him”."
+                },
+                {
+                  "ref": "Dan.6.15",
+                  "note": "The king set his heart on Daniel to deliver him."
+                },
+                {
+                  "ref": "Dan.6.17",
+                  "note": "“Your God whom you serve continually, he will deliver you.”"
+                },
+                {
+                  "ref": "Dan.6.21",
+                  "note": "“Has your God… been able to deliver you from the lions?”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁוְזֵב",
+      "lang": "syc",
+      "root": "שוזב",
+      "pos": "verb",
+      "gloss": "deliver; (eshtaphal) escape, be saved",
+      "summary": "The Peshitta’s form of the same borrowed verb, in the New Testament.",
+      "cognate_ids": [
+        "akk-shuzubu"
+      ],
+      "stems": [
+        {
+          "stem": "shaphel",
+          "gloss": "deliver",
+          "senses": [
+            {
+              "gloss": "deliver, keep safe",
+              "definition": "Bring out safe from evil.",
+              "kin": [
+                "deliver"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Th.3.3",
+                  "role": "defining",
+                  "note": "“The Lord is faithful, who will establish you and deliver you from the evil.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "eshtaphal",
+          "gloss": "escape, come out safe",
+          "senses": [
+            {
+              "gloss": "escape, be brought through safe",
+              "definition": "Come out alive from danger.",
+              "kin": [
+                "deliver"
+              ],
+              "evidence": [
+                {
+                  "ref": "Act.27.44",
+                  "role": "defining",
+                  "note": "“And so all escaped safe to land.”"
+                },
+                {
+                  "ref": "Act.28.4",
+                  "role": "defining",
+                  "note": "“Though he escaped from the sea, justice has not let him live.”"
+                },
+                {
+                  "ref": "1Co.3.15",
+                  "note": "“He himself will be saved, yet so as through fire.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שׁוּזָבָא",
+      "lang": "syc",
+      "root": "שוזב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "deliverance",
+      "cognate_ids": [
+        "akk-shuzubu"
+      ],
+      "senses": [
+        {
+          "gloss": "deliverance, salvation",
+          "definition": "The rescue God brings about, for the Greek σωτηρία.",
+          "kin": [
+            "deliver"
+          ],
+          "evidence": [
+            {
+              "ref": "Rev.12.10",
+              "role": "defining",
+              "note": "“Now has come the deliverance and the power and the kingdom of our God.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ezebu",
+      "lang": "akk",
+      "form": "ezēbu",
+      "translit": "ezēbu",
+      "gloss": "leave, leave behind; abandon, forsake; leave with, entrust; (Š) save, rescue",
+      "relation": "cognate",
+      "note": "Oracc’s glossaries give the verb (over 2000 attestations, Old Assyrian to Hellenistic) as leave, leave behind, go away from, abandon, desert, forsake, give up, set aside, spare, and the adjective ezbu as “abandoned, left”: the Hebrew verb’s range almost word for word. Akkadian z cannot show whether z or ḏ stands behind ז, and Akkadian has lost ʿ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008810, ezēbu [leave] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000010440, ezbu [abandoned] AJ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000595 ʿḏb [leave] V: Akkadian ezēbu, Hebrew ʿazab, Ugaritic ʿdb"
+        }
+      ]
+    },
+    {
+      "id": "akk-shuzubu",
+      "lang": "akk",
+      "form": "šūzubu",
+      "translit": "šūzubu",
+      "gloss": "save, rescue (Š stem of ezēbu, “cause to leave”)",
+      "relation": "loan",
+      "note": "The causative stem of ezēbu, with the forms šūzub and šēzib, glossed “rescue, save”. Aramaic שֵׁיזִב (Daniel), Targumic שֵׁיזֵב “release, save”, and Syriac ܫܘܙܒ are this Akkadian form borrowed: a Š stem with no Aramaic base verb.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008810, ezēbu [leave] V, forms šūzub, šēzib; senses “rescue, save”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שֵׁיזֵב (U00843)",
+          "note": "“Shaf. of עזב… to release, save”: Targ. Exo 2:19; Deu 32:39."
+        }
+      ]
+    },
+    {
+      "id": "ar-adhaba",
+      "lang": "ar",
+      "form": "أَعْذَبَ عَنْ",
+      "translit": "aʿḏaba ʿan",
+      "gloss": "abstain, desist from; leave, quit, relinquish (a thing)",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "ז": "ḏ"
+      },
+      "note": "Lane’s sources give form IV with عَنْ as “he abstained, or desisted, from a thing; he left, quitted, or relinquished, a thing”, with the verbal noun عَذْبٌ, abstaining. This matches the Hebrew’s “leave off, let go” and is the Arabic of the root Anderson and Moser reconstruct as *ʿḏb “leave”; it shows ḏ, not z, behind ז. It is a minor sense of an Arabic root whose chief senses are “be sweet (water)” and “punish”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1981, root عذب, اعذب (n28407)"
+        }
+      ]
+    },
+    {
+      "id": "ar-azaba",
+      "lang": "ar",
+      "form": "عَزَبَ",
+      "translit": "ʿazaba",
+      "gloss": "be or become distant, remote, absent; go away, depart",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ",
+        "ז": "z"
+      },
+      "note": "Lane’s sources: “he, or it, was, or became, distant, or remote; and absent… and went away, or departed”, of camels pastured far from the camp and not brought back at evening; and of one without a wife (عَزَبٌ, bachelor). Close to “leave, go away from”, but it shows z, not ḏ, behind ז, against the Arabic أَعْذَبَ and Sabaic ʿḏb; one of the two is not the Hebrew’s cognate. Recorded as possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2033, root عزب, عَزَبَ (n28937)"
+        }
+      ]
+    },
+    {
+      "id": "arc-azab",
+      "lang": "arc",
+      "form": "עֲזַב",
+      "translit": "ʿăzab",
+      "gloss": "forsake; (pass. ptc. עָזֵיב) abandoned, lonely",
+      "relation": "possible",
+      "note": "Jewish Aramaic (Talmud Yerushalmi). If the older root had ḏ, native Aramaic would write it with ד; עזב with ז may be the Hebrew word taken into Aramaic. Recorded as possible.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲזַב (P00394)",
+          "note": "Y. Kidd. I, 61a."
+        }
+      ]
+    },
+    {
+      "id": "sab-adhab",
+      "lang": "sem",
+      "form": "𐩲𐩹𐩨",
+      "translit": "ʿḏb",
+      "gloss": "repair; (h-stem) renew, repair; also be fined, punish",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "ז": "ḏ"
+      },
+      "note": "Sabaic (Old South Arabian), which keeps ʿ/ġ and z/ḏ apart: “to repair the dam… the breach” (C 541/60); h-stem “he repaired and completed the whole cistern” (J 542/2), “he renewed the tribal assembly of the Sabaeans” (R 3945/1). Goes with the second verb, “restore, repair” (Neh 3:8).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 354, ʿḎB"
+        }
+      ]
+    },
+    {
+      "id": "uga-adb",
+      "lang": "uga",
+      "form": "𐎓𐎄𐎁",
+      "translit": "ʿdb",
+      "gloss": "prepare, set; (ʿdbt) installation, building",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Segert: y ʿdb ksa “he prepares the seat” (KTU 1.100:7), and the noun ʿdbt “installation, building”; he compares the Hebrew of Exo 23:5. Ugaritic often writes older ḏ as d, so it cannot show z or ḏ behind ז. Goes with the second verb, “restore, set in order”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 195, §93 Glossary, /ʿ-d-b/ and ʿdbt"
+        }
+      ]
+    },
+    {
+      "id": "gez-azzaba",
+      "lang": "gez",
+      "form": "ዐዘበ",
+      "translit": "ʿazzaba",
+      "gloss": "assist, help",
+      "relation": "possible",
+      "note": "Listed by Anderson and Moser under a separate root *ʿzb “help”. It would fit Exo 23:5 read as “help with him”, but Ge’ez z cannot show z or ḏ, and Dillmann and Leslau have not been checked. Named on the second verb as possible only.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000665 ʿzb [help] V: Ge’ez ʿazzaba [assist]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "leave-and-cleave",
+      "statement": "Of the first marriage it is said, “a man shall leave his father and his mother and cleave to his wife, and they shall be one flesh” (Gen 2:24). Jesus quotes it and draws the conclusion, “what God has joined together, let not man separate” (Mat 19:5–6; Mrk 10:7–9), and Paul applies it to Christ and the ecclesia (Eph 5:31–32). The strange woman is the one who “forsakes the companion of her youth and forgets the covenant of her God” (Pro 2:17). From the verses: marriage begins in a leaving that makes a new bond, which God joins and which is not to be forsaken; and that bond pictures Christ and his ecclesia.",
+      "evidence": [
+        {
+          "ref": "Gen.2.24"
+        },
+        {
+          "ref": "Mat.19.5",
+          "to": "Mat.19.6"
+        },
+        {
+          "ref": "Mrk.10.7",
+          "to": "Mrk.10.9"
+        },
+        {
+          "ref": "Eph.5.31",
+          "to": "Eph.5.32"
+        },
+        {
+          "ref": "Pro.2.17"
+        }
+      ]
+    },
+    {
+      "topic": "never-forsaken",
+      "statement": "Moses tells Israel and Joshua that Yahweh goes with them, “he will not fail you nor forsake you” (Deu 31:6, 8), and Yahweh says it to Joshua himself (Jos 1:5); David says it to Solomon (1Ch 28:20). The psalmist: “you have not forsaken those who seek you” (Psa 9:11); “I have not seen the righteous forsaken” (Psa 37:25). Yet the same promise is conditional: “if you seek him, he will be found by you; but if you forsake him, he will forsake you” (2Ch 15:2; 1Ch 28:9), and Israel, forsaking him, was left in its enemies’ hand (2Ch 12:5; Deu 31:16–17). Even then, “for a small moment I forsook you, but with great compassions I will gather you” (Isa 54:7–8; 49:14–15). Hebrews takes the promise to Joshua as spoken to believers: “he has said, I will never leave you nor forsake you”, so that we may boldly say, “The Lord is my helper” (Heb 13:5–6). From the verses: Yahweh does not forsake those who seek him; his forsaking is the answer to being forsaken, and even that is for a moment, with mercy beyond it.",
+      "evidence": [
+        {
+          "ref": "Deu.31.6"
+        },
+        {
+          "ref": "Deu.31.8"
+        },
+        {
+          "ref": "Jos.1.5"
+        },
+        {
+          "ref": "1Ch.28.20"
+        },
+        {
+          "ref": "Psa.9.11"
+        },
+        {
+          "ref": "Psa.37.25"
+        },
+        {
+          "ref": "2Ch.15.2"
+        },
+        {
+          "ref": "1Ch.28.9"
+        },
+        {
+          "ref": "2Ch.12.5"
+        },
+        {
+          "ref": "Deu.31.16",
+          "to": "Deu.31.17"
+        },
+        {
+          "ref": "Isa.54.7",
+          "to": "Isa.54.8"
+        },
+        {
+          "ref": "Isa.49.14",
+          "to": "Isa.49.15"
+        },
+        {
+          "ref": "Heb.13.5",
+          "to": "Heb.13.6"
+        }
+      ]
+    },
+    {
+      "topic": "forsake-sin",
+      "statement": "“Let the wicked forsake his way, and the unrighteous man his thoughts, and let him return to Yahweh, and he will have mercy on him” (Isa 55:7); “he who covers his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy” (Pro 28:13). From the verses: repentance is a leaving as well as a confessing: the way and the sins are let go, and mercy is promised to the one who does so.",
+      "evidence": [
+        {
+          "ref": "Isa.55.7"
+        },
+        {
+          "ref": "Pro.28.13"
+        }
+      ]
+    },
+    {
+      "topic": "not-left-in-the-grave",
+      "statement": "David writes, “you will not leave my soul to the grave, nor will you give your faithful one to see the pit” (Psa 16:10). Peter quotes it at Pentecost and says that David is both dead and buried, his tomb still with them, and has not ascended into the heavens; being a prophet, he spoke of the resurrection of the Christ, “that his soul was not left in the grave, nor did his flesh see corruption” (Act 2:27–31, 34); Paul argues the same (Act 13:35–37). From the verses: the soul in the grave is the man himself in death, as David still is; not to be left there is to be raised from the dead, which God did for Jesus before his flesh saw corruption.",
+      "evidence": [
+        {
+          "ref": "Psa.16.10"
+        },
+        {
+          "ref": "Act.2.27",
+          "to": "Act.2.31"
+        },
+        {
+          "ref": "Act.2.34"
+        },
+        {
+          "ref": "Act.13.35",
+          "to": "Act.13.37"
+        }
+      ]
+    },
+    {
+      "topic": "why-have-you-forsaken-me",
+      "statement": "Psalm 22 opens “My God, my God, why have you forsaken me?” (Psa 22:2), and Jesus cries these words on the stake (Mat 27:46; Mrk 15:34). In the psalm the forsaken one is surrounded by enemies, his hands and feet pierced, his garments divided, and laid “in the dust of death” (Psa 22:13–19); yet before it ends he says that God “has not despised… nor hidden his face from him, but when he cried to him he heard”, and he declares God’s name to his brothers in the congregation (Psa 22:23–25), words Hebrews puts in Christ’s mouth (Heb 2:12). Hebrews also says he offered prayers with strong crying to the one able to save him from death, and was heard (Heb 5:7). From the verses: the forsaking was God’s leaving his son in the hands of men to die, not delivering him from the stake; it was not the end of the matter, for he was heard, and was saved out of death.",
+      "evidence": [
+        {
+          "ref": "Psa.22.2"
+        },
+        {
+          "ref": "Mat.27.46"
+        },
+        {
+          "ref": "Mrk.15.34"
+        },
+        {
+          "ref": "Psa.22.13",
+          "to": "Psa.22.19"
+        },
+        {
+          "ref": "Psa.22.23",
+          "to": "Psa.22.25"
+        },
+        {
+          "ref": "Heb.2.12"
+        },
+        {
+          "ref": "Heb.5.7"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Root key עזב as the corpus keys it. bdb: p.bv.aa (verb I), p.bv.ab, p.bv.ad, and xv.al.ab (Aramaic שֵׁיזִב, root שיזב). p.bw.aa (BDB’s “restore, repair”) lists the same 219 tokens as p.bv.aa, so it is not named; the second verb has no bdb key and its uses are not counted. Left out: עַזָּה Gaza (p.bw.ac) and its gentilic עַזָּתִי (p.bw.ad), filed here only by BDB’s order: the Greek Γάζα and Arabic غزّة show ġ behind ע, another root (and Exo 14:21, Pro 21:14, Sng 8:6 among its tokens are עַז “strong”); Gaza is a place, so no name entry. The name עֲזוּבָה Azubah (p.bv.ac; Azubah@1Ki.22.42, Azubah@1Ch.2.18) is not written: the task gave no names for this root. j.cd.ab and p.ca.ac are cross-references with no tokens. Open questions: (1) ז’s older sound: Arabic أَعْذَبَ “leave, relinquish” (ḏ) is taken as the cognate, following Anderson–Moser’s *ʿḏb, with عَزَبَ “be distant” (z) as possible; if the reviewer prefers عَزَبَ, swap the relations. With ḏ, “leave” and Sabaic ʿḏb “repair” show the same sound, which would allow the two verbs to be one older root. (2) Exo 23:5’s second and third עזב are entered under “let loose” with a note, and cited under the second verb as an example; Ugaritic ʿdb, which Segert compares with it, is on the second verb. (3) The Aramaic שֵׁיזִב and the Peshitta’s שַׁוְזֵב / שׁוּזָבָא are included as Akkadian Š-stem borrowings of this root’s cognate; if they should have an entry of their own (root שיזב), move them. (4) Ugaritic ʿdb “leave” (Anderson–Moser) was not found in Segert, who gives only “prepare, set”. Leads not followed: Ge’ez in Dillmann/Leslau; CAD E for ezēbu and uzubbû “divorce money”; Phoenician (Krahmalkov) not searched."
+}
