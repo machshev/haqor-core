@@ -1,0 +1,1845 @@
+{
+  "id": "gur",
+  "root": "גור",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "sojourning",
+    "stranger",
+    "land",
+    "promise",
+    "law",
+    "fear",
+    "strife",
+    "animals"
+  ],
+  "gloss": "sojourn, live as an outsider; sojourner; (also) dread; stir up strife; cub",
+  "summary": "גּוּר is to live where one has no inheritance of one's own, among people not one's kin and by their leave: Abraham in Egypt and Gerar, Jacob with Laban, Israel in Egypt, Elimelech in Moab (Gen 12:10; Deu 26:5; Rut 1:1). The גֵּר is the man who lives so, protected by Yahweh's law beside the fatherless and the widow, under one law with the native, and remembered because Israel itself was גֵּרִים in Egypt (Lev 19:34; 23:22); the patriarchs were גֵּרִים in the very land promised to them, and Yahweh tells Israel they are גֵּרִים with him in his land (Gen 17:8; 23:4; Lev 25:23). The same consonants also carry “dread” (with מָגוֹר “terror”), “stir up strife” (Psa 59:4), and the noun גּוּר “cub”, each with its own evidence; how these go with sojourning is not shown.",
+  "words": [
+    {
+      "lemma": "גּוּר",
+      "pos": "verb",
+      "gloss": "sojourn, live as an outsider; (also) dread; stir up strife",
+      "bdb": [
+        "c.bf.aa"
+      ],
+      "summary": "Three meanings share these consonants, and BDB files the verb under three keys holding the same tokens (c.bf.aa, c.bg.aa, c.bh.aa); only the first is named here, so its uses are counted once. About eighty uses are “sojourn”; ten are “be afraid, stand in awe”, set beside יָרֵא (Psa 22:24; 33:8), and four are “stir up strife, attack” (Psa 59:4; Isa 54:15). The cognates support sojourning and attacking (Arabic jāwara “live as a neighbour” and jāra “act wrongfully against”, both of one Arabic root); for “dread” only a Phoenician name-type is offered, and Hebrew has the like-sounding יָגֹר “I feared” (Deu 9:19). How the three meanings are related, if at all, is not known.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sojourn; be afraid; stir up strife",
+          "senses": [
+            {
+              "id": "sojourn",
+              "gloss": "sojourn, live as an outsider",
+              "definition": "To live for a time in a land or among a people not one's own, with no inheritance there, by the leave of those to whom it belongs: driven by famine, flight or need, and often contrasted with settling (יָשַׁב) or possessing.",
+              "cognate_ids": [
+                "ar-jawara",
+                "uga-gr-resident",
+                "sab-gwr",
+                "gez-gor",
+                "arc-gur"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.12.10",
+                  "role": "defining",
+                  "note": "Famine in the land; “Abram went down to Egypt לָגוּר there”."
+                },
+                {
+                  "ref": "Gen.47.4",
+                  "role": "defining",
+                  "note": "To Pharaoh: “לָגוּר in the land we have come, for there is no pasture … let your servants dwell (יֵשְׁבוּ) in Goshen”: a stay asked for and granted."
+                },
+                {
+                  "ref": "Gen.19.9",
+                  "role": "defining",
+                  "note": "Of Lot: “This one came לָגוּר, and he keeps acting the judge!”: the sojourner has no standing to judge his hosts."
+                },
+                {
+                  "ref": "Jer.35.7",
+                  "role": "defining",
+                  "note": "The Rechabites build no house and sow no seed but live in tents “on the face of the land where you are גָּרִים”."
+                },
+                {
+                  "ref": "Exo.6.4",
+                  "role": "defining",
+                  "note": "“The land of Canaan, the land of their מְגֻרִים, in which they sojourned (גָּרוּ)”: the patriarchs sojourned in the promised land itself."
+                },
+                {
+                  "ref": "Deu.26.5",
+                  "note": "“A perishing Aramean was my father; he went down to Egypt וַיָּגָר there, few in number.”"
+                },
+                {
+                  "ref": "Rut.1.1",
+                  "note": "In famine a man of Bethlehem went לָגוּר in the fields of Moab."
+                },
+                {
+                  "ref": "Gen.20.1"
+                },
+                {
+                  "ref": "Gen.21.34",
+                  "note": "Abraham sojourned in the land of the Philistines many days."
+                },
+                {
+                  "ref": "Gen.26.3",
+                  "note": "To Isaac: “Sojourn in this land, and I will be with you … to you and your seed I will give all these lands.”"
+                },
+                {
+                  "ref": "Gen.32.5",
+                  "note": "Jacob: “With Laban I have sojourned.”"
+                },
+                {
+                  "ref": "Gen.35.27"
+                },
+                {
+                  "ref": "Psa.105.12",
+                  "note": "“When they were few in number … and sojourners (גָרִים) in it”; with 1Ch 16:19."
+                },
+                {
+                  "ref": "Psa.105.23",
+                  "note": "“Jacob sojourned in the land of Ham.”"
+                },
+                {
+                  "ref": "Isa.52.4",
+                  "note": "“My people went down at first into Egypt לָגוּר there.”"
+                },
+                {
+                  "ref": "Deu.18.6",
+                  "role": "defining",
+                  "note": "The Levite, who has no inheritance among the tribes, “sojourns” (גָּר) in whatever town of Israel he lives in."
+                },
+                {
+                  "ref": "Jdg.17.7",
+                  "note": "A young Levite of Bethlehem, “and he was sojourning there”."
+                },
+                {
+                  "ref": "Jdg.19.16",
+                  "note": "An old man of Ephraim sojourning in Gibeah, among Benjaminites."
+                },
+                {
+                  "ref": "2Ki.8.1",
+                  "note": "Elisha to the Shunammite: “Sojourn wherever you can sojourn,” for seven years of famine."
+                },
+                {
+                  "ref": "Jer.42.15",
+                  "note": "If the remnant of Judah set their faces to enter Egypt לָגוּר there."
+                },
+                {
+                  "ref": "Jer.44.14"
+                },
+                {
+                  "ref": "Psa.120.5",
+                  "note": "“Woe is me, that I sojourn (גַרְתִּי) in Meshech, that I dwell (שָׁכַנְתִּי) among the tents of Kedar.”"
+                },
+                {
+                  "ref": "Jer.49.18",
+                  "note": "“No man shall dwell (יֵשֵׁב) there, nor son of man sojourn (יָגוּר) in it”; also Jer 49:33; 50:40."
+                },
+                {
+                  "ref": "Lam.4.15",
+                  "note": "Of the unclean exiles: “They shall no longer sojourn” among the nations."
+                },
+                {
+                  "ref": "Isa.11.6",
+                  "note": "“The wolf shall sojourn (וְגָר) with the lamb”: living as a peaceable guest beside one not its kind."
+                },
+                {
+                  "ref": "Isa.16.4",
+                  "note": "“Let my outcasts sojourn with you, Moab; be a hiding place for them.”"
+                },
+                {
+                  "ref": "Jdg.5.17",
+                  "note": "“Dan, why does he sojourn with ships?”"
+                },
+                {
+                  "ref": "Ezr.1.4",
+                  "note": "The remnant “in all the places where he sojourns”."
+                },
+                {
+                  "ref": "Heb.11.9",
+                  "role": "defining",
+                  "note": "“By faith he sojourned (παρῴκησεν) in the land of promise as in a land not his own, living in tents with Isaac and Jacob”: the New Testament's reading of Gen 17:8; 26:3."
+                }
+              ],
+              "senses": [
+                {
+                  "id": "sojourning-one",
+                  "gloss": "the one sojourning (participle), the resident outsider",
+                  "definition": "The participle as a noun: the outsider living in Israel's midst, in the same phrases as the noun גֵּר, and also the dependant living in another's house.",
+                  "kin": [
+                    "sojourner"
+                  ],
+                  "evidence": [
+                    {
+                      "ref": "Lev.17.8",
+                      "role": "defining",
+                      "note": "“A man of the house of Israel, or of the sojourner who sojourns (יָגוּר) in their midst.”"
+                    },
+                    {
+                      "ref": "Lev.19.33",
+                      "role": "defining",
+                      "note": "“When a sojourner sojourns with you in your land, you shall not oppress him.”"
+                    },
+                    {
+                      "ref": "Exo.12.48",
+                      "note": "“If a sojourner sojourns with you and would keep the Passover to Yahweh, let all his males be circumcised.”"
+                    },
+                    {
+                      "ref": "Num.15.15",
+                      "note": "One statute for the assembly and for the sojourner who sojourns with you."
+                    },
+                    {
+                      "ref": "Lev.25.45",
+                      "note": "“The sons of the sojourners (הַתּוֹשָׁבִים) who sojourn (הַגָּרִים) with you.”"
+                    },
+                    {
+                      "ref": "Ezk.47.22",
+                      "note": "The sojourners “who sojourn among you, who have begotten sons among you” receive an inheritance among the tribes."
+                    },
+                    {
+                      "ref": "Exo.3.22",
+                      "note": "Each woman shall ask of her neighbour “and of her who sojourns in her house”."
+                    },
+                    {
+                      "ref": "Job.19.15",
+                      "note": "“Those who sojourn in my house (גָּרֵי בֵיתִי) and my maids count me a stranger (זָר)”."
+                    },
+                    {
+                      "ref": "2Ch.15.9",
+                      "note": "Those of Ephraim, Manasseh and Simeon who sojourned with Judah."
+                    }
+                  ]
+                },
+                {
+                  "id": "sojourn-with-god",
+                  "gloss": "sojourn with Yahweh, be his guest",
+                  "definition": "To live in Yahweh's tent as a guest in his house: a privilege he grants only to the upright, which the wicked cannot have.",
+                  "evidence": [
+                    {
+                      "ref": "Psa.15.1",
+                      "role": "defining",
+                      "note": "“Yahweh, who shall sojourn (יָגוּר) in your tent? Who shall dwell (יִשְׁכֹּן) on your holy mountain?” Answered: he who walks whole and does righteousness (Psa 15:2)."
+                    },
+                    {
+                      "ref": "Psa.61.5",
+                      "role": "defining",
+                      "note": "“Let me sojourn in your tent for ever; let me take refuge under the cover of your wings.”"
+                    },
+                    {
+                      "ref": "Psa.5.5",
+                      "role": "defining",
+                      "note": "“You are not a God who delights in wickedness; evil shall not sojourn with you (יְגֻרְךָ).”"
+                    },
+                    {
+                      "ref": "Isa.33.14",
+                      "note": "The sinners in Zion: “Who of us can sojourn with the devouring fire?” Answered as in Psalm 15 (Isa 33:15)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dread",
+              "gloss": "be afraid, dread; stand in awe",
+              "definition": "To be afraid of someone or something, followed by מִפְּנֵי or מִן; of God, to stand in awe of him. Its parallel is יָרֵא, “fear”.",
+              "cognate_ids": [
+                "phn-gr-fear"
+              ],
+              "kin": [
+                "terror",
+                "fear-noun"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.22.24",
+                  "role": "defining",
+                  "note": "“You who fear (יִרְאֵי) Yahweh, praise him … stand in awe (וְגוּרוּ) of him, all the seed of Israel.”"
+                },
+                {
+                  "ref": "Psa.33.8",
+                  "role": "defining",
+                  "note": "“Let all the earth fear (יִירְאוּ) Yahweh; let all the inhabitants of the world stand in awe (יָגוּרוּ) of him.”"
+                },
+                {
+                  "ref": "Num.22.3",
+                  "role": "defining",
+                  "note": "“Moab was greatly afraid (וַיָּגָר) of the people, for they were many, and Moab was in dread (וַיָּקָץ) of the sons of Israel.”"
+                },
+                {
+                  "ref": "Deu.1.17",
+                  "role": "defining",
+                  "note": "To the judges: “You shall not be afraid (תָגוּרוּ) of the face of any man, for the judgment is God's.”"
+                },
+                {
+                  "ref": "Deu.18.22",
+                  "note": "Of the prophet whose word does not come to pass: “You shall not be afraid of him.”"
+                },
+                {
+                  "ref": "Deu.32.27",
+                  "note": "“Had I not feared (אָגוּר) the provocation of the enemy.”"
+                },
+                {
+                  "ref": "1Sa.18.15",
+                  "role": "defining",
+                  "note": "“Saul saw that he prospered greatly, and he was afraid (וַיָּגָר) of him.”"
+                },
+                {
+                  "ref": "Job.19.29",
+                  "note": "“Be afraid of the sword, for wrath brings the punishments of the sword.”"
+                },
+                {
+                  "ref": "Job.41.17",
+                  "note": "“At his rising up the mighty are afraid.”"
+                },
+                {
+                  "ref": "Hos.10.5",
+                  "note": "“The inhabitants of Samaria shall be afraid for the calves of Beth-aven.”"
+                }
+              ]
+            },
+            {
+              "id": "stir-strife",
+              "gloss": "stir up strife, attack",
+              "definition": "To gather against someone with hostile intent, to stir up strife or war against him.",
+              "cognate_ids": [
+                "ar-jara",
+                "uga-gr-attack",
+                "akk-geru"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.59.4",
+                  "role": "defining",
+                  "note": "“They lie in wait for my life; the strong stir up strife against me (יָגוּרוּ עָלַי), not for my transgression.”"
+                },
+                {
+                  "ref": "Psa.140.3",
+                  "role": "defining",
+                  "note": "“They devise evils in the heart; every day they stir up wars (יָגוּרוּ מִלְחָמוֹת).”"
+                },
+                {
+                  "ref": "Psa.56.7",
+                  "note": "“They stir up strife, they hide, they watch my heels, as they have waited for my life.”"
+                },
+                {
+                  "ref": "Isa.54.15",
+                  "note": "“If anyone stirs up strife (גּוֹר יָגוּר), it is not from me; whoever stirs up strife with you shall fall because of you.” The clause מִי־גָר אִתָּךְ could also be read “whoever sojourns with you”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "lodge as a guest; (uncertain) gather themselves",
+          "senses": [
+            {
+              "gloss": "lodge, stay as a guest",
+              "definition": "To be staying as a guest in another's house.",
+              "cognate_ids": [
+                "ar-jawara",
+                "arc-gur"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Ki.17.20",
+                  "role": "defining",
+                  "note": "Elijah: “the widow with whom I am staying (מִתְגּוֹרֵר)”."
+                }
+              ]
+            },
+            {
+              "gloss": "gather themselves, stir themselves up (uncertain)",
+              "definition": "Of Israel turning to grain and new wine; the sense is not fixed by the context.",
+              "evidence": [
+                {
+                  "ref": "Hos.7.14",
+                  "note": "“They wail on their beds; for grain and new wine יִתְגּוֹרָרוּ; they turn aside against me.” Whether they gather, or stir themselves up, is not clear."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παροικέω",
+          "gloss": "sojourn, live as an outsider",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.12.10, גּוּר → παροικῆσαι; Psa.105.12, גָרִים → πάροικος; παροικέω renders גּוּר ×22"
+            },
+            {
+              "ref": "Heb.11.9",
+              "role": "defining",
+              "note": "Abraham sojourned (παρῴκησεν) in the land of promise as in a land not his own (Gen 17:8; 26:3)."
+            },
+            {
+              "ref": "Luk.24.18",
+              "note": "“Are you only sojourning in Jerusalem, and do not know?”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָשַׁב",
+            "note": "Set beside sojourning as settled dwelling, or the stay a sojourner asks for.",
+            "evidence": [
+              {
+                "ref": "Jer.49.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.47.4"
+              },
+              {
+                "ref": "Jer.50.40"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁכַן",
+            "note": "Dwelling, beside sojourning in a tent.",
+            "evidence": [
+              {
+                "ref": "Psa.15.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.120.5"
+              }
+            ]
+          },
+          {
+            "lemma": "יָרֵא",
+            "note": "Fear, beside the verb in its sense “dread, stand in awe”.",
+            "evidence": [
+              {
+                "ref": "Psa.33.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.22.24"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הַגֵּר הַגָּר בְּתוֹכְכֶם",
+            "gloss": "the sojourner who sojourns in your midst",
+            "evidence": [
+              {
+                "ref": "Lev.16.29"
+              },
+              {
+                "ref": "Lev.17.10"
+              },
+              {
+                "ref": "Num.15.26"
+              },
+              {
+                "ref": "Jos.20.9"
+              },
+              {
+                "ref": "Ezk.47.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גֵּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sojourner, resident outsider",
+      "bdb": [
+        "c.bf.ad",
+        "c.bx.ac",
+        "c.cu.ae"
+      ],
+      "cognate_ids": [
+        "ar-jawara",
+        "uga-gr-resident",
+        "sab-gwr",
+        "gez-gor",
+        "arc-gur"
+      ],
+      "summary": "One who lives among a people not his own and holds no inheritance in their land: distinct from the native (אֶזְרָח) and from the foreigner passing through (נָכְרִי). The law protects him with the fatherless and the widow, and requires of him what it requires of Israel.",
+      "senses": [
+        {
+          "id": "sojourner",
+          "gloss": "sojourner, resident outsider",
+          "definition": "A man living among a people not his own, who has no inheritance in their land and depends on their protection: Abraham among the sons of Heth, Moses in Midian, Israel in Egypt.",
+          "evidence": [
+            {
+              "ref": "Gen.23.4",
+              "role": "defining",
+              "note": "Abraham to the sons of Heth: “I am a גֵּר and a תוֹשָׁב with you; give me a possession for a burial place”: he owns not even a grave."
+            },
+            {
+              "ref": "Gen.15.13",
+              "role": "defining",
+              "note": "“Your seed shall be גֵר in a land not theirs, and they shall serve them”; quoted in Act 7:6."
+            },
+            {
+              "ref": "Exo.2.22",
+              "role": "defining",
+              "note": "Moses names his son Gershom: “I have been a גֵּר in a foreign land (נָכְרִיָּה)”; Act 7:29."
+            },
+            {
+              "ref": "Deu.23.8",
+              "note": "“You shall not abhor an Egyptian, because you were a גֵר in his land.”"
+            },
+            {
+              "ref": "Job.31.32",
+              "note": "“The sojourner has not lodged in the street; I have opened my doors to the traveller.”"
+            },
+            {
+              "ref": "Jer.14.8",
+              "note": "“Why should you be like a sojourner in the land, like a traveller who turns aside to lodge for a night?”"
+            },
+            {
+              "ref": "2Sa.1.13",
+              "note": "“The son of a sojourner, an Amalekite, am I.”"
+            },
+            {
+              "ref": "1Ch.22.2",
+              "note": "David gathers the sojourners in the land of Israel and sets them to cut stones."
+            },
+            {
+              "ref": "Act.7.6",
+              "role": "defining",
+              "note": "Stephen quotes Gen 15:13: Abraham's seed would be πάροικον in a land belonging to others."
+            }
+          ]
+        },
+        {
+          "id": "sojourner-in-law",
+          "gloss": "the sojourner in Israel (in the law)",
+          "definition": "The outsider living among Israel, in the law's own terms: under one statute with the native, bound by its holiness, free to keep the Passover once circumcised, and protected with the poor, the fatherless and the widow because Israel had been sojourners in Egypt.",
+          "evidence": [
+            {
+              "ref": "Lev.23.22",
+              "role": "defining",
+              "note": "At harvest the corners and gleanings are left “for the poor and for the sojourner (לַגֵּר)”."
+            },
+            {
+              "ref": "Lev.19.34",
+              "role": "defining",
+              "note": "“The sojourner who sojourns with you shall be to you as the native among you, and you shall love him as yourself, for you were sojourners in the land of Egypt.”"
+            },
+            {
+              "ref": "Exo.12.48",
+              "role": "defining",
+              "note": "A sojourner who would keep the Passover is circumcised, and “he shall be as the native of the land”; Exo 12:49 “one law”."
+            },
+            {
+              "ref": "Num.15.15",
+              "role": "defining",
+              "note": "“One statute for you and for the sojourner … as you are, so shall the sojourner be before Yahweh.”"
+            },
+            {
+              "ref": "Num.9.14"
+            },
+            {
+              "ref": "Exo.22.20",
+              "note": "“You shall not wrong a sojourner or oppress him, for you were sojourners in the land of Egypt.”"
+            },
+            {
+              "ref": "Exo.23.9",
+              "note": "“You know the soul of the sojourner (נֶפֶשׁ הַגֵּר).”"
+            },
+            {
+              "ref": "Deu.10.18",
+              "role": "defining",
+              "note": "Yahweh executes justice for the fatherless and widow, “and loves the sojourner, giving him bread and clothing”."
+            },
+            {
+              "ref": "Deu.10.19"
+            },
+            {
+              "ref": "Deu.14.21",
+              "role": "defining",
+              "note": "What dies of itself may be given to “the sojourner in your gates” to eat, or sold to the foreigner (נָכְרִי): the two are distinct."
+            },
+            {
+              "ref": "Deu.24.19",
+              "note": "The forgotten sheaf is for the sojourner, the fatherless and the widow; also Deu 24:20–21."
+            },
+            {
+              "ref": "Deu.27.19",
+              "note": "“Cursed is he who turns aside the judgment of the sojourner, the fatherless and the widow.”"
+            },
+            {
+              "ref": "Lev.24.22",
+              "note": "“One judgment for you, as for the sojourner, so for the native.”"
+            },
+            {
+              "ref": "Lev.17.15"
+            },
+            {
+              "ref": "Num.35.15",
+              "note": "The cities of refuge serve the sojourner and the תּוֹשָׁב as well as Israel."
+            },
+            {
+              "ref": "Exo.20.10",
+              "note": "The sabbath rest extends to “your sojourner who is in your gates”."
+            },
+            {
+              "ref": "Jer.7.6",
+              "note": "“If you do not oppress the sojourner, the fatherless and the widow.”"
+            },
+            {
+              "ref": "Ezk.22.29"
+            },
+            {
+              "ref": "Zec.7.10"
+            },
+            {
+              "ref": "Mal.3.5",
+              "note": "Yahweh will be a swift witness against those who turn aside the sojourner."
+            },
+            {
+              "ref": "Psa.146.9",
+              "note": "“Yahweh preserves the sojourners; he upholds the fatherless and the widow.”"
+            },
+            {
+              "ref": "Jos.8.35",
+              "note": "The law read before all Israel, “and the sojourners who walked among them”."
+            },
+            {
+              "ref": "2Ch.30.25"
+            }
+          ]
+        },
+        {
+          "id": "sojourner-with-god",
+          "gloss": "sojourner with Yahweh, in his land",
+          "definition": "Israel and the faithful as sojourners with Yahweh: the land is his, and they live in it as his guests, passing through like their fathers.",
+          "evidence": [
+            {
+              "ref": "Lev.25.23",
+              "role": "defining",
+              "note": "“The land shall not be sold for ever, for the land is mine; for you are גֵרִים וְתוֹשָׁבִים with me.”"
+            },
+            {
+              "ref": "1Ch.29.15",
+              "role": "defining",
+              "note": "David: “We are sojourners before you, and tenants, as all our fathers were; our days on the earth are as a shadow, and there is no abiding.”"
+            },
+            {
+              "ref": "Psa.39.13",
+              "note": "“I am a sojourner with you, a tenant, as all my fathers were.”"
+            },
+            {
+              "ref": "Psa.119.19",
+              "note": "“I am a sojourner in the earth; do not hide your commandments from me.”"
+            },
+            {
+              "ref": "1Pe.2.11",
+              "note": "“As sojourners and pilgrims (παροίκους καὶ παρεπιδήμους)”: the pair of Gen 23:4 and Psa 39:13."
+            },
+            {
+              "ref": "Heb.11.13",
+              "note": "They died in faith, not having received the promises, and confessed that they were strangers and pilgrims on the earth."
+            }
+          ]
+        },
+        {
+          "id": "sojourner-joined",
+          "gloss": "sojourner joined to Israel",
+          "definition": "In the prophets' restoration, the sojourner who joins himself to Israel and receives an inheritance among its tribes.",
+          "evidence": [
+            {
+              "ref": "Isa.14.1",
+              "role": "defining",
+              "note": "When Yahweh again chooses Israel and sets them in their land, “the sojourner shall join himself to them, and they shall cleave to the house of Jacob”."
+            },
+            {
+              "ref": "Ezk.47.22",
+              "role": "defining",
+              "note": "The sojourners who have begotten sons among Israel “shall be to you as the native among the sons of Israel; with you they shall have an inheritance among the tribes”."
+            },
+            {
+              "ref": "Ezk.47.23"
+            },
+            {
+              "ref": "Eph.2.19",
+              "role": "defining",
+              "note": "To Gentile believers: “You are no longer strangers and sojourners (πάροικοι), but fellow citizens with the saints and of the household of God.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προσήλυτος",
+          "gloss": "one who has come over; proselyte",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.12.48, גֵּר → προσήλυτος; Lev.23.22, לַגֵּר → προσηλύτῳ; Lev.25.23, גֵרִים → προσήλυτοι; προσήλυτος renders גֵּר ×50"
+            },
+            {
+              "ref": "Act.2.10",
+              "note": "“Jews and proselytes” at Pentecost."
+            },
+            {
+              "ref": "Act.6.5",
+              "note": "Nicolas, “a proselyte of Antioch”."
+            },
+            {
+              "ref": "Act.13.43"
+            },
+            {
+              "ref": "Mat.23.15"
+            }
+          ]
+        },
+        {
+          "lemma": "πάροικος",
+          "gloss": "sojourner, resident outsider",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.15.13, גֵר → πάροικον; Gen.23.4, גֵּר → πάροικος; Exo.2.22, גֵּר → πάροικος; Psa.39.13, גֵר → πάροικος; 1Ch.29.15, גֵרִים → πάροικοι; πάροικος renders גֵּר ×8"
+            },
+            {
+              "ref": "Act.7.6",
+              "role": "defining",
+              "note": "Quoting Gen 15:13."
+            },
+            {
+              "ref": "Act.7.29",
+              "note": "Moses “became a sojourner in the land of Midian” (Exo 2:22)."
+            },
+            {
+              "ref": "Eph.2.19"
+            },
+            {
+              "ref": "1Pe.2.11"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תּוֹשָׁב",
+            "note": "The tenant or resident without land of his own; the pair גֵּר וְתוֹשָׁב.",
+            "evidence": [
+              {
+                "ref": "Gen.23.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.25.23"
+              },
+              {
+                "ref": "Lev.25.35"
+              },
+              {
+                "ref": "Psa.39.13"
+              },
+              {
+                "ref": "1Ch.29.15"
+              }
+            ]
+          },
+          {
+            "lemma": "יָתוֹם",
+            "note": "With the fatherless and the widow, the three who have no one of their own to protect them.",
+            "evidence": [
+              {
+                "ref": "Deu.10.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.24.17"
+              },
+              {
+                "ref": "Deu.27.19"
+              },
+              {
+                "ref": "Psa.94.6"
+              },
+              {
+                "ref": "Psa.146.9"
+              },
+              {
+                "ref": "Jer.22.3"
+              }
+            ]
+          },
+          {
+            "lemma": "עָנִי",
+            "note": "With the poor, for whom the gleanings are left.",
+            "evidence": [
+              {
+                "ref": "Lev.23.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.19.10"
+              }
+            ]
+          },
+          {
+            "lemma": "אֹרֵחַ",
+            "note": "The traveller lodging for a night.",
+            "evidence": [
+              {
+                "ref": "Jer.14.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.31.32"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אֶזְרָח",
+            "note": "The native-born, rooted in the land; the law sets the two side by side under one statute.",
+            "evidence": [
+              {
+                "ref": "Exo.12.49",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.12.19"
+              },
+              {
+                "ref": "Lev.16.29"
+              },
+              {
+                "ref": "Lev.24.16"
+              },
+              {
+                "ref": "Num.15.29"
+              },
+              {
+                "ref": "Jos.8.33"
+              }
+            ]
+          },
+          {
+            "lemma": "נָכְרִי",
+            "note": "The foreigner outside the community, who may be sold what the sojourner may be given.",
+            "evidence": [
+              {
+                "ref": "Deu.14.21",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "גֵּר וְתוֹשָׁב",
+            "gloss": "a sojourner and a tenant",
+            "evidence": [
+              {
+                "ref": "Gen.23.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.25.35"
+              },
+              {
+                "ref": "Lev.25.47"
+              }
+            ]
+          },
+          {
+            "phrase": "כִּי־גֵרִים הֱיִיתֶם בְּאֶרֶץ מִצְרָיִם",
+            "gloss": "for you were sojourners in the land of Egypt",
+            "evidence": [
+              {
+                "ref": "Exo.22.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.23.9"
+              },
+              {
+                "ref": "Lev.19.34"
+              },
+              {
+                "ref": "Deu.10.19"
+              }
+            ]
+          },
+          {
+            "phrase": "הַגֵּר אֲשֶׁר בִּשְׁעָרֶיךָ",
+            "gloss": "the sojourner who is in your gates",
+            "evidence": [
+              {
+                "ref": "Exo.20.10"
+              },
+              {
+                "ref": "Deu.5.14"
+              },
+              {
+                "ref": "Deu.14.29"
+              },
+              {
+                "ref": "Deu.16.14"
+              },
+              {
+                "ref": "Deu.31.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָגוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sojourning; place of sojourning",
+      "bdb": [
+        "c.bf.ag",
+        "m.aj.ah"
+      ],
+      "cognate_ids": [
+        "ar-jawara",
+        "arc-gur"
+      ],
+      "summary": "Always plural in scripture, מְגוּרִים: the time or place of one's sojourning. “The land of your sojournings” is Canaan, promised to the fathers while they lived in it as outsiders.",
+      "senses": [
+        {
+          "id": "sojourning",
+          "gloss": "sojourning; the land or house of one's sojourning",
+          "definition": "The state, time or place of living as an outsider; “the land of sojournings” is the land where the fathers lived without owning it.",
+          "evidence": [
+            {
+              "ref": "Gen.17.8",
+              "role": "defining",
+              "note": "“I will give to you and to your seed after you the land of your sojournings, all the land of Canaan, for an everlasting possession.”"
+            },
+            {
+              "ref": "Exo.6.4",
+              "role": "defining",
+              "note": "“The land of their sojournings, in which they sojourned.”"
+            },
+            {
+              "ref": "Gen.47.9",
+              "role": "defining",
+              "note": "Jacob to Pharaoh: “The days of the years of my sojournings are 130 years … they have not reached the days of my fathers in the days of their sojournings”: a whole life counted as sojourning."
+            },
+            {
+              "ref": "Gen.28.4",
+              "note": "The blessing of Abraham, “that you may possess the land of your sojournings, which God gave to Abraham”."
+            },
+            {
+              "ref": "Gen.36.7",
+              "note": "The land of Esau's and Jacob's sojournings could not bear them both."
+            },
+            {
+              "ref": "Gen.37.1",
+              "note": "“Jacob dwelt in the land of his father's sojournings, in the land of Canaan.”"
+            },
+            {
+              "ref": "Ezk.20.38",
+              "note": "“I will bring them out of the land of their sojournings, but they shall not enter the land of Israel.”"
+            },
+            {
+              "ref": "Psa.119.54",
+              "role": "defining",
+              "note": "“Your statutes have been my songs in the house of my sojourning”: life itself as a sojourning."
+            },
+            {
+              "ref": "Job.18.19",
+              "note": "Of the wicked: no survivor “in his dwellings”."
+            },
+            {
+              "ref": "Psa.55.16",
+              "note": "“Evils are in their dwelling, in their midst.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παροικία",
+          "gloss": "sojourning, stay as an outsider",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.119.54, מְגוּרָי → παροικίας"
+            },
+            {
+              "ref": "Act.13.17",
+              "note": "God exalted the people “in their sojourning (παροικίᾳ) in the land of Egypt”."
+            },
+            {
+              "ref": "1Pe.1.17",
+              "note": "“Pass the time of your sojourning (παροικίας) in fear.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "אֶרֶץ מְגוּרִים",
+            "gloss": "the land of sojournings",
+            "evidence": [
+              {
+                "ref": "Gen.17.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.28.4"
+              },
+              {
+                "ref": "Gen.36.7"
+              },
+              {
+                "ref": "Gen.37.1"
+              },
+              {
+                "ref": "Exo.6.4"
+              },
+              {
+                "ref": "Ezk.20.38"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָגוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "terror, dread",
+      "bdb": [
+        "c.bh.ab"
+      ],
+      "cognate_ids": [
+        "phn-gr-fear"
+      ],
+      "summary": "Terror, and the thing that causes it; Jeremiah's cry מָגוֹר מִסָּבִיב, “terror on every side”. It goes with the verb's sense “dread”; no cognate in another language has been found for it beyond a disputed Phoenician name-type, so its tie to the root rests on Hebrew alone.",
+      "senses": [
+        {
+          "id": "terror",
+          "gloss": "terror, dread",
+          "definition": "Terror that surrounds and overwhelms, and the one who becomes a terror to others.",
+          "evidence": [
+            {
+              "ref": "Jer.6.25",
+              "role": "defining",
+              "note": "“Do not go out to the field … for the enemy has a sword; terror on every side.”"
+            },
+            {
+              "ref": "Jer.20.3",
+              "role": "defining",
+              "note": "Yahweh renames Pashhur מָגוֹר מִסָּבִיב, “Terror on every side”: “I will make you a terror to yourself and to all your friends” (Jer 20:4)."
+            },
+            {
+              "ref": "Jer.20.4"
+            },
+            {
+              "ref": "Jer.20.10",
+              "note": "Jeremiah hears the whispering of many: “Terror on every side!”"
+            },
+            {
+              "ref": "Jer.46.5"
+            },
+            {
+              "ref": "Jer.49.29"
+            },
+            {
+              "ref": "Psa.31.14",
+              "note": "“I have heard the slander of many, terror on every side.”"
+            },
+            {
+              "ref": "Isa.31.9",
+              "note": "Assyria's rock shall pass away “for terror”."
+            },
+            {
+              "ref": "Lam.2.22",
+              "note": "“You have called, as to a feast day, my terrors from every side.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "מָגוֹר מִסָּבִיב",
+            "gloss": "terror on every side",
+            "evidence": [
+              {
+                "ref": "Jer.6.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.20.3"
+              },
+              {
+                "ref": "Jer.20.10"
+              },
+              {
+                "ref": "Jer.46.5"
+              },
+              {
+                "ref": "Jer.49.29"
+              },
+              {
+                "ref": "Psa.31.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גּוּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cub, whelp",
+      "bdb": [
+        "c.bg.ac"
+      ],
+      "cognate_ids": [
+        "ar-jarw",
+        "akk-gerru",
+        "arc-gur-cub",
+        "sab-grtn"
+      ],
+      "summary": "The young of a lion or of jackals. Arabic jarw and Akkadian gerru name the same young beast of prey, but Arabic jarw has w as its last letter, not its second; so whether “cub” belongs to the same root as sojourning, or is a separate word in the same spelling, is not shown. BDB's key also counts Gen 26:3 (the imperative “sojourn”).",
+      "senses": [
+        {
+          "id": "cub",
+          "gloss": "cub, whelp (of a lion)",
+          "definition": "A young lion still with its mother, or a young beast of prey; in blessings and laments a figure for a tribe or a prince.",
+          "evidence": [
+            {
+              "ref": "Gen.49.9",
+              "role": "defining",
+              "note": "“Judah is a lion's cub (גּוּר אַרְיֵה); from the prey, my son, you have gone up”; Rev 5:5 names Christ “the Lion of the tribe of Judah”."
+            },
+            {
+              "ref": "Deu.33.22",
+              "note": "“Dan is a lion's cub that leaps from Bashan.”"
+            },
+            {
+              "ref": "Ezk.19.2",
+              "role": "defining",
+              "note": "The lioness among lions “reared her cubs”; she raises one of her cubs to be a young lion (כְּפִיר, Ezk 19:3)."
+            },
+            {
+              "ref": "Ezk.19.3"
+            },
+            {
+              "ref": "Ezk.19.5"
+            },
+            {
+              "ref": "Nam.2.12",
+              "note": "The lions' den, “where the lion walked, the lioness and the lion's cub, and none made them afraid”."
+            },
+            {
+              "ref": "Lam.4.3",
+              "role": "defining",
+              "note": "“Even jackals draw out the breast, they nurse their young (גּוּרֵיהֶן)”: of any beast's young."
+            },
+            {
+              "ref": "Rev.5.5",
+              "note": "“The Lion of the tribe of Judah”: the New Testament's reading of Gen 49:9."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σκύμνος",
+          "gloss": "whelp, cub",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.49.9, גּוּר → σκύμνος; σκύμνος renders גּוּר ×3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גּוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cub, whelp",
+      "bdb": [
+        "c.bg.ab",
+        "c.di.ah"
+      ],
+      "cognate_ids": [
+        "ar-jarw",
+        "akk-gerru",
+        "arc-gur-cub"
+      ],
+      "summary": "Another form of גּוּר “cub”, used twice, of lions' young; it shares that word's uncertain tie to the root.",
+      "senses": [
+        {
+          "gloss": "cub, whelp (of lions)",
+          "definition": "The young of lions.",
+          "kin": [
+            "cub"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.51.38",
+              "role": "defining",
+              "note": "“They shall roar together like young lions; they shall growl like lions' whelps (גּוֹרֵי אֲרָיוֹת).”"
+            },
+            {
+              "ref": "Nam.2.13",
+              "role": "defining",
+              "note": "“The lion tore enough for his whelps (גֹרוֹתָיו).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְגוֹרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "fear, dread",
+      "bdb": [
+        "c.bh.ac"
+      ],
+      "cognate_ids": [
+        "phn-gr-fear"
+      ],
+      "summary": "What one fears; the feminine beside מָגוֹר “terror”, with the verb's sense “dread”. No cognate in another language shares the meaning beyond a disputed Phoenician name-type, so its tie to the root rests on Hebrew alone. Its form in Isa 66:4 is counted under BDB's key for מְגוּרָה “storehouse” (c.bf.ah).",
+      "senses": [
+        {
+          "id": "fear-noun",
+          "gloss": "fear, the thing feared",
+          "definition": "The thing a man dreads, which comes upon the wicked and from which Yahweh delivers the one who seeks him.",
+          "kin": [
+            "terror"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.34.5",
+              "role": "defining",
+              "note": "“I sought Yahweh, and he answered me, and delivered me from all my fears (מְגוּרוֹתַי).”"
+            },
+            {
+              "ref": "Pro.10.24",
+              "role": "defining",
+              "note": "“What the wicked fears (מְגוֹרַת רָשָׁע) will come upon him, but the desire of the righteous will be granted”: set against תַּאֲוָה, desire."
+            },
+            {
+              "ref": "Isa.66.4",
+              "role": "defining",
+              "note": "“I will choose their afflictions and bring their fears (וּמְגוּרֹתָם) upon them, because when I called, none answered.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "תַּאֲוָה",
+            "note": "What the righteous desire, against what the wicked dread.",
+            "evidence": [
+              {
+                "ref": "Pro.10.24",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְגוּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "storehouse, granary",
+      "bdb": [
+        "c.bf.ah"
+      ],
+      "summary": "A store for seed or grain, once (Hag 2:19); with מַמְּגֻרוֹת “granaries” (Joel 1:17). No cognate has been found that shares the meaning, and how a grain store goes with sojourning is not shown; it may be a place where grain “stays”, but nothing in scripture says so. BDB's key also counts Isa 66:4, which is the noun “fear” (מְגוֹרָה).",
+      "senses": [
+        {
+          "id": "storehouse",
+          "gloss": "storehouse for seed",
+          "definition": "A store where seed grain is kept.",
+          "evidence": [
+            {
+              "ref": "Hag.2.19",
+              "role": "defining",
+              "note": "“Is the seed yet in the storehouse (בַּמְּגוּרָה)? … From this day I will bless you.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַמְּגֻרוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "granaries",
+      "bdb": [
+        "c.bf.ai",
+        "m.ck.af"
+      ],
+      "summary": "Granaries, once, in Joel's drought, beside אֹצָרוֹת “storehouses”. It is a fuller form of מְגוּרָה and shares its unexplained tie to the root.",
+      "senses": [
+        {
+          "gloss": "granaries",
+          "definition": "Buildings where grain is stored.",
+          "kin": [
+            "storehouse"
+          ],
+          "evidence": [
+            {
+              "ref": "Jol.1.17",
+              "role": "defining",
+              "note": "“The storehouses (אֹצָרוֹת) are desolate, the granaries (מַמְּגֻרוֹת) are broken down, for the grain has withered.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גֵּרוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "lodging place",
+      "bdb": [
+        "c.bf.ae",
+        "c.cx.ae"
+      ],
+      "cognate_ids": [
+        "ar-jawara",
+        "arc-gur"
+      ],
+      "summary": "Once, in the name of a place near Bethlehem, גֵּרוּת כִּמְהָם, “the lodging place of Chimham”, where the remnant stopped on the way to Egypt. Whether it is a common noun here or only part of a place name is not certain.",
+      "senses": [
+        {
+          "gloss": "lodging place",
+          "definition": "A place where travellers stay; formed like גֵּר with the ending ־וּת.",
+          "evidence": [
+            {
+              "ref": "Jer.41.17",
+              "role": "defining",
+              "note": "“They went and stayed in Geruth Chimham, which is by Bethlehem, to go to enter Egypt.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גִּיּוֹרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "proselyte",
+      "cognate_ids": [
+        "arc-gur"
+      ],
+      "summary": "The Peshitta's ܓܝܘܪܐ (gīyōrā), the Aramaic form of גֵּר, for προσήλυτος: the Gentile who has joined himself to Israel.",
+      "senses": [
+        {
+          "gloss": "proselyte",
+          "definition": "A Gentile who has joined Israel and keeps its law.",
+          "kin": [
+            "sojourner-in-law"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.2.10",
+              "role": "defining",
+              "note": "At Pentecost, “Jews and proselytes”."
+            },
+            {
+              "ref": "Act.6.5",
+              "role": "defining",
+              "note": "Nicolas, “a proselyte of Antioch”."
+            },
+            {
+              "ref": "Act.13.43",
+              "note": "“Many of the Jews and of the worshipping proselytes followed Paul and Barnabas.”"
+            },
+            {
+              "ref": "Mat.23.15",
+              "note": "“You travel sea and land to make one proselyte.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גָּר",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "commit adultery",
+      "cognate_ids": [
+        "arc-gur-adultery"
+      ],
+      "summary": "The Peshitta's ܓܘܪ (gār), for μοιχεύω. Jewish Aramaic has the same verb; whether it belongs with sojourning (as a going after a stranger, or a turning aside like Arabic jāra) or is a separate root in the same spelling is not shown, and scripture's Hebrew does not use גּוּר so.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "commit adultery",
+          "senses": [
+            {
+              "gloss": "commit adultery",
+              "definition": "To lie with another man's wife, or to divorce and marry another.",
+              "evidence": [
+                {
+                  "ref": "Mat.5.27",
+                  "role": "defining",
+                  "note": "“You shall not commit adultery”, the seventh commandment (Exo 20:14)."
+                },
+                {
+                  "ref": "Mat.5.28",
+                  "role": "defining",
+                  "note": "Whoever looks on a woman to desire her has already committed adultery with her in his heart."
+                },
+                {
+                  "ref": "Mat.19.9"
+                },
+                {
+                  "ref": "Luk.16.18"
+                },
+                {
+                  "ref": "Rom.2.22",
+                  "note": "“You who say one must not commit adultery, do you commit adultery?”"
+                },
+                {
+                  "ref": "Rom.13.9"
+                },
+                {
+                  "ref": "Jas.2.11"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גּוּרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "adultery",
+      "cognate_ids": [
+        "arc-gur-adultery"
+      ],
+      "summary": "The Peshitta's ܓܘܪܐ (gūrā), the act of the verb ܓܘܪ; it shares that verb's unexplained tie to the root.",
+      "senses": [
+        {
+          "gloss": "adultery",
+          "definition": "The act of adultery.",
+          "evidence": [
+            {
+              "ref": "Jhn.8.3",
+              "role": "defining",
+              "note": "A woman taken in adultery."
+            },
+            {
+              "ref": "Mat.15.19"
+            },
+            {
+              "ref": "Mrk.7.21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּיָּרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "adulterer",
+      "cognate_ids": [
+        "arc-gur-adultery"
+      ],
+      "summary": "The Peshitta's ܓܝܪܐ (gayyārā), one who commits adultery; feminine ܓܝܪܬܐ, adulteress.",
+      "senses": [
+        {
+          "gloss": "adulterer; (fem.) adulteress",
+          "definition": "One who commits adultery; figuratively, a generation or people unfaithful to God.",
+          "evidence": [
+            {
+              "ref": "Luk.18.11",
+              "role": "defining",
+              "note": "The Pharisee: “I am not as other men, extortioners, unjust, adulterers.”"
+            },
+            {
+              "ref": "1Co.6.9"
+            },
+            {
+              "ref": "Heb.13.4",
+              "note": "“Fornicators and adulterers God will judge.”"
+            },
+            {
+              "ref": "Jas.4.4",
+              "note": "“Adulteresses, do you not know that friendship with the world is enmity with God?”"
+            },
+            {
+              "ref": "Mat.12.39",
+              "note": "“An evil and adulterous generation.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-jawara",
+      "lang": "ar",
+      "form": "جَاوَرَ، جَارٌ",
+      "translit": "jāwara, jār",
+      "gloss": "live near, be the neighbour of; bind oneself by covenant to protect; neighbour, protected person, one who seeks protection",
+      "relation": "cognate",
+      "note": "Form III jāwara is to become someone's neighbour, live next to him, and to bind oneself to him by a covenant of protection; jār is a neighbour, “a stranger who has become one's neighbour”, one whom one protects, and one who seeks another's protection; form IV ajāra is to grant refuge, form X istajāra to seek it. This is the standing of the גֵּר: living beside a people not his own under their protection.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 483, جاورهُ (n6667)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 483, جَارٌ (n6672); اجارهُ (n6668); استجار (n6671)"
+        }
+      ]
+    },
+    {
+      "id": "ar-jara",
+      "lang": "ar",
+      "form": "جَارَ",
+      "translit": "jāra",
+      "gloss": "deviate from the right course; act wrongfully, injuriously or tyrannically against",
+      "relation": "cognate",
+      "note": "Form I, with عَلَى, “he acted wrongfully, unjustly, injuriously, or tyrannically against him”; first of turning aside from the right way. It answers to the verb's “stir up strife against” (יָגוּרוּ עָלַי, Psa 59:4). It is the same Arabic root as jāwara “be a neighbour”, as the Hebrew is one spelling.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 483, جَارَ (n6665)"
+        }
+      ]
+    },
+    {
+      "id": "uga-gr-resident",
+      "lang": "uga",
+      "form": "𐎂𐎗",
+      "translit": "gr",
+      "gloss": "foreign resident, sojourner",
+      "relation": "cognate",
+      "note": "Fisher lists Ugaritic gr “foreign resident” under *gur, with the Ethiopic word for “newcomer, stranger; neighbour”.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 60, *gur: gr “foreign resident” (from OCR text)"
+        }
+      ]
+    },
+    {
+      "id": "uga-gr-attack",
+      "lang": "uga",
+      "form": "𐎂𐎗",
+      "translit": "gr (/g-w-r/)",
+      "gloss": "to attack",
+      "relation": "cognate",
+      "note": "Segert's glossary gives the verb /g-w-r/ gr in KTU 1.119:26 as “to attack”, comparing Hebrew yāgûr. It answers to the Hebrew “stir up strife against”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 183, §93 Glossary, /g-w-r/: gr 1.119:26 “to attack”"
+        }
+      ]
+    },
+    {
+      "id": "sab-gwr",
+      "lang": "sem",
+      "form": "𐩴𐩥𐩧",
+      "translit": "gwr (Sabaean)",
+      "gloss": "dwell in a place for a time, sojourn, become a protégé; visit",
+      "relation": "cognate",
+      "note": "Sabaean (Old South Arabian): mngr hmḥrm “whoever visits, or becomes a protégé of, the sanctuary” (C 548/1); also “assist”. The sense matches the Hebrew sojourner who lives under another's protection, and the Psalms' sojourning in Yahweh's tent.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 68–69, GWR (pf gr C548/1; grhmw Ry507/10)"
+        }
+      ]
+    },
+    {
+      "id": "gez-gor",
+      "lang": "gez",
+      "form": "ጎር",
+      "translit": "gor",
+      "gloss": "neighbour; newcomer, stranger",
+      "relation": "cognate",
+      "note": "Fisher gives the Ethiopic word as “newcomer, stranger, alien; neighbour”, and notes that what is a “foreign resident” in Ugaritic is the general word for “neighbour” in Ethiopic: the same shift as Arabic jār.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 60, *gur; p. 263 n. 3 (from OCR text)"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Hebrew ג־ו־ר, etymology: Ge'ez ጎር (gor) “newcomer”"
+        }
+      ]
+    },
+    {
+      "id": "arc-gur",
+      "lang": "arc",
+      "form": "גּוּר، גִּיּוֹרָא",
+      "translit": "gûr, gîyôrā",
+      "gloss": "be a stranger, sojourn, dwell; (ithpa.) reside as a stranger; stranger, proselyte",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the Targum renders Hebrew גָּר with ithpaal “reside as a stranger” (Targ. Lev 16:29) and גֵּר with גִּיּוֹר “stranger” (Targ. O. Exo 23:9), which later also means a proselyte; the pael is “convert”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גּוּר I (C00473); s.v. גּוּר ch. (C00474)"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גִּיּוֹר (C00665), Targ. O. Ex. 23:9"
+        }
+      ]
+    },
+    {
+      "id": "arc-gur-adultery",
+      "lang": "arc",
+      "form": "גּוּר",
+      "translit": "gûr",
+      "gloss": "have unlawful intercourse; seduce",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, as a euphemism (Targ. Job 36:20; Targ. Y. Lev 20:10), participle גָּיֵר “adulterer”: the same verb as the Peshitta's ܓܘܪ. Recorded for the Syriac words; it says nothing of the Hebrew.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גּוּר II (C00475)"
+        },
+        {
+          "source": "sedra",
+          "locator": "lexemes 540 GWR “commit adultery”, 541 GWRA “adultery”, 542 GYWRA “proselyte”, 543 GYRA “adulterer” (root 359 GR)"
+        }
+      ]
+    },
+    {
+      "id": "phn-gr-fear",
+      "lang": "phn",
+      "form": "𐤂𐤓",
+      "translit": "gr",
+      "gloss": "fearer, worshipper (of a god), in names gr-DN",
+      "relation": "possible",
+      "note": "Krahmalkov reads the common Phoenician-Punic name-type gr-DN (grʾšmn, grbʿl, grmlk, grʿštrt) as “fearer of DN”, the participle of a verb g-r “fear”. The names could as well be “client, sojourner of DN”, with the sojourning sense, so this is recorded as possible.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 141, G-R I; GR II, fem. GRT “fearer = worshipper of a god” (from text extraction)"
+        }
+      ]
+    },
+    {
+      "id": "akk-geru",
+      "lang": "akk",
+      "form": "gerû",
+      "translit": "gerû",
+      "gloss": "be(come) hostile to; attack, quarrel, contest",
+      "relation": "possible",
+      "note": "Its root is g-r-y, not g-w-r, and it may answer rather to Hebrew גָּרָה (hithpael “engage in strife”, Deu 2:5); the sense is close to Psa 59:4, so it is recorded as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000010930, gerû [be(come) hostile to] V: argue; attack; oppose; quarrel"
+        }
+      ]
+    },
+    {
+      "id": "ar-jarw",
+      "lang": "ar",
+      "form": "جِرْوٌ",
+      "translit": "jirw, jarw",
+      "gloss": "whelp, young of the dog, the lion and any beast of prey",
+      "relation": "cognate",
+      "note": "“The whelp, or young one, of the dog, and of the lion, and of any beast of prey”; the verb ajrat “she whelped”. Its consonants are j-r-w: the w stands last, where Hebrew גּוּר has it in the middle.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 415, جِرْوٌ (n5619); p. 414, أَجْرَتْ (n5618)"
+        }
+      ]
+    },
+    {
+      "id": "akk-gerru",
+      "lang": "akk",
+      "form": "gerru",
+      "translit": "gerru, girru",
+      "gloss": "lion cub",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000091620, gerru [lion cub] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-gur-cub",
+      "lang": "arc",
+      "form": "גּוּרָא",
+      "translit": "gûrā",
+      "gloss": "young animal, whelp, cub",
+      "relation": "cognate",
+      "note": "Jewish Hebrew and Aramaic: “the strength of the lion and the daring of his whelps”; a proverb of the cub of a vicious dog.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גּוּר III (C00476); s.v. גּוּר ² (C00477)"
+        }
+      ]
+    },
+    {
+      "id": "sab-grtn",
+      "lang": "sem",
+      "form": "𐩴𐩧𐩩𐩬",
+      "translit": "grtn (Sabaean)",
+      "gloss": "young, offspring of animals",
+      "relation": "possible",
+      "note": "Sabaean (Old South Arabian), once: the god “has the right to take young animals from all these flocks” (Gl 1143/3). The root letters of the entry are not clear from the scan.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 76, grtn (Gl 1143/3) (from OCR text)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "promises-to-the-fathers",
+      "statement": "Yahweh promised Abraham and his seed “the land of your sojournings, all the land of Canaan, for an everlasting possession” (Gen 17:8). Abraham lived in it as a גֵּר, owning not even a grave until he bought one from the sons of Heth (Gen 23:4); Isaac and Jacob sojourned there too, and Jacob counted his whole life as “the days of my sojournings” (Gen 26:3; 47:9; Exo 6:4). Stephen says God “gave him no inheritance in it, not even a foot's breadth, yet promised to give it to him for a possession” (Act 7:5), and Hebrews says they sojourned in the land of promise as foreigners and “died in faith, not having received the promises” (Heb 11:9, 13, 39). The promise was made to Abraham himself, and he died without it; so it is still to be kept, and can be kept only when he is raised from the dead to inherit the land with his seed, Christ and those in him (Gal 3:16, 29; Heb 11:39–40).",
+      "evidence": [
+        {
+          "ref": "Gen.17.8"
+        },
+        {
+          "ref": "Gen.23.4"
+        },
+        {
+          "ref": "Gen.26.3"
+        },
+        {
+          "ref": "Gen.47.9"
+        },
+        {
+          "ref": "Exo.6.4"
+        },
+        {
+          "ref": "Act.7.5"
+        },
+        {
+          "ref": "Heb.11.9"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Heb.11.39"
+        },
+        {
+          "ref": "Heb.11.40"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.29"
+        }
+      ]
+    },
+    {
+      "topic": "sojourners-with-god",
+      "statement": "The land is Yahweh's, and Israel held it as “sojourners and tenants with me” (Lev 25:23); David confessed the same before him, “we are sojourners before you … our days on the earth are as a shadow” (1Ch 29:15; Psa 39:13). Only the upright may sojourn in Yahweh's tent (Psa 15:1–2), and evil may not sojourn with him (Psa 5:5). Peter calls believers to live as “sojourners and pilgrims”, passing “the time of your sojourning in fear” (1Pe 1:17; 2:11): the faithful hold nothing here as their own inheritance, but live as Yahweh's guests awaiting what he has promised.",
+      "evidence": [
+        {
+          "ref": "Lev.25.23"
+        },
+        {
+          "ref": "1Ch.29.15"
+        },
+        {
+          "ref": "Psa.39.13"
+        },
+        {
+          "ref": "Psa.15.1"
+        },
+        {
+          "ref": "Psa.15.2"
+        },
+        {
+          "ref": "Psa.5.5"
+        },
+        {
+          "ref": "1Pe.1.17"
+        },
+        {
+          "ref": "1Pe.2.11"
+        }
+      ]
+    },
+    {
+      "topic": "gentiles-in-israel",
+      "statement": "The law kept a place in Israel for the גֵּר: one law for him and the native, the Passover open to him once circumcised, and Israel's love for him grounded in their own sojourning in Egypt (Exo 12:48–49; Num 15:15–16; Lev 19:34). The prophets look to a time when the sojourner joins himself to the house of Jacob and receives an inheritance among the tribes (Isa 14:1; Ezk 47:22–23). Paul tells Gentile believers that they were once “strangers from the covenants of promise”, but now are “no longer strangers and sojourners, but fellow citizens with the saints” (Eph 2:12, 19): Gentiles come into the hope by joining Israel's commonwealth, not apart from it.",
+      "evidence": [
+        {
+          "ref": "Exo.12.48"
+        },
+        {
+          "ref": "Exo.12.49"
+        },
+        {
+          "ref": "Num.15.15"
+        },
+        {
+          "ref": "Num.15.16"
+        },
+        {
+          "ref": "Lev.19.34"
+        },
+        {
+          "ref": "Isa.14.1"
+        },
+        {
+          "ref": "Ezk.47.22"
+        },
+        {
+          "ref": "Ezk.47.23"
+        },
+        {
+          "ref": "Eph.2.12"
+        },
+        {
+          "ref": "Eph.2.19"
+        }
+      ]
+    }
+  ],
+  "note": "Root key גור as the corpus keys it. BDB files the verb under three keys (c.bf.aa sojourn, c.bg.aa stir up strife, c.bh.aa dread) that hold the same tokens; only c.bf.aa is named on the verb so its tokens are counted once, and the senses are split by verse; c.bg.aa and c.bh.aa are left unnamed but belong to this verb. Left out: the places Gur (c.bf.ab, 2Ki 9:27), Gur-baal (c.bf.ac, 2Ch 26:7; its key's tokens in the database are all בַּעַל tokens), Jagur (c.bf.af and its cross-reference j.am.ab, Jos 15:21); Jer 30:23 מִתְגּוֹרֵר (root גרר) and Ezk 21:17 מְגוּרֵי (root מגר), which the database analyses elsewhere; and Agur (Pro 30:1, key a.az.ab), a name not filed here. Counting: c.bg.ac (cub) also holds Gen 26:3 (imperative “sojourn”); c.bf.ah (storehouse) holds Isa 66:4, which is “fear”; c.bf.ag and c.bh.ab share Gen 47:9 and Lam 2:22 (Lam 2:22 is cited under “terror”). Open: (1) How “dread” and “stir up strife” relate to “sojourn” is not shown; the Ugaritic “attack” and Arabic jāra “act wrongfully” support the strife sense, but “dread” has only Krahmalkov's reading of Punic gr-DN names, which could equally be “client of DN”. (2) Cub: Arabic jarw is j-r-w (third-weak), not j-w-r; Akkadian gerru matches; whether the cub word is another root in this spelling is undecided. (3) Ge'ez form ጎር from Wiktionary and Fisher's OCR; Leslau and Dillmann not consulted for it. (4) Biella's page for Sabaean grtn (p. 76) and its root heading are uncertain from the OCR; Fisher's page numbers are from OCR. (5) Hos 7:14 hithpolel is unclear. (6) Isa 54:15 could be read as “sojourn” (whoever sojourns with you shall fall to you). (7) The Peshitta's ܓܘܪ “commit adultery” and its nouns are entered as words of the entry; their link to sojourning is not shown. (8) Payne Smith and CAL not consulted for the Syriac and Aramaic."
+}
