@@ -1,0 +1,1365 @@
+{
+  "id": "ach",
+  "root": "אחה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "family",
+    "kinship",
+    "brotherhood",
+    "covenant",
+    "love",
+    "messiah"
+  ],
+  "gloss": "brother, sister; kinsman, fellow; one of a pair",
+  "summary": "אָח is a brother, a son of the same father or mother (Gen 4:2; 42:13), and from that any kinsman (Lot, Abram’s nephew, Gen 13:8), a fellow Israelite set against the foreigner (Deu 15:3; 17:15), a kindred people or an allied king (Num 20:14; Amo 1:9), and, after אִישׁ, “the other” of two (Exo 25:20). אָחוֹת is a sister or half-sister, a nation pictured as a sister (Ezk 23:4), and one of a matched pair (Exo 26:3); אַחֲוָה is the brotherhood between Judah and Israel (Zec 11:14). The tie brings duty: to keep, not hate, and open the hand to one’s brother (Gen 4:9; Lev 19:17; Deu 15:7), and the Messiah is a prophet raised “from your brothers” who calls his people brothers (Deu 18:15; Psa 22:23; Heb 2:11–12). Every branch of the Semitic languages has the word for brother and sister, with ḫ behind ח (Akkadian aḫu, Ugaritic ảḫ, Arabic ʾaḫ, Sabaean ʾḫ, Ge’ez ʾəḫw).",
+  "words": [
+    {
+      "lemma": "אָח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "brother; kinsman; fellow Israelite; ally; (with אִישׁ) one another",
+      "bdb": [
+        "a.ck.ab"
+      ],
+      "cognate_ids": [
+        "akk-ahu",
+        "uga-ah",
+        "ar-akh",
+        "phn-ah",
+        "sab-ah",
+        "gez-ekhw",
+        "arc-ah"
+      ],
+      "summary": "A son of the same parents, and by widening circles a relative, a member of the same people, a kindred nation or a king in alliance. The word is about one shared origin: “we are brothers, sons of one man” (Gen 42:13); “have we not all one father?” (Mal 2:10). It forms the first element of many names (Ahab, Ahijah, Ahiezer, Ahira), which have their own entries.",
+      "senses": [
+        {
+          "id": "brother-born",
+          "gloss": "brother (by birth)",
+          "definition": "A son of the same father, or of the same mother, or of both; a man’s brother is named beside his father, mother, son and daughter as his nearest kin.",
+          "evidence": [
+            {
+              "ref": "Gen.4.2",
+              "role": "defining",
+              "note": "Eve “bore his brother Abel”: the first brothers, sons of one mother."
+            },
+            {
+              "ref": "Gen.42.13",
+              "role": "defining",
+              "note": "“We your servants are twelve אַחִים, sons of one man in the land of Canaan.” The twelve had four mothers: one father makes them brothers."
+            },
+            {
+              "ref": "Jdg.8.19",
+              "role": "defining",
+              "note": "Gideon: “They were אַחַי, the sons of my mother.”"
+            },
+            {
+              "ref": "Deu.13.7",
+              "role": "defining",
+              "note": "“Your brother, the son of your mother”, listed with son, daughter, wife and the friend who is as your own soul."
+            },
+            {
+              "ref": "Lev.21.2",
+              "note": "A priest may defile himself only for his near kin: mother, father, son, daughter, brother (and unmarried sister, 21:3)."
+            },
+            {
+              "ref": "Gen.4.9",
+              "note": "“Where is Abel your brother?” “Am I my brother’s keeper?”"
+            },
+            {
+              "ref": "Gen.37.4",
+              "note": "Joseph’s brothers, sons of Jacob by other mothers, hated him."
+            },
+            {
+              "ref": "Gen.27.41",
+              "note": "Esau planned to kill Jacob his brother, his twin."
+            },
+            {
+              "ref": "Num.6.7"
+            },
+            {
+              "ref": "Mal.1.2",
+              "note": "“Was not Esau Jacob’s brother?”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "husband-brother",
+              "gloss": "the dead husband’s brother (levirate)",
+              "definition": "Where brothers dwell together and one dies without a son, his brother takes the widow and raises up a name for the dead.",
+              "evidence": [
+                {
+                  "ref": "Deu.25.5",
+                  "role": "defining",
+                  "note": "“When אַחִים dwell together and one of them dies and has no son…”"
+                },
+                {
+                  "ref": "Deu.25.7",
+                  "note": "If he refuses “to raise up a name in Israel for his brother”."
+                },
+                {
+                  "ref": "Gen.38.8",
+                  "note": "Judah to Onan: go in to your brother’s wife and raise up seed for your brother."
+                },
+                {
+                  "ref": "Rut.4.10",
+                  "note": "Boaz takes Ruth so that the name of the dead is not cut off “from among his brothers”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kinsman",
+          "gloss": "kinsman, relative",
+          "definition": "A man of the same family who is not a brother by birth: a nephew, an uncle’s son, a cousin, a man of the same clan.",
+          "evidence": [
+            {
+              "ref": "Gen.13.8",
+              "role": "defining",
+              "note": "Abram to Lot, his brother’s son (Gen 12:5): “Let there be no strife between me and you, for we are אֲנָשִׁים אַחִים.”"
+            },
+            {
+              "ref": "Gen.14.14",
+              "role": "defining",
+              "note": "“Abram heard that his brother was taken captive”: Lot."
+            },
+            {
+              "ref": "Gen.29.15",
+              "role": "defining",
+              "note": "Laban to Jacob, his sister’s son: “Because you are my brother, should you serve me for nothing?”"
+            },
+            {
+              "ref": "Lev.10.4",
+              "role": "defining",
+              "note": "Moses tells Mishael and Elzaphan, sons of Aaron’s uncle, to carry out “your brothers”, Nadab and Abihu: their cousins."
+            },
+            {
+              "ref": "Num.16.10",
+              "note": "Korah’s company, “all your brothers the sons of Levi”: the tribe as brothers."
+            },
+            {
+              "ref": "Num.8.26",
+              "note": "A Levite past his service helps “his brothers” in the tent of meeting."
+            },
+            {
+              "ref": "1Ch.25.9",
+              "note": "The singers’ courses: “he and his brothers and his sons, twelve”."
+            },
+            {
+              "ref": "Jdg.9.3",
+              "note": "Shechem’s men incline to Abimelech, “for they said, he is our brother”: his mother was of Shechem (9:1)."
+            }
+          ]
+        },
+        {
+          "id": "fellow-israelite",
+          "gloss": "fellow Israelite, countryman",
+          "definition": "Any member of the people of Israel, as one family under one father: owed help, fair dealing and release, and set against the נָכְרִי, the foreigner.",
+          "evidence": [
+            {
+              "ref": "Deu.15.3",
+              "role": "defining",
+              "note": "“The foreigner you may press, but what is yours with your brother your hand shall release.”"
+            },
+            {
+              "ref": "Deu.17.15",
+              "role": "defining",
+              "note": "“From among your brothers you shall set a king over you; you may not set a foreign man over you who is not your brother.”"
+            },
+            {
+              "ref": "Exo.2.11",
+              "role": "defining",
+              "note": "Moses “went out to his brothers and saw their burdens”, and saw an Egyptian striking “a Hebrew man, one of his brothers”."
+            },
+            {
+              "ref": "Jer.34.9",
+              "role": "defining",
+              "note": "Each was to free his Hebrew slave, man or woman, “so that no one should keep a Jew, his brother, in bondage”."
+            },
+            {
+              "ref": "Deu.15.12",
+              "note": "“If your brother, a Hebrew man or a Hebrew woman, is sold to you”: the word covers a sister of the people too."
+            },
+            {
+              "ref": "Lev.25.35",
+              "note": "“If your brother becomes poor and his hand fails with you, you shall uphold him.”"
+            },
+            {
+              "ref": "Lev.25.39"
+            },
+            {
+              "ref": "Lev.25.46",
+              "role": "defining",
+              "note": "Slaves may be bought from the nations, “but over your brothers the sons of Israel, a man over his brother, you shall not rule with harshness.”"
+            },
+            {
+              "ref": "Deu.15.7",
+              "note": "“If there is among you a poor man of one of your brothers … you shall not shut your hand from your poor brother.”"
+            },
+            {
+              "ref": "Deu.23.21",
+              "note": "“To a foreigner you may lend at interest, but to your brother you shall not.”"
+            },
+            {
+              "ref": "Deu.18.15",
+              "note": "“A prophet from your midst, from your brothers, like me.”"
+            },
+            {
+              "ref": "Lev.19.17",
+              "note": "“You shall not hate your brother in your heart”, beside עָמִית and, in 19:18, רֵעַ."
+            },
+            {
+              "ref": "Neh.5.8",
+              "note": "“We have bought back our brothers the Jews who were sold to the nations; and will you even sell your brothers?”"
+            },
+            {
+              "ref": "Psa.133.1",
+              "note": "“How good and how pleasant for אַחִים to dwell together in unity!”"
+            },
+            {
+              "ref": "Mal.2.10",
+              "role": "defining",
+              "note": "“Have we not all one father? Has not one God created us? Why do we deal treacherously each man against his brother?”: brothers because of one father."
+            }
+          ]
+        },
+        {
+          "id": "kindred-nation",
+          "gloss": "kindred nation; ally, treaty partner",
+          "definition": "A people descended from a brother (Edom from Esau), and a king joined to another by treaty, who calls him “my brother”.",
+          "evidence": [
+            {
+              "ref": "Num.20.14",
+              "role": "defining",
+              "note": "Moses to the king of Edom: “Thus says your brother Israel.”"
+            },
+            {
+              "ref": "Deu.23.8",
+              "role": "defining",
+              "note": "“You shall not abhor an Edomite, for he is your brother.”"
+            },
+            {
+              "ref": "Deu.2.4",
+              "note": "Passing through “the border of your brothers the sons of Esau”."
+            },
+            {
+              "ref": "Amo.1.11",
+              "note": "Edom “pursued his brother with the sword and cast off all pity”."
+            },
+            {
+              "ref": "Oba.1.10",
+              "note": "“For the violence to your brother Jacob, shame shall cover you.”"
+            },
+            {
+              "ref": "Amo.1.9",
+              "role": "defining",
+              "note": "Tyre “did not remember the בְּרִית אַחִים”, the covenant of brothers: a treaty, as between Hiram and David and Solomon (1Ki 5:15, 26)."
+            },
+            {
+              "ref": "1Ki.9.13",
+              "role": "defining",
+              "note": "Hiram king of Tyre to Solomon, his treaty partner: “What are these cities that you have given me, my brother?”"
+            },
+            {
+              "ref": "1Ki.20.32",
+              "note": "Ahab of Ben-hadad, whose life is begged: “Is he still alive? He is my brother.”"
+            },
+            {
+              "ref": "1Ki.20.33"
+            }
+          ],
+          "kin": [
+            "brotherhood"
+          ]
+        },
+        {
+          "id": "one-another",
+          "gloss": "(אִישׁ … אָחִיו) each … the other, one another",
+          "definition": "After אִישׁ, “a man … his brother” is the other one of two or of many: one another, each other, each alike. It is said of people, and of the two cherubim facing each other.",
+          "evidence": [
+            {
+              "ref": "Exo.25.20",
+              "role": "defining",
+              "note": "The cherubim: “their faces אִישׁ אֶל־אָחִיו, toward the covering”: facing each other."
+            },
+            {
+              "ref": "Exo.37.9"
+            },
+            {
+              "ref": "Gen.37.19",
+              "role": "defining",
+              "note": "“They said אִישׁ אֶל־אָחִיו, Here comes this master of dreams.”"
+            },
+            {
+              "ref": "Exo.16.15",
+              "note": "“They said one to another, מָן הוּא?”"
+            },
+            {
+              "ref": "Lev.25.14",
+              "note": "In selling to your עָמִית, “you shall not wrong one another”."
+            },
+            {
+              "ref": "Isa.41.6",
+              "note": "“Each helps his neighbour, and says to his brother, Be strong”: רֵעַ and אָח in parallel."
+            },
+            {
+              "ref": "Jer.31.34",
+              "note": "“They shall no more teach each his neighbour and each his brother, saying, Know Yahweh.”"
+            },
+            {
+              "ref": "Ezk.47.14",
+              "role": "defining",
+              "note": "“You shall inherit it, אִישׁ כְּאָחִיו”: each alike, in equal shares."
+            },
+            {
+              "ref": "Hag.2.22",
+              "note": "Horses and riders shall go down, “each by the sword of his brother”."
+            },
+            {
+              "ref": "Lev.26.37",
+              "note": "“They shall stumble, each over his brother.”"
+            }
+          ]
+        },
+        {
+          "id": "brother-in-kind",
+          "gloss": "brother to, one of a kind with; close companion",
+          "definition": "In poetry and proverb, one who is like another or keeps company with him: brother to jackals, brother to a destroyer; and the brother whose loyalty is tested in trouble, set beside רֵעַ, friend.",
+          "evidence": [
+            {
+              "ref": "Pro.18.9",
+              "role": "defining",
+              "note": "“He who is slack in his work, אָח הוּא to the master of destruction”: one of a kind with him."
+            },
+            {
+              "ref": "Job.30.29",
+              "role": "defining",
+              "note": "“I am a brother to jackals, and a companion (רֵעַ) to ostriches.”"
+            },
+            {
+              "ref": "Pro.17.17",
+              "role": "defining",
+              "note": "“A friend (רֵעַ) loves at all times, and a brother is born for adversity.”"
+            },
+            {
+              "ref": "Pro.18.24",
+              "note": "“There is a friend who sticks closer than a brother.”"
+            },
+            {
+              "ref": "Psa.35.14",
+              "note": "“As for a friend, as for a brother to me, I went about.”"
+            },
+            {
+              "ref": "Psa.122.8",
+              "note": "“For the sake of my brothers and companions I will say, Peace be within you.”"
+            },
+            {
+              "ref": "Jer.9.3",
+              "note": "“Beware each of his neighbour, and trust in no brother, for every brother supplants (עָקוֹב יַעְקֹב).”"
+            },
+            {
+              "ref": "Pro.27.10"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀδελφός",
+          "gloss": "brother",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.4.9, אָחִי → ἀδελφός; Deu.18.15, אַחֶיךָ → ἀδελφῶν; Psa.22.23, לְאֶחָי → ἀδελφοῖς; ἀδελφός renders אָח ×565"
+            },
+            {
+              "ref": "Heb.2.12",
+              "role": "defining",
+              "note": "Psa 22:23 in Christ’s mouth: “I will declare your name to my ἀδελφοῖς”; “he is not ashamed to call them brothers” (2:11)."
+            },
+            {
+              "ref": "Heb.2.17",
+              "role": "defining",
+              "note": "“It behoved him in all things to be made like his ἀδελφοῖς.”"
+            },
+            {
+              "ref": "Act.3.22",
+              "role": "defining",
+              "note": "Deu 18:15 applied to Jesus: “a prophet from your brothers, like me”."
+            },
+            {
+              "ref": "Act.7.37"
+            },
+            {
+              "ref": "Heb.8.11",
+              "note": "Jer 31:34: “each his brother, saying, Know the Lord”."
+            },
+            {
+              "ref": "1Jn.3.12",
+              "note": "“Not as Cain, who was of the wicked one and killed his brother” (Gen 4:8)."
+            },
+            {
+              "ref": "Mat.23.8",
+              "note": "“One is your teacher, and all of you are ἀδελφοί.”"
+            },
+            {
+              "ref": "Mat.5.23",
+              "note": "“If your brother has something against you”, at the altar."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רֵעַ",
+            "note": "“Neighbour, friend, companion”: the commonest word set beside אָח.",
+            "evidence": [
+              {
+                "ref": "Pro.17.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.30.29"
+              },
+              {
+                "ref": "Psa.122.8"
+              },
+              {
+                "ref": "Isa.41.6"
+              },
+              {
+                "ref": "Jer.9.3"
+              },
+              {
+                "ref": "Jer.31.34"
+              },
+              {
+                "ref": "Deu.13.7"
+              }
+            ]
+          },
+          {
+            "lemma": "עָמִית",
+            "note": "“Fellow, associate”: in the law beside “your brother”.",
+            "evidence": [
+              {
+                "ref": "Lev.19.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.25.14"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "נָכְרִי",
+            "note": "“Foreigner”: one who is not a brother, to whom the brother’s release, interest-free loan and kingship do not belong.",
+            "evidence": [
+              {
+                "ref": "Deu.17.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.15.3"
+              },
+              {
+                "ref": "Deu.23.21"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אִישׁ אֶל־אָחִיו",
+            "gloss": "each to the other, to one another",
+            "evidence": [
+              {
+                "ref": "Gen.37.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.25.20"
+              },
+              {
+                "ref": "Exo.16.15"
+              }
+            ]
+          },
+          {
+            "phrase": "אִישׁ כְּאָחִיו",
+            "gloss": "each like the other, equally",
+            "evidence": [
+              {
+                "ref": "Ezk.47.14",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּרִית אַחִים",
+            "gloss": "a covenant of brothers, treaty of alliance",
+            "evidence": [
+              {
+                "ref": "Amo.1.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲנָשִׁים אַחִים",
+            "gloss": "men who are brothers, kinsmen",
+            "evidence": [
+              {
+                "ref": "Gen.13.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אָחוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sister, half-sister; kinswoman, beloved; (with אִשָּׁה) one to another",
+      "bdb": [
+        "a.ck.bg"
+      ],
+      "cognate_ids": [
+        "akk-ahatu",
+        "uga-aht",
+        "ar-akh",
+        "phn-ah",
+        "sab-ah",
+        "gez-ekhw",
+        "arc-ah"
+      ],
+      "summary": "The feminine of אָח, and used in the same widening ways: a sister by either parent, a beloved or a figure of close kinship, two nations born of one mother, and, after אִשָּׁה, the other of a pair of feminine things.",
+      "senses": [
+        {
+          "id": "sister-born",
+          "gloss": "sister, half-sister",
+          "definition": "A daughter of the same father or of the same mother.",
+          "evidence": [
+            {
+              "ref": "Lev.18.9",
+              "role": "defining",
+              "note": "“Your sister, the daughter of your father or the daughter of your mother.”"
+            },
+            {
+              "ref": "Gen.20.12",
+              "role": "defining",
+              "note": "Abraham of Sarah: “She is indeed my sister, the daughter of my father, but not the daughter of my mother.”"
+            },
+            {
+              "ref": "Num.26.59",
+              "note": "Jochebed bore Aaron, Moses “and Miriam their sister”."
+            },
+            {
+              "ref": "Exo.15.20",
+              "note": "“Miriam the prophetess, the sister of Aaron.”"
+            },
+            {
+              "ref": "Gen.34.13",
+              "note": "Dinah, “their sister”."
+            },
+            {
+              "ref": "2Sa.13.1",
+              "note": "Tamar, Absalom’s sister, and Amnon’s half-sister."
+            },
+            {
+              "ref": "Num.6.7",
+              "note": "The Nazirite may not defile himself even for father, mother, brother or sister."
+            },
+            {
+              "ref": "Gen.4.22",
+              "note": "“And the sister of Tubal-cain was Naamah.”"
+            }
+          ]
+        },
+        {
+          "id": "sister-beloved",
+          "gloss": "sister: beloved bride, close companion",
+          "definition": "A woman, or a thing, held as close as a sister: the bride whom her beloved calls “my sister”, wisdom to be called sister, and the worm Job calls his mother and sister.",
+          "evidence": [
+            {
+              "ref": "Sng.4.9",
+              "role": "defining",
+              "note": "“You have ravished my heart, אֲחֹתִי כַלָּה, my sister, bride.”"
+            },
+            {
+              "ref": "Sng.5.1"
+            },
+            {
+              "ref": "Sng.5.2"
+            },
+            {
+              "ref": "Pro.7.4",
+              "role": "defining",
+              "note": "“Say to wisdom, You are my sister, and call understanding kinswoman”: against the strange woman (7:5)."
+            },
+            {
+              "ref": "Job.17.14",
+              "note": "“To the pit I call, You are my father; to the worm, my mother and my sister”: the grave as his nearest kin."
+            }
+          ]
+        },
+        {
+          "id": "sister-nations",
+          "gloss": "sister (of nations and cities)",
+          "definition": "In the prophets, Israel and Judah, Samaria, Sodom and Jerusalem are sisters, daughters of one mother, alike in their unfaithfulness.",
+          "evidence": [
+            {
+              "ref": "Ezk.23.4",
+              "role": "defining",
+              "note": "Oholah the elder “and Oholibah her sister … Samaria is Oholah, and Jerusalem Oholibah”."
+            },
+            {
+              "ref": "Ezk.16.46",
+              "note": "“Your elder sister is Samaria … and your younger sister … is Sodom.”"
+            },
+            {
+              "ref": "Ezk.16.45",
+              "note": "“You are the sister of your sisters, who loathed their husbands and their children.”"
+            },
+            {
+              "ref": "Jer.3.8",
+              "role": "defining",
+              "note": "Israel was put away, “yet treacherous Judah her sister did not fear”."
+            },
+            {
+              "ref": "Jer.3.10"
+            }
+          ]
+        },
+        {
+          "id": "one-to-another-f",
+          "gloss": "(אִשָּׁה אֶל־אֲחֹתָהּ) one to another",
+          "definition": "After אִשָּׁה, of things feminine in Hebrew: each joined to, or facing, the other of a matched set.",
+          "evidence": [
+            {
+              "ref": "Exo.26.3",
+              "role": "defining",
+              "note": "“Five curtains shall be joined, אִשָּׁה אֶל־אֲחֹתָהּ”: one to another."
+            },
+            {
+              "ref": "Exo.26.5",
+              "note": "The loops “opposite one another”."
+            },
+            {
+              "ref": "Exo.26.17",
+              "note": "The tenons of each board “set one against another”."
+            },
+            {
+              "ref": "Ezk.1.9",
+              "role": "defining",
+              "note": "The living creatures’ wings “joined one to another”."
+            },
+            {
+              "ref": "Ezk.1.23"
+            },
+            {
+              "ref": "Ezk.3.13"
+            }
+          ],
+          "kin": [
+            "one-another"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀδελφή",
+          "gloss": "sister",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.20.12, אֲחֹתִי → ἀδελφή; Sng.4.9, אֲחֹתִי → ἀδελφή; ἀδελφή renders אָחוֹת ×79"
+            },
+            {
+              "ref": "Mat.12.50",
+              "role": "defining",
+              "note": "“Whoever does the will of my Father in heaven, he is my brother and sister and mother.”"
+            },
+            {
+              "ref": "Mrk.3.35"
+            },
+            {
+              "ref": "1Ti.5.2",
+              "note": "“The younger women as sisters, in all purity.”"
+            },
+            {
+              "ref": "Jas.2.15",
+              "note": "“If a brother or sister is naked and lacking daily food.”"
+            },
+            {
+              "ref": "Rom.16.1",
+              "note": "“Phoebe our sister.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַחֲוָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "brotherhood",
+      "bdb": [
+        "a.ck.be"
+      ],
+      "cognate_ids": [
+        "akk-ahhutu",
+        "ar-akh",
+        "sab-ah",
+        "arc-ah"
+      ],
+      "summary": "The state of being brothers, used once, of the bond between Judah and Israel, broken with the shepherd’s second staff. One use only, but the sense is plain from אָח and from Akkadian aḫḫūtu, Arabic ʾuḫuwwa and Sabaean ʾḫwn, which are the same abstract.",
+      "senses": [
+        {
+          "id": "brotherhood",
+          "gloss": "brotherhood (between Judah and Israel)",
+          "definition": "The bond of brothers between the two houses of Jacob’s sons, which the prophet breaks as a sign.",
+          "evidence": [
+            {
+              "ref": "Zec.11.14",
+              "role": "defining",
+              "note": "“I cut in pieces my second staff, Bands (הַחֹבְלִים), to break הָאַחֲוָה between Judah and Israel.”"
+            },
+            {
+              "ref": "Zec.11.7",
+              "note": "The two staffs, Favour and Bands, with which he shepherded the flock."
+            },
+            {
+              "ref": "Ezk.37.19",
+              "note": "The opposite sign: the sticks of Judah and of Joseph made one in Yahweh’s hand."
+            }
+          ],
+          "kin": [
+            "kindred-nation",
+            "fellow-israelite"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָחוּ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "reed-grass, marsh-grass (by the Nile)",
+      "bdb": [
+        "a.ck.bh"
+      ],
+      "cognate_ids": [
+        "egy-akh",
+        "uga-ah-swamp",
+        "akk-ahu-bank",
+        "arc-ahwa"
+      ],
+      "summary": "The grass or reeds of a river’s edge, where Pharaoh’s cows grazed. Three uses. Its link to the root’s sense of “brother” is not understood, and it may not belong to this root at all: Egyptian ꜣḫ “papyrus thicket” fits its Egyptian setting and may be its source, and Ugaritic ảḫ “swamp” and Akkadian aḫu “bank, shore” are possible kin.",
+      "senses": [
+        {
+          "gloss": "reed-grass, marsh-grass",
+          "definition": "Green growth that needs water and grows at the river’s edge, where cattle graze; named with גֹּמֶא, papyrus.",
+          "evidence": [
+            {
+              "ref": "Gen.41.2",
+              "role": "defining",
+              "note": "Seven cows came up “from the Nile … and they grazed בָּאָחוּ”."
+            },
+            {
+              "ref": "Gen.41.18"
+            },
+            {
+              "ref": "Job.8.11",
+              "role": "defining",
+              "note": "“Can papyrus (גֹּמֶא) rise up without a marsh? Can אָחוּ grow without water?”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גֹּמֶא",
+            "note": "Papyrus, beside it in the parallel lines.",
+            "evidence": [
+              {
+                "ref": "Job.8.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אַח",
+      "lang": "arc",
+      "root": "אח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "brother, fellow (Jew or priest)",
+      "bdb": [
+        "xa.aj.ab"
+      ],
+      "cognate_ids": [
+        "akk-ahu",
+        "uga-ah",
+        "ar-akh",
+        "arc-ah"
+      ],
+      "summary": "Biblical Aramaic, once, in Artaxerxes’ letter: Ezra’s fellow priests and Jews.",
+      "senses": [
+        {
+          "gloss": "brother, fellow",
+          "definition": "Ezra’s fellows, with whom he was to decide how to use the rest of the silver and gold.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.18",
+              "role": "defining",
+              "note": "“Whatever seems good to you and to your brothers (אֶחָךְ) to do with the rest of the silver and gold.”"
+            }
+          ],
+          "kin": [
+            "fellow-israelite"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַחָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "brother; fellow believer",
+      "summary": "The Peshitta’s ܐܚܐ (ʾaḥā), for ἀδελφός: brother by birth, and the disciples and believers as brothers.",
+      "cognate_ids": [
+        "akk-ahu",
+        "uga-ah",
+        "ar-akh",
+        "arc-ah"
+      ],
+      "senses": [
+        {
+          "gloss": "brother; fellow disciple",
+          "definition": "A brother by birth, and, in Jesus’ words and the apostles’, those who do the Father’s will and the members of the ecclesia.",
+          "evidence": [
+            {
+              "ref": "Mat.12.50",
+              "role": "defining",
+              "note": "“Whoever does the will of my Father … is my brother (ܐܚܝ), and my sister, and my mother.”"
+            },
+            {
+              "ref": "Mat.23.8",
+              "role": "defining",
+              "note": "“All of you are brothers.”"
+            },
+            {
+              "ref": "Heb.2.11",
+              "role": "defining",
+              "note": "“He is not ashamed to call them brothers.”"
+            },
+            {
+              "ref": "Act.3.22",
+              "note": "Deu 18:15: a prophet from your brothers."
+            },
+            {
+              "ref": "Act.7.37"
+            },
+            {
+              "ref": "1Co.6.6",
+              "note": "“Brother goes to law against brother.”"
+            }
+          ],
+          "kin": [
+            "fellow-israelite",
+            "brother-born"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sister",
+      "summary": "The Peshitta’s ܚܬܐ (ḥātā), with ʾ dropped from the front (also spelled ܐܚܬܐ), for ἀδελφή.",
+      "cognate_ids": [
+        "akk-ahatu",
+        "uga-aht",
+        "ar-akh",
+        "arc-ah"
+      ],
+      "senses": [
+        {
+          "gloss": "sister; sister in the faith",
+          "definition": "A sister by birth, and a woman of the ecclesia.",
+          "evidence": [
+            {
+              "ref": "Mat.12.50",
+              "role": "defining",
+              "note": "“… is my brother, and my sister (ܚܬܝ), and my mother.”"
+            },
+            {
+              "ref": "Mrk.3.35"
+            },
+            {
+              "ref": "Jhn.11.3",
+              "note": "Martha and Mary, Lazarus’ sisters."
+            },
+            {
+              "ref": "Rom.16.1",
+              "role": "defining",
+              "note": "“Phoebe our sister.”"
+            },
+            {
+              "ref": "1Ti.5.2"
+            },
+            {
+              "ref": "Jas.2.15"
+            }
+          ],
+          "kin": [
+            "sister-born"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַחוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "brotherhood, brotherly love",
+      "summary": "The Peshitta’s ܐܚܘܬܐ (ʾaḥūtā), for φιλαδελφία, the same abstract as Hebrew אַחֲוָה.",
+      "cognate_ids": [
+        "akk-ahhutu",
+        "ar-akh",
+        "arc-ah"
+      ],
+      "senses": [
+        {
+          "gloss": "brotherly love",
+          "definition": "The love of believers for one another as brothers.",
+          "evidence": [
+            {
+              "ref": "2Pe.1.7",
+              "role": "defining",
+              "note": "“To godliness add ܐܚܘܬܐ, and to ܐܚܘܬܐ love.”"
+            }
+          ],
+          "kin": [
+            "brotherhood"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַחְיָנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "kinsman, relative",
+      "summary": "The Peshitta’s ܐܚܝܢܐ (ʾaḥyānā), formed from ܐܚܐ, for συγγενής: a relative, and Paul’s fellow Jews.",
+      "cognate_ids": [
+        "arc-ah",
+        "ar-akh"
+      ],
+      "senses": [
+        {
+          "gloss": "kinsman, kinswoman; fellow countryman",
+          "definition": "A relative by blood, and one of the same nation.",
+          "evidence": [
+            {
+              "ref": "Luk.1.36",
+              "role": "defining",
+              "note": "“Elizabeth your kinswoman.”"
+            },
+            {
+              "ref": "Jhn.18.26",
+              "note": "A servant of the high priest, “a kinsman of him whose ear Peter cut off”."
+            },
+            {
+              "ref": "Rom.9.3",
+              "role": "defining",
+              "note": "“For my brothers, my kinsmen according to the flesh”: ܐܚܝ beside ܐܚܝܢܝ."
+            },
+            {
+              "ref": "Rom.16.7"
+            },
+            {
+              "ref": "Mrk.6.4",
+              "note": "“A prophet is not without honour except in his own country and among his own kin.”"
+            },
+            {
+              "ref": "Luk.21.16"
+            }
+          ],
+          "kin": [
+            "kinsman"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ahu",
+      "lang": "akk",
+      "form": "aḫu",
+      "translit": "aḫu",
+      "gloss": "brother",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Akkadian aḫu, brother, used also between kings in alliance; with athû, “brothers, companions”. Akkadian ḫ answers to ḫ, not ḥ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005590, ahu [brother] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000086510, athû [companions] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-ahatu",
+      "lang": "akk",
+      "form": "aḫātu",
+      "translit": "aḫātu",
+      "gloss": "sister",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003630, ahātu [sister] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-ahhutu",
+      "lang": "akk",
+      "form": "aḫḫūtu",
+      "translit": "aḫḫūtu",
+      "gloss": "brotherhood, brotherly relations",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "The abstract of aḫu, used of brotherly relations between rulers: the same abstract as אַחֲוָה.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000006940, ahhūtu [brotherhood] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-ahu-bank",
+      "lang": "akk",
+      "form": "aḫu",
+      "translit": "aḫu",
+      "gloss": "arm, side; bank, shore",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "A different Akkadian noun from aḫu “brother”. “Bank, shore” would fit אָחוּ as the growth of the river’s edge, but nothing ties them beyond sound and setting.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000002380, ahu [arm] N (meanings: side, bank, shore)"
+        }
+      ]
+    },
+    {
+      "id": "uga-ah",
+      "lang": "uga",
+      "form": "𐎀𐎃",
+      "translit": "ảḫ",
+      "gloss": "brother",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Also in names (ảḫršp, “brother of Rašap”), as Hebrew in אֲחִי־ names.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 178, §93 Glossary, ảḫ “brother”; ảḫršp"
+        }
+      ]
+    },
+    {
+      "id": "uga-aht",
+      "lang": "uga",
+      "form": "𐎀𐎃𐎚",
+      "translit": "ảḫt",
+      "gloss": "sister",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Anat “the most beautiful among Baal’s sisters” (KTU 1.10 II 16), and “may you live, my sister” (1.10 II 20).",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎃𐎚 (ảḫt)"
+        }
+      ]
+    },
+    {
+      "id": "uga-ah-swamp",
+      "lang": "uga",
+      "form": "𐎀𐎃",
+      "translit": "ảḫ",
+      "gloss": "swamp, marsh (reeds?)",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "KTU 1.10 (column II), a marshy place. If it is the same word as אָחוּ, the Hebrew is not only an Egyptian loan; Segert himself marks the sense with a query.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 178, §93 Glossary, ảḫ (KTU 1.10) “swamp”"
+        }
+      ]
+    },
+    {
+      "id": "ar-akh",
+      "lang": "ar",
+      "form": "أَخٌ، أُخْتٌ، أُخُوَّةٌ، آخَى",
+      "translit": "ʾaḫ, ʾuḫt, ʾuḫuwwa, ʾāḫā",
+      "gloss": "brother, sister; brotherhood; fraternize, act as a brother",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Lane: “a brother; the son of one’s father and mother, or of either of them … a friend; and a companion, an associate, or a fellow”; fem. ʾuḫt, sister. When not of birth, ʾuḫuwwa is “conformity, or similarity”: “this garment is the brother of this”, its like or fellow, as the curtains of the tabernacle are joined “a woman to her sister” (Exo 26:3). The verb ʾāḫā, “he fraternized with him”. Arabic خ (ḫ), not ح (ḥ), stands behind ח.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 33, أَخٌ (n402); p. 34, أُخْتٌ (n406), أُخُوَّةٌ (n412)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 32, أَخَوْتَ (n397); p. 33, آخاهُ (n399)"
+        }
+      ]
+    },
+    {
+      "id": "phn-ah",
+      "lang": "phn",
+      "form": "𐤀𐤇، 𐤀𐤇𐤕",
+      "translit": "ʾḥ, ʾḥt",
+      "gloss": "brother; sister",
+      "relation": "cognate",
+      "note": "Phoenician and Punic, with names such as ʾḥrm (Ahiram, king of Byblos) and ʾḥndb “my brother is noble”, the same as Hebrew אֲחִירָם and אֲחִינָדָב. Phoenician ḥ does not show which older sound stands behind it.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 42, ʾḤ (BROTHER) and names in ʾḤ-; p. 44, ʾḤT (SISTER)"
+        }
+      ]
+    },
+    {
+      "id": "sab-ah",
+      "lang": "sem",
+      "form": "𐩱𐩭، 𐩱𐩭𐩩، 𐩱𐩭𐩥𐩬",
+      "translit": "ʾḫ, ʾḫt, ʾḫwn",
+      "gloss": "brother, ally; sister; alliance; (verb ʾḫw) ally oneself, make alliance",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Sabaean: ʾḫ “brother; ally (senses difficult to distinguish unless filiation is given)”, as “his ally and lord”; a man to his brother for “one another”; ʾḫwn “alliance” concluded between kings. The same span as אָח, from the brother born to the treaty partner of Amo 1:9 and 1Ki 9:13.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 12–13, ʾḪW (verb; ʾḫ brother, ally; ʾḫt sister; ʾḫwn alliance)"
+        }
+      ]
+    },
+    {
+      "id": "gez-ekhw",
+      "lang": "gez",
+      "form": "እኅው، እኅት",
+      "translit": "ʾəḫw, ʾəḫt",
+      "gloss": "brother; countryman, neighbour, tribesman; sister",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Ge’ez extends “brother” to countryman and tribesman, as Hebrew to fellow Israelite. Ge’ez ኀ (ḫ) stands behind ח.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez እኅው (ʾəḫw); እኅት (ʾəḫt)"
+        }
+      ]
+    },
+    {
+      "id": "arc-ah",
+      "lang": "arc",
+      "form": "אַח، אַחָא، אָחוֹת، אַחֲוָה",
+      "translit": "ʾaḥ, ʾaḥā, ʾāḥōṯ, ʾaḥăwā",
+      "gloss": "brother, kinsman, fellow; sister; brotherhood, brotherly love",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: “brother, kinsman; fellow, equal, fellow-believer”, and אַחֲוָה “brotherhood, brotherly love, friendship”. Aramaic ח does not show whether ḥ or ḫ stands behind it.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אָח I; s.v. אַח (ch.)",
+          "note": "Targ. Gen. XIII, 8."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אַחֲוָה"
+        }
+      ]
+    },
+    {
+      "id": "arc-ahwa",
+      "lang": "arc",
+      "form": "אַחְוָא",
+      "translit": "ʾaḥwā",
+      "gloss": "meadow-grass, reed",
+      "relation": "possible",
+      "note": "Targum Onkelos at Gen 41:2 keeps the Hebrew word for the Nile grass; it may be the Hebrew word carried into the Targum, so it shows only that the sense was known.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אַחְוָא",
+          "note": "Targ. O. Gen. XLI, 2."
+        }
+      ]
+    },
+    {
+      "id": "egy-akh",
+      "lang": "egy",
+      "form": "ꜣḫ",
+      "translit": "ꜣḫ",
+      "gloss": "papyrus thicket",
+      "relation": "loan",
+      "note": "Egyptian ꜣḫ, a thicket of papyrus, is a likely source of אָחוּ, which first appears in Pharaoh’s dream by the Nile (Gen 41:2) and is paired with papyrus in Job 8:11. Not certain: Ugaritic ảḫ “swamp” suggests a native word too.",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla198, ꜣḫ “papyrus thicket” (FCD 4,7)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "messiah-a-brother",
+      "statement": "Moses promised “a prophet from your midst, from your brothers, like me” (Deu 18:15, 18), as the king was to be “from among your brothers”, never a foreigner “who is not your brother” (Deu 17:15). Peter and Stephen say that prophet is Jesus (Act 3:22–26; 7:37). The sufferer of Psa 22 says “I will declare your name to my brothers; in the midst of the assembly I will praise you” (Psa 22:23), and Hebrews puts the words in Christ’s mouth: “he is not ashamed to call them brothers”, and since the children share flesh and blood “he himself likewise partook of the same”, so that “it behoved him in all things to be made like his brothers” (Heb 2:11–12, 14, 17). From the verses: the one who saves had to be a brother of those he saves, of their stock and their nature, tempted as they are (Heb 4:15), not a being of another kind; and his brothers and sisters now are those who do his Father’s will (Mat 12:50).",
+      "evidence": [
+        {
+          "ref": "Deu.18.15"
+        },
+        {
+          "ref": "Deu.18.18"
+        },
+        {
+          "ref": "Deu.17.15"
+        },
+        {
+          "ref": "Act.3.22",
+          "to": "Act.3.26"
+        },
+        {
+          "ref": "Act.7.37"
+        },
+        {
+          "ref": "Psa.22.23"
+        },
+        {
+          "ref": "Heb.2.11",
+          "to": "Heb.2.17"
+        },
+        {
+          "ref": "Heb.4.15"
+        },
+        {
+          "ref": "Mat.12.50"
+        }
+      ]
+    },
+    {
+      "topic": "brotherly-love",
+      "statement": "The first brother killed the second, and answered Yahweh, “Am I my brother’s keeper?” (Gen 4:8–9). The law answers him: “You shall not hate your brother in your heart … you shall love your neighbour as yourself” (Lev 19:17–18); the poor brother is to be upheld and lent to without interest (Lev 25:35–37; Deu 23:21), the hand not shut against him (Deu 15:7–11), and no Israelite ruled with harshness by his brother (Lev 25:46). John takes up Cain: “not as Cain, who … killed his brother”; “whoever hates his brother is a murderer”; and whoever sees his brother in need and shuts up his compassion from him, the love of God does not dwell in him (1Jn 3:12–17). Jesus puts reconciliation with a brother before the gift at the altar (Mat 5:22–24). From the verses: to be a brother is a charge to keep, and hatred of a brother, even in the heart, is the beginning of Cain’s sin.",
+      "evidence": [
+        {
+          "ref": "Gen.4.8",
+          "to": "Gen.4.10"
+        },
+        {
+          "ref": "Lev.19.17",
+          "to": "Lev.19.18"
+        },
+        {
+          "ref": "Lev.25.35",
+          "to": "Lev.25.37"
+        },
+        {
+          "ref": "Lev.25.46"
+        },
+        {
+          "ref": "Deu.15.7",
+          "to": "Deu.15.11"
+        },
+        {
+          "ref": "Deu.23.21"
+        },
+        {
+          "ref": "1Jn.3.12",
+          "to": "1Jn.3.17"
+        },
+        {
+          "ref": "Mat.5.22",
+          "to": "Mat.5.24"
+        }
+      ]
+    },
+    {
+      "topic": "israel-reunited",
+      "statement": "Israel’s tribes are brothers because they have one father (Gen 42:13; Mal 2:10). In Zechariah the shepherd is valued at thirty pieces of silver, which are cast to the potter in Yahweh’s house (Zec 11:12–13), and then he breaks his second staff, Bands, “to break the brotherhood between Judah and Israel” (Zec 11:14). Matthew finds those thirty pieces in the price of Jesus and the potter’s field (Mat 27:9–10). Ezekiel gives the opposite sign: the sticks of Judah and of Joseph are made one in Yahweh’s hand, one nation on the mountains of Israel with one king, “David my servant”, over them, never again two kingdoms (Ezk 37:19–24). From the verses: the brotherhood was broken when the shepherd was rejected and sold, and is restored when the scattered tribes are gathered under the one king, Christ at his return (Ezk 37:21–22, 24).",
+      "evidence": [
+        {
+          "ref": "Gen.42.13"
+        },
+        {
+          "ref": "Mal.2.10"
+        },
+        {
+          "ref": "Zec.11.12",
+          "to": "Zec.11.14"
+        },
+        {
+          "ref": "Mat.27.9",
+          "to": "Mat.27.10"
+        },
+        {
+          "ref": "Ezk.37.19",
+          "to": "Ezk.37.24"
+        }
+      ]
+    }
+  ],
+  "note": "The corpus keys the root אחה (BDB a.ck.aa), with no verb in scripture; Biblical Aramaic אַח is keyed xa.aj.ab under root אח, and its one use (Ezr 7:18, אֶחָךְ) has no BDB key on its token, so lexicon-support counts it as 0 uses. Two tokens filed under אָח (a.ck.ab) by spelling are the interjection אָח “ah!” (BDB a.ci.ah, under another root): Ezk 6:11 and 21:20; they are not this word. אָח “brazier” (Jer 36:22–23, a.cn.ab) belongs to root אחח and is left out. Ezk 18:10 וְעָשָׂה אָח מֵאַחַד מֵאֵלֶּה is obscure (brother? or a scribal form of אַךְ/אַחַד) and is not cited. Hos 13:15 בֵּן אַחִים יַפְרִיא, “fruitful among brothers”, may play on אָחוּ (reed-grass); not cited. The Septuagint renders אַחֲוָה in Zec 11:14 by κατάσχεσις, reading אֲחֻזָּה, so it gives no Greek bridge; and אָחוּ by βούτομον (Job 8:11), with no New Testament use. Names formed with אֲחִי־ (Ahab a.ck.ac, Ahijah a.ck.ah, Hiram a.ck.ay, Ahikam, Ahithophel, Ahimelech, Ahitub, Ahimaaz, Ahinoam, Ahio, Ahiezer a.ck.av, Ahilud, Ahira a.ck.ba, Ahiman, Ahisamach and the rest, a.ck.ac–a.ck.bd) have no name entries yet; Ahiezer and Ahira are to be filed under their second element’s roots (עזר, רעע). The a.ck.ah key (Ahijah) is double-filed on many plain אֲחִי “brother of” tokens. Ge’ez is cited from Wiktionary; Dillmann (col. for እኅው) not yet checked. Ugaritic ảḫt “sister” is cited from Wiktionary; Segert’s glossary lists only ảḫt “one”."
+}
