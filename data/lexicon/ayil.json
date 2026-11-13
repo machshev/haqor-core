@@ -1,0 +1,1922 @@
+{
+  "id": "ayil",
+  "root": "אול",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "livestock",
+    "offering",
+    "feasts",
+    "leadership",
+    "strength",
+    "trees",
+    "temple",
+    "folly",
+    "wisdom"
+  ],
+  "gloss": "ram; leader, mighty one; strength, help; deer; great tree, terebinth; porch, front hall; folly, fool",
+  "summary": "The commonest word is אַיִל, the ram: the grown male of the flock, beside the ewes and he-goats (Gen 31:38; 32:15), and the animal of the burnt offering, the guilt offering and the ram of filling at the priests' consecration; at the feast of weeks two rams go up with the loaves (Lev 23:18). The same spelling names the leading men of a people (“the rams of Moab”, Exo 15:15; “the rams of the land”, Ezk 17:13), the projecting jambs of a gateway (Ezk 40), and the great trees (Isa 61:3), and the root's other words run the same way: אֱיָל and אֱיָלוּת “strength, help” (Psa 88:5; 22:20), אַיָּל and אַיָּלָה the stag and hind, אֵלָה and אֵלוֹן the terebinth, Aramaic אִילָן the tree, and אוּלָם the porch, the hall that stands in front of the house (1Ki 6:3). Arabic آلَ is “go before, be first” and “rule, govern”, and Akkadian ayyalu is both “stag” and “ally, help”, so being foremost and strong may be what joins the leader, the ram, the stag, the great tree and the front hall; no source joins all of them. אֱוִיל “fool” and אִוֶּלֶת “folly” are filed under the same spelling, but their tie to the rest is not understood: in scripture folly is a moral state, the despising of instruction and the mocking of guilt (Pro 1:7; 14:9), and folly is called sin (Pro 24:9).",
+  "words": [
+    {
+      "lemma": "אַיִל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ram; leader, mighty one; jamb, pilaster; great tree, terebinth",
+      "bdb": [
+        "a.bx.af"
+      ],
+      "summary": "About 150 of its uses are the ram, most of them in the offerings of Exodus, Leviticus, Numbers and Ezekiel. In a handful it names the leading men of a nation, the projecting jambs of the gateways in Ezekiel's temple, and great trees; all have the same consonants and the same plural אֵילִים. Whether these are one word used of the foremost and strong (the ram that leads the flock, the chief, the pier that stands out from the wall, the tallest tree) or four words of one spelling, scripture does not say; Arabic آلَ “be first; rule” and Aramaic אֵילָא “buttress” back the leader and the jamb, Akkadian ālu and Punic ʾyl the ram.",
+      "senses": [
+        {
+          "id": "ram",
+          "gloss": "ram",
+          "definition": "The grown male of the sheep, counted with the ewes and he-goats of the flock, kept for its wool and eaten at feasts.",
+          "cognate_ids": [
+            "akk-alu-ram",
+            "phn-ayl"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.31.38",
+              "role": "defining",
+              "note": "Jacob to Laban: “your ewes (רְחֵלֶיךָ) and your she-goats have not miscarried, and the rams of your flock (אֵילֵי צֹאנְךָ) I have not eaten.”"
+            },
+            {
+              "ref": "Gen.32.15",
+              "role": "defining",
+              "note": "Jacob's gift to Esau: “two hundred ewes and twenty rams”, beside the she-goats and he-goats."
+            },
+            {
+              "ref": "2Ki.3.4",
+              "note": "Mesha king of Moab, a sheep-breeder, paid “a hundred thousand lambs and the wool of a hundred thousand rams”."
+            },
+            {
+              "ref": "Deu.32.14",
+              "note": "“Fat of lambs and rams, sons of Bashan, and he-goats.”"
+            },
+            {
+              "ref": "Psa.114.4",
+              "role": "defining",
+              "note": "“The mountains skipped like rams, the hills like lambs (כִּבְנֵי־צֹאן)”: the ram beside the young of the flock."
+            },
+            {
+              "ref": "Ezk.34.17",
+              "note": "“I judge between sheep and sheep, between the rams and the he-goats”: the strong of the flock that push the weak aside (Ezk 34:20–21)."
+            },
+            {
+              "ref": "Jer.51.40",
+              "note": "“I will bring them down like lambs to the slaughter, like rams with he-goats.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "ram-of-offering",
+              "gloss": "ram of the offerings",
+              "definition": "A ram without blemish brought to the altar: as a burnt offering, as the guilt offering (אֵיל הָאָשָׁם) with which the priest makes covering, as the ram of filling at the priests' consecration, as the Nazirite's peace offering, and in the set offerings of the new moons and feasts.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.18",
+                  "role": "defining",
+                  "note": "At the feast of weeks, with the loaves: “seven lambs without blemish, a year old, one young bull, and two rams (וְאֵילִם שְׁנָיִם); they shall be a burnt offering to Yahweh.”"
+                },
+                {
+                  "ref": "Gen.22.13",
+                  "role": "defining",
+                  "note": "Abraham saw “a ram caught in the thicket by its horns”, and offered it up as a burnt offering in place of his son."
+                },
+                {
+                  "ref": "Lev.5.15",
+                  "role": "defining",
+                  "note": "For a trespass in the holy things: “a ram without blemish from the flock, valued by you in shekels of silver, for a guilt offering (לְאָשָׁם).”"
+                },
+                {
+                  "ref": "Lev.5.16",
+                  "note": "“The priest shall make covering for him with the ram of the guilt offering (בְּאֵיל הָאָשָׁם), and it shall be forgiven him.”"
+                },
+                {
+                  "ref": "Num.5.8",
+                  "note": "“The ram of the coverings (אֵיל הַכִּפֻּרִים) by which covering is made for him.”"
+                },
+                {
+                  "ref": "Exo.29.22",
+                  "role": "defining",
+                  "note": "“For it is a ram of filling (אֵיל מִלֻּאִים)”: the ram of the priests' consecration."
+                },
+                {
+                  "ref": "Lev.8.22",
+                  "note": "“The second ram, the ram of filling”, on whose head Aaron and his sons lay their hands."
+                },
+                {
+                  "ref": "Lev.9.2",
+                  "note": "“A calf for a sin offering and a ram for a burnt offering, without blemish.”"
+                },
+                {
+                  "ref": "Num.6.14",
+                  "note": "The Nazirite brings “one ram without blemish for peace offerings”."
+                },
+                {
+                  "ref": "Num.28.11",
+                  "note": "At the new moons: two young bulls, one ram and seven lambs."
+                },
+                {
+                  "ref": "Num.23.1",
+                  "note": "Balaam has Balak prepare seven bulls and seven rams on seven altars."
+                },
+                {
+                  "ref": "Ezr.10.19",
+                  "note": "Those who had taken foreign wives, being guilty, gave “a ram of the flock for their guilt”."
+                },
+                {
+                  "ref": "1Sa.15.22",
+                  "note": "“To obey is better than sacrifice, to listen than the fat of rams.”"
+                },
+                {
+                  "ref": "Mic.6.7",
+                  "note": "“Will Yahweh be pleased with thousands of rams?”"
+                },
+                {
+                  "ref": "Isa.1.11",
+                  "note": "“I have had enough of burnt offerings of rams.”"
+                }
+              ]
+            },
+            {
+              "id": "rams-skins",
+              "gloss": "rams' skins",
+              "definition": "The hides of rams dyed red, one of the coverings of the tabernacle.",
+              "evidence": [
+                {
+                  "ref": "Exo.25.5",
+                  "role": "defining",
+                  "note": "Among the offerings for the sanctuary: “rams' skins dyed red (עֹרֹת אֵילִם מְאָדָּמִים)”."
+                },
+                {
+                  "ref": "Exo.26.14",
+                  "note": "“A covering for the tent of rams' skins dyed red.”"
+                },
+                {
+                  "ref": "Exo.39.34"
+                }
+              ]
+            },
+            {
+              "id": "ram-of-the-vision",
+              "gloss": "the ram of Daniel's vision: the kings of Media and Persia",
+              "definition": "In Daniel's vision a ram with two high horns, the higher coming up last, pushes west, north and south until the he-goat breaks its horns; the angel says it is the kings of Media and Persia.",
+              "evidence": [
+                {
+                  "ref": "Dan.8.3",
+                  "role": "defining",
+                  "note": "“A ram standing before the river, and it had two horns; and the horns were high, but one was higher than the other, and the higher came up last.”"
+                },
+                {
+                  "ref": "Dan.8.4",
+                  "note": "“I saw the ram pushing westward, northward and southward, and no beast could stand before him.”"
+                },
+                {
+                  "ref": "Dan.8.7",
+                  "note": "The he-goat struck the ram and broke its two horns, “and there was no power in the ram to stand before him”."
+                },
+                {
+                  "ref": "Dan.8.20",
+                  "role": "defining",
+                  "note": "“The ram that you saw, having the two horns: the kings of Media and Persia.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "leader",
+          "gloss": "leader, mighty one",
+          "definition": "The leading men of a nation, its foremost and strongest: set beside its chiefs, and the men a conqueror carries off to break its strength.",
+          "cognate_ids": [
+            "ar-ala-rule"
+          ],
+          "kin": [
+            "strength"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.15.15",
+              "role": "defining",
+              "note": "“The chiefs of Edom (אַלּוּפֵי אֱדוֹם) were dismayed; the leaders of Moab (אֵילֵי מוֹאָב), trembling seizes them”: in parallel with the chiefs."
+            },
+            {
+              "ref": "Ezk.17.13",
+              "role": "defining",
+              "note": "The king of Babylon took one of the royal seed and made a covenant with him, “and the leaders of the land (אֵילֵי הָאָרֶץ) he took away”, that the kingdom might be brought low (Ezk 17:14)."
+            },
+            {
+              "ref": "2Ki.24.15",
+              "role": "defining",
+              "note": "With Jehoiachin, his mother, wives and officers, “the leaders of the land (אֵילֵי הָאָרֶץ)” went into exile. The written text has אולי, the reading אֵילֵי."
+            },
+            {
+              "ref": "Ezk.31.11",
+              "note": "Of the cedar that was Assyria: “I will give him into the hand of the mighty one of the nations (אֵיל גּוֹיִם)”, the king of Babylon."
+            },
+            {
+              "ref": "Ezk.32.21",
+              "note": "“The mighty of the heroes (אֵלֵי גִבּוֹרִים) shall speak to him from the midst of the grave”: spelled without yod, and filed by the corpus under אֵל."
+            }
+          ]
+        },
+        {
+          "id": "jamb",
+          "gloss": "jamb, pilaster",
+          "definition": "In the gateways and doorways of the temple, the piers of masonry that stand out on each side of a passage, measured with the porches and chambers and carved with palm trees.",
+          "cognate_ids": [
+            "arc-ela"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.40.9",
+              "role": "defining",
+              "note": "“He measured the porch (אֻלָם) of the gate, eight cubits, and its jambs (וְאֵילָיו), two cubits.”"
+            },
+            {
+              "ref": "Ezk.40.16",
+              "role": "defining",
+              "note": "Windows to the chambers and their jambs, “and on the jamb (אַיִל) were palm trees”."
+            },
+            {
+              "ref": "Ezk.40.48",
+              "role": "defining",
+              "note": "“He measured the jamb of the porch (אֵל אֻלָם), five cubits on this side and five on that.”"
+            },
+            {
+              "ref": "Ezk.41.3",
+              "note": "In the inner place “he measured the jamb of the doorway (אֵיל־הַפֶּתַח), two cubits”."
+            },
+            {
+              "ref": "Ezk.40.14"
+            },
+            {
+              "ref": "Ezk.41.1"
+            },
+            {
+              "ref": "1Ki.6.31",
+              "note": "The doors of the inner sanctuary: “the jamb (הָאַיִל), the doorposts, a fifth”; the doorway's frame, whose exact sense is not clear."
+            }
+          ]
+        },
+        {
+          "id": "great-tree",
+          "gloss": "great tree, terebinth",
+          "definition": "Great trees (in the plural), desired as places of idolatry, or, in Yahweh's planting, the righteous standing tall.",
+          "cognate_ids": [
+            "arc-ilan",
+            "akk-allanu"
+          ],
+          "kin": [
+            "terebinth",
+            "elon-terebinth",
+            "tree"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.1.29",
+              "role": "defining",
+              "note": "“You shall be ashamed of the great trees (מֵאֵילִים) that you desired, and blush for the gardens that you chose”; the next verse goes on, “you shall be like a terebinth (כְּאֵלָה) whose leaf withers”."
+            },
+            {
+              "ref": "Isa.61.3",
+              "role": "defining",
+              "note": "The mourners of Zion “shall be called great trees of righteousness (אֵילֵי הַצֶּדֶק), the planting of Yahweh, that he may be glorified”."
+            },
+            {
+              "ref": "Ezk.31.14",
+              "note": "“That none of the trees by the waters may exalt themselves in their height… nor their great trees (אֵלֵיהֶם) stand up in their height.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אַלּוּף",
+            "note": "The leaders of Moab beside the chiefs of Edom.",
+            "evidence": [
+              {
+                "ref": "Exo.15.15",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עַתּוּד",
+            "note": "Rams beside he-goats, the males of the flock.",
+            "evidence": [
+              {
+                "ref": "Ezk.34.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.32.14"
+              },
+              {
+                "ref": "Jer.51.40"
+              },
+              {
+                "ref": "Isa.1.11"
+              }
+            ]
+          },
+          {
+            "lemma": "כַּר",
+            "note": "Rams beside lambs.",
+            "evidence": [
+              {
+                "ref": "2Ki.3.4"
+              },
+              {
+                "ref": "Deu.32.14"
+              },
+              {
+                "ref": "Jer.51.40"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֵיל הָאָשָׁם",
+            "gloss": "the ram of the guilt offering",
+            "evidence": [
+              {
+                "ref": "Lev.5.16"
+              },
+              {
+                "ref": "Lev.19.21"
+              },
+              {
+                "ref": "Lev.19.22"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵיל הַכִּפֻּרִים",
+            "gloss": "the ram of the coverings",
+            "evidence": [
+              {
+                "ref": "Num.5.8"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵיל הַמִּלֻּאִים",
+            "gloss": "the ram of filling, of the priests' consecration",
+            "evidence": [
+              {
+                "ref": "Exo.29.22"
+              },
+              {
+                "ref": "Exo.29.26"
+              },
+              {
+                "ref": "Lev.8.22"
+              },
+              {
+                "ref": "Lev.8.29"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹרֹת אֵילִם מְאָדָּמִים",
+            "gloss": "rams' skins dyed red",
+            "evidence": [
+              {
+                "ref": "Exo.25.5"
+              },
+              {
+                "ref": "Exo.26.14"
+              },
+              {
+                "ref": "Exo.35.7"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵילֵי הָאָרֶץ",
+            "gloss": "the leading men of the land",
+            "evidence": [
+              {
+                "ref": "Ezk.17.13"
+              },
+              {
+                "ref": "2Ki.24.15"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵילֵי הַצֶּדֶק",
+            "gloss": "great trees of righteousness",
+            "evidence": [
+              {
+                "ref": "Isa.61.3"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κριός",
+          "gloss": "ram",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.22.13, אַיִל → κριός, κριόν (κριός)"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.18, אֵילִם → κριούς (κριός)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אוּלָם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "porch, front hall",
+      "bdb": [
+        "a.bx.ad"
+      ],
+      "cognate_ids": [
+        "arc-ulama",
+        "ar-ala-precede"
+      ],
+      "summary": "The hall that stands in front of a building, “on the face of” the temple (1Ki 6:3), and so perhaps the root's “be in front, be first” (Arabic آلَ). That reading rests on the porch's place, not on any source joining the noun to the verb. The adverb אוּלָם “but, however”, spelled alike, is filed apart and not entered here.",
+      "senses": [
+        {
+          "id": "porch",
+          "gloss": "porch, front hall",
+          "definition": "The hall or vestibule in front of the temple, of a royal hall, or of a gateway, through which one enters; before it stood the bronze pillars and the altar.",
+          "evidence": [
+            {
+              "ref": "1Ki.6.3",
+              "role": "defining",
+              "note": "“The porch on the face of (עַל־פְּנֵי) the temple of the house, twenty cubits its length, along the width of the house”: the hall in front."
+            },
+            {
+              "ref": "1Ki.7.21",
+              "role": "defining",
+              "note": "“He set up the pillars at the porch of the temple”, Jachin and Boaz."
+            },
+            {
+              "ref": "1Ki.7.7",
+              "role": "defining",
+              "note": "“The porch of the throne where he would judge, the porch of judgment.”"
+            },
+            {
+              "ref": "1Ki.7.6",
+              "note": "“The porch of pillars… and a porch in front of them.”"
+            },
+            {
+              "ref": "2Ch.8.12",
+              "note": "Solomon offered burnt offerings on the altar “that he had built before the porch”."
+            },
+            {
+              "ref": "Jol.2.17",
+              "role": "defining",
+              "note": "“Between the porch and the altar let the priests, the ministers of Yahweh, weep.”"
+            },
+            {
+              "ref": "Ezk.8.16",
+              "note": "“Between the porch and the altar, about twenty-five men, with their backs to the temple of Yahweh and their faces toward the east, bowing down to the sun.”"
+            },
+            {
+              "ref": "2Ch.29.7",
+              "note": "Ahaz's generation “shut the doors of the porch and put out the lamps”."
+            },
+            {
+              "ref": "1Ch.28.11",
+              "note": "David gave Solomon the pattern of the porch."
+            },
+            {
+              "ref": "Ezk.40.48",
+              "note": "“He brought me to the porch of the house.”"
+            },
+            {
+              "ref": "Ezk.44.3",
+              "note": "The prince “shall enter by way of the porch of the gate, and go out by the same way”."
+            },
+            {
+              "ref": "Ezk.46.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֱוִיל",
+      "pos": "adjective",
+      "gloss": "foolish; a fool",
+      "bdb": [
+        "a.bw.ab"
+      ],
+      "cognate_ids": [
+        "ar-ala-thicken"
+      ],
+      "summary": "Mostly in Proverbs, as a noun: the fool, who despises instruction, is quick to quarrel and mocks at guilt, set against the wise and the prudent. How it belongs to this spelling's other words is not understood. Arabic آلَ is used of milk, honey and tar growing thick, which would make folly a thickness or dullness, but Lane gives the Arabic verb no sense of dullness of mind, so the link is only possible. The Babylonian king's name אֱוִיל מְרֹדַךְ (2Ki 25:27; Jer 52:31), whose tokens the corpus files here by spelling, is the Babylonian name Amel-Marduk and not this word.",
+      "senses": [
+        {
+          "id": "fool",
+          "gloss": "fool, foolish",
+          "definition": "One who will not be taught: he despises wisdom, instruction and a father's discipline, thinks his own way right, cannot hold his tongue or his anger, and mocks at guilt; and so he comes to ruin and dies for lack of heart.",
+          "evidence": [
+            {
+              "ref": "Pro.1.7",
+              "role": "defining",
+              "note": "“The fear of Yahweh is the beginning of knowledge; fools despise wisdom and instruction.”"
+            },
+            {
+              "ref": "Pro.12.15",
+              "role": "defining",
+              "note": "“The way of a fool is right in his own eyes, but he who listens to counsel is wise.”"
+            },
+            {
+              "ref": "Pro.15.5",
+              "role": "defining",
+              "note": "“A fool despises his father's discipline, but he who heeds reproof is prudent.”"
+            },
+            {
+              "ref": "Pro.14.9",
+              "role": "defining",
+              "note": "“Fools mock at guilt (אָשָׁם), but among the upright is favour.”"
+            },
+            {
+              "ref": "Pro.10.21",
+              "note": "“The lips of the righteous feed many, but fools die for lack of heart.”"
+            },
+            {
+              "ref": "Pro.12.16",
+              "note": "“A fool's vexation is known at once.”"
+            },
+            {
+              "ref": "Pro.20.3",
+              "note": "“Every fool will be quarrelling.”"
+            },
+            {
+              "ref": "Pro.17.28",
+              "note": "“Even a fool who keeps silent is counted wise.”"
+            },
+            {
+              "ref": "Pro.27.22",
+              "note": "“Though you pound a fool in a mortar with a pestle, his folly will not depart from him.”"
+            },
+            {
+              "ref": "Job.5.2",
+              "note": "“Vexation kills the fool.”"
+            },
+            {
+              "ref": "Psa.107.17",
+              "role": "defining",
+              "note": "“Fools, because of the way of their transgression and because of their iniquities, were afflicted.”"
+            },
+            {
+              "ref": "Jer.4.22",
+              "role": "defining",
+              "note": "“My people is foolish (אֱוִיל); me they have not known… they are wise to do evil, but to do good they do not know.”"
+            },
+            {
+              "ref": "Isa.19.11",
+              "note": "“The princes of Zoan are utter fools; the wisest of Pharaoh's counsellors give stupid counsel.”"
+            },
+            {
+              "ref": "Isa.35.8",
+              "note": "On the way of holiness “fools shall not go astray”."
+            },
+            {
+              "ref": "Hos.9.7",
+              "note": "“The prophet is a fool, the man of the spirit is mad”, because of Israel's great iniquity."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "חָכָם",
+            "note": "The fool against the wise.",
+            "evidence": [
+              {
+                "ref": "Pro.12.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.10.14"
+              },
+              {
+                "ref": "Pro.11.29"
+              },
+              {
+                "ref": "Pro.29.9"
+              }
+            ]
+          },
+          {
+            "lemma": "עָרוּם",
+            "note": "The fool against the prudent.",
+            "evidence": [
+              {
+                "ref": "Pro.12.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.15.5"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "סָכָל",
+            "note": "Foolish children, without understanding.",
+            "evidence": [
+              {
+                "ref": "Jer.4.22",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἄφρων",
+          "gloss": "senseless, foolish",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.11.29, אֱוִיל → ἄφρων"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Job.5.2, אֱוִיל → ἄφρονα (ἄφρων)"
+            },
+            {
+              "ref": "Luk.12.20",
+              "note": "“You fool (ἄφρων), this night your life is required of you.”"
+            },
+            {
+              "ref": "1Co.15.36"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אִוֶּלֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "folly",
+      "bdb": [
+        "a.bw.ad"
+      ],
+      "cognate_ids": [
+        "ar-ala-thicken"
+      ],
+      "summary": "The fool's folly, nearly always in Proverbs, and twice in the psalms of one who confesses it as his sin. Its link to the root's other words is as unclear as that of אֱוִיל.",
+      "senses": [
+        {
+          "id": "folly",
+          "gloss": "folly",
+          "definition": "The refusal of instruction that the fool shows and pours out: hasty speech and temper, deceit, a way that goes astray; it is bound up in the heart of a child and is driven out by discipline, and it is named sin and guilt.",
+          "kin": [
+            "fool"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.24.9",
+              "role": "defining",
+              "note": "“The scheme of folly is sin (חַטָּאת), and the scoffer is an abomination to men.”"
+            },
+            {
+              "ref": "Psa.69.6",
+              "role": "defining",
+              "note": "“God, you know my folly, and my guilts (אַשְׁמוֹתַי) are not hidden from you”: folly in parallel with guilt."
+            },
+            {
+              "ref": "Psa.38.6",
+              "role": "defining",
+              "note": "“My wounds stink and fester because of my folly”, in a psalm confessing sin (Psa 38:4–5)."
+            },
+            {
+              "ref": "Pro.22.15",
+              "role": "defining",
+              "note": "“Folly is bound up in the heart of a child; the rod of discipline drives it far from him.”"
+            },
+            {
+              "ref": "Pro.5.23",
+              "note": "“He dies for lack of discipline, and in the greatness of his folly he goes astray.”"
+            },
+            {
+              "ref": "Pro.19.3",
+              "note": "“A man's folly perverts his way, and his heart rages against Yahweh.”"
+            },
+            {
+              "ref": "Pro.14.29",
+              "note": "“He who is hasty of spirit exalts folly.”"
+            },
+            {
+              "ref": "Pro.18.13",
+              "note": "“He who answers before he hears, it is folly and shame to him.”"
+            },
+            {
+              "ref": "Pro.15.2",
+              "note": "“The mouth of fools pours out folly.”"
+            },
+            {
+              "ref": "Pro.14.8",
+              "note": "“The folly of fools is deceit.”"
+            },
+            {
+              "ref": "Pro.26.11",
+              "note": "“As a dog returns to his vomit, so a fool repeats his folly”, quoted in 2Pe 2:22."
+            },
+            {
+              "ref": "2Pe.2.22",
+              "note": "Peter applies the proverb to those who turn back after knowing the way of righteousness."
+            },
+            {
+              "ref": "Pro.16.22",
+              "note": "“The discipline of fools is folly.”"
+            },
+            {
+              "ref": "Pro.14.1",
+              "note": "“The wisdom of women builds her house, but folly with her own hands tears it down.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אַשְׁמָה",
+            "note": "Folly beside guilt.",
+            "evidence": [
+              {
+                "ref": "Psa.69.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "חַטָּאת",
+            "note": "The scheme of folly is sin.",
+            "evidence": [
+              {
+                "ref": "Pro.24.9",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "דַּעַת",
+            "note": "Knowledge against folly.",
+            "evidence": [
+              {
+                "ref": "Pro.12.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.13.16"
+              },
+              {
+                "ref": "Pro.15.2"
+              },
+              {
+                "ref": "Pro.15.14"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἀφροσύνη",
+          "gloss": "senselessness, folly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.38.6, אִוַּלְתִּי → ἀφροσύνης (ἀφροσύνη)"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.18.13, אִוֶּלֶת → ἀφροσύνη"
+            },
+            {
+              "ref": "Mrk.7.22",
+              "note": "Folly (ἀφροσύνη) among the evils that come out of the heart and defile a man."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֵלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "terebinth, great tree",
+      "bdb": [
+        "a.bx.al"
+      ],
+      "cognate_ids": [
+        "arc-ilan"
+      ],
+      "summary": "A great spreading tree of the land, named singly as a landmark: under it things are buried, and men and angels sit; on the hills its shade drew Israel to sacrifice to idols. Which tree it is cannot be fixed from scripture; “terebinth” is the usual identification.",
+      "senses": [
+        {
+          "id": "terebinth",
+          "gloss": "terebinth, great tree",
+          "definition": "A large tree with spreading boughs and good shade, standing alone as a landmark and outliving men, which when felled leaves a living stump.",
+          "evidence": [
+            {
+              "ref": "2Sa.18.9",
+              "role": "defining",
+              "note": "The mule went “under the thick boughs of the great terebinth (הָאֵלָה הַגְּדוֹלָה), and his head caught fast in the terebinth”."
+            },
+            {
+              "ref": "Isa.6.13",
+              "role": "defining",
+              "note": "“Like a terebinth and like an oak (וְכָאַלּוֹן), whose stump remains when they are felled: the holy seed is its stump.”"
+            },
+            {
+              "ref": "Hos.4.13",
+              "role": "defining",
+              "note": "“They sacrifice on the tops of the mountains… under oak, poplar and terebinth, because their shade is good.”"
+            },
+            {
+              "ref": "Gen.35.4",
+              "note": "Jacob hid the foreign gods and earrings “under the terebinth that was by Shechem”."
+            },
+            {
+              "ref": "Jdg.6.11",
+              "note": "“The angel of Yahweh came and sat under the terebinth that was in Ophrah.”"
+            },
+            {
+              "ref": "1Ki.13.14",
+              "note": "He found the man of God “sitting under the terebinth”."
+            },
+            {
+              "ref": "1Ch.10.12",
+              "note": "They buried the bones of Saul and his sons “under the terebinth in Jabesh”."
+            },
+            {
+              "ref": "Isa.1.30",
+              "note": "“You shall be like a terebinth whose leaf withers, and like a garden that has no water.”"
+            },
+            {
+              "ref": "Ezk.6.13",
+              "note": "Their slain shall lie “under every green tree and under every leafy terebinth, the place where they offered pleasing aroma to all their idols”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אַלּוֹן",
+            "note": "The terebinth beside the oak.",
+            "evidence": [
+              {
+                "ref": "Isa.6.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.4.13"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "τερέβινθος",
+          "gloss": "terebinth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.6.13, אֵלָה → τερέβινθος"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.35.4, אֵלָה → τερέμινθον (τερέβινθος)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַיָּל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "stag, deer",
+      "bdb": [
+        "a.bx.at"
+      ],
+      "cognate_ids": [
+        "akk-ayyalu-stag",
+        "ar-iyyal",
+        "arc-ayyala",
+        "syc-ayla",
+        "uga-ayl",
+        "gez-hayyal"
+      ],
+      "summary": "The male deer, a clean wild animal that may be eaten but is not offered, known for its leaping and its swiftness. The word is the best attested of the root in the other languages: Akkadian, Ugaritic, Aramaic, Syriac and Arabic all have it.",
+      "senses": [
+        {
+          "id": "stag",
+          "gloss": "stag, deer",
+          "definition": "The male deer: hunted and eaten like the gazelle but not brought to the altar, and pictured leaping, panting for water, and fleeing over the mountains.",
+          "evidence": [
+            {
+              "ref": "Deu.14.5",
+              "role": "defining",
+              "note": "First of the clean wild animals that may be eaten: “the deer, the gazelle, the roebuck…”"
+            },
+            {
+              "ref": "Deu.12.15",
+              "role": "defining",
+              "note": "Meat killed at home, not at the altar, is eaten by clean and unclean alike “as the gazelle and the deer”."
+            },
+            {
+              "ref": "Deu.12.22"
+            },
+            {
+              "ref": "1Ki.5.3",
+              "note": "Solomon's daily provision, “besides deer, gazelles and roebucks”."
+            },
+            {
+              "ref": "Isa.35.6",
+              "role": "defining",
+              "note": "“Then the lame shall leap like a deer, and the tongue of the dumb shall sing.”"
+            },
+            {
+              "ref": "Psa.42.2",
+              "role": "defining",
+              "note": "“As a deer pants for the water-brooks, so my soul pants for you, God.”"
+            },
+            {
+              "ref": "Sng.2.9",
+              "note": "“My beloved is like a gazelle or a young stag.”"
+            },
+            {
+              "ref": "Sng.8.14",
+              "note": "“Be like a gazelle or a young stag on the mountains of spices.”"
+            },
+            {
+              "ref": "Lam.1.6",
+              "note": "“Her princes have become like stags that find no pasture; they have gone without strength before the pursuer.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "צְבִי",
+            "note": "The deer beside the gazelle.",
+            "evidence": [
+              {
+                "ref": "Deu.12.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.14.5"
+              },
+              {
+                "ref": "Sng.2.9"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἔλαφος",
+          "gloss": "deer",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.14.5, אַיָּל → ἔλαφον (ἔλαφος)"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.35.6, אַיָּל → ἔλαφος"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַיָּלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "hind, doe",
+      "bdb": [
+        "a.bx.au"
+      ],
+      "cognate_ids": [
+        "akk-ayyalu-stag",
+        "ar-iyyal",
+        "arc-ayyala",
+        "syc-ayla",
+        "uga-ayl",
+        "gez-hayyal"
+      ],
+      "summary": "The female deer, also in the form אַיֶּלֶת: sure-footed on the heights, calving in the wild, and a picture of loveliness.",
+      "senses": [
+        {
+          "id": "hind",
+          "gloss": "hind, doe",
+          "definition": "The female of the deer: she gives birth in the open field, and her feet carry her safely on the high places.",
+          "kin": [
+            "stag"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.18.34",
+              "role": "defining",
+              "note": "“He makes my feet like hinds' feet, and sets me on my high places.”"
+            },
+            {
+              "ref": "Hab.3.19",
+              "role": "defining",
+              "note": "“Yahweh the Lord is my strength (חֵילִי); he makes my feet like hinds' feet, and makes me tread on my high places.”"
+            },
+            {
+              "ref": "2Sa.22.34"
+            },
+            {
+              "ref": "Job.39.1",
+              "role": "defining",
+              "note": "“Do you know the time when the wild goats of the rock give birth? Do you watch the calving of the hinds?”"
+            },
+            {
+              "ref": "Jer.14.5",
+              "note": "In the drought “even the hind in the field gives birth and forsakes her young, because there is no grass”."
+            },
+            {
+              "ref": "Psa.29.9",
+              "note": "“The voice of Yahweh makes the hinds calve and strips the forests bare.”"
+            },
+            {
+              "ref": "Gen.49.21",
+              "note": "“Naphtali is a hind let loose; he gives words of beauty.”"
+            },
+            {
+              "ref": "Pro.5.19",
+              "note": "The wife of one's youth: “a loving hind and a graceful doe”."
+            },
+            {
+              "ref": "Sng.2.7",
+              "note": "“I adjure you… by the gazelles or by the hinds of the field.”"
+            },
+            {
+              "ref": "Psa.22.1",
+              "note": "The psalm's title, “according to the hind of the dawn (אַיֶּלֶת הַשַּׁחַר)”, perhaps a tune."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔλαφος",
+          "gloss": "deer, hind",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.5.19, אַיֶּלֶת → ἔλαφος"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֵלוֹן",
+      "pos": "noun",
+      "gloss": "great tree, terebinth",
+      "bdb": [
+        "a.bx.an"
+      ],
+      "cognate_ids": [
+        "arc-ilan",
+        "akk-allanu",
+        "uga-aln"
+      ],
+      "summary": "Always a named tree or group of trees standing as a landmark, and in Genesis the places where Yahweh appeared to Abram and Abram built his altars. Which tree it is cannot be fixed from scripture; it may be the same as אֵלָה, or the oak, as אַלּוֹן (filed by the corpus under another root) is. Akkadian allānu and Ugaritic aln “oak” answer to אַלּוֹן in form and are recorded here as possible.",
+      "senses": [
+        {
+          "id": "elon-terebinth",
+          "gloss": "great tree, terebinth (as a landmark)",
+          "definition": "A great tree, or grove of them, known by name and used to mark a place: where Yahweh appeared to Abram, where tents were pitched, where a king was made and where travellers met.",
+          "kin": [
+            "terebinth"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.12.6",
+              "role": "defining",
+              "note": "Abram passed through the land “to the place of Shechem, to the great tree of Moreh”, where Yahweh appeared to him and he built an altar (Gen 12:7)."
+            },
+            {
+              "ref": "Gen.13.18",
+              "role": "defining",
+              "note": "Abram “came and dwelt by the great trees of Mamre, which are in Hebron, and built there an altar to Yahweh”."
+            },
+            {
+              "ref": "Gen.18.1",
+              "role": "defining",
+              "note": "“Yahweh appeared to him by the great trees of Mamre, as he sat at the tent door.”"
+            },
+            {
+              "ref": "Gen.14.13"
+            },
+            {
+              "ref": "Deu.11.30",
+              "note": "Gerizim and Ebal, “beside the great trees of Moreh”."
+            },
+            {
+              "ref": "Jdg.4.11",
+              "note": "Heber the Kenite pitched his tent “as far as the great tree in Zaanannim”."
+            },
+            {
+              "ref": "Jdg.9.6",
+              "note": "They made Abimelech king “by the great tree of the pillar that was in Shechem”."
+            },
+            {
+              "ref": "Jdg.9.37",
+              "note": "“By the way of the diviners' tree.”"
+            },
+            {
+              "ref": "1Sa.10.3",
+              "note": "“You shall come to the great tree of Tabor”, where three men going up to God at Bethel will meet Saul."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֵילָם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "porch (of a gateway)",
+      "bdb": [
+        "a.bx.as"
+      ],
+      "cognate_ids": [
+        "arc-ulama"
+      ],
+      "summary": "Only in Ezekiel's measuring of the temple's gateways, also spelled אֵלָם; it names what אוּלָם names, the porch or vestibule of each gate.",
+      "senses": [
+        {
+          "gloss": "porch, vestibule (of a gateway)",
+          "definition": "The vestibule of each gateway in Ezekiel's temple, measured with the gate's chambers and jambs, with windows round about.",
+          "kin": [
+            "porch"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.40.21",
+              "role": "defining",
+              "note": "“Its chambers, three on this side and three on that, and its jambs and its porches (וְאֵלַמָּיו) were of the measure of the first gate.”"
+            },
+            {
+              "ref": "Ezk.40.16",
+              "note": "“And so for the porches (לָאֵלַמּוֹת): windows round about inward.”"
+            },
+            {
+              "ref": "Ezk.40.30",
+              "note": "“There were porches round about, twenty-five cubits long and five cubits wide.”"
+            },
+            {
+              "ref": "Ezk.40.31",
+              "note": "“Its porch faced the outer court, and palm trees were on its jambs.”"
+            },
+            {
+              "ref": "Ezk.40.22"
+            },
+            {
+              "ref": "Ezk.40.29"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אוּל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "body; or strength",
+      "bdb": [
+        "a.bx.ab"
+      ],
+      "summary": "Used once, with a suffix, as אוּלָם “their אוּל”, in the psalmist's complaint about the wicked. The verse shows only that it is something of theirs that is fat or healthy (בָּרִיא) while they have no pains at death: their body, or their strength. If it is strength, it is the same sense as אֱיָל (Psa 88:5); neither reading can be fixed from this one use, and no cognate is recorded for it.",
+      "senses": [
+        {
+          "gloss": "body; or strength",
+          "definition": "What is “fat” or “healthy” in the wicked who prosper: their body, or their strength.",
+          "evidence": [
+            {
+              "ref": "Psa.73.4",
+              "role": "defining",
+              "note": "“For there are no pangs in their death, and their אוּל is fat (וּבָרִיא אוּלָם).”"
+            },
+            {
+              "ref": "Psa.73.5",
+              "note": "“They are not in the trouble of man, nor are they plagued like men.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֱיָל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "strength, help",
+      "bdb": [
+        "a.cx.aj"
+      ],
+      "cognate_ids": [
+        "akk-ayyalu-ally"
+      ],
+      "summary": "Used once, of a man as good as dead. The corpus gives its BDB key the root איב, which looks like a fault; its consonants are this root's, and it is entered here with אֱיָלוּת.",
+      "senses": [
+        {
+          "id": "strength",
+          "gloss": "strength, help",
+          "definition": "The strength by which a man stands and can be helped; to have none is to be counted with the dead.",
+          "evidence": [
+            {
+              "ref": "Psa.88.5",
+              "role": "defining",
+              "note": "“I am counted with those who go down to the pit; I am like a man (גֶּבֶר) with no strength (אֵין־אֱיָל).”"
+            },
+            {
+              "ref": "Psa.88.6",
+              "note": "“Free among the dead, like the slain who lie in the grave, whom you remember no more.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֱיָלוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "my strength, my help (of God)",
+      "bdb": [
+        "a.cx.ak"
+      ],
+      "cognate_ids": [
+        "akk-ayyalu-ally"
+      ],
+      "summary": "Used once, in Psalm 22, as a name the sufferer calls Yahweh by, in parallel with “help”.",
+      "senses": [
+        {
+          "gloss": "strength, help",
+          "definition": "Yahweh as the strength of the one who has none left, called on to come quickly to help.",
+          "kin": [
+            "strength"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.22.20",
+              "role": "defining",
+              "note": "“But you, Yahweh, do not be far off; my strength (אֱיָלוּתִי), hasten to my help (לְעֶזְרָתִי).”"
+            },
+            {
+              "ref": "Psa.22.16",
+              "note": "“My strength is dried up like a potsherd… you lay me in the dust of death”: the strength he no longer has in himself."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֱוִלִי",
+      "pos": "adjective",
+      "gloss": "foolish",
+      "bdb": [
+        "a.bw.ac"
+      ],
+      "summary": "Used once, of the shepherd Zechariah is told to play: a form of אֱוִיל.",
+      "senses": [
+        {
+          "gloss": "foolish",
+          "definition": "Foolish, of a worthless shepherd who does not care for the flock.",
+          "kin": [
+            "fool"
+          ],
+          "evidence": [
+            {
+              "ref": "Zec.11.15",
+              "role": "defining",
+              "note": "“Take again the implements of a foolish shepherd.”"
+            },
+            {
+              "ref": "Zec.11.16",
+              "note": "“I am raising up a shepherd in the land who will not care for the perishing, nor seek the young, nor heal the broken… but will eat the flesh of the fat.”"
+            },
+            {
+              "ref": "Zec.11.17",
+              "note": "“Woe to my worthless shepherd who forsakes the flock!”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אִילָן",
+      "lang": "arc",
+      "root": "אילנ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tree",
+      "bdb": [
+        "xa.ae.ab"
+      ],
+      "cognate_ids": [
+        "arc-ilan"
+      ],
+      "summary": "Scripture's Aramaic word for a tree, in Daniel only, of the great tree of Nebuchadnezzar's dream. The Peshitta's אִילָנָא is the same word.",
+      "senses": [
+        {
+          "id": "tree",
+          "gloss": "tree",
+          "definition": "A tree; in Nebuchadnezzar's dream a great tree in the midst of the earth reaching to heaven, sheltering beasts and birds, which is the king himself, and which is cut down leaving its stump in the earth.",
+          "kin": [
+            "terebinth"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.4.7",
+              "role": "defining",
+              "note": "“I saw, and behold, a tree in the midst of the earth, and its height was great.”"
+            },
+            {
+              "ref": "Dan.4.8",
+              "note": "“The tree grew and became strong, and its height reached to heaven.”"
+            },
+            {
+              "ref": "Dan.4.11",
+              "note": "“Cut down the tree and cut off its branches.”"
+            },
+            {
+              "ref": "Dan.4.17",
+              "to": "Dan.4.19",
+              "role": "defining",
+              "note": "“The tree that you saw… it is you, O king, who have grown and become strong.”"
+            },
+            {
+              "ref": "Dan.4.20"
+            },
+            {
+              "ref": "Dan.4.23",
+              "note": "“They commanded to leave the stump of the roots of the tree: your kingdom shall be sure to you, after you know that heaven rules.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δένδρον",
+          "gloss": "tree",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.4.7, אִילָן → δένδρον"
+            },
+            {
+              "ref": "Mat.13.32",
+              "note": "The mustard seed “becomes a tree (δένδρον), so that the birds of the air come and lodge in its branches”, the words of the great tree of Dan 4:9 and 4:18."
+            },
+            {
+              "ref": "Mat.3.10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אִילָנָא",
+      "lang": "syc",
+      "root": "אילנ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tree",
+      "cognate_ids": [
+        "arc-ilan"
+      ],
+      "summary": "The Peshitta's word for a tree, in the New Testament wherever the Greek has δένδρον.",
+      "senses": [
+        {
+          "gloss": "tree",
+          "definition": "A tree, known by its fruit: the good tree bears good fruit, and the tree that does not is cut down and thrown into the fire.",
+          "kin": [
+            "tree"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.3.10",
+              "role": "defining",
+              "note": "“The axe is laid at the root of the trees; every tree that does not bear good fruit is cut down.”"
+            },
+            {
+              "ref": "Mat.7.17",
+              "role": "defining",
+              "note": "“Every good tree bears good fruit, but the bad tree bears bad fruit.”"
+            },
+            {
+              "ref": "Mat.12.33",
+              "role": "defining",
+              "note": "“The tree is known by its fruit.”"
+            },
+            {
+              "ref": "Mat.13.32",
+              "note": "The mustard seed becomes a tree and the birds of heaven lodge in its branches."
+            },
+            {
+              "ref": "Mrk.8.24",
+              "note": "“I see men like trees, walking.”"
+            },
+            {
+              "ref": "Luk.21.29",
+              "note": "“Look at the fig tree, and all the trees.”"
+            },
+            {
+              "ref": "Rev.7.3",
+              "note": "“Do not hurt the earth, nor the sea, nor the trees.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ala-rule",
+      "lang": "ar",
+      "form": "آلَ",
+      "translit": "āla",
+      "gloss": "(of a prince or king) rule, govern his subjects, preside over them; manage and tend cattle well; إِيَالَةٌ rule, government; مُؤْتَالٌ ruler of his people",
+      "relation": "cognate",
+      "note": "Lane quotes the proverb “we have ruled and been ruled”. This shares the sense of אַיִל as the leading man of a people; the same verb is used of the good herdsman managing the cattle and flocks.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 125, root اول, آلَ (n1498), A3 and b2"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 128, root اول, إِيَالَةٌ (n1509)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 128, root اول, هُوَ مُؤْتَالٌ لِقَوْمِهِ (n1517)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ala-precede",
+      "lang": "ar",
+      "form": "آلَ",
+      "translit": "āla",
+      "gloss": "precede, go before, be first or foremost",
+      "relation": "possible",
+      "note": "Lane gives this sense with وَأَلَ as a synonym and says أَوَّلُ “first” is most probably derived from it, though others put أَوَّلُ under وأل. It would fit אוּלָם as the hall in front; it is recorded as possible because the root of “first” is disputed.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 125, root اول, آلَ (n1498), b11"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 128, root اول, أَوَّلُ (n1510)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ala-thicken",
+      "lang": "ar",
+      "form": "آلَ",
+      "translit": "āla",
+      "gloss": "(of milk, tar, honey, oil, wine) become thick, coagulate",
+      "relation": "possible",
+      "note": "Recorded for אֱוִיל and אִוֶּלֶת as a possible picture of folly as thickness, dullness. Lane gives the verb no sense of dullness of mind, so this is not evidence of the Hebrew's meaning, only a lead.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 125, root اول, آلَ (n1498), b8"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 128, root اول, آئِلٌ (n1514)"
+        }
+      ]
+    },
+    {
+      "id": "ar-iyyal",
+      "lang": "ar",
+      "form": "إِيَّلٌ",
+      "translit": "iyyal",
+      "gloss": "the male mountain goat, ibex; also أُيَّلٌ, أَيِّلٌ; a large wild animal wide between the horns",
+      "relation": "cognate",
+      "note": "The same word as אַיָּל, used in Arabic of the wild horned animal of the mountains.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 128, root اول, إِيَّلٌ (n1513)"
+        }
+      ]
+    },
+    {
+      "id": "akk-ayyalu-stag",
+      "lang": "akk",
+      "form": "ayyalu",
+      "translit": "ayyalu",
+      "gloss": "stag, deer",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000020270, ayyalu [stag] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000589 ʾyl [deer] N: AKK001138 ayyalu [stag] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-ayyalu-ally",
+      "lang": "akk",
+      "form": "ayyalu",
+      "translit": "ayyalu",
+      "gloss": "ally; aid, help",
+      "relation": "cognate",
+      "note": "Shares the sense of אֱיָל and אֱיָלוּת, strength as help (Psa 22:20, in parallel with עֶזְרָה). Whether it is the same Akkadian word as ayyalu “stag” is not shown.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000010590, ayyalu [ally] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-alu-ram",
+      "lang": "akk",
+      "form": "ālu",
+      "translit": "ālu",
+      "gloss": "ram; (an ornament)",
+      "relation": "cognate",
+      "note": "Not checked in CAD.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000021970, ālu [ram] N"
+        }
+      ]
+    },
+    {
+      "id": "phn-ayl",
+      "lang": "phn",
+      "form": "ʾyl",
+      "translit": "ʾyl",
+      "gloss": "ram (Punic)",
+      "relation": "cognate",
+      "note": "From Anderson–Moser's sets only; not checked in Krahmalkov.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000589 ʾyl [deer] N: PUN000091 ʾyl [ram] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-ayl",
+      "lang": "uga",
+      "form": "ayl",
+      "translit": "ayl",
+      "gloss": "deer",
+      "relation": "cognate",
+      "note": "From Anderson–Moser's sets only; not checked in a Ugaritic dictionary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000589 ʾyl [deer] N: UGC000769 ayl [deer] N"
+        }
+      ]
+    },
+    {
+      "id": "gez-hayyal",
+      "lang": "gez",
+      "form": "hayyal",
+      "translit": "hayyal",
+      "gloss": "ibex",
+      "relation": "cognate",
+      "note": "From Anderson–Moser's sets only; not checked in Leslau or Dillmann. The initial h answers to Hebrew א irregularly.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000589 ʾyl [deer] N: GEZ002265 hayyal [ibex] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-ayyala",
+      "lang": "arc",
+      "form": "אַיָּלָא",
+      "translit": "ʾayyālā",
+      "gloss": "stag, deer",
+      "relation": "cognate",
+      "note": "The Targum of Deu 14:5 renders אַיָּל with it.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אַיָּלָא, citing Targ. O. Deut. XIV, 5"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000589 ʾyl [deer] N: ARM001031 ʾyl [stag] N"
+        }
+      ]
+    },
+    {
+      "id": "syc-ayla",
+      "lang": "syc",
+      "form": "ܐܝܠܐ",
+      "translit": "ʾaylā",
+      "gloss": "stag",
+      "relation": "cognate",
+      "note": "Not used in the Peshitta's New Testament, so a cognate here, not a word of the entry.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 86, A;LA (root 69), stag"
+        }
+      ]
+    },
+    {
+      "id": "arc-ela",
+      "lang": "arc",
+      "form": "אֵילָא",
+      "translit": "ʾēlā",
+      "gloss": "projection from a lateral wall, buttress; (transferred) the prow of a ship",
+      "relation": "cognate",
+      "note": "The Targum uses it in Ezk 40:48, where the Hebrew has אֵל אֻלָם “the jamb of the porch”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֵילָא, sense 2, citing Targ. Ezek. XL, 48"
+        }
+      ]
+    },
+    {
+      "id": "arc-ilan",
+      "lang": "arc",
+      "form": "אִילָן",
+      "translit": "ʾīlān",
+      "gloss": "tree",
+      "relation": "cognate",
+      "note": "The Targums' ordinary word for a tree (Targ. Gen 1:11), as in Daniel and the Peshitta. Recorded as a cognate for the Hebrew tree words; Daniel's and the Peshitta's uses are words of the entry.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אִילַן, citing Targ. Gen. I, 11"
+        },
+        {
+          "source": "sedra",
+          "locator": "lexeme 87, A;LNA (root 69), tree"
+        }
+      ]
+    },
+    {
+      "id": "akk-allanu",
+      "lang": "akk",
+      "form": "allānu",
+      "translit": "allānu",
+      "gloss": "oak; acorn; acorn-shaped object",
+      "relation": "possible",
+      "note": "Anderson–Moser set it with Hebrew אַלּוֹן “oak”, which the corpus files under another root (אלל); it may answer to אֵלוֹן too. Recorded as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000021920, allānu [oak] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000003 alān [oak] N: AKK000380 allānu [oak] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-aln",
+      "lang": "uga",
+      "form": "aln",
+      "translit": "aln",
+      "gloss": "oak",
+      "relation": "possible",
+      "note": "From Anderson–Moser's sets only, beside Hebrew אַלּוֹן; not checked in a Ugaritic dictionary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000003 alān [oak] N: UGC000319 aln [oak] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-ulama",
+      "lang": "arc",
+      "form": "אוּלָמָא",
+      "translit": "ʾūlāmā",
+      "gloss": "hall, porch",
+      "relation": "cognate",
+      "note": "The Targum's word for the porch of Solomon's buildings (Targ. 1Ki 7:6) and of Ezekiel's gates (Targ. Ezk 40:22); it may be the Hebrew word taken over.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אוּלָמָא, citing Targ. I Kings VII, 6; Targ. Ez. XL, 22"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-ram-in-place-of-the-son",
+      "statement": "On the mountain Isaac asked where the lamb (שֶׂה) was, and Abraham answered, “God will provide for himself the lamb for a burnt offering, my son” (Gen 22:7–8). When Abraham's hand was stopped, he saw “a ram caught in the thicket by its horns, and Abraham went and took the ram and offered it up for a burnt offering in place of (תַּחַת) his son” (Gen 22:13). Isaac was given back alive; Hebrews says Abraham reckoned that God could raise him from the dead, and received him back “in a figure” (Heb 11:17–19). The lamb that Abraham said God would provide was not the ram of that day: John points to Jesus as “the Lamb of God, who takes away the sin of the world” (Jhn 1:29), and Paul writes that God “did not spare his own Son but gave him up for us all” (Rom 8:32), where Abraham was spared his.",
+      "evidence": [
+        {
+          "ref": "Gen.22.7",
+          "to": "Gen.22.8"
+        },
+        {
+          "ref": "Gen.22.13"
+        },
+        {
+          "ref": "Heb.11.17",
+          "to": "Heb.11.19"
+        },
+        {
+          "ref": "Jhn.1.29"
+        },
+        {
+          "ref": "Rom.8.32"
+        }
+      ]
+    },
+    {
+      "topic": "the-ram-of-the-guilt-offering",
+      "statement": "When a man trespassed in Yahweh's holy things, or dealt falsely with his neighbour, he restored what he had taken with a fifth added and brought “a ram without blemish from the flock” as his guilt offering (אָשָׁם), and “the priest shall make covering for him with the ram of the guilt offering, and it shall be forgiven him” (Lev 5:15–16; 5:23–26; Num 5:7–8). Isaiah says of the servant of Yahweh that “when you make his soul a guilt offering (אָשָׁם), he shall see his seed”, and that “he bore the sin of many” (Isa 53:10, 12). The guilt offering's ram is the figure the prophet uses for the servant's death: what the ram did for the one who had trespassed, the servant's life laid down does for the many.",
+      "evidence": [
+        {
+          "ref": "Lev.5.15",
+          "to": "Lev.5.16"
+        },
+        {
+          "ref": "Lev.5.23",
+          "to": "Lev.5.26"
+        },
+        {
+          "ref": "Num.5.7",
+          "to": "Num.5.8"
+        },
+        {
+          "ref": "Isa.53.10"
+        },
+        {
+          "ref": "Isa.53.12"
+        }
+      ]
+    },
+    {
+      "topic": "obedience-above-the-fat-of-rams",
+      "statement": "Samuel told Saul, who had kept back the best of the flock to sacrifice, “To obey is better than sacrifice, to listen than the fat of rams” (1Sa 15:22). Yahweh says through Isaiah that he has had enough of burnt offerings of rams while the hands that bring them are full of blood (Isa 1:11, 15), and Micah asks whether Yahweh will be pleased with thousands of rams, and answers: to do justice, to love kindness and to walk humbly with your God (Mic 6:7–8). The scribe who answered Jesus wisely said that to love God and one's neighbour “is more than all whole burnt offerings and sacrifices” (Mrk 12:33). The rams of the altar were never wanted in place of obedience.",
+      "evidence": [
+        {
+          "ref": "1Sa.15.22"
+        },
+        {
+          "ref": "Isa.1.11"
+        },
+        {
+          "ref": "Isa.1.15"
+        },
+        {
+          "ref": "Mic.6.7",
+          "to": "Mic.6.8"
+        },
+        {
+          "ref": "Mrk.12.33"
+        }
+      ]
+    },
+    {
+      "topic": "folly-is-sin",
+      "statement": "Scripture's fool (אֱוִיל) is not one who lacks cleverness: “my people is foolish… they are wise to do evil” (Jer 4:22). He is one who despises wisdom and instruction, which begin with the fear of Yahweh (Pro 1:7), who mocks at guilt (Pro 14:9), and whose folly perverts his way so that his heart rages against Yahweh (Pro 19:3). “The scheme of folly is sin” (Pro 24:9), and the psalmist confesses his folly with his guilts (Psa 69:6) and his wounds as coming from it (Psa 38:6); fools are afflicted “because of the way of their transgression” (Psa 107:17). Folly is bound up in a child's heart and discipline drives it out (Pro 22:15), but the fool who will not be taught returns to it as a dog to its vomit (Pro 26:11), which Peter applies to those who turn back from the way of righteousness they have known (2Pe 2:21–22). Folly is therefore a moral state, answered by the fear of Yahweh and by discipline, and its end is death (Pro 10:21; 5:23).",
+      "evidence": [
+        {
+          "ref": "Jer.4.22"
+        },
+        {
+          "ref": "Pro.1.7"
+        },
+        {
+          "ref": "Pro.14.9"
+        },
+        {
+          "ref": "Pro.19.3"
+        },
+        {
+          "ref": "Pro.24.9"
+        },
+        {
+          "ref": "Psa.69.6"
+        },
+        {
+          "ref": "Psa.38.6"
+        },
+        {
+          "ref": "Psa.107.17"
+        },
+        {
+          "ref": "Pro.22.15"
+        },
+        {
+          "ref": "Pro.26.11"
+        },
+        {
+          "ref": "2Pe.2.21",
+          "to": "2Pe.2.22"
+        },
+        {
+          "ref": "Pro.10.21"
+        },
+        {
+          "ref": "Pro.5.23"
+        }
+      ]
+    },
+    {
+      "topic": "the-lame-leap-like-the-deer",
+      "statement": "Isaiah foretells the day when God comes to save his people: “then the eyes of the blind shall be opened and the ears of the deaf unstopped; then the lame shall leap like a deer (כָּאַיָּל), and the tongue of the dumb sing”, and a highway called the way of holiness on which “fools shall not go astray” (Isa 35:4–6, 8). When John sent to ask whether Jesus was the one to come, Jesus answered with this prophecy: “the blind receive their sight and the lame walk” (Mat 11:3–5). At the temple gate the man lame from birth, healed in the name of Jesus, “leaping up, stood and walked… walking and leaping and praising God” (Act 3:2, 8). The works Isaiah named as the sign of God's coming were done by Jesus and in his name.",
+      "evidence": [
+        {
+          "ref": "Isa.35.4",
+          "to": "Isa.35.6"
+        },
+        {
+          "ref": "Isa.35.8"
+        },
+        {
+          "ref": "Mat.11.3",
+          "to": "Mat.11.5"
+        },
+        {
+          "ref": "Act.3.2"
+        },
+        {
+          "ref": "Act.3.8"
+        }
+      ]
+    },
+    {
+      "topic": "trees-of-righteousness",
+      "statement": "Israel desired the great trees under which they served idols, and Isaiah says they will be ashamed of them and become “like a terebinth whose leaf withers” (Isa 1:29–30; Hos 4:13). Felled like a terebinth, a stump is left, and “the holy seed is its stump” (Isa 6:13). To the mourners of Zion Yahweh promises beauty for ashes, “that they may be called great trees of righteousness (אֵילֵי הַצֶּדֶק), the planting of Yahweh, that he may be glorified” (Isa 61:3). The great tree of Nebuchadnezzar's dream, which was the king, was cut down until he knew that heaven rules (Dan 4:17–23). John the Baptist and Jesus say the same of every tree: “every tree that does not bear good fruit is cut down and thrown into the fire”, and “the tree is known by its fruit” (Mat 3:10; 12:33). The trees that stand are those Yahweh plants and that bear the fruit of righteousness.",
+      "evidence": [
+        {
+          "ref": "Isa.1.29",
+          "to": "Isa.1.30"
+        },
+        {
+          "ref": "Hos.4.13"
+        },
+        {
+          "ref": "Isa.6.13"
+        },
+        {
+          "ref": "Isa.61.3"
+        },
+        {
+          "ref": "Dan.4.17",
+          "to": "Dan.4.23"
+        },
+        {
+          "ref": "Mat.3.10"
+        },
+        {
+          "ref": "Mat.12.33"
+        }
+      ]
+    }
+  ],
+  "note": "Root key: the corpus keys these words אול (BDB's two roots, a.bw “be foolish” and a.bx “be in front”), so the entry uses אול; the id is the commonest word, אַיִל. Token counts: the corpus maps BDB keys to spellings, so a.bx.af–ai (אַיִל ram, jamb, leader, terebinth) are each credited with all 429 tokens spelled like them, including every אֵל “God” and Bethel; OSHB's lemmas give about 156 ram, 33 jamb, 4 leader and 3 tree. a.bx.ab and a.bx.ac (אוּל) are both mapped to every אוּלָם, so they count the porch and the adverb “but”; a.bx.ac is BDB's entry for the written text אולי of 2Ki 24:15 (read אֵילֵי), a spelling of אַיִל “leader”; it is left unclaimed because its corpus tokens are the porch's. אַיִל names only a.bx.af, since a.bx.ag, a.bx.ah and a.bx.ai list the same tokens (the README's rule: name one); the three are left unclaimed for that reason, and belong to this entry. a.cx.aj and a.cx.ak (אֱיָל, אֱיָלוּת) carry the root איב in the corpus, which looks like a fault. Left out: the adverbs אוּלַי “perhaps” (a.by.aa) and אוּלָם “but” (a.bz.aa), which BDB files apart with no root; אַלָּה and אַלּוֹן “oak” (a.dq.ab, a.dq.ac), which the corpus files under אלל, though אֵלָה, אֵלוֹן and אַלּוֹן stand together in Isa 6:13 and Hos 4:13; the cross-references a.by.ab, a.cx.ai, a.do.ab, a.dr.ag and xa.ak.ag, which have no tokens. Names not entered (no name entries made): the people Elah (a.bx.am), Elon (a.bx.ao) and Ulam (a.bx.ae), to name entries if wanted; the gentilic אֵלֹנִי (a.bx.ap); and the places Elim (a.bx.ak), El-paran (a.bx.aj), Elath/Eloth (a.bx.aq, a.bx.ar), Aijalon (a.bx.av), the Ulai (a.bx.aw) and the valley of Elah. Evil-merodach (2Ki 25:27; Jer 52:31) is counted under a.bw.ab by spelling but is the Babylonian name Amel-Marduk. Not entered: the Peshitta's איל “God” (SEDRA lexeme 85, the Eli of Mat 27:46), which is אֵל; Coptic ⲉⲓⲟⲩⲗ “hart” (Coptic Lexicon C890), a borrowing of the Semitic word into Egyptian, which the schema has no place for; Wiktionary's Syriac ܐܝܠܐ “help” and Ugaritic ʿylt “hind” (with ʿ), not checked in a dictionary. Ezk 32:21 אֵלֵי גִבּוֹרִים and Job 41:17 אֵלִים are read as “mighty ones” by some, but the corpus files them under אֵל; Ezk 32:21 is cited under the leader sense as an example only. Open: (1) whether the ram, the leader, the jamb and the great tree are one word אַיִל or several; the senses are kept in one word because the text spells and inflects them alike. (2) The tie of אֱוִיל/אִוֶּלֶת to the root rests only on Arabic آلَ “thicken”, recorded as possible; Lane gives it no sense of dullness. (3) אוּל in Psa 73:4: body or strength? (4) Ugaritic, Punic and Ge'ez forms are from Anderson–Moser only; Akkadian forms from Oracc, not CAD. (5) Lane's pages are cited from the vendored lane.jsonl page fields. (6) The LXX renders Psa 88:5 אֵין־אֱיָל by ἀβοήθητος “without help”; the sense “help” rests on Psa 22:20's parallel and Akkadian ayyalu “ally”."
+}
