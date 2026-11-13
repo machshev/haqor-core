@@ -1,0 +1,1288 @@
+{
+  "id": "keseph",
+  "root": "כספ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "silver",
+    "money",
+    "metals",
+    "wealth",
+    "redemption",
+    "refining",
+    "longing"
+  ],
+  "gloss": "silver; money; (verb) long for, yearn",
+  "summary": "כֶּסֶף is silver: the metal mined, refined and worked into the trumpets, sockets and vessels of the tabernacle (Job 28:1; Num 10:2; Exo 26:19), and, weighed out by the shekel, the money of scripture’s world, with which land, grain and slaves are bought and Israel’s firstborn redeemed (Gen 23:16; Exo 21:21; Num 3:49). Its refining is the figure of Yahweh’s trying of his people, and its worth the measure wisdom exceeds (Psa 12:7; Mal 3:3; Pro 8:10). Biblical Aramaic כְּסַף and the Peshitta’s כֶּסְפָּא are the same word, and Akkadian, Ugaritic and Phoenician have it too. The verb כָּסַף, “long for, yearn” (Gen 31:30; Psa 84:3; Job 14:15), shares the letters, but how its meaning is tied to the metal is not known.",
+  "words": [
+    {
+      "lemma": "כֶּסֶף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "silver; money",
+      "bdb": [
+        "k.cm.ab"
+      ],
+      "cognate_ids": [
+        "akk-kaspu",
+        "uga-ksp",
+        "phn-ksp",
+        "arc-kaspa",
+        "syc-kespa"
+      ],
+      "summary": "The metal and, because silver was weighed out in payment, money. More than 400 uses, from Abraham’s purchase of the cave of Machpelah to the thirty pieces of Zechariah; the two senses run into each other, since the money is silver by weight, not coin, until late in the Old Testament.",
+      "senses": [
+        {
+          "id": "silver-metal",
+          "gloss": "silver, the metal",
+          "definition": "The white precious metal, dug out of the earth, refined from its dross in the furnace, and beaten or cast into vessels, ornaments and fittings; named with gold, bronze, iron, tin and lead.",
+          "evidence": [
+            {
+              "ref": "Job.28.1",
+              "role": "defining",
+              "note": "“There is a source (מוֹצָא) for silver, and a place for gold which they refine”: a metal mined from the earth."
+            },
+            {
+              "ref": "Num.31.22",
+              "role": "defining",
+              "note": "“The gold, the silver, the bronze, the iron, the tin and the lead”: the metals that can stand the fire."
+            },
+            {
+              "ref": "Num.10.2",
+              "role": "defining",
+              "note": "“Make for yourself two trumpets of כֶּסֶף; of beaten work (מִקְשָׁה) you shall make them”: the trumpets that call the assembly and set the camps moving."
+            },
+            {
+              "ref": "Exo.26.19",
+              "note": "Forty sockets (אֲדָנִים) of silver under the twenty boards of the tabernacle."
+            },
+            {
+              "ref": "Exo.38.27",
+              "note": "The hundred talents of silver cast into the hundred sockets of the sanctuary and the veil."
+            },
+            {
+              "ref": "Num.7.13",
+              "note": "Each prince’s offering: a silver dish of 130 shekels and a silver basin of 70."
+            },
+            {
+              "ref": "Pro.25.4",
+              "role": "defining",
+              "note": "“Take away the dross (סִיגִים) from the silver, and a vessel comes out for the refiner.”"
+            },
+            {
+              "ref": "Ezk.22.20",
+              "note": "Silver, bronze, iron, lead and tin gathered into the furnace to be melted."
+            },
+            {
+              "ref": "Jer.10.9",
+              "note": "“Silver beaten into plates is brought from Tarshish”, to overlay an idol."
+            },
+            {
+              "ref": "Gen.44.2",
+              "note": "Joseph’s cup, “the silver cup”, put in Benjamin’s sack."
+            },
+            {
+              "ref": "1Ki.10.21",
+              "note": "In Solomon’s days silver “was counted as nothing”: all his vessels were gold."
+            },
+            {
+              "ref": "Sng.8.9",
+              "note": "“A battlement of silver” built on a wall."
+            },
+            {
+              "ref": "Psa.68.14",
+              "note": "The wings of a dove covered with silver: its sheen."
+            },
+            {
+              "ref": "Ecc.12.6",
+              "note": "“Before the silver cord is snapped and the golden bowl is broken”: the frame of life at death."
+            }
+          ]
+        },
+        {
+          "id": "silver-wealth",
+          "gloss": "silver as wealth, riches",
+          "definition": "Silver, with gold and livestock, as what a man or a nation is rich in; what a king is not to multiply for himself, and what cannot deliver in the day of Yahweh’s wrath.",
+          "evidence": [
+            {
+              "ref": "Gen.13.2",
+              "role": "defining",
+              "note": "“Abram was very heavy in livestock, in silver and in gold.”"
+            },
+            {
+              "ref": "Gen.24.35",
+              "note": "Yahweh has blessed Abraham: flocks, herds, “silver and gold”, servants, camels and asses."
+            },
+            {
+              "ref": "Deu.8.13",
+              "note": "When “your silver and your gold is multiplied”, beware lest your heart be lifted up."
+            },
+            {
+              "ref": "Deu.17.17",
+              "role": "defining",
+              "note": "The king “shall not greatly multiply silver and gold to himself”."
+            },
+            {
+              "ref": "1Ki.10.27",
+              "note": "Solomon made silver in Jerusalem as common as stones."
+            },
+            {
+              "ref": "Zec.9.3",
+              "note": "Tyre “heaped up silver like dust”."
+            },
+            {
+              "ref": "Job.27.16",
+              "note": "The wicked heaps up silver like dust, “but the innocent shall divide the silver” (Job 27:17)."
+            },
+            {
+              "ref": "Hag.2.8",
+              "role": "defining",
+              "note": "“The silver is mine and the gold is mine, says Yahweh of hosts.”"
+            },
+            {
+              "ref": "Ecc.5.9",
+              "role": "defining",
+              "note": "“He who loves silver will not be satisfied with silver.”"
+            },
+            {
+              "ref": "Zep.1.18",
+              "note": "“Neither their silver nor their gold will be able to deliver them in the day of the wrath of Yahweh.” Also Ezk 7:19."
+            },
+            {
+              "ref": "Ezk.7.19"
+            },
+            {
+              "ref": "Exo.12.35",
+              "note": "Israel asks of Egypt vessels of silver and of gold."
+            },
+            {
+              "ref": "Psa.105.37",
+              "note": "“He brought them out with silver and gold.”"
+            }
+          ]
+        },
+        {
+          "id": "money",
+          "gloss": "money, price, payment",
+          "definition": "Silver weighed out to buy, pay, lend or ransom: the money of the Old Testament, reckoned by the shekel. What is bought with it is one’s own; to lend it at interest to a poor brother is forbidden.",
+          "evidence": [
+            {
+              "ref": "Gen.23.16",
+              "role": "defining",
+              "note": "Abraham “weighed to Ephron the silver … four hundred shekels of silver, current with the merchant (עֹבֵר לַסֹּחֵר)”."
+            },
+            {
+              "ref": "Gen.17.12",
+              "role": "defining",
+              "note": "“Born in the house, or bought with silver (מִקְנַת כֶּסֶף) from any foreigner”."
+            },
+            {
+              "ref": "Exo.21.21",
+              "role": "defining",
+              "note": "A slave who survives a beating a day or two: “for he is his silver”, his master’s money."
+            },
+            {
+              "ref": "Gen.47.15",
+              "role": "defining",
+              "note": "“The silver was spent (וַיִּתֹּם) … for the silver has failed”: Egypt then pays for grain with livestock and land."
+            },
+            {
+              "ref": "Gen.47.14"
+            },
+            {
+              "ref": "Gen.42.25",
+              "note": "Each man’s silver put back in his sack with the grain he bought."
+            },
+            {
+              "ref": "Deu.2.6",
+              "note": "“You shall buy food from them for silver, and eat.”"
+            },
+            {
+              "ref": "Deu.14.25",
+              "role": "defining",
+              "note": "The tithe turned into silver, bound up in the hand and spent at the chosen place on whatever the soul desires (Deu 14:26)."
+            },
+            {
+              "ref": "Deu.14.26"
+            },
+            {
+              "ref": "1Ki.21.2",
+              "note": "Ahab to Naboth: “I will give you its worth in silver.”"
+            },
+            {
+              "ref": "Jer.32.9",
+              "note": "Jeremiah buys the field at Anathoth and weighs the silver, seventeen shekels, “in the balances” (Jer 32:10)."
+            },
+            {
+              "ref": "Jer.32.10"
+            },
+            {
+              "ref": "Isa.55.1",
+              "role": "defining",
+              "note": "“He who has no silver, come, buy and eat … without silver and without price.”"
+            },
+            {
+              "ref": "Lam.5.4",
+              "note": "“Our water we drink for silver.”"
+            },
+            {
+              "ref": "Exo.22.24",
+              "note": "“If you lend silver to my people, to the poor with you … you shall not lay interest on him.”"
+            },
+            {
+              "ref": "Lev.25.37",
+              "note": "“You shall not give him your silver at interest.”"
+            },
+            {
+              "ref": "Deu.23.20",
+              "note": "“Interest of silver, interest of food”, not to be taken of a brother."
+            },
+            {
+              "ref": "Psa.15.5",
+              "note": "He who may dwell on Yahweh’s hill “has not put out his silver at interest”."
+            },
+            {
+              "ref": "Amo.2.6",
+              "note": "They “sold the righteous for silver, and the needy for a pair of sandals”. Also Amo 8:6."
+            },
+            {
+              "ref": "Mic.3.11",
+              "note": "Her prophets divine for silver."
+            },
+            {
+              "ref": "2Ki.12.11",
+              "note": "The silver in the chest of Yahweh’s house bound up and counted for the repairs."
+            },
+            {
+              "ref": "Lev.27.3",
+              "note": "The valuation of a man vowed to Yahweh: “fifty shekels of silver, by the shekel of the holy place”."
+            },
+            {
+              "ref": "Exo.30.16",
+              "role": "defining",
+              "note": "“The silver of the coverings (כֶּסֶף הַכִּפֻּרִים)”, the half shekel given as “a ransom for his soul” at the numbering (Exo 30:12), “to make covering for your souls”."
+            },
+            {
+              "ref": "Num.3.49",
+              "note": "“The silver of the redemption (כֶּסֶף הַפִּדְיוֹם)” for the firstborn beyond the number of the Levites, given to Aaron (Num 3:51)."
+            },
+            {
+              "ref": "Num.3.51"
+            },
+            {
+              "ref": "Isa.52.3",
+              "role": "defining",
+              "note": "“You were sold for nothing, and not with silver will you be redeemed.”"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "(so many) of silver: the weight understood",
+              "definition": "A number with כֶּסֶף and no unit, the shekel understood: a sum of silver by weight.",
+              "evidence": [
+                {
+                  "ref": "Gen.20.16",
+                  "role": "defining",
+                  "note": "“I have given your brother a thousand of silver (אֶלֶף כֶּסֶף).”"
+                },
+                {
+                  "ref": "Gen.37.28",
+                  "role": "defining",
+                  "note": "Joseph sold to the Ishmaelites “for twenty of silver”."
+                },
+                {
+                  "ref": "Jdg.17.2",
+                  "note": "“The eleven hundred of silver that was taken from you.”"
+                },
+                {
+                  "ref": "Hos.3.2",
+                  "note": "“I bought her for myself for fifteen of silver.”"
+                },
+                {
+                  "ref": "Zec.11.12",
+                  "role": "defining",
+                  "note": "“They weighed for my wages thirty of silver (שְׁלֹשִׁים כָּסֶף)”; “the thirty of silver” cast to the potter (Zec 11:13)."
+                },
+                {
+                  "ref": "Zec.11.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "silver-refined",
+          "gloss": "silver as a figure: refined, tried, precious",
+          "definition": "Silver’s refining is the picture of Yahweh’s trying of his people in the furnace of affliction, and refined silver of what is pure and precious: Yahweh’s words, the righteous man’s tongue. Silver gone to dross is a people corrupt.",
+          "evidence": [
+            {
+              "ref": "Psa.12.7",
+              "role": "defining",
+              "note": "“The words of Yahweh are pure words, silver refined (כֶּסֶף צָרוּף) in a furnace of earth, purified seven times.”"
+            },
+            {
+              "ref": "Psa.66.10",
+              "role": "defining",
+              "note": "“You have tested us, O God; you have refined us as silver is refined.”"
+            },
+            {
+              "ref": "Zec.13.9",
+              "role": "defining",
+              "note": "“I will bring the third part through the fire and refine them as silver is refined … they will call on my name and I will answer them.”"
+            },
+            {
+              "ref": "Mal.3.3",
+              "role": "defining",
+              "note": "“He will sit as a refiner and purifier of silver, and purify the sons of Levi … as gold and as silver.”"
+            },
+            {
+              "ref": "Isa.48.10",
+              "note": "“I have refined you, but not as silver; I have chosen you in the furnace of affliction.”"
+            },
+            {
+              "ref": "Pro.17.3",
+              "note": "“The crucible for silver and the furnace for gold, but Yahweh tries the hearts.”"
+            },
+            {
+              "ref": "Ezk.22.18",
+              "role": "defining",
+              "note": "“The house of Israel has become dross to me … they are the dross of silver”: to be melted in Yahweh’s anger (Ezk 22:20–22)."
+            },
+            {
+              "ref": "Isa.1.22",
+              "note": "“Your silver has become dross.”"
+            },
+            {
+              "ref": "Jer.6.30",
+              "note": "“Rejected silver (כֶּסֶף נִמְאָס) they are called, for Yahweh has rejected them.”"
+            },
+            {
+              "ref": "Pro.10.20",
+              "note": "“The tongue of the righteous is choice silver.”"
+            },
+            {
+              "ref": "Pro.25.11",
+              "note": "A word fitly spoken is “apples of gold in settings of silver”."
+            },
+            {
+              "ref": "Pro.2.4",
+              "note": "Seek understanding “as silver”, search for her as for hidden treasure."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זָהָב",
+            "note": "Gold: silver’s constant partner, in wealth, vessels, idols and the refiner’s fire.",
+            "evidence": [
+              {
+                "ref": "Gen.13.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Hag.2.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.17.3"
+              },
+              {
+                "ref": "Psa.115.4"
+              },
+              {
+                "ref": "Zec.13.9"
+              }
+            ]
+          },
+          {
+            "lemma": "חָרוּץ",
+            "note": "Fine gold, set beside silver as what wisdom outweighs.",
+            "evidence": [
+              {
+                "ref": "Pro.8.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.16.16"
+              },
+              {
+                "ref": "Zec.9.3"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "סִיג",
+            "note": "Dross, the worthless slag refined out of silver; silver “become dross” is a corrupt people.",
+            "evidence": [
+              {
+                "ref": "Pro.25.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.1.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.22.18"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִקְנַת כֶּסֶף",
+            "gloss": "bought with silver (of a slave)",
+            "evidence": [
+              {
+                "ref": "Gen.17.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.17.13"
+              },
+              {
+                "ref": "Exo.12.44"
+              }
+            ]
+          },
+          {
+            "phrase": "שֶׁקֶל כֶּסֶף",
+            "gloss": "shekel of silver",
+            "evidence": [
+              {
+                "ref": "Gen.23.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.27.3"
+              },
+              {
+                "ref": "Exo.21.32"
+              }
+            ]
+          },
+          {
+            "phrase": "כֶּסֶף הַכִּפֻּרִים",
+            "gloss": "the silver of the coverings",
+            "evidence": [
+              {
+                "ref": "Exo.30.16",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "כֶּסֶף הַפִּדְיוֹם",
+            "gloss": "the silver of the redemption",
+            "evidence": [
+              {
+                "ref": "Num.3.49",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.3.51"
+              }
+            ]
+          },
+          {
+            "phrase": "כֶּסֶף צָרוּף",
+            "gloss": "refined silver",
+            "evidence": [
+              {
+                "ref": "Psa.12.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "כֶּסֶף נִמְאָס",
+            "gloss": "rejected silver",
+            "evidence": [
+              {
+                "ref": "Jer.6.30",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "אֹהֵב כֶּסֶף",
+            "gloss": "a lover of silver",
+            "evidence": [
+              {
+                "ref": "Ecc.5.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "נֶשֶׁךְ כֶּסֶף",
+            "gloss": "interest on silver",
+            "evidence": [
+              {
+                "ref": "Deu.23.20",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁלֹשִׁים כֶּסֶף",
+            "gloss": "thirty (shekels) of silver",
+            "evidence": [
+              {
+                "ref": "Zec.11.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.11.13"
+              },
+              {
+                "ref": "Exo.21.32",
+                "note": "“Thirty shekels of silver” paid to the master of a slave gored by an ox."
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἀργύριον",
+          "gloss": "silver; money; a piece of silver",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.23.16, כֶּסֶף → ἀργύριον; Isa.52.3, כֶסֶף → ἀργυρίου; Isa.55.1; Amo.2.6; ἀργύριον renders כֶּסֶף ×273"
+            },
+            {
+              "ref": "1Pe.1.18",
+              "role": "defining",
+              "note": "“Not with corruptible things, ἀργυρίῳ or gold, were you redeemed … but with the precious blood of Christ, as of a lamb without blemish” (1Pe 1:19): Isa 52:3, “not with silver will you be redeemed”."
+            },
+            {
+              "ref": "1Pe.1.19"
+            },
+            {
+              "ref": "Mat.26.15",
+              "role": "defining",
+              "note": "The chief priests weigh out to Judas “thirty ἀργύρια”: the words of Zec 11:12."
+            },
+            {
+              "ref": "Mat.27.9",
+              "role": "defining",
+              "note": "“They took the thirty ἀργύρια, the price of him who was priced”, given for the potter’s field (Mat 27:10): Zec 11:12–13."
+            },
+            {
+              "ref": "Mat.27.10"
+            },
+            {
+              "ref": "Act.3.6",
+              "note": "“Silver and gold I do not have.”"
+            },
+            {
+              "ref": "Act.20.33",
+              "note": "Paul coveted no one’s silver or gold."
+            },
+            {
+              "ref": "Act.8.20",
+              "note": "“Your silver perish with you.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἄργυρος",
+          "gloss": "silver (the metal)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.10.2, כֶּסֶף → ἀργυρᾶς (lemma ἄργυρος); ἄργυρος renders כֶּסֶף ×39"
+            },
+            {
+              "ref": "Act.17.29",
+              "role": "defining",
+              "note": "“We ought not to think the Godhead is like gold or ἀργύρῳ or stone, graven by man’s art”: Psa 115:4."
+            },
+            {
+              "ref": "Jas.5.3",
+              "note": "“Your gold and ἄργυρος is rusted.”"
+            },
+            {
+              "ref": "1Co.3.12",
+              "note": "Building on the foundation with gold, ἄργυρον, precious stones: the work tried by fire."
+            },
+            {
+              "ref": "Rev.18.12"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀργυροῦς",
+          "gloss": "of silver",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zec.11.12, כָּסֶף → ἀργυροῦς; Zec.11.13 the same; ἀργύρεος renders כֶּסֶף ×29"
+            },
+            {
+              "ref": "2Ti.2.20",
+              "note": "In a great house vessels of gold and ἀργυρᾶ."
+            },
+            {
+              "ref": "Rev.9.20",
+              "note": "Idols of gold and ἀργυρᾶ, which can neither see nor hear: Psa 115:4–6."
+            },
+            {
+              "ref": "Act.19.24",
+              "note": "Demetrius makes silver shrines of Artemis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּסַף",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "silver; money",
+      "bdb": [
+        "xk.af.ad"
+      ],
+      "cognate_ids": [
+        "akk-kaspu",
+        "uga-ksp",
+        "phn-ksp",
+        "arc-kaspa",
+        "syc-kespa"
+      ],
+      "summary": "The Aramaic of Daniel and Ezra: the silver of Nebuchadnezzar’s image and of the temple vessels, and the money Ezra takes to buy offerings.",
+      "senses": [
+        {
+          "gloss": "silver, the metal",
+          "definition": "Silver as a material: of the image’s chest and arms, of vessels, of idols; named with gold, bronze, iron, clay, wood and stone.",
+          "evidence": [
+            {
+              "ref": "Dan.2.32",
+              "role": "defining",
+              "note": "The image: head of fine gold, “its chest and its arms of silver”, belly and thighs of bronze."
+            },
+            {
+              "ref": "Dan.2.35",
+              "role": "defining",
+              "note": "Iron, clay, bronze, silver and gold crushed together and carried away like chaff; the stone becomes a great mountain and fills the earth."
+            },
+            {
+              "ref": "Dan.2.45"
+            },
+            {
+              "ref": "Dan.5.2",
+              "note": "The vessels of gold and silver taken from the temple in Jerusalem."
+            },
+            {
+              "ref": "Dan.5.4",
+              "role": "defining",
+              "note": "“They praised the gods of gold and silver, bronze, iron, wood and stone.”"
+            },
+            {
+              "ref": "Dan.5.23",
+              "note": "“The gods of silver and gold … which do not see or hear or know.”"
+            },
+            {
+              "ref": "Ezr.5.14"
+            },
+            {
+              "ref": "Ezr.6.5"
+            }
+          ]
+        },
+        {
+          "gloss": "silver as money",
+          "definition": "Silver given and spent: the king’s freewill offering, and the money to buy sacrifices.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.17",
+              "role": "defining",
+              "note": "“With this money (בְּכַסְפָּא) you shall diligently buy bulls, rams, lambs.”"
+            },
+            {
+              "ref": "Ezr.7.15",
+              "note": "Silver and gold the king and his counsellors freely offered to the God of Israel."
+            },
+            {
+              "ref": "Ezr.7.16"
+            },
+            {
+              "ref": "Ezr.7.18",
+              "note": "“The rest of the silver and the gold”, to do with as seems good."
+            },
+            {
+              "ref": "Ezr.7.22",
+              "note": "Up to a hundred talents of silver."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἄργυρος",
+          "gloss": "silver",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.2.32, כְסַף → ἀργυροῖ (lemma ἄργυρος); ἀργύριον and ἄργυρος render כְּסַף ×3 each"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כֶּסְפָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "silver; money (Peshitta)",
+      "cognate_ids": [
+        "akk-kaspu",
+        "uga-ksp",
+        "phn-ksp",
+        "arc-kaspa",
+        "syc-kespa"
+      ],
+      "summary": "The Peshitta’s word for Greek ἀργύριον and for money in general: the thirty pieces of silver, the price of redemption that was not silver, and the “love of כֶּסְפָּא” (φιλαργυρία) that is a root of all evils. In Acts 3:6 it uses another word, סִאמָא, for silver.",
+      "senses": [
+        {
+          "gloss": "silver; pieces of silver",
+          "definition": "Silver, in pieces counted or weighed out, and set beside gold.",
+          "evidence": [
+            {
+              "ref": "Mat.26.15",
+              "role": "defining",
+              "note": "They set for him “thirty of כֶּסְפָּא”, as in Zec 11:12."
+            },
+            {
+              "ref": "Mat.27.9",
+              "note": "“They took the thirty of כֶּסְפָּא, the price of the precious one.”"
+            },
+            {
+              "ref": "1Pe.1.18",
+              "role": "defining",
+              "note": "“Not with כֶּסְפָּא which perishes, nor with gold, were you redeemed.”"
+            },
+            {
+              "ref": "Mat.27.3"
+            }
+          ]
+        },
+        {
+          "gloss": "money",
+          "definition": "Money of any kind, a talent entrusted, tribute, a bribe; and in “love of money”, the Greek φιλαργυρία.",
+          "evidence": [
+            {
+              "ref": "Mat.25.27",
+              "role": "defining",
+              "note": "“You ought to have put my כֶּסְפָּא to the exchangers.”"
+            },
+            {
+              "ref": "Act.8.20",
+              "role": "defining",
+              "note": "To Simon, who would buy the gift of God with money: “Your כֶּסְפָּא go with you to destruction.”"
+            },
+            {
+              "ref": "Mrk.12.14",
+              "note": "“Is it lawful to give כּסֵף רִישָׁא, head-money, to Caesar?” for Greek κῆνσος."
+            },
+            {
+              "ref": "1Ti.6.10",
+              "role": "defining",
+              "note": "“The root of all evils is רֵחמַת כֶּסְפָּא, the love of money”: Ecc 5:9’s אֹהֵב כֶּסֶף."
+            },
+            {
+              "ref": "Luk.16.14",
+              "note": "The Pharisees, who were lovers of כֶּסְפָּא."
+            },
+            {
+              "ref": "1Ti.3.3",
+              "note": "The overseer not a lover of כֶּסְפָּא."
+            },
+            {
+              "ref": "Heb.13.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כָּסַף",
+      "pos": "verb",
+      "gloss": "long for, yearn, desire",
+      "bdb": [
+        "k.cm.aa"
+      ],
+      "cognate_ids": [
+        "arc-kesaph-ashamed",
+        "ar-kasafa"
+      ],
+      "summary": "Six uses, of longing so strong that the soul faints with it: Jacob for his father’s house, the psalmist for the courts of Yahweh, a lion for its prey, and God for the work of his hands. How this is tied to כֶּסֶף “silver” is not known; no cognate shares the sense “long for”, and the Aramaic and Arabic verbs of these letters mean “be pale, ashamed” and “be eclipsed”, which only a guess (a face pale with longing or with shame) connects with it.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "long for, desire",
+          "senses": [
+            {
+              "id": "long-for",
+              "gloss": "long for, desire eagerly",
+              "definition": "Desire something with the whole being: of God toward the man he made, and of a lion eager to tear.",
+              "evidence": [
+                {
+                  "ref": "Job.14.15",
+                  "role": "defining",
+                  "note": "“You will call, and I will answer you; you will long (תִכְסֹף) for the work of your hands”: after Job’s plea to be hidden in the grave until Yahweh remembers him (Job 14:13–14)."
+                },
+                {
+                  "ref": "Psa.17.12",
+                  "role": "defining",
+                  "note": "The wicked “like a lion that longs (יִכְסוֹף) to tear”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "long, yearn; (participle) longed for?",
+          "senses": [
+            {
+              "gloss": "long, yearn",
+              "definition": "Yearn after a place one is away from, so that the soul is spent.",
+              "evidence": [
+                {
+                  "ref": "Gen.31.30",
+                  "role": "defining",
+                  "note": "Laban to Jacob: “you have surely gone, because you sorely longed (נִכְסֹף נִכְסַפְתָּה) for your father’s house”."
+                },
+                {
+                  "ref": "Psa.84.3",
+                  "role": "defining",
+                  "note": "“My soul longs (נִכְסְפָה), yes, faints (כָּלְתָה) for the courts of Yahweh.”"
+                }
+              ]
+            },
+            {
+              "gloss": "(not) longed for; or (without) shame",
+              "definition": "Of the nation called to gather before Yahweh’s day: the participle with לֹא is either “not longed for, undesired” or, with the Aramaic sense “be pale, ashamed”, “that has no shame”. The text does not settle which.",
+              "evidence": [
+                {
+                  "ref": "Zep.2.1",
+                  "role": "defining",
+                  "note": "“Gather yourselves together, yes, gather, O nation לֹא נִכְסָף”, before the decree goes out and the day of Yahweh’s anger comes (Zep 2:2–3)."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כָּלָה",
+            "note": "“Be spent, faint”: the soul longs and faints for Yahweh’s courts.",
+            "evidence": [
+              {
+                "ref": "Psa.84.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἐπιποθέω",
+          "gloss": "long for",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.84.3, נִכְסְפָה → ἐπιποθεῖ"
+            },
+            {
+              "ref": "1Pe.2.2",
+              "note": "“As newborn babes, ἐπιποθήσατε the sincere milk of the word.”"
+            },
+            {
+              "ref": "Php.1.8",
+              "note": "“How I long after you all.”"
+            },
+            {
+              "ref": "2Co.5.2",
+              "note": "“Longing to be clothed with our dwelling from heaven.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπιθυμία",
+          "gloss": "desire, longing",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.31.30, נִכְסֹף → ἐπιθυμίᾳ, נִכְסַפְתָּה → ἐπεθύμησας"
+            },
+            {
+              "ref": "Php.1.23",
+              "note": "“Having the ἐπιθυμία to depart and be with Christ.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-kaspu",
+      "lang": "akk",
+      "form": "kaspu",
+      "translit": "kaspu",
+      "gloss": "silver; money, payment, price",
+      "relation": "cognate",
+      "note": "The commonest Akkadian word for silver and, as in Hebrew, for money and price, since silver by weight was the standard of payment from Old Babylonian to Seleucid times.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003490, kaspu [silver] N",
+          "note": "Meanings: silver; silver piece; money; payment; price (×7559)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000166 kasp [silver], AKK004990 kaspu [silver]"
+        }
+      ]
+    },
+    {
+      "id": "uga-ksp",
+      "lang": "uga",
+      "form": "𐎋𐎒𐎔",
+      "translit": "ksp",
+      "gloss": "silver",
+      "relation": "cognate",
+      "note": "/kasp-/, syllabic kas-pu, ka-as-pu. In the Baal cycle the mountains bring Baal “plenty of silver” for his house, and his house is built of silver and gold (KTU 1.4 V 15, 18), as silver and gold are paired in Hebrew.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 190, §93 Glossary, ksp",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“/kasp-/, cf. kas-pu, ka-as-pu … “silver” … (cf. H. kæsæp, Aram. kaspā, Akkad. kaspu)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§88.53, KTU 1.4 V 15",
+          "note": "thlk.ǵrm.mid.ksp, “the mountains will bring you plenty of silver”; KTU 1.4 V 18 wbn.bht.ksp.wḫrṣ, “build a house of silver and gold”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000166 kasp [silver], UGC002374 ksp [silver]"
+        }
+      ]
+    },
+    {
+      "id": "phn-ksp",
+      "lang": "phn",
+      "form": "𐤊𐤎𐤐",
+      "translit": "ksp",
+      "gloss": "silver, money",
+      "relation": "cognate",
+      "note": "In Phoenician and Punic inscriptions both silver and money: the Tabnit coffin has no silver or gold in it, and a Punic letter acknowledges “the silver that you sent me”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 237, KSP",
+          "note": "“n.m. SILVER, MONEY”; KAI 13.3/5 (Ph) “I do not have <with me> any silver, I do not have any gold”; KAI 50.2 (Pu) “I got the silver that you sent me”; KAI 60.6 (Ph) drachmas “from the silver of the god Baal-of-Sidon”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000166 kasp [silver], PUN000927 ksp [silver]"
+        }
+      ]
+    },
+    {
+      "id": "arc-kaspa",
+      "lang": "arc",
+      "form": "כַּסְפָּא",
+      "translit": "kaspāʾ",
+      "gloss": "silver; money",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud, where it renders Hebrew כֶּסֶף (Targ. Gen 20:16; 44:8) and is money in general, as in the Peshitta.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "K00954, כְּסַף II (כַּסְפָּא), Targ. Gen 20:16; 44:8; pl. Targ. Gen 42:25, 35",
+          "note": "Same as Hebrew כֶּסֶף, “silver; … money, value”."
+        }
+      ]
+    },
+    {
+      "id": "syc-kespa",
+      "lang": "syc",
+      "form": "ܟܣܦܐ",
+      "translit": "kespā",
+      "gloss": "silver; money",
+      "relation": "cognate",
+      "note": "The Syriac word, entered also as a word of the entry (כֶּסְפָּא) for its Peshitta uses.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1563, CSIA (root 919 CSI), silver; money"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܟܣܦܐ (kespā), noun: silver; money; coins, pieces of silver"
+        }
+      ]
+    },
+    {
+      "id": "arc-kesaph-ashamed",
+      "lang": "arc",
+      "form": "כְּסַף",
+      "translit": "kəsap̄",
+      "gloss": "feel ashamed, be abashed, frightened; (pael, aphel) put to shame",
+      "relation": "possible",
+      "note": "Jewish Aramaic verb of the same letters (Targ. Y. Num 12:14 for Hebrew נִכְלַם “be ashamed”), with the Hebrew of the Mishnah’s כָּסַף “grow pale”. It bears on Zep 2:1, “a nation without shame”, and is offered as a possible link to the verb only: shame and longing are not the same sense, and nothing in scripture ties them.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "K00952, כְּסַף I (כְּסִיף), Targ. Y. Num 12:14",
+          "note": "“to feel ashamed, frightened”; Pa., Af. “to frighten; to put to shame”; Ithpa. “to be made pale, to be frightened, to be put to shame”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "K00951, כָּסַף, Hif. “to grow pale, fade, wither”"
+        }
+      ]
+    },
+    {
+      "id": "ar-kasafa",
+      "lang": "ar",
+      "form": "كَسَفَ",
+      "translit": "kasafa",
+      "gloss": "(of sun or moon) be eclipsed; (VII) be ashamed, blush; kāsif al-bāl in an evil state, straitened in hope",
+      "relation": "possible",
+      "note": "The Arabic letters k-s-f answer to Hebrew כ-ס-פ. Its senses of being darkened, downcast and ashamed sit with the Aramaic verb, not with “long for”; kāsif al-bāl, one “straitened in his hope or expectation”, is the nearest to longing. Lane’s own article on the root was never written; only the cross-reference survives.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 277, art. بول, بَالٌ (n3569)",
+          "note": "هُوَ كَاسِفُ البَالِ “He is in an evil state or condition: or he is straitened in his hope, or expectation”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic انكسف (inkasafa), verb: to be eclipsed; to be shamed; to be ashamed; to blush; أكسف (ʔaksafa), to eclipse"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "redemption",
+      "statement": "Under the law silver was the price of a soul’s ransom: each man numbered gave a half shekel, “the silver of the coverings”, as “a ransom (כֹּפֶר) for his soul … to make covering for your souls” (Exo 30:12–16); the firstborn beyond the Levites were redeemed with five shekels each, “the silver of the redemption” (Num 3:46–51); a person vowed to Yahweh was valued in shekels of silver (Lev 27:2–8). But Yahweh says of Israel, “You were sold for nothing, and not with silver will you be redeemed” (Isa 52:3), and Peter, with the same words, tells the believers that they were redeemed “not with corruptible things, silver or gold … but with the precious blood of Christ, as of a lamb without blemish and without spot” (1Pe 1:18–19). From the verses: the silver of the law stood for a ransom that silver could not truly pay, and the price was paid by the life of the unblemished lamb.",
+      "evidence": [
+        {
+          "ref": "Exo.30.12",
+          "to": "Exo.30.16"
+        },
+        {
+          "ref": "Num.3.46",
+          "to": "Num.3.51"
+        },
+        {
+          "ref": "Lev.27.2",
+          "to": "Lev.27.8"
+        },
+        {
+          "ref": "Isa.52.3"
+        },
+        {
+          "ref": "1Pe.1.18",
+          "to": "1Pe.1.19"
+        }
+      ]
+    },
+    {
+      "topic": "thirty-pieces-of-silver",
+      "statement": "The law sets thirty shekels of silver as the price of a slave gored by an ox (Exo 21:32). In Zechariah the shepherd of the flock asks his wages, and “they weighed for my wages thirty of silver”; Yahweh calls it “the goodly price that I was priced at by them”, and the thirty are cast “to the potter in the house of Yahweh” (Zec 11:12–13). The chief priests weighed out thirty pieces of silver to Judas for Jesus; Judas cast them down in the temple, and with them the priests bought the potter’s field, and Matthew says that so the word of the prophet was fulfilled, “they took the thirty pieces of silver, the price of him who was priced” (Mat 26:15; 27:3–10). From the verses: Israel’s rulers valued Yahweh’s shepherd, Jesus, at a slave’s price, as the prophet had written.",
+      "evidence": [
+        {
+          "ref": "Exo.21.32"
+        },
+        {
+          "ref": "Zec.11.12",
+          "to": "Zec.11.13"
+        },
+        {
+          "ref": "Mat.26.15"
+        },
+        {
+          "ref": "Mat.27.3",
+          "to": "Mat.27.10"
+        }
+      ]
+    },
+    {
+      "topic": "trial-of-faith",
+      "statement": "Silver is refined in the fire to take away its dross (Pro 25:4), and scripture uses this for Yahweh’s dealing with his people: “you have refined us as silver is refined” (Psa 66:10); the third part brought through the fire and refined as silver will call on his name, and he will answer, “It is my people” (Zec 13:9); the messenger of the covenant sits “as a refiner and purifier of silver” to purify the sons of Levi, that they may offer in righteousness (Mal 3:3); Israel was chosen “in the furnace of affliction” (Isa 48:10). Where the people would not be purified, they are called dross and “rejected silver” (Isa 1:22; Jer 6:30; Ezk 22:18–22). “The crucible is for silver … but Yahweh tries the hearts” (Pro 17:3). From the verses: affliction sent by God is for purifying, and its end is a people fit to be his.",
+      "evidence": [
+        {
+          "ref": "Pro.25.4"
+        },
+        {
+          "ref": "Psa.66.10"
+        },
+        {
+          "ref": "Zec.13.9"
+        },
+        {
+          "ref": "Mal.3.3"
+        },
+        {
+          "ref": "Isa.48.10"
+        },
+        {
+          "ref": "Isa.1.22"
+        },
+        {
+          "ref": "Jer.6.30"
+        },
+        {
+          "ref": "Ezk.22.18",
+          "to": "Ezk.22.22"
+        },
+        {
+          "ref": "Pro.17.3"
+        }
+      ]
+    },
+    {
+      "topic": "riches",
+      "statement": "Silver is Yahweh’s (Hag 2:8), and he gives it (Gen 24:35), but the king is not to multiply it (Deu 17:17), the lover of silver is never satisfied with it (Ecc 5:9), and it cannot deliver in the day of Yahweh’s wrath (Zep 1:18; Ezk 7:19). Wisdom’s gain is better than the gain of silver, and instruction is to be taken rather than silver (Pro 3:14; 8:10, 19; 16:16; Job 28:15); Yahweh’s law is better than thousands of gold and silver (Psa 119:72). The New Testament calls the love of money a root of all evils, and tells the overseer and every believer to be free of it (1Ti 6:10; 3:3; Heb 13:5). From the verses: silver is a gift to be held loosely, never a thing to trust or to love.",
+      "evidence": [
+        {
+          "ref": "Hag.2.8"
+        },
+        {
+          "ref": "Gen.24.35"
+        },
+        {
+          "ref": "Deu.17.17"
+        },
+        {
+          "ref": "Ecc.5.9"
+        },
+        {
+          "ref": "Zep.1.18"
+        },
+        {
+          "ref": "Ezk.7.19"
+        },
+        {
+          "ref": "Pro.3.14"
+        },
+        {
+          "ref": "Pro.8.10"
+        },
+        {
+          "ref": "Pro.8.19"
+        },
+        {
+          "ref": "Pro.16.16"
+        },
+        {
+          "ref": "Job.28.15"
+        },
+        {
+          "ref": "Psa.119.72"
+        },
+        {
+          "ref": "1Ti.6.10"
+        },
+        {
+          "ref": "1Ti.3.3"
+        },
+        {
+          "ref": "Heb.13.5"
+        }
+      ]
+    },
+    {
+      "topic": "idolatry",
+      "statement": "Israel is not to make “gods of silver” (Exo 20:23); the idols of the nations “are silver and gold, the work of men’s hands”, with mouths that do not speak (Psa 115:4–7; 135:15); men weigh silver and hire a smith to make a god (Isa 46:6); Belshazzar praised “the gods of silver and gold … which do not see or hear or know” (Dan 5:4, 23); Israel made its silver into idols (Hos 8:4). Paul at Athens: “we ought not to think that the Godhead is like gold or silver or stone” (Act 17:29). From the verses: what a man’s hands can shape from silver cannot be the living God.",
+      "evidence": [
+        {
+          "ref": "Exo.20.23"
+        },
+        {
+          "ref": "Psa.115.4",
+          "to": "Psa.115.7"
+        },
+        {
+          "ref": "Psa.135.15"
+        },
+        {
+          "ref": "Isa.46.6"
+        },
+        {
+          "ref": "Dan.5.4"
+        },
+        {
+          "ref": "Dan.5.23"
+        },
+        {
+          "ref": "Hos.8.4"
+        },
+        {
+          "ref": "Act.17.29"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "In Nebuchadnezzar’s dream the image’s chest and arms are silver (Dan 2:32): the kingdom that rises after Babylon, “inferior to you” (Dan 2:39), which Daniel later names as the Medes and Persians who took Belshazzar’s kingdom (Dan 5:28). The stone cut out without hands strikes the image, and iron, clay, bronze, silver and gold are crushed together and carried away like chaff, while the stone becomes a great mountain filling the earth (Dan 2:34–35); “the God of heaven will set up a kingdom which shall never be destroyed … it shall break in pieces and consume all these kingdoms, and it shall stand for ever” (Dan 2:44–45). From the verses: the kingdoms of men, silver among them, will all be ended together, and replaced on the earth by the kingdom of God.",
+      "evidence": [
+        {
+          "ref": "Dan.2.32"
+        },
+        {
+          "ref": "Dan.2.39"
+        },
+        {
+          "ref": "Dan.5.28"
+        },
+        {
+          "ref": "Dan.2.34",
+          "to": "Dan.2.35"
+        },
+        {
+          "ref": "Dan.2.44",
+          "to": "Dan.2.45"
+        }
+      ]
+    },
+    {
+      "topic": "resurrection",
+      "statement": "Job says a man who dies lies down and does not rise “till the heavens are no more” (Job 14:12); he asks to be hidden in the grave (שְׁאוֹל) until God’s anger is past, and to be given a set time and remembered (Job 14:13); “if a man dies, shall he live? All the days of my service I will wait, till my change comes” (Job 14:14). Then: “You will call, and I will answer you; you will long (תִכְסֹף) for the work of your hands” (Job 14:15). From the verses: the dead wait in the grave, not living elsewhere, until God calls them; and the ground of that call is God’s own longing for the man he made.",
+      "evidence": [
+        {
+          "ref": "Job.14.12"
+        },
+        {
+          "ref": "Job.14.13"
+        },
+        {
+          "ref": "Job.14.14"
+        },
+        {
+          "ref": "Job.14.15"
+        }
+      ]
+    }
+  ],
+  "note": "Root key כספ as the database keys it. Left out: כָּסִפְיָא (Kasiphia, Ezr 8:17, BDB k.cm.ac), a place in Babylonia; places get no name entries, so its key is unclaimed. No Arabic or Ge'ez cognate for “silver” (Arabic uses fiḍḍa); Arabic كسف is recorded only as a possible cognate of the verb. Lane’s article on كسف was not written (Lane-Poole’s later parts); only the cross-reference under بال is cited. Not followed: Akkadian kasāpu “break into bits” (Oracc armep x000024860), which some connect with silver as metal broken into pieces for payment: no evidence ties it, so it is not entered. A suggested derivation of כֶּסֶף as “the pale metal” from the Aramaic verb “be pale” is likewise unproven and not stated in the entry. Check: Zep 2:1 לֹא נִכְסָף, “not longed for” or “without shame”; Segert’s p. 190 is inferred from the text layer’s running heads; Krahmalkov’s KSP page is inferred (between pp. 236 and 238). Old/Imperial Aramaic (DEAPS) and Mesha-era Moabite not searched."
+}
