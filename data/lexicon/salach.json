@@ -1,0 +1,860 @@
+{
+  "id": "salach",
+  "root": "סלח",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "forgiveness",
+    "sin",
+    "sacrifice",
+    "covenant",
+    "character-of-god",
+    "prayer"
+  ],
+  "gloss": "forgive, pardon (always God); forgiveness",
+  "summary": "סָלַח is to forgive: to release a sinner from the iniquity and sin he owes, so that the judgement it deserves is not carried out. In all its uses the one who forgives is God; no man forgives with this verb, and it always takes its object with ל, “forgive to” the sin or the sinner (Exo 34:9; Num 14:19–20; Jer 31:34). The law’s offerings end “the priest shall make a covering for him, and it will be forgiven him” (Lev 4:20–35; Num 15:25–28): the priest covers, God forgives. The noun סְלִיחָה and the adjective סַלָּח make forgiveness something Yahweh has with him and is ready to give (Psa 130:4; 86:5; Neh 9:17).",
+  "words": [
+    {
+      "lemma": "סָלַח",
+      "pos": "verb",
+      "gloss": "forgive, pardon",
+      "bdb": [
+        "o.bn.aa"
+      ],
+      "cognate_ids": [
+        "arc-selach",
+        "phn-mslh"
+      ],
+      "summary": "Forty-six uses, thirty-three qal (Yahweh forgives) and thirteen niphal (it is forgiven), the niphal all in the sin and guilt offering laws of Leviticus and Numbers. The subject is God in every one: Moses, Solomon, Amos, Daniel and the psalmists ask it of Yahweh, and Yahweh promises or refuses it.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "forgive, pardon (God)",
+          "senses": [
+            {
+              "id": "forgive-iniquity",
+              "gloss": "forgive iniquity, sin",
+              "definition": "Of God, to release the sinner from the iniquity (עָוֹן), sin (חַטָּאת) and transgression (פֶּשַׁע) charged against him, so that it is no longer held against him. Scripture sets it beside his not remembering sin, cleansing from it, and healing.",
+              "evidence": [
+                {
+                  "ref": "Exo.34.9",
+                  "role": "defining",
+                  "note": "After Yahweh proclaims himself “bearing (נֹשֵׂא) iniquity and transgression and sin” (Exo 34:6–7), Moses asks וְסָלַחְתָּ לַעֲוֹנֵנוּ וּלְחַטָּאתֵנוּ, “forgive our iniquity and our sin, and take us for your inheritance.”"
+                },
+                {
+                  "ref": "Jer.31.34",
+                  "role": "defining",
+                  "note": "In the new covenant: כִּי אֶסְלַח לַעֲוֹנָם וּלְחַטָּאתָם לֹא אֶזְכָּר עוֹד, “for I will forgive their iniquity, and their sin I will remember no more.” Quoted at Heb 8:12 and 10:17."
+                },
+                {
+                  "ref": "Jer.33.8",
+                  "role": "defining",
+                  "note": "“I will cleanse (טִהַרְתִּים) them from all their iniquity … and I will forgive all their iniquities by which they sinned and transgressed against me.”"
+                },
+                {
+                  "ref": "Psa.103.3",
+                  "role": "defining",
+                  "note": "הַסֹּלֵחַ לְכָל־עֲוֹנֵכִי הָרֹפֵא לְכָל־תַּחֲלֻאָיְכִי: “who forgives all your iniquities, who heals all your diseases.”"
+                },
+                {
+                  "ref": "Psa.25.11",
+                  "note": "“For your name’s sake, Yahweh, forgive my iniquity, for it is great.”"
+                },
+                {
+                  "ref": "Jer.36.3",
+                  "role": "defining",
+                  "note": "“That they may return each from his evil way, and I will forgive their iniquity and their sin”: forgiveness follows turning."
+                },
+                {
+                  "ref": "Isa.55.7",
+                  "role": "defining",
+                  "note": "“Let the wicked forsake his way … and return to Yahweh, and he will have compassion on him, and to our God, for he will abundantly forgive (יַרְבֶּה לִסְלוֹחַ).”"
+                },
+                {
+                  "ref": "2Ch.7.14",
+                  "note": "“If my people … humble themselves and pray and seek my face and turn from their evil ways, I will hear from heaven and forgive their sin and heal their land.”"
+                },
+                {
+                  "ref": "1Ki.8.30",
+                  "note": "Solomon’s refrain at the house’s dedication: “hear in heaven your dwelling place, and hear and forgive.”"
+                },
+                {
+                  "ref": "1Ki.8.34"
+                },
+                {
+                  "ref": "1Ki.8.36"
+                },
+                {
+                  "ref": "1Ki.8.39",
+                  "note": "“Forgive, and act, and give to each according to all his ways, whose heart you know.”"
+                },
+                {
+                  "ref": "1Ki.8.50",
+                  "note": "“Forgive your people who have sinned against you, and all their transgressions.”"
+                },
+                {
+                  "ref": "2Ch.6.21"
+                },
+                {
+                  "ref": "2Ch.6.25"
+                },
+                {
+                  "ref": "2Ch.6.27"
+                },
+                {
+                  "ref": "2Ch.6.30"
+                },
+                {
+                  "ref": "2Ch.6.39"
+                },
+                {
+                  "ref": "Dan.9.19",
+                  "note": "“Lord, hear! Lord, forgive (סְלָחָה)! Lord, attend and act!”"
+                }
+              ]
+            },
+            {
+              "id": "pardon-people",
+              "gloss": "pardon a people or person, spare from judgement",
+              "definition": "To pardon the sinner himself, a people, a city, so that the destruction their sin has earned does not fall on them. Its refusal is the judgement carried out.",
+              "evidence": [
+                {
+                  "ref": "Num.14.19",
+                  "role": "defining",
+                  "note": "“Forgive, please, the iniquity of this people according to the greatness of your חֶסֶד, as you have borne (נָשָׂאתָה) this people from Egypt until now”, after Yahweh has said he will strike them and disinherit them (Num 14:12)."
+                },
+                {
+                  "ref": "Num.14.20",
+                  "role": "defining",
+                  "note": "“I have forgiven according to your word”: the nation is not destroyed, yet that generation will not see the land (Num 14:21–23). Pardon here is the nation spared, not every consequence removed."
+                },
+                {
+                  "ref": "Amo.7.2",
+                  "role": "defining",
+                  "note": "When the locusts have eaten the land: “Lord Yahweh, forgive, please! How shall Jacob stand, for he is small?” and Yahweh relents: “it shall not be” (Amo 7:3)."
+                },
+                {
+                  "ref": "Jer.5.1",
+                  "role": "defining",
+                  "note": "“If you can find a man who does justice, who seeks faithfulness, then I will pardon her”: Jerusalem spared, as Sodom would have been for ten (Gen 18:32)."
+                },
+                {
+                  "ref": "Jer.5.7",
+                  "note": "“How can I pardon you? Your sons have forsaken me and sworn by no-gods.”"
+                },
+                {
+                  "ref": "Deu.29.19",
+                  "role": "defining",
+                  "note": "Of the man who blesses himself in a stubborn heart: “Yahweh will not be willing to forgive him, but then the anger of Yahweh will smoke … and all the curse written in this book will rest on him, and Yahweh will blot out his name.”"
+                },
+                {
+                  "ref": "2Ki.24.4",
+                  "role": "defining",
+                  "note": "Manasseh’s innocent blood filled Jerusalem, “and Yahweh was not willing to forgive”, so Judah was removed from his sight (2Ki 24:3)."
+                },
+                {
+                  "ref": "Lam.3.42",
+                  "note": "“We have transgressed and rebelled; you have not forgiven”: the exile is the forgiveness withheld."
+                },
+                {
+                  "ref": "Jer.50.20",
+                  "note": "“The iniquity of Israel will be sought, and there will be none … for I will pardon those whom I leave as a remnant.”"
+                }
+              ]
+            },
+            {
+              "id": "hold-free",
+              "gloss": "hold free, not count against",
+              "definition": "To hold a person free of what would otherwise be charged to them: a vow left unpaid because it was lawfully annulled, or a duty of service in a foreign god’s house asked pardon for beforehand.",
+              "evidence": [
+                {
+                  "ref": "Num.30.6",
+                  "role": "defining",
+                  "note": "A daughter’s vow forbidden by her father on the day he hears it “shall not stand, and Yahweh will forgive her, because her father forbade her.”"
+                },
+                {
+                  "ref": "Num.30.9",
+                  "note": "The same of a wife whose husband annuls her vow."
+                },
+                {
+                  "ref": "Num.30.13"
+                },
+                {
+                  "ref": "2Ki.5.18",
+                  "role": "defining",
+                  "note": "Naaman: “In this thing may Yahweh pardon your servant: when my master goes into the house of Rimmon to bow down there and leans on my hand.” Elisha answers “Go in peace” (2Ki 5:19)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be forgiven",
+          "senses": [
+            {
+              "id": "be-forgiven",
+              "gloss": "it will be forgiven him",
+              "definition": "Always וְנִסְלַח לוֹ / לָהֶם, “and it will be forgiven him / them”, closing the law of an offering for sin done in error (שְׁגָגָה) or for a trespass made good: the priest makes a covering (כִּפֶּר), and then forgiveness is granted, not by the priest but to the offerer. The sin done “with a high hand” has no offering and no forgiveness (Num 15:30–31).",
+              "evidence": [
+                {
+                  "ref": "Lev.4.20",
+                  "role": "defining",
+                  "note": "The congregation’s sin offering: וְכִפֶּר עֲלֵהֶם הַכֹּהֵן וְנִסְלַח לָהֶם, “the priest shall make a covering for them, and it will be forgiven them.”"
+                },
+                {
+                  "ref": "Lev.4.26",
+                  "note": "A ruler’s sin offering."
+                },
+                {
+                  "ref": "Lev.4.31",
+                  "note": "One of the people, with a goat."
+                },
+                {
+                  "ref": "Lev.4.35",
+                  "note": "With a lamb."
+                },
+                {
+                  "ref": "Lev.5.10",
+                  "note": "The poor man’s two birds."
+                },
+                {
+                  "ref": "Lev.5.13",
+                  "note": "The poorest, with a tenth of an ephah of flour."
+                },
+                {
+                  "ref": "Lev.5.16",
+                  "note": "Sin against the holy things: he restores it with a fifth added, and the ram of the guilt offering covers him."
+                },
+                {
+                  "ref": "Lev.5.18",
+                  "role": "defining",
+                  "note": "“A covering for his error which he erred, though he did not know it, and it will be forgiven him.”"
+                },
+                {
+                  "ref": "Lev.5.26",
+                  "note": "Robbery and false oath, after restitution: “a covering before Yahweh, and it will be forgiven him for any of all the things he does.”"
+                },
+                {
+                  "ref": "Lev.19.22",
+                  "note": "The man who lies with a betrothed slave woman: the ram of the guilt offering, “and it will be forgiven him from his sin which he sinned.”"
+                },
+                {
+                  "ref": "Num.15.25",
+                  "role": "defining",
+                  "note": "“It will be forgiven them, for it was an error (שְׁגָגָה), and they have brought their offering.”"
+                },
+                {
+                  "ref": "Num.15.26"
+                },
+                {
+                  "ref": "Num.15.28",
+                  "role": "defining",
+                  "note": "“For the soul that errs, when it sins by error before Yahweh, to make a covering for him; and it will be forgiven him”, set against Num 15:30: the soul that acts with a high hand reviles Yahweh and is cut off."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀφίημι",
+          "gloss": "let go, release; forgive",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.4.20, וְנִסְלַח → ἀφεθήσεται (the same in all twelve niphal uses aligned, Lev 4–5; 19:22; Num 15:25–26); Num.14.19, סְלַח → ἄφες; Isa.55.7, לִסְלוֹחַ → ἀφήσει; ἀφίημι renders סָלַח ×14"
+            },
+            {
+              "ref": "Mrk.2.7",
+              "role": "defining",
+              "note": "The scribes: “Who can forgive (ἀφιέναι) sins but God alone?”, as סָלַח has God alone for its subject."
+            },
+            {
+              "ref": "Mat.9.6",
+              "role": "defining",
+              "note": "“That you may know that the Son of man has authority on earth to forgive sins.”"
+            },
+            {
+              "ref": "Mat.9.8",
+              "note": "The crowds “glorified God, who had given such authority to men.”"
+            },
+            {
+              "ref": "Mat.6.12",
+              "note": "“Forgive us our debts, as we also forgive our debtors.”"
+            },
+            {
+              "ref": "1Jn.1.9",
+              "note": "“Faithful and just to forgive (ἀφῇ) us our sins and to cleanse (καθαρίσῃ) us”, the pairing of Jer 33:8."
+            }
+          ]
+        },
+        {
+          "lemma": "ἵλεως",
+          "gloss": "gracious, merciful",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.14.20, סָלַחְתִּי → ἵλεως; Amo.7.2, סְלַח → ἵλεως"
+            },
+            {
+              "ref": "Heb.8.12",
+              "role": "defining",
+              "note": "Quoting Jer 31:34: “I will be merciful (ἵλεως ἔσομαι) to their unrighteousness, and their sins and lawless deeds I will remember no more.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἱλάσκομαι",
+          "gloss": "be propitious, be merciful to",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.25.11, וְסָלַחְתָּ → ἱλάσῃ; Lam.3.42, סָלָחְתָּ → ἱλάσθης; 2Ki.24.4, לִסְלֹחַ → ἱλασθῆναι; 2Ch.6.30 → ἱλάσῃ"
+            },
+            {
+              "ref": "Luk.18.13",
+              "role": "defining",
+              "note": "The tax collector: “God, be merciful (ἱλάσθητι) to me, the sinner”, the prayer of Psa 25:11 and Dan 9:19."
+            },
+            {
+              "ref": "Heb.2.17",
+              "note": "Christ a merciful high priest “to make propitiation for (ἱλάσκεσθαι) the sins of the people.”"
+            }
+          ]
+        },
+        {
+          "lemma": "καθαρίζω",
+          "gloss": "cleanse",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.30.6, יִסְלַח → καθαριεῖ; Num.30.9 the same; Num.30.13 → καθαρίσει"
+            },
+            {
+              "ref": "1Jn.1.7",
+              "note": "“The blood of Jesus his Son cleanses (καθαρίζει) us from all sin.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָשָׂא עָוֹן",
+            "note": "“Bear, lift iniquity”: Yahweh’s self-description that Moses’ prayers for forgiveness take up.",
+            "evidence": [
+              {
+                "ref": "Num.14.19",
+                "role": "defining",
+                "note": "“Forgive … as you have borne (נָשָׂאתָה) this people.”"
+              },
+              {
+                "ref": "Exo.34.7",
+                "to": "Exo.34.9"
+              }
+            ]
+          },
+          {
+            "lemma": "כִּפֶּר",
+            "note": "The priest’s covering, which the forgiveness follows.",
+            "evidence": [
+              {
+                "ref": "Lev.4.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.15.28"
+              }
+            ]
+          },
+          {
+            "lemma": "לֹא זָכַר",
+            "note": "Sin no longer remembered.",
+            "evidence": [
+              {
+                "ref": "Jer.31.34",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "טִהַר",
+            "note": "Cleanse from iniquity.",
+            "evidence": [
+              {
+                "ref": "Jer.33.8",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "רָפָא",
+            "note": "Heal: the diseases, the land.",
+            "evidence": [
+              {
+                "ref": "Psa.103.3",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.7.14"
+              }
+            ]
+          },
+          {
+            "lemma": "רִחַם",
+            "note": "Have compassion.",
+            "evidence": [
+              {
+                "ref": "Isa.55.7"
+              },
+              {
+                "ref": "Dan.9.9"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַע",
+            "note": "Hear (prayer) and forgive.",
+            "evidence": [
+              {
+                "ref": "1Ki.8.30"
+              },
+              {
+                "ref": "Dan.9.19"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׁמַר עֲוֹנוֹת",
+            "note": "To keep, mark iniquities, against which forgiveness is set.",
+            "evidence": [
+              {
+                "ref": "Psa.130.3",
+                "to": "Psa.130.4",
+                "role": "defining",
+                "note": "“If you, Yah, should mark iniquities, Lord, who could stand? But with you is the forgiveness.”"
+              }
+            ]
+          },
+          {
+            "lemma": "עָשַׁן אַף",
+            "note": "Anger smoking and the curse resting on the man Yahweh will not forgive.",
+            "evidence": [
+              {
+                "ref": "Deu.29.19",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וְנִסְלַח לוֹ",
+            "gloss": "and it will be forgiven him",
+            "evidence": [
+              {
+                "ref": "Lev.4.26"
+              },
+              {
+                "ref": "Num.15.28"
+              }
+            ]
+          },
+          {
+            "phrase": "סָלַח לַעֲוֹן",
+            "gloss": "forgive the iniquity of",
+            "evidence": [
+              {
+                "ref": "Exo.34.9"
+              },
+              {
+                "ref": "Num.14.19"
+              },
+              {
+                "ref": "Jer.31.34"
+              },
+              {
+                "ref": "Jer.36.3"
+              }
+            ]
+          },
+          {
+            "phrase": "סְלַח־נָא",
+            "gloss": "forgive, please!",
+            "evidence": [
+              {
+                "ref": "Num.14.19"
+              },
+              {
+                "ref": "Amo.7.2"
+              }
+            ]
+          },
+          {
+            "phrase": "וְשָׁמַעְתָּ וְסָלָחְתָּ",
+            "gloss": "and hear and forgive",
+            "evidence": [
+              {
+                "ref": "1Ki.8.30"
+              },
+              {
+                "ref": "2Ch.6.21"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא אָבָה יַהְוֶה סְלֹחַ",
+            "gloss": "Yahweh was not willing to forgive",
+            "evidence": [
+              {
+                "ref": "Deu.29.19"
+              },
+              {
+                "ref": "2Ki.24.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "סְלִיחָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "forgiveness",
+      "bdb": [
+        "o.bn.ac"
+      ],
+      "cognate_ids": [
+        "arc-selach"
+      ],
+      "summary": "Three late uses, each of forgiveness as something that is with God or belongs to him.",
+      "senses": [
+        {
+          "id": "forgiveness",
+          "gloss": "forgiveness",
+          "definition": "Forgiveness as God’s own, which he holds and gives; in the plural, his many acts of forgiving.",
+          "evidence": [
+            {
+              "ref": "Psa.130.4",
+              "role": "defining",
+              "note": "כִּי־עִמְּךָ הַסְּלִיחָה לְמַעַן תִּוָּרֵא: “with you is the forgiveness, that you may be feared”, answering “if you should mark iniquities, who could stand?” (Psa 130:3)."
+            },
+            {
+              "ref": "Dan.9.9",
+              "role": "defining",
+              "note": "“To the Lord our God belong the compassions and the forgivenesses (הַסְּלִחוֹת), for we have rebelled against him.”"
+            },
+            {
+              "ref": "Neh.9.17",
+              "role": "defining",
+              "note": "אֱלוֹהַּ סְלִיחוֹת: “a God of forgivenesses, gracious and compassionate, long of nostrils and great in חֶסֶד”, the words of Exo 34:6 with forgiveness put first."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἱλασμός",
+          "gloss": "propitiation",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.130.4, הַסְּלִיחָה → ἱλασμός"
+            },
+            {
+              "ref": "1Jn.2.2",
+              "role": "defining",
+              "note": "“He is the propitiation (ἱλασμός) for our sins.”"
+            },
+            {
+              "ref": "1Jn.4.10",
+              "note": "God “loved us and sent his Son to be the propitiation for our sins.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἔλεος",
+          "gloss": "mercy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.9.9, וְהַסְּלִחוֹת → ἔλεος"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סַלָּח",
+      "pos": "adjective",
+      "gloss": "ready to forgive, forgiving",
+      "bdb": [
+        "o.bn.ab"
+      ],
+      "cognate_ids": [
+        "arc-selach"
+      ],
+      "summary": "One use, of Yahweh. The form (doubled middle letter) names a trait, one who forgives as his way. The one verse fixes it well, beside good and great in חֶסֶד.",
+      "senses": [
+        {
+          "id": "forgiving",
+          "gloss": "forgiving, ready to forgive (of God)",
+          "definition": "Of Yahweh: one who forgives by his nature, set beside his goodness and his great חֶסֶד to all who call on him.",
+          "evidence": [
+            {
+              "ref": "Psa.86.5",
+              "role": "defining",
+              "note": "כִּי־אַתָּה אֲדֹנָי טוֹב וְסַלָּח וְרַב־חֶסֶד לְכָל־קֹרְאֶיךָ: “for you, Lord, are good and forgiving, and great in חֶסֶד to all who call on you.”"
+            },
+            {
+              "ref": "Psa.86.15",
+              "note": "The same psalm quotes Exo 34:6: “a God compassionate and gracious, long of nostrils and great in חֶסֶד and truth.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπιεικής",
+          "gloss": "gentle, forbearing",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.86.5, וְסַלָּח → ἐπιεικὴς"
+            },
+            {
+              "ref": "Php.4.5",
+              "note": "“Let your forbearance (τὸ ἐπιεικές) be known to all men.”"
+            },
+            {
+              "ref": "Jas.3.17",
+              "note": "The wisdom from above is “pure, then peaceable, ἐπιεικής.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-selach",
+      "lang": "arc",
+      "form": "סְלַח",
+      "translit": "sǝlaḥ",
+      "gloss": "forgive (Jewish Aramaic, Targums); pael the same, and “effect forgiveness”",
+      "relation": "cognate",
+      "note": "The Targums use it where the Hebrew has נָשָׂא עָוֹן, Exo 34:7, and סָלַח, Isa 55:7; in Onkelos Num 18:1 the pael is the priests’ effecting forgiveness. Later Hebrew keeps סָלַח and סְלִיחָה “forgive, forgiveness” in the same sense. Only a forgiveness sense is attested in Aramaic, and it may be borrowed from the Hebrew of scripture.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סְלַח (ch.)",
+          "note": "“Targ. Ex. XXXIV, 7 … Pa. same. Targ. Is. LV, 7. … to effect forgiveness. Targ. O. Num. XVIII, 1.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סָלַח (b. h.)",
+          "note": "“to forgive. Y. Yoma VIII, end … Nif. to be forgiven.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-salahu",
+      "lang": "akk",
+      "form": "salāḫu",
+      "translit": "salāḫu",
+      "gloss": "sprinkle (with)",
+      "relation": "possible",
+      "note": "Proposed because forgiveness under the law followed the sprinkling of blood (Lev 4:6, 17; 5:9); later Hebrew uses סְלִיחָה once for “sprinkling” of the guilt offering’s blood (Ker. 24b on Lev 5:18). Scripture’s own use never shows a sense “sprinkle”, so the link is not shown, and no cognate_ids name it.",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000016430, salāḫu [sprinkle (with)] V",
+          "url": "https://oracc.museum.upenn.edu/cmawro/cbd/akk/x000016430.html",
+          "note": "Forms tasallaḫ, asallaḫ, asluḫ, in medical texts."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סְלִיחָה, 1)",
+          "note": "“sprinkling. Ker. 24b (ref. to Lev. V, 18) … at the time of the sprinkling.”"
+        }
+      ]
+    },
+    {
+      "id": "phn-mslh",
+      "lang": "phn",
+      "form": "𐤌𐤎𐤋𐤇",
+      "translit": "MSLḤ",
+      "gloss": "personal name, perhaps “Forgiving” or “Forgiven”",
+      "relation": "possible",
+      "note": "A Punic personal name, attested once; Krahmalkov queries the meaning. If it is formed from slḥ “forgive”, Phoenician knew the root in the same sense, but a name alone does not fix it.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 297, MSLḤ",
+          "note": "“p.n. MSLḤ (?“Forgiving”, “Forgiven”) Benz 142 (Pu). 1x.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "forgiveness-belongs-to-god",
+      "statement": "In every use of סָלַח the one who forgives is God: Moses, Solomon, Amos and Daniel ask it of Yahweh, and he grants or withholds it (Exo 34:9; Num 14:19–20; 1Ki 8:30; Amo 7:2; Dan 9:19). Even in the law of the offerings the priest only makes the covering; the forgiving is not his act: “and it will be forgiven him” (Lev 4:20, 26). Forgiveness is “with” Yahweh and belongs to him (Psa 130:4; Dan 9:9). So the scribes rightly asked “who can forgive sins but God alone?” (Mrk 2:7); Jesus answered that “the Son of man has authority on earth to forgive sins”, and the crowds “glorified God, who had given such authority to men” (Mat 9:6–8). From the verses: the Son forgives by the authority his Father gave him, and forgiveness remains God’s own.",
+      "evidence": [
+        {
+          "ref": "Exo.34.9"
+        },
+        {
+          "ref": "Num.14.19",
+          "to": "Num.14.20"
+        },
+        {
+          "ref": "1Ki.8.30"
+        },
+        {
+          "ref": "Amo.7.2"
+        },
+        {
+          "ref": "Dan.9.19"
+        },
+        {
+          "ref": "Lev.4.20"
+        },
+        {
+          "ref": "Lev.4.26"
+        },
+        {
+          "ref": "Psa.130.4"
+        },
+        {
+          "ref": "Dan.9.9"
+        },
+        {
+          "ref": "Mrk.2.7"
+        },
+        {
+          "ref": "Mat.9.6",
+          "to": "Mat.9.8"
+        }
+      ]
+    },
+    {
+      "topic": "covering-and-forgiveness",
+      "statement": "The offerings of Lev 4–5 end the same way: the priest makes a covering for the sinner with the offering’s blood, “and it will be forgiven him” (Lev 4:20, 26, 31, 35; 5:10, 18). This is for sin done in error, unknowingly; the soul that sins “with a high hand” reviles Yahweh and is cut off, with no offering named (Num 15:25–31). Forgiveness under the law came by way of blood, as Hebrews says: “almost all things are by the law purged with blood, and without shedding of blood is no remission (ἄφεσις)” (Heb 9:22). Yet “it is not possible that the blood of bulls and goats should take away sins” (Heb 10:4); the new covenant’s promise “I will forgive their iniquity” (Jer 31:34) is fulfilled in Christ, and “where remission of these is, there is no more offering for sin” (Heb 10:17–18). From the verses: the law’s forgiveness was real but pointed beyond its animals to the one offering through which forgiveness is now preached (Act 13:38).",
+      "evidence": [
+        {
+          "ref": "Lev.4.20"
+        },
+        {
+          "ref": "Lev.4.35"
+        },
+        {
+          "ref": "Lev.5.18"
+        },
+        {
+          "ref": "Num.15.25",
+          "to": "Num.15.31"
+        },
+        {
+          "ref": "Heb.9.22"
+        },
+        {
+          "ref": "Heb.10.4"
+        },
+        {
+          "ref": "Jer.31.34"
+        },
+        {
+          "ref": "Heb.10.17",
+          "to": "Heb.10.18"
+        },
+        {
+          "ref": "Act.13.38"
+        }
+      ]
+    },
+    {
+      "topic": "repentance",
+      "statement": "Yahweh’s forgiveness is promised to those who turn: “let the wicked forsake his way … and return to Yahweh … for he will abundantly forgive” (Isa 55:7); “if my people … turn from their evil ways, I will … forgive their sin” (2Ch 7:14); “that they may return each from his evil way, and I will forgive” (Jer 36:3); and Solomon asks it for a people who “return to you with all their heart” (1Ki 8:47–50). Where there is no turning he is “not willing to forgive”: the man who blesses himself in his stubborn heart (Deu 29:18–19), and Jerusalem filled with Manasseh’s innocent blood (2Ki 24:4; Jer 5:1, 7; Lam 3:42). From the verses: forgiveness is not owed and is not given to the unrepentant; it is given freely to those who forsake their way and seek him, and the forgiven are to forgive as they ask to be forgiven (Mat 6:12, 14–15).",
+      "evidence": [
+        {
+          "ref": "Isa.55.7"
+        },
+        {
+          "ref": "2Ch.7.14"
+        },
+        {
+          "ref": "Jer.36.3"
+        },
+        {
+          "ref": "1Ki.8.47",
+          "to": "1Ki.8.50"
+        },
+        {
+          "ref": "Deu.29.18",
+          "to": "Deu.29.19"
+        },
+        {
+          "ref": "2Ki.24.4"
+        },
+        {
+          "ref": "Jer.5.1"
+        },
+        {
+          "ref": "Jer.5.7"
+        },
+        {
+          "ref": "Lam.3.42"
+        },
+        {
+          "ref": "Mat.6.12"
+        },
+        {
+          "ref": "Mat.6.14",
+          "to": "Mat.6.15"
+        }
+      ]
+    },
+    {
+      "topic": "character-of-god",
+      "statement": "Forgiving belongs to Yahweh’s character as he proclaimed it: “bearing iniquity and transgression and sin” (Exo 34:6–7), on which Moses at once asks “forgive our iniquity” (Exo 34:9) and again “according to the greatness of your חֶסֶד” (Num 14:18–19). Nehemiah repeats the proclamation with forgiveness put first, “a God of forgivenesses” (Neh 9:17), and the psalmist calls him “good and ready to forgive” (Psa 86:5, 15). The reason given is “that you may be feared” (Psa 130:4) and “for your name’s sake” (Psa 25:11; Dan 9:19). From the verses: God forgives because of who he is, not because of the sinner’s worth, and forgiveness leads to fearing him, not to presuming on him.",
+      "evidence": [
+        {
+          "ref": "Exo.34.6",
+          "to": "Exo.34.9"
+        },
+        {
+          "ref": "Num.14.18",
+          "to": "Num.14.19"
+        },
+        {
+          "ref": "Neh.9.17"
+        },
+        {
+          "ref": "Psa.86.5"
+        },
+        {
+          "ref": "Psa.86.15"
+        },
+        {
+          "ref": "Psa.130.4"
+        },
+        {
+          "ref": "Psa.25.11"
+        },
+        {
+          "ref": "Dan.9.19"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13; prompted by a task for Num 10, but Numbers 10 has no word of this root: its two hits (Num 10:29, 32 וְהֵטַבְנוּ לָךְ) are the surface לָךְ “to you”, which the database links to BDB key o.bn.aa, so that key counts 317 tokens of לָךְ (the brief’s “(no stem)” group) besides the verb’s 46. A data fault to report; lexicon-support’s count for סָלַח is inflated by it. The verb’s real uses: qal 33, niphal 13. LEFT OUT: סַלְכָה Salecah (o.bn.ad), a town on Bashan’s eastern border (Deu 3:10; Jos 12:5; 13:11; 1Ch 5:11): a place, not a person, so no name entry; its link to this root is unknown. No Peshitta word: the Peshitta forgives with ܫܒܩ, and SEDRA’s SLX is slq “go up” (S = semkath, X = qoph). No Arabic cognate: Arabic سلح is “void excrement; arm”, سلخ “strip, flay” (Lane pp. 1402–1404); neither shares the sense and neither is recorded. No Sabaic: Biella’s SLḤ is ṣlḥ “make successful, peace” (Arabic ṣulḥ), another root. Not found locally: an Ugaritic slḥ “forgive” sometimes claimed (Segert’s glossary and Fisher have none; DULAT not consulted); CAD for salāḫu not consulted. Krahmalkov p. 297 is from the text extraction only (page unverified); MSLḤ there falls in the samekh order (between MSKT and MSNSN, apart from the shin entry MŠLḤ later in the M section). The Akkadian “sprinkle” is a possible etymology only and names no word; it is named on no word, since it does not share the meaning; MSLḤ is named on the verb as possible. Greek: Heb 8:12 quotes the Septuagint of Jer 31:34 (Jer 38:34 LXX, ἵλεως ἔσομαι), which MACULA does not align for that verse; the alignment cited is Num 14:20 and Amo 7:2. Psa 86:15 quotes Exo 34:6 and is cited for the adjective’s context."
+}
