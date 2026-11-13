@@ -1,0 +1,1528 @@
+{
+  "id": "qatsar",
+  "root": "קצר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "agriculture",
+    "harvest",
+    "feasts",
+    "time",
+    "power",
+    "patience",
+    "judgment",
+    "mortality"
+  ],
+  "gloss": "reap, harvest; be short, cut short",
+  "summary": "One spelling with two uses. קָצַר is to reap: to cut the standing grain, and קָצִיר is what is reaped, the work of reaping and its season, from the barley harvest of the עֹמֶר to the wheat harvest of Weeks (Lev 23:10, 22). קָצֵר is to be short: of a bed, of a man's days, and above all of a hand that lacks the power to save (“Is Yahweh's hand short?”, Num 11:23) and of a soul or spirit that runs out of patience or strength (Num 21:4; Exo 6:9). Arabic qaṣura and Ugaritic qṣr show “short” with the same ṣ, and Phoenician qṣr is the time of harvest; whether reaping is the cutting short of the stalk is not shown by the evidence.",
+  "words": [
+    {
+      "lemma": "קָצִיר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "harvest: reaping, the crop reaped, harvest time",
+      "bdb": [
+        "s.cx.ab"
+      ],
+      "cognate_ids": [
+        "phn-qsr"
+      ],
+      "summary": "What קָצַר does and what it yields: the work of reaping, the grain cut, and the season of it, which in Israel ran from barley in the spring to wheat at Weeks. It is the frame of the feasts of Lev 23 and a figure of judgment when a people is ripe.",
+      "senses": [
+        {
+          "id": "harvest-crop",
+          "gloss": "harvest, the crop reaped",
+          "definition": "The grain (or fruit) that is cut and gathered from a field: what a man reaps and eats, and what the poor glean.",
+          "kin": [
+            "reap-grain"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.23.10",
+              "role": "defining",
+              "note": "“When you come into the land … and reap (וּקְצַרְתֶּם) its קָצִיר, you shall bring the עֹמֶר of the first of your קָצִיר to the priest.”"
+            },
+            {
+              "ref": "Lev.23.22",
+              "role": "defining",
+              "note": "“When you reap the קְצִיר of your land … the gleaning of your קָצִיר you shall not gather; leave them for the poor and the sojourner.”"
+            },
+            {
+              "ref": "Lev.19.9"
+            },
+            {
+              "ref": "Deu.24.19",
+              "note": "A sheaf forgotten in reaping your קָצִיר is left for the sojourner, the fatherless and the widow."
+            },
+            {
+              "ref": "Lev.25.5",
+              "note": "In the sabbath year, “the aftergrowth of your קָצִיר you shall not reap”."
+            },
+            {
+              "ref": "1Sa.8.12",
+              "note": "The king will take sons “to reap his קָצִיר”."
+            },
+            {
+              "ref": "Job.5.5",
+              "role": "defining",
+              "note": "“Whose קָצִיר the hungry eat up.”"
+            },
+            {
+              "ref": "Jer.5.17",
+              "note": "The invader “shall eat up your קָצִיר and your bread”."
+            },
+            {
+              "ref": "Jol.1.11",
+              "note": "“For the wheat and the barley, for the קְצִיר of the field has perished.”"
+            },
+            {
+              "ref": "Isa.16.9",
+              "note": "Set beside קַיִץ, the summer fruit of Moab."
+            },
+            {
+              "ref": "Isa.17.11",
+              "note": "“The קָצִיר is a heap in the day of sickness.”"
+            },
+            {
+              "ref": "Isa.23.3",
+              "note": "“The קְצִיר of the Nile was her revenue.”"
+            }
+          ]
+        },
+        {
+          "id": "harvest-work",
+          "gloss": "reaping, the work of harvest",
+          "definition": "The labour of cutting the crop, named with plowing as the farmer's work of the year.",
+          "kin": [
+            "reap-grain"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.45.6",
+              "role": "defining",
+              "note": "Five more years “in which there will be neither plowing nor קָצִיר”."
+            },
+            {
+              "ref": "Exo.34.21",
+              "role": "defining",
+              "note": "“In plowing time and in קָצִיר you shall rest”: the sabbath holds even in the busiest work."
+            },
+            {
+              "ref": "Jer.50.16",
+              "note": "“Cut off … him that handles the sickle in the time of קָצִיר.”"
+            }
+          ]
+        },
+        {
+          "id": "harvest-season",
+          "gloss": "harvest time, the season",
+          "definition": "The weeks of the year when the grain is cut, used to date events and set against summer, winter and the rains; Yahweh keeps its appointed weeks.",
+          "evidence": [
+            {
+              "ref": "Gen.8.22",
+              "role": "defining",
+              "note": "“While the earth remains, seedtime and קָצִיר, cold and heat, summer and winter … shall not cease.”"
+            },
+            {
+              "ref": "Jer.5.24",
+              "role": "defining",
+              "note": "Yahweh gives the early and latter rain in its season and “keeps for us the appointed weeks of the קָצִיר”."
+            },
+            {
+              "ref": "Rut.1.22",
+              "role": "defining",
+              "note": "Naomi and Ruth come to Bethlehem “at the beginning of the barley קָצִיר”."
+            },
+            {
+              "ref": "Rut.2.23",
+              "note": "Ruth gleans “until the end of the barley קָצִיר and the wheat קָצִיר”."
+            },
+            {
+              "ref": "Rut.2.21"
+            },
+            {
+              "ref": "Gen.30.14",
+              "note": "“In the days of the wheat קָצִיר.”"
+            },
+            {
+              "ref": "Exo.23.16",
+              "note": "The feast of the קָצִיר, the firstfruits of your labours."
+            },
+            {
+              "ref": "Exo.34.22",
+              "note": "The feast of weeks, “the firstfruits of the wheat קָצִיר”."
+            },
+            {
+              "ref": "Jos.3.15",
+              "note": "Jordan overflows its banks “all the days of קָצִיר”."
+            },
+            {
+              "ref": "Jdg.15.1"
+            },
+            {
+              "ref": "1Sa.6.13",
+              "note": "Beth-shemesh reaping the wheat קָצִיר when the ark returns."
+            },
+            {
+              "ref": "1Sa.12.17",
+              "note": "Thunder and rain in the wheat קָצִיר, out of season, as a sign."
+            },
+            {
+              "ref": "2Sa.21.9",
+              "to": "2Sa.21.10",
+              "note": "Saul's sons hanged “in the first days of קָצִיר, at the beginning of the barley קָצִיר”."
+            },
+            {
+              "ref": "2Sa.23.13"
+            },
+            {
+              "ref": "Amo.4.7",
+              "note": "Rain withheld “three months before the קָצִיר”."
+            },
+            {
+              "ref": "Pro.6.8",
+              "note": "The ant gathers her food “in the קָצִיר”, parallel to קַיִץ, summer."
+            },
+            {
+              "ref": "Pro.10.5",
+              "note": "He who gathers in summer is wise; he who sleeps in קָצִיר brings shame."
+            },
+            {
+              "ref": "Pro.20.4"
+            },
+            {
+              "ref": "Pro.25.13",
+              "note": "“As the cold of snow in the day of קָצִיר.”"
+            },
+            {
+              "ref": "Pro.26.1",
+              "note": "“As snow in summer and rain in קָצִיר, so honour is not fitting for a fool.”"
+            },
+            {
+              "ref": "Isa.9.2",
+              "note": "Joy before Yahweh “as the joy in קָצִיר”."
+            },
+            {
+              "ref": "Isa.18.4"
+            },
+            {
+              "ref": "Jer.8.20",
+              "role": "defining",
+              "note": "“The קָצִיר is past, the summer is ended, and we are not saved.”"
+            }
+          ]
+        },
+        {
+          "id": "harvest-judgment",
+          "gloss": "harvest (of judgment)",
+          "definition": "A people ripe for judgment pictured as grain or grapes ready to be cut: Yahweh's time to cut them down.",
+          "evidence": [
+            {
+              "ref": "Jol.4.13",
+              "role": "defining",
+              "note": "“Put in the sickle, for the קָצִיר is ripe; come, tread, for the winepress is full … for their wickedness is great.”"
+            },
+            {
+              "ref": "Jer.51.33",
+              "role": "defining",
+              "note": "“Daughter Babylon is like a threshing floor … yet a little while, and the time of her קָצִיר will come.”"
+            },
+            {
+              "ref": "Hos.6.11",
+              "note": "“For you also, Judah, a קָצִיר is appointed, when I return the captivity of my people.”"
+            },
+            {
+              "ref": "Isa.18.5",
+              "note": "Before the קָצִיר, when the bud is ripening, the shoots are cut off with pruning knives."
+            },
+            {
+              "ref": "Isa.17.5",
+              "note": "Israel's glory thinned “as when the reaper gathers the standing grain”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θερισμός",
+          "gloss": "harvest",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "קָצִיר → θερισμός ×25 (MACULA alignment); Lev.23.10 קְצִירָהּ … קְצִירְכֶם → θερισμόν … θερισμοῦ; Jol.4.13 is rendered τρύγητος, vintage"
+            },
+            {
+              "ref": "Mat.9.37",
+              "to": "Mat.9.38",
+              "note": "“The θερισμός is plentiful but the labourers are few; pray the Lord of the θερισμός.”"
+            },
+            {
+              "ref": "Mat.13.30",
+              "note": "“Let both grow together until the θερισμός.”"
+            },
+            {
+              "ref": "Mat.13.39",
+              "note": "“The θερισμός is the end of the age, and the reapers are angels.”"
+            },
+            {
+              "ref": "Mrk.4.29"
+            },
+            {
+              "ref": "Jhn.4.35",
+              "note": "“Lift up your eyes … the fields are white already to θερισμός.”"
+            },
+            {
+              "ref": "Rev.14.15",
+              "note": "“Thrust in your sickle and reap … for the θερισμός of the earth is ripe”, taking up Joel 4:13."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קַיִץ",
+            "note": "Summer, the season and its fruit, beside harvest.",
+            "evidence": [
+              {
+                "ref": "Jer.8.20"
+              },
+              {
+                "ref": "Pro.6.8"
+              },
+              {
+                "ref": "Pro.10.5"
+              },
+              {
+                "ref": "Isa.16.9"
+              }
+            ]
+          },
+          {
+            "lemma": "חָרִישׁ",
+            "note": "Plowing, the work of the year before harvest.",
+            "evidence": [
+              {
+                "ref": "Gen.45.6"
+              },
+              {
+                "ref": "Exo.34.21"
+              }
+            ]
+          },
+          {
+            "lemma": "זֶרַע",
+            "note": "Seedtime, the beginning that harvest ends.",
+            "evidence": [
+              {
+                "ref": "Gen.8.22"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "קָצַר קָצִיר",
+            "gloss": "reap a harvest",
+            "evidence": [
+              {
+                "ref": "Lev.23.10"
+              },
+              {
+                "ref": "Lev.23.22"
+              },
+              {
+                "ref": "Lev.19.9"
+              },
+              {
+                "ref": "Deu.24.19"
+              },
+              {
+                "ref": "1Sa.6.13"
+              },
+              {
+                "ref": "1Sa.8.12"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹמֶר רֵאשִׁית קְצִירְכֶם",
+            "gloss": "the sheaf of the first of your harvest",
+            "evidence": [
+              {
+                "ref": "Lev.23.10"
+              }
+            ]
+          },
+          {
+            "phrase": "קְצִיר חִטִּים",
+            "gloss": "wheat harvest",
+            "evidence": [
+              {
+                "ref": "Gen.30.14"
+              },
+              {
+                "ref": "Exo.34.22"
+              },
+              {
+                "ref": "Jdg.15.1"
+              },
+              {
+                "ref": "1Sa.6.13"
+              },
+              {
+                "ref": "1Sa.12.17"
+              },
+              {
+                "ref": "Rut.2.23"
+              }
+            ]
+          },
+          {
+            "phrase": "קְצִיר שְׂעֹרִים",
+            "gloss": "barley harvest",
+            "evidence": [
+              {
+                "ref": "Rut.1.22"
+              },
+              {
+                "ref": "Rut.2.23"
+              },
+              {
+                "ref": "2Sa.21.9"
+              }
+            ]
+          },
+          {
+            "phrase": "חַג הַקָּצִיר",
+            "gloss": "the feast of harvest",
+            "evidence": [
+              {
+                "ref": "Exo.23.16"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵת קָצִיר",
+            "gloss": "time of harvest",
+            "evidence": [
+              {
+                "ref": "Jer.50.16"
+              },
+              {
+                "ref": "Jer.51.33"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָצַר",
+      "pos": "verb",
+      "gloss": "reap, harvest",
+      "bdb": [
+        "s.cx.aa"
+      ],
+      "cognate_ids": [
+        "phn-qsr",
+        "ar-qasara-clip"
+      ],
+      "summary": "To cut standing grain with the sickle and gather it; the active participle קֹצֵר is the reaper. Because what is reaped follows what is sown, the verb carries the prophets' and wisdom's teaching that a man reaps what he sows.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "reap; (participle) reaper",
+          "senses": [
+            {
+              "id": "reap-grain",
+              "gloss": "reap, cut the grain",
+              "definition": "To cut the ripe grain of a field and gather it in sheaves, the work done at harvest.",
+              "kin": [
+                "harvest-crop",
+                "harvest-work"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.23.10",
+                  "role": "defining",
+                  "note": "“When you … reap its harvest, you shall bring the עֹמֶר of the first of your harvest.”"
+                },
+                {
+                  "ref": "Lev.23.22",
+                  "role": "defining",
+                  "note": "“You shall not wholly reap the corner of your field.”"
+                },
+                {
+                  "ref": "Lev.19.9",
+                  "note": "The same law, given first among the laws of holiness."
+                },
+                {
+                  "ref": "Deu.24.19",
+                  "role": "defining",
+                  "note": "Reaping in the field and forgetting a sheaf."
+                },
+                {
+                  "ref": "Lev.25.5",
+                  "note": "In the sabbath year what grows of itself is not reaped."
+                },
+                {
+                  "ref": "Lev.25.11",
+                  "note": "Nor in the jubilee: “you shall not sow, nor reap.”"
+                },
+                {
+                  "ref": "1Sa.6.13"
+                },
+                {
+                  "ref": "1Sa.8.12"
+                },
+                {
+                  "ref": "2Ki.19.29",
+                  "note": "The sign to Hezekiah: “in the third year sow and reap, plant vineyards and eat their fruit.”"
+                },
+                {
+                  "ref": "Isa.37.30"
+                },
+                {
+                  "ref": "Isa.17.5",
+                  "note": "“As when the reaper gathers the standing grain, and his arm reaps the ears.”"
+                },
+                {
+                  "ref": "Ecc.11.4",
+                  "note": "“He who looks at the clouds will not reap.”"
+                },
+                {
+                  "ref": "Job.24.6",
+                  "note": "The poor reap in a field not theirs (written יַקְצִירוּ, read יִקְצוֹרוּ; not keyed in the database)."
+                }
+              ],
+              "senses": [
+                {
+                  "gloss": "reaper (participle)",
+                  "definition": "The one who cuts the grain, working in a field with others behind whom gleaners follow and sheaves are bound.",
+                  "evidence": [
+                    {
+                      "ref": "Rut.2.3",
+                      "role": "defining",
+                      "note": "Ruth “gleaned in the field after the reapers (הַקֹּצְרִים)”."
+                    },
+                    {
+                      "ref": "Rut.2.4",
+                      "note": "Boaz greets the reapers: “Yahweh be with you.”"
+                    },
+                    {
+                      "ref": "Rut.2.5"
+                    },
+                    {
+                      "ref": "Rut.2.6"
+                    },
+                    {
+                      "ref": "Rut.2.7",
+                      "note": "“Let me glean and gather among the sheaves after the reapers.”"
+                    },
+                    {
+                      "ref": "Rut.2.9"
+                    },
+                    {
+                      "ref": "Rut.2.14",
+                      "note": "She sat beside the reapers."
+                    },
+                    {
+                      "ref": "2Ki.4.18",
+                      "note": "The Shunammite's son goes out to his father to the reapers."
+                    },
+                    {
+                      "ref": "Psa.129.7",
+                      "note": "Grass on the housetops, “with which the reaper does not fill his hand, nor the binder of sheaves his bosom”."
+                    },
+                    {
+                      "ref": "Jer.9.21",
+                      "note": "Corpses fall “as the handful after the reaper, and none gathers them”."
+                    },
+                    {
+                      "ref": "Amo.9.13",
+                      "role": "defining",
+                      "note": "“The plowman shall overtake the reaper”: harvest so great it runs into the next plowing."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "reap-sown",
+              "gloss": "reap what one has sown (figurative)",
+              "definition": "To receive the outcome of one's deeds, as a reaper takes up the crop of what was sown: righteousness yields mercy, iniquity yields trouble; and as a curse, to sow and not reap.",
+              "evidence": [
+                {
+                  "ref": "Job.4.8",
+                  "role": "defining",
+                  "note": "“Those who plow iniquity and sow trouble reap it.”"
+                },
+                {
+                  "ref": "Pro.22.8",
+                  "role": "defining",
+                  "note": "“He who sows iniquity will reap trouble” (יִקְצָר; not keyed in the database)."
+                },
+                {
+                  "ref": "Hos.8.7",
+                  "role": "defining",
+                  "note": "“They sow the wind, and they shall reap the whirlwind.”"
+                },
+                {
+                  "ref": "Hos.10.12",
+                  "role": "defining",
+                  "note": "“Sow for yourselves in righteousness; reap according to חֶסֶד … it is time to seek Yahweh.”"
+                },
+                {
+                  "ref": "Hos.10.13",
+                  "note": "“You have plowed wickedness, you have reaped iniquity.”"
+                },
+                {
+                  "ref": "Psa.126.5",
+                  "role": "defining",
+                  "note": "“Those who sow in tears shall reap in joy.”"
+                },
+                {
+                  "ref": "Jer.12.13",
+                  "note": "“They have sown wheat and reaped thorns.”"
+                },
+                {
+                  "ref": "Mic.6.15",
+                  "note": "The curse: “you shall sow but not reap.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θερίζω",
+          "gloss": "reap",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "קָצַר → θερίζω (about 14 tokens across its forms, MACULA alignment); Lev.23.10 וּקְצַרְתֶּם → θερίζητε"
+            },
+            {
+              "ref": "Gal.6.7",
+              "to": "Gal.6.9",
+              "note": "“Whatever a man sows, that he will also θερίσει.”"
+            },
+            {
+              "ref": "2Co.9.6",
+              "note": "“He who sows sparingly will also θερίσει sparingly.”"
+            },
+            {
+              "ref": "Jhn.4.36",
+              "to": "Jhn.4.38",
+              "note": "“One sows and another reaps”; the disciples sent to reap what others laboured over."
+            },
+            {
+              "ref": "Mat.6.26",
+              "note": "The birds neither sow nor θερίζουσιν."
+            },
+            {
+              "ref": "Mat.25.24",
+              "note": "“Reaping where you did not sow.”"
+            },
+            {
+              "ref": "Luk.19.21",
+              "to": "Luk.19.22"
+            },
+            {
+              "ref": "1Co.9.11"
+            },
+            {
+              "ref": "Jas.5.4",
+              "note": "The cries of those who reaped (θερισάντων) have entered the ears of the Lord of Sabaoth."
+            },
+            {
+              "ref": "Rev.14.15",
+              "to": "Rev.14.16",
+              "note": "The one like a son of man thrusts in his sickle and the earth is reaped."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀμάω",
+          "gloss": "mow, reap",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "קָצַר → ἀμάω ×5 (Lev.25.11; Deu.24.19; Isa.17.5; Isa.37.30; Mic.6.15)"
+            },
+            {
+              "ref": "Jas.5.4",
+              "note": "The labourers “who mowed (ἀμησάντων) your fields”, defrauded of their wages."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "זָרַע",
+            "note": "Sow, the act whose outcome reaping takes up; the two are set together as cause and outcome.",
+            "evidence": [
+              {
+                "ref": "Hos.8.7"
+              },
+              {
+                "ref": "Hos.10.12"
+              },
+              {
+                "ref": "Psa.126.5"
+              },
+              {
+                "ref": "Job.4.8"
+              },
+              {
+                "ref": "Pro.22.8"
+              },
+              {
+                "ref": "Ecc.11.4"
+              },
+              {
+                "ref": "Mic.6.15"
+              },
+              {
+                "ref": "Jer.12.13"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "לָקַט",
+            "note": "Glean, what the poor do after the reapers.",
+            "evidence": [
+              {
+                "ref": "Lev.23.22"
+              },
+              {
+                "ref": "Rut.2.3"
+              }
+            ]
+          },
+          {
+            "lemma": "חָרַשׁ",
+            "note": "Plow, the work before reaping.",
+            "evidence": [
+              {
+                "ref": "Job.4.8"
+              },
+              {
+                "ref": "Hos.10.13"
+              },
+              {
+                "ref": "Amo.9.13"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "זָרַע וְקָצַר",
+            "gloss": "sow and reap",
+            "evidence": [
+              {
+                "ref": "2Ki.19.29"
+              },
+              {
+                "ref": "Isa.37.30"
+              },
+              {
+                "ref": "Lev.25.11"
+              },
+              {
+                "ref": "Psa.126.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָצֵר",
+      "pos": "verb",
+      "gloss": "be short; shorten",
+      "bdb": [
+        "s.cw.aa"
+      ],
+      "cognate_ids": [
+        "ar-qasura",
+        "uga-qsr",
+        "arc-qetsar"
+      ],
+      "summary": "To be short, or too short: of a thing's length, of a life's days, of a hand that cannot reach to save, and of a soul or spirit that cannot hold out. Its Arabic cognate has the same idiom “his hand was short”, little power, and the Ugaritic “short of soul” is the wretched, set beside the widow.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be short, too short",
+          "senses": [
+            {
+              "id": "short-hand",
+              "gloss": "(of a hand) be short, lack power",
+              "definition": "A hand too short to reach what it would take hold of: power that falls short of saving. Scripture asks it only of Yahweh's hand, and answers no.",
+              "kin": [
+                "short-of-hand"
+              ],
+              "evidence": [
+                {
+                  "ref": "Num.11.23",
+                  "role": "defining",
+                  "note": "“Is Yahweh's hand short (תִּקְצָר)? Now you shall see whether my word comes to pass.”"
+                },
+                {
+                  "ref": "Isa.50.2",
+                  "role": "defining",
+                  "note": "“Is my hand short, short (קָצוֹר קָצְרָה), that it cannot redeem? Or have I no power to deliver?”"
+                },
+                {
+                  "ref": "Isa.59.1",
+                  "role": "defining",
+                  "note": "“Yahweh's hand is not short, that it cannot save; nor his ear heavy, that it cannot hear”; the next verse names what separates: your iniquities."
+                }
+              ]
+            },
+            {
+              "id": "short-soul",
+              "gloss": "(of soul or spirit) be short: impatient, worn out, grieved",
+              "definition": "With נֶפֶשׁ or רוּחַ as subject, to come to the end of one's endurance: wearied by a long road or by pressing, grieved by another's misery, out of patience with someone.",
+              "kin": [
+                "short-tempered",
+                "shortness-of-spirit"
+              ],
+              "evidence": [
+                {
+                  "ref": "Num.21.4",
+                  "role": "defining",
+                  "note": "Going round Edom, “the soul of the people was short because of the way”, and they spoke against God and Moses."
+                },
+                {
+                  "ref": "Jdg.16.16",
+                  "role": "defining",
+                  "note": "Delilah pressed him daily, “and his soul was short to death”."
+                },
+                {
+                  "ref": "Jdg.10.16",
+                  "role": "defining",
+                  "note": "When Israel put away the foreign gods, “his soul was short with the misery (עָמָל) of Israel”."
+                },
+                {
+                  "ref": "Zec.11.8",
+                  "note": "“My soul was short with them, and their soul also loathed me.”"
+                },
+                {
+                  "ref": "Job.21.4",
+                  "note": "“Why should my spirit not be short?”"
+                },
+                {
+                  "ref": "Mic.2.7",
+                  "note": "“Is the spirit of Yahweh short? Are these his doings?”: the house of Jacob blames his patience or power for what their own ways brought."
+                }
+              ]
+            },
+            {
+              "id": "short-length",
+              "gloss": "be short (in length, in days)",
+              "definition": "Of a thing too short for its use, or of a span of years cut short.",
+              "kin": [
+                "short-days"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.28.20",
+                  "role": "defining",
+                  "note": "“The bed is shorter than that a man can stretch himself on it, and the covering narrower than that he can wrap himself in it.”"
+                },
+                {
+                  "ref": "Ezk.42.5",
+                  "note": "The upper chambers were shorter (קְצֻרוֹת), because the galleries took from them."
+                },
+                {
+                  "ref": "Pro.10.27",
+                  "role": "defining",
+                  "note": "“The fear of Yahweh adds days, but the years of the wicked will be short.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "cut short",
+          "senses": [
+            {
+              "gloss": "cut short (days)",
+              "definition": "To make a life's days fewer than they would have been.",
+              "kin": [
+                "short-days"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.102.24",
+                  "role": "defining",
+                  "note": "“He weakened my strength in the way; he cut short (קִצַּר) my days.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make short",
+          "senses": [
+            {
+              "gloss": "shorten (days)",
+              "definition": "To make the days of a man's life short.",
+              "kin": [
+                "short-days"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.89.46",
+                  "role": "defining",
+                  "note": "Of David's anointed seed: “You have shortened the days of his youth; you have covered him with shame.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὀλιγοψυχέω",
+          "gloss": "be faint-hearted, discouraged",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.21.4 וַתִּקְצַר נֶפֶשׁ → ὠλιγοψύχησεν (aligned to נֶפֶשׁ)"
+            },
+            {
+              "ref": "Num.21.4"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כָּבְדָה אָזְנוֹ",
+            "note": "An ear too heavy to hear, beside a hand too short to save.",
+            "evidence": [
+              {
+                "ref": "Isa.59.1"
+              }
+            ]
+          },
+          {
+            "lemma": "כֹּחַ",
+            "note": "Power to deliver, what a short hand would lack.",
+            "evidence": [
+              {
+                "ref": "Isa.50.2"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "יָסַף יָמִים",
+            "note": "Adding days, against years made short.",
+            "evidence": [
+              {
+                "ref": "Pro.10.27"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "קָצְרָה יַד",
+            "gloss": "the hand is short: power fails",
+            "evidence": [
+              {
+                "ref": "Num.11.23"
+              },
+              {
+                "ref": "Isa.50.2"
+              },
+              {
+                "ref": "Isa.59.1"
+              }
+            ]
+          },
+          {
+            "phrase": "קָצְרָה נֶפֶשׁ",
+            "gloss": "the soul is short: patience or strength gives out",
+            "evidence": [
+              {
+                "ref": "Num.21.4"
+              },
+              {
+                "ref": "Jdg.10.16"
+              },
+              {
+                "ref": "Jdg.16.16"
+              },
+              {
+                "ref": "Zec.11.8"
+              }
+            ]
+          },
+          {
+            "phrase": "קָצְרָה רוּחַ",
+            "gloss": "the spirit is short",
+            "evidence": [
+              {
+                "ref": "Job.21.4"
+              },
+              {
+                "ref": "Mic.2.7"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָצִיר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bough, branches",
+      "bdb": [
+        "s.cx.ac"
+      ],
+      "summary": "The branches or shoots of a tree or vine, usually as a collective. How it ties to the root is not clear: no cognate found shares the sense, and the spelling and forms are those of קָצִיר “harvest”; Isa 27:11 (boughs broken off when dry and burned) may point to “what is cut”, but that is not shown.",
+      "senses": [
+        {
+          "gloss": "bough, branches (of a tree or vine)",
+          "definition": "The growth a tree or vine puts out above its root, which flourishes with water and withers when the root dries.",
+          "evidence": [
+            {
+              "ref": "Job.14.9",
+              "role": "defining",
+              "note": "A felled tree, at the scent of water, “will bud and put forth קָצִיר like a plant”."
+            },
+            {
+              "ref": "Job.18.16",
+              "role": "defining",
+              "note": "“His roots dry up beneath, and above his קָצִיר withers”: set against the root."
+            },
+            {
+              "ref": "Job.29.19",
+              "role": "defining",
+              "note": "“My root was open to the waters, and the dew lay all night on my קָצִיר.”"
+            },
+            {
+              "ref": "Psa.80.12",
+              "role": "defining",
+              "note": "The vine brought out of Egypt “sent out her קָצִיר to the sea, and her shoots to the River”."
+            },
+            {
+              "ref": "Isa.27.11",
+              "note": "“When its קָצִיר is withered, they are broken off; women come and set them on fire.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κλῆμα",
+          "gloss": "branch (of a vine)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.80.12 (LXX 79:12) קְצִירֶהָ → κλήματα"
+            },
+            {
+              "ref": "Jhn.15.2",
+              "note": "“Every κλῆμα in me that does not bear fruit he takes away.”"
+            },
+            {
+              "ref": "Jhn.15.4",
+              "to": "Jhn.15.6",
+              "note": "“I am the vine, you are the κλήματα … if anyone does not abide in me, he is cast out as a κλῆμα and withers, and they gather them and throw them into the fire”, as Isa 27:11."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "שֹׁרֶשׁ",
+            "note": "Root, below, against the branch above.",
+            "evidence": [
+              {
+                "ref": "Job.18.16"
+              },
+              {
+                "ref": "Job.29.19"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "יוֹנֶקֶת",
+            "note": "Shoot, sucker of a plant.",
+            "evidence": [
+              {
+                "ref": "Psa.80.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָצֵר",
+      "pos": "adjective",
+      "gloss": "short (of)",
+      "bdb": [
+        "s.cw.ab"
+      ],
+      "cognate_ids": [
+        "ar-qasura",
+        "uga-qsr",
+        "arc-qetsar"
+      ],
+      "summary": "Found only in the construct, “short of” something: of hand (powerless), of nostrils or spirit (quick-tempered), of days (short-lived).",
+      "senses": [
+        {
+          "id": "short-of-hand",
+          "gloss": "short of hand, powerless",
+          "definition": "Without the power to act or resist.",
+          "kin": [
+            "short-hand"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ki.19.26",
+              "role": "defining",
+              "note": "The cities Assyria wasted: “their inhabitants were short of hand; they were dismayed and ashamed”, as Yahweh had planned of old."
+            },
+            {
+              "ref": "Isa.37.27"
+            }
+          ]
+        },
+        {
+          "id": "short-tempered",
+          "gloss": "short of nostrils or spirit, quick-tempered",
+          "definition": "Quick to anger, without patience; the opposite of אֶרֶךְ אַפַּיִם, long of nostrils, slow to anger.",
+          "kin": [
+            "short-soul",
+            "shortness-of-spirit"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.14.17",
+              "role": "defining",
+              "note": "“One short of nostrils (קְצַר אַפַּיִם) deals foolishly.”"
+            },
+            {
+              "ref": "Pro.14.29",
+              "role": "defining",
+              "note": "“One long of nostrils has great understanding, but one short of spirit (קְצַר רוּחַ) exalts folly.”"
+            }
+          ]
+        },
+        {
+          "id": "short-days",
+          "gloss": "short of days, short-lived",
+          "definition": "Having few days to live.",
+          "kin": [
+            "short-length"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.14.1",
+              "role": "defining",
+              "note": "“Man born of woman is short of days (קְצַר יָמִים) and full of trouble.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὀλιγόψυχος",
+          "gloss": "faint-hearted, of little spirit",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.14.29 קְצַר־רוּחַ → ὀλιγόψυχος; also Exo.6.9 קֹצֶר רוּחַ → ὀλιγοψυχία, Num.21.4 → ὠλιγοψύχησεν"
+            },
+            {
+              "ref": "1Th.5.14",
+              "note": "“Encourage the ὀλιγοψύχους, support the weak, be long-suffering toward all.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אֶרֶךְ אַפַּיִם",
+            "note": "Long of nostrils, slow to anger, against short of spirit.",
+            "evidence": [
+              {
+                "ref": "Pro.14.29"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "קְצַר אַפַּיִם",
+            "gloss": "quick-tempered",
+            "evidence": [
+              {
+                "ref": "Pro.14.17"
+              }
+            ]
+          },
+          {
+            "phrase": "קְצַר רוּחַ",
+            "gloss": "impatient, hasty of spirit",
+            "evidence": [
+              {
+                "ref": "Pro.14.29"
+              }
+            ]
+          },
+          {
+            "phrase": "קְצַר יָמִים",
+            "gloss": "short-lived",
+            "evidence": [
+              {
+                "ref": "Job.14.1"
+              }
+            ]
+          },
+          {
+            "phrase": "קִצְרֵי יָד",
+            "gloss": "powerless",
+            "evidence": [
+              {
+                "ref": "2Ki.19.26"
+              },
+              {
+                "ref": "Isa.37.27"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קֹצֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "shortness (of spirit)",
+      "bdb": [
+        "s.cw.ac"
+      ],
+      "cognate_ids": [
+        "ar-qasura",
+        "uga-qsr",
+        "arc-qetsar"
+      ],
+      "senses": [
+        {
+          "id": "shortness-of-spirit",
+          "gloss": "shortness of spirit: exhaustion, despair",
+          "definition": "A spirit worn too short to take in what is said, here from hard bondage.",
+          "kin": [
+            "short-soul",
+            "short-tempered"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.6.9",
+              "role": "defining",
+              "note": "Israel did not listen to Moses “because of קֹצֶר רוּחַ and because of hard bondage”."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-qasura",
+      "lang": "ar",
+      "form": "قَصُرَ، قَصِيرٌ",
+      "translit": "qaṣura, qaṣīr",
+      "gloss": "be short; short; (qaṣara ʿan) fall short of, lack power to",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "note": "Lane's sources give قَصُرَ as “it was, or became, short; contr. of طَالَ”, “too short”, and the tropical قَصُرَتْ يَدُهُ “his hand was short”, he had little or no power, the Hebrew idiom of Num 11:23 and Isa 59:1 exactly; قَصَرَ عَنِ الأَمْرِ is to fall short of a thing, lack power to accomplish it; and قَصِيرٌ “short, low”. Arabic ص (not ض or ظ) stands behind צ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2532, root قصر, قَصُرَ (n35768)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2535, قَصِيرٌ (n35781)"
+        }
+      ]
+    },
+    {
+      "id": "ar-qasara-clip",
+      "lang": "ar",
+      "form": "قَصَرَ الشَّعَرَ",
+      "translit": "qaṣara š-šaʿara",
+      "gloss": "shorten, clip, cut the ends of (the hair)",
+      "relation": "possible",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "note": "Form I and II of the same Arabic root, transitive: to make short, take from the length, “cut its ends; clipped, or shore, it” of hair, with the noun قِصَارٌ “the clipping of the hair”. If reaping is cutting the grain short, this is the bridge between the two Hebrew uses; recorded as possible because the Arabic is used of hair and prayer, not of grain, and Arabic reaps with another root.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2532, قَصَرَهُ (n35768, -A4-)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2535, قِصَارٌ (n35780)"
+        }
+      ]
+    },
+    {
+      "id": "uga-qsr",
+      "lang": "uga",
+      "form": "𐎖𐎕𐎗",
+      "translit": "qṣr",
+      "gloss": "short; qṣr npš “short of soul”, wretched",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "note": "In the Kirta epic (KTU 1.16:VI:33–34, 46–47) the king is rebuked: “you do not judge the cause of the widow, you do not try the case of the qṣr npš”: the one short of soul, the wretched, set beside the widow. Segert compares Hebrew קְצַר רוּחַ (Pro 14:29), קֹצֶר רוּחַ (Exo 6:9) and קָצְרָה נַפְשׁוֹ (Jdg 16:16). Also qṣrt “shortness” (KTU 1.103:39). Ugaritic ṣ shows the same older sound as Arabic ص.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 200, §93 Glossary, qṣr “short” (KTU 1.16:VI:47); qṣrt “shortness” (KTU 1.103:39)"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "pp. 141–143, §85.1, KTU 1.16:VI:39–59 and note to 46b–47a, qṣr npš"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000335 qṣr [short], UGC003544 qṣr [be], ARB029388 qaSura"
+        }
+      ]
+    },
+    {
+      "id": "arc-qetsar",
+      "lang": "arc",
+      "form": "קְצַר",
+      "translit": "qəṣar",
+      "gloss": "be short; (pael) shorten; (ithpaal) be shortened",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "note": "Jewish Aramaic, in the Targums of the very verses that use the Hebrew: Targ. Psa 102:24 קְצָרוּן, pael in Targ. Psa 89:46, ithpaal in Targ. 2Ki 19:26, Isa 37:27 and Isa 28:20. Aramaic keeps צ for older ṣ (it writes older ṣ́ as ע and ṯ̣ as ט), so it agrees with Arabic and Ugaritic.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְצַר",
+          "note": "Targ. Ps. CII, 24; Pa. Targ. Ps. LXXXIX, 46; Ithpa. Targ. II Kings XIX, 26; Targ. Is. XXXVII, 27; XXVIII, 20."
+        }
+      ]
+    },
+    {
+      "id": "phn-qsr",
+      "lang": "phn",
+      "form": "𐤒𐤑𐤓",
+      "translit": "qṣr",
+      "gloss": "harvest, harvesting (n.m.)",
+      "relation": "cognate",
+      "note": "In the Karatepe inscription (KAI 26 A II 18–III 2; C 2–6) Azatiwada brings sacrifices “an ox at the periodic sacrifice, a sheep at the time of plowing (ʿt ḥrš) and a sheep at the time of harvest (ʿt qṣr)”: the same pairing of plowing and harvest as Gen 45:6 and Exo 34:21, and the same phrase as עֵת קָצִיר (Jer 50:16). Phoenician writes one ṣ for all the older sounds, so it does not show which stands behind צ here.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 430, QṢR I, n.m. HARVEST(ING) (from text extraction)",
+          "note": "KAI 26 A II 18–III 2; KAI 26 C 2/6."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "hand-not-short",
+      "statement": "When Moses doubted that the people could be fed with flesh, Yahweh answered, “Is Yahweh's hand short? Now you shall see whether my word comes to pass” (Num 11:23), and the quails came (Num 11:31). Through Isaiah he asks, “Is my hand short, that it cannot redeem? Or have I no power to deliver? Behold, at my rebuke I dry up the sea” (Isa 50:2), and the prophet answers, “Yahweh's hand is not short, that it cannot save … but your iniquities have separated between you and your God” (Isa 59:1–2). Those whom Assyria overran were “short of hand” because Yahweh had planned it from of old (2Ki 19:25–26). From the verses: when Yahweh's people are not delivered, the cause is never a lack of power in him, but their sin, which he himself then undertakes to deal with (Isa 59:16, 20).",
+      "evidence": [
+        {
+          "ref": "Num.11.23"
+        },
+        {
+          "ref": "Num.11.31"
+        },
+        {
+          "ref": "Isa.50.2"
+        },
+        {
+          "ref": "Isa.59.1",
+          "to": "Isa.59.2"
+        },
+        {
+          "ref": "2Ki.19.25",
+          "to": "2Ki.19.26"
+        },
+        {
+          "ref": "Isa.59.16"
+        },
+        {
+          "ref": "Isa.59.20"
+        }
+      ]
+    },
+    {
+      "topic": "sowing-and-reaping",
+      "statement": "Eliphaz has seen that those who sow trouble reap it (Job 4:8); “he who sows iniquity will reap trouble” (Pro 22:8); Israel sowed the wind and would reap the whirlwind (Hos 8:7), and is called to “sow in righteousness, reap according to חֶסֶד … for it is time to seek Yahweh” (Hos 10:12). Those who sow in tears reap in joy (Psa 126:5–6). Paul states the same as a law of God that cannot be mocked: “whatever a man sows, that he will also reap: he who sows to his flesh will of the flesh reap corruption, but he who sows to the Spirit will of the Spirit reap life everlasting” (Gal 6:7–9; 2Co 9:6). From the verses: what a man does now is seed, and its harvest is given back to him by God; the harvest of sowing to the flesh is corruption, of sowing to the Spirit, everlasting life.",
+      "evidence": [
+        {
+          "ref": "Job.4.8"
+        },
+        {
+          "ref": "Pro.22.8"
+        },
+        {
+          "ref": "Hos.8.7"
+        },
+        {
+          "ref": "Hos.10.12",
+          "to": "Hos.10.13"
+        },
+        {
+          "ref": "Psa.126.5",
+          "to": "Psa.126.6"
+        },
+        {
+          "ref": "Gal.6.7",
+          "to": "Gal.6.9"
+        },
+        {
+          "ref": "2Co.9.6"
+        }
+      ]
+    },
+    {
+      "topic": "corners-for-the-poor",
+      "statement": "In the middle of the feasts, between the wave loaves of the fiftieth day and the first of the seventh month, Lev 23:22 repeats the law that the reaper must not reap to the corner of his field nor gather the gleaning of his harvest, but leave them for the poor and the sojourner, “I am Yahweh your God” (Lev 23:22; 19:9–10); a forgotten sheaf is left for the sojourner, the fatherless and the widow, “that Yahweh your God may bless you” (Deu 24:19). Ruth the Moabitess, a widow and a sojourner, gleaned after Boaz's reapers from the barley harvest to the end of the wheat harvest (Rut 1:22; 2:3, 23), and from her came David (Rut 4:13, 17). From the verses: Israel's harvest feasts were not complete without the poor's share left in the field, and through that provision the stranger was brought into the line of the king.",
+      "evidence": [
+        {
+          "ref": "Lev.23.22"
+        },
+        {
+          "ref": "Lev.19.9",
+          "to": "Lev.19.10"
+        },
+        {
+          "ref": "Deu.24.19"
+        },
+        {
+          "ref": "Rut.1.22"
+        },
+        {
+          "ref": "Rut.2.3"
+        },
+        {
+          "ref": "Rut.2.23"
+        },
+        {
+          "ref": "Rut.4.13"
+        },
+        {
+          "ref": "Rut.4.17"
+        }
+      ]
+    },
+    {
+      "topic": "seedtime-and-harvest",
+      "statement": "After the flood had covered the whole earth, Yahweh promised that “while the earth remains, seedtime and קָצִיר, cold and heat, summer and winter, day and night shall not cease” (Gen 8:22). Jeremiah calls him the one who gives the early and latter rain and “keeps for us the appointed weeks of the קָצִיר” (Jer 5:24), and he could withhold the rain before harvest (Amo 4:7) or send thunder in the wheat harvest as a sign (1Sa 12:17–18). Paul tells the nations that God left himself not without witness, giving rains from heaven and fruitful seasons (Act 14:17). From the verses: each harvest is Yahweh's gift and the keeping of his word after the flood, a witness to him even among those who do not know him.",
+      "evidence": [
+        {
+          "ref": "Gen.8.22"
+        },
+        {
+          "ref": "Jer.5.24"
+        },
+        {
+          "ref": "Amo.4.7"
+        },
+        {
+          "ref": "1Sa.12.17",
+          "to": "1Sa.12.18"
+        },
+        {
+          "ref": "Act.14.17"
+        }
+      ]
+    },
+    {
+      "topic": "harvest-of-judgment",
+      "statement": "Babylon is a threshing floor whose time of harvest is near (Jer 51:33); of the nations gathered to the valley of Jehoshaphat Yahweh says, “Put in the sickle, for the קָצִיר is ripe; come, tread, for the winepress is full … for their wickedness is great” (Jol 4:12–13). In Revelation the one like a son of man on the cloud is told, “Thrust in your sickle and reap … for the harvest of the earth is ripe”, and the vine of the earth is cast into the winepress of the wrath of God (Rev 14:14–20), Joel's sickle and winepress together. Jesus says in the parable that the harvest is the end of the age, when the reapers gather out of his kingdom all that offends (Mat 13:30, 39–43). From the verses: harvest is the time Yahweh has fixed when what has grown to ripeness, good or evil, is cut and gathered; Revelation sets Joel's harvest of the nations at the coming of the Son of man.",
+      "evidence": [
+        {
+          "ref": "Jer.51.33"
+        },
+        {
+          "ref": "Jol.4.12",
+          "to": "Jol.4.13"
+        },
+        {
+          "ref": "Rev.14.14",
+          "to": "Rev.14.20"
+        },
+        {
+          "ref": "Mat.13.30"
+        },
+        {
+          "ref": "Mat.13.39",
+          "to": "Mat.13.43"
+        }
+      ]
+    },
+    {
+      "topic": "days-cut-short",
+      "statement": "“Man born of woman is short of days and full of trouble” (Job 14:1), and the years of the wicked are made short (Pro 10:27). Psalm 89, having recounted the covenant with David's seed, laments that Yahweh has cast off his anointed and “shortened the days of his youth” (Psa 89:38–39, 46). The afflicted of Psalm 102 says, “he cut short my days; I said, O my God, take me not away in the midst of my days; your years are throughout all generations” (Psa 102:24–25), and Hebrews reads the answer that follows, “you are the same, and your years shall have no end” (Psa 102:26–28), as said to the Son (Heb 1:8, 10–12). From the verses: man's life is short by nature and shorter for the wicked; the anointed son of David is shown with his days cut short, and the answer to that is the unending years that Hebrews gives to the Son.",
+      "evidence": [
+        {
+          "ref": "Job.14.1"
+        },
+        {
+          "ref": "Pro.10.27"
+        },
+        {
+          "ref": "Psa.89.39"
+        },
+        {
+          "ref": "Psa.89.46"
+        },
+        {
+          "ref": "Psa.102.24",
+          "to": "Psa.102.28"
+        },
+        {
+          "ref": "Heb.1.8"
+        },
+        {
+          "ref": "Heb.1.10",
+          "to": "Heb.1.12"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (קָצַר, קָצִיר, Lev 23:10, 22). The database keys the root קצר, as the brief does. One entry for both BDB roots (קצר I “reap”, קצר II “be short”), per one spelling, one entry. BDB keys claimed: s.cx.ab (קָצִיר harvest), s.cx.ac (קָצִיר bough), s.cx.aa (קָצַר reap), s.cw.aa (קָצֵר be short), s.cw.ab (adjective), s.cw.ac (קֹצֶר). The brief files tokens by spelling, so s.cx.ab and s.cx.ac hold the same 54 tokens, and s.cx.aa and s.cw.aa the same 47; each key is given to its own word by reading (as erev.json does), so lexicon-support's use counts for each pair are the combined total, not the word's own. By reading: bough = Job 14:9; 18:16; 29:19; Psa 80:12; Isa 27:11 (5 of the 54); be short = Num 11:23; 21:4; Jdg 10:16; 16:16; Isa 28:20; 50:2 ×2; 59:1; Ezk 42:5; Mic 2:7; Zec 11:8; Pro 10:27; Job 21:4; Psa 89:46; 102:24 (15 of the 47). Pro 22:8 יִקְצָר and Job 24:6 (K יַקְצִירוּ hiphil, Q יִקְצוֹרוּ) carry no BDB key in the database and are cited uncounted. Left unclaimed: s.cp.ac קְצָוֹת, a zero-token cross-reference to קָצָת, which belongs to קצה. No proper names are formed from the root. No Biblical Aramaic or Peshitta word of the root (SEDRA has none; the Peshitta reaps with ḥṣd). Open questions: (1) Whether reaping and shortness are one older root. Arabic, Ugaritic and Aramaic all show ṣ for “short”; for “reap” only Phoenician (which merges the sounds) and Hebrew attest it, so the sound behind צ in “reap” is unknown. Arabic qaṣara “clip (hair)” is recorded as possible on the reap verb. (2) The bough has no cognate and no tie to either sense shown; lexicon-support counts the root's cognates against it. (3) Doctrine “days-cut-short” takes Heb 1:10–12 as answering Psa 102:24; and “harvest-of-judgment” sets Rev 14 at Christ's coming but leaves the timing of Mat 13:39 (“end of the age”) unstated: check against the reviewer's reading. Leads not followed: Akkadian qaṣāru (Wiktionary only; not in Oracc, CAD not checked); the Gezer calendar's yrḥ qṣr šʿrm “month of barley harvest” (Hebrew, not a cognate; no source registered); Syriac ܩܨܪܐ “fuller” and Jewish Aramaic קַצָּר “fuller” with Arabic قَصَّار (a third use of the root's consonants with no Hebrew word; Payne Smith not checked); Ge'ez not checked in Dillmann or Leslau."
+}
