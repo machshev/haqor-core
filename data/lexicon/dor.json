@@ -1,0 +1,1424 @@
+{
+  "id": "dor",
+  "root": "דור",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "time",
+    "generation",
+    "people",
+    "dwelling",
+    "circle",
+    "feasts",
+    "covenant",
+    "mortality"
+  ],
+  "gloss": "go round; a generation, the round of a lifetime; dwell",
+  "summary": "דּוֹר is a generation: the people alive together, who pass and give way to the next (“a generation goes and a generation comes, and the earth stands for ever”, Ecc 1:4), a kind of people marked by its ways (“a perverse and crooked generation”, Deu 32:5), and, counted one after another, the measure of time to come or past: Israel kept its feasts “for your generations” (Lev 23:14; Num 10:8), and Yahweh’s name, faithfulness and kingdom are “to generation and generation” (Exo 3:15; Psa 100:5; 145:13). The rest of the root is going round and settling: the verb דּוּר “dwell” (Psa 84:11) and, in Daniel’s Aramaic, “dwell” and מְדוֹר “dwelling”; דּוּר a ball or ring (Isa 22:18; 29:3); and מְדוּרָה a heaped-up pile of wood for fire (Ezk 24:9). The cognates join the same senses: Ugaritic and Phoenician dr “generation, time, family”, Akkadian dāru “era”, Arabic dāra “go round” and dār “house”.",
+  "words": [
+    {
+      "lemma": "דּוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "generation: the people of a lifetime; a kind of people; generations to come or past",
+      "summary": "Written דּוֹר and דֹּר, with plurals דֹּרוֹת and (Psa 72:5; 102:25) דּוֹרִים. One use, Isa 38:12, is “dwelling”.",
+      "bdb": [
+        "d.az.ac"
+      ],
+      "cognate_ids": [
+        "uga-dr"
+      ],
+      "senses": [
+        {
+          "id": "dor-people",
+          "gloss": "generation, the people alive at one time",
+          "definition": "All the people living in one lifetime, who die together and are followed by another generation; often of Israel in the wilderness, all of whom died before the next entered the land.",
+          "evidence": [
+            {
+              "ref": "Ecc.1.4",
+              "role": "defining",
+              "note": "“A דּוֹר goes and a דּוֹר comes, and the earth stands for ever.”"
+            },
+            {
+              "ref": "Jdg.2.10",
+              "role": "defining",
+              "note": "“All that דּוֹר were gathered to their fathers, and another דּוֹר arose after them who did not know Yahweh.”"
+            },
+            {
+              "ref": "Exo.1.6",
+              "role": "defining",
+              "note": "“Joseph died, and all his brothers, and all that דּוֹר.”"
+            },
+            {
+              "ref": "Num.32.13",
+              "role": "defining",
+              "note": "Yahweh made Israel wander forty years in the wilderness “until all the דּוֹר that did evil in his eyes was consumed”."
+            },
+            {
+              "ref": "Deu.2.14",
+              "note": "Thirty-eight years, “until all the דּוֹר, the men of war, were consumed from the camp”."
+            },
+            {
+              "ref": "Psa.95.10",
+              "role": "defining",
+              "note": "“Forty years I loathed a דּוֹר”, set beside “a people who err in heart”; quoted in Heb 3:10."
+            },
+            {
+              "ref": "Heb.3.10",
+              "note": "Psa 95:10 quoted: “I was grieved with that generation (γενεά)”; the Peshitta has דָּרָא."
+            },
+            {
+              "ref": "Gen.7.1",
+              "note": "“You I have seen righteous before me in this דּוֹר.”"
+            },
+            {
+              "ref": "Gen.6.9",
+              "note": "Noah was without blemish “in his generations” (בְּדֹרֹתָיו)."
+            },
+            {
+              "ref": "Job.8.8",
+              "note": "“Ask the former דֹּר”, beside “the search of their fathers”."
+            },
+            {
+              "ref": "Psa.78.4",
+              "note": "Telling “the generation to come” (לְדוֹר אַחֲרוֹן) the praises of Yahweh."
+            },
+            {
+              "ref": "Psa.78.6",
+              "role": "defining",
+              "note": "“That the generation to come might know, the sons who will be born.”"
+            },
+            {
+              "ref": "Psa.102.19",
+              "note": "“Written for a generation to come”, beside “a people created”."
+            },
+            {
+              "ref": "Psa.145.4",
+              "note": "“דּוֹר to דּוֹר will praise your works.”"
+            },
+            {
+              "ref": "Jol.1.3",
+              "note": "Tell your sons, and their sons another דּוֹר."
+            },
+            {
+              "ref": "Lev.23.43",
+              "role": "defining",
+              "note": "“That your generations may know that I made the sons of Israel dwell in booths”: the generations are the people who will come."
+            },
+            {
+              "ref": "Psa.22.31",
+              "note": "A seed will serve him; it will be told of Yahweh to the generation."
+            },
+            {
+              "ref": "Act.13.36",
+              "note": "David “served his own generation (γενεά)” by the will of God and fell asleep."
+            }
+          ],
+          "senses": [
+            {
+              "id": "dor-step",
+              "gloss": "a generation of descent, counted",
+              "definition": "One step in a line of descent, counted from a man: the third, fourth or tenth generation.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.16",
+                  "role": "defining",
+                  "note": "“In the fourth דּוֹר they will return here, for the iniquity of the Amorite is not yet complete.”"
+                },
+                {
+                  "ref": "Job.42.16",
+                  "role": "defining",
+                  "note": "Job saw his sons and his sons’ sons, “four דֹּרוֹת”."
+                },
+                {
+                  "ref": "Deu.23.3",
+                  "note": "“Even to the tenth דּוֹר” one born of a forbidden union shall not enter the assembly of Yahweh."
+                },
+                {
+                  "ref": "Deu.23.4"
+                },
+                {
+                  "ref": "Deu.23.9",
+                  "note": "The sons born to an Edomite or Egyptian in “the third דּוֹר” may enter."
+                },
+                {
+                  "ref": "Mat.1.17",
+                  "note": "Fourteen generations (γενεαί) from Abraham to David, to the carrying away, to Christ."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dor-kind",
+          "gloss": "a generation of a kind, a class of people",
+          "definition": "A generation known by its character or by whom it belongs to: perverse, rebellious, righteous, upright, seeking Yahweh; the word then names a kind of people more than a span of years.",
+          "cognate_ids": [
+            "phn-dr-family"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.32.5",
+              "role": "defining",
+              "note": "“They are not his sons, it is their blemish: a perverse and crooked דּוֹר”; Php 2:15 takes up the words."
+            },
+            {
+              "ref": "Deu.32.20",
+              "role": "defining",
+              "note": "“A דּוֹר of perversities are they, sons in whom is no faithfulness.”"
+            },
+            {
+              "ref": "Psa.78.8",
+              "role": "defining",
+              "note": "“Not like their fathers, a stubborn and rebellious דּוֹר, a דּוֹר that did not set its heart right.”"
+            },
+            {
+              "ref": "Psa.14.5",
+              "role": "defining",
+              "note": "“God is in the דּוֹר of the righteous.”"
+            },
+            {
+              "ref": "Psa.24.6",
+              "role": "defining",
+              "note": "“This is the דּוֹר of those who seek him, who seek your face, O Jacob.”"
+            },
+            {
+              "ref": "Psa.112.2",
+              "note": "“The דּוֹר of the upright will be blessed”, beside “his seed”."
+            },
+            {
+              "ref": "Psa.73.15",
+              "note": "“I would have dealt treacherously with the דּוֹר of your sons.”"
+            },
+            {
+              "ref": "Psa.12.8",
+              "note": "“You will keep them from this דּוֹר for ever.”"
+            },
+            {
+              "ref": "Deu.1.35",
+              "note": "“This evil דּוֹר” will not see the good land."
+            },
+            {
+              "ref": "Jer.7.29",
+              "note": "Yahweh has rejected “the דּוֹר of his wrath”."
+            },
+            {
+              "ref": "Jer.2.31",
+              "note": "“O דּוֹר, see the word of Yahweh.”"
+            },
+            {
+              "ref": "Pro.30.11",
+              "role": "defining",
+              "note": "“There is a דּוֹר that curses its father”: four sayings (Pro 30:11–14), each a kind of people."
+            },
+            {
+              "ref": "Pro.30.12"
+            },
+            {
+              "ref": "Pro.30.13"
+            },
+            {
+              "ref": "Pro.30.14"
+            },
+            {
+              "ref": "Php.2.15",
+              "note": "“In the midst of a crooked and perverse generation (γενεά)”, from Deu 32:5; the Peshitta has דָּרָא."
+            },
+            {
+              "ref": "Mat.17.17",
+              "note": "“O faithless and perverse generation”, in the words of Deu 32:5, 20."
+            },
+            {
+              "ref": "Act.2.40",
+              "note": "“Save yourselves from this crooked generation.”"
+            }
+          ]
+        },
+        {
+          "id": "dor-age",
+          "gloss": "generations: time to come or past",
+          "definition": "Generations following one another as the measure of time: “for your generations” is as long as Israel’s generations last, “generation and generation” is all time to come, and “the years of generation and generation” or “the generations of old” is time long past.",
+          "cognate_ids": [
+            "phn-dr-time",
+            "akk-daru",
+            "ar-dara"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.23.14",
+              "role": "defining",
+              "note": "The firstfruits: “a statute for ever לְדֹרֹתֵיכֶם, in all your dwellings”."
+            },
+            {
+              "ref": "Lev.23.21"
+            },
+            {
+              "ref": "Lev.23.31"
+            },
+            {
+              "ref": "Lev.23.41",
+              "note": "The feast of booths, “a statute for ever לְדֹרֹתֵיכֶם”."
+            },
+            {
+              "ref": "Num.10.8",
+              "role": "defining",
+              "note": "The priests blow the trumpets, “for a statute for ever לְדֹרֹתֵיכֶם”."
+            },
+            {
+              "ref": "Gen.17.7",
+              "role": "defining",
+              "note": "“My covenant between me and you and your seed after you לְדֹרֹתָם, for a covenant for ever.”"
+            },
+            {
+              "ref": "Exo.12.14",
+              "note": "The Passover, kept “לְדֹרֹתֵיכֶם, a statute for ever”."
+            },
+            {
+              "ref": "Exo.31.16",
+              "note": "The sabbath kept “לְדֹרֹתָם, a covenant for ever”."
+            },
+            {
+              "ref": "Exo.3.15",
+              "role": "defining",
+              "note": "“This is my name לְעֹלָם, and this my memorial לְדֹר דֹּר.”"
+            },
+            {
+              "ref": "Psa.100.5",
+              "role": "defining",
+              "note": "“His kindness is לְעוֹלָם, and his faithfulness עַד דֹּר וָדֹר.”"
+            },
+            {
+              "ref": "Psa.89.2"
+            },
+            {
+              "ref": "Psa.102.13"
+            },
+            {
+              "ref": "Psa.119.90",
+              "note": "“Your faithfulness is to generation and generation; you established the earth and it stands.”"
+            },
+            {
+              "ref": "Psa.145.13",
+              "note": "“Your dominion is in every generation and generation.”"
+            },
+            {
+              "ref": "Psa.146.10"
+            },
+            {
+              "ref": "Lam.5.19",
+              "note": "“You, Yahweh, sit for ever; your throne is to generation and generation.”"
+            },
+            {
+              "ref": "Pro.27.24",
+              "note": "“Riches are not for ever; does the crown endure to generation and generation?”"
+            },
+            {
+              "ref": "Deu.7.9",
+              "role": "defining",
+              "note": "Yahweh keeps covenant and kindness “to a thousand דּוֹר” with those who love him."
+            },
+            {
+              "ref": "Psa.105.8"
+            },
+            {
+              "ref": "1Ch.16.15"
+            },
+            {
+              "ref": "Exo.17.16",
+              "note": "“War for Yahweh with Amalek from דֹּר to דֹּר.”"
+            },
+            {
+              "ref": "Isa.13.20",
+              "note": "Babylon will not be dwelt in “to generation and generation”, beside לָנֶצַח."
+            },
+            {
+              "ref": "Isa.34.10"
+            },
+            {
+              "ref": "Psa.72.5",
+              "note": "“With the sun and before the moon, דּוֹר דּוֹרִים”: for as long as they last."
+            },
+            {
+              "ref": "Psa.102.25",
+              "note": "“Your years are בְּדוֹר דּוֹרִים”, against “the half of my days”."
+            },
+            {
+              "ref": "Est.9.28",
+              "note": "Purim kept “in every generation and generation, family and family”."
+            },
+            {
+              "ref": "Deu.32.7",
+              "role": "defining",
+              "note": "Of the past: “Remember the days of עוֹלָם, consider the years of דּוֹר וָדוֹר; ask your father.”"
+            },
+            {
+              "ref": "Isa.51.9",
+              "note": "“As in the days of old, the generations of the ages (דֹּרוֹת עוֹלָמִים).”"
+            },
+            {
+              "ref": "Isa.58.12",
+              "note": "Raising up “the foundations of generation and generation”, the long-ruined places."
+            },
+            {
+              "ref": "Isa.61.4"
+            },
+            {
+              "ref": "Isa.41.4",
+              "note": "Yahweh “calling the generations from the beginning”."
+            },
+            {
+              "ref": "Luk.1.50",
+              "note": "“His mercy is to generations of generations” on those who fear him, echoing Psa 100:5; the Peshitta has דָּרָא here."
+            },
+            {
+              "ref": "Eph.3.21",
+              "note": "“To all the generations of the age of the ages.”"
+            }
+          ]
+        },
+        {
+          "id": "dor-dwelling",
+          "gloss": "dwelling",
+          "definition": "Once, a dwelling: Hezekiah’s life pulled up like a shepherd’s tent.",
+          "kin": [
+            "dur-dwell",
+            "medor-dwelling"
+          ],
+          "cognate_ids": [
+            "ar-dar"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.38.12",
+              "role": "defining",
+              "note": "“My דּוֹר is pulled up and carried away from me like a shepherd’s tent”: set beside the tent, it is the place he lives in. Some read “my lifetime”, the word’s usual sense; the tent parallel favours “dwelling”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γενεά",
+          "gloss": "generation; the people of an age; age",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "דּוֹר → γενεά ×106 (lemma count, MACULA alignment); Deu.32.5, Psa.95.10 and Isa.53.8 all γενεά"
+            },
+            {
+              "ref": "Heb.3.10",
+              "role": "defining",
+              "note": "Psa 95:10 quoted: “I was grieved with that γενεά.”"
+            },
+            {
+              "ref": "Act.8.33",
+              "role": "defining",
+              "note": "Isa 53:8 quoted: “Who will declare his γενεά? For his life is taken from the earth.”"
+            },
+            {
+              "ref": "Php.2.15",
+              "note": "Deu 32:5: “a crooked and perverse γενεά”."
+            },
+            {
+              "ref": "Mat.24.34",
+              "note": "“This γενεά will not pass away until all these things happen.”"
+            },
+            {
+              "ref": "Mat.23.36"
+            },
+            {
+              "ref": "Luk.1.50"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עוֹלָם",
+            "note": "Time out of sight beside time counted in generations; the two together are all time to come, or all time past.",
+            "evidence": [
+              {
+                "ref": "Exo.3.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.100.5"
+              },
+              {
+                "ref": "Psa.89.2"
+              },
+              {
+                "ref": "Psa.102.13"
+              },
+              {
+                "ref": "Lam.5.19"
+              },
+              {
+                "ref": "Deu.32.7",
+                "note": "Of the past: “the days of עוֹלָם” beside “the years of דּוֹר וָדוֹר”."
+              }
+            ]
+          },
+          {
+            "lemma": "עַם",
+            "note": "The generation as a people.",
+            "evidence": [
+              {
+                "ref": "Psa.95.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.102.19"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּנִים",
+            "note": "A generation is the sons, born and to be born.",
+            "evidence": [
+              {
+                "ref": "Deu.32.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.6"
+              },
+              {
+                "ref": "Jol.1.3"
+              }
+            ]
+          },
+          {
+            "lemma": "זֶרַע",
+            "note": "Seed beside generation.",
+            "evidence": [
+              {
+                "ref": "Psa.112.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.22.31"
+              }
+            ]
+          },
+          {
+            "lemma": "אָבוֹת",
+            "note": "A generation is gathered to its fathers, the generation before it.",
+            "evidence": [
+              {
+                "ref": "Jdg.2.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.49.20"
+              },
+              {
+                "ref": "Job.8.8"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אֶרֶץ",
+            "note": "The generations pass while the earth stands.",
+            "evidence": [
+              {
+                "ref": "Ecc.1.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.119.90"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לְדֹרֹתֵיכֶם",
+            "gloss": "for your generations, throughout your generations",
+            "evidence": [
+              {
+                "ref": "Lev.23.14",
+                "role": "defining",
+                "note": "With חֻקַּת עוֹלָם: the feasts of Lev 23 are kept as long as Israel’s generations go on."
+              },
+              {
+                "ref": "Lev.23.21"
+              },
+              {
+                "ref": "Lev.23.31"
+              },
+              {
+                "ref": "Lev.23.41"
+              },
+              {
+                "ref": "Num.10.8"
+              },
+              {
+                "ref": "Lev.3.17"
+              },
+              {
+                "ref": "Exo.12.14"
+              }
+            ]
+          },
+          {
+            "phrase": "דֹּר וָדֹר",
+            "gloss": "generation and generation: every generation, all time to come (or past)",
+            "evidence": [
+              {
+                "ref": "Psa.100.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.145.13"
+              },
+              {
+                "ref": "Est.9.28"
+              },
+              {
+                "ref": "Deu.32.7"
+              },
+              {
+                "ref": "Psa.90.1",
+                "note": "“Yahweh, you have been a dwelling place for us in דֹּר וָדֹר.”"
+              }
+            ]
+          },
+          {
+            "phrase": "לְדֹר דֹּר / מִדֹּר דֹּר",
+            "gloss": "to (from) generation after generation",
+            "evidence": [
+              {
+                "ref": "Exo.3.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.17.16"
+              },
+              {
+                "ref": "Isa.34.10",
+                "note": "מִדּוֹר לָדוֹר"
+              }
+            ]
+          },
+          {
+            "phrase": "דּוֹר דּוֹרִים",
+            "gloss": "generation of generations, through all generations",
+            "evidence": [
+              {
+                "ref": "Psa.72.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.102.25"
+              }
+            ]
+          },
+          {
+            "phrase": "דּוֹר אַחֲרוֹן",
+            "gloss": "the generation to come",
+            "evidence": [
+              {
+                "ref": "Psa.78.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.6"
+              },
+              {
+                "ref": "Psa.102.19"
+              },
+              {
+                "ref": "Deu.29.21"
+              }
+            ]
+          },
+          {
+            "phrase": "לְאֶלֶף דּוֹר",
+            "gloss": "to a thousand generations",
+            "evidence": [
+              {
+                "ref": "Deu.7.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.105.8"
+              },
+              {
+                "ref": "1Ch.16.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "דּוּר",
+      "pos": "verb",
+      "gloss": "dwell; heap up (round)",
+      "summary": "Two uses only: “dwell” (Psa 84:11) and “pile” the bones under a pot (Ezk 24:5). The Ezekiel token is filed under the key of the noun דּוּר, so the verb’s own key counts one use. Both senses rest on a single verse each.",
+      "bdb": [
+        "d.az.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "dwell; pile",
+          "senses": [
+            {
+              "id": "dur-dwell",
+              "gloss": "dwell",
+              "definition": "To live in a place: the psalmist would rather stand at the threshold of God’s house than dwell in the tents of wickedness.",
+              "cognate_ids": [
+                "ar-dar",
+                "arc-dur"
+              ],
+              "kin": [
+                "dor-dwelling",
+                "medor-dwelling"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.84.11",
+                  "role": "defining",
+                  "note": "“I choose to stand at the threshold in the house of my God rather than דּוּר in the tents of wickedness.”"
+                }
+              ]
+            },
+            {
+              "id": "dur-pile",
+              "gloss": "pile, heap up",
+              "definition": "To heap wood or bones under a cooking pot: the boiling pot of Jerusalem’s siege.",
+              "kin": [
+                "meduarah-pile"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.24.5",
+                  "role": "defining",
+                  "note": "“Take the choice of the flock, and also pile (דּוּר) the bones under it”; Ezk 24:9–10 goes on with the pile (מְדוּרָה) of wood."
+                }
+              ],
+              "cognate_ids": [
+                "arc-medurta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דּוּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ball; ring, circle",
+      "summary": "Twice, both with כְּ: a ball thrown, and a ring of besiegers. Its own key also holds the verb’s use in Ezk 24:5. A word scripture barely fixes; the round sense agrees with Arabic dāra “go round”.",
+      "bdb": [
+        "d.az.ab"
+      ],
+      "cognate_ids": [
+        "ar-dara",
+        "akk-duru-wall"
+      ],
+      "senses": [
+        {
+          "gloss": "ball",
+          "definition": "Something round that is wound up and thrown.",
+          "evidence": [
+            {
+              "ref": "Isa.22.18",
+              "role": "defining",
+              "note": "Shebna wound up tightly “like a ball” and tossed into a wide land."
+            }
+          ]
+        },
+        {
+          "gloss": "ring, circle (round about)",
+          "definition": "A circle round something: an army camped all round a city.",
+          "evidence": [
+            {
+              "ref": "Isa.29.3",
+              "role": "defining",
+              "note": "“I will camp against you כַדּוּר”, beside besieging with a post and raising siege works."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְדוּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pile (of wood for burning)",
+      "summary": "A pile of wood heaped up for a fire: twice, both in judgment. It goes with the verb’s “pile” (Ezk 24:5), and the Talmud’s Aramaic has the same word; how “pile” relates to “go round” and “dwell” is not yet shown.",
+      "bdb": [
+        "d.az.ae"
+      ],
+      "senses": [
+        {
+          "id": "meduarah-pile",
+          "gloss": "pile of wood, pyre",
+          "definition": "Wood heaped for a fire, under a pot or in Tophet.",
+          "kin": [
+            "dur-pile"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.24.9",
+              "role": "defining",
+              "note": "“Woe to the city of blood! I also will make the מְדוּרָה great”; Ezk 24:10: “heap on the wood, kindle the fire”."
+            },
+            {
+              "ref": "Isa.30.33",
+              "role": "defining",
+              "note": "Tophet is prepared: “its מְדוּרָה is fire and much wood; the breath of Yahweh, like a stream of brimstone, kindles it”."
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-medurta"
+      ]
+    },
+    {
+      "lemma": "דּוּר",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "dwell",
+      "summary": "Daniel’s Aramaic verb “dwell”, of men, beasts and birds, and in the participle “those who dwell in all the earth”. Only Dan 4:18 is filed under its key; the participles דָּיְרִין, דָּיְרֵי and the imperfect יְדוּרָן (Dan 2:38; 3:31; 4:9; 4:32; 6:26) are not.",
+      "bdb": [
+        "xd.ad.aa"
+      ],
+      "cognate_ids": [
+        "arc-dur",
+        "ar-dar"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "dwell",
+          "senses": [
+            {
+              "gloss": "dwell, live (in a place)",
+              "definition": "To live somewhere: beasts under a tree and birds in its branches; peoples in all the earth.",
+              "kin": [
+                "dur-dwell"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.4.18",
+                  "role": "defining",
+                  "note": "“Under it the beasts of the field dwelt (תְּדוּר), and in its branches the birds of the heavens lodged.”"
+                },
+                {
+                  "ref": "Dan.4.9",
+                  "note": "“In its branches the birds of the heavens dwelt (יְדוּרָן).”"
+                },
+                {
+                  "ref": "Dan.2.38",
+                  "note": "“Wherever the sons of men dwell (דָּיְרִין).”"
+                },
+                {
+                  "ref": "Dan.3.31",
+                  "role": "defining",
+                  "note": "“To all peoples, nations and tongues that dwell in all the earth.”"
+                },
+                {
+                  "ref": "Dan.6.26"
+                },
+                {
+                  "ref": "Dan.4.32",
+                  "note": "“All the dwellers of the earth are counted as nothing.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּר",
+      "lang": "arc",
+      "root": "דר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "generation",
+      "summary": "Daniel’s Aramaic for דּוֹר, only in עִם דָּר וְדָר, “with generation and generation”, of the Most High’s dominion.",
+      "bdb": [
+        "xd.ad.ab"
+      ],
+      "cognate_ids": [
+        "uga-dr",
+        "phn-dr-time",
+        "akk-daru"
+      ],
+      "senses": [
+        {
+          "gloss": "generation; (with וְדָר) all generations",
+          "definition": "Generation after generation, the span of the Most High’s kingdom, beside עָלַם.",
+          "kin": [
+            "dor-age"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.33",
+              "role": "defining",
+              "note": "“His kingdom is a kingdom of עָלַם, and his dominion עִם דָּר וְדָר.”"
+            },
+            {
+              "ref": "Dan.4.31",
+              "role": "defining",
+              "note": "Nebuchadnezzar, his understanding returned, praises him “whose dominion is a dominion of עָלַם, and his kingdom עִם דָּר וְדָר”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְדוֹר",
+      "lang": "arc",
+      "root": "מדור",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dwelling, place one lives",
+      "summary": "Daniel’s Aramaic noun of place from דּוּר, also spelled מְדָר: where one lives, of the gods and of Nebuchadnezzar among the beasts.",
+      "bdb": [
+        "xd.ad.ac"
+      ],
+      "cognate_ids": [
+        "ar-dar",
+        "arc-dur"
+      ],
+      "senses": [
+        {
+          "id": "medor-dwelling",
+          "gloss": "dwelling",
+          "definition": "The place where one lives and stays.",
+          "kin": [
+            "dur-dwell"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.11",
+              "role": "defining",
+              "note": "No one can tell the king’s dream “except the gods, whose מְדָר is not with flesh”."
+            },
+            {
+              "ref": "Dan.4.22",
+              "role": "defining",
+              "note": "“With the beasts of the field shall be your מְדוֹר.”"
+            },
+            {
+              "ref": "Dan.4.29"
+            },
+            {
+              "ref": "Dan.5.21",
+              "note": "“His מְדוֹר was with the wild asses.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּדִירָא",
+      "lang": "arc",
+      "root": "תדירא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "continuance; בִּתְדִירָא continually",
+      "summary": "Only in בִּתְדִירָא, “continually”, of Daniel’s service to his God. Jewish Aramaic uses the same word for Hebrew תָּמִיד, the continual offering, which points to “what comes round regularly”; the tie to the root’s “go round” is likely but is not shown by its two verses.",
+      "bdb": [
+        "xd.ad.ae"
+      ],
+      "cognate_ids": [
+        "arc-tedira",
+        "akk-daru"
+      ],
+      "senses": [
+        {
+          "gloss": "continually, without break",
+          "definition": "With בְּ, of service kept up without break.",
+          "evidence": [
+            {
+              "ref": "Dan.6.17",
+              "role": "defining",
+              "note": "“Your God whom you serve בִּתְדִירָא, he will deliver you”; Dan 6:11 shows the service: prayer three times a day “as he did before”."
+            },
+            {
+              "ref": "Dan.6.21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "generation, age",
+      "summary": "The Peshitta’s ܕܪܐ (dārā), for γενεά where it means generations or ages; elsewhere it uses ܫܪܒܬܐ.",
+      "cognate_ids": [
+        "uga-dr",
+        "phn-dr-time"
+      ],
+      "senses": [
+        {
+          "gloss": "generation; generations, ages",
+          "definition": "The people of one time, and generations as the ages past and to come.",
+          "kin": [
+            "dor-people",
+            "dor-age"
+          ],
+          "evidence": [
+            {
+              "ref": "Heb.3.10",
+              "role": "defining",
+              "note": "Psa 95:10 quoted: “I was grieved with that דָּרָא.”"
+            },
+            {
+              "ref": "Act.8.33",
+              "role": "defining",
+              "note": "Isa 53:8 quoted: “his דָּרָא, who will declare it?”"
+            },
+            {
+              "ref": "Php.2.15",
+              "note": "Deu 32:5 taken up: a crooked and perverse דָּרָא."
+            },
+            {
+              "ref": "Luk.1.50",
+              "note": "His mercy is to generations."
+            },
+            {
+              "ref": "Act.14.16",
+              "note": "“In the generations past he let all the nations walk in their own ways.”"
+            },
+            {
+              "ref": "Act.15.21",
+              "note": "Moses has had preachers “from the first generations” in every city."
+            },
+            {
+              "ref": "Eph.3.5",
+              "role": "defining",
+              "note": "The mystery “in other generations not made known”."
+            },
+            {
+              "ref": "Eph.3.21"
+            },
+            {
+              "ref": "Col.1.26",
+              "note": "“Hidden from the ages and from the generations.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דַּיְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dwelling, fold",
+      "summary": "The Peshitta’s ܕܝܪܐ (dayrā), a dwelling or fold; once, in Act 1:20, where Psa 69:26 is quoted.",
+      "cognate_ids": [
+        "ar-dar",
+        "arc-dur"
+      ],
+      "senses": [
+        {
+          "gloss": "dwelling, habitation",
+          "definition": "The place where one lives.",
+          "kin": [
+            "medor-dwelling"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.1.20",
+              "role": "defining",
+              "note": "“Let his dwelling (ܕܝܪܗ) be desolate, and let there be no dweller in it.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּרְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "court, courtyard",
+      "summary": "The Peshitta’s ܕܪܬܐ (dārtā), for αὐλή: the enclosed court of a house or of the temple. Arabic dār is likewise a house round a court.",
+      "cognate_ids": [
+        "ar-dar"
+      ],
+      "senses": [
+        {
+          "gloss": "court, courtyard",
+          "definition": "The open enclosure within a great house, or the temple’s outer court.",
+          "evidence": [
+            {
+              "ref": "Mat.26.69",
+              "role": "defining",
+              "note": "Peter sat outside in the court."
+            },
+            {
+              "ref": "Mat.26.3",
+              "note": "The chief priests gathered in the court of the high priest."
+            },
+            {
+              "ref": "Mat.26.58"
+            },
+            {
+              "ref": "Mrk.14.54"
+            },
+            {
+              "ref": "Mrk.14.66"
+            },
+            {
+              "ref": "Mrk.15.16",
+              "note": "The soldiers led him into the court, the praetorium."
+            },
+            {
+              "ref": "Luk.11.21",
+              "role": "defining",
+              "note": "A strong man armed keeps his own court."
+            },
+            {
+              "ref": "Luk.22.55"
+            },
+            {
+              "ref": "Jhn.18.15"
+            },
+            {
+              "ref": "Rev.11.2",
+              "note": "The court outside the temple, given to the nations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֶדְיָרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "storey, upper floor",
+      "summary": "The Peshitta’s ܡܕܝܪܐ, a floor or loft of a house; once, in Act 20:9. Its tie to “dwell” is through the house; its one use barely fixes it.",
+      "cognate_ids": [
+        "ar-dar"
+      ],
+      "senses": [
+        {
+          "gloss": "storey, floor",
+          "definition": "A level of a house.",
+          "evidence": [
+            {
+              "ref": "Act.20.9",
+              "role": "defining",
+              "note": "Eutychus fell “from the third storey”."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-dr",
+      "lang": "uga",
+      "form": "𐎄𐎗",
+      "translit": "dr",
+      "gloss": "circle, assembly; generation; abode",
+      "relation": "cognate",
+      "note": "Ugaritic has both the “generation” sense and the gathering or circle of people (dr il, the assembly of El), and “abode”: the same spread as the Hebrew root.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 69, dr",
+          "note": "“dr ‘assemblage; generation; abode’”, compared with Geʿez and Tigre words of the root dwr. Read from the OCR text only."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000067 dwr [cycle], UGC001426 dr [circle]"
+        }
+      ]
+    },
+    {
+      "id": "phn-dr-time",
+      "lang": "phn",
+      "form": "𐤃𐤓",
+      "translit": "dr",
+      "gloss": "time, period, era",
+      "relation": "cognate",
+      "note": "Punic “a time (dr) of prosperity and peace”; Neo-Punic “in his time (dr) we were prosperous”: a span of time as long as a man’s rule, as דּוֹר is a lifetime.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 150, DR I",
+          "note": "“[Heb. dor; Ar. dawr] n.m. TIME, PERIOD, ERA”, CIS i 2 dr šlm; Mactar B IV 1. Read from the local PDF’s text layer."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000067 dwr [cycle], PUN000566 dr [time]"
+        }
+      ]
+    },
+    {
+      "id": "phn-dr-family",
+      "lang": "phn",
+      "form": "𐤃𐤓",
+      "translit": "dr",
+      "gloss": "family, clan; dr bn ʾlm “the family of the gods”",
+      "relation": "cognate",
+      "note": "A company of kin bound together, as “the generation of the righteous” or “of your sons” (Psa 14:5; 73:15) is a company of one kind.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 150–151, DR II; DR BN ʾLM",
+          "note": "“n.m. FAMILY, CLAN”; “kl dr bn ʾlm, ‘the entire family of the gods’” (KAI 26 A III 18/19). Read from the local PDF’s text layer."
+        }
+      ]
+    },
+    {
+      "id": "akk-daru",
+      "lang": "akk",
+      "form": "dāru",
+      "translit": "dāru",
+      "gloss": "era, eternity; dārû “lasting, everlasting”; dūru “permanence, (validity) period”",
+      "relation": "cognate",
+      "note": "Akkadian uses the root of a long span of time and of what lasts through it, as Hebrew uses “generation and generation” for all time to come.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000041040, dāru [era] N",
+          "note": "“era; eternity”"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000023110, dārû [lasting] AJ",
+          "note": "“eternal; everlasting; for ever; lasting”"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000041530, dūru [permanence] N",
+          "note": "“(validity) period; eternity; permanence”"
+        }
+      ]
+    },
+    {
+      "id": "akk-duru-wall",
+      "lang": "akk",
+      "form": "dūru",
+      "translit": "dūru",
+      "gloss": "(city) wall, enclosure, fortress",
+      "relation": "possible",
+      "note": "The wall that rings a city; Anderson and Moser put it under *dwr “cycle”. If it belongs here, it answers to the ring of besiegers “like a circle” in Isa 29:3.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005870, dūru [(city) wall] N",
+          "note": "“(city) wall; (temple) enclosure; fortification wall; fortress; wall”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000067 dwr [cycle], AKK002077 dūru [(city) wall]"
+        }
+      ]
+    },
+    {
+      "id": "ar-dara",
+      "lang": "ar",
+      "form": "دَارَ",
+      "translit": "dāra",
+      "gloss": "go round, circle, revolve; of time, come round",
+      "relation": "cognate",
+      "note": "The root’s base sense in Arabic is going round; it is said of days that “come round in their turns”, and دَوَّار of time that turns man from one state to another: the round of the generations.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 930, root دور, دَارَ (n13382)",
+          "note": "“He, or it, went, moved, or turned, round; circled; revolved; returned to the place from which he, or it, began to move”; “دَارَتِ الأَيَّامُ [The days came round in their turns]”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 932, root دور, دَوَّارٌ (n13404)",
+          "note": "“Applied likewise to time, or fortune … time, or fortune, turns man about from one state, or condition, to another.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-dar",
+      "lang": "ar",
+      "form": "دَارٌ",
+      "translit": "dār",
+      "gloss": "house with a court; abode, dwelling",
+      "relation": "cognate",
+      "note": "Lane’s sources take دَار “originally دَوَرٌ” from دَارَ “go round”: a dwelling of buildings round a court, and any place people have settled. It answers to Hebrew and Aramaic “dwell” and “dwelling”, and to the Peshitta’s court.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 931, root دور, دَارٌ (n13388)",
+          "note": "“A house … a place of abode which comprises a building, or buildings, and a court”; “Any place in which a people have alighted and taken up their abode; an abode; a dwelling.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 931, root دور, تديّر (n13386)",
+          "note": "“He took the place as a house, or an abode.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-dur",
+      "lang": "arc",
+      "form": "דּוּר",
+      "translit": "dūr",
+      "gloss": "dwell (Jewish Aramaic); דִּירָא dwelling, tent, fold",
+      "relation": "cognate",
+      "note": "The Targums use the verb for dwelling (Targ. Psa 105:23, of Jacob sojourning in Egypt) and דִּירָא for a dwelling or fold (Targ. Mic 2:12).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דּוּר, דִּיר (D00342)",
+          "note": "“to dwell. Targ. Ps. CV, 23; a. fr.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דִּירָא (D00729)",
+          "note": "“shed, also tent for human residence. Targ. Mic. II, 12. Targ. Prov. XXI, 20 … the dwelling of the wise man”"
+        }
+      ]
+    },
+    {
+      "id": "arc-tedira",
+      "lang": "arc",
+      "form": "תְּדִירָא",
+      "translit": "tədīrā",
+      "gloss": "permanency; (adv.) steadily, constantly",
+      "relation": "cognate",
+      "note": "The Targums use it where the Hebrew has תָּמִיד, of the continual burnt offering (Targ. Num 28:3, 6, 10) and the lamp kept burning (Targ. Exo 27:20): what is done again at its set time, without break.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּדִירָא (V00110)",
+          "note": "“(also as noun) permanency. Targ. Num. XXVIII, 3; 6; 10 … (Adv.) steadily, constantly. Targ. Ex. XXVII, 20. Targ. Lev. XXIV, 3”"
+        }
+      ]
+    },
+    {
+      "id": "arc-medurta",
+      "lang": "arc",
+      "form": "מְדוּרְתָּא",
+      "translit": "mədūrtā",
+      "gloss": "pile of wood, fire (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Talmud’s Aramaic has the same word as Hebrew מְדוּרָה, a pile of wood laid for a fire; it shows the word is the root’s own in Aramaic too, though no other language yet found has it.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְדוּרְתָּא (M00277), with מְדוּרָה (M00276)",
+          "note": "מְדוּרָה “row, pile of wood, fire”; מְדוּרְתָּא “ch. same. Bets. 32ᵇ; Erub. 101ᵃ”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "this-generation",
+      "statement": "דּוֹר is the people alive together, and its span is their lifetime: the generation that did evil in the wilderness was consumed within forty years (Num 32:13; Deu 2:14), and Yahweh says “forty years I loathed a generation” (Psa 95:10), which Hebrews quotes of the same people (Heb 3:9–10, 17). Christ uses γενεά, the Septuagint’s word for דּוֹר, in the same way: the scribes and Pharisees would fill up the measure of their fathers, and “all these things will come upon this generation” (Mat 23:32–36); of the temple whose stones would be thrown down he said, “this generation will not pass away until all these things happen” (Mat 24:2, 34). From the verses: “this generation” is the people then alive, and what he foretold of Jerusalem and the temple came upon them, in the destruction of AD 70, about forty years later, as the wilderness generation fell within its forty years.",
+      "evidence": [
+        {
+          "ref": "Num.32.13"
+        },
+        {
+          "ref": "Deu.2.14"
+        },
+        {
+          "ref": "Psa.95.10"
+        },
+        {
+          "ref": "Heb.3.9",
+          "to": "Heb.3.10"
+        },
+        {
+          "ref": "Heb.3.17"
+        },
+        {
+          "ref": "Mat.23.32",
+          "to": "Mat.23.36"
+        },
+        {
+          "ref": "Mat.24.2"
+        },
+        {
+          "ref": "Mat.24.34"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "A generation dies and is “gathered to its fathers” (Jdg 2:10); “a generation goes and a generation comes, and the earth stands for ever” (Ecc 1:4). The man who is in honour without understanding “will go to the generation of his fathers; they will never see light”, like the beasts that perish (Psa 49:20–21), while the psalmist’s hope is that God will redeem his soul from the hand of the grave and take him (Psa 49:16). From the verses: the dead are with their fathers’ generation in the dark, not living on elsewhere, and the hope beyond death is God’s redemption from the grave, not a life that goes on without it.",
+      "evidence": [
+        {
+          "ref": "Jdg.2.10"
+        },
+        {
+          "ref": "Ecc.1.4"
+        },
+        {
+          "ref": "Psa.49.20",
+          "to": "Psa.49.21"
+        },
+        {
+          "ref": "Psa.49.16"
+        }
+      ]
+    },
+    {
+      "topic": "faithful-to-all-generations",
+      "statement": "Generations pass, but Yahweh does not: his name is his memorial “to generation, generation” (Exo 3:15), his faithfulness is “to generation and generation” (Psa 100:5; 119:90), his throne and dominion last through them all (Lam 5:19; Psa 145:13; and in Daniel’s Aramaic, Dan 3:33; 4:31), and he keeps covenant “to a thousand generations” with those who love him (Deu 7:9; Psa 105:8). Mary sings that his mercy is “to generations of generations” on those who fear him (Luk 1:50), and Paul gives him glory in the ecclesia in Christ Jesus “to all the generations” (Eph 3:21). From the verses: what one generation is told of him, the next may trust, for he is the same to each (Psa 78:4–7).",
+      "evidence": [
+        {
+          "ref": "Exo.3.15"
+        },
+        {
+          "ref": "Psa.100.5"
+        },
+        {
+          "ref": "Psa.119.90"
+        },
+        {
+          "ref": "Lam.5.19"
+        },
+        {
+          "ref": "Psa.145.13"
+        },
+        {
+          "ref": "Dan.3.33"
+        },
+        {
+          "ref": "Dan.4.31"
+        },
+        {
+          "ref": "Deu.7.9"
+        },
+        {
+          "ref": "Psa.105.8"
+        },
+        {
+          "ref": "Luk.1.50"
+        },
+        {
+          "ref": "Eph.3.21"
+        },
+        {
+          "ref": "Psa.78.4",
+          "to": "Psa.78.7"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (לְדֹרֹתֵיכֶם, Lev 23:14, 21, 31, 41, 43) and Numbers 10:8. Bdb keys claimed: d.az.ac, d.az.aa, d.az.ab, d.az.ae, xd.ad.aa, xd.ad.ab, xd.ad.ac, xd.ad.ae. Left out: the places דֹּאר / דּוֹר Dor (d.az.ad), עֵין־דֹּר En-dor (p.ck.ag, root עינ), חַמֹּת דֹּאר Hammoth-dor (h.di.ai) and Aramaic דּוּרָא Dura (xd.ad.af, Dan 3:1), since places get no name entries. d.az.ad and p.ck.ag between them hold 43 tokens each, most of them the noun “generation” (Deu 7:9; 32:5; Psa 24:6 …) filed there by spelling; they are left unclaimed so the place’s count does not swell the noun’s. Left out as zero-token cross-references: d.ad.ad, d.ce.ae (דֹּר), m.am.ai, m.am.ay (מְדוּרָה, מְדֻרָה), xd.an.ab (דָּר), xm.aa.aj (מְדוֹר), xm.aa.an (מְדָר), xw.aa.ab (תְּדִירָא); and xd.ad.ad (מְדָר), which holds the same Dan 2:11; 4:22, 29; 5:21 tokens as xd.ad.ac. כַּדּוּר (k.ao.ac, keyed in the database to root כדר) holds the tokens of Isa 22:18; 29:3; Ezk 24:5 again; it is not claimed: the two Isaiah uses are כְּ + דּוּר. Ezk 24:5 is a qal imperative “pile” but sits under the noun’s key d.az.ab. The Aramaic participles דָּיְרִין/דָּיְרֵי (Dan 2:38; 3:31; 4:32; 6:26) and יְדוּרָן (Dan 4:9) have no bdb key in the database, so lexicon-support undercounts the Aramaic verb. Peshitta words found from SEDRA root 472 DR (lexemes 747 ܕܘܪ dwell, no NT tokens; 748 ܕܝܪܐ; 749 ܕܪܐ; 750 ܕܪܬܐ; 751 ܡܕܝܪܐ) via the BFBS word list; the brief found no Peshitta root. The Peshitta mostly renders γενεά by ܫܪܒܬܐ (Mat 24:34 etc.), a different root; ܕܪܐ is used in the verses cited. Isa 53:8 (וְאֶת דּוֹרוֹ מִי יְשׂוֹחֵחַ) is cited only through its quotation in Act 8:33 and is not given a sense: whether דּוֹר there is “his generation” (contemporaries) or “his posterity” is left open. Cognates not followed: Geʿez and Tigre forms in Fisher p. 69 (OCR garbled: tadārara “dine reclining in a circle”, dar “time, age”, Tigre dar “house; people”), Dillmann and Leslau not consulted; Akkadian duārum “surround” (Anderson and Moser AKK002011) not checked in Oracc; Sabaic not searched. Segert’s glossary entry for Ugaritic dr not checked (the local scan directory is empty); Fisher is cited from OCR only, page image unverified. Krahmalkov read from the text layer only. Open questions: (1) Isa 38:12 as “dwelling” rather than “lifetime”; (2) whether Arabic dāra should be named on the age sense (Lane gives time “coming round”, but no noun dawr “age” in the classical sources); (3) the AD 70 doctrine wording; (4) whether מְדוּרָה belongs with “go round” or only with the verb’s “pile”."
+}
