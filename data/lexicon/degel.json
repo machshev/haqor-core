@@ -1,0 +1,505 @@
+{
+  "id": "degel",
+  "root": "דגל",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "camp",
+    "army",
+    "wilderness",
+    "order",
+    "signs",
+    "love"
+  ],
+  "gloss": "standard, banner; the company ranged under it; set up banners, be bannered",
+  "summary": "דֶּגֶל is the standard of a camp of Israel in the wilderness and the company ranged under it: “each man by his דֶּגֶל, with the signs of his fathers’ house” they camped around the tent of meeting, and at the trumpets “the דֶּגֶל of the camp of Judah” set out first (Num 2:2–3; 10:14). The bride of the Song says of her beloved, “his דֶּגֶל over me is love” (Sng 2:4). The verb, found four times, is to set up banners in the name of God (Psa 20:6), and its participles describe the beloved as marked out among ten thousand and the bride as awe-inspiring “as the bannered ones” (Sng 5:10; 6:4, 10). Aramaic dgl is a military detachment in the Persian-period papyri.",
+  "words": [
+    {
+      "lemma": "דֶּגֶל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "standard, banner; the company under a standard",
+      "bdb": [
+        "d.al.ab"
+      ],
+      "cognate_ids": [
+        "arc-degel"
+      ],
+      "summary": "Fourteen uses: thirteen in Numbers, of the four camps of Israel in their order around the tent of meeting, and one in the Song. In Numbers the word stands both for the standard each camp gathered by and for the company itself that camped and set out under it.",
+      "senses": [
+        {
+          "id": "degel-standard",
+          "gloss": "standard, banner",
+          "definition": "The raised sign a company of Israel camped beside and marched under, distinct from the signs of the fathers’ houses; and, in the Song, a banner over a person, declaring whose they are.",
+          "evidence": [
+            {
+              "ref": "Num.2.2",
+              "role": "defining",
+              "note": "“Each man by his דֶּגֶל, with the אֹתֹת of his fathers’ house, the sons of Israel shall camp”: the standard beside the houses’ signs, by which each man finds his place."
+            },
+            {
+              "ref": "Num.1.52",
+              "role": "defining",
+              "note": "“Each man by his camp and each man by his דֶּגֶל, according to their armies”: the standard beside the camp it marks."
+            },
+            {
+              "ref": "Sng.2.4",
+              "role": "defining",
+              "note": "“He brought me to the house of wine, and his דֶּגֶל over me is love”: a banner raised over her."
+            }
+          ]
+        },
+        {
+          "id": "degel-company",
+          "gloss": "the company under a standard, a division of the camp",
+          "definition": "One of the four divisions of Israel’s camp, each of three tribes under a leader, named by its standard: what camps on one side of the tent of meeting and sets out in its turn.",
+          "cognate_ids": [
+            "ar-dajjala"
+          ],
+          "kin": [
+            "nidgal-bannered"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.2.3",
+              "role": "defining",
+              "note": "“The דֶּגֶל of the camp of Judah according to their armies” camps on the east, with Issachar and Zebulun beside it (Num 2:5–9)."
+            },
+            {
+              "ref": "Num.2.10",
+              "note": "The דֶּגֶל of the camp of Reuben, to the south."
+            },
+            {
+              "ref": "Num.2.18",
+              "note": "The דֶּגֶל of the camp of Ephraim, to the west."
+            },
+            {
+              "ref": "Num.2.25",
+              "note": "The דֶּגֶל of the camp of Dan, to the north."
+            },
+            {
+              "ref": "Num.2.17",
+              "role": "defining",
+              "note": "The tent of meeting sets out with the Levites in the midst of the camps; “as they camp, so they set out, each man in his place, לְדִגְלֵיהֶם”."
+            },
+            {
+              "ref": "Num.2.31",
+              "note": "Dan’s camp “shall set out last, לְדִגְלֵיהֶם”."
+            },
+            {
+              "ref": "Num.2.34",
+              "note": "“So they camped לְדִגְלֵיהֶם and so they set out, each man by his clans.”"
+            },
+            {
+              "ref": "Num.10.14",
+              "role": "defining",
+              "note": "“The דֶּגֶל of the camp of the sons of Judah set out first according to their armies, and over his army was Nahshon”: the company, not only its flag, sets out."
+            },
+            {
+              "ref": "Num.10.18"
+            },
+            {
+              "ref": "Num.10.22"
+            },
+            {
+              "ref": "Num.10.25",
+              "role": "defining",
+              "note": "“The דֶּגֶל of the camp of the sons of Dan, the rearguard of all the camps, set out.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τάγμα",
+          "gloss": "an ordered company, a rank or division",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.2.3, דֶּגֶל → τάγμα; Num.10.14 and Num.10.25 the same; τάγμα renders דֶּגֶל ×10"
+            },
+            {
+              "ref": "1Co.15.23",
+              "note": "“Each in his own τάγματι: Christ the firstfruits, then those who are Christ’s at his coming.” The New Testament’s only use of the word."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מַחֲנֶה",
+            "note": "“Camp”, beside it: each man by his camp and by his standard, and the standard is the camp’s.",
+            "evidence": [
+              {
+                "ref": "Num.1.52",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.2.3"
+              }
+            ]
+          },
+          {
+            "lemma": "אוֹת",
+            "note": "“Sign”: the signs of the fathers’ houses, beside the camp’s standard.",
+            "evidence": [
+              {
+                "ref": "Num.2.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "צָבָא",
+            "note": "“Army”: each standard sets out “according to their armies”, and a leader is over its army.",
+            "evidence": [
+              {
+                "ref": "Num.10.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.2.10"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "דֶּגֶל מַחֲנֵה",
+            "gloss": "the standard of the camp of (a tribe): one of the four divisions",
+            "evidence": [
+              {
+                "ref": "Num.2.3"
+              },
+              {
+                "ref": "Num.2.10"
+              },
+              {
+                "ref": "Num.2.18"
+              },
+              {
+                "ref": "Num.2.25"
+              },
+              {
+                "ref": "Num.10.14"
+              },
+              {
+                "ref": "Num.10.18"
+              },
+              {
+                "ref": "Num.10.22"
+              },
+              {
+                "ref": "Num.10.25"
+              }
+            ]
+          },
+          {
+            "phrase": "אִישׁ עַל־דִּגְלוֹ",
+            "gloss": "each man by his standard: in his appointed place",
+            "evidence": [
+              {
+                "ref": "Num.1.52"
+              },
+              {
+                "ref": "Num.2.2"
+              }
+            ]
+          },
+          {
+            "phrase": "לְדִגְלֵיהֶם",
+            "gloss": "by their standards: in their divisions, in order",
+            "evidence": [
+              {
+                "ref": "Num.2.17"
+              },
+              {
+                "ref": "Num.2.31"
+              },
+              {
+                "ref": "Num.2.34"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "דָּגַל",
+      "pos": "verb",
+      "gloss": "set up banners; (passive) bannered, marked out",
+      "bdb": [
+        "d.al.ac"
+      ],
+      "summary": "Four uses, two in each stem. The setting up of banners (Psa 20:6) and the “bannered ones” (Sng 6:4, 10) are plainly from the noun. דָּגוּל in Sng 5:10 is read here the same way, marked out as by a banner; Akkadian dagālu “look at” would give “looked upon, conspicuous”, but that link is not established.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "set up banners; (passive participle) marked out, conspicuous",
+          "senses": [
+            {
+              "id": "dagal-set-banners",
+              "gloss": "set up banners",
+              "definition": "To raise standards, as an army does: Israel’s king and people lift their banners in the name of their God, rejoicing in the salvation he gives.",
+              "cognate_ids": [
+                "arc-degel"
+              ],
+              "kin": [
+                "degel-standard"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.20.6",
+                  "role": "defining",
+                  "note": "“We will shout for joy in your salvation, and in the name of our God נִדְגֹּל”, set beside the day of trouble (Psa 20:2) and against those who trust in chariots and horses (Psa 20:8)."
+                }
+              ]
+            },
+            {
+              "id": "dagul-marked-out",
+              "gloss": "marked out, conspicuous (passive participle)",
+              "definition": "Of the beloved: standing out among a multitude, as a banner stands above a host.",
+              "cognate_ids": [
+                "akk-dagalu"
+              ],
+              "kin": [
+                "degel-standard"
+              ],
+              "evidence": [
+                {
+                  "ref": "Sng.5.10",
+                  "role": "defining",
+                  "note": "“My beloved is dazzling and ruddy, דָּגוּל among ten thousand”: one picked out of a myriad, described limb by limb in the verses that follow (Sng 5:11–16)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be bannered, ranged under banners (participle: the bannered ones)",
+          "senses": [
+            {
+              "id": "nidgal-bannered",
+              "gloss": "bannered ones, hosts under their standards",
+              "definition": "The feminine plural participle as a noun: those ranged under banners, an awe-inspiring sight. Beside cities in Sng 6:4 it reads as bannered hosts; beside dawn, moon and sun in Sng 6:10 it may be the hosts of heaven, the stars in their order.",
+              "cognate_ids": [
+                "arc-degel"
+              ],
+              "kin": [
+                "degel-company"
+              ],
+              "evidence": [
+                {
+                  "ref": "Sng.6.4",
+                  "role": "defining",
+                  "note": "“Beautiful as Tirzah, comely as Jerusalem, אֲיֻמָּה כַּנִּדְגָּלוֹת”: terrible as the bannered ones."
+                },
+                {
+                  "ref": "Sng.6.10",
+                  "role": "defining",
+                  "note": "“Who is she who looks down like the dawn, fair as the moon, clear as the sun, אֲיֻמָּה כַּנִּדְגָּלוֹת?” The fourth in a row of heavenly lights."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τάσσω",
+          "gloss": "draw up in order, appoint",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Sng.6.4, נִדְגָּלוֹת → τεταγμέναι; Sng.6.10 the same (Psa.20.6 → μεγαλυνθησόμεθα and Sng.5.10 → ἐκλελοξισμένος render other readings)"
+            },
+            {
+              "ref": "Luk.7.8",
+              "note": "The centurion: “I also am a man ὑπὸ ἐξουσίαν τασσόμενος, having soldiers under me”: the military sense."
+            },
+            {
+              "ref": "Rom.13.1",
+              "note": "“The powers that be are τεταγμέναι by God.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רָנַן",
+            "note": "“Shout for joy” in God’s salvation, the line before “we will set up banners”.",
+            "evidence": [
+              {
+                "ref": "Psa.20.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "תִּרְצָה",
+            "note": "Tirzah and Jerusalem, the cities the bride is likened to beside the bannered ones.",
+            "evidence": [
+              {
+                "ref": "Sng.6.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שַׁחַר",
+            "note": "Dawn, moon (לְבָנָה) and sun (חַמָּה), the lights the bannered ones are listed with.",
+            "evidence": [
+              {
+                "ref": "Sng.6.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֲיֻמָּה כַּנִּדְגָּלוֹת",
+            "gloss": "awe-inspiring as the bannered ones",
+            "evidence": [
+              {
+                "ref": "Sng.6.4"
+              },
+              {
+                "ref": "Sng.6.10"
+              }
+            ]
+          },
+          {
+            "phrase": "דָּגוּל מֵרְבָבָה",
+            "gloss": "marked out among ten thousand",
+            "evidence": [
+              {
+                "ref": "Sng.5.10"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-degel",
+      "lang": "arc",
+      "form": "דגל",
+      "translit": "dgl, diḡlā",
+      "gloss": "military detachment, regiment; (Qumran astronomy) a sign of the seasons",
+      "relation": "cognate",
+      "note": "In the Persian-period Aramaic papyri a man is named by his דגל, the regiment he belongs to: “Qoniah son of Zadok, a Judean of the דגל of Atrophernes” (TAD B2.2), and an officer is רבדגל, “chief of the detachment”. This is the company sense of Num 2 and 10, a body of men under its commander. In the Qumran Aramaic Enoch the plural is used of the heavenly signs that mark the seasons, which bears on the bannered ones beside the sun and moon in Sng 6:10.",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "dgl, dglˀ n.m. military detachment; carrying pole; (astron.) seasonal sign",
+          "url": "https://cal.huc.edu/oneentry.php?lemma=dgl%20N&cits=all",
+          "note": "TAD B2.2 R.9 qwnyh br ṣdq yhwdy ldgl ˀtrwprn; TAD D22.7:1 mn dgl nqmn; ADAB B5 R.7 bdglˀ; 4QEnastr b 28:1 ldglyhwn; derivative rbdgl “chief of detachment”."
+        }
+      ]
+    },
+    {
+      "id": "akk-dagalu",
+      "lang": "akk",
+      "form": "dagālu; diglu",
+      "translit": "dagālu, diglu",
+      "gloss": "look at, look upon, wait for, obey; (diglu) sight, vision",
+      "relation": "possible",
+      "note": "If דֶּגֶל is “what is looked at”, the sign seen from afar, and דָּגוּל “looked upon, conspicuous”, the Akkadian verb would stand behind the root. No Akkadian word for a standard is formed from it, so the link rests on the sense of the passive participle in Sng 5:10 alone and is recorded as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008220, dagālu [see] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000041420, diglu [vision] N"
+        }
+      ]
+    },
+    {
+      "id": "ar-dajjala",
+      "lang": "ar",
+      "form": "دَجَّالَةٌ",
+      "translit": "dajjāla",
+      "gloss": "a great company of men journeying together, covering the ground by their number",
+      "relation": "possible",
+      "note": "Arabic ج answers to Hebrew ג. Lane’s sources give دَجَّالَةٌ as a great company journeying together, which is close to a דֶּגֶל of Israel on the march (Num 10:14–25). The Arabic root’s main sense is “cover, smear over” (and so “lie, conceal the truth”, as in Syriac), from which Lane’s sources derive the company as covering the ground; so the likeness may be chance, and it is recorded as possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 853, دَجَّالٌ (n12145), دَجَّالَةٌ (n12146)"
+        }
+      ]
+    },
+    {
+      "id": "syc-daggel",
+      "lang": "syc",
+      "form": "ܕܓܠ",
+      "translit": "daggel; daggālā",
+      "gloss": "lie, speak falsely; (adj./noun) false, liar",
+      "relation": "cognate",
+      "note": "The Peshitta’s root דגל means to lie (with Arabic دَجَلَ “he lied”, Lane p. 853, and Jewish Aramaic Pa. דַּגֵּיל “be tricky”, Targ. Prov 16:10). It answers to no word of the Hebrew root: scripture’s דגל has nothing of deceit in it. It is recorded so that the separate sense of these consonants in Aramaic and Arabic is not lost; whether it is another older root in the same spelling, or the Arabic sense “cover” lies behind both, is not known.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexemes 654 DGL (lie; speak falsely), 655 DGLA (false; liar), 656 DGLOTA (falsity; lie), root 417 DGL"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דְּגַל (Pa. דַּגֵּיל)",
+          "note": "Targ. Prov. XVI, 10 לא נְדַגֵּיל פומיה."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "each-in-his-own-order",
+      "statement": "Israel camped by its standards around the tent of meeting, each man in his place, and set out in fixed order at the blowing of the silver trumpets: Judah’s standard first, Dan’s last (Num 2:2, 17; 10:2, 5–6, 14, 25). The Greek for דֶּגֶל in those chapters is τάγμα, and Paul uses that word once, of the resurrection: “each in his own τάγμα: Christ the firstfruits, then those who are Christ’s at his coming” (1Co 15:23), when the trumpet sounds and the dead are raised (1Co 15:52; 1Th 4:16). The firstfruits are the sheaf waved before Yahweh on the morrow after the sabbath (Lev 23:10–11), and Paul calls Christ “the firstfruits of those who have fallen asleep” (1Co 15:20). From the verses: the raising of the dead is not a confusion but a march in order, one company after another, as Israel’s standards set out at the trumpet; Christ has gone first, and his own follow at his coming. Paul does not cite Numbers; the link is his word and the trumpet.",
+      "evidence": [
+        {
+          "ref": "Num.2.2"
+        },
+        {
+          "ref": "Num.2.17"
+        },
+        {
+          "ref": "Num.10.2"
+        },
+        {
+          "ref": "Num.10.5",
+          "to": "Num.10.6"
+        },
+        {
+          "ref": "Num.10.14"
+        },
+        {
+          "ref": "Num.10.25"
+        },
+        {
+          "ref": "1Co.15.20"
+        },
+        {
+          "ref": "1Co.15.23"
+        },
+        {
+          "ref": "1Co.15.52"
+        },
+        {
+          "ref": "1Th.4.16"
+        },
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.11"
+        }
+      ]
+    }
+  ],
+  "note": "BDB files the four verb tokens under two keys, d.al.aa (“look, behold”, for Sng 5:10, by way of Akkadian dagālu) and d.al.ac (denominative, “set up a standard”); the corpus gives every token both keys, so the one verb here claims only d.al.ac and leaves d.al.aa unclaimed, to avoid double counting. If the reviewer prefers, Sng 5:10 could become its own verb under d.al.aa. Arabic دَقَل daqal (a kind of date palm; a mast), which Wiktionary links to דֶּגֶל, is left out: Arabic ق does not answer to Hebrew ג, and Lane gives no sense near a standard. The Septuagint reads Sng 2:4 as an imperative (τάξατε) and Psa 20:6 as נגדל (μεγαλυνθησόμεθα); neither bears on the Hebrew. Not yet followed: the Peshitta’s rendering of דֶּגֶל in Num 2 and 10 and of Sng 2:4; Tigre dagal “army” (no Tigre dictionary in sources.json). The doctrine item rests on the Septuagint bridge τάγμα and should be weighed by the reviewer."
+}
