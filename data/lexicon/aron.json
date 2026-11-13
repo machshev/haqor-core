@@ -1,0 +1,696 @@
+{
+  "id": "aron",
+  "root": "ארנ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "tabernacle",
+    "covenant",
+    "worship",
+    "presence-of-god",
+    "burial",
+    "plants"
+  ],
+  "gloss": "chest, box; coffin; the ark of the covenant",
+  "summary": "אֲרוֹן is a chest or box: a coffin for Joseph’s embalmed body (Gen 50:26), the chest with a hole in its lid for the money brought to Yahweh’s house (2Ki 12:10; 2Ch 24:8), and above all the ark, the gold-covered chest of acacia wood that held the tablets of the testimony and carried the כַּפֹּרֶת, from above which Yahweh spoke between the cherubim (Exo 25:10–22; Deu 10:1–5). It is named from what it held and whose it was: the ark of the testimony, of the covenant of Yahweh, of God (Exo 25:22; Num 10:33; 1Sa 3:3). Phoenician ʾrn, Ugaritic ảrn and Akkadian arānu are the same word, box and coffin. The pine אֹרֶן (Isa 44:14) shares the spelling but answers to Akkadian erēnu, cedar, and its link to the chest is not clear.",
+  "words": [
+    {
+      "lemma": "אֲרוֹן",
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "chest, box; coffin; the ark",
+      "bdb": [
+        "a.fw.ab"
+      ],
+      "cognate_ids": [
+        "phn-arn",
+        "uga-arn",
+        "akk-aranu",
+        "arc-arona"
+      ],
+      "summary": "A closed wooden chest. It is masculine almost everywhere, but feminine in 1Sa 4:17 (נִלְקָחָה) and 2Ch 8:11 (בָּאָה). Of its 202 uses all but three are the ark of the tabernacle and temple, nearly always named by what it bears: the testimony, the covenant, God, Yahweh.",
+      "senses": [
+        {
+          "id": "chest",
+          "gloss": "chest, box (for money)",
+          "definition": "A wooden box with a lid, set at the door of Yahweh’s house so that the money brought in could be put into it through a hole bored in the lid, then counted out when it was full.",
+          "evidence": [
+            {
+              "ref": "2Ki.12.10",
+              "role": "defining",
+              "note": "Jehoiada “took אֲרוֹן אֶחָד and bored a hole in its lid (דַּלְתּוֹ)”, set it beside the altar, and the doorkeepers put into it all the money brought to the house."
+            },
+            {
+              "ref": "2Ki.12.11",
+              "role": "defining",
+              "note": "“When they saw that the money was much בָּאָרוֹן”, the scribe and high priest bagged and counted it."
+            },
+            {
+              "ref": "2Ch.24.8",
+              "note": "Joash commanded, “and they made אֲרוֹן אֶחָד and set it at the gate of the house of Yahweh, outside”."
+            },
+            {
+              "ref": "2Ch.24.10",
+              "note": "The princes and people “cast into the אָרוֹן until it was full”."
+            },
+            {
+              "ref": "2Ch.24.11",
+              "note": "The Levites brought the chest to the king’s office, emptied it and returned it to its place, day by day."
+            }
+          ]
+        },
+        {
+          "id": "coffin",
+          "gloss": "coffin",
+          "definition": "The chest a dead body is laid in: Joseph’s, in Egypt, in which his bones waited to be carried up to the land of promise.",
+          "evidence": [
+            {
+              "ref": "Gen.50.26",
+              "role": "defining",
+              "note": "“Joseph died … and they embalmed him, and he was put בָּאָרוֹן in Egypt.”"
+            },
+            {
+              "ref": "Gen.50.25",
+              "note": "He had made Israel swear to carry up his bones when God visited them."
+            },
+            {
+              "ref": "Exo.13.19",
+              "note": "Moses took Joseph’s bones with him out of Egypt."
+            }
+          ]
+        },
+        {
+          "id": "ark",
+          "gloss": "the ark (of the testimony, of the covenant)",
+          "definition": "The chest of acacia wood overlaid with gold that Moses was told to make, which held the two tablets of the covenant written by God, and on which lay the כַּפֹּרֶת with its two cherubim. It stood behind the veil in the most holy place; there Yahweh met Moses and spoke from between the cherubim, and it went before Israel in the wilderness and into the land.",
+          "evidence": [
+            {
+              "ref": "Exo.25.10",
+              "role": "defining",
+              "note": "“They shall make אֲרוֹן of acacia wood”, two and a half cubits by one and a half by one and a half."
+            },
+            {
+              "ref": "Exo.25.16",
+              "role": "defining",
+              "note": "“You shall put into the אָרֹן the testimony which I shall give you.”"
+            },
+            {
+              "ref": "Exo.25.21",
+              "note": "The כַּפֹּרֶת goes on the ark above, and the testimony inside."
+            },
+            {
+              "ref": "Exo.25.22",
+              "role": "defining",
+              "note": "“There I will meet with you, and speak with you from above the כַּפֹּרֶת, from between the two cherubim which are on אֲרֹן הָעֵדֻת.”"
+            },
+            {
+              "ref": "Exo.26.33",
+              "note": "The veil hangs so that the ark of the testimony is brought within it; the veil divides the holy place from the most holy."
+            },
+            {
+              "ref": "Exo.40.20",
+              "note": "Moses put the testimony into the ark, the poles on it, and the כַּפֹּרֶת above."
+            },
+            {
+              "ref": "Lev.16.2",
+              "note": "Aaron may not come at any time within the veil “before the כַּפֹּרֶת which is on the אָרֹן, that he die not; for I will appear in the cloud upon the כַּפֹּרֶת”."
+            },
+            {
+              "ref": "Num.4.5",
+              "note": "On the march Aaron and his sons cover the ark of the testimony with the screening veil."
+            },
+            {
+              "ref": "Num.7.89",
+              "role": "defining",
+              "note": "Moses “heard the voice speaking to him from above the כַּפֹּרֶת that was on אֲרֹן הָעֵדֻת, from between the two cherubim”."
+            },
+            {
+              "ref": "Num.10.33",
+              "role": "defining",
+              "note": "“אֲרוֹן בְּרִית־יְהוָה went before them three days’ journey, to search out a resting place for them.”"
+            },
+            {
+              "ref": "Num.10.35",
+              "note": "“When the ark set out, Moses said, Rise up, Yahweh, and let your enemies be scattered.”"
+            },
+            {
+              "ref": "Num.14.44",
+              "note": "Those who presumed to go up after the evil report went without it: the ark of the covenant and Moses did not leave the camp."
+            },
+            {
+              "ref": "Deu.10.1",
+              "role": "defining",
+              "note": "“Hew two tablets of stone like the first … and make yourself אֲרוֹן עֵץ.”"
+            },
+            {
+              "ref": "Deu.10.5",
+              "role": "defining",
+              "note": "“I put the tablets בָּאָרוֹן which I had made, and there they are.”"
+            },
+            {
+              "ref": "Deu.10.8",
+              "note": "The tribe of Levi was separated to carry the ark of the covenant of Yahweh."
+            },
+            {
+              "ref": "Deu.31.26",
+              "note": "The book of the law is put beside the ark as a witness against Israel."
+            },
+            {
+              "ref": "Jos.3.11",
+              "note": "“The ark of the covenant of the Lord of all the earth passes over before you into the Jordan.”"
+            },
+            {
+              "ref": "Jos.4.7",
+              "note": "The waters of the Jordan were cut off before the ark."
+            },
+            {
+              "ref": "Jos.6.6",
+              "note": "At Jericho the priests carry the ark and seven shofars before it."
+            },
+            {
+              "ref": "1Sa.3.3",
+              "note": "Samuel lay in Yahweh’s temple, “where the ark of God was”."
+            },
+            {
+              "ref": "1Sa.4.11",
+              "note": "The ark of God was taken by the Philistines."
+            },
+            {
+              "ref": "1Sa.5.3",
+              "note": "Dagon fallen on his face before the ark of Yahweh."
+            },
+            {
+              "ref": "2Sa.6.2",
+              "note": "David brings up “the ark of God, which is called by the name, the name of Yahweh of hosts, who dwells between the cherubim upon it”."
+            },
+            {
+              "ref": "2Sa.7.2",
+              "note": "“I dwell in a house of cedar, but the ark of God dwells within curtains.”"
+            },
+            {
+              "ref": "1Ki.8.6",
+              "note": "The priests brought the ark into the most holy place of Solomon’s house, under the wings of the cherubim."
+            },
+            {
+              "ref": "1Ki.8.9",
+              "role": "defining",
+              "note": "“There was nothing בָּאָרוֹן except the two tablets of stone which Moses put there at Horeb.”"
+            },
+            {
+              "ref": "1Ki.8.21",
+              "note": "“A place for the ark, in which is the covenant of Yahweh which he made with our fathers.”"
+            },
+            {
+              "ref": "Psa.132.8",
+              "note": "“Arise, Yahweh, into your rest, you and the ark of your strength.”"
+            },
+            {
+              "ref": "Jer.3.16",
+              "note": "In days to come they will no longer say “the ark of the covenant of Yahweh”, nor will it be made again."
+            },
+            {
+              "ref": "2Ch.35.3",
+              "note": "Josiah has the holy ark set in Solomon’s house: “it shall no longer be a burden on your shoulders”."
+            },
+            {
+              "ref": "Heb.9.4",
+              "note": "The ark of the covenant (κιβωτὸν τῆς διαθήκης), overlaid with gold, in the most holy place, with the tablets of the covenant."
+            },
+            {
+              "ref": "Rev.11.19",
+              "note": "John sees God’s temple in heaven opened, and in it “the ark of his covenant”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κιβωτός",
+          "gloss": "chest, box; the ark",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.25.10, אֲרוֹן → κιβωτόν; Num.10.33, אֲרוֹן → κιβωτός; Deu.10.2, בָּאָרוֹן → κιβωτόν; 2Ki.12.10, אֲרוֹן → κιβωτόν; κιβωτός renders אֲרוֹן ×176"
+            },
+            {
+              "ref": "Heb.9.4",
+              "role": "defining",
+              "note": "“The ark of the covenant (τὴν κιβωτὸν τῆς διαθήκης) overlaid all round with gold.”"
+            },
+            {
+              "ref": "Rev.11.19",
+              "note": "“The ark of his covenant (ἡ κιβωτὸς τῆς διαθήκης αὐτοῦ) was seen in his temple.”"
+            }
+          ]
+        },
+        {
+          "lemma": "γλωσσόκομον",
+          "gloss": "money box",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ch.24.8, אֲרוֹן → γλωσσόκομον; 2Ch.24.11 (twice) the same; γλωσσόκομον renders אֲרוֹן ×3, all the temple money chest"
+            },
+            {
+              "ref": "Jhn.12.6",
+              "note": "Judas “had the γλωσσόκομον and carried what was put in it”: the disciples’ money box."
+            },
+            {
+              "ref": "Jhn.13.29",
+              "note": "“Because Judas had the γλωσσόκομον.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "הֲדֹם רַגְלַיִם",
+            "note": "David’s house of rest is “for the ark of the covenant of Yahweh, and for the footstool of our God”: the ark is the place of his feet.",
+            "evidence": [
+              {
+                "ref": "1Ch.28.2"
+              }
+            ]
+          },
+          {
+            "lemma": "אַתָּה (Yahweh)",
+            "note": "“Arise, Yahweh, into your rest, you and the ark of your strength”: the ark goes where Yahweh goes.",
+            "evidence": [
+              {
+                "ref": "Psa.132.8"
+              },
+              {
+                "ref": "2Ch.6.41"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֲרוֹן הָעֵדֻת",
+            "gloss": "the ark of the testimony",
+            "evidence": [
+              {
+                "ref": "Exo.25.22"
+              },
+              {
+                "ref": "Exo.26.33"
+              },
+              {
+                "ref": "Num.4.5"
+              },
+              {
+                "ref": "Num.7.89"
+              },
+              {
+                "ref": "Jos.4.16"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲרוֹן בְּרִית־יְהוָה",
+            "gloss": "the ark of the covenant of Yahweh",
+            "evidence": [
+              {
+                "ref": "Num.10.33"
+              },
+              {
+                "ref": "Num.14.44"
+              },
+              {
+                "ref": "Deu.10.8"
+              },
+              {
+                "ref": "Deu.31.26"
+              },
+              {
+                "ref": "Jos.4.7"
+              },
+              {
+                "ref": "1Sa.4.3"
+              },
+              {
+                "ref": "Jer.3.16"
+              },
+              {
+                "ref": "1Ch.28.2"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲרוֹן הַבְּרִית",
+            "gloss": "the ark of the covenant",
+            "evidence": [
+              {
+                "ref": "Jos.3.6"
+              },
+              {
+                "ref": "Jos.3.11"
+              },
+              {
+                "ref": "Jos.6.6"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲרוֹן הָאֱלֹהִים",
+            "gloss": "the ark of God",
+            "evidence": [
+              {
+                "ref": "1Sa.3.3"
+              },
+              {
+                "ref": "1Sa.4.11"
+              },
+              {
+                "ref": "1Sa.14.18"
+              },
+              {
+                "ref": "2Sa.6.2"
+              },
+              {
+                "ref": "2Sa.7.2"
+              },
+              {
+                "ref": "2Sa.15.25"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲרוֹן יְהוָה",
+            "gloss": "the ark of Yahweh",
+            "evidence": [
+              {
+                "ref": "Jos.3.13"
+              },
+              {
+                "ref": "Jos.6.6"
+              },
+              {
+                "ref": "1Sa.5.3"
+              },
+              {
+                "ref": "1Sa.6.19"
+              },
+              {
+                "ref": "2Ch.8.11"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲרוֹן אֱלֹהֵי יִשְׂרָאֵל",
+            "gloss": "the ark of the God of Israel",
+            "evidence": [
+              {
+                "ref": "1Sa.5.7"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲרוֹן עֻזֶּךָ",
+            "gloss": "the ark of your strength",
+            "evidence": [
+              {
+                "ref": "Psa.132.8"
+              },
+              {
+                "ref": "2Ch.6.41"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲרוֹן הַקֹּדֶשׁ",
+            "gloss": "the holy ark",
+            "evidence": [
+              {
+                "ref": "2Ch.35.3"
+              }
+            ]
+          },
+          {
+            "phrase": "בִּנְסֹעַ הָאָרֹן",
+            "gloss": "when the ark set out",
+            "evidence": [
+              {
+                "ref": "Num.10.35"
+              },
+              {
+                "ref": "Num.10.36",
+                "note": "and “when it rested” (וּבְנֻחֹה): “Return, Yahweh, to the ten thousands of the thousands of Israel”."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֹרֶן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pine (or cedar), a timber tree",
+      "bdb": [
+        "a.fv.ac"
+      ],
+      "cognate_ids": [
+        "akk-erenu"
+      ],
+      "summary": "A tree planted and grown by the rain, which the idol-maker cuts for his fire and his god. Its one use does not fix the species. Its cognate is Akkadian erēnu, cedar, a different word from arānu, chest; so the link of the tree to the chest is not clear, and it may be another root of the same spelling.",
+      "senses": [
+        {
+          "gloss": "a timber tree, pine or cedar",
+          "definition": "A forest tree that a man plants and the rain makes grow, named with cedar, cypress and oak as wood for burning and for carving a god.",
+          "evidence": [
+            {
+              "ref": "Isa.44.14",
+              "role": "defining",
+              "note": "“He cuts down cedars for himself, and takes the cypress and the oak … he plants an אֹרֶן, and the rain makes it grow.”"
+            },
+            {
+              "ref": "Isa.44.15",
+              "note": "Half of the wood he burns, and of the rest he makes a god and bows down to it."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-arn",
+      "lang": "phn",
+      "form": "𐤀𐤓𐤍",
+      "translit": "ʾrn",
+      "gloss": "box; coffin",
+      "relation": "cognate",
+      "note": "An ivory box presented to Astarte (KAI 29), and the stone coffins of Ahiram of Byblos and Tabnit of Sidon (KAI 1; 13): “I lie in this ʾrn; whoever you are, do not open it.” Punic ḥrš ʾrnt is a coffin-maker, and Neo-Punic writes it arun. The same two uses as Hebrew, money box and Joseph’s coffin.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 72, ʾRN, pl. ʾRNT: 1. BOX, 2. COFFIN"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤀𐤓𐤍 (ʾrn)"
+        }
+      ]
+    },
+    {
+      "id": "uga-arn",
+      "lang": "uga",
+      "form": "𐎀𐎗𐎐",
+      "translit": "ảrn",
+      "gloss": "chest, box",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎗𐎐 (ảrn)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000007 arān [chest] N, UGC000570 arn [chest] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-aranu",
+      "lang": "akk",
+      "form": "arānu",
+      "translit": "arānu",
+      "gloss": "chest",
+      "relation": "cognate",
+      "note": "Set with the Hebrew, Punic and Ugaritic words under one Semitic *ʾarān, chest.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000007 arān [chest] N, AKK000749 arānu [chest] N; with HEB000684 ʾarown, PUN000218 ʾrn"
+        }
+      ]
+    },
+    {
+      "id": "arc-arona",
+      "lang": "arc",
+      "form": "אֲרוֹנָא",
+      "translit": "ʾărônāʾ",
+      "gloss": "chest, ark; coffin",
+      "relation": "cognate",
+      "note": "The Targum renders the ark of Exo 25:10 and Joseph’s coffin of Gen 50:26 by it; the Jerusalem Talmud uses it of a coffin carried out to burial. The Syriac ܐܪܘܢܐ, ark, chest, coffin, is the same word, though it may have been taken from the Hebrew.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲרוֹנָא",
+          "note": "Targ. Ex. 25:10; Targ. Gen. 50:26 (coffin); Y. Ber. II, 5c."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܐܪܘܢܐ (noun, etym. 2)"
+        }
+      ]
+    },
+    {
+      "id": "akk-erenu",
+      "lang": "akk",
+      "form": "erēnu",
+      "translit": "erēnu",
+      "gloss": "cedar; cedar-wood",
+      "relation": "cognate",
+      "note": "Common in Akkadian of the cedar and its timber. It answers to the tree אֹרֶן, not to the chest: arānu and erēnu are two Akkadian words, so the tree is likely another root of the same spelling. Whether the chest was first named from its wood is not shown by the evidence.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008730, erēnu [cedar] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000008730.html"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "presence-of-god",
+      "statement": "Yahweh told Moses, “There I will meet with you, and speak with you from above the כַּפֹּרֶת, from between the two cherubim which are on the ark of the testimony” (Exo 25:22), and Moses heard the voice speaking to him from there (Num 7:89). Aaron could not come before it at will, for Yahweh would appear in the cloud upon it (Lev 16:2). It is called by the name of Yahweh of hosts who dwells between the cherubim (2Sa 6:2), and set beside him as “you and the ark of your strength” (Psa 132:8) and as his footstool (1Ch 28:2). From the verses: the ark was the place on earth where Yahweh chose to meet and speak with Israel, the throne of a God who is not confined to it, whose seat is in heaven and whose footstool it was.",
+      "evidence": [
+        {
+          "ref": "Exo.25.22"
+        },
+        {
+          "ref": "Num.7.89"
+        },
+        {
+          "ref": "Lev.16.2"
+        },
+        {
+          "ref": "2Sa.6.2"
+        },
+        {
+          "ref": "Psa.132.8"
+        },
+        {
+          "ref": "1Ch.28.2"
+        },
+        {
+          "ref": "1Ki.8.27"
+        }
+      ]
+    },
+    {
+      "topic": "covenant",
+      "statement": "The ark was made to hold the testimony (Exo 25:16; Deu 10:1–5), and at the dedication of the temple “there was nothing in the ark except the two tablets of stone which Moses put there at Horeb” (1Ki 8:9); Solomon calls it the ark “in which is the covenant of Yahweh” (1Ki 8:21), and the book of the law lay beside it as a witness against Israel (Deu 31:26). So its names: the ark of the testimony, the ark of the covenant. From the verses: at the centre of Israel’s worship stood God’s written word, and over it the place where he met them; his presence among them went with his covenant, not apart from it.",
+      "evidence": [
+        {
+          "ref": "Exo.25.16"
+        },
+        {
+          "ref": "Deu.10.1",
+          "to": "Deu.10.5"
+        },
+        {
+          "ref": "1Ki.8.9"
+        },
+        {
+          "ref": "1Ki.8.21"
+        },
+        {
+          "ref": "Deu.31.26"
+        }
+      ]
+    },
+    {
+      "topic": "holiness",
+      "statement": "The ark was to be carried on the shoulders of the Levites, whom Yahweh chose for it (Deu 10:8; 1Ch 15:2), and covered by the priests before the march (Num 4:5). When the men of Beth-shemesh looked into it, and when Uzzah put out his hand to steady it on a cart, Yahweh struck them (1Sa 6:19; 2Sa 6:6–7), and David learned that “none may carry the ark of God but the Levites” (1Ch 15:2). From the verses: what Yahweh has made holy is handled his way, not by the best human judgement of the moment.",
+      "evidence": [
+        {
+          "ref": "Deu.10.8"
+        },
+        {
+          "ref": "Num.4.5"
+        },
+        {
+          "ref": "1Sa.6.19"
+        },
+        {
+          "ref": "2Sa.6.6",
+          "to": "2Sa.6.7"
+        },
+        {
+          "ref": "1Ch.15.2"
+        }
+      ]
+    },
+    {
+      "topic": "faith-not-objects",
+      "statement": "When Israel went up against Yahweh’s word, the ark did not go with them, and they were beaten (Num 14:44–45). When the elders fetched the ark to battle saying “that it may save us from the hand of our enemies”, Israel was beaten and the ark taken (1Sa 4:3, 10–11), and the glory was said to have gone from Israel (1Sa 4:21–22). Yet in Philistia Dagon fell before it (1Sa 5:3–4). Jeremiah foretells days when “they shall no more say, The ark of the covenant of Yahweh; it shall not come to mind, nor shall they remember it … nor shall it be made again”, because “they shall call Jerusalem the throne of Yahweh, and all the nations shall be gathered to it” (Jer 3:16–17). From the verses: the ark had power only as Yahweh’s, never as a charm in the hands of a disobedient people; and in the kingdom to come it will not be missed, since Yahweh’s throne will be Jerusalem itself.",
+      "evidence": [
+        {
+          "ref": "Num.14.44",
+          "to": "Num.14.45"
+        },
+        {
+          "ref": "1Sa.4.3"
+        },
+        {
+          "ref": "1Sa.4.10",
+          "to": "1Sa.4.11"
+        },
+        {
+          "ref": "1Sa.4.21",
+          "to": "1Sa.4.22"
+        },
+        {
+          "ref": "1Sa.5.3",
+          "to": "1Sa.5.4"
+        },
+        {
+          "ref": "Jer.3.16",
+          "to": "Jer.3.17"
+        }
+      ]
+    },
+    {
+      "topic": "rest",
+      "statement": "In the wilderness the ark went three days ahead of Israel “to search out a resting place (מְנוּחָה) for them”, and Moses’ words at its setting out and resting were “Rise up, Yahweh, and let your enemies be scattered” and “Return, Yahweh” (Num 10:33–36). David sought to build “a house of rest (מְנוּחָה) for the ark” (1Ch 28:2), and the psalm of its bringing up says “Arise, Yahweh, into your rest, you and the ark of your strength … this is my rest for ever; here I will dwell” (Psa 132:8, 14), words Solomon took up at the temple’s dedication (2Ch 6:41). Josiah could then say it was no longer a burden on the Levites’ shoulders (2Ch 35:3). From the verses: the ark’s journey from Sinai to Zion is Yahweh leading his people to rest and coming himself to rest among them.",
+      "evidence": [
+        {
+          "ref": "Num.10.33",
+          "to": "Num.10.36"
+        },
+        {
+          "ref": "1Ch.28.2"
+        },
+        {
+          "ref": "Psa.132.8"
+        },
+        {
+          "ref": "Psa.132.14"
+        },
+        {
+          "ref": "2Ch.6.41"
+        },
+        {
+          "ref": "2Ch.35.3"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (אֲרוֹן בְּרִית־יְהוָה, Num 10:33, 35). Proper names sharing the consonants are left out and get no name entries here: Arnon (a.fv.ah, a place), Ornan (a.fv.ag; 2Sa 24 spells him Araunah, so likely another root or foreign), Aran (a.fv.ab), Oren (a.fv.ad, perhaps the tree), Arnan (a.fv.af), and Arpachshad (a.fw.af) and Arpad (a.fw.ae, a place), which are filed near this root only alphabetically. The Ugaritic and Akkadian chest words are cited from Wiktionary and the Anderson–Moser root list only; DULAT and CAD should be checked for locators. Krahmalkov p. 72 is read from the OCR text’s page markers, not checked against the PDF. Gender: masculine save 1Sa 4:17 and 2Ch 8:11 (feminine verbs); hence mf. Whether אֹרֶן belongs here or is a homograph root remains open. κιβωτός in the New Testament also names Noah’s ark (Mat 24:38; Heb 11:7; 1Pe 3:20), which renders תֵּבָה, not this word."
+}
