@@ -1,0 +1,1502 @@
+{
+  "id": "laqach",
+  "root": "לקח",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "taking",
+    "receiving",
+    "marriage",
+    "election",
+    "teaching",
+    "feasts",
+    "death",
+    "mortality",
+    "war"
+  ],
+  "gloss": "take, take hold of; take to oneself, receive; be taken; what is received, teaching; spoil; tongs",
+  "summary": "לָקַח is to take: to take a thing in hand and so bring it, as Israel takes fruit and palm branches on the first day of Succoth (Lev 23:40); to take a woman as wife or a child as one’s own (Gen 24:4; Est 2:7); to take what is offered, a gift, a bribe, interest, or correction (Exo 23:8; Jer 7:28); to take a city or a captive; and to take away, a life, or a man from among men, as God took Enoch and Elijah (Gen 5:24; 2Ki 2:3). It is Yahweh’s word for choosing: he took Israel from Egypt to be his people (Exo 6:7; Deu 4:34) and David from the sheepfolds (2Sa 7:8). Man was taken from the ground and returns to it (Gen 3:19). From the verb come לֶקַח, teaching, what one receives (Deu 32:2; Pro 4:2), מַלְקוֹחַ, what is taken in war, and מֶלְקָחַיִם, the sanctuary’s tongs. Ugaritic, Phoenician, Moabite and Aramaic lqḥ and Akkadian leqû have the same sense, take and receive.",
+  "words": [
+    {
+      "lemma": "לָקַח",
+      "pos": "verb",
+      "gloss": "take; take to oneself, receive; take away; (passive) be taken",
+      "bdb": [
+        "l.bx.aa"
+      ],
+      "cognate_ids": [
+        "uga-lqh",
+        "phn-lqh",
+        "moab-lqh",
+        "akk-lequ",
+        "arc-leqach"
+      ],
+      "summary": "One of the commonest verbs of scripture, almost all in the qal. Its object is anything that can pass into someone’s hand or keeping: an object, an animal for the altar, a wife, a gift, a city, a life, a word of correction. Yahweh is often its subject, taking a man, a family or a nation for himself.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take, take hold of; bring; take as wife; receive, accept; capture; take away; choose",
+          "senses": [
+            {
+              "id": "take-in-hand",
+              "gloss": "take, take hold of, take in hand",
+              "definition": "To lay hold of a thing and take it up, often to use it, give it or carry it elsewhere; with לְ “for oneself”.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.6",
+                  "role": "defining",
+                  "note": "“She took of its fruit and ate, and gave also to her husband”: take, eat, give."
+                },
+                {
+                  "ref": "Gen.22.6",
+                  "role": "defining",
+                  "note": "Abraham “took in his hand the fire and the knife”."
+                },
+                {
+                  "ref": "Num.25.7",
+                  "note": "Phinehas “took a spear in his hand”."
+                },
+                {
+                  "ref": "Lev.23.40",
+                  "role": "defining",
+                  "note": "“You shall take for yourselves (וּלְקַחְתֶּם לָכֶם) on the first day fruit of goodly trees, branches of palms, boughs of leafy trees and willows of the brook, and rejoice before Yahweh your God seven days”: Succoth."
+                },
+                {
+                  "ref": "Exo.12.3",
+                  "note": "“They shall take for themselves each man a lamb”, on the tenth of the first month."
+                },
+                {
+                  "ref": "Gen.2.21",
+                  "to": "Gen.2.22",
+                  "note": "Yahweh God “took one of his ribs … and built the rib which he had taken from the man into a woman”."
+                },
+                {
+                  "ref": "Isa.6.6",
+                  "note": "The seraph has a coal “which he had taken with tongs from the altar”."
+                },
+                {
+                  "ref": "Jos.7.21",
+                  "role": "defining",
+                  "note": "Achan: “I coveted them and took them”: desire, then taking."
+                }
+              ]
+            },
+            {
+              "id": "bring-fetch",
+              "gloss": "take and bring, fetch",
+              "definition": "To take something so as to bring it to someone: fetch.",
+              "evidence": [
+                {
+                  "ref": "1Ki.17.10",
+                  "to": "1Ki.17.11",
+                  "role": "defining",
+                  "note": "Elijah to the widow: “Take (קְחִי) me a little water … take me a piece of bread in your hand.”"
+                },
+                {
+                  "ref": "Gen.18.5",
+                  "note": "“I will take (וְאֶקְחָה) a piece of bread”, i.e. fetch it for the guests."
+                },
+                {
+                  "ref": "Gen.27.13",
+                  "note": "Rebekah: “Go, take (קַח) them for me.”"
+                },
+                {
+                  "ref": "Exo.25.2",
+                  "role": "defining",
+                  "note": "“Speak to the sons of Israel that they take (וְיִקְחוּ) for me an offering”: bring."
+                },
+                {
+                  "ref": "Exo.27.20",
+                  "note": "“That they bring you pure beaten olive oil for the light.”"
+                }
+              ]
+            },
+            {
+              "id": "take-wife",
+              "gloss": "take (a woman) as wife; take (a child) as one’s own",
+              "definition": "To take a woman into one’s house as wife, the usual way of saying “marry”; once of taking an orphan as one’s daughter.",
+              "cognate_ids": [
+                "akk-liqutu"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.4.19",
+                  "role": "defining",
+                  "note": "“Lamech took to himself two wives.”"
+                },
+                {
+                  "ref": "Gen.24.4",
+                  "role": "defining",
+                  "note": "“Go to my country … and take a wife for my son Isaac.”"
+                },
+                {
+                  "ref": "Deu.24.1",
+                  "role": "defining",
+                  "note": "“When a man takes a woman and marries her (וּבְעָלָהּ)”."
+                },
+                {
+                  "ref": "Deu.25.5",
+                  "note": "The brother of the dead “shall take her to himself as wife”; quoted by the Sadducees, Mrk 12:19."
+                },
+                {
+                  "ref": "Exo.2.1",
+                  "note": "A man of the house of Levi “took a daughter of Levi”."
+                },
+                {
+                  "ref": "Lev.21.7",
+                  "to": "Lev.21.14",
+                  "note": "Whom a priest, and the high priest, may and may not take."
+                },
+                {
+                  "ref": "Hos.1.2",
+                  "note": "“Go, take for yourself a wife of whoredoms.”"
+                },
+                {
+                  "ref": "Est.2.7",
+                  "role": "defining",
+                  "note": "When Esther’s father and mother died, “Mordecai took her to himself as a daughter” (לְקָחָהּ … לוֹ לְבַת)."
+                }
+              ]
+            },
+            {
+              "id": "receive-accept",
+              "gloss": "take what is given, receive, accept",
+              "definition": "To take what another offers or gives: a gift, a price, a prayer; and, of words, to take them in and keep them.",
+              "evidence": [
+                {
+                  "ref": "Gen.33.11",
+                  "role": "defining",
+                  "note": "Jacob to Esau: “Take my blessing (gift) … and he urged him, and he took it.”"
+                },
+                {
+                  "ref": "2Ki.5.16",
+                  "note": "Elisha: “As Yahweh lives … I will not take”; Naaman urged him to take, and he refused."
+                },
+                {
+                  "ref": "Gen.23.13",
+                  "note": "Abraham: “I give the price of the field; take it from me.”"
+                },
+                {
+                  "ref": "Psa.6.10",
+                  "role": "defining",
+                  "note": "“Yahweh has heard my supplication; Yahweh will take (יִקָּח) my prayer”: parallel to שָׁמַע."
+                },
+                {
+                  "ref": "Pro.2.1",
+                  "role": "defining",
+                  "note": "“My son, if you take my words and treasure up my commandments with you.”"
+                },
+                {
+                  "ref": "Pro.1.3",
+                  "note": "The proverbs are given “to take (לָקַחַת) the instruction of insight”."
+                },
+                {
+                  "ref": "Pro.8.10",
+                  "note": "“Take my instruction and not silver.”"
+                },
+                {
+                  "ref": "Jer.7.28",
+                  "role": "defining",
+                  "note": "“The nation that did not listen to the voice of Yahweh its God, and did not take correction (מוּסָר).”"
+                },
+                {
+                  "ref": "Zep.3.2",
+                  "note": "“She did not listen to the voice, she did not take correction.”"
+                },
+                {
+                  "ref": "Jer.32.33",
+                  "note": "“Teaching them … they did not listen to take correction.”"
+                },
+                {
+                  "ref": "Pro.24.32",
+                  "note": "“I saw, I took correction.”"
+                },
+                {
+                  "ref": "Hos.14.3",
+                  "role": "defining",
+                  "note": "“Take with you words and return to Yahweh; say to him, ‘Take away all iniquity and take good (וְקַח טוֹב)’”: receive what is good."
+                }
+              ],
+              "kin": [
+                "leqach-teaching"
+              ],
+              "cognate_ids": [
+                "ar-laqiha",
+                "gez-laqqaha"
+              ]
+            },
+            {
+              "id": "take-bribe",
+              "gloss": "take a bribe, take interest",
+              "definition": "To take what is wrongly given or exacted: a bribe that blinds judgment, interest from a poor brother. Yahweh himself “does not take a bribe”.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.8",
+                  "role": "defining",
+                  "note": "“You shall not take a bribe, for the bribe blinds the clear-sighted and perverts the words of the righteous.”"
+                },
+                {
+                  "ref": "Deu.10.17",
+                  "role": "defining",
+                  "note": "Yahweh, “the great, mighty and fearful God, who does not lift faces and does not take a bribe”."
+                },
+                {
+                  "ref": "1Sa.8.3",
+                  "note": "Samuel’s sons “turned aside after gain and took bribes and perverted judgment”."
+                },
+                {
+                  "ref": "1Sa.12.3",
+                  "note": "Samuel: “Whose ox have I taken? … from whose hand have I taken a ransom?”"
+                },
+                {
+                  "ref": "Psa.15.5",
+                  "note": "He who may dwell on Yahweh’s hill “has not taken a bribe against the innocent”."
+                },
+                {
+                  "ref": "Lev.25.36",
+                  "role": "defining",
+                  "note": "“Do not take from him interest or increase, but fear your God, that your brother may live with you.”"
+                },
+                {
+                  "ref": "Ezk.18.8",
+                  "note": "The righteous man “has not taken increase”; the wicked son “has taken increase” and shall not live (Ezk 18:13)."
+                },
+                {
+                  "ref": "Ezk.18.13"
+                }
+              ]
+            },
+            {
+              "id": "capture",
+              "gloss": "take, capture (a city, people, spoil)",
+              "definition": "To take by force: a city, a land, captives, spoil, the vessels of a sanctuary.",
+              "evidence": [
+                {
+                  "ref": "Num.21.25",
+                  "role": "defining",
+                  "note": "“Israel took all these cities, and Israel dwelt in all the cities of the Amorites.”"
+                },
+                {
+                  "ref": "Gen.14.12",
+                  "role": "defining",
+                  "note": "The kings “took Lot … and his goods, and went”."
+                },
+                {
+                  "ref": "Deu.3.4",
+                  "note": "“We took all his cities at that time.”"
+                },
+                {
+                  "ref": "2Ki.15.29",
+                  "note": "Tiglath-pileser took Ijon, Abel-beth-maacah … and exiled them to Assyria."
+                },
+                {
+                  "ref": "2Ki.25.14",
+                  "to": "2Ki.25.15",
+                  "note": "The Babylonians took the bronze vessels of Yahweh’s house."
+                },
+                {
+                  "ref": "Jol.4.5",
+                  "note": "“You have taken my silver and my gold.”"
+                }
+              ]
+            },
+            {
+              "id": "take-away",
+              "gloss": "take away, remove; take (a life)",
+              "definition": "To take something or someone from where it was, so that it is there no more: a man’s goods, his life, Yahweh’s spirit, or a man himself, whom God takes away from among men.",
+              "evidence": [
+                {
+                  "ref": "Job.1.21",
+                  "role": "defining",
+                  "note": "“Yahweh gave and Yahweh has taken; blessed be the name of Yahweh”: the opposite of נָתַן."
+                },
+                {
+                  "ref": "Jon.4.3",
+                  "role": "defining",
+                  "note": "“Now, Yahweh, take my life (נַפְשִׁי) from me, for my death is better than my life.”"
+                },
+                {
+                  "ref": "1Ki.19.4",
+                  "note": "Elijah: “It is enough; now, Yahweh, take my life.”"
+                },
+                {
+                  "ref": "Psa.31.14",
+                  "note": "“They plotted to take my life.”"
+                },
+                {
+                  "ref": "Pro.1.19",
+                  "note": "Gain gotten by violence “takes away the life of its owners”."
+                },
+                {
+                  "ref": "Psa.51.13",
+                  "note": "“Do not take your holy spirit from me.”"
+                },
+                {
+                  "ref": "Gen.5.24",
+                  "role": "defining",
+                  "note": "“Enoch walked with God, and he was not, for God took him (לָקַח אֹתוֹ).”"
+                },
+                {
+                  "ref": "2Ki.2.3",
+                  "role": "defining",
+                  "note": "“Do you know that today Yahweh is taking your master from over your head?” Also 2Ki 2:5."
+                },
+                {
+                  "ref": "2Ki.2.5"
+                },
+                {
+                  "ref": "Psa.49.16",
+                  "role": "defining",
+                  "note": "“But God will redeem my soul from the hand of the grave, for he will take me (יִקָּחֵנִי).”"
+                },
+                {
+                  "ref": "Psa.73.24",
+                  "note": "“With your counsel you will guide me, and afterward take me to glory (or: with glory).”"
+                },
+                {
+                  "ref": "Psa.18.17",
+                  "note": "“He sent from on high, he took me; he drew me out of many waters”: taken away out of danger."
+                }
+              ]
+            },
+            {
+              "id": "take-for-himself",
+              "gloss": "(of Yahweh) take for himself, choose out",
+              "definition": "Yahweh takes a man or a people out from among others to be his: Abraham from beyond the River, Israel from Egypt, the Levites from among the sons of Israel, David from the flock. It stands beside בָּחַר “choose”.",
+              "evidence": [
+                {
+                  "ref": "Exo.6.7",
+                  "role": "defining",
+                  "note": "“I will take you to me for a people, and I will be to you God.”"
+                },
+                {
+                  "ref": "Deu.4.20",
+                  "role": "defining",
+                  "note": "“Yahweh has taken you and brought you out of the iron furnace, out of Egypt, to be to him a people of inheritance.”"
+                },
+                {
+                  "ref": "Deu.4.34",
+                  "role": "defining",
+                  "note": "“Has God tried to go and take for himself a nation from the midst of a nation, by trials, by signs and by wonders?”"
+                },
+                {
+                  "ref": "Num.3.12",
+                  "role": "defining",
+                  "note": "“I have taken the Levites from among the sons of Israel instead of every firstborn … and the Levites shall be mine.” Also Num 8:16, 18."
+                },
+                {
+                  "ref": "Num.8.16"
+                },
+                {
+                  "ref": "Jos.24.3",
+                  "note": "“I took your father Abraham from beyond the River.”"
+                },
+                {
+                  "ref": "2Sa.7.8",
+                  "role": "defining",
+                  "note": "“I took you from the pasture, from following the sheep, to be ruler over my people Israel.”"
+                },
+                {
+                  "ref": "Psa.78.70",
+                  "role": "defining",
+                  "note": "“He chose (וַיִּבְחַר) David his servant and took him from the sheepfolds.”"
+                },
+                {
+                  "ref": "Amo.7.15",
+                  "note": "“Yahweh took me from following the flock, and Yahweh said to me, Go, prophesy.”"
+                },
+                {
+                  "ref": "Hag.2.23",
+                  "note": "“I will take you, Zerubbabel … and make you as a signet, for I have chosen you.”"
+                }
+              ]
+            },
+            {
+              "id": "carry-away-heart",
+              "gloss": "take, carry away (the heart); captivate, win",
+              "definition": "Of what draws a person after it: a woman’s eyes, one’s own heart; and of the wise, who “takes souls”.",
+              "evidence": [
+                {
+                  "ref": "Pro.6.25",
+                  "role": "defining",
+                  "note": "“Do not desire her beauty in your heart, and let her not take you with her eyelids.”"
+                },
+                {
+                  "ref": "Job.15.12",
+                  "role": "defining",
+                  "note": "“Why does your heart carry you away (יִקָּחֲךָ), and why do your eyes flash?”"
+                },
+                {
+                  "ref": "Pro.11.30",
+                  "note": "“The fruit of the righteous is a tree of life, and he who takes souls (לֹקֵחַ נְפָשׂוֹת) is wise”: wins them, against the gain that takes away life (Pro 1:19)."
+                }
+              ],
+              "kin": [
+                "leqach-persuasion"
+              ]
+            },
+            {
+              "gloss": "take up (words, vengeance)",
+              "definition": "In set phrases: to take up vengeance, to take up one’s tongue to speak, to take up a curse.",
+              "evidence": [
+                {
+                  "ref": "Isa.47.3",
+                  "role": "defining",
+                  "note": "“I will take vengeance (נָקָם אֶקָּח), and I will spare no man.”"
+                },
+                {
+                  "ref": "Jer.23.31",
+                  "role": "defining",
+                  "note": "The prophets “who take their tongue and say, ‘He says’”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be taken, be captured, be taken away",
+          "senses": [
+            {
+              "gloss": "be taken, captured, taken away",
+              "definition": "Passive of the qal: of the ark taken by the Philistines, of Elijah taken from Elisha, of Esther taken to the king’s house, of a man taken away in his iniquity.",
+              "evidence": [
+                {
+                  "ref": "1Sa.4.11",
+                  "role": "defining",
+                  "note": "“The ark of God was taken, and the two sons of Eli died.” Also 1Sa 4:17, 19, 21, 22."
+                },
+                {
+                  "ref": "1Sa.4.22",
+                  "note": "“The glory has departed from Israel, for the ark of God has been taken.”"
+                },
+                {
+                  "ref": "2Ki.2.9",
+                  "role": "defining",
+                  "note": "Elijah: “Ask what I shall do for you before I am taken from you.”"
+                },
+                {
+                  "ref": "Est.2.8",
+                  "note": "“Esther was taken to the king’s house.” Also Est 2:16."
+                },
+                {
+                  "ref": "Ezk.33.6",
+                  "role": "defining",
+                  "note": "If the sword comes and takes a life, “he is taken away in his iniquity, but his blood I will require at the watchman’s hand”."
+                },
+                {
+                  "ref": "1Sa.21.7",
+                  "note": "The showbread, “on the day it was taken away”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be taken (from, away, captive); with the qal passive",
+          "senses": [
+            {
+              "id": "taken-from-ground",
+              "gloss": "be taken from (the ground, the man)",
+              "definition": "Of where man and woman came from: the man from the ground, the woman from the man.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.19",
+                  "role": "defining",
+                  "note": "“Until you return to the ground, for from it you were taken; for dust you are, and to dust you will return.”"
+                },
+                {
+                  "ref": "Gen.3.23",
+                  "note": "Sent out of Eden “to work the ground from which he was taken”."
+                },
+                {
+                  "ref": "Gen.2.23",
+                  "role": "defining",
+                  "note": "“She shall be called woman (אִשָּׁה), for from man (אִישׁ) she was taken.”"
+                },
+                {
+                  "ref": "Job.28.2",
+                  "note": "“Iron is taken from the dust” (qal passive)."
+                }
+              ]
+            },
+            {
+              "gloss": "be taken away, taken captive",
+              "definition": "To be carried off by force, or taken away from where one was.",
+              "evidence": [
+                {
+                  "ref": "Isa.49.24",
+                  "to": "Isa.49.25",
+                  "role": "defining",
+                  "note": "“Shall the prey be taken from the mighty? … Even the captives of the mighty shall be taken, and the prey of the terrible shall be delivered.”"
+                },
+                {
+                  "ref": "Isa.52.5",
+                  "note": "“My people is taken away for nothing.”"
+                },
+                {
+                  "ref": "Isa.53.8",
+                  "role": "defining",
+                  "note": "“From restraint and from judgment he was taken (לֻקָּח) … for he was cut off from the land of the living; for the transgression of my people the stroke was his.” Quoted, from the Greek, at Act 8:33."
+                },
+                {
+                  "ref": "Jer.48.46",
+                  "note": "“Your sons are taken into captivity.”"
+                },
+                {
+                  "ref": "2Ki.2.10",
+                  "role": "defining",
+                  "note": "“If you see me taken (לֻקָּח) from you, it shall be so for you” (qal passive)."
+                },
+                {
+                  "ref": "Gen.12.15",
+                  "note": "“The woman was taken into Pharaoh’s house” (qal passive)."
+                },
+                {
+                  "ref": "Jdg.17.2",
+                  "note": "“The silver that was taken from you.”"
+                },
+                {
+                  "ref": "Jer.29.22",
+                  "note": "“From them a curse shall be taken up by all the exiles of Judah.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "(of fire) take hold of itself, flash continually",
+          "senses": [
+            {
+              "gloss": "take hold of itself, flash",
+              "definition": "Of fire, to keep catching and flashing: lightning in the hail, fire in the storm cloud. Only in these two theophanies; the tie to “take” is the fire taking hold, and rests on these two uses.",
+              "evidence": [
+                {
+                  "ref": "Exo.9.24",
+                  "role": "defining",
+                  "note": "“There was hail, and fire taking hold of itself (מִתְלַקַּחַת) in the midst of the hail, very heavy.”"
+                },
+                {
+                  "ref": "Ezk.1.4",
+                  "role": "defining",
+                  "note": "“A great cloud and fire taking hold of itself, and brightness around it.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בָּחַר",
+            "note": "“Choose”: Yahweh chose David and took him.",
+            "evidence": [
+              {
+                "ref": "Psa.78.70",
+                "role": "defining"
+              },
+              {
+                "ref": "Hag.2.23"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַע",
+            "note": "“Hear, listen”: to take correction is to listen to the voice.",
+            "evidence": [
+              {
+                "ref": "Jer.7.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Zep.3.2"
+              },
+              {
+                "ref": "Psa.6.10"
+              }
+            ]
+          },
+          {
+            "lemma": "חָמַד",
+            "note": "“Desire, covet”, then take.",
+            "evidence": [
+              {
+                "ref": "Jos.7.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.6.25"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "נָתַן",
+            "note": "“Give”: Yahweh gave, Yahweh took; “give me the persons and take the goods”.",
+            "evidence": [
+              {
+                "ref": "Job.1.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.14.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.18.13"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לָקַח אִשָּׁה",
+            "gloss": "take a wife, marry",
+            "evidence": [
+              {
+                "ref": "Gen.24.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.24.1"
+              },
+              {
+                "ref": "Hos.1.2"
+              }
+            ]
+          },
+          {
+            "phrase": "לָקַח שֹׁחַד",
+            "gloss": "take a bribe",
+            "evidence": [
+              {
+                "ref": "Exo.23.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.10.17"
+              },
+              {
+                "ref": "1Sa.8.3"
+              },
+              {
+                "ref": "Psa.15.5"
+              }
+            ]
+          },
+          {
+            "phrase": "לָקַח מוּסָר",
+            "gloss": "take (accept) correction, instruction",
+            "evidence": [
+              {
+                "ref": "Jer.7.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Zep.3.2"
+              },
+              {
+                "ref": "Pro.1.3"
+              },
+              {
+                "ref": "Pro.8.10"
+              }
+            ]
+          },
+          {
+            "phrase": "לָקַח נֶפֶשׁ",
+            "gloss": "take a life",
+            "evidence": [
+              {
+                "ref": "Jon.4.3",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.19.4"
+              },
+              {
+                "ref": "Pro.1.19"
+              }
+            ]
+          },
+          {
+            "phrase": "לָקַח לוֹ לְעָם",
+            "gloss": "take to oneself as a people",
+            "evidence": [
+              {
+                "ref": "Exo.6.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.20"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "λαμβάνω",
+          "gloss": "take, receive",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.40, וּלְקַחְתֶּם → λήμψεσθε; Deu.4.34, לָקַחַת → λαβεῖν; Deu.25.5 → λήμψεται; λαμβάνω renders לָקַח ×737"
+            },
+            {
+              "ref": "Act.15.14",
+              "role": "defining",
+              "note": "James: God visited the nations “to take (λαβεῖν) out of them a people for his name”, in the words of Deu 4:34 as the Septuagint has them (λαβεῖν ἑαυτῷ ἔθνος ἐκ μέσου ἔθνους)."
+            },
+            {
+              "ref": "Mrk.12.19",
+              "role": "defining",
+              "note": "The Sadducees quote Deu 25:5: “that his brother should take (λάβῃ) the wife”. Also Mat 22:24."
+            },
+            {
+              "ref": "Mat.22.24"
+            }
+          ]
+        },
+        {
+          "lemma": "μετατίθημι",
+          "gloss": "transfer, remove",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.5.24, לָקַח → μετέθηκεν; the only verse it renders לָקַח"
+            },
+            {
+              "ref": "Heb.11.5",
+              "role": "defining",
+              "note": "“By faith Enoch was removed (μετετέθη) so as not to see death, and was not found, because God had removed (μετέθηκεν) him”: Gen 5:24."
+            }
+          ]
+        },
+        {
+          "lemma": "αἴρω",
+          "gloss": "take up, take away",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.53.8, לֻקָּח → ἤρθη"
+            },
+            {
+              "ref": "Act.8.33",
+              "role": "defining",
+              "note": "Isa 53:8 quoted: “in his humiliation his judgment was taken away (ἤρθη) … for his life is taken (αἴρεται) from the earth”; Philip, from this scripture, preached Jesus (Act 8:35)."
+            },
+            {
+              "ref": "Act.8.35"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀναλαμβάνω",
+          "gloss": "take up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ki.2.10, לֻקָּח → ἀναλαμβανόμενον; Psa.78.70; Amo.7.15; ἀναλαμβάνω renders לָקַח ×11"
+            },
+            {
+              "ref": "Act.1.11",
+              "note": "Of Jesus: “this Jesus, who was taken up (ἀναλημφθείς) from you into heaven, shall so come in like manner”; the word the Septuagint uses of Elijah’s being taken."
+            }
+          ]
+        },
+        {
+          "lemma": "δέχομαι",
+          "gloss": "receive, accept",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.2.1, תִּקַּח → δεχάμενος; Jer.7.28, לָקְחוּ מוּסָר → ἐδέξαντο παιδείαν; δέχομαι renders לָקַח ×22"
+            },
+            {
+              "ref": "Jas.1.21",
+              "note": "“Receive (δέξασθε) with meekness the implanted word”: taking the word, as Pro 2:1."
+            },
+            {
+              "ref": "1Th.2.13"
+            }
+          ]
+        },
+        {
+          "lemma": "παραλαμβάνω",
+          "gloss": "take along, take to oneself",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.23.14, וַיִּקָּחֵהוּ → παρέλαβεν; Gen.22.3; παραλαμβάνω renders לָקַח ×8"
+            },
+            {
+              "ref": "Mat.1.24",
+              "note": "Joseph “took (παρέλαβεν) his wife”: the idiom of לָקַח אִשָּׁה."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לֶקַח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "what is received: teaching, learning; persuasion",
+      "bdb": [
+        "l.bx.ab"
+      ],
+      "summary": "What one takes in and what one gives to be taken: teaching. The verb’s “take my words”, “take correction” (Pro 2:1; 8:10) is its other side. Nine uses, all in poetry, five in Proverbs.",
+      "senses": [
+        {
+          "id": "leqach-teaching",
+          "gloss": "teaching, instruction, learning",
+          "definition": "Teaching given and received: what a teacher hands on, and what a hearer gains by taking it in.",
+          "evidence": [
+            {
+              "ref": "Deu.32.2",
+              "role": "defining",
+              "note": "Moses’ song: “Let my teaching (לִקְחִי) drop as the rain, my speech (אִמְרָתִי) distil as the dew”."
+            },
+            {
+              "ref": "Pro.4.2",
+              "role": "defining",
+              "note": "“For I give you good teaching; do not forsake my law (תּוֹרָתִי).”"
+            },
+            {
+              "ref": "Pro.1.5",
+              "role": "defining",
+              "note": "“Let the wise hear and increase learning.”"
+            },
+            {
+              "ref": "Pro.9.9",
+              "note": "“Teach a righteous man, and he will increase learning.”"
+            },
+            {
+              "ref": "Isa.29.24",
+              "role": "defining",
+              "note": "“Those who erred in spirit shall know understanding, and those who murmured shall learn (יִלְמְדוּ) teaching.”"
+            },
+            {
+              "ref": "Job.11.4",
+              "note": "Zophar puts in Job’s mouth: “My teaching is pure, and I am clean in your eyes.”"
+            }
+          ],
+          "kin": [
+            "receive-accept"
+          ]
+        },
+        {
+          "id": "leqach-persuasion",
+          "gloss": "persuasiveness, power of speech to win",
+          "definition": "The pull of what is said, which wins the hearer: for good on the lips of the wise, for evil in the mouth of the adulteress.",
+          "evidence": [
+            {
+              "ref": "Pro.7.21",
+              "role": "defining",
+              "note": "“With her much לֶקַח she turns him aside, with the smoothness of her lips she drives him.”"
+            },
+            {
+              "ref": "Pro.16.21",
+              "role": "defining",
+              "note": "“The wise in heart is called discerning, and sweetness of lips increases לֶקַח.”"
+            },
+            {
+              "ref": "Pro.16.23",
+              "note": "“The heart of the wise makes his mouth wise, and on his lips adds לֶקַח.”"
+            }
+          ],
+          "kin": [
+            "carry-away-heart"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אִמְרָה",
+            "note": "“Speech, word”, beside it in Moses’ song.",
+            "evidence": [
+              {
+                "ref": "Deu.32.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "תּוֹרָה",
+            "note": "“Teaching, law”, beside it in Proverbs.",
+            "evidence": [
+              {
+                "ref": "Pro.4.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "בִּינָה",
+            "note": "“Understanding”, beside it of those who erred.",
+            "evidence": [
+              {
+                "ref": "Isa.29.24",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יוֹסִף לֶקַח",
+            "gloss": "increase learning",
+            "evidence": [
+              {
+                "ref": "Pro.1.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.9.9"
+              },
+              {
+                "ref": "Pro.16.21"
+              },
+              {
+                "ref": "Pro.16.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַלְקוֹחַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "what is taken in war: spoil, prey",
+      "bdb": [
+        "l.bx.ad"
+      ],
+      "summary": "What is taken in war, man and beast: the spoil of Midian divided in Num 31, and the prey Yahweh takes back from the mighty in Isa 49.",
+      "senses": [
+        {
+          "gloss": "spoil, prey (people and beasts taken in war)",
+          "definition": "The living spoil taken in war, people and animals, counted and divided; beside שְׁבִי “captives” and שָׁלָל “plunder”.",
+          "evidence": [
+            {
+              "ref": "Num.31.11",
+              "to": "Num.31.12",
+              "role": "defining",
+              "note": "“They took all the plunder (שָׁלָל) and all the מַלְקוֹחַ, of man and of beast, and brought the captives (שְׁבִי) and the מַלְקוֹחַ and the plunder to Moses.”"
+            },
+            {
+              "ref": "Num.31.26",
+              "to": "Num.31.27",
+              "role": "defining",
+              "note": "“Take the sum of the מַלְקוֹחַ of the captives, of man and of beast … and divide the מַלְקוֹחַ between the warriors and all the congregation.”"
+            },
+            {
+              "ref": "Num.31.32",
+              "note": "“The מַלְקוֹחַ, the rest of the plunder that the men of war had plundered: 675,000 sheep.”"
+            },
+            {
+              "ref": "Isa.49.24",
+              "to": "Isa.49.25",
+              "role": "defining",
+              "note": "“Shall the prey (מַלְקוֹחַ) be taken (הֲיֻקַּח) from the mighty? … Even the captives of the mighty shall be taken, and the prey of the terrible shall be delivered; I will contend with him who contends with you, and I will save your sons.”"
+            }
+          ],
+          "kin": [
+            "capture"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שְׁבִי",
+            "note": "“Captives”.",
+            "evidence": [
+              {
+                "ref": "Num.31.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.49.24"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁלָל",
+            "note": "“Plunder”.",
+            "evidence": [
+              {
+                "ref": "Num.31.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.31.32"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "σκῦλον",
+          "gloss": "spoil",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.31.12, 27, Isa.49.24, 25, מַלְקוֹחַ → σκῦλα ×4; Num.31.26 → σκύλων"
+            },
+            {
+              "ref": "Luk.11.21",
+              "to": "Luk.11.22",
+              "role": "defining",
+              "note": "When a stronger than the strong man comes, he takes his armour “and divides his spoils (σκῦλα)”: the prey taken from the mighty of Isa 49:24–25, said by Jesus of his casting out."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַלְקוֹחַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "jaw, gums (dual)",
+      "bdb": [
+        "l.bx.ae"
+      ],
+      "cognate_ids": [
+        "akk-liqu"
+      ],
+      "summary": "Once, in the dual, of the mouth to which a dried tongue cleaves (Psa 22:16). The spelling is the root’s, perhaps “what takes” the food, but the link is not clear: no cognate of “take” means jaw, and Akkadian līqu “palate” may be another root. One use fixes it.",
+      "senses": [
+        {
+          "gloss": "jaws, gums (of the mouth)",
+          "definition": "The jaws or gums, the inside of the mouth, to which a parched tongue sticks.",
+          "evidence": [
+            {
+              "ref": "Psa.22.16",
+              "role": "defining",
+              "note": "“My strength is dried up like a potsherd, and my tongue cleaves to my מַלְקוֹחָי, and you lay me in the dust of death.” Jesus’ “I thirst” on the cross (Jhn 19:28) answers to this verse of the psalm whose first words he cried (Mat 27:46)."
+            },
+            {
+              "ref": "Jhn.19.28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֶלְקָחַיִם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tongs (dual)",
+      "bdb": [
+        "l.bx.af"
+      ],
+      "summary": "A two-armed tool that takes hold: the gold tongs of the lampstand, and the tongs with which the seraph took a coal from the altar (Isa 6:6), where the verb stands beside it.",
+      "senses": [
+        {
+          "gloss": "tongs (of the lampstand, of the altar)",
+          "definition": "Tongs for taking hold of what is hot or burning, part of the lampstand’s furniture, made of pure gold.",
+          "evidence": [
+            {
+              "ref": "Isa.6.6",
+              "role": "defining",
+              "note": "“In his hand a live coal which he had taken (לָקַח) with tongs (בְּמֶלְקַחַיִם) from off the altar.”"
+            },
+            {
+              "ref": "Exo.25.38",
+              "role": "defining",
+              "note": "The lampstand’s “tongs and its fire-pans, pure gold”."
+            },
+            {
+              "ref": "Exo.37.23"
+            },
+            {
+              "ref": "Num.4.9",
+              "note": "Covered with the lampstand, its lamps, “its tongs and its fire-pans” on the march."
+            },
+            {
+              "ref": "1Ki.7.49",
+              "note": "In Solomon’s house, “the lamps and the tongs, of gold”. Also 2Ch 4:21."
+            },
+            {
+              "ref": "2Ch.4.21"
+            }
+          ],
+          "kin": [
+            "take-in-hand"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λαβίς",
+          "gloss": "tongs",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.6.6, בְּמֶלְקַחַיִם → λαβίδι; Exo.37.23, Num.4.9 → λαβίδας; not in the New Testament"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִקָּח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a taking (of a bribe)",
+      "bdb": [
+        "l.bx.ag"
+      ],
+      "summary": "Once, in Jehoshaphat’s charge to the judges, as the verbal noun of לָקַח שֹׁחַד.",
+      "senses": [
+        {
+          "gloss": "taking (of a bribe)",
+          "definition": "The act of taking, said of a bribe, which Yahweh does not do.",
+          "evidence": [
+            {
+              "ref": "2Ch.19.7",
+              "role": "defining",
+              "note": "“There is no iniquity with Yahweh our God, nor lifting of faces, nor taking of a bribe (מִקַּח שֹׁחַד)”; compare Deu 10:17."
+            },
+            {
+              "ref": "Deu.10.17"
+            }
+          ],
+          "kin": [
+            "take-bribe"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִקָּחָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wares (for sale)",
+      "bdb": [
+        "l.bx.ah"
+      ],
+      "cognate_ids": [
+        "phn-lqh",
+        "akk-lequ"
+      ],
+      "summary": "Once, plural, of goods brought for sale: things to be taken, i.e. bought. One use fixes it. Phoenician lqḥ and Akkadian leqû also mean “purchase”.",
+      "senses": [
+        {
+          "gloss": "wares, goods for sale",
+          "definition": "Merchandise brought in to sell, which the returned exiles bound themselves not to take on the sabbath.",
+          "evidence": [
+            {
+              "ref": "Neh.10.32",
+              "role": "defining",
+              "note": "“If the peoples of the land bring wares (הַמַּקָּחוֹת) or any grain on the sabbath day to sell, we will not take (נִקַּח) from them on the sabbath”: the noun and the verb together, take = buy."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-lqh",
+      "lang": "uga",
+      "form": "𐎍𐎖𐎈",
+      "translit": "lqḥ",
+      "gloss": "take",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Forms lqḥ, lqḥt, yqḥ, tqḥ, yqḥnn and imperative qḥ, with the first consonant lost as in Hebrew יִקַּח and קַח; KTU 4.430:7 lqḥ “they took wool(en blankets)”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 191, §93 Glossary, /l-q-ḥ/",
+          "note": "“lqḥ, lqḥt, yqḥ, tqḥ, yqḥnn, qḥ ‘to take’ (H. lāqaḥ, yiqqaḥ, qaḥ, Anc. Aram. lqḥ, yqḥ, Akkad. leqû, laqû)” (OCR read; PDF not rendered)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 96, §64.63, KTU 4.430:7",
+          "note": "lqḥ š‘rt “they took wool(en blankets)”."
+        }
+      ]
+    },
+    {
+      "id": "phn-lqh",
+      "lang": "phn",
+      "form": "𐤋𐤒𐤇",
+      "translit": "lqḥ",
+      "gloss": "take, receive, accept; bring; purchase; ransom",
+      "relation": "cognate",
+      "note": "Punic of a priest who “shall accept (yqḥ) a payment” against the tariff (KAI 69.20), and of men “ransomed (lqḥ) from imprisonment” (KAI 37 B 7); the niphal of doors “purchased” (KAI 122.2) is the Hebrew “take” = buy of Neh 10:32.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 262–263, L-Q-Ḥ",
+          "note": "“v. qal 1. TAKE, RECEIVE, ACCEPT, KAI 69.20 … 2. BRING, EH 103.1/4 … 3. PURCHASE, KAI 122.2 … 4. RANSOM, KAI 37 B 7” (read from the local PDF’s text layer)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000208 lqḥ [take], PUN001021 lqḥ [take]"
+        }
+      ]
+    },
+    {
+      "id": "moab-lqh",
+      "lang": "sem",
+      "form": "ואקח",
+      "translit": "wʾqḥ",
+      "gloss": "take (Moabite)",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele: Mesha “took from there the [vessels] of Yahweh and dragged them before Chemosh” (lines 17–18) and “took from Moab two hundred men” (line 20), the same verb of taking spoil and men as Hebrew uses.",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 17, 20",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 17 ואקח משם א[ת כ…; line 20 אקח ממאב מאתן אש כל רשה."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 17–18, 20",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "“And I took from thence the [ves]sels of Yahweh, and dragged them before Kemôš”; “I took from Mōʾāḇ 200 men, all the head-men thereof”."
+        }
+      ]
+    },
+    {
+      "id": "akk-lequ",
+      "lang": "akk",
+      "form": "leqû",
+      "translit": "leqû",
+      "gloss": "take, take away; receive, accept; acquire, purchase",
+      "relation": "cognate",
+      "note": "Akkadian has lost the ḥ, as it loses all the gutturals. Its range is the Hebrew’s: take, take away, receive, accept, purchase; lēqû is “one who receives”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004550, leqû [take] V",
+          "note": "“accept; acquire; … purchase; receive; … take; take away” (×5570, Old Assyrian to Hellenistic)."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000101040, lēqû [one who takes] N",
+          "note": "“one who accepts; one who receives; one who takes”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000208 lqḥ [take], AKK006001 leqû [take]"
+        }
+      ]
+    },
+    {
+      "id": "akk-liqutu",
+      "lang": "akk",
+      "form": "liqûtu",
+      "translit": "liqûtu",
+      "gloss": "adopted child (one taken)",
+      "relation": "cognate",
+      "note": "A noun of leqû: the child taken into a household, as Mordecai “took” Esther “as a daughter” (Est 2:7).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000101320, liqûtu [adopted child] N",
+          "note": "“adopted child” (×30, Middle Babylonian to Achaemenid)."
+        }
+      ]
+    },
+    {
+      "id": "arc-leqach",
+      "lang": "arc",
+      "form": "לְקַח",
+      "translit": "ləqaḥ",
+      "gloss": "(ithpeel) be taken, be married (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "Rare in Aramaic, which usually says נְסַב for “take”; the Mishnah’s Aramaic has the passive of a woman taken in marriage, the sense of לָקַח אִשָּׁה. Segert also lists Old Aramaic lqḥ, yqḥ (not yet followed to the inscriptions).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. *לְקַח",
+          "note": "“Ithpe. אִלְּקַח to be taken, married. Keth. IV, 11 (52ᵇ) עד דתִלַּקְחוּן לגוברין … until they shall be married.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-laqiha",
+      "lang": "ar",
+      "form": "لَقِحَتْ",
+      "translit": "laqiḥat",
+      "gloss": "she (a camel) conceived, received the seed; (IV) impregnate, fecundate (the palm)",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "The consonants match, ḥ for ח, but Arabic uses the root only of conception: the female “received [into her womb] the seed”. If it is the same root it is a narrowed “receive”; the link is argued, not shown, so it is named only as possible, on “receive”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2668, root لقح, لَقِحَتْ (n37896); القح (n37897)",
+          "note": "“She (a camel) conceived, or became pregnant; received [into her womb] the seed of the stallion”; form IV “The stallion-camel made the she-camel to conceive … (tropical:) He fecundated [the palm-tree]”."
+        }
+      ]
+    },
+    {
+      "id": "gez-laqqaha",
+      "lang": "gez",
+      "form": "ለቀሐ",
+      "translit": "laqqəḥa",
+      "gloss": "lend",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Geʿez “lend”, i.e. give to be taken and returned; set beside lqḥ “take” in the Proto-Semitic root set. Not yet read in Dillmann or Leslau, so named only as possible, on “receive”.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000208 lqḥ [take], GEZ003153 laqqEḥa [lend]"
+        }
+      ]
+    },
+    {
+      "id": "akk-liqu",
+      "lang": "akk",
+      "form": "līqu",
+      "translit": "līqu",
+      "gloss": "palate",
+      "relation": "possible",
+      "note": "Set beside מַלְקוֹחַ “jaws” for its sense; but līqu has no ḥ-root behind it that is shown, and may belong with lâqu “lick” rather than leqû “take”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000012170, līqu [palate] N",
+          "note": "“palate” (×24, Middle Assyrian to Neo-Babylonian)."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "taken-from-the-ground",
+      "statement": "Yahweh God “took” a rib from the man and built it into the woman, “for from man she was taken” (Gen 2:21–23), and Paul builds on it that “the woman is of the man” (1Co 11:8, 12). The man himself was taken from the ground, and the sentence on him is “until you return to the ground, for from it you were taken; for dust you are, and to dust you will return” (Gen 3:19, 23). Paul says “the first man is of the earth, made of dust” (1Co 15:47), and Daniel speaks of the dead as those “who sleep in the dust of the earth” and “shall awake” (Dan 12:2). From the verses: man is what he was taken from, dust, and goes back to it at death; his hope is not in anything in him that escapes the ground but in being raised from it.",
+      "evidence": [
+        {
+          "ref": "Gen.2.21",
+          "to": "Gen.2.23"
+        },
+        {
+          "ref": "1Co.11.8"
+        },
+        {
+          "ref": "1Co.11.12"
+        },
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Gen.3.23"
+        },
+        {
+          "ref": "1Co.15.47"
+        },
+        {
+          "ref": "Dan.12.2"
+        }
+      ]
+    },
+    {
+      "topic": "a-people-taken-for-his-name",
+      "statement": "Yahweh’s word for making Israel his is “take”: “I will take you to me for a people, and I will be to you God” (Exo 6:7); “Yahweh has taken you and brought you out of the iron furnace … to be to him a people of inheritance” (Deu 4:20); no god ever went “to take for himself a nation from the midst of a nation” as he did (Deu 4:34). He took the Levites in place of the firstborn “and they shall be mine” (Num 3:12), Abraham from beyond the River (Jos 24:3), and David from the sheepfolds, the verb set beside “chose” (2Sa 7:8; Psa 78:70). At the council in Jerusalem James says that God “visited the nations to take out of them a people for his name”, in the very words the Greek has for Deu 4:34, and finds it agreeing with the prophets (Act 15:14–17). From the verses: as Israel was taken out from the nations, so believers of the nations are taken out of them to be a people bearing his name; the initiative is God’s, and to be taken is to be his.",
+      "evidence": [
+        {
+          "ref": "Exo.6.7"
+        },
+        {
+          "ref": "Deu.4.20"
+        },
+        {
+          "ref": "Deu.4.34"
+        },
+        {
+          "ref": "Num.3.12"
+        },
+        {
+          "ref": "Jos.24.3"
+        },
+        {
+          "ref": "2Sa.7.8"
+        },
+        {
+          "ref": "Psa.78.70"
+        },
+        {
+          "ref": "Act.15.14",
+          "to": "Act.15.17"
+        }
+      ]
+    },
+    {
+      "topic": "taken-by-god",
+      "statement": "Of Enoch the text says only “he was not, for God took him” (Gen 5:24); Hebrews reads it as being “removed so as not to see death” (Heb 11:5). Of Elijah, “Yahweh is taking your master from over your head” (2Ki 2:3, 5), and he “went up by a whirlwind into the heavens” (2Ki 2:11); yet after Elisha had taken his place in Jehoshaphat’s day (2Ki 3:11), a letter from Elijah the prophet came to Jehoshaphat’s son Jehoram (2Ch 21:12). Jesus said “no one has ascended into heaven but he who came down from heaven” (Jhn 3:13), and Hebrews says of all the faithful of its chapter, Enoch among them, that they “did not receive the promise, God having provided something better for us, that they without us should not be made perfect” (Heb 11:39–40). The same verb is the psalmist’s hope: “God will redeem my soul from the hand of the grave, for he will take me” (Psa 49:16); “afterward you will take me to glory” (Psa 73:24). From the verses: לָקַח says that God removed them, not that he took them into heaven; their reward, like that of all the faithful, waits for the day God redeems from the grave.",
+      "evidence": [
+        {
+          "ref": "Gen.5.24"
+        },
+        {
+          "ref": "Heb.11.5"
+        },
+        {
+          "ref": "2Ki.2.3"
+        },
+        {
+          "ref": "2Ki.2.5"
+        },
+        {
+          "ref": "2Ki.2.11"
+        },
+        {
+          "ref": "2Ki.3.11"
+        },
+        {
+          "ref": "2Ch.21.12"
+        },
+        {
+          "ref": "Jhn.3.13"
+        },
+        {
+          "ref": "Heb.11.39",
+          "to": "Heb.11.40"
+        },
+        {
+          "ref": "Psa.49.16"
+        },
+        {
+          "ref": "Psa.73.24"
+        }
+      ]
+    },
+    {
+      "topic": "the-servant-taken",
+      "statement": "Of Yahweh’s servant Isaiah says “from restraint and from judgment he was taken (לֻקָּח) … for he was cut off from the land of the living; for the transgression of my people the stroke was his” (Isa 53:8). The Ethiopian read the passage in Greek, “his judgment was taken away … his life is taken from the earth”, and Philip, beginning from that scripture, “preached to him Jesus” (Act 8:32–35). From the verses: the servant taken away by an unjust judgment and put to death for his people’s transgression is Jesus.",
+      "evidence": [
+        {
+          "ref": "Isa.53.8"
+        },
+        {
+          "ref": "Act.8.32",
+          "to": "Act.8.35"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (וּלְקַחְתֶּם, Lev 23:40); the root does not occur in Numbers 10. Root key לקח as the corpus keys it. BDB keys l.bx.ad (spoil) and l.bx.ae (jaw) each count all eight tokens of both homographs (Num 31:11, 12, 26, 27, 32; Isa 49:24, 25; Psa 22:16), so each word’s use count is eight where the true counts are seven and one; kept as two words, each with its own key. The brief’s verb “(no stem)” tokens Deu 32:2 and Job 11:4 are the noun לֶקַח, and 1Ki 17:11 לִקְחִי, listed under the noun’s key, is the qal imperative. The qal passive (Gen 12:15; 18:4; 2Ki 2:10; Ezk 15:3; Job 28:2) is folded into the pual, since the schema has no qal-passive stem; review. Ezk 17:5 קָח (beside צַפְצָפָה “willow”) and Hos 11:3 קָחָם are short forms read as the verb; Ezk 17:5 is uncertain (some read a noun “shoot”, cf. the later Aramaic/Syriac word); the zero-token cross-references m.ck.ab, m.df.ap and s.bb.ac are left out. Left out: the name לִקְחִי (Likhi, 1Ch 7:19, key l.bx.ac), for names/ (not drafted in this task); Klein’s note that Egyptian borrowed מַלְקוֹחַ (not checked in TLA); Coptic ϩⲁϭⲉ “snare” (Wiktionary link, no evidence of a tie). Peshitta: Syriac has no root lqḥ (none in SEDRA’s roots); it says nsb for “take”. Not yet consulted: DULAT for Ugaritic, Dillmann/Leslau for Geʿez ለቀሐ, CAD L for leqû, DEAPS/CAL for Old Aramaic lqḥ (Segert names it). Krahmalkov and Segert read from text layers/OCR only. Lead not cited: Jhn 12:13, where the crowd “took (ἔλαβον) the branches of the palm trees”, echoes the act of Lev 23:40 but is not a quotation. Open questions: (1) qal passive under pual; (2) the Arabic and Geʿez cognates kept as possible; (3) Psa 73:24 אַחַר כָּבוֹד “after glory” or “with glory”; (4) the taken-by-god doctrine’s use of 2Ch 21:12."
+}
