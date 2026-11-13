@@ -1,0 +1,1429 @@
+{
+  "id": "chatsotsrah",
+  "root": "חצר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "sanctuary",
+    "worship",
+    "dwelling",
+    "music",
+    "feasts",
+    "war",
+    "plants",
+    "mortality"
+  ],
+  "gloss": "enclosure, court; settlement, village; grass; trumpet",
+  "summary": "The spelling חצר covers words that scripture uses in three distinct fields. חָצֵר is an enclosed open space, above all the court of the tabernacle and the courts of Yahweh’s house where Israel came to worship, and in the plural the unwalled settlements, “villages”, around the cities (Lev 25:31). חָצִיר is green grass, the figure of man’s short life: “all flesh is grass … but the word of our God shall stand for ever” (Isa 40:6–8). חֲצֹצְרָה is the hammered silver trumpet the priests blew to gather the congregation, move the camps, sound the alarm in war and mark the appointed times (Num 10:2–10). The cognates show that more than one older root has fallen together here: Ugaritic ḥẓr and Arabic ḥaẓīra “enclosure” behind the court, Arabic ḥaḍar and Sabaic ḥḍr “settled land, dwelling” behind the villages, Arabic ḫaḍira “be green” behind the grass; how the trumpet’s name belongs to any of them is not known.",
+  "words": [
+    {
+      "lemma": "חָצֵר",
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "enclosure, court; settlement, village",
+      "summary": "An enclosed open space by a building: the court of the tabernacle, the courts of the temple, a king’s court and a house’s yard. In the plural חֲצֵרִים it is also the open settlements, unwalled, that belong to the cities and to the nomads. The two uses may come from two older roots (see the cognates), but the text uses one word for both.",
+      "bdb": [
+        "h.fa.ab"
+      ],
+      "senses": [
+        {
+          "id": "chatser-tabernacle",
+          "gloss": "court of the tabernacle",
+          "definition": "The space hung around with linen curtains that enclosed the tabernacle and its altar, where the priests ate the holy portions.",
+          "cognate_ids": [
+            "uga-hzr",
+            "ar-hazira",
+            "sab-hzr",
+            "sab-hsr",
+            "ar-hasara",
+            "sab-hdr",
+            "phn-hsr-court"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.27.9",
+              "role": "defining",
+              "note": "“You shall make the חֲצַר of the tabernacle”: hangings of fine twined linen, a hundred cubits on the south side."
+            },
+            {
+              "ref": "Exo.27.18",
+              "note": "A hundred cubits by fifty, the hangings five cubits high."
+            },
+            {
+              "ref": "Exo.40.33",
+              "role": "defining",
+              "note": "Moses set up the חָצֵר “all around the tabernacle and the altar” and hung the screen of its gate."
+            },
+            {
+              "ref": "Lev.6.9",
+              "note": "The remainder of the grain offering is eaten in a holy place, “in the חֲצַר of the tent of meeting”."
+            },
+            {
+              "ref": "Lev.6.19"
+            },
+            {
+              "ref": "Num.3.26",
+              "note": "The Gershonites carry the hangings of the חָצֵר and the screen of its entrance."
+            },
+            {
+              "ref": "Num.4.26"
+            }
+          ]
+        },
+        {
+          "id": "chatser-temple",
+          "gloss": "court(s) of Yahweh’s house",
+          "definition": "The enclosed courts of the temple, inner and outer, where the altar stood and where the people came with offerings and praise: the place of coming before Yahweh.",
+          "cognate_ids": [
+            "uga-hzr",
+            "ar-hazira",
+            "sab-hzr",
+            "sab-hsr",
+            "ar-hasara",
+            "sab-hdr",
+            "phn-hsr-court"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.6.36",
+              "role": "defining",
+              "note": "Solomon built the inner חָצֵר with three courses of hewn stone and a course of cedar beams."
+            },
+            {
+              "ref": "1Ki.7.12",
+              "note": "The great חָצֵר all around, and the inner חָצֵר of the house of Yahweh."
+            },
+            {
+              "ref": "1Ki.8.64",
+              "note": "Solomon hallowed the middle of the חָצֵר before the house and offered there, the bronze altar being too small."
+            },
+            {
+              "ref": "2Ch.4.9",
+              "note": "The court of the priests and the great court."
+            },
+            {
+              "ref": "2Ki.21.5",
+              "note": "Manasseh built altars to the host of heaven “in the two חַצְרוֹת of the house of Yahweh”."
+            },
+            {
+              "ref": "Jer.26.2",
+              "role": "defining",
+              "note": "“Stand in the חֲצַר of the house of Yahweh and speak to all the cities of Judah who come to worship.”"
+            },
+            {
+              "ref": "Jer.36.10",
+              "note": "Baruch reads the scroll in the upper חָצֵר at the New Gate."
+            },
+            {
+              "ref": "Ezk.8.16",
+              "note": "In the inner court, between porch and altar, twenty-five men worship the sun."
+            },
+            {
+              "ref": "Ezk.10.5",
+              "note": "The sound of the cherubim’s wings heard as far as the outer court."
+            },
+            {
+              "ref": "Ezk.40.17"
+            },
+            {
+              "ref": "Ezk.46.22",
+              "note": "In the four corners of the court, חֲצֵרוֹת קְטֻרוֹת, small enclosed courts for the boiling."
+            },
+            {
+              "ref": "Psa.84.3",
+              "role": "defining",
+              "note": "“My soul longs, even faints, for the חַצְרוֹת of Yahweh.”"
+            },
+            {
+              "ref": "Psa.84.11",
+              "note": "“A day in your חֲצֵרִים is better than a thousand.”"
+            },
+            {
+              "ref": "Psa.65.5",
+              "role": "defining",
+              "note": "Happy is the one you choose and bring near: he will dwell in your חֲצֵרִים, set beside “your house”."
+            },
+            {
+              "ref": "Psa.96.8",
+              "note": "“Bring an offering and come into his חַצְרוֹת.”"
+            },
+            {
+              "ref": "Psa.100.4",
+              "note": "“Enter his gates with thanksgiving, his חֲצֵרֹת with praise.”"
+            },
+            {
+              "ref": "Psa.92.14"
+            },
+            {
+              "ref": "Psa.116.19"
+            },
+            {
+              "ref": "Psa.135.2"
+            },
+            {
+              "ref": "Isa.1.12",
+              "note": "“Who has required this at your hand, to trample my חֲצֵרִים?”"
+            },
+            {
+              "ref": "Isa.62.9",
+              "note": "The harvesters will drink it “in the חַצְרוֹת of my holiness”."
+            },
+            {
+              "ref": "Zec.3.7",
+              "note": "If Joshua walks in Yahweh’s ways he will “keep my חֲצֵרַי”."
+            },
+            {
+              "ref": "1Ch.28.6",
+              "note": "Solomon will build “my house and my חֲצֵרוֹת”."
+            },
+            {
+              "ref": "Neh.13.7"
+            },
+            {
+              "ref": "2Ch.24.21",
+              "note": "Zechariah son of Jehoiada stoned “in the חֲצַר of the house of Yahweh”."
+            },
+            {
+              "ref": "Mat.23.35",
+              "note": "Jesus places Zechariah’s death “between the temple and the altar”, that is, in the court of 2Ch 24:21."
+            }
+          ]
+        },
+        {
+          "id": "chatser-house",
+          "gloss": "court of a palace or house, yard",
+          "definition": "The enclosed open space of a king’s palace or of a private house.",
+          "cognate_ids": [
+            "uga-hzr",
+            "ar-hazira",
+            "sab-hzr",
+            "sab-hsr",
+            "ar-hasara"
+          ],
+          "evidence": [
+            {
+              "ref": "2Sa.17.18",
+              "role": "defining",
+              "note": "A man in Bahurim had a well in his חָצֵר, and the two messengers went down into it."
+            },
+            {
+              "ref": "Neh.8.16",
+              "note": "Booths made on roofs, “in their חַצְרֹת and in the חַצְרוֹת of the house of God”."
+            },
+            {
+              "ref": "Exo.8.9",
+              "note": "The frogs died out of the houses, the חֲצֵרֹת and the fields."
+            },
+            {
+              "ref": "1Ki.7.8",
+              "note": "Solomon’s own house in “the other חָצֵר”."
+            },
+            {
+              "ref": "Est.4.11",
+              "role": "defining",
+              "note": "Whoever comes to the king in the inner חָצֵר uncalled is put to death unless he holds out the sceptre."
+            },
+            {
+              "ref": "Est.5.1"
+            },
+            {
+              "ref": "Est.6.4"
+            },
+            {
+              "ref": "Jer.32.2",
+              "note": "Jeremiah shut up “in the חֲצַר of the guard which is in the king’s house”."
+            },
+            {
+              "ref": "Jer.38.6"
+            },
+            {
+              "ref": "Jer.36.20"
+            },
+            {
+              "ref": "2Ki.20.4",
+              "note": "Isaiah had not yet gone out of the middle חָצֵר."
+            }
+          ]
+        },
+        {
+          "id": "chatser-village",
+          "gloss": "settlement, village (plural)",
+          "definition": "Open settlements without a wall, in the plural: the villages that belong to a city’s land, and the dwelling places of peoples who live outside cities.",
+          "cognate_ids": [
+            "ar-hadar",
+            "sab-hdr",
+            "phn-hsr-settle"
+          ],
+          "kin": [
+            "chatsir-abode"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.25.31",
+              "role": "defining",
+              "note": "“The houses of the חֲצֵרִים that have no wall around them” are reckoned as the field of the land, unlike houses in a walled city (25:29–30)."
+            },
+            {
+              "ref": "Jos.15.32",
+              "role": "defining",
+              "note": "“All the cities are twenty-nine, and their חַצְרֵיהֶן”: the formula of the tribal lists."
+            },
+            {
+              "ref": "Jos.13.23"
+            },
+            {
+              "ref": "Jos.19.15"
+            },
+            {
+              "ref": "Jos.21.12",
+              "note": "The field of the city and its חֲצֵרִים given to Caleb."
+            },
+            {
+              "ref": "Gen.25.16",
+              "role": "defining",
+              "note": "Ishmael’s sons named “by their חֲצֵרִים and by their טִירֹת”, their settlements and their encampments."
+            },
+            {
+              "ref": "Isa.42.11",
+              "note": "“The wilderness and its cities, the חֲצֵרִים that Kedar inhabits.”"
+            },
+            {
+              "ref": "Deu.2.23",
+              "note": "The Avvim “who dwelt in חֲצֵרִים as far as Gaza”."
+            },
+            {
+              "ref": "Neh.11.25"
+            },
+            {
+              "ref": "Neh.12.29",
+              "note": "The singers had built themselves חֲצֵרִים around Jerusalem."
+            },
+            {
+              "ref": "1Ch.9.22",
+              "note": "Gatekeepers enrolled by genealogy in their חַצְרֵיהֶם."
+            },
+            {
+              "ref": "Psa.10.8",
+              "note": "The wicked sits in ambush by the חֲצֵרִים."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αὐλή",
+          "gloss": "court, enclosed yard; sheepfold",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.27.9, חֲצַר → αὐλήν; חָצֵר → αὐλή ×110 (lemma count, MACULA alignment)"
+            },
+            {
+              "ref": "Rev.11.2",
+              "note": "“The αὐλή which is outside the temple … has been given to the nations, and they will trample the holy city”: the outer court, with the trampling of Isa 1:12."
+            },
+            {
+              "ref": "Jhn.10.1",
+              "note": "The αὐλή of the sheep, entered by the door: an enclosure."
+            },
+            {
+              "ref": "Jhn.10.16"
+            },
+            {
+              "ref": "Mat.26.58",
+              "note": "The court of the high priest’s house."
+            }
+          ]
+        },
+        {
+          "lemma": "κώμη",
+          "gloss": "village",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jos.21.12, חֲצֵרֶיהָ → κώμας; 1Ch.6.41 the same; κώμη renders חָצֵר ×2, ἔπαυλις ×7 (Lev.25.31; Isa.42.11)"
+            },
+            {
+              "ref": "Mat.9.35",
+              "note": "Jesus went about “all the cities and the κώμαι”, the pairing of “cities and their villages”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בַּיִת",
+            "note": "“House”: the courts set beside Yahweh’s house.",
+            "evidence": [
+              {
+                "ref": "Psa.65.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.92.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.135.2"
+              }
+            ]
+          },
+          {
+            "lemma": "מִשְׁכָּן",
+            "note": "“Dwelling”: “how lovely are your מִשְׁכְּנוֹת … my soul longs for the חַצְרוֹת of Yahweh”.",
+            "evidence": [
+              {
+                "ref": "Psa.84.2",
+                "to": "Psa.84.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "טִירָה",
+            "note": "“Encampment”, beside the settlements of Ishmael’s sons.",
+            "evidence": [
+              {
+                "ref": "Gen.25.16",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עִיר חוֹמָה",
+            "note": "“A walled city”: houses in it may be redeemed only within a year; houses in the unwalled חֲצֵרִים go out in the Jubilee.",
+            "evidence": [
+              {
+                "ref": "Lev.25.29",
+                "to": "Lev.25.31",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חֲצַר הַמִּשְׁכָּן",
+            "gloss": "the court of the tabernacle",
+            "evidence": [
+              {
+                "ref": "Exo.27.9"
+              },
+              {
+                "ref": "Exo.35.18"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲצַר אֹהֶל מוֹעֵד",
+            "gloss": "the court of the tent of meeting",
+            "evidence": [
+              {
+                "ref": "Lev.6.9"
+              },
+              {
+                "ref": "Lev.6.19"
+              }
+            ]
+          },
+          {
+            "phrase": "הֶחָצֵר הַפְּנִימִית",
+            "gloss": "the inner court",
+            "evidence": [
+              {
+                "ref": "1Ki.6.36"
+              },
+              {
+                "ref": "Ezk.8.16"
+              },
+              {
+                "ref": "Est.5.1"
+              }
+            ]
+          },
+          {
+            "phrase": "הֶחָצֵר הַחִיצוֹנָה",
+            "gloss": "the outer court",
+            "evidence": [
+              {
+                "ref": "Ezk.10.5"
+              },
+              {
+                "ref": "Ezk.40.17"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁתֵּי חַצְרוֹת בֵּית־יְהוָה",
+            "gloss": "the two courts of the house of Yahweh",
+            "evidence": [
+              {
+                "ref": "2Ki.21.5"
+              },
+              {
+                "ref": "2Ki.23.12"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲצַר הַמַּטָּרָה",
+            "gloss": "the court of the guard",
+            "evidence": [
+              {
+                "ref": "Jer.32.2"
+              },
+              {
+                "ref": "Jer.38.6"
+              }
+            ]
+          },
+          {
+            "phrase": "עָרִים וְחַצְרֵיהֶן",
+            "gloss": "cities and their villages",
+            "evidence": [
+              {
+                "ref": "Jos.15.32"
+              },
+              {
+                "ref": "Jos.19.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֲצֹצְרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "trumpet",
+      "summary": "The straight trumpet of hammered silver, made by Yahweh’s command and blown by the priests: distinct from the שׁוֹפָר, the horn, beside which it is often named. Its link to the root’s other words is not known; the reduplicated form may imitate its sound, and the only cognate is the same word in later Aramaic.",
+      "bdb": [
+        "h.fd.ab"
+      ],
+      "cognate_ids": [
+        "arc-hatsotsarta"
+      ],
+      "senses": [
+        {
+          "id": "trumpet-silver",
+          "gloss": "silver trumpet of the priests",
+          "definition": "A trumpet hammered out of silver, two at first, made by Moses at Yahweh’s word and given to the priests, Aaron’s sons, to blow as “a statute for ever”; later numbered among the silver vessels of the temple.",
+          "evidence": [
+            {
+              "ref": "Num.10.2",
+              "role": "defining",
+              "note": "“Make yourself two חֲצוֹצְרֹת of silver; of hammered work you shall make them.”"
+            },
+            {
+              "ref": "Num.10.8",
+              "role": "defining",
+              "note": "“The sons of Aaron, the priests, shall blow the חֲצֹצְרוֹת; they shall be to you for a statute for ever.”"
+            },
+            {
+              "ref": "2Ki.12.14",
+              "note": "Listed with silver bowls, snuffers and basins among the vessels of the house of Yahweh."
+            },
+            {
+              "ref": "1Ch.15.24",
+              "note": "Seven priests blow the חֲצֹצְרוֹת before the ark."
+            },
+            {
+              "ref": "1Ch.16.6",
+              "note": "Two priests with חֲצֹצְרוֹת “continually before the ark of the covenant of God”."
+            },
+            {
+              "ref": "2Ch.5.12",
+              "note": "120 priests blowing חֲצֹצְרוֹת at the dedication of the house."
+            },
+            {
+              "ref": "Ezr.3.10",
+              "note": "At the laying of the second temple’s foundation, “the priests in their apparel with חֲצֹצְרוֹת”."
+            },
+            {
+              "ref": "Neh.12.35"
+            },
+            {
+              "ref": "Neh.12.41"
+            }
+          ]
+        },
+        {
+          "id": "trumpet-assemble",
+          "gloss": "signal to assemble and to set out",
+          "definition": "The trumpets call the congregation, or with one only the heads of thousands, to the door of the tent of meeting; blown with a תְּרוּעָה, an alarm, they set the camps moving, east first and then south.",
+          "evidence": [
+            {
+              "ref": "Num.10.2",
+              "role": "defining",
+              "note": "“They shall be for you for calling the congregation and for the setting out of the camps.”"
+            },
+            {
+              "ref": "Num.10.3",
+              "to": "Num.10.4",
+              "role": "defining",
+              "note": "Both blown: all the congregation gathers to Moses at the door of the tent; one blown: the leaders gather."
+            },
+            {
+              "ref": "Num.10.5",
+              "to": "Num.10.7",
+              "note": "An alarm sets out the camps; for gathering the assembly they blow, but not an alarm."
+            }
+          ]
+        },
+        {
+          "id": "trumpet-alarm",
+          "gloss": "alarm for war",
+          "definition": "Blown with an alarm when Israel goes to war against an oppressor, that Israel may “be remembered before Yahweh” and saved; carried by the priest into battle.",
+          "evidence": [
+            {
+              "ref": "Num.10.9",
+              "role": "defining",
+              "note": "“You shall sound an alarm with the חֲצֹצְרֹת, and you shall be remembered before Yahweh your God, and you shall be saved from your enemies.”"
+            },
+            {
+              "ref": "Num.31.6",
+              "note": "Phinehas goes to the war against Midian with the holy vessels “and the חֲצֹצְרוֹת of the alarm in his hand”."
+            },
+            {
+              "ref": "2Ch.13.12",
+              "role": "defining",
+              "note": "Abijah: “God is with us at our head, and his priests with the חֲצֹצְרוֹת of the alarm to sound against you.”"
+            },
+            {
+              "ref": "2Ch.13.14",
+              "note": "Judah cried to Yahweh, and the priests sounded the trumpets."
+            },
+            {
+              "ref": "Hos.5.8",
+              "note": "“Blow the שׁוֹפָר in Gibeah, the חֲצֹצְרָה in Ramah, sound an alarm at Beth-aven.”"
+            }
+          ]
+        },
+        {
+          "id": "trumpet-feasts",
+          "gloss": "at the appointed times, offerings and praise",
+          "definition": "Blown over the burnt offerings and peace offerings on days of gladness, at the appointed times and new moons, as a memorial before God; and so with song and instruments when the ark was brought up, at the temple’s dedication, at Hezekiah’s offering, and at coronations and covenant oaths.",
+          "evidence": [
+            {
+              "ref": "Num.10.10",
+              "role": "defining",
+              "note": "“In the day of your gladness, and in your מוֹעֲדִים, and in the beginnings of your months, you shall blow with the חֲצֹצְרֹת over your burnt offerings … and they shall be to you for a memorial before your God.” The מוֹעֲדִים are those of Lev 23."
+            },
+            {
+              "ref": "2Ch.29.27",
+              "to": "2Ch.29.28",
+              "role": "defining",
+              "note": "When the burnt offering began, the song of Yahweh began with the trumpets, and continued until the offering was finished."
+            },
+            {
+              "ref": "2Ch.5.13",
+              "note": "The trumpeters and singers as one voice to praise Yahweh, and the house was filled with the cloud."
+            },
+            {
+              "ref": "1Ch.13.8"
+            },
+            {
+              "ref": "1Ch.15.28",
+              "note": "The ark brought up “with shouting, with the sound of the שׁוֹפָר, and with חֲצֹצְרוֹת and cymbals”."
+            },
+            {
+              "ref": "1Ch.16.42"
+            },
+            {
+              "ref": "Psa.98.6",
+              "note": "“With חֲצֹצְרוֹת and the sound of the שׁוֹפָר shout before the King, Yahweh.”"
+            },
+            {
+              "ref": "2Ch.15.14",
+              "note": "The covenant sworn to Yahweh “with shouting, and with חֲצֹצְרוֹת and with שׁוֹפָרוֹת”."
+            },
+            {
+              "ref": "2Ch.20.28"
+            },
+            {
+              "ref": "2Ch.29.26"
+            },
+            {
+              "ref": "2Ki.11.14",
+              "note": "At Joash’s crowning “all the people of the land rejoiced and blew with חֲצֹצְרוֹת”."
+            },
+            {
+              "ref": "2Ch.23.13"
+            }
+          ]
+        },
+        {
+          "gloss": "trumpeters",
+          "definition": "The trumpets for the men who blew them, standing by the king.",
+          "evidence": [
+            {
+              "ref": "2Ki.11.14",
+              "role": "defining",
+              "note": "“The captains and the חֲצֹצְרוֹת by the king”, beside the people who blew the חֲצֹצְרוֹת."
+            },
+            {
+              "ref": "2Ch.23.13"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σάλπιγξ",
+          "gloss": "trumpet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.10.2, חֲצוֹצְרֹת → σάλπιγγας; Num.10.8–10 the same; חֲצֹצְרָה → σάλπιγξ ×25 (lemma count, MACULA alignment). The Septuagint also renders שׁוֹפָר by σάλπιγξ, so the Greek does not tell the two instruments apart."
+            },
+            {
+              "ref": "1Co.14.8",
+              "note": "“If the σάλπιγξ gives an uncertain sound, who will prepare himself for battle?”: the alarm of Num 10:9."
+            },
+            {
+              "ref": "Mat.24.31",
+              "note": "The Son of man sends his angels “with a great sound of a σάλπιγξ”, and they gather his elect."
+            },
+            {
+              "ref": "1Co.15.52",
+              "note": "“At the last σάλπιγξ: for the trumpet shall sound, and the dead shall be raised incorruptible.”"
+            },
+            {
+              "ref": "1Th.4.16",
+              "note": "The Lord descends “with the σάλπιγξ of God, and the dead in Christ shall rise first”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שׁוֹפָר",
+            "note": "The ram’s horn, named beside the silver trumpet as another instrument.",
+            "evidence": [
+              {
+                "ref": "Hos.5.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.98.6",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ch.15.28"
+              },
+              {
+                "ref": "2Ch.15.14"
+              }
+            ]
+          },
+          {
+            "lemma": "מְצִלְתַּיִם",
+            "note": "Cymbals, played by the Levites while the priests blew the trumpets.",
+            "evidence": [
+              {
+                "ref": "Ezr.3.10",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.5.13"
+              },
+              {
+                "ref": "1Ch.13.8"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "תָּקַע בַּחֲצֹצְרוֹת",
+            "gloss": "blow the trumpets",
+            "evidence": [
+              {
+                "ref": "Num.10.8"
+              },
+              {
+                "ref": "Num.10.10"
+              },
+              {
+                "ref": "2Ki.11.14"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵרִיעַ בַּחֲצֹצְרוֹת",
+            "gloss": "sound an alarm on the trumpets",
+            "evidence": [
+              {
+                "ref": "Num.10.9"
+              },
+              {
+                "ref": "2Ch.13.12"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲצֹצְרוֹת הַתְּרוּעָה",
+            "gloss": "the trumpets of the alarm",
+            "evidence": [
+              {
+                "ref": "Num.31.6"
+              },
+              {
+                "ref": "2Ch.13.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָצִיר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "green grass, herbage; leeks; (once or twice) abode",
+      "summary": "Green grass that springs up after rain and withers in the heat, the food of cattle and the figure of man’s brief life. Arabic ḫaḍira “be green” shows a ḫ behind its ח, where the court and the village show ḥ: it is from another older root that has fallen together with them in Hebrew. In Isa 34:13 the same letters stand for an “abode” of ostriches, which belongs with the villages rather than the grass.",
+      "bdb": [
+        "h.fc.ab"
+      ],
+      "senses": [
+        {
+          "id": "chatsir-grass",
+          "gloss": "green grass, herbage",
+          "definition": "The green growth of the ground that God makes to spring up with rain on the hills, eaten by cattle and horses, and that withers when the water fails.",
+          "cognate_ids": [
+            "ar-khadir",
+            "arc-hatsira"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.104.14",
+              "role": "defining",
+              "note": "“He causes חָצִיר to grow for the cattle, and plants for the service of man.”"
+            },
+            {
+              "ref": "1Ki.18.5",
+              "role": "defining",
+              "note": "In the drought Ahab seeks “חָצִיר to keep the horses and mules alive”."
+            },
+            {
+              "ref": "Psa.147.8",
+              "note": "He prepares rain and makes חָצִיר sprout on the mountains."
+            },
+            {
+              "ref": "Isa.15.6",
+              "role": "defining",
+              "note": "The waters of Nimrim desolate: “the חָצִיר is withered, the דֶּשֶׁא fails, there is no green thing”."
+            },
+            {
+              "ref": "Job.40.15",
+              "note": "Behemoth “eats חָצִיר like an ox”."
+            },
+            {
+              "ref": "Pro.27.25",
+              "note": "The hay appears, the tender grass shows itself, the herbs of the mountains are gathered."
+            },
+            {
+              "ref": "Isa.44.4",
+              "note": "Israel’s offspring spring up “among the חָצִיר, like willows by the water courses”."
+            },
+            {
+              "ref": "Job.8.12",
+              "note": "The papyrus without water withers “before any חָצִיר”."
+            },
+            {
+              "ref": "Isa.35.7",
+              "note": "In the jackals’ lair חָצִיר with reed and rush; some read “abode” here (see the abode sense)."
+            }
+          ]
+        },
+        {
+          "id": "chatsir-frail",
+          "gloss": "grass as the figure of man’s short life",
+          "definition": "Grass that flourishes in the morning and is withered by evening, used of man and of the wicked: their life is brief and ends at God’s breath.",
+          "cognate_ids": [
+            "ar-khadir"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.40.6",
+              "to": "Isa.40.8",
+              "role": "defining",
+              "note": "“All flesh is חָצִיר … the חָצִיר withers, the flower fades, because the רוּחַ of Yahweh blows upon it; surely the people is חָצִיר. … but the word of our God shall stand for ever.”"
+            },
+            {
+              "ref": "Psa.103.15",
+              "role": "defining",
+              "note": "“As for man, his days are as חָצִיר; as a flower of the field, so he flourishes”, and the wind passes over it and it is gone (103:16)."
+            },
+            {
+              "ref": "Psa.90.5",
+              "to": "Psa.90.6",
+              "role": "defining",
+              "note": "Like חָצִיר that sprouts in the morning and in the evening is cut down and withers."
+            },
+            {
+              "ref": "Isa.51.12",
+              "note": "“Who are you, that you fear a man who shall die, and the son of man who shall be made as חָצִיר?”"
+            },
+            {
+              "ref": "Psa.37.2",
+              "note": "The evildoers “shall soon be cut down like the חָצִיר and wither as the green herb”."
+            },
+            {
+              "ref": "Psa.129.6",
+              "note": "Let Zion’s haters be as grass on the housetops, which withers before it is pulled up."
+            },
+            {
+              "ref": "2Ki.19.26",
+              "note": "The inhabitants of the cities Assyria took “were as … חֲצִיר גַּגּוֹת”."
+            },
+            {
+              "ref": "Isa.37.27"
+            },
+            {
+              "ref": "1Pe.1.24",
+              "to": "1Pe.1.25",
+              "role": "defining",
+              "note": "Peter quotes Isa 40:6–8 and says, “this is the word which by the gospel is preached to you.”"
+            },
+            {
+              "ref": "Jas.1.10",
+              "to": "Jas.1.11",
+              "note": "The rich man “as the flower of the grass shall pass away”: the sun dries the grass and its flower falls."
+            }
+          ]
+        },
+        {
+          "id": "chatsir-leek",
+          "gloss": "leeks",
+          "definition": "A green garden vegetable eaten in Egypt, named among cucumbers, melons, onions and garlic.",
+          "cognate_ids": [
+            "ar-khadir"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.11.5",
+              "role": "defining",
+              "note": "“We remember the fish … the cucumbers, the melons, the חָצִיר, the onions and the garlic.”"
+            }
+          ]
+        },
+        {
+          "id": "chatsir-abode",
+          "gloss": "abode, haunt",
+          "definition": "A dwelling place of wild creatures in a ruined land, set in parallel with נָוֶה, “abode”. The sense rests on one clear verse.",
+          "cognate_ids": [
+            "sab-hdr",
+            "ar-hadar"
+          ],
+          "kin": [
+            "chatser-village"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.34.13",
+              "role": "defining",
+              "note": "Edom “shall be a נְוֵה of jackals, a חָצִיר for ostriches”: the parallel requires “abode”, not grass."
+            },
+            {
+              "ref": "Isa.35.7",
+              "note": "“In the נְוֵה of jackals, where each lay, חָצִיר for reed and rush”: read either “grass” or “an abode for reed and rush”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χόρτος",
+          "gloss": "grass, herbage",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.40.6, חָצִיר → χόρτος; Isa.40.7 the same; Psa.104.14, חָצִיר → χόρτον; χόρτος renders חָצִיר ×11 (lemma count, MACULA alignment)"
+            },
+            {
+              "ref": "1Pe.1.24",
+              "role": "defining",
+              "note": "“All flesh is as χόρτος … the χόρτος withers”, quoting Isa 40:6–8."
+            },
+            {
+              "ref": "Jas.1.10",
+              "to": "Jas.1.11"
+            },
+            {
+              "ref": "Mat.6.30",
+              "note": "God clothes “the χόρτος of the field, which today is and tomorrow is cast into the oven”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "צִיץ",
+            "note": "“Flower” of the field, which fades with the grass.",
+            "evidence": [
+              {
+                "ref": "Isa.40.6",
+                "to": "Isa.40.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.103.15"
+              }
+            ]
+          },
+          {
+            "lemma": "דֶּשֶׁא",
+            "note": "Fresh green growth; יֶרֶק דֶּשֶׁא, “the green herb”.",
+            "evidence": [
+              {
+                "ref": "Psa.37.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.15.6"
+              },
+              {
+                "ref": "2Ki.19.26"
+              }
+            ]
+          },
+          {
+            "lemma": "עֵשֶׂב",
+            "note": "“Plants, herbs”: grass for the cattle, עֵשֶׂב for man.",
+            "evidence": [
+              {
+                "ref": "Psa.104.14",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.19.26"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "דְּבַר אֱלֹהֵינוּ",
+            "note": "“The word of our God”, which stands for ever while the grass withers.",
+            "evidence": [
+              {
+                "ref": "Isa.40.8",
+                "role": "defining"
+              },
+              {
+                "ref": "1Pe.1.25"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חֲצִיר גַּגּוֹת",
+            "gloss": "grass on the housetops, which withers before it grows up",
+            "evidence": [
+              {
+                "ref": "2Ki.19.26"
+              },
+              {
+                "ref": "Isa.37.27"
+              },
+              {
+                "ref": "Psa.129.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָצַר",
+      "pos": "verb",
+      "gloss": "blow the trumpets",
+      "summary": "A verb made from חֲצֹצְרָה, found only as a participle in Chronicles. The written text (Kethiv) spells it with the trumpet’s doubled צ, מחצצרים; the reading (Qere) is מַחְצְרִים, as from חצר.",
+      "bdb": [
+        "h.fd.ac"
+      ],
+      "cognate_ids": [
+        "arc-hatstsar"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "blow the trumpets",
+          "senses": [
+            {
+              "id": "chatsar-blow",
+              "gloss": "blow the trumpets",
+              "definition": "Of the priests sounding the silver trumpets before the ark, at the altar, and in battle.",
+              "kin": [
+                "trumpet-silver"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Ch.15.24",
+                  "role": "defining",
+                  "note": "The priests מַחְצְרִים (Kethiv מחצצרים) “with the trumpets before the ark of God”."
+                },
+                {
+                  "ref": "2Ch.5.12",
+                  "note": "120 priests מַחְצְרִים בַּחֲצֹצְרוֹת."
+                },
+                {
+                  "ref": "2Ch.7.6",
+                  "note": "The priests sounded trumpets before the Levites, and all Israel stood."
+                },
+                {
+                  "ref": "2Ch.13.14",
+                  "note": "In battle, “the priests sounded with the trumpets”."
+                },
+                {
+                  "ref": "2Ch.29.28",
+                  "note": "“The trumpets sounding” until the burnt offering was finished."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "(participle) trumpeters",
+          "senses": [
+            {
+              "gloss": "trumpeters",
+              "definition": "Those who sound the trumpets, beside the singers.",
+              "kin": [
+                "trumpet-feasts"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Ch.5.13",
+                  "role": "defining",
+                  "note": "לַמְחַצְּרִים וְלַמְשֹׁרְרִים, “the trumpeters and the singers were as one”."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-hzr",
+      "lang": "uga",
+      "form": "𐎈𐎑𐎗",
+      "translit": "ḥẓr",
+      "gloss": "court",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṯ̣"
+      },
+      "note": "Segert glosses ḥẓr “court” and compares Hebrew חָצֵר and Phoenician ḥṣr; in the Keret text King Keret bids Pabil not to besiege “my courts”, and in KTU 1.100:68 Horon “entered his court”. Ugaritic ẓ stands for the older ṯ̣ behind צ.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "pp. 185–186, §93 Glossary, ḥẓr; texts KTU 1.14 III (lḥẓry al tṣr) and 1.100:68 (yštql lḥẓrh)"
+        }
+      ]
+    },
+    {
+      "id": "ar-hazira",
+      "lang": "ar",
+      "form": "حَظَرَ، حِظَارٌ، حَظِيرَةٌ",
+      "translit": "ḥaẓara, ḥiẓār, ḥaẓīra",
+      "gloss": "fence off, forbid; wall of enclosure; enclosure, pen",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṯ̣"
+      },
+      "note": "Lane: ḥiẓār is “a wall, or wall of enclosure … anything intervening … forming a barrier … a fence”; ḥaẓīra “an enclosure … for camels … for sheep or goats, made of trees, to confine and protect them”. The verb ḥaẓara is “forbid, prohibit”, keeping out. The same ḥ and ẓ (older ṯ̣) as Ugaritic ḥẓr: an enclosed space, as the court is.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 595, حَظَرَهُ (n8411); p. 595, حِظَارٌ (n8413); p. 596, حَظِيرَةٌ (n8414)"
+        }
+      ]
+    },
+    {
+      "id": "sab-hzr",
+      "lang": "sem",
+      "form": "ḥẓr",
+      "translit": "ḥẓr",
+      "gloss": "(Sabaic) prohibit, ban; enclosed, fenced territory",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṯ̣"
+      },
+      "note": "Sabaic verb “prohibit, exempt; ban”, and noun “ban” and “enclosed/fenced territory” (R 4646/10, mḥgrm wḥẓrm “enclosed field and fenced land”), compared with Arabic ḥaẓīra. Read from the scan’s OCR text only.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 172, ḤẒR"
+        }
+      ]
+    },
+    {
+      "id": "sab-hsr",
+      "lang": "sem",
+      "form": "ḥṣr",
+      "translit": "ḥṣr",
+      "gloss": "(Sabaic) surround with an enclosure; enclosing wall; enclosed lands",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ"
+      },
+      "note": "Sabaic verb “surround with an enclosure” (R 4006/1), noun “enclosing wall” of a cistern, and “enclosed lands”, compared with Geʿez ḥaṣara “provide with a wall” and Hebrew חָצֵר. Its meaning is that of the court, but its ṣ is not the ẓ (older ṯ̣) of Ugaritic ḥẓr; it may belong with Arabic ḥaṣara “surround” as a second root of like meaning. Recorded as possible. Read from the scan’s OCR text only.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 184, ḤṢR"
+        }
+      ]
+    },
+    {
+      "id": "ar-hasara",
+      "lang": "ar",
+      "form": "حَصَرَ",
+      "translit": "ḥaṣara",
+      "gloss": "straiten; encompass, surround; besiege",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ"
+      },
+      "note": "Lane: “He, or it, straitened him; and encompassed, or surrounded, him”, of a hostile party besieging. Close to “enclose”, and to Sabaic ḥṣr, but with ṣ rather than the ẓ of Ugaritic ḥẓr and Arabic ḥaẓīra; possible only.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 582, حَصَرَهُ (n8209)"
+        }
+      ]
+    },
+    {
+      "id": "ar-hadar",
+      "lang": "ar",
+      "form": "حَضَرَ، حَضَرٌ، حَاضِرٌ",
+      "translit": "ḥaḍara, ḥaḍar, ḥāḍir",
+      "gloss": "be present; settled land of towns and villages; one dwelling settled by water",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ́"
+      },
+      "note": "Lane: ḥaḍara “he was, or became, present”, and “they stayed, or dwelt, by the waters”; ḥaḍar “a region … of cities, towns, or villages, and of cultivated land”, the contrary of the desert (badw); ḥāḍir “any people that have … taken up their abode by a constant source of water … whether … in towns or villages … or pitched their tents by the water”. This is the חֲצֵרִים of Ishmael’s sons and of Kedar (Gen 25:16; Isa 42:11). Arabic ḍ stands for the older ṣ́ behind צ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 588, حَضَرَ (n8303); p. 589, حَضَرٌ (n8309); p. 590, حَاضِرٌ (n8324)"
+        }
+      ]
+    },
+    {
+      "id": "sab-hdr",
+      "lang": "sem",
+      "form": "ḥḍr",
+      "translit": "ḥḍr",
+      "gloss": "(Sabaic) dwelling place; court of a temple; pilgrimage",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ́"
+      },
+      "note": "Sabaic noun ḥḍr “dwelling place” (C 79/4, “in his dwelling place”) and “court of the temple” (R 4228/7), with mḥḍr “court of the temple”, compared with Arabic ḥaḍar and Hebrew חָצֵר. With ḍ (older ṣ́), it shows the “settlement” root also used of a temple court: the two older roots meet in meaning as well as in Hebrew spelling. The land ḥḍrmwt (Hadramawt) is formed from it. Read from the scan’s OCR text only.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 184–185, ḤḌR I (noun ḥḍr, mḥḍr) and ḤḌR II (nisba from ḤḌRM(W)T)"
+        }
+      ]
+    },
+    {
+      "id": "phn-hsr-court",
+      "lang": "phn",
+      "form": "𐤇𐤑𐤓",
+      "translit": "ḥṣr",
+      "gloss": "court of a temple, court-temple",
+      "relation": "cognate",
+      "note": "Phoenician and Punic ḥṣr, pl. ḥṣrt: the court of the Lady of Byblos’s temple in which Yehawmilk set up a bronze altar (KAI 10), the court of the temple Samobaal built at Sidon (KAI 60), “the courts of the sanctuary” at Mactar (KAI 122). The same use as the temple courts of Hebrew. Phoenician spells ṣ, ḍ and ẓ alike, so it shows nothing of the older sound.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 194, ḤṢR III"
+        }
+      ]
+    },
+    {
+      "id": "phn-hsr-settle",
+      "lang": "phn",
+      "form": "𐤇𐤑𐤓",
+      "translit": "ḥṣr",
+      "gloss": "(piel) settle land; mḥṣrt settled lands",
+      "relation": "cognate",
+      "note": "Neo-Punic “tent-villages and settled lands” (KAI 161), compared with Hebrew חָצֵר “settlement”. A verb of settling, as Arabic ḥaḍara.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 193, Ḥ-Ṣ-R I"
+        }
+      ]
+    },
+    {
+      "id": "ar-khadir",
+      "lang": "ar",
+      "form": "خَضِرَ، خَضِرٌ، أَخْضَرُ",
+      "translit": "ḫaḍira, ḫaḍir, ʾaḫḍar",
+      "gloss": "be green; green herbage, verdure; green",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ",
+        "צ": "ṣ́"
+      },
+      "note": "Lane: ḫaḍir “what is green: seed-produce … goodly green herbage”, a place or land “having much verdure”; ḫaḍār “herbs, or leguminous plants, in the first state of their growth”; ʾaḫḍar “green, verdant”. Green herbage and garden greens, as חָצִיר is grass and leeks. Its ḫ, not the ḥ of the court and village cognates, marks the grass as another older root.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 755, خَضِرٌ (n10873); p. 755, خَضَارٌ (n10878); p. 756, أَخْضَرُ (n10888)"
+        }
+      ]
+    },
+    {
+      "id": "arc-hatsira",
+      "lang": "arc",
+      "form": "חֲצִירָא",
+      "translit": "ḥăṣîrāʾ",
+      "gloss": "grass, moss",
+      "relation": "cognate",
+      "note": "Targumic Aramaic, rendering חָצִיר of Ps 129:6 (a variant reads חֲצַר). Since it renders the very verse, it may be the Hebrew word taken over; it shows nothing of the older sounds.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "H01530, חֲצִירָא; H01543, חֲצַר"
+        }
+      ]
+    },
+    {
+      "id": "arc-hatsotsarta",
+      "lang": "arc",
+      "form": "חֲצוֹצַרְתָּא",
+      "translit": "ḥăṣôṣartāʾ",
+      "gloss": "trumpet",
+      "relation": "cognate",
+      "note": "Targumic Aramaic, rendering חֲצֹצְרָה of Hos 5:8; the Talmud says what was once called shofar came to be called by this name. The same word as the Hebrew, perhaps borrowed from it; it does not explain the word’s origin.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "H01514, חֲצוֹצַרְתָּא"
+        }
+      ]
+    },
+    {
+      "id": "arc-hatstsar",
+      "lang": "arc",
+      "form": "חַצְצַר",
+      "translit": "ḥaṣṣar",
+      "gloss": "blow the trumpet",
+      "relation": "cognate",
+      "note": "Targumic Aramaic, made from the noun: מְחַצְצְרִין in the Targum of 1Ch 15:24 and מְחַצְּרִין in that of 2Ch 13:14, the verses where the Hebrew uses the verb.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "H01539, חַצְצַר"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Scripture sets man beside grass: it springs up in the morning and by evening is cut down and withered (Psa 90:5–6); “as for man, his days are as grass … the wind passes over it, and it is gone” (Psa 103:15–16). “All flesh is grass”, and it withers “because the רוּחַ of Yahweh blows upon it” (Isa 40:6–7); the son of man “shall die” and “be made as grass” (Isa 51:12). Against this only one thing stands: “the word of our God shall stand for ever” (Isa 40:8). Peter quotes the passage and says that word is the gospel preached to them, by which they are “born again, not of corruptible seed, but of incorruptible, by the word of God which lives and abides for ever” (1Pe 1:23–25). From the verses: man has no lasting life in himself; he withers like grass when God withdraws his breath, and whatever life outlasts the withering comes from the abiding word of God received, not from anything in man’s nature.",
+      "evidence": [
+        {
+          "ref": "Psa.90.5",
+          "to": "Psa.90.6"
+        },
+        {
+          "ref": "Psa.103.15",
+          "to": "Psa.103.16"
+        },
+        {
+          "ref": "Isa.40.6",
+          "to": "Isa.40.8"
+        },
+        {
+          "ref": "Isa.51.12"
+        },
+        {
+          "ref": "1Pe.1.23",
+          "to": "1Pe.1.25"
+        },
+        {
+          "ref": "Jas.1.10",
+          "to": "Jas.1.11"
+        }
+      ]
+    },
+    {
+      "topic": "trumpet-gathering",
+      "statement": "Yahweh gave Israel the silver trumpets to call the congregation to the door of the tent of meeting and to move the camps (Num 10:2–7); the priests alone blew them, “a statute for ever” (Num 10:8). Blown in war, they brought Israel to remembrance before Yahweh to be saved from their enemies (Num 10:9; 2Ch 13:12–14); blown over the offerings at the appointed times of Lev 23 and the new moons, they were “a memorial before your God” (Num 10:10). The New Testament’s σάλπιγξ, the Septuagint’s word for this trumpet and for the שׁוֹפָר alike, sounds at Christ’s coming: his angels gather his elect “with a great sound of a trumpet” (Mat 24:31), and at “the last trump … the dead shall be raised incorruptible” (1Co 15:52), “the dead in Christ shall rise first” (1Th 4:16). From the verses: the trumpet in scripture is God’s signal to gather his people to his presence and to move them on, and the summons of the congregation in the wilderness is answered by the trumpet that raises the dead and gathers the saints to Christ at his return.",
+      "evidence": [
+        {
+          "ref": "Num.10.2",
+          "to": "Num.10.10"
+        },
+        {
+          "ref": "2Ch.13.12",
+          "to": "2Ch.13.14"
+        },
+        {
+          "ref": "Mat.24.31"
+        },
+        {
+          "ref": "1Co.15.52"
+        },
+        {
+          "ref": "1Th.4.16"
+        }
+      ]
+    },
+    {
+      "topic": "approach-to-god",
+      "statement": "The courts were where Israel came before Yahweh: to bring an offering and come into his courts (Psa 96:8), to enter them with praise (Psa 100:4). To dwell there is the happiness of the one Yahweh “chooses and causes to approach” (Psa 65:5), and a day in them is better than a thousand elsewhere (Psa 84:11). Yet coming without obedience is only trampling them: “who has required this at your hand, to trample my courts?” (Isa 1:12–13), and even the high priest keeps them on condition that he walks in Yahweh’s ways (Zec 3:7). From the verses: nearness to God is his choice and gift, and it belongs to those who come with thanksgiving and obedience, not to those who merely stand in the place.",
+      "evidence": [
+        {
+          "ref": "Psa.96.8"
+        },
+        {
+          "ref": "Psa.100.4"
+        },
+        {
+          "ref": "Psa.65.5"
+        },
+        {
+          "ref": "Psa.84.3"
+        },
+        {
+          "ref": "Psa.84.11"
+        },
+        {
+          "ref": "Isa.1.12",
+          "to": "Isa.1.13"
+        },
+        {
+          "ref": "Zec.3.7"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (חֲצֹצְרָה, Num 10:2–10) and the court (חָצֵר) of the sanctuary, with Leviticus 23 (Num 10:10 ties the trumpets to its מוֹעֲדִים). The database keys the root חצר as the brief does. BDB keys: h.fa.ab (court) and h.fb.ab (settlement) list the same tokens by spelling, so only h.fa.ab is named, on the one word חָצֵר with both senses; h.fb.ab adds only Deu 2:23. Likewise h.fb.ak (חָצִיר “abode”) shares its tokens with h.fc.ab (grass), so only h.fc.ab is named and “abode” is a sense of חָצִיר. The verb h.fd.ac has no keyed tokens: its six participles (1Ch 15:24; 2Ch 5:12, 13; 7:6; 13:14; 29:28) carry no BDB key in the database, so its use count reads 0. Zero-token cross-references h.fa.aa, h.fb.aa, h.fc.aa, h.fd.aa, h.ez.af, c.ao.ai and p.ck.ar are left out. Proper names: Hezron, Hezro and Hazarmaveth have name entries in names/; the place names (Hazar-addar, Hazar-enan, Hazar-gaddah, Hazar-shual, Hazar-susah/susim, Hazer-hattikon, Hazor, Hazor-hadattah, Baal-hazor, En-hazor, Hazeroth, and the town Hezron of Jos 15:3) are places and have no entries; BDB key h.fb.ae (Hazar-susah) wrongly gathers every סוּסִים “horses” by spelling. Merged letters: the court shows ḥ + ṯ̣ (Ugaritic ḥẓr, Arabic ḥaẓīra, Sabaic ḥẓr), the villages ḥ + ṣ́ (Arabic ḥaḍar, Sabaic ḥḍr), the grass ḫ + ṣ́ (Arabic ḫaḍira). Sabaic ḥḍr is named on the temple-court sense too because it means “court of the temple”, so that sense shows both ṯ̣ and ṣ́: whether court and village are one older root or two is open. Sabaic ḥṣr and Arabic ḥaṣara (ṣ) are possible only. Biella read from OCR text only; Segert’s page (185 or 186) from the OCR’s running heads, not the page image; Krahmalkov read from the local PDF’s text layer. Not consulted: Geʿez (Dillmann, Leslau) for ḥaṣara “wall in” (cited by Biella), DULAT for Ugaritic ḥẓr “village”, Akkadian, Syriac (SEDRA has no ḥṣr root; the Peshitta brief found none). Wiktionary’s Punic ḥṣr “grass” (Dioscorides’ plant names) not followed to Krahmalkov. Open questions: (1) whether 1Ch 15:24 etc. should be keyed to h.fd.ac in the database; (2) Isa 35:7 grass or abode; (3) the trumpet’s etymology."
+}
