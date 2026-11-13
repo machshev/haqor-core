@@ -1,0 +1,669 @@
+{
+  "id": "patal",
+  "root": "פתל",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "twisting",
+    "deceit",
+    "righteousness",
+    "worship",
+    "tribes"
+  ],
+  "gloss": "twist, twine; be twisted, crooked; twisted cord",
+  "summary": "פתל is to twist. What is twisted literally is a cord: פָּתִיל is the twisted thread or cord that bound Judah’s seal, tied the high priest’s breastpiece and gold plate, and put blue on every Israelite’s tassel. Twisting oneself is wrestling: Rachel’s “wrestlings of God I have wrestled” gave Naphtali his name (Gen 30:8). Of people and words it is the crooked, set beside עִקֵּשׁ and against what is right and pure: nothing in wisdom’s words is twisted (Pro 8:8), Israel was “a crooked and twisted generation” (Deu 32:5), and with the crooked Yahweh shows himself twisted (Psa 18:27). Arabic fatala and Akkadian patālu are “twist”, and Akkadian pitiltu is “cord”.",
+  "words": [
+    {
+      "lemma": "פָּתִיל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "twisted thread, cord",
+      "bdb": [
+        "q.ec.ab"
+      ],
+      "cognate_ids": [
+        "akk-pitiltu",
+        "ar-fatala",
+        "akk-patalu"
+      ],
+      "summary": "The root’s commonest word after the name: a twisted cord or thread, of flax, linen, blue wool or beaten gold, used to tie, bind and measure. Akkadian pitiltu “cord, string” and Arabic fatīl “twisted; slender cord” are the same word.",
+      "senses": [
+        {
+          "id": "patil-cord",
+          "gloss": "cord, string",
+          "definition": "A twisted cord used to tie one thing to another or to carry something: Judah’s cord with his seal, the blue cord tying the breastpiece to the ephod and the gold plate to the turban, the blue cord on the tassel, and a linen measuring line.",
+          "evidence": [
+            {
+              "ref": "Gen.38.18",
+              "role": "defining",
+              "note": "Judah’s pledge: “your seal and your פְּתִיל and your staff that is in your hand”."
+            },
+            {
+              "ref": "Gen.38.25",
+              "note": "“Whose are these, the seal and the פְּתִילִים and the staff?”"
+            },
+            {
+              "ref": "Exo.28.28",
+              "role": "defining",
+              "note": "They tie the breastpiece by its rings to the rings of the ephod “with a פְּתִיל of blue”."
+            },
+            {
+              "ref": "Exo.39.21"
+            },
+            {
+              "ref": "Exo.28.37",
+              "note": "The gold plate engraved “Holy to Yahweh” is put on a פְּתִיל of blue, on the turban."
+            },
+            {
+              "ref": "Exo.39.31"
+            },
+            {
+              "ref": "Num.15.38",
+              "role": "defining",
+              "note": "“They shall put on the tassel of the corner a פְּתִיל of blue”, so that they look on it and remember all Yahweh’s commandments (15:39)."
+            },
+            {
+              "ref": "Ezk.40.3",
+              "note": "The man of bronze with “a פְּתִיל of linen in his hand and the measuring reed”: a measuring line."
+            }
+          ]
+        },
+        {
+          "gloss": "thread, strand",
+          "definition": "A single twisted strand: gold beaten thin and cut into threads to be worked into the ephod, and a strand of tow that snaps at the touch of fire.",
+          "evidence": [
+            {
+              "ref": "Exo.39.3",
+              "role": "defining",
+              "note": "They beat out sheets of gold and cut them into פְּתִילִם, to work in among the blue, purple, scarlet and linen."
+            },
+            {
+              "ref": "Jdg.16.9",
+              "role": "defining",
+              "note": "Samson snapped the bowstrings “as a פְּתִיל of tow snaps when it touches fire”."
+            }
+          ]
+        },
+        {
+          "gloss": "binding, fastening (of a lid)",
+          "definition": "In צָמִיד פָּתִיל, a cover bound on, so that the vessel is closed: an open vessel with no cover bound on it is unclean in the tent of the dead.",
+          "evidence": [
+            {
+              "ref": "Num.19.15",
+              "role": "defining",
+              "note": "“Every open vessel which has no צָמִיד פָּתִיל on it is unclean.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "פְּתִיל תְּכֵלֶת",
+            "gloss": "a cord of blue",
+            "evidence": [
+              {
+                "ref": "Exo.28.28"
+              },
+              {
+                "ref": "Exo.28.37"
+              },
+              {
+                "ref": "Exo.39.21"
+              },
+              {
+                "ref": "Exo.39.31"
+              },
+              {
+                "ref": "Num.15.38"
+              }
+            ]
+          },
+          {
+            "phrase": "צָמִיד פָּתִיל",
+            "gloss": "a cover bound on",
+            "evidence": [
+              {
+                "ref": "Num.19.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פָּתַל",
+      "pos": "verb",
+      "gloss": "twist; (niphal) twist oneself, wrestle; be twisted, crooked; (hithpael) show oneself twisted",
+      "bdb": [
+        "q.ec.aa"
+      ],
+      "cognate_ids": [
+        "ar-fatala",
+        "akk-patalu",
+        "arc-petal",
+        "syc-patal",
+        "gez-fatala"
+      ],
+      "summary": "Five uses, none in the qal. The niphal is to be twisted: of Rachel, twisting herself with her sister in a wrestling contest, and as a participle of what is crooked, set beside עִקֵּשׁ. The hithpael is Yahweh showing himself twisted to the crooked. Arabic and Aramaic use the same verb of twisting a man from his course by deceit, and of perverting.",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "twist oneself, wrestle; be twisted, crooked",
+          "senses": [
+            {
+              "id": "niphal-wrestle",
+              "gloss": "twist oneself, wrestle",
+              "definition": "To twist oneself about another in a struggle: Rachel’s contest with Leah for children, which she won.",
+              "evidence": [
+                {
+                  "ref": "Gen.30.8",
+                  "role": "defining",
+                  "note": "“נַפְתּוּלֵי אֱלֹהִים נִפְתַּלְתִּי with my sister, and I have prevailed”: the wrestling ends in prevailing, and gives Naphtali his name."
+                }
+              ]
+            },
+            {
+              "id": "niphal-crooked",
+              "gloss": "twisted, crooked, perverse",
+              "definition": "The participle, of words and plans that are twisted from what is right: set beside עִקֵּשׁ “crooked”, against צֶדֶק, and beside the “cunning” whose craftiness catches them.",
+              "evidence": [
+                {
+                  "ref": "Pro.8.8",
+                  "role": "defining",
+                  "note": "“All the words of my mouth are in righteousness; there is nothing נִפְתָּל or עִקֵּשׁ in them”; 8:9 “they are all straight (נְכֹחִים) to him who understands”."
+                },
+                {
+                  "ref": "Job.5.13",
+                  "role": "defining",
+                  "note": "“He catches the wise in their craftiness, and the counsel of the נִפְתָּלִים is rushed headlong”: twisted men, beside the crafty of 5:12."
+                },
+                {
+                  "ref": "1Co.3.19",
+                  "note": "Paul quotes the first line of Job 5:13, “he catches the wise in their craftiness”: the wisdom of this world is foolishness with God."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "show oneself twisted",
+          "senses": [
+            {
+              "id": "hithpael-twisted",
+              "gloss": "show oneself twisted (to the crooked)",
+              "definition": "Of Yahweh, meeting the crooked man in his own terms: as he shows himself kind to the kind, blameless to the blameless and pure to the pure, he shows himself twisted to the crooked, turning their twisting back on them.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.27",
+                  "role": "defining",
+                  "note": "“With the pure you show yourself pure, and with the עִקֵּשׁ you show yourself twisted (תִּתְפַּתָּל).”"
+                },
+                {
+                  "ref": "2Sa.22.27",
+                  "role": "defining",
+                  "note": "The same line in David’s song, spelt תִּתַּפָּל, with the פ doubled and the ת of the stem assimilated."
+                },
+                {
+                  "ref": "Psa.18.26",
+                  "note": "The lines before: “with the kind you show yourself kind, with the blameless man blameless”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "διαστρέφω",
+          "gloss": "twist, distort, pervert",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.18.27, תִּתְפַּתָּל → διαστρέψεις; Deu.32.5, פְתַלְתֹּל → διεστραμμένη"
+            },
+            {
+              "ref": "Act.13.10",
+              "note": "Paul to Elymas: “will you not cease διαστρέφων the straight ways of the Lord?”"
+            },
+            {
+              "ref": "Act.20.30",
+              "note": "Men will arise “speaking διεστραμμένα, to draw away the disciples after them”."
+            }
+          ]
+        },
+        {
+          "lemma": "σκολιός",
+          "gloss": "crooked",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.8.8, נִפְתָּל → σκολιόν"
+            },
+            {
+              "ref": "Act.2.40",
+              "note": "“Save yourselves from this σκολιᾶς generation.”"
+            },
+            {
+              "ref": "Php.2.15"
+            }
+          ]
+        },
+        {
+          "lemma": "στρεβλόω",
+          "gloss": "twist, wrench",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Sa.22.27, תִּתַּפָּל → στρεβλωθήσῃ"
+            },
+            {
+              "ref": "2Pe.3.16",
+              "note": "The unlearned and unstable στρεβλοῦσιν Paul’s letters, “as also the other scriptures, to their own destruction”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עִקֵּשׁ",
+            "note": "“Crooked”, beside it in each figurative use.",
+            "evidence": [
+              {
+                "ref": "Pro.8.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.18.27"
+              },
+              {
+                "ref": "2Sa.22.27"
+              }
+            ]
+          },
+          {
+            "lemma": "עָרוּם",
+            "note": "“Crafty”: the crafty whose devices God frustrates are the twisted whose counsel he hurries on.",
+            "evidence": [
+              {
+                "ref": "Job.5.12",
+                "to": "Job.5.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "צֶדֶק",
+            "note": "Wisdom’s words are in righteousness, with nothing twisted in them.",
+            "evidence": [
+              {
+                "ref": "Pro.8.8",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נְכֹחַ",
+            "note": "“Straight, plain”: wisdom’s words are all straight to him who understands.",
+            "evidence": [
+              {
+                "ref": "Pro.8.9"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּרַר",
+            "note": "“Pure”: with the pure he is pure, with the crooked twisted.",
+            "evidence": [
+              {
+                "ref": "Psa.18.27"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פְּתַלְתֹּל",
+      "pos": "adjective",
+      "gloss": "very twisted, tortuous",
+      "bdb": [
+        "q.ec.ac"
+      ],
+      "cognate_ids": [
+        "ar-fatala",
+        "akk-patalu",
+        "arc-petal"
+      ],
+      "summary": "Used once, of Israel in the Song of Moses. The form repeats the last two letters of the root (פְּתַל-תֹּל), which marks twisting upon twisting.",
+      "senses": [
+        {
+          "id": "pethaltol-crooked",
+          "gloss": "twisted, crooked (of a generation)",
+          "definition": "Of a people turned every way from the straight ways of the God who made them, set beside עִקֵּשׁ and against Yahweh, whose work is perfect and who is upright.",
+          "kin": [
+            "niphal-crooked"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.32.5",
+              "role": "defining",
+              "note": "“They have corrupted themselves toward him; they are not his sons, it is their blemish: a generation עִקֵּשׁ וּפְתַלְתֹּל.”"
+            },
+            {
+              "ref": "Deu.32.4",
+              "role": "defining",
+              "note": "Set against the Rock: “his work is perfect (תָּמִים) … righteous and upright (יָשָׁר) is he.”"
+            },
+            {
+              "ref": "Php.2.15",
+              "note": "Paul takes up the verse: “children of God without blemish in the midst of a γενεᾶς σκολιᾶς καὶ διεστραμμένης”."
+            },
+            {
+              "ref": "Mat.17.17",
+              "note": "Jesus: “O γενεὰ ἄπιστος καὶ διεστραμμένη, how long shall I be with you?”"
+            },
+            {
+              "ref": "Luk.9.41"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "διαστρέφω",
+          "gloss": "twist, distort, pervert",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.32.5, פְתַלְתֹּל → διεστραμμένη (with עִקֵּשׁ → σκολιά)"
+            },
+            {
+              "ref": "Php.2.15",
+              "role": "defining",
+              "note": "“ἐν μέσῳ γενεᾶς σκολιᾶς καὶ διεστραμμένης”: the words of Deu 32:5."
+            },
+            {
+              "ref": "Mat.17.17"
+            },
+            {
+              "ref": "Luk.9.41"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עִקֵּשׁ",
+            "note": "“Crooked”: דּוֹר עִקֵּשׁ וּפְתַלְתֹּל.",
+            "evidence": [
+              {
+                "ref": "Deu.32.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "יָשָׁר",
+            "note": "“Upright”: the Rock, against the twisted generation.",
+            "evidence": [
+              {
+                "ref": "Deu.32.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "דּוֹר עִקֵּשׁ וּפְתַלְתֹּל",
+            "gloss": "a crooked and twisted generation",
+            "evidence": [
+              {
+                "ref": "Deu.32.5"
+              },
+              {
+                "ref": "Php.2.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נַפְתּוּלִים",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wrestlings",
+      "bdb": [
+        "q.ec.ad"
+      ],
+      "summary": "Used once, plural, with the niphal of the verb as its object: Rachel’s “wrestlings” with Leah. The noun of the niphal “twist oneself”.",
+      "senses": [
+        {
+          "gloss": "wrestlings, a struggle",
+          "definition": "A twisting, grappling contest. In נַפְתּוּלֵי אֱלֹהִים “wrestlings of God” the name of God makes them very great, or names the one the struggle was carried to: she had prayed for a son (Gen 30:6).",
+          "kin": [
+            "niphal-wrestle"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.30.8",
+              "role": "defining",
+              "note": "“נַפְתּוּלֵי אֱלֹהִים I have wrestled with my sister, and I have prevailed”; she names the son Naphtali."
+            },
+            {
+              "ref": "Gen.30.6",
+              "note": "Rachel at Dan’s birth: “God has judged me and also heard my voice and given me a son.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "נַפְתּוּלֵי אֱלֹהִים",
+            "gloss": "wrestlings of God; mighty wrestlings",
+            "evidence": [
+              {
+                "ref": "Gen.30.8"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-fatala",
+      "lang": "ar",
+      "form": "فَتَلَ، فَتِيلٌ",
+      "translit": "fatala, fatīl",
+      "gloss": "twist (a rope, a wick); twisted; a slender cord",
+      "relation": "cognate",
+      "note": "Lane’s sources give فَتَلَ “he twisted it, like as one twists a rope … or a wick”, and figuratively فَتَلَ ذُؤَابَتَهُ “he made him to turn from his opinion … by deceiving him”; انفتل “it became twisted; he turned away from his way”; فَتِيلٌ “twisted; a slender cord”, and مَفْتُولٌ “compact in make, as though twisted”. Both the cord (פָּתִיל) and the turning of a man from the straight by deceit (נִפְתָּל, Job 5:13) are here.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2333, root فتل, فَتَلَهُ (n32952); انفتل (n32954)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2334, فَتِيلٌ (n32960); فَتِيلَةٌ (n32961); مَفْتُولٌ (n32965)"
+        }
+      ]
+    },
+    {
+      "id": "akk-patalu",
+      "lang": "akk",
+      "form": "patālu",
+      "translit": "patālu",
+      "gloss": "twist, twine; (N) be twisted; patlu “entwined”",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000013880, patālu [twine] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000071890, patlu [entwined] AJ"
+        }
+      ]
+    },
+    {
+      "id": "akk-pitiltu",
+      "lang": "akk",
+      "form": "pitiltu",
+      "translit": "pitiltu",
+      "gloss": "cord, string",
+      "relation": "cognate",
+      "note": "The noun of patālu, answering to פָּתִיל: a twisted cord.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000014170, pitiltu [string] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-petal",
+      "lang": "arc",
+      "form": "פְּתַל",
+      "translit": "pətal",
+      "gloss": "twist; (pael) pervert",
+      "relation": "cognate",
+      "note": "Jewish Aramaic; the Targum of Proverbs uses the pael passive participle מְפַתְּלִין, “perverted”, for Hebrew נְלוֹזִים “devious” (Pro 2:15): the figurative crookedness of נִפְתָּל and פְּתַלְתֹּל.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּתַל",
+          "note": "Pa. פַּתֵּיל “to pervert”; Targ. Prov. 2:15."
+        }
+      ]
+    },
+    {
+      "id": "syc-patal",
+      "lang": "syc",
+      "form": "ܦܬܰܠ",
+      "translit": "pətal",
+      "gloss": "twist, twine",
+      "relation": "cognate",
+      "note": "Listed among the descendants of the Proto-Semitic verb “to twist, to twine, to plait”; not yet checked in a Syriac dictionary. The Peshitta’s scripture does not use the root.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Proto-Semitic *patal-, verb, descendants: Classical Syriac ܦܱ݁ܬܱ݁ܠ (patal)"
+        }
+      ]
+    },
+    {
+      "id": "gez-fatala",
+      "lang": "gez",
+      "form": "ፈተለ",
+      "translit": "fatala",
+      "gloss": "twist, spin",
+      "relation": "cognate",
+      "note": "Listed among the descendants of the Proto-Semitic verb “to twist, to twine, to plait”; not yet checked in a Ge'ez dictionary.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Proto-Semitic *patal-, verb, descendants: Ge'ez ፈተለ (fätälä)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "a-crooked-generation",
+      "statement": "The Song of Moses sets the Rock, whose work is perfect and who is righteous and upright, against the people who corrupted themselves toward him: “not his sons, it is their blemish, a generation עִקֵּשׁ וּפְתַלְתֹּל” (Deu 32:4–5). Jesus calls the generation of his day “faithless and διεστραμμένη” (Mat 17:17; Luk 9:41), and Peter urges, “save yourselves from this σκολιᾶς generation” (Act 2:40). Paul takes the words of Deu 32:5 and turns them round: believers are to be blameless, “children of God without blemish in the midst of a σκολιᾶς καὶ διεστραμμένης generation”, shining as lights in the world (Php 2:14–15). From the verses: the twisted generation of the Song is the pattern the apostles found in the Israel of their own day, and those in Christ are to be what that generation was not, God’s sons and without blemish, while living among it.",
+      "evidence": [
+        {
+          "ref": "Deu.32.4",
+          "to": "Deu.32.5"
+        },
+        {
+          "ref": "Mat.17.17"
+        },
+        {
+          "ref": "Luk.9.41"
+        },
+        {
+          "ref": "Act.2.40"
+        },
+        {
+          "ref": "Php.2.14",
+          "to": "Php.2.15"
+        }
+      ]
+    },
+    {
+      "topic": "god-answers-each-way",
+      "statement": "David sings that Yahweh shows himself kind to the kind, blameless to the blameless, pure to the pure, “and with the crooked you show yourself twisted (תִּתְפַּתָּל)”, and adds that he saves the afflicted people and brings down haughty eyes (Psa 18:26–28; 2Sa 22:26–28). Eliphaz says the same of the crafty: God frustrates their devices, catches the wise in their craftiness, and “the counsel of the twisted is rushed headlong” (Job 5:12–13); Paul quotes the line to show that the wisdom of this world is foolishness with God (1Co 3:19). Yahweh warns Israel, “if you walk contrary to me, I will walk contrary to you” (Lev 26:23–24). From the verses: God is not crooked, for his ways are upright (Deu 32:4); he meets each man on the road the man has chosen, and the twisted find their own twisting turned against them.",
+      "evidence": [
+        {
+          "ref": "Psa.18.26",
+          "to": "Psa.18.28"
+        },
+        {
+          "ref": "2Sa.22.26",
+          "to": "2Sa.22.28"
+        },
+        {
+          "ref": "Job.5.12",
+          "to": "Job.5.13"
+        },
+        {
+          "ref": "1Co.3.19"
+        },
+        {
+          "ref": "Lev.26.23",
+          "to": "Lev.26.24"
+        },
+        {
+          "ref": "Deu.32.4"
+        }
+      ]
+    },
+    {
+      "topic": "straight-words",
+      "statement": "Wisdom says, “all the words of my mouth are in righteousness; there is nothing נִפְתָּל or crooked in them; they are all straight to him who understands” (Pro 8:8–9). Peter warns that in Paul’s letters are things hard to understand, which the unlearned and unstable twist (στρεβλοῦσιν), as they do the other scriptures, to their own destruction (2Pe 3:16). From the verses: the twisting is never in the word, which is straight to the one who understands; it is in the reader who wrenches it.",
+      "evidence": [
+        {
+          "ref": "Pro.8.8",
+          "to": "Pro.8.9"
+        },
+        {
+          "ref": "2Pe.3.16"
+        }
+      ]
+    },
+    {
+      "topic": "blue-cord",
+      "statement": "The same “cord of blue” (פְּתִיל תְּכֵלֶת) that bound the gold plate engraved “Holy to Yahweh” on the high priest’s turban, and tied the breastpiece of the names of Israel’s sons over his heart (Exo 28:28–29, 36–37), Yahweh commanded every Israelite to put on the tassel of his garment, “that you may look on it and remember all the commandments of Yahweh and do them … and be holy to your God” (Num 15:38–40). From the verses: each Israelite wore on his own clothing the cord that bound holiness to Yahweh on the high priest, a reminder that the whole people was called to be holy.",
+      "evidence": [
+        {
+          "ref": "Exo.28.28",
+          "to": "Exo.28.29"
+        },
+        {
+          "ref": "Exo.28.36",
+          "to": "Exo.28.37"
+        },
+        {
+          "ref": "Num.15.38",
+          "to": "Num.15.40"
+        }
+      ]
+    }
+  ],
+  "note": "Left out: פִּתֹם Pithom (Exo 1:11, bdb q.ec.af), which BDB files here but which is a place and an Egyptian name (“house of Atum”), not a word of this root; and n.en.ah, a cross-reference key with no tokens. The proper name נַפְתָּלִי (q.ec.ae, 51 tokens) has its own entry, names/naphtali.json. 2Sa 22:27 תִּתַּפָּל is counted under the verb’s key; MACULA lemmatizes it under תפל, but the line is Psa 18:27’s תִּתְפַּתָּל with the stem’s ת assimilated. Syriac and Ge'ez cognates rest on Wiktionary’s Proto-Semitic descendants list only: check Payne Smith (ܦܬܠ) and Dillmann or Leslau (ፈተለ) by page. The Septuagint’s rendering of Gen 30:8 (συνανεστράφην) is not in the MACULA alignment."
+}
