@@ -1,0 +1,3029 @@
+{
+  "id": "nasa-lift",
+  "root": "נשׂא",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "lifting",
+    "carrying",
+    "forgiveness",
+    "sin",
+    "leadership",
+    "prophecy",
+    "favour",
+    "worship"
+  ],
+  "gloss": "lift, raise; carry, bear; take away; one lifted up, prince",
+  "summary": "נָשָׂא is to lift something up and so to carry it: to raise the eyes, the voice, the hand, the head or the face; to carry a load, the tabernacle or a child; to take something up and away. Its most weighty use is with sin: the sinner “bears his iniquity” (Lev 5:1), while Yahweh, “bearing iniquity” (Exo 34:7), lifts it off and carries it away, which is forgiveness (Psa 32:1, 5), done under the law through the priest and the goat that “bore” it (Lev 10:17; 16:22) and at last by the servant who “bore the sin of many” (Isa 53:12; 1Pe 2:24). From it come נָשִׂיא, one lifted up, the prince of a tribe (Num 10:4) and the prince of Ezekiel’s prophecies, and נְשִׂאִים the vapours that rise; מַשָּׂא, a load carried and an oracle lifted up against a people; שְׂאֵת, a lifting up, dignity, and a swelling of the skin. Akkadian našû, Ugaritic and Phoenician nšʾ and Ge’ez näśʾä share “lift, carry”; Arabic našaʾa keeps “rise”, of clouds and of a raised beacon.",
+  "words": [
+    {
+      "lemma": "נָשָׂא",
+      "pos": "verb",
+      "gloss": "lift, raise; carry, bear, endure; bear (iniquity), forgive; take, take away",
+      "bdb": [
+        "n.fm.aa"
+      ],
+      "cognate_ids": [
+        "akk-nasu",
+        "uga-nsa",
+        "phn-nsa",
+        "arc-nesa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lift, raise; carry, bear, endure; bear iniquity, forgive; take, take away; (passive participle) lifted, honoured",
+          "cognate_ids": [
+            "gez-nasa"
+          ],
+          "senses": [
+            {
+              "id": "lift-raise",
+              "gloss": "lift, raise",
+              "definition": "Raise something up from where it is: the ark lifted by the waters, a stone, a banner on a hill, a cup.",
+              "evidence": [
+                {
+                  "ref": "Gen.7.17",
+                  "role": "defining",
+                  "note": "The waters “lifted the ark, and it rose up off the earth.”"
+                },
+                {
+                  "ref": "Isa.13.2",
+                  "role": "defining",
+                  "note": "“Lift up a banner (נֵס) on a bare mountain.”"
+                },
+                {
+                  "ref": "Jer.4.6"
+                },
+                {
+                  "ref": "Isa.5.26",
+                  "note": "Yahweh lifts a banner to the nations from afar."
+                },
+                {
+                  "ref": "Psa.116.13",
+                  "note": "“I will lift the cup of salvation and call on the name of Yahweh.”"
+                },
+                {
+                  "ref": "Jon.1.12",
+                  "note": "“Lift me up and throw me into the sea.”"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "lift-eyes",
+                  "gloss": "lift the eyes: look up, see",
+                  "definition": "With עֵינַיִם, raise the eyes to look at something far off.",
+                  "evidence": [
+                    {
+                      "ref": "Gen.13.10",
+                      "role": "defining",
+                      "note": "Lot lifted his eyes and saw all the plain of the Jordan."
+                    },
+                    {
+                      "ref": "Gen.22.4",
+                      "note": "On the third day Abraham lifted his eyes and saw the place afar off."
+                    },
+                    {
+                      "ref": "Num.24.2"
+                    },
+                    {
+                      "ref": "Psa.121.1",
+                      "note": "“I will lift my eyes to the hills.”"
+                    },
+                    {
+                      "ref": "Ezk.18.12",
+                      "note": "Lifting the eyes to idols: looking to them for help."
+                    }
+                  ]
+                },
+                {
+                  "id": "lift-voice",
+                  "gloss": "lift the voice: cry aloud, weep",
+                  "definition": "With קוֹל, raise the voice, most often in weeping, sometimes in shouting for joy.",
+                  "evidence": [
+                    {
+                      "ref": "Gen.21.16",
+                      "role": "defining",
+                      "note": "Hagar lifted her voice and wept."
+                    },
+                    {
+                      "ref": "Gen.27.38"
+                    },
+                    {
+                      "ref": "Gen.29.11"
+                    },
+                    {
+                      "ref": "1Sa.30.4"
+                    },
+                    {
+                      "ref": "Isa.24.14",
+                      "note": "“They lift up their voice, they sing for joy.”"
+                    }
+                  ]
+                },
+                {
+                  "id": "lift-hand",
+                  "gloss": "lift the hand: swear; strike; pray, bless",
+                  "definition": "With יָד, raise the hand in an oath, against someone to strike, or toward God in prayer and over people in blessing.",
+                  "evidence": [
+                    {
+                      "ref": "Deu.32.40",
+                      "role": "defining",
+                      "note": "“I lift my hand to heaven and say, As I live for ever”: the hand raised in an oath."
+                    },
+                    {
+                      "ref": "Exo.6.8",
+                      "note": "The land “that I lifted my hand to give” to the fathers."
+                    },
+                    {
+                      "ref": "Ezk.20.5"
+                    },
+                    {
+                      "ref": "Psa.106.26"
+                    },
+                    {
+                      "ref": "2Sa.20.21",
+                      "note": "Sheba “has lifted his hand against the king”."
+                    },
+                    {
+                      "ref": "Lev.9.22",
+                      "role": "defining",
+                      "note": "Aaron lifted his hands toward the people and blessed them."
+                    },
+                    {
+                      "ref": "Psa.28.2",
+                      "note": "“When I lift up my hands toward your holy sanctuary.”"
+                    },
+                    {
+                      "ref": "Psa.134.2"
+                    },
+                    {
+                      "ref": "Lam.2.19"
+                    }
+                  ]
+                },
+                {
+                  "id": "lift-head",
+                  "gloss": "lift the head: take the count; restore, honour",
+                  "definition": "With רֹאשׁ, take the sum of a people by heads; or raise a man from a low place to honour. Lifting the head “from off you” is to take it off.",
+                  "evidence": [
+                    {
+                      "ref": "Num.1.2",
+                      "role": "defining",
+                      "note": "“Lift up the head of all the congregation… by the number of the names.”"
+                    },
+                    {
+                      "ref": "Exo.30.12"
+                    },
+                    {
+                      "ref": "Num.31.49"
+                    },
+                    {
+                      "ref": "Gen.40.13",
+                      "role": "defining",
+                      "note": "Pharaoh will lift up the cupbearer’s head and restore him to his place."
+                    },
+                    {
+                      "ref": "Gen.40.19",
+                      "note": "The play on it: the baker’s head will be lifted up “from off you”, and he hanged."
+                    },
+                    {
+                      "ref": "Gen.40.20"
+                    },
+                    {
+                      "ref": "2Ki.25.27",
+                      "note": "Evil-Merodach lifted the head of Jehoiachin out of prison."
+                    }
+                  ]
+                },
+                {
+                  "id": "lift-face",
+                  "gloss": "lift the face: accept, show favour; be partial",
+                  "definition": "With פָּנִים, raise the face of one bowed down before you: receive him, grant his request. In judgment it is to favour a party for who he is. One’s own face lifted is a clear conscience; Yahweh lifting his face toward his people is his favour.",
+                  "evidence": [
+                    {
+                      "ref": "Gen.32.21",
+                      "role": "defining",
+                      "note": "Jacob sends a gift ahead: “perhaps he will lift my face”, receive me."
+                    },
+                    {
+                      "ref": "Job.42.8",
+                      "role": "defining",
+                      "note": "Job will pray for his friends, “for him I will accept (lift his face)”."
+                    },
+                    {
+                      "ref": "Mal.1.8",
+                      "note": "Offer a blemished beast to your governor: “will he accept you or lift your face?”"
+                    },
+                    {
+                      "ref": "Mal.1.9"
+                    },
+                    {
+                      "ref": "Gen.19.21",
+                      "note": "The angel grants Lot’s request concerning Zoar."
+                    },
+                    {
+                      "ref": "Lev.19.15",
+                      "role": "defining",
+                      "note": "“You shall not lift the face of the poor nor honour the face of the great”: no partiality in judgment."
+                    },
+                    {
+                      "ref": "Deu.10.17",
+                      "role": "defining",
+                      "note": "Yahweh “does not lift the face and does not take a bribe”."
+                    },
+                    {
+                      "ref": "Job.32.21"
+                    },
+                    {
+                      "ref": "Mal.2.9"
+                    },
+                    {
+                      "ref": "Num.6.26",
+                      "role": "defining",
+                      "note": "“Yahweh lift up his face toward you and give you peace.”"
+                    },
+                    {
+                      "ref": "Psa.4.7",
+                      "note": "“Lift up the light of your face on us, Yahweh”, spelled נְסָה."
+                    },
+                    {
+                      "ref": "2Sa.2.22",
+                      "note": "Abner: how could he lift his own face to Joab after killing his brother?"
+                    },
+                    {
+                      "ref": "Job.11.15"
+                    },
+                    {
+                      "ref": "Job.22.26"
+                    },
+                    {
+                      "ref": "2Ki.5.1",
+                      "note": "The passive participle: Naaman was נְשֻׂא פָנִים, “lifted of face”, a man held in honour."
+                    },
+                    {
+                      "ref": "Isa.3.3"
+                    },
+                    {
+                      "ref": "Isa.9.14",
+                      "note": "“The elder and the lifted of face, he is the head.”"
+                    }
+                  ]
+                },
+                {
+                  "id": "lift-soul",
+                  "gloss": "lift the soul: long for, set the heart on",
+                  "definition": "With נֶפֶשׁ, raise one’s desire toward something: set one’s heart on it, look to it for life.",
+                  "evidence": [
+                    {
+                      "ref": "Deu.24.15",
+                      "role": "defining",
+                      "note": "The poor hired man “lifts his soul to” his wage: he depends on it."
+                    },
+                    {
+                      "ref": "Psa.25.1",
+                      "role": "defining",
+                      "note": "“To you, Yahweh, I lift up my soul.”"
+                    },
+                    {
+                      "ref": "Psa.24.4",
+                      "note": "One who “has not lifted up his soul to emptiness (שָׁוְא)”."
+                    },
+                    {
+                      "ref": "Psa.86.4"
+                    },
+                    {
+                      "ref": "Psa.143.8"
+                    },
+                    {
+                      "ref": "Hos.4.8",
+                      "note": "The priests “lift up their soul to” the people’s iniquity, wanting more of it."
+                    }
+                  ]
+                },
+                {
+                  "id": "lift-discourse",
+                  "gloss": "take up a parable, a lament, a word",
+                  "definition": "Raise one’s speech: take up an oracle, a proverb, a lament, or a name or report on the lips.",
+                  "evidence": [
+                    {
+                      "ref": "Num.23.7",
+                      "role": "defining",
+                      "note": "Balaam “lifted up his parable (מָשָׁל) and said”."
+                    },
+                    {
+                      "ref": "Num.24.3"
+                    },
+                    {
+                      "ref": "Isa.14.4",
+                      "note": "“You will take up this proverb against the king of Babylon.”"
+                    },
+                    {
+                      "ref": "Mic.2.4"
+                    },
+                    {
+                      "ref": "Ezk.19.1",
+                      "role": "defining",
+                      "note": "“Take up a lament (קִינָה) for the princes of Israel.”"
+                    },
+                    {
+                      "ref": "Amo.5.1"
+                    },
+                    {
+                      "ref": "Jer.7.29"
+                    },
+                    {
+                      "ref": "Job.27.1",
+                      "note": "Job “continued to take up his parable”."
+                    },
+                    {
+                      "ref": "Exo.20.7",
+                      "role": "defining",
+                      "note": "“You shall not lift up the name of Yahweh your God to emptiness (לַשָּׁוְא)”: take it on the lips for nothing."
+                    },
+                    {
+                      "ref": "Deu.5.11"
+                    },
+                    {
+                      "ref": "Exo.23.1",
+                      "note": "“You shall not lift up an empty report.”"
+                    },
+                    {
+                      "ref": "Psa.15.3",
+                      "note": "He does not lift up a reproach against his neighbour."
+                    },
+                    {
+                      "ref": "Psa.16.4",
+                      "note": "“I will not lift up their names on my lips.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rise",
+              "gloss": "rise, lift itself (intransitive)",
+              "definition": "Rarely, without an object: the waves rise, the earth heaves, a man rises in standing.",
+              "cognate_ids": [
+                "ar-nashaa"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.89.10",
+                  "role": "defining",
+                  "note": "“When its waves rise (בְּשׂוֹא), you still them.”"
+                },
+                {
+                  "ref": "Nam.1.5",
+                  "note": "The earth heaves at his presence."
+                },
+                {
+                  "ref": "Hos.13.1",
+                  "note": "When Ephraim spoke there was trembling; he was lifted up in Israel."
+                }
+              ]
+            },
+            {
+              "id": "carry",
+              "gloss": "carry, bear a load",
+              "definition": "Take a weight up and carry it from place to place: the ark, the tabernacle and its vessels, armour, goods on beasts. The participle נֹשֵׂא is the carrier, as the armour-bearer.",
+              "evidence": [
+                {
+                  "ref": "Num.10.17",
+                  "role": "defining",
+                  "note": "The sons of Gershon and Merari set out, “carrying the tabernacle”."
+                },
+                {
+                  "ref": "Num.10.21",
+                  "role": "defining",
+                  "note": "The Kohathites set out, “carrying the holy things”."
+                },
+                {
+                  "ref": "Num.4.15",
+                  "note": "The sons of Kohath shall come to carry, but not touch the holy things and die."
+                },
+                {
+                  "ref": "Num.7.9",
+                  "note": "They carried on the shoulder."
+                },
+                {
+                  "ref": "Exo.25.27",
+                  "note": "The rings hold the poles “to carry the table”."
+                },
+                {
+                  "ref": "Jos.3.3",
+                  "note": "The priests, the Levites, carrying the ark of the covenant."
+                },
+                {
+                  "ref": "Jos.6.4"
+                },
+                {
+                  "ref": "Deu.10.8"
+                },
+                {
+                  "ref": "1Ch.15.2",
+                  "note": "None but the Levites may carry the ark of God."
+                },
+                {
+                  "ref": "1Sa.14.1",
+                  "note": "נֹשֵׂא כֵלָיו, Jonathan’s armour-bearer."
+                },
+                {
+                  "ref": "1Sa.31.4"
+                },
+                {
+                  "ref": "Gen.45.23",
+                  "note": "Asses carrying the good things of Egypt."
+                },
+                {
+                  "ref": "1Sa.10.3"
+                },
+                {
+                  "ref": "Lam.5.13",
+                  "note": "Young men carry the millstone."
+                },
+                {
+                  "ref": "Jer.17.21",
+                  "role": "defining",
+                  "note": "“Do not carry a burden (מַשָּׂא) on the sabbath day.”"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "carry-people",
+                  "gloss": "carry (a people), as a father or nurse",
+                  "definition": "Carry those who cannot walk alone: a child in the arms, a people through the wilderness. Moses cannot carry Israel alone; Yahweh carried them as a man carries his son, on eagles’ wings, from the womb to old age.",
+                  "evidence": [
+                    {
+                      "ref": "Num.11.12",
+                      "role": "defining",
+                      "note": "“Carry them in your bosom, as a nurse carries the sucking child.”"
+                    },
+                    {
+                      "ref": "Num.11.14",
+                      "note": "“I am not able to carry all this people alone, for it is too heavy for me.”"
+                    },
+                    {
+                      "ref": "Num.11.17",
+                      "note": "The elders, given of the spirit on Moses, “shall carry the burden of the people with you”."
+                    },
+                    {
+                      "ref": "Deu.1.9"
+                    },
+                    {
+                      "ref": "Deu.1.12"
+                    },
+                    {
+                      "ref": "Deu.1.31",
+                      "role": "defining",
+                      "note": "“Yahweh your God carried you, as a man carries his son, in all the way.”"
+                    },
+                    {
+                      "ref": "Act.13.18",
+                      "note": "Paul takes up Deu 1:31: God bore with (or carried) them forty years in the wilderness."
+                    },
+                    {
+                      "ref": "Exo.19.4",
+                      "role": "defining",
+                      "note": "“I carried you on eagles’ wings and brought you to myself.”"
+                    },
+                    {
+                      "ref": "Deu.32.11"
+                    },
+                    {
+                      "ref": "Isa.40.11",
+                      "note": "The shepherd carries the lambs in his bosom."
+                    },
+                    {
+                      "ref": "Isa.46.3",
+                      "note": "Israel “carried from the womb”."
+                    },
+                    {
+                      "ref": "Isa.46.4",
+                      "role": "defining",
+                      "note": "“I have made, and I will carry; I will bear and deliver”, set against Babylon’s idols that must be carried (Isa 46:1)."
+                    }
+                  ]
+                },
+                {
+                  "id": "bear-endure",
+                  "gloss": "bear, endure, sustain",
+                  "definition": "Bear up under a weight that is not lifted by hand: a land supporting its flocks, a man bearing illness, reproach, shame, or Yahweh’s anger.",
+                  "evidence": [
+                    {
+                      "ref": "Gen.13.6",
+                      "role": "defining",
+                      "note": "“The land could not bear them, that they might dwell together.”"
+                    },
+                    {
+                      "ref": "Gen.36.7"
+                    },
+                    {
+                      "ref": "Pro.18.14",
+                      "role": "defining",
+                      "note": "A man’s spirit will sustain his sickness, “but a broken spirit who can bear?”"
+                    },
+                    {
+                      "ref": "Pro.30.21",
+                      "note": "Under four things the earth cannot bear up."
+                    },
+                    {
+                      "ref": "Jer.10.19",
+                      "note": "“This is a sickness, and I must bear it.”"
+                    },
+                    {
+                      "ref": "Mic.7.9",
+                      "role": "defining",
+                      "note": "“I will bear the indignation of Yahweh, because I have sinned against him, until he plead my cause.”"
+                    },
+                    {
+                      "ref": "Lam.3.27",
+                      "note": "It is good for a man to bear the yoke in his youth."
+                    },
+                    {
+                      "ref": "Psa.69.8",
+                      "note": "“For your sake I have borne reproach.”"
+                    },
+                    {
+                      "ref": "Jer.15.15"
+                    },
+                    {
+                      "ref": "Ezk.36.15"
+                    },
+                    {
+                      "ref": "Ezk.16.52",
+                      "note": "Jerusalem must bear her shame (כְּלִמָּה)."
+                    },
+                    {
+                      "ref": "Ezk.32.24"
+                    },
+                    {
+                      "ref": "Psa.88.16",
+                      "note": "“I have borne your terrors.”"
+                    }
+                  ]
+                },
+                {
+                  "id": "bear-fruit",
+                  "gloss": "bear fruit, yield",
+                  "definition": "Of trees and land: bring forth and hold up their fruit.",
+                  "evidence": [
+                    {
+                      "ref": "Ezk.17.8",
+                      "role": "defining",
+                      "note": "The vine planted “to bring forth branches and to bear fruit”."
+                    },
+                    {
+                      "ref": "Ezk.36.8"
+                    },
+                    {
+                      "ref": "Jol.2.22"
+                    },
+                    {
+                      "ref": "Hag.2.19"
+                    },
+                    {
+                      "ref": "Psa.72.3",
+                      "note": "“The mountains shall bear peace to the people.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bear-iniquity",
+              "gloss": "bear iniquity: carry its guilt",
+              "definition": "With עָוֹן, חֵטְא or the like as object, of the one who sinned: carry the guilt of the deed and be answerable for it, which ends in death or being cut off unless it is lifted off him.",
+              "evidence": [
+                {
+                  "ref": "Lev.5.1",
+                  "role": "defining",
+                  "note": "A witness who does not speak “shall bear his iniquity”."
+                },
+                {
+                  "ref": "Lev.5.17"
+                },
+                {
+                  "ref": "Lev.22.9",
+                  "role": "defining",
+                  "note": "“Lest they bear sin for it and die.”"
+                },
+                {
+                  "ref": "Num.9.13",
+                  "note": "The man who does not keep the Passover is cut off: “that man shall bear his sin.”"
+                },
+                {
+                  "ref": "Lev.20.20",
+                  "note": "“They shall bear their sin; they shall die childless.”"
+                },
+                {
+                  "ref": "Lev.24.15"
+                },
+                {
+                  "ref": "Lev.19.17",
+                  "note": "Rebuke your neighbour, and do not bear sin because of him."
+                },
+                {
+                  "ref": "Num.14.33",
+                  "note": "The sons will bear their fathers’ whoredoms in the wilderness."
+                },
+                {
+                  "ref": "Num.14.34",
+                  "role": "defining",
+                  "note": "“You shall bear your iniquities forty years, a year for each day.”"
+                },
+                {
+                  "ref": "Num.30.16",
+                  "note": "A husband who annuls a vow late bears her iniquity."
+                },
+                {
+                  "ref": "Ezk.18.19"
+                },
+                {
+                  "ref": "Ezk.18.20",
+                  "role": "defining",
+                  "note": "“The soul that sins, it shall die. The son shall not bear the iniquity of the father.”"
+                },
+                {
+                  "ref": "Ezk.4.4",
+                  "note": "Ezekiel lies on his side and bears Israel’s iniquity, a day for each year: a sign."
+                },
+                {
+                  "ref": "Ezk.4.5"
+                },
+                {
+                  "ref": "Ezk.44.12"
+                },
+                {
+                  "ref": "Gen.4.13",
+                  "note": "Cain: “My iniquity is greater than I can bear.”"
+                }
+              ]
+            },
+            {
+              "id": "forgive",
+              "gloss": "lift away (sin): forgive, pardon",
+              "definition": "Of the one sinned against, above all Yahweh: lift the iniquity off the sinner and carry it away, so that he no longer bears it. Set beside “cover” and “pass over”, and against “visit” iniquity.",
+              "evidence": [
+                {
+                  "ref": "Exo.34.7",
+                  "role": "defining",
+                  "note": "Yahweh “bearing (נֹשֵׂא) iniquity and transgression and sin”, yet who will not clear the guilty."
+                },
+                {
+                  "ref": "Num.14.18"
+                },
+                {
+                  "ref": "Num.14.19",
+                  "role": "defining",
+                  "note": "“Pardon (סְלַח) this people… as you have borne (נָשָׂאתָה) this people from Egypt until now.”"
+                },
+                {
+                  "ref": "Mic.7.18",
+                  "role": "defining",
+                  "note": "“Who is a God like you, bearing iniquity and passing over transgression?”"
+                },
+                {
+                  "ref": "Psa.32.1",
+                  "role": "defining",
+                  "note": "“Blessed is he whose transgression is lifted (נְשׂוּי), whose sin is covered.”"
+                },
+                {
+                  "ref": "Psa.32.5",
+                  "note": "“You lifted the iniquity of my sin.”"
+                },
+                {
+                  "ref": "Psa.85.3",
+                  "note": "“You lifted the iniquity of your people; you covered all their sin.”"
+                },
+                {
+                  "ref": "Psa.99.8"
+                },
+                {
+                  "ref": "Isa.33.24",
+                  "note": "The people who dwell there are “lifted of iniquity”, forgiven."
+                },
+                {
+                  "ref": "Hos.14.3",
+                  "note": "“Take away all iniquity.”"
+                },
+                {
+                  "ref": "Exo.32.32",
+                  "note": "Moses: “If you will lift their sin…”"
+                },
+                {
+                  "ref": "Jos.24.19",
+                  "note": "“He will not lift your transgressions.”"
+                },
+                {
+                  "ref": "Exo.23.21",
+                  "note": "The angel “will not lift your transgression, for my name is in him.”"
+                },
+                {
+                  "ref": "Gen.50.17",
+                  "role": "defining",
+                  "note": "Joseph’s brothers: “Lift, please, the transgression of your brothers.”"
+                },
+                {
+                  "ref": "Exo.10.17",
+                  "note": "Pharaoh: “Lift my sin only this once.”"
+                },
+                {
+                  "ref": "1Sa.15.25"
+                },
+                {
+                  "ref": "1Sa.25.28"
+                },
+                {
+                  "ref": "Gen.18.24",
+                  "note": "Without עָוֹן: “will you not lift (spare) the place for the fifty righteous?”"
+                },
+                {
+                  "ref": "Gen.18.26"
+                },
+                {
+                  "ref": "Rom.4.7",
+                  "note": "Paul quotes Psa 32:1, “Blessed are they whose iniquities are forgiven (ἀφέθησαν)”, of righteousness counted without works."
+                }
+              ]
+            },
+            {
+              "id": "bear-for-others",
+              "gloss": "bear (the iniquity of others) away",
+              "definition": "Of one appointed by Yahweh: take up the iniquity of others and carry it, so that it is lifted from them: the high priest, the priests eating the sin offering, the goat sent into the wilderness, and the servant of Isa 53.",
+              "evidence": [
+                {
+                  "ref": "Exo.28.38",
+                  "role": "defining",
+                  "note": "Aaron, with “holy to Yahweh” on his forehead, “shall bear the iniquity of the holy things”, that they may be accepted."
+                },
+                {
+                  "ref": "Lev.10.17",
+                  "role": "defining",
+                  "note": "The sin offering was given the priests “to bear the iniquity of the congregation, to make a covering for them before Yahweh”."
+                },
+                {
+                  "ref": "Lev.16.22",
+                  "role": "defining",
+                  "note": "“The goat shall bear on itself all their iniquities to a land cut off.”"
+                },
+                {
+                  "ref": "Num.18.1",
+                  "note": "Aaron and his sons bear the iniquity of the sanctuary and of the priesthood."
+                },
+                {
+                  "ref": "Num.18.23"
+                },
+                {
+                  "ref": "Isa.53.4",
+                  "role": "defining",
+                  "note": "“Surely he has borne our sicknesses and carried (סְבָלָם) our pains.”"
+                },
+                {
+                  "ref": "Isa.53.12",
+                  "role": "defining",
+                  "note": "“He bore the sin of many and made intercession for the transgressors.”"
+                },
+                {
+                  "ref": "Mat.8.17",
+                  "note": "Isa 53:4 fulfilled in Jesus’ healing: “he took our infirmities and bore (ἐβάστασεν) our sicknesses.”"
+                },
+                {
+                  "ref": "Heb.9.28",
+                  "note": "“Christ was once offered to bear (ἀνενεγκεῖν) the sins of many”, the words of Isa 53:12."
+                },
+                {
+                  "ref": "1Pe.2.24",
+                  "note": "“Who his own self bore (ἀνήνεγκεν) our sins in his own body on the tree.”"
+                },
+                {
+                  "ref": "Jhn.1.29",
+                  "note": "“The Lamb of God, who takes away (αἴρων) the sin of the world.”"
+                }
+              ]
+            },
+            {
+              "id": "take-away",
+              "gloss": "take, take up; carry off, take away",
+              "definition": "Take something up and remove it: plunder carried off, the wind carrying chaff, the spirit lifting a prophet away, food taken from the table.",
+              "evidence": [
+                {
+                  "ref": "Exo.10.19",
+                  "role": "defining",
+                  "note": "The west wind “took up the locusts” and drove them into the sea."
+                },
+                {
+                  "ref": "Isa.40.24",
+                  "note": "The whirlwind takes them away like stubble."
+                },
+                {
+                  "ref": "Isa.41.16",
+                  "note": "“The wind shall carry them away, the whirlwind scatter them.”"
+                },
+                {
+                  "ref": "Isa.57.13"
+                },
+                {
+                  "ref": "Ezk.3.14",
+                  "role": "defining",
+                  "note": "“The spirit lifted me up and took me away.”"
+                },
+                {
+                  "ref": "Ezk.8.3"
+                },
+                {
+                  "ref": "1Ki.18.12",
+                  "note": "“The spirit of Yahweh will carry you I know not where.”"
+                },
+                {
+                  "ref": "2Ki.2.16"
+                },
+                {
+                  "ref": "2Ki.7.8",
+                  "note": "The lepers carried off silver and gold and clothing."
+                },
+                {
+                  "ref": "Mic.2.2",
+                  "note": "They covet houses and take them."
+                },
+                {
+                  "ref": "Dan.1.16",
+                  "note": "The steward took away their portion of food."
+                },
+                {
+                  "ref": "Psa.24.5",
+                  "note": "“He shall receive (take up) the blessing from Yahweh.”"
+                },
+                {
+                  "ref": "Ecc.5.18",
+                  "note": "To take one’s portion and rejoice."
+                },
+                {
+                  "ref": "Est.2.15",
+                  "note": "Esther “obtained (lifted) favour” in the eyes of all."
+                },
+                {
+                  "ref": "Est.2.17"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "take-wife",
+                  "gloss": "take (a wife)",
+                  "definition": "Take a woman as wife.",
+                  "evidence": [
+                    {
+                      "ref": "Rut.1.4",
+                      "role": "defining",
+                      "note": "“They took for themselves wives of the women of Moab.”"
+                    },
+                    {
+                      "ref": "Jdg.21.23"
+                    },
+                    {
+                      "ref": "Ezr.9.2"
+                    },
+                    {
+                      "ref": "Ezr.10.44"
+                    },
+                    {
+                      "ref": "2Ch.11.21"
+                    },
+                    {
+                      "ref": "2Ch.13.21"
+                    }
+                  ]
+                },
+                {
+                  "id": "bring-tribute",
+                  "gloss": "bring (an offering, tribute)",
+                  "definition": "Carry a gift to someone: an offering to Yahweh, tribute to a king.",
+                  "evidence": [
+                    {
+                      "ref": "Psa.96.8",
+                      "role": "defining",
+                      "note": "“Bring (lift) an offering and come into his courts.”"
+                    },
+                    {
+                      "ref": "1Ch.16.29"
+                    },
+                    {
+                      "ref": "2Sa.8.2",
+                      "note": "Moab became David’s servants, “bearers of tribute (מִנְחָה)”."
+                    },
+                    {
+                      "ref": "1Ch.18.2"
+                    },
+                    {
+                      "ref": "Deu.14.24",
+                      "note": "If the place is too far to carry the tithe."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be lifted up, exalted; rise; be carried, carried away",
+          "cognate_ids": [
+            "ar-nashaa"
+          ],
+          "senses": [
+            {
+              "id": "be-exalted",
+              "gloss": "be lifted up, exalted",
+              "definition": "Be raised high: Yahweh on his throne, the mountain of his house above the hills, the servant he exalts; and the proud who lift themselves up, whom he brings low.",
+              "evidence": [
+                {
+                  "ref": "Isa.6.1",
+                  "role": "defining",
+                  "note": "“I saw the Lord sitting on a throne, high and lifted up (רָם וְנִשָּׂא).”"
+                },
+                {
+                  "ref": "Isa.57.15",
+                  "note": "“The high and lifted up one who inhabits eternity.”"
+                },
+                {
+                  "ref": "Isa.52.13",
+                  "role": "defining",
+                  "note": "“My servant… shall be high and lifted up (יָרוּם וְנִשָּׂא) and very lofty.”"
+                },
+                {
+                  "ref": "Isa.2.2",
+                  "role": "defining",
+                  "note": "The mountain of Yahweh’s house “shall be lifted up above the hills”."
+                },
+                {
+                  "ref": "Mic.4.1"
+                },
+                {
+                  "ref": "Isa.40.4",
+                  "note": "“Every valley shall be lifted up, and every mountain and hill made low.”"
+                },
+                {
+                  "ref": "Isa.2.12",
+                  "role": "defining",
+                  "note": "A day of Yahweh against all that is proud and lifted up, “and it shall be brought low”."
+                },
+                {
+                  "ref": "Isa.2.13"
+                },
+                {
+                  "ref": "Isa.2.14"
+                },
+                {
+                  "ref": "Isa.30.25"
+                },
+                {
+                  "ref": "Pro.30.13",
+                  "note": "A generation whose eyelids are lifted up: pride."
+                },
+                {
+                  "ref": "Psa.24.7",
+                  "note": "“Be lifted up, everlasting doors, and the King of glory shall come in.”"
+                },
+                {
+                  "ref": "Jer.51.9",
+                  "note": "Babylon’s judgment “is lifted up to the skies”."
+                },
+                {
+                  "ref": "1Ch.14.2",
+                  "note": "David’s kingdom was lifted up on high for Israel’s sake."
+                },
+                {
+                  "ref": "Dan.11.12"
+                }
+              ],
+              "senses": [
+                {
+                  "gloss": "lift oneself up, arise (of Yahweh to judge)",
+                  "definition": "Of Yahweh: rise up to act in judgment.",
+                  "evidence": [
+                    {
+                      "ref": "Psa.94.2",
+                      "role": "defining",
+                      "note": "“Lift yourself up, judge of the earth; render a reward to the proud.”"
+                    },
+                    {
+                      "ref": "Psa.7.7"
+                    },
+                    {
+                      "ref": "Isa.33.10",
+                      "note": "“Now I will rise, now I will be exalted, now I will lift myself up.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "niph-rise",
+              "gloss": "rise (from the ground)",
+              "definition": "Of Ezekiel’s wheels: rise from the earth with the living creatures.",
+              "evidence": [
+                {
+                  "ref": "Ezk.1.19",
+                  "role": "defining",
+                  "note": "“When the living creatures were lifted up from the earth, the wheels were lifted up.”"
+                },
+                {
+                  "ref": "Ezk.1.20"
+                },
+                {
+                  "ref": "Ezk.1.21"
+                }
+              ]
+            },
+            {
+              "gloss": "be carried, carried away",
+              "definition": "Be borne along, or carried off as spoil or captives.",
+              "evidence": [
+                {
+                  "ref": "Exo.25.28",
+                  "role": "defining",
+                  "note": "The table “shall be carried” with the poles."
+                },
+                {
+                  "ref": "Isa.49.22",
+                  "note": "Your daughters shall be carried on their shoulders."
+                },
+                {
+                  "ref": "Isa.66.12"
+                },
+                {
+                  "ref": "Isa.39.6",
+                  "role": "defining",
+                  "note": "All in Hezekiah’s house “shall be carried to Babylon”."
+                },
+                {
+                  "ref": "2Ki.20.17"
+                },
+                {
+                  "ref": "Jer.10.5",
+                  "note": "Idols “must be carried, for they cannot walk”."
+                },
+                {
+                  "ref": "Zec.5.7"
+                },
+                {
+                  "ref": "2Sa.19.43",
+                  "note": "“Has any gift been given (carried) to us?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "lift up, exalt; carry (continually); lift the soul, long; aid, furnish",
+          "senses": [
+            {
+              "id": "piel-exalt",
+              "gloss": "exalt, raise to honour",
+              "definition": "Raise someone or a kingdom to a high place.",
+              "evidence": [
+                {
+                  "ref": "2Sa.5.12",
+                  "role": "defining",
+                  "note": "Yahweh “had exalted his kingdom for his people Israel’s sake”."
+                },
+                {
+                  "ref": "Est.3.1",
+                  "role": "defining",
+                  "note": "Ahasuerus made Haman great “and lifted him up” and set his seat above all the princes."
+                },
+                {
+                  "ref": "Est.5.11"
+                },
+                {
+                  "ref": "Est.9.3",
+                  "note": "The officials lifted up (helped) the Jews."
+                }
+              ]
+            },
+            {
+              "gloss": "carry, bear up",
+              "definition": "Carry a people as a shepherd carries, all their days.",
+              "evidence": [
+                {
+                  "ref": "Isa.63.9",
+                  "role": "defining",
+                  "note": "“He lifted them up and carried them all the days of old.”"
+                },
+                {
+                  "ref": "Psa.28.9",
+                  "note": "“Shepherd them and carry them for ever.”"
+                },
+                {
+                  "ref": "Amo.4.2",
+                  "note": "In judgment: “he will take you away with hooks.”"
+                }
+              ]
+            },
+            {
+              "gloss": "lift the soul: long for",
+              "definition": "With נֶפֶשׁ, long to return.",
+              "evidence": [
+                {
+                  "ref": "Jer.22.27",
+                  "role": "defining",
+                  "note": "The land “to which they lift their soul to return”."
+                },
+                {
+                  "ref": "Jer.44.14"
+                }
+              ]
+            },
+            {
+              "gloss": "aid, furnish (with goods)",
+              "definition": "Support someone by giving: supply with goods, help on the way.",
+              "evidence": [
+                {
+                  "ref": "Ezr.1.4",
+                  "role": "defining",
+                  "note": "“Let the men of his place help him with silver and gold and goods.”"
+                },
+                {
+                  "ref": "Ezr.8.36"
+                },
+                {
+                  "ref": "1Ki.9.11",
+                  "note": "Hiram had furnished Solomon with cedar and gold."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "lift oneself up, exalt oneself; be exalted",
+          "cognate_ids": [
+            "ar-nashaa"
+          ],
+          "senses": [
+            {
+              "id": "exalt-oneself",
+              "gloss": "lift oneself up, exalt oneself",
+              "definition": "Raise oneself above others, rightly of Yahweh, wrongly of men who take a place not given them.",
+              "evidence": [
+                {
+                  "ref": "Num.16.3",
+                  "role": "defining",
+                  "note": "Korah and the princes (נְשִׂיאִים) to Moses and Aaron: “Why do you lift yourselves up above the assembly of Yahweh?”"
+                },
+                {
+                  "ref": "1Ki.1.5",
+                  "role": "defining",
+                  "note": "“Adonijah lifted himself up, saying, I will be king.”"
+                },
+                {
+                  "ref": "Pro.30.32",
+                  "note": "“If you have done foolishly in lifting yourself up, lay your hand on your mouth.”"
+                },
+                {
+                  "ref": "Ezk.17.14",
+                  "note": "Judah made a low kingdom, “not lifting itself up”."
+                },
+                {
+                  "ref": "Ezk.29.15",
+                  "note": "Egypt “shall not lift itself up any more above the nations”."
+                },
+                {
+                  "ref": "Dan.11.14"
+                },
+                {
+                  "ref": "1Ch.29.11",
+                  "role": "defining",
+                  "note": "“Yours is the kingdom, Yahweh, and you are exalted (הַמִּתְנַשֵּׂא) as head above all.”"
+                },
+                {
+                  "ref": "Num.23.24",
+                  "note": "Israel lifts itself up like a lion."
+                },
+                {
+                  "ref": "Num.24.7",
+                  "note": "“His king shall be higher than Agag, and his kingdom shall be exalted.”"
+                },
+                {
+                  "ref": "2Ch.32.23",
+                  "note": "Hezekiah was exalted in the eyes of all nations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to bear; cause to bring",
+          "senses": [
+            {
+              "gloss": "cause to bear (iniquity)",
+              "definition": "Make others carry guilt.",
+              "evidence": [
+                {
+                  "ref": "Lev.22.16",
+                  "role": "defining",
+                  "note": "The priests must not profane the holy things and “cause them to bear the iniquity of guilt”."
+                }
+              ]
+            },
+            {
+              "gloss": "cause to bring",
+              "definition": "Have something brought.",
+              "evidence": [
+                {
+                  "ref": "2Sa.17.13",
+                  "role": "defining",
+                  "note": "All Israel will bring ropes to that city."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λαμβάνω",
+          "gloss": "take, receive; (with πρόσωπον) show partiality",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 19:15 word 6",
+              "note": "λήμψῃ πρόσωπον for תִשָּׂא פְנֵי־דָל: the Hebrew “lift the face” put word for word into Greek."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 16:22 word 1",
+              "note": "λήμψεται for נָשָׂא, the goat bearing iniquity."
+            },
+            {
+              "ref": "Luk.20.21",
+              "note": "“You do not accept the face (λαμβάνεις πρόσωπον) of any.”"
+            },
+            {
+              "ref": "Gal.2.6",
+              "note": "“God accepts no man’s face (πρόσωπον… οὐ λαμβάνει)”, as Deu 10:17."
+            },
+            {
+              "ref": "Act.10.34",
+              "note": "“God is no respecter of persons (προσωπολήπτης)”, a word built from the same idiom."
+            },
+            {
+              "ref": "Rom.2.11"
+            }
+          ]
+        },
+        {
+          "lemma": "αἴρω",
+          "gloss": "lift, take up, take away",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1SA 15:25 word 2",
+              "note": "ἆρον for שָׂא: “take away my sin”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JER 17:21 word 7",
+              "note": "αἴρετε βαστάγματα for תִּשְׂאוּ מַשָּׂא, carrying a burden on the sabbath."
+            },
+            {
+              "ref": "Jhn.1.29",
+              "note": "“The Lamb of God who takes away (αἴρων) the sin of the world.”"
+            },
+            {
+              "ref": "1Jn.3.5"
+            },
+            {
+              "ref": "Jhn.5.10",
+              "note": "“It is not lawful for you to carry (ἆραι) your bed” on the sabbath: the rule of Jer 17:21 as the Jews applied it."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀναφέρω",
+          "gloss": "carry up; bear; offer up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 53:12 word 20",
+              "note": "ἀνήνεγκεν for נָשָׂא: “he bore the sins of many”."
+            },
+            {
+              "ref": "Heb.9.28",
+              "note": "“Once offered to bear (ἀνενεγκεῖν) the sins of many.”"
+            },
+            {
+              "ref": "1Pe.2.24",
+              "note": "“Who his own self bore (ἀνήνεγκεν) our sins in his own body on the tree.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀφίημι",
+          "gloss": "let go, send away; forgive",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 32:1 word 4",
+              "note": "ἀφέθησαν for נְשׂוּי־פֶּשַׁע, “whose transgression is lifted”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 50:17 word 5",
+              "note": "ἄφες for שָׂא, “forgive the transgression of your brothers”."
+            },
+            {
+              "ref": "Rom.4.7",
+              "note": "Psa 32:1 quoted: “Blessed are they whose iniquities are forgiven.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπαίρω",
+          "gloss": "lift up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 13:10 word 1",
+              "note": "ἐπάρας for וַיִּשָּׂא, Lot lifting his eyes."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 134:2 word 1",
+              "note": "ἐπάρατε for שְׂאוּ, “lift up your hands”."
+            },
+            {
+              "ref": "Luk.24.50",
+              "note": "Jesus “lifted up his hands and blessed them”, as Aaron in Lev 9:22."
+            },
+            {
+              "ref": "Jhn.17.1",
+              "note": "He lifted up his eyes to heaven."
+            },
+            {
+              "ref": "1Ti.2.8",
+              "note": "“Lifting up holy hands” in prayer, as Psa 134:2."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "סָבַל",
+            "note": "Carry a heavy load: the servant bore (נָשָׂא) our sicknesses and carried (סָבַל) our pains; Yahweh will carry and bear his people.",
+            "evidence": [
+              {
+                "ref": "Isa.53.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.46.4"
+              }
+            ]
+          },
+          {
+            "lemma": "כָּסָה",
+            "note": "Sin lifted away and sin covered, said together of forgiveness.",
+            "evidence": [
+              {
+                "ref": "Psa.32.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.85.3"
+              }
+            ]
+          },
+          {
+            "lemma": "רוּם",
+            "note": "“High and lifted up”: the niphal paired with רוּם of Yahweh’s throne and of the exalted servant.",
+            "evidence": [
+              {
+                "ref": "Isa.6.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.52.13"
+              },
+              {
+                "ref": "Isa.57.15"
+              },
+              {
+                "ref": "Isa.33.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "פָּקַד",
+            "note": "Yahweh “bearing iniquity” is set beside his “visiting iniquity” on the unrepentant: lifting it off against bringing it home.",
+            "evidence": [
+              {
+                "ref": "Exo.34.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.14.18"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁפֵל",
+            "note": "What is lifted up is set against what is brought low.",
+            "evidence": [
+              {
+                "ref": "Isa.2.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.40.4"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נָשָׂא עֵינַיִם",
+            "gloss": "lift the eyes: look",
+            "evidence": [
+              {
+                "ref": "Gen.13.10"
+              },
+              {
+                "ref": "Gen.22.4"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא קוֹל",
+            "gloss": "lift the voice: weep aloud, cry out",
+            "evidence": [
+              {
+                "ref": "Gen.21.16"
+              },
+              {
+                "ref": "Gen.29.11"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא יָד",
+            "gloss": "lift the hand: swear; strike; pray, bless",
+            "evidence": [
+              {
+                "ref": "Deu.32.40"
+              },
+              {
+                "ref": "Exo.6.8"
+              },
+              {
+                "ref": "Lev.9.22"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא רֹאשׁ",
+            "gloss": "lift the head: count; restore to honour",
+            "evidence": [
+              {
+                "ref": "Num.1.2"
+              },
+              {
+                "ref": "Gen.40.13"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא פָנִים",
+            "gloss": "lift the face: accept, favour; be partial",
+            "evidence": [
+              {
+                "ref": "Gen.32.21"
+              },
+              {
+                "ref": "Lev.19.15"
+              },
+              {
+                "ref": "Deu.10.17"
+              },
+              {
+                "ref": "Num.6.26"
+              }
+            ]
+          },
+          {
+            "phrase": "נְשׂוּא פָנִים",
+            "gloss": "lifted of face: a man of rank, honoured",
+            "evidence": [
+              {
+                "ref": "2Ki.5.1"
+              },
+              {
+                "ref": "Isa.3.3"
+              },
+              {
+                "ref": "Isa.9.14"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא נֶפֶשׁ",
+            "gloss": "lift the soul: long for, depend on",
+            "evidence": [
+              {
+                "ref": "Deu.24.15"
+              },
+              {
+                "ref": "Psa.25.1"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא עָוֹן / חֵטְא",
+            "gloss": "bear iniquity, sin: carry its guilt; or lift it away, forgive",
+            "evidence": [
+              {
+                "ref": "Lev.5.1"
+              },
+              {
+                "ref": "Exo.34.7"
+              },
+              {
+                "ref": "Lev.16.22"
+              },
+              {
+                "ref": "Isa.53.12"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא מָשָׁל / קִינָה",
+            "gloss": "take up a parable, a lament",
+            "evidence": [
+              {
+                "ref": "Num.23.7"
+              },
+              {
+                "ref": "Ezk.19.1"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא אֶת־שֵׁם יַהְוֶה לַשָּׁוְא",
+            "gloss": "lift up the name of Yahweh to emptiness",
+            "evidence": [
+              {
+                "ref": "Exo.20.7"
+              },
+              {
+                "ref": "Deu.5.11"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא נֵס",
+            "gloss": "lift a banner",
+            "evidence": [
+              {
+                "ref": "Isa.13.2"
+              },
+              {
+                "ref": "Jer.4.6"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא אִשָּׁה",
+            "gloss": "take a wife",
+            "evidence": [
+              {
+                "ref": "Rut.1.4"
+              },
+              {
+                "ref": "Ezr.10.44"
+              }
+            ]
+          },
+          {
+            "phrase": "נֹשֵׂא כֵלִים",
+            "gloss": "armour-bearer",
+            "evidence": [
+              {
+                "ref": "1Sa.14.1"
+              },
+              {
+                "ref": "1Sa.31.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נָשִׂיא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "one lifted up: prince, chief, ruler (of a tribe or people)",
+      "summary": "The form of one acted on, “lifted up”: the man raised over a tribe, clan or people. In the wilderness the twelve princes are the heads of their fathers’ houses who are summoned by one trumpet (Num 10:4); the word is also used of the chiefs of Ishmael and Midian, of the king, and in Ezekiel of Israel’s prince, the coming David.",
+      "bdb": [
+        "n.fm.ad"
+      ],
+      "cognate_ids": [
+        "akk-nisitu",
+        "phn-nsa"
+      ],
+      "senses": [
+        {
+          "id": "prince-tribe",
+          "gloss": "prince, chief of a tribe or clan",
+          "definition": "The head of a tribe or father’s house in Israel, one called out of the congregation to stand over his people: they bring the tribe’s offering, lead its camp, take part in the count, spy out the land and divide it.",
+          "evidence": [
+            {
+              "ref": "Num.10.4",
+              "role": "defining",
+              "note": "“If they blow with one, then the princes, the heads of the thousands of Israel, shall gather to you.”"
+            },
+            {
+              "ref": "Num.1.16",
+              "role": "defining",
+              "note": "“The called of the congregation, princes of the tribes of their fathers, heads of the thousands of Israel.”"
+            },
+            {
+              "ref": "Num.1.44"
+            },
+            {
+              "ref": "Num.2.3",
+              "note": "Nahshon, prince of the sons of Judah, at the head of the camp."
+            },
+            {
+              "ref": "Num.7.2",
+              "role": "defining",
+              "note": "“The princes of Israel, heads of the house of their fathers… the princes of the tribes, who stood over those counted.”"
+            },
+            {
+              "ref": "Num.7.10",
+              "note": "The princes bring the dedication offering of the altar, one each day."
+            },
+            {
+              "ref": "Num.3.24",
+              "note": "נְשִׂיא בֵית־אָב, prince of a father’s house among the Levites."
+            },
+            {
+              "ref": "Num.13.2",
+              "note": "The spies, one man of each tribe, “every one a prince among them”."
+            },
+            {
+              "ref": "Num.17.17",
+              "note": "A rod for each prince of a father’s house, twelve rods."
+            },
+            {
+              "ref": "Num.34.18",
+              "note": "One prince of each tribe to divide the land."
+            },
+            {
+              "ref": "Num.16.2",
+              "note": "Korah’s 250, “princes of the congregation, called to the assembly, men of name”."
+            },
+            {
+              "ref": "Exo.16.22",
+              "note": "The princes of the congregation tell Moses of the double manna."
+            },
+            {
+              "ref": "Exo.34.31"
+            },
+            {
+              "ref": "Jos.9.15",
+              "note": "The princes of the congregation swore to the Gibeonites."
+            },
+            {
+              "ref": "Jos.22.14",
+              "note": "Ten princes, “each the head of the house of their fathers among the thousands of Israel”."
+            },
+            {
+              "ref": "1Ki.8.1"
+            },
+            {
+              "ref": "Lev.4.22",
+              "role": "defining",
+              "note": "“When a prince sins”: his sin offering is set between the congregation’s and the common man’s."
+            },
+            {
+              "ref": "Exo.22.27",
+              "role": "defining",
+              "note": "“You shall not revile God, nor curse a prince of your people.”"
+            },
+            {
+              "ref": "Act.23.5",
+              "note": "Paul quotes Exo 22:27 of the high priest: “You shall not speak evil of the ruler (ἄρχοντα) of your people.”"
+            }
+          ]
+        },
+        {
+          "id": "prince-foreign",
+          "gloss": "chief, ruler (of other peoples)",
+          "definition": "A chief among the peoples outside Israel: the twelve princes of Ishmael, the prince of the land at Shechem, the princes of Midian, of Kedar, of the sea coasts; and Abraham as the Hittites saw him.",
+          "evidence": [
+            {
+              "ref": "Gen.17.20",
+              "role": "defining",
+              "note": "Ishmael “shall beget twelve princes”."
+            },
+            {
+              "ref": "Gen.25.16",
+              "note": "The sons of Ishmael, “twelve princes according to their tribes”."
+            },
+            {
+              "ref": "Gen.34.2",
+              "note": "Shechem son of Hamor, “prince of the land”."
+            },
+            {
+              "ref": "Gen.23.6",
+              "note": "To the sons of Heth, Abraham is “a prince of God among us”."
+            },
+            {
+              "ref": "Num.25.18"
+            },
+            {
+              "ref": "Jos.13.21"
+            },
+            {
+              "ref": "Ezk.27.21"
+            },
+            {
+              "ref": "Ezk.26.16"
+            },
+            {
+              "ref": "Ezk.32.29"
+            },
+            {
+              "ref": "Ezk.38.2",
+              "role": "defining",
+              "note": "Gog, of the land of Magog, “prince of Rosh, Meshech and Tubal” (נְשִׂיא רֹאשׁ מֶשֶׁךְ וְתֻבָל)."
+            },
+            {
+              "ref": "Ezk.38.3"
+            },
+            {
+              "ref": "Ezk.39.1"
+            }
+          ]
+        },
+        {
+          "id": "prince-king",
+          "gloss": "prince: the king of Israel or Judah",
+          "definition": "Used of the king himself, as the one Yahweh has lifted up over his people: Solomon kept as prince, the last kings of Judah under judgment, and Sheshbazzar, prince of Judah, at the return.",
+          "evidence": [
+            {
+              "ref": "1Ki.11.34",
+              "role": "defining",
+              "note": "“I will make him prince all the days of his life for David my servant’s sake.”"
+            },
+            {
+              "ref": "Ezk.12.10",
+              "role": "defining",
+              "note": "“This burden (מַשָּׂא) is the prince (נָּשִׂיא) in Jerusalem”: Zedekiah."
+            },
+            {
+              "ref": "Ezk.12.12",
+              "note": "The prince shall carry (יִשָּׂא) his baggage on his shoulder in the dark and go out."
+            },
+            {
+              "ref": "Ezk.7.27"
+            },
+            {
+              "ref": "Ezk.19.1"
+            },
+            {
+              "ref": "Ezk.21.30",
+              "note": "“You, profane wicked prince of Israel, whose day is come.”"
+            },
+            {
+              "ref": "Ezk.22.6"
+            },
+            {
+              "ref": "Ezr.1.8",
+              "note": "Sheshbazzar, “prince of Judah”."
+            }
+          ]
+        },
+        {
+          "id": "prince-david",
+          "gloss": "the prince (of Ezekiel’s prophecies)",
+          "definition": "In Ezekiel 34–48, the ruler Yahweh sets over restored Israel: “my servant David” as prince among them for ever, and the prince who has his own portion of the land, keeps the feasts, and provides the offerings for the house of Israel.",
+          "evidence": [
+            {
+              "ref": "Ezk.34.24",
+              "role": "defining",
+              "note": "“I Yahweh will be their God, and my servant David a prince among them.”"
+            },
+            {
+              "ref": "Ezk.37.25",
+              "role": "defining",
+              "note": "“My servant David shall be their prince for ever.”"
+            },
+            {
+              "ref": "Ezk.44.3",
+              "note": "The prince sits in the gate to eat bread before Yahweh."
+            },
+            {
+              "ref": "Ezk.45.7"
+            },
+            {
+              "ref": "Ezk.45.8",
+              "note": "“My princes shall no more oppress my people.”"
+            },
+            {
+              "ref": "Ezk.45.9"
+            },
+            {
+              "ref": "Ezk.45.16"
+            },
+            {
+              "ref": "Ezk.45.17",
+              "role": "defining",
+              "note": "The burnt offerings, meal and drink offerings of the feasts, new moons and sabbaths are the prince’s part, “to make a covering for the house of Israel”."
+            },
+            {
+              "ref": "Ezk.45.22",
+              "note": "At the Passover he provides a bull of sin offering “for himself and for all the people of the land”."
+            },
+            {
+              "ref": "Ezk.46.2"
+            },
+            {
+              "ref": "Ezk.46.10",
+              "note": "The prince goes in among the people and goes out with them."
+            },
+            {
+              "ref": "Ezk.46.16",
+              "note": "He gives an inheritance to his sons."
+            },
+            {
+              "ref": "Ezk.48.21"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἄρχων",
+          "gloss": "ruler, prince",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 22:27 word 4",
+              "note": "ἄρχοντας for נָשִׂיא, “you shall not curse a prince of your people”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 10:4 word 6",
+              "note": "οἱ ἄρχοντες for הַנְּשִׂיאִים."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EZK 37:25 word 22",
+              "note": "ἄρχων for נָשִׂיא, “David my servant their prince for ever”."
+            },
+            {
+              "ref": "Act.23.5",
+              "note": "Exo 22:27 quoted: “You shall not speak evil of the ruler of your people.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רֹאשׁ",
+            "note": "The princes are “heads of the thousands of Israel”, “heads of their fathers’ houses”.",
+            "evidence": [
+              {
+                "ref": "Num.10.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.1.16"
+              },
+              {
+                "ref": "Num.7.2"
+              }
+            ]
+          },
+          {
+            "lemma": "מֶלֶךְ",
+            "note": "Set beside the king in Ezekiel, and used for him.",
+            "evidence": [
+              {
+                "ref": "Ezk.7.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.37.24",
+                "note": "“David my servant king over them” (37:24) and “their prince for ever” (37:25)."
+              }
+            ]
+          },
+          {
+            "lemma": "אֱלֹהִים",
+            "note": "Cursing a prince is set beside reviling God.",
+            "evidence": [
+              {
+                "ref": "Exo.22.27",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נְשִׂיאֵי הָעֵדָה",
+            "gloss": "princes of the congregation",
+            "evidence": [
+              {
+                "ref": "Exo.16.22"
+              },
+              {
+                "ref": "Num.16.2"
+              },
+              {
+                "ref": "Jos.9.15"
+              }
+            ]
+          },
+          {
+            "phrase": "נְשִׂיא בֵית־אָב",
+            "gloss": "prince of a father’s house",
+            "evidence": [
+              {
+                "ref": "Num.3.24"
+              },
+              {
+                "ref": "Num.17.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַשָּׂא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "load, burden; carrying; tribute",
+      "summary": "What is carried: an ass’s load, the parts of the tabernacle each Levite clan carried, the people as a weight on Moses, a burden on the sabbath; figuratively a man who is a burden to another, and iniquity too heavy to bear. In 1Ch 15:22, 27 it is either the carrying of the ark or the lifting of the voice in song.",
+      "bdb": [
+        "n.fm.af"
+      ],
+      "senses": [
+        {
+          "id": "load",
+          "gloss": "load, burden",
+          "definition": "A weight carried on a beast or a man.",
+          "kin": [
+            "carry"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.23.5",
+              "role": "defining",
+              "note": "The ass of your enemy lying under its load."
+            },
+            {
+              "ref": "2Ki.5.17",
+              "role": "defining",
+              "note": "“Two mules’ load of earth.”"
+            },
+            {
+              "ref": "2Ki.8.9",
+              "note": "Forty camels’ load."
+            },
+            {
+              "ref": "Jer.17.21",
+              "role": "defining",
+              "note": "“Carry no burden on the sabbath day.”"
+            },
+            {
+              "ref": "Jer.17.22"
+            },
+            {
+              "ref": "Jer.17.24"
+            },
+            {
+              "ref": "Jer.17.27"
+            },
+            {
+              "ref": "Neh.13.15"
+            },
+            {
+              "ref": "Neh.13.19",
+              "note": "No burden might come in on the sabbath."
+            },
+            {
+              "ref": "Isa.46.1",
+              "note": "Babylon’s idols are a load on weary beasts."
+            },
+            {
+              "ref": "Isa.46.2"
+            },
+            {
+              "ref": "Isa.22.25",
+              "note": "The burden that hung on the peg is cut off."
+            },
+            {
+              "ref": "2Ch.17.11",
+              "note": "Silver brought as tribute."
+            },
+            {
+              "ref": "2Ch.20.25",
+              "note": "More spoil than they could carry."
+            }
+          ]
+        },
+        {
+          "id": "levite-burden",
+          "gloss": "the Levites’ charge of carrying",
+          "definition": "The share of the tabernacle each Levite family was to carry on the march.",
+          "kin": [
+            "carry"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.4.15",
+              "role": "defining",
+              "note": "“These are the burden of the sons of Kohath in the tent of meeting.”"
+            },
+            {
+              "ref": "Num.4.19",
+              "note": "Aaron appoints every man to his service and his burden."
+            },
+            {
+              "ref": "Num.4.24"
+            },
+            {
+              "ref": "Num.4.27"
+            },
+            {
+              "ref": "Num.4.31"
+            },
+            {
+              "ref": "Num.4.32"
+            },
+            {
+              "ref": "Num.4.47"
+            },
+            {
+              "ref": "Num.4.49"
+            },
+            {
+              "ref": "2Ch.35.3",
+              "note": "Josiah: the ark shall no longer be “a burden on your shoulders”."
+            },
+            {
+              "ref": "1Ch.15.22",
+              "note": "Chenaniah, chief of the Levites “in the carrying”, or “in the song”; the context (15:26–27) has both the carrying of the ark and the singers."
+            },
+            {
+              "ref": "1Ch.15.27"
+            }
+          ]
+        },
+        {
+          "id": "burden-figurative",
+          "gloss": "burden (on a person)",
+          "definition": "What weighs on someone: a people too heavy for one man, a guest who would be a charge on the king, iniquities heavier than one can bear.",
+          "kin": [
+            "carry-people",
+            "bear-endure"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.11.11",
+              "role": "defining",
+              "note": "“That you lay the burden of all this people on me.”"
+            },
+            {
+              "ref": "Num.11.17"
+            },
+            {
+              "ref": "Deu.1.12",
+              "note": "“How can I myself alone bear your load and your burden and your strife?”"
+            },
+            {
+              "ref": "2Sa.15.33",
+              "note": "“You will be a burden to me.”"
+            },
+            {
+              "ref": "2Sa.19.36"
+            },
+            {
+              "ref": "Psa.38.5",
+              "role": "defining",
+              "note": "“My iniquities are gone over my head; as a heavy burden they are too heavy for me.”"
+            },
+            {
+              "ref": "Job.7.20"
+            },
+            {
+              "ref": "Hos.8.10",
+              "note": "Under the burden of the king of princes."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φορτίον",
+          "gloss": "load, burden",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מַשָּׂא → φορτίον ×3 (lemma count, MACULA alignment)"
+            },
+            {
+              "ref": "Mat.11.30",
+              "note": "“My yoke is easy and my burden (φορτίον) light.”"
+            },
+            {
+              "ref": "Mat.23.4"
+            },
+            {
+              "ref": "Gal.6.5",
+              "note": "“Every man shall bear his own burden.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשָּׂא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "oracle, burden (a prophetic utterance)",
+      "summary": "A word of Yahweh lifted up against a city or people, the heading of many prophecies (Isa 13:1; Nah 1:1; Mal 1:1). Scripture ties it to the verb: Yahweh “lifted this מַשָּׂא upon” Ahab (2Ki 9:25), as a prophet “lifts up” his parable (Num 23:7); and Jeremiah plays on its being a load (Jer 23:33). Whether it is first “a lifting of the voice” or “a burden laid on” is not settled by the text; both are sides of the root.",
+      "bdb": [
+        "n.fm.ag"
+      ],
+      "senses": [
+        {
+          "id": "oracle",
+          "gloss": "oracle, burden of the word of Yahweh",
+          "definition": "A prophetic word lifted up against or concerning a people, which the prophet “saw”; most often of judgment.",
+          "kin": [
+            "lift-discourse"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ki.9.25",
+              "role": "defining",
+              "note": "“Yahweh lifted (נָשָׂא) this burden (מַשָּׂא) upon him”, against Ahab."
+            },
+            {
+              "ref": "Isa.13.1",
+              "role": "defining",
+              "note": "“The burden of Babylon which Isaiah the son of Amoz saw.”"
+            },
+            {
+              "ref": "Isa.14.28"
+            },
+            {
+              "ref": "Isa.15.1"
+            },
+            {
+              "ref": "Isa.17.1"
+            },
+            {
+              "ref": "Isa.19.1"
+            },
+            {
+              "ref": "Isa.21.1"
+            },
+            {
+              "ref": "Isa.22.1"
+            },
+            {
+              "ref": "Isa.23.1"
+            },
+            {
+              "ref": "Isa.30.6"
+            },
+            {
+              "ref": "Nam.1.1",
+              "note": "“The burden of Nineveh; the book of the vision of Nahum.”"
+            },
+            {
+              "ref": "Hab.1.1",
+              "note": "“The burden which Habakkuk the prophet saw.”"
+            },
+            {
+              "ref": "Zec.9.1",
+              "note": "“The burden of the word of Yahweh.”"
+            },
+            {
+              "ref": "Zec.12.1"
+            },
+            {
+              "ref": "Mal.1.1",
+              "role": "defining",
+              "note": "“The burden of the word of Yahweh to Israel by Malachi.”"
+            },
+            {
+              "ref": "Ezk.12.10",
+              "note": "“The prince is this burden”: the word against Zedekiah, with a play on נָשִׂיא."
+            },
+            {
+              "ref": "Jer.23.33",
+              "role": "defining",
+              "note": "“What is the burden of Yahweh? … What burden? I will cast you off”: Jeremiah turns the word on those who used it lightly."
+            },
+            {
+              "ref": "Jer.23.34"
+            },
+            {
+              "ref": "Jer.23.36",
+              "note": "“Every man’s own word shall be his burden.”"
+            },
+            {
+              "ref": "Jer.23.38"
+            },
+            {
+              "ref": "Pro.30.1",
+              "note": "“The words of Agur son of Jakeh, the burden”; some read “of Massa”."
+            },
+            {
+              "ref": "Pro.31.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׂאֵת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a lifting up: acceptance; dignity, majesty; a swelling (on the skin)",
+      "summary": "The verbal noun of נָשָׂא, “a lifting up”: the lifting of a fallen face (Gen 4:7), the high standing of the firstborn, God’s majesty that a man cannot stand before; and in Lev 13–14 a raised place on the skin, a swelling, one of the signs the priest looked at.",
+      "bdb": [
+        "n.fm.am"
+      ],
+      "senses": [
+        {
+          "id": "seet-acceptance",
+          "gloss": "lifting up (of the face): acceptance",
+          "definition": "The face lifted again, set against a face fallen in anger or shame: acceptance by God.",
+          "kin": [
+            "lift-face"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.4.7",
+              "role": "defining",
+              "note": "“If you do well, is there not a lifting up?” answers “why has your face fallen?” (Gen 4:5–6)."
+            }
+          ]
+        },
+        {
+          "id": "seet-dignity",
+          "gloss": "dignity, majesty, high standing",
+          "definition": "The height at which one stands: a firstborn’s rank, a ruler’s standing, God’s majesty.",
+          "cognate_ids": [
+            "akk-nisu"
+          ],
+          "kin": [
+            "be-exalted"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.49.3",
+              "role": "defining",
+              "note": "Reuben, firstborn, “excelling in dignity (שְׂאֵת) and excelling in power”, which he loses (49:4)."
+            },
+            {
+              "ref": "Hab.1.7",
+              "note": "The Chaldean’s judgment and his dignity proceed from himself."
+            },
+            {
+              "ref": "Psa.62.5",
+              "role": "defining",
+              "note": "They plot to cast him down from his height."
+            },
+            {
+              "ref": "Job.13.11",
+              "note": "“Shall not his majesty make you afraid?”"
+            },
+            {
+              "ref": "Job.31.23",
+              "note": "“Because of his majesty I could not endure.”"
+            },
+            {
+              "ref": "Job.41.17",
+              "note": "When Leviathan raises himself up, the mighty are afraid."
+            }
+          ]
+        },
+        {
+          "id": "seet-swelling",
+          "gloss": "swelling, raised spot (on the skin)",
+          "definition": "A raised place on the skin, named with the scab and the bright spot as signs that might be leprosy.",
+          "kin": [
+            "niph-rise"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.13.2",
+              "role": "defining",
+              "note": "“A swelling, a scab, or a bright spot” on the skin."
+            },
+            {
+              "ref": "Lev.13.10",
+              "role": "defining",
+              "note": "A white swelling that has turned the hair white, with raw flesh in it."
+            },
+            {
+              "ref": "Lev.13.19"
+            },
+            {
+              "ref": "Lev.13.28",
+              "note": "“The swelling of the burning.”"
+            },
+            {
+              "ref": "Lev.13.43"
+            },
+            {
+              "ref": "Lev.14.56"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשְׂאֵת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "what is lifted up: a signal (of smoke); a portion, gift; a levy, contribution",
+      "summary": "Something lifted up: a column of smoke raised as a signal, hands lifted in prayer, a portion lifted from the king’s table and sent, a contribution brought to Yahweh. Lam 2:14 uses it like מַשָּׂא of false oracles, and Zep 3:18 of a reproach borne.",
+      "bdb": [
+        "n.fm.aj"
+      ],
+      "senses": [
+        {
+          "id": "signal",
+          "gloss": "signal, rising (of smoke or fire)",
+          "definition": "A signal raised on high, a column of smoke going up from a city or a beacon lifted on a hill.",
+          "cognate_ids": [
+            "ar-munsha"
+          ],
+          "evidence": [
+            {
+              "ref": "Jdg.20.38",
+              "role": "defining",
+              "note": "The agreed sign: “a great signal of smoke” to go up from the city."
+            },
+            {
+              "ref": "Jdg.20.40",
+              "note": "The signal began to go up from the city, a pillar of smoke."
+            },
+            {
+              "ref": "Jer.6.1",
+              "role": "defining",
+              "note": "“Lift up (שְׂאוּ) a signal over Beth-haccerem.”"
+            }
+          ]
+        },
+        {
+          "gloss": "lifting up (of hands)",
+          "definition": "The raising of the hands in prayer.",
+          "kin": [
+            "lift-hand"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.141.2",
+              "role": "defining",
+              "note": "“The lifting up of my hands as the evening sacrifice.”"
+            }
+          ]
+        },
+        {
+          "id": "portion",
+          "gloss": "portion, gift (from a table or a king)",
+          "definition": "A portion taken up from before a host and sent to a guest, or a gift given by a king.",
+          "evidence": [
+            {
+              "ref": "Gen.43.34",
+              "role": "defining",
+              "note": "Joseph “lifted (וַיִּשָּׂא) portions from before him” to them, Benjamin’s five times as much."
+            },
+            {
+              "ref": "2Sa.11.8",
+              "note": "A portion from the king followed Uriah."
+            },
+            {
+              "ref": "Jer.40.5",
+              "note": "Provision and a gift for Jeremiah."
+            },
+            {
+              "ref": "Est.2.18",
+              "note": "The king gave gifts."
+            }
+          ],
+          "kin": [
+            "take-away",
+            "bring-tribute"
+          ]
+        },
+        {
+          "id": "contribution",
+          "gloss": "contribution, levy",
+          "definition": "What is brought to Yahweh or exacted by a ruler: the levy Moses laid on Israel for the tabernacle, the gifts Israel will bring in the land, a tax taken from the poor.",
+          "kin": [
+            "bring-tribute"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ch.24.6",
+              "role": "defining",
+              "note": "“The levy (מַשְׂאַת) of Moses the servant of Yahweh” for the tent of the testimony."
+            },
+            {
+              "ref": "2Ch.24.9"
+            },
+            {
+              "ref": "Ezk.20.40",
+              "note": "“There I will require your offerings and the firstfruits of your contributions.”"
+            },
+            {
+              "ref": "Amo.5.11",
+              "note": "“You take from the poor a levy of grain.”"
+            }
+          ]
+        },
+        {
+          "gloss": "burden; oracle",
+          "definition": "Like מַשָּׂא: a burden borne, or a prophetic utterance.",
+          "kin": [
+            "oracle",
+            "bear-endure"
+          ],
+          "evidence": [
+            {
+              "ref": "Lam.2.14",
+              "role": "defining",
+              "note": "Your prophets saw for you “oracles (מַשְׂאוֹת) of emptiness and banishment”."
+            },
+            {
+              "ref": "Zep.3.18",
+              "note": "The reproach that was a burden on her."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָשִׂיא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "rising vapour, cloud",
+      "summary": "In the plural, the vapours or clouds Yahweh makes to rise from the ends of the earth before the rain: what rises up. Used four times (three in one repeated saying); its tie to the root is “rise”, shared with Arabic نَشْءٌ, clouds as they first rise.",
+      "bdb": [
+        "n.fm.ae"
+      ],
+      "cognate_ids": [
+        "ar-nash"
+      ],
+      "senses": [
+        {
+          "gloss": "rising vapours, clouds",
+          "definition": "Clouds that go up from the horizon, raised by Yahweh, before lightning and rain; clouds that promise rain and give none are the empty boaster.",
+          "kin": [
+            "niph-rise",
+            "rise"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.10.13",
+              "role": "defining",
+              "note": "“He makes vapours (נְשִׂאִים) rise from the ends of the earth; he makes lightnings for the rain.”"
+            },
+            {
+              "ref": "Jer.51.16"
+            },
+            {
+              "ref": "Psa.135.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.25.14",
+              "role": "defining",
+              "note": "“Clouds and wind without rain is a man who boasts of a false gift.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְשָׂא",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "lift, take up, carry away; (hithpaal) rise up (against)",
+      "summary": "Biblical Aramaic, in Daniel and Ezra: the wind carries away the broken image like chaff, Cyrus tells Sheshbazzar to take the temple vessels, and Jerusalem is said to have risen up against kings.",
+      "bdb": [
+        "xn.aq.aa"
+      ],
+      "cognate_ids": [
+        "arc-nesa"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "take up, carry away",
+          "senses": [
+            {
+              "gloss": "carry away, take",
+              "definition": "Take up and remove.",
+              "kin": [
+                "take-away"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.2.35",
+                  "role": "defining",
+                  "note": "The image became like chaff, “and the wind carried them away”, as Isa 41:16 says the wind will carry away the threshed mountains."
+                },
+                {
+                  "ref": "Ezr.5.15",
+                  "role": "defining",
+                  "note": "Cyrus to Sheshbazzar: “Take these vessels, go, put them in the temple in Jerusalem.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpaal",
+          "gloss": "lift oneself up, rise up (against)",
+          "senses": [
+            {
+              "gloss": "rise up against",
+              "definition": "Lift oneself up in revolt.",
+              "kin": [
+                "exalt-oneself"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezr.4.19",
+                  "role": "defining",
+                  "note": "The search found that “this city of old has lifted itself up against kings”."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְשׂוּאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "what is carried (in procession)",
+      "summary": "The passive participle as a noun, once: the idols Babylon carried in procession, now a load on weary beasts, set against Yahweh who carries his people (Isa 46:3–4).",
+      "bdb": [
+        "n.fm.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "thing carried",
+          "definition": "Images borne about in procession.",
+          "kin": [
+            "carry",
+            "carry-people"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.46.1",
+              "role": "defining",
+              "note": "“Your carried things (נְשֻׂאֹתֵיכֶם) are loaded, a burden to the weary beast.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשֹּׂא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a lifting (of faces): partiality",
+      "summary": "Once, in the phrase מַשֹּׂא פָנִים, “lifting of faces”, partiality in judgment, which there is none of with Yahweh.",
+      "bdb": [
+        "n.fm.ah"
+      ],
+      "senses": [
+        {
+          "gloss": "lifting of faces, partiality",
+          "definition": "Showing favour in judgment for a person’s sake.",
+          "cognate_ids": [
+            "akk-nisu"
+          ],
+          "kin": [
+            "lift-face"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ch.19.7",
+              "role": "defining",
+              "note": "“With Yahweh our God there is no iniquity, nor lifting of faces, nor taking of bribes”, as Deu 10:17."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשָּׂאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "what rises up: a rising (of smoke or cloud)",
+      "summary": "Once, of Yahweh coming in anger: “heavy is the uplifting”, the smoke or cloud that rises with the burning. Its sense rests on this one verse and on מַשְׂאֵת, the rising signal of smoke.",
+      "bdb": [
+        "n.fm.ai"
+      ],
+      "senses": [
+        {
+          "gloss": "rising smoke, uplifted cloud",
+          "definition": "What goes up from a fire: a heavy column of smoke.",
+          "kin": [
+            "signal"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.30.27",
+              "role": "defining",
+              "note": "“The name of Yahweh comes from afar, burning his anger, and heavy the uplifting (מַשָּׂאָה).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׂיא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "height, loftiness",
+      "summary": "Once, of the wicked man’s height that reaches the heavens before he perishes; a short form from the root’s “lift”.",
+      "bdb": [
+        "n.fm.ak"
+      ],
+      "senses": [
+        {
+          "gloss": "height, loftiness",
+          "definition": "How high a man rises in his pride.",
+          "kin": [
+            "seet-dignity",
+            "be-exalted"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.20.6",
+              "role": "defining",
+              "note": "“Though his height mount up to the heavens and his head reach the clouds, he shall perish for ever.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-nasu",
+      "lang": "akk",
+      "form": "našû",
+      "translit": "našû",
+      "gloss": "lift up, raise; carry, bear; bring; take, take away; (nāšû) bearer, carrier",
+      "relation": "cognate",
+      "note": "The commonest Akkadian verb of lifting, with the Hebrew’s range from raising to carrying, bringing and taking away; nāšû “bearer” answers to the participle נֹשֵׂא.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003300, našû [lift] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003300.html",
+          "note": "“be lifted; be raised; bear; bring; carry; carry away; lift; lift up; raise; remove; suffer; support; take; take away”."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000022060, nāšû [bearing] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000022060.html",
+          "note": "“bearer; carrier; holder; one who lifts”."
+        }
+      ]
+    },
+    {
+      "id": "akk-nisu",
+      "lang": "akk",
+      "form": "nīšu",
+      "translit": "nīšu",
+      "gloss": "lifting, raising; honour; glance (of favour)",
+      "relation": "cognate",
+      "note": "A noun of lifting that carries honour and a look of favour, as שְׂאֵת is dignity and “lifting the face” is favour.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000014330, nīšu [lifting] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000014330.html",
+          "note": "“glance (of favour); honour; lifting; raising”."
+        }
+      ]
+    },
+    {
+      "id": "akk-nisitu",
+      "lang": "akk",
+      "form": "nišītu",
+      "translit": "nišītu",
+      "gloss": "lifting; chosen one",
+      "relation": "cognate",
+      "note": "A noun of lifting used of one chosen, raised up for office: the same turn from “lifted” to “one raised over others” as נָשִׂיא.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "oimea x000031390, nišītu [lifting] N",
+          "url": "https://oracc.museum.upenn.edu/oimea/cbd/akk/x000031390.html",
+          "note": "“chosen one; lifting”."
+        }
+      ]
+    },
+    {
+      "id": "uga-nsa",
+      "lang": "uga",
+      "form": "𐎐𐎌𐎛",
+      "translit": "nšʾ",
+      "gloss": "lift, raise",
+      "relation": "cognate",
+      "note": "Used, as in Hebrew, of lifting the eyes to see: bnši ʿnh wyphn, “and in lifting up his eyes he sees”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 194, §93 glossary, /n-š-ʾ/",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“inf. constr. ‘to lift’ (H. nāśāʾ, yiśśāʾ, Aram. nəśāʾ, Akkad. našû)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 103, §67, KTU 1.19 III 28–29",
+          "note": "bnši ʿnh wyphn “and in lifting up his eyes (and) he perceives her”."
+        }
+      ]
+    },
+    {
+      "id": "phn-nsa",
+      "lang": "phn",
+      "form": "𐤍𐤔𐤀",
+      "translit": "nšʾ",
+      "gloss": "carry, bring; carry off, remove; elect, choose; pardon; exalt; (piel?) take a wife",
+      "relation": "cognate",
+      "note": "Phoenician and Punic share almost every Hebrew use: carrying, carrying off a coffin, exalting a god’s name, pardoning prisoners, taking a wife; and the Sidonian assembly “lifts” a man to office, “elects” him, the act behind נָשִׂיא.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 336–337, N-Š-ʾ",
+          "note": "“v. qal 1. CARRY, BRING … 2. CARRY OFF, TAKE AWAY, REMOVE (KAI 14.5) … 3. WITHDRAW money … 4. ELECT, CHOOSE (KAI 60.2) … 5. SHARE … 6. PARDON (Mactar B II 1) … 7. EXALT, EXTOL (KAI 145 I 4) … v. piʿel? TAKE a wife”."
+        }
+      ]
+    },
+    {
+      "id": "ar-nashaa",
+      "lang": "ar",
+      "form": "نَشَأَ",
+      "translit": "našaʾa",
+      "gloss": "rise, become high; grow up; arise, originate; (IV) raise (clouds), create",
+      "relation": "cognate",
+      "note": "Arabic keeps the intransitive “rise” and, in form IV, “raise”, but not “carry”: it answers to the niphal and hithpael and the qal’s rare “rise”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2790, root نشأ, نَشَأَ (n39758)",
+          "note": "“he rose, or became elevated, or high … [It rose.] … He grew up … It (a cloud) rose, and appeared … He arose.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2791, انشأ (n39760); تنشّأ (n39761)",
+          "note": "Form IV “He (i.e. God) raised the clouds”; form V “He rose and went to accomplish his affair”."
+        }
+      ]
+    },
+    {
+      "id": "ar-nash",
+      "lang": "ar",
+      "form": "نَشْءٌ",
+      "translit": "našʾ",
+      "gloss": "risen clouds; the first of the clouds as they rise",
+      "relation": "cognate",
+      "note": "The same picture as נְשִׂאִים, the clouds Yahweh makes rise from the ends of the earth.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2791, نَشْءٌ (n39762)",
+          "note": "“Risen clouds: or the first that rises of them: or their first appearance”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2791, نَاشِئٌ (n39767)",
+          "note": "“Clouds not completely collected together.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-munsha",
+      "lang": "ar",
+      "form": "مُنْشَأٌ",
+      "translit": "munšaʾ",
+      "gloss": "a beacon or waymark raised up; an elevated hill",
+      "relation": "cognate",
+      "note": "Form IV with عَلَمًا is to set up a beacon; the raised beacon answers to מַשְׂאֵת, the signal lifted on a height (Jer 6:1).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2791, مُنْشَأٌ (n39769); انشأ (n39760)",
+          "note": "“A beacon, or sign of the way, raised and pointed … An elevated hill”; انشأ عَلَمًا “He set up a beacon, or sign of the way”."
+        }
+      ]
+    },
+    {
+      "id": "gez-nasa",
+      "lang": "gez",
+      "form": "ነሥአ",
+      "translit": "näśʾä",
+      "gloss": "take up, pick up, raise up; take away; capture, seize",
+      "relation": "cognate",
+      "note": "Ge’ez keeps the active “take up, take away”, as the Hebrew qal.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ነሥአ (näśʾä)",
+          "note": "“to take up, pick up, raise up; to take away … to capture, seize”."
+        }
+      ]
+    },
+    {
+      "id": "arc-nesa",
+      "lang": "arc",
+      "form": "נְסָא, נְשָׂא",
+      "translit": "nəsāʾ, nəśāʾ",
+      "gloss": "lift up; take, receive, carry (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targum of Psalms writes נְשָׂא in Psa 4:7, where the Hebrew has the by-form נְסָה, “lift up the light of your face”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְסֵי (נְסָא, נְשָׂא)",
+          "note": "“1) to lift up. Targ. O. Deut. XXVIII, 56 … Targ. Ps. IV, 7 נְשָׂא (h. text נְסָה). 2) to take, receive, carry”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְשָׂא (ch.)",
+          "note": "“1) to lift up … 2) to bring, offer”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "sin-bearing",
+      "statement": "The verses use one verb for two things. The man who sins “bears his iniquity” (Lev 5:1, 17): he carries its guilt, and if it stays on him he dies or is cut off (Lev 22:9; Num 9:13); no one else bears it for him by being punished in his stead, for “the son shall not bear the iniquity of the father” (Ezk 18:20). Yet Yahweh is “bearing iniquity and transgression and sin” (Exo 34:7; Mic 7:18): he lifts it off the sinner and carries it away, and that is forgiveness, “blessed is he whose transgression is lifted, whose sin is covered” (Psa 32:1, 5), even while he “will by no means clear” the guilty who stay in it (Exo 34:7). The law showed how he does it: the high priest bore the iniquity of Israel’s holy things that they might be accepted (Exo 28:38); the priests ate the sin offering “to bear the iniquity of the congregation, to make a covering for them” (Lev 10:17); the goat “bore on itself all their iniquities” away to a land cut off (Lev 16:22). Isaiah’s servant “bore the sin of many” and was himself “numbered with the transgressors” (Isa 53:12; 53:4). The apostles say this of Jesus: he “bore our sins in his own body on the tree, that we, being dead to sins, should live to righteousness” (1Pe 2:24), was “once offered to bear the sins of many” (Heb 9:28), and is “the Lamb of God who takes away the sin of the world” (Jhn 1:29); Paul reads Psa 32:1 as the blessing of the man to whom God counts righteousness without works (Rom 4:6–8). From the verses: forgiveness is not sin overlooked but sin lifted and carried away, and God carried it away in the one he provided, who bore it in his own body and was raised, so that those who come to God by him no longer bear it.",
+      "evidence": [
+        {
+          "ref": "Lev.5.1"
+        },
+        {
+          "ref": "Lev.22.9"
+        },
+        {
+          "ref": "Ezk.18.20"
+        },
+        {
+          "ref": "Exo.34.7"
+        },
+        {
+          "ref": "Mic.7.18"
+        },
+        {
+          "ref": "Psa.32.1"
+        },
+        {
+          "ref": "Psa.32.5"
+        },
+        {
+          "ref": "Exo.28.38"
+        },
+        {
+          "ref": "Lev.10.17"
+        },
+        {
+          "ref": "Lev.16.22"
+        },
+        {
+          "ref": "Isa.53.4"
+        },
+        {
+          "ref": "Isa.53.12"
+        },
+        {
+          "ref": "1Pe.2.24"
+        },
+        {
+          "ref": "Heb.9.28"
+        },
+        {
+          "ref": "Jhn.1.29"
+        },
+        {
+          "ref": "Rom.4.6",
+          "to": "Rom.4.8"
+        }
+      ]
+    },
+    {
+      "topic": "impartiality",
+      "statement": "To “lift the face” of a man is to receive him, and Yahweh does it: he lifts Job’s face when Job prays for his friends (Job 42:8), and the priestly blessing asks that he lift up his face toward Israel and give them peace (Num 6:26). But in judgment the same act is forbidden: “you shall not lift the face of the poor nor honour the face of the great” (Lev 19:15), because Yahweh himself “does not lift the face and does not take a bribe” (Deu 10:17), and “with Yahweh our God there is no … lifting of faces” (2Ch 19:7). The New Testament keeps the Hebrew idiom in its Greek: “God accepts no man’s face” (Gal 2:6), “God is no respecter of persons, but in every nation he who fears him and works righteousness is accepted” (Act 10:34–35; Rom 2:11). From the verses: God’s favour is not won by rank, gift or nation; he lifts the face of the one who comes to him in righteousness and humility, and his people are to judge the same way.",
+      "evidence": [
+        {
+          "ref": "Job.42.8"
+        },
+        {
+          "ref": "Num.6.26"
+        },
+        {
+          "ref": "Lev.19.15"
+        },
+        {
+          "ref": "Deu.10.17"
+        },
+        {
+          "ref": "2Ch.19.7"
+        },
+        {
+          "ref": "Gal.2.6"
+        },
+        {
+          "ref": "Act.10.34",
+          "to": "Act.10.35"
+        },
+        {
+          "ref": "Rom.2.11"
+        }
+      ]
+    },
+    {
+      "topic": "the-servant-exalted",
+      "statement": "Isaiah uses the root twice of the servant. He “bore (נָשָׂא) the sin of many” (Isa 53:12), and because of it Yahweh says “my servant shall be high and lifted up (נִשָּׂא) and very lofty” (Isa 52:13; 53:12), the words used of Yahweh’s own throne, “high and lifted up” (Isa 6:1; 57:15). The one who carried the load is the one lifted up. The apostles say the same of Jesus: “being found in fashion as a man, he humbled himself and became obedient to death … wherefore God also has highly exalted him” (Php 2:8–9); “him has God exalted with his right hand to be a Prince and a Saviour, to give repentance to Israel and forgiveness of sins” (Act 5:31). From the verses: the exaltation is God’s gift to his servant for his obedience in bearing sin, and it is for the forgiveness of others.",
+      "evidence": [
+        {
+          "ref": "Isa.53.12"
+        },
+        {
+          "ref": "Isa.52.13"
+        },
+        {
+          "ref": "Isa.6.1"
+        },
+        {
+          "ref": "Isa.57.15"
+        },
+        {
+          "ref": "Php.2.8",
+          "to": "Php.2.9"
+        },
+        {
+          "ref": "Act.5.31"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Ezekiel, after the shepherds of Israel had failed and the last prince of Judah had been taken away (Ezk 12:10–12; 21:30–32), foretold one shepherd over a regathered, united Israel: “my servant David shall be a prince among them” (Ezk 34:23–24), “David my servant shall be their prince for ever” (Ezk 37:24–25), when they dwell in the land given to Jacob, they and their children for ever. The angel told Mary that God would give her son “the throne of his father David, and he shall reign over the house of Jacob for ever” (Luk 1:32–33). From the verses: the prince for ever of Ezekiel 34 and 37 is Jesus, David’s son, reigning over Israel restored to their land.",
+      "evidence": [
+        {
+          "ref": "Ezk.12.10",
+          "to": "Ezk.12.12"
+        },
+        {
+          "ref": "Ezk.21.30",
+          "to": "Ezk.21.32"
+        },
+        {
+          "ref": "Ezk.34.23",
+          "to": "Ezk.34.24"
+        },
+        {
+          "ref": "Ezk.37.24",
+          "to": "Ezk.37.25"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (נְשִׂיאִים Num 10:4; נֹשְׂאֵי Num 10:17, 21). The task named Num 10:35, but that verse has no word of this root; Lev 23 has none either. Root key נשׂא as the corpus keys it. Words: n.fm.ad (prince) and n.fm.ae (vapour) list the same 134 tokens by spelling, as do n.fm.af (load) and n.fm.ag (oracle) with 67, so each pair’s use counts in lexicon-support are inflated and overlap; the real vapour tokens are the four verses cited. The verb’s 8 ‘no stem’ tokens are שְׂאֵת by spelling (and the noun’s 8 ‘qal’ tokens are the infinitive), so those two counts also overlap. Not claimed: שִׂיאֹן (n.fm.al), Mount Sion = Hermon (Deu 4:48), a place; מַשָּׂא Massa son of Ishmael (Gen 25:14; 1Ch 1:30), a person, filed by spelling under n.fm.af/ag and m.dr.ag (marar.json notes m.dr.ag as belonging here); no name entry was made (task: no names in these chapters). Cross-references with no tokens, not claimed: n.fm.ab (נִשֵּׂאת, 2Sa 19:43), n.dr.ai (נְסָה, Psa 4:7), u.al.ac (שׂוֹא, Psa 89:10), u.ab.ac and u.cm.ah (שְׂאֵת/שֵׂת), u.ay.af (שִׂיא/שִׂיאֹן), m.dr.ah (מַשֹּׂא etc.). Psa 4:7 נְסָה and Psa 89:10 שׂוֹא are cited under the qal. Jer 13:20 שְׂאוּ (root יאה per the corpus) left out. The homograph נָשָׁא ‘deceive’ (shin) is another root; MACULA’s ἀπατάω ×4 under this lemma are those. Ezk 38:2 is rendered ‘prince of Rosh, Meshech and Tubal’ (רֹאשׁ as a name, as the rosh entry leaves the gentilic Rosh out); check against the prophecy data. Ezekiel 44–48: the prince offers a sin offering ‘for himself’ (45:22) and has sons (46:16); the entry does not say who he is, only that Ezk 34 and 37’s ‘David… prince for ever’ is Christ (doctrine ‘kingdom-of-god’); reviewer to decide whether the prince of chs. 44–48 should be identified. Act 13:18: TR reads ἐτροποφόρησεν, the LXX of Deu 1:31 τροφοφορέω; cited as Paul taking up Deu 1:31. Sin-bearing doctrine avoids saying the bearer is punished instead of the sinner (Ezk 18:20); check the wording. Leads not followed: Dillmann/Leslau for Ge’ez ነሥአ (Wiktionary only); Sabaean nśʾ not found in Biella’s OCR; Syriac has no cognate root in the Peshitta (SEDRA); Ugaritic nšʾ ‘lift’ of the hand/voice in other KTU texts not checked."
+}
