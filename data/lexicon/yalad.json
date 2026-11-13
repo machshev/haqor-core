@@ -1,0 +1,2555 @@
+{
+  "id": "yalad",
+  "root": "ילד",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "birth",
+    "children",
+    "family",
+    "genealogy",
+    "messiah",
+    "mortality",
+    "new-birth"
+  ],
+  "gloss": "bear, give birth; beget; be born; child; generations, kindred",
+  "summary": "The verb is a mother's bearing of a child and a father's begetting of one: qal for both (Gen 4:1; Pro 23:22), the hiphil the begetting of the genealogies (Gen 5; 11; Rut 4:18–22), the niphal and pual being born, the piel the midwife's work (Exo 1:15–21). From it come יֶלֶד, the child born, from newborn to young man; תּוֹלֵדוֹת, a man's “generations”, the line of those born from him (Gen 5:1); מוֹלֶדֶת, birth, so one's kindred and native land (Gen 12:1; Num 10:30); and יָלִיד, one born in a house. Scripture uses it of God begetting his son (Psa 2:7), of “a child born to us” (Isa 9:5), of Zion bearing a nation (Isa 66:8), and of man “born of woman”, few of days (Job 14:1). Arabic walada, Akkadian walādu, Ugaritic and Phoenician yld and Sabaean wld have the same sense.",
+  "words": [
+    {
+      "lemma": "יָלַד",
+      "pos": "verb",
+      "gloss": "bear, give birth; beget; (niphal, pual) be born; (piel) act as midwife",
+      "bdb": [
+        "j.bn.aa",
+        "l.al.ah"
+      ],
+      "cognate_ids": [
+        "ar-walada",
+        "akk-waladu",
+        "uga-yld-verb",
+        "phn-yld-verb",
+        "sab-wld",
+        "arc-yeled"
+      ],
+      "summary": "Nearly 500 uses, in every stem. The qal is used of the mother bearing (most often) and of the father begetting; the hiphil is the father's begetting, almost all in the genealogies; the passive stems are being born; the piel participle is the midwife. Its infinitive לֵדָה is “birth, bearing” (2Ki 19:3; Hos 9:11).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bear, give birth; beget; bring forth",
+          "senses": [
+            {
+              "id": "bear",
+              "gloss": "bear, give birth (of a woman)",
+              "definition": "A woman bringing forth the child she has conceived; most often in “she conceived and bore”, the child then named.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.1",
+                  "role": "defining",
+                  "note": "“And she conceived (וַתַּהַר) and bore (וַתֵּלֶד) Cain”: conceiving and bearing, the first birth."
+                },
+                {
+                  "ref": "Gen.3.16",
+                  "role": "defining",
+                  "note": "To the woman: “in pain you will bear (תֵּלְדִי) sons”."
+                },
+                {
+                  "ref": "Lev.12.2",
+                  "role": "defining",
+                  "note": "The law of childbirth: “a woman, if she conceives and bears a male”; also Lev 12:5, 7."
+                },
+                {
+                  "ref": "Isa.7.14",
+                  "role": "defining",
+                  "note": "“Behold, the young woman (הָעַלְמָה) is with child and bearing (וְיֹלֶדֶת) a son, and she will call his name Immanuel”; quoted of Mary in Mat 1:23."
+                },
+                {
+                  "ref": "Mat.1.23",
+                  "note": "“Behold, the virgin shall be with child and shall bear (τέξεται) a son” (Isa 7:14)."
+                },
+                {
+                  "ref": "Gen.16.11"
+                },
+                {
+                  "ref": "Gen.21.2",
+                  "note": "Sarah bore Abraham a son in his old age."
+                },
+                {
+                  "ref": "Gen.29.32",
+                  "note": "Leah's sons, each named at his birth (Gen 29:32–35; 30:1–24)."
+                },
+                {
+                  "ref": "1Sa.1.20",
+                  "note": "Hannah conceived and bore a son and called him Samuel."
+                },
+                {
+                  "ref": "Rut.4.13"
+                },
+                {
+                  "ref": "Exo.1.19",
+                  "note": "The Hebrew women “bear before the midwife comes to them”."
+                },
+                {
+                  "ref": "Jer.20.14",
+                  "note": "“The day my mother bore me (יְלָדַתְנִי).”"
+                },
+                {
+                  "ref": "Ecc.3.2",
+                  "note": "“A time to bear (לָלֶדֶת) and a time to die.”"
+                },
+                {
+                  "ref": "2Ki.19.3",
+                  "note": "The infinitive לֵדָה: “sons have come to the opening of the womb, and there is no strength to bear (לְלֵדָה)”; also Isa 37:3."
+                },
+                {
+                  "ref": "Hos.9.11",
+                  "note": "Ephraim's glory will fly away, “no birth (מִלֵּדָה), no womb, no conception”."
+                }
+              ]
+            },
+            {
+              "gloss": "bear young (of animals)",
+              "definition": "Of flocks and wild animals bringing forth their young.",
+              "evidence": [
+                {
+                  "ref": "Gen.30.39",
+                  "role": "defining",
+                  "note": "The flocks “bore (וַתֵּלַדְןָ) streaked, speckled and spotted”."
+                },
+                {
+                  "ref": "Gen.31.8"
+                },
+                {
+                  "ref": "Job.39.1",
+                  "role": "defining",
+                  "note": "“Do you know the time the wild goats of the rock bear (לֶדֶת)?”; also Job 39:2."
+                },
+                {
+                  "ref": "Jer.14.5",
+                  "note": "The hind “bears and forsakes” her young in the drought."
+                }
+              ]
+            },
+            {
+              "id": "beget-qal",
+              "gloss": "beget (of a father); of both parents, “those who bore him”",
+              "definition": "A father begetting a son, mostly in the older genealogies; the participle names a child's father and mother together as those who bore him.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.18",
+                  "role": "defining",
+                  "note": "“Irad begot (יָלַד) Mehujael, and Mehujael begot Methushael, and Methushael begot Lamech.”"
+                },
+                {
+                  "ref": "Gen.10.8",
+                  "note": "“Cush begot Nimrod”; the table of nations, Gen 10:13–26."
+                },
+                {
+                  "ref": "Gen.22.23",
+                  "note": "“Bethuel begot Rebekah.”"
+                },
+                {
+                  "ref": "Pro.23.22",
+                  "role": "defining",
+                  "note": "“Listen to your father, this one who begot you (יְלָדֶךָ), and do not despise your mother when she is old.”"
+                },
+                {
+                  "ref": "Pro.23.24",
+                  "note": "“He who begets (יוֹלֵד) a wise son will rejoice in him.”"
+                },
+                {
+                  "ref": "Zec.13.3",
+                  "role": "defining",
+                  "note": "“His father and his mother, those who bore him (יֹלְדָיו)”: one word for both parents."
+                },
+                {
+                  "ref": "Num.11.12",
+                  "note": "Moses: “Did I conceive all this people? Did I beget them (יְלִדְתִּיהוּ)?”"
+                },
+                {
+                  "ref": "Dan.11.6",
+                  "note": "The king's daughter given up, with “he who begot her”."
+                },
+                {
+                  "ref": "1Ch.1.10"
+                }
+              ]
+            },
+            {
+              "id": "god-begets",
+              "gloss": "beget (of God)",
+              "definition": "God as the one who begot his son, his people, and the things of his creation.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.7",
+                  "role": "defining",
+                  "note": "“Yahweh said to me, You are my son; I today have begotten you (יְלִדְתִּיךָ)”: a begetting on a day."
+                },
+                {
+                  "ref": "Act.13.33",
+                  "role": "defining",
+                  "note": "Paul: God fulfilled the promise “in raising up Jesus, as it is written in the second psalm, You are my son, today I have begotten you”."
+                },
+                {
+                  "ref": "Heb.1.5",
+                  "note": "“To which of the angels did he ever say, You are my son, today I have begotten you?”"
+                },
+                {
+                  "ref": "Heb.5.5",
+                  "note": "Christ did not glorify himself to be high priest, but he who said to him, “today I have begotten you”."
+                },
+                {
+                  "ref": "Deu.32.18",
+                  "role": "defining",
+                  "note": "“The Rock who begot you (יְלָדְךָ) you neglected, and forgot God who brought you forth (מְחֹלְלֶךָ)”: Israel as God's offspring."
+                },
+                {
+                  "ref": "Job.38.29",
+                  "note": "“The hoarfrost of heaven, who has given it birth (יְלָדוֹ)?”"
+                },
+                {
+                  "ref": "Jer.2.27",
+                  "note": "The idolaters say “to the stone, You bore us”: the honour due to God given to a block."
+                }
+              ]
+            },
+            {
+              "id": "travail",
+              "gloss": "the woman in labour, as a figure of anguish",
+              "definition": "The participle יוֹלֵדָה, “a woman bearing”, is the picture of sudden, inescapable pain that seizes men and cities under judgment.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.8",
+                  "role": "defining",
+                  "note": "“Pangs and pains will seize them; they will writhe like a woman bearing (כַּיּוֹלֵדָה).”"
+                },
+                {
+                  "ref": "Jer.6.24",
+                  "note": "“Anguish has seized us, pain as of a woman bearing.”"
+                },
+                {
+                  "ref": "Jer.30.6",
+                  "role": "defining",
+                  "note": "“Ask and see whether a male bears: why do I see every man with his hands on his loins like a woman bearing?”"
+                },
+                {
+                  "ref": "Mic.4.9",
+                  "note": "Also Mic 4:10, the daughter of Zion in labour, going to Babylon and redeemed there."
+                },
+                {
+                  "ref": "Psa.48.7",
+                  "note": "The kings who saw Zion: “trembling seized them there, pain as of a woman bearing”."
+                },
+                {
+                  "ref": "Isa.21.3"
+                },
+                {
+                  "ref": "Jer.49.24"
+                },
+                {
+                  "ref": "Jer.50.43"
+                }
+              ]
+            },
+            {
+              "id": "zion-bears",
+              "gloss": "bear (of Zion, a land or nation)",
+              "definition": "Zion, the barren or bereaved woman, bearing the sons of a restored people.",
+              "evidence": [
+                {
+                  "ref": "Isa.66.7",
+                  "role": "defining",
+                  "note": "“Before she writhed she bore (יָלָדָה); before her pain came she delivered a male”; Isa 66:8: “as soon as Zion writhed she bore her sons”."
+                },
+                {
+                  "ref": "Isa.54.1",
+                  "role": "defining",
+                  "note": "“Sing, barren one who did not bear (לֹא יָלָדָה) … for more are the sons of the desolate than the sons of the married”, quoted in Gal 4:27 of “the Jerusalem above, … the mother of us all”."
+                },
+                {
+                  "ref": "Gal.4.27",
+                  "note": "Isa 54:1, ἡ οὐ τίκτουσα."
+                },
+                {
+                  "ref": "Isa.49.21",
+                  "note": "Zion: “Who has begotten (יָלַד) me these, when I was bereaved and barren?”"
+                },
+                {
+                  "ref": "Mic.5.2",
+                  "role": "defining",
+                  "note": "After the ruler from Bethlehem (Mic 5:1), “he will give them up until the time that she who is bearing has borne (יוֹלֵדָה יָלָדָה)”."
+                },
+                {
+                  "ref": "Isa.26.17",
+                  "note": "Also Isa 26:18: “we writhed, we bore as it were wind”."
+                }
+              ]
+            },
+            {
+              "id": "bring-forth",
+              "gloss": "bring forth (deeds, events)",
+              "definition": "Of what a man's schemes or a day produce: conceiving trouble and bearing falsehood.",
+              "evidence": [
+                {
+                  "ref": "Psa.7.15",
+                  "role": "defining",
+                  "note": "“He travails with iniquity, conceives trouble (עָמָל) and bears falsehood (שָׁקֶר).”"
+                },
+                {
+                  "ref": "Job.15.35",
+                  "role": "defining",
+                  "note": "“They conceive trouble and bear iniquity (אָוֶן).”"
+                },
+                {
+                  "ref": "Isa.33.11",
+                  "note": "“You conceive chaff, you will bear stubble.”"
+                },
+                {
+                  "ref": "Pro.27.1",
+                  "role": "defining",
+                  "note": "“Do not boast of tomorrow, for you do not know what a day will bring forth (יֵּלֶד).”"
+                }
+              ]
+            },
+            {
+              "id": "born-of-woman",
+              "gloss": "(passive participle) born",
+              "definition": "The passive participle יָלוּד, “born”, in יְלוּד אִשָּׁה, “born of woman”: man as one who came from a woman, short-lived and unclean.",
+              "evidence": [
+                {
+                  "ref": "Job.14.1",
+                  "role": "defining",
+                  "note": "“Man (אָדָם), born of woman (יְלוּד אִשָּׁה), is short of days and full of trouble.”"
+                },
+                {
+                  "ref": "Job.15.14",
+                  "role": "defining",
+                  "note": "“What is man, that he should be pure, or one born of woman, that he should be righteous?”"
+                },
+                {
+                  "ref": "Job.25.4",
+                  "note": "“How can one born of woman be pure?”"
+                },
+                {
+                  "ref": "Mat.11.11",
+                  "note": "“Among those born of women (γεννητοῖς γυναικῶν) there has not arisen a greater than John the Baptist”; Luk 7:28."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be born",
+          "senses": [
+            {
+              "id": "be-born",
+              "gloss": "be born",
+              "definition": "Of a child coming into the world, often with “to” its father; of animals born in the herd; and of a people or nation coming to be.",
+              "evidence": [
+                {
+                  "ref": "Gen.21.3",
+                  "role": "defining",
+                  "note": "“His son who was born (הַנּוֹלַד) to him, whom Sarah bore to him, Isaac.”"
+                },
+                {
+                  "ref": "Gen.21.5",
+                  "note": "“Abraham was a hundred years old when Isaac his son was born to him.”"
+                },
+                {
+                  "ref": "Gen.17.17",
+                  "note": "“Will a child be born to one a hundred years old?”"
+                },
+                {
+                  "ref": "1Ki.13.2",
+                  "role": "defining",
+                  "note": "The man of God at Bethel: “a son will be born (נוֹלָד) to the house of David, Josiah by name”, three centuries before."
+                },
+                {
+                  "ref": "Job.3.3",
+                  "role": "defining",
+                  "note": "“Let the day perish on which I was born (אִוָּלֶד).”"
+                },
+                {
+                  "ref": "Ecc.7.1",
+                  "role": "defining",
+                  "note": "“The day of death is better than the day of one's being born (הִוָּלְדוֹ).”"
+                },
+                {
+                  "ref": "Psa.22.32",
+                  "note": "“They will declare his righteousness to a people to be born.”"
+                },
+                {
+                  "ref": "Psa.78.6",
+                  "note": "“That the generation to come might know, sons yet to be born.”"
+                },
+                {
+                  "ref": "Isa.66.8",
+                  "role": "defining",
+                  "note": "“Will a land be brought forth in one day? Will a nation be born (יִוָּלֵד) at once?”"
+                },
+                {
+                  "ref": "Pro.17.17",
+                  "note": "“A brother is born for adversity.”"
+                },
+                {
+                  "ref": "Lev.22.27",
+                  "note": "“When an ox or sheep or goat is born, it shall be seven days under its mother.”"
+                },
+                {
+                  "ref": "Deu.15.19",
+                  "note": "Every firstborn male born in the herd and flock is holy to Yahweh."
+                },
+                {
+                  "ref": "Job.38.21",
+                  "note": "God's irony: “You know, for you were born then.”"
+                },
+                {
+                  "ref": "Hos.2.5",
+                  "note": "“As on the day she was born.”"
+                },
+                {
+                  "ref": "1Ch.3.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be born",
+          "senses": [
+            {
+              "id": "was-born",
+              "gloss": "be born",
+              "definition": "As the niphal: of sons born to a father, of a man born in a city, and of the mountains brought forth.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.26",
+                  "role": "defining",
+                  "note": "“To Seth also a son was born (יֻלַּד), and he called his name Enosh.”"
+                },
+                {
+                  "ref": "Gen.6.1",
+                  "note": "“Daughters were born to them.”"
+                },
+                {
+                  "ref": "Gen.10.21"
+                },
+                {
+                  "ref": "Isa.9.5",
+                  "role": "defining",
+                  "note": "“For a child (יֶלֶד) is born (יֻלַּד) to us, a son is given to us, and the government will be on his shoulder.”"
+                },
+                {
+                  "ref": "Rut.4.17",
+                  "note": "“A son has been born to Naomi”: Obed, the father of Jesse, the father of David."
+                },
+                {
+                  "ref": "Psa.87.4",
+                  "role": "defining",
+                  "note": "Of Rahab, Babylon, Philistia, Tyre and Cush: “this one was born there”, in Zion; Psa 87:5–6: “this man and that man was born in her … Yahweh will count when he registers the peoples, This one was born there.”"
+                },
+                {
+                  "ref": "Psa.87.6"
+                },
+                {
+                  "ref": "Psa.90.2",
+                  "role": "defining",
+                  "note": "“Before the mountains were born (יֻלָּדוּ), or you brought forth the earth and the world, from everlasting to everlasting you are God.”"
+                },
+                {
+                  "ref": "Job.5.7",
+                  "note": "“Man is born to trouble, as the sparks fly upward.”"
+                },
+                {
+                  "ref": "Jdg.18.29",
+                  "note": "“Dan their father, who was born to Israel.”"
+                },
+                {
+                  "ref": "Jer.20.15",
+                  "note": "“A male child is born to you.”"
+                },
+                {
+                  "ref": "Jdg.13.8",
+                  "note": "Pointed as a qal passive: Manoah's prayer for “the boy who is to be born (הַיּוּלָּד)”."
+                },
+                {
+                  "ref": "Jer.20.14",
+                  "note": "Qal passive: “Cursed be the day on which I was born (יֻלַּדְתִּי).”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "help to bear, act as midwife",
+          "senses": [
+            {
+              "gloss": "act as midwife; (participle) midwife",
+              "definition": "To deliver a woman of her child; the participle מְיַלֶּדֶת is the midwife.",
+              "evidence": [
+                {
+                  "ref": "Exo.1.16",
+                  "role": "defining",
+                  "note": "Pharaoh: “When you act as midwife (בְּיַלֶּדְכֶן) to the Hebrew women and see them on the stones, if it is a son, kill him.”"
+                },
+                {
+                  "ref": "Exo.1.15",
+                  "note": "“The Hebrew midwives (לַמְיַלְּדֹת), one named Shiphrah and the other Puah.”"
+                },
+                {
+                  "ref": "Exo.1.17",
+                  "role": "defining",
+                  "note": "“The midwives feared God and did not do as the king of Egypt told them, and let the boys live.”"
+                },
+                {
+                  "ref": "Exo.1.21",
+                  "note": "Because the midwives feared God, he made them houses."
+                },
+                {
+                  "ref": "Gen.35.17",
+                  "role": "defining",
+                  "note": "Rachel in hard labour: “the midwife said to her, Do not fear, for this also is a son for you.”"
+                },
+                {
+                  "ref": "Gen.38.28",
+                  "note": "The midwife ties a scarlet thread on the hand of Tamar's first twin."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "beget; cause to bring forth",
+          "senses": [
+            {
+              "id": "beget",
+              "gloss": "beget, father",
+              "definition": "A father begetting a son: the word of the genealogies, which give each father's age when he begot the next.",
+              "evidence": [
+                {
+                  "ref": "Gen.5.3",
+                  "role": "defining",
+                  "note": "“Adam lived a hundred and thirty years and begot (וַיּוֹלֶד) in his likeness, after his image, and called his name Seth.”"
+                },
+                {
+                  "ref": "Gen.5.4",
+                  "note": "“And he begot sons and daughters.”"
+                },
+                {
+                  "ref": "Gen.11.10",
+                  "role": "defining",
+                  "note": "“Shem was a hundred years old and begot Arpachshad two years after the flood.”"
+                },
+                {
+                  "ref": "Gen.11.26",
+                  "note": "“Terah lived seventy years and begot Abram, Nahor and Haran.”"
+                },
+                {
+                  "ref": "Rut.4.18",
+                  "role": "defining",
+                  "note": "“These are the generations of Perez: Perez begot Hezron”, to “Jesse begot David” (Rut 4:22); followed by Mat 1:3–6."
+                },
+                {
+                  "ref": "Mat.1.2",
+                  "note": "“Abraham begot (ἐγέννησεν) Isaac”: Matthew's genealogy follows the Hebrew's line and its verb (Rut 4:18–22; 1Ch 2:10–15)."
+                },
+                {
+                  "ref": "1Ch.2.10"
+                },
+                {
+                  "ref": "Gen.17.20",
+                  "note": "Ishmael “will beget twelve princes”."
+                },
+                {
+                  "ref": "Gen.48.6",
+                  "note": "“Your offspring (מוֹלַדְתְּךָ) whom you beget after them will be yours.”"
+                },
+                {
+                  "ref": "Deu.4.25",
+                  "note": "“When you beget sons and sons' sons.”"
+                },
+                {
+                  "ref": "2Ki.20.18",
+                  "note": "“Of your sons whom you will beget, they will take”; also Isa 39:7."
+                },
+                {
+                  "ref": "Ezk.18.10",
+                  "note": "If a righteous man begets a violent son (Ezk 18:10–14), each bears his own iniquity."
+                },
+                {
+                  "ref": "Ecc.6.3",
+                  "note": "“If a man begets a hundred.”"
+                },
+                {
+                  "ref": "Jdg.11.1",
+                  "note": "“Gilead begot Jephthah.”"
+                },
+                {
+                  "ref": "Neh.12.10"
+                }
+              ]
+            },
+            {
+              "id": "bring-forth-hiphil",
+              "gloss": "cause to bring forth; bring forth",
+              "definition": "God making the earth or a womb bring forth, and, of men, bringing forth iniquity.",
+              "evidence": [
+                {
+                  "ref": "Isa.55.10",
+                  "role": "defining",
+                  "note": "The rain waters the earth “and makes it bring forth (וְהוֹלִידָהּ) and sprout”: so God's word does not return empty."
+                },
+                {
+                  "ref": "Isa.66.9",
+                  "role": "defining",
+                  "note": "“Shall I bring to the birth and not cause to bring forth (אוֹלִיד)? says Yahweh. Shall I, who cause to bring forth, shut the womb?”"
+                },
+                {
+                  "ref": "Job.38.28",
+                  "role": "defining",
+                  "note": "“Has the rain a father? Or who has begotten (הוֹלִיד) the drops of dew?”"
+                },
+                {
+                  "ref": "Isa.45.10",
+                  "note": "“Woe to him who says to a father, What are you begetting (תּוֹלִיד)?”: the clay questioning the potter."
+                },
+                {
+                  "ref": "Isa.59.4",
+                  "role": "defining",
+                  "note": "“They conceive trouble and bring forth (הוֹלֵיד) iniquity.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be born",
+          "senses": [
+            {
+              "id": "birthday",
+              "gloss": "(infinitive) being born; “the day of … being born”, birthday",
+              "definition": "Only the infinitive הֻלֶּדֶת, in “the day of being born”.",
+              "evidence": [
+                {
+                  "ref": "Gen.40.20",
+                  "role": "defining",
+                  "note": "“The third day, the day Pharaoh was born (יוֹם הֻלֶּדֶת אֶת־פַּרְעֹה), he made a feast for all his servants.”"
+                },
+                {
+                  "ref": "Ezk.16.4",
+                  "role": "defining",
+                  "note": "Jerusalem as a foundling: “on the day you were born your navel was not cut”; also Ezk 16:5."
+                },
+                {
+                  "ref": "Ezk.16.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "declare one's birth, be registered by descent",
+          "senses": [
+            {
+              "id": "register-descent",
+              "gloss": "declare one's descent",
+              "definition": "Once, of the census in the wilderness: each man declaring the family and father's house he was born into.",
+              "evidence": [
+                {
+                  "ref": "Num.1.18",
+                  "role": "defining",
+                  "note": "“They assembled all the congregation … and they declared their births (וַיִּתְיַלְדוּ) by their families, by their fathers' houses”; the count then lists each tribe's תּוֹלְדֹתָם (Num 1:20)."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γεννάω",
+          "gloss": "beget; (passive) be born",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.2.7, יְלִדְתִּיךָ → γεγέννηκά; Gen.5.3 and Rut.4.18, וַיּוֹלֶד / הוֹלִיד → ἐγέννησεν; Isa.9.5, יֻלַּד → ἐγεννήθη; γεννάω renders יָלַד ×167"
+            },
+            {
+              "ref": "Act.13.33",
+              "role": "defining",
+              "note": "Psa 2:7, “today I have begotten (γεγέννηκα) you”, of the raising of Jesus."
+            },
+            {
+              "ref": "Heb.1.5"
+            },
+            {
+              "ref": "Heb.5.5"
+            },
+            {
+              "ref": "Mat.1.2",
+              "role": "defining",
+              "note": "The genealogy's ἐγέννησεν, as the hiphil's וַיּוֹלֶד / הוֹלִיד (Rut 4:18–22)."
+            },
+            {
+              "ref": "Mat.1.20",
+              "note": "“That which is begotten (γεννηθέν) in her is of the holy spirit.”"
+            }
+          ]
+        },
+        {
+          "lemma": "τίκτω",
+          "gloss": "bear, give birth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.4.1, וַתֵּלֶד → ἔτεκεν; Isa.7.14, וְיֹלֶדֶת → τέξεται; Isa.54.1, יָלָדָה → τίκτουσα; τίκτω renders יָלַד ×127"
+            },
+            {
+              "ref": "Mat.1.23",
+              "role": "defining",
+              "note": "Isa 7:14: “and shall bear (τέξεται) a son”."
+            },
+            {
+              "ref": "Gal.4.27",
+              "role": "defining",
+              "note": "Isa 54:1: “Rejoice, barren one who does not bear (ἡ οὐ τίκτουσα).”"
+            },
+            {
+              "ref": "Luk.1.31"
+            },
+            {
+              "ref": "Rev.12.5",
+              "note": "The woman “bore a son, a male, who is to rule all the nations with a rod of iron” (Psa 2:9)."
+            }
+          ]
+        },
+        {
+          "lemma": "γεννητός",
+          "gloss": "born",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.14.1 and Job.15.14, יְלוּד → γεννητὸς"
+            },
+            {
+              "ref": "Mat.11.11",
+              "role": "defining",
+              "note": "ἐν γεννητοῖς γυναικῶν, “among those born of women”: Job's יְלוּד אִשָּׁה."
+            },
+            {
+              "ref": "Luk.7.28"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "הָרָה",
+            "note": "“Conceive”, before it: she conceived and bore; conceive trouble and bear iniquity.",
+            "evidence": [
+              {
+                "ref": "Gen.4.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.7.14"
+              },
+              {
+                "ref": "Psa.7.15"
+              },
+              {
+                "ref": "Job.15.35"
+              },
+              {
+                "ref": "Num.11.12"
+              }
+            ]
+          },
+          {
+            "lemma": "חוּל",
+            "note": "“Writhe, be in labour”, beside it of the birth pains and of God bringing forth.",
+            "evidence": [
+              {
+                "ref": "Deu.32.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.90.2"
+              },
+              {
+                "ref": "Isa.66.8"
+              },
+              {
+                "ref": "Isa.45.10"
+              },
+              {
+                "ref": "Isa.54.1"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עֲקָרָה",
+            "note": "“Barren”, the woman who has not borne.",
+            "evidence": [
+              {
+                "ref": "Jdg.13.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.54.1"
+              },
+              {
+                "ref": "1Sa.2.5"
+              }
+            ]
+          },
+          {
+            "lemma": "מוּת",
+            "note": "“Die”: being born and dying, the bounds of a life.",
+            "evidence": [
+              {
+                "ref": "Ecc.3.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.7.1"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַתַּהַר וַתֵּלֶד",
+            "gloss": "and she conceived and bore",
+            "evidence": [
+              {
+                "ref": "Gen.4.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.30.5"
+              },
+              {
+                "ref": "1Sa.2.21"
+              }
+            ]
+          },
+          {
+            "phrase": "כַּיּוֹלֵדָה",
+            "gloss": "like a woman bearing, in labour",
+            "evidence": [
+              {
+                "ref": "Isa.13.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.6.24"
+              },
+              {
+                "ref": "Mic.4.9"
+              },
+              {
+                "ref": "Psa.48.7"
+              }
+            ]
+          },
+          {
+            "phrase": "יְלוּד אִשָּׁה",
+            "gloss": "born of woman",
+            "evidence": [
+              {
+                "ref": "Job.14.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.15.14"
+              },
+              {
+                "ref": "Job.25.4"
+              }
+            ]
+          },
+          {
+            "phrase": "יוֹם הֻלֶּדֶת",
+            "gloss": "the day of being born, birthday",
+            "evidence": [
+              {
+                "ref": "Gen.40.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.16.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יֶלֶד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "child, boy; young man; (plural) children, young",
+      "bdb": [
+        "j.bn.ac"
+      ],
+      "cognate_ids": [
+        "ar-walad",
+        "akk-lidu",
+        "uga-yld-noun",
+        "phn-yld-noun",
+        "sab-wld",
+        "arc-walad"
+      ],
+      "summary": "The one born: from a newborn to a young man, and in the plural a man's children or an animal's young.",
+      "senses": [
+        {
+          "id": "child",
+          "gloss": "child, infant, boy",
+          "definition": "A child from birth through boyhood: the baby in the ark of bulrushes, David's dying son, the widow's son raised by Elijah.",
+          "evidence": [
+            {
+              "ref": "Exo.2.6",
+              "role": "defining",
+              "note": "Pharaoh's daughter “opened it and saw the child (הַיֶּלֶד), and behold, a boy (נַעַר) weeping”."
+            },
+            {
+              "ref": "Exo.2.3",
+              "note": "“She put the child in it and laid it in the reeds.”"
+            },
+            {
+              "ref": "2Sa.12.18",
+              "role": "defining",
+              "note": "On the seventh day David's child by Bathsheba died; 2Sa 12:15–23."
+            },
+            {
+              "ref": "1Ki.17.21",
+              "note": "Elijah stretched himself on the child: “let this child's soul (נֶפֶשׁ) return into him”; 1Ki 17:22–23."
+            },
+            {
+              "ref": "2Ki.4.34",
+              "note": "Elisha on the Shunammite's son: “the flesh of the child grew warm”."
+            },
+            {
+              "ref": "1Ki.3.25",
+              "note": "“Divide the living child in two.”"
+            },
+            {
+              "ref": "Gen.21.14",
+              "note": "Ishmael, sent away with Hagar: “and the child”; Gen 21:15–16."
+            },
+            {
+              "ref": "Exo.21.22",
+              "note": "If men strike a pregnant woman “and her children (יְלָדֶיהָ) come out”: the child in the womb is a יֶלֶד."
+            },
+            {
+              "ref": "Isa.9.5",
+              "role": "defining",
+              "note": "“A child is born to us, a son is given to us”: יֶלֶד beside בֵּן."
+            },
+            {
+              "ref": "Isa.8.18",
+              "role": "defining",
+              "note": "“Behold, I and the children (וְהַיְלָדִים) whom Yahweh has given me are for signs”, taken up in Heb 2:13 of Christ and his brothers."
+            },
+            {
+              "ref": "Heb.2.13",
+              "note": "“Behold, I and the children (τὰ παιδία) whom God has given me” (Isa 8:18)."
+            },
+            {
+              "ref": "Zec.8.5",
+              "note": "“The streets of the city will be full of boys and girls (יְלָדִים וִילָדוֹת) playing.”"
+            },
+            {
+              "ref": "Ecc.4.13",
+              "note": "“Better a poor and wise child than an old and foolish king.”"
+            }
+          ]
+        },
+        {
+          "id": "young-man",
+          "gloss": "youth, young man",
+          "definition": "A young man not yet in years of counsel: Joseph at seventeen, Rehoboam's companions, Daniel and his friends.",
+          "evidence": [
+            {
+              "ref": "1Ki.12.8",
+              "role": "defining",
+              "note": "Rehoboam “forsook the counsel of the elders (הַזְּקֵנִים) … and took counsel with the young men (הַיְלָדִים) who had grown up with him”; also 1Ki 12:10, 14."
+            },
+            {
+              "ref": "Dan.1.4",
+              "role": "defining",
+              "note": "“Youths (יְלָדִים) in whom was no blemish, … skilful in all wisdom”; Dan 1:10–17."
+            },
+            {
+              "ref": "Gen.37.30",
+              "note": "Reuben of Joseph: “The child (הַיֶּלֶד) is not”."
+            },
+            {
+              "ref": "Gen.42.22",
+              "note": "“Did I not tell you, Do not sin against the child?”"
+            },
+            {
+              "ref": "Gen.4.23",
+              "note": "Lamech: “a young man for my bruise”."
+            },
+            {
+              "ref": "2Ki.2.24"
+            }
+          ]
+        },
+        {
+          "id": "children",
+          "gloss": "(plural) children, offspring; young of animals",
+          "definition": "A family's children; with a following noun, those whose nature is that thing (“children of transgression”); and animals' young.",
+          "evidence": [
+            {
+              "ref": "Gen.33.5",
+              "role": "defining",
+              "note": "“The children whom God has graciously given your servant”; Gen 33:1–14."
+            },
+            {
+              "ref": "Gen.30.26",
+              "note": "“Give me my wives and my children, for whom I have served you.”"
+            },
+            {
+              "ref": "Rut.1.5",
+              "note": "Naomi was left without her two children and her husband."
+            },
+            {
+              "ref": "Lam.4.10",
+              "note": "“The hands of compassionate women have boiled their own children.”"
+            },
+            {
+              "ref": "Isa.57.4",
+              "role": "defining",
+              "note": "“Are you not children of transgression (יִלְדֵי־פֶשַׁע), a seed of falsehood?”"
+            },
+            {
+              "ref": "Hos.1.2",
+              "note": "“Take a wife of whoredoms and children of whoredoms.”"
+            },
+            {
+              "ref": "Isa.2.6",
+              "note": "“They strike hands with the children of foreigners.”"
+            },
+            {
+              "ref": "Isa.11.7",
+              "role": "defining",
+              "note": "“The cow and the bear will graze, their young (יַלְדֵיהֶן) will lie down together.”"
+            },
+            {
+              "ref": "Job.38.41",
+              "note": "The raven's young cry to God."
+            },
+            {
+              "ref": "Job.39.3"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παιδίον",
+          "gloss": "little child",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.8.18, יְלָדִים → παιδία; Isa.9.5, יֶלֶד → παιδίον; παιδίον renders יֶלֶד ×30"
+            },
+            {
+              "ref": "Heb.2.13",
+              "role": "defining",
+              "note": "Isa 8:18: “I and the children (τὰ παιδία) whom God has given me”; Heb 2:14: since “the children” share flesh and blood, he likewise partook of the same."
+            },
+            {
+              "ref": "Mat.2.11",
+              "note": "The magi “saw the child (τὸ παιδίον) with Mary his mother”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בֵּן",
+            "note": "“Son”, in the next line.",
+            "evidence": [
+              {
+                "ref": "Isa.9.5",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נַעַר",
+            "note": "“Boy, lad”, of the same child in the same story.",
+            "evidence": [
+              {
+                "ref": "Exo.2.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.21.16"
+              },
+              {
+                "ref": "Gen.21.17"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "זָקֵן",
+            "note": "“Old man, elder”, against the young men.",
+            "evidence": [
+              {
+                "ref": "1Ki.12.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.4.13"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יִלְדֵי פֶשַׁע",
+            "gloss": "children of transgression",
+            "evidence": [
+              {
+                "ref": "Isa.57.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "יַלְדֵי זְנוּנִים",
+            "gloss": "children of whoredoms",
+            "evidence": [
+              {
+                "ref": "Hos.1.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תּוֹלֵדוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "generations; line of descent; account of a man's descendants",
+      "bdb": [
+        "j.bn.al"
+      ],
+      "cognate_ids": [
+        "akk-talittu"
+      ],
+      "summary": "Only plural: the births that come from a man, so his line of descendants and the account of them. It heads the sections of Genesis (“these are the generations of …”), and in Numbers and Chronicles it is the family registry by which the tribes were counted.",
+      "senses": [
+        {
+          "id": "generations",
+          "gloss": "generations, the account of what came from someone",
+          "definition": "“These are the תּוֹלְדוֹת of X”: the line of those born from a man and what befell them, beginning with “the heavens and the earth”.",
+          "evidence": [
+            {
+              "ref": "Gen.2.4",
+              "role": "defining",
+              "note": "“These are the generations of the heavens and the earth when they were created, in the day that Yahweh God made earth and heavens.”"
+            },
+            {
+              "ref": "Gen.5.1",
+              "role": "defining",
+              "note": "“This is the book of the generations (סֵפֶר תּוֹלְדֹת) of Adam”, followed by each father's begetting (Gen 5:3–32)."
+            },
+            {
+              "ref": "Mat.1.1",
+              "note": "“The book of the generation (βίβλος γενέσεως) of Jesus Christ, the son of David, the son of Abraham”: the Septuagint's words for Gen 5:1."
+            },
+            {
+              "ref": "Gen.6.9",
+              "note": "“These are the generations of Noah.”"
+            },
+            {
+              "ref": "Gen.10.1"
+            },
+            {
+              "ref": "Gen.11.10",
+              "note": "Of Shem; Gen 11:27 of Terah."
+            },
+            {
+              "ref": "Gen.25.12",
+              "note": "Of Ishmael; Gen 25:19 of Isaac."
+            },
+            {
+              "ref": "Gen.36.1",
+              "note": "Of Esau; Gen 37:2 of Jacob."
+            },
+            {
+              "ref": "Num.3.1",
+              "note": "“The generations of Aaron and Moses.”"
+            },
+            {
+              "ref": "Rut.4.18",
+              "role": "defining",
+              "note": "“These are the generations of Perez”, ending with David."
+            }
+          ]
+        },
+        {
+          "id": "line-of-descent",
+          "gloss": "descent, family registry; order of birth",
+          "definition": "A people's families by their descent, as they were registered and counted; and the order in which sons were born.",
+          "evidence": [
+            {
+              "ref": "Num.1.20",
+              "role": "defining",
+              "note": "“The sons of Reuben … their generations (תּוֹלְדֹתָם) by their families, by their fathers' houses, by the number of names”; so each tribe, Num 1:22–42."
+            },
+            {
+              "ref": "Exo.6.16",
+              "note": "“The names of the sons of Levi according to their generations.”"
+            },
+            {
+              "ref": "Exo.28.10",
+              "role": "defining",
+              "note": "The names on the two onyx stones, “six on one stone and six on the other, according to their births (כְּתוֹלְדֹתָם)”."
+            },
+            {
+              "ref": "1Ch.7.2",
+              "note": "“Mighty men of valour by their generations.”"
+            },
+            {
+              "ref": "1Ch.5.7"
+            },
+            {
+              "ref": "1Ch.8.28"
+            }
+          ],
+          "kin": [
+            "register-descent"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γένεσις",
+          "gloss": "origin; genealogy; birth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.4 and Gen.5.1, תּוֹלְדוֹת → γενέσεως; γένεσις renders תּוֹלֵדוֹת ×11 (γενέσεις ×9, γένεσις ×2)"
+            },
+            {
+              "ref": "Mat.1.1",
+              "role": "defining",
+              "note": "βίβλος γενέσεως Ἰησοῦ Χριστοῦ: the opening of Gen 5:1, סֵפֶר תּוֹלְדֹת אָדָם, now of the son of David."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "אֵלֶּה תּוֹלְדוֹת",
+            "gloss": "these are the generations of",
+            "evidence": [
+              {
+                "ref": "Gen.2.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.6.9"
+              },
+              {
+                "ref": "Gen.11.27"
+              },
+              {
+                "ref": "Rut.4.18"
+              }
+            ]
+          },
+          {
+            "phrase": "סֵפֶר תּוֹלְדֹת",
+            "gloss": "book of the generations",
+            "evidence": [
+              {
+                "ref": "Gen.5.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מוֹלֶדֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "birth; kindred; native land; offspring",
+      "bdb": [
+        "j.bn.ai"
+      ],
+      "cognate_ids": [
+        "ar-mawlid",
+        "sab-wld"
+      ],
+      "summary": "One's birth, and so what a person is born into: the kindred he belongs to and the land he was born in; once, the children one begets.",
+      "senses": [
+        {
+          "id": "kindred",
+          "gloss": "kindred, relatives; one's people",
+          "definition": "The family and people one was born into, often beside “your land” and “your father's house”.",
+          "evidence": [
+            {
+              "ref": "Gen.12.1",
+              "role": "defining",
+              "note": "“Go from your land, and from your kindred (וּמִמּוֹלַדְתְּךָ), and from your father's house, to the land that I will show you”; quoted in Act 7:3."
+            },
+            {
+              "ref": "Act.7.3",
+              "note": "Stephen quoting Gen 12:1: “from your kindred (συγγενείας)”."
+            },
+            {
+              "ref": "Num.10.30",
+              "role": "defining",
+              "note": "Hobab to Moses: “I will not go, but I will go to my land and to my kindred (מוֹלַדְתִּי).”"
+            },
+            {
+              "ref": "Gen.24.4",
+              "role": "defining",
+              "note": "“Go to my land and to my kindred, and take a wife for my son Isaac”; Gen 24:7."
+            },
+            {
+              "ref": "Gen.31.3",
+              "note": "“Return to the land of your fathers and to your kindred.”"
+            },
+            {
+              "ref": "Gen.32.10"
+            },
+            {
+              "ref": "Gen.43.7",
+              "note": "“The man asked closely about us and our kindred: Is your father still alive?”"
+            },
+            {
+              "ref": "Est.2.10",
+              "role": "defining",
+              "note": "“Esther had not made known her people or her kindred”; Est 2:20; 8:6 “the destruction of my kindred”."
+            },
+            {
+              "ref": "Est.8.6"
+            }
+          ]
+        },
+        {
+          "id": "native-land",
+          "gloss": "birth; land of one's birth",
+          "definition": "One's birth and origin, and in אֶרֶץ מוֹלֶדֶת the land one was born in.",
+          "evidence": [
+            {
+              "ref": "Gen.11.28",
+              "role": "defining",
+              "note": "Haran died “in the land of his birth (מוֹלַדְתּוֹ), in Ur of the Chaldeans”."
+            },
+            {
+              "ref": "Gen.31.13",
+              "note": "“Return to the land of your birth.”"
+            },
+            {
+              "ref": "Rut.2.11",
+              "role": "defining",
+              "note": "Ruth “left your father and your mother and the land of your birth, and came to a people you did not know”."
+            },
+            {
+              "ref": "Jer.22.10",
+              "role": "defining",
+              "note": "Of Shallum: “he will not return any more and see the land of his birth”."
+            },
+            {
+              "ref": "Jer.46.16"
+            },
+            {
+              "ref": "Ezk.23.15",
+              "note": "The Babylonians, “the land of whose birth is Chaldea”."
+            },
+            {
+              "ref": "Ezk.16.3",
+              "role": "defining",
+              "note": "To Jerusalem: “your origins and your births (וּמֹלְדֹתַיִךְ) are of the land of the Canaanite”; Ezk 16:4 “as for your birth, on the day you were born …”."
+            },
+            {
+              "ref": "Ezk.16.4"
+            }
+          ]
+        },
+        {
+          "id": "born-of",
+          "gloss": "born (of a house); offspring",
+          "definition": "In the laws of nakedness, a sister by birth of the same household or another; and once the children a man begets.",
+          "evidence": [
+            {
+              "ref": "Lev.18.9",
+              "role": "defining",
+              "note": "“Your sister, the daughter of your father or of your mother, born (מוֹלֶדֶת) at home or born abroad.”"
+            },
+            {
+              "ref": "Lev.18.11",
+              "note": "“The daughter of your father's wife, born of your father (מוֹלֶדֶת אָבִיךָ): she is your sister.”"
+            },
+            {
+              "ref": "Gen.48.6",
+              "role": "defining",
+              "note": "“Your offspring (וּמוֹלַדְתְּךָ) whom you beget after them will be yours.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πατρίς",
+          "gloss": "fatherland, native country",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.22.10, מוֹלַדְתּוֹ → πατρίδος; Jer.46.16, מוֹלַדְתֵּנוּ → πατρίδα"
+            },
+            {
+              "ref": "Heb.11.14",
+              "role": "defining",
+              "note": "Abraham and his seed, strangers in the land, “make it plain that they seek a homeland (πατρίδα)”; not the one they came out from (Heb 11:15), but a heavenly one."
+            }
+          ]
+        },
+        {
+          "lemma": "συγγένεια",
+          "gloss": "kindred, relatives",
+          "evidence": [
+            {
+              "ref": "Act.7.3",
+              "role": "defining",
+              "note": "Gen 12:1 quoted: “Go out from your land and from your kindred (ἐκ τῆς συγγενείας σου)”."
+            },
+            {
+              "ref": "Luk.1.61",
+              "note": "“There is no one among your kindred who is called by this name.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֶרֶץ",
+            "note": "“Land”, beside it: “my land and my kindred”.",
+            "evidence": [
+              {
+                "ref": "Num.10.30",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.12.1"
+              },
+              {
+                "ref": "Gen.24.4"
+              }
+            ]
+          },
+          {
+            "lemma": "בֵּית אָב",
+            "note": "“Father's house”, the nearer circle within the kindred.",
+            "evidence": [
+              {
+                "ref": "Gen.12.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.24.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֶרֶץ מוֹלֶדֶת",
+            "gloss": "land of one's birth",
+            "evidence": [
+              {
+                "ref": "Gen.11.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.24.7"
+              },
+              {
+                "ref": "Rut.2.11"
+              },
+              {
+                "ref": "Jer.22.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יָלִיד",
+      "pos": "adjective",
+      "gloss": "born (in a house or of a stock); home-born slave",
+      "bdb": [
+        "j.bn.ah"
+      ],
+      "cognate_ids": [
+        "ar-walid",
+        "arc-yelid"
+      ],
+      "summary": "One born into something: a slave born in his master's house rather than bought, and “those born of” the giant Anak and Rapha.",
+      "senses": [
+        {
+          "id": "home-born",
+          "gloss": "born in the house, home-born slave",
+          "definition": "In יְלִיד בַּיִת, a servant born in the household, set against one “bought with money”.",
+          "evidence": [
+            {
+              "ref": "Gen.17.12",
+              "role": "defining",
+              "note": "To be circumcised: “one born in the house (יְלִיד בָּיִת) and one bought with money from any foreigner”; Gen 17:13, 23, 27."
+            },
+            {
+              "ref": "Gen.17.13"
+            },
+            {
+              "ref": "Gen.14.14",
+              "note": "Abram's 318 trained men, “born in his house”."
+            },
+            {
+              "ref": "Lev.22.11",
+              "role": "defining",
+              "note": "A priest's slave, bought or “born in his house”, may eat of the holy things."
+            },
+            {
+              "ref": "Jer.2.14",
+              "role": "defining",
+              "note": "“Is Israel a servant? Is he a home-born slave? Why has he become a prey?”"
+            }
+          ]
+        },
+        {
+          "gloss": "born of, descendant (of the Anakim and Rephaim)",
+          "definition": "The descendants of a giant ancestor.",
+          "evidence": [
+            {
+              "ref": "Num.13.22",
+              "role": "defining",
+              "note": "“Ahiman, Sheshai and Talmai, those born of Anak (יְלִידֵי הָעֲנָק)”; Num 13:28."
+            },
+            {
+              "ref": "Jos.15.14"
+            },
+            {
+              "ref": "2Sa.21.16",
+              "role": "defining",
+              "note": "Ishbi-benob, “of those born of the Rapha”; 2Sa 21:18; 1Ch 20:4."
+            },
+            {
+              "ref": "1Ch.20.4"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מִקְנַת כֶּסֶף",
+            "note": "“Bought with money”, the slave not born in the house.",
+            "evidence": [
+              {
+                "ref": "Gen.17.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.17.13"
+              },
+              {
+                "ref": "Lev.22.11"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יְלִיד בַּיִת",
+            "gloss": "born in the house",
+            "evidence": [
+              {
+                "ref": "Gen.17.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.2.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יִלּוֹד",
+      "pos": "adjective",
+      "gloss": "born, newborn",
+      "bdb": [
+        "j.bn.af"
+      ],
+      "cognate_ids": [
+        "ar-walid"
+      ],
+      "summary": "A verbal adjective, “born”: the newborn sons Pharaoh ordered thrown into the river, the generation born in the wilderness, David's sons.",
+      "senses": [
+        {
+          "gloss": "born, newborn",
+          "definition": "One born, of a newborn child or of those born in a certain place or time.",
+          "evidence": [
+            {
+              "ref": "Exo.1.22",
+              "role": "defining",
+              "note": "Pharaoh: “Every son that is born (הַיִּלּוֹד) you shall cast into the river.”"
+            },
+            {
+              "ref": "Jos.5.5",
+              "role": "defining",
+              "note": "“All the people born (הַיִּלֹּדִים) in the wilderness on the way” had not been circumcised."
+            },
+            {
+              "ref": "2Sa.12.14",
+              "note": "“The son born to you will surely die.”"
+            },
+            {
+              "ref": "2Sa.5.14",
+              "note": "“The names of those born to him in Jerusalem.”"
+            },
+            {
+              "ref": "Jer.16.3",
+              "note": "“The sons and daughters born (הַיִּלּוֹדִים) in this place.”"
+            }
+          ],
+          "kin": [
+            "be-born"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַלְדָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "girl, young woman",
+      "bdb": [
+        "j.bn.ad"
+      ],
+      "cognate_ids": [
+        "ar-walad"
+      ],
+      "summary": "The feminine of יֶלֶד; three uses.",
+      "senses": [
+        {
+          "gloss": "girl, young woman",
+          "definition": "A girl, from a playing child to a maiden of marriageable age.",
+          "evidence": [
+            {
+              "ref": "Gen.34.4",
+              "role": "defining",
+              "note": "Shechem of Dinah: “Get me this girl (הַיַּלְדָּה) for a wife.”"
+            },
+            {
+              "ref": "Jol.4.3",
+              "role": "defining",
+              "note": "“They gave a boy (הַיֶּלֶד) for a harlot, and sold a girl (הַיַּלְדָּה) for wine.”"
+            },
+            {
+              "ref": "Zec.8.5",
+              "note": "“Boys and girls (וִילָדוֹת) playing in its streets.”"
+            }
+          ],
+          "kin": [
+            "child"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַלְדוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "youth, childhood",
+      "bdb": [
+        "j.bn.ae"
+      ],
+      "summary": "The time of being a יֶלֶד: youth.",
+      "senses": [
+        {
+          "gloss": "youth, the days of youth",
+          "definition": "The time of youth, with its strength and freshness, which passes quickly.",
+          "evidence": [
+            {
+              "ref": "Ecc.11.9",
+              "role": "defining",
+              "note": "“Rejoice, young man, in your youth (בְּיַלְדוּתֶיךָ) … but know that for all these God will bring you into judgment.”"
+            },
+            {
+              "ref": "Ecc.11.10",
+              "role": "defining",
+              "note": "“Youth (הַיַּלְדוּת) and the dawn of life are vapour.”"
+            },
+            {
+              "ref": "Psa.110.3",
+              "note": "To the king at Yahweh's right hand: “from the womb of the dawn, yours is the dew of your youth (יַלְדֻתֶיךָ)”."
+            }
+          ],
+          "kin": [
+            "young-man"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "νεότης",
+          "gloss": "youth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ecc.11.9, יַלְדוּתֶיךָ → νεότητί; νεότης renders יַלְדוּת ×2"
+            },
+            {
+              "ref": "1Ti.4.12",
+              "note": "“Let no one despise your youth (νεότητος).”"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-wuludiyya"
+      ]
+    },
+    {
+      "lemma": "וָלָד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "child, offspring",
+      "bdb": [
+        "j.bn.ab",
+        "f.ac.ad"
+      ],
+      "cognate_ids": [
+        "ar-walad",
+        "arc-walad"
+      ],
+      "summary": "Once, keeping the root's older first letter w (as Arabic walad and Jewish Aramaic וָלָד): Sarai had no child.",
+      "senses": [
+        {
+          "gloss": "child",
+          "definition": "A child born to a woman.",
+          "evidence": [
+            {
+              "ref": "Gen.11.30",
+              "role": "defining",
+              "note": "“Sarai was barren (עֲקָרָה); she had no child (וָלָד).”"
+            }
+          ],
+          "kin": [
+            "child"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְלֵד",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "bear; beget; (ethpeel) be born",
+      "summary": "The Peshitta's ܝܠܕ (yled), about 120 times: peal “bear”, aphel “beget” in Matthew's genealogy, and ethpeel “be born”, used of Jesus' birth and of being born of God.",
+      "cognate_ids": [
+        "ar-walada",
+        "arc-yeled"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "bear, give birth; beget",
+          "senses": [
+            {
+              "id": "peshitta-bear",
+              "gloss": "bear; beget",
+              "definition": "A woman bearing a child, and once God's begetting of believers by his word.",
+              "evidence": [
+                {
+                  "ref": "Mat.1.21",
+                  "role": "defining",
+                  "note": "Peshitta: “she will bear (תִּאלַד) a son, and you will call his name Jesus”."
+                },
+                {
+                  "ref": "Mat.1.23",
+                  "note": "Isa 7:14 in the Peshitta."
+                },
+                {
+                  "ref": "Luk.1.13",
+                  "note": "“Elizabeth your wife will bear you a son.”"
+                },
+                {
+                  "ref": "Luk.1.57"
+                },
+                {
+                  "ref": "Gal.4.27",
+                  "note": "Isa 54:1: “barren one who did not bear”."
+                },
+                {
+                  "ref": "Jas.1.18",
+                  "role": "defining",
+                  "note": "Peshitta: “He willed and begot us (וְיַלְדַּן) by the word of truth.”"
+                },
+                {
+                  "ref": "Phm.1.10",
+                  "note": "“My son, whom I begot (יֵלדֵּת) in my bonds, Onesimus.”"
+                },
+                {
+                  "ref": "Rev.12.5"
+                }
+              ],
+              "kin": [
+                "bear",
+                "zion-bears"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "beget",
+          "senses": [
+            {
+              "id": "peshitta-beget",
+              "gloss": "beget",
+              "definition": "A father begetting a son; and God begetting believers anew.",
+              "evidence": [
+                {
+                  "ref": "Mat.1.2",
+                  "role": "defining",
+                  "note": "Peshitta: “Abraham begot (אַולֵד) Isaac”, through to Mat 1:16, “Jacob begot Joseph, the husband of Mary”."
+                },
+                {
+                  "ref": "Mat.1.16"
+                },
+                {
+                  "ref": "Act.7.8",
+                  "note": "“Abraham begot Isaac and circumcised him on the eighth day.”"
+                },
+                {
+                  "ref": "1Pe.1.3",
+                  "role": "defining",
+                  "note": "Peshitta: God “begot us (אַולדַן) anew by the resurrection of Jesus Christ”."
+                }
+              ],
+              "kin": [
+                "beget"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be born",
+          "senses": [
+            {
+              "id": "peshitta-be-born",
+              "gloss": "be born",
+              "definition": "Of Jesus' birth, of men born blind or after the flesh, and of being born of God, of water and spirit.",
+              "evidence": [
+                {
+                  "ref": "Mat.1.16",
+                  "role": "defining",
+                  "note": "Peshitta: Mary, “of whom was born (אֵתִילֵד) Jesus who is called Messiah”."
+                },
+                {
+                  "ref": "Mat.2.4",
+                  "note": "“Where the Messiah would be born”, answered from Mic 5:1 (Mat 2:6)."
+                },
+                {
+                  "ref": "Luk.1.35",
+                  "role": "defining",
+                  "note": "“Therefore he who is born (דּמֵתִילֵד) of you is holy, and will be called the Son of God.”"
+                },
+                {
+                  "ref": "Luk.2.11",
+                  "note": "“To you is born today a saviour.”"
+                },
+                {
+                  "ref": "Jhn.3.3",
+                  "role": "defining",
+                  "note": "“Unless a man is born (מֵתִילֵד) from the beginning, he cannot see the kingdom of God”; Jhn 3:5 “born of water and the spirit”."
+                },
+                {
+                  "ref": "Jhn.3.5"
+                },
+                {
+                  "ref": "Jhn.1.13",
+                  "note": "“Who were born (אֵתִילֵדו), not of blood … but of God.”"
+                },
+                {
+                  "ref": "1Pe.1.23",
+                  "role": "defining",
+                  "note": "“Born (אֵתִילֵדּתֻּון) anew, not of corruptible seed but of incorruptible, by the living word of God.”"
+                },
+                {
+                  "ref": "Jhn.9.2",
+                  "note": "“That he was born blind.”"
+                },
+                {
+                  "ref": "Gal.4.29",
+                  "note": "“He who was born after the flesh persecuted him who was born after the spirit.”"
+                }
+              ],
+              "kin": [
+                "be-born",
+                "was-born"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַלְדָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "birth; birthday; offspring, brood; fruit",
+      "summary": "The Peshitta's ܝܠܕܐ (yaldā), what is born: a birth, the day of one's birth, a brood, and the fruit of the vine.",
+      "cognate_ids": [
+        "arc-walad"
+      ],
+      "senses": [
+        {
+          "gloss": "birth; birthday",
+          "definition": "The birth of a child, and in “the house of his birth” a king's birthday feast.",
+          "evidence": [
+            {
+              "ref": "Mat.1.18",
+              "role": "defining",
+              "note": "Peshitta: “The birth (יַלדֵּה) of Jesus the Messiah was thus.”"
+            },
+            {
+              "ref": "Mat.14.6",
+              "role": "defining",
+              "note": "“When it was Herod's birthday (בֵּית יַלדֵּה)”, as Pharaoh's feast on “the day of his being born” (Gen 40:20); also Mrk 6:21."
+            },
+            {
+              "ref": "Mrk.6.21"
+            }
+          ],
+          "kin": [
+            "birthday"
+          ]
+        },
+        {
+          "gloss": "offspring, brood; fruit (of the vine)",
+          "definition": "What a creature or plant brings forth.",
+          "evidence": [
+            {
+              "ref": "Mat.3.7",
+              "role": "defining",
+              "note": "John to the Pharisees and Sadducees: “brood (יַלדָּא) of vipers”."
+            },
+            {
+              "ref": "Mat.26.29",
+              "role": "defining",
+              "note": "“I will not drink from now on of this fruit (יַלדָּא) of the vine until that day when I drink it new with you in the kingdom of my Father.”"
+            },
+            {
+              "ref": "Mrk.14.25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַלּוּדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "infant, babe, child",
+      "summary": "The Peshitta's ܝܠܘܕܐ (yallūdā), for νήπιος: a young child, and the believer as one newly born.",
+      "cognate_ids": [
+        "arc-walad"
+      ],
+      "senses": [
+        {
+          "gloss": "infant, child",
+          "definition": "A young child, and the immature in understanding; the newborn longing for milk.",
+          "evidence": [
+            {
+              "ref": "1Co.13.11",
+              "role": "defining",
+              "note": "Peshitta: “When I was a child (יַלֻודָא), I spoke as a child, … when I became a man I put away the things of the child.”"
+            },
+            {
+              "ref": "1Pe.2.2",
+              "role": "defining",
+              "note": "“Be like newborn infants (יַלֻודֵא), longing for the word as for pure milk.”"
+            },
+            {
+              "ref": "Mat.11.25",
+              "note": "“You have revealed them to infants.”"
+            },
+            {
+              "ref": "1Co.3.1"
+            },
+            {
+              "ref": "Eph.4.14"
+            }
+          ],
+          "kin": [
+            "child"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְלִידָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "one born, son",
+      "summary": "The Peshitta's ܝܠܝܕܐ (ilīdā), in “those born of women”, Job's יְלוּד אִשָּׁה.",
+      "cognate_ids": [
+        "arc-yelid"
+      ],
+      "senses": [
+        {
+          "gloss": "one born (of women)",
+          "definition": "Those born, as men are born of women.",
+          "evidence": [
+            {
+              "ref": "Mat.11.11",
+              "role": "defining",
+              "note": "Peshitta: “there has not arisen among those born (בִּילִידַי) of women one greater than John”; also Luk 7:28."
+            },
+            {
+              "ref": "Luk.7.28"
+            }
+          ],
+          "kin": [
+            "born-of-woman"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְלִידוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "birth, descent, genealogy",
+      "summary": "The Peshitta's ܝܠܝܕܘܬܐ (ilīdūtā), once, opening Matthew's Gospel as תּוֹלְדֹת opens Gen 5:1.",
+      "senses": [
+        {
+          "gloss": "genealogy, descent",
+          "definition": "The account of a man's birth and descent.",
+          "evidence": [
+            {
+              "ref": "Mat.1.1",
+              "role": "defining",
+              "note": "Peshitta: “The book of the descent (דִּילִידֻותֵה) of Jesus the Messiah, the son of David, the son of Abraham.”"
+            }
+          ],
+          "kin": [
+            "generations"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַולָדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "birth",
+      "summary": "The Peshitta's ܡܘܠܕܐ (mawlādā), the same formation as Hebrew מוֹלֶדֶת and Arabic mawlid.",
+      "cognate_ids": [
+        "ar-mawlid"
+      ],
+      "senses": [
+        {
+          "gloss": "birth; new birth",
+          "definition": "A child's birth, and the new birth of the washing God saves by.",
+          "evidence": [
+            {
+              "ref": "Luk.1.14",
+              "role": "defining",
+              "note": "Peshitta: of John, “many will rejoice at his birth (בּמַולָדֵה)”."
+            },
+            {
+              "ref": "Tit.3.5",
+              "role": "defining",
+              "note": "“Not by works of righteousness that we did, but by his mercy he gave us life by the washing of the birth (דּמַולָדָא) from the beginning, and the renewing of the holy spirit.”"
+            }
+          ],
+          "kin": [
+            "native-land"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָלוּדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "parent, begetter",
+      "summary": "The Peshitta's ܝܠܘܕܐ (yālūdā), the active noun “begetter”, once.",
+      "senses": [
+        {
+          "gloss": "begetter",
+          "definition": "The one who begets: God, as the Father of those born of him.",
+          "evidence": [
+            {
+              "ref": "1Jn.5.1",
+              "role": "defining",
+              "note": "Peshitta: “Everyone who believes that Jesus is the Messiah is born (יִלִיד) of God, and everyone who loves the begetter (ליָלֻודָא) loves also him who is born of him.”"
+            }
+          ],
+          "kin": [
+            "god-begets"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-walada",
+      "lang": "ar",
+      "form": "وَلَدَ",
+      "translit": "walada",
+      "gloss": "bear (of a woman or animal); beget (of a man); II assist in birth, act as midwife; IV be about to bear",
+      "relation": "cognate",
+      "note": "The same verb with the older w- that Hebrew has turned to y- at the start of the word (Hebrew keeps it once, in וָלָד). Form II “act as midwife” matches the piel מְיַלֶּדֶת.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2966, root ولد, وَلَدَتْ (n42343)",
+          "note": "“She … brought forth a child, or young one … Also, ولَدَ … He begot a child”; figuratively, “the nights are pregnant: it is not known what they will bring forth” (compare Pro 27:1)."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2966, root ولد, ولّدها (n42344)",
+          "note": "Form II “He assisted her … in bringing forth; delivered her of her child …: he acted as a midwife to her”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*wld [birth] V: arabic walada, hebrew yalad, ugaritic yld, punic yld, akkadian walādu, geez walada"
+        }
+      ]
+    },
+    {
+      "id": "ar-walad",
+      "lang": "ar",
+      "form": "وَلَدٌ",
+      "translit": "walad",
+      "gloss": "child, son, daughter, young one; children, offspring",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2966, root ولد, وَلَدٌ (n42352)",
+          "note": "“A child, son, daughter, youngling, or young one; and children, sons, daughters, offspring, young … of any kind: [often applied to an unborn child]”."
+        }
+      ]
+    },
+    {
+      "id": "ar-walid",
+      "lang": "ar",
+      "form": "وَلِيدٌ",
+      "translit": "walīd",
+      "gloss": "newborn child; boy, youthful servant; slave born among the family",
+      "relation": "cognate",
+      "note": "The same pattern as יָלִיד, and with the same use of a slave born in the household.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2966, root ولد, وَلِيدٌ (n42356)",
+          "note": "“A new-born child … A boy … a youthful servant … a slave”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2967, root ولد, مُوَلَّدٌ (n42365)",
+          "note": "A slave-boy or girl born among the Arabs, “as also وَلِيدٌ … or one born at thine own abode, or home”."
+        }
+      ]
+    },
+    {
+      "id": "ar-mawlid",
+      "lang": "ar",
+      "form": "مَوْلِدٌ",
+      "translit": "mawlid",
+      "gloss": "place of birth; time of birth",
+      "relation": "cognate",
+      "note": "The same m-prefix noun as מוֹלֶדֶת, with the same sense of the land one was born in.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2967, root ولد, مَوْلِدٌ (n42361)",
+          "note": "“The place of birth of a man.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2967, root ولد, مِيلَادٌ (n42363)",
+          "note": "“The time of birth … of a man; as also مَوْلِدٌ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-wuludiyya",
+      "lang": "ar",
+      "form": "وُلُودِيَّةٌ",
+      "translit": "wulūdiyya",
+      "gloss": "infancy, boyhood, girlhood: the state of a walīd",
+      "relation": "cognate",
+      "note": "An abstract noun of the root for the time of being a child, as יַלְדוּת is.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2967, root ولد, وُلُودِيَّةٌ (n42358)",
+          "note": "“Infancy: boyhood; girlhood: the state of a وليد or وليدة.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-waladu",
+      "lang": "akk",
+      "form": "walādu",
+      "translit": "walādu (alādu)",
+      "gloss": "give birth (to), beget; be born; create",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000006450, walādu [give birth (to)] V",
+          "note": "“be born; be created; begetting; create; engender; give birth (to)”, ×370."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000084280, wālidu [one who begets] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-lidu",
+      "lang": "akk",
+      "form": "līdu",
+      "translit": "līdu",
+      "gloss": "child, offspring",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000027030, līdu [child] N",
+          "note": "“child; offspring”."
+        }
+      ]
+    },
+    {
+      "id": "akk-talittu",
+      "lang": "akk",
+      "form": "tālittu",
+      "translit": "tālittu",
+      "gloss": "offspring; birth, offspring of animals",
+      "relation": "cognate",
+      "note": "A t-prefix noun of the root, as תּוֹלֵדוֹת is, meaning what is born.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000143360, tālittu [offspring] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000031180, tālittu [offspring of animals] N",
+          "note": "“birth; offspring of animals”."
+        }
+      ]
+    },
+    {
+      "id": "uga-yld-verb",
+      "lang": "uga",
+      "form": "𐎊𐎍𐎄",
+      "translit": "yld",
+      "gloss": "bear; (Gp) be born",
+      "relation": "cognate",
+      "note": "Ugaritic has both y-ld and, once, w-ld.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 188, §93 Glossary, /y-l-d/ (KTU 1.23:53; 1.10:III:35)",
+          "note": "“to bear” (H. yalad, Arab. walada, Akkad. (w)aladu); Gp yld /yulida/ “to be born” (cf. H. yullad, Isa 9:5)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 185, §93 Glossary, /w-l-d/ (KTU 1.14:III:48)",
+          "note": "wld “is born” or “bearing, birth”; cf. /y-l-d/."
+        }
+      ]
+    },
+    {
+      "id": "uga-yld-noun",
+      "lang": "uga",
+      "form": "𐎊𐎍𐎄",
+      "translit": "yld",
+      "gloss": "child, boy",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 188, §93 Glossary, yld",
+          "note": "“child, boy” (H. yælæd; cf. Arab. walad)."
+        }
+      ]
+    },
+    {
+      "id": "phn-yld-verb",
+      "lang": "phn",
+      "form": "𐤉𐤋𐤃",
+      "translit": "yld",
+      "gloss": "(qal) bear children; (yiphil) sire",
+      "relation": "cognate",
+      "note": "The yiphil “sire a son” is the Phoenician of the Hebrew hiphil הוֹלִיד.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 207, Y-L-D I",
+          "note": "“v. qal BEAR CHILDREN, KAI 26 A III 9/11 (Ph) wbrbm yld, ‘May they bear many children’ … v. yiphʿil SIRE a son, RES 535 (Ph)” (the translation of RES 535 marked problematic)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*wld [birth] V: punic yld [bear]"
+        }
+      ]
+    },
+    {
+      "id": "phn-yld-noun",
+      "lang": "phn",
+      "form": "𐤉𐤋𐤃",
+      "translit": "yld",
+      "gloss": "child, young son",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 207, YLD",
+          "note": "“[Heb. yeled, yalīd, yillōd] n.m. CHILD, YOUNG SON, NP 130.3 (NPu)”."
+        }
+      ]
+    },
+    {
+      "id": "sab-wld",
+      "lang": "sem",
+      "form": "𐩥𐩡𐩵",
+      "translit": "wld",
+      "gloss": "(Sabaean) bear a child, pass. be born, causative beget; wld child, son; mwld childbirth",
+      "relation": "cognate",
+      "note": "Sabaean has the verb in all three voices the Hebrew has (bear, be born, beget), the noun “child”, and an m-prefix noun mwld “delivery”, beside מוֹלֶדֶת.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 130–131, WLD",
+          "note": "“v … BEAR a child; pass BE BORN [Ar walada]”; h “BEGET”; n wld “CHILD; SON [Ar walad]”; n mwld “CHILDBIRTH, DELIVERY [Ar mīlād ‘time of birth’]”."
+        }
+      ]
+    },
+    {
+      "id": "arc-yeled",
+      "lang": "arc",
+      "form": "יְלֵד",
+      "translit": "yəlēd",
+      "gloss": "bear; beget (Jewish Aramaic)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יְלֵד (יְלֵיד, יְלִיד)",
+          "note": "“to bear; to beget. Targ. Gen. IV, 1 … Targ. Prov. XXIII, 22 יַלְדָּךְ who begot thee.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-yelid",
+      "lang": "arc",
+      "form": "יְלִיד",
+      "translit": "yəlīd",
+      "gloss": "born; home-born (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targum keeps it in Gen 17:12 for יְלִיד בַּיִת, and in Job 15:14 for יְלוּד אִשָּׁה.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יְלִיד (ch.)",
+          "note": "“Targ. O. Gen. XVII, 12, sq.—Targ. Job XV, 14 … Fem. יְלִידָא. Targ. O. Lev. XVIII, 9.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-walad",
+      "lang": "arc",
+      "form": "וָלָד",
+      "translit": "wālād",
+      "gloss": "child, infant; young of an animal; offspring (Jewish Aramaic and later Hebrew)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. וָלָד",
+          "note": "“child, infant; young of an animal; offspring; embryo”; וַלְדָּא the same, Targ. Gen. XI, 30 (for Hebrew וָלָד)."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "begotten-son",
+      "statement": "Psa 2:7 names a day on which Yahweh begot his son: “today I have begotten you”. Paul applies it to God raising up Jesus (Act 13:33), and Hebrews to the name he has, above the angels, and to his appointment as high priest (Heb 1:5; 5:5). Gabriel gives the ground of the title at his conception: the holy spirit would come upon Mary, “therefore” the one born of her would be called the Son of God (Luk 1:35), and what was begotten in her was of the holy spirit (Mat 1:20). A son who is begotten has a beginning: Jesus is the Son of God because God begot him of Mary, and declared him so by raising him from the dead (Rom 1:4), not as a son who existed before he was born.",
+      "evidence": [
+        {
+          "ref": "Psa.2.7"
+        },
+        {
+          "ref": "Act.13.33"
+        },
+        {
+          "ref": "Heb.1.5"
+        },
+        {
+          "ref": "Heb.5.5"
+        },
+        {
+          "ref": "Luk.1.35"
+        },
+        {
+          "ref": "Mat.1.20"
+        },
+        {
+          "ref": "Rom.1.4"
+        }
+      ]
+    },
+    {
+      "topic": "messiah-born",
+      "statement": "The prophets speak of the deliverer as one to be born of a woman: the young woman who “is with child and bearing a son” whose name is God-with-us (Isa 7:14), the “child born to us, son given to us” who bears the government (Isa 9:5–6), the ruler from Bethlehem whose people are given up “until she who is bearing has borne” (Mic 5:1–2). Matthew reads Isa 7:14 of Mary bearing Jesus (Mat 1:23), and the scribes answer from Micah where the Messiah would be born (Mat 2:4–6). His birth of a woman is what makes him the seed of the woman and a son of Adam and of David, of the same flesh and blood as the children (Gen 3:15; Heb 2:13–14).",
+      "evidence": [
+        {
+          "ref": "Isa.7.14"
+        },
+        {
+          "ref": "Isa.9.5"
+        },
+        {
+          "ref": "Mic.5.2"
+        },
+        {
+          "ref": "Mat.1.23"
+        },
+        {
+          "ref": "Mat.2.6"
+        },
+        {
+          "ref": "Gen.3.15"
+        },
+        {
+          "ref": "Heb.2.14"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "“Man born of woman is short of days and full of trouble; he comes up like a flower and is cut off” (Job 14:1–2). Being born of a woman is, in Job, the reason man cannot be clean or righteous before God (Job 15:14; 25:4), and the Preacher sets “a time to bear” against “a time to die” (Ecc 3:2). What is born of woman is mortal by birth, sharing the nature that came from Adam after his sin (Gen 3:16–19; Gen 5:3).",
+      "evidence": [
+        {
+          "ref": "Job.14.1"
+        },
+        {
+          "ref": "Job.14.2"
+        },
+        {
+          "ref": "Job.15.14"
+        },
+        {
+          "ref": "Job.25.4"
+        },
+        {
+          "ref": "Ecc.3.2"
+        },
+        {
+          "ref": "Gen.5.3"
+        }
+      ]
+    },
+    {
+      "topic": "new-birth",
+      "statement": "Scripture speaks of a people being born to God: Israel was begotten by the Rock (Deu 32:18), a nation is born at once when Zion travails (Isa 66:8), and Yahweh registers men of the nations as born in Zion (Psa 87:4–6). Paul calls the Jerusalem above the mother of believers, the barren woman of Isa 54:1 (Gal 4:26–27). In the Peshitta the same root carries Jesus' words, “unless a man is born of water and spirit he cannot enter the kingdom of God” (Jhn 3:5), and the apostles' teaching that God begets believers “by the word of truth” and the “living word of God” (Jas 1:18; 1Pe 1:23). The new birth is God's work, through his word, by which those born of a woman become his children.",
+      "evidence": [
+        {
+          "ref": "Deu.32.18"
+        },
+        {
+          "ref": "Isa.66.8"
+        },
+        {
+          "ref": "Psa.87.5"
+        },
+        {
+          "ref": "Gal.4.26"
+        },
+        {
+          "ref": "Gal.4.27"
+        },
+        {
+          "ref": "Jhn.3.5"
+        },
+        {
+          "ref": "Jas.1.18"
+        },
+        {
+          "ref": "1Pe.1.23"
+        }
+      ]
+    },
+    {
+      "topic": "genealogy-chronology",
+      "statement": "The hiphil's genealogies give each father's age when he begot the next (Gen 5:3–32; 11:10–26), so they leave no gap in the years: Noah was born 1,056 years after Adam was created, the flood came in Noah's six hundredth year (Gen 7:6, 11), 1,656 years from creation, and the count runs on from Shem to Abram. Scripture's own record of births therefore dates man's history from a creation a few thousand years ago, and the New Testament follows the same line of begetting from Adam to Jesus (Luk 3:23–38; Mat 1:1–17).",
+      "evidence": [
+        {
+          "ref": "Gen.5.3"
+        },
+        {
+          "ref": "Gen.5.32"
+        },
+        {
+          "ref": "Gen.7.6"
+        },
+        {
+          "ref": "Gen.11.10"
+        },
+        {
+          "ref": "Gen.11.26"
+        },
+        {
+          "ref": "Luk.3.38"
+        },
+        {
+          "ref": "Mat.1.17"
+        }
+      ]
+    }
+  ],
+  "note": "Root key ילד, as the corpus keys it. Left out, for name entries: יָלוֹן Jalon (1Ch 4:17, j.bn.ag) and מוֹלִיד Molid (1Ch 2:29, j.bn.ak), people not assigned to this task; מוֹלָדָה Moladah (j.bn.aj), תּוֹלָד Tolad (j.bn.am) and אֶלְתּוֹלַד Eltolad, places; אֲחִילוּד Ahilud is filed elsewhere. BDB's cross-reference keys m.az.ac (מוֹלָדָה … see ילד) and w.aj.ai (תּוֹלָד … see ילד) have no tokens and also cover the place names, so they are not claimed; l.al.ah (לֵדָה, the qal infinitive) is put on the verb and f.ac.ad (וֶלֶד) on וָלָד. The brief's “qal passive” tokens (Jdg 13:8, Jer 20:14) are cited under the pual. Ge'ez walada / wald (Dillmann, Leslau) not yet checked by column or page: add when a copy is to hand. Peshitta verse refs were found through SEDRA lexemes 1371–1376 and 3534 (ܝܠܕ, ܝܠܕܐ, ܝܠܘܕܐ ×2, ܝܠܝܕܘܬܐ, ܡܘܠܕܐ, ܝܠܝܕܐ); not every one of their uses is cited. The Septuagint of Gen 12:1 (συγγένεια) is not aligned in MACULA, so the Greek συγγένεια rests on Act 7:3's quotation only."
+}
