@@ -1,0 +1,968 @@
+{
+  "id": "tesha",
+  "root": "תשע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "number",
+    "time",
+    "feasts",
+    "calendar"
+  ],
+  "gloss": "nine; ninety; ninth",
+  "summary": "תשע is the number nine: תֵּשַׁע “nine” (masculine form תִּשְׁעָה), its plural תִּשְׁעִים “ninety”, and the ordinal תְּשִׁיעִי “ninth”. Scripture sets nine between ten and eight (the bulls of the feast, Num 29:23–29; one in ten to Jerusalem and nine parts in the other cities, Neh 11:1) and uses it in counts, ages and dates: the ninth of the seventh month at evening begins יוֹם הַכִּפֻּרִים, “from evening to evening” (Lev 23:32), and the ninth day of the fourth month is the day Jerusalem’s wall was broken (Jer 39:2). Arabic tisʿ, Ugaritic tšʿ, Akkadian tiše, Sabaean ts¹ʿ, Phoenician tšʿ, Aramaic תְּשַׁע and Ge’ez təsʿu all mean “nine”; the Peshitta’s תְּשַׁע gives the New Testament’s “ninth hour”, the hour of prayer at which Christ died.",
+  "words": [
+    {
+      "lemma": "תֵּשַׁע",
+      "pos": "numeral",
+      "gender": "mf",
+      "gloss": "nine; (in compounds) nineteen, twenty-nine, nine hundred; (of a date) the ninth",
+      "summary": "The cardinal: תֵּשַׁע with feminine nouns, תִּשְׁעָה (construct תִּשְׁעַת) with masculine. With עָשָׂר / עֶשְׂרֵה it is nineteen, after the tens it is the unit (twenty-nine, ninety-nine), and with מֵאוֹת nine hundred. Like the other numbers it also gives a day or year by count: “on the ninth of the month” (בְּתִשְׁעָה לַחֹדֶשׁ), “year nine of Hoshea” (שְׁנַת תֵּשַׁע).",
+      "bdb": [
+        "w.bq.bn"
+      ],
+      "cognate_ids": [
+        "ar-tis",
+        "uga-ts",
+        "akk-tise",
+        "sab-ts",
+        "phn-ts",
+        "arc-tesha",
+        "gez-tesu"
+      ],
+      "senses": [
+        {
+          "id": "nine",
+          "gloss": "nine",
+          "definition": "The number nine: one short of ten, one more than eight.",
+          "evidence": [
+            {
+              "ref": "Num.29.26",
+              "role": "defining",
+              "note": "On the fifth day of חַג הַסֻּכּוֹת, “nine (תִּשְׁעָה) bulls”: the bulls fall by one each day, thirteen, twelve, eleven, ten (29:13–23), then nine, then eight on the sixth day (29:29)."
+            },
+            {
+              "ref": "Neh.11.1",
+              "role": "defining",
+              "note": "Lots were cast “to bring one of ten to dwell in Jerusalem, the holy city, and nine parts (וְתֵשַׁע הַיָּדוֹת) in the cities”: nine is ten less one."
+            },
+            {
+              "ref": "Num.34.13",
+              "role": "defining",
+              "note": "The land is for “the nine tribes and the half tribe” (לְתִשְׁעַת הַמַּטּוֹת וַחֲצִי הַמַּטֶּה), the two and a half having taken theirs beyond the Jordan (34:14–15): nine and a half of twelve."
+            },
+            {
+              "ref": "Jos.13.7",
+              "note": "“Divide this land for an inheritance to the nine tribes and the half tribe of Manasseh.”"
+            },
+            {
+              "ref": "Jos.14.2"
+            },
+            {
+              "ref": "Deu.3.11",
+              "note": "Og’s bed of iron, the last of the Rephaim, was nine (תֵּשַׁע) cubits long and four wide."
+            },
+            {
+              "ref": "2Sa.24.8",
+              "note": "Joab’s census took “nine months and twenty days”."
+            },
+            {
+              "ref": "2Ki.17.1",
+              "note": "Hoshea reigned over Israel in Samaria nine years, the last of its kings."
+            },
+            {
+              "ref": "1Ch.3.8",
+              "note": "David’s sons born in Jerusalem, counted: “nine (תִּשְׁעָה)”."
+            },
+            {
+              "ref": "Jos.15.44",
+              "note": "“Nine cities with their villages” in the lowland of Judah."
+            },
+            {
+              "ref": "Jos.21.16",
+              "note": "Nine cities given to the priests out of Judah and Simeon."
+            }
+          ],
+          "senses": [
+            {
+              "id": "nine-compounds",
+              "gloss": "nineteen; twenty-nine, ninety-nine; nine hundred",
+              "definition": "Joined to ten it is nineteen; after a ten it is the unit; with hundreds or thousands, nine hundred or nine thousand.",
+              "evidence": [
+                {
+                  "ref": "2Sa.2.30",
+                  "role": "defining",
+                  "note": "Of David’s servants “nineteen (תִּשְׁעָה־עָשָׂר) men and Asahel” were missing."
+                },
+                {
+                  "ref": "Gen.17.1",
+                  "role": "defining",
+                  "note": "“Abram was ninety-nine (תִּשְׁעִים שָׁנָה וְתֵשַׁע שָׁנִים) years old”, and in 17:17 he says, “Shall a son be born to one a hundred years old?”"
+                },
+                {
+                  "ref": "Gen.17.24",
+                  "note": "Abraham was ninety-nine years old when he was circumcised."
+                },
+                {
+                  "ref": "Jdg.4.3",
+                  "role": "defining",
+                  "note": "Jabin had “nine hundred (תְּשַׁע מֵאוֹת) chariots of iron” and oppressed Israel twenty years."
+                },
+                {
+                  "ref": "Jdg.4.13"
+                },
+                {
+                  "ref": "Gen.5.5",
+                  "note": "“All the days of Adam that he lived were nine hundred and thirty years, and he died.”"
+                },
+                {
+                  "ref": "Gen.5.27",
+                  "note": "Methuselah’s nine hundred and sixty-nine years, the longest life recorded."
+                },
+                {
+                  "ref": "Gen.9.29",
+                  "note": "All the days of Noah were nine hundred and fifty years."
+                },
+                {
+                  "ref": "Gen.11.24",
+                  "note": "Nahor lived twenty-nine years and fathered Terah."
+                },
+                {
+                  "ref": "Exo.38.24",
+                  "note": "The gold of the sanctuary: twenty-nine talents and seven hundred and thirty shekels."
+                },
+                {
+                  "ref": "Num.1.23",
+                  "note": "The numbered of Simeon: fifty-nine thousand three hundred."
+                },
+                {
+                  "ref": "Lev.25.8",
+                  "note": "Seven sabbaths of years make “forty-nine (תֵּשַׁע וְאַרְבָּעִים) years”, and the fiftieth is the jubilee (25:10)."
+                },
+                {
+                  "ref": "Jos.19.38",
+                  "note": "Nineteen cities of Naphtali."
+                },
+                {
+                  "ref": "2Ki.14.2",
+                  "note": "Amaziah reigned twenty-nine years in Jerusalem."
+                },
+                {
+                  "ref": "2Ki.18.2",
+                  "note": "Hezekiah reigned twenty-nine years in Jerusalem."
+                },
+                {
+                  "ref": "Ezr.2.42",
+                  "note": "The gatekeepers who returned: a hundred and thirty-nine."
+                }
+              ]
+            },
+            {
+              "id": "ninth-by-count",
+              "gloss": "(of a day or year) the ninth",
+              "definition": "Like the other numbers, the cardinal names a day of the month or a year of a reign by its count: “on nine of the month”, “year nine”. Its sense is the ordinal’s.",
+              "kin": [
+                "ninth"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.23.32",
+                  "role": "defining",
+                  "note": "יוֹם הַכִּפֻּרִים is the tenth of the seventh month (23:27), and Israel keeps it “on the ninth of the month at evening (בְּתִשְׁעָה לַחֹדֶשׁ בָּעֶרֶב), from evening to evening”: the tenth begins as the ninth ends."
+                },
+                {
+                  "ref": "2Ki.18.10",
+                  "role": "defining",
+                  "note": "“In the sixth year of Hezekiah, that is the year nine (שְׁנַת תֵּשַׁע) of Hoshea king of Israel, Samaria was taken”; 17:6 says the same with the ordinal, בִּשְׁנַת הַתְּשִׁיעִית."
+                },
+                {
+                  "ref": "2Ki.25.3",
+                  "note": "“On the ninth of the month the famine was severe in the city.”"
+                },
+                {
+                  "ref": "Jer.39.2",
+                  "role": "defining",
+                  "note": "“In the eleventh year of Zedekiah, in the fourth month, on the ninth of the month, the city was broken into.”"
+                },
+                {
+                  "ref": "Jer.52.6"
+                },
+                {
+                  "ref": "2Ki.25.8",
+                  "note": "“The nineteenth year (שְׁנַת תְּשַׁע־עֶשְׂרֵה שָׁנָה) of king Nebuchadnezzar”, when the house of Yahweh was burnt."
+                },
+                {
+                  "ref": "2Ki.15.13",
+                  "note": "Shallum reigned “in the thirty-ninth year of Uzziah”."
+                },
+                {
+                  "ref": "2Ch.16.12",
+                  "note": "In the thirty-ninth year of his reign Asa was diseased in his feet, and did not seek Yahweh."
+                },
+                {
+                  "ref": "1Ch.24.16",
+                  "note": "“For Pethahiah the nineteenth”: the cardinal in a list of ordinals."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐννέα",
+          "gloss": "nine",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ἐννέα renders תֵּשַׁע ×25 (Gen.17.1, Num.29.26, Num.34.13, Deu.3.11, Neh.11.1 and the rest); ἐννακόσια, nine hundred, ×3 (Gen.5.8, 5.11, 5.14)"
+            },
+            {
+              "ref": "Luk.17.17",
+              "note": "“Were not the ten cleansed? But where are the nine?” Nine of ten, as in Neh 11:1."
+            },
+            {
+              "ref": "Mat.18.12",
+              "note": "The ninety-nine (ἐννενηκονταεννέα) left on the mountains for the one that went astray."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בְּתִשְׁעָה לַחֹדֶשׁ בָּעֶרֶב",
+            "gloss": "on the ninth of the month at evening",
+            "evidence": [
+              {
+                "ref": "Lev.23.32",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "תִּשְׁעַת הַמַּטּוֹת וַחֲצִי הַמַּטֶּה",
+            "gloss": "the nine tribes and the half tribe",
+            "evidence": [
+              {
+                "ref": "Num.34.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.14.2"
+              },
+              {
+                "ref": "Jos.13.7",
+                "note": "With שְׁבָטִים: לְתִשְׁעַת הַשְּׁבָטִים וַחֲצִי הַשֵּׁבֶט."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תִּשְׁעִים",
+      "pos": "numeral",
+      "gloss": "ninety",
+      "summary": "The plural of nine, ninety, as the other tens are plurals of their units. Alone it is ninety; with a unit, ninety-five, ninety-eight; after hundreds, three hundred and ninety, a thousand two hundred and ninety.",
+      "bdb": [
+        "w.bq.bp"
+      ],
+      "cognate_ids": [
+        "ar-tisun",
+        "uga-tsm",
+        "sab-ts",
+        "phn-tsm"
+      ],
+      "senses": [
+        {
+          "id": "ninety",
+          "gloss": "ninety",
+          "definition": "The number ninety, nine tens.",
+          "evidence": [
+            {
+              "ref": "Gen.17.17",
+              "role": "defining",
+              "note": "“Shall a child be born to one a hundred years old? And shall Sarah, who is ninety (תִּשְׁעִים) years old, bear?” Sarah’s ninety set beside Abraham’s hundred."
+            },
+            {
+              "ref": "Jer.52.23",
+              "role": "defining",
+              "note": "“Ninety-six (תִּשְׁעִים וְשִׁשָּׁה) pomegranates on the sides; all the pomegranates were a hundred round the network”: ninety-six of a hundred."
+            },
+            {
+              "ref": "Gen.5.9",
+              "note": "Enosh lived ninety years and fathered Kenan."
+            },
+            {
+              "ref": "Gen.17.1",
+              "note": "Abram ninety-nine years old when Yahweh appeared to him."
+            },
+            {
+              "ref": "1Sa.4.15",
+              "note": "“Eli was ninety-eight years old, and his eyes were set so that he could not see.”"
+            },
+            {
+              "ref": "Ezr.8.35",
+              "note": "The returned exiles offered ninety-six rams for all Israel."
+            },
+            {
+              "ref": "Ezr.2.16",
+              "note": "The sons of Ater, of Hezekiah, ninety-eight."
+            },
+            {
+              "ref": "Ezk.41.12",
+              "note": "The building on the west side of the house was ninety cubits long."
+            },
+            {
+              "ref": "Ezk.4.5",
+              "role": "defining",
+              "note": "“I have laid on you the years of their iniquity by the number of days, three hundred and ninety (שְׁלֹשׁ־מֵאוֹת וְתִשְׁעִים) days”: a day for each year (4:6)."
+            },
+            {
+              "ref": "Ezk.4.9",
+              "note": "The bread Ezekiel eats through the same three hundred and ninety days."
+            },
+            {
+              "ref": "Dan.12.11",
+              "note": "From the taking away of the continual and the setting up of the abomination that makes desolate, “a thousand two hundred and ninety days”."
+            },
+            {
+              "ref": "1Ch.9.6",
+              "note": "The sons of Zerah in Jerusalem, six hundred and ninety."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐνενήκοντα",
+          "gloss": "ninety",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ἐνενήκοντα renders תִּשְׁעִים ×15 (Gen.5.9, Gen.17.17, 1Sa.4.15, Jer.52.23, Ezk.4.9, Dan.12.11 and the rest)"
+            },
+            {
+              "ref": "Mat.18.12",
+              "note": "“Does he not leave the ninety-nine and go into the mountains to seek the one that went astray?”"
+            },
+            {
+              "ref": "Mat.18.13"
+            },
+            {
+              "ref": "Luk.15.4",
+              "note": "The man with a hundred sheep who loses one leaves the ninety-nine in the wilderness."
+            },
+            {
+              "ref": "Luk.15.7",
+              "note": "More joy in heaven over one sinner who repents than over ninety-nine righteous who need no repentance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּשִׁיעִי",
+      "pos": "adjective",
+      "gloss": "ninth",
+      "summary": "The ordinal, formed from nine with -ִי as the ordinals five to ten are; feminine תְּשִׁיעִית. It names the ninth day, month or year, and the ninth in a list of divisions. Scripture has no “ninth part” from this root.",
+      "bdb": [
+        "w.bq.bo"
+      ],
+      "cognate_ids": [
+        "ar-tasi",
+        "akk-tisu",
+        "sab-ts"
+      ],
+      "senses": [
+        {
+          "id": "ninth",
+          "gloss": "ninth (in order)",
+          "definition": "The ninth in a sequence: the day after the eighth, the month after the eighth, the year after the eighth, the ninth of a set of divisions.",
+          "evidence": [
+            {
+              "ref": "Num.7.60",
+              "role": "defining",
+              "note": "“On the ninth day (בַּיּוֹם הַתְּשִׁיעִי)” the leader of Benjamin brought his offering, after the leader of Manasseh on the eighth (7:54) and before the leader of Dan on the tenth (7:66)."
+            },
+            {
+              "ref": "Lev.25.22",
+              "role": "defining",
+              "note": "After the sabbath year, “you shall sow the eighth year and eat of the old produce until the ninth year (הַשָּׁנָה הַתְּשִׁיעִת)”: the year after the eighth."
+            },
+            {
+              "ref": "1Ch.27.12",
+              "role": "defining",
+              "note": "“The ninth, for the ninth month, Abiezer the Anathothite”: the ninth of twelve monthly courses of David’s army."
+            },
+            {
+              "ref": "1Ch.12.13",
+              "note": "Of the Gadites who came to David, “Johanan the eighth, Elzabad the ninth”."
+            },
+            {
+              "ref": "1Ch.24.11",
+              "note": "The ninth lot of the priests’ courses fell to Jeshua."
+            },
+            {
+              "ref": "1Ch.25.16",
+              "note": "The ninth lot of the singers, to Mattaniah."
+            },
+            {
+              "ref": "Rev.21.20",
+              "note": "The ninth foundation of the city, topaz (ἔνατος); the Peshitta’s תְּשַׁע with דְּ."
+            }
+          ],
+          "senses": [
+            {
+              "id": "ninth-month",
+              "gloss": "the ninth month (כִּסְלֵו)",
+              "definition": "The ninth month of the year counted from the month of the Passover, a month of winter and rain, named כִּסְלֵו in Zechariah.",
+              "evidence": [
+                {
+                  "ref": "Zec.7.1",
+                  "role": "defining",
+                  "note": "“On the fourth of the ninth month, in כִּסְלֵו (Kislev)”."
+                },
+                {
+                  "ref": "Jer.36.22",
+                  "role": "defining",
+                  "note": "“The king was sitting in the winter house in the ninth month, with a fire burning in the brazier before him”, as he burnt Jeremiah’s scroll."
+                },
+                {
+                  "ref": "Ezr.10.9",
+                  "role": "defining",
+                  "note": "“It was the ninth month, on the twentieth of the month”, and the people sat trembling “because of the heavy rain”."
+                },
+                {
+                  "ref": "Jer.36.9",
+                  "note": "A fast proclaimed before Yahweh in the ninth month of Jehoiakim’s fifth year."
+                },
+                {
+                  "ref": "Hag.2.10",
+                  "note": "“On the twenty-fourth of the ninth”, the word of Yahweh to Haggai."
+                },
+                {
+                  "ref": "Hag.2.18",
+                  "note": "“From the twenty-fourth day of the ninth, from the day the foundation of Yahweh’s temple was laid, consider.”"
+                }
+              ]
+            },
+            {
+              "id": "ninth-year",
+              "gloss": "the ninth year (of a reign)",
+              "definition": "The ninth year of a king’s reign, by which scripture dates the fall of Samaria and the beginning of the siege of Jerusalem.",
+              "evidence": [
+                {
+                  "ref": "2Ki.17.6",
+                  "role": "defining",
+                  "note": "“In the ninth year of Hoshea the king of Assyria took Samaria and carried Israel away to Assyria.”"
+                },
+                {
+                  "ref": "2Ki.25.1",
+                  "role": "defining",
+                  "note": "“In the ninth year of his reign, in the tenth month, on the tenth of the month”, Nebuchadnezzar came against Jerusalem and built siege works around it."
+                },
+                {
+                  "ref": "Jer.39.1"
+                },
+                {
+                  "ref": "Jer.52.4"
+                },
+                {
+                  "ref": "Ezk.24.1",
+                  "note": "“In the ninth year, in the tenth month, on the tenth of the month” the word of Yahweh came to Ezekiel in exile: the same day."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔνατος",
+          "gloss": "ninth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ἔνατος (spelled ἔννατος) renders תְּשִׁיעִי ×17 (Num.7.60, Lev.25.22, 2Ki.17.6, Jer.36.9, Hag.2.10, Zec.7.1 and the rest), and תֵּשַׁע of a date ×6 (Lev.23.32, 2Ki.18.10, 2Ki.25.3, Jer.39.2, 2Ki.15.13, 2Ki.15.17)"
+            },
+            {
+              "ref": "Mat.27.46",
+              "note": "“About the ninth hour Jesus cried with a loud voice.”"
+            },
+            {
+              "ref": "Act.3.1",
+              "note": "Peter and John went up to the temple “at the hour of prayer, the ninth”."
+            },
+            {
+              "ref": "Act.10.30",
+              "note": "Cornelius: “at the ninth hour I was praying in my house”."
+            },
+            {
+              "ref": "Rev.21.20",
+              "note": "The ninth foundation, topaz."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּשַׁע",
+      "lang": "syc",
+      "pos": "numeral",
+      "gloss": "nine; (with דְּ, or of the hour) ninth",
+      "summary": "The Peshitta’s nine: feminine תְּשַׁע, masculine תֶּשְׁעָא. With the relative דְּ, or standing for the hour, it gives the ninth, above all the ninth hour of the day.",
+      "cognate_ids": [
+        "arc-tesha",
+        "ar-tis",
+        "uga-ts"
+      ],
+      "senses": [
+        {
+          "gloss": "nine",
+          "definition": "The number nine, alone and in ninety-nine.",
+          "kin": [
+            "nine",
+            "nine-compounds"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.17.17",
+              "role": "defining",
+              "note": "“Were not ten cleansed? Where are the nine (תֶּשְׁעָא)?”"
+            },
+            {
+              "ref": "Mat.18.12",
+              "note": "תֶּשְׁעִין וְתֶשְׁעָא, the ninety-nine."
+            },
+            {
+              "ref": "Luk.15.4"
+            },
+            {
+              "ref": "Luk.15.7"
+            }
+          ]
+        },
+        {
+          "gloss": "ninth; the ninth hour",
+          "definition": "The ninth in order, and above all the ninth hour of the day, the hour of prayer (Act 3:1), at which Christ died.",
+          "kin": [
+            "ninth"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.3.1",
+              "role": "defining",
+              "note": "Peter and John went up to the temple “at the time of prayer, of the ninth (דְּתְשַׁע) hour”."
+            },
+            {
+              "ref": "Mat.27.45",
+              "role": "defining",
+              "note": "“From the sixth hour there was darkness over all the land until the ninth hour.”"
+            },
+            {
+              "ref": "Mat.27.46",
+              "note": "“About the ninth hour Jesus cried with a loud voice”, and gave up his spirit (27:50)."
+            },
+            {
+              "ref": "Mrk.15.33"
+            },
+            {
+              "ref": "Mrk.15.34"
+            },
+            {
+              "ref": "Luk.23.44"
+            },
+            {
+              "ref": "Mat.20.5",
+              "note": "The householder went out again about the sixth and the ninth hour to hire labourers."
+            },
+            {
+              "ref": "Act.10.3",
+              "note": "Cornelius saw an angel “about the ninth hour of the day”."
+            },
+            {
+              "ref": "Act.10.30"
+            },
+            {
+              "ref": "Rev.21.20",
+              "note": "The ninth foundation, topaz."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תֶּשְׁעִין",
+      "lang": "syc",
+      "pos": "numeral",
+      "gloss": "ninety",
+      "summary": "The Peshitta’s ninety, used in the New Testament only in “ninety-nine”.",
+      "cognate_ids": [
+        "ar-tisun",
+        "uga-tsm"
+      ],
+      "senses": [
+        {
+          "gloss": "ninety",
+          "definition": "The number ninety; in the New Testament the ninety-nine sheep left for the one that strayed.",
+          "kin": [
+            "ninety"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.18.12",
+              "role": "defining",
+              "note": "“Does he not leave the ninety-nine (תֶּשְׁעִין וְתֶשְׁעָא) on the mountains?”"
+            },
+            {
+              "ref": "Mat.18.13"
+            },
+            {
+              "ref": "Luk.15.4"
+            },
+            {
+              "ref": "Luk.15.7",
+              "note": "Joy in heaven over one sinner who repents, more than over ninety-nine righteous."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-tis",
+      "lang": "ar",
+      "form": "تِسْعَة، تِسْع",
+      "translit": "tisʿa, tisʿ",
+      "gloss": "nine",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "note": "Arabic س answers to Hebrew ש where the older sound is š (ṯ would be ث), and ع is ʿ, not غ ġ. Masculine تِسْعَة with feminine nouns and تِسْع with masculine, as Hebrew תִּשְׁעָה / תֵּשַׁע. The verb تَسَعَ “take the ninth part; become the ninth of them” and تُسْع “a ninth part” have no Hebrew counterpart in scripture.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 306, root تسع, تِسْعَةٌ (n3935)",
+          "note": "“applied to denote a number, [namely Nine,] is masc.; and تِسْعٌ, so applied, is fem. … تِسْعَةُ رِجَالٍ [Nine men], and تِسْعٌ نِسْوَةٍ [Nine women].”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 306, root تسع, اتسعوا (n3929)",
+          "note": "“They became nine … and they became ninety.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-tisun",
+      "lang": "ar",
+      "form": "تِسْعُونَ",
+      "translit": "tisʿūna",
+      "gloss": "ninety; ninetieth",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 307, root تسع, تِسْعُونَ (n3936)",
+          "note": "“[Ninety: and ninetieth.]”"
+        }
+      ]
+    },
+    {
+      "id": "ar-tasi",
+      "lang": "ar",
+      "form": "تَاسِع",
+      "translit": "tāsiʿ",
+      "gloss": "ninth",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 307, root تسع, تَاسِعٌ (n3939)",
+          "note": "“[Making to be nine with himself, or itself: and hence, ninth]. … هُوَ تَاسِعُ تِسْعَةٍ [He is the ninth of nine].”"
+        }
+      ]
+    },
+    {
+      "id": "uga-ts",
+      "lang": "uga",
+      "form": "𐎚𐎌𐎓، 𐎚𐎌𐎓𐎚",
+      "translit": "tšʿ, tšʿt",
+      "gloss": "nine",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "note": "Ugaritic writes š and ṯ, and ʿ and ġ, with different signs: nine is tšʿ, with š and ʿ.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 53, §53.2–53.3, the numerals: “9” tšʿ, tšʿt",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“9” /tišʿ(at)-/ “(cf. Arab. tisʿ, H. tēšaʿ < *tišʿ-)”. Read from the OCR text, which is badly garbled here; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "uga-tsm",
+      "lang": "uga",
+      "form": "𐎚𐎌𐎓𐎎",
+      "translit": "tšʿm",
+      "gloss": "ninety",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, tšʿm",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "tšʿm “90” “(H. tišʿîm, Arab. tisʿūna)”; also in the numeral table, p. 53. Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "akk-tise",
+      "lang": "akk",
+      "form": "tiše",
+      "translit": "tiše, tišīt",
+      "gloss": "nine",
+      "relation": "cognate",
+      "note": "Akkadian writes old š and ṯ alike and loses ʿ, so it shows neither sound.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000031420, tiše [nine] NU",
+          "note": "Forms tišêt, tišīt, tiše, tēši."
+        }
+      ]
+    },
+    {
+      "id": "akk-tisu",
+      "lang": "akk",
+      "form": "tišû",
+      "translit": "tišû",
+      "gloss": "ninth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000128510, tišû [ninth] AJ"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000078070, tišû [ninth] NU",
+          "note": "Meanings: ninth; one-ninth."
+        }
+      ]
+    },
+    {
+      "id": "sab-ts",
+      "lang": "sem",
+      "form": "𐩩𐩪𐩲، 𐩩𐩪𐩲𐩩، 𐩩𐩪𐩲𐩬، 𐩩𐩪𐩲𐩺",
+      "translit": "ts¹ʿ, ts¹ʿt; ts¹ʿn; ts¹ʿy",
+      "gloss": "nine; ninth; ninety",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "note": "Sabaean, which keeps s¹ (old š) apart from ṯ, and ʿ apart from ġ. Cardinal f. ts¹ʿ, m. ts¹ʿt; ordinal ts¹ʿn “ninth”; ts¹ʿy “ninety”.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 535, TS¹ʿ (cardinal number nine; ninth; ninety)",
+          "note": "R3104/3–4 bywm ts¹ʿm “on the ninth day (lit. Day Nine)” of the month; J735/5 “the ninth (year of his eponymate)”; J577/15 sbʿ w-ts¹ʿy “ninety-seven wells”. Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "phn-ts",
+      "lang": "phn",
+      "form": "𐤕𐤔𐤏، 𐤕𐤔𐤏𐤕",
+      "translit": "tšʿ, tšʿt",
+      "gloss": "nine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 499, TŠʿ, masc. TŠʿT, num. NINE",
+          "note": "EH 61.3/4 (Punic) “on the nineteenth of the month of Iyyar”; KAI 130.2 (Neo-Punic) “eighty denars and nine quadrans”. Read from the text extraction; check the page."
+        }
+      ]
+    },
+    {
+      "id": "phn-tsm",
+      "lang": "phn",
+      "form": "𐤕𐤔𐤏𐤌",
+      "translit": "tšʿm",
+      "gloss": "ninety",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 499, TŠʿM, num. NINETY",
+          "note": "Neo-Punic epitaphs: “she lived ninety-one years”, “she lived ninety-seven years”."
+        }
+      ]
+    },
+    {
+      "id": "arc-tesha",
+      "lang": "arc",
+      "form": "תְּשַׁע، תִּשְׁעָא",
+      "translit": "təšaʿ, tišʿā",
+      "gloss": "nine; (תְּשַׁע עֲשַׂר) nineteen",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The Targums’ Aramaic. Aramaic writes old ṯ as ת, so its ש shows that nine had š.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּשַׁע (ch.), תִּשְׁעָא",
+          "note": "Targ. Gen. V, 5; Targ. Num. I, 23; Targ. II Kings XXV, 3; תְּשַׁע עֲשַׂר nineteen, Targ. Gen. XI, 25."
+        }
+      ]
+    },
+    {
+      "id": "gez-tesu",
+      "lang": "gez",
+      "form": "ትስዑ، ተስዐቱ",
+      "translit": "təsʿu, täsʿätu",
+      "gloss": "nine",
+      "relation": "cognate",
+      "note": "Ge’ez writes old ʿ and ġ alike (ዐ) and old š and ṯ alike (ስ), so it shows neither sound. Not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ትስዑ (təsʿu); ተስዐቱ (täsʿätu)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "reckoning-of-days",
+      "statement": "יוֹם הַכִּפֻּרִים falls “on the tenth day of this seventh month” (Lev 23:27), yet Israel is told to keep it “on the ninth of the month at evening, from evening to evening” (Lev 23:32). The tenth day therefore begins at the evening that ends the ninth, as each day of creation is “evening and morning” (Gen 1:5). The Gospels reckon the same way: Christ’s body was laid in the tomb as “evening had come, because it was the preparation, the day before the sabbath” and “the sabbath was drawing on” (Mar 15:42; Luk 23:54). In scripture a day runs from evening to evening.",
+      "evidence": [
+        {
+          "ref": "Lev.23.27"
+        },
+        {
+          "ref": "Lev.23.32"
+        },
+        {
+          "ref": "Gen.1.5"
+        },
+        {
+          "ref": "Mrk.15.42"
+        },
+        {
+          "ref": "Luk.23.54"
+        }
+      ]
+    },
+    {
+      "topic": "foreknowledge",
+      "statement": "“In the ninth year, in the tenth month, on the tenth of the month” the word of Yahweh came to Ezekiel among the exiles in Babylon: “Son of man, write the name of the day, this very day: the king of Babylon has laid siege to Jerusalem this very day” (Ezk 24:1–2). The histories of Judah record that it was “in the ninth year of his reign, in the tenth month, on the tenth of the month” that Nebuchadnezzar came against Jerusalem and built siege works around it (2Ki 25:1; Jer 52:4). A prophet hundreds of miles away was told the day as it happened, and wrote it down: Yahweh knows and declares what is done, and his word through the prophets is shown true by the event (Deu 18:22; Isa 46:9–10).",
+      "evidence": [
+        {
+          "ref": "Ezk.24.1",
+          "to": "Ezk.24.2"
+        },
+        {
+          "ref": "2Ki.25.1"
+        },
+        {
+          "ref": "Jer.52.4"
+        },
+        {
+          "ref": "Deu.18.22"
+        },
+        {
+          "ref": "Isa.46.9",
+          "to": "Isa.46.10"
+        }
+      ]
+    },
+    {
+      "topic": "provision",
+      "statement": "Israel was to leave the land unsown in the seventh year. To the question “What shall we eat in the seventh year?” Yahweh answers, “I will command my blessing on you in the sixth year, and it shall bring forth produce for three years; and you shall sow the eighth year and eat of the old produce until the ninth year (הַשָּׁנָה הַתְּשִׁיעִת)” (Lev 25:20–22). Obedience to the sabbath of the land was not left to the people’s own reserves: one year’s harvest, given by Yahweh, was to carry them to the ninth. Jesus teaches the same trust: “Seek first the kingdom of God and his righteousness, and all these things shall be added to you” (Mat 6:31–33).",
+      "evidence": [
+        {
+          "ref": "Lev.25.20",
+          "to": "Lev.25.22"
+        },
+        {
+          "ref": "Mat.6.31",
+          "to": "Mat.6.33"
+        }
+      ]
+    },
+    {
+      "topic": "the-ninth-hour",
+      "statement": "The ninth hour of the day was “the hour of prayer” at the temple (Act 3:1), and Cornelius was praying at it when he was told his prayers had “come up for a memorial before God” (Act 10:3–4, 30–31). Scripture sets prayer at the time of the evening offering (1Ki 18:36; Ezr 9:5; Dan 9:21; Psa 141:2). From the sixth hour there was darkness over the land “until the ninth hour”, and “about the ninth hour Jesus cried with a loud voice” and gave up his spirit (Mat 27:45–46, 50; Mar 15:33–37; Luk 23:44–46). So Christ died at the hour when Israel prayed and the evening offering was made: the offering that those daily offerings looked to (Heb 10:10–12).",
+      "evidence": [
+        {
+          "ref": "Act.3.1"
+        },
+        {
+          "ref": "Act.10.3",
+          "to": "Act.10.4"
+        },
+        {
+          "ref": "Act.10.30",
+          "to": "Act.10.31"
+        },
+        {
+          "ref": "1Ki.18.36"
+        },
+        {
+          "ref": "Ezr.9.5"
+        },
+        {
+          "ref": "Dan.9.21"
+        },
+        {
+          "ref": "Psa.141.2"
+        },
+        {
+          "ref": "Mat.27.45",
+          "to": "Mat.27.46"
+        },
+        {
+          "ref": "Mat.27.50"
+        },
+        {
+          "ref": "Mrk.15.33",
+          "to": "Mrk.15.37"
+        },
+        {
+          "ref": "Luk.23.44",
+          "to": "Luk.23.46"
+        },
+        {
+          "ref": "Heb.10.10",
+          "to": "Heb.10.12"
+        }
+      ]
+    }
+  ],
+  "note": "Root key תשע: the database files the three words under root key תקפ (BDB w.bq.bn תֵּשַׁע, w.bq.bo תְּשִׁיעִי, w.bq.bp תִּשְׁעִים), lumped with the other words at the end of BDB’s ת section by page order; the entry takes the words’ own consonants, as bad.json does for linen. BDB’s תֵּשַׁע key also holds the date uses (Lev 23:32, 2Ki 25:3, Jer 39:2, 52:6, 2Ki 18:10), given here as a sense of the cardinal with kin to the ordinal. No Biblical Aramaic word for nine. Sounds: Arabic, Ugaritic and Sabaean show š and ʿ; Aramaic ש rules out ṯ; no cognate shows ṯ or ġ, so no split. Segert p. 53 and p. 204 and Biella p. 535 were read from the OCR text only (Segert’s numeral table is badly garbled); Krahmalkov p. 499 from the text extraction; check the page images. Ge’ez is from Wiktionary only; check Dillmann and Leslau. SEDRA lexeme 3455 (TWE;N, root 2002 TWE) glosses ninety also “lot; portion”, which no New Testament verse shows; not recorded. SEDRA lexeme 3454 TWE “nine”. Lane’s تُسْع “a ninth part” and the verb “take the ninth part” are not named on any word: scripture’s feminine תְּשִׁיעִית is only the ordinal. The doctrine “the-ninth-hour” ties the hour of prayer (Act 3:1) to the time of the evening offering by the verses that set prayer at that offering; scripture does not itself name the ninth hour as the hour of the offering. Not written: any doctrine from nine as a number in itself, or a reading of Dan 12:11’s 1290 days; scripture draws neither from this word."
+}
