@@ -1,0 +1,2557 @@
+{
+  "id": "saphar",
+  "root": "ספר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "counting",
+    "number",
+    "writing",
+    "scripture",
+    "speech",
+    "praise",
+    "feasts",
+    "judgment"
+  ],
+  "gloss": "count; recount, tell; writing, letter, book; scribe; number",
+  "summary": "The verb in the qal is to count, item by item: the stars, the days of cleansing, the fifty days from the עֹמֶר to the new grain offering (Gen 15:5; Lev 15:28; 23:15–16); in the piel it is to tell over, recount in order, above all Yahweh's works to the next generation (Psa 78:3–6). סֵפֶר is a writing: a letter, a deed or bill of divorce, a scroll or book, the book of the law, the book God keeps of the living, and the skill of writing itself (2Sa 11:14; Deu 24:1; 31:24–26; Exo 32:32–33; Isa 29:11–12). סֹפֵר is the one who counts and writes, the king's scribe, the muster officer, and Ezra the scribe of the law; מִסְפָּר is number, “without number” and “men of number”, few. Ugaritic and Phoenician use spr in the same senses, count, document, scribe and number.",
+  "words": [
+    {
+      "lemma": "סֵפֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "writing; letter, document; scroll, book; letters, learning",
+      "bdb": [
+        "o.ck.aa"
+      ],
+      "cognate_ids": [
+        "uga-sipr",
+        "phn-spr",
+        "arc-sipra",
+        "akk-sipru",
+        "ar-sifr"
+      ],
+      "summary": "Anything written: a letter sent, a legal document, a scroll or book, and the art of reading and writing. Nearly two hundred uses, from Exodus to Chronicles; the law is “this book”, and God has a book of his own.",
+      "senses": [
+        {
+          "id": "letter",
+          "gloss": "letter, written message",
+          "definition": "A written message sent by a messenger from one person to another, sealed and read by the one it is addressed to.",
+          "cognate_ids": [
+            "akk-shipru"
+          ],
+          "evidence": [
+            {
+              "ref": "2Sa.11.14",
+              "role": "defining",
+              "note": "David writes a סֵפֶר to Joab and sends it by the hand of Uriah; its words are given in the next verse."
+            },
+            {
+              "ref": "2Sa.11.15"
+            },
+            {
+              "ref": "1Ki.21.8",
+              "role": "defining",
+              "note": "Jezebel writes סְפָרִים in Ahab's name, seals them with his seal and sends them to the elders of Jezreel."
+            },
+            {
+              "ref": "2Ki.5.6",
+              "note": "The king of Aram's letter to the king of Israel: “when this סֵפֶר comes to you…”."
+            },
+            {
+              "ref": "2Ki.5.7",
+              "note": "The king of Israel reads the סֵפֶר and tears his clothes."
+            },
+            {
+              "ref": "2Ki.19.14",
+              "role": "defining",
+              "note": "Hezekiah takes the סְפָרִים from the messengers, reads them, and spreads them before Yahweh. Also Isa 37:14."
+            },
+            {
+              "ref": "2Ki.10.1"
+            },
+            {
+              "ref": "2Ki.20.12",
+              "note": "Merodach-baladan sends סְפָרִים and a present to Hezekiah. Also Isa 39:1."
+            },
+            {
+              "ref": "Jer.29.1",
+              "role": "defining",
+              "note": "“These are the words of the סֵפֶר that Jeremiah the prophet sent from Jerusalem” to the exiles."
+            },
+            {
+              "ref": "Jer.29.25"
+            },
+            {
+              "ref": "Est.3.13",
+              "note": "Haman's decree is sent by the couriers as סְפָרִים to all the king's provinces."
+            },
+            {
+              "ref": "Est.9.20",
+              "note": "Mordecai sends סְפָרִים to all the Jews to keep Purim."
+            }
+          ]
+        },
+        {
+          "id": "deed",
+          "gloss": "legal document: deed, bill of divorce",
+          "definition": "A written instrument with legal force: the deed of purchase, sealed and witnessed, and the bill of divorce a husband writes and puts in his wife's hand.",
+          "evidence": [
+            {
+              "ref": "Deu.24.1",
+              "role": "defining",
+              "note": "“He shall write her a סֵפֶר כְּרִיתֻת, put it in her hand, and send her out of his house.” Also 24:3."
+            },
+            {
+              "ref": "Deu.24.3"
+            },
+            {
+              "ref": "Isa.50.1",
+              "role": "defining",
+              "note": "“Where is your mother's סֵפֶר כְּרִיתוּת, with which I sent her away?”"
+            },
+            {
+              "ref": "Jer.3.8",
+              "note": "Yahweh gave backsliding Israel “her סֵפֶר כְּרִיתֻתֶיהָ”."
+            },
+            {
+              "ref": "Jer.32.10",
+              "role": "defining",
+              "note": "Jeremiah writes the deed of the field at Anathoth, seals it, calls witnesses and weighs the silver."
+            },
+            {
+              "ref": "Jer.32.11",
+              "note": "“The סֵפֶר הַמִּקְנָה, the sealed one … and the open one.”"
+            },
+            {
+              "ref": "Jer.32.14",
+              "note": "The deeds put in an earthen vessel to last many days."
+            },
+            {
+              "ref": "Jer.32.44",
+              "note": "“Fields shall be bought for silver, and deeds written and sealed”: the promise of return."
+            }
+          ]
+        },
+        {
+          "id": "book",
+          "gloss": "scroll, book",
+          "definition": "A written scroll of some length kept to be read again: a record, a collection of songs or accounts, the chronicles of the kings, a prophet's words.",
+          "evidence": [
+            {
+              "ref": "Exo.17.14",
+              "role": "defining",
+              "note": "“Write this as a memorial בַּסֵּפֶר and rehearse it in Joshua's ears”: writing to keep what is said."
+            },
+            {
+              "ref": "Jer.36.2",
+              "role": "defining",
+              "note": "“Take a מְגִלַּת סֵפֶר and write on it all the words I have spoken to you”: the scroll, which Jehoiakim cuts and burns column by column (36:23)."
+            },
+            {
+              "ref": "Jer.36.4",
+              "note": "Baruch writes from Jeremiah's mouth עַל מְגִלַּת סֵפֶר."
+            },
+            {
+              "ref": "Jer.36.18",
+              "note": "“He dictated all these words to me, and I wrote them with ink on the סֵפֶר.”"
+            },
+            {
+              "ref": "Jer.30.2",
+              "note": "“Write all the words I have spoken to you in a סֵפֶר.”"
+            },
+            {
+              "ref": "Jer.51.60",
+              "note": "Jeremiah writes all the evil to come on Babylon in one סֵפֶר, which is bound to a stone and sunk in the Euphrates (51:63)."
+            },
+            {
+              "ref": "Ezk.2.9",
+              "note": "A hand stretched out with a מְגִלַּת סֵפֶר, written within and without."
+            },
+            {
+              "ref": "Isa.30.8",
+              "note": "“Write it before them on a tablet, and inscribe it in a סֵפֶר, that it may be for the time to come, for ever.”"
+            },
+            {
+              "ref": "Gen.5.1",
+              "role": "defining",
+              "note": "“This is the סֵפֶר of the generations of Adam”: a written record of descent."
+            },
+            {
+              "ref": "Num.21.14",
+              "note": "“The סֵפֶר of the wars of Yahweh”, quoted."
+            },
+            {
+              "ref": "Jos.10.13",
+              "note": "“Is it not written in the סֵפֶר הַיָּשָׁר?” Also 2Sa 1:18."
+            },
+            {
+              "ref": "1Ki.11.41",
+              "note": "“The סֵפֶר of the acts of Solomon”."
+            },
+            {
+              "ref": "1Ki.14.19",
+              "note": "“The סֵפֶר of the matters of the days of the kings of Israel”, the court chronicle cited through Kings."
+            },
+            {
+              "ref": "Est.6.1",
+              "note": "The king cannot sleep and has the סֵפֶר of records read to him, and finds Mordecai's deed (2:23)."
+            },
+            {
+              "ref": "Nam.1.1",
+              "note": "“The סֵפֶר of the vision of Nahum”."
+            },
+            {
+              "ref": "Dan.9.2",
+              "role": "defining",
+              "note": "Daniel understands “by the סְפָרִים the number of the years” of Jeremiah's seventy: prophecy read from written scrolls."
+            },
+            {
+              "ref": "Ecc.12.12",
+              "note": "“Of making many סְפָרִים there is no end.”"
+            },
+            {
+              "ref": "Isa.34.4",
+              "role": "defining",
+              "note": "“The heavens shall be rolled up כַּסֵּפֶר”: the סֵפֶר is a scroll that rolls. Quoted in Rev 6:14, ὡς βιβλίον ἑλισσόμενον."
+            },
+            {
+              "ref": "Rev.6.14",
+              "note": "“The heaven departed as a scroll rolled up.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "book-of-law",
+              "gloss": "the book of the law, of the covenant",
+              "definition": "The law Moses wrote and gave to be kept beside the ark, read to the people, copied by the king, and found again in Josiah's day.",
+              "evidence": [
+                {
+                  "ref": "Exo.24.7",
+                  "role": "defining",
+                  "note": "Moses takes “the סֵפֶר הַבְּרִית” and reads it to the people, and they say “all that Yahweh has spoken we will do”."
+                },
+                {
+                  "ref": "Deu.31.24",
+                  "role": "defining",
+                  "note": "Moses finishes writing the words of this law in a סֵפֶר to their end."
+                },
+                {
+                  "ref": "Deu.31.26",
+                  "role": "defining",
+                  "note": "“Take this סֵפֶר הַתּוֹרָה and put it beside the ark of the covenant of Yahweh your God, that it may be there as a witness against you.”"
+                },
+                {
+                  "ref": "Deu.17.18",
+                  "note": "The king is to write himself a copy of this law in a סֵפֶר and read it all his days."
+                },
+                {
+                  "ref": "Deu.28.58",
+                  "note": "“All the words of this law written in this סֵפֶר”."
+                },
+                {
+                  "ref": "Deu.29.20",
+                  "note": "The curses “written in this סֵפֶר”."
+                },
+                {
+                  "ref": "Jos.1.8",
+                  "role": "defining",
+                  "note": "“This סֵפֶר הַתּוֹרָה shall not depart out of your mouth; meditate on it day and night.”"
+                },
+                {
+                  "ref": "Jos.8.34",
+                  "note": "Joshua reads all the words of the law, the blessing and the curse, as written in the סֵפֶר הַתּוֹרָה."
+                },
+                {
+                  "ref": "2Ki.14.6",
+                  "note": "Amaziah does not kill the sons of the murderers, as written in the סֵפֶר of the law of Moses (Deu 24:16)."
+                },
+                {
+                  "ref": "2Ki.22.8",
+                  "role": "defining",
+                  "note": "Hilkiah: “I have found the סֵפֶר הַתּוֹרָה in the house of Yahweh”, and gives it to Shaphan the scribe."
+                },
+                {
+                  "ref": "2Ki.23.2",
+                  "note": "Josiah reads all the words of the סֵפֶר הַבְּרִית found in the house of Yahweh."
+                },
+                {
+                  "ref": "Neh.8.1",
+                  "note": "The people ask Ezra the scribe to bring the סֵפֶר of the law of Moses."
+                },
+                {
+                  "ref": "Neh.8.8",
+                  "role": "defining",
+                  "note": "“They read in the סֵפֶר, in the law of God, distinctly, and gave the sense, so that they understood the reading.”"
+                },
+                {
+                  "ref": "Neh.13.1",
+                  "note": "Read in the סֵפֶר of Moses, they find the Ammonite and Moabite excluded (Deu 23:4)."
+                },
+                {
+                  "ref": "2Ch.17.9",
+                  "note": "Levites teach in Judah “having the סֵפֶר of the law of Yahweh with them”."
+                },
+                {
+                  "ref": "Psa.40.8",
+                  "role": "defining",
+                  "note": "“Lo, I come; בִּמְגִלַּת סֵפֶר it is written of me.” Quoted of Christ in Heb 10:7."
+                },
+                {
+                  "ref": "Heb.10.7",
+                  "note": "“Lo, I come (in the volume of the book it is written of me) to do your will, O God.”"
+                },
+                {
+                  "ref": "Heb.9.19",
+                  "note": "Moses sprinkles “both the βιβλίον and all the people” with blood (Exo 24:7–8)."
+                }
+              ]
+            },
+            {
+              "id": "book-of-god",
+              "gloss": "God's book, of the living",
+              "definition": "The book God himself writes, of those who live before him and of the days he has ordained: to be written in it is to be kept and delivered, to be blotted out of it is to die.",
+              "evidence": [
+                {
+                  "ref": "Exo.32.32",
+                  "role": "defining",
+                  "note": "Moses: “If not, blot me, I pray, out of your סֵפֶר which you have written.”"
+                },
+                {
+                  "ref": "Exo.32.33",
+                  "role": "defining",
+                  "note": "“Whoever has sinned against me, him will I blot out of my סֵפֶר.”"
+                },
+                {
+                  "ref": "Psa.69.29",
+                  "role": "defining",
+                  "note": "“Let them be blotted out of the סֵפֶר חַיִּים, and not be written with the righteous.”"
+                },
+                {
+                  "ref": "Psa.139.16",
+                  "note": "“In your סֵפֶר all of them were written, the days that were formed, when as yet there was none of them.”"
+                },
+                {
+                  "ref": "Mal.3.16",
+                  "role": "defining",
+                  "note": "“A סֵפֶר זִכָּרוֹן was written before him for those who feared Yahweh and thought on his name.”"
+                },
+                {
+                  "ref": "Dan.12.1",
+                  "role": "defining",
+                  "note": "“At that time your people shall be delivered, everyone who is found written בַּסֵּפֶר.”"
+                },
+                {
+                  "ref": "Dan.12.4",
+                  "note": "“Shut up the words and seal the סֵפֶר until the time of the end.”"
+                },
+                {
+                  "ref": "Php.4.3",
+                  "note": "Fellow workers “whose names are in the βίβλος ζωῆς”."
+                },
+                {
+                  "ref": "Rev.3.5",
+                  "note": "“I will not blot out his name from the βίβλος of life.”"
+                },
+                {
+                  "ref": "Rev.20.12",
+                  "note": "“Books were opened, and another book was opened, which is of life; and the dead were judged out of what was written in the books, according to their works.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "letters-learning",
+          "gloss": "letters, writing; learning",
+          "definition": "Writing itself as a skill: to “know סֵפֶר” is to be able to read; to be taught סֵפֶר is to be schooled in a people's literature.",
+          "evidence": [
+            {
+              "ref": "Isa.29.11",
+              "role": "defining",
+              "note": "The vision is like a sealed scroll given to one “who knows סֵפֶר”: “I cannot, for it is sealed.”"
+            },
+            {
+              "ref": "Isa.29.12",
+              "role": "defining",
+              "note": "Given to one “who does not know סֵפֶר”: “I do not know סֵפֶר.”"
+            },
+            {
+              "ref": "Dan.1.4",
+              "role": "defining",
+              "note": "Youths chosen “to teach them the סֵפֶר and tongue of the Chaldeans”."
+            },
+            {
+              "ref": "Dan.1.17",
+              "role": "defining",
+              "note": "“God gave them knowledge and skill in all סֵפֶר and wisdom.”"
+            },
+            {
+              "ref": "Jhn.7.15",
+              "note": "“How does this man know γράμματα, having never learned?”: the Peshitta has its word for book here (ܣܦܪܐ)."
+            }
+          ],
+          "kin": [
+            "peshitta-letters"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מְגִלָּה",
+            "note": "“Roll”, joined with it as מְגִלַּת סֵפֶר, a book-roll, and used of the same scroll in Jer 36.",
+            "evidence": [
+              {
+                "ref": "Jer.36.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.36.4"
+              },
+              {
+                "ref": "Psa.40.8"
+              },
+              {
+                "ref": "Ezk.2.9"
+              }
+            ]
+          },
+          {
+            "lemma": "לוּחַ",
+            "note": "“Tablet”, beside it: write on a tablet and inscribe in a book.",
+            "evidence": [
+              {
+                "ref": "Isa.30.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "סֵפֶר הַתּוֹרָה",
+            "gloss": "the book of the law",
+            "evidence": [
+              {
+                "ref": "Deu.31.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.1.8"
+              },
+              {
+                "ref": "2Ki.22.8"
+              },
+              {
+                "ref": "Neh.8.3"
+              }
+            ]
+          },
+          {
+            "phrase": "סֵפֶר תּוֹרַת מֹשֶׁה",
+            "gloss": "the book of the law of Moses",
+            "evidence": [
+              {
+                "ref": "Jos.8.31",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.14.6"
+              },
+              {
+                "ref": "Neh.8.1"
+              }
+            ]
+          },
+          {
+            "phrase": "סֵפֶר הַבְּרִית",
+            "gloss": "the book of the covenant",
+            "evidence": [
+              {
+                "ref": "Exo.24.7",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.23.2"
+              },
+              {
+                "ref": "2Ki.23.21"
+              }
+            ]
+          },
+          {
+            "phrase": "סֵפֶר כְּרִיתֻת",
+            "gloss": "bill of divorce",
+            "evidence": [
+              {
+                "ref": "Deu.24.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.50.1"
+              },
+              {
+                "ref": "Jer.3.8"
+              }
+            ]
+          },
+          {
+            "phrase": "סֵפֶר הַמִּקְנָה",
+            "gloss": "deed of purchase",
+            "evidence": [
+              {
+                "ref": "Jer.32.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.32.12"
+              },
+              {
+                "ref": "Jer.32.14"
+              }
+            ]
+          },
+          {
+            "phrase": "מְגִלַּת סֵפֶר",
+            "gloss": "a book-roll, scroll",
+            "evidence": [
+              {
+                "ref": "Jer.36.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.40.8"
+              },
+              {
+                "ref": "Ezk.2.9"
+              }
+            ]
+          },
+          {
+            "phrase": "סֵפֶר חַיִּים",
+            "gloss": "the book of the living",
+            "evidence": [
+              {
+                "ref": "Psa.69.29",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "סֵפֶר זִכָּרוֹן",
+            "gloss": "a book of remembrance",
+            "evidence": [
+              {
+                "ref": "Mal.3.16",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "סֵפֶר דִּבְרֵי הַיָּמִים",
+            "gloss": "the book of the matters of the days, the chronicle",
+            "evidence": [
+              {
+                "ref": "1Ki.14.19",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.14.29"
+              },
+              {
+                "ref": "Est.2.23"
+              },
+              {
+                "ref": "Est.6.1"
+              }
+            ]
+          },
+          {
+            "phrase": "יֹדֵעַ סֵפֶר",
+            "gloss": "one who knows letters, can read",
+            "evidence": [
+              {
+                "ref": "Isa.29.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.29.12"
+              }
+            ]
+          },
+          {
+            "phrase": "קִרְיַת סֵפֶר",
+            "gloss": "Kiriath-sepher, “city of the book”, the older name of Debir",
+            "evidence": [
+              {
+                "ref": "Jos.15.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.15.16"
+              },
+              {
+                "ref": "Jdg.1.11"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "βιβλίον",
+          "gloss": "scroll, book; document",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.24.7, Deu.24.1, Psa.40.8, Isa.29.11, Jer.32.10, Dan.12.1, Mal.3.16: סֵפֶר → βιβλίον; βιβλίον renders סֵפֶר ×146"
+            },
+            {
+              "ref": "Mat.19.7",
+              "role": "defining",
+              "note": "“Why then did Moses command to give a βιβλίον ἀποστασίου and put her away?” (Deu 24:1). Also Mrk 10:4."
+            },
+            {
+              "ref": "Mrk.10.4"
+            },
+            {
+              "ref": "Heb.9.19",
+              "note": "The book of the covenant sprinkled (Exo 24:7)."
+            },
+            {
+              "ref": "Heb.10.7",
+              "role": "defining",
+              "note": "Psa 40:8 quoted: ἐν κεφαλίδι βιβλίου."
+            },
+            {
+              "ref": "Luk.4.17",
+              "note": "The βιβλίον of the prophet Isaiah handed to Jesus, which he unrolls and reads."
+            },
+            {
+              "ref": "Rev.6.14",
+              "note": "Isa 34:4: the heaven rolled up as a βιβλίον."
+            },
+            {
+              "ref": "Rev.5.1",
+              "note": "A βιβλίον written within and on the back, sealed with seven seals (Ezk 2:9; Isa 29:11; Dan 12:4)."
+            },
+            {
+              "ref": "Rev.20.12"
+            }
+          ]
+        },
+        {
+          "lemma": "βίβλος",
+          "gloss": "book",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.5.1, Exo.32.32, Psa.69.29: סֵפֶר → βίβλος; ×6"
+            },
+            {
+              "ref": "Mat.1.1",
+              "role": "defining",
+              "note": "“The βίβλος γενέσεως of Jesus Christ”, in the words of Gen 5:1, סֵפֶר תּוֹלְדֹת."
+            },
+            {
+              "ref": "Mrk.12.26",
+              "note": "“Have you not read in the βίβλος of Moses?”"
+            },
+            {
+              "ref": "Php.4.3",
+              "note": "The βίβλος ζωῆς (Psa 69:29)."
+            },
+            {
+              "ref": "Rev.3.5",
+              "note": "Not blotted out of the βίβλος of life (Exo 32:32–33)."
+            },
+            {
+              "ref": "Rev.20.15"
+            }
+          ]
+        },
+        {
+          "lemma": "γράμμα",
+          "gloss": "letter; writing; learning",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.29.11, Isa.29.12, Dan.1.4: סֵפֶר → γράμματα"
+            },
+            {
+              "ref": "Jhn.7.15",
+              "role": "defining",
+              "note": "“How does this man know γράμματα?”, as “know סֵפֶר” in Isa 29:11–12."
+            },
+            {
+              "ref": "Act.26.24",
+              "note": "Festus: “much γράμματα is turning you mad.”"
+            },
+            {
+              "ref": "2Ti.3.15",
+              "note": "“From a child you have known the holy γράμματα, able to make you wise to salvation.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סָפַר",
+      "pos": "verb",
+      "gloss": "count, number; recount, tell",
+      "bdb": [
+        "o.ck.ac"
+      ],
+      "cognate_ids": [
+        "uga-spr",
+        "arc-sefar",
+        "phn-mspr"
+      ],
+      "summary": "The qal and niphal count: going through things one by one to know how many, so that what “cannot be counted” is beyond number. The piel goes through words one by one: telling in order what happened, a dream, a journey, and above all Yahweh's works and praise. The database files the noun סֹפֵר under the same index as this verb, so its tokens are counted here.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "count, number; count off (days)",
+          "senses": [
+            {
+              "id": "count",
+              "gloss": "count, number",
+              "definition": "Go through a set one by one to know how many: stars, people, houses, towers, steps.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.5",
+                  "role": "defining",
+                  "note": "“Look toward heaven and count (סְפֹר) the stars, if you are able to count them… So shall your seed be.” Quoted in Rom 4:18."
+                },
+                {
+                  "ref": "Gen.41.49",
+                  "role": "defining",
+                  "note": "Joseph gathers grain like the sand of the sea, “until he stopped counting (לִסְפֹּר), for it was without number (מִסְפָּר)”."
+                },
+                {
+                  "ref": "2Sa.24.10",
+                  "role": "defining",
+                  "note": "“David's heart struck him after he had counted the people”: the census he confesses as sin. In 1Ch 21:1 an adversary (שָׂטָן) stood up against Israel and moved David to number Israel."
+                },
+                {
+                  "ref": "1Ch.21.2",
+                  "note": "“Go, count Israel from Beersheba to Dan.”"
+                },
+                {
+                  "ref": "2Ch.2.16",
+                  "note": "Solomon counts all the foreigners in the land, after the counting (סְפָר) his father had made."
+                },
+                {
+                  "ref": "2Ch.2.1"
+                },
+                {
+                  "ref": "Isa.22.10",
+                  "note": "“You counted the houses of Jerusalem, and broke down houses to fortify the wall.”"
+                },
+                {
+                  "ref": "Psa.48.13",
+                  "note": "“Walk about Zion, go round her, count her towers.”"
+                },
+                {
+                  "ref": "Ezr.1.8",
+                  "note": "Mithredath the treasurer counts out the vessels of the house of Yahweh to Sheshbazzar."
+                },
+                {
+                  "ref": "Psa.139.18",
+                  "note": "God's thoughts: “If I would count them, they are more than the sand.”"
+                },
+                {
+                  "ref": "Job.38.37",
+                  "note": "Piel: “Who can number the clouds in wisdom?”"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "count-days",
+                  "gloss": "count off days, weeks, years",
+                  "definition": "Count a set span of days or years forward from a fixed day, so that its end can be kept: the days of cleansing, the seven weeks to the fiftieth day, the seven sabbaths of years to the jubilee.",
+                  "evidence": [
+                    {
+                      "ref": "Lev.23.15",
+                      "role": "defining",
+                      "note": "“You shall count for yourselves from the morrow after the sabbath, from the day you brought the עֹמֶר of the waving: seven sabbaths, complete they shall be.”"
+                    },
+                    {
+                      "ref": "Lev.23.16",
+                      "role": "defining",
+                      "note": "“To the morrow after the seventh sabbath you shall count fifty days, and offer a new grain offering to Yahweh.”"
+                    },
+                    {
+                      "ref": "Deu.16.9",
+                      "role": "defining",
+                      "note": "“Seven weeks you shall count for yourself; from when the sickle is first put to the standing grain you shall begin to count seven weeks”, to the feast of שָׁבֻעוֹת (16:10)."
+                    },
+                    {
+                      "ref": "Lev.25.8",
+                      "role": "defining",
+                      "note": "“You shall count for yourself seven sabbaths of years, seven times seven years”, forty-nine years to the jubilee."
+                    },
+                    {
+                      "ref": "Lev.15.13",
+                      "note": "The man cleansed of his discharge “shall count for himself seven days for his cleansing”."
+                    },
+                    {
+                      "ref": "Lev.15.28",
+                      "note": "The woman: “she shall count for herself seven days, and after that she shall be clean.”"
+                    },
+                    {
+                      "ref": "Ezk.44.26",
+                      "note": "A priest defiled by the dead: “after he is cleansed, they shall count for him seven days.”"
+                    },
+                    {
+                      "ref": "Job.39.2",
+                      "note": "“Can you count the months that they fulfil?”, of the wild goats' bearing."
+                    }
+                  ]
+                },
+                {
+                  "id": "god-counts",
+                  "gloss": "(of God) count, keep account of; record",
+                  "definition": "God counting a man's steps and wanderings, and registering the peoples: knowing each one and keeping it on record.",
+                  "evidence": [
+                    {
+                      "ref": "Job.31.4",
+                      "role": "defining",
+                      "note": "“Does he not see my ways and count all my steps?”"
+                    },
+                    {
+                      "ref": "Job.14.16",
+                      "role": "defining",
+                      "note": "“Now you count my steps; do you not watch over my sin?”"
+                    },
+                    {
+                      "ref": "Psa.56.9",
+                      "role": "defining",
+                      "note": "“You have counted my wanderings; put my tears in your bottle; are they not in your book (סִפְרָתֶךָ)?”"
+                    },
+                    {
+                      "ref": "Psa.87.6",
+                      "role": "defining",
+                      "note": "“Yahweh counts when he writes up the peoples: this one was born there.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "gloss": "the one counting (participle): official who counts",
+              "definition": "The qal participle סֹפֵר as a title, the official who counts the tribute or the towers; the same form as the noun scribe.",
+              "evidence": [
+                {
+                  "ref": "Isa.33.18",
+                  "role": "defining",
+                  "note": "Of the Assyrian officials gone: “Where is the סֹפֵר? Where is the weigher? Where is the one counting (סֹפֵר) the towers?” Paul's “where is the scribe?” (1Co 1:20) takes up this line."
+                }
+              ],
+              "kin": [
+                "muster-scribe"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be counted",
+          "senses": [
+            {
+              "id": "be-counted",
+              "gloss": "be counted; (with a negative) be beyond counting",
+              "definition": "Be numbered; mostly in the negative of the seed or the sacrifices: so many that they cannot be counted.",
+              "evidence": [
+                {
+                  "ref": "Gen.16.10",
+                  "role": "defining",
+                  "note": "To Hagar: “I will greatly multiply your seed, so that it shall not be counted for multitude.”"
+                },
+                {
+                  "ref": "Gen.32.13",
+                  "role": "defining",
+                  "note": "“I will make your seed as the sand of the sea, which cannot be counted for multitude.”"
+                },
+                {
+                  "ref": "1Ki.3.8",
+                  "role": "defining",
+                  "note": "“A great people, that cannot be numbered (יִמָּנֶה) nor counted (יִסָּפֵר) for multitude.”"
+                },
+                {
+                  "ref": "1Ki.8.5",
+                  "note": "Sheep and oxen “that could not be counted nor numbered for multitude”. Also 2Ch 5:6."
+                },
+                {
+                  "ref": "Jer.33.22",
+                  "role": "defining",
+                  "note": "“As the host of heaven cannot be counted, nor the sand of the sea measured, so will I multiply the seed of David my servant.”"
+                },
+                {
+                  "ref": "Hos.2.1",
+                  "role": "defining",
+                  "note": "“The number of the children of Israel shall be as the sand of the sea, which cannot be measured nor counted… it shall be said to them, sons of the living God.” Quoted in Rom 9:26–27."
+                },
+                {
+                  "ref": "1Ch.23.3",
+                  "note": "Positive: the Levites were counted from thirty years old and upward, 38,000."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "recount, tell, declare; count over",
+          "senses": [
+            {
+              "id": "recount",
+              "gloss": "recount, tell (in order)",
+              "definition": "Tell over in order what happened or what was seen: a dream, a journey, a report.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.9",
+                  "role": "defining",
+                  "note": "Joseph dreams another dream “and recounted it to his brothers”."
+                },
+                {
+                  "ref": "Gen.40.9",
+                  "role": "defining",
+                  "note": "The chief cupbearer recounts his dream to Joseph, and tells it: “In my dream, behold, a vine…”."
+                },
+                {
+                  "ref": "Gen.41.8",
+                  "note": "Pharaoh recounts his dream to the wise men, and none can interpret."
+                },
+                {
+                  "ref": "Gen.24.66",
+                  "role": "defining",
+                  "note": "“The servant recounted to Isaac all the things he had done.”"
+                },
+                {
+                  "ref": "Exo.18.8",
+                  "role": "defining",
+                  "note": "Moses recounts to Jethro all that Yahweh had done to Pharaoh, all the hardship on the way, and how Yahweh delivered them."
+                },
+                {
+                  "ref": "Exo.24.3",
+                  "note": "Moses recounts to the people all the words of Yahweh and all the judgments."
+                },
+                {
+                  "ref": "Num.13.27",
+                  "note": "The spies' report: “they recounted to him and said, We came to the land…”."
+                },
+                {
+                  "ref": "Jdg.7.13",
+                  "note": "A Midianite recounting a dream to his fellow."
+                },
+                {
+                  "ref": "2Ki.8.5",
+                  "note": "Gehazi recounts to the king how Elisha restored the dead to life."
+                },
+                {
+                  "ref": "Est.6.13",
+                  "note": "Haman recounts to Zeresh and his friends all that had happened to him."
+                }
+              ],
+              "cognate_ids": [
+                "phn-sprm",
+                "uga-mspr"
+              ]
+            },
+            {
+              "id": "declare-works",
+              "gloss": "declare, tell (Yahweh's works, name, praise)",
+              "definition": "Tell over Yahweh's deeds and name, so that others, and the next generation, know them: the purpose of a people formed for him.",
+              "evidence": [
+                {
+                  "ref": "Exo.10.2",
+                  "role": "defining",
+                  "note": "“That you may recount in the ears of your son and your son's son what I have done in Egypt… that you may know that I am Yahweh.”"
+                },
+                {
+                  "ref": "Psa.78.3",
+                  "role": "defining",
+                  "note": "“Which we have heard and known, and our fathers have recounted to us.”"
+                },
+                {
+                  "ref": "Psa.78.4",
+                  "role": "defining",
+                  "note": "“We will not hide them from their children, recounting to the generation to come the praises of Yahweh.”"
+                },
+                {
+                  "ref": "Psa.78.6",
+                  "note": "“That the generation to come might know… who should arise and recount them to their children.”"
+                },
+                {
+                  "ref": "Isa.43.21",
+                  "role": "defining",
+                  "note": "“This people I have formed for myself; they shall recount my praise.”"
+                },
+                {
+                  "ref": "Exo.9.16",
+                  "role": "defining",
+                  "note": "Of Pharaoh: “that my name may be declared (סַפֵּר) in all the earth.” Quoted in Rom 9:17."
+                },
+                {
+                  "ref": "Psa.19.2",
+                  "role": "defining",
+                  "note": "“The heavens recount the glory of God, and the firmament declares (מַגִּיד) the work of his hands.”"
+                },
+                {
+                  "ref": "Psa.9.2",
+                  "note": "“I will give thanks to Yahweh with my whole heart; I will recount all your wonders.”"
+                },
+                {
+                  "ref": "Psa.22.23",
+                  "role": "defining",
+                  "note": "“I will declare your name to my brothers; in the midst of the congregation I will praise you.” Quoted of Christ in Heb 2:12."
+                },
+                {
+                  "ref": "Psa.2.7",
+                  "note": "“I will declare the decree: Yahweh said to me, You are my son.” Acts 13:33 and Heb 1:5 quote the decree."
+                },
+                {
+                  "ref": "Psa.96.3",
+                  "note": "“Declare his glory among the nations.” Also 1Ch 16:24."
+                },
+                {
+                  "ref": "Psa.107.22",
+                  "note": "“Let them sacrifice the sacrifices of thanksgiving and recount his works with singing.”"
+                },
+                {
+                  "ref": "Psa.118.17",
+                  "role": "defining",
+                  "note": "“I shall not die but live, and recount the works of Yah.”"
+                },
+                {
+                  "ref": "Psa.71.15",
+                  "note": "“My mouth shall recount your righteousness… for I do not know the numbers (סְפֹרוֹת).”"
+                },
+                {
+                  "ref": "Psa.40.6",
+                  "note": "“Your wonders and your thoughts toward us… if I would declare and speak of them, they are more than can be recounted (מִסַּפֵּר).”"
+                },
+                {
+                  "ref": "Psa.50.16",
+                  "note": "To the wicked: “What have you to do to recount my statutes?”"
+                },
+                {
+                  "ref": "Jol.1.3",
+                  "note": "“Tell your children of it, and let your children tell their children.”"
+                }
+              ]
+            },
+            {
+              "gloss": "count over",
+              "definition": "Count one by one, as the qal; rare in the piel.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.18",
+                  "role": "defining",
+                  "note": "“I can count all my bones; they look and stare at me.”"
+                },
+                {
+                  "ref": "Job.38.37",
+                  "note": "“Who can number the clouds in wisdom?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be told, be recounted",
+          "senses": [
+            {
+              "id": "be-told",
+              "gloss": "be told, be declared",
+              "definition": "Be recounted to someone, so that they hear it.",
+              "evidence": [
+                {
+                  "ref": "Isa.52.15",
+                  "role": "defining",
+                  "note": "“What had not been told them they shall see, and what they had not heard they shall understand.” Quoted in Rom 15:21 of the gospel preached where Christ was not named."
+                },
+                {
+                  "ref": "Hab.1.5",
+                  "role": "defining",
+                  "note": "“I am working a work in your days which you will not believe though it be told you.” Quoted in Acts 13:41."
+                },
+                {
+                  "ref": "Psa.22.31",
+                  "note": "“A seed shall serve him; it shall be told of the Lord to the generation.”"
+                },
+                {
+                  "ref": "Psa.88.12",
+                  "role": "defining",
+                  "note": "“Shall your lovingkindness be recounted in the grave, your faithfulness in Abaddon?”"
+                },
+                {
+                  "ref": "Job.37.20",
+                  "note": "“Shall it be told him that I would speak?”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָנָה",
+            "note": "“Number”, beside the niphal: cannot be numbered nor counted.",
+            "evidence": [
+              {
+                "ref": "1Ki.3.8",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.8.5"
+              },
+              {
+                "ref": "2Ch.5.6"
+              }
+            ]
+          },
+          {
+            "lemma": "מָדַד",
+            "note": "“Measure”, beside the niphal of the sand of the sea.",
+            "evidence": [
+              {
+                "ref": "Hos.2.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.33.22"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁקַל",
+            "note": "“Weigh”: the one counting and the one weighing, officials of tribute.",
+            "evidence": [
+              {
+                "ref": "Isa.33.18",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הִגִּיד",
+            "note": "“Declare, tell”, beside the piel.",
+            "evidence": [
+              {
+                "ref": "Psa.19.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.40.6"
+              },
+              {
+                "ref": "Psa.30.10"
+              }
+            ]
+          },
+          {
+            "lemma": "הוֹדָה",
+            "note": "“Give thanks”, beside the piel.",
+            "evidence": [
+              {
+                "ref": "Psa.9.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.79.13"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "כִּחֵד",
+            "note": "“Hide”: not hiding the works from the children but recounting them.",
+            "evidence": [
+              {
+                "ref": "Psa.78.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לֹא יִסָּפֵר מֵרֹב",
+            "gloss": "cannot be counted for multitude",
+            "evidence": [
+              {
+                "ref": "Gen.16.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.32.13"
+              },
+              {
+                "ref": "1Ki.3.8"
+              }
+            ]
+          },
+          {
+            "phrase": "וְסָפַר לוֹ שִׁבְעַת יָמִים",
+            "gloss": "he shall count for himself seven days (of cleansing)",
+            "evidence": [
+              {
+                "ref": "Lev.15.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.15.28"
+              },
+              {
+                "ref": "Ezk.44.26"
+              }
+            ]
+          },
+          {
+            "phrase": "סִפֵּר אֶת הַחֲלוֹם",
+            "gloss": "recount the dream",
+            "evidence": [
+              {
+                "ref": "Gen.40.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.41.8"
+              },
+              {
+                "ref": "Jdg.7.13"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἀριθμέω",
+          "gloss": "count, number",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.15.5, Gen.41.49, Lev.23.15, Lev.23.16: סָפַר → ἀριθμέω; ×8, and ἐξαριθμέω in Gen 15:5, Deu 16:9, Hos 2:1"
+            },
+            {
+              "ref": "Mat.10.30",
+              "role": "defining",
+              "note": "“The very hairs of your head are all numbered.” Also Luk 12:7."
+            },
+            {
+              "ref": "Rev.7.9",
+              "role": "defining",
+              "note": "“A great multitude, which no man could number (ἀριθμῆσαι)”: the seed beyond counting (Gen 15:5; 32:13)."
+            }
+          ]
+        },
+        {
+          "lemma": "διηγέομαι",
+          "gloss": "recount, tell in full",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.37.9, Exo.18.8, Psa.19.2, Psa.22.23, Isa.43.21: סָפַר piel → διηγέομαι; ×21, ἐκδιηγέομαι in Psa 118:17"
+            },
+            {
+              "ref": "Mrk.5.16",
+              "note": "Those who saw it recounted how it befell the man with the unclean spirit."
+            },
+            {
+              "ref": "Luk.8.39",
+              "role": "defining",
+              "note": "“Return to your house and recount (διηγοῦ) how great things God has done for you”: the piel's “recount his works”."
+            },
+            {
+              "ref": "Act.9.27",
+              "note": "Barnabas recounts how Saul had seen the Lord on the way."
+            },
+            {
+              "ref": "Act.13.41",
+              "role": "defining",
+              "note": "Hab 1:5 quoted: “a work which you will not believe, though one declare it (ἐκδιηγῆται) to you.”"
+            }
+          ]
+        },
+        {
+          "lemma": "διαγγέλλω",
+          "gloss": "declare abroad",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.9.16, Psa.2.7, Psa.59.13: סָפַר piel → διαγγέλλω"
+            },
+            {
+              "ref": "Rom.9.17",
+              "role": "defining",
+              "note": "Exo 9:16 quoted: “that my name might be declared (διαγγελῇ) in all the earth.”"
+            },
+            {
+              "ref": "Luk.9.60",
+              "note": "“Go and declare abroad the kingdom of God.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀναγγέλλω",
+          "gloss": "announce, report",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.52.15, Psa.22.31, Psa.96.3: סָפַר → ἀναγγέλλω; ×7"
+            },
+            {
+              "ref": "Rom.15.21",
+              "role": "defining",
+              "note": "Isa 52:15 quoted: “They to whom nothing was announced (ἀνηγγέλη) of him shall see.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִסְפָּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "number, count; (rarely) recounting",
+      "bdb": [
+        "o.ck.ah"
+      ],
+      "cognate_ids": [
+        "phn-mspr",
+        "uga-spr"
+      ],
+      "summary": "What counting arrives at: the number of names in a census, of days, of years. “No number” is beyond counting; “men of number” are few enough to count. Once it is the recounting of a dream (Jdg 7:15).",
+      "senses": [
+        {
+          "id": "number",
+          "gloss": "number, count",
+          "definition": "How many there are, as counted: of people by name, of days, years, sacrifices, stars.",
+          "kin": [
+            "count"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.1.2",
+              "role": "defining",
+              "note": "“Take the sum of all the congregation… by the number of the names, every male by their polls.”"
+            },
+            {
+              "ref": "Num.1.22"
+            },
+            {
+              "ref": "Num.26.53",
+              "note": "The land divided “by the number of names”."
+            },
+            {
+              "ref": "Num.14.34",
+              "role": "defining",
+              "note": "“According to the number of the days in which you searched the land, forty days, each day for a year, you shall bear your iniquities forty years.”"
+            },
+            {
+              "ref": "Ezk.4.5",
+              "note": "“I have laid on you the years of their iniquity, according to the number of the days, 390 days.”"
+            },
+            {
+              "ref": "Dan.9.2",
+              "role": "defining",
+              "note": "Daniel understood by the books “the number of the years” of Jeremiah's seventy."
+            },
+            {
+              "ref": "Deu.32.8",
+              "note": "“He set the bounds of the peoples according to the number of the sons of Israel.”"
+            },
+            {
+              "ref": "Psa.147.4",
+              "role": "defining",
+              "note": "“He counts the number of the stars; he calls them all by names.”"
+            },
+            {
+              "ref": "Isa.40.26",
+              "note": "“Who brings out their host by number.”"
+            },
+            {
+              "ref": "Job.14.5",
+              "note": "“His days are determined, the number of his months is with you.”"
+            },
+            {
+              "ref": "Exo.16.16",
+              "note": "Manna gathered “according to the number of your persons”."
+            },
+            {
+              "ref": "Num.29.18",
+              "note": "The offerings of the feast of booths, “according to their number, after the ordinance”."
+            },
+            {
+              "ref": "1Ch.23.31",
+              "note": "Burnt offerings on sabbaths, new moons and set feasts “by number”."
+            },
+            {
+              "ref": "Hos.2.1",
+              "role": "defining",
+              "note": "“The number of the sons of Israel shall be as the sand of the sea.” Quoted in Rom 9:27."
+            }
+          ],
+          "senses": [
+            {
+              "id": "without-number",
+              "gloss": "(with אֵין) without number, countless",
+              "definition": "Too many to count: “there is no number” of them.",
+              "evidence": [
+                {
+                  "ref": "Jdg.6.5",
+                  "role": "defining",
+                  "note": "The Midianites came like locusts, “both they and their camels were without number”."
+                },
+                {
+                  "ref": "Jol.1.6",
+                  "note": "“A nation is come up on my land, strong and without number.”"
+                },
+                {
+                  "ref": "Psa.40.13",
+                  "role": "defining",
+                  "note": "“Evils without number have compassed me… they are more than the hairs of my head.”"
+                },
+                {
+                  "ref": "Psa.104.25",
+                  "note": "The sea, “wherein are things creeping without number”."
+                },
+                {
+                  "ref": "Job.9.10",
+                  "role": "defining",
+                  "note": "God “does great things past finding out, and wonders without number”. Also Job 5:9."
+                },
+                {
+                  "ref": "Psa.147.5",
+                  "note": "“His understanding is without number.”"
+                },
+                {
+                  "ref": "1Ch.22.4",
+                  "note": "Cedar trees without number."
+                }
+              ]
+            },
+            {
+              "id": "few-in-number",
+              "gloss": "(מְתֵי מִסְפָּר) few, able to be counted",
+              "definition": "Of people: so few that they can be counted.",
+              "evidence": [
+                {
+                  "ref": "Gen.34.30",
+                  "role": "defining",
+                  "note": "Jacob: “I am מְתֵי מִסְפָּר; they will gather against me and destroy me.”"
+                },
+                {
+                  "ref": "Deu.4.27",
+                  "role": "defining",
+                  "note": "“You shall be left few in number among the nations.”"
+                },
+                {
+                  "ref": "Deu.33.6",
+                  "note": "“Let Reuben live and not die, and let his men be מִסְפָּר”: few."
+                },
+                {
+                  "ref": "Psa.105.12",
+                  "note": "“When they were but few men in number, very few, and strangers in it.” Also 1Ch 16:19."
+                },
+                {
+                  "ref": "Jer.44.28",
+                  "note": "A few escapees of the sword shall return from Egypt."
+                },
+                {
+                  "ref": "Isa.10.19",
+                  "note": "“The rest of the trees of his forest shall be few, that a child may write them.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gloss": "recounting, telling",
+          "definition": "The telling over of a dream, as the piel of the verb.",
+          "kin": [
+            "recount"
+          ],
+          "evidence": [
+            {
+              "ref": "Jdg.7.15",
+              "role": "defining",
+              "note": "“When Gideon heard the מִסְפַּר of the dream and its interpretation, he worshipped.”"
+            }
+          ],
+          "cognate_ids": [
+            "uga-mspr"
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "אֵין מִסְפָּר",
+            "gloss": "without number",
+            "evidence": [
+              {
+                "ref": "Jdg.6.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.40.13"
+              },
+              {
+                "ref": "Job.9.10"
+              }
+            ]
+          },
+          {
+            "phrase": "מְתֵי מִסְפָּר",
+            "gloss": "men of number: few",
+            "evidence": [
+              {
+                "ref": "Gen.34.30",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.27"
+              },
+              {
+                "ref": "Psa.105.12"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּמִסְפַּר שֵׁמוֹת",
+            "gloss": "by the number of names",
+            "evidence": [
+              {
+                "ref": "Num.1.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.1.18"
+              },
+              {
+                "ref": "Num.26.53"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἀριθμός",
+          "gloss": "number",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.1.2, Hos.2.1: מִסְפָּר → ἀριθμός; ×111"
+            },
+            {
+              "ref": "Rom.9.27",
+              "role": "defining",
+              "note": "Hos 2:1 with Isa 10:22: “Though the number of the sons of Israel be as the sand of the sea, a remnant shall be saved.”"
+            },
+            {
+              "ref": "Rev.20.8",
+              "note": "Gog and Magog, “the number of whom is as the sand of the sea”."
+            },
+            {
+              "ref": "Act.4.4",
+              "note": "“The number of the men was about five thousand.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀναρίθμητος",
+          "gloss": "innumerable",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מִסְפָּר with negative → ἀναρίθμητος ×2"
+            },
+            {
+              "ref": "Heb.11.12",
+              "role": "defining",
+              "note": "From Abraham sprang “as the stars of the sky in multitude, and as the sand by the sea shore innumerable” (Gen 15:5; 32:13)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סֹפֵר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "scribe, secretary; muster officer",
+      "cognate_ids": [
+        "uga-sapir",
+        "phn-soper",
+        "arc-sapar",
+        "akk-sepiru",
+        "ar-safir"
+      ],
+      "summary": "The qal participle of the verb, “one who counts”, become a title: the man who counts and writes, the king's secretary, the officer who musters the army, and after the exile the scribe learned in the law. About fifty-six uses. Its tokens share the verb's index in the database and are counted under סָפַר (o.ck.ac); BDB's own key for it, o.ck.ad, holds the same tokens and is not named.",
+      "senses": [
+        {
+          "id": "royal-scribe",
+          "gloss": "the king's scribe, secretary of state",
+          "definition": "A high officer of the king's court, named among the chief ministers, who handles the king's writing, accounts and correspondence.",
+          "evidence": [
+            {
+              "ref": "2Sa.8.17",
+              "role": "defining",
+              "note": "In David's list of officers: “Seraiah was סוֹפֵר”. Also 2Sa 20:25; 1Ch 18:16."
+            },
+            {
+              "ref": "1Ki.4.3",
+              "note": "Solomon's officers: “Elihoreph and Ahiah, the sons of Shisha, סֹפְרִים”."
+            },
+            {
+              "ref": "2Ki.18.18",
+              "role": "defining",
+              "note": "Eliakim over the household, Shebna the סֹפֵר and Joah the recorder go out to the Rabshakeh. Also Isa 36:3."
+            },
+            {
+              "ref": "2Ki.12.11",
+              "role": "defining",
+              "note": "“The king's סֹפֵר and the high priest” count and bag the silver in the chest: the scribe counts."
+            },
+            {
+              "ref": "2Ki.22.3",
+              "note": "Josiah sends Shaphan the סֹפֵר to the house of Yahweh."
+            },
+            {
+              "ref": "2Ki.22.10",
+              "note": "“Shaphan the סֹפֵר told the king… and Shaphan read it before the king.”"
+            },
+            {
+              "ref": "Jer.36.12",
+              "note": "The princes sit in the scribe's chamber in the king's house, Elishama the סֹפֵר among them."
+            },
+            {
+              "ref": "Jer.37.15",
+              "note": "Jeremiah is imprisoned in the house of Jonathan the סֹפֵר."
+            },
+            {
+              "ref": "Est.3.12",
+              "note": "“The king's סֹפְרִים were called” to write Haman's decree to every province in its own script."
+            },
+            {
+              "ref": "1Ch.27.32",
+              "note": "Jonathan, David's uncle, “a counsellor, a man of understanding, and a סוֹפֵר”."
+            }
+          ]
+        },
+        {
+          "id": "muster-scribe",
+          "gloss": "muster officer",
+          "definition": "The officer who counts and enrols the fighting men.",
+          "evidence": [
+            {
+              "ref": "2Ki.25.19",
+              "role": "defining",
+              "note": "“The סֹפֵר of the captain of the host, who mustered (הַמַּצְבִּא) the people of the land.” Also Jer 52:25."
+            },
+            {
+              "ref": "2Ch.26.11",
+              "role": "defining",
+              "note": "Uzziah's army “by the number (מִסְפַּר) of their muster by the hand of Jeiel the סוֹפֵר”."
+            },
+            {
+              "ref": "Jdg.5.14",
+              "role": "defining",
+              "note": "From Zebulun “those who handle the staff of the סֹפֵר”, among the commanders who came down."
+            }
+          ],
+          "kin": [
+            "count"
+          ]
+        },
+        {
+          "id": "scribe-of-law",
+          "gloss": "scribe, one learned in writing and in the law",
+          "definition": "One skilled in writing; in the later books, one who copies, studies and teaches the law, as Ezra.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.6",
+              "role": "defining",
+              "note": "“This Ezra… was a סֹפֵר מָהִיר, ready scribe, in the law of Moses which Yahweh the God of Israel had given.”"
+            },
+            {
+              "ref": "Ezr.7.11",
+              "role": "defining",
+              "note": "“Ezra the priest, the סֹפֵר, a scribe of the words of the commandments of Yahweh and of his statutes to Israel.” He had set his heart to seek, do and teach the law (7:10)."
+            },
+            {
+              "ref": "Neh.8.1",
+              "note": "“Ezra the סֹפֵר” brings the book of the law."
+            },
+            {
+              "ref": "Neh.8.4",
+              "note": "Ezra the סֹפֵר stands on a wooden pulpit to read."
+            },
+            {
+              "ref": "Neh.8.13"
+            },
+            {
+              "ref": "Jer.8.8",
+              "role": "defining",
+              "note": "“How do you say, We are wise, and the law of Yahweh is with us? Truly the lying pen of the סֹפְרִים has made it a lie.”"
+            },
+            {
+              "ref": "Psa.45.2",
+              "role": "defining",
+              "note": "“My tongue is the pen of a סוֹפֵר מָהִיר.”"
+            },
+            {
+              "ref": "Ezk.9.2",
+              "note": "A man clothed in linen “with a סֹפֵר's inkhorn at his side”, who marks the foreheads (9:4). Also 9:3."
+            },
+            {
+              "ref": "Jer.36.26",
+              "note": "“Baruch the סֹפֵר and Jeremiah the prophet”."
+            },
+            {
+              "ref": "Jer.36.23",
+              "note": "Jehoiakim cuts the scroll with “the סֹפֵר's knife”."
+            },
+            {
+              "ref": "1Ch.24.6",
+              "note": "“Shemaiah the סוֹפֵר, of the Levites, wrote them” in the courses."
+            },
+            {
+              "ref": "2Ch.34.13",
+              "note": "“Of the Levites there were סוֹפְרִים, and officers, and porters.”"
+            },
+            {
+              "ref": "1Ch.2.55",
+              "note": "“The families of the סֹפְרִים which dwelt at Jabez”."
+            },
+            {
+              "ref": "Neh.13.13",
+              "note": "Zadok the סוֹפֵר among the treasurers, counted faithful."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "סֹפֵר מָהִיר",
+            "gloss": "a ready, skilled scribe",
+            "evidence": [
+              {
+                "ref": "Ezr.7.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.45.2"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵט סֹפְרִים",
+            "gloss": "the scribes' pen",
+            "evidence": [
+              {
+                "ref": "Jer.8.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.45.2"
+              }
+            ]
+          },
+          {
+            "phrase": "קֶסֶת הַסֹּפֵר",
+            "gloss": "the scribe's inkhorn",
+            "evidence": [
+              {
+                "ref": "Ezk.9.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.9.3"
+              }
+            ]
+          },
+          {
+            "phrase": "סֹפֵר הַמֶּלֶךְ",
+            "gloss": "the king's scribe",
+            "evidence": [
+              {
+                "ref": "2Ki.12.11",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.24.11"
+              },
+              {
+                "ref": "Est.3.12"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "γραμματεύς",
+          "gloss": "scribe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Sa.8.17, 1Ki.4.3, Ezr.7.6: סֹפֵר → γραμματεύς; ×43 in all forms"
+            },
+            {
+              "ref": "Mat.13.52",
+              "role": "defining",
+              "note": "“Every γραμματεύς instructed in the kingdom of heaven is like a householder who brings out of his treasure things new and old.”"
+            },
+            {
+              "ref": "Mat.23.34",
+              "note": "“I send you prophets, and wise men, and γραμματεῖς.”"
+            },
+            {
+              "ref": "Mat.2.4",
+              "note": "Herod gathers the chief priests and γραμματεῖς to ask where the Christ should be born."
+            },
+            {
+              "ref": "1Co.1.20",
+              "role": "defining",
+              "note": "“Where is the wise? Where is the γραμματεύς?”: Isa 33:18's “where is the סֹפֵר?”, with Isa 19:12 and 29:14."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סְפַר",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "book, record",
+      "bdb": [
+        "xo.ag.aa"
+      ],
+      "cognate_ids": [
+        "arc-sipra",
+        "uga-sipr",
+        "phn-spr"
+      ],
+      "summary": "Biblical Aramaic for the Hebrew סֵפֶר, five uses in Ezra and Daniel: the archives of the kings, the book of Moses, and the books opened before the Ancient of Days.",
+      "senses": [
+        {
+          "gloss": "book, record",
+          "definition": "A written record, kept and searched; the law of Moses; the books of God's judgment.",
+          "kin": [
+            "book"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.4.15",
+              "role": "defining",
+              "note": "“That search may be made in the סְפַר of the records of your fathers.”"
+            },
+            {
+              "ref": "Ezr.6.1",
+              "role": "defining",
+              "note": "Darius has search made “in the house of the סִפְרַיָּא, where the treasures were laid up in Babylon”."
+            },
+            {
+              "ref": "Ezr.6.18",
+              "role": "defining",
+              "note": "Priests and Levites set in their courses “as it is written in the סְפַר of Moses”."
+            },
+            {
+              "ref": "Dan.7.10",
+              "role": "defining",
+              "note": "“The judgment was set, and the סִפְרִין were opened.” Taken up in Rev 20:12."
+            },
+            {
+              "ref": "Rev.20.12",
+              "note": "“The books were opened… and the dead were judged out of what was written in the books, according to their works.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סָפַר",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "scribe",
+      "bdb": [
+        "xo.ag.ab"
+      ],
+      "cognate_ids": [
+        "arc-sapar",
+        "uga-sapir",
+        "phn-soper",
+        "akk-sepiru"
+      ],
+      "summary": "Biblical Aramaic for the Hebrew סֹפֵר, six uses in Ezra: Shimshai the Persian official who writes against Jerusalem, and Ezra in Artaxerxes' letter, “scribe of the law of the God of heaven”.",
+      "senses": [
+        {
+          "gloss": "scribe, secretary",
+          "definition": "An official who writes; of Ezra, the scribe of God's law.",
+          "kin": [
+            "royal-scribe",
+            "scribe-of-law"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.4.8",
+              "role": "defining",
+              "note": "“Rehum the commander and Shimshai the סָפְרָא wrote a letter against Jerusalem to Artaxerxes.” Also 4:9, 17, 23."
+            },
+            {
+              "ref": "Ezr.4.17"
+            },
+            {
+              "ref": "Ezr.7.12",
+              "role": "defining",
+              "note": "“Artaxerxes, king of kings, to Ezra the priest, סָפַר of the law of the God of heaven.” Also 7:21."
+            },
+            {
+              "ref": "Ezr.7.21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סִפְרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "book",
+      "summary": "Once, of God's book in which a sufferer's wanderings and tears are kept. BDB files it under its own key (o.ck.ab), but the database gives that key the same tokens as סֵפֶר (o.ck.aa), so it is not named here and its one use is counted under סֵפֶר.",
+      "senses": [
+        {
+          "gloss": "book (God's record)",
+          "definition": "God's book of a man's sorrows, beside counting and a bottle for tears.",
+          "kin": [
+            "book-of-god"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.56.9",
+              "role": "defining",
+              "note": "“You have counted my wanderings; put my tears in your bottle; are they not בְּסִפְרָתֶךָ?”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סְפֹרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "number; or recounting",
+      "bdb": [
+        "o.ck.ag"
+      ],
+      "summary": "Once, in the plural: the psalmist will tell Yahweh's righteousness all day, “for I do not know סְפֹרוֹת”. Either numbers (his saving acts are beyond counting) or tellings, records: the verse allows both, and the root has both senses.",
+      "senses": [
+        {
+          "gloss": "numbers (beyond counting); or tellings",
+          "definition": "In its one use, what the psalmist does not know though he recounts all day: the count of God's righteous acts, too many to number.",
+          "kin": [
+            "number",
+            "recount"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.71.15",
+              "role": "defining",
+              "note": "“My mouth shall recount (יְסַפֵּר) your righteousness and your salvation all the day, for I do not know סְפֹרוֹת.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סְפָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "census, counting",
+      "bdb": [
+        "o.ck.ae"
+      ],
+      "summary": "Once: David's census, with which Solomon's count of the foreigners is compared.",
+      "senses": [
+        {
+          "gloss": "census, numbering",
+          "definition": "A count of people made by the king.",
+          "kin": [
+            "count"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ch.2.16",
+              "role": "defining",
+              "note": "Solomon counted the foreigners in Israel “after the סְפָר with which David his father had counted them”: 153,600."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סֶפְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "book, scroll; letters, learning",
+      "cognate_ids": [
+        "arc-sipra"
+      ],
+      "summary": "The Peshitta's ܣܶܦܪܳܐ (sep̄rā), SEDRA lexeme 2187: book, scroll, and, as in Isaiah and Daniel, letters and learning.",
+      "senses": [
+        {
+          "gloss": "book, scroll",
+          "definition": "A scroll or book: Isaiah's scroll in the synagogue, the book of Psalms, the book of life.",
+          "kin": [
+            "book"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.4.17",
+              "role": "defining",
+              "note": "Peshitta: the ܣܦܪܐ of Isaiah the prophet is given to Jesus; he opens it and reads. Also 4:20."
+            },
+            {
+              "ref": "Act.1.20",
+              "note": "Peshitta: “it is written in the ܣܦܪܐ of Psalms”."
+            },
+            {
+              "ref": "Heb.9.19",
+              "note": "Peshitta: the book of the covenant sprinkled."
+            },
+            {
+              "ref": "Rev.3.5"
+            },
+            {
+              "ref": "Rev.20.12"
+            }
+          ]
+        },
+        {
+          "id": "peshitta-letters",
+          "gloss": "letters, learning",
+          "definition": "Knowledge of writing and of the scriptures, as סֵפֶר in Isa 29:11–12 and Dan 1:4.",
+          "evidence": [
+            {
+              "ref": "Jhn.7.15",
+              "role": "defining",
+              "note": "Peshitta: “How does this man know ܣܦܪܐ, not having learned?” (Greek γράμματα)."
+            },
+            {
+              "ref": "Act.4.13",
+              "role": "defining",
+              "note": "Peshitta: Peter and John were men who did not know ܣܦܪܐ (Greek ἀγράμματοι)."
+            },
+            {
+              "ref": "Act.26.24",
+              "note": "Peshitta: Festus, “much ܣܦܪܐ has made you mad.”"
+            },
+            {
+              "ref": "2Ti.3.15",
+              "note": "Peshitta: from childhood Timothy knew the holy ܣܦܪܐ (Greek ἱερὰ γράμματα)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סָפְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "scribe",
+      "cognate_ids": [
+        "arc-sapar"
+      ],
+      "summary": "The Peshitta's ܣܳܦܪܳܐ (sāp̄rā), SEDRA lexeme 2188, for the Gospels' γραμματεύς and once for νομικός: the scribe learned in the law, as Ezra.",
+      "senses": [
+        {
+          "gloss": "scribe, teacher of the law",
+          "definition": "One learned in the law who teaches it.",
+          "kin": [
+            "scribe-of-law"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.13.52",
+              "role": "defining",
+              "note": "Peshitta: every ܣܦܪܐ who is made a disciple of the kingdom of heaven."
+            },
+            {
+              "ref": "Mat.2.4",
+              "note": "Peshitta: the ܣܦܪܐ of the people asked where the Christ should be born."
+            },
+            {
+              "ref": "Mat.23.34"
+            },
+            {
+              "ref": "1Co.1.20",
+              "role": "defining",
+              "note": "Peshitta: “Where is the ܣܦܪܐ?” (Isa 33:18)."
+            },
+            {
+              "ref": "Tit.3.13",
+              "note": "Peshitta: Zenas the ܣܦܪܐ (Greek νομικός, lawyer)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-spr",
+      "lang": "uga",
+      "form": "𐎒𐎔𐎗",
+      "translit": "s-p-r",
+      "gloss": "count; (Š) make to count",
+      "relation": "cognate",
+      "note": "In the Aqhat epic the goddess offers: “I shall make you count (ašsprk) years with Baal”, and “you will count months” (tspr): counting a span of time, as Lev 23:15–16 counts days.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 195, §93 Glossary, /s-p-r/: tspr (KTU 1.17:VI:29); Š ašsprk (KTU 1.17:VI:28)",
+          "note": "“to count”; Š “to make to count” (H. sapar, yispor)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "text 86.63 (KTU 1.17:VI:28–29)",
+          "note": "assprk.ʿm.bʿl | šnt … tspr.yrḫm, “I shall make you count years with Baal… you will count months.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-sipr",
+      "lang": "uga",
+      "form": "𐎒𐎔𐎗",
+      "translit": "spr /sipr-/",
+      "gloss": "written text, document; list; treatise",
+      "relation": "cognate",
+      "note": "Lists of persons headed spr npš, “list of persons”, and “put it in a letter” (b.spr): the same range as סֵפֶר, from a letter to a record.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 195, §93 Glossary, spr /sipr-/ (KTU 6.24:1; 4.338:1; 1.85:1)",
+          "note": "“written text, document”; “list”; “treatise” (H. sēpɛr, Aram. sǝpar, siprin, Akkad. (< Aram.) sipru)."
+        }
+      ]
+    },
+    {
+      "id": "uga-sapir",
+      "lang": "uga",
+      "form": "𐎒𐎔𐎗",
+      "translit": "spr /sāpir-/",
+      "gloss": "scribe",
+      "relation": "cognate",
+      "note": "The same participle form as סֹפֵר.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 195, §93 Glossary, spr /sāpir-/ (KTU 1.16:VI:59)",
+          "note": "“scribe” (H. sōpēr, Aram. sāpar, Akkad. šāpiru)."
+        }
+      ]
+    },
+    {
+      "id": "uga-mspr",
+      "lang": "uga",
+      "form": "𐎎𐎒𐎔𐎗",
+      "translit": "mspr",
+      "gloss": "recitation, telling (?)",
+      "relation": "possible",
+      "note": "Segert gives sprt “recitation(?)” with mspr (KTU 1.4:V:42); if right, the piel's “recount” and מִסְפַּר הַחֲלוֹם (Jdg 7:15).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 195, §93 Glossary, sprt (KTU 1.127:9; cf. 1.23:57; mspr 1.4:V:42)",
+          "note": "“recitation”(?)"
+        }
+      ]
+    },
+    {
+      "id": "phn-spr",
+      "lang": "phn",
+      "form": "𐤎𐤐𐤓",
+      "translit": "spr",
+      "gloss": "inscription; document",
+      "relation": "cognate",
+      "note": "Ahiram's sarcophagus curses whoever “erases its spr”; Kilamuwa's “whoever damages this spr”; spr nqt is a document of quittance.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 346, SPR I",
+          "note": "“n.m. 1. INSCRIPTION (KAI 1.2; 24.14–15) … 2. DOCUMENT: see SPR NQT, ‘quittance’.”"
+        }
+      ]
+    },
+    {
+      "id": "phn-soper",
+      "lang": "phn",
+      "form": "𐤎𐤐𐤓",
+      "translit": "spr",
+      "gloss": "scribe",
+      "relation": "cognate",
+      "note": "rb sprm, “chief of the scribes” (KAI 37 A 15).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 346, SPR II",
+          "note": "“[Heb. soper] n.m. SCRIBE”: ʿbdʾšmn rb sprm, “Abdeshmun, chief of the scribes”."
+        }
+      ]
+    },
+    {
+      "id": "phn-mspr",
+      "lang": "phn",
+      "form": "𐤌𐤎𐤐𐤓",
+      "translit": "mspr",
+      "gloss": "number",
+      "relation": "cognate",
+      "note": "“Silver cups, their number (msprm) 6”; the letters of an inscription, “their number forty-three”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 298–299, MSPR",
+          "note": "“[Heb. mispar] n.m. NUMBER”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000435 spr[count]V; PUN001408 spr[scribe]N"
+        }
+      ]
+    },
+    {
+      "id": "phn-sprm",
+      "lang": "phn",
+      "form": "𐤎𐤐𐤓𐤌",
+      "translit": "sprm",
+      "gloss": "narrative, story (of a man's deeds)",
+      "relation": "cognate",
+      "note": "A Punic epitaph: his family “wrote his story in an inscription” (spry ktb bps): the telling over of a man's deeds, as the piel recounts.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 347, SPRM",
+          "note": "“n.pl. NARRATIVE, STORY”, CIS i 6000.7/8."
+        }
+      ]
+    },
+    {
+      "id": "arc-sefar",
+      "lang": "arc",
+      "form": "סְפַר",
+      "translit": "sǝpar",
+      "gloss": "count, mark, write (Jewish Aramaic)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סְפַר I",
+          "note": "“to count, mark, write”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סָפַר I",
+          "note": "(Talmudic Hebrew-Aramaic) “to write; to count”."
+        }
+      ]
+    },
+    {
+      "id": "arc-sipra",
+      "lang": "arc",
+      "form": "סִפְרָא",
+      "translit": "siprā",
+      "gloss": "book (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums use it for סֵפֶר (Targ. Isa 29:11; Exo 17:14; 2Ch 34:15).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סִפְרָא",
+          "note": "“= h. סֵפֶר. Targ. Is. XXIX, 11 … Targ. Ex. XVII, 14. Targ. II Chr. XXXIV, 15”."
+        }
+      ]
+    },
+    {
+      "id": "arc-sapar",
+      "lang": "arc",
+      "form": "סָפַר",
+      "translit": "sāpar",
+      "gloss": "scribe, writer of documents; copyist (Jewish Aramaic)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סָפַר II (סַפְרָא I)",
+          "note": "“= h. סוֹפֵר, scribe, writer of documents; copyist. Targ. Jer. XXXVI, 20”."
+        }
+      ]
+    },
+    {
+      "id": "akk-sipru",
+      "lang": "akk",
+      "form": "sipru",
+      "translit": "sipru",
+      "gloss": "document (Neo-Assyrian)",
+      "relation": "loan",
+      "note": "A late word, taken from Aramaic: Segert marks it “(< Aram.)”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000063030, sipru [document] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000063030.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-sepiru",
+      "lang": "akk",
+      "form": "sepīru",
+      "translit": "sepīru",
+      "gloss": "scribe (of Aramaic), parchment scribe",
+      "relation": "loan",
+      "note": "The Neo-Babylonian and Seleucid title of the scribe who wrote Aramaic on parchment: the Aramaic word taken into Akkadian.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000146370, sepīru [interpreter scribe (of Aramaic)] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000146370.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000005490, sepīru [parchment scribe] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-shipru",
+      "lang": "akk",
+      "form": "šipru",
+      "translit": "šipru; šapāru",
+      "gloss": "sending, message, commission; (šapāru) send, send a message, write",
+      "relation": "possible",
+      "note": "Proposed as the source of סֵפֶר “letter”, a written message sent. Uncertain: Akkadian š does not normally answer to Hebrew ס, and Ugaritic and Phoenician spr are spelled with s like the Hebrew.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000020970, šipru [sending] N",
+          "note": "Meanings: action, artefact, craft, message, messenger."
+        },
+        {
+          "source": "oracc",
+          "locator": "tsae x000007380, šapāru [send] V",
+          "note": "Meanings include “send (a message)”, “keep writing”, “govern”."
+        }
+      ]
+    },
+    {
+      "id": "ar-sifr",
+      "lang": "ar",
+      "form": "سِفْر",
+      "translit": "sifr",
+      "gloss": "book, writing; a great book; a section of the Law of Moses",
+      "relation": "loan",
+      "note": "Lane's sources gloss it “a book, or writing” and “a section of the Book of the Law revealed to Moses”, and give سَفَرَ الكِتَابَ “he wrote the book”. The Arabic root's own sense is to sweep away, uncover, journey; the writing words look borrowed from Aramaic (see ar-safir).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1371, root سفر, سِفْرٌ (n19937)",
+          "note": "“A book, or writing: or a great, or large, book: or a section of the Book of the Law revealed to Moses”; pl. أَسْفَارٌ."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1370, root سفر, سَفَرَ (n19930), -A2-",
+          "note": "سَفَرَ الكِتَابَ “He wrote the book, or writing.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-safir",
+      "lang": "ar",
+      "form": "سَافِر",
+      "translit": "sāfir",
+      "gloss": "writer, scribe",
+      "relation": "loan",
+      "note": "Lane's sources say it is “in the Nabathæan language سَافِرَا”: Aramaic sāprā, borrowed.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1371, root سفر, سَافِرٌ (n19945), -A2-",
+          "note": "“A writer; a scribe: in the Nabathæan language سَافِرَا: pl. سَفَرَةٌ: which is also applied to the angels who register actions.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "book-of-life",
+      "statement": "Yahweh keeps a book. Moses asks to be blotted out of it in Israel's place, and Yahweh answers, “whoever has sinned against me, him will I blot out of my book” (Exo 32:32–33); the psalmist asks that the enemies be “blotted out of the book of the living, and not written with the righteous” (Psa 69:29). Those who feared Yahweh and thought on his name were written in a book of remembrance, “and they shall be mine in the day that I make” (Mal 3:16–17). Daniel is told that at the time of trouble “your people shall be delivered, everyone found written in the book”, and that “many of those who sleep in the dust of the earth shall awake, some to everlasting life, some to shame and everlasting contempt” (Dan 12:1–2); he sees the judgment set and the books opened (Dan 7:10). John sees the same: the dead judged “out of what was written in the books, according to their works”, and whoever was not found written in the book of life cast into the lake of fire (Rev 20:12, 15). Jesus promises the one who overcomes, “I will not blot out his name from the book of life” (Rev 3:5), and tells the disciples to rejoice that their names are written in heaven (Luk 10:20). From the verses: to be written in God's book is to be remembered by him for life at the resurrection and judgment, while the written sleep in the dust; a name can be blotted out, so being written is held by continuing faithfulness, and life is given then, not possessed now.",
+      "evidence": [
+        {
+          "ref": "Exo.32.32",
+          "to": "Exo.32.33"
+        },
+        {
+          "ref": "Psa.69.29"
+        },
+        {
+          "ref": "Mal.3.16",
+          "to": "Mal.3.17"
+        },
+        {
+          "ref": "Dan.12.1",
+          "to": "Dan.12.2"
+        },
+        {
+          "ref": "Dan.7.10"
+        },
+        {
+          "ref": "Rev.20.12"
+        },
+        {
+          "ref": "Rev.20.15"
+        },
+        {
+          "ref": "Rev.3.5"
+        },
+        {
+          "ref": "Luk.10.20"
+        },
+        {
+          "ref": "Php.4.3"
+        }
+      ]
+    },
+    {
+      "topic": "counting-to-the-fiftieth-day",
+      "statement": "On the morrow after the sabbath of the unleavened bread the priest waved the עֹמֶר, the first sheaf of the harvest, before Yahweh (Lev 23:10–11). From that day Israel was to count (וּסְפַרְתֶּם) seven complete sabbaths, fifty days, and then offer a new grain offering: two loaves baked with leaven, “firstfruits to Yahweh” (Lev 23:15–17), at the feast of שָׁבֻעוֹת, Weeks (Deu 16:9–10). Jesus rose “after the sabbath, as it began to dawn toward the first of the week” (Mat 28:1), the day of the waving, and Paul calls him “the firstfruits of those who have fallen asleep” (1Co 15:20, 23). Fifty days on, “when the day of Pentecost [the fiftieth] was fully come”, the holy spirit was poured out and about three thousand were added (Act 2:1–4, 41); James writes that God brought us forth by the word of truth “that we should be a kind of firstfruits of his creatures” (Jas 1:18). From the verses: the count joined the first sheaf to the harvest loaves; Christ is the first sheaf, raised on its day, and those called by the gospel are the firstfruits that follow, offered with leaven because they are not yet without sin, as no leaven was burnt on the altar (Lev 2:11).",
+      "evidence": [
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.11"
+        },
+        {
+          "ref": "Lev.23.15",
+          "to": "Lev.23.17"
+        },
+        {
+          "ref": "Deu.16.9",
+          "to": "Deu.16.10"
+        },
+        {
+          "ref": "Mat.28.1"
+        },
+        {
+          "ref": "1Co.15.20"
+        },
+        {
+          "ref": "1Co.15.23"
+        },
+        {
+          "ref": "Act.2.1",
+          "to": "Act.2.4"
+        },
+        {
+          "ref": "Act.2.41"
+        },
+        {
+          "ref": "Jas.1.18"
+        },
+        {
+          "ref": "Lev.2.11"
+        }
+      ]
+    },
+    {
+      "topic": "seed-beyond-counting",
+      "statement": "Yahweh told Abraham to count the stars, “if you are able to count them… so shall your seed be” (Gen 15:5), and promised Jacob seed as the sand “which cannot be counted for multitude” (Gen 32:13). Hosea repeats it of a people once called “not my people”: “the number of the sons of Israel shall be as the sand of the sea, which cannot be measured nor counted… they shall be called sons of the living God” (Hos 2:1). Paul quotes Gen 15:5 of Abraham's faith (Rom 4:18), and applies Hosea to those God has called “not of the Jews only but also of the Gentiles”, with Isaiah's warning that of the number of Israel only a remnant is saved (Rom 9:24–27). The seed is Christ, and those who are Christ's, baptised into him, are Abraham's seed and heirs (Gal 3:16, 27–29); John sees “a great multitude which no man could number, of all nations” before the throne (Rev 7:9). From the verses: the seed beyond counting is not counted by birth but by faith in Christ, and it is gathered from every nation.",
+      "evidence": [
+        {
+          "ref": "Gen.15.5"
+        },
+        {
+          "ref": "Gen.32.13"
+        },
+        {
+          "ref": "Hos.2.1"
+        },
+        {
+          "ref": "Rom.4.18"
+        },
+        {
+          "ref": "Rom.9.24",
+          "to": "Rom.9.27"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.27",
+          "to": "Gal.3.29"
+        },
+        {
+          "ref": "Rev.7.9"
+        },
+        {
+          "ref": "Heb.11.12"
+        }
+      ]
+    },
+    {
+      "topic": "the-dead-do-not-declare",
+      "statement": "The piel of this verb is what the living do with Yahweh's works: fathers recount them to children, generation to generation (Psa 78:3–6), and a people formed for him recounts his praise (Isa 43:21). The psalmist asks whether the dead can: “Will you work wonders for the dead? Shall the departed rise and praise you? Shall your lovingkindness be recounted (הַיְסֻפַּר) in the grave, your faithfulness in Abaddon?” (Psa 88:11–12); “in death there is no remembrance of you; in the grave who shall give you thanks?” (Psa 6:6); “shall the dust praise you? shall it declare your truth?” (Psa 30:10); “the dead do not praise Yah” (Psa 115:17). So the one delivered says, “I shall not die but live, and recount the works of Yah” (Psa 118:17). From the verses: the dead are silent and know nothing of God's works; declaring them belongs to the living, and to the dead again only when they are raised (Dan 12:2; Psa 22:23, 31, quoted of the risen Christ in Heb 2:12).",
+      "evidence": [
+        {
+          "ref": "Psa.78.3",
+          "to": "Psa.78.6"
+        },
+        {
+          "ref": "Isa.43.21"
+        },
+        {
+          "ref": "Psa.88.11",
+          "to": "Psa.88.13"
+        },
+        {
+          "ref": "Psa.6.6"
+        },
+        {
+          "ref": "Psa.30.10"
+        },
+        {
+          "ref": "Psa.115.17"
+        },
+        {
+          "ref": "Psa.118.17"
+        },
+        {
+          "ref": "Dan.12.2"
+        },
+        {
+          "ref": "Psa.22.23"
+        },
+        {
+          "ref": "Psa.22.31"
+        },
+        {
+          "ref": "Heb.2.12"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Database keying: the corpus keys the root ספר, as given. Shared indexes: BDB's o.ck.ab (סִפְרָה) holds the same tokens as o.ck.aa (סֵפֶר), and o.ck.ad (סֹפֵר) the same as o.ck.ac (the verb), so per the README only o.ck.aa and o.ck.ac are named; סִפְרָה's one use (Psa 56:9) and סֹפֵר's ~56 are counted under them. The surface סָפַר is keyed to o.ck.ac, o.ck.ad and Aramaic xo.ag.ab together (Ezr 7:12, 21; 2Sa 24:10), so a few tokens count twice. o.ck.aj and m.cs.ak are cross-references with no tokens. Left out as proper names: מִסְפָּר / מִסְפֶּרֶת Mispar, Mispereth (o.ck.ai; Ezr 2:2; Neh 7:7; its key also shares the common noun's tokens) and סֹפֶרֶת Sophereth (o.ck.ak; Ezr 2:55; Neh 7:57), people, not drafted here; places סְפָר Sephar (o.ck.af, Gen 10:30), סְפָרַד Sepharad (o.ck.al, Oba 1:20), סְפַרְוַיִם Sepharvaim (o.ck.am) and the gentilic סְפַרְוִי (o.ck.an), which cannot be name entries; Sepharvaim is a foreign city name and its tie to this root is not shown. Not in scripture's Hebrew: post-biblical ספר “cut hair” (Syriac ܣܦܪ “shave”, SEDRA root 1305) and סְפָר “border, shore” (Syriac ܣܦܪܐ “shore”, SEDRA 2189), probably other roots. Open questions: (1) whether the count and the writing senses are one root: Ugaritic and Phoenician have both under one spelling with s, which the entry follows; Akkadian šipru/šapāru “message, send” is recorded only as possible because of the sibilant. (2) Isa 33:18 סֹפֵר is entered as the qal participle (“one who counts”) with kin to the muster scribe. (3) Doctrine “counting-to-the-fiftieth-day” states the omer-day resurrection and the leavened loaves as the user's reading would; check the reviewer wants the leaven point. (4) Psa 87:6 qal glossed “counts/records”. Leads not followed: Ge'ez ሰፈረ säfära “measure” (Wiktionary etymology for Hebrew ספר; Dillmann and Leslau not checked); Payne Smith for the Syriac verb; Old South Arabian not checked."
+}
