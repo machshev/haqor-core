@@ -1,0 +1,818 @@
+{
+  "id": "balal",
+  "root": "בלל",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "offering",
+    "worship",
+    "speech",
+    "nations",
+    "holiness",
+    "food"
+  ],
+  "gloss": "mix, mingle (flour with oil); confuse (speech); mixed fodder",
+  "summary": "בָּלַל is to mix one thing into another: fine flour worked through with oil for the grain offering, “flour mixed with oil” as against “dry” (Lev 7:10; Lev 23:13), and so to soak or moisten with oil (Psa 92:11). Yahweh בָּלַל the one lip of the earth at Babel, mixing it so that no one could hear his neighbour, and the text names the city from the deed (Gen 11:7, 9); Ephraim “mixes himself among the peoples” (Hos 7:8). בְּלִיל is mixed fodder for oxen and asses, and the law calls the mingling of man with beast תֶּבֶל. Akkadian balālu “mix, knead, brew”, Punic bll “mixed fodder, mash for sacrifice”, Arabic balla “moisten” and balbala “confound the tongues” share the sense.",
+  "words": [
+    {
+      "lemma": "בָּלַל",
+      "pos": "verb",
+      "gloss": "mix, mingle; moisten; confuse; (denominative) give fodder",
+      "bdb": [
+        "b.bv.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "mix (flour with oil), moisten; confuse (speech); give fodder",
+          "senses": [
+            {
+              "id": "balal-mix-oil",
+              "gloss": "mix (flour) with oil",
+              "definition": "To work oil through fine flour or loaves, so that the oil is in the dough and not only on it; nearly always the passive participle בָּלוּל/בְּלוּלָה “mixed”, of the grain offering that went with the burnt offerings, the feasts, the consecrations and the cleansing of the leper.",
+              "cognate_ids": [
+                "akk-balalu",
+                "phn-bll",
+                "ar-balla",
+                "arc-balbel"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.7.10",
+                  "role": "defining",
+                  "note": "“Every grain offering בְלוּלָה בַשֶּׁמֶן or dry (וַחֲרֵבָה)”: mixed with oil is the opposite of dry."
+                },
+                {
+                  "ref": "Lev.2.4",
+                  "role": "defining",
+                  "note": "Unleavened cakes בְּלוּלֹת בַּשֶּׁמֶן, set beside wafers מְשֻׁחִים בַּשָּׁמֶן, smeared with oil: the oil inside, the oil on top."
+                },
+                {
+                  "ref": "Lev.2.5",
+                  "note": "Fine flour mixed with oil, baked on the griddle; oil is then also poured on it (Lev 2:6)."
+                },
+                {
+                  "ref": "Lev.23.13",
+                  "role": "defining",
+                  "note": "With the lamb on the day of the עֹמֶר: two tenths of fine flour בְּלוּלָה בַשֶּׁמֶן, a fire offering to Yahweh, a pleasing scent."
+                },
+                {
+                  "ref": "Exo.29.2",
+                  "note": "Cakes mixed with oil for the consecration of Aaron and his sons."
+                },
+                {
+                  "ref": "Exo.29.40",
+                  "role": "defining",
+                  "note": "The daily lamb: a tenth of fine flour בָּלוּל בְּשֶׁמֶן כָּתִית, a fourth of a hin of beaten oil, measured against the flour."
+                },
+                {
+                  "ref": "Lev.7.12",
+                  "note": "Cakes mixed with oil with the sacrifice of thanksgiving (twice in the verse)."
+                },
+                {
+                  "ref": "Lev.9.4",
+                  "note": "The eighth day of the priests' consecration."
+                },
+                {
+                  "ref": "Lev.14.10",
+                  "note": "The cleansing of the leper: three tenths of fine flour mixed with oil."
+                },
+                {
+                  "ref": "Lev.14.21"
+                },
+                {
+                  "ref": "Num.6.15",
+                  "note": "The Nazirite's cakes at the end of his separation."
+                },
+                {
+                  "ref": "Num.7.13",
+                  "note": "The princes' gifts at the altar's dedication, repeated for each tribe (Num 7:19, 25 … 79)."
+                },
+                {
+                  "ref": "Num.7.19"
+                },
+                {
+                  "ref": "Num.7.25"
+                },
+                {
+                  "ref": "Num.7.31"
+                },
+                {
+                  "ref": "Num.7.37"
+                },
+                {
+                  "ref": "Num.7.43"
+                },
+                {
+                  "ref": "Num.7.49"
+                },
+                {
+                  "ref": "Num.7.55"
+                },
+                {
+                  "ref": "Num.7.61"
+                },
+                {
+                  "ref": "Num.7.67"
+                },
+                {
+                  "ref": "Num.7.73"
+                },
+                {
+                  "ref": "Num.7.79"
+                },
+                {
+                  "ref": "Num.8.8",
+                  "note": "The Levites' consecration."
+                },
+                {
+                  "ref": "Num.15.4",
+                  "role": "defining",
+                  "note": "A tenth of fine flour בָּלוּל בִּרְבִעִית הַהִין שָׁמֶן, mixed with a fourth of a hin of oil: the oil is a measured part of the mixture."
+                },
+                {
+                  "ref": "Num.15.6"
+                },
+                {
+                  "ref": "Num.15.9"
+                },
+                {
+                  "ref": "Num.28.5"
+                },
+                {
+                  "ref": "Num.28.9",
+                  "note": "The Sabbath offering."
+                },
+                {
+                  "ref": "Num.28.12"
+                },
+                {
+                  "ref": "Num.28.13"
+                },
+                {
+                  "ref": "Num.28.20"
+                },
+                {
+                  "ref": "Num.28.28"
+                },
+                {
+                  "ref": "Num.29.3"
+                },
+                {
+                  "ref": "Num.29.9"
+                },
+                {
+                  "ref": "Num.29.14"
+                }
+              ]
+            },
+            {
+              "id": "balal-moisten",
+              "gloss": "be moistened, soaked (with oil)",
+              "definition": "Once of a man: soaked or moistened with fresh oil, the oil worked into him as into the offering's flour, as a sign of strength renewed.",
+              "cognate_ids": [
+                "ar-balla",
+                "gez-bll",
+                "xsa-bllm"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.92.11",
+                  "role": "defining",
+                  "note": "“You have exalted my horn like a wild ox's; בַּלֹּתִי בְּשֶׁמֶן רַעֲנָן, I am moistened with fresh oil.”"
+                }
+              ]
+            },
+            {
+              "id": "balal-confuse",
+              "gloss": "confuse, confound (speech)",
+              "definition": "To mix a language so that it can no longer be understood: Yahweh's act at Babel, by which one lip became many, the hearers no longer understanding one another, and the builders were scattered.",
+              "cognate_ids": [
+                "akk-balalu",
+                "ar-balbala",
+                "arc-balbel"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.11.7",
+                  "role": "defining",
+                  "note": "“Come, let us go down and there וְנָבְלָה their lip, that they may not hear (understand) each one his neighbour's lip.” The result defines the act."
+                },
+                {
+                  "ref": "Gen.11.9",
+                  "role": "defining",
+                  "note": "“Therefore its name was called בָּבֶל, for there Yahweh בָּלַל the lip of all the earth, and from there Yahweh scattered them.” The text ties the city's name to the deed by sound."
+                },
+                {
+                  "ref": "Gen.11.1",
+                  "note": "Before it, “all the earth was of one lip and one speech”."
+                }
+              ]
+            },
+            {
+              "gloss": "give fodder",
+              "definition": "Once, from the noun בְּלִיל: to give mixed fodder to the beasts.",
+              "cognate_ids": [
+                "phn-bll"
+              ],
+              "kin": [
+                "belil-fodder"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jdg.19.21",
+                  "role": "defining",
+                  "note": "The old man of Gibeah brought the Levite into his house וַיָּבָול לַחֲמוֹרִים, and gave fodder to the asses, and they washed their feet and ate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "mix oneself, mingle (among)",
+          "cognate_ids": [
+            "akk-balalu",
+            "arc-balbel"
+          ],
+          "senses": [
+            {
+              "id": "balal-mingle-peoples",
+              "gloss": "mix oneself among the peoples",
+              "definition": "To mingle oneself with others until no longer distinct from them: Ephraim among the nations, likened in the same verse to a cake not turned, burnt on one side and raw on the other.",
+              "evidence": [
+                {
+                  "ref": "Hos.7.8",
+                  "role": "defining",
+                  "note": "“Ephraim, among the peoples he יִתְבּוֹלָל; Ephraim is a cake not turned.”"
+                },
+                {
+                  "ref": "Hos.7.9",
+                  "note": "“Strangers have devoured his strength, and he does not know it.”"
+                },
+                {
+                  "ref": "Hos.7.11",
+                  "note": "He calls to Egypt and goes to Assyria."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀναποιέω",
+          "gloss": "make up, knead (dough with oil)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:13 word 5",
+              "note": "בְּלוּלָה → ἀναπεποιημένης; the Septuagint's usual word for the offering's “mixed”, about thirty times. Not used in the New Testament."
+            }
+          ]
+        },
+        {
+          "lemma": "φυράω",
+          "gloss": "mix, knead",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 2:5 word 7",
+              "note": "בְּלוּלָה → πεφυραμένη; also Exo 29:2, 40; Lev 2:4; 9:4; 14:10, 21. The verb is not in the New Testament, though its noun φύραμα, the kneaded lump, is (Rom 11:16; 1Co 5:7)."
+            }
+          ]
+        },
+        {
+          "lemma": "συγχέω",
+          "gloss": "pour together; confuse, confound",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 11:9 word 8",
+              "note": "בָּלַל → συνέχεεν (the alignment spells it συνέξεεν); Gen 11:7 וְנָבְלָה → συγχέωμεν (GEN 11:7 word 3)."
+            },
+            {
+              "ref": "Act.2.6",
+              "note": "At Pentecost the multitude came together and συνεχύθη, was confounded, because each heard them speaking in his own language."
+            },
+            {
+              "ref": "Act.9.22",
+              "note": "Saul confounded the Jews at Damascus, proving that Jesus is the Christ."
+            },
+            {
+              "ref": "Act.19.32"
+            },
+            {
+              "ref": "Act.21.27"
+            },
+            {
+              "ref": "Act.21.31"
+            }
+          ]
+        },
+        {
+          "lemma": "συναναμίγνυμι",
+          "gloss": "mix up together; (middle) keep company with",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "HOS 7:8 word 4",
+              "note": "יִתְבּוֹלָל → συνανεμείγνυτο."
+            },
+            {
+              "ref": "1Co.5.9",
+              "note": "“I wrote to you in the letter not to συναναμίγνυσθαι, keep company, with fornicators.”"
+            },
+            {
+              "ref": "1Co.5.11"
+            },
+            {
+              "ref": "2Th.3.14",
+              "note": "“Note that man and do not συναναμίγνυσθε with him, that he may be ashamed.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "חָרֵב",
+            "note": "“Dry”: the grain offering is either mixed with oil or dry.",
+            "evidence": [
+              {
+                "ref": "Lev.7.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "מָשַׁח",
+            "note": "Set beside it in the same offering: cakes mixed with oil, wafers smeared (anointed) with oil.",
+            "evidence": [
+              {
+                "ref": "Lev.2.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.7.12"
+              },
+              {
+                "ref": "Num.6.15"
+              }
+            ]
+          },
+          {
+            "lemma": "עָרַב",
+            "note": "The hithpael of עָרַב says of Israel what the hithpolel of בָּלַל says of Ephraim: they mingled themselves among the nations and learned their works.",
+            "evidence": [
+              {
+                "ref": "Psa.106.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezr.9.2"
+              },
+              {
+                "ref": "Hos.7.8"
+              }
+            ]
+          },
+          {
+            "lemma": "פּוּץ",
+            "note": "Yahweh confused the lip and scattered the builders: the confusion was the means of the scattering they feared.",
+            "evidence": [
+              {
+                "ref": "Gen.11.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.11.8"
+              },
+              {
+                "ref": "Gen.11.9"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "סֹלֶת בְּלוּלָה בַשֶּׁמֶן",
+            "gloss": "fine flour mixed with oil (the grain offering)",
+            "evidence": [
+              {
+                "ref": "Lev.23.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.2.5"
+              },
+              {
+                "ref": "Num.28.9"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּלוּל בְּשֶׁמֶן כָּתִית",
+            "gloss": "mixed with beaten oil",
+            "evidence": [
+              {
+                "ref": "Exo.29.40",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.28.5"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּלַל שְׂפָה",
+            "gloss": "confuse a lip, confound a language",
+            "evidence": [
+              {
+                "ref": "Gen.11.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.11.9"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בְּלִיל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "mixed fodder, provender",
+      "bdb": [
+        "b.bv.ab"
+      ],
+      "cognate_ids": [
+        "phn-bll",
+        "akk-balalu",
+        "ar-balla"
+      ],
+      "senses": [
+        {
+          "id": "belil-fodder",
+          "gloss": "fodder (of mixed grain)",
+          "definition": "The feed of oxen and asses, grain winnowed and seasoned, as distinct from the grass of the field; what a beast has and so does not low for.",
+          "evidence": [
+            {
+              "ref": "Isa.30.24",
+              "role": "defining",
+              "note": "The oxen and young asses that work the ground will eat בְּלִיל חָמִיץ, seasoned fodder, winnowed with shovel and fork: fodder of grain, mixed and seasoned."
+            },
+            {
+              "ref": "Job.6.5",
+              "role": "defining",
+              "note": "“Does the wild ass bray over grass (דֶשֶׁא), or the ox low over his בְּלִיל?” Set beside grass as the ox's food."
+            },
+            {
+              "ref": "Job.24.6",
+              "note": "The poor “reap in the field his fodder” and glean the vineyard of the wicked."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תֶּבֶל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "confusion, mingling (of what God set apart)",
+      "summary": "Twice, in the law of forbidden unions, of a woman with a beast and a man with his daughter-in-law: a mingling of what Yahweh set apart, kind with kind, a father's bed with his son's. No cognate attests the noun; its tie to the root rests on the verb's “mix” and on the context, and it should be read with that caution.",
+      "bdb": [
+        "b.bv.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "confusion, perversion of order",
+          "definition": "An unnatural mingling: a union that confuses what Yahweh set apart, man with beast, the father with the son's wife. It is set beside defilement and carries death.",
+          "evidence": [
+            {
+              "ref": "Lev.18.23",
+              "role": "defining",
+              "note": "No lying with a beast “to be defiled with it”, and a woman shall not stand before a beast to lie with it: “it is תֶּבֶל”."
+            },
+            {
+              "ref": "Lev.20.12",
+              "role": "defining",
+              "note": "A man who lies with his daughter-in-law: both shall surely die; “they have done תֶּבֶל, their blood is upon them”."
+            },
+            {
+              "ref": "Lev.19.19",
+              "note": "The same law forbids mixing kinds (כִּלְאַיִם) in cattle, seed and cloth: the order the mingling breaks."
+            }
+          ],
+          "kin": [
+            "balal-mingle-peoples"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μυσερός",
+          "gloss": "loathsome, abominable",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 18:23 word 14",
+              "note": "תֶּבֶל → μυσερόν. Not used in the New Testament."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּבַלֻּל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "blemish in the eye (a mingling, clouding)",
+      "summary": "Once, among the blemishes that kept a son of Aaron from the altar, תְּבַלֻּל in his eye. Jewish Aramaic uses מְבַלְבְּלִיתָא, from the same root, for a mingling of the white and black of the eye in this law, which fits a clouding in which the eye's parts run together; scripture's one use fixes only that it is a visible defect of the eye.",
+      "bdb": [
+        "b.bv.af"
+      ],
+      "cognate_ids": [
+        "arc-balbel"
+      ],
+      "senses": [
+        {
+          "gloss": "defect in the eye",
+          "definition": "A defect in the eye, named among the bodily blemishes that barred a priest from offering the bread of his God.",
+          "evidence": [
+            {
+              "ref": "Lev.21.20",
+              "role": "defining",
+              "note": "“Or hunchbacked, or a dwarf, or תְּבַלֻּל בְּעֵינוֹ, or scurvy, or scabbed …”"
+            },
+            {
+              "ref": "Lev.21.21",
+              "note": "“He has a blemish; he shall not come near to offer the bread of his God.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πτίλος",
+          "gloss": "with eyelashes lost (of the eye)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 21:20 word 6",
+              "note": "תְּבַלֻּל → πτίλος. Not used in the New Testament."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁבְּלוּל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "snail",
+      "summary": "Once, the snail that melts away as it goes, a picture of the wicked passing away. How it is formed from בלל is not clear: it may be a š-formation named from the moisture of its trail (compare Arabic balla “moisten”), but no cognate names the snail from this root, so the link is unproven.",
+      "bdb": [
+        "b.bv.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "snail",
+          "definition": "A creature that “goes melting”, leaving itself behind as it moves: the image of the wicked vanishing.",
+          "evidence": [
+            {
+              "ref": "Psa.58.9",
+              "role": "defining",
+              "note": "“Like a שַׁבְּלוּל that melts (תֶּמֶס) as it goes, like a woman's miscarriage, they do not see the sun.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-balalu",
+      "lang": "akk",
+      "form": "balālu",
+      "translit": "balālu",
+      "gloss": "mix (up), mingle, knead, brew, smear; ballu “mixed”; billatu “mixture, mixed dry ingredients (for beer)”",
+      "relation": "cognate",
+      "note": "The commonest sense is kneading and mixing ingredients, as the Hebrew mixes flour with oil; “mix with each other” fits the hithpolel, and billatu, a mixture of dry grain stuff, matches בְּלִיל.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000022650, balālu [mix (up)] V",
+          "note": "be covered; brew; concoct; knead; mingle; mix (up); mix with each other; smear"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000022750, ballu [mixed] AJ"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000054840, billatu [mixture] N",
+          "note": "mixture; admixture; mixed dry ingredients for beer"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000670 bll [mix] → AKK001249 balālu [mix (up)]"
+        }
+      ]
+    },
+    {
+      "id": "phn-bll",
+      "lang": "phn",
+      "form": "𐤁𐤋𐤋",
+      "translit": "bll",
+      "gloss": "mixed fodder, mash (for sacrifice)",
+      "relation": "cognate",
+      "note": "In the Punic sacrificial tariff of Marseilles bll stands first in a list of things offered, beside milk and fat: the same word as בְּלִיל, and like the Hebrew grain offering a mixed meal brought to the altar.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 102, BLL",
+          "note": "“n.m. MIXED FODDER, MASH (for sacrifice). KAI 69.14 (Pu) … ‘For/of/from mixed fodder and for milk and for fat and for any sacrifice that a person shall sacrifice as a mnḥt-offering’.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-balla",
+      "lang": "ar",
+      "form": "بَلَّ",
+      "translit": "balla",
+      "gloss": "moisten (with water); balal moisture; balīla wheat boiled in water",
+      "relation": "cognate",
+      "note": "Arabic keeps the wetting that mixing flour with oil involves, and the “moistened with fresh oil” of Psa 92:11; بَلِيلَةٌ, grain boiled soft, is a mash like בְּלִיל. Lane's sources add that things are “conjoined and commixed by moisture”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 242, root بل, بَلَّهُ (n3101)",
+          "note": "“He moistened it with water … for, as some things are conjoined and commixed by moisture, and become disunited by dryness, بَلٌّ is metaphorically used to denote conjunction.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 244, root بل, بَلَلٌ (n3112)",
+          "note": "“Moisture.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 245, root بل, بَلِيلَةٌ (n3126)",
+          "note": "“Wheat boiled in water, and eaten.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000669 bll [moist] → ARB002158 bal~a [Moistened]"
+        }
+      ]
+    },
+    {
+      "id": "ar-balbala",
+      "lang": "ar",
+      "form": "بَلْبَلَ",
+      "translit": "balbala",
+      "gloss": "mix, confound, make discordant the tongues; balbala confusion of tongues",
+      "relation": "cognate",
+      "note": "The reduplicated verb of the same root is used of God confounding the tongues of a people, and its noun of the confusion of languages: the sense of Gen 11:7, 9.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 243, root بل, بَلْبَلَ (n3104)",
+          "note": "“He (God) [mixed or confounded or] made discordant the tongues, or languages, of a people.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 243, root بل, تَبَلْبَلَ (n3105)",
+          "note": "“تَبَلْبَلَتِ الأَلْسُنُ The tongues, or languages, became mixed, or confounded.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 245, root بل, بَلْبَلَةٌ (n3131)",
+          "note": "“A state of confusion, or mixture, of tongues, or languages.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-balbel",
+      "lang": "arc",
+      "form": "בַּלְבֵּל",
+      "translit": "balbēl",
+      "gloss": "confound, mix up (Jewish Aramaic); ithpalpal be mixed; מְבַלְבְּלִיתָא a mingling of white and black (in the eye)",
+      "relation": "cognate",
+      "note": "The Targum of Onkelos uses it for Yahweh's confounding of the lip at Gen 11:9, and the Targum of Isaiah for mixing grain with chaff (Targ. Isa 28:28). The Talmud's מְבַלְבְּלִיתָא, a mixing of the white and black of the eye, explains the Hebrew תְּבַלֻּל of Lev 21:20.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בַּלְבֵּל (ch.)",
+          "note": "“Targ. O. Gen. XI, 9. Targ. Is. XXVIII, 28 ומְבַלְבֵּל and mixes up (the grain with the chaff) … Denom. מְבַלְבְּלִיתָא mixture of white and black (h. תְּבַלֻּל) … Ithpalp. to be disturbed, mixed up.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000670 bll [mix] → ARM004286 BLL [mix]"
+        }
+      ]
+    },
+    {
+      "id": "gez-bll",
+      "lang": "gez",
+      "form": "በለለ",
+      "translit": "balala",
+      "gloss": "moisten; spoil",
+      "relation": "cognate",
+      "note": "Listed in the Proto-Semitic root sets under both bll “moist” and bll “mix”; not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000669 bll [moist] → GEZ001051 bll [moisten]; SEM000670 bll [mix] → GEZ001052 bll [spoil]"
+        }
+      ]
+    },
+    {
+      "id": "xsa-bllm",
+      "lang": "sem",
+      "form": "𐩨𐩡𐩡𐩣",
+      "translit": "bllm",
+      "gloss": "wet, moist (Sabaic)",
+      "relation": "cognate",
+      "note": "Of water in a watercourse: a trickle, wet but little. Biella compares Arabic ball.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 44, BLL",
+          "note": "“adj: WET, MOIST [cf Ar ball id.] C547/10-1: the god made their watercourses flow mn mwm qlim wbllm ‘with water in small quantity, but wet’.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "confusion-of-tongues",
+      "statement": "At Babel “all the earth was of one lip”, and men built a city and a tower to make themselves a name, “lest we be scattered” (Gen 11:1, 4). Yahweh came down and בָּלַל their lip, so that they could not understand one another, and scattered them over all the earth, the very thing they built against; the city's name is tied by the text to the deed (Gen 11:7–9), and the nations were divided “by their tongues” (Gen 10:5, 31–32). At Pentecost men “from every nation under heaven” were confounded (συνεχύθη, the Septuagint's word for בָּלַל at Gen 11:7, 9), not because they could not understand, but because each heard the apostles “in his own language” speak the wonderful works of God (Act 2:5–11). Yahweh promises that he will turn to the peoples “a pure lip, that they may all call on the name of Yahweh, to serve him with one shoulder” (Zep 3:9). From the verses: the division of languages was Yahweh's judgment on a united people's pride; the spirit at Pentecost carried the gospel across that division, and the kingdom will gather the nations again to one pure speech in Yahweh's service.",
+      "evidence": [
+        {
+          "ref": "Gen.11.1"
+        },
+        {
+          "ref": "Gen.11.4"
+        },
+        {
+          "ref": "Gen.11.7",
+          "to": "Gen.11.9"
+        },
+        {
+          "ref": "Gen.10.5"
+        },
+        {
+          "ref": "Gen.10.31",
+          "to": "Gen.10.32"
+        },
+        {
+          "ref": "Act.2.5",
+          "to": "Act.2.11"
+        },
+        {
+          "ref": "Zep.3.9"
+        }
+      ]
+    },
+    {
+      "topic": "separation-from-the-nations",
+      "statement": "Yahweh told Israel, “I am Yahweh your God who has separated you from the peoples … you shall be holy to me, for I Yahweh am holy, and have separated you from the peoples to be mine” (Lev 20:24, 26). Hosea says “Ephraim mixes himself (יִתְבּוֹלָל) among the peoples”, and in the next breath “strangers have devoured his strength, and he does not know it”; he calls to Egypt and goes to Assyria (Hos 7:8–11). The psalm says the same of Israel in the land: “they mingled among the nations and learned their works, and served their idols” (Psa 106:35–36), and Ezra mourns that “the holy seed has mingled itself with the peoples of the lands” (Ezr 9:2). Paul uses the Septuagint's word for Hos 7:8 when he tells the ecclesia “not to keep company (συναναμίγνυσθαι)” with a brother who is a fornicator, covetous or an idolater (1Co 5:9–11; 2Th 3:14), and calls believers to “come out from among them and be separate”, so that God will be their Father (2Co 6:14–18). From the verses: holiness is being Yahweh's own, set apart from the peoples, and to mix oneself among them is to lose one's strength without noticing and to learn their ways; the same call stands for the ecclesia.",
+      "evidence": [
+        {
+          "ref": "Lev.20.24"
+        },
+        {
+          "ref": "Lev.20.26"
+        },
+        {
+          "ref": "Hos.7.8",
+          "to": "Hos.7.11"
+        },
+        {
+          "ref": "Psa.106.35",
+          "to": "Psa.106.36"
+        },
+        {
+          "ref": "Ezr.9.2"
+        },
+        {
+          "ref": "1Co.5.9",
+          "to": "1Co.5.11"
+        },
+        {
+          "ref": "2Th.3.14"
+        },
+        {
+          "ref": "2Co.6.14",
+          "to": "2Co.6.18"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (בְּלוּלָה, Lev 23:13). BDB key b.bv.ac (the denominative “give provender”, Jdg 19:21) counts exactly the same 43 tokens as b.bv.aa in the database, so only b.bv.aa is named; Jdg 19:21 is entered as a qal sense “give fodder” with בְּלִיל as kin. Zero-token cross-references v.as.ag, w.ae.am and w.ae.ap are left out. Not entered: בָּבֶל Babel (b.ad.ag, xb.ab.ad), a place, so no name entry; the text ties its name to בָּלַל by sound (Gen 11:9), and the Septuagint renders the name itself σύγχυσις there, but its own etymology is generally given from Akkadian bāb-ili, so it stays out of this entry. תֵּבֵל “world” (j.ah.ak) belongs under יבל, and מַבּוּל “flood” is filed under another root. Psa 92:11 בַּלֹּתִי is read as qal of בלל, “I am moistened”; the Septuagint read בְּלֹתִי (בלה, “my old age”). Open questions: (1) whether the Arabic “moisten” sense and the “mix” sense are one root: Sabaic and Ge'ez show “moist”, Akkadian and Aramaic “mix”; both are named on the oil-mixing sense, since mixing flour with oil is wetting it. (2) תֶּבֶל and שַׁבְּלוּל have no cognate of their own; תֶּבֶל's tie rests on the verb's sense and its context with Lev 19:19, שַׁבְּלוּל's is unproven. (3) Doctrine “confusion-of-tongues” reads Pentecost against Babel through the shared Greek word; check the reviewer wants that framing. Leads not followed: Payne Smith for Syriac ܒܠ / ܒܠܒܠ “confound” (SEDRA has no root BLL and the Peshitta New Testament no word of it); Ge'ez not checked in Dillmann or Leslau; no Ugaritic found in Segert's glossary."
+}
