@@ -1,0 +1,1839 @@
+{
+  "id": "marar",
+  "root": "מרר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "bitterness",
+    "grief",
+    "taste",
+    "anger",
+    "passover",
+    "myrrh",
+    "body"
+  ],
+  "gloss": "be bitter; bitter; bitterness, grief; gall; bitter herbs; myrrh",
+  "summary": "The root is bitter, first of taste: water that cannot be drunk (Exo 15:23), the opposite of sweet (Isa 5:20; Pro 27:7), and the bitter herbs eaten with the Passover lamb (Exo 12:8). From the taste it is used of grief that cannot be swallowed: “bitter of soul” of Hannah, of men in distress and of Job, a “great and bitter cry” (Gen 27:34), and an end or a day that is bitter (2Sa 2:26; Amo 8:10). The verb is to be bitter, to make someone’s life bitter (Exo 1:14), and in its rare reflexive to be enraged (Dan 8:7). Its nouns name gall and venom, and myrrh (מֹר), the bitter gum used for holy oil and perfume; Arabic, Akkadian, Ugaritic and Aramaic have the same root with the same senses.",
+  "words": [
+    {
+      "lemma": "מַר",
+      "pos": "adjective",
+      "gloss": "bitter; bitterness, bitterly",
+      "bdb": [
+        "m.dq.ab"
+      ],
+      "cognate_ids": [
+        "ar-murr",
+        "akk-marru",
+        "arc-marir",
+        "gez-merar"
+      ],
+      "summary": "Bitter of taste, and so of grief, of a fierce temper, and of a calamity; used also as a noun, “bitterness”, and as an adverb, “bitterly”. Ruth 1:20’s מָרָא, Naomi’s new name, is this word in an Aramaic-looking spelling.",
+      "senses": [
+        {
+          "id": "bitter-taste",
+          "gloss": "bitter (of taste)",
+          "definition": "Of what is tasted: unpleasant to drink or eat, the opposite of sweet.",
+          "evidence": [
+            {
+              "ref": "Exo.15.23",
+              "role": "defining",
+              "note": "They could not drink the water of Marah “כִּי מָרִים הֵם, because they were bitter”; so the place was called Marah. When a tree is cast in, וַיִּמְתְּקוּ הַמָּיִם, the water became sweet (Exo 15:25)."
+            },
+            {
+              "ref": "Isa.5.20",
+              "role": "defining",
+              "note": "Woe to those who put מַר for מָתוֹק, sweet, and sweet for bitter, set beside evil for good and darkness for light."
+            },
+            {
+              "ref": "Pro.27.7",
+              "role": "defining",
+              "note": "To a hungry soul every מַר is sweet."
+            },
+            {
+              "ref": "Pro.5.4",
+              "note": "The strange woman’s end is מָרָה כַלַּעֲנָה, bitter as wormwood."
+            },
+            {
+              "ref": "Num.5.18",
+              "note": "מֵי הַמָּרִים הַמְאָרֲרִים, the water of bitterness that brings the curse, given to the wife suspected of unfaithfulness."
+            },
+            {
+              "ref": "Num.5.24",
+              "note": "The water that brings the curse “will go into her לְמָרִים, for bitterness”."
+            },
+            {
+              "ref": "Num.5.27"
+            }
+          ]
+        },
+        {
+          "id": "bitter-soul",
+          "gloss": "bitter of soul: grieved, distressed; fierce",
+          "definition": "Of a person, with נֶפֶשׁ: grief or distress felt as bitterness within, which drives to prayer, complaint or weeping; of fighting men, the fierce temper of the distressed.",
+          "kin": [
+            "marar-qal-grief",
+            "marah-bitterness",
+            "morah-grief"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.1.10",
+              "role": "defining",
+              "note": "Hannah, childless and provoked, וְהִיא מָרַת נָפֶשׁ, prayed to Yahweh and wept."
+            },
+            {
+              "ref": "Job.7.11",
+              "role": "defining",
+              "note": "“I will speak in the anguish (צַר) of my spirit; I will complain בְּמַר נַפְשִׁי.”"
+            },
+            {
+              "ref": "Job.10.1",
+              "note": "“My soul is weary of my life … I will speak בְּמַר נַפְשִׁי.”"
+            },
+            {
+              "ref": "Job.3.20",
+              "role": "defining",
+              "note": "“Why is light given to the wretched, and life לְמָרֵי נָפֶשׁ, who long for death?” (Job 3:21)."
+            },
+            {
+              "ref": "Pro.31.6",
+              "note": "“Give strong drink to the one perishing, and wine לְמָרֵי נָפֶשׁ.”"
+            },
+            {
+              "ref": "Isa.38.15",
+              "note": "Hezekiah, after his sickness: “I will walk softly all my years עַל־מַר נַפְשִׁי.”"
+            },
+            {
+              "ref": "Job.21.25",
+              "note": "One dies בְּנֶפֶשׁ מָרָה, never having eaten of good."
+            },
+            {
+              "ref": "Ezk.27.31",
+              "note": "They weep over Tyre בְּמַר־נֶפֶשׁ, a bitter mourning."
+            },
+            {
+              "ref": "1Sa.22.2",
+              "note": "To David gathered everyone in distress, in debt, and every man מַר־נֶפֶשׁ."
+            },
+            {
+              "ref": "Jdg.18.25",
+              "role": "defining",
+              "note": "“Lest אֲנָשִׁים מָרֵי נֶפֶשׁ fall on you and you lose your life”: men desperate and fierce."
+            },
+            {
+              "ref": "2Sa.17.8",
+              "role": "defining",
+              "note": "David and his men are mighty and מָרֵי נֶפֶשׁ, “like a bear robbed of her cubs in the field”."
+            },
+            {
+              "ref": "Rut.1.20",
+              "role": "defining",
+              "note": "“Do not call me נָעֳמִי (pleasant); call me מָרָא, for Shaddai has made it very bitter for me.”"
+            }
+          ]
+        },
+        {
+          "id": "bitter-cry",
+          "gloss": "bitter (of a cry); bitterly",
+          "definition": "Of crying, weeping and mourning: with the bitterness of grief; as an adverb, “bitterly”.",
+          "evidence": [
+            {
+              "ref": "Gen.27.34",
+              "role": "defining",
+              "note": "When Esau heard, he cried צְעָקָה גְּדֹלָה וּמָרָה עַד־מְאֹד, “a great and exceedingly bitter cry”, and said “Bless me, me also”."
+            },
+            {
+              "ref": "Est.4.1",
+              "role": "defining",
+              "note": "Mordecai in sackcloth and ashes cried זְעָקָה גְדֹלָה וּמָרָה."
+            },
+            {
+              "ref": "Isa.33.7",
+              "role": "defining",
+              "note": "The messengers of peace מַר יִבְכָּיוּן, weep bitterly."
+            },
+            {
+              "ref": "Ezk.27.30",
+              "note": "They cry out over Tyre bitterly, with dust on their heads."
+            },
+            {
+              "ref": "Zep.1.14",
+              "note": "The sound of the day of Yahweh: “bitterly the mighty man cries out there.”"
+            },
+            {
+              "ref": "Ezk.3.14",
+              "note": "The prophet, lifted by the spirit, went מַר בַּחֲמַת רוּחִי, bitter in the heat of his spirit, with the scroll of “lamentations, mourning and woe” (Ezk 2:10) in him."
+            }
+          ]
+        },
+        {
+          "id": "bitter-evil",
+          "gloss": "bitter (of an outcome, a day, a word); harsh, fierce",
+          "definition": "Of what comes on a person: hard and grievous, set beside evil; of a word, wounding; of a nation, fierce.",
+          "evidence": [
+            {
+              "ref": "Jer.2.19",
+              "role": "defining",
+              "note": "“Know and see that it is רַע וָמָר, evil and bitter, that you have forsaken Yahweh your God.”"
+            },
+            {
+              "ref": "Jer.4.18",
+              "role": "defining",
+              "note": "“Your way and your deeds have done this to you; this is your evil, for it is מָר, for it has reached your heart.”"
+            },
+            {
+              "ref": "2Sa.2.26",
+              "role": "defining",
+              "note": "Abner: “Shall the sword devour for ever? Do you not know that it will be מָרָה at the last?”"
+            },
+            {
+              "ref": "Amo.8.10",
+              "note": "“I will turn your feasts into mourning … and its end like a יוֹם מָר.”"
+            },
+            {
+              "ref": "1Sa.15.32",
+              "note": "Agag: “Surely מַר־הַמָּוֶת, the bitterness of death, is past.”"
+            },
+            {
+              "ref": "Ecc.7.26",
+              "note": "“I find more מַר than death the woman whose heart is snares and nets.”"
+            },
+            {
+              "ref": "Psa.64.4",
+              "note": "They sharpen their tongue like a sword and aim their arrow, דָּבָר מָר, a bitter word."
+            },
+            {
+              "ref": "Hab.1.6",
+              "note": "The Chaldeans, הַגּוֹי הַמַּר וְהַנִּמְהָר, the bitter and hasty nation."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πικρός",
+          "gloss": "bitter",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.15.23, מָרִים → πικρός; Isa.5.20, מָר → πικρόν; Psa.64.4, Hab.1.6 the same"
+            },
+            {
+              "ref": "Jas.3.11",
+              "role": "defining",
+              "note": "“Does a spring pour out from the same opening τὸ γλυκὺ καὶ τὸ πικρόν?”: sweet and bitter, as in Isa 5:20."
+            },
+            {
+              "ref": "Jas.3.14",
+              "note": "ζῆλον πικρόν, bitter jealousy in the heart."
+            }
+          ]
+        },
+        {
+          "lemma": "πικρία",
+          "gloss": "bitterness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.7.11, מַר → πικρίαν; Job.10.1 → πικρίᾳ; Job.21.25 → πικρίας"
+            },
+            {
+              "ref": "Act.8.23",
+              "note": "Simon is “in the gall of bitterness (χολὴν πικρίας) and the bond of iniquity”."
+            },
+            {
+              "ref": "Eph.4.31",
+              "note": "Let all πικρία, wrath and anger be put away from you."
+            },
+            {
+              "ref": "Heb.12.15",
+              "note": "“Lest any ῥίζα πικρίας springing up trouble you”, from the root bearing gall and wormwood of Deu 29:17."
+            },
+            {
+              "ref": "Rom.3.14",
+              "note": "“Whose mouth is full of cursing and πικρίας”, from Psa 10:7."
+            }
+          ]
+        },
+        {
+          "lemma": "πικρῶς",
+          "gloss": "bitterly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.33.7, מַר → πικρῶς; Isa.22.4 (piel of מָרַר) → πικρῶς"
+            },
+            {
+              "ref": "Mat.26.75",
+              "role": "defining",
+              "note": "Peter “went out and wept πικρῶς”, as the messengers of peace weep מַר (Isa 33:7)."
+            },
+            {
+              "ref": "Luk.22.62"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "לַעֲנָה",
+            "note": "Wormwood, the bitter plant beside it.",
+            "evidence": [
+              {
+                "ref": "Pro.5.4"
+              },
+              {
+                "ref": "Lam.3.15"
+              }
+            ]
+          },
+          {
+            "lemma": "רַע",
+            "note": "Evil: what is bitter is grievous.",
+            "evidence": [
+              {
+                "ref": "Jer.2.19"
+              },
+              {
+                "ref": "Jer.4.18"
+              }
+            ]
+          },
+          {
+            "lemma": "צַר",
+            "note": "Anguish, distress of spirit, beside bitterness of soul.",
+            "evidence": [
+              {
+                "ref": "Job.7.11"
+              },
+              {
+                "ref": "1Sa.22.2",
+                "note": "אִישׁ מָצוֹק beside אִישׁ מַר־נֶפֶשׁ."
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "מָתוֹק",
+            "note": "Sweet.",
+            "evidence": [
+              {
+                "ref": "Isa.5.20"
+              },
+              {
+                "ref": "Pro.27.7"
+              },
+              {
+                "ref": "Exo.15.25",
+                "note": "The bitter water is made sweet, וַיִּמְתְּקוּ."
+              }
+            ]
+          },
+          {
+            "lemma": "נָעֳמִי",
+            "note": "Naomi, “pleasant”, set against מָרָא.",
+            "evidence": [
+              {
+                "ref": "Rut.1.20"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מַר נֶפֶשׁ",
+            "gloss": "bitter of soul: grieved, distressed; desperate",
+            "evidence": [
+              {
+                "ref": "1Sa.1.10"
+              },
+              {
+                "ref": "1Sa.22.2"
+              },
+              {
+                "ref": "Jdg.18.25"
+              },
+              {
+                "ref": "2Sa.17.8"
+              },
+              {
+                "ref": "Job.3.20"
+              },
+              {
+                "ref": "Pro.31.6"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּמַר נַפְשִׁי",
+            "gloss": "in the bitterness of my soul",
+            "evidence": [
+              {
+                "ref": "Job.7.11"
+              },
+              {
+                "ref": "Job.10.1"
+              },
+              {
+                "ref": "Isa.38.15"
+              },
+              {
+                "ref": "Ezk.27.31"
+              }
+            ]
+          },
+          {
+            "phrase": "צְעָקָה גְּדֹלָה וּמָרָה",
+            "gloss": "a great and bitter cry",
+            "evidence": [
+              {
+                "ref": "Gen.27.34"
+              },
+              {
+                "ref": "Est.4.1"
+              }
+            ]
+          },
+          {
+            "phrase": "מֵי הַמָּרִים",
+            "gloss": "the water of bitterness (the ordeal of jealousy)",
+            "evidence": [
+              {
+                "ref": "Num.5.18"
+              },
+              {
+                "ref": "Num.5.19"
+              },
+              {
+                "ref": "Num.5.23"
+              },
+              {
+                "ref": "Num.5.24"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָרַר",
+      "pos": "verb",
+      "gloss": "be bitter; make bitter; (hithpalpel) be enraged",
+      "bdb": [
+        "m.dq.aa"
+      ],
+      "cognate_ids": [
+        "akk-mararu",
+        "arc-merar"
+      ],
+      "summary": "Rare in every stem. The qal is to be bitter, to taste or to the soul; the piel and hiphil make someone’s life or soul bitter, and the hiphil is also to grieve bitterly; the hithpalpel of Daniel is to be enraged. Most of the tokens the corpus files under the verb’s key are the adjective מַר by spelling.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be bitter (to taste; to the soul)",
+          "cognate_ids": [
+            "ar-murr"
+          ],
+          "senses": [
+            {
+              "gloss": "be bitter to taste",
+              "definition": "Of drink: taste bitter to the one who drinks it.",
+              "kin": [
+                "bitter-taste"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.24.9",
+                  "role": "defining",
+                  "note": "In the desolated land they drink no wine with song; יֵמַר שֵׁכָר לְשֹׁתָיו, strong drink is bitter to those who drink it."
+                }
+              ]
+            },
+            {
+              "id": "marar-qal-grief",
+              "gloss": "be bitter, grieved (of the soul)",
+              "definition": "Of a person or the soul: be in bitter grief, usually with לְ of the one who feels it, “it is bitter to me”.",
+              "evidence": [
+                {
+                  "ref": "Rut.1.13",
+                  "role": "defining",
+                  "note": "Naomi: “No, my daughters, כִּי־מַר־לִי מְאֹד מִכֶּם, for it is exceedingly bitter to me for your sakes, for the hand of Yahweh has gone out against me.”"
+                },
+                {
+                  "ref": "2Ki.4.27",
+                  "role": "defining",
+                  "note": "The Shunammite at Elisha’s feet: “Let her alone, כִּי־נַפְשָׁהּ מָרָה־לָהּ, for her soul is bitter to her.”"
+                },
+                {
+                  "ref": "1Sa.30.6",
+                  "role": "defining",
+                  "note": "At Ziklag the people spoke of stoning David, כִּי־מָרָה נֶפֶשׁ כָּל־הָעָם, for the soul of all the people was bitter, each for his sons and daughters. The corpus’s analysis files this form under מרה; its sense is this verb’s."
+                },
+                {
+                  "ref": "Lam.1.4",
+                  "note": "Zion’s roads mourn, her virgins grieve, וְהִיא מַר־לָהּ, and she is in bitterness."
+                },
+                {
+                  "ref": "Isa.38.17",
+                  "note": "Hezekiah: “Behold, for peace מַר־לִי מָר, I had great bitterness; but you have loved my soul out of the pit of corruption.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make bitter; weep bitterly",
+          "cognate_ids": [
+            "ar-marrara"
+          ],
+          "senses": [
+            {
+              "id": "marar-embitter",
+              "gloss": "make bitter, embitter (a life); harass",
+              "definition": "Make someone’s life bitter by hard treatment.",
+              "evidence": [
+                {
+                  "ref": "Exo.1.14",
+                  "role": "defining",
+                  "note": "The Egyptians וַיְמָרְרוּ אֶת־חַיֵּיהֶם, made their lives bitter, with hard service in mortar and brick and in the field."
+                },
+                {
+                  "ref": "Gen.49.23",
+                  "note": "Of Joseph: “The archers וַיְמָרֲרֻהוּ, embittered him, shot at him and hated him”; yet his bow abode in strength (Gen 49:24)."
+                }
+              ]
+            },
+            {
+              "gloss": "be bitter in weeping",
+              "definition": "Weep with bitterness.",
+              "evidence": [
+                {
+                  "ref": "Isa.22.4",
+                  "role": "defining",
+                  "note": "“Look away from me; אֲמָרֵר בַּבֶּכִי, let me be bitter in weeping; do not hasten to comfort me over the destruction of the daughter of my people.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make bitter, deal bitterly; grieve bitterly; provoke",
+          "cognate_ids": [
+            "ar-marrara",
+            "akk-mararu"
+          ],
+          "senses": [
+            {
+              "id": "marar-hiphil-afflict",
+              "gloss": "make bitter, deal bitterly with",
+              "definition": "Of God: bring bitterness on a person, afflict them.",
+              "evidence": [
+                {
+                  "ref": "Rut.1.20",
+                  "role": "defining",
+                  "note": "“Call me מָרָא, כִּי־הֵמַר שַׁדַּי לִי מְאֹד, for Shaddai has dealt very bitterly with me”; “Yahweh has testified against me” (Rut 1:21)."
+                },
+                {
+                  "ref": "Job.27.2",
+                  "role": "defining",
+                  "note": "“As God lives, who has taken away my right, וְשַׁדַּי הֵמַר נַפְשִׁי, and Shaddai who has made my soul bitter.”"
+                }
+              ]
+            },
+            {
+              "gloss": "grieve bitterly, mourn",
+              "definition": "Feel and show bitter grief over someone, as for a firstborn son.",
+              "evidence": [
+                {
+                  "ref": "Zec.12.10",
+                  "role": "defining",
+                  "note": "“They will look to me whom they pierced, and mourn (סָפְדוּ) over him as one mourns for an only son, וְהָמֵר עָלָיו כְּהָמֵר עַל־הַבְּכוֹר, and be in bitterness over him as one is in bitterness over a firstborn.”"
+                }
+              ]
+            },
+            {
+              "gloss": "provoke, embitter (someone)",
+              "definition": "Cause bitterness in someone by not heeding him.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.21",
+                  "role": "defining",
+                  "note": "Of the messenger sent before Israel: “Take heed before him and obey his voice, אַל־תַּמֵּר בּוֹ, do not embitter him, for he will not bear your transgression, for my name is in him.” The form is the geminate hiphil of this verb, not of מרה “rebel”, though the sense is close to it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpalpel",
+          "gloss": "be enraged",
+          "cognate_ids": [
+            "ar-marmara"
+          ],
+          "senses": [
+            {
+              "id": "marar-enraged",
+              "gloss": "be enraged, become bitter against",
+              "definition": "Of a beast or a king in Daniel’s visions: be stirred to bitter rage and go out to fight.",
+              "evidence": [
+                {
+                  "ref": "Dan.8.7",
+                  "role": "defining",
+                  "note": "The he-goat came to the ram וַיִּתְמַרְמַר אֵלָיו, and was enraged against him, struck him and broke his two horns."
+                },
+                {
+                  "ref": "Dan.11.11",
+                  "role": "defining",
+                  "note": "וְיִתְמַרְמַר מֶלֶךְ הַנֶּגֶב, the king of the south will be enraged and go out and fight with the king of the north."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πικραίνω",
+          "gloss": "make bitter, embitter",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Rut.1.13, מַר־ → ἐπικράνθη; Rut.1.20, הֵמַר → ἐπικράνθη"
+            },
+            {
+              "ref": "Rev.10.9",
+              "role": "defining",
+              "note": "The little scroll “will make your belly bitter (πικρανεῖ), but in your mouth it will be sweet as honey”, as Ezekiel’s scroll was sweet (Ezk 3:3) and he went bitter (Ezk 3:14)."
+            },
+            {
+              "ref": "Rev.10.10"
+            },
+            {
+              "ref": "Rev.8.11",
+              "note": "Many died of the waters, “because they were made bitter”."
+            },
+            {
+              "ref": "Col.3.19",
+              "note": "“Husbands, love your wives, and do not be embittered (πικραίνεσθε) against them.”"
+            }
+          ]
+        },
+        {
+          "lemma": "θυμόω",
+          "gloss": "be enraged",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.8.7, יִּתְמַרְמַר → ἐθυμώθη"
+            },
+            {
+              "ref": "Mat.2.16",
+              "note": "Herod, mocked by the wise men, ἐθυμώθη λίαν, was exceedingly enraged."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "סָפַד",
+            "note": "Mourn, wail: the hiphil beside it.",
+            "evidence": [
+              {
+                "ref": "Zec.12.10"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּכָה",
+            "note": "Weep.",
+            "evidence": [
+              {
+                "ref": "Isa.22.4"
+              },
+              {
+                "ref": "1Sa.1.10",
+                "note": "With the adjective."
+              }
+            ]
+          },
+          {
+            "lemma": "הֵסִיר מִשְׁפָּט",
+            "note": "Take away one’s right, beside “make my soul bitter”.",
+            "evidence": [
+              {
+                "ref": "Job.27.2"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מַר־לִי",
+            "gloss": "it is bitter to me: I am in bitter grief",
+            "evidence": [
+              {
+                "ref": "Rut.1.13"
+              },
+              {
+                "ref": "Lam.1.4"
+              },
+              {
+                "ref": "Isa.38.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "myrrh",
+      "bdb": [
+        "m.dq.ac"
+      ],
+      "cognate_ids": [
+        "ar-murr",
+        "akk-murru",
+        "phn-mr"
+      ],
+      "summary": "Myrrh, the fragrant gum of a tree, also spelled מוֹר. The name is the root’s “bitter”: Arabic calls the same gum murr, “the bitter”, and Akkadian murru is both bitterness and myrrh.",
+      "senses": [
+        {
+          "gloss": "myrrh",
+          "definition": "A costly, fragrant gum, chief of the spices of the holy anointing oil, and a perfume for garments, beds and the body; מָר־דְּרוֹר and מוֹר עֹבֵר are myrrh that flows of itself.",
+          "evidence": [
+            {
+              "ref": "Exo.30.23",
+              "role": "defining",
+              "note": "For the holy anointing oil: “take the chief spices, מָר־דְּרוֹר, flowing myrrh, five hundred”, with cinnamon, cane and cassia."
+            },
+            {
+              "ref": "Psa.45.9",
+              "role": "defining",
+              "note": "The king’s garments are all מֹר and aloes and cassia."
+            },
+            {
+              "ref": "Sng.5.5",
+              "role": "defining",
+              "note": "“My hands dripped מוֹר and my fingers מוֹר עֹבֵר”, liquid myrrh."
+            },
+            {
+              "ref": "Sng.5.13",
+              "note": "His lips are lilies dripping flowing myrrh."
+            },
+            {
+              "ref": "Sng.1.13",
+              "note": "“A bundle of myrrh is my beloved to me.”"
+            },
+            {
+              "ref": "Sng.3.6",
+              "note": "Perfumed with myrrh and frankincense, coming up from the wilderness."
+            },
+            {
+              "ref": "Sng.4.6",
+              "note": "הַר הַמּוֹר, the mountain of myrrh, beside the hill of frankincense."
+            },
+            {
+              "ref": "Sng.4.14"
+            },
+            {
+              "ref": "Sng.5.1"
+            },
+            {
+              "ref": "Pro.7.17",
+              "note": "The adulteress has perfumed her bed with myrrh, aloes and cinnamon."
+            },
+            {
+              "ref": "Est.2.12",
+              "note": "Six months with שֶׁמֶן הַמֹּר, oil of myrrh, before going in to the king."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σμύρνα",
+          "gloss": "myrrh",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.30.23, מָר → σμύρνης; Psa.45.9 → σμύρνα; Sng.3.6, 4.6, 4.14, 5.1, 5.5, 5.13 the same"
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. σμύρνα",
+              "note": "“[in LXX for מוֹר מֹר]”, myrrh, “used as an unguent and for embalming”."
+            },
+            {
+              "ref": "Mat.2.11",
+              "role": "defining",
+              "note": "The wise men give the child gold, frankincense and σμύρναν."
+            },
+            {
+              "ref": "Jhn.19.39",
+              "role": "defining",
+              "note": "Nicodemus brings a mixture of σμύρνης and aloes, about a hundred pounds, to bury Jesus; myrrh and aloes together, as in Psa 45:9 and Sng 4:14."
+            },
+            {
+              "ref": "Mrk.15.23",
+              "note": "They offered him wine mingled with myrrh (ἐσμυρνισμένον, from σμύρνα), and he did not take it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרֹרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bitter thing; gall; venom",
+      "bdb": [
+        "m.dq.ai"
+      ],
+      "cognate_ids": [
+        "akk-martu",
+        "ar-mirrah",
+        "uga-mrr"
+      ],
+      "senses": [
+        {
+          "gloss": "bitter thing, bitterness",
+          "definition": "Something bitter: bitter grapes, bitter charges written against a man.",
+          "kin": [
+            "bitter-taste"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.32.32",
+              "role": "defining",
+              "note": "Their vine is of the vine of Sodom; their grapes are grapes of poison (רוֹשׁ), אַשְׁכְּלֹת מְרֹרֹת לָמוֹ, they have bitter clusters."
+            },
+            {
+              "ref": "Job.13.26",
+              "note": "“You write מְרֹרוֹת, bitter things, against me, and make me inherit the iniquities of my youth.”"
+            }
+          ]
+        },
+        {
+          "id": "merorah-venom",
+          "gloss": "venom; gall",
+          "definition": "The bitter fluid of the body: the venom of snakes, and the gall of a man pierced through.",
+          "evidence": [
+            {
+              "ref": "Job.20.14",
+              "role": "defining",
+              "note": "The wicked man’s food turns in his bowels, מְרוֹרַת פְּתָנִים, the venom of asps, within him; “he shall suck the poison of asps” (Job 20:16)."
+            },
+            {
+              "ref": "Job.20.25",
+              "role": "defining",
+              "note": "The arrow is drawn out of his body, and the glittering point מִמְּרֹרָתוֹ, out of his gall."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χολή",
+          "gloss": "gall, bile",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.20.14, מְרוֹרַת → χολή"
+            },
+            {
+              "ref": "Mat.27.34",
+              "note": "They gave him vinegar mingled with χολῆς to drink, and having tasted he would not drink; the Peshitta has מְרָרְתָּא of the root."
+            },
+            {
+              "ref": "Act.8.23",
+              "note": "“In the χολὴν πικρίας, the gall of bitterness.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּמְרוּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bitterness (always plural)",
+      "bdb": [
+        "m.dq.ao"
+      ],
+      "cognate_ids": [
+        "ar-mararah"
+      ],
+      "summary": "Always the plural תַּמְרוּרִים, of bitter mourning. Jer 31:21’s תַּמְרוּרִים, “signposts”, beside צִיֻּנִים, is a different word (of תמר, upright like a palm), filed with it by spelling.",
+      "senses": [
+        {
+          "gloss": "bitterness, bitter lamentation",
+          "definition": "Bitter grief, in the phrases “a lament of bitterness” and “weeping of bitterness”; as an adverb, “bitterly”.",
+          "kin": [
+            "bitter-cry"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.31.15",
+              "role": "defining",
+              "note": "“A voice is heard in Ramah, lamentation, בְּכִי תַמְרוּרִים, bitter weeping: Rachel weeping for her children.” Matthew quotes it of the children of Bethlehem (Mat 2:18)."
+            },
+            {
+              "ref": "Jer.6.26",
+              "role": "defining",
+              "note": "“Make mourning as for an only son, מִסְפַּד תַּמְרוּרִים, a most bitter lament.”"
+            },
+            {
+              "ref": "Hos.12.15",
+              "note": "“Ephraim has provoked to anger תַּמְרוּרִים, bitterly.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָרֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bitter herb (plural מְרֹרִים)",
+      "bdb": [
+        "m.dq.ah"
+      ],
+      "cognate_ids": [
+        "akk-marru",
+        "akk-muraru"
+      ],
+      "summary": "Bitter herbs, eaten with the Passover lamb; in Lamentations, the bitterness God gives in affliction. Akkadian names bitter lettuces and vegetables from the same root.",
+      "senses": [
+        {
+          "gloss": "bitter herbs",
+          "definition": "Bitter plants eaten with the Passover lamb and unleavened bread; figuratively, the bitterness of affliction one is made to eat.",
+          "kin": [
+            "bitter-taste",
+            "marar-embitter"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.12.8",
+              "role": "defining",
+              "note": "“They shall eat the flesh that night, roasted with fire, and unleavened bread; עַל־מְרֹרִים, with bitter herbs, they shall eat it.”"
+            },
+            {
+              "ref": "Num.9.11",
+              "role": "defining",
+              "note": "The second-month Passover: “with unleavened bread and מְרֹרִים they shall eat it.”"
+            },
+            {
+              "ref": "Lam.3.15",
+              "role": "defining",
+              "note": "“He has filled me בַמְּרוֹרִים, he has made me drunk with wormwood (לַעֲנָה).”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πικρία",
+          "gloss": "bitterness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lam.3.15, מְּרוֹרִים → πικρίας (Exo.12.8 and Num.9.11 have πικρίδων, bitter herbs)"
+            },
+            {
+              "ref": "Heb.12.15",
+              "note": "“A root of πικρίας springing up.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "לַעֲנָה",
+            "note": "Wormwood.",
+            "evidence": [
+              {
+                "ref": "Lam.3.15"
+              }
+            ]
+          },
+          {
+            "lemma": "מַצָּה",
+            "note": "Unleavened bread, eaten with it at the Passover.",
+            "evidence": [
+              {
+                "ref": "Exo.12.8"
+              },
+              {
+                "ref": "Num.9.11"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מַצּוֹת וּמְרֹרִים",
+            "gloss": "unleavened bread and bitter herbs",
+            "evidence": [
+              {
+                "ref": "Exo.12.8"
+              },
+              {
+                "ref": "Num.9.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְרֵרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "gall",
+      "bdb": [
+        "m.dq.aj"
+      ],
+      "cognate_ids": [
+        "akk-martu",
+        "ar-mirrah"
+      ],
+      "senses": [
+        {
+          "gloss": "gall, bile",
+          "definition": "The bitter fluid within the body, poured out when one is pierced.",
+          "kin": [
+            "merorah-venom"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.16.13",
+              "role": "defining",
+              "note": "“His archers surround me; he splits my kidneys and does not spare; יִשְׁפֹּךְ לָאָרֶץ מְרֵרָתִי, he pours out my gall on the ground.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χολή",
+          "gloss": "gall, bile",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. χολή",
+              "note": "“[in LXX for רֹאשׁ, לַעֲנָה, מְרֵרָה]”."
+            },
+            {
+              "ref": "Mat.27.34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָרָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bitterness (of soul)",
+      "bdb": [
+        "m.dq.af"
+      ],
+      "cognate_ids": [
+        "ar-mararah"
+      ],
+      "senses": [
+        {
+          "id": "marah-bitterness",
+          "gloss": "bitterness, grief",
+          "definition": "The grief a person feels within, known to his own heart.",
+          "evidence": [
+            {
+              "ref": "Pro.14.10",
+              "role": "defining",
+              "note": "“The heart knows מָרַּת נַפְשׁוֹ, its own bitterness, and in its joy a stranger does not share.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֹרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bitterness, grief",
+      "bdb": [
+        "m.dq.ag"
+      ],
+      "cognate_ids": [
+        "ar-mararah"
+      ],
+      "senses": [
+        {
+          "id": "morah-grief",
+          "gloss": "grief, bitterness (of spirit)",
+          "definition": "A cause of bitter grief to someone.",
+          "evidence": [
+            {
+              "ref": "Gen.26.35",
+              "role": "defining",
+              "note": "Esau’s Hittite wives וַתִּהְיֶיןָ מֹרַת רוּחַ לְיִצְחָק וּלְרִבְקָה, were a bitterness of spirit to Isaac and Rebekah."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרִירִי",
+      "pos": "adjective",
+      "gloss": "bitter, deadly",
+      "bdb": [
+        "m.dq.ak"
+      ],
+      "cognate_ids": [
+        "uga-mrr",
+        "ar-murr"
+      ],
+      "senses": [
+        {
+          "gloss": "bitter (of a pestilence)",
+          "definition": "Of a plague sent in judgement: bitter, deadly.",
+          "evidence": [
+            {
+              "ref": "Deu.32.24",
+              "role": "defining",
+              "note": "“Wasted with hunger, devoured by burning heat וְקֶטֶב מְרִירִי, and bitter destruction”, with the teeth of beasts and the poison of crawling things."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרִירוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bitterness",
+      "bdb": [
+        "m.dq.al"
+      ],
+      "cognate_ids": [
+        "ar-mararah"
+      ],
+      "senses": [
+        {
+          "gloss": "bitterness (of grief)",
+          "definition": "Bitter grief shown openly.",
+          "kin": [
+            "bitter-cry"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.21.11",
+              "role": "defining",
+              "note": "“Groan with breaking loins, וּבִמְרִירוּת, and with bitterness groan before their eyes”, at the news that every heart will melt (Ezk 21:12)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὀδύνη",
+          "gloss": "pain, grief",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.21.11, מְרִירוּת → ὀδύναις; Pro.17.25, מֶמֶר → ὀδύνη"
+            },
+            {
+              "ref": "Rom.9.2",
+              "note": "Paul’s “great sorrow and unceasing ὀδύνη in my heart” for Israel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֶמֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bitterness, grief",
+      "bdb": [
+        "m.dq.am"
+      ],
+      "cognate_ids": [
+        "ar-mararah"
+      ],
+      "senses": [
+        {
+          "gloss": "bitterness, grief",
+          "definition": "A cause of bitter grief, parallel to vexation.",
+          "evidence": [
+            {
+              "ref": "Pro.17.25",
+              "role": "defining",
+              "note": "“A foolish son is כַּעַס, a vexation, to his father, וּמֶמֶר, and bitterness, to her who bore him.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַמְרוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bitterness (plural)",
+      "bdb": [
+        "m.dq.an"
+      ],
+      "cognate_ids": [
+        "ar-mararah"
+      ],
+      "senses": [
+        {
+          "gloss": "bitter things, bitterness",
+          "definition": "Bitterness one is filled with in affliction.",
+          "kin": [
+            "marar-hiphil-afflict"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.9.18",
+              "role": "defining",
+              "note": "“He will not let me take my breath, but fills me מַמְּרֹרִים, with bitterness.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "drop",
+      "bdb": [
+        "m.dr.ab"
+      ],
+      "cognate_ids": [
+        "ar-marra"
+      ],
+      "summary": "A drop, once only. Its link to the root’s “bitter” is not clear; it may be a second older root in the same letters, “pass, flow”, as Arabic marra is to pass and of water to flow, so a drop that runs off a bucket. One use and a possible cognate only.",
+      "senses": [
+        {
+          "gloss": "drop",
+          "definition": "A drop that runs from a bucket: a thing too small to count.",
+          "evidence": [
+            {
+              "ref": "Isa.40.15",
+              "role": "defining",
+              "note": "“Behold, the nations are כְּמַר מִדְּלִי, as a drop from a bucket, and counted as the dust on the scales.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרַר",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "be bitter; (ethpalpal) be made bitter, be provoked",
+      "summary": "The Peshitta’s verb ܡܪ (mar): be bitter, for πικραίνω, and in the reflexive ܐܬܡܪܡܪ (ʾeṯmarmar), the same doubled form as Hebrew הִתְמַרְמֵר, both of water made bitter and of a spirit provoked.",
+      "cognate_ids": [
+        "syc-mrr"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be bitter",
+          "senses": [
+            {
+              "gloss": "be bitter (of the belly)",
+              "definition": "Taste or become bitter within.",
+              "kin": [
+                "bitter-taste"
+              ],
+              "evidence": [
+                {
+                  "ref": "Rev.10.9",
+                  "role": "defining",
+                  "note": "ܘܢܡܪ ܠܟ ܟܪܣܟ, “and your belly will be bitter to you, but in your mouth it will be like honey.”"
+                },
+                {
+                  "ref": "Rev.10.10",
+                  "role": "defining",
+                  "note": "“When I had eaten it, ܡܪܬ ܟܪܣܝ, my belly was bitter.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpalpal",
+          "gloss": "be made bitter; be provoked",
+          "cognate_ids": [
+            "ar-marmara"
+          ],
+          "senses": [
+            {
+              "gloss": "be made bitter; be provoked",
+              "definition": "Of water, be made bitter; of a man’s spirit, be stirred to bitter indignation.",
+              "kin": [
+                "marar-enraged"
+              ],
+              "evidence": [
+                {
+                  "ref": "Rev.8.11",
+                  "role": "defining",
+                  "note": "Many died of the waters, “because they ܐܬܡܪܡܪܘ, were made bitter”."
+                },
+                {
+                  "ref": "Act.17.16",
+                  "role": "defining",
+                  "note": "At Athens Paul ܡܬܡܪܡܪ ܗܘܐ ܒܪܘܚܗ, “was provoked in his spirit”, seeing the city full of idols; the Greek has παρωξύνετο."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרִירָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "bitter",
+      "cognate_ids": [
+        "syc-mrr"
+      ],
+      "summary": "The Peshitta’s ܡܪܝܪܐ (marīrā), for πικρός and for the passive of πικραίνω, with the adverb ܡܪܝܪܐܝܬ (marīrāʾīṯ), “bitterly”, for πικρῶς.",
+      "senses": [
+        {
+          "gloss": "bitter (of water, of temper)",
+          "definition": "Bitter of taste, the opposite of sweet; of zeal or of a husband’s temper, harsh.",
+          "kin": [
+            "bitter-taste"
+          ],
+          "evidence": [
+            {
+              "ref": "Jas.3.11",
+              "role": "defining",
+              "note": "Can one spring send out water ܚܠܝܐ ܘܡܪܝܪܐ, sweet and bitter?"
+            },
+            {
+              "ref": "Jas.3.14",
+              "note": "ܚܣܡܐ ܡܪܝܪܐ, bitter envy."
+            },
+            {
+              "ref": "Col.3.19",
+              "note": "“Do not be ܡܪܝܪܝܢ, bitter, against them.”"
+            },
+            {
+              "ref": "Act.8.23",
+              "note": "ܒܟܒܕܐ ܡܪܝܪܬܐ, “in a bitter liver”, for χολὴν πικρίας: Simon is in bitterness."
+            }
+          ]
+        },
+        {
+          "gloss": "bitterly (adverb ܡܪܝܪܐܝܬ)",
+          "definition": "Of weeping: with bitter grief.",
+          "kin": [
+            "bitter-cry"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.26.75",
+              "role": "defining",
+              "note": "Peter “went out and wept ܡܪܝܪܐܝܬ”."
+            },
+            {
+              "ref": "Luk.22.62"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרִירוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bitterness",
+      "cognate_ids": [
+        "syc-mrr"
+      ],
+      "summary": "The Peshitta’s ܡܪܝܪܘܬܐ (marīrūṯā), for πικρία in Eph 4:31 and for πονηρία, wickedness, in Rom 1:29 and 1Co 5:8; its nouns ܡܪܬܐ and ܡܪܪܐ also render πικρία (Rom 3:14; Heb 12:15).",
+      "senses": [
+        {
+          "gloss": "bitterness, malice",
+          "definition": "Bitterness of spirit as a sin to be put away; malice.",
+          "evidence": [
+            {
+              "ref": "Eph.4.31",
+              "role": "defining",
+              "note": "ܟܠܗ ܡܪܝܪܘܬܐ, all bitterness and wrath and anger be taken from you."
+            },
+            {
+              "ref": "1Co.5.8",
+              "role": "defining",
+              "note": "“Let us keep the feast, not with the leaven of wickedness ܘܕܡܪܝܪܘܬܐ, and of bitterness, but with the unleavened bread of purity and holiness”, after “Christ our Passover is sacrificed” (1Co 5:7)."
+            },
+            {
+              "ref": "Rom.1.29",
+              "note": "Among the things they are filled with."
+            },
+            {
+              "ref": "Rom.3.14",
+              "note": "Their mouth is full of cursing ܘܡܪܬܐ, and bitterness."
+            },
+            {
+              "ref": "Heb.12.15",
+              "note": "ܥܩܪܐ ܕܡܪܪܐ, a root of bitterness."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרָרְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "gall",
+      "cognate_ids": [
+        "syc-mrr"
+      ],
+      "senses": [
+        {
+          "gloss": "gall",
+          "definition": "Gall, a bitter thing mixed into drink.",
+          "kin": [
+            "merorah-venom"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.27.34",
+              "role": "defining",
+              "note": "They gave him vinegar mixed ܒܡܪܪܬܐ, with gall, to drink; he tasted it and would not drink."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מוּרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "myrrh",
+      "cognate_ids": [
+        "syc-mrr"
+      ],
+      "senses": [
+        {
+          "gloss": "myrrh",
+          "definition": "Myrrh, given as a gift, mixed in wine, and used for burial.",
+          "evidence": [
+            {
+              "ref": "Mat.2.11",
+              "role": "defining",
+              "note": "Gold, frankincense ܘܡܘܪܐ, and myrrh."
+            },
+            {
+              "ref": "Mrk.15.23",
+              "role": "defining",
+              "note": "Wine mixed with ܡܘܪܐ, which he did not take."
+            },
+            {
+              "ref": "Jhn.19.39",
+              "note": "A mixture ܕܡܘܪܐ, of myrrh, and aloes for the burial."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-murr",
+      "lang": "ar",
+      "form": "مُرٌّ",
+      "translit": "murr",
+      "gloss": "bitter, the opposite of sweet; (al-murr) myrrh; (figurative) a bitter life",
+      "relation": "cognate",
+      "note": "Lane’s sources give it as bitter, “contr. of حُلْوٌ”, sweet, as מַר is set against מָתוֹק; and from it “Hence also, المُرُّ [Myrrh]”, the medicine: the same naming as Hebrew מֹר. عيش مُرٌّ, “a bitter life”, matches the Hebrew of grief.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2701, root مر, مُرٌّ (n38370)",
+          "note": "“Bitter; … contr. of حُلْوٌ … Hence also, المُرُّ [Myrrh;] a certain medicine … عيش مُرٌّ [A bitter life].”"
+        }
+      ]
+    },
+    {
+      "id": "ar-marrara",
+      "lang": "ar",
+      "form": "مَرَّرَهُ، أَمَرَّهُ",
+      "translit": "marrarahu, ʾamarrahu",
+      "gloss": "make it bitter",
+      "relation": "cognate",
+      "note": "Forms II and IV, “He, or it, made it bitter”: the Hebrew piel and hiphil.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2700, root مر, مرّرهُ (n38361)",
+          "note": "“He, or it, made it bitter; as also امرّهُ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-mararah",
+      "lang": "ar",
+      "form": "مَرَارَةٌ",
+      "translit": "marāra",
+      "gloss": "bitterness; (of the soul) loathing; the gall-bladder",
+      "relation": "cognate",
+      "note": "A noun of bitterness like מְרִירוּת and מָרָּה, used of the soul (مَرَارَةُ النَّفْس) as the Hebrew nouns are, and also the gall-bladder.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2701, root مر, مَرَارَةٌ (n38376)",
+          "note": "“Bitterness. Hence, مَرَارَةُ النَّفْس A loathing of the mind … [The gall-bladder;] that in which is the مِرَّة.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-mirrah",
+      "lang": "ar",
+      "form": "المِرَّةُ",
+      "translit": "al-mirra",
+      "gloss": "the gall, bile",
+      "relation": "cognate",
+      "note": "The bile, one of the body’s humours: Hebrew מְרֵרָה and מְרֹרָה of the gall.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2701, root مر, مِرَّةٌ (n38373)",
+          "note": "“المِرَّةُ [The gall, bile, or choler;] one of the humours of the body.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-marmara",
+      "lang": "ar",
+      "form": "مَرْمَرَ، تَمَرْمَرَ",
+      "translit": "marmara, tamarmara",
+      "gloss": "be angry; (also) murmur, grumble",
+      "relation": "cognate",
+      "note": "The same doubled form as the Hebrew hithpalpel הִתְמַרְמֵר, with the same sense, to be angry; tamarmara is its reflexive.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2700, root مر, مَرْمَرَ (n38367); تَمَرْمَرَ (n38368)",
+          "note": "“[He murmured; grumbled; as also تَمَرْمَرَ …] he was angry.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-marra",
+      "lang": "ar",
+      "form": "مَرَّ",
+      "translit": "marra",
+      "gloss": "pass, go by; (of water) run, flow",
+      "relation": "possible",
+      "note": "A second Arabic sense of the same letters, to pass and of water to flow. If מַר “drop” (Isa 40:15) belongs here, it is what runs off; Lane gives no noun “drop”, so this is recorded as possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2699, root مر, مَرَّ (n38360)",
+          "note": "“He, or it, passed; passed by … [It is also said of water, meaning It ran, or flowed.]”"
+        }
+      ]
+    },
+    {
+      "id": "akk-mararu",
+      "lang": "akk",
+      "form": "marāru",
+      "translit": "marāru",
+      "gloss": "be(come) bitter; make bitter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000012740, marāru [be(come) bitter] V",
+          "note": "“be(com)ing bitter; being bitter; make bitter”."
+        }
+      ]
+    },
+    {
+      "id": "akk-marru",
+      "lang": "akk",
+      "form": "marru",
+      "translit": "marru",
+      "gloss": "bitter; (a type of lettuce, of onion)",
+      "relation": "cognate",
+      "note": "Used of bitter plants, as Hebrew מָרֹר is.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000012850, marru [bitter] AJ",
+          "note": "“(a type of lettuce); (a type of onion); bitter; bitter one”."
+        }
+      ]
+    },
+    {
+      "id": "akk-muraru",
+      "lang": "akk",
+      "form": "murāru",
+      "translit": "murāru",
+      "gloss": "a bitter vegetable",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000077080, murāru [(a bitter vegetable)] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-murru",
+      "lang": "akk",
+      "form": "murru",
+      "translit": "murru",
+      "gloss": "myrrh; bitterness",
+      "relation": "cognate",
+      "note": "Both “bitterness” and “myrrh”, as Arabic murr: the gum is named for its taste.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "asbp x000073790, murru [myrrh] N; armep x000013430, murru [bitterness] N",
+          "note": "The armep entry glosses its uses as “myrrh”."
+        }
+      ]
+    },
+    {
+      "id": "akk-martu",
+      "lang": "akk",
+      "form": "martu",
+      "translit": "martu",
+      "gloss": "gall bladder; bile, gall",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000001250, martu [gall bladder] N",
+          "note": "“bile; envy; gall; gall bladder”."
+        }
+      ]
+    },
+    {
+      "id": "uga-mrr",
+      "lang": "uga",
+      "form": "𐎎𐎗𐎗",
+      "translit": "mrr",
+      "gloss": "(Š) to poison",
+      "relation": "cognate",
+      "note": "In a snake-charm text (KTU 1.100:4), the causative “to poison”: as Hebrew מְרוֹרַת פְּתָנִים, the venom of asps (Job 20:14). Segert also lists a separate m-r-r “strengthen, bless”, compared with Arabic marīr “strong”, which no Hebrew word here shares.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 193, §93 Glossary, /m-r-r/ Š",
+          "note": "“mrr inf. 1.100:4 … ‘to poison’ (cf. H. moror ‘bitter,’ mororat patanim Job 20:14 ‘poison of vipers’; Anc. Aram. mryr and Syr. mrir ‘bitter,’ Syr. martā ‘bile, poison’)”."
+        }
+      ]
+    },
+    {
+      "id": "phn-mr",
+      "lang": "phn",
+      "form": "𐤌𐤓",
+      "translit": "mr",
+      "gloss": "myrrh",
+      "relation": "cognate",
+      "note": "On a Byblos sarcophagus: bones gathered and treated “with myrrh and bdellium”, myrrh for burial as in Jhn 19:39.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 310, MR I",
+          "note": "“n.m. MYRRH. Byb. 13.1 (Ph) hn ʾnk škb bʾrn zn ʾsp bmr wbdlḥ, ‘Here do I lie, in this coffin, <my bones> gathered and <treated> with myrrh and bdellium.’”"
+        }
+      ]
+    },
+    {
+      "id": "arc-merar",
+      "lang": "arc",
+      "form": "מְרַר",
+      "translit": "mərar",
+      "gloss": "be bitter, grieve, mourn; (pael, aphel) embitter",
+      "relation": "cognate",
+      "note": "Jewish Aramaic; the Targums use it where the Hebrew has the verb: Isa 24:9, 1Sa 30:6, Zec 12:10 (peal); Ruth 1:13 (pael); Ruth 1:20 and Exo 1:14 (aphel).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְרַר",
+          "note": "“to be bitter; to grieve, mourn … Targ. Is. XXIV, 9. Targ. I Sam. XXX, 6 … Pa. to embitter, aggrieve. Targ. Ruth I, 13 … Af. same. Targ. Ruth I, 20 … Targ. Ex. I, 14”."
+        }
+      ]
+    },
+    {
+      "id": "arc-marir",
+      "lang": "arc",
+      "form": "מָרִיר",
+      "translit": "marīr",
+      "gloss": "bitter; embittered, grieving",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums of Gen 27:34, Exo 15:23, Num 5:18 and 1Sa 22:2 for the Hebrew adjective.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מָרִיר I",
+          "note": "“bitter; embittered, grieving. Targ. I Sam. XXII, 2. Targ. O. Gen. XXVII, 34 … Targ. Ex. XV, 23. Targ. Num. V, 18”."
+        }
+      ]
+    },
+    {
+      "id": "syc-mrr",
+      "lang": "syc",
+      "form": "ܡܪ",
+      "translit": "mar",
+      "gloss": "be bitter, grieve; (nouns) bitterness, gall, myrrh; (ܡܡܪܡܪܢܐ) provoking",
+      "relation": "cognate",
+      "note": "SEDRA files under one root the verb, the adjective marīrā, the nouns of bitterness and gall, and mūrā “myrrh”: the same family as the Hebrew. The words the Peshitta uses are words of this entry.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 1099 MR: lexemes 1834 MORA (myrrh), 1835 MMRMRNA (contentious; provoking), 1836 MR (bitter; grieve), 1837 MR;RA (bitter), 1838 MR;RA;T (bitterly), 1839 MR;ROTA (bitterness), 1840 MRRA (bitterness), 1841 MRRTA (gall), 1842 MRTA (bitterness)"
+        }
+      ]
+    },
+    {
+      "id": "gez-merar",
+      "lang": "gez",
+      "form": "ምረር",
+      "translit": "mərär",
+      "gloss": "bitterness, acridity",
+      "relation": "cognate",
+      "note": "Only Wiktionary consulted; Dillmann’s entry for መረረ not yet checked.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ምረር (mərär), noun"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "affliction-from-god",
+      "statement": "When the root speaks of who made a life bitter, the righteous name God. Naomi says “Shaddai has dealt very bitterly with me … Yahweh has testified against me” and “the hand of Yahweh has gone out against me” (Rut 1:13, 20–21); Job, “Shaddai has made my soul bitter” and “he fills me with bitterness” (Job 27:2; 9:18); Jeremiah, “he has filled me with bitter herbs” (Lam 3:15), of the one whose rod it was (Lam 3:1). Hezekiah says the bitterness was “for peace”, and that God loved his soul out of the pit (Isa 38:17); Naomi is given a son to restore her life (Rut 4:14–15), and Job is blessed at the last more than at the beginning (Job 42:12). Yahweh says of himself, “I make peace and create evil” (Isa 45:7). From the verses: scripture lays the bitterness of affliction to God’s hand, not to another power, and shows it bringing his servants to a good end.",
+      "evidence": [
+        {
+          "ref": "Rut.1.13"
+        },
+        {
+          "ref": "Rut.1.20"
+        },
+        {
+          "ref": "Rut.1.21"
+        },
+        {
+          "ref": "Job.27.2"
+        },
+        {
+          "ref": "Job.9.18"
+        },
+        {
+          "ref": "Lam.3.1"
+        },
+        {
+          "ref": "Lam.3.15"
+        },
+        {
+          "ref": "Isa.38.17"
+        },
+        {
+          "ref": "Rut.4.14",
+          "to": "Rut.4.15"
+        },
+        {
+          "ref": "Job.42.12"
+        },
+        {
+          "ref": "Isa.45.7"
+        }
+      ]
+    },
+    {
+      "topic": "passover",
+      "statement": "The Egyptians “made their lives bitter (וַיְמָרְרוּ) with hard service” (Exo 1:14), and the lamb whose blood Yahweh would see and pass over was eaten “with unleavened bread and bitter herbs (מְרֹרִים)” (Exo 12:8, 13), as again at the second-month Passover (Num 9:11). Scripture gives no reason for the herbs, but the root they share with Exo 1:14 sets them beside the bondage the lamb ended. Paul writes, “Christ our Passover is sacrificed for us; so let us keep the feast, not with old leaven, nor with the leaven of malice and wickedness” (1Co 5:7–8), where the Peshitta’s “wickedness” is ܡܪܝܪܘܬܐ, bitterness. From the verses: the feast was eaten with the bitterness of the bondage it ended, and its keepers now put away the bitterness in themselves.",
+      "evidence": [
+        {
+          "ref": "Exo.1.14"
+        },
+        {
+          "ref": "Exo.12.8"
+        },
+        {
+          "ref": "Exo.12.13"
+        },
+        {
+          "ref": "Num.9.11"
+        },
+        {
+          "ref": "1Co.5.7",
+          "to": "1Co.5.8"
+        },
+        {
+          "ref": "Eph.4.31"
+        }
+      ]
+    },
+    {
+      "topic": "the-pierced-one",
+      "statement": "In Zec 12:10 Yahweh says he will pour on the house of David and the people of Jerusalem a spirit of favour and supplications, “and they will look to me whom they pierced, and mourn over him as for an only son, וְהָמֵר עָלָיו, and be in bitterness over him as over a firstborn”; on that day a fountain is opened for sin and uncleanness (Zec 13:1). John says the piercing was fulfilled when the soldier’s spear pierced Jesus’ side: “They will look on him whom they pierced” (Jhn 19:34, 37). Revelation sets the looking at his coming: “every eye will see him, and those who pierced him, and all the tribes of the land will wail over him” (Rev 1:7). From the verses: the one pierced is Jesus, pierced at his first coming; the bitter mourning of the house of David is when they see him at his return, and with it their cleansing from sin.",
+      "evidence": [
+        {
+          "ref": "Zec.12.10"
+        },
+        {
+          "ref": "Zec.13.1"
+        },
+        {
+          "ref": "Jhn.19.34"
+        },
+        {
+          "ref": "Jhn.19.37"
+        },
+        {
+          "ref": "Rev.1.7"
+        }
+      ]
+    },
+    {
+      "topic": "word-of-god",
+      "statement": "Ezekiel is given a scroll written with “lamentations, mourning and woe” and told to eat it; it was in his mouth “as honey for sweetness”, but he went out “bitter (מַר) in the heat of my spirit” to speak to a rebellious house (Ezk 2:10; 3:3, 14). John is given a little scroll: “it will make your belly bitter, but in your mouth it will be sweet as honey”, and so it was; then “you must prophesy again about many peoples and nations” (Rev 10:9–11). From the verses: God’s word is sweet to the one who receives it, and its message of judgement is bitter to the one sent to carry it.",
+      "evidence": [
+        {
+          "ref": "Ezk.2.10"
+        },
+        {
+          "ref": "Ezk.3.3"
+        },
+        {
+          "ref": "Ezk.3.14"
+        },
+        {
+          "ref": "Rev.10.9",
+          "to": "Rev.10.11"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Root key מרר, as the corpus keys it. Corpus faults: the database gives root מרר to the rest of BDB’s page after מרר, which are other roots and are not claimed here: מָרֵשָׁה (m.dr.ac, place), מְרָתַיִם (m.dr.af, the place Merathaim, Jer 50:21, a play on ‘double bitterness’ or ‘double rebellion’), מַשָּׂא (m.dr.ag, of נשׂא; Massa son of Ishmael), מְשׂוּרָה (m.dr.am, measure), מַשְׂרֵת (m.dr.az, pan), מַשׁ (m.dr.ba), מֵשָׁא (m.dr.bc), מִשְׁאָל (m.dr.bg, place), מִשְׁאֶרֶת (m.dr.bi, kneading trough, of שׁאר). Not claimed: מָרָה Marah (m.dq.ae), a place, named in Exo 15:23 from the adjective (cited there); the corpus also files adjective tokens under it by spelling. מְרָרִי Merari (m.dq.ap) and the gentilic הַמְּרָרִי (m.dq.aq) are on names/merari.json. m.dr.aa (מרר II “pass, flow”) has no tokens. Cross-references with no tokens, not claimed: m.bc.ac, m.ck.ao, m.dg.ah, m.dg.ai, m.dk.ad, m.dm.ai, w.ba.ai. The corpus files 1Sa 30:6 מָרָה and Exo 23:21 under מרה “rebel”; 1Sa 30:6 is cited here as the qal (feminine perfect, “was bitter”), and Exo 23:21 תַּמֵּר as the hiphil, a judgment call. Jer 31:21 תַּמְרוּרִים “signposts” is תמר (w.ba.ag), not claimed. Many tokens under m.dq.aa and m.dq.ac are the adjective by spelling; uses counted by lexicon-support will overlap. Doctrine ‘the-pierced-one’ places the bitter mourning of Zec 12:10 at Christ’s return by Rev 1:7, following the user’s scheme (Revelation = the return); check. Greek: Thayer derives σμύρνα from Hebrew מֹר and calls μύρον perhaps ‘akin’; Abbott-Smith gives no etymology, so σμύρνα is recorded as a rendering, not a loan; Thayer is not in sources.json. Leads not followed: Dillmann for Ge’ez መረረ; Ugaritic mr ‘bitter’ (Wiktionary only); Old South Arabic not checked; Peshitta ܡܡܪܡܪܢܐ (Heb 3:8, for παραπικρασμός of Psa 95:8, where the Hebrew is מְרִיבָה) not added as a word."
+}
