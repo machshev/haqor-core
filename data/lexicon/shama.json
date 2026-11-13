@@ -1,0 +1,2091 @@
+{
+  "id": "shama",
+  "root": "שמע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "hearing",
+    "obedience",
+    "prayer",
+    "speech",
+    "report",
+    "covenant"
+  ],
+  "gloss": "hear; listen, heed, obey; (hiphil) make heard, proclaim; report, news",
+  "summary": "To hear: to take in a sound or a word with the ear, and so to learn of something, to understand a language, and to hear a case. Listening to someone’s voice, שָׁמַע בְּקוֹל, is doing what it says, so the same verb is Hebrew’s word for obey: “to obey is better than sacrifice” (1Sa 15:22), and Israel’s confession begins שְׁמַע יִשְׂרָאֵל (Deu 6:4). When God hears, he answers: he heard the boy’s voice, the slaves’ groaning, the poor man’s cry (Gen 21:17; Exo 2:24; Psa 34:7). The hiphil makes heard, proclaims (Isa 52:7); the nouns are what is heard, a report or news (Isa 53:1). Arabic samiʿa, Akkadian šemû, Ugaritic and Phoenician šmʿ and Sabaean s¹mʿ share both hearing and obeying.",
+  "words": [
+    {
+      "lemma": "שָׁמַע",
+      "pos": "verb",
+      "gloss": "hear; listen, heed, obey; understand; (niphal) be heard; (hiphil) make heard, proclaim",
+      "bdb": [
+        "v.ed.aa"
+      ],
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu",
+        "uga-shm",
+        "phn-shm",
+        "sab-sm",
+        "gez-samia",
+        "arc-shema"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hear; listen, heed, obey; understand; hear a case",
+          "senses": [
+            {
+              "id": "hear-sound",
+              "gloss": "hear, perceive with the ear",
+              "definition": "To perceive a sound or voice with the ear, the work of the ear as seeing is of the eye.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.8",
+                  "role": "defining",
+                  "note": "“They heard the sound of Yahweh God walking in the garden.”"
+                },
+                {
+                  "ref": "Deu.4.12",
+                  "role": "defining",
+                  "note": "“You were hearing the sound of words, but you saw no form; only a voice”: hearing set against seeing."
+                },
+                {
+                  "ref": "Psa.115.6",
+                  "role": "defining",
+                  "note": "Of idols: “they have ears, but they do not hear.”"
+                },
+                {
+                  "ref": "Psa.94.9",
+                  "role": "defining",
+                  "note": "“He who planted the ear, shall he not hear?”"
+                },
+                {
+                  "ref": "Deu.4.28",
+                  "note": "Gods of wood and stone “that neither see nor hear nor eat nor smell”."
+                },
+                {
+                  "ref": "Num.7.89",
+                  "note": "Moses “heard the voice speaking to him from above the covering”."
+                },
+                {
+                  "ref": "Exo.32.18",
+                  "note": "“The sound of singing I hear.”"
+                },
+                {
+                  "ref": "1Ki.1.41",
+                  "note": "Adonijah’s guests heard the noise of the city in uproar."
+                }
+              ]
+            },
+            {
+              "id": "hear-report",
+              "gloss": "hear of, learn of",
+              "definition": "To come to know something by being told of it: news, a deed, a person’s fame.",
+              "evidence": [
+                {
+                  "ref": "Gen.14.14",
+                  "role": "defining",
+                  "note": "“When Abram heard that his brother was taken captive.”"
+                },
+                {
+                  "ref": "Exo.18.1",
+                  "role": "defining",
+                  "note": "Jethro “heard all that God had done for Moses and for Israel”."
+                },
+                {
+                  "ref": "Jos.2.10",
+                  "note": "“We have heard how Yahweh dried up the water of the Red Sea before you.”"
+                },
+                {
+                  "ref": "Jos.9.1",
+                  "note": "The kings west of the Jordan heard."
+                },
+                {
+                  "ref": "1Ki.10.1",
+                  "role": "defining",
+                  "note": "The queen of Sheba heard the שֵׁמַע, the report, of Solomon."
+                },
+                {
+                  "ref": "Isa.40.21",
+                  "note": "“Have you not known? Have you not heard?”"
+                },
+                {
+                  "ref": "Isa.66.8",
+                  "note": "“Who has heard such a thing?”"
+                }
+              ]
+            },
+            {
+              "id": "listen",
+              "gloss": "listen, give attention",
+              "definition": "To turn the ear to a speaker on purpose; in the imperative, the summons “hear!” that opens a charge, a song or a law.",
+              "evidence": [
+                {
+                  "ref": "Deu.6.4",
+                  "role": "defining",
+                  "note": "שְׁמַע יִשְׂרָאֵל, “Hear, Israel: Yahweh our God, Yahweh is one.”"
+                },
+                {
+                  "ref": "Isa.1.2",
+                  "role": "defining",
+                  "note": "“Hear, heavens, and give ear (הַאֲזִינִי), earth”: beside הֶאֱזִין, give ear."
+                },
+                {
+                  "ref": "Gen.49.2",
+                  "note": "“Gather and hear, sons of Jacob, and listen to Israel your father.”"
+                },
+                {
+                  "ref": "Deu.5.1",
+                  "note": "“Hear, Israel, the statutes and the judgments.”"
+                },
+                {
+                  "ref": "Pro.1.8",
+                  "note": "“Hear, my son, the discipline of your father.”"
+                },
+                {
+                  "ref": "Job.33.1",
+                  "note": "“Hear my speech, Job, and give ear to all my words.”"
+                },
+                {
+                  "ref": "Isa.55.3",
+                  "note": "“Incline your ear and come to me; hear, and your soul shall live.”"
+                }
+              ]
+            },
+            {
+              "id": "obey-voice",
+              "gloss": "heed, obey",
+              "definition": "To listen to a voice or a word so as to do it: with בְּקוֹל, אֶל or לְ, the ordinary Hebrew for obey. Not to hear is to refuse and rebel.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.18",
+                  "role": "defining",
+                  "note": "All nations blessed in Abraham’s seed “because you have heard my voice”: he had done what he was told (Gen 22:16)."
+                },
+                {
+                  "ref": "1Sa.15.22",
+                  "role": "defining",
+                  "note": "“Behold, to hear (שְׁמֹעַ) is better than sacrifice, to attend (לְהַקְשִׁיב) than the fat of rams”, against Saul who did not do what he was told."
+                },
+                {
+                  "ref": "Exo.24.7",
+                  "role": "defining",
+                  "note": "“All that Yahweh has spoken נַעֲשֶׂה וְנִשְׁמָע: we will do and we will hear.”"
+                },
+                {
+                  "ref": "Exo.19.5",
+                  "role": "defining",
+                  "note": "“If you will indeed hear my voice and keep my covenant, you shall be my own treasure.”"
+                },
+                {
+                  "ref": "Deu.21.18",
+                  "role": "defining",
+                  "note": "A son סוֹרֵר וּמוֹרֶה, stubborn and rebellious, “not hearing the voice of his father”."
+                },
+                {
+                  "ref": "Jer.7.23",
+                  "note": "“Hear my voice, and I will be your God and you shall be my people.”"
+                },
+                {
+                  "ref": "Jer.7.26",
+                  "note": "“They did not hear me … but stiffened their neck.”"
+                },
+                {
+                  "ref": "Gen.26.5",
+                  "note": "“Because Abraham heard my voice and kept my charge, my commandments, my statutes and my laws.”"
+                },
+                {
+                  "ref": "Gen.3.17",
+                  "note": "“Because you have heard the voice of your wife and have eaten of the tree.”"
+                },
+                {
+                  "ref": "Exo.15.26",
+                  "note": "“If you will diligently hear the voice of Yahweh your God and do what is right in his eyes.”"
+                },
+                {
+                  "ref": "Deu.18.15",
+                  "role": "defining",
+                  "note": "Of the prophet like Moses: “to him you shall hear.”"
+                },
+                {
+                  "ref": "Deu.18.19",
+                  "note": "“The man who will not hear my words which he speaks in my name, I will require it of him.”"
+                },
+                {
+                  "ref": "Neh.9.17",
+                  "note": "“They refused to hear (וַיְמָאֲנוּ לִשְׁמֹעַ).”"
+                },
+                {
+                  "ref": "Ezk.2.5",
+                  "note": "“Whether they hear or whether they forbear.”"
+                },
+                {
+                  "ref": "Psa.81.12",
+                  "note": "“My people did not hear my voice, and Israel would have none of me.”"
+                }
+              ]
+            },
+            {
+              "id": "god-hears",
+              "gloss": "hear and answer (of God)",
+              "definition": "Of God: to hear a cry or prayer and act on it. He hears what is said against him too, and acts on that.",
+              "evidence": [
+                {
+                  "ref": "Gen.21.17",
+                  "role": "defining",
+                  "note": "“God heard the voice of the boy … for God has heard the voice of the boy where he is”; he opens Hagar’s eyes to water."
+                },
+                {
+                  "ref": "Exo.2.24",
+                  "role": "defining",
+                  "note": "“God heard their groaning, and God remembered his covenant.”"
+                },
+                {
+                  "ref": "Exo.3.7",
+                  "note": "“I have heard their cry because of their taskmasters … and I have come down to deliver them.”"
+                },
+                {
+                  "ref": "Psa.34.7",
+                  "role": "defining",
+                  "note": "“This poor man cried and Yahweh heard, and saved him from all his troubles.”"
+                },
+                {
+                  "ref": "Psa.65.3",
+                  "role": "defining",
+                  "note": "God is שֹׁמֵעַ תְּפִלָּה, “hearer of prayer”."
+                },
+                {
+                  "ref": "Psa.6.9",
+                  "note": "“Yahweh has heard the voice of my weeping.”"
+                },
+                {
+                  "ref": "Exo.22.22",
+                  "note": "Of the widow and orphan: “if they cry to me I will surely hear their cry”."
+                },
+                {
+                  "ref": "1Ki.8.30",
+                  "note": "“Hear in heaven your dwelling place, and when you hear, forgive.”"
+                },
+                {
+                  "ref": "Isa.65.24",
+                  "note": "“Before they call I will answer; while they are yet speaking I will hear.”"
+                },
+                {
+                  "ref": "Isa.59.1",
+                  "to": "Isa.59.2",
+                  "role": "defining",
+                  "note": "His ear is not too heavy to hear, but “your iniquities … have hidden his face from you, from hearing”."
+                },
+                {
+                  "ref": "Psa.66.18",
+                  "note": "“If I had regarded iniquity in my heart, the Lord would not hear.”"
+                },
+                {
+                  "ref": "Mal.3.16",
+                  "note": "Those who feared Yahweh spoke together, “and Yahweh attended and heard, and a book of remembrance was written”."
+                },
+                {
+                  "ref": "Num.12.2",
+                  "note": "Miriam and Aaron spoke against Moses, “and Yahweh heard”."
+                },
+                {
+                  "ref": "Num.11.1",
+                  "note": "The people complained, “and Yahweh heard, and his anger burned”."
+                }
+              ]
+            },
+            {
+              "id": "understand",
+              "gloss": "understand (a language, a matter)",
+              "definition": "To hear with understanding: to follow a language, or to discern.",
+              "evidence": [
+                {
+                  "ref": "Gen.11.7",
+                  "role": "defining",
+                  "note": "At Babel, “that they may not hear one another’s speech”."
+                },
+                {
+                  "ref": "Gen.42.23",
+                  "role": "defining",
+                  "note": "“They did not know that Joseph was hearing, for the interpreter was between them.”"
+                },
+                {
+                  "ref": "Deu.28.49",
+                  "note": "“A nation whose tongue you will not hear.”"
+                },
+                {
+                  "ref": "2Ki.18.26",
+                  "note": "“Speak to your servants in Aramaic, for we hear it.”"
+                },
+                {
+                  "ref": "1Ki.3.9",
+                  "role": "defining",
+                  "note": "Solomon asks for לֵב שֹׁמֵעַ, “a hearing heart to judge your people, to discern between good and evil”."
+                },
+                {
+                  "ref": "Isa.6.9",
+                  "note": "“Hear indeed, but do not understand (תָּבִינוּ)”: hearing without discerning."
+                }
+              ]
+            },
+            {
+              "id": "hear-case",
+              "gloss": "hear a case, judge",
+              "definition": "Of a judge or king: to hear both sides of a dispute and decide it.",
+              "evidence": [
+                {
+                  "ref": "Deu.1.16",
+                  "role": "defining",
+                  "note": "“Hear between your brothers, and judge righteously.”"
+                },
+                {
+                  "ref": "Deu.1.17",
+                  "role": "defining",
+                  "note": "“You shall hear the small as the great”; the case too hard for them, “bring it to me and I will hear it”."
+                },
+                {
+                  "ref": "2Sa.15.3",
+                  "note": "Absalom: “there is no one to hear you from the king”."
+                },
+                {
+                  "ref": "1Ki.3.11",
+                  "note": "Solomon asked “understanding to hear judgment”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be heard; be obeyed",
+          "senses": [
+            {
+              "gloss": "be heard",
+              "definition": "Of a sound or report: to be heard, to reach the ear; of a prayer, to be heard and answered.",
+              "evidence": [
+                {
+                  "ref": "Gen.45.16",
+                  "role": "defining",
+                  "note": "“The report was heard in Pharaoh’s house: Joseph’s brothers have come.”"
+                },
+                {
+                  "ref": "1Ki.6.7",
+                  "role": "defining",
+                  "note": "No hammer or axe “was heard in the house while it was being built”."
+                },
+                {
+                  "ref": "Exo.28.35",
+                  "note": "Aaron’s bells: “its sound shall be heard when he goes into the holy place … that he not die”."
+                },
+                {
+                  "ref": "Exo.23.13",
+                  "note": "“Do not mention the name of other gods; let it not be heard on your mouth.”"
+                },
+                {
+                  "ref": "Jer.31.15",
+                  "note": "“A voice is heard in Ramah, lamentation, bitter weeping: Rachel weeping for her children.”"
+                },
+                {
+                  "ref": "Isa.65.19",
+                  "note": "In the new Jerusalem “the voice of weeping shall be heard in her no more”."
+                },
+                {
+                  "ref": "Dan.10.12",
+                  "role": "defining",
+                  "note": "“From the first day … your words were heard, and I have come because of your words.”"
+                },
+                {
+                  "ref": "Ecc.12.13",
+                  "note": "“The end of the matter; all has been heard: fear God and keep his commandments.”"
+                }
+              ]
+            },
+            {
+              "gloss": "be obedient, submit",
+              "definition": "Of subject peoples: to make themselves obedient.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.45",
+                  "role": "defining",
+                  "note": "“At the hearing of the ear (לְשֵׁמַע אֹזֶן) they obey me (יִשָּׁמְעוּ לִי); foreigners cringe before me.”"
+                },
+                {
+                  "ref": "2Sa.22.45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "summon",
+          "senses": [
+            {
+              "gloss": "summon, call up (troops)",
+              "definition": "To make the people hear the call to arms, and so muster them.",
+              "evidence": [
+                {
+                  "ref": "1Sa.15.4",
+                  "role": "defining",
+                  "note": "“Saul summoned the people and numbered them in Telaim.”"
+                },
+                {
+                  "ref": "1Sa.23.8",
+                  "note": "“Saul summoned all the people to war, to go down to Keilah.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make hear; proclaim, announce; sound aloud",
+          "senses": [
+            {
+              "id": "make-hear",
+              "gloss": "make hear, let hear",
+              "definition": "To cause someone to hear a voice or words.",
+              "evidence": [
+                {
+                  "ref": "Deu.4.10",
+                  "role": "defining",
+                  "note": "“Gather the people to me, and I will make them hear my words, that they may learn to fear me.”"
+                },
+                {
+                  "ref": "Deu.4.36",
+                  "role": "defining",
+                  "note": "“Out of heaven he made you hear his voice, to discipline you.”"
+                },
+                {
+                  "ref": "1Sa.9.27",
+                  "note": "“Stand still, that I may make you hear the word of God.”"
+                },
+                {
+                  "ref": "Jer.18.2",
+                  "note": "“Go down to the potter’s house, and there I will make you hear my words.”"
+                },
+                {
+                  "ref": "Psa.143.8",
+                  "note": "“Make me hear your kindness in the morning.”"
+                },
+                {
+                  "ref": "Psa.51.10",
+                  "note": "“Make me hear joy and gladness.”"
+                },
+                {
+                  "ref": "Sng.2.14",
+                  "note": "“Let me hear your voice.”"
+                }
+              ]
+            },
+            {
+              "gloss": "proclaim, announce",
+              "definition": "To make news or a message heard abroad; of the herald, to publish.",
+              "evidence": [
+                {
+                  "ref": "Isa.52.7",
+                  "role": "defining",
+                  "note": "“How beautiful on the mountains the feet of the herald, מַשְׁמִיעַ שָׁלוֹם … מַשְׁמִיעַ יְשׁוּעָה”, who proclaims peace and salvation."
+                },
+                {
+                  "ref": "Isa.62.11",
+                  "note": "“Yahweh has proclaimed to the end of the earth: say to the daughter of Zion, your salvation comes.”"
+                },
+                {
+                  "ref": "Nam.2.1",
+                  "note": "“The feet of him who brings good news, who proclaims peace.”"
+                },
+                {
+                  "ref": "Jer.4.5",
+                  "note": "“Declare in Judah and proclaim in Jerusalem.”"
+                },
+                {
+                  "ref": "Amo.3.9",
+                  "note": "“Proclaim to the strongholds in Ashdod.”"
+                },
+                {
+                  "ref": "Isa.42.2",
+                  "role": "defining",
+                  "note": "Yahweh’s servant “will not cry out … nor make his voice heard in the street”."
+                },
+                {
+                  "ref": "Neh.8.15",
+                  "note": "That they should proclaim in all their cities to bring branches for booths."
+                }
+              ]
+            },
+            {
+              "gloss": "declare beforehand",
+              "definition": "In Isaiah’s challenge to the idols: to announce what is to come before it happens, which Yahweh does and they cannot.",
+              "evidence": [
+                {
+                  "ref": "Isa.41.26",
+                  "role": "defining",
+                  "note": "“Who declared it from the beginning? … There is none who declares, none who proclaims, none who hears your words.”"
+                },
+                {
+                  "ref": "Isa.48.6",
+                  "role": "defining",
+                  "note": "“I have made you hear new things from this time, hidden things you have not known.”"
+                },
+                {
+                  "ref": "Isa.43.12",
+                  "note": "“I declared and saved and proclaimed, and there was no strange god among you.”"
+                },
+                {
+                  "ref": "Isa.44.8",
+                  "note": "“Have I not made you hear from of old and declared it?”"
+                },
+                {
+                  "ref": "Isa.45.21"
+                },
+                {
+                  "ref": "Isa.48.5"
+                }
+              ]
+            },
+            {
+              "gloss": "sound aloud (music, praise)",
+              "definition": "To make an instrument or praise loudly heard; of the Levite musicians, to play.",
+              "evidence": [
+                {
+                  "ref": "1Ch.15.16",
+                  "role": "defining",
+                  "note": "Singers with lyres, harps and cymbals, “sounding aloud, raising the voice with joy”."
+                },
+                {
+                  "ref": "1Ch.16.42",
+                  "note": "Trumpets and cymbals “for those sounding aloud”."
+                },
+                {
+                  "ref": "2Ch.5.13",
+                  "note": "Trumpeters and singers “to make one sound heard in praising Yahweh”."
+                },
+                {
+                  "ref": "Psa.26.7",
+                  "note": "“To make the voice of thanksgiving heard.”"
+                },
+                {
+                  "ref": "Psa.106.2",
+                  "note": "“Who can make all his praise heard?”"
+                },
+                {
+                  "ref": "Neh.12.42"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀκούω",
+          "gloss": "hear, listen",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.6.4, שְׁמַע → ἄκουε; Deu.18.15, תִּשְׁמָעוּן → ἀκούσεσθε; ἀκούω renders שָׁמַע ×754"
+            },
+            {
+              "ref": "Mrk.12.29",
+              "role": "defining",
+              "note": "“The first of all the commandments is: Ἄκουε, Ἰσραήλ, the Lord our God, the Lord is one”, quoting Deu 6:4."
+            },
+            {
+              "ref": "Act.3.22",
+              "to": "Act.3.23",
+              "role": "defining",
+              "note": "“Him you shall hear (ἀκούσεσθε) in all things … every soul which will not hear that prophet shall be destroyed”, from Deu 18:15, 19."
+            },
+            {
+              "ref": "Mat.17.5",
+              "note": "“This is my beloved Son … hear him (αὐτοῦ ἀκούετε)”, the words of Deu 18:15."
+            },
+            {
+              "ref": "Mat.13.14",
+              "to": "Mat.13.15",
+              "note": "Isa 6:9–10: “hearing you will hear and not understand”."
+            },
+            {
+              "ref": "Heb.3.7",
+              "note": "“Today, if you will hear his voice”, from Psa 95:7."
+            },
+            {
+              "ref": "Mat.2.18",
+              "note": "“A voice was heard (ἠκούσθη) in Ramah”, the niphal of Jer 31:15."
+            },
+            {
+              "ref": "1Co.2.9",
+              "note": "“What eye has not seen, nor ear heard”, from Isa 64:3."
+            },
+            {
+              "ref": "Act.7.34",
+              "note": "“I have heard their groaning and have come down to deliver them”, from Exo 3:7."
+            }
+          ]
+        },
+        {
+          "lemma": "ὑπακούω",
+          "gloss": "obey",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.22.18, שָׁמַעְתָּ → ὑπήκουσας; Gen.26.5, שָׁמַע → ὑπήκουσεν; ὑπακούω renders שָׁמַע ×18"
+            },
+            {
+              "ref": "Rom.10.16",
+              "role": "defining",
+              "note": "“Not all have obeyed (ὑπήκουσαν) the gospel, for Isaiah says, Lord, who has believed our report?”: Isa 53:1’s hearing taken as obeying."
+            },
+            {
+              "ref": "Heb.5.9",
+              "note": "Christ became “the cause of eternal salvation to all who obey (ὑπακούουσιν) him”."
+            },
+            {
+              "ref": "Rom.6.16",
+              "note": "“His servants you are whom you obey.”"
+            },
+            {
+              "ref": "2Th.1.8",
+              "note": "Those “who do not obey the gospel of our Lord Jesus Christ”."
+            }
+          ]
+        },
+        {
+          "lemma": "εἰσακούω",
+          "gloss": "hear (and answer)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.34.7, שָׁמֵעַ → εἰσήκουσεν; Hab.3.2, שָׁמַעְתִּי → εἰσακήκοα; εἰσακούω renders שָׁמַע ×143"
+            },
+            {
+              "ref": "Heb.5.7",
+              "role": "defining",
+              "note": "Christ “offered prayers and supplications with strong crying and tears to him who was able to save him from death, and was heard (εἰσακουσθείς) for his godly fear”."
+            },
+            {
+              "ref": "Luk.1.13",
+              "note": "“Do not fear, Zacharias, for your prayer is heard.”"
+            },
+            {
+              "ref": "Act.10.31",
+              "note": "“Cornelius, your prayer is heard.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "הֶאֱזִין",
+            "note": "“Give ear”, its commonest partner in a summons to hear.",
+            "evidence": [
+              {
+                "ref": "Isa.1.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.32.1"
+              },
+              {
+                "ref": "Jdg.5.3"
+              },
+              {
+                "ref": "Gen.4.23"
+              },
+              {
+                "ref": "Psa.49.2"
+              }
+            ]
+          },
+          {
+            "lemma": "הִקְשִׁיב",
+            "note": "“Attend, pay heed”, beside it of listening and obeying, and of God’s hearing.",
+            "evidence": [
+              {
+                "ref": "1Sa.15.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.28.23"
+              },
+              {
+                "ref": "Mal.3.16"
+              },
+              {
+                "ref": "Pro.4.1"
+              }
+            ]
+          },
+          {
+            "lemma": "רָאָה",
+            "note": "“See”: hearing and seeing together make up knowing at first hand.",
+            "evidence": [
+              {
+                "ref": "Job.42.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.3.7"
+              },
+              {
+                "ref": "Isa.6.9"
+              },
+              {
+                "ref": "Isa.64.3"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַר",
+            "note": "“Keep”: hearing the voice and keeping the covenant or commandments.",
+            "evidence": [
+              {
+                "ref": "Exo.19.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.26.5"
+              },
+              {
+                "ref": "Deu.28.13"
+              }
+            ]
+          },
+          {
+            "lemma": "עָנָה",
+            "note": "“Answer”, of God hearing prayer.",
+            "evidence": [
+              {
+                "ref": "Isa.65.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.4.2"
+              },
+              {
+                "ref": "Psa.143.1"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "מָרָה",
+            "note": "“Rebel”: the son who does not hear his father is rebellious, and Israel rebelled and did not hear.",
+            "evidence": [
+              {
+                "ref": "Deu.21.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.9.23"
+              }
+            ]
+          },
+          {
+            "lemma": "הִקְשָׁה עֹרֶף",
+            "note": "“Stiffen the neck”, in place of hearing.",
+            "evidence": [
+              {
+                "ref": "Jer.7.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.17.23"
+              }
+            ]
+          },
+          {
+            "lemma": "חָדַל",
+            "note": "“Forbear, refuse”: “whether they hear or whether they forbear”.",
+            "evidence": [
+              {
+                "ref": "Ezk.2.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.2.7"
+              },
+              {
+                "ref": "Ezk.3.11"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שָׁמַע בְּקוֹל",
+            "gloss": "hear the voice of: obey",
+            "evidence": [
+              {
+                "ref": "Gen.22.18",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.15.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.7.23"
+              },
+              {
+                "ref": "Deu.21.18"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁמוֹעַ תִּשְׁמַע",
+            "gloss": "if you will indeed hear: diligently obey",
+            "evidence": [
+              {
+                "ref": "Exo.15.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.19.5"
+              },
+              {
+                "ref": "Deu.28.1"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁמַע יִשְׂרָאֵל",
+            "gloss": "Hear, Israel",
+            "evidence": [
+              {
+                "ref": "Deu.6.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.5.1"
+              },
+              {
+                "ref": "Deu.9.1"
+              },
+              {
+                "ref": "Deu.20.3"
+              }
+            ]
+          },
+          {
+            "phrase": "נַעֲשֶׂה וְנִשְׁמָע",
+            "gloss": "we will do and we will hear",
+            "evidence": [
+              {
+                "ref": "Exo.24.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "לֵב שֹׁמֵעַ",
+            "gloss": "a hearing heart: discernment to judge",
+            "evidence": [
+              {
+                "ref": "1Ki.3.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "שֹׁמֵעַ תְּפִלָּה",
+            "gloss": "hearer of prayer (of God)",
+            "evidence": [
+              {
+                "ref": "Psa.65.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שֵׁמַע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "report, fame, news; hearing",
+      "bdb": [
+        "v.ed.ad"
+      ],
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu",
+        "arc-shema"
+      ],
+      "senses": [
+        {
+          "id": "report-fame",
+          "gloss": "report, fame, news",
+          "definition": "What is heard about someone or something: news of a person, the fame of a deed; also a rumour, which may be false.",
+          "evidence": [
+            {
+              "ref": "Gen.29.13",
+              "role": "defining",
+              "note": "“When Laban heard the שֵׁמַע of Jacob his sister’s son, he ran to meet him.”"
+            },
+            {
+              "ref": "1Ki.10.1",
+              "role": "defining",
+              "note": "The queen of Sheba “heard the report of Solomon” and came to test him."
+            },
+            {
+              "ref": "Num.14.15",
+              "note": "“The nations which have heard your fame will say.”"
+            },
+            {
+              "ref": "Deu.2.25",
+              "note": "The peoples “will hear the report of you and tremble”."
+            },
+            {
+              "ref": "Hab.3.2",
+              "role": "defining",
+              "note": "“Yahweh, I have heard your report (שִׁמְעֲךָ) and I feared; Yahweh, revive your work.”"
+            },
+            {
+              "ref": "Isa.66.19",
+              "note": "The distant coastlands “that have not heard my fame nor seen my glory”."
+            },
+            {
+              "ref": "Isa.23.5",
+              "note": "When the report comes to Egypt, they will writhe at the report of Tyre."
+            },
+            {
+              "ref": "Exo.23.1",
+              "role": "defining",
+              "note": "“You shall not take up a שֵׁמַע שָׁוְא”, a false report, set beside being a malicious witness."
+            },
+            {
+              "ref": "Job.28.22",
+              "note": "Destruction and death: “we have heard the report of it with our ears”."
+            }
+          ],
+          "kin": [
+            "hear-report"
+          ]
+        },
+        {
+          "gloss": "hearing",
+          "definition": "The act of hearing: “the hearing of the ear”, knowledge by report rather than by sight.",
+          "evidence": [
+            {
+              "ref": "Job.42.5",
+              "role": "defining",
+              "note": "“By the hearing of the ear I had heard of you, but now my eye sees you.”"
+            },
+            {
+              "ref": "Psa.18.45",
+              "note": "“At the hearing of the ear they obey me.”"
+            }
+          ],
+          "kin": [
+            "hear-sound"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀκοή",
+          "gloss": "hearing; report, fame",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hab.3.2, שִׁמְעֲךָ → ἀκοήν; ἀκοή renders שֵׁמַע ×6"
+            },
+            {
+              "ref": "Mat.4.24",
+              "note": "“His fame (ἀκοή) went out into all Syria.”"
+            },
+            {
+              "ref": "Mat.14.1",
+              "note": "Herod “heard the fame of Jesus”."
+            },
+            {
+              "ref": "Mat.24.6",
+              "note": "“You will hear of wars and reports (ἀκοάς) of wars.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁמַע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sound",
+      "bdb": [
+        "v.ed.ab"
+      ],
+      "summary": "Only in Psa 150:5, of cymbals: the noun of what is heard used of the sound itself. One use fixes little; the parallel line sets it beside תְּרוּעָה, the shout or blast.",
+      "senses": [
+        {
+          "gloss": "sound, clear sound",
+          "definition": "A loud, clear sound, of cymbals.",
+          "evidence": [
+            {
+              "ref": "Psa.150.5",
+              "role": "defining",
+              "note": "“Praise him with צִלְצְלֵי־שָׁמַע, cymbals of sound; praise him with צִלְצְלֵי תְרוּעָה, cymbals of the shout.”"
+            }
+          ],
+          "kin": [
+            "hear-sound"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁמוּעָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "report, news, tidings; message",
+      "bdb": [
+        "v.ed.am"
+      ],
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu",
+        "arc-shema"
+      ],
+      "senses": [
+        {
+          "id": "news",
+          "gloss": "report, news, tidings",
+          "definition": "News that comes to someone: good news, bad news, rumour.",
+          "evidence": [
+            {
+              "ref": "1Sa.4.19",
+              "role": "defining",
+              "note": "Phinehas’s wife “heard the report that the ark of God was taken and her father-in-law and husband were dead”."
+            },
+            {
+              "ref": "2Sa.4.4",
+              "note": "“When the report of Saul and Jonathan came from Jezreel.”"
+            },
+            {
+              "ref": "1Ki.2.28",
+              "note": "“The report came to Joab.”"
+            },
+            {
+              "ref": "1Ki.10.7",
+              "role": "defining",
+              "note": "The queen of Sheba: “you exceed the report that I heard”."
+            },
+            {
+              "ref": "Pro.25.25",
+              "role": "defining",
+              "note": "“As cold water to a weary soul, so is good news from a far country.”"
+            },
+            {
+              "ref": "Psa.112.7",
+              "note": "The righteous “will not fear bad news; his heart is firm, trusting in Yahweh”."
+            },
+            {
+              "ref": "2Ki.19.7",
+              "note": "Sennacherib “will hear a report and return to his own land”."
+            },
+            {
+              "ref": "Ezk.7.26",
+              "note": "“Disaster upon disaster, and report upon report.”"
+            },
+            {
+              "ref": "Dan.11.44",
+              "note": "“Reports from the east and from the north will trouble him.”"
+            },
+            {
+              "ref": "1Sa.2.24",
+              "note": "Eli to his sons: “it is no good report that I hear”."
+            }
+          ],
+          "kin": [
+            "hear-report",
+            "report-fame"
+          ]
+        },
+        {
+          "id": "message",
+          "gloss": "message (from Yahweh)",
+          "definition": "A message that a prophet hears from Yahweh and passes on: what is to be heard and believed.",
+          "evidence": [
+            {
+              "ref": "Isa.53.1",
+              "role": "defining",
+              "note": "“Who has believed our שְׁמוּעָה? And to whom has the arm of Yahweh been revealed?”"
+            },
+            {
+              "ref": "Oba.1.1",
+              "role": "defining",
+              "note": "“We have heard a report from Yahweh, and a messenger is sent among the nations.”"
+            },
+            {
+              "ref": "Jer.49.14",
+              "note": "The same words in Jeremiah’s oracle on Edom."
+            },
+            {
+              "ref": "Isa.28.9",
+              "note": "“Whom will he teach knowledge, and whom will he make to understand the message?”"
+            },
+            {
+              "ref": "Isa.28.19",
+              "note": "“It will be sheer terror to understand the message.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀκοή",
+          "gloss": "hearing; report, message",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.53.1, שְׁמֻעָתֵנוּ → ἀκοῇ; ἀκοή renders שְׁמוּעָה ×13"
+            },
+            {
+              "ref": "Jhn.12.38",
+              "role": "defining",
+              "note": "“That the word of Isaiah the prophet might be fulfilled: Lord, who has believed our report (ἀκοῇ)?”, of those who saw his signs and did not believe."
+            },
+            {
+              "ref": "Rom.10.16",
+              "role": "defining",
+              "note": "Isa 53:1 quoted of those who have not obeyed the gospel."
+            },
+            {
+              "ref": "Rom.10.17",
+              "role": "defining",
+              "note": "“So faith comes from hearing (ἀκοῆς), and hearing by the word of God”: Paul draws the conclusion from the verse."
+            },
+            {
+              "ref": "Gal.3.2",
+              "note": "“Did you receive the spirit by works of law, or by the hearing of faith?”"
+            },
+            {
+              "ref": "1Th.2.13",
+              "note": "“The word of hearing (λόγον ἀκοῆς) of God”, received as God’s word, not men’s."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀγγελία",
+          "gloss": "message, tidings",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.25.25, שְׁמוּעָה → ἀγγελία; ἀγγελία renders שְׁמוּעָה ×7"
+            },
+            {
+              "ref": "1Jn.1.5",
+              "note": "“This is the message (ἀγγελία) which we have heard from him and declare to you.”"
+            },
+            {
+              "ref": "1Jn.3.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֹׁמַע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "report, fame",
+      "bdb": [
+        "v.ed.ae"
+      ],
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu"
+      ],
+      "summary": "A rarer form beside שֵׁמַע, always with a suffix: the fame of a person going out through a land. The tokens filed under it in Num 30 are the verb’s infinitive (“on the day of his hearing”), not this noun.",
+      "senses": [
+        {
+          "gloss": "report, fame",
+          "definition": "What is heard of someone: his fame or the news about him.",
+          "evidence": [
+            {
+              "ref": "Jos.6.27",
+              "role": "defining",
+              "note": "“Yahweh was with Joshua, and his fame was in all the land.”"
+            },
+            {
+              "ref": "Est.9.4",
+              "role": "defining",
+              "note": "“Mordecai was great in the king’s house, and his fame went out through all the provinces.”"
+            },
+            {
+              "ref": "Jos.9.9",
+              "note": "“We have heard the fame of him and all that he did in Egypt.”"
+            },
+            {
+              "ref": "Jer.6.24",
+              "note": "“We have heard the report of it; our hands grow feeble.”"
+            }
+          ],
+          "kin": [
+            "report-fame"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁמַעַת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "those who obey: the king’s audience, bodyguard; subjects",
+      "bdb": [
+        "v.ed.ba"
+      ],
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu",
+        "sab-sm"
+      ],
+      "summary": "The body of men who hear a ruler’s word and do it: David’s place at Saul’s audience, the guard Benaiah was set over, and the nations Israel will rule. Four uses.",
+      "senses": [
+        {
+          "gloss": "the king’s audience, bodyguard",
+          "definition": "The men in a king’s immediate service who hear and carry out his orders.",
+          "evidence": [
+            {
+              "ref": "1Sa.22.14",
+              "role": "defining",
+              "note": "David “turns aside to your מִשְׁמַעַת and is honoured in your house”: he has the king’s ear and service."
+            },
+            {
+              "ref": "2Sa.23.23",
+              "role": "defining",
+              "note": "“David set him [Benaiah] over his מִשְׁמַעַת.”"
+            },
+            {
+              "ref": "1Ch.11.25"
+            }
+          ],
+          "kin": [
+            "obey-voice"
+          ]
+        },
+        {
+          "gloss": "subjects",
+          "definition": "A people subject to another, obeying its rule.",
+          "evidence": [
+            {
+              "ref": "Isa.11.14",
+              "role": "defining",
+              "note": "“Edom and Moab the stretching out of their hand, and the sons of Ammon their מִשְׁמַעַת.”"
+            }
+          ],
+          "kin": [
+            "obey-voice"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁמָע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "thing heard, hearing",
+      "bdb": [
+        "v.ed.ay"
+      ],
+      "cognate_ids": [
+        "ar-samia"
+      ],
+      "summary": "Only in Isa 11:3, of the shoot of Jesse: he will not decide “by what his ears hear”. One use, but its parallel, מַרְאֵה עֵינָיו “what his eyes see”, fixes it.",
+      "senses": [
+        {
+          "gloss": "what is heard",
+          "definition": "What reaches the ears: hearsay, set beside what the eyes see.",
+          "evidence": [
+            {
+              "ref": "Isa.11.3",
+              "role": "defining",
+              "note": "“He will not judge by the sight of his eyes, nor decide by the מִשְׁמַע of his ears; but with righteousness he will judge the poor” (Isa 11:3–4)."
+            }
+          ],
+          "kin": [
+            "hear-sound"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הַשְׁמָעוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a making to hear",
+      "bdb": [
+        "v.ed.ax"
+      ],
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu"
+      ],
+      "summary": "A noun from the hiphil, only in Ezk 24:26: the fugitive who comes to make Ezekiel’s ears hear of Jerusalem’s fall.",
+      "senses": [
+        {
+          "gloss": "a making to hear, telling",
+          "definition": "The act of making someone hear news.",
+          "evidence": [
+            {
+              "ref": "Ezk.24.26",
+              "role": "defining",
+              "note": "“On that day a fugitive will come to you לְהַשְׁמָעוּת אָזְנָיִם, to make your ears hear it.”"
+            },
+            {
+              "ref": "Ezk.33.21",
+              "note": "The fugitive comes: “the city has been struck”."
+            }
+          ],
+          "kin": [
+            "make-hear"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁמַע",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "hear; (hithpaal) obey",
+      "bdb": [
+        "xv.aw.aa"
+      ],
+      "cognate_ids": [
+        "arc-shema",
+        "ar-samia",
+        "akk-semu"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "hear",
+          "senses": [
+            {
+              "gloss": "hear",
+              "definition": "To hear a sound, or to hear of someone.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.5",
+                  "role": "defining",
+                  "note": "“When you hear the sound of the horn, pipe, lyre … fall down and worship the image of gold.”"
+                },
+                {
+                  "ref": "Dan.3.7"
+                },
+                {
+                  "ref": "Dan.3.15"
+                },
+                {
+                  "ref": "Dan.5.14",
+                  "role": "defining",
+                  "note": "Belshazzar: “I have heard of you, that the spirit of the gods is in you.”"
+                },
+                {
+                  "ref": "Dan.5.16"
+                },
+                {
+                  "ref": "Dan.5.23",
+                  "role": "defining",
+                  "note": "“Gods of silver and gold … which do not see, nor hear, nor know.”"
+                },
+                {
+                  "ref": "Dan.6.15",
+                  "note": "“When the king heard the matter he was much displeased.”"
+                }
+              ],
+              "kin": [
+                "hear-sound",
+                "hear-report"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpaal",
+          "gloss": "obey",
+          "senses": [
+            {
+              "id": "obey-arc",
+              "gloss": "obey",
+              "definition": "To make oneself hear, and so obey.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.27",
+                  "role": "defining",
+                  "note": "The kingdom given to the people of the saints of the Most High: “all dominions will serve and obey (יִשְׁתַּמְּעוּן) him”."
+                }
+              ],
+              "kin": [
+                "obey-voice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁמַע",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "hear; (ethpeel) be heard; obey",
+      "summary": "The Peshitta’s ܫܡܥ, its verb wherever the Greek has ἀκούω: “Hear, Israel” in Jesus’ own mouth (Mrk 12:29), and “hear him” from the cloud (Mat 17:5). Its ethpeel is both “be heard” and “obey”.",
+      "cognate_ids": [
+        "arc-shema",
+        "ar-samia",
+        "akk-semu"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "hear, listen",
+          "senses": [
+            {
+              "gloss": "hear, listen",
+              "definition": "As the Hebrew: to hear, and to listen to so as to heed.",
+              "evidence": [
+                {
+                  "ref": "Mrk.12.29",
+                  "role": "defining",
+                  "note": "ܫܡܥ ܐܝܣܪܝܠ, “Hear, Israel”, quoting Deu 6:4."
+                },
+                {
+                  "ref": "Act.3.22",
+                  "role": "defining",
+                  "note": "“To him hear (ܫܡܥܘ) in all that he speaks to you”, from Deu 18:15."
+                },
+                {
+                  "ref": "Mat.17.5",
+                  "note": "“This is my beloved Son … hear him (ܫܡܥܘ).”"
+                },
+                {
+                  "ref": "Act.28.27",
+                  "note": "“Lest they hear with their ears”, from Isa 6:10."
+                }
+              ],
+              "kin": [
+                "listen",
+                "obey-voice"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be heard; obey",
+          "senses": [
+            {
+              "gloss": "be heard",
+              "definition": "Of a prayer: to be heard.",
+              "evidence": [
+                {
+                  "ref": "Heb.5.7",
+                  "role": "defining",
+                  "note": "Christ offered prayers with strong crying and tears, “and was heard (ܘܐܫܬܡܥ)”."
+                }
+              ],
+              "kin": [
+                "god-hears"
+              ]
+            },
+            {
+              "gloss": "obey",
+              "definition": "To make oneself hear: obey.",
+              "evidence": [
+                {
+                  "ref": "Rom.6.16",
+                  "role": "defining",
+                  "note": "“To whom you yield yourselves servants to obey (ܕܬܫܬܡܥܘܢ), his servants you are whom you obey.”"
+                }
+              ],
+              "kin": [
+                "obey-voice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁמְעָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "report, fame; hearing",
+      "summary": "The Peshitta’s ܫܡܥܐ, for ἀκοή: the report of Isa 53:1 (Jhn 12:38) and the “hearing of faith” (Gal 3:2).",
+      "cognate_ids": [
+        "arc-shema",
+        "ar-samia",
+        "akk-semu"
+      ],
+      "senses": [
+        {
+          "gloss": "report, fame; hearing",
+          "definition": "What is heard: news, fame, and the message heard.",
+          "evidence": [
+            {
+              "ref": "Jhn.12.38",
+              "role": "defining",
+              "note": "“My Lord, who has believed our report (ܠܫܡܥܢ)?”, quoting Isa 53:1, where the Hebrew has שְׁמוּעָה."
+            },
+            {
+              "ref": "Mat.14.1",
+              "role": "defining",
+              "note": "Herod heard “the report (ܫܡܥܗ) of Jesus”."
+            },
+            {
+              "ref": "Mat.24.6",
+              "note": "“Reports of wars.”"
+            },
+            {
+              "ref": "Gal.3.2",
+              "note": "“By the hearing (ܫܡܥܐ) of faith.”"
+            }
+          ],
+          "kin": [
+            "message",
+            "report-fame"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשְׁמְעָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "hearing; obedience",
+      "summary": "The Peshitta’s ܡܫܡܥܐ, a hearing that is also obeying: “faith is from the hearing of the ear” (Rom 10:17) and “the obedience of righteousness” (Rom 6:16).",
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu"
+      ],
+      "senses": [
+        {
+          "gloss": "hearing; obedience",
+          "definition": "Hearing, and the obedience that hearing leads to.",
+          "evidence": [
+            {
+              "ref": "Rom.10.17",
+              "role": "defining",
+              "note": "“Faith is from the hearing (ܡܫܡܥ) of the ear, and the hearing of the ear from the word of God.”"
+            },
+            {
+              "ref": "Rom.6.16",
+              "role": "defining",
+              "note": "Servants “either of sin, or of the obedience (ܡܫܡܥ) of the ear of righteousness”."
+            },
+            {
+              "ref": "Rom.15.18",
+              "note": "“For the obedience of the Gentiles.”"
+            }
+          ],
+          "kin": [
+            "hear-sound",
+            "obey-voice"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשְׁמַעְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "hearing, ears; obedience",
+      "summary": "The Peshitta’s ܡܫܡܥܬܐ, for ἀκοή “hearing, ears” and ὑπακοή “obedience”.",
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu"
+      ],
+      "senses": [
+        {
+          "gloss": "hearing, ears",
+          "definition": "The sense of hearing, the ears.",
+          "evidence": [
+            {
+              "ref": "Act.28.27",
+              "role": "defining",
+              "note": "“Their ears (ܡܫܡܥܬܗܘܢ) are heavy”, Isa 6:10."
+            },
+            {
+              "ref": "Heb.5.11",
+              "note": "“You have become dull of hearing.”"
+            },
+            {
+              "ref": "2Ti.4.3",
+              "note": "Itching ears."
+            }
+          ],
+          "kin": [
+            "hear-sound"
+          ]
+        },
+        {
+          "gloss": "obedience",
+          "definition": "Obedience.",
+          "evidence": [
+            {
+              "ref": "1Pe.1.2",
+              "role": "defining",
+              "note": "Chosen “to obedience (ܠܡܫܡܥܬܐ) and the sprinkling of the blood of Jesus Christ”."
+            },
+            {
+              "ref": "2Co.10.5",
+              "note": "Every thought brought captive “to the obedience (ܠܡܫܡܥܬܗ) of Christ”."
+            }
+          ],
+          "kin": [
+            "obey-voice"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֶשְׁתַּמְעָנוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "obedience",
+      "summary": "The Peshitta’s ܡܫܬܡܥܢܘܬܐ, from the ethpeel “obey”, for ὑπακοή: Christ’s obedience that makes many righteous (Rom 5:19).",
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu"
+      ],
+      "senses": [
+        {
+          "gloss": "obedience",
+          "definition": "Obedience, listening that does what is heard.",
+          "evidence": [
+            {
+              "ref": "Rom.5.19",
+              "role": "defining",
+              "note": "“As by the disobedience (ܠܐ ܡܫܬܡܥܢܘܬܗ) of one man many became sinners, so by the obedience (ܡܫܬܡܥܢܘܬܗ) of one many become righteous.”"
+            },
+            {
+              "ref": "Heb.5.8",
+              "role": "defining",
+              "note": "“Though he was a son, he learned obedience from the fear and the sufferings he bore.”"
+            },
+            {
+              "ref": "1Pe.1.22",
+              "note": "“Purifying your souls in the obedience of the truth.”"
+            },
+            {
+              "ref": "2Co.10.6",
+              "note": "“When your obedience is fulfilled.”"
+            }
+          ],
+          "kin": [
+            "obey-voice"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֶשְׁתַּמְעָנָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "obedient",
+      "summary": "The Peshitta’s ܡܫܬܡܥܢܐ, for ὑπακοή in “children of obedience” and εὐπειθής “easily persuaded”.",
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu"
+      ],
+      "senses": [
+        {
+          "gloss": "obedient",
+          "definition": "Obedient, ready to hear and do.",
+          "evidence": [
+            {
+              "ref": "1Pe.1.14",
+              "role": "defining",
+              "note": "“As obedient children (ܒܢܝܐ ܡܫܬܡܥܢܐ), not conforming to your former lusts.”"
+            },
+            {
+              "ref": "Jas.3.17",
+              "note": "The wisdom from above is pure, peaceable, gentle and obedient."
+            }
+          ],
+          "kin": [
+            "obey-voice"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁמוֹעָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "hearer",
+      "summary": "The Peshitta’s ܫܡܘܥܐ, for ἀκροατής: the hearer who is not a doer.",
+      "cognate_ids": [
+        "ar-samia",
+        "akk-semu"
+      ],
+      "senses": [
+        {
+          "gloss": "hearer",
+          "definition": "One who hears; set against the doer.",
+          "evidence": [
+            {
+              "ref": "Jas.1.22",
+              "role": "defining",
+              "note": "“Be doers of the word, and not hearers (ܫܡܘܥܐ) only, deceiving yourselves.”"
+            },
+            {
+              "ref": "Jas.1.23",
+              "to": "Jas.1.25"
+            },
+            {
+              "ref": "Rom.2.13",
+              "role": "defining",
+              "note": "“Not the hearers of the law are righteous before God, but the doers of the law will be justified.”"
+            }
+          ],
+          "kin": [
+            "listen"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-samia",
+      "lang": "ar",
+      "form": "سَمِعَ",
+      "translit": "samiʿa",
+      "gloss": "hear; hear of; give ear, listen to; samʿ hearing, the sense of hearing; sāmiʿ, samīʿ hearer",
+      "relation": "cognate",
+      "note": "Lane’s sources distinguish سَمِعَ, hearing intended or not, from listening on purpose with لِ or إِلَى, as Hebrew uses שָׁמַע לְ and אֶל. The set phrase سَمْعًا وَطَاعَةً, “hearing and obedience”, joins hearing and obeying as Hebrew does in one verb; form IV أَسْمَعَ is “make hear”, as the hiphil, and form VI “the people heard of it one from another”. Arabic s for Hebrew ש and ʿ for ע show the older sounds š and ʿ.",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1427, root سمع, سَمِعَهُ (n20710)",
+          "note": "“[He heard it, (namely, a thing …) or (tropical:) him]”; with لِ or إِلَى “I gave ear, hearkened, or listened, to him”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1428, root سمع, سَمْعٌ (n20715); اسمعهُ (n20712)",
+          "note": "سَمْعًا وَطَاعَةً “I hear and I obey”; سَمْعٌ “the sense of the ear”; form IV “He made him to hear … He made him to understand”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1429, root سمع, سَامِعٌ (n20732)",
+          "note": "سَامِعٌ and سَمِيعٌ “Hearing; and hearkening, or listening”; السَّمِيعُ of God, “He who hears everything”."
+        }
+      ]
+    },
+    {
+      "id": "akk-semu",
+      "lang": "akk",
+      "form": "šemû",
+      "translit": "šemû",
+      "gloss": "hear, listen to; heed, obey; accept (a prayer); become known; (Š) make hear, inform",
+      "relation": "cognate",
+      "note": "Its range matches the Hebrew’s point for point: hearing, obeying, a god accepting prayer, news becoming known, and a causative “make hear”. The adjective šemû is “obedient, propitious”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004580, šemû [hear] V",
+          "note": "“accept (prayer); be(come) heard; be(come) heeded; become known; hear; inform; listen to; make someone hear; obedience; obey; understand”"
+        },
+        {
+          "source": "oracc",
+          "locator": "oimea x000044360, šemû [hearing] AJ",
+          "note": "“hearing; obedient; propitious”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000422 šmʿ [hear] V, AKK011997 šemû [hear] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-shm",
+      "lang": "uga",
+      "form": "𐎌𐎎𐎓",
+      "translit": "šmʿ",
+      "gloss": "hear; (Gt) listen",
+      "relation": "cognate",
+      "note": "Kirta is told šmʿ mʿ, “hear, pray!” (KTU 1.16 VI 41–42): the same imperative summons as Hebrew שְׁמַע. Ugaritic keeps š apart from ṯ and ʿ apart from ġ.",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 202, §93 Glossary, /š-m-ʿ/",
+          "note": "“šmʿ, šmʿ, tšmʿ ‘to hear’; Gt: ištmʿ 1.16:VI:41 ‘to listen’ (H. šāmēaʿ, yišmaʿ, Aram. šmaʿ, Arab. samiʿa, Akkad. šemû)”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000422 šmʿ [hear] V, UGC004047 šmʿ [hear] V"
+        }
+      ]
+    },
+    {
+      "id": "phn-shm",
+      "lang": "phn",
+      "form": "𐤔𐤌𐤏",
+      "translit": "šmʿ",
+      "gloss": "hear (a prayer); listen to, obey",
+      "relation": "cognate",
+      "note": "The votive formula k šmʿ qlʾ, “for he heard his voice”, closes many Phoenician and Punic dedications: the god heard the prayer and answered, as Hebrew שָׁמַע בְּקוֹל is used of God. With b-, “listen to someone’s words”, it is obey, as Hebrew שָׁמַע בְּקוֹל of men. Names of the type šmʿ-DN, DN-šmʿ (“Baal hear!”) are formed as אֱלִישָׁמָע is.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 470–471, Š-M-ʿ",
+          "note": "“v. qal 1. HEAR KAI 10.2/3 (Ph) wqrʾ ʾnk ʾt rbty bʿlt gbl wšmʿ [h]ʾ ql, ‘I invoked my Lady Baalt of Byblos, and she heard my voice (supplication)’ … 2. LISTEN to (b-), OBEY KAI 14.6 (Ph) … ʾl tšmʿ bdbrnm, ‘do not listen to their words!’”"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 471, ŠMʿ, var. ŠMʿY; ŠMʿBʿL",
+          "note": "“p.n. … short form of the name-type šmʿ-DN, DN-šmʿ, DN hear!”; “SAMOʿ-BAʿAL (‘Baal hear him/you!’)”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000422 šmʿ [hear] V, PUN001992 šmʿ [hear] V"
+        }
+      ]
+    },
+    {
+      "id": "sab-sm",
+      "lang": "sem",
+      "form": "𐩪𐩣𐩲",
+      "translit": "s¹mʿ",
+      "gloss": "(Sabaean) hear, listen; obey, submit; (noun) witness, attestation",
+      "relation": "cognate",
+      "note": "Old South Arabian, which keeps the older sibilants and gutturals apart: s¹ answers to Hebrew ש from š, ʿ to ʿ. Its two verbal senses are the Hebrew’s two, hearing and submitting; the noun “witness” is the one who heard.",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 338, S¹Mʿ",
+          "note": "“(1) HEAR (bn about), LISTEN (l- to) … (2) OBEY, SUBMIT … C308b/25: s¹lmw ws¹mʿn … ‘they made peace and submitted to (the king’s) authority’”; noun s¹mʿ “(1) WITNESS (2) kind of legal document = ATTESTATION”."
+        }
+      ]
+    },
+    {
+      "id": "gez-samia",
+      "lang": "gez",
+      "form": "ሰምዐ",
+      "translit": "sämʿä",
+      "gloss": "hear; perceive, understand; listen to; hear a prayer or complaint; obey",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ሰምዐ (sämʿä)",
+          "note": "“to hear | to have the sense of hearing | to perceive with the ears, apprehend, comprehend, discover, learn | to listen to, pay attention to … | to hearken, hear the complaint, counsel, prayer of someone | to obey, comply with”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000422 šmʿ [hear] V, GEZ005025 samʿa [hear] V"
+        }
+      ]
+    },
+    {
+      "id": "arc-shema",
+      "lang": "arc",
+      "form": "שְׁמַע",
+      "translit": "šəmaʿ",
+      "gloss": "(Jewish Aramaic) hear; listen, obey; passive participle שְׁמִיעַ “heard, known”",
+      "relation": "cognate",
+      "note": "The Targums use it where the Hebrew has שָׁמַע (Targ. Gen 27:5; Exo 18:1). Aramaic keeps š (ṯ became t), so its ש is the older š.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁמַע I (U01512)",
+          "note": "“Targ. Gen. XXVII, 5. Targ. Ex. XVIII, 1. Targ. Job IV, 16 … Part. pass. שְׁמִיעַ … שמיע ל־ he has heard, he knows of”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שָׁמַע (U01511)",
+          "note": "“to hear, listen, obey; to understand … שְׁמַע לו listen to him (obey the prophet’s command)”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "hearing-is-obeying",
+      "statement": "Scripture has one verb for hearing and obeying. Israel answered the covenant, “all that Yahweh has spoken we will do and we will hear” (Exo 24:7); Abraham’s seed blesses the nations “because you heard my voice” when he did what he was told (Gen 22:16–18); and Samuel tells Saul, who heard the command and did otherwise, that “to hear is better than sacrifice” (1Sa 15:22). The son “not hearing the voice of his father” is the rebellious son (Deu 21:18), and the people who “did not hear” stiffened their neck (Jer 7:26). So Isaiah is sent to a people who “hear indeed but do not understand” (Isa 6:9–10), and Ezekiel’s hearers “hear your words but do not do them” (Ezk 33:31–32). Jesus ends his teaching with the man who “hears these sayings of mine and does them” and the one who hears and does not (Mat 7:24–27); “blessed are those who hear the word of God and keep it” (Luk 11:28); James, “be doers of the word, and not hearers only” (Jas 1:22); Paul, “not the hearers of the law are righteous before God, but the doers” (Rom 2:13). From the verses: hearing God’s word, in scripture’s sense, is doing it; hearing that leaves the hearer unchanged is counted as not hearing at all.",
+      "evidence": [
+        {
+          "ref": "Exo.24.7"
+        },
+        {
+          "ref": "Gen.22.16",
+          "to": "Gen.22.18"
+        },
+        {
+          "ref": "1Sa.15.22"
+        },
+        {
+          "ref": "Deu.21.18"
+        },
+        {
+          "ref": "Jer.7.26"
+        },
+        {
+          "ref": "Isa.6.9",
+          "to": "Isa.6.10"
+        },
+        {
+          "ref": "Ezk.33.31",
+          "to": "Ezk.33.32"
+        },
+        {
+          "ref": "Mat.7.24",
+          "to": "Mat.7.27"
+        },
+        {
+          "ref": "Luk.11.28"
+        },
+        {
+          "ref": "Jas.1.22"
+        },
+        {
+          "ref": "Rom.2.13"
+        }
+      ]
+    },
+    {
+      "topic": "one-god",
+      "statement": "The summons שְׁמַע יִשְׂרָאֵל opens the confession “Yahweh our God, Yahweh is one”, and the command to love him with all the heart, soul and strength follows from it (Deu 6:4–5). Asked which commandment is first, Jesus quotes it as it stands, “Hear, Israel, the Lord our God, the Lord is one”; the scribe answers, “there is one God, and there is no other but he”, and Jesus says he has answered wisely (Mrk 12:29–34). Jesus calls the Father “the only true God” and himself the one he sent (Jhn 17:3), and Paul writes “to us there is one God, the Father … and one Lord, Jesus Christ” (1Co 8:6), “one God, and one mediator between God and men, the man Christ Jesus” (1Ti 2:5). From the verses: the one God whom Israel was told to hear is the Father, and the Son confessed this creed without adding to it.",
+      "evidence": [
+        {
+          "ref": "Deu.6.4",
+          "to": "Deu.6.5"
+        },
+        {
+          "ref": "Mrk.12.29",
+          "to": "Mrk.12.34"
+        },
+        {
+          "ref": "Jhn.17.3"
+        },
+        {
+          "ref": "1Co.8.6"
+        },
+        {
+          "ref": "1Ti.2.5"
+        }
+      ]
+    },
+    {
+      "topic": "prophet-like-moses",
+      "statement": "Yahweh promised a prophet from among Israel like Moses, with his words in his mouth: “to him you shall hear”, and whoever “will not hear my words which he speaks in my name, I will require it of him” (Deu 18:15–19). Peter says this prophet is Jesus, and that “every soul which will not hear that prophet shall be destroyed from among the people” (Act 3:22–23; so Stephen, Act 7:37). At the transfiguration, beside Moses and Elijah, the voice from the cloud says of the Son, “hear him” (Mat 17:5). Jesus says, as Deu 18:18 had said, “I have not spoken of myself, but the Father who sent me gave me a commandment what I should say”, and that the word he spoke will judge whoever rejects it (Jhn 12:48–49). He himself heard and obeyed: he “was heard for his godly fear”, “learned obedience by the things which he suffered”, and became the cause of salvation “to all who obey him” (Heb 5:7–9); “by the obedience of one many will be made righteous” (Rom 5:19). From the verses: the Son is the prophet to be heard, because he heard the Father and obeyed him to the death; and hearing him means obeying him.",
+      "evidence": [
+        {
+          "ref": "Deu.18.15",
+          "to": "Deu.18.19"
+        },
+        {
+          "ref": "Act.3.22",
+          "to": "Act.3.23"
+        },
+        {
+          "ref": "Act.7.37"
+        },
+        {
+          "ref": "Mat.17.5"
+        },
+        {
+          "ref": "Jhn.12.48",
+          "to": "Jhn.12.49"
+        },
+        {
+          "ref": "Heb.5.7",
+          "to": "Heb.5.9"
+        },
+        {
+          "ref": "Rom.5.19"
+        }
+      ]
+    },
+    {
+      "topic": "god-hears-prayer",
+      "statement": "God is “hearer of prayer” (Psa 65:3): he heard the boy Ishmael, Israel groaning in Egypt, the poor man who cried (Gen 21:17; Exo 2:24; Psa 34:7), and he made the ear (Psa 94:9). His hearing is not indifferent to the one praying: “your iniquities have separated between you and your God, and your sins have hidden his face from you, from hearing” (Isa 59:1–2); “if I had regarded iniquity in my heart, the Lord would not hear” (Psa 66:18); “he who turns away his ear from hearing the law, even his prayer is an abomination” (Pro 28:9). The man born blind says the same: “God does not hear sinners, but if anyone fears God and does his will, him he hears” (Jhn 9:31); and John, “if we ask anything according to his will, he hears us” (1Jn 5:14). From the verses: God hears those who hear him; turning from his word closes his ear, and turning back to it opens it.",
+      "evidence": [
+        {
+          "ref": "Psa.65.3"
+        },
+        {
+          "ref": "Gen.21.17"
+        },
+        {
+          "ref": "Exo.2.24"
+        },
+        {
+          "ref": "Psa.34.7"
+        },
+        {
+          "ref": "Psa.94.9"
+        },
+        {
+          "ref": "Isa.59.1",
+          "to": "Isa.59.2"
+        },
+        {
+          "ref": "Psa.66.18"
+        },
+        {
+          "ref": "Pro.28.9"
+        },
+        {
+          "ref": "Jhn.9.31"
+        },
+        {
+          "ref": "1Jn.5.14"
+        }
+      ]
+    },
+    {
+      "topic": "faith-by-hearing",
+      "statement": "Isaiah sees the herald on the mountains “making peace heard, making salvation heard” (Isa 52:7), and then asks “who has believed our שְׁמוּעָה?”, the message heard (Isa 53:1). Paul takes both verses together: people cannot believe in one of whom they have not heard, nor hear without a preacher, as it is written, “how beautiful are the feet of those who preach the gospel of peace”; but not all obeyed, for Isaiah says “who has believed our report?”; “so faith comes from hearing, and hearing by the word of God” (Rom 10:14–17). John applies Isa 53:1 to those who saw Jesus’ signs and did not believe (Jhn 12:37–38), and Paul asks the Galatians whether they received the spirit “by the hearing of faith” (Gal 3:2, 5). From the verses: faith rests on a message heard, God’s word proclaimed, not on sight; and the same verse that asks who has believed counts unbelief as not obeying.",
+      "evidence": [
+        {
+          "ref": "Isa.52.7"
+        },
+        {
+          "ref": "Isa.53.1"
+        },
+        {
+          "ref": "Rom.10.14",
+          "to": "Rom.10.17"
+        },
+        {
+          "ref": "Jhn.12.37",
+          "to": "Jhn.12.38"
+        },
+        {
+          "ref": "Gal.3.2"
+        },
+        {
+          "ref": "Gal.3.5"
+        }
+      ]
+    }
+  ],
+  "note": "Proper names of the root have their own entries in names/: written so far שִׁמְעוֹן (simeon) and אֱלִישָׁמָע (elishama). Still to write: יִשְׁמָעֵאל (v.ed.au), שִׁמְעִי (v.ed.aq), שְׁמַעְיָה(וּ) (v.ed.as), שִׁמְעָא/שִׁמְעָה (v.ed.ah, v.ed.ai), שֶׁמַע n.pr.m (v.ed.ac), שַׁמּוּעַ (v.ed.an), מִשְׁמָע n.pr.m (v.ed.az), שִׁמְעָת (v.ed.ak), יִשְׁמַעְיָה(וּ) (v.ed.aw), שָׁמָע (v.ed.ag), שְׁמָעָה (v.ed.aj). The gentilics יִשְׁמְעֵאלִי (v.ed.av), שִׁמְעִי adj. (v.ed.ar) and שִׁמְעָתִים (v.ed.al) go with their names’ entries; שִׁמְעוֹנִי (v.ed.ap) is on the simeon name entry. שְׁמַע n.pr.loc (v.ed.af, Jos 15:26) is a place and has no name entry. The database lists the same tokens under v.ed.ab and v.ed.ad (and under both, Shimei and the verb’s pausal שָׁמַע), so their counts are spelling matches, not true uses: שֵׁמַע has about 17 real uses and שֶׁמַע only Psa 150:5. The brief’s שֹׁמַע tokens in Num 30 are the verb’s infinitive with suffix (שָׁמְעוֹ). Jer 4:19 שָׁמַעַתְּ is filed under the verb by spelling but analysed under another root by the database; it is plainly qal of שָׁמַע (“you hear, my soul, the sound of the shofar”) and worth checking. Syriac words follow SEDRA root 1888 (lexemes 3243–3249); the aphel “make hear” is in SEDRA’s gloss but no verse was checked for it. Ge'ez is cited from Wiktionary only; Dillmann’s column for ሰምዐ not yet looked up."
+}
