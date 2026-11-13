@@ -1,0 +1,702 @@
+{
+  "id": "laqat",
+  "root": "לקט",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "harvest",
+    "gathering",
+    "poor",
+    "provision",
+    "manna",
+    "law"
+  ],
+  "gloss": "pick up, gather up one by one; glean",
+  "summary": "לָקַט is to pick things up one by one from where they lie: stones from the ground, manna from the face of the wilderness, arrows, herbs, wood, silver. Its special use is gleaning, picking up the ears the reapers leave behind, which the law forbade the owner to do in his own field so that the לֶקֶט, “gleaning”, was left for the poor and the sojourner (Lev 19:9–10; 23:22), and which Ruth did in the field of Boaz (Rut 2). The prophets turn it into a figure: Israel cut down until only gleanings are left (Isa 17:5), and then gathered back one by one (Isa 27:12). Arabic laqaṭa “pick up from the ground”, with nouns for the gleaner and his gleaning, and Akkadian laqātu “gather up, pick up” have the same sense.",
+  "words": [
+    {
+      "lemma": "לָקַט",
+      "pos": "verb",
+      "gloss": "pick up, gather up; glean",
+      "bdb": [
+        "l.by.aa"
+      ],
+      "cognate_ids": [
+        "ar-laqata",
+        "akk-laqatu",
+        "arc-leqat"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pick up, gather up",
+          "senses": [
+            {
+              "id": "pick-up",
+              "gloss": "pick up, gather up from the ground",
+              "definition": "To take up, piece by piece, things that lie scattered where they are found, and bring them together: stones from the ground, the manna that lay on the face of the wilderness, flowers in a garden.",
+              "evidence": [
+                {
+                  "ref": "Gen.31.46",
+                  "role": "defining",
+                  "note": "“לִקְטוּ stones”, and they took stones and made a heap: the stones are picked up and brought into one."
+                },
+                {
+                  "ref": "Exo.16.14",
+                  "note": "The manna lay “on the face of the wilderness, fine as hoarfrost on the ground”: what the people picked up."
+                },
+                {
+                  "ref": "Exo.16.4",
+                  "role": "defining",
+                  "note": "“The people shall go out וְלָקְטוּ the portion of a day in its day.”"
+                },
+                {
+                  "ref": "Exo.16.16",
+                  "to": "Exo.16.18",
+                  "role": "defining",
+                  "note": "Each gathered much or little, measured it by the omer, and had neither surplus nor lack: “each man according to his eating לָקָטוּ.”"
+                },
+                {
+                  "ref": "Exo.16.21",
+                  "to": "Exo.16.22"
+                },
+                {
+                  "ref": "Exo.16.26",
+                  "to": "Exo.16.27",
+                  "note": "“Six days you shall gather it, and on the seventh day, the Sabbath, there shall be none”; some went out to gather and found none."
+                },
+                {
+                  "ref": "Num.11.8",
+                  "note": "The people went about and gathered the manna, and ground or pounded it."
+                },
+                {
+                  "ref": "Psa.104.28",
+                  "role": "defining",
+                  "note": "“You give to them, they gather; you open your hand, they are satisfied with good”: the creatures pick up what Yahweh puts before them."
+                },
+                {
+                  "ref": "Sng.6.2",
+                  "note": "“To feed in the gardens and to gather lilies.”"
+                },
+                {
+                  "ref": "Jhn.6.31",
+                  "to": "Jhn.6.35",
+                  "note": "Jesus expounds the manna of Exo 16 as the bread from heaven, and himself as the true bread."
+                },
+                {
+                  "ref": "2Co.8.15",
+                  "note": "Paul quotes Exo 16:18, “he who had much had nothing over, and he who had little had no lack”, of the gathering of the manna."
+                }
+              ]
+            },
+            {
+              "id": "glean-qal",
+              "gloss": "glean",
+              "definition": "To pick up the ears left in a field after the reapers, as the piel more often says.",
+              "evidence": [
+                {
+                  "ref": "Rut.2.8",
+                  "role": "defining",
+                  "note": "Boaz to Ruth: “Do not go to glean (לִלְקֹט) in another field”, of the gleaning the chapter describes."
+                }
+              ],
+              "cognate_ids": [
+                "ar-laqat"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "glean; gather, collect",
+          "senses": [
+            {
+              "id": "glean",
+              "gloss": "glean",
+              "definition": "To go through a field after the reapers and pick up the ears they have left, or through a vineyard for the fallen grapes. The law forbade the owner to glean his own harvest: the gleaning was to be left for the poor and the sojourner.",
+              "cognate_ids": [
+                "ar-laqat",
+                "akk-liqtu"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.19.9",
+                  "to": "Lev.19.10",
+                  "role": "defining",
+                  "note": "“The gleaning (לֶקֶט) of your harvest you shall not glean … and the fallen grapes (פֶּרֶט) of your vineyard you shall not glean; you shall leave them for the poor and for the sojourner.”"
+                },
+                {
+                  "ref": "Lev.23.22",
+                  "role": "defining",
+                  "note": "The same law, set among the feasts after the feast of Weeks."
+                },
+                {
+                  "ref": "Rut.2.2",
+                  "to": "Rut.2.3",
+                  "role": "defining",
+                  "note": "Ruth asks to go to the field “and glean among the ears”, and gleans “in the field after the reapers”."
+                },
+                {
+                  "ref": "Rut.2.7",
+                  "role": "defining",
+                  "note": "“Let me glean and gather (וְאָסַפְתִּי) among the sheaves after the reapers.”"
+                },
+                {
+                  "ref": "Rut.2.15",
+                  "to": "Rut.2.16",
+                  "note": "Boaz lets her glean even among the sheaves, and has handfuls pulled out and left for her to glean."
+                },
+                {
+                  "ref": "Rut.2.17",
+                  "to": "Rut.2.19",
+                  "note": "She gleans until evening and beats out (חָבַט) what she had gleaned, about an ephah of barley."
+                },
+                {
+                  "ref": "Rut.2.23",
+                  "note": "She gleans until the end of the barley and wheat harvests."
+                },
+                {
+                  "ref": "Isa.17.5",
+                  "role": "defining",
+                  "note": "“As when the harvester gathers the standing grain … and as one gleaning ears in the valley of Rephaim”: after the reaping only gleanings are left (17:6)."
+                }
+              ]
+            },
+            {
+              "id": "gather-collect",
+              "gloss": "gather, collect",
+              "definition": "To gather up things that lie here and there into one place: silver, arrows, herbs and gourds, firewood, scraps under a table.",
+              "evidence": [
+                {
+                  "ref": "Gen.47.14",
+                  "role": "defining",
+                  "note": "Joseph gathered up all the silver found in Egypt and Canaan for the grain, and brought it into Pharaoh’s house."
+                },
+                {
+                  "ref": "1Sa.20.38",
+                  "role": "defining",
+                  "note": "Jonathan’s boy picked up the arrows and came to his master."
+                },
+                {
+                  "ref": "2Ki.4.39",
+                  "note": "One went out into the field to gather herbs, and gathered wild gourds, his garment full."
+                },
+                {
+                  "ref": "Jer.7.18",
+                  "note": "“The sons gather wood, and the fathers kindle the fire” for the queen of the heavens."
+                },
+                {
+                  "ref": "Jdg.1.7",
+                  "note": "Seventy kings with thumbs and great toes cut off were picking up scraps under Adoni-bezek’s table."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be gleaned, be picked up",
+          "senses": [
+            {
+              "gloss": "be gathered one by one",
+              "definition": "To be picked up one at a time, as a gleaner picks up ears: said of Israel gathered back by Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Isa.27.12",
+                  "role": "defining",
+                  "note": "“Yahweh will beat out (יַחְבֹּט) from the channel of the River to the brook of Egypt, and you will be gleaned (תְּלֻקְּטוּ) one by one, sons of Israel”: the picture of Rut 2:17, beating out what was gleaned."
+                },
+                {
+                  "ref": "Isa.27.13",
+                  "note": "A great shofar is blown, and the lost in Assyria and the outcasts in Egypt come and worship Yahweh at the holy mountain in Jerusalem."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "gather themselves together",
+          "senses": [
+            {
+              "gloss": "gather themselves to someone",
+              "definition": "Of men drawn one by one to a leader.",
+              "evidence": [
+                {
+                  "ref": "Jdg.11.3",
+                  "role": "defining",
+                  "note": "“Empty men gathered themselves (וַיִּתְלַקְּטוּ) to Jephthah, and went out with him.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "συλλέγω",
+          "gloss": "gather, collect, pick",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "לָקַט → συλλέγω and its forms, most of the root’s uses (MACULA alignment): Exo.16.4, 16.17–22; Lev.19.9–10, 23.22 (συλλέχεις); Rut.2.3–23; Psa.104.28; Jer.7.18"
+            },
+            {
+              "ref": "Mat.7.16",
+              "note": "“Do men gather (συλλέγουσιν) grapes from thorns?” The Peshitta has לָקְטִין."
+            },
+            {
+              "ref": "Luk.6.44",
+              "note": "The same saying; the Peshitta again has לָקְטִין."
+            },
+            {
+              "ref": "Mat.13.28",
+              "to": "Mat.13.30",
+              "note": "The tares gathered at the harvest and burned."
+            },
+            {
+              "ref": "Mat.13.40",
+              "to": "Mat.13.41"
+            }
+          ]
+        },
+        {
+          "lemma": "συνάγω",
+          "gloss": "gather together",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "לָקַט → συνάγω: Gen.47.14; Exo.16.5, 16.16; Rut.2.2; Isa.17.5; Isa.27.12"
+            },
+            {
+              "ref": "Jhn.6.12",
+              "to": "Jhn.6.13",
+              "note": "“Gather up the fragments that remain, that nothing be lost”, in the chapter that expounds the manna."
+            },
+            {
+              "ref": "Jhn.15.6",
+              "note": "The withered branches “they gather (συνάγουσιν) and cast into the fire”; the Peshitta has וְלָקְטִין."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אָסַף",
+            "note": "Gather in: the reaper gathers the standing grain, the gleaner picks up what is left; Ruth asks to glean and to gather among the sheaves.",
+            "evidence": [
+              {
+                "ref": "Rut.2.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.17.5"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׂבַע",
+            "note": "“You give to them, they gather; you open your hand, they are satisfied”: gathering what is given, and being filled by it.",
+            "evidence": [
+              {
+                "ref": "Psa.104.28"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עָזַב",
+            "note": "Leave behind: the owner is not to glean but to leave the gleaning for the poor and the sojourner; Boaz has grain left for Ruth to glean.",
+            "evidence": [
+              {
+                "ref": "Lev.23.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.19.10"
+              },
+              {
+                "ref": "Rut.2.16"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לִקֵּט בַּשִּׁבֳּלִים",
+            "gloss": "glean among the ears",
+            "evidence": [
+              {
+                "ref": "Rut.2.2"
+              },
+              {
+                "ref": "Isa.17.5"
+              }
+            ]
+          },
+          {
+            "phrase": "לָקְטוּ דְּבַר־יוֹם בְּיוֹמוֹ",
+            "gloss": "gather the portion of a day in its day",
+            "evidence": [
+              {
+                "ref": "Exo.16.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "לֶקֶט",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "gleaning, what is left to glean",
+      "bdb": [
+        "l.by.ab"
+      ],
+      "cognate_ids": [
+        "ar-laqat",
+        "akk-liqtu",
+        "arc-leqat"
+      ],
+      "summary": "Only in the gleaning law, twice, as the object of its own verb: what falls or is left behind the reapers, which the owner may not take.",
+      "senses": [
+        {
+          "gloss": "gleaning",
+          "definition": "The ears that fall or are left in the field behind the reapers, which belong to the poor and the sojourner and not to the owner.",
+          "evidence": [
+            {
+              "ref": "Lev.19.9",
+              "role": "defining",
+              "note": "“The לֶקֶט of your harvest you shall not glean.”"
+            },
+            {
+              "ref": "Lev.23.22",
+              "role": "defining",
+              "note": "The same, ending “for the poor and for the sojourner you shall leave them; I am Yahweh your God.”"
+            }
+          ],
+          "kin": [
+            "glean"
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "לֶקֶט קְצִירְךָ",
+            "gloss": "the gleaning of your harvest",
+            "evidence": [
+              {
+                "ref": "Lev.19.9"
+              },
+              {
+                "ref": "Lev.23.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יַלְקוּט",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pouch, bag",
+      "bdb": [
+        "l.by.ac"
+      ],
+      "cognate_ids": [
+        "ar-milqat"
+      ],
+      "summary": "Used once, of the shepherd’s bag David put his stones in; the verse explains it by “the shepherds’ vessel”. Formed with a prefixed י, it is the thing things picked up are put in, as Arabic milqaṭ is a thing in which one picks up; one use is little to fix it by.",
+      "senses": [
+        {
+          "gloss": "shepherd’s pouch",
+          "definition": "A shepherd’s bag or pouch for carrying small things, here stones for a sling.",
+          "evidence": [
+            {
+              "ref": "1Sa.17.40",
+              "role": "defining",
+              "note": "David chose five smooth stones from the brook “and put them in the shepherds’ vessel that he had, in the יַלְקוּט”, his sling in his hand."
+            }
+          ],
+          "kin": [
+            "pick-up"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְקַט",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "gather, pick (Peshitta)",
+      "cognate_ids": [
+        "ar-laqata",
+        "akk-laqatu",
+        "arc-leqat"
+      ],
+      "summary": "The Peshitta’s verb for gathering fruit and withered branches, and in the pael, “gatherer of words”, for the Greek σπερμολόγος, “seed-picker”.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "gather, pick",
+          "senses": [
+            {
+              "id": "syc-gather",
+              "gloss": "gather, pick",
+              "definition": "To pick fruit from a plant, or gather up what lies cast out.",
+              "evidence": [
+                {
+                  "ref": "Mat.7.16",
+                  "role": "defining",
+                  "note": "“Do they gather (לָקְטִין) grapes from thorns, or figs from thistles?”"
+                },
+                {
+                  "ref": "Luk.6.44",
+                  "note": "The same saying."
+                },
+                {
+                  "ref": "Jhn.15.6",
+                  "role": "defining",
+                  "note": "The branch cast out withers, “and they gather them (וְלָקְטִין) and cast them into the fire”."
+                }
+              ],
+              "kin": [
+                "pick-up"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "pick up (words)",
+          "senses": [
+            {
+              "gloss": "gatherer of words, babbler",
+              "definition": "The participle with מֵלֵא, “words”: one who picks up scraps of talk here and there, used by the philosophers at Athens of Paul.",
+              "evidence": [
+                {
+                  "ref": "Act.17.18",
+                  "role": "defining",
+                  "note": "“What would this מְלַקֵּט מֵלֵא say?”, for Greek σπερμολόγος, a bird picking up seeds."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-laqata",
+      "lang": "ar",
+      "form": "لَقَطَ، اِلْتَقَطَ، تَلَقَّطَ",
+      "translit": "laqaṭa, iltaqaṭa, talaqqaṭa",
+      "gloss": "pick up, take up from the ground; (VIII) collect; (V) pick up fruit here and there",
+      "relation": "cognate",
+      "note": "Lane’s sources give form I as “he picked it up, took it up … from the ground, without trouble or fatigue”, of a bird picking up grain from the ground; form VIII also “he collected it”; form V of picking up dates or fruit “from this and that place”. The same picking up of what lies scattered as לָקַט of stones and manna (Gen 31:46; Exo 16:4). Arabic ط answers to Hebrew ט.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2669, root لقط, لَقَطَهُ (n37913)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2669, تلقّط (n37915); التقطهُ (n37916)"
+        }
+      ]
+    },
+    {
+      "id": "ar-laqat",
+      "lang": "ar",
+      "form": "لَقَطٌ، لِقَاطٌ، لَاقِطٌ",
+      "translit": "laqaṭ, liqāṭ, lāqiṭ",
+      "gloss": "what is picked up; gleaning the ears the reapers miss; a gleaner",
+      "relation": "cognate",
+      "note": "laqaṭ is “what is picked up, or taken from the ground”; liqāṭ, “the act of picking up the ears of corn which the reaping-hooks miss”; lāqiṭ, a man “who picks up the ears of corn [that fall] when the crop is reaped, and [the fruit that falls] when the ripe dates are cut”. These are the gleaning of Lev 19:9 and Rut 2 in the Arabic root’s own words.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2669, لَقَطٌ (n37917)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2670, لِقَاطٌ (n37922); لَاقِطٌ (n37928)"
+        }
+      ]
+    },
+    {
+      "id": "ar-milqat",
+      "lang": "ar",
+      "form": "مِلْقَطٌ",
+      "translit": "milqaṭ",
+      "gloss": "a thing with which, or in which, one picks up from the ground",
+      "relation": "cognate",
+      "note": "An instrument noun of the same root, “a thing with which, or in which, one picks up, or takes up, from the ground”: a formation answering to יַלְקוּט, the pouch things picked up are put in (1Sa 17:40).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2670, مِلْقَطٌ (n37932)"
+        }
+      ]
+    },
+    {
+      "id": "akk-laqatu",
+      "lang": "akk",
+      "form": "laqātu",
+      "translit": "laqātu",
+      "gloss": "gather up, pick up, collect",
+      "relation": "cognate",
+      "note": "Oracc’s glossaries give “gather up, pick up, collect”, and an Old Babylonian use “gleaning”. Akkadian writes t for the ṭ of the other languages here, as it does where a root already has an emphatic q.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000012160, laqātu [gather up] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000069340, laqātu [gather] V (meaning: gleaning)"
+        }
+      ]
+    },
+    {
+      "id": "akk-liqtu",
+      "lang": "akk",
+      "form": "liqtu",
+      "translit": "liqtu",
+      "gloss": "gathered material; gleanings; a selection, excerpt",
+      "relation": "cognate",
+      "note": "The noun of laqātu, what has been gathered up, including gleanings: the same formation and sense as לֶקֶט.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000027130, liqtu [gathered material] N (meanings: gleanings, selection, excerpt)"
+        }
+      ]
+    },
+    {
+      "id": "arc-leqat",
+      "lang": "arc",
+      "form": "לְקַט، לְקָטָא",
+      "translit": "ləqaṭ, ləqāṭā",
+      "gloss": "pick up, gather; gleanings, the poor man’s share",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums for Hebrew לָקַט of stones (Gen 31:46), silver (Gen 47:14) and manna (Exo 16:26), and the noun for לֶקֶט in Lev 19:9.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לְקַט, לְקֵיט (ch.) (L00678)",
+          "note": "Targ. Gen. 31:46; 47:14; Ex. 16:26; Lev. 19:9."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לֶקֶט ², לְקָטָא (L00680)",
+          "note": "gleanings, poor man’s share; Targ. Lev. 19:9."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "care-for-the-poor",
+      "statement": "The law forbids the owner to reap the edge of his field or to glean what his reapers leave: the לֶקֶט and the fallen grapes are to be left “for the poor and for the sojourner”, and the command is sealed “I am Yahweh your God” (Lev 19:9–10). In Lev 23 it is repeated among the feasts, straight after the feast of Weeks that offers the firstfruits of the wheat harvest (Lev 23:15–22), so the harvest is kept before Yahweh with the poor provided for out of it; Deuteronomy adds the forgotten sheaf, “that Yahweh your God may bless you”, remembering that Israel was a slave in Egypt (Deu 24:19–22). Ruth, a Moabite widow, lives by it, and Boaz gives more than the law asks, letting her glean among the sheaves and having grain pulled out and left for her (Rut 2:2–3, 15–17); she becomes the mother of Obed, David’s grandfather (Rut 4:13–17), and is named in the genealogy of Jesus Christ (Mat 1:5). From the verses: Yahweh’s people are to leave part of their increase for the poor and the stranger, who gather it by their own work, and he counts such provision as part of keeping his feasts; the stranger included under this law was brought into the line of the Messiah.",
+      "evidence": [
+        {
+          "ref": "Lev.19.9",
+          "to": "Lev.19.10"
+        },
+        {
+          "ref": "Lev.23.15",
+          "to": "Lev.23.22"
+        },
+        {
+          "ref": "Deu.24.19",
+          "to": "Deu.24.22"
+        },
+        {
+          "ref": "Rut.2.2",
+          "to": "Rut.2.3"
+        },
+        {
+          "ref": "Rut.2.15",
+          "to": "Rut.2.17"
+        },
+        {
+          "ref": "Rut.4.13",
+          "to": "Rut.4.17"
+        },
+        {
+          "ref": "Mat.1.5"
+        }
+      ]
+    },
+    {
+      "topic": "daily-bread",
+      "statement": "Yahweh rained bread from heaven, and the people were to go out and gather “the portion of a day in its day … that I may test them, whether they will walk in my law or not” (Exo 16:4). Each gathered according to his eating, and whether he gathered much or little he had no surplus and no lack (Exo 16:16–18); what was kept over to the morning bred worms (Exo 16:19–20); on the sixth day they gathered twice as much, and on the seventh, the Sabbath, there was none to gather (Exo 16:22–27). Moses explains that Yahweh fed them with manna “that he might make you know that man does not live by bread alone, but by every word that comes out of the mouth of Yahweh” (Deu 8:3), which Jesus answers the adversary with (Mat 4:4). Jesus teaches his disciples to ask for bread for the day (Mat 6:11), and calls himself the true bread from heaven that the manna pointed to, which a man eats and lives for ever (Jhn 6:31–35, 48–51). Paul quotes Exo 16:18 to ask the believers at Corinth to give from their abundance so that there is equality (2Co 8:13–15). From the verses: Yahweh gives, and his people gather what he gives day by day, trusting him for tomorrow, keeping his Sabbath, and sharing so that none lacks; the bread he gives is at last Christ himself.",
+      "evidence": [
+        {
+          "ref": "Exo.16.4"
+        },
+        {
+          "ref": "Exo.16.16",
+          "to": "Exo.16.27"
+        },
+        {
+          "ref": "Deu.8.3"
+        },
+        {
+          "ref": "Mat.4.4"
+        },
+        {
+          "ref": "Mat.6.11"
+        },
+        {
+          "ref": "Jhn.6.31",
+          "to": "Jhn.6.35"
+        },
+        {
+          "ref": "Jhn.6.48",
+          "to": "Jhn.6.51"
+        },
+        {
+          "ref": "2Co.8.13",
+          "to": "2Co.8.15"
+        },
+        {
+          "ref": "Psa.104.28"
+        }
+      ]
+    },
+    {
+      "topic": "regathering-of-israel",
+      "statement": "Isaiah uses the harvest for Israel twice. In judgment the land is reaped like a field and only gleanings are left, “two or three berries in the top of the uppermost bough” (Isa 17:4–6). Then “in that day” Yahweh beats out his harvest from the Euphrates to the brook of Egypt, as Ruth beat out what she had gleaned (Rut 2:17), “and you will be gleaned one by one, sons of Israel”, and at the blast of a great shofar those perishing in Assyria and outcast in Egypt come and worship Yahweh on the holy mountain at Jerusalem (Isa 27:12–13). The same prophet says Yahweh will set his hand a second time to recover the remnant of his people and gather the outcasts of Israel from the four corners of the earth (Isa 11:11–12), and Jeremiah, “he who scattered Israel will gather him, and keep him as a shepherd his flock” (Jer 31:10). From the verses: the remnant left after Israel’s judgments is not forgotten; Yahweh gathers it back to the land and to his worship in Jerusalem, not as a mass but each one picked up by hand, as a gleaner takes up every ear.",
+      "evidence": [
+        {
+          "ref": "Isa.17.4",
+          "to": "Isa.17.6"
+        },
+        {
+          "ref": "Rut.2.17"
+        },
+        {
+          "ref": "Isa.27.12",
+          "to": "Isa.27.13"
+        },
+        {
+          "ref": "Isa.11.11",
+          "to": "Isa.11.12"
+        },
+        {
+          "ref": "Jer.31.10"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (לֶקֶט and the piel of לָקַט, Lev 23:22). BDB keys l.by.aa, l.by.ab, l.by.ac; j.bq.ac, a zero-token cross-reference for יַלְקוּט, is left out. The brief found no tokens filed here by spelling that belong to another root, and no New Testament quotation by alignment; 2Co 8:15 quotes Exo 16:18 but its Greek has no verb of gathering. No merged letters in the root (Arabic ط, Hebrew ט). Peshitta: SEDRA root 1004 ܠܩܛ, lexeme 1690 (gather; pick up; collect), used in the New Testament only at Mat 7:16, Luk 6:44 and Jhn 15:6 (peal participle) and Act 17:18 (pael participle); Payne Smith not consulted. Septuagint: יַלְקוּט → συλλογή (1Sa 17:40), not in the New Testament, so not recorded; the noun לֶקֶט has no aligned Greek. Ugaritic lqṭ “pick up” is a lead (not in Segert’s glossary or Fisher’s OCR text); no Ugaritic dictionary in sources.json covers it. Not consulted: Geʿez (Dillmann, Leslau), CAD L for laqātu. Open questions: (1) Isa 27:12 rendered “gleaned one by one” and taken with Isa 11:11–12 as Israel’s regathering; (2) the qal of Rut 2:8 kept as a sense “glean” of its own."
+}
