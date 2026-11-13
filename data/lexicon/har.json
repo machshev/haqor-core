@@ -1,0 +1,955 @@
+{
+  "id": "har",
+  "root": "הרר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "land",
+    "geography",
+    "worship",
+    "kingdom-of-god",
+    "creation"
+  ],
+  "gloss": "mountain, hill; hill country",
+  "summary": "הַר is a mountain or hill, a height rising above the valleys around it (Gen 7:19–20; Isa 40:4), and, as a region, the hill country set against the lowland and valley (Jos 11:16; Jdg 1:19). Above all it is the mountain where Yahweh makes himself known: Horeb, “the mountain of God”, which Israel left as “the mountain of Yahweh” (Exo 3:1; Num 10:33), and Zion, “my holy mountain”, which is to be raised above all the hills (Psa 2:6; Isa 2:2–3). Mountains are what is oldest and firmest in the earth, yet they melt and flee before Yahweh (Psa 90:2; Isa 54:10; Mic 1:4). Phoenician hr and the Canaanite gloss ḫarri in a Byblos letter are the same word; no verb of the root is found.",
+  "words": [
+    {
+      "lemma": "הַר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "mountain, hill; hill country",
+      "bdb": [
+        "e.cf.ab"
+      ],
+      "cognate_ids": [
+        "phn-hr",
+        "uga-hr"
+      ],
+      "summary": "Plural הָרִים, and in poetry the doubled plural הֲרָרִים (construct הַרְרֵי, Deu 33:15; Hab 3:6), which shows the doubled root. With the article, הָהָר is “the mountain” of a story or “the hill country” of a region.",
+      "senses": [
+        {
+          "id": "mountain",
+          "gloss": "mountain, hill",
+          "definition": "A height of land rising above the ground around it, from the highest peaks under heaven to a hill outside a town; set beside the lesser גִּבְעָה, hill, and against the valley and plain.",
+          "evidence": [
+            {
+              "ref": "Gen.7.19",
+              "role": "defining",
+              "note": "“All the high הֶהָרִים that were under all the heavens were covered.”"
+            },
+            {
+              "ref": "Gen.7.20",
+              "role": "defining",
+              "note": "The waters prevailed fifteen cubits upward, “and the הֶהָרִים were covered”: the mountain is measured by height."
+            },
+            {
+              "ref": "Gen.8.5",
+              "note": "In the tenth month “the tops (רָאשֵׁי) of the mountains were seen”."
+            },
+            {
+              "ref": "Isa.40.4",
+              "role": "defining",
+              "note": "“Every valley (גֶּיא) shall be lifted up, and every הַר and גִּבְעָה made low”: the mountain is the height, the valley its opposite."
+            },
+            {
+              "ref": "Gen.22.2",
+              "note": "“Offer him there for a burnt offering on one of the mountains I will tell you of.”"
+            },
+            {
+              "ref": "Jdg.16.3",
+              "note": "Samson carries Gaza’s gate “to the top of the hill that is before Hebron”."
+            },
+            {
+              "ref": "Psa.121.1",
+              "note": "“I will lift up my eyes to the mountains.”"
+            },
+            {
+              "ref": "Psa.104.18",
+              "note": "“The high mountains are for the wild goats.”"
+            },
+            {
+              "ref": "Zec.14.4",
+              "note": "The Mount of Olives split in two, half moving north and half south, with a great valley between."
+            }
+          ]
+        },
+        {
+          "id": "hill-country",
+          "gloss": "hill country, highland",
+          "definition": "The high ground of a land as a region, הָהָר, set against the lowland (שְׁפֵלָה), the valley (עֵמֶק), the Negev and the coast; named after its people or tribe (the hill country of the Amorites, of Ephraim, of Judah).",
+          "evidence": [
+            {
+              "ref": "Num.13.29",
+              "role": "defining",
+              "note": "Amalek dwells in the Negev, the Hittite, Jebusite and Amorite “dwell בָּהָר”, the Canaanite by the sea and the Jordan: one region among others."
+            },
+            {
+              "ref": "Deu.1.7",
+              "role": "defining",
+              "note": "“Go to הַר הָאֱמֹרִי and to all its neighbours, in the Arabah, בָהָר, in the lowland, in the Negev and by the seashore.”"
+            },
+            {
+              "ref": "Jos.11.16",
+              "role": "defining",
+              "note": "Joshua took “all this land, הָהָר and all the Negev … and the lowland and the Arabah, and הַר יִשְׂרָאֵל and its lowland”."
+            },
+            {
+              "ref": "Jdg.1.19",
+              "role": "defining",
+              "note": "Judah “took possession of הָהָר, but could not drive out the inhabitants of the valley (הָעֵמֶק), for they had chariots of iron”."
+            },
+            {
+              "ref": "Jos.17.18",
+              "note": "“The hill country shall be yours, for it is a forest, and you shall clear it.”"
+            },
+            {
+              "ref": "Deu.11.11",
+              "note": "“A land of mountains and valleys (בְקָעֹת), that drinks water from the rain of heaven.”"
+            },
+            {
+              "ref": "Deu.8.7",
+              "note": "Springs and deeps “that go out in the valley and in the hill country”."
+            },
+            {
+              "ref": "Deu.8.9",
+              "note": "“Out of whose hills (הֲרָרֶיהָ) you shall dig copper.”"
+            },
+            {
+              "ref": "1Ki.20.28",
+              "role": "defining",
+              "note": "Aram said Yahweh is “a God of mountains and not a God of valleys”, and was answered by defeat on the plain."
+            },
+            {
+              "ref": "Jos.15.48",
+              "note": "“And in the hill country”: a district of Judah’s towns, after the lowland’s (Jos 15:33)."
+            },
+            {
+              "ref": "Jos.24.30",
+              "note": "Joshua buried at Timnath-serah “in the hill country of Ephraim”."
+            },
+            {
+              "ref": "Gen.14.6",
+              "note": "The Horites “in their mount Seir” (בְּהַרְרָם)."
+            }
+          ]
+        },
+        {
+          "id": "mountain-of-god",
+          "gloss": "the mountain of God; Yahweh’s holy mountain",
+          "definition": "The mountain where Yahweh appears, speaks and is worshipped: Horeb or Sinai, where he came down and gave the law; Moriah, where he provided and where the house was built; and Zion, the mountain of his house and of his king, which he calls “my holy mountain”.",
+          "evidence": [
+            {
+              "ref": "Exo.3.1",
+              "role": "defining",
+              "note": "Moses “came to הַר הָאֱלֹהִים, to Horeb”, where the bush burned."
+            },
+            {
+              "ref": "Exo.19.18",
+              "role": "defining",
+              "note": "“Mount Sinai was all smoke, because Yahweh came down on it in fire … and the whole mountain trembled greatly.”"
+            },
+            {
+              "ref": "Exo.19.12",
+              "note": "Bounds set round it: whoever touches the mountain shall surely die."
+            },
+            {
+              "ref": "Exo.25.40",
+              "note": "The tabernacle made “after their pattern, which you were shown on the mountain”."
+            },
+            {
+              "ref": "Num.10.33",
+              "role": "defining",
+              "note": "“They set out from הַר יַהְוֶה three days’ journey”: Sinai, left in the second year, called the mountain of Yahweh because he met them there."
+            },
+            {
+              "ref": "Gen.22.14",
+              "role": "defining",
+              "note": "Abraham names the place “Yahweh will see”, as it is said to this day, “בְּהַר יַהְוֶה it will be seen”."
+            },
+            {
+              "ref": "2Ch.3.1",
+              "note": "Solomon built Yahweh’s house “on Mount Moriah”, the land named in Gen 22:2."
+            },
+            {
+              "ref": "Psa.2.6",
+              "role": "defining",
+              "note": "“I have set my king on Zion, הַר־קָדְשִׁי.”"
+            },
+            {
+              "ref": "Psa.15.1",
+              "note": "“Who shall dwell on your holy mountain?”"
+            },
+            {
+              "ref": "Psa.24.3",
+              "note": "“Who shall go up the mountain of Yahweh, and who shall stand in his holy place?”"
+            },
+            {
+              "ref": "Isa.2.2",
+              "role": "defining",
+              "note": "“The mountain of Yahweh’s house shall be established at the head of the mountains, and raised above the hills, and all nations shall flow to it.”"
+            },
+            {
+              "ref": "Isa.2.3",
+              "note": "“Come, let us go up to the mountain of Yahweh … for out of Zion shall go the law.”"
+            },
+            {
+              "ref": "Mic.4.1",
+              "note": "The same words as Isa 2:2."
+            },
+            {
+              "ref": "Zec.8.3",
+              "note": "“Jerusalem shall be called the city of truth, and the mountain of Yahweh of hosts the holy mountain.”"
+            },
+            {
+              "ref": "Isa.56.7",
+              "note": "“I will bring them to my holy mountain … my house shall be called a house of prayer for all peoples.”"
+            },
+            {
+              "ref": "Dan.9.16",
+              "note": "“Your city Jerusalem, your holy mountain.”"
+            },
+            {
+              "ref": "Psa.48.3",
+              "note": "“Mount Zion … the city of the great king.”"
+            },
+            {
+              "ref": "Mic.3.12",
+              "note": "Against it: “the mountain of the house” shall become forest heights for its rulers’ sins."
+            },
+            {
+              "ref": "Isa.14.13",
+              "note": "The king of Babylon’s boast: “I will sit on the mount of assembly (הַר־מוֹעֵד) in the sides of the north”."
+            },
+            {
+              "ref": "Ezk.28.14",
+              "note": "To the king of Tyre: “I set you on the holy mountain of God.”"
+            },
+            {
+              "ref": "Act.7.38",
+              "note": "Stephen: Moses with the angel “who spoke to him on Mount Sinai”, receiving living oracles."
+            }
+          ]
+        },
+        {
+          "id": "high-places",
+          "gloss": "mountain as a place of false worship",
+          "definition": "The heights where the nations served their gods, which Israel was to destroy and on which Israel went after them.",
+          "evidence": [
+            {
+              "ref": "Deu.12.2",
+              "role": "defining",
+              "note": "Destroy all the places where the nations served their gods “on the high mountains and on the hills and under every green tree”."
+            },
+            {
+              "ref": "Jer.3.6",
+              "note": "Israel “went up on every high mountain and under every green tree, and played the harlot there”."
+            },
+            {
+              "ref": "Hos.4.13",
+              "note": "“They sacrifice on the tops of the mountains.”"
+            },
+            {
+              "ref": "Ezk.18.6",
+              "note": "The righteous man “has not eaten on the mountains”: shared the idol feasts."
+            }
+          ]
+        },
+        {
+          "id": "lasting-yet-moved",
+          "gloss": "mountains as the oldest and firmest things",
+          "definition": "In poetry mountains stand for what is oldest and least movable in the earth, so that their being moved, melted or levelled shows Yahweh’s power, and his kindness is said to outlast them.",
+          "evidence": [
+            {
+              "ref": "Psa.90.2",
+              "role": "defining",
+              "note": "“Before the mountains were born, or you brought forth the earth and the world, from everlasting to everlasting you are God.”"
+            },
+            {
+              "ref": "Pro.8.25",
+              "note": "Wisdom: “before the mountains were settled, before the hills, I was brought forth.”"
+            },
+            {
+              "ref": "Hab.3.6",
+              "role": "defining",
+              "note": "“The everlasting mountains (הַרְרֵי־עַד) were scattered, the eternal hills (גִּבְעוֹת עוֹלָם) bowed.”"
+            },
+            {
+              "ref": "Deu.33.15",
+              "note": "“The chief things of the ancient mountains (הַרְרֵי־קֶדֶם), the precious things of the eternal hills.”"
+            },
+            {
+              "ref": "Isa.54.10",
+              "role": "defining",
+              "note": "“The mountains may depart and the hills be removed, but my kindness shall not depart from you.”"
+            },
+            {
+              "ref": "Psa.125.1",
+              "note": "“Those who trust in Yahweh are like Mount Zion, which cannot be moved.”"
+            },
+            {
+              "ref": "Mic.1.4",
+              "note": "“The mountains melt under him, and the valleys split, like wax before the fire.”"
+            },
+            {
+              "ref": "Jdg.5.5",
+              "note": "“The mountains flowed before Yahweh, this Sinai.”"
+            },
+            {
+              "ref": "Psa.97.5",
+              "note": "“The mountains melted like wax before Yahweh.”"
+            },
+            {
+              "ref": "Job.9.5",
+              "note": "He removes the mountains and they do not know it."
+            },
+            {
+              "ref": "Zec.4.7",
+              "role": "defining",
+              "note": "“Who are you, O great mountain? Before Zerubbabel you shall become a plain (מִישֹׁר)”: the mountain as the obstacle Yahweh levels."
+            },
+            {
+              "ref": "Psa.104.8",
+              "note": "“The mountains rose, the valleys sank down to the place you founded for them.”"
+            }
+          ]
+        },
+        {
+          "id": "mountains-addressed",
+          "gloss": "mountains standing for the land, its people or a kingdom",
+          "definition": "The prophets speak to the mountains as to the land and those who live on it, call them as witnesses, bid them sing, and name a kingdom a mountain.",
+          "evidence": [
+            {
+              "ref": "Ezk.36.1",
+              "role": "defining",
+              "note": "“Prophesy to the mountains of Israel and say, Mountains of Israel, hear the word of Yahweh”: the land addressed for its people."
+            },
+            {
+              "ref": "Ezk.6.3",
+              "note": "“Mountains of Israel … I will destroy your high places.”"
+            },
+            {
+              "ref": "Mic.6.1",
+              "role": "defining",
+              "note": "“Plead your case before the mountains, and let the hills hear your voice”: mountains as witnesses of the covenant."
+            },
+            {
+              "ref": "Mic.6.2",
+              "note": "“Hear, O mountains, Yahweh’s controversy.”"
+            },
+            {
+              "ref": "Isa.55.12",
+              "note": "“The mountains and the hills shall break forth into singing before you.”"
+            },
+            {
+              "ref": "Isa.44.23",
+              "note": "“Break forth into singing, O mountains.”"
+            },
+            {
+              "ref": "Jer.51.25",
+              "role": "defining",
+              "note": "To Babylon: “I am against you, O destroying mountain, which destroys all the earth … and will make you a burnt mountain”: a kingdom called a mountain."
+            },
+            {
+              "ref": "Hos.10.8",
+              "note": "“They shall say to the mountains, Cover us, and to the hills, Fall on us”; quoted by Jesus of Jerusalem’s judgment (Luk 23:30)."
+            },
+            {
+              "ref": "Luk.23.30",
+              "note": "“Then they will begin to say to the mountains, Fall on us.”"
+            },
+            {
+              "ref": "Isa.52.7",
+              "note": "“How beautiful on the mountains are the feet of him who brings good news”: the hills of Judah round Zion."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὄρος",
+          "gloss": "mountain, hill",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.10.33, הַר → ὄρους; Isa.40.4, Exo.25.40, Zec.14.4 the same; ὄρος renders הַר ×479"
+            },
+            {
+              "ref": "Luk.3.5",
+              "role": "defining",
+              "note": "Isa 40:4 quoted: “every ὄρος and βουνός shall be brought low.”"
+            },
+            {
+              "ref": "Heb.8.5",
+              "role": "defining",
+              "note": "Exo 25:40 quoted: “according to the pattern shown you in the ὄρει.”"
+            },
+            {
+              "ref": "Heb.12.20",
+              "note": "Exo 19:12–13: “if even a beast touches the ὄρους, it shall be stoned.”"
+            },
+            {
+              "ref": "Heb.12.22",
+              "note": "“You have come to Mount Zion, the city of the living God.”"
+            },
+            {
+              "ref": "Gal.4.25",
+              "note": "“Hagar is Mount Sinai in Arabia.”"
+            },
+            {
+              "ref": "Act.7.30",
+              "note": "The angel in the bush “in the wilderness of Mount Sinai”."
+            },
+            {
+              "ref": "Act.1.12",
+              "note": "The disciples returned to Jerusalem “from the mount called Olivet”."
+            },
+            {
+              "ref": "Mat.24.3",
+              "note": "Jesus sat on the Mount of Olives."
+            },
+            {
+              "ref": "Rev.14.1",
+              "note": "The Lamb standing on Mount Zion."
+            }
+          ]
+        },
+        {
+          "lemma": "ὀρεινός",
+          "gloss": "hilly; (ἡ ὀρεινή) the hill country",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jos.11.16, הָר → ὀρεινήν; Jos.11.21, Jdg.1.9, Deu.11.11 the same: the hill-country sense"
+            },
+            {
+              "ref": "Luk.1.39",
+              "role": "defining",
+              "note": "Mary went “into the hill country (τὴν ὀρεινήν), to a city of Judah”: הַר יְהוּדָה."
+            },
+            {
+              "ref": "Luk.1.65",
+              "note": "“Throughout all the hill country of Judea.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גִּבְעָה",
+            "note": "“Hill”, the lesser height, almost always second to הַר in a pair.",
+            "evidence": [
+              {
+                "ref": "Isa.40.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.54.10"
+              },
+              {
+                "ref": "Hab.3.6"
+              },
+              {
+                "ref": "Hos.10.8"
+              },
+              {
+                "ref": "Mic.6.1"
+              },
+              {
+                "ref": "Deu.33.15"
+              },
+              {
+                "ref": "Pro.8.25"
+              }
+            ]
+          },
+          {
+            "lemma": "צִיּוֹן",
+            "note": "Zion, set beside “my holy mountain” and named “Mount Zion”.",
+            "evidence": [
+              {
+                "ref": "Psa.2.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.2.3"
+              },
+              {
+                "ref": "Psa.125.1"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עֵמֶק",
+            "note": "The valley, the low ground where chariots could fight.",
+            "evidence": [
+              {
+                "ref": "Jdg.1.19",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.20.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Mic.1.4"
+              }
+            ]
+          },
+          {
+            "lemma": "גַּיְא",
+            "note": "The valley, to be lifted as the mountain is lowered.",
+            "evidence": [
+              {
+                "ref": "Isa.40.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.14.4"
+              }
+            ]
+          },
+          {
+            "lemma": "בִּקְעָה",
+            "note": "The broad valley or plain.",
+            "evidence": [
+              {
+                "ref": "Deu.11.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.8.7"
+              },
+              {
+                "ref": "Psa.104.8"
+              }
+            ]
+          },
+          {
+            "lemma": "שְׁפֵלָה",
+            "note": "The lowland, the region below the hill country.",
+            "evidence": [
+              {
+                "ref": "Jos.11.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.1.7"
+              }
+            ]
+          },
+          {
+            "lemma": "מִישׁוֹר",
+            "note": "The level plain a mountain is made into.",
+            "evidence": [
+              {
+                "ref": "Zec.4.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.40.4"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הַר הָאֱלֹהִים",
+            "gloss": "the mountain of God (Horeb)",
+            "evidence": [
+              {
+                "ref": "Exo.3.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.4.27"
+              },
+              {
+                "ref": "Exo.18.5"
+              },
+              {
+                "ref": "Exo.24.13"
+              },
+              {
+                "ref": "1Ki.19.8"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר סִינַי",
+            "gloss": "Mount Sinai",
+            "evidence": [
+              {
+                "ref": "Exo.19.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.19.18"
+              },
+              {
+                "ref": "Lev.25.1"
+              },
+              {
+                "ref": "Num.3.1"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר יַהְוֶה",
+            "gloss": "the mountain of Yahweh",
+            "evidence": [
+              {
+                "ref": "Num.10.33",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.22.14"
+              },
+              {
+                "ref": "Isa.2.3"
+              },
+              {
+                "ref": "Psa.24.3"
+              },
+              {
+                "ref": "Zec.8.3"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר קָדְשִׁי",
+            "gloss": "my holy mountain",
+            "evidence": [
+              {
+                "ref": "Psa.2.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.11.9"
+              },
+              {
+                "ref": "Isa.56.7"
+              },
+              {
+                "ref": "Isa.65.25"
+              },
+              {
+                "ref": "Jol.4.17"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר צִיּוֹן",
+            "gloss": "Mount Zion",
+            "evidence": [
+              {
+                "ref": "Psa.48.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.125.1"
+              },
+              {
+                "ref": "2Ki.19.31"
+              },
+              {
+                "ref": "Isa.4.5"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר בֵּית־יַהְוֶה",
+            "gloss": "the mountain of Yahweh’s house",
+            "evidence": [
+              {
+                "ref": "Isa.2.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Mic.4.1"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר הַבַּיִת",
+            "gloss": "the mountain of the house (the temple mount)",
+            "evidence": [
+              {
+                "ref": "Mic.3.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.26.18"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר הַזֵּיתִים",
+            "gloss": "the Mount of Olives",
+            "evidence": [
+              {
+                "ref": "Zec.14.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר אֶפְרַיִם",
+            "gloss": "the hill country of Ephraim",
+            "evidence": [
+              {
+                "ref": "Jos.24.30",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.17.1"
+              },
+              {
+                "ref": "1Sa.1.1"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר יְהוּדָה",
+            "gloss": "the hill country of Judah",
+            "evidence": [
+              {
+                "ref": "Jos.11.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.20.7"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר מוֹעֵד",
+            "gloss": "the mount of assembly (the king of Babylon’s boast)",
+            "evidence": [
+              {
+                "ref": "Isa.14.13",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "הַרְרֵי־קֶדֶם",
+            "gloss": "the ancient mountains, the mountains of the east",
+            "evidence": [
+              {
+                "ref": "Deu.33.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.23.7"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל־כָּל־הַר גָּבֹהַּ וְתַחַת כָּל־עֵץ רַעֲנָן",
+            "gloss": "on every high mountain and under every green tree (the places of idolatry)",
+            "evidence": [
+              {
+                "ref": "Jer.3.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.12.2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֲרָרִי",
+      "pos": "adjective",
+      "gloss": "Hararite, of the hill country (?)",
+      "bdb": [
+        "e.cf.ad"
+      ],
+      "cognate_ids": [
+        "phn-hr"
+      ],
+      "summary": "A gentilic borne by three of David’s mighty men: Shammah son of Agee, Ahiam son of Sharar (Sachar), and Jonathan son of Shagee. Its form is a gentilic -ִי on the doubled stem הֲרָר-, the stem of the plural הֲרָרִים, so it is most simply “man of the hill country”; but scripture never says so, and it may instead name a place Harar that is mentioned nowhere else. Five uses, all in the lists of the mighty men, so its sense and tie to the root rest on its form alone.",
+      "senses": [
+        {
+          "gloss": "the Hararite (epithet of David’s mighty men)",
+          "definition": "A man’s epithet of origin, in the lists of David’s mighty men: either a man of the hill country or a man of an unknown Harar.",
+          "evidence": [
+            {
+              "ref": "2Sa.23.11",
+              "role": "defining",
+              "note": "“Shammah son of Agee הָרָרִי”, who stood in the field of lentils."
+            },
+            {
+              "ref": "2Sa.23.33",
+              "note": "“Shammah הַהֲרָרִי; Ahiam son of Sharar הָארָרִי”: the same epithet spelled with א."
+            },
+            {
+              "ref": "1Ch.11.34",
+              "note": "“Jonathan son of Shagee הַהֲרָרִי.”"
+            },
+            {
+              "ref": "1Ch.11.35",
+              "note": "“Ahiam son of Sachar הַהֲרָרִי.”"
+            },
+            {
+              "ref": "Jer.17.3",
+              "note": "The same letters, pointed הֲרָרִי, are “my mountain in the field”, a form of הַר: the stem הֲרָר- is the mountain word’s own."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-hr",
+      "lang": "phn",
+      "form": "𐤄𐤓",
+      "translit": "hr",
+      "gloss": "mountain(s), mountain country; hr ʾlm, temple mount, “mountain of the gods”",
+      "relation": "cognate",
+      "note": "A temple built “on the mountain” at En Yidlal (KAI 14, Sidon), and a sanctuary precinct called “the mountain of the gods” (KAI 81, Punic): the same word, used, like הַר, of a mountain where a god is worshipped. Krahmalkov also quotes the Amarna letter from Byblos EA 74.19–20, whose Akkadian “in the mountain country” is glossed with the Canaanite ḫarri: the word in the coastal Canaanite of the 14th century BC.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 161, HR I",
+          "note": "“[Heb. har] n.m. MOUNTAIN(S), MOUNTAIN COUNTRY. EA 74.19/20 (Byblos) … ina harri [ḫa-ar-ri], ‘all my cities that are in the mountain country.’ KAI 14.16/17 (Ph) … bhr, ‘on the mountain [or, in the mountains]’.”"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 162, HR ʾLM",
+          "note": "“n. ex. TEMPLE MOUNT, lit. MOUNTAIN OF THE GOD(S)”, KAI 81.1/4 (Pu)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000143 hr [mountain], PUN000594 hr [mountain]"
+        }
+      ]
+    },
+    {
+      "id": "uga-hr",
+      "lang": "uga",
+      "form": "𐎅𐎗",
+      "translit": "hr",
+      "gloss": "mountain (?)",
+      "relation": "possible",
+      "note": "Listed with Hebrew har and Punic hr under one root “mountain”, but not found in Segert’s glossary, which gives Ugaritic hr only as “conception”; Ugaritic’s usual word for mountain is ǵr. Kept as possible until a text using hr of a mountain is found.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000143 hr [mountain], UGC001772 hr [mountain]"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "Glossary, s.v. hr",
+          "note": "“hr ‘conception’ … (cf. H. h-r-y ‘to conceive’)”: no mountain sense listed."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "global-flood",
+      "statement": "The waters “prevailed exceedingly on the earth, and all the high mountains that were under all the heavens were covered”, and rose “fifteen cubits upward” above them (Gen 7:19–20). The ark grounded “on the mountains of Ararat” in the seventh month, and only in the tenth were “the tops of the mountains” seen (Gen 8:4–5). The psalm says the deep covered the earth “as a garment; the waters stood above the mountains”, until at Yahweh’s rebuke they fled to the bounds he set “that they may not turn again to cover the earth” (Psa 104:6–9), the promise of Gen 9:11. Peter says “the world that then was, being overflowed with water, perished” (2Pe 3:6). From the verses: the flood covered every mountain under the whole heaven, for months, and so was not a local flood but the whole earth’s, which Yahweh has sworn not to repeat.",
+      "evidence": [
+        {
+          "ref": "Gen.7.19",
+          "to": "Gen.7.20"
+        },
+        {
+          "ref": "Gen.8.4",
+          "to": "Gen.8.5"
+        },
+        {
+          "ref": "Psa.104.6",
+          "to": "Psa.104.9"
+        },
+        {
+          "ref": "Gen.9.11"
+        },
+        {
+          "ref": "2Pe.3.6"
+        }
+      ]
+    },
+    {
+      "topic": "sinai-and-zion",
+      "statement": "At Sinai the mountain burned and quaked, the people were fenced off from it on pain of death, and Moses received the law there (Exo 19:12–13, 18; Num 10:33). Zion is the mountain where Yahweh sets his king and from which his law is to go out to the nations (Psa 2:6; Isa 2:3). Hebrews sets the two side by side: “you have not come to the mountain that might be touched and that burned with fire … but you have come to Mount Zion, the city of the living God, the heavenly Jerusalem … and to Jesus the mediator of a new covenant” (Heb 12:18–24); and Paul says the two covenants are Hagar, “Mount Sinai in Arabia”, which answers to the Jerusalem that then was and is in bondage, and “the Jerusalem above”, which is free (Gal 4:24–26). From the verses: the two mountains stand for the two covenants, the law given at Sinai with terror and distance, and the covenant made in Christ, by which believers already belong to the Zion that is to come.",
+      "evidence": [
+        {
+          "ref": "Exo.19.12",
+          "to": "Exo.19.13"
+        },
+        {
+          "ref": "Exo.19.18"
+        },
+        {
+          "ref": "Num.10.33"
+        },
+        {
+          "ref": "Psa.2.6"
+        },
+        {
+          "ref": "Isa.2.3"
+        },
+        {
+          "ref": "Heb.12.18",
+          "to": "Heb.12.24"
+        },
+        {
+          "ref": "Gal.4.24",
+          "to": "Gal.4.26"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "“In the last days the mountain of Yahweh’s house shall be established at the head of the mountains … and all nations shall flow to it”, and the law shall go out from Zion; they will beat their swords into ploughshares (Isa 2:2–4; Mic 4:1–3). Yahweh’s king is set “on Zion, my holy mountain” (Psa 2:6), and Paul says Psalm 2 is fulfilled in Jesus raised from the dead (Act 13:33). In Daniel the stone that strikes the image “became a great mountain and filled the whole earth”, and it is “a kingdom which shall never be destroyed” set up by the God of heaven (Dan 2:35, 44–45); so Isaiah’s “they shall not hurt nor destroy in all my holy mountain, for the earth shall be full of the knowledge of Yahweh” (Isa 11:9). Zechariah puts feet on the Mount of Olives “in that day”, when “Yahweh shall be king over all the earth” (Zec 14:4, 9); Jesus went up from that mountain, and the angels said he would come “in like manner” (Act 1:11–12); John sees the Lamb standing on Mount Zion (Rev 14:1). From the verses: the kingdom is on the earth, its centre the mountain of Zion at Jerusalem, its king Jesus at his return, and from there it grows until it fills the whole earth.",
+      "evidence": [
+        {
+          "ref": "Isa.2.2",
+          "to": "Isa.2.4"
+        },
+        {
+          "ref": "Mic.4.1",
+          "to": "Mic.4.3"
+        },
+        {
+          "ref": "Psa.2.6"
+        },
+        {
+          "ref": "Act.13.33"
+        },
+        {
+          "ref": "Dan.2.35"
+        },
+        {
+          "ref": "Dan.2.44",
+          "to": "Dan.2.45"
+        },
+        {
+          "ref": "Isa.11.9"
+        },
+        {
+          "ref": "Zec.14.4"
+        },
+        {
+          "ref": "Zec.14.9"
+        },
+        {
+          "ref": "Act.1.11",
+          "to": "Act.1.12"
+        },
+        {
+          "ref": "Rev.14.1"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (מֵהַר יַהְוֶה, Num 10:33). The root הרר has no verb in scripture; the doubled stem shows only in the plural הֲרָרִים / הַרְרֵי (Gen 14:6; Num 23:7; Deu 8:9; 33:15; Jer 17:3; Hab 3:6; Psa 36:7; 50:10; 76:5; 87:1; 133:3; Sng 4:8), all counted under e.cf.ab, and in the gentilic הֲרָרִי. Left out, keys not claimed: הֲתָךְ Hathak (e.cf.aj, a Persian eunuch, Est 4:5–10) and הָשֵׁם Hashem (e.cf.ae, 1Ch 11:34), people whose names have no shown tie to this root (filed here by alphabetical position, not by evidence) and are not names assigned to this draft; הֹר Hor, “Hor the mountain” (e.cb.al, Num 20:22 etc.), a place name, which cannot be a name entry and may be an old form of הַר; הַרְאֵל (e.cb.an, Ezk 43:15), the altar hearth, which the same verse spells הָאֲרִאֵיל and so belongs with אֲרִיאֵל; and the person Haran (הָרָן), whose name some derive from הַר without evidence. Zero-token cross-reference keys a.fy.ac, e.ae.ab, e.bc.ac, e.cb.ak and e.cf.ac are left out. Psa 75:7 הָרִים is a hiphil of רום and not this word. Gen 49:26 הוֹרַי (keyed e.cd.aa, “my parents”, under הרה) stands where Deu 33:15 has הַרְרֵי־קֶדֶם, both beside גִּבְעֹת עוֹלָם, and Hab 3:6 has הַרְרֵי־עַד beside the same: read “the mountains of old” it would be this word; left to review. Aramaic: scripture’s Aramaic and the Peshitta say טוּר / ܛܘܪܐ for mountain (Dan 2:35, 45), a different root, so there is no Aramaic word in this entry and no Peshitta cognate. Arabic: no هرر “mountain” (Lane has none; the Wiktionary هرّ words, cat, purr, diarrhoea, are unrelated); Arabic says jabal. Sabaic (Biella) says ṣwr/zrn for mountain; no hr. Akkadian’s mountain words are šadû and ḫuršānu; the Amarna ḫarri is a Canaanite gloss, cited under the Phoenician cognate from Krahmalkov. Not consulted: DULAT for Ugaritic hr (kept as possible), Geʿez (Dillmann, Leslau). Krahmalkov read from the local PDF’s text layer; page numbers taken from the page footers there. Open questions: (1) whether הֲרָרִי is “of the hill country” or of an unknown place Harar; (2) Gen 49:26 הוֹרַי; (3) whether Hor (הֹר הָהָר) should be recorded here as a form of הַר."
+}
