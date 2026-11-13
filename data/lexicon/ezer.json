@@ -1,0 +1,1505 @@
+{
+  "id": "ezer",
+  "root": "עזר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "help",
+    "salvation",
+    "war",
+    "trust",
+    "temple"
+  ],
+  "gloss": "help, come to the aid of; help, helper",
+  "summary": "The verb is to help: to come alongside someone in need, above all in war, so that he prevails (Jos 10:4; 2Sa 21:17). Its participle עֹזֵר is a helper or ally, and “there is none to help” is the cry of the abandoned (Psa 22:12; 72:12). The nouns עֵזֶר and עֶזְרָה are help, and the one who gives it: most often Yahweh himself, “our help and our shield” (Psa 33:20; 121:2), set against the vain help of Egypt and of man (Isa 31:1–3; Psa 60:13); the woman is made “a helper corresponding to” the man (Gen 2:18). Ugaritic ʿḏr, Phoenician ʿzr and Aramaic and Syriac ʿdr “help” are the same root.",
+  "words": [
+    {
+      "lemma": "עָזַר",
+      "pos": "verb",
+      "gloss": "help, aid, come to the aid of; (niphal) be helped",
+      "bdb": [
+        "p.bz.aa"
+      ],
+      "cognate_ids": [
+        "uga-adr",
+        "phn-zr",
+        "arc-adar",
+        "ar-adhir",
+        "ar-azzara",
+        "akk-azaru"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "help, come to the aid of; (participle) helper, ally",
+          "senses": [
+            {
+              "id": "help-ally",
+              "gloss": "help, come to the aid of (in war or a task)",
+              "definition": "To come and stand with someone against an enemy or in a work too great for him, adding one’s strength to his: allies marching to a king’s aid, a warrior stepping in to strike the man’s attacker, brothers helping brothers take their land.",
+              "evidence": [
+                {
+                  "ref": "Jos.10.4",
+                  "role": "defining",
+                  "note": "“Come up to me וְעִזְרֻנִי, and let us strike Gibeon”: the five kings call each other to war."
+                },
+                {
+                  "ref": "Jos.10.6",
+                  "note": "Gibeon to Joshua: “Come up to us quickly, save us וְעָזְרֵנוּ.”"
+                },
+                {
+                  "ref": "Jos.1.14",
+                  "role": "defining",
+                  "note": "The two and a half tribes are to cross over armed before their brothers וַעֲזַרְתֶּם אוֹתָם, until they too have rest."
+                },
+                {
+                  "ref": "2Sa.21.17",
+                  "role": "defining",
+                  "note": "וַיַּעֲזָר־לוֹ אֲבִישַׁי: Abishai came to David’s help and struck the Philistine and killed him."
+                },
+                {
+                  "ref": "2Sa.8.5",
+                  "note": "Aram of Damascus came לַעְזֹר Hadadezer, and David struck them."
+                },
+                {
+                  "ref": "2Sa.18.3",
+                  "note": "The people to David: better that you be ready לַעְזוֹר us from the city."
+                },
+                {
+                  "ref": "1Ch.12.18",
+                  "role": "defining",
+                  "note": "David to the men of Benjamin and Judah: “If you have come in peace to me לְעָזְרֵנִי … but if to betray me to my enemies …”."
+                },
+                {
+                  "ref": "1Ch.12.22",
+                  "note": "They helped David against the raiding band."
+                },
+                {
+                  "ref": "Dan.10.13",
+                  "note": "Michael, one of the chief princes, came לְעָזְרֵנִי against the prince of the kingdom of Persia."
+                },
+                {
+                  "ref": "1Ki.1.7",
+                  "note": "Joab and Abiathar וַיַּעְזְרוּ אַחֲרֵי אֲדֹנִיָּה: they backed Adonijah’s bid for the throne."
+                },
+                {
+                  "ref": "Ezr.10.15",
+                  "note": "Meshullam and Shabbethai the Levite עֲזָרֻם, supported the two who stood against the measure."
+                },
+                {
+                  "ref": "2Ch.32.3",
+                  "note": "Hezekiah’s officers helped him stop the springs outside the city."
+                },
+                {
+                  "ref": "Isa.41.6",
+                  "note": "The idol-makers: “each helps his neighbour, and says to his brother, Be strong”."
+                },
+                {
+                  "ref": "2Ch.20.23",
+                  "note": "Ammon and Moab, having destroyed Seir, “helped each one his neighbour to destruction”."
+                },
+                {
+                  "ref": "Zec.1.15",
+                  "role": "defining",
+                  "note": "“I was angry a little, and they עָזְרוּ לְרָעָה”: the nations added their own evil to the chastening Yahweh meant."
+                }
+              ]
+            },
+            {
+              "id": "god-helps",
+              "gloss": "help (of God helping his people or servant)",
+              "definition": "Of God, coming to the aid of his people, his king or his servant: giving victory in battle, holding them up so they do not fall, and doing it when no other help can. The parallels are “strengthen”, “uphold”, “save”, “deliver” and “comfort”.",
+              "evidence": [
+                {
+                  "ref": "1Sa.7.12",
+                  "role": "defining",
+                  "note": "Samuel sets up a stone and calls it אֶבֶן הָעָזֶר: “Hitherto Yahweh עֲזָרָנוּ.”"
+                },
+                {
+                  "ref": "Isa.41.10",
+                  "role": "defining",
+                  "note": "“Fear not, for I am with you … אִמַּצְתִּיךָ, also עֲזַרְתִּיךָ, also I uphold you with the right hand of my righteousness”: help between strengthening and upholding."
+                },
+                {
+                  "ref": "Isa.41.13",
+                  "note": "“I, Yahweh your God, hold your right hand, who says to you, Fear not, I עֲזַרְתִּיךָ.”"
+                },
+                {
+                  "ref": "Isa.41.14",
+                  "note": "“Fear not, worm Jacob … I help you, says Yahweh, and your redeemer is the Holy One of Israel.”"
+                },
+                {
+                  "ref": "Isa.44.2",
+                  "note": "Yahweh who made you and formed you from the womb יַעְזְרֶךָּ."
+                },
+                {
+                  "ref": "Isa.49.8",
+                  "role": "defining",
+                  "note": "To the servant: “In a time of favour I answered you, and in a day of salvation עֲזַרְתִּיךָ; I will keep you and give you as a covenant of the people.” Quoted in 2Co 6:2."
+                },
+                {
+                  "ref": "Isa.50.7",
+                  "role": "defining",
+                  "note": "The servant, struck and spat on (50:6): “The Lord Yahweh יַעֲזָר־לִי; therefore I am not disgraced.”"
+                },
+                {
+                  "ref": "Isa.50.9",
+                  "note": "“Behold, the Lord Yahweh helps me; who is he that will condemn me?”"
+                },
+                {
+                  "ref": "Gen.49.25",
+                  "note": "To Joseph: “from the God of your father, who will help you”, beside Shaddai who will bless you."
+                },
+                {
+                  "ref": "Psa.118.13",
+                  "role": "defining",
+                  "note": "“You pushed me hard to make me fall, but Yahweh עֲזָרָנִי”: help is being kept from falling."
+                },
+                {
+                  "ref": "Psa.37.40",
+                  "role": "defining",
+                  "note": "“Yahweh helps them and delivers them; he delivers them from the wicked and saves them, because they take refuge in him.”"
+                },
+                {
+                  "ref": "Psa.86.17",
+                  "note": "“You, Yahweh, עֲזַרְתַּנִי וְנִחַמְתָּנִי.”"
+                },
+                {
+                  "ref": "Psa.109.26",
+                  "note": "“Help me, Yahweh my God; save me according to your חֶסֶד.”"
+                },
+                {
+                  "ref": "Psa.79.9",
+                  "note": "“Help us, God of our salvation, for the glory of your name; deliver us and cover our sins.”"
+                },
+                {
+                  "ref": "Psa.46.6",
+                  "note": "God is in the midst of the city; God will help her at the turn of the morning."
+                },
+                {
+                  "ref": "Psa.119.173",
+                  "note": "“Let your hand be ready to help me, for I have chosen your precepts.”"
+                },
+                {
+                  "ref": "2Ch.14.10",
+                  "role": "defining",
+                  "note": "Asa: “There is none beside you to help between the mighty and the one with no strength; help us, Yahweh our God, for we rely on you.”"
+                },
+                {
+                  "ref": "2Ch.25.8",
+                  "role": "defining",
+                  "note": "“God has power לַעְזוֹר וּלְהַכְשִׁיל”: to help, or to make to stumble."
+                },
+                {
+                  "ref": "2Ch.32.8",
+                  "role": "defining",
+                  "note": "“With him is an arm of flesh, but with us is Yahweh our God לְעָזְרֵנוּ and to fight our battles.”"
+                },
+                {
+                  "ref": "2Ch.18.31",
+                  "note": "Jehoshaphat cried out, and Yahweh helped him, and God drew them away from him."
+                },
+                {
+                  "ref": "2Ch.26.7",
+                  "note": "God helped Uzziah against the Philistines."
+                },
+                {
+                  "ref": "1Ch.12.19",
+                  "note": "Amasai, clothed by the Spirit: “Peace to your helper, for your God עֲזָרְךָ.”"
+                },
+                {
+                  "ref": "1Ch.15.26",
+                  "note": "When God helped the Levites who carried the ark."
+                },
+                {
+                  "ref": "Deu.32.38",
+                  "note": "Of the gods Israel turned to: “Let them rise up and help you”: what they cannot do."
+                },
+                {
+                  "ref": "Ezr.8.22",
+                  "note": "Ezra was ashamed to ask the king for soldiers to help on the way, having said that God’s hand is on all who seek him."
+                }
+              ]
+            },
+            {
+              "id": "helper-none",
+              "gloss": "(participle) helper, ally; “none to help”",
+              "definition": "עֹזֵר is one who helps: an ally in war, or the one who takes up the cause of the poor and fatherless. With אֵין it is the state of one left with no one to stand with him.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.12",
+                  "role": "defining",
+                  "note": "The king “will deliver the needy who cries, and the afflicted, וְאֵין־עֹזֵר לוֹ”."
+                },
+                {
+                  "ref": "Job.29.12",
+                  "note": "Job delivered the afflicted who cried, and the fatherless וְלֹא־עֹזֵר לוֹ."
+                },
+                {
+                  "ref": "Psa.22.12",
+                  "role": "defining",
+                  "note": "“Be not far from me, for trouble is near, כִּי־אֵין עוֹזֵר.”"
+                },
+                {
+                  "ref": "Isa.63.5",
+                  "role": "defining",
+                  "note": "“I looked, וְאֵין עֹזֵר; I was astonished, and none to uphold; so my own arm saved for me”: עֹזֵר beside סוֹמֵךְ."
+                },
+                {
+                  "ref": "Psa.107.12",
+                  "note": "They stumbled, and none to help."
+                },
+                {
+                  "ref": "Lam.1.7",
+                  "note": "When her people fell into the enemy’s hand, וְאֵין עוֹזֵר לָהּ."
+                },
+                {
+                  "ref": "2Ki.14.26",
+                  "note": "Yahweh saw Israel’s bitter affliction: none shut up or left, and no helper for Israel."
+                },
+                {
+                  "ref": "Dan.11.45",
+                  "note": "He will come to his end, וְאֵין עוֹזֵר לוֹ."
+                },
+                {
+                  "ref": "Psa.10.14",
+                  "role": "defining",
+                  "note": "“The helpless commits himself to you; you have been the helper of the fatherless.”"
+                },
+                {
+                  "ref": "Psa.30.11",
+                  "note": "“Yahweh, be עֹזֵר לִי.”"
+                },
+                {
+                  "ref": "Psa.54.6",
+                  "note": "“Behold, God is עֹזֵר לִי; the Lord is among those who uphold my soul.”"
+                },
+                {
+                  "ref": "Psa.118.7",
+                  "note": "“Yahweh is for me among my helpers (בְּעֹזְרָי).”"
+                },
+                {
+                  "ref": "1Ki.20.16",
+                  "note": "Ben-hadad and the thirty-two kings עֹזֵר אֹתוֹ: his allies."
+                },
+                {
+                  "ref": "1Ch.12.1",
+                  "note": "The mighty men who came to David at Ziklag, עֹזְרֵי הַמִּלְחָמָה."
+                },
+                {
+                  "ref": "Ezk.30.8",
+                  "note": "When I set fire in Egypt and all her helpers are broken."
+                },
+                {
+                  "ref": "Ezk.32.21",
+                  "note": "The mighty speak to Pharaoh from the midst of the grave, with his helpers."
+                },
+                {
+                  "ref": "Jer.47.4",
+                  "note": "To cut off from Tyre and Sidon every surviving helper."
+                },
+                {
+                  "ref": "Job.9.13",
+                  "note": "The helpers of Rahab bow beneath God."
+                },
+                {
+                  "ref": "Isa.31.3",
+                  "role": "defining",
+                  "note": "“Egypt is man and not God … Yahweh will stretch out his hand, and the helper (עוֹזֵר) will stumble and the helped (עָזֻר) will fall.”"
+                },
+                {
+                  "ref": "Isa.30.7",
+                  "note": "Egypt helps in vain and to no purpose."
+                }
+              ],
+              "kin": [
+                "helper",
+                "god-my-help"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be helped",
+          "senses": [
+            {
+              "gloss": "be helped",
+              "definition": "To receive help, so as to prevail: always, where the helper is named, help from God given to those who trust him.",
+              "evidence": [
+                {
+                  "ref": "Psa.28.7",
+                  "role": "defining",
+                  "note": "“Yahweh is my strength and my shield; in him my heart trusted, וְנֶעֱזָרְתִּי.”"
+                },
+                {
+                  "ref": "1Ch.5.20",
+                  "role": "defining",
+                  "note": "וַיֵּעָזְרוּ עֲלֵיהֶם: “they were helped against them … for they cried to God in the battle, and he was entreated by them, because they trusted in him.”"
+                },
+                {
+                  "ref": "2Ch.26.15",
+                  "note": "Uzziah “was marvellously helped until he was strong”, and then grew proud (26:16)."
+                },
+                {
+                  "ref": "Dan.11.34",
+                  "note": "“When they stumble, יֵעָזְרוּ עֵזֶר מְעָט”: helped with a little help."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "help",
+          "senses": [
+            {
+              "gloss": "help",
+              "definition": "The same as the qal, in one verse: Ahaz’s reasoning that Aram’s gods were helping Aram.",
+              "evidence": [
+                {
+                  "ref": "2Ch.28.23",
+                  "role": "defining",
+                  "note": "“The gods of the kings of Aram מַעְזְרִים אוֹתָם; to them I will sacrifice וְיַעְזְרוּנִי.” But they were his and all Israel’s stumbling."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βοηθέω",
+          "gloss": "help, come to the aid of",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.49.8, עֲזַרְתִּיךָ → ἐβοήθησά σοι; 1Sa.7.12, עֲזָרָנוּ → ἐβοήθησεν; Isa.41.10, עֲזַרְתִּיךָ → ἐβοήθησά; Psa.109.26, עָזְרֵנִי → βοήθησόν; βοηθέω renders עָזַר ×25"
+            },
+            {
+              "ref": "2Co.6.2",
+              "role": "defining",
+              "note": "Isa 49:8: “In an acceptable time I heard you, and in a day of salvation ἐβοήθησά σοι; behold, now is the day of salvation.”"
+            },
+            {
+              "ref": "Heb.2.18",
+              "role": "defining",
+              "note": "“Having himself suffered, being tested, he is able βοηθῆσαι those who are tested.”"
+            },
+            {
+              "ref": "Mat.15.25",
+              "note": "The Canaanite woman: “Lord, βοήθει μοι.”"
+            },
+            {
+              "ref": "Mrk.9.24",
+              "note": "“I believe; βοήθει my unbelief.”"
+            },
+            {
+              "ref": "Act.16.9",
+              "note": "“Come over to Macedonia and help us.”"
+            },
+            {
+              "ref": "Rev.12.16",
+              "note": "The earth helped the woman, and swallowed the river."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀντιλαμβάνομαι",
+          "gloss": "take hold of, help",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.118.13, עֲזָרָנִי → ἀντελάβετό μου; 2Ch.28.23, וְיַעְזְרוּנִי → ἀντιλήμψονταί"
+            },
+            {
+              "ref": "Luk.1.54",
+              "note": "“He has helped (ἀντελάβετο) Israel his servant, remembering mercy”: the servant Israel of Isa 41:8–14, where Yahweh says “I help you”."
+            },
+            {
+              "ref": "Act.20.35",
+              "note": "“So labouring you ought ἀντιλαμβάνεσθαι the weak.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָשַׁע",
+            "note": "“Save” (hiphil), beside it of God’s help.",
+            "evidence": [
+              {
+                "ref": "Psa.109.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.37.40"
+              },
+              {
+                "ref": "Job.26.2"
+              },
+              {
+                "ref": "Jos.10.6"
+              }
+            ]
+          },
+          {
+            "lemma": "פָּלַט",
+            "note": "“Deliver”, beside it.",
+            "evidence": [
+              {
+                "ref": "Psa.37.40",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "אָמֵץ",
+            "note": "“Strengthen” and תָּמַךְ “uphold”, the steps before and after help.",
+            "evidence": [
+              {
+                "ref": "Isa.41.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "סָמַךְ",
+            "note": "“Uphold, sustain”: “none to help … none to uphold”.",
+            "evidence": [
+              {
+                "ref": "Isa.63.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.54.6"
+              }
+            ]
+          },
+          {
+            "lemma": "נָחַם",
+            "note": "“Comfort” (piel).",
+            "evidence": [
+              {
+                "ref": "Psa.86.17"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "כָּשַׁל",
+            "note": "“Make to stumble” (hiphil), what God does instead of helping; and the stumbling of the helper who is only man.",
+            "evidence": [
+              {
+                "ref": "2Ch.25.8",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.28.23"
+              },
+              {
+                "ref": "Isa.31.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֵין עוֹזֵר",
+            "gloss": "there is none to help",
+            "evidence": [
+              {
+                "ref": "Psa.22.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.72.12"
+              },
+              {
+                "ref": "Psa.107.12"
+              },
+              {
+                "ref": "Isa.63.5"
+              },
+              {
+                "ref": "Lam.1.7"
+              },
+              {
+                "ref": "2Ki.14.26"
+              },
+              {
+                "ref": "Dan.11.45"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֶזְרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "help, aid; a help",
+      "bdb": [
+        "p.bz.af"
+      ],
+      "cognate_ids": [
+        "uga-adr",
+        "phn-zr",
+        "arc-adar",
+        "ar-adhir"
+      ],
+      "summary": "Help given or sought; in the Psalms most often God himself as “my help”. Poetic forms עֶזְרָת and עֶזְרָתָה are the same word.",
+      "senses": [
+        {
+          "id": "help-sought",
+          "gloss": "help, aid (given or sought)",
+          "definition": "Aid in danger, above all in war: what Meroz would not bring to Yahweh, what Judah went down to Egypt to get, what the psalmist begs God to hasten.",
+          "evidence": [
+            {
+              "ref": "Jdg.5.23",
+              "role": "defining",
+              "note": "Curse Meroz, “because they did not come לְעֶזְרַת יַהְוֶה, to the help of Yahweh among the mighty”."
+            },
+            {
+              "ref": "Isa.31.1",
+              "role": "defining",
+              "note": "“Woe to those who go down to Egypt לְעֶזְרָה, and rely on horses … but do not look to the Holy One of Israel.”"
+            },
+            {
+              "ref": "Isa.20.6",
+              "note": "“Such is our hope, to which we fled for help, to be delivered from the king of Assyria.”"
+            },
+            {
+              "ref": "Isa.10.3",
+              "note": "“To whom will you flee for help?” on the day of visitation."
+            },
+            {
+              "ref": "Jer.37.7",
+              "note": "Pharaoh’s army, come out לְעֶזְרָה, will go back to Egypt."
+            },
+            {
+              "ref": "2Ch.28.21",
+              "note": "Ahaz paid the king of Assyria, וְלֹא לְעֶזְרָה לוֹ: it did not help him."
+            },
+            {
+              "ref": "Psa.60.13",
+              "role": "defining",
+              "note": "“Give us help from trouble, for vain is the salvation of man.”"
+            },
+            {
+              "ref": "Psa.108.13"
+            },
+            {
+              "ref": "Lam.4.17",
+              "note": "Our eyes failed watching for our help, in vain, for a nation that could not save."
+            },
+            {
+              "ref": "Psa.22.20",
+              "role": "defining",
+              "note": "“You, Yahweh, be not far off; my strength, hasten לְעֶזְרָתִי.”"
+            },
+            {
+              "ref": "Psa.38.23",
+              "note": "“Hasten to my help, Lord, my salvation.”"
+            },
+            {
+              "ref": "Psa.40.14"
+            },
+            {
+              "ref": "Psa.70.2"
+            },
+            {
+              "ref": "Psa.71.12"
+            },
+            {
+              "ref": "Psa.35.2",
+              "note": "“Take hold of shield and buckler, and rise up בְּעֶזְרָתִי.”"
+            },
+            {
+              "ref": "Psa.44.27",
+              "note": "“Arise as a help to us, and redeem us.”"
+            },
+            {
+              "ref": "Job.6.13",
+              "note": "“Is not my help within me gone?”"
+            },
+            {
+              "ref": "Job.31.21",
+              "note": "If I raised my hand against the fatherless because I saw עֶזְרָתִי in the gate: backing in the court."
+            }
+          ],
+          "kin": [
+            "help-ally"
+          ]
+        },
+        {
+          "id": "god-my-help",
+          "gloss": "a help, helper (God; or allies)",
+          "definition": "The one who gives the help: God, as the psalmists confess him; once a nation’s allies.",
+          "evidence": [
+            {
+              "ref": "Psa.46.2",
+              "role": "defining",
+              "note": "“God is to us a refuge and strength, עֶזְרָה in troubles, found very much.”"
+            },
+            {
+              "ref": "Psa.40.18",
+              "role": "defining",
+              "note": "“You are עֶזְרָתִי וּמְפַלְטִי; my God, do not delay.”"
+            },
+            {
+              "ref": "Psa.94.17",
+              "role": "defining",
+              "note": "“Unless Yahweh had been עֶזְרָתָה לִּי, my soul would soon have dwelt in silence.”"
+            },
+            {
+              "ref": "Psa.27.9",
+              "note": "“You have been my help; do not leave me nor forsake me, God of my salvation.”"
+            },
+            {
+              "ref": "Psa.63.8",
+              "note": "“You have been my help, and in the shadow of your wings I sing for joy.”"
+            },
+            {
+              "ref": "Nam.3.9",
+              "role": "defining",
+              "note": "Of Thebes: “Put and the Libyans were בְּעֶזְרָתֵךְ”, her allies."
+            },
+            {
+              "ref": "Isa.31.2",
+              "note": "Yahweh will rise against the house of evildoers and against עֶזְרַת workers of iniquity: those who help them."
+            }
+          ],
+          "kin": [
+            "helper",
+            "god-helps"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βοήθεια",
+          "gloss": "help",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jdg.5.23, לְעֶזְרַת → εἰς βοήθειαν; Isa.31.1, לְעֶזְרָה → εἰς βοήθειαν; Psa.60.13, עֶזְרָת → βοήθειαν; βοήθεια renders עֶזְרָה, עֵזֶר ×13"
+            },
+            {
+              "ref": "Heb.4.16",
+              "role": "defining",
+              "note": "“Let us come boldly to the throne of grace, that we may receive mercy and find grace εἰς εὔκαιρον βοήθειαν”: help in time of need."
+            },
+            {
+              "ref": "Act.27.17",
+              "note": "The sailors used βοηθείαις, aids, to undergird the ship."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מְפַלֵּט",
+            "note": "“Deliverer”: “my help and my deliverer”.",
+            "evidence": [
+              {
+                "ref": "Psa.40.18",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מַחֲסֶה",
+            "note": "“Refuge”, and עֹז “strength”.",
+            "evidence": [
+              {
+                "ref": "Psa.46.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "תְּשׁוּעָה",
+            "note": "“Salvation”: God’s help against the vain salvation of man.",
+            "evidence": [
+              {
+                "ref": "Psa.60.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.38.23"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לְעֶזְרָתִי חוּשָׁה",
+            "gloss": "hasten to my help",
+            "evidence": [
+              {
+                "ref": "Psa.22.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.38.23"
+              },
+              {
+                "ref": "Psa.40.14"
+              },
+              {
+                "ref": "Psa.70.2"
+              },
+              {
+                "ref": "Psa.71.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֵזֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "help; a helper",
+      "bdb": [
+        "p.bz.ab"
+      ],
+      "cognate_ids": [
+        "uga-adr",
+        "phn-zr",
+        "arc-adar",
+        "ar-adhir"
+      ],
+      "summary": "Help, and most often the one who gives it. Of its uses, all but a few name God as Israel’s help; the first two name the woman made for the man.",
+      "senses": [
+        {
+          "id": "helper",
+          "gloss": "a helper, one who is help",
+          "definition": "One who stands with another and supplies what he lacks: Yahweh as the help and shield of Israel, and the woman as the helper “corresponding to” the man, which no animal could be.",
+          "evidence": [
+            {
+              "ref": "Gen.2.18",
+              "role": "defining",
+              "note": "“It is not good that the man should be alone; I will make him עֵזֶר כְּנֶגְדּוֹ”: a help corresponding to him, as opposite and match."
+            },
+            {
+              "ref": "Gen.2.20",
+              "role": "defining",
+              "note": "The man named every beast, “but for Adam there was not found עֵזֶר כְּנֶגְדּוֹ”: none of them could be it."
+            },
+            {
+              "ref": "Psa.33.20",
+              "role": "defining",
+              "note": "“Our soul waits for Yahweh; עֶזְרֵנוּ וּמָגִנֵּנוּ הוּא.”"
+            },
+            {
+              "ref": "Psa.115.9",
+              "note": "“Israel, trust in Yahweh; he is their help and their shield”; so 115:10–11."
+            },
+            {
+              "ref": "Psa.115.10"
+            },
+            {
+              "ref": "Psa.115.11"
+            },
+            {
+              "ref": "Psa.121.1",
+              "note": "“I lift my eyes to the mountains: from where does my help come?”"
+            },
+            {
+              "ref": "Psa.121.2",
+              "role": "defining",
+              "note": "“My help is from Yahweh, maker of heaven and earth.”"
+            },
+            {
+              "ref": "Psa.124.8",
+              "note": "“Our help is in the name of Yahweh, maker of heaven and earth.”"
+            },
+            {
+              "ref": "Psa.146.5",
+              "role": "defining",
+              "note": "“Happy is he whose help is the God of Jacob, whose hope is in Yahweh his God”, after “do not trust in princes, in a son of man in whom there is no salvation” (146:3)."
+            },
+            {
+              "ref": "Exo.18.4",
+              "role": "defining",
+              "note": "Moses named his son Eliezer: “the God of my father was בְּעֶזְרִי, and delivered me from Pharaoh’s sword.”"
+            },
+            {
+              "ref": "Deu.33.29",
+              "note": "“A people saved by Yahweh, the shield of your help.”"
+            },
+            {
+              "ref": "Deu.33.26",
+              "note": "God rides the heavens בְּעֶזְרֶךָ, to your help."
+            },
+            {
+              "ref": "Deu.33.7",
+              "note": "For Judah: “be a help against his adversaries”."
+            },
+            {
+              "ref": "Psa.70.6",
+              "note": "“You are my help and my deliverer; Yahweh, do not delay.”"
+            },
+            {
+              "ref": "Hos.13.9",
+              "role": "defining",
+              "note": "“It has destroyed you, Israel, that you are against me, against your help.”"
+            },
+            {
+              "ref": "Ezk.12.14",
+              "note": "All around the prince of Jerusalem, עֶזְרוֹ (ketiv עזרה), his helpers, scattered to every wind. This token has no BDB key."
+            }
+          ],
+          "kin": [
+            "god-my-help",
+            "helper-none"
+          ]
+        },
+        {
+          "id": "help-given",
+          "gloss": "help, aid",
+          "definition": "The help itself, given or withheld.",
+          "evidence": [
+            {
+              "ref": "Psa.20.3",
+              "role": "defining",
+              "note": "“May he send you help from the sanctuary, and support you from Zion.”"
+            },
+            {
+              "ref": "Isa.30.5",
+              "role": "defining",
+              "note": "Egypt, “a people that cannot profit them, not לְעֵזֶר nor to profit, but for shame”."
+            },
+            {
+              "ref": "Psa.89.20",
+              "note": "“I have laid help upon a mighty one; I have exalted one chosen from the people”: David, 89:21."
+            },
+            {
+              "ref": "Dan.11.34",
+              "note": "“They shall be helped with a little help.”"
+            }
+          ],
+          "kin": [
+            "help-sought"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βοηθός",
+          "gloss": "helper",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.18, עֵזֶר → βοηθόν; Exo.18.4, בְּעֶזְרִי → βοηθός; Psa.115.9, עֶזְרָם → βοηθός; Psa.118.7, בְּעֹזְרָי → βοηθός; βοηθός renders עֵזֶר, עֶזְרָה and עֹזֵר ×24"
+            },
+            {
+              "ref": "Heb.13.6",
+              "role": "defining",
+              "note": "“The Lord is my βοηθός; I will not fear: what will man do to me?” The words of Psa 118:6 in the Greek, which there adds βοηθός from 118:7, יַהְוֶה לִי בְּעֹזְרָי."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָגֵן",
+            "note": "“Shield”: “our help and our shield”.",
+            "evidence": [
+              {
+                "ref": "Psa.33.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.115.9"
+              },
+              {
+                "ref": "Deu.33.29"
+              }
+            ]
+          },
+          {
+            "lemma": "מְפַלֵּט",
+            "note": "“Deliverer.”",
+            "evidence": [
+              {
+                "ref": "Psa.70.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יָעַל",
+            "note": "“Profit” (hiphil of יעל), beside it of Egypt’s worthless aid.",
+            "evidence": [
+              {
+                "ref": "Isa.30.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עֵזֶר כְּנֶגְדּוֹ",
+            "gloss": "a helper corresponding to him",
+            "evidence": [
+              {
+                "ref": "Gen.2.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.2.20"
+              }
+            ]
+          },
+          {
+            "phrase": "אֶבֶן הָעֵזֶר",
+            "gloss": "the stone of help (Ebenezer)",
+            "evidence": [
+              {
+                "ref": "1Sa.7.12",
+                "role": "defining",
+                "note": "Named for “hitherto Yahweh has helped us”."
+              },
+              {
+                "ref": "1Sa.4.1"
+              },
+              {
+                "ref": "1Sa.5.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֲזָרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "ledge (of the altar); court (of the temple)",
+      "bdb": [
+        "p.ca.ab"
+      ],
+      "summary": "A ledge or set-back stage of Ezekiel’s altar, and in Chronicles the great court of Solomon’s house. Its link to “help” is not clear: it may be an enclosure that surrounds, and Arabic ʿaḏira “court of a house” (Lane), with the same consonants, is a possible cognate of the court sense; nothing ties the altar ledge to the root.",
+      "senses": [
+        {
+          "gloss": "ledge, stage of the altar",
+          "definition": "In Ezekiel’s altar, each of the stepped stages that run round it, the lower and the greater, with corners on which the blood is put.",
+          "evidence": [
+            {
+              "ref": "Ezk.43.14",
+              "role": "defining",
+              "note": "From the base on the ground to הָעֲזָרָה הַתַּחְתּוֹנָה two cubits; from the small עֲזָרָה to the great עֲזָרָה four cubits, each a cubit wide."
+            },
+            {
+              "ref": "Ezk.43.17",
+              "note": "The עֲזָרָה fourteen cubits long and fourteen wide, square on its four sides, with a border round it."
+            },
+            {
+              "ref": "Ezk.43.20",
+              "role": "defining",
+              "note": "Blood put “on its four horns and on the four corners of the עֲזָרָה and on the border round about”, to cleanse the altar and cover it."
+            },
+            {
+              "ref": "Ezk.45.19",
+              "note": "The priest puts blood of the sin offering on the four corners of the עֲזָרָה of the altar."
+            }
+          ]
+        },
+        {
+          "gloss": "court (of the temple)",
+          "definition": "The great court of Solomon’s house, beside the court of the priests, with doors overlaid with bronze.",
+          "evidence": [
+            {
+              "ref": "2Ch.4.9",
+              "role": "defining",
+              "note": "“He made the court of the priests (חֲצַר הַכֹּהֲנִים), and the great עֲזָרָה, and doors for the עֲזָרָה.”"
+            },
+            {
+              "ref": "2Ch.6.13",
+              "note": "Solomon’s bronze platform set in the midst of the עֲזָרָה, where he knelt before all the assembly."
+            }
+          ],
+          "cognate_ids": [
+            "ar-adhira"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αὐλή",
+          "gloss": "court",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ch.4.9, עֲזָרָה → αὐλήν, αὐλῇ; 2Ch.6.13, הָעֲזָרָה → αὐλῆς"
+            },
+            {
+              "ref": "Rev.11.2",
+              "note": "“The court (αὐλήν) which is outside the temple leave out, and do not measure it.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἱλαστήριον",
+          "gloss": "place of covering, propitiatory",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.43.14 (×3), Ezk.43.17, Ezk.43.20, עֲזָרָה → ἱλαστήριον: Ezekiel’s Greek names the altar ledge where the blood is put for covering by the word the Torah’s Greek uses for the כַּפֹּרֶת"
+            },
+            {
+              "ref": "Heb.9.5",
+              "note": "The cherubim of glory overshadowing τὸ ἱλαστήριον, the כַּפֹּרֶת of the ark."
+            },
+            {
+              "ref": "Rom.3.25",
+              "note": "Christ Jesus, “whom God set forth as a ἱλαστήριον through faith in his blood”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲדַר",
+      "lang": "syc",
+      "root": "עדר",
+      "pos": "verb",
+      "gloss": "help; profit (Peshitta)",
+      "cognate_ids": [
+        "uga-adr",
+        "phn-zr",
+        "arc-adar",
+        "ar-adhir"
+      ],
+      "summary": "The Peshitta’s word for help, where the Greek has βοηθέω and its kin; with ד for the Hebrew ז, as Aramaic regularly has. It also means to be of profit to someone.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "help; profit",
+          "senses": [
+            {
+              "gloss": "help",
+              "definition": "To come to someone’s aid, of God and of men.",
+              "evidence": [
+                {
+                  "ref": "2Co.6.2",
+                  "role": "defining",
+                  "note": "Isa 49:8 in the Syriac: “in the day of life I helped you”, for Hebrew עֲזַרְתִּיךָ."
+                },
+                {
+                  "ref": "Luk.1.54",
+                  "role": "defining",
+                  "note": "“He has helped Israel his servant”, the servant of Isa 41:8–14."
+                },
+                {
+                  "ref": "Heb.2.18",
+                  "note": "He is able to help those who are tested."
+                },
+                {
+                  "ref": "Mat.15.25",
+                  "note": "“My Lord, help me.”"
+                },
+                {
+                  "ref": "Mrk.9.22"
+                },
+                {
+                  "ref": "Mrk.9.24"
+                },
+                {
+                  "ref": "Mrk.16.20",
+                  "note": "Our Lord was helping them and confirming their words by signs."
+                },
+                {
+                  "ref": "Act.16.9",
+                  "note": "“Come to Macedonia and help us.”"
+                },
+                {
+                  "ref": "Act.26.22",
+                  "note": "“God has helped me to this day.”"
+                },
+                {
+                  "ref": "Rom.8.26",
+                  "note": "The spirit helps our weakness."
+                },
+                {
+                  "ref": "Rev.12.16",
+                  "note": "The earth helped the woman."
+                }
+              ],
+              "kin": [
+                "god-helps",
+                "help-ally"
+              ]
+            },
+            {
+              "gloss": "profit, be of use",
+              "definition": "To be of benefit to someone.",
+              "evidence": [
+                {
+                  "ref": "Mrk.8.36",
+                  "role": "defining",
+                  "note": "“What will it profit a man if he gains the whole world and loses his life?”"
+                },
+                {
+                  "ref": "Luk.9.25"
+                },
+                {
+                  "ref": "1Co.12.7",
+                  "note": "The manifestation of the spirit is given to each to profit him."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be helped, be profited",
+          "senses": [
+            {
+              "gloss": "be helped, be profited",
+              "definition": "To receive help or benefit.",
+              "evidence": [
+                {
+                  "ref": "Mrk.5.26",
+                  "role": "defining",
+                  "note": "She had spent all she had and was not helped at all, but grew worse."
+                },
+                {
+                  "ref": "Heb.13.9",
+                  "note": "Those who walked in foods were not helped by them."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְעַדְרָנָא",
+      "lang": "syc",
+      "root": "עדר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "helper (Peshitta)",
+      "cognate_ids": [
+        "uga-adr",
+        "phn-zr",
+        "arc-adar",
+        "ar-adhir"
+      ],
+      "senses": [
+        {
+          "gloss": "helper",
+          "definition": "One who helps: God, as the Lord who is “my helper”, and Paul’s fellow workers.",
+          "evidence": [
+            {
+              "ref": "Heb.13.6",
+              "role": "defining",
+              "note": "“My Lord is my helper; I will not fear”, Psa 118:6–7."
+            },
+            {
+              "ref": "Phm.1.24",
+              "note": "Mark, Aristarchus, Demas and Luke, “my helpers”."
+            },
+            {
+              "ref": "2Co.1.24",
+              "note": "“We are helpers of your joy.”"
+            },
+            {
+              "ref": "3Jn.1.8",
+              "note": "That we may be helpers of the truth."
+            },
+            {
+              "ref": "1Co.12.28",
+              "note": "Among God’s gifts in the ecclesia, “helpers”."
+            }
+          ],
+          "kin": [
+            "helper",
+            "helper-none"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-adr",
+      "lang": "uga",
+      "form": "𐎚𐎓𐎏𐎗",
+      "translit": "tʿḏr; syllabic i-zi-ir /ʿiḏir/",
+      "gloss": "help",
+      "relation": "cognate",
+      "note": "The noun tʿḏr “help”, in the divine epithet ilt ʿḏr bʿl, “the goddess of the help of Baal”, and the syllabic noun ʿiḏir “help”; personal names such as yʿḏr-addu, “may Haddu help”, are the same name-type as Hebrew עֲזַרְיָהוּ. Ugaritic keeps ḏ apart from z, so it shows the older sound behind ז.",
+      "sounds": {
+        "ע": "ʿ",
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 203, §93 Glossary, tʿḏr (KTU 1.109:21) “help” (/ʿ-ḏ-r/); cf. i-zi-ir",
+          "note": "“‘help’ (/ʿ-ḏ-r/); cf. i-zi-ir … ilt ʿḏr bʿl … ‘the god of the help of Baal/(H)adad’ (cf. H. ʿ-z-r, Syr. ʿ-d-r)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 41, §43.21, qitil- /ʿiḏir-/ i-zi-ir “help”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000596 ʿḏr[help]V; UGC000880 ʿḏr[help]V"
+        }
+      ]
+    },
+    {
+      "id": "phn-zr",
+      "lang": "phn",
+      "form": "𐤏𐤆𐤓",
+      "translit": "ʿzr",
+      "gloss": "help, aid; helper, military ally; (Punic) “helper”, a lay priest",
+      "relation": "cognate",
+      "note": "The verb “help”, the noun “help”, and ʿzr “ally”: a king of Kition defeated “my enemies and their ʿzrm”, as Hebrew עֹזְרִים are allies in war (1Ki 20:16; Ezk 30:8). Names of the type ʿzrbʿl (Hasdrubal), “Baal is his help”, match עֲזַרְיָהוּ and עַזְרִיאֵל. Phoenician writes one z for the older z and ḏ, so it shows no sound.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 362–363, ʿ-Z-R I; ʿZR II; ʿZR III",
+          "note": "“v. qal HELP, AID … ʿZR II n.m. 1. ABETTOR, MILITARY ALLY … 2. ‘HELPER’, designation of a lay priest … 3. HELPER, the role and epithet of a god … ʿZR III n.m. HELP, AID”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000596 ʿḏr[help]V; PUN001498 ʿzr[help]V"
+        }
+      ]
+    },
+    {
+      "id": "arc-adar",
+      "lang": "arc",
+      "form": "עֲדַר",
+      "translit": "ʿăḏar",
+      "gloss": "help; (ithpe.) be helped (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "Aramaic ד for the older ḏ, as in the Peshitta’s עֲדַר; the same verb in the Targums.",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲדַר II",
+          "note": "“= h. עָזַר, to help. Targ. Prov. XIII, 12 … Ithpe. אִתְעֲדַר to be helped. Ib. XVIII, 19”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000596 ʿḏr[help]V; ARM021988 ʿDR[aid]V"
+        }
+      ]
+    },
+    {
+      "id": "ar-adhir",
+      "lang": "ar",
+      "form": "عَذِيرٌ",
+      "translit": "ʿaḏīr",
+      "gloss": "aider, assister against an enemy; (verb عَذَرَ) excuse",
+      "relation": "cognate",
+      "note": "The Arabic root that answers by sound (ʿ-ḏ-r) mostly means “excuse”, but its عَذِيرٌ keeps “aider against an enemy”, as in the saying مَنْ عَذِيرِى مِنْ فُلَانٍ, “who will be my helper against such a one?”. The sounds agree with Ugaritic ʿḏr.",
+      "sounds": {
+        "ע": "ʿ",
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1986, root عذر, عَذِيرٌ (n28443)",
+          "note": "“who will aid me, or assist me, against such a one … for عَذِيرٌ is also said to signify an aider, or assister, against an enemy”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1983, root عذر, عَذَرَهُ (n28428)",
+          "note": "“He excused him; freed, cleared, or exempted, him from blame”."
+        }
+      ]
+    },
+    {
+      "id": "ar-adhira",
+      "lang": "ar",
+      "form": "عَذِرَةٌ",
+      "translit": "ʿaḏira",
+      "gloss": "court, yard of a house",
+      "relation": "possible",
+      "note": "Same consonants as عَذِيرٌ, with the meaning of עֲזָרָה “court” in Chronicles. Arabic explains the word from the ordure thrown into the yard, or the reverse; whether it and the “help” words are one root is not shown.",
+      "sounds": {
+        "ע": "ʿ",
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1985, root عذر, عَذِرَةٌ (n28439)",
+          "note": "“The court, or yard, (فِنَآء,) of a house … A place where people sit in the court, or yard, of the house”."
+        }
+      ]
+    },
+    {
+      "id": "ar-azzara",
+      "lang": "ar",
+      "form": "عَزَّرَ",
+      "translit": "ʿazzara",
+      "gloss": "aid, assist, strengthen; honour; also restrain, chastise",
+      "relation": "possible",
+      "note": "Lane gives “he aided, or assisted, him … against his enemy”, close to the Hebrew; but its z does not answer the ḏ that Ugaritic, Aramaic and Arabic عذر show, and the root’s first sense is to restrain or chastise. Possibly a separate root, or the help sense borrowed.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2034, root عزر, عزّرهُ (n28956)",
+          "note": "“He aided, or assisted, him … and he strengthened him … He aided him against his enemy, or enemies, by repelling the latter … He treated him with reverence”."
+        }
+      ]
+    },
+    {
+      "id": "akk-azaru",
+      "lang": "akk",
+      "form": "azāru",
+      "translit": "azāru",
+      "gloss": "help",
+      "relation": "possible",
+      "note": "Four uses, Middle Babylonian; Akkadian has lost both ʿ and ḏ, so it can show no sound, and so rare a word may be borrowed from the West.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000007360, azāru [help] V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "help-from-yahweh",
+      "statement": "Scripture names Yahweh as Israel’s help more than anyone else: “my help is from Yahweh, maker of heaven and earth”, “he is our help and our shield” (Psa 121:2; 33:20; 124:8). Set against him is the help of man: Judah going down to Egypt for help is “woe”, for “Egypt is man and not God”, and when Yahweh stretches out his hand the helper and the helped fall together (Isa 31:1–3); Egypt helps “in vain” (Isa 30:5, 7); “vain is the salvation of man” (Psa 60:13); “do not trust in princes … happy is he whose help is the God of Jacob” (Psa 146:3–5). Hezekiah says the same of Assyria, “with him an arm of flesh, but with us Yahweh our God to help us” (2Ch 32:8), and Ahaz’s sacrifice to the gods who “helped” Aram became his ruin (2Ch 28:23). Israel’s destruction was that it was “against your help” (Hos 13:9). Hebrews takes up the psalm: “The Lord is my helper, I will not fear; what will man do to me?” (Heb 13:6). From the verses: help that saves comes only from God, and trusting man or other gods for it is turning against him.",
+      "evidence": [
+        {
+          "ref": "Psa.121.2"
+        },
+        {
+          "ref": "Psa.33.20"
+        },
+        {
+          "ref": "Psa.124.8"
+        },
+        {
+          "ref": "Isa.31.1",
+          "to": "Isa.31.3"
+        },
+        {
+          "ref": "Isa.30.5"
+        },
+        {
+          "ref": "Isa.30.7"
+        },
+        {
+          "ref": "Psa.60.13"
+        },
+        {
+          "ref": "Psa.146.3",
+          "to": "Psa.146.5"
+        },
+        {
+          "ref": "2Ch.32.8"
+        },
+        {
+          "ref": "2Ch.28.23"
+        },
+        {
+          "ref": "Hos.13.9"
+        },
+        {
+          "ref": "Heb.13.6"
+        }
+      ]
+    },
+    {
+      "topic": "the-son-helped-by-god",
+      "statement": "The servant whose back is given to the smiters and whose face is not hidden from spitting says, “the Lord Yahweh helps me; therefore I am not disgraced … he who justifies me is near” (Isa 50:6–9), words the gospels and Paul apply to Christ (Mat 26:67; Rom 8:33–34). To the same servant Yahweh says, “in a day of salvation I helped you, and I will keep you and give you as a covenant of the people” (Isa 49:8), and Paul says that day is now (2Co 6:2). In the psalm Christ prayed on the cross (Psa 22:2; Mat 27:46), he cries “there is none to help” and “hasten to my help” (Psa 22:12, 20); and “in the days of his flesh” he offered prayers “to him who was able to save him from death, and was heard” (Heb 5:7). Yahweh “laid help upon a mighty one”, his chosen servant David (Psa 89:20–21). From the verses: the Son was a man who needed God’s help and asked for it, and was raised by it; and because he was tested as we are, “he is able to help those who are tested” (Heb 2:18).",
+      "evidence": [
+        {
+          "ref": "Isa.50.6",
+          "to": "Isa.50.9"
+        },
+        {
+          "ref": "Mat.26.67"
+        },
+        {
+          "ref": "Rom.8.33",
+          "to": "Rom.8.34"
+        },
+        {
+          "ref": "Isa.49.8"
+        },
+        {
+          "ref": "2Co.6.2"
+        },
+        {
+          "ref": "Psa.22.2"
+        },
+        {
+          "ref": "Mat.27.46"
+        },
+        {
+          "ref": "Psa.22.12"
+        },
+        {
+          "ref": "Psa.22.20"
+        },
+        {
+          "ref": "Heb.5.7"
+        },
+        {
+          "ref": "Psa.89.20",
+          "to": "Psa.89.21"
+        },
+        {
+          "ref": "Heb.2.18"
+        }
+      ]
+    },
+    {
+      "topic": "woman-a-helper",
+      "statement": "When God said “it is not good that the man should be alone; I will make him a helper corresponding to him” (Gen 2:18), the word is עֵזֶר, which scripture uses most of God himself, Israel’s help and shield (Exo 18:4; Psa 33:20; 121:2): it names what she does for him, not a lesser kind of being. No beast the man named could be it (Gen 2:20); she was made from his own side and brought to him (Gen 2:21–23). Paul reads the order of that making: “the man was not created for the woman, but the woman for the man” (1Co 11:9), and “Adam was first formed, then Eve” (1Ti 2:13). From the verses: the woman is the man’s match and his help, equal in nature, and made second and for him, an order Paul holds to in the ecclesia.",
+      "evidence": [
+        {
+          "ref": "Gen.2.18"
+        },
+        {
+          "ref": "Gen.2.20",
+          "to": "Gen.2.23"
+        },
+        {
+          "ref": "Exo.18.4"
+        },
+        {
+          "ref": "Psa.33.20"
+        },
+        {
+          "ref": "Psa.121.2"
+        },
+        {
+          "ref": "1Co.11.8",
+          "to": "1Co.11.9"
+        },
+        {
+          "ref": "1Ti.2.13"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10:25 (the name Ahiezer, אֲחִיעֶזֶר, a.ck.av, which has its own entry, names/ahiezer.json). The corpus keys the root עזר, as the task gave it. BDB keys: the verb p.bz.aa, עֵזֶר p.bz.ab, עֶזְרָה p.bz.af, עֲזָרָה p.ca.ab. Shared tokens: p.bz.ab (the noun עֵזֶר) shares Gen 2:18, 2:20, Deu 33:7, Psa 89:20 and Dan 11:34 with the name key p.bz.ac (Ezer), and Psa 70:6 and 121:1–2 with p.bz.al (Ezri); p.bz.af (עֶזְרָה) shares Psa 46:2 and 1Ch 4:17 with p.bz.ag (Ezrah); so the noun counts include the names Neh 3:19, 1Ch 4:4, 7:21, 12:10, 27:26 and 1Ch 4:17, and the name keys count the nouns. Ezk 12:14 עֶזְרוֹ has no BDB key on its token. The verb’s qal key also counts Isa 31:3 עָזֻר (passive participle) and the ketiv 2Sa 18:3 לעזיר. Left out: עֵט “stylus” (p.ca.ad), which BDB files beside עֲזָרָה and the corpus keys under עזר, but its letters (ע, ט) cannot come from עזר and Jewish Aramaic has it as עֵיטָא; it belongs to another root, not yet entered. p.ca.aa (a bare root key) and p.ca.ac (עַזָּתִי, keyed under עזב) are not this entry’s. Proper names with no name entry yet: עֲזַרְיָהוּ/עֲזַרְיָה Azariah (p.bz.ak, Yahweh has helped), עֶזְרָא Ezra (p.bz.ae), עֵזֶר and עֶזֶר Ezer (p.bz.ac, p.bz.ad), עֶזְרָה Ezrah (p.bz.ag), עֶזְרִי Ezri (p.bz.al), עַזּוּר Azzur (p.bz.ah), עֲזַרְאֵל Azarel (p.bz.ai), עַזְרִיאֵל Azriel (p.bz.aj), עַזְרִיקָם Azrikam (p.bz.am), and the names in ‑עֶזֶר filed under other roots: Eliezer, Abiezer, Joezer, Hadadezer, Romamti-ezer, Eleazar (אֶלְעָזָר). יַעְזֵר Jazer (p.bz.an) is a place and gets no name entry. Peshitta: SEDRA root 1343 ܥܕܪ, lexemes 2253 (verb), 2251 ܡܥܕܪܢܐ (helper), 2252 ܡܥܕܪܢܘܬܐ (help, aid: 2Co 1:11; Col 1:29), the last not entered as a word; verses found via the BFBS word list and read in Haqor’s Peshitta translation. The brief’s Peshitta root עזרורא “swaddling clothes” is a different word. Sabaic ʿḏr (“followers, community”; mʿḏr “protecting wall”), Old Aramaic ʿdr, and Geʿez were not found in the local sources (Biella’s OCR search failed; Dillmann, Leslau and DULAT not consulted). Open questions for review: (1) whether ar-adhir (Arabic “aider” beside the common “excuse”) is strong enough to be called cognate; (2) whether עֲזָרָה belongs to this root or to another “surround” root, and whether the LXX ἱλαστήριον bridge for it should stay; (3) the doctrine woman-a-helper, written from Gen 2, 1Co 11 and 1Ti 2."
+}
