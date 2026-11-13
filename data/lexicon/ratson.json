@@ -1,0 +1,1527 @@
+{
+  "id": "ratson",
+  "root": "רצה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "acceptance",
+    "favour",
+    "will",
+    "sacrifice",
+    "feasts",
+    "reconciliation"
+  ],
+  "gloss": "be pleased with, accept; make good (a debt); acceptance, favour, will",
+  "summary": "The verb is to be pleased with someone or something and so to accept it: Yahweh accepts an offering and the one who brings it, or refuses them (Lev 1:4; Mal 1:13), and delights in those who fear him (Psa 147:11). Accepting what is owed, it is to make good a debt: the land “makes good its sabbaths” and the people “their iniquity” (Lev 26:34, 41; Isa 40:2). רָצוֹן is the acceptance an offering is brought for, “for your acceptance” (Lev 1:3; 23:11), the favour of God or a king, set against his anger, and the will one does, God’s will or one’s own (Psa 40:9; Dan 11:36). The Aramaic of Ezra and the Peshitta write the same root רעי, and the Peshitta’s word for reconciling is this verb; Arabic raḍiya and Sabaic rḍw “be pleased, satisfy” show the older ṣ́.",
+  "words": [
+    {
+      "lemma": "רָצָה",
+      "pos": "verb",
+      "gloss": "be pleased with, accept; delight in; make good (a debt)",
+      "bdb": [
+        "t.ee.aa"
+      ],
+      "cognate_ids": [
+        "ar-radiya",
+        "sab-rdw",
+        "arc-rei"
+      ],
+      "summary": "To be pleased with, and so to take to oneself with favour: an offering, a person, a land. Half its uses are Yahweh accepting or refusing worshippers and their gifts. With a debt as its object (sabbaths owed, iniquity) it is to make good, to satisfy what is due.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be pleased with, accept; delight in; make good",
+          "senses": [
+            {
+              "id": "accept-offering",
+              "gloss": "accept (an offering, or the one who brings it)",
+              "definition": "To receive a gift with favour, and with it the giver: of Yahweh accepting or refusing worship, and of a man accepting a gift and so the one who brings it.",
+              "evidence": [
+                {
+                  "ref": "Mal.1.13",
+                  "role": "defining",
+                  "note": "“You bring the stolen, the lame and the sick, and bring the offering: הַאֶרְצֶה אוֹתָהּ מִיֶּדְכֶם, shall I accept it from your hand?”"
+                },
+                {
+                  "ref": "Mal.1.10",
+                  "role": "defining",
+                  "note": "“I have no חֵפֶץ, pleasure, in you … and an offering I will not אֶרְצֶה from your hand.”"
+                },
+                {
+                  "ref": "Mal.1.8",
+                  "role": "defining",
+                  "note": "Offer the blind and lame to your governor: “הֲיִרְצְךָ, will he accept you, or lift up your face?” The gift’s acceptance is the giver’s."
+                },
+                {
+                  "ref": "Amo.5.22",
+                  "role": "defining",
+                  "note": "“Though you offer me burnt offerings and grain offerings לֹא אֶרְצֶה, and the peace offerings of your fatlings I will not look at.”"
+                },
+                {
+                  "ref": "Jer.14.12",
+                  "note": "“When they offer burnt offering and grain offering, אֵינֶנִּי רֹצָם, I do not accept them.”"
+                },
+                {
+                  "ref": "Jer.14.10",
+                  "note": "“Yahweh לֹא רָצָם; now he will remember their iniquity.” Also Hos 8:13."
+                },
+                {
+                  "ref": "Hos.8.13"
+                },
+                {
+                  "ref": "Psa.51.18",
+                  "role": "defining",
+                  "note": "“You do not חָפֵץ sacrifice, or I would give it; a burnt offering לֹא תִרְצֶה.” The next verse names the sacrifices God does not despise: a broken spirit."
+                },
+                {
+                  "ref": "Mic.6.7",
+                  "note": "“הֲיִרְצֶה יַהְוֶה with thousands of rams?”"
+                },
+                {
+                  "ref": "Ezk.20.40",
+                  "role": "defining",
+                  "note": "On his holy mountain all Israel will serve him: “there אֶרְצֵם, and there I will seek your contributions.”"
+                },
+                {
+                  "ref": "Ezk.20.41",
+                  "note": "“With a soothing smell אֶרְצֶה אֶתְכֶם, when I bring you out from the peoples.”"
+                },
+                {
+                  "ref": "Ezk.43.27",
+                  "note": "From the eighth day the priests offer on the new altar, “and I will accept you.”"
+                },
+                {
+                  "ref": "Psa.119.108",
+                  "note": "“The freewill offerings of my mouth רְצֵה־נָא, Yahweh.”"
+                },
+                {
+                  "ref": "2Sa.24.23",
+                  "note": "Araunah to David at the threshing floor: “Yahweh your God יִרְצֶךָ.”"
+                },
+                {
+                  "ref": "Job.33.26",
+                  "note": "He prays to God “and he accepts him, and he sees his face with a shout of joy.”"
+                },
+                {
+                  "ref": "Ecc.9.7",
+                  "note": "“God has already accepted your works.”"
+                },
+                {
+                  "ref": "Gen.33.10",
+                  "role": "defining",
+                  "note": "Jacob to Esau: “if I have found favour in your eyes, take my gift from my hand … וַתִּרְצֵנִי, and you have received me with favour.”"
+                },
+                {
+                  "ref": "Hag.1.8",
+                  "note": "“Build the house, וְאֶרְצֶה בּוֹ, and I will take pleasure in it and be glorified.”"
+                },
+                {
+                  "ref": "Deu.33.11",
+                  "note": "Of Levi: “Bless his strength, Yahweh, and accept the work of his hands.”"
+                }
+              ],
+              "kin": [
+                "acceptance"
+              ]
+            },
+            {
+              "id": "delight-in",
+              "gloss": "be pleased with, delight in; favour",
+              "definition": "To find pleasure in a person and look on him with favour; of Yahweh choosing and delighting in his servant, his people and his land, and of men taking pleasure in something.",
+              "evidence": [
+                {
+                  "ref": "Psa.147.10",
+                  "role": "defining",
+                  "note": "“Not in the strength of the horse does he חָפֵץ, not in the legs of a man does he יִרְצֶה.”"
+                },
+                {
+                  "ref": "Psa.147.11",
+                  "role": "defining",
+                  "note": "“רוֹצֶה יַהְוֶה those who fear him, who hope in his covenant faithfulness.”"
+                },
+                {
+                  "ref": "Psa.149.4",
+                  "note": "“Yahweh takes pleasure in his people; he beautifies the humble with salvation.”"
+                },
+                {
+                  "ref": "Pro.3.12",
+                  "role": "defining",
+                  "note": "“Whom Yahweh loves (אָהֵב) he reproves, as a father the son in whom יִרְצֶה.” Quoted at Heb 12:6."
+                },
+                {
+                  "ref": "Isa.42.1",
+                  "role": "defining",
+                  "note": "“My servant whom I uphold, my chosen, רָצְתָה נַפְשִׁי, my soul delights in him.” Quoted of Jesus at Mat 12:18."
+                },
+                {
+                  "ref": "1Ch.28.4",
+                  "role": "defining",
+                  "note": "Yahweh chose (בָּחַר) Judah, “and among my father’s sons בִּי רָצָה to make me king”."
+                },
+                {
+                  "ref": "1Ch.29.17",
+                  "note": "“You test the heart and are pleased with uprightness.”"
+                },
+                {
+                  "ref": "Psa.44.4",
+                  "note": "Not by their sword, but your right hand and the light of your face, “for you favoured them”."
+                },
+                {
+                  "ref": "Psa.85.2",
+                  "note": "“רָצִיתָ, Yahweh, your land; you turned back the captivity of Jacob.”"
+                },
+                {
+                  "ref": "Psa.77.8",
+                  "role": "defining",
+                  "note": "“Will the Lord cast off (זָנַח) for ever, and add no more לִרְצוֹת?” Favour, against casting off."
+                },
+                {
+                  "ref": "Pro.16.7",
+                  "note": "“When Yahweh is pleased with a man’s ways, he makes even his enemies to be at peace with him.”"
+                },
+                {
+                  "ref": "Psa.102.15",
+                  "note": "“Your servants take pleasure in her stones and pity her dust.”"
+                },
+                {
+                  "ref": "Deu.33.24",
+                  "note": "Of Asher, the passive participle: “let him be רְצוּי, favoured, by his brothers.” Also Est 10:3 of Mordecai."
+                },
+                {
+                  "ref": "Est.10.3"
+                },
+                {
+                  "ref": "2Ch.10.7",
+                  "note": "The elders to Rehoboam: “if you are good to this people וּרְצִיתָם, and please them, and speak good words to them.”"
+                },
+                {
+                  "ref": "1Ch.29.3",
+                  "note": "“In my delight in the house of my God I have a treasure of gold and silver.”"
+                },
+                {
+                  "ref": "Job.34.9",
+                  "note": "“It profits a man nothing בִּרְצֹתוֹ עִם אֱלֹהִים, to delight himself with God.”"
+                },
+                {
+                  "ref": "Psa.40.14",
+                  "note": "“Be pleased, Yahweh, to deliver me”: willing."
+                },
+                {
+                  "ref": "Psa.62.5",
+                  "note": "“They delight in falsehood; they bless with their mouth.”"
+                },
+                {
+                  "ref": "Psa.49.14",
+                  "note": "Those after them “take pleasure in their mouth”, approve their sayings."
+                },
+                {
+                  "ref": "Psa.50.18",
+                  "note": "“If you saw a thief, וַתִּרֶץ עִמּוֹ”, you were pleased with him, or consented with him; the form could also be of רוץ “run”."
+                }
+              ],
+              "kin": [
+                "favour",
+                "delight"
+              ]
+            },
+            {
+              "id": "make-good",
+              "gloss": "make good, satisfy (a debt of sabbaths or iniquity)",
+              "definition": "With what is owed as its object: to accept it as paid, and so to make it good. The land makes good the sabbath years withheld from it by lying desolate; the people make good their iniquity by bearing its punishment.",
+              "evidence": [
+                {
+                  "ref": "Lev.26.34",
+                  "role": "defining",
+                  "note": "“Then the land תִּרְצֶה its sabbaths all the days of its desolation … then the land will rest and make good its sabbaths” (hiphil)."
+                },
+                {
+                  "ref": "Lev.26.43",
+                  "role": "defining",
+                  "note": "“The land will be left by them and make good its sabbaths while it lies desolate, and they יִרְצוּ אֶת־עֲוֺנָם, because they rejected my judgments.”"
+                },
+                {
+                  "ref": "Lev.26.41",
+                  "role": "defining",
+                  "note": "“If their uncircumcised heart is humbled and they then make good their iniquity.”"
+                },
+                {
+                  "ref": "2Ch.36.21",
+                  "role": "defining",
+                  "note": "“Until the land רָצְתָה its sabbaths; all the days of its desolation it kept sabbath, to fulfil seventy years”: the sabbaths owed, paid in full."
+                },
+                {
+                  "ref": "Job.14.6",
+                  "note": "“Look away from him, that he may rest, until he makes good, like a hired man, his day”: serves out his term."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be accepted; be made good",
+          "senses": [
+            {
+              "id": "be-accepted",
+              "gloss": "be accepted (of an offering, or the one who brings it)",
+              "definition": "To be received with favour before Yahweh: of a sacrifice brought as the law requires, and of the offerer through it. An offering eaten out of time, blemished, or from a foreigner’s hand is “not accepted”.",
+              "evidence": [
+                {
+                  "ref": "Lev.1.4",
+                  "role": "defining",
+                  "note": "“He shall lay his hand on the head of the burnt offering, וְנִרְצָה לוֹ, and it shall be accepted for him, to make a covering for him.”"
+                },
+                {
+                  "ref": "Lev.7.18",
+                  "role": "defining",
+                  "note": "Peace-offering flesh eaten on the third day: “it will not be accepted; it will not be reckoned (יֵחָשֵׁב) to him who offered it.”"
+                },
+                {
+                  "ref": "Lev.19.7",
+                  "note": "“It is פִּגּוּל, it will not be accepted.”"
+                },
+                {
+                  "ref": "Lev.22.23",
+                  "note": "A deformed animal may be a freewill offering, “but for a vow it will not be accepted.”"
+                },
+                {
+                  "ref": "Lev.22.25",
+                  "note": "From a foreigner’s hand: “a blemish is in them; they will not be accepted for you.”"
+                },
+                {
+                  "ref": "Lev.22.27",
+                  "note": "From the eighth day on “it will be accepted as an offering by fire to Yahweh.”"
+                }
+              ],
+              "kin": [
+                "acceptance"
+              ]
+            },
+            {
+              "id": "paid-off",
+              "gloss": "be made good, be paid off (of iniquity)",
+              "definition": "Of iniquity whose punishment has been borne: accepted as paid.",
+              "evidence": [
+                {
+                  "ref": "Isa.40.2",
+                  "role": "defining",
+                  "note": "“Cry to her that her service (צָבָא) is fulfilled, that נִרְצָה עֲוֺנָהּ, her iniquity is made good, that she has received from Yahweh’s hand double for all her sins.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "seek the favour of, make amends to",
+          "senses": [
+            {
+              "gloss": "seek the favour of, make amends to",
+              "definition": "To make oneself pleasing to someone, or to satisfy him; once, of a wicked man’s children and the poor he robbed. Whether they court the poor or pay them back, the parallel line has his hands giving back his wealth.",
+              "evidence": [
+                {
+                  "ref": "Job.20.10",
+                  "role": "defining",
+                  "note": "“His children יְרַצּוּ the poor, and his hands give back his wealth.”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-radiya"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make good",
+          "senses": [
+            {
+              "gloss": "make good (its sabbaths)",
+              "definition": "As the qal of a debt: the land makes good the sabbaths owed it.",
+              "evidence": [
+                {
+                  "ref": "Lev.26.34",
+                  "role": "defining",
+                  "note": "“Then the land will rest וְהִרְצָת its sabbaths.”"
+                }
+              ],
+              "cognate_ids": [
+                "sab-rdw"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "make oneself pleasing, win back favour",
+          "senses": [
+            {
+              "id": "reconcile-self",
+              "gloss": "make oneself pleasing to, win back the favour of",
+              "definition": "To bring oneself back into someone’s favour; the Philistine lords fear David will do so with Saul by turning on them in battle.",
+              "evidence": [
+                {
+                  "ref": "1Sa.29.4",
+                  "role": "defining",
+                  "note": "“With what יִתְרַצֶּה would he make himself pleasing to his lord? Is it not with the heads of these men?”"
+                }
+              ],
+              "kin": [
+                "reconciled-syc"
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָפֵץ",
+            "note": "“Take pleasure in”, in the other line.",
+            "evidence": [
+              {
+                "ref": "Psa.147.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.51.18"
+              },
+              {
+                "ref": "Mal.1.10"
+              }
+            ]
+          },
+          {
+            "lemma": "אָהֵב",
+            "note": "“Love”: the father’s delight in his son.",
+            "evidence": [
+              {
+                "ref": "Pro.3.12",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּחַר",
+            "note": "“Choose”: the one God delights in is the one he chooses.",
+            "evidence": [
+              {
+                "ref": "Isa.42.1",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ch.28.4"
+              }
+            ]
+          },
+          {
+            "lemma": "נָשָׂא פָנִים",
+            "note": "“Lift up the face”: receive with favour.",
+            "evidence": [
+              {
+                "ref": "Mal.1.8",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הִבִּיט",
+            "note": "“Look at, regard” an offering.",
+            "evidence": [
+              {
+                "ref": "Amo.5.22",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "זָנַח",
+            "note": "“Cast off”, against showing favour.",
+            "evidence": [
+              {
+                "ref": "Psa.77.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "רָצָה אֶת־עֲוֺנוֹ",
+            "gloss": "make good one’s iniquity",
+            "evidence": [
+              {
+                "ref": "Lev.26.41",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.26.43"
+              },
+              {
+                "ref": "Isa.40.2",
+                "note": "Niphal: “her iniquity is made good.”"
+              }
+            ]
+          },
+          {
+            "phrase": "רָצָה אֶת־שַׁבְּתֹתֶיהָ",
+            "gloss": "(the land) makes good its sabbaths",
+            "evidence": [
+              {
+                "ref": "Lev.26.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.26.43"
+              },
+              {
+                "ref": "2Ch.36.21"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "εὐδοκέω",
+          "gloss": "be well pleased, take delight",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.147.11 and Psa.149.4, רוֹצֶה → εὐδοκεῖ; Psa.85.2 → εὐδόκησας; Lev.26.34, 41 → εὐδοκήσει, εὐδοκήσουσιν; εὐδοκέω renders רָצָה about 16 times"
+            },
+            {
+              "ref": "Mat.12.18",
+              "role": "defining",
+              "note": "Matthew quotes Isa 42:1 of Jesus: “my beloved, in whom my soul εὐδόκησεν”, where the Hebrew has רָצְתָה נַפְשִׁי (the Septuagint there has προσεδέξατο)."
+            },
+            {
+              "ref": "Mat.3.17",
+              "note": "At his baptism: “This is my beloved Son, in whom I εὐδόκησα.” Again Mat 17:5."
+            },
+            {
+              "ref": "Mat.17.5"
+            }
+          ]
+        },
+        {
+          "lemma": "δέχομαι",
+          "gloss": "receive, accept",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "δέχομαι ×6, προσδέχομαι ×8 for רָצָה; Mal.1.10, אֶרְצֶה → προσδέχομαι"
+            }
+          ]
+        },
+        {
+          "lemma": "παραδέχομαι",
+          "gloss": "receive, accept",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.3.12, יִרְצֶה → παραδέξεται"
+            },
+            {
+              "ref": "Heb.12.6",
+              "role": "defining",
+              "note": "Quoting Pro 3:12: “whom the Lord loves he disciplines, and scourges every son whom he παραδέχεται.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רָצוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "acceptance; favour, goodwill; will, desire",
+      "bdb": [
+        "t.ee.ab"
+      ],
+      "cognate_ids": [
+        "ar-radiya",
+        "sab-rdw",
+        "arc-rei"
+      ],
+      "summary": "The pleasure one takes in another, seen from three sides: the acceptance an offering is brought to win (לִרְצֹנְכֶם, “for your acceptance”), the favour of God or a king toward a person, and the will or desire one acts on, whether God’s will that the righteous do or a conqueror’s self-will.",
+      "senses": [
+        {
+          "id": "acceptance",
+          "gloss": "acceptance (before Yahweh)",
+          "definition": "The favourable reception an offering is brought to obtain for the offerer: לִרְצֹנוֹ, לִרְצֹנְכֶם, “for his (your) acceptance”, and לְרָצוֹן, “to be accepted”.",
+          "evidence": [
+            {
+              "ref": "Lev.22.21",
+              "role": "defining",
+              "note": "“It shall be תָּמִים לְרָצוֹן, whole to be accepted; there shall be no blemish in it.”"
+            },
+            {
+              "ref": "Lev.22.20",
+              "role": "defining",
+              "note": "“Whatever has a blemish you shall not offer, for it will not be לְרָצוֹן for you.”"
+            },
+            {
+              "ref": "Lev.1.3",
+              "role": "defining",
+              "note": "The burnt offering, a whole male, brought to the door of the tent of meeting “for his acceptance before Yahweh”; and the next verse: “it shall be accepted (נִרְצָה) for him.”"
+            },
+            {
+              "ref": "Lev.23.11",
+              "role": "defining",
+              "note": "“He shall wave the עֹמֶר before Yahweh לִרְצֹנְכֶם; on the morrow after the sabbath the priest shall wave it.” The firstfruits sheaf is waved for Israel’s acceptance."
+            },
+            {
+              "ref": "Lev.19.5",
+              "note": "“When you sacrifice a peace offering to Yahweh, sacrifice it לִרְצֹנְכֶם.”"
+            },
+            {
+              "ref": "Lev.22.19"
+            },
+            {
+              "ref": "Lev.22.29",
+              "note": "The thanksgiving offering, likewise “for your acceptance”."
+            },
+            {
+              "ref": "Exo.28.38",
+              "role": "defining",
+              "note": "The gold plate on Aaron’s forehead: he “bears the iniquity of the holy things … and it shall be always on his forehead לְרָצוֹן לָהֶם, for acceptance for them before Yahweh.”"
+            },
+            {
+              "ref": "Isa.56.7",
+              "note": "The foreigners’ burnt offerings and sacrifices “לְרָצוֹן on my altar, for my house shall be called a house of prayer for all peoples”."
+            },
+            {
+              "ref": "Isa.60.7",
+              "note": "The rams of Nebaioth “shall come up עַל־רָצוֹן on my altar”."
+            },
+            {
+              "ref": "Jer.6.20",
+              "role": "defining",
+              "note": "“Your burnt offerings are not לְרָצוֹן, and your sacrifices are not pleasing (עָרְבוּ) to me.”"
+            },
+            {
+              "ref": "Mal.2.13",
+              "note": "He no longer turns to the offering, “or takes רָצוֹן from your hand”."
+            },
+            {
+              "ref": "Psa.19.15",
+              "role": "defining",
+              "note": "Words in place of a sacrifice: “Let the words of my mouth and the meditation of my heart be לְרָצוֹן before you, Yahweh.”"
+            }
+          ],
+          "kin": [
+            "accept-offering",
+            "be-accepted"
+          ]
+        },
+        {
+          "id": "favour",
+          "gloss": "favour, goodwill",
+          "definition": "The good will of God or of a king toward someone, shown in blessing; set against his anger. The “time”, “day” or “year” of favour is when God shows it.",
+          "evidence": [
+            {
+              "ref": "Psa.30.6",
+              "role": "defining",
+              "note": "“For a moment in his anger (אַף), a lifetime בִּרְצוֹנוֹ.”"
+            },
+            {
+              "ref": "Isa.60.10",
+              "role": "defining",
+              "note": "“In my wrath (קֶצֶף) I struck you, וּבִרְצוֹנִי I have had mercy on you.”"
+            },
+            {
+              "ref": "Pro.14.35",
+              "role": "defining",
+              "note": "“The king’s favour is toward a wise servant, but his wrath (עֶבְרָה) toward one who acts shamefully.”"
+            },
+            {
+              "ref": "Pro.19.12",
+              "note": "“The king’s rage is like a lion’s roar, וּכְטַל עַל־עֵשֶׂב רְצוֹנוֹ, his favour like dew on the grass.” Also Pro 16:15."
+            },
+            {
+              "ref": "Pro.16.15"
+            },
+            {
+              "ref": "Psa.5.13",
+              "note": "“You bless the righteous, Yahweh; you surround him with favour as with a shield.”"
+            },
+            {
+              "ref": "Psa.30.8",
+              "note": "“Yahweh, by your favour you made my mountain stand strong; you hid your face, I was dismayed.”"
+            },
+            {
+              "ref": "Psa.89.18",
+              "note": "“By your favour our horn is exalted.”"
+            },
+            {
+              "ref": "Psa.106.4",
+              "note": "“Remember me, Yahweh, with the favour of your people.”"
+            },
+            {
+              "ref": "Psa.51.20",
+              "note": "“Do good in your favour to Zion.”"
+            },
+            {
+              "ref": "Pro.8.35",
+              "role": "defining",
+              "note": "Wisdom: “he who finds me finds life וַיָּפֶק רָצוֹן מֵיַהְוֶה, and obtains favour from Yahweh.” Also Pro 12:2; 18:22."
+            },
+            {
+              "ref": "Pro.12.2"
+            },
+            {
+              "ref": "Pro.18.22"
+            },
+            {
+              "ref": "Pro.11.27",
+              "note": "“He who diligently seeks good seeks favour.”"
+            },
+            {
+              "ref": "Deu.33.16",
+              "note": "On Joseph, “the favour of him who dwelt in the bush.”"
+            },
+            {
+              "ref": "Deu.33.23",
+              "note": "“Naphtali, satisfied with favour and full of the blessing of Yahweh.”"
+            },
+            {
+              "ref": "Isa.49.8",
+              "role": "defining",
+              "note": "“In a time of favour (עֵת רָצוֹן) I answered you, and in a day of salvation I helped you.” Quoted at 2Co 6:2."
+            },
+            {
+              "ref": "Isa.61.2",
+              "role": "defining",
+              "note": "“To proclaim the year of favour of Yahweh (שְׁנַת־רָצוֹן לַיהוה) and the day of vengeance of our God.” Read by Jesus at Luk 4:19."
+            },
+            {
+              "ref": "Isa.58.5",
+              "note": "“Will you call this a fast, a day of favour to Yahweh (יוֹם רָצוֹן)?”: a day he would accept."
+            },
+            {
+              "ref": "Psa.69.14",
+              "note": "“My prayer is to you, Yahweh, at a time of favour.”"
+            }
+          ],
+          "kin": [
+            "delight-in"
+          ]
+        },
+        {
+          "id": "delight",
+          "gloss": "what pleases one, delight",
+          "definition": "The thing one is pleased with: what is Yahweh’s delight, set against what is his abomination (תּוֹעֵבָה), and what pleases kings and the righteous.",
+          "evidence": [
+            {
+              "ref": "Pro.11.1",
+              "role": "defining",
+              "note": "“False scales are an abomination to Yahweh, but a full weight is רְצוֹנוֹ, his delight.”"
+            },
+            {
+              "ref": "Pro.11.20",
+              "role": "defining",
+              "note": "“The crooked of heart are an abomination to Yahweh, but those whole in their way are his delight.”"
+            },
+            {
+              "ref": "Pro.12.22",
+              "note": "“Lying lips are an abomination to Yahweh, but those who deal faithfully are his delight.”"
+            },
+            {
+              "ref": "Pro.15.8",
+              "role": "defining",
+              "note": "“The sacrifice of the wicked is an abomination to Yahweh, but the prayer of the upright is his delight.”"
+            },
+            {
+              "ref": "Pro.16.13",
+              "note": "“Righteous lips are the delight of kings, and he loves him who speaks what is right.”"
+            },
+            {
+              "ref": "Pro.10.32",
+              "note": "“The lips of the righteous know what is pleasing, but the mouth of the wicked perversity.”"
+            },
+            {
+              "ref": "Pro.14.9",
+              "note": "“Fools mock at the guilt offering, but among the upright is favour.”"
+            }
+          ],
+          "kin": [
+            "delight-in"
+          ]
+        },
+        {
+          "id": "will",
+          "gloss": "will, desire",
+          "definition": "What one wills and desires: God’s will, which his servants do; the desire of those who fear him, which he fulfils; and a man’s own will, done without restraint.",
+          "evidence": [
+            {
+              "ref": "Psa.40.9",
+              "role": "defining",
+              "note": "“To do רְצוֹנְךָ, my God, I delight, and your law is within my heart.” Quoted of Christ at Heb 10:7, 9."
+            },
+            {
+              "ref": "Psa.143.10",
+              "role": "defining",
+              "note": "“Teach me to do your will, for you are my God.”"
+            },
+            {
+              "ref": "Psa.103.21",
+              "note": "“Bless Yahweh, all his hosts, his ministers who do his will.”"
+            },
+            {
+              "ref": "Ezr.10.11",
+              "note": "“Give thanks to Yahweh … and do his will, and separate yourselves from the peoples of the land.”"
+            },
+            {
+              "ref": "Psa.145.19",
+              "role": "defining",
+              "note": "“He fulfils the desire of those who fear him; he hears their cry and saves them.”"
+            },
+            {
+              "ref": "Psa.145.16",
+              "note": "“You open your hand and satisfy every living thing with desire”: with what it desires."
+            },
+            {
+              "ref": "2Ch.15.15",
+              "note": "Judah swore with all their heart “and sought him with all their desire, and he was found by them.”"
+            },
+            {
+              "ref": "Dan.11.36",
+              "role": "defining",
+              "note": "“The king will do according to his will (כִרְצוֹנוֹ), and exalt himself and magnify himself above every god.” So Dan 8:4; 11:3, 16."
+            },
+            {
+              "ref": "Dan.8.4"
+            },
+            {
+              "ref": "Dan.11.3"
+            },
+            {
+              "ref": "Dan.11.16"
+            },
+            {
+              "ref": "Est.1.8",
+              "note": "The king ordered his stewards “to do according to the will of every man”."
+            },
+            {
+              "ref": "Est.9.5",
+              "note": "The Jews did to those who hated them “according to their will”."
+            },
+            {
+              "ref": "Neh.9.24",
+              "note": "The land’s kings given into Israel’s hand “to do with them as they willed”; Neh 9:37, the foreign kings now rule over them so."
+            },
+            {
+              "ref": "Neh.9.37"
+            },
+            {
+              "ref": "Gen.49.6",
+              "note": "Simeon and Levi: “in their anger they killed a man, and in their self-will (בִרְצֹנָם) they hamstrung an ox.”"
+            }
+          ],
+          "kin": [
+            "will-arc"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָרֵב",
+            "note": "“Be pleasing”: offerings neither accepted nor pleasing.",
+            "evidence": [
+              {
+                "ref": "Jer.6.20",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יְשׁוּעָה",
+            "note": "“Salvation”: the time of favour is the day of salvation.",
+            "evidence": [
+              {
+                "ref": "Isa.49.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.106.4"
+              },
+              {
+                "ref": "Psa.69.14"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "תּוֹעֵבָה",
+            "note": "What Yahweh abhors, against what is his delight.",
+            "evidence": [
+              {
+                "ref": "Pro.11.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.11.20"
+              },
+              {
+                "ref": "Pro.12.22"
+              },
+              {
+                "ref": "Pro.15.8"
+              }
+            ]
+          },
+          {
+            "lemma": "אַף",
+            "note": "Anger, against favour; also קֶצֶף, עֶבְרָה and זַעַף.",
+            "evidence": [
+              {
+                "ref": "Psa.30.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.60.10"
+              },
+              {
+                "ref": "Pro.14.35"
+              },
+              {
+                "ref": "Pro.19.12"
+              }
+            ]
+          },
+          {
+            "lemma": "נָקָם",
+            "note": "The day of vengeance follows the year of favour.",
+            "evidence": [
+              {
+                "ref": "Isa.61.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לִרְצֹנְכֶם",
+            "gloss": "for your acceptance",
+            "evidence": [
+              {
+                "ref": "Lev.23.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.19.5"
+              },
+              {
+                "ref": "Lev.22.19"
+              },
+              {
+                "ref": "Lev.22.29"
+              },
+              {
+                "ref": "Lev.1.3",
+                "note": "לִרְצֹנוֹ, “for his acceptance”."
+              }
+            ]
+          },
+          {
+            "phrase": "לְרָצוֹן",
+            "gloss": "to be accepted",
+            "evidence": [
+              {
+                "ref": "Lev.22.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.28.38"
+              },
+              {
+                "ref": "Isa.56.7"
+              },
+              {
+                "ref": "Jer.6.20"
+              },
+              {
+                "ref": "Psa.19.15"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵת רָצוֹן",
+            "gloss": "a time of favour",
+            "evidence": [
+              {
+                "ref": "Isa.49.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.69.14"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁנַת רָצוֹן",
+            "gloss": "a year of favour",
+            "evidence": [
+              {
+                "ref": "Isa.61.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עָשָׂה רְצוֹן",
+            "gloss": "do (someone’s) will",
+            "evidence": [
+              {
+                "ref": "Psa.40.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.103.21"
+              },
+              {
+                "ref": "Psa.143.10"
+              },
+              {
+                "ref": "Ezr.10.11"
+              },
+              {
+                "ref": "Psa.145.19"
+              }
+            ]
+          },
+          {
+            "phrase": "עָשָׂה כִרְצוֹנוֹ",
+            "gloss": "do as he wills",
+            "evidence": [
+              {
+                "ref": "Dan.11.36",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.8.4"
+              },
+              {
+                "ref": "Dan.11.3"
+              },
+              {
+                "ref": "Dan.11.16"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵפִיק רָצוֹן מֵיַהְוֶה",
+            "gloss": "obtain favour from Yahweh",
+            "evidence": [
+              {
+                "ref": "Pro.8.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.12.2"
+              },
+              {
+                "ref": "Pro.18.22"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "δεκτός",
+          "gloss": "acceptable, welcome",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.22.21, Exo.28.38, Isa.49.8, Isa.58.5, רָצוֹן → δεκτός; Lev.1.4, נִרְצָה → δεκτόν; δεκτός renders רָצוֹן ×13"
+            },
+            {
+              "ref": "Luk.4.19",
+              "role": "defining",
+              "note": "Jesus reads Isa 61:2: “to proclaim the ἐνιαυτὸν κυρίου δεκτόν”, the year of Yahweh’s favour, and stops before the day of vengeance."
+            },
+            {
+              "ref": "2Co.6.2",
+              "role": "defining",
+              "note": "Quoting Isa 49:8: “in a καιρῷ δεκτῷ I heard you … behold, now is the καιρὸς εὐπρόσδεκτος, now is the day of salvation.”"
+            },
+            {
+              "ref": "Act.10.35",
+              "note": "“In every nation he who fears him and works righteousness is δεκτός to him”, as Psa 147:11."
+            },
+            {
+              "ref": "Php.4.18",
+              "note": "The Philippians’ gift, “a sweet-smelling savour, a θυσίαν δεκτήν, well pleasing to God”."
+            }
+          ]
+        },
+        {
+          "lemma": "θέλημα",
+          "gloss": "will",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.40.9, Psa.103.21, Psa.143.10, רָצוֹן → θέλημα; θέλημα renders רָצוֹן ×8"
+            },
+            {
+              "ref": "Heb.10.7",
+              "role": "defining",
+              "note": "Quoting Psa 40:8–9 of Christ: “Lo, I come … to do your θέλημα, O God.”"
+            },
+            {
+              "ref": "Heb.10.9",
+              "note": "“He takes away the first that he may establish the second. By which θέλημα we are sanctified through the offering of the body of Jesus Christ once for all” (Heb 10:10)."
+            },
+            {
+              "ref": "Heb.10.10"
+            },
+            {
+              "ref": "Mat.26.42",
+              "note": "“My Father … your θέλημα be done.”"
+            }
+          ]
+        },
+        {
+          "lemma": "εὐδοκία",
+          "gloss": "good pleasure, goodwill",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.19.15, רָצוֹן → εὐδοκίαν; εὐδοκία renders רָצוֹן ×4"
+            },
+            {
+              "ref": "Eph.1.5",
+              "note": "“According to the εὐδοκίαν of his will.”"
+            },
+            {
+              "ref": "Luk.2.14",
+              "note": "“On earth peace, among men εὐδοκία.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רְעוּת",
+      "lang": "arc",
+      "root": "רעו",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "will, pleasure",
+      "bdb": [
+        "xt.al.ab"
+      ],
+      "cognate_ids": [
+        "arc-rei",
+        "ar-radiya",
+        "sab-rdw"
+      ],
+      "summary": "Ezra’s Aramaic for the will of a king or of God, where the Hebrew would have רָצוֹן. Aramaic writes ע for the older ṣ́ that Hebrew writes צ, as אֲרַע beside אֶרֶץ.",
+      "senses": [
+        {
+          "id": "will-arc",
+          "gloss": "will, pleasure",
+          "definition": "What a king or God wills and decides.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.18",
+              "role": "defining",
+              "note": "Artaxerxes to Ezra: with the rest of the silver and gold “do according to the will of your God (כִּרְעוּת אֱלָהֲכֹם)”, as Ezr 10:11 has “do his will (רְצוֹנוֹ)” in Hebrew."
+            },
+            {
+              "ref": "Ezr.5.17",
+              "role": "defining",
+              "note": "Tattenai to Darius: let the records be searched, “and let the king send us his pleasure (רְעוּת מַלְכָּא) concerning this.”"
+            }
+          ],
+          "kin": [
+            "will"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רְעָא",
+      "lang": "syc",
+      "root": "רעי",
+      "pos": "verb",
+      "gloss": "(pael) reconcile; (ethpaal) be reconciled",
+      "summary": "The Peshitta’s ܪܰܥܺܝ (raʿʿī), its word for καταλλάσσω and διαλλάσσομαι: to bring back into favour, and to be brought back. It is this root’s Aramaic, and the Jewish Aramaic of the Targums uses the same verb for the Hebrew’s acceptance (Targ. Lev 1:4) and for its “be favourable” (Targ. Psa 77:8, there “be reconciled”).",
+      "cognate_ids": [
+        "arc-rei",
+        "ar-radiya"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "reconcile",
+          "senses": [
+            {
+              "id": "reconcile-syc",
+              "gloss": "reconcile",
+              "definition": "To bring someone back into favour with another, ending the enmity between them: of God reconciling men to himself through Messiah.",
+              "evidence": [
+                {
+                  "ref": "2Co.5.18",
+                  "role": "defining",
+                  "note": "“God, who reconciled us to himself through Messiah, and gave us the service of reconciliation (ܬܰܪܥܽܘܬ݂ܳܐ).”"
+                },
+                {
+                  "ref": "2Co.5.19",
+                  "role": "defining",
+                  "note": "“God was in Messiah reconciling the world … not reckoning to them their sins.”"
+                },
+                {
+                  "ref": "Col.1.20",
+                  "note": "“By him to reconcile all things to himself, having made peace by the blood of his cross.”"
+                },
+                {
+                  "ref": "Eph.2.16",
+                  "note": "“And reconciled both in one body with God by his cross, having slain the enmity.”"
+                }
+              ],
+              "kin": [
+                "accept-offering"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be reconciled",
+          "senses": [
+            {
+              "id": "reconciled-syc",
+              "gloss": "be reconciled",
+              "definition": "To be brought back into favour with someone.",
+              "evidence": [
+                {
+                  "ref": "Mat.5.24",
+                  "role": "defining",
+                  "note": "“Leave your offering there before the altar, and go, first be reconciled with your brother; then come and offer your offering.”"
+                },
+                {
+                  "ref": "1Co.7.11",
+                  "role": "defining",
+                  "note": "A wife who has separated is to remain unmarried “or be reconciled to her husband”."
+                },
+                {
+                  "ref": "2Co.5.20",
+                  "role": "defining",
+                  "note": "“We beseech you on behalf of Messiah: be reconciled to God.”"
+                },
+                {
+                  "ref": "Rom.5.10",
+                  "note": "“If, when we were enemies, we were reconciled to God by the death of his Son, much more, being reconciled, we shall live by his life.”"
+                }
+              ],
+              "kin": [
+                "reconcile-self"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּרְעוּתָא",
+      "lang": "syc",
+      "root": "רעי",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "reconciliation",
+      "summary": "The Peshitta’s ܬܰܪܥܽܘܬ݂ܳܐ (tarʿūṯā), the noun of its verb for reconciling, for καταλλαγή.",
+      "cognate_ids": [
+        "arc-rei",
+        "ar-radiya"
+      ],
+      "senses": [
+        {
+          "gloss": "reconciliation",
+          "definition": "The bringing back of enemies into favour with God.",
+          "evidence": [
+            {
+              "ref": "Rom.5.11",
+              "role": "defining",
+              "note": "“Through our Lord Jesus Messiah, through whom we have now received reconciliation.”"
+            },
+            {
+              "ref": "2Co.5.18",
+              "role": "defining",
+              "note": "God “gave us the service of reconciliation”."
+            },
+            {
+              "ref": "2Co.5.19",
+              "note": "“And placed in us the word of reconciliation.”"
+            },
+            {
+              "ref": "Rom.11.15",
+              "note": "“If their casting away was the reconciliation of the world.”"
+            }
+          ],
+          "kin": [
+            "reconcile-syc"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-radiya",
+      "lang": "ar",
+      "form": "رَضِيَ",
+      "translit": "raḍiya",
+      "gloss": "be pleased, well pleased, content; regard with favour, approve; (IV) please, satisfy; (V) seek to please; (VI) agree together; riḍan, riḍwān good pleasure, approval",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Lane’s sources set it against سَخِطَ, be displeased, as the Hebrew’s favour is set against anger; marḍiyy is a thing or person “found pleasing … approved”, as רְצוּי (Deu 33:24). Form IV “made him to be … satisfied” matches the Hebrew’s making good what is owed, and V “sought to please” the piel of Job 20:10. Arabic ض (ḍ) answers to ṣ́.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1099, root رضو, رَضِىَ (n15771)",
+          "note": "“He was pleased, well pleased, content, contented, or satisfied, with him; regarded him with good will, or favour; or liked, or approved, him … contr. of سَخِطَ”."
+        },
+        {
+          "source": "lane",
+          "locator": "pp. 1099–1100, root رضو, أَرْضَى (n15772); تَرَضَّى (n15773); تَرَاضَى (n15774)",
+          "note": "IV “He, or it, made him to be pleased … or satisfied”; V “He sought to please, content, or satisfy, him”; VI “They two agreed, consented … or were pleased … with it”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1100, root رضو, رِضًى (n15777); رِضْوَانٌ (n15780); مَرْضِىٌّ (n15786)",
+          "note": "رِضًى “The being pleased, well pleased, content”; مَرْضِىٌّ “Found pleasing, well pleasing … or liked, or approved”."
+        }
+      ]
+    },
+    {
+      "id": "sab-rdw",
+      "lang": "sem",
+      "form": "𐩧𐩳𐩥, 𐩧𐩳𐩺",
+      "translit": "rḍw, rḍy",
+      "gloss": "(Sabaic) satisfy, content; be willing, consent; good will, satisfaction",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Sabaic inscriptions ask the god to grant “the favour and good will (rḍw) of their lord” (J 561b/18), as Hebrew has רְצוֹן מֶלֶךְ (Pro 14:35), and thank him for crops and booty “which contented them” (h-stem hrḍw), as the land is made to “make good” its sabbaths. Biella’s pages read from the OCR text; the scan is not yet checked.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 493, RḌW",
+          "note": "“v … SATISFY, CONTENT (cf RḌY h id) [cf Ar rḍy D id.]”; “s rḍw … GOOD WILL, SATISFACTION … ‘may (the god) grant them the favor and good will of their lord’”."
+        },
+        {
+          "source": "biella-1982",
+          "locator": "p. 494, RḌY",
+          "note": "“v (1) BE WILLING, CONSENT [Ar raḍiya ‘consent, agree’] … h SATISFY, CONTENT … ns rḍy GOOD WILL (= rḍw)”."
+        }
+      ]
+    },
+    {
+      "id": "arc-rei",
+      "lang": "arc",
+      "form": "רְעֵי, רְעָא; רְעוּת",
+      "translit": "rəʿē, rəʿā; rəʿūṯ",
+      "gloss": "desire, take delight in, welcome; (pael) favour, reconcile; (ithpael) be acceptable, be reconciled; rəʿūṯ pleasure, will (Jewish Aramaic)",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "The Targums use it for this Hebrew verb: the ithpael for נִרְצָה at Lev 1:4, the passive participle מַרְעֵי for רְצוּי at Deu 33:24 (Targ. Y.), and at Psa 85:2 and 77:8, there “be reconciled”. Aramaic ע answers to older ṣ́, where Hebrew writes צ.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רְעֵי II (רְעָא II)",
+          "note": "“= h. רָצָה … to desire, take delight in; to welcome … Targ. Ps. LXXXV, 2 … Pa. to favor, welcome … Part. pass. מַרְעֵי. Targ. Y. Deut. XXXIII, 24 (h. text רצוי) … to reconcile … Ithpa. to be pleasing, acceptable … Targ. Lev. I, 4 … to be reconciled. Targ. Ps. LXXVII, 8.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רְעוּתָא (רְעוּ)",
+          "note": "“pleasure, will; good will … Targ. Prov. XII, 2” (Hebrew רָצוֹן there)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001230 rṣy [agree]: Aramaic ARM028862 RṢY [consent]; Hebrew HEB007013"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "acceptable-offering",
+      "statement": "The offerings of the law were brought “for your acceptance” (לִרְצֹנְכֶם): the burnt offering “shall be accepted for him, to make a covering for him” when the offerer lays his hand on its head (Lev 1:3–4), and it had to be whole, for a blemished one “will not be accepted for you” (Lev 22:20–21). Yet the acceptance was of the worshipper, not only of the gift. Yahweh refused the burnt offerings of those who loved to wander from him (Jer 14:10–12; Hos 8:13; Amo 5:22; Mal 1:10, 13): “the sacrifice of the wicked is an abomination to Yahweh, but the prayer of the upright is his delight” (Pro 15:8). He does not accept a burnt offering for its own sake; the sacrifices he does not despise are a broken spirit and a contrite heart (Psa 51:18–19), and he takes pleasure in those who fear him (Psa 147:11). Peter learned the same of every nation: “he who fears him and works righteousness is accepted (δεκτός) by him” (Act 10:35). And those who come to him through Christ offer “spiritual sacrifices, acceptable to God through Jesus Christ” (1Pe 2:5; Rom 12:1; Php 4:18).",
+      "evidence": [
+        {
+          "ref": "Lev.1.3",
+          "to": "Lev.1.4"
+        },
+        {
+          "ref": "Lev.22.20",
+          "to": "Lev.22.21"
+        },
+        {
+          "ref": "Jer.14.10",
+          "to": "Jer.14.12"
+        },
+        {
+          "ref": "Hos.8.13"
+        },
+        {
+          "ref": "Amo.5.22"
+        },
+        {
+          "ref": "Mal.1.10"
+        },
+        {
+          "ref": "Mal.1.13"
+        },
+        {
+          "ref": "Pro.15.8"
+        },
+        {
+          "ref": "Psa.51.18",
+          "to": "Psa.51.19"
+        },
+        {
+          "ref": "Psa.147.11"
+        },
+        {
+          "ref": "Act.10.35"
+        },
+        {
+          "ref": "1Pe.2.5"
+        },
+        {
+          "ref": "Rom.12.1"
+        },
+        {
+          "ref": "Php.4.18"
+        }
+      ]
+    },
+    {
+      "topic": "firstfruits",
+      "statement": "At the Passover season the priest waved the עֹמֶר, the first sheaf of the harvest, “before Yahweh for your acceptance; on the morrow after the sabbath the priest shall wave it” (Lev 23:10–11), and no bread of the new harvest was eaten until it had been brought (Lev 23:14). Jesus was crucified on the preparation, the day before the sabbath (Jhn 19:31), and raised “after the sabbath, as it began to dawn toward the first day of the week” (Mat 28:1): the morrow after the sabbath. Paul calls him “the firstfruits of those who have fallen asleep … Christ the firstfruits, afterward those who are Christ’s at his coming” (1Co 15:20, 23). From the verses: the sheaf waved for Israel’s acceptance on that day stood for Christ raised on it, the first of the harvest, on whose acceptance before God the acceptance of the rest depends.",
+      "evidence": [
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.11"
+        },
+        {
+          "ref": "Lev.23.14"
+        },
+        {
+          "ref": "Jhn.19.31"
+        },
+        {
+          "ref": "Mat.28.1"
+        },
+        {
+          "ref": "1Co.15.20"
+        },
+        {
+          "ref": "1Co.15.23"
+        }
+      ]
+    },
+    {
+      "topic": "year-of-favour",
+      "statement": "Isaiah’s anointed one is sent “to proclaim the year of Yahweh’s favour (רָצוֹן) and the day of vengeance of our God” (Isa 61:2). In the synagogue at Nazareth Jesus read the passage, stopped at “the acceptable year of the Lord”, and said, “Today this scripture is fulfilled in your ears” (Luk 4:18–21). The day of vengeance he later named: when Jerusalem is surrounded by armies, “these are the days of vengeance, that all things which are written may be fulfilled” (Luk 21:20–22), which came on the city in AD 70. Paul quotes Isa 49:8, “in a time of favour I answered you”, and says, “now is the acceptable time; now is the day of salvation” (2Co 6:2). So the year of favour was the time of the gospel’s preaching that ran from Jesus’ ministry to the day of vengeance on Jerusalem.",
+      "evidence": [
+        {
+          "ref": "Isa.61.1",
+          "to": "Isa.61.2"
+        },
+        {
+          "ref": "Luk.4.18",
+          "to": "Luk.4.21"
+        },
+        {
+          "ref": "Luk.21.20",
+          "to": "Luk.21.22"
+        },
+        {
+          "ref": "Isa.49.8"
+        },
+        {
+          "ref": "2Co.6.2"
+        }
+      ]
+    },
+    {
+      "topic": "will-of-god",
+      "statement": "In Psalm 40 the one who speaks sets sacrifice and offering, which God did not desire, against doing God’s will: “to do your will (רְצוֹנְךָ), my God, I delight, and your law is within my heart” (Psa 40:7–9). Hebrews puts these words in Christ’s mouth when he comes into the world, and concludes: “he takes away the first, that he may establish the second; by which will we are sanctified through the offering of the body of Jesus Christ once for all” (Heb 10:5–10). Jesus prayed “your will be done” in Gethsemane (Mat 26:42). From the verses: what God willed was a man who did his will wholly, and Christ’s offering of himself was that will done; it is what the animal sacrifices could not be.",
+      "evidence": [
+        {
+          "ref": "Psa.40.7",
+          "to": "Psa.40.9"
+        },
+        {
+          "ref": "Heb.10.5",
+          "to": "Heb.10.10"
+        },
+        {
+          "ref": "Mat.26.42"
+        },
+        {
+          "ref": "Psa.143.10"
+        }
+      ]
+    },
+    {
+      "topic": "delight-in-the-servant",
+      "statement": "Yahweh says of his servant, “my chosen, in whom my soul delights (רָצְתָה נַפְשִׁי); I have put my spirit upon him” (Isa 42:1). Matthew quotes the passage of Jesus, “my beloved, in whom my soul is well pleased” (Mat 12:17–18), and the voice at his baptism and on the mountain says the same of him: “This is my beloved Son, in whom I am well pleased” (Mat 3:17; 17:5). The God who “takes pleasure in those who fear him” (Psa 147:11) found that pleasure perfectly in his Son.",
+      "evidence": [
+        {
+          "ref": "Isa.42.1"
+        },
+        {
+          "ref": "Mat.12.17",
+          "to": "Mat.12.18"
+        },
+        {
+          "ref": "Mat.3.17"
+        },
+        {
+          "ref": "Mat.17.5"
+        },
+        {
+          "ref": "Psa.147.11"
+        }
+      ]
+    },
+    {
+      "topic": "reconciliation",
+      "statement": "Under the law the offerer brought his gift and was “accepted” (נִרְצָה) by it (Lev 1:4). The Peshitta’s word for reconciling is this root’s Aramaic: one must “first be reconciled with your brother, then come and offer your offering” (Mat 5:24); and “God, who reconciled us to himself through Messiah … God was in Messiah reconciling the world to himself, not reckoning to them their sins”, so that the apostles beseech men, “be reconciled to God” (2Co 5:18–20). He did it “by the death of his Son” while we were enemies (Rom 5:10), “having made peace by the blood of his cross” (Col 1:20). From the verses: God himself provided, in his Son’s offering, the acceptance the offerings of the law looked for, and it is received by being reconciled to him.",
+      "evidence": [
+        {
+          "ref": "Lev.1.4"
+        },
+        {
+          "ref": "Mat.5.24"
+        },
+        {
+          "ref": "2Co.5.18",
+          "to": "2Co.5.20"
+        },
+        {
+          "ref": "Rom.5.10"
+        },
+        {
+          "ref": "Col.1.20"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (לִרְצֹנְכֶם, Lev 23:11). Root key רצה as the corpus has it. Words: the verb (t.ee.aa) and רָצוֹן (t.ee.ab); Ezra’s Aramaic רְעוּת (xt.al.ab); the Peshitta’s ܪܥܐ and ܬܪܥܘܬܐ (SEDRA root 1775, lexemes 3048, 3049, found via the BFBS word list; the Peshitta’s English from src_texts/Haqor-Peshitta). The key xt.al.ab also counts the seven Ecclesiastes tokens of Hebrew רְעוּת (Ecc 1:14 etc.), which are BDB’s t.dm.ac, so its use count is high by seven. Left out: the names תִּרְצָה (Tirzah, daughter of Zelophehad, Tirzah@Num.26.33; also the city, t.ee.ac) and רִצְיָא (Rizia, Rizia@1Ch.7.39, t.ef.ac), which belong in names/; w.bq.av, a zero-token cross-reference. Left out as belonging to the spelling רעה: Hebrew רְעוּת and רַעְיוֹן of Ecclesiastes (t.dm.ac, t.dm.ad) and רֵעַ “thought” (t.dm.ab, Psa 139:2, 17); and Biblical Aramaic רַעְיוֹן “thought” (xt.al.ac, Dan 2:29, 30; 4:16; 5:6, 10; 7:28) with the Peshitta’s ܪܥܐ “think”, ܪܥܝܢܐ “mind” (SEDRA root 1777, kept apart from 1775 “reconcile”). The “thought” words may go with Arabic raʿā “observe, regard” (ʿ) rather than raḍiya (ṣ́); whether Ecclesiastes’ רְעוּת רוּחַ is “desire of wind” (this root) or “feeding on wind” (רעה) is for the רעה entry. Jer 23:21 רָצוּ is רוץ “run”, as the brief says. Psa 50:18 וַתִּרֶץ is kept under the verb with a note that it may be רוץ. The “make good” sense (Lev 26; Isa 40:2; 2Ch 36:21) is taken as the verb’s own “accept as satisfying” with a debt as object, supported by Arabic IV and Sabaic h “satisfy”; review whether it is enough. Biella pp. 493–494 read from OCR only; the scan is not checked (no PDF renderer). Not consulted: DULAT and Ugaritic texts, Ge’ez (Dillmann, Leslau), CAD (no Akkadian cognate turned up in Oracc), Payne Smith for the Syriac. Open questions: (1) the gloss “make good” for Lev 26:34, 41, 43 and Isa 40:2; (2) the firstfruits doctrine’s reading of “the morrow after the sabbath” as the resurrection day; (3) Syriac lemma written רְעָא for the pael-only verb."
+}
