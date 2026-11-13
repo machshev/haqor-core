@@ -1,0 +1,943 @@
+{
+  "id": "tsaar",
+  "root": "צער",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "smallness",
+    "youth",
+    "birth-order",
+    "election",
+    "honour",
+    "shame"
+  ],
+  "gloss": "be small, of little account; little, younger, least",
+  "summary": "To be small: few, young, of little account. צָעִיר is the younger or youngest child, set against the firstborn and the elder (Gen 25:23; 43:33), the young in years (Job 32:6), and the least clan, tribe or town (Jdg 6:15; 1Sa 9:21; Mic 5:1); the verb is to become small, set against being honoured (Jer 30:19; Job 14:21); מִצְעָר is a small thing, a few, or a little while, and the “little” town gives Zoar its name (Gen 19:20–22). Scripture uses it again and again of the one God chooses over the greater: the elder serves the younger (Gen 25:23; Rom 9:12), and Bethlehem, small among the thousands of Judah, brings out Israel’s ruler (Mic 5:1; Mat 2:6). Arabic ṣaġura, Ugaritic and Sabaic ṣġr and Akkadian ṣeḫēru are “small, young”, and the Peshitta’s ṣʿr is to make small in honour: to despise, dishonour.",
+  "words": [
+    {
+      "lemma": "צָעִיר",
+      "pos": "adjective",
+      "gloss": "little, young; younger, youngest; least",
+      "bdb": [
+        "r.dd.ac"
+      ],
+      "cognate_ids": [
+        "ar-saghura",
+        "uga-sgr",
+        "sab-sgr",
+        "akk-seheru",
+        "akk-suharu"
+      ],
+      "summary": "Small in standing, age or size: most often the younger child against the firstborn, then the young in years, the least of a clan or tribe, and the little ones of a flock. As a noun, “the younger, the youngest”.",
+      "senses": [
+        {
+          "id": "younger-born",
+          "gloss": "younger, youngest (by birth)",
+          "definition": "The child born later, or last, set against the firstborn (בְּכוֹר) or the elder (רַב): a matter of birth order, which custom ranked but God did not hold to.",
+          "evidence": [
+            {
+              "ref": "Gen.25.23",
+              "role": "defining",
+              "note": "“And the elder (רַב) shall serve the צָעִיר”: of Esau and Jacob before their birth."
+            },
+            {
+              "ref": "Gen.29.26",
+              "role": "defining",
+              "note": "Laban: “It is not done so in our place, to give the צְּעִירָה before the firstborn (הַבְּכִירָה).”"
+            },
+            {
+              "ref": "Gen.43.33",
+              "role": "defining",
+              "note": "“The firstborn according to his birthright and the צָּעִיר according to his youth”: seated in birth order."
+            },
+            {
+              "ref": "Gen.48.14",
+              "role": "defining",
+              "note": "Israel lays his right hand on Ephraim, “and he was the צָּעִיר”, and his left on Manasseh, “for Manasseh was the firstborn”."
+            },
+            {
+              "ref": "Gen.19.31",
+              "note": "Lot’s daughters, “the firstborn said to the צְּעִירָה”."
+            },
+            {
+              "ref": "Gen.19.38",
+              "note": "The younger bore Ben-ammi, father of the sons of Ammon."
+            },
+            {
+              "ref": "Jos.6.26",
+              "role": "defining",
+              "note": "The curse on whoever rebuilds Jericho: “with his firstborn he shall lay its foundation, and with his צָעִיר set up its gates”."
+            },
+            {
+              "ref": "1Ki.16.34",
+              "note": "Fulfilled on Hiel: Abiram his firstborn and Segub his צְעִירוֹ, “according to the word of Yahweh which he spoke by Joshua”."
+            }
+          ]
+        },
+        {
+          "id": "young-in-days",
+          "gloss": "young (in years)",
+          "definition": "Young in age, set against the aged; צָעִיר לְיָמִים, “small in days”.",
+          "evidence": [
+            {
+              "ref": "Job.32.6",
+              "role": "defining",
+              "note": "Elihu: “I am צָעִיר לְיָמִים and you are aged (יְשִׁישִׁים); so I held back and was afraid to show you my opinion.”"
+            },
+            {
+              "ref": "Job.30.1",
+              "role": "defining",
+              "note": "“Those צְעִירִים מִמֶּנִּי לְיָמִים, younger than I in days, laugh at me.”"
+            }
+          ]
+        },
+        {
+          "id": "least-of-account",
+          "gloss": "small, least, of little account",
+          "definition": "Of a person, clan, tribe or town: the smallest, least regarded, set beside קָטֹן “small”, דַּל “poor” and נִבְזֶה “despised”. Often of the one God then raises.",
+          "evidence": [
+            {
+              "ref": "Jdg.6.15",
+              "role": "defining",
+              "note": "Gideon: “My thousand is the poorest (הַדַּל) in Manasseh, and I am the צָּעִיר in my father’s house.”"
+            },
+            {
+              "ref": "1Sa.9.21",
+              "role": "defining",
+              "note": "Saul: “Am I not a Benjamite, of the smallest (מִקַּטַנֵּי) of the tribes of Israel, and my clan the צְּעִרָה of all the clans of Benjamin?”"
+            },
+            {
+              "ref": "Mic.5.1",
+              "role": "defining",
+              "note": "“You, Bethlehem Ephrathah, צָעִיר to be among the thousands of Judah, from you shall come out to me one to be ruler in Israel.” Quoted at Mat 2:6."
+            },
+            {
+              "ref": "Isa.60.22",
+              "role": "defining",
+              "note": "“The small one (הַקָּטֹן) shall become a thousand, and the צָּעִיר a strong nation.”"
+            },
+            {
+              "ref": "Psa.119.141",
+              "role": "defining",
+              "note": "“צָעִיר am I and despised (וְנִבְזֶה); your precepts I have not forgotten.”"
+            },
+            {
+              "ref": "Psa.68.28",
+              "note": "“There is Benjamin, the צָעִיר, ruling them”: the least tribe at the head of the procession."
+            },
+            {
+              "ref": "Dan.8.9",
+              "note": "From one of the four horns “came out one horn מִצְּעִירָה”, from smallness, “and it grew exceedingly great”."
+            }
+          ]
+        },
+        {
+          "id": "little-ones",
+          "gloss": "little ones (of a flock); young servants",
+          "definition": "As a noun in the plural: the small or young of a flock, and young dependants sent on errands.",
+          "kin": [
+            "little-ones-zec"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.49.20",
+              "role": "defining",
+              "note": "Against Edom: “surely the צְעִירֵי הַצֹּאן, the little ones of the flock, shall drag them away”."
+            },
+            {
+              "ref": "Jer.50.45",
+              "note": "The same words against Babylon."
+            },
+            {
+              "ref": "Jer.14.3",
+              "note": "“Their nobles sent their צְעִירֵיהֶם to the waters”: young servants (qere; the ketiv is צְעוֹרֵיהֶם)."
+            },
+            {
+              "ref": "Jer.48.4",
+              "note": "“Moab is broken; her צְעִירֶיהָ have made a cry to be heard” (qere; the ketiv is צעוריה)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐλάσσων",
+          "gloss": "lesser; younger",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.25.23, צָעִיר → ἐλάσσονι"
+            },
+            {
+              "ref": "Rom.9.12",
+              "role": "defining",
+              "note": "“It was said to her, The greater shall serve τῷ ἐλάσσονι”: Paul quotes Gen 25:23, said before the twins were born or had done good or evil (Rom 9:11)."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐλάχιστος",
+          "gloss": "least, smallest",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jos.6.26, צְעִיר → ἐλαχίστῳ; Isa.60.22, צָּעִיר → ἐλάχιστος; Mic.5.1 has ὀλιγοστός"
+            },
+            {
+              "ref": "Mat.2.6",
+              "role": "defining",
+              "note": "Mic 5:1 quoted: “And you, Bethlehem, land of Judah, are by no means ἐλαχίστη among the rulers of Judah, for out of you shall come a ruler.” The small town is no longer least, because of the one born there."
+            }
+          ]
+        },
+        {
+          "lemma": "νέος",
+          "gloss": "young; (comparative) younger",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.43.33, Gen.48.14, Job.32.6, Psa.68.28, Jer.14.3, צָעִיר → νεώτερος/νεωτέρους; Gen.19.31, 29.26 → νεωτέραν"
+            },
+            {
+              "ref": "Luk.22.26",
+              "note": "“Let the greater among you become as ὁ νεώτερος”: the same pairing of greater and younger as Gen 25:23, though not a quotation of it."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָטֹן",
+            "note": "“Small”, beside it of a tribe and of a people to be enlarged.",
+            "evidence": [
+              {
+                "ref": "1Sa.9.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.60.22"
+              }
+            ]
+          },
+          {
+            "lemma": "נִבְזֶה",
+            "note": "“Despised”, beside it of the psalmist.",
+            "evidence": [
+              {
+                "ref": "Psa.119.141",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "דַּל",
+            "note": "“Poor, weak”, of Gideon’s clan beside his being the youngest.",
+            "evidence": [
+              {
+                "ref": "Jdg.6.15",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בְּכוֹר",
+            "note": "The firstborn, against the younger or youngest.",
+            "evidence": [
+              {
+                "ref": "Gen.43.33",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.29.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.48.14"
+              },
+              {
+                "ref": "Jos.6.26"
+              },
+              {
+                "ref": "1Ki.16.34"
+              },
+              {
+                "ref": "Gen.19.31"
+              }
+            ]
+          },
+          {
+            "lemma": "רַב",
+            "note": "The elder, who “shall serve the younger”.",
+            "evidence": [
+              {
+                "ref": "Gen.25.23",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יָשִׁישׁ",
+            "note": "The aged, against the young in days.",
+            "evidence": [
+              {
+                "ref": "Job.32.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "צְעִירֵי הַצֹּאן",
+            "gloss": "the little ones of the flock",
+            "evidence": [
+              {
+                "ref": "Jer.49.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.50.45"
+              }
+            ]
+          },
+          {
+            "phrase": "צָעִיר לְיָמִים",
+            "gloss": "young in days",
+            "evidence": [
+              {
+                "ref": "Job.32.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.30.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִצְעָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a small thing, a few; a little while",
+      "bdb": [
+        "r.dd.ah"
+      ],
+      "cognate_ids": [
+        "ar-saghura",
+        "uga-sgr",
+        "sab-sgr",
+        "akk-seheru"
+      ],
+      "summary": "Smallness: a small town, a few men, a small beginning, and with לְ, “for a little while”. Lot’s plea that the town is מִצְעָר gives Zoar its name.",
+      "senses": [
+        {
+          "id": "small-thing",
+          "gloss": "a small thing; a few",
+          "definition": "Something small in size or number: a little town, a small company of men, a small beginning set against a great end.",
+          "evidence": [
+            {
+              "ref": "Gen.19.20",
+              "role": "defining",
+              "note": "Lot: “This town is near to flee to, and it is מִצְעָר … is it not מִצְעָר? and my soul shall live.”"
+            },
+            {
+              "ref": "Gen.19.22",
+              "role": "defining",
+              "note": "“Therefore the name of the town was called צוֹעַר”: the town is named from Lot’s word."
+            },
+            {
+              "ref": "2Ch.24.24",
+              "role": "defining",
+              "note": "“The army of Aram came בְמִצְעַר אֲנָשִׁים, with a few men, and Yahweh gave a very great army into their hand.”"
+            },
+            {
+              "ref": "Job.8.7",
+              "role": "defining",
+              "note": "“Though your beginning was מִצְעָר, your latter end shall grow very great.”"
+            }
+          ]
+        },
+        {
+          "id": "little-while",
+          "gloss": "a little while",
+          "definition": "With לְ, of time: for a short while.",
+          "evidence": [
+            {
+              "ref": "Isa.63.18",
+              "role": "defining",
+              "note": "“לַמִּצְעָר your holy people possessed it; our adversaries have trampled down your sanctuary.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὀλίγος",
+          "gloss": "few, little",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ch.24.24, מִצְעָר → ὀλίγοις; Job.8.7, מִצְעָר → ὀλίγα"
+            }
+          ]
+        },
+        {
+          "lemma": "μικρός",
+          "gloss": "small, little",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.19.20, מִצְעָר → μικρά (twice); Isa.63.18, לַמִּצְעָר → μικρόν"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "שָׂגָה",
+            "note": "“Grow great”: a small beginning against a great latter end.",
+            "evidence": [
+              {
+                "ref": "Job.8.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "רֹב",
+            "note": "“Multitude”: a few men against a very great army.",
+            "evidence": [
+              {
+                "ref": "2Ch.24.24",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צָעַר",
+      "pos": "verb",
+      "gloss": "be small, become of no account",
+      "bdb": [
+        "r.dd.aa"
+      ],
+      "cognate_ids": [
+        "ar-saghura",
+        "sab-sgr",
+        "akk-seheru",
+        "arc-tsear"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be or become small, few, of no account; (participle) the little ones",
+          "senses": [
+            {
+              "id": "become-small",
+              "gloss": "be small, of no account",
+              "definition": "To become small in number or in standing; set against being multiplied and honoured (כָּבֵד).",
+              "kin": [
+                "least-of-account",
+                "syc-dishonour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jer.30.19",
+                  "role": "defining",
+                  "note": "“I will multiply them and they shall not be few (יִמְעָטוּ); I will honour them (וְהִכְבַּדְתִּים) and they shall not יִצְעָרוּ.”"
+                },
+                {
+                  "ref": "Job.14.21",
+                  "role": "defining",
+                  "note": "Of a dead man: “His sons come to honour (יִכְבְּדוּ) and he does not know it; וְיִצְעֲרוּ, they are brought low, and he does not perceive it.”"
+                }
+              ]
+            },
+            {
+              "id": "little-ones-zec",
+              "gloss": "(participle) the little ones",
+              "definition": "The participle as a noun: the small ones of the flock.",
+              "kin": [
+                "little-ones"
+              ],
+              "evidence": [
+                {
+                  "ref": "Zec.13.7",
+                  "role": "defining",
+                  "note": "“Strike the shepherd and the flock shall be scattered, and I will turn my hand upon הַצֹּעֲרִים, the little ones.”"
+                },
+                {
+                  "ref": "Mat.26.31",
+                  "note": "Jesus applies the first half of Zec 13:7 to himself and the disciples, who were scattered that night; the clause on the little ones is not quoted."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָעַט",
+            "note": "“Be few”, beside it in Jeremiah’s promise.",
+            "evidence": [
+              {
+                "ref": "Jer.30.19",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "כָּבֵד",
+            "note": "“Be heavy, honoured”: to be honoured against becoming of no account.",
+            "evidence": [
+              {
+                "ref": "Jer.30.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.14.21",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "צְעִירָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "youth, the standing of the younger",
+      "bdb": [
+        "r.dd.ae"
+      ],
+      "cognate_ids": [
+        "ar-saghura",
+        "akk-seheru"
+      ],
+      "summary": "Used once, set against בְּכֹרָה, the birthright: a son’s place as the younger.",
+      "senses": [
+        {
+          "gloss": "youth, younger rank",
+          "definition": "The state or rank of the younger son, set against the firstborn’s birthright.",
+          "kin": [
+            "younger-born"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.43.33",
+              "role": "defining",
+              "note": "“The firstborn according to his birthright (כִּבְכֹרָתוֹ), and the youngest according to his צְעִרָה (כִּצְעִרָתוֹ).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צְעַר",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "despise, dishonour; (passive) be despised",
+      "cognate_ids": [
+        "ar-saghura",
+        "arc-tsear"
+      ],
+      "summary": "The Peshitta’s ܨܥܪ: to make small in honour, set against honouring, for Greek ἀτιμάζω, ὑβρίζω and ἄτιμος. The Hebrew verb is set against כָּבֵד “be honoured” in the same way (Jer 30:19).",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "(passive participle) despised, without honour",
+          "senses": [
+            {
+              "gloss": "despised, without honour",
+              "definition": "Held of no account.",
+              "evidence": [
+                {
+                  "ref": "Mat.13.57",
+                  "role": "defining",
+                  "note": "“A prophet is not ܨܥܝܪ (ἄτιμος) except in his own country and his own house.”"
+                },
+                {
+                  "ref": "Mrk.6.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "despise, dishonour, treat shamefully",
+          "senses": [
+            {
+              "id": "syc-dishonour",
+              "gloss": "dishonour, treat shamefully",
+              "definition": "To deny someone their honour, in word or by mistreatment: the opposite of honouring.",
+              "kin": [
+                "become-small"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jhn.8.49",
+                  "role": "defining",
+                  "note": "“I honour my Father, and you ܡܨܥܪܝܢ me (ἀτιμάζετε).”"
+                },
+                {
+                  "ref": "Rom.2.23",
+                  "role": "defining",
+                  "note": "“Through breaking the law do you dishonour God?”"
+                },
+                {
+                  "ref": "1Co.12.23",
+                  "note": "The members “we think less honourable”."
+                },
+                {
+                  "ref": "Mat.22.6",
+                  "note": "The king’s servants seized, treated shamefully (ὕβρισαν) and killed."
+                },
+                {
+                  "ref": "Luk.20.11",
+                  "note": "The second servant beaten and treated shamefully."
+                },
+                {
+                  "ref": "Luk.11.45",
+                  "note": "“In saying this you insult us too.”"
+                },
+                {
+                  "ref": "Act.14.5",
+                  "note": "A move to mistreat and stone them."
+                },
+                {
+                  "ref": "Rom.1.24",
+                  "note": "“To dishonour their bodies among themselves.”"
+                },
+                {
+                  "ref": "1Co.4.12",
+                  "note": "“Being reviled, we bless.”"
+                },
+                {
+                  "ref": "Heb.6.6",
+                  "note": "Those who fall away put the son of God to open shame."
+                },
+                {
+                  "ref": "Heb.10.29",
+                  "note": "Has insulted the spirit of grace."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be dishonoured, suffer shame",
+          "senses": [
+            {
+              "gloss": "be dishonoured, suffer shame",
+              "definition": "To suffer dishonour or shameful treatment.",
+              "evidence": [
+                {
+                  "ref": "Act.5.41",
+                  "role": "defining",
+                  "note": "The apostles rejoiced “that they were counted worthy to be dishonoured (ἀτιμασθῆναι) for his name”."
+                },
+                {
+                  "ref": "1Co.4.10",
+                  "role": "defining",
+                  "note": "“You are honoured, but we ܡܨܛܥܪܝܢ (ἄτιμοι).”"
+                },
+                {
+                  "ref": "1Th.2.2",
+                  "note": "“We had suffered and been shamefully treated at Philippi.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צַעְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dishonour, shame",
+      "cognate_ids": [
+        "ar-saghura",
+        "arc-tsear"
+      ],
+      "summary": "The Peshitta’s ܨܥܪܐ, for ἀτιμία: dishonour, set against honour and glory.",
+      "senses": [
+        {
+          "gloss": "dishonour, shame",
+          "definition": "The state of having no honour; disgrace.",
+          "evidence": [
+            {
+              "ref": "1Co.15.43",
+              "role": "defining",
+              "note": "The body “is sown ܒܨܥܪܐ (ἐν ἀτιμίᾳ), it is raised in glory”."
+            },
+            {
+              "ref": "Rom.9.21",
+              "role": "defining",
+              "note": "The potter makes from one lump “one vessel for honour and another ܠܨܥܪܐ, for dishonour”."
+            },
+            {
+              "ref": "2Co.6.8",
+              "role": "defining",
+              "note": "“By honour and by dishonour.”"
+            },
+            {
+              "ref": "2Ti.2.20",
+              "note": "Vessels “some to honour, and some to dishonour”."
+            },
+            {
+              "ref": "Rom.1.26",
+              "note": "Passions of dishonour."
+            },
+            {
+              "ref": "1Co.11.14",
+              "note": "Long hair is a dishonour to a man."
+            },
+            {
+              "ref": "Mrk.12.4",
+              "note": "The servant sent away shamefully handled."
+            },
+            {
+              "ref": "2Co.11.21"
+            },
+            {
+              "ref": "2Co.12.10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְצַעְרָנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "insolent man, reviler",
+      "cognate_ids": [
+        "ar-saghura",
+        "arc-tsear"
+      ],
+      "summary": "The Peshitta’s ܡܨܥܪܢܐ, for ὑβριστής and λοίδορος: one who treats others with contempt.",
+      "senses": [
+        {
+          "gloss": "insolent man, reviler",
+          "definition": "One who despises and abuses others in word or deed.",
+          "evidence": [
+            {
+              "ref": "1Ti.1.13",
+              "role": "defining",
+              "note": "Paul of himself before his call: “a blasphemer, a persecutor and ܡܨܥܪܢܐ (ὑβριστήν)”."
+            },
+            {
+              "ref": "Rom.1.30",
+              "note": "In the list of the Gentiles’ sins (ὑβριστάς)."
+            },
+            {
+              "ref": "1Co.5.11",
+              "note": "A brother who is a reviler (λοίδορος): not to be kept company with."
+            },
+            {
+              "ref": "1Co.6.10",
+              "note": "Revilers shall not inherit the kingdom of God."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-saghura",
+      "lang": "ar",
+      "form": "صَغُرَ، صَغِيرٌ، صَاغِرٌ، صُغْرٌ",
+      "translit": "ṣaġura, ṣaġīr, ṣāġir, ṣuġr",
+      "gloss": "be small, little; small, young; abased; ignominy",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ",
+        "ע": "ġ"
+      },
+      "note": "Lane’s sources give the verb as “it was, or became, small, or little”, the contrary of being great; صَغِيرٌ as small in body, in rank, and in years, a youngling, “opposed to كَبِيرٌ”; فُلَانٌ صِغْرَتُهُمْ “such a one is the least, or youngest, of them … opposed to كِبْرَة”. Form II صغّره is “rendered him small … contemptible … in the eyes of men”, صَاغِرٌ is one in a state of abasement, and صُغْرٌ ignominy: the same move from small to dishonoured as the Peshitta’s ܨܥܪ. Arabic غ (ġ), not ع (ʿ), stands behind ע, and ص (ṣ) behind צ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1691, root صغر, صَغُرَ (n24373); صغّرهُ (n24374); استصغرهُ (n24376)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1692, صَغِيرٌ (n24383); فُلَانٌ صِغْرَتُهُمْ (n24379); صَاغِرٌ (n24386); p. 1691, صُغْرٌ (n24377)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000395 ṣġr [small] V → ARB017203 Sagura; SEM000391 ṣġīr [small] A → ARB017219 Sagiyor"
+        }
+      ]
+    },
+    {
+      "id": "uga-sgr",
+      "lang": "uga",
+      "form": "𐎕𐎙𐎗",
+      "translit": "ṣġr",
+      "gloss": "small, little; young",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ",
+        "ע": "ġ"
+      },
+      "note": "Ugaritic keeps ġ apart from ʿ and writes it here.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎕𐎙𐎗 (ṣġr)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000394 ṣġr [small] A → UGC003865 ṣġr [small]"
+        }
+      ]
+    },
+    {
+      "id": "sab-sgr",
+      "lang": "sem",
+      "form": "𐩮𐩶𐩧",
+      "translit": "ṣġr",
+      "gloss": "(Sabaic) small, unimportant; (elative) lesser",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ",
+        "ע": "ġ"
+      },
+      "note": "Sabaic, set against kbr “great”: kl ʾsṭrm kbrm fʾw ṣġrm “every document, great or small” (R 2695/6); ʾṣġrt ʾqwlhmw “the lesser of their tribal leaders” (Ry 509/7–8). Small in size and in rank, with ġ behind ע.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 427, ṢĠR (adj. small, unimportant)",
+          "note": "Read from the local scan’s text layer."
+        }
+      ]
+    },
+    {
+      "id": "akk-seheru",
+      "lang": "akk",
+      "form": "ṣeḫēru, ṣeḫru",
+      "translit": "ṣeḫēru, ṣeḫru",
+      "gloss": "be(come) small, diminish; small, young, junior; child, servant; youth",
+      "relation": "cognate",
+      "note": "The verb ṣeḫēru “be(come) small, decrease, diminish” (D “make small, reduce”), and ṣeḫru “small, little, young, younger, junior”, as a noun “child, young one, lowly person, servant”, and “(time of) youth”: the same range as צָעִיר, from small to younger to of low rank. Akkadian ḫ does not show whether ḫ or ġ stood behind it.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000038640, ṣehēru [be(come) small] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000002290, ṣehru [small] AJ (meanings: small, little, young, younger, junior, servant)"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000075900, ṣehru [small one] N (meanings: child, young one, lowly person, youth)"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000127400, ṣehru [(time of) youth] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000395 ṣġr [small] V → AKK011028 ṣehēru [be(come) small] V"
+        }
+      ]
+    },
+    {
+      "id": "akk-suharu",
+      "lang": "akk",
+      "form": "ṣuḫāru",
+      "translit": "ṣuḫāru",
+      "gloss": "boy, lad; servant",
+      "relation": "cognate",
+      "note": "A qutāl noun of the same root, the pattern of the name צוּעָר: a “little one”, a boy or young servant. It also answers to צְעִירִים as young servants (Jer 14:3).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000021490, ṣuhāru [boy] N (meanings: boy, servant)"
+        }
+      ]
+    },
+    {
+      "id": "arc-tsear",
+      "lang": "arc",
+      "form": "צְעַר، צַעֲרָא",
+      "translit": "ṣəʿar, ṣaʿărā",
+      "gloss": "diminish, disregard, shame, curse; (pael) afflict, grieve; degradation, shame; pain, grief",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "note": "Jewish Aramaic: the verb “to diminish, disregard, shame, curse”, in the Targum of Proverbs for Hebrew קלל “make light of, curse” (Targ. Prov. 30:10–11), and the noun “degradation, shame” for Hebrew קָלוֹן (Targ. Prov. 3:35). So making small is making light of, the opposite of honouring, as in the Peshitta. The later senses “afflict, grieve” and “pain, grief” (Targ. Gen. 3:16) have no counterpart in scripture’s Hebrew. Aramaic צ stands for ṣ only (ṣ́ and ṯ̣ appear there as ʿ and ṭ).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. צְעֵר, צְעַר (ch.)",
+          "note": "Targ. Prov. XXX, 10–11; Targ. II Esth. II, 5 (for תקלל, Exo 22:27); Pa. Targ. Y. Deut. XXVI, 6."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. צְעַר, צַעֲרָא (ch.)",
+          "note": "Targ. Prov. III, 35 (for קלון); Targ. Prov. XIV, 3; pl. Targ. O. Gen. III, 16."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "god-chooses-the-small",
+      "statement": "Before Esau and Jacob were born Yahweh said, “the elder shall serve the צָעִיר” (Gen 25:23), and Paul reads it as God’s choice made “not of works but of him who calls”, before either had done good or evil (Rom 9:11–12). Jacob then crossed his hands to set Ephraim, “the younger”, before Manasseh the firstborn, saying “his younger brother shall be greater than he” (Gen 48:14, 19). Gideon, the youngest in his father’s house, of the poorest clan in Manasseh, is told “I will be with you” (Jdg 6:15–16); Saul is chosen from the least clan of the smallest tribe (1Sa 9:21); Bethlehem, “small to be among the thousands of Judah”, is where Israel’s ruler comes from (Mic 5:1), and Matthew applies it to the birth of Jesus: by him Bethlehem is “by no means least” (Mat 2:6). “The little one shall become a strong nation; I, Yahweh, will hasten it” (Isa 60:22). From the verses: God’s choosing does not follow birth order, size or standing; he takes up the younger and the least so that what comes of them is plainly his doing.",
+      "evidence": [
+        {
+          "ref": "Gen.25.23"
+        },
+        {
+          "ref": "Rom.9.11",
+          "to": "Rom.9.12"
+        },
+        {
+          "ref": "Gen.48.14"
+        },
+        {
+          "ref": "Gen.48.19"
+        },
+        {
+          "ref": "Jdg.6.15",
+          "to": "Jdg.6.16"
+        },
+        {
+          "ref": "1Sa.9.21"
+        },
+        {
+          "ref": "Mic.5.1"
+        },
+        {
+          "ref": "Mat.2.6"
+        },
+        {
+          "ref": "Isa.60.22"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (the name צוּעָר, Num 10:15); the corpus keys the root צער as given. Left out as places, which get no name entries: צֹעַר Zoar (r.dd.ab; Gen 19:22 names it from מִצְעָר), צָעִיר Zair (r.dd.ad, 2Ki 8:21; TIPNR files it under Zoar), צִיעֹר Zior (r.dd.ag, Jos 15:54) and מִצְעָר Mount Mizar (r.dd.ai, Psa 42:7). r.dd.ah (the noun מִצְעָר) also counts Psa 42:7, which is the mountain, and r.dd.ai double-files Gen 19:20 and Job 8:7, which are the noun. m.dd.ai and r.bt.ak are zero-token cross-references, left unclaimed. Jer 14:3 and 48:4 have צָעִיר only as qere (ketiv צְעוֹרֵיהֶם, צעוריה) and carry no BDB key, so lexicon-support does not count them; the Septuagint reads Zoar at Jer 48:4. Dan 8:9 מִצְּעִירָה is filed under the adjective (r.dd.ac). Zec 13:7 Septuagint has τοὺς ποιμένας for הַצֹּעֲרִים, so there is no Greek bridge for the verb. Not in this entry: Hebrew זְעֵיר and מִזְעָר (Isa 10:25; 16:14; 24:6; 28:10), Biblical Aramaic זְעֵירָה (Dan 7:8, the “little horn”, beside Hebrew מִצְּעִירָה in Dan 8:9), and the Peshitta’s ܙܥܘܪܐ “little, least” (SEDRA root 575 ZER, lexeme 905: Mat 5:19; 11:11; 25:40 etc.) belong to the by-form root זער and should be entered there; Mat 2:6’s “least” is ܒܨܝܪܐ (root בצר). Peshitta: SEDRA root 1601 ܨܥܪ, lexemes 2707 ܨܥܪ (peal Mat 13:57; Mrk 6:4; pael and ethpaal as cited; Luk 18:33 in the Peshitta’s numbering not cited), 2708 ܨܥܪܐ, 2705 ܡܨܥܪܢܐ, 2706 ܨܥܝܪܐ (the passive participle, counted with the verb). Ugaritic ṣġr cited from Wiktionary only (not found in Segert’s glossary). Not consulted: Ge’ez (Dillmann, Leslau) for a reported ṣaʿala; Payne Smith and Brockelmann for the Syriac; CAD Ṣ. Modern Hebrew צַעַר “sorrow” and the Mishnaic/Talmudic “pain, grief” senses are later and not used. Open questions: whether Zec 13:7’s “turn my hand upon the little ones” is to strike or to shelter them (Isa 1:25 uses הֵשִׁיב יָד for refining); the Christ-applied reading is left to the prophecy data."
+}
