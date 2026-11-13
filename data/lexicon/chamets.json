@@ -1,0 +1,936 @@
+{
+  "id": "chamets",
+  "root": "חמצ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "food",
+    "feasts",
+    "offering",
+    "passover",
+    "corruption"
+  ],
+  "gloss": "be sour, leavened; leaven, what is leavened; vinegar",
+  "summary": "חמץ is to be sour: of dough, to rise with leaven (Exo 12:34, 39), and of wine, to turn to vinegar (חֹמֶץ, Num 6:3); once of a heart soured with envy (Psa 73:21). חָמֵץ and מַחְמֶצֶת are what is leavened, put out of Israel’s houses for the seven days of מַצּוֹת on pain of being cut off (Exo 12:15, 19) and kept from Yahweh’s altar (Lev 2:11), yet commanded in the two loaves of the feast of weeks, “baked leavened, firstfruits to Yahweh” (Lev 23:17). Arabic ḥamuḍa “be sour, acid”, Aramaic and Syriac ḥmaʿ “be leavened” and Akkadian emēṣu “be sour” show the same root, and the New Testament’s ζύμη, “leaven”, which “leavens the whole lump” (1Co 5:6), carries the word’s figure. Two rarer uses, “red-stained” garments (Isa 63:1) and “the ruthless” (Psa 71:4; Isa 1:17), have no clear tie to the sense.",
+  "words": [
+    {
+      "lemma": "חָמֵץ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "what is leavened, leavened bread",
+      "bdb": [
+        "h.dk.ab"
+      ],
+      "cognate_ids": [
+        "ar-hamuda",
+        "akk-emesu",
+        "arc-hamaa",
+        "uga-hms"
+      ],
+      "summary": "Bread or dough that has risen with leaven (שְׂאֹר), set against מַצּוֹת. Used without the article, often adverbially: “it shall not be baked חָמֵץ” (Lev 6:10), “they shall be baked חָמֵץ” (Lev 23:17).",
+      "senses": [
+        {
+          "id": "hamets-passover",
+          "gloss": "leavened bread (forbidden at Passover)",
+          "definition": "What has been leavened, which Israel might not eat, nor have seen in their borders, for the seven days of מַצּוֹת: the bread of haste out of Egypt was unleavened, so the leavened is shut out of its remembrance.",
+          "evidence": [
+            {
+              "ref": "Exo.12.15",
+              "role": "defining",
+              "note": "Seven days מַצּוֹת are eaten and שְׂאֹר put out of the houses; whoever eats חָמֵץ is cut off from Israel."
+            },
+            {
+              "ref": "Exo.13.7",
+              "role": "defining",
+              "note": "“No חָמֵץ shall be seen with you, and no שְׂאֹר shall be seen with you in all your borders”: the leavened bread beside the leaven that raises it."
+            },
+            {
+              "ref": "Deu.16.3",
+              "role": "defining",
+              "note": "“You shall not eat חָמֵץ with it; seven days you shall eat מַצּוֹת with it, the bread of affliction, for in haste you came out of the land of Egypt.”"
+            },
+            {
+              "ref": "Exo.13.3",
+              "note": "“Remember this day… and no חָמֵץ shall be eaten.”"
+            }
+          ]
+        },
+        {
+          "id": "hamets-offering",
+          "gloss": "leavened (of an offering)",
+          "definition": "Of bread brought to Yahweh, made with leaven. No grain offering burned on the altar might be leavened, nor the blood of the Passover sacrifice offered with it; but leavened loaves came with the thanks offering and as the firstfruits of the feast of weeks, to be eaten and waved, not burned.",
+          "evidence": [
+            {
+              "ref": "Lev.2.11",
+              "role": "defining",
+              "note": "No grain offering brought to Yahweh shall be made חָמֵץ, for no שְׂאֹר or honey may be burned as a fire offering."
+            },
+            {
+              "ref": "Lev.2.12",
+              "note": "As firstfruits they may be brought to Yahweh, but they shall not go up on the altar for a soothing smell."
+            },
+            {
+              "ref": "Lev.6.10",
+              "note": "The priests’ portion of the grain offering “shall not be baked חָמֵץ”; it is most holy."
+            },
+            {
+              "ref": "Lev.7.13",
+              "role": "defining",
+              "note": "With the thanks offering of his peace offerings he brings לֶחֶם חָמֵץ, leavened bread, beside the unleavened cakes of Lev 7:12."
+            },
+            {
+              "ref": "Lev.23.17",
+              "role": "defining",
+              "note": "Two loaves of the wave offering, of fine flour, “they shall be baked חָמֵץ, firstfruits to Yahweh”."
+            },
+            {
+              "ref": "Lev.23.20",
+              "note": "The priest waves them with the lambs; they are holy to Yahweh for the priest."
+            },
+            {
+              "ref": "Exo.23.18",
+              "note": "“You shall not offer the blood of my sacrifice with חָמֵץ.”"
+            },
+            {
+              "ref": "Exo.34.25",
+              "note": "The same, of the sacrifice of the Passover feast."
+            },
+            {
+              "ref": "Amo.4.5",
+              "note": "“Burn a thanks offering of חָמֵץ… for so you love”: Israel burns what Lev 2:11 forbade on the altar."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ζύμη",
+          "gloss": "leaven",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.12.15, חָמֵץ → ζύμην; also Exo.13.3, 23.18, 34.25, Deu.16.3 (ζύμη ×5)"
+            },
+            {
+              "ref": "1Co.5.6",
+              "role": "defining",
+              "note": "“A little ζύμη leavens the whole lump.”"
+            },
+            {
+              "ref": "1Co.5.7",
+              "role": "defining",
+              "note": "“Purge out the old ζύμη… for Christ our Passover was sacrificed for us”: Paul reads Exo 12:15."
+            },
+            {
+              "ref": "1Co.5.8",
+              "note": "Not with old leaven, “the ζύμη of malice and wickedness”, but with unleavened bread of sincerity and truth."
+            },
+            {
+              "ref": "Gal.5.9"
+            },
+            {
+              "ref": "Mat.16.6",
+              "note": "“Beware of the ζύμη of the Pharisees and Sadducees”, which Mat 16:12 explains as their teaching."
+            },
+            {
+              "ref": "Mat.16.12"
+            },
+            {
+              "ref": "Luk.12.1",
+              "note": "“The ζύμη of the Pharisees, which is hypocrisy.”"
+            },
+            {
+              "ref": "Mrk.8.15"
+            },
+            {
+              "ref": "Mat.13.33",
+              "note": "The kingdom of heaven is like ζύμη hidden in three measures of meal until the whole was leavened."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שְׂאֹר",
+            "note": "The leaven itself, the sour dough that raises bread, named beside the leavened bread it makes.",
+            "evidence": [
+              {
+                "ref": "Exo.13.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.12.15"
+              },
+              {
+                "ref": "Lev.2.11"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "מַצָּה",
+            "note": "Unleavened bread, eaten the seven days that חָמֵץ is forbidden.",
+            "evidence": [
+              {
+                "ref": "Deu.16.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.12.15"
+              },
+              {
+                "ref": "Exo.13.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לֶחֶם חָמֵץ",
+            "gloss": "leavened bread",
+            "evidence": [
+              {
+                "ref": "Lev.7.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָמֵץ",
+      "pos": "verb",
+      "gloss": "be sour; of dough, be leavened",
+      "bdb": [
+        "h.dk.aa"
+      ],
+      "cognate_ids": [
+        "ar-hamuda",
+        "akk-emesu",
+        "arc-hamaa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be leavened, rise",
+          "senses": [
+            {
+              "id": "hamets-rise",
+              "gloss": "be leavened, rise (of dough)",
+              "definition": "Of kneaded dough, to turn sour with leaven and rise; the people had no time to wait for it in the night they left Egypt.",
+              "evidence": [
+                {
+                  "ref": "Exo.12.34",
+                  "role": "defining",
+                  "note": "The people took their dough “before it was leavened (יֶחְמָץ)”, their kneading bowls bound in their clothes."
+                },
+                {
+                  "ref": "Exo.12.39",
+                  "role": "defining",
+                  "note": "They baked unleavened cakes of the dough, “for it was not leavened (לֹא חָמֵץ), because they were driven out of Egypt and could not delay”."
+                },
+                {
+                  "ref": "Hos.7.4",
+                  "note": "The adulterers are like an oven the baker stops stirring “from the kneading of the dough until its leavening (חֻמְצָתוֹ)”: passion banked while the dough rises."
+                }
+              ],
+              "kin": [
+                "peshitta-leavened"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "be soured, embittered",
+          "cognate_ids": [
+            "ar-hamid-fuad"
+          ],
+          "senses": [
+            {
+              "gloss": "be soured, embittered (of the heart)",
+              "definition": "Of the heart, to turn sour: the psalmist’s bitterness at the ease of the wicked, which he afterwards calls brutish.",
+              "evidence": [
+                {
+                  "ref": "Psa.73.21",
+                  "role": "defining",
+                  "note": "“When my heart יִתְחַמֵּץ and I was pierced in my kidneys”, after envying the prosperity of the wicked (Psa 73:3)."
+                },
+                {
+                  "ref": "Psa.73.22",
+                  "note": "“I was brutish and did not know; I was a beast before you.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ζυμόω",
+          "gloss": "leaven, cause to rise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.12.39, חָמֵץ → ἐζυμώθη"
+            },
+            {
+              "ref": "1Co.5.6",
+              "role": "defining",
+              "note": "“A little leaven ζυμοῖ the whole lump.”"
+            },
+            {
+              "ref": "Gal.5.9"
+            },
+            {
+              "ref": "Mat.13.33",
+              "note": "“Until the whole was ἐζυμώθη.”"
+            },
+            {
+              "ref": "Luk.13.21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחְמֶצֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "anything leavened",
+      "bdb": [
+        "h.dk.af"
+      ],
+      "cognate_ids": [
+        "ar-hamuda",
+        "arc-hamaa"
+      ],
+      "senses": [
+        {
+          "gloss": "anything leavened",
+          "definition": "Whatever has leaven in it, put with חָמֵץ under the Passover ban: “any מַחְמֶצֶת you shall not eat”.",
+          "evidence": [
+            {
+              "ref": "Exo.12.19",
+              "role": "defining",
+              "note": "No שְׂאֹר shall be found in the houses; whoever eats מַחְמֶצֶת is cut off from the congregation of Israel, stranger or native."
+            },
+            {
+              "ref": "Exo.12.20",
+              "role": "defining",
+              "note": "“You shall eat no מַחְמֶצֶת; in all your dwellings you shall eat מַצּוֹת.”"
+            }
+          ],
+          "kin": [
+            "hamets-passover"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹמֶץ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "vinegar, soured wine",
+      "bdb": [
+        "h.dk.ac"
+      ],
+      "cognate_ids": [
+        "ar-hamuda",
+        "akk-emesu",
+        "arc-hamaa",
+        "uga-hms"
+      ],
+      "senses": [
+        {
+          "gloss": "vinegar",
+          "definition": "Wine or strong drink gone sour: sharp to the teeth, used to dip bread in, given to drink to one who thirsts.",
+          "evidence": [
+            {
+              "ref": "Num.6.3",
+              "role": "defining",
+              "note": "The Nazirite abstains from wine and strong drink, “חֹמֶץ of wine and חֹמֶץ of strong drink”, and all that comes from the vine."
+            },
+            {
+              "ref": "Pro.10.26",
+              "role": "defining",
+              "note": "“As חֹמֶץ to the teeth and smoke to the eyes, so is the sluggard to those who send him.”"
+            },
+            {
+              "ref": "Pro.25.20",
+              "note": "Singing to a heavy heart is like “חֹמֶץ on natron”: the sour against what it fizzes with."
+            },
+            {
+              "ref": "Rut.2.14",
+              "note": "Boaz bids Ruth dip her morsel in the חֹמֶץ at the reapers’ meal."
+            },
+            {
+              "ref": "Psa.69.22",
+              "role": "defining",
+              "note": "“They gave gall for my food, and for my thirst they made me drink חֹמֶץ.”"
+            },
+            {
+              "ref": "Jhn.19.29",
+              "note": "Fulfilling Psa 69:22, they filled a sponge with ὄξος and put it to Jesus’ mouth."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὄξος",
+          "gloss": "sour wine, vinegar",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.69.22, חֹמֶץ → ὄξος; also Num.6.3, Pro.25.20"
+            },
+            {
+              "ref": "Jhn.19.28",
+              "role": "defining",
+              "note": "“That the scripture might be fulfilled, he says, I thirst”: Psa 69:22."
+            },
+            {
+              "ref": "Jhn.19.29",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.19.30"
+            },
+            {
+              "ref": "Mat.27.34",
+              "note": "They gave him ὄξος mingled with gall: both things of Psa 69:22."
+            },
+            {
+              "ref": "Mat.27.48"
+            },
+            {
+              "ref": "Mrk.15.36"
+            },
+            {
+              "ref": "Luk.23.36"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רֹאשׁ",
+            "note": "Gall, the bitter food beside the sour drink.",
+            "evidence": [
+              {
+                "ref": "Psa.69.22",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חֹמֶץ יַיִן",
+            "gloss": "vinegar of wine, wine gone sour",
+            "evidence": [
+              {
+                "ref": "Num.6.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "חֹמֶץ שֵׁכָר",
+            "gloss": "vinegar of strong drink",
+            "evidence": [
+              {
+                "ref": "Num.6.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָמִיץ",
+      "pos": "adjective",
+      "gloss": "salted, savoury (of fodder)",
+      "bdb": [
+        "h.dk.ad"
+      ],
+      "cognate_ids": [
+        "ar-hamd"
+      ],
+      "summary": "Once, of the mash the oxen and asses eat when Yahweh restores the land. Arabic ḥamḍ, the salt and bitter plants camels eat beside sweet pasture, gives the sense: fodder with a sharp, salt taste.",
+      "senses": [
+        {
+          "gloss": "salted, savoury",
+          "definition": "Of fodder, given a sharp or salt taste; in a picture of plenty, the working beasts eat it winnowed clean.",
+          "evidence": [
+            {
+              "ref": "Isa.30.24",
+              "role": "defining",
+              "note": "“The oxen and the young asses that work the ground will eat בְּלִיל חָמִיץ, which has been winnowed with shovel and fork.”"
+            },
+            {
+              "ref": "Isa.30.23",
+              "note": "The setting: rain for the seed, bread of the increase, cattle in large pastures."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בְּלִיל חָמִיץ",
+            "gloss": "salted mash, savoury fodder",
+            "evidence": [
+              {
+                "ref": "Isa.30.24",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָמֵץ",
+      "pos": "verb",
+      "gloss": "be red, stained",
+      "bdb": [
+        "h.dl.aa"
+      ],
+      "summary": "Once, the passive participle חֲמוּץ of garments. The next verses fix the colour: the garments are red (אָדֹם) as of one treading the winepress, spattered with the peoples’ blood. How this ties to “sour, leavened” is not shown: no cognate gives the root a sense of colour, so lexicon-support counts the root’s cognates against it.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "(passive participle) red-stained",
+          "senses": [
+            {
+              "gloss": "red-stained, crimsoned",
+              "definition": "Of garments, stained red; the following verses explain it as the juice of the winepress and the blood of the trodden peoples.",
+              "evidence": [
+                {
+                  "ref": "Isa.63.1",
+                  "role": "defining",
+                  "note": "“Who is this coming from Edom, חֲמוּץ בְּגָדִים from Bozrah?”"
+                },
+                {
+                  "ref": "Isa.63.2",
+                  "role": "defining",
+                  "note": "“Why is your clothing red (אָדֹם), and your garments like one treading in the winepress?”"
+                },
+                {
+                  "ref": "Isa.63.3",
+                  "note": "“Their juice is sprinkled on my garments, and I have stained all my clothing.”"
+                },
+                {
+                  "ref": "Rev.19.13",
+                  "note": "The Word of God comes “clothed with a garment dipped in blood”, treading the winepress (Rev 19:15): taking up Isa 63:1–3."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אָדֹם",
+            "note": "Red: the question of Isa 63:2 restates חֲמוּץ בְּגָדִים.",
+            "evidence": [
+              {
+                "ref": "Isa.63.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חֲמוּץ בְּגָדִים",
+            "gloss": "red-stained of garments",
+            "evidence": [
+              {
+                "ref": "Isa.63.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָמַץ",
+      "pos": "verb",
+      "gloss": "be ruthless, oppress",
+      "bdb": [
+        "h.dm.aa"
+      ],
+      "summary": "Once, the participle חוֹמֵץ, beside the wicked and the unjust. Its tie to “sour” is not shown; one may compare the heart “soured” of Psa 73:21 and Arabic ḥāmiḍ al-fuʾād, “bad of heart in anger”, but no cognate gives the root the sense “oppress”.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "(participle) ruthless, oppressor",
+          "senses": [
+            {
+              "id": "homets-ruthless",
+              "gloss": "ruthless one, oppressor",
+              "definition": "One who deals harshly and wrongly with others, from whose hand the psalmist asks to be rescued.",
+              "evidence": [
+                {
+                  "ref": "Psa.71.4",
+                  "role": "defining",
+                  "note": "“My God, rescue me from the hand of the רָשָׁע, from the grasp of the מְעַוֵּל וְחוֹמֵץ”: the wicked, the unjust and ruthless."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מְעַוֵּל",
+            "note": "The unjust, joined to חוֹמֵץ in one phrase, and both beside רָשָׁע.",
+            "evidence": [
+              {
+                "ref": "Psa.71.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָמוֹץ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the ruthless (or the oppressed)",
+      "bdb": [
+        "h.dm.ab"
+      ],
+      "summary": "Once, in Isaiah’s call to justice. The form is that of עָשׁוֹק, “oppressor” (Jer 22:3), and goes with the participle חוֹמֵץ, “ruthless” (Psa 71:4), so “set right the ruthless”, lead him on the straight way; but the orphan and widow beside it allow “the oppressed”. Its tie to “sour” is not shown.",
+      "senses": [
+        {
+          "gloss": "the ruthless; or the oppressed",
+          "definition": "The object of אַשְּׁרוּ, “lead on, set right”, in a list of just dealings: most likely the oppressor to be set on the right way, possibly the one he wrongs.",
+          "evidence": [
+            {
+              "ref": "Isa.1.17",
+              "role": "defining",
+              "note": "“Learn to do good, seek justice, אַשְּׁרוּ חָמוֹץ, judge the orphan, plead for the widow.”"
+            },
+            {
+              "ref": "Jer.22.3",
+              "note": "“Deliver the robbed from the hand of the עָשׁוֹק”: the same form, of the oppressor."
+            }
+          ],
+          "kin": [
+            "homets-ruthless"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲמַע",
+      "lang": "syc",
+      "root": "חמע",
+      "pos": "verb",
+      "gloss": "be leavened; (aphel) leaven",
+      "summary": "The Peshitta’s ܚܡܥ (ḥmaʿ), the same root with Aramaic ʿ for Hebrew צ. Its New Testament uses it for the leavening of the lump, while its noun “leaven” is ܚܡܝܪܐ (ḥmīrā), of another root.",
+      "cognate_ids": [
+        "ar-hamuda",
+        "arc-hamaa"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be leavened",
+          "senses": [
+            {
+              "id": "peshitta-leavened",
+              "gloss": "be leavened",
+              "definition": "Of meal, to be leavened through.",
+              "evidence": [
+                {
+                  "ref": "Mat.13.33",
+                  "role": "defining",
+                  "note": "Peshitta: leaven hidden in three measures of meal “until the whole of it חמַע”."
+                },
+                {
+                  "ref": "Luk.13.21",
+                  "note": "Peshitta: the same."
+                }
+              ],
+              "kin": [
+                "hamets-rise"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "leaven, make rise",
+          "senses": [
+            {
+              "gloss": "leaven, make rise",
+              "definition": "Of leaven, to work through the whole lump.",
+              "evidence": [
+                {
+                  "ref": "1Co.5.6",
+                  "role": "defining",
+                  "note": "Peshitta: “a little leaven (ḥmīrā) leavens (מַחמַע) the whole lump.”"
+                },
+                {
+                  "ref": "Gal.5.9",
+                  "note": "Peshitta: the same saying, מַחמַע."
+                }
+              ],
+              "kin": [
+                "hamets-rise"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hamuda",
+      "lang": "ar",
+      "form": "حَمُضَ، حَامِضٌ، حُمُوضَةٌ",
+      "translit": "ḥamuḍa, ḥāmiḍ, ḥumūḍa",
+      "gloss": "be sour; sour, acid, tasting like vinegar or sour milk; sourness",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ́"
+      },
+      "note": "Lane: the verb “It was, or became, حَامِض [i.e. acid, sour, sharp or biting to the taste, pungent, or in taste like vinegar or like sour milk]”, said especially of milk; حُمُوضَةٌ is “that which bites the tongue; as the taste of vinegar”. This is the sense of the verb, of חָמֵץ and of חֹמֶץ. Arabic ض (ḍ) shows the older ṣ́ behind צ, as Aramaic ʿ does (arc-hamaa), and ح shows ḥ, not ḫ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 644, حَمُضَ (n9118)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 644, حُمُوضَةٌ (n9125); p. 645, حَامِضٌ (n9130)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000122 ḥmḍ [sour], ARB006346 HamaDa, HEB002357 ḥameṣ"
+        }
+      ]
+    },
+    {
+      "id": "ar-hamd",
+      "lang": "ar",
+      "form": "حَمْضٌ",
+      "translit": "ḥamḍ",
+      "gloss": "salt or bitter pasture plants, eaten by camels after sweet pasture",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ́"
+      },
+      "note": "Lane: “A kind of plant in which is saltness, which camels eat as though it were fruit… what is salt and bitter, of plants”, set against خُلَّة, what is sweet. It answers to the בְּלִיל חָמִיץ, the salted fodder, of Isa 30:24.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 644, حَمْضٌ (n9122)"
+        }
+      ]
+    },
+    {
+      "id": "ar-hamid-fuad",
+      "lang": "ar",
+      "form": "حَامِضُ الفُؤَادِ",
+      "translit": "ḥāmiḍ al-fuʾād",
+      "gloss": "(figurative) sour of heart: altered and bad in mind, in anger",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ́"
+      },
+      "note": "Lane, under حَامِضٌ: “رَجُلٌ حَامِضُ الفُؤَادِ (tropical:) A man whose heart, or mind, is altered and bad, in anger”, and حَامِضُ الرِّئَتَيْنِ, “in a loathing state of mind”. The same figure as the heart that “is soured” in Psa 73:21. The ruthless of Psa 71:4 may be compared, but this is not named on that word.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 645, حَامِضٌ (n9130)"
+        }
+      ]
+    },
+    {
+      "id": "akk-emesu",
+      "lang": "akk",
+      "form": "emēṣu; emṣu",
+      "translit": "emēṣu; emṣu",
+      "gloss": "be sour; sour; (as a noun) sour beer",
+      "relation": "cognate",
+      "note": "The Akkadian loses the first consonant, colouring the vowel to e as it does for an older ḥ (an older ḫ would stand as ḫ), and writes ṣ for צ, which cannot show whether ṣ or ṣ́ stood behind it. emṣu is used of sour beer, as חֹמֶץ is of soured wine.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000095110, emēṣu [be sour] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000023710, emṣu [sour] AJ; armep x000132820, emṣu [sour one] N, “sour beer”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000122 ḥmḍ [sour], AKK002318 emeṣu [sour] V"
+        }
+      ]
+    },
+    {
+      "id": "arc-hamaa",
+      "lang": "arc",
+      "form": "חֲמַע",
+      "translit": "ḥămaʿ",
+      "gloss": "be sour, be leavened; (pael) leaven; (aphel) turn sour, ferment, cause to leaven",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Jewish Aramaic, in the Targum for Hebrew יֶחְמָץ of Exo 12:34 (Targ. O.) and of wine turning to vinegar (Y. Pes. II); Aramaic ע for Hebrew צ is the reflex of an older ṣ́, as Arabic ض is. The Peshitta’s ḥmaʿ is the same word and is entered as a word of the root.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲמַע I",
+          "note": "Targ. O. Ex. 12:34; Y. Pes. II, end, 29c; Pes. 41a; Targ. Y. II Lev. 2:11."
+        }
+      ]
+    },
+    {
+      "id": "uga-hms",
+      "lang": "uga",
+      "form": "𐎈𐎎𐎕",
+      "translit": "ḥmṣ",
+      "gloss": "vinegar",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Given as “vinegar”, and as a verb “be(come) sour”, by the two works below; not yet checked in a Ugaritic dictionary or text. Ugaritic ṣ does not keep ṣ́ apart, so it cannot show which older sound stands behind צ.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎈𐎎𐎕 (ḥmṣ), noun",
+          "note": "“vinegar”; “Compare Hebrew חומץ / חֹמֶץ.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000122 ḥmḍ [sour], UGC001860 ḥmṣ [be(come)] V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "leaven-put-away",
+      "statement": "For the seven days after the Passover Israel ate מַצּוֹת, put שְׂאֹר out of their houses, and whoever ate חָמֵץ or מַחְמֶצֶת was cut off (Exo 12:15, 19–20); no חָמֵץ might be seen in all their borders (Exo 13:7), and the bread was unleavened because they left Egypt in haste (Exo 12:39; Deu 16:3). Nothing leavened went up on Yahweh’s altar, nor was the blood of the Passover offered with it (Lev 2:11; Exo 34:25). Jesus called the teaching of the Pharisees and Sadducees, and their hypocrisy, ζύμη (Mat 16:6, 12; Luk 12:1). Paul, rebuking the Corinthians for tolerating fornication, writes: “a little leaven leavens the whole lump; purge out the old leaven, that you may be a new lump, as you are unleavened; for Christ our Passover was sacrificed for us; therefore let us keep the feast, not with old leaven, nor with the leaven of malice and wickedness, but with the unleavened bread of sincerity and truth” (1Co 5:1–8; Gal 5:9). From the verses: what is sour and works through the whole lump stands for the corruption of sin, false teaching and pretence; the Passover lamb having been sacrificed, those it delivered keep the feast by putting it out of their lives and their fellowship.",
+      "evidence": [
+        {
+          "ref": "Exo.12.15"
+        },
+        {
+          "ref": "Exo.12.19",
+          "to": "Exo.12.20"
+        },
+        {
+          "ref": "Exo.13.7"
+        },
+        {
+          "ref": "Exo.12.39"
+        },
+        {
+          "ref": "Deu.16.3"
+        },
+        {
+          "ref": "Lev.2.11"
+        },
+        {
+          "ref": "Exo.34.25"
+        },
+        {
+          "ref": "Mat.16.6"
+        },
+        {
+          "ref": "Mat.16.12"
+        },
+        {
+          "ref": "Luk.12.1"
+        },
+        {
+          "ref": "1Co.5.1",
+          "to": "1Co.5.8"
+        },
+        {
+          "ref": "Gal.5.9"
+        }
+      ]
+    },
+    {
+      "topic": "leavened-firstfruits",
+      "statement": "Fifty days are counted from the sheaf of firstfruits, and then Israel brings “a new grain offering to Yahweh”: two loaves of fine flour, “baked חָמֵץ, firstfruits to Yahweh”, waved with the lambs of the peace offering and holy to Yahweh for the priest (Lev 23:15–20). Leavened firstfruits might be brought to Yahweh but might not go up on the altar for a soothing smell (Lev 2:11–12). On that day, “when the day of Pentecost was fully come”, the holy spirit was poured out on the apostles and three thousand were added (Act 2:1–4, 41); James writes that the Father “begot us with the word of truth, that we should be a kind of firstfruits of his creatures” (Jas 1:18), and Paul that those who have the firstfruits of the spirit still groan, waiting for the redemption of the body (Rom 8:23). From the verses: the offering of this feast is not the unleavened bread of the altar but the leavened bread of a people; it is accepted and made holy to Yahweh as firstfruits, though what is in it is not yet free of leaven, as those called firstfruits still wait for the redemption of the body.",
+      "evidence": [
+        {
+          "ref": "Lev.23.15",
+          "to": "Lev.23.20"
+        },
+        {
+          "ref": "Lev.2.11",
+          "to": "Lev.2.12"
+        },
+        {
+          "ref": "Act.2.1",
+          "to": "Act.2.4"
+        },
+        {
+          "ref": "Act.2.41"
+        },
+        {
+          "ref": "Jas.1.18"
+        },
+        {
+          "ref": "Rom.8.23"
+        }
+      ]
+    },
+    {
+      "topic": "vinegar-for-thirst",
+      "statement": "The psalmist, hated without cause and eaten up by zeal for Yahweh’s house, says, “they gave gall for my food, and for my thirst they made me drink חֹמֶץ” (Psa 69:5, 10, 22). Jesus applies the first two to himself (Jhn 15:25; 2:17). On the cross, “that the scripture might be fulfilled”, he said “I thirst”, and was given ὄξος on a sponge; when he had received it he said “It is finished” and gave up the spirit (Jhn 19:28–30); earlier he was offered ὄξος mingled with gall (Mat 27:34). From the verses: Psalm 69 is the voice of Christ in his sufferings, and the sour wine given to the dying Son was the last thing the scripture foretold of them before he finished his work.",
+      "evidence": [
+        {
+          "ref": "Psa.69.5"
+        },
+        {
+          "ref": "Psa.69.10"
+        },
+        {
+          "ref": "Psa.69.22"
+        },
+        {
+          "ref": "Jhn.15.25"
+        },
+        {
+          "ref": "Jhn.2.17"
+        },
+        {
+          "ref": "Jhn.19.28",
+          "to": "Jhn.19.30"
+        },
+        {
+          "ref": "Mat.27.34"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (Lev 23:17, חָמֵץ). The database files every token of the spelling חמץ under all of h.dk.aa, h.dk.ab, h.dk.af, h.dl.aa and h.dm.aa at once, so lexicon-support’s use counts for these keys are inflated: the noun חָמֵץ is Exo 12:15; 13:3, 7; 23:18; 34:25; Lev 2:11; 6:10; 7:13; 23:17; Deu 16:3; Amo 4:5; מַחְמֶצֶת is Exo 12:19–20 only; the verb (h.dk.aa) is Exo 12:34, 39, Hos 7:4 (qal) and Psa 73:21 (hithpael); h.dl.aa is Isa 63:1 only and h.dm.aa Psa 71:4 only. h.dk.ae (חֻמְצָה, Hos 7:4, entered under the qal) and m.bn.bb are cross-references with no tokens of their own and are not claimed. Verse numbers are the Hebrew text’s (Lev 6:10 = English 6:17; Psa 69:5, 10, 22 = English 69:4, 9, 21). Kept with unclear links: “red-stained” (Isa 63:1) and “ruthless” (Psa 71:4; Isa 1:17), as homographs of one spelling; no cognate checked gives either sense. Leads not followed: Jastrow’s חֲמַץ “(of colour) red… Pa. put to shame” (Targ. Prov 10:1; 17:21, חִימּוּצָא “shame”) and the Peshitta’s ܚܡܨ “shame” (SEDRA lexemes 1071–1072): with Syriac ṣ, not ʿ, these would show an older ṣ behind צ, a second root in this spelling, perhaps of the reddened face, and might bear on Isa 63:1; not entered until its link is shown. Aramaic חִמְצָא “chick-pea” is not a word of scripture and not entered. The Ugaritic is from Wiktionary and Anderson–Moser only; Fisher 1969 discusses ḥmṣ “vinegar” with Ethiopic forms (OCR around printed pp. 87–88) but the scan could not be checked, so it is not cited. Ge’ez and South Arabian not consulted. Open questions: (1) Isa 1:17 חָמוֹץ is read as “the ruthless” (kin to Psa 71:4), against the orphan-and-widow reading “the oppressed”; (2) the doctrine “leavened-firstfruits” draws the Pentecost loaves to the ecclesia through Act 2 and Jas 1:18; check the reviewer wants that drawn; (3) Mat 27:34 ὄξος is the Received Text’s reading."
+}
