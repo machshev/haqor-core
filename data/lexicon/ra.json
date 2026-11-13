@@ -1,0 +1,2301 @@
+{
+  "id": "ra",
+  "root": "רעע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "evil",
+    "sin",
+    "calamity",
+    "judgment",
+    "good-and-evil",
+    "heart",
+    "breaking"
+  ],
+  "gloss": "be bad, evil; do evil, do harm; bad, evil; evil, calamity; (also) break, shatter",
+  "summary": "רַע is what is bad: bad figs and ill-looking cows, a thing displeasing in someone’s eyes, a sad face, a harmful beast, and above all the evil men do, “the evil in the eyes of Yahweh” (Jer 24:2; Gen 41:3; Neh 2:2; Gen 37:20; Jdg 2:11). It is the opposite of טוֹב, good, and of שָׁלוֹם, peace (Amo 5:14–15; Isa 45:7). The same words name both the wrong a man does and the calamity Yahweh brings on it: “if that nation turns from its רָעָה, I will relent of the רָעָה I planned to do to it” (Jer 18:8). The verb is to be bad or displeasing, and in the hiphil to do evil or do harm. A second verb of the same spelling, “break, shatter” (Psa 2:9; Jer 15:12), is the Aramaic form of the root Hebrew writes רצץ, “crush”; Daniel’s Aramaic uses it of the iron kingdom that breaks all before it (Dan 2:40).",
+  "words": [
+    {
+      "lemma": "רַע",
+      "pos": "adjective",
+      "gloss": "bad, poor; displeasing; sad; harmful; evil, wicked",
+      "bdb": [
+        "t.dq.ac"
+      ],
+      "cognate_ids": [
+        "phn-ra",
+        "ar-raa"
+      ],
+      "summary": "Bad in every way a thing or a person can be: poor in quality, displeasing to someone, sad of face, hurtful, and morally evil. What decides which is the thing it is said of and, often, the phrase “in the eyes of” someone. The database files the adjective, the noun רַע and the noun רָעָה under the same tokens, so its count of uses is that of all three.",
+      "senses": [
+        {
+          "id": "bad-quality",
+          "gloss": "bad, poor, worthless (of things and animals)",
+          "definition": "Of poor quality or condition, unfit for its use: figs too bad to eat, ill-looking cows, bad water, an animal not fit to be vowed. The opposite of טוֹב, good, in the same sense.",
+          "evidence": [
+            {
+              "ref": "Jer.24.2",
+              "role": "defining",
+              "note": "One basket of very good figs, and one of “very רָעוֹת figs, which could not be eaten for רֹעַ”."
+            },
+            {
+              "ref": "Jer.24.3",
+              "note": "“The good figs very good, and the רָעוֹת very רָעוֹת.”"
+            },
+            {
+              "ref": "Gen.41.3",
+              "role": "defining",
+              "note": "Seven other cows “רָעוֹת מַרְאֶה, and thin of flesh”: bad to look at."
+            },
+            {
+              "ref": "Gen.41.19",
+              "note": "“Poor and very רָעוֹת of form … I never saw such for רֹעַ in all the land of Egypt.”"
+            },
+            {
+              "ref": "Lev.27.10",
+              "role": "defining",
+              "note": "A vowed animal is not to be exchanged, “טוֹב בְּרָע אוֹ רַע בְּטוֹב”."
+            },
+            {
+              "ref": "Lev.27.12",
+              "note": "The priest values it “between good and bad”."
+            },
+            {
+              "ref": "2Ki.2.19",
+              "role": "defining",
+              "note": "“The situation of the city is good … but the water is רָעִים and the land miscarries.”"
+            },
+            {
+              "ref": "Num.13.19",
+              "note": "Whether the land “is good or רָעָה”."
+            },
+            {
+              "ref": "Num.20.5",
+              "note": "“This רָע place”: no place of seed, figs, vines or pomegranates, and no water."
+            },
+            {
+              "ref": "Deu.15.21",
+              "note": "A firstling with “any מוּם רָע”, lame or blind, is not to be sacrificed."
+            }
+          ]
+        },
+        {
+          "id": "displeasing",
+          "gloss": "bad, displeasing (in someone’s eyes)",
+          "definition": "Displeasing, unwelcome to someone: “bad in his eyes”, the opposite of “good in his eyes”.",
+          "evidence": [
+            {
+              "ref": "Gen.28.8",
+              "role": "defining",
+              "note": "Esau saw “that the daughters of Canaan were רָעוֹת in the eyes of Isaac his father”."
+            },
+            {
+              "ref": "Jer.40.4",
+              "role": "defining",
+              "note": "“If it is good in your eyes to come with me to Babylon, come … and if it is רַע in your eyes, refrain.”"
+            },
+            {
+              "ref": "Jos.24.15",
+              "note": "“If it is רַע in your eyes to serve Yahweh, choose this day whom you will serve.”"
+            },
+            {
+              "ref": "Num.22.34",
+              "note": "Balaam: “if it is רַע in your eyes, I will turn back.”"
+            },
+            {
+              "ref": "Pro.24.18",
+              "note": "Lest Yahweh see “and it be רַע in his eyes”."
+            }
+          ],
+          "kin": [
+            "qal-displeasing"
+          ]
+        },
+        {
+          "id": "sad",
+          "gloss": "sad, troubled (of face or heart)",
+          "definition": "Of a face or heart: downcast, sad. Nehemiah’s king tells it apart from sickness.",
+          "evidence": [
+            {
+              "ref": "Gen.40.7",
+              "role": "defining",
+              "note": "Joseph to the officials: “Why are your faces רָעִים today?” They had dreamed and had no interpreter."
+            },
+            {
+              "ref": "Neh.2.1",
+              "note": "“I had not been רַע before him.”"
+            },
+            {
+              "ref": "Neh.2.2",
+              "role": "defining",
+              "note": "“Why is your face רָעִים, when you are not sick? This is nothing but רֹעַ of heart.”"
+            },
+            {
+              "ref": "Pro.25.20",
+              "note": "Singing songs “to a לֵב רָע” is like vinegar on soda."
+            },
+            {
+              "ref": "Pro.15.15",
+              "note": "“All the days of the afflicted are רָעִים, but the good of heart has a continual feast.”"
+            }
+          ],
+          "kin": [
+            "roa-sadness",
+            "qal-sad"
+          ]
+        },
+        {
+          "id": "harmful",
+          "gloss": "harmful, hurtful, deadly",
+          "definition": "That does harm: a beast that kills, a disease or boil, a poisonous thing, a sword or famine sent in judgment, and the troubling spirit God sends.",
+          "evidence": [
+            {
+              "ref": "Gen.37.20",
+              "role": "defining",
+              "note": "“We will say, a חַיָּה רָעָה has eaten him.” Also Gen 37:33."
+            },
+            {
+              "ref": "Gen.37.33"
+            },
+            {
+              "ref": "Lev.26.6",
+              "role": "defining",
+              "note": "“I will give peace in the land … and I will remove חַיָּה רָעָה from the land.”"
+            },
+            {
+              "ref": "Ezk.14.21",
+              "role": "defining",
+              "note": "“My four שְׁפָטַי הָרָעִים: sword, famine, חַיָּה רָעָה and plague.”"
+            },
+            {
+              "ref": "Deu.7.15",
+              "note": "“All the רָעִים diseases of Egypt.”"
+            },
+            {
+              "ref": "Deu.28.35",
+              "note": "“A שְׁחִין רָע on the knees and legs, of which you cannot be healed.” Also Job 2:7."
+            },
+            {
+              "ref": "Job.2.7"
+            },
+            {
+              "ref": "2Ki.4.41",
+              "role": "defining",
+              "note": "After the poisoned pot is healed, “there was no דָּבָר רָע in the pot”."
+            },
+            {
+              "ref": "1Sa.16.14",
+              "role": "defining",
+              "note": "“The spirit of Yahweh departed from Saul, and a רוּחַ רָעָה from Yahweh terrified him.”"
+            },
+            {
+              "ref": "1Sa.16.23",
+              "note": "When David played, it was well with Saul, “and the רוּחַ הָרָעָה departed from him”."
+            },
+            {
+              "ref": "Jdg.9.23",
+              "note": "“God sent a רוּחַ רָעָה between Abimelech and the lords of Shechem, and they dealt treacherously.”"
+            }
+          ]
+        },
+        {
+          "id": "wicked",
+          "gloss": "evil, wicked (of persons, hearts, ways, deeds)",
+          "definition": "Morally bad: of people who sin, of the heart and its inclination, and of a way of life or deed that Yahweh condemns.",
+          "evidence": [
+            {
+              "ref": "Gen.13.13",
+              "role": "defining",
+              "note": "“The men of Sodom were רָעִים and sinners against Yahweh exceedingly.”"
+            },
+            {
+              "ref": "Gen.8.21",
+              "role": "defining",
+              "note": "“The יֵצֶר of man’s heart is רַע from his youth.”"
+            },
+            {
+              "ref": "Gen.6.5",
+              "role": "defining",
+              "note": "“Every יֵצֶר of the thoughts of his heart was only רַע all the day.”"
+            },
+            {
+              "ref": "Jer.16.12",
+              "note": "“Each walks after the stubbornness of his לֵב הָרָע, not listening to me.” Also Jer 7:24."
+            },
+            {
+              "ref": "Jer.7.24"
+            },
+            {
+              "ref": "1Sa.25.3",
+              "note": "Nabal “was harsh and רַע מַעֲלָלִים”, evil in his doings, set against his wife “good of understanding”."
+            },
+            {
+              "ref": "Est.7.6",
+              "note": "“An adversary and enemy: this רָע Haman.”"
+            },
+            {
+              "ref": "Num.14.27",
+              "note": "“How long shall I bear with this הָעֵדָה הָרָעָה, who murmur against me?” Also Num 14:35."
+            },
+            {
+              "ref": "Num.14.35"
+            },
+            {
+              "ref": "Jer.18.11",
+              "note": "“Return, each from his דֶּרֶךְ הָרָעָה, and make your ways and your doings good.”"
+            },
+            {
+              "ref": "Zec.1.4",
+              "note": "“Return from your ways הָרָעִים and your doings הָרָעִים.”"
+            }
+          ],
+          "kin": [
+            "evil-done",
+            "wickedness",
+            "hiphil-do-evil"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חַטָּא",
+            "note": "“Sinner”, beside it of the men of Sodom.",
+            "evidence": [
+              {
+                "ref": "Gen.13.13",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "קָשֶׁה",
+            "note": "“Harsh”, beside it of Nabal.",
+            "evidence": [
+              {
+                "ref": "1Sa.25.3"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "טוֹב",
+            "note": "Good, in each of its senses: good and bad figs, a good and a bad animal, good and bad in someone’s eyes.",
+            "evidence": [
+              {
+                "ref": "Jer.24.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.27.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.40.4"
+              },
+              {
+                "ref": "2Ki.2.19"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חַיָּה רָעָה",
+            "gloss": "a harmful (wild) beast",
+            "evidence": [
+              {
+                "ref": "Gen.37.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.26.6"
+              },
+              {
+                "ref": "Ezk.14.21"
+              },
+              {
+                "ref": "Ezk.34.25"
+              }
+            ]
+          },
+          {
+            "phrase": "רוּחַ רָעָה",
+            "gloss": "a bad, troubling spirit (sent by God)",
+            "evidence": [
+              {
+                "ref": "1Sa.16.14",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.16.15"
+              },
+              {
+                "ref": "1Sa.18.10"
+              },
+              {
+                "ref": "1Sa.19.9"
+              },
+              {
+                "ref": "Jdg.9.23"
+              }
+            ]
+          },
+          {
+            "phrase": "רַע עַיִן",
+            "gloss": "evil of eye: grudging, stingy",
+            "evidence": [
+              {
+                "ref": "Pro.23.6",
+                "role": "defining",
+                "note": "“Do not eat the bread of a רַע עָיִן, nor desire his dainties”: he counts what you eat (23:7)."
+              },
+              {
+                "ref": "Pro.28.22",
+                "note": "“The man רַע עַיִן hastens after wealth.”"
+              }
+            ]
+          },
+          {
+            "phrase": "שֵׁם רָע",
+            "gloss": "a bad name, defamation",
+            "evidence": [
+              {
+                "ref": "Deu.22.14",
+                "role": "defining",
+                "note": "A man who “brings out on her a שֵׁם רָע”, saying he did not find her a virgin."
+              },
+              {
+                "ref": "Deu.22.19"
+              }
+            ]
+          },
+          {
+            "phrase": "לֵב רָע",
+            "gloss": "an evil heart; a sad heart",
+            "evidence": [
+              {
+                "ref": "Jer.16.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.25.20"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "πονηρός",
+          "gloss": "bad, evil, wicked",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.9, וָרָע → πονηροῦ; Jer.24.2, רָעוֹת → πονηρά; Gen.37.20, רָעָה → πονηρόν; πονηρός renders רַע ×200"
+            },
+            {
+              "ref": "Mat.7.11",
+              "role": "defining",
+              "note": "“If you, being πονηροί, know how to give good gifts to your children”: the evil in men, as Gen 8:21."
+            },
+            {
+              "ref": "Mat.15.19",
+              "note": "“Out of the heart come διαλογισμοὶ πονηροί”: the heart’s evil thoughts, as Gen 6:5."
+            },
+            {
+              "ref": "Heb.3.12",
+              "note": "“Lest there be in any of you a καρδία πονηρά of unbelief”: the evil heart of Jer 16:12."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רַע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "evil, wrong; harm, trouble",
+      "bdb": [
+        "t.dq.ad"
+      ],
+      "cognate_ids": [
+        "phn-ra"
+      ],
+      "summary": "The adjective used as a noun: evil as what is done, the wrong Israel was to purge from among them and to turn away from; and evil as what is suffered, harm and trouble. With טוֹב it forms “good and evil”, the knowledge of which the first man took to himself. Its tokens are the adjective’s (see there).",
+      "senses": [
+        {
+          "id": "evil-done",
+          "gloss": "evil, wrongdoing",
+          "definition": "What is morally bad, done by men: the evil Yahweh sees and condemns, which those who fear him hate and turn from.",
+          "evidence": [
+            {
+              "ref": "Jdg.2.11",
+              "role": "defining",
+              "note": "“The sons of Israel did הָרַע in the eyes of Yahweh, and served the Baals.”"
+            },
+            {
+              "ref": "Deu.4.25",
+              "note": "Making a carved image “and doing הָרַע in the eyes of Yahweh your God”."
+            },
+            {
+              "ref": "Deu.17.7",
+              "role": "defining",
+              "note": "After the idolater is stoned on two or three witnesses, “you shall purge הָרָע from your midst”."
+            },
+            {
+              "ref": "Deu.13.6",
+              "note": "The prophet who speaks rebellion against Yahweh is to die: “so you shall purge הָרָע from your midst”."
+            },
+            {
+              "ref": "Psa.34.15",
+              "role": "defining",
+              "note": "“סוּר מֵרָע and do good; seek peace and pursue it.”"
+            },
+            {
+              "ref": "Psa.34.17",
+              "note": "“The face of Yahweh is against עֹשֵׂי רָע, to cut off their memory from the earth.”"
+            },
+            {
+              "ref": "Pro.8.13",
+              "role": "defining",
+              "note": "“The fear of Yahweh is to hate רָע.”"
+            },
+            {
+              "ref": "Job.28.28",
+              "role": "defining",
+              "note": "“The fear of the Lord, that is wisdom, and to depart מֵרָע is understanding.”"
+            },
+            {
+              "ref": "Job.1.1",
+              "note": "Job “whole and upright, fearing God and turning away מֵרָע”."
+            },
+            {
+              "ref": "Amo.5.14",
+              "role": "defining",
+              "note": "“Seek good and not רָע, that you may live.”"
+            },
+            {
+              "ref": "Amo.5.15",
+              "role": "defining",
+              "note": "“Hate רָע and love good, and establish justice in the gate.”"
+            },
+            {
+              "ref": "Isa.5.20",
+              "role": "defining",
+              "note": "“Woe to those who call רָע good and good רָע, who put darkness for light.”"
+            },
+            {
+              "ref": "Mic.3.2",
+              "note": "Israel’s rulers, “haters of good and lovers of רָע”. The brief files this token under רוע by its spelling; it is this word."
+            },
+            {
+              "ref": "Pro.3.7",
+              "note": "“Fear Yahweh and turn away מֵרָע.”"
+            },
+            {
+              "ref": "Psa.37.27",
+              "note": "“Depart מֵרָע and do good, and dwell for ever.”"
+            }
+          ],
+          "kin": [
+            "wicked",
+            "wickedness",
+            "hiphil-do-evil"
+          ]
+        },
+        {
+          "id": "good-and-evil",
+          "gloss": "(with טוֹב) good and evil",
+          "definition": "“Good and evil” together: to know them is to judge what is good and what is bad, a discernment children do not yet have and the old lose, which kings and judges need; to speak “from good to evil” is to say anything at all.",
+          "evidence": [
+            {
+              "ref": "Gen.2.9",
+              "role": "defining",
+              "note": "“The tree of the knowledge of טוֹב וָרָע” in the midst of the garden."
+            },
+            {
+              "ref": "Gen.2.17",
+              "role": "defining",
+              "note": "“Of the tree of the knowledge of טוֹב וָרָע you shall not eat, for in the day you eat of it, dying you shall die.”"
+            },
+            {
+              "ref": "Gen.3.5",
+              "note": "The serpent: “you will be like God, knowing טוֹב וָרָע”."
+            },
+            {
+              "ref": "Gen.3.22",
+              "role": "defining",
+              "note": "“The man has become like one of us, to know טוֹב וָרָע”; and he is sent from the tree of life."
+            },
+            {
+              "ref": "Deu.1.39",
+              "role": "defining",
+              "note": "“Your sons who today do not know טוֹב וָרָע” shall go into the land."
+            },
+            {
+              "ref": "Isa.7.15",
+              "note": "The child will eat curds and honey “until he knows to refuse בָּרָע and choose the good”. Also Isa 7:16."
+            },
+            {
+              "ref": "Isa.7.16"
+            },
+            {
+              "ref": "2Sa.19.36",
+              "role": "defining",
+              "note": "Barzillai at eighty: “Can I know between good and רָע? Can your servant taste what I eat?”"
+            },
+            {
+              "ref": "1Ki.3.9",
+              "role": "defining",
+              "note": "Solomon asks “a hearing heart to judge your people, to discern between good and רָע”."
+            },
+            {
+              "ref": "2Sa.14.17",
+              "note": "“As the angel of God, so is my lord the king, to hear הַטּוֹב וְהָרָע.”"
+            },
+            {
+              "ref": "Gen.31.24",
+              "role": "defining",
+              "note": "God to Laban: “take heed that you speak not to Jacob מִטּוֹב עַד רָע”: say nothing at all against him. Also Gen 31:29."
+            },
+            {
+              "ref": "Gen.31.29"
+            },
+            {
+              "ref": "2Sa.13.22",
+              "note": "“Absalom spoke to Amnon neither לְמֵרָע nor to good.”"
+            }
+          ]
+        },
+        {
+          "id": "harm",
+          "gloss": "harm, trouble, calamity",
+          "definition": "Evil as suffered: harm done to someone, and the trouble and calamity that come on a man or a people, which Yahweh both sends and keeps his own from.",
+          "evidence": [
+            {
+              "ref": "Isa.45.7",
+              "role": "defining",
+              "note": "“Forming light and creating darkness, making שָׁלוֹם and creating רָע: I am Yahweh, doing all these.”"
+            },
+            {
+              "ref": "Job.2.10",
+              "role": "defining",
+              "note": "“Shall we receive good from God, and not receive הָרָע?” In all this Job did not sin with his lips."
+            },
+            {
+              "ref": "Gen.31.29",
+              "note": "Laban: “It is in the power of my hand to do you רָע.”"
+            },
+            {
+              "ref": "Psa.23.4",
+              "role": "defining",
+              "note": "“Though I walk through the valley of deep darkness, I will fear no רָע, for you are with me.”"
+            },
+            {
+              "ref": "Psa.121.7",
+              "note": "“Yahweh will keep you from all רָע; he will keep your soul.”"
+            },
+            {
+              "ref": "Gen.48.16",
+              "note": "“The angel who redeemed me from all רָע, bless the lads.”"
+            },
+            {
+              "ref": "Pro.12.21",
+              "note": "“No harm happens to the righteous, but the wicked are filled with רָע.”"
+            },
+            {
+              "ref": "Jer.42.6",
+              "note": "“Whether טוֹב or רָע, we will obey the voice of Yahweh our God.”"
+            },
+            {
+              "ref": "Pro.20.22",
+              "note": "“Do not say, I will repay רָע; wait for Yahweh, and he will save you.”"
+            }
+          ],
+          "kin": [
+            "calamity"
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "טוֹב",
+            "note": "Good, set against it as what to love and seek, and as the good that comes from God.",
+            "evidence": [
+              {
+                "ref": "Amo.5.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.5.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.2.10"
+              },
+              {
+                "ref": "Gen.2.9"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁלוֹם",
+            "note": "Peace, wellbeing, set against the רָע Yahweh creates.",
+            "evidence": [
+              {
+                "ref": "Isa.45.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָשָׂה הָרַע בְּעֵינֵי יַהְוֶה",
+            "gloss": "do the evil in the eyes of Yahweh",
+            "evidence": [
+              {
+                "ref": "Jdg.2.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.25"
+              },
+              {
+                "ref": "1Ki.11.6"
+              },
+              {
+                "ref": "2Ki.21.2"
+              },
+              {
+                "ref": "2Ki.24.9"
+              }
+            ]
+          },
+          {
+            "phrase": "וּבִעַרְתָּ הָרָע מִקִּרְבֶּךָ",
+            "gloss": "so you shall purge the evil from your midst",
+            "evidence": [
+              {
+                "ref": "Deu.17.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.13.6"
+              },
+              {
+                "ref": "Deu.19.19"
+              },
+              {
+                "ref": "Deu.21.21"
+              },
+              {
+                "ref": "Deu.22.21"
+              },
+              {
+                "ref": "Deu.24.7"
+              }
+            ]
+          },
+          {
+            "phrase": "סוּר מֵרָע",
+            "gloss": "turn away from evil",
+            "evidence": [
+              {
+                "ref": "Psa.34.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.37.27"
+              },
+              {
+                "ref": "Job.1.1"
+              },
+              {
+                "ref": "Job.28.28"
+              },
+              {
+                "ref": "Pro.3.7"
+              },
+              {
+                "ref": "Pro.16.6"
+              }
+            ]
+          },
+          {
+            "phrase": "טוֹב וָרָע",
+            "gloss": "good and evil",
+            "evidence": [
+              {
+                "ref": "Gen.2.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.1.39"
+              },
+              {
+                "ref": "1Ki.3.9"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κακός",
+          "gloss": "bad, evil; (neuter) evil, harm",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.34.15, מֵרָע → κακοῦ; Psa.34.17, רָע → κακά; Isa.45.7, רָע → κακά; Job.2.10, הָרָע → κακά"
+            },
+            {
+              "ref": "1Pe.3.10",
+              "role": "defining",
+              "note": "Peter quotes Psa 34:13–17: “let him keep his tongue ἀπὸ κακοῦ”, “let him turn away ἀπὸ κακοῦ and do good”, “the face of the Lord is against those ποιοῦντας κακά”."
+            },
+            {
+              "ref": "1Pe.3.11",
+              "role": "defining"
+            },
+            {
+              "ref": "1Pe.3.12"
+            },
+            {
+              "ref": "Heb.5.14",
+              "role": "defining",
+              "note": "The mature have their senses trained “to discern both καλοῦ and κακοῦ”: the knowledge of good and evil as ripened discernment."
+            },
+            {
+              "ref": "Rom.12.17",
+              "note": "“Repay no one κακὸν ἀντὶ κακοῦ”: Pro 20:22’s “do not say, I will repay רָע”. Also 1Th 5:15."
+            },
+            {
+              "ref": "1Th.5.15"
+            },
+            {
+              "ref": "Rom.16.19",
+              "note": "“Wise as to the good, innocent εἰς τὸ κακόν”: the reverse of Jer 4:22, “wise to do evil, but to do good they do not know”."
+            }
+          ]
+        },
+        {
+          "lemma": "πονηρός",
+          "gloss": "evil; (neuter) the evil",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.17.7, הָרָע → τὸν πονηρόν; Amo.5.15, רָע → πονηρά; Gen.2.17, רָע → πονηρόν"
+            },
+            {
+              "ref": "1Co.5.13",
+              "role": "defining",
+              "note": "“Put away τὸν πονηρόν from among yourselves”: Deuteronomy’s “purge הָרָע from your midst” (Deu 17:7), applied to a member of the ecclesia living in sin."
+            },
+            {
+              "ref": "Rom.12.9",
+              "note": "“Abhorring τὸ πονηρόν, cleaving to the good”: Amo 5:15’s “hate רָע and love good”."
+            },
+            {
+              "ref": "Mat.6.13",
+              "note": "“Deliver us ἀπὸ τοῦ πονηροῦ”, from evil: the prayer of Gen 48:16 and Psa 121:7, to be kept from all evil."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רָעָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "evil, wickedness; harm; calamity, disaster, misfortune",
+      "bdb": [
+        "t.dq.ae"
+      ],
+      "cognate_ids": [
+        "phn-ra"
+      ],
+      "summary": "The feminine noun: the wickedness men do, the harm they plan against one another, and the calamity Yahweh brings. The prophets set the two side by side: when a people turns from its רָעָה, Yahweh relents of the רָעָה he had spoken against it (Jer 18:8; Jon 3:10). Its tokens are the adjective’s (see there).",
+      "senses": [
+        {
+          "id": "wickedness",
+          "gloss": "wickedness, evil (done)",
+          "definition": "The evil a man or a people does, which God sees and calls to account.",
+          "evidence": [
+            {
+              "ref": "Gen.6.5",
+              "role": "defining",
+              "note": "“Yahweh saw that רָעַת הָאָדָם was great in the earth.”"
+            },
+            {
+              "ref": "Gen.39.9",
+              "role": "defining",
+              "note": "Joseph: “How can I do this great רָעָה and sin against God?”"
+            },
+            {
+              "ref": "Jon.1.2",
+              "role": "defining",
+              "note": "“Cry against Nineveh, for their רָעָה has come up before me.”"
+            },
+            {
+              "ref": "Jon.3.8",
+              "note": "“Let them turn, each from his דֶּרֶךְ הָרָעָה, and from the violence in their hands.”"
+            },
+            {
+              "ref": "Jer.18.8",
+              "role": "defining",
+              "note": "“If that nation turns מֵרָעָתוֹ…”: its own wickedness, before the רָעָה Yahweh planned."
+            },
+            {
+              "ref": "Jer.2.13",
+              "note": "“My people have done two רָעוֹת: they have forsaken me, the fountain of living waters.”"
+            },
+            {
+              "ref": "Jer.2.19",
+              "note": "“Your own רָעָה will chasten you.”"
+            },
+            {
+              "ref": "Hos.7.2",
+              "note": "“They do not say in their heart that I remember all their רָעָה.”"
+            },
+            {
+              "ref": "Job.22.5",
+              "note": "“Is not your רָעָה great, and no end to your iniquities?”"
+            }
+          ],
+          "kin": [
+            "evil-done",
+            "wicked"
+          ]
+        },
+        {
+          "id": "harm-intended",
+          "gloss": "harm (planned against someone)",
+          "definition": "Harm one person means or does to another, often set against the good that is due.",
+          "evidence": [
+            {
+              "ref": "Gen.50.20",
+              "role": "defining",
+              "note": "“You meant רָעָה against me; God meant it for טוֹבָה, to keep many people alive.”"
+            },
+            {
+              "ref": "1Sa.25.21",
+              "role": "defining",
+              "note": "David of Nabal: “he has returned me רָעָה for טוֹבָה”."
+            },
+            {
+              "ref": "Pro.17.13",
+              "role": "defining",
+              "note": "“Whoever returns רָעָה for good, רָעָה will not depart from his house”: the harm done comes back as harm suffered."
+            },
+            {
+              "ref": "Jer.18.20",
+              "note": "Jeremiah: “Shall רָעָה be repaid for good? They have dug a pit for my life.”"
+            },
+            {
+              "ref": "1Sa.20.7",
+              "note": "“If he is angry, know that הָרָעָה is determined by him.” Also 1Sa 20:9."
+            },
+            {
+              "ref": "1Sa.20.9"
+            },
+            {
+              "ref": "Est.7.7",
+              "note": "Haman saw “that הָרָעָה was determined against him by the king”."
+            },
+            {
+              "ref": "Est.9.2",
+              "note": "To lay hands on “those who sought their רָעָה”."
+            },
+            {
+              "ref": "Neh.6.2",
+              "note": "“They thought to do me רָעָה.”"
+            }
+          ]
+        },
+        {
+          "id": "calamity",
+          "gloss": "calamity, disaster, misfortune",
+          "definition": "Evil that befalls: disaster on a city or a people, which Yahweh plans, brings, and relents of; and in Ecclesiastes the misfortunes of life under the sun.",
+          "evidence": [
+            {
+              "ref": "Amo.3.6",
+              "role": "defining",
+              "note": "“Shall there be רָעָה in a city, and Yahweh has not done it?”"
+            },
+            {
+              "ref": "Jer.18.8",
+              "role": "defining",
+              "note": "“I will relent of הָרָעָה that I thought to do to it.”"
+            },
+            {
+              "ref": "Jer.18.11",
+              "role": "defining",
+              "note": "“Behold, I am forming רָעָה against you and devising a plan against you; return each from his evil way.”"
+            },
+            {
+              "ref": "Jon.3.10",
+              "role": "defining",
+              "note": "“God saw that they turned from their evil way, and God relented of הָרָעָה that he had said he would do to them, and did not do it.”"
+            },
+            {
+              "ref": "Exo.32.14",
+              "note": "“Yahweh relented of הָרָעָה which he spoke of doing to his people.” Also Exo 32:12."
+            },
+            {
+              "ref": "Exo.32.12"
+            },
+            {
+              "ref": "Lam.3.38",
+              "role": "defining",
+              "note": "“Out of the mouth of the Most High do not הָרָעוֹת and the good proceed?”"
+            },
+            {
+              "ref": "Mic.2.3",
+              "note": "“Behold, I am devising רָעָה against this family … for it is an עֵת רָעָה.”"
+            },
+            {
+              "ref": "Jer.1.14",
+              "note": "“Out of the north הָרָעָה shall break forth on all the inhabitants of the land.”"
+            },
+            {
+              "ref": "2Ki.22.16",
+              "note": "“Behold, I am bringing רָעָה on this place.”"
+            },
+            {
+              "ref": "Jer.45.5",
+              "note": "“I am bringing רָעָה on all flesh, but I will give you your life as a prize.”"
+            },
+            {
+              "ref": "Gen.44.34",
+              "note": "Judah: “lest I see הָרָעָה that will find my father”."
+            },
+            {
+              "ref": "1Sa.6.9",
+              "note": "The Philistines: if the cart goes toward Beth-shemesh, Yahweh “has done us this great רָעָה”."
+            },
+            {
+              "ref": "Psa.27.5",
+              "note": "“In the day of רָעָה he will hide me in his shelter.”"
+            },
+            {
+              "ref": "Ecc.5.12",
+              "note": "“There is a רָעָה חוֹלָה I have seen under the sun: riches kept to their owner’s hurt.”"
+            },
+            {
+              "ref": "Ecc.12.1",
+              "note": "“Remember your Creator … before the יְמֵי הָרָעָה come.”"
+            },
+            {
+              "ref": "1Ch.7.23",
+              "note": "Ephraim names his son Beriah, “because it was בְּרָעָה in his house”: his sons had been killed (7:21)."
+            }
+          ],
+          "kin": [
+            "harm"
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "טוֹבָה",
+            "note": "Good done, set against the harm returned for it.",
+            "evidence": [
+              {
+                "ref": "Gen.50.20",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.25.21"
+              },
+              {
+                "ref": "Pro.17.13"
+              },
+              {
+                "ref": "Jer.18.20"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נִחַם עַל הָרָעָה",
+            "gloss": "relent of the calamity",
+            "evidence": [
+              {
+                "ref": "Exo.32.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.18.8"
+              },
+              {
+                "ref": "Jer.26.19"
+              },
+              {
+                "ref": "Jol.2.13"
+              },
+              {
+                "ref": "Jon.3.10"
+              },
+              {
+                "ref": "Jon.4.2"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוּב מִדַּרְכּוֹ הָרָעָה",
+            "gloss": "turn from one’s evil way",
+            "evidence": [
+              {
+                "ref": "Jer.18.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.25.5"
+              },
+              {
+                "ref": "Jer.26.3"
+              },
+              {
+                "ref": "Jon.3.8"
+              },
+              {
+                "ref": "Jon.3.10"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵבִיא רָעָה עַל",
+            "gloss": "bring calamity on",
+            "evidence": [
+              {
+                "ref": "2Ki.22.16",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.21.21"
+              },
+              {
+                "ref": "2Ki.21.12"
+              },
+              {
+                "ref": "Jer.11.11"
+              },
+              {
+                "ref": "Jer.45.5"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κακία",
+          "gloss": "badness; trouble, evil",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Amo.3.6, רָעָה → κακία; Jon.3.10, הָרָעָה → κακίᾳ; κακία renders רָעָה ×69"
+            },
+            {
+              "ref": "Mat.6.34",
+              "role": "defining",
+              "note": "“Sufficient for the day is its own κακία”: the day’s trouble, the calamity sense of רָעָה."
+            },
+            {
+              "ref": "Act.8.22",
+              "note": "“Repent of this your κακία”: wickedness."
+            }
+          ]
+        },
+        {
+          "lemma": "κακός",
+          "gloss": "evil, harm",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.18.8, רָעָתוֹ, הָרָעָה → κακῶν; Lam.3.38, הָרָעוֹת → τὰ κακά; κακός renders רָעָה ×134"
+            },
+            {
+              "ref": "Rom.12.17",
+              "note": "“Repay no one κακὸν ἀντὶ κακοῦ”: the רָעָה תַּחַת טוֹבָה of Pro 17:13 and 1Sa 25:21 forbidden even in return for evil."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רָעַע",
+      "pos": "verb",
+      "gloss": "be bad, displeasing; be grudging; (hiphil) do evil, do harm",
+      "bdb": [
+        "t.dq.af"
+      ],
+      "cognate_ids": [
+        "phn-ra"
+      ],
+      "summary": "In the qal, for a thing to be bad, mostly “bad in someone’s eyes”: displeasing, grievous. Of an eye or heart, to be grudging toward a brother in need. The hiphil is to do evil, as a sinner does, or to do harm to someone, as the Egyptians did to Israel and as Yahweh does in judgment; its participle מְרֵעִים is “evildoers”. With הֵיטִיב, “do good”, it means to do anything at all. The database files this verb and רָעַע “break” under the same tokens.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be bad, displeasing (in someone’s eyes); be grudging; be sad",
+          "senses": [
+            {
+              "id": "qal-displeasing",
+              "gloss": "be bad, displeasing, grievous (in someone’s eyes)",
+              "definition": "For a matter to be bad in someone’s eyes: to grieve, displease or anger him. Of Yahweh, a deed he condemns.",
+              "evidence": [
+                {
+                  "ref": "Gen.21.11",
+                  "role": "defining",
+                  "note": "“The matter וַיֵּרַע very much in Abraham’s eyes, on account of his son.”"
+                },
+                {
+                  "ref": "Gen.21.12",
+                  "note": "God: “Let it not יֵרַע in your eyes because of the lad.”"
+                },
+                {
+                  "ref": "Gen.48.17",
+                  "note": "Joseph saw his father lay his right hand on Ephraim, “וַיֵּרַע in his eyes”."
+                },
+                {
+                  "ref": "1Sa.8.6",
+                  "role": "defining",
+                  "note": "“The thing וַיֵּרַע in the eyes of Samuel, when they said, Give us a king.”"
+                },
+                {
+                  "ref": "1Sa.18.8",
+                  "note": "Saul was very angry, “and this saying וַיֵּרַע in his eyes”."
+                },
+                {
+                  "ref": "2Sa.11.25",
+                  "note": "David to Joab: “Let not this thing יֵרַע in your eyes, for the sword devours one as well as another.”"
+                },
+                {
+                  "ref": "2Sa.11.27",
+                  "role": "defining",
+                  "note": "“The thing that David had done וַיֵּרַע in the eyes of Yahweh.”"
+                },
+                {
+                  "ref": "Gen.38.10",
+                  "note": "What Onan did “וַיֵּרַע in the eyes of Yahweh, and he killed him also”."
+                },
+                {
+                  "ref": "Isa.59.15",
+                  "note": "“Yahweh saw, וַיֵּרַע in his eyes that there was no justice.”"
+                },
+                {
+                  "ref": "1Ch.21.7",
+                  "note": "God was displeased with the numbering, “and he struck Israel”."
+                },
+                {
+                  "ref": "Neh.2.10",
+                  "note": "Sanballat and Tobiah heard, “וַיֵּרַע to them, a great רָעָה, that a man had come to seek the good of Israel”."
+                },
+                {
+                  "ref": "Neh.13.8",
+                  "note": "“It וַיֵּרַע to me greatly, and I threw out all Tobiah’s household goods.”"
+                },
+                {
+                  "ref": "Jon.4.1",
+                  "role": "defining",
+                  "note": "When God spared Nineveh, “וַיֵּרַע to Jonah רָעָה גְדוֹלָה, and he was angry”."
+                },
+                {
+                  "ref": "Psa.106.32",
+                  "note": "At Meribah “וַיֵּרַע for Moses because of them”: it went badly with him."
+                }
+              ],
+              "kin": [
+                "displeasing"
+              ]
+            },
+            {
+              "id": "qal-grudging",
+              "gloss": "(of eye or heart) be grudging, begrudge",
+              "definition": "Of a person’s eye or heart toward another: to be mean and grudging, to withhold from him.",
+              "evidence": [
+                {
+                  "ref": "Deu.15.9",
+                  "role": "defining",
+                  "note": "Lest, as the year of release nears, “וְרָעָה עֵינְךָ against your poor brother, and you give him nothing”."
+                },
+                {
+                  "ref": "Deu.15.10",
+                  "role": "defining",
+                  "note": "“You shall surely give to him, and לֹא יֵרַע לְבָבְךָ when you give to him.”"
+                },
+                {
+                  "ref": "Deu.28.54",
+                  "role": "defining",
+                  "note": "In the siege “his eye תֵּרַע against his brother and the wife of his bosom”: he will not share the flesh of his children (28:55)."
+                },
+                {
+                  "ref": "Deu.28.56"
+                }
+              ]
+            },
+            {
+              "id": "qal-sad",
+              "gloss": "(of the face) be sad",
+              "definition": "Of a face, to be downcast.",
+              "evidence": [
+                {
+                  "ref": "Neh.2.3",
+                  "role": "defining",
+                  "note": "“Why should my face not יֵרְעוּ, when the city of my fathers’ graves lies waste?”"
+                }
+              ],
+              "kin": [
+                "sad"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "suffer harm",
+          "senses": [
+            {
+              "gloss": "suffer harm, come to grief",
+              "definition": "To be harmed, of one who acts foolishly.",
+              "evidence": [
+                {
+                  "ref": "Pro.11.15",
+                  "role": "defining",
+                  "note": "“רַע יֵרוֹעַ, he will surely suffer for it, who is surety for a stranger.”"
+                },
+                {
+                  "ref": "Pro.13.20",
+                  "role": "defining",
+                  "note": "“He who walks with the wise becomes wise, but רֹעֶה כְסִילִים יֵרוֹעַ”: the companion of fools will be harmed, a play on רֹעֶה “companion”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "do evil; do harm to, afflict, treat badly",
+          "senses": [
+            {
+              "id": "hiphil-do-evil",
+              "gloss": "do evil, act wickedly; (participle) evildoers",
+              "definition": "To act wickedly, as a way of life; its participle מְרֵעִים, “those who do evil”, is the common word for evildoers.",
+              "evidence": [
+                {
+                  "ref": "Gen.19.7",
+                  "role": "defining",
+                  "note": "Lot to the men of Sodom: “Please, my brothers, do not תָּרֵעוּ.” Also Jdg 19:23."
+                },
+                {
+                  "ref": "Jdg.19.23"
+                },
+                {
+                  "ref": "Isa.1.16",
+                  "role": "defining",
+                  "note": "“Remove the רֹעַ of your doings from before my eyes; cease הָרֵעַ, learn to do good.”"
+                },
+                {
+                  "ref": "Jer.4.22",
+                  "role": "defining",
+                  "note": "“They are wise לְהָרַע, but to do good they do not know.”"
+                },
+                {
+                  "ref": "Jer.13.23",
+                  "role": "defining",
+                  "note": "“Can the Cushite change his skin, or the leopard his spots? Then may you also do good, who are accustomed הָרֵעַ.”"
+                },
+                {
+                  "ref": "Jer.7.26",
+                  "note": "“They stiffened their neck; they הֵרֵעוּ more than their fathers.” Also Jer 16:12."
+                },
+                {
+                  "ref": "Jer.16.12"
+                },
+                {
+                  "ref": "1Ki.14.9",
+                  "note": "Jeroboam “וַתָּרַע to do more than all who were before you, and made other gods”."
+                },
+                {
+                  "ref": "Isa.1.4",
+                  "role": "defining",
+                  "note": "“A sinning nation, a people heavy with iniquity, a seed of מְרֵעִים, sons who corrupt.”"
+                },
+                {
+                  "ref": "Psa.37.1",
+                  "note": "“Do not fret because of מְרֵעִים.”"
+                },
+                {
+                  "ref": "Psa.37.9",
+                  "role": "defining",
+                  "note": "“מְרֵעִים shall be cut off, but those who wait for Yahweh shall inherit the land.”"
+                },
+                {
+                  "ref": "Psa.22.17",
+                  "note": "“Dogs have surrounded me; a company of מְרֵעִים has enclosed me.”"
+                },
+                {
+                  "ref": "Psa.119.115",
+                  "note": "“Depart from me, מְרֵעִים, that I may keep the commandments of my God.”"
+                },
+                {
+                  "ref": "Jer.23.14",
+                  "note": "The prophets “strengthen the hands of מְרֵעִים, so that none turns from his evil”."
+                },
+                {
+                  "ref": "Job.8.20",
+                  "note": "“God will not reject the whole, nor take מְרֵעִים by the hand.”"
+                },
+                {
+                  "ref": "1Ch.21.17",
+                  "note": "David: “I am he who sinned, וְהָרֵעַ הֲרֵעוֹתִי; but these sheep, what have they done?”"
+                },
+                {
+                  "ref": "1Sa.12.25",
+                  "note": "“If you הָרֵעַ תָּרֵעוּ, you shall be swept away, you and your king.”"
+                }
+              ],
+              "kin": [
+                "evil-done",
+                "wicked"
+              ]
+            },
+            {
+              "id": "hiphil-do-harm",
+              "gloss": "do harm to, afflict, treat badly",
+              "definition": "To bring harm or trouble on someone: of men who mistreat others, and of Yahweh in affliction and judgment.",
+              "evidence": [
+                {
+                  "ref": "Deu.26.6",
+                  "role": "defining",
+                  "note": "“The Egyptians וַיָּרֵעוּ us and afflicted us and laid on us hard labour.” Also Num 20:15."
+                },
+                {
+                  "ref": "Num.20.15"
+                },
+                {
+                  "ref": "Gen.31.7",
+                  "role": "defining",
+                  "note": "Laban changed Jacob’s wages ten times, “but God did not allow him לְהָרַע עִמָּדִי”."
+                },
+                {
+                  "ref": "Gen.43.6",
+                  "note": "Israel: “Why did you treat me so badly as to tell the man you had another brother?”"
+                },
+                {
+                  "ref": "Exo.5.23",
+                  "note": "“Since I came to Pharaoh, he הֵרַע to this people.”"
+                },
+                {
+                  "ref": "Exo.5.22",
+                  "role": "defining",
+                  "note": "Moses to Yahweh: “Why have you הֲרֵעֹתָה this people?”"
+                },
+                {
+                  "ref": "Num.11.11",
+                  "note": "Moses: “Why have you dealt ill with your servant?”"
+                },
+                {
+                  "ref": "Num.16.15",
+                  "note": "“I have not taken one donkey from them, nor הֲרֵעֹתִי one of them.”"
+                },
+                {
+                  "ref": "Rut.1.21",
+                  "role": "defining",
+                  "note": "Naomi: “Yahweh has testified against me, and שַׁדַּי הֵרַע לִי.”"
+                },
+                {
+                  "ref": "1Ki.17.20",
+                  "note": "Elijah: “Have you brought evil on the widow, by killing her son?”"
+                },
+                {
+                  "ref": "Jos.24.20",
+                  "note": "If you serve foreign gods, “he will turn וְהֵרַע לָכֶם and consume you, after doing you good”."
+                },
+                {
+                  "ref": "Jer.31.28",
+                  "role": "defining",
+                  "note": "“As I watched over them to pluck up, to break down, to overthrow, to destroy וּלְהָרֵעַ, so I will watch over them to build and to plant.”"
+                },
+                {
+                  "ref": "Zec.8.14",
+                  "note": "“As I purposed לְהָרַע לָכֶם when your fathers provoked me … so I purpose now to do good.”"
+                },
+                {
+                  "ref": "Mic.4.6",
+                  "note": "“I will gather the lame … and her whom הֲרֵעֹתִי.”"
+                },
+                {
+                  "ref": "Psa.105.15",
+                  "note": "“Do not touch my anointed ones, and to my prophets do no harm.” Also 1Ch 16:22."
+                },
+                {
+                  "ref": "Isa.11.9",
+                  "role": "defining",
+                  "note": "“They shall not יָרֵעוּ nor destroy in all my holy mountain, for the earth shall be full of the knowledge of Yahweh.” Also Isa 65:25."
+                },
+                {
+                  "ref": "Isa.65.25"
+                },
+                {
+                  "ref": "Psa.74.3",
+                  "note": "“All the evil the enemy הֵרַע in the sanctuary.”"
+                },
+                {
+                  "ref": "Psa.15.4",
+                  "note": "He “swears לְהָרַע and does not change”: to his own hurt."
+                }
+              ]
+            },
+            {
+              "id": "good-or-evil",
+              "gloss": "(with הֵיטִיב) do good or do evil: do anything",
+              "definition": "Paired with הֵיטִיב, “do good”, the two together mean any act whatever; to deny both is to deny that one can act at all.",
+              "evidence": [
+                {
+                  "ref": "Lev.5.4",
+                  "role": "defining",
+                  "note": "A person who swears rashly “לְהָרַע אוֹ לְהֵיטִיב”: to do anything."
+                },
+                {
+                  "ref": "Isa.41.23",
+                  "role": "defining",
+                  "note": "To the idols: “Do good, or do evil, that we may see it together.”"
+                },
+                {
+                  "ref": "Jer.10.5",
+                  "note": "“Do not fear them, for they cannot do evil, nor is it in them to do good.”"
+                },
+                {
+                  "ref": "Zep.1.12",
+                  "role": "defining",
+                  "note": "Those who say in their heart, “Yahweh will not do good, nor will he do evil”: that he does nothing."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עִנָּה",
+            "note": "“Afflict”, beside the hiphil of the Egyptians’ treatment of Israel.",
+            "evidence": [
+              {
+                "ref": "Deu.26.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הִשְׁחִית",
+            "note": "“Destroy, corrupt”, beside it in Isaiah’s holy mountain.",
+            "evidence": [
+              {
+                "ref": "Isa.11.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.65.25"
+              },
+              {
+                "ref": "Isa.1.4"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הֵיטִיב",
+            "note": "“Do good”, the hiphil of יָטַב, set against the hiphil.",
+            "evidence": [
+              {
+                "ref": "Jer.4.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.13.23"
+              },
+              {
+                "ref": "Lev.5.4"
+              },
+              {
+                "ref": "Zep.1.12"
+              },
+              {
+                "ref": "Jos.24.20"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַיֵּרַע בְּעֵינֵי",
+            "gloss": "and it was bad (displeasing) in the eyes of",
+            "evidence": [
+              {
+                "ref": "Gen.21.11",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.8.6"
+              },
+              {
+                "ref": "2Sa.11.27"
+              },
+              {
+                "ref": "Isa.59.15"
+              }
+            ]
+          },
+          {
+            "phrase": "רָעָה עַיִן",
+            "gloss": "the eye is grudging",
+            "evidence": [
+              {
+                "ref": "Deu.15.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.28.54"
+              },
+              {
+                "ref": "Deu.28.56"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κακόω",
+          "gloss": "do harm to, ill-treat",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.26.6, וַיָּרֵעוּ → ἐκάκωσαν; κακόω renders the hiphil ×5, with ἐκάκωσας ×3"
+            },
+            {
+              "ref": "Act.7.19",
+              "role": "defining",
+              "note": "Stephen: the king of Egypt “ἐκάκωσε our fathers”, the hiphil of Deu 26:6 and Num 20:15."
+            },
+            {
+              "ref": "1Pe.3.13",
+              "note": "“Who is he who will κακώσων you, if you follow what is good?”, after Peter’s quotation of Psa 34."
+            }
+          ]
+        },
+        {
+          "lemma": "κακοποιέω",
+          "gloss": "do evil, do harm",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.5.4, לְהָרַע → κακοποιῆσαι; Jer.4.22, לְהָרַע → κακοποιῆσαι"
+            },
+            {
+              "ref": "Mrk.3.4",
+              "role": "defining",
+              "note": "“Is it lawful on the sabbath ἀγαθοποιῆσαι ἢ κακοποιῆσαι, to save life or to kill?”: the Hebrew pair הֵיטִיב and הֵרַע. Also Luk 6:9."
+            },
+            {
+              "ref": "Luk.6.9"
+            },
+            {
+              "ref": "3Jn.1.11",
+              "note": "“He who does good is of God; ὁ κακοποιῶν has not seen God.”"
+            }
+          ]
+        },
+        {
+          "lemma": "πονηρεύομαι",
+          "gloss": "act wickedly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "the participle מְרֵעִים → πονηρευόμενοι, πονηρευομένων, πονηρευομένοις (×8 together); not in the New Testament"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֹעַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "badness, evil (of deeds); poor quality; sadness",
+      "bdb": [
+        "t.dq.ab"
+      ],
+      "cognate_ids": [
+        "phn-roa"
+      ],
+      "summary": "The quality of being bad: above all “the רֹעַ of your doings”, Jeremiah’s word for the reason judgment comes; the badness of figs and cows; and sadness of face or heart.",
+      "senses": [
+        {
+          "id": "roa-deeds",
+          "gloss": "evil, badness (of deeds, of the heart)",
+          "definition": "The evil quality of what people do or intend, for which Yahweh brings judgment and from which he calls them to turn.",
+          "evidence": [
+            {
+              "ref": "Isa.1.16",
+              "role": "defining",
+              "note": "“Wash, make yourselves clean; remove רֹעַ מַעַלְלֵיכֶם from before my eyes; cease to do evil.”"
+            },
+            {
+              "ref": "Jer.4.4",
+              "role": "defining",
+              "note": "“Circumcise yourselves to Yahweh … lest my wrath go forth like fire … because of רֹעַ מַעַלְלֵיכֶם.”"
+            },
+            {
+              "ref": "Jer.21.12"
+            },
+            {
+              "ref": "Jer.23.22",
+              "note": "Had the prophets stood in my counsel, they would have turned my people “from their evil way and מֵרֹעַ מַעַלְלֵיהֶם”."
+            },
+            {
+              "ref": "Jer.25.5"
+            },
+            {
+              "ref": "Jer.26.3",
+              "note": "“That I may relent of the רָעָה I purpose to do to them because of רֹעַ מַעַלְלֵיהֶם.”"
+            },
+            {
+              "ref": "Jer.44.22",
+              "note": "“Yahweh could no longer bear because of רֹעַ מַעַלְלֵיכֶם.”"
+            },
+            {
+              "ref": "Hos.9.15",
+              "note": "“Because of רֹעַ מַעַלְלֵיהֶם I will drive them out of my house.”"
+            },
+            {
+              "ref": "Psa.28.4",
+              "note": "“Give them according to their work and according to רֹעַ מַעַלְלֵיהֶם.”"
+            },
+            {
+              "ref": "Deu.28.20",
+              "note": "Cursing “until you perish quickly because of רֹעַ מַעֲלָלֶיךָ, by which you have forsaken me”."
+            },
+            {
+              "ref": "1Sa.17.28",
+              "role": "defining",
+              "note": "Eliab to David: “I know your pride and רֹעַ לְבָבֶךָ.”"
+            }
+          ],
+          "kin": [
+            "wickedness",
+            "evil-done"
+          ]
+        },
+        {
+          "gloss": "badness, poor quality",
+          "definition": "Of fruit or animals, being too poor to use.",
+          "evidence": [
+            {
+              "ref": "Jer.24.2",
+              "role": "defining",
+              "note": "Figs “which could not be eaten מֵרֹעַ”. Also Jer 24:3, 8; 29:17."
+            },
+            {
+              "ref": "Jer.24.3"
+            },
+            {
+              "ref": "Jer.24.8"
+            },
+            {
+              "ref": "Jer.29.17"
+            },
+            {
+              "ref": "Gen.41.19",
+              "role": "defining",
+              "note": "Cows such as Pharaoh “never saw in all the land of Egypt לָרֹעַ”."
+            }
+          ],
+          "kin": [
+            "bad-quality"
+          ]
+        },
+        {
+          "id": "roa-sadness",
+          "gloss": "sadness (of face or heart)",
+          "definition": "Downcastness, sorrow showing in the face.",
+          "evidence": [
+            {
+              "ref": "Neh.2.2",
+              "role": "defining",
+              "note": "“This is nothing but רֹעַ לֵב.”"
+            },
+            {
+              "ref": "Ecc.7.3",
+              "role": "defining",
+              "note": "“Sorrow is better than laughter, for בְּרֹעַ פָּנִים the heart is made good.”"
+            }
+          ],
+          "kin": [
+            "sad"
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "רֹעַ מַעַלְלֵיכֶם",
+            "gloss": "the evil of your doings",
+            "evidence": [
+              {
+                "ref": "Isa.1.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.4.4"
+              },
+              {
+                "ref": "Jer.21.12"
+              },
+              {
+                "ref": "Jer.44.22"
+              },
+              {
+                "ref": "Hos.9.15"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "πονηρία",
+          "gloss": "wickedness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.4.4, רֹעַ → πονηρίας; Neh.2.2, רֹעַ → πονηρία; Jer.44.22 the same"
+            },
+            {
+              "ref": "Luk.11.39",
+              "note": "“Your inward part is full of extortion and πονηρίας”: the evil within, as רֹעַ לְבָבֶךָ (1Sa 17:28)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רָעַע",
+      "pos": "verb",
+      "gloss": "break, shatter",
+      "bdb": [
+        "t.dr.aa"
+      ],
+      "cognate_ids": [
+        "arc-raa",
+        "ar-radda"
+      ],
+      "summary": "A verb of the same spelling as “be evil”, meaning to break or shatter: iron that cannot be broken, nations broken with an iron rod, the earth broken apart. Its cognates show it is a different older root: it is the Aramaic form of the root Hebrew writes רָצַץ, “crush” (Arabic raḍḍa), with Aramaic ע where Hebrew has צ, as in Aramaic אֲרַע beside Hebrew אֶרֶץ; the Targum renders Hebrew רצץ by it, and the Peshitta uses it for the “bruised reed” of Isa 42:3. A few uses are uncertain and could be the other verb or רעה (see the stems). The database files this verb and רָעַע “be evil” under the same tokens.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "break, shatter; (passive) be broken",
+          "senses": [
+            {
+              "id": "break",
+              "gloss": "break, shatter",
+              "definition": "To break something hard or to break a people in pieces, as an iron rod breaks a potter’s vessel.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.9",
+                  "role": "defining",
+                  "note": "“תְּרֹעֵם with a rod of iron; like a potter’s vessel you shall dash them in pieces (תְּנַפְּצֵם).” The Septuagint read the consonants as רעה, “shepherd”, and Revelation follows it (see Greek)."
+                },
+                {
+                  "ref": "Jer.15.12",
+                  "role": "defining",
+                  "note": "“Can one יָרֹעַ iron, iron from the north, and bronze?”"
+                },
+                {
+                  "ref": "Job.34.24",
+                  "role": "defining",
+                  "note": "“He יָרֹעַ mighty men without inquiry, and sets others in their place.”"
+                },
+                {
+                  "ref": "Isa.24.19",
+                  "note": "The infinitive רֹעָה before the hithpolel: “breaking, the earth is broken”."
+                },
+                {
+                  "ref": "Jer.11.16",
+                  "note": "Of the green olive tree Yahweh named: “he has kindled fire on it, וְרָעוּ its branches”: they are broken, or consumed."
+                },
+                {
+                  "ref": "Pro.25.19",
+                  "note": "“A שֵׁן רֹעָה and a foot out of joint, is confidence in a treacherous man in the day of trouble”: a broken tooth."
+                },
+                {
+                  "ref": "Isa.8.9",
+                  "note": "“רֹעוּ, peoples, and be shattered (וָחֹתּוּ)”: the parallel favours “be broken”; the word could also be read “make an uproar” (רוע). Uncertain."
+                }
+              ],
+              "kin": [
+                "arc-break",
+                "syc-bruised"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "be broken in pieces",
+          "senses": [
+            {
+              "gloss": "be utterly broken",
+              "definition": "To be broken up, of the earth in the day of Yahweh’s judgment.",
+              "evidence": [
+                {
+                  "ref": "Isa.24.19",
+                  "role": "defining",
+                  "note": "“רֹעָה הִתְרֹעֲעָה הָאָרֶץ”, beside “splitting, the earth is split (הִתְפּוֹרְרָה)” and “shaking, the earth is shaken (הִתְמוֹטְטָה)”."
+                },
+                {
+                  "ref": "Pro.18.24",
+                  "note": "“אִישׁ רֵעִים לְהִתְרֹעֵעַ, but there is a friend who sticks closer than a brother”: a man of many companions comes to ruin. Uncertain: the word could be from רעה, “to keep company”, playing on רֵעִים."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נִפֵּץ",
+            "note": "“Dash in pieces”, of a potter’s vessel.",
+            "evidence": [
+              {
+                "ref": "Psa.2.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "פּוֹרֵר",
+            "note": "“Split apart”, with “shaken”, of the earth.",
+            "evidence": [
+              {
+                "ref": "Isa.24.19",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "חָתַת",
+            "note": "“Be shattered, dismayed”.",
+            "evidence": [
+              {
+                "ref": "Isa.8.9"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ποιμαίνω",
+          "gloss": "shepherd, rule",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.2.9, תְּרֹעֵם → ποιμανεῖς: read as רעה, “shepherd”"
+            },
+            {
+              "ref": "Rev.2.27",
+              "role": "defining",
+              "note": "“He shall ποιμανεῖ them with a rod of iron; as the vessels of a potter they shall be broken to pieces”: Psa 2:9 in the Septuagint’s reading, with the breaking kept in the second line."
+            },
+            {
+              "ref": "Rev.12.5",
+              "note": "The male child “who is to ποιμαίνειν all the nations with a rod of iron”."
+            },
+            {
+              "ref": "Rev.19.15",
+              "note": "At his coming, “he shall ποιμανεῖ them with a rod of iron”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רְעַע",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "break, shatter",
+      "bdb": [
+        "xt.am.aa"
+      ],
+      "cognate_ids": [
+        "arc-raa",
+        "ar-radda"
+      ],
+      "summary": "Biblical Aramaic, twice in one verse of the iron kingdom of Nebuchadnezzar’s image, beside דְּקַק, “crush”. The database tags both tokens peal; מְרָעַע, with its prefixed mem, is the pael participle.",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "shatter",
+          "senses": [
+            {
+              "id": "arc-break",
+              "gloss": "shatter, break in pieces",
+              "definition": "Of iron, which breaks whatever it strikes.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.40",
+                  "role": "defining",
+                  "note": "“As iron that מְרָעַע all these”: the fourth kingdom, strong as iron, which crushes and shatters all."
+                }
+              ],
+              "kin": [
+                "break"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peal",
+          "gloss": "break",
+          "senses": [
+            {
+              "gloss": "break (in pieces)",
+              "definition": "Of the fourth kingdom breaking the kingdoms before it.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.40",
+                  "role": "defining",
+                  "note": "“It shall crush (תַּדִּק) and וְתֵרֹעַ.” Its end follows: the stone cut without hands crushes the iron, and God’s kingdom stands for ever (Dan 2:44–45)."
+                }
+              ],
+              "kin": [
+                "break"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רְעַע",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "(passive participle) bruised; (ethpeel) be shattered",
+      "cognate_ids": [
+        "arc-raa",
+        "ar-radda"
+      ],
+      "summary": "The Peshitta’s ܪܥ (SEDRA root 1773, lexemes 3042 “broken” and 3043 ܪܥܝܥܐ “bruised”): the bruised reed of Isa 42:3, where the Hebrew has רָצוּץ of root רצץ, and the one who falls on the stone and is shattered.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "(passive participle) bruised",
+          "senses": [
+            {
+              "id": "syc-bruised",
+              "gloss": "bruised, crushed",
+              "definition": "Of a reed cracked but not yet broken off.",
+              "evidence": [
+                {
+                  "ref": "Mat.12.20",
+                  "role": "defining",
+                  "note": "“A ܩܢܝܐ ܪܥܝܥܐ he will not break”: Isa 42:3’s קָנֶה רָצוּץ, the servant’s gentleness."
+                }
+              ],
+              "kin": [
+                "break"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be shattered",
+          "senses": [
+            {
+              "gloss": "be shattered, broken to pieces",
+              "definition": "Of one who falls on the stone.",
+              "evidence": [
+                {
+                  "ref": "Mat.21.44",
+                  "role": "defining",
+                  "note": "“Whoever falls on this stone ܢܬܪܥܥ, will be shattered; and on whomever it falls, it will crush him”: the stone of Psa 118:22 (Mat 21:42) and of Dan 2:34–35, 44–45."
+                },
+                {
+                  "ref": "Luk.20.18"
+                }
+              ],
+              "kin": [
+                "break"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-ra",
+      "lang": "phn",
+      "form": "𐤓𐤏",
+      "translit": "rʿ",
+      "gloss": "(adjective) bad, evil, wicked; (noun) evil, crime",
+      "relation": "cognate",
+      "note": "Phoenician of Karatepe: Azatiwada “rooted out all the evil (hrʿ) that was in the land” (KAI 26 A I 9) and built fortresses “where there were bad men (ʾšm rʿm), bandits” (KAI 26 A I 15); Neo-Punic “him of ill repute”, literally “of a bad name (šem raʿ)”, the same phrase as Hebrew שֵׁם רָע (Deu 22:14). The noun “evil” and the adjective “bad, wicked” in the senses the Hebrew has. Phoenician does not show which older sound stands behind ע.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 444, Rʿ II (n.m. evil, crime) and Rʿ V (adj. bad, evil, wicked)"
+        }
+      ]
+    },
+    {
+      "id": "phn-roa",
+      "lang": "phn",
+      "form": "𐤓𐤏",
+      "translit": "rʿ",
+      "gloss": "malice, malevolence",
+      "relation": "cognate",
+      "note": "Karatepe’s curse on whoever pulls up the gate “out of love or out of hatred or out of malice (brʿ)” (KAI 26 A III 17–18): the badness of intent, as רֹעַ לְבָבֶךָ (1Sa 17:28).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 444, Rʿ III (n.m. malice, malevolence), compared with Hebrew רֹעַ"
+        }
+      ]
+    },
+    {
+      "id": "ar-raa",
+      "lang": "ar",
+      "form": "رَعَاعٌ",
+      "translit": "raʿāʿ",
+      "gloss": "the rabble, the lowest and basest sort of people",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Lane: “young men of the lowest, or basest, or meanest, sort, or of the refuse of mankind … low, ignoble, mean”. If it belongs here it shows “worthless, bad” with ʿ behind ע; but the Arabic root’s other words are of growing up, of shaking and of tall reeds, and none is “evil”, so the link is only possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1103, root رع, رَعَاعٌ (n15832)"
+        }
+      ]
+    },
+    {
+      "id": "arc-raa",
+      "lang": "arc",
+      "form": "רְעַע",
+      "translit": "rəʿaʿ",
+      "gloss": "shatter, break; (passive participle) crushed, bruised",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums: Targ. Jud 9:53, of the millstone that crushed Abimelech’s skull, where the Hebrew has וַתָּרִץ (root רצץ); and the passive participle רְעִיעַ in Targ. Isa 42:3 for Hebrew רָצוּץ, “bruised”. So Aramaic רעע answers to Hebrew רצץ, as Aramaic ע answers to Hebrew צ in אֲרַע / אֶרֶץ.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רְעַע (ch.)",
+          "note": "“to shatter, break”; Targ. Jud. IX, 53; Targ. Is. XLII, 3; Targ. Koh. XII, 6."
+        }
+      ]
+    },
+    {
+      "id": "ar-radda",
+      "lang": "ar",
+      "form": "رَضَّ",
+      "translit": "raḍḍa",
+      "gloss": "bruise, bray, crush; break; (VIII) be broken in pieces",
+      "relation": "cognate",
+      "note": "Lane: “he bruised, brayed, pounded, or crushed it … or he broke it”; “he beat him and crushed his bones”; form VIII irtaḍḍa “it broke, or became broken, in pieces”; ruḍāḍ “fragments”. Arabic ḍ (ض) is the older sound that Hebrew writes צ (רָצַץ, “crush”) and Aramaic ע: so this is the cognate of the “break” verb, and shows that it is a different older root from “be evil”. The sound behind ע here is neither ʿ nor ġ but ḍ (ṣ́), which the `sounds` field cannot record.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1095, root رض, رَضَّهُ (n15702); ارتضّ (n15704); رُضَاضٌ (n15706)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "evil-from-god",
+      "statement": "Yahweh says, “I form light and create darkness, I make שָׁלוֹם and create רָע; I am Yahweh, who does all these”, and that there is no other beside him (Isa 45:5–7). Amos asks, “Shall there be רָעָה in a city, and Yahweh has not done it?” (Amo 3:6); Jeremiah asks whether evil and good do not come out of the mouth of the Most High (Lam 3:38); Job will receive “הָרָע” from God as well as good, and in saying so does not sin (Job 2:10). The evil Yahweh creates is set against peace and against good: it is calamity, the sword, famine, harmful beasts and plague that he sends in judgment (Ezk 14:21), and the רָעָה he forms against a people and relents of when they turn from their own רָעָה (Jer 18:8–11; Jon 3:10). The troubling spirit that came on Saul was “a רוּחַ רָעָה from Yahweh” (1Sa 16:14). From the verses: scripture traces the evil men suffer to Yahweh himself, as the righteous judge, and to no second power beside him; and the evil he brings is never sin, for “God is not tempted by evil, and he himself tempts no one” (Jas 1:13).",
+      "evidence": [
+        {
+          "ref": "Isa.45.5",
+          "to": "Isa.45.7"
+        },
+        {
+          "ref": "Amo.3.6"
+        },
+        {
+          "ref": "Lam.3.38"
+        },
+        {
+          "ref": "Job.2.10"
+        },
+        {
+          "ref": "Ezk.14.21"
+        },
+        {
+          "ref": "Jer.18.8",
+          "to": "Jer.18.11"
+        },
+        {
+          "ref": "Jon.3.10"
+        },
+        {
+          "ref": "1Sa.16.14"
+        },
+        {
+          "ref": "Jas.1.13"
+        }
+      ]
+    },
+    {
+      "topic": "the-heart-of-man",
+      "statement": "Before the flood Yahweh saw that “every יֵצֶר of the thoughts of man’s heart was only רַע all the day” (Gen 6:5), and after it he says the same: “the יֵצֶר of man’s heart is רַע from his youth” (Gen 8:21). Jeremiah’s hearers walk “each after the stubbornness of his evil heart” (Jer 16:12); the Preacher finds “the heart of the sons of men full of רָע” (Ecc 9:3). Jesus says that out of the heart come διαλογισμοὶ πονηροί, evil thoughts, and the sins that follow (Mat 15:19), and calls his hearers “being evil” (Mat 7:11); James says each is tempted when drawn away by his own desire (Jas 1:14). From the verses: the evil men do comes from within man himself, from the inclination of his own heart, and scripture names no outside tempter as its source.",
+      "evidence": [
+        {
+          "ref": "Gen.6.5"
+        },
+        {
+          "ref": "Gen.8.21"
+        },
+        {
+          "ref": "Jer.16.12"
+        },
+        {
+          "ref": "Ecc.9.3"
+        },
+        {
+          "ref": "Mat.15.19"
+        },
+        {
+          "ref": "Mat.7.11"
+        },
+        {
+          "ref": "Jas.1.14"
+        }
+      ]
+    },
+    {
+      "topic": "knowledge-of-good-and-evil",
+      "statement": "God forbade the man to eat of the tree of the knowledge of “טוֹב וָרָע”, “for in the day you eat of it, dying you shall die” (Gen 2:17). Elsewhere to know good and evil is to judge between them: children do not yet know it (Deu 1:39; Isa 7:15–16), the old lose it (2Sa 19:36), and a king asks God for it, to judge his people (1Ki 3:9). The serpent promised “you will be like God, knowing good and evil”, and after they ate, God said “the man has become like one of us, to know good and evil”, and sent him from the tree of life (Gen 3:5, 22–23). From the verses: the man took to himself the judging of good and evil that belongs to God, on the serpent’s word against God’s, and so came under the death God had spoken; Hebrews names the right way to that discernment, senses trained by use to discern good and evil (Heb 5:14).",
+      "evidence": [
+        {
+          "ref": "Gen.2.17"
+        },
+        {
+          "ref": "Deu.1.39"
+        },
+        {
+          "ref": "Isa.7.15",
+          "to": "Isa.7.16"
+        },
+        {
+          "ref": "2Sa.19.36"
+        },
+        {
+          "ref": "1Ki.3.9"
+        },
+        {
+          "ref": "Gen.3.5"
+        },
+        {
+          "ref": "Gen.3.22",
+          "to": "Gen.3.23"
+        },
+        {
+          "ref": "Heb.5.14"
+        }
+      ]
+    },
+    {
+      "topic": "hating-evil",
+      "statement": "“The fear of Yahweh is to hate רָע” (Pro 8:13); “to depart from רָע is understanding” (Job 28:28); “turn from רָע and do good; seek peace and pursue it” (Psa 34:15); “hate רָע and love good” (Amo 5:15). Israel was to purge הָרָע from among them (Deu 17:7). The apostles carry each of these over unchanged: Peter quotes Psa 34 to the believers (1Pe 3:10–12), Paul writes “abhor τὸ πονηρόν, cleave to the good” (Rom 12:9) and applies Deuteronomy’s “put away the evil from among you” to a member of the ecclesia living in sin (1Co 5:13), and both forbid repaying evil for evil (Rom 12:17; 1Pe 3:9), as Proverbs had (Pro 20:22). From the verses: the life of those who fear God is defined by turning from evil, both in themselves and in the body they belong to.",
+      "evidence": [
+        {
+          "ref": "Pro.8.13"
+        },
+        {
+          "ref": "Job.28.28"
+        },
+        {
+          "ref": "Psa.34.15"
+        },
+        {
+          "ref": "Amo.5.15"
+        },
+        {
+          "ref": "Deu.17.7"
+        },
+        {
+          "ref": "1Pe.3.10",
+          "to": "1Pe.3.12"
+        },
+        {
+          "ref": "Rom.12.9"
+        },
+        {
+          "ref": "1Co.5.13"
+        },
+        {
+          "ref": "Rom.12.17"
+        },
+        {
+          "ref": "1Pe.3.9"
+        },
+        {
+          "ref": "Pro.20.22"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "The fourth kingdom of Nebuchadnezzar’s image is iron, which crushes and shatters (מְרָעַע, תֵּרֹעַ) all before it (Dan 2:40); but a stone cut without hands strikes the image, crushes the iron with the rest, and becomes a mountain filling the earth, and God sets up a kingdom that will never be destroyed (Dan 2:34–35, 44–45). The son of Psa 2 is given the nations and breaks them (תְּרֹעֵם) with a rod of iron like a potter’s vessel (Psa 2:8–9); Revelation gives that rod to the male child and to the Word of God at his coming (Rev 12:5; 19:15), and to those who overcome (Rev 2:26–27). Jesus calls himself the rejected stone, and says that whoever falls on it will be shattered (Peshitta ܢܬܪܥܥ, the same root) and on whomever it falls it will crush him (Mat 21:42–44). From the verses: the breaking that the iron kingdom does to others is done in the end to it, by the stone, who is Christ, when he takes the kingdom.",
+      "evidence": [
+        {
+          "ref": "Dan.2.40"
+        },
+        {
+          "ref": "Dan.2.34",
+          "to": "Dan.2.35"
+        },
+        {
+          "ref": "Dan.2.44",
+          "to": "Dan.2.45"
+        },
+        {
+          "ref": "Psa.2.8",
+          "to": "Psa.2.9"
+        },
+        {
+          "ref": "Rev.12.5"
+        },
+        {
+          "ref": "Rev.19.15"
+        },
+        {
+          "ref": "Rev.2.26",
+          "to": "Rev.2.27"
+        },
+        {
+          "ref": "Mat.21.42",
+          "to": "Mat.21.44"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 and Numbers 10 (Ahira אֲחִירַע, Num 10:27). The corpus keys the root רעע, as the task gave it. BDB keys t.dq.ac (adjective רַע), t.dq.ad (noun רַע) and t.dq.ae (רָעָה) are given the same 670 tokens by the database, which maps them by spelling; t.dq.af (רָעַע “be evil”) and t.dr.aa (רָעַע “break”) share about 229 tokens; so each of these words’ use counts is too high, and which use is which word was read from the sense. Left out: t.dh.ac and t.dm.ae, zero-token cross-references to רֹעַ and רֹעָה; Ahira a.ck.ba goes to names/ahira.json; Beriah בְּרִיעָה (1Ch 7:23, “because it was בְּרָעָה in his house”), whose name the text itself explains from רָעָה, has no name entry yet (it is not in Lev 23 or Num 10). Words of other roots kept out: רֵעַ “friend” and רָעָה “shepherd, pasture” (root רעה); רֵעַ/רוּעַ “shout” (entry rua). The brief files Mic 3:2 רָע under רוע by spelling: it is “evil” and is cited here; 1Ki 16:25 וַיָּרַע (filed under רוע) is the hiphil “did evil” (see rua.json’s note). Two older roots in one spelling: “be bad, evil” (Phoenician rʿ, with which Arabic رعاع may go) and “break” (Aramaic רעע, Syriac ܪܥ, Arabic رضّ raḍḍa, Hebrew רצץ: *ṣ́ behind the Aramaic ע). The `sounds` field allows only ʿ or ġ for ע, so the ṣ́ of ar-radda is stated in its note, not recorded; lexicon-splits will not show the split. Anderson–Moser SEM000381 lists rʿʿ “bad” for Hebrew and Aramaic only (Aramaic ARM028784 “evil”); Jewish Aramaic’s ordinary word for “bad” is בִּישׁ (Jastrow), and the Peshitta’s is ܒܝܫ, so no Aramaic cognate for “evil” is entered. Lane’s تَرَعْرَعَتِ السِّنُّ “the tooth became loose and wobbled” (p. 1103, n15831) might bear on Pro 25:19 שֵׁן רֹעָה; not entered. Not found or not consulted: Ugaritic (Segert’s glossary OCR shows no rʿ “bad” or “break”), Akkadian (Oracc gave only unrelated r- words; Akkadian “evil” is lemnu), Sabaean (Biella OCR gave nothing), Ge’ez (Dillmann, Leslau not consulted). The Septuagint read Psa 2:9 תְּרֹעֵם as from רעה “shepherd” (ποιμανεῖς), and Revelation keeps that reading; the Hebrew’s parallel תְּנַפְּצֵם supports “break”. Open for review: (1) Pro 18:24 לְהִתְרֹעֵעַ and Isa 8:9 רֹעוּ are placed under “break” and marked uncertain; (2) the Biblical Aramaic מְרָעַע is entered as pael though the database tags it peal; (3) the doctrine items “evil-from-god” and “the-heart-of-man” state that scripture names no second power or outside tempter as the source of evil, from Isa 45:5–7, Gen 6:5, 8:21, Mat 15:19 and Jas 1:13–14; (4) the kingdom-of-god item identifies the stone with Christ from Mat 21:42–44 and does not name the fourth kingdom."
+}
