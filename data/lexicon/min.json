@@ -1,0 +1,1052 @@
+{
+  "id": "min",
+  "root": "מנ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "separation",
+    "origin",
+    "comparison",
+    "time"
+  ],
+  "gloss": "(preposition) from, out of; some of; since, after; because of; than",
+  "summary": "The preposition of the starting point: what a thing moves away from, comes out of, is made from or taken from, and so also \"some of\" a whole, \"since\" a time, \"because of\" a cause, and, set beside an adjective, \"than\" (\"sweeter than honey\"). Most often it is joined to the next word as מִ־ or מֵ־ (מִמִּדְבַּר \"from the wilderness\", Num 10:12); scripture's Aramaic has the same word, מִן. It is shared by Hebrew, Aramaic, Phoenician, Ugaritic, Arabic, Sabaean and Ge'ez, but no verb or noun in scripture or in those languages is shown to be its source, so it is keyed by its own consonants: proposed roots (מָנָה \"portion\", for the sense \"some of\"; a verb מנן \"cut off\", for separation) are leads only.",
+  "words": [
+    {
+      "lemma": "מִן",
+      "bdb": [
+        "m.cl.aa"
+      ],
+      "cognate_ids": [
+        "ar-min",
+        "arc-min",
+        "syc-men",
+        "phn-mn",
+        "uga-mn",
+        "sab-mn",
+        "gez-emna",
+        "ar-manna-cut"
+      ],
+      "pos": "preposition",
+      "gloss": "from, out of; some of; since, after; because of; than",
+      "summary": "Never inflected for itself, but takes suffixes (מִמֶּנִּי \"from me\", מִמֶּנּוּ \"from him\", מֵהֶם \"from them\"). It stands as a word (מִן־) mostly before the article; far more often it is prefixed, doubling the next letter (מִמָּחֳרַת, Lev 23:11) or as מֵ־ before a guttural (מֵעֶרֶב, Lev 23:32; מֵהַר, Num 10:33). Poetry also has מִנִּי (Isa 46:3; Psa 78:2). Every sense starts from one picture, the point a thing leaves or comes from: place, source, a whole a part is taken from, a time counted from, a cause something springs from, and a standard something is measured away from. The uses counted here are only its free-standing and suffixed forms; the prefixed מִ־ is counted under the word it is joined to.",
+      "senses": [
+        {
+          "id": "min-from",
+          "gloss": "from, away from (place, separation)",
+          "definition": "The place or person something moves away from, or is kept, cut off or delivered from.",
+          "evidence": [
+            {
+              "ref": "Num.10.12",
+              "role": "defining",
+              "note": "\"The sons of Israel set out on their journeys מִמִּדְבַּר סִינָי, from the wilderness of Sinai.\""
+            },
+            {
+              "ref": "Num.10.34",
+              "role": "defining",
+              "note": "\"when they set out מִן־הַמַּחֲנֶה, from the camp\"."
+            },
+            {
+              "ref": "Gen.3.23",
+              "role": "defining",
+              "note": "\"Yahweh God sent him out מִגַּן־עֵדֶן, from the garden of Eden.\""
+            },
+            {
+              "ref": "Num.10.33",
+              "note": "\"They set out מֵהַר יַהְוֶה, from the mountain of Yahweh.\""
+            },
+            {
+              "ref": "Num.10.11",
+              "note": "מֵעַל: the cloud was taken up \"from over\" the dwelling of the testimony."
+            },
+            {
+              "ref": "Lev.23.29",
+              "note": "\"That soul shall be cut off מֵעַמֶּיהָ, from its people.\""
+            },
+            {
+              "ref": "Gen.22.12",
+              "note": "\"You have not withheld your son, your only one, מִמֶּנִּי, from me.\""
+            },
+            {
+              "ref": "Psa.18.4",
+              "note": "\"I am saved מִן־אֹיְבַי, from my enemies.\""
+            }
+          ]
+        },
+        {
+          "id": "min-source",
+          "gloss": "out of, made from; from (a source or giver)",
+          "definition": "What a thing comes out of, is taken or made from, or the one it comes from.",
+          "evidence": [
+            {
+              "ref": "Gen.2.7",
+              "role": "defining",
+              "note": "\"Yahweh God formed the man, dust מִן־הָאֲדָמָה, from the ground\": the material he is made of."
+            },
+            {
+              "ref": "Gen.2.22",
+              "role": "defining",
+              "note": "\"the rib which he had taken מִן־הָאָדָם, from the man\"."
+            },
+            {
+              "ref": "Gen.3.19",
+              "role": "defining",
+              "note": "\"until you return to the ground, for מִמֶּנָּה, from it, you were taken\"."
+            },
+            {
+              "ref": "Gen.2.23",
+              "note": "\"bone מֵעֲצָמַי, of my bones, and flesh מִבְּשָׂרִי, of my flesh … for מֵאִישׁ, from man, she was taken\"."
+            },
+            {
+              "ref": "Exo.16.4",
+              "note": "\"I am raining bread for you מִן־הַשָּׁמַיִם, from the heavens\"; Jhn 6:32 takes it up as \"the bread out of (ἐκ) heaven\"."
+            },
+            {
+              "ref": "Lev.23.17",
+              "note": "\"מִמּוֹשְׁבֹתֵיכֶם, from your dwellings, you shall bring two loaves of waving\": what the people bring comes from their own homes."
+            },
+            {
+              "ref": "Gen.24.50",
+              "note": "\"מֵיַהְוֶה, from Yahweh, the thing has gone out\": the one it comes from."
+            },
+            {
+              "ref": "Ecc.3.20",
+              "note": "\"All came to be מִן־הֶעָפָר, from the dust, and all return to the dust.\""
+            }
+          ]
+        },
+        {
+          "id": "min-some-of",
+          "gloss": "some of, (one) of, any of",
+          "definition": "A part taken out of a whole: some of the people, some of the fruit, an offering of the herd.",
+          "evidence": [
+            {
+              "ref": "Exo.16.27",
+              "role": "defining",
+              "note": "יָצְאוּ מִן־הָעָם: \"some of the people went out to gather\" on the seventh day."
+            },
+            {
+              "ref": "Gen.3.3",
+              "role": "defining",
+              "note": "\"of (מִ) the fruit of the tree in the midst of the garden … you shall not eat of it (מִמֶּנּוּ)\"."
+            },
+            {
+              "ref": "Lev.1.2",
+              "role": "defining",
+              "note": "\"When one of you (מִכֶּם) brings an offering … of the cattle, of the herd and of the flock (מִן־הַבָּקָר וּמִן־הַצֹּאן)\"."
+            },
+            {
+              "ref": "Gen.4.4",
+              "note": "Abel brought \"of the firstborn of his flock and of their fat\"."
+            },
+            {
+              "ref": "Rut.2.16",
+              "note": "\"pull out for her some מִן־הַצְּבָתִים, from the bundles\"."
+            }
+          ]
+        },
+        {
+          "id": "min-since",
+          "gloss": "from, since (a time); after",
+          "definition": "The time from which something is counted or has been so, and, of a span, the time after which something happens.",
+          "evidence": [
+            {
+              "ref": "Lev.23.15",
+              "role": "defining",
+              "note": "\"You shall count for yourselves מִמָּחֳרַת הַשַּׁבָּת, from the morrow of the sabbath, מִיּוֹם, from the day you brought the sheaf of the waving.\""
+            },
+            {
+              "ref": "Gen.8.21",
+              "role": "defining",
+              "note": "\"The intent of man's heart is evil מִנְּעֻרָיו, from his youth.\""
+            },
+            {
+              "ref": "Lev.23.32",
+              "note": "מֵעֶרֶב עַד־עֶרֶב: \"from evening to evening you shall keep your sabbath\"."
+            },
+            {
+              "ref": "Isa.46.10",
+              "note": "\"declaring the end מֵרֵאשִׁית, from the beginning, and מִקֶּדֶם, from of old, what has not been done\"."
+            },
+            {
+              "ref": "Psa.78.2",
+              "note": "\"I will pour out riddles מִנִּי־קֶדֶם, from of old\" (the poetic מִנִּי); quoted Mat 13:35, \"from (ἀπό) the foundation of the world\"."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "after, at the end of; on (the next day)",
+              "definition": "Counted from the end of a span: \"after two days\", \"at the end of forty days\", and מִמָּחֳרַת \"on the morrow\", the day after.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.6",
+                  "role": "defining",
+                  "note": "מִקֵּץ אַרְבָּעִים יוֹם: \"at the end of forty days\" Noah opened the window."
+                },
+                {
+                  "ref": "Hos.6.2",
+                  "role": "defining",
+                  "note": "יְחַיֵּנוּ מִיֹּמָיִם: \"he will revive us after two days; on the third day he will raise us up\"."
+                },
+                {
+                  "ref": "Lev.23.11",
+                  "role": "defining",
+                  "note": "מִמָּחֳרַת הַשַּׁבָּת: the priest waves the sheaf \"on the morrow of the sabbath\", the day after it."
+                },
+                {
+                  "ref": "Num.33.3",
+                  "note": "מִמָּחֳרַת הַפֶּסַח: Israel went out \"on the morrow of the passover\", the fifteenth day of the first month."
+                },
+                {
+                  "ref": "Deu.15.1",
+                  "note": "מִקֵּץ שֶׁבַע־שָׁנִים: \"at the end of seven years you shall make a release\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "min-because",
+          "gloss": "because of, by reason of; by",
+          "definition": "The cause something springs from, or the agent or force by which it is done.",
+          "evidence": [
+            {
+              "ref": "Exo.2.23",
+              "role": "defining",
+              "note": "\"The sons of Israel groaned מִן־הָעֲבֹדָה, because of the bondage, … and their cry went up to God מִן־הָעֲבֹדָה.\""
+            },
+            {
+              "ref": "Gen.9.11",
+              "role": "defining",
+              "note": "\"Never again shall all flesh be cut off מִמֵּי הַמַּבּוּל, by the waters of the flood.\""
+            },
+            {
+              "ref": "Isa.53.5",
+              "role": "defining",
+              "note": "\"He was pierced מִפְּשָׁעֵנוּ, because of our transgressions, crushed מֵעֲוֹנֹתֵינוּ, because of our iniquities.\""
+            },
+            {
+              "ref": "Isa.53.8",
+              "note": "\"מִפֶּשַׁע עַמִּי, because of the transgression of my people, the stroke was his.\""
+            },
+            {
+              "ref": "Psa.104.7",
+              "note": "\"מִן־גַּעֲרָתְךָ, at your rebuke, they fled.\""
+            },
+            {
+              "ref": "Exo.3.7",
+              "note": "מִפְּנֵי נֹגְשָׂיו: \"their cry because of their taskmasters\"."
+            }
+          ]
+        },
+        {
+          "id": "min-than",
+          "gloss": "than, more than (comparison)",
+          "definition": "After an adjective or a verb of degree, the thing compared, as the point the quality is measured from: \"sweeter than honey\", \"better than sacrifice\". With כֹּל it is the superlative: \"more than all\".",
+          "evidence": [
+            {
+              "ref": "Jdg.14.18",
+              "role": "defining",
+              "note": "מַה־מָּתוֹק מִדְּבַשׁ וּמֶה עַז מֵאֲרִי: \"What is sweeter than honey, and what is stronger than a lion?\""
+            },
+            {
+              "ref": "1Sa.15.22",
+              "role": "defining",
+              "note": "\"To obey מִזֶּבַח טוֹב, is better than sacrifice, to give heed מֵחֵלֶב אֵילִים, than the fat of rams.\""
+            },
+            {
+              "ref": "Gen.3.1",
+              "role": "defining",
+              "note": "\"The serpent was more crafty מִכֹּל חַיַּת הַשָּׂדֶה, than every beast of the field.\""
+            },
+            {
+              "ref": "Gen.29.30",
+              "note": "\"He loved Rachel more than Leah (מִלֵּאָה).\""
+            },
+            {
+              "ref": "Gen.37.3",
+              "note": "\"Israel loved Joseph מִכָּל־בָּנָיו, more than all his sons.\""
+            },
+            {
+              "ref": "Hos.6.6",
+              "note": "\"the knowledge of God מֵעֹלוֹת, more than burnt offerings\"; with Mrk 12:33, \"more than all the burnt offerings\"."
+            },
+            {
+              "ref": "Mrk.12.33"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "too … for",
+              "definition": "The same comparison with a person: a thing greater than someone's strength is \"too heavy for\" him.",
+              "evidence": [
+                {
+                  "ref": "Gen.18.14",
+                  "role": "defining",
+                  "note": "הֲיִפָּלֵא מֵיַהְוֶה דָּבָר: \"Is anything too wonderful for Yahweh?\""
+                },
+                {
+                  "ref": "Exo.18.18",
+                  "role": "defining",
+                  "note": "כִּי־כָבֵד מִמְּךָ הַדָּבָר: \"the thing is too heavy for you; you cannot do it alone\"."
+                },
+                {
+                  "ref": "Gen.4.13",
+                  "note": "גָּדוֹל עֲוֹנִי מִנְּשֹׂא: \"My iniquity is too great to bear.\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "min-from-doing",
+          "gloss": "from (doing), so as not to (with an infinitive)",
+          "definition": "Before an infinitive, the action someone is kept or turned away from.",
+          "evidence": [
+            {
+              "ref": "Gen.16.2",
+              "role": "defining",
+              "note": "עֲצָרַנִי יַהְוֶה מִלֶּדֶת: \"Yahweh has restrained me from bearing.\""
+            },
+            {
+              "ref": "1Sa.15.23",
+              "role": "defining",
+              "note": "וַיִּמְאָסְךָ מִמֶּלֶךְ: \"he has rejected you from being king\"."
+            },
+            {
+              "ref": "Gen.27.1",
+              "note": "\"his eyes were too dim מֵרְאֹת, to see\"."
+            }
+          ]
+        },
+        {
+          "id": "min-on-side",
+          "gloss": "on (a side), at (a distance)",
+          "definition": "Where something stands, seen from a point of reference: \"on this side and on that\", \"from afar\" (at a distance).",
+          "evidence": [
+            {
+              "ref": "Exo.17.12",
+              "role": "defining",
+              "note": "מִזֶּה אֶחָד וּמִזֶּה אֶחָד: Aaron and Hur held up Moses' hands, \"one on this side and one on that\"."
+            },
+            {
+              "ref": "Gen.22.4",
+              "role": "defining",
+              "note": "\"Abraham lifted up his eyes and saw the place מֵרָחֹק, from afar.\""
+            },
+            {
+              "ref": "Exo.25.19",
+              "note": "\"one cherub at the end on this side (מִקָּצָה מִזֶּה) and one cherub at the end on that side\"."
+            },
+            {
+              "ref": "Num.22.24",
+              "note": "\"a wall on this side and a wall on that side (מִזֶּה … מִזֶּה)\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀπό",
+          "gloss": "from, away from",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 2:7 word 7",
+              "note": "ἀπὸ τῆς γῆς for מִן־הָאֲדָמָה, \"dust from the ground\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 78:2 word 6",
+              "note": "ἀπ' ἀρχῆς for מִנִּי־קֶדֶם, \"from of old\"."
+            },
+            {
+              "ref": "Mat.13.35",
+              "note": "Psa 78:2 quoted: \"I will utter things hidden from (ἀπό) the foundation of the world.\""
+            }
+          ]
+        },
+        {
+          "lemma": "ἐκ",
+          "gloss": "out of, from",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 16:4 word 9",
+              "note": "ἐκ τοῦ οὐρανοῦ for מִן־הַשָּׁמַיִם, bread \"from the heavens\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "HOS 11:1 word 5",
+              "note": "ἐξ Αἰγύπτου for מִמִּצְרַיִם."
+            },
+            {
+              "ref": "Mat.2.15",
+              "note": "Hos 11:1 quoted: \"Out of (ἐξ) Egypt I called my son.\""
+            },
+            {
+              "ref": "Jhn.6.32",
+              "note": "\"Moses did not give you the bread out of (ἐκ) heaven\": the manna of Exo 16:4."
+            },
+            {
+              "ref": "1Co.15.47",
+              "note": "\"The first man is out of (ἐκ) the earth, made of dust\": Gen 2:7."
+            },
+            {
+              "ref": "1Co.11.8",
+              "note": "\"The woman is out of (ἐξ) the man\": Gen 2:22–23."
+            }
+          ]
+        },
+        {
+          "lemma": "παρά",
+          "gloss": "from (beside); more than",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 24:50 word 5",
+              "note": "παρὰ κυρίου for מֵיַהְוֶה, \"from Yahweh the thing has gone out\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 37:3 word 5",
+              "note": "παρὰ πάντας τοὺς υἱούς for מִכָּל־בָּנָיו, \"more than all his sons\"."
+            }
+          ]
+        },
+        {
+          "lemma": "ὑπέρ",
+          "gloss": "beyond, more than",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1SA 15:22 word 12",
+              "note": "ὑπὲρ θυσίαν for מִזֶּבַח, \"better than sacrifice\"."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מֵאֵת",
+            "note": "\"from with\": set beside מֵעִם in the same verse, the spirit of Yahweh turning away from Saul and an evil spirit coming from Yahweh.",
+            "evidence": [
+              {
+                "ref": "1Sa.16.14",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מִפְּנֵי",
+            "note": "\"from the face of\": away from someone's presence, and so \"because of\" him.",
+            "evidence": [
+              {
+                "ref": "Gen.3.8",
+                "note": "They hid מִפְּנֵי יַהְוֶה אֱלֹהִים, \"from the presence of Yahweh God\"."
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אֶל",
+            "note": "\"to, toward\": the end point against מִן's starting point.",
+            "evidence": [
+              {
+                "ref": "Gen.3.19",
+                "role": "defining",
+                "note": "\"until you return אֶל־הָאֲדָמָה, to the ground, for מִמֶּנָּה, from it, you were taken … and אֶל־עָפָר, to dust, you shall return\"."
+              },
+              {
+                "ref": "Ecc.3.20",
+                "note": "\"all came to be from (מִן) the dust, and all return to (אֶל) the dust\"."
+              }
+            ]
+          },
+          {
+            "lemma": "עַד",
+            "note": "\"as far as, until\": closes the span מִן opens.",
+            "evidence": [
+              {
+                "ref": "Lev.23.32",
+                "role": "defining",
+                "note": "מֵעֶרֶב עַד־עֶרֶב, \"from evening to evening\"."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִן … וְעַד",
+            "gloss": "from … to; both … and (the whole range)",
+            "evidence": [
+              {
+                "ref": "1Sa.30.19",
+                "role": "defining",
+                "note": "מִן־הַקָּטֹן וְעַד־הַגָּדוֹל: nothing was missing \"from the small to the great\"."
+              },
+              {
+                "ref": "Gen.14.23",
+                "note": "מִחוּט וְעַד שְׂרוֹךְ־נַעַל: \"from a thread to a sandal strap\", nothing at all."
+              },
+              {
+                "ref": "Lev.23.32",
+                "note": "מֵעֶרֶב עַד־עֶרֶב, \"from evening to evening\"."
+              }
+            ]
+          },
+          {
+            "phrase": "מֵעוֹלָם וְעַד־עוֹלָם",
+            "gloss": "from age to age, from everlasting to everlasting",
+            "evidence": [
+              {
+                "ref": "Psa.90.2",
+                "role": "defining",
+                "note": "\"Before the mountains were born … וּמֵעוֹלָם עַד־עוֹלָם, from age to age, you are God.\""
+              },
+              {
+                "ref": "Psa.103.17",
+                "note": "\"The loyal love of Yahweh is from age to age on those who fear him.\""
+              },
+              {
+                "ref": "Dan.2.20",
+                "note": "The Aramaic: מִן־עָלְמָא וְעַד־עָלְמָא."
+              }
+            ]
+          },
+          {
+            "phrase": "לְמִן",
+            "gloss": "from (a time) on, ever since",
+            "evidence": [
+              {
+                "ref": "Deu.4.32",
+                "role": "defining",
+                "note": "לְמִן־הַיּוֹם אֲשֶׁר בָּרָא אֱלֹהִים אָדָם עַל־הָאָרֶץ: \"since the day that God created man on the earth\"."
+              },
+              {
+                "ref": "Jer.7.7",
+                "note": "לְמִן־עוֹלָם וְעַד־עוֹלָם: the land given to the fathers \"from age to age\"."
+              },
+              {
+                "ref": "2Sa.7.6",
+                "note": "לְמִיּוֹם הַעֲלֹתִי: \"since the day I brought up the sons of Israel from Egypt\"."
+              }
+            ]
+          },
+          {
+            "phrase": "מִמָּחֳרַת",
+            "gloss": "on the morrow (of), the day after",
+            "evidence": [
+              {
+                "ref": "Lev.23.11",
+                "role": "defining",
+                "note": "מִמָּחֳרַת הַשַּׁבָּת, \"on the morrow of the sabbath\" the sheaf is waved."
+              },
+              {
+                "ref": "Lev.23.15",
+                "note": "The count of seven sabbaths begins from the same day."
+              },
+              {
+                "ref": "Lev.23.16",
+                "note": "\"until the morrow of the seventh sabbath you shall count fifty days\"."
+              },
+              {
+                "ref": "Num.33.3",
+                "note": "מִמָּחֳרַת הַפֶּסַח, \"on the morrow of the passover\"."
+              }
+            ]
+          },
+          {
+            "phrase": "מִקֵּץ",
+            "gloss": "at the end of, after",
+            "evidence": [
+              {
+                "ref": "Gen.8.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.15.1"
+              }
+            ]
+          },
+          {
+            "phrase": "מִזֶּה וּמִזֶּה",
+            "gloss": "on this side and on that",
+            "evidence": [
+              {
+                "ref": "Exo.17.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.22.24"
+              }
+            ]
+          },
+          {
+            "phrase": "מֵעִם",
+            "gloss": "from with, from beside (away from someone's company or from him as source)",
+            "evidence": [
+              {
+                "ref": "1Sa.16.14",
+                "role": "defining",
+                "note": "\"The spirit of Yahweh turned aside מֵעִם שָׁאוּל, from with Saul.\""
+              },
+              {
+                "ref": "Gen.13.14",
+                "note": "\"after Lot had separated מֵעִמּוֹ, from with him\"."
+              }
+            ]
+          },
+          {
+            "phrase": "מֵאַחֲרֵי",
+            "gloss": "from following, from after",
+            "evidence": [
+              {
+                "ref": "1Sa.12.20",
+                "role": "defining",
+                "note": "\"Do not turn aside מֵאַחֲרֵי יַהְוֶה, from following Yahweh.\""
+              }
+            ]
+          },
+          {
+            "phrase": "מִיַּד",
+            "gloss": "from the hand (power) of",
+            "evidence": [
+              {
+                "ref": "Gen.32.12",
+                "role": "defining",
+                "note": "\"Deliver me מִיַּד אָחִי, from the hand of my brother.\""
+              }
+            ]
+          },
+          {
+            "phrase": "מִתּוֹךְ",
+            "gloss": "from the midst of",
+            "evidence": [
+              {
+                "ref": "Exo.3.4",
+                "role": "defining",
+                "note": "God called to him מִתּוֹךְ הַסְּנֶה, \"from the midst of the bush\"."
+              }
+            ]
+          },
+          {
+            "phrase": "מִכֹּל",
+            "gloss": "more than all, above all (superlative)",
+            "evidence": [
+              {
+                "ref": "Gen.3.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.7.7",
+                "note": "\"not because you were more than all the peoples (מִכָּל־הָעַמִּים) … for you were the fewest of all the peoples\"."
+              }
+            ]
+          },
+          {
+            "phrase": "מִן + infinitive",
+            "gloss": "from doing, so as not to",
+            "evidence": [
+              {
+                "ref": "Gen.16.2",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.15.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִן",
+      "lang": "arc",
+      "bdb": [
+        "xm.ak.aa"
+      ],
+      "cognate_ids": [
+        "arc-min",
+        "syc-men"
+      ],
+      "pos": "preposition",
+      "gloss": "from, out of; from before; some of; since; because of; than",
+      "summary": "Scripture's Aramaic (Daniel, Ezra) has the same preposition with the same range, written in full before the noun (מִן־יַמָּא) and only now and then joined to it (מִטּוּרָא, Dan 2:45); with suffixes מִנִּי \"from me\", מִנְּהֵן \"of them\". Its own phrases are מִן־קֳדָם \"from before\" a king or God, of a decree or of fear, and the adverbs מִן־קְשֹׁט \"of a truth\" and מִן־יַצִּיב \"for certain\". The database files the Hebrew spelling מִן under the same key, so its count of uses takes in the Hebrew too.",
+      "senses": [
+        {
+          "gloss": "from, out of (place, source)",
+          "definition": "Where something comes up or goes out from.",
+          "evidence": [
+            {
+              "ref": "Dan.7.3",
+              "role": "defining",
+              "note": "\"Four great beasts came up מִן־יַמָּא, from the sea, different one from another (דָּא מִן־דָּא).\""
+            },
+            {
+              "ref": "Dan.7.17",
+              "role": "defining",
+              "note": "\"Four kings shall arise מִן־אַרְעָא, from the earth.\""
+            },
+            {
+              "ref": "Ezr.4.12",
+              "note": "\"the Jews who came up מִן־לְוָתָךְ, from beside you\"."
+            },
+            {
+              "ref": "Dan.3.17",
+              "note": "\"Our God … is able to deliver us מִן־אַתּוּן נוּרָא, from the furnace of burning fire, and מִן־יְדָךְ, from your hand.\""
+            },
+            {
+              "ref": "Dan.4.22",
+              "note": "\"They shall drive you מִן־אֲנָשָׁא, from men.\""
+            },
+            {
+              "ref": "Dan.2.45",
+              "note": "מִטּוּרָא: the stone cut \"from the mountain\" without hands, the preposition joined to its noun."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "from before (מִן־קֳדָם)",
+              "definition": "From the presence of a king or of God: a decree issued by him, or the fear felt before him.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.27",
+                  "role": "defining",
+                  "note": "מִן־קֳדָמַי שִׂים טְעֵם: \"from before me a decree is made, that men tremble and fear מִן־קֳדָם אֱלָהֵהּ דִּי־דָנִיֵּאל, before the God of Daniel\"."
+                },
+                {
+                  "ref": "Ezr.7.14",
+                  "note": "\"you are sent מִן־קֳדָם מַלְכָּא, from before the king and his seven counsellors\"."
+                },
+                {
+                  "ref": "Dan.5.19",
+                  "note": "\"all peoples trembled and feared מִן־קֳדָמוֹהִי, before him\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gloss": "some of, any of; part (of)",
+          "definition": "A part out of a whole.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.13",
+              "role": "defining",
+              "note": "\"everyone in my kingdom מִן־עַמָּה יִשְׂרָאֵל, of the people Israel, … who offers himself freely to go\"."
+            },
+            {
+              "ref": "Dan.2.41",
+              "role": "defining",
+              "note": "The feet and toes, \"part of them (מִנְּהֵן) potter's clay and part of them (מִנְּהֵין) iron … and some of (מִן) the firmness of iron shall be in it\"."
+            }
+          ]
+        },
+        {
+          "gloss": "from, since (a time)",
+          "definition": "The time from which something has been so.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.16",
+              "role": "defining",
+              "note": "וּמִן־אֱדַיִן וְעַד־כְּעַן: \"and from then until now it has been building\"."
+            },
+            {
+              "ref": "Ezr.4.15",
+              "note": "מִן־יוֹמָת עָלְמָא: the city has made revolt \"from days of old\"."
+            },
+            {
+              "ref": "Dan.2.20",
+              "note": "מִן־עָלְמָא וְעַד־עָלְמָא: God's name blessed \"from age to age\"."
+            }
+          ]
+        },
+        {
+          "gloss": "because of",
+          "definition": "The cause something springs from.",
+          "evidence": [
+            {
+              "ref": "Dan.5.19",
+              "role": "defining",
+              "note": "וּמִן־רְבוּתָא דִּי יְהַב־לֵהּ: \"because of the greatness that he gave him, all peoples … trembled\"."
+            }
+          ]
+        },
+        {
+          "gloss": "than, different from (comparison)",
+          "definition": "The thing compared, as in Hebrew.",
+          "evidence": [
+            {
+              "ref": "Dan.7.7",
+              "role": "defining",
+              "note": "The fourth beast was \"different מִן־כָּל־חֵיוָתָא, from all the beasts before it\"."
+            },
+            {
+              "ref": "Dan.7.23",
+              "note": "The fourth kingdom \"shall be different מִן־כָּל־מַלְכְוָתָא, from all the kingdoms\"."
+            }
+          ]
+        },
+        {
+          "gloss": "(adverbs) truly, certainly",
+          "definition": "With a noun or adjective of truth or firmness, an adverb: \"out of truth\", \"out of certainty\".",
+          "evidence": [
+            {
+              "ref": "Dan.2.47",
+              "role": "defining",
+              "note": "מִן־קְשֹׁט דִּי אֱלָהֲכוֹן הוּא אֱלָהּ אֱלָהִין: \"Of a truth your God is God of gods.\""
+            },
+            {
+              "ref": "Dan.2.8",
+              "role": "defining",
+              "note": "מִן־יַצִּיב יָדַע אֲנָה: \"I know for certain that you are buying time.\""
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐκ",
+          "gloss": "out of, from",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DAN 7:3 word 5",
+              "note": "ἐκ τῆς θαλάσσης for מִן־יַמָּא, the beasts coming up \"from the sea\"."
+            },
+            {
+              "ref": "Rev.13.1",
+              "note": "\"I saw a beast coming up out of (ἐκ) the sea\": the image of Dan 7:3."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀπό",
+          "gloss": "from",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DAN 7:17 word 10",
+              "note": "ἀπὸ τῆς γῆς for מִן־אַרְעָא."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-min",
+      "lang": "ar",
+      "form": "مِنْ",
+      "translit": "min",
+      "gloss": "from; of, among; some (of); than; in, on (a day)",
+      "relation": "cognate",
+      "note": "The same preposition with the same spread: \"some\", \"of, among\", \"than\" after a comparative, and of a time \"in, on\". No verb of the consonants means \"separate\" or \"part\" in Lane's article; its verb مَنَّ is \"confer a favour\".",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3024, art. من, مِنْ",
+          "note": "\"مِنْ often means Some\"; \"Of, or among\"; زَيْدٌ أَعْقَلُ مِنْ أَنْ يَكْذِبَ \"Zeyd is more reasonable than [that] he will lie\"; مِنْ يَوْمِ الجُمْعَةِ \"on the day of congregation\" (Kur 62:9)."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic من (min), prep.",
+          "note": "\"having partitive effect: of, some of … from, away from, out of … due to, owing to … than (with comparatives)\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-min",
+      "lang": "arc",
+      "form": "מִן",
+      "translit": "min",
+      "gloss": "from; with suffixes מִנִּי from me, מִנֵּיהּ from him; (מִן דְּ־) since, after; because",
+      "relation": "cognate",
+      "note": "The Targums' Aramaic, as scripture's: the preposition, and with דְּ־ a conjunction of time and cause.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מִן II (ch.)",
+          "note": "Targ. Gen. 1:2; suffixed forms Targ. Gen. 22:12, 3:3; מן ד־ \"from the time that, after; from the fact that; when; because\"."
+        }
+      ]
+    },
+    {
+      "id": "syc-men",
+      "lang": "syc",
+      "form": "ܡܢ",
+      "translit": "men",
+      "gloss": "from",
+      "relation": "cognate",
+      "note": "The Peshitta's preposition, the one its New Testament uses where the Greek has ἀπό and ἐκ.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1799, MN (root 1074), from"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܡܢ (men), prep.",
+          "note": "\"from, out of … of, out of, some of … by, by means of, on account of … than\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-mn",
+      "lang": "phn",
+      "form": "𐤌𐤍",
+      "translit": "mn",
+      "gloss": "from; of (the material a thing is made of); (with l-, lmn) from; lmn … wʿd from … to",
+      "relation": "cognate",
+      "note": "Phoenician also assimilates it as m-, as Hebrew does, and prefers the compound lmn, Hebrew's לְמִן; lmn … wʿd \"from the great ones to the small\" is Hebrew's מִן … וְעַד (1Sa 30:19).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 293, MN II (assimilated: M-)",
+          "note": "\"prep. 1. FROM … 2. OF, expressing material of/from which something is made\" (KAI 33.2/3, a statue \"of bronze\"); \"Phoenician-Punic prefers the compound preposition lmn to simple mn\"."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 258, LMN (L- + MN) and LMN … WʿD",
+          "note": "Poen. 1013 limin co, \"Go away from here!\"; KAI 81 lmʿdrnm wʿd ṣʿrnm, \"from the great ones of them to the minor ones\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-mn",
+      "lang": "uga",
+      "form": "𐎎𐎐",
+      "translit": "mn, m-",
+      "gloss": "from",
+      "relation": "cognate",
+      "note": "A rare preposition in Ugaritic, which mostly says \"from\" with b- and l-; Segert counts it among the biconsonantal prepositions, beside yd \"with\", which comes from the word for \"hand\": for mn no such source is given.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 78, §56.3",
+          "note": "\"Prepositions with two simple consonants are mn 'from,' yd 'with' (< 'hand') …\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "pp. 191–192, glossary, m- /mi(n)/, mn",
+          "note": "m-: mab \"from\" 2.16:11, mrḥqm 2.64:15 (cf. Hebrew, Aramaic min); \"mn prep. 'from,' see m-\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-mn",
+      "lang": "sem",
+      "form": "𐩣𐩬",
+      "translit": "mn",
+      "gloss": "from (Sabaean, Haramī dialect)",
+      "relation": "cognate",
+      "note": "Old South Arabian. Standard Sabaean says \"from\" with bn, which Biella holds is probably not the same word; mn belongs to one dialect, where it is used of driving someone out of the temple and of \"those from it\", a district's people.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 278–279, MN I",
+          "note": "\"FROM (Haramī subdialect; corresponds to bn in standard Sab) [Ar min id …]\"; C548/8 dyndyn mrʾm mn mḥrmn \"whoever drives out a man from the temple\"; 1b/6 \"whoever is stubborn among them (mnhm)\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-emna",
+      "lang": "gez",
+      "form": "እምነ",
+      "translit": "ʾəmənna, ʾəm-",
+      "gloss": "from",
+      "relation": "cognate",
+      "note": "Ge'ez, with a prefixed vowel and the n doubled before suffixes. Only Wiktionary consulted; Dillmann and Leslau not checked.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Proto-Semitic *min",
+          "note": "Descendants include Ge'ez እም (ʾəm) and እምነ (ʾəmmənä), Tigre ምን (mən) \"from … than\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-manna-cut",
+      "lang": "ar",
+      "form": "مَنَّ",
+      "translit": "manna",
+      "gloss": "cut off, curtail; weaken, diminish (beside the commoner \"confer a favour\")",
+      "relation": "possible",
+      "note": "Proposed as a root behind מִן, as \"cut off, separate\", and with it a Hebrew verb מנן not found in scripture. Not shown: the sense is attested in this source only, Lane's article (p. 3024) has only \"confer a favour\" and \"reproach for a favour\", Ugaritic m-n-n is \"be weakened\", Ge'ez mannana \"reject\", and none of these languages uses the verb or a noun from it as \"from\". Recorded as the lead it is.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic من (manna), verb",
+          "note": "\"to be kind … to show, to grant … to cut off, to curtail; to jade, to tire; to decrease, to diminish, to reduce; to reproach\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, glossary, /m-n-n/",
+          "note": "\"D passive, mmnnm … 'to be weakened/lowered'(?) (cf. Arab. m-n-n IV 'to weaken'; cf. Eth. mannana 'rejected')\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "man-from-the-dust",
+      "statement": "Scripture uses מִן for what the first man was made from: \"dust from the ground\" (Gen 2:7). The same word gives the reason for his end: he returns to the ground \"for from it you were taken; for dust you are, and to dust you shall return\" (Gen 3:19). The Preacher says the same of every man and beast: \"all came to be from the dust, and all return to the dust\" (Ecc 3:20). What man is made of is earth, and nothing in these verses is made of anything else; his life is the breath God gave (Gen 2:7), and when that is gone he goes back to what he came from. Paul reads Gen 2:7 the same way: \"the first man is out of the earth, made of dust\" (1Co 15:47). So man is mortal by what he is made of, and life beyond death must come as a gift from God, not from anything in man.",
+      "evidence": [
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Ecc.3.20"
+        },
+        {
+          "ref": "1Co.15.47"
+        }
+      ]
+    },
+    {
+      "topic": "woman-from-the-man",
+      "statement": "The first woman was made from the man: God built \"the rib which he had taken from (מִן) the man\" into a woman (Gen 2:22), and the man says \"she was taken from (מֵ) man\" (Gen 2:23). Paul builds on these words as history: \"the man is not out of the woman, but the woman out of the man\" (1Co 11:8), and \"as the woman is out of the man, so the man is through the woman\" (1Co 11:12). The man came from the ground and the woman from the man; neither came from an earlier creature.",
+      "evidence": [
+        {
+          "ref": "Gen.2.22"
+        },
+        {
+          "ref": "Gen.2.23"
+        },
+        {
+          "ref": "1Co.11.8"
+        },
+        {
+          "ref": "1Co.11.12"
+        }
+      ]
+    },
+    {
+      "topic": "sufferings-of-christ",
+      "statement": "Isaiah gives the cause of the servant's sufferings with מִן: \"he was pierced because of our transgressions (מִפְּשָׁעֵנוּ), crushed because of our iniquities (מֵעֲוֹנֹתֵינוּ)\" (Isa 53:5), and \"because of the transgression of my people (מִפֶּשַׁע עַמִּי) the stroke was his\" (Isa 53:8). Peter applies the passage to Christ (1Pe 2:24). The word says what his suffering came from, the sins of others; Hebrew's word for \"in place of\" is תַּחַת (the ram offered \"in place of his son\", Gen 22:13), and Isaiah does not use it here. In the same verse the outcome is for the many: \"the chastisement of our peace was upon him, and by his stripes we are healed\" (Isa 53:5).",
+      "evidence": [
+        {
+          "ref": "Isa.53.5"
+        },
+        {
+          "ref": "Isa.53.8"
+        },
+        {
+          "ref": "1Pe.2.24"
+        },
+        {
+          "ref": "Gen.22.13"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 and Numbers 10 (מִן, and מֵעִם, which is am.json's word p.dj.ab and is entered here only as a phrase). Root investigated, as asked for a function word, and keyed by its own consonants מנ (the database keys the Aramaic xm.ak.aa so); no root is viable. (1) The preposition is West Semitic: Hebrew, Aramaic, Syriac, Phoenician, Ugaritic, Arabic, Sabaean (one dialect), Ge'ez, Tigre; Akkadian has none (ina, ištu instead) and Ugaritic and standard Sabaean use it little (b-, l-; bn). Everywhere it has two consonants and an i-vowel; no language shows a third radical or a verb with its sense. (2) Leads weighed: (a) מָנָה \"portion\" (root מנה, count, assign; Ugaritic mnt \"portion\", Segert p. 192), for \"some of\": the partitive is one sense among several and the separative \"from\" is the commonest and the one shared in every language; the vowel and the missing third radical are against it. (b) A verb מנן \"cut off, separate\": no such verb in scripture; Arabic مَنَّ \"cut off\" rests on Wiktionary (Lane's article lacks it), Ugaritic m-n-n is \"be weakened\" (recorded as ar-manna-cut, possible). (c) The indefinite *man / *mīn \"who, what\" (Aramaic מַן Dan 3:6, Ugaritic mnm \"whatever\"), for a partitive \"something of\": not followed by any source. So no root is shown; the entry says so. BDB keys: m.cl.aa named (1,405 uses, the free-standing and suffixed forms only; the prefixed מִ־/מֵ־, thousands more, are counted under the joined noun). m.co.ab (BDB's hypothetical noun מֵן \"portion\" under מנן) has exactly the same tokens and is left unnamed so they are not counted twice; m.co.aa (the root מנן, no tokens), m.ck.ax and m.cn.ah (cross-references, no tokens) left unclaimed. xm.ak.aa (Aramaic) shares the Hebrew surface מִן, so its count (863) includes Hebrew; scripture's Aramaic uses are about a hundred. m.cn.ag (40 tokens of the spelling מִנִּי, BDB's land Minni, Jer 51:27) left unclaimed as a place (minchah.json leaves it too); the poetic מִנִּי is counted under m.cl.aa. Left out, as other words of the same consonants: מָן \"manna\" and מָן \"what?\" (m.ck.au, m.ck.av; Exo 16:15, 31); מֵן \"string\" (m.ck.aw, Psa 150:4 בְּמִנִּים, perhaps Psa 45:9 מִנִּי; its key also catches all 40 מִנִּי tokens); Aramaic מַן \"who?\" (xm.aj.aa, Dan 3:6; Ezr 5:3), which the database files under מנ but which answers to Hebrew מִי; the place Minnith (m.co.ac). These need their own entries (a homograph number if keyed מנ). Lane's article من (p. 3024) is in the incomplete part of the lexicon; Lane's url not given. Ge'ez rests on Wiktionary only; Dillmann/Leslau, Payne Smith for ܡܢ, CAL and DULAT not checked. Doctrine: \"sufferings-of-christ\" contrasts מִן with תַּחַת; reviewer to check the framing."
+}
