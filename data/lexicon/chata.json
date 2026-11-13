@@ -1,0 +1,2250 @@
+{
+  "id": "chata",
+  "root": "חטא",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "sin",
+    "offering",
+    "purity",
+    "worship",
+    "covenant",
+    "death"
+  ],
+  "gloss": "miss, fall short; sin; sin offering; purify from sin",
+  "summary": "חָטָא is to miss: a slinger who does not miss a hair, feet in a hurry that miss the way, a fold inspected and nothing missing (Jdg 20:16; Pro 19:2; Job 5:24); and so to miss what God or another rightly requires, to sin, and to be held in the wrong for it. חַטָּאת and its kin name the sin, the guilt it brings, and the offering that deals with it, so that the goat of Lev 23:19 is simply “a חַטָּאת”; the piel “un-sins”, cleansing an altar, a house or a man (Exo 29:36; Psa 51:9). Arabic ḫaṭiʾa “sin” beside ʾaḫṭaʾa “miss the mark”, and Akkadian ḫaṭû “do wrong”, show the same ḫ and the same pairing of missing and wrongdoing.",
+  "words": [
+    {
+      "lemma": "חַטָּאת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sin; guilt of sin; sin offering; purification",
+      "bdb": [
+        "h.bu.af"
+      ],
+      "summary": "The common noun of the root (about 290 uses). The same word names a wrong done, the guilt or penalty that follows it, the animal offered for it, and the water or ashes that cleanse from it; the context decides which. The sin and the guilt share the cognates’ sense; the offering has only the Targums’ Aramaic beside it, and “purification” rests on scripture’s use alone (Num 8:7; 19:9), with no cognate found that shares it.",
+      "senses": [
+        {
+          "id": "chattath-sin",
+          "gloss": "sin, a wrong done",
+          "definition": "A particular wrong, against God or against another man, that the doer can be charged with, confess, and have forgiven.",
+          "cognate_ids": [
+            "ar-khatia",
+            "akk-hatu",
+            "arc-hata"
+          ],
+          "kin": [
+            "qal-sin"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.31.36",
+              "role": "defining",
+              "note": "Jacob to Laban: “What is my transgression? What is my חַטָּאת, that you have hotly pursued me?”"
+            },
+            {
+              "ref": "1Sa.20.1",
+              "role": "defining",
+              "note": "David: “What is my iniquity, and what is my חַטָּאת before your father, that he seeks my life?”"
+            },
+            {
+              "ref": "Gen.50.17",
+              "note": "“Forgive the transgression of your brothers and their חַטָּאת, for they did evil to you.”"
+            },
+            {
+              "ref": "Exo.32.30",
+              "note": "“Perhaps I can make a covering for your חַטָּאת.”"
+            },
+            {
+              "ref": "Lev.4.23",
+              "note": "When “his חַטָּאת which he sinned” is made known to him."
+            },
+            {
+              "ref": "Num.5.6",
+              "to": "Num.5.7",
+              "role": "defining",
+              "note": "A man or woman who does any of the sins of man, to commit a trespass against Yahweh, shall confess their חַטָּאת and restore it in full."
+            },
+            {
+              "ref": "Psa.32.5",
+              "role": "defining",
+              "note": "“I made known my חַטָּאת to you, and my iniquity I did not cover … and you lifted the iniquity of my חַטָּאת.”"
+            },
+            {
+              "ref": "Psa.51.4",
+              "to": "Psa.51.5",
+              "note": "“Cleanse me from my חַטָּאת, for I know my transgressions, and my חַטָּאת is ever before me.”"
+            },
+            {
+              "ref": "Isa.6.7",
+              "role": "defining",
+              "note": "The coal touches Isaiah’s lips: “your iniquity is taken away, and your חַטָּאת is covered.”"
+            },
+            {
+              "ref": "Jer.31.34",
+              "note": "“I will forgive their iniquity, and their חַטָּאת I will remember no more”; quoted in Heb 8:12 and 10:17."
+            },
+            {
+              "ref": "Mic.7.19",
+              "note": "“You will cast all their חַטֹּאת into the depths of the sea.”"
+            },
+            {
+              "ref": "Job.13.23",
+              "note": "“How many are my iniquities and חַטָּאוֹת? Make me know my transgression and my חַטָּאת.”"
+            },
+            {
+              "ref": "1Ki.15.30",
+              "note": "“The sins of Jeroboam that he sinned and that he made Israel sin.”"
+            }
+          ]
+        },
+        {
+          "id": "chattath-power",
+          "gloss": "sin as a power that lies in wait, pursues, overthrows",
+          "definition": "Sin spoken of as an agent: crouching at the door, finding the sinner out, overthrowing him, a reproach on a people.",
+          "evidence": [
+            {
+              "ref": "Gen.4.7",
+              "role": "defining",
+              "note": "“If you do not do well, חַטָּאת crouches at the door; its desire is for you, but you must rule over it.”"
+            },
+            {
+              "ref": "Num.32.23",
+              "role": "defining",
+              "note": "“You have sinned against Yahweh, and know that your חַטָּאת will find you.”"
+            },
+            {
+              "ref": "Pro.13.6",
+              "note": "“Righteousness guards the one whose way is whole, but wickedness overthrows חַטָּאת.”"
+            },
+            {
+              "ref": "Pro.14.34",
+              "note": "“Righteousness exalts a nation, but חַטָּאת is a reproach to peoples.”"
+            },
+            {
+              "ref": "Pro.5.22",
+              "note": "The wicked man is held fast “with the cords of his חַטָּאת”."
+            }
+          ],
+          "cognate_ids": [
+            "ar-khatia",
+            "akk-hatu",
+            "arc-hata"
+          ]
+        },
+        {
+          "id": "chattath-guilt",
+          "gloss": "guilt of sin; its penalty",
+          "definition": "The guilt a sin leaves on the doer, laid on him or taken off, and the punishment that answers to it.",
+          "evidence": [
+            {
+              "ref": "Num.12.11",
+              "role": "defining",
+              "note": "Aaron: “Do not lay חַטָּאת upon us, in which we have acted foolishly and sinned.”"
+            },
+            {
+              "ref": "Exo.10.17",
+              "role": "defining",
+              "note": "Pharaoh: “Lift, I pray, my חַטָּאת only this once.”"
+            },
+            {
+              "ref": "Exo.32.32",
+              "note": "“Now, if you will lift their חַטָּאת; and if not, blot me out of your book.”"
+            },
+            {
+              "ref": "1Sa.15.25",
+              "note": "Saul: “Lift, I pray, my חַטָּאת.”"
+            },
+            {
+              "ref": "Lam.4.6",
+              "note": "“The iniquity of the daughter of my people is greater than the חַטָּאת of Sodom.”"
+            },
+            {
+              "ref": "Zec.14.19",
+              "role": "defining",
+              "note": "“This shall be the חַטָּאת of Egypt and the חַטָּאת of all the nations that do not go up to keep the feast of Booths”: the penalty, no rain (14:17–18)."
+            },
+            {
+              "ref": "Isa.40.2",
+              "note": "Jerusalem “has received from Yahweh’s hand double for all her חַטֹּאת”."
+            }
+          ],
+          "cognate_ids": [
+            "ar-khatia",
+            "akk-hatu"
+          ]
+        },
+        {
+          "id": "chattath-offering",
+          "gloss": "sin offering",
+          "definition": "The animal (or, for the poor, flour) offered so that a covering is made for a sin or an uncleanness; called by the sin’s own name, its blood put on the altar and its flesh eaten by the priest or burned outside the camp.",
+          "tags": [
+            "offering"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.4.3",
+              "role": "defining",
+              "note": "“If the anointed priest sins … let him bring for his חַטָּאת which he sinned a young bull without blemish to Yahweh לְחַטָּאת”: one word for the sin and the offering."
+            },
+            {
+              "ref": "Lev.4.24",
+              "role": "defining",
+              "note": "Of the goat of the ruler: “it is a חַטָּאת.”"
+            },
+            {
+              "ref": "Lev.5.11",
+              "note": "The poor man’s tenth of an ephah of flour, “for it is a חַטָּאת”."
+            },
+            {
+              "ref": "Lev.6.18",
+              "note": "“This is the law of the חַטָּאת: … it is most holy.”"
+            },
+            {
+              "ref": "Lev.6.23",
+              "role": "defining",
+              "note": "No חַטָּאת whose blood is brought into the tent of meeting to cover in the holy place shall be eaten; it shall be burned with fire."
+            },
+            {
+              "ref": "Lev.10.17",
+              "note": "Moses: the priests should have eaten the חַטָּאת, given them “to bear the iniquity of the congregation”."
+            },
+            {
+              "ref": "Lev.16.5",
+              "note": "On the Day of the coverings, two he-goats לְחַטָּאת; Aaron’s own bull for himself and his house (16:6, 11)."
+            },
+            {
+              "ref": "Lev.16.27",
+              "note": "The bull and goat of the חַטָּאת whose blood was brought in are carried outside the camp and burned."
+            },
+            {
+              "ref": "Lev.23.19",
+              "role": "defining",
+              "note": "At the feast of Weeks: “you shall offer one he-goat of the goats לְחַטָּאת.”"
+            },
+            {
+              "ref": "Num.28.15",
+              "note": "At each new moon, one he-goat לְחַטָּאת to Yahweh."
+            },
+            {
+              "ref": "Num.29.11",
+              "note": "“Besides the חַטַּאת of the coverings.”"
+            },
+            {
+              "ref": "Exo.29.14",
+              "note": "The flesh of Aaron’s ordination bull burned outside the camp: “it is a חַטָּאת.”"
+            },
+            {
+              "ref": "Ezk.43.21",
+              "to": "Ezk.43.22",
+              "note": "In the house Ezekiel is shown, the bull of the חַטָּאת and a he-goat for a חַטָּאת cleanse the altar."
+            },
+            {
+              "ref": "Ezk.45.22",
+              "note": "The prince provides a bull for a חַטָּאת for himself and all the people at the Passover."
+            },
+            {
+              "ref": "Ezr.8.35",
+              "note": "The returned exiles offer twelve he-goats as a חַטָּאת for all Israel."
+            },
+            {
+              "ref": "Hos.4.8",
+              "note": "The priests “eat the חַטָּאת of my people”: the offering, and so the people’s sin, is their food."
+            }
+          ],
+          "cognate_ids": [
+            "arc-hata"
+          ]
+        },
+        {
+          "id": "chattath-purification",
+          "gloss": "purification, means of cleansing",
+          "definition": "That which takes sin or uncleanness away: the water sprinkled on the Levites and the ashes of the red heifer, both called חַטָּאת.",
+          "kin": [
+            "piel-purify",
+            "hithpael-purify"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.8.7",
+              "role": "defining",
+              "note": "“Sprinkle on them מֵי חַטָּאת”, water of purification, to cleanse the Levites."
+            },
+            {
+              "ref": "Num.19.9",
+              "role": "defining",
+              "note": "The ashes of the red heifer are kept for the water of impurity: “it is a חַטָּאת.”"
+            },
+            {
+              "ref": "Num.19.17",
+              "note": "“The ashes of the burning of the חַטָּאת.”"
+            },
+            {
+              "ref": "Zec.13.1",
+              "role": "defining",
+              "note": "“A fountain opened to the house of David … לְחַטָּאת וּלְנִדָּה”, for sin and for impurity."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἁμαρτία",
+          "gloss": "sin; (περὶ ἁμαρτίας) sin offering",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "חַטָּאת → ἁμαρτία ×244 (lemma count, MACULA alignment); Lev.4.3, חַטָּאת → ἁμαρτίας; Lev.23.19, חַטָּאת → ἁμαρτίας"
+            },
+            {
+              "ref": "Heb.8.12",
+              "note": "Quotes Jer 31:34: “their ἁμαρτιῶν I will remember no more.”"
+            },
+            {
+              "ref": "Heb.10.17"
+            },
+            {
+              "ref": "Jhn.1.29",
+              "note": "“The Lamb of God who takes away the ἁμαρτίαν of the world”: the Hebrew idiom נָשָׂא חַטָּאת “lift sin” (Exo 10:17; 1Sa 15:25)."
+            },
+            {
+              "ref": "Heb.13.11",
+              "to": "Heb.13.12",
+              "note": "The bodies of the beasts whose blood is brought into the holy place περὶ ἁμαρτίας are burned outside the camp (Lev 6:23; 16:27); so Jesus suffered outside the gate."
+            },
+            {
+              "ref": "Rom.8.3",
+              "note": "God sent his Son in the likeness of the flesh of ἁμαρτίας, and περὶ ἁμαρτίας condemned sin in the flesh."
+            },
+            {
+              "ref": "2Co.5.21",
+              "note": "“Him who knew no ἁμαρτίαν he made ἁμαρτίαν for us.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἁγνισμός",
+          "gloss": "purification",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.8.7, חַטָּאת → ἁγνισμοῦ; Num.19.9, חַטָּאת → ἅγνισμα"
+            },
+            {
+              "ref": "Act.21.26",
+              "note": "Paul announces “the fulfilment of the days of the ἁγνισμοῦ”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָוֹן",
+            "note": "Iniquity, set beside חַטָּאת in confession and forgiveness.",
+            "evidence": [
+              {
+                "ref": "Psa.32.5"
+              },
+              {
+                "ref": "Isa.6.7"
+              },
+              {
+                "ref": "Jer.31.34"
+              },
+              {
+                "ref": "Psa.51.4"
+              }
+            ]
+          },
+          {
+            "lemma": "פֶּשַׁע",
+            "note": "Transgression, revolt.",
+            "evidence": [
+              {
+                "ref": "Gen.50.17"
+              },
+              {
+                "ref": "Psa.51.5"
+              },
+              {
+                "ref": "Job.13.23"
+              },
+              {
+                "ref": "Mic.1.5"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "צְדָקָה",
+            "note": "Righteousness against sin.",
+            "evidence": [
+              {
+                "ref": "Pro.13.6"
+              },
+              {
+                "ref": "Pro.14.34"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נָשָׂא חַטָּאת",
+            "gloss": "lift sin: forgive, take it away",
+            "evidence": [
+              {
+                "ref": "Exo.10.17"
+              },
+              {
+                "ref": "Exo.32.32"
+              },
+              {
+                "ref": "1Sa.15.25"
+              },
+              {
+                "ref": "Gen.50.17"
+              },
+              {
+                "ref": "Psa.32.5"
+              }
+            ]
+          },
+          {
+            "phrase": "תּוֹרַת הַחַטָּאת",
+            "gloss": "the law of the sin offering",
+            "evidence": [
+              {
+                "ref": "Lev.6.18"
+              },
+              {
+                "ref": "Lev.7.37"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׂעִיר עִזִּים אֶחָד לְחַטָּאת",
+            "gloss": "one he-goat of the goats for a sin offering",
+            "evidence": [
+              {
+                "ref": "Lev.23.19"
+              },
+              {
+                "ref": "Num.28.15"
+              },
+              {
+                "ref": "Num.28.22"
+              },
+              {
+                "ref": "Num.29.5"
+              }
+            ]
+          },
+          {
+            "phrase": "חַטַּאת הַכִּפֻּרִים",
+            "gloss": "the sin offering of the coverings",
+            "evidence": [
+              {
+                "ref": "Exo.30.10"
+              },
+              {
+                "ref": "Num.29.11"
+              }
+            ]
+          },
+          {
+            "phrase": "מֵי חַטָּאת",
+            "gloss": "water of purification",
+            "evidence": [
+              {
+                "ref": "Num.8.7"
+              }
+            ]
+          },
+          {
+            "phrase": "חַטֹּאות יָרָבְעָם",
+            "gloss": "the sins of Jeroboam, the measure of Israel’s kings",
+            "evidence": [
+              {
+                "ref": "1Ki.15.30"
+              },
+              {
+                "ref": "2Ki.10.31"
+              },
+              {
+                "ref": "2Ki.13.2"
+              },
+              {
+                "ref": "2Ki.17.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָטָא",
+      "pos": "verb",
+      "gloss": "miss, fall short; sin; (piel) un-sin, purify; (hiphil) cause to sin",
+      "bdb": [
+        "h.bu.aa"
+      ],
+      "summary": "In the qal, mostly “sin” (some 180 uses), and a few times the plain “miss” that sin is spoken of as; also “be held in the wrong, bear the blame, forfeit”. The hiphil makes others sin, and once is “miss” a mark. The piel and hithpael undo sin: to purify, by the blood of the sin offering or the water of purification. No cognate found shares that sense; it rests on scripture’s use, where the piel goes with the noun’s “sin offering” and “purification” (Exo 29:36; Num 19:9, 19).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "miss; sin; be in the wrong, forfeit",
+          "cognate_ids": [
+            "ar-khatia",
+            "akk-hatu",
+            "gez-khatia",
+            "uga-hta",
+            "arc-hata"
+          ],
+          "senses": [
+            {
+              "id": "qal-miss",
+              "gloss": "miss, fail to find or reach",
+              "definition": "Miss the way or the thing sought: the opposite of finding.",
+              "cognate_ids": [
+                "ar-khatia",
+                "gez-khatia"
+              ],
+              "evidence": [
+                {
+                  "ref": "Pro.19.2",
+                  "role": "defining",
+                  "note": "“He who hurries with his feet misses (חוֹטֵא).”"
+                },
+                {
+                  "ref": "Job.5.24",
+                  "role": "defining",
+                  "note": "“You will inspect your fold and not miss (לֹא תֶחֱטָא)”: find nothing gone."
+                },
+                {
+                  "ref": "Pro.8.36",
+                  "role": "defining",
+                  "note": "Wisdom: “Whoever finds me finds life” (8:35), “but whoever misses me (חֹטְאִי) does violence to his own soul; all who hate me love death.”"
+                }
+              ]
+            },
+            {
+              "id": "qal-sin",
+              "gloss": "sin, do wrong (against God or man)",
+              "definition": "Fail of what is owed to God or to another man: break his command, wrong him. Done “against” (לְ) someone; may be in error (בִּשְׁגָגָה) or with a high hand.",
+              "cognate_ids": [
+                "ar-khatia",
+                "akk-hatu",
+                "arc-hata"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.39.9",
+                  "role": "defining",
+                  "note": "Joseph: “How can I do this great evil and sin against God?”"
+                },
+                {
+                  "ref": "Gen.40.1",
+                  "role": "defining",
+                  "note": "The cupbearer and the baker “sinned against their lord, the king of Egypt”."
+                },
+                {
+                  "ref": "Gen.42.22",
+                  "note": "Reuben: “Did I not tell you, Do not sin against the boy?”"
+                },
+                {
+                  "ref": "1Sa.19.4",
+                  "to": "1Sa.19.5",
+                  "role": "defining",
+                  "note": "“Let not the king sin against his servant David, because he has not sinned against you … why will you sin against innocent blood?”"
+                },
+                {
+                  "ref": "Jdg.11.27",
+                  "note": "Jephthah to Ammon: “I have not sinned against you, but you do me wrong.”"
+                },
+                {
+                  "ref": "2Ki.18.14",
+                  "note": "Hezekiah to the king of Assyria: “I have done wrong.”"
+                },
+                {
+                  "ref": "Jer.37.18",
+                  "note": "“What have I sinned against you, or against your servants?”"
+                },
+                {
+                  "ref": "1Sa.2.25",
+                  "role": "defining",
+                  "note": "“If a man sins against a man, God will judge him; but if a man sins against Yahweh, who will intercede for him?”"
+                },
+                {
+                  "ref": "Lev.4.2",
+                  "role": "defining",
+                  "note": "“When a soul sins in error against any of the commands of Yahweh, things which should not be done.”"
+                },
+                {
+                  "ref": "Num.15.27",
+                  "to": "Num.15.28",
+                  "note": "The soul that sins in error brings a goat for a sin offering, and it is forgiven him; set against the one who acts with a high hand (15:30)."
+                },
+                {
+                  "ref": "Exo.32.30",
+                  "to": "Exo.32.33",
+                  "note": "“Whoever has sinned against me, him I will blot out of my book.”"
+                },
+                {
+                  "ref": "2Sa.12.13",
+                  "note": "David: “I have sinned against Yahweh.”"
+                },
+                {
+                  "ref": "Psa.51.6",
+                  "role": "defining",
+                  "note": "“Against you, you only, have I sinned, and done this evil in your eyes, so that you are right when you speak”; quoted in Rom 3:4."
+                },
+                {
+                  "ref": "Psa.4.5",
+                  "note": "“Tremble and do not sin”; the Greek of this line in Eph 4:26."
+                },
+                {
+                  "ref": "1Ki.8.46",
+                  "role": "defining",
+                  "note": "“There is no man who does not sin.”"
+                },
+                {
+                  "ref": "Ecc.7.20",
+                  "note": "“There is not a righteous man on earth who does good and does not sin.”"
+                },
+                {
+                  "ref": "Ezk.18.4",
+                  "role": "defining",
+                  "note": "“The soul that sins, it shall die.”"
+                },
+                {
+                  "ref": "Ezk.18.20"
+                },
+                {
+                  "ref": "Psa.106.6",
+                  "note": "“We have sinned with our fathers; we have committed iniquity; we have done wickedly.”"
+                },
+                {
+                  "ref": "Dan.9.5",
+                  "note": "Daniel’s confession for Israel."
+                },
+                {
+                  "ref": "Pro.11.31",
+                  "note": "“The righteous will be repaid on the earth; how much more the wicked and the חוֹטֵא”; the Greek of it in 1Pe 4:18."
+                },
+                {
+                  "ref": "Isa.65.20",
+                  "note": "In the new heavens and earth, “the חוֹטֵא a hundred years old shall be accursed”: a sinner still dies there; the participle may also be read “the one who falls short of a hundred years”."
+                }
+              ]
+            },
+            {
+              "id": "qal-forfeit",
+              "gloss": "be in the wrong, bear the blame; forfeit",
+              "definition": "Be held guilty and bear the consequence; with נֶפֶשׁ, sin against one’s own soul, forfeit one’s life.",
+              "evidence": [
+                {
+                  "ref": "Gen.43.9",
+                  "role": "defining",
+                  "note": "Judah for Benjamin: “If I do not bring him back to you … וְחָטָאתִי לְךָ כָּל־הַיָּמִים”, then I will bear the blame before you for ever."
+                },
+                {
+                  "ref": "Gen.44.32"
+                },
+                {
+                  "ref": "Pro.20.2",
+                  "role": "defining",
+                  "note": "“Whoever provokes the king חוֹטֵא נַפְשׁוֹ”: forfeits his own life."
+                },
+                {
+                  "ref": "Hab.2.10",
+                  "note": "“You have devised shame for your house … וְחוֹטֵא נַפְשֶׁךָ”, forfeiting your soul."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to sin; bring sin on; miss (a mark)",
+          "cognate_ids": [
+            "ar-khatia",
+            "arc-hata"
+          ],
+          "senses": [
+            {
+              "id": "hiphil-miss",
+              "gloss": "miss the mark",
+              "definition": "Of a slinger, fail to hit.",
+              "evidence": [
+                {
+                  "ref": "Jdg.20.16",
+                  "role": "defining",
+                  "note": "Seven hundred left-handed men of Benjamin, “every one slinging a stone at a hair, וְלֹא יַחֲטִא”, and not missing."
+                }
+              ]
+            },
+            {
+              "gloss": "cause to sin, lead into sin",
+              "definition": "Bring others to sin, above all Jeroboam, “who made Israel sin” with the calves of Bethel and Dan.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.33",
+                  "role": "defining",
+                  "note": "The nations shall not live in the land “lest they make you sin against me; for you will serve their gods”."
+                },
+                {
+                  "ref": "1Ki.14.16",
+                  "role": "defining",
+                  "note": "“The sins of Jeroboam which he sinned and which he made Israel sin.”"
+                },
+                {
+                  "ref": "1Ki.16.2"
+                },
+                {
+                  "ref": "2Ki.10.29",
+                  "note": "“The sins of Jeroboam … the golden calves in Bethel and Dan.”"
+                },
+                {
+                  "ref": "2Ki.17.21",
+                  "note": "Jeroboam drove Israel from following Yahweh “and made them sin a great sin”."
+                },
+                {
+                  "ref": "2Ki.21.11",
+                  "note": "Manasseh “made Judah sin with his idols”."
+                },
+                {
+                  "ref": "Neh.13.26",
+                  "note": "Of Solomon: “even him did foreign women make sin.”"
+                }
+              ]
+            },
+            {
+              "gloss": "bring sin upon; make out an offender",
+              "definition": "Bring guilt on a land or on one’s own flesh; make a man out an offender by a word.",
+              "evidence": [
+                {
+                  "ref": "Deu.24.4",
+                  "role": "defining",
+                  "note": "Taking back a divorced wife defiled by another: “you shall not bring sin on the land.”"
+                },
+                {
+                  "ref": "Ecc.5.5",
+                  "note": "“Do not let your mouth cause your flesh to sin.”"
+                },
+                {
+                  "ref": "Isa.29.21",
+                  "role": "defining",
+                  "note": "Those “who make a man an offender by a word”, who lay a snare for him who reproves in the gate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "bear the loss; offer for sin; un-sin, purify",
+          "senses": [
+            {
+              "gloss": "bear the loss",
+              "definition": "Make good what is missing, out of one’s own stock.",
+              "cognate_ids": [
+                "akk-hatu",
+                "gez-khatia"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.31.39",
+                  "role": "defining",
+                  "note": "Jacob to Laban: “What was torn I did not bring to you; אָנֹכִי אֲחַטֶּנָּה, I bore the loss of it; you required it of my hand.”"
+                }
+              ]
+            },
+            {
+              "gloss": "offer as a sin offering",
+              "definition": "Present an animal, or its blood, as the sin offering.",
+              "evidence": [
+                {
+                  "ref": "Lev.6.19",
+                  "role": "defining",
+                  "note": "“The priest who offers it for sin (הַמְחַטֵּא) shall eat it.”"
+                },
+                {
+                  "ref": "Lev.9.15",
+                  "note": "Aaron took the people’s goat “and offered it for sin (וַיְחַטְּאֵהוּ) like the first”."
+                },
+                {
+                  "ref": "2Ch.29.24",
+                  "note": "The priests “made a sin offering with their blood on the altar, to cover for all Israel”."
+                }
+              ],
+              "cognate_ids": [
+                "arc-hata"
+              ]
+            },
+            {
+              "id": "piel-purify",
+              "gloss": "un-sin, purify, cleanse",
+              "definition": "Take sin or uncleanness away from a thing or a person: an altar by the blood of the sin offering, a house or a man by sprinkling, a sinner by God himself.",
+              "kin": [
+                "chattath-purification"
+              ],
+              "evidence": [
+                {
+                  "ref": "Exo.29.36",
+                  "role": "defining",
+                  "note": "“A bull of חַטָּאת every day for coverings; וְחִטֵּאתָ the altar when you make a covering for it.”"
+                },
+                {
+                  "ref": "Lev.8.15",
+                  "role": "defining",
+                  "note": "Moses put the blood on the horns of the altar “and purified (וַיְחַטֵּא) the altar”."
+                },
+                {
+                  "ref": "Lev.14.49",
+                  "note": "To cleanse a house of leprosy: two birds, cedar, scarlet and hyssop."
+                },
+                {
+                  "ref": "Lev.14.52"
+                },
+                {
+                  "ref": "Num.19.19",
+                  "role": "defining",
+                  "note": "The clean man sprinkles the unclean on the third and seventh day, “and he shall purify him on the seventh day”."
+                },
+                {
+                  "ref": "Ezk.43.20",
+                  "to": "Ezk.43.23",
+                  "note": "The altar of the house Ezekiel is shown is purified with the blood of the bull and the goat."
+                },
+                {
+                  "ref": "Ezk.45.18",
+                  "note": "“In the first month, on the first of the month, take a young bull without blemish and purify the holy place.”"
+                },
+                {
+                  "ref": "Psa.51.9",
+                  "role": "defining",
+                  "note": "“תְּחַטְּאֵנִי with hyssop, and I shall be clean; wash me, and I shall be whiter than snow.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "purify oneself; (once) be beside oneself",
+          "senses": [
+            {
+              "id": "hithpael-purify",
+              "gloss": "purify oneself, be purified",
+              "definition": "Be cleansed from the uncleanness of the dead, by the water of purification on the third and seventh days.",
+              "kin": [
+                "chattath-purification"
+              ],
+              "evidence": [
+                {
+                  "ref": "Num.19.12",
+                  "role": "defining",
+                  "note": "“He shall purify himself with it on the third day and on the seventh day, and he shall be clean.”"
+                },
+                {
+                  "ref": "Num.19.13",
+                  "note": "Whoever touches the dead and does not purify himself defiles the dwelling of Yahweh."
+                },
+                {
+                  "ref": "Num.19.20"
+                },
+                {
+                  "ref": "Num.8.21",
+                  "role": "defining",
+                  "note": "“The Levites purified themselves and washed their clothes.”"
+                },
+                {
+                  "ref": "Num.31.19",
+                  "to": "Num.31.20",
+                  "note": "The men back from Midian purify themselves, their captives, and every garment and vessel."
+                },
+                {
+                  "ref": "Num.31.23",
+                  "note": "Metal passed through the fire must still be purified with the water of impurity."
+                }
+              ]
+            },
+            {
+              "gloss": "lose oneself, draw back (uncertain)",
+              "definition": "Of the mighty before Leviathan: perhaps “they miss themselves”, are beside themselves with fear. A single use; the sense is not certain.",
+              "evidence": [
+                {
+                  "ref": "Job.41.17",
+                  "role": "defining",
+                  "note": "“When it raises itself the mighty are afraid; at its crashing יִתְחַטָּאוּ.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἁμαρτάνω",
+          "gloss": "sin; (classical) miss the mark",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "חָטָא → ἁμαρτάνω ×118 (lemma count, MACULA alignment); Lev.4.3, יֶחֱטָא → ἁμάρτῃ; Psa.51.6, חָטָאתִי → ἥμαρτον; Ezk.18.4, חֹטֵאת → ἁμαρτάνουσα; Pro.8.36, חֹטְאִי → ἁμαρτάνοντες"
+            },
+            {
+              "ref": "Rom.3.4",
+              "note": "Quotes Psa 51:6, David’s confession, “that you may be justified in your words”."
+            },
+            {
+              "ref": "Eph.4.26",
+              "note": "“Be angry and do not ἁμαρτάνετε”, the words of Psa 4:5."
+            },
+            {
+              "ref": "Rom.3.23",
+              "note": "“All have sinned and fall short of the glory of God.”"
+            },
+            {
+              "ref": "Rom.5.12"
+            }
+          ]
+        },
+        {
+          "lemma": "ἁγνίζω",
+          "gloss": "purify",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.8.21, יִּתְחַטְּאוּ → ἡγνίσαντο; Num.31.19, תִּתְחַטְּאוּ → ἁγνισθήσεται"
+            },
+            {
+              "ref": "Act.21.24",
+              "note": "Paul is told to purify himself with the four men under a vow."
+            },
+            {
+              "ref": "Act.21.26"
+            },
+            {
+              "ref": "Jas.4.8",
+              "note": "“Cleanse your hands, sinners, and ἁγνίσατε your hearts.”"
+            },
+            {
+              "ref": "1Jn.3.3"
+            }
+          ]
+        },
+        {
+          "lemma": "καθαρίζω",
+          "gloss": "cleanse",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.29.36, חִטֵּאתָ → καθαριεῖς"
+            },
+            {
+              "ref": "Heb.9.22",
+              "to": "Heb.9.23",
+              "note": "Almost all things are cleansed with blood under the law; the patterns of the heavenly things were cleansed with these."
+            },
+            {
+              "ref": "1Jn.1.7",
+              "note": "“The blood of Jesus his Son cleanses us from all sin.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ῥαντίζω",
+          "gloss": "sprinkle (clean)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.51.9, תְּחַטְּאֵנִי → ῥαντιεῖς"
+            },
+            {
+              "ref": "Heb.9.13",
+              "to": "Heb.9.14",
+              "note": "The ashes of a heifer sprinkling the unclean sanctify to the cleanness of the flesh; how much more the blood of Christ."
+            },
+            {
+              "ref": "Heb.9.19",
+              "note": "Moses sprinkled the book and the people with blood, water, scarlet wool and hyssop."
+            },
+            {
+              "ref": "Heb.10.22"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָוָה",
+            "note": "“Commit iniquity”, beside “sin” in confession.",
+            "evidence": [
+              {
+                "ref": "Psa.106.6"
+              },
+              {
+                "ref": "1Ki.8.47"
+              },
+              {
+                "ref": "Dan.9.5"
+              },
+              {
+                "ref": "2Sa.24.17"
+              }
+            ]
+          },
+          {
+            "lemma": "רָשַׁע",
+            "note": "“Do wickedly.”",
+            "evidence": [
+              {
+                "ref": "Psa.106.6"
+              },
+              {
+                "ref": "1Ki.8.47"
+              }
+            ]
+          },
+          {
+            "lemma": "טָהֵר",
+            "note": "Be clean: what the piel and hithpael of חָטָא bring about.",
+            "evidence": [
+              {
+                "ref": "Psa.51.9"
+              },
+              {
+                "ref": "Num.19.12"
+              },
+              {
+                "ref": "Num.8.21"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "מָצָא",
+            "note": "Find, against “miss”.",
+            "evidence": [
+              {
+                "ref": "Pro.8.35",
+                "to": "Pro.8.36"
+              }
+            ]
+          },
+          {
+            "lemma": "עָשָׂה טוֹב",
+            "note": "Do good, against sin.",
+            "evidence": [
+              {
+                "ref": "Ecc.7.20"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חָטָאתִי",
+            "gloss": "“I have sinned”: the confession",
+            "evidence": [
+              {
+                "ref": "Exo.9.27"
+              },
+              {
+                "ref": "Num.22.34"
+              },
+              {
+                "ref": "1Sa.15.24"
+              },
+              {
+                "ref": "2Sa.12.13"
+              },
+              {
+                "ref": "Psa.51.6"
+              }
+            ]
+          },
+          {
+            "phrase": "חָטָא לַיהוָה",
+            "gloss": "sin against Yahweh",
+            "evidence": [
+              {
+                "ref": "1Sa.7.6"
+              },
+              {
+                "ref": "Num.32.23"
+              },
+              {
+                "ref": "2Sa.12.13"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲשֶׁר הֶחֱטִיא אֶת־יִשְׂרָאֵל",
+            "gloss": "who made Israel sin (of Jeroboam)",
+            "evidence": [
+              {
+                "ref": "1Ki.14.16"
+              },
+              {
+                "ref": "1Ki.15.30"
+              },
+              {
+                "ref": "2Ki.10.31"
+              },
+              {
+                "ref": "2Ki.13.2"
+              }
+            ]
+          },
+          {
+            "phrase": "חָטָא בִּשְׁגָגָה",
+            "gloss": "sin in error, unwittingly",
+            "evidence": [
+              {
+                "ref": "Lev.4.2"
+              },
+              {
+                "ref": "Lev.4.27"
+              },
+              {
+                "ref": "Num.15.27"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֵטְא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sin; guilt of sin, borne by the sinner",
+      "bdb": [
+        "h.bu.ab"
+      ],
+      "cognate_ids": [
+        "ar-khatia",
+        "akk-hatu"
+      ],
+      "summary": "A sin, and above all the guilt of it, which a man “bears” (נָשָׂא חֵטְא) until he dies for it or it is taken from him; Isaiah’s servant “bore the חֵטְא of many” (Isa 53:12).",
+      "senses": [
+        {
+          "id": "chet-sin",
+          "gloss": "sin, offence",
+          "definition": "A wrong done, a fault.",
+          "kin": [
+            "qal-sin"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.41.9",
+              "role": "defining",
+              "note": "The cupbearer: “I remember my faults today.”"
+            },
+            {
+              "ref": "Psa.51.7",
+              "role": "defining",
+              "note": "“Behold, I was brought forth in iniquity, and in חֵטְא my mother conceived me.”"
+            },
+            {
+              "ref": "Psa.51.11",
+              "note": "“Hide your face from my sins, and blot out all my iniquities.”"
+            },
+            {
+              "ref": "Isa.1.18",
+              "role": "defining",
+              "note": "“Though your sins be as scarlet, they shall be as white as snow.”"
+            },
+            {
+              "ref": "Isa.38.17",
+              "note": "“You have cast all my sins behind your back.”"
+            },
+            {
+              "ref": "Psa.103.10",
+              "note": "“He has not dealt with us according to our sins.”"
+            },
+            {
+              "ref": "Lam.1.8",
+              "note": "“Jerusalem has sinned a sin (חֵטְא חָטְאָה).”"
+            },
+            {
+              "ref": "Isa.31.7",
+              "note": "The idols of silver and gold “which your hands have made for you, a sin”."
+            },
+            {
+              "ref": "Ecc.10.4",
+              "note": "“Calmness lays great offences to rest.”"
+            },
+            {
+              "ref": "Hos.12.9",
+              "note": "Ephraim: “they will find in me no iniquity that is sin.”"
+            }
+          ]
+        },
+        {
+          "id": "chet-guilt",
+          "gloss": "guilt of sin, to be borne",
+          "definition": "The guilt that rests on a sinner, which he bears, in some cases to death; “it will be sin in you” of what makes one guilty.",
+          "evidence": [
+            {
+              "ref": "Lev.19.17",
+              "role": "defining",
+              "note": "“Reprove your neighbour, and you shall not bear חֵטְא because of him.”"
+            },
+            {
+              "ref": "Lev.20.20",
+              "note": "“They shall bear their sin; they shall die childless.”"
+            },
+            {
+              "ref": "Lev.22.9",
+              "role": "defining",
+              "note": "The priests “lest they bear sin for it and die thereby”."
+            },
+            {
+              "ref": "Lev.24.15",
+              "note": "“Whoever curses his God shall bear his sin.”"
+            },
+            {
+              "ref": "Num.9.13",
+              "note": "He who will not keep the Passover “shall bear his sin”."
+            },
+            {
+              "ref": "Num.18.22",
+              "role": "defining",
+              "note": "“The children of Israel shall not come near the tent of meeting, to bear sin and die.”"
+            },
+            {
+              "ref": "Num.18.32"
+            },
+            {
+              "ref": "Deu.15.9",
+              "note": "If the poor man cries to Yahweh against you, “it will be sin in you”."
+            },
+            {
+              "ref": "Deu.23.22",
+              "to": "Deu.23.23",
+              "note": "A vow unpaid “will be sin in you”; not to vow is no sin."
+            },
+            {
+              "ref": "Deu.24.15"
+            },
+            {
+              "ref": "Deu.21.22",
+              "role": "defining",
+              "note": "“If a man has a חֵטְא worthy of death and is put to death, and you hang him on a tree.”"
+            },
+            {
+              "ref": "Deu.22.26",
+              "note": "The girl forced in the field has “no sin worthy of death”."
+            },
+            {
+              "ref": "Deu.24.16",
+              "role": "defining",
+              "note": "“Every man shall be put to death for his own sin.”"
+            },
+            {
+              "ref": "2Ki.14.6"
+            },
+            {
+              "ref": "Num.27.3",
+              "note": "“Our father died in the wilderness … in his own sin he died.”"
+            },
+            {
+              "ref": "Isa.53.12",
+              "role": "defining",
+              "note": "The servant “poured out his soul to death … and he bore the חֵטְא of many, and made intercession for the transgressors.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἁμαρτία",
+          "gloss": "sin",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "חֵטְא → ἁμαρτία ×25 (lemma count, MACULA alignment); Isa.53.12, חֵטְא → ἁμαρτίας; Psa.51.7, חֵטְא → ἁμαρτίαις"
+            },
+            {
+              "ref": "Heb.9.28",
+              "note": "“Christ was once offered to bear the ἁμαρτίας of many”: Isa 53:12."
+            },
+            {
+              "ref": "1Pe.2.24",
+              "note": "“Who himself bore our ἁμαρτίας in his own body on the tree.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "נָשָׂא חֵטְא",
+            "gloss": "bear sin: carry its guilt and penalty",
+            "evidence": [
+              {
+                "ref": "Lev.19.17"
+              },
+              {
+                "ref": "Lev.22.9"
+              },
+              {
+                "ref": "Num.18.22"
+              },
+              {
+                "ref": "Isa.53.12"
+              }
+            ]
+          },
+          {
+            "phrase": "חֵטְא מִשְׁפַּט־מָוֶת",
+            "gloss": "a sin with a sentence of death",
+            "evidence": [
+              {
+                "ref": "Deu.21.22"
+              }
+            ]
+          },
+          {
+            "phrase": "וְהָיָה בְךָ חֵטְא",
+            "gloss": "it will be sin in you",
+            "evidence": [
+              {
+                "ref": "Deu.15.9"
+              },
+              {
+                "ref": "Deu.23.22"
+              },
+              {
+                "ref": "Deu.24.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חַטָּא",
+      "pos": "adjective",
+      "gloss": "sinful; a sinner",
+      "bdb": [
+        "h.bu.ac"
+      ],
+      "cognate_ids": [
+        "ar-khatia"
+      ],
+      "summary": "Mostly as a noun, “sinners”, set against the righteous; once “those in the wrong”, held as offenders (1Ki 1:21).",
+      "senses": [
+        {
+          "gloss": "sinful; sinners",
+          "definition": "Those whose way is sin, against the righteous and the congregation of the righteous.",
+          "kin": [
+            "qal-sin"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.1.1",
+              "role": "defining",
+              "note": "“Blessed is the man who … has not stood in the way of חַטָּאִים.”"
+            },
+            {
+              "ref": "Psa.1.5",
+              "role": "defining",
+              "note": "“The wicked shall not stand in the judgment, nor חַטָּאִים in the congregation of the righteous.”"
+            },
+            {
+              "ref": "Pro.13.21",
+              "role": "defining",
+              "note": "“Evil pursues חַטָּאִים, but the righteous are repaid with good.”"
+            },
+            {
+              "ref": "Gen.13.13",
+              "note": "“The men of Sodom were wicked and great sinners against Yahweh.”"
+            },
+            {
+              "ref": "Num.17.3",
+              "note": "The censers of “these sinners against their own souls”, Korah’s company."
+            },
+            {
+              "ref": "Num.32.14",
+              "note": "“A brood of sinful men.”"
+            },
+            {
+              "ref": "1Sa.15.18",
+              "note": "“Go and utterly destroy the sinners, Amalek.”"
+            },
+            {
+              "ref": "Psa.25.8",
+              "note": "“Good and upright is Yahweh; therefore he teaches sinners in the way.”"
+            },
+            {
+              "ref": "Psa.51.15",
+              "note": "“Then I will teach transgressors your ways, and sinners shall return to you.”"
+            },
+            {
+              "ref": "Psa.104.35",
+              "note": "“Let sinners be consumed from the earth, and the wicked be no more.”"
+            },
+            {
+              "ref": "Pro.1.10",
+              "note": "“My son, if sinners entice you, do not consent.”"
+            },
+            {
+              "ref": "Isa.1.28",
+              "note": "“The destruction of transgressors and sinners together.”"
+            },
+            {
+              "ref": "Isa.33.14",
+              "note": "“The sinners in Zion are afraid.”"
+            },
+            {
+              "ref": "Amo.9.8",
+              "note": "“The eyes of the Lord Yahweh are on the sinful kingdom.”"
+            },
+            {
+              "ref": "Amo.9.10"
+            }
+          ]
+        },
+        {
+          "gloss": "in the wrong, counted offenders",
+          "definition": "Held guilty, treated as offenders, without having sinned.",
+          "evidence": [
+            {
+              "ref": "1Ki.1.21",
+              "role": "defining",
+              "note": "Bathsheba: when the king sleeps with his fathers, “I and my son Solomon shall be חַטָּאִים”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἁμαρτωλός",
+          "gloss": "sinner, sinful",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "חַטָּא → ἁμαρτωλός ×11 (lemma count, MACULA alignment); Psa.1.1, חַטָּאִים → ἁμαρτωλῶν; Gen.13.13; Pro.11.31, חוֹטֵא → ἁμαρτωλὸς"
+            },
+            {
+              "ref": "1Pe.4.18",
+              "note": "“Where will the ungodly and the ἁμαρτωλός appear?”: the Greek of Pro 11:31."
+            },
+            {
+              "ref": "Luk.18.13",
+              "note": "“God, be merciful to me, the ἁμαρτωλῷ.”"
+            },
+            {
+              "ref": "1Ti.1.15",
+              "note": "“Christ Jesus came into the world to save ἁμαρτωλούς.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רָשָׁע",
+            "note": "The wicked, beside sinners.",
+            "evidence": [
+              {
+                "ref": "Psa.1.1"
+              },
+              {
+                "ref": "Psa.1.5"
+              },
+              {
+                "ref": "Psa.104.35"
+              }
+            ]
+          },
+          {
+            "lemma": "פֹּשְׁעִים",
+            "note": "Transgressors.",
+            "evidence": [
+              {
+                "ref": "Isa.1.28"
+              },
+              {
+                "ref": "Psa.51.15"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "צַדִּיקִים",
+            "note": "The righteous.",
+            "evidence": [
+              {
+                "ref": "Psa.1.5"
+              },
+              {
+                "ref": "Pro.13.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֲטָאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sin; sin offering",
+      "bdb": [
+        "h.bu.ae"
+      ],
+      "cognate_ids": [
+        "ar-khatia",
+        "akk-hatu"
+      ],
+      "summary": "A rarer form (8 uses), four times in “a great sin” (חֲטָאָה גְדֹלָה), once for the sin offering (Psa 40:7).",
+      "senses": [
+        {
+          "gloss": "sin, a great sin",
+          "definition": "A sin, especially one that brings guilt on a whole people or kingdom.",
+          "kin": [
+            "chattath-sin"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.20.9",
+              "role": "defining",
+              "note": "Abimelech: “What have I sinned against you, that you have brought on me and my kingdom a great sin?”"
+            },
+            {
+              "ref": "Exo.32.21",
+              "note": "“What did this people do to you, that you have brought a great sin on them?”"
+            },
+            {
+              "ref": "Exo.32.30",
+              "to": "Exo.32.31",
+              "role": "defining",
+              "note": "“You have sinned a great sin … this people have sinned a great sin and made themselves gods of gold.”"
+            },
+            {
+              "ref": "2Ki.17.21",
+              "note": "Jeroboam “made them sin a great sin”."
+            },
+            {
+              "ref": "Psa.32.1",
+              "role": "defining",
+              "note": "“Blessed is he whose transgression is lifted, whose חֲטָאָה is covered”; quoted in Rom 4:7."
+            },
+            {
+              "ref": "Psa.109.7",
+              "note": "“Let his prayer become sin.”"
+            }
+          ]
+        },
+        {
+          "gloss": "sin offering",
+          "definition": "The offering for sin, named with the burnt offering.",
+          "kin": [
+            "chattath-offering"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.40.7",
+              "role": "defining",
+              "note": "“Sacrifice and offering you did not desire … burnt offering and חֲטָאָה you have not asked”; quoted in Heb 10:5–8."
+            }
+          ],
+          "cognate_ids": [
+            "arc-hata"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἁμαρτία",
+          "gloss": "sin; (περὶ ἁμαρτίας) sin offering",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.40.7 (LXX 39:7), חֲטָאָה → (περὶ) ἁμαρτίας"
+            },
+            {
+              "ref": "Heb.10.6",
+              "note": "Quotes Psa 40:7: “in burnt offerings and περὶ ἁμαρτίας you took no pleasure.”"
+            },
+            {
+              "ref": "Heb.10.8"
+            },
+            {
+              "ref": "Rom.4.7",
+              "note": "Quotes Psa 32:1: “whose ἁμαρτίαι are covered.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַטָּאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sin",
+      "cognate_ids": [
+        "ar-khatia"
+      ],
+      "summary": "A by-form of חַטָּאת in two verses (Exo 34:7; Isa 5:18). Its uses are counted under חַטָּאת, whose tokens share the same index.",
+      "senses": [
+        {
+          "gloss": "sin",
+          "definition": "Sin, forgiven or dragged along.",
+          "kin": [
+            "chattath-sin"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.34.7",
+              "role": "defining",
+              "note": "Yahweh “forgiving iniquity and transgression and חַטָּאָה, and by no means clearing the guilty”."
+            },
+            {
+              "ref": "Isa.5.18",
+              "role": "defining",
+              "note": "“Woe to those who draw iniquity with cords of falsehood, and חַטָּאָה as with cart ropes.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲטָי",
+      "lang": "arc",
+      "root": "חטי",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sin",
+      "bdb": [
+        "xh.ag.aa"
+      ],
+      "cognate_ids": [
+        "arc-hata"
+      ],
+      "senses": [
+        {
+          "gloss": "sin",
+          "definition": "A sin, to be broken off by righteousness.",
+          "kin": [
+            "chattath-sin"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.4.24",
+              "role": "defining",
+              "note": "Daniel to Nebuchadnezzar: “Break off your sins (וַחֲטָאָךְ) by righteousness, and your iniquities by showing mercy to the poor.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַטָּיָא",
+      "lang": "arc",
+      "root": "חטי",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sin offering",
+      "bdb": [
+        "xh.ag.ab"
+      ],
+      "summary": "Written חטיא and read לְחַטָּאָה; once, in Ezra’s Aramaic.",
+      "senses": [
+        {
+          "gloss": "sin offering",
+          "definition": "The sin offering at the dedication of the rebuilt house.",
+          "kin": [
+            "chattath-offering"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.6.17",
+              "role": "defining",
+              "note": "At the dedication of the house of God, “for a sin offering for all Israel, twelve he-goats, by the number of the tribes of Israel”."
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-hata"
+      ]
+    },
+    {
+      "lemma": "חֲטָא",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "sin, do wrong",
+      "summary": "The Peshitta’s ܚܛܐ (ḥṭāʾ), for Greek ἁμαρτάνω.",
+      "cognate_ids": [
+        "ar-khatia",
+        "akk-hatu",
+        "arc-hata"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sin",
+          "senses": [
+            {
+              "gloss": "sin",
+              "definition": "Sin against God or against a brother.",
+              "kin": [
+                "qal-sin"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jhn.5.14",
+                  "note": "Peshitta: “do not sin again, lest something worse happen to you.”"
+                },
+                {
+                  "ref": "Jhn.9.2",
+                  "to": "Jhn.9.3",
+                  "note": "Peshitta: “who sinned, this man or his parents?”"
+                },
+                {
+                  "ref": "Luk.15.18",
+                  "note": "Peshitta: the son, “Father, I have sinned against heaven and before you.”"
+                },
+                {
+                  "ref": "Rom.3.23",
+                  "role": "defining",
+                  "note": "Peshitta: “all have sinned and fall short of the glory of God.”"
+                },
+                {
+                  "ref": "Rom.5.12",
+                  "note": "Peshitta: death passed to all men, “because all have sinned”."
+                },
+                {
+                  "ref": "Eph.4.26",
+                  "note": "Peshitta: “be angry and do not sin”, Psa 4:5."
+                },
+                {
+                  "ref": "1Jn.3.6",
+                  "note": "Peshitta: “whoever abides in him does not sin.”"
+                },
+                {
+                  "ref": "1Jn.5.16",
+                  "note": "Peshitta: “a sin not to death”."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲטָהָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sin",
+      "summary": "The Peshitta’s ܚܛܗܐ (ḥṭāhā), for ἁμαρτία, especially in “forgiveness of sins” and in Hebrews’ sin offerings.",
+      "cognate_ids": [
+        "ar-khatia",
+        "akk-hatu",
+        "arc-hata"
+      ],
+      "senses": [
+        {
+          "gloss": "sin; (plural) sins, sin offerings",
+          "definition": "A sin, to be forgiven; in Hebrews also the offerings for sins.",
+          "kin": [
+            "chattath-sin"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.1.21",
+              "role": "defining",
+              "note": "Peshitta: “he will save his people from their sins.”"
+            },
+            {
+              "ref": "Mat.26.28",
+              "note": "Peshitta: “my blood … shed for many for the forgiveness of sins.”"
+            },
+            {
+              "ref": "Act.2.38",
+              "note": "Peshitta: “be baptized … for the forgiveness of sins.”"
+            },
+            {
+              "ref": "Heb.10.6",
+              "note": "Peshitta: Psa 40:7’s “sin offerings”."
+            },
+            {
+              "ref": "Heb.9.28",
+              "note": "Peshitta: “to bear the sins of many”, Isa 53:12."
+            },
+            {
+              "ref": "1Pe.2.24",
+              "note": "Peshitta: “he bore our sins in his body.”"
+            },
+            {
+              "ref": "1Jn.1.9",
+              "note": "Peshitta: “if we confess our sins, he is faithful and just to forgive us our sins.”"
+            },
+            {
+              "ref": "Jas.4.17",
+              "note": "Peshitta: “to him who knows to do good and does not do it, it is sin.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַטָּיָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "sinner, sinful",
+      "summary": "The Peshitta’s ܚܛܝܐ (ḥaṭṭāyā), for ἁμαρτωλός, answering to Hebrew חַטָּא.",
+      "cognate_ids": [
+        "ar-khatia"
+      ],
+      "senses": [
+        {
+          "gloss": "sinner",
+          "definition": "One whose life is in sin, set against the righteous.",
+          "kin": [
+            "qal-sin"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.9.13",
+              "role": "defining",
+              "note": "Peshitta: “I did not come to call the righteous, but sinners to repentance.”"
+            },
+            {
+              "ref": "Luk.5.8",
+              "note": "Peshitta: Peter, “I am a sinful man.”"
+            },
+            {
+              "ref": "Luk.15.7",
+              "note": "Peshitta: joy in heaven over one sinner who repents."
+            },
+            {
+              "ref": "Luk.18.13",
+              "note": "Peshitta: “God, be merciful to me, a sinner.”"
+            },
+            {
+              "ref": "Rom.5.8",
+              "note": "Peshitta: “while we were yet sinners, Christ died for us.”"
+            },
+            {
+              "ref": "1Ti.1.15",
+              "note": "Peshitta: Christ came “to save sinners”."
+            },
+            {
+              "ref": "1Pe.4.18",
+              "note": "Peshitta: the sinner of Pro 11:31."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲטִיתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sin",
+      "summary": "The Peshitta’s ܚܛܝܬܐ (ḥṭītā), for ἁμαρτία, above all sin as a power in Romans and the sin the Lamb takes away.",
+      "cognate_ids": [
+        "ar-khatia",
+        "akk-hatu",
+        "arc-hata"
+      ],
+      "senses": [
+        {
+          "gloss": "sin, sin as a power",
+          "definition": "Sin as a ruling power that enters, reigns, pays wages and is condemned; and sin taken away.",
+          "kin": [
+            "chattath-power"
+          ],
+          "evidence": [
+            {
+              "ref": "Jhn.1.29",
+              "role": "defining",
+              "note": "Peshitta: “the Lamb of God who takes away the sin of the world.”"
+            },
+            {
+              "ref": "Rom.5.12",
+              "role": "defining",
+              "note": "Peshitta: “by one man sin entered into the world, and death by sin.”"
+            },
+            {
+              "ref": "Rom.6.23",
+              "role": "defining",
+              "note": "Peshitta: “the wages of sin is death.”"
+            },
+            {
+              "ref": "Rom.8.3",
+              "note": "Peshitta: God condemned sin in the flesh “for sin”."
+            },
+            {
+              "ref": "2Co.5.21",
+              "note": "Peshitta: “he made him sin for us.”"
+            },
+            {
+              "ref": "Heb.9.26",
+              "note": "Peshitta: “to put away sin by the sacrifice of himself.”"
+            },
+            {
+              "ref": "Jas.1.15",
+              "note": "Peshitta: “sin, when it is finished, brings forth death.”"
+            },
+            {
+              "ref": "1Jn.3.4",
+              "role": "defining",
+              "note": "Peshitta: “sin is lawlessness.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-khatia",
+      "lang": "ar",
+      "form": "خَطِئَ، أَخْطَأَ، خَطِيئَةٌ، خَاطِئٌ",
+      "translit": "ḫaṭiʾa, ʾaḫṭaʾa, ḫaṭīʾa, ḫāṭiʾ",
+      "gloss": "commit a sin, do wrong; miss the mark; a sin; one who sins, one who misses",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Lane’s sources give ḫaṭiʾa as “he committed a sin, a crime, or an act of disobedience for which he deserved punishment”, and form IV ʾaḫṭaʾa as “he missed, or failed of hitting”: “the archer missed the mark”, “he missed the way”; ḫaṭīʾa is “a sin”, and ḫāṭiʾ is both one who does wrong and an arrow “that misses the butt”. ḫaṭaʾ, a mistake, is the contrary of ṣawāb, hitting the mark; a land the rain misses is ḫaṭʾa. So Arabic keeps the same root for missing a mark and for sin, as Hebrew does (Jdg 20:16; Pro 19:2). Arabic ḫ (خ), not ḥ (ح), stands behind ח; the ḥ root حطأ means “throw down”, unrelated.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 761, root خطء, 1 خَطِئَ"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 761, اخطأ (n10957); خَطَأٌ (n10962); خطأة (n10963); خَطِيْئَةٌ (n10965)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 762, خَاطِئٌ (n10966, n10967)"
+        }
+      ]
+    },
+    {
+      "id": "akk-hatu",
+      "lang": "akk",
+      "form": "ḫaṭû; ḫīṭu; ḫiṭītu",
+      "translit": "ḫaṭû, ḫīṭu, ḫiṭītu",
+      "gloss": "do wrong, sin; error, crime, sin; shortfall, defect, crime, sin",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Akkadian ḫ answers to Arabic ḫ here. ḫiṭītu joins “shortfall, defect” and “sin” in one word, as Hebrew joins “bear the loss” (Gen 31:39) and “sin”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000025120, ḫaṭû [do wrong] V; cmawro x000025920, ḫīṭu [error] N; cmawro x000025690, ḫiṭītu [shortfall] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000150 ḫṭʾ [err] V, AKK003660 haṭû [do wrong]"
+        }
+      ]
+    },
+    {
+      "id": "gez-khatia",
+      "lang": "gez",
+      "form": "ኀጥአ",
+      "translit": "ḫaṭʾa",
+      "gloss": "lack, not find",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Ge’ez keeps the plain sense of missing: to lack, to fail to find, as in Job 5:24 “you will inspect your fold and not miss” and Pro 8:35–36, where missing is the opposite of finding.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000150 ḫṭʾ [err] V, GEZ002640 ḫaṭʾa [lack] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-hta",
+      "lang": "uga",
+      "form": "𐎃𐎉𐎀",
+      "translit": "ḫṭʾ",
+      "gloss": "to sin (?); to disappear, be carried off (?)",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Segert lists /ḫ-ṭ-ʾ/ among the verbs as “to sin”(?), and in his glossary gives the forms in KTU 1.6 and 2.10 as “to disappear”(?) or “be vanquished”. Both readings are marked uncertain; “disappear” would fit the Hebrew’s “miss, be missing” (Job 5:24). Recorded as possible.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 61, §54 Verbs, /ḫ-ṭ-ʾ/ “to sin”(?)"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 187, §93 Glossary, /ḫ-ṭ-ʾ/: ḫṭu 1.6:II:23, ḫṭi 2.10:7 “to disappear”(?)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000150 ḫṭʾ [err] V, UGC002154 ḫṭʾ"
+        }
+      ]
+    },
+    {
+      "id": "arc-hata",
+      "lang": "arc",
+      "form": "חֲטָא; חֶטְאָה, חֵטְא; חַטָּאתָא",
+      "translit": "ḥăṭā; ḥeṭʾā; ḥaṭṭātā",
+      "gloss": "sin; (aphel) cause to sin; a sin; sin offering",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums: the verb (Targ. Josh 7:11; aphel “cause to sin”, Targ. Y. Num 27:3), the noun “sin” (Targ. Gen 4:7; Targ. Deu 19:15), and חַטָּאתָא “sin, stumbling” and “sin offering” (Targ. Exo 29:36; Targ. Num 18:9), where the Hebrew has חָטָא and חַטָּאת. The Targums translate the Hebrew, so their “sin offering” is weak evidence apart from it. Aramaic ח does not show whether ḥ or ḫ stands behind it.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲטִי, חֲטָא (verb), Targ. Josh. 7:11; Af. Targ. Y. Num. 27:3"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֶטְאָה, חֵטְא, Targ. Gen. 4:7; Targ. Deut. 19:15"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חַטָּאתָא (חַטָּאת), Targ. Prov. 10:16; sin-offering, Targ. Ex. 29:36, Targ. Num. 18:9, Targ. Hos. 4:8"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "missing-the-mark",
+      "statement": "The verb that names sin also names plain missing: the slingers of Benjamin who “would not miss” a hair (Jdg 20:16), the hasty feet that miss (Pro 19:2), the fold where nothing is missing (Job 5:24). Wisdom sets the two side by side: “whoever finds me finds life … whoever misses me wrongs his own soul; all who hate me love death” (Pro 8:35–36). Paul writes that “all have sinned and fall short of the glory of God” (Rom 3:23). From the verses: sin is failing to reach what God has set before man, his life and his glory, and the one who misses it harms himself.",
+      "evidence": [
+        {
+          "ref": "Jdg.20.16"
+        },
+        {
+          "ref": "Pro.19.2"
+        },
+        {
+          "ref": "Job.5.24"
+        },
+        {
+          "ref": "Pro.8.35",
+          "to": "Pro.8.36"
+        },
+        {
+          "ref": "Rom.3.23"
+        }
+      ]
+    },
+    {
+      "topic": "the-soul-that-sins-dies",
+      "statement": "“The soul (נֶפֶשׁ) that sins, it shall die” (Ezk 18:4, 20); “every man shall be put to death for his own sin” (Deu 24:16); the Levites keep Israel from coming near “to bear sin and die” (Num 18:22; Lev 22:9). Paul writes that by one man sin entered the world, and death by sin, so that death passed to all, because all sinned (Rom 5:12); “the wages of sin is death, but the gift of God is eternal life through Jesus Christ our Lord” (Rom 6:23); and James that sin, when it is full grown, brings forth death (Jas 1:15). From the verses: the penalty sin earns is death, the soul itself dying, not living on in another place; life after it is God’s gift in Christ, not a possession of the soul.",
+      "evidence": [
+        {
+          "ref": "Ezk.18.4"
+        },
+        {
+          "ref": "Ezk.18.20"
+        },
+        {
+          "ref": "Deu.24.16"
+        },
+        {
+          "ref": "Num.18.22"
+        },
+        {
+          "ref": "Lev.22.9"
+        },
+        {
+          "ref": "Rom.5.12"
+        },
+        {
+          "ref": "Rom.6.23"
+        },
+        {
+          "ref": "Jas.1.15"
+        }
+      ]
+    },
+    {
+      "topic": "all-have-sinned",
+      "statement": "Solomon prays, “there is no man who does not sin” (1Ki 8:46); the Preacher says there is not a righteous man on earth who does good and does not sin (Ecc 7:20); David confesses that in sin his mother conceived him (Psa 51:7). Paul sums it up: “all have sinned” (Rom 3:23; 5:12), and John, “if we say that we have no sin, we deceive ourselves” (1Jn 1:8). From the verses: sin is universal among men from birth, and no one stands before God on his own record.",
+      "evidence": [
+        {
+          "ref": "1Ki.8.46"
+        },
+        {
+          "ref": "Ecc.7.20"
+        },
+        {
+          "ref": "Psa.51.7"
+        },
+        {
+          "ref": "Rom.3.23"
+        },
+        {
+          "ref": "Rom.5.12"
+        },
+        {
+          "ref": "1Jn.1.8"
+        }
+      ]
+    },
+    {
+      "topic": "the-sin-offering",
+      "statement": "The offering is called by the sin’s own name: the priest who sins brings “for his חַטָּאת a bull for a חַטָּאת” (Lev 4:3), and “it is a חַטָּאת” (Lev 4:24); at every feast of Lev 23 a he-goat is offered “for a חַטָּאת” (Lev 23:19). On the Day of the coverings the high priest offers first for himself and his house (Lev 16:6, 11), and the bodies of the sin offerings whose blood went into the holy place are burned outside the camp (Lev 6:23; 16:27). Hebrews says Jesus therefore suffered outside the gate (Heb 13:11–12); that the high priests offered first for their own sins and then for the people’s, “for this he did once, when he offered up himself” (Heb 7:27); and, quoting Psa 40:7, that God took no pleasure in sin offerings, but Christ came to do his will, by which we are sanctified through the offering of his body once for all (Heb 10:5–10). The servant of Isa 53:12 “bore the חֵטְא of many”, which Hebrews and Peter apply to Christ (Heb 9:28; 1Pe 2:24). Paul writes that God sent his own Son “in the likeness of the flesh of sin, and for sin (περὶ ἁμαρτίας, the Greek’s name for the sin offering, Heb 10:6), condemned sin in the flesh” (Rom 8:3), and “made him to be sin for us, who knew no sin” (2Co 5:21); he did no sin (1Pe 2:22), yet shared the flesh and blood of those he saved, that through death he might destroy him who had the power of death (Heb 2:14). From the verses: Christ was the sin offering the law foreshadowed, sinless in what he did yet bearing the nature in which sin is condemned, and in his death that condemnation was shown in that flesh, once for all.",
+      "evidence": [
+        {
+          "ref": "Lev.4.3"
+        },
+        {
+          "ref": "Lev.4.24"
+        },
+        {
+          "ref": "Lev.23.19"
+        },
+        {
+          "ref": "Lev.16.6"
+        },
+        {
+          "ref": "Lev.16.11"
+        },
+        {
+          "ref": "Lev.6.23"
+        },
+        {
+          "ref": "Lev.16.27"
+        },
+        {
+          "ref": "Heb.13.11",
+          "to": "Heb.13.12"
+        },
+        {
+          "ref": "Heb.7.27"
+        },
+        {
+          "ref": "Psa.40.7"
+        },
+        {
+          "ref": "Heb.10.5",
+          "to": "Heb.10.10"
+        },
+        {
+          "ref": "Isa.53.12"
+        },
+        {
+          "ref": "Heb.9.28"
+        },
+        {
+          "ref": "1Pe.2.24"
+        },
+        {
+          "ref": "Rom.8.3"
+        },
+        {
+          "ref": "2Co.5.21"
+        },
+        {
+          "ref": "1Pe.2.22"
+        },
+        {
+          "ref": "Heb.2.14"
+        }
+      ]
+    },
+    {
+      "topic": "cleansing-from-sin",
+      "statement": "The piel of the verb is “un-sin”: Moses purified the altar with the blood of the sin offering (Lev 8:15; Exo 29:36), the unclean man was purified with the water kept from the ashes of the red heifer, itself called a חַטָּאת (Num 19:9, 19), and David prays, “purge me (תְּחַטְּאֵנִי) with hyssop, and I shall be clean” (Psa 51:9). Zechariah sees a fountain opened to the house of David “for sin and for impurity” (Zec 13:1). Hebrews writes that if the ashes of a heifer sprinkling the unclean sanctify to the cleanness of the flesh, much more will the blood of Christ cleanse the conscience from dead works (Heb 9:13–14), and that without shedding of blood there is no forgiveness (Heb 9:22); John, that the blood of Jesus cleanses us from all sin (1Jn 1:7). From the verses: removing sin is cleansing, and the law’s rites of cleansing pointed to the cleansing that comes by Christ’s blood.",
+      "evidence": [
+        {
+          "ref": "Lev.8.15"
+        },
+        {
+          "ref": "Exo.29.36"
+        },
+        {
+          "ref": "Num.19.9"
+        },
+        {
+          "ref": "Num.19.19"
+        },
+        {
+          "ref": "Psa.51.9"
+        },
+        {
+          "ref": "Zec.13.1"
+        },
+        {
+          "ref": "Heb.9.13",
+          "to": "Heb.9.14"
+        },
+        {
+          "ref": "Heb.9.22"
+        },
+        {
+          "ref": "1Jn.1.7"
+        }
+      ]
+    },
+    {
+      "topic": "sins-lifted-and-remembered-no-more",
+      "statement": "Forgiveness is spoken of as lifting sin away (נָשָׂא חַטָּאת, Exo 32:32; Psa 32:5), covering it (Psa 32:1; Isa 6:7), casting it behind God’s back or into the depths of the sea (Isa 38:17; Mic 7:19), and not remembering it (Isa 43:25; Jer 31:34). Paul quotes Psa 32:1 for the blessedness of the man to whom God counts righteousness without works (Rom 4:6–8); Hebrews quotes Jer 31:34 for the new covenant, and concludes that where sins are forgiven there is no more offering for sin (Heb 8:12; 10:17–18); John the Baptist calls Jesus the Lamb of God who lifts away the sin of the world (Jhn 1:29). From the verses: God himself removes sin from the one he forgives, and under the new covenant it is done in Christ once, with no further offering.",
+      "evidence": [
+        {
+          "ref": "Exo.32.32"
+        },
+        {
+          "ref": "Psa.32.5"
+        },
+        {
+          "ref": "Psa.32.1"
+        },
+        {
+          "ref": "Isa.6.7"
+        },
+        {
+          "ref": "Isa.38.17"
+        },
+        {
+          "ref": "Mic.7.19"
+        },
+        {
+          "ref": "Isa.43.25"
+        },
+        {
+          "ref": "Jer.31.34"
+        },
+        {
+          "ref": "Rom.4.6",
+          "to": "Rom.4.8"
+        },
+        {
+          "ref": "Heb.8.12"
+        },
+        {
+          "ref": "Heb.10.17",
+          "to": "Heb.10.18"
+        },
+        {
+          "ref": "Jhn.1.29"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Lev 23 (23:19) and Num 10. BDB files the same 291 tokens under both h.bu.ad (חַטָּאָה) and h.bu.af (חַטָּאת); they are counted once, under חַטָּאת (h.bu.af), and חַטָּאָה is kept as its own word (Exo 34:7; Isa 5:18) with no bdb key. h.cb.ac (חַטָּת) is a cross-reference with no tokens and is left out. The Aramaic keys xh.ag.aa (Dan 4:24) and xh.ag.ab (Ezr 6:17) have no tokens indexed to them in the database, so their use is not counted. Num 15:28 בְּחֶטְאָה is the qal infinitive; the brief lists it with no stem. Left out: Jastrow’s חָטָא I “live in luxury” and the post-biblical hithpael “behave petulantly” (with Arabic ḥaẓiya “enjoy favour”), which is another root (ḥ, ẓ) in the same later spelling; scripture has no word of it. Open questions: (1) Isa 65:20 הַחוֹטֵא may be “the sinner” or “the one who falls short of (a hundred years)”; entered under “sin” with the alternative noted. (2) The Ugaritic ḫṭʾ is uncertain in Segert himself (“to sin”? / “disappear”?); the glossary page (p. 187) is taken from the OCR’s running head and should be checked in the scan. (3) Job 41:17 hithpael is entered as uncertain. (4) Doctrine “the-sin-offering” states that Christ bore the nature in which sin is condemned (Rom 8:3; Heb 2:14) and cites Heb 7:27 without resolving whether “this he did once” includes offering for himself; check the reviewer wants that framing. Leads not followed: Syriac ܚܛܐ pael/aphel “purify, expiate” in Payne Smith (not local); Ge’ez ḫaṭʾa in Dillmann (cited here only through Anderson–Moser); Akkadian in CAD Ḫ."
+}
