@@ -1,0 +1,1846 @@
+{
+  "id": "nephesh",
+  "root": "נפש",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "life",
+    "death",
+    "body",
+    "breath",
+    "mortality",
+    "worship",
+    "sacrifice"
+  ],
+  "gloss": "breath, throat; a living soul, a life, a person; oneself; appetite, desire",
+  "summary": "נֶפֶשׁ is the breathing creature: the throat that breathes and swallows, the breath that leaves at death and returns when the dead revive, and so the living being itself, man and beast alike a נֶפֶשׁ חַיָּה, a living soul (Gen 1:24; 2:7). It is a life that can be taken, risked, ransomed and lost; a person counted or cut off; oneself, as when Israel is to humble its souls on the Day of the coverings (Lev 23:27, 32); a dead body is a dead נֶפֶשׁ, and the soul that sins dies (Num 6:6; Ezk 18:4). It is also the self that hungers, desires, loves, grieves and longs for God, and Yahweh speaks of his own. The niphal verb is to take breath, be refreshed, and every cognate from Akkadian napištu to Arabic nafs joins breath, throat, life, person and self.",
+  "words": [
+    {
+      "lemma": "נֶפֶשׁ",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "throat; breath; living soul; life; person; self; appetite, desire",
+      "bdb": [
+        "n.en.ab"
+      ],
+      "cognate_ids": [
+        "ar-nafs",
+        "akk-napistu",
+        "uga-nps",
+        "phn-nps",
+        "arc-napsha",
+        "gez-nafs",
+        "sab-nfs"
+      ],
+      "senses": [
+        {
+          "id": "nephesh-throat",
+          "gloss": "throat, neck",
+          "definition": "The throat and gullet, the opening that breathes and swallows: what Sheol widens like a mouth, what the waters rise to, what the iron collar closes on.",
+          "cognate_ids": [
+            "akk-napistu",
+            "uga-nps"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.5.14",
+              "role": "defining",
+              "note": "Sheol has widened its נֶפֶשׁ and opened its mouth without limit: the throat set beside the mouth."
+            },
+            {
+              "ref": "Hab.2.5",
+              "role": "defining",
+              "note": "The arrogant man widens his נֶפֶשׁ like Sheol and, like death, is never satisfied."
+            },
+            {
+              "ref": "Jon.2.6",
+              "role": "defining",
+              "note": "“The waters closed round me עַד־נֶפֶשׁ, up to the throat; the deep surrounded me, weed was wrapped round my head.”"
+            },
+            {
+              "ref": "Psa.69.2",
+              "note": "“Save me, O God, for the waters have come up עַד־נָפֶשׁ.”"
+            },
+            {
+              "ref": "Psa.105.18",
+              "role": "defining",
+              "note": "Joseph: they hurt his feet with fetters, “his נֶפֶשׁ came into iron”, the iron round his neck, set beside his feet."
+            },
+            {
+              "ref": "Pro.23.2",
+              "note": "“Put a knife to your throat (לֹעַ) if you are a בַּעַל נֶפֶשׁ”, a man of appetite."
+            }
+          ]
+        },
+        {
+          "id": "nephesh-appetite",
+          "gloss": "appetite, hunger",
+          "definition": "The throat as what craves food and drink: the appetite that is empty or full, dry or satisfied.",
+          "cognate_ids": [
+            "akk-napistu",
+            "uga-nps",
+            "ar-nafs"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.29.8",
+              "role": "defining",
+              "note": "The hungry man dreams he eats, wakes, and his נֶפֶשׁ is empty; the thirsty wakes faint and his נֶפֶשׁ craving."
+            },
+            {
+              "ref": "Pro.27.7",
+              "role": "defining",
+              "note": "“A sated נֶפֶשׁ tramples on honey, but to a hungry נֶפֶשׁ every bitter thing is sweet.”"
+            },
+            {
+              "ref": "Psa.107.9",
+              "role": "defining",
+              "note": "He satisfies the longing נֶפֶשׁ and fills the hungry נֶפֶשׁ with good."
+            },
+            {
+              "ref": "Num.11.6",
+              "note": "“Our נֶפֶשׁ is dried up; there is nothing but this manna before our eyes.”"
+            },
+            {
+              "ref": "Ecc.6.7",
+              "note": "All a man’s toil is for his mouth, and yet the נֶפֶשׁ is not filled."
+            },
+            {
+              "ref": "Pro.25.25",
+              "note": "Cold water to a weary נֶפֶשׁ."
+            },
+            {
+              "ref": "Pro.13.25",
+              "note": "The righteous eats to the satisfying of his נֶפֶשׁ."
+            },
+            {
+              "ref": "Psa.63.6",
+              "note": "“My נֶפֶשׁ is satisfied as with fat and richness.”"
+            }
+          ]
+        },
+        {
+          "id": "nephesh-breath",
+          "gloss": "breath, the breath of life",
+          "definition": "The breath that keeps a creature alive: it goes out at death and comes back when the dead revive, and food or comfort is said to bring it back.",
+          "cognate_ids": [
+            "ar-nafas",
+            "akk-napistu",
+            "uga-nps",
+            "gez-nafs"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.35.18",
+              "role": "defining",
+              "note": "“As her נֶפֶשׁ was going out, for she died”, Rachel named her son."
+            },
+            {
+              "ref": "1Ki.17.21",
+              "role": "defining",
+              "note": "Elijah: “Let this child’s נֶפֶשׁ come back into him.”"
+            },
+            {
+              "ref": "1Ki.17.22",
+              "role": "defining",
+              "note": "The child’s נֶפֶשׁ came back into him, and he lived."
+            },
+            {
+              "ref": "Jer.15.9",
+              "role": "defining",
+              "note": "She who bore seven “has breathed out (נָפְחָה) her נֶפֶשׁ”: the verb of blowing."
+            },
+            {
+              "ref": "Job.41.13",
+              "role": "defining",
+              "note": "Of Leviathan: “his נֶפֶשׁ kindles coals, and a flame goes out of his mouth.”"
+            },
+            {
+              "ref": "Lam.1.11",
+              "note": "They gave their treasures for food לְהָשִׁיב נָפֶשׁ, to bring back breath."
+            },
+            {
+              "ref": "Lam.1.19",
+              "note": "Priests and elders perished seeking food to bring back their נֶפֶשׁ."
+            },
+            {
+              "ref": "Rut.4.15",
+              "note": "The child will be to Naomi מֵשִׁיב נֶפֶשׁ, one who brings back breath, and a nourisher of her old age."
+            },
+            {
+              "ref": "Psa.19.8",
+              "note": "The law of Yahweh is whole, מְשִׁיבַת נָפֶשׁ, bringing back the soul."
+            },
+            {
+              "ref": "Psa.23.3",
+              "note": "“He brings back my נֶפֶשׁ.”"
+            }
+          ]
+        },
+        {
+          "id": "living-soul",
+          "gloss": "living soul, living creature",
+          "definition": "A breathing, living creature: in נֶפֶשׁ חַיָּה, a living soul, the fish, birds, beasts and creeping things, and the man formed of dust once Yahweh God breathed into him. The man became one; one was not put into him.",
+          "tags": [
+            "creation",
+            "mortality"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.2.7",
+              "role": "defining",
+              "note": "Yahweh God formed the man of dust from the ground and breathed into his nostrils the breath of life, “and the man became a נֶפֶשׁ חַיָּה”, a living soul. Quoted at 1Co 15:45."
+            },
+            {
+              "ref": "Gen.1.20",
+              "role": "defining",
+              "note": "“Let the waters swarm with swarms of נֶפֶשׁ חַיָּה”, living souls."
+            },
+            {
+              "ref": "Gen.1.24",
+              "role": "defining",
+              "note": "“Let the earth bring out נֶפֶשׁ חַיָּה after its kind, cattle and creeping thing and beast.”"
+            },
+            {
+              "ref": "Gen.1.21"
+            },
+            {
+              "ref": "Gen.1.30",
+              "note": "Every beast, bird and creeping thing “in which there is a נֶפֶשׁ חַיָּה” is given green plants for food."
+            },
+            {
+              "ref": "Gen.2.19",
+              "role": "defining",
+              "note": "Whatever the man called each נֶפֶשׁ חַיָּה, beast or bird, that was its name: the words of Gen 2:7 used of the animals."
+            },
+            {
+              "ref": "Gen.9.10",
+              "note": "The covenant with every נֶפֶשׁ חַיָּה that came out of the ark, bird, cattle and beast."
+            },
+            {
+              "ref": "Gen.9.12"
+            },
+            {
+              "ref": "Gen.9.15"
+            },
+            {
+              "ref": "Gen.9.16"
+            },
+            {
+              "ref": "Lev.11.46",
+              "note": "The law of beast and bird and every נֶפֶשׁ חַיָּה that moves in the waters."
+            },
+            {
+              "ref": "Ezk.47.9",
+              "note": "Every נֶפֶשׁ חַיָּה that swarms where the river comes will live."
+            },
+            {
+              "ref": "Pro.12.10",
+              "note": "“The righteous knows the נֶפֶשׁ of his beast.”"
+            },
+            {
+              "ref": "1Co.15.45",
+              "role": "defining",
+              "note": "“The first man Adam became a living ψυχή; the last Adam a life-giving spirit”: Gen 2:7, set beside the natural (ψυχικόν) body that is sown and the spiritual body raised (1Co 15:44)."
+            }
+          ]
+        },
+        {
+          "id": "nephesh-life",
+          "gloss": "life",
+          "definition": "A creature’s life as something that can be sought, taken, risked, spared, ransomed or delivered from death: “life for life”.",
+          "cognate_ids": [
+            "akk-napistu",
+            "ar-nafs",
+            "sab-nfs"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.21.23",
+              "role": "defining",
+              "note": "“You shall give נֶפֶשׁ תַּחַת נָפֶשׁ”, life for life."
+            },
+            {
+              "ref": "Lev.24.18",
+              "note": "He who strikes the נֶפֶשׁ of a beast pays for it, life for life."
+            },
+            {
+              "ref": "Deu.19.21",
+              "note": "Life for life, eye for eye, tooth for tooth."
+            },
+            {
+              "ref": "1Sa.19.11",
+              "role": "defining",
+              "note": "Michal: “If you do not save your נֶפֶשׁ tonight, tomorrow you will be put to death.”"
+            },
+            {
+              "ref": "Jdg.12.3",
+              "role": "defining",
+              "note": "“I put my נֶפֶשׁ in my palm and crossed over against the Ammonites”: risked my life."
+            },
+            {
+              "ref": "Exo.4.19",
+              "role": "defining",
+              "note": "“All the men who sought your נֶפֶשׁ are dead.” Quoted of the child Jesus at Mat 2:20."
+            },
+            {
+              "ref": "1Ki.19.4",
+              "note": "Elijah asked that his נֶפֶשׁ might die: “Take my נֶפֶשׁ, Yahweh.”"
+            },
+            {
+              "ref": "Jon.4.3"
+            },
+            {
+              "ref": "Jos.2.13",
+              "note": "“Deliver our נַפְשֹׁתֵינוּ from death.”"
+            },
+            {
+              "ref": "Psa.56.14",
+              "note": "“You have delivered my נֶפֶשׁ from death.”"
+            },
+            {
+              "ref": "Est.7.3",
+              "note": "“Let my נֶפֶשׁ be given me at my petition, and my people at my request.”"
+            },
+            {
+              "ref": "2Sa.23.17",
+              "note": "The blood of the men who went at the risk of their נְפָשׁוֹת."
+            },
+            {
+              "ref": "Jdg.5.18",
+              "note": "Zebulun, a people that scorned its נֶפֶשׁ to the death."
+            },
+            {
+              "ref": "Pro.7.23",
+              "note": "Like a bird hurrying to the snare, not knowing it is for his נֶפֶשׁ."
+            },
+            {
+              "ref": "Exo.30.12",
+              "note": "Each man gives a כֹּפֶר, a ransom, for his נֶפֶשׁ."
+            },
+            {
+              "ref": "Psa.49.9",
+              "note": "The redemption of their נֶפֶשׁ is costly."
+            },
+            {
+              "ref": "Isa.53.12",
+              "role": "defining",
+              "note": "The servant “poured out his נֶפֶשׁ to death”."
+            },
+            {
+              "ref": "Isa.53.10",
+              "note": "“When you make his נֶפֶשׁ a guilt offering, he shall see seed, he shall prolong days.”"
+            },
+            {
+              "ref": "Mat.20.28",
+              "note": "The Son of man came to give his ψυχή a ransom for many."
+            }
+          ],
+          "senses": [
+            {
+              "id": "nephesh-blood",
+              "gloss": "the life that is in the blood",
+              "definition": "The life of flesh is located in its blood, so that the blood is the life: it may not be eaten, and Yahweh gave it on the altar to cover over Israel’s souls.",
+              "cognate_ids": [
+                "ar-nafs"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.9.4",
+                  "role": "defining",
+                  "note": "“Flesh with its נֶפֶשׁ, its blood, you shall not eat.”"
+                },
+                {
+                  "ref": "Lev.17.11",
+                  "role": "defining",
+                  "note": "“The נֶפֶשׁ of the flesh is in the blood, and I have given it to you on the altar to cover over your souls, for it is the blood that covers by the נֶפֶשׁ.”"
+                },
+                {
+                  "ref": "Lev.17.14",
+                  "role": "defining",
+                  "note": "“The נֶפֶשׁ of all flesh is its blood.”"
+                },
+                {
+                  "ref": "Deu.12.23",
+                  "role": "defining",
+                  "note": "“The blood is the נֶפֶשׁ, and you shall not eat the נֶפֶשׁ with the flesh.”"
+                },
+                {
+                  "ref": "Gen.9.5",
+                  "note": "“Your blood for your souls I will require … I will require the נֶפֶשׁ of man.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nephesh-person",
+          "gloss": "person, individual; (pl.) people",
+          "definition": "A single living person, the unit in which people are counted, bought, taken captive, struck down, or cut off from their people; with כֹּל, everyone.",
+          "cognate_ids": [
+            "phn-nps",
+            "ar-nafs",
+            "akk-napistu",
+            "uga-nps"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.46.26",
+              "role": "defining",
+              "note": "All the נֶפֶשׁ that came with Jacob to Egypt, from his own body, “all נֶפֶשׁ were sixty-six”."
+            },
+            {
+              "ref": "Gen.46.27"
+            },
+            {
+              "ref": "Exo.1.5",
+              "note": "Those from Jacob’s loins were seventy נֶפֶשׁ."
+            },
+            {
+              "ref": "Lev.4.2",
+              "role": "defining",
+              "note": "“If a נֶפֶשׁ sins in error against any of Yahweh’s commands”: anyone."
+            },
+            {
+              "ref": "Exo.12.16",
+              "note": "No work on the holy convocations except what every נֶפֶשׁ must eat."
+            },
+            {
+              "ref": "Lev.23.29",
+              "role": "defining",
+              "note": "“Any נֶפֶשׁ that is not humbled on this same day shall be cut off from its people.” Act 3:23 applies the words to whoever will not hear the prophet like Moses."
+            },
+            {
+              "ref": "Lev.23.30",
+              "note": "“Any נֶפֶשׁ that does any work on this same day, that נֶפֶשׁ I will destroy from among its people.”"
+            },
+            {
+              "ref": "Gen.17.14",
+              "note": "The uncircumcised male: “that נֶפֶשׁ shall be cut off from its people.”"
+            },
+            {
+              "ref": "Gen.12.5",
+              "note": "Abram took Sarai, Lot, their goods, and the נֶפֶשׁ they had gotten in Haran."
+            },
+            {
+              "ref": "Gen.14.21",
+              "note": "“Give me the נֶפֶשׁ, and take the goods for yourself.”"
+            },
+            {
+              "ref": "Lev.22.11",
+              "note": "A priest who buys a נֶפֶשׁ with his money: a slave."
+            },
+            {
+              "ref": "Ezk.27.13",
+              "note": "Javan, Tubal and Meshech traded in נֶפֶשׁ אָדָם, souls of men."
+            },
+            {
+              "ref": "Num.31.35",
+              "note": "The captives counted: thirty-two thousand נֶפֶשׁ אָדָם."
+            },
+            {
+              "ref": "Jer.52.30",
+              "note": "Nebuzaradan carried away 745 נֶפֶשׁ; “all נֶפֶשׁ were 4,600.”"
+            },
+            {
+              "ref": "Jos.10.28",
+              "note": "Joshua struck Makkedah with the sword and every נֶפֶשׁ in it."
+            },
+            {
+              "ref": "Lev.24.17",
+              "note": "“He who strikes any נֶפֶשׁ אָדָם shall surely be put to death.”"
+            },
+            {
+              "ref": "Num.35.11",
+              "note": "The cities of refuge for one who strikes a נֶפֶשׁ unawares."
+            },
+            {
+              "ref": "Ezk.18.4",
+              "role": "defining",
+              "note": "“All the נְפָשׁוֹת are mine, the נֶפֶשׁ of the father and the נֶפֶשׁ of the son; the נֶפֶשׁ that sins, it shall die.”"
+            },
+            {
+              "ref": "Act.27.37",
+              "note": "“We were in all in the ship 276 ψυχαί.”"
+            }
+          ]
+        },
+        {
+          "id": "nephesh-dead",
+          "gloss": "dead person, corpse",
+          "definition": "A person who has died, the body that makes those who touch it or come near it unclean: נֶפֶשׁ מֵת, a dead soul, or נֶפֶשׁ alone.",
+          "tags": [
+            "death",
+            "purity"
+          ],
+          "cognate_ids": [
+            "phn-nps"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.6.6",
+              "role": "defining",
+              "note": "All the days of his separation the Nazirite shall not come near a נֶפֶשׁ מֵת."
+            },
+            {
+              "ref": "Lev.21.11",
+              "role": "defining",
+              "note": "The high priest shall not go in to any נַפְשֹׁת מֵת, not even for his father or mother."
+            },
+            {
+              "ref": "Num.19.13",
+              "role": "defining",
+              "note": "“Whoever touches a dead one, the נֶפֶשׁ of a man who has died”, and does not purify himself defiles Yahweh’s dwelling."
+            },
+            {
+              "ref": "Num.19.11"
+            },
+            {
+              "ref": "Num.9.6",
+              "note": "Men unclean לְנֶפֶשׁ אָדָם could not keep the Passover on its day."
+            },
+            {
+              "ref": "Num.9.7"
+            },
+            {
+              "ref": "Num.5.2",
+              "note": "Everyone unclean לָנָפֶשׁ is sent out of the camp."
+            },
+            {
+              "ref": "Lev.21.1",
+              "note": "A priest shall not defile himself לְנֶפֶשׁ among his people."
+            },
+            {
+              "ref": "Lev.22.4"
+            },
+            {
+              "ref": "Lev.19.28",
+              "note": "No cuts in the flesh לָנֶפֶשׁ, for the dead."
+            },
+            {
+              "ref": "Hag.2.13",
+              "note": "“If one unclean by a נֶפֶשׁ touches any of these, will it be unclean?” “It will.”"
+            }
+          ]
+        },
+        {
+          "id": "nephesh-self",
+          "gloss": "oneself, self",
+          "definition": "The person himself: with a suffix it is the reflexive “myself, yourselves”, and “as his own נֶפֶשׁ” is as himself. To humble one’s נֶפֶשׁ is to humble oneself by fasting; Yahweh swears by his נֶפֶשׁ, by himself.",
+          "cognate_ids": [
+            "ar-nafs",
+            "sab-nfs",
+            "arc-napsha"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.23.27",
+              "role": "defining",
+              "note": "On the tenth of the seventh month, the Day of the coverings, “you shall humble your נַפְשֹׁתֵיכֶם”: yourselves."
+            },
+            {
+              "ref": "Lev.23.32",
+              "note": "A sabbath of rest, “and you shall humble your נַפְשֹׁתֵיכֶם” from evening to evening."
+            },
+            {
+              "ref": "Lev.16.29"
+            },
+            {
+              "ref": "Lev.16.31"
+            },
+            {
+              "ref": "Num.29.7"
+            },
+            {
+              "ref": "Psa.35.13",
+              "role": "defining",
+              "note": "“I humbled my נֶפֶשׁ with fasting”: humbling the soul is fasting."
+            },
+            {
+              "ref": "Isa.58.3",
+              "role": "defining",
+              "note": "“Why have we fasted and you do not see, humbled our נֶפֶשׁ and you take no notice?”"
+            },
+            {
+              "ref": "Isa.58.5",
+              "note": "“A day for a man to humble his נֶפֶשׁ”: bowing the head like a reed, sackcloth and ashes."
+            },
+            {
+              "ref": "Num.30.14",
+              "note": "Every vow and oath of binding לְעַנֹּת נֶפֶשׁ, to humble oneself."
+            },
+            {
+              "ref": "Num.30.3",
+              "note": "A man who binds a bond עַל־נַפְשׁוֹ, on himself."
+            },
+            {
+              "ref": "Jer.37.9",
+              "role": "defining",
+              "note": "“Do not deceive your נַפְשֹׁתֵיכֶם”: yourselves."
+            },
+            {
+              "ref": "1Sa.18.1",
+              "role": "defining",
+              "note": "The נֶפֶשׁ of Jonathan was bound to the נֶפֶשׁ of David, “and Jonathan loved him as his own נֶפֶשׁ”, as himself."
+            },
+            {
+              "ref": "1Sa.18.3"
+            },
+            {
+              "ref": "Isa.46.2",
+              "note": "The idols could not save the burden, “and their נֶפֶשׁ has gone into captivity”: they themselves."
+            },
+            {
+              "ref": "Est.9.31",
+              "note": "As they had bound on their נֶפֶשׁ and their seed the matters of the fasts."
+            },
+            {
+              "ref": "Amo.6.8",
+              "role": "defining",
+              "note": "“The Lord Yahweh has sworn by his נֶפֶשׁ”: by himself."
+            },
+            {
+              "ref": "Jer.51.14"
+            },
+            {
+              "ref": "Mat.16.24",
+              "note": "“Let him deny himself (ἑαυτόν)”: the Peshitta has נַפְשֵׁהּ."
+            }
+          ]
+        },
+        {
+          "id": "nephesh-desire",
+          "gloss": "desire, will, wish",
+          "definition": "What a person wants or wills: the craving of the נֶפֶשׁ, as much as one likes, and where one wishes.",
+          "cognate_ids": [
+            "ar-nafs"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.23.8",
+              "role": "defining",
+              "note": "Abraham: “If it is your נֶפֶשׁ that I bury my dead”, if it is your will."
+            },
+            {
+              "ref": "Deu.21.14",
+              "role": "defining",
+              "note": "If you have no delight in her, “let her go לְנַפְשָׁהּ”, where she wishes."
+            },
+            {
+              "ref": "Psa.27.12",
+              "role": "defining",
+              "note": "“Do not give me up to the נֶפֶשׁ of my adversaries”, to their will."
+            },
+            {
+              "ref": "Psa.41.3"
+            },
+            {
+              "ref": "Deu.12.20",
+              "role": "defining",
+              "note": "“Because your נֶפֶשׁ craves to eat flesh, you may eat flesh with all the craving of your נֶפֶשׁ.”"
+            },
+            {
+              "ref": "Deu.14.26",
+              "note": "Spend the money on whatever your נֶפֶשׁ craves, oxen, sheep, wine or strong drink."
+            },
+            {
+              "ref": "Deu.23.25",
+              "note": "Grapes in a neighbour’s vineyard כְּנַפְשְׁךָ, as many as you wish, your fill."
+            },
+            {
+              "ref": "1Sa.2.16",
+              "note": "“Take as much as your נֶפֶשׁ craves.”"
+            },
+            {
+              "ref": "2Sa.3.21",
+              "note": "“You will reign over all that your נֶפֶשׁ desires.”"
+            },
+            {
+              "ref": "Jer.2.24",
+              "note": "The wild ass in the craving of her נֶפֶשׁ snuffs the wind."
+            },
+            {
+              "ref": "Mic.7.1",
+              "note": "No first-ripe fig that my נֶפֶשׁ craves."
+            },
+            {
+              "ref": "Exo.15.9",
+              "note": "The enemy: “My נֶפֶשׁ shall be filled with them.”"
+            },
+            {
+              "ref": "Psa.35.25",
+              "note": "“Aha, our נֶפֶשׁ!”, our wish."
+            },
+            {
+              "ref": "Pro.13.4",
+              "note": "The sluggard’s נֶפֶשׁ craves and has nothing."
+            },
+            {
+              "ref": "Hos.4.8",
+              "note": "They lift up their נֶפֶשׁ to their iniquity: set their desire on it."
+            }
+          ]
+        },
+        {
+          "id": "nephesh-heart",
+          "gloss": "soul, the inner self that feels",
+          "definition": "The living person as the one who feels and knows from within: who is bitter, grieves, is cast down, loves, hates, longs and thirsts for God, waits for him and blesses him; set beside the heart, and loving Yahweh with all of it.",
+          "cognate_ids": [
+            "phn-nps",
+            "ar-nafs",
+            "gez-nafs"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.1.10",
+              "role": "defining",
+              "note": "Hannah was מָרַת נָפֶשׁ, bitter of soul, and prayed and wept."
+            },
+            {
+              "ref": "1Sa.1.15",
+              "note": "“I have poured out my נֶפֶשׁ before Yahweh.”"
+            },
+            {
+              "ref": "2Ki.4.27",
+              "note": "“Her נֶפֶשׁ is bitter within her.”"
+            },
+            {
+              "ref": "Job.3.20"
+            },
+            {
+              "ref": "Job.10.1",
+              "note": "“My נֶפֶשׁ is weary of my life … I will speak in the bitterness of my נֶפֶשׁ.”"
+            },
+            {
+              "ref": "Psa.42.2",
+              "role": "defining",
+              "note": "“As the deer pants for streams of water, so my נֶפֶשׁ pants for you, O God.”"
+            },
+            {
+              "ref": "Psa.42.3",
+              "note": "“My נֶפֶשׁ thirsts for God, for the living God.”"
+            },
+            {
+              "ref": "Psa.63.2",
+              "note": "“My נֶפֶשׁ thirsts for you; my flesh faints for you.”"
+            },
+            {
+              "ref": "Psa.42.6",
+              "role": "defining",
+              "note": "“Why are you cast down, my נֶפֶשׁ, and why moan within me? Hope in God.”"
+            },
+            {
+              "ref": "Psa.42.12"
+            },
+            {
+              "ref": "Psa.43.5"
+            },
+            {
+              "ref": "Gen.34.3",
+              "note": "Shechem’s נֶפֶשׁ clung to Dinah, and he loved the girl."
+            },
+            {
+              "ref": "Sng.3.1",
+              "note": "“I sought him whom my נֶפֶשׁ loves.”"
+            },
+            {
+              "ref": "Sng.1.7"
+            },
+            {
+              "ref": "2Sa.5.8",
+              "note": "The lame and blind, hated by David’s נֶפֶשׁ."
+            },
+            {
+              "ref": "Num.21.4",
+              "note": "The נֶפֶשׁ of the people grew short on the way: impatient."
+            },
+            {
+              "ref": "Jdg.16.16",
+              "note": "Samson’s נֶפֶשׁ grew short to death with Delilah’s pressing."
+            },
+            {
+              "ref": "Psa.139.14",
+              "note": "“Wonderful are your works, and my נֶפֶשׁ knows it well.”"
+            },
+            {
+              "ref": "Pro.2.10",
+              "note": "Wisdom comes into your heart, and knowledge is pleasant to your נֶפֶשׁ."
+            },
+            {
+              "ref": "Pro.19.2",
+              "note": "A נֶפֶשׁ without knowledge is not good."
+            },
+            {
+              "ref": "Psa.103.1",
+              "note": "“Bless Yahweh, my נֶפֶשׁ, and all that is within me.”"
+            },
+            {
+              "ref": "Psa.130.6",
+              "note": "“My נֶפֶשׁ waits for the Lord more than watchmen for the morning.”"
+            },
+            {
+              "ref": "Deu.6.5",
+              "role": "defining",
+              "note": "“You shall love Yahweh your God with all your heart and with all your נֶפֶשׁ and with all your strength.” Quoted at Mat 22:37."
+            },
+            {
+              "ref": "Deu.4.29"
+            },
+            {
+              "ref": "Mat.22.37",
+              "note": "“With all your heart and with all your ψυχή and with all your mind.”"
+            },
+            {
+              "ref": "Mat.26.38",
+              "note": "“My ψυχή is very sorrowful, even to death”, the words of Psa 42:6."
+            }
+          ]
+        },
+        {
+          "id": "nephesh-of-yahweh",
+          "gloss": "Yahweh’s soul, himself",
+          "definition": "Yahweh speaks of his own נֶפֶשׁ as the self that delights in his servant, hates and loathes evil, grows weary of his people’s misery, and rejoices to do them good: himself in his will and feeling.",
+          "cognate_ids": [
+            "ar-nafs"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.42.1",
+              "role": "defining",
+              "note": "“My chosen, in whom my נֶפֶשׁ delights; I have put my spirit on him.” Quoted at Mat 12:18."
+            },
+            {
+              "ref": "Lev.26.11",
+              "role": "defining",
+              "note": "“I will set my dwelling among you, and my נֶפֶשׁ shall not loathe you.”"
+            },
+            {
+              "ref": "Lev.26.30",
+              "note": "“My נֶפֶשׁ shall loathe you.”"
+            },
+            {
+              "ref": "Isa.1.14",
+              "role": "defining",
+              "note": "“Your new moons and your appointed feasts my נֶפֶשׁ hates”: the מוֹעֲדִים of Lev 23 kept by a people whose hands are full of blood (Isa 1:15)."
+            },
+            {
+              "ref": "Psa.11.5",
+              "note": "The wicked and the lover of violence his נֶפֶשׁ hates."
+            },
+            {
+              "ref": "Pro.6.16",
+              "note": "Six things Yahweh hates, seven an abomination to his נֶפֶשׁ."
+            },
+            {
+              "ref": "Jer.5.9",
+              "note": "“Shall not my נֶפֶשׁ be avenged on such a nation?”"
+            },
+            {
+              "ref": "Jer.6.8"
+            },
+            {
+              "ref": "Jdg.10.16",
+              "note": "“His נֶפֶשׁ grew short with the misery of Israel.”"
+            },
+            {
+              "ref": "Zec.11.8"
+            },
+            {
+              "ref": "Jer.32.41",
+              "role": "defining",
+              "note": "“I will plant them in this land in truth, with all my heart and with all my נֶפֶשׁ.”"
+            },
+            {
+              "ref": "Mat.12.18",
+              "note": "“My beloved, in whom my ψυχή is well pleased” (Isa 42:1)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ψυχή",
+          "gloss": "breath, life, soul; person; self",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נֶפֶשׁ → ψυχή ×644 (lemma count, MACULA alignment); Gen.2.7 לְנֶפֶשׁ חַיָּה → εἰς ψυχὴν ζῶσαν; Lev.23.27 and Lev.23.32 נַפְשֹׁתֵיכֶם → τὰς ψυχὰς ὑμῶν; Lev.23.29–30 הַנֶּפֶשׁ → ψυχή"
+            },
+            {
+              "ref": "1Co.15.45",
+              "role": "defining",
+              "note": "Gen 2:7 quoted: Adam became εἰς ψυχὴν ζῶσαν, a living soul."
+            },
+            {
+              "ref": "Act.2.27",
+              "role": "defining",
+              "note": "Psa 16:10 quoted: “you will not leave my ψυχή in Hades”, which Peter says David spoke of the resurrection of the Christ (Act 2:31)."
+            },
+            {
+              "ref": "Mat.22.37",
+              "note": "Deu 6:5 quoted."
+            },
+            {
+              "ref": "Mat.12.18",
+              "note": "Isa 42:1 quoted."
+            },
+            {
+              "ref": "Act.3.23",
+              "note": "“Every ψυχή that will not hear that prophet shall be utterly destroyed from among the people”: the words of Lev 23:29–30 joined to Deu 18:19."
+            },
+            {
+              "ref": "Mat.20.28",
+              "note": "To give his ψυχή a ransom for many."
+            },
+            {
+              "ref": "Act.2.41",
+              "note": "About three thousand ψυχαί added: persons."
+            },
+            {
+              "ref": "Rev.16.3",
+              "note": "“Every living ψυχή died in the sea.”"
+            },
+            {
+              "ref": "Mat.10.28",
+              "note": "God can destroy both ψυχή and body in the valley of Hinnom."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐμπνέω",
+          "gloss": "breathe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jos.10.28, 30, 35, 37, 39 and Jos.11.11, כָּל־הַנֶּפֶשׁ → πᾶν ἐμπνέον, everything that breathes (×6)"
+            },
+            {
+              "ref": "Act.9.1",
+              "note": "Saul, still ἐμπνέων threats and slaughter: the only New Testament use, not of the Hebrew’s passages."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "לֵב",
+            "note": "Heart and soul together as the whole inner person, in loving and seeking Yahweh and in Yahweh’s own purpose.",
+            "evidence": [
+              {
+                "ref": "Deu.6.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.29"
+              },
+              {
+                "ref": "Pro.2.10"
+              },
+              {
+                "ref": "Jer.32.41"
+              }
+            ]
+          },
+          {
+            "lemma": "רוּחַ",
+            "note": "Breath and spirit side by side as what is within a man; Yahweh holds both in his hand.",
+            "evidence": [
+              {
+                "ref": "Job.12.10",
+                "role": "defining",
+                "note": "“In his hand is the נֶפֶשׁ of every living thing and the רוּחַ of all flesh of man.”"
+              },
+              {
+                "ref": "Isa.26.9"
+              },
+              {
+                "ref": "Job.7.11"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּשָׂר",
+            "note": "Soul and flesh as the whole person.",
+            "evidence": [
+              {
+                "ref": "Psa.63.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.10.18",
+                "note": "מִנֶּפֶשׁ וְעַד־בָּשָׂר, soul and body together."
+              }
+            ]
+          },
+          {
+            "lemma": "חַיָּה",
+            "note": "Beside “life” in Elihu’s speeches, both going down to the pit.",
+            "evidence": [
+              {
+                "ref": "Job.33.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.33.22"
+              },
+              {
+                "ref": "Job.33.28"
+              }
+            ]
+          },
+          {
+            "lemma": "דָּם",
+            "note": "The blood is the נֶפֶשׁ.",
+            "evidence": [
+              {
+                "ref": "Deu.12.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.17.11"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נֶפֶשׁ חַיָּה",
+            "gloss": "a living soul, a living creature",
+            "evidence": [
+              {
+                "ref": "Gen.2.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.1.24"
+              },
+              {
+                "ref": "Gen.2.19"
+              },
+              {
+                "ref": "Gen.9.10"
+              }
+            ]
+          },
+          {
+            "phrase": "עִנָּה נֶפֶשׁ",
+            "gloss": "humble the soul, humble oneself (by fasting)",
+            "evidence": [
+              {
+                "ref": "Lev.23.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.32"
+              },
+              {
+                "ref": "Lev.16.29"
+              },
+              {
+                "ref": "Num.29.7"
+              },
+              {
+                "ref": "Psa.35.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.58.5"
+              }
+            ]
+          },
+          {
+            "phrase": "וְנִכְרְתָה הַנֶּפֶשׁ הַהִוא מֵעַמֶּיהָ",
+            "gloss": "that soul shall be cut off from its people",
+            "evidence": [
+              {
+                "ref": "Gen.17.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.29"
+              },
+              {
+                "ref": "Exo.12.15"
+              },
+              {
+                "ref": "Num.9.13"
+              },
+              {
+                "ref": "Num.15.30"
+              }
+            ]
+          },
+          {
+            "phrase": "נֶפֶשׁ תַּחַת נָפֶשׁ",
+            "gloss": "life for life",
+            "evidence": [
+              {
+                "ref": "Exo.21.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.24.18"
+              },
+              {
+                "ref": "1Ki.20.39"
+              }
+            ]
+          },
+          {
+            "phrase": "נֶפֶשׁ מֵת",
+            "gloss": "a dead soul, a dead body",
+            "evidence": [
+              {
+                "ref": "Num.6.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.21.11"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׂם נַפְשׁוֹ בְכַפּוֹ",
+            "gloss": "put one’s life in one’s palm: risk one’s life",
+            "evidence": [
+              {
+                "ref": "Jdg.12.3",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.19.5"
+              },
+              {
+                "ref": "1Sa.28.21"
+              },
+              {
+                "ref": "Job.13.14"
+              }
+            ]
+          },
+          {
+            "phrase": "בִּקֵּשׁ אֶת־נַפְשׁוֹ",
+            "gloss": "seek someone’s life",
+            "evidence": [
+              {
+                "ref": "Exo.4.19",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.20.1"
+              },
+              {
+                "ref": "1Ki.19.10"
+              },
+              {
+                "ref": "Jer.11.21"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵשִׁיב נֶפֶשׁ",
+            "gloss": "bring back the soul: revive, refresh",
+            "evidence": [
+              {
+                "ref": "Lam.1.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.1.16"
+              },
+              {
+                "ref": "Rut.4.15"
+              },
+              {
+                "ref": "Psa.19.8"
+              }
+            ]
+          },
+          {
+            "phrase": "מַר נֶפֶשׁ",
+            "gloss": "bitter of soul",
+            "evidence": [
+              {
+                "ref": "1Sa.1.10",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.22.2"
+              },
+              {
+                "ref": "Job.3.20"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּתֵּי הַנֶּפֶשׁ",
+            "gloss": "“houses of the breath”: scent boxes or perfume bottles (uncertain)",
+            "evidence": [
+              {
+                "ref": "Isa.3.20",
+                "note": "Among the ornaments of the daughters of Zion; the sense is not fixed by the text."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נָפַשׁ",
+      "pos": "verb",
+      "gloss": "take breath, be refreshed",
+      "summary": "Used only in the niphal, three times, of catching one’s breath after work or weariness: the root’s “breath” as a verb.",
+      "bdb": [
+        "n.en.ac"
+      ],
+      "cognate_ids": [
+        "akk-napasu",
+        "ar-nafas",
+        "gez-nafs"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "take breath, refresh oneself",
+          "senses": [
+            {
+              "id": "naphash-refreshed",
+              "gloss": "take breath, be refreshed",
+              "definition": "Recover breath and strength after toil or weariness, beside resting.",
+              "kin": [
+                "nephesh-breath"
+              ],
+              "evidence": [
+                {
+                  "ref": "Exo.23.12",
+                  "role": "defining",
+                  "note": "On the seventh day rest, that your ox and ass may rest (יָנוּחַ) and the son of your maid and the sojourner יִנָּפֵשׁ, take breath."
+                },
+                {
+                  "ref": "2Sa.16.14",
+                  "role": "defining",
+                  "note": "David and the people came weary (עֲיֵפִים), and he refreshed himself there."
+                },
+                {
+                  "ref": "Exo.31.17",
+                  "role": "defining",
+                  "note": "“In six days Yahweh made the heavens and the earth, and on the seventh day he rested (שָׁבַת) and וַיִּנָּפַשׁ”, took breath: the sabbath a sign for ever."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καταπαύω",
+          "gloss": "cease, rest",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.31.17, וַיִּנָּפַשׁ → κατέπαυσεν"
+            },
+            {
+              "ref": "Heb.4.4",
+              "note": "“God κατέπαυσεν on the seventh day from all his works” (Gen 2:2)."
+            },
+            {
+              "ref": "Heb.4.10"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀναψύχω",
+          "gloss": "refresh",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Sa.16.14, וַיִּנָּפֵשׁ → ἀνέψυξαν"
+            },
+            {
+              "ref": "2Ti.1.16",
+              "note": "Onesiphorus often ἀνέψυξεν me, refreshed me."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נַפְשָׁא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "soul, life; person; oneself (Peshitta)",
+      "summary": "The Peshitta’s word for ψυχή, in every sense of Hebrew נֶפֶשׁ, and its ordinary reflexive “oneself”.",
+      "cognate_ids": [
+        "ar-nafs",
+        "arc-napsha"
+      ],
+      "senses": [
+        {
+          "gloss": "life",
+          "definition": "A person’s life, to be sought, saved, lost or laid down.",
+          "kin": [
+            "nephesh-life"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.16.25",
+              "role": "defining",
+              "note": "Whoever would save his נַפְשֵׁהּ will lose it, and whoever loses it for my sake will find it."
+            },
+            {
+              "ref": "Jhn.10.11",
+              "role": "defining",
+              "note": "The good shepherd lays down his נַפְשֵׁהּ for his sheep."
+            },
+            {
+              "ref": "Jhn.10.17"
+            },
+            {
+              "ref": "Mat.20.28"
+            },
+            {
+              "ref": "Mat.2.20",
+              "note": "Those who sought the child’s נַפְשֵׁהּ are dead (Exo 4:19)."
+            },
+            {
+              "ref": "Luk.12.20",
+              "note": "“This night your נַפְשָׁךְ is required of you.”"
+            },
+            {
+              "ref": "Mrk.3.4"
+            },
+            {
+              "ref": "Jas.5.20",
+              "note": "He saves a נַפְשָׁא from death."
+            }
+          ]
+        },
+        {
+          "gloss": "oneself",
+          "definition": "With a suffix, the reflexive: himself, myself.",
+          "kin": [
+            "nephesh-self"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.16.24",
+              "role": "defining",
+              "note": "“Let him deny בְּנַפְשֵׁהּ”, himself."
+            },
+            {
+              "ref": "Luk.9.23"
+            },
+            {
+              "ref": "Luk.12.19",
+              "note": "“I will say to my נַפְשִׁי: נַפְשִׁי, you have many goods laid up.”"
+            }
+          ]
+        },
+        {
+          "gloss": "person",
+          "definition": "A person, counted, or every one.",
+          "kin": [
+            "nephesh-person"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.2.41",
+              "role": "defining",
+              "note": "About three thousand נַפְשָׁן were added."
+            },
+            {
+              "ref": "Act.27.37",
+              "role": "defining",
+              "note": "276 נַפְשָׁן in the ship."
+            },
+            {
+              "ref": "1Pe.3.20",
+              "note": "Eight נַפְשָׁן saved through water."
+            },
+            {
+              "ref": "Act.3.23",
+              "note": "“Every נַפְשָׁא that does not hear that prophet, that נַפְשָׁא shall perish from its people”: the wording of Lev 23:30, וְהַאֲבַדְתִּי אֶת־הַנֶּפֶשׁ הַהִוא מִקֶּרֶב עַמָּהּ."
+            },
+            {
+              "ref": "Rom.13.1"
+            }
+          ]
+        },
+        {
+          "gloss": "living soul, creature",
+          "definition": "A living creature, in the words of Gen 2:7.",
+          "kin": [
+            "living-soul"
+          ],
+          "evidence": [
+            {
+              "ref": "1Co.15.45",
+              "role": "defining",
+              "note": "Adam became לַנְפֶשׁ חַיָּא, a living soul."
+            },
+            {
+              "ref": "Rev.16.3",
+              "note": "Every living נַפְשָׁא in the sea died."
+            }
+          ]
+        },
+        {
+          "gloss": "soul, the inner self",
+          "definition": "The self that loves, grieves and delights.",
+          "kin": [
+            "nephesh-heart",
+            "nephesh-of-yahweh"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.22.37",
+              "role": "defining",
+              "note": "Love the Lord your God with all your heart and all your נַפְשָׁךְ (Deu 6:5)."
+            },
+            {
+              "ref": "Mat.26.38",
+              "role": "defining",
+              "note": "“My נַפְשִׁי is very sorrowful, even to death.”"
+            },
+            {
+              "ref": "Mat.12.18",
+              "note": "My beloved, in whom my נַפְשִׁי delights (Isa 42:1)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נַפְשָׁנָיָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "natural, belonging to the living soul (Peshitta)",
+      "summary": "The Peshitta’s word for ψυχικός, an adjective made from נַפְשָׁא: belonging to the living soul that Adam became, set against רוּחָנָיָא, spiritual.",
+      "cognate_ids": [
+        "ar-nafs"
+      ],
+      "senses": [
+        {
+          "gloss": "natural (of the body)",
+          "definition": "Of the body that is sown, the body of the living soul, before the spiritual body that is raised.",
+          "kin": [
+            "living-soul"
+          ],
+          "evidence": [
+            {
+              "ref": "1Co.15.44",
+              "role": "defining",
+              "note": "“It is sown a נַפְשָׁנָיָא body, it is raised a spiritual body; there is a body of the נֶפֶשׁ and there is a body of the spirit.”"
+            },
+            {
+              "ref": "1Co.15.46",
+              "role": "defining",
+              "note": "The spiritual is not first, but the נַפְשָׁנָיָא, then the spiritual: following Adam the living soul (1Co 15:45)."
+            },
+            {
+              "ref": "Jud.1.19",
+              "note": "Those who make separations are נַפְשָׁנָיֵא, not having the spirit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְפָאשָׁא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "relief, rest, breathing space (Peshitta)",
+      "summary": "A noun of the Peshitta answering to the niphal’s “take breath”: relief from grief, and rest.",
+      "cognate_ids": [
+        "akk-napasu",
+        "ar-nafas",
+        "gez-nafs"
+      ],
+      "senses": [
+        {
+          "gloss": "relief, rest",
+          "definition": "A breathing space: relief from sorrow, or rest from torment.",
+          "kin": [
+            "naphash-refreshed"
+          ],
+          "evidence": [
+            {
+              "ref": "Php.2.28",
+              "role": "defining",
+              "note": "Paul sends Epaphroditus so that they may rejoice and he have נְפָאשָׁא, be less sorrowful (ἀλυπότερος)."
+            },
+            {
+              "ref": "Rev.14.11",
+              "role": "defining",
+              "note": "Those who worship the beast have no נְפָאשָׁא day or night (ἀνάπαυσις, rest)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-nafs",
+      "lang": "ar",
+      "form": "نَفْسٌ",
+      "translit": "nafs",
+      "gloss": "soul, vital principle; self; person, living being; blood; body; will, desire; appetite",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Lane’s sources give nafs as the soul or vital principle, said to go out (ḫarajat nafsuhu) at death; a thing’s self, used reflexively (qatala nafsahu “he killed himself”); a person, “a man, altogether, his soul and his body”, a living being; blood (“his nafs flowed”), said to be so called because the soul goes out with it; the body; will, wish or desire; and appetite. Every sense of נֶפֶשׁ but the throat. Arabic s (س) answers to Hebrew ש as š, not ṯ (ث).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2827, root نفس, نَفْسٌ (n40256)",
+          "note": "“The soul; the spirit; the vital principle … A thing’s self … A person; a being; an individual … a man, altogether, his soul and his body; a living being … Blood … The body … Will, wish, or desire … [Stomach, or appetite.]”"
+        }
+      ]
+    },
+    {
+      "id": "ar-nafas",
+      "lang": "ar",
+      "form": "نَفَسٌ، تَنَفَّسَ",
+      "translit": "nafas, tanaffasa",
+      "gloss": "breath; (V) breathe, draw breath; (II) relieve, give breathing space",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "nafas is breath, “what is drawn in by the air-passages in the nose … and emitted”, and a gulp or a pause for breath between draughts; form V tanaffasa is to breathe, “said of a man and of every animal having lungs”; form II naffasa is to relieve grief and make circumstances ample. The breath behind נֶפֶשׁ and the niphal נָפַשׁ “take breath, be refreshed”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2828, root نفس, نَفَسٌ (n40257)",
+          "note": "“[Breath;] what is drawn in by the airpassages in the nose, [or by the mouth,] to the inside, and emitted.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2826, root نفس, تنفّس (n40255); نفّس (n40252)",
+          "note": "Form V “[He breathed] is said of a man and of every animal having lungs”; form II “He (God) removed, or cleared away, his grief … made his circumstances ample and easy”."
+        }
+      ]
+    },
+    {
+      "id": "akk-napistu",
+      "lang": "akk",
+      "form": "napištu",
+      "translit": "napištu",
+      "gloss": "throat; breath; life; living being, person; self; sustenance",
+      "relation": "cognate",
+      "note": "Over 4,500 attestations, glossed throat, breath, life, living being, person, soul and sustenance: the same range as נֶפֶשׁ, from the throat up. The Akkadian feminine -t- is the language’s own ending. Akkadian š does not show whether š or ṯ stands behind it.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000013910, napištu [throat] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000013910.html"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*npš [throat]: akkadian napištu [throat], ugaritic npš [throat], hebrew nepeš [soul], aramaic npšh [breath], punic npš [person], arabic nafs [soul]"
+        }
+      ]
+    },
+    {
+      "id": "akk-napasu",
+      "lang": "akk",
+      "form": "napāšu",
+      "translit": "napāšu",
+      "gloss": "breathe, breathe freely; relax; be wide, expand, thrive",
+      "relation": "cognate",
+      "note": "The verb “breathe (freely), relax”, glossed also “letting breathe freely” and “relaxing”: the niphal נָפַשׁ “take breath, be refreshed” after toil.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000025040, napāšu [breathe] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000025040.html"
+        }
+      ]
+    },
+    {
+      "id": "uga-nps",
+      "lang": "uga",
+      "form": "𐎐𐎔𐎌",
+      "translit": "npš",
+      "gloss": "throat, appetite; breath; soul; person; lung",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Segert’s glossary gives /napš-/ “lung” (KTU 1.109:12), “(throat >) breath” (KTU 1.18:IV:25, “may his soul go out like wind”), and “soul; person” in a list of persons (KTU 4.338:1); his texts render KTU 1.17:V “throat > appetite”. Ugaritic š, kept apart from ṯ, stands behind ש.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 194, §93 Glossary, npš",
+          "note": "“/napš-/ 1.109:12 … ‘lung’; 1.18:IV:25 … ‘(throat >) breath’; 4.338:1 … ‘soul; person’ (H. nepeš, Arab. nafs)”."
+        }
+      ]
+    },
+    {
+      "id": "phn-nps",
+      "lang": "phn",
+      "form": "𐤍𐤐𐤔",
+      "translit": "npš",
+      "gloss": "person; personnel; emotion, feelings; (Punic) funerary monument, tombstone",
+      "relation": "cognate",
+      "note": "NPŠ I is a person (a Neo-Punic epitaph closes npš mt, “a deceased person”, the Hebrew נֶפֶשׁ מֵת), personnel, and feelings (KAI 24.13, “as an orphan feels towards a mother”). NPŠ II, the funerary monument or tombstone, which Krahmalkov sets with Sabaic and Ethiopic, names the stone that stands for the dead person. Phoenician š does not show š or ṯ.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 332, NPŠ I and NPŠ II",
+          "note": "“NPŠ I [Heb. nepeš] n.m. 1. PERSON … KAI 128.1/3 … npš mt … ‘A deceased person.’ 2. PERSONNEL … 3. EMOTION, FEELINGS”; “NPŠ II [OSA nfs; Eth. nafes] n.m. FUNERARY MONUMENT, TOMBSTONE”."
+        }
+      ]
+    },
+    {
+      "id": "arc-napsha",
+      "lang": "arc",
+      "form": "נַפְשָׁא",
+      "translit": "napšā",
+      "gloss": "soul, life; will; self (Jewish Aramaic); a funerary monument",
+      "relation": "cognate",
+      "note": "In the Targums for Hebrew נֶפֶשׁ (Targ. Gen 1:20; 23:8; 14:21), with the same sense of will (Gen 23:8) and person (Gen 14:21); with a suffix it is “himself” (אדעתא דנפשיה “with the intention of benefiting himself”). The same word names a monument over a tomb, as in Punic and Sabaic. The Peshitta’s נַפְשָׁא is a word of this entry.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְפַשׁ, נַפְשָׁא (ch.)",
+          "note": "“1) soul, will &c. … Targ. Gen. I, 20. Ib. XXIII, 8 … Targ. Gen. XIV, 21”; also “monument”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נֶפֶשׁ (resting place, monument; soul, life, person, will)"
+        }
+      ]
+    },
+    {
+      "id": "gez-nafs",
+      "lang": "gez",
+      "form": "ነፍስ፡ ነፈሰ፡ አንፈሰ፡",
+      "translit": "nafs, nafasa, ʾanfasa",
+      "gloss": "breath, life, soul, living being; (verb) blow; (IV) breathe out, take breath, be refreshed, rest",
+      "relation": "cognate",
+      "note": "Dillmann: the verb ነፈሰ is “spirare, flare”, of the wind; its causative አንፈሰ is “exhalare … respirare, recipere animam, recreari, requiescere”, to take breath, be refreshed, rest, the very sense of the niphal נָפַשׁ beside “rest” (Exo 23:12; 31:17). The noun ነፍስ is first “halitus, spiritus”, breath (cited for Job 41:13), then “vis vitalis, vita” (Gen 35:18; 1Ki 17:21; Lev 17:14), a living creature, and the inner self (Deu 4:29; Mat 22:37).",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 1700–1701, ነፈሰ, አንፈሰ, ነፍስ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft"
+        }
+      ]
+    },
+    {
+      "id": "sab-nfs",
+      "lang": "sem",
+      "form": "𐩬𐩰𐩪",
+      "translit": "nfs¹",
+      "gloss": "(Sabaic) self, soul, life; stela, funerary stela",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Sabaic: “self, soul, life” (“he dedicated himself”, “saved his life”, “if he does not give himself up, his life is forfeit”), and the gravestone, “nfs wqbr X, gravestone and grave of X”. Sabaic s¹ answers to ש as š.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 309–310, NFS, n.",
+          "note": "“(1) SELF, SOUL, LIFE … [Ar nafs ‘soul, self.’] … (2) STELA, esp FUNERARY STELA, GRAVESTONE [Phoen npš, Eth nafes id.]”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Yahweh God formed the man of dust from the ground and breathed into his nostrils the breath of life, “and the man became a living נֶפֶשׁ” (Gen 2:7): the man became a soul; a soul was not put into him. The same words name the fish, birds and beasts (Gen 1:20, 24, 30; 2:19; 9:10), and Paul quotes Gen 2:7 to set the first Adam, a living soul, beside the last Adam, a life-giving spirit, the natural body sown before the spiritual body raised (1Co 15:44–46). Scripture says the נֶפֶשׁ dies (Num 23:10; Jdg 16:30; Ezk 18:4, 20), is struck with the sword (Jos 10:28), is destroyed from among its people (Lev 23:30), and that a corpse is a dead נֶפֶשׁ (Num 6:6; 19:13). Its going is the going of breath, and its coming back is life (Gen 35:18; 1Ki 17:21–22). Its hope is to be redeemed from the hand of Sheol, the grave (Psa 49:16; 30:4); Peter takes “you will not leave my ψυχή in Hades” as spoken of the resurrection of the Christ (Psa 16:10; Act 2:27, 31). John sees every living ψυχή in the sea die (Rev 16:3), and Jesus says God can destroy both ψυχή and body in the valley of Hinnom (Mat 10:28). From the verses: the soul is the living creature itself, man and beast alike; it is mortal and can die and be destroyed; scripture knows no soul that lives on apart from the body, and the hope it gives the dead is resurrection.",
+      "evidence": [
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Gen.1.20"
+        },
+        {
+          "ref": "Gen.1.24"
+        },
+        {
+          "ref": "Gen.1.30"
+        },
+        {
+          "ref": "Gen.2.19"
+        },
+        {
+          "ref": "Gen.9.10"
+        },
+        {
+          "ref": "1Co.15.44",
+          "to": "1Co.15.46"
+        },
+        {
+          "ref": "Num.23.10"
+        },
+        {
+          "ref": "Jdg.16.30"
+        },
+        {
+          "ref": "Ezk.18.4"
+        },
+        {
+          "ref": "Ezk.18.20"
+        },
+        {
+          "ref": "Jos.10.28"
+        },
+        {
+          "ref": "Lev.23.30"
+        },
+        {
+          "ref": "Num.6.6"
+        },
+        {
+          "ref": "Num.19.13"
+        },
+        {
+          "ref": "Gen.35.18"
+        },
+        {
+          "ref": "1Ki.17.21",
+          "to": "1Ki.17.22"
+        },
+        {
+          "ref": "Psa.49.16"
+        },
+        {
+          "ref": "Psa.30.4"
+        },
+        {
+          "ref": "Psa.16.10"
+        },
+        {
+          "ref": "Act.2.27"
+        },
+        {
+          "ref": "Act.2.31"
+        },
+        {
+          "ref": "Rev.16.3"
+        },
+        {
+          "ref": "Mat.10.28"
+        }
+      ]
+    },
+    {
+      "topic": "life-in-the-blood",
+      "statement": "After the flood God forbade eating flesh “with its נֶפֶשׁ, its blood” (Gen 9:4). The law says why: “the נֶפֶשׁ of the flesh is in the blood, and I have given it to you on the altar to cover over your souls, for it is the blood that covers by the נֶפֶשׁ” (Lev 17:11, 14; Deu 12:23). On the Day of the coverings, when Israel humbled its souls, the high priest went in with blood to cover for the people (Lev 16:14–16, 29–30; 23:27–28), and Hebrews says he did not enter without blood, and that without shedding of blood there is no forgiveness (Heb 9:7, 22). The servant of Isaiah makes his own נֶפֶשׁ a guilt offering and pours out his נֶפֶשׁ to death, bearing the sin of many (Isa 53:10–12); Jesus says the Son of man came to give his ψυχή a ransom for many (Mat 20:28), and Hebrews that Christ entered once for all by his own blood (Heb 9:12). From the verses: blood covers because it is the life given up; the animal’s life on the altar pointed to the life of the servant poured out to death, which the New Testament finds in Christ.",
+      "evidence": [
+        {
+          "ref": "Gen.9.4"
+        },
+        {
+          "ref": "Lev.17.11"
+        },
+        {
+          "ref": "Lev.17.14"
+        },
+        {
+          "ref": "Deu.12.23"
+        },
+        {
+          "ref": "Lev.16.14",
+          "to": "Lev.16.16"
+        },
+        {
+          "ref": "Lev.16.29",
+          "to": "Lev.16.30"
+        },
+        {
+          "ref": "Lev.23.27",
+          "to": "Lev.23.28"
+        },
+        {
+          "ref": "Heb.9.7"
+        },
+        {
+          "ref": "Heb.9.22"
+        },
+        {
+          "ref": "Isa.53.10",
+          "to": "Isa.53.12"
+        },
+        {
+          "ref": "Mat.20.28"
+        },
+        {
+          "ref": "Heb.9.12"
+        }
+      ]
+    },
+    {
+      "topic": "humbling-the-soul",
+      "statement": "On the tenth of the seventh month Israel was to “humble your נַפְשֹׁתֵיכֶם” from evening to evening, and any נֶפֶשׁ not humbled that day would be cut off, any that worked destroyed from among its people (Lev 23:27–32; 16:29–31; Num 29:7). The psalmist says “I humbled my נֶפֶשׁ with fasting” (Psa 35:13), and Luke calls the day simply “the fast” (Act 27:9). Isaiah’s hearers complain that they humbled their נֶפֶשׁ and Yahweh took no notice; he answers that the fast he chooses is to loose the bonds of wickedness, share bread with the hungry, “and draw out your נֶפֶשׁ to the hungry and satisfy the humbled נֶפֶשׁ” (Isa 58:3–10). Peter applies the words of Lev 23:29–30 to every ψυχή that will not hear the prophet like Moses (Act 3:22–23). From the verses: to humble the soul is to humble oneself, by fasting, before Yahweh; he asks that it reach the hungry soul of one’s neighbour, and the penalty on the soul that would not be humbled is the penalty on the soul that will not hear Christ.",
+      "evidence": [
+        {
+          "ref": "Lev.23.27",
+          "to": "Lev.23.32"
+        },
+        {
+          "ref": "Lev.16.29",
+          "to": "Lev.16.31"
+        },
+        {
+          "ref": "Num.29.7"
+        },
+        {
+          "ref": "Psa.35.13"
+        },
+        {
+          "ref": "Act.27.9"
+        },
+        {
+          "ref": "Isa.58.3",
+          "to": "Isa.58.10"
+        },
+        {
+          "ref": "Act.3.22",
+          "to": "Act.3.23"
+        }
+      ]
+    },
+    {
+      "topic": "losing-the-soul",
+      "statement": "The good shepherd lays down his ψυχή for the sheep, and takes it again (Jhn 10:11, 15, 17–18), as the servant poured out his נֶפֶשׁ to death and yet “shall see seed, shall prolong days” (Isa 53:10, 12). Jesus tells his disciples to deny themselves (the Peshitta: deny נַפְשֵׁהּ), and that whoever would save his ψυχή will lose it, and whoever loses it for his sake will find it; a man gains nothing if he wins the world and loses his ψυχή (Mat 16:24–26). The rich fool’s ψυχή is required of him in a night (Luk 12:19–20). From the verses: the soul a man has is his life, which he cannot keep; it is found again only by giving it up for Christ, who gave his and received it back.",
+      "evidence": [
+        {
+          "ref": "Jhn.10.11"
+        },
+        {
+          "ref": "Jhn.10.15"
+        },
+        {
+          "ref": "Jhn.10.17",
+          "to": "Jhn.10.18"
+        },
+        {
+          "ref": "Isa.53.10"
+        },
+        {
+          "ref": "Isa.53.12"
+        },
+        {
+          "ref": "Mat.16.24",
+          "to": "Mat.16.26"
+        },
+        {
+          "ref": "Luk.12.19",
+          "to": "Luk.12.20"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (נַפְשֹׁתֵיכֶם, 23:27, 32; הַנֶּפֶשׁ, 23:29, 30). Left out: נֹפֶת “honey” (n.en.af, Psa 19:11; Pro 5:3; 24:13; 27:7; Sng 4:11), which the database files under this root but whose consonants are נפת, not נפש; Krahmalkov gives Punic NPT “honey” as its own word (p. 332) and Akkadian has nūbtu “honey-bee” (Oracc armep x000081780), so its cognates point to another root (perhaps נוב/נוף); n.en.af is left unclaimed for that root’s entry. The name נָפִישׁ Naphish (n.en.ad, a son of Ishmael, Gen 25:15; 1Ch 1:31; 5:19) is a person but was not in this task’s list, so no name entry was written; the place/people name נַפְתֻּחִים (n.en.ai, Gen 10:13; 1Ch 1:11) is a place and cannot be a name entry; neither may belong to this root. n.en.aa is the root key with no tokens. Peshitta: SEDRA root 1195 NIW, lexemes 2005 NIWA נַפְשָׁא (422 NT tokens), 2006 NIWN;A נַפְשָׁנָיָא (1Co 15:44, 46; Jud 1:19), 2004 NIAWA נְפָאשָׁא (Php 2:28; Rev 14:11); Payne Smith not checked. Senses of נֶפֶשׁ are grouped by the verses; the boundaries between “life”, “person”, “self” and “soul (inner self)” are fluid and many verses could sit in two. The throat sense rests on Isa 5:14, Hab 2:5, Jon 2:6, Psa 69:2 and 105:18 and on Akkadian and Ugaritic; it is not the commonest use. Isa 3:20 בָּתֵּי הַנֶּפֶשׁ is entered as a phrase with its sense left uncertain. The Day of the coverings is written for יוֹם הַכִּפֻּרִים and “cover over” for כִּפֶּר, following the lexicon’s convention. Wiktionary also lists Ge’ez/Amharic/Tigrinya näfs; only Dillmann (read in OCR, cols. 1700–1701; page image not checked) is cited. Segert p. 194 and Biella pp. 309–310 and Krahmalkov p. 332 read from the local text layers. Open questions: (1) the glosses use “soul” and “living soul” as the user’s literal convention, with “life/person/self” where the use requires; (2) Mat 10:28 is cited in the mortality doctrine as the destruction of the ψυχή; review its framing; (3) whether the Peshitta adjective נַפְשָׁנָיָא should stay as a word of the entry."
+}
