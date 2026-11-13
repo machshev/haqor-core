@@ -1,0 +1,713 @@
+{
+  "id": "tamar",
+  "root": "תמר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "plants",
+    "trees",
+    "feasts",
+    "temple",
+    "worship"
+  ],
+  "gloss": "date palm; palm figure; upright post, column",
+  "summary": "תָּמָר is the date palm: a tall tree that grows by water in the wilderness (Exo 15:27) and gives Jericho its name, “the city of palms” (Deu 34:3), and whose fronds Israel takes to rejoice before Yahweh at the feast of booths (Lev 23:40; Neh 8:15). Scripture likens to it a tall stature and the righteous who flourish in Yahweh’s house (Sng 7:8; Psa 92:13–14); תִּמֹרָה is the palm carved between the cherubim on the walls and doors of Solomon’s house and Ezekiel’s (1Ki 6:29; Ezk 41:18). The rarer words carry the palm’s upright shape: תֹּמֶר a palm or an upright post, and תִּימָרָה a column of smoke (Joel 3:3, quoted at Acts 2:19); תַּמְרוּר “signposts” may belong here or to another root. Aramaic, Punic, Sabaean and Arabic have the same word for the date palm and its fruit.",
+  "words": [
+    {
+      "lemma": "תָּמָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "date palm, palm tree",
+      "bdb": [
+        "w.ba.ac"
+      ],
+      "cognate_ids": [
+        "ar-tamr",
+        "arc-tamra",
+        "syc-tmarta",
+        "phn-tmr",
+        "sab-tmr",
+        "ar-thamar"
+      ],
+      "summary": "The date palm, the tree itself; its fronds at the feast of booths; and in place names where palms grow. The corpus files the name Tamar under this key too by spelling, so its counted uses take in the name’s tokens.",
+      "senses": [
+        {
+          "id": "palm-tree",
+          "gloss": "date palm",
+          "definition": "The date palm: a tall tree growing by springs in dry country, bearing clusters of fruit on stalks, counted among the fruit trees of the land.",
+          "evidence": [
+            {
+              "ref": "Exo.15.27",
+              "role": "defining",
+              "note": "At Elim, “twelve springs of water and seventy תְּמָרִים, and they camped there by the water”: palms mark water in the wilderness."
+            },
+            {
+              "ref": "Num.33.9",
+              "note": "The same camp at Elim in the list of Israel’s journeys."
+            },
+            {
+              "ref": "Sng.7.8",
+              "role": "defining",
+              "note": "“This your stature (קוֹמָה) is like a תָמָר, and your breasts like clusters”: the palm’s height, and its fruit in clusters."
+            },
+            {
+              "ref": "Sng.7.9",
+              "role": "defining",
+              "note": "“I will go up into the תָמָר; I will take hold of its fruit stalks (סַנְסִנִּים)”: a tree climbed for its fruit, borne high."
+            },
+            {
+              "ref": "Jol.1.12",
+              "role": "defining",
+              "note": "Among the fruit trees that wither in the locust plague: “the vine… the fig… pomegranate, also תָּמָר and apple, all the trees of the field”."
+            },
+            {
+              "ref": "Psa.92.13",
+              "note": "“The righteous shall flourish like the תָּמָר; he shall grow like a cedar in Lebanon.”"
+            }
+          ]
+        },
+        {
+          "id": "palm-fronds",
+          "gloss": "palm fronds (at the feast of booths)",
+          "definition": "The palm’s great leaves, taken in the hand and built into booths at the feast of the seventh month.",
+          "evidence": [
+            {
+              "ref": "Lev.23.40",
+              "role": "defining",
+              "note": "“You shall take for yourselves on the first day the fruit of a goodly tree, כַּפֹּת תְּמָרִים, boughs of leafy trees and willows of the brook, and you shall rejoice before Yahweh your God seven days.” כַּפּוֹת, “palms (of the hand)”, are the fronds, spread like hands."
+            },
+            {
+              "ref": "Neh.8.15",
+              "role": "defining",
+              "note": "“Bring olive leaves, … myrtle leaves, עֲלֵי תְמָרִים and leaves of leafy trees, to make booths, as it is written.”"
+            }
+          ]
+        },
+        {
+          "id": "palm-place",
+          "gloss": "palms (in place names)",
+          "definition": "In names of places known for their palms: Jericho, “the city of palms”, and Hazezon-tamar by the spring of En-gedi.",
+          "evidence": [
+            {
+              "ref": "Deu.34.3",
+              "role": "defining",
+              "note": "From Nebo Moses sees “the plain of the valley of Jericho, עִיר הַתְּמָרִים, as far as Zoar”."
+            },
+            {
+              "ref": "Jdg.1.16",
+              "note": "The Kenites go up “from עִיר הַתְּמָרִים” with Judah."
+            },
+            {
+              "ref": "Jdg.3.13",
+              "note": "Eglon takes עִיר הַתְּמָרִים."
+            },
+            {
+              "ref": "2Ch.28.15",
+              "role": "defining",
+              "note": "“To Jericho, עִיר הַתְּמָרִים”: the name explained in the text."
+            },
+            {
+              "ref": "2Ch.20.2",
+              "note": "“Hazezon-tamar, which is En-gedi”: the palm place is a spring."
+            },
+            {
+              "ref": "Gen.14.7",
+              "note": "Hazezon-tamar, where the Amorites lived."
+            },
+            {
+              "ref": "Jdg.20.33",
+              "note": "Baal-tamar, near Gibeah."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φοῖνιξ",
+          "gloss": "date palm; palm branch",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "תָּמָר → φοῖνιξ ×8, φοῖνιχ ×2, φοίνικι ×1, φοινικῶνος ×1 (MACULA alignment); Lev.23.40, כַּפֹּת תְּמָרִים → κάλλυνθρα φοινίκων"
+            },
+            {
+              "ref": "Jhn.12.13",
+              "note": "The crowd going out to meet Jesus “took τὰ βαΐα τῶν φοινίκων” and cried, “Hosanna! Blessed is he who comes in the name of the Lord, the King of Israel!”"
+            },
+            {
+              "ref": "Rev.7.9",
+              "note": "A great multitude before the throne and before the Lamb, clothed in white robes, “and φοίνικες in their hands”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֶרֶז",
+            "note": "The palm and the cedar: two tall trees for the righteous who flourish and grow.",
+            "evidence": [
+              {
+                "ref": "Psa.92.13",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "גֶּפֶן",
+            "note": "With the vine, fig, pomegranate and apple: the fruit trees of the land.",
+            "evidence": [
+              {
+                "ref": "Jol.1.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כַּפֹּת תְּמָרִים",
+            "gloss": "palm fronds",
+            "evidence": [
+              {
+                "ref": "Lev.23.40",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲלֵי תְמָרִים",
+            "gloss": "palm leaves",
+            "evidence": [
+              {
+                "ref": "Neh.8.15",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עִיר הַתְּמָרִים",
+            "gloss": "the city of palms (Jericho)",
+            "evidence": [
+              {
+                "ref": "Deu.34.3",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.28.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.1.16"
+              },
+              {
+                "ref": "Jdg.3.13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תִּמֹרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "palm figure, carved palm",
+      "bdb": [
+        "w.ba.ae"
+      ],
+      "cognate_ids": [
+        "ar-tamr",
+        "arc-tamra",
+        "syc-tmarta",
+        "phn-tmr",
+        "sab-tmr"
+      ],
+      "summary": "A palm tree carved or wrought as ornament in Yahweh’s house, always beside cherubim and open flowers or on the gate posts; used only of Solomon’s house and of the house shown to Ezekiel.",
+      "senses": [
+        {
+          "id": "palm-figure",
+          "gloss": "palm figure (as ornament)",
+          "definition": "A figure of a palm tree carved on the walls, doors and stands of Solomon’s house, overlaid with gold, and set on the jambs of the gates and on the walls of the house in Ezekiel’s vision, a palm between each pair of cherubim.",
+          "kin": [
+            "palm-tree"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.6.29",
+              "role": "defining",
+              "note": "“All the walls of the house round about he carved with carved figures of cherubim and תִמֹרֹת and open flowers, inside and outside.”"
+            },
+            {
+              "ref": "1Ki.6.32",
+              "role": "defining",
+              "note": "On the olive-wood doors: cherubim, תִמֹרוֹת and open flowers, “and he spread the gold on the cherubim and on the תִּמֹרוֹת”."
+            },
+            {
+              "ref": "1Ki.6.35"
+            },
+            {
+              "ref": "1Ki.7.36",
+              "note": "On the panels of the bronze stands: cherubim, lions and תִמֹרֹת."
+            },
+            {
+              "ref": "2Ch.3.5",
+              "note": "The great house covered with gold, “and he put on it תִּמֹרִים and chains”."
+            },
+            {
+              "ref": "Ezk.40.16",
+              "note": "On the jambs of the gate: תִּמֹרִים."
+            },
+            {
+              "ref": "Ezk.40.22",
+              "note": "Its windows, its porches and its תִּמֹרָיו (written ותמרו, read וְתִמֹרָיו)."
+            },
+            {
+              "ref": "Ezk.40.26",
+              "note": "“And it had תִמֹרִים, one on this side and one on that side, on its jambs.”"
+            },
+            {
+              "ref": "Ezk.40.31"
+            },
+            {
+              "ref": "Ezk.40.34"
+            },
+            {
+              "ref": "Ezk.40.37"
+            },
+            {
+              "ref": "Ezk.41.18",
+              "role": "defining",
+              "note": "“It was made with cherubim and תִמֹרִים, a תִמֹרָה between cherub and cherub, and every cherub had two faces.”"
+            },
+            {
+              "ref": "Ezk.41.19",
+              "role": "defining",
+              "note": "“The face of a man toward the תִּמֹרָה on one side, and the face of a young lion toward the תִּמֹרָה on the other side.”"
+            },
+            {
+              "ref": "Ezk.41.20"
+            },
+            {
+              "ref": "Ezk.41.25",
+              "note": "On the doors of the temple, “as were made on the walls”."
+            },
+            {
+              "ref": "Ezk.41.26"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φοῖνιξ",
+          "gloss": "palm tree",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "תִּמֹרָה → φοῖνιξ ×14, φοίνικας ×3 (MACULA alignment); 1Ki.6.29, וְתִמֹרֹת → φοίνικας"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כְּרוּב",
+            "note": "Cherubim and palms carved together, and in Ezekiel a palm between each two cherubim.",
+            "evidence": [
+              {
+                "ref": "1Ki.6.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.41.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.41.25"
+              }
+            ]
+          },
+          {
+            "lemma": "פְּטוּרֵי צִצִּים",
+            "note": "Open flowers, carved with the palms and cherubim.",
+            "evidence": [
+              {
+                "ref": "1Ki.6.29"
+              },
+              {
+                "ref": "1Ki.6.32"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תַּמְרוּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "signpost, waymark",
+      "bdb": [
+        "w.ba.ag"
+      ],
+      "summary": "Only Jer 31:21, plural, beside צִיֻּנִים “waymarks”: markers set up to find the road home. Its tie to this root is not clear. If it is from תמר, it is an upright post like the palm; Arabic ʾamara, a cairn or sign set up to show the way, points instead to a root אמר with a prefixed ת. The other two tokens filed under this key by spelling (Jer 6:26; Hos 12:15) are תַּמְרוּרִים “bitterness”, of מרר.",
+      "senses": [
+        {
+          "gloss": "signposts, waymarks",
+          "definition": "Markers set up along a road, so that those who went out by it can find the way back.",
+          "cognate_ids": [
+            "ar-amara"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.31.21",
+              "role": "defining",
+              "note": "“Set up for yourself צִיֻּנִים, make for yourself תַּמְרוּרִים, set your heart toward the highway, the way you went: return, virgin of Israel.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "צִיּוּן",
+            "note": "Waymarks: the two words set in parallel, each “set up for yourself”.",
+            "evidence": [
+              {
+                "ref": "Jer.31.21",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תֹּמֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "palm tree; upright post",
+      "bdb": [
+        "w.ba.ab"
+      ],
+      "summary": "A palm, once a single landmark tree; and once an upright post that idols are likened to, whose tie to the palm is its upright shape. Two uses only.",
+      "senses": [
+        {
+          "id": "single-palm",
+          "gloss": "palm tree",
+          "definition": "A palm tree standing as a landmark.",
+          "kin": [
+            "palm-tree"
+          ],
+          "evidence": [
+            {
+              "ref": "Jdg.4.5",
+              "role": "defining",
+              "note": "Deborah “sat under תֹּמֶר דְּבוֹרָה between Ramah and Bethel in the hill country of Ephraim, and the sons of Israel came up to her for judgment”."
+            }
+          ],
+          "cognate_ids": [
+            "ar-tamr",
+            "arc-tamra",
+            "syc-tmarta",
+            "phn-tmr",
+            "sab-tmr"
+          ]
+        },
+        {
+          "id": "upright-post",
+          "gloss": "upright post",
+          "definition": "An upright, palm-like post: idols are like one, standing stiff, unable to speak or walk.",
+          "evidence": [
+            {
+              "ref": "Jer.10.5",
+              "role": "defining",
+              "note": "“They are כְּתֹמֶר מִקְשָׁה, and they do not speak; they must be carried, for they cannot walk.” מִקְשָׁה is a cucumber field in Isa 1:8, hammered work in Exo 25:31: either a post standing in a field or a palm-shaped column of beaten metal. Either way the point is an upright thing that cannot move."
+            },
+            {
+              "ref": "Isa.1.8",
+              "note": "בְמִקְשָׁה, “in a cucumber field”: the other use of the word in Jer 10:5."
+            },
+            {
+              "ref": "Exo.25.31",
+              "note": "The lampstand made מִקְשָׁה, “of hammered work”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּימָרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "column (of smoke)",
+      "bdb": [
+        "w.ba.af"
+      ],
+      "summary": "Always plural and always of smoke: rising columns. Its link to the palm is taken from the shape, a straight column spreading at the top, which scripture does not state; the palm’s height (Sng 7:8) is the nearest it comes. Peter quotes Joel 3:3 at Pentecost (Acts 2:19).",
+      "senses": [
+        {
+          "id": "smoke-column",
+          "gloss": "columns of smoke",
+          "definition": "Smoke rising in columns, from burning or from incense.",
+          "evidence": [
+            {
+              "ref": "Jol.3.3",
+              "role": "defining",
+              "note": "“I will give wonders in the heavens and on the earth: blood and fire and תִימֲרוֹת עָשָׁן.”"
+            },
+            {
+              "ref": "Act.2.19",
+              "role": "defining",
+              "note": "Peter quotes Joel: “blood and fire and ἀτμίδα καπνοῦ”, the wonders before the great day of the Lord."
+            },
+            {
+              "ref": "Sng.3.6",
+              "role": "defining",
+              "note": "“Who is this coming up from the wilderness כְּתִימֲרוֹת עָשָׁן, perfumed with myrrh and frankincense?”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀτμίς",
+          "gloss": "vapour",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "תִּימָרָה → ἀτμίς ×1 (Jol.3.3), στελέχη ×1 (Sng.3.6) (MACULA alignment)"
+            },
+            {
+              "ref": "Act.2.19",
+              "role": "defining",
+              "note": "“ἀτμίδα καπνοῦ”, quoting Joel 3:3."
+            },
+            {
+              "ref": "Jas.4.14",
+              "note": "“What is your life? It is even an ἀτμίς that appears for a little while and then vanishes.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "דָּם",
+            "note": "“Blood and fire and columns of smoke”: the wonders of the day of Yahweh.",
+            "evidence": [
+              {
+                "ref": "Jol.3.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "תִּימֲרוֹת עָשָׁן",
+            "gloss": "columns of smoke",
+            "evidence": [
+              {
+                "ref": "Jol.3.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Sng.3.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-tamr",
+      "lang": "ar",
+      "form": "تَمْرٌ",
+      "translit": "tamr",
+      "gloss": "dates, the fruit of the palm tree",
+      "relation": "cognate",
+      "note": "A collective noun, “dates, or the fruit of the palmtree”, especially dried dates; form IV atmarati n-naḫla “the palm-tree bore tamr”. Arabic names the tree itself naḫl; the word is the fruit. Arabic t here, where its own word ṯamar “fruit” has ṯ, suggests that tamr came into Arabic from Aramaic (see ar-thamar).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 317, root تمر, تَمْرٌ (n4112)",
+          "note": "“Dates, or the fruit of the palmtree: or dried dates”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 317, root تمر, اتمر (n4110)",
+          "note": "“اتمرت النَّخْلَةُ … The palm-tree bore تَمْر [or dry dates]”."
+        }
+      ]
+    },
+    {
+      "id": "arc-tamra",
+      "lang": "arc",
+      "form": "תַּמְרָא",
+      "translit": "tamrā",
+      "gloss": "date palm; date",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: the palm and its fruit, plural תְּמָרַיָּא, תַּמְרֵי “dates”, with date honey (דובשא דתמרי). The same word as the Hebrew, tree and fruit.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תָּמָר II, תַּמְרָא",
+          "note": "Targ. Cant. 2:12; Targ. 2 Chr. 31:5; Targ. Y. Deut. 8:8; Ber. 38a “date-honey”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תָּמָר",
+          "note": "“palm; date-palm; fruit of the date-palm, date”; Rabbinic Hebrew, on Jdg 4:5 and Psa 92:13."
+        }
+      ]
+    },
+    {
+      "id": "syc-tmarta",
+      "lang": "syc",
+      "form": "ܬܡܪܬܐ",
+      "translit": "tmartā",
+      "gloss": "date palm, date",
+      "relation": "cognate",
+      "note": "Classical Syriac, absolute ܬܡܪܐ. The Peshitta’s New Testament does not use it: at John 12:13 it has branches of ܕܩܠܐ, another word for the palm.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܬܡܪܬܐ, noun",
+          "url": "https://en.wiktionary.org/wiki/%DC%AC%DC%A1%DC%AA%DC%AC%DC%90",
+          "note": "“date palm, date”."
+        }
+      ]
+    },
+    {
+      "id": "phn-tmr",
+      "lang": "phn",
+      "form": "tmr",
+      "translit": "tmr",
+      "gloss": "date palm",
+      "relation": "cognate",
+      "note": "Neo-Punic, in a place description: “the field … in the city in the valley of the date palms” (bʿmqt h-tmr); a second Punic tmr (RES 1359) is a date grower.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 493, TMR I",
+          "note": "“n.m. DATE PALM”, Trip. 51 lines 3/4; TMR II “n.m. DATE GROWER”, RES 1359."
+        }
+      ]
+    },
+    {
+      "id": "sab-tmr",
+      "lang": "sem",
+      "form": "𐩩𐩣𐩧",
+      "translit": "tmr",
+      "gloss": "dates",
+      "relation": "cognate",
+      "note": "Sabaean (Old South Arabian), plural or collective tmrm, in lists of crops beside flour, wheat and barley, and mzr d-tmrm “date beer”.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 535, TMR",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“DATES [Ar tamr (coll) id.]”; C541/121 “26,000 (measures of) dates”; C540/40-1."
+        }
+      ]
+    },
+    {
+      "id": "ar-thamar",
+      "lang": "ar",
+      "form": "ثَمَرٌ",
+      "translit": "ṯamar",
+      "gloss": "fruit of trees",
+      "relation": "possible",
+      "note": "“The fruit of trees”, the fruit a tree produces. If the date was first simply “the fruit”, this is the older word: Arabic ṯ answers to Aramaic t, so Aramaic tamrā would be its regular form, and Hebrew, which has ש for ṯ, would have taken תָּמָר from Aramaic. Recorded as possible: nothing in scripture shows the Hebrew word to be a loan.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 353, root ثمر, ثَمَرٌ (n4691)",
+          "note": "“The fruit of trees; the several kinds of fruits; the fruit which a tree produces, whether it is eaten or not eaten”."
+        }
+      ]
+    },
+    {
+      "id": "ar-amara",
+      "lang": "ar",
+      "form": "أَمَرَةٌ، أَمَارٌ",
+      "translit": "ʾamara, ʾamār",
+      "gloss": "stones set up to show the way; a waymark, sign",
+      "relation": "possible",
+      "note": "Lane’s sources: “stones set up in order that one may be directed thereby to the right way … a sign, or mark, set up to show the way … a small sign, or mark, of stones, to show the way, in a waterless desert”. This is the sense of תַּמְרוּר in Jer 31:21, but from a root ʾmr: if תַּמְרוּר is a ת-prefixed noun of that root, it belongs with אמר and not with the palm.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 97, root أمر, أَمَرَةٌ (n1218); أَمَارٌ (n1219)",
+          "note": "“a sign, or mark, set up to show the way”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "feast-of-booths",
+      "statement": "At חַג הַסֻּכּוֹת Israel takes “כַּפֹּת תְּמָרִים … and you shall rejoice before Yahweh your God seven days”, dwelling in booths to remember the wilderness (Lev 23:40–43), and the returned exiles fetch palm leaves to build them (Neh 8:15–17). When Jesus comes to Jerusalem the crowd takes branches of palms and goes out to meet him crying “Hosanna! Blessed is he who comes in the name of the Lord, the King of Israel!” (John 12:13), the words of Psa 118:25–26. In Revelation a great multitude from every nation stands before the throne and the Lamb with palms in their hands, and “he who sits on the throne shall spread his tent (σκηνώσει) over them”; they hunger no more, and the Lamb leads them to springs of living water (Rev 7:9, 15–17). Zechariah sees the nations go up year by year to worship the King, Yahweh of hosts, and to keep חַג הַסֻּכּוֹת (Zec 14:16). From the verses: the palms of the feast are the joy of a people brought out of the wilderness into the land, and the New Testament takes them up for the welcome of the King and for the redeemed gathered before his throne, as Zechariah foresees the nations keeping the feast when Yahweh is king over all the earth (Zec 14:9).",
+      "evidence": [
+        {
+          "ref": "Lev.23.40",
+          "to": "Lev.23.43"
+        },
+        {
+          "ref": "Neh.8.15",
+          "to": "Neh.8.17"
+        },
+        {
+          "ref": "Jhn.12.13"
+        },
+        {
+          "ref": "Psa.118.25",
+          "to": "Psa.118.26"
+        },
+        {
+          "ref": "Rev.7.9"
+        },
+        {
+          "ref": "Rev.7.15",
+          "to": "Rev.7.17"
+        },
+        {
+          "ref": "Zec.14.9"
+        },
+        {
+          "ref": "Zec.14.16"
+        }
+      ]
+    },
+    {
+      "topic": "righteous-planted",
+      "statement": "“The righteous shall flourish like the palm … planted in the house of Yahweh they shall flourish in the courts of our God; they shall still bear fruit in old age” (Psa 92:13–15). The house itself was carved within and without with palms and cherubim (1Ki 6:29), and the house shown to Ezekiel has a palm between every two cherubim on its walls and doors (Ezk 41:18–20, 25). From the verses: the palm, upright, fruitful and long-lived by water, is scripture’s picture of the righteous, and the palms on the walls of Yahweh’s house set that picture where the psalm plants them.",
+      "evidence": [
+        {
+          "ref": "Psa.92.13",
+          "to": "Psa.92.15"
+        },
+        {
+          "ref": "1Ki.6.29"
+        },
+        {
+          "ref": "Ezk.41.18",
+          "to": "Ezk.41.20"
+        },
+        {
+          "ref": "Ezk.41.25"
+        },
+        {
+          "ref": "Exo.15.27"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Root key תמר, as the corpus keys it. Not claimed: w.ba.ad, the name Tamar (Judah’s daughter-in-law, David’s daughter, Absalom’s daughter) and the place Tamar (Ezk 47:19; 48:28); no name entry was asked for. BDB files the name’s tokens under w.ba.ac as well, so lexicon-support’s count for תָּמָר includes them. Places formed from the root, not name entries: Hazezon-tamar (h.ez.ad), Baal-tamar, עִיר הַתְּמָרִים (Jericho), Tamar of Ezk 47:19 and 1Ki 9:18 (written תמר, read תַּדְמֹר; Tadmor 2Ch 8:4, a different spelling). אִיתָמָר Ithamar (a.br.ac; BDB root אוה) may be a compound with תָּמָר and could take a name entry pointing here. w.ba.aa and w.an.aj have no tokens. Ezk 40:22 וְתִמֹרָיו (ketiv ותמרו) has no bdb key in the corpus; cited by hand. w.ba.ag (תַּמְרוּר) also carries Jer 6:26 and Hos 12:15 by spelling, which are מרר’s תַּמְרוּרִים (m.dq.ao, marar.json); only Jer 31:21 is this word. Whether תַּמְרוּר belongs here or under אמר (Arabic ʾamāra, waymark) is open. תִּימָרָה’s tie to the palm rests on shape alone; Rabbinic Hebrew תִּמֵּר “rise straight up (of smoke)” and תִּמְרָה “smoke column” (Jastrow s.vv.) are later Hebrew, not cognates, and are left out. Not recorded: Ge’ez ተምር tamr “date” (taken from Arabic, so not independent evidence; Leslau/Dillmann not consulted); Akkadian has no tmr word for the palm (gišimmaru), and Oracc’s tmr candidates (tāmartu “view”, temēru “bury”) do not share the meaning; Ugaritic tmr in Segert’s glossary is a form of mrr. Syriac ܬܡܪܬܐ is cited from Wiktionary; check Payne Smith’s page for it."
+}
