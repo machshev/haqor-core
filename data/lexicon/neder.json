@@ -1,0 +1,996 @@
+{
+  "id": "neder",
+  "root": "נדר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "vows",
+    "worship",
+    "sacrifice",
+    "speech",
+    "feasts"
+  ],
+  "gloss": "vow; a vow, a votive offering",
+  "summary": "The verb is to vow: to bind oneself by one's own word to give God something or do something, often on condition that he act first (“if you will give…, then I will…”, Gen 28:20–22; Num 21:2; 1Sa 1:11). The noun נֶדֶר is the vow spoken, which must be paid once uttered and not delayed (Num 30:3; Deu 23:22–24; Ecc 5:3–4), and so also the offering vowed, brought to the altar beside the freewill offerings at Yahweh's appointed times (Lev 22:21–23; 23:38). Vowing was free, and not to vow was no sin; but a vow spoken was a debt owed to God, paid in sacrifice and praise when he had answered (Psa 22:26; 116:14–18; Jon 2:10). Punic, Ugaritic, Sabaic, Arabic and Aramaic all have the root for “vow”.",
+  "words": [
+    {
+      "lemma": "נֶדֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "vow; votive offering",
+      "bdb": [
+        "n.bj.ab"
+      ],
+      "cognate_ids": [
+        "phn-ndr",
+        "uga-ndr",
+        "sab-ndr",
+        "ar-nadhr",
+        "arc-nidra"
+      ],
+      "summary": "The promise itself, spoken to God and binding the speaker, and the thing promised when it is brought as an offering. Its pair in the law is נְדָבָה, the freewill offering, given without a prior promise.",
+      "senses": [
+        {
+          "id": "vow-spoken",
+          "gloss": "vow, a promise made to God",
+          "definition": "A promise spoken to God that binds the speaker to do or give what he has said, often on condition that God act first; once spoken it is owed, and must be paid without delay.",
+          "evidence": [
+            {
+              "ref": "Gen.28.20",
+              "role": "defining",
+              "note": "Jacob “vowed a vow, saying, If God will be with me… then Yahweh shall be my God… and of all that you give me I will surely give a tenth to you” (28:20–22): the conditional vow."
+            },
+            {
+              "ref": "Num.30.3",
+              "role": "defining",
+              "note": "“When a man vows a נֶדֶר to Yahweh or swears an oath to bind a bond on his soul, he shall not profane his word; according to all that proceeds from his mouth he shall do.”"
+            },
+            {
+              "ref": "Deu.23.22",
+              "role": "defining",
+              "note": "“When you vow a נֶדֶר to Yahweh your God, you shall not delay to pay it, for Yahweh your God will surely require it of you, and it would be sin in you.”"
+            },
+            {
+              "ref": "Ecc.5.3",
+              "role": "defining",
+              "note": "“When you vow a נֶדֶר to God, do not delay to pay it… pay what you vow.”"
+            },
+            {
+              "ref": "1Sa.1.11",
+              "role": "defining",
+              "note": "Hannah vows: if Yahweh gives her a son, “I will give him to Yahweh all the days of his life, and no razor shall come upon his head.”"
+            },
+            {
+              "ref": "Gen.31.13",
+              "note": "“The God of Bethel… where you vowed a vow to me.”"
+            },
+            {
+              "ref": "Num.21.2",
+              "note": "Israel's vow: if Yahweh gives the Canaanites into their hand, they will devote their cities."
+            },
+            {
+              "ref": "Jdg.11.30",
+              "note": "Jephthah's vow before the battle with Ammon."
+            },
+            {
+              "ref": "Jdg.11.39",
+              "note": "“He did to her his vow which he had vowed, and she knew no man.”"
+            },
+            {
+              "ref": "2Sa.15.7",
+              "to": "2Sa.15.8",
+              "note": "Absalom's vow at Geshur, made the pretext for going to Hebron."
+            },
+            {
+              "ref": "Num.30.4",
+              "to": "Num.30.15",
+              "note": "A daughter's or wife's vows stand unless her father or husband forbids them on the day he hears."
+            },
+            {
+              "ref": "Pro.20.25",
+              "note": "“It is a snare to a man rashly to say ‘Holy!’, and after vows to make inquiry.”"
+            },
+            {
+              "ref": "Psa.61.6",
+              "note": "“You, God, have heard my vows.”"
+            },
+            {
+              "ref": "Psa.56.13",
+              "note": "“Your vows are on me, God; I will render thank offerings to you.”"
+            },
+            {
+              "ref": "Psa.66.13",
+              "to": "Psa.66.14",
+              "note": "“I will pay you my vows, which my lips uttered and my mouth spoke when I was in distress.”"
+            },
+            {
+              "ref": "Psa.22.26"
+            },
+            {
+              "ref": "Psa.50.14"
+            },
+            {
+              "ref": "Psa.61.9"
+            },
+            {
+              "ref": "Psa.65.2"
+            },
+            {
+              "ref": "Psa.116.14"
+            },
+            {
+              "ref": "Psa.116.18"
+            },
+            {
+              "ref": "Job.22.27",
+              "note": "“You will pray to him and he will hear you, and you will pay your vows.”"
+            },
+            {
+              "ref": "Jon.1.16",
+              "note": "The sailors “feared Yahweh greatly, and offered a sacrifice to Yahweh and vowed vows.”"
+            },
+            {
+              "ref": "Isa.19.21",
+              "note": "Egypt will know Yahweh, and “vow a vow to Yahweh and pay it.”"
+            },
+            {
+              "ref": "Nam.2.1",
+              "note": "“Keep your feasts, Judah, pay your vows”: deliverance from Assyria."
+            },
+            {
+              "ref": "Jer.44.25",
+              "note": "Vows to the queen of the heavens, which the women swore to perform: the vow turned to another god."
+            }
+          ],
+          "kin": [
+            "vow-make"
+          ],
+          "senses": [
+            {
+              "id": "vow-separation",
+              "gloss": "vow of separation or self-denial",
+              "definition": "A vow binding the one who makes it to keep from something for a time, as the Nazirite from wine and the razor, or a vow “to afflict the soul”.",
+              "evidence": [
+                {
+                  "ref": "Num.6.2",
+                  "role": "defining",
+                  "note": "“When a man or a woman makes a special vow, the vow of a Nazirite, to separate himself to Yahweh.”"
+                },
+                {
+                  "ref": "Num.6.5",
+                  "role": "defining",
+                  "note": "“All the days of the vow of his separation no razor shall pass over his head.”"
+                },
+                {
+                  "ref": "Num.6.21"
+                },
+                {
+                  "ref": "Num.30.14",
+                  "role": "defining",
+                  "note": "“Every vow and every binding oath to afflict the soul, her husband may establish it or annul it.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "votive-offering",
+          "gloss": "votive offering, the thing vowed",
+          "definition": "What was promised, brought to the altar as a burnt offering or peace offering; listed beside the freewill offerings and held to a stricter rule than they were.",
+          "evidence": [
+            {
+              "ref": "Lev.22.21",
+              "role": "defining",
+              "note": "“Whoever offers a sacrifice of peace offerings to Yahweh to fulfil a נֶדֶר, or as a freewill offering… it shall be whole to be accepted.”"
+            },
+            {
+              "ref": "Lev.22.23",
+              "role": "defining",
+              "note": "An ox or lamb with a limb too long or too short “you may offer as a freewill offering, but for a נֶדֶר it shall not be accepted”: the vowed offering is the stricter."
+            },
+            {
+              "ref": "Lev.7.16",
+              "role": "defining",
+              "note": "“If the sacrifice of his offering is a נֶדֶר or a freewill offering, it shall be eaten on the day he offers it, and the next day.”"
+            },
+            {
+              "ref": "Lev.22.18"
+            },
+            {
+              "ref": "Lev.23.38",
+              "note": "The offerings of the appointed times are “besides all your vows and besides all your freewill offerings which you give to Yahweh.”"
+            },
+            {
+              "ref": "Num.29.39",
+              "note": "The same at the close of the feast offerings: “besides your vows and your freewill offerings.”"
+            },
+            {
+              "ref": "Num.15.3"
+            },
+            {
+              "ref": "Num.15.8"
+            },
+            {
+              "ref": "Deu.12.6"
+            },
+            {
+              "ref": "Deu.12.11",
+              "note": "“All your choice vows which you vow to Yahweh”, brought to the place he chooses."
+            },
+            {
+              "ref": "Deu.12.17"
+            },
+            {
+              "ref": "Deu.12.26"
+            },
+            {
+              "ref": "Deu.23.19",
+              "note": "No harlot's hire or price of a dog is to be brought into Yahweh's house “for any vow”."
+            },
+            {
+              "ref": "Lev.27.2",
+              "note": "“When a man makes a special vow, persons shall be Yahweh's by your valuation”: a person vowed is redeemed at a price in silver (27:3–8)."
+            },
+            {
+              "ref": "1Sa.1.21",
+              "note": "Elkanah goes up “to offer to Yahweh the yearly sacrifice and his vow.”"
+            },
+            {
+              "ref": "Pro.7.14",
+              "note": "The strange woman: “peace offerings are with me; today I have paid my vows”, so she has the meat of them (Lev 7:16)."
+            }
+          ],
+          "kin": [
+            "vow-give"
+          ]
+        },
+        {
+          "gloss": "son of vows",
+          "definition": "“Son of my vows”: a child asked of God with vows, and so given to him.",
+          "evidence": [
+            {
+              "ref": "Pro.31.2",
+              "role": "defining",
+              "note": "Lemuel's mother: “What, my son? What, son of my womb? What, son of my vows?” The only such use; Hannah's vow for Samuel (1Sa 1:11, 27–28) is the pattern."
+            },
+            {
+              "ref": "1Sa.1.11"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "εὐχή",
+          "gloss": "vow; prayer",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.28.20, נֶדֶר → εὐχήν; Num.6.2 and Num.30.3 the same; εὐχή renders נֶדֶר about 27 times"
+            },
+            {
+              "ref": "Act.18.18",
+              "role": "defining",
+              "note": "Paul “had shorn his head in Cenchrea, for he had a εὐχή”: the cutting of the hair that ends the Nazirite's vow (Num 6:5, 18)."
+            },
+            {
+              "ref": "Act.21.23",
+              "role": "defining",
+              "note": "“Four men who have a εὐχή on them”, whose heads are to be shaved and their offering made (21:24, 26)."
+            },
+            {
+              "ref": "Jas.5.15",
+              "note": "“The εὐχή of faith shall save the sick”: here prayer, the word's other use."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נְדָבָה",
+            "note": "The freewill offering, paired with the vow throughout the law: given unpromised, where the vow was promised first.",
+            "evidence": [
+              {
+                "ref": "Lev.22.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.22.18"
+              },
+              {
+                "ref": "Lev.23.38"
+              },
+              {
+                "ref": "Num.29.39"
+              },
+              {
+                "ref": "Deu.12.6"
+              },
+              {
+                "ref": "Deu.12.17"
+              }
+            ]
+          },
+          {
+            "lemma": "שְׁבוּעָה",
+            "note": "The oath, beside the vow as the other way of binding oneself by one's word.",
+            "evidence": [
+              {
+                "ref": "Num.30.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.30.11"
+              },
+              {
+                "ref": "Num.30.14"
+              }
+            ]
+          },
+          {
+            "lemma": "אִסָּר",
+            "note": "The bond a person binds on his soul, named with the vow in Num 30.",
+            "evidence": [
+              {
+                "ref": "Num.30.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.30.6"
+              },
+              {
+                "ref": "Num.30.8"
+              },
+              {
+                "ref": "Num.30.12"
+              }
+            ]
+          },
+          {
+            "lemma": "תּוֹדָה",
+            "note": "Thanksgiving, the vow paid as thanks once God has answered.",
+            "evidence": [
+              {
+                "ref": "Psa.50.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.56.13"
+              },
+              {
+                "ref": "Psa.116.17",
+                "to": "Psa.116.18"
+              },
+              {
+                "ref": "Jon.2.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "נָדַר נֶדֶר",
+            "gloss": "vow a vow",
+            "evidence": [
+              {
+                "ref": "Gen.28.20"
+              },
+              {
+                "ref": "Num.30.3"
+              },
+              {
+                "ref": "Deu.23.22"
+              },
+              {
+                "ref": "1Sa.1.11"
+              },
+              {
+                "ref": "Isa.19.21"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׁלֵּם נְדָרִים",
+            "gloss": "pay vows, fulfil what was vowed",
+            "evidence": [
+              {
+                "ref": "Psa.50.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.22.26"
+              },
+              {
+                "ref": "Psa.116.14"
+              },
+              {
+                "ref": "2Sa.15.7"
+              },
+              {
+                "ref": "Jon.2.10"
+              },
+              {
+                "ref": "Nam.2.1"
+              },
+              {
+                "ref": "Pro.7.14"
+              },
+              {
+                "ref": "Job.22.27"
+              },
+              {
+                "ref": "Ecc.5.3"
+              }
+            ]
+          },
+          {
+            "phrase": "הִפְלִיא נֶדֶר",
+            "gloss": "make a special (extraordinary) vow",
+            "evidence": [
+              {
+                "ref": "Lev.27.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.6.2"
+              },
+              {
+                "ref": "Lev.22.21"
+              },
+              {
+                "ref": "Num.15.3"
+              },
+              {
+                "ref": "Num.15.8"
+              }
+            ]
+          },
+          {
+            "phrase": "נֶדֶר נָזִיר",
+            "gloss": "the vow of a Nazirite",
+            "evidence": [
+              {
+                "ref": "Num.6.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.6.5"
+              },
+              {
+                "ref": "Num.6.21"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵפֵר נֶדֶר",
+            "gloss": "annul a vow (of a father or husband over a woman's vow)",
+            "evidence": [
+              {
+                "ref": "Num.30.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.30.13"
+              },
+              {
+                "ref": "Num.30.14"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵקִים נֶדֶר",
+            "gloss": "establish, confirm a vow",
+            "evidence": [
+              {
+                "ref": "Num.30.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.30.15"
+              },
+              {
+                "ref": "Jer.44.25"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נָדַר",
+      "pos": "verb",
+      "gloss": "vow, make a vow",
+      "bdb": [
+        "n.bj.aa"
+      ],
+      "cognate_ids": [
+        "phn-ndr",
+        "uga-ndr",
+        "sab-ndr",
+        "ar-nadhr",
+        "arc-nidra"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "vow; vow (something) to God",
+          "senses": [
+            {
+              "id": "vow-make",
+              "gloss": "vow, make a vow",
+              "definition": "Bind oneself by one's own word to God, mostly with the noun as its object (“vow a vow”) and often with a condition: if God does this, I will do that. Not vowing is no sin, but a vow made must be paid.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.20",
+                  "role": "defining",
+                  "note": "“Jacob vowed a vow, saying, If God will be with me…”"
+                },
+                {
+                  "ref": "Deu.23.22",
+                  "to": "Deu.23.24",
+                  "role": "defining",
+                  "note": "“If you refrain from vowing, it will be no sin in you. What has gone out of your lips you shall keep and do, as you have vowed to Yahweh your God freely, what you have spoken with your mouth.”"
+                },
+                {
+                  "ref": "Ecc.5.4",
+                  "role": "defining",
+                  "note": "“Better that you do not vow than that you vow and do not pay.”"
+                },
+                {
+                  "ref": "Num.30.3",
+                  "role": "defining",
+                  "note": "Vowing beside swearing: the man binds himself by what proceeds from his mouth."
+                },
+                {
+                  "ref": "Psa.132.2",
+                  "role": "defining",
+                  "note": "David “swore to Yahweh, vowed to the Mighty One of Jacob”, not to rest until he found a place for Yahweh (132:3–5): נָדַר parallel to נִשְׁבַּע."
+                },
+                {
+                  "ref": "Num.6.2",
+                  "note": "To vow the vow of a Nazirite."
+                },
+                {
+                  "ref": "Num.30.4",
+                  "note": "A woman in her father's house who vows a vow to Yahweh."
+                },
+                {
+                  "ref": "Num.30.11"
+                },
+                {
+                  "ref": "Gen.31.13"
+                },
+                {
+                  "ref": "Num.21.2"
+                },
+                {
+                  "ref": "Jdg.11.30"
+                },
+                {
+                  "ref": "Jdg.11.39"
+                },
+                {
+                  "ref": "1Sa.1.11"
+                },
+                {
+                  "ref": "2Sa.15.7"
+                },
+                {
+                  "ref": "2Sa.15.8"
+                },
+                {
+                  "ref": "Isa.19.21"
+                },
+                {
+                  "ref": "Jer.44.25",
+                  "note": "“We will surely perform our vows that we have vowed, to burn incense to the queen of the heavens.”"
+                },
+                {
+                  "ref": "Jon.1.16"
+                },
+                {
+                  "ref": "Jon.2.10",
+                  "note": "From the fish: “I will sacrifice to you with the voice of thanksgiving; what I have vowed I will pay. Salvation is Yahweh's.”"
+                },
+                {
+                  "ref": "Psa.76.12",
+                  "note": "“Vow and pay to Yahweh your God.”"
+                },
+                {
+                  "ref": "Ecc.5.3"
+                }
+              ],
+              "kin": [
+                "vow-spoken"
+              ]
+            },
+            {
+              "id": "vow-give",
+              "gloss": "vow (an offering, an animal) to God",
+              "definition": "Promise a particular thing to God, which is then his: an offering, an animal of the flock, a person valued in silver.",
+              "evidence": [
+                {
+                  "ref": "Num.6.21",
+                  "role": "defining",
+                  "note": "“The law of the Nazirite who vows his offering to Yahweh for his separation.”"
+                },
+                {
+                  "ref": "Mal.1.14",
+                  "role": "defining",
+                  "note": "“Cursed be the deceiver who has a male in his flock, and vows it, and sacrifices a blemished thing to the Lord.”"
+                },
+                {
+                  "ref": "Deu.12.11",
+                  "note": "“Your choice vows which you vow to Yahweh.”"
+                },
+                {
+                  "ref": "Deu.12.17"
+                },
+                {
+                  "ref": "Lev.27.8",
+                  "note": "If the one vowing (הַנֹּדֵר) is too poor for the valuation, the priest values the person by what he can afford."
+                }
+              ],
+              "kin": [
+                "votive-offering"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "εὔχομαι",
+          "gloss": "vow; pray, wish",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.6.2, Num.30.3, נָדַר → εὔχηται; Deu.23.22 → εὔξῃ; the usual rendering of נָדַר (about 24 times)"
+            },
+            {
+              "ref": "Act.26.29",
+              "note": "“I would pray (εὐξαίμην) to God”: in the New Testament the verb is always pray or wish, never vow."
+            },
+            {
+              "ref": "Jas.5.16"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נִשְׁבַּע",
+            "note": "Swear, set beside vowing.",
+            "evidence": [
+              {
+                "ref": "Psa.132.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.30.3"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "חָדַל",
+            "note": "To refrain from vowing, which is no sin.",
+            "evidence": [
+              {
+                "ref": "Deu.23.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.5.4"
+              }
+            ]
+          }
+        ],
+        "phrases": []
+      }
+    },
+    {
+      "lemma": "נְדַר",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "vow; (pass. ptc.) be under a vow",
+      "summary": "The Peshitta's ܢܕܪ (nḏar), where the Greek has εὐχὴν ἔχω “have a vow”: Paul, and the four men of Acts 21, are “vowed”.",
+      "cognate_ids": [
+        "arc-nidra"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "vow",
+          "senses": [
+            {
+              "gloss": "have vowed, be under a vow",
+              "definition": "The passive participle of one bound by a vow, here the Nazirite's, ended by shaving the head.",
+              "evidence": [
+                {
+                  "ref": "Act.18.18",
+                  "role": "defining",
+                  "note": "ܢܕܪܐ ܢܕܝܪ ܗܘܐ ܠܗ, “a vow was vowed by him”, after he shaved his head at Cenchrea."
+                },
+                {
+                  "ref": "Act.21.23",
+                  "role": "defining",
+                  "note": "“Four men who have vowed (ܕܢܕܝܪ ܠܗܘܢ) to purify themselves.”"
+                }
+              ],
+              "kin": [
+                "vow-make"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נִדְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "vow",
+      "summary": "The Peshitta's ܢܕܪܐ (neḏrā), for εὐχή.",
+      "cognate_ids": [
+        "arc-nidra"
+      ],
+      "senses": [
+        {
+          "gloss": "vow",
+          "definition": "Paul's vow, ended by cutting the hair at Cenchrea.",
+          "evidence": [
+            {
+              "ref": "Act.18.18",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "vow-separation"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-ndr",
+      "lang": "phn",
+      "form": "𐤍𐤃𐤓",
+      "translit": "ndr",
+      "gloss": "(v.) vow; pray; (n.) vow; prayer",
+      "relation": "cognate",
+      "note": "The commonest verb of the Punic votive stelae: “<dedicated> to the Lord Baal-hammon is this gift which Mago son of Balhanno vowed” (KAI 113), “because he heard her voice; may he bless her” (KAI 88); and the noun, “Bostar… fulfilled his vow (ndr) in the temple” (KAI 115). The pattern is Hebrew's: a vow made in need, paid when the god has heard.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 325, N-D-R (v. qal 1. VOW, 2. PRAY) and NDR (n.m. 1. VOW, 2. PRAYER)",
+          "note": "“KAI 115.1/2 (Pu) šlm bdʿštrt bn bdʾšmn ʾyt ndrʾ bt bʿl ʾdr, ‘Bostar son of Bodesmun fulfilled his vow in the temple of Baaladdir.’”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000258 ndr [vow] V; SEM000257 ndr [vow] N (Punic ndr)"
+        }
+      ]
+    },
+    {
+      "id": "uga-ndr",
+      "lang": "uga",
+      "form": "𐎐𐎄𐎗",
+      "translit": "ndr",
+      "gloss": "(v.) vow; (n.) vow",
+      "relation": "cognate",
+      "note": "The verb ydr “he vows” in Keret (KTU 1.14 IV 37), where the king vows gifts to Athirat if he wins his bride, a conditional vow like Jacob's; the noun ndr in a list of offerings (KTU 1.127:2). Ugaritic writes d here, though it has a letter for ḏ.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 193, §93 Glossary, /n-d-r/ ydr (KTU 1.14 IV 37) “to vow”; ndr (KTU 1.127:2) “vow”"
+        }
+      ]
+    },
+    {
+      "id": "sab-ndr",
+      "lang": "sem",
+      "form": "𐩬𐩹𐩧",
+      "translit": "nḏr",
+      "gloss": "(t-stem) vow penance, make a penitential offering; (n.) penitential offering",
+      "relation": "cognate",
+      "note": "Sabaic (Old South Arabian) confession texts: “he confessed and vowed penance (tndrn) to the god because he had approached a woman” (C 523/1–2); “this bronze statue as a penitential offering (tdrm) because they had sinned” (J 720/5). As in Hebrew, the vow passes into the offering that pays it.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 294–295, NḎR"
+        }
+      ]
+    },
+    {
+      "id": "ar-nadhr",
+      "lang": "ar",
+      "form": "نَذَرَ، نَذْرٌ",
+      "translit": "naḏara, naḏr",
+      "gloss": "vow, make binding on oneself; a vow; naḏīra a votive gift, a child vowed to the service of a sanctuary",
+      "relation": "cognate",
+      "note": "Lane's sources define the verb as making a future act binding on oneself, either absolutely or on condition (“such a thing shall be binding on me if God restore my sick one”), exactly the Hebrew pattern. نَذِيرَةٌ is “that which he gives who makes a vow” and “a child appointed by the father and mother [by a vow] to be a servant” of a place of worship, as Samuel was (1Sa 1:11) and Lemuel “son of my vows” (Pro 31:2). Arabic has ḏ where Hebrew has ד; the root's other Arabic sense, نَذِرَ “know of and be on guard”, أَنْذَرَ “warn”, is not this word.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2781, root نذر, نَذَرَ عَلَى نَفْسِهِ (n39614)",
+          "note": "“He made a vow; imposed upon himself a vow… he made [a future action] binding, or obligatory, on himself… or نَذْرٌ signifies the promising conditionally.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2782, root نذر, نَذْرٌ (n39618); نَذِيرَةٌ (n39624)",
+          "note": "نَذْرٌ “A vow, which a man makes to be binding, or obligatory, on himself”; نَذِيرَةٌ “[A votive gift;] that which he gives who makes a vow. ― A child appointed by the father and mother [by a vow] to be a minister, or servant to the church.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-nidra",
+      "lang": "arc",
+      "form": "נְדַר, נִדְרָא",
+      "translit": "nəḏar, niḏrā",
+      "gloss": "vow; a vow (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums render Num 30:3 and Jdg 11:36 with the same root; Aramaic d answers Arabic ḏ regularly.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְדַר (ch.); s.v. נִדְרָא",
+          "note": "Targ. Num. XXX, 3; Targ. Jud. XI, 36; Targ. Ps. LXXVI, 12."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "keeping-vows",
+      "statement": "No one had to vow: “if you refrain from vowing, it will be no sin in you” (Deu 23:23). But what went out of the lips was to be kept and done, without delay, for Yahweh would require it (Num 30:3; Deu 23:22–24); “better not to vow than to vow and not pay” (Ecc 5:3–4), and it is a snare to say “Holy!” rashly and only then consider (Pro 20:25). The man who may dwell on Yahweh's holy hill “swears to his own hurt and does not change” (Psa 15:4). Jesus, citing “you shall perform to the Lord your oaths” (Mat 5:33, the words of Num 30:3 and Deu 23:22–24), tells his disciples not to swear at all but to let their yes be yes and their no no (Mat 5:34–37; Jas 5:12); and he condemns the Corban by which a son vowed away what should have kept his parents, “making the word of God of no effect” (Mrk 7:9–13). From the verses: a vow was a word made binding before God, and the law held men to their words; Christ asks that every word be kept as a vow would be, so that none needs a vow to be believed, and no vow can release from a commandment of God.",
+      "evidence": [
+        {
+          "ref": "Deu.23.22",
+          "to": "Deu.23.24"
+        },
+        {
+          "ref": "Num.30.3"
+        },
+        {
+          "ref": "Ecc.5.3",
+          "to": "Ecc.5.4"
+        },
+        {
+          "ref": "Pro.20.25"
+        },
+        {
+          "ref": "Psa.15.4"
+        },
+        {
+          "ref": "Mat.5.33",
+          "to": "Mat.5.37"
+        },
+        {
+          "ref": "Jas.5.12"
+        },
+        {
+          "ref": "Mrk.7.9",
+          "to": "Mrk.7.13"
+        }
+      ]
+    },
+    {
+      "topic": "vows-paid-in-praise",
+      "statement": "The psalms pay vows when God has answered: “I will pay my vows to Yahweh in the presence of all his people” (Psa 116:14, 18), after “you have loosed my bonds” from the cords of death (116:3, 8, 16); Jonah from the fish, “what I have vowed I will pay; salvation is Yahweh's” (Jon 2:10); “offer to God thanksgiving, and pay your vows to the Most High” (Psa 50:14). Psalm 22, whose first words Jesus cried on the cross (Mat 27:46), turns from the cry to “I will declare your name to my brothers; in the midst of the assembly I will praise you” (Psa 22:23), which Hebrews puts in Christ's mouth (Heb 2:11–12), and goes on, “my vows I will pay before those who fear him” (Psa 22:26). From the verses: the sufferer of Psalm 22 is Christ, and the vows he pays are his praise of the Father among his brothers for raising him from death; those who follow him pay theirs as “the sacrifice of praise, the fruit of lips confessing his name” (Heb 13:15; Hos 14:3).",
+      "evidence": [
+        {
+          "ref": "Psa.116.14"
+        },
+        {
+          "ref": "Psa.116.18"
+        },
+        {
+          "ref": "Psa.116.3"
+        },
+        {
+          "ref": "Psa.116.8"
+        },
+        {
+          "ref": "Psa.116.16"
+        },
+        {
+          "ref": "Jon.2.10"
+        },
+        {
+          "ref": "Psa.50.14"
+        },
+        {
+          "ref": "Mat.27.46"
+        },
+        {
+          "ref": "Psa.22.23"
+        },
+        {
+          "ref": "Heb.2.11",
+          "to": "Heb.2.12"
+        },
+        {
+          "ref": "Psa.22.26"
+        },
+        {
+          "ref": "Heb.13.15"
+        },
+        {
+          "ref": "Hos.14.3"
+        }
+      ]
+    },
+    {
+      "topic": "jephthahs-vow",
+      "statement": "Jephthah vowed that whatever came out of his door to meet him “shall be Yahweh's, and I will offer it up as a burnt offering” (Jdg 11:31). The law forbade giving children to the fire as an abomination Yahweh hates (Deu 12:31; Lev 18:21), and provided that persons vowed to Yahweh were valued in silver (Lev 27:2–8). What the text records of the vow's fulfilment is this: his daughter asked two months “to bewail my virginity”, and “he did to her his vow which he had vowed, and she knew no man” (Jdg 11:37–39). Hannah likewise gave Samuel to Yahweh “all the days of his life” to serve at the tent (1Sa 1:11, 28), where women also served at its door (Exo 38:8; 1Sa 2:22); and Jephthah is named among the faithful (Heb 11:32). From the verses: the vow was kept by giving her wholly to Yahweh's service, unmarried for life, not by burning her.",
+      "evidence": [
+        {
+          "ref": "Jdg.11.30",
+          "to": "Jdg.11.31"
+        },
+        {
+          "ref": "Deu.12.31"
+        },
+        {
+          "ref": "Lev.18.21"
+        },
+        {
+          "ref": "Lev.27.2",
+          "to": "Lev.27.8"
+        },
+        {
+          "ref": "Jdg.11.37",
+          "to": "Jdg.11.39"
+        },
+        {
+          "ref": "1Sa.1.11"
+        },
+        {
+          "ref": "1Sa.1.28"
+        },
+        {
+          "ref": "Exo.38.8"
+        },
+        {
+          "ref": "1Sa.2.22"
+        },
+        {
+          "ref": "Heb.11.32"
+        }
+      ]
+    },
+    {
+      "topic": "nazirite-vow",
+      "statement": "The Nazirite vowed to separate himself to Yahweh, letting no razor touch his head “all the days of the vow of his separation”, and shaved it at the vow's end with offerings (Num 6:2, 5, 18). Paul shaved his head at Cenchrea, “for he had a vow” (Act 18:18); at Jerusalem he joined four men under a vow, paid their charges and was purified with them, to show that he himself walked keeping the law and did not teach Jews to forsake Moses, while the Gentiles who believed were bound to no such thing (Act 21:21–26). Paul gives the reason: “to the Jews I became as a Jew, that I might gain the Jews” (1Co 9:20). From the verses: a vow under the law was still a free offering a Jew in Christ might make, but never a condition of salvation or something laid on the Gentiles.",
+      "evidence": [
+        {
+          "ref": "Num.6.2"
+        },
+        {
+          "ref": "Num.6.5"
+        },
+        {
+          "ref": "Num.6.18"
+        },
+        {
+          "ref": "Act.18.18"
+        },
+        {
+          "ref": "Act.21.21",
+          "to": "Act.21.26"
+        },
+        {
+          "ref": "1Co.9.20"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (נִדְרֵיכֶם, Lev 23:38). Hebrew numbering throughout (Num 30:3 = English 30:2; Deu 23:22 = 23:21; Ecc 5:3 = 5:4; Psa 22:26 = 22:25; Jon 2:10 = 2:9; Nam 2:1 = 1:15). Only the qal of the verb occurs. Sound correspondence: Arabic naḏr and Sabaic nḏr show ḏ, which Hebrew would regularly write ז (as in נזר “separate, consecrate”, the Nazirite's root); Hebrew נדר with ד agrees instead with Aramaic, Punic and Ugaritic d. Whether נדר and נזר are two developments of one older root is a question for review; ד is not one of the merged letters the schema records, so no `sounds` are given. Not entered: Akkadian nadārum “vow”, which Anderson and Moser list (SEM000258) but which is not in the Oracc glossaries (only nadāru “be wild”) and CAD was not consulted; Geʿez nzr “consecrated” (Anderson and Moser), which answers to נזר, not this root, and was not checked in Dillmann or Leslau; Arabic نَذِرَ “know of and be wary”, أَنْذَرَ “warn” (Lane pp. 2781–2782), a separate sense of the Arabic root shared by no Hebrew word; Modern Hebrew נָדִיר “rare”, from Arabic nadara with dāl (Lane p. 2780), another root. Krahmalkov p. 325, Biella pp. 294–295 and Segert p. 193 read from the scans' text layer only (no renderer available); Biella's head letter ḏ is inferred from her Arabic comparison and alphabetical place, so check the page image. MACULA's Septuagint alignment has no Psalms rows for this root, so the Greek counts are from the Torah and Prophets only. Peshitta: SEDRA root 1142 ܢܕܪ, lexemes 1912 (verb) and 1913 (noun), in the New Testament only at Act 18:18 and 21:23; Mat 5:33 renders ὅρκους by another word. Open questions for review: (1) the reading of Jephthah's vow in the doctrine (daughter given to lifelong service, not burned); (2) Psalm 22's vows read as Christ's praise after his resurrection; (3) whether Pro 31:2 “son of my vows” should be its own sense or a note under the vow."
+}
