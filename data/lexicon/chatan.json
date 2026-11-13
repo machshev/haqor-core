@@ -1,0 +1,896 @@
+{
+  "id": "chatan",
+  "root": "חתנ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "marriage",
+    "family",
+    "kinship",
+    "covenant"
+  ],
+  "gloss": "be joined by marriage; father-in-law, son-in-law, bridegroom",
+  "summary": "חתן names the tie a marriage makes between a man and his wife’s family. The man who marries in is the חָתָן, a daughter’s husband and so a bridegroom (Gen 19:14; Jer 7:34); her father is his חֹתֵן, the participle of the verb, as Jethro and Hobab are Moses’ (Exo 18:1; Num 10:29); and the hithpael is to make oneself someone’s son-in-law, to join two households or two peoples by giving and taking daughters (Gen 34:9; 1Sa 18:22). Arabic ḫatan, Akkadian ḫatanu and Ugaritic ḫtn, all with ḫ, carry the same tie by marriage; the New Testament’s bridegroom (νυμφίος, Peshitta ḥatnā) is the word’s heir, and Jesus takes it for himself (Mat 9:15).",
+  "words": [
+    {
+      "lemma": "חָתַן",
+      "pos": "verb",
+      "gloss": "(qal participle) father-in-law, mother-in-law; (hithpael) become son-in-law, intermarry",
+      "summary": "No finite qal occurs: the qal is only the participle חֹתֵן, “the one who gives a daughter in marriage”, used as the noun “wife’s father” (feminine חֹתֶנֶת “wife’s mother”). The hithpael is to make oneself another’s חָתָן, to marry into his house.",
+      "bdb": [
+        "h.hc.ad"
+      ],
+      "cognate_ids": [
+        "ar-khatan",
+        "akk-hatanu"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "(participle) father-in-law; (fem.) mother-in-law",
+          "senses": [
+            {
+              "id": "choten-wifes-father",
+              "gloss": "father-in-law, wife’s father",
+              "definition": "The father of a man’s wife, named as such from the man’s side: “his חֹתֵן, the father of the young woman”. Most uses are of Moses’ father-in-law, the Midianite priest Jethro, and of Hobab.",
+              "evidence": [
+                {
+                  "ref": "Jdg.19.4",
+                  "role": "defining",
+                  "note": "“His חֹתֵן, the father of the young woman”: the word explained by the relation."
+                },
+                {
+                  "ref": "Exo.3.1",
+                  "role": "defining",
+                  "note": "Moses kept the flock of Jethro his חֹתֵן, the priest of Midian, whose daughter Zipporah he had married (Exo 2:21)."
+                },
+                {
+                  "ref": "Exo.18.1",
+                  "note": "Jethro, priest of Midian, חֹתֵן of Moses, hears what God had done for Israel."
+                },
+                {
+                  "ref": "Exo.18.2",
+                  "note": "He brings Zipporah, Moses’ wife, back to him."
+                },
+                {
+                  "ref": "Exo.18.12",
+                  "note": "Moses’ חֹתֵן offers a burnt offering to God, and Aaron and the elders eat bread with him before God."
+                },
+                {
+                  "ref": "Exo.18.17",
+                  "to": "Exo.18.24",
+                  "note": "His counsel to appoint judges, which Moses heeds."
+                },
+                {
+                  "ref": "Exo.4.18"
+                },
+                {
+                  "ref": "Exo.18.27"
+                },
+                {
+                  "ref": "Num.10.29",
+                  "role": "defining",
+                  "note": "Moses asks Hobab, son of Reuel the Midianite, חֹתֵן of Moses, to go with Israel to the land: “we will do you good, for Yahweh has spoken good concerning Israel.” The phrase may stand on Hobab or on Reuel; Jdg 4:11 sets it on Hobab."
+                },
+                {
+                  "ref": "Jdg.4.11",
+                  "note": "“The sons of Hobab, חֹתֵן of Moses”."
+                },
+                {
+                  "ref": "Jdg.1.16",
+                  "note": "The sons of the Kenite, Moses’ חֹתֵן, go up with Judah and dwell with the people."
+                },
+                {
+                  "ref": "Jdg.19.7",
+                  "to": "Jdg.19.9",
+                  "note": "The father-in-law presses his daughter’s husband to stay."
+                }
+              ]
+            },
+            {
+              "id": "chotenet-wifes-mother",
+              "gloss": "mother-in-law, wife’s mother",
+              "definition": "The feminine participle חֹתֶנֶת: the mother of a man’s wife, whom the law forbids him to lie with.",
+              "evidence": [
+                {
+                  "ref": "Deu.27.23",
+                  "role": "defining",
+                  "note": "“Cursed is he who lies with his חֹתֶנֶת”, the woman of Lev 20:14, “a woman and her mother”."
+                },
+                {
+                  "ref": "Lev.20.14",
+                  "note": "The same relation without the word: a man who takes a woman and her mother."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "make oneself son-in-law; marry into, intermarry",
+          "cognate_ids": [
+            "ar-khatana-iii",
+            "akk-hatanu-v",
+            "uga-htn",
+            "arc-hatan-v"
+          ],
+          "senses": [
+            {
+              "id": "hitchatten-son-in-law",
+              "gloss": "become someone’s son-in-law",
+              "definition": "To marry a man’s daughter and so enter his house as his חָתָן, used of David and Saul, of Solomon and Pharaoh, and of the alliance by which Jehoshaphat’s son took Ahab’s daughter.",
+              "kin": [
+                "chatan-son-in-law"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.18.22",
+                  "role": "defining",
+                  "note": "“Now therefore הִתְחַתֵּן בַּמֶּלֶךְ”, after David has asked how he should “be חָתָן to the king” (1Sa 18:18)."
+                },
+                {
+                  "ref": "1Sa.18.27",
+                  "role": "defining",
+                  "note": "David brings the bride-price “to become the king’s son-in-law”, and Saul gives him Michal his daughter as wife."
+                },
+                {
+                  "ref": "1Sa.18.21"
+                },
+                {
+                  "ref": "1Sa.18.23",
+                  "note": "“Is it a light thing in your eyes to become the king’s son-in-law, seeing I am a poor man?”"
+                },
+                {
+                  "ref": "1Sa.18.26"
+                },
+                {
+                  "ref": "1Ki.3.1",
+                  "role": "defining",
+                  "note": "Solomon “made himself son-in-law to Pharaoh” and took Pharaoh’s daughter."
+                },
+                {
+                  "ref": "2Ch.18.1",
+                  "note": "Jehoshaphat “joined himself by marriage to Ahab”: his son Jehoram had Ahab’s daughter as wife (2Ki 8:18)."
+                }
+              ]
+            },
+            {
+              "id": "hitchatten-intermarry",
+              "gloss": "intermarry (of peoples)",
+              "definition": "Of two peoples, to become kin by marriage, which the verses define as giving one’s daughters to the other’s sons and taking theirs; forbidden to Israel with the nations of the land.",
+              "evidence": [
+                {
+                  "ref": "Gen.34.9",
+                  "role": "defining",
+                  "note": "Hamor to Jacob’s sons: “וְהִתְחַתְּנוּ with us: give your daughters to us and take our daughters for yourselves.”"
+                },
+                {
+                  "ref": "Deu.7.3",
+                  "role": "defining",
+                  "note": "“You shall not תִתְחַתֵּן with them: your daughter you shall not give to his son, nor take his daughter for your son”, for he will turn your son from following Yahweh (Deu 7:4)."
+                },
+                {
+                  "ref": "Jos.23.12",
+                  "note": "If Israel cleaves to the remnant of the nations and intermarries with them, they will be snares and traps (Jos 23:13)."
+                },
+                {
+                  "ref": "Ezr.9.14",
+                  "note": "“Shall we again break your commandments and intermarry with the peoples of these abominations?”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπιγαμβρεύω",
+          "gloss": "become son-in-law; marry as next of kin",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.34.9 הִתְחַתְּנוּ → ἐπιγαμβρεύσασθε; 1Sa.18.22, 23, 26, 27; 2Ch.18.1; Ezr.9.14 the same (Deu.7.3 γαμβρεύσητε)"
+            },
+            {
+              "ref": "Mat.22.24",
+              "note": "The Sadducees’ “his brother shall ἐπιγαμβρεύσει his wife”, from the levirate law of Deu 25:5, where the Hebrew is יבם, not this verb: the New Testament’s one use of the Greek word."
+            }
+          ]
+        },
+        {
+          "lemma": "πενθερά",
+          "gloss": "mother-in-law",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.27.23 חֹתַנְתּוֹ → πενθερᾶς"
+            },
+            {
+              "ref": "Mat.8.14",
+              "note": "Peter’s πενθερά lying sick with fever."
+            },
+            {
+              "ref": "Mat.10.35",
+              "note": "A daughter-in-law against her πενθερά, from Mic 7:6, where the Hebrew is חֲמֹתָהּ."
+            },
+            {
+              "ref": "Luk.4.38"
+            },
+            {
+              "ref": "Luk.12.53"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "חֹתֵן מֹשֶׁה",
+            "gloss": "Moses’ father-in-law",
+            "evidence": [
+              {
+                "ref": "Exo.18.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.10.29"
+              },
+              {
+                "ref": "Jdg.1.16"
+              },
+              {
+                "ref": "Jdg.4.11"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "נָתַן בַּת … לָקַח בַּת",
+            "note": "Giving one’s daughters and taking the others’ daughters, set beside the hithpael as what it means.",
+            "evidence": [
+              {
+                "ref": "Gen.34.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.7.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "דָּבַק",
+            "note": "To cleave to the remnant of the nations, beside intermarrying with them.",
+            "evidence": [
+              {
+                "ref": "Jos.23.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָתָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "son-in-law, one joined by marriage; bridegroom",
+      "bdb": [
+        "h.hc.ac"
+      ],
+      "cognate_ids": [
+        "ar-khatan",
+        "akk-hatanu",
+        "arc-hatna"
+      ],
+      "senses": [
+        {
+          "id": "chatan-son-in-law",
+          "gloss": "son-in-law, daughter’s husband; one related by marriage",
+          "definition": "The man who has married, or is to marry, a man’s daughter, named from her father’s side; once more widely, one joined by marriage to a house.",
+          "evidence": [
+            {
+              "ref": "Gen.19.14",
+              "role": "defining",
+              "note": "Lot speaks to “his חֲתָנִים, who were to take his daughters”."
+            },
+            {
+              "ref": "Gen.19.12",
+              "note": "“Whom have you here besides? A חָתָן, your sons, your daughters?”"
+            },
+            {
+              "ref": "Jdg.19.5",
+              "role": "defining",
+              "note": "“The father of the young woman said to his חָתָן”: the counterpart of חֹתֵן in Jdg 19:4."
+            },
+            {
+              "ref": "Jdg.15.6",
+              "note": "“Samson, the חֲתַן of the Timnite, because he took his wife.”"
+            },
+            {
+              "ref": "1Sa.18.18",
+              "role": "defining",
+              "note": "“Who am I … that I should be חָתָן to the king?”"
+            },
+            {
+              "ref": "1Sa.22.14",
+              "note": "David “the king’s חָתָן”, faithful among all Saul’s servants."
+            },
+            {
+              "ref": "2Ki.8.27",
+              "role": "defining",
+              "note": "Ahaziah walked in the way of the house of Ahab, “for he was חֲתַן of the house of Ahab”: his mother was Ahab’s daughter (2Ki 8:18, 26), so the word reaches to one joined to a house by marriage."
+            },
+            {
+              "ref": "Neh.6.18",
+              "note": "Tobiah, חָתָן of Shecaniah, and so bound by oath to many in Judah."
+            },
+            {
+              "ref": "Neh.13.28",
+              "note": "A grandson of Eliashib the high priest was חָתָן to Sanballat the Horonite, and Nehemiah chased him away."
+            }
+          ]
+        },
+        {
+          "id": "chatan-bridegroom",
+          "gloss": "bridegroom",
+          "definition": "The man at his wedding, named beside the bride (כַּלָּה): one who adorns himself, rejoices over her, and comes out of his chamber; his voice and hers are the sound of joy in a city.",
+          "evidence": [
+            {
+              "ref": "Isa.62.5",
+              "role": "defining",
+              "note": "“As the joy of the חָתָן over the bride, so will your God rejoice over you.”"
+            },
+            {
+              "ref": "Isa.61.10",
+              "role": "defining",
+              "note": "Clothed with garments of salvation “as a חָתָן decks himself with a priestly headdress, and as a bride adorns herself with her jewels”."
+            },
+            {
+              "ref": "Jer.7.34",
+              "role": "defining",
+              "note": "“The voice of mirth and the voice of gladness, the voice of the חָתָן and the voice of the bride” made to cease."
+            },
+            {
+              "ref": "Jer.16.9"
+            },
+            {
+              "ref": "Jer.25.10"
+            },
+            {
+              "ref": "Jer.33.11",
+              "note": "The same voices heard again when Yahweh restores the land."
+            },
+            {
+              "ref": "Jol.2.16",
+              "note": "At the call to fast, “let the חָתָן go out of his chamber, and the bride out of her canopy”."
+            },
+            {
+              "ref": "Psa.19.6",
+              "note": "The sun “as a חָתָן coming out of his chamber”, rejoicing as a strong man to run his course."
+            }
+          ]
+        },
+        {
+          "id": "chatan-damim",
+          "gloss": "“bridegroom of blood”",
+          "definition": "Zipporah’s words when she has circumcised her son on the way and Yahweh lets Moses go: “a חֲתַן דָּמִים you are to me”, which the text explains as said “because of the circumcision”. The one addressed is not named. The verse ties the word to circumcision, the sense of the Arabic verb of the same letters.",
+          "cognate_ids": [
+            "ar-khatana-circumcise"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.4.25",
+              "role": "defining",
+              "note": "She cut off her son’s foreskin, touched his feet, and said, “Surely a חֲתַן דָּמִים you are to me.”"
+            },
+            {
+              "ref": "Exo.4.26",
+              "role": "defining",
+              "note": "“Then she said, חֲתַן דָּמִים, because of the circumcision (לַמּוּלֹת).”"
+            },
+            {
+              "ref": "Exo.4.24",
+              "note": "Yahweh met him at the lodging place and sought to put him to death."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "νυμφίος",
+          "gloss": "bridegroom",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "חָתָן → νυμφίος in Psa.19.6, Isa.61.10, Isa.62.5, Jer.7.34, Jer.16.9, Jer.25.10, Jer.33.11, Jol.2.16 (also Jdg.15.6, Jdg.19.5, Neh.13.28); γαμβρός in Gen.19.12, 1Sa.22.14, Neh.6.18"
+            },
+            {
+              "ref": "Rev.18.23",
+              "role": "defining",
+              "note": "“The voice of the νυμφίος and of the bride shall be heard in you no more”, Jeremiah’s words (Jer 7:34; 25:10) spoken over Babylon."
+            },
+            {
+              "ref": "Mat.9.15",
+              "role": "defining",
+              "note": "“Can the sons of the bridechamber mourn while the νυμφίος is with them? But days will come when the νυμφίος will be taken from them.”"
+            },
+            {
+              "ref": "Jhn.3.29",
+              "role": "defining",
+              "note": "“He who has the bride is the νυμφίος; the friend of the νυμφίος … rejoices greatly at the νυμφίος’ voice.”"
+            },
+            {
+              "ref": "Mat.25.1",
+              "to": "Mat.25.10",
+              "note": "The virgins go out to meet the νυμφίος; at midnight he comes and those ready go in with him to the wedding."
+            },
+            {
+              "ref": "Mrk.2.19",
+              "to": "Mrk.2.20"
+            },
+            {
+              "ref": "Luk.5.34",
+              "to": "Luk.5.35"
+            },
+            {
+              "ref": "Jhn.2.9"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כַּלָּה",
+            "note": "The bride, always beside the bridegroom.",
+            "evidence": [
+              {
+                "ref": "Isa.62.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.61.10"
+              },
+              {
+                "ref": "Jer.7.34"
+              },
+              {
+                "ref": "Jol.2.16"
+              }
+            ]
+          },
+          {
+            "lemma": "גִּבּוֹר",
+            "note": "The strong man running his course, beside the bridegroom in the sun’s rising.",
+            "evidence": [
+              {
+                "ref": "Psa.19.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "קוֹל חָתָן וְקוֹל כַּלָּה",
+            "gloss": "the voice of the bridegroom and the voice of the bride: the sound of a city at peace",
+            "evidence": [
+              {
+                "ref": "Jer.7.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.16.9"
+              },
+              {
+                "ref": "Jer.25.10"
+              },
+              {
+                "ref": "Jer.33.11"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲתַן דָּמִים",
+            "gloss": "a bridegroom of blood",
+            "evidence": [
+              {
+                "ref": "Exo.4.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.4.26"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲתַן הַמֶּלֶךְ",
+            "gloss": "the king’s son-in-law",
+            "evidence": [
+              {
+                "ref": "1Sa.22.14",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.18.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֲתֻנָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wedding, marriage",
+      "summary": "Used once, of Solomon’s wedding day; its sense rests on that verse and on Arabic ḫutūna “alliance by marriage; taking a wife”.",
+      "bdb": [
+        "h.hc.ae"
+      ],
+      "cognate_ids": [
+        "ar-khatana-iii"
+      ],
+      "senses": [
+        {
+          "id": "chatunnah-wedding",
+          "gloss": "wedding day",
+          "definition": "A man’s marriage, its day set beside “the day of the gladness of his heart”, when his mother crowned him.",
+          "kin": [
+            "chatan-bridegroom"
+          ],
+          "evidence": [
+            {
+              "ref": "Sng.3.11",
+              "role": "defining",
+              "note": "King Solomon with the crown his mother crowned him with “in the day of his חֲתֻנָּה, and in the day of the gladness of his heart”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַתְנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bridegroom",
+      "summary": "The Peshitta’s ܚܬܢܐ (ḥatnā), where the Greek has νυμφίος; the Peshitta New Testament uses it only of the bridegroom, and Jesus applies it to himself.",
+      "cognate_ids": [
+        "arc-hatna"
+      ],
+      "senses": [
+        {
+          "id": "hatna-bridegroom",
+          "gloss": "bridegroom",
+          "definition": "The man at his wedding, whose presence is joy to his friends and whose coming the virgins await; Jesus’ name for himself, and John the Baptist’s for him.",
+          "kin": [
+            "chatan-bridegroom"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.9.15",
+              "role": "defining",
+              "note": "“Can the sons of the bridechamber mourn while the ḥatnā is with them?”"
+            },
+            {
+              "ref": "Jhn.3.29",
+              "role": "defining",
+              "note": "“He who has the bride is the ḥatnā.”"
+            },
+            {
+              "ref": "Mat.25.1",
+              "role": "defining",
+              "note": "Ten virgins go out to meet the ḥatnā."
+            },
+            {
+              "ref": "Mat.25.5",
+              "to": "Mat.25.6"
+            },
+            {
+              "ref": "Mat.25.10"
+            },
+            {
+              "ref": "Mrk.2.19",
+              "to": "Mrk.2.20"
+            },
+            {
+              "ref": "Luk.5.34",
+              "to": "Luk.5.35"
+            },
+            {
+              "ref": "Jhn.2.9",
+              "note": "The ruler of the feast calls the ḥatnā at Cana."
+            },
+            {
+              "ref": "Rev.18.23",
+              "note": "“The voice of the ḥatnā and of the bride”, from Jeremiah."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-khatan",
+      "lang": "ar",
+      "form": "خَتَنٌ، خَتَنَةٌ",
+      "translit": "ḫatan, ḫatana",
+      "gloss": "a man married among a people; any relation on the wife’s side: wife’s father, wife’s mother (ḫatana), wife’s brother; also a daughter’s husband",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Lane’s sources give ḫatan as “a man married among a people”, or “any relation on the side of the wife; such as a man’s wife’s father, and wife’s mother, and wife’s brother”, with the vulgar use “a man’s daughter’s husband”, and the feminine ḫatana “a man’s wife’s mother”. The one Arabic word covers both sides of the tie, as Hebrew חֹתֵן and חָתָן divide it, and חֹתֶנֶת answers to ḫatana. Arabic خ shows ḫ behind ח.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 704, root ختن, خَتَنٌ (n10024)"
+        }
+      ]
+    },
+    {
+      "id": "ar-khatana-iii",
+      "lang": "ar",
+      "form": "خَاتَنَ، خُتُونَةٌ",
+      "translit": "ḫātana, ḫutūna",
+      "gloss": "ally oneself to someone by marriage; alliance by marriage, a man’s taking a wife",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Form III ḫātanahu “he allied himself to him by marriage”, syn. tazawwaja ilayhi; muḫātana is becoming a ṣihr, a relation by marriage. The verbal noun ḫutūna is “the alliance by which one acquires the relationship of a ḫatan … and a man’s marrying, or taking to wife, a woman”. These answer to the hithpael (to make oneself a son-in-law) and to חֲתֻנָּה.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 704, root ختن, خاتنهُ (n10022)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 704, خُتُونَةٌ (n10029)"
+        }
+      ]
+    },
+    {
+      "id": "ar-khatana-circumcise",
+      "lang": "ar",
+      "form": "خَتَنَ، خِتَانٌ",
+      "translit": "ḫatana, ḫitān",
+      "gloss": "circumcise; circumcision, and the feast made for a wedding or a circumcision",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "The first form of the same Arabic root is “he circumcised a boy”, and ḫitān is circumcision, the place of circumcision, and the feast to which people are invited “on account of a wedding, and of a circumcision also”. Hebrew never uses חתן for circumcising (that is מוּל), but Zipporah’s חֲתַן דָּמִים is said “because of the circumcision” (Exo 4:26). Recorded as possible: Lane gives no account of how the circumcising and the in-law senses are linked in Arabic.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 703, root ختن, خَتَنَ (n10021)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 704, خِتَانٌ (n10025)"
+        }
+      ]
+    },
+    {
+      "id": "akk-hatanu",
+      "lang": "akk",
+      "form": "ḫatanu",
+      "translit": "ḫatanu",
+      "gloss": "in-law; son-in-law, brother-in-law",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Neo-Assyrian and later ḫatanu, glossed “in-law; brother-in-law” (forms ḫatan, ḫatna, ḫatini). Akkadian ḫ answers to Arabic ḫ here, as Hebrew ח does.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000042820, hatanu [in-law] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000149 ḫtn [in-law], AKK003627 hatanu [in-law]"
+        }
+      ]
+    },
+    {
+      "id": "akk-hatanu-v",
+      "lang": "akk",
+      "form": "ḫatānu",
+      "translit": "ḫatānu",
+      "gloss": "establish a marriage relationship; protect",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "The verb is glossed both “establish marriage relationship” and “protect” (forms iḫtinu, taḫtina). The first answers to the hithpael; how “protect” belongs with it is not shown by the glossary.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000061180, hatānu [protect] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-htn",
+      "lang": "uga",
+      "form": "𐎃𐎚𐎐",
+      "translit": "ḫtn",
+      "gloss": "become related by marriage, marry",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "In the poem of the marriage of Nikkal and Yarikh (KTU 1.24:32), an infinitive with suffix, “to become related by marriage, marry”. Ugaritic keeps ḫ apart from ḥ, and shows ḫ.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 187, §93 Glossary, /ḫ-t-n/ (KTU 1.24:32)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000149 ḫtn [in-law], UGC002143 ḫtn [relationship]"
+        }
+      ]
+    },
+    {
+      "id": "arc-hatna",
+      "lang": "arc",
+      "form": "חַתְנָא",
+      "translit": "ḥatnā",
+      "gloss": "son-in-law; bridegroom",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums for Hebrew חָתָן (Targ. Exo 4:25; 1Sa 18:18; Isa 62:5; plural חַתְנִין Jer 7:34), and of a son-in-law living in his father-in-law’s house. Aramaic ח does not show whether ḥ or ḫ stands behind it.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חַתְנָא (חֲתָנָא)"
+        },
+        {
+          "source": "sedra",
+          "locator": "lexeme 1189, KTNA (root 700, KTN), bridegroom"
+        }
+      ]
+    },
+    {
+      "id": "arc-hatan-v",
+      "lang": "arc",
+      "form": "חֲתַן",
+      "translit": "ḥătan",
+      "gloss": "(ithpaal) become connected by marriage, marry into a family",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: pael “ally to a family by marriage”, ithpaal “become connected”, in the Targum for the hithpael of 1Sa 18:22.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲתַן",
+          "note": "Y. Sot. IX, end; Ithpa. Targ. I Sam. 18:22 sq."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-bridegroom",
+      "statement": "Isaiah says to Zion, “as the joy of the חָתָן over the bride, so will your God rejoice over you” (Isa 62:5); in the chapter whose opening Jesus read as fulfilled in himself (Isa 61:1–2; Luk 4:17–21), the speaker rejoices that Yahweh has clothed him with garments of salvation “as a חָתָן” (Isa 61:10). Jesus calls himself the bridegroom, present with his disciples and to be taken from them (Mat 9:15); John the Baptist says, “He who has the bride is the bridegroom”, and rejoices to hear his voice (Jhn 3:29); in the parable the bridegroom comes at midnight, those who are ready go in with him to the wedding, and the door is shut (Mat 25:1–13). Paul betrothed the ecclesia at Corinth “to one husband, to present you as a chaste virgin to Christ” (2Co 11:2), and John hears that “the marriage of the Lamb has come, and his wife has made herself ready” (Rev 19:7–8; 21:2, 9). From the verses: the joy Yahweh promised to have over his people is given in his Son as bridegroom; the ecclesia is now betrothed, the wedding waits for his coming, and the bride is to be ready when he comes.",
+      "evidence": [
+        {
+          "ref": "Isa.62.5"
+        },
+        {
+          "ref": "Isa.61.1",
+          "to": "Isa.61.2"
+        },
+        {
+          "ref": "Luk.4.17",
+          "to": "Luk.4.21"
+        },
+        {
+          "ref": "Isa.61.10"
+        },
+        {
+          "ref": "Mat.9.15"
+        },
+        {
+          "ref": "Jhn.3.29"
+        },
+        {
+          "ref": "Mat.25.1",
+          "to": "Mat.25.13"
+        },
+        {
+          "ref": "2Co.11.2"
+        },
+        {
+          "ref": "Rev.19.7",
+          "to": "Rev.19.8"
+        },
+        {
+          "ref": "Rev.21.2"
+        },
+        {
+          "ref": "Rev.21.9"
+        }
+      ]
+    },
+    {
+      "topic": "voice-of-bridegroom",
+      "statement": "Yahweh tells Judah that he will make to cease from her cities “the voice of mirth and the voice of gladness, the voice of the חָתָן and the voice of the bride, for the land shall be desolate” (Jer 7:34; 16:9; 25:10), and then that in the same desolate place those voices will be heard again, with the voice of those bringing thanksgiving to the house of Yahweh, when he restores the land as at the first (Jer 33:10–11). John hears the same words spoken over Babylon the great: “the voice of the bridegroom and of the bride shall be heard in you no more” (Rev 18:23). From the verses: the wedding’s joy is the mark of a people living at peace under God’s blessing; its silence is his judgment on the city that rejects him, and its return is the sign of his restoration.",
+      "evidence": [
+        {
+          "ref": "Jer.7.34"
+        },
+        {
+          "ref": "Jer.16.9"
+        },
+        {
+          "ref": "Jer.25.10"
+        },
+        {
+          "ref": "Jer.33.10",
+          "to": "Jer.33.11"
+        },
+        {
+          "ref": "Rev.18.23"
+        }
+      ]
+    },
+    {
+      "topic": "marrying-in-the-lord",
+      "statement": "Israel was not to intermarry with the nations of the land, giving or taking daughters, “for he will turn away your son from following me, to serve other gods” (Deu 7:3–4; Jos 23:12–13). Solomon made himself son-in-law to Pharaoh (1Ki 3:1), and his foreign wives turned his heart after other gods (1Ki 11:1–4; Neh 13:26). Jehoshaphat joined himself by marriage to Ahab (2Ch 18:1); Ahab’s daughter became wife to his son Jehoram, who walked in the way of Ahab’s house, and their son Ahaziah did the same, “for he was חֲתַן of the house of Ahab” (2Ki 8:18, 26–27). After the return Ezra asks, “shall we again break your commandments and intermarry?” (Ezr 9:14), and Nehemiah chases away the high priest’s grandson, son-in-law to Sanballat (Neh 13:28). The concern is the worship the marriage brings in, not the stranger as such: Moses’ own חֹתֵן was a Midianite who confessed Yahweh greater than all gods and offered to God with Israel’s elders (Exo 18:11–12). Paul carries the rule to believers: “be not unequally yoked with unbelievers” (2Co 6:14), and a widow is free to marry “only in the Lord” (1Co 7:39). From the verses: marriage joins two houses and so their worship; the one who belongs to God is to marry one who belongs to him.",
+      "evidence": [
+        {
+          "ref": "Deu.7.3",
+          "to": "Deu.7.4"
+        },
+        {
+          "ref": "Jos.23.12",
+          "to": "Jos.23.13"
+        },
+        {
+          "ref": "1Ki.3.1"
+        },
+        {
+          "ref": "1Ki.11.1",
+          "to": "1Ki.11.4"
+        },
+        {
+          "ref": "Neh.13.26"
+        },
+        {
+          "ref": "2Ch.18.1"
+        },
+        {
+          "ref": "2Ki.8.18"
+        },
+        {
+          "ref": "2Ki.8.26",
+          "to": "2Ki.8.27"
+        },
+        {
+          "ref": "Ezr.9.14"
+        },
+        {
+          "ref": "Neh.13.28"
+        },
+        {
+          "ref": "Exo.18.11",
+          "to": "Exo.18.12"
+        },
+        {
+          "ref": "2Co.6.14"
+        },
+        {
+          "ref": "1Co.7.39"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Root key חתנ as the database keys it. The 22 qal-participle tokens (חֹתֵן, חֹתֶנֶת) and 11 hithpael tokens are filed under both h.hc.ab (חֹתֵן, n.verb) and h.hc.ad (the verb); per the README one key is named, h.hc.ad on the verb, and חֹתֵן is entered as its qal stem, not as a separate noun, so the tokens are not counted twice. h.hc.aa is BDB’s root heading, with no tokens. The brief’s 87 tokens are 54 distinct (33 verb, 20 חָתָן, 1 חֲתֻנָּה). No proper names are formed from the root. Open questions: (1) whether the in-law senses and Arabic ḫatana “circumcise” are one older root (both ḫ); Exo 4:25–26 is the one verse tying חָתָן to circumcision, and the ar-khatana-circumcise cognate is recorded as possible on that sense only. (2) Num 10:29 חֹתֵן מֹשֶׁה may qualify Hobab or Reuel; Jdg 4:11 sets it on Hobab, and the entry says no more. (3) Exo 4:25 does not name the one Zipporah addresses (Moses or the son). Leads not followed: Sabaean ḫtn (Wiktionary’s Proto-Semitic page; not found in the OCR of Biella 1982); Ge’ez cognate not checked in Dillmann or Leslau; Payne Smith not checked for Syriac ḥatnā’s wider in-law senses (Wiktionary gives son-in-law, brother-in-law, father-in-law, baptismal candidate). The Septuagint’s γαμβρός (for חֹתֵן and some חָתָן) and νύμφευσις (Sng 3:11) do not occur in the New Testament and are not recorded as Greek; the New Testament’s πενθερός (Jhn 18:13) is not in the MACULA alignment for חֹתֵן and is left out."
+}
