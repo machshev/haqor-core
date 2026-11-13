@@ -1,0 +1,2256 @@
+{
+  "id": "shuv",
+  "root": "שוב",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "return",
+    "repentance",
+    "restoration",
+    "apostasy",
+    "answer",
+    "death",
+    "israel"
+  ],
+  "gloss": "turn back, return; (hiphil) bring back, give back, answer; turning away",
+  "summary": "To turn back the way one came: to go back to a place or person (Gen 8:9; Num 10:36), and so, of man, to turn back to Yahweh from sin, which is repentance (Deu 30:2; Ezk 33:11; Jon 3:10), or to turn back from following him, which is apostasy (1Sa 15:11). Yahweh too turns, from his anger and back to those who return to him (Exo 32:12; Mal 3:7). The hiphil makes something go back: bring back exiles, give back a pledge, pay back deeds, turn back wrath, return a word (an answer), and restore the soul (Jer 29:10; Exo 22:25; Pro 24:12; Num 25:11; 1Ki 12:6; Psa 19:8). Man made from dust returns to it (Gen 3:19). Ugaritic ṯb, Arabic ṯāba, Sabaic ṯwb and Aramaic tūḇ have the same sense of return, answer and repay, and show ṯ behind the ש.",
+  "words": [
+    {
+      "lemma": "שׁוּב",
+      "pos": "verb",
+      "gloss": "turn back, return; (hiphil) bring back, give back, answer",
+      "bdb": [
+        "v.bn.aa"
+      ],
+      "cognate_ids": [
+        "uga-tb",
+        "ar-thaba",
+        "sem-twb",
+        "arc-tuv"
+      ],
+      "summary": "About a thousand uses, qal and hiphil above all. The movement is always back toward where one started: the sense of “repent”, “turn away”, “answer”, “repay” and “restore” each comes from what it is that goes back.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "turn back, return; repent; turn away; do again",
+          "senses": [
+            {
+              "id": "go-back",
+              "gloss": "return, go back (to a place or person)",
+              "definition": "Go back to the place or person one came from.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.9",
+                  "role": "defining",
+                  "note": "The dove found no rest for the sole of her foot, וַתָּשָׁב אֵלָיו אֶל־הַתֵּבָה, “and she returned to him to the ark”."
+                },
+                {
+                  "ref": "Gen.18.33",
+                  "role": "defining",
+                  "note": "Yahweh went, and Abraham שָׁב לִמְקֹמוֹ, “returned to his place”."
+                },
+                {
+                  "ref": "Num.10.36",
+                  "role": "defining",
+                  "note": "When the ark rested Moses said, שׁוּבָה יַהְוֶה רִבְבוֹת אַלְפֵי יִשְׂרָאֵל, “Return, Yahweh, to the myriads of the thousands of Israel”: the counterpart of “Rise up, Yahweh” when it set out (Num 10:35)."
+                },
+                {
+                  "ref": "Lev.25.41",
+                  "note": "The released bondman “shall return to his family, and to the possession of his fathers he shall return”."
+                },
+                {
+                  "ref": "Rut.1.7",
+                  "note": "Naomi and her daughters-in-law set out לָשׁוּב, “to return”, to the land of Judah."
+                },
+                {
+                  "ref": "2Sa.12.23",
+                  "role": "defining",
+                  "note": "David of his dead child: “I am going to him, but he will not return to me.”"
+                },
+                {
+                  "ref": "Job.7.10",
+                  "note": "The dead “will not return again to his house”."
+                },
+                {
+                  "ref": "Ecc.1.7",
+                  "note": "To the place the rivers go, there they return to go again."
+                }
+              ]
+            },
+            {
+              "id": "return-to-dust",
+              "gloss": "return to the dust (in death)",
+              "definition": "Of man, to go back at death to the dust he was formed from.",
+              "tags": [
+                "death"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.3.19",
+                  "role": "defining",
+                  "note": "“Until you return to the ground, for from it you were taken; for dust you are, and to dust you will return.”"
+                },
+                {
+                  "ref": "Psa.104.29",
+                  "role": "defining",
+                  "note": "“You take away their breath (רוּחָם), they expire and return to their dust.”"
+                },
+                {
+                  "ref": "Psa.146.4",
+                  "role": "defining",
+                  "note": "“His breath goes out, he returns to his ground; in that day his thoughts perish.”"
+                },
+                {
+                  "ref": "Psa.90.3",
+                  "note": "“You turn (hiphil) man back to crushed dust, and say, Return, sons of Adam.”"
+                },
+                {
+                  "ref": "Job.34.15",
+                  "note": "“All flesh would expire together, and man would return to dust.”"
+                },
+                {
+                  "ref": "Ecc.3.20",
+                  "role": "defining",
+                  "note": "“All are from the dust, and all return to the dust”, man and beast alike (Ecc 3:19)."
+                },
+                {
+                  "ref": "Ecc.12.7",
+                  "role": "defining",
+                  "note": "“The dust returns to the earth as it was, and the breath (הָרוּחַ) returns to God who gave it.”"
+                }
+              ]
+            },
+            {
+              "id": "turn-back-retreat",
+              "gloss": "turn back, retreat; come back unfulfilled",
+              "definition": "Turn back from going on: of an enemy put to flight, a shadow going back, or a sword, word or arrow that comes back without doing what it was sent to do.",
+              "evidence": [
+                {
+                  "ref": "Psa.9.4",
+                  "role": "defining",
+                  "note": "בְּשׁוּב־אוֹיְבַי אָחוֹר, “when my enemies turn back”, they stumble and perish."
+                },
+                {
+                  "ref": "Psa.6.11",
+                  "note": "“Let them turn back, let them be ashamed in a moment.”"
+                },
+                {
+                  "ref": "Psa.56.10",
+                  "note": "“Then my enemies will turn back in the day I call.”"
+                },
+                {
+                  "ref": "Isa.38.8",
+                  "role": "defining",
+                  "note": "The sign to Hezekiah: the sun’s shadow “returned ten steps” on the steps of Ahaz."
+                },
+                {
+                  "ref": "2Ki.20.10",
+                  "note": "“Let the shadow go back ten steps.”"
+                },
+                {
+                  "ref": "2Sa.1.22",
+                  "note": "“The sword of Saul did not return empty.”"
+                },
+                {
+                  "ref": "Isa.55.11",
+                  "role": "defining",
+                  "note": "“My word that goes out of my mouth will not return to me empty, but will do what I please.”"
+                },
+                {
+                  "ref": "Isa.45.23",
+                  "note": "“A word has gone out of my mouth in righteousness and will not return: that to me every knee will bow.”"
+                }
+              ]
+            },
+            {
+              "id": "turn-to-yahweh",
+              "gloss": "turn back to Yahweh, repent",
+              "definition": "Of a sinner or a people, to turn back from their own way and from sin to Yahweh, to listen to him and do his will: repentance shown in a changed way of life.",
+              "tags": [
+                "repentance"
+              ],
+              "cognate_ids": [
+                "ar-thaba",
+                "arc-tuv"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.30.2",
+                  "role": "defining",
+                  "note": "וְשַׁבְתָּ עַד־יַהְוֶה אֱלֹהֶיךָ וְשָׁמַעְתָּ בְקֹלוֹ, “and you return to Yahweh your God and listen to his voice … with all your heart and all your soul”."
+                },
+                {
+                  "ref": "Deu.4.30",
+                  "note": "In distress in the latter days, “you will return to Yahweh your God and listen to his voice”."
+                },
+                {
+                  "ref": "Deu.30.10",
+                  "note": "“When you return to Yahweh your God with all your heart.”"
+                },
+                {
+                  "ref": "1Sa.7.3",
+                  "role": "defining",
+                  "note": "“If with all your heart you are returning to Yahweh, put away the foreign gods … and serve him alone.”"
+                },
+                {
+                  "ref": "1Ki.8.47",
+                  "note": "Solomon’s prayer: if in the land of their captivity they lay it to heart and turn and plead, “We have sinned”."
+                },
+                {
+                  "ref": "1Ki.8.48",
+                  "note": "“And return to you with all their heart and all their soul.”"
+                },
+                {
+                  "ref": "Isa.6.10",
+                  "role": "defining",
+                  "note": "Lest they see, hear and understand with their heart, וָשָׁב וְרָפָא לוֹ, “and turn, and be healed”. Quoted in Mat 13:15 and Act 28:27 (ἐπιστρέψωσιν)."
+                },
+                {
+                  "ref": "Isa.10.21",
+                  "note": "שְׁאָר יָשׁוּב, “a remnant will return, the remnant of Jacob, to the mighty God”."
+                },
+                {
+                  "ref": "Isa.44.22",
+                  "note": "“I have blotted out your transgressions like a cloud … return to me, for I have redeemed you.”"
+                },
+                {
+                  "ref": "Isa.55.7",
+                  "role": "defining",
+                  "note": "“Let the wicked forsake his way … and let him return to Yahweh, and he will have compassion on him.”"
+                },
+                {
+                  "ref": "Jer.3.12",
+                  "note": "שׁוּבָה מְשֻׁבָה יִשְׂרָאֵל, “Return, turning-away Israel.”"
+                },
+                {
+                  "ref": "Jer.3.22",
+                  "note": "“Return, turning-away sons; I will heal your turnings away.”"
+                },
+                {
+                  "ref": "Ezk.18.21",
+                  "role": "defining",
+                  "note": "“If the wicked turns from all his sins that he has done, and keeps all my statutes … he will surely live, he will not die.”"
+                },
+                {
+                  "ref": "Ezk.33.11",
+                  "role": "defining",
+                  "note": "“I have no pleasure in the death of the wicked, but that the wicked turn from his way and live. Turn, turn from your evil ways; why will you die?”"
+                },
+                {
+                  "ref": "Hos.6.1",
+                  "note": "“Come, let us return to Yahweh, for he has torn and he will heal us.”"
+                },
+                {
+                  "ref": "Hos.14.2",
+                  "note": "“Return, Israel, to Yahweh your God, for you have stumbled in your iniquity.”"
+                },
+                {
+                  "ref": "Jol.2.12",
+                  "note": "“Return to me with all your heart, with fasting, weeping and mourning.”"
+                },
+                {
+                  "ref": "Jon.3.10",
+                  "role": "defining",
+                  "note": "“God saw their works, that they turned from their evil way”: the turning is seen in what they did. The Peshitta’s ܬܒܘ for Nineveh’s repentance in Mat 12:41 and Luk 11:32 is this root."
+                },
+                {
+                  "ref": "Psa.51.15",
+                  "note": "“I will teach transgressors your ways, and sinners will return to you.”"
+                },
+                {
+                  "ref": "Mal.3.7",
+                  "role": "defining",
+                  "note": "“You turned aside (סַרְתֶּם) from my statutes … Return to me and I will return to you.”"
+                },
+                {
+                  "ref": "Zec.1.3",
+                  "note": "“Return to me, and I will return to you.”"
+                },
+                {
+                  "ref": "Isa.59.20",
+                  "note": "A redeemer will come to Zion, וּלְשָׁבֵי פֶשַׁע בְּיַעֲקֹב, “and to those turning from transgression in Jacob”; Paul cites it at Rom 11:26."
+                }
+              ]
+            },
+            {
+              "id": "turn-away",
+              "gloss": "turn back from following Yahweh, fall away",
+              "definition": "Turn back from following Yahweh or from righteousness: to give up a way once taken with him.",
+              "tags": [
+                "apostasy"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.15.11",
+                  "role": "defining",
+                  "note": "“Saul שָׁב מֵאַחֲרַי, has turned back from after me, and has not performed my words.”"
+                },
+                {
+                  "ref": "Num.14.43",
+                  "role": "defining",
+                  "note": "“Because you have turned back from after Yahweh, Yahweh will not be with you.”"
+                },
+                {
+                  "ref": "Jos.22.16",
+                  "role": "defining",
+                  "note": "“To turn back today from after Yahweh … to rebel (לִמְרָדְכֶם) today against Yahweh.”"
+                },
+                {
+                  "ref": "Jos.22.18"
+                },
+                {
+                  "ref": "Ezk.18.24",
+                  "role": "defining",
+                  "note": "“When the righteous turns from his righteousness and does iniquity … in his sin he shall die.”"
+                },
+                {
+                  "ref": "Ezk.33.18"
+                },
+                {
+                  "ref": "Jer.8.4",
+                  "note": "“If one turns away, does he not turn back?” Both senses in one line, played on in Jer 8:5."
+                }
+              ]
+            },
+            {
+              "id": "yahweh-turns",
+              "gloss": "(of Yahweh) turn back to his people; turn from anger",
+              "definition": "Of Yahweh: return to be present with his people, or turn back from his anger and relent.",
+              "evidence": [
+                {
+                  "ref": "Num.10.36",
+                  "role": "defining",
+                  "note": "“Return, Yahweh, to the myriads of the thousands of Israel”: his presence settling again among the camp when the ark rested."
+                },
+                {
+                  "ref": "Exo.32.12",
+                  "role": "defining",
+                  "note": "Moses: שׁוּב מֵחֲרוֹן אַפֶּךָ וְהִנָּחֵם, “turn from your burning anger and relent”."
+                },
+                {
+                  "ref": "Jon.3.9",
+                  "role": "defining",
+                  "note": "“Who knows? God may turn and relent, and turn from his burning anger, and we will not perish.”"
+                },
+                {
+                  "ref": "Jol.2.14",
+                  "note": "“Who knows whether he will turn and relent and leave a blessing behind him?”"
+                },
+                {
+                  "ref": "Psa.6.5",
+                  "note": "“Return, Yahweh, deliver my soul.”"
+                },
+                {
+                  "ref": "Psa.90.13",
+                  "note": "“Return, Yahweh — how long? — and relent concerning your servants.”"
+                },
+                {
+                  "ref": "Isa.5.25",
+                  "note": "“For all this his anger has not turned back, and his hand is stretched out still.”"
+                },
+                {
+                  "ref": "Hos.14.5",
+                  "note": "“I will heal their turning away … for my anger has turned from him.”"
+                },
+                {
+                  "ref": "Jer.4.28",
+                  "note": "“I have purposed and will not relent, and I will not turn back from it.”"
+                },
+                {
+                  "ref": "Mal.3.7",
+                  "note": "“Return to me and I will return to you”: his return answers theirs."
+                },
+                {
+                  "ref": "Mic.7.19",
+                  "note": "יָשׁוּב יְרַחֲמֵנוּ, “he will again have compassion on us”."
+                }
+              ]
+            },
+            {
+              "id": "restore-fortunes",
+              "gloss": "turn back the captivity, restore the fortunes (שׁוּב שְׁבוּת)",
+              "definition": "With שְׁבוּת or שְׁבִית as object, Yahweh turns back the captivity of his people: brings the exiles home and restores what they had.",
+              "tags": [
+                "restoration"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.30.3",
+                  "role": "defining",
+                  "note": "“Yahweh your God will turn back your captivity and have compassion on you, and will again gather you from all the peoples where he scattered you.”"
+                },
+                {
+                  "ref": "Jer.29.14",
+                  "role": "defining",
+                  "note": "“I will turn back your captivity and gather you from all the nations … and bring you back (hiphil) to the place from which I exiled you.”"
+                },
+                {
+                  "ref": "Psa.126.1",
+                  "note": "“When Yahweh turned back שִׁיבַת צִיּוֹן, we were like those who dream.”"
+                },
+                {
+                  "ref": "Psa.126.4",
+                  "note": "“Turn back our captivity, Yahweh, like streams in the Negev.”"
+                },
+                {
+                  "ref": "Psa.14.7",
+                  "note": "“When Yahweh turns back the captivity of his people, Jacob will rejoice.”"
+                },
+                {
+                  "ref": "Jer.30.3",
+                  "note": "“I will turn back the captivity of my people Israel and Judah … and bring them back to the land I gave their fathers.”"
+                },
+                {
+                  "ref": "Jer.30.18"
+                },
+                {
+                  "ref": "Amo.9.14",
+                  "note": "“I will turn back the captivity of my people Israel, and they will build the desolate cities and dwell in them.”"
+                },
+                {
+                  "ref": "Zep.2.7"
+                },
+                {
+                  "ref": "Job.42.10",
+                  "role": "defining",
+                  "note": "“Yahweh turned back the captivity of Job … and gave Job twice as much as he had before”: of a man’s fortunes, with no exile."
+                }
+              ]
+            },
+            {
+              "id": "do-again",
+              "gloss": "(with another verb) do again",
+              "definition": "Set beside another verb, to go back and do it again.",
+              "evidence": [
+                {
+                  "ref": "Gen.26.18",
+                  "role": "defining",
+                  "note": "וַיָּשָׁב יִצְחָק וַיַּחְפֹּר, “Isaac dug again the wells of water” dug in Abraham’s days."
+                },
+                {
+                  "ref": "Jer.18.4",
+                  "role": "defining",
+                  "note": "When the vessel was spoiled, the potter וְשָׁב וַיַּעֲשֵׂהוּ כְּלִי אַחֵר, “made it again another vessel”."
+                },
+                {
+                  "ref": "Gen.30.31",
+                  "note": "“I will again feed your flock.”"
+                },
+                {
+                  "ref": "Zec.8.15",
+                  "note": "“So again I have purposed in these days to do good to Jerusalem.”"
+                },
+                {
+                  "ref": "Ezr.9.14",
+                  "note": "“Shall we again break your commandments?”"
+                },
+                {
+                  "ref": "Dan.9.25",
+                  "note": "תָּשׁוּב וְנִבְנְתָה, “it will be built again, street and moat”."
+                }
+              ]
+            },
+            {
+              "id": "be-restored",
+              "gloss": "be restored (of flesh or a limb)",
+              "definition": "Of flesh or a hand struck by God, to return to its former soundness.",
+              "evidence": [
+                {
+                  "ref": "2Ki.5.14",
+                  "role": "defining",
+                  "note": "Naaman dipped seven times, “and his flesh returned like the flesh of a little boy, and he was clean”."
+                },
+                {
+                  "ref": "1Ki.13.6",
+                  "role": "defining",
+                  "note": "“The king’s hand returned to him, and became as it was before.”"
+                },
+                {
+                  "ref": "Exo.4.7",
+                  "note": "Moses’ leprous hand: “behold, it had returned like his flesh.”"
+                },
+                {
+                  "ref": "Lev.13.16",
+                  "note": "“If the raw flesh turns back and is changed to white.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring back, give back, pay back; answer; turn back; restore",
+          "senses": [
+            {
+              "id": "bring-back",
+              "gloss": "bring back, lead back",
+              "definition": "Make someone or something go back to where it came from: people to their land, the ark to its place, captives and spoil from the enemy.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.15",
+                  "role": "defining",
+                  "note": "“I will keep you wherever you go, וַהֲשִׁבֹתִיךָ, and will bring you back to this land.”"
+                },
+                {
+                  "ref": "Gen.14.16",
+                  "note": "Abram “brought back all the goods, and also brought back his relative Lot”."
+                },
+                {
+                  "ref": "Gen.48.21",
+                  "note": "“God will be with you and bring you back to the land of your fathers.”"
+                },
+                {
+                  "ref": "2Sa.15.25",
+                  "note": "“Take the ark of God back to the city.”"
+                },
+                {
+                  "ref": "Jer.16.15",
+                  "role": "defining",
+                  "note": "“I will bring them back to their land that I gave to their fathers.”"
+                },
+                {
+                  "ref": "Jer.24.6"
+                },
+                {
+                  "ref": "Jer.29.10",
+                  "role": "defining",
+                  "note": "“When seventy years are completed for Babylon … to bring you back to this place.”"
+                },
+                {
+                  "ref": "Jer.12.15",
+                  "note": "“After I have plucked them up I will return (qal) and have compassion on them, and bring them back each to his inheritance.”"
+                },
+                {
+                  "ref": "Ezk.39.25",
+                  "note": "“Now I will bring back the captivity of Jacob and have compassion on the whole house of Israel.”"
+                },
+                {
+                  "ref": "Jer.33.7",
+                  "note": "“I will bring back the captivity of Judah and of Israel and build them as at the first.”"
+                }
+              ]
+            },
+            {
+              "id": "turn-people-back",
+              "gloss": "turn (people, hearts) back to Yahweh",
+              "definition": "Make people turn back to Yahweh: the work of his prophets and of Yahweh himself, and in the imperative a call to turn oneself.",
+              "tags": [
+                "repentance"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mal.3.24",
+                  "role": "defining",
+                  "note": "Elijah “will turn back the heart of fathers to sons, and the heart of sons to their fathers”. Luk 1:16–17 applies it to John (ἐπιστρέψαι)."
+                },
+                {
+                  "ref": "Jer.31.18",
+                  "role": "defining",
+                  "note": "Ephraim: הֲשִׁיבֵנִי וְאָשׁוּבָה, “turn me back, and I will turn back, for you are Yahweh my God”."
+                },
+                {
+                  "ref": "Lam.5.21",
+                  "role": "defining",
+                  "note": "“Turn us back to you, Yahweh, and we will turn back; renew our days as of old.”"
+                },
+                {
+                  "ref": "Psa.80.4",
+                  "note": "“God, turn us back, and make your face shine, and we will be saved.”"
+                },
+                {
+                  "ref": "Neh.9.26",
+                  "note": "They killed the prophets “who testified against them to turn them back to you”."
+                },
+                {
+                  "ref": "Neh.9.29"
+                },
+                {
+                  "ref": "2Ch.24.19"
+                },
+                {
+                  "ref": "Ezk.14.6",
+                  "note": "שׁוּבוּ וְהָשִׁיבוּ, “Turn, and turn yourselves from your idols, and turn your faces from all your abominations.”"
+                },
+                {
+                  "ref": "Ezk.18.30",
+                  "note": "“Turn, and turn yourselves from all your transgressions, so iniquity will not be your stumbling.”"
+                },
+                {
+                  "ref": "Ezk.18.32",
+                  "note": "“I have no pleasure in the death of one who dies … so turn yourselves and live.”"
+                }
+              ]
+            },
+            {
+              "id": "give-back",
+              "gloss": "give back, restore, make restitution",
+              "definition": "Give back what belongs to another: a pledge, a stray animal, what was taken, money or a wife; in the law, restitution for a wrong.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.25",
+                  "role": "defining",
+                  "note": "“If you take your neighbour’s cloak in pledge, before the sun goes down you shall return it to him.”"
+                },
+                {
+                  "ref": "Exo.23.4",
+                  "note": "“If you meet your enemy’s ox or donkey going astray, you shall surely bring it back to him.”"
+                },
+                {
+                  "ref": "Deu.22.1",
+                  "role": "defining",
+                  "note": "“You shall surely bring them back to your brother.”"
+                },
+                {
+                  "ref": "Deu.22.2"
+                },
+                {
+                  "ref": "Gen.20.7",
+                  "note": "“Now return the man’s wife.”"
+                },
+                {
+                  "ref": "Gen.42.25",
+                  "note": "Joseph ordered “to return each man’s silver to his sack”."
+                },
+                {
+                  "ref": "Lev.5.23",
+                  "role": "defining",
+                  "note": "“He shall return what he took by robbery.”"
+                },
+                {
+                  "ref": "Num.5.7",
+                  "note": "“He shall confess his sin and return his guilt in full, and add a fifth to it.”"
+                },
+                {
+                  "ref": "Lev.25.27",
+                  "note": "In redeeming a sold field, “return the excess to the man to whom he sold it”."
+                },
+                {
+                  "ref": "Ezk.18.7",
+                  "note": "The righteous man “restores to the debtor his pledge”."
+                },
+                {
+                  "ref": "Ezk.33.15",
+                  "role": "defining",
+                  "note": "“If the wicked restores the pledge, gives back what he took by robbery, walks in the statutes of life … he shall surely live.”"
+                },
+                {
+                  "ref": "Jdg.17.3",
+                  "note": "Micah returned the eleven hundred pieces of silver to his mother."
+                }
+              ]
+            },
+            {
+              "id": "repay",
+              "gloss": "pay back, render, requite",
+              "definition": "Bring back on someone what his deeds deserve, good or evil; and of man, to render something to God for what he has given.",
+              "evidence": [
+                {
+                  "ref": "Jdg.9.56",
+                  "role": "defining",
+                  "note": "“God returned the evil of Abimelech which he did to his father, in killing his seventy brothers.”"
+                },
+                {
+                  "ref": "Pro.24.12",
+                  "role": "defining",
+                  "note": "“Does not he who weighs hearts understand … and he will render to man according to his work?” In the Septuagint’s words, ἀποδίδωσιν ἑκάστῳ κατὰ τὰ ἔργα αὐτοῦ, as Rom 2:6."
+                },
+                {
+                  "ref": "Psa.116.12",
+                  "role": "defining",
+                  "note": "“What shall I render to Yahweh for all his benefits to me?”"
+                },
+                {
+                  "ref": "Gen.50.15",
+                  "note": "“Joseph will surely pay us back all the evil we did to him.”"
+                },
+                {
+                  "ref": "1Sa.25.39",
+                  "note": "“Yahweh has returned the evil of Nabal on his own head.”"
+                },
+                {
+                  "ref": "Psa.28.4",
+                  "note": "“Render to them their recompense.”"
+                },
+                {
+                  "ref": "Psa.94.23",
+                  "note": "“He will bring back on them their iniquity.”"
+                },
+                {
+                  "ref": "Hos.12.15",
+                  "note": "“His reproach his Lord will return to him.”"
+                },
+                {
+                  "ref": "Jol.4.4",
+                  "note": "“I will return your recompense on your own head swiftly.”"
+                },
+                {
+                  "ref": "Lam.3.64",
+                  "note": "“Render to them a recompense, Yahweh, according to the work of their hands.”"
+                }
+              ]
+            },
+            {
+              "id": "answer",
+              "gloss": "return a word, answer, reply",
+              "definition": "Bring back a word to the one who spoke or sent: answer, reply, report.",
+              "tags": [
+                "speech"
+              ],
+              "cognate_ids": [
+                "uga-tb",
+                "sem-twb",
+                "arc-tuv"
+              ],
+              "evidence": [
+                {
+                  "ref": "Num.22.8",
+                  "role": "defining",
+                  "note": "Balaam: “I will bring back word to you (וַהֲשִׁבֹתִי אֶתְכֶם דָּבָר) as Yahweh speaks to me.”"
+                },
+                {
+                  "ref": "1Ki.12.6",
+                  "role": "defining",
+                  "note": "“How do you counsel me to return a word to this people?”"
+                },
+                {
+                  "ref": "Pro.18.13",
+                  "role": "defining",
+                  "note": "“He who returns a word before he hears, it is folly and shame to him.”"
+                },
+                {
+                  "ref": "Gen.37.14",
+                  "note": "“See whether it is well with your brothers … and bring me back word.”"
+                },
+                {
+                  "ref": "Num.13.26",
+                  "note": "The spies “brought back word to them and to all the congregation”."
+                },
+                {
+                  "ref": "1Ki.12.16"
+                },
+                {
+                  "ref": "Job.13.22",
+                  "note": "“Let me speak, and you answer me.”"
+                },
+                {
+                  "ref": "Job.35.4",
+                  "note": "“I will answer you, and your friends with you.”"
+                },
+                {
+                  "ref": "Pro.22.21",
+                  "note": "“That you may return words of truth to those who send you.”"
+                },
+                {
+                  "ref": "Est.4.13"
+                }
+              ]
+            },
+            {
+              "id": "turn-back-avert",
+              "gloss": "turn back, avert, revoke; refuse",
+              "definition": "Turn something back from going on: anger averted, a stretched-out hand or a decree reversed, a hand drawn back, a request turned away (“turn back the face”).",
+              "evidence": [
+                {
+                  "ref": "Num.25.11",
+                  "role": "defining",
+                  "note": "“Phinehas … turned back my wrath from the sons of Israel, in that he was zealous with my zeal.”"
+                },
+                {
+                  "ref": "Pro.15.1",
+                  "role": "defining",
+                  "note": "“A soft answer turns back wrath, but a harsh word stirs up anger.”"
+                },
+                {
+                  "ref": "Psa.78.38",
+                  "note": "“Many times he turned back his anger.”"
+                },
+                {
+                  "ref": "Psa.106.23",
+                  "note": "Moses stood in the breach “to turn back his wrath from destroying them”."
+                },
+                {
+                  "ref": "Pro.29.8"
+                },
+                {
+                  "ref": "Isa.14.27",
+                  "role": "defining",
+                  "note": "“His hand is stretched out, and who will turn it back?”"
+                },
+                {
+                  "ref": "Isa.43.13",
+                  "note": "“I work, and who will turn it back?”"
+                },
+                {
+                  "ref": "Job.9.12",
+                  "note": "“If he takes away, who will turn him back?”"
+                },
+                {
+                  "ref": "Amo.1.3",
+                  "role": "defining",
+                  "note": "“For three transgressions of Damascus, and for four, I will not turn it back”: the sentence will not be revoked."
+                },
+                {
+                  "ref": "Est.8.8",
+                  "note": "A writing sealed with the king’s ring no one may “turn back”."
+                },
+                {
+                  "ref": "1Ki.2.20",
+                  "role": "defining",
+                  "note": "“Do not turn back my face … I will not turn back your face”: refuse a request."
+                },
+                {
+                  "ref": "Psa.132.10",
+                  "note": "“Do not turn back the face of your anointed.”"
+                },
+                {
+                  "ref": "Exo.4.7",
+                  "note": "“Put your hand back into your bosom.”"
+                },
+                {
+                  "ref": "Psa.74.11",
+                  "note": "“Why do you draw back your hand, your right hand?”"
+                },
+                {
+                  "ref": "Lam.2.8"
+                }
+              ]
+            },
+            {
+              "id": "bring-to-heart",
+              "gloss": "bring back to the heart, consider",
+              "definition": "With אֶל־לֵב or עַל־לֵב, bring a thing back to mind and weigh it.",
+              "evidence": [
+                {
+                  "ref": "Deu.4.39",
+                  "role": "defining",
+                  "note": "“Know today, וַהֲשֵׁבֹתָ אֶל־לְבָבֶךָ, and lay it to your heart, that Yahweh is God.”"
+                },
+                {
+                  "ref": "Deu.30.1",
+                  "note": "“And you call them to mind among all the nations.”"
+                },
+                {
+                  "ref": "1Ki.8.47",
+                  "note": "“If they lay it to heart in the land where they were taken captive, and turn.”"
+                },
+                {
+                  "ref": "Isa.46.8",
+                  "role": "defining",
+                  "note": "“Remember this … bring it back to heart, you transgressors.”"
+                },
+                {
+                  "ref": "Isa.44.19",
+                  "note": "The idol maker “does not bring it back to his heart”."
+                },
+                {
+                  "ref": "Lam.3.21",
+                  "note": "“This I bring back to my heart; therefore I have hope.”"
+                }
+              ]
+            },
+            {
+              "id": "restore-soul",
+              "gloss": "restore, refresh (the soul)",
+              "definition": "With נֶפֶשׁ, bring back life and strength to one who is faint: refresh, revive.",
+              "evidence": [
+                {
+                  "ref": "Rut.4.15",
+                  "role": "defining",
+                  "note": "The child “will be to you a restorer of life (מֵשִׁיב נֶפֶשׁ) and a nourisher of your old age”."
+                },
+                {
+                  "ref": "Lam.1.11",
+                  "role": "defining",
+                  "note": "“They gave their treasures for food לְהָשִׁיב נָפֶשׁ, to bring back life.”"
+                },
+                {
+                  "ref": "Psa.19.8",
+                  "role": "defining",
+                  "note": "“The law of Yahweh is whole, מְשִׁיבַת נָפֶשׁ, restoring the soul.”"
+                },
+                {
+                  "ref": "Lam.1.16",
+                  "note": "“The comforter who should restore my soul is far from me.”"
+                },
+                {
+                  "ref": "Pro.25.13",
+                  "note": "A faithful messenger “restores the soul of his masters”."
+                }
+              ]
+            },
+            {
+              "id": "restore-to-place",
+              "gloss": "restore (to an office, a former state); recover",
+              "definition": "Put a person or place back where it was before: an officer to his post, judges as at the first, a city or border recovered.",
+              "evidence": [
+                {
+                  "ref": "Gen.40.13",
+                  "role": "defining",
+                  "note": "“Pharaoh will lift up your head and restore you to your office.”"
+                },
+                {
+                  "ref": "Gen.40.21"
+                },
+                {
+                  "ref": "Isa.1.26",
+                  "role": "defining",
+                  "note": "“I will restore your judges as at the first, and your counsellors as at the beginning.”"
+                },
+                {
+                  "ref": "2Ki.14.25",
+                  "note": "Jeroboam “restored the border of Israel”."
+                },
+                {
+                  "ref": "2Ki.14.22",
+                  "note": "Azariah built Elath “and restored it to Judah”."
+                },
+                {
+                  "ref": "Dan.9.25",
+                  "role": "defining",
+                  "note": "“From the going out of the word לְהָשִׁיב וְלִבְנוֹת יְרוּשָׁלַ͏ִם, to restore and to build Jerusalem, to Messiah the prince.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be brought back, be returned",
+          "senses": [
+            {
+              "gloss": "be brought back, be given back",
+              "definition": "Passive of the hiphil: of silver returned, of men brought back, of what is restored.",
+              "evidence": [
+                {
+                  "ref": "Gen.42.28",
+                  "role": "defining",
+                  "note": "“My silver has been returned, and see, it is in my sack.”"
+                },
+                {
+                  "ref": "Gen.43.12",
+                  "note": "“The silver that was returned in the mouth of your sacks.”"
+                },
+                {
+                  "ref": "Exo.10.8",
+                  "note": "Moses and Aaron “were brought back to Pharaoh”."
+                },
+                {
+                  "ref": "Num.5.8",
+                  "role": "defining",
+                  "note": "If there is no kinsman, “the guilt returned is to Yahweh, to the priest”."
+                },
+                {
+                  "ref": "Jer.27.16",
+                  "note": "The false prophets: the vessels of Yahweh’s house “are being brought back from Babylon”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "bring back, restore; turn about; lead astray",
+          "senses": [
+            {
+              "id": "polel-bring-back",
+              "gloss": "bring back, restore",
+              "definition": "Bring back Israel to Yahweh and to its land; restore the soul.",
+              "tags": [
+                "restoration"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.49.5",
+                  "role": "defining",
+                  "note": "Yahweh formed his servant from the womb “לְשׁוֹבֵב יַעֲקֹב אֵלָיו, to bring Jacob back to him, and that Israel be gathered to him”."
+                },
+                {
+                  "ref": "Jer.50.19",
+                  "role": "defining",
+                  "note": "“I will bring Israel back to his pasture, and he will feed on Carmel and Bashan.”"
+                },
+                {
+                  "ref": "Ezk.39.27",
+                  "note": "“When I bring them back from the peoples and gather them … I will be sanctified in them.”"
+                },
+                {
+                  "ref": "Psa.23.3",
+                  "role": "defining",
+                  "note": "נַפְשִׁי יְשׁוֹבֵב, “he restores my soul; he leads me in paths of righteousness”."
+                },
+                {
+                  "ref": "Psa.60.3",
+                  "note": "“You have been angry; restore us.”"
+                },
+                {
+                  "ref": "Isa.58.12",
+                  "note": "“Repairer of the breach, מְשֹׁבֵב נְתִיבוֹת, restorer of paths to dwell in.”"
+                }
+              ]
+            },
+            {
+              "id": "polel-turn-about",
+              "gloss": "turn about (Gog)",
+              "definition": "Turn an invader around and lead him where Yahweh wills.",
+              "evidence": [
+                {
+                  "ref": "Ezk.38.4",
+                  "role": "defining",
+                  "note": "“I will turn you about, and put hooks in your jaws, and bring you out, and all your army.”"
+                },
+                {
+                  "ref": "Ezk.39.2",
+                  "role": "defining",
+                  "note": "“I will turn you about and lead you on, and bring you up from the recesses of the north, and bring you onto the mountains of Israel.”"
+                }
+              ]
+            },
+            {
+              "id": "polel-lead-astray",
+              "gloss": "turn aside, lead astray; turn away",
+              "definition": "Turn someone aside from the right way; intransitively, of a people turned away from Yahweh.",
+              "tags": [
+                "apostasy"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.47.10",
+                  "role": "defining",
+                  "note": "To Babylon: “Your wisdom and your knowledge, it has turned you aside, and you said in your heart, I am, and there is none besides me.”"
+                },
+                {
+                  "ref": "Jer.8.5",
+                  "role": "defining",
+                  "note": "“Why has this people Jerusalem turned away (שׁוֹבְבָה) in a perpetual turning away (מְשֻׁבָה)? … they refuse to return.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polal",
+          "gloss": "be brought back",
+          "senses": [
+            {
+              "gloss": "be brought back (of a land and people)",
+              "definition": "Of the land of Israel, restored, its people gathered back from the sword and the nations.",
+              "tags": [
+                "restoration"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.38.8",
+                  "role": "defining",
+                  "note": "“In the latter years you will come into a land מְשׁוֹבֶבֶת מֵחֶרֶב, brought back from the sword, gathered from many peoples, on the mountains of Israel, which had been a continual waste.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπιστρέφω",
+          "gloss": "turn, turn back, return",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שׁוּב → ἐπιστρέφω ×230 (lemma count, MACULA alignment); Isa.6.10, וָשָׁב → ἐπιστρέψωσιν; Lam.5.21, הֲשִׁיבֵנוּ → ἐπίστρεψον, וְנָשׁוּבָה → ἐπιστραφησόμεθα; Psa.23.3, יְשׁוֹבֵב → ἐπέστρεψεν"
+            },
+            {
+              "ref": "Act.28.27",
+              "role": "defining",
+              "note": "Paul quotes Isa 6:10: “lest they … understand with their heart, καὶ ἐπιστρέψωσιν, and I should heal them.”"
+            },
+            {
+              "ref": "Mat.13.15",
+              "note": "The same quotation of Isa 6:10."
+            },
+            {
+              "ref": "Luk.1.16",
+              "role": "defining",
+              "note": "John “will turn (ἐπιστρέψει) many of the sons of Israel to the Lord their God”."
+            },
+            {
+              "ref": "Luk.1.17",
+              "role": "defining",
+              "note": "“To turn the hearts of the fathers to the children”: the words of Mal 3:24."
+            },
+            {
+              "ref": "Act.3.19",
+              "role": "defining",
+              "note": "“Repent therefore and turn (ἐπιστρέψατε), that your sins may be blotted out.”"
+            },
+            {
+              "ref": "Act.26.20",
+              "note": "“That they should repent and turn to God, doing works worthy of repentance.”"
+            },
+            {
+              "ref": "1Th.1.9",
+              "note": "“You turned to God from idols, to serve a living and true God.”"
+            },
+            {
+              "ref": "Jas.5.19",
+              "to": "Jas.5.20",
+              "note": "He who turns a sinner back from the error of his way saves a soul from death."
+            },
+            {
+              "ref": "1Pe.2.25",
+              "note": "“You were going astray like sheep, but have now returned to the shepherd.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀποστρέφω",
+          "gloss": "turn away, turn back",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שׁוּב → ἀποστρέφω ×220 (lemma count); Isa.59.20, שָׁבֵי → ἀποστρέψει"
+            },
+            {
+              "ref": "Rom.11.26",
+              "role": "defining",
+              "note": "Paul quotes Isa 59:20 in the Septuagint’s words: the deliverer “will turn away ungodliness from Jacob”, where the Hebrew has “to those who turn from transgression in Jacob”."
+            },
+            {
+              "ref": "Act.3.26",
+              "note": "God sent his servant to bless you “in turning away each of you from your iniquities”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀποκαθίστημι",
+          "gloss": "restore",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שׁוּב → ἀποκαθίστημι ×18 (lemma count); Mal.3.24, וְהֵשִׁיב → ἀποκαταστήσει"
+            },
+            {
+              "ref": "Mat.17.11",
+              "role": "defining",
+              "note": "“Elijah indeed comes first and will restore all things”: Mal 3:24 in the Septuagint’s verb."
+            },
+            {
+              "ref": "Mrk.9.12"
+            },
+            {
+              "ref": "Act.1.6",
+              "role": "defining",
+              "note": "“Lord, will you at this time restore the kingdom to Israel?”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀποδίδωμι",
+          "gloss": "give back, render, repay",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שׁוּב → ἀποδίδωμι ×53 (lemma count); Pro.24.12, הֵשִׁיב → ἀποδίδωσιν"
+            },
+            {
+              "ref": "Rom.2.6",
+              "role": "defining",
+              "note": "God “will render to each according to his works”, in the Septuagint’s words for Pro 24:12."
+            },
+            {
+              "ref": "Mat.16.27",
+              "note": "“Then he will render to each according to his doing.”"
+            },
+            {
+              "ref": "2Ti.4.14"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀναστρέφω",
+          "gloss": "return",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שׁוּב → ἀναστρέφω ×60 (lemma count)"
+            },
+            {
+              "ref": "Act.15.16",
+              "note": "James: “After these things I will return (ἀναστρέψω) and rebuild the tabernacle of David.” The opening words are not in Amos 9:11; Jer 12:15 has “after I have plucked them up I will return (אָשׁוּב) and have compassion on them, and bring them back”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נִחַם",
+            "note": "“Relent”, beside Yahweh’s turning from his anger.",
+            "evidence": [
+              {
+                "ref": "Exo.32.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Jon.3.9"
+              },
+              {
+                "ref": "Jol.2.14"
+              },
+              {
+                "ref": "Psa.90.13"
+              }
+            ]
+          },
+          {
+            "lemma": "רָפָא",
+            "note": "“Heal”: Yahweh heals those who turn back, and their turning away.",
+            "evidence": [
+              {
+                "ref": "Isa.6.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.6.1"
+              },
+              {
+                "ref": "Jer.3.22"
+              },
+              {
+                "ref": "Hos.14.5"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַע בְּקוֹל",
+            "note": "“Listen to the voice” of Yahweh: what returning to him means in practice.",
+            "evidence": [
+              {
+                "ref": "Deu.30.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.30"
+              },
+              {
+                "ref": "Deu.30.10"
+              }
+            ]
+          },
+          {
+            "lemma": "קִבֵּץ",
+            "note": "“Gather”, beside bringing the exiles back.",
+            "evidence": [
+              {
+                "ref": "Deu.30.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.29.14"
+              },
+              {
+                "ref": "Ezk.39.27"
+              }
+            ]
+          },
+          {
+            "lemma": "מָרַד",
+            "note": "“Rebel”, beside turning back from following Yahweh.",
+            "evidence": [
+              {
+                "ref": "Jos.22.16",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "סוּר",
+            "note": "“Turn aside” from his statutes, against returning to him.",
+            "evidence": [
+              {
+                "ref": "Mal.3.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יָצָא",
+            "note": "“Go out”: the word that goes out of Yahweh’s mouth does not return empty.",
+            "evidence": [
+              {
+                "ref": "Isa.55.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.45.23"
+              }
+            ]
+          },
+          {
+            "lemma": "קוּם",
+            "note": "“Rise up”, Moses’ word when the ark set out, against “return” when it rested.",
+            "evidence": [
+              {
+                "ref": "Num.10.35",
+                "to": "Num.10.36",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שׁוּב שְׁבוּת",
+            "gloss": "turn back the captivity, restore the fortunes",
+            "evidence": [
+              {
+                "ref": "Deu.30.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.29.14"
+              },
+              {
+                "ref": "Psa.126.4"
+              },
+              {
+                "ref": "Job.42.10"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוּב עַד־יַהְוֶה",
+            "gloss": "return (all the way) to Yahweh",
+            "evidence": [
+              {
+                "ref": "Deu.30.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.30"
+              },
+              {
+                "ref": "Hos.14.2"
+              },
+              {
+                "ref": "Jol.2.12"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוּב מֵאַחֲרֵי יַהְוֶה",
+            "gloss": "turn back from following Yahweh",
+            "evidence": [
+              {
+                "ref": "1Sa.15.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.14.43"
+              },
+              {
+                "ref": "Jos.22.16"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוּב מֵחֲרוֹן אַף",
+            "gloss": "turn from burning anger",
+            "evidence": [
+              {
+                "ref": "Exo.32.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Jon.3.9"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוּבָה יַהְוֶה",
+            "gloss": "return, Yahweh",
+            "evidence": [
+              {
+                "ref": "Num.10.36",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.6.5"
+              },
+              {
+                "ref": "Psa.90.13"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵשִׁיב דָּבָר",
+            "gloss": "return a word, answer",
+            "evidence": [
+              {
+                "ref": "Num.22.8",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.12.6"
+              },
+              {
+                "ref": "Pro.18.13"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵשִׁיב נֶפֶשׁ",
+            "gloss": "restore the soul, bring back life",
+            "evidence": [
+              {
+                "ref": "Rut.4.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.1.11"
+              },
+              {
+                "ref": "Psa.19.8"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵשִׁיב אֶל־לֵב",
+            "gloss": "bring back to the heart, consider",
+            "evidence": [
+              {
+                "ref": "Deu.4.39",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.46.8"
+              },
+              {
+                "ref": "1Ki.8.47"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁאָר יָשׁוּב",
+            "gloss": "a remnant will return",
+            "evidence": [
+              {
+                "ref": "Isa.10.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.10.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְשׁוּבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "turning away, apostasy",
+      "bdb": [
+        "v.bn.al"
+      ],
+      "summary": "A turning back from Yahweh, the noun of the verb’s “turn back from following”. Jeremiah names northern Israel by it, “Turning-away Israel” (Jer 3:6–12), and calls her to turn back with the same root. No cognate has this sense apart from the verb; it rests on the verb’s use.",
+      "senses": [
+        {
+          "gloss": "turning away (from Yahweh), apostasy",
+          "definition": "Israel’s turning back from Yahweh after other gods; also of the simple turning from wisdom. Yahweh promises to heal it.",
+          "tags": [
+            "apostasy"
+          ],
+          "kin": [
+            "turn-away",
+            "polel-lead-astray"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.3.6",
+              "role": "defining",
+              "note": "“Have you seen what מְשֻׁבָה יִשְׂרָאֵל did? She went up on every high hill … and played the harlot there.”"
+            },
+            {
+              "ref": "Jer.3.8"
+            },
+            {
+              "ref": "Jer.3.11"
+            },
+            {
+              "ref": "Jer.3.12",
+              "role": "defining",
+              "note": "שׁוּבָה מְשֻׁבָה יִשְׂרָאֵל, “Return, turning-away Israel”: the call uses the same root as the sin."
+            },
+            {
+              "ref": "Jer.2.19",
+              "role": "defining",
+              "note": "“Your evil will correct you, and your turnings away will reprove you … that you have forsaken Yahweh your God.”"
+            },
+            {
+              "ref": "Jer.3.22",
+              "role": "defining",
+              "note": "“Return, turning-away sons; I will heal your turnings away.”"
+            },
+            {
+              "ref": "Jer.5.6",
+              "note": "“Their transgressions are many, their turnings away are mighty.” (The form is not keyed to this word in the database.)"
+            },
+            {
+              "ref": "Jer.8.5",
+              "note": "“A perpetual turning away … they refuse to return.”"
+            },
+            {
+              "ref": "Jer.14.7",
+              "note": "“Our turnings away are many; we have sinned against you.”"
+            },
+            {
+              "ref": "Hos.11.7",
+              "note": "“My people are bent on turning away from me.”"
+            },
+            {
+              "ref": "Hos.14.5",
+              "role": "defining",
+              "note": "“I will heal their turning away; I will love them freely.”"
+            },
+            {
+              "ref": "Pro.1.32",
+              "note": "“The turning away of the simple will kill them”: turning from wisdom’s call (Pro 1:23–31)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּשׁוּבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "return; answer",
+      "bdb": [
+        "v.bn.an"
+      ],
+      "summary": "A return: of a man to his home, of the year to its season; and a word returned, an answer. Its later sense “repentance” is not found in scripture.",
+      "senses": [
+        {
+          "gloss": "return (of a man; of the year)",
+          "definition": "A going back home; and “the return of the year”, the season coming round again, in spring when kings go out to war.",
+          "kin": [
+            "go-back"
+          ],
+          "cognate_ids": [
+            "ar-thaba",
+            "arc-tuv"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.7.17",
+              "role": "defining",
+              "note": "Samuel’s circuit: “and his return was to Ramah, for his house was there”."
+            },
+            {
+              "ref": "2Sa.11.1",
+              "role": "defining",
+              "note": "לִתְשׁוּבַת הַשָּׁנָה, “at the return of the year, at the time kings go out”."
+            },
+            {
+              "ref": "1Ki.20.22"
+            },
+            {
+              "ref": "1Ki.20.26"
+            },
+            {
+              "ref": "1Ch.20.1"
+            },
+            {
+              "ref": "2Ch.36.10"
+            }
+          ]
+        },
+        {
+          "gloss": "answer",
+          "definition": "Words returned in reply.",
+          "kin": [
+            "answer"
+          ],
+          "cognate_ids": [
+            "uga-tb",
+            "sem-twb",
+            "arc-tuv"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.21.34",
+              "role": "defining",
+              "note": "“How then do you comfort me with vanity, and in your answers there remains falsehood?”"
+            },
+            {
+              "ref": "Job.34.36",
+              "note": "“Because of his answers among wicked men.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שׁוֹבָב",
+      "pos": "adjective",
+      "gloss": "turning back, apostate",
+      "bdb": [
+        "v.bn.ad"
+      ],
+      "summary": "Turning back, of Israel’s sons who have left Yahweh, called to turn back to him. Like מְשׁוּבָה it has no cognate of its own sense and rests on the verb.",
+      "senses": [
+        {
+          "gloss": "turning back, apostate",
+          "definition": "Given to turning back from Yahweh; going on backward in one’s own way.",
+          "tags": [
+            "apostasy"
+          ],
+          "kin": [
+            "turn-away"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.3.14",
+              "role": "defining",
+              "note": "שׁוּבוּ בָנִים שׁוֹבָבִים, “Return, turning-back sons, for I am your husband.”"
+            },
+            {
+              "ref": "Jer.3.22",
+              "note": "The same call, “and I will heal your turnings away”."
+            },
+            {
+              "ref": "Isa.57.17",
+              "role": "defining",
+              "note": "“I struck him … and he went on שׁוֹבָב, turning back, in the way of his heart.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שׁוֹבֵב",
+      "pos": "adjective",
+      "gloss": "turning back, faithless",
+      "bdb": [
+        "v.bn.af"
+      ],
+      "summary": "The same as שׁוֹבָב: a “turning-back daughter”, of Israel and of Ammon. BDB’s key also counts the polel infinitive of Isa 49:5, which is the verb.",
+      "senses": [
+        {
+          "gloss": "turning back, faithless (daughter)",
+          "definition": "Of a people personified as a daughter who has turned from her loyalty; once as a noun, “one who turns back”.",
+          "tags": [
+            "apostasy"
+          ],
+          "kin": [
+            "turn-away"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.31.22",
+              "role": "defining",
+              "note": "“How long will you go here and there, הַבַּת הַשּׁוֹבֵבָה, turning-back daughter?”"
+            },
+            {
+              "ref": "Jer.49.4",
+              "note": "Of Ammon: “turning-back daughter, who trusts in her treasures”."
+            },
+            {
+              "ref": "Mic.2.4",
+              "note": "“To one who turns back (לְשׁוֹבֵב) he divides our fields”: the faithless captor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שׁוּבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "returning",
+      "bdb": [
+        "v.bn.ab"
+      ],
+      "summary": "Used once, beside rest: Judah would be saved by returning to Yahweh and resting, not by horses from Egypt. One use, so the sense rests on its verse and the verb.",
+      "senses": [
+        {
+          "gloss": "returning (to Yahweh)",
+          "definition": "Turning back to Yahweh, set beside rest, quietness and trust against seeking help from Egypt.",
+          "tags": [
+            "repentance"
+          ],
+          "kin": [
+            "turn-to-yahweh"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.30.15",
+              "role": "defining",
+              "note": "“בְּשׁוּבָה וָנַחַת, in returning and rest you will be saved; in quietness and trust will be your strength. But you were not willing.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁיבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "return, those who return",
+      "bdb": [
+        "v.bn.ac"
+      ],
+      "summary": "Used once, as object of the verb in Ps 126:1, where the same phrase elsewhere has שְׁבוּת “captivity” (Ps 126:4). One use; its sense rests on the parallel.",
+      "senses": [
+        {
+          "gloss": "return (of Zion)",
+          "definition": "The return of Zion’s exiles, which Yahweh brings about.",
+          "tags": [
+            "restoration"
+          ],
+          "kin": [
+            "restore-fortunes"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.126.1",
+              "role": "defining",
+              "note": "בְּשׁוּב יַהְוֶה אֶת־שִׁיבַת צִיּוֹן, “when Yahweh turned back the return of Zion, we were like those who dream”; Ps 126:4 has שְׁבִיתֵנוּ in the same phrase."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תּוּב",
+      "lang": "arc",
+      "root": "תוב",
+      "pos": "verb",
+      "gloss": "return; (haphel) return a word, answer; give back",
+      "bdb": [
+        "xw.ab.aa"
+      ],
+      "cognate_ids": [
+        "uga-tb",
+        "ar-thaba",
+        "sem-twb",
+        "arc-tuv"
+      ],
+      "summary": "Biblical Aramaic’s form of the root, with ת for Hebrew ש (older ṯ). Eight uses in Daniel and Ezra: understanding and majesty returning to Nebuchadnezzar, and in the haphel answers given and the temple vessels restored.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "return",
+          "senses": [
+            {
+              "gloss": "return, come back",
+              "definition": "Of Nebuchadnezzar’s understanding and royal majesty, coming back to him after his madness.",
+              "kin": [
+                "be-restored"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.4.31",
+                  "role": "defining",
+                  "note": "“I lifted my eyes to heaven, וּמַנְדְּעִי עֲלַי יְתוּב, and my understanding returned to me, and I blessed the Most High.”"
+                },
+                {
+                  "ref": "Dan.4.33",
+                  "role": "defining",
+                  "note": "“At that time my understanding returned to me, and for the glory of my kingdom my majesty and splendour returned to me.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "return (a word), answer; give back",
+          "senses": [
+            {
+              "gloss": "return a word, answer",
+              "definition": "Bring back a word in reply, as the Hebrew הֵשִׁיב דָּבָר.",
+              "kin": [
+                "answer"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.2.14",
+                  "role": "defining",
+                  "note": "“Daniel הֲתִיב עֵטָא וּטְעֵם, returned counsel and discretion, to Arioch.”"
+                },
+                {
+                  "ref": "Dan.3.16",
+                  "role": "defining",
+                  "note": "“We have no need to return you a word (לַהֲתָבוּתָךְ) about this.”"
+                },
+                {
+                  "ref": "Ezr.5.11",
+                  "note": "“Thus they returned us word, saying, We are the servants of the God of heaven and earth.”"
+                },
+                {
+                  "ref": "Ezr.5.5",
+                  "note": "Until a report went to Darius “and then they should return a letter about it”."
+                }
+              ]
+            },
+            {
+              "gloss": "give back, restore",
+              "definition": "Give back what was taken away.",
+              "kin": [
+                "give-back"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezr.6.5",
+                  "role": "defining",
+                  "note": "Cyrus’ decree: the gold and silver vessels Nebuchadnezzar took from the temple “shall be given back, and go to the temple in Jerusalem, each to its place”."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תָּב",
+      "lang": "syc",
+      "root": "תוב",
+      "pos": "verb",
+      "gloss": "repent, turn back; (aphel) answer",
+      "cognate_ids": [
+        "ar-thaba",
+        "arc-tuv",
+        "ar-taba"
+      ],
+      "summary": "The Peshitta’s ܬܳܒ (tāḇ): its word for repenting where the Greek has μετανοέω, and for turning back in the quotation of Isa 6:10. So the New Testament call to repent is in Aramaic this root, the Hebrew שׁוּב.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "repent, turn back",
+          "senses": [
+            {
+              "id": "syc-repent",
+              "gloss": "repent, turn back (to God)",
+              "definition": "Turn from sin back to God, shown in deeds; the Peshitta’s rendering of μετανοέω.",
+              "tags": [
+                "repentance"
+              ],
+              "kin": [
+                "turn-to-yahweh"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.3.2",
+                  "role": "defining",
+                  "note": "John: ܬܘܒܘ, “Repent, for the kingdom of heaven has come near.”"
+                },
+                {
+                  "ref": "Mat.4.17",
+                  "note": "Jesus begins to preach with the same word."
+                },
+                {
+                  "ref": "Mrk.1.15"
+                },
+                {
+                  "ref": "Mat.12.41",
+                  "role": "defining",
+                  "note": "“The men of Nineveh … repented at the preaching of Jonah”: what Jon 3:10 calls turning from their evil way (שָׁבוּ)."
+                },
+                {
+                  "ref": "Luk.11.32"
+                },
+                {
+                  "ref": "Luk.15.7",
+                  "note": "Joy in heaven over one sinner who repents."
+                },
+                {
+                  "ref": "Luk.17.4",
+                  "note": "“If he sins against you seven times in a day and seven times turns back to you, saying, I repent.”"
+                },
+                {
+                  "ref": "Act.2.38"
+                },
+                {
+                  "ref": "Act.3.19",
+                  "role": "defining",
+                  "note": "“Repent therefore and turn, that your sins may be blotted out.”"
+                },
+                {
+                  "ref": "Act.26.20",
+                  "note": "“That they should repent and turn to God, doing works worthy of repentance.”"
+                },
+                {
+                  "ref": "Act.28.27",
+                  "role": "defining",
+                  "note": "In the quotation of Isa 6:10, “and turn, and I heal them”: the Peshitta has this verb where the Hebrew has וָשָׁב."
+                },
+                {
+                  "ref": "Rev.2.5"
+                },
+                {
+                  "ref": "Rev.9.20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "answer",
+          "senses": [
+            {
+              "gloss": "answer",
+              "definition": "Return a word in reply, as the Hebrew hiphil.",
+              "kin": [
+                "answer"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mrk.12.28",
+                  "role": "defining",
+                  "note": "The scribe, seeing that Jesus had answered them well."
+                },
+                {
+                  "ref": "Luk.23.9",
+                  "note": "Before Herod “he answered him nothing”."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּיָבוּתָא",
+      "lang": "syc",
+      "root": "תוב",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "repentance",
+      "cognate_ids": [
+        "arc-tuv"
+      ],
+      "summary": "The Peshitta’s ܬܝܒܘܬܐ (tyāḇūṯā), “a turning back”, where the Greek has μετάνοια.",
+      "senses": [
+        {
+          "gloss": "repentance, turning back",
+          "definition": "The turning of the life back to God, shown in fruits that fit it.",
+          "tags": [
+            "repentance"
+          ],
+          "kin": [
+            "syc-repent",
+            "turn-to-yahweh"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.3.8",
+              "role": "defining",
+              "note": "“Bear fruits worthy of repentance.”"
+            },
+            {
+              "ref": "Mat.3.11"
+            },
+            {
+              "ref": "Mrk.1.4",
+              "note": "“Baptism of repentance for the forgiveness of sins.”"
+            },
+            {
+              "ref": "Luk.3.3"
+            },
+            {
+              "ref": "Luk.24.47",
+              "role": "defining",
+              "note": "“That repentance and forgiveness of sins should be preached in his name to all nations.”"
+            },
+            {
+              "ref": "Act.20.21",
+              "note": "“Repentance toward God and faith toward our Lord Jesus Christ.”"
+            },
+            {
+              "ref": "Act.26.20"
+            },
+            {
+              "ref": "Rom.2.4",
+              "note": "“The kindness of God leads you to repentance.”"
+            },
+            {
+              "ref": "2Ti.2.25"
+            },
+            {
+              "ref": "Heb.6.1"
+            },
+            {
+              "ref": "2Pe.3.9",
+              "note": "“Not willing that any should perish, but that all should come to repentance.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-tb",
+      "lang": "uga",
+      "form": "𐎘𐎁",
+      "translit": "ṯb",
+      "gloss": "come back, return; (Š) give back, return; ṯṯb rgm “return a word, answer”",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Ugaritic writes ṯ and š with different signs, and this verb has ṯ. Its causative ṯṯb rgm, “return a word”, is the Hebrew הֵשִׁיב דָּבָר letter for letter.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, /ṯ-w-b/",
+          "note": "“ṯb … ‘to come back’; Š: ṯṯb ‘to give back, return’ (cf. H. š-w-b, Aram. t-w-b, Arab. ṯāba, yaṯūbu); ṯṯb rgm 2.16:19 ‘to return a word, answer’ (cf. H. hēšîb dābār).”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000503 ṯwb [return] V, UGC004445 ṯb [return] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-thaba",
+      "lang": "ar",
+      "form": "ثَابَ",
+      "translit": "ṯāba",
+      "gloss": "return; return to obedience to God, repent; return to health; (IV) restore; ṯawāb recompense; maṯāba place of return",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Arabic ث (ṯ) stands behind the ש. Lane’s senses run with the Hebrew’s: a man returning after he had gone away; ثاب إلى الله, returning to obedience to God, repenting; a body returning to health, as the leper’s flesh “returned” (2Ki 5:14); water returning into a well. Form IV restores, and ثَوَاب is requital “for good and for evil”, as the hiphil pays back.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 361, art. ثوب, ثَابَ (n4795)",
+          "note": "“He, or it, returned … he (a man) returned, after he had gone away … ثاب إلى الله … He returned [from disobedience] to obedience to God; he repented … He returned to a state of health.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 362, art. ثوب, اثاب (n4798)",
+          "note": "“God restored him to fatness, after leanness; restored his body to a good state.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 363, art. ثوب, ثَوَابٌ (n4806); مَثَابَةٌ (n4814)",
+          "note": "ثَوَابٌ “A recompense, compensation, requital, or reward … for good and for evil”; مَثَابَةٌ “A place to which people return … time after time”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000503 ṯwb [return] V, ARB003470 ṯāba [returned]"
+        }
+      ]
+    },
+    {
+      "id": "sem-twb",
+      "lang": "sem",
+      "form": "𐩻𐩥𐩨",
+      "translit": "ṯwb",
+      "gloss": "(Sabaic) return; answer; (D) render, bestow, restore, repair; (h) render, offer, send back; ṯwb compensation, payment; mṯbt answer, compensation",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Old South Arabian keeps ṯ apart. Its senses match the Hebrew hiphil’s closely: send back, render (to a god), restore and repair, and the nouns “answer” and “compensation”.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 541–542, ṮWB",
+          "note": "“v … (1) RETURN (?) [Ar ṯāba id.] … (2) RESPOND, ANSWER (?) … D? (1) RETURN s.th. > RENDER, BESTOW … (2) RESTORE, REPAIR … h (1) RENDER to a deity, OFFER … (2) SEND BACK … (3) REPAIR … (4) DECREE … ṯwb COMPENSATION > REWARD, PAYMENT … mṯbt (1) ANSWER, or COMPENSATION.” Read from the OCR text; the scan’s ṯ is printed as t."
+        }
+      ]
+    },
+    {
+      "id": "arc-tuv",
+      "lang": "arc",
+      "form": "תּוּב",
+      "translit": "tūḇ",
+      "gloss": "go back, return, do again; regret; (af.) bring back, give back, recompense; answer, object; תְּיוּבְתָּא return, repentance",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Jewish Aramaic of the Targums and Talmud, “= h. שׁוּב”: Aramaic ת for older ṯ, as in Biblical Aramaic תּוּב. The afel “answer, reply” is the Hebrew הֵשִׁיב דָּבָר, and the noun תְּיוּבְתָּא renders תְּשׁוּבָה in the later sense “return to God, repentance”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תּוּב I",
+          "note": "“= h. שׁוּב, to go back, return, do again. Targ. Gen. XIV, 7 … [to go back on,] to bethink one’s self, regret. Targ. O. … Gen. VI, 6 … to lead back, turn; to give back, restore; to recompense. Targ. Jer. XXXII, 44. Targ. Ps. XIX, 8. Targ. Num. XXV, 11 … to answer, reply, refute.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּיוּבָא, תְּיוּבְתָּא",
+          "note": "“return. Targ. Job XXIV, 23 … Esp. = h. תְּשׁוּבָה return to God, repentance.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000503 ṯwb [return] V, ARM030983 TWB [return] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-taba",
+      "lang": "ar",
+      "form": "تَابَ",
+      "translit": "tāba",
+      "gloss": "repent, turn (to God); (of God) turn in forgiveness",
+      "relation": "possible",
+      "note": "Arabic has t here, not the ṯ that ثَابَ shows, so this is not the inherited word; its religious sense “repent, turn to God”, and of God “turn to forgiveness toward his servant who turns to him”, matches Aramaic tūḇ, tyuḇtā, and it may have been taken from Aramaic. Recorded for that sense, not as evidence of descent.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 321, art. توب, تَابَ (n4172); تَوَّابٌ",
+          "note": "تاب إلى الله “He returned [to obedience unto God]; he repented”; تَوَّاب of God, “One who returns [much or often] to forgiveness towards his servant who returns unto Him”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "repentance",
+      "statement": "Scripture’s word for repenting is a turning back: the wicked “forsakes his way … and returns to Yahweh” (Isa 55:7), “turns from all his sins … and keeps all my statutes” (Ezk 18:21), and returns to Yahweh to “listen to his voice … with all your heart and all your soul” (Deu 30:2). It is seen in deeds: “God saw their works, that they turned from their evil way” (Jon 3:10), and the man who turns restores the pledge and gives back what he robbed (Ezk 33:15). Yahweh takes no pleasure in the death of the wicked, but that he turn and live (Ezk 33:11). Yahweh himself turns in answer: “Return to me, and I will return to you” (Mal 3:7; Zec 1:3; Jon 3:9–10). Yet the turning is also his work: “Turn me back, and I will turn back” (Jer 31:18; Lam 5:21), and he sends prophets “to turn them back” (Neh 9:26; Mal 3:24). The Peshitta calls the New Testament’s repentance by this root, ܬܘܒܘ “repent” and ܬܝܒܘܬܐ “repentance” (Mat 3:2, 8; Act 3:19), and the Greek joins μετανοέω with ἐπιστρέφω: “repent and turn to God, doing works worthy of repentance” (Act 26:20). From the verses: repentance is not sorrow alone but a turning of the whole life back to God, away from one’s own way and toward obedience, which God both calls for and enables, and answers by turning to the one who turns.",
+      "evidence": [
+        {
+          "ref": "Isa.55.7"
+        },
+        {
+          "ref": "Ezk.18.21"
+        },
+        {
+          "ref": "Deu.30.2"
+        },
+        {
+          "ref": "Jon.3.10"
+        },
+        {
+          "ref": "Ezk.33.15"
+        },
+        {
+          "ref": "Ezk.33.11"
+        },
+        {
+          "ref": "Mal.3.7"
+        },
+        {
+          "ref": "Zec.1.3"
+        },
+        {
+          "ref": "Jon.3.9"
+        },
+        {
+          "ref": "Jer.31.18"
+        },
+        {
+          "ref": "Lam.5.21"
+        },
+        {
+          "ref": "Neh.9.26"
+        },
+        {
+          "ref": "Mal.3.24"
+        },
+        {
+          "ref": "Mat.3.2"
+        },
+        {
+          "ref": "Mat.3.8"
+        },
+        {
+          "ref": "Act.3.19"
+        },
+        {
+          "ref": "Act.26.20"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Adam is told, “until you return to the ground, for from it you were taken; for dust you are, and to dust you will return” (Gen 3:19). The Psalms and Job say the same of all: Yahweh takes away their breath (רוּחַ), they expire and return to their dust (Psa 104:29; Job 34:15); “his breath goes out, he returns to his ground; in that day his thoughts perish” (Psa 146:4). Ecclesiastes says man and beast have one breath and “all return to the dust” (Ecc 3:19–20), and that at death “the dust returns to the earth as it was, and the breath returns to God who gave it” (Ecc 12:7), the breath God breathed into Adam’s nostrils (Gen 2:7). The dead child “will not return to me” (2Sa 12:23). From the verses: death returns the whole man to the dust he was made from; what returns to God is the breath of life he gave, which man shares with the beasts, and the man’s thoughts perish. The hope set against this is that “those who sleep in the dust of the earth will awake” (Dan 12:2).",
+      "evidence": [
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Psa.104.29"
+        },
+        {
+          "ref": "Job.34.15"
+        },
+        {
+          "ref": "Psa.146.4"
+        },
+        {
+          "ref": "Ecc.3.19",
+          "to": "Ecc.3.20"
+        },
+        {
+          "ref": "Ecc.12.7"
+        },
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "2Sa.12.23"
+        },
+        {
+          "ref": "Dan.12.2"
+        }
+      ]
+    },
+    {
+      "topic": "restoration-of-israel",
+      "statement": "Moses foretells that when Israel, scattered among the nations, returns to Yahweh, he will turn back their captivity and gather them again from all the peoples (Deu 30:1–5). The prophets repeat it in the same words: “I will turn back your captivity and gather you from all the nations … and bring you back to the place from which I exiled you” (Jer 29:14; 30:3; 33:7; Amo 9:14–15), and the servant is formed “to bring Jacob back to him” (Isa 49:5). Ezekiel sees, “in the latter years”, a land “brought back from the sword, gathered from many peoples” on the mountains of Israel, into which Gog is turned about and brought from the recesses of the north (Ezk 38:4, 8; 39:2), and after it Yahweh says, “Now I will bring back the captivity of Jacob”, bringing them all back and pouring out his spirit on them (Ezk 39:25–29). The apostles asked, “Lord, will you at this time restore the kingdom to Israel?” (Act 1:6), and Peter called Israel to repent and turn, that God might send Jesus, whom heaven must receive “until the times of restoration of all things” spoken by the prophets (Act 3:19–21). From the verses: the restoration of Israel to its land and to its God is a promise still standing; a return to the land comes before the last invasion from the north, and the full return, with the kingdom restored, comes with Christ’s return.",
+      "evidence": [
+        {
+          "ref": "Deu.30.1",
+          "to": "Deu.30.5"
+        },
+        {
+          "ref": "Jer.29.14"
+        },
+        {
+          "ref": "Jer.30.3"
+        },
+        {
+          "ref": "Jer.33.7"
+        },
+        {
+          "ref": "Amo.9.14",
+          "to": "Amo.9.15"
+        },
+        {
+          "ref": "Isa.49.5"
+        },
+        {
+          "ref": "Ezk.38.4"
+        },
+        {
+          "ref": "Ezk.38.8"
+        },
+        {
+          "ref": "Ezk.39.2"
+        },
+        {
+          "ref": "Ezk.39.25",
+          "to": "Ezk.39.29"
+        },
+        {
+          "ref": "Act.1.6"
+        },
+        {
+          "ref": "Act.3.19",
+          "to": "Act.3.21"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (שׁוּבָה יַהְוֶה, Num 10:36). Num 10:36 is read as qal “return, Yahweh, to the myriads” with the preposition understood; the alternative “bring back (rest) the myriads” would need a transitive qal, which the root does have with שְׁבוּת. BDB keys left unclaimed, as names belong in names/ and none was assigned here: v.bn.ae Shobab, v.bn.ag Jashub (its key also counts about fifty qal tokens of יָשׁוּב, counted here under v.bn.aa), v.bn.ah the Jashubite, v.bn.ai Jashubi-lehem (its key counts tokens of לֶחֶם), v.bn.aj Jashobeam, v.bn.ak Jushab-hesed (its key counts tokens of חֶסֶד), v.bn.am Meshobab, v.bn.ap Shobach and v.bw.ab Shophach (Aramaean general; probably not this root at all). Zero-token cross-references left out: j.ba.aj, j.ds.al, j.dt.ae, j.dv.ac, m.dr.bj, m.ds.af, m.ds.ag, v.ct.ai, w.bq.bh. Ezk 38:8 מְשׁוֹבֶבֶת is entered as polal; the brief counts it under polel. Jer 5:6 מְשׁוּבוֹתֵיהֶם has no key in the database; Ezk 37:23 מוֹשְׁבֹתֵיהֶם is keyed to ישׁב (j.ds.ai) and left there, though some read it as מְשׁוּבֹתֵיהֶם “their turnings away”. Five tokens BDB files here are verbs of שׁבה “take captive” (Gen 34:29; 1Ki 8:48; Jer 41:14; 2Ch 6:38; 25:12), left to that root. Left out: שְׁבוּת/שְׁבִית “captivity, fortunes”, the object in שׁוּב שְׁבוּת, which BDB files under שׁבה; review whether it belongs here (Ps 126:1 has שִׁיבָה from this root in the same phrase). Syriac: SEDRA root 1957 ܬܒ, lexemes 3370 ܬܒ “return; repent; answer; vomit”, 3371 ܬܘܒ “again”, 3372 ܬܝܒܘܬܐ “repentance”, 3373 ܬܝܘܒܐ “vomit”; the Peshitta verses were found through the database’s Peshitta word list. Col 4:6 (ܠܡܬܒܘ, “how to answer”) not cited, stem uncertain. No Akkadian cognate: Akkadian “return” is târu, another root. Not consulted: DULAT and Ugaritic texts beyond Segert; Ge’ez (Dillmann, Leslau); CAL for Syriac and Jewish Aramaic. Biella read from OCR only; Segert page from the OCR’s running heads. Open questions: (1) whether שׁוֹבָב and שׁוֹבֵב should be one word; (2) whether Arabic tāba is better a loan from Aramaic than “possible”; (3) the restoration-of-israel conclusion places the land’s return before the northern invasion and the full return at Christ’s return, following the user’s reading of Ezk 38–39."
+}
