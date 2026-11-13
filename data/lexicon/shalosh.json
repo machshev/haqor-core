@@ -1,0 +1,2381 @@
+{
+  "id": "shalosh",
+  "root": "שלש",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "number",
+    "time",
+    "feasts",
+    "law",
+    "war",
+    "resurrection"
+  ],
+  "gloss": "three; thirty; third, a third part; (שָׁלִישׁ) officer, the third man",
+  "summary": "שלש is the number three: שָׁלֹשׁ “three”, its plural שְׁלֹשִׁים “thirty”, the ordinal שְׁלִישִׁי “third”, whose feminine is also “a third part”, the adverb שִׁלְשֹׁם “the day before yesterday” (literally the third day back), שִׁלֵּשִׁים “the third generation”, and a verb “do a third time, make three”. Scripture counts by it the three days of a journey (Num 10:33), the three feasts at which every male appears before Yahweh (Exo 23:14, 17), and the two or three witnesses on whose word a matter stands (Deu 19:15); “on the third day” Yahweh comes down on Sinai (Exo 19:11) and “raises us up” (Hos 6:2), the day on which Christ was raised “according to the scriptures” (1Co 15:4). The שָׁלִישׁ of the chariots and of the king’s side (Exo 14:7; 2Ki 7:2) is the third man, as Akkadian tašlīšu shows. Arabic ṯalāṯ, Ugaritic ṯlṯ, Sabaean ṯlṯ, Akkadian šalāš, Phoenician šlš and Aramaic תְּלָת all mean “three”; the older sound behind both shins is ṯ, so the Aramaic of Daniel and Ezra writes the root תלת.",
+  "words": [
+    {
+      "lemma": "שָׁלֹשׁ",
+      "pos": "numeral",
+      "gender": "mf",
+      "gloss": "three; (with עָשָׂר) thirteen; (with מֵאוֹת, אֲלָפִים) three hundred, three thousand",
+      "bdb": [
+        "v.du.ab",
+        "m.dw.ai"
+      ],
+      "cognate_ids": [
+        "ar-thalath",
+        "uga-tlt",
+        "akk-salas",
+        "phn-sls",
+        "sab-tlt",
+        "sab-s2lt",
+        "arc-telat",
+        "gez-salastu"
+      ],
+      "summary": "Feminine שָׁלֹשׁ (construct שְׁלֹשׁ), masculine שְׁלֹשָׁה (construct שְׁלֹשֶׁת): as with the other numbers from three to ten, the form with ־ָה goes with masculine nouns (שְׁלֹשָׁה בָנִים, Gen 6:10; שְׁלֹשֶׁת יָמִים, Num 10:33) and the shorter with feminine (שָׁלֹשׁ פְּעָמִים, Exo 23:17). With a suffix it is “the three of them” (שְׁלָשְׁתָּם, Num 12:4), and with מִן and כְּ “about three (months) on” (כְּמִשְׁלֹשׁ חֳדָשִׁים, Gen 38:24). About 430 uses through the whole Old Testament.",
+      "senses": [
+        {
+          "id": "three",
+          "gloss": "three",
+          "definition": "The number three, counted beside the numbers around it and as the sum of named things.",
+          "evidence": [
+            {
+              "ref": "Gen.6.10",
+              "role": "defining",
+              "note": "“Noah fathered three (שְׁלֹשָׁה) sons: Shem, Ham and Japheth”: three named."
+            },
+            {
+              "ref": "Gen.40.12",
+              "role": "defining",
+              "note": "“The three branches are three days (שְׁלֹשֶׁת יָמִים)”: three of one thing standing for three of another."
+            },
+            {
+              "ref": "Num.12.4",
+              "role": "defining",
+              "note": "Yahweh calls Moses, Aaron and Miriam: “Come out, the three of you (שְׁלָשְׁתְּכֶם)”, and “the three of them (שְׁלָשְׁתָּם) came out.”"
+            },
+            {
+              "ref": "Exo.21.11",
+              "role": "defining",
+              "note": "“If he does not do these three (שְׁלָשׁ אֵלֶּה) for her”: the three duties of 21:10."
+            },
+            {
+              "ref": "Gen.18.2",
+              "note": "Abraham looked, and three men stood by him."
+            },
+            {
+              "ref": "Job.2.11",
+              "note": "Job’s three friends, Eliphaz, Bildad and Zophar."
+            },
+            {
+              "ref": "1Sa.2.13",
+              "note": "The priest’s servant came with a fork of three teeth (שְׁלֹשׁ הַשִּׁנַּיִם)."
+            },
+            {
+              "ref": "2Sa.24.12",
+              "note": "“Three (שָׁלֹשׁ) I lay before you; choose one of them.”"
+            },
+            {
+              "ref": "Gen.6.15",
+              "note": "The ark three hundred (שְׁלֹשׁ מֵאוֹת) cubits long."
+            }
+          ],
+          "senses": [
+            {
+              "id": "three-days",
+              "gloss": "three days; a three days’ journey",
+              "definition": "A period of three days: a journey’s length, a time of waiting, darkness, fasting or hiding before something happens on the third day.",
+              "kin": [
+                "third-day"
+              ],
+              "evidence": [
+                {
+                  "ref": "Num.10.33",
+                  "role": "defining",
+                  "note": "“They set out from the mountain of Yahweh a way of three days (דֶּרֶךְ שְׁלֹשֶׁת יָמִים), and the ark of the covenant of Yahweh went before them a way of three days, to search out a resting place for them.”"
+                },
+                {
+                  "ref": "Exo.3.18",
+                  "role": "defining",
+                  "note": "“Let us go a way of three days into the wilderness and sacrifice to Yahweh our God.”"
+                },
+                {
+                  "ref": "Exo.15.22",
+                  "note": "From the Sea of Reeds “they went three days in the wilderness and found no water.”"
+                },
+                {
+                  "ref": "Num.33.8",
+                  "note": "A way of three days in the wilderness of Etham, and they camped at Marah."
+                },
+                {
+                  "ref": "Exo.10.22",
+                  "note": "Thick darkness in all the land of Egypt three days."
+                },
+                {
+                  "ref": "Jos.1.11",
+                  "note": "“Within three days you are crossing over this Jordan.”"
+                },
+                {
+                  "ref": "Jon.2.1",
+                  "role": "defining",
+                  "note": "“Jonah was in the belly of the fish three days and three nights (שְׁלֹשָׁה יָמִים וּשְׁלֹשָׁה לֵילוֹת).”"
+                },
+                {
+                  "ref": "Jon.3.3",
+                  "note": "Nineveh, a great city, “a walk of three days”."
+                },
+                {
+                  "ref": "Est.4.16",
+                  "note": "“Fast for me: do not eat or drink three days, night and day.”"
+                },
+                {
+                  "ref": "1Sa.30.12",
+                  "note": "He had eaten no bread nor drunk water three days and three nights."
+                },
+                {
+                  "ref": "Ezr.8.15",
+                  "note": "“We camped there three days.”"
+                }
+              ]
+            },
+            {
+              "id": "three-times",
+              "gloss": "three times (שָׁלֹשׁ פְּעָמִים, שָׁלֹשׁ רְגָלִים)",
+              "definition": "With פַּעַם or רֶגֶל, “three times”: the three times a year all Israel’s males appear before Yahweh, and things done three times over.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.14",
+                  "role": "defining",
+                  "note": "“Three times (שָׁלֹשׁ רְגָלִים) you shall keep a feast to me in the year.”"
+                },
+                {
+                  "ref": "Exo.23.17",
+                  "role": "defining",
+                  "note": "“Three times (שָׁלֹשׁ פְּעָמִים) in the year all your males shall appear before the Lord Yahweh.”"
+                },
+                {
+                  "ref": "Deu.16.16",
+                  "role": "defining",
+                  "note": "The three named: “at חַג הַמַּצּוֹת, at חַג הַשָּׁבֻעוֹת and at חַג הַסֻּכּוֹת”, the feasts of Lev 23."
+                },
+                {
+                  "ref": "Exo.34.23"
+                },
+                {
+                  "ref": "1Ki.9.25",
+                  "note": "Solomon offered burnt offerings three times a year on the altar he built."
+                },
+                {
+                  "ref": "2Ch.8.13",
+                  "note": "Again the three feasts named."
+                },
+                {
+                  "ref": "Num.22.28",
+                  "note": "The donkey: “What have I done to you, that you have struck me these three times (זֶה שָׁלֹשׁ רְגָלִים)?”"
+                },
+                {
+                  "ref": "Num.24.10",
+                  "note": "“You have blessed them these three times.”"
+                },
+                {
+                  "ref": "1Ki.17.21",
+                  "note": "Elijah stretched himself on the child three times and called to Yahweh."
+                },
+                {
+                  "ref": "2Ki.13.19",
+                  "note": "“You should have struck five or six times… now you will strike Aram three times”: three as too few."
+                }
+              ]
+            },
+            {
+              "id": "three-four",
+              "gloss": "three, and four: a full count and one more",
+              "definition": "In the graded saying “three … and four”, three is a full count of something and the fourth caps it.",
+              "evidence": [
+                {
+                  "ref": "Amo.1.3",
+                  "role": "defining",
+                  "note": "“For three transgressions of Damascus, and for four, I will not turn it back”, repeated for each nation (1:6–2:6)."
+                },
+                {
+                  "ref": "Pro.30.18",
+                  "role": "defining",
+                  "note": "“Three things are too wonderful for me, and four I do not know.”"
+                },
+                {
+                  "ref": "Pro.30.15"
+                },
+                {
+                  "ref": "Pro.30.21"
+                },
+                {
+                  "ref": "Pro.30.29"
+                }
+              ]
+            },
+            {
+              "id": "two-or-three",
+              "gloss": "two or three: a few",
+              "definition": "Beside two, a small number: the few witnesses that suffice, the few olives left on a stripped tree.",
+              "evidence": [
+                {
+                  "ref": "Deu.17.6",
+                  "role": "defining",
+                  "note": "“At the mouth of two witnesses or three witnesses (שְׁלֹשָׁה עֵדִים) shall he that is to die be put to death; at the mouth of one witness he shall not be put to death.”"
+                },
+                {
+                  "ref": "Deu.19.15",
+                  "role": "defining",
+                  "note": "“One witness shall not rise up against a man… at the mouth of two witnesses or at the mouth of three witnesses shall a matter be established.”"
+                },
+                {
+                  "ref": "Isa.17.6",
+                  "note": "Gleanings left “two, three berries at the top of the bough”."
+                }
+              ]
+            },
+            {
+              "id": "the-three",
+              "gloss": "the Three (David’s chief warriors)",
+              "definition": "With the article, הַשְּׁלֹשָׁה, the three chief of David’s mighty men, set above the Thirty.",
+              "kin": [
+                "the-thirty"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Sa.23.19",
+                  "role": "defining",
+                  "note": "Abishai “was more honoured than the three and became their captain, but he did not attain to the Three (עַד הַשְּׁלֹשָׁה)”."
+                },
+                {
+                  "ref": "2Sa.23.23",
+                  "role": "defining",
+                  "note": "Benaiah “was honoured above the Thirty, but he did not attain to the Three”."
+                },
+                {
+                  "ref": "2Sa.23.9",
+                  "note": "Eleazar, “among the three mighty men with David”."
+                },
+                {
+                  "ref": "2Sa.23.13",
+                  "note": "Three of the Thirty went down to David at Adullam (the written text has שלשים, read שְׁלֹשָׁה)."
+                },
+                {
+                  "ref": "1Ch.11.21"
+                }
+              ]
+            },
+            {
+              "id": "thirteen-hundreds",
+              "gloss": "thirteen; three hundred, three thousand, and in larger numbers",
+              "definition": "Joined to ten, thirteen; with hundreds and thousands, and in the large counts of censuses, lifespans and measures.",
+              "evidence": [
+                {
+                  "ref": "Gen.17.25",
+                  "role": "defining",
+                  "note": "“Ishmael his son was thirteen years old (בֶּן שְׁלֹשׁ עֶשְׂרֵה שָׁנָה) when he was circumcised.”"
+                },
+                {
+                  "ref": "Gen.14.4",
+                  "note": "“Twelve years they served Chedorlaomer, and in the thirteenth year they rebelled.”"
+                },
+                {
+                  "ref": "Gen.5.22",
+                  "note": "Enoch walked with God three hundred years."
+                },
+                {
+                  "ref": "Jdg.7.6",
+                  "note": "Those who lapped were three hundred men, Gideon’s band."
+                },
+                {
+                  "ref": "Num.1.46",
+                  "note": "603,550, the count of Israel."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τρεῖς",
+          "gloss": "three",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "τρεῖς renders שָׁלֹשׁ ×248 (Deu.19.15 שְׁלֹשָׁה → τριῶν; Jon.2.1 שְׁלֹשָׁה … שְׁלֹשָׁה → τρεῖς … τρεῖς)"
+            },
+            {
+              "ref": "Mat.12.40",
+              "note": "“As Jonah was three days and three nights in the belly of the great fish, so the Son of man shall be three days and three nights in the heart of the earth”: Jon 2:1."
+            },
+            {
+              "ref": "Mat.18.16",
+              "note": "“That at the mouth of two or three witnesses every word may be established”: Deu 19:15."
+            },
+            {
+              "ref": "2Co.13.1",
+              "note": "Deu 19:15 again, applied to Paul’s third visit."
+            },
+            {
+              "ref": "Heb.10.28",
+              "note": "“He that despised Moses’ law died without mercy under two or three witnesses”: Deu 17:6."
+            },
+            {
+              "ref": "Jhn.2.19",
+              "note": "“Destroy this temple, and in three days I will raise it up”, of the temple of his body (2:21)."
+            },
+            {
+              "ref": "Mat.27.63",
+              "note": "“After three days I rise again.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שְׁנַיִם",
+            "note": "Two: “two or three” witnesses, berries; a few.",
+            "evidence": [
+              {
+                "ref": "Deu.19.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.17.6"
+              },
+              {
+                "ref": "Isa.17.6"
+              }
+            ]
+          },
+          {
+            "lemma": "אַרְבָּעָה",
+            "note": "Four, set after three in the graded saying.",
+            "evidence": [
+              {
+                "ref": "Amo.1.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.30.18"
+              },
+              {
+                "ref": "Pro.30.29"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עֵד אֶחָד",
+            "note": "One witness, never enough, against two or three.",
+            "evidence": [
+              {
+                "ref": "Deu.17.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.19.15"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "דֶּרֶךְ שְׁלֹשֶׁת יָמִים",
+            "gloss": "a way of three days: a three days’ journey",
+            "evidence": [
+              {
+                "ref": "Num.10.33",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.3.18"
+              },
+              {
+                "ref": "Exo.5.3"
+              },
+              {
+                "ref": "Exo.8.23"
+              },
+              {
+                "ref": "Num.33.8"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁלֹשׁ פְּעָמִים בַּשָּׁנָה",
+            "gloss": "three times in the year (the three feasts)",
+            "evidence": [
+              {
+                "ref": "Exo.23.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.23"
+              },
+              {
+                "ref": "Deu.16.16"
+              },
+              {
+                "ref": "1Ki.9.25"
+              },
+              {
+                "ref": "2Ch.8.13"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁלֹשָׁה יָמִים וּשְׁלֹשָׁה לֵילוֹת",
+            "gloss": "three days and three nights",
+            "evidence": [
+              {
+                "ref": "Jon.2.1",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.30.12"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל שְׁלֹשָׁה … וְעַל אַרְבָּעָה",
+            "gloss": "for three … and for four",
+            "evidence": [
+              {
+                "ref": "Amo.1.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Amo.2.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁלֹשִׁים",
+      "pos": "numeral",
+      "gloss": "thirty; thirtieth; the Thirty (David’s mighty men)",
+      "bdb": [
+        "v.du.af"
+      ],
+      "cognate_ids": [
+        "ar-thalathun",
+        "uga-tltm",
+        "akk-salasa",
+        "phn-slsm",
+        "sab-tlt",
+        "arc-telat"
+      ],
+      "summary": "The plural of three, as the tens are formed (עֶשְׂרִים, אַרְבָּעִים, חֲמִשִּׁים): thirty. It also counts the thirtieth year, and with the article names the company of David’s mighty men.",
+      "senses": [
+        {
+          "id": "thirty",
+          "gloss": "thirty",
+          "definition": "The number thirty, three tens.",
+          "evidence": [
+            {
+              "ref": "Gen.18.30",
+              "role": "defining",
+              "note": "“Suppose thirty are found there?”, counted down from fifty by fives and tens (18:24–32)."
+            },
+            {
+              "ref": "Gen.6.15",
+              "note": "The ark three hundred cubits long, fifty wide, thirty high."
+            },
+            {
+              "ref": "Lev.12.4",
+              "role": "defining",
+              "note": "“Thirty days and three days (שְׁלֹשִׁים יוֹם וּשְׁלֹשֶׁת יָמִים)”: thirty-three, the tens before the units."
+            },
+            {
+              "ref": "Num.20.29",
+              "role": "defining",
+              "note": "“All the house of Israel wept for Aaron thirty days.”"
+            },
+            {
+              "ref": "Deu.34.8",
+              "note": "Israel wept for Moses thirty days, and the days of mourning were ended."
+            },
+            {
+              "ref": "Num.4.3",
+              "role": "defining",
+              "note": "The Levites who carry the tent serve “from thirty years old and upward to fifty years old”."
+            },
+            {
+              "ref": "Gen.41.46",
+              "note": "“Joseph was thirty years old when he stood before Pharaoh.”"
+            },
+            {
+              "ref": "2Sa.5.4",
+              "note": "“David was thirty years old when he began to reign.”"
+            },
+            {
+              "ref": "Exo.12.40",
+              "note": "The dwelling of Israel in Egypt, four hundred and thirty years."
+            },
+            {
+              "ref": "Jdg.14.12",
+              "note": "Samson’s wager: thirty linen garments and thirty changes of clothes."
+            }
+          ],
+          "senses": [
+            {
+              "id": "thirty-silver",
+              "gloss": "thirty (shekels of) silver: the price of a slave",
+              "definition": "Thirty shekels of silver, the Law’s price for a slave gored by an ox, and the wage weighed out for Yahweh’s shepherd.",
+              "evidence": [
+                {
+                  "ref": "Exo.21.32",
+                  "role": "defining",
+                  "note": "“If the ox gores a male or female slave, he shall give to their master thirty shekels of silver (כֶּסֶף שְׁלֹשִׁים שְׁקָלִים).”"
+                },
+                {
+                  "ref": "Zec.11.12",
+                  "role": "defining",
+                  "note": "“They weighed for my wages thirty pieces of silver (שְׁלֹשִׁים כָּסֶף).”"
+                },
+                {
+                  "ref": "Zec.11.13",
+                  "note": "“Cast it to the potter, the goodly price at which I was valued by them”: the thirty thrown into the house of Yahweh to the potter."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thirtieth",
+          "gloss": "thirtieth (year)",
+          "definition": "In a date, “in thirty year” is the thirtieth year; with units, the thirty-first and onward of a king’s reign.",
+          "evidence": [
+            {
+              "ref": "Ezk.1.1",
+              "role": "defining",
+              "note": "“In the thirtieth year (בִּשְׁלֹשִׁים שָׁנָה), in the fourth month, on the fifth of the month.”"
+            },
+            {
+              "ref": "2Ki.25.27",
+              "note": "“In the thirty-seventh year of the exile of Jehoiachin.”"
+            },
+            {
+              "ref": "2Ki.15.13",
+              "note": "“In the thirty-ninth year of Uzziah.”"
+            }
+          ]
+        },
+        {
+          "id": "the-thirty",
+          "gloss": "the Thirty (David’s mighty men)",
+          "definition": "With the article, הַשְּׁלֹשִׁים, the company of David’s mighty men below the Three.",
+          "kin": [
+            "the-three"
+          ],
+          "evidence": [
+            {
+              "ref": "2Sa.23.23",
+              "role": "defining",
+              "note": "“He was honoured above the Thirty, but he did not attain to the Three.”"
+            },
+            {
+              "ref": "2Sa.23.24",
+              "role": "defining",
+              "note": "“Asahel the brother of Joab was among the Thirty”, the list that follows."
+            },
+            {
+              "ref": "2Sa.23.13",
+              "note": "“Three of the Thirty, the chief”."
+            },
+            {
+              "ref": "1Ch.11.11",
+              "note": "Jashobeam, head of the Thirty (written השלושים, read הַשָּׁלִישִׁים)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τριάκοντα",
+          "gloss": "thirty",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.21.32 and Zec.11.13 שְׁלֹשִׁים → τριάκοντα; τριάκοντα renders the plural ×130"
+            },
+            {
+              "ref": "Mat.26.15",
+              "note": "They weighed out to Judas thirty pieces of silver."
+            },
+            {
+              "ref": "Mat.27.9",
+              "note": "“They took the thirty pieces of silver, the price of him that was valued”: Zec 11:12–13."
+            },
+            {
+              "ref": "Luk.3.23",
+              "note": "Jesus was about thirty years old when he began, the age of Num 4:3, of Joseph and of David."
+            },
+            {
+              "ref": "Gal.3.17",
+              "note": "The law came four hundred and thirty years after the promise: Exo 12:40."
+            },
+            {
+              "ref": "Jhn.5.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁלִישִׁי",
+      "pos": "adjective",
+      "gloss": "third; (fem. שְׁלִישִׁית) a third part; a third time",
+      "bdb": [
+        "v.du.ad"
+      ],
+      "cognate_ids": [
+        "ar-thalith",
+        "uga-tlt-third",
+        "akk-salsu",
+        "phn-slsy",
+        "sab-tlt",
+        "arc-telitaah",
+        "gez-salastu"
+      ],
+      "summary": "The ordinal, fem. שְׁלִישִׁית. The feminine also stands alone for “a third part” and “a third time”; the plural שְׁלִשִׁים for the third storey of a building (Gen 6:16; 1Ki 6:8). In עֶגְלַת שְׁלִשִׁיָּה (Isa 15:5; Jer 48:34) it is part of a Moabite place-name.",
+      "senses": [
+        {
+          "id": "third",
+          "gloss": "third (in order)",
+          "definition": "Third in a series: of sons, rivers, months, years, ranks, storeys, faces.",
+          "evidence": [
+            {
+              "ref": "1Sa.17.13",
+              "role": "defining",
+              "note": "“Eliab the firstborn, and his second Abinadab, and the third (וְהַשְּׁלִשִׁי) Shammah.”"
+            },
+            {
+              "ref": "Gen.2.14",
+              "role": "defining",
+              "note": "“The name of the third river is Hiddekel… and the fourth river is Euphrates.”"
+            },
+            {
+              "ref": "Gen.6.16",
+              "role": "defining",
+              "note": "“With lower, second and third (וּשְׁלִשִׁים) decks you shall make it.”"
+            },
+            {
+              "ref": "Num.2.24",
+              "note": "The camp of Ephraim “shall set out third (וּשְׁלִשִׁים)”, the order kept in Num 10:22."
+            },
+            {
+              "ref": "Exo.19.1",
+              "note": "“In the third month after the children of Israel went out of Egypt” they came to Sinai."
+            },
+            {
+              "ref": "Deu.26.12",
+              "note": "“The third year, the year of tithing”, as Deu 14:28."
+            },
+            {
+              "ref": "Isa.37.30",
+              "note": "“In the third year sow and reap.”"
+            },
+            {
+              "ref": "1Ki.18.1",
+              "note": "“The word of Yahweh came to Elijah in the third year”, of the drought."
+            },
+            {
+              "ref": "1Ki.6.6",
+              "note": "The lowest storey five cubits wide, the middle six, the third seven."
+            },
+            {
+              "ref": "Deu.23.9",
+              "note": "“Sons born to them in the third generation (דּוֹר שְׁלִישִׁי) may enter the assembly of Yahweh.”"
+            },
+            {
+              "ref": "Ezk.10.14",
+              "note": "The third face of the cherub was the face of a lion."
+            },
+            {
+              "ref": "Isa.19.24",
+              "note": "“In that day Israel shall be the third (שְׁלִישִׁיָּה) with Egypt and with Assyria, a blessing in the midst of the earth.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "third-day",
+              "gloss": "the third day (הַיּוֹם הַשְּׁלִישִׁי)",
+              "definition": "The third day of a count, on which what was waited for comes: Yahweh’s descent on Sinai, the sight of the place of sacrifice, the cleansing of the unclean, healing, raising up.",
+              "kin": [
+                "three-days"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.1.13",
+                  "role": "defining",
+                  "note": "“There was evening and there was morning, a third day (יוֹם שְׁלִישִׁי).”"
+                },
+                {
+                  "ref": "Exo.19.11",
+                  "role": "defining",
+                  "note": "“Be ready for the third day, for on the third day Yahweh will come down in the sight of all the people on Mount Sinai.”"
+                },
+                {
+                  "ref": "Exo.19.16",
+                  "note": "“On the third day, in the morning, there were thunders and lightnings and a thick cloud on the mountain.”"
+                },
+                {
+                  "ref": "Gen.22.4",
+                  "role": "defining",
+                  "note": "“On the third day Abraham lifted up his eyes and saw the place afar off.”"
+                },
+                {
+                  "ref": "Gen.42.18",
+                  "note": "Joseph’s brothers, kept three days (42:17), are released on the third day."
+                },
+                {
+                  "ref": "Num.19.12",
+                  "role": "defining",
+                  "note": "The one unclean by a dead body “shall purify himself with it on the third day and on the seventh day, and he shall be clean.”"
+                },
+                {
+                  "ref": "Num.31.19",
+                  "note": "Those who touched the slain purify themselves on the third day and the seventh."
+                },
+                {
+                  "ref": "Lev.7.17",
+                  "note": "What is left of the peace offering on the third day is burned."
+                },
+                {
+                  "ref": "2Ki.20.5",
+                  "role": "defining",
+                  "note": "To Hezekiah, sick to death (20:1): “I will heal you; on the third day you shall go up to the house of Yahweh.”"
+                },
+                {
+                  "ref": "Hos.6.2",
+                  "role": "defining",
+                  "note": "“After two days he will revive us; on the third day (בַּיּוֹם הַשְּׁלִישִׁי) he will raise us up, and we shall live before him.”"
+                },
+                {
+                  "ref": "Est.5.1",
+                  "note": "After the three days’ fast (4:16), on the third day Esther went in to the king."
+                },
+                {
+                  "ref": "Jos.9.17",
+                  "note": "Israel came to the Gibeonites’ cities on the third day."
+                }
+              ]
+            },
+            {
+              "id": "third-part",
+              "gloss": "a third part (fem. שְׁלִישִׁית)",
+              "definition": "One of three equal parts: of a measure, of an army or guard, of a people under judgment.",
+              "evidence": [
+                {
+                  "ref": "Num.15.6",
+                  "role": "defining",
+                  "note": "With a ram, flour mixed “with a third of the hin (שְׁלִשִׁית הַהִין) of oil”, set beside the half and quarter hin of 15:4, 10."
+                },
+                {
+                  "ref": "2Sa.18.2",
+                  "role": "defining",
+                  "note": "“David sent out the people, a third under Joab, a third under Abishai, and a third under Ittai.”"
+                },
+                {
+                  "ref": "Ezk.5.2",
+                  "role": "defining",
+                  "note": "The hair divided in three: “a third you shall burn… a third you shall strike with the sword… a third you shall scatter to the wind.”"
+                },
+                {
+                  "ref": "Ezk.5.12",
+                  "note": "The three thirds explained: plague and famine, sword, scattering."
+                },
+                {
+                  "ref": "Zec.13.8",
+                  "note": "“Two parts in it shall be cut off and die, but the third shall be left in it.”"
+                },
+                {
+                  "ref": "Zec.13.9",
+                  "note": "“I will bring the third through the fire and refine them as silver is refined.”"
+                },
+                {
+                  "ref": "2Ki.11.5",
+                  "note": "A third of the guard that came in on the sabbath."
+                },
+                {
+                  "ref": "Num.28.14",
+                  "note": "A third of a hin of wine for a ram."
+                },
+                {
+                  "ref": "Neh.10.33",
+                  "note": "“A third of a shekel yearly for the service of the house of our God.”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-thulth",
+                "phn-slst",
+                "arc-tilta"
+              ]
+            },
+            {
+              "id": "third-time",
+              "gloss": "a third time",
+              "definition": "The feminine as an adverb: for the third time.",
+              "kin": [
+                "do-a-third-time"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.3.8",
+                  "role": "defining",
+                  "note": "“Yahweh called Samuel again the third time (בַּשְּׁלִשִׁית).”"
+                },
+                {
+                  "ref": "Ezk.21.19",
+                  "note": "“Let the sword be doubled the third time (שְׁלִישִׁתָה).”"
+                },
+                {
+                  "ref": "1Sa.19.21",
+                  "note": "Saul sent messengers a third time."
+                },
+                {
+                  "ref": "1Sa.20.5",
+                  "note": "“I will hide in the field until the third evening.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τρίτος",
+          "gloss": "third",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hos.6.2 בַּיּוֹם הַשְּׁלִישִׁי → τῇ ἡμέρᾳ τῇ τρίτῃ; τρίτος renders שְׁלִישִׁי ×58"
+            },
+            {
+              "ref": "1Co.15.4",
+              "note": "“He was raised on the third day according to the scriptures.”"
+            },
+            {
+              "ref": "Mat.16.21",
+              "note": "He must be killed and be raised again the third day."
+            },
+            {
+              "ref": "Luk.24.46",
+              "note": "“Thus it is written, and thus it behoved Christ to suffer, and to rise from the dead the third day.”"
+            },
+            {
+              "ref": "2Co.12.2",
+              "note": "Caught up to the third heaven."
+            },
+            {
+              "ref": "Rev.8.7",
+              "note": "“The third part of trees was burnt up”: a third part, as Ezk 5:2, 12."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שְׁבִיעִי",
+            "note": "The seventh day, paired with the third in the cleansing from the dead.",
+            "evidence": [
+              {
+                "ref": "Num.19.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.19.19"
+              },
+              {
+                "ref": "Num.31.19"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בַּיּוֹם הַשְּׁלִישִׁי",
+            "gloss": "on the third day",
+            "evidence": [
+              {
+                "ref": "Exo.19.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.22.4"
+              },
+              {
+                "ref": "Hos.6.2"
+              },
+              {
+                "ref": "2Ki.20.5"
+              },
+              {
+                "ref": "Num.19.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שִׁלְשֹׁם",
+      "pos": "adverb",
+      "gloss": "the day before yesterday; formerly",
+      "bdb": [
+        "v.du.ae"
+      ],
+      "cognate_ids": [
+        "akk-salsumi"
+      ],
+      "summary": "Also written שִׁלְשׁוֹם. Always after תְּמוֹל “yesterday” (תְּמוֹל שִׁלְשֹׁם, “yesterday, the third day”), counting the day before yesterday as the third day back, so together “hitherto, before now”. Akkadian šalšūmi “the day before yesterday” is the same formation.",
+      "senses": [
+        {
+          "id": "day-before-yesterday",
+          "gloss": "the day before yesterday; (with תְּמוֹל) before now, formerly",
+          "definition": "The third day back; with “yesterday”, the time before now, what used to be.",
+          "evidence": [
+            {
+              "ref": "Exo.5.7",
+              "role": "defining",
+              "note": "“You shall no more give the people straw to make brick as yesterday and the day before (כִּתְמוֹל שִׁלְשֹׁם).”"
+            },
+            {
+              "ref": "Gen.31.2",
+              "role": "defining",
+              "note": "Laban’s face “was not toward him as before (כִּתְמוֹל שִׁלְשׁוֹם)”."
+            },
+            {
+              "ref": "Exo.21.29",
+              "role": "defining",
+              "note": "An ox “that was wont to gore in time past (מִתְּמֹל שִׁלְשֹׁם)”, its owner warned."
+            },
+            {
+              "ref": "Deu.19.4",
+              "role": "defining",
+              "note": "The manslayer who killed unknowingly and “did not hate him in time past”: his conduct before the deed."
+            },
+            {
+              "ref": "Exo.4.10",
+              "note": "“I am not a man of words, neither yesterday nor the day before (מִשִּׁלְשֹׁם), nor since you spoke.”"
+            },
+            {
+              "ref": "Jos.3.4",
+              "note": "“You have not passed this way yesterday or the day before.”"
+            },
+            {
+              "ref": "Jos.20.5"
+            },
+            {
+              "ref": "1Sa.4.7",
+              "note": "“Such a thing has not been yesterday or the day before.”"
+            },
+            {
+              "ref": "1Sa.10.11",
+              "note": "“All who knew him before.”"
+            },
+            {
+              "ref": "2Sa.5.2",
+              "note": "“In time past, when Saul was king over us, you led Israel out and in.”"
+            },
+            {
+              "ref": "Rut.2.11",
+              "note": "“A people you did not know before.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תְּמוֹל",
+            "note": "Yesterday: the pair is fixed.",
+            "evidence": [
+              {
+                "ref": "Exo.5.8",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.3.17"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כִּתְמוֹל שִׁלְשֹׁם",
+            "gloss": "as yesterday and the day before: as before",
+            "evidence": [
+              {
+                "ref": "Gen.31.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.31.5"
+              },
+              {
+                "ref": "Exo.5.7"
+              },
+              {
+                "ref": "2Ki.13.5"
+              }
+            ]
+          },
+          {
+            "phrase": "מִתְּמוֹל שִׁלְשֹׁם",
+            "gloss": "from yesterday and the day before: in time past",
+            "evidence": [
+              {
+                "ref": "Exo.21.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.19.4"
+              },
+              {
+                "ref": "Deu.19.6"
+              },
+              {
+                "ref": "Jos.20.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שָׁלִישׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "officer, captain; (properly) the third man of a chariot",
+      "bdb": [
+        "v.du.ai"
+      ],
+      "cognate_ids": [
+        "akk-taslisu",
+        "phn-slsy"
+      ],
+      "summary": "A rank in the chariotry and at the king’s side. Pharaoh’s chariots had שָׁלִשִׁים “over all of them” (Exo 14:7), and Akkadian tašlīšu, of the same root, is the third man of a chariot crew beside the driver and the fighter; Phoenician rb šlšy is the “third general”. Israel’s king leaned on his שָׁלִישׁ (2Ki 7:2), and Pekah rose from שָׁלִישׁ to king (2Ki 15:25).",
+      "senses": [
+        {
+          "id": "officer",
+          "gloss": "officer, captain, adjutant",
+          "definition": "An officer of the chariots and of the king’s close guard, ranked with commanders and charioteers; the one on whose arm the king leaned.",
+          "evidence": [
+            {
+              "ref": "Exo.14.7",
+              "role": "defining",
+              "note": "Pharaoh “took six hundred chosen chariots and all the chariots of Egypt, and שָׁלִשִׁם over all of them”: an officer of each chariot."
+            },
+            {
+              "ref": "Exo.15.4",
+              "role": "defining",
+              "note": "“Pharaoh’s chariots and his army he cast into the sea; his chosen שָׁלִשָׁיו are drowned in the Sea of Reeds.”"
+            },
+            {
+              "ref": "1Ki.9.22",
+              "role": "defining",
+              "note": "Israel’s men were “men of war, his servants, his commanders, his שָׁלִשָׁיו, and commanders of his chariots and his horsemen”."
+            },
+            {
+              "ref": "2Ki.7.2",
+              "role": "defining",
+              "note": "“The שָׁלִישׁ on whose hand the king leaned answered the man of God.”"
+            },
+            {
+              "ref": "2Ki.7.17",
+              "note": "The same officer, set over the gate, trampled to death as Elisha said."
+            },
+            {
+              "ref": "2Ki.7.19"
+            },
+            {
+              "ref": "2Ki.10.25",
+              "note": "Jehu’s runners and שָׁלִשִׁים struck the worshippers of Baal."
+            },
+            {
+              "ref": "2Ki.15.25",
+              "note": "“Pekah son of Remaliah, his שָׁלִישׁ, conspired against him… and reigned in his place.”"
+            },
+            {
+              "ref": "Ezk.23.15",
+              "note": "The Babylonians portrayed on the wall, “all of them looking like officers”."
+            },
+            {
+              "ref": "Ezk.23.23",
+              "note": "“Governors and rulers, officers and men of renown, all riding on horses.”"
+            },
+            {
+              "ref": "2Ch.8.9",
+              "note": "“Chiefs of his officers” (the parallel of 1Ki 9:22)."
+            },
+            {
+              "ref": "2Sa.23.8",
+              "note": "“Chief of the שָּׁלִשִׁי”: of David’s captains, or (as the parallel 1Ch 11:11 and 2Sa 23:18 read) of the Three."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁלִשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a measure, perhaps a third (of an ephah?); in full measure",
+      "bdb": [
+        "v.du.ag"
+      ],
+      "cognate_ids": [
+        "ar-thulth",
+        "arc-tilta"
+      ],
+      "summary": "A measure, twice. The name suggests a third part of some larger measure, as Arabic ṯulṯ and the Targum’s תִּלְתָּא at Psa 80:6 take it, but which measure is not shown. The corpus files the same sixteen spelled tokens under this word, the officer and the instrument alike; only Isa 40:12 and Psa 80:6 are this word.",
+      "senses": [
+        {
+          "id": "third-measure",
+          "gloss": "a (third-)measure; in large measure",
+          "definition": "A vessel or measure of quantity: Yahweh holds the dust of the earth in it; tears are given to drink by it.",
+          "kin": [
+            "third-part"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.40.12",
+              "role": "defining",
+              "note": "“Who has measured the waters in the hollow of his hand, and marked off the heavens with a span, and held the dust of the earth in a measure (בַּשָּׁלִשׁ)?”: beside the hollow hand, span, scales and balance."
+            },
+            {
+              "ref": "Psa.80.6",
+              "role": "defining",
+              "note": "“You have fed them with the bread of tears and given them tears to drink in full measure (שָׁלִישׁ).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁלִישׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a musical instrument (of three parts?)",
+      "bdb": [
+        "v.du.ah"
+      ],
+      "summary": "Once, among the women’s instruments at David’s return. The kind of instrument is not shown, nor how it takes its name from three; no cognate names an instrument from the root, so its tie to the root rests on its spelling only.",
+      "senses": [
+        {
+          "id": "instrument",
+          "gloss": "a musical instrument",
+          "definition": "An instrument played by the women dancing, with timbrels.",
+          "evidence": [
+            {
+              "ref": "1Sa.18.6",
+              "role": "defining",
+              "note": "“The women came out… singing and dancing to meet King Saul, with timbrels, with joy, and with שָׁלִשִׁים.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁלֵּשׁ",
+      "pos": "verb",
+      "gloss": "do a third time; divide in three; (pual) be three years old, threefold",
+      "bdb": [
+        "v.du.ac"
+      ],
+      "summary": "A verb made from the number, nine times: in the piel, to do something the third time, to wait for the third day, to divide into three; in the pual participle, three years old and threefold.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "do a third time; divide into three; wait three days",
+          "cognate_ids": [
+            "ar-thallatha",
+            "akk-salasu-v",
+            "uga-tltid"
+          ],
+          "senses": [
+            {
+              "id": "do-a-third-time",
+              "gloss": "do a third time",
+              "definition": "To do again a third time what was done twice.",
+              "kin": [
+                "third-time"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Ki.18.34",
+                  "role": "defining",
+                  "note": "“Do it a second time (שְׁנוּ)”, and they did it a second time; “do it a third time (שַׁלֵּשׁוּ)”, and they did it a third time (וַיְשַׁלֵּשׁוּ)."
+                }
+              ]
+            },
+            {
+              "id": "divide-in-three",
+              "gloss": "divide into three",
+              "definition": "To divide a thing into three parts.",
+              "kin": [
+                "third-part"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.19.3",
+                  "role": "defining",
+                  "note": "“You shall divide into three (וְשִׁלַּשְׁתָּ) the territory of your land”, for the three cities of refuge (19:2)."
+                }
+              ]
+            },
+            {
+              "id": "wait-three-days",
+              "gloss": "do on the third day; wait three days",
+              "definition": "To let three days pass, to act on the third.",
+              "kin": [
+                "third-day"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.20.19",
+                  "role": "defining",
+                  "note": "“And on the third day (וְשִׁלַּשְׁתָּ) go down quickly”, after hiding “until the third evening” (20:5)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be three years old; be threefold, in three storeys",
+          "cognate_ids": [
+            "akk-sulusu",
+            "ar-mathluth"
+          ],
+          "senses": [
+            {
+              "id": "three-years-old",
+              "gloss": "three years old",
+              "definition": "Of animals for sacrifice, in their third year.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.9",
+                  "role": "defining",
+                  "note": "“Take me a heifer three years old (מְשֻׁלֶּשֶׁת), a she-goat three years old, and a ram three years old, a turtledove and a young pigeon.”"
+                }
+              ]
+            },
+            {
+              "id": "threefold",
+              "gloss": "threefold; in three tiers",
+              "definition": "Made of three: a cord of three strands; chambers in three storeys.",
+              "evidence": [
+                {
+                  "ref": "Ecc.4.12",
+                  "role": "defining",
+                  "note": "“If one overpowers him, two will withstand him, and a threefold cord (הַחוּט הַמְשֻׁלָּשׁ) is not quickly broken.”"
+                },
+                {
+                  "ref": "Ezk.42.6",
+                  "role": "defining",
+                  "note": "“For they were in three storeys (מְשֻׁלָּשׁוֹת), and had no pillars”, as the third storey of 42:3."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁלֵּשׁ",
+      "pos": "adjective",
+      "gloss": "of the third generation (pl. שִׁלֵּשִׁים)",
+      "bdb": [
+        "v.du.aj"
+      ],
+      "cognate_ids": [
+        "ar-thalith",
+        "akk-salsu"
+      ],
+      "summary": "Always plural, “those of the third (generation)”: great-grandchildren, beside רִבֵּעִים “those of the fourth”. Four of its five uses are in the words Yahweh speaks of himself, visiting the fathers’ iniquity on the third and fourth generation.",
+      "senses": [
+        {
+          "id": "third-generation",
+          "gloss": "the third generation, great-grandchildren",
+          "definition": "Children of the third generation from a man: his sons’ grandsons.",
+          "evidence": [
+            {
+              "ref": "Gen.50.23",
+              "role": "defining",
+              "note": "“Joseph saw Ephraim’s children of the third generation (בְּנֵי שִׁלֵּשִׁים)”: Joseph, Ephraim, Ephraim’s sons, their sons."
+            },
+            {
+              "ref": "Exo.34.7",
+              "role": "defining",
+              "note": "“Visiting the iniquity of the fathers on the children and on the children’s children, on the third and on the fourth (עַל שִׁלֵּשִׁים וְעַל רִבֵּעִים)”: the generations counted out."
+            },
+            {
+              "ref": "Exo.20.5",
+              "note": "“On the third and on the fourth of those who hate me.”"
+            },
+            {
+              "ref": "Num.14.18"
+            },
+            {
+              "ref": "Deu.5.9"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אֲלָפִים",
+            "note": "Thousands: mercy kept to thousands of those who love him, against iniquity visited to the third and fourth of those who hate him.",
+            "evidence": [
+              {
+                "ref": "Exo.20.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.7"
+              },
+              {
+                "ref": "Deu.5.10"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עַל שִׁלֵּשִׁים וְעַל רִבֵּעִים",
+            "gloss": "on the third and on the fourth (generation)",
+            "evidence": [
+              {
+                "ref": "Exo.20.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.7"
+              },
+              {
+                "ref": "Num.14.18"
+              },
+              {
+                "ref": "Deu.5.9"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תְּלָת",
+      "lang": "arc",
+      "root": "תלת",
+      "pos": "numeral",
+      "gender": "mf",
+      "gloss": "three",
+      "bdb": [
+        "xw.ad.aa"
+      ],
+      "cognate_ids": [
+        "arc-telat",
+        "ar-thalath",
+        "uga-tlt",
+        "sab-tlt"
+      ],
+      "summary": "The Aramaic of Daniel and Ezra writes the root with ת for the older ṯ, where Hebrew has ש: תְּלָת, masculine תְּלָתָה, emphatic תְּלָתָא.",
+      "senses": [
+        {
+          "gloss": "three",
+          "definition": "The number three.",
+          "kin": [
+            "three",
+            "three-times"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.23",
+              "role": "defining",
+              "note": "“These three men (תְּלָתֵּהוֹן), Shadrach, Meshach and Abednego, fell bound into the burning fiery furnace.”"
+            },
+            {
+              "ref": "Dan.3.24",
+              "note": "“Did we not cast three men bound into the fire?”"
+            },
+            {
+              "ref": "Dan.6.3",
+              "role": "defining",
+              "note": "“Over them three presidents (סָרְכִין תְּלָתָא), of whom Daniel was one.”"
+            },
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "Daniel “knelt on his knees three times a day (זִמְנִין תְּלָתָה בְיוֹמָא) and prayed”."
+            },
+            {
+              "ref": "Dan.6.14"
+            },
+            {
+              "ref": "Dan.7.5",
+              "note": "The bear had three ribs in its mouth."
+            },
+            {
+              "ref": "Dan.7.8",
+              "note": "Three of the first horns plucked up before the little horn."
+            },
+            {
+              "ref": "Dan.7.20"
+            },
+            {
+              "ref": "Dan.7.24",
+              "note": "“He shall put down three kings.”"
+            },
+            {
+              "ref": "Ezr.6.4",
+              "note": "The house to be built with three courses of great stones and one of timber."
+            },
+            {
+              "ref": "Ezr.6.15",
+              "note": "Finished “on the third (תְּלָתָה) day of the month Adar”: the cardinal for the day of the month."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּלָתִין",
+      "lang": "arc",
+      "root": "תלת",
+      "pos": "numeral",
+      "gloss": "thirty",
+      "bdb": [
+        "xw.ad.ae"
+      ],
+      "cognate_ids": [
+        "arc-telat",
+        "ar-thalathun",
+        "uga-tltm"
+      ],
+      "senses": [
+        {
+          "gloss": "thirty",
+          "definition": "The number thirty.",
+          "kin": [
+            "thirty"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.6.8",
+              "role": "defining",
+              "note": "Whoever asks a petition of any god or man “for thirty days (עַד יוֹמִין תְּלָתִין)” except of the king."
+            },
+            {
+              "ref": "Dan.6.13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּלִיתָי",
+      "lang": "arc",
+      "root": "תלת",
+      "pos": "adjective",
+      "gloss": "third",
+      "bdb": [
+        "xw.ad.ad"
+      ],
+      "cognate_ids": [
+        "arc-telitaah",
+        "ar-thalith",
+        "akk-salsu"
+      ],
+      "summary": "The Aramaic ordinal, once (feminine, written תליתיא and read תְלִיתָאָה). The corpus does not tag Dan 2:39 with this word; it files the one token of תַּלְתִּי (Dan 5:7) here as well.",
+      "senses": [
+        {
+          "gloss": "third",
+          "definition": "Third in a series of kingdoms.",
+          "kin": [
+            "third"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.39",
+              "role": "defining",
+              "note": "“After you shall arise another kingdom inferior to you, and another third kingdom (וּמַלְכוּ תְלִיתָאָה) of bronze, which shall rule over all the earth.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּלְתִּי",
+      "lang": "arc",
+      "root": "תלת",
+      "pos": "noun",
+      "gloss": "third ruler; one of three (in the kingdom)",
+      "bdb": [
+        "xw.ad.ac",
+        "xw.ad.ab"
+      ],
+      "cognate_ids": [
+        "phn-slsy",
+        "akk-taslisu"
+      ],
+      "summary": "Belshazzar’s promise and gift, three times: תַּלְתִּי (5:7) and תַּלְתָּא (5:16, 29) “in the kingdom”. Whether it is the third in rank, after Nabonidus and Belshazzar, or one of a board of three, like the three presidents of Dan 6:3, the text does not say; Phoenician rb šlšy “third general” is a title of rank of the same kind, as is the שָׁלִישׁ at the king’s side.",
+      "senses": [
+        {
+          "gloss": "third ruler (in the kingdom)",
+          "definition": "A high office in Babylon, ruling “as third” in the kingdom.",
+          "kin": [
+            "officer",
+            "third"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.5.7",
+              "role": "defining",
+              "note": "Whoever reads the writing “shall be clothed with purple, and have a chain of gold about his neck, and shall rule as third (וְתַלְתִּי) in the kingdom”."
+            },
+            {
+              "ref": "Dan.5.16",
+              "note": "The same promise to Daniel (וְתַלְתָּא)."
+            },
+            {
+              "ref": "Dan.5.29",
+              "role": "defining",
+              "note": "“They proclaimed concerning him that he should be the third ruler (שַׁלִּיט תַּלְתָּא) in the kingdom.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּלָת",
+      "lang": "syc",
+      "root": "תלת",
+      "pos": "numeral",
+      "gloss": "three; (with דְּ) third; (in compounds) three hundred",
+      "summary": "The Peshitta’s three: feminine תְּלָת, masculine תְּלָתָא. With דְּ it gives the ordinal, “the third day” (Mat 16:21). SEDRA files תְּלָתְמָאא “three hundred” (Mrk 14:5) as a lexeme of its own.",
+      "cognate_ids": [
+        "arc-telat",
+        "ar-thalath",
+        "uga-tlt"
+      ],
+      "senses": [
+        {
+          "gloss": "three",
+          "definition": "The number three.",
+          "kin": [
+            "three",
+            "three-days",
+            "two-or-three"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.12.40",
+              "role": "defining",
+              "note": "“As Jonah was in the belly of the fish three days and three nights”: Jon 2:1."
+            },
+            {
+              "ref": "Mat.18.16",
+              "role": "defining",
+              "note": "“At the mouth of two or three witnesses every word shall stand”: Deu 19:15."
+            },
+            {
+              "ref": "Mat.18.20",
+              "note": "“Where two or three are gathered in my name.”"
+            },
+            {
+              "ref": "2Co.13.1"
+            },
+            {
+              "ref": "1Ti.5.19"
+            },
+            {
+              "ref": "Heb.10.28"
+            },
+            {
+              "ref": "Jhn.2.19",
+              "note": "“In three days I will raise it up.”"
+            },
+            {
+              "ref": "Mat.26.34",
+              "note": "“You shall deny me three times.”"
+            },
+            {
+              "ref": "Luk.4.25",
+              "note": "Heaven shut three years and six months in Elijah’s days."
+            },
+            {
+              "ref": "Act.9.9",
+              "note": "Saul three days without sight."
+            },
+            {
+              "ref": "Mrk.14.5",
+              "note": "Three hundred denarii (תְּלָתְמָאא)."
+            }
+          ]
+        },
+        {
+          "gloss": "third (with דְּ)",
+          "definition": "With the relative דְּ, the third in order, above all “the third day”.",
+          "kin": [
+            "third",
+            "third-day"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.16.21",
+              "role": "defining",
+              "note": "He must be killed “and on the third day (דַּתְלָתָא) rise”."
+            },
+            {
+              "ref": "1Co.15.4",
+              "role": "defining",
+              "note": "“He was raised on the third day, as it is written.”"
+            },
+            {
+              "ref": "Luk.24.46"
+            },
+            {
+              "ref": "Mat.27.64",
+              "note": "“Command that the tomb be made sure until the third day.”"
+            },
+            {
+              "ref": "Jhn.2.1",
+              "note": "On the third day a wedding in Cana."
+            },
+            {
+              "ref": "2Co.12.2",
+              "note": "The third heaven."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּלָתִין",
+      "lang": "syc",
+      "root": "תלת",
+      "pos": "numeral",
+      "gloss": "thirty",
+      "cognate_ids": [
+        "arc-telat",
+        "ar-thalathun"
+      ],
+      "senses": [
+        {
+          "gloss": "thirty",
+          "definition": "The number thirty.",
+          "kin": [
+            "thirty",
+            "thirty-silver"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.26.15",
+              "role": "defining",
+              "note": "They weighed out to Judas thirty of silver."
+            },
+            {
+              "ref": "Mat.27.9",
+              "role": "defining",
+              "note": "“They took the thirty of silver, the price of the valued one”: Zec 11:12–13."
+            },
+            {
+              "ref": "Luk.3.23",
+              "note": "Jesus about thirty years old."
+            },
+            {
+              "ref": "Mat.13.8",
+              "note": "Some thirtyfold."
+            },
+            {
+              "ref": "Gal.3.17",
+              "note": "Four hundred and thirty years: Exo 12:40."
+            },
+            {
+              "ref": "Jhn.5.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תֻּלְתָּא",
+      "lang": "syc",
+      "root": "תלת",
+      "pos": "noun",
+      "gloss": "a third part",
+      "cognate_ids": [
+        "arc-tilta",
+        "ar-thulth"
+      ],
+      "senses": [
+        {
+          "gloss": "a third part",
+          "definition": "One of three parts: of the earth, the sea, the stars, mankind.",
+          "kin": [
+            "third-part"
+          ],
+          "evidence": [
+            {
+              "ref": "Rev.8.7",
+              "role": "defining",
+              "note": "“A third of the earth was burnt up, and a third of the trees.”"
+            },
+            {
+              "ref": "Rev.8.12",
+              "note": "A third of the sun, of the moon, of the stars struck."
+            },
+            {
+              "ref": "Rev.9.15",
+              "note": "To kill a third of men."
+            },
+            {
+              "ref": "Rev.12.4",
+              "note": "His tail drew a third of the stars of heaven."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-thalath",
+      "lang": "ar",
+      "form": "ثَلَاثَة، ثَلَاث",
+      "translit": "ṯalāṯa, ṯalāṯ",
+      "gloss": "three",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Arabic ث is ṯ, kept apart from س s and ش š: both letters of Hebrew ש here go back to ṯ. Masculine ثَلَاثَة with masculine nouns and ثَلَاث with feminine, as Hebrew שְׁלֹשָׁה / שָׁלֹשׁ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 348, root ثلث, ثَلَاثَةٌ (n4629)",
+          "note": "“a noun of number, [i. e. Three,] is masc.… the fem. is ثَلَاثٌ… ثَلَاثَةُ رِجَالٍ [Three men]: and ثَلَاثُ نِسْوَةٍ [three women].”"
+        }
+      ]
+    },
+    {
+      "id": "ar-thalathun",
+      "lang": "ar",
+      "form": "ثَلَاثُونَ",
+      "translit": "ṯalāṯūna",
+      "gloss": "thirty; thirtieth",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 348, root ثلث, ثَلَاثُونَ (n4634)",
+          "note": "“the noun of number, [meaning Thirty, and also thirtieth]”."
+        }
+      ]
+    },
+    {
+      "id": "ar-thalith",
+      "lang": "ar",
+      "form": "ثَالِث",
+      "translit": "ṯāliṯ",
+      "gloss": "third",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 349, root ثلث, ثَالِثٌ (n4638)",
+          "note": "“[Third]… هُوَ ثَالِثُ ثَلَاثَةٍ [He is the third of three]”."
+        }
+      ]
+    },
+    {
+      "id": "ar-thulth",
+      "lang": "ar",
+      "form": "ثُلُث، ثُلْث",
+      "translit": "ṯuluṯ, ṯulṯ",
+      "gloss": "a third part",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 347, root ثلث, ثُلُثٌ (n4621)",
+          "note": "“A third; a third part or portion.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 348, root ثلث, إِنَآءٌ ثَلْثَانُ (n4622)",
+          "note": "“A vessel in which the corn &c. that is measured therein reaches to one third of it”: a third as a measure, as שָׁלִשׁ in Isa 40:12."
+        }
+      ]
+    },
+    {
+      "id": "ar-thallatha",
+      "lang": "ar",
+      "form": "ثَلَّثَ؛ ثَلَثَ",
+      "translit": "ṯallaṯa; ṯalaṯa",
+      "gloss": "make three; stay three nights; be the third of; do (turn the ground) three times",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "The verbs of the number: making a thing three or dividing it in three, staying three nights, coming third, taking a third. They share the piel’s senses: dividing in three (Deu 19:3), doing on the third day (1Sa 20:19), doing a third time (1Ki 18:34).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 347, root ثلث, ثلّثهُ (n4616)",
+          "note": "“He made it three… تَثْلِيثٌ signifies the making [a thing] three [by addition or multiplication or division]… ثلّث لِٱمْرَأَتِهِ He remained three nights with his wife.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 347, root ثلث, ثَلَثَ القَوْمَ (n4615)",
+          "note": "“He was, or became, the third of the people… ثَلَثَ الأَرْضَ He turned over the ground three times for sowing.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-mathluth",
+      "lang": "ar",
+      "form": "مَثْلُوث؛ مُثَلَّث",
+      "translit": "maṯlūṯ; muṯallaṯ",
+      "gloss": "(rope) of three strands; threefold, of three layers",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "The passive participles answer to the pual מְשֻׁלָּשׁ: a rope of three strands is Ecc 4:12’s הַחוּט הַמְשֻׁלָּשׁ, and a thing of three layers the storeys of Ezk 42:6.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 349, root ثلث, مَثْلُوثٌ (n4645)",
+          "note": "“A rope composed of three strands twisted together, and in like manner woven, or plaited.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 349, root ثلث, مُثَلَّثٌ (n4642)",
+          "note": "“A thing composed of three layers or strata… or a thing of three folds.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-tlt",
+      "lang": "uga",
+      "form": "𐎘𐎍𐎘، 𐎘𐎍𐎘𐎚",
+      "translit": "ṯlṯ, ṯlṯt",
+      "gloss": "three",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Ugaritic writes ṯ and š with different signs: three is ṯlṯ.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 53, §53 Numerals, “3” ṯlṯ ṯlṯt",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "The table of numerals: “3” ṯlṯ, ṯlṯt; “30” ṯlṯm; “3rd” ṯlṯ. Read from the OCR text; check the page image."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, ṯlṯ, ṯlṯt",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“ṯlṯ, ṯlṯt “3” (H. šālōš, Aram. tᵉlāt, Arab. ṯalāṯ)”. Read from the OCR text."
+        }
+      ]
+    },
+    {
+      "id": "uga-tltm",
+      "lang": "uga",
+      "form": "𐎘𐎍𐎘𐎎",
+      "translit": "ṯlṯm",
+      "gloss": "thirty",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 53, §53 Numerals, “30” ṯlṯm",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "uga-tlt-third",
+      "lang": "uga",
+      "form": "𐎘𐎍𐎘",
+      "translit": "ṯlṯ",
+      "gloss": "third; (b ṯlṯ) on the third (day)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "In the Kirta epic the journey is counted “a day and a second… on the third (b ṯlṯ)” they arrive: the count of days of Gen 22:4.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, ṯlṯ “third” (KTU 4.279:3; 1.14:II:11)",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“ṯlṯ… “third” (cf. Arab. ṯāliṯ)”. Read from the OCR text."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 114, §75, KTU 1.14:IV:31–34",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "tlkn ym wṯn “they go a day and a second (day)”; aḫr špšm bṯlṯ “afterwards, at sun(set), on the third (day), they arrive at the sanctuary”."
+        }
+      ]
+    },
+    {
+      "id": "uga-tltid",
+      "lang": "uga",
+      "form": "𐎘𐎍𐎘𐎛𐎄",
+      "translit": "ṯlṯid",
+      "gloss": "three times",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, ṯlṯid (KTU 1.18:IV:23)",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“three times”. The OCR has lost the headword; the form is from the glossary’s order and Biella’s citation (Ug ṯlṯʾd “three times”, p. 518). Check the page image."
+        },
+        {
+          "source": "biella-1982",
+          "locator": "p. 518, S²LṮ, s²lṯʾd (adv.), citing Ugaritic ṯlṯʾd",
+          "note": "“[Ug tlt'd “three times”…]”, cited under the Sabaean adverb. Read from the OCR text."
+        }
+      ]
+    },
+    {
+      "id": "akk-salas",
+      "lang": "akk",
+      "form": "šalāš",
+      "translit": "šalāš, šalāšat",
+      "gloss": "three",
+      "relation": "cognate",
+      "note": "Akkadian writes old š and ṯ alike as š, so it does not show which stood behind ש.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000018230, šalāš [three] NU",
+          "note": "133 instances; forms šalāšat, šalašti."
+        }
+      ]
+    },
+    {
+      "id": "akk-salasa",
+      "lang": "akk",
+      "form": "šalāšā",
+      "translit": "šalāšā",
+      "gloss": "thirty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000074960, šalāšā [thirty] NU"
+        }
+      ]
+    },
+    {
+      "id": "akk-salsu",
+      "lang": "akk",
+      "form": "šalšu",
+      "translit": "šalšu",
+      "gloss": "third; one-third; threefold",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005780, šalšu [third] NU",
+          "note": "Meanings: one-third; third; threefold; third-rate (448 instances)."
+        }
+      ]
+    },
+    {
+      "id": "akk-salasu-v",
+      "lang": "akk",
+      "form": "šalāšu",
+      "translit": "šalāšu (D ušalliš)",
+      "gloss": "do for a third time; triple",
+      "relation": "cognate",
+      "note": "The doubled stem, as the Hebrew piel: “do it a third time” (1Ki 18:34).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000019220, šalāšu [do for a third time] V",
+          "note": "Meanings: do for a third time; tripling. Forms ušallišma, šulluš."
+        }
+      ]
+    },
+    {
+      "id": "akk-sulusu",
+      "lang": "akk",
+      "form": "šulūšû",
+      "translit": "šulūšû",
+      "gloss": "three years old",
+      "relation": "cognate",
+      "note": "Said of animals, as the pual participle of Gen 15:9.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tcma x000002060, šulūšû [three-year-old] AJ",
+          "note": "191 instances, Middle Assyrian."
+        }
+      ]
+    },
+    {
+      "id": "akk-salsumi",
+      "lang": "akk",
+      "form": "šalšūmi",
+      "translit": "šalšūmi, ina šalši ūmi",
+      "gloss": "the day before yesterday",
+      "relation": "cognate",
+      "note": "“On the third day” back, the same formation and sense as שִׁלְשֹׁם; Akkadian also has šalāššatti “two years ago” and šaluššani “the year before last”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000035700, šalšūmi [the day before yesterday] AV",
+          "note": "Forms šaššūme, šalši-ūme (107 instances)."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000154310, ina šalšūmi [the day before yesterday] AV"
+        }
+      ]
+    },
+    {
+      "id": "akk-taslisu",
+      "lang": "akk",
+      "form": "tašlīšu",
+      "translit": "tašlīšu",
+      "gloss": "third man of a chariot crew",
+      "relation": "cognate",
+      "note": "A noun of the root, the third man on a chariot beside the driver and the warrior, an officer’s post in the Assyrian army; with Exo 14:7, it shows the Hebrew שָׁלִישׁ as the chariot’s third man, and so an officer.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000035720, tašlīšu [third man on chariot] N",
+          "note": "1157 instances, Neo-Assyrian."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000146120, tašlīšu [third man (of a chariot crew)] N"
+        }
+      ]
+    },
+    {
+      "id": "phn-sls",
+      "lang": "phn",
+      "form": "𐤔𐤋𐤔، 𐤔𐤋𐤔𐤕",
+      "translit": "šlš, šlšt",
+      "gloss": "three",
+      "relation": "cognate",
+      "note": "Phoenician, like Hebrew, writes old ṯ as š.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 465, ŠLŠ, num. THREE",
+          "note": "KAI 40.3–4 (Ph) šlšt bn mrylḥy “the three sons of MRYLḤY”; KAI 19.8 šlš ḥmšm “fifty-three”. Read from the OCR text."
+        }
+      ]
+    },
+    {
+      "id": "phn-slsm",
+      "lang": "phn",
+      "form": "𐤔𐤋𐤔𐤌",
+      "translit": "šlšm",
+      "gloss": "thirty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 465, ŠLŠM, num. THIRTY",
+          "note": "KAI 41.4–5 (Ph) bšnt šlšm “in year thirty” of King Milkyaton."
+        }
+      ]
+    },
+    {
+      "id": "phn-slsy",
+      "lang": "phn",
+      "form": "𐤔𐤋𐤔𐤉، 𐤔𐤋𐤔𐤕؛ 𐤓𐤁 𐤔𐤋𐤔𐤉",
+      "translit": "šlšy, šlšt; rb šlšy",
+      "gloss": "third; (rb šlšy) “third general”, a rank",
+      "relation": "cognate",
+      "note": "The ordinal, and with רב a military title, the “third general” beside rb šny “second general”: a rank named by its number, as the שָׁלִישׁ and Daniel’s תַּלְתִּי.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 465, ŠLŠY, fem. ŠLŠT, num. THIRD",
+          "note": "RES 910 (Pu) rb šlš’ “co-adjutant general”, lit. “third general”."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 440, RB ŠLŠY, n. CO-ADJUTANT GENERAL, lit. THIRD GENERAL",
+          "note": "Beside RB ŠNY “adjutant general, lit. second general”. Page read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "phn-slst",
+      "lang": "phn",
+      "form": "𐤔𐤋𐤔𐤕",
+      "translit": "šlšt",
+      "gloss": "one third, a third part",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 465, ŠLŠT, num. ONE THIRD, THIRD PART",
+          "note": "Eph. 1.13 (Pu) šlšt “one third”, carved on a weight."
+        }
+      ]
+    },
+    {
+      "id": "sab-tlt",
+      "lang": "sem",
+      "form": "𐩻𐩡𐩻",
+      "translit": "ṯlṯ, ṯlṯt; ṯlṯy",
+      "gloss": "three; one third; third; thirty",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Sabaean (middle and late), which keeps ṯ apart from s¹, s² and s³. One article gives three, the fraction, the ordinal (bṯlṯm ywmm “on the third day”) and ṯlṯy “thirty”.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 544–545, ṮLṮ (num. three; s. one third; adj. third; thirty)",
+          "note": "J657/3 ṯlṯtn ʾṣlmn “these three statues”; R3968/2 “one-third of (the tribe) H.”; J577/12 bṯlṯm ywmm “on the third day”; C308/3 ṯlṯnhn ṣlmn “these thirty statues”. Read from the OCR text."
+        }
+      ]
+    },
+    {
+      "id": "sab-s2lt",
+      "lang": "sem",
+      "form": "𐩦𐩡𐩻",
+      "translit": "s²lṯ, s²lṯt; s²lṯy; s²lṯʾd",
+      "gloss": "three; one third; thirty; three times",
+      "relation": "cognate",
+      "note": "Early Sabaean writes three with s² (ś) first and ṯ last; later Sabaean has ṯlṯ. Ge’ez śälästu has the same ś. The last letter shows ṯ, which `sounds` records; the first is changed by dissimilation from the last, and is not taken as another older root.",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 517–518, S²LṮ (num. three, cf later Sab ṯlṯ; s. one third; thirty; adv. three times)",
+          "note": "J604/1–2 s²lṯtn ʾṣlmn “these three statues”; R3154/2 “the third day (lit. day three) of the month”; R4190 “one third of (the tribe) dH”; C366/2 s²lṯʾd “three times (?)”. Read from the OCR text."
+        }
+      ]
+    },
+    {
+      "id": "arc-telat",
+      "lang": "arc",
+      "form": "תְּלַת، תְּלָתָא؛ תְּלָתִין",
+      "translit": "tᵉlat, tᵉlātā; tᵉlātīn",
+      "gloss": "three; thirty",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "The Targums’ Aramaic, where old ṯ is ת: three and thirty with ת for Hebrew ש. Targum Onkelos renders Gen 15:9 מְשֻׁלֶּשֶׁת by תְּלָתָא, and Targum Yerushalmi by בַּר תְּלָת שְׁנִין “three years old”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּלַת (V00626)",
+          "note": "“= h. שָׁלשׁ, three; בת׳ on the third (day)… Targ. Num. XII, 4… Pl. תְּלָתִין thirty. Targ. Gen. V, 3.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-telitaah",
+      "lang": "arc",
+      "form": "תְּלִיתָאָה، תְּלִיתַאי",
+      "translit": "tᵉlītāʾā, tᵉlītay",
+      "gloss": "third; threefold",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּלִיתָאָה (V00595)",
+          "note": "“third. Targ. Gen. II, 14. Ib. I, 13… Fem. תְּלִיתָא… Targ. Num. II, 24.” The Targum’s rendering of שְׁלִישִׁי in Gen 1:13, 2:14 and Num 2:24."
+        }
+      ]
+    },
+    {
+      "id": "arc-tilta",
+      "lang": "arc",
+      "form": "תִּלְתָּא، תּוּלְתָּא",
+      "translit": "tiltā, tultā",
+      "gloss": "a third part",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "The Targum renders שָׁלִישׁ in Psa 80:6 by this word, “a third part”, and uses it for the thirds of 2Ki 11:5 and 2Sa 18:2.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תִּלְתָּא (V00627)",
+          "note": "“a third part. Targ. II Kings XI, 5. Targ. II Sam. XVIII, 2… Targ. Ps. LXXX, 6 חמר דדמען תּוּלְתֵּיה … wine a third part of which are tears.”"
+        }
+      ]
+    },
+    {
+      "id": "gez-salastu",
+      "lang": "gez",
+      "form": "ሠለስቱ، ሠልስ؛ ሠላሳ",
+      "translit": "śälästu, śäls; śälasa",
+      "gloss": "three; third; thirty",
+      "relation": "cognate",
+      "note": "Ge’ez merges old ṯ with s, so its last letter does not show which sound stood behind ש; its first letter is ś, as in early Sabaean s²lṯ. Not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ሠለስቱ (śälästu) “three”; ሠልስ (śäls) “third”; ሠላሳ (śälasa) “thirty”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-third-day",
+      "statement": "Scripture counts to a third day again and again, and on it what was waited for comes: “on the third day Yahweh will come down in the sight of all the people on Mount Sinai” (Exo 19:11, 16); “on the third day Abraham lifted up his eyes and saw the place” where he was to offer his son (Gen 22:4); Hezekiah, sick to death, is told “I will heal you; on the third day you shall go up to the house of Yahweh” (2Ki 20:1, 5); the one unclean by the dead is cleansed on the third day and the seventh (Num 19:12). Hosea puts it in so many words: “After two days he will revive us; on the third day he will raise us up, and we shall live before him” (Hos 6:2). Jonah was in the belly of the fish “three days and three nights” (Jon 2:1), and Jesus gave that as the one sign: “so shall the Son of man be three days and three nights in the heart of the earth” (Mat 12:40); “destroy this temple, and in three days I will raise it up”, of the temple of his body (Jhn 2:19–21). He was dead and buried, and “he was raised on the third day according to the scriptures” (1Co 15:3–4; Luk 24:46). So the resurrection on the third day is not a detail added to the gospel but what the scriptures of the third day had been pointing to: the death was real, the waiting was real, and God raised him up on the day his word had set.",
+      "evidence": [
+        {
+          "ref": "Exo.19.11"
+        },
+        {
+          "ref": "Exo.19.16"
+        },
+        {
+          "ref": "Gen.22.4"
+        },
+        {
+          "ref": "2Ki.20.1"
+        },
+        {
+          "ref": "2Ki.20.5"
+        },
+        {
+          "ref": "Num.19.12"
+        },
+        {
+          "ref": "Hos.6.2"
+        },
+        {
+          "ref": "Jon.2.1"
+        },
+        {
+          "ref": "Mat.12.40"
+        },
+        {
+          "ref": "Jhn.2.19",
+          "to": "Jhn.2.21"
+        },
+        {
+          "ref": "1Co.15.3",
+          "to": "1Co.15.4"
+        },
+        {
+          "ref": "Luk.24.46"
+        }
+      ]
+    },
+    {
+      "topic": "two-or-three-witnesses",
+      "statement": "The Law will not put anyone to death, or establish any charge, on one witness: “at the mouth of two witnesses or three witnesses shall a matter be established” (Deu 19:15; 17:6; Num 35:30). Jesus gives the same rule to his disciples for dealing with a brother who sins: “take with you one or two more, that at the mouth of two or three witnesses every word may be established” (Mat 18:16); Paul applies it to his own coming to Corinth (2Co 13:1) and to any charge against an elder (1Ti 5:19), and Hebrews to the one who set aside Moses’ law (Heb 10:28). Jesus also rests his own testimony on it: “it is written in your law that the testimony of two men is true; I am one who bears witness of myself, and the Father who sent me bears witness of me” (Jhn 8:17–18). Judgment in the ecclesia, as in Israel, stands on the agreement of more than one witness, not on a single voice.",
+      "evidence": [
+        {
+          "ref": "Deu.19.15"
+        },
+        {
+          "ref": "Deu.17.6"
+        },
+        {
+          "ref": "Num.35.30"
+        },
+        {
+          "ref": "Mat.18.15",
+          "to": "Mat.18.17"
+        },
+        {
+          "ref": "2Co.13.1"
+        },
+        {
+          "ref": "1Ti.5.19"
+        },
+        {
+          "ref": "Heb.10.28"
+        },
+        {
+          "ref": "Jhn.8.17",
+          "to": "Jhn.8.18"
+        }
+      ]
+    },
+    {
+      "topic": "iniquity-of-the-fathers",
+      "statement": "Yahweh describes himself as “visiting the iniquity of the fathers on the children, on the third and on the fourth (generation) of those who hate me, and showing mercy to thousands of those who love me and keep my commandments” (Exo 20:5–6; Deu 5:9–10; Exo 34:7; Num 14:18). The visiting falls on generations “of those who hate me”; the same Law says “the fathers shall not be put to death for the children, nor the children for the fathers; every man shall be put to death for his own sin” (Deu 24:16), and Yahweh “repays those who hate him to their face” (Deu 7:10). Ezekiel answers the proverb of sour grapes: “the son shall not bear the iniquity of the father… the soul that sins, it shall die” (Ezk 18:2–4, 20). So the third and fourth generation suffer for the fathers’ iniquity when they carry on the fathers’ hatred of God, and the sins of a house can run on for three or four generations; but no one dies for another’s sin, and mercy reaches to thousands, far beyond the third and fourth.",
+      "evidence": [
+        {
+          "ref": "Exo.20.5",
+          "to": "Exo.20.6"
+        },
+        {
+          "ref": "Deu.5.9",
+          "to": "Deu.5.10"
+        },
+        {
+          "ref": "Exo.34.7"
+        },
+        {
+          "ref": "Num.14.18"
+        },
+        {
+          "ref": "Deu.24.16"
+        },
+        {
+          "ref": "Deu.7.10"
+        },
+        {
+          "ref": "Ezk.18.2",
+          "to": "Ezk.18.4"
+        },
+        {
+          "ref": "Ezk.18.20"
+        }
+      ]
+    }
+  ],
+  "note": "Root key שלש as the database keys it (BDB v.du; the Aramaic תלת under xw.ad.aa–ae; m.dw.ai מִשְׁלֹשׁ, a cross-reference with no tokens of its own, is put with the numeral, which holds its use in Gen 38:24). Both shins go back to ṯ (Arabic ث, Ugaritic and Sabaean ṯ, Aramaic ת); Phoenician and Akkadian š and Ge’ez s cannot show it. Early Sabaean s²lṯ and Ge’ez śälästu have ś for the first letter: recorded as dissimilation, not a split. The Qal token of the brief (2Sa 23:13) is the numeral under v.du.ab, not a verb. The three BDB words שָׁלִישׁ (v.du.ag measure, v.du.ah instrument, v.du.ai officer) are tagged in the corpus by spelling on the same sixteen tokens, so lexicon-support counts all sixteen for each; by the text, the measure is Isa 40:12 and Psa 80:6, the instrument 1Sa 18:6, and the officer the rest. 2Ki 9:25 written שלשה (read שָׁלִשׁוֹ, Bidkar “his officer”) is not tagged under v.du.ai; 2Sa 23:8 הַשָּׁלִשִׁי and 1Ch 11:11 השלושים are read variously as “the Three”, “the Thirty” or “the officers”. The instrument (1Sa 18:6) has no cognate and its tie to three is unexplained. Aramaic: Dan 2:39 תליתיא is not tagged in the corpus; xw.ad.ad also carries Dan 5:7, which is תַּלְתִּי (xw.ad.ac), so the third-ruler word names ac and ab together. Proper names left out: שַׁלְתִּיאֵל Shealtiel (v.du.an), filed here by BDB but spelled also שְׁאַלְתִּיאֵל and more likely of שׁאל “ask”; שֵׁלֶשׁ Shelesh (v.du.ak) and שִׁלְשָׁה Shilshah (v.du.am), Asherites, not assigned to this task; שָׁלִשָׁה Shalishah and בַּעַל שָׁלִשָׁה (v.du.al), places. Ugaritic ṯlṯ “bronze” (Segert p. 204) and D-stem ṯ-l-ṯ “to plough” (p. 204) not recorded; the plough sense recalls Arabic ثَلَثَ الأَرْضَ, turning the ground three times, but is not yet shown to share the piel’s meaning. Segert pp. 53, 114, 204, Krahmalkov pp. 440, 465 and Biella pp. 517–518, 544–545 were read from the OCR text only; check the page images. Ge’ez is from Wiktionary only; check Dillmann and Leslau. The Septuagint renders שָׁלִישׁ by τριστάτης, which the New Testament does not use; not recorded. Doctrine: the third-day point rests on the verses cited; Zec 13:8–9 (the third refined) and Dan 7:8, 24 (three kings) are left to the prophecy notes."
+}
