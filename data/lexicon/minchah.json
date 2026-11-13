@@ -1,0 +1,906 @@
+{
+  "id": "minchah",
+  "root": "מנח",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "offering",
+    "sacrifice",
+    "gift",
+    "tribute",
+    "feasts",
+    "prayer",
+    "worship"
+  ],
+  "gloss": "gift, tribute; offering; the grain offering",
+  "summary": "The root is known in scripture only from the noun מִנְחָה, a gift brought to someone greater to honour him or win his favour: Jacob’s droves sent ahead to Esau (Gen 32:21), the tribute of a subject king (2Sa 8:2), and so what is brought to God. Cain’s fruit and Abel’s firstlings are both a מִנְחָה (Gen 4:3–5), but in the law the word names the grain offering: fine flour with oil and frankincense, a handful burnt and the rest the priests’ (Lev 2:1–3), as with the lamb of the sheaf and the “new מִנְחָה” of the fiftieth day (Lev 23:13, 16). The evening מִנְחָה marks the hour of prayer (1Ki 18:36; Dan 9:21). Arabic manaḥa “give, grant” and Punic mnḥt “offering, gift” share the sense.",
+  "words": [
+    {
+      "lemma": "מִנְחָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "gift, present; tribute; offering; grain offering",
+      "bdb": [
+        "m.cn.ab"
+      ],
+      "cognate_ids": [
+        "ar-manaha",
+        "phn-mnht",
+        "arc-minhata"
+      ],
+      "summary": "What is brought to another as a gift, and above all what is brought to Yahweh. Outside the law it is a present or a tribute; in Genesis and the narratives any offering to God; in the law, three times in four, the grain offering that went with the burnt offerings and stood on its own.",
+      "senses": [
+        {
+          "id": "gift-present",
+          "gloss": "gift, present (to win favour or do honour)",
+          "definition": "Something given by a lesser to a greater, to be received kindly, to seek his help, or to honour him; its being taken is a sign of favour, its being withheld a sign of contempt.",
+          "evidence": [
+            {
+              "ref": "Gen.32.21",
+              "role": "defining",
+              "note": "Jacob: “I will cover his face (אֲכַפְּרָה פָנָיו) with the מִנְחָה that goes before me, and afterward I will see his face; perhaps he will lift up my face.”"
+            },
+            {
+              "ref": "Gen.32.14",
+              "note": "Jacob takes “a מִנְחָה for Esau his brother”: goats, ewes, camels, cattle and donkeys (Gen 32:14–16)."
+            },
+            {
+              "ref": "Gen.33.10",
+              "role": "defining",
+              "note": "“If I have found favour in your eyes, take my מִנְחָה from my hand … and you have accepted me (וַתִּרְצֵנִי).”"
+            },
+            {
+              "ref": "Gen.43.11",
+              "role": "defining",
+              "note": "Israel sends the best of the land down to the man in Egypt as a מִנְחָה: balm, honey, spices, myrrh, nuts and almonds."
+            },
+            {
+              "ref": "Gen.43.26",
+              "note": "They bring Joseph the מִנְחָה in their hand and bow to the ground."
+            },
+            {
+              "ref": "1Sa.10.27",
+              "role": "defining",
+              "note": "The worthless men despised Saul “and brought him no מִנְחָה”."
+            },
+            {
+              "ref": "2Ki.8.8",
+              "note": "Ben-hadad sends Hazael with a מִנְחָה to the man of God to ask whether he will live; forty camels’ load (2Ki 8:9)."
+            },
+            {
+              "ref": "2Ki.20.12",
+              "note": "Merodach-baladan sends letters and a מִנְחָה to Hezekiah on hearing of his sickness; also Isa 39:1."
+            },
+            {
+              "ref": "Psa.45.13",
+              "note": "“The daughter of Tyre with a מִנְחָה; the rich of the people will seek your face.”"
+            }
+          ]
+        },
+        {
+          "id": "tribute",
+          "gloss": "tribute (from a subject)",
+          "definition": "The payment a subject people or king brings to an overlord, regularly, as the mark of being his servant; to stop bringing it is rebellion.",
+          "evidence": [
+            {
+              "ref": "2Sa.8.2",
+              "role": "defining",
+              "note": "“Moab became servants to David, bearers of מִנְחָה”; also of Aram (2Sa 8:6; 1Ch 18:2, 6)."
+            },
+            {
+              "ref": "2Sa.8.6"
+            },
+            {
+              "ref": "1Ki.5.1",
+              "role": "defining",
+              "note": "The kingdoms from the River to Egypt were “bringing מִנְחָה and serving Solomon all the days of his life”."
+            },
+            {
+              "ref": "2Ki.17.3",
+              "role": "defining",
+              "note": "Hoshea “became his servant and returned him מִנְחָה”."
+            },
+            {
+              "ref": "2Ki.17.4",
+              "role": "defining",
+              "note": "Hoshea conspired with So of Egypt “and did not bring up מִנְחָה to the king of Assyria, as year by year”, and was imprisoned."
+            },
+            {
+              "ref": "Jdg.3.15",
+              "note": "Israel, subject to Moab eighteen years, sends מִנְחָה to Eglon by Ehud’s hand (Jdg 3:15–18)."
+            },
+            {
+              "ref": "Jdg.3.18"
+            },
+            {
+              "ref": "1Ki.10.25",
+              "note": "All the earth brought Solomon “each man his מִנְחָה … year by year”; also 2Ch 9:24."
+            },
+            {
+              "ref": "2Ch.17.5",
+              "note": "All Judah gave Jehoshaphat מִנְחָה; the Philistines too (2Ch 17:11)."
+            },
+            {
+              "ref": "2Ch.26.8",
+              "note": "The Ammonites gave מִנְחָה to Uzziah."
+            },
+            {
+              "ref": "Hos.10.6",
+              "note": "The calf of Beth-aven itself “will be carried to Assyria, a מִנְחָה to king Jareb”."
+            },
+            {
+              "ref": "Psa.72.10",
+              "role": "defining",
+              "note": "“The kings of Tarshish and the coastlands will return מִנְחָה; the kings of Sheba and Seba will bring a gift (אֶשְׁכָּר)”, and all kings bow down to him (Psa 72:11)."
+            }
+          ]
+        },
+        {
+          "id": "offering-to-god",
+          "gloss": "offering (to God)",
+          "definition": "Anything brought to God as a gift, of the ground or of the flock; whether it is accepted depends on the one who brings it.",
+          "evidence": [
+            {
+              "ref": "Gen.4.3",
+              "role": "defining",
+              "note": "Cain brought of the fruit of the ground “a מִנְחָה to Yahweh”."
+            },
+            {
+              "ref": "Gen.4.4",
+              "role": "defining",
+              "note": "Abel brought of the firstborn of his flock and their fat, “and Yahweh looked on Abel and on his מִנְחָה”: an animal offering is a מִנְחָה too."
+            },
+            {
+              "ref": "Gen.4.5",
+              "note": "“But on Cain and on his מִנְחָה he did not look.”"
+            },
+            {
+              "ref": "Num.16.15",
+              "note": "Moses: “Do not turn to their מִנְחָה”, of Korah’s company."
+            },
+            {
+              "ref": "Jdg.6.18",
+              "note": "Gideon brings out his מִנְחָה, a kid and unleavened cakes (Jdg 6:19), and fire consumes it."
+            },
+            {
+              "ref": "Jdg.13.23",
+              "note": "“He would not have taken a burnt offering and a מִנְחָה from our hand.”"
+            },
+            {
+              "ref": "1Sa.2.17",
+              "role": "defining",
+              "note": "Eli’s sons’ sin was very great, “for the men despised the מִנְחָה of Yahweh”: the people’s sacrifices (1Sa 2:13–16)."
+            },
+            {
+              "ref": "1Sa.2.29"
+            },
+            {
+              "ref": "1Sa.26.19",
+              "note": "David: if Yahweh has stirred you against me, “let him smell a מִנְחָה”."
+            },
+            {
+              "ref": "Psa.96.8",
+              "note": "“Bring a מִנְחָה and come into his courts”; also 1Ch 16:29."
+            },
+            {
+              "ref": "Isa.1.13",
+              "role": "defining",
+              "note": "“Bring no more a vain מִנְחָה; incense is an abomination to me.”"
+            },
+            {
+              "ref": "Isa.57.6",
+              "note": "To the stones of the valley “you have offered a מִנְחָה”: to idols."
+            },
+            {
+              "ref": "Isa.66.20",
+              "role": "defining",
+              "note": "They will bring all your brethren out of all the nations “as a מִנְחָה to Yahweh … as the sons of Israel bring the מִנְחָה in a clean vessel to the house of Yahweh”."
+            },
+            {
+              "ref": "Zep.3.10",
+              "note": "From beyond the rivers of Cush my worshippers will bring my מִנְחָה."
+            },
+            {
+              "ref": "Mal.1.10",
+              "role": "defining",
+              "note": "“I have no pleasure in you … and I will not accept a מִנְחָה from your hand”: of the blind, lame and sick animals they bring (Mal 1:8, 13)."
+            },
+            {
+              "ref": "Mal.1.11",
+              "note": "“In every place incense is offered to my name, and a pure מִנְחָה, for my name is great among the nations.”"
+            },
+            {
+              "ref": "Mal.2.13"
+            },
+            {
+              "ref": "Mal.3.3",
+              "note": "The sons of Levi refined “will be bringers of a מִנְחָה to Yahweh in righteousness”."
+            },
+            {
+              "ref": "Mal.3.4"
+            }
+          ]
+        },
+        {
+          "id": "grain-offering",
+          "gloss": "grain offering",
+          "definition": "In the law, the offering of grain: fine flour with oil and frankincense, raw or baked as unleavened cakes, of which the priest burns a handful as its memorial portion and the rest is most holy food for the priests. It is brought alone, and goes with every burnt offering in a set measure of flour and oil.",
+          "evidence": [
+            {
+              "ref": "Lev.2.1",
+              "role": "defining",
+              "note": "“When a soul brings a קָרְבַּן מִנְחָה to Yahweh, his offering shall be fine flour; he shall pour oil on it and put frankincense on it.”"
+            },
+            {
+              "ref": "Lev.2.2",
+              "role": "defining",
+              "note": "The priest takes a handful with all the frankincense and burns its memorial portion, “a pleasing smell to Yahweh”."
+            },
+            {
+              "ref": "Lev.2.3",
+              "note": "“What is left of the מִנְחָה is Aaron’s and his sons’, most holy.”"
+            },
+            {
+              "ref": "Lev.2.4",
+              "note": "Baked in an oven, on a griddle, or in a pan (Lev 2:4–7)."
+            },
+            {
+              "ref": "Lev.2.11",
+              "role": "defining",
+              "note": "“No מִנְחָה that you bring to Yahweh shall be made with leaven”, nor honey burnt."
+            },
+            {
+              "ref": "Lev.2.13",
+              "note": "“Every offering of your מִנְחָה you shall season with salt … the salt of the covenant of your God.”"
+            },
+            {
+              "ref": "Lev.2.14",
+              "note": "“A מִנְחָה of firstfruits”: green ears roasted, crushed grain."
+            },
+            {
+              "ref": "Lev.6.7",
+              "role": "defining",
+              "note": "“This is the law of the מִנְחָה”: a handful burnt, the rest eaten unleavened in a holy place (Lev 6:7–9)."
+            },
+            {
+              "ref": "Lev.6.9"
+            },
+            {
+              "ref": "Lev.6.13",
+              "note": "The priests’ own מִנְחָה on the day of anointing, half morning and half evening; it is wholly burnt and not eaten (Lev 6:16)."
+            },
+            {
+              "ref": "Lev.6.16"
+            },
+            {
+              "ref": "Lev.10.12",
+              "note": "“Take the מִנְחָה that is left … and eat it unleavened beside the altar, for it is most holy.”"
+            },
+            {
+              "ref": "Lev.5.13",
+              "note": "The poor man’s flour sin offering, without oil or frankincense (Lev 5:11), is the priest’s “as the מִנְחָה”."
+            },
+            {
+              "ref": "Num.5.15",
+              "role": "defining",
+              "note": "Barley meal, with no oil or frankincense, “for it is a מִנְחַת קְנָאֹת, a מִנְחָה of remembrance, bringing iniquity to remembrance”."
+            },
+            {
+              "ref": "Num.15.4",
+              "role": "defining",
+              "note": "With each burnt offering or sacrifice, “a מִנְחָה of a tenth of fine flour mixed with a quarter of a hin of oil”, more for a ram or bull (Num 15:6, 9)."
+            },
+            {
+              "ref": "Lev.23.13",
+              "role": "defining",
+              "note": "With the lamb on the day the עֹמֶר is waved, “its מִנְחָה, two tenths of fine flour mixed with oil, a fire offering to Yahweh, a pleasing smell”."
+            },
+            {
+              "ref": "Lev.23.16",
+              "role": "defining",
+              "note": "On the fiftieth day “you shall bring a new מִנְחָה to Yahweh”: two loaves baked with leaven, firstfruits (Lev 23:17), which as firstfruits do not go up on the altar (Lev 2:12). Also Num 28:26."
+            },
+            {
+              "ref": "Lev.23.18",
+              "note": "The burnt offerings of the fiftieth day “with their מִנְחָה and their drink offerings”."
+            },
+            {
+              "ref": "Lev.23.37",
+              "note": "The appointed times of Yahweh, to bring “burnt offering and מִנְחָה, sacrifice and drink offerings, each on its day”."
+            },
+            {
+              "ref": "Exo.29.41",
+              "note": "The evening lamb, “as the מִנְחָה of the morning and its drink offering”."
+            },
+            {
+              "ref": "Num.28.5",
+              "note": "The continual offering: a tenth of an ephah of fine flour for a מִנְחָה."
+            },
+            {
+              "ref": "Num.29.6"
+            },
+            {
+              "ref": "Neh.10.34",
+              "note": "“The continual מִנְחָה” among the charges the returned exiles took on."
+            },
+            {
+              "ref": "1Ch.23.29",
+              "note": "The Levites’ charge of “the fine flour for the מִנְחָה”."
+            },
+            {
+              "ref": "Ezk.46.14",
+              "note": "In Ezekiel’s house, a מִנְחָה every morning, a sixth of an ephah with a third of a hin of oil."
+            }
+          ]
+        },
+        {
+          "id": "evening-offering",
+          "gloss": "the (evening) offering, as an hour of the day",
+          "definition": "The hour when the מִנְחָה of the continual offering went up, morning or evening; the evening one is the hour of prayer.",
+          "evidence": [
+            {
+              "ref": "1Ki.18.29",
+              "role": "defining",
+              "note": "The prophets of Baal raved “until the going up of the מִנְחָה”, and none answered."
+            },
+            {
+              "ref": "1Ki.18.36",
+              "role": "defining",
+              "note": "“At the going up of the מִנְחָה” Elijah came near and prayed."
+            },
+            {
+              "ref": "2Ki.3.20",
+              "note": "“In the morning, as the מִנְחָה was going up”, water came by the way of Edom."
+            },
+            {
+              "ref": "2Ki.16.15",
+              "note": "Ahaz’s order: “the burnt offering of the morning and the מִנְחָה of the evening”."
+            },
+            {
+              "ref": "Ezr.9.4",
+              "note": "Ezra sat appalled “until the מִנְחָה of the evening”."
+            },
+            {
+              "ref": "Ezr.9.5",
+              "role": "defining",
+              "note": "“At the מִנְחָה of the evening I rose … and fell on my knees and spread out my hands to Yahweh my God.”"
+            },
+            {
+              "ref": "Dan.9.21",
+              "role": "defining",
+              "note": "While Daniel was speaking in prayer, Gabriel reached him “about the time of the מִנְחָה of the evening”."
+            },
+            {
+              "ref": "Psa.141.2",
+              "role": "defining",
+              "note": "“Let my prayer be set as incense before you, the lifting up of my hands as the מִנְחָה of the evening.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זֶבַח",
+            "note": "“Sacrifice”, the slain offering, paired with it to name the offerings together.",
+            "evidence": [
+              {
+                "ref": "Psa.40.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.9.27"
+              },
+              {
+                "ref": "1Sa.2.29"
+              },
+              {
+                "ref": "1Sa.3.14"
+              },
+              {
+                "ref": "Isa.19.21"
+              }
+            ]
+          },
+          {
+            "lemma": "עֹלָה",
+            "note": "The burnt offering, which the מִנְחָה accompanied.",
+            "evidence": [
+              {
+                "ref": "Jer.14.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.22.23"
+              },
+              {
+                "ref": "Amo.5.22"
+              },
+              {
+                "ref": "Psa.20.4"
+              }
+            ]
+          },
+          {
+            "lemma": "נֶסֶךְ",
+            "note": "The drink offering, its companion: “מִנְחָה and נֶסֶךְ are cut off from the house of Yahweh.”",
+            "evidence": [
+              {
+                "ref": "Jol.1.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Jol.1.13"
+              },
+              {
+                "ref": "Jol.2.14"
+              },
+              {
+                "ref": "Lev.23.18"
+              }
+            ]
+          },
+          {
+            "lemma": "קְטֹרֶת",
+            "note": "Incense, beside the evening מִנְחָה as an image of prayer, and beside the vain מִנְחָה.",
+            "evidence": [
+              {
+                "ref": "Psa.141.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.1.13"
+              }
+            ]
+          },
+          {
+            "lemma": "לְבוֹנָה",
+            "note": "Frankincense, laid on it and brought with it.",
+            "evidence": [
+              {
+                "ref": "Lev.2.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.17.26"
+              },
+              {
+                "ref": "Jer.41.5"
+              },
+              {
+                "ref": "Isa.43.23"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "קָרְבַּן מִנְחָה",
+            "gloss": "an offering of grain, a grain-offering gift",
+            "evidence": [
+              {
+                "ref": "Lev.2.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.2.4"
+              },
+              {
+                "ref": "Lev.2.13"
+              }
+            ]
+          },
+          {
+            "phrase": "מִנְחָה חֲדָשָׁה",
+            "gloss": "a new grain offering (of the fiftieth day)",
+            "evidence": [
+              {
+                "ref": "Lev.23.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.28.26"
+              }
+            ]
+          },
+          {
+            "phrase": "מִנְחַת קְנָאֹת",
+            "gloss": "grain offering of jealousy",
+            "evidence": [
+              {
+                "ref": "Num.5.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.5.18"
+              },
+              {
+                "ref": "Num.5.25"
+              }
+            ]
+          },
+          {
+            "phrase": "מִנְחַת הָעֶרֶב",
+            "gloss": "the evening offering; the hour of it",
+            "evidence": [
+              {
+                "ref": "Ezr.9.5",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.16.15"
+              },
+              {
+                "ref": "Ezr.9.4"
+              },
+              {
+                "ref": "Dan.9.21"
+              },
+              {
+                "ref": "Psa.141.2"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲלוֹת הַמִּנְחָה",
+            "gloss": "the going up of the offering (an hour of the day)",
+            "evidence": [
+              {
+                "ref": "1Ki.18.36",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.18.29"
+              },
+              {
+                "ref": "2Ki.3.20"
+              }
+            ]
+          },
+          {
+            "phrase": "נֹשְׂאֵי מִנְחָה",
+            "gloss": "bearers of tribute: subject peoples",
+            "evidence": [
+              {
+                "ref": "2Sa.8.2",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.8.6"
+              },
+              {
+                "ref": "1Ch.18.2"
+              },
+              {
+                "ref": "Jdg.3.18"
+              }
+            ]
+          },
+          {
+            "phrase": "הִגִּישׁ מִנְחָה",
+            "gloss": "bring near an offering, a tribute",
+            "evidence": [
+              {
+                "ref": "Mal.3.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Mal.2.12"
+              },
+              {
+                "ref": "Amo.5.25"
+              },
+              {
+                "ref": "1Ki.5.1"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "θυσία",
+          "gloss": "sacrifice, offering",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.4.3, מִנְחָה → θυσίαν; Lev.2.1 → θυσίαν; Lev.23.16 → θυσίαν; θυσία renders מִנְחָה ×111"
+            },
+            {
+              "ref": "Heb.11.4",
+              "role": "defining",
+              "note": "“By faith Abel offered to God a better θυσίαν than Cain … God testifying of his gifts (δώροις)”: the מִנְחָה of Gen 4:3–5."
+            },
+            {
+              "ref": "Php.4.18",
+              "note": "The Philippians’ gift to Paul, “a smell of sweet savour, a θυσίαν acceptable, well-pleasing to God”."
+            },
+            {
+              "ref": "Heb.13.15",
+              "note": "“Let us offer up a θυσίαν of praise to God continually, the fruit of lips.”"
+            }
+          ]
+        },
+        {
+          "lemma": "δῶρον",
+          "gloss": "gift, offering",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.32.14, מִנְחָה → δῶρα; Gen.43.11 → δῶρα; Psa.72.10 → δῶρα; Isa.66.20 → δῶρον; δῶρον renders מִנְחָה ×22"
+            },
+            {
+              "ref": "Mat.2.11",
+              "role": "defining",
+              "note": "The magi from the east fall down to the child and offer him δῶρα, gold, frankincense and myrrh: the kings’ gifts of Psa 72:10–11."
+            },
+            {
+              "ref": "Mat.5.23",
+              "note": "“If you bring your δῶρον to the altar and there remember that your brother has something against you”, be reconciled first (Mat 5:23–24)."
+            },
+            {
+              "ref": "Heb.5.1",
+              "note": "Every high priest is appointed “to offer both δῶρα and sacrifices for sins”; also Heb 8:3."
+            },
+            {
+              "ref": "Heb.11.4"
+            }
+          ]
+        },
+        {
+          "lemma": "προσφορά",
+          "gloss": "offering",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.40.7, וּמִנְחָה → προσφοράν (the only such rendering)"
+            },
+            {
+              "ref": "Heb.10.5",
+              "role": "defining",
+              "note": "Quoting Psa 40:7 of Christ coming into the world: “θυσίαν καὶ προσφοράν you did not desire, but a body you prepared for me.”"
+            },
+            {
+              "ref": "Heb.10.10",
+              "role": "defining",
+              "note": "“By that will we have been sanctified through the προσφορᾶς of the body of Jesus Christ once for all.”"
+            },
+            {
+              "ref": "Heb.10.18",
+              "note": "“Where there is forgiveness of these, there is no longer προσφορά for sin.”"
+            },
+            {
+              "ref": "Eph.5.2",
+              "note": "Christ “gave himself for us, a προσφοράν and θυσίαν to God for a smell of sweet savour”."
+            },
+            {
+              "ref": "Rom.15.16",
+              "note": "Paul ministers the gospel of God as a priest, “that the προσφορά of the nations might be acceptable, sanctified by holy spirit”: the nations brought as a מִנְחָה (Isa 66:20)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִנְחָה",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "offering, grain offering",
+      "bdb": [
+        "xm.al.ad"
+      ],
+      "cognate_ids": [
+        "arc-minhata"
+      ],
+      "summary": "Scripture’s Aramaic has the same word twice: in Ezra the grain offerings that go with the animals bought for the altar at Jerusalem, and in Daniel the offering Nebuchadnezzar orders made to Daniel.",
+      "senses": [
+        {
+          "gloss": "offering, grain offering",
+          "definition": "An offering brought to God, or, by a heathen king, to a man he took for one through whom God spoke; in Ezra the grain offering beside the animal sacrifices and drink offerings.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.17",
+              "role": "defining",
+              "note": "Artaxerxes’ letter: with this silver buy “bulls, rams, lambs, וּמִנְחָתְהוֹן וְנִסְכֵּיהוֹן”, their grain offerings and drink offerings, and offer them on the altar of the house of your God in Jerusalem."
+            },
+            {
+              "ref": "Dan.2.46",
+              "role": "defining",
+              "note": "Nebuchadnezzar fell on his face, bowed to Daniel, “and commanded that a מִנְחָה and sweet smells (נִיחֹחִין) be offered to him”, after Daniel had told him “there is a God in heaven who reveals secrets” (Dan 2:28)."
+            }
+          ],
+          "kin": [
+            "offering-to-god",
+            "grain-offering"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-manaha",
+      "lang": "ar",
+      "form": "مَنَحَ، مِنْحَةٌ",
+      "translit": "manaḥa, minḥa",
+      "gloss": "give, grant; lend a milch animal; a gift, a free gift",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Lane’s sources give as the first sense lending a she-camel or sheep for her milk, and then “he gave him a thing … as a free gift”; مِنْحَةٌ is such a loan and also “a gift, or thing given”; form X استمنح “ask a gift”, form VIII امتنح “receive a gift”. The Hebrew word is always a gift given, never a loan, and mostly one brought up to a greater. Arabic ḥ (ح), not ḫ (خ), stands behind ח.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2737, root منح, مَنَحَهُ (n38953)",
+          "note": "“He gave him a thing: he gave him a thing as a free gift.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2737, مِنْحَةٌ (n38959); استمنحهُ (n38958); إِمْتَنَحَ (n38957)",
+          "note": "مِنْحَةٌ “Also, A gift, or thing given … a free gift”."
+        }
+      ]
+    },
+    {
+      "id": "phn-mnht",
+      "lang": "phn",
+      "form": "𐤌𐤍𐤇𐤕",
+      "translit": "mnḥt",
+      "gloss": "grain (food) offering to a god; gift, offering to a god",
+      "relation": "cognate",
+      "note": "The Punic sacrificial tariff of Marseille names “any sacrifice that a person shall sacrifice as a mnḥt” (KAI 69.14); a Neo-Punic dedication pairs the whole burnt offering with a mnḥt (KAI 159.7–8), as Hebrew pairs עֹלָה וּמִנְחָה; a Phoenician dedication calls the object given to a god “this mnḥt” (RES 930.1–2). Krahmalkov lists a separate mnḥt “what is set down, details”, from n-w-ḥ, under its own head.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 294, MNḤT II",
+          "note": "“n.f. 1. FOOD (GRAIN) OFFERING to a god, KAI 69.14 (Pu) … KAI 159.7/8 (NPu) … 2. GIFT, OFFERING to a god, RES 930.1/2 (Ph) hmnḥt z ’š ytn …, ‘This is the gift that Abdmeskar … presented to his Lord’.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-minhata",
+      "lang": "arc",
+      "form": "מִנְחָתָא",
+      "translit": "minḥātā",
+      "gloss": "offering; grain offering (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums use it where the Hebrew has מִנְחָה (Targ. Lev 2:1; Targ. O. Num 18:9), and later Jewish use names the afternoon prayer after the hour of the evening offering.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מִנְחָתָא",
+          "note": "“offering; meal offering. Targ. Lev. II, 1; a. fr. … 2) afternoon, afternoon prayer, Minḥah.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "offerer-before-offering",
+      "statement": "Yahweh “looked on Abel and on his מִנְחָה, but on Cain and on his מִנְחָה he did not look” (Gen 4:4–5): the man is named before the gift. Hebrews says that by faith Abel offered the better sacrifice, through which he was witnessed to be righteous, God testifying of his gifts (Heb 11:4). The prophets say the same of Israel: “bring no more a vain מִנְחָה” (Isa 1:13); “I will not accept your מִנְחֹת” (Amo 5:22); “when they offer burnt offering and מִנְחָה, I will not accept them” (Jer 14:12); “I will not accept a מִנְחָה from your hand” (Mal 1:10). David says, “sacrifice and מִנְחָה you did not desire; ears you have dug for me … I delight to do your will, my God” (Psa 40:7–9), and Hebrews hears Christ saying it, “a body you prepared for me … I come to do your will”, and says “by that will we have been sanctified through the offering of the body of Jesus Christ once for all” (Heb 10:5–10). From the verses: a gift to God was accepted for the faith and obedience of the one who brought it, never in place of them; the offering God desired was a will that does his, and Christ brought it in his own body.",
+      "evidence": [
+        {
+          "ref": "Gen.4.4",
+          "to": "Gen.4.5"
+        },
+        {
+          "ref": "Heb.11.4"
+        },
+        {
+          "ref": "Isa.1.13"
+        },
+        {
+          "ref": "Amo.5.22"
+        },
+        {
+          "ref": "Jer.14.12"
+        },
+        {
+          "ref": "Mal.1.10"
+        },
+        {
+          "ref": "Psa.40.7",
+          "to": "Psa.40.9"
+        },
+        {
+          "ref": "Heb.10.5",
+          "to": "Heb.10.10"
+        }
+      ]
+    },
+    {
+      "topic": "sacrifice-and-offering-cease",
+      "statement": "Daniel was told that after Messiah is cut off, “he will confirm a covenant with many for one seven, and in the middle of the seven he will make זֶבַח וּמִנְחָה cease”, and that the people of the prince to come would destroy the city and the sanctuary (Dan 9:26–27). Hebrews, quoting “sacrifice and offering you did not desire” (Psa 40:7), says Christ “takes away the first to establish the second”, that “by one offering he has perfected for ever those being sanctified”, and that “where there is forgiveness of these, there is no longer offering for sin” (Heb 10:8–9, 14, 18). Jesus told his disciples that when they saw Jerusalem surrounded by armies its desolation was near (Luk 21:20), the abomination of desolation spoken of by Daniel (Mat 24:15). From the verses: the daily מִנְחָה lost its purpose when Messiah’s one offering was made, and was ended in fact when the Romans destroyed the sanctuary in AD 70.",
+      "evidence": [
+        {
+          "ref": "Dan.9.26",
+          "to": "Dan.9.27"
+        },
+        {
+          "ref": "Psa.40.7"
+        },
+        {
+          "ref": "Heb.10.8",
+          "to": "Heb.10.9"
+        },
+        {
+          "ref": "Heb.10.14"
+        },
+        {
+          "ref": "Heb.10.18"
+        },
+        {
+          "ref": "Luk.21.20"
+        },
+        {
+          "ref": "Mat.24.15"
+        }
+      ]
+    },
+    {
+      "topic": "offering-of-the-nations",
+      "statement": "The kings of the earth bring מִנְחָה to the king of Psa 72 and bow down to him (Psa 72:10–11), and Matthew tells of magi from the east bringing the child gifts of gold, frankincense and myrrh (Mat 2:11). Malachi says Yahweh’s name will be great among the nations, and in every place a pure מִנְחָה offered to it (Mal 1:11); Isaiah, that they will bring “all your brethren out of all the nations as a מִנְחָה to Yahweh” to his holy mountain Jerusalem, “as the sons of Israel bring the מִנְחָה in a clean vessel” (Isa 66:20); Zephaniah, that from beyond the rivers of Cush they will bring his מִנְחָה (Zep 3:10). Paul calls his preaching to the nations a priestly service, “that the offering of the nations might be acceptable, sanctified by holy spirit” (Rom 15:16). Malachi also foresees the sons of Levi refined to bring “a מִנְחָה in righteousness”, when “the מִנְחָה of Judah and Jerusalem will be pleasing to Yahweh as in the days of old” (Mal 3:3–4). From the verses: the gift scripture looks for from the nations is the people themselves, made clean and brought to Yahweh; Paul saw it begun in the believing Gentiles, and the prophets place its fullness in Jerusalem when the King reigns over all the earth.",
+      "evidence": [
+        {
+          "ref": "Psa.72.10",
+          "to": "Psa.72.11"
+        },
+        {
+          "ref": "Mat.2.11"
+        },
+        {
+          "ref": "Mal.1.11"
+        },
+        {
+          "ref": "Isa.66.20"
+        },
+        {
+          "ref": "Zep.3.10"
+        },
+        {
+          "ref": "Rom.15.16"
+        },
+        {
+          "ref": "Mal.3.3",
+          "to": "Mal.3.4"
+        }
+      ]
+    },
+    {
+      "topic": "prayer-at-the-evening-offering",
+      "statement": "Elijah prayed “at the going up of the מִנְחָה”, and fire fell (1Ki 18:36–38); Ezra rose “at the מִנְחָה of the evening” and spread out his hands to Yahweh (Ezr 9:5); Gabriel came to Daniel as he prayed, “about the time of the מִנְחָה of the evening” (Dan 9:21); David asks, “let my prayer be set as incense before you, the lifting up of my hands as the מִנְחָה of the evening” (Psa 141:2). The memorial portion of every מִנְחָה was burnt for a pleasing smell to Yahweh (Lev 2:2). Peter and John went up to the temple at the hour of prayer, the ninth hour (Act 3:1), and Cornelius, praying at the ninth hour, was told “your prayers and your alms have gone up for a memorial before God” (Act 10:3–4, 30–31). From the verses: the hour of the evening offering was Israel’s hour of prayer, and prayer itself is set before God as that offering was.",
+      "evidence": [
+        {
+          "ref": "1Ki.18.36",
+          "to": "1Ki.18.38"
+        },
+        {
+          "ref": "Ezr.9.5"
+        },
+        {
+          "ref": "Dan.9.21"
+        },
+        {
+          "ref": "Psa.141.2"
+        },
+        {
+          "ref": "Lev.2.2"
+        },
+        {
+          "ref": "Act.3.1"
+        },
+        {
+          "ref": "Act.10.3",
+          "to": "Act.10.4"
+        },
+        {
+          "ref": "Act.10.30",
+          "to": "Act.10.31"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (מִנְחָה, Lev 23:13, 16, 18, 37); Numbers 10 has no word of this root. The root has no verb in scripture; BDB’s root key m.cn.aa (“lend, give a gift”, no tokens) is left unclaimed. Left out as belonging elsewhere: m.cn.ag, whose 40 tokens are the preposition מִנִּי (poetic מִן, “from”) and once the land Minni (Jer 51:27, a place, so no name entry); m.cn.ah (מִנֵּי, a cross-reference to מִן, no tokens); m.cn.ak (מִנְיָמִין, the name Miniamin, a cross-reference to מִיָּמִן under ימן). The Aramaic word is keyed xm.al.ad, whose root column is מנחה; its tokens are Dan 2:46 and Ezr 7:17 but the key also picks up some twenty Hebrew tokens of the same spelling (e.g. Isa 39:1; Ezk 46:14; Mal 1:10), and Dan 2:46 is also counted under m.cn.ab, so both words’ counts overlap. Some derive מִנְחָה from נוח (hiphil “set down, deposit”); Arabic minḥa “gift” with ḥ and a giving sense, and Krahmalkov’s Punic mnḥt “offering” filed apart from mnḥt “what is set down”, keep it under מנח; reviewer to judge. The Septuagint transliterates it μαναα in 2Ki 8:8–9; 17:3–4; 20:12 and elsewhere (×16), a form not in the New Testament. Not entered: Egyptian mnḥtj, which Wiktionary glosses “gift, tribute” but TLA tla600248 gives as a title, “military tenant”; Ugaritic mnḥ “tribute, gift”, which is not in Segert’s glossary or Fisher and was not checked in a dictionary (DULAT not in sources.json). No Syriac lexeme of the root in the Peshitta New Testament (SEDRA). Psa 40:7 is the only verse the Septuagint renders by προσφορά, and Hebrews 10 quotes it; the doctrine on Dan 9:27 follows the AD 70 reading of data/prophecies.json. Open questions: (1) sense split between gift, tribute and offering to God; (2) whether Lev 23:16’s leavened loaves should be called a grain offering at all, since they were not burnt."
+}
