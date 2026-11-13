@@ -1,0 +1,1973 @@
+{
+  "id": "avad",
+  "root": "אבד",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "death",
+    "destruction",
+    "judgment",
+    "mortality",
+    "loss",
+    "lost-sheep",
+    "the-grave",
+    "feasts"
+  ],
+  "gloss": "perish, be lost; destroy, make perish; lose",
+  "summary": "To perish: to come to an end and be no more, whether a man, a nation, a harvest, a hope or a memory (Num 17:27; Psa 146:4; Jol 1:11; Ezk 37:11); and, of a beast or a sheep, to be lost, strayed from its owner (1Sa 9:3, 20; Ezk 34:16). The piel and hiphil make perish, destroy, most often of Yahweh’s judgment on the wicked and the nations, as in Lev 23:30, where whoever works on the day of covering is destroyed from among his people. Its nouns are destruction (אֹבֵד, אַבְדָן), a lost thing (אֲבֵדָה), and אֲבַדּוֹן, “Destruction”, set beside the grave and death as the place of the dead. Scripture sets perishing against living and standing firm (Psa 1:6; 102:27), and the New Testament takes up the word for the lost sheep Yahweh seeks and for the perishing from which the believer is saved (Luk 19:10; Jhn 3:16).",
+  "words": [
+    {
+      "lemma": "אָבַד",
+      "pos": "verb",
+      "gloss": "perish, be lost; (piel, hiphil) destroy, make perish; lose",
+      "bdb": [
+        "a.ac.aa"
+      ],
+      "cognate_ids": [
+        "uga-abd",
+        "phn-abd",
+        "moab-abd",
+        "arc-abad"
+      ],
+      "summary": "Qal in about two-thirds of its uses: to perish, die, be destroyed, come to nothing, or (of animals) be lost. The piel and hiphil are its causatives, “make perish, destroy”, the piel also “lose” and “waste”; Yahweh is the subject of most hiphils.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "perish, die; be destroyed; come to nothing; be lost, stray",
+          "senses": [
+            {
+              "id": "perish-die",
+              "gloss": "perish, die",
+              "definition": "Of a person or a living thing, to come to the end of life: to die and be no more.",
+              "evidence": [
+                {
+                  "ref": "Num.17.27",
+                  "role": "defining",
+                  "note": "“Behold, we expire (גָּוַעְנוּ), we perish (אָבַדְנוּ), all of us perish”; v. 28 explains: “everyone who comes near … dies (יָמוּת)”."
+                },
+                {
+                  "ref": "Num.17.28"
+                },
+                {
+                  "ref": "Psa.49.11",
+                  "role": "defining",
+                  "note": "“The wise die (יָמוּתוּ); fool and brute alike perish, and leave their wealth to others.”"
+                },
+                {
+                  "ref": "Jon.1.6",
+                  "role": "defining",
+                  "note": "The captain in the storm: “perhaps God will consider us, and we will not perish”."
+                },
+                {
+                  "ref": "Jon.1.14"
+                },
+                {
+                  "ref": "Jon.3.9",
+                  "note": "Nineveh: “who knows … and we will not perish”."
+                },
+                {
+                  "ref": "Est.4.16",
+                  "role": "defining",
+                  "note": "Esther, going in to the king unbidden on pain of death (Est 4:11): “if I perish, I perish”."
+                },
+                {
+                  "ref": "Est.4.14"
+                },
+                {
+                  "ref": "Isa.57.1",
+                  "role": "defining",
+                  "note": "“The righteous perishes and no man lays it to heart … the righteous is gathered away from the evil”."
+                },
+                {
+                  "ref": "Mic.7.2",
+                  "note": "“The godly has perished from the land, and there is none upright among men.”"
+                },
+                {
+                  "ref": "Ecc.7.15",
+                  "note": "A righteous man perishing in his righteousness, a wicked man living long in his evil."
+                },
+                {
+                  "ref": "Job.4.11",
+                  "note": "“The lion perishes for lack of prey.”"
+                },
+                {
+                  "ref": "Job.4.20",
+                  "role": "defining",
+                  "note": "Men “are crushed from morning to evening; without anyone regarding it they perish for ever”."
+                },
+                {
+                  "ref": "Psa.146.4",
+                  "role": "defining",
+                  "note": "“His breath goes out, he returns to his ground; in that very day his thoughts perish.”"
+                },
+                {
+                  "ref": "Ecc.9.6",
+                  "role": "defining",
+                  "note": "Of the dead: “their love and their hatred and their envy have already perished, and they have no more portion for ever”."
+                },
+                {
+                  "ref": "Job.29.13",
+                  "note": "“The blessing of one perishing came upon me”: one at the point of death."
+                },
+                {
+                  "ref": "Job.31.19",
+                  "note": "One perishing for lack of clothing."
+                },
+                {
+                  "ref": "Pro.31.6",
+                  "note": "“Give strong drink to one perishing.”"
+                },
+                {
+                  "ref": "Psa.119.92",
+                  "note": "“Unless your law had been my delight, I would then have perished in my affliction.”"
+                },
+                {
+                  "ref": "2Sa.1.27",
+                  "note": "“How the mighty have fallen, and the weapons of war perished!”: David’s lament for Saul and Jonathan."
+                },
+                {
+                  "ref": "Jer.40.15"
+                },
+                {
+                  "ref": "Mic.4.9"
+                }
+              ]
+            },
+            {
+              "id": "perish-judgment",
+              "gloss": "perish, be destroyed (in judgment)",
+              "definition": "Of a people, a house or the wicked, to be destroyed and cease, as the penalty of their sin; often “perish from the land”.",
+              "evidence": [
+                {
+                  "ref": "Deu.4.26",
+                  "role": "defining",
+                  "note": "“You shall surely perish (אָבֹד תֹּאבֵדוּן) quickly from the land … you shall not prolong your days on it, but shall utterly be destroyed (הִשָּׁמֵד תִּשָּׁמֵדוּן).”"
+                },
+                {
+                  "ref": "Deu.8.19",
+                  "role": "defining",
+                  "note": "If you go after other gods, “you shall surely perish”."
+                },
+                {
+                  "ref": "Deu.8.20",
+                  "note": "“As the nations Yahweh makes perish before you, so you shall perish, because you would not listen.”"
+                },
+                {
+                  "ref": "Deu.30.18"
+                },
+                {
+                  "ref": "Deu.11.17"
+                },
+                {
+                  "ref": "Deu.28.20"
+                },
+                {
+                  "ref": "Deu.28.22"
+                },
+                {
+                  "ref": "Jos.23.13"
+                },
+                {
+                  "ref": "Jos.23.16"
+                },
+                {
+                  "ref": "Lev.26.38",
+                  "note": "“You shall perish among the nations, and the land of your enemies shall eat you up.”"
+                },
+                {
+                  "ref": "Num.16.33",
+                  "role": "defining",
+                  "note": "Korah’s company “went down alive into the grave (שְׁאֹלָה), the earth covered them, and they perished from among the assembly”."
+                },
+                {
+                  "ref": "2Ki.9.8",
+                  "note": "“The whole house of Ahab shall perish”, beside “I will cut off (וְהִכְרַתִּי) from Ahab every male”."
+                },
+                {
+                  "ref": "Psa.1.6",
+                  "role": "defining",
+                  "note": "“Yahweh knows the way of the righteous, but the way of the wicked will perish.”"
+                },
+                {
+                  "ref": "Psa.2.12",
+                  "note": "“Kiss the son, lest he be angry and you perish in the way.”"
+                },
+                {
+                  "ref": "Psa.37.20",
+                  "role": "defining",
+                  "note": "“The wicked will perish, and the enemies of Yahweh … they vanish (כָּלוּ), in smoke they vanish.”"
+                },
+                {
+                  "ref": "Psa.68.3",
+                  "note": "“As smoke is driven away … as wax melts before the fire, so let the wicked perish before God.”"
+                },
+                {
+                  "ref": "Psa.73.27",
+                  "note": "“Those far from you will perish.”"
+                },
+                {
+                  "ref": "Psa.92.10"
+                },
+                {
+                  "ref": "Psa.9.4"
+                },
+                {
+                  "ref": "Psa.10.16",
+                  "note": "“Yahweh is king for ever and ever; the nations have perished from his land.”"
+                },
+                {
+                  "ref": "Psa.83.18"
+                },
+                {
+                  "ref": "Psa.80.17"
+                },
+                {
+                  "ref": "Jdg.5.31",
+                  "note": "“So may all your enemies perish, Yahweh.”"
+                },
+                {
+                  "ref": "Pro.11.10",
+                  "note": "“When the wicked perish there is shouting.”"
+                },
+                {
+                  "ref": "Pro.19.9"
+                },
+                {
+                  "ref": "Pro.21.28"
+                },
+                {
+                  "ref": "Pro.28.28"
+                },
+                {
+                  "ref": "Job.4.7",
+                  "note": "“Who that was innocent ever perished?”"
+                },
+                {
+                  "ref": "Job.4.9",
+                  "role": "defining",
+                  "note": "“By the breath of God they perish, and by the blast of his nostrils they are consumed (יִכְלוּ).”"
+                },
+                {
+                  "ref": "Job.20.7",
+                  "note": "“He will perish for ever like his own dung.”"
+                },
+                {
+                  "ref": "Isa.41.11",
+                  "note": "“They shall be as nothing, and the men who strive with you shall perish.”"
+                },
+                {
+                  "ref": "Isa.60.12",
+                  "note": "The nation that will not serve Zion will perish."
+                },
+                {
+                  "ref": "Jer.10.15",
+                  "note": "The idols: “in the time of their visitation they shall perish”. Also Jer 51:18."
+                },
+                {
+                  "ref": "Jer.27.10"
+                },
+                {
+                  "ref": "Jer.27.15"
+                },
+                {
+                  "ref": "Amo.1.8"
+                },
+                {
+                  "ref": "Zec.9.5"
+                },
+                {
+                  "ref": "Exo.10.7",
+                  "note": "Pharaoh’s servants: “Do you not yet know that Egypt is destroyed?”"
+                },
+                {
+                  "ref": "Num.21.29",
+                  "note": "“Woe to you, Moab! You are undone, people of Chemosh.”"
+                },
+                {
+                  "ref": "Num.21.30"
+                },
+                {
+                  "ref": "Deu.7.20"
+                },
+                {
+                  "ref": "Oba.1.12"
+                },
+                {
+                  "ref": "Jer.48.46"
+                }
+              ]
+            },
+            {
+              "id": "perish-things",
+              "gloss": "be ruined; vanish, come to nothing",
+              "definition": "Of things, to be ruined or to cease to exist: a harvest, a land, wealth, houses, the heavens; and of what is not a thing, to vanish: hope, memory, name, wisdom, counsel, courage, a vision, a way of escape.",
+              "evidence": [
+                {
+                  "ref": "Jol.1.11",
+                  "role": "defining",
+                  "note": "“The harvest of the field has perished.”"
+                },
+                {
+                  "ref": "Jon.4.10",
+                  "role": "defining",
+                  "note": "The plant “came in a night and perished in a night”."
+                },
+                {
+                  "ref": "Jer.9.11",
+                  "note": "“Why has the land perished, burned like a wilderness?”"
+                },
+                {
+                  "ref": "Jer.48.8"
+                },
+                {
+                  "ref": "Ecc.5.13",
+                  "note": "Riches perish in an evil venture."
+                },
+                {
+                  "ref": "Jer.48.36"
+                },
+                {
+                  "ref": "Amo.3.15",
+                  "note": "“The houses of ivory shall perish.”"
+                },
+                {
+                  "ref": "Ezk.26.17"
+                },
+                {
+                  "ref": "Psa.31.13",
+                  "note": "“I am forgotten like a dead man out of mind; I am like a broken (אֹבֵד) vessel.”"
+                },
+                {
+                  "ref": "Psa.102.27",
+                  "role": "defining",
+                  "note": "The heavens and the earth: “they will perish, but you will stand; they will all wear out like a garment”."
+                },
+                {
+                  "ref": "Psa.9.19",
+                  "role": "defining",
+                  "note": "“The needy will not always be forgotten, nor the hope of the poor perish for ever.”"
+                },
+                {
+                  "ref": "Pro.10.28",
+                  "note": "“The hope of the wicked will perish.”"
+                },
+                {
+                  "ref": "Pro.11.7",
+                  "note": "“When a wicked man dies, his hope perishes.”"
+                },
+                {
+                  "ref": "Ezk.37.11",
+                  "role": "defining",
+                  "note": "The dry bones: “our bones are dried up, and our hope has perished; we are cut off (נִגְזַרְנוּ)”."
+                },
+                {
+                  "ref": "Ezk.19.5"
+                },
+                {
+                  "ref": "Job.8.13"
+                },
+                {
+                  "ref": "Psa.112.10",
+                  "note": "“The desire of the wicked will perish.”"
+                },
+                {
+                  "ref": "Lam.3.18",
+                  "note": "“My strength and my hope from Yahweh have perished.”"
+                },
+                {
+                  "ref": "Psa.9.7",
+                  "note": "“Their very memory has perished.”"
+                },
+                {
+                  "ref": "Job.18.17",
+                  "role": "defining",
+                  "note": "“His memory will perish from the earth, and he will have no name in the street.”"
+                },
+                {
+                  "ref": "Psa.41.6",
+                  "note": "“When will he die, and his name perish?”"
+                },
+                {
+                  "ref": "Isa.29.14",
+                  "role": "defining",
+                  "note": "“The wisdom of their wise will perish, and the understanding of their prudent will be hidden”: quoted at 1Co 1:19."
+                },
+                {
+                  "ref": "Jer.49.7",
+                  "note": "“Has counsel perished from the prudent?”"
+                },
+                {
+                  "ref": "Deu.32.28",
+                  "note": "“A nation void (אֹבַד) of counsel.”"
+                },
+                {
+                  "ref": "Jer.18.18",
+                  "note": "“Law will not perish from the priest, nor counsel from the wise, nor the word from the prophet.” Also Ezk 7:26."
+                },
+                {
+                  "ref": "Ezk.7.26"
+                },
+                {
+                  "ref": "Jer.7.28",
+                  "note": "“Faithfulness has perished, and is cut off (נִכְרְתָה) from their mouth.”"
+                },
+                {
+                  "ref": "Ezk.12.22",
+                  "note": "“The days are prolonged and every vision perishes”: comes to nothing."
+                },
+                {
+                  "ref": "Jer.4.9",
+                  "note": "“The heart of the king will perish”: his courage fails."
+                },
+                {
+                  "ref": "Job.3.3",
+                  "note": "“Let the day perish on which I was born.”"
+                },
+                {
+                  "ref": "Job.30.2"
+                },
+                {
+                  "ref": "Job.6.18",
+                  "note": "Caravans turn aside into the waste and perish."
+                },
+                {
+                  "ref": "Amo.2.14",
+                  "role": "defining",
+                  "note": "“Flight will perish from the swift”: there will be no escape. Also Jer 25:35; Job 11:20; Psa 142:5."
+                },
+                {
+                  "ref": "Jer.25.35"
+                },
+                {
+                  "ref": "Job.11.20"
+                },
+                {
+                  "ref": "Psa.142.5"
+                }
+              ]
+            },
+            {
+              "id": "be-lost",
+              "gloss": "be lost, stray",
+              "definition": "Of an animal or a thing, to be lost to its owner: strayed, missing, still to be sought and found. Of Israel under the figure of a flock, lost sheep whom their shepherds have let stray.",
+              "evidence": [
+                {
+                  "ref": "1Sa.9.3",
+                  "role": "defining",
+                  "note": "“The asses of Kish, Saul’s father, were lost (וַתֹּאבַדְנָה)”, and Saul is sent to seek them."
+                },
+                {
+                  "ref": "1Sa.9.20",
+                  "role": "defining",
+                  "note": "“As for the asses that were lost to you three days ago, do not set your mind on them, for they have been found (נִמְצָאוּ).”"
+                },
+                {
+                  "ref": "Deu.22.3",
+                  "role": "defining",
+                  "note": "“Every lost thing (אֲבֵדַת) of your brother, which is lost (תֹּאבַד) from him and you find it”."
+                },
+                {
+                  "ref": "Jer.50.6",
+                  "role": "defining",
+                  "note": "“My people have been lost sheep (צֹאן אֹבְדוֹת); their shepherds have made them go astray.”"
+                },
+                {
+                  "ref": "Ezk.34.4",
+                  "role": "defining",
+                  "note": "To the shepherds of Israel: “the strayed you have not brought back, and the lost (הָאֹבֶדֶת) you have not sought”."
+                },
+                {
+                  "ref": "Ezk.34.16",
+                  "role": "defining",
+                  "note": "Yahweh: “I will seek the lost (הָאֹבֶדֶת), and bring back the strayed (הַנִּדַּחַת)”; the Septuagint’s τὸ ἀπολωλός is Luk 19:10’s word."
+                },
+                {
+                  "ref": "Psa.119.176",
+                  "role": "defining",
+                  "note": "“I have gone astray (תָּעִיתִי) like a lost sheep (שֶׂה אֹבֵד); seek your servant.”"
+                },
+                {
+                  "ref": "Isa.27.13",
+                  "note": "On that day a great shofar is blown, “and those lost (הָאֹבְדִים) in the land of Assyria and the outcasts (הַנִּדָּחִים) in the land of Egypt” come and bow down to Yahweh in Jerusalem."
+                },
+                {
+                  "ref": "Deu.26.5",
+                  "note": "“אֲרַמִּי אֹבֵד was my father, and he went down to Egypt”: Jacob, a wandering Aramean, or one perishing (with hunger, Gen 42:2; 47:19). Either sense fits."
+                }
+              ],
+              "kin": [
+                "lost-thing"
+              ],
+              "cognate_ids": [
+                "ar-abada",
+                "gez-abda"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "destroy, make perish; make vanish; lose, waste",
+          "senses": [
+            {
+              "id": "piel-destroy",
+              "gloss": "destroy, kill",
+              "definition": "To make people perish: to kill or exterminate them, of men’s violence and of Yahweh’s judgment alike.",
+              "evidence": [
+                {
+                  "ref": "Est.3.13",
+                  "role": "defining",
+                  "note": "Haman’s letters: “to annihilate (לְהַשְׁמִיד), to kill (לַהֲרֹג) and to destroy (וּלְאַבֵּד) all the Jews”. Also Est 7:4; 8:11."
+                },
+                {
+                  "ref": "Est.7.4"
+                },
+                {
+                  "ref": "Est.8.11"
+                },
+                {
+                  "ref": "Est.9.6",
+                  "note": "“The Jews killed (הָרְגוּ) and destroyed five hundred men.” Also Est 9:12."
+                },
+                {
+                  "ref": "Est.9.12"
+                },
+                {
+                  "ref": "Est.3.9"
+                },
+                {
+                  "ref": "Est.4.7"
+                },
+                {
+                  "ref": "Est.8.5"
+                },
+                {
+                  "ref": "Est.9.24"
+                },
+                {
+                  "ref": "2Ki.11.1",
+                  "role": "defining",
+                  "note": "Athaliah “arose and destroyed all the royal seed”."
+                },
+                {
+                  "ref": "Ezk.22.27",
+                  "role": "defining",
+                  "note": "Her princes like wolves tearing prey, “to shed blood, to destroy souls (לְאַבֵּד נְפָשׁוֹת), to get dishonest gain”."
+                },
+                {
+                  "ref": "Psa.119.95",
+                  "note": "“The wicked wait for me to destroy me.”"
+                },
+                {
+                  "ref": "Psa.5.7",
+                  "role": "defining",
+                  "note": "“You destroy those who speak lies; Yahweh abhors the man of blood and deceit.”"
+                },
+                {
+                  "ref": "Psa.9.6",
+                  "note": "“You rebuked the nations, you destroyed the wicked, you blotted out (מָחִיתָ) their name for ever.”"
+                },
+                {
+                  "ref": "Psa.21.11"
+                },
+                {
+                  "ref": "Deu.11.4",
+                  "note": "What Yahweh did to Egypt’s army at the Sea of Reeds: “Yahweh destroyed them to this day”."
+                },
+                {
+                  "ref": "Jer.12.17",
+                  "note": "“I will pluck up and destroy that nation.”"
+                },
+                {
+                  "ref": "Jer.15.7"
+                },
+                {
+                  "ref": "Zep.2.13",
+                  "note": "He will destroy Assyria and make Nineveh a desolation."
+                },
+                {
+                  "ref": "2Ki.13.7"
+                },
+                {
+                  "ref": "2Ki.19.18",
+                  "note": "The Assyrian kings cast the nations’ gods into the fire, “for they were not gods … so they destroyed them”. Also Isa 37:19."
+                },
+                {
+                  "ref": "Isa.37.19"
+                },
+                {
+                  "ref": "Job.12.23",
+                  "note": "“He makes nations great, and destroys them.”"
+                },
+                {
+                  "ref": "Pro.1.32"
+                },
+                {
+                  "ref": "Ezk.28.16",
+                  "note": "To the king of Tyre: “I destroyed you, O covering cherub, from the midst of the stones of fire”."
+                },
+                {
+                  "ref": "Ecc.9.18",
+                  "note": "“One sinner destroys much good.”"
+                }
+              ]
+            },
+            {
+              "gloss": "destroy (idols, high places, bars)",
+              "definition": "To destroy the objects and places of idolatry, or a city’s defences.",
+              "evidence": [
+                {
+                  "ref": "Num.33.52",
+                  "role": "defining",
+                  "note": "“You shall destroy all their carved images … and all their high places you shall destroy.”"
+                },
+                {
+                  "ref": "Deu.12.2",
+                  "role": "defining",
+                  "note": "“You shall utterly destroy all the places where the nations served their gods.”"
+                },
+                {
+                  "ref": "2Ki.21.3",
+                  "note": "Manasseh rebuilt the high places Hezekiah had destroyed."
+                },
+                {
+                  "ref": "Ezk.6.3"
+                },
+                {
+                  "ref": "Lam.2.9",
+                  "note": "“He has destroyed and broken (שִׁבַּר) her bars.”"
+                }
+              ]
+            },
+            {
+              "gloss": "make vanish, blot out",
+              "definition": "To make a name, memory, sound or faculty cease.",
+              "evidence": [
+                {
+                  "ref": "Deu.12.3",
+                  "role": "defining",
+                  "note": "“You shall destroy their name out of that place”, of the nations’ gods."
+                },
+                {
+                  "ref": "Isa.26.14",
+                  "role": "defining",
+                  "note": "“The dead will not live, the Rephaim will not rise; therefore you have visited and destroyed them, and made all memory of them perish.”"
+                },
+                {
+                  "ref": "Jer.51.55",
+                  "note": "Yahweh destroys from Babylon “the great voice”."
+                },
+                {
+                  "ref": "Ecc.7.7",
+                  "note": "“A bribe destroys the heart.”"
+                }
+              ]
+            },
+            {
+              "id": "piel-lose",
+              "gloss": "lose; let stray; waste",
+              "definition": "To let something be lost: the opposite of seeking it; of shepherds who let the flock be lost, and of a man who squanders his wealth.",
+              "evidence": [
+                {
+                  "ref": "Ecc.3.6",
+                  "role": "defining",
+                  "note": "“A time to seek (לְבַקֵּשׁ) and a time to lose (לְאַבֵּד), a time to keep and a time to throw away.”"
+                },
+                {
+                  "ref": "Jer.23.1",
+                  "role": "defining",
+                  "note": "“Woe to the shepherds who destroy and scatter (וּמְפִצִים) the sheep of my pasture.”"
+                },
+                {
+                  "ref": "Pro.29.3",
+                  "role": "defining",
+                  "note": "“He who keeps company with harlots wastes (יְאַבֶּד) his wealth.”"
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "akk-abatu"
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "destroy, make perish",
+          "senses": [
+            {
+              "id": "hiphil-destroy",
+              "gloss": "destroy, make perish (in judgment)",
+              "definition": "To make perish: of Yahweh destroying a person, a people or their remnant, often “from among” or “from” a place, beside כָּרַת “cut off” and הִשְׁמִיד “destroy”; also of Israel and its enemies destroying nations.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.30",
+                  "role": "defining",
+                  "note": "On the day of coverings (יוֹם הַכִּפֻּרִים): “any soul that does any work on that same day, I will destroy that soul (וְהַאֲבַדְתִּי אֶת־הַנֶּפֶשׁ הַהִוא) from among his people”; v. 29 says of the soul not afflicted that day, “it shall be cut off (וְנִכְרְתָה) from its people”."
+                },
+                {
+                  "ref": "Lev.23.29"
+                },
+                {
+                  "ref": "Deu.7.10",
+                  "role": "defining",
+                  "note": "Yahweh “repays those who hate him to their face, to destroy them”."
+                },
+                {
+                  "ref": "Deu.28.63",
+                  "role": "defining",
+                  "note": "“As Yahweh rejoiced over you to do you good … so Yahweh will rejoice over you to make you perish (לְהַאֲבִיד) and to destroy you (וּלְהַשְׁמִיד).”"
+                },
+                {
+                  "ref": "Deu.28.51"
+                },
+                {
+                  "ref": "Deu.8.20"
+                },
+                {
+                  "ref": "Deu.9.3",
+                  "note": "Yahweh goes before you as a devouring fire; “you shall drive them out and destroy them quickly”."
+                },
+                {
+                  "ref": "Deu.7.24",
+                  "note": "“You shall make their name perish from under heaven.”"
+                },
+                {
+                  "ref": "Num.24.19",
+                  "note": "Balaam: one from Jacob shall rule, “and destroy the survivor from the city”."
+                },
+                {
+                  "ref": "Jos.7.7",
+                  "note": "Joshua: “Why have you brought this people over the Jordan … to destroy us?”"
+                },
+                {
+                  "ref": "2Ki.10.19",
+                  "note": "Jehu’s cunning, “to destroy the servants of Baal”."
+                },
+                {
+                  "ref": "2Ki.24.2"
+                },
+                {
+                  "ref": "Jer.1.10",
+                  "role": "defining",
+                  "note": "Jeremiah appointed “to pluck up and to break down, to destroy and to overthrow, to build and to plant”. Also Jer 18:7; 31:28."
+                },
+                {
+                  "ref": "Jer.18.7"
+                },
+                {
+                  "ref": "Jer.31.28"
+                },
+                {
+                  "ref": "Jer.46.8"
+                },
+                {
+                  "ref": "Jer.49.38"
+                },
+                {
+                  "ref": "Ezk.25.7",
+                  "role": "defining",
+                  "note": "To Ammon: “I will cut you off (וְהִכְרַתִּיךָ) from the peoples, and make you perish (וְהַאֲבַדְתִּיךָ) from the countries; I will destroy you (אַשְׁמִידְךָ)”."
+                },
+                {
+                  "ref": "Ezk.25.16"
+                },
+                {
+                  "ref": "Zep.2.5",
+                  "note": "“I will destroy you until there is no inhabitant.”"
+                },
+                {
+                  "ref": "Oba.1.8",
+                  "note": "“I will destroy the wise men out of Edom.”"
+                },
+                {
+                  "ref": "Ezk.32.13"
+                },
+                {
+                  "ref": "Psa.143.12",
+                  "note": "“In your covenant love cut off (תַּצְמִית) my enemies, and destroy all the adversaries of my soul.”"
+                },
+                {
+                  "ref": "Mic.5.9",
+                  "note": "“I will destroy your chariots.”"
+                },
+                {
+                  "ref": "Ezk.30.13",
+                  "note": "“I will destroy the idols.”"
+                },
+                {
+                  "ref": "Jer.25.10",
+                  "note": "“I will make perish from them the voice of joy … the sound of the millstones and the light of the lamp.”"
+                },
+                {
+                  "ref": "Job.14.19",
+                  "role": "defining",
+                  "note": "“As waters wear away stones … so you destroy the hope of man”, followed by “you send him away” to death (Job 14:20)."
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "akk-abatu"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כָּרַת",
+            "note": "“Cut off”, beside it of the soul that works or does not afflict itself on the day of coverings, of Ahab’s house, of Ammon and of faithfulness.",
+            "evidence": [
+              {
+                "ref": "Lev.23.29",
+                "to": "Lev.23.30",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.9.8"
+              },
+              {
+                "ref": "Ezk.25.7"
+              },
+              {
+                "ref": "Jer.7.28"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַד",
+            "note": "“Be destroyed, annihilate”, its closest partner in Deuteronomy and Esther.",
+            "evidence": [
+              {
+                "ref": "Deu.4.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.28.63"
+              },
+              {
+                "ref": "Est.3.13"
+              },
+              {
+                "ref": "Ezk.25.7"
+              }
+            ]
+          },
+          {
+            "lemma": "מוּת",
+            "note": "“Die”, beside “perish” of men.",
+            "evidence": [
+              {
+                "ref": "Num.17.27",
+                "to": "Num.17.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.49.11"
+              },
+              {
+                "ref": "Psa.41.6"
+              }
+            ]
+          },
+          {
+            "lemma": "גָּוַע",
+            "note": "“Expire, breathe one’s last”.",
+            "evidence": [
+              {
+                "ref": "Num.17.27",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הָרַג",
+            "note": "“Kill”.",
+            "evidence": [
+              {
+                "ref": "Est.9.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.3.13"
+              }
+            ]
+          },
+          {
+            "lemma": "כָּלָה",
+            "note": "“Be consumed, vanish”, of the wicked like smoke.",
+            "evidence": [
+              {
+                "ref": "Psa.37.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.4.9"
+              }
+            ]
+          },
+          {
+            "lemma": "תָּעָה",
+            "note": "“Go astray”, of the lost sheep.",
+            "evidence": [
+              {
+                "ref": "Psa.119.176",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.50.6"
+              }
+            ]
+          },
+          {
+            "lemma": "נָדַח",
+            "note": "“Be driven away, strayed”, beside the lost of the flock and of the exiles.",
+            "evidence": [
+              {
+                "ref": "Ezk.34.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.34.4"
+              },
+              {
+                "ref": "Isa.27.13"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בִּקֵּשׁ",
+            "note": "“Seek”, what one does for the lost.",
+            "evidence": [
+              {
+                "ref": "Ecc.3.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.34.16"
+              },
+              {
+                "ref": "Psa.119.176"
+              },
+              {
+                "ref": "1Sa.9.3"
+              }
+            ]
+          },
+          {
+            "lemma": "מָצָא",
+            "note": "“Find”: the lost thing is found.",
+            "evidence": [
+              {
+                "ref": "1Sa.9.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.22.3"
+              }
+            ]
+          },
+          {
+            "lemma": "עָמַד",
+            "note": "“Stand, endure”: the heavens perish, Yahweh stands.",
+            "evidence": [
+              {
+                "ref": "Psa.102.27",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יָדַע",
+            "note": "Yahweh “knows” the way of the righteous; the way of the wicked perishes.",
+            "evidence": [
+              {
+                "ref": "Psa.1.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּנָה",
+            "note": "“Build” and “plant”, against pluck up and destroy.",
+            "evidence": [
+              {
+                "ref": "Jer.1.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.31.28"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אָבֹד תֹּאבֵדוּן",
+            "gloss": "you shall surely perish",
+            "evidence": [
+              {
+                "ref": "Deu.4.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.8.19"
+              },
+              {
+                "ref": "Deu.30.18"
+              }
+            ]
+          },
+          {
+            "phrase": "וְהַאֲבַדְתִּי אֶת־הַנֶּפֶשׁ הַהִוא מִקֶּרֶב עַמָּהּ",
+            "gloss": "I will destroy that soul from among its people",
+            "evidence": [
+              {
+                "ref": "Lev.23.30",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "אָבַד מָנוֹס מִן",
+            "gloss": "flight has perished from: there is no escape",
+            "evidence": [
+              {
+                "ref": "Amo.2.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.25.35"
+              },
+              {
+                "ref": "Job.11.20"
+              },
+              {
+                "ref": "Psa.142.5"
+              }
+            ]
+          },
+          {
+            "phrase": "אָבְדָה תִקְוָתֵנוּ",
+            "gloss": "our hope has perished",
+            "evidence": [
+              {
+                "ref": "Ezk.37.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.19.5"
+              },
+              {
+                "ref": "Psa.9.19"
+              },
+              {
+                "ref": "Pro.11.7"
+              }
+            ]
+          },
+          {
+            "phrase": "שֶׂה אֹבֵד",
+            "gloss": "a lost sheep",
+            "evidence": [
+              {
+                "ref": "Psa.119.176",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.50.6"
+              }
+            ]
+          },
+          {
+            "phrase": "כַּאֲשֶׁר אָבַדְתִּי אָבָדְתִּי",
+            "gloss": "if I perish, I perish",
+            "evidence": [
+              {
+                "ref": "Est.4.16",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἀπόλλυμι",
+          "gloss": "destroy; perish; lose; be lost",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.30, הַאֲבַדְתִּי → ἀπολεῖται; Psa.1.6, תֹּאבֵד → ἀπολεῖται; Ezk.34.16 and 34.4, הָאֹבֶדֶת → τὸ ἀπολωλός; Psa.119.176, אֹבֵד → ἀπολωλός; Isa.29.14, אָבְדָה → ἀπολῶ; ἀπόλλυμι renders אָבַד ×135"
+            },
+            {
+              "ref": "Luk.19.10",
+              "role": "defining",
+              "note": "“The Son of Man came to seek and to save τὸ ἀπολωλός”: Yahweh’s words in Ezk 34:16, “I will seek the lost”; the Peshitta has the root, מֵדֵּם דַּאבִּיד הוָא."
+            },
+            {
+              "ref": "Luk.15.4",
+              "role": "defining",
+              "note": "The shepherd who leaves the ninety-nine to go after the one ἀπολωλός until he finds it; the Peshitta, נִאבַד … דֵּאבַד."
+            },
+            {
+              "ref": "Luk.15.6"
+            },
+            {
+              "ref": "Mat.10.6",
+              "note": "“Go to the lost sheep (τὰ πρόβατα τὰ ἀπολωλότα) of the house of Israel”, the Peshitta’s עֵרבֵּא דֵּאבַדו: Jer 50:6’s צֹאן אֹבְדוֹת. Also Mat 15:24 (where the Peshitta has טעו, “strayed”)."
+            },
+            {
+              "ref": "Mat.15.24"
+            },
+            {
+              "ref": "Jhn.3.16",
+              "role": "defining",
+              "note": "“That whoever believes in him should not perish (μὴ ἀπόληται; Peshitta לָא נִאבַד) but have life of the age”: perishing set against life."
+            },
+            {
+              "ref": "1Co.1.19",
+              "role": "defining",
+              "note": "“I will destroy (ἀπολῶ) the wisdom of the wise”, quoting Isa 29:14, where the Hebrew has the qal “will perish”; the Peshitta has the root’s aphel, אובֵּד."
+            },
+            {
+              "ref": "Mat.10.28",
+              "note": "“Fear him who is able to destroy (ἀπολέσαι; Peshitta נַובֵּד) both soul and body in the valley of Hinnom.”"
+            },
+            {
+              "ref": "2Pe.3.9",
+              "note": "The Lord is “not willing that any should perish (ἀπολέσθαι)”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀπώλεια",
+          "gloss": "destruction, perdition; loss",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.26.6, Job.28.22, Pro.15.11, Pro.27.20, אֲבַדּוֹן → ἀπώλεια; Exo.22.8 and Deu.22.3, אֲבֵדָה → ἀπώλεια"
+            },
+            {
+              "ref": "Mat.7.13",
+              "role": "defining",
+              "note": "“Wide is the gate and broad the way that leads to ἀπώλεια”, set against “the way that leads to life” (Mat 7:14); the Peshitta, לַאבדָנָא."
+            },
+            {
+              "ref": "Mat.7.14"
+            },
+            {
+              "ref": "Heb.10.39",
+              "note": "“We are not of those who draw back to ἀπώλεια, but of those who believe to the preserving of the soul.”"
+            },
+            {
+              "ref": "Php.3.19",
+              "note": "The enemies of the cross, “whose end is ἀπώλεια”."
+            },
+            {
+              "ref": "Rev.17.8",
+              "note": "The beast “goes into ἀπώλεια”; the Peshitta, לַאבדָּנָא."
+            },
+            {
+              "ref": "Jhn.17.12",
+              "note": "“None of them is lost (ἀπώλετο) except the son of ἀπώλεια.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲבַדּוֹן",
+      "pos": "noun",
+      "gloss": "destruction; Abaddon, the place of the destroyed dead",
+      "bdb": [
+        "a.ac.af",
+        "a.ac.ad"
+      ],
+      "cognate_ids": [
+        "syc-abdana"
+      ],
+      "summary": "Destruction as a place: set beside שְׁאוֹל, the grave, death and the burial place, it names the realm of the dead as where they are destroyed. It is not hidden from Yahweh, it is never full, and his faithfulness is not told there. Revelation 9:11 takes the word into Greek as the name of the king of the locusts, Ἀβαδδών, and translates it Ἀπολλύων, “Destroyer”.",
+      "senses": [
+        {
+          "id": "abaddon-place",
+          "gloss": "destruction, the place of the dead",
+          "definition": "The grave as destruction: where the dead are, in parallel with the grave (שְׁאוֹל, קֶבֶר) and death.",
+          "evidence": [
+            {
+              "ref": "Psa.88.12",
+              "role": "defining",
+              "note": "“Will your covenant love be told in the grave (בַּקֶּבֶר), your faithfulness in Abaddon?”, after “will the dead rise and praise you?” (Psa 88:11)."
+            },
+            {
+              "ref": "Psa.88.11"
+            },
+            {
+              "ref": "Job.26.6",
+              "role": "defining",
+              "note": "“The grave (שְׁאוֹל) is naked before him, and Abaddon has no covering.”"
+            },
+            {
+              "ref": "Pro.15.11",
+              "role": "defining",
+              "note": "“The grave and Abaddon are before Yahweh; how much more the hearts of the sons of men!”"
+            },
+            {
+              "ref": "Pro.27.20",
+              "role": "defining",
+              "note": "“The grave and Abaddon (וַאֲבַדּוֹ, ketiv ואבדה) are never satisfied; and the eyes of man are never satisfied.”"
+            },
+            {
+              "ref": "Job.28.22",
+              "note": "“Abaddon and death say, ‘We have heard a report of it [wisdom] with our ears.’”"
+            }
+          ]
+        },
+        {
+          "gloss": "utter destruction",
+          "definition": "Ruin to the end, which a fire burns down to.",
+          "evidence": [
+            {
+              "ref": "Job.31.12",
+              "role": "defining",
+              "note": "Adultery “is a fire that devours to Abaddon, and would root out all my increase”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שְׁאוֹל",
+            "note": "The grave.",
+            "evidence": [
+              {
+                "ref": "Job.26.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.15.11"
+              },
+              {
+                "ref": "Pro.27.20"
+              }
+            ]
+          },
+          {
+            "lemma": "קֶבֶר",
+            "note": "The burial place.",
+            "evidence": [
+              {
+                "ref": "Psa.88.12",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מָוֶת",
+            "note": "Death.",
+            "evidence": [
+              {
+                "ref": "Job.28.22",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "Ἀβαδδών",
+          "gloss": "Abaddon",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. Ἀβαδδών",
+              "note": "From Hebrew אֲבַדּוֹן, “destruction”, the place of the ruined dead in Job 26:6; 28:22; 31:12; Psa 88:12; Pro 15:11; in the New Testament the name of the angel of the abyss."
+            },
+            {
+              "ref": "Rev.9.11",
+              "role": "defining",
+              "note": "The locusts “have as king over them the messenger of the abyss; his name in Hebrew is Ἀβαδδών, and in Greek he has the name Ἀπολλύων”: the writer gives the Hebrew word and its meaning, “Destroyer”, from ἀπόλλυμι. The Peshitta keeps the Hebrew, עַבַדֻּו."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀπώλεια",
+          "gloss": "destruction, perdition",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.26.6, אֲבַדּוֹן → ἀπωλείᾳ; Job.28.22 and Pro.15.11, ἀπώλεια"
+            },
+            {
+              "ref": "Mat.7.13",
+              "note": "The broad way “that leads to ἀπώλεια”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֹבֵד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "destruction",
+      "bdb": [
+        "a.ac.ab"
+      ],
+      "cognate_ids": [
+        "uga-abd",
+        "moab-abd"
+      ],
+      "summary": "Only in Balaam’s last oracles, in the phrase עֲדֵי אֹבֵד, “to destruction”: the end of Amalek and of the power that afflicts Asshur and Eber. In form it is the qal participle “perishing”, used as a noun.",
+      "senses": [
+        {
+          "gloss": "destruction",
+          "definition": "The end a nation comes to: its perishing.",
+          "evidence": [
+            {
+              "ref": "Num.24.20",
+              "role": "defining",
+              "note": "“Amalek was the first of the nations, but his end (אַחֲרִיתוֹ) will be to destruction (עֲדֵי אֹבֵד).”"
+            },
+            {
+              "ref": "Num.24.24",
+              "role": "defining",
+              "note": "Ships from Kittim will afflict Asshur and Eber, “and he also will come to destruction”."
+            }
+          ],
+          "kin": [
+            "perish-judgment"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲבֵדָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a lost thing",
+      "bdb": [
+        "a.ac.ac"
+      ],
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "summary": "A thing someone has lost, in the law’s rules for finding and returning it.",
+      "senses": [
+        {
+          "id": "lost-thing",
+          "gloss": "a lost thing, lost property",
+          "definition": "Something lost by its owner and found by another, which the law requires to be restored, not kept or denied.",
+          "evidence": [
+            {
+              "ref": "Deu.22.3",
+              "role": "defining",
+              "note": "“Every lost thing of your brother, which is lost from him and you find it, you may not hide yourself.”"
+            },
+            {
+              "ref": "Exo.22.8",
+              "role": "defining",
+              "note": "In disputes over “any lost thing of which one says, ‘This is it’”, both come before God."
+            },
+            {
+              "ref": "Lev.5.22",
+              "role": "defining",
+              "note": "One who “has found a lost thing and lied about it” must restore it with a fifth added and bring a guilt offering (Lev 5:23–25)."
+            },
+            {
+              "ref": "Lev.5.23"
+            }
+          ],
+          "kin": [
+            "be-lost"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀπώλεια",
+          "gloss": "loss; destruction",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.22.8, אֲבֵדָה → ἀπωλείας; Deu.22.3, אֲבֵדַת → ἀπώλειαν"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַבְדָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "destruction",
+      "bdb": [
+        "a.ac.ae"
+      ],
+      "cognate_ids": [
+        "syc-abdana"
+      ],
+      "summary": "Destruction of a people, only in Esther; the same formation as the Peshitta’s אַבדָּנָא.",
+      "senses": [
+        {
+          "gloss": "destruction",
+          "definition": "The destroying of a people by slaughter.",
+          "evidence": [
+            {
+              "ref": "Est.8.6",
+              "role": "defining",
+              "note": "Esther: “how can I bear to see the destruction (בְּאָבְדַן) of my kindred?”"
+            },
+            {
+              "ref": "Est.9.5",
+              "role": "defining",
+              "note": "“The Jews struck all their enemies with the stroke of the sword, and killing (הֶרֶג), and destruction (וְאַבְדָן).”"
+            }
+          ],
+          "kin": [
+            "piel-destroy"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲבַד",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "perish; (haphel) destroy; (hophal) be destroyed",
+      "bdb": [
+        "xa.ab.aa"
+      ],
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "summary": "Scripture’s Aramaic uses the root as the Hebrew does: the gods that did not make heaven and earth will perish (Jer 10:11), Nebuchadnezzar orders the wise men destroyed (Dan 2), and the fourth beast and the horn’s dominion are destroyed for ever (Dan 7).",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "perish",
+          "senses": [
+            {
+              "gloss": "perish",
+              "definition": "Cease to be, of the false gods.",
+              "evidence": [
+                {
+                  "ref": "Jer.10.11",
+                  "role": "defining",
+                  "note": "“The gods that did not make the heavens and the earth shall perish (יֵאבַדוּ) from the earth and from under these heavens.”"
+                }
+              ],
+              "kin": [
+                "perish-judgment"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "destroy",
+          "senses": [
+            {
+              "gloss": "destroy, put to death",
+              "definition": "To destroy men by killing them, and a kingdom by bringing it to an end.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.12",
+                  "role": "defining",
+                  "note": "The king commanded “to destroy (לְהוֹבָדָה) all the wise men of Babylon”; v. 13, “the wise men were to be killed (מִתְקַטְּלִין)”."
+                },
+                {
+                  "ref": "Dan.2.13"
+                },
+                {
+                  "ref": "Dan.2.18"
+                },
+                {
+                  "ref": "Dan.2.24",
+                  "note": "Daniel to Arioch: “Do not destroy the wise men of Babylon.”"
+                },
+                {
+                  "ref": "Dan.7.26",
+                  "role": "defining",
+                  "note": "The court sits, “and his dominion they will take away, to consume and to destroy it to the end”."
+                }
+              ],
+              "kin": [
+                "hiphil-destroy"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be destroyed",
+          "senses": [
+            {
+              "gloss": "be destroyed",
+              "definition": "Passive of the haphel.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.11",
+                  "role": "defining",
+                  "note": "“The beast was slain, and its body destroyed (וְהוּבַד), and given to the burning fire.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֵבַד",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "perish, be lost; (aphel) destroy, lose",
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "summary": "The Peshitta’s verb for perishing and being lost, where the Greek has ἀπόλλυμι: the lost sheep and the lost son, the perishing from which the believer is saved, and Yahweh’s destroying of the wise man’s wisdom (1Co 1:19, quoting Isa 29:14).",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "perish; be lost",
+          "senses": [
+            {
+              "gloss": "perish",
+              "definition": "Die, be destroyed; set against having life of the age.",
+              "evidence": [
+                {
+                  "ref": "Jhn.3.16",
+                  "role": "defining",
+                  "note": "“Whoever believes in him לָא נִאבַד, but shall have life of the age.”"
+                },
+                {
+                  "ref": "Jhn.3.15"
+                },
+                {
+                  "ref": "2Pe.3.9",
+                  "note": "Not wishing that any man נִאבַד, but that all come to repentance."
+                },
+                {
+                  "ref": "Jhn.17.12",
+                  "note": "“Not one of them אֵבַד, but the son of perdition (בּרֵה דַּאבדָּנָא).”"
+                },
+                {
+                  "ref": "Jas.1.11",
+                  "note": "The beauty of the grass’s appearance אָבֵד in the sun’s heat."
+                }
+              ],
+              "kin": [
+                "perish-die",
+                "perish-judgment"
+              ]
+            },
+            {
+              "gloss": "be lost",
+              "definition": "Be lost to its owner, of a sheep or of people under that figure.",
+              "evidence": [
+                {
+                  "ref": "Luk.15.4",
+                  "role": "defining",
+                  "note": "“If one of them נִאבַד, does he not leave the ninety-nine … and go after the one דֵּאבַד until he finds it?”"
+                },
+                {
+                  "ref": "Mat.10.6",
+                  "role": "defining",
+                  "note": "“Go to the sheep דֵּאבַדו of the house of Israel.”"
+                },
+                {
+                  "ref": "Luk.19.10",
+                  "role": "defining",
+                  "note": "The Son of Man came to seek and save מֵדֵּם דַּאבִּיד הוָא, “what was lost”, as Ezk 34:16."
+                },
+                {
+                  "ref": "Mat.18.11"
+                }
+              ],
+              "kin": [
+                "be-lost"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "destroy; lose",
+          "senses": [
+            {
+              "gloss": "destroy",
+              "definition": "Make perish.",
+              "evidence": [
+                {
+                  "ref": "1Co.1.19",
+                  "role": "defining",
+                  "note": "“It is written, דַּאובֵּד the wisdom of the wise”: Isa 29:14."
+                },
+                {
+                  "ref": "Mat.10.28",
+                  "role": "defining",
+                  "note": "Fear him who is able נַובֵּד both soul and body in the valley of Hinnom."
+                }
+              ],
+              "kin": [
+                "hiphil-destroy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַבדָּנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "destruction, perdition; loss",
+      "cognate_ids": [
+        "syc-abdana"
+      ],
+      "summary": "The Peshitta’s noun for ἀπώλεια: the destruction the broad way leads to, and the end of the beast.",
+      "senses": [
+        {
+          "gloss": "destruction, perdition",
+          "definition": "The end of those who perish, set against life.",
+          "evidence": [
+            {
+              "ref": "Mat.7.13",
+              "role": "defining",
+              "note": "The broad way “that leads לַאבדָנָא”, against the narrow way to life (Mat 7:14)."
+            },
+            {
+              "ref": "Heb.10.39",
+              "role": "defining",
+              "note": "“We are not of the drawing back that leads לַאבדָנָא, but of the faith that gains our soul.”"
+            },
+            {
+              "ref": "Rev.17.8",
+              "note": "The beast “goes לַאבדָּנָא”."
+            },
+            {
+              "ref": "Jhn.17.12",
+              "note": "“The son of אַבדָנָא.”"
+            }
+          ],
+          "kin": [
+            "abaddon-place"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַבִידָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "lost; perishing",
+      "cognate_ids": [
+        "arc-abad"
+      ],
+      "summary": "The Peshitta’s adjective “lost”, of the prodigal son, and “perishing”, of those to whom the cross is foolishness.",
+      "senses": [
+        {
+          "gloss": "lost; perishing",
+          "definition": "Lost and then found; or on the way to perishing.",
+          "evidence": [
+            {
+              "ref": "Luk.15.24",
+              "role": "defining",
+              "note": "“This my son was dead and is alive, וַאבִּידָא הוָא and is found.” Also Luk 15:32."
+            },
+            {
+              "ref": "Luk.15.32"
+            },
+            {
+              "ref": "1Co.1.18",
+              "role": "defining",
+              "note": "“The word of the cross is foolishness לַאבִידֵא, but to us who live it is the power of God.”"
+            }
+          ],
+          "kin": [
+            "be-lost"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-abd",
+      "lang": "uga",
+      "form": "𐎀𐎁𐎄",
+      "translit": "ʾbd (Gt ytʾbd)",
+      "gloss": "perish; (?) destroy, destruction",
+      "relation": "cognate",
+      "note": "Fisher lists the Gt form ytʾbd “perished”; Segert’s glossary gives abd in KTU 1.100:5 as “destruction”(?) or a verb “to destroy”(?), comparing Hebrew.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 41, ʾbd",
+          "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-lexical-relationship_fisher-milton-charles_1969-04",
+          "note": "“ʾbd Dt: ytʾbd perished”, compared with Geʿez ʾabda “wander, err; go insane” (OCR read; page image not checked)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 178, §93, abd",
+          "note": "“abd 1.100:5 = 86.73 ‘destruction’(?) or verb /ʾ-b-d/ ‘to destroy’(?) (cf. H. ʾ-b-d)” (OCR read)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000552 ʾbd [lost] V, UGC000012 ʾbd"
+        }
+      ]
+    },
+    {
+      "id": "phn-abd",
+      "lang": "phn",
+      "form": "𐤀𐤁𐤃",
+      "translit": "ʾbd (yiphil)",
+      "gloss": "destroy, devastate",
+      "relation": "cognate",
+      "note": "Phoenician, a Cypriot inscription (KAI 30): a warrior “came up to Alasia (Cyprus) … and devastated (wyʾbd) the island”: the causative, as the Hebrew hiphil.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 27, ʾ-B-D",
+          "note": "“v. yiphʿil DESTROY, DEVASTATE. KAI 30.2/4 (Ph) yʿl hgbr zʾ [ʾl]sy wyʾbd h[…] zʾ ʾyt hʾ[y]” (read from the PDF’s text layer)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000552 ʾbd [lost] V, PUN000008 ʾbd [destroy]"
+        }
+      ]
+    },
+    {
+      "id": "moab-abd",
+      "lang": "sem",
+      "form": "𐤀𐤁𐤃",
+      "translit": "ʾbd (Moabite)",
+      "gloss": "perish",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele, line 7: וישראל אבד אבד עלמ, “and Israel perished, perished for ever”, the qal with the doubled verb as Hebrew’s אָבֹד תֹּאבֵדוּן doubles it, of a people’s ruin.",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, line 7",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "וישראל 𐤟 אבד 𐤟 אבד 𐤟 עלמ"
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, line 7",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "“And Israel utterly perished everlastingly.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-abad",
+      "lang": "arc",
+      "form": "אֲבַד",
+      "translit": "ʾăḇaḏ",
+      "gloss": "be lost, perish; (pael, aphel) destroy",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the Targum uses it of Kish’s lost asses (Targ. 1Sa 9:3), as the Hebrew does, and the pael of destroying the nations’ gods (Targ. 2Ki 19:18).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲבַּד",
+          "note": "“to be lost. Targ. I Sam. IX, 3 … Pa. to destroy. Targ. II Kings XIX, 18 … Af. = Pa. Targ. Deut. XXVI, 5 … to be lost, to go to ruin. Targ. Ps. XLI, 6.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000552 ʾbd [lost] V, ARM000024 ʾBD [lost] V"
+        }
+      ]
+    },
+    {
+      "id": "syc-abdana",
+      "lang": "syc",
+      "form": "ܐܒܕܢܐ",
+      "translit": "ʾabdānā",
+      "gloss": "loss; perdition; waste",
+      "relation": "cognate",
+      "note": "The Syriac noun with the same -ān ending as Hebrew אַבְדָן; the Peshitta uses it for ἀπώλεια, so it is entered also as a word of the entry (אַבדָּנָא). It is the nearest formation to אֲבַדּוֹן too.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 6, ABDNA (root 4 ABD), loss; perdition; waste"
+        }
+      ]
+    },
+    {
+      "id": "akk-abatu",
+      "lang": "akk",
+      "form": "abātu",
+      "translit": "abātu",
+      "gloss": "destroy; be destroyed, collapse, perish",
+      "relation": "possible",
+      "note": "The meaning matches the Hebrew causative and passive closely, but Akkadian has t where the West Semitic forms have d, which is not the regular correspondence; kept as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000052080, abātu [destroy] V",
+          "note": "Senses include “destroy”, “be destroyed”, “collapse”, “perish”; 722 attestations, Old Babylonian to Hellenistic."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000552 ʾbd [lost] V, AKK000029 abātu [destroy] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-abada",
+      "lang": "ar",
+      "form": "أَبَدَ",
+      "translit": "ʾabada",
+      "gloss": "(of a beast) become wild, take fright and run away at random; remain constantly",
+      "relation": "possible",
+      "note": "The animal that runs off wild and is not to be found is near the Hebrew’s strayed asses and lost sheep; but the commoner Arabic sense, “remain for ever” (أَبَدٌ, eternity), is far from the Hebrew, and the link is uncertain.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 4, root ابد, أَبَدَ (n9)",
+          "note": "“He (a beast) became wild, or shy … took fright, and fled, or ran away at random … took fright at, and shunned, mankind”; first, “He remained … constantly, continually, or permanently”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000552 ʾbd [lost] V, ARB000011 A^abada [Endured]"
+        }
+      ]
+    },
+    {
+      "id": "gez-abda",
+      "lang": "gez",
+      "form": "አብደ",
+      "translit": "ʾabda",
+      "gloss": "wander, err; go insane",
+      "relation": "possible",
+      "note": "Wandering and straying are near the Hebrew “be lost, stray” (and Deu 26:5’s אֹבֵד, if “wandering”); cited only from Fisher, not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 41, ʾbd; p. 25",
+          "note": "Geʿez ʾabda “wander, err; go insane”, Tigre “deceive, trifle with”, Amharic “go insane”, compared with Ugaritic ʾbd “perish” (OCR read)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000552 ʾbd [lost] V, GEZ000020 ʾabda [insane] V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Scripture uses אָבַד of what death does to a man: “his breath goes out, he returns to his ground; in that very day his thoughts perish” (Psa 146:4); of the dead, “their love and their hatred and their envy have already perished, and they have no more portion for ever” (Ecc 9:6); men “perish for ever” without anyone regarding it (Job 4:20); the wise die and the fool perishes alike (Psa 49:11). The soul itself can be destroyed: Yahweh says of the soul that works on the day of coverings, “I will destroy that soul from among his people” (Lev 23:30), and Ezekiel’s princes “destroy souls” for gain (Ezk 22:27). The place of the dead is called אֲבַדּוֹן, Destruction, beside the grave and death (Job 26:6; 28:22; Pro 15:11), and there Yahweh’s faithfulness is not told (Psa 88:11–12). From the verses: to perish is to come to an end, thought, feeling and all; the soul is not exempt from it; and the dead in the grave are in destruction, not in conscious life.",
+      "evidence": [
+        {
+          "ref": "Psa.146.4"
+        },
+        {
+          "ref": "Ecc.9.6"
+        },
+        {
+          "ref": "Job.4.20"
+        },
+        {
+          "ref": "Psa.49.11"
+        },
+        {
+          "ref": "Lev.23.30"
+        },
+        {
+          "ref": "Ezk.22.27"
+        },
+        {
+          "ref": "Job.26.6"
+        },
+        {
+          "ref": "Job.28.22"
+        },
+        {
+          "ref": "Pro.15.11"
+        },
+        {
+          "ref": "Psa.88.11",
+          "to": "Psa.88.12"
+        }
+      ]
+    },
+    {
+      "topic": "end-of-the-wicked",
+      "statement": "The end scripture gives the wicked is that they perish: “the way of the wicked will perish” (Psa 1:6); “the wicked will perish … like smoke they vanish” (Psa 37:20); “as wax melts before the fire, so let the wicked perish before God” (Psa 68:3); the dead Rephaim “will not live … you have made all memory of them perish” (Isa 26:14); the hope of the wicked perishes with him (Pro 11:7). Jesus sets the same choice: whoever believes “should not perish but have life of the age” (Jhn 3:16); the broad way leads “to destruction”, the narrow “to life” (Mat 7:13–14); God “is able to destroy both soul and body in the valley of Hinnom” (Mat 10:28); and he is “not willing that any should perish, but that all should come to repentance” (2Pe 3:9). From the verses: the alternative to life given by God is perishing, the end of the person, not a life of another kind; and the God who can destroy wishes rather to save.",
+      "evidence": [
+        {
+          "ref": "Psa.1.6"
+        },
+        {
+          "ref": "Psa.37.20"
+        },
+        {
+          "ref": "Psa.68.3"
+        },
+        {
+          "ref": "Isa.26.14"
+        },
+        {
+          "ref": "Pro.11.7"
+        },
+        {
+          "ref": "Jhn.3.16"
+        },
+        {
+          "ref": "Mat.7.13",
+          "to": "Mat.7.14"
+        },
+        {
+          "ref": "Mat.10.28"
+        },
+        {
+          "ref": "2Pe.3.9"
+        }
+      ]
+    },
+    {
+      "topic": "seeking-the-lost",
+      "statement": "Israel was a lost flock: “my people have been lost sheep; their shepherds have made them go astray” (Jer 50:6), and the shepherds of Israel had not sought the lost (Ezk 34:4). Yahweh answers, “I will seek the lost (הָאֹבֶדֶת) and bring back the strayed” (Ezk 34:16), and “I will set up over them one shepherd, my servant David” (Ezk 34:23); the psalmist prays, “I have gone astray like a lost sheep; seek your servant” (Psa 119:176). Jesus sends the twelve “to the lost sheep of the house of Israel” (Mat 10:6), says “the Son of Man came to seek and to save the lost”, in the Septuagint’s words for Ezk 34:16 (Luk 19:10), and tells of the shepherd who goes after the one lost sheep until he finds it, and the son who “was lost and is found” (Luk 15:4–6, 24). From the verses: Jesus does the seeking Yahweh promised, as the shepherd Yahweh said he would raise up, and the lost who are found are those who repent (Luk 15:7).",
+      "evidence": [
+        {
+          "ref": "Jer.50.6"
+        },
+        {
+          "ref": "Ezk.34.4"
+        },
+        {
+          "ref": "Ezk.34.16"
+        },
+        {
+          "ref": "Ezk.34.23"
+        },
+        {
+          "ref": "Psa.119.176"
+        },
+        {
+          "ref": "Mat.10.6"
+        },
+        {
+          "ref": "Luk.19.10"
+        },
+        {
+          "ref": "Luk.15.4",
+          "to": "Luk.15.7"
+        },
+        {
+          "ref": "Luk.15.24"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (וְהַאֲבַדְתִּי, Lev 23:30). BDB key a.ac.ab (אֹבֵד) also counts six qal participles of the verb (Deu 26:5; Psa 31:13; 119:176; Job 4:11; 29:13; Ecc 7:15), so its use count is high by six; they are cited under the qal. a.ac.ad (אֲבַדֹּה) has no tokens: it is BDB’s cross-reference for Pro 27:20’s ketiv אבדה / qere אֲבַדּוֹ, entered here on אֲבַדּוֹן; the Pro 27:20 token carries no key in the database, so it is not counted. Ezk 6:3 piel and Ezk 26:17 qal are read as the Masoretic text has them. Deu 26:5 אֲרַמִּי אֹבֵד is left between “wandering” and “perishing”, under the qal’s “be lost” sense; review. The Peshitta words are from SEDRA root 4 (ABD): lexemes 5 (verb), 6 (ܐܒܕܢܐ) and 7 (ܐܒܝܕܐ); their verses were found through the BFBS word list and read in the Peshitta; Payne Smith not consulted. The Peshitta uses טעו, not this root, in Mat 15:24. Not entered: Arabic بَادَ “perish” (root بيد, another root, though Wiktionary links it); Akkadian abātu II “run away” (N nābutu), a separate Akkadian root; Sabaic not searched. Ugaritic from Segert and Fisher only (OCR text; DULAT not consulted); Phoenician from Krahmalkov’s text layer only. The Ge'ez cognate rests on Fisher alone. Rev 9:11: the entry records Ἀβαδδών as a loan and its translation “Destroyer”, and does not say who the king of the locusts is. No name of persons is formed from this root in scripture (TIPNR’s Abaddon, if any, not checked)."
+}
