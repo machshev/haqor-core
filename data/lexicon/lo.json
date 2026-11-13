@@ -1,0 +1,1328 @@
+{
+  "id": "lo",
+  "root": "לא",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "negation",
+    "condition",
+    "wish"
+  ],
+  "gloss": "not, no; (לוּ) if, would that",
+  "summary": "Hebrew's plain word for \"not\". לֹא denies a fact (\"he did not\"), forbids for good (\"you shall not\", the form of the commandments), answers \"no\", and set before a noun makes its opposite (\"a no-god\", \"not my people\"); with בְּ or לְ it is \"without\". Scripture's Aramaic and the Peshitta use לָא the same way. It has no root: the same bare lā is the negative in Akkadian, Arabic, Aramaic and Ugaritic from their oldest records, and no Hebrew verb or noun of these consonants gives it (the verb לָאָה \"be weary\" was weighed and does not), so the entry is keyed by its own consonants. The wish-and-condition particle לוּ \"if only; if\" (Akkadian lū, Arabic law) is kept here with לוּלֵא \"were it not\", which is לוּ and לֹא joined; but לוּ is a particle of its own, and nothing shows a common origin with לֹא.",
+  "words": [
+    {
+      "lemma": "לֹא",
+      "pos": "particle",
+      "gloss": "not; no; un-, no-; (with בְּ, לְ) without",
+      "bdb": [
+        "l.ab.aa",
+        "l.aq.ad"
+      ],
+      "cognate_ids": [
+        "akk-la",
+        "ar-la",
+        "uga-l",
+        "arc-la",
+        "phn-la"
+      ],
+      "summary": "Over five thousand times in the Hebrew Bible, also spelled לוֹא. It negates a statement or a lasting command; the immediate \"do not!\" of a plea or warning is אַל, a different word (Num 10:31; Deu 31:6 has both). Sounding the same as לוֹ \"to him\", it is written where לוֹ is read some fifteen times (Psa 100:3, \"and we are his\", written \"and not we\"; Isa 9:2; 63:9; Job 13:15), and לוּ is read for it twice (2Sa 18:12; 19:7).",
+      "senses": [
+        {
+          "id": "not",
+          "gloss": "not (of a fact)",
+          "definition": "Denies that something is, was or will be so; it stands before the verb, or before whatever word is denied.",
+          "evidence": [
+            {
+              "ref": "Gen.18.15",
+              "role": "defining",
+              "note": "Sarah: \"I did not laugh\" (לֹא צָחַקְתִּי); he: \"No, but you did laugh\". The same verb affirmed and denied."
+            },
+            {
+              "ref": "Num.23.19",
+              "role": "defining",
+              "note": "\"Has he said, and will he not do it?\" (וְלֹא יַעֲשֶׂה)."
+            },
+            {
+              "ref": "Gen.2.5",
+              "note": "\"Yahweh God had not caused it to rain\", beside אַיִן \"there was no man\"."
+            },
+            {
+              "ref": "Gen.2.18",
+              "note": "Before an adjective: \"not good\" (לֹא־טוֹב)."
+            },
+            {
+              "ref": "Num.10.30",
+              "note": "Hobab: \"I will not go, but to my own land… I will go.\""
+            },
+            {
+              "ref": "Lev.23.29",
+              "note": "In a relative clause: \"every soul that does not afflict itself\"."
+            }
+          ]
+        },
+        {
+          "id": "you-shall-not",
+          "gloss": "you shall not (prohibition)",
+          "definition": "With the imperfect, a standing prohibition: what is never to be done. It is the form of the commandments and of the feast laws, where the plea or warning of the moment uses אַל.",
+          "evidence": [
+            {
+              "ref": "Exo.20.13",
+              "role": "defining",
+              "note": "\"You shall not murder\" (לֹא תִּרְצָח), quoted in Mat 5:21 with οὐ."
+            },
+            {
+              "ref": "Lev.23.7",
+              "role": "defining",
+              "note": "\"You shall do no work of service\" on the first day of unleavened bread (לֹא תַעֲשׂוּ), the refrain of the feast calendar (Lev 23:8, 21, 25, 35, 36)."
+            },
+            {
+              "ref": "Lev.23.14",
+              "note": "No bread or parched grain until the day the firstfruits are brought."
+            },
+            {
+              "ref": "Lev.23.22",
+              "note": "\"You shall not finish off the corner of your field.\""
+            },
+            {
+              "ref": "Deu.6.16",
+              "note": "\"You shall not test Yahweh your God\", quoted in Mat 4:7."
+            },
+            {
+              "ref": "Deu.31.6",
+              "role": "defining",
+              "note": "\"Do not fear\" (אַל) for the moment; \"he will not fail you nor forsake you\" (לֹא) for a lasting certainty. Heb 13:5 quotes the second."
+            }
+          ]
+        },
+        {
+          "id": "no",
+          "gloss": "no (as an answer)",
+          "definition": "Standing alone, \"no\"; with כִּי, \"no, but…\", turning down what was said or offered and putting the truth in its place.",
+          "evidence": [
+            {
+              "ref": "Jdg.12.5",
+              "role": "defining",
+              "note": "\"Are you an Ephraimite?\" \"And he said, No.\""
+            },
+            {
+              "ref": "Hag.2.12",
+              "role": "defining",
+              "note": "\"Will it become holy?\" \"The priests answered and said, No.\""
+            },
+            {
+              "ref": "Gen.19.2",
+              "note": "\"No, but we will lodge in the street.\""
+            },
+            {
+              "ref": "Jos.5.14",
+              "note": "\"No, but I am prince of Yahweh's host.\""
+            }
+          ]
+        },
+        {
+          "id": "no-thing",
+          "gloss": "not-, no- (before a noun); nothing",
+          "definition": "Set before a noun, it names what is not that thing: a \"no-god\" is something that is not a god, \"not my people\" a people that is not his. Standing for a noun, it is \"nothing\".",
+          "evidence": [
+            {
+              "ref": "Deu.32.21",
+              "role": "defining",
+              "note": "\"They have moved me to jealousy with a no-god (בְלֹא־אֵל)… I will move them to jealousy with a no-people (בְּלֹא־עָם)\", beside \"their vanities\" and \"a foolish nation\". Quoted in Rom 10:19, ἐπ᾽ οὐκ ἔθνει."
+            },
+            {
+              "ref": "Hos.1.9",
+              "role": "defining",
+              "note": "\"Call his name לֹא עַמִּי, for you are not my people.\""
+            },
+            {
+              "ref": "Hos.2.25",
+              "note": "\"I will say to לֹא־עַמִּי, You are my people\", quoted in Rom 9:25."
+            },
+            {
+              "ref": "Jer.5.7",
+              "note": "\"They have sworn by no-gods\" (בְּלֹא אֱלֹהִים)."
+            },
+            {
+              "ref": "Isa.10.15",
+              "note": "The rod lifting \"what is not wood\": the man who wields it."
+            },
+            {
+              "ref": "Isa.31.8",
+              "note": "\"A sword, not of man\" (לֹא־אִישׁ)."
+            },
+            {
+              "ref": "Amo.6.13",
+              "note": "\"You who rejoice in a no-thing\" (לְלֹא דָבָר), playing on the town Lo-debar."
+            },
+            {
+              "ref": "Job.6.21",
+              "note": "As written (לא), \"now you have become nothing\"; read as לוֹ."
+            }
+          ]
+        },
+        {
+          "id": "without",
+          "gloss": "without (with בְּ, לְ)",
+          "definition": "After the prepositions בְּ \"in, with\" and לְ \"for, to\", the lack of something: \"with no…\", \"without\".",
+          "kin": [
+            "arc-without"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.35.22",
+              "role": "defining",
+              "note": "\"Suddenly, without enmity (בְּלֹא־אֵיבָה)… without lying in wait\": the manslayer who did not hate."
+            },
+            {
+              "ref": "Job.8.11",
+              "role": "defining",
+              "note": "\"Can papyrus grow up without mire (בְּלֹא בִצָּה)? can the reed grow without water (בְלִי־מָיִם)?\": בְּלֹא beside בְּלִי."
+            },
+            {
+              "ref": "Isa.55.1",
+              "note": "\"Buy wine and milk without money and without price.\""
+            },
+            {
+              "ref": "2Ch.15.3",
+              "note": "\"Many days Israel was without the true God, without a teaching priest, without law\" (לְלֹא)."
+            },
+            {
+              "ref": "Pro.19.2",
+              "note": "\"A soul without knowledge is not good.\""
+            }
+          ]
+        },
+        {
+          "id": "is-it-not",
+          "gloss": "is it not? (surely)",
+          "definition": "With the question ה־, הֲלֹא asks a question whose answer is \"yes\": it puts forward what the hearer must grant.",
+          "evidence": [
+            {
+              "ref": "Gen.13.9",
+              "role": "defining",
+              "note": "\"Is not the whole land before you?\": Abram offers Lot his choice."
+            },
+            {
+              "ref": "Gen.4.7",
+              "note": "\"If you do well, is there not lifting up?\""
+            },
+            {
+              "ref": "Gen.37.13",
+              "note": "\"Are not your brothers feeding the flock in Shechem?\""
+            },
+            {
+              "ref": "1Ki.11.41",
+              "note": "\"Are they not written in the book of the acts of Solomon?\", the formula closing a reign."
+            }
+          ]
+        },
+        {
+          "gloss": "surely (in an oath, אִם־לֹא)",
+          "definition": "In an oath, אִם־לֹא, \"if not…\", leaves the curse unspoken and so binds the swearer to do the thing: \"surely\".",
+          "evidence": [
+            {
+              "ref": "Num.14.28",
+              "role": "defining",
+              "note": "\"As I live, says Yahweh, if not as you have spoken in my ears, so will I do to you\": he surely will."
+            },
+            {
+              "ref": "Gen.24.38",
+              "note": "The servant's oath: \"if not to my father's house you shall go\": you shall go there."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אַיִן",
+            "note": "\"there is not\": the negative of being, beside לֹא the negative of the verb.",
+            "evidence": [
+              {
+                "ref": "Gen.2.5"
+              }
+            ]
+          },
+          {
+            "lemma": "בְּלִי",
+            "note": "\"without\", in the parallel line.",
+            "evidence": [
+              {
+                "ref": "Job.8.11"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אַל",
+            "note": "The other negative: אַל with the jussive asks or warns for the moment (\"do not!\"); לֹא with the imperfect states or commands what holds.",
+            "evidence": [
+              {
+                "ref": "Num.10.31",
+                "note": "Moses to Hobab: \"Do not leave us\" (אַל־נָא תַּעֲזֹב), after Hobab's \"I will not go\" (לֹא אֵלֵךְ, Num 10:30)."
+              },
+              {
+                "ref": "Deu.31.6"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לֹא תַעֲשֶׂה / לֹא תַעֲשׂוּ",
+            "gloss": "you shall not do: the standing prohibition",
+            "evidence": [
+              {
+                "ref": "Exo.20.13"
+              },
+              {
+                "ref": "Lev.23.7"
+              },
+              {
+                "ref": "Lev.23.31"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא כִּי",
+            "gloss": "no, but…",
+            "evidence": [
+              {
+                "ref": "Gen.18.15"
+              },
+              {
+                "ref": "Gen.19.2"
+              },
+              {
+                "ref": "Jos.5.14"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא … כִּי אִם",
+            "gloss": "not … but rather",
+            "evidence": [
+              {
+                "ref": "Gen.32.29",
+                "note": "\"Your name shall no more be called Jacob, but Israel.\""
+              },
+              {
+                "ref": "Num.10.30"
+              },
+              {
+                "ref": "Psa.1.4"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא־כֵן",
+            "gloss": "not so",
+            "evidence": [
+              {
+                "ref": "Gen.48.18"
+              },
+              {
+                "ref": "Psa.1.4"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא … עוֹד",
+            "gloss": "no more, never again",
+            "evidence": [
+              {
+                "ref": "Gen.9.11",
+                "note": "\"All flesh shall not be cut off any more by the waters of the flood, and there shall not be any more a flood to destroy the earth.\""
+              },
+              {
+                "ref": "Gen.32.29"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא … וְלֹא",
+            "gloss": "neither … nor",
+            "evidence": [
+              {
+                "ref": "Deu.31.6"
+              },
+              {
+                "ref": "1Sa.15.29"
+              }
+            ]
+          },
+          {
+            "phrase": "הֲלֹא / הֲלוֹא",
+            "gloss": "is it not? surely",
+            "evidence": [
+              {
+                "ref": "Gen.13.9"
+              },
+              {
+                "ref": "1Ki.11.41"
+              }
+            ]
+          },
+          {
+            "phrase": "אִם־לֹא",
+            "gloss": "if not; (in an oath) surely",
+            "evidence": [
+              {
+                "ref": "Gen.18.21",
+                "note": "A plain condition: \"and if not, I will know\"."
+              },
+              {
+                "ref": "Num.14.28"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּלֹא / לְלֹא",
+            "gloss": "without",
+            "evidence": [
+              {
+                "ref": "Num.35.22"
+              },
+              {
+                "ref": "2Ch.15.3"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא עַמִּי",
+            "gloss": "not my people",
+            "evidence": [
+              {
+                "ref": "Hos.1.9"
+              },
+              {
+                "ref": "Hos.2.25"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "οὐ",
+          "gloss": "not",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 20:13 word 1",
+              "note": "οὐ φονεύσεις for לֹא תִּרְצָח."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 32:21 word 9",
+              "note": "ἐπ᾽ οὐκ ἔθνει for בְּלֹא־עָם."
+            },
+            {
+              "ref": "Mat.5.21",
+              "note": "Jesus quotes the commandment: οὐ φονεύσεις."
+            },
+            {
+              "ref": "Mat.4.4",
+              "note": "Answering the adversary with Deu 8:3: \"Man shall not live by bread alone\" (לֹא עַל־הַלֶּחֶם לְבַדּוֹ)."
+            },
+            {
+              "ref": "Mat.4.7",
+              "note": "Deu 6:16, לֹא תְנַסּוּ: οὐκ ἐκπειράσεις."
+            },
+            {
+              "ref": "Rom.10.19",
+              "note": "Deu 32:21's \"no-people\": ἐπ᾽ οὐκ ἔθνει."
+            },
+            {
+              "ref": "Rom.9.25",
+              "note": "Hos 2:25: τὸν οὐ λαόν μου, \"the not-my-people\"."
+            },
+            {
+              "ref": "1Pe.2.10",
+              "note": "\"Who once were not a people (οὐ λαός), but are now the people of God.\""
+            }
+          ]
+        },
+        {
+          "lemma": "μή",
+          "gloss": "not; (οὐ μή) never",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 31:6 word 16",
+              "note": "μή for the second לֹא of \"he will not fail you nor forsake you\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 3:3 word 11"
+            },
+            {
+              "ref": "Heb.13.5",
+              "note": "Deu 31:6 quoted with a doubled negative: οὐ μή σε ἀνῶ, οὐδ᾽ οὐ μή σε ἐγκαταλίπω."
+            }
+          ]
+        },
+        {
+          "lemma": "οὐχί",
+          "gloss": "no; not",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 18:15 word 9",
+              "note": "οὐχί for the answering לֹא of לֹא כִּי צָחָקְתְּ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 19:2 word 17"
+            },
+            {
+              "ref": "Luk.12.51",
+              "note": "The same \"no, but…\": οὐχί, λέγω ὑμῖν, ἀλλ᾽ ἢ διαμερισμόν."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לוּ",
+      "root": "לו",
+      "pos": "conjunction",
+      "gloss": "if only, would that; if",
+      "bdb": [
+        "l.ar.aa",
+        "l.ab.ae"
+      ],
+      "cognate_ids": [
+        "akk-lu",
+        "ar-law",
+        "arc-illu"
+      ],
+      "summary": "A particle of wish and condition, about twenty times, also spelled לוּא. Its own cognates (Akkadian lū \"may; if\", Arabic لَوْ \"if; would that\") are words distinct from those languages' negative lā, so it is not formed from לֹא; it is kept in this entry because the task joined them and because לוּלֵא is the two together. Where it is \"if\", the condition is usually one that did not happen, and the main clause says what would then have followed.",
+      "senses": [
+        {
+          "id": "would-that",
+          "gloss": "if only, would that",
+          "definition": "A wish, for what has not happened or is not yet so; with a past verb, regret for what did not happen.",
+          "evidence": [
+            {
+              "ref": "Num.14.2",
+              "role": "defining",
+              "note": "\"Would that we had died in the land of Egypt, or would that we had died in this wilderness!\""
+            },
+            {
+              "ref": "Psa.81.14",
+              "role": "defining",
+              "note": "\"O that my people would listen to me, that Israel would walk in my ways!\""
+            },
+            {
+              "ref": "Isa.48.18",
+              "role": "defining",
+              "note": "\"O that you had attended to my commandments! then your peace would have been as a river.\""
+            },
+            {
+              "ref": "Gen.17.18",
+              "note": "\"O that Ishmael might live before you!\""
+            },
+            {
+              "ref": "Num.20.3",
+              "note": "\"Would that we had perished when our brothers perished before Yahweh!\""
+            },
+            {
+              "ref": "Jos.7.7",
+              "note": "\"Would that we had been content to dwell beyond the Jordan!\""
+            },
+            {
+              "ref": "Isa.63.19",
+              "note": "\"O that you would tear the heavens and come down!\""
+            },
+            {
+              "ref": "Gen.23.13",
+              "note": "As a plea: \"if you, would you but hear me\"."
+            },
+            {
+              "ref": "Gen.30.34",
+              "note": "As assent: \"Very well, let it be as you say\" (הֵן לוּ יְהִי)."
+            }
+          ]
+        },
+        {
+          "id": "if-unreal",
+          "gloss": "if (it had been so)",
+          "definition": "A condition contrary to fact: \"if (only) this had been so\", with what would have followed in the main clause.",
+          "evidence": [
+            {
+              "ref": "Jdg.8.19",
+              "role": "defining",
+              "note": "\"If you had kept them alive, I would not kill you\" (לוּ … לֹא הָרַגְתִּי)."
+            },
+            {
+              "ref": "Jdg.13.23",
+              "role": "defining",
+              "note": "\"If Yahweh had wanted to kill us, he would not have taken a burnt offering from our hand.\""
+            },
+            {
+              "ref": "Num.22.29",
+              "note": "\"If there were a sword in my hand, I would have killed you by now\" (לוּ … כִּי עַתָּה)."
+            },
+            {
+              "ref": "Deu.32.29",
+              "note": "\"If they were wise, they would understand this.\""
+            },
+            {
+              "ref": "1Sa.14.30",
+              "note": "\"If only the people had eaten freely today… the slaughter would have been greater.\""
+            },
+            {
+              "ref": "2Sa.19.7",
+              "note": "\"If Absalom were alive and we all dead today\" (read לוּ, written לא)."
+            }
+          ]
+        },
+        {
+          "gloss": "if, suppose",
+          "definition": "A condition put as a possibility, open or feared: \"suppose…\", \"even if…\".",
+          "evidence": [
+            {
+              "ref": "Gen.50.15",
+              "role": "defining",
+              "note": "Joseph's brothers: \"Suppose Joseph hates us, and pays us back all the evil…\""
+            },
+            {
+              "ref": "Ezk.14.15",
+              "note": "\"If I cause evil beasts to pass through the land.\""
+            },
+            {
+              "ref": "Mic.2.11",
+              "note": "\"If a man walking in wind and falsehood lies…\""
+            },
+            {
+              "ref": "Job.16.4",
+              "note": "\"If your soul were in my soul's place.\""
+            },
+            {
+              "ref": "2Sa.18.12",
+              "note": "\"Even if I were to weigh a thousand of silver on my palms\" (read וְלוּא, written ולא)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "לוּ … כִּי עַתָּה",
+            "gloss": "if…, then by now…",
+            "evidence": [
+              {
+                "ref": "Num.22.29"
+              },
+              {
+                "ref": "1Sa.14.30"
+              }
+            ]
+          },
+          {
+            "phrase": "לוּ … לֹא",
+            "gloss": "if (it had been so)…, (this) would not…",
+            "evidence": [
+              {
+                "ref": "Jdg.8.19"
+              },
+              {
+                "ref": "Jdg.13.23"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ὄφελον",
+          "gloss": "would that",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 14:2 word 13",
+              "note": "ὄφελον for the first לוּ of \"would that we had died\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 20:3 word 7"
+            },
+            {
+              "ref": "1Co.4.8",
+              "note": "\"Would that you did reign, that we also might reign with you.\""
+            },
+            {
+              "ref": "2Co.11.1"
+            },
+            {
+              "ref": "Gal.5.12"
+            },
+            {
+              "ref": "Rev.3.15",
+              "note": "\"Would that you were cold or hot.\""
+            }
+          ]
+        },
+        {
+          "lemma": "εἰ",
+          "gloss": "if",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "JDG 8:19 word 8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לוּלֵא",
+      "root": "לולא",
+      "pos": "conjunction",
+      "gloss": "were it not, if not, but for",
+      "bdb": [
+        "l.ar.ab",
+        "l.ax.ai",
+        "l.ay.ac"
+      ],
+      "cognate_ids": [
+        "ar-lawla",
+        "arc-illula"
+      ],
+      "summary": "לוּ \"if\" and לֹא \"not\" written as one word (also לוּלֵי), fourteen times: what would have happened, had not someone or something stepped in. Arabic لَوْلَا and Aramaic and Syriac ʾellū lā are built the same way from the same two particles.",
+      "senses": [
+        {
+          "id": "were-it-not",
+          "gloss": "were it not for, had not",
+          "definition": "Names what prevented a thing, by saying what would have followed without it; followed by a noun (\"but for Yahweh\") or a verb (\"had you not…\").",
+          "kin": [
+            "if-unreal"
+          ],
+          "evidence": [
+            {
+              "ref": "Jdg.14.18",
+              "role": "defining",
+              "note": "\"Had you not ploughed with my heifer, you would not have found out my riddle\" (לוּלֵא … לֹא)."
+            },
+            {
+              "ref": "Isa.1.9",
+              "role": "defining",
+              "note": "\"Had not Yahweh of hosts left us a very small remnant, we would have been as Sodom.\" Rom 9:29 quotes it with εἰ μή, the Peshitta with ʾellū lā."
+            },
+            {
+              "ref": "Gen.31.42",
+              "role": "defining",
+              "note": "\"Had not the God of my father… been with me, surely now you would have sent me away empty\" (לוּלֵי … כִּי עַתָּה)."
+            },
+            {
+              "ref": "Gen.43.10",
+              "note": "\"Had we not lingered, surely now we would have returned twice.\""
+            },
+            {
+              "ref": "Psa.106.23",
+              "note": "\"He said he would destroy them, had not Moses his chosen stood in the breach before him.\""
+            },
+            {
+              "ref": "Psa.124.1",
+              "note": "\"Had it not been Yahweh who was for us\", repeated in Psa 124:2."
+            },
+            {
+              "ref": "Psa.94.17",
+              "note": "\"Had not Yahweh been my help, my soul had soon dwelt in silence.\""
+            },
+            {
+              "ref": "Psa.119.92",
+              "note": "\"Had not your law been my delight, I would then have perished in my affliction.\""
+            },
+            {
+              "ref": "Psa.27.13",
+              "note": "\"Had I not believed to see the goodness of Yahweh in the land of the living…\": the sentence is left unfinished; the word is marked with dots in the text."
+            },
+            {
+              "ref": "Deu.32.27"
+            },
+            {
+              "ref": "1Sa.25.34"
+            },
+            {
+              "ref": "2Sa.2.27"
+            },
+            {
+              "ref": "2Ki.3.14"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "לוּלֵי יַהְוֶה",
+            "gloss": "but for Yahweh",
+            "evidence": [
+              {
+                "ref": "Psa.94.17"
+              },
+              {
+                "ref": "Psa.124.1"
+              },
+              {
+                "ref": "Isa.1.9"
+              }
+            ]
+          },
+          {
+            "phrase": "לוּלֵא … כִּי עַתָּה",
+            "gloss": "had not…, surely by now…",
+            "evidence": [
+              {
+                "ref": "Gen.31.42"
+              },
+              {
+                "ref": "Gen.43.10"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "εἰ μή",
+          "gloss": "if not, unless",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 1:9 word 1",
+              "note": "εἰ μή for לוּלֵי."
+            },
+            {
+              "ref": "Rom.9.29",
+              "note": "Isa 1:9 quoted: εἰ μὴ κύριος σαβαὼθ ἐγκατέλιπεν ἡμῖν σπέρμα."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לָא",
+      "lang": "arc",
+      "pos": "particle",
+      "gloss": "not; no; (דִּי לָא) without",
+      "bdb": [
+        "xl.ab.aa",
+        "xl.ae.ac"
+      ],
+      "cognate_ids": [
+        "akk-la",
+        "ar-la",
+        "arc-la"
+      ],
+      "summary": "Scripture's Aramaic negative, 82 times (Jer 10:11, Daniel, Ezra), in the same uses as Hebrew לֹא. Once spelled with ה, כְּלָה \"as nothing\" (Dan 4:32).",
+      "senses": [
+        {
+          "gloss": "not",
+          "definition": "Denies a fact or forbids, as Hebrew לֹא.",
+          "evidence": [
+            {
+              "ref": "Jer.10.11",
+              "role": "defining",
+              "note": "\"The gods that did not make the heavens and the earth shall perish.\""
+            },
+            {
+              "ref": "Dan.3.18",
+              "role": "defining",
+              "note": "\"We will not serve your gods, nor worship the golden image\"; and הֵן לָא \"but if not\" opening the verse."
+            },
+            {
+              "ref": "Dan.5.23",
+              "note": "Gods \"which do not see, nor hear, nor know\", echoed in Rev 9:20 (ἃ οὔτε βλέπειν δύναται οὔτε ἀκούειν)."
+            },
+            {
+              "ref": "Dan.2.44",
+              "note": "A kingdom \"that shall never be destroyed\" (לְעָלְמִין לָא תִתְחַבַּל)."
+            },
+            {
+              "ref": "Dan.7.14",
+              "note": "\"His dominion… shall not pass away, and his kingdom shall not be destroyed.\""
+            },
+            {
+              "ref": "Dan.2.10",
+              "note": "לָא אִיתַי, \"there is not\": \"there is not a man on earth who can show the king's matter\"."
+            }
+          ]
+        },
+        {
+          "gloss": "is it not? (הֲלָא)",
+          "definition": "With the question ה־, puts forward what the hearer must grant, as Hebrew הֲלֹא.",
+          "evidence": [
+            {
+              "ref": "Dan.3.24",
+              "role": "defining",
+              "note": "\"Did we not cast three men bound into the fire?\" They answer, \"True, O king.\""
+            },
+            {
+              "ref": "Dan.4.27",
+              "note": "\"Is not this great Babylon, which I have built?\""
+            },
+            {
+              "ref": "Dan.6.13"
+            }
+          ]
+        },
+        {
+          "id": "arc-without",
+          "gloss": "without, not by (דִּי לָא)",
+          "definition": "With דִּי, \"that not\", before a noun or verb: \"without\".",
+          "evidence": [
+            {
+              "ref": "Dan.2.34",
+              "role": "defining",
+              "note": "\"A stone was cut out without hands\" (דִּי־לָא בִידַיִן), repeated in Dan 2:45."
+            },
+            {
+              "ref": "Ezr.6.9",
+              "role": "defining",
+              "note": "\"Day by day without fail\" (דִּי־לָא שָׁלוּ)."
+            }
+          ]
+        },
+        {
+          "gloss": "as nothing (כְּלָה)",
+          "definition": "Standing for a noun, \"nothing\".",
+          "kin": [
+            "no-thing"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.4.32",
+              "role": "defining",
+              "note": "\"All the inhabitants of the earth are counted as nothing\" (כְּלָה חֲשִׁיבִין)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "לָא אִיתַי",
+            "gloss": "there is not",
+            "evidence": [
+              {
+                "ref": "Dan.2.10"
+              },
+              {
+                "ref": "Dan.2.11"
+              },
+              {
+                "ref": "Dan.3.29"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵן לָא",
+            "gloss": "but if not",
+            "evidence": [
+              {
+                "ref": "Dan.3.18"
+              }
+            ]
+          },
+          {
+            "phrase": "דִּי לָא תִתְחַבַּל",
+            "gloss": "that shall not be destroyed",
+            "evidence": [
+              {
+                "ref": "Dan.2.44"
+              },
+              {
+                "ref": "Dan.6.27"
+              },
+              {
+                "ref": "Dan.7.14"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "οὐ",
+          "gloss": "not",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DAN 7:14 word 20",
+              "note": "οὐ for לָא in \"his kingdom shall not be destroyed\"."
+            },
+            {
+              "ref": "Luk.1.33",
+              "note": "\"Of his kingdom there shall be no end\" (οὐκ ἔσται τέλος)."
+            },
+            {
+              "ref": "Rev.9.20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לָא",
+      "lang": "syc",
+      "pos": "particle",
+      "gloss": "not; no",
+      "cognate_ids": [
+        "akk-la",
+        "ar-la",
+        "arc-la"
+      ],
+      "summary": "The Peshitta's ܠܐ (lā), for οὐ, μή and the answering \"no\"; it renders Hosea's לֹא עַמִּי and Moses' בְּלֹא־עָם word for word.",
+      "senses": [
+        {
+          "gloss": "not; no",
+          "definition": "Negates a statement or command, and answers \"no\".",
+          "evidence": [
+            {
+              "ref": "Mat.5.17",
+              "role": "defining",
+              "note": "\"Do not think (לָא תַּסְבְּרוּן) that I came to loose the law or the prophets; I did not come to loose but to fulfil\" (לָא … אֶלָּא)."
+            },
+            {
+              "ref": "Mat.5.37",
+              "role": "defining",
+              "note": "\"Let your word be yes, yes, and no, no\" (וְלָא לָא)."
+            },
+            {
+              "ref": "Rom.9.25",
+              "note": "\"Those who were not my people\" (דְּלָא הֲווֹ עַמִּי), Hos 2:25."
+            },
+            {
+              "ref": "Rom.10.19",
+              "note": "\"With a people that is no people\" (בְּעַם דְּלָא עַם), Deu 32:21."
+            },
+            {
+              "ref": "Heb.13.5",
+              "note": "\"I will not leave you nor forsake you\", Deu 31:6."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֶלּוּ",
+      "lang": "syc",
+      "root": "אלו",
+      "pos": "conjunction",
+      "gloss": "if (it had been so); (with לָא) were it not",
+      "cognate_ids": [
+        "arc-illu",
+        "arc-illula",
+        "ar-law",
+        "akk-lu"
+      ],
+      "summary": "The Peshitta's ܐܠܘ (ʾellū), the Syriac counterpart of לוּ, for an unreal condition; with ܠܐ it is ʾellū lā, the counterpart of לוּלֵא.",
+      "senses": [
+        {
+          "gloss": "if (it had been so)",
+          "definition": "A condition contrary to fact, with what would have followed.",
+          "kin": [
+            "if-unreal"
+          ],
+          "evidence": [
+            {
+              "ref": "Jhn.11.21",
+              "role": "defining",
+              "note": "Martha: \"Lord, if you had been here, my brother would not have died\" (אֶלּוּ … לָא מָאֶת הֲוָא)."
+            },
+            {
+              "ref": "Jhn.11.32",
+              "note": "Mary's same words."
+            }
+          ]
+        },
+        {
+          "gloss": "were it not (אֶלּוּ לָא)",
+          "definition": "With לָא, \"had not\", as Hebrew לוּלֵא.",
+          "kin": [
+            "were-it-not"
+          ],
+          "evidence": [
+            {
+              "ref": "Rom.9.29",
+              "role": "defining",
+              "note": "Isa 1:9 in the Peshitta: \"had not the Lord of hosts left us a remnant\" (דְּאֶלּוּ לָא מָרְיָא צְבָאוֹת אַוְתַּר לַן), where the Hebrew has לוּלֵי."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-la",
+      "lang": "akk",
+      "form": "lā",
+      "translit": "lā",
+      "gloss": "not; no; without",
+      "relation": "cognate",
+      "note": "Akkadian's negative in subordinate clauses, prohibitions and before nouns and adjectives, and \"without\", as לֹא with בְּ. Main clauses of fact take another word, ul.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004680, lā [not] MOD",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000004680.html",
+          "note": "no; not; without; nearly 40,000 instances, Old Akkadian and Old Assyrian to Seleucid."
+        }
+      ]
+    },
+    {
+      "id": "ar-la",
+      "lang": "ar",
+      "form": "لَا",
+      "translit": "lā",
+      "gloss": "not, no; (with the jussive) do not; there is no",
+      "relation": "cognate",
+      "note": "Filed under the bare letter ل as a particle with no root. Lane notes that in pause it is pronounced لَأْ, with a closing glottal stop, as Hebrew writes it with א. لَا رَجُلَ \"there is not any man\" is the same denial of a kind as Aramaic לָא אִיתַי.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3006, art. ل, لَا",
+          "note": "\"the negative\"; لَا رَجُلَ قَائِمٌ \"There is not any man standing\"; \"لَا in a case of pausation pronounced لَأْ\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-l",
+      "lang": "uga",
+      "form": "𐎍",
+      "translit": "l",
+      "gloss": "not",
+      "relation": "cognate",
+      "note": "Ugaritic writes the negative with the one letter l, the same as its preposition \"to\" and its particle of assurance, so each use must be read from its context. Only Wiktionary consulted.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Proto-Semitic *lā, descendants",
+          "url": "https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/l%C4%81",
+          "note": "Lists Ugaritic 𐎍 (l) beside Akkadian lā, Arabic لَا, Aramaic לָא, Hebrew לֹא, Phoenician 𐤋𐤀 and Syriac ܠܐ."
+        }
+      ]
+    },
+    {
+      "id": "phn-la",
+      "lang": "phn",
+      "form": "𐤋𐤀",
+      "translit": "lʾ",
+      "gloss": "not",
+      "relation": "possible",
+      "note": "Phoenician's usual negatives are other words (bl, ʾy); lʾ is listed only by Wiktionary, and not yet checked in a Phoenician dictionary.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Proto-Semitic *lā, descendants",
+          "url": "https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/l%C4%81"
+        }
+      ]
+    },
+    {
+      "id": "arc-la",
+      "lang": "arc",
+      "form": "לָא",
+      "translit": "lā",
+      "gloss": "no, not",
+      "relation": "cognate",
+      "note": "The Targums' and Talmud's negative; also as an answer, \"no\".",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לָא I",
+          "note": "Targ. Gen. 2:5; Pes. 10b \"before the time … yes; after the time, no\"."
+        }
+      ]
+    },
+    {
+      "id": "akk-lu",
+      "lang": "akk",
+      "form": "lū",
+      "translit": "lū",
+      "gloss": "may, let it be; indeed; if, although; or",
+      "relation": "cognate",
+      "note": "Before a verb a wish (\"may he…\") or an assurance (\"indeed\"), and also \"if\" and \"although\": the same span of wish and condition as לוּ. A different word from the negative lā.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004710, lū [may] MOD",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000004710.html",
+          "note": "although; if; indeed; may; should."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000069600, lū [indeed] MOD",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000069600.html"
+        }
+      ]
+    },
+    {
+      "id": "ar-law",
+      "lang": "ar",
+      "form": "لَوْ",
+      "translit": "law",
+      "gloss": "if (it had been so); would that",
+      "relation": "cognate",
+      "note": "Both uses of לוּ: the optative, \"would that\", and the unreal condition, \"had this been, that would have been\".",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3014, art. لو, لَوْ",
+          "note": "\"It is used as an optative particle\"; لَوْ كَانَ هٰذَا لَكَانَ ذَاكَ \"Had this been… that had been\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-lawla",
+      "lang": "ar",
+      "form": "لَوْلَا",
+      "translit": "lawlā",
+      "gloss": "had not, but for",
+      "relation": "cognate",
+      "note": "لَوْ \"if\" and لَا \"not\" joined, exactly as לוּלֵא is לוּ and לֹא, and used the same way, with a noun or a verb.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3014, art. لو, لَوْلَا",
+          "note": "لَوْلَا هٰذَا لَكَانَ ذَاكَ \"Had not this been, or but for this, that had been\"; \"followed by a noun… or by a verb\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-illu",
+      "lang": "arc",
+      "form": "אִילּוּ",
+      "translit": "ʾillū",
+      "gloss": "if; oh that!",
+      "relation": "cognate",
+      "note": "Later Aramaic's \"if\" of an unreal condition and of a wish, Syriac ܐܠܘ; built on the same lū.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אִילּוּ",
+          "note": "\"if (oh that!)\"; Gen. R. s. 12 \"if the pillars had been higher, it would have looked better\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-illula",
+      "lang": "arc",
+      "form": "אִילּוּלָא",
+      "translit": "ʾillūlā",
+      "gloss": "were it not, but for",
+      "relation": "cognate",
+      "note": "אִילּוּ and לָא joined, the Aramaic counterpart of לוּלֵא.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אִילּוּלָא",
+          "note": "\"(b. h. לוּלֵי = אִילּוּ לֹא, ch. אִילּוּ לָא) were it not, but for\"; Mekh. B'shall., Amalek 1 \"but for Moses\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Yahweh told the man that in the day he ate of the tree of knowledge, \"dying you shall die\" (מוֹת תָּמוּת, Gen 2:17). The serpent answered with the same words and לֹא set before them: \"not dying shall you die\" (לֹא־מוֹת תְּמֻתוּן, Gen 3:4). The sentence stood: \"dust you are, and to dust you shall return\" (Gen 3:19); the man was kept from the tree of life, \"lest he… eat, and live for ever\" (Gen 3:22); and he died (Gen 5:5). Through one man sin entered the world, and death through sin, and so death passed to all men (Rom 5:12). The first denial in scripture is the serpent's denial of death for the sinner, and the verses that follow give man no life of his own beyond death.",
+      "evidence": [
+        {
+          "ref": "Gen.2.17"
+        },
+        {
+          "ref": "Gen.3.4"
+        },
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Gen.3.22"
+        },
+        {
+          "ref": "Gen.5.5"
+        },
+        {
+          "ref": "Rom.5.12"
+        }
+      ]
+    },
+    {
+      "topic": "god-not-man",
+      "statement": "Scripture sets God apart from man with this word: \"God is not a man (לֹא אִישׁ אֵל), that he should lie… Has he said, and will he not do it?\" (Num 23:19); \"he is not a man (לֹא אָדָם הוּא), that he should repent\" (1Sa 15:29); \"for I am God, and not a man\" (Hos 11:9). His word holds because he is not a man. The New Testament keeps the distinction when it names the one mediator between God and men \"a man, Christ Jesus\" (1Ti 2:5).",
+      "evidence": [
+        {
+          "ref": "Num.23.19"
+        },
+        {
+          "ref": "1Sa.15.29"
+        },
+        {
+          "ref": "Hos.11.9"
+        },
+        {
+          "ref": "1Ti.2.5"
+        }
+      ]
+    },
+    {
+      "topic": "people-of-god",
+      "statement": "Hosea's son is named לֹא עַמִּי, \"not my people\", because Israel had left Yahweh (Hos 1:9), and Yahweh promises to say to לֹא־עַמִּי, \"You are my people\" (Hos 2:25). Paul reads the promise of those God called \"not of the Jews only, but also of the Gentiles\" (Rom 9:24–26), and Peter of believers who \"once were not a people, but are now the people of God\" (1Pe 2:10). The negative is undone by God's call and mercy, not by descent: a people is his because he calls it his.",
+      "evidence": [
+        {
+          "ref": "Hos.1.9"
+        },
+        {
+          "ref": "Hos.2.25"
+        },
+        {
+          "ref": "Rom.9.24"
+        },
+        {
+          "ref": "Rom.9.25"
+        },
+        {
+          "ref": "Rom.9.26"
+        },
+        {
+          "ref": "1Pe.2.10"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "In Nebuchadnezzar's dream a stone cut out \"without hands\" (דִּי־לָא בִידַיִן) strikes the image on its feet and becomes a great mountain that fills the whole earth (Dan 2:34–35). Daniel explains it: in the days of those kings the God of heaven will set up a kingdom \"that shall never be destroyed\" (לָא תִתְחַבַּל), nor left to another people; it will break in pieces all these kingdoms and stand for ever (Dan 2:44–45). Dan 7:14 gives the dominion that \"shall not pass away\" to one like a son of man. Gabriel says of Mary's son that God will give him the throne of his father David, \"and of his kingdom there shall be no end\" (Luk 1:32–33). So the kingdom is God's work and not man's; it takes the place of the kingdoms of men on the earth, under David's son; and it does not pass to another or come to an end.",
+      "evidence": [
+        {
+          "ref": "Dan.2.34"
+        },
+        {
+          "ref": "Dan.2.35"
+        },
+        {
+          "ref": "Dan.2.44"
+        },
+        {
+          "ref": "Dan.2.45"
+        },
+        {
+          "ref": "Dan.7.14"
+        },
+        {
+          "ref": "Luk.1.32"
+        },
+        {
+          "ref": "Luk.1.33"
+        }
+      ]
+    }
+  ],
+  "note": "Root question. No root found for לֹא: keyed by its own consonants. Evidence: the negative is a bare monosyllable lā in Akkadian (Oracc lā, from the oldest periods), Arabic (Lane files لَا under the bare letter ل, with no root), Aramaic, Syriac, and Ugaritic l; no language shows it formed from a verb or noun. The one Hebrew verb of the consonants, לָאָה \"be weary; be unable to\" (Gen 19:11; Exo 7:18), with תְּלָאָה \"hardship\", was weighed as a source on the model of עַל from עלה: its cognates do not support it (Arabic لَأْيٌ \"difficulty, slowness\", Lane p. 3007, art. لأى; Akkadian leʾû \"be able\", Oracc armep x000039040, the opposite sense), and scripture never uses לאה toward a negative. לוּ likewise has no root: Akkadian lū and Arabic لَوْ are particles distinct from lā; no verb לוה/לוי gives \"if\". לוּ is kept here as the task asked and because לוּלֵא joins it to לֹא; the reviewer may prefer a separate entry for לוּ and לוּלֵא. Left out: אַל \"do not\" (a different negative, Proto-Semitic *ʾal; BDB a.dh.aa and Aramaic xa.am.aa, unclaimed); אִלּוּ \"if\" (Est 7:4; Ecc 6:6), already in elah.json (a.dn.ac) under אלה, though its own summary there calls it a compound of אִם/אִן and לוּ, so it belongs with לוּ here; the names לֹא עַמִּי and לֹא רֻחָמָה (Hos 1:6, 9), people, not added per the task, and the place לֹא דְבָר (Lo-debar), which cannot be a name entry. Data: the database's surface index files 583 tokens of אַל under l.ab.aa, and every לֹא token also under l.ar.aa (לוּ), so the token counts for both keys are inflated; the real לוּ tokens are about 21 (Gen 17:18; 23:13; 30:34; 50:15; Num 14:2 twice; 20:3; 22:29; Deu 32:29; Jos 7:7; Jdg 8:19; 13:23; 1Sa 14:30; 2Sa 18:12 Qere; 19:7 Qere; Isa 48:18; 63:19; Ezk 14:15; Mic 2:11; Psa 81:14; Job 6:2; 16:4). Ketiv לא read לוֹ: Exo 21:8; Lev 11:21; 25:30; 1Sa 2:3; 2Ki 8:10; Isa 9:2; 49:5; 63:9; Psa 100:3; 139:16; Pro 26:2; Job 6:21; 13:15; Ezr 4:2. The particle's senses are illustrated, not exhaustive. Open leads: Ugaritic l \"not\" and Phoenician lʾ from Wiktionary only (Segert, Krahmalkov not read); CAD L for lā, lū, leʾû not consulted; Syriac ܐܠܘ (SEDRA lexeme 134, ALO) and ܠܐ (lexeme 1614, LA) in Payne Smith not read; Old South Arabian negatives not checked."
+}
