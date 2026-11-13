@@ -1,0 +1,874 @@
+{
+  "id": "kevesh",
+  "root": "כבשׂ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "animals",
+    "flock",
+    "sacrifice",
+    "feasts",
+    "messiah",
+    "kingdom"
+  ],
+  "gloss": "lamb, young sheep; ewe lamb",
+  "summary": "כֶּבֶשׂ is the young sheep, the lamb. In the plural it names the sheep of the flock as against the goats (Exo 12:5; Num 15:11), and above all it is the lamb of the altar, “a son of its year” and without blemish: two every day, one in the morning and one between the evenings, and more on sabbaths, new moons and feasts (Exo 29:38–42; Num 28–29; Lev 23:12, 18–20). The feminine כִּבְשָׂה is a ewe lamb: Abraham’s seven given as a witness, the poor man’s one in Nathan’s parable (Gen 21:28–30; 2Sa 12:3). כֶּשֶׂב and כִּשְׂבָּה are the same two words with ב and שׂ changing places; Jeremiah is “like a gentle lamb led to the slaughter” (Jer 11:19), and in the kingdom the wolf dwells with the lamb (Isa 11:6).",
+  "words": [
+    {
+      "lemma": "כֶּבֶשׂ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "lamb, young sheep",
+      "bdb": [
+        "k.al.af"
+      ],
+      "cognate_ids": [
+        "ar-kabsh",
+        "akk-kabsu"
+      ],
+      "summary": "The young sheep: in lists of the flock, the sheep kind beside the goats; on the altar, the lamb a year old and without blemish. The masculine names the kind, not the sex: a female is asked for in so many words where one is wanted (Lev 4:32). Nearly nine in ten of its 107 uses are offerings, most of them in Numbers 7, 28 and 29.",
+      "senses": [
+        {
+          "id": "kevesh-kind",
+          "gloss": "sheep (the kind, as against goats)",
+          "definition": "The sheep as one of the two kinds that make up the צֹאן, the flock, set beside the goats; the animal kept for its wool and grazed in the open.",
+          "evidence": [
+            {
+              "ref": "Exo.12.5",
+              "role": "defining",
+              "note": "The Passover שֶׂה: “from the כְּבָשִׂים or from the עִזִּים you shall take it”: the two kinds of the flock."
+            },
+            {
+              "ref": "Num.15.11",
+              "role": "defining",
+              "note": "“For the one ox, or the one ram, or for the שֶׂה among the כְּבָשִׂים or among the עִזִּים”: the שֶׂה is the single head of the flock, the כְּבָשִׂים its kind."
+            },
+            {
+              "ref": "2Ch.35.7",
+              "note": "Josiah gives the people צֹאן, “כְּבָשִׂים and sons of goats”, thirty thousand, for the Passover."
+            },
+            {
+              "ref": "Pro.27.26",
+              "role": "defining",
+              "note": "“The כְּבָשִׂים are for your clothing, and the goats the price of a field”: the sheep for wool."
+            },
+            {
+              "ref": "Job.31.20",
+              "note": "The poor man “warmed by the fleece of my כְּבָשִׂים”."
+            },
+            {
+              "ref": "Isa.5.17",
+              "note": "In the wasted land “the כְּבָשִׂים shall graze as in their pasture”."
+            }
+          ]
+        },
+        {
+          "id": "kevesh-offering",
+          "gloss": "lamb (for the altar)",
+          "definition": "A young sheep brought to Yahweh, usually “a son of its year” and תָּמִים, without blemish: as a burnt offering above all, and also as a peace offering, a sin offering or a guilt offering. The daily burnt offering is two of them, one in the morning and one between the evenings.",
+          "evidence": [
+            {
+              "ref": "Lev.23.12",
+              "role": "defining",
+              "note": "On the day the עֹמֶר is waved, “a כֶּבֶשׂ without blemish, a son of its year, for a burnt offering to Yahweh”."
+            },
+            {
+              "ref": "Lev.23.18",
+              "note": "With the bread of the fiftieth day, “seven כְּבָשִׂים without blemish, sons of a year”, with a bull and two rams, a burnt offering."
+            },
+            {
+              "ref": "Lev.23.19",
+              "note": "And “two כְּבָשִׂים, sons of a year, for a sacrifice of peace offerings”."
+            },
+            {
+              "ref": "Lev.23.20",
+              "note": "The priest waves them with the bread of the firstfruits, “with the two כְּבָשִׂים; they shall be holy to Yahweh for the priest”."
+            },
+            {
+              "ref": "Exo.29.38",
+              "to": "Exo.29.39",
+              "role": "defining",
+              "note": "“Two כְּבָשִׂים, sons of a year, a day, continually”: the daily burnt offering."
+            },
+            {
+              "ref": "Exo.29.40",
+              "note": "A tenth of flour with oil and a quarter of a hin of wine “for the one כֶּבֶשׂ”."
+            },
+            {
+              "ref": "Num.28.3",
+              "to": "Num.28.8",
+              "note": "The same law repeated: two כְּבָשִׂים a day, “a continual burnt offering”."
+            },
+            {
+              "ref": "Num.28.9",
+              "note": "On the sabbath two more כְּבָשִׂים, sons of a year, without blemish."
+            },
+            {
+              "ref": "Num.28.11",
+              "note": "At the new moons seven, with two bulls and a ram."
+            },
+            {
+              "ref": "Num.28.21",
+              "note": "“A tenth, a tenth, you shall make for the one כֶּבֶשׂ, for the seven כְּבָשִׂים.”"
+            },
+            {
+              "ref": "Num.29.13",
+              "to": "Num.29.15",
+              "note": "At the feast of booths fourteen a day, with the bulls and rams."
+            },
+            {
+              "ref": "Lev.4.32",
+              "role": "defining",
+              "note": "“If he brings a כֶּבֶשׂ as his offering for a sin offering, he shall bring a female without blemish”: the masculine names the kind, and the sex is added."
+            },
+            {
+              "ref": "Lev.14.10",
+              "role": "defining",
+              "note": "The cleansed leper takes “two כְּבָשִׂים without blemish and one כַּבְשָׂה, a daughter of her year”: against the feminine, the masculine plural names males."
+            },
+            {
+              "ref": "Lev.14.12",
+              "note": "One of the two is offered as a guilt offering and waved before Yahweh."
+            },
+            {
+              "ref": "Lev.14.21",
+              "note": "The poor man brings one כֶּבֶשׂ for a guilt offering “to make a covering for him”."
+            },
+            {
+              "ref": "Lev.12.6",
+              "note": "The mother after childbirth brings “a כֶּבֶשׂ, a son of its year, for a burnt offering”; Lev 12:8 allows two birds to one who cannot bring a שֶׂה, as Mary did (Luk 2:22–24)."
+            },
+            {
+              "ref": "Lev.9.3",
+              "note": "At the start of the priests’ service, “a calf and a כֶּבֶשׂ, sons of a year, without blemish, for a burnt offering”."
+            },
+            {
+              "ref": "Num.6.14",
+              "note": "The Nazirite’s offering when his days are fulfilled: a כֶּבֶשׂ for a burnt offering, a כַּבְשָׂה for a sin offering, a ram for peace offerings."
+            },
+            {
+              "ref": "Num.7.15",
+              "note": "Each prince of the tribes at the altar’s dedication brings a bull, a ram and a כֶּבֶשׂ a year old for a burnt offering."
+            },
+            {
+              "ref": "Num.7.17",
+              "note": "And five כְּבָשִׂים, sons of a year, for peace offerings."
+            },
+            {
+              "ref": "Ezk.46.13",
+              "note": "In Ezekiel’s house, “a כֶּבֶשׂ, a son of its year, without blemish, you shall make a burnt offering daily to Yahweh; morning by morning”."
+            },
+            {
+              "ref": "Ezk.46.4",
+              "note": "On the sabbath the prince offers six כְּבָשִׂים and a ram."
+            },
+            {
+              "ref": "2Ch.29.21",
+              "note": "Hezekiah’s cleansing of the house: seven bulls, seven rams, seven כְּבָשִׂים and seven he-goats."
+            },
+            {
+              "ref": "1Ch.29.21",
+              "note": "A thousand כְּבָשִׂים at Solomon’s anointing."
+            },
+            {
+              "ref": "Ezr.8.35",
+              "note": "The returned exiles offer seventy-seven כְּבָשִׂים to the God of Israel."
+            },
+            {
+              "ref": "Isa.1.11",
+              "note": "“I do not delight in the blood of bulls and כְּבָשִׂים and he-goats”, from a people whose hands are full of blood (Isa 1:15)."
+            }
+          ]
+        },
+        {
+          "id": "kevesh-figure",
+          "gloss": "lamb (a figure of the defenceless)",
+          "definition": "The lamb as the creature that cannot defend itself: one led away without knowing what is planned for it, the prey of the wolf.",
+          "evidence": [
+            {
+              "ref": "Jer.11.19",
+              "role": "defining",
+              "note": "“I was like a gentle כֶּבֶשׂ led to the slaughter, and I did not know that they had devised plots against me”: the men of his own town seeking his life (Jer 11:21)."
+            },
+            {
+              "ref": "Isa.11.6",
+              "role": "defining",
+              "note": "“The wolf shall dwell with the כֶּבֶשׂ, and the leopard lie down with the kid”: the lamb as the wolf’s natural prey, at peace with it under the shoot of Jesse."
+            },
+            {
+              "ref": "Hos.4.16",
+              "note": "“Israel is stubborn like a stubborn heifer; now Yahweh will feed them like a כֶּבֶשׂ in a broad place”: set against the heifer that will not be led."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀμνός",
+          "gloss": "lamb",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.18, כְּבָשִׂים → ἀμνοὺς (ἀμνός); Exo.29.38 and Num.28.3 likewise; ἀμνός renders כֶּבֶשׂ about 80 times"
+            },
+            {
+              "ref": "Jhn.1.29",
+              "role": "defining",
+              "note": "“Behold the ἀμνός of God, who takes away the sin of the world.”"
+            },
+            {
+              "ref": "Jhn.1.36",
+              "note": "“Behold the ἀμνός of God.”"
+            },
+            {
+              "ref": "Act.8.32",
+              "note": "Quoting Isa 53:7, where the Hebrew is שֶׂה and רָחֵל: “as a lamb before its shearer is silent”."
+            },
+            {
+              "ref": "1Pe.1.19",
+              "note": "“With the precious blood of Christ, as of an ἀμνός without blemish and without spot.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀρήν",
+          "gloss": "lamb",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.11.6, כֶּבֶשׂ → ἀρνός (ἀρήν); Exo.12.5, הַכְּבָשִׂים → ἀρνῶν (ἀρήν)"
+            },
+            {
+              "ref": "Luk.10.3",
+              "role": "defining",
+              "note": "“I send you as ἄρνας in the midst of wolves”: the lamb and the wolf of Isa 11:6, in this age."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀρνίον",
+          "gloss": "lamb",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.11.19, כְּכֶבֶשׂ → ἀρνίον"
+            },
+            {
+              "ref": "Jhn.21.15",
+              "note": "“Feed my ἀρνία.”"
+            },
+            {
+              "ref": "Rev.5.6",
+              "role": "defining",
+              "note": "“A ἀρνίον standing as though it had been slain.”"
+            }
+          ]
+        },
+        {
+          "lemma": "πρόβατον",
+          "gloss": "sheep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.12, כֶּבֶשׂ → πρόβατον; Pro.27.26, כְּבָשִׂים → πρόβατα"
+            },
+            {
+              "ref": "Act.8.32",
+              "note": "“As a πρόβατον led to the slaughter”, Isa 53:7, in the words of Jer 11:19’s lamb."
+            },
+            {
+              "ref": "Mat.10.16",
+              "note": "“I send you as πρόβατα in the midst of wolves.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עֵז",
+            "note": "Goats, the other kind of the flock: “from the כְּבָשִׂים or from the עִזִּים”.",
+            "evidence": [
+              {
+                "ref": "Exo.12.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.15.11"
+              },
+              {
+                "ref": "2Ch.35.7"
+              },
+              {
+                "ref": "Pro.27.26"
+              }
+            ]
+          },
+          {
+            "lemma": "אַיִל",
+            "note": "The ram, with the bull, in the lists of burnt offerings.",
+            "evidence": [
+              {
+                "ref": "Lev.23.18"
+              },
+              {
+                "ref": "Num.28.11"
+              },
+              {
+                "ref": "Num.29.2"
+              },
+              {
+                "ref": "1Ch.29.21"
+              },
+              {
+                "ref": "Ezr.8.35"
+              }
+            ]
+          },
+          {
+            "lemma": "עַתּוּד",
+            "note": "The he-goat, beside it in lists and proverb.",
+            "evidence": [
+              {
+                "ref": "Isa.1.11"
+              },
+              {
+                "ref": "Num.7.17"
+              },
+              {
+                "ref": "Pro.27.26"
+              }
+            ]
+          },
+          {
+            "lemma": "גְּדִי",
+            "note": "The kid, set with the leopard as the lamb with the wolf.",
+            "evidence": [
+              {
+                "ref": "Isa.11.6"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "זְאֵב",
+            "note": "The wolf, its predator, dwelling with it in the kingdom.",
+            "evidence": [
+              {
+                "ref": "Isa.11.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כֶּבֶשׂ בֶּן־שְׁנָתוֹ",
+            "gloss": "a lamb a year old (a son of its year)",
+            "evidence": [
+              {
+                "ref": "Lev.23.12"
+              },
+              {
+                "ref": "Lev.12.6"
+              },
+              {
+                "ref": "Num.6.14"
+              },
+              {
+                "ref": "Num.7.15"
+              },
+              {
+                "ref": "Ezk.46.13"
+              }
+            ]
+          },
+          {
+            "phrase": "כְּבָשִׂים בְּנֵי־שָׁנָה",
+            "gloss": "lambs a year old",
+            "evidence": [
+              {
+                "ref": "Lev.23.18"
+              },
+              {
+                "ref": "Lev.23.19"
+              },
+              {
+                "ref": "Exo.29.38"
+              },
+              {
+                "ref": "Num.28.3"
+              },
+              {
+                "ref": "Num.28.9"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁנַיִם לַיּוֹם תָּמִיד",
+            "gloss": "two a day, continually (the daily lambs)",
+            "evidence": [
+              {
+                "ref": "Exo.29.38"
+              },
+              {
+                "ref": "Num.28.3"
+              }
+            ]
+          },
+          {
+            "phrase": "הַכֶּבֶשׂ הַשֵּׁנִי … בֵּין הָעַרְבָּיִם",
+            "gloss": "the second lamb … between the evenings",
+            "evidence": [
+              {
+                "ref": "Exo.29.39"
+              },
+              {
+                "ref": "Exo.29.41"
+              },
+              {
+                "ref": "Num.28.4"
+              },
+              {
+                "ref": "Num.28.8"
+              }
+            ]
+          },
+          {
+            "phrase": "עִשָּׂרוֹן לַכֶּבֶשׂ הָאֶחָד",
+            "gloss": "a tenth (of flour) for the one lamb",
+            "evidence": [
+              {
+                "ref": "Exo.29.40"
+              },
+              {
+                "ref": "Num.28.13"
+              },
+              {
+                "ref": "Num.28.21"
+              },
+              {
+                "ref": "Num.29.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כֶּשֶׂב",
+      "root": "כשׂב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "lamb, sheep",
+      "bdb": [
+        "k.al.ah"
+      ],
+      "cognate_ids": [
+        "ar-kabsh",
+        "akk-kabsu"
+      ],
+      "summary": "The same word as כֶּבֶשׂ with ב and שׂ changing places, found only in the Torah (13 times). Scripture uses the two spellings in the same phrases: “from the כְּשָׂבִים or from the עִזִּים” (Lev 1:10) as “from the כְּבָשִׂים or from the עִזִּים” (Exo 12:5).",
+      "senses": [
+        {
+          "id": "keseb-kind",
+          "gloss": "sheep (the kind, as against goats and cattle)",
+          "definition": "The sheep as a kind of animal, named beside the ox and the goat; in the plural the sheep of a flock.",
+          "kin": [
+            "kevesh-kind"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.30.32",
+              "role": "defining",
+              "note": "Jacob’s wages: “every dark שֶׂה among the כְּשָׂבִים, and the spotted and speckled among the עִזִּים”."
+            },
+            {
+              "ref": "Gen.30.33"
+            },
+            {
+              "ref": "Gen.30.35"
+            },
+            {
+              "ref": "Gen.30.40",
+              "note": "“Jacob separated the כְּשָׂבִים.”"
+            },
+            {
+              "ref": "Deu.14.4",
+              "role": "defining",
+              "note": "The animals Israel may eat: “the ox, the שֵׂה of the כְּשָׂבִים and the שֵׂה of the עִזִּים”."
+            },
+            {
+              "ref": "Lev.7.23",
+              "note": "“You shall eat no fat of ox or כֶשֶׂב or goat.”"
+            },
+            {
+              "ref": "Lev.17.3",
+              "note": "Whoever slaughters “an ox or a כֶשֶׂב or a goat” in or outside the camp."
+            }
+          ]
+        },
+        {
+          "id": "keseb-offering",
+          "gloss": "lamb, sheep (for the altar)",
+          "definition": "A sheep or lamb brought as an offering: from its eighth day, without blemish.",
+          "kin": [
+            "kevesh-offering"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.1.10",
+              "role": "defining",
+              "note": "“If his offering is from the צֹאן, from the כְּשָׂבִים or from the עִזִּים, for a burnt offering, he shall offer a male without blemish.”"
+            },
+            {
+              "ref": "Lev.3.7",
+              "note": "“If he offers a כֶשֶׂב for his offering”, a peace offering."
+            },
+            {
+              "ref": "Lev.4.35",
+              "note": "Its fat removed as “the fat of the כֶּשֶׂב is removed from the sacrifice of peace offerings”."
+            },
+            {
+              "ref": "Lev.22.19",
+              "note": "A male without blemish “of the cattle, of the כְּשָׂבִים, or of the עִזִּים”."
+            },
+            {
+              "ref": "Lev.22.27",
+              "role": "defining",
+              "note": "“An ox or a כֶשֶׂב or a goat, when it is born, shall be seven days under its mother”, accepted from the eighth day: the word names the young from birth."
+            },
+            {
+              "ref": "Num.18.17",
+              "note": "The firstborn of a כֶשֶׂב is holy and not redeemed."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πρόβατον",
+          "gloss": "sheep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.17.3, כֶשֶׂב → πρόβατον; Deu.14.4, כְשָׂבִים → προβάτων (πρόβατον)"
+            },
+            {
+              "ref": "Jhn.10.11",
+              "note": "“The good shepherd lays down his life for the πρόβατα.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀρήν",
+          "gloss": "lamb",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.30.32, בַּכְּשָׂבִים → ἀρνάσιν (ἀρήν); Lev.1.10 likewise"
+            },
+            {
+              "ref": "Luk.10.3",
+              "note": "“As lambs in the midst of wolves.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עֵז",
+            "note": "The goat, the other kind of the flock.",
+            "evidence": [
+              {
+                "ref": "Gen.30.32",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.1.10"
+              },
+              {
+                "ref": "Deu.14.4"
+              }
+            ]
+          },
+          {
+            "lemma": "שׁוֹר",
+            "note": "The ox, in the three kinds of clean beast for food and altar.",
+            "evidence": [
+              {
+                "ref": "Lev.7.23"
+              },
+              {
+                "ref": "Lev.17.3"
+              },
+              {
+                "ref": "Lev.22.27"
+              },
+              {
+                "ref": "Num.18.17"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "שֵׂה כְשָׂבִים",
+            "gloss": "a head of the sheep",
+            "evidence": [
+              {
+                "ref": "Deu.14.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כִּבְשָׂה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "ewe lamb",
+      "bdb": [
+        "k.al.ag"
+      ],
+      "cognate_ids": [
+        "akk-kabsu"
+      ],
+      "summary": "The feminine of כֶּבֶשׂ, also spelled כַּבְשָׂה (Lev 14:10; Num 6:14): a ewe lamb of the flock, and on the altar a ewe a year old for a sin offering.",
+      "senses": [
+        {
+          "id": "kivsah-flock",
+          "gloss": "ewe lamb (of the flock)",
+          "definition": "A young female sheep of the flock, a thing of value one can give, buy or take.",
+          "evidence": [
+            {
+              "ref": "Gen.21.28",
+              "role": "defining",
+              "note": "Abraham sets apart “seven כִּבְשֹׂת of the flock”."
+            },
+            {
+              "ref": "Gen.21.29"
+            },
+            {
+              "ref": "Gen.21.30",
+              "note": "“These seven כְּבָשֹׂת you shall take from my hand, that it may be a witness for me that I dug this well”: the gift is the witness of the oath at Beersheba."
+            },
+            {
+              "ref": "2Sa.12.3",
+              "role": "defining",
+              "note": "The poor man had nothing “but one little כִּבְשָׂה which he had bought”; it ate of his bread, drank of his cup, lay in his bosom, “and was to him like a daughter”."
+            },
+            {
+              "ref": "2Sa.12.4",
+              "note": "The rich man takes “the כִּבְשַׂת of the poor man”: Uriah’s wife (2Sa 12:7–9)."
+            },
+            {
+              "ref": "2Sa.12.6",
+              "note": "David: “he shall restore the כִּבְשָׂה fourfold”, as the law requires for a stolen sheep (Exo 22:1)."
+            }
+          ]
+        },
+        {
+          "id": "kivsah-offering",
+          "gloss": "ewe lamb (for a sin offering)",
+          "definition": "A ewe lamb a year old and without blemish, offered for a sin offering beside the male lambs.",
+          "kin": [
+            "kevesh-offering",
+            "kishbah-offering"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.14.10",
+              "role": "defining",
+              "note": "The cleansed leper: two כְּבָשִׂים and “one כַּבְשָׂה, a daughter of her year, without blemish”."
+            },
+            {
+              "ref": "Num.6.14",
+              "role": "defining",
+              "note": "The Nazirite: “one כַּבְשָׂה, a daughter of her year, without blemish, for a sin offering”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀμνάς",
+          "gloss": "ewe lamb",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.21.30, כְּבָשֹׂת → ἀμνάδας (ἀμνάς); Num.6.14, וְכַבְשָׂה → ἀμνάδα; not used in the New Testament"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כִּשְׂבָּה",
+      "root": "כשׂב",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "ewe lamb",
+      "bdb": [
+        "k.al.ai"
+      ],
+      "cognate_ids": [
+        "akk-kabsu"
+      ],
+      "summary": "The feminine of כֶּשֶׂב, the same word as כִּבְשָׂה with ב and שׂ changing places; once, in Lev 5:6, where “a female from the flock” is required, as Lev 4:32 requires a female כֶּבֶשׂ.",
+      "senses": [
+        {
+          "id": "kishbah-offering",
+          "gloss": "ewe lamb (for a sin offering)",
+          "definition": "A female lamb brought for a sin offering, the alternative to a she-goat.",
+          "kin": [
+            "kivsah-offering"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.5.6",
+              "role": "defining",
+              "note": "“A female from the flock, a כִּשְׂבָּה or a she-goat of the goats, for a sin offering; and the priest shall make a covering for him.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-kabsh",
+      "lang": "ar",
+      "form": "كَبْشٌ",
+      "translit": "kabš",
+      "gloss": "ram, male sheep, whatever its age (or one in its third year); figuratively the chief or leader of a people; كَبَّاشٌ an owner or tender of rams",
+      "relation": "cognate",
+      "note": "Arabic ش answers regularly to Hebrew שׂ, so the consonants match. In Arabic the word is used of the male only (Lane: the female is not called كَبْشَةٌ but نَعْجَةٌ); Hebrew has a feminine כִּבְשָׂה and uses the masculine of the kind (Lev 4:32). The Arabic verb كَبَشَ “take by the handful” shares only the letters.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2588, root كبش, كَبْشٌ (n36607)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2589, root كبش, كَبَّاشٌ (n36609)"
+        }
+      ]
+    },
+    {
+      "id": "akk-kabsu",
+      "lang": "akk",
+      "form": "kabsu",
+      "translit": "kabsu",
+      "gloss": "young sheep, young ewe",
+      "relation": "cognate",
+      "note": "Attested only in Neo-Assyrian texts, when Aramaic was spoken in Assyria, and with s where native Akkadian would have š for Hebrew שׂ; it may have been taken from Aramaic. Either way it is the same word, used of the young sheep of either sex. It is a different word from Akkadian kabāsu “tread down”, which answers to Hebrew כָּבַשׁ “subdue”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000037000, kabsu [young sheep] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "saao x000046420, kabsu [young sheep] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-continual-lamb",
+      "statement": "The law asked for two lambs a year old every day, one in the morning and one between the evenings, “a continual burnt offering” (Exo 29:38–42; Num 28:3–8), and more on every sabbath, new moon and feast (Num 28:9–11; Lev 23:12, 18–19). It never ended: Ezekiel’s house still has its lamb “morning by morning” (Ezk 46:13–15). Yahweh says he has no delight in the blood of bulls and lambs from hands full of blood (Isa 1:11–17). Hebrews says those sacrifices, offered year by year and day by day, could never take away sins, but Christ, “after he had offered one sacrifice for sins for ever, sat down at the right hand of God” (Heb 10:1–4, 11–12). John the Baptist points to Jesus: “Behold the Lamb of God, who takes away the sin of the world” (Jhn 1:29, 36). From the verses: the lamb laid on the altar every morning and evening, never finished, looked to the one Lamb whose single offering does what the daily lambs could only call to mind.",
+      "evidence": [
+        {
+          "ref": "Exo.29.38",
+          "to": "Exo.29.42"
+        },
+        {
+          "ref": "Num.28.3",
+          "to": "Num.28.11"
+        },
+        {
+          "ref": "Lev.23.12"
+        },
+        {
+          "ref": "Lev.23.18",
+          "to": "Lev.23.19"
+        },
+        {
+          "ref": "Ezk.46.13",
+          "to": "Ezk.46.15"
+        },
+        {
+          "ref": "Isa.1.11",
+          "to": "Isa.1.17"
+        },
+        {
+          "ref": "Heb.10.1",
+          "to": "Heb.10.4"
+        },
+        {
+          "ref": "Heb.10.11",
+          "to": "Heb.10.12"
+        },
+        {
+          "ref": "Jhn.1.29"
+        },
+        {
+          "ref": "Jhn.1.36"
+        }
+      ]
+    },
+    {
+      "topic": "lamb-led-to-slaughter",
+      "statement": "Jeremiah says, “I was like a gentle כֶּבֶשׂ led to the slaughter, and I did not know that they had devised plots against me: ‘Let us destroy the tree with its fruit, and cut him off from the land of the living, that his name be remembered no more’” (Jer 11:19); the plotters were the men of his own town, Anathoth (Jer 11:21). Isaiah uses the same picture and the same words of the servant: “like a שֶׂה led to the slaughter … he was cut off from the land of the living” (Isa 53:7–8). Philip, asked of whom the prophet speaks, “began at the same scripture and preached to him Jesus” (Act 8:32–35), and Jesus was rejected by his own town, which tried to throw him from its hill (Luk 4:24, 28–29). From the verses: the righteous man whose own people seek his life, and who goes to death as a lamb goes, is shown first in Jeremiah and fulfilled in Jesus.",
+      "evidence": [
+        {
+          "ref": "Jer.11.19"
+        },
+        {
+          "ref": "Jer.11.21"
+        },
+        {
+          "ref": "Isa.53.7",
+          "to": "Isa.53.8"
+        },
+        {
+          "ref": "Act.8.32",
+          "to": "Act.8.35"
+        },
+        {
+          "ref": "Luk.4.24"
+        },
+        {
+          "ref": "Luk.4.28",
+          "to": "Luk.4.29"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "When the shoot from the stump of Jesse judges the poor with righteousness and strikes the earth with the rod of his mouth, “the wolf shall dwell with the כֶּבֶשׂ … they shall not hurt nor destroy in all my holy mountain, for the earth shall be full of the knowledge of Yahweh as the waters cover the sea” (Isa 11:1–9; again in Isa 65:25). Paul quotes the next verse, the root of Jesse who rises to rule the nations, of Christ (Isa 11:10; Rom 15:12). Until then Jesus sends his disciples “as lambs in the midst of wolves” (Luk 10:3). From the verses: the peace of the lamb with the wolf is not of this age, in which the lambs are sent among wolves, but of the age when Christ reigns over the earth.",
+      "evidence": [
+        {
+          "ref": "Isa.11.1",
+          "to": "Isa.11.10"
+        },
+        {
+          "ref": "Isa.65.25"
+        },
+        {
+          "ref": "Rom.15.12"
+        },
+        {
+          "ref": "Luk.10.3"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (כֶּבֶשׂ, Lev 23:12, 18–20); the word is not in Numbers 10. Root key: the corpus files all four words under כבר (entry_root and word_info.root, BDB keys k.al.af–k.al.ai, beside כבר “net, sieve” k.al.aa–ae and k.ak “be many”), which looks like a fault in how the generator assigns BDB’s sub-entries to roots; the entry uses the root as the words are spelled, כבשׂ, with כשׂב for the transposed forms. Until the corpus is re-keyed the app finds this entry for the lamb words only through the bdb fallback, and would also show it for the כבר words while no other entry claims a key of that tree; a future כבר entry (by root) would take the lamb words. k.dh.af (כֶּשֶׂב, a zero-token cross-reference) is left unclaimed. Left out: כָּבַשׁ “subdue” (k.am.aa), כֶּבֶשׁ “footstool” and כִּבְשָׁן “kiln”, a different root with shin; Akkadian kabāsu “tread” and Syriac ܟܒܫ belong to it. No Aramaic word: Biblical Aramaic and the Peshitta’s New Testament use אִמַּר for lamb (Ezr 6:9); SEDRA has no lamb word under ܟܒܫ (root 590 KB/ is “throng”). Syriac ܟܶܒܫܳܐ “wether” is cited by Wiktionary and others, not checked in Payne Smith or Brockelmann. Phoenician kbš “sheep” is cited by Wiktionary only; Krahmalkov has no such entry (his KBS is “fuller”). Soqotri kobŝ “ram” (Wiktionary only) not checked. No Ugaritic form found in Segert. Open: (1) the root key (above); (2) whether כֶּשֶׂב/כִּשְׂבָּה should stay words of this entry (kept: same sense and contexts); (3) the reading of Hos 4:16, whether the broad place is freedom or exposure; (4) the Akkadian kabsu as cognate or Aramaic loan."
+}
