@@ -1,0 +1,811 @@
+{
+  "id": "ayab",
+  "root": "איב",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "enmity",
+    "war",
+    "hatred",
+    "covenant",
+    "messiah"
+  ],
+  "gloss": "be hostile to; enemy; enmity",
+  "summary": "The verb is to be hostile to someone, to set oneself against him and seek his harm (Exo 23:22; 1Sa 18:29; Num 35:23); almost all its uses are the participle אֹיֵב, the one who is hostile, the enemy: a people met in war, a personal foe, the enemies of Yahweh, and at times Yahweh himself turned enemy to a people who rebelled against him (Isa 63:10). אֵיבָה is the enmity itself, the settled hostility that makes a killing murder (Num 35:21–22) and that God puts between the serpent and the woman and their seeds (Gen 3:15). Its constant companions are שֹׂנֵא, the one who hates, and צַר, the adversary (Num 10:35; Exo 23:22). Akkadian ayyābu, Ugaritic ib and Phoenician ʾb all mean “enemy”.",
+  "words": [
+    {
+      "lemma": "אָיַב",
+      "pos": "verb",
+      "gloss": "be hostile to, be an enemy to; (participle) enemy",
+      "bdb": [
+        "a.cx.aa"
+      ],
+      "cognate_ids": [
+        "akk-ayyabu",
+        "uga-ib",
+        "phn-ab"
+      ],
+      "summary": "A finite form occurs once (Exo 23:22) and the participle used as a verb with an object once (1Sa 18:29); the other 280 or so uses are the participle אֹיֵב (feminine אֹיֶבֶת, Mic 7:8, 10) as a noun, “enemy”.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be hostile to; (participle) enemy, foe",
+          "senses": [
+            {
+              "id": "be-hostile",
+              "gloss": "be hostile to, be an enemy to",
+              "definition": "To stand against someone as his enemy, set on his harm: of Yahweh toward Israel’s enemies, and of Saul toward David.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.22",
+                  "role": "defining",
+                  "note": "“If you indeed obey his voice … וְאָיַבְתִּי אֶת־אֹיְבֶיךָ, I will be an enemy to your enemies, וְצַרְתִּי אֶת־צֹרְרֶיךָ, and an adversary to your adversaries.” The only finite form, set beside צרר."
+                },
+                {
+                  "ref": "1Sa.18.29",
+                  "role": "defining",
+                  "note": "Saul feared David yet more, “and Saul was אֹיֵב אֶת־דָּוִד all the days”: the participle as a verb with an object, a lasting hostility."
+                },
+                {
+                  "ref": "Num.35.23",
+                  "role": "defining",
+                  "note": "A man killed by a stone thrown unseen, “and he was not אוֹיֵב to him, and was not seeking his harm (מְבַקֵּשׁ רָעָתוֹ)”: being an enemy to someone is seeking his harm."
+                }
+              ],
+              "cognate_ids": [
+                "ar-waiba"
+              ]
+            },
+            {
+              "id": "enemy",
+              "gloss": "enemy, foe (the participle as a noun)",
+              "definition": "The one who is hostile: whoever stands against a person, a people or God and seeks their harm. Set beside שֹׂנֵא, “one who hates”, and צַר, “adversary”, and against אֹהֵב, “one who loves”.",
+              "evidence": [
+                {
+                  "ref": "Num.10.35",
+                  "role": "defining",
+                  "note": "As the ark sets out: “Rise up, Yahweh, and let אֹיְבֶיךָ be scattered, and let מְשַׂנְאֶיךָ flee before you”: enemies are those who hate."
+                },
+                {
+                  "ref": "Jdg.5.31",
+                  "role": "defining",
+                  "note": "“So let all אוֹיְבֶיךָ perish, Yahweh; but those who love him (אֹהֲבָיו) be as the sun when it goes out in its might”: the enemy is the opposite of the one who loves."
+                },
+                {
+                  "ref": "Psa.18.18",
+                  "role": "defining",
+                  "note": "“He rescued me מֵאֹיְבִי עָז and from those who hate me (מִשֹּׂנְאַי), for they were too strong for me.” Also 2Sa 22:18."
+                }
+              ],
+              "senses": [
+                {
+                  "id": "enemy-in-war",
+                  "gloss": "enemy in war, a hostile people",
+                  "definition": "A people or army that comes against Israel, or that Israel goes out against, in war; the enemies over whom obedience brings victory and before whom disobedience brings defeat. The feminine אֹיֶבֶת is a hostile city or people spoken of as a woman.",
+                  "evidence": [
+                    {
+                      "ref": "Num.10.9",
+                      "role": "defining",
+                      "note": "“When you go to war in your land against the adversary who oppresses you (הַצַּר הַצֹּרֵר אֶתְכֶם), you shall sound an alarm with the trumpets, and you will be remembered before Yahweh your God and saved מֵאֹיְבֵיכֶם.”"
+                    },
+                    {
+                      "ref": "Deu.20.1",
+                      "role": "defining",
+                      "note": "“When you go out to battle against אֹיְבֶיךָ and see horse and chariot, a people more than you, do not fear them, for Yahweh your God is with you.”"
+                    },
+                    {
+                      "ref": "Exo.15.9",
+                      "note": "At the sea: “אוֹיֵב said, I will pursue, I will overtake, I will divide the spoil.”"
+                    },
+                    {
+                      "ref": "Lev.26.7",
+                      "to": "Lev.26.8",
+                      "note": "Under the covenant’s blessing: “You shall chase אֹיְבֵיכֶם … five of you shall chase a hundred.”"
+                    },
+                    {
+                      "ref": "Lev.26.17",
+                      "role": "defining",
+                      "note": "Under its curse: “you shall be struck before אֹיְבֵיכֶם, and those who hate you (שֹׂנְאֵיכֶם) shall rule over you.”"
+                    },
+                    {
+                      "ref": "Lev.26.44",
+                      "note": "“When they are in the land of אֹיְבֵיהֶם I will not reject them … to break my covenant with them.”"
+                    },
+                    {
+                      "ref": "Num.14.42",
+                      "note": "“Do not go up, for Yahweh is not among you, so that you are not struck before אֹיְבֵיכֶם.”"
+                    },
+                    {
+                      "ref": "Deu.28.7",
+                      "note": "“Yahweh will make אֹיְבֶיךָ who rise up against you struck before you.”"
+                    },
+                    {
+                      "ref": "Deu.28.25",
+                      "note": "The same reversed: “Yahweh will make you struck before אֹיְבֶיךָ.”"
+                    },
+                    {
+                      "ref": "Gen.22.17",
+                      "note": "“Your seed shall possess the gate of אֹיְבָיו, his enemies”: the seed spoken of as one."
+                    },
+                    {
+                      "ref": "Gen.49.8",
+                      "note": "Judah: “your hand on the neck of אֹיְבֶיךָ.”"
+                    },
+                    {
+                      "ref": "Est.9.1",
+                      "note": "The day אֹיְבֵי הַיְּהוּדִים hoped to rule over them, the Jews ruled over those who hated them (בְּשֹׂנְאֵיהֶם)."
+                    },
+                    {
+                      "ref": "Est.7.6",
+                      "note": "“אִישׁ צַר וְאוֹיֵב, this evil Haman.”"
+                    },
+                    {
+                      "ref": "Mic.7.8",
+                      "note": "Zion to the city that gloats over her: “Do not rejoice over me, אֹיַבְתִּי, my enemy (f.); though I fall I shall rise.” Also Mic 7:10."
+                    }
+                  ]
+                },
+                {
+                  "id": "personal-enemy",
+                  "gloss": "personal enemy",
+                  "definition": "One who is hostile to a man himself, a neighbour or a man of his own house; the law and the proverbs bind how such an enemy is to be treated.",
+                  "evidence": [
+                    {
+                      "ref": "Exo.23.4",
+                      "role": "defining",
+                      "note": "“If you meet the ox of אֹיִבְךָ or his donkey going astray, you shall surely bring it back to him.”"
+                    },
+                    {
+                      "ref": "1Sa.24.20",
+                      "role": "defining",
+                      "note": "Saul to David, who had spared him: “If a man finds אֹיְבוֹ, will he send him away safe?”"
+                    },
+                    {
+                      "ref": "1Ki.21.20",
+                      "note": "Ahab to Elijah: “Have you found me, אֹיְבִי?”"
+                    },
+                    {
+                      "ref": "Mic.7.6",
+                      "role": "defining",
+                      "note": "“אֹיְבֵי אִישׁ are the men of his own house”: son against father, daughter against mother. Quoted in Mat 10:36."
+                    },
+                    {
+                      "ref": "Pro.24.17",
+                      "note": "“When אוֹיִבְךָ falls, do not rejoice.”"
+                    },
+                    {
+                      "ref": "Pro.16.7",
+                      "note": "“When a man’s ways please Yahweh, he makes even אוֹיְבָיו to be at peace with him.”"
+                    },
+                    {
+                      "ref": "Psa.35.19",
+                      "role": "defining",
+                      "note": "“Let not אֹיְבַי שֶׁקֶר rejoice over me, those who hate me without cause (שֹׂנְאַי חִנָּם).” John 15:25 takes up “they hated me without cause”."
+                    },
+                    {
+                      "ref": "Psa.69.5",
+                      "note": "“Those who hate me without cause are more than the hairs of my head … אֹיְבַי שֶׁקֶר.”"
+                    },
+                    {
+                      "ref": "Psa.41.12",
+                      "note": "“By this I know you delight in me, that אֹיְבִי does not shout over me.”"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemies-of-yahweh",
+                  "gloss": "enemies of Yahweh",
+                  "definition": "Those who set themselves against Yahweh: the wicked, the nations that oppose his people, and those in Israel who despise him. He repays them, and his king rules in their midst.",
+                  "evidence": [
+                    {
+                      "ref": "Psa.37.20",
+                      "role": "defining",
+                      "note": "“The wicked perish, וְאֹיְבֵי יַהְוֶה are like the glory of the pastures; they vanish in smoke.”"
+                    },
+                    {
+                      "ref": "Nam.1.2",
+                      "role": "defining",
+                      "note": "“Yahweh takes vengeance on his adversaries (לְצָרָיו) and keeps wrath for אֹיְבָיו.”"
+                    },
+                    {
+                      "ref": "Isa.1.24",
+                      "role": "defining",
+                      "note": "Of his own people: “Ah, I will get relief from my adversaries and avenge myself מֵאוֹיְבָי.”"
+                    },
+                    {
+                      "ref": "Psa.68.2",
+                      "note": "“Let God arise, let אוֹיְבָיו be scattered, and let those who hate him flee before him”: Num 10:35 taken up."
+                    },
+                    {
+                      "ref": "Psa.110.1",
+                      "role": "defining",
+                      "note": "“Sit at my right hand until I make אֹיְבֶיךָ a footstool for your feet.” Quoted in Mat 22:44; Act 2:35; Heb 1:13."
+                    },
+                    {
+                      "ref": "Psa.110.2",
+                      "note": "“Rule in the midst of אֹיְבֶיךָ.”"
+                    },
+                    {
+                      "ref": "Psa.139.22",
+                      "role": "defining",
+                      "note": "Of those who rise against God: “I hate them with complete hatred; לְאוֹיְבִים they have become to me.” God’s enemies are his servant’s."
+                    },
+                    {
+                      "ref": "2Sa.12.14",
+                      "note": "David “gave great occasion to אֹיְבֵי יַהְוֶה to blaspheme”."
+                    },
+                    {
+                      "ref": "1Sa.30.26",
+                      "note": "“A blessing from the spoil of אֹיְבֵי יַהְוֶה”: Israel’s enemies in war are Yahweh’s."
+                    },
+                    {
+                      "ref": "Isa.42.13",
+                      "note": "“Yahweh goes out like a mighty man … he prevails over אֹיְבָיו.”"
+                    },
+                    {
+                      "ref": "Psa.8.3",
+                      "note": "Strength founded from the mouth of babes “because of your adversaries, to still אוֹיֵב and the avenger”. Mat 21:16 quotes the verse’s first half."
+                    }
+                  ]
+                },
+                {
+                  "id": "god-as-enemy",
+                  "gloss": "Yahweh as an enemy to his people",
+                  "definition": "Yahweh himself acting as an enemy toward Israel when they rebel, or as one afflicted man feels him to be.",
+                  "evidence": [
+                    {
+                      "ref": "Isa.63.10",
+                      "role": "defining",
+                      "note": "“But they rebelled and grieved his holy spirit, so he turned to be לְאוֹיֵב to them; he himself fought against them.”"
+                    },
+                    {
+                      "ref": "Lam.2.4",
+                      "role": "defining",
+                      "note": "“He has bent his bow כְּאוֹיֵב, his right hand set like an adversary (כְּצָר).”"
+                    },
+                    {
+                      "ref": "Lam.2.5",
+                      "note": "“The Lord has become כְּאוֹיֵב; he has swallowed up Israel.”"
+                    },
+                    {
+                      "ref": "Jer.30.14",
+                      "note": "“I have struck you with the blow of an אוֹיֵב … because of the greatness of your iniquity.”"
+                    },
+                    {
+                      "ref": "Job.13.24",
+                      "role": "defining",
+                      "note": "Job to God: “Why do you hide your face and count me לְאוֹיֵב לָךְ, your enemy?”"
+                    },
+                    {
+                      "ref": "Job.33.10",
+                      "note": "Elihu repeats Job’s complaint: “He counts me לְאוֹיֵב לוֹ.”"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐχθρός",
+          "gloss": "enemy; hostile",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.10.9, מֵאֹיְבֵיכֶם → ἐχθρῶν; Num.10.35, אֹיְבֶיךָ → ἐχθροί; Psa.110.1 → ἐχθρούς; ἐχθρός renders אָיַב ×224 (lemma count, MACULA alignment)"
+            },
+            {
+              "ref": "Mat.22.44",
+              "role": "defining",
+              "note": "Jesus quotes Psa 110:1: “until I make your ἐχθρούς your footstool”. Also Mrk 12:36; Luk 20:43."
+            },
+            {
+              "ref": "Act.2.35",
+              "note": "Peter quotes Psa 110:1 of the risen Christ."
+            },
+            {
+              "ref": "Heb.1.13"
+            },
+            {
+              "ref": "Heb.10.13",
+              "note": "Christ sat down, “from then on waiting until his ἐχθροί are made a footstool for his feet”."
+            },
+            {
+              "ref": "1Co.15.25",
+              "to": "1Co.15.26",
+              "role": "defining",
+              "note": "“He must reign until he has put all the ἐχθρούς under his feet. The last ἐχθρός to be destroyed is death.”"
+            },
+            {
+              "ref": "Mat.10.36",
+              "role": "defining",
+              "note": "Mic 7:6 quoted: “a man’s ἐχθροί will be those of his own household”."
+            },
+            {
+              "ref": "Luk.1.71",
+              "note": "“Salvation ἐξ ἐχθρῶν ἡμῶν and from the hand of all who hate us”, the pairing of Psa 106:10 and 18:18, tied to the oath sworn to Abraham (Luk 1:73–74)."
+            },
+            {
+              "ref": "Rom.11.28",
+              "note": "Israel: “as regards the gospel, ἐχθροί for your sake; as regards election, beloved for the fathers’ sake”."
+            },
+            {
+              "ref": "Mat.5.44",
+              "note": "“Love your ἐχθρούς.”"
+            },
+            {
+              "ref": "Rom.5.10",
+              "note": "“While we were ἐχθροί we were reconciled to God through the death of his Son.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שֹׂנֵא",
+            "note": "“One who hates”, the commonest pair: the enemy is the one who hates.",
+            "evidence": [
+              {
+                "ref": "Num.10.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.68.2"
+              },
+              {
+                "ref": "Psa.18.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.18.41"
+              },
+              {
+                "ref": "Lev.26.17"
+              },
+              {
+                "ref": "Psa.106.10"
+              },
+              {
+                "ref": "Psa.35.19"
+              },
+              {
+                "ref": "Est.9.1"
+              }
+            ]
+          },
+          {
+            "lemma": "צַר",
+            "note": "“Adversary”, the one who presses hard (צרר); with its participle צֹרֵר.",
+            "evidence": [
+              {
+                "ref": "Exo.23.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.10.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Nam.1.2"
+              },
+              {
+                "ref": "Isa.1.24"
+              },
+              {
+                "ref": "Lam.2.4"
+              },
+              {
+                "ref": "Psa.74.10"
+              },
+              {
+                "ref": "Est.7.6"
+              },
+              {
+                "ref": "Deu.32.27"
+              }
+            ]
+          },
+          {
+            "lemma": "מִתְנַקֵּם",
+            "note": "“The avenger”, one who takes revenge.",
+            "evidence": [
+              {
+                "ref": "Psa.8.3"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אֹהֵב",
+            "note": "“One who loves”: Yahweh’s enemies against those who love him.",
+            "evidence": [
+              {
+                "ref": "Jdg.5.31",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נִגַּף לִפְנֵי אֹיֵב",
+            "gloss": "be struck down before the enemy (defeated, the covenant’s curse)",
+            "evidence": [
+              {
+                "ref": "Lev.26.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.14.42"
+              },
+              {
+                "ref": "Deu.28.25"
+              },
+              {
+                "ref": "1Ki.8.33"
+              }
+            ]
+          },
+          {
+            "phrase": "אֶרֶץ אֹיְבֵיהֶם",
+            "gloss": "the land of their enemies (exile)",
+            "evidence": [
+              {
+                "ref": "Lev.26.41",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.26.38"
+              },
+              {
+                "ref": "Lev.26.44"
+              }
+            ]
+          },
+          {
+            "phrase": "אֹיְבֵי יַהְוֶה",
+            "gloss": "the enemies of Yahweh",
+            "evidence": [
+              {
+                "ref": "Psa.37.20",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.30.26"
+              },
+              {
+                "ref": "2Sa.12.14"
+              }
+            ]
+          },
+          {
+            "phrase": "אֹיְבֵי שֶׁקֶר",
+            "gloss": "enemies without cause, wrongful enemies",
+            "evidence": [
+              {
+                "ref": "Psa.35.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.69.5"
+              }
+            ]
+          },
+          {
+            "phrase": "אָשִׁית אֹיְבֶיךָ הֲדֹם לְרַגְלֶיךָ",
+            "gloss": "I make your enemies a footstool for your feet",
+            "evidence": [
+              {
+                "ref": "Psa.110.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֵיבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "enmity, hostility",
+      "bdb": [
+        "a.cx.ab"
+      ],
+      "cognate_ids": [
+        "akk-ayyabu",
+        "uga-ib",
+        "phn-ab"
+      ],
+      "summary": "The hostility the verb describes, held as a settled state: five uses, in the law of manslaughter, in Gen 3:15 and in Ezekiel’s oracles against Philistia and Edom.",
+      "senses": [
+        {
+          "id": "enmity-between-persons",
+          "gloss": "enmity, a settled hostility toward someone",
+          "definition": "Ill will held against another, the intent that turns a blow into murder: striking “in enmity” is set against striking “suddenly, without enmity”, “without lying in wait”.",
+          "kin": [
+            "be-hostile"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.35.21",
+              "role": "defining",
+              "note": "“Or בְאֵיבָה he struck him with his hand and he died: the one who struck shall surely be put to death; he is a murderer (רֹצֵחַ).”"
+            },
+            {
+              "ref": "Num.35.22",
+              "role": "defining",
+              "note": "“But if suddenly, בְּלֹא אֵיבָה, he pushed him, or threw anything on him without lying in wait”: the manslayer, who may flee to the city of refuge."
+            }
+          ]
+        },
+        {
+          "id": "enmity-of-the-seeds",
+          "gloss": "the enmity God sets between the serpent and the woman",
+          "definition": "The hostility God puts between the serpent and the woman, and between the serpent’s seed and hers, which ends in the woman’s seed striking the serpent’s head.",
+          "kin": [
+            "be-hostile"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.3.15",
+              "role": "defining",
+              "note": "“וְאֵיבָה I will put between you and the woman, and between your seed and her seed; he shall strike your head, and you shall strike his heel.”"
+            }
+          ]
+        },
+        {
+          "id": "everlasting-enmity",
+          "gloss": "lasting enmity between peoples",
+          "definition": "A nation’s long-held hostility toward Israel, acted out in revenge and slaughter when Israel was brought low.",
+          "kin": [
+            "enemy-in-war"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.35.5",
+              "role": "defining",
+              "note": "To Mount Seir: “because you have had אֵיבַת עוֹלָם, and gave over the sons of Israel to the sword in the time of their calamity”."
+            },
+            {
+              "ref": "Ezk.25.15",
+              "role": "defining",
+              "note": "The Philistines took vengeance “with contempt of soul, to destroy, אֵיבַת עוֹלָם”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔχθρα",
+          "gloss": "enmity",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.3.15, וְאֵיבָה → ἔχθραν; ἔχθρα renders אֵיבָה ×2 (lemma count, MACULA alignment)"
+            },
+            {
+              "ref": "Rom.8.7",
+              "role": "defining",
+              "note": "“The mind of the flesh is ἔχθρα toward God, for it does not submit to God’s law.”"
+            },
+            {
+              "ref": "Jas.4.4",
+              "note": "“Friendship with the world is ἔχθρα with God.”"
+            },
+            {
+              "ref": "Eph.2.15",
+              "to": "Eph.2.16",
+              "note": "Christ abolished “in his flesh the ἔχθραν”, killing it by the cross."
+            },
+            {
+              "ref": "Luk.23.12",
+              "note": "Herod and Pilate, who had been ἐν ἔχθρᾳ with each other."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ayyabu",
+      "lang": "akk",
+      "form": "ayyābu",
+      "translit": "ayyābu",
+      "gloss": "enemy; hostile",
+      "relation": "cognate",
+      "note": "Common from Old Babylonian to Seleucid times (842 instances in the Oracc corpora), as noun “enemy” and adjective “hostile”: the same participle-like form and the same two uses as אֹיֵב.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000039920, ayyābu [enemy] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000039920.html",
+          "note": "“enemy; hostile”."
+        }
+      ]
+    },
+    {
+      "id": "uga-ib",
+      "lang": "uga",
+      "form": "𐎛𐎁",
+      "translit": "ib (/ʾib-/)",
+      "gloss": "enemy",
+      "relation": "cognate",
+      "note": "Attested with suffixes iby “my enemy”, ibk “your enemy”, ibm “their enemy”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 178, §93 Glossary, ib",
+          "note": "“ib: iby, ibk, ibm … ‘enemy’ (H. ʾōyēb, Akkad. ayyābu)”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000588 ʾyb [enemy], UGC000006 ib [enemy]"
+        }
+      ]
+    },
+    {
+      "id": "phn-ab",
+      "lang": "phn",
+      "form": "𐤀𐤁",
+      "translit": "ʾb",
+      "gloss": "enemy",
+      "relation": "cognate",
+      "note": "Phoenician ʾby “my enemies” who came forth to battle (CIS i 91.2), and Neo-Punic aab in Latin letters, “the enemy asked for mercy”: an enemy in war, as most uses of אֹיֵב.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 26, ʾB II",
+          "note": "“[Ug. ib; Heb. ʾoyeb] n.m. ENEMY. CIS i 91.2 (Ph) … ‘I defeated my enemies who came forth and their allies’ … Dreder 6.10/11 (NPu) … ‘The enemy asked mercy for himself’”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000588 ʾyb [enemy], PUN000003 ʾb [enemy]"
+        }
+      ]
+    },
+    {
+      "id": "ar-waiba",
+      "lang": "ar",
+      "form": "وَئِبَ",
+      "translit": "waʾiba",
+      "gloss": "he was angry",
+      "relation": "possible",
+      "note": "A root w-ʾ-b, not ʾ-y-b; its main senses are “shrink, be ashamed” and “disgrace” (إِبَةٌ), and “was angry” is one late gloss. A link through a weak first radical is argued but not shown.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2913, root وأب, وَأَبَ (n41524)",
+          "note": "“وَئِبَ … He was angry. (K.)”; the article’s other senses are “he contracted himself … and was ashamed”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "enmity-of-the-seeds",
+      "statement": "God says to the serpent, “I will put אֵיבָה between you and the woman, and between your seed and her seed; he shall strike your head, and you shall strike his heel” (Gen 3:15): the enmity is God’s doing, it runs on through two lines of descendants, and it ends with one of the woman’s seed (“he”) wounded in the heel but striking the head. The New Testament names both sides. The Son was “born of a woman” (Gal 4:4), and shared flesh and blood “that through death he might destroy him who had the power of death, that is, the false accuser” (Heb 2:14). John and Jesus called the religious leaders who opposed him “offspring of vipers” (Mat 3:7; 12:34; 23:33), and Jesus told those who sought to kill him, “you are of your father the false accuser … he was a manslayer from the beginning” (Jhn 8:44). Paul writes that “the mind of the flesh is ἔχθρα toward God, for it does not submit to God’s law” (Rom 8:7), and that God “condemned sin in the flesh” in sending his Son in the likeness of sinful flesh (Rom 8:3). From the verses: the serpent’s seed is the mind that speaks as the serpent spoke, against God’s word, and those who follow it; the woman’s seed is Christ, who bore the wound in his death and by it destroyed the power of sin and death.",
+      "evidence": [
+        {
+          "ref": "Gen.3.15"
+        },
+        {
+          "ref": "Gal.4.4"
+        },
+        {
+          "ref": "Heb.2.14"
+        },
+        {
+          "ref": "Mat.3.7"
+        },
+        {
+          "ref": "Mat.12.34"
+        },
+        {
+          "ref": "Mat.23.33"
+        },
+        {
+          "ref": "Jhn.8.44"
+        },
+        {
+          "ref": "Rom.8.7"
+        },
+        {
+          "ref": "Rom.8.3"
+        }
+      ]
+    },
+    {
+      "topic": "enemies-made-a-footstool",
+      "statement": "Abraham is promised that his seed “shall possess the gate of אֹיְבָיו, his enemies” (Gen 22:17); the seed is one man, Christ (Gal 3:16), and Zacharias praises God for raising up salvation “from our enemies”, “to remember his holy covenant, the oath which he swore to Abraham our father, to grant us that, delivered from the hand of our enemies, we might serve him without fear” (Luk 1:71–74). Yahweh says to David’s lord, “Sit at my right hand until I make אֹיְבֶיךָ a footstool for your feet” (Psa 110:1), which Jesus applies to himself (Mat 22:44), Peter to the risen Christ (Act 2:34–35) and Hebrews to Christ seated after his one offering, “waiting until his enemies are made a footstool” (Heb 10:12–13). Paul says he must reign “until he has put all enemies under his feet; the last enemy to be destroyed is death”, and then the Son himself is subjected to the Father (1Co 15:25–28). From the verses: the enemies of Abraham’s seed are subdued by Christ, first at his return and then through his reign, until death itself is ended.",
+      "evidence": [
+        {
+          "ref": "Gen.22.17"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Luk.1.71",
+          "to": "Luk.1.74"
+        },
+        {
+          "ref": "Psa.110.1"
+        },
+        {
+          "ref": "Mat.22.44"
+        },
+        {
+          "ref": "Act.2.34",
+          "to": "Act.2.35"
+        },
+        {
+          "ref": "Heb.10.12",
+          "to": "Heb.10.13"
+        },
+        {
+          "ref": "1Co.15.25",
+          "to": "1Co.15.28"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-enemy-of-the-disobedient",
+      "statement": "Yahweh promises Israel that if they obey him, “I will be an enemy to your enemies” (Exo 23:22); on the march the enemies Israel met are called his: “Rise up, Yahweh, and let your enemies be scattered” (Num 10:35), and in war the trumpet brings Israel to remembrance before him to be saved from their enemies (Num 10:9). If they will not obey, “you shall be struck before your enemies” (Lev 26:17); when they rebelled and grieved his holy spirit, “he turned to be their enemy; he himself fought against them” (Isa 63:10), and Jerusalem fell to the Lord who had become “like an enemy” (Lam 2:4–5). Yet even “in the land of their enemies” he would not reject them so as to break his covenant (Lev 26:44), and Paul says of Israel that “as regards the gospel they are enemies for your sake, but as regards election beloved for the fathers’ sake” (Rom 11:28). From the verses: whether Israel’s enemies are God’s enemies, or God is Israel’s enemy, turns on their obedience; his enmity toward them is real but bounded by the covenant with the fathers.",
+      "evidence": [
+        {
+          "ref": "Exo.23.22"
+        },
+        {
+          "ref": "Num.10.35"
+        },
+        {
+          "ref": "Num.10.9"
+        },
+        {
+          "ref": "Lev.26.17"
+        },
+        {
+          "ref": "Isa.63.10"
+        },
+        {
+          "ref": "Lam.2.4",
+          "to": "Lam.2.5"
+        },
+        {
+          "ref": "Lev.26.44"
+        },
+        {
+          "ref": "Rom.11.28"
+        }
+      ]
+    },
+    {
+      "topic": "love-of-enemies",
+      "statement": "The law commands a man who finds his enemy’s ox or donkey straying to bring it back to him (Exo 23:4), and the proverb forbids rejoicing when an enemy falls (Pro 24:17); David spared Saul, who sought his life, and Saul himself said, “If a man finds his enemy, will he send him away safe?” (1Sa 24:20). Jesus says, “Love your enemies” (Mat 5:44), and Paul that God reconciled us to himself through his Son’s death “while we were enemies” (Rom 5:10). From the verses: kindness to a personal enemy was already the law’s demand, and Christ grounds it in God’s own dealing with men who were his enemies.",
+      "evidence": [
+        {
+          "ref": "Exo.23.4"
+        },
+        {
+          "ref": "Pro.24.17"
+        },
+        {
+          "ref": "1Sa.24.20"
+        },
+        {
+          "ref": "Mat.5.44"
+        },
+        {
+          "ref": "Rom.5.10"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Words: the verb (a.cx.aa), whose participle אֹיֵב makes up nearly all its uses, kept as the verb’s qal with “enemy” as a sense rather than a separate noun, since BDB files every token under the one key; the feminine participle אֹיַבְתִּי (Mic 7:8, 10) is under it. אֵיבָה (a.cx.ab). Left out: the name אִיּוֹב Job (a.cx.ac, 58 uses), which belongs in names/ and was not assigned in this task; whether it is formed from this root is uncertain (Job 13:24 “you count me לְאוֹיֵב”, Job 33:10, sound like a play on it, but no cognate settles it). Left out as another root: אֱיָל “strength, help” (a.cx.aj, Psa 88:5) and אֱיָלוּת (a.cx.ak, Psa 22:20), which the database keys under איב but whose spelling has no ב; they belong with איל/אול (Syriac ʾəyālā “help”, Wiktionary lead). a.cx.af (אַיֵּה) and a.cx.ah (אֵיךְ) are cross-references with no tokens. No Biblical Aramaic or Peshitta word of the root (the brief finds no Peshitta cognate root; Aramaic uses שׂנא and בְּעֵל דְּבָבָא). Open questions: (1) Arabic waʾiba “was angry” is recorded only as possible: Lane gives it from the Qamus alone, under a root whose main sense is shame. (2) The “enmity-of-the-seeds” doctrine reads the serpent’s seed as the mind of the flesh and those who follow it, from Rom 8:7 and Jhn 8:44; check the reviewer wants that framing. (3) Rom 12:20 (ἐχθρός) quotes Pro 25:21, whose Hebrew is שֹׂנַאֲךָ, not אֹיֵב, so it is not cited here. Leads not followed: CAD A/1 ayyābu (not vendored; Oracc cited instead); Ge’ez and Old South Arabic not checked."
+}
