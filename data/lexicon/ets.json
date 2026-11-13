@@ -1,0 +1,1242 @@
+{
+  "id": "ets",
+  "root": "עצה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "tree",
+    "wood",
+    "creation",
+    "idolatry",
+    "sacrifice",
+    "feasts",
+    "body",
+    "mortality"
+  ],
+  "gloss": "tree; wood, timber; a piece of wood: stick, pole",
+  "summary": "עֵץ is a tree, growing and bearing fruit after its kind (Gen 1:11–12), and the wood cut from it: timber for the ark and the tabernacle, wood laid on the altar, a stick, a pole on which a man is hanged (Deu 21:22–23). Scripture uses the tree for man, planted by water or brought low (Psa 1:3; Ezk 17:24), and the wood for the idols men carve and bow to (Isa 44:19); Lev 23:40 takes fruit and boughs of trees for the feast of סֻכּוֹת. Akkadian iṣu, Ugaritic and Phoenician ʿṣ, Ge'ez ʿəṣ́ and Arabic ʿiḍāh “thorn trees” are the same word, and Biblical Aramaic has it as אָע. Under the same letters stand two words the cognates put under other older roots: עָצֶה, the bone the fat tail is taken off by (Lev 3:9), and the verb עָצָה, to shut the eyes (Pro 16:30).",
+  "words": [
+    {
+      "lemma": "עֵץ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tree; wood, timber; a piece of wood: stick, pole, gallows",
+      "bdb": [
+        "p.em.ab"
+      ],
+      "cognate_ids": [
+        "akk-isu",
+        "uga-is",
+        "phn-is",
+        "gez-is",
+        "ar-idah",
+        "arc-a"
+      ],
+      "summary": "The one word for a tree and for what is cut from it. About half its uses are the living tree, half wood: timber, fuel, a stick or pole. The plural עֵצִים is mostly “pieces of wood”.",
+      "senses": [
+        {
+          "id": "tree",
+          "gloss": "tree",
+          "definition": "A growing tree, rooted in the ground, with branches, leaf and fruit; often collective, “trees”.",
+          "evidence": [
+            {
+              "ref": "Gen.1.11",
+              "role": "defining",
+              "note": "“Let the land sprout … עֵץ פְּרִי making fruit after its kind, whose seed is in it.”"
+            },
+            {
+              "ref": "Gen.1.12",
+              "role": "defining",
+              "note": "The land brought out עֵץ making fruit, whose seed is in it, after its kind."
+            },
+            {
+              "ref": "Deu.20.19",
+              "role": "defining",
+              "note": "In a siege, do not take the axe to its עֵץ, “for you eat from it … is the עֵץ of the field a man?”"
+            },
+            {
+              "ref": "Job.14.7",
+              "role": "defining",
+              "note": "“There is hope for a עֵץ: if it is cut down it will sprout again”, its root and stump in the ground (14:8–9)."
+            },
+            {
+              "ref": "Lev.23.40",
+              "role": "defining",
+              "note": "For the feast of סֻכּוֹת: “the fruit of עֵץ הָדָר, branches of palms, and boughs of עֵץ עָבֹת and willows of the brook”."
+            },
+            {
+              "ref": "Neh.8.15",
+              "note": "Lev 23:40 carried out: branches of olive, of עֵץ שֶׁמֶן, myrtle, palm and עֵץ עָבֹת “to make booths, as it is written”."
+            },
+            {
+              "ref": "Exo.9.25",
+              "note": "The hail struck every plant of the field and broke every עֵץ of the field."
+            },
+            {
+              "ref": "Lev.26.4",
+              "note": "“The עֵץ of the field will give its fruit.”"
+            },
+            {
+              "ref": "Jol.1.12",
+              "note": "Vine, fig, pomegranate, palm and apple: “all the עֲצֵי of the field are dried up”."
+            },
+            {
+              "ref": "Psa.104.16",
+              "note": "“The עֲצֵי of Yahweh are satisfied, the cedars of Lebanon which he planted.”"
+            },
+            {
+              "ref": "Gen.2.9"
+            },
+            {
+              "ref": "Deu.22.6"
+            }
+          ],
+          "senses": [
+            {
+              "id": "fruit-tree",
+              "gloss": "fruit tree (also עֵץ מַאֲכָל, tree for food)",
+              "definition": "A tree whose fruit is eaten, set apart from one that is not.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.29",
+                  "role": "defining",
+                  "note": "“Every עֵץ in which is the fruit of a עֵץ yielding seed: to you it shall be for food.”"
+                },
+                {
+                  "ref": "Deu.20.20",
+                  "role": "defining",
+                  "note": "“Only a עֵץ that you know is not a עֵץ מַאֲכָל you may destroy and cut down.”"
+                },
+                {
+                  "ref": "Lev.19.23",
+                  "role": "defining",
+                  "note": "When you plant every עֵץ מַאֲכָל, its fruit is uncircumcised three years."
+                },
+                {
+                  "ref": "Ezk.47.12",
+                  "note": "By the river from the sanctuary grow every עֵץ מַאֲכָל, its leaf unwithering, its fruit for food and its leaf for healing."
+                },
+                {
+                  "ref": "Neh.10.36",
+                  "note": "The firstfruits of all the fruit of every עֵץ, year by year, to the house of Yahweh."
+                }
+              ]
+            },
+            {
+              "id": "tree-of-life",
+              "gloss": "the tree of life",
+              "definition": "The tree in the garden whose fruit would have given the man to “live for ever”; and in Proverbs, by likeness, whatever gives life.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.9",
+                  "role": "defining",
+                  "note": "“And עֵץ הַחַיִּים in the midst of the garden, and עֵץ הַדַּעַת טוֹב וָרָע.”"
+                },
+                {
+                  "ref": "Gen.3.22",
+                  "role": "defining",
+                  "note": "“Lest he put out his hand and take also from עֵץ הַחַיִּים, and eat, and live for ever.”"
+                },
+                {
+                  "ref": "Gen.3.24",
+                  "note": "Cherubim and a turning flaming sword “to keep the way of עֵץ הַחַיִּים”."
+                },
+                {
+                  "ref": "Pro.3.18",
+                  "role": "defining",
+                  "note": "Wisdom “is עֵץ חַיִּים to those who lay hold of her”."
+                },
+                {
+                  "ref": "Pro.11.30",
+                  "note": "“The fruit of the righteous is עֵץ חַיִּים.”"
+                },
+                {
+                  "ref": "Pro.13.12",
+                  "note": "“A desire come is עֵץ חַיִּים.”"
+                },
+                {
+                  "ref": "Pro.15.4",
+                  "note": "“A healing tongue is עֵץ חַיִּים.”"
+                },
+                {
+                  "ref": "Rev.2.7",
+                  "role": "defining",
+                  "note": "“To him who overcomes I will give to eat of the ξύλον τῆς ζωῆς, which is in the midst of the paradise of God”: the tree of Gen 2:9 given back."
+                },
+                {
+                  "ref": "Rev.22.2",
+                  "note": "On either side of the river, the ξύλον ζωῆς bearing its fruit every month, its leaves for the healing of the nations: Ezk 47:12."
+                },
+                {
+                  "ref": "Rev.22.14"
+                }
+              ]
+            },
+            {
+              "id": "tree-figure",
+              "gloss": "tree as a figure of men and kingdoms",
+              "definition": "A tree standing for a man, a king or a nation: planted, flourishing, cut down, brought low or raised up.",
+              "evidence": [
+                {
+                  "ref": "Psa.1.3",
+                  "role": "defining",
+                  "note": "The man who delights in the law of Yahweh “shall be like a עֵץ planted by streams of water, that gives its fruit in its season”."
+                },
+                {
+                  "ref": "Jer.17.8",
+                  "role": "defining",
+                  "note": "The man who trusts in Yahweh “shall be like a עֵץ planted by the waters”."
+                },
+                {
+                  "ref": "Jdg.9.8",
+                  "role": "defining",
+                  "note": "Jotham’s parable: “the הָעֵצִים went to anoint a king over them”, and the olive, fig and vine refuse (9:8–15)."
+                },
+                {
+                  "ref": "Ezk.17.24",
+                  "role": "defining",
+                  "note": "“All the עֲצֵי of the field shall know that I Yahweh have brought low the high עֵץ, raised the low עֵץ, dried the green עֵץ and made the dry עֵץ flourish”: kings and kingdoms (17:22–23)."
+                },
+                {
+                  "ref": "Ezk.31.8",
+                  "note": "Assyria as a cedar: “no עֵץ in the garden of God was like it in its beauty”."
+                },
+                {
+                  "ref": "Ezk.21.3",
+                  "note": "A fire in the forest of the Negev shall devour “every green עֵץ and every dry עֵץ”, explained as the sword against Jerusalem, “righteous and wicked” (21:7–8)."
+                },
+                {
+                  "ref": "Isa.55.12",
+                  "note": "“All the עֲצֵי of the field shall clap their hands.”"
+                },
+                {
+                  "ref": "Luk.23.31",
+                  "note": "“If they do these things ἐν τῷ ὑγρῷ ξύλῳ, what will be done in the dry?”: the green and dry tree of Ezk 21:3."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wood",
+          "gloss": "wood, timber",
+          "definition": "Wood as a material: timber for building, wood for vessels, tools and carving.",
+          "evidence": [
+            {
+              "ref": "Gen.6.14",
+              "role": "defining",
+              "note": "“Make yourself an ark of עֲצֵי גֹפֶר.”"
+            },
+            {
+              "ref": "Exo.25.10",
+              "role": "defining",
+              "note": "“They shall make an ark of עֲצֵי שִׁטִּים”: acacia wood, as for the table, altar and boards of the tabernacle."
+            },
+            {
+              "ref": "Lev.11.32",
+              "role": "defining",
+              "note": "Unclean is “any כְּלִי עֵץ or garment or skin or sack”: a vessel of wood beside things of other materials."
+            },
+            {
+              "ref": "1Ki.5.22",
+              "note": "Hiram to Solomon: “I will do all your desire in עֲצֵי of cedar and עֲצֵי of cypress.”"
+            },
+            {
+              "ref": "Hag.1.8",
+              "role": "defining",
+              "note": "“Go up to the mountain and bring עֵץ and build the house.”"
+            },
+            {
+              "ref": "Ezk.15.3",
+              "note": "Of the vine: “Is עֵץ taken from it to make any work? Or do they take a peg from it to hang any vessel on?”"
+            },
+            {
+              "ref": "Num.35.18",
+              "note": "Striking a man “with a hand-weapon of עֵץ” by which he may die."
+            },
+            {
+              "ref": "Isa.10.15",
+              "note": "“As if a rod should lift him who is not עֵץ”: wood set against the living man who wields it."
+            },
+            {
+              "ref": "Lev.14.4",
+              "note": "עֵץ אֶרֶז, cedar wood, with scarlet and hyssop in the cleansing; also Num 19:6."
+            },
+            {
+              "ref": "Jos.2.6",
+              "note": "פִּשְׁתֵּי הָעֵץ, flax of the stalk: the woody stalks laid on the roof."
+            }
+          ],
+          "senses": [
+            {
+              "id": "wood-idols",
+              "gloss": "wood carved into gods",
+              "definition": "Wood shaped into an idol, and so by contempt the idol itself: “wood and stone”.",
+              "evidence": [
+                {
+                  "ref": "Deu.4.28",
+                  "role": "defining",
+                  "note": "“Gods, the work of men’s hands, עֵץ וָאֶבֶן, which neither see nor hear nor eat nor smell.”"
+                },
+                {
+                  "ref": "Isa.44.19",
+                  "role": "defining",
+                  "note": "Half of it he burned and baked bread on its coals; “shall I bow down to a block of עֵץ?”"
+                },
+                {
+                  "ref": "Jer.10.3",
+                  "role": "defining",
+                  "note": "“A עֵץ from the forest one cuts, the work of the craftsman’s hands with the axe.”"
+                },
+                {
+                  "ref": "Hab.2.19",
+                  "note": "“Woe to him who says to the עֵץ, Awake! … there is no breath at all in it.”"
+                },
+                {
+                  "ref": "Jer.2.27",
+                  "note": "“Who say to the עֵץ, You are my father, and to the stone, You gave birth to me.”"
+                },
+                {
+                  "ref": "Hos.4.12",
+                  "note": "“My people ask counsel of their עֵץ, and their staff declares to them.”"
+                },
+                {
+                  "ref": "2Ki.19.18",
+                  "note": "“They were not gods, but the work of men’s hands, עֵץ וָאֶבֶן.”"
+                },
+                {
+                  "ref": "Ezk.20.32"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "firewood",
+          "gloss": "firewood, wood for the altar (plural)",
+          "definition": "Pieces of wood gathered, carried and laid for burning, above all on the altar; nearly always the plural עֵצִים.",
+          "evidence": [
+            {
+              "ref": "Gen.22.6",
+              "role": "defining",
+              "note": "Abraham took עֲצֵי הָעֹלָה and laid them on Isaac his son."
+            },
+            {
+              "ref": "Gen.22.7",
+              "note": "“Behold the fire and the עֵצִים, but where is the lamb for a burnt offering?”"
+            },
+            {
+              "ref": "Lev.1.7",
+              "role": "defining",
+              "note": "The priests put fire on the altar “and lay עֵצִים in order on the fire”."
+            },
+            {
+              "ref": "Lev.6.5",
+              "note": "The priest shall burn עֵצִים on it every morning; the fire shall not go out."
+            },
+            {
+              "ref": "Num.15.32",
+              "role": "defining",
+              "note": "A man found “gathering עֵצִים on the sabbath day”."
+            },
+            {
+              "ref": "Pro.26.20",
+              "role": "defining",
+              "note": "“Without עֵצִים the fire goes out.”"
+            },
+            {
+              "ref": "1Ki.18.33",
+              "note": "Elijah laid the עֵצִים in order and the bull on them."
+            },
+            {
+              "ref": "Jos.9.21",
+              "note": "The Gibeonites made חֹטְבֵי עֵצִים, hewers of wood, for the congregation."
+            },
+            {
+              "ref": "Neh.10.35",
+              "note": "Lots cast for קֻרְבַּן הָעֵצִים, the wood offering, to burn on the altar of Yahweh as it is written in the law."
+            },
+            {
+              "ref": "Ezk.39.10",
+              "note": "They will not carry עֵצִים from the field, for they will burn the weapons."
+            }
+          ]
+        },
+        {
+          "id": "pole",
+          "gloss": "a piece of wood: stick, pole, shaft; the pole a man is hanged on",
+          "definition": "A single length of wood: a stick, a staff, a spear’s shaft, and the post or tree on which the body of an executed man was hanged.",
+          "evidence": [
+            {
+              "ref": "2Ki.6.6",
+              "role": "defining",
+              "note": "The man of God “cut off a עֵץ and threw it there, and the iron floated”."
+            },
+            {
+              "ref": "Exo.15.25",
+              "note": "Yahweh showed Moses a עֵץ; he threw it into the water and the water was made sweet."
+            },
+            {
+              "ref": "Ezk.37.16",
+              "role": "defining",
+              "note": "“Take one עֵץ and write on it, For Judah … and take one עֵץ and write on it, For Joseph, the עֵץ of Ephraim.”"
+            },
+            {
+              "ref": "Ezk.37.19",
+              "note": "“I will make them one עֵץ, and they shall be one in my hand.”"
+            },
+            {
+              "ref": "1Sa.17.7",
+              "note": "The עֵץ (qere; ketiv חֵץ) of Goliath’s spear, like a weaver’s beam."
+            },
+            {
+              "ref": "Deu.21.22",
+              "role": "defining",
+              "note": "A man put to death for a sin worthy of death: “you shall hang him עַל־עֵץ”."
+            },
+            {
+              "ref": "Deu.21.23",
+              "role": "defining",
+              "note": "“His body shall not remain all night עַל־הָעֵץ, but you shall surely bury him that day, for one hanged is the curse of God.”"
+            },
+            {
+              "ref": "Jos.10.26",
+              "note": "Joshua hanged the five kings on five עֵצִים until evening."
+            },
+            {
+              "ref": "Jos.8.29",
+              "note": "The king of Ai hanged on the עֵץ until evening, taken down at sunset."
+            },
+            {
+              "ref": "Gen.40.19",
+              "note": "“Pharaoh will lift your head from you and hang you עַל־עֵץ.”"
+            },
+            {
+              "ref": "Est.5.14",
+              "role": "defining",
+              "note": "“Let a עֵץ fifty cubits high be made, and … let Mordecai be hanged on it”: a pole made, not a growing tree."
+            },
+            {
+              "ref": "Est.7.9",
+              "note": "“Behold the עֵץ that Haman made for Mordecai … Hang him on it.”"
+            },
+            {
+              "ref": "Gal.3.13",
+              "role": "defining",
+              "note": "Paul quotes Deu 21:23 of Christ: “Cursed is everyone who hangs ἐπὶ ξύλου.”"
+            },
+            {
+              "ref": "Act.5.30",
+              "note": "“Jesus, whom you killed, hanging him ἐπὶ ξύλου.”"
+            },
+            {
+              "ref": "1Pe.2.24",
+              "note": "“Who himself bore our sins in his body ἐπὶ τὸ ξύλον.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ξύλον",
+          "gloss": "wood; tree; a stake or cross",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.9, עֵץ → ξύλον; Deu.21.23 the same; ξύλον renders עֵץ ×227"
+            },
+            {
+              "ref": "Gal.3.13",
+              "role": "defining",
+              "note": "Deu 21:23 quoted: “Cursed is everyone who hangs on a ξύλον.”"
+            },
+            {
+              "ref": "Act.5.30"
+            },
+            {
+              "ref": "Act.10.39"
+            },
+            {
+              "ref": "Act.13.29",
+              "note": "“They took him down from the ξύλον and laid him in a tomb”: as Deu 21:23 required."
+            },
+            {
+              "ref": "1Pe.2.24"
+            },
+            {
+              "ref": "Rev.2.7",
+              "role": "defining",
+              "note": "The ξύλον τῆς ζωῆς of Gen 2:9."
+            },
+            {
+              "ref": "Rev.22.2"
+            },
+            {
+              "ref": "Rev.22.14"
+            },
+            {
+              "ref": "Luk.23.31"
+            }
+          ]
+        },
+        {
+          "lemma": "δένδρον",
+          "gloss": "tree",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.20.19, עֵץ → δένδρον; Pro.11.30 the same; δένδρον renders עֵץ ×14"
+            },
+            {
+              "ref": "Mat.3.10",
+              "note": "“Every δένδρον that does not bear good fruit is cut down and thrown into the fire.”"
+            },
+            {
+              "ref": "Mat.7.17"
+            },
+            {
+              "ref": "Mat.12.33"
+            },
+            {
+              "ref": "Mat.13.32",
+              "note": "The mustard seed becomes a δένδρον and the birds of heaven lodge in its branches: the language of Ezk 17:23."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֶבֶן",
+            "note": "“Stone”, paired with עֵץ for idols, and for vessels of wood and stone.",
+            "evidence": [
+              {
+                "ref": "Deu.4.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.2.27"
+              },
+              {
+                "ref": "Hab.2.19"
+              },
+              {
+                "ref": "Exo.7.19"
+              }
+            ]
+          },
+          {
+            "lemma": "עֵשֶׂב",
+            "note": "“Plant, herb”: the growth of the ground beside the trees.",
+            "evidence": [
+              {
+                "ref": "Gen.1.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.1.29"
+              },
+              {
+                "ref": "Exo.9.25"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אָדָם",
+            "note": "“Is the tree of the field a man?” The tree cannot flee from the siege; it is spared because it feeds the besieger.",
+            "evidence": [
+              {
+                "ref": "Deu.20.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.10.15"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עֵץ הַחַיִּים",
+            "gloss": "the tree of life",
+            "evidence": [
+              {
+                "ref": "Gen.2.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.3.22"
+              },
+              {
+                "ref": "Pro.3.18"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵץ הַדַּעַת טוֹב וָרָע",
+            "gloss": "the tree of the knowledge of good and evil",
+            "evidence": [
+              {
+                "ref": "Gen.2.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.2.17"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵץ פְּרִי",
+            "gloss": "fruit tree (also עֵץ מַאֲכָל, tree for food)",
+            "evidence": [
+              {
+                "ref": "Gen.1.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.19.23"
+              },
+              {
+                "ref": "Deu.20.20"
+              },
+              {
+                "ref": "Ezk.47.12"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵץ הָדָר",
+            "gloss": "tree of splendour, goodly tree (its fruit taken at סֻכּוֹת)",
+            "evidence": [
+              {
+                "ref": "Lev.23.40",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵץ עָבֹת",
+            "gloss": "thick, leafy tree",
+            "evidence": [
+              {
+                "ref": "Lev.23.40",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.8.15"
+              },
+              {
+                "ref": "Ezk.20.28"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵץ שֶׁמֶן",
+            "gloss": "oil tree (wood of an oil-yielding tree)",
+            "evidence": [
+              {
+                "ref": "Neh.8.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.41.19"
+              },
+              {
+                "ref": "1Ki.6.23"
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחַת כָּל־עֵץ רַעֲנָן",
+            "gloss": "under every green tree (the place of idol worship)",
+            "evidence": [
+              {
+                "ref": "Deu.12.2",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.14.23"
+              },
+              {
+                "ref": "Jer.2.20"
+              },
+              {
+                "ref": "Jer.3.13"
+              },
+              {
+                "ref": "Ezk.6.13"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵץ וָאֶבֶן",
+            "gloss": "wood and stone (idols)",
+            "evidence": [
+              {
+                "ref": "Deu.4.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.28.36"
+              },
+              {
+                "ref": "2Ki.19.18"
+              },
+              {
+                "ref": "Ezk.20.32"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲצֵי שִׁטִּים",
+            "gloss": "acacia wood",
+            "evidence": [
+              {
+                "ref": "Exo.25.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.25.10"
+              }
+            ]
+          },
+          {
+            "phrase": "כְּלִי עֵץ",
+            "gloss": "vessel of wood",
+            "evidence": [
+              {
+                "ref": "Lev.11.32",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.15.12"
+              },
+              {
+                "ref": "Num.31.20"
+              }
+            ]
+          },
+          {
+            "phrase": "חֹטְבֵי עֵצִים",
+            "gloss": "hewers of wood",
+            "evidence": [
+              {
+                "ref": "Jos.9.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.29.10"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּלָה עַל־עֵץ",
+            "gloss": "hang on a tree, pole",
+            "evidence": [
+              {
+                "ref": "Deu.21.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.40.19"
+              },
+              {
+                "ref": "Jos.8.29"
+              },
+              {
+                "ref": "Est.5.14"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲצֵי הַשָּׂדֶה",
+            "gloss": "the trees of the field",
+            "evidence": [
+              {
+                "ref": "Ezk.17.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.55.12"
+              },
+              {
+                "ref": "Jol.1.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אָע",
+      "lang": "arc",
+      "root": "אע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wood, timber; a beam",
+      "bdb": [
+        "xa.bd.ad"
+      ],
+      "cognate_ids": [
+        "akk-isu",
+        "uga-is",
+        "phn-is",
+        "gez-is",
+        "ar-idah",
+        "arc-a"
+      ],
+      "summary": "Biblical Aramaic’s form of עֵץ, five times, always the material: timber for the house of God, a beam pulled from a house, and gods of wood. Aramaic writes ע where Hebrew has צ for this older sound, and the first ע has become א.",
+      "senses": [
+        {
+          "gloss": "timber, wood (for building)",
+          "definition": "Wood as building material, laid in courses with stone.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.8",
+              "role": "defining",
+              "note": "The house of the great God is being built with great stones, “and אָע is laid in the walls”."
+            },
+            {
+              "ref": "Ezr.6.4",
+              "role": "defining",
+              "note": "Three courses of great stones and a course of new אָע."
+            }
+          ]
+        },
+        {
+          "gloss": "a beam",
+          "definition": "A single timber pulled from a house, on which the offender is impaled.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.11",
+              "role": "defining",
+              "note": "Whoever alters the edict, “let אָע be pulled from his house, and let him be lifted up and fastened on it”."
+            }
+          ]
+        },
+        {
+          "gloss": "wood (of idols)",
+          "definition": "The wood gods are made of, listed with gold, silver, bronze, iron and stone.",
+          "evidence": [
+            {
+              "ref": "Dan.5.4",
+              "role": "defining",
+              "note": "They praised the gods of gold and silver, bronze, iron, אָעָא and stone."
+            },
+            {
+              "ref": "Dan.5.23",
+              "role": "defining",
+              "note": "Gods of wood and stone “which do not see, or hear, or know”, set against “the God in whose hand is your breath”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵצָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "trees, timber (collective)",
+      "bdb": [
+        "p.em.ac"
+      ],
+      "cognate_ids": [
+        "akk-isu",
+        "uga-is",
+        "phn-is",
+        "gez-is",
+        "ar-idah",
+        "arc-a"
+      ],
+      "summary": "Once, in Jer 6:6, of the trees an army cuts to besiege Jerusalem. It may be a collective of עֵץ, or עֵץ with “her” whose ה has lost its dot (“her trees”); either way the sense is the trees round the city. The many other tokens of the spelling עֵצָה are “counsel”, of the root יעץ, and are not this word.",
+      "senses": [
+        {
+          "gloss": "trees (cut for siegeworks)",
+          "definition": "The trees about a city, felled to build the siege ramp.",
+          "kin": [
+            "tree"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.6.6",
+              "role": "defining",
+              "note": "“Thus says Yahweh of Armies: Cut down עֵצָה and pour out a siege ramp against Jerusalem”: what Deu 20:19–20 allows with a tree that is not for food."
+            },
+            {
+              "ref": "Deu.20.20",
+              "note": "The same practice with עֵץ: cut it down and build siegeworks against the city."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָצֶה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "backbone, the lowest part of the spine",
+      "bdb": [
+        "p.en.ab"
+      ],
+      "cognate_ids": [
+        "ar-usus"
+      ],
+      "summary": "Once, in the law of the peace offering: the sheep’s fat tail is taken off “close by the עָצֶה”. Arabic ʿuṣʿuṣ, the tail-bone at the root of the tail, is the same word, but with ṣ where the tree has ṣ́: so it comes from another older root that has fallen together with עֵץ in Hebrew spelling, not from “tree”.",
+      "senses": [
+        {
+          "gloss": "backbone, rump-bone",
+          "definition": "The end of the spine where the fat tail of a sheep joins the body.",
+          "evidence": [
+            {
+              "ref": "Lev.3.9",
+              "role": "defining",
+              "note": "From the peace offering of the flock: “the whole fat tail, he shall take it off לְעֻמַּת הֶעָצֶה”, close by the backbone."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָצָה",
+      "pos": "verb",
+      "gloss": "shut (the eyes)",
+      "bdb": [
+        "p.el.aa"
+      ],
+      "cognate_ids": [
+        "ar-aghda"
+      ],
+      "summary": "Once, Pro 16:30, as a participle. The parallel “pressing his lips” and Arabic aġḍā “close the eyelids” fix the sense. The Arabic shows ġ behind the ע, where the tree has ʿ: another older root in the same spelling, not “tree”.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "shut, close (the eyes)",
+          "senses": [
+            {
+              "gloss": "shut the eyes (in scheming)",
+              "definition": "To close the eyes, as a man does who plots evil and will not be seen to.",
+              "evidence": [
+                {
+                  "ref": "Pro.16.30",
+                  "role": "defining",
+                  "note": "“עֹצֶה his eyes to devise perverse things; pressing (קֹרֵץ) his lips he brings evil to pass.” The parallel with closing the lips fixes it."
+                },
+                {
+                  "ref": "Pro.6.13",
+                  "note": "The worthless man “winks (קֹרֵץ) with his eyes”: the same gestures of the schemer."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-isu",
+      "lang": "akk",
+      "form": "iṣu",
+      "translit": "iṣu",
+      "gloss": "tree; wood; log, stick; kindling",
+      "relation": "cognate",
+      "note": "Over 1,200 attestations in the Oracc glossaries from Old Babylonian to Seleucid times, with the Hebrew word’s spread of senses: tree, wood, log, stick, kindling. Akkadian has lost ע, and its ṣ does not show which older sound stands behind צ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004600, iṣu [tree] N (meanings: kindling, log, stick, tree, wood)"
+        }
+      ]
+    },
+    {
+      "id": "uga-is",
+      "lang": "uga",
+      "form": "𐎓𐎕",
+      "translit": "ʿṣ",
+      "gloss": "tree, bush, wood",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "/ʿiṣ-/; plural ʿṣm in dm ʿṣm “blood of trees”, wine. Segert sets it beside Hebrew עֵץ, Akkadian iṣ(ṣ)u, South Arabian ʿḍ, Imperial Aramaic ʿq and Biblical Aramaic אָע. Ugaritic writes ʿ and ġ apart.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 196, §93 Glossary, ʿṣ “tree, bush, wood”"
+        }
+      ]
+    },
+    {
+      "id": "phn-is",
+      "lang": "phn",
+      "form": "𐤏𐤑",
+      "translit": "ʿṣ",
+      "gloss": "wood; vine",
+      "relation": "cognate",
+      "note": "Punic “the maker of wooden carts” (CIS i 346), and in Plautus’ Poenulus 1141 “let us drink the blood of the vine”, as Ugaritic dm ʿṣm.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 383, ʿṢ [Heb. ʿeṣ] n.m. 1. WOOD 2. VINE"
+        }
+      ]
+    },
+    {
+      "id": "gez-is",
+      "lang": "gez",
+      "form": "ዕፅ",
+      "translit": "ʿəṣ́",
+      "gloss": "tree, shrub, bush; wood; stick, staff",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "צ": "ṣ́"
+      },
+      "note": "Ge'ez ፀ (ṣ́) and ዐ (ʿ) show the older sounds behind both letters, and the senses run as the Hebrew’s, from tree to wood to stick.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ዕፅ (ʕəṣ́)"
+        }
+      ]
+    },
+    {
+      "id": "ar-idah",
+      "lang": "ar",
+      "form": "عِضَاهٌ",
+      "translit": "ʿiḍāh",
+      "gloss": "great thorny trees (acacia, lote and the like); ʿiḍḍ small thorny trees",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "צ": "ṣ́"
+      },
+      "note": "Arabic keeps the word only for the thorny trees of the desert, among them the ṭalḥ and samur acacias: the trees of the wilderness where the tabernacle’s עֲצֵי שִׁטִּים grew. Arabic ض (ḍ) answers to ṣ́.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2076, root عضه, عِضَاهٌ (n29494)",
+          "note": "“Any great trees having thorns … the small thorny trees are called عِضٌّ.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2071, root عض, مُعِضٌّ (n29418)",
+          "note": "“One whose camels feed upon [the trees called] عِضّ.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-a",
+      "lang": "arc",
+      "form": "אָע، אָעָא",
+      "translit": "ʾāʿ, ʾāʿā",
+      "gloss": "wood, woods; wooden handle; plural beams",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Jewish Aramaic of the Targums, where it renders עֵץ (Targ. O. Lev 14:4, cedar wood), and the Talmud. Aramaic writes ק and later ע for older ṣ́ where Hebrew writes צ (Imperial Aramaic ʿq), the same correspondence as אֲרַע beside אֶרֶץ.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אָע, אָעָא",
+          "note": "“(h. עֵץ) wood, woods; also wooden handle. Ezra V, 8 … Targ. O. Lev. XIV, 4.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-usus",
+      "lang": "ar",
+      "form": "عُصْعُصٌ",
+      "translit": "ʿuṣʿuṣ",
+      "gloss": "tail-bone, the lower end of the spine; the flesh within a sheep’s fat tail",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "צ": "ṣ"
+      },
+      "note": "A reduplicated noun of the root ʿṣ(w): the end of the spine at the root of the tail, and of a sheep, what lies in the middle of its fat tail. That is the place of Lev 3:9, where the fat tail is cut off “close by the עָצֶה”. Arabic ص (ṣ) here, not ض (ḍ) as in the tree: another older root.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2057, root عص, عُصْعُصٌ (n29262)",
+          "note": "“The os coccygis, or tail-bone … the internal extremity of the spine … Also … what is in the middle of the أَلْيَة [or fat of the tail] of the sheep.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic عصعص (ʕuṣʕuṣ); Proto-West Semitic *ʕaṣay- “backbone”"
+        }
+      ]
+    },
+    {
+      "id": "ar-aghda",
+      "lang": "ar",
+      "form": "أَغْضَى",
+      "translit": "ʾaġḍā",
+      "gloss": "contract or close the eyelids; shut one’s eyes to, connive at",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ",
+        "צ": "ṣ́"
+      },
+      "note": "Form IV of ġḍw/ġḍy: “he contracted his eyelids … closed his eyelids”, and from that to connive at a thing, to overlook it. The shut eyes of Pro 16:30. Arabic غ (ġ) behind ע, where the tree has ʿ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2268, root غضو and غضى, اغضى (n32011)",
+          "note": "“He contracted his eyelids; drew them near together … or he closed his eyelids upon his iris.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "creation",
+      "statement": "On the third day God said “let the land sprout … עֵץ פְּרִי making fruit after its kind, whose seed is in it”, and it was so (Gen 1:11–13): the trees were made already bearing fruit and seed, each to bring forth its own kind, a day before the lights were set in the heavens (Gen 1:14–19). On the sixth day God gave every tree with fruit to man for food (Gen 1:29), and Yahweh God made every tree pleasant to see and good for food grow in the garden (Gen 2:9). Trees did not grow up slowly from something else: they were made whole, on a day, and they reproduce after their kinds.",
+      "evidence": [
+        {
+          "ref": "Gen.1.11",
+          "to": "Gen.1.13"
+        },
+        {
+          "ref": "Gen.1.14",
+          "to": "Gen.1.19"
+        },
+        {
+          "ref": "Gen.1.29"
+        },
+        {
+          "ref": "Gen.2.9"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "In the garden stood עֵץ הַחַיִּים (Gen 2:9). After the man sinned, Yahweh God said, “lest he put out his hand and take also from the tree of life, and eat, and live for ever”, and drove him out and set cherubim “to keep the way of the tree of life” (Gen 3:22–24), having told him, “dust you are, and to dust you shall return” (Gen 3:19). So man was not made with a life that cannot die: life without end was to be had only from what God gave, and sin shut the way to it. Proverbs calls wisdom “a tree of life to those who lay hold of her” (Pro 3:18). Christ promises “to him who overcomes I will give to eat of the tree of life, which is in the paradise of God” (Rev 2:7), and “blessed are those who do his commandments, that they may have right to the tree of life” (Rev 22:14). Everlasting life is God’s gift, given back to the faithful in the kingdom, not something man already has.",
+      "evidence": [
+        {
+          "ref": "Gen.2.9"
+        },
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Gen.3.22",
+          "to": "Gen.3.24"
+        },
+        {
+          "ref": "Pro.3.18"
+        },
+        {
+          "ref": "Rev.2.7"
+        },
+        {
+          "ref": "Rev.22.2"
+        },
+        {
+          "ref": "Rev.22.14"
+        }
+      ]
+    },
+    {
+      "topic": "the-cross",
+      "statement": "The law said that a man put to death for a sin worthy of death and hanged עַל־עֵץ must not be left on it overnight but buried that day, “for one hanged is the curse of God” (Deu 21:22–23). The apostles call the cross by this word: “Jesus, whom you killed, hanging him on a tree” (Act 5:30; 10:39); “they took him down from the tree and laid him in a tomb” (Act 13:29), the same day, as the law required (Jhn 19:31). Paul quotes Deu 21:23 to say that “Christ redeemed us from the curse of the law, having become a curse for us” (Gal 3:13), and Peter, that he “himself bore our sins in his own body on the tree, that we, having died to sins, might live to righteousness” (1Pe 2:24). So Christ, who did no sin (1Pe 2:22), died the death the law marked as God’s curse, bearing in his own body what sin brings, that those in him might be freed from that curse.",
+      "evidence": [
+        {
+          "ref": "Deu.21.22",
+          "to": "Deu.21.23"
+        },
+        {
+          "ref": "Act.5.30"
+        },
+        {
+          "ref": "Act.10.39"
+        },
+        {
+          "ref": "Act.13.29"
+        },
+        {
+          "ref": "Jhn.19.31"
+        },
+        {
+          "ref": "Gal.3.13"
+        },
+        {
+          "ref": "1Pe.2.22",
+          "to": "1Pe.2.24"
+        }
+      ]
+    },
+    {
+      "topic": "idolatry",
+      "statement": "Scripture names idols by what they are: עֵץ וָאֶבֶן, “wood and stone, the work of men’s hands, which neither see nor hear nor eat nor smell” (Deu 4:28; 2Ki 19:18). The carver cuts a tree from the forest, burns half of it to bake his bread, and bows to the rest (Isa 44:14–19; Jer 10:3–5); to say to wood “Awake!” is folly, for there is no breath in it (Hab 2:19). Belshazzar praised gods of wood and stone and did not honour “the God in whose hand is your breath” (Dan 5:4, 23). Wood has no life to give; Yahweh, who gives the breath, alone is God.",
+      "evidence": [
+        {
+          "ref": "Deu.4.28"
+        },
+        {
+          "ref": "2Ki.19.18"
+        },
+        {
+          "ref": "Isa.44.14",
+          "to": "Isa.44.19"
+        },
+        {
+          "ref": "Jer.10.3",
+          "to": "Jer.10.5"
+        },
+        {
+          "ref": "Hab.2.19"
+        },
+        {
+          "ref": "Dan.5.4"
+        },
+        {
+          "ref": "Dan.5.23"
+        }
+      ]
+    },
+    {
+      "topic": "green-and-dry-tree",
+      "statement": "Ezekiel was told to prophesy against the forest of the Negev: “I will kindle a fire in you, and it shall devour every green עֵץ and every dry עֵץ” (Ezk 21:2–3), and then to set his face toward Jerusalem: “I will cut off from you righteous and wicked” (Ezk 21:7–8). The trees are the people of Jerusalem. Led out to be crucified, Jesus told the daughters of Jerusalem to weep for themselves and their children, for days were coming when they would say to the mountains, “Fall on us”, and asked, “if they do these things in the green tree, what will be done in the dry?” (Luk 23:28–31). He is the green tree, guiltless, yet given to the fire; the nation that rejected him is the dry, and its burning came when Rome destroyed Jerusalem in AD 70, within that generation.",
+      "evidence": [
+        {
+          "ref": "Ezk.21.2",
+          "to": "Ezk.21.3"
+        },
+        {
+          "ref": "Ezk.21.7",
+          "to": "Ezk.21.8"
+        },
+        {
+          "ref": "Ezk.17.24"
+        },
+        {
+          "ref": "Luk.23.28",
+          "to": "Luk.23.31"
+        }
+      ]
+    },
+    {
+      "topic": "restoration-of-israel",
+      "statement": "Ezekiel took two sticks, one written “for Judah” and one “for Joseph, the stick of Ephraim”, and joined them into one עֵץ in his hand (Ezk 37:16–17). Yahweh explains it: he will take the children of Israel from among the nations, gather them into their own land, and make them one nation on the mountains of Israel, with one king over them, never again two kingdoms; “David my servant shall be king over them … their prince for ever” (Ezk 37:21–25). The sign looks to the gathering of all Israel into its land under one king of David’s line: Christ, reigning on David’s throne at his return.",
+      "evidence": [
+        {
+          "ref": "Ezk.37.16",
+          "to": "Ezk.37.19"
+        },
+        {
+          "ref": "Ezk.37.21",
+          "to": "Ezk.37.25"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (עֵץ הָדָר and עֵץ עָבֹת, Lev 23:40); nothing of this root in Numbers 10. The database keys the root עצה (BDB’s heading, a cross-reference to the verb עָצָה); kept as such so the entry joins to the words. The root covers three older roots, by the cognates: ʿṣ́ “tree” (Ge'ez ʿəṣ́, Arabic ʿiḍāh, Aramaic ʾāʿ/ʿq), ʿṣ “backbone” (Arabic ʿuṣʿuṣ, with ṣ) and ġṣ́ “shut the eyes” (Arabic ʾaġḍā, with ġ). Kept in one entry by the one-spelling rule. BDB key p.em.ac (עֵצָה “trees”) counts by spelling every token of עֵצָה “counsel” (j.ck.ab, root יעץ) as well, so its use count (21) is wrong: the word occurs once, Jer 6:6. Left out: p.eh.aj, a zero-token cross-reference to עֵץ; עֶצְיוֹן גֶּבֶר (Ezion-geber, p.eo.ab), a place, whose key also counts the tokens of גֶּבֶר “man”; and מַעַץ (Maaz, 1Ch 2:27), a person, whose name entry is not part of this draft. Not entered: Arabic عَصًا “staff” (Lane p. 2068), which Wiktionary derives with عُصْعُص from West Semitic *ʕaṣay-, since nothing in scripture’s use ties the backbone to a staff; Ge'ez ʿaṣawa “shut”, a lead for עָצָה, not checked in Dillmann or Leslau (no local copy); South Arabian ʿḍ “wood” (Segert names it) not found in the Biella scan’s text; Imperial Aramaic ʿq (CAL, DEAPS) not consulted. The Peshitta’s “wood” and “tree” (qaysā, ʾilānā) are other roots, so no Syriac word is entered. Ezekiel 21 is cited by the Hebrew verse numbers (21:3 the green and dry tree = English 20:47). Open questions for review: (1) the doctrine items “green-and-dry-tree” (Luk 23:31 read of AD 70) and “restoration-of-israel” (Ezk 37 of Christ’s reign) state the conclusions plainly; check they say what you want; (2) whether עֵצָה in Jer 6:6 should rather be read as עֵץ with a suffix and folded into עֵץ; (3) עֵצָה is linked as kin to the “tree” sense of עֵץ (the trees about the city)."
+}
