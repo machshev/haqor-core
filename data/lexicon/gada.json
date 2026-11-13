@@ -1,0 +1,520 @@
+{
+  "id": "gada",
+  "root": "גדע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "cutting",
+    "idolatry",
+    "judgment",
+    "power",
+    "pride"
+  ],
+  "gloss": "hew down, cut off, cut in pieces",
+  "summary": "גָּדַע is to hew: to fell a tree, lop off a limb or a horn, cut a staff or a bar of iron through. Scripture uses it above all for cutting down the Asherahs and carved images of idolatry, as Yahweh commanded (Deu 7:5; 12:3) and Asa, Hezekiah’s generation and Josiah did; and for cutting off a horn or an arm, the strength of a man or a nation, as Yahweh cuts off the horns of the wicked and lifts up the horns of the righteous (Psa 75:11). Arabic jadaʿa, with the same ʿ, is to cut off a nose, ear, arm or lip, to maim, and Targumic Aramaic גְּדַע is “cut, mutilate”. The names Gideon and Gideoni are formed from the root.",
+  "words": [
+    {
+      "lemma": "גָּדַע",
+      "pos": "verb",
+      "bdb": [
+        "c.ar.aa"
+      ],
+      "gloss": "hew down, cut off, cut in pieces",
+      "cognate_ids": [
+        "ar-jadaa",
+        "arc-geda"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cut off, hew down; cut in pieces",
+          "senses": [
+            {
+              "id": "qal-cut-off-strength",
+              "gloss": "cut off an arm or a horn",
+              "definition": "Lop off a limb or a horn, the members a man or a beast fights with, and so cut off its strength.",
+              "tags": [
+                "power"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.2.31",
+                  "role": "defining",
+                  "note": "To Eli: “I will cut off (וְגָדַעְתִּי) your arm and the arm of your father’s house, so that there will not be an old man in your house.” The arm cut off is the house’s strength and its life."
+                },
+                {
+                  "ref": "Lam.2.3",
+                  "role": "defining",
+                  "note": "“He has cut off (גָּדַע) in fierce anger every horn of Israel; he has drawn back his right hand from before the enemy.”"
+                }
+              ]
+            },
+            {
+              "id": "qal-fell",
+              "gloss": "hew down, fell (passive participle: hewn down)",
+              "definition": "Bring down what stands high, as a tree is felled; the passive participle is what has been hewn down.",
+              "evidence": [
+                {
+                  "ref": "Isa.10.33",
+                  "role": "defining",
+                  "note": "Yahweh of Armies lops the bough with terror, “and the high of stature are hewn down (גְּדוּעִים), and the lofty will be brought low”. The next verse goes on: he cuts down the thickets of the forest with iron, and Lebanon falls (10:34)."
+                }
+              ]
+            },
+            {
+              "gloss": "cut in pieces",
+              "definition": "Cut a staff through, so that what it stood for is broken.",
+              "evidence": [
+                {
+                  "ref": "Zec.11.10",
+                  "role": "defining",
+                  "note": "“I took my staff Favour and cut it in pieces (וָאֶגְדַּע), to break my covenant that I had made with all the peoples.”"
+                },
+                {
+                  "ref": "Zec.11.14",
+                  "role": "defining",
+                  "note": "“I cut in pieces my second staff, Union, to break the brotherhood between Judah and Israel.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be hewn down, be cut off",
+          "senses": [
+            {
+              "gloss": "be cut off, broken off",
+              "definition": "Of a horn or an arm, a tribe, or a thing that held up others: be cut off from what it belonged to and fall.",
+              "evidence": [
+                {
+                  "ref": "Jer.48.25",
+                  "role": "defining",
+                  "note": "“The horn of Moab is cut off (נִגְדְּעָה), and his arm is broken”: horn beside arm, cut off beside broken."
+                },
+                {
+                  "ref": "Amo.3.14",
+                  "role": "defining",
+                  "note": "In the day Yahweh visits Israel’s transgressions, “the horns of the altar will be cut off and fall to the ground”."
+                },
+                {
+                  "ref": "Jdg.21.6",
+                  "role": "defining",
+                  "note": "After the war with Benjamin: “Today one tribe is hewn off (נִגְדַּע) from Israel.”"
+                },
+                {
+                  "ref": "Isa.22.25",
+                  "note": "The peg fastened in a sure place “will be cut down and fall, and the burden that was on it will be cut off”."
+                }
+              ]
+            },
+            {
+              "gloss": "be hewn down, felled",
+              "definition": "Of a proud king or empire, or of idols’ altars: be hewn down to the ground like a tree.",
+              "evidence": [
+                {
+                  "ref": "Isa.14.12",
+                  "role": "defining",
+                  "note": "In the proverb against the king of Babylon (14:4): “How you are fallen from the heavens, shining one, son of the dawn! You are hewn down (נִגְדַּעְתָּ) to the ground, you who laid the nations low!” The tree image goes on in 14:19: cast out of the grave “like an abhorred branch”."
+                },
+                {
+                  "ref": "Jer.50.23",
+                  "role": "defining",
+                  "note": "“How the hammer of the whole earth is cut down (נִגְדַּע) and broken! How Babylon has become a horror among the nations!”"
+                },
+                {
+                  "ref": "Ezk.6.6",
+                  "note": "In all Israel’s dwellings the altars will be laid waste, the idols broken, “and your incense altars hewn down”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "hew down, cut to pieces; cut through; cut off",
+          "senses": [
+            {
+              "id": "hew-down-idols",
+              "gloss": "hew down (Asherahs, images)",
+              "definition": "Cut down and cut up the wooden Asherahs, carved images and incense altars of idolatry, beside breaking down their altars and shattering their pillars.",
+              "tags": [
+                "idolatry"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.7.5",
+                  "role": "defining",
+                  "note": "“Their altars you shall break down, their pillars you shall shatter, their Asherahs you shall hew down (תְּגַדֵּעוּן), and their carved images burn with fire.”"
+                },
+                {
+                  "ref": "Deu.12.3",
+                  "role": "defining",
+                  "note": "“The carved images of their gods you shall hew down, and destroy their name out of that place.”"
+                },
+                {
+                  "ref": "2Ch.14.2",
+                  "note": "Asa removed the foreign altars and high places, shattered the pillars “and hewed down the Asherahs”."
+                },
+                {
+                  "ref": "2Ch.31.1",
+                  "note": "After Hezekiah’s Passover all Israel present went out and shattered the pillars and hewed down the Asherahs."
+                },
+                {
+                  "ref": "2Ch.34.4",
+                  "note": "Josiah: the incense altars above the Baals’ altars “he hewed down”."
+                },
+                {
+                  "ref": "2Ch.34.7",
+                  "note": "He hewed down all the incense altars throughout the land of Israel."
+                }
+              ]
+            },
+            {
+              "gloss": "cut through (bars)",
+              "definition": "Cut through iron bars that hold a gate shut, beside breaking the doors.",
+              "evidence": [
+                {
+                  "ref": "Psa.107.16",
+                  "role": "defining",
+                  "note": "“For he has broken the doors of bronze and cut through (גִּדֵּעַ) the bars of iron”: Yahweh bringing out the prisoners."
+                },
+                {
+                  "ref": "Isa.45.2",
+                  "role": "defining",
+                  "note": "To Cyrus: “I will break in pieces the doors of bronze and cut through the bars of iron.”"
+                }
+              ]
+            },
+            {
+              "gloss": "cut off (horns)",
+              "definition": "Cut off the horns, the power and pride, of the wicked.",
+              "tags": [
+                "power",
+                "pride"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.75.11",
+                  "role": "defining",
+                  "note": "“All the horns of the wicked I will cut off; the horns of the righteous will be lifted up”: cut off set against lifted up. The psalm has just warned the boastful, “do not lift up your horn on high” (75:5–6)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be hewn down",
+          "senses": [
+            {
+              "gloss": "be hewn down (trees)",
+              "definition": "Of trees: be felled.",
+              "evidence": [
+                {
+                  "ref": "Isa.9.9",
+                  "role": "defining",
+                  "note": "Ephraim says in pride: “The bricks have fallen, but we will build with hewn stone; the sycamores are hewn down (גֻּדָּעוּ), but we will put cedars in their place.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐκκόπτω",
+          "gloss": "cut out, cut off, hew down",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jdg.21.6, נִגְדַּע → ἐξεκόπη; 2Ch.14.2, וַיְגַדַּע → ἐξέκοψεν; 2Ch.31.1, וַיְגַדְּעוּ → ἐξέκοψαν; 2Ch.34.7, גִּדַּע → ἔκοψεν"
+            },
+            {
+              "ref": "Mat.3.10",
+              "note": "“Every tree that does not bring forth good fruit is hewn down (ἐκκόπτεται) and cast into the fire.”"
+            },
+            {
+              "ref": "Luk.13.7",
+              "note": "The barren fig tree: “cut it down; why does it use up the ground?”"
+            },
+            {
+              "ref": "Mat.5.30",
+              "note": "“If your right hand causes you to stumble, cut it off (ἔκκοψον).”"
+            },
+            {
+              "ref": "Rom.11.22",
+              "note": "“Otherwise you also will be cut off (ἐκκοπήσῃ).”"
+            },
+            {
+              "ref": "Rom.11.24",
+              "note": "Cut out of the olive tree that is wild by nature."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁבַר",
+            "note": "Cutting through or off beside breaking: bars beside doors, the horn beside the arm, the hammer of the earth cut down and broken.",
+            "evidence": [
+              {
+                "ref": "Psa.107.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.45.2"
+              },
+              {
+                "ref": "Jer.48.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.50.23"
+              },
+              {
+                "ref": "2Ch.14.2"
+              }
+            ]
+          },
+          {
+            "lemma": "נָתַץ",
+            "note": "Hewing down the Asherahs and images beside tearing down the altars.",
+            "evidence": [
+              {
+                "ref": "Deu.7.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.12.3"
+              },
+              {
+                "ref": "2Ch.31.1"
+              },
+              {
+                "ref": "2Ch.34.4"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רוּם",
+            "note": "The horns of the wicked cut off, the horns of the righteous lifted up.",
+            "evidence": [
+              {
+                "ref": "Psa.75.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "גָּדַע קֶרֶן",
+            "gloss": "cut off the horn: break the power and pride of a people or a man",
+            "evidence": [
+              {
+                "ref": "Psa.75.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.2.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.48.25"
+              },
+              {
+                "ref": "Amo.3.14",
+                "note": "The horns of the altar of Bethel."
+              }
+            ]
+          },
+          {
+            "phrase": "גָּדַע זְרוֹעַ",
+            "gloss": "cut off the arm: cut off a house’s strength",
+            "evidence": [
+              {
+                "ref": "1Sa.2.31",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "גִּדַּע אֲשֵׁרִים",
+            "gloss": "hew down the Asherahs",
+            "evidence": [
+              {
+                "ref": "Deu.7.5",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.14.2"
+              },
+              {
+                "ref": "2Ch.31.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-jadaa",
+      "lang": "ar",
+      "form": "جَدَعَ",
+      "translit": "jadaʿa",
+      "gloss": "cut off (the nose, ear, hand or arm, lip); maim; ajdaʿ maimed",
+      "relation": "cognate",
+      "note": "Arabic j answers to Hebrew g, and the ʿ is the plain ʿ. The verb is cutting off a member, as Hebrew cuts off an arm or a horn (1Sa 2:31; Lam 2:3); its other uses carry the same cutting to growing things: a year of drought جَدَاع “cuts off” the herbage, and مُجَدَّع is a plant whose top has been cut or eaten off, like a lopped tree.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 390, root جدع, جَدَعَ الأَنْفَ (n5223)",
+          "note": "“He cut off the nose; and in like manner, the ear; and the hand, or arm; and the lip … or جَدْعٌ signifies [absolutely] the cutting off; or cutting so as to separate.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 391, root جدع, جَدَاعِ (n5229); أَجْدَعُ (n5231); مُجَدَّعٌ (n5232)",
+          "note": "جَدَاعِ “a year of drought; because it cuts off, or destroys, the herbage”; أَجْدَعُ “mutilated, or maimed, by having his nose cut off, or his ear, or his hand or arm”; مُجَدَّعٌ “a plant … of which the upper part has been eaten”."
+        }
+      ]
+    },
+    {
+      "id": "arc-geda",
+      "lang": "arc",
+      "form": "גְּדַע",
+      "translit": "gədaʿ",
+      "gloss": "cut; (ithpaal) be cut, mutilated",
+      "relation": "cognate",
+      "note": "Targumic Aramaic, cited at the Targum of 2 Sam 10:4 (Hanun cutting the envoys’ garments) and, in the ithpaal, at Targum Pseudo-Jonathan Exo 12:12 and Num 33:4, the verses of Yahweh’s judgment on Egypt’s gods.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "C00236, גְּדַע",
+          "note": "Targ. II Sam. X, 4; Ithpa. “to be cut, mutilated”, Targ. Y. Ex. XII, 12; Num. XXXIII, 4."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "idolatry",
+      "statement": "Yahweh commanded Israel not to tolerate the nations’ gods in the land but to hew down their Asherahs and carved images and destroy their name from the place (Deu 7:5; 12:3), and the kings who turned back to him are recorded doing it: Asa (2Ch 14:2), all Israel after Hezekiah’s Passover (2Ch 31:1), Josiah through the whole land (2Ch 34:4, 7). When Israel would not, Yahweh said he would hew down their incense altars himself (Ezk 6:6) and cut off the horns of the altar at Bethel (Amo 3:14). The Greek word for it, ἐκκόπτω, is the word Jesus uses of the hand that causes stumbling, “cut it off and cast it from you” (Mat 5:30; 18:8), and Paul calls covetousness idolatry and tells believers to put their members on the earth to death (Col 3:5). From the verses: what draws the heart from God is not to be managed but cut down and destroyed, and the believer does it now to what is in himself (1Jo 5:21).",
+      "evidence": [
+        {
+          "ref": "Deu.7.5"
+        },
+        {
+          "ref": "Deu.12.3"
+        },
+        {
+          "ref": "2Ch.14.2"
+        },
+        {
+          "ref": "2Ch.31.1"
+        },
+        {
+          "ref": "2Ch.34.4"
+        },
+        {
+          "ref": "2Ch.34.7"
+        },
+        {
+          "ref": "Ezk.6.6"
+        },
+        {
+          "ref": "Amo.3.14"
+        },
+        {
+          "ref": "Mat.5.30"
+        },
+        {
+          "ref": "Mat.18.8"
+        },
+        {
+          "ref": "Col.3.5"
+        },
+        {
+          "ref": "1Jn.5.21"
+        }
+      ]
+    },
+    {
+      "topic": "pride-brought-low",
+      "statement": "The verb is the felling of what stands high. Yahweh “cuts off all the horns of the wicked” and lifts up the horns of the righteous (Psa 75:11), after warning the boastful not to lift up their horn (75:5–6); he hews down the high of stature and brings the lofty low (Isa 10:33), and Ephraim’s boast that it would replace the felled sycamores with cedars is answered by his judgment (Isa 9:8–9). So Isa 14:12: “How you are fallen from the heavens, shining one, son of the dawn! You are hewn down to the ground.” The chapter says whom this is of: it is a proverb “against the king of Babylon” (14:4), and those who see him say, “Is this the man who made the earth tremble?” (14:16); he lies among the dead, a carcass trodden under foot, cast out of his grave like a branch (14:9–11, 19). The heavens he fell from are the height of his kingdom and the stars he meant to rise above (14:13), and the verb is the one used of felling trees and cutting off horns: a proud man cut down, not a fallen angel. Mary says the same of God: “He has put down the mighty from their thrones and exalted those of low degree” (Luk 1:52), and Jesus, “whoever exalts himself will be humbled” (Luk 14:11).",
+      "evidence": [
+        {
+          "ref": "Psa.75.5",
+          "to": "Psa.75.6"
+        },
+        {
+          "ref": "Psa.75.11"
+        },
+        {
+          "ref": "Isa.10.33"
+        },
+        {
+          "ref": "Isa.9.8",
+          "to": "Isa.9.9"
+        },
+        {
+          "ref": "Isa.14.4"
+        },
+        {
+          "ref": "Isa.14.9",
+          "to": "Isa.14.16"
+        },
+        {
+          "ref": "Isa.14.19"
+        },
+        {
+          "ref": "Luk.1.52"
+        },
+        {
+          "ref": "Luk.14.11"
+        }
+      ]
+    },
+    {
+      "topic": "rejected-shepherd",
+      "statement": "In Zec 11 the prophet shepherds “the flock of slaughter” with two staffs, Favour and Union (11:4, 7). The flock’s owners weigh out his wages, thirty pieces of silver, and he casts them to the potter in the house of Yahweh (11:12–13); Matthew says this was fulfilled when the chief priests took the thirty pieces Judas threw down and bought the potter’s field (Mat 27:3–10). Around that he cuts in pieces (גָּדַע) Favour, “to break my covenant that I had made with all the peoples”, and then Union, “to break the brotherhood between Judah and Israel” (Zec 11:10, 14), and Yahweh says he will no longer pity the land but deliver every man into his neighbour’s hand and into the hand of his king (11:6). Those who rejected the shepherd said, “We have no king but Caesar” (Joh 19:15). From the verses: the cutting of the staffs is the end of Yahweh’s protecting care for the nation that valued its shepherd at thirty pieces, given over to the king it chose, which came on Jerusalem when Rome destroyed it in AD 70 (Luk 19:43–44; 21:20–24).",
+      "evidence": [
+        {
+          "ref": "Zec.11.4",
+          "to": "Zec.11.7"
+        },
+        {
+          "ref": "Zec.11.10"
+        },
+        {
+          "ref": "Zec.11.12",
+          "to": "Zec.11.14"
+        },
+        {
+          "ref": "Mat.27.3",
+          "to": "Mat.27.10"
+        },
+        {
+          "ref": "Jhn.19.15"
+        },
+        {
+          "ref": "Luk.19.43",
+          "to": "Luk.19.44"
+        },
+        {
+          "ref": "Luk.21.20",
+          "to": "Luk.21.24"
+        }
+      ]
+    }
+  ],
+  "note": "Scripture has only the verb (22 tokens: qal 5, niphal 7, piel 9, pual 1); no noun of the root occurs. Isa 10:33 גְּדוּעִים is a qal passive participle. The root’s proper names have their own entries: Gideoni (c.ar.ac, names/gideoni.json). Gideon (c.ar.ab, 39 tokens, Gideon@Jdg.6.11, Heb 11:32) has no name entry yet; he is the man who cut down the Asherah by his father’s altar (Jdg 6:25–28, with כָּרַת). Gidom (c.ar.ad, Jdg 20:45) is a place and gets no name entry. No Peshitta root and no Akkadian, Ugaritic or Ge’ez cognate was found; the Oracc gd- candidates (gīdu sinew, gudūdu troop) do not share the meaning and are not recorded. The Isa 14 and Zec 11 doctrine items are reasoned conclusions for review."
+}
