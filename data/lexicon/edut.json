@@ -1,0 +1,2145 @@
+{
+  "id": "edut",
+  "root": "עוד",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "witness",
+    "testimony",
+    "law",
+    "covenant",
+    "tabernacle",
+    "continuance",
+    "repetition",
+    "one-god"
+  ],
+  "gloss": "again, still, any more; witness, testify; testimony",
+  "summary": "The root's commonest word is עוֹד: “still, yet”, what goes on (“is my father still alive?”, Gen 45:3), and “again, any more”, what comes round once more or never again (Gen 8:12; Isa 2:4); אֵין עוֹד is Yahweh's “there is none else” (Isa 45:5). Its other family is witness: עֵד is one who has seen or known and must declare it (Lev 5:1), on whose word, two or three together, a matter stands (Deu 19:15); the verb הֵעִיד is to call to witness, to testify, and so to warn or charge solemnly (Deu 30:19; 2Ki 17:13); עֵדוּת and עֵדֹת are the testimony: the law on the two tablets laid in the ark of the testimony (Exo 31:18; 40:20), and Yahweh's testimonies that his servants keep (Psa 119:2). Arabic ʿāda “return, do again”, Ugaritic and Phoenician ʿd “still, again”, and the Peshitta's ʿyādā “custom” share the first sense; how “witness” comes from it (one who says a thing again, affirms it) is argued, and no cognate yet shows it.",
+  "words": [
+    {
+      "lemma": "עוֹד",
+      "pos": "adverb",
+      "gloss": "still, yet; again; any more, no longer; besides, else",
+      "bdb": [
+        "p.bc.ab"
+      ],
+      "cognate_ids": [
+        "ar-ada",
+        "uga-d",
+        "phn-d",
+        "gez-adi"
+      ],
+      "summary": "Continuance and return in time: what is still so, what happens again, and with a negative what will be so no more. With suffixes it is a noun of being (עוֹדֶנּוּ “he is still”, בְּעוֹדִי “while I yet am”). Hebrews expounds it: “this ‘yet once more’ (ἔτι ἅπαξ, Hag 2:6) signifies the removing of the things shaken” (Heb 12:27).",
+      "senses": [
+        {
+          "id": "od-still",
+          "gloss": "still, yet; while (someone) yet is",
+          "definition": "What has been so goes on being so; with a suffix, “he is still…”, and בְּעוֹד, “while … yet”. Set beside בְּחַיַּי “in my life”, בְּעוֹדִי is “while I have being”.",
+          "evidence": [
+            {
+              "ref": "Gen.45.3",
+              "role": "defining",
+              "note": "Joseph: “I am Joseph; הַעוֹד אָבִי חָי, is my father still alive?”"
+            },
+            {
+              "ref": "Gen.45.26",
+              "note": "“עוֹד יוֹסֵף חַי, Joseph is still alive.”"
+            },
+            {
+              "ref": "Gen.46.30",
+              "note": "“Now let me die, since I have seen your face, that עוֹדְךָ חָי, you are still alive.”"
+            },
+            {
+              "ref": "Psa.104.33",
+              "role": "defining",
+              "note": "“I will sing to Yahweh בְּחַיָּי; I will make music to my God בְּעוֹדִי”: “in my life” // “while I yet am”."
+            },
+            {
+              "ref": "Psa.146.2",
+              "note": "The same pair, בְּחַיָּי // בְּעוֹדִי."
+            },
+            {
+              "ref": "Gen.18.22",
+              "note": "“Abraham עוֹדֶנּוּ עֹמֵד, was still standing, before Yahweh.”"
+            },
+            {
+              "ref": "Gen.29.9",
+              "note": "“עוֹדֶנּוּ מְדַבֵּר, while he was still speaking with them, Rachel came.”"
+            },
+            {
+              "ref": "Job.1.16",
+              "note": "“עוֹד זֶה מְדַבֵּר, while this one was yet speaking, another came.”"
+            },
+            {
+              "ref": "Job.2.3",
+              "note": "Job עֹדֶנּוּ מַחֲזִיק בְּתֻמָּתוֹ, “still holds fast his integrity”; and his wife's taunt in 2:9."
+            },
+            {
+              "ref": "Job.27.3",
+              "note": "“כָל עוֹד נִשְׁמָתִי בִי, all the while my breath is in me.”"
+            },
+            {
+              "ref": "Gen.8.22",
+              "note": "עֹד כָּל יְמֵי הָאָרֶץ, “while all the days of the earth remain”, seedtime and harvest shall not cease."
+            },
+            {
+              "ref": "Psa.92.15",
+              "note": "“עוֹד יְנוּבוּן בְּשֵׂיבָה, they will still bear fruit in old age.”"
+            },
+            {
+              "ref": "Psa.39.2",
+              "note": "בְּעֹד רָשָׁע לְנֶגְדִּי, “while the wicked is before me”."
+            }
+          ]
+        },
+        {
+          "id": "od-again",
+          "gloss": "again, once more",
+          "definition": "An act or event comes round a second time; often with הוֹסִיף “add”, “do again”.",
+          "evidence": [
+            {
+              "ref": "Gen.8.10",
+              "role": "defining",
+              "note": "Noah waited עוֹד שִׁבְעַת יָמִים אֲחֵרִים, “yet another seven days”, and again sent out the dove."
+            },
+            {
+              "ref": "Gen.8.12",
+              "role": "defining",
+              "note": "The dove וְלֹא יָסְפָה שׁוּב אֵלָיו עוֹד, “did not return to him again”."
+            },
+            {
+              "ref": "Gen.4.25",
+              "note": "“Adam knew his wife עוֹד”, again, and she bore Seth."
+            },
+            {
+              "ref": "Gen.8.21",
+              "role": "defining",
+              "note": "“I will not again (לֹא אֹסִף … עוֹד) curse the ground … nor again strike every living thing.”"
+            },
+            {
+              "ref": "Hos.1.6",
+              "note": "“She conceived עוֹד”; “I will not again (לֹא אוֹסִיף עוֹד) have mercy on the house of Israel.”"
+            },
+            {
+              "ref": "Jer.31.4",
+              "note": "“עוֹד אֶבְנֵךְ, again I will build you, virgin of Israel.”"
+            },
+            {
+              "ref": "Zec.1.17",
+              "note": "Four times: “Yahweh will עוֹד comfort Zion and עוֹד choose Jerusalem.”"
+            },
+            {
+              "ref": "Hag.2.6",
+              "role": "defining",
+              "note": "“עוֹד אַחַת מְעַט הִיא, yet once, a little while, and I will shake the heavens and the earth”; expounded in Heb 12:26–27."
+            },
+            {
+              "ref": "Exo.4.6",
+              "note": "Yahweh said to him עוֹד, “again”: put your hand into your bosom."
+            },
+            {
+              "ref": "Job.14.7",
+              "note": "There is hope for a tree: if it is cut down, וְעוֹד יַחֲלִיף, “it will sprout again”."
+            }
+          ]
+        },
+        {
+          "id": "od-no-more",
+          "gloss": "(with a negative) no more, no longer, never again",
+          "definition": "With לֹא or אֵין: what has been will not be any more.",
+          "evidence": [
+            {
+              "ref": "Gen.17.5",
+              "role": "defining",
+              "note": "“Your name shall לֹא … עוֹד, no longer, be called Abram, but Abraham.”"
+            },
+            {
+              "ref": "Isa.2.4",
+              "role": "defining",
+              "note": "“Nation shall not lift sword against nation, וְלֹא יִלְמְדוּ עוֹד מִלְחָמָה, nor learn war any more.” Also Mic 4:3."
+            },
+            {
+              "ref": "Jer.31.34",
+              "role": "defining",
+              "note": "“They shall teach no more (לֹא … עוֹד) … for I will forgive their iniquity, and their sin I will remember no more (לֹא אֶזְכָּר עוֹד).” Quoted Heb 8:12; 10:17."
+            },
+            {
+              "ref": "Isa.65.19",
+              "note": "“The voice of weeping shall be heard in her no more.”"
+            },
+            {
+              "ref": "Isa.60.19",
+              "note": "“The sun shall be no more your light by day.” Also 60:20."
+            },
+            {
+              "ref": "Ecc.9.5",
+              "role": "defining",
+              "note": "“The dead know nothing, וְאֵין עוֹד לָהֶם שָׂכָר, they have no more reward.”"
+            },
+            {
+              "ref": "Ecc.9.6",
+              "note": "“They have no more (אֵין … עוֹד) a portion for ever in anything done under the sun.”"
+            },
+            {
+              "ref": "Job.7.10",
+              "note": "“He will return no more to his house, nor will his place know him any more.”"
+            },
+            {
+              "ref": "Psa.103.16",
+              "note": "“The wind passes over it and it is gone, and its place knows it no more.”"
+            },
+            {
+              "ref": "Psa.88.6",
+              "note": "The slain lying in the grave, “whom you remember no more”."
+            },
+            {
+              "ref": "Psa.104.35",
+              "note": "“Let sinners be consumed from the earth, and the wicked be no more.”"
+            }
+          ]
+        },
+        {
+          "id": "od-none-else",
+          "gloss": "besides, else, other; another, more",
+          "definition": "One more beyond those named: “have you another brother?”; and in אֵין עוֹד “there is none else” beside Yahweh, a claim Babylon makes for herself and is judged for.",
+          "evidence": [
+            {
+              "ref": "Gen.43.6",
+              "role": "defining",
+              "note": "“Why did you tell the man הַעוֹד לָכֶם אָח, whether you had another brother?”"
+            },
+            {
+              "ref": "1Sa.16.11",
+              "note": "“Are the young men finished?” “עוֹד שָׁאַר הַקָּטָן, there remains yet the youngest.”"
+            },
+            {
+              "ref": "2Sa.9.3",
+              "note": "“Is there not עוֹד a man of the house of Saul…?” “There is עוֹד a son of Jonathan.”"
+            },
+            {
+              "ref": "Deu.4.35",
+              "role": "defining",
+              "note": "“Yahweh, he is God; אֵין עוֹד מִלְבַדּוֹ, there is none else besides him.”"
+            },
+            {
+              "ref": "Deu.4.39",
+              "note": "“In heaven above and on the earth beneath: אֵין עוֹד.”"
+            },
+            {
+              "ref": "Isa.45.5",
+              "role": "defining",
+              "note": "“I am Yahweh וְאֵין עוֹד, and there is none else; besides me (זוּלָתִי) there is no God.”"
+            },
+            {
+              "ref": "Isa.45.21",
+              "note": "“וְאֵין עוֹד אֱלֹהִים מִבַּלְעָדַי, there is no other God besides me.” Also 45:6, 14, 18, 22; 46:9."
+            },
+            {
+              "ref": "1Ki.8.60",
+              "note": "“That all the peoples of the earth may know that Yahweh is God; אֵין עוֹד.”"
+            },
+            {
+              "ref": "Jol.2.27",
+              "note": "“I am Yahweh your God וְאֵין עוֹד.”"
+            },
+            {
+              "ref": "Isa.47.8",
+              "role": "defining",
+              "note": "Babylon says in her heart “אֲנִי וְאַפְסִי עוֹד, I am, and none else besides me”, the words that are Yahweh's alone. Also 47:10."
+            }
+          ]
+        },
+        {
+          "id": "od-within",
+          "gloss": "yet (so long), within (of time still to run)",
+          "definition": "Of a span of time still to pass before something happens: “yet forty days”, בְּעוֹד “within”.",
+          "evidence": [
+            {
+              "ref": "Jon.3.4",
+              "role": "defining",
+              "note": "“עוֹד אַרְבָּעִים יוֹם, yet forty days, and Nineveh will be overturned.”"
+            },
+            {
+              "ref": "Gen.40.13",
+              "role": "defining",
+              "note": "“בְּעוֹד שְׁלֹשֶׁת יָמִים, within three days Pharaoh will lift up your head.” Also 40:19."
+            },
+            {
+              "ref": "Gen.7.4",
+              "note": "“לְיָמִים עוֹד שִׁבְעָה, in yet seven days I will send rain.”"
+            },
+            {
+              "ref": "Jos.1.11",
+              "note": "“בְּעוֹד שְׁלֹשֶׁת יָמִים, within three days you cross this Jordan.”"
+            },
+            {
+              "ref": "Isa.21.16",
+              "note": "“בְּעוֹד שָׁנָה, within a year … all the glory of Kedar will end.”"
+            },
+            {
+              "ref": "Psa.37.10",
+              "note": "“וְעוֹד מְעַט, yet a little while, and the wicked will not be.”"
+            },
+            {
+              "ref": "Hos.1.4",
+              "note": "“עוֹד מְעַט, yet a little while, and I will visit the blood of Jezreel.” Also Isa 10:25."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "אֵין עוֹד",
+            "gloss": "there is none else (beside Yahweh)",
+            "evidence": [
+              {
+                "ref": "Deu.4.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.45.5"
+              },
+              {
+                "ref": "Isa.45.22"
+              },
+              {
+                "ref": "Isa.46.9"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא … עוֹד",
+            "gloss": "no more, never again",
+            "evidence": [
+              {
+                "ref": "Isa.2.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.31.34"
+              },
+              {
+                "ref": "Gen.9.11"
+              }
+            ]
+          },
+          {
+            "phrase": "הוֹסִיף עוֹד",
+            "gloss": "do again",
+            "evidence": [
+              {
+                "ref": "Gen.8.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.1.6"
+              }
+            ]
+          },
+          {
+            "phrase": "עוֹד מְעַט",
+            "gloss": "yet a little while",
+            "evidence": [
+              {
+                "ref": "Psa.37.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.1.4"
+              },
+              {
+                "ref": "Isa.10.25"
+              },
+              {
+                "ref": "Hag.2.6"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּעוֹד",
+            "gloss": "within (a span of time); while (one) yet is",
+            "evidence": [
+              {
+                "ref": "Gen.40.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.104.33",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "חַיִּים",
+            "note": "בְּחַיַּי “in my life” beside בְּעוֹדִי “while I yet am”.",
+            "evidence": [
+              {
+                "ref": "Psa.104.33",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.146.2"
+              }
+            ]
+          },
+          {
+            "lemma": "זוּלָה",
+            "note": "“Besides”: אֵין עוֹד זוּלָתִי, “there is none else besides me”.",
+            "evidence": [
+              {
+                "ref": "Isa.45.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.45.21"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἔτι",
+          "gloss": "still, yet; any more",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hag.2.6, עוֹד → ἔτι; Jer.31.34, Isa.2.4 and Deu.4.35 the same; ἔτι renders עוֹד ×308"
+            },
+            {
+              "ref": "Heb.12.26",
+              "role": "defining",
+              "note": "Quoting Hag 2:6: “ἔτι ἅπαξ, yet once more I shake not the earth only but also heaven.”"
+            },
+            {
+              "ref": "Heb.12.27",
+              "role": "defining",
+              "note": "“This ἔτι ἅπαξ signifies the removing of the things shaken … that the things not shaken may remain”: the New Testament expounding the word itself."
+            },
+            {
+              "ref": "Heb.8.12",
+              "note": "Quoting Jer 31:34: “their sins … I will remember no more (οὐ μὴ μνησθῶ ἔτι).” Also Heb 10:17."
+            },
+            {
+              "ref": "Rev.21.4",
+              "note": "“Death shall be no more (οὐκ ἔσται ἔτι), nor mourning nor crying”, as Isa 65:19."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "witness",
+      "bdb": [
+        "p.bc.ad"
+      ],
+      "summary": "A witness: one who has seen or known a thing and can declare it (Lev 5:1), whether a man in a trial, God himself, or a heap, a pillar, an altar, a song or a book set up to bear witness to a covenant. No cognate in the other languages yet shows this sense from the root; its tie to עוֹד (“one who says again, affirms”) is argued, not shown.",
+      "senses": [
+        {
+          "id": "ed-witness",
+          "gloss": "witness (a person, in law)",
+          "definition": "One who has seen or knows a matter and is bound to tell it. The law requires two or three to establish a charge, and a false witness suffers what he plotted.",
+          "evidence": [
+            {
+              "ref": "Lev.5.1",
+              "role": "defining",
+              "note": "“If a soul … hears the voice of an oath, וְהוּא עֵד, and he is a witness, whether he has seen or known, if he does not declare it, he bears his iniquity.”"
+            },
+            {
+              "ref": "Deu.19.15",
+              "role": "defining",
+              "note": "“One witness shall not rise against a man … עַל פִּי שְׁנֵי עֵדִים אוֹ … שְׁלֹשָׁה, at the mouth of two witnesses or three a matter shall stand.”"
+            },
+            {
+              "ref": "Deu.17.6",
+              "role": "defining",
+              "note": "“At the mouth of two witnesses or three witnesses shall he that is to die be put to death; not at the mouth of one witness.”"
+            },
+            {
+              "ref": "Num.35.30",
+              "note": "The murderer is put to death at the mouth of witnesses; one witness shall not testify against a soul."
+            },
+            {
+              "ref": "Deu.17.7",
+              "note": "The hand of the witnesses shall be first against him."
+            },
+            {
+              "ref": "Deu.19.18",
+              "role": "defining",
+              "note": "If “עֵד שֶׁקֶר הָעֵד, the witness is a false witness” (19:16 עֵד חָמָס), do to him as he plotted to do to his brother (19:19)."
+            },
+            {
+              "ref": "Exo.20.16",
+              "note": "“You shall not answer against your neighbour as עֵד שָׁקֶר, a false witness.” Also Deu 5:20."
+            },
+            {
+              "ref": "Pro.14.5",
+              "role": "defining",
+              "note": "“עֵד אֱמוּנִים, a faithful witness, will not lie; but a false witness breathes out lies.” Also 14:25."
+            },
+            {
+              "ref": "Pro.19.5",
+              "note": "“A false witness will not go unpunished.” Also 19:9; 6:19; 12:17; 21:28; 25:18."
+            },
+            {
+              "ref": "Psa.27.12",
+              "note": "“עֵדֵי שֶׁקֶר, false witnesses, have risen against me, and such as breathe out violence.” Also 35:11."
+            },
+            {
+              "ref": "Jer.32.10",
+              "note": "Jeremiah signs and seals the deed of purchase and has witnesses attest it (וָאָעֵד עֵדִים). Also 32:12, 25, 44."
+            },
+            {
+              "ref": "Rut.4.9",
+              "role": "defining",
+              "note": "Boaz to the elders and all the people: “עֵדִים אַתֶּם הַיּוֹם, you are witnesses this day that I have bought…”; and they answer “עֵדִים, witnesses” (4:11)."
+            },
+            {
+              "ref": "Jos.24.22",
+              "note": "“You are witnesses against yourselves that you have chosen Yahweh”; “Witnesses!”"
+            },
+            {
+              "ref": "Isa.8.2",
+              "note": "Isaiah takes עֵדִים נֶאֱמָנִים, faithful witnesses, Uriah and Zechariah."
+            }
+          ],
+          "kin": [
+            "hiphil-testify"
+          ]
+        },
+        {
+          "id": "ed-god-witness",
+          "gloss": "witness (of God)",
+          "definition": "God, who sees what no man sees, called on to witness an agreement or a man's innocence, or coming himself as witness against the wicked.",
+          "evidence": [
+            {
+              "ref": "Gen.31.50",
+              "role": "defining",
+              "note": "Laban: “No man is with us; see, God is עֵד between me and you.”"
+            },
+            {
+              "ref": "1Sa.12.5",
+              "role": "defining",
+              "note": "Samuel: “Yahweh is witness against you, and his anointed is witness this day, that you have not found anything in my hand.” “Witness.”"
+            },
+            {
+              "ref": "Jer.42.5",
+              "note": "“Let Yahweh be a true and faithful witness (לְעֵד אֱמֶת וְנֶאֱמָן) against us, if we do not do…”"
+            },
+            {
+              "ref": "Mic.1.2",
+              "note": "“Let the Lord Yahweh be witness against you, the Lord from his holy temple.”"
+            },
+            {
+              "ref": "Mal.3.5",
+              "role": "defining",
+              "note": "“I will come near to you for judgment, and I will be עֵד מְמַהֵר, a swift witness, against the sorcerers, the adulterers, the false swearers…”"
+            },
+            {
+              "ref": "Job.16.19",
+              "role": "defining",
+              "note": "“Even now, behold, my witness (עֵדִי) is in heaven, and he who vouches for me (שָׂהֲדִי, the Aramaic word) is on high.”"
+            },
+            {
+              "ref": "Jer.29.23",
+              "note": "“I am he who knows, and am witness, says Yahweh.”"
+            }
+          ]
+        },
+        {
+          "id": "ed-thing-witness",
+          "gloss": "witness (a thing set up to bear witness)",
+          "definition": "A heap, pillar, altar, song or book set where it will remind and attest: it “witnesses” to a covenant or a truth for those who come after.",
+          "evidence": [
+            {
+              "ref": "Gen.31.44",
+              "role": "defining",
+              "note": "“Let us cut a covenant, I and you, and let it be לְעֵד, a witness between me and you.”"
+            },
+            {
+              "ref": "Gen.31.48",
+              "role": "defining",
+              "note": "“This heap is עֵד between me and you this day”; therefore it was named Galeed (גַּלְעֵד), Laban having called it in Aramaic יְגַר שָׂהֲדוּתָא (31:47). Also 31:52."
+            },
+            {
+              "ref": "Deu.31.19",
+              "role": "defining",
+              "note": "“Write this song … that this song may be to me לְעֵד, a witness, against the sons of Israel.” Also 31:21."
+            },
+            {
+              "ref": "Deu.31.26",
+              "note": "The book of the law put beside the ark of the covenant, “that it may be there לְעֵד, for a witness against you”."
+            },
+            {
+              "ref": "Jos.22.27",
+              "note": "The altar by the Jordan: “it is a witness between us and you … that we may serve Yahweh.” Also 22:28, 34."
+            },
+            {
+              "ref": "Isa.19.20",
+              "note": "An altar and pillar in Egypt “for a sign and for a witness (לְאוֹת וּלְעֵד) to Yahweh of hosts”."
+            },
+            {
+              "ref": "Job.16.8",
+              "note": "Job's shrivelled body “has become a witness” against him."
+            },
+            {
+              "ref": "Psa.89.38",
+              "role": "defining",
+              "note": "David's throne established “as the moon forever, וְעֵד בַּשַּׁחַק נֶאֱמָן, and the witness in the sky is faithful”."
+            }
+          ]
+        },
+        {
+          "id": "ed-yahweh-witnesses",
+          "gloss": "Yahweh's witnesses (Israel; his servant)",
+          "definition": "Israel, who heard Yahweh foretell and saw him save, stands witness that he alone is God, against the nations whose idols have no witnesses that can see; and one given as a witness to the peoples.",
+          "evidence": [
+            {
+              "ref": "Isa.43.10",
+              "role": "defining",
+              "note": "“אַתֶּם עֵדַי, you are my witnesses, says Yahweh, and my servant whom I have chosen, that you may know and believe me … before me no god was formed.”"
+            },
+            {
+              "ref": "Isa.43.12",
+              "note": "“I declared and saved and proclaimed … and you are my witnesses, says Yahweh, that I am God.”"
+            },
+            {
+              "ref": "Isa.44.8",
+              "role": "defining",
+              "note": "“You are my witnesses: is there a God besides me?”"
+            },
+            {
+              "ref": "Isa.43.9",
+              "note": "The nations are challenged: “let them bring their witnesses”."
+            },
+            {
+              "ref": "Isa.44.9",
+              "note": "The idol-makers' “own witnesses neither see nor know”."
+            },
+            {
+              "ref": "Isa.55.4",
+              "role": "defining",
+              "note": "“Behold, I have given him as עֵד, a witness, to the peoples, a leader and commander to the peoples”, after “the sure mercies of David” (55:3)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "עֵד שֶׁקֶר",
+            "gloss": "false witness",
+            "evidence": [
+              {
+                "ref": "Exo.20.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.19.18"
+              },
+              {
+                "ref": "Pro.6.19"
+              },
+              {
+                "ref": "Pro.14.5"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל פִּי שְׁנַיִם עֵדִים",
+            "gloss": "at the mouth of two witnesses",
+            "evidence": [
+              {
+                "ref": "Deu.17.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.19.15"
+              }
+            ]
+          },
+          {
+            "phrase": "הָיָה לְעֵד",
+            "gloss": "be (set up) for a witness",
+            "evidence": [
+              {
+                "ref": "Gen.31.44",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.31.26"
+              },
+              {
+                "ref": "Isa.19.20"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "שָׂהֵד",
+            "note": "The Aramaic word for witness, beside עֵד in Job, and Laban's name for the heap Jacob calls Galeed.",
+            "evidence": [
+              {
+                "ref": "Job.16.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.31.47"
+              }
+            ]
+          },
+          {
+            "lemma": "אוֹת",
+            "note": "“A sign and a witness” of an altar in Egypt.",
+            "evidence": [
+              {
+                "ref": "Isa.19.20",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עֵד אֱמוּנִים",
+            "note": "The faithful (true) witness against the עֵד שְׁקָרִים who breathes out lies.",
+            "evidence": [
+              {
+                "ref": "Pro.14.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.14.25"
+              },
+              {
+                "ref": "Pro.12.17"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "μάρτυς",
+          "gloss": "witness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.19.15, עֵד → μάρτυς, עֵדִים → μαρτύρων; Isa.43.10 and Psa.89.38 the same; μάρτυς renders עֵד ×42"
+            },
+            {
+              "ref": "Mat.18.16",
+              "role": "defining",
+              "note": "Jesus applies Deu 19:15: “that at the mouth of two or three witnesses every word may be established.”"
+            },
+            {
+              "ref": "2Co.13.1",
+              "note": "Paul quotes Deu 19:15."
+            },
+            {
+              "ref": "Heb.10.28",
+              "note": "“He who set aside the law of Moses dies without mercy on two or three witnesses” (Deu 17:6)."
+            },
+            {
+              "ref": "1Ti.5.19",
+              "note": "No accusation against an elder except on two or three witnesses."
+            },
+            {
+              "ref": "Mrk.14.56",
+              "note": "Many bore false witness against Jesus, “and their testimonies did not agree”: the law's test of Deu 19:15–18."
+            },
+            {
+              "ref": "Rev.1.5",
+              "role": "defining",
+              "note": "Jesus Christ “the faithful witness, the firstborn from the dead, and the ruler of the kings of the earth”: the words of Psa 89:28 and 38."
+            },
+            {
+              "ref": "Rev.3.14",
+              "note": "“The Amen, the faithful and true witness.”"
+            },
+            {
+              "ref": "Act.1.8",
+              "note": "“You shall be my witnesses … to the end of the earth”, as Isa 43:10 and 49:6."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵדוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "testimony; the tablets of the law; (pl.) Yahweh's testimonies",
+      "bdb": [
+        "p.bc.ah"
+      ],
+      "cognate_ids": [
+        "akk-adu"
+      ],
+      "summary": "What is attested: above all “the testimony”, the law God wrote on the two tablets and Moses put in the ark (Exo 25:16; 31:18; 40:20), so that the ark, the tabernacle and the tent are each named “of the testimony” (Num 10:11); then Yahweh's testimonies, his word as what he has testified to Israel (2Ki 17:15), kept by those who walk in his way (Psa 119). No cognate yet shows the witness sense from the root.",
+      "senses": [
+        {
+          "id": "edut-tablets",
+          "gloss": "the testimony: the tablets of the law",
+          "definition": "The two stone tablets on which God wrote the ten words, given to Moses on Sinai and put in the ark; Yahweh's own witness of his covenant, kept before him in the holy of holies.",
+          "evidence": [
+            {
+              "ref": "Exo.31.18",
+              "role": "defining",
+              "note": "He gave Moses “שְׁנֵי לֻחֹת הָעֵדֻת, the two tablets of the testimony, tablets of stone written with the finger of God”."
+            },
+            {
+              "ref": "Exo.25.16",
+              "role": "defining",
+              "note": "“You shall put into the ark the testimony that I will give you.” Also 25:21."
+            },
+            {
+              "ref": "Exo.40.20",
+              "role": "defining",
+              "note": "“He took and put the testimony into the ark.”"
+            },
+            {
+              "ref": "Exo.32.15",
+              "note": "Moses came down with the two tablets of the testimony in his hand, written on both sides."
+            },
+            {
+              "ref": "Exo.34.29",
+              "note": "The second tablets of the testimony; Moses' face shone."
+            },
+            {
+              "ref": "Exo.16.34",
+              "note": "Aaron laid up the manna “before the testimony”, to be kept. Also Num 17:25, Aaron's rod."
+            },
+            {
+              "ref": "Exo.30.6",
+              "note": "The incense altar before the veil “by the ark of the testimony, before the covering that is over the testimony, where I will meet with you”."
+            },
+            {
+              "ref": "Lev.16.13",
+              "note": "The cloud of incense covers the covering that is on the testimony."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "of the testimony: the ark, the tabernacle, the tent, the veil",
+              "definition": "The ark and the dwelling that housed the tablets are named by them, for Yahweh's covenant witness was what the dwelling kept.",
+              "evidence": [
+                {
+                  "ref": "Exo.25.22",
+                  "role": "defining",
+                  "note": "“I will meet with you there … from between the two cherubim upon אֲרוֹן הָעֵדֻת, the ark of the testimony.”"
+                },
+                {
+                  "ref": "Num.10.11",
+                  "role": "defining",
+                  "note": "In the second year, second month, twentieth day, “the cloud was lifted from over מִשְׁכַּן הָעֵדֻת, the tabernacle of the testimony”, and Israel set out from Sinai."
+                },
+                {
+                  "ref": "Exo.38.21",
+                  "note": "“The tabernacle, the tabernacle of the testimony” (Act 7:44)."
+                },
+                {
+                  "ref": "Num.1.50",
+                  "note": "The Levites appointed over the tabernacle of the testimony. Also 1:53."
+                },
+                {
+                  "ref": "Num.9.15",
+                  "note": "The cloud covered the tabernacle, “the tent of the testimony”."
+                },
+                {
+                  "ref": "Num.17.22",
+                  "note": "The rods laid before Yahweh in the tent of the testimony. Also 18:2; 2Ch 24:6."
+                },
+                {
+                  "ref": "Lev.24.3",
+                  "note": "The lamp outside פָּרֹכֶת הָעֵדֻת, the veil of the testimony."
+                },
+                {
+                  "ref": "Jos.4.16",
+                  "note": "The priests who bear the ark of the testimony."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "edut-testimonies",
+          "gloss": "testimony, testimonies: Yahweh's word and commands",
+          "definition": "Yahweh's law as what he has testified to Israel and against them, set beside his law, statutes, commandments and judgments; to be kept, delighted in and walked in.",
+          "evidence": [
+            {
+              "ref": "2Ki.17.15",
+              "role": "defining",
+              "note": "They rejected his statutes and his covenant “and his testimonies (עֵדְוֹתָיו) which he testified (הֵעִיד) against them”: the noun is what the verb did."
+            },
+            {
+              "ref": "Psa.19.8",
+              "role": "defining",
+              "note": "“The law of Yahweh is whole, restoring the soul; עֵדוּת יַהְוֶה נֶאֱמָנָה, the testimony of Yahweh is sure, making wise the simple.”"
+            },
+            {
+              "ref": "Psa.78.5",
+              "role": "defining",
+              "note": "“He established עֵדוּת in Jacob and appointed תּוֹרָה in Israel, which he commanded our fathers to make known to their children.”"
+            },
+            {
+              "ref": "1Ki.2.3",
+              "note": "David's charge: keep “his statutes, his commandments, his judgments and his testimonies, as written in the law of Moses”."
+            },
+            {
+              "ref": "2Ki.23.3",
+              "note": "Josiah covenants to keep his commandments, testimonies and statutes."
+            },
+            {
+              "ref": "Psa.119.14",
+              "note": "“I rejoice in the way of your testimonies as much as in all riches.”"
+            },
+            {
+              "ref": "Psa.119.88",
+              "note": "“Give me life by your covenant love, and I will keep עֵדוּת פִּיךָ, the testimony of your mouth.”"
+            },
+            {
+              "ref": "Psa.119.99",
+              "note": "“I have more insight than all my teachers, for your testimonies are my meditation.”"
+            },
+            {
+              "ref": "Psa.119.111",
+              "note": "“Your testimonies I have taken as a heritage forever.” Also 119:31, 36, 129, 144, 157."
+            },
+            {
+              "ref": "Jer.44.23",
+              "note": "“You have not walked in his law, in his statutes or in his testimonies.”"
+            },
+            {
+              "ref": "Neh.9.34",
+              "note": "“Your testimonies which you testified against them.”"
+            },
+            {
+              "ref": "Psa.81.6",
+              "note": "The feast blown at the new moon, “a statute for Israel … עֵדוּת he set it in Joseph” (81:5–6)."
+            },
+            {
+              "ref": "Psa.122.4",
+              "note": "The tribes go up “עֵדוּת לְיִשְׂרָאֵל, a testimony for Israel”, to give thanks to Yahweh's name."
+            }
+          ],
+          "kin": [
+            "edah-testimonies",
+            "hiphil-warn"
+          ]
+        },
+        {
+          "gloss": "the testimony given to the king",
+          "definition": "At Joash's crowning the priest puts on him the crown and “the testimony”; what it was the text does not say, but the king was to have a copy of the law beside him (Deu 17:18–19).",
+          "evidence": [
+            {
+              "ref": "2Ki.11.12",
+              "role": "defining",
+              "note": "“He put on him the crown (נֵזֶר) and הָעֵדוּת, and they made him king.” Also 2Ch 23:11."
+            }
+          ]
+        },
+        {
+          "gloss": "(in psalm headings) obscure",
+          "definition": "In two headings, beside שׁוּשַׁן “lily”, probably a tune or the kind of song; its sense here is not known.",
+          "evidence": [
+            {
+              "ref": "Psa.60.1",
+              "role": "defining",
+              "note": "“To the chief musician, עַל שׁוּשַׁן עֵדוּת.”"
+            },
+            {
+              "ref": "Psa.80.1",
+              "note": "“אֶל שֹׁשַׁנִּים עֵדוּת.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "אֲרוֹן הָעֵדֻת",
+            "gloss": "the ark of the testimony",
+            "evidence": [
+              {
+                "ref": "Exo.25.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.40.21"
+              },
+              {
+                "ref": "Num.7.89"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁכַּן הָעֵדֻת",
+            "gloss": "the tabernacle of the testimony",
+            "evidence": [
+              {
+                "ref": "Exo.38.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.1.50"
+              },
+              {
+                "ref": "Num.10.11"
+              }
+            ]
+          },
+          {
+            "phrase": "אֹהֶל הָעֵדוּת",
+            "gloss": "the tent of the testimony",
+            "evidence": [
+              {
+                "ref": "Num.9.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.17.22"
+              },
+              {
+                "ref": "2Ch.24.6"
+              }
+            ]
+          },
+          {
+            "phrase": "לֻחֹת הָעֵדֻת",
+            "gloss": "the tablets of the testimony",
+            "evidence": [
+              {
+                "ref": "Exo.31.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.32.15"
+              },
+              {
+                "ref": "Exo.34.29"
+              }
+            ]
+          },
+          {
+            "phrase": "לִפְנֵי הָעֵדֻת",
+            "gloss": "before the testimony",
+            "evidence": [
+              {
+                "ref": "Exo.16.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.27.21"
+              },
+              {
+                "ref": "Num.17.25"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "תּוֹרָה",
+            "note": "“The law of Yahweh” // “the testimony of Yahweh”.",
+            "evidence": [
+              {
+                "ref": "Psa.19.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.5"
+              }
+            ]
+          },
+          {
+            "lemma": "חֹק",
+            "note": "Listed with statutes, commandments and judgments.",
+            "evidence": [
+              {
+                "ref": "1Ki.2.3",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.17.15"
+              },
+              {
+                "ref": "Psa.81.5"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "μαρτύριον",
+          "gloss": "testimony, witness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.38.21, Num.10.11 and Exo.31.18, עֵדוּת → μαρτυρίου; μαρτύριον renders עֵדוּת ×33"
+            },
+            {
+              "ref": "Act.7.44",
+              "role": "defining",
+              "note": "Stephen: “ἡ σκηνὴ τοῦ μαρτυρίου, the tabernacle of the testimony, was with our fathers in the wilderness”, Exo 38:21."
+            },
+            {
+              "ref": "Rev.15.5",
+              "note": "“The temple of the tabernacle of the testimony in heaven was opened.”"
+            }
+          ]
+        },
+        {
+          "lemma": "μαρτυρία",
+          "gloss": "testimony",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.19.8, עֵדוּת → μαρτυρία; Exo.25.16 → μαρτύρια; μαρτυρία renders עֵדוּת ×9"
+            },
+            {
+              "ref": "Jhn.8.17",
+              "note": "“It is written in your law that the testimony (μαρτυρία) of two men is true”, Deu 19:15."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עוּד",
+      "pos": "verb",
+      "gloss": "(hiphil) call to witness, testify, warn; (polel) raise up, restore",
+      "bdb": [
+        "p.bc.aa"
+      ],
+      "summary": "The verb is almost all hiphil: to call witnesses or take heaven and earth as witness, to testify for or against, and so to warn or charge solemnly, as Yahweh did through all his prophets (2Ki 17:13). A few poetic forms (polel, hithpolel) mean to raise up or restore, and one piel perhaps to surround: these go with Arabic ʿāda “return; (IV) restore” and Punic ʿdd “help up”, while no cognate yet shows the hiphil's sense of witness.",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "call to witness; testify; warn, charge solemnly",
+          "senses": [
+            {
+              "id": "hiphil-call-witness",
+              "gloss": "call or take as witness; have witnesses attest",
+              "definition": "To set witnesses to a deed, or to call heaven and earth as witnesses to what is being said, so that they stand against the hearers if they break it.",
+              "evidence": [
+                {
+                  "ref": "Deu.30.19",
+                  "role": "defining",
+                  "note": "“הַעִידֹתִי בָכֶם, I call heaven and earth to witness against you today: I have set before you life and death.”"
+                },
+                {
+                  "ref": "Deu.4.26",
+                  "note": "“I call heaven and earth to witness against you today that you will utterly perish.” Also 31:28."
+                },
+                {
+                  "ref": "Jer.32.10",
+                  "role": "defining",
+                  "note": "“I wrote it in the deed and sealed it, וָאָעֵד עֵדִים, and had witnesses attest it.” Also 32:25, 44."
+                },
+                {
+                  "ref": "Isa.8.2",
+                  "note": "“וְאָעִידָה לִּי עֵדִים נֶאֱמָנִים, I took faithful witnesses for me.”"
+                }
+              ]
+            },
+            {
+              "id": "hiphil-testify",
+              "gloss": "testify, bear witness (for or against)",
+              "definition": "To state as a witness what one has seen or knows, for a man or against him; falsely, of the worthless men set against Naboth.",
+              "evidence": [
+                {
+                  "ref": "1Ki.21.10",
+                  "role": "defining",
+                  "note": "“Set two worthless men before him וִיעִדֻהוּ, and let them testify against him, saying, ‘You blessed God and the king.’” Also 21:13."
+                },
+                {
+                  "ref": "Job.29.11",
+                  "role": "defining",
+                  "note": "“The ear heard and called me blessed; the eye saw וַתְּעִידֵנִי, and bore witness to me.”"
+                },
+                {
+                  "ref": "Mal.2.14",
+                  "note": "“Yahweh has been witness (הֵעִיד) between you and the wife of your youth.”"
+                },
+                {
+                  "ref": "Psa.50.7",
+                  "note": "“Hear, my people, and I will speak; Israel, וְאָעִידָה בָּךְ, I will testify against you: I am God, your God.” Also 81:9."
+                },
+                {
+                  "ref": "Amo.3.13",
+                  "note": "“Hear and testify against the house of Jacob.”"
+                },
+                {
+                  "ref": "Lam.2.13",
+                  "note": "“מָה אֲעִידֵךְ, what can I testify to you (or take as witness for you), daughter of Jerusalem?”, beside “what can I liken to you?”"
+                }
+              ],
+              "kin": [
+                "ed-witness"
+              ]
+            },
+            {
+              "id": "hiphil-warn",
+              "gloss": "warn, admonish, charge solemnly",
+              "definition": "To testify to someone what will follow if he does not hear, and so to warn him or lay a solemn charge on him; Yahweh's word to Israel through the prophets, calling them to turn back.",
+              "evidence": [
+                {
+                  "ref": "2Ki.17.13",
+                  "role": "defining",
+                  "note": "“Yahweh testified (וַיָּעַד) against Israel and Judah by every prophet and seer, saying, ‘Turn from your evil ways and keep my commandments.’”"
+                },
+                {
+                  "ref": "Neh.9.26",
+                  "role": "defining",
+                  "note": "They killed “your prophets who testified against them to turn them back to you”. Also 9:29, 30, 34."
+                },
+                {
+                  "ref": "Gen.43.3",
+                  "role": "defining",
+                  "note": "“The man solemnly warned us (הָעֵד הֵעִד), saying, ‘You shall not see my face unless your brother is with you.’”"
+                },
+                {
+                  "ref": "Exo.19.21",
+                  "note": "“Go down, warn the people lest they break through to Yahweh to gaze.” Also 19:23."
+                },
+                {
+                  "ref": "1Sa.8.9",
+                  "note": "“Only you shall solemnly warn them and show them the manner of the king.”"
+                },
+                {
+                  "ref": "1Ki.2.42",
+                  "note": "Solomon to Shimei: “Did I not make you swear by Yahweh and warn you?”"
+                },
+                {
+                  "ref": "Jer.11.7",
+                  "note": "“I solemnly warned your fathers … rising early and warning, saying, ‘Obey my voice.’”"
+                },
+                {
+                  "ref": "Jer.6.10",
+                  "note": "“To whom shall I speak and testify, that they may hear? Their ear is uncircumcised.”"
+                },
+                {
+                  "ref": "Jer.42.19",
+                  "note": "“Know for certain that I have warned you today.”"
+                },
+                {
+                  "ref": "Deu.8.19",
+                  "note": "“If you forget Yahweh … I testify against you today that you will surely perish.”"
+                },
+                {
+                  "ref": "Deu.32.46",
+                  "note": "“Set your heart to all the words which I testify among you today, that you may command your children.”"
+                },
+                {
+                  "ref": "Zec.3.6",
+                  "note": "“The angel of Yahweh charged (וַיָּעַד) Joshua, saying, ‘If you walk in my ways…’”"
+                },
+                {
+                  "ref": "Neh.13.15",
+                  "note": "Nehemiah warns those who sell on the sabbath. Also 13:21."
+                },
+                {
+                  "ref": "2Ch.24.19",
+                  "note": "He sent prophets to bring them back to Yahweh, “and they testified against them, but they would not listen”."
+                }
+              ],
+              "kin": [
+                "edut-testimonies"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be warned",
+          "senses": [
+            {
+              "gloss": "be warned (of a known danger)",
+              "definition": "To have had testimony given to one about a danger, so that he is answerable for it.",
+              "evidence": [
+                {
+                  "ref": "Exo.21.29",
+                  "role": "defining",
+                  "note": "If the ox was wont to gore in time past “וְהוּעַד בִּבְעָלָיו, and its owner has been warned”, and he did not keep it in, the owner too is put to death."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "raise up, restore, uphold",
+          "cognate_ids": [
+            "ar-ada",
+            "phn-dd"
+          ],
+          "senses": [
+            {
+              "id": "polel-restore",
+              "gloss": "raise up, restore, uphold (the lowly)",
+              "definition": "Yahweh's lifting up the fallen and helpless, set against his bringing the wicked down.",
+              "evidence": [
+                {
+                  "ref": "Psa.147.6",
+                  "role": "defining",
+                  "note": "“מְעוֹדֵד עֲנָוִים יַהְוֶה, Yahweh lifts up the humble; he brings the wicked down (מַשְׁפִּיל) to the ground.”"
+                },
+                {
+                  "ref": "Psa.146.9",
+                  "role": "defining",
+                  "note": "“He upholds (יְעוֹדֵד) the fatherless and the widow, but the way of the wicked he turns upside down.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "be raised up, stand upright",
+          "cognate_ids": [
+            "ar-ada",
+            "phn-dd"
+          ],
+          "senses": [
+            {
+              "gloss": "rise up again, stand upright",
+              "definition": "To be set up again after falling, against those who bow and fall.",
+              "evidence": [
+                {
+                  "ref": "Psa.20.9",
+                  "role": "defining",
+                  "note": "“They have bowed and fallen, but we have risen וַנִּתְעוֹדָד, and stand upright.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "surround (?)",
+          "cognate_ids": [
+            "gez-wd"
+          ],
+          "senses": [
+            {
+              "gloss": "surround, encompass (?)",
+              "definition": "Of the cords of the wicked about the psalmist; the sense is not certain.",
+              "evidence": [
+                {
+                  "ref": "Psa.119.61",
+                  "role": "defining",
+                  "note": "“חֶבְלֵי רְשָׁעִים עִוְּדֻנִי, the cords of the wicked have surrounded me; I have not forgotten your law.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "הֵעִיד בְּ… אֶת הַשָּׁמַיִם וְאֶת הָאָרֶץ",
+            "gloss": "call heaven and earth to witness against",
+            "evidence": [
+              {
+                "ref": "Deu.30.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.26"
+              },
+              {
+                "ref": "Deu.31.28"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵעִיד בְּ",
+            "gloss": "testify against, warn",
+            "evidence": [
+              {
+                "ref": "2Ki.17.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.9.26"
+              },
+              {
+                "ref": "Psa.50.7"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׁפֵל",
+            "note": "Yahweh lifts up (מְעוֹדֵד) the humble and brings low (מַשְׁפִּיל) the wicked.",
+            "evidence": [
+              {
+                "ref": "Psa.147.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נָפַל",
+            "note": "“They bowed and fell; we rose and stood upright.”",
+            "evidence": [
+              {
+                "ref": "Psa.20.9",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "διαμαρτύρομαι",
+          "gloss": "testify solemnly, charge, warn",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.30.19, הַעִידֹתִי → διαμαρτύρομαι; Deu.32.46, 1Sa.8.9, Neh.9.26 and Zec.3.6 the same; διαμαρτύρομαι renders עוּד ×22"
+            },
+            {
+              "ref": "Act.2.40",
+              "note": "Peter “testified and exhorted, saying, ‘Be saved from this crooked generation.’”"
+            },
+            {
+              "ref": "Act.20.21",
+              "note": "Paul “testifying to Jews and Greeks repentance toward God and faith toward our Lord Jesus Christ”."
+            },
+            {
+              "ref": "Luk.16.28",
+              "note": "“That he may testify to them (warn them), lest they also come to this place of torment.”"
+            },
+            {
+              "ref": "1Ti.5.21",
+              "note": "“I solemnly charge you before God and the Lord Jesus Christ and the chosen angels.” Also 2Ti 4:1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵדָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "witness (a thing); (pl. עֵדֹת) testimonies",
+      "bdb": [
+        "p.bc.ae"
+      ],
+      "cognate_ids": [
+        "akk-adu"
+      ],
+      "summary": "The feminine of עֵד: a thing that bears witness, a gift of lambs, a pillar, a stone that “heard” Yahweh's words; and in the plural, Yahweh's testimonies, set beside his statutes, judgments and covenant. It is not עֵדָה “congregation”, which belongs to יעד. No cognate yet shows the witness sense from the root.",
+      "senses": [
+        {
+          "gloss": "witness (a thing)",
+          "definition": "Something set or given to attest an agreement or a covenant, so that it can be appealed to later.",
+          "evidence": [
+            {
+              "ref": "Gen.21.30",
+              "role": "defining",
+              "note": "Abraham: “These seven ewe lambs you shall take from my hand, that they may be to me לְעֵדָה, a witness, that I dug this well.”"
+            },
+            {
+              "ref": "Gen.31.52",
+              "note": "“This heap is witness (עֵד) and the pillar is witness (עֵדָה).”"
+            },
+            {
+              "ref": "Jos.24.27",
+              "role": "defining",
+              "note": "“This stone shall be לְעֵדָה against us, for it has heard all the words of Yahweh … lest you deny your God.”"
+            }
+          ],
+          "kin": [
+            "ed-thing-witness"
+          ]
+        },
+        {
+          "id": "edah-testimonies",
+          "gloss": "(pl.) testimonies, Yahweh's commands",
+          "definition": "Yahweh's law as what he has testified to Israel, joined with his statutes, judgments, commandments and covenant; to be kept, taught to sons, and delighted in.",
+          "evidence": [
+            {
+              "ref": "Deu.4.45",
+              "role": "defining",
+              "note": "“These are הָעֵדֹת וְהַחֻקִּים וְהַמִּשְׁפָּטִים, the testimonies, the statutes and the judgments which Moses spoke to the sons of Israel.”"
+            },
+            {
+              "ref": "Deu.6.20",
+              "role": "defining",
+              "note": "“When your son asks you, ‘What are the testimonies, the statutes and the judgments which Yahweh our God commanded you?’” Also 6:17."
+            },
+            {
+              "ref": "Psa.132.12",
+              "role": "defining",
+              "note": "“If your sons keep בְּרִיתִי וְעֵדֹתִי זוֹ אֲלַמְּדֵם, my covenant and my testimonies that I shall teach them.”"
+            },
+            {
+              "ref": "Psa.25.10",
+              "note": "“All the paths of Yahweh are covenant love and truth to those who keep his covenant and his testimonies.”"
+            },
+            {
+              "ref": "Psa.119.2",
+              "note": "“Blessed are those who keep his testimonies, who seek him with the whole heart.”"
+            },
+            {
+              "ref": "Psa.119.24",
+              "note": "“Your testimonies are my delight, my counsellors.”"
+            },
+            {
+              "ref": "Psa.93.5",
+              "note": "“Your testimonies are very sure; holiness befits your house.”"
+            },
+            {
+              "ref": "Psa.99.7",
+              "note": "“He spoke to them in the pillar of cloud; they kept his testimonies and the statute he gave them.”"
+            },
+            {
+              "ref": "Psa.78.56",
+              "note": "“They tested and provoked God Most High and did not keep his testimonies.”"
+            },
+            {
+              "ref": "Psa.119.152",
+              "note": "“Of old I have known from your testimonies that you founded them forever.”"
+            }
+          ],
+          "kin": [
+            "edut-testimonies"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בְּרִית",
+            "note": "“My covenant and my testimonies.”",
+            "evidence": [
+              {
+                "ref": "Psa.132.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.25.10"
+              }
+            ]
+          },
+          {
+            "lemma": "חֻקִּים וּמִשְׁפָּטִים",
+            "note": "“The testimonies, the statutes and the judgments.”",
+            "evidence": [
+              {
+                "ref": "Deu.4.45",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.6.20"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "μαρτύριον",
+          "gloss": "testimony, witness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.21.30, לְעֵדָה → μαρτύριον; Jos.24.27 the same (×2)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּעוּדָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "testimony; attestation",
+      "bdb": [
+        "p.bc.ai"
+      ],
+      "summary": "A rare noun: in Isaiah, the testimony bound up beside the תּוֹרָה among his disciples, by which every word is to be tested; in Ruth, the customary form of attesting a transaction. Three uses; no cognate yet shows the witness sense from the root.",
+      "senses": [
+        {
+          "gloss": "testimony (the word of God given through the prophet)",
+          "definition": "What Yahweh has testified, set beside תּוֹרָה, sealed among the prophet's disciples and made the test of every other word.",
+          "evidence": [
+            {
+              "ref": "Isa.8.16",
+              "role": "defining",
+              "note": "“צוֹר תְּעוּדָה חֲתוֹם תּוֹרָה, bind up the testimony, seal the law among my disciples.”"
+            },
+            {
+              "ref": "Isa.8.20",
+              "role": "defining",
+              "note": "“To the law and to the testimony! If they do not speak according to this word, it is because there is no dawn in them.”"
+            }
+          ],
+          "kin": [
+            "edut-testimonies"
+          ]
+        },
+        {
+          "gloss": "attestation (the customary form of confirming)",
+          "definition": "The act by which a transaction was confirmed in Israel before witnesses.",
+          "evidence": [
+            {
+              "ref": "Rut.4.7",
+              "role": "defining",
+              "note": "“This was the way formerly in Israel concerning redeeming and exchanging, to confirm any matter: a man drew off his sandal and gave it to his neighbour; וְזֹאת הַתְּעוּדָה בְּיִשְׂרָאֵל, and this was the attestation in Israel.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תּוֹרָה",
+            "note": "Testimony and law together.",
+            "evidence": [
+              {
+                "ref": "Isa.8.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.8.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עוֹד",
+      "lang": "arc",
+      "pos": "adverb",
+      "gloss": "still, while yet",
+      "cognate_ids": [
+        "ar-ada",
+        "uga-d",
+        "phn-d",
+        "gez-adi"
+      ],
+      "summary": "Biblical Aramaic, once, as the Hebrew word.",
+      "senses": [
+        {
+          "gloss": "while … still",
+          "definition": "Of something still going on when another thing happens.",
+          "evidence": [
+            {
+              "ref": "Dan.4.28",
+              "role": "defining",
+              "note": "“עוֹד מִלְּתָא בְּפֻם מַלְכָּא, while the word was still in the king's mouth, a voice fell from heaven.”"
+            }
+          ],
+          "kin": [
+            "od-still"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עְיָדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "custom, manner",
+      "cognate_ids": [
+        "ar-ada-custom"
+      ],
+      "summary": "The Peshitta's word for ἔθος and συνήθεια: what is done again and again, as Arabic ʿāda “custom”, so called because one returns to it time after time.",
+      "senses": [
+        {
+          "id": "iyada-custom",
+          "gloss": "custom, regular practice",
+          "definition": "What a people or a person habitually does: the custom of the priesthood, of the Jews' burial, of Moses' law.",
+          "evidence": [
+            {
+              "ref": "Luk.1.9",
+              "role": "defining",
+              "note": "“According to the עְיָדָא (ἔθος) of the priesthood, his lot was to burn incense.”"
+            },
+            {
+              "ref": "Jhn.19.40",
+              "note": "“As the custom of the Jews is to bury.”",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.15.1",
+              "note": "“Unless you are circumcised after the custom of Moses, you cannot be saved.”"
+            },
+            {
+              "ref": "Act.6.14",
+              "note": "“Change the customs which Moses delivered to us.” Also Act 16:21; 21:21; 25:16."
+            },
+            {
+              "ref": "Jhn.18.39",
+              "note": "“You have a custom (συνήθεια) that I should release one to you at the Passover.” Also Luk 23:17."
+            },
+            {
+              "ref": "1Co.11.16",
+              "note": "“We have no such custom, nor the ecclesias of God.”"
+            },
+            {
+              "ref": "Heb.10.25",
+              "note": "“Not forsaking our assembling together, as is the custom of some.”"
+            },
+            {
+              "ref": "Luk.22.7",
+              "note": "“The day of unleavened bread, on which it was the custom (Greek ἔδει, “it was necessary”) to kill the Passover.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְעָד",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "accustomed, wont",
+      "cognate_ids": [
+        "ar-ada-custom"
+      ],
+      "summary": "In the Peshitta, “as he was wont”, for εἰώθει and κατὰ τὸ εἰωθός: what one does by habit.",
+      "senses": [
+        {
+          "gloss": "accustomed, wont (to do)",
+          "definition": "Used of what someone regularly does: Jesus going into the synagogue on the sabbath and out to the Mount of Olives, Paul reasoning in the synagogue.",
+          "evidence": [
+            {
+              "ref": "Luk.4.16",
+              "role": "defining",
+              "note": "He went into the synagogue on the sabbath day “as he was accustomed (κατὰ τὸ εἰωθός)”."
+            },
+            {
+              "ref": "Luk.22.39",
+              "role": "defining",
+              "note": "Jesus went out “as he was accustomed (κατὰ τὸ ἔθος)” to the Mount of Olives."
+            },
+            {
+              "ref": "Act.17.2",
+              "note": "Paul, “as his custom was”, reasoned with them three sabbaths from the scriptures."
+            },
+            {
+              "ref": "Mat.27.15",
+              "note": "At the feast the governor was wont to release a prisoner. Also Mrk 15:6, 8."
+            },
+            {
+              "ref": "Mrk.10.1",
+              "note": "“As he was wont, he taught them again.”"
+            },
+            {
+              "ref": "Luk.2.42",
+              "note": "They went up to Jerusalem “according to the custom of the feast”."
+            },
+            {
+              "ref": "Act.3.2",
+              "note": "The lame man, whom they were accustomed to lay daily at the temple gate."
+            }
+          ],
+          "kin": [
+            "iyada-custom"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ada",
+      "lang": "ar",
+      "form": "عَادَ، أَعَادَ",
+      "translit": "ʿāda; IV ʾaʿāda",
+      "gloss": "return, come back; (IV) restore, put back; do a second time, repeat",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Returning and doing again: the sense of עוֹד “again, still”, and in form IV “restore”, the polel's raising up. Form IV's “say a second time” is the nearest Arabic comes to the witness sense, but Arabic's word for witness is from another root.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2188, root عود, عَادَ إِلَيْهِ (n30928)",
+          "note": "“He, or it, returned to it.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2189, root عود, اعادهُ (n30931)",
+          "note": "“He returned it, or restored it, to its place … He did it a second time: he repeated it, or iterated it … namely, speech.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ada-custom",
+      "lang": "ar",
+      "form": "عَادَةٌ، عَوَّدَ",
+      "translit": "ʿāda; II ʿawwada",
+      "gloss": "custom, habit; (II) accustom",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Custom as what one returns to time after time: the Peshitta's ʿyādā and mʿād.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2191, root عود, عَادَةٌ (n30940)",
+          "note": "“A custom, manner, habit, or wont … so called because one returns to it time after time.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2189, root عود, عوّدهُ إِيَّاهُ (n30929)",
+          "note": "“He accustomed, or habituated, him to it.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-d",
+      "lang": "uga",
+      "form": "𐎓𐎄",
+      "translit": "ʿd",
+      "gloss": "still, yet (adv.)",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "In the Baal cycle, “the gods still ate and drank”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 195, §93 Glossary, ʿd adv. (KTU 1.4)",
+          "note": "“still, yet” (cf. H., Aram. ʿôd); illustrated in §65.11 “the gods still ate and drank”."
+        }
+      ]
+    },
+    {
+      "id": "phn-d",
+      "lang": "phn",
+      "form": "𐤏𐤃",
+      "translit": "ʿd",
+      "gloss": "in addition, moreover; again",
+      "relation": "cognate",
+      "note": "Phoenician (Eshmunazor, KAI 14) “in addition”, and Neo-Punic (KAI 153) “set it up again”: the Hebrew's “besides” and “again”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 360, ʿD II adv.",
+          "note": "“1. IN ADDITION, FURTHERMORE, MOREOVER (KAI 14.18/19) … 2. AGAIN (KAI 153.1/5)”, compared with Heb. ʿod."
+        }
+      ]
+    },
+    {
+      "id": "phn-dd",
+      "lang": "phn",
+      "form": "𐤏𐤃𐤃",
+      "translit": "ʿdd (polel)",
+      "gloss": "help up",
+      "relation": "cognate",
+      "note": "Neo-Punic, in a prayer: “support them, help them up, forgive them”; the same stem and sense as the polel of Psa 146:9; 147:6.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 359–360, ʿD I v. polel (Teboursouk, lines 1/4)",
+          "note": "“HELP UP”, compared with Heb. ʿ-d in polel."
+        }
+      ]
+    },
+    {
+      "id": "gez-adi",
+      "lang": "gez",
+      "form": "ዓዲ",
+      "translit": "ʿadi",
+      "gloss": "yet, still; again, once more; further, moreover",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ዓዲ (ʿadi), adv.",
+          "url": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%8B%B2",
+          "note": "“yet, still, even now; still, further, moreover; again, once more; in addition, else”."
+        }
+      ]
+    },
+    {
+      "id": "gez-wd",
+      "lang": "gez",
+      "form": "ዐወደ",
+      "translit": "ʿwd",
+      "gloss": "go (around)",
+      "relation": "possible",
+      "note": "Set with Hebrew עוּד under a Proto-Semitic *ʿwd “surround” in a working list; it would fit the piel of Psa 119:61. Not yet checked in a Geʿez dictionary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000661 ʿwd[surround]V → GEZ000875 ʿwd[go]V; HEB005348 ʿuwd[return]V"
+        }
+      ]
+    },
+    {
+      "id": "akk-adu",
+      "lang": "akk",
+      "form": "adû (pl. adê)",
+      "translit": "adû",
+      "gloss": "(treaty-)oath; treaty, its sworn stipulations",
+      "relation": "possible",
+      "note": "Neo-Assyrian and Neo-Babylonian only. The sense fits עֵדֹת/עֵדוּת as covenant stipulations set beside בְּרִית (Psa 132:12), but Akkadian a- does not show what first consonant stood behind it, and the word may itself be borrowed from Aramaic, so a tie to this root is argued, not shown.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tsae x000004190, adû [(treaty-)oath] N",
+          "url": "https://oracc.museum.upenn.edu/tsae/cbd/akk/x000004190.html",
+          "note": "Senses: “(treaty-)oath”, “treaty”; ×1415."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "one-god",
+      "statement": "Moses tells Israel they were shown what they saw “that you might know that Yahweh, he is God; אֵין עוֹד מִלְבַדּוֹ, there is none else besides him” (Deu 4:35, 39); Solomon prays that all the earth may know it (1Ki 8:60); and in Isaiah Yahweh says it of himself again and again: “I am Yahweh and there is none else; besides me there is no God” (Isa 45:5, 6, 18, 21, 22; 46:9; Jol 2:27). When Babylon says “I am, and none else besides me”, she takes his words, and is judged for it (Isa 47:8–11). The scribe answers Jesus in the same words, “there is one God, and there is no other but he”, and Jesus says he is not far from the kingdom of God (Mrk 12:32–34). Paul: “there is no God but one … to us there is one God, the Father, of whom are all things, and one Lord Jesus Christ” (1Co 8:4, 6); and the oath that follows “there is none else” in Isa 45:22–23, “to me every knee shall bow”, he applies to the confession that Jesus Christ is Lord, “to the glory of God the Father” (Rom 14:11; Php 2:10–11). From the verses: the God beside whom there is none else is the one the New Testament calls the Father, and the Lord Jesus is confessed to his glory.",
+      "evidence": [
+        {
+          "ref": "Deu.4.35",
+          "role": "defining"
+        },
+        {
+          "ref": "Deu.4.39"
+        },
+        {
+          "ref": "1Ki.8.60"
+        },
+        {
+          "ref": "Isa.45.5",
+          "role": "defining"
+        },
+        {
+          "ref": "Isa.45.21"
+        },
+        {
+          "ref": "Isa.45.22"
+        },
+        {
+          "ref": "Isa.46.9"
+        },
+        {
+          "ref": "Jol.2.27"
+        },
+        {
+          "ref": "Isa.47.8"
+        },
+        {
+          "ref": "Mrk.12.32",
+          "role": "defining"
+        },
+        {
+          "ref": "Mrk.12.34"
+        },
+        {
+          "ref": "1Co.8.6",
+          "role": "defining"
+        },
+        {
+          "ref": "1Co.8.4"
+        },
+        {
+          "ref": "Isa.45.23"
+        },
+        {
+          "ref": "Rom.14.11"
+        },
+        {
+          "ref": "Php.2.11"
+        }
+      ]
+    },
+    {
+      "topic": "two-or-three-witnesses",
+      "statement": "The law will not put a man to death, nor establish any charge, at the mouth of one עֵד, but only of two or three (Num 35:30; Deu 17:6; 19:15); a witness who knows and keeps silent bears his iniquity (Lev 5:1); and a false witness is to suffer what he plotted against his brother (Deu 19:16–19). Jesus applies the rule to a brother who sins (Mat 18:16), and appeals to it for his own testimony, his and his Father's (Jhn 8:17–18); Paul applies it to the ecclesia and its elders (2Co 13:1; 1Ti 5:19); Hebrews to the one who set aside Moses' law (Heb 10:28). At Jesus' trial many bore false witness and their testimonies did not agree (Mrk 14:56–59), as with the worthless men set against Naboth (1Ki 21:10, 13). From the verses: a matter stands on agreeing witnesses, and the rule God gave Israel still governs his people's judgments.",
+      "evidence": [
+        {
+          "ref": "Deu.19.15",
+          "role": "defining"
+        },
+        {
+          "ref": "Deu.17.6",
+          "role": "defining"
+        },
+        {
+          "ref": "Num.35.30"
+        },
+        {
+          "ref": "Lev.5.1"
+        },
+        {
+          "ref": "Deu.19.19"
+        },
+        {
+          "ref": "Mat.18.16",
+          "role": "defining"
+        },
+        {
+          "ref": "Jhn.8.17"
+        },
+        {
+          "ref": "Jhn.8.18"
+        },
+        {
+          "ref": "2Co.13.1"
+        },
+        {
+          "ref": "1Ti.5.19"
+        },
+        {
+          "ref": "Heb.10.28"
+        },
+        {
+          "ref": "Mrk.14.56"
+        },
+        {
+          "ref": "1Ki.21.13"
+        }
+      ]
+    },
+    {
+      "topic": "christ-the-faithful-witness",
+      "statement": "Yahweh swore to David that his seed would endure forever and his throne as the sun, “established forever as the moon, וְעֵד בַּשַּׁחַק נֶאֱמָן, and the witness in the sky is faithful” (Psa 89:36–38); in the same psalm he says of David's line, “I will make him firstborn, highest of the kings of the earth” (Psa 89:28). Isaiah, after “the sure mercies of David”, says “I have given him as a witness to the peoples, a leader and commander” (Isa 55:3–4), and Paul takes those sure mercies of David to be fulfilled in God raising Jesus from the dead (Act 13:34). Revelation names Jesus Christ in Psalm 89's three terms together: “the faithful witness, the firstborn from the dead, and the ruler of the kings of the earth” (Rev 1:5; also 3:14). From the verses: Jesus is the seed of David to whom that oath was sworn, raised from the dead to sit on David's throne forever.",
+      "evidence": [
+        {
+          "ref": "Psa.89.38",
+          "role": "defining"
+        },
+        {
+          "ref": "Psa.89.37"
+        },
+        {
+          "ref": "Psa.89.28",
+          "role": "defining"
+        },
+        {
+          "ref": "Isa.55.3"
+        },
+        {
+          "ref": "Isa.55.4",
+          "role": "defining"
+        },
+        {
+          "ref": "Act.13.34"
+        },
+        {
+          "ref": "Rev.1.5",
+          "role": "defining"
+        },
+        {
+          "ref": "Rev.3.14"
+        }
+      ]
+    },
+    {
+      "topic": "no-more",
+      "statement": "The prophets describe the age to come by what will be עוֹד, “any more”, no longer: nations will not learn war any more (Isa 2:4; Mic 4:3); the voice of weeping will be heard in Jerusalem no more (Isa 65:19–20); Yahweh will remember his people's sin no more (Jer 31:34); and he will “yet once” shake heaven and earth (Hag 2:6). Hebrews quotes Jer 31:34 of the new covenant made in Christ (Heb 8:12; 10:17), and expounds Hag 2:6: “this ‘yet once more’ signifies the removing of the things shaken … that the things not shaken may remain; therefore, receiving a kingdom that cannot be shaken…” (Heb 12:26–28). Revelation ends with “death shall be no more” (Rev 21:4). From the verses: the forgiveness of the new covenant is now, and the kingdom in which war and death are no more is still to come, when God shakes the present order once more.",
+      "evidence": [
+        {
+          "ref": "Isa.2.4",
+          "role": "defining"
+        },
+        {
+          "ref": "Mic.4.3"
+        },
+        {
+          "ref": "Isa.65.19"
+        },
+        {
+          "ref": "Jer.31.34",
+          "role": "defining"
+        },
+        {
+          "ref": "Heb.8.12"
+        },
+        {
+          "ref": "Heb.10.17"
+        },
+        {
+          "ref": "Hag.2.6",
+          "role": "defining"
+        },
+        {
+          "ref": "Heb.12.27",
+          "role": "defining"
+        },
+        {
+          "ref": "Heb.12.28"
+        },
+        {
+          "ref": "Rev.21.4"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "The dead “know nothing, and have no more (אֵין עוֹד) reward … nor any more a portion forever in anything done under the sun” (Ecc 9:5–6); he who goes down to the grave “returns no more to his house, nor does his place know him any more” (Job 7:9–10; Psa 103:16); the slain in the grave are those God “remembers no more” (Psa 88:6). So the psalmist praises God בְּעוֹדִי, “while I yet am”, for when a man's breath goes out “in that very day his thoughts perish” (Psa 146:2–4; 104:33), and Hezekiah says “the grave cannot praise you … the living, the living, he shall praise you” (Isa 38:18–19). Job says a tree cut down “will sprout again (עוֹד)”, but man lies down and does not rise “till the heavens are no more”, and asks “if a man dies, shall he live again?”, waiting for his change (Job 14:7, 12–14). From the verses: man has no being after death, and his hope of living again is not a continuing soul but God raising him.",
+      "evidence": [
+        {
+          "ref": "Ecc.9.5",
+          "role": "defining"
+        },
+        {
+          "ref": "Ecc.9.6"
+        },
+        {
+          "ref": "Job.7.10"
+        },
+        {
+          "ref": "Psa.103.16"
+        },
+        {
+          "ref": "Psa.88.6"
+        },
+        {
+          "ref": "Psa.146.2",
+          "role": "defining"
+        },
+        {
+          "ref": "Psa.146.4",
+          "role": "defining"
+        },
+        {
+          "ref": "Psa.104.33"
+        },
+        {
+          "ref": "Isa.38.18"
+        },
+        {
+          "ref": "Isa.38.19"
+        },
+        {
+          "ref": "Job.14.7"
+        },
+        {
+          "ref": "Job.14.12",
+          "role": "defining"
+        },
+        {
+          "ref": "Job.14.14"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (עֵדֻת, Num 10:11); neither Lev 23 nor Num 10 has another word of the root. Root key עוד as the database has it. BDB keys: p.bc.ab and xp.ad.aa list the same עוֹד tokens (xp.ad.aa is BDB's Aramaic article, filed by spelling over Hebrew tokens), so only p.bc.ab is named; the Aramaic עוֹד (Dan 4:28) has no key of its own. p.bc.aa and p.bc.af list the same verb tokens; p.bc.aa named. p.bc.ae and p.bc.ag list the same עֵדָה tokens; p.bc.ae named. Zero-token cross-references p.ao.ad, p.ao.ae, p.ap.ad, p.ar.ah, p.ar.aj, w.bh.ad left out. Counts that are off: p.bc.ad (עֵד) also counts לָעַד “forever” (e.g. Psa 19:10; 61:9; 111:3; 112:9; Isa 30:8; 64:8; Mic 7:18; Amo 1:11), which is עַד “perpetuity” (p.aq.ab, root עדה), and the hiphil infinitive הָעֵד (Gen 43:3; Exo 19:21; 1Sa 8:9; Jer 11:7); p.bc.ae (עֵדָה) also counts Psa 111:1 and Pro 5:14, which are עֵדָה “congregation” of יעד (yaad.json). The brief's verb 'no stem' token at Deu 19:18 is the noun. Left out: the name עֹדֵד Oded (p.bc.ac; 2Ch 15:1, 8; 28:9), not one of this task's names, for a name entry (BDB reads it “restorer”, the polel); גַּלְעֵד Galeed, a place. Peshitta: SEDRA root 1349 ܥܘܕ, lexemes 2265 ܥܝܕܐ (12 uses: Luk 1:9; 22:7; 23:17; Jhn 18:39; 19:40; Act 6:14; 15:1; 16:21; 21:21; 25:16; 1Co 11:16; Heb 10:25, found via the BFBS word list) and 2262 ܡܥܕ (Mat 27:15; Mrk 10:1; 15:6, 8; Luk 2:42; 4:16; 22:39; Act 17:2); 2264 “habituate” and 2263 “certain” have no New Testament uses. The Syriac lemma vocalisations (ʿyādā, mʿād) follow SEDRA's vocalised forms E;oD and MEoD; check against Payne Smith. Segert p. 195: the KTU column for ʿd (OCR “1.4:У1:55”) read from OCR only; check the scan. Krahmalkov pp. 359–360 read from the PDF text layer only. Not consulted: Old Aramaic ʿdy/ʿdn “treaty” (Sefire), the usual comparison for עֵדֹת as covenant stipulations (DEAPS); Dillmann or Leslau for Geʿez ʿadi and ʿwd; a fuller Ugaritic dictionary. Open questions: (1) whether the witness family (עֵד, הֵעִיד, עֵדוּת, עֵדָה, תְּעוּדָה) belongs with עוֹד at all: no cognate shows witness from ʿwd, and lexicon-support will count the root's cognates against them; (2) Psa 119:61 piel “surround” is uncertain; (3) Psa 60:1; 80:1 headings; (4) 2Ki 11:12 “the testimony” on the king."
+}
