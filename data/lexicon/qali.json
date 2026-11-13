@@ -1,0 +1,823 @@
+{
+  "id": "qali",
+  "root": "קלה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "food",
+    "grain",
+    "fire",
+    "offering",
+    "feasts",
+    "shame",
+    "honour"
+  ],
+  "gloss": "roast, parch; parched grain; be held light, dishonour; shame",
+  "summary": "The spelling קלה carries two groups of words. One is fire: קָלָה is to roast or parch, said of ears of new grain roasted for the firstfruits offering (Lev 2:14) and of men the king of Babylon roasted in the fire (Jer 29:22), and קָלִי is grain parched so, a ready food for soldiers and reapers, of which Israel might eat none from the new harvest until the firstfruits were brought (Lev 23:14). The other is lightness of esteem: the niphal is to be held light, set against being honoured (Isa 3:5; Pro 12:9), the hiphil to dishonour father or mother (Deu 27:16), and קָלוֹן is shame, the reverse of כָּבוֹד glory (Hos 4:7; Pro 3:35). Aramaic and Syriac carry both senses in the same consonants and Arabic qalā is both “fry” and “hate”; how the two meet is not known. קַלַּחַת “cauldron” is a third, with a ח of its own.",
+  "words": [
+    {
+      "lemma": "קָלוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "shame, dishonour, disgrace",
+      "bdb": [
+        "s.bo.ab"
+      ],
+      "cognate_ids": [
+        "arc-qeli-disgrace",
+        "syc-qelita-scorn",
+        "ar-qala-hate"
+      ],
+      "senses": [
+        {
+          "id": "qalon-shame",
+          "gloss": "shame, the reverse of glory",
+          "definition": "The state of being held light and despised, set over against כָּבוֹד, glory or honour: what the proud, the fool and the sinner come to, and what Yahweh brings on a people or a man in place of their glory.",
+          "kin": [
+            "niqlah-held-light"
+          ],
+          "evidence": [
+            {
+              "ref": "Hos.4.7",
+              "role": "defining",
+              "note": "“As they multiplied, so they sinned against me; their כָּבוֹד I will change into קָלוֹן.”"
+            },
+            {
+              "ref": "Pro.3.35",
+              "role": "defining",
+              "note": "The wise inherit כָּבוֹד, but fools carry away קָלוֹן."
+            },
+            {
+              "ref": "Hab.2.16",
+              "role": "defining",
+              "note": "“You are filled with קָלוֹן instead of כָּבוֹד”; the cup of Yahweh’s right hand brings disgrace upon his glory."
+            },
+            {
+              "ref": "Pro.11.2",
+              "note": "When pride comes, קָלוֹן comes; with the lowly is wisdom."
+            },
+            {
+              "ref": "Pro.13.18",
+              "note": "Poverty and קָלוֹן to him who refuses instruction; he who heeds reproof is honoured."
+            },
+            {
+              "ref": "Pro.18.3",
+              "note": "With the wicked comes contempt (בּוּז), and with קָלוֹן reproach (חֶרְפָּה)."
+            },
+            {
+              "ref": "Pro.6.33",
+              "note": "The adulterer finds a wound and קָלוֹן, and his reproach is not wiped away."
+            },
+            {
+              "ref": "Pro.9.7",
+              "note": "He who corrects a scoffer gets קָלוֹן for himself."
+            },
+            {
+              "ref": "Pro.22.10",
+              "note": "Drive out the scoffer, and strife and קָלוֹן cease."
+            },
+            {
+              "ref": "Pro.12.16",
+              "note": "The fool’s anger is known at once; the prudent covers קָלוֹן, an insult offered him."
+            },
+            {
+              "ref": "Psa.83.17",
+              "note": "“Fill their faces with קָלוֹן, that they may seek your name, Yahweh.”"
+            },
+            {
+              "ref": "Job.10.15",
+              "note": "Job, righteous or wicked, cannot lift his head: “full of קָלוֹן”."
+            },
+            {
+              "ref": "Isa.22.18",
+              "note": "Shebna, tossed into a far land, is the קְלוֹן of his lord’s house."
+            },
+            {
+              "ref": "Hos.4.18",
+              "note": "Ephraim’s rulers love קָלוֹן."
+            },
+            {
+              "ref": "Jer.46.12",
+              "note": "The nations hear of Egypt’s קָלוֹן at Carchemish, its mighty men fallen."
+            }
+          ]
+        },
+        {
+          "gloss": "shame of exposure, nakedness uncovered",
+          "definition": "The disgrace of being stripped before others: Yahweh lifts the skirts of an unfaithful city and nation so that its קָלוֹן is seen.",
+          "evidence": [
+            {
+              "ref": "Jer.13.26",
+              "role": "defining",
+              "note": "“I will lift your skirts over your face, and your קָלוֹן will be seen.”"
+            },
+            {
+              "ref": "Nam.3.5",
+              "role": "defining",
+              "note": "Nineveh: “I will show the nations your nakedness (מַעַר) and the kingdoms your קָלוֹן.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀτιμία",
+          "gloss": "dishonour, disgrace",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "קָלוֹן → ἀτιμία ×15 (lemma count, MACULA alignment); Hos.4.7, Pro.3.35, Hab.2.16"
+            },
+            {
+              "ref": "1Co.15.43",
+              "note": "The body is sown ἐν ἀτιμίᾳ and raised ἐν δόξῃ: the pair קָלוֹן and כָּבוֹד."
+            },
+            {
+              "ref": "2Co.6.8",
+              "note": "“By glory and ἀτιμία”."
+            },
+            {
+              "ref": "Rom.9.21",
+              "note": "One vessel to honour, another to ἀτιμία."
+            },
+            {
+              "ref": "2Ti.2.20"
+            },
+            {
+              "ref": "Rom.1.26"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "כָּבוֹד",
+            "note": "Glory, honour: קָלוֹן is what takes its place.",
+            "evidence": [
+              {
+                "ref": "Hos.4.7"
+              },
+              {
+                "ref": "Pro.3.35"
+              },
+              {
+                "ref": "Hab.2.16"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "חֶרְפָּה",
+            "note": "Reproach.",
+            "evidence": [
+              {
+                "ref": "Pro.6.33"
+              },
+              {
+                "ref": "Pro.18.3"
+              }
+            ]
+          },
+          {
+            "lemma": "בּוּז",
+            "note": "Contempt.",
+            "evidence": [
+              {
+                "ref": "Pro.18.3"
+              }
+            ]
+          },
+          {
+            "lemma": "מַעַר",
+            "note": "Nakedness, the exposed part.",
+            "evidence": [
+              {
+                "ref": "Nam.3.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָלָה",
+      "pos": "verb",
+      "gloss": "be held light, despised; dishonour",
+      "summary": "A verb of standing, not of fire: to be lightly esteemed, the reverse of being honoured. It overlaps in sense with קָלַל “be light”, and a Targum manuscript renders Deu 25:3 from either root.",
+      "bdb": [
+        "s.bo.aa"
+      ],
+      "cognate_ids": [
+        "arc-qeli-disgrace",
+        "syc-qelita-scorn",
+        "ar-qala-hate"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be held light, made contemptible",
+          "senses": [
+            {
+              "id": "niqlah-held-light",
+              "gloss": "be held light, lowly in esteem",
+              "definition": "To be of little account in others’ eyes, set over against the honoured; of a poor man, of a beaten brother, of the glory of a nation brought low.",
+              "kin": [
+                "qalon-shame"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.3.5",
+                  "role": "defining",
+                  "note": "In the overturned order the young rise against the old, and הַנִּקְלֶה against הַנִּכְבָּד, the honoured."
+                },
+                {
+                  "ref": "Pro.12.9",
+                  "role": "defining",
+                  "note": "Better to be נִקְלֶה and have a servant than to play the honoured man (מִתְכַּבֵּד) and lack bread."
+                },
+                {
+                  "ref": "1Sa.18.23",
+                  "role": "defining",
+                  "note": "David: “I am a poor man and נִקְלֶה”, unfit to be the king’s son-in-law."
+                },
+                {
+                  "ref": "Deu.25.3",
+                  "role": "defining",
+                  "note": "No more than forty stripes, lest your brother נִקְלָה in your eyes: beating beyond the limit degrades him."
+                },
+                {
+                  "ref": "2Co.11.24",
+                  "note": "Paul received forty stripes save one five times, the limit of Deu 25:3 kept."
+                },
+                {
+                  "ref": "Isa.16.14",
+                  "note": "Within three years “the glory of Moab וְנִקְלָה”, with all its great multitude."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "dishonour, treat with contempt",
+          "senses": [
+            {
+              "gloss": "treat as of no account, dishonour",
+              "definition": "To treat someone as light, the reverse of honouring them; said of a son toward his father or mother.",
+              "evidence": [
+                {
+                  "ref": "Deu.27.16",
+                  "role": "defining",
+                  "note": "“Cursed is מַקְלֶה his father or his mother”: the curse answering the command to honour (כַּבֵּד) them."
+                },
+                {
+                  "ref": "Exo.20.12",
+                  "note": "The command it answers: כַּבֵּד אֶת־אָבִיךָ וְאֶת־אִמֶּךָ."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀτιμάζω",
+          "gloss": "dishonour",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.16.14, נִקְלָה → ἀτιμασθήσεται; Pro.22.10, קָלוֹן → ἀτιμάζει"
+            },
+            {
+              "ref": "Jhn.8.49",
+              "note": "“I honour my Father, and you ἀτιμάζετε me.”"
+            },
+            {
+              "ref": "Rom.2.23"
+            },
+            {
+              "ref": "Jas.2.6"
+            }
+          ]
+        },
+        {
+          "lemma": "ἄτιμος",
+          "gloss": "without honour",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.3.5, הַנִּקְלֶה → ἄτιμος"
+            },
+            {
+              "ref": "Mat.13.57",
+              "note": "A prophet is not ἄτιμος except in his own country."
+            },
+            {
+              "ref": "1Co.4.10"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "נִכְבָּד",
+            "note": "The honoured man; with the hithpael מִתְכַּבֵּד, one who honours himself.",
+            "evidence": [
+              {
+                "ref": "Isa.3.5"
+              },
+              {
+                "ref": "Pro.12.9"
+              }
+            ]
+          },
+          {
+            "lemma": "כַּבֵּד",
+            "note": "To honour father and mother, whose reverse the hiphil curses.",
+            "evidence": [
+              {
+                "ref": "Deu.27.16"
+              },
+              {
+                "ref": "Exo.20.12"
+              },
+              {
+                "ref": "Deu.5.16"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "רָשׁ",
+            "note": "Poor.",
+            "evidence": [
+              {
+                "ref": "1Sa.18.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָלִי",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "parched grain",
+      "summary": "Grain roasted in the fire, eaten as it is without grinding or baking. Written קָלִיא once (1Sa 17:17).",
+      "bdb": [
+        "s.bn.ab",
+        "s.bq.ac"
+      ],
+      "cognate_ids": [
+        "ar-qala-fry",
+        "akk-qalu",
+        "arc-qela-roast",
+        "syc-qelita-roast",
+        "am-qola"
+      ],
+      "senses": [
+        {
+          "id": "qali-parched-grain",
+          "gloss": "parched grain, roasted ears",
+          "definition": "Ears or kernels of grain roasted in the fire: a food ready to eat, listed beside bread, flour and fresh grain, carried to soldiers in the field, handed to reapers at their meal, and one of the forms of the new harvest Israel might not eat until the firstfruits were offered.",
+          "kin": [
+            "qalah-roast"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.23.14",
+              "role": "defining",
+              "note": "“Bread and קָלִי and fresh grain (כַּרְמֶל) you shall not eat until this very day, until you have brought the offering of your God”: the new crop in every form, held back until the sheaf of firstfruits is waved."
+            },
+            {
+              "ref": "Rut.2.14",
+              "role": "defining",
+              "note": "At mealtime Boaz reached Ruth קָלִי; she ate, was satisfied and had some left."
+            },
+            {
+              "ref": "1Sa.17.17",
+              "role": "defining",
+              "note": "Jesse sends an ephah of קָלִיא and ten loaves to his sons in the camp."
+            },
+            {
+              "ref": "1Sa.25.18",
+              "note": "Abigail brings five seahs of קָלִי with bread, wine, sheep, raisins and figs."
+            },
+            {
+              "ref": "2Sa.17.28",
+              "note": "Brought to David at Mahanaim: wheat, barley, flour, קָלִי, beans, lentils and קָלִי again. The second follows the pulses and English versions render it “parched pulse”; the Hebrew says only קָלִי."
+            },
+            {
+              "ref": "Jos.5.11",
+              "note": "The same food, as the qal participle קָלוּי: Israel’s first meal of the land’s produce, “on that very day” (בְּעֶצֶם הַיּוֹם הַזֶּה), the phrase of Lev 23:14."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "לֶחֶם",
+            "note": "Bread, beside which it is listed as the other ready food of grain.",
+            "evidence": [
+              {
+                "ref": "Lev.23.14"
+              },
+              {
+                "ref": "1Sa.17.17"
+              },
+              {
+                "ref": "1Sa.25.18"
+              }
+            ]
+          },
+          {
+            "lemma": "כַּרְמֶל",
+            "note": "Fresh, full grain, not yet dried or ground.",
+            "evidence": [
+              {
+                "ref": "Lev.23.14"
+              },
+              {
+                "ref": "Lev.2.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קָלָה",
+      "pos": "verb",
+      "gloss": "roast, parch in fire",
+      "bdb": [
+        "s.bn.aa"
+      ],
+      "cognate_ids": [
+        "ar-qala-fry",
+        "akk-qalu",
+        "arc-qela-roast",
+        "syc-qelita-roast",
+        "am-qola"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "roast, parch",
+          "senses": [
+            {
+              "id": "qalah-roast",
+              "gloss": "roast, parch grain",
+              "definition": "To expose to fire so as to dry and cook: of ears of new grain, whose passive participle קָלוּי is roasted grain.",
+              "kin": [
+                "qali-parched-grain"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.2.14",
+                  "role": "defining",
+                  "note": "The grain offering of firstfruits: אָבִיב קָלוּי בָּאֵשׁ, green ears roasted in the fire, crushed fresh grain."
+                },
+                {
+                  "ref": "Jos.5.11",
+                  "role": "defining",
+                  "note": "On the morrow of the Passover Israel ate unleavened cakes and קָלוּי of the produce of the land."
+                }
+              ]
+            },
+            {
+              "gloss": "roast a man in fire",
+              "definition": "To burn a person to death in fire, as a punishment.",
+              "evidence": [
+                {
+                  "ref": "Jer.29.22",
+                  "role": "defining",
+                  "note": "“Yahweh make you like Zedekiah and Ahab, whom the king of Babylon קָלָם בָּאֵשׁ”, the two false prophets in Babylon."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be burning, inflamed (uncertain)",
+          "senses": [
+            {
+              "gloss": "burning, inflammation",
+              "definition": "The participle as a noun: something burning in the body. The one use may instead be the niphal of the verb “be held light” (“my loins are full of what is despised”); the parallel “no soundness in my flesh” favours a bodily burning.",
+              "evidence": [
+                {
+                  "ref": "Psa.38.8",
+                  "role": "defining",
+                  "note": "“My loins are full of נִקְלֶה, and there is no soundness in my flesh.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "קָלוּי בָּאֵשׁ",
+            "gloss": "roasted in the fire",
+            "evidence": [
+              {
+                "ref": "Lev.2.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קַלַּחַת",
+      "root": "קלח",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "cauldron, cooking pot",
+      "summary": "A pot for boiling flesh. Its ח is no letter of קלה, and Ugaritic qlḫt and Egyptian qrḥ.t “pot” put it with a word for a vessel that passed between Egypt and Canaan, not with “roast”; it is kept here because the spelling gathers it, and its tie to the root is not shown.",
+      "bdb": [
+        "s.bo.ac"
+      ],
+      "cognate_ids": [
+        "uga-qlht",
+        "egy-qrht"
+      ],
+      "senses": [
+        {
+          "gloss": "cauldron, pot for boiling flesh",
+          "definition": "One of the vessels in which sacrificial or common meat was boiled, named beside סִיר, דּוּד, כִּיּוֹר and פָּרוּר.",
+          "evidence": [
+            {
+              "ref": "1Sa.2.14",
+              "role": "defining",
+              "note": "Eli’s sons’ servant thrust his fork into the basin, kettle, קַלַּחַת or pot while the flesh was boiling, and took what it brought up."
+            },
+            {
+              "ref": "Mic.3.3",
+              "role": "defining",
+              "note": "Israel’s rulers chop up the people “as in the pot (סִיר), as flesh within the קַלַּחַת”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "סִיר",
+            "note": "Pot.",
+            "evidence": [
+              {
+                "ref": "Mic.3.3"
+              },
+              {
+                "ref": "1Sa.2.14"
+              }
+            ]
+          },
+          {
+            "lemma": "דּוּד",
+            "note": "Kettle.",
+            "evidence": [
+              {
+                "ref": "1Sa.2.14"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-qala-fry",
+      "lang": "ar",
+      "form": "قَلَا، قَلَى",
+      "translit": "qalā",
+      "gloss": "fry, roast (wheat, meat) in a pan; miqlā frying-pan",
+      "relation": "cognate",
+      "note": "Lane’s sources use it of parching wheat in a pan, as קָלִי is parched grain.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2993 (Supplement), root قلو and قلى, قَلَا (n42814); مِقْلًى (n42816)",
+          "note": "“He fried wheat; i. e. roasted it in a مَقْلَى [or frying-pan or roasting-pan]”; “He roasted in a frying-pan flesh-meat or anything”; قَلَى البُرَّ “he parched, or roasted, the wheat”."
+        }
+      ]
+    },
+    {
+      "id": "ar-qala-hate",
+      "lang": "ar",
+      "form": "قَلَى، قَلِيَ",
+      "translit": "qalā, qaliya",
+      "gloss": "hate, loathe; qilan hatred, abhorrence",
+      "relation": "possible",
+      "note": "The same consonants as “fry” carry “hate” in Arabic, as קלה carries both “roast” and “be held light” in Hebrew. Hating is not the same as holding light, so it is recorded as possible only.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic قلى (qalā), verb “to hate”; قلى (qilan), noun “hatred, abhorrence”; قلا (qalā) “to hate, to loathe, to detest”"
+        }
+      ]
+    },
+    {
+      "id": "akk-qalu",
+      "lang": "akk",
+      "form": "qalû; qalītu",
+      "translit": "qalû; qalītu",
+      "gloss": "roast, burn; qalītu parched grain, roasted barley",
+      "relation": "cognate",
+      "note": "Akkadian has both the verb and a noun for parched grain, the pair קָלָה and קָלִי.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000037200, qalû [roast] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000029730, qalītu [parched grain] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-qela-roast",
+      "lang": "arc",
+      "form": "קְלָא, קְלֵי; קָלִי, קוּלְיָא",
+      "translit": "qəlā; qālī, qulyā",
+      "gloss": "burn, roast; parched grain (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums use the verb in Lev 2:14, Jer 29:22 and 1Sa 30:3 (Ziklag burned), and the noun for קָלִי in Lev 23:14, Ruth 2:14 and 1Sa 17:17.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְלֵי II, קְלָא",
+          "note": "Targ. Jer. XXIX, 22; Targ. O. Num. XXI, 6; Targ. Lev. II, 14; Targ. I Sam. XXX, 3."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קָלִי II (S01321)",
+          "note": "Targ. Lev. XXIII, 14; Targ. Ruth II, 14; Targ. I Sam. XVII, 17."
+        }
+      ]
+    },
+    {
+      "id": "arc-qeli-disgrace",
+      "lang": "arc",
+      "form": "קְלֵי",
+      "translit": "qəlē",
+      "gloss": "be disgraced; aphel hold in light esteem, revile (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "Onkelos uses it in the two verses of the Hebrew verb: Deu 25:3 (some witnesses read קלל instead) and the aphel in Deu 27:16.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְלֵי (S01317)",
+          "note": "“to be disgraced. Targ. O. Deut. XXV, 3 … Af. to hold in light esteem, revile. Targ. O. Deut. XXVII, 16”."
+        }
+      ]
+    },
+    {
+      "id": "syc-qelita-roast",
+      "lang": "syc",
+      "form": "ܩܠܝܬܐ",
+      "translit": "qlītā",
+      "gloss": "roasting; anything roasted, especially roasted corn",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܩܠܝܬܐ, noun (etymology 2), root ܩ ܠ ܐ “related to frying”"
+        }
+      ]
+    },
+    {
+      "id": "syc-qelita-scorn",
+      "lang": "syc",
+      "form": "ܩܠܝܬܐ",
+      "translit": "qlītā",
+      "gloss": "slight, scorn, insult; outrage",
+      "relation": "cognate",
+      "note": "A homograph of the word for roasted corn, from the same consonants: Syriac, like Hebrew, has both senses in one root.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܩܠܝܬܐ, noun (etymology 1), root ܩ ܠ ܐ “related to scorning”"
+        }
+      ]
+    },
+    {
+      "id": "am-qola",
+      "lang": "sem",
+      "form": "ቆላ",
+      "translit": "ḳola",
+      "gloss": "parch, toast, roast (Amharic)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Amharic ቆላ (ḳola), verb"
+        }
+      ]
+    },
+    {
+      "id": "uga-qlht",
+      "lang": "uga",
+      "form": "𐎖𐎍𐎃𐎚",
+      "translit": "qlḫt",
+      "gloss": "cauldron",
+      "relation": "cognate",
+      "note": "The same word as קַלַּחַת, with ḫ as its third consonant (Hebrew ח): a root q-l-ḫ, not קלה.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎖𐎍𐎃𐎚 (qlḫt), noun"
+        }
+      ]
+    },
+    {
+      "id": "egy-qrht",
+      "lang": "egy",
+      "form": "qrḥ.t",
+      "translit": "qrḥt",
+      "gloss": "pot, pottery",
+      "relation": "loan",
+      "note": "Egyptian qrḥ.t “pot” answers to qlḫt and קַלַּחַת, Egyptian r standing for Semitic l. Which way it went is not settled: the Coptic dictionary marks the Coptic form ϭⲁⲗⲁϩⲧ “pot” (Sahidic) a Semitic loan word.",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla161890, qrḥ.t “pottery; pot” (Wb 5, 62.12–63.4)"
+        },
+        {
+          "source": "coptic-lexicon",
+          "locator": "C7690, ϭⲁⲗⲁϩⲧ (S) f. “pot”, “semitisches Lehnwort” (CD 813b–814a)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "firstfruits",
+      "statement": "Of the new harvest Israel might eat nothing, “bread, קָלִי or fresh grain”, until the day the sheaf of the firstfruits was waved before Yahweh on the morrow after the sabbath (Lev 23:10–14); the firstfruits’ own offering was green ears קָלוּי בָּאֵשׁ (Lev 2:14). Proverbs says to honour Yahweh with the firstfruits of all one’s increase (Pro 3:9). Paul names Christ, raised on the first day of the week, “the firstfruits of them that slept”, and then “they that are Christ’s at his coming” (1Co 15:20–23; Mat 28:1). From the verses: the harvest was Yahweh’s first and Israel’s after, and the firstfruits offered on that morrow stand for Christ’s resurrection, ahead of the harvest of his people at his return.",
+      "evidence": [
+        {
+          "ref": "Lev.23.10",
+          "to": "Lev.23.14"
+        },
+        {
+          "ref": "Lev.2.14"
+        },
+        {
+          "ref": "Pro.3.9"
+        },
+        {
+          "ref": "1Co.15.20",
+          "to": "1Co.15.23"
+        },
+        {
+          "ref": "Mat.28.1"
+        }
+      ]
+    },
+    {
+      "topic": "glory-and-shame",
+      "statement": "קָלוֹן is the reverse of כָּבוֹד: the wise inherit glory and fools carry away shame (Pro 3:35); Yahweh changes the glory of a people that sins into shame (Hos 4:7) and fills the proud with shame instead of glory (Hab 2:16); shame follows pride, and honour the one who heeds reproof (Pro 11:2; 13:18). To dishonour (מַקְלֶה) father or mother is under the curse (Deu 27:16), the reverse of the command to honour them (Exo 20:12), which Paul repeats as “the first commandment with promise” (Eph 6:2). Paul uses the Greek pair for the body in death and resurrection: “sown in dishonour, raised in glory” (1Co 15:42–43). From the verses: honour and shame are given by Yahweh according to a man’s ways, and the shame of the grave is turned to glory only in the resurrection.",
+      "evidence": [
+        {
+          "ref": "Pro.3.35"
+        },
+        {
+          "ref": "Hos.4.7"
+        },
+        {
+          "ref": "Hab.2.16"
+        },
+        {
+          "ref": "Pro.11.2"
+        },
+        {
+          "ref": "Pro.13.18"
+        },
+        {
+          "ref": "Deu.27.16"
+        },
+        {
+          "ref": "Exo.20.12"
+        },
+        {
+          "ref": "Eph.6.2"
+        },
+        {
+          "ref": "1Co.15.42",
+          "to": "1Co.15.43"
+        }
+      ]
+    }
+  ],
+  "note": "The corpus keys two BDB roots under קלה: s.bn (roast) and s.bo (be held light, with קָלוֹן and קַלַּחַת). Kept as one entry by spelling. No merged letter in קלה, so the cognates cannot show whether “roast” and “held light” were once two roots; Aramaic, Syriac and Arabic (“hate”) all carry both senses in the same consonants. The “held light” words overlap קלל (Akkadian qalālu “be light, despise, belittle”, Oracc armep x000015300); a קלל entry should cross-refer. Psa 38:8 נִקְלֶה is counted under both BDB keys; put under roast here. s.bq.ac (קָלִי(א), a cross-reference with no tokens) is named on קָלִי. קַלַּחַת (s.bo.ac) belongs by its cognates to q-l-ḥ; kept here with its own root, but a reviewer may move it to its own entry. Ge'ez qalawa “roast, fry” is a lead (Dillmann, Leslau) not yet checked by page. No Greek renderings for קָלִי or roast קָלָה reach the New Testament (πεφρυγμένα, ἄλφιτον, νέα). Jer 46:12: the Septuagint read קוֹלֵךְ “your voice” for קְלוֹנֵךְ."
+}
