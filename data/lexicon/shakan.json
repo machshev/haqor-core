@@ -1,0 +1,1812 @@
+{
+  "id": "shakan",
+  "root": "שכנ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "dwelling",
+    "presence-of-god",
+    "tabernacle",
+    "land",
+    "rest"
+  ],
+  "gloss": "settle, dwell, stay; dwelling, the Dwelling (tabernacle); neighbour",
+  "summary": "The verb is to settle and stay in a place: a people in its land, birds in a tree, and the cloud of Yahweh’s glory resting on Sinai and on the Dwelling, so that Israel camped while it stayed and set out when it lifted (Exo 24:16; 40:35; Num 9:17–22). So Yahweh says, “Let them make me a sanctuary, and I will dwell in their midst” (Exo 25:8), and the tent he dwells in is the מִשְׁכָּן, the Dwelling, carried through the wilderness (Num 10:11–21); later he chooses a place “to make his name dwell there” (Deu 12:11). A שָׁכֵן is one who dwells near, a neighbour. Arabic sakana is to be still and to dwell, its maskan a dwelling, and Akkadian šakānu is to set or place, with maškanu a place or tent.",
+  "words": [
+    {
+      "lemma": "שָׁכַן",
+      "pos": "verb",
+      "gloss": "settle, dwell, stay; (piel, hiphil) make dwell, set, place",
+      "bdb": [
+        "v.de.aa"
+      ],
+      "summary": "To come to rest in a place and remain there. It is used of people settling in a land, of animals and birds in their haunts, of the cloud and glory of Yahweh resting on the mountain and the Dwelling, and of Yahweh dwelling among his people and in Zion. Beside יָשַׁב “sit, dwell” it is often its parallel (Isa 13:20; 32:16; Jer 17:6; 50:39).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "settle, rest; dwell, stay",
+          "cognate_ids": [
+            "ar-sakana",
+            "arc-shekan"
+          ],
+          "senses": [
+            {
+              "id": "cloud-settles",
+              "gloss": "settle, rest upon (of the cloud and glory of Yahweh)",
+              "definition": "Of the cloud, and the glory of Yahweh in it, coming down onto a place and staying there for as long as it stays: on Sinai six days, on the Dwelling for days or a month, while Israel stayed camped.",
+              "evidence": [
+                {
+                  "ref": "Exo.24.16",
+                  "role": "defining",
+                  "note": "“The glory of Yahweh וַיִּשְׁכֹּן on Mount Sinai, and the cloud covered it six days.”"
+                },
+                {
+                  "ref": "Exo.40.35",
+                  "role": "defining",
+                  "note": "Moses could not enter the tent of meeting, “because the cloud שָׁכַן upon it, and the glory of Yahweh filled the מִשְׁכָּן”."
+                },
+                {
+                  "ref": "Num.9.17",
+                  "role": "defining",
+                  "note": "“In the place where the cloud יִשְׁכָּן, there the sons of Israel camped.”"
+                },
+                {
+                  "ref": "Num.9.18",
+                  "note": "All the days the cloud stayed on the Dwelling they remained camped."
+                },
+                {
+                  "ref": "Num.9.22",
+                  "role": "defining",
+                  "note": "Two days, a month or a year, “when the cloud prolonged upon the Dwelling לִשְׁכֹּן upon it”, they camped and did not set out: the verb is to stay, set against נָסַע “set out”."
+                },
+                {
+                  "ref": "Num.10.12",
+                  "note": "Israel set out from the wilderness of Sinai, “and the cloud וַיִּשְׁכֹּן in the wilderness of Paran”: it came to rest there."
+                },
+                {
+                  "ref": "Job.3.5",
+                  "note": "Job curses his day: “let a cloud תִּשְׁכָּן upon it.”"
+                },
+                {
+                  "ref": "1Ki.8.12",
+                  "note": "“Yahweh said that he would dwell (לִשְׁכֹּן) in the thick darkness”, the cloud that filled the house (1Ki 8:10–11). Also 2Ch 6:1."
+                }
+              ]
+            },
+            {
+              "id": "dwell-settle",
+              "gloss": "dwell, live, settle (of people in a place)",
+              "definition": "Of a man or a people, to have one’s settled home in a place, to live there; with לָבֶטַח or בֶּטַח, to live there safely, undisturbed.",
+              "evidence": [
+                {
+                  "ref": "Gen.26.2",
+                  "role": "defining",
+                  "note": "“Do not go down to Egypt; שְׁכֹן in the land that I tell you.”"
+                },
+                {
+                  "ref": "Gen.9.27",
+                  "note": "“Let him dwell in the tents of Shem.”"
+                },
+                {
+                  "ref": "Gen.14.13",
+                  "note": "Abram “was dwelling by the oaks of Mamre”."
+                },
+                {
+                  "ref": "Gen.25.18",
+                  "note": "Ishmael’s sons settled from Havilah to Shur."
+                },
+                {
+                  "ref": "Gen.35.22"
+                },
+                {
+                  "ref": "Gen.49.13",
+                  "note": "“Zebulun will dwell at the shore of the seas.”"
+                },
+                {
+                  "ref": "Num.23.9",
+                  "role": "defining",
+                  "note": "Balaam: “Behold, a people that dwells alone, and does not reckon itself among the nations.”"
+                },
+                {
+                  "ref": "Num.24.2",
+                  "note": "Balaam saw Israel “dwelling according to its tribes”."
+                },
+                {
+                  "ref": "Deu.33.28",
+                  "role": "defining",
+                  "note": "“Israel וַיִּשְׁכֹּן in safety, alone.”"
+                },
+                {
+                  "ref": "Jdg.5.17",
+                  "note": "Gilead stayed beyond the Jordan; Asher stayed by his harbours, while the others fought."
+                },
+                {
+                  "ref": "Jdg.8.11",
+                  "note": "The passive participle: “the way of הַשְּׁכוּנֵי בָאֳהָלִים”, those who lived in tents."
+                },
+                {
+                  "ref": "Isa.13.20",
+                  "role": "defining",
+                  "note": "Babylon “will not be inhabited (תֵשֵׁב) for ever, nor dwelt in (תִשְׁכֹּן) from generation to generation”: in parallel with יָשַׁב. Also Jer 50:39."
+                },
+                {
+                  "ref": "Jer.17.6",
+                  "note": "The man who trusts in man will dwell in the parched places of the wilderness."
+                },
+                {
+                  "ref": "Jer.23.6",
+                  "role": "defining",
+                  "note": "In the days of the righteous branch, “Judah will be saved and Israel will dwell in safety (יִשְׁכֹּן לָבֶטַח)”. Also Jer 33:16."
+                },
+                {
+                  "ref": "Jer.49.31",
+                  "note": "A nation at ease, which “dwells alone”, without gates or bars."
+                },
+                {
+                  "ref": "Mic.4.10",
+                  "note": "Zion will go out of the city “and dwell in the field”, and go to Babylon."
+                },
+                {
+                  "ref": "Psa.37.3",
+                  "role": "defining",
+                  "note": "“Trust in Yahweh and do good; שְׁכָן אֶרֶץ, dwell in the land, and feed on faithfulness.”"
+                },
+                {
+                  "ref": "Psa.37.29",
+                  "role": "defining",
+                  "note": "“The righteous will inherit the land and dwell upon it for ever.”"
+                },
+                {
+                  "ref": "Psa.120.5",
+                  "note": "“Woe is me, that I sojourn (גַּרְתִּי) in Meshech, that I dwell among the tents of Kedar.”"
+                },
+                {
+                  "ref": "Pro.1.33",
+                  "note": "“Whoever listens to me will dwell secure.”"
+                },
+                {
+                  "ref": "Pro.2.21",
+                  "note": "“The upright will dwell in the land.”"
+                },
+                {
+                  "ref": "Pro.10.30",
+                  "note": "“The wicked will not dwell in the land.”"
+                },
+                {
+                  "ref": "Job.30.6",
+                  "note": "Outcasts living in the gullies of the wadis, in holes of the dust."
+                }
+              ]
+            },
+            {
+              "id": "yahweh-dwells",
+              "gloss": "dwell (of Yahweh among his people, in Zion)",
+              "definition": "Of Yahweh, to make his abode among Israel: in the Dwelling in the midst of the camp, on Mount Zion and in Jerusalem, and in the house to come; and, from the height where he dwells, with the crushed and lowly in spirit.",
+              "evidence": [
+                {
+                  "ref": "Exo.25.8",
+                  "role": "defining",
+                  "note": "“Let them make me a sanctuary, וְשָׁכַנְתִּי בְּתוֹכָם, and I will dwell in their midst”: the reason for the מִשְׁכָּן."
+                },
+                {
+                  "ref": "Exo.29.45",
+                  "role": "defining",
+                  "note": "“I will dwell among the sons of Israel and will be their God.”"
+                },
+                {
+                  "ref": "Exo.29.46",
+                  "note": "“Who brought them out of the land of Egypt, to dwell (לְשָׁכְנִי) among them.”"
+                },
+                {
+                  "ref": "Num.5.3",
+                  "role": "defining",
+                  "note": "The unclean are put outside the camp “that they may not defile their camps, in the midst of which I dwell”."
+                },
+                {
+                  "ref": "Num.35.34",
+                  "role": "defining",
+                  "note": "“Do not defile the land … in the midst of which I dwell, for I, Yahweh, dwell in the midst of the sons of Israel.”"
+                },
+                {
+                  "ref": "Lev.16.16",
+                  "note": "The tent of meeting “that dwells with them in the midst of their uncleannesses”."
+                },
+                {
+                  "ref": "Deu.33.16",
+                  "note": "“The favour of שֹׁכְנִי סְנֶה, him who dwelt in the bush.”"
+                },
+                {
+                  "ref": "1Ki.6.13",
+                  "note": "To Solomon building the house: “I will dwell among the sons of Israel and will not forsake my people Israel.”"
+                },
+                {
+                  "ref": "Isa.8.18",
+                  "note": "“Yahweh of hosts, who dwells on Mount Zion.”"
+                },
+                {
+                  "ref": "Isa.33.5"
+                },
+                {
+                  "ref": "Isa.57.15",
+                  "role": "defining",
+                  "note": "“Thus says the high and lifted up one, שֹׁכֵן עַד, … ‘I dwell in the height and the holy place, and with him who is crushed and lowly of spirit.’”"
+                },
+                {
+                  "ref": "Ezk.43.7",
+                  "role": "defining",
+                  "note": "In the house to come: “the place of my throne … where I will dwell in the midst of the sons of Israel for ever.” Also Ezk 43:9."
+                },
+                {
+                  "ref": "Jol.4.17",
+                  "note": "“You will know that I am Yahweh your God, dwelling in Zion, my holy mountain.” Also Joel 4:21."
+                },
+                {
+                  "ref": "Zec.2.14",
+                  "role": "defining",
+                  "note": "“Sing and rejoice, daughter of Zion, for behold, I come, and I will dwell in your midst.”"
+                },
+                {
+                  "ref": "Zec.2.15",
+                  "note": "Many nations will join themselves to Yahweh and be his people, “and I will dwell in your midst”."
+                },
+                {
+                  "ref": "Zec.8.3",
+                  "note": "“I have returned to Zion and will dwell in the midst of Jerusalem.”"
+                },
+                {
+                  "ref": "Psa.68.17",
+                  "note": "The mountain God desired for his dwelling: “Yahweh will dwell there for ever.”"
+                },
+                {
+                  "ref": "Psa.68.19",
+                  "note": "“You ascended on high … that Yah God might dwell there.”"
+                },
+                {
+                  "ref": "Psa.74.2",
+                  "note": "“Mount Zion, where you have dwelt.”"
+                },
+                {
+                  "ref": "Psa.135.21",
+                  "note": "“Blessed be Yahweh from Zion, who dwells in Jerusalem.”"
+                },
+                {
+                  "ref": "1Ch.23.25",
+                  "note": "“Yahweh … has given rest to his people, and he dwells in Jerusalem for ever.”"
+                }
+              ]
+            },
+            {
+              "id": "creatures-lodge",
+              "gloss": "lodge, nest, haunt (of birds and beasts)",
+              "definition": "Of birds and beasts, to keep their home in a place: birds in the branches of a tree, owls and ravens in a ruin, the eagle on a crag.",
+              "evidence": [
+                {
+                  "ref": "Psa.104.12",
+                  "role": "defining",
+                  "note": "“Beside them the birds of the heavens dwell; from among the branches they sing.”"
+                },
+                {
+                  "ref": "Ezk.17.23",
+                  "role": "defining",
+                  "note": "The cedar Yahweh plants on the mountain of Israel: “under it will dwell every bird of every wing; in the shade of its branches they will dwell.”"
+                },
+                {
+                  "ref": "Ezk.31.13",
+                  "note": "On the ruin of the fallen cedar (Assyria) all the birds of the heavens dwell."
+                },
+                {
+                  "ref": "Isa.13.21",
+                  "note": "Ostriches will dwell in ruined Babylon."
+                },
+                {
+                  "ref": "Isa.34.11",
+                  "note": "The owl and the raven will dwell in Edom."
+                },
+                {
+                  "ref": "Job.39.28",
+                  "role": "defining",
+                  "note": "The eagle “dwells and lodges (יִשְׁכֹּן וְיִתְלֹנָן) on the rock”."
+                },
+                {
+                  "ref": "Job.37.8",
+                  "note": "The beast goes into its lair and stays in its dens."
+                },
+                {
+                  "ref": "Deu.33.20",
+                  "note": "Gad “dwells like a lioness”."
+                },
+                {
+                  "ref": "Jer.48.28",
+                  "note": "Moab is to dwell in the rock like a dove that nests in the sides of a gorge."
+                }
+              ],
+              "kin": [
+                "arc-birds-lodge",
+                "syc-birds-lodge"
+              ]
+            },
+            {
+              "gloss": "abide, remain (of things, and of the dead)",
+              "definition": "Figuratively, of a thing that stays where it is: justice in the wilderness, glory in the land, light in its place, feet in a house; and of the dead, who lie in the dust and in silence.",
+              "evidence": [
+                {
+                  "ref": "Isa.32.16",
+                  "role": "defining",
+                  "note": "“Justice will dwell (שָׁכַן) in the wilderness, and righteousness abide (תֵּשֵׁב) in the fruitful field.”"
+                },
+                {
+                  "ref": "Psa.85.10",
+                  "role": "defining",
+                  "note": "“His salvation is near to those who fear him, that glory may dwell in our land.”"
+                },
+                {
+                  "ref": "Job.38.19",
+                  "note": "“Where is the way to where light dwells?”"
+                },
+                {
+                  "ref": "Pro.8.12",
+                  "note": "“I, wisdom, dwell with prudence.”"
+                },
+                {
+                  "ref": "Pro.7.11",
+                  "note": "The adulteress: “her feet do not stay in her house.”"
+                },
+                {
+                  "ref": "Psa.16.9",
+                  "role": "defining",
+                  "note": "“My flesh also will dwell in safety (יִשְׁכֹּן לָבֶטַח), for you will not leave my soul to the grave” (Psa 16:10): the body at rest in the grave, safe until raised. Quoted of Christ’s resurrection in Act 2:26–31."
+                },
+                {
+                  "ref": "Psa.94.17",
+                  "role": "defining",
+                  "note": "“Unless Yahweh had been my help, my soul would soon have dwelt in silence (דּוּמָה)”: death is the place of silence."
+                },
+                {
+                  "ref": "Isa.26.19",
+                  "role": "defining",
+                  "note": "“Your dead will live … awake and sing, שֹׁכְנֵי עָפָר, dwellers in the dust!”: the dead are in the dust until they are raised."
+                },
+                {
+                  "ref": "Job.4.19",
+                  "note": "Men are “those who dwell in houses of clay, whose foundation is in the dust”."
+                },
+                {
+                  "ref": "Nam.3.18",
+                  "note": "“Your shepherds slumber, O king of Assyria; your nobles יִשְׁכְּנוּ”: lie still, at rest in death."
+                },
+                {
+                  "ref": "Psa.102.29",
+                  "note": "“The children of your servants will abide, and their seed be established before you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make dwell, settle; set (his name) to dwell",
+          "cognate_ids": [
+            "akk-shakanu",
+            "phn-shkn",
+            "arc-shekan"
+          ],
+          "senses": [
+            {
+              "id": "name-dwell",
+              "gloss": "make (his name) dwell",
+              "definition": "Of Yahweh choosing a place and setting his name to dwell there: the one place to which Israel brings its offerings and keeps its feasts.",
+              "evidence": [
+                {
+                  "ref": "Deu.12.11",
+                  "role": "defining",
+                  "note": "“The place that Yahweh your God will choose לְשַׁכֵּן שְׁמוֹ שָׁם, there you shall bring all that I command you.”"
+                },
+                {
+                  "ref": "Deu.14.23",
+                  "note": "The tithe eaten before Yahweh in that place."
+                },
+                {
+                  "ref": "Deu.16.2",
+                  "role": "defining",
+                  "note": "The Passover sacrificed in the place where he makes his name dwell. Also Deu 16:6."
+                },
+                {
+                  "ref": "Deu.16.11",
+                  "note": "Rejoicing at the feast of weeks in that place."
+                },
+                {
+                  "ref": "Deu.26.2",
+                  "note": "The firstfruits brought in a basket to that place."
+                },
+                {
+                  "ref": "Jer.7.12",
+                  "role": "defining",
+                  "note": "“Go to my place in Shiloh, where I made my name dwell at first, and see what I did to it for the evil of my people Israel.”"
+                },
+                {
+                  "ref": "Neh.1.9",
+                  "note": "Nehemiah recalls the promise to gather the scattered “to the place I have chosen to make my name dwell there”."
+                }
+              ],
+              "kin": [
+                "arc-name-dwell"
+              ]
+            },
+            {
+              "gloss": "settle (a people), set up (a tent)",
+              "definition": "Cause a people to dwell in a land; set up a dwelling in a place.",
+              "evidence": [
+                {
+                  "ref": "Num.14.30",
+                  "role": "defining",
+                  "note": "“The land where I swore to make you dwell (לְשַׁכֵּן אֶתְכֶם בָּהּ)”, except Caleb and Joshua."
+                },
+                {
+                  "ref": "Jer.7.3",
+                  "role": "defining",
+                  "note": "“Amend your ways, and I will make you dwell in this place.” Also Jer 7:7."
+                },
+                {
+                  "ref": "Psa.78.60",
+                  "note": "“He forsook the dwelling of Shiloh, the tent he had set up (שִׁכֵּן) among men.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "place, set; cause to dwell",
+          "cognate_ids": [
+            "akk-shakanu",
+            "phn-shkn"
+          ],
+          "senses": [
+            {
+              "gloss": "place, station, set up",
+              "definition": "Set something in a place to remain there.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.24",
+                  "role": "defining",
+                  "note": "“He drove out the man, and placed (וַיַּשְׁכֵּן) at the east of the garden of Eden the cherubim and the flaming sword … to guard the way of the tree of life.”"
+                },
+                {
+                  "ref": "Jos.18.1",
+                  "role": "defining",
+                  "note": "The congregation assembled at Shiloh “and set up (וַיַּשְׁכִּינוּ) the tent of meeting there”."
+                },
+                {
+                  "ref": "Psa.7.6",
+                  "note": "“Let him lay my glory in the dust.”"
+                }
+              ]
+            },
+            {
+              "gloss": "cause to dwell, let dwell",
+              "definition": "Give a place to dwell in, or allow something to dwell.",
+              "evidence": [
+                {
+                  "ref": "Psa.78.55",
+                  "role": "defining",
+                  "note": "“He drove out nations before them … and made the tribes of Israel dwell in their tents.”"
+                },
+                {
+                  "ref": "Ezk.32.4",
+                  "note": "“I will make all the birds of the heavens settle on you.”"
+                },
+                {
+                  "ref": "Job.11.14",
+                  "note": "“Do not let unrighteousness dwell in your tents.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָשַׁב",
+            "note": "“Sit, dwell”, its commonest parallel.",
+            "evidence": [
+              {
+                "ref": "Isa.13.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.32.16"
+              },
+              {
+                "ref": "Jer.17.6"
+              },
+              {
+                "ref": "Jer.50.39"
+              },
+              {
+                "ref": "Num.35.34"
+              }
+            ]
+          },
+          {
+            "lemma": "גּוּר",
+            "note": "“Sojourn”, beside it in the psalms of the tent and the holy mountain.",
+            "evidence": [
+              {
+                "ref": "Psa.15.1",
+                "role": "defining",
+                "note": "“Who may sojourn in your tent? Who may dwell on your holy mountain?”"
+              },
+              {
+                "ref": "Psa.120.5"
+              }
+            ]
+          },
+          {
+            "lemma": "יָרַשׁ",
+            "note": "“Possess, inherit”: to inherit the land and dwell in it.",
+            "evidence": [
+              {
+                "ref": "Psa.37.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.69.37"
+              },
+              {
+                "ref": "Isa.65.9"
+              },
+              {
+                "ref": "Isa.34.17"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "נָסַע",
+            "note": "“Set out, break camp”: Israel camped while the cloud stayed and set out when it lifted.",
+            "evidence": [
+              {
+                "ref": "Num.9.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.9.22"
+              },
+              {
+                "ref": "Num.10.12"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שָׁכַן לָבֶטַח",
+            "gloss": "dwell in safety",
+            "evidence": [
+              {
+                "ref": "Deu.33.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.33.28"
+              },
+              {
+                "ref": "Jer.23.6"
+              },
+              {
+                "ref": "Jer.33.16"
+              },
+              {
+                "ref": "Psa.16.9"
+              },
+              {
+                "ref": "Pro.1.33"
+              }
+            ]
+          },
+          {
+            "phrase": "וְשָׁכַנְתִּי בְּתוֹךְ",
+            "gloss": "and I will dwell in the midst of",
+            "evidence": [
+              {
+                "ref": "Exo.25.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.29.45"
+              },
+              {
+                "ref": "1Ki.6.13"
+              },
+              {
+                "ref": "Ezk.43.9"
+              },
+              {
+                "ref": "Zec.2.14"
+              },
+              {
+                "ref": "Zec.8.3"
+              }
+            ]
+          },
+          {
+            "phrase": "לְשַׁכֵּן שְׁמוֹ שָׁם",
+            "gloss": "to make his name dwell there",
+            "evidence": [
+              {
+                "ref": "Deu.12.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.16.2"
+              },
+              {
+                "ref": "Neh.1.9"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κατασκηνόω",
+          "gloss": "settle, lodge, dwell",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.16.9, יִשְׁכֹּן → κατασκηνώσει; Psa.104.12, Psa.15.1, Num.35.34, Ezk.43.7, Zec.2.14 the same"
+            },
+            {
+              "ref": "Act.2.26",
+              "role": "defining",
+              "note": "Peter quotes Psa 16:9: “my flesh also will κατασκηνώσει in hope”, of Christ’s body not seeing corruption (Act 2:31)."
+            },
+            {
+              "ref": "Mat.13.32",
+              "role": "defining",
+              "note": "The mustard tree: “the birds of the heaven come and κατασκηνοῦν in its branches”, the words of Ezk 17:23 and Dan 4:18."
+            },
+            {
+              "ref": "Mrk.4.32"
+            },
+            {
+              "ref": "Luk.13.19"
+            }
+          ]
+        },
+        {
+          "lemma": "κατοικέω",
+          "gloss": "dwell, inhabit",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.8.12, לִשְׁכֹּן → κατοικεῖν; Isa.57.15, שֹׁכֵן → κατοικῶν; Job.4.19 the same"
+            },
+            {
+              "ref": "Act.7.48",
+              "note": "“The Most High does not dwell in houses made with hands.”"
+            },
+            {
+              "ref": "Mat.23.21",
+              "note": "He who swears by the temple swears by it and by him who dwells in it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁכָּן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dwelling; the Dwelling (tabernacle)",
+      "bdb": [
+        "v.de.ad"
+      ],
+      "cognate_ids": [
+        "ar-sakana",
+        "akk-mashkanu",
+        "uga-mshknt"
+      ],
+      "summary": "The place where one dwells. Most of its uses (over a hundred, in Exodus, Leviticus, Numbers and Chronicles) are the Dwelling made for Yahweh in the wilderness, the curtained frame under its tent where his glory dwelt; elsewhere, chiefly in the plural, it is Yahweh’s dwelling in Zion and the dwellings or tents of men.",
+      "senses": [
+        {
+          "id": "the-dwelling",
+          "gloss": "the Dwelling (Yahweh’s tent-sanctuary)",
+          "definition": "The portable sanctuary made by Moses to the pattern shown him, in which Yahweh dwelt among Israel: strictly the frame and inner curtains, with the אֹהֶל of goats’ hair over it; carried by the Levites and set up at each camp.",
+          "evidence": [
+            {
+              "ref": "Exo.25.9",
+              "role": "defining",
+              "note": "After “let them make me a sanctuary, and I will dwell (וְשָׁכַנְתִּי) in their midst” (Exo 25:8): “according to all that I show you, the pattern of the מִשְׁכָּן”."
+            },
+            {
+              "ref": "Exo.26.1",
+              "role": "defining",
+              "note": "“The מִשְׁכָּן you shall make of ten curtains of fine twined linen … with cherubim.”"
+            },
+            {
+              "ref": "Exo.26.7",
+              "note": "“Curtains of goats’ hair for a tent (אֹהֶל) over the מִשְׁכָּן.”"
+            },
+            {
+              "ref": "Exo.38.21",
+              "note": "“The מִשְׁכָּן, the מִשְׁכַּן of the testimony.”"
+            },
+            {
+              "ref": "Exo.40.34",
+              "role": "defining",
+              "note": "“The cloud covered the tent of meeting, and the glory of Yahweh filled the מִשְׁכָּן.” Also Exo 40:35."
+            },
+            {
+              "ref": "Lev.15.31",
+              "note": "Uncleanness defiles “my מִשְׁכָּן that is in their midst”."
+            },
+            {
+              "ref": "Lev.17.4",
+              "note": "“Before the מִשְׁכַּן of Yahweh.”"
+            },
+            {
+              "ref": "Num.1.50",
+              "role": "defining",
+              "note": "The Levites over “the מִשְׁכַּן of the testimony”: they carry it, minister to it and camp around it."
+            },
+            {
+              "ref": "Num.1.51",
+              "note": "When it sets out the Levites take it down; when it camps they set it up."
+            },
+            {
+              "ref": "Num.9.15",
+              "role": "defining",
+              "note": "“On the day the מִשְׁכָּן was raised up the cloud covered the מִשְׁכָּן”, and at evening it was like fire until morning."
+            },
+            {
+              "ref": "Num.10.11",
+              "role": "defining",
+              "note": "In the second year, second month, twentieth day, “the cloud was taken up from over the מִשְׁכַּן of the testimony”."
+            },
+            {
+              "ref": "Num.10.17",
+              "role": "defining",
+              "note": "“The מִשְׁכָּן was taken down, and the sons of Gershon and Merari set out, carrying the מִשְׁכָּן.”"
+            },
+            {
+              "ref": "Num.10.21",
+              "note": "The Kohathites set out carrying the holy things, “and they set up the מִשְׁכָּן before they arrived”."
+            },
+            {
+              "ref": "Num.16.9",
+              "note": "The Levites separated “to do the service of the מִשְׁכַּן of Yahweh”."
+            },
+            {
+              "ref": "Jos.22.19",
+              "note": "“The land of Yahweh’s possession, where the מִשְׁכַּן of Yahweh dwells (שָׁכַן).”"
+            },
+            {
+              "ref": "2Sa.7.6",
+              "role": "defining",
+              "note": "“I have not dwelt in a house … but have been moving about in a tent and in a מִשְׁכָּן.” Also 1Ch 17:5."
+            },
+            {
+              "ref": "1Ch.21.29",
+              "note": "“The מִשְׁכַּן of Yahweh that Moses made in the wilderness” at Gibeon in David’s day."
+            },
+            {
+              "ref": "2Ch.29.6",
+              "note": "“Our fathers … turned away their faces from the מִשְׁכַּן of Yahweh.”"
+            }
+          ],
+          "kin": [
+            "syc-tabernacle"
+          ]
+        },
+        {
+          "id": "yahweh-dwelling",
+          "gloss": "dwelling (of Yahweh in Zion, and to come)",
+          "definition": "Yahweh’s dwelling place among his people more widely: the sanctuary in Zion, often in the plural, and the dwelling he promises to set among them for ever.",
+          "evidence": [
+            {
+              "ref": "Lev.26.11",
+              "role": "defining",
+              "note": "“I will set my מִשְׁכָּן in your midst, and my soul will not abhor you; I will walk among you and be your God” (Lev 26:11–12)."
+            },
+            {
+              "ref": "Ezk.37.27",
+              "role": "defining",
+              "note": "Under David the one shepherd: “my מִשְׁכָּן will be over them, and I will be their God and they will be my people.”"
+            },
+            {
+              "ref": "Psa.26.8",
+              "note": "“Yahweh, I love the habitation of your house, and the place of the מִשְׁכַּן of your glory.”"
+            },
+            {
+              "ref": "Psa.43.3",
+              "note": "“Let them bring me to your holy mountain and to your dwellings.”"
+            },
+            {
+              "ref": "Psa.46.5",
+              "note": "“The holy place of the dwellings of the Most High.”"
+            },
+            {
+              "ref": "Psa.74.7",
+              "note": "“They have profaned the מִשְׁכַּן of your name to the ground.”"
+            },
+            {
+              "ref": "Psa.84.2",
+              "role": "defining",
+              "note": "“How lovely are your dwellings, Yahweh of hosts!”"
+            },
+            {
+              "ref": "Psa.132.5",
+              "role": "defining",
+              "note": "David’s vow: “until I find a place for Yahweh, dwellings for the Mighty One of Jacob.” Stephen cites it (Act 7:46)."
+            },
+            {
+              "ref": "Psa.132.7",
+              "note": "“Let us go into his dwellings; let us worship at his footstool.”"
+            },
+            {
+              "ref": "Psa.78.60",
+              "note": "“He forsook the מִשְׁכַּן of Shiloh.”"
+            }
+          ],
+          "kin": [
+            "arc-god-dwelling",
+            "shekhen-dwelling"
+          ]
+        },
+        {
+          "gloss": "dwelling, tent, home (of men and beasts)",
+          "definition": "Any dwelling: a family’s tent, a people’s homes, the haunts of a wild animal; in parallel with אֹהֶל “tent” and בַּיִת “house”.",
+          "evidence": [
+            {
+              "ref": "Num.24.5",
+              "role": "defining",
+              "note": "“How good are your tents (אֹהָלֶיךָ), O Jacob, your dwellings (מִשְׁכְּנֹתֶיךָ), O Israel!”"
+            },
+            {
+              "ref": "Num.16.24",
+              "note": "“Get away from around the מִשְׁכַּן of Korah, Dathan and Abiram”: their tents (Num 16:27)."
+            },
+            {
+              "ref": "Isa.54.2",
+              "role": "defining",
+              "note": "“Enlarge the place of your tent, and let them stretch out the curtains of your dwellings.”"
+            },
+            {
+              "ref": "Isa.32.18",
+              "note": "“My people will dwell in a peaceful habitation, in secure dwellings.”"
+            },
+            {
+              "ref": "Jer.9.18",
+              "note": "“They have cast down our dwellings.”"
+            },
+            {
+              "ref": "Jer.30.18",
+              "note": "“I will restore the tents of Jacob and have compassion on his dwellings.”"
+            },
+            {
+              "ref": "Jer.51.30",
+              "note": "Babylon’s dwellings set on fire."
+            },
+            {
+              "ref": "Ezk.25.4",
+              "note": "The sons of the east will pitch their dwellings in Ammon."
+            },
+            {
+              "ref": "Hab.1.6",
+              "note": "The Chaldeans “to seize dwellings not their own”."
+            },
+            {
+              "ref": "Psa.78.28",
+              "note": "The quail fell around Israel’s dwellings in the camp."
+            },
+            {
+              "ref": "Psa.87.2",
+              "note": "“Yahweh loves the gates of Zion more than all the dwellings of Jacob.”"
+            },
+            {
+              "ref": "Sng.1.8",
+              "note": "“Beside the tents of the shepherds.”"
+            },
+            {
+              "ref": "Job.18.21",
+              "note": "“Such are the dwellings of the unrighteous.”"
+            },
+            {
+              "ref": "Job.21.28"
+            },
+            {
+              "ref": "Job.39.6",
+              "role": "defining",
+              "note": "The wild ass, “whose house (בֵּיתוֹ) I made the wilderness, and his dwellings the salt land”."
+            }
+          ]
+        },
+        {
+          "gloss": "dwelling of the dead, tomb",
+          "definition": "The tomb as a man’s lasting dwelling.",
+          "evidence": [
+            {
+              "ref": "Isa.22.16",
+              "role": "defining",
+              "note": "Shebna, “hewing a tomb (קִבְרוֹ) on high, carving a dwelling (מִשְׁכָּן) for himself in the rock”."
+            },
+            {
+              "ref": "Psa.49.12",
+              "note": "Of the rich who die: “their houses are for ever, their dwellings to all generations”, though they called lands by their own names."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֹהֶל",
+            "note": "“Tent”, the covering over the Dwelling and its constant pair.",
+            "evidence": [
+              {
+                "ref": "Num.24.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.54.2"
+              },
+              {
+                "ref": "Jer.30.18"
+              },
+              {
+                "ref": "2Sa.7.6"
+              },
+              {
+                "ref": "Exo.26.7"
+              }
+            ]
+          },
+          {
+            "lemma": "מִקְדָּשׁ",
+            "note": "“Sanctuary”: the holy place that is his dwelling.",
+            "evidence": [
+              {
+                "ref": "Psa.74.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.25.8"
+              },
+              {
+                "ref": "Num.10.21"
+              }
+            ]
+          },
+          {
+            "lemma": "בַּיִת",
+            "note": "“House”.",
+            "evidence": [
+              {
+                "ref": "Job.39.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.26.8"
+              },
+              {
+                "ref": "Psa.49.12"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִשְׁכַּן הָעֵדֻת",
+            "gloss": "the Dwelling of the testimony",
+            "evidence": [
+              {
+                "ref": "Exo.38.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.1.50"
+              },
+              {
+                "ref": "Num.10.11"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁכַּן יְהוָה",
+            "gloss": "the Dwelling of Yahweh",
+            "evidence": [
+              {
+                "ref": "Lev.17.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.16.9"
+              },
+              {
+                "ref": "Num.17.28"
+              },
+              {
+                "ref": "Jos.22.19"
+              },
+              {
+                "ref": "1Ch.16.39"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁכַּן אֹהֶל מוֹעֵד",
+            "gloss": "the Dwelling of the tent of meeting",
+            "evidence": [
+              {
+                "ref": "Exo.40.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.40.29"
+              },
+              {
+                "ref": "1Ch.6.17"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "σκηνή",
+          "gloss": "tent, tabernacle",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.25.9, מִשְׁכָּן → σκηνῆς; Exo.40.35, Num.10.11 the same; σκηνή renders מִשְׁכָּן ×86"
+            },
+            {
+              "ref": "Act.7.44",
+              "role": "defining",
+              "note": "“The σκηνή of the testimony was with our fathers in the wilderness, as he who spoke to Moses commanded him to make it according to the pattern he had seen”: מִשְׁכַּן הָעֵדֻת (Exo 38:21; 25:9)."
+            },
+            {
+              "ref": "Heb.8.5",
+              "role": "defining",
+              "note": "Moses, about to complete the σκηνή, is told to make all things by the pattern shown on the mountain (Exo 25:40): the copy and shadow of heavenly things."
+            },
+            {
+              "ref": "Heb.8.2",
+              "note": "“A minister of the holy things and of the true σκηνή, which the Lord pitched, not man.”"
+            },
+            {
+              "ref": "Heb.9.2",
+              "to": "Heb.9.3"
+            },
+            {
+              "ref": "Heb.9.11",
+              "note": "“The greater and more perfect σκηνή, not made with hands.”"
+            },
+            {
+              "ref": "Heb.9.21"
+            },
+            {
+              "ref": "Rev.15.5",
+              "note": "“The temple of the σκηνή of the testimony in heaven was opened.”"
+            },
+            {
+              "ref": "Rev.21.3",
+              "role": "defining",
+              "note": "“Behold, the σκηνή of God is with men, and he will dwell with them, and they will be his peoples”: the words of Lev 26:11–12 and Ezk 37:27."
+            }
+          ]
+        },
+        {
+          "lemma": "σκήνωμα",
+          "gloss": "dwelling, tent",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.132.5, מִשְׁכָּנוֹת → σκήνωμα; Psa.46.5, Psa.26.8 the same"
+            },
+            {
+              "ref": "Act.7.46",
+              "role": "defining",
+              "note": "David “asked to find a σκήνωμα for the God of Jacob”: Psa 132:5."
+            },
+            {
+              "ref": "2Pe.1.13",
+              "note": "Peter calls his body “this σκήνωμα”, soon to be put off (2Pe 1:14)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁכֵן",
+      "pos": "adjective",
+      "gloss": "neighbour; inhabitant",
+      "bdb": [
+        "v.de.ac"
+      ],
+      "cognate_ids": [
+        "ar-sakana"
+      ],
+      "summary": "One who dwells near, a neighbour, man or woman; once or twice simply a dweller, an inhabitant. The spelling שָׁכֵן is also the qal perfect of the verb, so some tokens filed here (Deu 33:12, 20; Jdg 5:17) are the verb.",
+      "senses": [
+        {
+          "gloss": "neighbour",
+          "definition": "One who lives near: the household next door, the neighbouring women, the peoples round about.",
+          "evidence": [
+            {
+              "ref": "Exo.12.4",
+              "role": "defining",
+              "note": "If the household is too small for a lamb, “he and his שָׁכֵן next to his house” shall take one."
+            },
+            {
+              "ref": "Exo.3.22",
+              "note": "Each woman shall ask of “her שְׁכֶנְתָּהּ and of her who sojourns in her house” articles of silver and gold."
+            },
+            {
+              "ref": "Rut.4.17",
+              "note": "“The neighbour women (הַשְּׁכֵנוֹת) gave him a name.”"
+            },
+            {
+              "ref": "Pro.27.10",
+              "role": "defining",
+              "note": "“Better a neighbour who is near than a brother far away.”"
+            },
+            {
+              "ref": "Jer.6.21",
+              "note": "“Neighbour and friend will perish.”"
+            },
+            {
+              "ref": "Psa.44.14",
+              "role": "defining",
+              "note": "“You make us a reproach to our neighbours, a scorn and derision to those around us (לִסְבִיבוֹתֵינוּ).” Also Psa 79:4."
+            },
+            {
+              "ref": "Psa.31.12"
+            },
+            {
+              "ref": "Psa.79.12"
+            },
+            {
+              "ref": "Psa.80.7"
+            },
+            {
+              "ref": "Psa.89.42"
+            },
+            {
+              "ref": "Deu.1.7",
+              "note": "The hill country of the Amorites “and all their neighbours” in the Arabah and the lowland."
+            },
+            {
+              "ref": "Jer.12.14",
+              "note": "“All my evil neighbours who touch the inheritance.”"
+            },
+            {
+              "ref": "Jer.49.18",
+              "note": "“The overthrow of Sodom and Gomorrah and their neighbours.” Also Jer 50:40."
+            },
+            {
+              "ref": "Jer.49.10"
+            },
+            {
+              "ref": "Ezk.16.26",
+              "note": "“The Egyptians, your neighbours.”"
+            }
+          ]
+        },
+        {
+          "gloss": "inhabitant, dweller",
+          "definition": "One who dwells in a place.",
+          "evidence": [
+            {
+              "ref": "Hos.10.5",
+              "role": "defining",
+              "note": "“The inhabitants (שְׁכַן) of Samaria fear for the calves of Beth-aven.”"
+            },
+            {
+              "ref": "Isa.33.24",
+              "role": "defining",
+              "note": "“No inhabitant will say, ‘I am sick’; the people who dwell (הַיֹּשֵׁב) there will be forgiven their iniquity.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "סְבִיבוֹת",
+            "note": "“Those round about”.",
+            "evidence": [
+              {
+                "ref": "Psa.44.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.79.4"
+              }
+            ]
+          },
+          {
+            "lemma": "רֵעַ",
+            "note": "“Friend, fellow”.",
+            "evidence": [
+              {
+                "ref": "Jer.6.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.27.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אָח רָחוֹק",
+            "note": "“A brother far away”, set against the neighbour who is near.",
+            "evidence": [
+              {
+                "ref": "Pro.27.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "γείτων",
+          "gloss": "neighbour",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Rut.4.17, הַשְּׁכֵנוֹת → γείτονες; Psa.44.14, Psa.79.4 → γείτοσιν"
+            },
+            {
+              "ref": "Luk.15.6",
+              "note": "The shepherd calls together his friends and neighbours. Also Luk 15:9."
+            },
+            {
+              "ref": "Luk.14.12"
+            },
+            {
+              "ref": "Jhn.9.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׁכֶן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dwelling (of Yahweh’s name)",
+      "bdb": [
+        "v.de.ab"
+      ],
+      "cognate_ids": [
+        "ar-sakana"
+      ],
+      "summary": "Found once, with suffix, of the place Yahweh will choose: “to his dwelling you shall seek”. The form could also be read as the infinitive of the verb; either way the sense is his dwelling there.",
+      "senses": [
+        {
+          "id": "shekhen-dwelling",
+          "gloss": "dwelling",
+          "definition": "The place where Yahweh’s name dwells, to which Israel is to go.",
+          "evidence": [
+            {
+              "ref": "Deu.12.5",
+              "role": "defining",
+              "note": "“The place that Yahweh your God will choose out of all your tribes to put his name there, לְשִׁכְנוֹ תִדְרְשׁוּ, to his dwelling you shall seek, and there you shall go.”"
+            }
+          ],
+          "kin": [
+            "name-dwell",
+            "yahweh-dwelling"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁכֵן",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "dwell, lodge; (pael) make dwell",
+      "bdb": [
+        "xv.ap.aa"
+      ],
+      "cognate_ids": [
+        "arc-shekan",
+        "ar-sakana"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "dwell, lodge (of birds)",
+          "senses": [
+            {
+              "id": "arc-birds-lodge",
+              "gloss": "lodge, nest",
+              "definition": "Of the birds in the branches of the great tree in Nebuchadnezzar’s dream.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.18",
+                  "role": "defining",
+                  "note": "“Under it the beasts of the field lived, and in its branches the birds of the heavens יִשְׁכְּנָן.”"
+                }
+              ],
+              "kin": [
+                "creatures-lodge"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "make (his name) dwell",
+          "senses": [
+            {
+              "id": "arc-name-dwell",
+              "gloss": "make (his name) dwell",
+              "definition": "Of God setting his name to dwell at the house in Jerusalem, in the words of Deuteronomy.",
+              "evidence": [
+                {
+                  "ref": "Ezr.6.12",
+                  "role": "defining",
+                  "note": "Darius’ decree: “May the God who has caused his name to dwell (שַׁכִּן) there overthrow any king or people” who would destroy the house."
+                }
+              ],
+              "kin": [
+                "name-dwell"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁכַּן",
+      "lang": "arc",
+      "root": "משכנ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dwelling",
+      "bdb": [
+        "xv.ap.ab"
+      ],
+      "cognate_ids": [
+        "ar-sakana",
+        "akk-mashkanu"
+      ],
+      "summary": "The Aramaic of the Hebrew מִשְׁכָּן, once, of the God of Israel’s dwelling in Jerusalem. The database keys it under its own consonants משכנ.",
+      "senses": [
+        {
+          "id": "arc-god-dwelling",
+          "gloss": "dwelling (of God)",
+          "definition": "The place where God dwells.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.15",
+              "role": "defining",
+              "note": "Artaxerxes’ gift “to the God of Israel, whose dwelling (מִשְׁכְּנֵהּ) is in Jerusalem”."
+            }
+          ],
+          "kin": [
+            "yahweh-dwelling"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשְׁכְּנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tabernacle, tent, dwelling (Peshitta)",
+      "cognate_ids": [
+        "ar-sakana",
+        "akk-mashkanu"
+      ],
+      "summary": "The Peshitta’s word for the tabernacle wherever the New Testament speaks of it (Greek σκηνή, σκήνωμα), and for the tents Abraham lived in.",
+      "senses": [
+        {
+          "id": "syc-tabernacle",
+          "gloss": "tabernacle; tent",
+          "definition": "The wilderness tabernacle and the true one it copied; the tent of David to be raised again; a tent as a dwelling.",
+          "evidence": [
+            {
+              "ref": "Act.7.44",
+              "role": "defining",
+              "note": "“The מַשְׁכְּנָא of the testimony was with our fathers in the wilderness.”"
+            },
+            {
+              "ref": "Act.7.46",
+              "role": "defining",
+              "note": "David asked to find a מַשְׁכְּנָא for the God of Jacob (Psa 132:5)."
+            },
+            {
+              "ref": "Act.7.43",
+              "note": "“You took up the מַשְׁכְּנָא of Moloch” (Amo 5:26)."
+            },
+            {
+              "ref": "Act.15.16",
+              "note": "“I will rebuild the מַשְׁכְּנָא of David which has fallen” (Amo 9:11)."
+            },
+            {
+              "ref": "Heb.8.2",
+              "role": "defining",
+              "note": "“The true מַשְׁכְּנָא, which God pitched, and not man.”"
+            },
+            {
+              "ref": "Heb.8.5"
+            },
+            {
+              "ref": "Heb.9.2",
+              "to": "Heb.9.3"
+            },
+            {
+              "ref": "Heb.9.6",
+              "to": "Heb.9.8"
+            },
+            {
+              "ref": "Heb.9.11"
+            },
+            {
+              "ref": "Heb.9.21"
+            },
+            {
+              "ref": "Heb.11.9",
+              "role": "defining",
+              "note": "Abraham sojourned in the land of promise “dwelling in tents (בְּמַשְׁכְּנֵא) with Isaac and Jacob”."
+            },
+            {
+              "ref": "Heb.13.10",
+              "note": "“Those who serve the מַשְׁכְּנָא have no right to eat” from our altar."
+            },
+            {
+              "ref": "Rev.15.5"
+            }
+          ],
+          "kin": [
+            "the-dwelling",
+            "yahweh-dwelling"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁכַן",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "dwell, lodge (Peshitta)",
+      "cognate_ids": [
+        "arc-shekan",
+        "ar-sakana"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "lodge, settle",
+          "senses": [
+            {
+              "id": "syc-birds-lodge",
+              "gloss": "lodge (of birds)",
+              "definition": "Of the birds of heaven settling in the shade of the grown mustard plant, in the words of Ezekiel’s cedar and Daniel’s tree.",
+              "evidence": [
+                {
+                  "ref": "Mrk.4.32",
+                  "role": "defining",
+                  "note": "It puts out great branches, “so that the birds of heaven can תֵּשְׁכַּן in its shade”."
+                }
+              ],
+              "kin": [
+                "creatures-lodge"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sakana",
+      "lang": "ar",
+      "form": "سَكَنَ، مَسْكَنٌ، سَاكِنٌ",
+      "translit": "sakana, maskan, sākin",
+      "gloss": "be still, at rest; dwell in, inhabit; a dwelling; an inhabitant",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Lane’s sources give the verb first as “it was, or became, still, motionless, stationary, in a state of rest … after motion”, and with an object (sakana d-dāra) “he inhabited, or dwelt or abode in, the house”: the same movement from coming to rest to dwelling as the Hebrew qal, where the cloud settles and stays (Num 9:17–22). Maskan is “a place of habitation … an abode, or a dwelling; a house, or a tent”, answering to מִשְׁכָּן; sākin is an inhabitant, and form III sākana “he lived in his neighbourhood, or near to him”, answering to שָׁכֵן “neighbour”. Arabic س (s), not ث (ṯ), stands behind ש.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1392, root سكن, سَكَنَ (n20250)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1393, ساكنهُ (n20252); p. 1394, سَاكِنٌ (n20274), مَسْكَنٌ (n20276)"
+        }
+      ]
+    },
+    {
+      "id": "akk-shakanu",
+      "lang": "akk",
+      "form": "šakānu",
+      "translit": "šakānu",
+      "gloss": "put, place, set; establish; settle; be located",
+      "relation": "cognate",
+      "note": "The commonest Akkadian verb for setting a thing in its place, also “establish”, “settle” and “be located”. It answers most nearly to the Hebrew hiphil and piel, “place, set up” (Gen 3:24; Jos 18:1) and “settle (a people)”, “make his name dwell”. Akkadian š does not show whether š or ṯ stands behind ש.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000010360, šakānu [put] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000010360.html"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000405 škn[place]V; AKK011437 šakānu[put]V, HEB007400 šakan[settle]V"
+        }
+      ]
+    },
+    {
+      "id": "akk-mashkanu",
+      "lang": "akk",
+      "form": "maškanu",
+      "translit": "maškanu",
+      "gloss": "place, site; tent; settlement",
+      "relation": "cognate",
+      "note": "The place-noun of šakānu, of the same pattern as מִשְׁכָּן: “place, location, site”, and in Neo-Assyrian texts “tent”; also a threshing floor, and a pledge (a thing deposited).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004840, maškanu [place of putting] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000004840.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000047580, maškanu [tent] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000047580.html"
+        }
+      ]
+    },
+    {
+      "id": "uga-mshknt",
+      "lang": "uga",
+      "form": "𐎎𐎌𐎋𐎐𐎚",
+      "translit": "mšknt",
+      "gloss": "dwelling, abode",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Ugaritic keeps š and ṯ apart, and writes this word with š, as Arabic does with s. It is the same noun as מִשְׁכָּן (feminine plural form).",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎎𐎌𐎋𐎐𐎚 (mšknt), noun",
+          "note": "“dwelling, dwelling-place, abode, residence”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000405 škn[place]V; UGC004012 škn[be]V"
+        }
+      ]
+    },
+    {
+      "id": "phn-shkn",
+      "lang": "phn",
+      "form": "škn",
+      "translit": "škn",
+      "gloss": "place, set",
+      "relation": "cognate",
+      "note": "Punic škn, listed with the meaning “place”, as Akkadian šakānu; not yet checked in a Phoenician-Punic dictionary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000405 škn[place]V; PUN001946 škn[place]V"
+        }
+      ]
+    },
+    {
+      "id": "arc-shekan",
+      "lang": "arc",
+      "form": "שְׁכַן، שְׁכֵין",
+      "translit": "šəḵan",
+      "gloss": "dwell, rest, nest; (pael) cause to dwell",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, of birds nesting (Targ. Ps 104:12, for Hebrew יִשְׁכּוֹן) and of a thing coming to rest; the pael “cause to dwell”. Aramaic does not show whether š or ṯ stands behind ש here (Aramaic ṯ would usually appear as ת).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁכַן, שְׁכֵין",
+          "note": "“to dwell, sit, nest”; Targ. Ps. 104:12; Pa. “to cause to dwell”, Targ. Cant. 3:10."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "god-dwelling-with-his-people",
+      "statement": "Yahweh tells Moses, “Let them make me a sanctuary, and I will dwell in their midst” (Exo 25:8), and promises, “I will dwell among the sons of Israel and will be their God” (Exo 29:45–46). When the Dwelling was raised the cloud settled on it and his glory filled it (Exo 40:34–35). His dwelling there is not careless of what is near it: the unclean are put out of the camp “in the midst of which I dwell” (Num 5:3; 35:34; Lev 15:31), and when Israel did evil he forsook his dwelling at Shiloh (Psa 78:60; Jer 7:12). The prophets promise it again: “I will set my מִשְׁכָּן in your midst … and I will walk among you and be your God, and you shall be my people” (Lev 26:11–12); “my מִשְׁכָּן will be over them” under David the one shepherd (Ezk 37:24–27); “I come, and I will dwell in your midst”, with many nations joined to Yahweh (Zec 2:14–15); and the house where he will dwell among Israel for ever (Ezk 43:7). John writes that the word became flesh “and ἐσκήνωσεν among us, and we beheld his glory” (Jhn 1:14), Paul applies Lev 26:12 to the believers as God’s temple (2Co 6:16), and John hears at the end, “Behold, the σκηνή of God is with men, and he will dwell with them, and they will be his peoples” (Rev 21:3). From the verses: God’s purpose from the wilderness on has been to dwell with a people made fit for him; the tent and its glory were its pattern, Jesus in whom the glory was seen is its centre, and it is complete when the promise of Lev 26 and Ezk 37 is fulfilled on the earth.",
+      "evidence": [
+        {
+          "ref": "Exo.25.8"
+        },
+        {
+          "ref": "Exo.29.45",
+          "to": "Exo.29.46"
+        },
+        {
+          "ref": "Exo.40.34",
+          "to": "Exo.40.35"
+        },
+        {
+          "ref": "Num.5.3"
+        },
+        {
+          "ref": "Num.35.34"
+        },
+        {
+          "ref": "Lev.15.31"
+        },
+        {
+          "ref": "Psa.78.60"
+        },
+        {
+          "ref": "Jer.7.12"
+        },
+        {
+          "ref": "Lev.26.11",
+          "to": "Lev.26.12"
+        },
+        {
+          "ref": "Ezk.37.24",
+          "to": "Ezk.37.27"
+        },
+        {
+          "ref": "Zec.2.14",
+          "to": "Zec.2.15"
+        },
+        {
+          "ref": "Ezk.43.7"
+        },
+        {
+          "ref": "Jhn.1.14"
+        },
+        {
+          "ref": "2Co.6.16"
+        },
+        {
+          "ref": "Rev.21.3"
+        }
+      ]
+    },
+    {
+      "topic": "the-true-tabernacle",
+      "statement": "Moses was to make the מִשְׁכָּן and all its vessels “according to the pattern” shown him on the mountain (Exo 25:9, 40). Hebrews quotes that command and calls the earthly tent a copy and shadow of heavenly things (Heb 8:5), and speaks of “the true tabernacle which the Lord pitched, and not man” (Heb 8:2), “the greater and more perfect tabernacle, not made with hands, that is, not of this creation”, through which Christ came as high priest (Heb 9:11); the way into the holy place is opened “through the veil, that is, his flesh” (Heb 10:20). Jesus spoke of “the temple of his body” (Jhn 2:19–21). From the verses: the Dwelling was a pattern of God’s dwelling in a man of God’s own making, his Son, whose flesh is the veil through which his people now come near.",
+      "evidence": [
+        {
+          "ref": "Exo.25.9"
+        },
+        {
+          "ref": "Exo.25.40"
+        },
+        {
+          "ref": "Heb.8.2"
+        },
+        {
+          "ref": "Heb.8.5"
+        },
+        {
+          "ref": "Heb.9.11"
+        },
+        {
+          "ref": "Heb.10.20"
+        },
+        {
+          "ref": "Jhn.2.19",
+          "to": "Jhn.2.21"
+        }
+      ]
+    },
+    {
+      "topic": "his-name-dwells",
+      "statement": "Israel was not to worship wherever it chose, but at “the place that Yahweh your God will choose to make his name dwell there”: there the offerings, tithes, Passover, feasts and firstfruits were brought (Deu 12:5, 11; 14:23; 16:2, 6, 11; 26:2). Solomon confesses that heaven and the heaven of heavens cannot contain God, yet asks that his eyes be open toward the house of which he said, “My name shall be there” (1Ki 8:27–29), and Isaiah hears the one who dwells in the height say that he dwells also “with him who is crushed and lowly in spirit” (Isa 57:15). Shiloh, where he first made his name dwell, was laid waste for Israel’s evil (Jer 7:12–14). From the verses: Yahweh dwells in heaven, and dwells among men where he sets his name; his name’s dwelling is a gift bound to the people’s faithfulness, not a guarantee to a building.",
+      "evidence": [
+        {
+          "ref": "Deu.12.5"
+        },
+        {
+          "ref": "Deu.12.11"
+        },
+        {
+          "ref": "Deu.14.23"
+        },
+        {
+          "ref": "Deu.16.2"
+        },
+        {
+          "ref": "Deu.16.6"
+        },
+        {
+          "ref": "Deu.16.11"
+        },
+        {
+          "ref": "Deu.26.2"
+        },
+        {
+          "ref": "1Ki.8.27",
+          "to": "1Ki.8.29"
+        },
+        {
+          "ref": "Isa.57.15"
+        },
+        {
+          "ref": "Jer.7.12",
+          "to": "Jer.7.14"
+        }
+      ]
+    },
+    {
+      "topic": "dwelling-in-the-land",
+      "statement": "Psalm 37 promises that those who trust in Yahweh will “dwell in the land” (Psa 37:3), that “the righteous will inherit the land and dwell upon it for ever” (Psa 37:29; also 37:27), and that “the meek will inherit the land” (Psa 37:11); the upright will dwell in the land and the wicked will not (Pro 2:21–22; 10:30). Yahweh’s chosen “will possess it, and my servants will dwell there” (Isa 65:9; Psa 69:36–37). Jesus repeats Psa 37:11: “Blessed are the meek, for they shall inherit the earth” (Mat 5:5). From the verses: the inheritance promised to the righteous is a settled dwelling on the earth, not elsewhere.",
+      "evidence": [
+        {
+          "ref": "Psa.37.3"
+        },
+        {
+          "ref": "Psa.37.11"
+        },
+        {
+          "ref": "Psa.37.27"
+        },
+        {
+          "ref": "Psa.37.29"
+        },
+        {
+          "ref": "Pro.2.21",
+          "to": "Pro.2.22"
+        },
+        {
+          "ref": "Pro.10.30"
+        },
+        {
+          "ref": "Isa.65.9"
+        },
+        {
+          "ref": "Psa.69.36",
+          "to": "Psa.69.37"
+        },
+        {
+          "ref": "Mat.5.5"
+        }
+      ]
+    },
+    {
+      "topic": "flesh-rests-in-hope",
+      "statement": "The dead are “dwellers in the dust”, who will awake and sing when Yahweh’s dead live again (Isa 26:19); without Yahweh’s help the psalmist’s soul “would have dwelt in silence” (Psa 94:17). David writes, “my flesh also will dwell in safety, for you will not leave my soul to the grave, nor let your holy one see corruption” (Psa 16:9–10). Peter quotes it, “my flesh will rest (κατασκηνώσει) in hope”, and says that David, who died and was buried, spoke as a prophet of the resurrection of Christ, whose flesh did not see corruption (Act 2:26–31). From the verses: the dead lie in the dust and in silence, and their hope is not a life elsewhere in the meantime but resurrection, first shown in Christ.",
+      "evidence": [
+        {
+          "ref": "Isa.26.19"
+        },
+        {
+          "ref": "Psa.94.17"
+        },
+        {
+          "ref": "Psa.16.9",
+          "to": "Psa.16.10"
+        },
+        {
+          "ref": "Act.2.26",
+          "to": "Act.2.31"
+        }
+      ]
+    }
+  ],
+  "note": "Root key שכנ as the database has it. Left out: the name שְׁכַנְיָה(וּ) Shecaniah (v.de.ae, 10 tokens), which belongs in names/ but was not assigned in this pass. BDB’s cross-reference keys m.du.af (מִשְׁכָּן, “see שׁכן”) and xm.am.ae (Aramaic מִשְׁכַּן, “see שׁכן”) carry no tokens and are not claimed; the Aramaic noun’s one token (Ezr 7:15) is filed under xv.ap.ab, whose root the database keys as משכנ. Two tokens carry no key and so are not counted: the ketiv שכנכי (2Ki 4:3, “your neighbours”) and שכנתי (Jer 51:13, “you who dwell”). Tokens of שָׁכֵן filed under v.de.ac at Deu 33:12, 20 and Jdg 5:17 are the qal perfect of the verb. Greek σκηνή/σκηνόω (Jhn 1:14; Rev 21:3) are native Greek words and are not loans from שכן, despite the likeness of sound; recorded only as renderings. Leads not yet followed: the phrase “set the name” (šuma šakānu) in Akkadian as a parallel to לְשַׁכֵּן שְׁמוֹ, to be checked in CAD Š/1 s.v. šakānu; Punic škn in Krahmalkov 2000; Ugaritic mšknt in its texts (with ʾahl, “tent”, as Num 24:5), to be cited from a Ugaritic dictionary; the Ge’ez reflex if any. The later Hebrew שְׁכִינָה is not a biblical word. Judgment calls for review: the doctrine points on the true tabernacle (Christ’s body) and on the dead in the dust (Psa 16:9; Isa 26:19)."
+}
