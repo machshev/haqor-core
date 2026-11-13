@@ -1,0 +1,1623 @@
+{
+  "id": "yarad",
+  "root": "ירד",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "movement",
+    "death",
+    "grave",
+    "theophany",
+    "humbling",
+    "journey"
+  ],
+  "gloss": "go down, come down, descend; (hiphil) bring down, take down",
+  "summary": "יָרַד is to move from higher to lower: down a mountain, down to a spring or river, down from the hill country to Egypt, down to battle, and of rain, dew, manna, fire, tears and streams coming down (Exo 19:14; Gen 24:16; 12:10; Num 11:9). Yahweh “comes down” when he acts on earth, to see Babel, to deliver Israel, on Sinai in fire and cloud (Gen 11:5; Exo 3:8; 19:20), and men “go down” to the grave, the pit and the dust, where the dead do not praise him (Psa 115:17; Isa 38:18), from which only he “brings up” (1Sa 2:6). The hiphil brings, lowers or takes down, as the Levites took down the Dwelling when the camp set out (Num 1:51; 10:17), and brings the proud down from their height (Oba 1:4). The same verb, with older w, is “go down” in Akkadian, Ugaritic, Phoenician and Sabaic.",
+  "words": [
+    {
+      "lemma": "יָרַד",
+      "pos": "verb",
+      "gloss": "go down, come down, descend; bring down, take down, lower (hiphil); be brought down (hophal)",
+      "summary": "About 380 times. A verb whose first letter was once w (Akkadian warādu, Arabic warada), so that the imperative is רֵד, the infinitive רֶדֶת and the hiphil הוֹרִיד; its opposite is עָלָה “go up”.",
+      "bdb": [
+        "j.dh.aa"
+      ],
+      "cognate_ids": [
+        "akk-waradu",
+        "uga-yrd",
+        "phn-yrd",
+        "sab-wrd"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "go down, come down, descend; go down to a land, to water, to battle, to the grave; come down (of rain, fire, tears, a border); be brought low",
+          "senses": [
+            {
+              "id": "yarad-descend",
+              "gloss": "go down, come down, descend",
+              "definition": "Move from a higher place to a lower: down a mountain, from an altar, from a beast one rides, from a roof; set against going up (עָלָה).",
+              "evidence": [
+                {
+                  "ref": "Exo.19.14",
+                  "role": "defining",
+                  "note": "Moses went down from the mountain to the people."
+                },
+                {
+                  "ref": "Exo.34.29",
+                  "role": "defining",
+                  "note": "Moses came down from mount Sinai with the two tablets, and as he came down from the mountain he did not know his face shone."
+                },
+                {
+                  "ref": "Gen.28.12",
+                  "role": "defining",
+                  "note": "A ladder set on the earth reaching to heaven, and the angels of God going up (עֹלִים) and going down (יֹרְדִים) on it. Quoted at Jhn 1:51."
+                },
+                {
+                  "ref": "Pro.30.4",
+                  "role": "defining",
+                  "note": "“Who has gone up to heaven and come down?”: going up and coming down as the two directions."
+                },
+                {
+                  "ref": "Psa.104.8",
+                  "note": "The mountains rose, the valleys went down, to the place Yahweh founded for them."
+                },
+                {
+                  "ref": "Lev.9.22",
+                  "note": "Aaron came down from offering the sin offering, the burnt offering and the peace offerings: down from the altar."
+                },
+                {
+                  "ref": "1Sa.25.20",
+                  "note": "Abigail riding down under cover of the mountain, and David and his men coming down toward her."
+                },
+                {
+                  "ref": "1Sa.25.23",
+                  "note": "She hurried and came down from the donkey."
+                },
+                {
+                  "ref": "Exo.32.1",
+                  "note": "Moses delayed to come down from the mountain."
+                },
+                {
+                  "ref": "Jdg.7.10",
+                  "to": "Jdg.7.11",
+                  "note": "Gideon goes down with Purah to the edge of the camp below him in the valley."
+                },
+                {
+                  "ref": "Jhn.1.51",
+                  "note": "“You will see heaven opened and the angels of God going up and going down on the Son of man”: Gen 28:12."
+                }
+              ],
+              "kin": [
+                "morad-descent"
+              ]
+            },
+            {
+              "id": "yarad-to-a-land",
+              "gloss": "go down to a land or city (to Egypt; from the hill country)",
+              "definition": "Travel from the hill country of Canaan or from Jerusalem to a lower land or town: above all “go down to Egypt”, and to Philistia, the coast, the Jordan valley, Joppa.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.10",
+                  "role": "defining",
+                  "note": "There was famine in the land, and Abram went down to Egypt to sojourn there."
+                },
+                {
+                  "ref": "Gen.46.3",
+                  "to": "Gen.46.4",
+                  "role": "defining",
+                  "note": "“Do not fear to go down to Egypt … I will go down with you to Egypt, and I will also surely bring you up (עָלָה)”."
+                },
+                {
+                  "ref": "Gen.42.2",
+                  "to": "Gen.42.3",
+                  "note": "“Go down there and buy for us”; Joseph’s ten brothers went down to buy grain in Egypt."
+                },
+                {
+                  "ref": "Gen.26.2",
+                  "note": "“Do not go down to Egypt; dwell in the land I tell you.”"
+                },
+                {
+                  "ref": "Deu.26.5",
+                  "note": "“My father was a perishing Aramean, and he went down to Egypt and sojourned there.”"
+                },
+                {
+                  "ref": "Deu.10.22",
+                  "note": "Seventy souls went down to Egypt."
+                },
+                {
+                  "ref": "Num.20.15"
+                },
+                {
+                  "ref": "Isa.31.1",
+                  "note": "Woe to those who go down to Egypt for help, and rely on horses."
+                },
+                {
+                  "ref": "Isa.30.2"
+                },
+                {
+                  "ref": "Isa.52.4",
+                  "note": "“My people went down at the first into Egypt to sojourn there.”"
+                },
+                {
+                  "ref": "Jdg.14.1",
+                  "note": "Samson went down to Timnah."
+                },
+                {
+                  "ref": "1Ki.22.2",
+                  "note": "Jehoshaphat went down to the king of Israel."
+                },
+                {
+                  "ref": "Jer.18.2",
+                  "note": "“Arise and go down to the potter’s house.”"
+                },
+                {
+                  "ref": "Jon.1.3",
+                  "note": "Jonah went down to Joppa, then down into the ship (and in 1:5, into its hold): each step a going down away from the presence of Yahweh."
+                },
+                {
+                  "ref": "Sng.6.2",
+                  "note": "“My beloved has gone down to his garden.”"
+                }
+              ]
+            },
+            {
+              "id": "yarad-to-water",
+              "gloss": "go down to water: a spring, a river, the sea",
+              "definition": "Go down to a spring, a river or the sea, to draw water, wash or sail.",
+              "cognate_ids": [
+                "ar-warada"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.24.16",
+                  "role": "defining",
+                  "note": "Rebekah went down to the spring, filled her jar and came up (וַתָּעַל)."
+                },
+                {
+                  "ref": "Gen.24.45"
+                },
+                {
+                  "ref": "Exo.2.5",
+                  "role": "defining",
+                  "note": "Pharaoh’s daughter came down to bathe at the river."
+                },
+                {
+                  "ref": "2Ki.5.14",
+                  "note": "Naaman went down and dipped himself seven times in the Jordan."
+                },
+                {
+                  "ref": "Psa.107.23",
+                  "role": "defining",
+                  "note": "“Those who go down to the sea in ships, who do business in great waters.”"
+                },
+                {
+                  "ref": "Isa.42.10",
+                  "note": "“You who go down to the sea, and all that is in it.”"
+                },
+                {
+                  "ref": "Ezk.27.29",
+                  "note": "All who handle the oar come down from their ships and stand on the land."
+                }
+              ]
+            },
+            {
+              "id": "yarad-to-battle",
+              "gloss": "go down to battle, come down against",
+              "definition": "Go down to fight, or come down upon an enemy; the one who goes down into battle is set beside the one who stays by the baggage.",
+              "evidence": [
+                {
+                  "ref": "1Sa.30.24",
+                  "role": "defining",
+                  "note": "“As the share of the one who goes down into battle, so is the share of the one who stays by the baggage.”"
+                },
+                {
+                  "ref": "1Sa.26.10",
+                  "role": "defining",
+                  "note": "Saul’s day will come to die, “or he will go down into battle and perish”."
+                },
+                {
+                  "ref": "1Sa.17.8",
+                  "note": "Goliath: “Choose a man for yourselves, and let him come down to me.”"
+                },
+                {
+                  "ref": "1Sa.29.4",
+                  "note": "“He shall not go down with us to battle, lest he become an adversary to us.”"
+                },
+                {
+                  "ref": "Jdg.4.14",
+                  "note": "Barak went down from mount Tabor with ten thousand men after him."
+                },
+                {
+                  "ref": "Jdg.7.24",
+                  "note": "“Come down against Midian and take the waters before them.”"
+                },
+                {
+                  "ref": "2Sa.5.17"
+                },
+                {
+                  "ref": "2Sa.21.15"
+                }
+              ]
+            },
+            {
+              "id": "yarad-yahweh",
+              "gloss": "come down (of Yahweh, his angels, his cloud and fire)",
+              "definition": "Of Yahweh, who is in heaven, coming down to see, to judge, to deliver or to speak on earth: in his angels, in the pillar of cloud, in fire on Sinai; and of fire coming down from heaven at his word.",
+              "evidence": [
+                {
+                  "ref": "Gen.11.5",
+                  "role": "defining",
+                  "note": "Yahweh came down to see the city and the tower the sons of man had built."
+                },
+                {
+                  "ref": "Gen.11.7",
+                  "note": "“Come, let us go down and there confuse their language.”"
+                },
+                {
+                  "ref": "Gen.18.21",
+                  "role": "defining",
+                  "note": "“I will go down now and see whether they have done altogether according to its outcry.” The men turn toward Sodom (18:22), and two angels come there at evening (19:1)."
+                },
+                {
+                  "ref": "Exo.3.8",
+                  "role": "defining",
+                  "note": "From the bush where the angel of Yahweh appeared (3:2): “I have come down to deliver them from the hand of the Egyptians.” Quoted at Act 7:34."
+                },
+                {
+                  "ref": "Exo.19.11",
+                  "note": "On the third day Yahweh will come down on mount Sinai in the sight of all the people."
+                },
+                {
+                  "ref": "Exo.19.18",
+                  "note": "Sinai smoked because Yahweh came down on it in fire."
+                },
+                {
+                  "ref": "Exo.19.20"
+                },
+                {
+                  "ref": "Exo.33.9",
+                  "note": "The pillar of cloud came down and stood at the door of the tent, and he spoke with Moses."
+                },
+                {
+                  "ref": "Exo.34.5",
+                  "note": "Yahweh came down in the cloud, stood with him there, and proclaimed the name of Yahweh."
+                },
+                {
+                  "ref": "Num.11.17"
+                },
+                {
+                  "ref": "Num.11.25",
+                  "note": "Yahweh came down in the cloud, spoke to him, and took of the spirit that was on him and put it on the seventy elders."
+                },
+                {
+                  "ref": "Num.12.5",
+                  "note": "Yahweh came down in the pillar of cloud and stood at the door of the tent."
+                },
+                {
+                  "ref": "Neh.9.13",
+                  "note": "“You came down on mount Sinai and spoke with them from heaven.”"
+                },
+                {
+                  "ref": "Psa.18.10",
+                  "note": "He bowed the heavens and came down, with thick darkness under his feet (also 2Sa 22:10)."
+                },
+                {
+                  "ref": "Psa.144.5",
+                  "note": "“Yahweh, bow your heavens and come down; touch the mountains and they will smoke.”"
+                },
+                {
+                  "ref": "Isa.63.19",
+                  "note": "“Oh that you would tear the heavens and come down, that the mountains might flow down at your presence.”"
+                },
+                {
+                  "ref": "Isa.31.4",
+                  "note": "Yahweh of hosts will come down to fight on mount Zion, like a lion over its prey."
+                },
+                {
+                  "ref": "Mic.1.3",
+                  "note": "Yahweh comes out of his place, comes down and treads on the high places of the earth."
+                },
+                {
+                  "ref": "2Ki.1.10",
+                  "note": "Fire came down from heaven and consumed the captain and his fifty."
+                },
+                {
+                  "ref": "2Ch.7.1",
+                  "note": "When Solomon finished praying, fire came down from heaven and consumed the burnt offering, and the glory of Yahweh filled the house."
+                },
+                {
+                  "ref": "Act.7.34",
+                  "note": "Stephen quotes Exo 3:8 “I have come down to deliver them”, and says Moses was sent “by the hand of the angel who appeared to him in the bush” (7:35)."
+                }
+              ]
+            },
+            {
+              "id": "yarad-flow",
+              "gloss": "come down, run down (of rain, dew, manna, water, oil, tears, words)",
+              "definition": "Of things that fall or flow from above: rain and snow from heaven, dew and the manna with it, a stream from a mountain, oil on a beard, tears from the eyes, and words into the inner parts.",
+              "evidence": [
+                {
+                  "ref": "Num.11.9",
+                  "role": "defining",
+                  "note": "When the dew came down on the camp at night, the manna came down on it."
+                },
+                {
+                  "ref": "Isa.55.10",
+                  "role": "defining",
+                  "note": "“As the rain comes down and the snow from heaven, and does not return there but waters the earth … so shall my word be.” Isa 55:10 is quoted at 2Co 9:10."
+                },
+                {
+                  "ref": "Psa.72.6",
+                  "note": "“He shall come down like rain on the mown grass.”"
+                },
+                {
+                  "ref": "Deu.9.21",
+                  "note": "The calf’s dust thrown into the brook that came down from the mountain."
+                },
+                {
+                  "ref": "Jos.3.16",
+                  "note": "The waters coming down from above stood in one heap."
+                },
+                {
+                  "ref": "Ezk.47.1",
+                  "note": "Waters came down from under the right side of the house."
+                },
+                {
+                  "ref": "Ezk.47.8"
+                },
+                {
+                  "ref": "Psa.133.2",
+                  "to": "Psa.133.3",
+                  "role": "defining",
+                  "note": "Oil running down on the beard, Aaron’s beard, running down on the collar of his robes; like the dew of Hermon coming down on the mountains of Zion."
+                },
+                {
+                  "ref": "Psa.119.136",
+                  "note": "Streams of water run down my eyes, because they do not keep your law."
+                },
+                {
+                  "ref": "Jer.9.17",
+                  "note": "That our eyes may run down with tears."
+                },
+                {
+                  "ref": "Jer.13.17"
+                },
+                {
+                  "ref": "Lam.1.16",
+                  "note": "My eye, my eye runs down with water."
+                },
+                {
+                  "ref": "Lam.3.48"
+                },
+                {
+                  "ref": "Isa.15.3",
+                  "note": "Everyone wails, going down in weeping."
+                },
+                {
+                  "ref": "Pro.18.8",
+                  "note": "The words of a whisperer go down into the inner chambers of the belly (also 26:22)."
+                },
+                {
+                  "ref": "2Ki.20.11",
+                  "note": "The shadow had gone down on the steps of Ahaz, and went back ten steps (also Isa 38:8)."
+                },
+                {
+                  "ref": "Isa.38.8"
+                }
+              ]
+            },
+            {
+              "gloss": "go down, run down (of a boundary)",
+              "definition": "Of a border described from higher ground to lower: it “goes down” to a place.",
+              "evidence": [
+                {
+                  "ref": "Num.34.11",
+                  "role": "defining",
+                  "note": "The border shall go down from Shepham to Riblah … and go down and reach the shoulder of the sea of Chinnereth."
+                },
+                {
+                  "ref": "Num.34.12",
+                  "note": "And the border shall go down to the Jordan."
+                },
+                {
+                  "ref": "Jos.18.16",
+                  "note": "The border went down to the end of the mountain … down the valley of Hinnom, down to En-rogel."
+                },
+                {
+                  "ref": "Jos.15.10"
+                },
+                {
+                  "ref": "Jos.16.3"
+                },
+                {
+                  "ref": "Jos.17.9"
+                },
+                {
+                  "ref": "Jos.18.13"
+                }
+              ]
+            },
+            {
+              "id": "yarad-sink",
+              "gloss": "go down, sink (into water, the deep)",
+              "definition": "Go down under the water, or into the depths.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.5",
+                  "role": "defining",
+                  "note": "“The deeps covered them; they went down into the depths like a stone.”"
+                },
+                {
+                  "ref": "Jon.2.7",
+                  "role": "defining",
+                  "note": "“I went down to the roots of the mountains; the earth with its bars was about me for ever; yet you brought up my life from the pit.”"
+                },
+                {
+                  "ref": "Psa.107.26",
+                  "note": "“They go up to the heavens, they go down to the depths”: of sailors in the storm."
+                }
+              ]
+            },
+            {
+              "id": "yarad-grave",
+              "gloss": "go down to the grave, the pit, the dust: die",
+              "definition": "Die and be buried: go down to שְׁאוֹל, the grave, to the pit (בּוֹר, שַׁחַת), to the dust, to silence; “those who go down to the pit” are the dead. Not to come up again of oneself.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.35",
+                  "role": "defining",
+                  "note": "Jacob: “I will go down to my son mourning to the grave (שְׁאֹלָה).”"
+                },
+                {
+                  "ref": "Job.7.9",
+                  "role": "defining",
+                  "note": "“As the cloud is consumed and goes, so he who goes down to the grave does not come up.”"
+                },
+                {
+                  "ref": "Psa.115.17",
+                  "role": "defining",
+                  "note": "“The dead do not praise Yah, nor any who go down into silence.”"
+                },
+                {
+                  "ref": "Isa.38.18",
+                  "role": "defining",
+                  "note": "“The grave cannot thank you, death cannot praise you; those who go down to the pit cannot hope for your truth”: the grave, death and those who go down to the pit in parallel."
+                },
+                {
+                  "ref": "Psa.30.4",
+                  "note": "“Yahweh, you brought up my soul from the grave; you kept me alive from going down to the pit.”"
+                },
+                {
+                  "ref": "Psa.30.10",
+                  "note": "“What profit is in my blood, when I go down to the pit? Will the dust praise you?”"
+                },
+                {
+                  "ref": "Psa.28.1",
+                  "note": "Lest I become like those who go down to the pit."
+                },
+                {
+                  "ref": "Psa.88.5",
+                  "note": "“I am counted with those who go down to the pit.”"
+                },
+                {
+                  "ref": "Psa.143.7"
+                },
+                {
+                  "ref": "Psa.22.30",
+                  "note": "All who go down to the dust shall bow before him, and he who cannot keep his soul alive."
+                },
+                {
+                  "ref": "Num.16.30",
+                  "note": "If the ground opens its mouth and they go down alive to the grave."
+                },
+                {
+                  "ref": "Num.16.33"
+                },
+                {
+                  "ref": "Psa.55.16",
+                  "note": "“Let them go down alive to the grave.”"
+                },
+                {
+                  "ref": "Psa.49.18",
+                  "note": "When he dies he will take nothing; his glory will not go down after him."
+                },
+                {
+                  "ref": "Job.33.24",
+                  "note": "“Deliver him from going down to the pit (שַׁחַת); I have found a ransom (כֹּפֶר).”"
+                },
+                {
+                  "ref": "Job.17.16"
+                },
+                {
+                  "ref": "Pro.1.12",
+                  "note": "“Let us swallow them alive like the grave, whole, like those who go down to the pit.”"
+                },
+                {
+                  "ref": "Pro.5.5",
+                  "note": "Her feet go down to death; her steps take hold on the grave."
+                },
+                {
+                  "ref": "Pro.7.27"
+                },
+                {
+                  "ref": "Isa.14.19",
+                  "note": "The king of Babylon cast out of his grave, among those who go down to the stones of the pit."
+                },
+                {
+                  "ref": "Isa.5.14"
+                },
+                {
+                  "ref": "Ezk.26.20"
+                },
+                {
+                  "ref": "Ezk.31.14",
+                  "note": "All are given to death, to the lower land, among the sons of man, with those who go down to the pit."
+                },
+                {
+                  "ref": "Ezk.31.15",
+                  "to": "Ezk.31.17"
+                },
+                {
+                  "ref": "Ezk.32.18",
+                  "to": "Ezk.32.30",
+                  "note": "Egypt’s lament: the nations and their princes lie in the lower land with those who go down to the pit."
+                },
+                {
+                  "ref": "Ecc.3.21",
+                  "note": "“Who knows the spirit of the sons of man, whether it goes upward, and the spirit of the beast, whether it goes down to the earth?”, after “all go to one place; all are from the dust, and all return to the dust” (3:20)."
+                }
+              ]
+            },
+            {
+              "id": "yarad-brought-low",
+              "gloss": "come down, be brought low (from strength, height or glory)",
+              "definition": "Of a people, a city, its walls, its pride or its rulers: come down from height or honour to ruin; of judgment or violence coming down on someone.",
+              "evidence": [
+                {
+                  "ref": "Deu.28.43",
+                  "role": "defining",
+                  "note": "“The sojourner among you shall go up above you higher and higher, and you shall come down lower and lower.”"
+                },
+                {
+                  "ref": "Isa.47.1",
+                  "role": "defining",
+                  "note": "“Come down and sit in the dust, virgin daughter of Babylon; sit on the ground without a throne.”"
+                },
+                {
+                  "ref": "Jer.48.18",
+                  "note": "“Come down from glory and sit in thirst, daughter of Dibon.”"
+                },
+                {
+                  "ref": "Jer.13.18",
+                  "note": "“Humble yourselves, sit down; for your headdress, your crown of glory, has come down.”"
+                },
+                {
+                  "ref": "Deu.28.52",
+                  "note": "Until your high and fortified walls come down."
+                },
+                {
+                  "ref": "Ezk.26.16",
+                  "note": "The princes of the sea come down from their thrones."
+                },
+                {
+                  "ref": "Ezk.30.6",
+                  "note": "Those who support Egypt shall fall (נָפַל), and the pride of her power shall come down."
+                },
+                {
+                  "ref": "Zec.11.2",
+                  "note": "The thick forest has come down."
+                },
+                {
+                  "ref": "Hag.2.22",
+                  "note": "Horses and their riders shall come down, each by the sword of his brother."
+                },
+                {
+                  "ref": "Lam.1.9",
+                  "note": "Jerusalem did not remember her end; she came down astonishingly, with no comforter."
+                },
+                {
+                  "ref": "Psa.7.17",
+                  "note": "His violence shall come down on his own crown."
+                },
+                {
+                  "ref": "Isa.34.5",
+                  "note": "My sword shall come down on Edom, on the people of my ban, for judgment."
+                },
+                {
+                  "ref": "Jer.48.15",
+                  "note": "His choice young men have gone down to the slaughter (also 50:27)."
+                },
+                {
+                  "ref": "Jer.50.27"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring down, take down, lower, let down; send down (rain); bring down to the grave; abase",
+          "senses": [
+            {
+              "id": "horid-bring-down",
+              "gloss": "bring down, lead down, carry down",
+              "definition": "Cause someone or something to go down to a lower place: bring a man down to Egypt, a child from the upper room, a king from the house of Yahweh, the people to the water, goods to market.",
+              "evidence": [
+                {
+                  "ref": "Gen.45.13",
+                  "role": "defining",
+                  "note": "“Tell my father of all my glory in Egypt … and hurry and bring my father down here.”"
+                },
+                {
+                  "ref": "1Ki.17.23",
+                  "role": "defining",
+                  "note": "Elijah took the child and brought him down from the upper room into the house."
+                },
+                {
+                  "ref": "Gen.39.1",
+                  "note": "The Ishmaelites who had brought Joseph down there."
+                },
+                {
+                  "ref": "Gen.37.25",
+                  "note": "A caravan carrying spice, balm and myrrh, going to bring it down to Egypt."
+                },
+                {
+                  "ref": "Gen.43.11"
+                },
+                {
+                  "ref": "Gen.44.21"
+                },
+                {
+                  "ref": "Deu.1.25",
+                  "note": "They took of the fruit of the land in their hands and brought it down to us."
+                },
+                {
+                  "ref": "Jdg.7.5",
+                  "note": "Gideon brought the people down to the water."
+                },
+                {
+                  "ref": "Jdg.16.21",
+                  "note": "The Philistines put out his eyes and brought him down to Gaza."
+                },
+                {
+                  "ref": "1Sa.30.15",
+                  "note": "“Will you bring me down to this troop?”"
+                },
+                {
+                  "ref": "1Ki.1.33",
+                  "note": "Bring Solomon down to Gihon on the king’s mule."
+                },
+                {
+                  "ref": "1Ki.1.53",
+                  "note": "They brought Adonijah down from the altar."
+                },
+                {
+                  "ref": "2Ki.11.19",
+                  "note": "They brought the king down from the house of Yahweh."
+                },
+                {
+                  "ref": "1Ki.5.23",
+                  "note": "My servants shall bring the timber down from Lebanon to the sea."
+                },
+                {
+                  "ref": "Deu.21.4",
+                  "note": "The elders bring the heifer down to a valley with running water."
+                }
+              ]
+            },
+            {
+              "gloss": "let down, lower",
+              "definition": "Let something down from a hand, a shoulder or a window: a jar, a sack, a man on a cord, a head bowed to the ground.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.18",
+                  "role": "defining",
+                  "note": "She hurried and let down her jar on her hand and gave him a drink."
+                },
+                {
+                  "ref": "Jos.2.15",
+                  "role": "defining",
+                  "note": "Rahab let them down by a cord through the window."
+                },
+                {
+                  "ref": "1Sa.19.12",
+                  "note": "Michal let David down through the window, and he fled."
+                },
+                {
+                  "ref": "Gen.24.46"
+                },
+                {
+                  "ref": "Gen.44.11",
+                  "note": "Each man quickly let down his sack to the ground."
+                },
+                {
+                  "ref": "Jos.2.18"
+                },
+                {
+                  "ref": "Lam.2.10",
+                  "note": "The virgins of Jerusalem have let their heads down to the ground."
+                }
+              ]
+            },
+            {
+              "id": "horid-take-down",
+              "gloss": "take down (a tent, a veil; a body from a tree; ornaments)",
+              "definition": "Take down something set up or hung up: the Dwelling and its veil when the camp sets out, a hanged man’s body from the tree at sunset, ornaments from the body.",
+              "evidence": [
+                {
+                  "ref": "Num.1.51",
+                  "role": "defining",
+                  "note": "“When the Dwelling sets out, the Levites shall take it down, and when the Dwelling camps, the Levites shall set it up (יָקִימוּ).”"
+                },
+                {
+                  "ref": "Num.4.5",
+                  "role": "defining",
+                  "note": "When the camp sets out, Aaron and his sons take down the veil of the screen and cover the ark of the testimony with it."
+                },
+                {
+                  "ref": "Jos.8.29",
+                  "role": "defining",
+                  "note": "Joshua hanged the king of Ai on a tree until evening; at sunset they took his body down from the tree."
+                },
+                {
+                  "ref": "Jos.10.27",
+                  "note": "At sunset they took the five kings down from the trees and threw them into the cave."
+                },
+                {
+                  "ref": "Exo.33.5",
+                  "note": "“Now take your ornaments off you”, literally “bring them down”."
+                },
+                {
+                  "ref": "2Ki.16.17",
+                  "note": "Ahaz took the sea down from the bronze oxen under it."
+                },
+                {
+                  "ref": "1Sa.6.15",
+                  "note": "The Levites took down the ark of Yahweh from the cart."
+                },
+                {
+                  "ref": "Act.13.29",
+                  "note": "When they had fulfilled all that was written of him, “they took him down from the tree (καθελόντες ἀπὸ τοῦ ξύλου) and laid him in a tomb”: the words of Jos 8:29 and 10:27."
+                }
+              ]
+            },
+            {
+              "id": "horid-make-flow",
+              "gloss": "send down, make run down (rain, water, tears)",
+              "definition": "Make water come down: Yahweh sending the rain in its season, waters made to run like rivers, tears let run like a torrent.",
+              "evidence": [
+                {
+                  "ref": "Ezk.34.26",
+                  "role": "defining",
+                  "note": "“I will send down the rain in its season; there shall be rains of blessing.”"
+                },
+                {
+                  "ref": "Jol.2.23",
+                  "role": "defining",
+                  "note": "He has given you the early rain for righteousness, and brought down the rain for you, the early and the latter."
+                },
+                {
+                  "ref": "Psa.78.16",
+                  "note": "He brought streams out of the rock and made waters run down like rivers."
+                },
+                {
+                  "ref": "Lam.2.18",
+                  "note": "“Let tears run down like a torrent day and night.”"
+                },
+                {
+                  "ref": "1Sa.21.14",
+                  "note": "David let his spittle run down his beard."
+                },
+                {
+                  "ref": "Isa.63.6",
+                  "note": "“I brought down their lifeblood to the earth.”"
+                }
+              ]
+            },
+            {
+              "id": "horid-to-grave",
+              "gloss": "bring down to the grave, the pit",
+              "definition": "Cause someone to go down to death: bring a father’s grey hair down to the grave in sorrow; Yahweh brings down to the grave and brings up.",
+              "evidence": [
+                {
+                  "ref": "1Sa.2.6",
+                  "role": "defining",
+                  "note": "“Yahweh kills and makes alive; he brings down to the grave and brings up (וַיָּעַל).”"
+                },
+                {
+                  "ref": "Gen.42.38",
+                  "role": "defining",
+                  "note": "“You would bring down my grey hair in sorrow to the grave.”"
+                },
+                {
+                  "ref": "Gen.44.29"
+                },
+                {
+                  "ref": "Gen.44.31"
+                },
+                {
+                  "ref": "1Ki.2.6",
+                  "note": "“Do not let his grey head go down to the grave in peace.”"
+                },
+                {
+                  "ref": "1Ki.2.9"
+                },
+                {
+                  "ref": "Psa.55.24",
+                  "note": "“You, O God, will bring them down to the pit of destruction.”"
+                },
+                {
+                  "ref": "Ezk.26.20",
+                  "note": "“I will bring you down with those who go down to the pit, to the people of old.”"
+                },
+                {
+                  "ref": "Ezk.28.8"
+                },
+                {
+                  "ref": "Ezk.31.16"
+                },
+                {
+                  "ref": "Ezk.32.18"
+                }
+              ]
+            },
+            {
+              "id": "horid-abase",
+              "gloss": "bring down, abase (the proud, enemies, a nation’s strength)",
+              "definition": "Bring down from height, strength or pride: Yahweh bringing down those who exalt themselves, wherever they go up; a conqueror bringing down peoples and strongholds.",
+              "evidence": [
+                {
+                  "ref": "Oba.1.4",
+                  "role": "defining",
+                  "note": "“Though you go high as the eagle, and though you set your nest among the stars, from there I will bring you down, says Yahweh.”"
+                },
+                {
+                  "ref": "Amo.9.2",
+                  "role": "defining",
+                  "note": "“If they dig into the grave, from there my hand shall take them; if they go up (יַעֲלוּ) to heaven, from there I will bring them down.”"
+                },
+                {
+                  "ref": "Oba.1.3",
+                  "note": "“Who will bring me down to the ground?”, the pride of Edom’s heart."
+                },
+                {
+                  "ref": "Jer.49.16"
+                },
+                {
+                  "ref": "2Sa.22.48",
+                  "note": "God who brings down peoples under me."
+                },
+                {
+                  "ref": "Psa.56.8",
+                  "note": "“In anger bring down the peoples, O God.”"
+                },
+                {
+                  "ref": "Psa.59.12"
+                },
+                {
+                  "ref": "Pro.21.22",
+                  "note": "A wise man goes up to the city of the mighty and brings down the strength of its confidence."
+                },
+                {
+                  "ref": "Isa.10.13",
+                  "note": "The king of Assyria: “like a mighty one I brought down those who sat on thrones.”"
+                },
+                {
+                  "ref": "Isa.43.14",
+                  "note": "“For your sake I have sent to Babylon and brought them all down as fugitives.”"
+                },
+                {
+                  "ref": "Jer.51.40",
+                  "note": "“I will bring them down like lambs to the slaughter.”"
+                },
+                {
+                  "ref": "Amo.3.11",
+                  "note": "An adversary shall bring down your strength from you."
+                },
+                {
+                  "ref": "Hos.7.12",
+                  "note": "“I will bring them down like the birds of the heavens.”"
+                },
+                {
+                  "ref": "Jol.4.2",
+                  "note": "“I will gather all the nations and bring them down to the valley of Jehoshaphat, and enter into judgment with them there.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be brought down, be taken down",
+          "senses": [
+            {
+              "gloss": "be taken down (the Dwelling)",
+              "definition": "Of the Dwelling: be dismantled for the march.",
+              "evidence": [
+                {
+                  "ref": "Num.10.17",
+                  "role": "defining",
+                  "note": "When Judah’s camp had set out, the Dwelling was taken down, and the sons of Gershon and Merari, who carried it, set out."
+                }
+              ]
+            },
+            {
+              "gloss": "be brought down (to a land)",
+              "definition": "Be taken down to a lower land against one’s will.",
+              "evidence": [
+                {
+                  "ref": "Gen.39.1",
+                  "role": "defining",
+                  "note": "Joseph had been brought down to Egypt, and Potiphar bought him."
+                }
+              ]
+            },
+            {
+              "gloss": "be brought down (to the grave; from pride)",
+              "definition": "Be brought down to the grave or the lower land, of a proud king or nation; be humbled.",
+              "evidence": [
+                {
+                  "ref": "Isa.14.15",
+                  "role": "defining",
+                  "note": "The king of Babylon, who said “I will go up (אֶעֱלֶה) to heaven”: “yet you shall be brought down to the grave, to the depths of the pit.” Echoed of Capernaum at Mat 11:23 and Luk 10:15."
+                },
+                {
+                  "ref": "Isa.14.11",
+                  "note": "Your pride is brought down to the grave, the sound of your harps."
+                },
+                {
+                  "ref": "Ezk.31.18",
+                  "note": "Pharaoh “shall be brought down with the trees of Eden to the lower land”."
+                },
+                {
+                  "ref": "Zec.10.11",
+                  "note": "The pride of Assyria shall be brought down, and the sceptre of Egypt shall depart."
+                },
+                {
+                  "ref": "Mat.11.23",
+                  "note": "“And you, Capernaum, exalted to heaven, shall be brought down to the grave (ᾅδου)”: the words of Isa 14:13–15."
+                },
+                {
+                  "ref": "Luk.10.15"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καταβαίνω",
+          "gloss": "go down, come down, descend",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "יָרַד → καταβαίνω ×209 (lemma count, MACULA alignment); EXO 3:8 word 1 κατέβην; GEN 28:12 word 13 κατέβαινον; NUM 11:9 word 1 κατέβη"
+            },
+            {
+              "ref": "Act.7.34",
+              "note": "“I have come down (κατέβην) to deliver them”: Exo 3:8."
+            },
+            {
+              "ref": "Jhn.1.51",
+              "note": "The angels “going up and coming down (καταβαίνοντας)” on the Son of man: Gen 28:12."
+            },
+            {
+              "ref": "Jhn.6.33",
+              "note": "“The bread of God is he who comes down (ὁ καταβαίνων) from heaven and gives life to the world”, set against the manna (6:31–32), which came down on the camp (Num 11:9)."
+            },
+            {
+              "ref": "Jhn.6.38"
+            },
+            {
+              "ref": "Jhn.6.50",
+              "to": "Jhn.6.51"
+            },
+            {
+              "ref": "Jhn.6.58"
+            },
+            {
+              "ref": "Jhn.3.13",
+              "note": "“No one has gone up to heaven except he who came down from heaven, the Son of man”: compare Pro 30:4."
+            },
+            {
+              "ref": "Jas.1.17",
+              "note": "Every good gift is from above, coming down from the Father of lights."
+            },
+            {
+              "ref": "Rev.21.2",
+              "note": "The holy city, new Jerusalem, coming down out of heaven from God."
+            },
+            {
+              "ref": "Eph.4.9",
+              "to": "Eph.4.10",
+              "note": "“He also first went down into the lower parts of the earth”: the “lower land” to which those who go down to the pit are brought (Ezk 31:14; 32:18)."
+            }
+          ]
+        },
+        {
+          "lemma": "κατάγω",
+          "gloss": "bring down, lead down",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1SA 2:6 word 4 κατάγει for מוֹרִיד; GEN 39:1 κατήγαγον for the hiphil הוֹרִדֻהוּ; OBA 1:4 word 10 for אוֹרִיד"
+            },
+            {
+              "ref": "Rom.10.6",
+              "note": "“Do not say in your heart, Who will go up to heaven? (that is, to bring Christ down, καταγαγεῖν)”."
+            },
+            {
+              "ref": "Act.9.30",
+              "note": "The brothers brought Saul down to Caesarea: of travel down to the coast."
+            }
+          ]
+        },
+        {
+          "lemma": "καθαιρέω",
+          "gloss": "take down; bring down, pull down",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 1:51, NUM 4:5 and NUM 10:17 καθελοῦσιν for the hiphil and hophal (the Dwelling and its veil taken down); JOS 10:27 καθεῖλον (the kings taken down from the trees)"
+            },
+            {
+              "ref": "Act.13.29",
+              "note": "“They took him down from the tree (καθελόντες ἀπὸ τοῦ ξύλου)”: the action of Jos 8:29 and 10:27, done before sunset as Deu 21:23 required (Jhn 19:31)."
+            },
+            {
+              "ref": "Mrk.15.46",
+              "note": "Joseph took him down (καθελών) and wrapped him in the linen."
+            },
+            {
+              "ref": "Luk.23.53"
+            },
+            {
+              "ref": "Luk.1.52",
+              "note": "“He has brought down (καθεῖλεν) the mighty from thrones, and exalted the lowly”: the hiphil’s abasing of the proud (Oba 1:4; Isa 10:13)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "עָלָה",
+            "note": "Going down is set against going up throughout: on the ladder, from the grave, at sea, between the sojourner and Israel; and the hiphil “bring down” against “bring up”.",
+            "evidence": [
+              {
+                "ref": "Gen.28.12",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.2.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.28.43",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.107.26"
+              },
+              {
+                "ref": "Pro.30.4"
+              },
+              {
+                "ref": "Gen.46.4"
+              },
+              {
+                "ref": "Job.7.9"
+              },
+              {
+                "ref": "Amo.9.2"
+              },
+              {
+                "ref": "Ecc.3.21"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "מֵת",
+            "note": "“Those who go down” stand in parallel with the dead, death and the grave.",
+            "evidence": [
+              {
+                "ref": "Psa.115.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.38.18",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נָפַל",
+            "note": "Coming down set beside falling, of a nation’s strength.",
+            "evidence": [
+              {
+                "ref": "Ezk.30.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יוֹרְדֵי בוֹר",
+            "gloss": "those who go down to the pit: the dead",
+            "evidence": [
+              {
+                "ref": "Isa.38.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.28.1"
+              },
+              {
+                "ref": "Psa.88.5"
+              },
+              {
+                "ref": "Psa.143.7"
+              },
+              {
+                "ref": "Pro.1.12"
+              },
+              {
+                "ref": "Ezk.26.20"
+              },
+              {
+                "ref": "Ezk.31.14"
+              },
+              {
+                "ref": "Ezk.32.18"
+              }
+            ]
+          },
+          {
+            "phrase": "יָרַד שְׁאֹלָה",
+            "gloss": "go down to the grave",
+            "evidence": [
+              {
+                "ref": "Gen.37.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.16.30"
+              },
+              {
+                "ref": "Job.7.9"
+              },
+              {
+                "ref": "Psa.55.16"
+              }
+            ]
+          },
+          {
+            "phrase": "הוֹרִיד שֵׂיבָה שְׁאוֹלָה",
+            "gloss": "bring grey hair down to the grave: cause an old man’s death",
+            "evidence": [
+              {
+                "ref": "Gen.42.38",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.44.29"
+              },
+              {
+                "ref": "Gen.44.31"
+              },
+              {
+                "ref": "1Ki.2.6"
+              },
+              {
+                "ref": "1Ki.2.9"
+              }
+            ]
+          },
+          {
+            "phrase": "יֹרְדֵי הַיָּם",
+            "gloss": "those who go down to the sea: seafarers",
+            "evidence": [
+              {
+                "ref": "Psa.107.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.42.10"
+              }
+            ]
+          },
+          {
+            "phrase": "יָרַד מִצְרַיְמָה",
+            "gloss": "go down to Egypt",
+            "evidence": [
+              {
+                "ref": "Gen.12.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.46.3"
+              },
+              {
+                "ref": "Isa.31.1"
+              }
+            ]
+          },
+          {
+            "phrase": "הוֹרִיד אֶת־הַמִּשְׁכָּן",
+            "gloss": "take down the Dwelling (for the march)",
+            "evidence": [
+              {
+                "ref": "Num.1.51",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.10.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מוֹרָד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "descent, slope; (once) hanging work",
+      "summary": "A place where the ground goes down: the slope below a city, the descent of a pass. Its one use in the temple furnishings (1Ki 7:29) is less clear.",
+      "bdb": [
+        "j.dh.ac"
+      ],
+      "senses": [
+        {
+          "id": "morad-descent",
+          "gloss": "descent, slope",
+          "definition": "The way down from a height, a slope or pass; set against the ascent (מַעֲלֶה).",
+          "kin": [
+            "yarad-descend"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.48.5",
+              "role": "defining",
+              "note": "“By the ascent (מַעֲלֵה) of Luhith they go up weeping; at the descent of Horonaim they hear the cry of destruction.”"
+            },
+            {
+              "ref": "Jos.10.11",
+              "role": "defining",
+              "note": "As they fled before Israel on the descent of Beth-horon, Yahweh threw great stones on them from heaven."
+            },
+            {
+              "ref": "Mic.1.4",
+              "role": "defining",
+              "note": "The mountains melt under him “like waters poured down a slope”."
+            },
+            {
+              "ref": "Jos.7.5",
+              "note": "The men of Ai chased Israel from the gate and struck them on the slope."
+            }
+          ]
+        },
+        {
+          "gloss": "hanging work (of wreaths)",
+          "definition": "In the bronze stands of the temple, the wreaths are “work of מוֹרָד”: perhaps work that hangs down, or bevelled work. The tie to the root is likely (something that goes down) but the craft meant is not clear from the text.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.29",
+              "role": "defining",
+              "note": "Above and below the lions and oxen were wreaths (לֹיוֹת), מַעֲשֵׂה מוֹרָד."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κατάβασις",
+          "gloss": "descent",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "MIC 1:4 word 11 καταβάσει; JOS 10:11 word 6 καταβάσεως"
+            },
+            {
+              "ref": "Luk.19.37",
+              "note": "As he drew near, already at the descent of the mount of Olives, the multitude of the disciples began to praise God."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-waradu",
+      "lang": "akk",
+      "form": "warādu, (later) arādu",
+      "translit": "warādu",
+      "gloss": "go down, descend, come down; (Š) bring down, send down",
+      "relation": "cognate",
+      "note": "The common Akkadian verb for going down, with its causative “bring down, send down, send downstream”; later dialects drop the w (arādu). Its w answers to the י of יָרַד, as Hebrew verbs whose first letter was w regularly begin with y.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000017440, warādu [go down] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000006620, warādu [descend] V: “bring down”, “send down”, “send downstream”"
+        },
+        {
+          "source": "oracc",
+          "locator": "atae x000001590, arādu [go down] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000519 wrd [down], AKK014504 warādu [go down]"
+        }
+      ]
+    },
+    {
+      "id": "uga-yrd",
+      "lang": "uga",
+      "form": "𐎊𐎗𐎄",
+      "translit": "yrd",
+      "gloss": "go down",
+      "relation": "cognate",
+      "note": "Ugaritic, like Hebrew, has y for the older w. Attested in the perfect (yrt, KTU 1.5 I 6), the imperative and the participle.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 188, §93 Glossary, /y-r-d/: yrt 1.5:I:6 “to go down”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000519 wrd [down], UGC004843 yrd [go]"
+        }
+      ]
+    },
+    {
+      "id": "phn-yrd",
+      "lang": "phn",
+      "form": "ירד",
+      "translit": "yrd",
+      "gloss": "go down, come down; (yiphil) deport",
+      "relation": "cognate",
+      "note": "Neo-Punic “he came down into the valley through the pass” (KAI 145); in Phoenician the causative (yiphil) is used by Azitawadda of taking conquered peoples down to resettle them elsewhere (KAI 26 A I 18–II): “bring down” of moving people, as the Hebrew hiphil of Joseph brought down to Egypt.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 215, Y-R-D"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000519 wrd [down], PUN000845 yrd [descend]"
+        }
+      ]
+    },
+    {
+      "id": "sab-wrd",
+      "lang": "sem",
+      "form": "𐩥𐩧𐩵",
+      "translit": "wrd",
+      "gloss": "(Sabaic) come down, fall (of rain); (D) send down; (h-causative) lead, conduct; (t-stem) go down; (noun) fall of rain",
+      "relation": "cognate",
+      "note": "Old South Arabian (Sabaic), keeping the older w: “the valleys which come down from M.”, “when the spring rain fell”, soldiers who “went down”, and the causative of leading men down to a city. The fall of rain answers to Hebrew rain and dew coming down (Isa 55:10; Num 11:9) and the hiphil of sending down the rain (Ezk 34:26).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 147–148, WRD (G “come down; fall (rain)”; D “send forth or down”; t “go down”; h “lead, conduct”; n. wrd “fall or arrival (of rain)”)"
+        }
+      ]
+    },
+    {
+      "id": "ar-warada",
+      "lang": "ar",
+      "form": "وَرَدَ",
+      "translit": "warada",
+      "gloss": "come to, arrive at (water, a watering-place); come",
+      "relation": "cognate",
+      "note": "The Arabic verb is used above all of men and camels coming to water to drink, whether they enter it or not; مَوْرِدٌ mawrid is the watering-place, and the way by which one comes to water. Arabic has moved from “go down” to “arrive (at water)”; the use that meets the Hebrew is going down to a spring or river (Gen 24:16; Exo 2:5), so it is named there only.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2935, root ورد, وَرَدَهُ (n41848)",
+          "note": "“He came to it, or arrived at it, namely a water … whether he entered it or did not enter it.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2936, مَوْرِدٌ (n41863)",
+          "note": "“A place of coming to water: a watering-place”; a road by which one comes to water."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "going-down-to-the-pit",
+      "statement": "Scripture calls dying “going down”: to the grave, to the pit, to the dust, to silence (Gen 37:35; Psa 22:30; 115:17). Those who go down are set in parallel with the dead and with death: “the dead do not praise Yah, nor any who go down into silence”; “the grave cannot thank you, death cannot praise you; those who go down to the pit cannot hope for your truth” (Psa 115:17; Isa 38:18); “will the dust praise you?” (Psa 30:10). Man and beast alike go to one place, from the dust and back to the dust (Ecc 3:20–21), and “he who goes down to the grave does not come up” (Job 7:9). Yet “Yahweh kills and makes alive; he brings down to the grave and brings up” (1Sa 2:6), and the psalmist says “you brought up my soul from the grave; you kept me alive from going down to the pit” (Psa 30:4); Elihu speaks of a ransom that delivers a man from going down to the pit (Job 33:24). Of Christ, Paul writes that he who went up is the one who first went down into the lower parts of the earth (Eph 4:9–10), the lower land of those who go down to the pit (Ezk 31:14; 32:18), and Peter that God did not leave his soul in the grave but raised him up (Act 2:24, 27, 31–32). From the verses: going down is death, a place of silence and no praise, from which no one comes up by himself; the only way up is Yahweh’s raising, which he did for his Son and promises in him.",
+      "evidence": [
+        {
+          "ref": "Gen.37.35"
+        },
+        {
+          "ref": "Psa.22.30"
+        },
+        {
+          "ref": "Psa.115.17"
+        },
+        {
+          "ref": "Isa.38.18",
+          "to": "Isa.38.19"
+        },
+        {
+          "ref": "Psa.30.4"
+        },
+        {
+          "ref": "Psa.30.10"
+        },
+        {
+          "ref": "Ecc.3.19",
+          "to": "Ecc.3.21"
+        },
+        {
+          "ref": "Job.7.9",
+          "to": "Job.7.10"
+        },
+        {
+          "ref": "1Sa.2.6"
+        },
+        {
+          "ref": "Job.33.24"
+        },
+        {
+          "ref": "Eph.4.9",
+          "to": "Eph.4.10"
+        },
+        {
+          "ref": "Ezk.31.14"
+        },
+        {
+          "ref": "Ezk.32.18"
+        },
+        {
+          "ref": "Act.2.24"
+        },
+        {
+          "ref": "Act.2.27"
+        },
+        {
+          "ref": "Act.2.31",
+          "to": "Act.2.32"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-comes-down",
+      "statement": "Yahweh “came down” to see Babel, to see Sodom, to deliver Israel from Egypt, on Sinai, and to speak at the tent (Gen 11:5; 18:21; Exo 3:8; 19:20; Num 12:5). The verses say how: at Sodom the men who went on from Abraham are the two angels who came there at evening (Gen 18:21–22; 19:1); at the bush “the angel of Yahweh appeared to him in a flame of fire”, and Stephen quotes “I have come down to deliver them” and says Moses was sent “by the hand of the angel who appeared to him in the bush” (Exo 3:2, 8; Act 7:30, 34–35); on Sinai he came down in fire and cloud, and the law was received “by the arrangement of angels” (Exo 19:18; Act 7:53; Gal 3:19); at the tent he came down in the pillar of cloud (Exo 33:9; Num 11:25; 12:5). Yet heaven is his dwelling, and he spoke with Israel from heaven (Neh 9:13; 1Ki 8:27, 30). Jacob saw the angels of God going up and coming down between heaven and earth, and Jesus says they will be seen going up and coming down on the Son of man (Gen 28:12; Jhn 1:51). From the verses: Yahweh’s “coming down” is his acting and being present on earth through his angels, his cloud and his glory, while he remains in heaven; and the Son of man is now the place where that traffic between heaven and earth meets.",
+      "evidence": [
+        {
+          "ref": "Gen.11.5"
+        },
+        {
+          "ref": "Gen.18.21",
+          "to": "Gen.18.22"
+        },
+        {
+          "ref": "Gen.19.1"
+        },
+        {
+          "ref": "Exo.3.2"
+        },
+        {
+          "ref": "Exo.3.8"
+        },
+        {
+          "ref": "Act.7.30"
+        },
+        {
+          "ref": "Act.7.34",
+          "to": "Act.7.35"
+        },
+        {
+          "ref": "Exo.19.18"
+        },
+        {
+          "ref": "Exo.19.20"
+        },
+        {
+          "ref": "Act.7.53"
+        },
+        {
+          "ref": "Gal.3.19"
+        },
+        {
+          "ref": "Exo.33.9"
+        },
+        {
+          "ref": "Num.11.25"
+        },
+        {
+          "ref": "Num.12.5"
+        },
+        {
+          "ref": "Neh.9.13"
+        },
+        {
+          "ref": "1Ki.8.27"
+        },
+        {
+          "ref": "1Ki.8.30"
+        },
+        {
+          "ref": "Gen.28.12"
+        },
+        {
+          "ref": "Jhn.1.51"
+        }
+      ]
+    },
+    {
+      "topic": "bread-come-down-from-heaven",
+      "statement": "When the dew came down on the camp at night, the manna came down on it (Num 11:9): bread Yahweh rained from heaven (Exo 16:4). Jesus sets himself against that manna: “my Father gives you the true bread from heaven; for the bread of God is he who comes down from heaven and gives life to the world”; “I have come down from heaven, not to do my own will, but the will of him who sent me”; “your fathers ate the manna and died; this is the bread which comes down from heaven, that one may eat of it and not die” (Jhn 6:31–33, 38, 49–51, 58). Scripture uses the same words of other things that come from God: every good gift “coming down from the Father of lights”, and the holy city “coming down out of heaven from God” (Jas 1:17; Rev 21:2). From the verses: “coming down from heaven” says where the bread is from and who gives it: like the manna it is God’s gift and God’s sending, and Jesus explains his coming down as being sent to do the Father’s will; unlike the manna, which fed for a day and left its eaters to die, the bread he gives, his flesh given for the life of the world, is eaten to live for ever (Jhn 6:51, 58).",
+      "evidence": [
+        {
+          "ref": "Num.11.9"
+        },
+        {
+          "ref": "Exo.16.4"
+        },
+        {
+          "ref": "Jhn.6.31",
+          "to": "Jhn.6.33"
+        },
+        {
+          "ref": "Jhn.6.38"
+        },
+        {
+          "ref": "Jhn.6.49",
+          "to": "Jhn.6.51"
+        },
+        {
+          "ref": "Jhn.6.58"
+        },
+        {
+          "ref": "Jas.1.17"
+        },
+        {
+          "ref": "Rev.21.2"
+        }
+      ]
+    },
+    {
+      "topic": "pride-brought-down",
+      "statement": "The king of Babylon said in his heart, “I will go up to heaven … I will go up above the heights of the clouds”, and is answered, “yet you shall be brought down to the grave, to the depths of the pit” (Isa 14:13–15); Edom, nesting among the stars, hears “from there I will bring you down” (Oba 1:3–4); and Yahweh says that if men go up to heaven, from there he will bring them down (Amo 9:2). Jesus applies the words of Isa 14 to Capernaum, “exalted to heaven”, which “shall be brought down to the grave” (Mat 11:23; Luk 10:15), and Mary praises God who “has brought down the mighty from thrones and exalted the lowly” (Luk 1:52). From the verses: whoever lifts himself up against God is brought down by him, however high he climbs, while he exalts the lowly.",
+      "evidence": [
+        {
+          "ref": "Isa.14.13",
+          "to": "Isa.14.15"
+        },
+        {
+          "ref": "Oba.1.3",
+          "to": "Oba.1.4"
+        },
+        {
+          "ref": "Amo.9.2"
+        },
+        {
+          "ref": "Mat.11.23"
+        },
+        {
+          "ref": "Luk.10.15"
+        },
+        {
+          "ref": "Luk.1.52"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10: the hophal וְהוּרַד הַמִּשְׁכָּן (Num 10:17), the Dwelling taken down when the camp set out. The root does not occur in Leviticus 23. Left out, keys not claimed: יַרְדֵּן Jordan (j.dh.ad, 182 tokens), a place name, which cannot be a name entry; its derivation from this root (“the descender”) is often proposed but nothing in scripture states it. יֶרֶד Jared/Jered (j.dh.ab; Gen 5:15–20; 1Ch 1:2; 4:18; Luk 3:37), a person, not a name assigned to this draft; whether the name is from this root is not shown. m.bc.af is a zero-token cross-reference for מוֹרָד. The brief’s spelling-matched יָצְאוּ tokens and Gen 1:28 וּרְדוּ (רדה) are not this verb. Psa 30:4 מִיָּרְדִי is the qere (ketiv מִיּוֹרְדֵי), not in the brief’s list but read as this verb. Jol 4:13 רְדוּ “come, go down (to the winepress)” is keyed here by the brief; some take it from רדה “tread”; left uncited. Jdg 11:37 וְיָרַדְתִּי עַל־הֶהָרִים, “that I may go down upon the mountains”, is odd (one goes up mountains); left uncited. Psa 107:26 is cited for “go down to the depths”, but MACULA has no alignment for the verse, so the Septuagint wording behind Rom 10:7 “who will go down into the abyss” was not checked and Rom 10:7 is not cited. No Aramaic word of the root: Biblical Aramaic and the Peshitta use נחת for “come down” (Dan 4:10, 20; the Peshitta of Jhn 6:33), and SEDRA’s only ירד lexeme is the name Jared (lexeme 1271). Leads not followed: Ge’ez ወረደ wärädä “go down” (Wiktionary; dillmann-1865 and leslau-1987 not consulted); Syriac yardnā “river, stream” (Anderson–Moser “aramaic YRD [stream]”; payne-smith-1903 not consulted); Akkadian wardu “slave”, linked by some to warādu, not followed and not entered. The sab-wrd cognate is entered under lang “sem” with an Old South Arabian form; check the script. Questions for review: (1) the four doctrine items, especially the reading of Eph 4:9 as Christ’s death and grave, and the “came down from heaven” statement; (2) whether Arabic warada should be named on the verb as a whole."
+}
