@@ -1,0 +1,2455 @@
+{
+  "id": "ben",
+  "root": "בנה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "family",
+    "building",
+    "house",
+    "covenant",
+    "messiah",
+    "worship"
+  ],
+  "gloss": "build, build up; son, daughter: the children who build a house",
+  "summary": "בָּנָה is to build: an altar, a house, a city, Yahweh’s temple, and to build again what lies in ruins (Gen 8:20; 1Ki 6:1; Amo 9:11); since a house is also a family, to build a man’s house is to raise up his children (Deu 25:9; Rut 4:11), and to “be built” (niphal) is to gain children (Gen 16:2; 30:3). בֵּן, son, and בַּת, daughter, are those children: a son or descendant, the young of an animal, and by a Hebrew idiom anyone belonging to a people, a kind, an age or a fate (בְּנֵי יִשְׂרָאֵל, Num 10:28; בֶּן־שָׁנָה “a year old”, Lev 23:12); Aramaic has בַּר, plural בְּנֵי. Yahweh joins the two words in his promise to David, “Yahweh will make you a house … he shall build a house for my name … I will be to him a father and he shall be to me a son” (2Sa 7:11–14), which Hebrews applies to Jesus (Heb 1:5). Every branch of the Semitic languages has both b‑n‑y “build” and bn “son”, bnt “daughter”, and Arabic files ibn “son” under banā “build”; that scripture joins them is plain, but no text shows “son” being formed from “build”.",
+  "words": [
+    {
+      "lemma": "בֵּן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "son; child, descendant; young of an animal; one belonging to a kind, an age or a fate",
+      "summary": "About 5,000 times, the commonest noun of the root. BDB files בֵּן under no verb; it is kept here because scripture uses the house a man’s sons build (Deu 25:9; Rut 4:11; 2Sa 7:11–14) and every Semitic language pairs bn “son” with b‑n‑y “build”, though no text derives the one from the other.",
+      "bdb": [
+        "b.ca.aa"
+      ],
+      "cognate_ids": [
+        "ar-ibn",
+        "akk-binu",
+        "uga-bn",
+        "phn-bn",
+        "sab-bn",
+        "arc-bar"
+      ],
+      "senses": [
+        {
+          "id": "ben-son",
+          "gloss": "son, male child",
+          "definition": "A male child of his father and mother, the one born to them and named by them.",
+          "evidence": [
+            {
+              "ref": "Gen.4.25",
+              "role": "defining",
+              "note": "Eve bore a בֵּן and called his name Seth: “God has appointed me another seed instead of Abel.”"
+            },
+            {
+              "ref": "Gen.21.3",
+              "role": "defining",
+              "note": "Abraham called the name of בְּנוֹ, born to him, whom Sarah bore to him, Isaac."
+            },
+            {
+              "ref": "Gen.22.2",
+              "note": "“Take your son (בִּנְךָ), your only one, whom you love.”"
+            },
+            {
+              "ref": "Pro.10.1",
+              "note": "A wise son gladdens a father; a foolish son is his mother’s grief."
+            },
+            {
+              "ref": "Psa.127.3",
+              "note": "Sons (בָּנִים) are a heritage from Yahweh, the fruit of the womb a reward; after “unless Yahweh builds the house” (v. 1)."
+            }
+          ],
+          "kin": [
+            "banah-family",
+            "nibnah-children"
+          ]
+        },
+        {
+          "id": "ben-children",
+          "gloss": "children (pl.); grandchildren, descendants",
+          "definition": "In the plural, children of either sex, and a man’s offspring further down the line: grandsons, and a people named after its father.",
+          "evidence": [
+            {
+              "ref": "Gen.3.16",
+              "role": "defining",
+              "note": "“In pain you will bear בָנִים”: children, not sons only."
+            },
+            {
+              "ref": "Gen.31.28",
+              "role": "defining",
+              "note": "Laban speaks of his grandchildren as “my sons and my daughters”."
+            },
+            {
+              "ref": "Jer.31.15",
+              "note": "Rachel weeping for her בָּנִים; quoted of the children of Bethlehem (Mat 2:18)."
+            },
+            {
+              "ref": "Mat.2.18",
+              "note": "Τέκνα for בָּנֶיהָ."
+            },
+            {
+              "ref": "Exo.1.7",
+              "role": "defining",
+              "note": "בְּנֵי יִשְׂרָאֵל were fruitful and multiplied: Jacob’s descendants as a people."
+            },
+            {
+              "ref": "Num.10.28",
+              "note": "“These were the journeyings of בְנֵי־יִשְׂרָאֵל by their hosts.”"
+            },
+            {
+              "ref": "Lev.23.43",
+              "note": "“I made בְּנֵי יִשְׂרָאֵל dwell in booths when I brought them out of Egypt.”"
+            },
+            {
+              "ref": "Num.10.8",
+              "note": "בְּנֵי אַהֲרֹן הַכֹּהֲנִים blow the trumpets: Aaron’s line, “a statute for ever throughout your generations”."
+            }
+          ]
+        },
+        {
+          "id": "ben-young",
+          "gloss": "young of an animal or bird",
+          "definition": "The young of a beast or bird, as one of its own offspring.",
+          "evidence": [
+            {
+              "ref": "Deu.22.6",
+              "role": "defining",
+              "note": "Do not take the mother with the בָּנִים, her young in the nest."
+            },
+            {
+              "ref": "Lev.1.14",
+              "note": "Turtledoves or בְּנֵי הַיּוֹנָה, young pigeons."
+            },
+            {
+              "ref": "Gen.49.11",
+              "note": "בְּנִי אֲתֹנוֹ, his she-ass’s colt."
+            },
+            {
+              "ref": "Zec.9.9",
+              "note": "Riding on a colt, בֶּן־אֲתֹנוֹת; quoted at Mat 21:5."
+            },
+            {
+              "ref": "Lev.23.18",
+              "note": "פַּר בֶּן־בָּקָר, a bull, young of the herd."
+            }
+          ]
+        },
+        {
+          "id": "ben-member",
+          "gloss": "one of a kind or company: a man, a foreigner, a disciple",
+          "definition": "One who belongs to a kind or a company, named by what he belongs to: בֶּן־אָדָם a human being, בֶּן־נֵכָר a foreigner, בְּנֵי הַנְּבִיאִים the prophets’ disciples.",
+          "evidence": [
+            {
+              "ref": "Num.23.19",
+              "role": "defining",
+              "note": "God is not a man, that he should lie, nor בֶן־אָדָם, that he should repent: a son of man is a mortal, set against God."
+            },
+            {
+              "ref": "Psa.146.3",
+              "role": "defining",
+              "note": "Do not trust in princes, in בֶן־אָדָם, in whom there is no salvation."
+            },
+            {
+              "ref": "Psa.8.5",
+              "note": "What is אֱנוֹשׁ, that you remember him, and בֶן־אָדָם, that you visit him? Quoted of Jesus at Heb 2:6."
+            },
+            {
+              "ref": "Ezk.2.1",
+              "note": "Yahweh addresses Ezekiel as בֶּן־אָדָם, about ninety times in the book."
+            },
+            {
+              "ref": "Exo.12.43",
+              "role": "defining",
+              "note": "No בֶּן־נֵכָר, son of foreignness, shall eat of the Passover."
+            },
+            {
+              "ref": "2Ki.2.3",
+              "note": "בְנֵי הַנְּבִיאִים at Bethel."
+            }
+          ]
+        },
+        {
+          "id": "ben-quality",
+          "gloss": "one marked by an age, a quality or a fate (idiom)",
+          "definition": "“Son of” a thing is one who has it or is bound for it: so “son of a year” is a year old, “son of death” one who must die, “son of valour” a valiant man, and “son of oil” a fertile hill.",
+          "evidence": [
+            {
+              "ref": "Lev.23.12",
+              "role": "defining",
+              "note": "A lamb without blemish, בֶּן־שְׁנָתוֹ, a year old, on the day of the waving of the sheaf."
+            },
+            {
+              "ref": "Lev.23.19",
+              "note": "Two lambs בְּנֵי שָׁנָה for peace offerings at the feast of weeks."
+            },
+            {
+              "ref": "Gen.5.32",
+              "note": "Noah was בֶּן־חֲמֵשׁ מֵאוֹת שָׁנָה, five hundred years old."
+            },
+            {
+              "ref": "Gen.17.12",
+              "note": "בֶן־שְׁמֹנַת יָמִים, eight days old, every male shall be circumcised."
+            },
+            {
+              "ref": "1Sa.20.31",
+              "role": "defining",
+              "note": "Saul of David: כִּי בֶן־מָוֶת הוּא, for he must die."
+            },
+            {
+              "ref": "Deu.25.2",
+              "note": "If the wicked man is בִּן הַכּוֹת, deserves beating."
+            },
+            {
+              "ref": "1Sa.18.17",
+              "note": "“Be to me לְבֶן־חַיִל”, a valiant man."
+            },
+            {
+              "ref": "Jon.4.10",
+              "note": "The plant that was בִּן־לַיְלָה, came up in a night and perished in a night."
+            },
+            {
+              "ref": "Isa.5.1",
+              "note": "A vineyard on a horn בֶּן־שָׁמֶן, a very fruitful hill."
+            },
+            {
+              "ref": "Lam.3.13",
+              "note": "בְּנֵי אַשְׁפָּתוֹ, the sons of his quiver: arrows."
+            }
+          ]
+        },
+        {
+          "id": "ben-address",
+          "gloss": "“my son”, of an elder to one in his charge",
+          "definition": "“My son” said by a teacher, priest or leader to one younger who is not his own child, with a father’s care or authority.",
+          "evidence": [
+            {
+              "ref": "1Sa.3.6",
+              "role": "defining",
+              "note": "Eli to Samuel: “I did not call, בְּנִי; lie down again.”"
+            },
+            {
+              "ref": "Jos.7.19",
+              "role": "defining",
+              "note": "Joshua to Achan: “בְּנִי, give glory to Yahweh.”"
+            },
+            {
+              "ref": "Pro.1.8",
+              "note": "“Hear, בְּנִי, the instruction of your father”: the form of address throughout Pro 1–7."
+            }
+          ]
+        },
+        {
+          "id": "ben-god",
+          "gloss": "son of God: one whom God has begotten or made his own",
+          "definition": "Those Yahweh calls his son or sons: Israel his firstborn, the king of David’s line whom he begets, the people who belong to him, and those who stand as his judges.",
+          "evidence": [
+            {
+              "ref": "Exo.4.22",
+              "role": "defining",
+              "note": "“Israel is בְּנִי בְכֹרִי, my son, my firstborn.”"
+            },
+            {
+              "ref": "Hos.11.1",
+              "note": "“Out of Egypt I called לִבְנִי”; Matthew quotes it of Jesus with υἱόν μου (Mat 2:15)."
+            },
+            {
+              "ref": "Deu.14.1",
+              "note": "“You are בָּנִים to Yahweh your God.”"
+            },
+            {
+              "ref": "Hos.2.1",
+              "note": "Where it was said, “You are not my people”, it will be said, בְּנֵי אֵל־חָי; quoted at Rom 9:26."
+            },
+            {
+              "ref": "2Sa.7.14",
+              "role": "defining",
+              "note": "Of David’s seed who will build Yahweh’s house: “I will be to him a father and he shall be to me לְבֵן.”"
+            },
+            {
+              "ref": "Psa.2.7",
+              "role": "defining",
+              "note": "“You are בְּנִי; today I have begotten you”: sonship by begetting; quoted at Act 13:33 and Heb 1:5."
+            },
+            {
+              "ref": "Psa.82.6",
+              "note": "“I said, you are gods, and בְנֵי עֶלְיוֹן all of you”, of Israel’s judges (v. 2–3); quoted by Jesus at Jhn 10:34–36."
+            },
+            {
+              "ref": "Gen.6.2",
+              "note": "בְנֵי הָאֱלֹהִים took wives from the daughters of man (see the doctrine section)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "υἱός",
+          "gloss": "son",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "בֵּן → υἱός ×3957 (lemma count, MACULA alignment); Psa.2.7, בְּנִי → υἱός"
+            },
+            {
+              "ref": "Heb.1.5",
+              "note": "Psa 2:7 and 2Sa 7:14: “You are my Son … I will be to him a Father, and he shall be to me a Son.”"
+            },
+            {
+              "ref": "Act.13.33",
+              "note": "Psa 2:7 fulfilled in raising up Jesus."
+            },
+            {
+              "ref": "Mat.2.15",
+              "note": "Hos 11:1, “Out of Egypt I called my son”: Matthew follows the Hebrew, where the Septuagint has τὰ τέκνα αὐτοῦ."
+            },
+            {
+              "ref": "Heb.2.6",
+              "note": "Psa 8:5, υἱὸς ἀνθρώπου."
+            }
+          ]
+        },
+        {
+          "lemma": "τέκνον",
+          "gloss": "child",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "בֵּן → τέκνον ×54 (lemma count); Hos.11.1, לִבְנִי → τὰ τέκνα"
+            },
+            {
+              "ref": "Mat.2.18",
+              "note": "Jer 31:15: Rachel weeping for her τέκνα."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בַּת",
+            "note": "The pair “sons and daughters”: all of a man’s children.",
+            "evidence": [
+              {
+                "ref": "Gen.5.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.43.6",
+                "note": "“Bring my sons from far and my daughters from the end of the earth”; compare 2Co 6:18."
+              }
+            ]
+          },
+          {
+            "lemma": "זֶרַע",
+            "note": "Son and seed: the son is the father’s seed and carries his line.",
+            "evidence": [
+              {
+                "ref": "Gen.21.13",
+                "role": "defining",
+                "note": "The son of the handmaid: “he is your seed”."
+              },
+              {
+                "ref": "2Sa.7.12",
+                "note": "“I will raise up your seed after you”, who will be “to me a son” (v. 14)."
+              }
+            ]
+          },
+          {
+            "lemma": "אֱנוֹשׁ",
+            "note": "בֶּן־אָדָם beside אֱנוֹשׁ, both mortal man.",
+            "evidence": [
+              {
+                "ref": "Psa.8.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.144.3",
+                "note": "With the order turned: אָדָם … בֶּן־אֱנוֹשׁ."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּנֵי יִשְׂרָאֵל",
+            "gloss": "the sons of Israel, the Israelites",
+            "evidence": [
+              {
+                "ref": "Exo.1.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.10.28"
+              },
+              {
+                "ref": "Lev.23.43"
+              }
+            ]
+          },
+          {
+            "phrase": "בֶּן־אָדָם",
+            "gloss": "son of man: a human being, mortal",
+            "evidence": [
+              {
+                "ref": "Num.23.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.8.5"
+              },
+              {
+                "ref": "Psa.80.18"
+              },
+              {
+                "ref": "Ezk.2.1"
+              }
+            ]
+          },
+          {
+            "phrase": "בֶּן־שְׁנָתוֹ, בְּנֵי שָׁנָה",
+            "gloss": "a year old",
+            "evidence": [
+              {
+                "ref": "Lev.23.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.18"
+              },
+              {
+                "ref": "Exo.12.5"
+              }
+            ]
+          },
+          {
+            "phrase": "בֶּן־בָּקָר",
+            "gloss": "a young bull, one of the herd",
+            "evidence": [
+              {
+                "ref": "Lev.23.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.1.5"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּנֵי הָאֱלֹהִים",
+            "gloss": "sons of God",
+            "evidence": [
+              {
+                "ref": "Gen.6.2"
+              },
+              {
+                "ref": "Gen.6.4"
+              },
+              {
+                "ref": "Job.1.6"
+              },
+              {
+                "ref": "Job.38.7"
+              }
+            ]
+          },
+          {
+            "phrase": "בֶּן־מָוֶת",
+            "gloss": "a son of death: one who must die",
+            "evidence": [
+              {
+                "ref": "1Sa.20.31",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.12.5"
+              }
+            ]
+          },
+          {
+            "phrase": "בֶּן־נֵכָר",
+            "gloss": "a foreigner",
+            "evidence": [
+              {
+                "ref": "Exo.12.43",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.17.12"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּנֵי הַנְּבִיאִים",
+            "gloss": "the sons of the prophets, the prophets’ disciples",
+            "evidence": [
+              {
+                "ref": "2Ki.2.3",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.4.38"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בַּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "daughter; woman of a people; a city and its people; a town’s village; one marked by an age or quality",
+      "summary": "About 800 times, the feminine of בֵּן, from *bint‑ (plural בָּנוֹת keeps the n): a daughter, the women of a people, a city or people pictured as a daughter (בַּת־צִיּוֹן), and the villages that depend on a town.",
+      "bdb": [
+        "b.ca.at"
+      ],
+      "cognate_ids": [
+        "ar-bint",
+        "akk-bintu",
+        "uga-bt",
+        "phn-bt",
+        "sab-bn",
+        "arc-berat"
+      ],
+      "senses": [
+        {
+          "id": "bat-daughter",
+          "gloss": "daughter",
+          "definition": "A female child of her father or mother.",
+          "evidence": [
+            {
+              "ref": "Lev.20.17",
+              "role": "defining",
+              "note": "His sister, בַּת־אָבִיו אוֹ בַת־אִמּוֹ, his father’s daughter or his mother’s daughter."
+            },
+            {
+              "ref": "Gen.5.4",
+              "note": "Adam fathered sons and daughters."
+            },
+            {
+              "ref": "Exo.2.5",
+              "note": "בַּת־פַּרְעֹה came down to bathe at the river."
+            }
+          ]
+        },
+        {
+          "id": "bat-woman",
+          "gloss": "women of a people or a kind",
+          "definition": "The women of a people, a land or a kind, named as its daughters.",
+          "evidence": [
+            {
+              "ref": "Gen.24.3",
+              "role": "defining",
+              "note": "Do not take a wife for my son מִבְּנוֹת הַכְּנַעֲנִי."
+            },
+            {
+              "ref": "Gen.6.2",
+              "note": "בְּנוֹת הָאָדָם, the daughters of man."
+            },
+            {
+              "ref": "Num.25.1",
+              "note": "The people began to commit whoredom with בְּנוֹת מוֹאָב."
+            }
+          ]
+        },
+        {
+          "id": "bat-city",
+          "gloss": "a city or people pictured as a daughter",
+          "definition": "A city or a people spoken of as a daughter, and addressed as one: בַּת־צִיּוֹן is Jerusalem and her people.",
+          "evidence": [
+            {
+              "ref": "Isa.1.8",
+              "role": "defining",
+              "note": "בַת־צִיּוֹן is left like a booth in a vineyard, like a besieged city."
+            },
+            {
+              "ref": "Zec.9.9",
+              "role": "defining",
+              "note": "“Rejoice greatly, בַּת־צִיּוֹן … your king comes to you”; quoted at Mat 21:5 and Jhn 12:15."
+            },
+            {
+              "ref": "Lam.4.6",
+              "note": "The iniquity of בַּת־עַמִּי, the daughter of my people, is greater than Sodom’s."
+            },
+            {
+              "ref": "Jer.46.19",
+              "note": "בַּת־מִצְרָיִם, prepare baggage for exile."
+            }
+          ]
+        },
+        {
+          "id": "bat-village",
+          "gloss": "a town’s dependent villages",
+          "definition": "The small towns that belong to a city, named as its daughters.",
+          "evidence": [
+            {
+              "ref": "Num.21.25",
+              "role": "defining",
+              "note": "Israel dwelt in Heshbon וּבְכָל־בְּנֹתֶיהָ, and in all her daughters."
+            },
+            {
+              "ref": "Jos.15.45",
+              "note": "Ekron, with בְּנֹתֶיהָ and her villages."
+            }
+          ]
+        },
+        {
+          "id": "bat-quality",
+          "gloss": "one marked by an age or quality (idiom)",
+          "definition": "As with בֵּן, “daughter of” a thing is one who has it: an age, a character, a kind.",
+          "evidence": [
+            {
+              "ref": "Gen.17.17",
+              "role": "defining",
+              "note": "Shall Sarah, הֲבַת־תִּשְׁעִים שָׁנָה, ninety years old, bear?"
+            },
+            {
+              "ref": "1Sa.1.16",
+              "note": "Hannah: do not count your handmaid בַּת־בְּלִיָּעַל, a worthless woman."
+            },
+            {
+              "ref": "Lev.11.16",
+              "note": "בַּת הַיַּעֲנָה, the ostrich, among the unclean birds."
+            },
+            {
+              "ref": "Ecc.12.4",
+              "note": "בְּנוֹת הַשִּׁיר, the daughters of song, brought low in old age."
+            },
+            {
+              "ref": "Psa.17.8",
+              "note": "כְּאִישׁוֹן בַּת־עָיִן, as the pupil, the daughter of the eye."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θυγάτηρ",
+          "gloss": "daughter",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "בַּת → θυγάτηρ ×465 (lemma count, MACULA alignment); κώμη ×13 for a town’s בָּנוֹת"
+            },
+            {
+              "ref": "Mat.21.5",
+              "note": "Zec 9:9, “Say to the daughter of Zion.”"
+            },
+            {
+              "ref": "Jhn.12.15",
+              "note": "Zec 9:9, “Fear not, daughter of Zion.”"
+            },
+            {
+              "ref": "2Co.6.18",
+              "note": "“You shall be to me sons and daughters”, from 2Sa 7:14 and Isa 43:6."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בֵּן",
+            "note": "Sons and daughters together, all the children.",
+            "evidence": [
+              {
+                "ref": "Gen.5.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.43.6"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בַּת־צִיּוֹן",
+            "gloss": "the daughter of Zion: Jerusalem and her people",
+            "evidence": [
+              {
+                "ref": "Isa.1.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.9.9"
+              },
+              {
+                "ref": "Isa.62.11"
+              }
+            ]
+          },
+          {
+            "phrase": "בַּת־עַמִּי",
+            "gloss": "the daughter of my people",
+            "evidence": [
+              {
+                "ref": "Lam.4.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.8.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בָּנָה",
+      "pos": "verb",
+      "gloss": "build; rebuild; build up a house, a family, a people",
+      "bdb": [
+        "b.cb.aa"
+      ],
+      "cognate_ids": [
+        "ar-bana",
+        "akk-banu",
+        "uga-bny",
+        "phn-bny",
+        "sab-bny",
+        "arc-bny"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "build; rebuild; build up",
+          "senses": [
+            {
+              "id": "banah-build",
+              "gloss": "build, construct",
+              "definition": "To make a structure by setting its parts together: an altar, a house, a city and its tower, a wall, the house of Yahweh. The participle is the builder.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.20",
+                  "role": "defining",
+                  "note": "Noah built an altar to Yahweh and offered burnt offerings on it."
+                },
+                {
+                  "ref": "Gen.11.4",
+                  "role": "defining",
+                  "note": "“Come, let us build (נִבְנֶה) us a city and a tower.”"
+                },
+                {
+                  "ref": "1Ki.6.1",
+                  "role": "defining",
+                  "note": "In the four hundred and eightieth year Solomon built the house to Yahweh."
+                },
+                {
+                  "ref": "Deu.8.12",
+                  "note": "Lest you build good houses and dwell in them, and forget."
+                },
+                {
+                  "ref": "Deu.20.5",
+                  "note": "Who has built a new house and not dedicated it?"
+                },
+                {
+                  "ref": "Psa.127.1",
+                  "role": "defining",
+                  "note": "Unless Yahweh builds the house, its builders (בוֹנָיו) labour in vain."
+                },
+                {
+                  "ref": "Psa.118.22",
+                  "note": "The stone הַבּוֹנִים rejected has become head of the corner; Mat 21:42, Act 4:11."
+                },
+                {
+                  "ref": "Isa.66.1",
+                  "note": "“What house will you build me?”; Act 7:49."
+                }
+              ]
+            },
+            {
+              "id": "banah-rebuild",
+              "gloss": "build again, restore",
+              "definition": "To build again what has fallen or been destroyed: Jerusalem, its wall and temple, the tabernacle of David.",
+              "evidence": [
+                {
+                  "ref": "Amo.9.11",
+                  "role": "defining",
+                  "note": "“I will raise up the fallen tabernacle of David … and I will build it as in the days of old”; Act 15:16."
+                },
+                {
+                  "ref": "Isa.58.12",
+                  "note": "They shall build the old wastes."
+                },
+                {
+                  "ref": "Neh.2.17",
+                  "note": "“Come, let us build the wall of Jerusalem.”"
+                },
+                {
+                  "ref": "Jos.6.26",
+                  "note": "Cursed the man who rises up and builds this city Jericho."
+                },
+                {
+                  "ref": "Psa.51.20",
+                  "note": "“Build the walls of Jerusalem.”"
+                }
+              ]
+            },
+            {
+              "id": "banah-fashion",
+              "gloss": "build, fashion (of God’s making)",
+              "definition": "Of God’s own work, to build a thing into its form: the woman from the rib, his chambers in the heavens, his sanctuary.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.22",
+                  "role": "defining",
+                  "note": "Yahweh God built the rib he had taken from the man into a woman."
+                },
+                {
+                  "ref": "Amo.9.6",
+                  "note": "He who builds his upper chambers in the heavens."
+                },
+                {
+                  "ref": "Psa.78.69",
+                  "note": "He built his sanctuary like the heights, like the earth he founded for ever."
+                },
+                {
+                  "ref": "Pro.9.1",
+                  "note": "Wisdom has built her house, hewn out her seven pillars."
+                }
+              ]
+            },
+            {
+              "id": "banah-family",
+              "gloss": "build a house: raise up a family, a line",
+              "definition": "To build a man a house is to give him children and a line that lasts; to build a brother’s house is to raise up a son to carry his name.",
+              "evidence": [
+                {
+                  "ref": "Deu.25.9",
+                  "role": "defining",
+                  "note": "“So shall it be done to the man who will not build up his brother’s house”: the brother who will not raise up a son to the dead."
+                },
+                {
+                  "ref": "Rut.4.11",
+                  "role": "defining",
+                  "note": "Like Rachel and Leah, “who both built the house of Israel”, by the sons they bore."
+                },
+                {
+                  "ref": "2Sa.7.27",
+                  "role": "defining",
+                  "note": "“You have revealed to your servant, saying, I will build you a house”: Yahweh’s promise of David’s line (v. 11–16)."
+                },
+                {
+                  "ref": "1Sa.2.35",
+                  "note": "A faithful priest: “I will build him a sure house.”"
+                },
+                {
+                  "ref": "1Ki.11.38",
+                  "note": "To Jeroboam: “I will build you a sure house, as I built for David.”"
+                },
+                {
+                  "ref": "Psa.89.5",
+                  "note": "“Your seed I will establish for ever, and build your throne to all generations.”"
+                }
+              ],
+              "kin": [
+                "ben-son"
+              ]
+            },
+            {
+              "id": "banah-up",
+              "gloss": "build up a people, establish them",
+              "definition": "Of Yahweh with a people, to build them up and establish them in their land, set against pulling down and rooting up.",
+              "evidence": [
+                {
+                  "ref": "Jer.24.6",
+                  "role": "defining",
+                  "note": "“I will build them and not pull down, plant them and not root them up.”"
+                },
+                {
+                  "ref": "Jer.1.10",
+                  "role": "defining",
+                  "note": "To root out and pull down, to destroy and to throw down, to build and to plant."
+                },
+                {
+                  "ref": "Psa.28.5",
+                  "note": "He will break them down and not build them up."
+                },
+                {
+                  "ref": "Jer.31.4",
+                  "note": "“Again I will build you, and you shall be built, virgin of Israel.”"
+                },
+                {
+                  "ref": "Jer.42.10",
+                  "note": "“If you will abide in this land, I will build you and not pull you down.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be built; be built up, gain children; prosper",
+          "senses": [
+            {
+              "id": "nibnah-built",
+              "gloss": "be built, be rebuilt",
+              "definition": "Of a house, city or temple, to be built or built again.",
+              "evidence": [
+                {
+                  "ref": "1Ki.6.7",
+                  "role": "defining",
+                  "note": "The house, when it was being built, was built of stone made ready at the quarry."
+                },
+                {
+                  "ref": "Isa.44.28",
+                  "note": "Of Cyrus: saying to Jerusalem, “You shall be built.”"
+                },
+                {
+                  "ref": "Dan.9.25",
+                  "note": "From the going out of the word to restore and to build Jerusalem: “it shall be built again, with street and moat.”"
+                },
+                {
+                  "ref": "Zec.1.16",
+                  "note": "“My house shall be built in it.”"
+                },
+                {
+                  "ref": "Num.13.22",
+                  "note": "Hebron was built seven years before Zoan."
+                }
+              ]
+            },
+            {
+              "id": "nibnah-children",
+              "gloss": "be built up: gain children",
+              "definition": "Of a childless wife, to be built up by children borne to her husband through her handmaid: to have a house raised for her.",
+              "evidence": [
+                {
+                  "ref": "Gen.16.2",
+                  "role": "defining",
+                  "note": "Sarai: “Yahweh has kept me from bearing; go in to my handmaid; it may be אִבָּנֶה מִמֶּנָּה, I shall be built up by her.”"
+                },
+                {
+                  "ref": "Gen.30.3",
+                  "role": "defining",
+                  "note": "Rachel: “she shall bear on my knees, וְאִבָּנֶה גַם־אָנֹכִי מִמֶּנָּה.”"
+                }
+              ],
+              "kin": [
+                "ben-son"
+              ]
+            },
+            {
+              "id": "nibnah-prosper",
+              "gloss": "be built up, prosper, be established",
+              "definition": "Of people, to be built up and made to prosper; of kindness or a house, to be established.",
+              "evidence": [
+                {
+                  "ref": "Mal.3.15",
+                  "role": "defining",
+                  "note": "“The workers of wickedness are built up (נִבְנוּ); they tempt God and escape.”"
+                },
+                {
+                  "ref": "Jer.12.16",
+                  "note": "If the nations learn my people’s ways, “they shall be built up in the midst of my people.”"
+                },
+                {
+                  "ref": "Job.22.23",
+                  "note": "“If you return to the Almighty, you shall be built up.”"
+                },
+                {
+                  "ref": "Psa.89.3",
+                  "note": "“Kindness shall be built up for ever.”"
+                },
+                {
+                  "ref": "Pro.24.3",
+                  "note": "Through wisdom a house is built."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "οἰκοδομέω",
+          "gloss": "build",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "בָּנָה → οἰκοδομέω ×259 (lemma count, MACULA alignment); Psa.118.22, הַבּוֹנִים → οἱ οἰκοδομοῦντες"
+            },
+            {
+              "ref": "Mat.21.42",
+              "note": "Psa 118:22: the stone which the builders rejected."
+            },
+            {
+              "ref": "Act.4.11",
+              "note": "Psa 118:22, said to the rulers: “set at nought by you builders.”"
+            },
+            {
+              "ref": "Act.7.47",
+              "note": "“Solomon built him a house.”"
+            },
+            {
+              "ref": "Act.7.49",
+              "note": "Isa 66:1: “what house will you build me?”"
+            },
+            {
+              "ref": "Mat.16.18",
+              "note": "“On this rock I will build my ecclesia.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνοικοδομέω",
+          "gloss": "build again",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "בָּנָה → ἀνοικοδομέω ×12 (lemma count)"
+            },
+            {
+              "ref": "Act.15.16",
+              "note": "Amo 9:11: “I will build again the tabernacle of David which is fallen down.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָטַע",
+            "note": "Build and plant: to settle a people in their land.",
+            "evidence": [
+              {
+                "ref": "Jer.24.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.29.5"
+              },
+              {
+                "ref": "Jer.1.10"
+              }
+            ]
+          },
+          {
+            "lemma": "כּוּן",
+            "note": "Build beside establish, of David’s house and throne.",
+            "evidence": [
+              {
+                "ref": "2Sa.7.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.89.5"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הָרַס",
+            "note": "Build against throw down.",
+            "evidence": [
+              {
+                "ref": "Jer.24.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.28.5"
+              },
+              {
+                "ref": "Jer.1.10"
+              }
+            ]
+          },
+          {
+            "lemma": "נָתַשׁ",
+            "note": "Build against root out.",
+            "evidence": [
+              {
+                "ref": "Jer.1.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.42.10"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בָּנָה מִזְבֵּחַ",
+            "gloss": "build an altar",
+            "evidence": [
+              {
+                "ref": "Gen.8.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.12.7"
+              },
+              {
+                "ref": "Gen.22.9"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּנָה בַיִת לְ־",
+            "gloss": "build someone a house: give him a lasting line",
+            "evidence": [
+              {
+                "ref": "2Sa.7.27",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.2.35"
+              },
+              {
+                "ref": "Deu.25.9"
+              }
+            ]
+          },
+          {
+            "phrase": "הַבּוֹנִים",
+            "gloss": "the builders",
+            "evidence": [
+              {
+                "ref": "Psa.118.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezr.3.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בַּר",
+      "lang": "arc",
+      "root": "בר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "son; (pl. בְּנֵי) children; one of a kind or an age",
+      "summary": "Scripture’s Aramaic for son. The singular is בַּר, but the plural is built on bn (בְּנֵי, בְּנוֹהִי), which shows it is the same word as Hebrew בֵּן. Used as בֵּן is: a son, the young of animals, men as “sons of man”, and age.",
+      "bdb": [
+        "xb.al.ab"
+      ],
+      "cognate_ids": [
+        "arc-bar",
+        "ar-ibn",
+        "akk-binu",
+        "uga-bn",
+        "phn-bn",
+        "sab-bn"
+      ],
+      "senses": [
+        {
+          "id": "bar-son",
+          "gloss": "son, children",
+          "definition": "A son of his father; in the plural, a man’s children.",
+          "evidence": [
+            {
+              "ref": "Dan.5.22",
+              "role": "defining",
+              "note": "“And you, בְּרֵהּ, his son, Belshazzar, have not humbled your heart.”"
+            },
+            {
+              "ref": "Ezr.5.1",
+              "note": "Zechariah בַר־עִדּוֹא, the son of Iddo."
+            },
+            {
+              "ref": "Ezr.6.10",
+              "role": "defining",
+              "note": "To pray for the life of the king וּבְנוֹהִי, and of his sons: the plural from bn."
+            },
+            {
+              "ref": "Dan.6.25",
+              "note": "Cast into the lions’ den, they, בְּנֵיהוֹן and their wives."
+            }
+          ]
+        },
+        {
+          "id": "bar-kind",
+          "gloss": "one of a kind or company; the young of an animal; of an age",
+          "definition": "As in Hebrew, one belonging to a kind or company (sons of men, sons of the exile), the young of cattle, and one of a given age.",
+          "evidence": [
+            {
+              "ref": "Dan.2.38",
+              "role": "defining",
+              "note": "Wherever בְּנֵי־אֲנָשָׁא, men, dwell."
+            },
+            {
+              "ref": "Dan.2.25",
+              "note": "A man מִן־בְּנֵי גָלוּתָא, of the exiles of Judah."
+            },
+            {
+              "ref": "Ezr.6.16",
+              "note": "בְנֵי־יִשְׂרָאֵל, the priests and Levites and the rest of the בְנֵי־גָלוּתָא kept the dedication."
+            },
+            {
+              "ref": "Ezr.6.9",
+              "role": "defining",
+              "note": "וּבְנֵי תוֹרִין, young bulls, for burnt offerings."
+            },
+            {
+              "ref": "Dan.6.1",
+              "role": "defining",
+              "note": "Darius received the kingdom כְּבַר שְׁנִין שִׁתִּין וְתַרְתֵּין, about sixty-two years old."
+            },
+            {
+              "ref": "Dan.3.25",
+              "note": "The fourth is like בַר־אֱלָהִין, a son of the gods, in the king’s words."
+            }
+          ]
+        },
+        {
+          "id": "bar-enash",
+          "gloss": "כְּבַר אֱנָשׁ, one like a son of man",
+          "definition": "In Daniel’s vision, one in human form, set against the beasts, who comes with the clouds of heaven to the Ancient of days and is given the kingdom; Jesus takes the title for himself.",
+          "evidence": [
+            {
+              "ref": "Dan.7.13",
+              "role": "defining",
+              "note": "With the clouds of heaven came כְּבַר אֱנָשׁ, and he came to the Ancient of days, and there was given him dominion (v. 14)."
+            },
+            {
+              "ref": "Mat.26.64",
+              "note": "“You shall see the Son of man sitting at the right hand of power and coming on the clouds of heaven.”"
+            },
+            {
+              "ref": "Rev.1.13",
+              "note": "One like a son of man among the lampstands."
+            }
+          ]
+        },
+        {
+          "id": "bar-interpreted",
+          "gloss": "בַּר in names, as the New Testament explains them",
+          "definition": "The New Testament keeps בַּר and its plural בְּנֵי in Aramaic surnames and translates them υἱός, υἱοί: scripture’s own gloss of the word.",
+          "evidence": [
+            {
+              "ref": "Act.4.36",
+              "role": "defining",
+              "note": "Joseph, surnamed Barnabas, “which is, being interpreted, son (υἱός) of consolation”."
+            },
+            {
+              "ref": "Mrk.3.17",
+              "role": "defining",
+              "note": "Boanerges, “which is, sons (υἱοί) of thunder”: the plural בְּנֵי; the Peshitta writes ܒܢܝ ܪܓܫܝ … ܒܢܝ ܪܥܡܐ."
+            },
+            {
+              "ref": "Mat.16.17",
+              "note": "Simon Βαριωνᾶ, son of Jonah."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "υἱός",
+          "gloss": "son",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.7.13, כְּבַר אֱנָשׁ → ὡς υἱὸς ἀνθρώπου (MACULA alignment)"
+            },
+            {
+              "ref": "Mat.26.64",
+              "note": "Dan 7:13: the Son of man coming on the clouds of heaven."
+            },
+            {
+              "ref": "Rev.14.14",
+              "note": "On the cloud one sat like a son of man."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בַּר אֱנָשׁ, בְּנֵי אֲנָשָׁא",
+            "gloss": "a son of man; men",
+            "evidence": [
+              {
+                "ref": "Dan.7.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.2.38"
+              },
+              {
+                "ref": "Dan.5.21"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּנֵי גָלוּתָא",
+            "gloss": "the sons of the exile, the returned exiles",
+            "evidence": [
+              {
+                "ref": "Dan.2.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezr.6.16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בְּנָה",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "build; (hithpeel) be built",
+      "summary": "Scripture’s Aramaic verb, used in Ezra of the rebuilding of the house of God and the wall, and by Nebuchadnezzar of the Babylon he built.",
+      "bdb": [
+        "xb.ai.aa"
+      ],
+      "cognate_ids": [
+        "arc-bny",
+        "ar-bana",
+        "akk-banu",
+        "uga-bny",
+        "phn-bny",
+        "sab-bny"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "build, rebuild",
+          "senses": [
+            {
+              "id": "arc-build",
+              "gloss": "build, rebuild",
+              "definition": "To build a city or a house, and to rebuild the house of God in Jerusalem.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.27",
+                  "role": "defining",
+                  "note": "“Is not this great Babylon, which I have built (בֱנַיְתַהּ) for the house of the kingdom?”"
+                },
+                {
+                  "ref": "Ezr.5.2",
+                  "role": "defining",
+                  "note": "Zerubbabel and Jeshua began לְמִבְנֵא the house of God in Jerusalem."
+                },
+                {
+                  "ref": "Ezr.5.11",
+                  "note": "“We are building the house that was built many years ago, which a great king of Israel built.”"
+                },
+                {
+                  "ref": "Ezr.6.14",
+                  "note": "The elders of the Jews built and prospered through the prophesying of Haggai and Zechariah."
+                },
+                {
+                  "ref": "Ezr.4.12",
+                  "note": "Rebuilding the rebellious and bad city."
+                }
+              ],
+              "kin": [
+                "banah-build",
+                "banah-rebuild"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpeel",
+          "gloss": "be built",
+          "senses": [
+            {
+              "gloss": "be built, be rebuilt",
+              "definition": "Of the city and the house of God, to be built or rebuilt.",
+              "evidence": [
+                {
+                  "ref": "Ezr.6.3",
+                  "role": "defining",
+                  "note": "Cyrus’s decree: “Let the house be built (יִתְבְּנֵא), the place where they offer sacrifices.”"
+                },
+                {
+                  "ref": "Ezr.4.13",
+                  "note": "If this city is built and the walls finished."
+                },
+                {
+                  "ref": "Ezr.5.16",
+                  "note": "From then until now it has been building and is not finished."
+                }
+              ],
+              "kin": [
+                "nibnah-built"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "οἰκοδομέω",
+          "gloss": "build",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "בְּנָה (Aramaic) → οἰκοδομέω ×11 (lemma count, MACULA alignment)"
+            },
+            {
+              "ref": "Act.7.47",
+              "note": "Of Solomon’s house, which Ezra’s letter calls the house “a great king of Israel built” (Ezr 5:11)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּבְנִית",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pattern, plan; form, likeness",
+      "summary": "Twenty times: the pattern a thing is built by, above all the pattern of the tabernacle shown to Moses on the mount, and the form or likeness of a thing, as of the figures Israel must not make.",
+      "bdb": [
+        "b.cb.ao"
+      ],
+      "cognate_ids": [
+        "akk-binutu",
+        "ar-bana"
+      ],
+      "senses": [
+        {
+          "id": "tabnit-pattern",
+          "gloss": "pattern, plan for building",
+          "definition": "The design a thing is built or made by, shown or written beforehand.",
+          "evidence": [
+            {
+              "ref": "Exo.25.9",
+              "role": "defining",
+              "note": "“According to all that I show you, the תַּבְנִית of the tabernacle and the תַּבְנִית of all its vessels, so shall you make it.”"
+            },
+            {
+              "ref": "Exo.25.40",
+              "role": "defining",
+              "note": "“See that you make them בְּתַבְנִיתָם, which you were shown on the mount”; Act 7:44, Heb 8:5."
+            },
+            {
+              "ref": "1Ch.28.11",
+              "note": "David gave Solomon the תַּבְנִית of the porch, the houses and the rest."
+            },
+            {
+              "ref": "1Ch.28.19",
+              "note": "“All this in writing from the hand of Yahweh … all the works of the תַּבְנִית.”"
+            },
+            {
+              "ref": "2Ki.16.10",
+              "note": "Ahaz sent Urijah the likeness of the Damascus altar and its תַּבְנִית for all its workmanship."
+            },
+            {
+              "ref": "Jos.22.28",
+              "note": "“Behold the תַּבְנִית of the altar of Yahweh”: a copy, built as a witness."
+            }
+          ],
+          "kin": [
+            "banah-build"
+          ]
+        },
+        {
+          "id": "tabnit-form",
+          "gloss": "form, figure, likeness",
+          "definition": "The shape or likeness of a thing, a figure made in its form.",
+          "evidence": [
+            {
+              "ref": "Deu.4.16",
+              "role": "defining",
+              "note": "Lest you make a graven image, תַּבְנִית זָכָר אוֹ נְקֵבָה, the likeness of male or female (and of beast, bird, creeping thing and fish, v. 17–18)."
+            },
+            {
+              "ref": "Psa.106.20",
+              "role": "defining",
+              "note": "They exchanged their glory for בְּתַבְנִית שׁוֹר, the likeness of an ox that eats grass."
+            },
+            {
+              "ref": "Isa.44.13",
+              "note": "The carpenter makes the idol כְּתַבְנִית אִישׁ, after the figure of a man."
+            },
+            {
+              "ref": "Ezk.8.3",
+              "note": "He put forth תַּבְנִית יָד, the form of a hand."
+            },
+            {
+              "ref": "Psa.144.12",
+              "note": "Our daughters as corner pillars carved after תַּבְנִית הֵיכָל, the fashion of a palace."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τύπος",
+          "gloss": "pattern, type",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.25.40, בְּתַבְנִיתָם → κατὰ τὸν τύπον (the alignment attaches τύπον to the suffix)"
+            },
+            {
+              "ref": "Heb.8.5",
+              "role": "defining",
+              "note": "Exo 25:40: “See that you make all things according to the pattern (τύπον) shown you in the mount”: the priests serve the copy and shadow of heavenly things."
+            },
+            {
+              "ref": "Act.7.44",
+              "note": "The tabernacle made “according to the τύπον he had seen”."
+            }
+          ]
+        },
+        {
+          "lemma": "ὁμοίωμα",
+          "gloss": "likeness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "תַּבְנִית → ὁμοίωμα ×8 (lemma count); Deu.4.16–18, Psa.106.20"
+            },
+            {
+              "ref": "Rom.1.23",
+              "note": "They changed the glory of the incorruptible God into the likeness (ὁμοιώματι) of an image of man, birds, beasts and creeping things: the words of Psa 106:20 and Deu 4:16–18."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּנְיָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "building, structure",
+      "summary": "Seven times, all in Ezekiel’s vision of the house (Ezk 40–42): a building measured by the man with the reed.",
+      "bdb": [
+        "b.cb.ah"
+      ],
+      "cognate_ids": [
+        "ar-bana",
+        "arc-binyana"
+      ],
+      "senses": [
+        {
+          "id": "binyan-structure",
+          "gloss": "building, structure",
+          "definition": "A built structure: the wall about the house, and the building west of the separate place.",
+          "evidence": [
+            {
+              "ref": "Ezk.40.5",
+              "role": "defining",
+              "note": "He measured the breadth of הַבִּנְיָן, one reed, and the height, one reed."
+            },
+            {
+              "ref": "Ezk.41.12",
+              "note": "The building before the separate place toward the west, seventy cubits broad."
+            },
+            {
+              "ref": "Ezk.42.1",
+              "note": "The chamber over against the building toward the north."
+            }
+          ],
+          "kin": [
+            "banah-build"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בַּר",
+      "root": "בר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "son (the Aramaic form, in Hebrew poetry)",
+      "summary": "Four times in Hebrew: three times in the words of king Lemuel’s mother (Pro 31:2) and in Psa 2:12. It is the Aramaic word for son used in Hebrew; in Psalm 2 it answers to “you are my son” (בְּנִי) of v. 7.",
+      "bdb": [
+        "b.cv.ac"
+      ],
+      "cognate_ids": [
+        "arc-bar"
+      ],
+      "senses": [
+        {
+          "gloss": "son",
+          "definition": "A son: the son of a mother’s womb and vows, and in Psalm 2 the king Yahweh calls his son, to whom the kings of the earth are to do homage.",
+          "evidence": [
+            {
+              "ref": "Pro.31.2",
+              "role": "defining",
+              "note": "“What, בְּרִי? and what, בַּר־בִּטְנִי, son of my womb? and what, בַּר־נְדָרָי, son of my vows?”"
+            },
+            {
+              "ref": "Psa.2.12",
+              "note": "נַשְּׁקוּ־בַר, kiss the son, lest he be angry; after “You are my son (בְּנִי)” in v. 7."
+            }
+          ],
+          "kin": [
+            "ben-son",
+            "ben-god"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּנְיָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "building, structure",
+      "summary": "Once, beside בִּנְיָן in the same vision (Ezk 41:13); a single use, its sense fixed by its context and its sibling.",
+      "bdb": [
+        "b.cb.af"
+      ],
+      "cognate_ids": [
+        "ar-bana"
+      ],
+      "senses": [
+        {
+          "gloss": "building",
+          "definition": "A built structure, measured with the house and the separate place.",
+          "evidence": [
+            {
+              "ref": "Ezk.41.13",
+              "role": "defining",
+              "note": "He measured the house, a hundred cubits long, and the separate place וְהַבִּנְיָה and its walls, a hundred cubits."
+            }
+          ],
+          "kin": [
+            "binyan-structure"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִבְנֶה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "structure, frame",
+      "summary": "Once (Ezk 40:2): what Ezekiel saw on the very high mountain was “as the frame of a city”.",
+      "bdb": [
+        "b.cb.am"
+      ],
+      "cognate_ids": [
+        "ar-bana"
+      ],
+      "senses": [
+        {
+          "gloss": "structure, frame of a building",
+          "definition": "The built frame of a city, seen in vision.",
+          "evidence": [
+            {
+              "ref": "Ezk.40.2",
+              "role": "defining",
+              "note": "On a very high mountain, וְעָלָיו כְּמִבְנֵה־עִיר, on it as the frame of a city, on the south."
+            }
+          ],
+          "kin": [
+            "binyan-structure"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "οἰκοδομή",
+          "gloss": "building",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מִבְנֶה → οἰκοδομή ×1 (Ezk.40.2)"
+            },
+            {
+              "ref": "Eph.2.21",
+              "note": "In whom all the building (οἰκοδομή), fitly framed together, grows into a holy temple in the Lord."
+            },
+            {
+              "ref": "1Co.3.9",
+              "note": "“You are God’s building.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּנְיָן",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "building",
+      "summary": "Once in scripture’s Aramaic (Ezr 5:4), of the house of God being rebuilt.",
+      "bdb": [
+        "xb.ai.ab"
+      ],
+      "cognate_ids": [
+        "arc-binyana",
+        "ar-bana"
+      ],
+      "senses": [
+        {
+          "gloss": "building",
+          "definition": "A building under construction.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.4",
+              "role": "defining",
+              "note": "“What are the names of the men who are building דְנָה בִנְיָנָא, this building?”"
+            }
+          ],
+          "kin": [
+            "binyan-structure"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "son; (pl. ܒܢܝܐ) children; the young of an animal",
+      "summary": "The Peshitta’s ܒܪܐ (brā), in about 660 verses, for υἱός and τέκνον; its plural ܒܢܝܐ (bnayyā) is built on bn, as Biblical Aramaic’s is.",
+      "cognate_ids": [
+        "arc-bar",
+        "ar-ibn",
+        "akk-binu",
+        "uga-bn",
+        "phn-bn",
+        "sab-bn"
+      ],
+      "senses": [
+        {
+          "gloss": "son; the Son of God; the son of man",
+          "definition": "A son of his father; Jesus as the beloved Son of God and as the son of man; in the plural, children; and the young of an animal.",
+          "evidence": [
+            {
+              "ref": "Mat.3.17",
+              "role": "defining",
+              "note": "“This is ܒܪܝ ܚܒܝܒܐ, my beloved Son.”"
+            },
+            {
+              "ref": "Mat.26.64",
+              "role": "defining",
+              "note": "ܠܒܪܗ ܕܐܢܫܐ, the son of man, sitting at the right hand of power (Dan 7:13)."
+            },
+            {
+              "ref": "Act.4.36",
+              "note": "Barnabas, interpreted ܒܪܐ ܕܒܘܝܐܐ, son of consolation."
+            },
+            {
+              "ref": "Mrk.3.17",
+              "note": "ܒܢܝ ܪܥܡܐ, sons of thunder: the plural from bn."
+            },
+            {
+              "ref": "Mat.21.5",
+              "note": "Zec 9:9: on a colt, ܒܪ ܐܬܢܐ, the young of an ass."
+            }
+          ],
+          "kin": [
+            "ben-son",
+            "ben-young",
+            "bar-enash"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּנָא",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "build",
+      "summary": "The Peshitta’s ܒܢܐ (bnā), in about 44 verses, for οἰκοδομέω and ἐποικοδομέω.",
+      "cognate_ids": [
+        "arc-bny",
+        "ar-bana",
+        "akk-banu",
+        "uga-bny",
+        "phn-bny",
+        "sab-bny"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "build",
+          "senses": [
+            {
+              "gloss": "build, build again",
+              "definition": "To build a house or temple, and of Jesus building his ecclesia and raising again the tabernacle of David.",
+              "evidence": [
+                {
+                  "ref": "Mat.16.18",
+                  "role": "defining",
+                  "note": "“On this rock ܐܒܢܝܗ ܠܥܕܬܝ, I will build my ecclesia.”"
+                },
+                {
+                  "ref": "Act.15.16",
+                  "role": "defining",
+                  "note": "Amo 9:11: “I will raise up the tabernacle of David that is fallen, ܘܐܒܢܐ, and build what has fallen of it.”"
+                },
+                {
+                  "ref": "Mat.26.61",
+                  "note": "“I am able to destroy the temple of God and build it in three days.”"
+                }
+              ],
+              "kin": [
+                "banah-build",
+                "banah-rebuild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּרַתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "daughter",
+      "summary": "The Peshitta’s ܒܪܬܐ (brattā), in about 39 verses, for θυγάτηρ.",
+      "cognate_ids": [
+        "arc-berat",
+        "ar-bint",
+        "akk-bintu",
+        "uga-bt",
+        "phn-bt",
+        "sab-bn"
+      ],
+      "senses": [
+        {
+          "gloss": "daughter; the daughter of Zion",
+          "definition": "A daughter, a woman of Abraham’s line, and Zion as a daughter.",
+          "evidence": [
+            {
+              "ref": "Mat.21.5",
+              "role": "defining",
+              "note": "Zec 9:9: ܐܡܪܘ ܠܒܪܬ ܨܗܝܘܢ, say to the daughter of Zion."
+            },
+            {
+              "ref": "Luk.13.16",
+              "note": "“This woman, a daughter of Abraham.”"
+            },
+            {
+              "ref": "2Co.6.18",
+              "note": "“You shall be to me sons and daughters.”"
+            }
+          ],
+          "kin": [
+            "bat-daughter",
+            "bat-city"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֵּנְיָנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "building; edification",
+      "summary": "The Peshitta’s ܒܢܝܢܐ (bennyānā), in about 20 verses, for οἰκοδομή: a building, and the building up of the ecclesia.",
+      "cognate_ids": [
+        "arc-binyana",
+        "ar-bana"
+      ],
+      "senses": [
+        {
+          "gloss": "building; building up",
+          "definition": "A building, as the temple’s buildings; the ecclesia as God’s building; and the building up of its members.",
+          "evidence": [
+            {
+              "ref": "Eph.2.21",
+              "role": "defining",
+              "note": "In him all ܒܢܝܢܐ is fitted together and grows into a holy temple in the Lord."
+            },
+            {
+              "ref": "Mrk.13.1",
+              "note": "“See what stones and what buildings!”"
+            },
+            {
+              "ref": "1Co.14.3",
+              "note": "He who prophesies speaks to men for building up."
+            },
+            {
+              "ref": "Heb.3.3",
+              "note": "The builder of the house has more honour than ܒܢܝܢܗ, the house he built."
+            }
+          ],
+          "kin": [
+            "binyan-structure"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בַּנָּיָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "builder",
+      "summary": "The Peshitta’s ܒܢܝܐ (bannāyā), in 5 verses, the builders of Psa 118:22 and the builder of the house in Heb 3:3.",
+      "cognate_ids": [
+        "ar-bana",
+        "arc-bny"
+      ],
+      "senses": [
+        {
+          "gloss": "builder",
+          "definition": "One who builds; the builders who rejected the stone, and Christ as builder of God’s house.",
+          "evidence": [
+            {
+              "ref": "Mat.21.42",
+              "role": "defining",
+              "note": "Psa 118:22: the stone ܕܐܣܠܝܘ ܒܢܝܐ, which the builders rejected."
+            },
+            {
+              "ref": "Act.4.11",
+              "note": "Said to the rulers of Israel, the builders."
+            },
+            {
+              "ref": "Heb.3.3",
+              "note": "ܒܢܝܗ ܕܒܝܬܐ, the builder of the house."
+            }
+          ],
+          "kin": [
+            "banah-build"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bana",
+      "lang": "ar",
+      "form": "بَنَى، بِنَاءٌ، بُنْيَانٌ، بِنْيَةٌ، بَنَّاءٌ",
+      "translit": "banā, bināʾ, bunyān, binya, bannāʾ",
+      "gloss": "build, frame, construct; a building; form of a building, bodily constitution; builder",
+      "relation": "cognate",
+      "note": "Lane’s sources give banā “he built it; framed it; constructed it” (of a house or tent), bināʾ and bunyān “a building, a structure”, binya “a form, mode or manner of building; natural constitution”, bannāʾ “a builder”. These answer to the verb and to בִּנְיָן, בִּנְיָה, מִבְנֶה, and binya “form” to תַּבְנִית.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 260, root بنى, بَنَاهُ (n3345)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 261, بِنَآءٌ (n3360), بِنْيَةٌ (n3356), بَنَّآءٌ (n3364)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ibn",
+      "lang": "ar",
+      "form": "اِبْنٌ، بُنُوَّةٌ",
+      "translit": "ibn, bunuwwa",
+      "gloss": "son, descendant; sonship",
+      "relation": "cognate",
+      "note": "Lane files ibn “a son; a son’s son; a descendant more remote” under the root of banā “build”, and records the Arab philologist ar‑Rāghib’s explanation that the son is so called “because he is the father’s building, made to be so by God”; some held it to be originally banaw. ibn also forms phrases of the Hebrew kind: ibn as‑sabīl “son of the road”, a traveller.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 262, اِبْنٌ (n3368); p. 263, اِبْنُ اللَّيْلِ (n3369)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 260, اِبْنٌ (n3342); p. 261, بُنُوَّةٌ (n3362)"
+        }
+      ]
+    },
+    {
+      "id": "ar-bint",
+      "lang": "ar",
+      "form": "بِنْتٌ، اِبْنَةٌ",
+      "translit": "bint, ibna",
+      "gloss": "daughter",
+      "relation": "cognate",
+      "note": "The feminine of ibn, plural banāt, filed in the same article.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 261, بِنْتٌ (n3349), بَنَاتٌ (n3353); p. 263, اِبْنَةٌ (n3370)"
+        }
+      ]
+    },
+    {
+      "id": "akk-banu",
+      "lang": "akk",
+      "form": "banû, bānû",
+      "translit": "banû, bānû",
+      "gloss": "build, create, form, engender; builder, creator, begetter",
+      "relation": "cognate",
+      "note": "The Akkadian verb covers building, a god’s creating, and engendering, and its noun bānû is builder, creator and begetter: the same span as בָּנָה from the house built to the woman built from the rib (Gen 2:22) and the family built (Gen 16:2).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000007640, banû [create] V (build, create, engender, fashion, form)"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000036390, bānû [creator] N (begetter, builder, creator)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000016 bny [build]; AKK001298 banû [create]"
+        }
+      ]
+    },
+    {
+      "id": "akk-binutu",
+      "lang": "akk",
+      "form": "binûtu",
+      "translit": "binûtu",
+      "gloss": "creation, creature; form, appearance",
+      "relation": "cognate",
+      "note": "A noun of banû meaning what is made and its form or appearance, as תַּבְנִית is both the pattern built by and the form of a thing.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000036400, binûtu [creation] N (appearance, creation, creature, form, nature, product)"
+        }
+      ]
+    },
+    {
+      "id": "akk-binu",
+      "lang": "akk",
+      "form": "bīnu",
+      "translit": "bīnu",
+      "gloss": "son",
+      "relation": "cognate",
+      "note": "Rare (Neo-Assyrian and later; Akkadian’s usual word is māru), but the same word as בֵּן.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000087380, bīnu [son] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000017 bn [son]; AKK001499 bīnu [son]"
+        }
+      ]
+    },
+    {
+      "id": "akk-bintu",
+      "lang": "akk",
+      "form": "bintu",
+      "translit": "bintu",
+      "gloss": "daughter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000040850, bintu [daughter] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000015 bnt [daughter]; AKK001498 bintu"
+        }
+      ]
+    },
+    {
+      "id": "uga-bny",
+      "lang": "uga",
+      "form": "𐎁𐎐𐎊, 𐎁𐎐𐎆𐎚",
+      "translit": "bny, bnwt",
+      "gloss": "build; engendering power",
+      "relation": "cognate",
+      "note": "Segert glosses bnwt “engendering power, virility”, beside the verb b‑n‑y “to build”, as Akkadian banû is both.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 181, §93 Glossary, /b-n-y/ “to build”; bnwt “engendering power”"
+        }
+      ]
+    },
+    {
+      "id": "uga-bn",
+      "lang": "uga",
+      "form": "𐎁𐎐",
+      "translit": "bn",
+      "gloss": "son; (bnš) man, “son of mankind”",
+      "relation": "cognate",
+      "note": "Segert vocalizes /bun‑/ and gives bnš “man” as bn “son” + nš “mankind”, the counterpart of בֶּן־אָדָם and Aramaic בַּר אֱנָשׁ.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 181, §93 Glossary, bn /bun-/ “son”; bnš “man”"
+        }
+      ]
+    },
+    {
+      "id": "uga-bt",
+      "lang": "uga",
+      "form": "𐎁𐎚",
+      "translit": "bt, pl. bnt",
+      "gloss": "daughter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 182, §93 Glossary, bt “daughter”, pl. bnt"
+        }
+      ]
+    },
+    {
+      "id": "phn-bny",
+      "lang": "phn",
+      "form": "𐤁𐤍𐤉",
+      "translit": "bny",
+      "gloss": "build; erect a stele; building (the activity)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 105, B-N-Y (BUILD; ERECT a stele); p. 103, BNʾ II (BUILDING, the activity)"
+        }
+      ]
+    },
+    {
+      "id": "phn-bn",
+      "lang": "phn",
+      "form": "𐤁𐤍",
+      "translit": "bn",
+      "gloss": "son; son of a god = worshipper; (bn ʾdm) person, human",
+      "relation": "cognate",
+      "note": "Phoenician-Punic has the same idioms: bn bn “grandson”, bn ʾdm “a person”, pl. “humans” set against gods.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 103, BN I (SON; SON OF a god = WORSHIPPER); p. 104, BNʾDM (PERSON; pl. HUMANS); p. 104, BNBN (GRANDSON)"
+        }
+      ]
+    },
+    {
+      "id": "phn-bt",
+      "lang": "phn",
+      "form": "𐤁𐤕",
+      "translit": "bt",
+      "gloss": "daughter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 127–128, BT I (DAUGHTER)"
+        }
+      ]
+    },
+    {
+      "id": "sab-bn",
+      "lang": "sem",
+      "form": "bn, f. bt, bnt",
+      "translit": "bn, bt",
+      "gloss": "son; daughter (Sabaean)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 47, BNW I (SON; f. DAUGHTER)"
+        }
+      ]
+    },
+    {
+      "id": "sab-bny",
+      "lang": "sem",
+      "form": "bny",
+      "translit": "bny",
+      "gloss": "build, construct; building, construction (Sabaean)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 48, BNY (BUILD, CONSTRUCT; BUILDING, CONSTRUCTION)"
+        }
+      ]
+    },
+    {
+      "id": "arc-bny",
+      "lang": "arc",
+      "form": "בְּנֵי, בְּנָא",
+      "translit": "bənē, bənā",
+      "gloss": "build",
+      "relation": "cognate",
+      "note": "Jewish Aramaic; the Targum uses it at Deu 25:9, “who will not build up his brother’s house”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בְּנֵי (ch.); s.v. בְּנָא",
+          "note": "Targ. Deut. XXV, 9; Targ. Gen. IV, 17."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000016 bny [build]; ARM004356 BNY [build]"
+        }
+      ]
+    },
+    {
+      "id": "arc-bar",
+      "lang": "arc",
+      "form": "בַּר, בְּרָא",
+      "translit": "bar, bərā",
+      "gloss": "son, offspring",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בַּר II",
+          "note": "Targ. Gen. IV, 25."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000017 bn [son]; ARM004339 bn [son]"
+        }
+      ]
+    },
+    {
+      "id": "arc-berat",
+      "lang": "arc",
+      "form": "בְּרַת, בְּרַתָּא",
+      "translit": "bərat, bərattā",
+      "gloss": "daughter, child, issue",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בְּרַת I",
+          "note": "Targ. Gen. XXX, 21."
+        }
+      ]
+    },
+    {
+      "id": "arc-binyana",
+      "lang": "arc",
+      "form": "בִּנְיָנָא",
+      "translit": "binyānā",
+      "gloss": "building",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בִּנְיָנָא; s.v. בִּנְיָן",
+          "note": "Targ. Koh. III, 3."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "house-of-david",
+      "statement": "David wanted to build Yahweh a house; Yahweh answered that he would make David a house, raise up his seed after him, and “he shall build a house for my name, and I will establish the throne of his kingdom for ever. I will be to him a father, and he shall be to me a son” (2Sa 7:5, 11–14, 16), and David took it as “I will build you a house” (2Sa 7:27). Building a house means both a building and a line of sons (Deu 25:9; Rut 4:11). Zechariah says of the man whose name is the Branch, “he shall build the temple of Yahweh … and shall be a priest upon his throne” (Zec 6:12–13), and Amos that Yahweh will build again the fallen tabernacle of David (Amo 9:11). Hebrews applies “I will be to him a Father, and he shall be to me a Son” to Jesus (Heb 1:5), Gabriel promises him “the throne of his father David” for ever (Luk 1:32–33), James reads Amos of the gathering of the nations (Act 15:14–16), and Jesus says “I will build my ecclesia” (Mat 16:18), a house of living stones (1Pe 2:5) “whose house are we” (Heb 3:6). From the verses: the son of David who builds Yahweh’s house is Jesus; the house he builds is a people, and the throne promised with it is David’s throne, established for ever.",
+      "evidence": [
+        {
+          "ref": "2Sa.7.5"
+        },
+        {
+          "ref": "2Sa.7.11"
+        },
+        {
+          "ref": "2Sa.7.12"
+        },
+        {
+          "ref": "2Sa.7.13"
+        },
+        {
+          "ref": "2Sa.7.14"
+        },
+        {
+          "ref": "2Sa.7.16"
+        },
+        {
+          "ref": "2Sa.7.27"
+        },
+        {
+          "ref": "Deu.25.9"
+        },
+        {
+          "ref": "Rut.4.11"
+        },
+        {
+          "ref": "Zec.6.12"
+        },
+        {
+          "ref": "Zec.6.13"
+        },
+        {
+          "ref": "Amo.9.11"
+        },
+        {
+          "ref": "Heb.1.5"
+        },
+        {
+          "ref": "Luk.1.32"
+        },
+        {
+          "ref": "Luk.1.33"
+        },
+        {
+          "ref": "Act.15.16"
+        },
+        {
+          "ref": "Mat.16.18"
+        },
+        {
+          "ref": "1Pe.2.5"
+        },
+        {
+          "ref": "Heb.3.6"
+        }
+      ]
+    },
+    {
+      "topic": "son-of-god",
+      "statement": "A בֵּן is one born of his father: Seth, Isaac (Gen 4:25; 21:3). Yahweh calls Israel “my son, my firstborn” (Exo 4:22), and of David’s seed says “I will be to him a father, and he shall be to me a son” (2Sa 7:14). To the king in Zion he says, “You are my son; today I have begotten you” (Psa 2:7): the sonship rests on begetting, and it has a day. Paul reads that day as God raising up Jesus (Act 13:33); Gabriel says the holy one born of Mary “shall be called the Son of God” because the holy spirit would come on her and the power of the Highest overshadow her (Luk 1:35); and Paul writes of God’s Son “born of the seed of David according to the flesh, declared to be the Son of God with power … by the resurrection of the dead” (Rom 1:3–4). From the verses: Jesus is Son of God as the Hebrew word means a son, one begotten, who had his beginning when God begot him of Mary, a son of David by his mother and declared Son with power at his resurrection.",
+      "evidence": [
+        {
+          "ref": "Gen.4.25"
+        },
+        {
+          "ref": "Gen.21.3"
+        },
+        {
+          "ref": "Exo.4.22"
+        },
+        {
+          "ref": "2Sa.7.14"
+        },
+        {
+          "ref": "Psa.2.7"
+        },
+        {
+          "ref": "Act.13.33"
+        },
+        {
+          "ref": "Luk.1.35"
+        },
+        {
+          "ref": "Rom.1.3"
+        },
+        {
+          "ref": "Rom.1.4"
+        }
+      ]
+    },
+    {
+      "topic": "son-of-man",
+      "statement": "בֶּן־אָדָם is a human being set against God: “God is not a man, that he should lie, nor a son of man, that he should repent” (Num 23:19); “Do not trust in princes, in a son of man, in whom there is no salvation” (Psa 146:3); and Yahweh addresses the prophet as “son of man” (Ezk 2:1). Psalm 8 asks what the son of man is, that God should visit him, and crowns him with glory over the works of God’s hands (Psa 8:5–7); Hebrews says we see this in Jesus, who “partook of flesh and blood” and was made like his brothers in all things (Heb 2:6–9, 14, 17). Psalm 80 asks Yahweh’s hand to be on “the man of your right hand, the son of man whom you made strong for yourself” (Psa 80:18). Daniel sees one like a son of man (כְּבַר אֱנָשׁ) come with the clouds to the Ancient of days and receive the kingdom (Dan 7:13–14), and Jesus says the high priest will see the Son of man at the right hand of power, coming on the clouds (Mat 26:64). From the verses: the title Jesus takes for himself names him a man of our nature, mortal in himself, whom God made strong, set at his right hand and will give the kingdom.",
+      "evidence": [
+        {
+          "ref": "Num.23.19"
+        },
+        {
+          "ref": "Psa.146.3"
+        },
+        {
+          "ref": "Ezk.2.1"
+        },
+        {
+          "ref": "Psa.8.5"
+        },
+        {
+          "ref": "Heb.2.6"
+        },
+        {
+          "ref": "Heb.2.9"
+        },
+        {
+          "ref": "Heb.2.14"
+        },
+        {
+          "ref": "Heb.2.17"
+        },
+        {
+          "ref": "Psa.80.18"
+        },
+        {
+          "ref": "Dan.7.13"
+        },
+        {
+          "ref": "Dan.7.14"
+        },
+        {
+          "ref": "Mat.26.64"
+        }
+      ]
+    },
+    {
+      "topic": "sons-of-god-genesis-6",
+      "statement": "Scripture calls those who belong to Yahweh his sons: “You are sons to Yahweh your God” (Deu 14:1), “sons of the living God” (Hos 2:1; Rom 9:26), and Luke calls Adam “the son of God” (Luk 3:38). In Gen 4:26, in Enosh’s day, men began to call on the name of Yahweh. In Gen 6 “the sons of God saw the daughters of man … and took them wives of all whom they chose” (Gen 6:2), and Yahweh’s judgment that follows is on man, “for he is flesh” (Gen 6:3). Jesus says the angels of God in heaven neither marry nor are given in marriage (Mat 22:30). From the verses: the sons of God of Gen 6 were men, the line that called on Yahweh’s name, who married outside it.",
+      "evidence": [
+        {
+          "ref": "Deu.14.1"
+        },
+        {
+          "ref": "Hos.2.1"
+        },
+        {
+          "ref": "Rom.9.26"
+        },
+        {
+          "ref": "Luk.3.38"
+        },
+        {
+          "ref": "Gen.4.26"
+        },
+        {
+          "ref": "Gen.6.2"
+        },
+        {
+          "ref": "Gen.6.3"
+        },
+        {
+          "ref": "Mat.22.30"
+        }
+      ]
+    },
+    {
+      "topic": "rejected-stone",
+      "statement": "“The stone which the builders (הַבּוֹנִים) rejected has become the head of the corner. This is Yahweh’s doing” (Psa 118:22–23). Jesus quotes it to the chief priests and Pharisees, who “perceived that he spoke of them” (Mat 21:42–45); Peter says it to the rulers, elders and scribes: “This is the stone which was set at nought by you builders” (Act 4:11); and those who come to him are built up as living stones into a spiritual house (1Pe 2:4–7). From the verses: the builders were Israel’s rulers, who rejected Jesus; Yahweh raised him to be the head stone, and builds his house on him.",
+      "evidence": [
+        {
+          "ref": "Psa.118.22"
+        },
+        {
+          "ref": "Psa.118.23"
+        },
+        {
+          "ref": "Mat.21.42"
+        },
+        {
+          "ref": "Mat.21.45"
+        },
+        {
+          "ref": "Act.4.11"
+        },
+        {
+          "ref": "1Pe.2.4"
+        },
+        {
+          "ref": "1Pe.2.7"
+        }
+      ]
+    },
+    {
+      "topic": "pattern-of-the-tabernacle",
+      "statement": "Moses was to make the tabernacle and its vessels by the תַּבְנִית Yahweh showed him on the mount (Exo 25:9, 40), and David gave Solomon the תַּבְנִית of the temple “in writing from the hand of Yahweh” (1Ch 28:11, 19). Hebrews quotes Exo 25:40 to say that the priests “serve the copy and shadow of heavenly things”, and that it was necessary for the copies of the things in the heavens to be cleansed with these, but the heavenly things themselves with better sacrifices; Christ entered not a holy place made with hands, the figure of the true, but heaven itself (Heb 8:5; 9:23–24). From the verses: the tabernacle was built to a pattern that pointed beyond itself, to Christ’s entry into the presence of God.",
+      "evidence": [
+        {
+          "ref": "Exo.25.9"
+        },
+        {
+          "ref": "Exo.25.40"
+        },
+        {
+          "ref": "1Ch.28.11"
+        },
+        {
+          "ref": "1Ch.28.19"
+        },
+        {
+          "ref": "Heb.8.5"
+        },
+        {
+          "ref": "Heb.9.23"
+        },
+        {
+          "ref": "Heb.9.24"
+        }
+      ]
+    }
+  ],
+  "note": "The corpus keys the verb בנה (BDB b.cb.aa), and BDB files בֵּן (b.ca.aa) and בַּת (b.ca.at) under no root; they are kept here on scripture’s joining of son and house and on the cognates, which pair bn and bny in every branch (Anderson–Moser list them as separate roots SEM000015–17). Aramaic בַּר (xb.al.ab) is taken as the same word as בֵּן because its plural is built on bn (בְּנֵי, בְּנוֹהִי); Hebrew בַּר (b.cv.ac, Psa 2:12; Pro 31:2) likewise. Key counts are inflated by spelling: xb.al.ab is double-filed on about 1,800 Hebrew בְּנֵי tokens, b.cv.ac on בַּר “grain” (Amo 5:11; 8:6; Psa 72:16) and בְּרִי “moisture” (Job 37:11), b.cb.aa takes about 90 tokens of בְּנוֹת “daughters of” and בָּנוּ “us”, and b.ca.at takes infinitives לִבְנוֹת (Jer 1:10 is cited under the verb). Psa 2:12 נַשְּׁקוּ־בַר is read “kiss the son” from v. 7; the Septuagint has δράξασθε παιδείας and gives no Greek bridge. The Peshitta words are not keyed in BDB. Proper names of the root have no entries yet: Benaiah (b.cb.ag), Bani (b.cb.ad), Binnui (b.cb.ac), Bunni (b.cb.ae), Ibneiah and Ibnijah (b.cb.ak, b.cb.al), Mebunnai (b.cb.an), Ben-oni (b.ca.ad), Ben-hadad, Ben-ammi and the other בֶּן־ names (b.ca.ab–b.ca.as); Jabneel and Jabneh (b.cb.ai, b.cb.aj) are places. Benjamin is in names/benjamin.json. γέεννα, which Thayer derives through בְּנֵי הִנֹּם, is a loan of גֵּי הִנֹּם and belongs with גיא. The Gen 6 doctrine item and the reading of Psa 82:6 as Israel’s judges are judgment calls for review. Ge’ez has no bn “son” (it uses wald) and is not cited."
+}
