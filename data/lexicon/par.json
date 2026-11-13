@@ -1,0 +1,1295 @@
+{
+  "id": "par",
+  "root": "פרר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "sacrifice",
+    "animals",
+    "covenant",
+    "vows",
+    "counsel",
+    "breaking"
+  ],
+  "gloss": "break, make void; split; (nouns) bull, cow",
+  "summary": "The verb פָּרַר, almost always in the hiphil, is to break what binds or holds: a covenant, a commandment, a vow, a counsel or plan, so that it no longer stands (its opposite is הֵקִים, “make stand”, Num 30:14; Isa 8:10); in rarer stems it is to split or shatter physically, the sea divided (Psa 74:13) and the earth broken apart (Isa 24:19). The nouns פַּר “bull” and פָּרָה “cow” name the male and female of the herd (Gen 32:16): פַּר is the bull of the sin offering and of the feast offerings (Lev 4:3; 23:18), פָּרָה the red cow whose ashes cleanse (Num 19:2). Arabic, Akkadian and Ugaritic have both a verb “break” and a word for a young animal of the herd or flock from these consonants; how the animal words go back to the root's sense is not known.",
+  "words": [
+    {
+      "lemma": "פַּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bull, bullock",
+      "bdb": [
+        "q.dn.ab"
+      ],
+      "cognate_ids": [
+        "ar-furar",
+        "uga-pr",
+        "akk-parru"
+      ],
+      "summary": "The male of the herd, named “a bull, a son of the herd” (פַּר בֶּן־בָּקָר) and set beside the cow (Gen 32:16); not only a young animal, for Gideon's second bull is seven years old (Jdg 6:25). Nearly all its uses are the bull of sacrifice. How it goes back to the verb “break” is not known.",
+      "senses": [
+        {
+          "id": "par-bull",
+          "gloss": "bull of the herd",
+          "definition": "The male of the cattle, as one of a herd's animals: counted beside cows, camels and donkeys, and named “a son of the herd”. Its age is not fixed by the word: Gideon's second bull is seven years old.",
+          "evidence": [
+            {
+              "ref": "Gen.32.16",
+              "role": "defining",
+              "note": "Jacob's gift: forty פָּרוֹת and ten פָּרִים, cows and bulls, beside camels and donkeys."
+            },
+            {
+              "ref": "Lev.4.3",
+              "role": "defining",
+              "note": "פַּר בֶּן־בָּקָר תָּמִים, “a bull, a son of the herd, whole”."
+            },
+            {
+              "ref": "Jdg.6.25",
+              "role": "defining",
+              "note": "“The bull of the ox that is your father's, and the second bull, seven years old.”"
+            },
+            {
+              "ref": "1Ki.18.23",
+              "note": "Two bulls for the contest on Carmel, one for Baal's prophets and one for Elijah."
+            },
+            {
+              "ref": "1Sa.1.24",
+              "note": "Hannah brings Samuel to Shiloh with three bulls."
+            }
+          ],
+          "senses": [
+            {
+              "id": "par-sin-offering",
+              "gloss": "bull of the sin offering",
+              "definition": "The bull brought for the sin of the anointed priest or of the whole assembly, whose blood is brought into the holy place and whose body is burned outside the camp; the bull Aaron offers for himself and his house on the day of coverings; the bull of the priests' consecration and of the altar's cleansing.",
+              "evidence": [
+                {
+                  "ref": "Lev.4.3",
+                  "to": "Lev.4.12",
+                  "role": "defining",
+                  "note": "The anointed priest's sin: the bull's blood sprinkled before the veil, its body burned outside the camp."
+                },
+                {
+                  "ref": "Lev.4.14",
+                  "to": "Lev.4.21",
+                  "role": "defining",
+                  "note": "The assembly's sin: “it is the sin offering of the assembly”."
+                },
+                {
+                  "ref": "Lev.16.11",
+                  "role": "defining",
+                  "note": "“The bull of the sin offering that is for himself.”"
+                },
+                {
+                  "ref": "Lev.16.27",
+                  "note": "The bull and goat of the sin offering, whose blood was brought in to cover in the holy place, are burned outside the camp."
+                },
+                {
+                  "ref": "Exo.29.36",
+                  "note": "A bull of sin offering each day for the consecration."
+                },
+                {
+                  "ref": "Lev.8.14"
+                },
+                {
+                  "ref": "Num.8.8",
+                  "note": "For the Levites' cleansing."
+                },
+                {
+                  "ref": "Ezk.43.19",
+                  "note": "In the house Ezekiel is shown, a bull of the herd for the sons of Zadok, for a sin offering."
+                },
+                {
+                  "ref": "Ezk.45.22"
+                },
+                {
+                  "ref": "2Ch.29.21"
+                }
+              ]
+            },
+            {
+              "id": "par-burnt-offering",
+              "gloss": "bull of the burnt and peace offerings",
+              "definition": "The bull offered whole on the altar, or as peace offerings, at the feasts, the new moons and the dedications: the first and largest of the series bull, ram, lamb.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.18",
+                  "role": "defining",
+                  "note": "At the feast of weeks, with the bread: seven lambs, one bull of the herd and two rams, a burnt offering to Yahweh."
+                },
+                {
+                  "ref": "Num.28.11",
+                  "role": "defining",
+                  "note": "The new moon: two bulls of the herd, one ram, seven lambs."
+                },
+                {
+                  "ref": "Num.29.13",
+                  "to": "Num.29.32",
+                  "note": "The feast of booths: thirteen bulls on the first day, one fewer each day to seven on the seventh."
+                },
+                {
+                  "ref": "Num.29.36",
+                  "note": "One bull on the eighth day."
+                },
+                {
+                  "ref": "Num.7.15",
+                  "note": "Each prince's dedication offering: one bull, one ram, one lamb for a burnt offering."
+                },
+                {
+                  "ref": "Num.7.88",
+                  "note": "24 bulls for the peace offerings."
+                },
+                {
+                  "ref": "Exo.24.5",
+                  "note": "Peace offerings of bulls at the making of the covenant at Sinai."
+                },
+                {
+                  "ref": "Num.23.1",
+                  "to": "Num.23.2",
+                  "note": "Balak and Balaam offer a bull and a ram on each of seven altars."
+                },
+                {
+                  "ref": "Ezr.8.35",
+                  "note": "Twelve bulls for all Israel on the return from exile."
+                },
+                {
+                  "ref": "Ezk.46.6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "par-strong-ones",
+          "gloss": "bulls: the strong, the mighty (figurative)",
+          "definition": "Bulls stand for strong men, princes and warriors: the foes who surround the sufferer of Psalm 22, and the mighty of the nations slaughtered on Yahweh's day.",
+          "evidence": [
+            {
+              "ref": "Psa.22.13",
+              "role": "defining",
+              "note": "“Many bulls surround me, mighty ones of Bashan (אַבִּירֵי בָשָׁן) encircle me.”"
+            },
+            {
+              "ref": "Ezk.39.18",
+              "role": "defining",
+              "note": "“The flesh of mighty men … the blood of the princes of the earth: rams, lambs, goats, bulls, fatlings of Bashan all of them.”"
+            },
+            {
+              "ref": "Isa.34.7",
+              "note": "Wild oxen and bulls with the mighty ones go down in Edom's slaughter."
+            },
+            {
+              "ref": "Jer.50.27",
+              "note": "“Put all her bulls to the sword; let them go down to the slaughter”: Babylon's men."
+            }
+          ]
+        },
+        {
+          "id": "par-lips",
+          "gloss": "“bulls of our lips”: words offered as sacrifice",
+          "definition": "Returning Israel offers its confession in words in place of bulls: what is said to Yahweh stands for the sacrifice.",
+          "evidence": [
+            {
+              "ref": "Hos.14.3",
+              "role": "defining",
+              "note": "“Take with you words and return to Yahweh … and we will pay the bulls of our lips (פָרִים שְׂפָתֵינוּ).”"
+            },
+            {
+              "ref": "Psa.69.32",
+              "role": "defining",
+              "note": "Praise and thanks please Yahweh more than an ox, a bull with horns and hoofs."
+            },
+            {
+              "ref": "Psa.50.9",
+              "note": "“I will take no bull from your house”; the sacrifice he asks is thanks (Psa 50:14)."
+            },
+            {
+              "ref": "Psa.51.21",
+              "note": "Bulls on the altar follow a broken spirit and a contrite heart (Psa 51:19)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μόσχος",
+          "gloss": "calf, young bull",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "פַּר → μόσχος ×76 (lemma count, MACULA alignment); Lev.23.18 וּפַר → μόσχον"
+            },
+            {
+              "ref": "Heb.9.12",
+              "note": "Christ entered the holy place not by the blood of goats and μόσχων but by his own blood."
+            },
+            {
+              "ref": "Heb.9.19",
+              "note": "Moses took the blood of the μόσχων and goats at the covenant (Exo 24:5–8)."
+            }
+          ]
+        },
+        {
+          "lemma": "ταῦρος",
+          "gloss": "bull",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "פַּר → ταῦρος ×3 (Gen.32.16; Isa.1.11; Isa.34.7)"
+            },
+            {
+              "ref": "Heb.9.13",
+              "note": "“The blood of ταύρων and goats … sanctifies to the cleansing of the flesh.”"
+            },
+            {
+              "ref": "Heb.10.4",
+              "note": "“It is impossible for the blood of ταύρων and goats to take away sins.”"
+            }
+          ]
+        },
+        {
+          "lemma": "καρπός",
+          "gloss": "fruit",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hos.14.3 פָרִים שְׂפָתֵינוּ → καρπὸν χειλέων (read as פְּרִי)"
+            },
+            {
+              "ref": "Heb.13.15",
+              "note": "“Let us offer the sacrifice of praise to God continually, that is, the καρπὸν χειλέων, confessing his name”: Hos 14:3 as the Septuagint gives it."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אַיִל",
+            "note": "The ram, after the bull in the series of offerings bull, ram, lamb.",
+            "evidence": [
+              {
+                "ref": "Lev.23.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.7.15"
+              },
+              {
+                "ref": "Num.29.2"
+              }
+            ]
+          },
+          {
+            "lemma": "אַבִּיר",
+            "note": "“Mighty one”, beside bulls of the strong and the warriors.",
+            "evidence": [
+              {
+                "ref": "Psa.22.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.34.7"
+              }
+            ]
+          },
+          {
+            "lemma": "שׁוֹר",
+            "note": "“Ox”, beside the bull with horns and hoofs.",
+            "evidence": [
+              {
+                "ref": "Psa.69.32",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.6.25"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "פַּר בֶּן־בָּקָר",
+            "gloss": "a bull, a son of the herd",
+            "evidence": [
+              {
+                "ref": "Lev.4.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.18"
+              },
+              {
+                "ref": "Num.29.8"
+              },
+              {
+                "ref": "Ezk.43.19"
+              }
+            ]
+          },
+          {
+            "phrase": "פַּר הַחַטָּאת",
+            "gloss": "the bull of the sin offering",
+            "evidence": [
+              {
+                "ref": "Lev.16.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.29.36"
+              },
+              {
+                "ref": "Lev.8.14"
+              }
+            ]
+          },
+          {
+            "phrase": "פָרִים שְׂפָתֵינוּ",
+            "gloss": "the bulls of our lips",
+            "evidence": [
+              {
+                "ref": "Hos.14.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פָּרַר",
+      "pos": "verb",
+      "gloss": "break, make void; split, shatter",
+      "bdb": [
+        "q.dl.aa"
+      ],
+      "cognate_ids": [
+        "ar-farfara",
+        "akk-pararu",
+        "uga-prr",
+        "arc-prr"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "break (a covenant, commandment, vow), make void; frustrate (a counsel)",
+          "senses": [
+            {
+              "id": "parar-covenant",
+              "gloss": "break a covenant or commandment",
+              "definition": "To break what binds two parties, so that it no longer holds: a covenant, a treaty, an oath, a brotherhood, or a commandment given. Israel breaks Yahweh's covenant by not doing his commandments and by forsaking him for other gods; Yahweh says he will not break his.",
+              "evidence": [
+                {
+                  "ref": "Lev.26.15",
+                  "role": "defining",
+                  "note": "“So as not to do all my commandments, so that you break my covenant.”"
+                },
+                {
+                  "ref": "Deu.31.16",
+                  "role": "defining",
+                  "note": "“This people … will forsake me and break my covenant.”"
+                },
+                {
+                  "ref": "Num.15.31",
+                  "role": "defining",
+                  "note": "“He despised the word of Yahweh and broke his commandment.”"
+                },
+                {
+                  "ref": "Gen.17.14",
+                  "note": "The uncircumcised male “has broken my covenant”."
+                },
+                {
+                  "ref": "Deu.31.20"
+                },
+                {
+                  "ref": "Jer.11.10"
+                },
+                {
+                  "ref": "Jer.31.32",
+                  "note": "“My covenant, which they broke, though I was a husband to them”; quoted in Heb 8:9."
+                },
+                {
+                  "ref": "Isa.24.5",
+                  "note": "The earth's dwellers “have broken the covenant of eternity”."
+                },
+                {
+                  "ref": "Isa.33.8"
+                },
+                {
+                  "ref": "Ezk.16.59",
+                  "note": "“You despised an oath by breaking a covenant.”"
+                },
+                {
+                  "ref": "Ezk.17.15",
+                  "to": "Ezk.17.19",
+                  "note": "Zedekiah's oath to the king of Babylon, sworn in Yahweh's name: “my covenant that he broke”."
+                },
+                {
+                  "ref": "Ezk.44.7"
+                },
+                {
+                  "ref": "1Ki.15.19",
+                  "note": "A treaty between kings: “break your covenant with Baasha”."
+                },
+                {
+                  "ref": "2Ch.16.3"
+                },
+                {
+                  "ref": "Zec.11.10",
+                  "note": "The staff Favour cut in two, “to break my covenant”."
+                },
+                {
+                  "ref": "Zec.11.14",
+                  "note": "The staff Union cut in two, “to break the brotherhood between Judah and Israel”."
+                },
+                {
+                  "ref": "Psa.119.126",
+                  "note": "“They have broken your law.”"
+                },
+                {
+                  "ref": "Ezr.9.14",
+                  "note": "“Shall we again break your commandments?”"
+                },
+                {
+                  "ref": "Lev.26.44",
+                  "role": "defining",
+                  "note": "Of Yahweh: even in the land of their enemies “I will not … break my covenant with them”."
+                },
+                {
+                  "ref": "Jdg.2.1",
+                  "note": "“I will never break my covenant with you.”"
+                },
+                {
+                  "ref": "Jer.14.21",
+                  "note": "“Remember, do not break your covenant with us.”"
+                },
+                {
+                  "ref": "Jer.33.20",
+                  "note": "“If you can break my covenant of the day and my covenant of the night …”"
+                },
+                {
+                  "ref": "Psa.89.34",
+                  "note": "“My kindness I will not break off from him”, of David's seed."
+                }
+              ]
+            },
+            {
+              "id": "parar-vow",
+              "gloss": "make void, annul (a vow)",
+              "definition": "Of a woman's vow: her father or husband, on the day he hears it, makes it void so that it does not stand, as against confirming it, making it stand.",
+              "evidence": [
+                {
+                  "ref": "Num.30.14",
+                  "role": "defining",
+                  "note": "“Her husband may make it stand (יְקִימֶנּוּ), and her husband may make it void (יְפֵרֶנּוּ).”"
+                },
+                {
+                  "ref": "Num.30.13",
+                  "role": "defining",
+                  "note": "“Her husband has made them void … they shall not stand.”"
+                },
+                {
+                  "ref": "Num.30.9"
+                },
+                {
+                  "ref": "Num.30.16",
+                  "note": "If he makes them void later than the day he heard, he bears her iniquity."
+                }
+              ]
+            },
+            {
+              "id": "parar-counsel",
+              "gloss": "frustrate, bring to nothing (a counsel, a plan)",
+              "definition": "To break a counsel or plan so that it does not stand or come to pass. Yahweh frustrates the counsel of nations and the plans of the crafty; no one can frustrate his.",
+              "evidence": [
+                {
+                  "ref": "Psa.33.10",
+                  "role": "defining",
+                  "note": "“Yahweh breaks the counsel of the nations, he frustrates (הֵנִיא) the plans of the peoples”; his own counsel stands for ever (Psa 33:11)."
+                },
+                {
+                  "ref": "Isa.14.27",
+                  "role": "defining",
+                  "note": "“Yahweh of armies has counselled, and who will break it?”"
+                },
+                {
+                  "ref": "Job.5.12",
+                  "role": "defining",
+                  "note": "He breaks the plans of the crafty, “so that their hands do not achieve success”."
+                },
+                {
+                  "ref": "2Sa.15.34",
+                  "note": "Hushai sent “to break for me the counsel of Ahithophel”."
+                },
+                {
+                  "ref": "2Sa.17.14",
+                  "note": "“Yahweh had commanded to break the good counsel of Ahithophel.”"
+                },
+                {
+                  "ref": "Isa.44.25",
+                  "note": "He breaks the signs of the empty talkers."
+                },
+                {
+                  "ref": "Pro.15.22",
+                  "note": "“Plans are broken without counsel, but with many counsellors they stand.”"
+                },
+                {
+                  "ref": "Ezr.4.5",
+                  "note": "Counsellors hired against the returned exiles “to break their counsel”."
+                },
+                {
+                  "ref": "Neh.4.9",
+                  "note": "“God broke their counsel”, and the builders returned to the wall."
+                }
+              ]
+            },
+            {
+              "id": "parar-annul",
+              "gloss": "do away with, set aside; fail",
+              "definition": "Of other things: to set aside a judgment, to do away with fear of God, to put an end to vexation; and once, without an object, to fail or burst, of the caper-berry as man goes to his eternal home.",
+              "evidence": [
+                {
+                  "ref": "Job.40.8",
+                  "role": "defining",
+                  "note": "“Will you indeed annul my judgment? Will you condemn me so that you may be righteous?”"
+                },
+                {
+                  "ref": "Job.15.4",
+                  "note": "“You do away with fear, and diminish devotion before God.”"
+                },
+                {
+                  "ref": "Psa.85.5",
+                  "note": "“Restore us … and break off your vexation with us.”"
+                },
+                {
+                  "ref": "Ecc.12.5",
+                  "note": "“And the caper-berry fails (וְתָפֵר)”, among the signs of age and death."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be broken, be frustrated",
+          "senses": [
+            {
+              "id": "parar-hophal",
+              "gloss": "be broken, come to nothing",
+              "definition": "Of a counsel or a covenant: to be broken so that it does not stand.",
+              "evidence": [
+                {
+                  "ref": "Isa.8.10",
+                  "role": "defining",
+                  "note": "“Counsel counsel, and it will be broken; speak a word, and it will not stand, for God is with us.”"
+                },
+                {
+                  "ref": "Jer.33.21",
+                  "role": "defining",
+                  "note": "Only if the covenant of day and night can be broken “also my covenant may be broken with David my servant”."
+                },
+                {
+                  "ref": "Zec.11.11",
+                  "note": "“And it was broken on that day”: the covenant of the staff Favour."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "split, break apart",
+          "senses": [
+            {
+              "id": "parar-qal",
+              "gloss": "split apart",
+              "definition": "The infinitive absolute, beside the hithpolel: the earth splitting apart.",
+              "evidence": [
+                {
+                  "ref": "Isa.24.19",
+                  "role": "defining",
+                  "note": "פּוֹר הִתְפּוֹרְרָה אֶרֶץ, “splitting, the earth is split apart”, between “broken” (רעע) and “shaken” (מוט)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "be split apart",
+          "senses": [
+            {
+              "id": "parar-hithpolel",
+              "gloss": "be split, break apart",
+              "definition": "Of the earth in Yahweh's judgment: to be split apart, set between being shattered and being shaken.",
+              "evidence": [
+                {
+                  "ref": "Isa.24.19",
+                  "role": "defining",
+                  "note": "“Broken, the earth is utterly broken; splitting, the earth is split apart; shaking, the earth is shaken.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "split, divide",
+          "senses": [
+            {
+              "id": "parar-poel",
+              "gloss": "split, divide (the sea)",
+              "definition": "Of God dividing the sea by his strength, parallel to breaking the heads of the sea monsters: the crossing of the sea at the exodus.",
+              "evidence": [
+                {
+                  "ref": "Psa.74.13",
+                  "role": "defining",
+                  "note": "“You split the sea by your strength; you broke (שִׁבַּרְתָּ) the heads of the sea monsters on the waters.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pilpel",
+          "gloss": "shatter",
+          "senses": [
+            {
+              "id": "parar-pilpel",
+              "gloss": "shatter, break in pieces",
+              "definition": "Of God's blows on Job: to break him in pieces, beside dashing him to pieces.",
+              "evidence": [
+                {
+                  "ref": "Job.16.12",
+                  "role": "defining",
+                  "note": "“I was at ease, and he shattered me (וַיְפַרְפְּרֵנִי); he seized me by the neck and dashed me to pieces (וַיְפַצְפְּצֵנִי).”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παραβαίνω",
+          "gloss": "transgress, step past",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "פָּרַר → παραβαίνω ×5 (Ezk.16.59; Ezk.17.15, 16, 18; Ezk.44.7)"
+            },
+            {
+              "ref": "Mat.15.3",
+              "note": "“Why do you also transgress the commandment of God because of your tradition?”, as one breaks a commandment (Num 15:31)."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐμμένω",
+          "gloss": "remain in, keep to",
+          "evidence": [
+            {
+              "ref": "Heb.8.9",
+              "note": "Quoting Jer 31:32, “because they did not remain in my covenant” (οὐκ ἐνέμειναν), for הֵמָּה הֵפֵרוּ אֶת־בְּרִיתִי. MACULA aligns no Greek word to הֵפֵרוּ there."
+            }
+          ]
+        },
+        {
+          "lemma": "διασκεδάζω",
+          "gloss": "scatter, break up, bring to nothing",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "פָּרַר → διασκεδάζω ×20 (Gen.17.14; Num.15.31; 2Sa.17.14; Isa.14.27 and others); not in the New Testament"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָאַס",
+            "note": "“Reject, despise”: rejecting the statutes and breaking the covenant.",
+            "evidence": [
+              {
+                "ref": "Lev.26.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.26.44"
+              },
+              {
+                "ref": "Isa.33.8"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּזָה",
+            "note": "“Despise”: despising the word or the oath and breaking the commandment or covenant.",
+            "evidence": [
+              {
+                "ref": "Num.15.31",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.16.59"
+              },
+              {
+                "ref": "Ezk.17.16"
+              }
+            ]
+          },
+          {
+            "lemma": "עָזַב",
+            "note": "“Forsake”: forsaking Yahweh and breaking his covenant.",
+            "evidence": [
+              {
+                "ref": "Deu.31.16",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הֵנִיא",
+            "note": "“Frustrate, restrain”, beside breaking the counsel of nations.",
+            "evidence": [
+              {
+                "ref": "Psa.33.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁבַר",
+            "note": "“Break”, beside splitting the sea.",
+            "evidence": [
+              {
+                "ref": "Psa.74.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קוּם",
+            "note": "“Stand, make stand” (hiphil הֵקִים): a vow confirmed, a counsel that stands.",
+            "evidence": [
+              {
+                "ref": "Num.30.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.8.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.15.22"
+              },
+              {
+                "ref": "Num.30.13"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הֵפֵר בְּרִית",
+            "gloss": "break a covenant",
+            "evidence": [
+              {
+                "ref": "Gen.17.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.31.16"
+              },
+              {
+                "ref": "Jer.31.32"
+              },
+              {
+                "ref": "Isa.24.5"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵפֵר עֵצָה",
+            "gloss": "break, frustrate a counsel",
+            "evidence": [
+              {
+                "ref": "2Sa.17.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.33.10"
+              },
+              {
+                "ref": "Neh.4.9"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵפֵר נֶדֶר",
+            "gloss": "make a vow void",
+            "evidence": [
+              {
+                "ref": "Num.30.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.30.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פָּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "cow, heifer",
+      "bdb": [
+        "q.dn.ac"
+      ],
+      "cognate_ids": [
+        "ar-furar",
+        "uga-prt",
+        "akk-parratu"
+      ],
+      "summary": "The female of פַּר, the cow of the herd. Like פַּר, its tie to the verb “break” is not known; Ugaritic prt and Arabic fem. furāra are the same word.",
+      "senses": [
+        {
+          "id": "parah-cow",
+          "gloss": "cow",
+          "definition": "The female of the herd: counted beside bulls, grazing, nursing calves and yoked to a cart; the cows of Pharaoh's dream stand for years of plenty and famine.",
+          "evidence": [
+            {
+              "ref": "Gen.32.16",
+              "role": "defining",
+              "note": "Forty cows and ten bulls."
+            },
+            {
+              "ref": "1Sa.6.7",
+              "role": "defining",
+              "note": "“Two nursing cows on which no yoke has come up”, their calves shut up at home; they draw the ark straight to Beth Shemesh, lowing (1Sa 6:12)."
+            },
+            {
+              "ref": "Gen.41.2",
+              "to": "Gen.41.4",
+              "note": "Seven fat cows and seven thin come up from the river."
+            },
+            {
+              "ref": "Gen.41.26",
+              "to": "Gen.41.27",
+              "note": "“The seven good cows are seven years.”"
+            },
+            {
+              "ref": "Job.21.10",
+              "note": "“His cow calves and does not cast her young.”"
+            },
+            {
+              "ref": "Isa.11.7",
+              "note": "“The cow and the bear will graze, their young lie down together.”"
+            }
+          ]
+        },
+        {
+          "id": "parah-red",
+          "gloss": "the red cow of cleansing",
+          "definition": "The red cow, whole and never yoked, slaughtered outside the camp and burned entire, whose ashes in running water are the water of cleansing from contact with the dead; “it is a sin offering”.",
+          "evidence": [
+            {
+              "ref": "Num.19.2",
+              "role": "defining",
+              "note": "פָרָה אֲדֻמָּה תְּמִימָה, “a red cow, whole, in which is no blemish, on which no yoke has come up”."
+            },
+            {
+              "ref": "Num.19.5",
+              "to": "Num.19.6"
+            },
+            {
+              "ref": "Num.19.9",
+              "role": "defining",
+              "note": "Its ashes kept “for water of impurity; it is a sin offering”."
+            },
+            {
+              "ref": "Num.19.10"
+            }
+          ]
+        },
+        {
+          "id": "parah-figurative",
+          "gloss": "cow (figurative): stubborn Israel; the women of Samaria",
+          "definition": "Israel, refusing the yoke, is a stubborn cow; the pampered women of Samaria who crush the poor are “cows of Bashan”.",
+          "evidence": [
+            {
+              "ref": "Hos.4.16",
+              "role": "defining",
+              "note": "“Like a stubborn cow Israel is stubborn.”"
+            },
+            {
+              "ref": "Amo.4.1",
+              "role": "defining",
+              "note": "“Hear this word, cows of Bashan, … who oppress the poor, who crush the needy, who say to their masters, ‘Bring, that we may drink.’”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δάμαλις",
+          "gloss": "heifer",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "פָּרָה → δάμαλις ×6 (Num.19.2, 6, 9, 10; Hos.4.16; Amo.4.1); Num.19.2 פָרָה → δάμαλιν"
+            },
+            {
+              "ref": "Heb.9.13",
+              "note": "“The ashes of a δαμάλεως sprinkling the defiled sanctify to the cleansing of the flesh”: the red cow of Num 19."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "פַּר",
+            "note": "The bull, the male beside her.",
+            "evidence": [
+              {
+                "ref": "Gen.32.16",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "דֹּב",
+            "note": "The bear grazing with the cow in the coming peace.",
+            "evidence": [
+              {
+                "ref": "Isa.11.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "פָרָה אֲדֻמָּה",
+            "gloss": "a red cow",
+            "evidence": [
+              {
+                "ref": "Num.19.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "פָּרוֹת הַבָּשָׁן",
+            "gloss": "cows of Bashan",
+            "evidence": [
+              {
+                "ref": "Amo.4.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-farfara",
+      "lang": "ar",
+      "form": "فَرْفَرَ، فَرْفَارٌ",
+      "translit": "farfara, farfār",
+      "gloss": "break, cut, split, rend; a breaker of everything",
+      "relation": "cognate",
+      "note": "Lane's sources give the reduplicated verb فَرْفَرَ as “he broke it, i.e. a thing … He cut it … He clave, split, slit, rent, or tore, it”, and فَرْفَارٌ “a breaker [or mangler] of everything”, also the lion. The reduplicated form answers to the pilpel וַיְפַרְפְּרֵנִי “he shattered me” (Job 16:12), and its “split” to the poel of the sea split (Psa 74:13). The simple Arabic verb فَرَّ means “flee”, which no Hebrew use shares.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2356, root فر, فَرْفَرَهُ (n33311)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2357, root فر, فَرْفَارٌ (n33330)"
+        }
+      ]
+    },
+    {
+      "id": "ar-furar",
+      "lang": "ar",
+      "form": "فُرَارٌ، فَرِيرٌ",
+      "translit": "furār, farīr",
+      "gloss": "the young of the ewe, the she-goat and the cow (or wild cow); lambs",
+      "relation": "cognate",
+      "note": "Lane's sources: “The young one of the ewe, and of the she-goat, and of the cow, or of the wild cow … the female is termed فُرَارَةٌ.” The same consonants name a young animal of the flock or herd; Hebrew narrows the word to the male and female of the herd, פַּר and פָּרָה.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2356, root فر, فُرَارٌ (n33318); فَرِيرٌ (n33320)"
+        }
+      ]
+    },
+    {
+      "id": "akk-pararu",
+      "lang": "akk",
+      "form": "parāru",
+      "translit": "parāru",
+      "gloss": "break up, scatter, shatter, smash; (N) be dissolved, crushed, dispersed",
+      "relation": "cognate",
+      "note": "The Akkadian verb is used of breaking and scattering, and in the passive of being dissolved, broken up and made powerless: the physical breaking of the poel and pilpel, and the breaking up of what holds together that the hiphil uses of covenants and counsels.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000135970, parāru [break up] V: break up; scatter; shatter; smash"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000046760, parāru [be(come) dissolved] V: be(come) crushed; be(come) powerless; disperse; scatter"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000309 prr [break] V: AKK008877 parāru [break up] V; HEB006123 parar [break] V"
+        }
+      ]
+    },
+    {
+      "id": "akk-parru",
+      "lang": "akk",
+      "form": "parru",
+      "translit": "parru",
+      "gloss": "(male) lamb",
+      "relation": "possible",
+      "note": "A young male of the flock, where Hebrew פַּר is a male of the herd. Rare (Neo-Babylonian only in Oracc); recorded as possible because the animal differs.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000110640, parru [(male) lamb] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-parratu",
+      "lang": "akk",
+      "form": "parratu",
+      "translit": "parratu",
+      "gloss": "female lamb",
+      "relation": "possible",
+      "note": "The feminine answering to parru, as פָּרָה to פַּר; a young female of the flock, not the herd.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tcma x000005530, parratu [female lamb] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-pr",
+      "lang": "uga",
+      "form": "𐎔𐎗",
+      "translit": "pr",
+      "gloss": "bull",
+      "relation": "cognate",
+      "note": "Listed with prt “young cow” under one Ugaritic root, as Hebrew פַּר with פָּרָה. Read from the scan's OCR; the page is to be checked against the page image.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "pp. 165–166, *prr III: pr “bull”, prt “young cow”"
+        }
+      ]
+    },
+    {
+      "id": "uga-prt",
+      "lang": "uga",
+      "form": "𐎔𐎗𐎚",
+      "translit": "prt",
+      "gloss": "heifer, young cow",
+      "relation": "cognate",
+      "note": "The feminine of pr, the same word as פָּרָה.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000311 prt [heifer] N: UGC003379 prt [heifer]; HEB006073 parah [cow]"
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "pp. 165–166, *prr III: pr “bull”, prt “young cow”"
+        }
+      ]
+    },
+    {
+      "id": "uga-prr",
+      "lang": "uga",
+      "form": "𐎔𐎗𐎗",
+      "translit": "prr",
+      "gloss": "break (an agreement)",
+      "relation": "cognate",
+      "note": "Ugaritic uses the verb of breaking an agreement, as the hiphil הֵפֵר בְּרִית. Read from the scan's OCR; the page is to be checked against the page image.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 165, *prr II “break (an agreement)”"
+        }
+      ]
+    },
+    {
+      "id": "arc-prr",
+      "lang": "arc",
+      "form": "פְּרַר",
+      "translit": "pərar",
+      "gloss": "(ithpeel) be broken, crushed, crumbled; (aphel) make void, invalidate (a vow)",
+      "relation": "cognate",
+      "note": "Jewish Aramaic has both senses of the Hebrew verb: the passive “be broken, crumbled” (Targ. Ps 22:15 MS) and the aphel אָפֵר “make void”, used of a husband or father disallowing a vow, as in Num 30.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּרַר (ch.)",
+          "note": "“Ithpe. to be broken, crushed, crumbled. Targ. Ps. XXII, 15 Ms. … Af. to make void, invalidate. Ned. 73ᵃ … Ib. 70ᵃ לא מצי מֵיפַר he has no power to invalidate her vows.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "covenant-unbroken",
+      "statement": "Israel broke Yahweh's covenant by not doing his commandments and by forsaking him for other gods (Lev 26:15; Deu 31:16, 20; Jer 11:10; 31:32), and Hebrews quotes Jer 31:32 in announcing the new covenant (Heb 8:8–9). Yahweh says that he will not break his covenant with them even in the land of their enemies, “for I am Yahweh their God” (Lev 26:44; Jdg 2:1), that he will not break off his kindness from David's seed (Psa 89:34), and that his covenant with David can be broken only if his covenant with the day and the night can be broken (Jer 33:20–21, 25–26). The angel tells Mary that God will give her son the throne of his father David and he will reign for ever (Luk 1:32–33); Paul writes that the law, coming 430 years later, does not annul the covenant God confirmed to Abraham and his seed, which is Christ (Gal 3:16–17). From the verses: the covenant fails on man's side, never on Yahweh's; his promises to Abraham and David stand as fixed as day and night, and are kept in Christ.",
+      "evidence": [
+        {
+          "ref": "Lev.26.15"
+        },
+        {
+          "ref": "Deu.31.16"
+        },
+        {
+          "ref": "Deu.31.20"
+        },
+        {
+          "ref": "Jer.11.10"
+        },
+        {
+          "ref": "Jer.31.32"
+        },
+        {
+          "ref": "Heb.8.8",
+          "to": "Heb.8.9"
+        },
+        {
+          "ref": "Lev.26.44"
+        },
+        {
+          "ref": "Jdg.2.1"
+        },
+        {
+          "ref": "Psa.89.34"
+        },
+        {
+          "ref": "Jer.33.20",
+          "to": "Jer.33.21"
+        },
+        {
+          "ref": "Jer.33.25",
+          "to": "Jer.33.26"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        },
+        {
+          "ref": "Gal.3.16",
+          "to": "Gal.3.17"
+        }
+      ]
+    },
+    {
+      "topic": "counsel-that-stands",
+      "statement": "Yahweh breaks the counsel of the nations, but his own counsel stands for ever (Psa 33:10–11); “Yahweh of armies has counselled, and who will break it?” (Isa 14:27); the nations may take counsel, “and it will be broken … for God is with us” (Isa 8:10). He broke Ahithophel's good counsel to bring evil on Absalom (2Sa 17:14) and the counsel of those who opposed the rebuilding of Jerusalem's wall (Neh 4:9). Gamaliel says the same of the apostles' work: if it is of men it will come to nothing, but if it is of God, they cannot overthrow it (Act 5:38–39). From the verses: no plan against Yahweh's purpose can stand, and his own purpose no one can make void.",
+      "evidence": [
+        {
+          "ref": "Psa.33.10",
+          "to": "Psa.33.11"
+        },
+        {
+          "ref": "Isa.14.27"
+        },
+        {
+          "ref": "Isa.8.10"
+        },
+        {
+          "ref": "2Sa.17.14"
+        },
+        {
+          "ref": "Neh.4.9"
+        },
+        {
+          "ref": "Act.5.38",
+          "to": "Act.5.39"
+        }
+      ]
+    },
+    {
+      "topic": "blood-of-bulls",
+      "statement": "The bull of the sin offering was brought for the anointed priest and for the whole assembly, its blood carried into the holy place and its body burned outside the camp (Lev 4:3–21; 16:11, 27). Yet the prophets say Yahweh does not delight in the blood of bulls (Isa 1:11) and takes no bull from a man's house (Psa 50:9), and that praise pleases him more than a bull (Psa 69:32); returning Israel offers “the bulls of our lips” (Hos 14:3). Hebrews says that it is impossible for the blood of bulls and goats to take away sins (Heb 10:4), that Christ entered the holy place by his own blood, having found eternal redemption (Heb 9:12–14), and that as the bodies of those sin offerings were burned outside the camp, Jesus suffered outside the gate (Heb 13:11–12); so believers offer the sacrifice of praise, “the fruit of lips” (Heb 13:15, Hos 14:3 as the Septuagint gives it). From the verses: the bull of the sin offering pointed to a sacrifice it could not itself be; that sacrifice is Christ's own blood, and the offering left for believers is praise.",
+      "evidence": [
+        {
+          "ref": "Lev.4.3",
+          "to": "Lev.4.21"
+        },
+        {
+          "ref": "Lev.16.11"
+        },
+        {
+          "ref": "Lev.16.27"
+        },
+        {
+          "ref": "Isa.1.11"
+        },
+        {
+          "ref": "Psa.50.9"
+        },
+        {
+          "ref": "Psa.69.32"
+        },
+        {
+          "ref": "Hos.14.3"
+        },
+        {
+          "ref": "Heb.10.4"
+        },
+        {
+          "ref": "Heb.9.12",
+          "to": "Heb.9.14"
+        },
+        {
+          "ref": "Heb.13.11",
+          "to": "Heb.13.12"
+        },
+        {
+          "ref": "Heb.13.15"
+        }
+      ]
+    },
+    {
+      "topic": "red-cow-cleansing",
+      "statement": "The red cow, whole and never yoked, was slaughtered outside the camp and burned entire, and its ashes in running water cleansed whoever had touched the dead; “it is a sin offering” (Num 19:2–10). Hebrews reasons from it: if the ashes of a heifer sprinkling the defiled sanctify to the cleansing of the flesh, how much more will the blood of Christ, who offered himself without blemish to God, cleanse the conscience from dead works to serve the living God (Heb 9:13–14). From the verses: the cleansing from contact with death under the law was outward, of the flesh; the cleansing it pointed to is inward, by Christ's offering of himself.",
+      "evidence": [
+        {
+          "ref": "Num.19.2",
+          "to": "Num.19.10"
+        },
+        {
+          "ref": "Heb.9.13",
+          "to": "Heb.9.14"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Root key פרר, as the database keys it. BDB keys: the verb is counted under q.dl.aa (“break; frustrate”), whose 53 tokens include all 50 of q.dm.aa (“split; divide”) and Ezk 17:19, Psa 33:10 and Psa 89:34 besides; q.dm.aa lists the same occurrences and is left unclaimed (one verb here, its physical stems qal, hithpolel, poel and pilpel kept with the hiphil). Left out: the place פָּרָה Parah in Benjamin (q.dn.ad, Jos 18:23), a place, not a name entry; the cross-reference keys q.cq.ad and q.cv.ac, with no tokens; פַּרְפַּר Pharpar, a river of Damascus (2Ki 5:12), a place; פָּרוּר “pot”, which the database files under פור (q.au.ac). The qal פּוֹר of Isa 24:19 is entered as this root's infinitive absolute beside the hithpolel, as the database parses it. Psalm and Nehemiah verses use the Hebrew numbering (Psa 85:5, 89:34; Neh 4:9). The nouns פַּר and פָּרָה: no use in scripture ties them to the verb “break”, and the brief's lead (Fisher, via Tigre farra “flee; lead out to pasture”, an Ethiopic link between Ugaritic “flee” and “bull”) was not followed to Ethiopic dictionaries; the summary says the link is unknown. Arabic shows both the verb (فرفر “break, split”) and the young animal (فُرار) under the one root فر, as do Ugaritic (prr, pr, prt) and Akkadian (parāru, parru, parratu): the pairing recurs across languages, which is reason to keep them in one entry. Fisher's pages are read from the OCR of the consultation scan (page markers 165 and 166 in source.txt, and a second discussion near the OCR marker 227–236); check against the page images. Not consulted: DULAT or Segert's glossary for Ugaritic pr/prt/prr; CAD P for parāru (whether it is used of annulling agreements) and parru; Payne Smith for Syriac ܦܐܪܐ “lamb” (Wiktionary only; the Peshitta has no word of this root in SEDRA); Dillmann/Leslau for Ge'ez. Greek: διασκεδάζω, the Septuagint's commonest rendering of the verb, does not occur in the New Testament; ἐμμένω in Heb 8:9 is the Septuagint's wording of Jer 31:32 (LXX 38:32) though MACULA aligns no word to הֵפֵרוּ. καρπός for פָרִים in Hos 14:3 reflects a reading פְּרִי; it is kept as the bridge to Heb 13:15. Open questions: (1) whether Psa 22:13's bulls should carry a doctrinal note on the sufferer of Psalm 22 (quoted Mat 27:46); left to the reviewer; (2) Ecc 12:5 וְתָפֵר is taken as intransitive “fails”; the sense of הָאֲבִיּוֹנָה (caper-berry or desire) is not settled here."
+}
