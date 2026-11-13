@@ -1,0 +1,2655 @@
+{
+  "id": "shanah",
+  "root": "שנה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "time",
+    "calendar",
+    "number",
+    "change",
+    "feasts",
+    "chronology"
+  ],
+  "gloss": "year; change, be different; two, second, do again",
+  "summary": "One spelling over two older roots, as the cognates show. With š behind the ש (Arabic sana, Ugaritic šnt, Aramaic šattā) stand שָׁנָה “year”, the round of seasons the lights were made to mark (Gen 1:14), by which scripture counts lives, reigns and its appointed years, and the verb שָׁנָה “change, be different”: “I, Yahweh, do not change” (Mal 3:6). With ṯ (Arabic ṯanā and iṯnān, Ugaritic ṯn, Aramaic tənē and tərēn) stand שְׁנַיִם “two”, שֵׁנִי “second”, מִשְׁנֶה “double, copy, second in rank” and the verb שָׁנָה “do again, repeat” (1Ki 18:34). The scarlet שָׁנִי is spelled the same, but its tie to either root is not known.",
+  "words": [
+    {
+      "lemma": "שָׁנָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "year",
+      "bdb": [
+        "v.ek.ab"
+      ],
+      "cognate_ids": [
+        "ar-sana",
+        "akk-shattu",
+        "uga-snt",
+        "phn-st",
+        "arc-shatta"
+      ],
+      "summary": "The year: the full round of seasons that the sun and moon were set to mark, from its “beginning” to its “end” (Deu 11:12). Scripture counts in it the lives of the fathers, the reigns of kings, the feasts that come round “in the year”, and the years Yahweh appoints and names: the seventh year, the fiftieth, the year of his favour. Plural שָׁנִים and, in poetry, שָׁנוֹת; dual שְׁנָתַיִם “two years”.",
+      "senses": [
+        {
+          "id": "year-round",
+          "gloss": "year, the round of the seasons",
+          "definition": "The span of time from one turn of the seasons to the next, which the lights in the sky were made to mark, and which is divided into months.",
+          "evidence": [
+            {
+              "ref": "Gen.1.14",
+              "role": "defining",
+              "note": "On the fourth day: “let them be for signs and for seasons and for days וְשָׁנִים”: years are counted by the lights from creation week."
+            },
+            {
+              "ref": "Exo.12.2",
+              "role": "defining",
+              "note": "“This month … shall be the first month of the year (לְחָדְשֵׁי הַשָּׁנָה) to you”: the year is made of months and has a beginning."
+            },
+            {
+              "ref": "Deu.11.12",
+              "role": "defining",
+              "note": "Yahweh’s eyes are on the land “from the beginning of the year to the end of the year (מֵרֵשִׁית הַשָּׁנָה וְעַד אַחֲרִית שָׁנָה)”."
+            },
+            {
+              "ref": "Exo.34.22",
+              "note": "The feast of ingathering “at the turn of the year (תְּקוּפַת הַשָּׁנָה)”; Exo 23:16 “at the going out of the year”."
+            },
+            {
+              "ref": "Exo.23.16"
+            },
+            {
+              "ref": "Gen.8.13",
+              "role": "defining",
+              "note": "“In the six hundred and first year, in the first month, on the first of the month, the waters were dried up”: year, month and day, an ordinary year of Noah’s life."
+            },
+            {
+              "ref": "Gen.7.11",
+              "note": "The Flood dated “in the six hundredth year of Noah’s life, in the second month, on the seventeenth day”."
+            },
+            {
+              "ref": "Gen.41.1",
+              "note": "Dual: “at the end of two full years (שְׁנָתַיִם יָמִים)”; also Jer 28:3."
+            },
+            {
+              "ref": "Jer.28.3"
+            },
+            {
+              "ref": "Psa.65.12",
+              "note": "“You crown the year of your goodness”: the year’s harvest as God’s gift."
+            }
+          ]
+        },
+        {
+          "id": "years-of-life",
+          "gloss": "years of a life, age",
+          "definition": "In the plural, the years a person lives, and so his age and life’s length; בֶּן־שָׁנָה “a son of a year” is a year old.",
+          "evidence": [
+            {
+              "ref": "Gen.5.5",
+              "role": "defining",
+              "note": "“All the days that Adam lived were nine hundred and thirty years”: the sum of a life in years."
+            },
+            {
+              "ref": "Gen.5.3",
+              "note": "Adam lived 130 years and fathered Seth: each father’s age at his son’s birth, through Gen 5 and 11."
+            },
+            {
+              "ref": "Gen.47.9",
+              "role": "defining",
+              "note": "Jacob: “the days of the years of my sojourning are 130 years; few and evil have been the days of the years of my life.”"
+            },
+            {
+              "ref": "Psa.90.10",
+              "role": "defining",
+              "note": "“The days of our years are seventy years, or by strength eighty years.”"
+            },
+            {
+              "ref": "Pro.3.2",
+              "note": "“Length of days and years of life.”"
+            },
+            {
+              "ref": "Psa.102.28",
+              "role": "defining",
+              "note": "To God: “you are the same, and your years (וּשְׁנוֹתֶיךָ) will not end”; quoted in Heb 1:12."
+            },
+            {
+              "ref": "Job.36.26",
+              "note": "“The number of his years is unsearchable.”"
+            },
+            {
+              "ref": "Exo.12.5",
+              "role": "defining",
+              "note": "The Passover lamb, “a male בֶּן־שָׁנָה”, a year old."
+            },
+            {
+              "ref": "Lev.23.12",
+              "note": "“A lamb without blemish בֶּן־שְׁנָתוֹ”, a son of its year, on the day of the waving of the עֹמֶר."
+            },
+            {
+              "ref": "Lev.23.18",
+              "note": "Seven lambs a year old with the new grain offering."
+            },
+            {
+              "ref": "Lev.23.19",
+              "note": "Two lambs a year old for the peace offering."
+            }
+          ]
+        },
+        {
+          "id": "dated-year",
+          "gloss": "year of a reign or era (in dates)",
+          "definition": "A year counted from a starting point, the Exodus or a king’s accession, used to date an event.",
+          "evidence": [
+            {
+              "ref": "1Ki.6.1",
+              "role": "defining",
+              "note": "“In the four hundred and eightieth year after the sons of Israel came out of Egypt, in the fourth year … of Solomon’s reign.”"
+            },
+            {
+              "ref": "Num.1.1",
+              "note": "“In the second year after they came out of the land of Egypt.”"
+            },
+            {
+              "ref": "Num.10.11",
+              "role": "defining",
+              "note": "“In the second year, in the second month, on the twentieth of the month, the cloud was taken up”: Israel sets out from Sinai."
+            },
+            {
+              "ref": "Exo.12.41",
+              "note": "“At the end of 430 years, on that very day, all the hosts of Yahweh went out.”"
+            },
+            {
+              "ref": "Isa.6.1",
+              "note": "“In the year King Uzziah died.”"
+            },
+            {
+              "ref": "2Ki.25.27"
+            }
+          ]
+        },
+        {
+          "id": "appointed-year",
+          "gloss": "a year marked out by God (the seventh, the jubilee, his favour)",
+          "definition": "A year set apart by law or by God’s purpose and named by what happens in it: rest for the land, release, return, favour, redemption or visitation.",
+          "evidence": [
+            {
+              "ref": "Lev.25.4",
+              "role": "defining",
+              "note": "“In the seventh year a sabbath of rest (שַׁבַּת שַׁבָּתוֹן) for the land.”"
+            },
+            {
+              "ref": "Lev.25.10",
+              "role": "defining",
+              "note": "“You shall make holy the fiftieth year (שְׁנַת הַחֲמִשִּׁים שָׁנָה) and proclaim liberty (דְּרוֹר) in the land … it shall be a jubilee to you.”"
+            },
+            {
+              "ref": "Lev.25.13",
+              "note": "“In this year of jubilee each of you shall return to his possession.”"
+            },
+            {
+              "ref": "Deu.15.9",
+              "note": "“The seventh year, the year of release (שְׁנַת הַשְּׁמִטָּה), is near.”"
+            },
+            {
+              "ref": "Isa.61.2",
+              "role": "defining",
+              "note": "“To proclaim the year of Yahweh’s favour (שְׁנַת רָצוֹן לַיהוָה) and the day of vengeance of our God”; read by Jesus at Nazareth (Luk 4:19)."
+            },
+            {
+              "ref": "Isa.63.4",
+              "note": "“The day of vengeance was in my heart, and the year of my redeemed (שְׁנַת גְּאוּלַי) has come.”"
+            },
+            {
+              "ref": "Jer.11.23",
+              "note": "“The year of their visitation (שְׁנַת פְּקֻדָּתָם)” on the men of Anathoth."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יוֹם",
+            "note": "“Days” set beside “years” for the span of a life or an age.",
+            "evidence": [
+              {
+                "ref": "Psa.90.15",
+                "role": "defining",
+                "note": "“Make us glad according to the days you afflicted us, the years we have seen evil.”"
+              },
+              {
+                "ref": "Deu.32.7",
+                "note": "“Remember the days of old, consider the years of generation after generation.”"
+              },
+              {
+                "ref": "Job.10.5",
+                "note": "“Are your days as the days of man, or your years as man’s days?”"
+              },
+              {
+                "ref": "Psa.77.6",
+                "note": "“The days of old, the years of ancient times.”"
+              },
+              {
+                "ref": "Psa.102.25"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "בֶּן־שָׁנָה",
+            "gloss": "a son of a year: a year old",
+            "evidence": [
+              {
+                "ref": "Exo.12.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.18"
+              },
+              {
+                "ref": "Lev.23.12",
+                "note": "With the suffix: בֶּן־שְׁנָתוֹ."
+              }
+            ]
+          },
+          {
+            "phrase": "אַחַת בַּשָּׁנָה",
+            "gloss": "once in the year",
+            "evidence": [
+              {
+                "ref": "Lev.16.34",
+                "role": "defining",
+                "note": "The covering for Israel’s sins on the Day of Coverings; Heb 9:7 “once a year”."
+              },
+              {
+                "ref": "Exo.30.10"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁלֹשׁ פְּעָמִים בַּשָּׁנָה",
+            "gloss": "three times in the year (the pilgrim feasts)",
+            "evidence": [
+              {
+                "ref": "Exo.23.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.41",
+                "note": "Sukkot: “seven days in the year (בַּשָּׁנָה)”."
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁנָה בְשָׁנָה, מִדֵּי שָׁנָה בְשָׁנָה, שָׁנָה שָׁנָה",
+            "gloss": "year by year, yearly",
+            "evidence": [
+              {
+                "ref": "1Sa.1.7",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.7.16"
+              },
+              {
+                "ref": "Deu.14.22",
+                "note": "The tithe “year by year (שָׁנָה שָׁנָה)”."
+              },
+              {
+                "ref": "Zec.14.16",
+                "note": "The nations go up “from year to year” to worship the King, Yahweh of hosts, and keep Sukkot."
+              }
+            ]
+          },
+          {
+            "phrase": "יוֹם לַשָּׁנָה",
+            "gloss": "a day for a year",
+            "evidence": [
+              {
+                "ref": "Num.14.34",
+                "role": "defining",
+                "note": "Forty days of spying, forty years of wandering, “a day for a year”."
+              },
+              {
+                "ref": "Ezk.4.6",
+                "role": "defining",
+                "note": "Ezekiel lies forty days for Judah: “a day for a year, a day for a year, I have given it to you.”"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἔτος",
+          "gloss": "year",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.5.3, שָׁנָה → ἔτος; through Gen 5 and 11; ἔτος renders שָׁנָה about 460 times"
+            },
+            {
+              "ref": "Act.7.6",
+              "role": "defining",
+              "note": "Stephen from Gen 15:13: the seed afflicted “four hundred years (ἔτη τετρακόσια)”."
+            },
+            {
+              "ref": "Heb.1.12",
+              "role": "defining",
+              "note": "From Psa 102:28: “your years (τὰ ἔτη σου) will not fail.”"
+            },
+            {
+              "ref": "Heb.3.17",
+              "note": "From Psa 95:10: “with whom was he grieved forty years?”; also Heb 3:9."
+            },
+            {
+              "ref": "Act.7.42",
+              "note": "From Amo 5:25: “forty years in the wilderness.”"
+            },
+            {
+              "ref": "Gal.3.17",
+              "note": "The law came “four hundred and thirty years” after the promise (Exo 12:40)."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐνιαυτός",
+          "gloss": "year (a year’s round)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.14, שָׁנִים → ἐνιαυτούς; Lev.16.34 and Isa.61.2, → ἐνιαυτός; about 96 times"
+            },
+            {
+              "ref": "Luk.4.19",
+              "role": "defining",
+              "note": "From Isa 61:2: “to proclaim the acceptable year (ἐνιαυτόν) of the Lord.”"
+            },
+            {
+              "ref": "Heb.9.7",
+              "role": "defining",
+              "note": "From Lev 16:34: the high priest goes in “once a year (ἅπαξ τοῦ ἐνιαυτοῦ)”."
+            },
+            {
+              "ref": "Heb.10.3",
+              "note": "“A remembrance of sins every year”; also Heb 10:1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁנַיִם",
+      "pos": "numeral",
+      "gloss": "two; both; in pairs",
+      "bdb": [
+        "v.em.ab"
+      ],
+      "cognate_ids": [
+        "ar-ithnan",
+        "akk-shina",
+        "uga-tn",
+        "phn-snm",
+        "sab-tny",
+        "arc-tere"
+      ],
+      "summary": "The number two, a dual in form; feminine שְׁתַּיִם, construct שְׁנֵי and שְׁתֵּי. It counts, it means “both” or “the two of them” with a suffix, and repeated it means “two by two”; with עָשָׂר it makes twelve.",
+      "senses": [
+        {
+          "id": "two-count",
+          "gloss": "two",
+          "definition": "The number two, before or after what it counts.",
+          "evidence": [
+            {
+              "ref": "Gen.1.16",
+              "role": "defining",
+              "note": "“God made the two great lights (שְׁנֵי הַמְּאֹרֹת), the greater … and the lesser.”"
+            },
+            {
+              "ref": "Deu.19.15",
+              "role": "defining",
+              "note": "“One witness shall not rise against a man … at the mouth of two witnesses (שְׁנֵי עֵדִים) or three shall a matter stand.”"
+            },
+            {
+              "ref": "Deu.17.6",
+              "note": "“At the mouth of two witnesses or three … not at the mouth of one witness.”"
+            },
+            {
+              "ref": "Exo.31.18",
+              "note": "“The two tablets of the testimony.”"
+            },
+            {
+              "ref": "Num.10.2",
+              "note": "“Make two silver trumpets (שְׁתֵּי חֲצוֹצְרֹת).”"
+            },
+            {
+              "ref": "Lev.23.17",
+              "note": "“Two wave loaves (שְׁתַּיִם), of two tenths (שְׁנֵי עֶשְׂרֹנִים)” on the fiftieth day."
+            },
+            {
+              "ref": "Lev.23.13",
+              "note": "“Two tenths of fine flour” with the lamb of the עֹמֶר."
+            },
+            {
+              "ref": "Lev.23.19",
+              "note": "“Two lambs a year old” for the peace offering."
+            },
+            {
+              "ref": "Ezk.37.22",
+              "role": "defining",
+              "note": "Against “one”: “I will make them one nation … and they shall no more be two nations, nor divided into two kingdoms.”"
+            }
+          ]
+        },
+        {
+          "id": "both",
+          "gloss": "both, the two of them",
+          "definition": "With a suffix or the article, the two taken together.",
+          "evidence": [
+            {
+              "ref": "Gen.2.25",
+              "role": "defining",
+              "note": "“They were both of them (שְׁנֵיהֶם) naked, the man and his wife.”"
+            },
+            {
+              "ref": "Gen.22.6",
+              "note": "“And they went both of them together”; again Gen 22:8."
+            },
+            {
+              "ref": "Ecc.4.9",
+              "role": "defining",
+              "note": "“The two are better than the one (טוֹבִים הַשְּׁנַיִם מִן־הָאֶחָד).”"
+            }
+          ]
+        },
+        {
+          "id": "two-by-two",
+          "gloss": "two by two, in pairs",
+          "definition": "Repeated, two at a time.",
+          "evidence": [
+            {
+              "ref": "Gen.7.9",
+              "role": "defining",
+              "note": "“Two by two (שְׁנַיִם שְׁנַיִם) they went in to Noah into the ark, male and female.”"
+            },
+            {
+              "ref": "Gen.6.19",
+              "note": "“Two of every kind … male and female.”"
+            },
+            {
+              "ref": "Gen.7.15"
+            }
+          ]
+        },
+        {
+          "id": "twelve",
+          "gloss": "(with עָשָׂר) twelve",
+          "definition": "In שְׁנֵים עָשָׂר, feminine שְׁתֵּים עֶשְׂרֵה, twelve, the number of Ishmael’s princes and of Israel’s tribes.",
+          "evidence": [
+            {
+              "ref": "Exo.24.4",
+              "role": "defining",
+              "note": "“Twelve pillars for the twelve tribes of Israel.”"
+            },
+            {
+              "ref": "Gen.17.20",
+              "note": "“Twelve princes shall he father.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [],
+        "opposites": [
+          {
+            "lemma": "אֶחָד",
+            "note": "One, against two: two witnesses against one; two nations made one.",
+            "evidence": [
+              {
+                "ref": "Ezk.37.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.17.6"
+              },
+              {
+                "ref": "Ecc.4.9"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שְׁנַיִם שְׁנַיִם",
+            "gloss": "two by two",
+            "evidence": [
+              {
+                "ref": "Gen.7.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל־פִּי שְׁנַיִם עֵדִים",
+            "gloss": "at the mouth of two witnesses",
+            "evidence": [
+              {
+                "ref": "Deu.17.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.19.15"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁנֵים עָשָׂר",
+            "gloss": "twelve",
+            "evidence": [
+              {
+                "ref": "Exo.24.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "δύο",
+          "gloss": "two",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.7.9 and Deu.19.15, שְׁנַיִם → δύο; δύο renders שְׁנַיִם about 358 times, ἀμφότερος (both) about 29"
+            },
+            {
+              "ref": "Mat.18.16",
+              "role": "defining",
+              "note": "From Deu 19:15: “that at the mouth of two (δύο) or three witnesses every word may stand.”"
+            },
+            {
+              "ref": "2Co.13.1"
+            },
+            {
+              "ref": "Heb.10.28",
+              "note": "From Deu 17:6: he who set aside Moses’ law died “at two or three witnesses”."
+            },
+            {
+              "ref": "Jhn.8.17",
+              "note": "“It is written in your law that the testimony of two men is true”: Jesus and the Father as the two."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁנָה",
+      "pos": "verb",
+      "gloss": "change, alter; be different",
+      "bdb": [
+        "v.ek.aa"
+      ],
+      "cognate_ids": [
+        "akk-shanu-change",
+        "arc-shene",
+        "ar-tasannaha"
+      ],
+      "summary": "To become or make other than before: God who does not change, gold that loses its lustre, a face, a behaviour, clothes or a ruling changed, and in the participle “different”. Aramaic and Arabic show š behind the ש, the sound of “year”, not the ṯ of “repeat”; BDB’s keys count this verb and “repeat” together, so its count includes both.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "change; (participle) different",
+          "senses": [
+            {
+              "id": "not-change",
+              "gloss": "change, become other",
+              "definition": "To become other than one was.",
+              "evidence": [
+                {
+                  "ref": "Mal.3.6",
+                  "role": "defining",
+                  "note": "“For I, Yahweh, do not change (לֹא שָׁנִיתִי); therefore you, sons of Jacob, are not consumed.”"
+                },
+                {
+                  "ref": "Lam.4.1",
+                  "role": "defining",
+                  "note": "“How the gold is dimmed, the fine gold changed (יִשְׁנֶא)!”, of Zion’s sons (Lam 4:2); spelled with א."
+                },
+                {
+                  "ref": "Pro.24.21",
+                  "note": "“Fear Yahweh and the king; do not meddle with those given to change (שׁוֹנִים).”"
+                },
+                {
+                  "ref": "Psa.77.11",
+                  "note": "“This is my sickness: שְׁנוֹת the right hand of the Most High”: the change of his right hand; or “the years of”, beside שְׁנוֹת עוֹלָמִים in 77:6."
+                }
+              ]
+            },
+            {
+              "id": "different",
+              "gloss": "(participle) different, diverse",
+              "definition": "Of things or laws unlike others.",
+              "evidence": [
+                {
+                  "ref": "Est.3.8",
+                  "role": "defining",
+                  "note": "“Their laws are different (שֹׁנוֹת) from every people’s.”"
+                },
+                {
+                  "ref": "Est.1.7",
+                  "note": "Vessels of gold, “vessels different from vessels”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "change, alter; disguise; pervert; move",
+          "senses": [
+            {
+              "id": "alter",
+              "gloss": "change, alter (a thing, behaviour, word)",
+              "definition": "To make something other than it was: clothes, a behaviour, a way, a face, a promise or a ruling.",
+              "evidence": [
+                {
+                  "ref": "Psa.89.35",
+                  "role": "defining",
+                  "note": "“My covenant I will not profane, and what has gone out of my lips I will not alter (לֹא אֲשַׁנֶּה)”, of the oath to David."
+                },
+                {
+                  "ref": "1Sa.21.14",
+                  "role": "defining",
+                  "note": "David “changed his behaviour (וַיְשַׁנּוֹ אֶת־טַעְמוֹ) before them and feigned madness”; title of Psa 34."
+                },
+                {
+                  "ref": "Psa.34.1"
+                },
+                {
+                  "ref": "2Ki.25.29",
+                  "role": "defining",
+                  "note": "Jehoiachin “changed his prison garments” (spelled with א); Jer 52:33."
+                },
+                {
+                  "ref": "Jer.52.33"
+                },
+                {
+                  "ref": "Jer.2.36",
+                  "note": "“Why do you go about so much to change your way?”, from Assyria to Egypt."
+                },
+                {
+                  "ref": "Job.14.20",
+                  "note": "God prevails against man: “changing his face, you send him away”, at death."
+                },
+                {
+                  "ref": "Pro.31.5",
+                  "note": "Lest a king drink “and pervert (וִישַׁנֶּה) the judgment of all the afflicted”."
+                }
+              ]
+            },
+            {
+              "gloss": "move, transfer",
+              "definition": "To move someone to another place.",
+              "evidence": [
+                {
+                  "ref": "Est.2.9",
+                  "role": "defining",
+                  "note": "Hegai “moved her (וַיְשַׁנֶּהָ) and her maids to the best place of the house of the women”."
+                }
+              ],
+              "kin": [
+                "syc-remove"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be changed",
+          "senses": [
+            {
+              "gloss": "be changed",
+              "definition": "To be made other.",
+              "evidence": [
+                {
+                  "ref": "Ecc.8.1",
+                  "role": "defining",
+                  "note": "“A man’s wisdom makes his face shine, and the hardness of his face is changed (יְשֻׁנֶּא).”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "disguise oneself",
+          "senses": [
+            {
+              "gloss": "change oneself, disguise oneself",
+              "definition": "To make oneself look other than one is, so as not to be known.",
+              "evidence": [
+                {
+                  "ref": "1Ki.14.2",
+                  "role": "defining",
+                  "note": "Jeroboam to his wife: “Arise and disguise yourself (וְהִשְׁתַּנִּית), that they may not know you are Jeroboam’s wife.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀλλοιόω",
+          "gloss": "change, alter",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Mal.3.6, שָׁנִיתִי → ἠλλοίωμαι; Lam.4.1, יִשְׁנֶא → ἀλλοιωθήσεται; Dan.2.21 (Aramaic) → ἀλλοιοῖ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁנָה",
+      "pos": "verb",
+      "gloss": "do again, repeat",
+      "bdb": [
+        "v.em.aa"
+      ],
+      "cognate_ids": [
+        "ar-thana",
+        "akk-shanu-repeat",
+        "uga-tny",
+        "arc-tene"
+      ],
+      "summary": "To do a thing a second time: strike again, pour again, speak again, return to folly. The verb of “two” and “second”: Arabic ṯanā, Ugaritic ṯny and Aramaic tənē show ṯ behind its ש. BDB’s keys count it with “change”, so its count includes those tokens.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "do again, do a second time; repeat",
+          "senses": [
+            {
+              "id": "do-again",
+              "gloss": "do again, do a second time",
+              "definition": "To repeat an action, often after doing it once.",
+              "evidence": [
+                {
+                  "ref": "1Ki.18.34",
+                  "role": "defining",
+                  "note": "Elijah: “‘Do it a second time (שְׁנוּ)’, and they did it a second time (וַיִּשְׁנוּ); ‘Do it a third time (שַׁלֵּשׁוּ)’, and they did it a third time.”"
+                },
+                {
+                  "ref": "1Sa.26.8",
+                  "role": "defining",
+                  "note": "Abishai: “let me strike him … once (פַּעַם אַחַת), and I will not do it to him a second time (וְלֹא אֶשְׁנֶה לוֹ).”"
+                },
+                {
+                  "ref": "2Sa.20.10",
+                  "note": "Joab struck Amasa “and did not strike him again (וְלֹא שָׁנָה לוֹ), and he died”."
+                },
+                {
+                  "ref": "Neh.13.21",
+                  "note": "To those lodging outside the wall on the sabbath: “If you do so again, I will lay hands on you.”"
+                },
+                {
+                  "ref": "Job.29.22",
+                  "note": "“After my words they did not speak again.”"
+                }
+              ]
+            },
+            {
+              "id": "repeat-matter",
+              "gloss": "repeat (a matter, folly)",
+              "definition": "To go over a thing again: to keep bringing up an offence, or to return to folly.",
+              "evidence": [
+                {
+                  "ref": "Pro.17.9",
+                  "role": "defining",
+                  "note": "“He who covers a transgression seeks love, but he who repeats a matter (וְשֹׁנֶה בְדָבָר) separates close friends.”"
+                },
+                {
+                  "ref": "Pro.26.11",
+                  "role": "defining",
+                  "note": "“As a dog returns to its vomit, a fool repeats his folly (שׁוֹנֶה בְאִוַּלְתּוֹ)”; quoted in 2Pe 2:22."
+                },
+                {
+                  "ref": "2Pe.2.22",
+                  "note": "Of those who turn back from the holy commandment: “the dog has returned to its own vomit.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be repeated",
+          "senses": [
+            {
+              "id": "repeated-twice",
+              "gloss": "be repeated",
+              "definition": "To be done or given a second time.",
+              "evidence": [
+                {
+                  "ref": "Gen.41.32",
+                  "role": "defining",
+                  "note": "“The dream was repeated (הִשָּׁנוֹת) to Pharaoh twice because the thing is established by God, and God will shortly do it.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δευτερόω",
+          "gloss": "do a second time",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.18.34, שְׁנוּ → δευτερώσατε, וַיִּשְׁנוּ → ἐδευτέρωσαν; 1Sa.26.8, אֶשְׁנֶה → δευτερώσω; Neh.13.21 → δευτερώσητε"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׁנִי",
+      "pos": "adjective",
+      "gloss": "second; (שֵׁנִית) a second time, again",
+      "bdb": [
+        "v.em.ac"
+      ],
+      "cognate_ids": [
+        "ar-thani",
+        "akk-shanu-second",
+        "uga-tani",
+        "phn-sny",
+        "sab-tny"
+      ],
+      "summary": "The ordinal of שְׁנַיִם: the second day, month, year, son or thing; feminine שֵׁנִית, which also serves as the adverb “a second time”.",
+      "senses": [
+        {
+          "id": "second",
+          "gloss": "second (in order)",
+          "definition": "The one that comes after the first.",
+          "evidence": [
+            {
+              "ref": "Gen.1.8",
+              "role": "defining",
+              "note": "“And there was evening and there was morning, a second day (יוֹם שֵׁנִי).”"
+            },
+            {
+              "ref": "Num.10.11",
+              "role": "defining",
+              "note": "“In the second year (בַּשָּׁנָה הַשֵּׁנִית), in the second month (בַּחֹדֶשׁ הַשֵּׁנִי).”"
+            },
+            {
+              "ref": "Num.9.11",
+              "note": "The Passover kept “in the second month” by those unclean in the first."
+            },
+            {
+              "ref": "Gen.2.13",
+              "note": "“The name of the second river is Gihon.”"
+            },
+            {
+              "ref": "Exo.1.15",
+              "note": "“The name of the one was Shiphrah, and the name of the second (הַשֵּׁנִית) Puah.”"
+            }
+          ]
+        },
+        {
+          "id": "second-time",
+          "gloss": "(שֵׁנִית) a second time, again",
+          "definition": "The feminine as an adverb: once more, after a first time.",
+          "evidence": [
+            {
+              "ref": "Num.10.6",
+              "role": "defining",
+              "note": "“When you blow an alarm a second time (שֵׁנִית), the camps on the south shall set out.”"
+            },
+            {
+              "ref": "Gen.22.15",
+              "role": "defining",
+              "note": "“The angel of Yahweh called to Abraham a second time from heaven.”"
+            },
+            {
+              "ref": "Jon.3.1",
+              "note": "“The word of Yahweh came to Jonah a second time.”"
+            },
+            {
+              "ref": "Jos.5.2",
+              "note": "“Circumcise the sons of Israel again a second time.”"
+            },
+            {
+              "ref": "Isa.11.11",
+              "role": "defining",
+              "note": "“Yahweh will set his hand again a second time (שֵׁנִית) to recover the remnant of his people” from Assyria, Egypt and the islands of the sea."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δεύτερος",
+          "gloss": "second",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.8, שֵׁנִי → δεύτερος; δεύτερος renders שֵׁנִי about 129 times"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁנֶה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "double; copy; second (in rank or order)",
+      "bdb": [
+        "v.em.ad"
+      ],
+      "cognate_ids": [
+        "akk-shanu-repeat",
+        "akk-shanu-second",
+        "ar-thana",
+        "phn-sny",
+        "sab-htny"
+      ],
+      "summary": "What makes a second of something: twice the amount, a second copy of a writing, the one second in rank to a king or priest, a second son, and the second quarter of Jerusalem.",
+      "senses": [
+        {
+          "id": "double",
+          "gloss": "double, twice as much",
+          "definition": "An amount made twice over.",
+          "evidence": [
+            {
+              "ref": "Exo.16.22",
+              "role": "defining",
+              "note": "“On the sixth day they gathered double bread (לֶחֶם מִשְׁנֶה), two omers (שְׁנֵי הָעֹמֶר) for each one.”"
+            },
+            {
+              "ref": "Exo.16.5",
+              "note": "“It shall be double what they gather daily.”"
+            },
+            {
+              "ref": "Gen.43.12",
+              "note": "“Take double money in your hand”; Gen 43:15."
+            },
+            {
+              "ref": "Deu.15.18",
+              "note": "The released servant served “double the hire of a hired man” six years."
+            },
+            {
+              "ref": "Job.42.10",
+              "role": "defining",
+              "note": "“Yahweh gave Job twice (לְמִשְׁנֶה) all that he had before.”"
+            },
+            {
+              "ref": "Isa.61.7",
+              "role": "defining",
+              "note": "“Instead of your shame, double … in their land they shall possess double; everlasting joy shall be theirs.”"
+            },
+            {
+              "ref": "Zec.9.12",
+              "note": "“Return to the stronghold, prisoners of hope; today I declare that I will restore double to you.”"
+            },
+            {
+              "ref": "Jer.16.18",
+              "note": "“I will repay double their iniquity and their sin”; Jer 17:18 “destroy them with double destruction”."
+            },
+            {
+              "ref": "Jer.17.18"
+            }
+          ]
+        },
+        {
+          "id": "copy",
+          "gloss": "copy (of the law)",
+          "definition": "A second writing of the law, made from the first.",
+          "evidence": [
+            {
+              "ref": "Deu.17.18",
+              "role": "defining",
+              "note": "The king “shall write for himself a copy of this law (מִשְׁנֵה הַתּוֹרָה הַזֹּאת) in a book, from before the priests the Levites”."
+            },
+            {
+              "ref": "Jos.8.32",
+              "note": "Joshua wrote on the stones “a copy of the law of Moses”."
+            }
+          ]
+        },
+        {
+          "id": "second-rank",
+          "gloss": "second (in rank), next to the chief",
+          "definition": "The one who stands second to a king, a high priest or a chief.",
+          "evidence": [
+            {
+              "ref": "Gen.41.43",
+              "role": "defining",
+              "note": "Pharaoh made Joseph ride “in the second chariot (בְּמִרְכֶּבֶת הַמִּשְׁנֶה) that he had”."
+            },
+            {
+              "ref": "Est.10.3",
+              "role": "defining",
+              "note": "“Mordecai the Jew was second (מִשְׁנֶה) to King Ahasuerus.”"
+            },
+            {
+              "ref": "1Sa.23.17",
+              "role": "defining",
+              "note": "Jonathan to David: “You shall be king over Israel, and I shall be second to you (לְךָ לְמִשְׁנֶה).”"
+            },
+            {
+              "ref": "2Ch.28.7",
+              "note": "“Elkanah, second to the king.”"
+            },
+            {
+              "ref": "2Ki.25.18",
+              "note": "“Zephaniah the second priest”, after Seraiah the chief priest; Jer 52:24."
+            },
+            {
+              "ref": "2Ki.23.4",
+              "note": "“The priests of the second order.”"
+            },
+            {
+              "ref": "Neh.11.9",
+              "note": "Judah son of Senuah “second over the city”."
+            },
+            {
+              "ref": "1Ch.15.18",
+              "note": "Levites “of the second degree” among the singers."
+            },
+            {
+              "ref": "2Ch.31.12"
+            }
+          ]
+        },
+        {
+          "id": "second-son",
+          "gloss": "second (son, in order)",
+          "definition": "Of sons, the second-born; of things, the second sort.",
+          "evidence": [
+            {
+              "ref": "1Sa.8.2",
+              "role": "defining",
+              "note": "“The name of his firstborn was Joel, and the name of his second (מִשְׁנֵהוּ) Abijah.”"
+            },
+            {
+              "ref": "1Sa.17.13",
+              "note": "Eliab the firstborn, “and his second Abinadab”."
+            },
+            {
+              "ref": "2Sa.3.3"
+            },
+            {
+              "ref": "1Ch.5.12",
+              "note": "“Joel the chief and Shapham the second.”"
+            },
+            {
+              "ref": "Ezr.1.10",
+              "note": "“Silver bowls of a second sort (מִשְׁנִים), 410.”"
+            },
+            {
+              "ref": "1Sa.15.9",
+              "note": "Saul spared “the best of the sheep and the oxen וְהַמִּשְׁנִים”: the second-born or second-quality beasts; the sense is not certain."
+            }
+          ]
+        },
+        {
+          "id": "second-quarter",
+          "gloss": "the Second (quarter of Jerusalem)",
+          "definition": "With the article, a district of Jerusalem.",
+          "evidence": [
+            {
+              "ref": "2Ki.22.14",
+              "role": "defining",
+              "note": "Huldah the prophetess “dwelt in Jerusalem in the Second (בַּמִּשְׁנֶה)”; 2Ch 34:22."
+            },
+            {
+              "ref": "2Ch.34.22"
+            },
+            {
+              "ref": "Zep.1.10",
+              "note": "“A cry from the Fish Gate and a wailing from the Second.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "διπλοῦς",
+          "gloss": "double",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.16.22, מִשְׁנֶה → διπλοῦς; Zec.9.12 the same"
+            },
+            {
+              "ref": "Rev.18.6",
+              "note": "“Repay her double (διπλώσατε τὰ διπλᾶ) according to her works”, as Jer 16:18 and 17:18 threaten double."
+            }
+          ]
+        },
+        {
+          "lemma": "δεύτερος",
+          "gloss": "second",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.41.43, מִשְׁנֶה → δεύτερος; Isa.61.7 the same"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁנִי",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "scarlet (dye, thread, cloth)",
+      "bdb": [
+        "v.el.ab"
+      ],
+      "cognate_ids": [
+        "akk-shinitu"
+      ],
+      "summary": "The scarlet dye and the yarn or cloth dyed with it, often תּוֹלַעַת שָׁנִי “worm of scarlet”, from the insect it came from: in the tabernacle’s curtains and the priests’ garments, in the rites of cleansing, as a thread or cord, and as a fine garment. How it belongs to the root is not known: no cognate with the sense ties it to “year” or “two”, and Akkadian šinītu “dyed cloth” is only possibly the same word.",
+      "senses": [
+        {
+          "id": "scarlet-yarn",
+          "gloss": "scarlet yarn, scarlet stuff (of the tabernacle)",
+          "definition": "Yarn dyed scarlet, worked with blue, purple and fine linen into the tabernacle’s hangings and the high priest’s garments.",
+          "evidence": [
+            {
+              "ref": "Exo.25.4",
+              "role": "defining",
+              "note": "Among the offerings: “blue and purple and scarlet (וְתוֹלַעַת שָׁנִי) and fine linen.”"
+            },
+            {
+              "ref": "Exo.26.1",
+              "note": "The curtains of the Dwelling."
+            },
+            {
+              "ref": "Exo.28.6",
+              "note": "The ephod."
+            },
+            {
+              "ref": "Exo.39.1"
+            }
+          ]
+        },
+        {
+          "id": "scarlet-cleansing",
+          "gloss": "scarlet (in the rites of cleansing)",
+          "definition": "Scarlet stuff taken with cedar wood and hyssop for cleansing the leper and the house, and burned with the red heifer.",
+          "evidence": [
+            {
+              "ref": "Lev.14.4",
+              "role": "defining",
+              "note": "For the one to be cleansed: “two living clean birds, cedar wood, scarlet (וּשְׁנִי תוֹלַעַת) and hyssop.”"
+            },
+            {
+              "ref": "Lev.14.51",
+              "note": "Dipped in the blood and the living water to sprinkle the house seven times."
+            },
+            {
+              "ref": "Num.19.6",
+              "role": "defining",
+              "note": "The priest casts “cedar wood, hyssop and scarlet” into the burning of the heifer."
+            },
+            {
+              "ref": "Heb.9.19",
+              "note": "Moses sprinkled the book and the people with blood “with water and scarlet wool and hyssop”."
+            }
+          ]
+        },
+        {
+          "id": "scarlet-thread",
+          "gloss": "scarlet thread, cord",
+          "definition": "A thread or cord of scarlet, used as a mark.",
+          "evidence": [
+            {
+              "ref": "Gen.38.28",
+              "role": "defining",
+              "note": "The midwife “bound on his hand a scarlet thread (שָׁנִי), saying, This one came out first”; 38:30."
+            },
+            {
+              "ref": "Jos.2.18",
+              "role": "defining",
+              "note": "“Bind this cord of scarlet thread (תִּקְוַת חוּט הַשָּׁנִי) in the window”: Rahab’s house spared; 2:21."
+            },
+            {
+              "ref": "Sng.4.3",
+              "note": "“Your lips are like a thread of scarlet.”"
+            }
+          ]
+        },
+        {
+          "id": "scarlet-garment",
+          "gloss": "scarlet clothing",
+          "definition": "Garments dyed scarlet, a sign of wealth and finery.",
+          "evidence": [
+            {
+              "ref": "Pro.31.21",
+              "role": "defining",
+              "note": "“She is not afraid of the snow for her household, for all her household are clothed in scarlet (שָׁנִים).”"
+            },
+            {
+              "ref": "2Sa.1.24",
+              "note": "Saul “clothed you in scarlet with delights”."
+            },
+            {
+              "ref": "Jer.4.30",
+              "note": "Zion dressing in scarlet and gold for lovers who despise her."
+            }
+          ]
+        },
+        {
+          "id": "scarlet-sin",
+          "gloss": "scarlet (the colour of sin)",
+          "definition": "The deep red of the dye as a figure for sins, against the white of snow and wool.",
+          "evidence": [
+            {
+              "ref": "Isa.1.18",
+              "role": "defining",
+              "note": "“Though your sins be as scarlet (כַּשָּׁנִים), they shall be white as snow; though they be red like crimson (כַתּוֹלָע), they shall be as wool.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תּוֹלָע",
+            "note": "Crimson, the worm-dye, beside scarlet.",
+            "evidence": [
+              {
+                "ref": "Isa.1.18",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שֶׁלֶג",
+            "note": "Snow, the white the scarlet of sins is made.",
+            "evidence": [
+              {
+                "ref": "Isa.1.18",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "תּוֹלַעַת שָׁנִי",
+            "gloss": "scarlet (worm-scarlet) yarn",
+            "evidence": [
+              {
+                "ref": "Exo.25.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.14.4",
+                "note": "Reversed: שְׁנִי תוֹלַעַת."
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κόκκινος",
+          "gloss": "scarlet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jos.2.18, שָּׁנִי → κόκκινος; with νήθω, κλώθω in Exodus for spun scarlet"
+            },
+            {
+              "ref": "Heb.9.19",
+              "role": "defining",
+              "note": "“Scarlet wool (ἐρίου κοκκίνου) and hyssop”, from the rites of Lev 14 and Num 19."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁנְאָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "repetition: thousands repeated",
+      "bdb": [
+        "v.em.ae"
+      ],
+      "cognate_ids": [
+        "ar-thana"
+      ],
+      "summary": "Once only, of God’s chariots at Sinai, “thousands of שִׁנְאָן”: thousands upon thousands, thousands repeated. The sense rests on the parallel “twice ten thousand” and on the root “repeat”; the א in the spelling is unexplained.",
+      "senses": [
+        {
+          "gloss": "repetition (thousands upon thousands)",
+          "definition": "Thousands repeated, matching “two myriads” in the same line.",
+          "evidence": [
+            {
+              "ref": "Psa.68.18",
+              "role": "defining",
+              "note": "“The chariots of God are twice ten thousand (רִבֹּתַיִם), thousands of שִׁנְאָן; the Lord is among them, Sinai in holiness.”"
+            }
+          ],
+          "kin": [
+            "do-again"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תָּנָה",
+      "root": "תנה",
+      "pos": "verb",
+      "gloss": "recount, rehearse",
+      "bdb": [
+        "w.bc.aa"
+      ],
+      "cognate_ids": [
+        "arc-tene",
+        "akk-shanu-repeat",
+        "ar-thana"
+      ],
+      "summary": "Twice, in Judges, in the piel: to tell over again, rehearse. Spelled with ת, as Aramaic writes the older ṯ that Hebrew writes ש, it is the Aramaic form of שָׁנָה “repeat”; Aramaic tənē and Akkadian šanû both mean “repeat” and “recount”. Its place here rests on those cognates.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "recount, rehearse",
+          "senses": [
+            {
+              "gloss": "recount, rehearse (in song or lament)",
+              "definition": "To tell over again, in song or lament, what was done.",
+              "evidence": [
+                {
+                  "ref": "Jdg.5.11",
+                  "role": "defining",
+                  "note": "“At the places of drawing water, there they rehearse (יְתַנּוּ) the righteous acts of Yahweh.”"
+                },
+                {
+                  "ref": "Jdg.11.40",
+                  "role": "defining",
+                  "note": "“The daughters of Israel went yearly to rehearse (לְתַנּוֹת) the daughter of Jephthah four days in the year.”"
+                }
+              ],
+              "kin": [
+                "repeat-matter"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θρηνέω",
+          "gloss": "lament",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jdg.11.40, תַנּוֹת → θρηνεῖν; Jdg.5.11, יְתַנּוּ → δώσουσιν"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁנָה",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "year",
+      "bdb": [
+        "xv.az.ab"
+      ],
+      "cognate_ids": [
+        "arc-shatta",
+        "ar-sana",
+        "akk-shattu",
+        "uga-snt"
+      ],
+      "summary": "Biblical Aramaic for “year”, construct שְׁנַת, plural שְׁנִין, used as the Hebrew is for age and for the years of kings. BDB’s key also counts the many Hebrew שְׁנַת tokens by spelling; the Aramaic uses are the verses cited.",
+      "senses": [
+        {
+          "gloss": "year (of age; of a reign)",
+          "definition": "A year of a life or of a king’s reign.",
+          "evidence": [
+            {
+              "ref": "Dan.6.1",
+              "role": "defining",
+              "note": "“Darius the Mede received the kingdom, being about sixty-two years old (כְּבַר שְׁנִין שִׁתִּין וְתַרְתֵּין).”"
+            },
+            {
+              "ref": "Dan.7.1",
+              "role": "defining",
+              "note": "“In the first year (בִּשְׁנַת חֲדָה) of Belshazzar king of Babylon.”"
+            },
+            {
+              "ref": "Ezr.4.24",
+              "note": "The work stopped “until the second year (שְׁנַת תַּרְתֵּין) of the reign of Darius”."
+            },
+            {
+              "ref": "Ezr.5.11",
+              "note": "The house “built many years ago (שְׁנִין שַׂגִּיאָן)”."
+            },
+            {
+              "ref": "Ezr.5.13"
+            },
+            {
+              "ref": "Ezr.6.3",
+              "note": "“In the first year of Cyrus the king.”"
+            },
+            {
+              "ref": "Ezr.6.15",
+              "note": "The house finished “in the sixth year of the reign of Darius”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁנָא",
+      "lang": "arc",
+      "root": "שנא",
+      "pos": "verb",
+      "gloss": "change; be different",
+      "bdb": [
+        "xv.az.aa"
+      ],
+      "cognate_ids": [
+        "arc-shene",
+        "akk-shanu-change"
+      ],
+      "summary": "Biblical Aramaic, spelled with א: to be changed or different, to change a word or a decree. In Daniel it marks what God alone changes (times, seasons, kings) against the law of the Medes and Persians that may not be changed and the horn that thinks to change times and law.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be changed; be different",
+          "senses": [
+            {
+              "gloss": "be changed; (participle) different",
+              "definition": "To become other; in the participle, unlike the rest.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.27",
+                  "role": "defining",
+                  "note": "The fire had no power over the three: “their cloaks were not changed (לָא שְׁנוֹ).”"
+                },
+                {
+                  "ref": "Dan.5.6",
+                  "note": "“The king’s countenance was changed (זִיוֹהִי שְׁנוֹהִי)”; also 5:9."
+                },
+                {
+                  "ref": "Dan.7.3",
+                  "role": "defining",
+                  "note": "“Four great beasts came up from the sea, different (שָׁנְיָן) one from another.”"
+                },
+                {
+                  "ref": "Dan.7.19",
+                  "note": "The fourth beast “different from all the others”; 7:23, 24."
+                },
+                {
+                  "ref": "Dan.7.23"
+                },
+                {
+                  "ref": "Dan.7.24"
+                },
+                {
+                  "ref": "Dan.6.18",
+                  "note": "The den sealed “that nothing might be changed concerning Daniel”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "change; set aside",
+          "senses": [
+            {
+              "gloss": "change, alter; set aside (a command)",
+              "definition": "To make other, or to set aside a word.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.13",
+                  "role": "defining",
+                  "note": "“Let his heart be changed (יְשַׁנּוֹן) from man’s, and let a beast’s heart be given him.”"
+                },
+                {
+                  "ref": "Dan.3.28",
+                  "role": "defining",
+                  "note": "They “set aside (שַׁנִּיו) the king’s word and yielded their bodies” rather than worship another god."
+                },
+                {
+                  "ref": "Dan.7.7",
+                  "note": "The fourth beast “was different (מְשַׁנְּיָה) from all the beasts before it”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "change, alter",
+          "senses": [
+            {
+              "id": "change-times",
+              "gloss": "change (times, a decree)",
+              "definition": "To bring about a change, or to alter a law or decree.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.21",
+                  "role": "defining",
+                  "note": "“He changes (מְהַשְׁנֵא) the times and the seasons; he removes kings and sets up kings.”"
+                },
+                {
+                  "ref": "Dan.7.25",
+                  "role": "defining",
+                  "note": "The horn “shall think to change (לְהַשְׁנָיָה) times and law”."
+                },
+                {
+                  "ref": "Dan.6.9",
+                  "role": "defining",
+                  "note": "“Sign the writing, that it may not be changed, according to the law of the Medes and Persians”; 6:16."
+                },
+                {
+                  "ref": "Dan.6.16"
+                },
+                {
+                  "ref": "Ezr.6.11",
+                  "note": "“Whoever alters this word”; 6:12."
+                },
+                {
+                  "ref": "Ezr.6.12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpaal",
+          "gloss": "be changed",
+          "senses": [
+            {
+              "gloss": "be changed",
+              "definition": "To be changed, of a time, a face or a look.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.9",
+                  "role": "defining",
+                  "note": "“Till the time be changed (יִשְׁתַּנֵּא).”"
+                },
+                {
+                  "ref": "Dan.3.19",
+                  "note": "“The form of his face was changed (אֶשְׁתַּנִּי) against Shadrach, Meshach and Abed-nego.”"
+                },
+                {
+                  "ref": "Dan.5.10"
+                },
+                {
+                  "ref": "Dan.7.28",
+                  "note": "“My countenance was changed in me.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּנְיָן",
+      "lang": "arc",
+      "root": "תנינ",
+      "pos": "adjective",
+      "gloss": "second",
+      "bdb": [
+        "xw.ae.ab"
+      ],
+      "cognate_ids": [
+        "arc-tene",
+        "ar-thani",
+        "uga-tani"
+      ],
+      "summary": "Biblical Aramaic for “second”, the Aramaic form of שֵׁנִי, with ת for the older ṯ.",
+      "senses": [
+        {
+          "gloss": "second",
+          "definition": "The second in a series.",
+          "evidence": [
+            {
+              "ref": "Dan.7.5",
+              "role": "defining",
+              "note": "“And behold, another beast, a second (תִנְיָנָה), like a bear.”"
+            }
+          ],
+          "kin": [
+            "second"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּנְיָנוּת",
+      "lang": "arc",
+      "root": "תנינות",
+      "pos": "adverb",
+      "gloss": "a second time",
+      "bdb": [
+        "xw.ae.ac"
+      ],
+      "cognate_ids": [
+        "arc-tene",
+        "ar-thana"
+      ],
+      "summary": "Biblical Aramaic, the adverb formed from תִּנְיָן: a second time, again.",
+      "senses": [
+        {
+          "gloss": "a second time",
+          "definition": "Again, once more.",
+          "evidence": [
+            {
+              "ref": "Dan.2.7",
+              "role": "defining",
+              "note": "“They answered a second time (תִנְיָנוּת) and said, Let the king tell his servants the dream.”"
+            }
+          ],
+          "kin": [
+            "second-time"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּרֵין",
+      "lang": "arc",
+      "root": "תרינ",
+      "pos": "numeral",
+      "gloss": "two",
+      "bdb": [
+        "xw.ae.ad"
+      ],
+      "cognate_ids": [
+        "arc-tere",
+        "ar-ithnan",
+        "uga-tn",
+        "akk-shina"
+      ],
+      "summary": "Biblical Aramaic for “two”, feminine תַּרְתֵּין: the Aramaic of שְׁנַיִם, with ת for the older ṯ and r for the n (Arabic iṯnān, Ugaritic ṯn). With עֲשַׂר it makes twelve.",
+      "senses": [
+        {
+          "gloss": "two; (with עֲשַׂר) twelve",
+          "definition": "The number two, alone or in twelve and sixty-two.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.17",
+              "role": "defining",
+              "note": "“Twelve (תְּרֵי־עֲשַׂר) male goats for all Israel, according to the number of the tribes of Israel.”"
+            },
+            {
+              "ref": "Dan.4.26",
+              "note": "“At the end of twelve months.”"
+            },
+            {
+              "ref": "Dan.6.1",
+              "note": "“Sixty-two (שִׁתִּין וְתַרְתֵּין) years.”"
+            },
+            {
+              "ref": "Ezr.4.24",
+              "note": "“The second year”, literally “the year of two”."
+            }
+          ],
+          "kin": [
+            "two-count"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁנְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "year",
+      "cognate_ids": [
+        "arc-shatta",
+        "ar-sana"
+      ],
+      "summary": "The Peshitta’s ܫܢܬܐ (šantā), plural ܫܢܝܢ (šnīn): its New Testament keeps the Hebrew’s years, the yearly feasts and the high priest’s “once a year”, and reads Isa 61:2 as “the acceptable year of the Lord”.",
+      "senses": [
+        {
+          "gloss": "year",
+          "definition": "A year: of the feasts, of a life, of the Hebrew’s appointed year.",
+          "evidence": [
+            {
+              "ref": "Luk.4.19",
+              "role": "defining",
+              "note": "Peshitta ܫܢܬܐ for the “year” of Isa 61:2, read at Nazareth."
+            },
+            {
+              "ref": "Heb.9.7",
+              "role": "defining",
+              "note": "The high priest goes in “once in the year”, as Lev 16:34."
+            },
+            {
+              "ref": "Luk.2.41",
+              "note": "His parents went to Jerusalem “every year” at the Passover."
+            },
+            {
+              "ref": "Heb.1.12",
+              "note": "“Your years (ܫܢܝܟ) will not fail”, from Psa 102:28."
+            },
+            {
+              "ref": "Heb.10.1"
+            },
+            {
+              "ref": "Jhn.11.49",
+              "note": "Caiaphas, “high priest that year”."
+            }
+          ],
+          "kin": [
+            "year-round",
+            "appointed-year"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁנָא",
+      "lang": "syc",
+      "root": "שנא",
+      "pos": "verb",
+      "gloss": "depart, remove; be out of one’s mind",
+      "cognate_ids": [
+        "arc-shene",
+        "akk-shanu-change"
+      ],
+      "summary": "The Peshitta’s ܫܢܐ: in the pael to move away, depart, remove; in the ethpaal to be removed; in the peal to be out of one’s mind, gone from oneself. It is the Syriac of the Hebrew “change” (š), not of “repeat”, which Syriac writes ܬܢܐ: the Hebrew piel “moved her” (Est 2:9) and David’s “changed his behaviour” as he feigned madness (1Sa 21:14) are the same two senses.",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "depart; remove; pass over",
+          "senses": [
+            {
+              "id": "syc-remove",
+              "gloss": "depart; remove, move; pass over",
+              "definition": "To move from one place or state to another, or to move something away.",
+              "evidence": [
+                {
+                  "ref": "Mat.17.20",
+                  "role": "defining",
+                  "note": "“Say to this mountain, Remove from here to there, and it will remove.”"
+                },
+                {
+                  "ref": "Mat.4.12",
+                  "role": "defining",
+                  "note": "Hearing John was delivered up, Jesus “departed (ܫܢܝ) into Galilee”."
+                },
+                {
+                  "ref": "Act.7.4",
+                  "note": "God “removed him” from Haran into this land."
+                },
+                {
+                  "ref": "Act.7.43",
+                  "note": "From Amo 5:27: “I will remove you beyond Babylon.”"
+                },
+                {
+                  "ref": "Heb.11.5",
+                  "note": "Enoch “was not found, because God removed him” (Gen 5:24)."
+                },
+                {
+                  "ref": "Jhn.5.24",
+                  "note": "He who hears “has passed from death to life”; also 1Jn 3:14."
+                },
+                {
+                  "ref": "1Jn.3.14"
+                },
+                {
+                  "ref": "Phm.1.15",
+                  "note": "Onesimus “departed for a season”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be removed",
+          "senses": [
+            {
+              "gloss": "be removed, be carried over",
+              "definition": "To be moved from one place to another.",
+              "evidence": [
+                {
+                  "ref": "Heb.11.5",
+                  "role": "defining",
+                  "note": "“By faith Enoch was removed (ܐܫܬܢܝ) that he should not see death.”"
+                },
+                {
+                  "ref": "Act.7.16",
+                  "note": "The fathers “were carried over to Shechem”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peal",
+          "gloss": "be out of one’s mind",
+          "senses": [
+            {
+              "gloss": "be out of one’s mind, be mad",
+              "definition": "To be gone from one’s right mind.",
+              "evidence": [
+                {
+                  "ref": "Act.26.24",
+                  "role": "defining",
+                  "note": "Festus: “Paul, you are out of your mind (ܫܢܝܬ); much learning has turned you to madness”; Paul: “I am not out of my mind” (26:25)."
+                },
+                {
+                  "ref": "Act.26.25"
+                },
+                {
+                  "ref": "Jhn.10.20",
+                  "note": "“He has a demon and is out of his mind.”"
+                },
+                {
+                  "ref": "1Co.14.23",
+                  "note": "“Will they not say that you are mad?”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּנְיָנָא",
+      "lang": "syc",
+      "root": "תנא",
+      "pos": "adjective",
+      "gloss": "second",
+      "cognate_ids": [
+        "arc-tene",
+        "ar-thani"
+      ],
+      "summary": "The Peshitta’s ܬܢܝܢܐ, the Syriac of שֵׁנִי, with ת for the older ṯ; in its New Testament only of “the second death”.",
+      "senses": [
+        {
+          "gloss": "second",
+          "definition": "The second, after a first.",
+          "evidence": [
+            {
+              "ref": "Rev.20.14",
+              "role": "defining",
+              "note": "“Death and the grave were cast into the lake of fire; this is the second (ܬܢܝܢܐ) death.”"
+            },
+            {
+              "ref": "Rev.2.11",
+              "note": "“He who overcomes shall not be hurt by the second death.”"
+            },
+            {
+              "ref": "Rev.20.6"
+            },
+            {
+              "ref": "Rev.21.8"
+            }
+          ],
+          "kin": [
+            "second"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּנְיָנוּת",
+      "lang": "syc",
+      "root": "תנא",
+      "pos": "adverb",
+      "gloss": "twice, a second time",
+      "cognate_ids": [
+        "arc-tene",
+        "ar-thana"
+      ],
+      "summary": "The Peshitta’s ܬܢܝܢܘܬ, the adverb of ܬܢܝܢܐ, as Biblical Aramaic תִּנְיָנוּת.",
+      "senses": [
+        {
+          "gloss": "twice",
+          "definition": "A second time.",
+          "evidence": [
+            {
+              "ref": "Jud.1.12",
+              "role": "defining",
+              "note": "Trees without fruit, “twice dead, plucked up by the roots”."
+            }
+          ],
+          "kin": [
+            "second-time"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּרֵין",
+      "lang": "syc",
+      "root": "תרינ",
+      "pos": "numeral",
+      "gloss": "two",
+      "cognate_ids": [
+        "arc-tere",
+        "ar-ithnan"
+      ],
+      "summary": "The Peshitta’s ܬܪܝܢ, feminine ܬܪܬܝܢ, as Biblical Aramaic תְּרֵין: the two witnesses of the law, the two made one flesh, the two made one new man.",
+      "senses": [
+        {
+          "gloss": "two",
+          "definition": "The number two; with a suffix, the two of them.",
+          "evidence": [
+            {
+              "ref": "Mat.18.16",
+              "role": "defining",
+              "note": "From Deu 19:15: “at the mouth of two or three witnesses every word may stand.”"
+            },
+            {
+              "ref": "Jhn.8.17",
+              "note": "“The testimony of two men is true.”"
+            },
+            {
+              "ref": "2Co.13.1"
+            },
+            {
+              "ref": "Heb.10.28",
+              "note": "From Deu 17:6."
+            },
+            {
+              "ref": "Mat.19.5",
+              "note": "“The two of them (ܬܪܝܗܘܢ) shall be one flesh.”"
+            },
+            {
+              "ref": "Eph.2.15",
+              "note": "To create “of the two one new man”; 2:14–16."
+            },
+            {
+              "ref": "Mat.22.40",
+              "note": "“On these two commandments hang all the law and the prophets.”"
+            }
+          ],
+          "kin": [
+            "two-count"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sana",
+      "lang": "ar",
+      "form": "سَنَةٌ",
+      "translit": "sana, pl. sinūn, sanawāt, sanahāt",
+      "gloss": "year",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Arabic s answers to Hebrew ש where the older sound is š. Lane’s sources describe the year as a full round, “a single revolution of the sun”, and distinguish it from the twelve lunar months.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1447, root سنه, سَنَةٌ (n20988)",
+          "note": "“A year; syn. حَوْلٌ … or عَامٌ”; with the Arabs it consists of four seasons."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1449, root سنو, سَنَةٌ (n21002)",
+          "note": "“signifying A year … it signifies a single revolution of the sun”; solar and lunar years distinguished."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000425 šnt [year] N, ARB014566 sana"
+        }
+      ]
+    },
+    {
+      "id": "ar-tasannaha",
+      "lang": "ar",
+      "form": "تَسَنَّهَ",
+      "translit": "tasannaha (and sanihā)",
+      "gloss": "(of food, drink) become altered by the lapse of years",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The verb of the Arabic year-root: what has “undergone the lapse of years” is changed by them, as the Qurʾān’s “your food and drink have not become altered (lam yatasannah)”. It joins “year” and “change” in one Arabic root with the sound š, as Hebrew joins them in one spelling.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1447, root سنه, form 5 تَسَنَّهَ (n20987)",
+          "note": "“تسنّهت النَّخْلَةُ The palm-tree underwent the lapse of years … تسنّه said of food and of beverage, It became altered [for the worse] … by the lapse of years.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1448, root سنه, طَعَامٌ سَنِهٌ (n20990)",
+          "note": "“[Food] that has undergone the lapse of years.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-thana",
+      "lang": "ar",
+      "form": "ثَنَى",
+      "translit": "ṯanā; II ṯannā; ṯinan",
+      "gloss": "fold, double; (II) make two; (ṯinan) repetition, a thing done twice",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "The Arabic ṯ shows the older sound behind the ש of “two”, “second” and “repeat”. Doubling, making two, and doing a thing “one time after another” are the Hebrew verb’s “do again”, מִשְׁנֶה “double” and שִׁנְאָן.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 356, root ثنى, ثَنَاهُ (n4751)",
+          "note": "“He doubled it, or folded it; he turned one part of it upon another.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 357, root ثنى, form 2 ثنّاهُ (n4752)",
+          "note": "“He made it two; or called it two.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 358, root ثنى, ثِنًى (n4761)",
+          "note": "“The repetition of a thing; doing it one time after another: or a thing, or an affair, done twice: this is the primary signification.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000489 ṯny [repeat] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-ithnan",
+      "lang": "ar",
+      "form": "اِثْنَانِ",
+      "translit": "iṯnāni, fem. iṯnatāni, ṯintāni",
+      "gloss": "two",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 359, root ثنى, اِثْنَانِ (n4780)",
+          "note": "“A noun of number … meaning [Two;] the double of وَاحِدٌ”; fem. اِثْنَتَانِ and ثِنْتَانِ."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000490 ṯny [two] Nu, ARB003467 iṯnāni"
+        }
+      ]
+    },
+    {
+      "id": "ar-thani",
+      "lang": "ar",
+      "form": "ثَانٍ",
+      "translit": "ṯānin, fem. ṯāniya; ṯunyān",
+      "gloss": "second (ordinal); (ṯunyān) the second chief, next below the lord",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "ثُنْيَانٌ, “the person who comes second as a chief”, matches מִשְׁנֶה “second to the king” (Est 10:3).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 359, root ثنى, ثَانٍ (n4777)",
+          "note": "“[Also Second; the ordinal of two: fem. with ة.] هٰذَا ثَانِى هٰذَا … this is what has made this a pair.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 358, root ثنى, ثُنْيَانٌ (n4766)",
+          "note": "“The second chief; the person who comes second as a chief; the person who is [next] below the سَيِّد in rank.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-shattu",
+      "lang": "akk",
+      "form": "šattu",
+      "translit": "šattu, pl. šanātu",
+      "gloss": "year",
+      "relation": "cognate",
+      "note": "Akkadian writes both older sounds as š, so it shows nothing of the merger; the plural šanātu keeps the n assimilated in šattu.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003590, šattu [year] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003590.html",
+          "note": "Senses “year”, “in the year”; forms šanāti, šattu, šanat."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000425 šnt [year] N, AKK011912 šattu [year]"
+        }
+      ]
+    },
+    {
+      "id": "akk-shanu-change",
+      "lang": "akk",
+      "form": "šanû",
+      "translit": "šanû (be(come) changed)",
+      "gloss": "be(come) changed, alter, change; relocate",
+      "relation": "cognate",
+      "note": "Akkadian keeps two verbs šanû apart, “be changed” and “do twice”, as Hebrew שָׁנָה has both senses; the other Semitic languages show they are two roots (š and ṯ).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000018330, šanû [be(come) changed] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000018330.html",
+          "note": "“alter; be(come) changed; change; change constantly; confuse; relocate.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000426 šny [change] V, AKK011680 šanû [be(come) changed]"
+        }
+      ]
+    },
+    {
+      "id": "akk-shanu-repeat",
+      "lang": "akk",
+      "form": "šanû",
+      "translit": "šanû (do twice)",
+      "gloss": "do again, do twice, repeat; double; recount, report",
+      "relation": "cognate",
+      "note": "The same range as Hebrew שָׁנָה “do again” and תָּנָה “recount”, and as מִשְׁנֶה “double”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000019230, šanû [do twice] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000019230.html",
+          "note": "“do again; do for a second time; do twice; double; duplicate; recount; relate; repeat; report.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000489 ṯny [repeat] V, AKK011679 šanû [do twice]"
+        }
+      ]
+    },
+    {
+      "id": "akk-shanu-second",
+      "lang": "akk",
+      "form": "šanû",
+      "translit": "šanû (second)",
+      "gloss": "second; next; deputy; double",
+      "relation": "cognate",
+      "note": "“Deputy” is מִשְׁנֶה “second to the king”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005640, šanû [second] NU",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000005640.html",
+          "note": "“a second time; deputy; deputy (governor); double; following; next; second.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-shina",
+      "lang": "akk",
+      "form": "šina",
+      "translit": "šina, fem. šitta",
+      "gloss": "two",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000021360, šina [two] NU",
+          "url": "https://oracc.museum.upenn.edu/cmawro/cbd/akk/x000021360.html",
+          "note": "“two”; forms šina, šitta, šittā."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000490 ṯny [two] Nu, AKK012253 šina [two]"
+        }
+      ]
+    },
+    {
+      "id": "akk-shinitu",
+      "lang": "akk",
+      "form": "šinītu",
+      "translit": "šinītu",
+      "gloss": "dyed textile; soaking",
+      "relation": "possible",
+      "note": "A dyed cloth, which would answer to שָׁנִי as scarlet stuff; only the form and the trade tie them, and nothing shows which older sound stands behind its š.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000075390, šinītu [dyed textile] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000075390.html",
+          "note": "“dyed textile; soaking.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-snt",
+      "lang": "uga",
+      "form": "𐎌𐎐𐎚",
+      "translit": "šnt, pl. šnt",
+      "gloss": "year",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Ugaritic keeps š and ṯ apart: “year” is šnt, “two” ṯn.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "pp. 202–203, §93 Glossary, šnt /šanat-/ (page inferred from the text layer)",
+          "note": "“pl. šnt /šanāt-/ 1.17:VI:29 = 88.63 ‘year’ (H. šānā, pl. šānīm, šānōt, Phoen. št (< *šnt) pl. šnt, Aram. šənā, Arab. sanat, cf. Akkad. šattu)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§88.63, KTU 1.17:VI:28–29",
+          "note": "ašsprk ʿm bʿl šnt, “I shall make you count years with Baal.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-tn",
+      "lang": "uga",
+      "form": "𐎘𐎐",
+      "translit": "ṯn, abs. ṯnm, fem. ṯt",
+      "gloss": "two",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, ṯn (page inferred from the text layer)",
+          "note": "“constr. gen. m. /ṯinê/ 4.146:3, 4.360:4 ‘2’ (cf. H. šnê, Arab. iṯnay)”; ṯnm “twice”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§53.2, forms of numerals",
+          "note": "“2” abs. ṯnm, constr. ṯn; fem. ṯtm, ṯt."
+        }
+      ]
+    },
+    {
+      "id": "uga-tani",
+      "lang": "uga",
+      "form": "𐎘𐎐",
+      "translit": "ṯn /ṯāni/(?)",
+      "gloss": "second",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, ṯn /ṯānî/ (?) (page inferred from the text layer)",
+          "note": "“1.14:III:10 = 88.71 ‘second’ (Arab. ṯānī; cf. H. šēnī)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§74.3, KTU 1.14:IV:31–32",
+          "note": "tlkn ym wṯn, “they go a day and a second (day)”."
+        }
+      ]
+    },
+    {
+      "id": "uga-tny",
+      "lang": "uga",
+      "form": "𐎘𐎐𐎊",
+      "translit": "ṯny",
+      "gloss": "repeat",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, /ṯ-n-y/ (page inferred from the text layer)",
+          "note": "“ṯnt, aṯnyk, ṯny ‘to repeat’ (H. šānā, Syr. tnā, Akkad. šanû)”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000489 ṯny [repeat] V, UGC004579 ṯny [repeat]"
+        }
+      ]
+    },
+    {
+      "id": "phn-st",
+      "lang": "phn",
+      "form": "𐤔𐤕",
+      "translit": "št, pl. šnt",
+      "gloss": "year",
+      "relation": "cognate",
+      "note": "The n of the singular is assimilated (*šant- > št), as in Akkadian šattu; the plural keeps it. Used, as in Hebrew, to date by a king’s reign and to count a life’s years.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 483–484, ŠT, pl. ŠNT (read from the text layer)",
+          "note": "“[Heb. šānā; Samaria št; Moabite št] n.f. YEAR”, KAI 14.1 (Ph) bšnt ʿsr wʾrbʿ 14 lmlky, “In year fourteen 14 of the reign of King Eshmunazor”; NPu “Abdysmun lived 102 years”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000425 šnt [year] N, PUN002058 št [year]"
+        }
+      ]
+    },
+    {
+      "id": "phn-snm",
+      "lang": "phn",
+      "form": "𐤔𐤍𐤌",
+      "translit": "šnm, fem. štm",
+      "gloss": "two",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 473–474, ŠNM, fem. ŠTM (read from the text layer)",
+          "note": "“[Heb. šnayim, fem. štayim] num. TWO”, before the noun in the construct, KAI 47.2/3 šn bn, “the two sons”; after it, RES 827 smlm šnm, “these two statues”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000490 ṯny [two] Nu, PUN002014 šnm [2]"
+        }
+      ]
+    },
+    {
+      "id": "phn-sny",
+      "lang": "phn",
+      "form": "𐤔𐤍𐤉",
+      "translit": "šny, fem. *šnt",
+      "gloss": "second; another",
+      "relation": "cognate",
+      "note": "rb šny, literally “second chief”, the adjutant to a governor, is the Hebrew מִשְׁנֶה “second to the king”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 473, ŠNY, fem. *ŠNT (read from the text layer)",
+          "note": "“[Heb. šēnī] adj. 1. SECOND”, RES 930.1/2 rb šny, “adjutant [lit. second] general”; “2. ANOTHER”, KAI 14.5/6 mškb šny, “another resting-place”."
+        }
+      ]
+    },
+    {
+      "id": "sab-tny",
+      "lang": "sem",
+      "form": "𐩻𐩬𐩺",
+      "translit": "ṯny, ṯnym",
+      "gloss": "two; second",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Sabaic, which keeps ṯ: ṯny “two” and, as an adjective, “second”, as in snt ṯnt “a second year”.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 547, ṮNY (OCR text layer)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“cardinal number … TWO [Ar iṯnān, iṯnatān, Heb šenayim, štayim id.]”, R4176/8 ṯny bḫrf “two (banquets) a year”; “as adj … SECOND [Ar ṯānī]”, Ry547/1 snt ṯnt “a second year”, R3945/14 “he made a second expedition”."
+        }
+      ]
+    },
+    {
+      "id": "sab-htny",
+      "lang": "sem",
+      "form": "𐩠𐩻𐩬𐩺",
+      "translit": "hṯny",
+      "gloss": "double (a payment)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 546, ṮNY, causative hṯny (OCR text layer)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“DOUBLE [Ar ṯny id.]”, R3945/3 hṯny … “he doubled their tribute”; also ṯnytm “double (?)”, of crops paid back, p. 547."
+        }
+      ]
+    },
+    {
+      "id": "arc-shatta",
+      "lang": "arc",
+      "form": "שַׁתָּא",
+      "translit": "šattā (= šantā)",
+      "gloss": "year",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Targumic and Talmudic Aramaic keeps š here, where the ṯ-root becomes t (תְּנֵי, תְּרֵי).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שַׁתָּא (U02072)",
+          "note": "“(= שנתא) = h. שָׁנָה, year. Targ. Gen. XXVI, 12 … תריסר ירחי ש׳ twelve months of the year.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000425 šnt [year] N, ARM030311 šnh [year]"
+        }
+      ]
+    },
+    {
+      "id": "arc-shene",
+      "lang": "arc",
+      "form": "שְׁנֵי",
+      "translit": "šənē",
+      "gloss": "change, be different",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Aramaic “change” keeps š, while “repeat” is תְּנֵי with t: the two Hebrew senses are two older roots. Jastrow also lists “repeat” under שְׁנֵי, from texts written in Hebrew spelling, and refers it to תְּנֵי.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁנֵי (U01586), sense 2",
+          "note": "“to change; to be different. Targ. O. Deut. XXXIV, 7 … לא שנא there is no difference.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000426 šny [change] V, ARM030324 ŠNY [different]"
+        }
+      ]
+    },
+    {
+      "id": "arc-tene",
+      "lang": "arc",
+      "form": "תְּנֵי",
+      "translit": "tənē",
+      "gloss": "repeat, do a second time; tell, relate; teach",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "The Targums render the Hebrew “do again” by it (1Sa 26:8; 2Sa 20:10; 1Ki 18:34; Pro 26:11), and its “tell, relate” is Hebrew תָּנָה (Jdg 5:11).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּנֵי (V00743)",
+          "note": "“to repeat, do a second time. Targ. II Sam. XX, 10. Targ. I Sam. XXVI, 8 … Targ. I Kings XVIII, 34 … Targ. Prov. XXVI, 11 … to tell, relate; to teach. Targ. Ps. L, 6.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-tere",
+      "lang": "arc",
+      "form": "תְּרֵי",
+      "translit": "tərē, tərēn, fem. tartē, tartēn",
+      "gloss": "two",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Aramaic “two” has t for the older ṯ and r for n.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּרֵי III (V00981), with תְּרֵין, תַּרְתֵּי, תַּרְתֵּין",
+          "note": "“two. Targ. Gen. I, 16. Ib. IV, 19.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "chronology",
+      "statement": "On the fourth day God set the lights “for signs and for seasons and for days and years” (Gen 1:14). From then on scripture counts in the same years: each father’s age when his son was born and his whole life, from Adam to Terah (Gen 5:3–32; 11:10–26); the Flood dated to the year, month and day of Noah’s life (Gen 7:11; 8:13); 430 years in Egypt, ending “on that very day” (Exo 12:40–41); and the 480th year from the Exodus to the founding of Solomon’s house (1Ki 6:1). These are ordinary years of months and days, the same years in which kings reign. Following the chain, the years from creation to the Exodus and the temple come to a few thousand, not ages, and the creation week stands at the head of the count.",
+      "evidence": [
+        {
+          "ref": "Gen.1.14"
+        },
+        {
+          "ref": "Gen.5.3",
+          "to": "Gen.5.32"
+        },
+        {
+          "ref": "Gen.11.10",
+          "to": "Gen.11.26"
+        },
+        {
+          "ref": "Gen.7.11"
+        },
+        {
+          "ref": "Gen.8.13"
+        },
+        {
+          "ref": "Exo.12.40",
+          "to": "Exo.12.41"
+        },
+        {
+          "ref": "1Ki.6.1"
+        }
+      ]
+    },
+    {
+      "topic": "unchanging-god",
+      "statement": "Yahweh says, “I, Yahweh, do not change; therefore you, sons of Jacob, are not consumed” (Mal 3:6), and of his oath to David, “my covenant I will not profane, and what has gone out of my lips I will not alter” (Psa 89:35–38). The psalmist sets his years against the passing of heaven and earth: “you are the same, and your years will not end” (Psa 102:26–28), words Hebrews sets among those spoken to the Son (Heb 1:8, 10–12). Yet Daniel says “he changes the times and the seasons; he removes kings and sets up kings” (Dan 2:21), and the horn of the fourth beast “thinks to change times and law” (Dan 7:25), claiming what is God’s. From the verses: God himself and his word do not change, and that is why Israel is not consumed and David’s throne is sure; what changes is the times, and he changes them.",
+      "evidence": [
+        {
+          "ref": "Mal.3.6"
+        },
+        {
+          "ref": "Psa.89.35",
+          "to": "Psa.89.38"
+        },
+        {
+          "ref": "Psa.102.26",
+          "to": "Psa.102.28"
+        },
+        {
+          "ref": "Heb.1.8"
+        },
+        {
+          "ref": "Heb.1.10",
+          "to": "Heb.1.12"
+        },
+        {
+          "ref": "Dan.2.21"
+        },
+        {
+          "ref": "Dan.7.25"
+        }
+      ]
+    },
+    {
+      "topic": "year-of-favour",
+      "statement": "The fiftieth year proclaimed “liberty (דְּרוֹר) in the land”, and each man returned to his possession (Lev 25:10, 13). Isaiah’s anointed one is sent “to proclaim liberty (דְּרוֹר) to the captives … to proclaim the year of Yahweh’s favour and the day of vengeance of our God” (Isa 61:1–2), and Isa 63:4 sets “the day of vengeance” beside “the year of my redeemed”. At Nazareth Jesus read the passage, stopped at “the acceptable year of the Lord”, and said, “Today this scripture is fulfilled in your ears” (Luk 4:16–21). Of Jerusalem surrounded by armies he later said, “these are the days of vengeance, that all things which are written may be fulfilled” (Luk 21:20–22). From the verses: his ministry was the jubilee year of favour Isaiah foretold, and the day of vengeance he left unread came on Jerusalem when the armies surrounded it, in AD 70.",
+      "evidence": [
+        {
+          "ref": "Lev.25.10"
+        },
+        {
+          "ref": "Lev.25.13"
+        },
+        {
+          "ref": "Isa.61.1",
+          "to": "Isa.61.2"
+        },
+        {
+          "ref": "Isa.63.4"
+        },
+        {
+          "ref": "Luk.4.16",
+          "to": "Luk.4.21"
+        },
+        {
+          "ref": "Luk.21.20",
+          "to": "Luk.21.22"
+        }
+      ]
+    },
+    {
+      "topic": "day-for-a-year",
+      "statement": "Twice Yahweh himself sets a day for a year. Israel spied the land forty days and would bear their iniquity forty years, “each day for a year” (Num 14:34). Ezekiel lay on his side 390 days and then 40, the years of the iniquity of Israel and Judah: “a day for a year, a day for a year, I have given it to you” (Ezk 4:5–6). From the verses: where God gives a sign in days for a people’s years, scripture itself supplies the scale, one day for one year.",
+      "evidence": [
+        {
+          "ref": "Num.14.33",
+          "to": "Num.14.34"
+        },
+        {
+          "ref": "Ezk.4.4",
+          "to": "Ezk.4.6"
+        }
+      ]
+    },
+    {
+      "topic": "two-witnesses",
+      "statement": "The law will not put a man to death “at the mouth of one witness”, but “at the mouth of two witnesses or three shall a matter stand” (Deu 17:6; 19:15). Jesus applies it to correcting a brother (Mat 18:16), Paul to his coming to Corinth (2Co 13:1), and Hebrews to the penalty of Moses’ law (Heb 10:28). Jesus also gives it of himself: “the testimony of two men is true; I am one who bears witness of myself, and the Father who sent me bears witness of me” (Jhn 8:17–18). From the verses: truth is established by agreeing witnesses, and Jesus rests his claim on the Father’s witness beside his own.",
+      "evidence": [
+        {
+          "ref": "Deu.17.6"
+        },
+        {
+          "ref": "Deu.19.15"
+        },
+        {
+          "ref": "Mat.18.16"
+        },
+        {
+          "ref": "2Co.13.1"
+        },
+        {
+          "ref": "Heb.10.28"
+        },
+        {
+          "ref": "Jhn.8.17",
+          "to": "Jhn.8.18"
+        }
+      ]
+    },
+    {
+      "topic": "israel-reunited",
+      "statement": "Ezekiel joins two sticks, for Judah and for Joseph, into one in his hand, and Yahweh explains: he will gather the sons of Israel from the nations into their own land, “and I will make them one nation in the land, on the mountains of Israel, and one king shall be king to them all, and they shall no more be two nations, nor be divided into two kingdoms any more”; “David my servant shall be king over them … their prince for ever” (Ezk 37:16–25). After the return from Babylon Judah had no king of its own and the two were not made one under David’s son. From the verses: the promise awaits the king of David’s line, who will rule a regathered and united Israel in its land.",
+      "evidence": [
+        {
+          "ref": "Ezk.37.16",
+          "to": "Ezk.37.25"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (שָׁנָה Lev 23:12, 18, 19, 41; שְׁנַיִם 23:13, 17, 18, 19, 20) and Numbers 10 (שְׁתֵּי 10:2; שֵׁנִית 10:6; בַּשָּׁנָה הַשֵּׁנִית בַּחֹדֶשׁ הַשֵּׁנִי 10:11). The task's “שָׁנָה repeat” in these chapters is only BDB's spelling overlap: no verb of the root occurs in Lev 23 or Num 10. Root key שנה, as the corpus keys it. Two older roots in the one spelling: š (year; change: Arabic sana and tasannaha, Ugaritic šnt, Aramaic šattā and šənē) and ṯ (two, second, double, repeat: Arabic ṯny, Ugaritic ṯn and ṯny, Sabaic ṯny, Aramaic tənē and tərēn, Syriac tnā and trēn); the verb is entered as two words, one per root, as erev does. BDB keys: v.ek.aa (change) and v.em.aa (repeat) list the same verb tokens and also the many year tokens spelled שָׁנָה, so each verb's use count is inflated and the two overlap; the verses cited were sorted by reading. v.ek.ab (year) also counts the construct שְׁנֵי “two” by spelling, v.el.ab (scarlet) counts about a hundred שָׁנִים “years”, and xv.az.ab (Aramaic year) counts the Hebrew construct שְׁנַת; only Dan 6:1, 7:1, Ezr 4:24, 5:11, 13, 6:3, 15 are Aramaic year. Psa 77:11 שְׁנוֹת is put under “change” (qal infinitive, as the corpus parses it) with the reading “years” noted. w.bc.aa (תָּנָה) also counts Mal 1:3 לְתַנּוֹת, “jackals”, by spelling. Zero-token cross-references m.dw.an, v.ei.ah, v.ei.ak and v.gk.ad are left out, as is xw.ah.ae (תְּרֵין, no tokens). Left out as another root: שְׁנָה “sleep” (xj.al.ab, Dan 6:19) and Hebrew שֵׁנָה (v.em.af), which are of ישׁן; Syriac ܫܢܐ “tooth” and ܫܢܬܐ “sleep” likewise. Included on the cognates' evidence: תָּנָה (w.bc.aa, Jdg 5:11; 11:40) as the Aramaising form of “repeat”, and Aramaic תְּרֵין with r for n. Peshitta words found through SEDRA roots ܫܢܐ (lexeme 3271), ܫܢܬܐ (3279), ܬܢܐ (3415, 3416) and ܬܪܝܢ (3440); the stems of ܫܢܐ are assigned from the vocalised forms (pael ܫܰܢܺܝ “departed”, ethpaal ܐܶܫܬܰܢܺܝ, peal ܫܢܰܝܬ “you are mad”), not from a Syriac dictionary; Payne Smith not consulted. Segert's page numbers (pp. 202–204) and Biella's (pp. 546–547) and Krahmalkov's (pp. 473–474, 483–484) are from the OCR text layers, page images unchecked. The LXX's δευτερονόμιον for מִשְׁנֵה הַתּוֹרָה (Deu 17:18) is not aligned in MACULA and so not cited. Not consulted: Geʿez (Dillmann, Leslau) for sanat “year”; DULAT. Open questions for review: (1) the two verbs kept as two words by older sound, with each verse sorted by reading (Pro 24:21 and Jer 2:36 under “change”; the LXX reads Jer 2:36 as “repeat”); (2) תָּנָה and Aramaic תְּרֵין placed here on cognate evidence; (3) the doctrine items day-for-a-year, year-of-favour (AD 70) and israel-reunited are stated as reasoned conclusions in the user's scheme; (4) scarlet שָׁנִי kept with only a possible Akkadian cognate."
+}
