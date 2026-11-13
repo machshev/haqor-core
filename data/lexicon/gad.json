@@ -1,0 +1,883 @@
+{
+  "id": "gad",
+  "root": "גדד",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "war",
+    "mourning",
+    "idolatry",
+    "fortune",
+    "plants"
+  ],
+  "gloss": "cut, gash; band together; a troop; fortune",
+  "summary": "גָּדַד is to cut: the Aramaic verb is to hew down a tree (Dan 4:11), and the Hebrew reflexive is to gash oneself, as Baal’s prophets did with swords and the nations did for the dead, which Israel, as sons of Yahweh, were forbidden (Deu 14:1; 1Ki 18:28); a גְּדוּדָה is such a gash, or the ridge cut by the plough (Jer 48:37; Psa 65:11). The same verb is to gather in bands, and גְּדוּד is a band of men, above all a raiding band that falls on a land and carries off spoil (1Sa 30:8; 2Ki 5:2), and a troop of an army. גַּד is fortune, the word in Leah’s cry over Zilpah’s son, “fortune has come” (Gen 30:11), and the god Fortune for whom apostates set a table (Isa 65:11); Arabic keeps “cut” and “fortune” under one root جدّ, but scripture does not show how the troop, the fortune or גַּד “coriander” join the cutting.",
+  "words": [
+    {
+      "lemma": "גְּדוּד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "band, troop; raiding band; raid",
+      "summary": "A band of armed men: most often one that makes inroads into a land and carries off spoil and captives, and also a troop of a king’s army, or the hosts at God’s command. Its tie to the root is through the verb’s “gather in bands” (Jer 5:7; Mic 4:14); how that joins the root’s “cut” scripture does not show.",
+      "bdb": [
+        "c.ao.ab"
+      ],
+      "cognate_ids": [
+        "akk-gududu"
+      ],
+      "senses": [
+        {
+          "id": "gedud-raiding-band",
+          "gloss": "raiding band, marauders",
+          "definition": "A band that falls on a land or a town without warning, plunders, takes captives and goes; the word for the Amalekites who burned Ziklag, the bands of Aram and Moab, and the bands Yahweh sent against Judah.",
+          "evidence": [
+            {
+              "ref": "1Sa.30.8",
+              "role": "defining",
+              "note": "After the Amalekites had burned Ziklag and taken the women captive, David asks, “Shall I pursue after this גְּדוּד?”"
+            },
+            {
+              "ref": "1Sa.30.15"
+            },
+            {
+              "ref": "1Sa.30.23",
+              "note": "Yahweh “gave the גְּדוּד that came against us into our hand.”"
+            },
+            {
+              "ref": "2Ki.5.2",
+              "role": "defining",
+              "note": "Aram had gone out in גְּדוּדִים and taken captive a little girl from the land of Israel."
+            },
+            {
+              "ref": "2Ki.6.23",
+              "note": "The גְּדוּדֵי of Aram came no more into the land of Israel."
+            },
+            {
+              "ref": "2Ki.13.20",
+              "note": "The bands of Moab came into the land at the coming of the year; a man thrown into Elisha’s grave as they saw a band lived (13:21)."
+            },
+            {
+              "ref": "2Ki.13.21"
+            },
+            {
+              "ref": "2Ki.24.2",
+              "role": "defining",
+              "note": "Yahweh sent against Jehoiakim bands of the Chaldeans, Aram, Moab and Ammon, to destroy Judah."
+            },
+            {
+              "ref": "2Ch.22.1",
+              "note": "The band that came with the Arabians to the camp had killed all Jehoram’s older sons."
+            },
+            {
+              "ref": "1Ki.11.24",
+              "note": "Rezon gathered men and became captain of a גְּדוּד."
+            },
+            {
+              "ref": "Hos.7.1",
+              "role": "defining",
+              "note": "“The thief comes in, a גְּדוּד strips (פָּשַׁט) outside”: the band set beside the thief."
+            },
+            {
+              "ref": "Hos.6.9",
+              "note": "As גְּדוּדִים lie in wait for a man, so a company of priests murder on the way to Shechem."
+            },
+            {
+              "ref": "Jer.18.22",
+              "note": "“When you bring a גְּדוּד suddenly upon them.”"
+            },
+            {
+              "ref": "Gen.49.19",
+              "note": "“Gad, a גְּדוּד will raid him, but he will raid at their heel.”"
+            }
+          ]
+        },
+        {
+          "gloss": "a raid, foray",
+          "definition": "The going out of such a band: the raid itself, from which men come back with spoil.",
+          "evidence": [
+            {
+              "ref": "2Sa.3.22",
+              "role": "defining",
+              "note": "Joab and David’s servants came “from the גְּדוּד” and brought much spoil with them."
+            }
+          ]
+        },
+        {
+          "id": "gedud-troop",
+          "gloss": "troop, division of an army",
+          "definition": "A body of soldiers under a captain, a unit of a king’s or a tribe’s fighting strength, mustered by number; and, in Job, the hosts at God’s command.",
+          "evidence": [
+            {
+              "ref": "2Ch.26.11",
+              "role": "defining",
+              "note": "Uzziah had an army that went out to war “by גְּדוּד, according to the number of their muster”."
+            },
+            {
+              "ref": "1Ch.7.4",
+              "role": "defining",
+              "note": "“גְּדוּדֵי צְבָא מִלְחָמָה, thirty-six thousand”: troops of the host for war."
+            },
+            {
+              "ref": "2Sa.4.2",
+              "note": "Baanah and Rechab were captains of גְּדוּדִים under Saul’s son."
+            },
+            {
+              "ref": "2Ch.25.9",
+              "note": "The hundred talents Amaziah gave to the גְּדוּד of Israel, hired soldiers whom he sent home (25:10, 13)."
+            },
+            {
+              "ref": "2Ch.25.10"
+            },
+            {
+              "ref": "2Ch.25.13"
+            },
+            {
+              "ref": "1Ch.12.19",
+              "note": "David made the men of Benjamin and Judah heads of the גְּדוּד."
+            },
+            {
+              "ref": "1Ch.12.22",
+              "note": "They helped David against the גְּדוּד (the Amalekite band of 1Sa 30)."
+            },
+            {
+              "ref": "Job.29.25",
+              "note": "Job sat as chief and dwelt “as a king in the גְּדוּד”."
+            },
+            {
+              "ref": "Mic.4.14",
+              "note": "“Now gather in troops, daughter of גְּדוּד”: the noun beside its verb."
+            },
+            {
+              "ref": "Psa.18.30",
+              "note": "“By you I run against a גְּדוּד, and by my God I leap over a wall” (also 2Sa 22:30)."
+            },
+            {
+              "ref": "2Sa.22.30"
+            },
+            {
+              "ref": "Job.25.3",
+              "role": "defining",
+              "note": "Of God: “Is there any number to his גְּדוּדִים?”"
+            },
+            {
+              "ref": "Job.19.12",
+              "note": "Job feels God’s troops come together, cast up their way against him and camp around his tent."
+            }
+          ],
+          "kin": [
+            "gadad-gather-in-bands"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λῃστής",
+          "gloss": "robber, bandit",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hos.7.1, גְּדוּד → λῃστὴς; Hos.6.9, גְּדוּדִים → πειρατοῦ; Gen.49.19, גְּדוּד → πειρατήριον"
+            },
+            {
+              "ref": "Luk.10.30",
+              "note": "A man going down to Jericho fell among λῃσταί, who stripped him: the Greek of Hos 7:1, where a גְּדוּד strips outside, and Hos 6:9 sets priests on the road beside the bands."
+            },
+            {
+              "ref": "Mat.26.55"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גַּנָּב",
+            "note": "The thief who comes in and the band that strips outside.",
+            "evidence": [
+              {
+                "ref": "Hos.7.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שַׂר־גְּדוּד",
+            "gloss": "captain of a band or troop",
+            "evidence": [
+              {
+                "ref": "1Ki.11.24"
+              },
+              {
+                "ref": "2Sa.4.2"
+              }
+            ]
+          },
+          {
+            "phrase": "גְּדוּדֵי צָבָא",
+            "gloss": "troops of the host, army units",
+            "evidence": [
+              {
+                "ref": "1Ch.7.4"
+              }
+            ]
+          },
+          {
+            "phrase": "בַּת־גְּדוּד",
+            "gloss": "daughter of troops (Zion under siege)",
+            "evidence": [
+              {
+                "ref": "Mic.4.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גָּדַד",
+      "pos": "verb",
+      "gloss": "gash oneself; band together, gather in troops",
+      "summary": "In its reflexive stems, to cut gashes in one’s own body in grief or in worship, and to gather in bands; the one qal is to band together against someone.",
+      "bdb": [
+        "c.ao.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hithpolel",
+          "gloss": "gash oneself; gather in troops",
+          "senses": [
+            {
+              "id": "gadad-gash-oneself",
+              "gloss": "cut, gash oneself",
+              "definition": "To cut one’s own flesh: a rite of the nations in mourning for the dead, set with baldness, a clipped beard and sackcloth, and of Baal’s prophets calling on their god. Israel, as sons of Yahweh, were forbidden it.",
+              "evidence": [
+                {
+                  "ref": "Deu.14.1",
+                  "role": "defining",
+                  "note": "“You are sons of Yahweh your God: לֹא תִתְגֹּדְדוּ, nor make baldness between your eyes for the dead.”"
+                },
+                {
+                  "ref": "1Ki.18.28",
+                  "role": "defining",
+                  "note": "Baal’s prophets cried aloud “and gashed themselves after their custom with swords and lances, until blood poured out upon them”."
+                },
+                {
+                  "ref": "Jer.16.6",
+                  "note": "In the coming death no one will lament for them, “nor gash himself nor make himself bald for them”."
+                },
+                {
+                  "ref": "Jer.47.5",
+                  "note": "“Baldness has come on Gaza … how long will you gash yourself?”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-jadda",
+                "arc-gedad",
+                "akk-gadadu"
+              ],
+              "kin": [
+                "gedudah-gash"
+              ]
+            },
+            {
+              "id": "gadad-gather-in-bands",
+              "gloss": "gather in bands, throng",
+              "definition": "To come together in a troop or a crowd; said of men thronging to a harlot’s house, and of Zion called to muster against a siege.",
+              "evidence": [
+                {
+                  "ref": "Jer.5.7",
+                  "role": "defining",
+                  "note": "“They committed adultery, and to the harlot’s house יִתְגֹּדָדוּ”: they troop in."
+                },
+                {
+                  "ref": "Mic.4.14",
+                  "role": "defining",
+                  "note": "“Now תִּתְגֹּדְדִי, daughter of גְּדוּד; he has laid siege against us”: the verb set beside the noun “troop”. Some read “gash yourself”, in grief; the noun beside it and the siege favour “gather in troops”."
+                }
+              ],
+              "kin": [
+                "gedud-troop"
+              ],
+              "cognate_ids": [
+                "akk-gududu"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpoel",
+          "gloss": "gash oneself",
+          "senses": [
+            {
+              "gloss": "gashing oneself (in mourning)",
+              "definition": "The participle of the same reflexive: men in mourning with their flesh cut.",
+              "evidence": [
+                {
+                  "ref": "Jer.41.5",
+                  "role": "defining",
+                  "note": "Eighty men from Shechem, Shiloh and Samaria, “their beards shaved, their clothes torn, וּמִתְגֹּדְדִים”, came with offerings for the house of Yahweh."
+                }
+              ],
+              "cognate_ids": [
+                "ar-jadda",
+                "arc-gedad"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "band together against",
+          "senses": [
+            {
+              "gloss": "band together against, attack",
+              "definition": "To gather as a band against someone’s life; the one use of the simple stem.",
+              "evidence": [
+                {
+                  "ref": "Psa.94.21",
+                  "role": "defining",
+                  "note": "“יָגוֹדּוּ against the soul of the righteous, and condemn innocent blood.”"
+                }
+              ],
+              "kin": [
+                "gedud-raiding-band"
+              ],
+              "cognate_ids": [
+                "akk-gududu"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κατατέμνω",
+          "gloss": "cut, gash",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.18.28, וַיִּתְגֹּדְדוּ → κατετέμνοντο"
+            },
+            {
+              "ref": "Php.3.2",
+              "note": "Paul calls those who insist on circumcision ἡ κατατομή, “the gashing”, the noun of this verb, setting their cutting of the flesh beside the forbidden gashing."
+            }
+          ]
+        },
+        {
+          "lemma": "κόπτω",
+          "gloss": "cut; beat the breast, mourn",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.41.5 (LXX 48:5), וּמִתְגֹּדְדִים → κοπτόμενοι; Jer.47.5, תִּתְגּוֹדָדִי → κόψεις; Jer.48.37, גְּדֻדֹת → κόψονται"
+            },
+            {
+              "ref": "Luk.8.52",
+              "note": "All were weeping and κοπτόμενοι for Jairus’ daughter: the Greek word of mourning."
+            },
+            {
+              "ref": "Rev.1.7"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָרְחָה",
+            "note": "Gashing and baldness go together as the nations’ mourning for the dead.",
+            "evidence": [
+              {
+                "ref": "Deu.14.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.16.6"
+              },
+              {
+                "ref": "Jer.47.5"
+              },
+              {
+                "ref": "Jer.48.37"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גְּדַד",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "hew down, cut down",
+      "bdb": [
+        "xc.ac.aa"
+      ],
+      "cognate_ids": [
+        "ar-jadda",
+        "arc-gedad"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "hew down",
+          "senses": [
+            {
+              "id": "gedad-hew-down",
+              "gloss": "hew down (a tree)",
+              "definition": "To cut a tree down at the trunk: the watcher’s command over the tree of Nebuchadnezzar’s dream, which was himself.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.11",
+                  "role": "defining",
+                  "note": "“גֹּדּוּ the tree and cut off (קַצִּצוּ) its branches, strip off its leaves and scatter its fruit.”"
+                },
+                {
+                  "ref": "Dan.4.20",
+                  "role": "defining",
+                  "note": "“גֹּדּוּ the tree and destroy it, but leave the stump of its roots in the earth.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐκκόπτω",
+          "gloss": "cut down",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.4.11 (LXX 4:14), גֹּדּוּ → ἐκκόψατε"
+            },
+            {
+              "ref": "Mat.3.10",
+              "note": "Every tree that does not bear good fruit ἐκκόπτεται and is thrown into the fire."
+            },
+            {
+              "ref": "Luk.13.7",
+              "note": "Of the fruitless fig tree: “ἔκκοψον it; why does it use up the ground?”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קַצֵּץ",
+            "note": "Hew down the tree, cut off its branches.",
+            "evidence": [
+              {
+                "ref": "Dan.4.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גְּדוּד",
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "cutting, gash; ridge (of ploughed land)",
+      "summary": "A cut: the gashes of mourners on their hands (feminine plural גְּדֻדֹת), and the ridges of a field between the furrows the plough has cut (masculine plural).",
+      "bdb": [
+        "c.ao.ac"
+      ],
+      "cognate_ids": [
+        "ar-jadda",
+        "arc-gedad"
+      ],
+      "senses": [
+        {
+          "id": "gedudah-gash",
+          "gloss": "gash, cutting (in the flesh)",
+          "definition": "A cut made in one’s own flesh in mourning.",
+          "evidence": [
+            {
+              "ref": "Jer.48.37",
+              "role": "defining",
+              "note": "Over Moab, “every head bald and every beard clipped; on all hands גְּדֻדֹת, and on the loins sackcloth”."
+            }
+          ],
+          "kin": [
+            "gadad-gash-oneself"
+          ]
+        },
+        {
+          "gloss": "ridge between furrows",
+          "definition": "The ridge of a ploughed field, set beside the furrows that are watered: what the plough’s cut leaves standing.",
+          "evidence": [
+            {
+              "ref": "Psa.65.11",
+              "role": "defining",
+              "note": "“You water its furrows (תְּלָמֶיהָ), you settle its גְּדוּדִים, you soften it with showers.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תֶּלֶם",
+            "note": "The furrows beside the ridges.",
+            "evidence": [
+              {
+                "ref": "Psa.65.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גַּד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "fortune, good fortune; Fortune (a god)",
+      "summary": "Good fortune, and Fortune worshipped as a god. Arabic جَدٌّ “fortune, one’s lot” and Phoenician gd “good luck” are the same word, and Arabic files it under جدّ “cut”; scripture does not show how fortune joins the root’s cutting. The tribe and the prophet named Gad have their own name entry.",
+      "bdb": [
+        "c.ao.ae"
+      ],
+      "cognate_ids": [
+        "ar-jadd",
+        "arc-gadda",
+        "phn-gd-fortune"
+      ],
+      "senses": [
+        {
+          "gloss": "good fortune",
+          "definition": "Good fortune that comes to someone: Leah’s word when her maid bore Jacob a son.",
+          "evidence": [
+            {
+              "ref": "Gen.30.11",
+              "role": "defining",
+              "note": "“Leah said, בָּא גָד, fortune has come, and called his name גָּד.” The written text has one word, בְּגָד, “with fortune”."
+            }
+          ]
+        },
+        {
+          "gloss": "Fortune (a god)",
+          "definition": "Fortune made a god, to whom those who forsook Yahweh set a table, beside Meni, “Number” or “Destiny”.",
+          "evidence": [
+            {
+              "ref": "Isa.65.11",
+              "role": "defining",
+              "note": "“You who forsake Yahweh … who set a table לַגַּד and fill mixed wine לַמְנִי.”"
+            },
+            {
+              "ref": "Isa.65.12",
+              "note": "Yahweh answers with Meni’s own verb: “I will number (וּמָנִיתִי) you to the sword.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δαίμων",
+          "gloss": "god, spirit; an idol’s god",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.65.11, לַגַּד → τῷ δαίμονι; Gen.30.11, בָּא גָד → ἐν τύχῃ"
+            },
+            {
+              "ref": "1Co.10.20",
+              "note": "What the nations sacrifice they sacrifice to δαιμόνια and not to God (quoting Deu 32:17)."
+            },
+            {
+              "ref": "1Co.10.21",
+              "note": "“You cannot partake of the table of the Lord and the table of δαιμόνια”: the table of Isa 65:11, set for Gad."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מְנִי",
+            "note": "Gad and Meni, Fortune and Number, the two gods of the apostates’ table.",
+            "evidence": [
+              {
+                "ref": "Isa.65.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גַּד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "coriander",
+      "summary": "Coriander, whose small round seed the manna resembled. Punic gd is the same plant; its tie to the root’s sense is not known, and it may be a separate word of the same spelling.",
+      "bdb": [
+        "c.ao.ad"
+      ],
+      "cognate_ids": [
+        "phn-gd-coriander"
+      ],
+      "senses": [
+        {
+          "gloss": "coriander (seed)",
+          "definition": "The plant whose seed the manna was like in size and shape; white, as the manna was.",
+          "evidence": [
+            {
+              "ref": "Exo.16.31",
+              "role": "defining",
+              "note": "“It was like זֶרַע גַּד, white, and its taste like wafers with honey.”"
+            },
+            {
+              "ref": "Num.11.7",
+              "role": "defining",
+              "note": "“The manna was like זֶרַע גַּד, and its look like the look of bdellium.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּדּוּדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "young man",
+      "summary": "The Peshitta’s word for the young men of Joel’s prophecy, filed by SEDRA under the root gd. Its tie to the root is not clear: it may be the young fighting men of a band (Hebrew גְּדוּד), but no text shows it.",
+      "senses": [
+        {
+          "gloss": "young man",
+          "definition": "A young man, set against the old men: Peter’s quotation of Joel, where the Hebrew has בַּחוּרִים and the Greek νεανίσκοι.",
+          "evidence": [
+            {
+              "ref": "Act.2.17",
+              "role": "defining",
+              "note": "“Your sons and daughters will prophesy, וְגַדּוּדַיכוֹן will see visions, and your old men (קַשִּׁישַׁיכוֹן) dream dreams.”"
+            },
+            {
+              "ref": "Jol.3.1",
+              "note": "The Hebrew Peter quotes: בַּחוּרֵיכֶם חֶזְיֹנוֹת יִרְאוּ."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-jadda",
+      "lang": "ar",
+      "form": "جَدَّ",
+      "translit": "jadda",
+      "gloss": "cut, cut off; cut the fruit from palm trees",
+      "relation": "cognate",
+      "note": "Lane’s sources give “He cut it, or cut it off … This is the primary signification”, of cutting a piece of cloth from the web and cutting off the palms’ fruit, and جُدَّتْ أَخْلَافُ النَّاقَةِ of a she-camel’s teats cut off; the noun جَادٌّ is “cutting, cutting off”. This is Aramaic גְּדַד “hew down” and the Hebrew gashing and furrow.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 384, root جد, جَدَّهُ (n5156)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 387, جَادٌّ (n5178)"
+        }
+      ]
+    },
+    {
+      "id": "ar-jadd",
+      "lang": "ar",
+      "form": "جَدٌّ",
+      "translit": "jadd",
+      "gloss": "fortune, good fortune; one’s lot in life; (verb) be fortunate",
+      "relation": "cognate",
+      "note": "Lane: “Fortune, or particularly good fortune … One’s lot in life; and the means of subsistence that one receives from the bounty of God”; the verb جَدَّ (or جُدَّ) “he was fortunate”. It stands under the same root as جَدَّ “cut”, but Lane gives no step from one to the other. It answers to גַּד “fortune” (Gen 30:11; Isa 65:11) and the name Gad.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 385, جَدٌّ (n5161)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 384, جَدَّهُ (n5156), section -A3-, “He was, or became, fortunate”"
+        }
+      ]
+    },
+    {
+      "id": "arc-gedad",
+      "lang": "arc",
+      "form": "גְּדַד",
+      "translit": "gədad",
+      "gloss": "cut, cut off; (hithpolel) gash oneself",
+      "relation": "cognate",
+      "note": "Jewish Aramaic and the Hebrew of the rabbis: “to cut, cut off” (lopping the tops of horns, Bekh. 44a; cutting a shroud, Bets. 6a), and Onkelos renders Deu 14:1 לֹא תִתְגֹּדְדוּ with the same verb, תְגוּדוּן.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גָּדַד I and גְּדַד",
+          "note": "Par. II, 2; Bekh. 44ᵃ; Bets. 6ᵃ; Targ. Deut. XIV, 1."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000720 gdd [cut], ARM005295 GDD [cut]"
+        }
+      ]
+    },
+    {
+      "id": "arc-gadda",
+      "lang": "arc",
+      "form": "גַּדָּא",
+      "translit": "gaddāʾ",
+      "gloss": "luck, fortune; guardian spirit, godhead",
+      "relation": "cognate",
+      "note": "Jewish Aramaic “luck; genius, godhead”: the Targum renders Gen 30:11 with it, and the Talmud speaks of “the גַּד of the house” and “the גַּד of the mountain”, fortune as a god, as in Isa 65:11. The Targum may only echo the Hebrew it renders; the Talmud’s uses are its own.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גָּד ³ (גַּדָּא)",
+          "note": "Targ. O. Gen. XXX, 11; Targ. Y. II ib.; Gen. R. s. 71; Ḥull. 40ᵃ."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גָּד ²",
+          "note": "“decree, fate, esp. Gad (Fortune), a god”; Snh. 63ᵇ."
+        }
+      ]
+    },
+    {
+      "id": "phn-gd-fortune",
+      "lang": "phn",
+      "form": "𐤂𐤃",
+      "translit": "gd",
+      "gloss": "good luck, fortune; Gad, the god Fortune; (verb G-D-D) be lucky",
+      "relation": "cognate",
+      "note": "Punic personal names: gdʿštrt “Astarte is my good luck”, mlqrtgd “Milqart is my good luck”, nʿmgdʾ “May my luck be good!”, and gdyt[n] “May Gad grant”; the verb G-D-D “be lucky, fortunate” and its causative ygdʿštrt “Astarte make him fortunate”. The same name-type as Gaddiel and Gaddi (Num 13:10–11) and the same god as Isa 65:11.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 135, GD IV (GOOD LUCK, FORTUNE), GD V (GAD), G-D-D (BE LUCKY); p. 136, G-D-D yipʿil"
+        }
+      ]
+    },
+    {
+      "id": "phn-gd-coriander",
+      "lang": "phn",
+      "form": "𐤂𐤃",
+      "translit": "gd",
+      "gloss": "coriander",
+      "relation": "cognate",
+      "note": "Punic gd, “coriander”, known from Dioscurides’ list of Punic plant names (Greek κορίαννον). The same word as גַּד “coriander”; it shows nothing of a tie to the root’s other senses.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 135, GD I (CORIANDER)"
+        }
+      ]
+    },
+    {
+      "id": "akk-gududu",
+      "lang": "akk",
+      "form": "gudūdu",
+      "translit": "gudūdu",
+      "gloss": "battle troop; patrol",
+      "relation": "cognate",
+      "note": "Neo-Assyrian and Neo-Babylonian, “battle troop, patrol”, also gudūdānu: the same word as גְּדוּד. Attested only late, it may have come into Akkadian from the West Semitic languages.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000063920, gudūdu [battle troop] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-gadadu",
+      "lang": "akk",
+      "form": "gadādu",
+      "translit": "gadādu",
+      "gloss": "separate",
+      "relation": "possible",
+      "note": "Listed in a Proto-Semitic root set gdd “cut” with Aramaic GDD and Hebrew גָּדַד; not found in the Oracc glossaries and not checked in CAD.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000720 gdd [cut], AKK002715 gadādu [separate]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "fortune-and-the-lot",
+      "statement": "Leah greeted her maid’s son with בָּא גָד, “fortune has come” (Gen 30:11). In Isaiah the same word names a god: those who forsake Yahweh “set a table for Gad and fill mixed wine for Meni”, and Yahweh answers with Meni’s own verb, “I will number you to the sword” (Isa 65:11–12). Proverbs says that the lot is cast into the lap, but its every decision is from Yahweh (Pro 16:33), and Yahweh divided the land to the tribes by lot (Num 26:55–56; Jos 18:10). Paul, quoting Deu 32:17, says that what the nations sacrifice they sacrifice to δαιμόνια and not to God, sets the table of the Lord against the table of δαιμόνια, and says that an idol is nothing in the world and there is no God but one (1Co 10:20–21; 8:4). From the verses: fortune is no power beside Yahweh; what falls to a man is his to give, and to set a table for Fortune is to forsake him.",
+      "evidence": [
+        {
+          "ref": "Gen.30.11"
+        },
+        {
+          "ref": "Isa.65.11",
+          "to": "Isa.65.12"
+        },
+        {
+          "ref": "Pro.16.33"
+        },
+        {
+          "ref": "Num.26.55",
+          "to": "Num.26.56"
+        },
+        {
+          "ref": "Jos.18.10"
+        },
+        {
+          "ref": "Deu.32.17"
+        },
+        {
+          "ref": "1Co.10.20",
+          "to": "1Co.10.21"
+        },
+        {
+          "ref": "1Co.8.4"
+        }
+      ]
+    },
+    {
+      "topic": "mourning-the-dead",
+      "statement": "Israel is told, “You are sons of Yahweh your God: you shall not gash yourselves nor make baldness between your eyes for the dead, for you are a holy people to Yahweh your God” (Deu 14:1–2; compare Lev 19:28). Baal’s prophets gashed themselves with swords and lances until their blood poured out, and there was no voice and none who answered (1Ki 18:26–29). The prophets name the gashing with baldness and sackcloth as the mourning of Philistia and Moab (Jer 47:5; 48:37), and Jeremiah expects it in Judah too (Jer 16:6; 41:5). Paul writes that those who sleep are not to be grieved for as the rest who have no hope, because God will bring them with Jesus (1Th 4:13–14). From the verses: gashing the flesh belonged to the worship of gods who do not answer and to grief without hope; Israel, sons of Yahweh and a holy people, were to have no part in it.",
+      "evidence": [
+        {
+          "ref": "Deu.14.1",
+          "to": "Deu.14.2"
+        },
+        {
+          "ref": "Lev.19.28"
+        },
+        {
+          "ref": "1Ki.18.26",
+          "to": "1Ki.18.29"
+        },
+        {
+          "ref": "Jer.47.5"
+        },
+        {
+          "ref": "Jer.48.37"
+        },
+        {
+          "ref": "Jer.16.6"
+        },
+        {
+          "ref": "Jer.41.5"
+        },
+        {
+          "ref": "1Th.4.13",
+          "to": "1Th.4.14"
+        }
+      ]
+    }
+  ],
+  "note": "Root key גדד, as the database keys it. BDB keys with no tokens (c.an.af, e.ai.ac, m.aj.ae) are cross-references and are not listed. Left out for name entries: גָּד Gad (c.ao.af, names/gad.json, which also takes the gentilic גָּדִי, c.ao.ag); גָּדִי Gadi (c.ao.ah, 2Ki 15:14, 17), גַּדִּי Gaddi (c.ao.aj, Num 13:11) and גַּדִּיאֵל Gaddiel (c.ao.ak, Num 13:10), all names of the fortune word (“my fortune”, “El is my fortune”), not yet written. Places, which cannot be name entries: מְגִדּוֹ Megiddo (c.ao.an; Armageddon, Rev 16:16), גֻּדְגֹּדָה Gudgodah and חֹר הַגִּדְגָּד Hor-haggidgad (c.ao.am, c.ao.al), and בַּעַל גָּד Baal-gad (Jos 11:17; 12:7; 13:5) and מִגְדַּל־גָּד Migdal-gad (Jos 15:37), whose tokens BDB files under the name Gad’s key c.ao.af. חֲצַר גַּדָּה Hazar-gaddah is filed under חצר. The verb גּוּד “raid, press upon” (c.az.aa; Gen 49:19 יְגוּדֶנּוּ … יָגֻד; Hab 3:16) is another root key and is left for its own entry, though Gen 49:19 joins it to גְּדוּד in the blessing of Gad; Psa 94:21 יָגוֹדּוּ, filed here as the qal, could be read under it. The Syriac גַּדּוּדָא “young man” (SEDRA lexeme 512, root GD; only Act 2:17 in the NT) is kept with its link marked unclear; SEDRA’s verb ܓܕ “cut” (lexeme 511) has no NT use, and the Peshitta’s Gad (lexeme 510) is the name (Rev 7:5). Stems: the database parses Jer 41:5 as hithpoel and the other six as hithpolel; they are one reflexive. Not consulted: Payne Smith and Brockelmann for Syriac ܓܕܐ “fortune” and ܓܕܘܕܐ (Wiktionary gives ܓܕܐ “lot, fortune, luck … god of fortune”); CAD for gudūdu and gadādu; Dillmann/Leslau for Ge’ez (Anderson–Moser list a Ge’ez noun gEddu “piece” in the set gdd “cut”, SEM000720/GEZ001862; not entered, its Ge’ez form unverified); Ugaritic gd “coriander” and gdy “kid” (Wiktionary only; not in Segert’s glossary). גְּדִי “kid” is a separate root (גדי, Akkadian gadû, Arabic jady) and is not here. Open: (1) whether “troop” and “fortune” belong to the root “cut” at all: the Arabic root جدّ holds “cut” and “fortune” together, Akkadian gudūdu is the troop; the step between them is not shown. (2) Mic 4:14 is read as “gather in troops” for the wordplay with גְּדוּד; “gash yourself” is possible. (3) The Greek λῃστής note sets Luk 10:30 beside Hos 6:9 and 7:1 as a verbal echo only; review whether to keep it."
+}
