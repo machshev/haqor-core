@@ -1,0 +1,979 @@
+{
+  "id": "yayin",
+  "root": "יינ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "drink",
+    "wine",
+    "offering",
+    "feasts",
+    "sobriety",
+    "joy",
+    "judgment"
+  ],
+  "gloss": "wine",
+  "summary": "יַיִן is wine, the fermented juice of the grape: set before a guest with bread (Gen 14:18; 27:25), given by God “to gladden the heart of man” (Psa 104:15), and poured out at the altar as the drink offering, a quarter of a hin with each lamb, as with the lamb of the עֹמֶר (Lev 23:13; Num 15:5). The same wine makes drunk, and scripture names it a mocker (Gen 9:21; Pro 20:1); so it is kept from the priest on duty, the Nazirite and the king at judgment (Lev 10:9; Num 6:3; Pro 31:4). The prophets make it the cup of Yahweh’s wrath that the nations drink and stagger at (Jer 25:15; Psa 75:9). The word is the West Semitic name of wine and the grape: Ugaritic and Phoenician yn, Arabic, Ge’ez and Sabaean wayn, Akkadian īnu.",
+  "words": [
+    {
+      "lemma": "יַיִן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wine",
+      "bdb": [
+        "j.bk.ab"
+      ],
+      "cognate_ids": [
+        "uga-yn",
+        "phn-yn",
+        "ar-wayn",
+        "gez-wayn",
+        "sab-wyn",
+        "akk-inu"
+      ],
+      "summary": "The only word of the root, with 141 uses. Its initial י answers to w in Arabic, Ge’ez and Sabaean wayn, as Hebrew turns an initial w to y; Ugaritic and Phoenician already write yn.",
+      "senses": [
+        {
+          "id": "wine-drink",
+          "gloss": "wine, as drink and provision",
+          "definition": "The drink pressed from grapes, served with bread at a meal, carried as provision and brought as a gift; a sign of plenty and gladness.",
+          "evidence": [
+            {
+              "ref": "Psa.104.15",
+              "role": "defining",
+              "note": "“Wine gladdens the heart of man”, beside oil for the face and bread that sustains the heart: among the things God makes the earth bring forth (v. 14)."
+            },
+            {
+              "ref": "Gen.27.25",
+              "role": "defining",
+              "note": "Jacob brings Isaac food and “brought him wine, and he drank”."
+            },
+            {
+              "ref": "Gen.14.18",
+              "role": "defining",
+              "note": "Melchizedek brings out “bread and wine” (לֶחֶם וָיָיִן) to Abram."
+            },
+            {
+              "ref": "Jdg.19.19",
+              "note": "“Bread and wine also for me and your handmaid”: a traveller’s provision."
+            },
+            {
+              "ref": "1Sa.25.18",
+              "note": "Abigail’s gift to David includes two skins of wine."
+            },
+            {
+              "ref": "2Sa.16.2",
+              "note": "“The wine is for the faint in the wilderness to drink.”"
+            },
+            {
+              "ref": "Deu.14.26",
+              "note": "The tithe money is spent on oxen, sheep, wine and strong drink, eaten before Yahweh with rejoicing."
+            },
+            {
+              "ref": "Ecc.9.7",
+              "note": "“Eat your bread with joy and drink your wine with a good heart.”"
+            },
+            {
+              "ref": "Ecc.10.19"
+            },
+            {
+              "ref": "Job.1.13",
+              "note": "Job’s children “eating and drinking wine” in their eldest brother’s house."
+            },
+            {
+              "ref": "Neh.2.1",
+              "note": "Nehemiah, the king’s cupbearer, takes up the wine and gives it to the king."
+            },
+            {
+              "ref": "Neh.5.18"
+            },
+            {
+              "ref": "1Ch.12.41",
+              "note": "Food, raisins, wine and oil brought in abundance for David’s coronation, “for there was joy in Israel”."
+            },
+            {
+              "ref": "Amo.9.14",
+              "note": "In the restoration they will plant vineyards and drink their wine."
+            }
+          ],
+          "senses": [
+            {
+              "id": "wine-vintage",
+              "gloss": "the vintage; wine in the press",
+              "definition": "The yield of the vineyard as it is trodden out and gathered in: wine in the winepresses, the year’s vintage stored or carried to market.",
+              "evidence": [
+                {
+                  "ref": "Isa.16.10",
+                  "role": "defining",
+                  "note": "“No treader treads out wine in the presses (יְקָבִים)”."
+                },
+                {
+                  "ref": "Jer.48.33",
+                  "role": "defining",
+                  "note": "“I have made wine to cease from the presses.”"
+                },
+                {
+                  "ref": "Jer.40.12",
+                  "role": "defining",
+                  "note": "The Jews who returned “gathered wine and summer fruit very much”."
+                },
+                {
+                  "ref": "Jer.40.10"
+                },
+                {
+                  "ref": "Deu.28.39",
+                  "note": "“You will plant vineyards and dress them, but you will not drink the wine nor gather it.”"
+                },
+                {
+                  "ref": "Neh.13.15",
+                  "note": "Wine, grapes and figs loaded on donkeys and brought into Jerusalem on the sabbath."
+                },
+                {
+                  "ref": "1Ch.27.27"
+                },
+                {
+                  "ref": "2Ch.11.11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "drink-offering",
+          "gloss": "wine of the drink offering",
+          "definition": "Wine poured out to Yahweh as the נֶסֶךְ, the drink offering that goes with the burnt offering and the grain offering, in measures set by the animal: a quarter hin for a lamb, a third for a ram, half for a bull.",
+          "evidence": [
+            {
+              "ref": "Lev.23.13",
+              "role": "defining",
+              "note": "With the lamb of the עֹמֶר: “its drink offering wine, a quarter of the hin”."
+            },
+            {
+              "ref": "Exo.29.40",
+              "role": "defining",
+              "note": "The daily lamb: “a quarter of a hin of wine for a drink offering”."
+            },
+            {
+              "ref": "Num.15.5",
+              "role": "defining",
+              "note": "“Wine for the drink offering, a quarter of a hin” with each lamb."
+            },
+            {
+              "ref": "Num.15.7"
+            },
+            {
+              "ref": "Num.15.10",
+              "note": "Half a hin of wine with a bull, “an offering made by fire, a pleasing aroma to Yahweh”."
+            },
+            {
+              "ref": "Num.28.14",
+              "note": "Half, a third and a quarter hin of wine with bull, ram and lamb at the new moons."
+            },
+            {
+              "ref": "Hos.9.4",
+              "role": "defining",
+              "note": "In exile “they will not pour out wine to Yahweh” (לֹא־יִסְּכוּ לַיַהְוֶה יַיִן)."
+            },
+            {
+              "ref": "1Sa.1.24",
+              "note": "Hannah brings three bulls, flour and a skin of wine to Yahweh’s house at Shiloh."
+            },
+            {
+              "ref": "1Sa.10.3",
+              "note": "Men going up to God at Bethel carry kids, bread and a skin of wine."
+            },
+            {
+              "ref": "Deu.32.38",
+              "note": "The gods “who drank the wine of their drink offerings” (יֵין נְסִיכָם): the same offering made to idols."
+            },
+            {
+              "ref": "1Ch.9.29",
+              "note": "Levites set over the flour, the wine and the oil of the sanctuary."
+            }
+          ]
+        },
+        {
+          "id": "wine-intoxicant",
+          "gloss": "wine as what makes drunk",
+          "definition": "Wine drunk to excess, which overpowers the drinker: it makes him drunk, takes away his judgment, and has to “go out of” him before he is himself again.",
+          "evidence": [
+            {
+              "ref": "Gen.9.21",
+              "role": "defining",
+              "note": "Noah “drank of the wine and was drunk, and uncovered himself”."
+            },
+            {
+              "ref": "Gen.9.24",
+              "role": "defining",
+              "note": "“Noah awoke from his wine”: it had held him."
+            },
+            {
+              "ref": "1Sa.25.37",
+              "role": "defining",
+              "note": "In the morning, “when the wine had gone out of Nabal”, his wife told him."
+            },
+            {
+              "ref": "Pro.20.1",
+              "role": "defining",
+              "note": "“Wine is a mocker, strong drink is raging, and whoever goes astray by it is not wise.”"
+            },
+            {
+              "ref": "Pro.23.31",
+              "role": "defining",
+              "note": "“Do not look at wine when it is red, when it gives its eye in the cup”; v. 30, those who “linger long at the wine”, and vv. 33–35 what follows."
+            },
+            {
+              "ref": "Pro.23.30"
+            },
+            {
+              "ref": "Gen.19.32",
+              "to": "Gen.19.35",
+              "note": "Lot’s daughters make him drink wine so that he does not know when they lie down or rise."
+            },
+            {
+              "ref": "1Sa.1.14",
+              "to": "1Sa.1.15",
+              "note": "Eli: “Put away your wine from you”; Hannah: “I have drunk neither wine nor strong drink.”"
+            },
+            {
+              "ref": "2Sa.13.28",
+              "note": "“When Amnon’s heart is merry with wine”, then strike him."
+            },
+            {
+              "ref": "Est.1.10",
+              "note": "“When the heart of the king was merry with wine”."
+            },
+            {
+              "ref": "Isa.5.11",
+              "note": "Those who rise early for strong drink and stay late “till wine inflames them”."
+            },
+            {
+              "ref": "Isa.5.22"
+            },
+            {
+              "ref": "Isa.28.7",
+              "role": "defining",
+              "note": "Priest and prophet “reel with wine and stagger with strong drink … they err in vision, they stumble in judgment”."
+            },
+            {
+              "ref": "Isa.28.1"
+            },
+            {
+              "ref": "Hos.4.11",
+              "role": "defining",
+              "note": "“Whoredom and wine and new wine take away the heart.”"
+            },
+            {
+              "ref": "Hab.2.5",
+              "note": "“Wine is treacherous”: the proud man is never satisfied."
+            },
+            {
+              "ref": "Jer.23.9",
+              "note": "“Like a man whom wine has overcome (עֲבָרוֹ יָיִן)”."
+            },
+            {
+              "ref": "Jol.1.5",
+              "note": "“Awake, you drunkards, and weep … all you drinkers of wine.”"
+            },
+            {
+              "ref": "Pro.23.20",
+              "note": "“Do not be among winebibbers (סֹבְאֵי־יָיִן)”."
+            },
+            {
+              "ref": "Pro.21.17"
+            },
+            {
+              "ref": "Psa.78.65",
+              "note": "Yahweh awakes “like a mighty man who shouts by reason of wine”."
+            }
+          ],
+          "senses": [
+            {
+              "id": "wine-refused",
+              "gloss": "wine kept from the separated",
+              "definition": "Wine forbidden or refused, with strong drink, by those set apart: the priest going into the tent of meeting, the Nazirite all the days of his separation, the Rechabites by their father’s command, the king at judgment, Daniel at Babylon’s table.",
+              "evidence": [
+                {
+                  "ref": "Lev.10.9",
+                  "role": "defining",
+                  "note": "“Do not drink wine nor strong drink … when you go into the tent of meeting, lest you die”, so as to distinguish holy from common (v. 10)."
+                },
+                {
+                  "ref": "Num.6.3",
+                  "role": "defining",
+                  "note": "The Nazirite “shall separate himself from wine and strong drink”, its vinegar, its juice and the grapes themselves."
+                },
+                {
+                  "ref": "Num.6.20",
+                  "note": "“After that the Nazirite may drink wine.”"
+                },
+                {
+                  "ref": "Jdg.13.4",
+                  "note": "Samson’s mother: “drink no wine nor strong drink”; again vv. 7, 14."
+                },
+                {
+                  "ref": "Jdg.13.14"
+                },
+                {
+                  "ref": "Amo.2.12",
+                  "note": "“You gave the Nazirites wine to drink.”"
+                },
+                {
+                  "ref": "Jer.35.6",
+                  "role": "defining",
+                  "note": "The Rechabites: “We will drink no wine, for Jonadab … commanded us.”"
+                },
+                {
+                  "ref": "Jer.35.14"
+                },
+                {
+                  "ref": "Ezk.44.21",
+                  "note": "“No priest shall drink wine when he enters the inner court.”"
+                },
+                {
+                  "ref": "Pro.31.4",
+                  "role": "defining",
+                  "note": "“It is not for kings to drink wine”, lest they forget the law and pervert judgment (v. 5)."
+                },
+                {
+                  "ref": "Dan.1.8",
+                  "note": "Daniel resolves not to defile himself with the king’s food “nor with the wine he drank”."
+                },
+                {
+                  "ref": "Dan.10.3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wine-of-wrath",
+          "gloss": "the cup of wine of wrath",
+          "definition": "By figure, the wine Yahweh makes the nations or his people drink from his cup: his wrath, which makes them stagger and fall like drunken men.",
+          "evidence": [
+            {
+              "ref": "Jer.25.15",
+              "role": "defining",
+              "note": "“Take this cup of the wine of wrath (כּוֹס הַיַּיִן הַחֵמָה) from my hand, and make all the nations … drink it”; they drink, stagger and go mad (v. 16)."
+            },
+            {
+              "ref": "Psa.75.9",
+              "role": "defining",
+              "note": "“In the hand of Yahweh there is a cup, and the wine foams, full of mixture”; the wicked of the earth drain its dregs."
+            },
+            {
+              "ref": "Psa.60.5",
+              "role": "defining",
+              "note": "“You have made us drink the wine of staggering (יַיִן תַּרְעֵלָה).”"
+            },
+            {
+              "ref": "Jer.51.7",
+              "role": "defining",
+              "note": "“Babylon was a golden cup in Yahweh’s hand that made all the earth drunk; the nations drank of her wine, therefore the nations are mad.”"
+            },
+            {
+              "ref": "Isa.51.21",
+              "note": "“Drunk, but not with wine”: Jerusalem has drunk the cup of Yahweh’s fury (v. 17)."
+            },
+            {
+              "ref": "Isa.29.9",
+              "note": "“They are drunk, but not with wine”: a spirit of deep sleep from Yahweh (v. 10)."
+            },
+            {
+              "ref": "Jer.13.12",
+              "note": "Every jar filled with wine: the inhabitants filled with drunkenness and dashed one against another (vv. 13–14)."
+            },
+            {
+              "ref": "Deu.32.33",
+              "note": "“Their wine is the venom of serpents”: the fruit of the enemies’ vine (v. 32)."
+            },
+            {
+              "ref": "Pro.4.17",
+              "note": "The wicked “drink the wine of violence”."
+            }
+          ]
+        },
+        {
+          "id": "wine-of-delight",
+          "gloss": "wine as a figure of delight and plenty",
+          "definition": "By figure, what is as good and gladdening as wine: love better than wine, the wine that wisdom mixes and offers, the wine Yahweh offers without price, and the overflowing plenty of Judah’s land.",
+          "evidence": [
+            {
+              "ref": "Sng.1.2",
+              "role": "defining",
+              "note": "“Your love is better than wine.”"
+            },
+            {
+              "ref": "Sng.4.10"
+            },
+            {
+              "ref": "Sng.1.4"
+            },
+            {
+              "ref": "Sng.2.4",
+              "note": "“He brought me to the house of wine.”"
+            },
+            {
+              "ref": "Sng.5.1"
+            },
+            {
+              "ref": "Sng.7.10"
+            },
+            {
+              "ref": "Sng.8.2",
+              "note": "“Spiced wine (יַיִן הָרֶקַח)”."
+            },
+            {
+              "ref": "Pro.9.5",
+              "role": "defining",
+              "note": "Wisdom calls: “Come, eat of my bread, and drink of the wine I have mixed.”"
+            },
+            {
+              "ref": "Pro.9.2"
+            },
+            {
+              "ref": "Isa.55.1",
+              "role": "defining",
+              "note": "“Come, buy wine and milk without money and without price.”"
+            },
+            {
+              "ref": "Gen.49.11",
+              "to": "Gen.49.12",
+              "note": "Judah washes his garments in wine; his eyes are dark with wine and his teeth white with milk."
+            },
+            {
+              "ref": "Zec.10.7",
+              "note": "“Their heart will rejoice as with wine.”"
+            },
+            {
+              "ref": "Zec.9.15"
+            },
+            {
+              "ref": "Hos.14.8",
+              "note": "“His remembrance will be like the wine of Lebanon.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "οἶνος",
+          "gloss": "wine",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.13, יַיִן → οἴνου; Num.6.3, Jer.25.15, Jer.51.7 the same; οἶνος renders יַיִן ×122 of its 126 aligned uses"
+            },
+            {
+              "ref": "Luk.1.15",
+              "role": "defining",
+              "note": "John “shall drink neither wine (οἶνον) nor strong drink (σίκερα)”: the Nazirite’s separation of Num 6:3 and Jdg 13:4."
+            },
+            {
+              "ref": "Rev.14.10",
+              "role": "defining",
+              "note": "“He also shall drink of the wine of the wrath of God, poured out unmixed into the cup of his anger”: the cup of Jer 25:15 and Psa 75:9."
+            },
+            {
+              "ref": "Rev.14.8",
+              "role": "defining",
+              "note": "Babylon “made all nations drink of the wine of the wrath of her fornication”: Jer 51:7."
+            },
+            {
+              "ref": "Rev.17.2"
+            },
+            {
+              "ref": "Rev.18.3"
+            },
+            {
+              "ref": "Rev.16.19"
+            },
+            {
+              "ref": "Eph.5.18",
+              "note": "“Do not be drunk with wine (μὴ μεθύσκεσθε οἴνῳ)”, the Septuagint’s words at Pro 23:31, “but be filled with the spirit”."
+            },
+            {
+              "ref": "1Ti.3.8",
+              "note": "Deacons “not given to much wine”; also Tit 2:3."
+            },
+            {
+              "ref": "Tit.2.3"
+            },
+            {
+              "ref": "Jhn.2.10",
+              "note": "The good wine kept until now, made from water at Cana (vv. 3–9)."
+            },
+            {
+              "ref": "1Ti.5.23"
+            },
+            {
+              "ref": "Rom.14.21"
+            }
+          ]
+        },
+        {
+          "lemma": "οἰνοπότης",
+          "gloss": "wine-drinker, winebibber",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. οἰνοπότης",
+              "note": "“[in LXX: Pr 23:20 (יַיִן סֹבֵא)]”: the Septuagint’s word for סֹבְאֵי־יָיִן."
+            },
+            {
+              "ref": "Pro.23.20"
+            },
+            {
+              "ref": "Mat.11.19",
+              "role": "defining",
+              "note": "The Son of man is slandered as “a glutton and a winebibber (οἰνοπότης)”, the pair of Pro 23:20–21."
+            },
+            {
+              "ref": "Luk.7.34"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שֵׁכָר",
+            "note": "“Strong drink”, its constant partner, of what makes drunk and of what the separated refuse.",
+            "evidence": [
+              {
+                "ref": "Lev.10.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.6.3"
+              },
+              {
+                "ref": "Pro.20.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.28.7"
+              },
+              {
+                "ref": "Pro.31.4"
+              },
+              {
+                "ref": "Isa.24.9"
+              }
+            ]
+          },
+          {
+            "lemma": "לֶחֶם",
+            "note": "“Bread”, with wine the whole of a meal or a provision.",
+            "evidence": [
+              {
+                "ref": "Gen.14.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.104.15"
+              },
+              {
+                "ref": "Pro.9.5"
+              },
+              {
+                "ref": "Ecc.9.7"
+              },
+              {
+                "ref": "Pro.4.17"
+              }
+            ]
+          },
+          {
+            "lemma": "חָלָב",
+            "note": "“Milk”, beside wine as the land’s plenty.",
+            "evidence": [
+              {
+                "ref": "Isa.55.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.49.12"
+              },
+              {
+                "ref": "Sng.5.1"
+              }
+            ]
+          },
+          {
+            "lemma": "תִּירוֹשׁ",
+            "note": "“New wine”, named with it as taking away the heart.",
+            "evidence": [
+              {
+                "ref": "Hos.4.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "נֶסֶךְ יַיִן",
+            "gloss": "drink offering of wine",
+            "evidence": [
+              {
+                "ref": "Lev.23.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.15.5"
+              },
+              {
+                "ref": "Num.15.10"
+              },
+              {
+                "ref": "Exo.29.40"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁתֵּה הַיַּיִן",
+            "gloss": "the banquet of wine",
+            "evidence": [
+              {
+                "ref": "Est.5.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.7.2"
+              },
+              {
+                "ref": "Est.7.7"
+              }
+            ]
+          },
+          {
+            "phrase": "יַיִן וְשֵׁכָר",
+            "gloss": "wine and strong drink",
+            "evidence": [
+              {
+                "ref": "Lev.10.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.6.3"
+              },
+              {
+                "ref": "Jdg.13.4"
+              },
+              {
+                "ref": "1Sa.1.15"
+              }
+            ]
+          },
+          {
+            "phrase": "כּוֹס הַיַּיִן הַחֵמָה",
+            "gloss": "the cup of the wine of wrath",
+            "evidence": [
+              {
+                "ref": "Jer.25.15",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "יַיִן תַּרְעֵלָה",
+            "gloss": "wine of staggering",
+            "evidence": [
+              {
+                "ref": "Psa.60.5",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "חֹמֶץ יַיִן",
+            "gloss": "vinegar of wine",
+            "evidence": [
+              {
+                "ref": "Num.6.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "סֹבְאֵי יָיִן",
+            "gloss": "winebibbers, heavy drinkers of wine",
+            "evidence": [
+              {
+                "ref": "Pro.23.20",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית הַיָּיִן",
+            "gloss": "the house of wine, banqueting house",
+            "evidence": [
+              {
+                "ref": "Sng.2.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-yn",
+      "lang": "uga",
+      "form": "𐎊𐎐",
+      "translit": "yn (/yênu/)",
+      "gloss": "wine",
+      "relation": "cognate",
+      "note": "The ordinary word for wine in Ugarit’s ration lists, sacrificial records and poems: “two jars of wine”, “wine which was used up at the sacrifice”, “give a cup of wine”. Its pair in poetry, “blood of trees”, matches Judah’s “blood of grapes” beside wine (Gen 49:11).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 188, §93 glossary, yn",
+          "note": "“yn /yên-/ ‘wine,’ y(n) 1.114:3 = 88.3 (H. yáyin, constr. yên, Arab. wayn …)”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎊𐎐 (yn)",
+          "note": "wine"
+        }
+      ]
+    },
+    {
+      "id": "phn-yn",
+      "lang": "phn",
+      "form": "𐤉𐤍",
+      "translit": "yn",
+      "gloss": "wine",
+      "relation": "cognate",
+      "note": "A Phoenician jar label reads “red wine of Gath-Carmel”, and a Punic line in Plautus “let us drink wine (ien); let us drink the blood of the vine”: the same pairing of wine and blood of grapes as Gen 49:11.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 210, YN",
+          "note": "“[Heb. yayin] n.m. WINE. IEJ 18 (1968), 226f. A 1.2 (Ph) ḥmr yn gt kr[ml], ‘Red wine of Gitt-Kirmil.’ Poen. 1141/42 (Pu) neste ien neste dum et, ‘Let us drink wine; let us drink the blood of the vine.’”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000543 yyn [wine] N, PUN000819 yn [wine] N"
+        }
+      ]
+    },
+    {
+      "id": "ar-wayn",
+      "lang": "ar",
+      "form": "وَيْن",
+      "translit": "wayn",
+      "gloss": "black grapes",
+      "relation": "cognate",
+      "note": "The grape rather than the drink, with the w that Hebrew turns to y. Lane’s lexicon, which breaks off before the end of و, has no article for it.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic وين (wayn)",
+          "note": "“black grape”; inherited from Proto-West Semitic *wayn-."
+        }
+      ]
+    },
+    {
+      "id": "gez-wayn",
+      "lang": "gez",
+      "form": "ወይን",
+      "translit": "wayn",
+      "gloss": "vine, grapevine; grape; vineyard; wine",
+      "relation": "cognate",
+      "note": "Ge’ez uses the word of the vine and its fruit; Amharic ወይን wäyn is “grape”.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 100, yn",
+          "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-lexical-relationship_fisher-milton-charles_1969-04/page/n111",
+          "note": "Ugaritic yn “wine” set beside Ge’ez and Amharic wayn, “grapevine, vineyard; grape, vine” (read from the OCR text)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000543 yyn [wine] N, GEZ006186 wayn [vine] N"
+        }
+      ]
+    },
+    {
+      "id": "sab-wyn",
+      "lang": "sem",
+      "form": "𐩥𐩺𐩬",
+      "translit": "wyn (Sabaean)",
+      "gloss": "grapes; vineyard",
+      "relation": "cognate",
+      "note": "In Sabaean inscriptions the vineyard as land: “all the strip-cultivated land of their vineyards and field(s)”, “their two cisterns above their vineyard”.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 127, WYN",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“GRAPES > VINEYARD [Ar. Eth wayn ‘grapes.’]”; R4196/2 “their 2 cisterns (which are) above their vineyard”."
+        }
+      ]
+    },
+    {
+      "id": "akk-inu",
+      "lang": "akk",
+      "form": "īnu",
+      "translit": "īnu",
+      "gloss": "wine",
+      "relation": "cognate",
+      "note": "A rare Neo-Assyrian word for wine (Akkadian’s usual word is karānu); it loses the initial w/y as Akkadian does.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000095240, īnu [wine] N (also asbp x000054870, dcclt x0055784)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000543 yyn [wine] N, AKK004346 īnu [wine] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "drink-offering",
+      "statement": "Wine was poured out to Yahweh with the burnt offering of every lamb, ram and bull, a quarter, a third or a half hin (Num 15:5–10; 28:14), and so with the lamb of the עֹמֶר at the firstfruits (Lev 23:13); with it the offering was “a pleasing aroma to Yahweh” (Num 15:10). In exile Israel could not pour out wine to Yahweh (Hos 9:4). Paul uses the same act of himself: “if I am poured out as a drink offering (σπένδομαι) on the sacrifice and service of your faith, I rejoice” (Php 2:17), and at the end, “I am already being poured out” (2Ti 4:6). From the verses: the wine was not drunk by the offerer but given up wholly beside the sacrifice, and Paul counts his own life, spent for the believers’ faith, as such an offering.",
+      "evidence": [
+        {
+          "ref": "Num.15.5",
+          "to": "Num.15.10"
+        },
+        {
+          "ref": "Num.28.14"
+        },
+        {
+          "ref": "Lev.23.13"
+        },
+        {
+          "ref": "Hos.9.4"
+        },
+        {
+          "ref": "Php.2.17"
+        },
+        {
+          "ref": "2Ti.4.6"
+        }
+      ]
+    },
+    {
+      "topic": "sobriety",
+      "statement": "Scripture names wine among God’s gifts, given “to gladden the heart of man” (Psa 104:15), to be eaten and drunk with joy before Yahweh (Deu 14:26; Ecc 9:7), and Jesus made it at Cana (Jhn 2:9–10). It also says “wine is a mocker” and that whoever goes astray by it is not wise (Pro 20:1), and shows it taking away the heart, overturning judgment and uncovering shame (Hos 4:11; Isa 28:7; Gen 9:21). So the priest was not to drink it going into the tent of meeting, “that you may distinguish between holy and common, and between unclean and clean, and teach” Israel (Lev 10:9–11; Ezk 44:21), and the king not at all, “lest he drink and forget the law” (Pro 31:4–5). The apostles apply the same to the church: “do not be drunk with wine … but be filled with the spirit” (Eph 5:18), and its overseers and servants are not to be given to wine (1Ti 3:3, 8; Tit 1:7; 2:3). From the verses: the fault is not in the wine but in being mastered by it; those who serve God and judge for him must keep clear minds.",
+      "evidence": [
+        {
+          "ref": "Psa.104.15"
+        },
+        {
+          "ref": "Deu.14.26"
+        },
+        {
+          "ref": "Ecc.9.7"
+        },
+        {
+          "ref": "Jhn.2.9",
+          "to": "Jhn.2.10"
+        },
+        {
+          "ref": "Pro.20.1"
+        },
+        {
+          "ref": "Hos.4.11"
+        },
+        {
+          "ref": "Isa.28.7"
+        },
+        {
+          "ref": "Gen.9.21"
+        },
+        {
+          "ref": "Lev.10.9",
+          "to": "Lev.10.11"
+        },
+        {
+          "ref": "Ezk.44.21"
+        },
+        {
+          "ref": "Pro.31.4",
+          "to": "Pro.31.5"
+        },
+        {
+          "ref": "Eph.5.18"
+        },
+        {
+          "ref": "1Ti.3.3"
+        },
+        {
+          "ref": "1Ti.3.8"
+        },
+        {
+          "ref": "Tit.1.7"
+        },
+        {
+          "ref": "Tit.2.3"
+        }
+      ]
+    },
+    {
+      "topic": "separation",
+      "statement": "The Nazirite showed his separation to Yahweh by separating himself from wine and strong drink and everything from the vine (Num 6:2–4); Samson was such from the womb (Jdg 13:4–7), and Amos charges Israel with making the Nazirites drink wine (Amo 2:12). The Rechabites kept their father’s word not to drink wine, and Yahweh set their obedience against Judah’s refusal to hear him (Jer 35:6, 14). John the Baptist was to “drink neither wine nor strong drink” and be filled with the holy spirit from his mother’s womb (Luk 1:15). From the verses: refusing wine was a visible mark of a life given over to God’s service, and the faithfulness of those who kept it rebuked those who did not.",
+      "evidence": [
+        {
+          "ref": "Num.6.2",
+          "to": "Num.6.4"
+        },
+        {
+          "ref": "Jdg.13.4",
+          "to": "Jdg.13.7"
+        },
+        {
+          "ref": "Amo.2.12"
+        },
+        {
+          "ref": "Jer.35.6"
+        },
+        {
+          "ref": "Jer.35.14"
+        },
+        {
+          "ref": "Luk.1.15"
+        }
+      ]
+    },
+    {
+      "topic": "cup-of-wrath",
+      "statement": "Yahweh gives Jeremiah “the cup of the wine of wrath” to make the nations drink, “and they shall drink and stagger and be mad because of the sword” (Jer 25:15–16); in his hand is a cup of foaming wine whose dregs the wicked of the earth drain (Psa 75:9). Babylon was “a golden cup in Yahweh’s hand” from whose wine the nations drank and went mad (Jer 51:7). Revelation takes up both: Babylon makes the nations drink “the wine of the wrath of her fornication”, and the worshipper of the beast “shall drink of the wine of the wrath of God, poured out unmixed into the cup of his anger” (Rev 14:8, 10; 16:19; 18:3). From the verses: the drunkenness wine causes is scripture’s picture of judgment, the helpless staggering of those Yahweh gives over to the result of their ways.",
+      "evidence": [
+        {
+          "ref": "Jer.25.15",
+          "to": "Jer.25.16"
+        },
+        {
+          "ref": "Psa.75.9"
+        },
+        {
+          "ref": "Jer.51.7"
+        },
+        {
+          "ref": "Rev.14.8"
+        },
+        {
+          "ref": "Rev.14.10"
+        },
+        {
+          "ref": "Rev.16.19"
+        },
+        {
+          "ref": "Rev.18.3"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. The root has one word. Left out: j.bk.ac יך (BDB’s note on the ketiv of 1Sa 4:13, an error for יד), which has no tokens. Scripture’s Aramaic has no word of this root: Daniel’s wine is חֲמַר (Dan 5:1–4, 23), and the Peshitta’s is ܚܡܪܐ, both of another root. Cognate leads not followed: Leslau and Dillmann for Ge’ez wayn (cited from Fisher’s OCR text and Anderson–Moser only); CAD I/J for Akkadian īnu; whether Jewish or other Aramaic has yyn (Anderson–Moser list an Aramaic yyn, ARM011921, not checked). Greek οἶνος and Latin vinum share the word with West Semitic, but which way it went (or from a third language) is not shown, and Abbott-Smith gives no Semitic etymology, so οἶνος is recorded as a rendering, not a loan. The Septuagint count for οἶνος includes inflected forms MACULA lists separately (117 + 5 of 126). Open questions: (1) whether “the vintage” (Isa 16:10; Jer 40:12) should be its own sense or an example of wine as drink; (2) the doctrine items are four; the reviewer may prefer “drink-offering” left to a נסכ entry."
+}
