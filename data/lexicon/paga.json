@@ -1,0 +1,688 @@
+{
+  "id": "paga",
+  "root": "פגע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "meeting",
+    "violence",
+    "prayer",
+    "intercession",
+    "boundaries",
+    "servant-of-yahweh"
+  ],
+  "gloss": "meet, come upon; fall upon, strike; entreat, intercede",
+  "summary": "To meet, to come upon someone or something: angels meet Jacob, a stray ox is met on the road, a tribe's border reaches its neighbour's (Gen 32:2; Exo 23:4; Jos 19:34). Met with hostility it is to fall upon and kill (1Ki 2:25, 34); met with a request it is to press one's plea, to entreat and intercede, with men or with Yahweh (Gen 23:8; Jer 7:16; 27:18). The hiphil makes something meet someone, as Yahweh made the iniquity of us all light upon his servant, and is also to interpose, as that servant interposes for transgressors where Yahweh had found no one to do it (Isa 53:6, 12; 59:16). The nouns are what one meets, a chance or mishap (1Ki 5:18; Ecc 9:11), and a thing struck at, a target (Job 7:20).",
+  "words": [
+    {
+      "lemma": "פָּגַע",
+      "pos": "verb",
+      "gloss": "meet, come upon; fall upon, strike; entreat, intercede",
+      "bdb": [
+        "q.ag.aa"
+      ],
+      "cognate_ids": [
+        "arc-pega",
+        "syc-pega"
+      ],
+      "summary": "A verb of contact: to come up against someone or something. The object, usually with בְּ, and the setting decide whether the meeting is chance, violent or a plea.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "meet, come upon, reach; fall upon, strike down; entreat, intercede",
+          "senses": [
+            {
+              "id": "meet",
+              "gloss": "meet, come upon",
+              "definition": "To meet someone or come upon something, whether by chance or in coming to them; of a traveller, to reach a place.",
+              "evidence": [
+                {
+                  "ref": "Gen.32.2",
+                  "role": "defining",
+                  "note": "Jacob went on his way, “and the messengers of God וַיִּפְגְּעוּ בוֹ”: met him."
+                },
+                {
+                  "ref": "Exo.23.4",
+                  "role": "defining",
+                  "note": "“If you meet (תִפְגַּע) your enemy's ox or his donkey going astray, you shall bring it back to him”: a chance meeting on the road."
+                },
+                {
+                  "ref": "1Sa.10.5",
+                  "role": "defining",
+                  "note": "Samuel to Saul: at Gibeah of God “you will meet (וּפָגַעְתָּ) a band of prophets coming down from the high place”."
+                },
+                {
+                  "ref": "Exo.5.20",
+                  "note": "The Israelite officers “met Moses and Aaron, who stood to meet them (לִקְרָאתָם)” as they came out from Pharaoh: פָּגַע beside קָרָא, “meet”."
+                },
+                {
+                  "ref": "Gen.28.11",
+                  "role": "defining",
+                  "note": "Jacob “וַיִּפְגַּע בַּמָּקוֹם”, came upon the place, and lay down there because the sun had set: he reached it on his way."
+                },
+                {
+                  "ref": "Amo.5.19",
+                  "role": "defining",
+                  "note": "“As when a man flees from a lion and a bear meets him (וּפְגָעוֹ)”: a meeting no one seeks."
+                },
+                {
+                  "ref": "Isa.64.4",
+                  "note": "“You meet (פָּגַעְתָּ) him who rejoices and works righteousness, those who remember you in your ways”: Yahweh meeting the righteous with favour."
+                },
+                {
+                  "ref": "Isa.47.3",
+                  "note": "Of Yahweh's vengeance on Babylon: “I will take vengeance, and I will not meet a man (וְלֹא אֶפְגַּע אָדָם)”. Whether it means he will spare no one, or let no one stand in his way, or receive no one's plea, the verse alone does not settle."
+                }
+              ]
+            },
+            {
+              "id": "border-reaches",
+              "gloss": "reach, touch (of a border)",
+              "definition": "Of a tribe's border in Joshua's allotments, to reach and touch a place or another tribe's territory, as one traveller meets another.",
+              "evidence": [
+                {
+                  "ref": "Jos.19.34",
+                  "role": "defining",
+                  "note": "Naphtali's border “met (וּפָגַע) Zebulun on the south, and met Asher on the west, and Judah at the Jordan”: where territories touch."
+                },
+                {
+                  "ref": "Jos.17.10",
+                  "role": "defining",
+                  "note": "Manasseh's land: “and they meet (יִפְגְּעוּן) Asher on the north and Issachar on the east”."
+                },
+                {
+                  "ref": "Jos.16.7",
+                  "note": "Ephraim's border went down from Janoah “and reached (וּפָגַע) Jericho, and went out at the Jordan”."
+                },
+                {
+                  "ref": "Jos.19.11",
+                  "note": "Zebulun's border reached Dabbesheth and reached the brook before Jokneam: twice in the verse."
+                },
+                {
+                  "ref": "Jos.19.22"
+                },
+                {
+                  "ref": "Jos.19.26"
+                },
+                {
+                  "ref": "Jos.19.27"
+                }
+              ]
+            },
+            {
+              "id": "fall-upon",
+              "gloss": "fall upon, strike down",
+              "definition": "To meet with hostile intent: to set upon someone and strike them, usually to kill. With בְּ of the one attacked.",
+              "evidence": [
+                {
+                  "ref": "1Ki.2.25",
+                  "role": "defining",
+                  "note": "Solomon sent by the hand of Benaiah, “and he fell upon him (וַיִּפְגַּע־בּוֹ), and he died”: Adonijah."
+                },
+                {
+                  "ref": "1Ki.2.34",
+                  "role": "defining",
+                  "note": "Benaiah went up “וַיִּפְגַּע־בּוֹ וַיְמִתֵהוּ”, fell upon Joab and killed him."
+                },
+                {
+                  "ref": "2Sa.1.15",
+                  "role": "defining",
+                  "note": "David to a young man: “Draw near, fall upon (פְּגַע) him”; “and he struck him, and he died”: the Amalekite who said he had killed Saul."
+                },
+                {
+                  "ref": "1Sa.22.17",
+                  "role": "defining",
+                  "note": "Saul's runners would not put forth their hand “to fall upon (לִפְגֹעַ) the priests of Yahweh”; Doeg turned and fell upon them and killed eighty-five men (22:18)."
+                },
+                {
+                  "ref": "1Sa.22.18"
+                },
+                {
+                  "ref": "1Ki.2.29",
+                  "note": "“Go, fall upon him”: Joab at the altar."
+                },
+                {
+                  "ref": "1Ki.2.31"
+                },
+                {
+                  "ref": "1Ki.2.32",
+                  "role": "defining",
+                  "note": "Joab “fell upon two men more righteous and better than he, and killed them with the sword”: Abner and Amasa."
+                },
+                {
+                  "ref": "1Ki.2.46",
+                  "note": "Benaiah fell upon Shimei, and he died."
+                },
+                {
+                  "ref": "Jdg.8.21",
+                  "note": "Zebah and Zalmunna to Gideon: “Rise yourself and fall upon us”; and Gideon killed them."
+                },
+                {
+                  "ref": "Jdg.15.12",
+                  "note": "Samson to the men of Judah: “Swear to me that you will not fall upon me yourselves.”"
+                },
+                {
+                  "ref": "Jdg.18.25",
+                  "note": "“Lest men bitter of soul fall upon you, and you lose your life and the lives of your house.”"
+                },
+                {
+                  "ref": "Num.35.19",
+                  "role": "defining",
+                  "note": "The avenger of blood “shall kill the murderer; when he meets him (בְּפִגְעוֹ־בוֹ) he shall kill him”: the meeting and the killing together."
+                },
+                {
+                  "ref": "Num.35.21"
+                },
+                {
+                  "ref": "Jos.2.16",
+                  "note": "Rahab to the spies: hide in the hills “lest the pursuers meet you”."
+                },
+                {
+                  "ref": "Rut.2.22",
+                  "note": "Naomi: stay with Boaz's young women, “that they do not meet you (וְלֹא יִפְגְּעוּ־בָךְ) in another field”: meet to molest."
+                },
+                {
+                  "ref": "Exo.5.3",
+                  "role": "defining",
+                  "note": "“Lest he fall upon us (יִפְגָּעֵנוּ) with pestilence or with the sword”: Yahweh as the one who strikes."
+                }
+              ]
+            },
+            {
+              "id": "entreat",
+              "gloss": "entreat, press with a plea; intercede",
+              "definition": "To meet someone with a request: to press a plea on him, for oneself or for others; with Yahweh, to pray and intercede. The one entreated takes בְּ, the one pleaded for לְ or בְּעַד.",
+              "evidence": [
+                {
+                  "ref": "Jer.7.16",
+                  "role": "defining",
+                  "note": "“Do not pray (תִּתְפַּלֵּל) for this people, nor lift up cry or prayer for them, and do not entreat (תִּפְגַּע) me, for I will not hear you”: set beside prayer, of pleading for others with Yahweh."
+                },
+                {
+                  "ref": "Jer.27.18",
+                  "role": "defining",
+                  "note": "“If they are prophets … let them entreat (יִפְגְּעוּ) Yahweh of hosts, that the vessels left in the house of Yahweh do not go to Babylon”: intercession."
+                },
+                {
+                  "ref": "Gen.23.8",
+                  "role": "defining",
+                  "note": "Abraham to the sons of Heth: “hear me, and entreat (וּפִגְעוּ־לִי) Ephron son of Zohar for me”: pleading with a man on another's behalf."
+                },
+                {
+                  "ref": "Rut.1.16",
+                  "role": "defining",
+                  "note": "Ruth: “Do not press me (אַל־תִּפְגְּעִי־בִי) to leave you”: urging, insistence."
+                },
+                {
+                  "ref": "Job.21.15",
+                  "role": "defining",
+                  "note": "The wicked: “What is the Almighty, that we should serve him? and what profit, if we entreat (נִפְגַּע) him?”: beside serving God, of prayer."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to meet, lay upon; make entreat; interpose, intercede",
+          "senses": [
+            {
+              "id": "lay-upon",
+              "gloss": "cause to meet, make light upon",
+              "definition": "To make something meet someone, to bring it down on him.",
+              "evidence": [
+                {
+                  "ref": "Isa.53.6",
+                  "role": "defining",
+                  "note": "“All we like sheep have gone astray, we have turned each to his own way, and Yahweh has made meet upon him (הִפְגִּיעַ בּוֹ) the iniquity of us all.”"
+                },
+                {
+                  "ref": "1Pe.2.25",
+                  "note": "“You were as sheep going astray”: Peter applies Isa 53:6 to those whose sins Jesus bore (2:24)."
+                },
+                {
+                  "ref": "1Pe.2.24",
+                  "note": "“Who his own self bore our sins in his own body on the tree”: the iniquity laid on the servant (Isa 53:6, 12)."
+                }
+              ]
+            },
+            {
+              "id": "make-entreat",
+              "gloss": "make (someone) entreat",
+              "definition": "Causative of the qal's “entreat”: to make another come with a plea.",
+              "evidence": [
+                {
+                  "ref": "Jer.15.11",
+                  "role": "defining",
+                  "note": "Yahweh to Jeremiah: “I will make the enemy entreat you (הִפְגַּעְתִּי בְךָ אֶת־הָאֹיֵב) in the time of evil and in the time of distress”: fulfilled when Zedekiah sent to ask him to pray for them (Jer 21:1–2; 37:3)."
+                },
+                {
+                  "ref": "Jer.37.3",
+                  "note": "Zedekiah sends to Jeremiah: “Pray now to Yahweh our God for us.”"
+                }
+              ]
+            },
+            {
+              "id": "interpose",
+              "gloss": "interpose, intercede",
+              "definition": "To step in between, pleading for others: one who stands between the guilty and what is coming on them.",
+              "evidence": [
+                {
+                  "ref": "Isa.53.12",
+                  "role": "defining",
+                  "note": "The servant “poured out his soul to death and was numbered with transgressors, and he bore the sin of many, and for the transgressors he interposes (יַפְגִּיעַ)”."
+                },
+                {
+                  "ref": "Isa.59.16",
+                  "role": "defining",
+                  "note": "“He saw that there was no man, and wondered that there was no interposer (מַפְגִּיעַ); so his own arm brought salvation to him”: no one stepped in, so Yahweh did."
+                },
+                {
+                  "ref": "Jer.36.25",
+                  "role": "defining",
+                  "note": "Elnathan, Delaiah and Gemariah “interceded (הִפְגִּעוּ) with the king not to burn the scroll, but he would not hear them”."
+                },
+                {
+                  "ref": "Luk.22.37",
+                  "note": "Jesus quotes Isa 53:12, “and he was numbered with the transgressors”, of himself."
+                },
+                {
+                  "ref": "Heb.7.25",
+                  "note": "He “ever lives to make intercession (ἐντυγχάνειν) for them”: the servant's interposing, though not a quotation of Isa 53:12."
+                },
+                {
+                  "ref": "Rom.8.34",
+                  "note": "Christ, who died and was raised, “who also makes intercession for us”."
+                }
+              ]
+            },
+            {
+              "id": "strike-mark",
+              "gloss": "strike (the mark)",
+              "definition": "In one verse the participle is the lightning sent to strike where God directs it. The construction is hard and the sense uncertain; it is taken here with the qal's striking and the noun מִפְגָּע, target.",
+              "kin": [
+                "target"
+              ],
+              "evidence": [
+                {
+                  "ref": "Job.36.32",
+                  "note": "“He covers his hands with the lightning, and commands it בְמַפְגִּיעַ”: as one that strikes, or against the mark."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀπαντάω",
+          "gloss": "meet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Sa.10.5, פָּגַע → ἀπαντήσεις; Gen.28.11 ἀπήντησεν; Rut.1.16, 2.22; 2Sa.1.15; 1Ki.2.32, 34; Job.21.15, 36.32; ἀπαντάω renders פָּגַע ×9"
+            },
+            {
+              "ref": "Mrk.14.13",
+              "note": "“A man carrying a pitcher of water will meet you”; the Peshitta has פְּגַע."
+            },
+            {
+              "ref": "Luk.17.12",
+              "note": "Ten lepers met him."
+            }
+          ]
+        },
+        {
+          "lemma": "συναντάω",
+          "gloss": "meet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.64.4, פָּגַע → συναντήσεται; Gen.32.2, Exo.5.20 συνήντησαν; Exo.23.4 συναντήσῃς"
+            },
+            {
+              "ref": "Luk.9.37",
+              "note": "A great crowd met him; the Peshitta has פְּגַע."
+            },
+            {
+              "ref": "Luk.22.10",
+              "note": "“A man will meet you carrying a pitcher of water”; the Peshitta has פְּגַע."
+            },
+            {
+              "ref": "Heb.7.1",
+              "note": "Melchizedek met Abraham returning from the slaughter of the kings."
+            }
+          ]
+        },
+        {
+          "lemma": "παραδίδωμι",
+          "gloss": "deliver up, hand over",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.53.6, הִפְגִּיעַ → παρέδωκεν (“the Lord delivered him up for our sins”); Isa.53.12, יַפְגִּיעַ → παρεδόθη; Isa.47.3 παραδῶ"
+            },
+            {
+              "ref": "Rom.4.25",
+              "role": "defining",
+              "note": "“Who was delivered up (παρεδόθη) for our offences, and was raised for our justification”: the Septuagint's wording of Isa 53:12."
+            },
+            {
+              "ref": "Rom.8.32",
+              "note": "God “spared not his own Son, but delivered him up (παρέδωκεν) for us all”: the wording of Isa 53:6 in the Septuagint."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "הִתְפַּלֵּל",
+            "note": "“Pray”, beside פָּגַע “entreat”, with cry and prayer.",
+            "evidence": [
+              {
+                "ref": "Jer.7.16",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עָבַד",
+            "note": "“Serve” God, beside entreating him.",
+            "evidence": [
+              {
+                "ref": "Job.21.15",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נָשָׂא חֵטְא",
+            "note": "“Bore the sin of many” beside “interposes for transgressors”.",
+            "evidence": [
+              {
+                "ref": "Isa.53.12",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "קָרָא",
+            "note": "לִקְרַאת, “to meet”, beside פָּגַע.",
+            "evidence": [
+              {
+                "ref": "Exo.5.20",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "פָּגַע בְּ",
+            "gloss": "fall upon, strike down; or entreat (with a person)",
+            "evidence": [
+              {
+                "ref": "1Ki.2.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.7.16",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "הִפְגִּיעַ בּוֹ אֵת עֲוֺן",
+            "gloss": "made iniquity meet upon him",
+            "evidence": [
+              {
+                "ref": "Isa.53.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פֶּגַע",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "q.ag.ab"
+      ],
+      "gloss": "occurrence, chance; mishap",
+      "summary": "What one meets with, what befalls: twice, once as an evil happening set beside an adversary, once as the chance that comes on all alike.",
+      "cognate_ids": [
+        "arc-pigea",
+        "ar-fajaa"
+      ],
+      "senses": [
+        {
+          "gloss": "occurrence, chance; (with רָע) mishap",
+          "definition": "A happening that meets a man unsought; with רָע, a misfortune.",
+          "kin": [
+            "fall-upon"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.5.18",
+              "role": "defining",
+              "note": "Solomon: “Yahweh my God has given me rest on every side; there is no adversary (שָׂטָן) and no evil occurrence (פֶּגַע רָע).”"
+            },
+            {
+              "ref": "Ecc.9.11",
+              "role": "defining",
+              "note": "The race is not to the swift nor the battle to the strong, “for time and chance (וָפֶגַע) happen to them all”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀπάντημα",
+          "gloss": "occurrence, what one meets",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.5.18 and Ecc.9.11, פֶּגַע → ἀπάντημα; not in the New Testament"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִפְגָּע",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "q.ag.ac"
+      ],
+      "gloss": "target, mark",
+      "summary": "Once, in Job: the thing struck at. The מִ־ noun of the verb's “strike”, the place where a blow lands.",
+      "senses": [
+        {
+          "id": "target",
+          "gloss": "target, thing struck at",
+          "definition": "A mark set up to be struck.",
+          "kin": [
+            "fall-upon"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.7.20",
+              "role": "defining",
+              "note": "“I have sinned; what shall I do to you, watcher of men? Why have you set me as your target (לְמִפְגָּע לָךְ), so that I am a burden to myself?” Compare Job 16:12, “he set me up for his target (מַטָּרָה)”."
+            },
+            {
+              "ref": "Job.16.12",
+              "note": "The same complaint with מַטָּרָה, a mark for arrows."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּגַע",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "meet",
+      "summary": "The Peshitta's ܦܓܥ (pḡaʿ), where the Greek has ἀπαντάω, ὑπαντάω or συναντάω: of meeting someone on the way.",
+      "cognate_ids": [
+        "arc-pega",
+        "syc-pega"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "meet",
+          "senses": [
+            {
+              "gloss": "meet",
+              "definition": "To meet someone, as the Hebrew's commonest sense.",
+              "kin": [
+                "meet"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.28.9",
+                  "role": "defining",
+                  "note": "As the women went to tell the disciples, “Jesus met them”."
+                },
+                {
+                  "ref": "Mrk.5.2",
+                  "note": "A man with an unclean spirit met him from the tombs."
+                },
+                {
+                  "ref": "Luk.8.27"
+                },
+                {
+                  "ref": "Mrk.14.13",
+                  "note": "“A man carrying a pitcher of water will meet you.”"
+                },
+                {
+                  "ref": "Luk.22.10"
+                },
+                {
+                  "ref": "Luk.9.37",
+                  "note": "A great crowd met him as he came down from the mountain."
+                },
+                {
+                  "ref": "Act.16.16",
+                  "note": "A girl with a spirit of divination met Paul and his companions."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-pega",
+      "lang": "arc",
+      "form": "פְּגַע",
+      "translit": "pəḡaʿ",
+      "gloss": "meet; (af.) intercede, pray; (ithpe.) happen",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: “to meet” (Targ. Prov 17:12, where it renders Hebrew פָּגַשׁ, “meet”); “to plague”; Af. “to intercede, pray” (Targ. Esth 4:14); Ithpe. “to happen”. The same three senses as the Hebrew: meeting, striking, and pleading.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Q00086, פְּגַע I"
+        }
+      ]
+    },
+    {
+      "id": "arc-pigea",
+      "lang": "arc",
+      "form": "פִּגְעָא",
+      "translit": "piḡʿā",
+      "gloss": "evil occurrence, plague",
+      "relation": "cognate",
+      "note": "The Targum keeps the word at 1Ki 5:18 (Targ. I Kings 5:18), where the Hebrew has פֶּגַע רָע.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Q00088, פְּגַע II (פִּגְעָא)"
+        }
+      ]
+    },
+    {
+      "id": "syc-pega",
+      "lang": "syc",
+      "form": "ܦܓܥ",
+      "translit": "pḡaʿ",
+      "gloss": "meet",
+      "relation": "cognate",
+      "note": "Syriac root pgʿ, the verb “meet”. The Peshitta New Testament's uses are given as a word of the entry.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2451 IGE (meet), root 1448 IGE"
+        }
+      ]
+    },
+    {
+      "id": "ar-fajaa",
+      "lang": "ar",
+      "form": "فَجَعَ",
+      "translit": "fajaʿa",
+      "gloss": "pain, afflict (by a loss); فَجِيعَة, a calamity",
+      "relation": "possible",
+      "note": "The sounds answer regularly (p : f, g : j, ʿ : ʿ), but the meaning is narrower: Arabic has only the affliction that strikes a man, “It pained him; afflicted, or distressed, him”, and فَجِيعَة “an affliction, a calamity, or a misfortune”, nothing of meeting or entreating. It may answer to פֶּגַע רָע, the evil that befalls, and the verb's striking; it is left possible.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2342, art. فجع",
+          "note": "فَجَعَهُ “It pained him; afflicted, or distressed, him”; فَجِيعَةٌ “an affliction, a calamity, or a misfortune”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "intercession",
+      "statement": "The one verb names both what came upon Isaiah's servant and what he does for others. Yahweh “made meet upon him (הִפְגִּיעַ בּוֹ) the iniquity of us all” (Isa 53:6); he “bore the sin of many, and for the transgressors he interposes (יַפְגִּיעַ)” (53:12). Isaiah 59:16 says why such a one was needed: Yahweh “saw that there was no man, and wondered that there was no interposer (מַפְגִּיעַ); so his own arm brought salvation”, and the servant is the one to whom “the arm of Yahweh” is revealed (53:1). Jesus applied Isa 53:12 to himself (Luk 22:37); Peter applies Isa 53:6 and 53:12 to him (1Pe 2:24–25); and he now lives “to make intercession” for those who come to God by him (Heb 7:25; Rom 8:34). So the interposer whom no man could be is the man Yahweh provided by his own arm: he bore the iniquity laid on him, and on that ground pleads for transgressors.",
+      "evidence": [
+        {
+          "ref": "Isa.53.6",
+          "role": "defining"
+        },
+        {
+          "ref": "Isa.53.12",
+          "role": "defining"
+        },
+        {
+          "ref": "Isa.59.16",
+          "role": "defining"
+        },
+        {
+          "ref": "Isa.53.1"
+        },
+        {
+          "ref": "Luk.22.37"
+        },
+        {
+          "ref": "1Pe.2.24"
+        },
+        {
+          "ref": "1Pe.2.25"
+        },
+        {
+          "ref": "Heb.7.25"
+        },
+        {
+          "ref": "Rom.8.34"
+        }
+      ]
+    }
+  ],
+  "note": "BDB's m.da.aw (מִפְגָּע, “see פגע”) is a cross-reference with no tokens and is not claimed. The meeting, striking and entreating senses are one verb: in each one person comes up against another (Num 35:19 joins meeting and killing). Arabic فجأ “come upon suddenly” looks close in sense, but its third radical is ʾ, not ʿ, so it is not recorded; Arabic فجع is left possible. Hebrew פָּגַשׁ “meet” may be a related root; the Targum renders it by פְּגַע (Prov 17:12). Isa 47:3 and Job 36:32 are hard and their senses here provisional. The Peshitta New Testament verses were found through SEDRA lexeme 2451; the Peshitta Old Testament was not checked."
+}
