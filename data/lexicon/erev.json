@@ -1,0 +1,2741 @@
+{
+  "id": "erev",
+  "root": "ערב",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "time",
+    "evening",
+    "day",
+    "creation",
+    "feasts",
+    "passover",
+    "sacrifice",
+    "direction",
+    "pledge",
+    "surety",
+    "separation",
+    "desert",
+    "trees",
+    "birds"
+  ],
+  "gloss": "evening, sunset, west; pledge, be surety; mingle, mixture; desert plain; willow; raven; be pleasing",
+  "summary": "עֶרֶב is evening, the time the sun “goes in” (Deu 16:6; 1Ki 22:35 beside 2Ch 18:34): the close of the day and, in Israel’s reckoning, its start, “there was evening and there was morning, one day” (Gen 1:5), “from evening to evening you shall keep your sabbath” (Lev 23:32); with it go the verb “become evening” and מַעֲרָב, the quarter where the sun sets, the west. The same spelling is to stand surety, to pledge oneself for another, as Judah for Benjamin (Gen 43:9), with עֵרָבוֹן the pledge (Gen 38:17), which Greek borrowed as the ἀρραβών of the Spirit (2Co 1:22); and in the hithpael to mingle (Ezr 9:2), with עֵרֶב a mixed company (Exo 12:38) and the woof of a weave. It also names the Arabah, the desert plain of the Jordan rift, the willow of the feast of booths (Lev 23:40), the raven, and being pleasing. The cognates show at least two older roots behind the one spelling: Arabic ġ in ġaraba “set (of the sun)”, ġurāb “raven” and ġarab “willow”, Sabaean ʿ in ʿrb “pledge, hostage”; but Ugaritic and Sabaean also write ʿ for “enter, (of the sun) set”, beside Akkadian erēbu “enter”, so the split runs through the evening words themselves.",
+  "words": [
+    {
+      "lemma": "עֶרֶב",
+      "bdb": [
+        "p.ff.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "evening, sunset; (dual) “between the evenings”",
+      "summary": "The time when the sun goes in, the end of the day’s light: the hour of rest from work, of the evening sacrifice and the lamps, of uncleanness ending, and the point at which Israel’s day and feasts begin. The dual בֵּין הָעַרְבַּיִם, “between the evenings”, fixes the time of the Passover, the second daily lamb and the lighting of the lamps.",
+      "cognate_ids": [
+        "ar-gharaba",
+        "akk-erebu",
+        "uga-arb",
+        "sab-marb",
+        "arc-arab-set",
+        "gez-arb"
+      ],
+      "senses": [
+        {
+          "id": "erev-evening",
+          "gloss": "evening, sunset",
+          "definition": "The end of the day, when the sun goes in: the time set against morning, when work ends and night comes on.",
+          "evidence": [
+            {
+              "ref": "Deu.16.6",
+              "role": "defining",
+              "note": "Sacrifice the Passover “in the evening, as the sun goes in (כְּבוֹא הַשֶּׁמֶשׁ)”."
+            },
+            {
+              "ref": "1Ki.22.35",
+              "role": "defining",
+              "note": "Ahab “died in the evening”; the parallel in 2Ch 18:34 has “at the time of the going in of the sun”."
+            },
+            {
+              "ref": "2Ch.18.34",
+              "role": "defining",
+              "note": "He stood propped up “until the evening, and died at the time of the going in of the sun”."
+            },
+            {
+              "ref": "Jer.6.4",
+              "role": "defining",
+              "note": "“The day turns, the shadows of evening are stretched out.”"
+            },
+            {
+              "ref": "Jos.8.29",
+              "note": "Hanged “until the time of evening; and as the sun went in” he was taken down."
+            },
+            {
+              "ref": "Gen.24.63",
+              "note": "Isaac went out to meditate in the field “at the turning of evening”."
+            },
+            {
+              "ref": "Gen.8.11",
+              "note": "The dove came back “at the time of evening” with an olive leaf."
+            },
+            {
+              "ref": "Gen.24.11",
+              "note": "“At the time of evening, the time the women go out to draw water.”"
+            },
+            {
+              "ref": "Psa.104.23",
+              "role": "defining",
+              "note": "“Man goes out to his work and to his labour until evening.”"
+            },
+            {
+              "ref": "Rut.2.17",
+              "note": "Ruth gleaned in the field until the evening."
+            },
+            {
+              "ref": "Jdg.19.16",
+              "note": "An old man coming in from his work in the field in the evening."
+            },
+            {
+              "ref": "Exo.18.13",
+              "note": "The people stood about Moses from morning until evening."
+            },
+            {
+              "ref": "Exo.16.13",
+              "note": "In the evening the quail came up; in the morning the dew lay round the camp."
+            },
+            {
+              "ref": "1Ki.17.6",
+              "note": "Bread and meat in the morning, bread and meat in the evening."
+            },
+            {
+              "ref": "Pro.7.9",
+              "note": "“In the twilight, in the evening of the day, in the black of night and darkness.”"
+            },
+            {
+              "ref": "Psa.59.7",
+              "note": "“They return at evening, they growl like a dog.”"
+            },
+            {
+              "ref": "Ezk.12.4",
+              "note": "Ezekiel goes out in the evening like those going into exile."
+            },
+            {
+              "ref": "Ezk.24.18",
+              "note": "“I spoke to the people in the morning, and in the evening my wife died.”"
+            },
+            {
+              "ref": "Est.2.14",
+              "note": "“In the evening she went, and in the morning she returned.”"
+            },
+            {
+              "ref": "Psa.55.18",
+              "note": "“Evening and morning and noon I will complain.”"
+            },
+            {
+              "ref": "Job.7.4",
+              "note": "“When shall I arise? But the evening is drawn out”: the long hours of night."
+            },
+            {
+              "ref": "Gen.49.27",
+              "note": "Benjamin a wolf: in the morning he devours the prey, in the evening divides the spoil."
+            }
+          ]
+        },
+        {
+          "id": "erev-day",
+          "gloss": "evening as a day’s beginning",
+          "definition": "Evening named first with morning to make up one day: the days of creation, the reckoning of Israel’s sabbaths and feasts from evening to evening, and the “evening and morning” of Daniel’s vision.",
+          "evidence": [
+            {
+              "ref": "Gen.1.5",
+              "role": "defining",
+              "note": "“There was evening and there was morning, one day.”"
+            },
+            {
+              "ref": "Gen.1.8"
+            },
+            {
+              "ref": "Gen.1.13"
+            },
+            {
+              "ref": "Gen.1.19"
+            },
+            {
+              "ref": "Gen.1.23"
+            },
+            {
+              "ref": "Gen.1.31",
+              "note": "“… the sixth day.”"
+            },
+            {
+              "ref": "Lev.23.32",
+              "role": "defining",
+              "note": "The day of the coverings: “on the ninth of the month in the evening, from evening to evening, you shall keep your sabbath.”"
+            },
+            {
+              "ref": "Exo.12.18",
+              "role": "defining",
+              "note": "Unleavened bread “on the fourteenth day of the month in the evening … until the twenty-first day of the month in the evening”."
+            },
+            {
+              "ref": "Exo.27.21",
+              "note": "The lamp is set in order “from evening to morning”."
+            },
+            {
+              "ref": "Lev.24.3"
+            },
+            {
+              "ref": "Num.9.15",
+              "note": "The cloud over the dwelling was “in the evening … like fire until morning”."
+            },
+            {
+              "ref": "Dan.8.14",
+              "note": "“Until evening, morning, two thousand three hundred; then the holy place will be set right.”"
+            },
+            {
+              "ref": "Dan.8.26",
+              "note": "“The vision of the evening and the morning which was told is true.”"
+            }
+          ]
+        },
+        {
+          "id": "erev-between",
+          "gloss": "“between the evenings”",
+          "definition": "The dual with בֵּין, the time at which the Passover lamb is killed, the second daily lamb offered and the lamps lit: the evening of the day, as Deuteronomy restates it “in the evening, as the sun goes in”.",
+          "evidence": [
+            {
+              "ref": "Exo.12.6",
+              "role": "defining",
+              "note": "The congregation kills the Passover lamb on the fourteenth “between the evenings”."
+            },
+            {
+              "ref": "Lev.23.5",
+              "role": "defining",
+              "note": "“On the fourteenth of the month between the evenings is Yahweh’s Passover.”"
+            },
+            {
+              "ref": "Num.9.3"
+            },
+            {
+              "ref": "Num.9.5"
+            },
+            {
+              "ref": "Num.9.11"
+            },
+            {
+              "ref": "Exo.16.12",
+              "role": "defining",
+              "note": "“Between the evenings you shall eat flesh, and in the morning bread”; the next verse has the quail come “in the evening”."
+            },
+            {
+              "ref": "Exo.29.39",
+              "note": "One lamb in the morning, the second “between the evenings”."
+            },
+            {
+              "ref": "Exo.29.41"
+            },
+            {
+              "ref": "Num.28.4"
+            },
+            {
+              "ref": "Num.28.8"
+            },
+            {
+              "ref": "Exo.30.8",
+              "note": "When Aaron lights the lamps between the evenings he burns the incense."
+            },
+            {
+              "ref": "Jos.5.10",
+              "note": "At Gilgal Israel kept the Passover on the fourteenth “in the evening” in the plains of Jericho."
+            }
+          ]
+        },
+        {
+          "id": "erev-until",
+          "gloss": "“until the evening”: the end of a day’s state",
+          "definition": "The evening as the point at which uncleanness ends, a fast is broken, or the hanged are taken down: what lasts “until the evening” lasts the rest of that day.",
+          "evidence": [
+            {
+              "ref": "Lev.22.6",
+              "role": "defining",
+              "note": "Unclean until the evening; “and the sun goes in, and he is clean” (Lev 22:7)."
+            },
+            {
+              "ref": "Lev.22.7"
+            },
+            {
+              "ref": "Lev.11.24"
+            },
+            {
+              "ref": "Lev.11.40"
+            },
+            {
+              "ref": "Lev.15.5"
+            },
+            {
+              "ref": "Lev.17.15"
+            },
+            {
+              "ref": "Num.19.19",
+              "note": "He washes his clothes and bathes, “and is clean at evening”."
+            },
+            {
+              "ref": "Num.19.22"
+            },
+            {
+              "ref": "Deu.23.12",
+              "note": "“At the turning of evening he shall bathe in water, and when the sun goes in he may come into the camp.”"
+            },
+            {
+              "ref": "Jdg.20.26",
+              "note": "They fasted that day until the evening."
+            },
+            {
+              "ref": "2Sa.1.12",
+              "note": "They mourned and wept and fasted until the evening for Saul and Jonathan."
+            },
+            {
+              "ref": "1Sa.14.24",
+              "note": "“Cursed is the man who eats food until the evening.”"
+            },
+            {
+              "ref": "Jos.10.26",
+              "note": "The five kings hung on the trees until the evening; “at the time of the going in of the sun” they were taken down (Jos 10:27)."
+            },
+            {
+              "ref": "Jos.7.6"
+            }
+          ]
+        },
+        {
+          "id": "erev-offering",
+          "gloss": "the evening offering",
+          "definition": "The offering made at evening with the morning offering, every day; its hour was a set time of prayer.",
+          "evidence": [
+            {
+              "ref": "2Ki.16.15",
+              "role": "defining",
+              "note": "“The burnt offering of the morning and the grain offering of the evening.”"
+            },
+            {
+              "ref": "Ezr.9.4",
+              "note": "Ezra sat appalled “until the evening offering”."
+            },
+            {
+              "ref": "Ezr.9.5",
+              "note": "At the evening offering he rose, knelt and spread out his hands to Yahweh."
+            },
+            {
+              "ref": "Psa.141.2",
+              "role": "defining",
+              "note": "“Let my prayer be set before you as incense, the lifting up of my hands as the evening offering.”"
+            },
+            {
+              "ref": "Dan.9.21",
+              "note": "Gabriel came “about the time of the evening offering” while Daniel prayed."
+            },
+            {
+              "ref": "Ezr.3.3",
+              "note": "Burnt offerings “morning and evening”."
+            },
+            {
+              "ref": "1Ch.16.40"
+            },
+            {
+              "ref": "2Ch.13.11",
+              "note": "Burnt offerings “every morning and every evening”, and the lampstand lit “every evening”."
+            },
+            {
+              "ref": "2Ch.2.3"
+            },
+            {
+              "ref": "2Ch.31.3"
+            }
+          ]
+        },
+        {
+          "id": "erev-figure",
+          "gloss": "evening as decline, the time of trouble",
+          "definition": "Evening set against morning as the time when things wither, weeping lodges, terror comes, and predators hunt; and, in promise, the evening that ends in light.",
+          "evidence": [
+            {
+              "ref": "Psa.30.6",
+              "role": "defining",
+              "note": "“Weeping may lodge in the evening, but in the morning a shout of joy.”"
+            },
+            {
+              "ref": "Psa.90.6",
+              "role": "defining",
+              "note": "“In the morning it flourishes … in the evening it is cut down and withers.”"
+            },
+            {
+              "ref": "Isa.17.14",
+              "note": "“At the time of evening, behold, terror; before morning he is not.”"
+            },
+            {
+              "ref": "Hab.1.8",
+              "note": "The Chaldeans’ horses are keener than “wolves of the evening”."
+            },
+            {
+              "ref": "Zep.3.3",
+              "note": "Jerusalem’s judges are “wolves of the evening; they leave nothing for the morning”."
+            },
+            {
+              "ref": "Job.4.20",
+              "note": "“From morning to evening they are crushed.”"
+            },
+            {
+              "ref": "Deu.28.67",
+              "note": "“In the morning you will say, Would it were evening! and in the evening, Would it were morning!”"
+            },
+            {
+              "ref": "Ecc.11.6",
+              "note": "“In the morning sow your seed, and in the evening do not hold back your hand.”"
+            },
+            {
+              "ref": "Zec.14.7",
+              "role": "defining",
+              "note": "“One day … not day and not night; and at the time of evening there will be light.”"
+            },
+            {
+              "ref": "Psa.65.9",
+              "note": "“You make the goings out of the morning and the evening shout for joy.”"
+            },
+            {
+              "ref": "Zep.2.7",
+              "note": "The remnant of Judah will lie down in Ashkelon’s houses in the evening."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἑσπέρα",
+          "gloss": "evening",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עֶרֶב → ἑσπέρα ×103 (lemma count, MACULA alignment); Gen.1.5, עֶרֶב → ἑσπέρα"
+            },
+            {
+              "ref": "Luk.24.29",
+              "note": "“Stay with us, for it is toward evening, and the day has declined.”"
+            },
+            {
+              "ref": "Act.4.3",
+              "note": "Put in custody until the next day, “for it was already evening”."
+            },
+            {
+              "ref": "Act.28.23",
+              "note": "Paul reasoned “from morning until evening”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בּוֹא",
+            "note": "The sun’s “going in” (בּוֹא הַשֶּׁמֶשׁ) stands beside or for evening: what the Passover, the end of uncleanness and Ahab’s death are timed by.",
+            "evidence": [
+              {
+                "ref": "Deu.16.6"
+              },
+              {
+                "ref": "Lev.22.7"
+              },
+              {
+                "ref": "Deu.23.12"
+              },
+              {
+                "ref": "Jos.8.29"
+              },
+              {
+                "ref": "2Ch.18.34"
+              }
+            ]
+          },
+          {
+            "lemma": "נֶשֶׁף",
+            "note": "Twilight, beside “the evening of the day” and the black of night.",
+            "evidence": [
+              {
+                "ref": "Pro.7.9"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בֹּקֶר",
+            "note": "Morning, the pair that makes up the day and the bounds of daily work and worship.",
+            "evidence": [
+              {
+                "ref": "Gen.1.5"
+              },
+              {
+                "ref": "Psa.30.6"
+              },
+              {
+                "ref": "Psa.90.6"
+              },
+              {
+                "ref": "Deu.28.67"
+              },
+              {
+                "ref": "Ecc.11.6"
+              },
+              {
+                "ref": "Exo.16.8"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַיְהִי עֶרֶב וַיְהִי בֹקֶר",
+            "gloss": "and there was evening and there was morning",
+            "evidence": [
+              {
+                "ref": "Gen.1.5"
+              },
+              {
+                "ref": "Gen.1.31"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּין הָעַרְבַּיִם",
+            "gloss": "between the evenings",
+            "evidence": [
+              {
+                "ref": "Exo.12.6"
+              },
+              {
+                "ref": "Lev.23.5"
+              },
+              {
+                "ref": "Exo.29.39"
+              }
+            ]
+          },
+          {
+            "phrase": "מֵעֶרֶב עַד עֶרֶב",
+            "gloss": "from evening to evening",
+            "evidence": [
+              {
+                "ref": "Lev.23.32"
+              }
+            ]
+          },
+          {
+            "phrase": "עַד הָעָרֶב",
+            "gloss": "until the evening",
+            "evidence": [
+              {
+                "ref": "Lev.11.24"
+              },
+              {
+                "ref": "Lev.22.6"
+              },
+              {
+                "ref": "Jdg.20.26"
+              }
+            ]
+          },
+          {
+            "phrase": "לְעֵת עֶרֶב",
+            "gloss": "at the time of evening",
+            "evidence": [
+              {
+                "ref": "Gen.8.11"
+              },
+              {
+                "ref": "Gen.24.11"
+              },
+              {
+                "ref": "Isa.17.14"
+              },
+              {
+                "ref": "Zec.14.7"
+              }
+            ]
+          },
+          {
+            "phrase": "לִפְנוֹת עֶרֶב",
+            "gloss": "at the turning of evening",
+            "evidence": [
+              {
+                "ref": "Gen.24.63"
+              },
+              {
+                "ref": "Deu.23.12"
+              }
+            ]
+          },
+          {
+            "phrase": "מִנְחַת הָעֶרֶב",
+            "gloss": "the evening offering",
+            "evidence": [
+              {
+                "ref": "2Ki.16.15"
+              },
+              {
+                "ref": "Ezr.9.4"
+              },
+              {
+                "ref": "Psa.141.2"
+              },
+              {
+                "ref": "Dan.9.21"
+              }
+            ]
+          },
+          {
+            "phrase": "זְאֵבֵי עֶרֶב",
+            "gloss": "wolves of the evening",
+            "evidence": [
+              {
+                "ref": "Hab.1.8"
+              },
+              {
+                "ref": "Zep.3.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֲרָבָה",
+      "bdb": [
+        "p.fe.af"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "desert plain, steppe; the Arabah, the Jordan rift",
+      "summary": "Dry open country, set beside wilderness and parched land; with the article, the Arabah, the deep rift of the Jordan and the Salt Sea (“the Sea of the Arabah”), and in the plural the plains of Moab and of Jericho where Israel camped before crossing. How it connects with the root’s other senses is not clear: no cognate yet followed has this meaning, so the root’s cognates count against it.",
+      "senses": [
+        {
+          "gloss": "desert plain, steppe",
+          "definition": "Arid, uninhabited open land, named with wilderness and dry land, the home of the wild ass and the desert wolf; and, in promise, the desert that will blossom.",
+          "evidence": [
+            {
+              "ref": "Jer.2.6",
+              "role": "defining",
+              "note": "“In the wilderness, in a land of עֲרָבָה and pits, a land of drought … that no man passes through.”"
+            },
+            {
+              "ref": "Jer.17.6",
+              "role": "defining",
+              "note": "Like a shrub in the עֲרָבָה, dwelling in the parched places of the wilderness, a salt land not inhabited."
+            },
+            {
+              "ref": "Jer.51.43",
+              "note": "Babylon’s cities “a land of drought and an עֲרָבָה, a land where no man dwells”."
+            },
+            {
+              "ref": "Jer.50.12"
+            },
+            {
+              "ref": "Job.39.6",
+              "role": "defining",
+              "note": "The wild ass, “whose house I have made the עֲרָבָה, and his dwellings the salt land”."
+            },
+            {
+              "ref": "Job.24.5"
+            },
+            {
+              "ref": "Jer.5.6",
+              "note": "“A wolf of the deserts (עֲרָבוֹת) will destroy them.”"
+            },
+            {
+              "ref": "Isa.33.9",
+              "note": "“Sharon has become like the עֲרָבָה.”"
+            },
+            {
+              "ref": "Isa.35.1",
+              "role": "defining",
+              "note": "“The wilderness and the dry land will be glad, and the עֲרָבָה will rejoice and blossom like the crocus.”"
+            },
+            {
+              "ref": "Isa.35.6",
+              "note": "Streams in the עֲרָבָה."
+            },
+            {
+              "ref": "Isa.41.19",
+              "note": "Cypress, plane and box tree set in the עֲרָבָה."
+            },
+            {
+              "ref": "Isa.51.3",
+              "note": "Her wilderness like Eden, “and her עֲרָבָה like the garden of Yahweh”."
+            },
+            {
+              "ref": "Isa.40.3",
+              "role": "defining",
+              "note": "“In the wilderness prepare the way of Yahweh; make straight in the עֲרָבָה a highway for our God.”"
+            },
+            {
+              "ref": "Mat.3.3",
+              "note": "Isa 40:3 quoted of John, who preached in the wilderness of Judea and baptized in the Jordan (Mat 3:1, 6), in the Jordan’s rift itself."
+            },
+            {
+              "ref": "Luk.3.4",
+              "to": "Luk.3.5"
+            },
+            {
+              "ref": "Psa.68.5",
+              "note": "“Lift up a song to him who rides through the עֲרָבוֹת”; Psa 68:8 has him march “through the wilderness”."
+            },
+            {
+              "ref": "2Sa.15.28",
+              "note": "David waits “at the עַרְבוֹת of the wilderness”, before crossing the Jordan."
+            },
+            {
+              "ref": "2Sa.17.16"
+            }
+          ]
+        },
+        {
+          "gloss": "the Arabah, the Jordan rift",
+          "definition": "With the article, the deep valley of the Jordan running south through the Salt Sea, “the Sea of the Arabah”, named as one of the land’s regions beside hill country, lowland and Negev; in the plural, the plains of Moab and of Jericho on either side of the river.",
+          "evidence": [
+            {
+              "ref": "Deu.3.17",
+              "role": "defining",
+              "note": "“The Arabah, and the Jordan as a border, from Chinnereth to the Sea of the Arabah, the Salt Sea.”"
+            },
+            {
+              "ref": "Deu.4.49"
+            },
+            {
+              "ref": "Jos.12.3",
+              "note": "“The Arabah to the sea of Chinneroth eastward, and to the Sea of the Arabah, the Salt Sea.”"
+            },
+            {
+              "ref": "Jos.3.16",
+              "note": "The waters going down to “the Sea of the Arabah, the Salt Sea” were cut off at the crossing."
+            },
+            {
+              "ref": "2Ki.14.25",
+              "note": "Israel’s border restored “from the entrance of Hamath to the Sea of the Arabah”."
+            },
+            {
+              "ref": "Amo.6.14"
+            },
+            {
+              "ref": "Deu.1.1",
+              "note": "Moses spoke these words “across the Jordan, in the wilderness, in the Arabah”."
+            },
+            {
+              "ref": "Deu.1.7",
+              "role": "defining",
+              "note": "The Amorites’ neighbours “in the Arabah, in the hill country, in the lowland, in the Negev and by the seashore”."
+            },
+            {
+              "ref": "Jos.11.16"
+            },
+            {
+              "ref": "Jos.12.8"
+            },
+            {
+              "ref": "Deu.2.8"
+            },
+            {
+              "ref": "Deu.11.30"
+            },
+            {
+              "ref": "1Sa.23.24"
+            },
+            {
+              "ref": "2Sa.2.29",
+              "note": "Abner went all night through the Arabah and crossed the Jordan."
+            },
+            {
+              "ref": "2Sa.4.7"
+            },
+            {
+              "ref": "2Ki.25.4",
+              "note": "Zedekiah fled by night “the way of the Arabah”."
+            },
+            {
+              "ref": "Ezk.47.8",
+              "note": "The waters from the house go down into the Arabah and enter the sea, and its waters are healed."
+            },
+            {
+              "ref": "Zec.14.10",
+              "note": "“All the land will be turned like the Arabah, from Geba to Rimmon”, and Jerusalem raised up."
+            },
+            {
+              "ref": "Num.22.1",
+              "role": "defining",
+              "note": "Israel camped “in the עַרְבוֹת of Moab, across the Jordan at Jericho”."
+            },
+            {
+              "ref": "Num.33.48"
+            },
+            {
+              "ref": "Num.36.13",
+              "note": "The commandments Yahweh gave “in the plains of Moab by the Jordan at Jericho”."
+            },
+            {
+              "ref": "Deu.34.1",
+              "note": "Moses went up from the plains of Moab to Nebo."
+            },
+            {
+              "ref": "Deu.34.8"
+            },
+            {
+              "ref": "Jos.4.13",
+              "note": "Forty thousand crossed over “to the plains of Jericho”."
+            },
+            {
+              "ref": "Jos.5.10"
+            },
+            {
+              "ref": "2Ki.25.5",
+              "note": "The Chaldeans overtook Zedekiah “in the plains of Jericho”."
+            },
+            {
+              "ref": "Jer.52.8"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִדְבָּר",
+            "note": "Wilderness, the usual partner.",
+            "evidence": [
+              {
+                "ref": "Isa.35.1"
+              },
+              {
+                "ref": "Isa.40.3"
+              },
+              {
+                "ref": "Isa.41.19"
+              },
+              {
+                "ref": "Jer.2.6"
+              },
+              {
+                "ref": "Jer.17.6"
+              }
+            ]
+          },
+          {
+            "lemma": "צִיָּה",
+            "note": "Dry land, drought.",
+            "evidence": [
+              {
+                "ref": "Isa.35.1"
+              },
+              {
+                "ref": "Jer.51.43"
+              },
+              {
+                "ref": "Jer.50.12"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "גַּן יַהְוֶה",
+            "note": "The desert plain made like the garden of Yahweh, as the wilderness like Eden.",
+            "evidence": [
+              {
+                "ref": "Isa.51.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יָם הָעֲרָבָה",
+            "gloss": "the Sea of the Arabah, the Salt Sea",
+            "evidence": [
+              {
+                "ref": "Deu.3.17"
+              },
+              {
+                "ref": "Jos.3.16"
+              },
+              {
+                "ref": "2Ki.14.25"
+              }
+            ]
+          },
+          {
+            "phrase": "עַרְבוֹת מוֹאָב",
+            "gloss": "the plains of Moab",
+            "evidence": [
+              {
+                "ref": "Num.22.1"
+              },
+              {
+                "ref": "Num.36.13"
+              },
+              {
+                "ref": "Deu.34.1"
+              }
+            ]
+          },
+          {
+            "phrase": "עַרְבוֹת יְרִיחוֹ",
+            "gloss": "the plains of Jericho",
+            "evidence": [
+              {
+                "ref": "Jos.4.13"
+              },
+              {
+                "ref": "Jos.5.10"
+              },
+              {
+                "ref": "2Ki.25.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָרַב",
+      "bdb": [
+        "p.fc.aa"
+      ],
+      "pos": "verb",
+      "gloss": "stand surety, pledge; exchange; (hithpael) make a wager; mingle, have dealings with",
+      "summary": "To pledge oneself or one’s goods for another, to become answerable for him or his debt, and so to give in pledge or in exchange; in the hithpael, to exchange pledges with someone (a wager), and to mix oneself with others. The two hithpael senses may be one older verb or two: Sabaean and Phoenician share the pledge, Aramaic the mixing.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "stand surety for; pledge, mortgage; give in exchange",
+          "cognate_ids": [
+            "sab-arb",
+            "phn-arb",
+            "arc-arab-surety"
+          ],
+          "senses": [
+            {
+              "id": "arav-surety",
+              "gloss": "be surety for someone",
+              "definition": "To make oneself answerable for another, so that he may be required at one’s hand; the one who does it pays with his own person or goods if the other fails.",
+              "evidence": [
+                {
+                  "ref": "Gen.43.9",
+                  "role": "defining",
+                  "note": "Judah: “I will be surety for him; from my hand you shall require him. If I do not bring him back … I will bear the blame for ever.”"
+                },
+                {
+                  "ref": "Gen.44.32",
+                  "role": "defining",
+                  "note": "“Your servant became surety for the boy”, and so offers to stay as a slave in his place (Gen 44:33)."
+                },
+                {
+                  "ref": "Psa.119.122",
+                  "role": "defining",
+                  "note": "“Be surety for your servant for good; let not the proud oppress me.”"
+                },
+                {
+                  "ref": "Isa.38.14",
+                  "note": "Hezekiah: “O Lord, I am oppressed; be surety for me.”"
+                },
+                {
+                  "ref": "Job.17.3",
+                  "note": "“Lay down a pledge, be surety for me with yourself; who is there who will strike hands with me?”"
+                },
+                {
+                  "ref": "Pro.6.1",
+                  "role": "defining",
+                  "note": "“My son, if you have become surety for your neighbour, if you have struck your hands for a stranger …”"
+                },
+                {
+                  "ref": "Pro.11.15",
+                  "note": "“He who is surety for a stranger will smart for it.”"
+                },
+                {
+                  "ref": "Pro.17.18",
+                  "note": "“A man lacking sense strikes hands, pledging a pledge before his neighbour.”"
+                },
+                {
+                  "ref": "Pro.20.16",
+                  "note": "“Take his garment, for he has become surety for a stranger.”"
+                },
+                {
+                  "ref": "Pro.27.13"
+                },
+                {
+                  "ref": "Pro.22.26",
+                  "note": "“Do not be among those who strike hands, who are sureties for debts.”"
+                }
+              ]
+            },
+            {
+              "gloss": "pledge (one’s goods, one’s heart)",
+              "definition": "To put something in pledge as security: fields and houses for grain, or one’s own heart, staked on drawing near to Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Neh.5.3",
+                  "role": "defining",
+                  "note": "“We are pledging our fields, our vineyards and our houses, that we may get grain in the famine.”"
+                },
+                {
+                  "ref": "Jer.30.21",
+                  "role": "defining",
+                  "note": "Of the ruler who comes from Israel’s midst: “I will bring him near and he shall approach me; for who is he who has pledged his heart to approach me?”"
+                }
+              ]
+            },
+            {
+              "id": "arav-exchange",
+              "gloss": "exchange, trade",
+              "definition": "To give goods in exchange for others, as Tyre’s sailors traded her wares.",
+              "evidence": [
+                {
+                  "ref": "Ezk.27.9",
+                  "role": "defining",
+                  "note": "All the ships and their sailors were in Tyre “to exchange your merchandise (לַעֲרֹב מַעֲרָבֵךְ)”."
+                },
+                {
+                  "ref": "Ezk.27.27",
+                  "note": "“Those who exchange your merchandise” fall with her."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "make a wager; mingle with, have dealings with",
+          "senses": [
+            {
+              "gloss": "exchange pledges, make a wager",
+              "definition": "To pledge with another on a condition: the Rabshakeh’s taunt that Hezekiah stake a bet with the king of Assyria.",
+              "cognate_ids": [
+                "sab-arb",
+                "arc-arab-surety"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Ki.18.23",
+                  "role": "defining",
+                  "note": "“Make a pledge with my master the king of Assyria: I will give you two thousand horses, if you are able to set riders on them.”"
+                },
+                {
+                  "ref": "Isa.36.8"
+                }
+              ]
+            },
+            {
+              "id": "arav-mingle",
+              "gloss": "mingle with, have dealings with",
+              "definition": "To mix oneself with others, to share in their ways or their joy, to keep company with them; of Israel mixing with the nations and the holy seed with the peoples of the lands.",
+              "cognate_ids": [
+                "arc-arab-mix"
+              ],
+              "kin": [
+                "erev-mixed",
+                "arac-mix"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.106.35",
+                  "role": "defining",
+                  "note": "“They mingled with the nations and learned their works.”"
+                },
+                {
+                  "ref": "Ezr.9.2",
+                  "role": "defining",
+                  "note": "“They have taken of their daughters … and the holy seed has mixed itself with the peoples of the lands.”"
+                },
+                {
+                  "ref": "Pro.14.10",
+                  "note": "“The heart knows its own bitterness, and a stranger does not share in its joy.”"
+                },
+                {
+                  "ref": "Pro.20.19",
+                  "note": "“Do not mix with one who opens wide his lips.”"
+                },
+                {
+                  "ref": "Pro.24.21",
+                  "note": "“Fear Yahweh and the king; do not mix with those given to change.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תָּקַע כַּף",
+            "note": "Striking hands, the gesture that seals the surety.",
+            "evidence": [
+              {
+                "ref": "Pro.6.1"
+              },
+              {
+                "ref": "Pro.17.18"
+              },
+              {
+                "ref": "Pro.22.26"
+              },
+              {
+                "ref": "Job.17.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָרַב זָר",
+            "gloss": "be surety for a stranger",
+            "evidence": [
+              {
+                "ref": "Pro.11.15"
+              },
+              {
+                "ref": "Pro.20.16"
+              },
+              {
+                "ref": "Pro.27.13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֵרֶב",
+      "bdb": [
+        "p.fb.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "mixed company, people of mixed descent",
+      "summary": "A body of people of other stock joined to a nation: the company that went up out of Egypt with Israel, the foreigners separated from Israel under Nehemiah, and the mixed peoples in Egypt, Babylon and Arabia. Its spelling is that of עֶרֶב “evening”, so the brief counts evening’s tokens here too; the verses below are this word’s.",
+      "cognate_ids": [
+        "arc-arab-mix"
+      ],
+      "senses": [
+        {
+          "id": "erev-mixed",
+          "gloss": "mixed company",
+          "definition": "People of other descent living among or attached to a nation, as distinct from the nation itself.",
+          "kin": [
+            "arav-mingle"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.12.38",
+              "role": "defining",
+              "note": "“And a great mixed company also went up with them.”"
+            },
+            {
+              "ref": "Neh.13.3",
+              "role": "defining",
+              "note": "Hearing that Ammonite and Moabite may not enter the assembly (Neh 13:1), “they separated all the mixed company from Israel”."
+            },
+            {
+              "ref": "Jer.25.20",
+              "note": "“All the mixed people” among the nations given the cup."
+            },
+            {
+              "ref": "Jer.25.24",
+              "note": "“All the kings of the mixed people who dwell in the wilderness.”"
+            },
+            {
+              "ref": "Jer.50.37",
+              "note": "A sword “against all the mixed people in her midst” in Babylon."
+            },
+            {
+              "ref": "Ezk.30.5",
+              "note": "Cush, Put, Lud “and all the mixed people” fall with Egypt."
+            },
+            {
+              "ref": "1Ki.10.15",
+              "note": "“All the kings of the עֶרֶב”; the parallel 2Ch 9:14 reads עֲרָב, Arabia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵרֶב",
+      "bdb": [
+        "p.fb.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "woof, weft",
+      "summary": "The cross threads of a woven fabric, always paired with שְׁתִי, the warp, in the law of a plague in a garment. The link to the root is probably the threads being worked in among the warp, as the hithpael “mingle” and the noun “mixed company” have it, but no cognate has yet been followed for it, so the root’s cognates count against it.",
+      "senses": [
+        {
+          "gloss": "woof",
+          "definition": "The threads that cross the warp in linen or wool, where a plague might appear apart from the rest of the garment.",
+          "evidence": [
+            {
+              "ref": "Lev.13.48",
+              "role": "defining",
+              "note": "“In the warp or in the woof, of linen or of wool.”"
+            },
+            {
+              "ref": "Lev.13.49"
+            },
+            {
+              "ref": "Lev.13.51"
+            },
+            {
+              "ref": "Lev.13.52"
+            },
+            {
+              "ref": "Lev.13.53"
+            },
+            {
+              "ref": "Lev.13.56"
+            },
+            {
+              "ref": "Lev.13.57"
+            },
+            {
+              "ref": "Lev.13.58"
+            },
+            {
+              "ref": "Lev.13.59",
+              "role": "defining",
+              "note": "“The law of the plague … in a garment of wool or linen, in the warp or the woof.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "שְׁתִי",
+            "note": "The warp, the lengthwise threads the woof crosses.",
+            "evidence": [
+              {
+                "ref": "Lev.13.48"
+              },
+              {
+                "ref": "Lev.13.59"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַעֲרָב",
+      "bdb": [
+        "p.ff.ad"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "west, the sun’s setting",
+      "summary": "The place where the sun sets, set against מִזְרָח, its rising: the west, and with the other quarters the whole earth from which Yahweh gathers his people and from which men fear his name.",
+      "cognate_ids": [
+        "ar-gharaba",
+        "akk-erebu",
+        "uga-arb",
+        "sab-marb",
+        "sab-grb",
+        "gez-arb"
+      ],
+      "senses": [
+        {
+          "id": "maarav-west",
+          "gloss": "west, sunset",
+          "definition": "The quarter of the sky and the land where the sun goes down; with “from the rising of the sun”, the whole breadth of the earth.",
+          "kin": [
+            "erev-evening"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.45.6",
+              "role": "defining",
+              "note": "“From the rising of the sun and from its setting (מִמַּעֲרָבָה), that there is none besides me.”"
+            },
+            {
+              "ref": "Psa.103.12",
+              "role": "defining",
+              "note": "“As far as the east is from the west, so far has he removed our transgressions from us.”"
+            },
+            {
+              "ref": "Isa.43.5",
+              "note": "“I will bring your seed from the east, and gather you from the west.”"
+            },
+            {
+              "ref": "Isa.59.19",
+              "note": "“They will fear the name of Yahweh from the west, and his glory from the rising of the sun.”"
+            },
+            {
+              "ref": "Psa.107.3",
+              "note": "Gathered “from the east and from the west, from the north and from the sea”."
+            },
+            {
+              "ref": "Psa.75.7",
+              "note": "“Not from the east nor from the west … comes lifting up.”"
+            },
+            {
+              "ref": "Dan.8.5",
+              "note": "The he-goat came “from the west over the face of the whole earth”."
+            },
+            {
+              "ref": "1Ch.7.28"
+            },
+            {
+              "ref": "1Ch.12.16"
+            },
+            {
+              "ref": "1Ch.26.16"
+            },
+            {
+              "ref": "1Ch.26.18"
+            },
+            {
+              "ref": "1Ch.26.30"
+            },
+            {
+              "ref": "2Ch.32.30",
+              "note": "Hezekiah brought the waters of Gihon down to the west side of the city of David."
+            },
+            {
+              "ref": "2Ch.33.14"
+            },
+            {
+              "ref": "Mat.8.11",
+              "note": "“Many will come from east and west and recline with Abraham, Isaac and Jacob in the kingdom”, as Psa 107:3 and Isa 43:5 gather them."
+            },
+            {
+              "ref": "Luk.13.29"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δυσμή",
+          "gloss": "setting (of the sun), west",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מַעֲרָב → δυσμή ×8 (lemma count, MACULA alignment); Psa.103.12, מִמַּעֲרָב → δυσμῶν"
+            },
+            {
+              "ref": "Mat.8.11"
+            },
+            {
+              "ref": "Luk.13.29"
+            },
+            {
+              "ref": "Mat.24.27",
+              "note": "“As the lightning comes from the east and shines to the west.”"
+            },
+            {
+              "ref": "Luk.12.54",
+              "note": "“When you see a cloud rising in the west.”"
+            },
+            {
+              "ref": "Rev.21.13",
+              "note": "Three gates on the west of the city."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מִזְרָח",
+            "note": "The rising of the sun, the east.",
+            "evidence": [
+              {
+                "ref": "Psa.103.12"
+              },
+              {
+                "ref": "Isa.43.5"
+              },
+              {
+                "ref": "Isa.45.6"
+              },
+              {
+                "ref": "Isa.59.19"
+              },
+              {
+                "ref": "Psa.107.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֹרֵב",
+      "bdb": [
+        "p.fg.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "raven, crow",
+      "summary": "The black carrion bird, unclean for Israel, which God feeds and which fed Elijah. Arabic ġurāb, Akkadian āribu and Syriac ʿurbā are the same bird; Arabic’s ġ is the same as in ġaraba “set (of the sun)”, but how the bird and the evening are connected, if they are, is not shown by any text.",
+      "cognate_ids": [
+        "ar-ghurab",
+        "akk-aribu",
+        "syc-urba"
+      ],
+      "senses": [
+        {
+          "gloss": "raven",
+          "definition": "A black bird of prey and carrion, of several kinds, that lives in waste places and is fed by God.",
+          "evidence": [
+            {
+              "ref": "Gen.8.7",
+              "role": "defining",
+              "note": "Noah sent out the raven, which went to and fro until the waters dried up."
+            },
+            {
+              "ref": "Lev.11.15",
+              "role": "defining",
+              "note": "“Every raven after its kind” among the unclean birds."
+            },
+            {
+              "ref": "Deu.14.14"
+            },
+            {
+              "ref": "1Ki.17.4",
+              "note": "“I have commanded the ravens to feed you there.”"
+            },
+            {
+              "ref": "1Ki.17.6"
+            },
+            {
+              "ref": "Job.38.41",
+              "role": "defining",
+              "note": "“Who provides for the raven its prey, when its young cry to God?”"
+            },
+            {
+              "ref": "Psa.147.9",
+              "note": "He gives food “to the young ravens which cry”."
+            },
+            {
+              "ref": "Luk.12.24",
+              "note": "“Consider the ravens … God feeds them.”"
+            },
+            {
+              "ref": "Pro.30.17",
+              "note": "“The ravens of the valley will pick out” the eye that mocks a father."
+            },
+            {
+              "ref": "Isa.34.11",
+              "note": "The owl and the raven will dwell in Edom’s ruins."
+            },
+            {
+              "ref": "Sng.5.11",
+              "role": "defining",
+              "note": "“His locks are wavy, black as a raven.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κόραξ",
+          "gloss": "raven",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עֹרֵב → κόραξ ×8 (MACULA alignment); Job.38.41, לָעֹרֵב → κόρακι"
+            },
+            {
+              "ref": "Luk.12.24",
+              "note": "Jesus’ “consider the ravens” takes up Job 38:41 and Psa 147:9."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָרֹב",
+      "bdb": [
+        "p.fb.ad"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "swarm (the fourth plague)",
+      "summary": "The swarm sent on Egypt in the fourth plague, which filled the houses and ruined the land but not Goshen; Psalm 105 sets it beside gnats. What creature it was, and how the word connects with the root, is not clear; no cognate has been found, so the root’s cognates count against it.",
+      "senses": [
+        {
+          "gloss": "swarm",
+          "definition": "A swarm of flying creatures sent by Yahweh to fill Egypt’s houses and ground and devour its people, kept from Goshen as a sign.",
+          "evidence": [
+            {
+              "ref": "Exo.8.17",
+              "role": "defining",
+              "note": "“I will send the swarm on you … and the houses of Egypt will be full of the swarm, and also the ground.”"
+            },
+            {
+              "ref": "Exo.8.18",
+              "note": "No swarm in the land of Goshen, “that you may know that I am Yahweh”."
+            },
+            {
+              "ref": "Exo.8.20"
+            },
+            {
+              "ref": "Exo.8.25"
+            },
+            {
+              "ref": "Exo.8.27"
+            },
+            {
+              "ref": "Psa.78.45",
+              "role": "defining",
+              "note": "“He sent among them a swarm, which devoured them.”"
+            },
+            {
+              "ref": "Psa.105.31",
+              "role": "defining",
+              "note": "“He spoke, and the swarm came, gnats in all their borders.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲרָב",
+      "bdb": [
+        "p.fc.ad"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "merchandise, goods given in exchange",
+      "summary": "Only in the lament over Tyre: the wares traded in and out of the city, what is given in exchange; the noun of the qal “exchange” (Ezk 27:9).",
+      "cognate_ids": [
+        "sab-arb",
+        "phn-arb"
+      ],
+      "senses": [
+        {
+          "gloss": "merchandise",
+          "definition": "Goods given and received in trade.",
+          "kin": [
+            "arav-exchange"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.27.9",
+              "role": "defining",
+              "note": "The sailors were in Tyre “to exchange your merchandise”."
+            },
+            {
+              "ref": "Ezk.27.13",
+              "role": "defining",
+              "note": "Javan, Tubal and Meshech “gave persons of men and vessels of bronze for your merchandise”."
+            },
+            {
+              "ref": "Ezk.27.17"
+            },
+            {
+              "ref": "Ezk.27.19"
+            },
+            {
+              "ref": "Ezk.27.25"
+            },
+            {
+              "ref": "Ezk.27.27"
+            },
+            {
+              "ref": "Ezk.27.33",
+              "note": "“With the abundance of your wealth and your merchandise you enriched the kings of the earth.”"
+            },
+            {
+              "ref": "Ezk.27.34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָרַב",
+      "bdb": [
+        "p.fd.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be pleasing, be sweet",
+      "summary": "To be pleasant to someone: an offering to Yahweh, sleep, a meditation, a desire fulfilled. How this connects with the root’s other senses is not clear: no cognate yet followed shares it, so the root’s cognates count against it. Hosea’s “their sacrifices will not be pleasing to him … it will not come into the house of Yahweh” (Hos 9:4) sets it beside an offering’s “coming in”, but that is not enough to tie it to ʿrb “enter”.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be pleasing, be sweet",
+          "senses": [
+            {
+              "id": "arav-pleasing",
+              "gloss": "be pleasing (to)",
+              "definition": "To be welcome and pleasant to someone; of offerings, to be accepted by Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Jer.6.20",
+                  "role": "defining",
+                  "note": "“Your burnt offerings are not for acceptance (לְרָצוֹן), nor are your sacrifices pleasing to me.”"
+                },
+                {
+                  "ref": "Mal.3.4",
+                  "role": "defining",
+                  "note": "“Then the offering of Judah and Jerusalem will be pleasing to Yahweh, as in the days of old.”"
+                },
+                {
+                  "ref": "Hos.9.4",
+                  "note": "“Their sacrifices will not be pleasing to him.”"
+                },
+                {
+                  "ref": "Psa.104.34",
+                  "role": "defining",
+                  "note": "“May my meditation be pleasing to him; I will rejoice in Yahweh.”"
+                },
+                {
+                  "ref": "Pro.3.24",
+                  "note": "“You will lie down, and your sleep will be sweet.”"
+                },
+                {
+                  "ref": "Jer.31.26",
+                  "note": "“I awoke and looked, and my sleep was sweet to me.”"
+                },
+                {
+                  "ref": "Pro.13.19",
+                  "note": "“A desire fulfilled is sweet to the soul.”"
+                },
+                {
+                  "ref": "Ezk.16.37",
+                  "note": "“All your lovers with whom you took pleasure.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רָצוֹן",
+            "note": "Acceptance, of offerings.",
+            "evidence": [
+              {
+                "ref": "Jer.6.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֲרָבָה",
+      "bdb": [
+        "p.fg.ad"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "willow (or poplar)",
+      "summary": "A tree of the watercourses, “willows of the brook”, whose boughs Israel took with palm and leafy branches to rejoice before Yahweh at the feast of booths (Lev 23:40). Arabic ġarab is the willow, with ġ, and Syriac ʿarbəṯā the same tree. Only in the plural.",
+      "cognate_ids": [
+        "ar-gharab",
+        "syc-arbeta"
+      ],
+      "senses": [
+        {
+          "gloss": "willow",
+          "definition": "A tree growing by streams of water.",
+          "evidence": [
+            {
+              "ref": "Lev.23.40",
+              "role": "defining",
+              "note": "“Fruit of goodly trees, branches of palms, boughs of leafy trees and willows of the brook; and you shall rejoice before Yahweh your God seven days.”"
+            },
+            {
+              "ref": "Job.40.22",
+              "role": "defining",
+              "note": "“The willows of the brook surround him.”"
+            },
+            {
+              "ref": "Isa.44.4",
+              "role": "defining",
+              "note": "“They will spring up among the grass, like willows by streams of water.”"
+            },
+            {
+              "ref": "Psa.137.2",
+              "note": "“On the willows in the midst of it we hung our harps.”"
+            },
+            {
+              "ref": "Isa.15.7",
+              "note": "Moab carries its wealth over “the brook of the willows”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "עַרְבֵי נַחַל",
+            "gloss": "willows of the brook",
+            "evidence": [
+              {
+                "ref": "Lev.23.40"
+              },
+              {
+                "ref": "Job.40.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָרַב",
+      "bdb": [
+        "p.ff.ac"
+      ],
+      "pos": "verb",
+      "gloss": "become evening, grow dark",
+      "summary": "The verb of עֶרֶב: of the day, to turn to evening; of joy, to grow dark; and in the hiphil, to do something at evening.",
+      "cognate_ids": [
+        "ar-gharaba",
+        "akk-erebu",
+        "uga-arb",
+        "arc-arab-set"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "become evening; grow dark",
+          "senses": [
+            {
+              "gloss": "become evening; grow dark",
+              "definition": "Of the day, to sink toward evening; figuratively, of joy, to be darkened as the day is.",
+              "kin": [
+                "erev-evening"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jdg.19.9",
+                  "role": "defining",
+                  "note": "“See, the day has sunk to become evening (לַעֲרֹב); stay the night.”"
+                },
+                {
+                  "ref": "Isa.24.11",
+                  "role": "defining",
+                  "note": "“All joy has grown dark (עָרְבָה); the gladness of the earth is gone.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "do at evening",
+          "senses": [
+            {
+              "gloss": "do at evening",
+              "definition": "The infinitive absolute as an adverb, “at evening”, paired with “early”.",
+              "kin": [
+                "erev-evening"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.17.16",
+                  "role": "defining",
+                  "note": "The Philistine drew near “early and at evening (הַשְׁכֵּם וְהַעֲרֵב)” for forty days."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲרַב",
+      "lang": "arc",
+      "bdb": [
+        "xp.ao.aa"
+      ],
+      "pos": "verb",
+      "gloss": "mix; (hithpaal) mix oneself",
+      "summary": "Daniel’s Aramaic, in the interpretation of the image: the iron of the feet mixed with clay, and the kingdom’s parts mixing themselves “with the seed of men” and not holding together.",
+      "cognate_ids": [
+        "arc-arab-mix"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "mix (passive participle: mixed)",
+          "senses": [
+            {
+              "id": "arac-mix",
+              "gloss": "mixed",
+              "definition": "Of two materials put together that do not become one.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.41",
+                  "role": "defining",
+                  "note": "“You saw the iron mixed with the miry clay.”"
+                },
+                {
+                  "ref": "Dan.2.43"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpaal",
+          "gloss": "mix oneself, be mixed",
+          "senses": [
+            {
+              "gloss": "mix oneself (with)",
+              "definition": "Of peoples mixing by marriage without becoming one, as iron does not mix with clay.",
+              "kin": [
+                "arav-mingle"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.2.43",
+                  "role": "defining",
+                  "note": "“They will mix themselves with the seed of men, but they will not cleave one to another, even as iron does not mix with clay.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵרָבוֹן",
+      "bdb": [
+        "p.fc.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pledge, earnest",
+      "summary": "A thing given and held as security until a promise is made good, then given back: Judah’s seal, cord and staff left with Tamar until the kid was sent. Greek borrowed it as ἀρραβών, which Paul uses of the Spirit given now as the pledge of the inheritance.",
+      "cognate_ids": [
+        "sab-arb",
+        "arc-arab-surety",
+        "ar-urbun"
+      ],
+      "senses": [
+        {
+          "id": "eravon-pledge",
+          "gloss": "pledge",
+          "definition": "Something of the giver’s own, held by the other party as surety until he does what he has promised.",
+          "kin": [
+            "arav-surety"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.38.17",
+              "role": "defining",
+              "note": "“Will you give a pledge until you send it?”"
+            },
+            {
+              "ref": "Gen.38.18",
+              "role": "defining",
+              "note": "“What pledge shall I give you?” “Your seal, your cord, and your staff in your hand.”"
+            },
+            {
+              "ref": "Gen.38.20",
+              "note": "Judah sent the kid “to take back the pledge from the woman’s hand”."
+            },
+            {
+              "ref": "2Co.1.22",
+              "role": "defining",
+              "note": "God “sealed us and gave the pledge (ἀρραβών) of the Spirit in our hearts”."
+            },
+            {
+              "ref": "2Co.5.5",
+              "note": "Given as the pledge that “what is mortal may be swallowed up by life” (2Co 5:4)."
+            },
+            {
+              "ref": "Eph.1.14",
+              "role": "defining",
+              "note": "The Spirit “is the pledge of our inheritance until the redemption of the possession”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀρραβών",
+          "gloss": "pledge, earnest, first instalment",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. ἀρραβών",
+              "note": "“An earnest, part payment in advance for security, a first instalment”; in the LXX for עֵרָבוֹן, Gen 38:17, 18, 20; probably brought to Greece by the Phoenicians."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "עֵרָבוֹן → ἀρραβών ×3 (MACULA alignment); Gen.38.17"
+            },
+            {
+              "ref": "2Co.1.22"
+            },
+            {
+              "ref": "2Co.5.5"
+            },
+            {
+              "ref": "Eph.1.14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲרֻבָּה",
+      "bdb": [
+        "p.fc.ab"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pledge, token",
+      "summary": "Something given as a pledge: the surety one strikes hands over, and the token David was to bring back from his brothers in the camp that they were well.",
+      "cognate_ids": [
+        "sab-arb",
+        "arc-arab-surety"
+      ],
+      "senses": [
+        {
+          "gloss": "pledge, token",
+          "definition": "A pledge given, or a token taken as proof.",
+          "kin": [
+            "arav-surety",
+            "eravon-pledge"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.17.18",
+              "role": "defining",
+              "note": "“Pledging a pledge (עֹרֵב עֲרֻבָּה) before his neighbour.”"
+            },
+            {
+              "ref": "1Sa.17.18",
+              "role": "defining",
+              "note": "“See how your brothers fare, and take their token (עֲרֻבָּתָם).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּעֲרֻבָה",
+      "bdb": [
+        "p.fc.ae"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pledge; (בְּנֵי הַתַּעֲרֻבוֹת) hostages",
+      "summary": "Only in “the sons of the pledges”, the hostages Jehoash of Israel took to Samaria with the temple’s gold and silver when he defeated Amaziah: men held as a pledge. Sabaean ʿrbtm “pledge, hostage” is the same use.",
+      "cognate_ids": [
+        "sab-arb"
+      ],
+      "senses": [
+        {
+          "gloss": "pledges, hostages",
+          "definition": "Persons handed over and held as surety for a defeated king’s good conduct.",
+          "kin": [
+            "arav-surety"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ki.14.14",
+              "role": "defining",
+              "note": "He took the gold and silver of the house of Yahweh and the king’s treasuries “and the sons of the pledges, and returned to Samaria”."
+            },
+            {
+              "ref": "2Ch.25.24"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בְּנֵי הַתַּעֲרֻבוֹת",
+            "gloss": "hostages",
+            "evidence": [
+              {
+                "ref": "2Ki.14.14"
+              },
+              {
+                "ref": "2Ch.25.24"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָרֵב",
+      "bdb": [
+        "p.fd.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "sweet, pleasant",
+      "summary": "The adjective of “be pleasing”: a voice, and bread got by deceit, sweet at first. Its tie to the root is as unclear as the verb’s.",
+      "senses": [
+        {
+          "gloss": "sweet, pleasant",
+          "definition": "Pleasant to the one who hears or tastes it.",
+          "kin": [
+            "arav-pleasing"
+          ],
+          "evidence": [
+            {
+              "ref": "Sng.2.14",
+              "role": "defining",
+              "note": "“Let me hear your voice, for your voice is sweet, and your face is lovely.”"
+            },
+            {
+              "ref": "Pro.20.17",
+              "role": "defining",
+              "note": "“Bread of falsehood is sweet to a man, but afterwards his mouth will be filled with gravel.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעְרְבָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "setting of the sun; west",
+      "summary": "The Peshitta’s ܡܥܪܒܐ (maʿrbā), the word of Hebrew מַעֲרָב: the west, for δυσμή, and the sun’s setting, for δύνω.",
+      "cognate_ids": [
+        "ar-gharaba",
+        "akk-erebu",
+        "uga-arb",
+        "sab-marb",
+        "gez-arb"
+      ],
+      "senses": [
+        {
+          "gloss": "west",
+          "definition": "The quarter of the setting sun.",
+          "kin": [
+            "maarav-west"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.8.11",
+              "role": "defining",
+              "note": "“Many will come from the east and from the west (ܡܥܪܒܐ).”"
+            },
+            {
+              "ref": "Luk.13.29"
+            },
+            {
+              "ref": "Mat.24.27",
+              "note": "The lightning shines “to the west”."
+            },
+            {
+              "ref": "Luk.12.54"
+            },
+            {
+              "ref": "Rev.21.13"
+            }
+          ]
+        },
+        {
+          "gloss": "sunset",
+          "definition": "The setting of the sun, the evening.",
+          "kin": [
+            "erev-evening"
+          ],
+          "evidence": [
+            {
+              "ref": "Mrk.1.32",
+              "role": "defining",
+              "note": "“When evening came, at the setting of the sun, they brought to him all who were sick.”"
+            },
+            {
+              "ref": "Luk.4.40",
+              "note": "“At the setting of the sun” they brought the sick to him."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עְרוּבְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "eve; the day of preparation",
+      "summary": "The Peshitta’s ܥܪܘܒܬܐ (ʿrubtā), “the eve”, for παρασκευή and προσάββατον: the day before the sabbath, named from the evening at which the sabbath begins. Jewish Aramaic עֲרוּבְתָּא and Ge’ez ʿärb are the eve of the sabbath, Friday.",
+      "cognate_ids": [
+        "arc-arubta",
+        "gez-arb"
+      ],
+      "senses": [
+        {
+          "gloss": "eve, day of preparation",
+          "definition": "The day before a sabbath, ending at the evening when the sabbath begins; the day of Jesus’ death.",
+          "kin": [
+            "erev-day"
+          ],
+          "evidence": [
+            {
+              "ref": "Mrk.15.42",
+              "role": "defining",
+              "note": "“When evening had come, because it was the eve (ܥܪܘܒܬܐ), that is, the day before the sabbath.”"
+            },
+            {
+              "ref": "Luk.23.54",
+              "role": "defining",
+              "note": "“It was the day of the eve, and the sabbath was dawning.”"
+            },
+            {
+              "ref": "Jhn.19.31",
+              "note": "Because it was the eve, that the bodies should not remain on the cross on the sabbath."
+            },
+            {
+              "ref": "Jhn.19.14",
+              "note": "“It was the eve of the Passover, about the sixth hour.”"
+            },
+            {
+              "ref": "Mat.27.62",
+              "note": "“The next day, that is, after the eve.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַרָּבָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "surety, guarantor; security",
+      "summary": "The Peshitta’s ܥܪܒܐ (ʿarrābā), one who stands surety, for ἔγγυος; in the plural, the security taken for someone.",
+      "cognate_ids": [
+        "sab-arb",
+        "phn-arb",
+        "arc-arab-surety"
+      ],
+      "senses": [
+        {
+          "gloss": "surety",
+          "definition": "One who stands answerable for another, and the security he gives.",
+          "kin": [
+            "arav-surety"
+          ],
+          "evidence": [
+            {
+              "ref": "Heb.7.22",
+              "role": "defining",
+              "note": "“By so much Jesus has become the surety (ܥܪܒܐ, ἔγγυος) of a better covenant.”"
+            },
+            {
+              "ref": "Act.17.9",
+              "note": "The rulers “took sureties from Jason and the rest” and let them go."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עְרַב",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "(of the sun) set, go down",
+      "summary": "The Peshitta’s verb ܥܪܒ (ʿrab) “set”, of the sun, for ἐπιδύω.",
+      "cognate_ids": [
+        "ar-gharaba",
+        "akk-erebu",
+        "uga-arb",
+        "arc-arab-set"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "set, go down",
+          "senses": [
+            {
+              "gloss": "(of the sun) set",
+              "definition": "Of the sun, to go down at evening.",
+              "kin": [
+                "erev-evening"
+              ],
+              "evidence": [
+                {
+                  "ref": "Eph.4.26",
+                  "role": "defining",
+                  "note": "“Be angry and do not sin; let not the sun set (ܢܥܪܒ) on your anger.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עְרַב",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "sift",
+      "summary": "The Peshitta’s ܥܪܒ (ʿrab) “sift”, for σινιάζω, filed by SEDRA under a root of its own. Its link to the other words of the spelling is not clear; Arabic ġarbala “sift”, ġirbāl “sieve” may be related, but that is not established.",
+      "cognate_ids": [
+        "ar-gharbala"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sift",
+          "senses": [
+            {
+              "gloss": "sift",
+              "definition": "To shake grain in a sieve; of the adversary’s trial of the disciples.",
+              "evidence": [
+                {
+                  "ref": "Luk.22.31",
+                  "role": "defining",
+                  "note": "“Simon, Simon, behold, the adversary has asked for you, to sift you as wheat.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-gharaba",
+      "lang": "ar",
+      "form": "غَرَبَ، غَرْبٌ، مَغْرِبٌ",
+      "translit": "ġaraba, ġarb, maġrib",
+      "gloss": "go away, be far; (of the sun) set; the west; place and time of sunset",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Lane’s sources give غَرَبَتِ الشَّمْسُ “the sun set”, inf. n. غُرُوبٌ, and غَرْبٌ and مَغْرِبٌ “the west”, “originally the place of sunset … and likewise the time of sunset”: Hebrew עֶרֶב and מַעֲרָב. The verb’s first sense is to go away, depart, be far, whence غَرِيبٌ “stranger”. Arabic ġ (غ), not ʿ (ع), stands behind ע here.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2240, root غرب, غَرَبَ (n31602)",
+          "note": "“He, or it, went, went away … And غَرَبَتِ الشَّمْسُ … The sun set.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2241, root غرب, غَرْبٌ (n31607)",
+          "note": "الغَرْبُ “the west”, the contrary of الشَّرْقُ; المَغْرِبُ “originally signifies the place [or point] of sunset … and is likewise used to signify the time of sunset”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2244, root غرب, مَغْرِبٌ (n31622)",
+          "note": "لَقِيتُهُ مَغْرِبَ الشَّمْسِ “I met him at sunset.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-gharab",
+      "lang": "ar",
+      "form": "غَرَبٌ",
+      "translit": "ġarab",
+      "gloss": "a species of tree, the willow",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Lane: “a species of trees from which are made white drinking-cups … generally held to mean the willow; like the Hebr. עֲרָבִים”, collective, with ة for one tree. Arabic ġ, as in ġaraba “set”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2242, root غرب, غَرَبٌ (n31609)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ghurab",
+      "lang": "ar",
+      "form": "غُرَابٌ",
+      "translit": "ġurāb",
+      "gloss": "crow, raven",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Lane: “a certain black bird, well known; the corvus, or crow; of which there are several species; namely, the raven, carrion-crow, rook …”; Lane’s source adds that it was disliked as a name “because the word implies the meaning of distance”, the sense of ġaraba “go far”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2243, root غرب, غُرَابٌ (n31615)"
+        }
+      ]
+    },
+    {
+      "id": "ar-gharbala",
+      "lang": "ar",
+      "form": "غَرْبَلَ، غِرْبَالٌ",
+      "translit": "ġarbala, ġirbāl",
+      "gloss": "sift; a sieve",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "A four-letter verb, “he sifted it”, and the sieve. Whether it belongs with Syriac ʿrab “sift” (Luk 22:31) or is a separate word is not established.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2245, root غربل, غَرْبَلَهُ (n31630); غِرْبَالٌ (n31631)"
+        }
+      ]
+    },
+    {
+      "id": "ar-urbun",
+      "lang": "ar",
+      "form": "عُرْبُونٌ، عَرَبُونٌ",
+      "translit": "ʿurbūn, ʿarabūn",
+      "gloss": "earnest money, part of the price paid to ratify a bargain",
+      "relation": "loan",
+      "note": "Lane’s sources: “an earnest, or earnest-money; a portion of the price, whereby a bargain is ratified”, forfeited if the sale does not go through; “said by As to be a foreign word arabicized, and so say many authors”. A loan, so it shows nothing of the older sound behind ע; the word’s sense matches עֵרָבוֹן exactly.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1994, root عرب, عَرَبُونٌ (n28548)"
+        }
+      ]
+    },
+    {
+      "id": "akk-erebu",
+      "lang": "akk",
+      "form": "erēbu, erbu",
+      "translit": "erēbu, erbu",
+      "gloss": "enter, go in; (of the sun) set; erbu “(sun)set, west”",
+      "relation": "cognate",
+      "note": "Oracc lists erēbu “enter”, with “set, setting (of the sun)” among its meanings, and the noun erbu “(sun)set, sunset, west”. The sun’s setting is its “going in”, as Hebrew writes בּוֹא הַשֶּׁמֶשׁ beside עֶרֶב (Deu 16:6; 2Ch 18:34). Akkadian does not keep ʿ and ġ apart, so it cannot show which stood behind ע.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008660, erēbu [enter] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000008980, erbu [(sun)set] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-aribu",
+      "lang": "akk",
+      "form": "āribu, erēbu",
+      "translit": "āribu, erēbu",
+      "gloss": "raven, crow, rook",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000038930, āribu [raven] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000000430, erēbu [rook] N",
+          "note": "“crow, raven, rook”."
+        }
+      ]
+    },
+    {
+      "id": "uga-arb",
+      "lang": "uga",
+      "form": "𐎓𐎗𐎁",
+      "translit": "ʿrb",
+      "gloss": "enter; (of the sun) set; Š “bring in”; (?) “enter as a pledge”",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Segert’s glossary: ʿrb “to enter” (KTU 1.24:18), “to set (of sun)” (1.78:2), comparing Arabic ġaraba and Hebrew מַעֲרָב, and, doubtfully, “to enter (as a pledge)” (4.338:12). Ugaritic keeps ʿ and ġ apart, and writes ʿ here, against Arabic’s ġ for the setting sun: the evening words do not show one sound across the languages.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 197, §93 Glossary, /ʿ-r-b/ ʿrb, ʿrbn, tʿrbm"
+        }
+      ]
+    },
+    {
+      "id": "sab-marb",
+      "lang": "sem",
+      "form": "𐩣𐩲𐩧𐩨",
+      "translit": "mʿrb",
+      "gloss": "(Sabaean) sunset, west; entrance",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Biella’s ʿRB II: the noun mʿrb(n) “(1) sunset > west” (“the boundary stones toward the east and toward the west”), “(2) entrance” (the two entrances of a wall’s doors), with the adjective mʿrby “western”; she compares Ge’ez ʿaraba, Arabic ġaraba “go down, set” and Akkadian erēbu “enter”. Sabaean keeps ʿ and ġ apart and writes ʿ, as Ugaritic does.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 382, ʿRB II, mʿrb(n), mʿrby",
+          "url": "https://archive.org/details/DOOSA"
+        }
+      ]
+    },
+    {
+      "id": "sab-grb",
+      "lang": "sem",
+      "form": "𐩶𐩧𐩨𐩬",
+      "translit": "ġrbn",
+      "gloss": "(Sabaean) west (?)",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Biella’s ĠRB II: ġrbn “west (?)” in an epithet of the god ʿAṯtar, “of the East and West (?)”, comparing Arabic ġarb and Sabaean mʿrb. One text, and queried, so possible only; if right, Sabaean has both ġ and ʿ for the west.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 397, ĠRB II, ġrbn",
+          "url": "https://archive.org/details/DOOSA"
+        }
+      ]
+    },
+    {
+      "id": "sab-arb",
+      "lang": "sem",
+      "form": "𐩲𐩧𐩨",
+      "translit": "ʿrb",
+      "gloss": "(Sabaean) give pledges, submit; offer, dedicate; ʿrbtm “pledge, hostage”; b-ʿrb “incumbent upon”",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Biella’s ʿRB I: “offer a sacrifice (as a pledge of future conduct?); dedicate”; t-stem “give pledges in token of submission”, “they gave in pledge to their lord two hostages”; the noun ʿrbtm “pledge, hostage”, and b-ʿrb “incumbent upon (lit., what one is pledged to do)”. The hostages answer to בְּנֵי הַתַּעֲרֻבוֹת (2Ki 14:14). Sabaean writes ʿ, not ġ.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 381–382, ʿRB I",
+          "url": "https://archive.org/details/DOOSA"
+        }
+      ]
+    },
+    {
+      "id": "phn-arb",
+      "lang": "phn",
+      "form": "𐤏𐤓𐤁",
+      "translit": "ʿrb",
+      "gloss": "custodian, caretaker; take charge of; mʿrb “custody, care”; present a gift",
+      "relation": "cognate",
+      "note": "Krahmalkov: ʿRB III “custodian, caretaker”, the one the community appoints “in charge of this stele” (KAI 60.4–6), comparing Hebrew “take into one’s custody”; ʿ-R-B II “take care of, have custody of”; MʿRB “custody, care” (Poenulus 930–934, “my brother’s son is in your custody, O gods”); and ʿ-R-B I “present a gift”. The custodian answers to the surety from whose hand the one entrusted is required (Gen 43:9). Phoenician script does not show ʿ from ġ.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 385, ʿ-R-B I, ʿ-R-B II, ʿRB III"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 300, MʿRB I"
+        }
+      ]
+    },
+    {
+      "id": "arc-arab-surety",
+      "lang": "arc",
+      "form": "עֲרַב",
+      "translit": "ʿărab",
+      "gloss": "vouch for, be surety for",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targum of Proverbs 6:1 and Job 17:3 for Hebrew עָרַב, and in the Talmud of pledging oneself to another. Aramaic ע does not show ʿ from ġ.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲרַב (P01243)",
+          "note": "“to vouch for, be surety for. Targ. Prov. VI, 1. Targ. Job XVII, 3.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-arab-mix",
+      "lang": "arc",
+      "form": "עֲרַב",
+      "translit": "ʿărab",
+      "gloss": "(pael) mix, confound; (ithpaal) be mixed",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, under the same headword as “be surety”: pael “to mix; to mix up, confound” (Targ. O. Gen 30:40), passive participle “well-mixed, seasoned” (Targ. Exo 30:35, for מְמֻלָּח), ithpaal “to be mixed” (Targ. Jos 23:7). Answers to the hithpael “mingle”, עֵרֶב “mixed company” and Daniel’s עֲרַב.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲרַב (P01243), Pa. and Ithpa.",
+          "note": "Targ. O. Gen. XXX, 40; Targ. Ex. XXX, 35; Targ. Josh. XXIII, 7."
+        }
+      ]
+    },
+    {
+      "id": "arc-arab-set",
+      "lang": "arc",
+      "form": "אִיעְרַב",
+      "translit": "ʾiʿrab",
+      "gloss": "(ithpeel) of the sun, set",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: “when the sun is set, the day is gone” (Ber. 2b), and מַעֲרָבָא “sunset, west”, which the Targum of Pro 7:9 uses for Hebrew עֶרֶב יוֹם.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲרַב ² (P01245)"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מַעֲרָבָא (M02168)",
+          "note": "“Targ. Prov. VII, 9 מַעֲרַב יומא (h. text ערב יום).”"
+        }
+      ]
+    },
+    {
+      "id": "arc-arubta",
+      "lang": "arc",
+      "form": "עֲרוּבְתָּא",
+      "translit": "ʿărubtā",
+      "gloss": "eve; the eve of the sabbath, Friday",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, “eve, ע׳ דשבתא or ע׳ eve of the Sabbath, Friday”, and the eve of the Great Fast: the same word as the Peshitta’s ʿrubtā for the day of preparation.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲרוּבְתָּא III (P01315)"
+        }
+      ]
+    },
+    {
+      "id": "gez-arb",
+      "lang": "gez",
+      "form": "ዐርብ፣ ምዕራብ",
+      "translit": "ʿärb, məʿrab",
+      "gloss": "eve of the sabbath, Friday; the west",
+      "relation": "cognate",
+      "note": "Ge’ez ʿärb “eve of the sabbath, parasceue, Friday”, and məʿrab “west”. Ge’ez has merged ġ into ʿ, so it cannot show which stood behind ע. Taken from Wiktionary only; Dillmann and Leslau not yet checked.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge’ez ዐርብ (ʿärb), noun",
+          "note": "“eve of the sabbath, parasceue, Friday”; “Cognate with Aramaic עֲרוּבְתָּא, Classical Syriac ܥܪܘܽܒܬܳܐ”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ge’ez ምዕራብ (məʿrab), noun",
+          "note": "“west”."
+        }
+      ]
+    },
+    {
+      "id": "syc-urba",
+      "lang": "syc",
+      "form": "ܥܘܪܒܐ",
+      "translit": "ʿūrḇā",
+      "gloss": "crow, raven",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܥܘܪܒܐ, noun, etym. 1",
+          "note": "“crow, raven”; “From Proto-Semitic *ḡurayb-”."
+        }
+      ]
+    },
+    {
+      "id": "syc-arbeta",
+      "lang": "syc",
+      "form": "ܥܪܒܬܐ",
+      "translit": "ʿarbəṯā",
+      "gloss": "willow",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܥܪܒܬܐ, noun, etym. 2",
+          "note": "“willow”; “Compare Hebrew עֲרָבָה, Arabic غَرَب”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "evening-and-morning-days",
+      "statement": "Each of the six days of creation closes with “there was evening and there was morning”, and is numbered, one day to the sixth day (Gen 1:5, 8, 13, 19, 23, 31). The fourth commandment rests Israel’s week on those days: “in six days Yahweh made the heavens and the earth, the sea and all that is in them, and rested the seventh day” (Exo 20:8–11). Israel kept its sabbaths and feasts by the same reckoning, “from evening to evening” (Lev 23:32; Exo 12:18). From the verses: a day of creation is a day of evening and morning, the same day by which Israel worked six and rested one; God made the heavens and the earth in six such days.",
+      "evidence": [
+        {
+          "ref": "Gen.1.5"
+        },
+        {
+          "ref": "Gen.1.8"
+        },
+        {
+          "ref": "Gen.1.13"
+        },
+        {
+          "ref": "Gen.1.19"
+        },
+        {
+          "ref": "Gen.1.23"
+        },
+        {
+          "ref": "Gen.1.31"
+        },
+        {
+          "ref": "Exo.20.8",
+          "to": "Exo.20.11"
+        },
+        {
+          "ref": "Lev.23.32"
+        },
+        {
+          "ref": "Exo.12.18"
+        }
+      ]
+    },
+    {
+      "topic": "passover-at-evening",
+      "statement": "The Passover lamb was killed on the fourteenth day “between the evenings” (Exo 12:6; Lev 23:5), “in the evening, as the sun goes in, at the time you came out of Egypt” (Deu 16:6). One hanged on a tree was not to remain there overnight, but was taken down as the sun went in (Deu 21:22–23; Jos 8:29; 10:26–27). Paul writes, “Christ our Passover was sacrificed for us” (1Co 5:7). Jesus died at the ninth hour (Mrk 15:34–37), and “when evening had come, because it was the preparation, that is, the day before the sabbath”, Joseph asked for the body (Mrk 15:42–43); the Jews asked that the bodies not remain on the cross on the sabbath (Jhn 19:31). The Peshitta calls that day ʿrubtā, “the eve”. From the verses: the Passover lamb’s day ended at evening, and Christ, the Passover, died and was taken down within that same evening, before the sabbath began.",
+      "evidence": [
+        {
+          "ref": "Exo.12.6"
+        },
+        {
+          "ref": "Lev.23.5"
+        },
+        {
+          "ref": "Deu.16.6"
+        },
+        {
+          "ref": "Deu.21.22",
+          "to": "Deu.21.23"
+        },
+        {
+          "ref": "Jos.8.29"
+        },
+        {
+          "ref": "Jos.10.26",
+          "to": "Jos.10.27"
+        },
+        {
+          "ref": "1Co.5.7"
+        },
+        {
+          "ref": "Mrk.15.34",
+          "to": "Mrk.15.37"
+        },
+        {
+          "ref": "Mrk.15.42",
+          "to": "Mrk.15.43"
+        },
+        {
+          "ref": "Jhn.19.31"
+        }
+      ]
+    },
+    {
+      "topic": "surety",
+      "statement": "Judah became surety for Benjamin: “from my hand you shall require him; if I do not bring him back to you, I will bear the blame for ever” (Gen 43:9), and when Benjamin was taken he offered to remain a slave in his place (Gen 44:32–34). The surety stands in another’s place and pays with himself if the other fails, which is why Proverbs warns against becoming surety for a stranger (Pro 6:1–5; 11:15). Hezekiah, Job and the psalmist ask God himself to be their surety (Isa 38:14; Job 17:3; Psa 119:122). Yahweh speaks of a ruler from Israel’s own midst whom he will bring near: “who is he who has pledged his heart to approach me?” (Jer 30:21). Hebrews, having noted that our Lord sprang from Judah, says that Jesus “has become the surety of a better covenant” (Heb 7:14, 22), and that he is able to save to the uttermost those who come to God through him (Heb 7:25). From the verses: as Judah offered himself in his brother’s place, Christ of Judah answers in his own person for those who come to God by him.",
+      "evidence": [
+        {
+          "ref": "Gen.43.9"
+        },
+        {
+          "ref": "Gen.44.32",
+          "to": "Gen.44.34"
+        },
+        {
+          "ref": "Pro.6.1",
+          "to": "Pro.6.5"
+        },
+        {
+          "ref": "Pro.11.15"
+        },
+        {
+          "ref": "Isa.38.14"
+        },
+        {
+          "ref": "Job.17.3"
+        },
+        {
+          "ref": "Psa.119.122"
+        },
+        {
+          "ref": "Jer.30.21"
+        },
+        {
+          "ref": "Heb.7.14"
+        },
+        {
+          "ref": "Heb.7.22"
+        },
+        {
+          "ref": "Heb.7.25"
+        }
+      ]
+    },
+    {
+      "topic": "pledge-of-the-spirit",
+      "statement": "An עֵרָבוֹן is something of the giver’s own, held until he makes good his promise: Judah left his seal, cord and staff until the kid was sent (Gen 38:17–20). Paul uses the same word, ἀρραβών: God “sealed us and gave the pledge of the Spirit in our hearts” (2Co 1:21–22); the Spirit “is the pledge of our inheritance until the redemption of the possession” (Eph 1:13–14); and God gave it for this very thing, “that what is mortal may be swallowed up by life” (2Co 5:4–5). From the verses: what believers have of the Spirit now is not the inheritance but God’s pledge of it, held until he redeems his possession and gives the life that swallows up mortality.",
+      "evidence": [
+        {
+          "ref": "Gen.38.17",
+          "to": "Gen.38.20"
+        },
+        {
+          "ref": "2Co.1.21",
+          "to": "2Co.1.22"
+        },
+        {
+          "ref": "Eph.1.13",
+          "to": "Eph.1.14"
+        },
+        {
+          "ref": "2Co.5.4",
+          "to": "2Co.5.5"
+        }
+      ]
+    },
+    {
+      "topic": "separation-from-the-nations",
+      "statement": "Israel did not destroy the peoples as commanded, but “mingled with the nations and learned their works” and served their idols (Psa 106:34–36). After the return, the holy seed “mixed itself with the peoples of the lands” by marriage (Ezr 9:1–2), and when the law was read that Ammonite and Moabite should not enter the assembly, “they separated all the mixed company from Israel” (Neh 13:1–3). Paul applies the same call to the ecclesia: “Come out from among them and be separate, says the Lord” (2Co 6:14–17). From the verses: a people called to be holy is not to mix itself with those whose ways it will learn; separation is the remedy the scriptures give.",
+      "evidence": [
+        {
+          "ref": "Psa.106.34",
+          "to": "Psa.106.36"
+        },
+        {
+          "ref": "Ezr.9.1",
+          "to": "Ezr.9.2"
+        },
+        {
+          "ref": "Neh.13.1",
+          "to": "Neh.13.3"
+        },
+        {
+          "ref": "2Co.6.14",
+          "to": "2Co.6.17"
+        }
+      ]
+    },
+    {
+      "topic": "prayer-at-the-evening-offering",
+      "statement": "The evening offering was a set hour of prayer: Ezra rose from his fasting at the evening offering and spread out his hands to Yahweh (Ezr 9:5); Gabriel came to Daniel as he prayed “about the time of the evening offering” (Dan 9:21); and David asks that his prayer be set before Yahweh as incense, “the lifting up of my hands as the evening offering” (Psa 141:2). Hebrews calls on believers to offer “the sacrifice of praise to God continually, that is, the fruit of lips confessing his name” (Heb 13:15). From the verses: prayer offered to God is likened to the offering that went up morning and evening, and is accepted as it was.",
+      "evidence": [
+        {
+          "ref": "Ezr.9.5"
+        },
+        {
+          "ref": "Dan.9.21"
+        },
+        {
+          "ref": "Psa.141.2"
+        },
+        {
+          "ref": "Heb.13.15"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Left out, for name entries or as places: the gentilics עֲרָב (p.fe.ad), עֲרָבִי (p.fe.ac) and עַרְבִי (p.fe.ae), Arab, Arabia; עֲרַב (p.fe.ab), which BDB glosses “steppe” but whose every use is Arabia (Isa 21:13; Jer 25:24; Ezk 27:21; 2Ch 9:14); the man Oreb, the Midianite prince, and the rock of Oreb (p.fg.ac; Oreb@Jdg.7.25), no name entry written; the place בֵּית הָעֲרָבָה (b.bp.bo). m.da.aj, m.da.ak and w.bi.af are cross-references with no tokens. The brief files tokens by spelling, so several keys share tokens: Jer 31:26 and Isa 24:11 appear under both p.fd.aa and p.ff.ac (entered under “be pleasing” and “grow dark” respectively), Jdg 19:9 and Ezk 27:9 under both p.fc.aa and p.ff.ac (entered under “become evening” and “exchange”), Hos 9:4 under p.fc.aa (entered under “be pleasing”), Pro 17:18 עֹרֵב under the raven keys (entered under the verb), and every הָעֶרֶב under both עֵרֶב keys and עֲרַב/עֲרָב; p.fb.ab and p.fb.ac list the same tokens, and each is given to its own word (mixed company; woof) by reading. Open questions: (1) The sounds do not divide cleanly. Arabic has ġ for sunset/west, raven and willow; Sabaean has ʿ for pledge/hostage, and Ugaritic and Sabaean also write ʿ for “enter, (of the sun) set”, with Akkadian erēbu “enter”; Sabaean ġrbn “west (?)” is queried. So the evening words name cognates with both sounds. Whether evening goes with Arabic ġrb “go away, set” or with ʿrb “enter” (the sun’s going in, as Hebrew בּוֹא הַשֶּׁמֶשׁ), and whether pledge is “enter (as a pledge)”, is left open. (2) The Arabah, the woof, the swarm and “be pleasing” have no cognate of their own, so lexicon-support counts the root’s cognates against them. Leads not followed: Arabic ʿaraba “a river with a strong current” (Lane p. 1994) for the Arabah does not fit its sense of dry land; Akkadian urbatu “rush” for the willow; Jewish Aramaic מְעָרַב “well-mixed, seasoned” as a bridge from “mix” to “be pleasing”. (3) Psa 68:5 עֲרָבוֹת is entered as “deserts” from Psa 68:8; Ugaritic rkb ʿrpt “rider of the clouds” (Segert p. 197, under ʿrpt) is another root and is not cited. (4) Ge’ez is from Wiktionary only (Dillmann and Leslau not checked); Syriac raven and willow are from Wiktionary (Payne Smith not checked). (5) Heb 7:22 ἔγγυος is not the Septuagint’s rendering of עָרַב (ἐγγυάω, ἐκδέχομαι), so it is cited under the Peshitta’s ʿarrābā and in doctrine, not as a Greek rendering. (6) The Syriac “sift” (SEDRA root 1425) is kept with an unclear link; Arabic ġarbala is recorded as possible."
+}
