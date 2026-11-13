@@ -1,0 +1,1621 @@
+{
+  "id": "asaph",
+  "root": "אספ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "gathering",
+    "harvest",
+    "assembly",
+    "death",
+    "feasts",
+    "israel"
+  ],
+  "gloss": "gather, collect; gather in, take in; gather away, remove",
+  "summary": "אָסַף is to bring together into one place: to gather in the year’s produce (Exo 23:10; Lev 23:39), to assemble people (Exo 3:16; Jol 2:16), to take someone in under one’s roof (Jos 20:4; Psa 27:10), and to gather something away, so that it is gone: a reproach, the breath of life, the light of the stars (Gen 30:23; Psa 104:29; Jol 2:10). Its niphal “be gathered to one’s people” is scripture’s phrase for death and burial with the fathers (Gen 25:8; Jdg 2:10), and its piel participle is the rearguard that gathers in behind a marching host (Num 10:25; Isa 52:12). Its nouns name the ingathering, above all חַג הָאָסִף, the feast at the year’s end (Exo 23:16), and what is gathered. Akkadian esēpu, Ugaritic and Phoenician ʾsp and Jewish Aramaic אֲסַף share the sense “gather”.",
+  "words": [
+    {
+      "lemma": "אָסַף",
+      "pos": "verb",
+      "gloss": "gather, collect, assemble; take in; gather away, remove",
+      "bdb": [
+        "a.ev.aa"
+      ],
+      "cognate_ids": [
+        "akk-esepu",
+        "uga-asp",
+        "phn-asp",
+        "arc-asaph"
+      ],
+      "summary": "Mostly qal and niphal. Its one act of gathering looks two ways: toward the place where things are brought (the threshing floor, the house, the camp, the fathers) and away from the place they leave, which is then without them; so the same verb gathers a harvest in and gathers a reproach or a life away.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "gather, collect, assemble; take in; gather away, remove",
+          "senses": [
+            {
+              "id": "gather-in-produce",
+              "gloss": "gather in, collect (produce, goods)",
+              "definition": "To bring together things scattered or growing into one place and keep them: the crops of field, threshing floor and winepress, food, money, quail, ashes, bones.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.10",
+                  "role": "defining",
+                  "note": "“Six years you shall sow your land and gather its produce”: gathering is the end of the year’s work as sowing is its beginning."
+                },
+                {
+                  "ref": "Lev.25.20",
+                  "role": "defining",
+                  "note": "“We shall not sow and we shall not gather our produce” in the seventh year."
+                },
+                {
+                  "ref": "Deu.16.13",
+                  "role": "defining",
+                  "note": "The feast of booths is kept “when you gather from your threshing floor and from your winepress”."
+                },
+                {
+                  "ref": "Lev.23.39",
+                  "role": "defining",
+                  "note": "On the fifteenth of the seventh month, “when you have gathered the produce of the land”, the feast of Yahweh is kept seven days."
+                },
+                {
+                  "ref": "Exo.23.16",
+                  "note": "The feast of ingathering, “when you gather in your labours from the field”."
+                },
+                {
+                  "ref": "Lev.25.3"
+                },
+                {
+                  "ref": "Deu.11.14",
+                  "note": "“That you may gather in your grain, your new wine and your oil.”"
+                },
+                {
+                  "ref": "Deu.28.38",
+                  "note": "Much seed carried out, little gathered in, for the locust consumes it."
+                },
+                {
+                  "ref": "Isa.17.5",
+                  "role": "defining",
+                  "note": "“As when the harvester gathers the standing grain and his arm reaps the ears.”"
+                },
+                {
+                  "ref": "Rut.2.7",
+                  "note": "Ruth asks to glean and gather among the sheaves after the reapers."
+                },
+                {
+                  "ref": "Job.39.12",
+                  "note": "Will the wild ox bring home your seed and gather it to your threshing floor?"
+                },
+                {
+                  "ref": "Jer.40.10",
+                  "to": "Jer.40.12",
+                  "note": "Gather wine, summer fruit and oil and put them in your vessels."
+                },
+                {
+                  "ref": "Gen.6.21",
+                  "note": "Noah is to take every food that is eaten and gather it to himself, food for him and the animals."
+                },
+                {
+                  "ref": "Num.11.32",
+                  "note": "The people gathered the quail; the least gathered ten homers."
+                },
+                {
+                  "ref": "Num.19.9",
+                  "to": "Num.19.10",
+                  "note": "A clean man gathers the ashes of the red heifer."
+                },
+                {
+                  "ref": "2Sa.21.13",
+                  "note": "They gathered the bones of those who were hanged."
+                },
+                {
+                  "ref": "2Ki.22.4",
+                  "note": "The silver the doorkeepers had collected from the people."
+                },
+                {
+                  "ref": "2Ch.24.11"
+                },
+                {
+                  "ref": "2Ch.34.9"
+                },
+                {
+                  "ref": "1Ki.10.26",
+                  "note": "Solomon gathered chariots and horsemen."
+                },
+                {
+                  "ref": "2Ch.1.14"
+                },
+                {
+                  "ref": "2Ch.28.24",
+                  "note": "Ahaz gathered together the vessels of the house of God and cut them in pieces."
+                },
+                {
+                  "ref": "Ezk.24.4",
+                  "note": "Gather the pieces into the pot."
+                },
+                {
+                  "ref": "Isa.10.14",
+                  "note": "Assyria: “as one gathers eggs that are forsaken, I have gathered all the earth.”"
+                },
+                {
+                  "ref": "Psa.39.7",
+                  "note": "He heaps up and does not know who will gather them."
+                },
+                {
+                  "ref": "Ecc.2.26",
+                  "note": "To the sinner God gives the task of gathering and collecting, to give to one who is good before him."
+                },
+                {
+                  "ref": "Hab.1.15",
+                  "note": "He gathers men in his dragnet like fish."
+                },
+                {
+                  "ref": "Pro.30.4",
+                  "note": "“Who has gathered the wind in his fists?”"
+                },
+                {
+                  "ref": "Gen.42.17",
+                  "note": "Joseph put his brothers together into custody three days."
+                },
+                {
+                  "ref": "Gen.49.33",
+                  "note": "Jacob gathered his feet up into the bed."
+                },
+                {
+                  "ref": "Jer.10.17",
+                  "note": "“Gather up your bundle from the land”, ready for exile."
+                }
+              ]
+            },
+            {
+              "id": "assemble-people",
+              "gloss": "assemble, muster (people)",
+              "definition": "To bring people together in one place: elders to hear a word, the people to a feast or a fast, an army to battle; and of Yahweh, gathering his scattered people back, or the nations to judgment.",
+              "evidence": [
+                {
+                  "ref": "Jol.2.16",
+                  "role": "defining",
+                  "note": "“Gather the people, sanctify the congregation, assemble (קִבְצוּ) the elders, gather the children.”"
+                },
+                {
+                  "ref": "Exo.3.16",
+                  "role": "defining",
+                  "note": "“Go and gather the elders of Israel and say to them…”"
+                },
+                {
+                  "ref": "Exo.4.29"
+                },
+                {
+                  "ref": "Num.11.16",
+                  "note": "“Gather to me seventy men of the elders of Israel.”"
+                },
+                {
+                  "ref": "Num.11.24"
+                },
+                {
+                  "ref": "Num.21.16",
+                  "note": "“Gather the people, and I will give them water.”"
+                },
+                {
+                  "ref": "Jos.24.1",
+                  "note": "Joshua gathered all the tribes of Israel to Shechem."
+                },
+                {
+                  "ref": "Gen.29.22",
+                  "note": "Laban gathered all the men of the place and made a feast."
+                },
+                {
+                  "ref": "Jol.1.14",
+                  "note": "“Gather the elders and all the inhabitants of the land to the house of Yahweh your God.”"
+                },
+                {
+                  "ref": "2Ki.23.1"
+                },
+                {
+                  "ref": "2Ch.29.4"
+                },
+                {
+                  "ref": "2Ch.29.20"
+                },
+                {
+                  "ref": "1Ch.15.4"
+                },
+                {
+                  "ref": "1Ch.23.2"
+                },
+                {
+                  "ref": "1Sa.17.1",
+                  "role": "defining",
+                  "note": "The Philistines gathered their camps to battle, and were gathered at Socoh."
+                },
+                {
+                  "ref": "Num.21.23",
+                  "note": "Sihon gathered all his people and went out against Israel."
+                },
+                {
+                  "ref": "Jdg.11.20"
+                },
+                {
+                  "ref": "2Sa.12.28",
+                  "to": "2Sa.12.29"
+                },
+                {
+                  "ref": "2Sa.10.17"
+                },
+                {
+                  "ref": "Dan.11.10",
+                  "note": "His sons shall assemble a multitude of great forces."
+                },
+                {
+                  "ref": "Hab.2.5",
+                  "note": "He gathers to himself all nations, and collects (יִקְבֹּץ) all peoples."
+                },
+                {
+                  "ref": "Isa.11.12",
+                  "role": "defining",
+                  "note": "He will gather the outcasts of Israel, and assemble (יְקַבֵּץ) the scattered of Judah from the four corners of the earth."
+                },
+                {
+                  "ref": "Ezk.11.17",
+                  "role": "defining",
+                  "note": "“I will gather you from the peoples and assemble you out of the lands where you have been scattered, and I will give you the land of Israel.”"
+                },
+                {
+                  "ref": "Mic.2.12",
+                  "note": "“I will surely gather Jacob, all of you; I will surely assemble the remnant of Israel… as sheep of Bozrah.”"
+                },
+                {
+                  "ref": "Mic.4.6",
+                  "note": "“I will gather her that halts, and assemble her that is driven out.”"
+                },
+                {
+                  "ref": "Zep.3.18"
+                },
+                {
+                  "ref": "Psa.50.5",
+                  "note": "“Gather my faithful ones to me, those who have made a covenant with me by sacrifice”, as God calls heaven and earth to judge his people (50:4)."
+                },
+                {
+                  "ref": "Zep.3.8",
+                  "note": "“My judgment is to gather the nations, to assemble the kingdoms, to pour on them my indignation.”"
+                },
+                {
+                  "ref": "Zec.14.2",
+                  "note": "“I will gather all the nations against Jerusalem to battle.”"
+                },
+                {
+                  "ref": "Jer.12.9",
+                  "note": "“Go, assemble all the beasts of the field, bring them to devour.”"
+                },
+                {
+                  "ref": "Hab.1.9",
+                  "note": "He gathers captives like the sand."
+                }
+              ]
+            },
+            {
+              "id": "take-in",
+              "gloss": "take in, receive (into house or protection)",
+              "definition": "To bring a person or a stray beast in under one’s roof or care, so that it belongs with the household.",
+              "evidence": [
+                {
+                  "ref": "Jos.20.4",
+                  "role": "defining",
+                  "note": "The elders of the city of refuge “shall gather him into the city to them, and give him a place, and he shall dwell with them”."
+                },
+                {
+                  "ref": "Psa.27.10",
+                  "role": "defining",
+                  "note": "“When my father and my mother forsake (עֲזָבוּנִי) me, then Yahweh will take me in.”"
+                },
+                {
+                  "ref": "Deu.22.2",
+                  "role": "defining",
+                  "note": "A brother’s stray ox or sheep: “you shall gather it into your house, and it shall be with you until your brother seeks it.”"
+                },
+                {
+                  "ref": "Jos.2.18",
+                  "note": "Rahab is to gather her father, mother and brothers into her house."
+                },
+                {
+                  "ref": "2Sa.11.27",
+                  "note": "David sent and gathered Bathsheba to his house, and she became his wife."
+                },
+                {
+                  "ref": "1Sa.14.52",
+                  "note": "Any mighty man Saul saw, he gathered to himself."
+                },
+                {
+                  "ref": "Jdg.3.13",
+                  "note": "Eglon gathered to himself Ammon and Amalek."
+                }
+              ]
+            },
+            {
+              "id": "gather-to-fathers",
+              "gloss": "gather (someone) to his fathers, in death",
+              "definition": "Of God, to bring a man to death and the grave, where his fathers lie.",
+              "evidence": [
+                {
+                  "ref": "2Ki.22.20",
+                  "role": "defining",
+                  "note": "“I will gather you to your fathers, and you shall be gathered to your grave in peace, and your eyes shall not see all the evil.”"
+                },
+                {
+                  "ref": "2Ch.34.28"
+                },
+                {
+                  "ref": "Psa.26.9",
+                  "note": "“Do not gather my soul with sinners, nor my life with men of blood”: let me not die with them."
+                }
+              ]
+            },
+            {
+              "id": "gather-away",
+              "gloss": "gather away, take away, withdraw",
+              "definition": "To gather something in from where it was, so that it is no longer there: a reproach removed, peace or wrath withdrawn, a hand drawn back, the light of the stars and the breath of the living taken away.",
+              "evidence": [
+                {
+                  "ref": "Gen.30.23",
+                  "role": "defining",
+                  "note": "Rachel bears a son: “God has taken away my reproach.” Elisabeth echoes her, “to take away my reproach among men” (Luk 1:25)."
+                },
+                {
+                  "ref": "Isa.4.1",
+                  "note": "Seven women to one man: “only let us be called by your name; take away our reproach.”"
+                },
+                {
+                  "ref": "Psa.104.29",
+                  "role": "defining",
+                  "note": "“You take away their breath (רוּחָם), they die and return to their dust.”"
+                },
+                {
+                  "ref": "Job.34.14",
+                  "to": "Job.34.15",
+                  "role": "defining",
+                  "note": "“If he gathers to himself his spirit and his breath, all flesh shall perish together, and man shall return to dust.”"
+                },
+                {
+                  "ref": "Psa.85.4",
+                  "role": "defining",
+                  "note": "“You have withdrawn all your wrath; you have turned from the fierceness of your anger.”"
+                },
+                {
+                  "ref": "Jer.16.5",
+                  "note": "“I have taken away my peace from this people, kindness and mercies.”"
+                },
+                {
+                  "ref": "Jol.2.10",
+                  "role": "defining",
+                  "note": "Sun and moon are darkened, “and the stars withdraw their shining”."
+                },
+                {
+                  "ref": "Jol.4.15"
+                },
+                {
+                  "ref": "1Sa.14.19",
+                  "note": "Saul to the priest: “Withdraw your hand.”"
+                },
+                {
+                  "ref": "1Sa.15.6",
+                  "note": "Saul to the Kenites: “Depart, lest I sweep you away with Amalek.”"
+                },
+                {
+                  "ref": "Jdg.18.25",
+                  "note": "“Lest you lose your life and the lives of your household.”"
+                },
+                {
+                  "ref": "Jer.8.13",
+                  "note": "“I will surely gather them away”, says Yahweh; no grapes on the vine, no figs on the fig tree."
+                },
+                {
+                  "ref": "Zep.1.2",
+                  "note": "“I will utterly gather away all things from the face of the ground”, with the infinitive of this verb before a form of סוּף “make an end”."
+                },
+                {
+                  "ref": "Ezk.34.29",
+                  "note": "No more “taken away by famine” (passive participle)."
+                },
+                {
+                  "ref": "2Ki.5.3",
+                  "role": "defining",
+                  "note": "“He would recover him from his leprosy”: the leper, put out of the camp, is gathered back from his leprosy, as Miriam was gathered back into the camp (Num 12:14–15)."
+                },
+                {
+                  "ref": "2Ki.5.6",
+                  "to": "2Ki.5.7"
+                },
+                {
+                  "ref": "2Ki.5.11"
+                }
+              ]
+            },
+            {
+              "id": "qal-rearguard",
+              "gloss": "be (someone’s) rearguard",
+              "definition": "To gather up behind a company on the march, so that none is left.",
+              "evidence": [
+                {
+                  "ref": "Isa.58.8",
+                  "role": "defining",
+                  "note": "“Your righteousness shall go before you; the glory of Yahweh shall be your rearguard”: before and behind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be gathered, assemble; be gathered to one’s people (die); be taken away",
+          "senses": [
+            {
+              "gloss": "be gathered, assemble",
+              "definition": "Of people or flocks coming together in one place, to meet, to worship, or to fight.",
+              "evidence": [
+                {
+                  "ref": "Gen.29.8",
+                  "role": "defining",
+                  "note": "“We cannot, until all the flocks are gathered and they roll the stone from the well’s mouth.”"
+                },
+                {
+                  "ref": "Gen.29.3"
+                },
+                {
+                  "ref": "Gen.29.7"
+                },
+                {
+                  "ref": "Gen.49.1",
+                  "note": "“Gather yourselves, that I may tell you what shall befall you in the last days.”"
+                },
+                {
+                  "ref": "Exo.32.26",
+                  "note": "All the sons of Levi gathered themselves to Moses."
+                },
+                {
+                  "ref": "Neh.8.1",
+                  "role": "defining",
+                  "note": "All the people gathered as one man to the square before the water gate, to hear the law."
+                },
+                {
+                  "ref": "Ezr.3.1",
+                  "note": "In the seventh month the people gathered as one man to Jerusalem."
+                },
+                {
+                  "ref": "Neh.8.13"
+                },
+                {
+                  "ref": "Neh.9.1"
+                },
+                {
+                  "ref": "Neh.12.28"
+                },
+                {
+                  "ref": "Ezr.9.4"
+                },
+                {
+                  "ref": "2Ch.30.3"
+                },
+                {
+                  "ref": "2Ch.30.13",
+                  "note": "Many people assembled at Jerusalem to keep the feast of unleavened bread."
+                },
+                {
+                  "ref": "Isa.43.9",
+                  "role": "defining",
+                  "note": "“Let all the nations be gathered together (נִקְבְּצוּ), and let the peoples be assembled.”"
+                },
+                {
+                  "ref": "Isa.49.5",
+                  "note": "The servant formed to bring Jacob back to Yahweh, “and that Israel be gathered to him”."
+                },
+                {
+                  "ref": "Psa.47.10",
+                  "note": "The princes of the peoples are gathered, the people of the God of Abraham."
+                },
+                {
+                  "ref": "Jos.10.5",
+                  "note": "The five kings of the Amorites gathered themselves and went up."
+                },
+                {
+                  "ref": "Jdg.6.33"
+                },
+                {
+                  "ref": "Jdg.9.6"
+                },
+                {
+                  "ref": "Jdg.10.17"
+                },
+                {
+                  "ref": "Jdg.16.23"
+                },
+                {
+                  "ref": "Jdg.20.11",
+                  "note": "All the men of Israel gathered against the city, knit together as one man."
+                },
+                {
+                  "ref": "Jdg.20.14"
+                },
+                {
+                  "ref": "1Sa.13.5"
+                },
+                {
+                  "ref": "1Sa.13.11"
+                },
+                {
+                  "ref": "1Sa.17.1",
+                  "to": "1Sa.17.2"
+                },
+                {
+                  "ref": "2Sa.10.15"
+                },
+                {
+                  "ref": "2Sa.17.11"
+                },
+                {
+                  "ref": "2Sa.23.9"
+                },
+                {
+                  "ref": "2Sa.23.11"
+                },
+                {
+                  "ref": "1Ch.11.13"
+                },
+                {
+                  "ref": "1Ch.19.7"
+                },
+                {
+                  "ref": "2Ch.12.5"
+                },
+                {
+                  "ref": "Gen.34.30",
+                  "note": "“They will gather themselves together against me and strike me.”"
+                },
+                {
+                  "ref": "Psa.35.15"
+                },
+                {
+                  "ref": "Isa.13.4",
+                  "note": "The noise of kingdoms of nations gathered together; Yahweh of armies musters the host."
+                },
+                {
+                  "ref": "Mic.4.11",
+                  "note": "Many nations are gathered against Zion."
+                },
+                {
+                  "ref": "Zec.12.3",
+                  "note": "All the nations of the earth shall be gathered against Jerusalem."
+                },
+                {
+                  "ref": "Amo.3.9"
+                },
+                {
+                  "ref": "Ezk.39.17",
+                  "note": "The birds and beasts summoned to Yahweh’s sacrifice on the mountains of Israel."
+                }
+              ]
+            },
+            {
+              "gloss": "be gathered in, brought in",
+              "definition": "To be brought in from outside to a place of keeping or safety: livestock into the house, the people into fortified cities, a sword into its sheath, a leper back into the camp.",
+              "evidence": [
+                {
+                  "ref": "Exo.9.19",
+                  "role": "defining",
+                  "note": "Every man and beast found in the field “and not gathered into the house” shall die in the hail."
+                },
+                {
+                  "ref": "Num.12.14",
+                  "to": "Num.12.15",
+                  "role": "defining",
+                  "note": "Miriam is shut out of the camp seven days, “and after that she shall be gathered in”; the people did not journey till she was."
+                },
+                {
+                  "ref": "Num.11.30",
+                  "note": "Moses was gathered into the camp, he and the elders."
+                },
+                {
+                  "ref": "Jer.4.5",
+                  "note": "“Gather yourselves, and let us go into the fortified cities.”"
+                },
+                {
+                  "ref": "Jer.8.14"
+                },
+                {
+                  "ref": "Lev.26.25",
+                  "note": "“You shall be gathered within your cities”, and pestilence sent among you."
+                },
+                {
+                  "ref": "2Sa.17.13"
+                },
+                {
+                  "ref": "Jer.47.6",
+                  "role": "defining",
+                  "note": "“O sword of Yahweh, how long till you are quiet? Gather yourself into your scabbard.”"
+                },
+                {
+                  "ref": "Num.11.22",
+                  "note": "“Shall all the fish of the sea be gathered for them?”"
+                },
+                {
+                  "ref": "2Sa.14.14",
+                  "note": "“As water spilt on the ground, which cannot be gathered up again.”"
+                },
+                {
+                  "ref": "Pro.27.25",
+                  "note": "The herbs of the mountains are gathered in."
+                }
+              ]
+            },
+            {
+              "id": "niphal-gathered-to-people",
+              "gloss": "be gathered to one’s people or fathers: die",
+              "definition": "To die and go down to the grave where one’s forebears lie; and, of the dead not gathered, to lie unburied.",
+              "cognate_ids": [
+                "phn-asp"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.25.8",
+                  "role": "defining",
+                  "note": "“Abraham breathed his last and died in a good old age… and was gathered to his people”, and his sons buried him (25:9)."
+                },
+                {
+                  "ref": "Gen.25.17"
+                },
+                {
+                  "ref": "Gen.35.29"
+                },
+                {
+                  "ref": "Gen.49.29",
+                  "role": "defining",
+                  "note": "“I am to be gathered to my people: bury me with my fathers in the cave.”"
+                },
+                {
+                  "ref": "Gen.49.33"
+                },
+                {
+                  "ref": "Num.20.24",
+                  "to": "Num.20.26",
+                  "note": "“Aaron shall be gathered and shall die there.”"
+                },
+                {
+                  "ref": "Num.27.13"
+                },
+                {
+                  "ref": "Num.31.2"
+                },
+                {
+                  "ref": "Deu.32.50",
+                  "role": "defining",
+                  "note": "“Die on the mountain… and be gathered to your people, as Aaron your brother died on Mount Hor and was gathered to his people.”"
+                },
+                {
+                  "ref": "Jdg.2.10",
+                  "role": "defining",
+                  "note": "“All that generation were gathered to their fathers, and another generation arose.” Paul says of David, “he fell asleep, and was laid with his fathers, and saw corruption” (Act 13:36)."
+                },
+                {
+                  "ref": "2Ki.22.20",
+                  "note": "“You shall be gathered to your grave in peace.”"
+                },
+                {
+                  "ref": "2Ch.34.28"
+                },
+                {
+                  "ref": "Isa.57.1",
+                  "note": "“The righteous is taken away from the evil”; he enters into peace and rests in his bed (57:2)."
+                },
+                {
+                  "ref": "Jer.8.2",
+                  "role": "defining",
+                  "note": "“They shall not be gathered nor buried; they shall be for dung on the face of the earth.”"
+                },
+                {
+                  "ref": "Jer.25.33"
+                },
+                {
+                  "ref": "Ezk.29.5",
+                  "note": "Pharaoh cast into the wilderness: “you shall not be gathered nor collected.”"
+                }
+              ]
+            },
+            {
+              "gloss": "be taken away, withdraw, cease",
+              "definition": "To be gathered away from a place, so that it is without it: joy from the fields, the moon from the sky, the fish from the sea, beasts into their dens.",
+              "evidence": [
+                {
+                  "ref": "Isa.16.10",
+                  "role": "defining",
+                  "note": "“Gladness is taken away, and joy, out of the fruitful field; in the vineyards there shall be no singing.”"
+                },
+                {
+                  "ref": "Jer.48.33"
+                },
+                {
+                  "ref": "Isa.60.20",
+                  "role": "defining",
+                  "note": "“Your sun shall no more go down, nor your moon withdraw itself, for Yahweh shall be your everlasting light.”"
+                },
+                {
+                  "ref": "Hos.4.3",
+                  "note": "The land mourns; the fish of the sea also are taken away."
+                },
+                {
+                  "ref": "Psa.104.22",
+                  "note": "The sun rises; the young lions gather themselves away and lie down in their dens."
+                },
+                {
+                  "ref": "Job.27.19",
+                  "note": "The rich man lies down “and is not gathered”: read by some as not buried, or as the form of יָסַף “do it no more”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "gather up behind (rearguard); take in (a guest); gather (harvest)",
+          "senses": [
+            {
+              "id": "piel-rearguard",
+              "gloss": "rearguard (participle)",
+              "definition": "The participle מְאַסֵּף is the company that marches last and gathers in behind the rest, so that none is left.",
+              "evidence": [
+                {
+                  "ref": "Num.10.25",
+                  "role": "defining",
+                  "note": "The standard of the camp of Dan set out last, “the rearguard (מְאַסֵּף) of all the camps”."
+                },
+                {
+                  "ref": "Jos.6.9",
+                  "role": "defining",
+                  "note": "The armed men went before the priests, “and the rearguard came after the ark”."
+                },
+                {
+                  "ref": "Jos.6.13"
+                },
+                {
+                  "ref": "Isa.52.12",
+                  "role": "defining",
+                  "note": "“Yahweh will go before you, and the God of Israel will be your rearguard.”"
+                }
+              ]
+            },
+            {
+              "id": "piel-receive",
+              "gloss": "take in (a guest)",
+              "definition": "To take a traveller into one’s house for the night.",
+              "evidence": [
+                {
+                  "ref": "Jdg.19.15",
+                  "role": "defining",
+                  "note": "They sat in the street of Gibeah, “and no man took them into his house to lodge”."
+                },
+                {
+                  "ref": "Jdg.19.18"
+                }
+              ]
+            },
+            {
+              "gloss": "gather (harvest)",
+              "definition": "To gather in the crop, or the fallen like sheaves.",
+              "evidence": [
+                {
+                  "ref": "Isa.62.9",
+                  "role": "defining",
+                  "note": "“Those who gather it shall eat it and praise Yahweh, and those who collect (מְקַבְּצָיו) it shall drink it in the courts of my holiness.”"
+                },
+                {
+                  "ref": "Jer.9.21",
+                  "note": "Carcasses fall “as the handful after the harvestman, and none shall gather them”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be gathered",
+          "senses": [
+            {
+              "gloss": "be gathered (together)",
+              "definition": "Passive of the piel: spoil gathered, wealth heaped up, people gathered as captives or against a land.",
+              "evidence": [
+                {
+                  "ref": "Isa.24.22",
+                  "role": "defining",
+                  "note": "“They shall be gathered together as prisoners are gathered in the pit, and shut up in the prison, and after many days they shall be visited.”"
+                },
+                {
+                  "ref": "Isa.33.4",
+                  "role": "defining",
+                  "note": "“Your spoil shall be gathered as the caterpillar gathers.”"
+                },
+                {
+                  "ref": "Zec.14.14",
+                  "note": "The wealth of all the nations round about shall be gathered: gold, silver and garments."
+                },
+                {
+                  "ref": "Ezk.38.12",
+                  "note": "A people gathered out of the nations, dwelling at the centre of the earth."
+                },
+                {
+                  "ref": "Hos.10.10",
+                  "note": "Peoples shall be gathered against them."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "gather together",
+          "senses": [
+            {
+              "gloss": "gather together",
+              "definition": "Of the heads of the people assembling.",
+              "evidence": [
+                {
+                  "ref": "Deu.33.5",
+                  "role": "defining",
+                  "note": "There was a king in Jeshurun, “when the heads of the people were gathered together, the tribes of Israel”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "take away (uncertain)",
+          "senses": [
+            {
+              "gloss": "take away, sweep away",
+              "definition": "Twice in one verse, of Yahweh sweeping away man, beast, bird and fish. The form אָסֵף is taken here as this verb; it may be a hiphil of סוּף “make an end”, set after the infinitive of אָסַף in Zep 1:2 for the sound.",
+              "evidence": [
+                {
+                  "ref": "Zep.1.3",
+                  "role": "defining",
+                  "note": "“I will take away man and beast; I will take away the birds of the heavens and the fish of the sea.”"
+                },
+                {
+                  "ref": "Zep.1.2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "συνάγω",
+          "gloss": "gather together, bring in",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "אָסַף → συνάγω ×96 (lemma count, MACULA alignment); Psa.50.5 אִסְפוּ → συναγάγετε; Isa.11.12 אָסַף → συνάξει"
+            },
+            {
+              "ref": "Jhn.11.52",
+              "note": "Jesus would die “not for that nation only, but that he might gather together in one the children of God that were scattered abroad”, the language of Isa 11:12 and Ezk 11:17."
+            },
+            {
+              "ref": "Mat.3.12",
+              "note": "He will gather his wheat into the barn."
+            },
+            {
+              "ref": "Mat.13.30"
+            }
+          ]
+        },
+        {
+          "lemma": "προστίθημι",
+          "gloss": "add; (passive) be laid with",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "אָסַף → προστίθημι ×12 (lemma count); Gen.25.8 וַיֵּאָסֶף → προσετέθη; Jdg.2.10 נֶאֶסְפוּ → προσετέθησαν; Gen.49.29 נֶאֱסָף → προστίθεμαι"
+            },
+            {
+              "ref": "Act.13.36",
+              "note": "David “fell asleep, and was laid with (προσετέθη πρὸς) his fathers, and saw corruption”: the Septuagint’s phrase for being gathered to one’s fathers (Jdg 2:10)."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀφαιρέω",
+          "gloss": "take away",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "אָסַף → ἀφαιρέω ×2; Gen.30.23 אָסַף → ἀφεῖλεν; Isa.4.1 אֱסֹף → ἄφελε"
+            },
+            {
+              "ref": "Luk.1.25",
+              "note": "Elisabeth: the Lord looked on me “to take away (ἀφελεῖν) my reproach among men”, Rachel’s words of Gen 30:23."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπισυνάγω",
+          "gloss": "gather together",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "אָסַף → ἐπισυνάγω ×2; Zec.14.2 וְאָסַפְתִּי → ἐπισυνάξω"
+            },
+            {
+              "ref": "Mat.23.37",
+              "note": "“How often would I have gathered your children together, as a hen gathers her chickens.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָבַץ",
+            "note": "“Assemble, collect”, beside it in the same line, of people and of Yahweh gathering Israel.",
+            "evidence": [
+              {
+                "ref": "Isa.11.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.11.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Mic.2.12"
+              },
+              {
+                "ref": "Mic.4.6"
+              },
+              {
+                "ref": "Jol.2.16"
+              },
+              {
+                "ref": "Isa.43.9"
+              },
+              {
+                "ref": "Zep.3.8"
+              },
+              {
+                "ref": "Hab.2.5"
+              },
+              {
+                "ref": "Isa.62.9"
+              }
+            ]
+          },
+          {
+            "lemma": "זָרַע",
+            "note": "“Sow”: sowing and gathering are the two ends of the year’s work.",
+            "evidence": [
+              {
+                "ref": "Exo.23.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.25.3"
+              },
+              {
+                "ref": "Lev.25.20"
+              },
+              {
+                "ref": "Deu.28.38"
+              }
+            ]
+          },
+          {
+            "lemma": "קָבַר",
+            "note": "“Bury”, beside being gathered to one’s people, and with it denied to the unburied dead.",
+            "evidence": [
+              {
+                "ref": "Gen.49.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.8.2"
+              },
+              {
+                "ref": "Jer.25.33"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "פּוּץ",
+            "note": "“Scatter”: Yahweh gathers those he has scattered.",
+            "evidence": [
+              {
+                "ref": "Ezk.11.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.11.12"
+              }
+            ]
+          },
+          {
+            "lemma": "עָזַב",
+            "note": "“Forsake”: father and mother forsake, Yahweh takes in.",
+            "evidence": [
+              {
+                "ref": "Psa.27.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נֶאֱסַף אֶל־עַמָּיו",
+            "gloss": "be gathered to his people: die",
+            "evidence": [
+              {
+                "ref": "Gen.25.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.49.33"
+              },
+              {
+                "ref": "Num.20.24"
+              },
+              {
+                "ref": "Deu.32.50"
+              }
+            ]
+          },
+          {
+            "phrase": "נֶאֱסַף אֶל־אֲבֹתָיו",
+            "gloss": "be gathered to his fathers: die",
+            "evidence": [
+              {
+                "ref": "Jdg.2.10",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.22.20"
+              },
+              {
+                "ref": "2Ch.34.28"
+              }
+            ]
+          },
+          {
+            "phrase": "אָסַף חֶרְפָּה",
+            "gloss": "take away reproach",
+            "evidence": [
+              {
+                "ref": "Gen.30.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.4.1"
+              }
+            ]
+          },
+          {
+            "phrase": "אָסַף רוּחַ",
+            "gloss": "gather the breath: take away life",
+            "evidence": [
+              {
+                "ref": "Psa.104.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.34.14"
+              }
+            ]
+          },
+          {
+            "phrase": "אָסַף נָגְהּ",
+            "gloss": "withdraw (its) shining, of the stars",
+            "evidence": [
+              {
+                "ref": "Jol.2.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Jol.4.15"
+              }
+            ]
+          },
+          {
+            "phrase": "מְאַסֵּף לְכָל־הַמַּחֲנֹת",
+            "gloss": "rearguard of all the camps",
+            "evidence": [
+              {
+                "ref": "Num.10.25",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֹסֶף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "gathering, ingathering (of fruit)",
+      "bdb": [
+        "a.ev.ab"
+      ],
+      "cognate_ids": [
+        "akk-esepu"
+      ],
+      "senses": [
+        {
+          "gloss": "gathering of fruit, ingathering",
+          "definition": "The act or season of gathering in the fruit; and what is gathered.",
+          "kin": [
+            "gather-in-produce"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.32.10",
+              "role": "defining",
+              "note": "“The vintage (בָּצִיר) shall fail, the gathering shall not come.”"
+            },
+            {
+              "ref": "Mic.7.1",
+              "role": "defining",
+              "note": "“I am as when they have gathered the summer fruits, as the grape gleanings of the vintage: there is no cluster to eat.”"
+            },
+            {
+              "ref": "Isa.33.4",
+              "note": "Spoil gathered “as the gathering of the caterpillar”, which strips a field bare."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "συνάγω",
+          "gloss": "gather together",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "אֹסֶף → συνάγω ×2; Mic.7.1 כְּאָסְפֵּי → συνάγων; Isa.32.10 → παύω"
+            },
+            {
+              "ref": "Mat.3.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָסִיף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ingathering; the feast of ingathering",
+      "bdb": [
+        "a.ev.ad"
+      ],
+      "cognate_ids": [
+        "akk-esepu",
+        "arc-asaph"
+      ],
+      "summary": "Only in the name of the feast חַג הָאָסִף, the third of the three yearly feasts, kept at the year’s end when the crops are gathered in: the feast Lev 23:34–43 and Deu 16:13 call the feast of booths.",
+      "senses": [
+        {
+          "gloss": "ingathering, harvest; the feast of ingathering",
+          "definition": "The gathering in of the year’s produce from field, threshing floor and winepress, and the feast that marks it.",
+          "kin": [
+            "gather-in-produce"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.23.16",
+              "role": "defining",
+              "note": "“The feast of ingathering, at the going out of the year, when you have gathered in your labours from the field.”"
+            },
+            {
+              "ref": "Exo.34.22",
+              "role": "defining",
+              "note": "“The feast of ingathering at the turn of the year.”"
+            },
+            {
+              "ref": "Lev.23.39",
+              "note": "The same feast in Lev 23, “when you have gathered the produce of the land”, with the verb."
+            },
+            {
+              "ref": "Deu.16.13"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "συντέλεια",
+          "gloss": "completion, end",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.23.16 הָאָסִף → συντελείας; Exo.34.22 הָאָסִיף → συναγωγῆς"
+            },
+            {
+              "ref": "Mat.13.39",
+              "note": "“The harvest is the end (συντέλεια) of the age, and the reapers are the angels.”"
+            }
+          ]
+        },
+        {
+          "lemma": "συναγωγή",
+          "gloss": "a gathering, assembly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.34.22 הָאָסִיף → συναγωγῆς"
+            },
+            {
+              "ref": "Jas.2.2"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "חַג הָאָסִף",
+            "gloss": "the feast of ingathering",
+            "evidence": [
+              {
+                "ref": "Exo.23.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אָסֹף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "store; storehouse (plural)",
+      "bdb": [
+        "a.ev.ae"
+      ],
+      "cognate_ids": [
+        "akk-esepu"
+      ],
+      "summary": "Only in the plural, of the temple storehouses at the gates kept by Levite gatekeepers.",
+      "senses": [
+        {
+          "gloss": "stores, storehouses",
+          "definition": "What is gathered and laid up, and the house where it is kept.",
+          "evidence": [
+            {
+              "ref": "1Ch.26.15",
+              "role": "defining",
+              "note": "To Obed-edom the south gate, and to his sons “the house of the stores” (בֵּית הָאֲסֻפִּים)."
+            },
+            {
+              "ref": "1Ch.26.17"
+            },
+            {
+              "ref": "Neh.12.25",
+              "role": "defining",
+              "note": "Gatekeepers keeping the watch “at the storehouses of the gates”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲסֵפָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a gathering together",
+      "bdb": [
+        "a.ev.af"
+      ],
+      "cognate_ids": [
+        "akk-esepu"
+      ],
+      "senses": [
+        {
+          "gloss": "a gathering (together)",
+          "definition": "The act of being gathered, used with the pual of the verb to say how they are gathered: as captives.",
+          "evidence": [
+            {
+              "ref": "Isa.24.22",
+              "role": "defining",
+              "note": "“They shall be gathered with a gathering, as prisoners in the pit.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲסֻפָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "collection (of sayings, or of men?)",
+      "bdb": [
+        "a.ev.ag"
+      ],
+      "cognate_ids": [
+        "akk-esepu"
+      ],
+      "summary": "Once, in בַּעֲלֵי אֲסֻפּוֹת. Set beside “the words of the wise”, it is most likely collected sayings, whose masters are the wise who gathered them; it could be the gathered assemblies they teach. Either way it is “gathered”.",
+      "senses": [
+        {
+          "gloss": "collection",
+          "definition": "Something gathered together: here, it seems, gathered sayings of the wise.",
+          "evidence": [
+            {
+              "ref": "Ecc.12.11",
+              "role": "defining",
+              "note": "“The words of the wise are as goads, and as nails fastened are the masters of collections, given from one shepherd.” The Preacher set in order many proverbs (12:9)."
+            },
+            {
+              "ref": "Ecc.12.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲסַפְסֻף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a gathered-up lot, rabble",
+      "bdb": [
+        "a.ev.ah"
+      ],
+      "cognate_ids": [
+        "akk-esepu"
+      ],
+      "summary": "Once, a reduplicated form of the root: the mixed crowd picked up along the way that went out of Egypt with Israel (Exo 12:38), who began the craving for flesh.",
+      "senses": [
+        {
+          "gloss": "rabble, mixed crowd",
+          "definition": "A crowd gathered up from here and there, not of Israel’s tribes, travelling with them.",
+          "evidence": [
+            {
+              "ref": "Num.11.4",
+              "role": "defining",
+              "note": "“The rabble that was among them lusted, and the children of Israel also wept again.”"
+            },
+            {
+              "ref": "Exo.12.38",
+              "note": "“A mixed multitude (עֵרֶב רַב) went up also with them”: the same company, under another word."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-esepu",
+      "lang": "akk",
+      "form": "esēpu",
+      "translit": "esēpu",
+      "gloss": "gather together, collect; scoop up, skim off",
+      "relation": "cognate",
+      "note": "Akkadian has lost the first consonant (ʾ > e), as it regularly does; the verb and its adjective espu “gathered together” keep the sense of bringing things together into one place.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000017140, esēpu [gather together] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000017140.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000041910, espu [gathered together] AJ",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000041910.html"
+        }
+      ]
+    },
+    {
+      "id": "uga-asp",
+      "lang": "uga",
+      "form": "𐎀𐎒𐎔",
+      "translit": "ʾsp",
+      "gloss": "(Gt) gather for oneself",
+      "relation": "cognate",
+      "note": "Segert gives the Gt (reflexive) imperfect yʾtsp /yiʾtasapu/(?) “gather (for oneself)” among his examples of that stem.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 66, §54.32, Gt /ʾ-s-p/ “to gather (for oneself)”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000579 ʾsp [gather], UGC000633 ʾsp [gather]"
+        }
+      ]
+    },
+    {
+      "id": "phn-asp",
+      "lang": "phn",
+      "form": "𐤀𐤎𐤐",
+      "translit": "ʾsp",
+      "gloss": "gather, collect; (niphal) be gathered",
+      "relation": "cognate",
+      "note": "Phoenician uses it of a dead man’s bones gathered into his coffin (Byblos 13.1, “here I lie in this coffin, my bones gathered”) and of a woman’s bones “gathered” in her burial place (Neo-Punic), close to the Hebrew “gathered to one’s people”; its niphal is of men gathered into an army (KAI 161.6). Krahmalkov also lists the names ʾspyhw “Yahweh gather!” and ʾspt.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 65, ʾ-S-P",
+          "note": "qal “gather, collect” (Byb 13.1; CIS 6000.4; Punica pp. 125/126); niphal “be gathered in service to a person” (KAI 161.6)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000579 ʾsp [gather], PUN000173 ʾsp [gather]"
+        }
+      ]
+    },
+    {
+      "id": "arc-asaph",
+      "lang": "arc",
+      "form": "אֲסַף",
+      "translit": "ʾăsap",
+      "gloss": "gather, harvest; (participle) harvester",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Palestinian Talmud: students likened to harvesters (אספין), “for they work even harder”. Biblical Aramaic and the Peshitta use other roots (כנשׁ) for “gather”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲסַף (ch.)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%90%D6%B2%D7%A1%D6%B7%D7%A3",
+          "note": "Y. Keth. V, 30b."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000579 ʾsp [gather], ARM002057 ʾSP [gather]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "gathered-to-the-fathers",
+      "statement": "Abraham “breathed his last and died… and was gathered to his people”, and then his sons buried him (Gen 25:8–9); Jacob says “I am to be gathered to my people: bury me with my fathers” (Gen 49:29); a whole generation “was gathered to its fathers” and another arose (Jdg 2:10); Josiah is told he will be gathered to his fathers, “to your grave in peace” (2Ki 22:20); and the dead denied this lie unburied (Jer 8:2). Paul says that David “fell asleep, and was laid with his fathers, and saw corruption”, while the one God raised saw none (Act 13:36–37), and Peter that David “is both dead and buried… for David has not ascended into the heavens” (Act 2:29, 34). Hebrews says the fathers “all died in faith, not having received the promises”, that they might not be made perfect apart from us (Heb 11:13, 39–40). From the verses: to be gathered to one’s people is to die and go down to the grave with those who went before, there to sleep, not to pass into a life elsewhere; the hope set before the fathers is resurrection, at which they receive the promises with those who come after.",
+      "evidence": [
+        {
+          "ref": "Gen.25.8",
+          "to": "Gen.25.9"
+        },
+        {
+          "ref": "Gen.49.29"
+        },
+        {
+          "ref": "Jdg.2.10"
+        },
+        {
+          "ref": "2Ki.22.20"
+        },
+        {
+          "ref": "Jer.8.2"
+        },
+        {
+          "ref": "Act.13.36",
+          "to": "Act.13.37"
+        },
+        {
+          "ref": "Act.2.29"
+        },
+        {
+          "ref": "Act.2.34"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Heb.11.39",
+          "to": "Heb.11.40"
+        }
+      ]
+    },
+    {
+      "topic": "breath-gathered",
+      "statement": "“You take away (תֹּסֵף) their breath, they die and return to their dust; you send forth your spirit, they are created” (Psa 104:29–30). “If he gathers to himself his spirit and his breath, all flesh shall perish together, and man shall return to dust” (Job 34:14–15). The breath was God’s from the first, breathed into the dust to make man a living soul (Gen 2:7), and at death “the dust returns to the earth as it was, and the spirit returns to God who gave it” (Ecc 12:7; Gen 3:19). From the verses: the life of man and beast alike is God’s breath lent to the dust; when he gathers it back, what is left is dust, not a conscious part that goes on living; and the same spirit sent forth again is what creates.",
+      "evidence": [
+        {
+          "ref": "Psa.104.29",
+          "to": "Psa.104.30"
+        },
+        {
+          "ref": "Job.34.14",
+          "to": "Job.34.15"
+        },
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Ecc.12.7"
+        }
+      ]
+    },
+    {
+      "topic": "gathering-of-israel",
+      "statement": "Yahweh promises to “gather the outcasts of Israel, and assemble the scattered of Judah from the four corners of the earth” (Isa 11:12), and to “gather you out of the countries where you have been scattered, and I will give you the land of Israel” (Ezk 11:17; Mic 2:12). His servant is formed “to bring Jacob again to him, and that Israel be gathered to him”, and also to be a light to the nations (Isa 49:5–6), which Paul and Barnabas take as the Lord’s command to them (Act 13:47). Caiaphas prophesied that Jesus would die for the nation, “and not for the nation only, but that he should gather together in one the children of God that were scattered abroad” (Jhn 11:51–52). From the verses: the gathering is Yahweh’s own work, done through his servant Jesus; it is a gathering of Israel back to the land itself, and of the scattered children of God from the nations into one.",
+      "evidence": [
+        {
+          "ref": "Isa.11.11",
+          "to": "Isa.11.12"
+        },
+        {
+          "ref": "Ezk.11.17"
+        },
+        {
+          "ref": "Mic.2.12"
+        },
+        {
+          "ref": "Isa.49.5",
+          "to": "Isa.49.6"
+        },
+        {
+          "ref": "Act.13.47"
+        },
+        {
+          "ref": "Jhn.11.51",
+          "to": "Jhn.11.52"
+        }
+      ]
+    },
+    {
+      "topic": "feast-of-ingathering",
+      "statement": "The third yearly feast is חַג הָאָסִף, kept “at the going out of the year, when you have gathered in your labours from the field” (Exo 23:16; 34:22), on the fifteenth of the seventh month “when you have gathered the produce of the land”, seven days in booths, in memory that Yahweh made Israel dwell in booths when he brought them out of Egypt (Lev 23:39–43; Deu 16:13–15). Zechariah sees Yahweh gather all the nations against Jerusalem to battle, then go out and fight against them, his feet standing on the Mount of Olives, and be king over all the earth; and every one left of the nations that came against Jerusalem goes up year by year to worship the King, Yahweh of armies, and to keep the feast of booths (Zec 14:2–4, 9, 16). From the verses: the feast of the gathered harvest, kept by Israel at the year’s end, is the feast that the nations keep once Yahweh has gathered them, judged them, and reigns as king over the earth.",
+      "evidence": [
+        {
+          "ref": "Exo.23.16"
+        },
+        {
+          "ref": "Exo.34.22"
+        },
+        {
+          "ref": "Lev.23.39",
+          "to": "Lev.23.43"
+        },
+        {
+          "ref": "Deu.16.13",
+          "to": "Deu.16.15"
+        },
+        {
+          "ref": "Zec.14.2",
+          "to": "Zec.14.4"
+        },
+        {
+          "ref": "Zec.14.9"
+        },
+        {
+          "ref": "Zec.14.16"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-the-rearguard",
+      "statement": "In the order of march, the camp of Dan went last as “the rearguard of all the camps” (Num 10:25), gathering in behind the rest; at Jericho the rearguard came after the ark (Jos 6:9). Isaiah tells the exiles leaving Babylon that they will not go out in haste, “for Yahweh will go before you, and the God of Israel will be your rearguard” (Isa 52:12), and the people that turn to righteousness, “the glory of Yahweh shall be your rearguard” (Isa 58:8). From the verses: Yahweh takes both places in his people’s march, leading in front and gathering up behind, so that none falls out of the company.",
+      "evidence": [
+        {
+          "ref": "Num.10.25"
+        },
+        {
+          "ref": "Jos.6.9"
+        },
+        {
+          "ref": "Isa.52.12"
+        },
+        {
+          "ref": "Isa.58.8"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Lev 23:39 and Num 10:25. Proper names left out of the words and given no name entry here (the task named none): אָסָף Asaph (a.ev.ac; David’s Levite singer, Joah’s father, Nehemiah’s keeper of the forest) and אַסְפָּתָא Aspatha (a.ev.ai, Haman’s son, Est 9:7, probably a Persian name not of this root); אֲבִיאָסָף Abiasaph is filed under a.ae.ae (root אבה). The brief’s 22 tokens filed here by spelling but analysed as יסף (וַיֹּסֶף) are left out; 2Sa 6:1 וַיֹּסֶף is counted here (David “gathered” all the chosen men), as the brief does, though it could be יָסַף “again”. Zep 1:3 אָסֵף is entered as the hiphil, with the doubt stated (it may be סוּף hiphil after אָסֹף in 1:2). Job 27:19 וְלֹא יֵאָסֵף is unclear: “not gathered (buried)” or a form of יָסַף. 2Ki 5:3–11 “gather (Naaman) from his leprosy” is read beside Num 12:14–15 (the leper gathered back into the camp) under “take away”; it could equally stand under “take in”. No Arabic cognate: Arabic ʾsf (Lane p. 58) is “grieve, be angry”, and is not recorded. Leads not followed: Ge’ez (Dillmann, Leslau) not checked; Ugaritic ʾsp checked only in Segert’s grammar (no Ugaritic text reference given there); Akkadian checked in Oracc only (CAD E not consulted). The relation to יָסַף “add” (several forms overlap) is not argued. Doctrine flags for the reviewer: “feast-of-ingathering” reads Zec 14 as Yahweh’s coming to reign, with the nations’ gathering against Jerusalem before it; Mat 13:39 (συντέλεια) is recorded only as a Greek bridge, not used in doctrine."
+}
