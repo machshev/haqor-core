@@ -1,0 +1,584 @@
+{
+  "id": "aphah",
+  "root": "אפה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "food",
+    "bread",
+    "sacrifice",
+    "feasts",
+    "leaven",
+    "household"
+  ],
+  "gloss": "bake; baker; a thing baked",
+  "summary": "To bake: to turn dough or flour into loaves or cakes by fire, as against boiling (Exo 16:23; Ezk 46:20). The text uses it of a household’s bread, of the unleavened cakes baked in haste at the exodus (Exo 12:39), and of the bread of the offerings: the showbread (Lev 24:5), grain offerings never baked with leaven (Lev 6:10), and the two loaves of the fiftieth day, baked with leaven as firstfruits to Yahweh (Lev 23:17). Its participle אֹפֶה is a baker, a trade of king’s household and city street (Gen 40:1–2; 1Sa 8:13; Jer 37:21), and מַאֲפֶה a thing baked (Lev 2:4). Akkadian epû, Ugaritic and Phoenician ʾpy and Aramaic אֲפָא have the same sense, and Akkadian and Phoenician the same word for the baker.",
+  "words": [
+    {
+      "lemma": "אָפָה",
+      "pos": "verb",
+      "gloss": "bake; (participle) baker; (niphal) be baked",
+      "bdb": [
+        "a.ez.aa"
+      ],
+      "cognate_ids": [
+        "akk-epu",
+        "uga-apy",
+        "phn-apy",
+        "arc-afa",
+        "gez-afaya"
+      ],
+      "summary": "Twenty-five uses, a third of them the participle “baker”. The finite verb is always of bread or of the grain offering; it is set beside boiling and roasting as one of the ways food is prepared over fire.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bake; (participle) baker",
+          "senses": [
+            {
+              "id": "bake",
+              "gloss": "bake (bread, cakes)",
+              "definition": "To make dough or flour into loaves or cakes and cook them by fire, in an oven or on coals. What is baked is always bread of some kind; it is the step after kneading (לוּשׁ), and is distinguished from boiling (בִּשֵּׁל) and roasting (צָלָה).",
+              "evidence": [
+                {
+                  "ref": "1Sa.28.24",
+                  "role": "defining",
+                  "note": "“She took flour and kneaded it וַתֹּפֵהוּ, unleavened cakes”: flour, kneading, then baking."
+                },
+                {
+                  "ref": "Exo.12.39",
+                  "role": "defining",
+                  "note": "“They baked the dough which they brought out of Egypt into unleavened cakes, for it was not leavened.”"
+                },
+                {
+                  "ref": "Lev.24.5",
+                  "role": "defining",
+                  "note": "“Take fine flour and bake it twelve loaves”: the showbread."
+                },
+                {
+                  "ref": "Exo.16.23",
+                  "role": "defining",
+                  "note": "“What you bake, bake; and what you boil, boil”: baking and boiling, the two ways of preparing the manna, done the day before the Sabbath."
+                },
+                {
+                  "ref": "Isa.44.19",
+                  "role": "defining",
+                  "note": "“I have baked bread on its coals; I roast flesh and eat”: baking is of bread, roasting of meat."
+                },
+                {
+                  "ref": "Gen.19.3",
+                  "note": "Lot bakes unleavened bread for his two guests."
+                },
+                {
+                  "ref": "Lev.26.26",
+                  "note": "In the famine of the curse “ten women shall bake your bread in one oven” and give it back by weight."
+                },
+                {
+                  "ref": "Isa.44.15",
+                  "note": "The same wood a man burns to bake bread he makes into a god."
+                },
+                {
+                  "ref": "Ezk.46.20",
+                  "note": "In the house the prophet is shown, the priests boil the guilt and sin offerings and bake the grain offering, in a place set apart."
+                }
+              ]
+            },
+            {
+              "id": "baker",
+              "gloss": "(participle) baker",
+              "definition": "The active participle as a noun: one whose work is baking bread, a servant or tradesman. Pharaoh had a chief of bakers among his officials; a king would take Israel’s daughters as bakers; Jerusalem had a bakers’ street.",
+              "cognate_ids": [
+                "akk-epu-baker",
+                "uga-apy-baker",
+                "syc-apya"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.40.17",
+                  "role": "defining",
+                  "note": "“All kinds of food for Pharaoh, מַעֲשֵׂה אֹפֶה, the work of a baker”: baked goods in his basket."
+                },
+                {
+                  "ref": "Gen.40.1",
+                  "role": "defining",
+                  "note": "The baker beside the cupbearer, the two who served Pharaoh’s table."
+                },
+                {
+                  "ref": "1Sa.8.13",
+                  "role": "defining",
+                  "note": "The king “will take your daughters to be perfumers and cooks and bakers (אֹפוֹת)”: the feminine plural, a household trade."
+                },
+                {
+                  "ref": "Jer.37.21",
+                  "role": "defining",
+                  "note": "Jeremiah given “a loaf of bread daily from the bakers’ street, until all the bread in the city was spent”."
+                },
+                {
+                  "ref": "Gen.40.2"
+                },
+                {
+                  "ref": "Gen.40.5"
+                },
+                {
+                  "ref": "Gen.40.16"
+                },
+                {
+                  "ref": "Gen.40.20"
+                },
+                {
+                  "ref": "Gen.40.22",
+                  "note": "The chief of the bakers hanged, as Joseph interpreted."
+                },
+                {
+                  "ref": "Gen.41.10"
+                },
+                {
+                  "ref": "Hos.7.4",
+                  "note": "Israel’s adulterers are “like an oven heated by the baker”, who leaves off stoking it from the kneading of the dough until it is leavened."
+                },
+                {
+                  "ref": "Hos.7.6",
+                  "note": "“Their baker sleeps all night; in the morning it burns as a flaming fire”: the figure carried on of the plotters’ hearts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be baked",
+          "senses": [
+            {
+              "id": "be-baked",
+              "gloss": "be baked (of an offering)",
+              "definition": "Passive of the qal: of the bread of the offerings, always with what it is baked with or in. The grain offering eaten by the priests is not to be baked with leaven; the two loaves of the fiftieth day are to be.",
+              "kin": [
+                "baked-thing"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.6.10",
+                  "role": "defining",
+                  "note": "“It shall not be baked with leaven (לֹא תֵאָפֶה חָמֵץ)”: the priests’ portion of the grain offering, “most holy”."
+                },
+                {
+                  "ref": "Lev.23.17",
+                  "role": "defining",
+                  "note": "“Two loaves … of fine flour; they shall be baked with leaven (חָמֵץ תֵּאָפֶינָה), firstfruits to Yahweh.”"
+                },
+                {
+                  "ref": "Lev.7.9",
+                  "role": "defining",
+                  "note": "“Every grain offering that is baked in the oven” beside what is made in a pan or on a griddle."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πέσσω",
+          "gloss": "bake",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 16:23 words 14–15, תֹּאפוּ אֵפוּ → πέσσητε πέσσετε; GEN 19:3 ἔπεψεν; LEV 23:17 πεφθήσονται; JER 37:21 πέσσουσιν",
+              "note": "The Septuagint’s usual word for the verb, which the New Testament does not use: the bridge goes nowhere."
+            }
+          ]
+        },
+        {
+          "lemma": "σιτοποιός",
+          "gloss": "baker (one who makes bread)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 40:17 word 7, אֹפֶה → σιτοποιοῦ; GEN 40:1, 40:5, 41:10 ἀρχισιτοποιός",
+              "note": "For the participle in Genesis; not used in the New Testament."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בִּשֵּׁל",
+            "note": "“Boil”, set beside baking as the other way of preparing food: of the manna, and of the offerings in the temple’s kitchens.",
+            "evidence": [
+              {
+                "ref": "Exo.16.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.46.20"
+              }
+            ]
+          },
+          {
+            "lemma": "צָלָה",
+            "note": "“Roast”, of meat, beside baking bread.",
+            "evidence": [
+              {
+                "ref": "Isa.44.19",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "לוּשׁ",
+            "note": "“Knead”, the step before baking.",
+            "evidence": [
+              {
+                "ref": "1Sa.28.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.7.4"
+              }
+            ]
+          },
+          {
+            "lemma": "מַשְׁקֶה",
+            "note": "The cupbearer, the baker’s fellow at Pharaoh’s table.",
+            "evidence": [
+              {
+                "ref": "Gen.40.1"
+              },
+              {
+                "ref": "Gen.40.5"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שַׂר הָאֹפִים",
+            "gloss": "chief of the bakers",
+            "evidence": [
+              {
+                "ref": "Gen.40.16"
+              },
+              {
+                "ref": "Gen.40.20"
+              },
+              {
+                "ref": "Gen.40.22"
+              },
+              {
+                "ref": "Gen.41.10"
+              }
+            ]
+          },
+          {
+            "phrase": "אָפָה לֶחֶם",
+            "gloss": "bake bread",
+            "evidence": [
+              {
+                "ref": "Isa.44.15"
+              },
+              {
+                "ref": "Isa.44.19"
+              },
+              {
+                "ref": "Lev.26.26"
+              }
+            ]
+          },
+          {
+            "phrase": "חוּץ הָאֹפִים",
+            "gloss": "the bakers’ street",
+            "evidence": [
+              {
+                "ref": "Jer.37.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַאֲפֶה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a thing baked",
+      "bdb": [
+        "a.ez.ab"
+      ],
+      "cognate_ids": [
+        "akk-epu"
+      ],
+      "summary": "A noun of place or product with prefixed מַ, once only, in the law of the grain offering. Its sense rests on the verb.",
+      "senses": [
+        {
+          "id": "baked-thing",
+          "gloss": "a thing baked (in the oven)",
+          "definition": "What is baked: in מַאֲפֵה תַנּוּר, a grain offering baked in the oven, which is to be unleavened loaves of fine flour mixed with oil or unleavened wafers anointed with oil.",
+          "kin": [
+            "be-baked"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.2.4",
+              "role": "defining",
+              "note": "“When you bring an offering of a grain offering מַאֲפֵה תַנּוּר, baked in the oven, it shall be unleavened cakes of fine flour mixed with oil, or unleavened wafers anointed with oil.”"
+            },
+            {
+              "ref": "Lev.7.9",
+              "note": "The same offering with the verb: “every grain offering that is baked (תֵּאָפֶה) in the oven”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πέσσω",
+          "gloss": "bake (perfect passive participle, “baked”)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 2:4 word 5, מַאֲפֵה → πεπεμμένην",
+              "note": "Not used in the New Testament."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-epu",
+      "lang": "akk",
+      "form": "epû",
+      "translit": "epû",
+      "gloss": "bake; (adjective) baked",
+      "relation": "cognate",
+      "note": "The verb, Middle and Neo-Assyrian, with a verbal adjective “baked”: the Hebrew sense exactly.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000023460, epû [bake] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000023460.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000080700, epû [baked] AJ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000572 ʾpy [bake] V, AKK002427 epû [bake] V"
+        }
+      ]
+    },
+    {
+      "id": "akk-epu-baker",
+      "lang": "akk",
+      "form": "ēpû, fem. ēpītu",
+      "translit": "ēpû, ēpītu",
+      "gloss": "baker; female baker",
+      "relation": "cognate",
+      "note": "The same noun for the baker as Hebrew’s participle, with a feminine as in 1Sa 8:13’s אֹפוֹת; common in Assyrian palace and temple records.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tsae x000007860, ēpû [baker] N",
+          "url": "https://oracc.museum.upenn.edu/tsae/cbd/akk/x000007860.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000056460, ēpītu [female baker] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-apy",
+      "lang": "uga",
+      "form": "𐎀𐎔𐎊",
+      "translit": "ʾpy",
+      "gloss": "bake",
+      "relation": "cognate",
+      "note": "Listed among Ugaritic verbs with third radical y.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 74, §54.57, /ʾ-p-y/ “to bake”",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n101"
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 47, ʾpy",
+          "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-lexical-relationship_fisher-milton-charles_1969-04/page/n58",
+          "note": "Ugaritic ʾpy “bake” set beside the Ethiopic verb (OCR read only)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000572 ʾpy [bake] V, UGC000510"
+        }
+      ]
+    },
+    {
+      "id": "uga-apy-baker",
+      "lang": "uga",
+      "form": "𐎀𐎔𐎊",
+      "translit": "ʾpy",
+      "gloss": "baker",
+      "relation": "cognate",
+      "note": "The participle as a noun, as in Hebrew.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎔𐎊 (ảpy), noun",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%94%F0%90%8E%8A",
+          "note": "“baker”; “Compare Hebrew אוֹפֶה”."
+        }
+      ]
+    },
+    {
+      "id": "phn-apy",
+      "lang": "phn",
+      "form": "𐤀𐤐𐤉",
+      "translit": "ʾpy",
+      "gloss": "bake; (participle) baker",
+      "relation": "cognate",
+      "note": "In the Kition temple accounts (KAI 37 A 10), payment “to the 2 bakers (ʾpm) who baked (ʾp) the … loaves of bread for the sacred liturgy”: verb and participle together, of bread baked for a sanctuary, as Lev 24:5 and Ezk 46:20.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 69, ʾ-P-Y, v. qal BAKE; KAI 37 A 10"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000572 ʾpy [bake] V, PUN000190"
+        }
+      ]
+    },
+    {
+      "id": "arc-afa",
+      "lang": "arc",
+      "form": "אֲפָא",
+      "translit": "ʾăpāʾ",
+      "gloss": "bake; (participle) baker; (ithpeel) be baked",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the Targum uses it for Hebrew אָפָה (Targ. Gen 19:3), אָפְיָיתָא “baking women” for 1Sa 8:13’s אֹפוֹת, and the ithpeel for the niphal at Lev 6:10.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲפָא (אֲפָה)",
+          "note": "Targ. Gen. 19:3; Targ. 1Sa. 8:13 אָפְיָיתָא “bakers”; Ithpe. Targ. Lev. 6:10."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000572 ʾpy [bake] V, ARM002280 ʾPY [bake] V"
+        }
+      ]
+    },
+    {
+      "id": "syc-apya",
+      "lang": "syc",
+      "form": "ܐܦܝܐ",
+      "translit": "ʾāpyā",
+      "gloss": "baker, cook",
+      "relation": "cognate",
+      "note": "Syriac noun of the root ʾ-p-ʾ “bake”. Not used in the Peshitta New Testament.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܐܦܝܐ, noun, etym. 1",
+          "url": "https://en.wiktionary.org/wiki/%DC%90%DC%A6%DC%9D%DC%90",
+          "note": "“baker, cook”; “From the root ܐ ܦ ܐ related to baking.”"
+        }
+      ]
+    },
+    {
+      "id": "gez-afaya",
+      "lang": "gez",
+      "form": "አፈየ",
+      "translit": "ʾafaya",
+      "gloss": "bake; (passive participle) baked",
+      "relation": "cognate",
+      "note": "Rare in Geʿez; the passive participle ʾəfuy “baked” is used of sacramental bread.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000572 ʾpy [bake] V, GEZ000131 ʾafaya [bake] V"
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 47, ʾpy",
+          "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-lexical-relationship_fisher-milton-charles_1969-04/page/n58",
+          "note": "Geʿez ʾpy(/w?) “bake”, participle “baked”, “rare, but used in” a phrase for sacramental bread (OCR read only)."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "leaven-and-the-offerings",
+      "statement": "No grain offering burnt on the altar was to be made with leaven (Lev 2:11), and the priests’ portion of it, “most holy”, “shall not be baked with leaven” (Lev 6:10). At the exodus the dough was baked unleavened because Israel was driven out and could not delay (Exo 12:39), and that “bread of affliction” was eaten every Passover to remember the haste of the going out (Deu 16:3). Yet on the fiftieth day Israel was to bring two loaves “baked with leaven, firstfruits to Yahweh” (Lev 23:17): waved before Yahweh with the lambs, holy to him for the priest (Lev 23:20), and, as leavened firstfruits, never to go up on the altar (Lev 2:12). Jesus calls the Pharisees’ teaching and hypocrisy leaven (Mat 16:6, 12; Luk 12:1), and Paul says “Christ our Passover is sacrificed for us; therefore let us keep the feast, not with old leaven … but with the unleavened bread of sincerity and truth” (1Co 5:7–8). On the day of that feast of the fiftieth day the spirit was poured out and three thousand were added (Act 2:1–4, 41), and James says God brought believers forth by the word of truth “that we should be a kind of firstfruits of his creatures” (Jas 1:18). From the verses: what was wholly given to God at the altar had no leaven in it, as Christ had no sin; the firstfruits brought at the fiftieth day had leaven in them and were still accepted as holy to Yahweh, as are those he calls his firstfruits, who are told to purge the old leaven out.",
+      "evidence": [
+        {
+          "ref": "Lev.2.11",
+          "to": "Lev.2.12"
+        },
+        {
+          "ref": "Lev.6.10"
+        },
+        {
+          "ref": "Exo.12.39"
+        },
+        {
+          "ref": "Deu.16.3"
+        },
+        {
+          "ref": "Lev.23.17"
+        },
+        {
+          "ref": "Lev.23.20"
+        },
+        {
+          "ref": "Mat.16.6"
+        },
+        {
+          "ref": "Mat.16.12"
+        },
+        {
+          "ref": "Luk.12.1"
+        },
+        {
+          "ref": "1Co.5.6",
+          "to": "1Co.5.8"
+        },
+        {
+          "ref": "Act.2.1",
+          "to": "Act.2.4"
+        },
+        {
+          "ref": "Act.2.41"
+        },
+        {
+          "ref": "Jas.1.18"
+        }
+      ]
+    },
+    {
+      "topic": "idols-are-wood",
+      "statement": "Isaiah’s idol-maker takes one tree, burns half of it to warm himself and bake his bread, and makes the rest a god and bows down to it (Isa 44:15–17); he does not stop to say, “half of it I burned in the fire, and I baked bread on its coals … shall I make the rest of it an abomination? shall I bow down to a block of wood?” (Isa 44:19). He “feeds on ashes” and cannot deliver his soul (Isa 44:20), while Yahweh is the one who formed Israel and blots out its sins (Isa 44:21–22). Paul says likewise that the Godhead is not like gold or silver or stone graven by man’s art (Act 17:29) and that an idol is nothing in the world (1Co 8:4). From the verses: the ordinary use of the wood, baking bread, shows what the idol is, a thing no different from fuel, and only Yahweh saves.",
+      "evidence": [
+        {
+          "ref": "Isa.44.15",
+          "to": "Isa.44.17"
+        },
+        {
+          "ref": "Isa.44.19",
+          "to": "Isa.44.22"
+        },
+        {
+          "ref": "Act.17.29"
+        },
+        {
+          "ref": "1Co.8.4"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (תֵּאָפֶינָה, Lev 23:17). BDB key m.ag.ab, a zero-token cross-reference for מַאֲפֶה, is left out; a.ez.ab counts the noun. The participle אֹפֶה is kept as a sense of the qal, since BDB counts it there; review whether it should be a word of its own. Hos 7:6 is read as the text has it, אֹפֵהֶם “their baker”. Left out: תֻּפִינִים (Lev 6:14, “baked pieces”?), which the database files under BDB w.bi.al with root תעע; its derivation is uncertain, and if it is from אפה it belongs here (review). No Arabic cognate found: Lane has no verb ʾ-f-y/ʾ-f-w “bake”, and ءفه (p. 70) is the interjection uff; the Arabic word for oven sometimes compared was not found in Lane and is not entered. Syriac: SEDRA (New Testament only) has no word of the root; Payne Smith not consulted, so the Syriac rests on Wiktionary; check Payne Smith for the verb ʾĕpā and ʾāpyā. Fisher p. 47 read only from OCR (the PDF is too large to render here); page from the scan’s page map. Krahmalkov p. 69 read from the local text layer. Greek: neither πέσσω nor σιτοποιός occurs in the New Testament, so the Greek gives no bridge; no loans. Open questions: (1) whether the doctrine on the leavened loaves of the fiftieth day says more than the verses carry; (2) תֻּפִינִים."
+}
