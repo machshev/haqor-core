@@ -1,0 +1,1763 @@
+{
+  "id": "nachal",
+  "root": "נחל",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "inheritance",
+    "land",
+    "covenant",
+    "water",
+    "geography",
+    "feasts"
+  ],
+  "gloss": "receive as an allotted holding, inherit; inheritance; (another older root) wadi, torrent-valley",
+  "summary": "One Hebrew spelling covering two older roots, as the cognates show. With ḥ, נָחַל is to receive a holding allotted to one, to inherit, and in the causative stems to apportion it; נַחֲלָה is that holding: a family's or tribe's share of the land, kept in the family and passed to heirs (Num 27:8; 36:7; 1Ki 21:3), any portion given one (Gen 31:14), Israel as Yahweh's own (Deu 32:9), and Yahweh himself as the Levites' inheritance (Deu 18:2). With ḫ, נַחַל is the wadi, a valley whose stream runs in the rains and dries in the heat (1Ki 17:7; Job 6:15), the boundaries of the land (the wadi of Egypt, the Arnon), the place of the willows Israel took up at Sukkot (Lev 23:40), and the stream that flows from the house in Ezekiel’s vision and gives life where it goes (Ezk 47:9). Ugaritic, Sabaean and Arabic keep the two apart: nḥl “give, inherit” beside nḫl “wadi” and “palm grove”.",
+  "words": [
+    {
+      "lemma": "נַחֲלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "inheritance: an allotted holding, a share; what belongs to one as his own",
+      "bdb": [
+        "n.cp.ab",
+        "n.cq.af"
+      ],
+      "cognate_ids": [
+        "uga-nhlt",
+        "uga-nhl-heir",
+        "ar-nahala",
+        "sab-nhl"
+      ],
+      "senses": [
+        {
+          "id": "nachalah-land",
+          "gloss": "a holding of land, an inheritance",
+          "definition": "The share of the land allotted to a tribe, clan or family, held by it and passed down to its heirs, not to be sold off or moved to another tribe.",
+          "evidence": [
+            {
+              "ref": "Num.26.53",
+              "to": "Num.26.56",
+              "role": "defining",
+              "note": "“To these the land shall be divided as a נַחֲלָה by the number of names”; the many have more, the few less, by lot."
+            },
+            {
+              "ref": "Num.27.8",
+              "role": "defining",
+              "note": "A man who dies with no son: “you shall pass his נַחֲלָה to his daughter”, then to his brothers, his father's brothers, his nearest kin (vv. 9–11)."
+            },
+            {
+              "ref": "Num.36.7",
+              "role": "defining",
+              "note": "“The נַחֲלָה of the sons of Israel shall not turn from tribe to tribe; each shall cleave to the נַחֲלָה of the tribe of his fathers.”"
+            },
+            {
+              "ref": "1Ki.21.3",
+              "role": "defining",
+              "note": "Naboth: “Yahweh forbid that I should give the נַחֲלָה of my fathers to you.”"
+            },
+            {
+              "ref": "Jos.11.23",
+              "note": "Joshua gave the land as a נַחֲלָה to Israel by their divisions."
+            },
+            {
+              "ref": "Jos.19.51",
+              "note": "The נְחָלֹת distributed by lot at Shiloh before Yahweh."
+            },
+            {
+              "ref": "Num.33.54"
+            },
+            {
+              "ref": "Rut.4.5",
+              "note": "The redeemer must take Ruth “to raise up the name of the dead upon his נַחֲלָה” (v. 10)."
+            },
+            {
+              "ref": "Rut.4.10"
+            },
+            {
+              "ref": "Deu.19.14",
+              "note": "The neighbour's landmark, set by those before, in the נַחֲלָה you inherit."
+            },
+            {
+              "ref": "Mic.2.2",
+              "note": "They oppress a man and his house, a man and his נַחֲלָה."
+            },
+            {
+              "ref": "Ezk.46.16",
+              "to": "Ezk.46.18",
+              "note": "The prince's gift to his sons stays theirs; a gift to a servant returns at the year of liberty; he shall not take the people's נַחֲלָה."
+            },
+            {
+              "ref": "Pro.19.14",
+              "note": "House and wealth are the נַחֲלָה of fathers, but a wise wife is from Yahweh."
+            },
+            {
+              "ref": "Lam.5.2",
+              "note": "“Our נַחֲלָה is turned to strangers.”"
+            },
+            {
+              "ref": "Ezk.47.22",
+              "note": "In the land divided again, the strangers who have begotten sons among Israel shall have a נַחֲלָה among the tribes."
+            }
+          ]
+        },
+        {
+          "id": "nachalah-share",
+          "gloss": "a share, portion, what falls to one",
+          "definition": "Anything allotted to a person as his: a share in a father's house, the tithe given the Levites, a man's portion from God, sons given by Yahweh.",
+          "evidence": [
+            {
+              "ref": "Gen.31.14",
+              "role": "defining",
+              "note": "“Is there still for us a חֵלֶק and a נַחֲלָה in our father's house?”"
+            },
+            {
+              "ref": "Num.18.21",
+              "role": "defining",
+              "note": "“To the sons of Levi I have given all the tithe in Israel as a נַחֲלָה, in return for their service.”"
+            },
+            {
+              "ref": "2Sa.20.1",
+              "role": "defining",
+              "note": "“We have no חֵלֶק in David, no נַחֲלָה in the son of Jesse”: a share in the king's house; the same cry in 1Ki 12:16."
+            },
+            {
+              "ref": "1Ki.12.16"
+            },
+            {
+              "ref": "Job.31.2",
+              "note": "“The חֵלֶק of God from above, the נַחֲלָה of the Almighty from on high.”"
+            },
+            {
+              "ref": "Job.20.29",
+              "note": "The wicked man's חֵלֶק from God and the נַחֲלָה appointed him by God; again Job 27:13."
+            },
+            {
+              "ref": "Psa.127.3",
+              "note": "“Sons are a נַחֲלָה of Yahweh.”"
+            },
+            {
+              "ref": "Isa.54.17",
+              "note": "“This is the נַחֲלָה of the servants of Yahweh.”"
+            },
+            {
+              "ref": "Pro.20.21",
+              "note": "A נַחֲלָה gained hastily at the beginning will not be blessed at the end."
+            },
+            {
+              "ref": "Ecc.7.11",
+              "note": "Wisdom is good with a נַחֲלָה."
+            },
+            {
+              "ref": "Job.42.15",
+              "note": "Job's daughters given a נַחֲלָה among their brothers."
+            }
+          ]
+        },
+        {
+          "id": "nachalah-yahweh-levites",
+          "gloss": "Yahweh as the inheritance of the priests and Levites",
+          "definition": "The tribe given no share of the land: Yahweh himself, and the offerings made to him, are its inheritance.",
+          "evidence": [
+            {
+              "ref": "Num.18.20",
+              "role": "defining",
+              "note": "To Aaron: “You shall have no נַחֲלָה in their land … I am your חֵלֶק and your נַחֲלָה among the sons of Israel.”"
+            },
+            {
+              "ref": "Deu.18.1",
+              "to": "Deu.18.2",
+              "role": "defining",
+              "note": "“They shall have no נַחֲלָה among their brothers; Yahweh is their נַחֲלָה, as he said to them.”"
+            },
+            {
+              "ref": "Deu.10.9"
+            },
+            {
+              "ref": "Jos.13.14",
+              "note": "The fire offerings of Yahweh are Levi's נַחֲלָה; “Yahweh the God of Israel is their נַחֲלָה” (v. 33)."
+            },
+            {
+              "ref": "Jos.13.33"
+            },
+            {
+              "ref": "Ezk.44.28",
+              "note": "Of the priests in the house of Ezekiel's vision: “I am their נַחֲלָה … I am their possession.”"
+            },
+            {
+              "ref": "Psa.16.5",
+              "to": "Psa.16.6",
+              "note": "Yahweh the portion of David's share and his cup; “the cords have fallen to me in pleasant places; yes, the נַחֲלָה is beautiful to me”."
+            }
+          ]
+        },
+        {
+          "id": "nachalah-yahwehs",
+          "gloss": "Yahweh's inheritance: his people, his land",
+          "definition": "What belongs to Yahweh as his own allotted portion: Israel, the people he brought out of Egypt, and the land and mountain where he set them.",
+          "evidence": [
+            {
+              "ref": "Deu.32.8",
+              "to": "Deu.32.9",
+              "role": "defining",
+              "note": "When the Most High gave the nations their holdings, “Yahweh's חֵלֶק is his people, Jacob the cord of his נַחֲלָה”."
+            },
+            {
+              "ref": "Deu.9.29",
+              "role": "defining",
+              "note": "“They are your people and your נַחֲלָה, whom you brought out by your great power.”"
+            },
+            {
+              "ref": "Exo.15.17",
+              "role": "defining",
+              "note": "“You will bring them in and plant them in the mountain of your נַחֲלָה, the place you made to dwell in.”"
+            },
+            {
+              "ref": "Deu.4.20",
+              "note": "Taken out of the iron furnace “to be to him a people of נַחֲלָה”."
+            },
+            {
+              "ref": "1Ki.8.51",
+              "to": "1Ki.8.53"
+            },
+            {
+              "ref": "Psa.28.9",
+              "note": "“Save your people and bless your נַחֲלָה.”"
+            },
+            {
+              "ref": "Psa.33.12"
+            },
+            {
+              "ref": "Psa.94.14"
+            },
+            {
+              "ref": "Isa.19.25",
+              "note": "“Blessed be Egypt my people, Assyria the work of my hands, and Israel my נַחֲלָה.”"
+            },
+            {
+              "ref": "Jol.2.17",
+              "note": "“Spare your people, Yahweh, and do not give your נַחֲלָה to reproach.”"
+            },
+            {
+              "ref": "Mic.7.14",
+              "note": "The flock of your נַחֲלָה; “the remnant of his נַחֲלָה” (v. 18)."
+            },
+            {
+              "ref": "1Sa.26.19",
+              "note": "David driven out “from cleaving to the נַחֲלָה of Yahweh”: the land."
+            },
+            {
+              "ref": "Jer.2.7",
+              "note": "“You made my נַחֲלָה an abomination”: the land."
+            },
+            {
+              "ref": "Jer.12.7",
+              "to": "Jer.12.9"
+            },
+            {
+              "ref": "Psa.79.1",
+              "note": "“The nations have come into your נַחֲלָה; they have defiled your holy temple.”"
+            }
+          ]
+        },
+        {
+          "id": "nachalah-nations",
+          "gloss": "the nations as the inheritance of Yahweh's son",
+          "definition": "The nations and the ends of the earth given to the king Yahweh calls his son, as his holding.",
+          "evidence": [
+            {
+              "ref": "Psa.2.8",
+              "role": "defining",
+              "note": "“Ask of me, and I will give the nations as your נַחֲלָה, and the ends of the earth as your possession.”"
+            },
+            {
+              "ref": "Psa.82.8",
+              "note": "“Arise, O God, judge the earth, for you shall take all the nations as your own” (the verb)."
+            },
+            {
+              "ref": "Heb.1.2",
+              "note": "The Son “whom he appointed heir of all things”, in the chapter that quotes Psa 2:7 (Heb 1:5)."
+            }
+          ],
+          "kin": [
+            "nachal-qal-yahweh"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κληρονομία",
+          "gloss": "inheritance",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נַחֲלָה → κληρονομία ×120 (lemma count, MACULA alignment); Exo.15.17, Num.18.20, Deu.32.9, Psa.2.8"
+            },
+            {
+              "ref": "Act.7.5",
+              "note": "God gave Abraham no κληρονομία in the land, not a foot's breadth, yet promised it to him and his seed."
+            },
+            {
+              "ref": "Act.20.32"
+            },
+            {
+              "ref": "Gal.3.18",
+              "note": "“If the κληρονομία is of the law, it is no more of promise; but God gave it to Abraham by promise.”"
+            },
+            {
+              "ref": "Eph.1.14"
+            },
+            {
+              "ref": "Eph.1.18",
+              "note": "“The riches of the glory of his κληρονομία in the saints.”"
+            },
+            {
+              "ref": "Col.3.24"
+            },
+            {
+              "ref": "Heb.9.15",
+              "note": "The promise of the eternal κληρονομία."
+            },
+            {
+              "ref": "Heb.11.8",
+              "note": "Abraham went out to the place he was to receive as a κληρονομία."
+            },
+            {
+              "ref": "1Pe.1.4",
+              "note": "A κληρονομία incorruptible, undefiled, unfading, kept in the heavens."
+            }
+          ]
+        },
+        {
+          "lemma": "κλῆρος",
+          "gloss": "lot; share, portion",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נַחֲלָה → κλῆρος ×27 (lemma count, MACULA alignment); Deu.10.9, Deu.12.12"
+            },
+            {
+              "ref": "Act.8.21",
+              "note": "“You have neither part nor κλῆρος in this matter”: the Levites' “no חֵלֶק and no נַחֲלָה” (Deu 12:12) in its Greek dress."
+            },
+            {
+              "ref": "Act.26.18",
+              "note": "A κλῆρος among those sanctified by faith."
+            },
+            {
+              "ref": "Col.1.12",
+              "note": "“The share of the κλῆρος of the saints in the light.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חֵלֶק",
+            "note": "The fixed pair “share and inheritance”, and in parallel lines.",
+            "evidence": [
+              {
+                "ref": "Gen.31.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.10.9"
+              },
+              {
+                "ref": "2Sa.20.1"
+              },
+              {
+                "ref": "Deu.32.9"
+              },
+              {
+                "ref": "Job.31.2"
+              }
+            ]
+          },
+          {
+            "lemma": "גּוֹרָל",
+            "note": "The lot that decides each holding.",
+            "evidence": [
+              {
+                "ref": "Num.26.55",
+                "to": "Num.26.56",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.33.54"
+              },
+              {
+                "ref": "Num.36.3"
+              }
+            ]
+          },
+          {
+            "lemma": "אֲחֻזָּה",
+            "note": "A holding seized or held; “a possession of inheritance”.",
+            "evidence": [
+              {
+                "ref": "Num.27.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.32.32"
+              },
+              {
+                "ref": "Ezk.44.28"
+              },
+              {
+                "ref": "Psa.2.8"
+              }
+            ]
+          },
+          {
+            "lemma": "עַם",
+            "note": "Yahweh's people and his inheritance.",
+            "evidence": [
+              {
+                "ref": "Deu.9.29",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.8.51"
+              },
+              {
+                "ref": "Psa.28.9"
+              },
+              {
+                "ref": "Psa.94.14"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חֵלֶק וְנַחֲלָה",
+            "gloss": "share and inheritance (the Levites have none)",
+            "evidence": [
+              {
+                "ref": "Deu.10.9"
+              },
+              {
+                "ref": "Deu.12.12"
+              },
+              {
+                "ref": "Deu.14.27"
+              },
+              {
+                "ref": "Deu.18.1"
+              }
+            ]
+          },
+          {
+            "phrase": "יְהוָה הוּא נַחֲלָתוֹ",
+            "gloss": "Yahweh is his inheritance",
+            "evidence": [
+              {
+                "ref": "Deu.10.9"
+              },
+              {
+                "ref": "Deu.18.2"
+              },
+              {
+                "ref": "Jos.13.33"
+              }
+            ]
+          },
+          {
+            "phrase": "חֶבֶל נַחֲלָה",
+            "gloss": "the measuring cord of an inheritance: an allotted portion",
+            "evidence": [
+              {
+                "ref": "Deu.32.9"
+              },
+              {
+                "ref": "Psa.105.11"
+              },
+              {
+                "ref": "1Ch.16.18"
+              }
+            ]
+          },
+          {
+            "phrase": "הַר נַחֲלָתְךָ",
+            "gloss": "the mountain of your inheritance",
+            "evidence": [
+              {
+                "ref": "Exo.15.17"
+              }
+            ]
+          },
+          {
+            "phrase": "עַם נַחֲלָה",
+            "gloss": "a people of inheritance, Yahweh's own",
+            "evidence": [
+              {
+                "ref": "Deu.4.20"
+              }
+            ]
+          },
+          {
+            "phrase": "נָפַל בְּנַחֲלָה",
+            "gloss": "fall (to one) as an inheritance",
+            "evidence": [
+              {
+                "ref": "Num.34.2"
+              },
+              {
+                "ref": "Ezk.47.14"
+              },
+              {
+                "ref": "Jdg.18.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נַחַל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wadi, torrent-valley; the stream in it, a torrent",
+      "summary": "Named for the valley and its stream at once: a watercourse that runs in the rains, fails in the heat, and gives its name to the valley it cuts. The cognates (Ugaritic nḫl, Akkadian naḫallu) show ḫ behind the ח, not the ḥ of נָחַל “inherit”, so this is another older root in the same spelling.",
+      "bdb": [
+        "n.cq.ab"
+      ],
+      "cognate_ids": [
+        "uga-nkhl",
+        "akk-nakhallu",
+        "arc-nachala",
+        "syc-nachla"
+      ],
+      "senses": [
+        {
+          "id": "nachal-valley",
+          "gloss": "wadi, torrent-valley",
+          "definition": "A valley cut by a watercourse, named with its stream: a place one camps, digs wells, cuts grapes, gathers willows and stones, and draws a boundary along.",
+          "cognate_ids": [
+            "sab-nkhl",
+            "ar-nakhl"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.26.17",
+              "role": "defining",
+              "note": "Isaac camped in the נַחַל of Gerar and dwelt there; his servants dug in the נַחַל and found a well of living water (v. 19)."
+            },
+            {
+              "ref": "Gen.26.19"
+            },
+            {
+              "ref": "Num.13.23",
+              "to": "Num.13.24",
+              "role": "defining",
+              "note": "The spies came to the נַחַל of Eshcol and cut a cluster of grapes there; the place was named for it."
+            },
+            {
+              "ref": "Deu.21.4",
+              "role": "defining",
+              "note": "The heifer brought down to “a נַחַל אֵיתָן, which is neither worked nor sown”: a valley with a constant stream."
+            },
+            {
+              "ref": "Lev.23.40",
+              "note": "At Sukkot Israel takes up, among the branches, “willows of the נָחַל”."
+            },
+            {
+              "ref": "1Sa.17.40",
+              "note": "David chose five smooth stones from the נַחַל."
+            },
+            {
+              "ref": "Sng.6.11",
+              "note": "“To see the green shoots of the נָּחַל.”"
+            },
+            {
+              "ref": "Jos.13.16",
+              "note": "Aroer on the lip of the wadi Arnon, and the city in the middle of the נַחַל."
+            },
+            {
+              "ref": "Isa.57.5",
+              "to": "Isa.57.6",
+              "note": "Children slaughtered in the נְחָלִים; “among the smooth stones of the נַחַל is your חֵלֶק; they, they are your lot”, set against v. 13: whoever trusts in Yahweh shall inherit (יִנְחַל) the land."
+            },
+            {
+              "ref": "Job.21.33",
+              "note": "The clods of the נַחַל are sweet to the dead man."
+            },
+            {
+              "ref": "Job.30.6",
+              "note": "Outcasts dwelling in the clefts of the נְחָלִים."
+            },
+            {
+              "ref": "Num.24.6",
+              "note": "Israel's tents “like נְחָלִים spread out, like gardens by the river”: valleys stretched out. A reading “palms” (Arabic naḫl, Sabaean nḫl) is possible but nothing in the verse requires it."
+            }
+          ]
+        },
+        {
+          "id": "nachal-boundary",
+          "gloss": "a wadi as a landmark or border",
+          "definition": "A named wadi marking where a land or a journey begins or ends.",
+          "evidence": [
+            {
+              "ref": "Num.34.5",
+              "role": "defining",
+              "note": "The southern border turns from Azmon “to the wadi of Egypt” (נַחְלָה), and its end is at the sea."
+            },
+            {
+              "ref": "Deu.3.8",
+              "role": "defining",
+              "note": "The land taken “from the wadi Arnon to Mount Hermon”."
+            },
+            {
+              "ref": "Deu.2.13",
+              "to": "Deu.2.14",
+              "note": "“Rise up and cross the wadi Zered”: thirty-eight years from Kadesh Barnea to its crossing."
+            },
+            {
+              "ref": "Gen.32.24",
+              "note": "Jacob sent his household across the נַחַל, the Jabbok."
+            },
+            {
+              "ref": "1Ki.8.65",
+              "note": "All Israel “from the entrance of Hamath to the wadi of Egypt”."
+            },
+            {
+              "ref": "Isa.27.12",
+              "note": "Yahweh threshes “from the flowing of the river to the wadi of Egypt”."
+            },
+            {
+              "ref": "2Sa.15.23",
+              "note": "David crossed the wadi Kidron, fleeing Absalom, all the land weeping."
+            },
+            {
+              "ref": "1Ki.2.37",
+              "note": "The day Shimei crosses the wadi Kidron he shall die."
+            },
+            {
+              "ref": "2Ki.23.6",
+              "note": "Josiah burned the Asherah at the wadi Kidron and ground it to dust; so 2Ch 29:16, uncleanness carried out to the wadi."
+            },
+            {
+              "ref": "Jer.31.40",
+              "note": "The valley of dead bodies and all the fields to the wadi Kidron “holy to Yahweh”."
+            },
+            {
+              "ref": "1Sa.30.9",
+              "to": "1Sa.30.10",
+              "note": "The wadi Besor, where the weary two hundred stayed."
+            }
+          ]
+        },
+        {
+          "id": "nachal-stream",
+          "gloss": "the stream of a wadi, torrent; running water",
+          "definition": "The water itself: a stream that runs and fails with the seasons, or swells to a torrent that sweeps away; often in figures.",
+          "evidence": [
+            {
+              "ref": "1Ki.17.7",
+              "role": "defining",
+              "note": "Elijah drank from the wadi Cherith, “and the נַחַל dried up, because there was no rain in the land”."
+            },
+            {
+              "ref": "Job.6.15",
+              "to": "Job.6.17",
+              "role": "defining",
+              "note": "“My brothers dealt deceitfully like a נַחַל”: dark with ice and snow, vanishing when it is warm."
+            },
+            {
+              "ref": "Lev.11.9",
+              "role": "defining",
+              "note": "Fish with fins and scales “in the waters, in the seas and in the נְחָלִים”."
+            },
+            {
+              "ref": "Ecc.1.7",
+              "note": "“All the נְחָלִים go to the sea, yet the sea is not full.”"
+            },
+            {
+              "ref": "Jdg.5.21",
+              "note": "“The נַחַל Kishon swept them away, that ancient נַחַל.”"
+            },
+            {
+              "ref": "Deu.8.7",
+              "note": "A good land, a land of נַחֲלֵי מָיִם, of springs and deeps going out in valley and hill."
+            },
+            {
+              "ref": "Psa.104.10",
+              "note": "He sends springs into the נְחָלִים; they run between the hills."
+            },
+            {
+              "ref": "Psa.78.20",
+              "note": "He struck the rock, the waters gushed, the נְחָלִים overflowed."
+            },
+            {
+              "ref": "Isa.35.6",
+              "note": "Waters break out in the wilderness, and נְחָלִים in the desert."
+            },
+            {
+              "ref": "Psa.110.7",
+              "note": "The king at Yahweh's right hand “will drink from the נַחַל in the way; therefore he will lift up the head”."
+            },
+            {
+              "ref": "Psa.124.4",
+              "note": "“The torrent (נַחְלָה) would have gone over our soul.”"
+            },
+            {
+              "ref": "Psa.18.5",
+              "note": "“The torrents of worthlessness terrified me”, beside the cords of death and of the grave."
+            },
+            {
+              "ref": "Jer.47.2",
+              "note": "“Waters rise out of the north and become an overflowing נַחַל”: the invader coming on the Philistines."
+            },
+            {
+              "ref": "Isa.30.28",
+              "note": "Yahweh's breath “like an overflowing נַחַל that reaches to the neck”."
+            },
+            {
+              "ref": "Amo.5.24",
+              "note": "“Let righteousness roll like a נַחַל אֵיתָן”, a stream that does not fail."
+            },
+            {
+              "ref": "Mic.6.7",
+              "note": "“Ten thousands of נַחֲלֵי oil.”"
+            },
+            {
+              "ref": "Psa.36.9",
+              "note": "“You give them drink from the נַחַל of your delights.”"
+            },
+            {
+              "ref": "Jer.31.9",
+              "note": "Yahweh leads the returning exiles “to נַחֲלֵי מַיִם, in a straight way”."
+            },
+            {
+              "ref": "Isa.66.12",
+              "note": "Peace like a river, the glory of the nations “like an overflowing נַחַל”."
+            },
+            {
+              "ref": "Job.28.4",
+              "note": "The miner breaks open a נַחַל far from where men live: a shaft or channel cut in rock; the sense is uncertain."
+            }
+          ]
+        },
+        {
+          "id": "nachal-from-the-house",
+          "gloss": "the stream that flows from Yahweh's house",
+          "definition": "In Ezekiel's vision and Joel's, the water going out from the house becomes a wadi too deep to cross, and life and healing follow it.",
+          "evidence": [
+            {
+              "ref": "Ezk.47.5",
+              "role": "defining",
+              "note": "“A נַחַל that I could not cross, for the waters had risen, waters to swim in.”"
+            },
+            {
+              "ref": "Ezk.47.9",
+              "role": "defining",
+              "note": "“Every living soul that swarms, wherever the נַחֲלַיִם come, shall live … everything shall live where the נַחַל comes.”"
+            },
+            {
+              "ref": "Ezk.47.12",
+              "note": "By the נַחַל on its banks every tree for food; its fruit for food, its leaf for healing."
+            },
+            {
+              "ref": "Jol.4.18",
+              "note": "A spring goes out from the house of Yahweh and waters the נַחַל of Shittim."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χείμαρρος",
+          "gloss": "winter-flowing stream, torrent, wadi",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נַחַל → χείμαρρος ×47 (lemma count, MACULA alignment); Lev.23.40, 2Sa.15.23, Ezk.47.5"
+            },
+            {
+              "ref": "Jhn.18.1",
+              "note": "Jesus went out with his disciples “across the χείμαρρος Kidron”, where David had crossed weeping (2Sa 15:23)."
+            }
+          ]
+        },
+        {
+          "lemma": "ποταμός",
+          "gloss": "river, stream",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נַחַל → ποταμός ×7 (lemma count, MACULA alignment); Ezk.47.9, Ezk.47.12"
+            },
+            {
+              "ref": "Rev.22.1",
+              "to": "Rev.22.2",
+              "note": "The ποταμός of the water of life going out from the throne, with the tree of life on either side, its leaves for the healing of the nations: Ezk 47:12."
+            },
+            {
+              "ref": "Jhn.7.38",
+              "note": "“As the scripture said, out of his belly shall flow ποταμοί of living water.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָהָר",
+            "note": "Wadi beside river.",
+            "evidence": [
+              {
+                "ref": "Num.24.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.66.12"
+              },
+              {
+                "ref": "Psa.74.15"
+              }
+            ]
+          },
+          {
+            "lemma": "מַעְיָן",
+            "note": "The spring that feeds the wadi.",
+            "evidence": [
+              {
+                "ref": "Psa.104.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.74.15"
+              },
+              {
+                "ref": "Jol.4.18"
+              }
+            ]
+          },
+          {
+            "lemma": "יָם",
+            "note": "Seas and wadis together, all the waters; the wadis run to the sea.",
+            "evidence": [
+              {
+                "ref": "Lev.11.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.1.7"
+              },
+              {
+                "ref": "Ezk.47.8"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עַרְבֵי־נָחַל",
+            "gloss": "willows of the wadi",
+            "evidence": [
+              {
+                "ref": "Lev.23.40"
+              },
+              {
+                "ref": "Job.40.22"
+              }
+            ]
+          },
+          {
+            "phrase": "נַחַל מִצְרַיִם",
+            "gloss": "the wadi of Egypt, the land's southwest border",
+            "evidence": [
+              {
+                "ref": "Num.34.5"
+              },
+              {
+                "ref": "1Ki.8.65"
+              },
+              {
+                "ref": "2Ki.24.7"
+              },
+              {
+                "ref": "Isa.27.12"
+              }
+            ]
+          },
+          {
+            "phrase": "נַחַל אַרְנֹן",
+            "gloss": "the wadi Arnon, Moab's border",
+            "evidence": [
+              {
+                "ref": "Num.21.14"
+              },
+              {
+                "ref": "Deu.2.24"
+              },
+              {
+                "ref": "Deu.3.8"
+              }
+            ]
+          },
+          {
+            "phrase": "נַחַל קִדְרוֹן",
+            "gloss": "the wadi Kidron, east of Jerusalem",
+            "evidence": [
+              {
+                "ref": "2Sa.15.23"
+              },
+              {
+                "ref": "1Ki.2.37"
+              },
+              {
+                "ref": "2Ki.23.6"
+              },
+              {
+                "ref": "Jer.31.40"
+              }
+            ]
+          },
+          {
+            "phrase": "נַחַל קִישׁוֹן",
+            "gloss": "the wadi Kishon",
+            "evidence": [
+              {
+                "ref": "Jdg.4.7"
+              },
+              {
+                "ref": "Jdg.5.21"
+              },
+              {
+                "ref": "1Ki.18.40"
+              },
+              {
+                "ref": "Psa.83.10"
+              }
+            ]
+          },
+          {
+            "phrase": "נַחַל שׁוֹטֵף",
+            "gloss": "an overflowing torrent",
+            "evidence": [
+              {
+                "ref": "Isa.30.28"
+              },
+              {
+                "ref": "Isa.66.12"
+              },
+              {
+                "ref": "Jer.47.2"
+              }
+            ]
+          },
+          {
+            "phrase": "נַחַל אֵיתָן",
+            "gloss": "a wadi that does not fail, a constant stream",
+            "evidence": [
+              {
+                "ref": "Deu.21.4"
+              },
+              {
+                "ref": "Amo.5.24"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נָחַל",
+      "pos": "verb",
+      "gloss": "receive as an allotted holding, inherit; (piel, hiphil) apportion, give as an inheritance",
+      "summary": "The verb of נַחֲלָה, often with it as object (“inherit an inheritance”, Num 18:23): to come into a holding allotted by lot or left by a father, and with Yahweh as subject to take a people as his own.",
+      "bdb": [
+        "n.cp.ac"
+      ],
+      "cognate_ids": [
+        "uga-nhlt",
+        "uga-nhl-heir",
+        "ar-nahala",
+        "sab-nhl"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "receive as one's holding, inherit; take as one's own; apportion",
+          "senses": [
+            {
+              "gloss": "receive a holding, inherit land",
+              "definition": "To come into one's allotted share of the land, or into a father's house.",
+              "evidence": [
+                {
+                  "ref": "Num.18.20",
+                  "role": "defining",
+                  "note": "“In their land you shall not inherit (תִנְחָל), and you shall have no חֵלֶק among them.”"
+                },
+                {
+                  "ref": "Num.32.19",
+                  "role": "defining",
+                  "note": "Reuben and Gad: “We will not inherit with them across the Jordan, for our נַחֲלָה has come to us on this side.”"
+                },
+                {
+                  "ref": "Jdg.11.2",
+                  "role": "defining",
+                  "note": "Jephthah's brothers: “You shall not inherit in our father's house, for you are the son of another woman.”"
+                },
+                {
+                  "ref": "Num.18.23",
+                  "to": "Num.18.24"
+                },
+                {
+                  "ref": "Exo.23.30",
+                  "note": "Little by little “until you are fruitful and inherit the land”."
+                },
+                {
+                  "ref": "Exo.32.13",
+                  "note": "Moses recalls the oath to Abraham, Isaac and Israel: “all this land … they shall inherit it for ever”."
+                },
+                {
+                  "ref": "Jos.14.1"
+                },
+                {
+                  "ref": "Jos.19.9"
+                },
+                {
+                  "ref": "Ezk.47.14",
+                  "note": "“You shall inherit it, each man like his brother.”"
+                },
+                {
+                  "ref": "Isa.57.13",
+                  "note": "“Whoever takes refuge in me shall inherit the land and possess my holy mountain.”"
+                },
+                {
+                  "ref": "Psa.69.37",
+                  "note": "The seed of his servants shall inherit it, and those who love his name shall dwell in it."
+                },
+                {
+                  "ref": "Zep.2.9",
+                  "note": "The remnant of my nation shall inherit Moab and Ammon."
+                }
+              ]
+            },
+            {
+              "id": "nachal-qal-yahweh",
+              "gloss": "take as one's own (Yahweh)",
+              "definition": "With Yahweh as subject: to take a people or the nations as his own holding.",
+              "evidence": [
+                {
+                  "ref": "Exo.34.9",
+                  "role": "defining",
+                  "note": "Moses: “pardon our iniquity and our sin, and take us as your own (וּנְחַלְתָּנוּ).”"
+                },
+                {
+                  "ref": "Zec.2.16",
+                  "role": "defining",
+                  "note": "“Yahweh will inherit Judah as his חֵלֶק on the holy ground, and will again choose Jerusalem.”"
+                },
+                {
+                  "ref": "Psa.82.8",
+                  "note": "“Arise, O God, judge the earth, for you shall inherit all the nations.”"
+                }
+              ],
+              "kin": [
+                "nachalah-yahwehs",
+                "nachalah-nations"
+              ]
+            },
+            {
+              "gloss": "come to have, gain (figurative)",
+              "definition": "To come into a lasting condition as one's portion: honour, folly, good, wind, lies, Yahweh's testimonies.",
+              "evidence": [
+                {
+                  "ref": "Pro.3.35",
+                  "role": "defining",
+                  "note": "“The wise shall inherit honour, but shame lifts up fools.”"
+                },
+                {
+                  "ref": "Pro.11.29",
+                  "note": "He who troubles his own house shall inherit wind."
+                },
+                {
+                  "ref": "Pro.14.18",
+                  "note": "The simple inherit folly."
+                },
+                {
+                  "ref": "Pro.28.10",
+                  "note": "The upright shall inherit good."
+                },
+                {
+                  "ref": "Jer.16.19",
+                  "note": "The nations shall say, “Our fathers inherited only lies.”"
+                },
+                {
+                  "ref": "Psa.119.111",
+                  "note": "“I have taken your testimonies as my inheritance for ever.”"
+                }
+              ]
+            },
+            {
+              "gloss": "apportion (the land)",
+              "definition": "To divide the land into holdings for others.",
+              "evidence": [
+                {
+                  "ref": "Num.34.17",
+                  "to": "Num.34.18",
+                  "role": "defining",
+                  "note": "“These are the names of the men who shall apportion the land to you”: Eleazar, Joshua and a leader of each tribe."
+                },
+                {
+                  "ref": "Jos.19.49",
+                  "note": "“They finished apportioning the land by its borders.”"
+                },
+                {
+                  "ref": "Num.26.55"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "distribute as holdings, give as an inheritance",
+          "senses": [
+            {
+              "gloss": "distribute as holdings",
+              "definition": "To share out the land to the tribes as their inheritances.",
+              "evidence": [
+                {
+                  "ref": "Num.34.29",
+                  "role": "defining",
+                  "note": "Those Yahweh commanded “to apportion to the sons of Israel in the land of Canaan”."
+                },
+                {
+                  "ref": "Jos.13.32"
+                },
+                {
+                  "ref": "Jos.14.1",
+                  "note": "What Eleazar, Joshua and the heads of the fathers apportioned to them."
+                },
+                {
+                  "ref": "Jos.19.51",
+                  "role": "defining",
+                  "note": "“These are the נְחָלֹת that Eleazar … apportioned by lot in Shiloh before Yahweh.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "give as a holding, cause to inherit; bequeath",
+          "senses": [
+            {
+              "gloss": "bring into the holding, give the land as an inheritance",
+              "definition": "To bring a people into its land and give it to them as their holding: Joshua's task, and Yahweh's gift.",
+              "evidence": [
+                {
+                  "ref": "Deu.1.38",
+                  "role": "defining",
+                  "note": "Joshua “shall cause Israel to inherit it”."
+                },
+                {
+                  "ref": "Jos.1.6",
+                  "role": "defining",
+                  "note": "“You shall cause this people to inherit the land that I swore to their fathers to give them.”"
+                },
+                {
+                  "ref": "Deu.3.28"
+                },
+                {
+                  "ref": "Deu.31.7"
+                },
+                {
+                  "ref": "Deu.12.10",
+                  "note": "The land Yahweh your God causes you to inherit; he gives you rest from all your enemies."
+                },
+                {
+                  "ref": "Deu.19.3"
+                },
+                {
+                  "ref": "Deu.32.8",
+                  "note": "“When the Most High gave the nations their inheritance, when he divided the sons of man.”"
+                },
+                {
+                  "ref": "Jer.3.18",
+                  "note": "Judah and Israel come together out of the land of the north to the land “I gave your fathers as an inheritance”."
+                },
+                {
+                  "ref": "Jer.12.14"
+                },
+                {
+                  "ref": "Isa.49.8",
+                  "note": "The servant given as a covenant of the people “to raise up the land, to apportion the desolate נְחָלוֹת”; Paul quotes the verse's opening in 2Co 6:2."
+                },
+                {
+                  "ref": "2Co.6.2"
+                },
+                {
+                  "ref": "Zec.8.12",
+                  "note": "“I will cause the remnant of this people to inherit all these things.”"
+                },
+                {
+                  "ref": "1Ch.28.8",
+                  "note": "Keep the commandments, that you may possess the land and leave it as an inheritance to your sons after you."
+                }
+              ]
+            },
+            {
+              "gloss": "bequeath, give as an inheritance (to sons, to the needy)",
+              "definition": "Of a father or a giver: to pass what one has to another as his.",
+              "evidence": [
+                {
+                  "ref": "Deu.21.16",
+                  "role": "defining",
+                  "note": "“On the day he makes his sons inherit what he has”, he may not set the beloved's son above the firstborn of the hated."
+                },
+                {
+                  "ref": "Pro.13.22",
+                  "role": "defining",
+                  "note": "A good man leaves an inheritance to his sons' sons."
+                },
+                {
+                  "ref": "Ezk.46.18",
+                  "note": "The prince shall give his sons their inheritance from his own possession."
+                },
+                {
+                  "ref": "1Sa.2.8",
+                  "note": "He raises the poor from the dust “to make them inherit a throne of glory”."
+                },
+                {
+                  "ref": "Pro.8.21",
+                  "note": "Wisdom: “to cause those who love me to inherit substance”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "take as one's holding, possess; hold as an inheritance for others",
+          "senses": [
+            {
+              "gloss": "take for oneself as a holding",
+              "definition": "To come into possession of one's share, or to hold something as a lasting possession to pass on.",
+              "evidence": [
+                {
+                  "ref": "Num.33.54",
+                  "role": "defining",
+                  "note": "“You shall take the land as your holding by lot, according to your clans.”"
+                },
+                {
+                  "ref": "Num.32.18",
+                  "note": "Not returning home “until the sons of Israel have each taken his נַחֲלָה”."
+                },
+                {
+                  "ref": "Num.34.13"
+                },
+                {
+                  "ref": "Ezk.47.13",
+                  "note": "The border by which you shall take the land as your holding, for the twelve tribes."
+                },
+                {
+                  "ref": "Lev.25.46",
+                  "role": "defining",
+                  "note": "Bondmen of the nations: “you may hold them as an inheritance for your sons after you, to inherit as a possession”."
+                },
+                {
+                  "ref": "Isa.14.2",
+                  "note": "The house of Israel shall possess the peoples in the land of Yahweh as servants and handmaids."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be allotted",
+          "senses": [
+            {
+              "gloss": "be allotted, made to inherit",
+              "definition": "To have something assigned to one as his portion.",
+              "evidence": [
+                {
+                  "ref": "Job.7.3",
+                  "role": "defining",
+                  "note": "“So I am allotted months of emptiness, and nights of trouble are appointed to me.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κληρονομέω",
+          "gloss": "inherit, receive as one's own",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נָחַל → κληρονομέω ×10 (lemma count, MACULA alignment); Num.18.20, תִנְחָל → κληρονομήσεις"
+            },
+            {
+              "ref": "Mat.25.34",
+              "note": "“Inherit the kingdom prepared for you from the foundation of the world.”"
+            },
+            {
+              "ref": "1Co.6.9"
+            },
+            {
+              "ref": "Gal.5.21"
+            },
+            {
+              "ref": "Heb.1.4"
+            },
+            {
+              "ref": "1Pe.3.9"
+            }
+          ]
+        },
+        {
+          "lemma": "κατακληροδοτέω",
+          "gloss": "divide out by lot as an inheritance",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jos.14.1 and Jos.19.51, piel נִחֲלוּ → κατεκληρονόμησεν (lemma κατακληροδοτέω, MACULA alignment)"
+            },
+            {
+              "ref": "Act.13.19",
+              "note": "Paul at Antioch: having destroyed seven nations in Canaan, “he divided their land to them by lot”, the piel's work in Joshua."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְחִילָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "(in a psalm title) meaning uncertain; perhaps “inheritances”",
+      "summary": "Only in the plural, in the title of Psalm 5: “to the chief musician, אֶל־הַנְּחִילוֹת”. Nothing in the verse fixes the sense: it may be a word of this root (“for the inheritances”) or a musical term (flutes, as if from חָלִיל) or a tune. The link to the root is not clear.",
+      "bdb": [
+        "n.cp.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "uncertain: a musical direction",
+          "definition": "A direction to the chief musician whose meaning the text does not show.",
+          "evidence": [
+            {
+              "ref": "Psa.5.1",
+              "role": "defining",
+              "note": "“To the chief musician, to the נְחִילוֹת; a psalm of David.” The psalm itself (vv. 8, 12–13) speaks of Yahweh's house and his blessing on the righteous, not of an inheritance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נַחֲלִיאֵל",
+      "pos": "name",
+      "gloss": "Nahaliel, a station of Israel's journey: “wadi of God”",
+      "summary": "A place Israel came to on the way north of the Arnon, between Mattanah and Bamoth, after the song of the well (Num 21:16–20). It is read as נַחַל “wadi” with אֵל, in a passage full of wadis (Zered, Arnon, vv. 12–15); where it lay is not known. A place, so it has no name entry.",
+      "bdb": [
+        "n.cq.ad"
+      ],
+      "cognate_ids": [
+        "uga-nkhl",
+        "akk-nakhallu"
+      ],
+      "senses": [
+        {
+          "gloss": "Nahaliel",
+          "definition": "A stopping place of Israel east of the Jordan, between Mattanah and Bamoth.",
+          "evidence": [
+            {
+              "ref": "Num.21.19",
+              "role": "defining",
+              "note": "“And from Mattanah to Nahaliel, and from Nahaliel to Bamoth.”"
+            },
+            {
+              "ref": "Num.21.12",
+              "to": "Num.21.15",
+              "note": "The wadis of the route: the נַחַל Zered, the Arnon, “the wadis of the Arnon”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֶחֱלָמִי",
+      "pos": "adjective",
+      "gloss": "Nehelamite (gentilic), of Shemaiah the false prophet",
+      "summary": "Used only of Shemaiah, the prophet in Babylon who wrote against Jeremiah (Jer 29:24–32). No place or family Nehelam is named in scripture, so what it refers to is not known, and the link to this root is not clear: it could as well be read as a נ- form of חלם “dream”, and Jeremiah warns in the same chapter against the exiles’ prophets and their dreams (Jer 29:8–9).",
+      "bdb": [
+        "n.cq.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "Nehelamite",
+          "definition": "Of Nehelam, an unknown place or family: Shemaiah's description.",
+          "evidence": [
+            {
+              "ref": "Jer.29.24",
+              "role": "defining",
+              "note": "“To Shemaiah the נֶחֱלָמִי you shall say …”"
+            },
+            {
+              "ref": "Jer.29.31",
+              "to": "Jer.29.32",
+              "note": "Shemaiah prophesied though Yahweh did not send him; he will have no one to see the good Yahweh will do."
+            },
+            {
+              "ref": "Jer.29.8",
+              "note": "“Do not listen to your dreams which you cause to be dreamed.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-nhlt",
+      "lang": "uga",
+      "form": "𐎐𐎈𐎍𐎚",
+      "translit": "nḥlt",
+      "gloss": "inheritance, holding",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "With ḥ. In the Baal Cycle, Baal names his mountain “in the holy place, on the mountain of my nḥlt” (bqdš bġr nḥlty, 1.3:III:30), the same phrase as Exo 15:17 “the mountain of your נַחֲלָה”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 193, glossary, nḥlt /naḥlat-/ (?) “inheritance” (H. naḥălā; cf. Arab. niḥlat “gift”)"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 159, § 87.8, text 1.3:III:29–30, ibġyh.btk.ġry.il.ṣpn | bqdš.bġr.nḥlty"
+        }
+      ]
+    },
+    {
+      "id": "uga-nhl-heir",
+      "lang": "uga",
+      "form": "𐎐𐎈𐎍",
+      "translit": "nḥl",
+      "gloss": "heir",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "The person who inherits, with the same ḥ as nḥlt.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎐𐎈𐎍 (nḥl), noun"
+        }
+      ]
+    },
+    {
+      "id": "sab-nhl",
+      "lang": "sem",
+      "form": "nḥl, nḥlt",
+      "translit": "nḥl, nḥlt",
+      "gloss": "(Sabaean) give, put at one's disposal; be granted; nḥlt gift, usufruct",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Old South Arabian (Sabaean), with ḥ: “gave it as a watering place to H.”; nḥlt beside “grant” and beside “purchases, payments … and rents”: a thing given to be held and used, as a נַחֲלָה is.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 299–300, NḤL v. “give” (C516/20), h “give, put at s.o.'s disposal” (C350/10), tp “be given, granted” (Ga3/4), n² nḥlt “gift; usufruct” (Gl547/2; R2695/6)"
+        }
+      ]
+    },
+    {
+      "id": "ar-nahala",
+      "lang": "ar",
+      "form": "نَحَلَ، نِحْلَة",
+      "translit": "naḥala, niḥla",
+      "gloss": "give a gift; a gift",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Arabic ḥ (ح), not ḫ (خ): to give a thing freely, niḥla a gift. Lane's vendored text for this root gives only niḥla as “a thing ordained (farīḍa), or a religion”; the giving sense is cited from Wiktionary, and Segert and Biella both set Arabic niḥla “gift” beside the Ugaritic and Sabaean words.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic نحل (naḥala), verb, etym. 1: “to make a donation, to make a gift”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 3029, root نحل, نِحْلَةٌ (n43860)"
+        },
+        {
+          "source": "biella-1982",
+          "locator": "p. 300, NḤL, Ar naḥala, niḥlat “gift”"
+        }
+      ]
+    },
+    {
+      "id": "uga-nkhl",
+      "lang": "uga",
+      "form": "𐎐𐎃𐎍",
+      "translit": "nḫl",
+      "gloss": "torrent, wadi",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "With ḫ, against the ḥ of nḥlt “inheritance”: the two Hebrew words go back to two older roots. Segert's example: the venom flows out “as a creek” (km nḫl, 1.100:68).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "pp. 193–194, glossary, nḫl /naḫl-/ “torrent, wady” (H. náḥal, Akkad. naḫ(al)lu)"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 89, § 64, 1.100:68, tlu.ḥ(m)t.km.nḫl"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎐𐎃𐎍 (nḫl), noun"
+        }
+      ]
+    },
+    {
+      "id": "akk-nakhallu",
+      "lang": "akk",
+      "form": "naḫallu, naḫlu",
+      "translit": "naḫallu",
+      "gloss": "wadi, gorge, stream",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Akkadian ḫ answers to Hebrew ח from older ḫ. Attested from Old Babylonian to Seleucid times; the shorter naḫlu “wadi” in Middle Assyrian.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000028580, naḫallu [stream] N: gorge, stream, wadi"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000028390, naḫlu [stream] N: wadi"
+        }
+      ]
+    },
+    {
+      "id": "arc-nachala",
+      "lang": "arc",
+      "form": "נַחֲלָא",
+      "translit": "naḥălā",
+      "gloss": "wadi, stream, ravine",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums, rendering Hebrew נַחַל (Targ. Gen 26:19; Num 13:24; Psa 74:15; pl. Deu 8:7; Ecc 1:7). Aramaic ח does not show whether ḥ or ḫ stands behind it.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נַחֲלָא, pl. נַחֲלִין, נַחֲלַיָּא"
+        }
+      ]
+    },
+    {
+      "id": "syc-nachla",
+      "lang": "syc",
+      "form": "ܢܚܠܐ",
+      "translit": "naḥlā",
+      "gloss": "torrent; stream, wadi, gully; gorge, valley",
+      "relation": "cognate",
+      "note": "Syriac does not keep ḥ and ḫ apart. Not used in the Peshitta New Testament.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܢܚܠܐ, noun, etym. 1"
+        }
+      ]
+    },
+    {
+      "id": "sab-nkhl",
+      "lang": "sem",
+      "form": "nḫl",
+      "translit": "nḫl",
+      "gloss": "(Sabaean) palm grove",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Sabaean, with ḫ: palm groves watered by dykes and channels. With Arabic naḫl “palm trees” it shares the ḫ of the wadi word, and palms grow along watercourses; whether the palm and the wadi are one older root is not shown. The reading “palms” for נְחָלִים at Num 24:6 would rest on this.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 301–302, NḪL n. nḫl “palmgrove” (R3902b#131/3; R2876/4; R4626/1), Ar naḫl (coll.) “palm trees”"
+        }
+      ]
+    },
+    {
+      "id": "ar-nakhl",
+      "lang": "ar",
+      "form": "نَخْل، نَخْلَة",
+      "translit": "naḫl, naḫla",
+      "gloss": "palm trees; a palm tree",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Arabic ḫ (خ). As with Sabaean nḫl: the same older sound as the wadi word, a link of meaning not shown.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic نخل (naḵl), noun, etym. 1, “palm trees”; نخلة (naḵla) “palm tree”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 3030, root نخل, نَخْلِىٌّ “a cultivator of palm-trees” (n43879)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "yahweh-the-inheritance",
+      "statement": "Levi was given no holding in the land: “I am your חֵלֶק and your נַחֲלָה” (Num 18:20), “Yahweh is his נַחֲלָה” (Deu 10:9; 18:2; Jos 13:33), and the priests of the house in Ezekiel's vision have the same (Ezk 44:28). David takes it as his own: Yahweh is the portion of his share, and the inheritance is beautiful to him (Psa 16:5–6), and in the same psalm, “you will not leave my soul to the grave” (Psa 16:10), which Peter applies to the resurrection of Christ (Act 2:25–31). Peter calls the believers a royal priesthood (1Pe 2:9), and Paul gives thanks to the Father who made them fit for the share of the lot of the saints in the light (Col 1:12). From the verses: to have Yahweh himself as one's inheritance was the priest's place, and the New Testament gives that place to those in Christ.",
+      "evidence": [
+        {
+          "ref": "Num.18.20"
+        },
+        {
+          "ref": "Deu.10.9"
+        },
+        {
+          "ref": "Deu.18.2"
+        },
+        {
+          "ref": "Jos.13.33"
+        },
+        {
+          "ref": "Ezk.44.28"
+        },
+        {
+          "ref": "Psa.16.5",
+          "to": "Psa.16.6"
+        },
+        {
+          "ref": "Psa.16.10"
+        },
+        {
+          "ref": "Act.2.25",
+          "to": "Act.2.31"
+        },
+        {
+          "ref": "1Pe.2.9"
+        },
+        {
+          "ref": "Col.1.12"
+        }
+      ]
+    },
+    {
+      "topic": "inheritance-of-the-land",
+      "statement": "Yahweh swore to Abraham, Isaac and Israel that their seed would inherit the land for ever (Exo 32:13), and promised that whoever takes refuge in him shall inherit the land and possess his holy mountain (Isa 57:13; Psa 69:36–37). Stephen says that God gave Abraham no inheritance in it, not a foot's breadth, yet promised to give it to him and to his seed after him (Act 7:5). Hebrews says Abraham went out to the place he was to receive as an inheritance, lived in it as a stranger, and died with the others not having received the promises, so that they should not be made perfect without us (Heb 11:8–9, 13, 39–40). Paul says the inheritance is given by promise, not by law, and that those who are Christ's are Abraham's seed and heirs according to the promise (Gal 3:16, 18, 29). Ezekiel sees the land divided again among the twelve tribes, “each man like his brother”, the stranger among them given an inheritance with them (Ezk 47:13–14, 21–23). From the verses: the promised inheritance is the land Abraham walked in; he did not receive it in his life, and it is still to be given, to him and to his seed in Christ together.",
+      "evidence": [
+        {
+          "ref": "Exo.32.13"
+        },
+        {
+          "ref": "Isa.57.13"
+        },
+        {
+          "ref": "Psa.69.36",
+          "to": "Psa.69.37"
+        },
+        {
+          "ref": "Act.7.5"
+        },
+        {
+          "ref": "Heb.11.8",
+          "to": "Heb.11.9"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Heb.11.39",
+          "to": "Heb.11.40"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.18"
+        },
+        {
+          "ref": "Gal.3.29"
+        },
+        {
+          "ref": "Ezk.47.13",
+          "to": "Ezk.47.14"
+        },
+        {
+          "ref": "Ezk.47.21",
+          "to": "Ezk.47.23"
+        }
+      ]
+    },
+    {
+      "topic": "yahwehs-inheritance",
+      "statement": "When the Most High gave the nations their inheritance, Yahweh's own portion was his people, Jacob the cord of his inheritance (Deu 32:8–9), and Moses asked him to take Israel as his inheritance in spite of their sin (Exo 34:9). The psalm says Yahweh will give the nations to his son as his inheritance (Psa 2:7–8), and another calls on God to judge the earth, “for you shall inherit all the nations” (Psa 82:8); Isaiah names Egypt and Assyria beside “Israel my inheritance” (Isa 19:25). Hebrews quotes Psa 2:7 of the Son, whom God appointed heir of all things (Heb 1:2, 5), and Paul speaks of the riches of the glory of God's inheritance in the saints (Eph 1:18). From the verses: Yahweh's inheritance began with Israel and is to take in the nations, given to his son.",
+      "evidence": [
+        {
+          "ref": "Deu.32.8",
+          "to": "Deu.32.9"
+        },
+        {
+          "ref": "Exo.34.9"
+        },
+        {
+          "ref": "Psa.2.7",
+          "to": "Psa.2.8"
+        },
+        {
+          "ref": "Psa.82.8"
+        },
+        {
+          "ref": "Isa.19.25"
+        },
+        {
+          "ref": "Heb.1.2"
+        },
+        {
+          "ref": "Heb.1.5"
+        },
+        {
+          "ref": "Eph.1.18"
+        }
+      ]
+    },
+    {
+      "topic": "river-of-life",
+      "statement": "In Ezekiel's vision water goes out from under the threshold of the house and becomes a נַחַל too deep to cross; the sea it reaches is healed, every living soul lives wherever it comes, and the trees on its banks bear fruit every month, their leaves for healing (Ezk 47:1–12). Joel sees a spring go out from the house of Yahweh to water the wadi of Shittim, in the day Yahweh dwells in Zion (Jol 4:17–18). Revelation shows the river of the water of life going out from the throne of God and of the Lamb, with the tree of life on either side and leaves for the healing of the nations (Rev 22:1–2). From the verses: the wadi that gives life flows from the place where Yahweh dwells among his people, in the kingdom when he dwells in Zion.",
+      "evidence": [
+        {
+          "ref": "Ezk.47.1",
+          "to": "Ezk.47.12"
+        },
+        {
+          "ref": "Jol.4.17",
+          "to": "Jol.4.18"
+        },
+        {
+          "ref": "Rev.22.1",
+          "to": "Rev.22.2"
+        }
+      ]
+    }
+  ],
+  "note": "Two older roots in one spelling: ḥ “give, allot, inherit” (Ugaritic nḥlt, nḥl “heir”; Sabaean nḥl “give”; Arabic naḥala “give”) and ḫ “wadi” (Ugaritic nḫl, Akkadian naḫallu), with Sabaean nḫl “palm grove” and Arabic naḫl “palm trees” as possible kin of the ḫ root. BDB keys: n.cq.ac (“palm-tree”, for Num 24:6) lists the same occurrences as n.cq.ab, so only n.cq.ab is named; the Num 24:6 note gives the palm reading. The database's n.cq.ab/n.cq.ac token lists include נחלה “inheritance” tokens by spelling (e.g. Num 26:62, Jos 19:49); the spellings are not separated here. n.cq.af (נַחֲלָת, a cross-reference with no tokens) is named on נַחֲלָה. Not followed: Syriac naḥlā in Payne Smith or Brockelmann (only Wiktionary cited); Lane's full article on نحل “give” (the vendored Lane has only two lines at p. 3029); the Proto-Semitic list sets Hebrew naḥal “get” under *nḫl “heir”, against the Ugaritic ḥ, and is not cited. נֶחֱלָמִי and נְחִילוֹת are kept with their links to the root unclear. Nahaliel is a place, so no name entry."
+}
