@@ -1,0 +1,1214 @@
+{
+  "id": "anan",
+  "root": "עננ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "weather",
+    "presence-of-god",
+    "glory",
+    "wilderness",
+    "judgment",
+    "covenant",
+    "divination"
+  ],
+  "gloss": "cloud; bring clouds; (poel) practise soothsaying",
+  "summary": "עָנָן is a cloud: the cloud of the sky that holds the rain, covers the sun and soon passes (Job 26:8; Ezk 32:7; Hos 6:4), and above all the cloud in which Yahweh went before Israel, came down and spoke, and in which his glory filled the dwelling (Exo 13:21; 19:9; 40:34). It set Israel’s marches: when the cloud was taken up from the dwelling they set out, as in Num 10:11–12, 34. In the prophets a “day of cloud” is the day Yahweh comes in judgment (Ezk 30:3; Zep 1:15), and Daniel sees one like a son of man coming “with the clouds of heaven” (Dan 7:13), words Jesus takes to himself. The piel is “bring clouds” (Gen 9:14); the poel עוֹנֵן, “practise soothsaying”, forbidden to Israel, shares the spelling, but how it comes from the root is not clear.",
+  "words": [
+    {
+      "lemma": "עָנָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cloud; the cloud of Yahweh’s presence",
+      "bdb": [
+        "p.dy.ab"
+      ],
+      "cognate_ids": [
+        "ar-anan",
+        "arc-anana"
+      ],
+      "summary": "The common word for a cloud. Over half its uses are the cloud of Yahweh’s presence in Exodus and Numbers: the pillar that led Israel, the cloud on Sinai, and the cloud that covered the dwelling.",
+      "senses": [
+        {
+          "id": "cloud-sky",
+          "gloss": "cloud (of the sky)",
+          "definition": "A cloud in the sky, which holds the rain, covers the sun and the face of the heavens, and in which the bow is seen on a day of rain.",
+          "evidence": [
+            {
+              "ref": "Gen.9.14",
+              "role": "defining",
+              "note": "“When I bring clouds over the earth, the bow will be seen in the cloud.”"
+            },
+            {
+              "ref": "Gen.9.13",
+              "note": "“I have set my bow in the cloud.”"
+            },
+            {
+              "ref": "Gen.9.16"
+            },
+            {
+              "ref": "Job.26.8",
+              "role": "defining",
+              "note": "He binds up the waters in his thick clouds, “and the עָנָן is not torn under them”."
+            },
+            {
+              "ref": "Job.37.11",
+              "note": "He loads the thick cloud with moisture and scatters the cloud of his lightning."
+            },
+            {
+              "ref": "Job.37.15",
+              "note": "He makes the light of his cloud shine."
+            },
+            {
+              "ref": "Job.26.9",
+              "note": "He covers the face of his throne, spreading his cloud on it."
+            },
+            {
+              "ref": "Job.38.9",
+              "note": "At creation God made the cloud the sea’s garment and thick darkness its swaddling band."
+            },
+            {
+              "ref": "Ezk.1.28",
+              "role": "defining",
+              "note": "“The bow that is in the cloud on the day of rain.”"
+            },
+            {
+              "ref": "Ezk.32.7",
+              "role": "defining",
+              "note": "Over Pharaoh: “I will cover the sun with a cloud, and the moon will not give its light.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "cloud-passing",
+              "gloss": "a passing cloud",
+              "definition": "The cloud as what is soon gone: a picture of love that does not last, of a people about to vanish, of a man who dies, and of sins blotted out.",
+              "evidence": [
+                {
+                  "ref": "Hos.6.4",
+                  "role": "defining",
+                  "note": "“Your love is like a morning cloud, like the dew that goes early away.”"
+                },
+                {
+                  "ref": "Hos.13.3",
+                  "note": "Ephraim will be like the morning cloud, the dew, chaff and smoke."
+                },
+                {
+                  "ref": "Job.7.9",
+                  "role": "defining",
+                  "note": "“A cloud is consumed and goes; so one who goes down to the grave does not come up.”"
+                },
+                {
+                  "ref": "Isa.44.22",
+                  "role": "defining",
+                  "note": "“I have blotted out your transgressions like a thick cloud, and your sins like a cloud.”"
+                }
+              ]
+            },
+            {
+              "id": "cloud-covering",
+              "gloss": "a cloud that covers",
+              "definition": "The cloud as what covers and shuts out: what stops prayer reaching God, what covers a city in its fall, and an army spreading over a land.",
+              "evidence": [
+                {
+                  "ref": "Lam.3.44",
+                  "role": "defining",
+                  "note": "“You have covered yourself with a cloud, so that prayer cannot pass through.”"
+                },
+                {
+                  "ref": "Ezk.30.18",
+                  "note": "In Tahpanhes, when Egypt’s yokes are broken, “a cloud will cover her”."
+                },
+                {
+                  "ref": "Ezk.38.9",
+                  "role": "defining",
+                  "note": "Gog comes like a storm, “like a cloud to cover the land”."
+                },
+                {
+                  "ref": "Ezk.38.16"
+                },
+                {
+                  "ref": "Jer.4.13",
+                  "note": "The destroyer from the north (Jer 4:6): “Behold, he comes up like clouds, and his chariots like the whirlwind.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cloud-presence",
+          "gloss": "the cloud of Yahweh’s presence",
+          "definition": "The cloud in which Yahweh was with Israel: a pillar of cloud by day and of fire by night that went before them, the cloud in which he came down and spoke, and the cloud in which his glory appeared and filled the dwelling and the temple.",
+          "evidence": [
+            {
+              "ref": "Exo.13.21",
+              "role": "defining",
+              "note": "“Yahweh went before them by day in a pillar of cloud to lead them in the way, and by night in a pillar of fire.”"
+            },
+            {
+              "ref": "Num.14.14",
+              "role": "defining",
+              "note": "“You, Yahweh, are seen eye to eye, and your cloud stands over them.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "cloud-leading",
+              "gloss": "the pillar of cloud that leads",
+              "definition": "The cloud over the dwelling that told Israel when to camp and when to march: when it was taken up they set out, and where it settled they camped.",
+              "evidence": [
+                {
+                  "ref": "Num.9.17",
+                  "role": "defining",
+                  "note": "“When the cloud was taken up from over the tent, the sons of Israel set out, and in the place where the cloud settled, there they camped.”"
+                },
+                {
+                  "ref": "Num.9.15",
+                  "to": "Num.9.22"
+                },
+                {
+                  "ref": "Num.10.11",
+                  "role": "defining",
+                  "note": "In the second year, the second month, on the twentieth day, the cloud was taken up from the dwelling of the testimony."
+                },
+                {
+                  "ref": "Num.10.12",
+                  "note": "Israel set out from Sinai, and the cloud settled in the wilderness of Paran."
+                },
+                {
+                  "ref": "Num.10.34",
+                  "note": "“The cloud of Yahweh was over them by day when they set out from the camp.”"
+                },
+                {
+                  "ref": "Exo.13.22"
+                },
+                {
+                  "ref": "Exo.14.19",
+                  "to": "Exo.14.20",
+                  "note": "The angel of God and the pillar of cloud move behind Israel and stand between the camps: cloud and darkness to Egypt, light to Israel."
+                },
+                {
+                  "ref": "Exo.14.24"
+                },
+                {
+                  "ref": "Exo.40.36",
+                  "to": "Exo.40.38"
+                },
+                {
+                  "ref": "Deu.1.33"
+                },
+                {
+                  "ref": "Psa.78.14"
+                },
+                {
+                  "ref": "Psa.105.39",
+                  "note": "“He spread a cloud for a covering, and fire to give light by night.”"
+                },
+                {
+                  "ref": "Neh.9.12"
+                },
+                {
+                  "ref": "Neh.9.19"
+                },
+                {
+                  "ref": "1Co.10.1",
+                  "to": "1Co.10.2",
+                  "note": "“Our fathers were all under the cloud … and all were baptized into Moses in the cloud and in the sea.”"
+                }
+              ]
+            },
+            {
+              "id": "cloud-glory",
+              "gloss": "the cloud of the glory",
+              "definition": "The cloud that covered the dwelling and filled it and the temple when the glory of Yahweh came in, so that no one could stand to minister.",
+              "evidence": [
+                {
+                  "ref": "Exo.40.34",
+                  "role": "defining",
+                  "note": "“The cloud covered the tent of meeting, and the glory of Yahweh filled the dwelling.”"
+                },
+                {
+                  "ref": "Exo.40.35",
+                  "note": "Moses could not enter, because the cloud dwelt on it."
+                },
+                {
+                  "ref": "1Ki.8.10",
+                  "to": "1Ki.8.11",
+                  "role": "defining",
+                  "note": "The cloud filled the house of Yahweh, and the priests could not stand to minister because of the cloud, for the glory of Yahweh filled the house."
+                },
+                {
+                  "ref": "2Ch.5.13",
+                  "to": "2Ch.5.14"
+                },
+                {
+                  "ref": "Exo.16.10",
+                  "note": "“The glory of Yahweh appeared in the cloud.”"
+                },
+                {
+                  "ref": "Num.17.7",
+                  "note": "When the congregation gathered against Moses and Aaron, the cloud covered the tent and the glory appeared."
+                },
+                {
+                  "ref": "Lev.16.2",
+                  "note": "“In the cloud I will appear over the covering (כַּפֹּרֶת).”"
+                },
+                {
+                  "ref": "Ezk.10.3",
+                  "to": "Ezk.10.4",
+                  "note": "The cloud fills the inner court and the house as the glory leaves the cherub."
+                },
+                {
+                  "ref": "Isa.4.5",
+                  "note": "Over all Mount Zion, a cloud and smoke by day and a flaming fire by night: “over all the glory a canopy”."
+                }
+              ]
+            },
+            {
+              "id": "cloud-speaking",
+              "gloss": "the cloud from which Yahweh speaks",
+              "definition": "The cloud in which Yahweh came down to Sinai and to the tent, stood, and spoke with Moses, Aaron and Miriam, and gave the law.",
+              "evidence": [
+                {
+                  "ref": "Exo.19.9",
+                  "role": "defining",
+                  "note": "“I come to you in the thickness of the cloud, so that the people may hear when I speak with you.”"
+                },
+                {
+                  "ref": "Psa.99.7",
+                  "role": "defining",
+                  "note": "“In the pillar of cloud he spoke to them.”"
+                },
+                {
+                  "ref": "Exo.19.16",
+                  "note": "A heavy cloud on the mountain, with thunder and lightning."
+                },
+                {
+                  "ref": "Exo.24.15",
+                  "to": "Exo.24.18",
+                  "note": "The cloud covers the mountain six days; on the seventh Yahweh calls to Moses from within the cloud, and Moses goes into it."
+                },
+                {
+                  "ref": "Exo.33.9",
+                  "to": "Exo.33.10",
+                  "note": "The pillar of cloud comes down and stands at the tent’s door, and Yahweh speaks with Moses."
+                },
+                {
+                  "ref": "Exo.34.5",
+                  "note": "Yahweh came down in the cloud, stood with him there and proclaimed the name."
+                },
+                {
+                  "ref": "Num.11.25",
+                  "note": "Yahweh came down in the cloud, spoke to Moses, and put the spirit on the seventy elders."
+                },
+                {
+                  "ref": "Num.12.5",
+                  "note": "He came down in a pillar of cloud and called Aaron and Miriam; when the cloud went up, Miriam was leprous (Num 12:10)."
+                },
+                {
+                  "ref": "Num.12.10"
+                },
+                {
+                  "ref": "Deu.4.11",
+                  "to": "Deu.4.12"
+                },
+                {
+                  "ref": "Deu.5.22",
+                  "note": "The ten words were spoken “out of the midst of the fire, the cloud and the thick darkness”."
+                },
+                {
+                  "ref": "Deu.31.15"
+                },
+                {
+                  "ref": "Mat.17.5",
+                  "note": "At the transfiguration a bright cloud overshadows them, and a voice from the cloud says, “This is my beloved Son … hear him.”"
+                },
+                {
+                  "ref": "Luk.9.34",
+                  "to": "Luk.9.35"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cloud-judgment",
+          "gloss": "cloud of Yahweh’s coming in judgment",
+          "definition": "Clouds about Yahweh when he comes against a people: a “day of cloud” is the day of his judgment.",
+          "evidence": [
+            {
+              "ref": "Ezk.30.3",
+              "role": "defining",
+              "note": "“The day of Yahweh is near, a day of cloud; it will be the time of the nations”, against Egypt."
+            },
+            {
+              "ref": "Zep.1.15",
+              "role": "defining",
+              "note": "“That day is a day of wrath … a day of cloud and thick darkness”, against Judah."
+            },
+            {
+              "ref": "Jol.2.2",
+              "note": "“A day of darkness and gloom, a day of cloud and thick darkness.”"
+            },
+            {
+              "ref": "Ezk.34.12",
+              "note": "Yahweh will rescue his sheep from where they were scattered “on a day of cloud and thick darkness”."
+            },
+            {
+              "ref": "Nam.1.3",
+              "note": "“In whirlwind and storm is his way, and cloud is the dust of his feet.”"
+            },
+            {
+              "ref": "Psa.97.2",
+              "note": "“Cloud and thick darkness are round about him; righteousness and judgment are the foundation of his throne.”"
+            },
+            {
+              "ref": "Ezk.1.4",
+              "note": "A storm wind from the north, a great cloud and fire."
+            }
+          ]
+        },
+        {
+          "id": "cloud-incense",
+          "gloss": "cloud of incense",
+          "definition": "The cloud of smoke from burning incense.",
+          "evidence": [
+            {
+              "ref": "Lev.16.13",
+              "role": "defining",
+              "note": "The high priest puts incense on the fire before Yahweh, “that the cloud of the incense may cover the covering (כַּפֹּרֶת) … that he not die”."
+            },
+            {
+              "ref": "Ezk.8.11",
+              "note": "The seventy elders with censers before the idols, “and the thick cloud of incense went up”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "νεφέλη",
+          "gloss": "cloud",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.13.21, עָנָן → νεφέλης; Exo.40.34 and Num.10.34 the same; νεφέλη renders עָנָן ×71"
+            },
+            {
+              "ref": "1Co.10.1",
+              "to": "1Co.10.2",
+              "role": "defining",
+              "note": "Expounds the pillar of cloud (Exo 13:21; 14:19): “our fathers were all under the νεφέλη … baptized into Moses in the νεφέλη and in the sea”."
+            },
+            {
+              "ref": "Mat.17.5",
+              "note": "The bright νεφέλη of the transfiguration, from which the voice speaks."
+            },
+            {
+              "ref": "Act.1.9",
+              "note": "“A νεφέλη received him out of their sight.”"
+            },
+            {
+              "ref": "1Th.4.17"
+            },
+            {
+              "ref": "Rev.14.14"
+            }
+          ]
+        },
+        {
+          "lemma": "νέφος",
+          "gloss": "cloud, cloud-mass",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.7.9, עָנָן → νέφος; Job.26.8, Job.37.11, Job.38.9 the same; νέφος renders עָנָן ×5"
+            },
+            {
+              "ref": "Heb.12.1",
+              "note": "“So great a νέφος of witnesses”: the faithful of Heb 11 as a cloud about us."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָב",
+            "note": "“Thick cloud”, set beside it, and joined with it in עַב הֶעָנָן.",
+            "evidence": [
+              {
+                "ref": "Isa.44.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.26.8"
+              },
+              {
+                "ref": "Exo.19.9"
+              }
+            ]
+          },
+          {
+            "lemma": "עֲרָפֶל",
+            "note": "“Thick darkness”, beside it at Sinai, about Yahweh’s throne and on the day of judgment.",
+            "evidence": [
+              {
+                "ref": "Deu.5.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.97.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Zep.1.15"
+              },
+              {
+                "ref": "Jol.2.2"
+              },
+              {
+                "ref": "Ezk.34.12"
+              },
+              {
+                "ref": "Job.38.9"
+              }
+            ]
+          },
+          {
+            "lemma": "אֵשׁ",
+            "note": "The pillar of cloud by day answers to the pillar of fire by night.",
+            "evidence": [
+              {
+                "ref": "Exo.13.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.9.15"
+              },
+              {
+                "ref": "Psa.105.39"
+              },
+              {
+                "ref": "Isa.4.5"
+              }
+            ]
+          },
+          {
+            "lemma": "טַל",
+            "note": "The dew, which like the morning cloud is soon gone.",
+            "evidence": [
+              {
+                "ref": "Hos.6.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.13.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עַמּוּד עָנָן",
+            "gloss": "a pillar of cloud",
+            "evidence": [
+              {
+                "ref": "Exo.13.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.12.5"
+              },
+              {
+                "ref": "Psa.99.7"
+              },
+              {
+                "ref": "Neh.9.12"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲנַן יְהוָה",
+            "gloss": "the cloud of Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.40.38",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.10.34"
+              }
+            ]
+          },
+          {
+            "phrase": "יוֹם עָנָן",
+            "gloss": "a day of cloud: a day of judgment",
+            "evidence": [
+              {
+                "ref": "Ezk.30.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.34.12"
+              },
+              {
+                "ref": "Jol.2.2"
+              },
+              {
+                "ref": "Zep.1.15"
+              }
+            ]
+          },
+          {
+            "phrase": "הַקֶּשֶׁת בֶּעָנָן",
+            "gloss": "the bow in the cloud",
+            "evidence": [
+              {
+                "ref": "Gen.9.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.9.14"
+              },
+              {
+                "ref": "Ezk.1.28"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲנַן הַקְּטֹרֶת",
+            "gloss": "the cloud of the incense",
+            "evidence": [
+              {
+                "ref": "Lev.16.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.8.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָנַן",
+      "pos": "verb",
+      "gloss": "(piel) bring clouds; (poel) practise soothsaying",
+      "bdb": [
+        "p.dy.ac"
+      ],
+      "summary": "The piel, once, is “bring clouds”, made from the noun. The poel and polel participle עוֹנֵן is a soothsayer, named with the diviner and the enchanter among the practices of the nations that Israel is forbidden. Scripture never says how the soothsayer worked, so how this use comes from the root is not clear: the Targums’ Aramaic takes it as reading the clouds, and Arabic offers other links (see the cognates).",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "bring clouds",
+          "cognate_ids": [
+            "ar-anan",
+            "arc-anana",
+            "arc-anen"
+          ],
+          "senses": [
+            {
+              "gloss": "bring clouds",
+              "definition": "Of God: to bring clouds over the earth, the occasion on which the bow will be seen.",
+              "kin": [
+                "cloud-sky"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.9.14",
+                  "role": "defining",
+                  "note": "בְּעַנְנִי עָנָן עַל־הָאָרֶץ, “when I cloud clouds over the earth”, the verb with its own noun."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "practise soothsaying; (participle) soothsayer",
+          "cognate_ids": [
+            "arc-anen",
+            "ar-anna",
+            "ar-ghanna"
+          ],
+          "senses": [
+            {
+              "id": "soothsaying",
+              "gloss": "practise soothsaying",
+              "definition": "A way of seeking hidden things or the future, named with divination (קֶסֶם) and enchantment (נַחַשׁ), practised by the nations and forbidden to Israel; its soothsayers foretold what did not come.",
+              "evidence": [
+                {
+                  "ref": "Lev.19.26",
+                  "role": "defining",
+                  "note": "“You shall not practise enchantment, nor shall you practise soothsaying (תְעוֹנֵנוּ).”"
+                },
+                {
+                  "ref": "Deu.18.10",
+                  "role": "defining",
+                  "note": "In the list of those who must not be found in Israel: a diviner, a מְעוֹנֵן, an enchanter, a sorcerer."
+                },
+                {
+                  "ref": "Deu.18.14",
+                  "role": "defining",
+                  "note": "“These nations … listen to soothsayers and diviners; but as for you, Yahweh your God has not given you so”: the prophet like Moses follows (Deu 18:15)."
+                },
+                {
+                  "ref": "Jer.27.9",
+                  "role": "defining",
+                  "note": "Prophets, diviners, dreamers, soothsayers and sorcerers who say “you shall not serve the king of Babylon”: they prophesy a lie (Jer 27:10)."
+                },
+                {
+                  "ref": "Isa.2.6",
+                  "note": "Jacob’s house is “full from the east, and soothsayers like the Philistines”."
+                },
+                {
+                  "ref": "Mic.5.11",
+                  "note": "“I will cut off sorceries from your hand, and you shall have no more soothsayers.”"
+                },
+                {
+                  "ref": "2Ch.33.6",
+                  "note": "Manasseh practised soothsaying, with enchantment and sorcery."
+                },
+                {
+                  "ref": "Jdg.9.37",
+                  "note": "אֵלוֹן מְעוֹנְנִים, “the oak of the soothsayers”, a landmark near Shechem."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "practise soothsaying; (participle) sorceress",
+          "cognate_ids": [
+            "arc-anen",
+            "ar-anna",
+            "ar-ghanna"
+          ],
+          "senses": [
+            {
+              "gloss": "practise soothsaying",
+              "definition": "The same forms as the poel, which the analysis tags polel in two places: Manasseh’s soothsaying, and the soothsaying woman as a byword for an apostate people’s mother.",
+              "evidence": [
+                {
+                  "ref": "2Ki.21.6",
+                  "role": "defining",
+                  "note": "Manasseh “practised soothsaying and enchantment”, as in 2Ch 33:6."
+                },
+                {
+                  "ref": "Isa.57.3",
+                  "note": "“Sons of a soothsaying woman (עֹנְנָה), seed of an adulterer.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲנָנָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a cloud",
+      "bdb": [
+        "p.dy.ad"
+      ],
+      "cognate_ids": [
+        "ar-anan",
+        "arc-anana"
+      ],
+      "summary": "Once, in Job’s curse on the day of his birth; the feminine of עָנָן, much as Arabic has عَنَانَةٌ for one cloud of عَنَانٌ.",
+      "senses": [
+        {
+          "gloss": "a cloud",
+          "definition": "A cloud settling over a day to darken it.",
+          "kin": [
+            "cloud-sky",
+            "cloud-covering"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.3.5",
+              "role": "defining",
+              "note": "“Let darkness and the shadow of death claim it; let a cloud dwell on it”, beside darkness and blackness."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲנָן",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cloud",
+      "bdb": [
+        "xp.ak.ac"
+      ],
+      "cognate_ids": [
+        "ar-anan",
+        "arc-anana"
+      ],
+      "summary": "Once in Daniel’s Aramaic, in “the clouds of heaven” with which the one like a son of man comes; the New Testament takes the verse up of Jesus.",
+      "senses": [
+        {
+          "id": "clouds-of-heaven",
+          "gloss": "the clouds of heaven",
+          "definition": "The clouds with which one like a son of man comes to the Ancient of Days to receive the kingdom.",
+          "kin": [
+            "cloud-judgment",
+            "cloud-presence"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.7.13",
+              "role": "defining",
+              "note": "“With the clouds of heaven one like a son of man was coming”, and he was given dominion and a kingdom (Dan 7:14)."
+            },
+            {
+              "ref": "Mat.26.64",
+              "role": "defining",
+              "note": "Jesus to the high priest: “you will see the Son of man sitting at the right hand of power and coming on the clouds of heaven.”"
+            },
+            {
+              "ref": "Mrk.14.62"
+            },
+            {
+              "ref": "Mat.24.30"
+            },
+            {
+              "ref": "Mrk.13.26"
+            },
+            {
+              "ref": "Luk.21.27"
+            },
+            {
+              "ref": "Rev.1.7",
+              "note": "“Behold, he comes with the clouds, and every eye will see him.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "νεφέλη",
+          "gloss": "cloud",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.7.13, עֲנָנֵי → νεφελῶν"
+            },
+            {
+              "ref": "Mat.26.64",
+              "role": "defining",
+              "note": "“Coming ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ”: Dan 7:13 quoted."
+            },
+            {
+              "ref": "Mat.24.30"
+            },
+            {
+              "ref": "Mrk.14.62"
+            },
+            {
+              "ref": "Rev.1.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲנָנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cloud",
+      "cognate_ids": [
+        "ar-anan",
+        "arc-anana"
+      ],
+      "summary": "The Peshitta’s word for a cloud, in the New Testament wherever the Greek has νεφέλη, and once more where it has none: John’s rainbow round the throne is “the bow of the cloud” (Rev 4:3), the bow in the cloud of Gen 9 and Ezk 1:28.",
+      "senses": [
+        {
+          "gloss": "cloud (of the sky)",
+          "definition": "A cloud of the sky, which brings rain.",
+          "kin": [
+            "cloud-sky"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.12.54",
+              "role": "defining",
+              "note": "“When you see a cloud rising from the west, you say at once, Rain is coming.”"
+            },
+            {
+              "ref": "Jud.1.12",
+              "note": "False teachers are “clouds without rain”."
+            },
+            {
+              "ref": "2Pe.2.17"
+            },
+            {
+              "ref": "Rev.4.3",
+              "note": "“The bow of the cloud that was round about the throne”, where the Greek has only ἶρις."
+            }
+          ]
+        },
+        {
+          "gloss": "the cloud of God’s presence",
+          "definition": "The cloud that overshadowed the disciples at the transfiguration, from which the Father spoke, and the cloud under which Israel passed.",
+          "kin": [
+            "cloud-presence",
+            "cloud-speaking",
+            "cloud-leading"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.17.5",
+              "role": "defining",
+              "note": "“A bright cloud overshadowed them, and a voice from the cloud said, This is my Son, the beloved … hear him.”"
+            },
+            {
+              "ref": "Mrk.9.7"
+            },
+            {
+              "ref": "Luk.9.34",
+              "to": "Luk.9.35"
+            },
+            {
+              "ref": "1Co.10.1",
+              "to": "1Co.10.2"
+            }
+          ]
+        },
+        {
+          "gloss": "the clouds of the Son of man’s coming",
+          "definition": "The clouds in which the Son of man was taken up and with which he comes.",
+          "kin": [
+            "clouds-of-heaven"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.1.9",
+              "role": "defining",
+              "note": "“A cloud received him and he was hidden from their eyes”; he will come in the same way (Act 1:11)."
+            },
+            {
+              "ref": "Mat.24.30"
+            },
+            {
+              "ref": "Mat.26.64"
+            },
+            {
+              "ref": "Mrk.13.26"
+            },
+            {
+              "ref": "Mrk.14.62"
+            },
+            {
+              "ref": "Luk.21.27"
+            },
+            {
+              "ref": "1Th.4.17",
+              "note": "The living caught up with the raised dead “in the clouds” to meet the Lord."
+            },
+            {
+              "ref": "Rev.1.7"
+            },
+            {
+              "ref": "Rev.10.1"
+            },
+            {
+              "ref": "Rev.11.12"
+            },
+            {
+              "ref": "Rev.14.14",
+              "to": "Rev.14.16"
+            }
+          ]
+        },
+        {
+          "gloss": "a cloud (of witnesses)",
+          "definition": "A great company round about, like a cloud.",
+          "evidence": [
+            {
+              "ref": "Heb.12.1",
+              "role": "defining",
+              "note": "“These witnesses like a cloud surrounding us.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-anan",
+      "lang": "ar",
+      "form": "عَنَانٌ",
+      "translit": "ʿanān",
+      "gloss": "clouds; one cloud عَنَانَةٌ ʿanāna; عَنَانُ السَّمَاءِ the region of the sky",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "The same word as עָנָן, with ʿ behind the ע, and a singular in -a as Hebrew has עֲנָנָה. Lane’s sources say some take it as clouds “appearing, or presenting themselves … in the horizon”, which would tie it to the verb عَنَّ (ar-anna).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2166, root عن, عَنَانٌ (n30655)",
+          "note": "“Clouds: (S, Msb, K:) or, accord. to some, clouds appearing, or presenting themselves, or extending sideways, in the horizon … such as retain the water: (K:) one whereof is termed عَنَانَةٌ.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-anana",
+      "lang": "arc",
+      "form": "עֲנָנָא",
+      "translit": "ʿănānā",
+      "gloss": "cloud (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums use it for Hebrew עָנָן (Targ. Isa 44:22; Targ. Job 7:9). Onkelos at Lev 23:43 has Israel made to dwell in the shelter of clouds where the Hebrew has booths: the Targum’s reading, not the Hebrew’s.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲנַן II, עֲנָנָא",
+          "note": "“Targ. Is. XLIV, 22. Targ. Job VII, 9 … Targ. O. Lev. XXIII, 43 … Pl. עֲנָנִין, עֲנָנַיָּא, עֲנָנֵי. Targ. II Sam. XXII, 12.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-anen",
+      "lang": "arc",
+      "form": "עֲנַן",
+      "translit": "ʿănan",
+      "gloss": "gather clouds; (pael) augur from clouds (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "Onkelos renders the piel of Gen 9:14 with it, and the Targums use the pael for the soothsaying of Lev 19:26 and 2Ki 21:6. That is how the Targums understood the Hebrew word, not independent evidence of how the soothsayer worked.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲנַן I",
+          "note": "“to gather clouds. Targ. O. Gen. IX, 14 בעֲנָנוּתִי. Pa. עַנֵּין to augur from clouds. Targ. II Kings XXI, 6. Targ. O. Lev. XIX, 26 תְעָנוֹן.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-anna",
+      "lang": "ar",
+      "form": "عَنَّ",
+      "translit": "ʿanna",
+      "gloss": "appear, present itself; intervene, oppose; turn aside",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Would make the soothsayer one who reads what appears or presents itself; argued, not shown. Lane’s sources also tie عَنَانٌ “clouds” to it as clouds “appearing in the horizon”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2162, root عن, عَنَّ (n30640)",
+          "note": "“It appeared before one … it showed, presented, or offered, itself: it occurred: and it presented itself, or intervened between a person and an object before him, as an obstacle.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ghanna",
+      "lang": "ar",
+      "form": "غَنَّ",
+      "translit": "ġanna",
+      "gloss": "speak through the nose, twang; hum (of flies)",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Would make the soothsayer one who hums or murmurs his sayings, with ġ behind the ע and so another older root than the cloud word. Argued, not shown; scripture does not say how the soothsayer spoke.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2299, root غن, غَنَّ (n32490); اغنّ (n32492)",
+          "note": "“He spoke in, or from, or [rather] through, his nose”; form IV of flies, “made a sound [or humming]”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "covenant-with-noah",
+      "statement": "After the flood God says, “I have set my bow in the cloud, and it shall be the sign of a covenant between me and the earth” (Gen 9:13); when he brings clouds over the earth and the bow is seen in the cloud, he will remember his covenant, “and the waters shall no more become a flood to destroy all flesh” (Gen 9:14–16). The promise is that no flood will again cut off all flesh or destroy the earth (Gen 9:11). From the verses: the flood of Noah’s day was over the whole earth, for local floods have come since and the sign still stands. Ezekiel saw the glory of Yahweh like “the bow that is in the cloud on the day of rain” (Ezk 1:28), and John a rainbow round the throne (Rev 4:3), which the Peshitta calls the bow of the cloud: the sign of God’s faithfulness stands about his throne.",
+      "evidence": [
+        {
+          "ref": "Gen.9.11",
+          "to": "Gen.9.16"
+        },
+        {
+          "ref": "Ezk.1.28"
+        },
+        {
+          "ref": "Rev.4.3"
+        }
+      ]
+    },
+    {
+      "topic": "god-manifestation",
+      "statement": "Yahweh went before Israel in the pillar of cloud (Exo 13:21), and the next chapter says “the angel of God who went before the camp of Israel” moved behind them, and the pillar of cloud with him (Exo 14:19); of that angel Yahweh says, “my name is in him” (Exo 23:20–21). In the cloud Yahweh came down and spoke (Exo 19:9; 34:5; Num 12:5; Psa 99:7), and his glory in it filled the dwelling and the temple so that neither Moses nor the priests could stand there (Exo 40:34–35; 1Ki 8:10–11); yet no man can see his face and live (Exo 33:20). From the verses: the cloud showed God present with his people while it hid him, and he dealt with them through his angel who bore his name. On the mountain of the transfiguration a bright cloud overshadowed the disciples and the voice from it said, “This is my beloved Son … hear him” (Mat 17:5; Luk 9:34–35), the words of Deu 18:15 about the prophet like Moses: the presence that spoke from the cloud at Sinai now directs Israel to the Son. Paul says Israel’s fathers were “all under the cloud” and “baptized into Moses in the cloud and in the sea”, and that these things were examples for us (1Co 10:1–2, 6).",
+      "evidence": [
+        {
+          "ref": "Exo.13.21"
+        },
+        {
+          "ref": "Exo.14.19"
+        },
+        {
+          "ref": "Exo.23.20",
+          "to": "Exo.23.21"
+        },
+        {
+          "ref": "Exo.19.9"
+        },
+        {
+          "ref": "Exo.34.5"
+        },
+        {
+          "ref": "Num.12.5"
+        },
+        {
+          "ref": "Psa.99.7"
+        },
+        {
+          "ref": "Exo.40.34",
+          "to": "Exo.40.35"
+        },
+        {
+          "ref": "1Ki.8.10",
+          "to": "1Ki.8.11"
+        },
+        {
+          "ref": "Exo.33.20"
+        },
+        {
+          "ref": "Mat.17.5"
+        },
+        {
+          "ref": "Luk.9.34",
+          "to": "Luk.9.35"
+        },
+        {
+          "ref": "Deu.18.15"
+        },
+        {
+          "ref": "1Co.10.1",
+          "to": "1Co.10.2"
+        },
+        {
+          "ref": "1Co.10.6"
+        }
+      ]
+    },
+    {
+      "topic": "coming-with-clouds",
+      "statement": "In the prophets a “day of cloud” is the day Yahweh comes in judgment on a nation: on Egypt (Ezk 30:3, 18), on Judah (Zep 1:15; Jol 2:2); “cloud is the dust of his feet” (Nam 1:3). Daniel sees “with the clouds of heaven one like a son of man” brought to the Ancient of Days and given dominion and a kingdom (Dan 7:13–14). Jesus takes the words to himself: to the high priest, “you will see the Son of man sitting at the right hand of power and coming on the clouds of heaven” (Mat 26:64), and on the Mount of Olives he sets the sign of the Son of man coming on the clouds within “this generation” (Mat 24:30, 34). So the language speaks first of judgment in the hearers’ own day, Jerusalem’s overthrow in AD 70, in the prophets’ own terms for Yahweh’s coming against a city. It reaches on to his return: a cloud received him out of the disciples’ sight, and he “will come in the same way” (Act 1:9–11); the living will be caught up together with the raised dead “in the clouds” to meet him (1Th 4:16–17); “Behold, he comes with the clouds, and every eye will see him” (Rev 1:7).",
+      "evidence": [
+        {
+          "ref": "Ezk.30.3"
+        },
+        {
+          "ref": "Ezk.30.18"
+        },
+        {
+          "ref": "Zep.1.15"
+        },
+        {
+          "ref": "Jol.2.2"
+        },
+        {
+          "ref": "Nam.1.3"
+        },
+        {
+          "ref": "Dan.7.13",
+          "to": "Dan.7.14"
+        },
+        {
+          "ref": "Mat.26.64"
+        },
+        {
+          "ref": "Mat.24.30"
+        },
+        {
+          "ref": "Mat.24.34"
+        },
+        {
+          "ref": "Act.1.9",
+          "to": "Act.1.11"
+        },
+        {
+          "ref": "1Th.4.16",
+          "to": "1Th.4.17"
+        },
+        {
+          "ref": "Rev.1.7"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Job says, “A cloud is consumed and goes; so one who goes down to the grave (שְׁאוֹל) does not come up; he returns no more to his house” (Job 7:9–10). Hosea uses the morning cloud for what does not last (Hos 6:4; 13:3), and James asks, “What is your life? It is a vapour that appears for a little while and then vanishes” (Jas 4:14). From the verses: death ends a man as a cloud is gone; nothing of him goes on living elsewhere. Job’s hope is not in that, but that God will call him from the grave and he will answer (Job 14:13–15), and that in his flesh he will see God (Job 19:25–26).",
+      "evidence": [
+        {
+          "ref": "Job.7.9",
+          "to": "Job.7.10"
+        },
+        {
+          "ref": "Hos.6.4"
+        },
+        {
+          "ref": "Hos.13.3"
+        },
+        {
+          "ref": "Jas.4.14"
+        },
+        {
+          "ref": "Job.14.13",
+          "to": "Job.14.15"
+        },
+        {
+          "ref": "Job.19.25",
+          "to": "Job.19.26"
+        }
+      ]
+    },
+    {
+      "topic": "divination-forbidden",
+      "statement": "The law forbids soothsaying beside enchantment (Lev 19:26), and Deuteronomy names the מְעוֹנֵן among the practices of the nations that are “an abomination to Yahweh”: “these nations listen to soothsayers and diviners, but as for you, Yahweh your God has not given you so”; instead, “Yahweh your God will raise up for you a prophet like me … him you shall hear” (Deu 18:10–15). Manasseh practised it (2Ki 21:6; 2Ch 33:6); Jeremiah calls the soothsayers’ word that Judah would not serve Babylon a lie (Jer 27:9–10); Micah says Yahweh will cut them off (Mic 5:11). Peter says Jesus is that prophet (Act 3:22–23). From the verses: God’s people are to learn what is hidden and what is to come from his word by his prophets, and last by his Son, not by reading signs.",
+      "evidence": [
+        {
+          "ref": "Lev.19.26"
+        },
+        {
+          "ref": "Deu.18.10",
+          "to": "Deu.18.15"
+        },
+        {
+          "ref": "2Ki.21.6"
+        },
+        {
+          "ref": "2Ch.33.6"
+        },
+        {
+          "ref": "Jer.27.9",
+          "to": "Jer.27.10"
+        },
+        {
+          "ref": "Mic.5.11"
+        },
+        {
+          "ref": "Act.3.22",
+          "to": "Act.3.23"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 and Numbers 10. Names left out (no name entries written, as the task named none): עָנָן Anan (p.dz.ab, Anan@Neh.10.26; the key also picks up all the cloud tokens by spelling), עֲנָנִי Anani (p.dz.ac, Anani@1Ch.3.24), עֲנַנְיָה Ananiah (p.dz.ad: a man, Ananiah@Neh.3.23, and a place, Neh 11:32). The verb’s two keys p.dy.ac (“bring clouds”) and p.dz.aa (“practise soothsaying”) both carry all 11 tokens, since the database files them by spelling; one word is entered under p.dy.ac, with the piel and the soothsaying stems apart. 2Ki 21:6 and Isa 57:3 are tagged polel and the rest poel, though the forms are the same; kept as tagged. Open questions: (1) The soothsaying sense: whether it is the cloud root (the Targums read it as augury from clouds, but that is their interpretation), Arabic ʿanna “appear” (ʿ), or Arabic ġanna “hum” (ġ, another older root). Another lead: some take עוֹנֵן from עוֹנָה “time” (an “observer of times”), under עון; not followed. (2) The coming-with-clouds doctrine reads Mat 24:30 and 26:64 first of AD 70 and Act 1, 1Th 4 and Rev 1:7 of the return, as the user’s scheme does; check the wording. (3) Ezk 38:9, 16 (Gog “like a cloud to cover the land”) are cited only for the sense, with no doctrine. Leads not followed: Ugaritic ʿnn (the attendants of Baal; argued by some to be “cloud”), with no vendored Ugaritic dictionary; Syriac ܥܢܢܐ is a word of the entry from the Peshitta, so no Syriac cognate is entered; Payne Smith not checked. No Akkadian cognate found (Akkadian uses erpetu for cloud). The Septuagint renders the poel by κληδονίζομαι and οἰωνίζομαι, neither in the New Testament, so no Greek is entered for the verb."
+}
