@@ -1,0 +1,2275 @@
+{
+  "id": "qedem",
+  "root": "קדמ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "direction",
+    "east",
+    "time",
+    "antiquity",
+    "foreknowledge",
+    "meeting",
+    "wind"
+  ],
+  "gloss": "front, before; east; former time, of old; go before, meet",
+  "summary": "The root is what is in front, before one. Facing the sunrise, the front is the east and what is behind (אָחוֹר) the west, so קֶדֶם and קָדִים are the east, the east wind, and the “sons of the east” (Job 23:8; Isa 9:11; Gen 29:1; Exo 14:21); looking back, what is before is the past, so קֶדֶם is also “of old”, the days of antiquity in which God formed his purpose and swore to the fathers (Isa 46:10; 2Ki 19:25; Mic 7:20). The verb is to come before: to go ahead, to meet someone with bread or blessing, or to confront him (Psa 68:26; Deu 23:5; Psa 18:6), and Biblical Aramaic קֳדָם is “before, in the presence of” (Dan 7:13). Arabic qadama “precede” and qadīm “ancient”, Akkadian qudmu “front, former time”, and Ugaritic qdm “east; before” share the same senses.",
+  "words": [
+    {
+      "lemma": "קֶדֶם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "front, before; east, eastward (קֵדְמָה); ancient time, of old",
+      "bdb": [
+        "s.al.ab"
+      ],
+      "summary": "What lies before one: the east, as the front of one facing the sunrise, and with the ending of direction קֵדְמָה “eastward”; and the time before, the days of old. With מִן it is “on the east of” or “from of old”.",
+      "senses": [
+        {
+          "id": "qedem-front",
+          "gloss": "front, before (in place)",
+          "definition": "What is in front of one, set against what is behind (אָחוֹר).",
+          "cognate_ids": [
+            "ar-quddam",
+            "akk-qudmu",
+            "uga-qdm",
+            "sab-qdm"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.139.5",
+              "role": "defining",
+              "note": "“אָחוֹר וָקֶדֶם, behind and before, you have enclosed me”."
+            },
+            {
+              "ref": "Isa.9.11",
+              "role": "defining",
+              "note": "“Aram מִקֶּדֶם and the Philistines מֵאָחוֹר”: Aram from the east, the Philistines from behind, the west."
+            },
+            {
+              "ref": "Job.23.8",
+              "role": "defining",
+              "note": "“Behold, I go קֶדֶם and he is not there, and אָחוֹר, but I do not perceive him”, with left and right, north and south, in the next verse: front and back are east and west."
+            }
+          ],
+          "kin": [
+            "qodam-before",
+            "go-before"
+          ]
+        },
+        {
+          "id": "qedem-east",
+          "gloss": "east; on the east of (מִקֶּדֶם)",
+          "definition": "The east, the quarter the sun rises in, which is the front for one facing it; מִקֶּדֶם is “on the east”, or “from the east”.",
+          "cognate_ids": [
+            "uga-qdm"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.2.8",
+              "role": "defining",
+              "note": "Yahweh God planted a garden in Eden מִקֶּדֶם, in the east."
+            },
+            {
+              "ref": "Gen.3.24",
+              "role": "defining",
+              "note": "He drove out the man and set the cherubim מִקֶּדֶם לְגַן עֵדֶן, on the east of the garden, to guard the way to the tree of life."
+            },
+            {
+              "ref": "Gen.12.8",
+              "role": "defining",
+              "note": "The mountain east of Bethel, “with Bethel on the west (מִיָּם) and Ai מִקֶּדֶם”: east set against the sea, the west."
+            },
+            {
+              "ref": "Gen.11.2",
+              "note": "“As they journeyed מִקֶּדֶם, they found a plain in the land of Shinar.”"
+            },
+            {
+              "ref": "Gen.13.11",
+              "note": "Lot journeyed מִקֶּדֶם, toward the Jordan plain."
+            },
+            {
+              "ref": "Gen.10.30",
+              "note": "הַר הַקֶּדֶם, the mountain of the east."
+            },
+            {
+              "ref": "Num.23.7",
+              "note": "Balaam: “from Aram Balak has brought me, the king of Moab מֵהַרְרֵי קֶדֶם, from the mountains of the east.”"
+            },
+            {
+              "ref": "Num.34.11",
+              "note": "The border runs מִקֶּדֶם לָעַיִן, east of Ain, to the shoulder of the Sea of Chinnereth קֵדְמָה."
+            },
+            {
+              "ref": "Jos.7.2",
+              "note": "Ai, beside Beth Aven, מִקֶּדֶם לְבֵית־אֵל."
+            },
+            {
+              "ref": "Isa.2.6",
+              "note": "“They are full מִקֶּדֶם”, filled with what comes from the east, soothsayers like the Philistines."
+            },
+            {
+              "ref": "Ezk.11.23",
+              "role": "defining",
+              "note": "The glory of Yahweh went up from the city and stood on the mountain “which is מִקֶּדֶם לָעִיר”, the Mount of Olives."
+            },
+            {
+              "ref": "Jon.4.5",
+              "note": "Jonah sat מִקֶּדֶם לָעִיר, east of Nineveh."
+            },
+            {
+              "ref": "Zec.14.4",
+              "role": "defining",
+              "note": "“His feet shall stand in that day on the Mount of Olives, which is before Jerusalem מִקֶּדֶם”, and it will split toward the east and the west."
+            }
+          ],
+          "kin": [
+            "qadim-east",
+            "qidmah-east",
+            "qadmoni-eastern"
+          ],
+          "senses": [
+            {
+              "id": "qedem-eastward",
+              "gloss": "eastward, on the east side (קֵדְמָה)",
+              "definition": "With the ending of direction: toward the east, on the east side; often doubled with מִזְרָחָה, “toward the sunrise”.",
+              "evidence": [
+                {
+                  "ref": "Num.10.5",
+                  "role": "defining",
+                  "note": "At the first alarm “the camps that camp קֵדְמָה shall set out”: Judah, Issachar and Zebulun (Num 2:3–9), who march first (Num 10:14)."
+                },
+                {
+                  "ref": "Num.2.3",
+                  "role": "defining",
+                  "note": "“Those camping קֵדְמָה מִזְרָחָה, toward the sunrise: the banner of the camp of Judah.”"
+                },
+                {
+                  "ref": "Num.3.38",
+                  "role": "defining",
+                  "note": "Before the tabernacle קֵדְמָה, before the tent of meeting מִזְרָחָה, camp Moses, Aaron and his sons, keeping the sanctuary; “the stranger who comes near shall be put to death.”"
+                },
+                {
+                  "ref": "Lev.16.14",
+                  "note": "On the day of covering the high priest sprinkles the bull’s blood on the face of the כַּפֹּרֶת קֵדְמָה, on its east side."
+                },
+                {
+                  "ref": "Lev.1.16",
+                  "note": "The bird’s crop is thrown beside the altar קֵדְמָה, at the place of the ashes."
+                },
+                {
+                  "ref": "Exo.27.13",
+                  "note": "The court’s width on the east side, קֵדְמָה מִזְרָחָה, fifty cubits."
+                },
+                {
+                  "ref": "Exo.38.13"
+                },
+                {
+                  "ref": "Num.34.3",
+                  "note": "The southern border, from the end of the Salt Sea קֵדְמָה."
+                },
+                {
+                  "ref": "Num.34.15",
+                  "note": "The two and a half tribes took their inheritance beyond the Jordan at Jericho קֵדְמָה מִזְרָחָה."
+                },
+                {
+                  "ref": "Num.35.5"
+                },
+                {
+                  "ref": "Jos.19.12",
+                  "note": "קֵדְמָה מִזְרַח הַשֶּׁמֶשׁ, eastward toward the sunrise."
+                },
+                {
+                  "ref": "1Ki.17.3",
+                  "note": "Elijah: “turn קֵדְמָה, and hide by the brook Cherith”."
+                },
+                {
+                  "ref": "2Ki.13.17",
+                  "note": "“Open the window קֵדְמָה”: the arrow of Yahweh’s salvation against Aram."
+                },
+                {
+                  "ref": "Ezk.8.16",
+                  "role": "defining",
+                  "note": "Twenty-five men at the temple door, “their backs toward the temple of Yahweh and their faces קֵדְמָה, and they were bowing down קֵדְמָה to the sun”."
+                },
+                {
+                  "ref": "Gen.13.14",
+                  "note": "“Look northward and southward וָקֵדְמָה and westward”: the four quarters promised to Abram."
+                },
+                {
+                  "ref": "Gen.28.14",
+                  "note": "Jacob’s seed to spread “to the west וָקֵדְמָה and to the north and to the south”."
+                },
+                {
+                  "ref": "2Ch.4.10"
+                }
+              ]
+            },
+            {
+              "id": "sons-of-the-east",
+              "gloss": "the east, its peoples (בְּנֵי קֶדֶם, אֶרֶץ קֶדֶם)",
+              "definition": "The lands and peoples east of Israel, the desert peoples beyond the Jordan toward Aram and Arabia.",
+              "evidence": [
+                {
+                  "ref": "Gen.29.1",
+                  "role": "defining",
+                  "note": "Jacob went “to the land of the בְנֵי קֶדֶם”, toward Haran (Gen 28:10; 29:4)."
+                },
+                {
+                  "ref": "Gen.25.6",
+                  "role": "defining",
+                  "note": "Abraham sent his concubines’ sons “קֵדְמָה, to the אֶרֶץ קֶדֶם”, away from Isaac."
+                },
+                {
+                  "ref": "Jdg.6.3",
+                  "note": "Midian, Amalek and the בְנֵי קֶדֶם came up against Israel."
+                },
+                {
+                  "ref": "Jdg.8.10"
+                },
+                {
+                  "ref": "1Ki.5.10",
+                  "note": "Solomon’s wisdom surpassed “the wisdom of all the בְנֵי קֶדֶם and all the wisdom of Egypt”."
+                },
+                {
+                  "ref": "Job.1.3",
+                  "note": "Job was “the greatest of all the בְנֵי קֶדֶם”."
+                },
+                {
+                  "ref": "Isa.11.14",
+                  "note": "Israel and Judah together “shall plunder the בְנֵי קֶדֶם”, with Edom, Moab and Ammon."
+                },
+                {
+                  "ref": "Jer.49.28",
+                  "note": "“Go up against Kedar and destroy the בְנֵי קֶדֶם.”"
+                },
+                {
+                  "ref": "Ezk.25.4",
+                  "note": "Ammon given to the בְנֵי קֶדֶם for a possession."
+                },
+                {
+                  "ref": "Ezk.25.10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "qedem-old",
+          "gloss": "ancient time, of old; from of old (מִקֶּדֶם)",
+          "definition": "The time before, looked back on: the days of old, set beside עוֹלָם; מִקֶּדֶם, “from of old”, of what God declared, formed or swore long before it came to pass, and of God himself.",
+          "cognate_ids": [
+            "ar-qadim",
+            "akk-qudmu",
+            "akk-qadmu",
+            "phn-qdm"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.33.15",
+              "role": "defining",
+              "note": "“The heads of הַרְרֵי קֶדֶם and the precious things of גִּבְעוֹת עוֹלָם”: the ancient mountains beside the everlasting hills."
+            },
+            {
+              "ref": "Deu.33.27",
+              "role": "defining",
+              "note": "“A dwelling place is אֱלֹהֵי קֶדֶם, and underneath are the everlasting (עוֹלָם) arms.”"
+            },
+            {
+              "ref": "Isa.51.9",
+              "role": "defining",
+              "note": "“Awake, as in the יְמֵי קֶדֶם, the generations of עוֹלָמִים”: the arm that cut Rahab and dried the sea at the exodus (Isa 51:10)."
+            },
+            {
+              "ref": "Psa.44.2",
+              "note": "The work God did “in their days, in the יְמֵי קֶדֶם”, driving out the nations before the fathers."
+            },
+            {
+              "ref": "Psa.77.6",
+              "role": "defining",
+              "note": "“I have considered the days מִקֶּדֶם, the years of עוֹלָמִים.”"
+            },
+            {
+              "ref": "Psa.77.12",
+              "note": "“I will remember your wonders מִקֶּדֶם.”"
+            },
+            {
+              "ref": "Psa.143.5",
+              "note": "“I remember the days מִקֶּדֶם; I meditate on all your works.”"
+            },
+            {
+              "ref": "Psa.74.2",
+              "note": "“Remember your congregation which you purchased קֶדֶם, which you redeemed.”"
+            },
+            {
+              "ref": "Psa.74.12",
+              "note": "“God is my king מִקֶּדֶם, working salvation in the midst of the earth.”"
+            },
+            {
+              "ref": "Psa.78.2",
+              "role": "defining",
+              "note": "“I will utter riddles מִנִּי־קֶדֶם”, the things “our fathers have told us” (Psa 78:3); Matthew says Jesus’ parables fulfil it (Mat 13:35)."
+            },
+            {
+              "ref": "Mat.13.35",
+              "note": "Quoting Psa 78:2: “I will utter things hidden from the foundation of the world.”"
+            },
+            {
+              "ref": "Isa.46.10",
+              "role": "defining",
+              "note": "“Declaring the end from the beginning (מֵרֵאשִׁית), and מִקֶּדֶם things not yet done, saying, My counsel shall stand.”"
+            },
+            {
+              "ref": "Isa.45.21",
+              "note": "“Who declared this מִקֶּדֶם, told it מֵאָז? Was it not I, Yahweh?”"
+            },
+            {
+              "ref": "2Ki.19.25",
+              "role": "defining",
+              "note": "“Long ago I did it; לְמִימֵי קֶדֶם I formed it; now I have brought it to pass.” Also Isa 37:26."
+            },
+            {
+              "ref": "Isa.37.26"
+            },
+            {
+              "ref": "Mic.7.20",
+              "role": "defining",
+              "note": "“Truth to Jacob, mercy to Abraham, which you swore to our fathers מִימֵי קֶדֶם.”"
+            },
+            {
+              "ref": "Mic.5.1",
+              "role": "defining",
+              "note": "From Bethlehem comes the ruler in Israel, “whose goings forth are מִקֶּדֶם, מִימֵי עוֹלָם”: Micah’s own phrase for the oath to the fathers (Mic 7:20)."
+            },
+            {
+              "ref": "Hab.1.12",
+              "note": "“Are you not מִקֶּדֶם, Yahweh my God, my Holy One? We shall not die.”"
+            },
+            {
+              "ref": "Psa.55.20",
+              "note": "God, “he who sits enthroned קֶדֶם”."
+            },
+            {
+              "ref": "Psa.68.34",
+              "note": "“The heavens of heavens of קֶדֶם.”"
+            },
+            {
+              "ref": "Pro.8.22",
+              "role": "defining",
+              "note": "Wisdom: “Yahweh possessed me at the beginning of his way, קֶדֶם מִפְעָלָיו, before his works of old”: קֶדֶם as a preposition of time."
+            },
+            {
+              "ref": "Pro.8.23",
+              "note": "“From עוֹלָם I was set up, from the head, מִקַּדְמֵי־אָרֶץ, from the earliest times of the earth.”"
+            },
+            {
+              "ref": "Psa.119.152",
+              "note": "“קֶדֶם I have known from your testimonies that you founded them forever.”"
+            },
+            {
+              "ref": "Job.29.2",
+              "note": "“Oh that I were as in the יַרְחֵי־קֶדֶם, as in the days when God watched over me.”"
+            },
+            {
+              "ref": "Lam.1.7",
+              "note": "Jerusalem remembers her precious things “that were מִימֵי קֶדֶם”."
+            },
+            {
+              "ref": "Lam.2.17",
+              "note": "Yahweh has fulfilled the word “he commanded מִימֵי־קֶדֶם”."
+            },
+            {
+              "ref": "Lam.5.21",
+              "role": "defining",
+              "note": "“Turn us to you, Yahweh, and we shall be turned; renew our days כְּקֶדֶם”, as of old."
+            },
+            {
+              "ref": "Jer.30.20",
+              "note": "“His children shall be כְּקֶדֶם.”"
+            },
+            {
+              "ref": "Jer.46.26",
+              "note": "Egypt shall afterward be inhabited “as in the יְמֵי־קֶדֶם”."
+            },
+            {
+              "ref": "Isa.19.11",
+              "note": "Pharaoh’s counsellors: “I am the son of the wise, the son of מַלְכֵי־קֶדֶם, ancient kings.”"
+            },
+            {
+              "ref": "Isa.23.7",
+              "note": "Tyre, “whose antiquity (קַדְמָתָהּ) is מִימֵי־קֶדֶם”."
+            },
+            {
+              "ref": "Neh.12.46",
+              "note": "“In the days of David and Asaph מִקֶּדֶם there were chiefs of the singers.”"
+            }
+          ],
+          "kin": [
+            "former-ancient",
+            "qadmah-former",
+            "syc-ancients"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עוֹלָם",
+            "note": "“Long time, everlasting”, beside it of the days of old.",
+            "evidence": [
+              {
+                "ref": "Deu.33.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.33.15"
+              },
+              {
+                "ref": "Isa.51.9"
+              },
+              {
+                "ref": "Psa.77.6"
+              },
+              {
+                "ref": "Mic.5.1"
+              }
+            ]
+          },
+          {
+            "lemma": "מִזְרָח",
+            "note": "“Sunrise, east”, joined to קֵדְמָה: קֵדְמָה מִזְרָחָה.",
+            "evidence": [
+              {
+                "ref": "Num.2.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.3.38"
+              },
+              {
+                "ref": "Num.34.15"
+              },
+              {
+                "ref": "Jos.19.12"
+              }
+            ]
+          },
+          {
+            "lemma": "רֵאשִׁית",
+            "note": "“Beginning”, beside מִקֶּדֶם of what God declared first.",
+            "evidence": [
+              {
+                "ref": "Isa.46.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "אָז",
+            "note": "“Then, of old”, beside it: מֵאָז.",
+            "evidence": [
+              {
+                "ref": "Isa.45.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.8.22"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אָחוֹר",
+            "note": "“Behind”, and so the west, against קֶדֶם, the front and the east.",
+            "evidence": [
+              {
+                "ref": "Psa.139.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.9.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.23.8"
+              }
+            ]
+          },
+          {
+            "lemma": "יָם",
+            "note": "“Sea”, the west, against מִקֶּדֶם, the east.",
+            "evidence": [
+              {
+                "ref": "Gen.12.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.28.14"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּנֵי קֶדֶם",
+            "gloss": "the sons of the east, the eastern peoples",
+            "evidence": [
+              {
+                "ref": "Gen.29.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.6.3"
+              },
+              {
+                "ref": "1Ki.5.10"
+              },
+              {
+                "ref": "Job.1.3"
+              }
+            ]
+          },
+          {
+            "phrase": "יְמֵי קֶדֶם",
+            "gloss": "the days of old",
+            "evidence": [
+              {
+                "ref": "Psa.44.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.51.9"
+              },
+              {
+                "ref": "Mic.7.20"
+              },
+              {
+                "ref": "2Ki.19.25"
+              },
+              {
+                "ref": "Lam.1.7"
+              }
+            ]
+          },
+          {
+            "phrase": "מִקֶּדֶם",
+            "gloss": "on the east (of); from of old",
+            "evidence": [
+              {
+                "ref": "Gen.2.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.46.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.14.4"
+              },
+              {
+                "ref": "Hab.1.12"
+              }
+            ]
+          },
+          {
+            "phrase": "כְּקֶדֶם",
+            "gloss": "as of old, as before",
+            "evidence": [
+              {
+                "ref": "Lam.5.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.30.20"
+              }
+            ]
+          },
+          {
+            "phrase": "קֵדְמָה מִזְרָחָה",
+            "gloss": "eastward, toward the sunrise",
+            "evidence": [
+              {
+                "ref": "Num.2.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.27.13"
+              },
+              {
+                "ref": "Num.34.15"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἀνατολή",
+          "gloss": "rising (of the sun), east",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.8, מִקֶּדֶם → κατὰ ἀνατολάς; Gen.29.1 and Zec.14.4 → ἀνατολῶν; ἀνατολή renders קֶדֶם ×19"
+            },
+            {
+              "ref": "Mat.2.1",
+              "note": "Magi “from the east (ἀπὸ ἀνατολῶν)” came to Jerusalem."
+            },
+            {
+              "ref": "Mat.24.27",
+              "note": "“As the lightning comes out of the east and shines to the west, so shall the coming of the Son of man be.”"
+            },
+            {
+              "ref": "Rev.16.12",
+              "note": "The kings “from the rising of the sun”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀρχαῖος",
+          "gloss": "ancient, of old",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.77.6, מִקֶּדֶם → ἀρχαίας; ἀρχαῖος renders קֶדֶם ×7, ἀρχή ×9 (Deu.33.27; Psa.78.2; Mic.5.1 ἀπ’ ἀρχῆς)"
+            },
+            {
+              "ref": "Mat.5.21",
+              "note": "“It was said τοῖς ἀρχαίοις”, where the Peshitta has קַדְמָיֵא."
+            },
+            {
+              "ref": "Act.15.7",
+              "note": "“ἀφ’ ἡμερῶν ἀρχαίων God chose among us”: the Greek of יְמֵי קֶדֶם."
+            },
+            {
+              "ref": "2Pe.2.5",
+              "note": "God “did not spare the ἀρχαίου world, but kept Noah … bringing in the flood”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָדִים",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "east; east wind",
+      "bdb": [
+        "s.al.ah"
+      ],
+      "cognate_ids": [
+        "uga-qdm"
+      ],
+      "summary": "The east, chiefly in Ezekiel’s measured temple and land (קָדִימָה “eastward”); and with or without רוּחַ the east wind off the desert, hot and withering, by which Yahweh brought the locusts, divided the sea and broke the ships of Tarshish.",
+      "senses": [
+        {
+          "id": "qadim-east",
+          "gloss": "east, eastward (קָדִימָה)",
+          "definition": "The east side or quarter; דֶּרֶךְ הַקָּדִים, “the way of the east”, is the way of the gate facing east.",
+          "evidence": [
+            {
+              "ref": "Ezk.43.1",
+              "role": "defining",
+              "note": "“The gate that faces דֶּרֶךְ הַקָּדִים.”"
+            },
+            {
+              "ref": "Ezk.43.2",
+              "role": "defining",
+              "note": "“The glory of the God of Israel came from the way of הַקָּדִים, and his voice was like the noise of many waters, and the earth shone with his glory.”"
+            },
+            {
+              "ref": "Ezk.43.4",
+              "note": "The glory entered the house by the gate whose face is toward הַקָּדִים."
+            },
+            {
+              "ref": "Ezk.44.1",
+              "note": "The outer gate “that faces קָדִים, and it was shut”; for “Yahweh, the God of Israel, has entered by it” (Ezk 44:2)."
+            },
+            {
+              "ref": "Ezk.46.1",
+              "note": "The inner gate facing קָדִים shut on the six working days, opened on the sabbath and the new moon."
+            },
+            {
+              "ref": "Ezk.46.12"
+            },
+            {
+              "ref": "Ezk.47.1",
+              "role": "defining",
+              "note": "Waters issued from under the threshold of the house קָדִימָה, “for the front of the house was קָדִים”."
+            },
+            {
+              "ref": "Ezk.47.18",
+              "note": "The east side of the land, the Jordan, “to the eastern sea (הַקַּדְמוֹנִי)”."
+            },
+            {
+              "ref": "Ezk.48.1",
+              "note": "The tribes’ portions run מִפְּאַת קָדִים to the sea, east to west."
+            },
+            {
+              "ref": "Ezk.40.6"
+            },
+            {
+              "ref": "Ezk.42.16"
+            },
+            {
+              "ref": "Hab.1.9",
+              "note": "The Chaldeans: “the set of their faces is קָדִימָה.”"
+            }
+          ],
+          "kin": [
+            "qedem-east"
+          ]
+        },
+        {
+          "id": "east-wind",
+          "gloss": "east wind (רוּחַ קָדִים)",
+          "definition": "The hot wind off the desert east of the land, which scorches grain, dries springs and breaks ships; in Yahweh’s hand it brings judgment and deliverance.",
+          "evidence": [
+            {
+              "ref": "Exo.14.21",
+              "role": "defining",
+              "note": "“Yahweh drove the sea back by a strong רוּחַ קָדִים all that night, and made the sea dry land.”"
+            },
+            {
+              "ref": "Exo.10.13",
+              "role": "defining",
+              "note": "“Yahweh brought a רוּחַ קָדִים on the land all that day and all that night; when it was morning, the east wind brought the locusts.”"
+            },
+            {
+              "ref": "Gen.41.6",
+              "role": "defining",
+              "note": "Seven ears “thin and blasted by the קָדִים”."
+            },
+            {
+              "ref": "Gen.41.23"
+            },
+            {
+              "ref": "Ezk.17.10",
+              "role": "defining",
+              "note": "The vine “shall utterly wither when the רוּחַ הַקָּדִים touches it”."
+            },
+            {
+              "ref": "Ezk.19.12",
+              "note": "“The רוּחַ הַקָּדִים dried up her fruit.”"
+            },
+            {
+              "ref": "Jon.4.8",
+              "role": "defining",
+              "note": "“God prepared a sultry רוּחַ קָדִים, and the sun beat on the head of Jonah.”"
+            },
+            {
+              "ref": "Hos.13.15",
+              "role": "defining",
+              "note": "“A קָדִים shall come, the wind of Yahweh coming up from the wilderness, and his spring shall become dry.”"
+            },
+            {
+              "ref": "Psa.48.8",
+              "note": "“With a רוּחַ קָדִים you break the ships of Tarshish.” Also Ezk 27:26."
+            },
+            {
+              "ref": "Ezk.27.26"
+            },
+            {
+              "ref": "Jer.18.17",
+              "note": "“As with a רוּחַ־קָדִים I will scatter them before the enemy.”"
+            },
+            {
+              "ref": "Job.27.21",
+              "note": "“The קָדִים carries him away, and he is gone.”"
+            },
+            {
+              "ref": "Job.38.24"
+            },
+            {
+              "ref": "Psa.78.26",
+              "note": "“He caused a קָדִים to blow in the heavens”, bringing the quails."
+            },
+            {
+              "ref": "Isa.27.8"
+            },
+            {
+              "ref": "Hos.12.2",
+              "role": "defining",
+              "note": "“Ephraim feeds on wind and follows the קָדִים all day”: chasing what is empty and harmful, set beside lies and covenants with Assyria."
+            },
+            {
+              "ref": "Job.15.2",
+              "note": "“Should a wise man fill his belly with the קָדִים?”: windy, worthless words."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "רוּחַ קָדִים",
+            "gloss": "an east wind",
+            "evidence": [
+              {
+                "ref": "Exo.14.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.10.13"
+              },
+              {
+                "ref": "Psa.48.8"
+              },
+              {
+                "ref": "Jon.4.8"
+              }
+            ]
+          },
+          {
+            "phrase": "דֶּרֶךְ הַקָּדִים",
+            "gloss": "the way of the east (the east-facing gate)",
+            "evidence": [
+              {
+                "ref": "Ezk.43.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.43.2"
+              },
+              {
+                "ref": "Ezk.43.4"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "רוּחַ",
+            "note": "“Wind”, beside it of empty pursuit and empty words.",
+            "evidence": [
+              {
+                "ref": "Hos.12.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.15.2"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "καύσων",
+          "gloss": "scorching heat, burning wind",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.17.10, הַקָּדִים → καύσωνα; Jon.4.8 → καύσωνος; καύσων renders קָדִים ×6"
+            },
+            {
+              "ref": "Jas.1.11",
+              "note": "“The sun rises with the καύσωνι and withers the grass”, as the east wind withers the vine (Ezk 17:10)."
+            },
+            {
+              "ref": "Luk.12.55",
+              "note": "“When you see the south wind blow, you say there will be καύσων.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνατολή",
+          "gloss": "rising (of the sun), east",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.43.2, הַקָּדִים → ἀνατολάς; ἀνατολή renders קָדִים ×22"
+            },
+            {
+              "ref": "Rev.7.2",
+              "note": "An angel “ascending from the rising (ἀνατολῆς) of the sun, having the seal of the living God”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֳדָם",
+      "lang": "arc",
+      "pos": "preposition",
+      "gloss": "before, in the presence of",
+      "bdb": [
+        "xs.aa.ad"
+      ],
+      "cognate_ids": [
+        "arc-qedam",
+        "ar-quddam",
+        "uga-qdm",
+        "sab-qdm"
+      ],
+      "summary": "Biblical Aramaic’s preposition for “before” a king or God: speaking, praying, standing or trembling in his presence, and מִן־קֳדָם “from before” him. Once of time, the beasts “before” the fourth (Dan 7:7).",
+      "senses": [
+        {
+          "id": "qodam-before",
+          "gloss": "before, in the presence of",
+          "definition": "In front of someone, in his presence: before a king to speak, before God to pray, before the Ancient of Days.",
+          "evidence": [
+            {
+              "ref": "Dan.2.11",
+              "role": "defining",
+              "note": "“There is no other who can show it קֳדָם מַלְכָּא, except the gods.”"
+            },
+            {
+              "ref": "Dan.2.25",
+              "note": "Arioch brought Daniel in קֳדָם מַלְכָּא."
+            },
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "Daniel knelt three times a day “and prayed and gave thanks קֳדָם אֱלָהֵהּ, as he had done before this (מִן־קַדְמַת דְּנָה)”."
+            },
+            {
+              "ref": "Dan.2.18",
+              "note": "To seek mercy מִן־קֳדָם the God of heaven."
+            },
+            {
+              "ref": "Dan.5.19",
+              "note": "All peoples trembled and feared מִן־קֳדָמוֹהִי, before Nebuchadnezzar."
+            },
+            {
+              "ref": "Dan.6.27",
+              "note": "Darius’ decree: men are to tremble and fear מִן־קֳדָם the God of Daniel."
+            },
+            {
+              "ref": "Dan.7.10",
+              "role": "defining",
+              "note": "“A fiery stream issued from קֳדָמוֹהִי; … ten thousand times ten thousand stood קֳדָמוֹהִי; the judgment was set, and the books were opened.” Rev 20:12 echoes it."
+            },
+            {
+              "ref": "Dan.7.13",
+              "role": "defining",
+              "note": "One like a son of man came with the clouds of heaven to the Ancient of Days, “and they brought him near וּקְדָמוֹהִי”, before him; and to him was given dominion (Dan 7:14)."
+            },
+            {
+              "ref": "Ezr.4.18",
+              "note": "“The letter you sent us has been plainly read קָדָמָי.”"
+            },
+            {
+              "ref": "Ezr.7.14",
+              "note": "Sent מִן־קֳדָם the king and his seven counsellors."
+            },
+            {
+              "ref": "Dan.7.7",
+              "note": "Of time: the fourth beast was different from all the beasts “that were קָדָמַיהּ”, before it."
+            }
+          ],
+          "kin": [
+            "qedem-front",
+            "syc-qdam"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָדַם",
+      "pos": "verb",
+      "gloss": "come before: go ahead, meet, confront; anticipate",
+      "bdb": [
+        "s.al.ac"
+      ],
+      "cognate_ids": [
+        "ar-qadama",
+        "sab-qdm-v",
+        "arc-qedam"
+      ],
+      "summary": "To come before someone, made from the noun: to go ahead of others, to come to meet a person with bread, water or blessing, to come before God with an offering, or to come against an enemy. The hiphil “come first” is quoted in Rom 11:35.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "go before; come to meet; confront",
+          "senses": [
+            {
+              "id": "go-before",
+              "gloss": "go before, precede; be beforehand",
+              "definition": "Go in front of others, or do something before another or before the time.",
+              "evidence": [
+                {
+                  "ref": "Psa.68.26",
+                  "role": "defining",
+                  "note": "“The singers קִדְּמוּ, the players on instruments after (אַחַר), among them the maidens with timbrels.”"
+                },
+                {
+                  "ref": "Psa.89.15",
+                  "role": "defining",
+                  "note": "“Righteousness and justice are the foundation of your throne; mercy and truth יְקַדְּמוּ פָנֶיךָ”, go before your face."
+                },
+                {
+                  "ref": "Psa.119.147",
+                  "role": "defining",
+                  "note": "“קִדַּמְתִּי the dawn and cried”: I rose before the dawn."
+                },
+                {
+                  "ref": "Psa.119.148",
+                  "note": "“My eyes קִדְּמוּ the night watches, to meditate on your word.”"
+                },
+                {
+                  "ref": "Psa.88.14",
+                  "note": "“In the morning my prayer תְקַדְּמֶךָּ”, comes before you."
+                },
+                {
+                  "ref": "Jon.4.2",
+                  "note": "“Therefore קִדַּמְתִּי to flee to Tarshish”: I fled beforehand, knowing you would relent."
+                }
+              ]
+            },
+            {
+              "id": "come-to-meet",
+              "gloss": "come to meet, receive (with something); come before (God)",
+              "definition": "Come before someone to meet him with bread, water or blessing; and so come before God with an offering or with thanksgiving.",
+              "cognate_ids": [
+                "ar-qadama",
+                "sab-qdm-v"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.23.5",
+                  "role": "defining",
+                  "note": "Ammon and Moab are shut out “because they did not קִדְּמוּ you with bread and water on the way when you came out of Egypt”. Also Neh 13:2."
+                },
+                {
+                  "ref": "Neh.13.2"
+                },
+                {
+                  "ref": "Isa.21.14",
+                  "role": "defining",
+                  "note": "“לִקְרַאת the thirsty bring water; inhabitants of Tema, with bread קִדְּמוּ the fugitive.”"
+                },
+                {
+                  "ref": "Psa.21.4",
+                  "role": "defining",
+                  "note": "“You תְקַדְּמֶנּוּ with blessings of goodness; you set a crown of fine gold on his head.”"
+                },
+                {
+                  "ref": "Psa.59.11",
+                  "note": "“The God of my mercy יְקַדְּמֵנִי.”"
+                },
+                {
+                  "ref": "Psa.79.8",
+                  "note": "“Let your tender mercies speedily יְקַדְּמוּנוּ, for we are brought very low.”"
+                },
+                {
+                  "ref": "Job.3.12",
+                  "note": "“Why did the knees קִדְּמוּנִי?”: receive the newborn."
+                },
+                {
+                  "ref": "Psa.95.2",
+                  "role": "defining",
+                  "note": "“נְקַדְּמָה his face with thanksgiving.”"
+                },
+                {
+                  "ref": "Mic.6.6",
+                  "role": "defining",
+                  "note": "“With what shall I אֲקַדֵּם Yahweh, and bow before God on high? Shall I come before him with burnt offerings?” He answers: do justice, love mercy, walk humbly (Mic 6:8)."
+                }
+              ]
+            },
+            {
+              "id": "confront",
+              "gloss": "confront, come against",
+              "definition": "Come before someone as an enemy, to meet and seize him.",
+              "cognate_ids": [
+                "ar-qadama",
+                "sab-qdm-v"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.18.6",
+                  "role": "defining",
+                  "note": "“The cords of the grave surrounded me; the snares of death קִדְּמוּנִי.” Also 2Sa 22:6."
+                },
+                {
+                  "ref": "2Sa.22.6"
+                },
+                {
+                  "ref": "Psa.18.19",
+                  "note": "“They יְקַדְּמוּנִי in the day of my calamity, but Yahweh was my support.” Also 2Sa 22:19."
+                },
+                {
+                  "ref": "2Sa.22.19"
+                },
+                {
+                  "ref": "Psa.17.13",
+                  "role": "defining",
+                  "note": "“Arise, Yahweh, קַדְּמָה his face, cast him down; deliver my soul from the wicked.”"
+                },
+                {
+                  "ref": "2Ki.19.32",
+                  "note": "The king of Assyria “shall not יְקַדְּמֶנָּה with a shield”. Also Isa 37:33."
+                },
+                {
+                  "ref": "Isa.37.33"
+                },
+                {
+                  "ref": "Job.30.27",
+                  "note": "“Days of affliction קִדְּמֻנִי.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "come first; overtake",
+          "senses": [
+            {
+              "gloss": "come before, overtake; give first",
+              "definition": "Come before another, either to overtake him or to give first and so put him in debt.",
+              "evidence": [
+                {
+                  "ref": "Job.41.3",
+                  "role": "defining",
+                  "note": "“Who הִקְדִּימַנִי, that I should repay him? Whatever is under the whole heaven is mine.” Paul quotes it: “Who has first given to him, and it shall be repaid him?” (Rom 11:35)."
+                },
+                {
+                  "ref": "Rom.11.35",
+                  "role": "defining",
+                  "note": "Quoting Job 41:3 from the Hebrew, not from the Septuagint, which has another sense; the Peshitta has קַדֵּם."
+                },
+                {
+                  "ref": "Amo.9.10",
+                  "note": "Sinners who say, “The evil shall not overtake (תַגִּישׁ) or וְתַקְדִּים us.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָרָא",
+            "note": "“Meet”: לִקְרַאת beside קִדֵּם of meeting the fugitive.",
+            "evidence": [
+              {
+                "ref": "Isa.21.14",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "סָבַב",
+            "note": "“Surround”, beside it of the cords and snares of death.",
+            "evidence": [
+              {
+                "ref": "Psa.18.6",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.22.6"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אַחַר",
+            "note": "“After, behind”, against those who go before.",
+            "evidence": [
+              {
+                "ref": "Psa.68.26",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "προφθάνω",
+          "gloss": "come before, anticipate",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.18.6 and 2Sa.22.6, קִדְּמוּנִי → προέφθασάν με; Psa.95.2, נְקַדְּמָה → προφθάσωμεν; προφθάνω renders the piel ×13"
+            },
+            {
+              "ref": "Mat.17.25",
+              "role": "defining",
+              "note": "When Peter came into the house, “Jesus προέφθασεν him”, spoke first; the Peshitta has קַדְּמֵהּ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדְמֹנִי",
+      "pos": "adjective",
+      "gloss": "eastern; former, ancient; (the) Kadmonites",
+      "bdb": [
+        "s.al.ak"
+      ],
+      "summary": "In front, and so eastern: the east gate, and the eastern sea set against “the hinder sea”, the west. And before in time: former, ancient, the people of old. Once a people, the Kadmonites, “easterners”.",
+      "senses": [
+        {
+          "id": "qadmoni-eastern",
+          "gloss": "eastern",
+          "definition": "On the east, the front: the east gate of the temple; the eastern (Dead) sea, against הַיָּם הָאַחֲרוֹן, the western sea, literally “the hinder sea”.",
+          "cognate_ids": [
+            "uga-qdm"
+          ],
+          "evidence": [
+            {
+              "ref": "Jol.2.20",
+              "role": "defining",
+              "note": "The northerner driven “his face toward הַיָּם הַקַּדְמֹנִי, and his rear toward הַיָּם הָאַחֲרוֹן”: front and back, east and west."
+            },
+            {
+              "ref": "Zec.14.8",
+              "role": "defining",
+              "note": "Living waters go out from Jerusalem, “half toward הַיָּם הַקַּדְמוֹנִי and half toward הַיָּם הָאַחֲרוֹן”."
+            },
+            {
+              "ref": "Ezk.47.18",
+              "note": "The eastern border, to הַיָּם הַקַּדְמוֹנִי."
+            },
+            {
+              "ref": "Ezk.10.19",
+              "role": "defining",
+              "note": "The cherubim with the glory stood at “the door of the east gate (הַקַּדְמוֹנִי) of the house of Yahweh”."
+            },
+            {
+              "ref": "Ezk.11.1",
+              "note": "“The east gate (הַקַּדְמוֹנִי) of the house of Yahweh, which faces eastward (קָדִימָה).”"
+            }
+          ],
+          "kin": [
+            "qedem-east"
+          ]
+        },
+        {
+          "id": "former-ancient",
+          "gloss": "former, ancient; those of old",
+          "definition": "Of time before: former things, former years, the days of old, the people of old, set against what comes after (אַחֲרוֹן).",
+          "cognate_ids": [
+            "ar-qadim",
+            "sab-qdm"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.43.18",
+              "role": "defining",
+              "note": "“Do not remember the רִאשֹׁנוֹת, nor consider the קַדְמֹנִיּוֹת”: beside “former things”."
+            },
+            {
+              "ref": "Job.18.20",
+              "role": "defining",
+              "note": "“אַחֲרֹנִים are astonished at his day, and קַדְמֹנִים are seized with horror”: those after and those before."
+            },
+            {
+              "ref": "Mal.3.4",
+              "role": "defining",
+              "note": "The offering of Judah pleasant to Yahweh “as in the days of עוֹלָם and as in שָׁנִים קַדְמֹנִיּוֹת”."
+            },
+            {
+              "ref": "1Sa.24.14",
+              "note": "“As the proverb of הַקַּדְמֹנִי says, From the wicked comes wickedness.”"
+            },
+            {
+              "ref": "Ezk.38.17",
+              "note": "Gog: “Are you he of whom I spoke בְּיָמִים קַדְמוֹנִים by my servants the prophets of Israel?”"
+            }
+          ],
+          "kin": [
+            "qedem-old"
+          ]
+        },
+        {
+          "gloss": "the Kadmonites",
+          "definition": "A people named among those whose land is promised to Abram’s seed; the name is “easterners”, but who they were is not said.",
+          "evidence": [
+            {
+              "ref": "Gen.15.19",
+              "role": "defining",
+              "note": "“The Kenites and the Kenizzites וְאֵת הַקַּדְמֹנִי”, in the land from the river of Egypt to the Euphrates (Gen 15:18)."
+            }
+          ],
+          "kin": [
+            "sons-of-the-east"
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אַחֲרוֹן",
+            "note": "“Hinder, after”: the western sea against the eastern, those after against those before.",
+            "evidence": [
+              {
+                "ref": "Jol.2.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.14.8"
+              },
+              {
+                "ref": "Job.18.20",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "רִאשׁוֹן",
+            "note": "“First, former”, beside it of former things.",
+            "evidence": [
+              {
+                "ref": "Isa.43.18",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הַיָּם הַקַּדְמֹנִי",
+            "gloss": "the eastern sea",
+            "evidence": [
+              {
+                "ref": "Jol.2.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.14.8"
+              },
+              {
+                "ref": "Ezk.47.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קַדְמָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "former state, origin; (construct) before",
+      "bdb": [
+        "s.al.ae"
+      ],
+      "cognate_ids": [
+        "ar-qadim",
+        "akk-qadmu"
+      ],
+      "summary": "What was before: a people’s former state, to which God will return them, and a city’s origin; in the construct, as a conjunction, “before” (Psa 129:6).",
+      "senses": [
+        {
+          "id": "qadmah-former",
+          "gloss": "former state; origin",
+          "definition": "The state a people or city was in before; its beginning.",
+          "evidence": [
+            {
+              "ref": "Ezk.16.55",
+              "role": "defining",
+              "note": "“Sodom and her daughters shall return לְקַדְמָתָן, and Samaria and her daughters shall return לְקַדְמָתָן, and you and your daughters shall return לְקַדְמַתְכֶן.”"
+            },
+            {
+              "ref": "Ezk.36.11",
+              "role": "defining",
+              "note": "“I will settle you כְּקַדְמוֹתֵיכֶם, and do better for you than at your beginnings (רִאשֹׁתֵיכֶם).”"
+            },
+            {
+              "ref": "Isa.23.7",
+              "note": "Tyre, “whose קַדְמָתָהּ is of ancient days”."
+            }
+          ],
+          "kin": [
+            "qedem-old"
+          ]
+        },
+        {
+          "gloss": "before (that)",
+          "definition": "In the construct with שֶׁ, a conjunction of time: before.",
+          "evidence": [
+            {
+              "ref": "Psa.129.6",
+              "role": "defining",
+              "note": "“Like grass on the housetops, שֶׁקַּדְמַת it is plucked up it withers.”"
+            }
+          ],
+          "kin": [
+            "arc-qadmah-before"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קִדְמָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "front; (construct) east of",
+      "bdb": [
+        "s.al.af"
+      ],
+      "cognate_ids": [
+        "uga-qdm"
+      ],
+      "summary": "Only in the construct קִדְמַת, “in front of, east of” a place.",
+      "senses": [
+        {
+          "id": "qidmah-east",
+          "gloss": "east of, in front of",
+          "definition": "On the east side of a place, before it.",
+          "evidence": [
+            {
+              "ref": "Gen.4.16",
+              "role": "defining",
+              "note": "Cain went out from the presence of Yahweh and dwelt in the land of Nod, קִדְמַת־עֵדֶן."
+            },
+            {
+              "ref": "Gen.2.14",
+              "note": "The Hiddekel “goes קִדְמַת אַשּׁוּר”."
+            },
+            {
+              "ref": "1Sa.13.5",
+              "note": "The Philistines camped at Michmash, קִדְמַת בֵּית אָוֶן."
+            },
+            {
+              "ref": "Ezk.39.11",
+              "note": "Gog’s burial place, the valley of the travellers קִדְמַת הַיָּם."
+            }
+          ],
+          "kin": [
+            "qedem-east"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדְמָי",
+      "lang": "arc",
+      "root": "קדמי",
+      "pos": "adjective",
+      "gloss": "first, former",
+      "bdb": [
+        "xs.aa.af"
+      ],
+      "cognate_ids": [
+        "arc-qedam",
+        "sab-qdm"
+      ],
+      "summary": "Biblical Aramaic “first”: the first of Daniel’s four beasts, and the first horns uprooted before the little horn.",
+      "senses": [
+        {
+          "gloss": "first, former",
+          "definition": "The first of a series, or those that were before.",
+          "evidence": [
+            {
+              "ref": "Dan.7.4",
+              "role": "defining",
+              "note": "“קַדְמָיְתָא was like a lion, and had eagle’s wings.”"
+            },
+            {
+              "ref": "Dan.7.8",
+              "role": "defining",
+              "note": "Three “of the קַדְמָיָתָא horns” were plucked up before the little horn."
+            },
+            {
+              "ref": "Dan.7.24",
+              "role": "defining",
+              "note": "Another king “shall be different from the קַדְמָיֵא”, and shall subdue three kings."
+            }
+          ],
+          "kin": [
+            "syc-first"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדְמָה",
+      "lang": "arc",
+      "root": "קדמה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "former time; (מִן־קַדְמַת) before",
+      "bdb": [
+        "xs.aa.ae"
+      ],
+      "cognate_ids": [
+        "arc-qedam",
+        "akk-qadmu"
+      ],
+      "summary": "Biblical Aramaic, only in מִן־קַדְמַת דְּנָה, “before this, formerly”.",
+      "senses": [
+        {
+          "id": "arc-qadmah-before",
+          "gloss": "before this, formerly",
+          "definition": "With מִן and דְּנָה: from before this, previously.",
+          "evidence": [
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "Daniel prayed three times a day “as he had done מִן־קַדְמַת דְּנָה”."
+            },
+            {
+              "ref": "Ezr.5.11",
+              "role": "defining",
+              "note": "The Jews rebuild “the house that was built מִקַּדְמַת דְּנָה many years ago”, which a great king of Israel built."
+            }
+          ],
+          "kin": [
+            "qadmah-former"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְדוּמִים",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ancient (?); confronting (?)",
+      "bdb": [
+        "s.al.ai"
+      ],
+      "summary": "Once, of the Kishon: נַחַל קְדוּמִים. It may be “the ancient torrent”, from קֶדֶם “of old”, or “the torrent that came against them”, from the piel “confront”; the single use does not settle which, and how it is formed from the root is not clear.",
+      "senses": [
+        {
+          "gloss": "ancient; or confronting",
+          "definition": "Said of the Kishon that swept away Sisera’s army; the sense is uncertain.",
+          "evidence": [
+            {
+              "ref": "Jdg.5.21",
+              "role": "defining",
+              "note": "“The torrent Kishon swept them away, נַחַל קְדוּמִים, the torrent Kishon.”"
+            }
+          ],
+          "kin": [
+            "qedem-old",
+            "confront"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדְמוֹן",
+      "pos": "adjective",
+      "gloss": "eastern",
+      "bdb": [
+        "s.al.aj"
+      ],
+      "cognate_ids": [
+        "uga-qdm"
+      ],
+      "summary": "Once, of the region east of the temple toward the Arabah.",
+      "senses": [
+        {
+          "gloss": "eastern",
+          "definition": "On the east.",
+          "evidence": [
+            {
+              "ref": "Ezk.47.8",
+              "role": "defining",
+              "note": "“These waters go out toward הַגְּלִילָה הַקַּדְמוֹנָה, and go down into the Arabah, and enter the sea, and the waters shall be healed.”"
+            }
+          ],
+          "kin": [
+            "qadmoni-eastern"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְדַם",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "go before; do beforehand, anticipate (Peshitta)",
+      "cognate_ids": [
+        "arc-qedam",
+        "ar-qadama",
+        "sab-qdm-v"
+      ],
+      "summary": "The Peshitta’s ܩܕܡ: peal “go before”, of the risen Christ going ahead to Galilee; pael “come first, do beforehand”, and so the “fore-” of God’s foreknowing and foreordaining (Rom 8:28–30; 1Pe 1:20).",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "go before",
+          "senses": [
+            {
+              "gloss": "go before, go ahead",
+              "definition": "Go ahead of others to a place.",
+              "evidence": [
+                {
+                  "ref": "Mat.26.32",
+                  "role": "defining",
+                  "note": "“After I am risen, קָדֵם אֲנָא you into Galilee.”"
+                },
+                {
+                  "ref": "Mat.28.7",
+                  "role": "defining",
+                  "note": "“He is risen from the dead, and behold, קָדֵם you into Galilee; there you will see him.” Also Mrk 16:7."
+                },
+                {
+                  "ref": "Mrk.16.7"
+                },
+                {
+                  "ref": "Mat.21.31",
+                  "note": "“The tax collectors and harlots קָדְמִין you into the kingdom of God.”"
+                }
+              ],
+              "kin": [
+                "go-before"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "come first, do beforehand",
+          "senses": [
+            {
+              "gloss": "come first, get ahead of; do beforehand",
+              "definition": "Come before someone, or do something before the time.",
+              "evidence": [
+                {
+                  "ref": "Mat.17.25",
+                  "role": "defining",
+                  "note": "When Peter came into the house, Jesus קַדְּמֵהּ, spoke to him first (Greek προέφθασεν)."
+                },
+                {
+                  "ref": "Jhn.20.4",
+                  "note": "The other disciple ran “קַדְּמֵהּ לְשֶׁמְעוֹן”, outran Simon, and came first to the tomb."
+                },
+                {
+                  "ref": "Luk.19.4",
+                  "note": "Zacchaeus ran ahead and climbed a fig tree."
+                },
+                {
+                  "ref": "Mrk.14.8",
+                  "note": "“She has anointed my body beforehand for burial.”"
+                },
+                {
+                  "ref": "Mat.24.25",
+                  "note": "“Behold, I have told you beforehand.”"
+                },
+                {
+                  "ref": "Rom.11.35",
+                  "role": "defining",
+                  "note": "“Who first gave (קַדֵּם יַהֵב) to him, and it shall be repaid him?”, quoting Job 41:3, where the Hebrew has the hiphil הִקְדִּים."
+                },
+                {
+                  "ref": "Heb.6.20",
+                  "note": "“Where Jesus went before (קַדֵּם) on our behalf”, the forerunner."
+                }
+              ],
+              "kin": [
+                "go-before"
+              ]
+            },
+            {
+              "id": "syc-foreordain",
+              "gloss": "beforehand (of God’s purpose): foreordain, foreknow",
+              "definition": "With another verb, of what God did before: marked out, chose or set apart beforehand.",
+              "evidence": [
+                {
+                  "ref": "Rom.8.28",
+                  "note": "“Those whom he קַדֵּם appointed to be called.”"
+                },
+                {
+                  "ref": "Rom.8.30",
+                  "role": "defining",
+                  "note": "“Those whom he קַדֵּם marked out, he called; and those he called, he justified; and those he justified, he glorified.”"
+                },
+                {
+                  "ref": "Eph.1.4",
+                  "role": "defining",
+                  "note": "“As he chose us beforehand (קַדֵּם) in him מִן קְדָם the foundation of the world, that we should be holy … and קַדֵּם marked us out for himself.”"
+                },
+                {
+                  "ref": "1Pe.1.20",
+                  "role": "defining",
+                  "note": "Christ, “who was set apart beforehand (מְקַדַּם) for this מִן קְדָם the foundation of the world, and was revealed at the end of the times for your sake”."
+                }
+              ],
+              "kin": [
+                "qedem-old"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be overtaken",
+          "senses": [
+            {
+              "gloss": "be overtaken, be caught",
+              "definition": "Be come upon before one is aware.",
+              "evidence": [
+                {
+                  "ref": "Gal.6.1",
+                  "role": "defining",
+                  "note": "“If a man among you נֶתְקַדַּם in a fault, you who are spiritual restore him.”"
+                }
+              ],
+              "kin": [
+                "confront"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְדָם",
+      "lang": "syc",
+      "pos": "preposition",
+      "gloss": "before, in the presence of (Peshitta)",
+      "cognate_ids": [
+        "arc-qedam",
+        "ar-quddam",
+        "uga-qdm",
+        "sab-qdm"
+      ],
+      "summary": "The Peshitta’s ܩܕܡ, as in Daniel: before a person, in place and in presence, and before in time; מִן קְדָם תַּרְמִיתֵהּ דְּעָלְמָא, “before the foundation of the world”.",
+      "senses": [
+        {
+          "id": "syc-qdam",
+          "gloss": "before, in front of, in the presence of",
+          "definition": "In front of someone, going ahead of him, or in his presence.",
+          "evidence": [
+            {
+              "ref": "Mat.11.10",
+              "role": "defining",
+              "note": "Quoting Mal 3:1: “I send my messenger קְדָם your face, who shall prepare your way קְדָמַיךְ.”"
+            },
+            {
+              "ref": "Luk.1.17",
+              "note": "John “shall go קְדָמוֹהִי in the spirit and power of Elijah”."
+            },
+            {
+              "ref": "Mat.2.9",
+              "note": "The star “went קְדָמַיהוֹן” until it stood over the child."
+            },
+            {
+              "ref": "Mat.10.32",
+              "role": "defining",
+              "note": "“Whoever confesses me קְדָם men, I will confess him קְדָם my Father in heaven.”"
+            },
+            {
+              "ref": "Rev.4.10",
+              "note": "The elders fall down קְדָם him who sits on the throne."
+            }
+          ],
+          "kin": [
+            "qodam-before"
+          ]
+        },
+        {
+          "id": "syc-qdam-time",
+          "gloss": "before (in time)",
+          "definition": "Earlier than: before the world was, before one in rank and time.",
+          "evidence": [
+            {
+              "ref": "Jhn.1.15",
+              "role": "defining",
+              "note": "“He who comes after me הֲוָא לֵהּ קְדָמַי, for he was before me (קַדְמָי הוּ מֶנִּי).” Also Jhn 1:30."
+            },
+            {
+              "ref": "Jhn.1.30"
+            },
+            {
+              "ref": "Jhn.17.24",
+              "role": "defining",
+              "note": "“You loved me מִן קְדָם the foundation of the world.”"
+            },
+            {
+              "ref": "Jhn.17.5",
+              "note": "“Glorify me with the glory which I had with you מִן קְדָם the world was.”"
+            }
+          ],
+          "kin": [
+            "qedem-old"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדְמָיָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "first; former; (pl.) the ancients (Peshitta)",
+      "cognate_ids": [
+        "arc-qedam",
+        "sab-qdm",
+        "ar-qadim"
+      ],
+      "summary": "The Peshitta’s ܩܕܡܝܐ, as Daniel’s קַדְמָי: first in order or rank, and “the ancients”, those of old.",
+      "senses": [
+        {
+          "id": "syc-first",
+          "gloss": "first",
+          "definition": "First in order, rank or time.",
+          "evidence": [
+            {
+              "ref": "Mat.20.16",
+              "role": "defining",
+              "note": "“So the last shall be קַדְמָיֵא, and the קַדְמָיֵא last.”"
+            },
+            {
+              "ref": "Rev.1.17",
+              "role": "defining",
+              "note": "“I am קַדְמָיָא and the last.” Also Rev 22:13."
+            },
+            {
+              "ref": "Rev.22.13"
+            },
+            {
+              "ref": "Mat.22.38",
+              "note": "“This is the great and קַדְמָיָא commandment.”"
+            }
+          ]
+        },
+        {
+          "id": "syc-ancients",
+          "gloss": "the ancients, those of old",
+          "definition": "In the plural, the people of former times.",
+          "evidence": [
+            {
+              "ref": "Mat.5.21",
+              "role": "defining",
+              "note": "“You have heard that it was said לְקַדְמָיֵא, You shall not kill.” Also Mat 5:33."
+            },
+            {
+              "ref": "Mat.5.33"
+            }
+          ],
+          "kin": [
+            "former-ancient"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לוּקְדַם",
+      "lang": "syc",
+      "pos": "adverb",
+      "gloss": "first, beforehand (Peshitta)",
+      "cognate_ids": [
+        "arc-qedam"
+      ],
+      "summary": "The Peshitta’s ܠܘܩܕܡ, “first, before anything else”, and of God’s knowing “beforehand”.",
+      "senses": [
+        {
+          "gloss": "first, beforehand",
+          "definition": "Before other things, in time or in priority.",
+          "evidence": [
+            {
+              "ref": "Mat.5.24",
+              "role": "defining",
+              "note": "“Leave your gift before the altar, and go לוּקְדַם be reconciled to your brother.”"
+            },
+            {
+              "ref": "Mat.6.33",
+              "role": "defining",
+              "note": "“Seek לוּקְדַם the kingdom of God and his righteousness.”"
+            },
+            {
+              "ref": "Rom.8.29",
+              "role": "defining",
+              "note": "“Those whom he knew מִן לוּקְדַם he also marked out in the likeness of the image of his Son.”"
+            }
+          ],
+          "kin": [
+            "syc-foreordain"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְדִים",
+      "lang": "syc",
+      "pos": "adverb",
+      "gloss": "before, formerly (Peshitta)",
+      "cognate_ids": [
+        "arc-qedam",
+        "ar-qadim"
+      ],
+      "summary": "The Peshitta’s ܩܕܝܡ, mostly מִן קְדִים, “from before, beforehand”: of what God promised and had written long before.",
+      "senses": [
+        {
+          "gloss": "beforehand, formerly",
+          "definition": "Before now; of something promised, written or known long before.",
+          "evidence": [
+            {
+              "ref": "Rom.1.2",
+              "role": "defining",
+              "note": "The gospel “which he promised מִן קְדִים through his prophets in the holy scriptures”."
+            },
+            {
+              "ref": "Rom.15.4",
+              "role": "defining",
+              "note": "“Whatever was written מִן קְדִים was written for our learning.”"
+            },
+            {
+              "ref": "Rom.11.2",
+              "note": "“God has not cast away his people, who was known to him מִן קְדִים.”"
+            }
+          ],
+          "kin": [
+            "qedem-old"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַקְדְּמוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "precedence; (with knowledge) foreknowledge (Peshitta)",
+      "cognate_ids": [
+        "arc-qedam"
+      ],
+      "summary": "The Peshitta’s ܡܩܕܡܘܬܐ, twice, in בְּמַקְדְּמוּת יְדַעְתֵּהּ, “in the foreknowledge” of God.",
+      "senses": [
+        {
+          "gloss": "foreknowledge (God’s knowing beforehand)",
+          "definition": "God’s knowing a thing before it comes to pass.",
+          "evidence": [
+            {
+              "ref": "Act.2.23",
+              "role": "defining",
+              "note": "Jesus, “set apart for this בְּמַקְדְּמוּת יְדַעְתֵּהּ and will of God”, was delivered up."
+            },
+            {
+              "ref": "1Pe.1.2",
+              "role": "defining",
+              "note": "The chosen “בְּמַקְדְּמוּת יְדַעְתֵּהּ of God the Father”."
+            }
+          ],
+          "kin": [
+            "syc-foreordain"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדְמָיַת",
+      "lang": "syc",
+      "pos": "adverb",
+      "gloss": "first (Peshitta)",
+      "cognate_ids": [
+        "arc-qedam"
+      ],
+      "summary": "The Peshitta’s ܩܕܡܝܬ, “first”, as the adverb of קַדְמָיָא.",
+      "senses": [
+        {
+          "gloss": "first",
+          "definition": "Before others, or for the first time.",
+          "evidence": [
+            {
+              "ref": "1Jn.4.19",
+              "role": "defining",
+              "note": "“We love God, because he קַדְמָיַת loved us.”"
+            },
+            {
+              "ref": "Act.13.46",
+              "note": "“It was necessary that the word of God should be spoken קַדְמָיַת to you.”"
+            },
+            {
+              "ref": "Act.11.26",
+              "note": "The disciples were called Christians קַדְמָיַת at Antioch."
+            }
+          ],
+          "kin": [
+            "syc-first"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-qadama",
+      "lang": "ar",
+      "form": "قَدَمَ",
+      "translit": "qadama",
+      "gloss": "precede, go before; (II qaddama) put forward, offer, present food; do beforehand; (IV aqdama) attack boldly",
+      "relation": "cognate",
+      "note": "Every sense of the Hebrew verb is here: to go before, to bring food before someone (Deu 23:5; Isa 21:14), to do a thing beforehand (Jon 4:2), and to come boldly against an adversary (Psa 18:6; 17:13).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2985, root قدم, قَدَمَ القَوْمَ (n42566)",
+          "note": "“He became before the people … he preceded them; went before them; took precedence of them; headed them; led them.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2985, root قدم, قَدَّمَ (n42567)",
+          "note": "“He put it forward; offered it; proffered it … قَدَّمَ لَهُ طَعَامًا He proffered, offered, or presented to him, food … He did good or evil previously, or beforehand.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2985, root قدم, أَقْدَمَ (n42568)",
+          "note": "“أَقْدَمَ على قِرْنِهِ He behaved boldly … against his adversary; he attacked him.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-quddam",
+      "lang": "ar",
+      "form": "قُدَّام",
+      "translit": "quddām",
+      "gloss": "the front, the place before; (min qudum) in front",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2986, root قدم, القُدَّامُ (n42579); مِنْ قُدُمٍ (n42575)",
+          "note": "“The location that is before”; مِنْ قُدُمٍ “in front”."
+        }
+      ]
+    },
+    {
+      "id": "ar-qadim",
+      "lang": "ar",
+      "form": "قَدِيم",
+      "translit": "qadīm",
+      "gloss": "ancient, old; qidam antiquity, the olden time",
+      "relation": "cognate",
+      "note": "The temporal sense of קֶדֶם: what is before, looked back on. Lane’s qidam “existence … without beginning” is said of God, as Hebrew אֱלֹהֵי קֶדֶם (Deu 33:27).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2986, root قدم, قَدِيمٌ (n42578)",
+          "note": "“Ancient; old; to which no commencement is assigned.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2986, root قدم, قِدَمٌ (n42574)",
+          "note": "“Oldness; antiquity … قِدَمُ الدَّهْرِ means properly the olden time.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-qdm",
+      "lang": "uga",
+      "form": "𐎖𐎄𐎎",
+      "translit": "qdm",
+      "gloss": "east; (prep.) before",
+      "relation": "cognate",
+      "note": "The one cognate here with the sense “east”, as Hebrew קֶדֶם: ʿr dqdm, “the city of the east”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 199, §93 Glossary, qdm (KTU 1.100:62) “east”"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§61.4, ʿr dqdm (KTU 1.100:62) “city (that) of the East”; §56.4, qdm among the triconsonantal prepositions"
+        }
+      ]
+    },
+    {
+      "id": "akk-qudmu",
+      "lang": "akk",
+      "form": "qudmu",
+      "translit": "qudmu",
+      "gloss": "front (side); before; early time",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000062800, qudmu [front (side)] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000062800.html",
+          "note": "“before; early time; front (side)”, Middle and Neo-Assyrian, Neo-Babylonian."
+        },
+        {
+          "source": "oracc",
+          "locator": "ribo x000014620, qudmû [primordial] AJ",
+          "url": "https://oracc.museum.upenn.edu/ribo/cbd/akk/x000014620.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-qadmu",
+      "lang": "akk",
+      "form": "qadmu",
+      "translit": "qadmu",
+      "gloss": "former time",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000111820, qadmu [former time] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000111820.html"
+        }
+      ]
+    },
+    {
+      "id": "phn-qdm",
+      "lang": "phn",
+      "form": "𐤒𐤃𐤌",
+      "translit": "qdm",
+      "gloss": "ancient practice, of old (kqdm “as of old”)",
+      "relation": "cognate",
+      "note": "kqdm, “as of old”, in a Phoenician dedication from Lapethos is Hebrew כְּקֶדֶם (Lam 5:21; Jer 30:20).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 423, QDM",
+          "note": "“[Heb. qedem] n.m. ANCIENT PRACTICE … KAI 43.10/12 (Ph) … ʿd ʿlm kqdm … ‘in accordance with Ancient Practice’.”"
+        }
+      ]
+    },
+    {
+      "id": "sab-qdm-v",
+      "lang": "sem",
+      "form": "qdm",
+      "translit": "qdm (Sabaic verb)",
+      "gloss": "precede, go before; (D) present an offering; lead an expedition; confront, fight",
+      "relation": "cognate",
+      "note": "Sabaic, Old South Arabian. The D stem “present (an offering)” and “confront, fight” match the piel’s coming before God with an offering (Mic 6:6) and coming against an enemy (Psa 17:13).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 444–445, QDM (verb)",
+          "note": "G “PRECEDE, GO BEFORE”; D “(1) PRESENT an offering … (2) COMMAND, esp LEAD A MILITARY EXPEDITION (3) CONFRONT, FIGHT”."
+        }
+      ]
+    },
+    {
+      "id": "sab-qdm",
+      "lang": "sem",
+      "form": "qdm",
+      "translit": "qdm, qdmn (Sabaic)",
+      "gloss": "before (in place and time); qdmn former, preceding",
+      "relation": "cognate",
+      "note": "Sabaic, Old South Arabian: bqdmy w-ʾtr, “before and after”, as Hebrew קֶדֶם and אָחוֹר.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 446, QDM (prep. qdm, b-qdm; adj. qdmn)",
+          "note": "“BEFORE … local: … ‘which is in front of/before (the temple)’ … temporal: bqdmy wʾtr … ‘before and after this edict’”; qdmn “FORMER, PRECEDING”."
+        }
+      ]
+    },
+    {
+      "id": "arc-qedam",
+      "lang": "arc",
+      "form": "קְדַם, קֳדָם",
+      "translit": "qəḏam, qŏḏām",
+      "gloss": "(pael) go before, come to meet; be early; (prep.) before (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targum renders Psa 88:14, 79:8 and 17:13 (piel) and Job 41:3 (hiphil) with the same verb, and uses קֳדָם as Daniel does.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְדַם",
+          "note": "Pa. “to precede; to do early … to go before, come to meet. Targ. Ps. LXXXVIII, 14. Ib. LXXIX, 8 … Af. … to precede, anticipate. Targ. Job XLI, 3 … to get the start of; to prevent. Targ. Ps. XVII, 13”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קָדָם (קֳדָם)",
+          "note": "“(prepos. of time and place) before. Targ. Gen. XXIX, 26.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "purpose-from-of-old",
+      "statement": "Yahweh is the one who declares “the end from the beginning, and מִקֶּדֶם things not yet done”, and whose counsel stands (Isa 46:10; 45:21); of Assyria’s conquests he says, “מִימֵי קֶדֶם I formed it; now I have brought it to pass” (2Ki 19:25). Micah uses the phrase for the promise: “you swore to our fathers מִימֵי קֶדֶם” (Mic 7:20), and in the same words says of the ruler to come out of Bethlehem that “his goings forth are מִקֶּדֶם, מִימֵי עוֹלָם” (Mic 5:1). The New Testament speaks of Christ in the same way: “foreknown before the foundation of the world, but revealed in these last times for your sake” (1Pe 1:20), “delivered by the determined counsel and foreknowledge of God” (Act 2:23); and believers too were “chosen in him before the foundation of the world” (Eph 1:4) and foreknown (Rom 8:29), though they did not yet exist. Jesus asks for “the glory which I had with you before the world was” and in the same prayer says he has already given that glory to his disciples, and that the Father “loved me before the foundation of the world” (Jhn 17:5, 22, 24). From the verses: what is “from of old” in the root is what God purposed and promised before he brought it to pass; the Messiah’s goings forth from of old are in that purpose and in the oath to the fathers, and he came into being when he was born in Bethlehem (Luk 2:4–11), as God had declared long before.",
+      "evidence": [
+        {
+          "ref": "Isa.46.10"
+        },
+        {
+          "ref": "Isa.45.21"
+        },
+        {
+          "ref": "2Ki.19.25"
+        },
+        {
+          "ref": "Mic.7.20"
+        },
+        {
+          "ref": "Mic.5.1"
+        },
+        {
+          "ref": "1Pe.1.20"
+        },
+        {
+          "ref": "Act.2.23"
+        },
+        {
+          "ref": "Eph.1.4"
+        },
+        {
+          "ref": "Rom.8.29"
+        },
+        {
+          "ref": "Jhn.17.5"
+        },
+        {
+          "ref": "Jhn.17.22"
+        },
+        {
+          "ref": "Jhn.17.24"
+        },
+        {
+          "ref": "Luk.2.4",
+          "to": "Luk.2.11"
+        }
+      ]
+    },
+    {
+      "topic": "glory-from-the-east",
+      "statement": "When the man was driven out, the cherubim were set מִקֶּדֶם לְגַן עֵדֶן to keep the way of the tree of life (Gen 3:24). At the tabernacle the entrance was on the east, where Moses, Aaron and his sons camped “before the tent of meeting toward the sunrise”, and “the stranger who comes near shall be put to death” (Num 3:38); there Judah camped, and set out first (Num 2:3, 9; 10:5, 14). When the men of Jerusalem turned their backs on the temple to bow קֵדְמָה to the sun (Ezk 8:16), the glory left by the east gate (Ezk 10:19) and stood on “the mountain מִקֶּדֶם לָעִיר” (Ezk 11:23). Ezekiel then sees it return “from the way of the east”, enter by the east gate, and that gate shut because Yahweh has entered by it (Ezk 43:2, 4; 44:1–2). Zechariah says Yahweh’s feet will stand “in that day upon the Mount of Olives, which is before Jerusalem מִקֶּדֶם” (Zec 14:4); Jesus was taken up from that mount, and the disciples were told he “shall so come in like manner” (Act 1:9–12). From the verses: the way back to God has been guarded on the east since Eden; the glory that went out from Jerusalem eastward to the Mount of Olives returns the same way when Christ returns there.",
+      "evidence": [
+        {
+          "ref": "Gen.3.24"
+        },
+        {
+          "ref": "Num.3.38"
+        },
+        {
+          "ref": "Num.2.3"
+        },
+        {
+          "ref": "Num.2.9"
+        },
+        {
+          "ref": "Num.10.5"
+        },
+        {
+          "ref": "Num.10.14"
+        },
+        {
+          "ref": "Ezk.8.16"
+        },
+        {
+          "ref": "Ezk.10.19"
+        },
+        {
+          "ref": "Ezk.11.23"
+        },
+        {
+          "ref": "Ezk.43.2"
+        },
+        {
+          "ref": "Ezk.43.4"
+        },
+        {
+          "ref": "Ezk.44.1",
+          "to": "Ezk.44.2"
+        },
+        {
+          "ref": "Zec.14.4"
+        },
+        {
+          "ref": "Act.1.9",
+          "to": "Act.1.12"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (קֵדְמָה, Num 10:5). The database keys the root קדמ, as the task gave it. BDB keys s.al.ab (קֶדֶם) and s.al.ad (קֵדֶם, “eastward”) count the same 89 tokens, so only s.al.ab is named and קֵדְמָה is a sense of קֶדֶם; s.al.al (קַדְמֹנִי gentilic, 3 tokens) is wholly inside s.al.ak, so only s.al.ak is named and the Kadmonites are a sense. Left out as names: קַדְמִיאֵל Kadmiel (s.al.an, a Levite) and קֵדְמָה Kedemah (s.al.ag, son of Ishmael), both people not assigned to this draft, for names/; קְדֵמוֹת Kedemoth (s.al.am), a place. The key s.al.ag also counts the directional וָקֵדְמָה of Gen 13:14 and 28:14, which are cited here under קֵדְמָה. Verse numbers are the Hebrew text’s (Psa 18:6 = English 18:5; Mic 5:1 = 5:2; Job 41:3 = 41:11; Dan 6:11 = 6:10). Peshitta: SEDRA root 1621 קדמ, lexemes 2744 verb, 2745 prep., 2747 קַדְמָיָא, 2741 לוּקְדַם, 2743 קְדִים, 2742 מַקְדְּמוּתָא, 2748 קַדְמָיַת; not entered: 2746 קַדְמָא “first” (1Ti 1:16; 2Ti 2:6) and 2749 קוּדְמָא (Act 26:20), two and one uses. Peshitta verses read from the database’s word list; the lemma pointing is mine from SEDRA’s vocalised forms. Segert p. 199 found from the OCR between the page headers 198 and 200; check the page image. Biella pp. 444–446 and Krahmalkov p. 423 read from OCR/text layer only. Fisher 1969 has qdm with Geʿez qadama “precede”, qədma “before”, but the OCR’s page numbers are out of order there, so it is not cited; Geʿez (Dillmann, Leslau) not consulted. Arabic has no “east” sense in this root (east is šarq); the east sense rests on Ugaritic qdm and on scripture’s own front/behind = east/west (Job 23:8; Isa 9:11; Jol 2:20). No merged letters in the root. Open questions: (1) the doctrine “purpose-from-of-old” states the Christadelphian reading of Mic 5:1, Jhn 17:5 and 1Pe 1:20 plainly; check its wording; (2) קְדוּמִים (Jdg 5:21) left with two readings; (3) whether the Peshitta adverbs should be one word."
+}
