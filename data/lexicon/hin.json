@@ -1,0 +1,422 @@
+{
+  "id": "hin",
+  "root": "הינ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "measure",
+    "offering",
+    "drink-offering",
+    "oil",
+    "wine",
+    "justice"
+  ],
+  "gloss": "hin, a liquid measure",
+  "summary": "הִין is Israel’s measure for liquids, the counterpart of the ephah for grain: the text measures oil, wine and water by it, almost always in fractions (a half, a third, a fourth, a sixth). Most of its uses fix the oil mixed into the grain offering and the wine poured out as the drink offering, more for a bull, less for a ram, least for a lamb (Num 15:4–10; 28:14), as in Lev 23:13 for the lamb of the first sheaf. Lev 19:36 sets “a hin of righteousness” beside just scales, weights and ephah, so the word also names the measuring vessel kept true. It is a word of Egypt, where hnw is a jar and a measure of liquid, as Coptic ϩⲓⲛ still is, and Ugaritic has hn for a liquid measure; scripture never states its size.",
+  "words": [
+    {
+      "lemma": "הִין",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "hin, a measure of liquid",
+      "bdb": [
+        "e.bh.af"
+      ],
+      "cognate_ids": [
+        "egy-hnw",
+        "uga-hn",
+        "arc-hina"
+      ],
+      "summary": "Twenty-two uses, all in the law of the offerings (Exodus, Leviticus, Numbers), Ezekiel’s vision of the temple and its offerings, Ezekiel’s siege ration, and the law of just measures. It has no verbal root in Hebrew: the root key is only its consonants, and the word came from Egyptian hnw, “jar, liquid measure”.",
+      "senses": [
+        {
+          "id": "hin-quantity",
+          "gloss": "a hin (of oil, wine, water), a quantity measured",
+          "definition": "A fixed quantity of a liquid: of olive oil for the anointing oil and the grain offering, of wine for the drink offering, of water for a ration. It is nearly always counted in fractions, “a fourth of the hin” and the like, the definite article marking the standard hin; the oil is set against the flour measured in tenths of an ephah, and in Ezekiel “a hin for the ephah”.",
+          "evidence": [
+            {
+              "ref": "Num.28.14",
+              "role": "defining",
+              "note": "“Their drink offerings shall be half the hin for the bull, a third of the hin for the ram, and a fourth of the hin for the lamb, wine”: the measure scaled to the beast."
+            },
+            {
+              "ref": "Exo.29.40",
+              "role": "defining",
+              "note": "For the daily lamb, a tenth of fine flour mixed with “a fourth of the hin” of beaten oil, and a drink offering of “a fourth of the hin of wine”: oil and wine both measured by it, flour by the tenth."
+            },
+            {
+              "ref": "Lev.23.13",
+              "role": "defining",
+              "note": "With the lamb of the first sheaf: two tenths of flour mixed with oil, “and its drink offering wine, a fourth of the hin”."
+            },
+            {
+              "ref": "Exo.30.24",
+              "role": "defining",
+              "note": "The holy anointing oil: myrrh, cinnamon, cane and cassia weighed by the shekel of the sanctuary, “and olive oil, a hin”: the spices weighed, the oil measured."
+            },
+            {
+              "ref": "Ezk.4.11",
+              "role": "defining",
+              "note": "“Water by measure (בִּמְשׂוּרָה) you shall drink, a sixth of the hin”: the prophet’s ration in the sign of the siege, beside bread by weight, twenty shekels a day (Ezk 4:10)."
+            },
+            {
+              "ref": "Num.15.4",
+              "note": "A tenth of flour “mixed with a fourth of the hin of oil” with a lamb."
+            },
+            {
+              "ref": "Num.15.5",
+              "note": "Wine for the drink offering, a fourth of the hin, for each lamb."
+            },
+            {
+              "ref": "Num.15.6",
+              "note": "For a ram, two tenths of flour mixed with a third of the hin of oil."
+            },
+            {
+              "ref": "Num.15.7",
+              "note": "And a third of the hin of wine."
+            },
+            {
+              "ref": "Num.15.9",
+              "note": "For a bull, three tenths of flour mixed with half the hin of oil."
+            },
+            {
+              "ref": "Num.15.10",
+              "note": "And half the hin of wine, “a fire offering, a scent of rest to Yahweh”."
+            },
+            {
+              "ref": "Num.28.5",
+              "note": "The daily offering: a tenth of an ephah of flour mixed with a fourth of the hin of beaten oil."
+            },
+            {
+              "ref": "Num.28.7",
+              "note": "Its drink offering, a fourth of the hin for each lamb, poured out in the holy place."
+            },
+            {
+              "ref": "Ezk.45.24",
+              "note": "The prince’s offering at the feast of the seventh month: an ephah for the bull and an ephah for the ram, “and oil, a hin for the ephah”."
+            },
+            {
+              "ref": "Ezk.46.5",
+              "note": "On the Sabbath: an ephah for the ram, “and oil, a hin for the ephah”."
+            },
+            {
+              "ref": "Ezk.46.7",
+              "note": "At the new moon, the same ratio."
+            },
+            {
+              "ref": "Ezk.46.11",
+              "note": "At the feasts and appointed times, the same ratio."
+            },
+            {
+              "ref": "Ezk.46.14",
+              "note": "The daily lamb in Ezekiel’s temple: a sixth of an ephah of flour “and oil, a third of the hin, to moisten the fine flour”."
+            }
+          ]
+        },
+        {
+          "id": "hin-vessel",
+          "gloss": "the hin measure (the vessel or standard)",
+          "definition": "The measure itself, which a man owns and measures with, and which may be true or false: “a hin of righteousness” stands with the scales, the weights and the ephah that Israel is to keep honest.",
+          "evidence": [
+            {
+              "ref": "Lev.19.36",
+              "role": "defining",
+              "note": "“Scales of righteousness, stones of righteousness, an ephah of righteousness and a hin of righteousness shall be yours; I am Yahweh your God who brought you out of the land of Egypt.”"
+            },
+            {
+              "ref": "Lev.19.35",
+              "note": "The verse before: “You shall do no wrong in judgement, in measure (מִדָּה), in weight, or in liquid measure (מְשׂוּרָה).”"
+            },
+            {
+              "ref": "Ezk.45.10",
+              "note": "The same command to the princes of Israel names scales, ephah and בַּת: the bath, the liquid measure of Ezekiel’s scheme, stands where Leviticus has the hin."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ιν",
+          "gloss": "hin (the Hebrew word transliterated)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:13 word 14, הִין → ιν; likewise EXO 29:40, 30:24, NUM 15:4–10, 28:5–14, EZK 4:11, 45:24, 46:5–14 (21 of 22 uses)",
+              "note": "The Septuagint keeps the Hebrew word in Greek letters rather than translate it; at Lev 19:36 it is not aligned to the hin. The New Testament never uses it, so the bridge goes nowhere."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֵיפָה",
+            "note": "The ephah, the dry measure, set beside the hin as the other measure Israel must keep just, and in Ezekiel the measure of flour the hin of oil goes with.",
+            "evidence": [
+              {
+                "ref": "Lev.19.36",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.45.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.46.5"
+              },
+              {
+                "ref": "Ezk.46.14"
+              }
+            ]
+          },
+          {
+            "lemma": "עִשָּׂרוֹן",
+            "note": "The tenth (of an ephah), the measure of the flour mixed with the hin’s fraction of oil.",
+            "evidence": [
+              {
+                "ref": "Num.15.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.15.6"
+              },
+              {
+                "ref": "Num.15.9"
+              },
+              {
+                "ref": "Exo.29.40"
+              }
+            ]
+          },
+          {
+            "lemma": "מְשׂוּרָה",
+            "note": "“Liquid measure” in general, the measure the hin is one of.",
+            "evidence": [
+              {
+                "ref": "Lev.19.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.4.11",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מֹאזְנַיִם",
+            "note": "Scales, with the weights, the ephah and the hin in the law of just measures.",
+            "evidence": [
+              {
+                "ref": "Lev.19.36"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "רְבִיעִית הַהִין",
+            "gloss": "a fourth of the hin (with a lamb)",
+            "evidence": [
+              {
+                "ref": "Exo.29.40"
+              },
+              {
+                "ref": "Lev.23.13"
+              },
+              {
+                "ref": "Num.15.4"
+              },
+              {
+                "ref": "Num.15.5"
+              },
+              {
+                "ref": "Num.28.7"
+              },
+              {
+                "ref": "Num.28.14"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁלִישִׁית הַהִין",
+            "gloss": "a third of the hin (with a ram)",
+            "evidence": [
+              {
+                "ref": "Num.15.6"
+              },
+              {
+                "ref": "Num.15.7"
+              },
+              {
+                "ref": "Num.28.14"
+              },
+              {
+                "ref": "Ezk.46.14"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲצִי הַהִין",
+            "gloss": "half the hin (with a bull)",
+            "evidence": [
+              {
+                "ref": "Num.15.9"
+              },
+              {
+                "ref": "Num.15.10"
+              },
+              {
+                "ref": "Num.28.14"
+              }
+            ]
+          },
+          {
+            "phrase": "הִין לָאֵיפָה",
+            "gloss": "a hin (of oil) to the ephah (of flour)",
+            "evidence": [
+              {
+                "ref": "Ezk.45.24"
+              },
+              {
+                "ref": "Ezk.46.5"
+              },
+              {
+                "ref": "Ezk.46.7"
+              },
+              {
+                "ref": "Ezk.46.11"
+              }
+            ]
+          },
+          {
+            "phrase": "הִין צֶדֶק",
+            "gloss": "a hin of righteousness, a just measure",
+            "evidence": [
+              {
+                "ref": "Lev.19.36"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "egy-hnw",
+      "lang": "egy",
+      "form": "hnw",
+      "translit": "hnw",
+      "gloss": "a jar; hin, a liquid measure (about half a litre)",
+      "relation": "loan",
+      "note": "The source of the Hebrew word: an Egyptian pot, and the measure of liquid named after it. Coptic keeps it as ϩⲓⲛ “vessel, cup; liquid measure” (Comprehensive Coptic Lexicon C6672), the same two senses as the hin of Exodus–Numbers (a quantity) and of Lev 19:36 (the vessel). Israel learned the word in Egypt; the law of just measures ends “I am Yahweh your God who brought you out of the land of Egypt” (Lev 19:36). The Egyptian measure was small, and scripture does not say whether Israel’s hin was the same size.",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla98700, hnw “[a jar]; hin (unit of measure, ca. 1/2 liter)” (Wb 2, 493.2–14; FCD 158)"
+        },
+        {
+          "source": "coptic-lexicon",
+          "locator": "C6672, ϩⲓⲛ (S) m. “vessel, cup; liquid measure” (CD 685a–b)"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Egyptian hnw, noun, etym. 1",
+          "url": "https://en.wiktionary.org/wiki/hnw",
+          "note": "“jar”; “a liquid measure of volume … ¹⁄₁₀ of a ḥqꜣt”; descendants include Hebrew הִין."
+        }
+      ]
+    },
+    {
+      "id": "uga-hn",
+      "lang": "uga",
+      "form": "𐎅𐎐",
+      "translit": "hn",
+      "gloss": "a liquid measure",
+      "relation": "cognate",
+      "note": "The same measure word at Ugarit, most likely the same Egyptian word borrowed there too rather than inherited: it shares the Hebrew word’s meaning but is no evidence of a Semitic root.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎅𐎐 (hn), noun, etym. 1",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%85%F0%90%8E%90",
+          "note": "“a liquid measure”; “Compare Biblical Hebrew הִין (hīn), Aramaic הִינָא (hīnā).”"
+        }
+      ]
+    },
+    {
+      "id": "arc-hina",
+      "lang": "arc",
+      "form": "הִינָא",
+      "translit": "hînāʾ",
+      "gloss": "hin, a liquid measure",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the Targum keeps the word for the anointing oil’s hin (Targ. Onkelos Exo 30:24), probably from the Hebrew of the law itself.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הִינָא (E00444)",
+          "note": "“same” as Hebrew הִין; Targ. O. Ex. XXX, 24."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "just-measures",
+      "statement": "The law sets the hin among the measures that must be true: “a hin of righteousness” with just scales, weights and ephah, and grounds the command in who Yahweh is: “I am Yahweh your God who brought you out of the land of Egypt” (Lev 19:35–36). Deuteronomy repeats it with a promise, “a perfect and just ephah you shall have, that your days may be long in the land” (Deu 25:15), and Proverbs says a false balance is an abomination to Yahweh but a just weight his delight (Pro 11:1), and “a stone and a stone, an ephah and an ephah”, two weights and two measures, are both an abomination to him (Pro 20:10). The prophets charge Israel with exactly this, making the ephah small and the shekel great and falsifying the scales (Amo 8:5), the scant ephah and the bag of deceitful weights (Mic 6:10–11). In the land Ezekiel is shown, the princes are told to put away violence and spoil and to have just scales, a just ephah and a just bath (Ezk 45:9–10). From the verses: honest measure is part of righteousness before Yahweh, not a matter of trade alone; he who freed Israel from Egypt requires that no one in Israel be cheated by a short measure.",
+      "evidence": [
+        {
+          "ref": "Lev.19.35",
+          "to": "Lev.19.36"
+        },
+        {
+          "ref": "Deu.25.13",
+          "to": "Deu.25.16"
+        },
+        {
+          "ref": "Pro.11.1"
+        },
+        {
+          "ref": "Pro.20.10"
+        },
+        {
+          "ref": "Amo.8.5"
+        },
+        {
+          "ref": "Mic.6.10",
+          "to": "Mic.6.11"
+        },
+        {
+          "ref": "Ezk.45.9",
+          "to": "Ezk.45.10"
+        }
+      ]
+    },
+    {
+      "topic": "the-drink-offering",
+      "statement": "The wine of the drink offering was measured by the hin and scaled to the beast it went with: a fourth of the hin with a lamb, a third with a ram, a half with a bull (Num 15:5, 7, 10; 28:14), and it was poured out to Yahweh in the holy place (Num 28:7), “a fire offering, a scent of rest to Yahweh” (Num 15:10). Paul uses the figure of himself: “if I am poured out as a drink offering upon the sacrifice and service of your faith, I rejoice” (Php 2:17), and at the end, “I am now being poured out, and the time of my departure is at hand” (2Ti 4:6). From the verses: the drink offering went with the sacrifice and was poured out wholly to Yahweh, and the apostle saw his own life, spent for the believers’ faith, as such an offering.",
+      "evidence": [
+        {
+          "ref": "Num.15.5"
+        },
+        {
+          "ref": "Num.15.10"
+        },
+        {
+          "ref": "Num.28.7"
+        },
+        {
+          "ref": "Num.28.14"
+        },
+        {
+          "ref": "Php.2.17"
+        },
+        {
+          "ref": "2Ti.4.6"
+        }
+      ]
+    }
+  ],
+  "note": "One word only: BDB key e.bh.af, 22 tokens, all checked (the brief’s list includes Num 15:10 and Ezk 46:14). The root key הינ is the database’s own; הִין has no Hebrew verbal root, and the Arabic هين/هون “be easy, base” that the brief’s sound search turns up is unrelated and not recorded. Cognates checked 2026-11-13: TLA hnw entries (tla98700 is the measure; tla98560 “box, cavity”, tla98760 “associates”, tla854742 “medical instrument” are other words); Coptic Lexicon ϩⲓⲛ C6672 (and ϩⲛⲁⲁⲩ “vessel” C6723, possibly the same Egyptian word, not recorded); Jastrow הִין and הִינָא. Segert 1984’s glossary has no hn “measure” (the Ugaritic hn there is “behold”), so the Ugaritic rests on Wiktionary only; a proper Ugaritic dictionary should be checked. The size of the hin is not stated in scripture; the Mishnah’s twelve log (a lead from Jastrow) and the Egyptian half-litre measure differ widely, and Ezekiel’s “sixth of a hin” of water a day (Ezk 4:11) is meant as a siege’s scant ration (Ezk 4:16–17), so the entry gives no size. Open questions for review: (1) relation of the Ugaritic and Aramaic forms: recorded as `cognate` though both are probably borrowings of the same Egyptian (Ugaritic) or Hebrew (Aramaic) word; (2) whether the drink-offering doctrine (Php 2:17; 2Ti 4:6) belongs here or under נסכ."
+}
