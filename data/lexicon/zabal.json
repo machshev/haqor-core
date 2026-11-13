@@ -1,0 +1,533 @@
+{
+  "id": "zabal",
+  "root": "זבל",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "dwelling",
+    "temple",
+    "heaven",
+    "honour",
+    "mortality"
+  ],
+  "gloss": "lofty dwelling, princely house; exalt, honour",
+  "summary": "The root’s noun זְבֻל is a lofty, princely dwelling: the house Solomon built for Yahweh, “a בֵּית זְבֻל for you, a place for your dwelling for ever” (1Ki 8:13), heaven itself as his “זְבֻל of holiness and glory” (Isa 63:15), the height where sun and moon stood still (Hab 3:11), and the rich man’s fine house, which the grave takes from him (Psa 49:15). The verb occurs once, when Leah names Zebulun: “this time my husband will זָבַל me” (Gen 30:20), honour her, or come to live with her. Ugaritic zbl “prince”, a title of Baal and Yamm, and Phoenician Zebel “the Prince” in personal names carry the same sense of exalted rank. The Peshitta’s words of this spelling mean dung and to manure, as in Arabic and Akkadian; how they relate to the Hebrew sense is not known.",
+  "words": [
+    {
+      "lemma": "זְבֻל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "lofty dwelling, princely house; heights of heaven",
+      "bdb": [
+        "g.af.ab"
+      ],
+      "cognate_ids": [
+        "uga-zbl",
+        "phn-zbl"
+      ],
+      "summary": "A dwelling of rank: Yahweh’s house in Jerusalem and his dwelling in heaven, the heights of the sky, and a great man’s house. Five uses only, each set beside a word for house, heaven or dwelling, which fixes the sense.",
+      "senses": [
+        {
+          "id": "house-of-god",
+          "gloss": "exalted house (Yahweh’s temple)",
+          "definition": "The house Solomon built for Yahweh, called a house of זְבֻל and set beside “a place for your dwelling for ever”: an exalted dwelling fit for its occupant.",
+          "evidence": [
+            {
+              "ref": "1Ki.8.13",
+              "role": "defining",
+              "note": "“בָּנֹה בָנִיתִי בֵּית זְבֻל לָךְ, מָכוֹן לְשִׁבְתְּךָ עוֹלָמִים”: I have surely built you a house of זְבֻל, a place for your dwelling for ever."
+            },
+            {
+              "ref": "2Ch.6.2",
+              "role": "defining",
+              "note": "The same words in Chronicles’ account of the dedication."
+            },
+            {
+              "ref": "1Ki.8.27",
+              "note": "In the same prayer: “Will God indeed dwell on the earth? The heavens and the heaven of heavens cannot contain you, how much less this house that I have built.”"
+            }
+          ]
+        },
+        {
+          "id": "heaven-dwelling",
+          "gloss": "Yahweh’s dwelling in heaven",
+          "definition": "Heaven as the holy and glorious dwelling from which Yahweh looks down on his people.",
+          "evidence": [
+            {
+              "ref": "Isa.63.15",
+              "role": "defining",
+              "note": "“Look down from heaven and see, from זְבֻל קָדְשְׁךָ וְתִפְאַרְתֶּךָ”: heaven and the זְבֻל of holiness and glory in parallel."
+            },
+            {
+              "ref": "1Ki.8.39",
+              "note": "Solomon’s prayer names the same place in other words: “hear in heaven, מְכוֹן שִׁבְתֶּךָ, the place of your dwelling”."
+            }
+          ]
+        },
+        {
+          "id": "heights-of-sky",
+          "gloss": "the heights of the sky (of sun and moon)",
+          "definition": "The lofty place in the sky where the sun and moon stand.",
+          "evidence": [
+            {
+              "ref": "Hab.3.11",
+              "role": "defining",
+              "note": "“שֶׁמֶשׁ יָרֵחַ עָמַד זְבֻלָה”: sun and moon stood still in their lofty place, at the light of your arrows."
+            },
+            {
+              "ref": "Jos.10.13",
+              "note": "The day Habakkuk recalls: “the sun stood still in the midst of heaven, and did not hasten to go down about a whole day”."
+            }
+          ]
+        },
+        {
+          "id": "lofty-house",
+          "gloss": "fine house, lofty dwelling (of a man)",
+          "definition": "The grand dwelling of the rich, which they cannot keep from the grave.",
+          "evidence": [
+            {
+              "ref": "Psa.49.15",
+              "role": "defining",
+              "note": "“Like sheep they are laid in the grave; death shepherds them … and their form is for the grave to wear away, מִזְּבֻל לוֹ”: with no lofty house left to it, or far from its lofty house."
+            },
+            {
+              "ref": "Psa.49.12",
+              "role": "defining",
+              "note": "The same men earlier in the psalm: “their inward thought is that their houses are for ever, their dwellings to all generations; they call their lands by their own names.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "Βεελζεβούλ",
+          "gloss": "Beelzebul",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. Βεελζεβούλ",
+              "note": "From בַּעַל “lord” with זְבֻל “habitation”, or with later Hebrew זֶבֶל “dung”; the Latin and English “Beelzebub” come from בַּעַל זְבוּב, the god of Ekron (2Ki 1:2)."
+            },
+            {
+              "ref": "Mat.10.25",
+              "role": "defining",
+              "note": "“If they have called τὸν οἰκοδεσπότην, the master of the house, Βεελζεβούλ, how much more those of his household?” Jesus’ own word, master of the house, answers to בַּעַל זְבֻל, lord of the dwelling. The Peshitta reads בְּעֵלזְבוּב here and throughout."
+            },
+            {
+              "ref": "Mat.12.24",
+              "note": "The Pharisees: “This man does not cast out the demons except by Βεελζεβούλ, ruler of the demons.”"
+            },
+            {
+              "ref": "Mat.12.27",
+              "note": "Jesus answers on their own terms: “If I by Beelzebul cast out the demons, by whom do your sons cast them out?”"
+            },
+            {
+              "ref": "Mat.12.29",
+              "note": "He goes on with a house: no one can enter the strong man’s house and plunder his goods unless he first binds the strong man."
+            },
+            {
+              "ref": "Mrk.3.22"
+            },
+            {
+              "ref": "Luk.11.15"
+            },
+            {
+              "ref": "Luk.11.18"
+            },
+            {
+              "ref": "Luk.11.19"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָכוֹן לְשִׁבְתְּךָ",
+            "note": "A place for your dwelling, beside the house of זְבֻל.",
+            "evidence": [
+              {
+                "ref": "1Ki.8.13",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.6.2"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַיִם",
+            "note": "Heaven, beside the זְבֻל of Yahweh’s holiness.",
+            "evidence": [
+              {
+                "ref": "Isa.63.15",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בֵּית זְבֻל",
+            "gloss": "a house of lofty dwelling, an exalted house",
+            "evidence": [
+              {
+                "ref": "1Ki.8.13",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.6.2"
+              }
+            ]
+          },
+          {
+            "phrase": "זְבֻל קָדְשְׁךָ וְתִפְאַרְתֶּךָ",
+            "gloss": "your holy and glorious dwelling",
+            "evidence": [
+              {
+                "ref": "Isa.63.15",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זָבַל",
+      "pos": "verb",
+      "gloss": "honour; or dwell with",
+      "bdb": [
+        "g.af.aa"
+      ],
+      "summary": "One use, in Leah’s naming of Zebulun, so the text barely fixes it. The root’s noun (a princely dwelling) and Ugaritic zbl “prince” point to “honour, treat as one of rank”; the noun’s “dwelling” and Leah’s earlier “now my husband will be joined to me” (Gen 29:34) point to “live with”. Both fit the verse.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "honour; or dwell with",
+          "cognate_ids": [
+            "uga-zbl",
+            "akk-zubullu"
+          ],
+          "senses": [
+            {
+              "gloss": "honour, exalt; or dwell with (a wife)",
+              "definition": "What Leah hopes her husband will now do for her, having borne him six sons: give her the honour of a wife he values, or make his home with her.",
+              "evidence": [
+                {
+                  "ref": "Gen.30.20",
+                  "role": "defining",
+                  "note": "“God has endowed me (זְבָדַנִי) with a good endowment (זֵבֶד); this time my husband will זָבַל me (יִזְבְּלֵנִי), for I have borne him six sons; and she called his name זְבֻלוּן.”"
+                },
+                {
+                  "ref": "Gen.29.34",
+                  "note": "The same hope in other words at Levi’s birth: “now this time my husband will be joined (יִלָּוֶה) to me, for I have borne him three sons.”"
+                },
+                {
+                  "ref": "Gen.29.31",
+                  "note": "The need behind it: Yahweh saw that Leah was hated."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αἱρετίζω",
+          "gloss": "choose",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.30.20, יִזְבְּלֵנִי → αἱρετιεῖ"
+            },
+            {
+              "ref": "Mat.12.18",
+              "note": "“Behold my servant whom I have chosen (ᾑρέτισα)”: the word’s one New Testament use, unrelated to Gen 30:20."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "לָוָה",
+            "note": "“Be joined to”: Leah’s hope at Levi’s birth, set in the same frame, “this time my husband will…, for I have borne him … sons”.",
+            "evidence": [
+              {
+                "ref": "Gen.29.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.30.20"
+              }
+            ]
+          },
+          {
+            "lemma": "זָבַד",
+            "note": "“Endow”: the verb and noun Leah sets just before it, a play on sound (זבד, זבל).",
+            "evidence": [
+              {
+                "ref": "Gen.30.20",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זַבֶּל",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "manure, dung (a field or tree)",
+      "summary": "The Peshitta’s verb, once, in the parable of the fig tree. Its sense, with Arabic zabala and Jewish Aramaic, is to spread dung on ground; no link to the Hebrew sense “lofty dwelling, honour” is known.",
+      "cognate_ids": [
+        "ar-zibl",
+        "arc-zebel"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "dung, manure",
+          "senses": [
+            {
+              "gloss": "spread dung round, manure",
+              "definition": "To put dung round a tree to make it bear.",
+              "evidence": [
+                {
+                  "ref": "Luk.13.8",
+                  "role": "defining",
+                  "note": "“Lord, let it alone this year also, until I dig around it and manure it (וְאַזַבְּלִיה)”: for βάλω κόπρια."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זֶבְלָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dung, refuse; dunghill",
+      "summary": "The Peshitta’s noun for dung and refuse, as in Arabic, Akkadian and Jewish Aramaic. No link to the Hebrew sense “lofty dwelling, honour” is known.",
+      "cognate_ids": [
+        "ar-zibl",
+        "akk-ziblu",
+        "arc-zebel"
+      ],
+      "senses": [
+        {
+          "gloss": "dung, refuse",
+          "definition": "Dung and what is thrown away as worthless; with ל, the dung heap.",
+          "evidence": [
+            {
+              "ref": "Php.3.8",
+              "role": "defining",
+              "note": "Paul counts all things loss for Christ “and I count them as זֶבְלָא”: for σκύβαλα, refuse."
+            },
+            {
+              "ref": "Luk.14.35",
+              "role": "defining",
+              "note": "Salt that has lost its taste “is fit neither for the land nor for the dunghill (לְזֶבְלָא)”: for κοπρία."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-zbl",
+      "lang": "uga",
+      "form": "zbl",
+      "translit": "zbl",
+      "gloss": "prince, princeship",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "z"
+      },
+      "note": "A title of the gods in the Baal cycle: zbl ym “Prince Yamm” beside ṯpṭ nhr “Judge River” (KTU 1.2 IV 7, 22), zbl bʿl arṣ “Prince, lord of the earth” (1.5 VI 10), and qrt zbl yrḫ in Aqhat (1.19 IV 2). The sense of exalted rank answers to the Hebrew noun’s princely, exalted dwelling and to “honour” for the verb. Ugaritic writes z and ḏ with different letters, and this word has z.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 185, §93 Glossary, zbl; and zbln",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984/page/n212",
+          "note": "“zbl ‘prince(ship)’ (cf. H. PN zəbūl, zəbulūn)”; zbl as “an epithet of gods, e.g., zbl.bʿl.arṣ 1.5:VI:10”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§88.51, Baal and Yamm fight (KTU 1.2 IV 7, 22)",
+          "note": "tḥt.ksi.zbl.ym; zbl ym … ṯpṭ nhr."
+        }
+      ]
+    },
+    {
+      "id": "phn-zbl",
+      "lang": "phn",
+      "form": "zbl",
+      "translit": "zbl, Zebel",
+      "gloss": "the Prince (a title of Baal, in personal names)",
+      "relation": "cognate",
+      "note": "Phoenician and Punic women’s names bʿlʾzbl “Zebel is prince”, šmzbl “my god is Zebel”, and ʾyzbl, the name Jezebel, which the dictionary reads as “Where is Zebel <Baal>?”: Jezebel was daughter of the king of the Sidonians (1Ki 16:31). The same exalted rank as Ugaritic zbl.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 170, ZBL (var. ʾZBL)",
+          "note": "“ZEBEL (‘The Prince’) = BAAL (in personal names only)”, with ʾzbl, Jezebel."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 110, BʿL III and BʿLʾZBL",
+          "note": "Baal’s bynames in Phoenician and Punic names, “among them ZBL = ZBL, ‘Prince’”."
+        }
+      ]
+    },
+    {
+      "id": "akk-zabalu",
+      "lang": "akk",
+      "form": "zabālu",
+      "translit": "zabālu; zabbilu",
+      "gloss": "carry, bear, transport; bearer",
+      "relation": "possible",
+      "note": "Arabic zabala has the same sense, “bear, carry” (Lane, art. زبل). Whether “lift and carry” lies behind the Ugaritic “prince” (one raised up) or behind Hebrew זְבֻל (a raised dwelling) is argued but not shown; it is named on no word.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000025270, zabālu [carry] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000016020, zabbilu [bearer] N"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1212, زَبَلَ (n17418)",
+          "note": "“And زَبَلَ … He bore, carried, or took up and carried, a thing; as also زَمَلَ” (TA)."
+        }
+      ]
+    },
+    {
+      "id": "akk-zubullu",
+      "lang": "akk",
+      "form": "zubullû",
+      "translit": "zubullû",
+      "gloss": "marriage gift",
+      "relation": "possible",
+      "note": "A gift brought at a marriage, perhaps formed from zabālu “carry”. If Leah’s זָבַל plays on the custom, “my husband will bring me gifts” would sit beside “God has endowed me with a good endowment” (Gen 30:20). Uncertain: a rare word, and the Hebrew noun points to rank or dwelling instead.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000032710, zubullû [marriage gift] N"
+        }
+      ]
+    },
+    {
+      "id": "ar-zibl",
+      "lang": "ar",
+      "form": "زَبَلَ، زِبْلٌ، مَزْبَلَةٌ",
+      "translit": "zabala, zibl, mazbala",
+      "gloss": "manure land; dung, manure; dunghill",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "z"
+      },
+      "note": "“He dunged, or manured, land … he put land into a good state for sowing, with زِبْل”; زِبْلٌ dung used for manure; مَزْبَلَةٌ “a place where زِبْل is thrown down”. The same as the Peshitta’s verb (Luk 13:8) and noun (Luk 14:35, the dunghill). Arabic z (ز), not ḏ (ذ).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1212, زَبَلَ (n17418), زِبْلٌ (n17421)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1213, مَزْبَلَةٌ (n17433), زَبَّالٌ (n17428)"
+        }
+      ]
+    },
+    {
+      "id": "akk-ziblu",
+      "lang": "akk",
+      "form": "ziblu",
+      "translit": "ziblu",
+      "gloss": "waste matter",
+      "relation": "cognate",
+      "note": "Neo-Assyrian, ten uses; the same sense as Syriac זֶבְלָא and Arabic zibl.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000053940, ziblu [waste matter] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-zebel",
+      "lang": "arc",
+      "form": "זֶבֶל، זְבַל",
+      "translit": "zeḇel, zəḇal",
+      "gloss": "manure, deposits of foliage; (ithpa.) be manured",
+      "relation": "cognate",
+      "note": "Jewish Aramaic and the later Hebrew of the Mishnah and Talmud: זֶבֶל “foliage piled up for forming manure, manure”, the verb (Pi.) “to manure” and Aramaic Ithpa. אִיזְדַּבֵּל “to be manured”. The same sense as the Peshitta’s words.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. זֶבֶל; s.v. זָבַל II; s.v. זְבַל (ch.)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "dwelling-of-god",
+      "statement": "Solomon calls the house he built a בֵּית זְבֻל, “a place for your dwelling for ever” (1Ki 8:13), yet in the same prayer asks, “Will God indeed dwell on the earth? The heavens and the heaven of heavens cannot contain you” (1Ki 8:27), and asks Yahweh to hear “in heaven, the place of your dwelling” the prayers made toward the house where he had put his name (1Ki 8:29–30, 39). Isaiah calls heaven itself Yahweh’s “זְבֻל of holiness and glory” (Isa 63:15), and Yahweh says, “Heaven is my throne and the earth my footstool; what house would you build for me?” (Isa 66:1), which Stephen quotes: “the Most High does not dwell in houses made with hands” (Act 7:48–49). From the verses: the temple was an exalted house for Yahweh’s name, toward which Israel prayed, while his own lofty dwelling is in heaven.",
+      "evidence": [
+        {
+          "ref": "1Ki.8.13"
+        },
+        {
+          "ref": "1Ki.8.27"
+        },
+        {
+          "ref": "1Ki.8.29",
+          "to": "1Ki.8.30"
+        },
+        {
+          "ref": "1Ki.8.39"
+        },
+        {
+          "ref": "Isa.63.15"
+        },
+        {
+          "ref": "Isa.66.1"
+        },
+        {
+          "ref": "Act.7.48",
+          "to": "Act.7.49"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Psalm 49 speaks of men who trust in their wealth and think their houses will last for ever (Psa 49:7, 12). Like sheep they are laid in the grave, death shepherds them, and their form is for the grave to wear away, with no lofty dwelling left to it (Psa 49:15); “man in honour does not abide; he is like the beasts that perish” (Psa 49:13; again in 49:21, “man in honour who does not understand”). Against this the psalmist sets “the upright shall rule over them in the morning” and “God will redeem my soul from the hand of the grave, for he will take me” (Psa 49:15–16). From the verses: no house or wealth keeps a man from the grave; the hope the psalm gives is God’s redeeming from the grave and the rule of the upright in the morning that follows.",
+      "evidence": [
+        {
+          "ref": "Psa.49.7"
+        },
+        {
+          "ref": "Psa.49.12",
+          "to": "Psa.49.13"
+        },
+        {
+          "ref": "Psa.49.15",
+          "to": "Psa.49.16"
+        },
+        {
+          "ref": "Psa.49.21"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Words: זְבֻל (g.af.ab) and the verb זָבַל (g.af.aa); the Peshitta’s pael זַבֶּל (Luk 13:8) and noun זֶבְלָא (Luk 14:35; Php 3:8), from SEDRA lexemes 836–837, root 536, have no bdb key. BDB files the Jdg 9 tokens of the man Zebul under both the noun (g.af.ab) and the name (g.af.ac), and 1Ki 8:13 and 2Ch 6:2 under both too, so g.af.ab’s count (10) is not all the noun; its real uses are 1Ki 8:13, 2Ch 6:2, Isa 63:15, Hab 3:11, Psa 49:15. Left out: מַזְבֻּל (m.be.ag), a cross-reference with no tokens; the names זְבֻל Zebul (g.af.ac, Jdg 9:28–41) and Jezebel אִיזֶבֶל (a.cw.ac, which BDB files under אי), not written here; the name Zebulun and the gentilic Zebulunite are in names/zebulun.json. Open questions: (1) the verb at Gen 30:20, “honour” or “dwell with”, is not decided by one verse; (2) whether the dung words (Syriac, Arabic, Akkadian ziblu, Jewish Aramaic) and the Hebrew “lofty dwelling” are one older root: all show z behind ז, so sounds do not split them, but no link of meaning is known; (3) the Septuagint renders זְבֻל variously (ἐκπρεπῆ 1Ki 8:13; ἅγιον 2Ch 6:2; δόξα Psa 49:15 from another reading) and none is used as a bridge; (4) Βεελζεβούλ’s etymology is uncertain (זְבֻל “dwelling” or later זֶבֶל “dung”); Mat 10:25’s οἰκοδεσπότης favours the dwelling, and the Peshitta reads Beelzebub. Psa 49 verse numbers are the Hebrew’s (49:15 = English 49:14). Leads not followed: Payne Smith and Brockelmann for Syriac זבל; Ugaritic texts read only through Segert’s glossary and selections."
+}
