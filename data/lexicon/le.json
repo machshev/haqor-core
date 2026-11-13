@@ -1,0 +1,838 @@
+{
+  "id": "le",
+  "root": "ל",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "direction",
+    "possession",
+    "purpose",
+    "time"
+  ],
+  "gloss": "(preposition) to, for; belonging to, of; into, as; according to; (with an infinitive) to, in order to",
+  "summary": "The preposition of the one or the thing a matter is directed to: the person spoken to or given to (\"I am giving to you\", Lev 23:10), the one it is for or belongs to (\"a holy convocation shall be to you\", Lev 23:7; \"the earth is Yahweh's\", Psa 24:1), what a thing becomes (\"the man became a living soul\", Gen 2:7), the measure it goes by (\"after its kind\"), a time it is set at, and, before an infinitive, the purpose of an act (\"to seek out a resting place for them\", Num 10:33). It is always joined to the next word (לְ־, לַ־, לִ־) and takes suffixes straight on its single letter: לִי, לְךָ, לוֹ, לָנוּ, לָכֶם, לָהֶם, and poetic לָמוֹ. The same one-letter word is in every branch of the family (Ugaritic, Phoenician, Aramaic, Syriac, Arabic, Sabaic, Ge'ez), but no noun or verb is known for it to have grown from, so it is keyed by its own consonant; it is not the same word as אֶל \"to, toward\", which stands beside it in Hebrew, Phoenician and Arabic with a different range and a longer base.",
+  "words": [
+    {
+      "lemma": "לְ",
+      "bdb": [
+        "l.aa.ab"
+      ],
+      "cognate_ids": [
+        "ar-li",
+        "arc-l",
+        "syc-l",
+        "phn-l",
+        "uga-l",
+        "sab-l",
+        "gez-la"
+      ],
+      "pos": "preposition",
+      "gloss": "to, for; belonging to, of; into, as; according to; at (a time); to (with an infinitive)",
+      "summary": "Never written alone: it is prefixed (לְמִינוֹ, Gen 1:11), takes the article's vowel (לַחֹדֶשׁ, Lev 23:5; לַיהוָה, Lev 23:3), and with suffixes is built straight on the one letter, לִי \"to me\", לוֹ \"to him\", לָנוּ \"to us\" (Num 10:31), לָכֶם \"to you\" (Lev 23:7 and through the chapter), לָהֶם \"to them\" (Num 10:33), as Ugaritic ly, lh, lkm, lhm and Arabic lī, lahu, lakum, lahum, with no longer base such as אֶל has (אֵלָיו). Its senses all start from one picture, the one or the thing a matter is directed to or set down for, and it covers what Greek does with the dative case: to whom something is said or given, for whom it is done, whose it is. The database counts none of its tokens under this word yet (see the entry's note).",
+      "senses": [
+        {
+          "id": "le-to",
+          "gloss": "to, toward (a place, a person spoken to)",
+          "definition": "The place a movement goes to, and the person speech or a call is directed to.",
+          "evidence": [
+            {
+              "ref": "Gen.18.33",
+              "role": "defining",
+              "note": "\"Abraham returned לִמְקֹמוֹ, to his place.\""
+            },
+            {
+              "ref": "Gen.3.17",
+              "role": "defining",
+              "note": "\"וּלְאָדָם אָמַר, and to Adam he said.\""
+            },
+            {
+              "ref": "Num.10.29",
+              "note": "\"Moses said לְחֹבָב, to Hobab\"; in the same verse the people go אֶל־הַמָּקוֹם \"to the place\": direction of travel takes אֶל, the one addressed takes לְ."
+            },
+            {
+              "ref": "Dan.2.47",
+              "note": "The Aramaic: \"the king answered לְדָנִיֵּאל, to Daniel\"."
+            },
+            {
+              "ref": "Gen.1.5",
+              "note": "\"God called לָאוֹר, to the light, Day\": naming is calling to a thing."
+            }
+          ]
+        },
+        {
+          "id": "le-dative",
+          "gloss": "to (a recipient), for (one who benefits)",
+          "definition": "The one something is given to, or done for or against: the person the act is for, often the doer himself (\"for yourselves\").",
+          "evidence": [
+            {
+              "ref": "Lev.23.10",
+              "role": "defining",
+              "note": "\"the land which I am giving לָכֶם, to you\"."
+            },
+            {
+              "ref": "Gen.1.29",
+              "role": "defining",
+              "note": "\"I have given לָכֶם, to you, every plant yielding seed … לָכֶם, to you, it shall be for food.\""
+            },
+            {
+              "ref": "Num.10.29",
+              "role": "defining",
+              "note": "\"Come with us וְהֵטַבְנוּ לָךְ, and we will do good to you.\""
+            },
+            {
+              "ref": "Num.10.33",
+              "role": "defining",
+              "note": "The ark went before them \"לָתוּר לָהֶם מְנוּחָה, to seek out for them a resting place\"."
+            },
+            {
+              "ref": "Lev.23.22",
+              "note": "\"לֶעָנִי וְלַגֵּר, for the poor and for the stranger you shall leave them\"."
+            },
+            {
+              "ref": "Num.10.2",
+              "note": "\"עֲשֵׂה לְךָ, make for yourself two trumpets of silver.\""
+            },
+            {
+              "ref": "Lev.23.15",
+              "note": "\"וּסְפַרְתֶּם לָכֶם, you shall count for yourselves\" seven sabbaths."
+            },
+            {
+              "ref": "Lev.23.40",
+              "note": "\"וּלְקַחְתֶּם לָכֶם, you shall take for yourselves\" the fruit of goodly trees."
+            },
+            {
+              "ref": "Dan.2.23",
+              "note": "The Aramaic: \"לָךְ, to you, God of my fathers, I give thanks … you have given לִי, to me, wisdom.\""
+            }
+          ]
+        },
+        {
+          "id": "le-belongs",
+          "gloss": "belonging to, of; (with to be) have",
+          "definition": "Whose a thing is or who has it. With הָיָה \"be\", יֵשׁ \"there is\" or אֵין \"there is not\" it is the Hebrew way of saying \"have\"; in a heading it names the one a psalm is of; in dates it joins the day to its month.",
+          "evidence": [
+            {
+              "ref": "Psa.24.1",
+              "role": "defining",
+              "note": "\"לַיהוָה הָאָרֶץ, the earth is Yahweh's, and its fullness\"; Paul quotes it with the Greek genitive, \"the earth is the Lord's\" (1Co 10:26)."
+            },
+            {
+              "ref": "Sng.2.16",
+              "role": "defining",
+              "note": "\"דּוֹדִי לִי וַאֲנִי לוֹ, my beloved is mine and I am his.\""
+            },
+            {
+              "ref": "Gen.11.30",
+              "role": "defining",
+              "note": "\"Sarai was barren, אֵין לָהּ וָלָד, she had no child.\""
+            },
+            {
+              "ref": "Deu.32.35",
+              "role": "defining",
+              "note": "\"לִי נָקָם, vengeance is mine\"; Paul and Hebrews quote it, \"ἐμοὶ ἐκδίκησις\" (Rom 12:19; Heb 10:30), following the Hebrew where the Septuagint has \"in the day of vengeance\"."
+            },
+            {
+              "ref": "Gen.43.7",
+              "note": "\"הֲיֵשׁ לָכֶם אָח, have you a brother?\""
+            },
+            {
+              "ref": "Lev.23.3",
+              "note": "\"שַׁבָּת הִוא לַיהוָה, it is a sabbath to Yahweh\", his."
+            },
+            {
+              "ref": "Lev.23.7",
+              "note": "\"מִקְרָא קֹדֶשׁ יִהְיֶה לָכֶם, a holy convocation shall be yours\"; so Lev 23:21, 24, 27, 36."
+            },
+            {
+              "ref": "Lev.23.32",
+              "note": "\"שַׁבַּת שַׁבָּתוֹן הוּא לָכֶם, it is a sabbath of rest to you … בְּתִשְׁעָה לַחֹדֶשׁ, on the ninth of the month\"."
+            },
+            {
+              "ref": "Lev.23.5",
+              "note": "\"בְּאַרְבָּעָה עָשָׂר לַחֹדֶשׁ, on the fourteenth of the month … פֶּסַח לַיהוָה, a passover to Yahweh\"."
+            }
+          ],
+          "senses": [
+            {
+              "id": "le-author",
+              "gloss": "of, by (the one a psalm belongs to)",
+              "definition": "In a psalm's heading, the one the psalm is of: its author.",
+              "evidence": [
+                {
+                  "ref": "Psa.110.1",
+                  "role": "defining",
+                  "note": "\"לְדָוִד מִזְמוֹר, of David, a psalm\"; Jesus reads it as David's own words, \"David himself said by the Holy Spirit\" (Mrk 12:36; Mat 22:43)."
+                },
+                {
+                  "ref": "Psa.3.1",
+                  "note": "\"מִזְמוֹר לְדָוִד, a psalm of David, when he fled from Absalom his son\"."
+                },
+                {
+                  "ref": "Mrk.12.36",
+                  "role": "defining",
+                  "note": "\"David himself said … The Lord said to my Lord\": the heading's לְדָוִד taken as authorship."
+                },
+                {
+                  "ref": "Act.2.25",
+                  "note": "\"For David says concerning him\", quoting Psa 16, headed מִכְתָּם לְדָוִד."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "le-into",
+          "gloss": "into, as (what a thing becomes or serves for)",
+          "definition": "After \"be\", \"become\", \"make\" or \"give\": the new state or office a person or thing comes into, or what it serves as.",
+          "evidence": [
+            {
+              "ref": "Gen.2.7",
+              "role": "defining",
+              "note": "\"וַיְהִי הָאָדָם לְנֶפֶשׁ חַיָּה, and the man became a living soul\"; 1Co 15:45, \"the first man Adam became (ἐγένετο εἰς) a living soul\"."
+            },
+            {
+              "ref": "Gen.2.24",
+              "role": "defining",
+              "note": "\"וְהָיוּ לְבָשָׂר אֶחָד, and they shall become one flesh\"; quoted Mat 19:5, \"the two shall be into (εἰς) one flesh\"."
+            },
+            {
+              "ref": "Psa.118.22",
+              "role": "defining",
+              "note": "\"The stone the builders rejected הָיְתָה לְרֹאשׁ פִּנָּה, has become the head of the corner\"; quoted Mat 21:42, εἰς κεφαλὴν γωνίας."
+            },
+            {
+              "ref": "Num.10.31",
+              "note": "\"וְהָיִיתָ לָּנוּ לְעֵינָיִם, you shall be to us for eyes\"."
+            },
+            {
+              "ref": "Num.10.8",
+              "note": "\"וְהָיוּ לָכֶם לְחֻקַּת עוֹלָם, they shall be to you for a lasting statute\"."
+            },
+            {
+              "ref": "Num.10.10",
+              "note": "\"וְהָיוּ לָכֶם לְזִכָּרוֹן, they shall be to you for a memorial before your God\"."
+            },
+            {
+              "ref": "Gen.1.29",
+              "note": "\"לְאָכְלָה, for food\"."
+            }
+          ]
+        },
+        {
+          "id": "le-according",
+          "gloss": "according to, by; as to, concerning",
+          "definition": "The measure or grouping a thing goes by (\"after its kind\", \"by their hosts\"), and the one a statement is about.",
+          "evidence": [
+            {
+              "ref": "Gen.1.11",
+              "role": "defining",
+              "note": "\"fruit tree making fruit לְמִינוֹ, after its kind\"; so Gen 1:21, 24, 25."
+            },
+            {
+              "ref": "Num.10.28",
+              "role": "defining",
+              "note": "\"These were the journeys of the sons of Israel לְצִבְאֹתָם, by their hosts.\""
+            },
+            {
+              "ref": "Gen.20.13",
+              "role": "defining",
+              "note": "\"אִמְרִי־לִי, say of me, He is my brother.\""
+            },
+            {
+              "ref": "Gen.1.21",
+              "note": "לְמִינֵהֶם … לְמִינֵהוּ, the Septuagint's κατὰ γένος."
+            }
+          ]
+        },
+        {
+          "id": "le-time",
+          "gloss": "at, by, toward (a time); for (a span); throughout",
+          "definition": "The time a thing happens at or is ready by, the span it lasts for, and in \"for ever\" and \"throughout your generations\" the whole stretch it runs to.",
+          "evidence": [
+            {
+              "ref": "Gen.8.11",
+              "role": "defining",
+              "note": "\"The dove came to him לְעֵת עֶרֶב, at evening time.\""
+            },
+            {
+              "ref": "Exo.34.2",
+              "role": "defining",
+              "note": "\"Be ready לַבֹּקֶר, by morning.\""
+            },
+            {
+              "ref": "Gen.7.4",
+              "role": "defining",
+              "note": "\"לְיָמִים עוֹד שִׁבְעָה, in seven more days I will cause it to rain.\""
+            },
+            {
+              "ref": "Lev.23.14",
+              "note": "\"a lasting statute לְדֹרֹתֵיכֶם, throughout your generations\"; so Lev 23:21, 31, 41; Num 10:8."
+            },
+            {
+              "ref": "Psa.110.4",
+              "note": "\"You are a priest לְעוֹלָם, for ever\"; quoted Heb 5:6, εἰς τὸν αἰῶνα."
+            }
+          ]
+        },
+        {
+          "id": "le-purpose",
+          "gloss": "to, in order to, for (with an infinitive)",
+          "definition": "Before an infinitive, the end an act is for; after \"be\", what is about to happen.",
+          "evidence": [
+            {
+              "ref": "Gen.2.15",
+              "role": "defining",
+              "note": "God put the man in the garden \"לְעָבְדָהּ וּלְשָׁמְרָהּ, to work it and to keep it\"."
+            },
+            {
+              "ref": "Num.10.33",
+              "role": "defining",
+              "note": "\"לָתוּר, to seek out\" a resting place."
+            },
+            {
+              "ref": "Num.10.2",
+              "role": "defining",
+              "note": "The trumpets are \"לְמִקְרָא הָעֵדָה וּלְמַסַּע אֶת־הַמַּחֲנוֹת, for calling the congregation and for setting the camps on the move\"."
+            },
+            {
+              "ref": "Gen.15.12",
+              "note": "\"וַיְהִי הַשֶּׁמֶשׁ לָבוֹא, the sun was about to go down\"."
+            },
+            {
+              "ref": "Dan.2.12",
+              "note": "The Aramaic: the king commanded \"לְהוֹבָדָה, to destroy\" all the wise men of Babylon."
+            }
+          ]
+        },
+        {
+          "id": "le-object",
+          "gloss": "(marks the object of a verb)",
+          "definition": "Now and then, and often in scripture's Aramaic, it marks the direct object, where Greek has the accusative.",
+          "evidence": [
+            {
+              "ref": "Lev.19.18",
+              "role": "defining",
+              "note": "\"וְאָהַבְתָּ לְרֵעֲךָ כָּמוֹךָ, you shall love your neighbour as yourself\"; quoted Mat 22:39 with the accusative τὸν πλησίον."
+            },
+            {
+              "ref": "Dan.2.12",
+              "role": "defining",
+              "note": "The Aramaic: \"to destroy לְכֹל חַכִּימֵי בָבֶל, all the wise men of Babylon\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "εἰς",
+          "gloss": "into, to; (become) as",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 2:7 word 15",
+              "note": "εἰς ψυχὴν ζῶσαν for לְנֶפֶשׁ חַיָּה."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 2:24 word 12",
+              "note": "εἰς σάρκα μίαν for לְבָשָׂר אֶחָד."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 118:22 word 5",
+              "note": "εἰς κεφαλὴν γωνίας for לְרֹאשׁ פִּנָּה."
+            },
+            {
+              "ref": "1Co.15.45",
+              "note": "\"The first man Adam became into (εἰς) a living soul\": Gen 2:7."
+            },
+            {
+              "ref": "Mat.19.5",
+              "note": "\"The two shall be into (εἰς) one flesh\": Gen 2:24."
+            },
+            {
+              "ref": "Mat.21.42",
+              "note": "\"has become into (εἰς) the head of the corner\": Psa 118:22."
+            }
+          ]
+        },
+        {
+          "lemma": "ὁ",
+          "gloss": "the article in the dative (or other) case: to, for, of",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 3:17 word 1",
+              "note": "τῷ Ἀδάμ for וּלְאָדָם: the Greek dative does the work of לְ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:3 word 17",
+              "note": "τῷ κυρίῳ for לַיהוָה, \"a sabbath to Yahweh\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 19:18 word 9",
+              "note": "τὸν πλησίον for לְרֵעֲךָ: the object."
+            },
+            {
+              "ref": "Mat.22.39",
+              "note": "\"You shall love your neighbour (τὸν πλησίον) as yourself\": Lev 19:18."
+            },
+            {
+              "ref": "1Co.10.26",
+              "note": "\"The earth is the Lord's (τοῦ κυρίου)\": Psa 24:1, the possessive לְ by the genitive."
+            }
+          ]
+        },
+        {
+          "lemma": "κατά",
+          "gloss": "according to, by",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 1:21 word 14",
+              "note": "κατὰ γένος for לְמִינֵהֶם, \"after their kind\"."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֶל",
+            "note": "The other \"to\": אֶל is mostly of direction toward a place or person, לְ of the one a thing is for, given to or belongs to; both can follow verbs of speaking.",
+            "evidence": [
+              {
+                "ref": "Num.10.29",
+                "note": "אֶל־הַמָּקוֹם \"to the place\" beside לְחֹבָב \"to Hobab\" and לָכֶם, לָךְ."
+              },
+              {
+                "ref": "Lev.23.10",
+                "note": "\"say to them (אֲלֵהֶם) … the land which I am giving to you (לָכֶם)\"."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לֵאמֹר",
+            "gloss": "saying, as follows (literally \"to say\")",
+            "evidence": [
+              {
+                "ref": "Lev.23.1",
+                "role": "defining",
+                "note": "\"Yahweh spoke to Moses לֵּאמֹר, saying\"."
+              },
+              {
+                "ref": "Gen.1.22",
+                "note": "\"God blessed them, saying\"."
+              }
+            ]
+          },
+          {
+            "phrase": "הָיָה לְ",
+            "gloss": "become; be (to someone) as, serve as",
+            "evidence": [
+              {
+                "ref": "Gen.2.7",
+                "role": "defining",
+                "note": "\"the man became a living soul\"."
+              },
+              {
+                "ref": "Num.10.31",
+                "note": "\"you shall be to us for eyes\"."
+              }
+            ]
+          },
+          {
+            "phrase": "יֵשׁ לְ / אֵין לְ",
+            "gloss": "have / have not",
+            "evidence": [
+              {
+                "ref": "Gen.43.7",
+                "role": "defining",
+                "note": "\"Have you a brother?\""
+              },
+              {
+                "ref": "Gen.11.30",
+                "role": "defining",
+                "note": "\"she had no child\"."
+              }
+            ]
+          },
+          {
+            "phrase": "לְדֹרֹתֵיכֶם",
+            "gloss": "throughout your generations",
+            "evidence": [
+              {
+                "ref": "Lev.23.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.21"
+              },
+              {
+                "ref": "Lev.23.31"
+              },
+              {
+                "ref": "Lev.23.41"
+              },
+              {
+                "ref": "Num.10.8"
+              }
+            ]
+          },
+          {
+            "phrase": "לְעוֹלָם",
+            "gloss": "for ever, for the age",
+            "evidence": [
+              {
+                "ref": "Gen.3.22",
+                "role": "defining",
+                "note": "\"lest he … eat, and live לְעֹלָם, for ever\"."
+              },
+              {
+                "ref": "Psa.110.4",
+                "note": "\"a priest for ever\"; Heb 5:6."
+              }
+            ]
+          },
+          {
+            "phrase": "לְמִינוֹ",
+            "gloss": "after its kind",
+            "evidence": [
+              {
+                "ref": "Gen.1.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.1.21"
+              }
+            ]
+          },
+          {
+            "phrase": "מַה־לְּךָ / מַה־לִּי וָלָךְ",
+            "gloss": "what is the matter with you? / what have I to do with you?",
+            "evidence": [
+              {
+                "ref": "Gen.21.17",
+                "role": "defining",
+                "note": "\"מַה־לָּךְ הָגָר, what is it with you, Hagar?\""
+              },
+              {
+                "ref": "Jdg.11.12",
+                "role": "defining",
+                "note": "\"מַה־לִּי וָלָךְ, what is there to me and to you, that you have come against me?\""
+              },
+              {
+                "ref": "Jhn.2.4",
+                "note": "τί ἐμοὶ καὶ σοί, the same idiom in Greek."
+              }
+            ]
+          },
+          {
+            "phrase": "חָלִלָה לְּךָ",
+            "gloss": "far be it from you",
+            "evidence": [
+              {
+                "ref": "Gen.18.25",
+                "role": "defining",
+                "note": "\"Far be it from you to do such a thing, to slay the righteous with the wicked.\""
+              }
+            ]
+          },
+          {
+            "phrase": "לְעֵינֵי",
+            "gloss": "before the eyes of, in the sight of",
+            "evidence": [
+              {
+                "ref": "Num.20.12",
+                "role": "defining",
+                "note": "\"to sanctify me לְעֵינֵי בְּנֵי יִשְׂרָאֵל, in the eyes of the sons of Israel\"."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "לְמוֹ",
+      "bdb": [
+        "l.aa.ac"
+      ],
+      "cognate_ids": [
+        "uga-l"
+      ],
+      "pos": "preposition",
+      "gloss": "to, for, at (poetic)",
+      "summary": "A longer form of לְ with an added -mô, found only in Job (27:14; 29:21; 38:40; 40:4); the same ending makes the poetic suffixed לָמוֹ \"to them\" (Psa 2:4; Deu 32:35). Ugaritic has the same lengthened lm beside l.",
+      "senses": [
+        {
+          "gloss": "for, to, at",
+          "definition": "As לְ: what a thing is for, or the place it is set at.",
+          "evidence": [
+            {
+              "ref": "Job.27.14",
+              "role": "defining",
+              "note": "\"If his sons multiply, לְמוֹ־חָרֶב, it is for the sword.\""
+            },
+            {
+              "ref": "Job.40.4",
+              "role": "defining",
+              "note": "\"I lay my hand לְמוֹ־פִי, on (to) my mouth.\""
+            },
+            {
+              "ref": "Job.29.21",
+              "note": "\"They kept silence לְמוֹ עֲצָתִי, for my counsel.\""
+            },
+            {
+              "ref": "Job.38.40",
+              "note": "Lions \"abide in the covert לְמוֹ־אָרֶב, to lie in wait\"."
+            },
+            {
+              "ref": "Psa.2.4",
+              "note": "The suffixed poetic form: \"the Lord mocks לָמוֹ, at them\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְ",
+      "lang": "arc",
+      "bdb": [
+        "xl.aa.aa"
+      ],
+      "cognate_ids": [
+        "arc-l",
+        "syc-l"
+      ],
+      "pos": "preposition",
+      "gloss": "to, for; (marks the object)",
+      "summary": "Scripture's Aramaic has the same preposition with the same range, and uses it much more often than Hebrew to mark a verb's object (Dan 2:12). With suffixes: לָךְ, לִי (Dan 2:23), לְכוֹן (Dan 3:4), לְהֹם.",
+      "senses": [
+        {
+          "gloss": "to, for (one spoken or given to)",
+          "definition": "The one addressed, given to or written to.",
+          "evidence": [
+            {
+              "ref": "Dan.2.47",
+              "role": "defining",
+              "note": "\"The king answered לְדָנִיֵּאל, to Daniel.\""
+            },
+            {
+              "ref": "Dan.2.23",
+              "role": "defining",
+              "note": "\"לָךְ, to you, God of my fathers, I give thanks and praise, for you have given לִי, to me, wisdom and might.\""
+            },
+            {
+              "ref": "Dan.3.4",
+              "note": "\"לְכוֹן אָמְרִין, to you it is said, peoples, nations and tongues\"."
+            },
+            {
+              "ref": "Dan.6.26",
+              "note": "\"Darius the king wrote לְכָל־עַמְמַיָּא, to all the peoples.\""
+            },
+            {
+              "ref": "Ezr.7.21",
+              "note": "\"I, Artaxerxes the king, make a decree לְכֹל גִּזַּבְרַיָּא, to all the treasurers\"."
+            }
+          ]
+        },
+        {
+          "gloss": "(marks the object); to (with an infinitive)",
+          "definition": "Before a noun, the object of a verb; before an infinitive, its purpose.",
+          "evidence": [
+            {
+              "ref": "Dan.2.12",
+              "role": "defining",
+              "note": "\"He commanded לְהוֹבָדָה לְכֹל חַכִּימֵי בָבֶל, to destroy all the wise men of Babylon\": the first לְ of purpose, the second of the object."
+            },
+            {
+              "ref": "Dan.2.47",
+              "note": "\"since you could לְמִגְלֵא, reveal, this secret\"."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-li",
+      "lang": "ar",
+      "form": "لِ / لَ",
+      "translit": "li-, la- (lī, laka, lahu, lanā, lakum, lahum)",
+      "gloss": "to, for, belonging to; (with suffixes) have; in order to",
+      "relation": "cognate",
+      "note": "The same one-letter preposition, with la- before suffixes (lahu, lakum) as Hebrew לוֹ, לָכֶם, and the same \"belongs to, has\" sense: لَهُ كَذَا \"such a thing appertains to him\". Arabic also has إِلَى \"to\" beside it, as Hebrew has אֶל.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3006, art. ل",
+          "note": "لَنَا فِى بَنِى فُلَانٍ دِمَآءٌ \"we have a claim upon the sons of such a one to blood\"; \"لَهُ كَذَا often means Such a thing appertains, or is attributable, to him\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic ل (li-), prep.",
+          "note": "\"to, for, belonging to\"; also the conjunction li- \"in order to\" with the subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "arc-l",
+      "lang": "arc",
+      "form": "לְ־",
+      "translit": "lə-",
+      "gloss": "to, toward, for; (before an infinitive) to",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לְ־",
+          "note": "\"unto, to, toward, for; (before infinitive of verbs) to\", with the suffixed forms (Chald. לְהוּ \"to them\")."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Aramaic ל־ (l-), prep.",
+          "note": "\"to, for\"; \"forms the direct object\"."
+        }
+      ]
+    },
+    {
+      "id": "syc-l",
+      "lang": "syc",
+      "form": "ܠ",
+      "translit": "l-",
+      "gloss": "to, for",
+      "relation": "cognate",
+      "note": "The Peshitta's preposition, in both Testaments.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1613, L (root 944), to; for"
+        }
+      ]
+    },
+    {
+      "id": "phn-l",
+      "lang": "phn",
+      "form": "𐤋",
+      "translit": "l-",
+      "gloss": "for; to (dative, never of direction); from (origin); of (genitive, dates); with suffixes, possession; by (agent)",
+      "relation": "cognate",
+      "note": "Phoenician keeps l- for the recipient and owner and uses ʾl for direction, as Hebrew mostly does with לְ and אֶל: two words, not one.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 247–249, L- I, prep.",
+          "note": "\"1. FOR … 2. TO (dative; never of direction) … 3. FROM, OF, expressing place of origin … 4c. Regularly in date formulas … 5. With suffixal pronouns, expressing independent possessive pronouns … 6. With verb k-n, expressing possession … 7. BY, expressing the agent of a passive verb\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-l",
+      "lang": "uga",
+      "form": "𐎍",
+      "translit": "l- /li-/, lm",
+      "gloss": "to, at, from",
+      "relation": "cognate",
+      "note": "With suffixes ly, lk, lh, lkm, lhm, as Hebrew לִי, לְךָ, לוֹ, לָכֶם, לָהֶם; the lengthened lm answers to Hebrew לְמוֹ. Ugaritic has no ʾl \"to\", only l.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 78, §56.22, Preposition l-",
+          "note": "/pʿn bʿly 2.64:13 \"to the feet of my lord\"; variants with -m, lm, \"in the second colon of a verse\" (§56.2)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 79, §56.6, Forms with suffixed pronouns",
+          "note": "ly, lk, lh, lkm, lhm."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 190, §93 Glossary, l /li-/",
+          "note": "\"with suff. ly, lk, lnh 'to, at, from'; local … temporal … (H., Aram. lə-, Arab. li, Amorite la, Akkad. < Aram. la); with -m: lm\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-l",
+      "lang": "sem",
+      "form": "𐩡",
+      "translit": "l-",
+      "gloss": "to, toward; for (purpose, benefit); belonging to; concerning; (with verbs) so that, let",
+      "relation": "cognate",
+      "note": "Sabaic, Old South Arabian.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 255–256, l- prep.",
+          "note": "\"(1) TO, TOWARD … (2) FOR the purpose of … (3) FOR the benefit of … (4) marking genitive, BELONGING TO … often in dates … (5) WITH REFERENCE TO, CONCERNING\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-la",
+      "lang": "gez",
+      "form": "ለ-",
+      "translit": "la-",
+      "gloss": "to, for, belonging to",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ለ- (lä-), prep.",
+          "note": "\"to, for, belonging to\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "man-a-living-soul",
+      "statement": "Gen 2:7 uses לְ of what the man became: God formed him of dust and breathed into his nostrils the breath of life, \"and the man became (וַיְהִי … לְ) a living soul\". The soul is what the formed and breathing man came to be, not a thing put into him; the same \"living soul\" is said of the beasts (Gen 1:24). Paul keeps the Hebrew construction, \"the first man Adam became (ἐγένετο εἰς) a living soul\", and sets against it \"the last Adam became a life-giving spirit\" (1Co 15:45). So man as made is a living, mortal creature, and the life beyond the grave is given through the last Adam, not carried in a soul from the first.",
+      "evidence": [
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Gen.1.24"
+        },
+        {
+          "ref": "1Co.15.45"
+        }
+      ]
+    },
+    {
+      "topic": "feasts-yahwehs-and-israels",
+      "statement": "Leviticus 23 sets the appointed times down with לְ two ways: each is \"to Yahweh\" (a sabbath לַיהוָה, a passover לַיהוָה, Lev 23:3, 5), and each is \"to you\", a holy convocation and a sabbath of rest לָכֶם (Lev 23:7, 32). They are Yahweh's own (\"these are my appointed times\", Lev 23:2), and given for his people's good: \"Yahweh has given you the sabbath\" (Exo 16:29). Jesus says the same of the sabbath: \"the sabbath was made for man, not man for the sabbath\" (Mrk 2:27).",
+      "evidence": [
+        {
+          "ref": "Lev.23.2"
+        },
+        {
+          "ref": "Lev.23.3"
+        },
+        {
+          "ref": "Lev.23.5"
+        },
+        {
+          "ref": "Lev.23.7"
+        },
+        {
+          "ref": "Lev.23.32"
+        },
+        {
+          "ref": "Exo.16.29"
+        },
+        {
+          "ref": "Mrk.2.27"
+        }
+      ]
+    }
+  ],
+  "note": "Root investigation (2026-11-13). No root is viable; the entry is keyed by its own consonant ל, as min is keyed מנ. (1) The particle is one consonant with a short vowel in every language that has it (Hebrew lə-, Aramaic and Syriac l-, Ugaritic l /li-/, Phoenician l-, Sabaic l-, Arabic li-/la-, Ge'ez la-), and with suffixes it is built on that letter alone (לוֹ, לָכֶם; Ugaritic lh, lkm; Arabic lahu, lakum), with no third-weak base such as עַל (עָלָיו, from עלה) and אֶל (אֵלָיו) show. So nothing in its form points to a longer root. (2) The verb לָוָה \"join, attach\" (Gen 29:34; Num 18:2, 4; Isa 56:3, 6) has a sense near \"belonging to\", but no cognate dictionary derives l- from lwy and the suffixed forms show no w or y: rejected. (3) אֶל: kept apart. Hebrew, Phoenician and Arabic each have both words side by side with different ranges (Phoenician l- \"never of direction\", Krahmalkov p. 248; Arabic li- and ʾilā); אֶל has a longer y-base and לְ none; and Ugaritic has l but no ʾl \"to\". אֶל is a word of the elah entry (root אלה), not of el-al (which holds the negative אַל, root אלל); nothing here proposes moving it. (4) Akkadian has no l- preposition (ana, ina); Segert's \"Akkad. < Aram. la\" is a late loan from Aramaic and is not cited. Amorite la (Segert p. 190) is noted only. Not checked: Dillmann for Ge'ez ለ (only Wiktionary cited); Payne Smith for Syriac ܠ (SEDRA only); CAL for Aramaic. Left out: the conditional לוּ (l.ar.aa, in lo.json), the emphatic or vocative la- some see in Hebrew, and the compounds BDB files elsewhere: לִפְנֵי (panah), לְמַעַן (under ענה), לָכֵן (l.bp.ag, \"see כֵּן\"), לָמָּה (מָה). The Hebrew letter's own BDB key l.aa.aa (\"twelfth letter\") is not claimed. Token counts: the corpus links no token to l.aa.ab. OSHB tags every suffixed form (לִי, לוֹ, לָכֶם, לָהֶם …, about 4,500 tokens, and about 60 in the Aramaic) with the bare lemma \"l\" and no Strong's number, and the generator's build_surface_entries only links lemmas with a number, so lexicon-support will show no uses for לְ or its Aramaic until that is fixed. The prefixed לְ is a proclitic counted under the word it joins, as with מִן. The senses are illustrated, not exhaustive."
+}
