@@ -1,0 +1,1809 @@
+{
+  "id": "am",
+  "root": "עממ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "people",
+    "kinship",
+    "covenant",
+    "presence",
+    "death",
+    "gentiles",
+    "kingdom-of-god"
+  ],
+  "gloss": "people, kin; with; (another root) be dim",
+  "summary": "עַם is a people: a body of men bound together by descent, land, leader or god, “one people with one language” (Gen 11:6), above all Israel as Yahweh’s people, “I will be your God and you shall be my people” (Lev 26:12); its plural is the peoples, the nations, and in “gathered to his peoples” and “cut off from her peoples” (Lev 23:29) one man’s kin. The preposition עִם, “with”, is spelled with the same doubled מ, and Sabaean has the same ʿm as “paternal uncle” and “with”, Arabic ʿamm as “company of men” and “paternal uncle”: the root is togetherness, those who belong with one another. Yahweh’s “I will be with you” (Exo 3:12) and the name עִמָּנוּ אֵל, “with us is God” (Isa 7:14; Mat 1:23), use it. The rare verb עָמַם, “be dim, dark”, comes from another older root, Arabic ghamma “cover, veil”, which merged into the same letters.",
+  "words": [
+    {
+      "lemma": "עַם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "people, nation; (pl.) peoples, nations; kin",
+      "bdb": [
+        "p.di.ab",
+        "p.dk.ab"
+      ],
+      "cognate_ids": [
+        "ar-amm",
+        "sab-amt",
+        "uga-amm",
+        "phn-am",
+        "arc-amma",
+        "akk-ammu"
+      ],
+      "summary": "The plural is usually עַמִּים, and twice עֲמָמִים (Neh 9:22, 24). Its uses run from a whole nation to the men gathered round one leader and to one man’s kin; Arabic ʿamm, both “a company of men” and “paternal uncle”, covers the same span.",
+      "senses": [
+        {
+          "id": "am-people",
+          "gloss": "a people, nation",
+          "definition": "A body of people who belong together by descent, speech, land or god, counted and named as one: the people of the sons of Israel, the people of Chemosh, a people of one language.",
+          "evidence": [
+            {
+              "ref": "Gen.11.6",
+              "role": "defining",
+              "note": "“Behold, one עַם and one language for them all.”"
+            },
+            {
+              "ref": "Exo.1.9",
+              "role": "defining",
+              "note": "Pharaoh to his עַם: “the עַם of the sons of Israel is more and mightier than we.”"
+            },
+            {
+              "ref": "Num.21.29",
+              "note": "Moab is “עַם of Chemosh”, the people named by its god."
+            },
+            {
+              "ref": "Rut.1.16",
+              "role": "defining",
+              "note": "“Your עַם is my עַם, and your God my God”: to join a people is to take its god."
+            },
+            {
+              "ref": "Deu.4.6",
+              "note": "The peoples will say, “a wise and understanding עַם is this great nation (גּוֹי).”"
+            },
+            {
+              "ref": "Exo.33.13",
+              "note": "“See that this nation (גּוֹי) is your עַם.”"
+            },
+            {
+              "ref": "Pro.30.25",
+              "note": "Of ants: “a עַם not strong”, a kind gathered as one body."
+            },
+            {
+              "ref": "Pro.30.26",
+              "note": "The rock badgers are “a עַם not mighty”."
+            },
+            {
+              "ref": "Jol.2.2",
+              "note": "The locust army: “a great and strong עַם”."
+            }
+          ]
+        },
+        {
+          "id": "am-my-people",
+          "gloss": "Yahweh’s people",
+          "definition": "Israel as the people Yahweh took for himself out of Egypt and bound to himself by covenant: “my people”, a holy people, a people of special possession; and, in the prophets, the people he will again call his own.",
+          "evidence": [
+            {
+              "ref": "Exo.3.7",
+              "role": "defining",
+              "note": "“I have surely seen the affliction of my עַם in Egypt.”"
+            },
+            {
+              "ref": "Exo.6.7",
+              "role": "defining",
+              "note": "“I will take you to me for a עַם and I will be to you God.”"
+            },
+            {
+              "ref": "Lev.26.12",
+              "role": "defining",
+              "note": "“I will walk among you and be your God, and you shall be my עַם”; quoted in 2Co 6:16."
+            },
+            {
+              "ref": "Deu.7.6",
+              "role": "defining",
+              "note": "“A holy עַם are you to Yahweh your God; he chose you to be a עַם סְגֻלָּה out of all the peoples.”"
+            },
+            {
+              "ref": "Deu.14.2"
+            },
+            {
+              "ref": "Deu.26.18"
+            },
+            {
+              "ref": "Deu.32.9",
+              "note": "“Yahweh’s portion is his עַם, Jacob the lot of his inheritance.”"
+            },
+            {
+              "ref": "Isa.43.21",
+              "note": "“This עַם I formed for myself; they shall recount my praise”; 1Pe 2:9."
+            },
+            {
+              "ref": "Hos.1.9",
+              "role": "defining",
+              "note": "“Call his name לֹא עַמִּי, for you are not my עַם and I will not be yours.”"
+            },
+            {
+              "ref": "Hos.2.1"
+            },
+            {
+              "ref": "Hos.2.25",
+              "note": "“I will say to Not-my-people, You are my עַם, and he will say, My God”; Rom 9:25; 1Pe 2:10."
+            },
+            {
+              "ref": "Jer.31.33",
+              "note": "The new covenant: “I will be their God and they shall be my עַם”; Heb 8:10."
+            },
+            {
+              "ref": "Ezk.37.27"
+            },
+            {
+              "ref": "Num.11.29",
+              "note": "“Would that all Yahweh’s עַם were prophets.”"
+            },
+            {
+              "ref": "Mat.1.21",
+              "note": "“He shall save his λαός from their sins”; the Peshitta has עַמֵּהּ."
+            },
+            {
+              "ref": "Act.15.14",
+              "note": "God visited the nations to take out of them a λαός for his name; the Peshitta has עַמְמֵא … עַמָּא."
+            },
+            {
+              "ref": "Tit.2.14",
+              "note": "To purify for himself a λαὸς περιούσιος, the words of Deu 7:6; 14:2."
+            },
+            {
+              "ref": "1Pe.2.9",
+              "to": "1Pe.2.10"
+            }
+          ]
+        },
+        {
+          "id": "am-populace",
+          "gloss": "the people, the body of the people",
+          "definition": "The people as a whole set beside its leaders, priests or king: those Moses judged, the priest made covering for, the king ruled; and the men a leader takes to war.",
+          "evidence": [
+            {
+              "ref": "Exo.18.13",
+              "role": "defining",
+              "note": "Moses sat to judge the עַם, and the עַם stood about him from morning to evening."
+            },
+            {
+              "ref": "Exo.18.19",
+              "note": "“Be for the עַם before God.”"
+            },
+            {
+              "ref": "Lev.9.7",
+              "role": "defining",
+              "note": "Aaron makes covering “for yourself and for the עַם”, the offering of the עַם."
+            },
+            {
+              "ref": "Lev.16.15",
+              "note": "The goat of the sin offering “that is for the עַם”."
+            },
+            {
+              "ref": "Lev.16.24"
+            },
+            {
+              "ref": "Lev.16.33",
+              "note": "Covering for the priests and for “all the עַם of the assembly”; compare Heb 9:7, the errors of the λαός."
+            },
+            {
+              "ref": "1Sa.8.7",
+              "note": "“Listen to the voice of the עַם … they have rejected me from reigning over them.”"
+            },
+            {
+              "ref": "Jos.8.1",
+              "role": "defining",
+              "note": "“Take with you all the עַם of war”: the fighting men."
+            },
+            {
+              "ref": "Jdg.7.2",
+              "note": "“The עַם with you are too many.”"
+            },
+            {
+              "ref": "Num.20.20",
+              "note": "Edom came out “with heavy עַם”, a great force."
+            },
+            {
+              "ref": "Isa.6.9",
+              "note": "“Go and say to this עַם, Hear indeed but do not understand”; Mat 13:15; Act 28:26."
+            },
+            {
+              "ref": "Isa.29.13",
+              "note": "“This עַם draws near with its mouth”; Mat 15:8."
+            }
+          ]
+        },
+        {
+          "id": "am-people-of-land",
+          "gloss": "people of the land",
+          "definition": "In עַם הָאָרֶץ, the people who hold and dwell in a land: the Hittites before Abraham, the Canaanites before Israel, and in Israel the ordinary landholders as against priests and rulers.",
+          "evidence": [
+            {
+              "ref": "Gen.23.7",
+              "role": "defining",
+              "note": "Abraham bowed to “the עַם of the land, the sons of Heth”."
+            },
+            {
+              "ref": "Lev.4.27",
+              "role": "defining",
+              "note": "“If one soul of the עַם of the land sins”, after the priest, the congregation and the ruler (Lev 4:3, 13, 22)."
+            },
+            {
+              "ref": "Num.14.9"
+            },
+            {
+              "ref": "2Ki.11.14",
+              "note": "“All the עַם of the land” rejoicing at Joash’s crowning."
+            }
+          ]
+        },
+        {
+          "id": "am-peoples",
+          "gloss": "(pl.) the peoples, the nations",
+          "definition": "In the plural, the peoples of the earth, usually the nations other than Israel; set in parallel with גּוֹיִם and לְאֻמִּים; Yahweh rules them, and the prophets see them come to him.",
+          "evidence": [
+            {
+              "ref": "Deu.7.6",
+              "role": "defining",
+              "note": "Israel chosen “out of all the עַמִּים on the face of the ground”."
+            },
+            {
+              "ref": "Gen.27.29",
+              "role": "defining",
+              "note": "“Let עַמִּים serve you and לְאֻמִּים bow down to you.”"
+            },
+            {
+              "ref": "Deu.32.8",
+              "note": "The Most High set the bounds of the עַמִּים by the number of the sons of Israel."
+            },
+            {
+              "ref": "Gen.28.3",
+              "note": "“That you may become an assembly of עַמִּים.”"
+            },
+            {
+              "ref": "Gen.49.10",
+              "note": "“To him the obedience of the עַמִּים.”"
+            },
+            {
+              "ref": "Isa.2.3",
+              "role": "defining",
+              "note": "“Many עַמִּים shall go and say, Come, let us go up to the mountain of Yahweh”; set beside הַגּוֹיִם in 2:4."
+            },
+            {
+              "ref": "Isa.2.4"
+            },
+            {
+              "ref": "Mic.4.1",
+              "to": "Mic.4.3"
+            },
+            {
+              "ref": "Psa.67.4",
+              "to": "Psa.67.5",
+              "note": "“Let the עַמִּים praise you, O God”, beside לְאֻמִּים."
+            },
+            {
+              "ref": "Psa.96.3",
+              "note": "“Declare his glory among the nations (גּוֹיִם), his wonders among all the עַמִּים.”"
+            },
+            {
+              "ref": "Neh.9.22",
+              "note": "The rare plural עֲמָמִים, beside kingdoms."
+            },
+            {
+              "ref": "Neh.9.24"
+            },
+            {
+              "ref": "Mat.28.19",
+              "note": "The Peshitta’s עַמְמֵא renders ἔθνη: “make disciples of all the nations.”"
+            }
+          ]
+        },
+        {
+          "id": "am-kin",
+          "gloss": "kin, one’s own people",
+          "definition": "A man’s kinsmen, often in the plural “his peoples”: those he is gathered to at death, those he may be cut off from, those among whom a priest may not defile himself save for his near kin; “the sons of your people” are one’s fellows.",
+          "evidence": [
+            {
+              "ref": "Gen.49.29",
+              "role": "defining",
+              "note": "“I am being gathered to my עַם; bury me with my fathers”: the עַם he joins at death are his fathers."
+            },
+            {
+              "ref": "Gen.25.8",
+              "role": "defining",
+              "note": "Abraham died “and was gathered to his עַמִּים”."
+            },
+            {
+              "ref": "Gen.25.17"
+            },
+            {
+              "ref": "Gen.35.29"
+            },
+            {
+              "ref": "Gen.49.33"
+            },
+            {
+              "ref": "Num.20.24"
+            },
+            {
+              "ref": "Num.27.13"
+            },
+            {
+              "ref": "Deu.32.50"
+            },
+            {
+              "ref": "Lev.21.1",
+              "to": "Lev.21.2",
+              "role": "defining",
+              "note": "A priest shall not defile himself for the dead “among his עַמִּים”, except for his near kin (שְׁאֵרוֹ הַקָּרֹב אֵלָיו): mother, father, son, daughter, brother."
+            },
+            {
+              "ref": "Lev.21.14",
+              "note": "The high priest takes “a virgin from his עַמִּים”."
+            },
+            {
+              "ref": "Lev.21.15"
+            },
+            {
+              "ref": "Gen.17.14",
+              "role": "defining",
+              "note": "The uncircumcised male “shall be cut off from her עַמִּים”."
+            },
+            {
+              "ref": "Lev.23.29",
+              "role": "defining",
+              "note": "Whoever does not afflict himself on the Day of the coverings “shall be cut off from her עַמִּים”."
+            },
+            {
+              "ref": "Lev.23.30",
+              "role": "defining",
+              "note": "The parallel line: “I will destroy that soul from the midst of her עַם”: being cut off from one’s peoples is destruction, and the plural kin and the singular people are one circle."
+            },
+            {
+              "ref": "Exo.31.14",
+              "note": "The sabbath-breaker shall surely be put to death, and “cut off from the midst of her עַמִּים”."
+            },
+            {
+              "ref": "Lev.7.20"
+            },
+            {
+              "ref": "Num.9.13"
+            },
+            {
+              "ref": "Lev.19.16",
+              "note": "“Do not go as a slanderer among your עַמִּים”, beside “your neighbour”."
+            },
+            {
+              "ref": "Lev.19.18",
+              "role": "defining",
+              "note": "“Do not take vengeance or bear a grudge against the sons of your עַם, and love your neighbour as yourself.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λαός",
+          "gloss": "people",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עַם → λαός ×1498 (lemma count, MACULA alignment); Deu.7.6, עַם קָדוֹשׁ → λαὸς ἅγιος"
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. λαός",
+              "note": "In the Septuagint very frequent for עַם."
+            },
+            {
+              "ref": "Mat.1.21",
+              "note": "“He shall save his λαός from their sins.”"
+            },
+            {
+              "ref": "Act.15.14"
+            },
+            {
+              "ref": "2Co.6.16",
+              "note": "Lev 26:12: “they shall be my λαός”."
+            },
+            {
+              "ref": "Heb.8.10",
+              "note": "Jer 31:33."
+            },
+            {
+              "ref": "Rom.9.25",
+              "to": "Rom.9.26",
+              "note": "Hos 2:25 and 2:1."
+            },
+            {
+              "ref": "Tit.2.14"
+            },
+            {
+              "ref": "1Pe.2.9",
+              "to": "1Pe.2.10"
+            },
+            {
+              "ref": "Heb.4.9",
+              "note": "“There remains a sabbath rest for the λαός of God.”"
+            },
+            {
+              "ref": "Rev.21.3",
+              "note": "Ezk 37:27: “they shall be his λαοί, and God himself shall be with them.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἔθνος",
+          "gloss": "nation; (pl.) the nations, Gentiles",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עַם → ἔθνος ×115 (lemma count, MACULA alignment); Deu.7.6, הָעַמִּים → ἔθνη"
+            },
+            {
+              "ref": "Rom.15.10",
+              "note": "Deu 32:43: “Rejoice, ἔθνη, with his λαός.”"
+            },
+            {
+              "ref": "Rom.10.19",
+              "note": "Deu 32:21: “I will provoke you to jealousy by what is not an ἔθνος”, for Hebrew לֹא־עָם."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גּוֹי",
+            "note": "Nation: the two are set side by side for the same body, Israel or the nations.",
+            "evidence": [
+              {
+                "ref": "Deu.4.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.33.13"
+              },
+              {
+                "ref": "Isa.2.4"
+              },
+              {
+                "ref": "Psa.96.3"
+              },
+              {
+                "ref": "Deu.32.21"
+              }
+            ]
+          },
+          {
+            "lemma": "לְאֹם",
+            "note": "Nation, people, in poetry beside the plural עַמִּים.",
+            "evidence": [
+              {
+                "ref": "Gen.27.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.67.5"
+              }
+            ]
+          },
+          {
+            "lemma": "אָבוֹת",
+            "note": "Fathers: being gathered to one’s עַם is being gathered to one’s fathers.",
+            "evidence": [
+              {
+                "ref": "Gen.49.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.2.10"
+              }
+            ]
+          },
+          {
+            "lemma": "רֵעַ",
+            "note": "Neighbour: “the sons of your people” beside “your neighbour”.",
+            "evidence": [
+              {
+                "ref": "Lev.19.16"
+              },
+              {
+                "ref": "Lev.19.18",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נֶאֱסַף אֶל־עַמָּיו",
+            "gloss": "be gathered to one’s peoples: die and join one’s kin in the grave",
+            "evidence": [
+              {
+                "ref": "Gen.25.8"
+              },
+              {
+                "ref": "Gen.25.17"
+              },
+              {
+                "ref": "Gen.35.29"
+              },
+              {
+                "ref": "Gen.49.33"
+              },
+              {
+                "ref": "Num.20.24"
+              },
+              {
+                "ref": "Num.27.13"
+              },
+              {
+                "ref": "Num.31.2"
+              },
+              {
+                "ref": "Deu.32.50"
+              }
+            ]
+          },
+          {
+            "phrase": "וְנִכְרְתָה הַנֶּפֶשׁ הַהִוא מֵעַמֶּיהָ",
+            "gloss": "that soul shall be cut off from her peoples",
+            "evidence": [
+              {
+                "ref": "Gen.17.14"
+              },
+              {
+                "ref": "Exo.31.14"
+              },
+              {
+                "ref": "Lev.7.20"
+              },
+              {
+                "ref": "Lev.23.29"
+              },
+              {
+                "ref": "Num.9.13"
+              }
+            ]
+          },
+          {
+            "phrase": "עַם הָאָרֶץ",
+            "gloss": "the people of the land",
+            "evidence": [
+              {
+                "ref": "Gen.23.7"
+              },
+              {
+                "ref": "Lev.4.27"
+              },
+              {
+                "ref": "2Ki.11.14"
+              }
+            ]
+          },
+          {
+            "phrase": "עַם סְגֻלָּה",
+            "gloss": "a people of special possession",
+            "evidence": [
+              {
+                "ref": "Deu.7.6"
+              },
+              {
+                "ref": "Deu.14.2"
+              },
+              {
+                "ref": "Deu.26.18"
+              }
+            ]
+          },
+          {
+            "phrase": "וְהָיִיתִי לָכֶם לֵאלֹהִים וְאַתֶּם תִּהְיוּ־לִי לְעָם",
+            "gloss": "I will be your God and you shall be my people",
+            "evidence": [
+              {
+                "ref": "Exo.6.7"
+              },
+              {
+                "ref": "Lev.26.12"
+              },
+              {
+                "ref": "Jer.31.33"
+              },
+              {
+                "ref": "Ezk.37.27"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא עַמִּי",
+            "gloss": "not my people",
+            "evidence": [
+              {
+                "ref": "Hos.1.9"
+              },
+              {
+                "ref": "Hos.2.1"
+              },
+              {
+                "ref": "Hos.2.25"
+              }
+            ]
+          },
+          {
+            "phrase": "עַם הַמִּלְחָמָה",
+            "gloss": "the people of war, the fighting men",
+            "evidence": [
+              {
+                "ref": "Jos.8.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עִם",
+      "pos": "preposition",
+      "gloss": "with, together with; beside; against",
+      "bdb": [
+        "p.dj.aa",
+        "p.de.ad",
+        "p.df.ag"
+      ],
+      "cognate_ids": [
+        "sab-am-prep",
+        "uga-am-prep",
+        "arc-im",
+        "ar-maa"
+      ],
+      "summary": "Being together: going, dwelling, dealing or contending with someone, being where he is. With suffixes the מ doubles (עִמִּי, עִמָּנוּ), as in the noun’s plural עַמִּים, and a longer form עִמָּדִי “with me” also occurs (Gen 3:12; Psa 23:4). That it is the same root as עַם is not shown by any verse; it rests on the shared consonants and doubling, and on Sabaean and Ugaritic, where the same ʿm is both the preposition “with” and the noun for a paternal kinsman, and on Arabic ʿamm “a company of men”: those who are with one another.",
+      "senses": [
+        {
+          "id": "im-company",
+          "gloss": "with, in company with",
+          "definition": "Of persons going, staying or being together: one goes, eats, dwells or lies with another.",
+          "evidence": [
+            {
+              "ref": "Num.10.32",
+              "role": "defining",
+              "note": "“If you go עִמָּנוּ, the good which Yahweh does עִמָּנוּ we will do to you”, after “come אִתָּנוּ” (10:29)."
+            },
+            {
+              "ref": "Gen.13.1",
+              "note": "“And Lot עִמּוֹ.”"
+            },
+            {
+              "ref": "Gen.3.6",
+              "note": "She gave also to her husband עִמָּהּ."
+            },
+            {
+              "ref": "Gen.3.12",
+              "note": "“The woman you gave to be עִמָּדִי.”"
+            },
+            {
+              "ref": "Gen.24.58",
+              "note": "“Will you go עִם this man?”"
+            },
+            {
+              "ref": "Gen.39.12",
+              "note": "“Lie עִמִּי.”"
+            }
+          ]
+        },
+        {
+          "id": "im-presence",
+          "gloss": "with, at the side of (God’s presence and help)",
+          "definition": "God being with a man or a people: present to help, protect and give success; the promise to those he sends, and the confession of those he keeps.",
+          "evidence": [
+            {
+              "ref": "Exo.3.12",
+              "role": "defining",
+              "note": "“Certainly I will be עִמָּךְ, and this shall be the sign that I have sent you.”"
+            },
+            {
+              "ref": "Gen.28.15",
+              "role": "defining",
+              "note": "“Behold, I am עִמָּךְ and will keep you wherever you go … I will not leave you.”"
+            },
+            {
+              "ref": "Gen.26.3"
+            },
+            {
+              "ref": "Gen.26.28",
+              "note": "Abimelech: “we saw plainly that Yahweh was עִמָּךְ.”"
+            },
+            {
+              "ref": "Jos.1.5",
+              "role": "defining",
+              "note": "“As I was עִם Moses, I will be עִמָּךְ; I will not fail you nor forsake you.”"
+            },
+            {
+              "ref": "Jos.1.9"
+            },
+            {
+              "ref": "Jdg.6.12",
+              "note": "“Yahweh is עִמְּךָ, mighty man of valour”; Luk 1:28."
+            },
+            {
+              "ref": "Num.23.21",
+              "note": "“Yahweh his God is עִמּוֹ, and the shout of a king among them.”"
+            },
+            {
+              "ref": "Psa.23.4",
+              "note": "“I will fear no evil, for you are עִמָּדִי.”"
+            },
+            {
+              "ref": "Psa.46.8",
+              "note": "“Yahweh of armies is עִמָּנוּ.”"
+            },
+            {
+              "ref": "Isa.7.14",
+              "role": "defining",
+              "note": "The sign-child’s name, עִמָּנוּ אֵל, “with us is God”; Mat 1:23."
+            },
+            {
+              "ref": "Isa.8.8"
+            },
+            {
+              "ref": "Isa.8.10",
+              "note": "“Take counsel, it shall come to nothing … for עִמָּנוּ אֵל.”"
+            },
+            {
+              "ref": "Mat.28.20",
+              "note": "“I am with you all the days”; the Peshitta has עַמְּכוֹן."
+            },
+            {
+              "ref": "Act.10.38",
+              "note": "“For God was with him”; the Peshitta has עַמֵּהּ."
+            }
+          ]
+        },
+        {
+          "id": "im-dealing",
+          "gloss": "with (in dealing, covenant, speaking)",
+          "definition": "Of what one does to or makes with another: kindness, a covenant, a word, an oath.",
+          "evidence": [
+            {
+              "ref": "Gen.24.12",
+              "role": "defining",
+              "note": "“Do kindness עִם my master Abraham.”"
+            },
+            {
+              "ref": "Gen.21.23",
+              "note": "“As I have done kindness עִמְּךָ, you shall do עִמָּדִי.”"
+            },
+            {
+              "ref": "Gen.26.28",
+              "note": "“Let us cut a covenant עִמָּךְ.”"
+            },
+            {
+              "ref": "2Sa.23.5",
+              "note": "“Is not my house so עִם God? for he has made with me an everlasting covenant.”"
+            },
+            {
+              "ref": "Hos.2.20"
+            }
+          ]
+        },
+        {
+          "id": "im-against",
+          "gloss": "against (in strife and war)",
+          "definition": "With verbs of striving and fighting, the one contended with: against.",
+          "evidence": [
+            {
+              "ref": "Exo.17.8",
+              "role": "defining",
+              "note": "“Amalek came and fought עִם Israel at Rephidim.”"
+            },
+            {
+              "ref": "Exo.17.2",
+              "note": "The people strove עִם Moses; “why do you strive עִמָּדִי?”"
+            },
+            {
+              "ref": "Gen.26.20"
+            },
+            {
+              "ref": "Psa.94.16",
+              "note": "“Who will rise up for me עִם evildoers?”"
+            }
+          ]
+        },
+        {
+          "id": "im-alike",
+          "gloss": "together with, alike with",
+          "definition": "Of two sharing the same lot: the righteous with the wicked, the wise with the fool.",
+          "evidence": [
+            {
+              "ref": "Gen.18.23",
+              "role": "defining",
+              "note": "“Will you sweep away the righteous עִם the wicked?”, explained in 18:25, “that the righteous should be as the wicked”."
+            },
+            {
+              "ref": "Gen.18.25"
+            },
+            {
+              "ref": "Ecc.2.16",
+              "note": "“How the wise man dies עִם the fool.”"
+            }
+          ]
+        },
+        {
+          "id": "im-beside",
+          "gloss": "by, beside, near (a place)",
+          "definition": "Of a place: next to, by.",
+          "evidence": [
+            {
+              "ref": "Gen.25.11",
+              "role": "defining",
+              "note": "Isaac dwelt עִם Beer-lahai-roi."
+            },
+            {
+              "ref": "Gen.35.4",
+              "note": "The oak which is עִם Shechem."
+            },
+            {
+              "ref": "Jdg.18.3",
+              "note": "They were עִם the house of Micah."
+            }
+          ]
+        },
+        {
+          "id": "im-mind",
+          "gloss": "with, in (the heart, the mind; what one holds)",
+          "definition": "What is “with” a person is in his heart or keeping: purposed, known or held by him.",
+          "evidence": [
+            {
+              "ref": "1Ki.8.17",
+              "role": "defining",
+              "note": "“It was עִם the heart of David my father to build a house.”"
+            },
+            {
+              "ref": "Jos.14.7",
+              "note": "“I brought him word as it was עִם my heart.”"
+            },
+            {
+              "ref": "Job.23.14",
+              "note": "“Many such things are עִמּוֹ.”"
+            }
+          ]
+        },
+        {
+          "id": "im-time",
+          "gloss": "with, as long as (of time)",
+          "definition": "Of time: alongside, for as long as something lasts.",
+          "evidence": [
+            {
+              "ref": "Psa.72.5",
+              "role": "defining",
+              "note": "“They shall fear you עִם the sun, and before the moon, generation of generations.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μετά",
+          "gloss": "with",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עִם → μετά ×664 (lemma count, MACULA alignment); Exo.3.12, עִמָּךְ → μετὰ σοῦ"
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. μετά",
+              "note": "In the Septuagint for אֵת, עִם and others."
+            },
+            {
+              "ref": "Mat.1.23",
+              "note": "“Emmanuel, which is, being interpreted, God μεθ’ ἡμῶν.”"
+            },
+            {
+              "ref": "Mat.28.20"
+            },
+            {
+              "ref": "Luk.1.28",
+              "note": "“The Lord is μετὰ σοῦ.”"
+            },
+            {
+              "ref": "Jhn.3.2",
+              "note": "“No one can do these signs … unless God is μετ’ αὐτοῦ.”"
+            },
+            {
+              "ref": "Act.10.38"
+            },
+            {
+              "ref": "Rev.21.3",
+              "note": "“God himself shall be μετ’ αὐτῶν.”"
+            }
+          ]
+        },
+        {
+          "lemma": "Ἐμμανουήλ",
+          "gloss": "Emmanuel, “God with us”",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. Ἐμμανουήλ",
+              "note": "From Hebrew עִמָּנוּ אֵל, Isa 7:14."
+            },
+            {
+              "ref": "Mat.1.23",
+              "role": "defining",
+              "note": "Matthew translates the borrowed name: “which is, being interpreted, God with us (μεθ’ ἡμῶν ὁ θεός)”: the New Testament’s own reading of עִמָּנוּ."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֵת",
+            "note": "The other preposition “with”: Moses says “come אִתָּנוּ” and then “if you go עִמָּנוּ” of the same journey.",
+            "evidence": [
+              {
+                "ref": "Num.10.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.10.32"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עִמָּנוּ אֵל",
+            "gloss": "with us is God",
+            "evidence": [
+              {
+                "ref": "Isa.7.14"
+              },
+              {
+                "ref": "Isa.8.8"
+              },
+              {
+                "ref": "Isa.8.10"
+              },
+              {
+                "ref": "Mat.1.23"
+              }
+            ]
+          },
+          {
+            "phrase": "אֶהְיֶה עִמָּךְ",
+            "gloss": "I will be with you",
+            "evidence": [
+              {
+                "ref": "Exo.3.12"
+              },
+              {
+                "ref": "Gen.26.3"
+              },
+              {
+                "ref": "Jos.1.5"
+              }
+            ]
+          },
+          {
+            "phrase": "עָשָׂה חֶסֶד עִם",
+            "gloss": "do kindness with, show loyal love to",
+            "evidence": [
+              {
+                "ref": "Gen.24.12"
+              },
+              {
+                "ref": "Gen.21.23"
+              }
+            ]
+          },
+          {
+            "phrase": "עִם־לְבָב",
+            "gloss": "in the heart, purposed",
+            "evidence": [
+              {
+                "ref": "1Ki.8.17"
+              },
+              {
+                "ref": "Jos.14.7"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מֵעִם",
+      "root": "מעמ",
+      "pos": "preposition",
+      "gloss": "from with, from beside; from (the presence or authority of)",
+      "bdb": [
+        "p.dj.ab"
+      ],
+      "cognate_ids": [
+        "sab-am-prep"
+      ],
+      "summary": "מִן with עִם: away from someone’s company, or coming from him as its source. Sabaean b-ʿm has the same sense “from with”, of what is authorised by a god.",
+      "senses": [
+        {
+          "id": "meim-from-company",
+          "gloss": "from (someone’s company, side)",
+          "definition": "Leaving the company or place of someone.",
+          "evidence": [
+            {
+              "ref": "Gen.13.14",
+              "role": "defining",
+              "note": "After Lot had separated מֵעִמּוֹ."
+            },
+            {
+              "ref": "Gen.26.16",
+              "note": "“Go מֵעִמָּנוּ, for you are much mightier than we.”"
+            },
+            {
+              "ref": "Exo.21.14",
+              "note": "“You shall take him מֵעִם my altar, to die.”"
+            },
+            {
+              "ref": "1Sa.16.14",
+              "role": "defining",
+              "note": "The spirit of Yahweh turned aside מֵעִם Saul."
+            }
+          ]
+        },
+        {
+          "id": "meim-from-source",
+          "gloss": "from (as source, giver)",
+          "definition": "Coming from someone as its giver or author.",
+          "evidence": [
+            {
+              "ref": "Psa.121.2",
+              "role": "defining",
+              "note": "“My help is מֵעִם Yahweh, maker of heaven and earth.”"
+            },
+            {
+              "ref": "Gen.41.32",
+              "note": "“The thing is established מֵעִם God.”"
+            },
+            {
+              "ref": "Rut.2.12",
+              "note": "“A full reward מֵעִם Yahweh the God of Israel.”"
+            },
+            {
+              "ref": "Isa.29.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָמַם",
+      "pos": "verb",
+      "gloss": "be dim, darken; overshadow; (hophal) be dimmed",
+      "bdb": [
+        "p.dk.aa"
+      ],
+      "cognate_ids": [
+        "ar-ghamma",
+        "arc-amam"
+      ],
+      "summary": "Three uses only. Its cognates are Arabic ghamma “cover, veil” and Aramaic “grow dim”, with ġ behind the ע where the people-words have ʿ: another older root in the same letters, not a sense of “people”.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be dark to, hide from; outshine, overshadow",
+          "senses": [
+            {
+              "gloss": "be dark to, hidden from",
+              "definition": "Of a secret: to be dark or closed to someone.",
+              "evidence": [
+                {
+                  "ref": "Ezk.28.3",
+                  "role": "defining",
+                  "note": "To the prince of Tyre: “you are wiser than Daniel; no secret (סָתוּם) is dark to you (עֲמָמוּךָ)”."
+                }
+              ]
+            },
+            {
+              "gloss": "dim, overshadow",
+              "definition": "Of trees: to put another in the shade, to outshine it.",
+              "evidence": [
+                {
+                  "ref": "Ezk.31.8",
+                  "role": "defining",
+                  "note": "“The cedars in the garden of God did not dim it (עֲמָמֻהוּ)”, in parallel with the fir trees “were not like” its boughs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be dimmed, tarnished",
+          "senses": [
+            {
+              "gloss": "be dimmed",
+              "definition": "Of gold: to lose its brightness.",
+              "evidence": [
+                {
+                  "ref": "Lam.4.1",
+                  "role": "defining",
+                  "note": "“How the gold is dimmed (יוּעַם), the good fine gold changed!”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַם",
+      "lang": "arc",
+      "root": "עמ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "people; (pl.) peoples",
+      "bdb": [
+        "xp.ag.ag"
+      ],
+      "cognate_ids": [
+        "ar-amm",
+        "sab-amt",
+        "arc-amma"
+      ],
+      "senses": [
+        {
+          "gloss": "people, nation",
+          "definition": "As in Hebrew: a people, Israel or another; in the plural, in the kings’ decrees, “the peoples, nations and languages” of the empire.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.13",
+              "role": "defining",
+              "note": "“Whoever in my kingdom of the עַם Israel … is willing to go.”"
+            },
+            {
+              "ref": "Dan.3.4",
+              "role": "defining",
+              "note": "“To you it is commanded, peoples (עַמְמַיָּא), nations and languages.”"
+            },
+            {
+              "ref": "Dan.3.29"
+            },
+            {
+              "ref": "Dan.6.26"
+            },
+            {
+              "ref": "Ezr.6.12",
+              "note": "“Every king and עַם” who sets his hand to destroy the house."
+            },
+            {
+              "ref": "Dan.2.44",
+              "role": "defining",
+              "note": "The kingdom the God of heaven sets up “shall not be left to another עַם”."
+            },
+            {
+              "ref": "Dan.7.14",
+              "note": "All the peoples serve the one like a son of man."
+            },
+            {
+              "ref": "Dan.7.27",
+              "role": "defining",
+              "note": "The kingdom under the whole heaven is given “to the עַם of the saints of the Most High”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λαός",
+          "gloss": "people",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Aramaic עַם → λαός ×5, ἔθνος ×2 (MACULA alignment); Ezr.7.13 עַמָּה → λαοῦ; Dan.2.44 עַם → ἔθνος"
+            },
+            {
+              "ref": "Rev.5.9",
+              "note": "Redeemed out of every tribe, tongue, λαός and nation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עִם",
+      "lang": "arc",
+      "root": "עמ",
+      "pos": "preposition",
+      "gloss": "with",
+      "bdb": [
+        "xp.ah.aa"
+      ],
+      "cognate_ids": [
+        "sab-am-prep",
+        "uga-am-prep",
+        "arc-im"
+      ],
+      "senses": [
+        {
+          "gloss": "with",
+          "definition": "As in Hebrew: in company with, together with, against, and of time “as long as”.",
+          "evidence": [
+            {
+              "ref": "Dan.2.43",
+              "role": "defining",
+              "note": "They shall not cleave “this עִם this, as iron does not mix עִם clay”."
+            },
+            {
+              "ref": "Dan.2.22",
+              "note": "“The light dwells עִמֵּהּ.”"
+            },
+            {
+              "ref": "Dan.2.18"
+            },
+            {
+              "ref": "Ezr.5.2",
+              "note": "“And עִמְּהוֹן the prophets of God, helping them.”"
+            },
+            {
+              "ref": "Ezr.7.13",
+              "note": "“To go to Jerusalem עִמָּךְ.”"
+            },
+            {
+              "ref": "Dan.7.13",
+              "role": "defining",
+              "note": "“Behold, עִם the clouds of heaven one like a son of man was coming”; Mrk 14:62 and Rev 1:7, μετὰ τῶν νεφελῶν."
+            },
+            {
+              "ref": "Dan.7.21",
+              "note": "The horn made war עִם the saints."
+            },
+            {
+              "ref": "Dan.3.33",
+              "note": "“His dominion עִם generation and generation.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μετά",
+          "gloss": "with",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Aramaic עִם → μετά ×9 (MACULA alignment); Ezr.7.13 עִמָּךְ → μετὰ σοῦ"
+            },
+            {
+              "ref": "Mrk.14.62",
+              "note": "“Coming μετὰ the clouds of heaven”, Dan 7:13."
+            },
+            {
+              "ref": "Rev.1.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַמָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "people; (pl.) peoples, Gentiles (Peshitta)",
+      "cognate_ids": [
+        "ar-amm",
+        "sab-amt",
+        "arc-amma"
+      ],
+      "summary": "The Peshitta uses the singular for λαός and the plural עַמְמֵא for ἔθνη, the Gentiles.",
+      "senses": [
+        {
+          "gloss": "people",
+          "definition": "A people, above all the people of God, and the crowd.",
+          "evidence": [
+            {
+              "ref": "Mat.1.21",
+              "role": "defining",
+              "note": "“He shall save his עַמָּא from their sins.”"
+            },
+            {
+              "ref": "Luk.2.32",
+              "role": "defining",
+              "note": "“A light for the revelation of the עַמְמֵא, and the glory of your עַמָּא Israel.”"
+            },
+            {
+              "ref": "Rom.9.25",
+              "to": "Rom.9.26"
+            },
+            {
+              "ref": "1Pe.2.10"
+            },
+            {
+              "ref": "Heb.4.9"
+            }
+          ],
+          "kin": [
+            "am-my-people"
+          ]
+        },
+        {
+          "gloss": "(pl.) the nations, Gentiles",
+          "definition": "The plural for the nations apart from Israel.",
+          "evidence": [
+            {
+              "ref": "Act.15.14",
+              "role": "defining",
+              "note": "God visited the עַמְמֵא to take out of them a עַמָּא for his name."
+            },
+            {
+              "ref": "Rom.15.10",
+              "role": "defining",
+              "note": "Deu 32:43: “Rejoice, עַמְמֵא, עַם his עַמָּא”: both words of the root in one line."
+            },
+            {
+              "ref": "Mat.28.19"
+            },
+            {
+              "ref": "Mat.24.7",
+              "note": "“עַמָּא shall rise against עַמָּא.”"
+            }
+          ],
+          "kin": [
+            "am-peoples"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַם",
+      "lang": "syc",
+      "pos": "preposition",
+      "gloss": "with (Peshitta)",
+      "cognate_ids": [
+        "sab-am-prep",
+        "uga-am-prep",
+        "arc-im"
+      ],
+      "senses": [
+        {
+          "gloss": "with",
+          "definition": "In company with, at the side of; the Peshitta’s word for μετά in God’s presence with his people.",
+          "evidence": [
+            {
+              "ref": "Mat.1.23",
+              "role": "defining",
+              "note": "“Emmanuel, which is interpreted, עַמַּן אַלָהַן, with us our God.”"
+            },
+            {
+              "ref": "Mat.28.20",
+              "note": "“I am עַמְּכוֹן all the days.”"
+            },
+            {
+              "ref": "Luk.1.28"
+            },
+            {
+              "ref": "Jhn.3.2"
+            },
+            {
+              "ref": "Act.10.38"
+            },
+            {
+              "ref": "Rev.21.3",
+              "note": "“The tabernacle of God is עַם men, and he will dwell עַמְּהוֹן, and they shall be his עַמָּא, and God himself shall be עַמְּהוֹן.”"
+            }
+          ],
+          "kin": [
+            "im-presence"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-amm",
+      "lang": "ar",
+      "form": "عَمٌّ، العَامَّةُ",
+      "translit": "ʿamm, al-ʿāmma",
+      "gloss": "a company of men, a numerous company; paternal uncle; the common people",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Lane’s sources give عَمٌّ first as “a company of men … or a numerous company”, and then as “a paternal uncle; a father’s brother”: one word covering both the people and the kinsman, as עַם does (Gen 11:6; Gen 49:29). العَامَّة is “the commonalty … the people in common … the common people”, as עַם הָאָרֶץ (Lev 4:27). The verb عَمَّ is “it was, or became, common, or general … it included the whole”. Arabic ع, not غ, stands behind ע.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2149, عَمٌّ (n30453)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2150, العَامَّةُ (n30469)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2148, root عم, عَمَّ (n30444)"
+        }
+      ]
+    },
+    {
+      "id": "sab-amt",
+      "lang": "sem",
+      "form": "𐩲𐩣، 𐩲𐩣𐩩",
+      "translit": "ʿm, ʿmt",
+      "gloss": "paternal uncle (pl. ʾʿmm “paternal relatives”); people",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Sabaean (Old South Arabian). ʿm “paternal uncle”, plural ʾʿmm, in “his fathers and his fathers’ brothers (ancestors and paternal relatives?)” (C 37/6), close to the Hebrew “gathered to his peoples … to my fathers” (Gen 49:29); and ʿmt “people” in “for their lord, people and subjects” (C 562/3).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 371, ʿMM I, ʿm “paternal uncle”"
+        },
+        {
+          "source": "biella-1982",
+          "locator": "p. 372, ʿmt “people”"
+        }
+      ]
+    },
+    {
+      "id": "sab-am-prep",
+      "lang": "sem",
+      "form": "𐩲𐩣",
+      "translit": "ʿm(n), b-ʿm",
+      "gloss": "in association with, with; against; (b-ʿm) from, from with, authorised by",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Sabaean preposition: “those who are in association with them”; in war “against” (an attack against Habashat), as עִם with “fight” (Exo 17:8); and b-ʿm “from (with)”, of what is bought from a man or authorised by a god, as מֵעִם “from with Yahweh” (Psa 121:2). The same dictionary lists ʿm “paternal uncle” and ʿmt “people” beside it, with the same ʿ.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 370, ʿM, pp. ʿm(n), b-ʿm"
+        }
+      ]
+    },
+    {
+      "id": "uga-amm",
+      "lang": "uga",
+      "form": "𐎓𐎎",
+      "translit": "ʿm /ʿamm-/",
+      "gloss": "closest male paternal relative",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Ugaritic, KTU 1.17 I 27; also in personal names of the type “the kinsman is…”. The kinsman sense of עַם (Lev 21:1–2; Gen 25:8).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 196, §93 glossary, ʿm “closest male paternal relative”"
+        }
+      ]
+    },
+    {
+      "id": "uga-am-prep",
+      "lang": "uga",
+      "form": "𐎓𐎎",
+      "translit": "ʿm /ʿamma/",
+      "gloss": "with, to",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Ugaritic preposition, with suffixes ʿmk, ʿmnk, ʿmny; the glossary compares Hebrew עִם, Syriac ʿam and Aramaic עִם with the Dan 3:33 use. The same spelling is the noun “paternal relative” in the next entry.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 196, §93 glossary, ʿm “with, to”"
+        }
+      ]
+    },
+    {
+      "id": "phn-am",
+      "lang": "phn",
+      "form": "𐤏𐤌",
+      "translit": "ʿm",
+      "gloss": "people, nation; persons; personnel; (in names) divine kinsman",
+      "relation": "cognate",
+      "note": "Phoenician and Punic: “the people of this land” (KAI 10), “the nation of Tyre”, “the senate and people of Lepcis”; and in personal names ʿmy-DN, “DN is my kinsman”, the type of עַמִּיאֵל.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 375–376, ʿM I"
+        }
+      ]
+    },
+    {
+      "id": "arc-amma",
+      "lang": "arc",
+      "form": "עַמָּא",
+      "translit": "ʿammā",
+      "gloss": "people; (pl. עַמְמַיָּא) gentiles",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums, for Hebrew עַם (Targ. Gen 12:2; Ezk 45:16), with עַמָּא דְאַרְעָא for עַם הָאָרֶץ; the plural is the gentiles.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עַם II (P00850)",
+          "note": "Targ. Gen. XII, 2; Targ. Ez. XLV, 16; Sot. IX, 15 ע׳ דארעא = עם הארץ."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲמַם II (P00906)"
+        }
+      ]
+    },
+    {
+      "id": "arc-im",
+      "lang": "arc",
+      "form": "עִם، עִים",
+      "translit": "ʿim",
+      "gloss": "with",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums (Targ. Onq. Gen 25:11; Targ. Ps 54:2; Targ. Job 32:6).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עִם II (P00848)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ghamma",
+      "lang": "ar",
+      "form": "غَمَّ",
+      "translit": "ghamma",
+      "gloss": "cover, veil, conceal; (of the new moon) be hidden by cloud; grieve",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Lane’s sources give “he covered it, veiled it, or concealed it … this is the primary meaning”, of the new moon hidden by clouds, of the moon that hides the stars’ light, and of news “dubious, obscure” to a man: the darkening of Ezk 28:3 and Lam 4:1. Arabic غ (ġ) stands behind ע here, where the people-words have ع (ʿ): two older roots in one spelling.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2289, root غم, غَمَّهُ (n32343)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000083 ġmm [dark] V, HEB005589 ʿamam [dim] V, ARB024769 gam~a [Grieved]"
+        }
+      ]
+    },
+    {
+      "id": "arc-amam",
+      "lang": "arc",
+      "form": "עֲמַם",
+      "translit": "ʿămam",
+      "gloss": "be dim; (ithpeel) become dim; (pael) make dim",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: ithpeel “become dim” (Targ. Eccl 12:2, of the lights darkened in old age), pael “make dim” (Targ. Isa 6:10, of the eyes); and of coals that have “grown dim”, ceased to flame. Aramaic ע does not show whether ʿ or ġ stands behind it.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲמַם I (P00904)"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עָמַם (P00903)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000083 ġmm [dark] V, ARM022632 ʿMM [dull] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-maa",
+      "lang": "ar",
+      "form": "مَعَ",
+      "translit": "maʿa",
+      "gloss": "with, denoting concomitance",
+      "relation": "possible",
+      "note": "Arabic has no ʿam “with”; its “with” is maʿa, the same two consonants in the other order. Recorded as possible: that the two are one word with the letters exchanged is argued, not shown.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3022, مَعَ (n43645)"
+        }
+      ]
+    },
+    {
+      "id": "akk-ammu",
+      "lang": "akk",
+      "form": "ammu",
+      "translit": "ammu",
+      "gloss": "people",
+      "relation": "possible",
+      "note": "Late (Neo-Babylonian) and rare, fourteen attestations; it may be a word borrowed from Aramaic עַמָּא rather than an inherited Akkadian cognate, so it is recorded as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000085920, ammu [people] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "gathered-to-his-people",
+      "statement": "Abraham “breathed his last and died … and was gathered to his עַמִּים, and his sons buried him” in the cave of Machpelah, where none of his fathers lay, only Sarah (Gen 25:8–10; 23:19); Ishmael, Isaac, Jacob, Aaron and Moses are each “gathered to his peoples” as they die (Gen 25:17; 35:29; 49:33; Num 20:24–26; Deu 32:50). Jacob explains the words himself: “I am being gathered to my עַם; bury me with my fathers” (Gen 49:29); a whole generation “were gathered to their fathers” (Jdg 2:10); and Josiah is told, “I will gather you to your fathers, and you shall be gathered to your grave in peace” (2Ki 22:20). Hebrews says of the same fathers that “these all died in faith, not having received the promises”, and that they will not be made perfect apart from us (Heb 11:13, 39–40). From the verses: to be gathered to one’s peoples is to die and lie with one’s kin in the grave; the verses describe no passage of the living person to them, and the fathers still wait for the promise.",
+      "evidence": [
+        {
+          "ref": "Gen.25.8",
+          "to": "Gen.25.10"
+        },
+        {
+          "ref": "Gen.23.19"
+        },
+        {
+          "ref": "Gen.25.17"
+        },
+        {
+          "ref": "Gen.35.29"
+        },
+        {
+          "ref": "Gen.49.29"
+        },
+        {
+          "ref": "Gen.49.33"
+        },
+        {
+          "ref": "Num.20.24",
+          "to": "Num.20.26"
+        },
+        {
+          "ref": "Deu.32.50"
+        },
+        {
+          "ref": "Jdg.2.10"
+        },
+        {
+          "ref": "2Ki.22.20"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Heb.11.39",
+          "to": "Heb.11.40"
+        }
+      ]
+    },
+    {
+      "topic": "people-for-his-name",
+      "statement": "Yahweh took Israel “to me for a עַם” out of Egypt, chose it “to be a עַם סְגֻלָּה out of all the peoples”, and made the covenant words “I will be your God and you shall be my עַם” (Exo 6:7; Deu 7:6; Lev 26:12). For their unfaithfulness he named Hosea’s son “not my עַם”, yet promised that where it was said “you are not my עַם” it would be said “sons of the living God”, and “I will say to Not-my-people, You are my עַם” (Hos 1:9; 2:1, 25); in Moses’ song he would provoke Israel to jealousy “with a not-people” (Deu 32:21), and the nations are called to rejoice with his people (Deu 32:43). The apostles read these of the calling of the Gentiles: Paul quotes Hosea of “us, whom he called, not of the Jews only but also of the Gentiles” (Rom 9:24–26), and Deu 32:21 and 32:43 of the nations brought in (Rom 10:19; 15:10); James says God “visited the Gentiles to take out of them a λαός for his name” (Act 15:14); Peter calls believers “a λαὸς εἰς περιποίησιν … who once were not a λαός but are now the λαός of God” (1Pe 2:9–10); Paul applies Lev 26:12 to them (2Co 6:16), Hebrews Jer 31:33 (Heb 8:10), and Revelation Ezk 37:27 to the new Jerusalem, “they shall be his λαοί, and God himself shall be with them” (Rev 21:3). From the verses: the people of God is the people Yahweh takes for himself under his covenant; Israel was that people, and through Christ Gentiles who were “not a people” are taken into it together with his people, to be his people in the age to come.",
+      "evidence": [
+        {
+          "ref": "Exo.6.7"
+        },
+        {
+          "ref": "Deu.7.6"
+        },
+        {
+          "ref": "Lev.26.12"
+        },
+        {
+          "ref": "Hos.1.9"
+        },
+        {
+          "ref": "Hos.2.1"
+        },
+        {
+          "ref": "Hos.2.25"
+        },
+        {
+          "ref": "Deu.32.21"
+        },
+        {
+          "ref": "Deu.32.43"
+        },
+        {
+          "ref": "Rom.9.24",
+          "to": "Rom.9.26"
+        },
+        {
+          "ref": "Rom.10.19"
+        },
+        {
+          "ref": "Rom.15.10"
+        },
+        {
+          "ref": "Act.15.14"
+        },
+        {
+          "ref": "1Pe.2.9",
+          "to": "1Pe.2.10"
+        },
+        {
+          "ref": "2Co.6.16"
+        },
+        {
+          "ref": "Heb.8.10"
+        },
+        {
+          "ref": "Ezk.37.27"
+        },
+        {
+          "ref": "Rev.21.3"
+        }
+      ]
+    },
+    {
+      "topic": "god-with-us",
+      "statement": "“I will be עִמָּךְ” is Yahweh’s word to the men he sends: to Moses with the sign of the mountain (Exo 3:12), to Jacob (Gen 28:15), to Joshua, “as I was עִם Moses, so I will be עִמָּךְ” (Jos 1:5); his angel greets Gideon, “Yahweh is עִמְּךָ” (Jdg 6:12), and the people confess, “Yahweh of armies is עִמָּנוּ” (Psa 46:8). The sign-child’s name עִמָּנוּ אֵל is a sentence, “with us is God” (Isa 7:14), and Isaiah turns it into Judah’s confidence against the nations’ counsel, “for עִמָּנוּ אֵל” (Isa 8:10). Matthew gives the name to Jesus and translates it, “God with us” (Mat 1:23); Gabriel greets Mary with Gideon’s words, “the Lord is with you” (Luk 1:28); Nicodemus says no one can do Jesus’ signs “unless God is with him” (Jhn 3:2), and Peter that God anointed him with holy spirit and power and he went about doing good, “for God was with him” (Act 10:38); the risen Jesus tells his disciples, “I am with you all the days” (Mat 28:20). From the verses: the name proclaims God present with his people in this son, in the same words the Hebrew uses for Yahweh’s presence with Moses, Joshua and Gideon; and the son, raised, gives his own the same promise.",
+      "evidence": [
+        {
+          "ref": "Exo.3.12"
+        },
+        {
+          "ref": "Gen.28.15"
+        },
+        {
+          "ref": "Jos.1.5"
+        },
+        {
+          "ref": "Jdg.6.12"
+        },
+        {
+          "ref": "Psa.46.8"
+        },
+        {
+          "ref": "Isa.7.14"
+        },
+        {
+          "ref": "Isa.8.10"
+        },
+        {
+          "ref": "Mat.1.23"
+        },
+        {
+          "ref": "Luk.1.28"
+        },
+        {
+          "ref": "Jhn.3.2"
+        },
+        {
+          "ref": "Act.10.38"
+        },
+        {
+          "ref": "Mat.28.20"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Daniel’s Aramaic says the God of heaven will set up a kingdom that shall never be destroyed and “shall not be left to another עַם”; it breaks the kingdoms of men and stands for ever (Dan 2:44). The one like a son of man comes “עִם the clouds of heaven” and is given dominion, glory and a kingdom, that “all the peoples, nations and languages should serve him” (Dan 7:13–14); and “the kingdom and the dominion and the greatness of the kingdoms under the whole heaven” is given “to the עַם of the saints of the Most High” (Dan 7:27). Jesus took the coming with the clouds of heaven to himself before the high priest (Mrk 14:62), and the song of Revelation says he redeemed men to God “out of every tribe and tongue and λαός and nation”, made them kings and priests, “and we shall reign on the earth” (Rev 5:9–10). From the verses: the kingdom is a dominion under the whole heaven, on the earth, given to the son of man and to one people, the saints, gathered out of all the peoples.",
+      "evidence": [
+        {
+          "ref": "Dan.2.44"
+        },
+        {
+          "ref": "Dan.7.13",
+          "to": "Dan.7.14"
+        },
+        {
+          "ref": "Dan.7.27"
+        },
+        {
+          "ref": "Mrk.14.62"
+        },
+        {
+          "ref": "Rev.5.9",
+          "to": "Rev.5.10"
+        }
+      ]
+    }
+  ],
+  "note": "Root key עממ as the database keys the noun and the verb; BDB files the preposition עִם (p.dj.aa), מֵעִם (p.dj.ab, root key מעמ) and the kinsman עַם (p.dj.ad) in a section with no root key, and the Aramaic words under עמ (xp.ag.ag, xp.ah.aa). p.dj.ad, “kinsman”, covers the same tokens as p.di.ab and is left unnamed so they are not counted twice; its sense is am-kin here. The cross-reference keys p.dk.ac (עִמָּנוּאֵל), p.dg.ac (עַמִּיאֵל) and the names p.dj.ac Immanuel, p.dj.ag–ah Ammon/Ammonite, p.dj.ai Ammiel, p.dj.aj Ammihud, p.dj.ak Ammizabad, p.dj.am Amminadab, p.dj.an Ammishaddai are left for name entries; Ben-ammi, Lo-ammi (Hosea’s son) and the names in -ʿam (Eliam, Jeroboam, Rehoboam, Jashobeam…) likewise. עָמִית “fellow” (p.dg.ab) and עֻמָּה / לְעֻמַּת “alongside” (p.dj.ae) are filed under עמה in the database and are not taken here, though they look like the same ʿmm “together” (Lev 19:15–17 has עָמִית beside עַם); a reviewer may want them moved in. The link of עִם to עַם is argued from Sabaean, Ugaritic and Arabic, not shown by a verse; the verb עָמַם is a separate older root (ġ), kept here because it shares the spelling. Deu 32:43 עַמּוֹ is read by the Septuagint and Rom 15:10 as “with (μετά) his people”, the Peshitta “עַם עַמֵּהּ”: a reading of the line, not evidence for the root link. Egyptian ꜥꜣm “Asiatic” (TLA 35400) has been compared with עַם but would be a borrowing into Egyptian, outside this schema; not recorded. Still to consult: Payne Smith for Syriac ʿammā/ʿam; DULAT for Ugaritic ʿm; Ge’ez ʿamm (Leslau) not checked."
+}
