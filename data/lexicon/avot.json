@@ -1,0 +1,432 @@
+{
+  "id": "avot",
+  "root": "עבת",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "binding",
+    "craft",
+    "trees",
+    "feasts",
+    "tabernacle"
+  ],
+  "gloss": "twist, intertwine; twisted cord, rope; dense, leafy (of trees)",
+  "summary": "The root is twisting strands together. Its noun עֲבֹת is a twisted cord or rope: the new ropes that bound Samson (Jdg 15:13), the harness rope of an ox (Job 39:10), the gold cord-work chains of the high priest’s breastpiece (Exo 28:14), and in figure the cords Yahweh draws Israel with, “cords of love” (Hos 11:4), and the cords the rulers would cast off (Psa 2:3). The adjective עָבֹת describes a tree thick with interlaced boughs, whose branches Israel took at the feast of סֻכּוֹת to build booths (Lev 23:40; Neh 8:15); the verb, once, is the rulers and judges twisting a matter together (Mic 7:3). No cognate in the other Semitic languages has yet been found, so the root’s sense rests on scripture’s own use.",
+  "words": [
+    {
+      "lemma": "עֲבֹת",
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "twisted cord, rope; cord-work; interlaced boughs",
+      "bdb": [
+        "p.aj.ac"
+      ],
+      "summary": "A rope made of twisted strands, strong enough to bind a man or harness an ox; the plural is both עֲבֹתִים and עֲבֹתוֹת. In Exodus it is the twisted work of the breastpiece’s gold chains. In Ezekiel’s parables of the vine and the cedar, a tree’s top rises “among the עֲבֹתִים”: most likely its own interlaced boughs, as the adjective is of leafy trees, though the sense there is not certain.",
+      "senses": [
+        {
+          "id": "avot-rope",
+          "gloss": "rope, cord (for binding)",
+          "definition": "A rope used to tie a man fast, set beside the verb אָסַר “bind”; new ones are the strongest.",
+          "evidence": [
+            {
+              "ref": "Jdg.15.13",
+              "role": "defining",
+              "note": "“They bound (וַיַּאַסְרֻהוּ) him with two new עֲבֹתִים and brought him up from the rock.”"
+            },
+            {
+              "ref": "Jdg.15.14",
+              "role": "defining",
+              "note": "The עֲבֹתִים on his arms became like flax burnt with fire, and his bonds (אֱסוּרָיו) melted from his hands."
+            },
+            {
+              "ref": "Jdg.16.11",
+              "note": "“If they bind me fast with new עֲבֹתִים that have never been worked with, I will become weak.”"
+            },
+            {
+              "ref": "Jdg.16.12",
+              "note": "Delilah binds him with them, and he snaps them from his arms like a thread."
+            },
+            {
+              "ref": "Ezk.3.25",
+              "role": "defining",
+              "note": "“They will put עֲבוֹתִים on you and bind you with them, and you will not go out among them.”"
+            },
+            {
+              "ref": "Ezk.4.8",
+              "note": "Yahweh lays עֲבוֹתִים on the prophet so that he cannot turn from side to side until the days of the siege are complete."
+            },
+            {
+              "ref": "Psa.118.27",
+              "note": "“Bind the feast-offering (חַג) with עֲבֹתִים, up to the horns of the altar”: ropes tying the sacrifice."
+            }
+          ]
+        },
+        {
+          "id": "avot-harness",
+          "gloss": "draught rope, harness",
+          "definition": "The rope that yokes a beast to a plough or cart, by which it is led and draws its load.",
+          "evidence": [
+            {
+              "ref": "Job.39.10",
+              "role": "defining",
+              "note": "“Can you bind the wild ox in the furrow with his עֲבֹת?”: the plough rope, with קָשַׁר “bind”."
+            },
+            {
+              "ref": "Isa.5.18",
+              "role": "defining",
+              "note": "“Woe to those who drag iniquity with cords (חַבְלֵי) of falsehood, and sin as with the עֲבוֹת of a cart.”"
+            },
+            {
+              "ref": "Psa.129.4",
+              "note": "After “the ploughers ploughed on my back” (Psa 129:3), “Yahweh is righteous; he has cut the עֲבוֹת of the wicked”: the plough team’s harness cut loose."
+            },
+            {
+              "ref": "Hos.11.4",
+              "role": "defining",
+              "note": "“With cords (חַבְלֵי) of a man I drew them, with עֲבֹתוֹת of love, and I was to them as those who lift the yoke off their jaws.”"
+            }
+          ]
+        },
+        {
+          "id": "avot-bonds",
+          "gloss": "bonds (of rule)",
+          "definition": "In figure, the ties by which a ruler holds those under him; the rebel’s wish is to throw them off.",
+          "evidence": [
+            {
+              "ref": "Psa.2.3",
+              "role": "defining",
+              "note": "The kings and rulers against Yahweh and his anointed: “Let us tear off their bonds (מוֹסְרוֹתֵימוֹ) and cast their עֲבֹתִים from us.”"
+            },
+            {
+              "ref": "Hos.11.4",
+              "note": "The bonds Yahweh draws Israel by are of love, not force."
+            },
+            {
+              "ref": "Psa.129.4",
+              "note": "Yahweh cuts the bonds the wicked held Israel in."
+            }
+          ]
+        },
+        {
+          "id": "avot-cordwork",
+          "gloss": "twisted cord-work (of gold)",
+          "definition": "Gold worked as twisted cord: the chains that tie the breastpiece to the ephod’s shoulder settings are “the work of עֲבֹת”, and in the plural the cords themselves.",
+          "evidence": [
+            {
+              "ref": "Exo.28.14",
+              "role": "defining",
+              "note": "“Two chains of pure gold … you shall make them the work of עֲבֹת, and put the chains of עֲבֹתֹת on the settings.”"
+            },
+            {
+              "ref": "Exo.28.22",
+              "role": "defining",
+              "note": "Chains on the breastpiece, twisted (גַּבְלֻת), the work of עֲבֹת, of pure gold."
+            },
+            {
+              "ref": "Exo.28.24",
+              "note": "The two עֲבֹתֹת of gold are put through the two rings at the breastpiece’s ends."
+            },
+            {
+              "ref": "Exo.28.25"
+            },
+            {
+              "ref": "Exo.39.15",
+              "note": "The work done as commanded."
+            },
+            {
+              "ref": "Exo.39.17"
+            },
+            {
+              "ref": "Exo.39.18"
+            }
+          ]
+        },
+        {
+          "id": "avot-boughs",
+          "gloss": "interlaced boughs, thick foliage (uncertain)",
+          "definition": "Always in the phrase בֵּין עֲבֹתִים, where a tall tree’s top is: the dense, intertwined boughs of the tree or forest canopy. The word is the same as the rope, and the adjective עָבֹת is of trees thick with boughs; but the phrase is about height, and it could be the clouds (עָבִים) a tree’s top rises among, so the sense is not certain.",
+          "evidence": [
+            {
+              "ref": "Ezk.31.3",
+              "role": "defining",
+              "note": "Assyria a cedar in Lebanon, “fair of boughs (עָנָף), a shading thicket, high of stature, and its top was בֵּין עֲבֹתִים”."
+            },
+            {
+              "ref": "Ezk.31.10",
+              "note": "“Because it set its top בֵּין עֲבוֹתִים, and its heart was lifted up in its height.”"
+            },
+            {
+              "ref": "Ezk.31.14",
+              "note": "No well-watered tree is again to set its top בֵּין עֲבֹתִים: all are given to death."
+            },
+            {
+              "ref": "Ezk.19.11",
+              "note": "The vine’s strong rod: “its stature rose up בֵּין עֲבֹתִים, and it was seen in its height with the multitude of its branches (דָּלִיֹּתָיו).”"
+            }
+          ],
+          "kin": [
+            "avot-leafy"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δεσμός",
+          "gloss": "bond, fetter",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "עֲבֹת → δεσμός ×3: Ezk.3.25; Ezk.4.8; Hos.11.4"
+            },
+            {
+              "ref": "Luk.13.16",
+              "note": "The daughter of Abraham whom the adversary had bound eighteen years was to be “loosed from this δεσμός” on the sabbath."
+            },
+            {
+              "ref": "Mrk.7.35",
+              "note": "“The δεσμός of his tongue was loosed.”"
+            },
+            {
+              "ref": "Act.16.26",
+              "note": "At the earthquake in Philippi “everyone’s δεσμά were loosed”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חֶבֶל",
+            "note": "“Cord, rope”: set beside עֲבֹת in the same line, the cords of falsehood and the cart rope, the cords of a man and the cords of love.",
+            "evidence": [
+              {
+                "ref": "Isa.5.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.11.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מוֹסֵרָה",
+            "note": "“Bond, fetter”: “let us tear off their מוֹסְרוֹת and cast their עֲבֹתִים from us.”",
+            "evidence": [
+              {
+                "ref": "Psa.2.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שַׁרְשְׁרָה",
+            "note": "“Chain”: the breastpiece’s chains are made as עֲבֹת work.",
+            "evidence": [
+              {
+                "ref": "Exo.28.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.39.15"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מַעֲשֵׂה עֲבֹת",
+            "gloss": "the work of twisted cord, cord-work",
+            "evidence": [
+              {
+                "ref": "Exo.28.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.28.22"
+              },
+              {
+                "ref": "Exo.39.15"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲבֹתוֹת אַהֲבָה",
+            "gloss": "cords of love",
+            "evidence": [
+              {
+                "ref": "Hos.11.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּין עֲבֹתִים",
+            "gloss": "among the interlaced boughs (where a tall tree’s top is)",
+            "evidence": [
+              {
+                "ref": "Ezk.31.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.31.10"
+              },
+              {
+                "ref": "Ezk.31.14"
+              },
+              {
+                "ref": "Ezk.19.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָבֹת",
+      "pos": "adjective",
+      "gloss": "dense with boughs, leafy",
+      "bdb": [
+        "p.aj.ab"
+      ],
+      "summary": "Always of a tree (עֵץ, or the terebinth אֵלָה): one whose boughs are thick and interlaced. Its tie to the root’s “twist” is through the interweaving of the branches, which the noun’s use in Ezekiel’s trees supports; no cognate confirms it, and some connect it with עָבָה “be thick” instead.",
+      "senses": [
+        {
+          "id": "avot-leafy",
+          "gloss": "dense with boughs, leafy (of a tree)",
+          "definition": "A tree thick with branches and leaves: a kind of tree distinct from the olive, myrtle and palm, whose boughs serve to make booths, and which gives the deep shade where idols were served.",
+          "evidence": [
+            {
+              "ref": "Lev.23.40",
+              "role": "defining",
+              "note": "At the feast of the seventh month: “the fruit of goodly trees, fronds of palms, and boughs (עֲנַף) of עֵץ עָבֹת, and willows of the brook”, to rejoice before Yahweh seven days."
+            },
+            {
+              "ref": "Neh.8.15",
+              "role": "defining",
+              "note": "“Bring olive leaves, oil-tree leaves, myrtle leaves, palm leaves and leaves of עֵץ עָבֹת, to make booths, as it is written”: the command of Lev 23:40 read as branches for the booths of Lev 23:42, and the עָבֹת tree a kind set apart from the others named."
+            },
+            {
+              "ref": "Ezk.6.13",
+              "role": "defining",
+              "note": "“Under every green (רַעֲנָן) tree and under every עֲבֻתָּה terebinth”, where they offered sweet savour to their idols."
+            },
+            {
+              "ref": "Ezk.20.28",
+              "note": "In the land “they saw every high hill and every עֵץ עָבֹת, and they sacrificed there their sacrifices”."
+            }
+          ],
+          "kin": [
+            "avot-boughs"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רַעֲנָן",
+            "note": "“Green, luxuriant”: “under every רַעֲנָן tree and under every עֲבֻתָּה terebinth”, the places of idol worship.",
+            "evidence": [
+              {
+                "ref": "Ezk.6.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עֵץ עָבֹת",
+            "gloss": "a leafy, dense-boughed tree",
+            "evidence": [
+              {
+                "ref": "Lev.23.40",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.8.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.20.28"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָבַת",
+      "pos": "verb",
+      "gloss": "twist together",
+      "bdb": [
+        "p.aj.aa"
+      ],
+      "summary": "Once, in the piel: the ruler, the judge and the great man twist the matter together between them. The verb is the action the noun עֲבֹת names, the twisting of strands into a cord.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "twist together, weave (a scheme)",
+          "senses": [
+            {
+              "id": "avot-twist",
+              "gloss": "twist together (a matter, in collusion)",
+              "definition": "Of men in power, each doing his part for a bribe so that their aims are wound into one: to plait a wrong together.",
+              "evidence": [
+                {
+                  "ref": "Mic.7.3",
+                  "role": "defining",
+                  "note": "“The ruler asks, and the judge for a reward, and the great man speaks the desire of his soul: and they twist it together (וַיְעַבְּתוּהָ).”"
+                }
+              ],
+              "kin": [
+                "avot-cordwork"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [
+    {
+      "topic": "anointed-king",
+      "statement": "In Psalm 2 the kings of the earth and the rulers take counsel “against Yahweh and against his anointed”, and their word is “let us tear off their bonds and cast their עֲבֹתִים from us” (Psa 2:2–3): Yahweh’s rule through his anointed is felt by them as ropes. Yahweh answers that he has set his king on Zion and will give him the nations (Psa 2:6–8). The apostles, praying together, read the psalm of Herod, Pontius Pilate, the nations and the peoples of Israel gathered “against your holy servant Jesus, whom you anointed” (Act 4:25–27). From the verses: the anointed of Psalm 2 is Jesus, and to refuse him is to refuse the rule of Yahweh himself, whose bonds the rebels would throw off.",
+      "evidence": [
+        {
+          "ref": "Psa.2.2",
+          "to": "Psa.2.3"
+        },
+        {
+          "ref": "Psa.2.6",
+          "to": "Psa.2.8"
+        },
+        {
+          "ref": "Act.4.25",
+          "to": "Act.4.27"
+        }
+      ]
+    },
+    {
+      "topic": "drawn-by-love",
+      "statement": "Yahweh says of Israel, “I drew them with cords of a man, with עֲבֹתוֹת of love”, and he eased the yoke from their jaws and fed them (Hos 11:4); so in Jeremiah, “with lovingkindness I have drawn you” (Jer 31:3). The sinner too is roped to something, but drags his own iniquity “as with the עֲבוֹת of a cart” (Isa 5:18). Jesus says, “No one can come to me unless the Father who sent me draws him”, and gives the means: “It is written in the prophets, they shall all be taught of God” (Joh 6:44–45). From the verses: God binds his people to himself with cords suited to a man, his love and his teaching, not with the force of a beast’s harness, and the alternative is not freedom but being bound to one’s own sin.",
+      "evidence": [
+        {
+          "ref": "Hos.11.4"
+        },
+        {
+          "ref": "Jer.31.3"
+        },
+        {
+          "ref": "Isa.5.18"
+        },
+        {
+          "ref": "Jhn.6.44",
+          "to": "Jhn.6.45"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Lev 23 (עָבֹת, 23:40) and Num 10 (the task named עֲבֹת “cord” as well; it does not occur in Num 10). The database keys the root עבת, as the task gave it. BDB key p.ad.ad (עָבוֹת, “see עבת”, filed under עבה) is a cross-reference with no tokens and is not claimed. Cognates: none found. Lane has no عبت or غبت (Arabic عبث is ʿbṯ, which answers to Hebrew עבש, not עבת); Wiktionary, Oracc (Akkadian bt candidates: bītu, abātu, none fitting), SEDRA (Syriac NT), the Proto-Semitic list and the local Ugaritic, Phoenician and Sabaic scans give nothing for ʿbt. Not yet consulted: CAL and Payne Smith for a Jewish Aramaic or Syriac ʿbt. Jastrow has only later Hebrew: עָבוֹת “network, matting” of a tree “whose branches cover its trunk” (Sifra Emor, b. Sukk. 32b, on Lev 23:40) and עֲבוֹת “chain, rope fastening the yoke to the plough” (m. Kelim 21:2): Hebrew, not a cognate, so not entered; it agrees with the senses here. Some derive the adjective from עבה “be thick”; the Ezekiel phrase בֵּין עֲבֹתִים is read by the Septuagint as “clouds” (νεφελῶν, Ezk 31:3, 10, 14) and in Psa 118:27 עֲבֹתִים as leafy boughs (πυκάζουσιν), but the verb אִסְרוּ there fixes ropes. Septuagint renderings of the adjective (δασύς Neh 8:15, κατάσκιος Ezk 20:28) are not in the New Testament and are not entered."
+}
