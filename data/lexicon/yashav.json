@@ -1,0 +1,2267 @@
+{
+  "id": "yashav",
+  "root": "ישב",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "dwelling",
+    "land",
+    "throne",
+    "kingdom",
+    "sojourning",
+    "feasts"
+  ],
+  "gloss": "sit; remain; dwell, inhabit; a seat, a dwelling; a settler",
+  "summary": "The verb is to sit down and so to stay where one sits: to sit on a seat, a throne or the ground, to remain in a place, and to live there, so that its participle יֹשֵׁב is an inhabitant and a land or city “sits” when it is inhabited. Yahweh “sits” enthroned in the heavens and on the cherubim (Psa 2:4; 1Sa 4:4), and the king of David’s line sits on his throne (Psa 132:12); Israel is to dwell securely in the land, and in the feast of סֻכּוֹת to dwell in booths, because Yahweh made them dwell so when he brought them out of Egypt (Lev 23:42–43). מוֹשָׁב is a seat and a dwelling, and “in all your dwellings” makes a law binding wherever Israel lives (Lev 23:3, 14, 21, 31); תּוֹשָׁב is a settler living among a people not his own, and Israel are such with Yahweh, whose land it is (Lev 25:23). Akkadian wašābu, Ugaritic yṯb, Phoenician yšb, Sabaean and Himyarite wṯb and Aramaic יְתֵב share the sense “sit, dwell”.",
+  "words": [
+    {
+      "lemma": "יָשַׁב",
+      "pos": "verb",
+      "gloss": "sit; remain; dwell, inhabit; (hiphil) seat, settle",
+      "bdb": [
+        "j.ds.aa"
+      ],
+      "cognate_ids": [
+        "akk-washabu",
+        "uga-ytb",
+        "phn-yshb",
+        "ar-wathaba",
+        "sab-wthb",
+        "arc-yetib"
+      ],
+      "summary": "One of scripture’s commonest verbs, over a thousand times in the qal. The posture of sitting runs through every use: to sit down, to stay sitting, and so to stay and to live in a place; the causative seats someone or settles a people.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sit; sit enthroned; remain; dwell; be inhabited",
+          "senses": [
+            {
+              "id": "sit",
+              "gloss": "sit, sit down",
+              "definition": "Take or keep a sitting posture, the opposite of rising and standing: at a door, on a seat, on the ground, to eat or to talk.",
+              "evidence": [
+                {
+                  "ref": "Psa.139.2",
+                  "role": "defining",
+                  "note": "“You know שִׁבְתִּי וְקוּמִי, my sitting down and my rising up”: set against קוּם."
+                },
+                {
+                  "ref": "Deu.6.7",
+                  "role": "defining",
+                  "note": "Speak of the words “when you sit (בְּשִׁבְתְּךָ) in your house and when you walk by the way, when you lie down and when you rise up”."
+                },
+                {
+                  "ref": "Exo.18.13",
+                  "role": "defining",
+                  "note": "Moses sat to judge the people, and the people stood (וַיַּעֲמֹד) about him from morning to evening."
+                },
+                {
+                  "ref": "Gen.18.1",
+                  "note": "Abraham “sitting at the door of the tent in the heat of the day”."
+                },
+                {
+                  "ref": "1Sa.1.9",
+                  "note": "Eli the priest sitting on the seat by the doorpost of Yahweh’s temple."
+                },
+                {
+                  "ref": "Exo.32.6",
+                  "note": "“The people sat down to eat and to drink, and rose up to play”, quoted at 1Co 10:7."
+                },
+                {
+                  "ref": "Rut.4.1",
+                  "role": "defining",
+                  "note": "Boaz to the near kinsman, “Turn aside, sit down here (שְׁבָה־פֹּה)”, and he turned aside and sat down."
+                },
+                {
+                  "ref": "Rut.4.2",
+                  "note": "Ten elders of the city: “Sit down here”, and they sat."
+                },
+                {
+                  "ref": "2Ki.4.20",
+                  "note": "The Shunammite’s son sat on her knees till noon, and died."
+                },
+                {
+                  "ref": "Psa.1.1",
+                  "note": "Walks not … stands not … sits not in the seat (מוֹשַׁב) of scoffers: walking, standing, sitting."
+                }
+              ],
+              "senses": [
+                {
+                  "id": "sit-mourning",
+                  "gloss": "sit (on the ground, in the dust) in mourning",
+                  "definition": "Sit down on the ground in grief or humiliation, and stay there.",
+                  "evidence": [
+                    {
+                      "ref": "Job.2.13",
+                      "role": "defining",
+                      "note": "His friends sat with him on the ground seven days and seven nights, and none spoke a word to him."
+                    },
+                    {
+                      "ref": "Job.2.8",
+                      "note": "Job sat among the ashes."
+                    },
+                    {
+                      "ref": "Psa.137.1",
+                      "role": "defining",
+                      "note": "“By the rivers of Babylon, there we sat down, and wept.”"
+                    },
+                    {
+                      "ref": "Isa.47.1",
+                      "note": "“Come down and sit in the dust, virgin daughter of Babylon; sit on the ground without a throne.”"
+                    },
+                    {
+                      "ref": "Lam.2.10",
+                      "note": "The elders of the daughter of Zion sit on the ground and keep silence."
+                    },
+                    {
+                      "ref": "Ezr.9.3",
+                      "note": "Ezra sat appalled until the evening offering."
+                    },
+                    {
+                      "ref": "Neh.1.4"
+                    }
+                  ]
+                },
+                {
+                  "id": "lie-in-wait",
+                  "gloss": "sit in ambush, lie in wait",
+                  "definition": "Sit hidden and keep still to fall on someone.",
+                  "evidence": [
+                    {
+                      "ref": "Psa.10.8",
+                      "role": "defining",
+                      "note": "The wicked “sits in the ambush (בְּמַאְרַב) of the villages”, to murder the innocent."
+                    },
+                    {
+                      "ref": "Jos.8.9",
+                      "note": "The ambush went and sat between Bethel and Ai."
+                    },
+                    {
+                      "ref": "Jdg.16.9",
+                      "note": "“The ambush was sitting for her in the inner room.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sit-judge",
+              "gloss": "sit to judge, sit in judgment",
+              "definition": "Sit as judge or as the elders of a court sit, to hear and decide.",
+              "evidence": [
+                {
+                  "ref": "Exo.18.14",
+                  "role": "defining",
+                  "note": "Jethro: “Why do you sit alone, and all the people stand by you?”"
+                },
+                {
+                  "ref": "Pro.20.8",
+                  "role": "defining",
+                  "note": "“A king who sits on the throne of judgment scatters away all evil with his eyes.”"
+                },
+                {
+                  "ref": "Jdg.4.5",
+                  "note": "Deborah sat under the palm of Deborah, and Israel came up to her for judgment."
+                },
+                {
+                  "ref": "Psa.122.5",
+                  "role": "defining",
+                  "note": "“For there thrones sat (יָשְׁבוּ) for judgment, thrones of the house of David.”"
+                },
+                {
+                  "ref": "Psa.9.5",
+                  "note": "“You sat on the throne, judging righteously.”"
+                }
+              ]
+            },
+            {
+              "id": "sit-throne",
+              "gloss": "sit on the throne, reign",
+              "definition": "Sit on a king’s throne, that is, take the kingdom and reign.",
+              "evidence": [
+                {
+                  "ref": "1Ki.1.13",
+                  "role": "defining",
+                  "note": "“Solomon your son shall reign after me, and he shall sit on my throne”: sitting is reigning."
+                },
+                {
+                  "ref": "1Ki.1.46",
+                  "note": "“Solomon sits on the throne of the kingdom.”"
+                },
+                {
+                  "ref": "1Ki.2.12",
+                  "note": "Solomon sat on the throne of David his father, and his kingdom was firmly established."
+                },
+                {
+                  "ref": "Psa.132.12",
+                  "role": "defining",
+                  "note": "“If your sons keep my covenant … their sons also forever shall sit on your throne.”"
+                },
+                {
+                  "ref": "Jer.22.30",
+                  "note": "Of Coniah: none of his seed shall prosper, “sitting on the throne of David and ruling again in Judah”."
+                },
+                {
+                  "ref": "Jer.33.17",
+                  "note": "“David shall never lack a man sitting on the throne of the house of Israel.”"
+                },
+                {
+                  "ref": "Zec.6.13",
+                  "role": "defining",
+                  "note": "The Branch “shall sit and rule on his throne, and he shall be a priest on his throne”."
+                },
+                {
+                  "ref": "Psa.110.1",
+                  "role": "defining",
+                  "note": "“Yahweh says to my lord, Sit (שֵׁב) at my right hand, until I make your enemies your footstool”: quoted at Mat 22:44, Act 2:34–35 and Heb 1:13."
+                }
+              ]
+            },
+            {
+              "id": "yahweh-enthroned",
+              "gloss": "sit enthroned (of Yahweh)",
+              "definition": "Of Yahweh, sit as king on his throne in the heavens, above the cherubim, and over the earth.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.4",
+                  "role": "defining",
+                  "note": "“He who sits in the heavens laughs; Adonai mocks them.”"
+                },
+                {
+                  "ref": "Psa.29.10",
+                  "role": "defining",
+                  "note": "“Yahweh sat (enthroned) at the flood; Yahweh sits as king forever.”"
+                },
+                {
+                  "ref": "1Sa.4.4",
+                  "role": "defining",
+                  "note": "The ark of the covenant of Yahweh of hosts, “who sits on the cherubim” (יֹשֵׁב הַכְּרֻבִים)."
+                },
+                {
+                  "ref": "Isa.6.1",
+                  "note": "Isaiah saw Adonai “sitting on a throne, high and lifted up”."
+                },
+                {
+                  "ref": "Isa.40.22",
+                  "note": "“He who sits above the circle of the earth, and its inhabitants are as grasshoppers.”"
+                },
+                {
+                  "ref": "Psa.9.8",
+                  "note": "“Yahweh sits forever; he has prepared his throne for judgment.”"
+                },
+                {
+                  "ref": "Psa.102.13"
+                },
+                {
+                  "ref": "Psa.113.5",
+                  "note": "“Who is like Yahweh our God, who sits on high?”"
+                },
+                {
+                  "ref": "Lam.5.19",
+                  "note": "“You, Yahweh, sit (enthroned) forever; your throne is from generation to generation.”"
+                },
+                {
+                  "ref": "Psa.80.2"
+                },
+                {
+                  "ref": "Psa.99.1"
+                }
+              ]
+            },
+            {
+              "id": "remain",
+              "gloss": "remain, stay, wait",
+              "definition": "Stay where one is for a time, not going on: wait, tarry, remain in a condition.",
+              "evidence": [
+                {
+                  "ref": "Exo.24.14",
+                  "role": "defining",
+                  "note": "Moses to the elders: “Wait (שְׁבוּ) here for us until we return to you.”"
+                },
+                {
+                  "ref": "Gen.24.55",
+                  "role": "defining",
+                  "note": "“Let the girl stay with us some days, at least ten; after that she may go.”"
+                },
+                {
+                  "ref": "Gen.38.11",
+                  "note": "“Remain a widow in your father’s house, until Shelah my son is grown.”"
+                },
+                {
+                  "ref": "Deu.1.46",
+                  "note": "“You remained in Kadesh many days, as the days that you remained.”"
+                },
+                {
+                  "ref": "Lev.8.35",
+                  "note": "At the door of the tent of meeting you shall stay day and night seven days."
+                },
+                {
+                  "ref": "Lev.12.4",
+                  "note": "She shall continue in the blood of her purifying thirty-three days."
+                },
+                {
+                  "ref": "2Ki.7.3",
+                  "note": "The four lepers: “Why are we sitting here until we die?”"
+                },
+                {
+                  "ref": "Hos.3.3",
+                  "role": "defining",
+                  "note": "“You shall stay (תֵּשְׁבִי) for me many days; you shall not play the harlot.”"
+                },
+                {
+                  "ref": "Hos.3.4",
+                  "note": "“The sons of Israel shall stay many days without king and without prince.”"
+                },
+                {
+                  "ref": "Jdg.5.17",
+                  "note": "Asher sat still at the shore of the sea, and did not come to the battle."
+                }
+              ]
+            },
+            {
+              "id": "dwell",
+              "gloss": "dwell, live, settle (in a place)",
+              "definition": "Live in a place, have one’s home there; settle in a land.",
+              "evidence": [
+                {
+                  "ref": "Gen.13.12",
+                  "role": "defining",
+                  "note": "“Abram dwelt in the land of Canaan, and Lot dwelt in the cities of the plain.”"
+                },
+                {
+                  "ref": "Gen.4.16",
+                  "note": "Cain dwelt in the land of Nod, east of Eden."
+                },
+                {
+                  "ref": "Gen.4.20",
+                  "note": "Jabal, father of “him who dwells in tents” (יֹשֵׁב אֹהֶל) and has livestock."
+                },
+                {
+                  "ref": "Gen.25.27",
+                  "note": "Jacob, “a whole man, dwelling in tents”."
+                },
+                {
+                  "ref": "Lev.23.42",
+                  "role": "defining",
+                  "note": "“In booths you shall dwell (תֵּשְׁבוּ) seven days; every native in Israel shall dwell in booths”: living in them for the days of the feast."
+                },
+                {
+                  "ref": "Lev.25.18",
+                  "role": "defining",
+                  "note": "Keep my statutes, “and you shall dwell in the land securely (לָבֶטַח)”."
+                },
+                {
+                  "ref": "Lev.25.19"
+                },
+                {
+                  "ref": "Lev.26.5"
+                },
+                {
+                  "ref": "Num.33.53",
+                  "note": "“You shall dispossess the land and dwell in it, for I have given you the land to possess it.”"
+                },
+                {
+                  "ref": "Deu.12.10"
+                },
+                {
+                  "ref": "2Sa.7.2",
+                  "role": "defining",
+                  "note": "“I dwell in a house of cedar, but the ark of God dwells within curtains.”"
+                },
+                {
+                  "ref": "2Sa.7.6",
+                  "note": "“I have not dwelt in a house since the day I brought up the sons of Israel from Egypt.”"
+                },
+                {
+                  "ref": "1Ki.8.27",
+                  "role": "defining",
+                  "note": "“But will God indeed dwell on the earth? The heavens and the heaven of heavens cannot contain you.”"
+                },
+                {
+                  "ref": "1Ki.8.30",
+                  "note": "“Hear in the place of your dwelling (שִׁבְתְּךָ), in the heavens.”"
+                },
+                {
+                  "ref": "Psa.23.6",
+                  "note": "“I will dwell in the house of Yahweh for length of days.”"
+                },
+                {
+                  "ref": "Psa.27.4"
+                },
+                {
+                  "ref": "Psa.133.1",
+                  "note": "“How good and how pleasant is the dwelling (שֶׁבֶת) of brothers, yes, together!”"
+                },
+                {
+                  "ref": "Jer.29.5",
+                  "note": "To the exiles: “Build houses and dwell in them.”"
+                },
+                {
+                  "ref": "Mic.4.4",
+                  "role": "defining",
+                  "note": "“They shall sit, each man under his vine and under his fig tree, and none shall make them afraid”: sitting is living in peace on one’s own land."
+                },
+                {
+                  "ref": "1Ki.5.5"
+                },
+                {
+                  "ref": "Isa.65.21",
+                  "note": "“They shall build houses and dwell in them.”"
+                },
+                {
+                  "ref": "Isa.65.22",
+                  "note": "“They shall not build and another dwell.”"
+                },
+                {
+                  "ref": "Isa.45.18",
+                  "role": "defining",
+                  "note": "Yahweh “did not create it a waste (תֹהוּ); he formed it to be dwelt in (לָשֶׁבֶת)”."
+                },
+                {
+                  "ref": "Gen.11.31"
+                }
+              ]
+            },
+            {
+              "id": "inhabitant",
+              "gloss": "(participle) one who dwells, inhabitant",
+              "definition": "The participle יֹשֵׁב, “one dwelling”, is the inhabitant of a land or city; the feminine יוֹשֶׁבֶת personifies a city’s people.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.31",
+                  "role": "defining",
+                  "note": "“I will give the inhabitants of the land (יֹשְׁבֵי הָאָרֶץ) into your hand, and you shall drive them out.”"
+                },
+                {
+                  "ref": "Num.33.52",
+                  "note": "“You shall dispossess all the inhabitants of the land from before you.”"
+                },
+                {
+                  "ref": "Isa.24.6",
+                  "role": "defining",
+                  "note": "“A curse devours the earth, and those who dwell in it are held guilty; therefore the inhabitants of the earth are burned.”"
+                },
+                {
+                  "ref": "Isa.26.9",
+                  "note": "“When your judgments are in the earth, the inhabitants of the world learn righteousness.”"
+                },
+                {
+                  "ref": "Isa.26.21"
+                },
+                {
+                  "ref": "Psa.24.1",
+                  "note": "“The earth is Yahweh’s, and its fulness, the world and those who dwell in it.”"
+                },
+                {
+                  "ref": "Isa.9.1",
+                  "note": "“Those dwelling in the land of the shadow of death, on them light has shone”: quoted at Mat 4:16."
+                },
+                {
+                  "ref": "Isa.12.6",
+                  "role": "defining",
+                  "note": "“Cry out and shout, יוֹשֶׁבֶת צִיּוֹן”: the inhabitress, Zion’s people."
+                },
+                {
+                  "ref": "Jer.21.13"
+                },
+                {
+                  "ref": "Mic.1.11"
+                }
+              ]
+            },
+            {
+              "id": "be-inhabited",
+              "gloss": "(of a land or city) be inhabited, be lived in",
+              "definition": "With a land or city as subject, “sit” is to be inhabited, to have people living in it.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.20",
+                  "role": "defining",
+                  "note": "Babylon “shall never be inhabited (לֹא־תֵשֵׁב), nor dwelt in from generation to generation”."
+                },
+                {
+                  "ref": "Jer.17.25",
+                  "role": "defining",
+                  "note": "“This city shall be inhabited forever.”"
+                },
+                {
+                  "ref": "Zec.2.8",
+                  "note": "“Jerusalem shall be inhabited as villages without walls, for the multitude of men and cattle in it.”"
+                },
+                {
+                  "ref": "Zec.14.10"
+                },
+                {
+                  "ref": "Zec.14.11",
+                  "note": "“Jerusalem shall be inhabited securely.”"
+                },
+                {
+                  "ref": "Jol.4.20",
+                  "note": "“Judah shall be inhabited forever, and Jerusalem from generation to generation.”"
+                },
+                {
+                  "ref": "Zec.9.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be inhabited",
+          "senses": [
+            {
+              "id": "inhabited-niphal",
+              "gloss": "be inhabited",
+              "definition": "Have people living in it; of a land or city, the opposite of desolate.",
+              "evidence": [
+                {
+                  "ref": "Exo.16.35",
+                  "role": "defining",
+                  "note": "Israel ate the manna forty years, “until they came to an inhabited land (אֶרֶץ נוֹשָׁבֶת)”, the border of Canaan."
+                },
+                {
+                  "ref": "Jer.6.8",
+                  "role": "defining",
+                  "note": "“Lest I make you a desolation, a land not inhabited.”"
+                },
+                {
+                  "ref": "Jer.22.6"
+                },
+                {
+                  "ref": "Ezk.12.20",
+                  "note": "“The inhabited cities shall be laid waste, and the land shall be a desolation.”"
+                },
+                {
+                  "ref": "Ezk.26.19"
+                },
+                {
+                  "ref": "Ezk.36.10",
+                  "role": "defining",
+                  "note": "“The cities shall be inhabited, and the waste places shall be built.”"
+                },
+                {
+                  "ref": "Ezk.38.12",
+                  "note": "Gog against “the waste places now inhabited”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "set (one’s camps)",
+          "senses": [
+            {
+              "gloss": "set, pitch (encampments)",
+              "definition": "Make one’s encampments settle in a land; in its one use.",
+              "evidence": [
+                {
+                  "ref": "Ezk.25.4",
+                  "role": "defining",
+                  "note": "“They shall set (וְיִשְּׁבוּ) their encampments in you, and make their dwellings in you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "seat; settle, make dwell; (with a woman) take to live with one",
+          "senses": [
+            {
+              "id": "seat",
+              "gloss": "seat, make sit",
+              "definition": "Make someone sit: put him in a seat, at the head of the people, or on a throne.",
+              "evidence": [
+                {
+                  "ref": "1Sa.2.8",
+                  "role": "defining",
+                  "note": "He raises the poor from the dust “to make them sit (לְהוֹשִׁיב) with princes, and he makes them inherit a seat of honour”."
+                },
+                {
+                  "ref": "Psa.113.8",
+                  "note": "The same words."
+                },
+                {
+                  "ref": "1Ki.21.9",
+                  "role": "defining",
+                  "note": "Jezebel’s letters: “Proclaim a fast, and seat Naboth at the head of the people.”"
+                },
+                {
+                  "ref": "1Ki.21.12"
+                },
+                {
+                  "ref": "Job.36.7",
+                  "note": "“With kings on the throne he seats them forever, and they are exalted.”"
+                },
+                {
+                  "ref": "2Ch.23.20",
+                  "note": "They set the king on the throne of the kingdom."
+                }
+              ]
+            },
+            {
+              "id": "settle",
+              "gloss": "settle, make dwell",
+              "definition": "Give a people a place to live and settle them in it.",
+              "evidence": [
+                {
+                  "ref": "Gen.47.6",
+                  "role": "defining",
+                  "note": "Pharaoh: “Settle (הוֹשֵׁב) your father and your brothers in the best of the land.”"
+                },
+                {
+                  "ref": "Gen.47.11"
+                },
+                {
+                  "ref": "Lev.23.43",
+                  "role": "defining",
+                  "note": "“That your generations may know that I made the sons of Israel dwell (הוֹשַׁבְתִּי) in booths when I brought them out of the land of Egypt.”"
+                },
+                {
+                  "ref": "Hos.12.10",
+                  "role": "defining",
+                  "note": "“I am Yahweh your God from the land of Egypt; I will yet make you dwell in tents, as in the days of the appointed feast.”"
+                },
+                {
+                  "ref": "2Ki.17.6",
+                  "note": "The king of Assyria carried Israel away and settled them in Halah and on the Habor."
+                },
+                {
+                  "ref": "2Ki.17.24",
+                  "note": "He settled men of Babylon and Cuthah in the cities of Samaria in place of the sons of Israel."
+                },
+                {
+                  "ref": "Jer.32.37",
+                  "note": "“I will bring them back to this place, and make them dwell securely.”"
+                },
+                {
+                  "ref": "Ezk.36.11"
+                },
+                {
+                  "ref": "Ezk.36.33",
+                  "note": "“I will cause the cities to be inhabited, and the waste places shall be built.”"
+                },
+                {
+                  "ref": "Hos.11.11",
+                  "note": "“I will make them dwell in their houses, says Yahweh.”"
+                },
+                {
+                  "ref": "Psa.4.9",
+                  "note": "“You alone, Yahweh, make me dwell in safety.”"
+                },
+                {
+                  "ref": "Psa.68.7",
+                  "note": "“God makes the solitary dwell in a house.”"
+                },
+                {
+                  "ref": "Psa.113.9",
+                  "note": "“He makes the barren woman dwell in a house, a joyful mother of sons.”"
+                },
+                {
+                  "ref": "Psa.107.36"
+                },
+                {
+                  "ref": "Isa.54.3"
+                },
+                {
+                  "ref": "1Sa.30.21",
+                  "note": "The two hundred whom “they had made stay” at the brook Besor."
+                }
+              ],
+              "senses": [
+                {
+                  "gloss": "make dwell in darkness, among the dead",
+                  "definition": "Of an enemy or of God’s judgment, put a living man where the dead are: in darkness, in the pit.",
+                  "evidence": [
+                    {
+                      "ref": "Psa.143.3",
+                      "role": "defining",
+                      "note": "“He has made me dwell in dark places, like the dead of long ago.”"
+                    },
+                    {
+                      "ref": "Lam.3.6",
+                      "note": "The same words."
+                    },
+                    {
+                      "ref": "Ezk.26.20",
+                      "role": "defining",
+                      "note": "To Tyre: “I will bring you down with those who go down to the pit … and make you dwell in the lowest parts of the earth.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "take-wife",
+              "gloss": "give a dwelling to (foreign wives), marry",
+              "definition": "In Ezra and Nehemiah, to “make dwell” a woman is to take her into one’s house as a wife.",
+              "evidence": [
+                {
+                  "ref": "Ezr.10.2",
+                  "role": "defining",
+                  "note": "“We have been unfaithful to our God and have made foreign women of the peoples of the land dwell (with us).”"
+                },
+                {
+                  "ref": "Ezr.10.10"
+                },
+                {
+                  "ref": "Ezr.10.14"
+                },
+                {
+                  "ref": "Ezr.10.17"
+                },
+                {
+                  "ref": "Ezr.10.18"
+                },
+                {
+                  "ref": "Neh.13.23",
+                  "role": "defining",
+                  "note": "“I saw Jews who had made women of Ashdod, Ammon and Moab dwell (with them)”, whose children spoke the speech of Ashdod."
+                },
+                {
+                  "ref": "Neh.13.27"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be made to dwell; be inhabited",
+          "senses": [
+            {
+              "gloss": "be made to dwell; be inhabited",
+              "definition": "Passive of the hiphil: be settled somewhere, or of a city, be peopled again.",
+              "evidence": [
+                {
+                  "ref": "Isa.5.8",
+                  "role": "defining",
+                  "note": "Woe to those who join house to house, field to field, “and you are made to dwell alone in the midst of the land”."
+                },
+                {
+                  "ref": "Isa.44.26",
+                  "role": "defining",
+                  "note": "Yahweh “who says of Jerusalem, She shall be inhabited (תּוּשָׁב)”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁכַן",
+            "note": "“Settle, abide”, beside it of God’s dwelling and of the earth’s inhabitants.",
+            "evidence": [
+              {
+                "ref": "Psa.68.17",
+                "role": "defining",
+                "note": "The mountain God desired “for his dwelling (לְשִׁבְתּוֹ); yes, Yahweh will abide (יִשְׁכֹּן) there forever”."
+              },
+              {
+                "ref": "Isa.18.3",
+                "note": "“All you inhabitants (יֹשְׁבֵי) of the world and dwellers (שֹׁכְנֵי) on the earth.”"
+              }
+            ]
+          },
+          {
+            "lemma": "גּוּר",
+            "note": "“Sojourn”, living where one has no inheritance, beside settled dwelling.",
+            "evidence": [
+              {
+                "ref": "Gen.20.1",
+                "role": "defining",
+                "note": "Abraham “dwelt between Kadesh and Shur, and sojourned in Gerar”."
+              },
+              {
+                "ref": "Gen.47.4",
+                "note": "“To sojourn in the land we have come … let your servants dwell in the land of Goshen.”"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קוּם",
+            "note": "“Rise up”, against sitting down.",
+            "evidence": [
+              {
+                "ref": "Psa.139.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.3.63",
+                "note": "“Their sitting down and their rising up, look!”"
+              },
+              {
+                "ref": "Deu.6.7"
+              }
+            ]
+          },
+          {
+            "lemma": "עָמַד",
+            "note": "“Stand”, against sitting.",
+            "evidence": [
+              {
+                "ref": "Exo.18.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.1.1"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יֹשְׁבֵי הָאָרֶץ",
+            "gloss": "the inhabitants of the land, of the earth",
+            "evidence": [
+              {
+                "ref": "Exo.23.31",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.24.6"
+              },
+              {
+                "ref": "Isa.26.21"
+              }
+            ]
+          },
+          {
+            "phrase": "יָשַׁב לָבֶטַח",
+            "gloss": "dwell securely, in safety",
+            "evidence": [
+              {
+                "ref": "Lev.25.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.18.7"
+              },
+              {
+                "ref": "Ezk.28.26"
+              },
+              {
+                "ref": "Ezk.34.25"
+              },
+              {
+                "ref": "Ezk.38.8"
+              },
+              {
+                "ref": "Zec.14.11"
+              }
+            ]
+          },
+          {
+            "phrase": "יָשַׁב עַל־כִּסֵּא",
+            "gloss": "sit on the throne, reign",
+            "evidence": [
+              {
+                "ref": "1Ki.1.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.22.30"
+              },
+              {
+                "ref": "Zec.6.13"
+              }
+            ]
+          },
+          {
+            "phrase": "יֹשֵׁב הַכְּרֻבִים",
+            "gloss": "who sits (enthroned) on the cherubim",
+            "evidence": [
+              {
+                "ref": "1Sa.4.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.80.2"
+              },
+              {
+                "ref": "Psa.99.1"
+              }
+            ]
+          },
+          {
+            "phrase": "יָשַׁב בַּסֻּכֹּת",
+            "gloss": "dwell in booths (at the feast of סֻכּוֹת)",
+            "evidence": [
+              {
+                "ref": "Lev.23.42",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.8.14"
+              },
+              {
+                "ref": "Neh.8.17",
+                "note": "The returned exiles made booths and dwelt in them, which Israel had not done so since the days of Joshua."
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κατοικέω",
+          "gloss": "dwell, inhabit",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.42, תֵּשְׁבוּ → κατοικήσετε; Gen.11.31, וַיֵּשְׁבוּ → κατοικέω; κατοικέω renders יָשַׁב ×340"
+            },
+            {
+              "ref": "Act.7.4",
+              "role": "defining",
+              "note": "Abraham “dwelt (κατῴκησεν) in Haran”, where Gen 11:31 has וַיֵּשְׁבוּ שָׁם."
+            },
+            {
+              "ref": "Heb.11.9",
+              "role": "defining",
+              "note": "Abraham sojourned in the land of promise “dwelling (κατοικήσας) in tents with Isaac and Jacob”."
+            },
+            {
+              "ref": "Rev.3.10",
+              "note": "“To try those who dwell on the earth (τοὺς κατοικοῦντας ἐπὶ τῆς γῆς)”: יֹשְׁבֵי הָאָרֶץ."
+            },
+            {
+              "ref": "Act.17.26"
+            }
+          ]
+        },
+        {
+          "lemma": "κάθημαι",
+          "gloss": "sit",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.110.1, שֵׁב → κάθου; κάθημαι renders יָשַׁב ×103"
+            },
+            {
+              "ref": "Mat.22.44",
+              "role": "defining",
+              "note": "Jesus quotes Psa 110:1, “Sit (κάθου) at my right hand”."
+            },
+            {
+              "ref": "Act.2.34",
+              "role": "defining",
+              "note": "Peter: David did not ascend into the heavens, but says, “Sit at my right hand”."
+            },
+            {
+              "ref": "Heb.1.13"
+            },
+            {
+              "ref": "Mat.4.16",
+              "note": "“The people sitting (καθήμενος) in darkness”, from Isa 9:1’s יֹשְׁבֵי."
+            }
+          ]
+        },
+        {
+          "lemma": "καθίζω",
+          "gloss": "sit down; seat",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.32.6, וַיֵּשֶׁב → ἐκάθισεν; Psa.1.1, יָשָׁב → ἐκάθισεν; καθίζω renders יָשַׁב ×131"
+            },
+            {
+              "ref": "1Co.10.7",
+              "role": "defining",
+              "note": "Quoting Exo 32:6: “The people sat down (ἐκάθισεν) to eat and drink.”"
+            },
+            {
+              "ref": "Act.2.30",
+              "note": "God swore to David to raise up the Christ “to sit (καθίσαι) on his throne”."
+            },
+            {
+              "ref": "Heb.10.12",
+              "note": "Having offered one sacrifice for sins, he “sat down at the right hand of God”."
+            },
+            {
+              "ref": "Mat.25.31"
+            },
+            {
+              "ref": "Rev.3.21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מוֹשָׁב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "seat; dwelling, dwelling place; the time of dwelling",
+      "bdb": [
+        "j.ds.ai"
+      ],
+      "cognate_ids": [
+        "akk-mushabu",
+        "sab-mwthb",
+        "arc-motav"
+      ],
+      "summary": "The place where one sits or dwells: a seat at table or in the gate, and a home or a settlement. In the law, “in all your dwellings” makes a statute hold wherever Israel lives, not only at the sanctuary.",
+      "senses": [
+        {
+          "id": "seat-place",
+          "gloss": "seat, place to sit; sitting (of a company)",
+          "definition": "A place where one sits, and the company sitting in their places.",
+          "evidence": [
+            {
+              "ref": "1Sa.20.25",
+              "role": "defining",
+              "note": "“The king sat on his seat (מוֹשָׁבוֹ) as at other times, on the seat by the wall … and David’s place was empty.”"
+            },
+            {
+              "ref": "1Sa.20.18",
+              "note": "“You will be missed, because your seat will be empty.”"
+            },
+            {
+              "ref": "Job.29.7",
+              "role": "defining",
+              "note": "“When I went out to the gate of the city, when I prepared my seat in the square.”"
+            },
+            {
+              "ref": "Psa.1.1",
+              "role": "defining",
+              "note": "Nor sits “in the seat of scoffers” (בְּמוֹשַׁב לֵצִים)."
+            },
+            {
+              "ref": "Psa.107.32",
+              "note": "“Praise him in the seat of the elders”, beside “the assembly of the people”."
+            },
+            {
+              "ref": "1Ki.10.5",
+              "note": "The queen of Sheba saw “the sitting of his servants” at Solomon’s table."
+            },
+            {
+              "ref": "2Ch.9.4"
+            },
+            {
+              "ref": "Ezk.8.3",
+              "note": "“The seat of the image of jealousy” at the gate of the inner court."
+            },
+            {
+              "ref": "Ezk.28.2",
+              "role": "defining",
+              "note": "The prince of Tyre says, “I am God, I sit (in) the seat of God (מוֹשַׁב אֱלֹהִים יָשַׁבְתִּי)”, and he is a man and not God."
+            }
+          ],
+          "cognate_ids": [
+            "phn-yshb"
+          ]
+        },
+        {
+          "id": "dwelling-place",
+          "gloss": "dwelling, dwelling place, settlement",
+          "definition": "The place where people live: a home, a town’s site, the region a people inhabits.",
+          "evidence": [
+            {
+              "ref": "Gen.10.30",
+              "role": "defining",
+              "note": "“Their dwelling was from Mesha as you go toward Sephar, the mountain of the east.”"
+            },
+            {
+              "ref": "Gen.27.39",
+              "note": "To Esau: “Away from the fatness of the earth shall your dwelling be.”"
+            },
+            {
+              "ref": "Gen.36.43"
+            },
+            {
+              "ref": "Num.24.21",
+              "note": "To the Kenite: “Firm is your dwelling, and your nest set in the rock.”"
+            },
+            {
+              "ref": "2Ki.2.19",
+              "note": "“The site (מוֹשַׁב) of the city is good, but the water is bad.”"
+            },
+            {
+              "ref": "Psa.132.13",
+              "role": "defining",
+              "note": "“Yahweh has chosen Zion; he has desired it for his dwelling (לְמוֹשָׁב לוֹ).”"
+            },
+            {
+              "ref": "Psa.107.4",
+              "role": "defining",
+              "note": "They wandered in the wilderness “and found no city of dwelling (עִיר מוֹשָׁב)”."
+            },
+            {
+              "ref": "Psa.107.7"
+            },
+            {
+              "ref": "Psa.107.36"
+            },
+            {
+              "ref": "Lev.25.29",
+              "note": "“A dwelling house (בֵּית־מוֹשַׁב) in a walled city”."
+            },
+            {
+              "ref": "Exo.10.23",
+              "note": "In the darkness all the sons of Israel “had light in their dwellings”."
+            },
+            {
+              "ref": "Num.31.10"
+            },
+            {
+              "ref": "Ezk.6.6"
+            },
+            {
+              "ref": "Ezk.6.14"
+            },
+            {
+              "ref": "Ezk.34.13"
+            },
+            {
+              "ref": "Ezk.37.23"
+            },
+            {
+              "ref": "Ezk.48.15",
+              "note": "The city’s portion “for dwelling and for open land”."
+            },
+            {
+              "ref": "1Ch.4.33"
+            },
+            {
+              "ref": "1Ch.6.39"
+            },
+            {
+              "ref": "1Ch.7.28"
+            },
+            {
+              "ref": "2Sa.9.12",
+              "note": "“All who dwelt in the house of Ziba” (מוֹשַׁב בֵּית־צִיבָא): the household."
+            },
+            {
+              "ref": "Lev.13.46",
+              "note": "The leper “shall dwell alone; outside the camp shall his dwelling be”."
+            }
+          ]
+        },
+        {
+          "id": "all-your-dwellings",
+          "gloss": "“in all your dwellings”: wherever you live",
+          "definition": "In the law, the phrase בְּכֹל מוֹשְׁבֹתֵיכֶם makes a statute hold in every place where Israel lives, in the land and out of it, and not only at the sanctuary.",
+          "evidence": [
+            {
+              "ref": "Lev.23.3",
+              "role": "defining",
+              "note": "“It is a שַׁבָּת to Yahweh in all your dwellings”: kept in every home, with no offering at the altar named."
+            },
+            {
+              "ref": "Lev.23.14",
+              "role": "defining",
+              "note": "No bread, parched grain or fresh grain until the עֹמֶר is brought: “a statute forever for your generations in all your dwellings”."
+            },
+            {
+              "ref": "Lev.23.21",
+              "note": "The day of the firstfruits of wheat, the same."
+            },
+            {
+              "ref": "Lev.23.31",
+              "note": "יוֹם הַכִּפֻּרִים: no work, “in all your dwellings”."
+            },
+            {
+              "ref": "Lev.23.17",
+              "role": "defining",
+              "note": "“From your dwellings (מִמּוֹשְׁבֹתֵיכֶם) you shall bring two loaves of waving”: bread baked at home, brought to Yahweh."
+            },
+            {
+              "ref": "Exo.12.20",
+              "note": "“In all your dwellings you shall eat מַצּוֹת.”"
+            },
+            {
+              "ref": "Exo.35.3",
+              "role": "defining",
+              "note": "“You shall kindle no fire in all your dwellings on the day of the שַׁבָּת.”"
+            },
+            {
+              "ref": "Lev.3.17",
+              "note": "No fat and no blood, “a statute forever for your generations in all your dwellings”."
+            },
+            {
+              "ref": "Lev.7.26"
+            },
+            {
+              "ref": "Num.15.2",
+              "note": "“When you come into the land of your dwellings, which I give you.”"
+            },
+            {
+              "ref": "Num.35.29",
+              "note": "The judgments of manslaughter: “for your generations in all your dwellings”."
+            }
+          ]
+        },
+        {
+          "gloss": "the time of dwelling, stay",
+          "definition": "How long a people dwelt in a place.",
+          "evidence": [
+            {
+              "ref": "Exo.12.40",
+              "role": "defining",
+              "note": "“The dwelling (מוֹשַׁב) of the sons of Israel which they dwelt (יָשְׁבוּ) in Egypt was four hundred and thirty years.”"
+            }
+          ],
+          "kin": [
+            "stay"
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בְּכֹל מוֹשְׁבֹתֵיכֶם",
+            "gloss": "in all your dwellings",
+            "evidence": [
+              {
+                "ref": "Lev.23.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.14"
+              },
+              {
+                "ref": "Lev.23.21"
+              },
+              {
+                "ref": "Lev.23.31"
+              },
+              {
+                "ref": "Exo.35.3"
+              }
+            ]
+          },
+          {
+            "phrase": "עִיר מוֹשָׁב",
+            "gloss": "a city to dwell in",
+            "evidence": [
+              {
+                "ref": "Psa.107.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.107.7"
+              },
+              {
+                "ref": "Psa.107.36"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κατοικία",
+          "gloss": "dwelling, habitation",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.3, מוֹשְׁבֹתֵיכֶם → κατοικίᾳ; κατοικία renders מוֹשָׁב ×8"
+            },
+            {
+              "ref": "Act.17.26",
+              "note": "God has fixed “the bounds of their dwelling (τῆς κατοικίας αὐτῶν)”."
+            }
+          ]
+        },
+        {
+          "lemma": "καθέδρα",
+          "gloss": "seat",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.1.1, מוֹשַׁב → καθέδραν; καθέδρα renders מוֹשָׁב ×5"
+            },
+            {
+              "ref": "Mat.23.2",
+              "role": "defining",
+              "note": "“The scribes and the Pharisees sit (ἐκάθισαν) on the seat (καθέδρας) of Moses.”"
+            },
+            {
+              "ref": "Mat.21.12",
+              "note": "He overturned the seats of those who sold doves."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תּוֹשָׁב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "settler, resident alien, one living among a people not his own",
+      "bdb": [
+        "j.ds.aj"
+      ],
+      "cognate_ids": [
+        "arc-totav"
+      ],
+      "summary": "One who dwells (יָשַׁב) among a people without belonging to it or holding land there; nearly always beside גֵּר, “sojourner”. The law keeps him from the Passover and the holy things and protects him; and Israel, Abraham and David call themselves such before Yahweh, whose land it is.",
+      "senses": [
+        {
+          "id": "resident-alien",
+          "gloss": "settler, resident alien",
+          "definition": "A foreigner living in Israel, or with an Israelite, as a hired man or dependent, with no inheritance in the land.",
+          "evidence": [
+            {
+              "ref": "Exo.12.45",
+              "role": "defining",
+              "note": "“A תּוֹשָׁב and a hired servant shall not eat of it”: the Passover is for the circumcised household."
+            },
+            {
+              "ref": "Lev.22.10",
+              "role": "defining",
+              "note": "“No stranger shall eat of the holy thing; a priest’s תּוֹשָׁב or a hired servant shall not eat of it.”"
+            },
+            {
+              "ref": "Lev.25.6",
+              "note": "The sabbath of the land is food for you, your servants, your hired man “and your תּוֹשָׁב who sojourns with you”."
+            },
+            {
+              "ref": "Lev.25.35",
+              "role": "defining",
+              "note": "“If your brother becomes poor … you shall support him, as a גֵּר וְתוֹשָׁב he shall live with you.”"
+            },
+            {
+              "ref": "Lev.25.40",
+              "note": "The Israelite who sells himself “shall be with you as a hired man, as a תּוֹשָׁב”, until the jubilee."
+            },
+            {
+              "ref": "Lev.25.45",
+              "note": "“The sons of the תּוֹשָׁבִים who sojourn with you”, who may be bought."
+            },
+            {
+              "ref": "Lev.25.47"
+            },
+            {
+              "ref": "Num.35.15",
+              "note": "The cities of refuge are “for the sons of Israel, for the גֵּר and for the תּוֹשָׁב among them”."
+            },
+            {
+              "ref": "1Ki.17.1",
+              "note": "Elijah the Tishbite, “of the settlers (מִתֹּשָׁבֵי) of Gilead”, as the Masoretic pointing reads it."
+            }
+          ]
+        },
+        {
+          "id": "sojourner-with-god",
+          "gloss": "a settler with Yahweh (of his people)",
+          "definition": "Of Abraham, David and Israel: living in a land that is not their own possession, and in a life that does not last, as guests of Yahweh, whose the land is.",
+          "evidence": [
+            {
+              "ref": "Lev.25.23",
+              "role": "defining",
+              "note": "“The land shall not be sold in perpetuity, for the land is mine; for you are גֵּרִים וְתוֹשָׁבִים with me.”"
+            },
+            {
+              "ref": "Gen.23.4",
+              "role": "defining",
+              "note": "Abraham to the sons of Heth: “I am a גֵּר וְתוֹשָׁב with you; give me a possession for a burying place.”"
+            },
+            {
+              "ref": "Psa.39.13",
+              "role": "defining",
+              "note": "“I am a sojourner with you, a תּוֹשָׁב, as all my fathers were.”"
+            },
+            {
+              "ref": "1Ch.29.15",
+              "note": "David: “We are sojourners before you, and תוֹשָׁבִים, as all our fathers were; our days on the earth are as a shadow, and there is no abiding.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גֵּר",
+            "note": "“Sojourner”, almost always beside it.",
+            "evidence": [
+              {
+                "ref": "Gen.23.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.25.23"
+              },
+              {
+                "ref": "Psa.39.13"
+              },
+              {
+                "ref": "Num.35.15"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׂכִיר",
+            "note": "“Hired man”, beside it as another dependent outside the household.",
+            "evidence": [
+              {
+                "ref": "Exo.12.45",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.22.10"
+              },
+              {
+                "ref": "Lev.25.40"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "גֵּר וְתוֹשָׁב",
+            "gloss": "a sojourner and a settler",
+            "evidence": [
+              {
+                "ref": "Gen.23.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.25.35"
+              },
+              {
+                "ref": "Lev.25.47"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "παρεπίδημος",
+          "gloss": "one staying for a time among a foreign people",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.23.4, גֵּר וְתוֹשָׁב → πάροικος καὶ παρεπίδημος (תּוֹשָׁב → παρεπίδημος)"
+            },
+            {
+              "ref": "Heb.11.13",
+              "role": "defining",
+              "note": "The fathers “confessed that they were strangers and παρεπίδημοι on the earth”, as Abraham did at Gen 23:4."
+            },
+            {
+              "ref": "1Pe.2.11",
+              "role": "defining",
+              "note": "“As sojourners and παρεπιδήμους”: πάροικος καὶ παρεπίδημος, Gen 23:4’s pair."
+            },
+            {
+              "ref": "1Pe.1.1"
+            }
+          ]
+        },
+        {
+          "lemma": "πάροικος",
+          "gloss": "one living beside, a resident alien",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.25.23, תוֹשָׁבִים → πάροικοι; πάροικος renders תּוֹשָׁב ×8"
+            },
+            {
+              "ref": "Eph.2.19",
+              "role": "defining",
+              "note": "“You are no longer strangers and πάροικοι, but fellow citizens with the saints.”"
+            },
+            {
+              "ref": "1Pe.2.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁבֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "seat; dwelling",
+      "bdb": [
+        "j.ds.ab"
+      ],
+      "cognate_ids": [
+        "akk-shubtu"
+      ],
+      "summary": "The noun of the verb’s infinitive form: a seat, a place sat in, a dwelling. Most tokens filed under it are the verb’s infinitive (Deu 1:6; Psa 133:1), and a few could belong to שֶׁבֶת “ceasing” of the root שׁבת; its few clear uses as a noun are a throne’s seat and a dwelling.",
+      "senses": [
+        {
+          "gloss": "seat, the place sat in",
+          "definition": "The seat of a throne; figuratively, the seat or rule given to violence.",
+          "evidence": [
+            {
+              "ref": "1Ki.10.19",
+              "role": "defining",
+              "note": "Solomon’s throne had arms “on either side of the place of the seat (מְקוֹם הַשָּׁבֶת)”."
+            },
+            {
+              "ref": "2Ch.9.18",
+              "note": "The same."
+            },
+            {
+              "ref": "Amo.6.3",
+              "role": "defining",
+              "note": "“You who put far off the evil day, and bring near the seat (שֶׁבֶת) of violence”: violence enthroned among them."
+            },
+            {
+              "ref": "Oba.1.3",
+              "note": "Edom, dwelling in the clefts of the rock, “his dwelling (שִׁבְתּוֹ) high”."
+            },
+            {
+              "ref": "2Sa.23.7",
+              "note": "The thorns “shall be utterly burned with fire בַּשָּׁבֶת”: on the spot, where they lie. The sense here is not certain."
+            }
+          ],
+          "kin": [
+            "seat-place"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁיבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "stay, time of staying",
+      "bdb": [
+        "j.ds.ac"
+      ],
+      "cognate_ids": [
+        "akk-washabu"
+      ],
+      "summary": "Once in scripture, of David’s stay at Mahanaim; a noun of the verb’s “remain, stay”. One use fixes it little.",
+      "senses": [
+        {
+          "id": "stay",
+          "gloss": "stay, sojourn",
+          "definition": "The time one stays in a place away from home.",
+          "evidence": [
+            {
+              "ref": "2Sa.19.33",
+              "role": "defining",
+              "note": "Barzillai “had provided the king with food during his stay (בְּשִׁיבָתוֹ) at Mahanaim”, when David fled from Absalom."
+            }
+          ],
+          "kin": [
+            "remain"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְתִב",
+      "lang": "arc",
+      "root": "יתב",
+      "bdb": [
+        "xj.an.aa"
+      ],
+      "pos": "verb",
+      "gloss": "sit; dwell; (haphel) settle",
+      "cognate_ids": [
+        "akk-washabu",
+        "uga-ytb",
+        "ar-wathaba",
+        "sab-wthb",
+        "arc-yetib"
+      ],
+      "summary": "Scripture’s Aramaic form of the root, with ת for Hebrew ש. In Daniel the Ancient of Days sits and the court sits to judge; in Ezra, peoples settled in Samaria by the Assyrian king dwell there.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sit; dwell",
+          "senses": [
+            {
+              "id": "arc-sit",
+              "gloss": "sit (in judgment)",
+              "definition": "Sit on a throne to judge; of the court, sit in session.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.9",
+                  "role": "defining",
+                  "note": "“Thrones were placed, and the Ancient of Days sat (יְתִב); his clothing white as snow.”"
+                },
+                {
+                  "ref": "Dan.7.10",
+                  "role": "defining",
+                  "note": "“The judgment sat (דִּינָא יְתִב), and the books were opened.”"
+                },
+                {
+                  "ref": "Dan.7.26",
+                  "note": "“The judgment shall sit, and they shall take away his dominion.”"
+                }
+              ],
+              "kin": [
+                "sit-judge",
+                "yahweh-enthroned"
+              ]
+            },
+            {
+              "id": "arc-dwell",
+              "gloss": "dwell",
+              "definition": "Live in a place.",
+              "evidence": [
+                {
+                  "ref": "Ezr.4.17",
+                  "role": "defining",
+                  "note": "Artaxerxes’ answer to Rehum and Shimshai “and the rest of their companions who dwell (יָתְבִין) in Samaria”."
+                }
+              ],
+              "kin": [
+                "dwell"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "settle",
+          "senses": [
+            {
+              "gloss": "settle (a people)",
+              "definition": "Make a people dwell in a place.",
+              "evidence": [
+                {
+                  "ref": "Ezr.4.10",
+                  "role": "defining",
+                  "note": "“The nations whom the great and noble Osnappar deported and settled (וְהוֹתֵב) in the city of Samaria”, as 2Ki 17:24 tells it with the Hebrew hiphil."
+                }
+              ],
+              "kin": [
+                "settle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יִתֶב",
+      "lang": "syc",
+      "root": "יתב",
+      "pos": "verb",
+      "gloss": "sit; dwell; (aphel) seat",
+      "cognate_ids": [
+        "arc-yetib"
+      ],
+      "summary": "The Peshitta’s ܝܬܒ (ʾīṯeḇ), its ordinary verb for sitting and dwelling. It renders Psa 110:1’s “sit at my right hand” wherever the New Testament quotes it, and its participle noun יָתְבָא is “inhabitant” (Rev 14:6).",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sit; dwell",
+          "senses": [
+            {
+              "gloss": "sit; sit on a throne",
+              "definition": "Sit, and of a king, sit on his throne to reign and judge.",
+              "evidence": [
+                {
+                  "ref": "Mat.22.44",
+                  "role": "defining",
+                  "note": "Peshitta: “Sit (תֶּב) at my right hand”, quoting Psa 110:1."
+                },
+                {
+                  "ref": "Act.2.34"
+                },
+                {
+                  "ref": "Heb.8.1",
+                  "note": "Peshitta: a high priest “who sat (דִּיתֶב) at the right hand of the throne of the majesty in the heavens”."
+                },
+                {
+                  "ref": "Mat.19.28",
+                  "role": "defining",
+                  "note": "“When the Son of Man sits on the throne of his glory, you also shall sit on twelve thrones, judging the twelve tribes of Israel.”"
+                },
+                {
+                  "ref": "Mat.25.31"
+                },
+                {
+                  "ref": "Rev.3.21",
+                  "note": "“I will give him to sit with me on my throne, as I sat with my Father on his throne.”"
+                },
+                {
+                  "ref": "Mat.4.16",
+                  "note": "“The people who sat in darkness”, from Isa 9:1."
+                }
+              ],
+              "kin": [
+                "sit-throne",
+                "inhabitant"
+              ]
+            },
+            {
+              "gloss": "dwell; (participle noun) inhabitant",
+              "definition": "Live in a place; those living on the earth.",
+              "evidence": [
+                {
+                  "ref": "Rev.14.6",
+                  "role": "defining",
+                  "note": "Peshitta: the gospel preached “to those who dwell (יָתְבֵא) on the earth”: יֹשְׁבֵי הָאָרֶץ."
+                }
+              ],
+              "kin": [
+                "inhabitant",
+                "dwell"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "seat, make sit",
+          "senses": [
+            {
+              "gloss": "seat, make sit",
+              "definition": "Make someone sit, in a place of honour.",
+              "evidence": [
+                {
+                  "ref": "Eph.1.20",
+                  "role": "defining",
+                  "note": "God raised him from the dead and seated him at his right hand in the heavens."
+                },
+                {
+                  "ref": "Eph.2.6",
+                  "note": "He raised us up with him and seated us with him in the heavens."
+                }
+              ],
+              "kin": [
+                "seat"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תּוֹתָבָא",
+      "lang": "syc",
+      "root": "יתב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "settler, sojourner",
+      "cognate_ids": [
+        "arc-totav"
+      ],
+      "summary": "The Peshitta’s ܬܘܬܒܐ, the word answering to Hebrew תּוֹשָׁב, for Greek πάροικος and παρεπίδημος; beside it ܬܘܬܒܘܬܐ, “sojourning” (1Pe 1:17).",
+      "senses": [
+        {
+          "gloss": "settler, sojourner",
+          "definition": "One living in a land not his own; of the believers, as their fathers were on the earth.",
+          "evidence": [
+            {
+              "ref": "Act.7.29",
+              "role": "defining",
+              "note": "Moses fled and became a תּוֹתָבָא in the land of Midian, where Exo 2:15 says he dwelt (וַיֵּשֶׁב)."
+            },
+            {
+              "ref": "Act.7.6",
+              "note": "Abraham’s seed to be תּוֹתָבָא in a land not theirs."
+            },
+            {
+              "ref": "Heb.11.9",
+              "role": "defining",
+              "note": "Abraham sojourned (as a תּוֹתָבָא) in the land of promise as in a foreign land."
+            },
+            {
+              "ref": "Heb.11.13"
+            },
+            {
+              "ref": "Eph.2.19",
+              "role": "defining",
+              "note": "“You are no longer strangers and תּוֹתָבֵא, but sons of the city with the saints.”"
+            },
+            {
+              "ref": "1Pe.1.1"
+            },
+            {
+              "ref": "1Pe.2.11"
+            },
+            {
+              "ref": "1Pe.1.17",
+              "note": "“Pass the time of your sojourning (ܬܘܬܒܘܬܐ) in fear.”"
+            }
+          ],
+          "kin": [
+            "resident-alien",
+            "sojourner-with-god"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מוֹתְבָא",
+      "lang": "syc",
+      "root": "יתב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "seat; throne",
+      "cognate_ids": [
+        "arc-motav"
+      ],
+      "summary": "The Peshitta’s ܡܘܬܒܐ, the word answering to Hebrew מוֹשָׁב.",
+      "senses": [
+        {
+          "gloss": "seat; throne",
+          "definition": "A seat of honour, and thrones of rule.",
+          "evidence": [
+            {
+              "ref": "Mat.23.6",
+              "role": "defining",
+              "note": "They love “the chief seats (מוֹתְבֵא) in the synagogues”."
+            },
+            {
+              "ref": "Mrk.12.39"
+            },
+            {
+              "ref": "Luk.11.43"
+            },
+            {
+              "ref": "Luk.20.46"
+            },
+            {
+              "ref": "Rev.20.4",
+              "role": "defining",
+              "note": "“I saw thrones (מוֹתְבֵא), and they sat on them, and judgment was given to them.”"
+            },
+            {
+              "ref": "Col.1.16"
+            }
+          ],
+          "kin": [
+            "seat-place"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-washabu",
+      "lang": "akk",
+      "form": "wašābu",
+      "translit": "wašābu (later ašābu)",
+      "gloss": "sit, sit down; dwell, inhabit, stay; (Š) make sit, settle; (participles wašbu, āšibu) resident, inhabitant",
+      "relation": "cognate",
+      "note": "The commonest Akkadian verb of sitting, over 3,500 times in Oracc’s corpora, with the same span as יָשַׁב: sit, stay, dwell, be inhabited, and the causative “install, settle”. Its participle āšibu “inhabitant” answers to יֹשֵׁב. Akkadian š does not show which older sound stands behind Hebrew ש.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000017380, wašābu [sit (down)] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000017380.html",
+          "note": "Senses include sit, dwell, inhabit, reside, stay, settle, cause to sit, install."
+        },
+        {
+          "source": "oracc",
+          "locator": "atae x000012050, āšibu [sitting] AJ; armep x000004060, wašbu [inhabited] AJ",
+          "note": "dwelling, inhabitant, resident, seated."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*wṯb [sit]: akkadian wašābu"
+        }
+      ]
+    },
+    {
+      "id": "akk-mushabu",
+      "lang": "akk",
+      "form": "mūšabu",
+      "translit": "mūšabu",
+      "gloss": "dwelling, residence, seat, site",
+      "relation": "cognate",
+      "note": "The same noun pattern as מוֹשָׁב (ma- + the root with initial w), with the same senses of seat and dwelling.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000013380, mūšabu [dwelling] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000013380.html",
+          "note": "dwelling, residence, seat, site (×840)."
+        }
+      ]
+    },
+    {
+      "id": "akk-shubtu",
+      "lang": "akk",
+      "form": "šubtu",
+      "translit": "šubtu",
+      "gloss": "seat, dais; dwelling, abode, residence, settlement",
+      "relation": "cognate",
+      "note": "The noun of the verb with the initial w dropped and a t ending, as in שֶׁבֶת; seat and dwelling, as the Hebrew noun is.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000006010, šubtu [seat] N; armep x000035170, šubtu [dwelling] N",
+          "note": "seat, dais, abode, dwelling, residence, settlement, site."
+        }
+      ]
+    },
+    {
+      "id": "uga-ytb",
+      "lang": "uga",
+      "form": "𐎊𐎘𐎁",
+      "translit": "yṯb",
+      "gloss": "sit, sit down; sit enthroned",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Ugaritic ṯ shows that ṯ, not š, stands behind the ש of יָשַׁב. In the Baal cycle El, mourning, comes down from his throne and sits on the footstool, and from the footstool sits on the ground (KTU 1.5 VI 12–14): throne and mourning, as in Isa 47:1.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, glossary, /y-ṯ-b/",
+          "note": "“ytb, aṯb, ṯb ‘to sit’”, compared with Hebrew yāšab, Aramaic yĕtib and Akkadian (w)ašābu."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 158, text 87.3 (KTU 1.5 VI 12–13)",
+          "note": "ksi.yṯb … lhdm … yṯb: he sits on the throne’s footstool, then on the ground."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*wṯb [sit]: ugaritic yṯb"
+        }
+      ]
+    },
+    {
+      "id": "phn-yshb",
+      "lang": "phn",
+      "form": "𐤉𐤔𐤁",
+      "translit": "yšb",
+      "gloss": "sit on the throne; dwell, reside; (yiphil) resettle, make reside; (noun) resident; seat, bench",
+      "relation": "cognate",
+      "note": "Phoenician and Punic use the root as Hebrew does: Kilamuwa “took (sat on) my father’s throne”, a people “who reside” in a city, Azatiwada resettling conquered peoples, and nouns yšb “resident” and yšb “bench”. Plautus’ Punic has mucom sussibti, “the place where he resides”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 216–217, Y-Š-B I (v.), YŠB II (n. resident), YŠB III (n. seat, bench)",
+          "note": "KAI 24.9, 26 A I 17–18, 26 A III 7–9, 14.16–17, 49.34, 130.1; Poen. 948."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "*wṯb [sit]: punic yšb"
+        }
+      ]
+    },
+    {
+      "id": "ar-wathaba",
+      "lang": "ar",
+      "form": "وَثَبَ، وِثَابٌ، مَوْثَبَانٌ",
+      "translit": "waṯaba, wiṯāb, mawṯabān",
+      "gloss": "(Himyarite) sit, sit down; a throne, couch; a king who sits still; (common Arabic) leap, rise up",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "In the dialect of Himyar (South Arabia) waṯaba is “he sat”, ṯib “sit!”; Lane retells the envoy who took the Himyarite king’s ṯib for “leap” and leapt from the mountain. The causative is to seat someone on a cushion, wiṯāb is a throne or couch, and mawṯabān a king who sits still and does not go out to war. In the rest of Arabic the verb is “leap, spring up”. Arabic ث (ṯ) agrees with Ugaritic.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2919, وَثَبَ (n41617)",
+          "note": "“in the dial. of Himyer signifies He sat; sat down … ثِبْ in that dial. signifies Sit.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2920, وثّبه (n41618), وِثَابٌ (n41626), مَوْثَبَانٌ (n41628)"
+        }
+      ]
+    },
+    {
+      "id": "sab-wthb",
+      "lang": "sem",
+      "form": "𐩥𐩻𐩨",
+      "translit": "wṯb",
+      "gloss": "sit, stay; settle, dwell; (h-stem) set up, establish",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Sabaean (Old South Arabian): “they did not reject the one sitting in the temple”; “let no one settle therein”; “that he may dwell with the tribe”. With Himyarite Arabic it keeps the sense “sit” in the south.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 153–154, WṮB v. (1) sit, stay; (2) settle, dwell; h-stem set up, establish",
+          "note": "J720/8; Ist7626/1; R4782/3."
+        }
+      ]
+    },
+    {
+      "id": "sab-mwthb",
+      "lang": "sem",
+      "form": "𐩣𐩥𐩻𐩨",
+      "translit": "mwṯb",
+      "gloss": "seat, shrine (of a god)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "The same noun pattern as מוֹשָׁב, used of a god’s seat or shrine, as Psa 132:13 calls Zion Yahweh’s מוֹשָׁב.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 154, WṮB n. mwṯb(n) “seat, shrine of a god (?)”",
+          "note": "C308/4 “for their shrine”; J600/8; C396/4."
+        }
+      ]
+    },
+    {
+      "id": "arc-yetib",
+      "lang": "arc",
+      "form": "יְתֵב",
+      "translit": "yĕṯēḇ",
+      "gloss": "sit; dwell; be inhabited; (pael) set down, settle",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Jewish Aramaic, the Targums’ word for Hebrew יָשַׁב: Onkelos renders “an inhabited land” (Exo 16:35) with it, and יָתֵב is “inhabitant”. Aramaic ת for Hebrew ש shows the older ṯ, as Ugaritic and Arabic do.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "J00712, יתֵב I",
+          "note": "“to sit, dwell &c.; to be inhabited, settled”; Targ. O. Gen. XXXVI, 7; Ex. XVI, 35."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "J00714, יָתֵב",
+          "note": "“inhabitant”; Targ. O. Gen. XXXIV, 30; Num. XIV, 14."
+        }
+      ]
+    },
+    {
+      "id": "arc-motav",
+      "lang": "arc",
+      "form": "מוֹתָב",
+      "translit": "môṯāḇ",
+      "gloss": "seat, dwelling; session (of a court)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Jewish Aramaic, the counterpart of מוֹשָׁב in the Targums (Targ. Ezk 48:15), and a court’s sitting.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "M00695, מוֹתָב",
+          "note": "“= h. מוֹשָׁב, seat, dwelling; session”."
+        }
+      ]
+    },
+    {
+      "id": "arc-totav",
+      "lang": "arc",
+      "form": "תּוֹתָב",
+      "translit": "tôṯāḇ",
+      "gloss": "settler, immigrant",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "note": "Jewish Aramaic, the counterpart of תּוֹשָׁב: Onkelos uses it at Gen 23:4, Exo 12:45 and Lev 25:23, 45; beside it תּוֹתָבוּתָא “temporary residence, sojourn”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "V00339, תּוֹתָב",
+          "note": "“= h. תּוֹשָׁב, settler, immigrant”; Targ. Gen. XXIII, 4; Ex. XII, 45; Lev. XXV, 23."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "V00341, תּוֹתָבוּתָא",
+          "note": "“settlement of the immigrant, temporary residence, sojourn”; Targ. Gen. XXXVII, 1; XVII, 8."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "god-in-heaven",
+      "statement": "Scripture says Yahweh “sits” in the heavens and on the cherubim: “he who sits in the heavens laughs” (Psa 2:4); “who is like Yahweh our God, who sits on high?” (Psa 113:5); “Yahweh sits as king forever” (Psa 29:10); the ark is the ark of Yahweh of hosts “who sits on the cherubim” (1Sa 4:4). Solomon asks, “will God indeed dwell (יֵשֵׁב) on the earth? The heavens and the heaven of heavens cannot contain you”, and yet prays again and again, “hear in the heavens, the place of your dwelling (מְכוֹן שִׁבְתְּךָ)” (1Ki 8:27, 30, 39, 43, 49). Isaiah sees him sitting on a throne (Isa 6:1), and Daniel sees the Ancient of Days sit (יְתִב) as the court sits to judge (Dan 7:9–10). From the verses: Yahweh is not contained by any place, yet scripture gives him a seat and a dwelling in the heavens, from which he hears, rules and judges; so the Son is said to sit down at his right hand there (Psa 110:1; Heb 8:1; 10:12).",
+      "evidence": [
+        {
+          "ref": "Psa.2.4"
+        },
+        {
+          "ref": "Psa.113.5"
+        },
+        {
+          "ref": "Psa.29.10"
+        },
+        {
+          "ref": "1Sa.4.4"
+        },
+        {
+          "ref": "1Ki.8.27"
+        },
+        {
+          "ref": "1Ki.8.30"
+        },
+        {
+          "ref": "1Ki.8.39"
+        },
+        {
+          "ref": "1Ki.8.43"
+        },
+        {
+          "ref": "1Ki.8.49"
+        },
+        {
+          "ref": "Isa.6.1"
+        },
+        {
+          "ref": "Dan.7.9",
+          "to": "Dan.7.10"
+        },
+        {
+          "ref": "Psa.110.1"
+        },
+        {
+          "ref": "Heb.8.1"
+        },
+        {
+          "ref": "Heb.10.12"
+        }
+      ]
+    },
+    {
+      "topic": "throne-of-david",
+      "statement": "To sit on the throne is to reign: “Solomon your son shall reign after me, and he shall sit on my throne” (1Ki 1:13). Yahweh promised David that his sons would sit on his throne forever if they kept his covenant (Psa 132:12), and that David would never lack a man sitting on the throne of the house of Israel (Jer 33:17), though Coniah’s seed would not sit on it (Jer 22:30). Zechariah’s Branch “shall sit and rule on his throne, and he shall be a priest on his throne” (Zec 6:13). Psa 110:1 tells David’s lord to sit at Yahweh’s right hand “until I make your enemies your footstool”. Peter applies both: God swore to David to raise up the Christ to sit on his throne, and since David did not ascend into the heavens, it is the risen Jesus who is told to sit at the right hand until his enemies are made his footstool (Act 2:30–35; Heb 10:12–13). Jesus speaks of the time “when the Son of Man sits on the throne of his glory” with his apostles on twelve thrones judging the twelve tribes of Israel (Mat 19:28; 25:31), and promises the overcomer a seat “with me on my throne, as I sat with my Father on his throne” (Rev 3:21). From the verses: the Christ now sits at God’s right hand, waiting; the throne of David, which he is to occupy, is a throne over Israel, still to be taken when he comes.",
+      "evidence": [
+        {
+          "ref": "1Ki.1.13"
+        },
+        {
+          "ref": "Psa.132.12"
+        },
+        {
+          "ref": "Jer.33.17"
+        },
+        {
+          "ref": "Jer.22.30"
+        },
+        {
+          "ref": "Zec.6.13"
+        },
+        {
+          "ref": "Psa.110.1"
+        },
+        {
+          "ref": "Act.2.30",
+          "to": "Act.2.35"
+        },
+        {
+          "ref": "Heb.10.12",
+          "to": "Heb.10.13"
+        },
+        {
+          "ref": "Mat.19.28"
+        },
+        {
+          "ref": "Mat.25.31"
+        },
+        {
+          "ref": "Rev.3.21"
+        }
+      ]
+    },
+    {
+      "topic": "earth-inhabited",
+      "statement": "Yahweh “did not create it a waste (תֹהוּ); he formed it to be inhabited (לָשֶׁבֶת)” (Isa 45:18). The earth and “those who dwell in it” are his (Psa 24:1). When his judgments are in the earth its inhabitants learn righteousness (Isa 26:9), and he brings judgment on the inhabitants of the earth for their iniquity, not to leave it empty (Isa 24:6; 26:21). The prophets end with the land inhabited again and securely: Israel dwelling in the land given to Jacob, with David Yahweh’s servant their prince forever (Ezk 37:25); dwelling securely and building houses (Ezk 28:25–26); Judah inhabited forever and Jerusalem from generation to generation (Jol 4:20); Jerusalem inhabited securely, with no more curse (Zec 14:11); every man sitting under his vine and fig tree with none to make him afraid (Mic 4:4); men building houses and inhabiting them, not building for another to inhabit (Isa 65:21–22). From the verses: the earth was made to be lived in, and the hope set out with this verb is people dwelling on it in peace under Yahweh’s king, not its being left empty.",
+      "evidence": [
+        {
+          "ref": "Isa.45.18"
+        },
+        {
+          "ref": "Psa.24.1"
+        },
+        {
+          "ref": "Isa.26.9"
+        },
+        {
+          "ref": "Isa.24.6"
+        },
+        {
+          "ref": "Isa.26.21"
+        },
+        {
+          "ref": "Ezk.37.25"
+        },
+        {
+          "ref": "Ezk.28.25",
+          "to": "Ezk.28.26"
+        },
+        {
+          "ref": "Jol.4.20"
+        },
+        {
+          "ref": "Zec.14.11"
+        },
+        {
+          "ref": "Mic.4.4"
+        },
+        {
+          "ref": "Isa.65.21",
+          "to": "Isa.65.22"
+        }
+      ]
+    },
+    {
+      "topic": "sojourners-and-the-promise",
+      "statement": "The land is Yahweh’s, and Israel live in it as גֵּרִים וְתוֹשָׁבִים with him, so it may not be sold in perpetuity (Lev 25:23). Abraham, to whom the land was promised, calls himself a גֵּר וְתוֹשָׁב among the sons of Heth and has to buy a field to bury Sarah (Gen 23:4); Stephen says God gave him no inheritance in it, not even a foot’s breadth, but promised it to him and his seed after him (Act 7:5). David says the same of himself and his fathers, “our days on the earth are as a shadow” (Psa 39:13; 1Ch 29:15). Hebrews takes it up: Abraham dwelt in tents in the land of promise as in a foreign land, looking for the city that has foundations; the fathers all died in faith, not having received the promises, confessing that they were strangers and settlers on the earth, and they will not be made perfect without us (Heb 11:9–10, 13, 39–40). Peter calls believers sojourners and settlers in the same words (1Pe 2:11), and Paul says the Gentiles in Christ are no longer strangers and settlers but fellow citizens with the saints (Eph 2:19). From the verses: those who hold the promise live now as settlers, not owners; the inheritance is still to be given, to Abraham and his seed together.",
+      "evidence": [
+        {
+          "ref": "Lev.25.23"
+        },
+        {
+          "ref": "Gen.23.4"
+        },
+        {
+          "ref": "Act.7.5"
+        },
+        {
+          "ref": "Psa.39.13"
+        },
+        {
+          "ref": "1Ch.29.15"
+        },
+        {
+          "ref": "Heb.11.9",
+          "to": "Heb.11.10"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Heb.11.39",
+          "to": "Heb.11.40"
+        },
+        {
+          "ref": "1Pe.2.11"
+        },
+        {
+          "ref": "Eph.2.19"
+        }
+      ]
+    },
+    {
+      "topic": "feast-of-booths",
+      "statement": "In the feast of סֻכּוֹת every native Israelite is to dwell (יָשַׁב) in booths seven days, “that your generations may know that I made the sons of Israel dwell (הוֹשַׁבְתִּי) in booths when I brought them out of the land of Egypt” (Lev 23:42–43): the feast re-enacts the way Yahweh housed them in the wilderness. After the return from Babylon the people made booths and dwelt in them, which had not been done so since the days of Joshua (Neh 8:14–17). Hosea uses the feast to promise a return to that state: “I am Yahweh your God from the land of Egypt; I will yet make you dwell in tents, as in the days of the appointed feast” (Hos 12:10). From the verses: dwelling in booths remembers Yahweh’s keeping of Israel when they had no land of their own, and the prophets hold it out as the pattern of his dealing with them again.",
+      "evidence": [
+        {
+          "ref": "Lev.23.42",
+          "to": "Lev.23.43"
+        },
+        {
+          "ref": "Neh.8.14",
+          "to": "Neh.8.17"
+        },
+        {
+          "ref": "Hos.12.10"
+        }
+      ]
+    }
+  ],
+  "note": "Root key ישב as the database keys it. Words claimed: j.ds.aa (verb), j.ds.ai (מוֹשָׁב), j.ds.aj (תּוֹשָׁב), j.ds.ab (שֶׁבֶת), j.ds.ac (שִׁיבָה), xj.an.aa (Aramaic יְתִב). Not claimed: m.bd.ab, v.ct.ah, w.al.af and w.bq.be, BDB cross-references with no tokens. Names formed from the root are left to names/ and not written here: יֶשֶׁבְאָב (j.ds.ad), יֹשֵׁב בַּשֶּׁבֶת (j.ds.ae), יִשְׁבִּי בְּנֹב (j.ds.af), יָשְׁבְּקָשָׁה (j.ds.ag), יוֹשִׁבְיָה (j.ds.ah). The verb’s “no stem” tokens include שְׁבִי “captivity” of שׁבה (Isa 20:4; 49:24–25; Amo 4:10; Lam 1:5), filed here by spelling; they are not this root. Most of the tokens under j.ds.ab (Deu 1:6; 1Sa 7:2; Psa 33:14; 127:2; 133:1; Pro 21:19; 25:24) are the verb’s infinitive שֶׁבֶת; Exo 21:19 (שִׁבְתּוֹ, “his loss of time”, either “his sitting” or “his ceasing”), Isa 30:7 and Pro 20:3 may belong to שֶׁבֶת “ceasing” of שׁבת, which the shabat entry holds (v.az.ab); the two keys count some of the same tokens. 2Sa 23:7 בַּשָּׁבֶת is uncertain. 1Ki 17:1 מִתֹּשָׁבֵי גִלְעָד is read as תּוֹשָׁב by the Masoretic pointing; the Septuagint read a place name (ἐκ Θεσβων), as BDB key v.ao.aj (Tishbe) does. Ezk 37:23 מוֹשְׁבֹתֵיהֶם may be read מְשׁוּבֹתֵיהֶם “their backslidings”; kept here as written. Cognates checked 2026-11-13: Oracc wašābu, mūšabu, šubtu, āšibu/wašbu; Segert p. 189 and text 87.3 (p. 158); Krahmalkov pp. 216–217; Lane pp. 2919–2920 (وثب; Himyarite “sit”); Biella pp. 153–154 (WṮB; the OCR prints wtb, read wṯb from the comparison with Himyarite and Hebrew; check the scan); Jastrow J00712, J00714, M00695, V00339, V00341. Not consulted: Ge’ez (Anderson–Moser list Ge’ez wsb “marry”; Dillmann and Leslau not checked; compare the hiphil “make (a woman) dwell” = marry, Ezr 10:2), DULAT, CAD A/2 and W, Payne Smith and Brockelmann for the Syriac (the Peshitta words were found from SEDRA lexemes 1436 ;TB, 1437 MOTBA, 1438 TOTBA, 1439 TOTBOTA, 3535 ;TBA, root 856, and the BFBS word list). Fisher has no entry for yṯb. Open questions for review: (1) the doctrine “earth-inhabited” and “throne-of-david” state the kingdom reading plainly; check wording. (2) Whether שֶׁבֶת j.ds.ab should be kept as a word at all, given how few of its tokens are clearly a noun."
+}
