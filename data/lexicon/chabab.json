@@ -1,0 +1,482 @@
+{
+  "id": "chabab",
+  "root": "חבב",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "love",
+    "covenant",
+    "body"
+  ],
+  "gloss": "love, hold dear; (perhaps) bosom",
+  "summary": "חָבַב is to love, to hold dear. Scripture's Hebrew uses the verb once, of Yahweh at Sinai: “he loves the peoples; all his holy ones are in your hand”, sitting at his feet to receive his words (Deu 33:3). That single use is borne out by the root across the Semitic languages: Arabic ḥabba, aḥabba “love” and ḥabīb “beloved”, Jewish Aramaic חַבֵּב, and the Peshitta, whose New Testament makes the root its word for love: ܐܚܒ for ἀγαπάω, ܚܘܒܐ ḥubbā for ἀγάπη (“God is love”, 1Jn 4:8) and ܚܒܝܒܐ ḥabībā for ἀγαπητός (“my beloved Son”, Mat 3:17). The noun חֹב, “bosom”, the hiding place of Job's iniquity (Job 31:33), is filed under the same letters, but its tie to “love” is not clear; the name Hobab is formed from the root.",
+  "words": [
+    {
+      "lemma": "חָבַב",
+      "pos": "verb",
+      "gloss": "love, hold dear",
+      "bdb": [
+        "h.ac.aa"
+      ],
+      "summary": "Used once in the Hebrew scriptures, so its sense rests on that one verse's parallels and on the cognates, which agree.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "love, hold dear",
+          "cognate_ids": [
+            "ar-habba",
+            "arc-habbeb",
+            "syc-ahheb"
+          ],
+          "senses": [
+            {
+              "id": "love-hold-dear",
+              "gloss": "love, hold dear",
+              "definition": "To hold someone dear and keep them close: Yahweh's love for his people, set beside his holding his holy ones in his hand and their sitting at his feet to receive his words.",
+              "tags": [
+                "love",
+                "covenant"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.33.3",
+                  "role": "defining",
+                  "note": "אַף חֹבֵב עַמִּים: “Yes, he loves the peoples; all his holy ones are in your hand, and they sit at your feet, each receives of your words.” The participle is parallel to holding them in his hand."
+                },
+                {
+                  "ref": "Deu.33.2",
+                  "note": "The setting: Yahweh came from Sinai, with a fiery law at his right hand for them."
+                },
+                {
+                  "ref": "Deu.33.4",
+                  "role": "defining",
+                  "note": "“Moses commanded us a law, an inheritance of the assembly of Jacob”: the peoples he loves are the tribes gathered to receive it."
+                },
+                {
+                  "ref": "Deu.33.5",
+                  "note": "“The heads of the people gathered, the tribes of Israel together.”"
+                },
+                {
+                  "ref": "Gen.28.3",
+                  "note": "Jacob is to become קְהַל עַמִּים, an assembly of peoples: Israel's tribes called “peoples”."
+                },
+                {
+                  "ref": "Gen.48.4",
+                  "note": "The same promise: “I will make you an assembly of peoples.”"
+                },
+                {
+                  "ref": "Deu.7.7",
+                  "to": "Deu.7.8",
+                  "note": "The same thought with אָהַב: Yahweh set his love on Israel and chose them because he loved them."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φείδομαι",
+          "gloss": "spare",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.33.3, חֹבֵב → ἐφείσατο; the verb's only use"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כָּל־קְדֹשָׁיו בְּיָדֶךָ",
+            "note": "All his holy ones are in your hand: loving the peoples is keeping them in his hand.",
+            "evidence": [
+              {
+                "ref": "Deu.33.3"
+              }
+            ]
+          },
+          {
+            "lemma": "תֻּכּוּ לְרַגְלֶךָ",
+            "note": "They sit at your feet, receiving his words: those he loves are taught by him.",
+            "evidence": [
+              {
+                "ref": "Deu.33.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֹב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bosom",
+      "bdb": [
+        "h.ac.ab"
+      ],
+      "cognate_ids": [
+        "arc-hubba",
+        "syc-ubba"
+      ],
+      "summary": "Used once, with a suffix, בְּחֻבִּי “in my bosom” (Job 31:33). Its sense is clear from the verse and from Aramaic חוּבָּא / עוּבָּא and Syriac ܥܘܒܐ ʿubbā, “bosom, lap”, which the Targum of Job uses for this word. How it belongs to חבב “love” is not clear: the Aramaic and Syriac mostly spell it with ע, which may make it a separate word, though scripture does make the bosom the place of what is loved and cherished (2Sa 12:3; Num 11:12).",
+      "senses": [
+        {
+          "id": "bosom",
+          "gloss": "bosom, the fold of the garment over the chest",
+          "definition": "The fold of the garment over the chest, where something can be kept hidden; Job's hiding place for his iniquity.",
+          "evidence": [
+            {
+              "ref": "Job.31.33",
+              "role": "defining",
+              "note": "“If I covered my transgressions כְאָדָם, by hiding my iniquity בְּחֻבִּי”: parallel to כִּסִּיתִי, “I covered”, it is the place things are hidden."
+            },
+            {
+              "ref": "Gen.3.8",
+              "to": "Gen.3.10",
+              "note": "כְאָדָם may be “as Adam”: Adam hid himself after his transgression."
+            },
+            {
+              "ref": "Exo.4.6",
+              "note": "The same place under another word: Moses puts his hand into his חֵיק, and it comes out leprous."
+            },
+            {
+              "ref": "Pro.6.27",
+              "note": "“Can a man take fire in his חֵיק?” The Targum renders חֵיק here by חוּבָּא."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַחֵב",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "love; (pael) cherish",
+      "summary": "The Peshitta's ܐܚܒ (ʾaḥḥeb), the aphel of ܚܒ, which its New Testament uses for ἀγαπάω about ninety times: God's love for the world, the commandment to love one's neighbour and one's enemies. (It also uses ܪܚܡ for love.) The pael ܚܰܒܶܒ is to cherish, as a nurse her children.",
+      "cognate_ids": [
+        "ar-habba",
+        "arc-habbeb",
+        "syc-ahheb"
+      ],
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "love",
+          "senses": [
+            {
+              "id": "peshitta-love",
+              "gloss": "love",
+              "definition": "Love, of God for the world and for his Son, of the disciples for God, for one another, for their neighbours and their enemies.",
+              "evidence": [
+                {
+                  "ref": "Jhn.3.16",
+                  "role": "defining",
+                  "note": "Peshitta: “so God loved (ܐܚܒ) the world that he gave his only Son”."
+                },
+                {
+                  "ref": "Mat.5.44",
+                  "role": "defining",
+                  "note": "Peshitta: “love (ܐܚܒܘ) your enemies”."
+                },
+                {
+                  "ref": "Mrk.12.31",
+                  "note": "Peshitta: “you shall love (ܕܬܚܒ) your neighbour as yourself” (Lev 19:18)."
+                },
+                {
+                  "ref": "Mat.19.19",
+                  "note": "Lev 19:18 again."
+                },
+                {
+                  "ref": "Rom.13.8",
+                  "note": "“He who loves his neighbour has fulfilled the law.”"
+                },
+                {
+                  "ref": "Jhn.14.21",
+                  "role": "defining",
+                  "note": "Peshitta: “he who has my commandments and keeps them, he it is who loves (ܡܚܒ) me”."
+                },
+                {
+                  "ref": "Jhn.13.34",
+                  "note": "“That you love one another as I have loved you.”"
+                },
+                {
+                  "ref": "Jhn.17.24",
+                  "note": "“You loved me before the foundation of the world.”"
+                },
+                {
+                  "ref": "1Jn.4.10",
+                  "note": "“Not that we loved God, but that he loved us and sent his Son.”"
+                },
+                {
+                  "ref": "Luk.7.47",
+                  "note": "“Her many sins are forgiven, for she loved much.”"
+                }
+              ],
+              "kin": [
+                "love-hold-dear"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "cherish, hold dear",
+          "senses": [
+            {
+              "id": "peshitta-cherish",
+              "gloss": "cherish",
+              "definition": "To cherish and long for, as a nurse cherishes her own children.",
+              "evidence": [
+                {
+                  "ref": "1Th.2.7",
+                  "role": "defining",
+                  "note": "Peshitta: “as a nurse who cherishes (ܕܡܚܒܒܐ) her children”, for θάλπῃ."
+                },
+                {
+                  "ref": "1Th.2.8",
+                  "note": "Peshitta: “so we cherish (ܡܚܒܒܝܢܢ) you”, for ὁμειρόμενοι."
+                }
+              ],
+              "kin": [
+                "love-hold-dear"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חוּבָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "love",
+      "summary": "The Peshitta's ܚܘܒܐ (ḥubbā), its word for ἀγάπη throughout the New Testament: “God is love.”",
+      "cognate_ids": [
+        "ar-habba",
+        "syc-ahheb"
+      ],
+      "senses": [
+        {
+          "id": "peshitta-love-noun",
+          "gloss": "love",
+          "definition": "Love: God's own nature and his love toward men, shown in sending his Son, and the love the disciples owe him and one another, shown in keeping his commandments.",
+          "evidence": [
+            {
+              "ref": "1Jn.4.8",
+              "role": "defining",
+              "note": "Peshitta: “because God is love (ܚܘܒܐ); whoever does not love does not know God”."
+            },
+            {
+              "ref": "1Jn.4.16",
+              "role": "defining",
+              "note": "“God is love, and he who remains in love remains in God.”"
+            },
+            {
+              "ref": "1Jn.5.3",
+              "role": "defining",
+              "note": "“This is the love of God, that we keep his commandments.”"
+            },
+            {
+              "ref": "Jhn.15.13",
+              "role": "defining",
+              "note": "“Greater love than this has no one, that a man lay down his life for his friends.”"
+            },
+            {
+              "ref": "Rom.5.8",
+              "note": "God shows his love toward us in that, while we were sinners, Christ died for us."
+            },
+            {
+              "ref": "Rom.13.10",
+              "note": "“Love is the fulfilling of the law.”"
+            },
+            {
+              "ref": "1Co.13.4",
+              "to": "1Co.13.8",
+              "note": "What love is and does."
+            },
+            {
+              "ref": "Jhn.13.35",
+              "note": "“By this all will know that you are my disciples, if you have love for one another.”"
+            }
+          ],
+          "kin": [
+            "love-hold-dear"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַבִּיבָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "beloved, dear",
+      "summary": "The Peshitta's ܚܒܝܒܐ (ḥabībā), for ἀγαπητός: the Father's “beloved Son”, and the apostles' “beloved” brethren. Arabic ḥabīb is the same word.",
+      "cognate_ids": [
+        "ar-habba",
+        "arc-habbeb",
+        "syc-ahheb"
+      ],
+      "senses": [
+        {
+          "id": "peshitta-beloved",
+          "gloss": "beloved",
+          "definition": "One loved and held dear: the Son by the Father, and the believers by God and by one another.",
+          "evidence": [
+            {
+              "ref": "Mat.3.17",
+              "role": "defining",
+              "note": "Peshitta: “this is my beloved (ܚܒܝܒܐ) Son, in whom I am well pleased”."
+            },
+            {
+              "ref": "Mat.17.5",
+              "note": "The same voice at the transfiguration."
+            },
+            {
+              "ref": "2Pe.1.17",
+              "note": "Peter recalls that voice."
+            },
+            {
+              "ref": "Mat.12.18",
+              "role": "defining",
+              "note": "Isa 42:1 quoted: “my beloved, in whom my soul is well pleased”."
+            },
+            {
+              "ref": "Mrk.12.6",
+              "note": "In the parable, the owner's one beloved son, sent last."
+            },
+            {
+              "ref": "Rom.1.7",
+              "note": "“To all who are in Rome, beloved of God, called and holy.”"
+            },
+            {
+              "ref": "1Jn.4.7",
+              "note": "“Beloved, let us love one another, for love is from God.”"
+            }
+          ],
+          "kin": [
+            "love-hold-dear"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-habba",
+      "lang": "ar",
+      "form": "حَبَّ، أَحَبَّ، حُبٌّ، حَبِيبٌ",
+      "translit": "ḥabba, ʾaḥabba, ḥubb, ḥabīb",
+      "gloss": "love; love, affection; beloved",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Lane's sources give ḥabba (form I, intransitive) “he was, or became, loved, beloved”, form IV ʾaḥabba “he loved”, form VI “they loved one another”, ḥubb “love, affection”, the contrary of buġḍ “hatred”, and ḥabīb “a person loved, beloved”, with ḥubāb in the same sense. Arabic ḥ (ح), not ḫ (خ), stands behind ח. The same root's ḥabb “grain, seed” is another word in Arabic and has no counterpart in scripture's Hebrew.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 495, root حب, حَبَّ (n6839); p. 495, احبّهُ (n6842); p. 496, تحابّوا (n6844)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 496, حُبٌّ (n6847); p. 497, حَبِيبٌ (n6857), حُبَابٌ (n6855)"
+        }
+      ]
+    },
+    {
+      "id": "arc-habbeb",
+      "lang": "arc",
+      "form": "חַבֵּב, חָבִיב",
+      "translit": "ḥabbēb, ḥăbîb",
+      "gloss": "(pael) love, honour; (ithpaal) be bound together in affection; beloved",
+      "relation": "cognate",
+      "note": "Jewish Aramaic. The Targum of Onkelos renders חֹבֵב in Deu 33:3 by this verb, and the Targum of Proverbs uses it for “exalt her” (Pro 4:8). Its ithpaal renders נִקְשְׁרָה in 1Sa 18:1, Jonathan's soul “knit” to David's, and חֲבִיבָא renders קְשׁוּרָה in Gen 44:30, Jacob's soul “bound up” in the lad's: love as being bound to someone.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲבַב",
+          "note": "Pa. to love, honour: Targ. Prov. IV, 8; Targ. O. Deut. XXXIII, 3. Ithpa. Targ. I Sam. XVIII, 1 (h. text נקשרה)."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חָבִיב",
+          "note": "Targ. Jer. XXXI, 19; Targ. Y. Gen. XLIV, 30 (h. text קשורה)."
+        }
+      ]
+    },
+    {
+      "id": "syc-ahheb",
+      "lang": "syc",
+      "form": "ܐܚܒ, ܚܘܒܐ, ܚܒܝܒܐ",
+      "translit": "ʾaḥḥeb, ḥubbā, ḥabībā",
+      "gloss": "love; love; beloved",
+      "relation": "cognate",
+      "note": "Syriac root ḥb: the verb “love” (glossed also “kindled”), ḥubbā “love, lovingkindness” and ḥabībā “beloved”. The Peshitta New Testament's use of these is given as words of the entry.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexemes 921 KB (kindled; love), 923 KB;BA (beloved), 925 KOBA (love; lovingkindness), root 583 KB"
+        }
+      ]
+    },
+    {
+      "id": "arc-hubba",
+      "lang": "arc",
+      "form": "חוּבָּא, עוּבָּא",
+      "translit": "ḥubbā, ʿubbā",
+      "gloss": "lap, bosom",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, spelled with ח and with ע. The Targum of Job renders בְּחֻבִּי in Job 31:33 by עוּבָּא (in a manuscript), and the Targums use the word for Hebrew חֵיק: “the wife of your bosom” (Deu 13:7 in the Hebrew numbering), fire in the bosom (Pro 6:27). It shows the sense of חֹב; whether ח or ע is older is not shown.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חוּבָּא I",
+          "note": "lap, bosom: Targ. Prov. VI, 27 (h. text חֵק); Targ. Y. Ex. IV, 6."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עוּבָּא",
+          "note": "bosom, lap: Targ. Y. Deut. XIII, 7; Targ. Prov. V, 20; Targ. Job XXXI, 33 Ms. (h. text חֻבִּי)."
+        }
+      ]
+    },
+    {
+      "id": "syc-ubba",
+      "lang": "syc",
+      "form": "ܥܘܒܐ",
+      "translit": "ʿubbā",
+      "gloss": "bosom, breast, lap",
+      "relation": "cognate",
+      "note": "With ע. The Peshitta New Testament uses it (five times) for κόλπος: the only Son “who is in the bosom of his Father” (Jhn 1:18), Lazarus carried “to Abraham's bosom” (Luk 16:22), the disciple reclining in Jesus' bosom (Jhn 13:23), good measure given “into your bosom” (Luk 6:38).",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2260 EOBA (bosom; breast; lap), root 1347"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "love-and-his-words",
+      "statement": "The one use of the Hebrew verb sets Yahweh's love beside his giving of the law: he came from Sinai with a fiery law, he loves the peoples, his holy ones are in his hand and sit at his feet, each receiving of his words, and Moses commanded the law as the inheritance of Jacob's assembly (Deu 33:2–4). The Peshitta, using the same root, joins the two in the same way: “he who has my commandments and keeps them, he it is who loves (ܡܚܒ) me” (Jhn 14:21), and “this is the love of God, that we keep his commandments” (1Jn 5:3). From the verses: those whom God loves are the people he holds in his hand and teaches, and their love answers his in receiving and keeping his words.",
+      "evidence": [
+        {
+          "ref": "Deu.33.2",
+          "to": "Deu.33.4"
+        },
+        {
+          "ref": "Jhn.14.21"
+        },
+        {
+          "ref": "1Jn.5.3"
+        }
+      ]
+    }
+  ],
+  "note": "BDB's h.aa.ab (חֹב, “חֻבִּי see חבב”, no tokens) is only a cross-reference and is not claimed. The name חֹבָב Hobab (h.ac.ac) has its own entry, names/hobab.json. חֻבָּה Hubbah/Jehubbah (1Ch 7:34, ketiv יחבה; keys h.ac.ad, h.ad.ae, j.bd.af) is filed here by BDB but has no name entry yet; its spellings may point as much to חבה/חבא “hide” (Isa 26:20 חֲבִי) as to חבב, so its root needs checking before it is written. The Peshitta's verbs for love are both ܐܚܒ and ܪܚܡ (e.g. Mrk 12:30 has ܪܚܡ, 12:31 ܐܚܒ); which words it chooses where is worth a closer look. SEDRA's root ḥb also holds ܚܒܘܒܐ “twig” and ܚܒܬܐ “stubble”, not taken up here. Syriac ܚܒ is also glossed “be kindled”; not followed up. The Targum of Deu 33:3 and of Job 31:33 are cited only through Jastrow."
+}
