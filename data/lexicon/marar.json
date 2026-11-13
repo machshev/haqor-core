@@ -785,8 +785,14 @@
             {
               "ref": "Mrk.15.23",
               "note": "They offered him wine mingled with myrrh (ἐσμυρνισμένον, from σμύρνα), and he did not take it."
+            },
+            {
+              "source": "thayer",
+              "locator": "s.v. σμύρνα",
+              "note": "“Hebr. מֹר, מוֹר”: myrrh, “a costly perfume which exudes from a certain tree or shrub in Arabia and Ethiopia”."
             }
-          ]
+          ],
+          "relation": "loan"
         }
       ]
     },
@@ -1835,5 +1841,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-13. Root key מרר, as the corpus keys it. Corpus faults: the database gives root מרר to the rest of BDB’s page after מרר, which are other roots and are not claimed here: מָרֵשָׁה (m.dr.ac, place), מְרָתַיִם (m.dr.af, the place Merathaim, Jer 50:21, a play on ‘double bitterness’ or ‘double rebellion’), מַשָּׂא (m.dr.ag, of נשׂא; Massa son of Ishmael), מְשׂוּרָה (m.dr.am, measure), מַשְׂרֵת (m.dr.az, pan), מַשׁ (m.dr.ba), מֵשָׁא (m.dr.bc), מִשְׁאָל (m.dr.bg, place), מִשְׁאֶרֶת (m.dr.bi, kneading trough, of שׁאר). Not claimed: מָרָה Marah (m.dq.ae), a place, named in Exo 15:23 from the adjective (cited there); the corpus also files adjective tokens under it by spelling. מְרָרִי Merari (m.dq.ap) and the gentilic הַמְּרָרִי (m.dq.aq) are on names/merari.json. m.dr.aa (מרר II “pass, flow”) has no tokens. Cross-references with no tokens, not claimed: m.bc.ac, m.ck.ao, m.dg.ah, m.dg.ai, m.dk.ad, m.dm.ai, w.ba.ai. The corpus files 1Sa 30:6 מָרָה and Exo 23:21 under מרה “rebel”; 1Sa 30:6 is cited here as the qal (feminine perfect, “was bitter”), and Exo 23:21 תַּמֵּר as the hiphil, a judgment call. Jer 31:21 תַּמְרוּרִים “signposts” is תמר (w.ba.ag), not claimed. Many tokens under m.dq.aa and m.dq.ac are the adjective by spelling; uses counted by lexicon-support will overlap. Doctrine ‘the-pierced-one’ places the bitter mourning of Zec 12:10 at Christ’s return by Rev 1:7, following the user’s scheme (Revelation = the return); check. Greek: Thayer derives σμύρνα from Hebrew מֹר and calls μύρον perhaps ‘akin’; Abbott-Smith gives no etymology, so σμύρνα is recorded as a rendering, not a loan; Thayer is not in sources.json. Leads not followed: Dillmann for Ge’ez መረረ; Ugaritic mr ‘bitter’ (Wiktionary only); Old South Arabic not checked; Peshitta ܡܡܪܡܪܢܐ (Heb 3:8, for παραπικρασμός of Psa 95:8, where the Hebrew is מְרִיבָה) not added as a word."
+  "note": "Drafted 2026-11-13. Root key מרר, as the corpus keys it. Corpus faults: the database gives root מרר to the rest of BDB’s page after מרר, which are other roots and are not claimed here: מָרֵשָׁה (m.dr.ac, place), מְרָתַיִם (m.dr.af, the place Merathaim, Jer 50:21, a play on ‘double bitterness’ or ‘double rebellion’), מַשָּׂא (m.dr.ag, of נשׂא; Massa son of Ishmael), מְשׂוּרָה (m.dr.am, measure), מַשְׂרֵת (m.dr.az, pan), מַשׁ (m.dr.ba), מֵשָׁא (m.dr.bc), מִשְׁאָל (m.dr.bg, place), מִשְׁאֶרֶת (m.dr.bi, kneading trough, of שׁאר). Not claimed: מָרָה Marah (m.dq.ae), a place, named in Exo 15:23 from the adjective (cited there); the corpus also files adjective tokens under it by spelling. מְרָרִי Merari (m.dq.ap) and the gentilic הַמְּרָרִי (m.dq.aq) are on names/merari.json. m.dr.aa (מרר II “pass, flow”) has no tokens. Cross-references with no tokens, not claimed: m.bc.ac, m.ck.ao, m.dg.ah, m.dg.ai, m.dk.ad, m.dm.ai, w.ba.ai. The corpus files 1Sa 30:6 מָרָה and Exo 23:21 under מרה “rebel”; 1Sa 30:6 is cited here as the qal (feminine perfect, “was bitter”), and Exo 23:21 תַּמֵּר as the hiphil, a judgment call. Jer 31:21 תַּמְרוּרִים “signposts” is תמר (w.ba.ag), not claimed. Many tokens under m.dq.aa and m.dq.ac are the adjective by spelling; uses counted by lexicon-support will overlap. Doctrine ‘the-pierced-one’ places the bitter mourning of Zec 12:10 at Christ’s return by Rev 1:7, following the user’s scheme (Revelation = the return); check. Greek: Thayer derives σμύρνα from Hebrew מֹר and calls μύρον perhaps ‘akin’; Abbott-Smith gives no etymology; Thayer’s (“Hebr. מֹר, מוֹר”) is cited, so σμύρνα is recorded as a loan. Leads not followed: Dillmann for Ge’ez መረረ; Ugaritic mr ‘bitter’ (Wiktionary only); Old South Arabic not checked; Peshitta ܡܡܪܡܪܢܐ (Heb 3:8, for παραπικρασμός of Psa 95:8, where the Hebrew is מְרִיבָה) not added as a word."
 }

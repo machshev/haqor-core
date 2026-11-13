@@ -191,6 +191,38 @@
       "licence": "Public domain (stated in the TEI edition's README)",
       "url": "https://github.com/translatable-exegetical-tools/Abbott-Smith",
       "local": "STEPBible-Data/greek_lexicon.jsonl"
+    },
+    {
+      "id": "thayer",
+      "citation": "J. H. Thayer, A Greek-English Lexicon of the New Testament (New York: American Book Company, 1889), dataset by nigelmsipa/thayers-greek-lexicon-dataset, by headword",
+      "lang": "grc",
+      "licence": "Public domain (1889)",
+      "url": "https://github.com/nigelmsipa/thayers-greek-lexicon-dataset",
+      "local": "STEPBible-Data/greek_lexicon.jsonl"
+    },
+    {
+      "id": "dulat-2015",
+      "citation": "G. del Olmo Lete and J. Sanmartín, A Dictionary of the Ugaritic Language in the Alphabetic Tradition, 3rd ed., trans. W. G. E. Watson (Leiden: Brill, 2015), by lemma and page",
+      "lang": "uga",
+      "licence": "In copyright; cited by page, not copied",
+      "url": "https://brill.com/",
+      "local": ""
+    },
+    {
+      "id": "hoftijzer-van-der-kooij-1976",
+      "citation": "J. Hoftijzer and G. van der Kooij, Aramaic Texts from Deir ʿAlla (Leiden: Brill, 1976), by combination and line",
+      "lang": "arc",
+      "licence": "In copyright; cited by page, not copied",
+      "url": "https://brill.com/",
+      "local": ""
+    },
+    {
+      "id": "littmann-hoefner-1962",
+      "citation": "E. Littmann and M. Höfner, Wörterbuch der Tigrē-Sprache (Wiesbaden: Franz Steiner, 1962), by page",
+      "lang": "sem",
+      "licence": "In copyright; cited by page, not copied",
+      "url": "https://www.steiner-verlag.de/",
+      "local": ""
     }
   ]
 }
