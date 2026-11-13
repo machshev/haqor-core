@@ -1,0 +1,436 @@
+{
+  "id": "anaph",
+  "root": "ענפ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "trees",
+    "plants",
+    "feasts",
+    "kingdom",
+    "judgement"
+  ],
+  "gloss": "branch, bough; full of branches",
+  "summary": "עָנָף is the bough of a tree, the leafy branch that spreads out from the trunk: the boughs of a leafy tree taken up at the feast of סֻכּוֹת (Lev 23:40), and with “root” the whole of a tree (Mal 3:19). The prophets use it of a tree or vine standing for a people or a kingdom: the branches it puts out are its growth and its shelter (Ezk 17:8, 23; 31:3; Psa 80:11). The adjective עָנֵף is a vine full of branches (Ezk 19:10), and Daniel’s Aramaic עֲנַף is the branches of Nebuchadnezzar’s tree, where the birds lodged (Dan 4:9). Aramaic and Syriac ʿanpā, branch, is the same word.",
+  "words": [
+    {
+      "lemma": "עָנָף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "branch, bough; branches (collective)",
+      "bdb": [
+        "p.ea.ab"
+      ],
+      "cognate_ids": [
+        "arc-anpa",
+        "syc-anpa"
+      ],
+      "summary": "A bough of a tree, or in the singular the branching growth a tree or vine puts out. Seven uses, five of them in figures of a people or kingdom as a tree.",
+      "senses": [
+        {
+          "id": "bough",
+          "gloss": "bough, branch of a tree",
+          "definition": "A leafy branch of a tree; with שֹׁרֶשׁ, root, the two ends of the tree and so the whole of it.",
+          "evidence": [
+            {
+              "ref": "Lev.23.40",
+              "role": "defining",
+              "note": "On the first day of the feast of סֻכּוֹת: fruit of goodly trees, fronds of palms, “and עֲנַף עֵץ־עָבֹת”, boughs of leafy trees, and willows of the brook, “and you shall rejoice before Yahweh your God seven days”."
+            },
+            {
+              "ref": "Neh.8.15",
+              "note": "The feast kept by the law: branches of olive, myrtle and palm and “leaves of עֵץ עָבֹת” fetched to make booths, as it is written (Lev 23:42). It shows the עֵץ עָבֹת whose boughs Lev 23:40 names is a thick, leafy tree."
+            },
+            {
+              "ref": "Mal.3.19",
+              "role": "defining",
+              "note": "The day burning like an oven will make the proud and the wicked stubble, “so that it will leave them neither שֹׁרֶשׁ וְעָנָף”: root and branch, nothing of the tree left."
+            },
+            {
+              "ref": "Ezk.31.3",
+              "role": "defining",
+              "note": "“Assyria was a cedar in Lebanon, יְפֵה עָנָף, fair of bough, and a shading wood, and high of stature”: the boughs are the tree’s spread and its shade."
+            },
+            {
+              "ref": "Psa.80.11",
+              "role": "defining",
+              "note": "The vine brought out of Egypt (Psa 80:9): “the mountains were covered with its shadow, וַעֲנָפֶיהָ, and its boughs, were cedars of God”. Israel’s spread in the land is its branches."
+            }
+          ]
+        },
+        {
+          "id": "branching-growth",
+          "gloss": "branches, branching growth (collective)",
+          "definition": "In the singular, the branches a planted vine, tree or land puts out as it grows, set beside the fruit it bears: what a plant ‘makes’, ‘bears’ or ‘gives’.",
+          "kin": [
+            "full-of-branches"
+          ],
+          "cognate_ids": [
+            "ar-unfuwan"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.17.8",
+              "role": "defining",
+              "note": "The vine planted in a good field by many waters “לַעֲשׂוֹת עָנָף וְלָשֵׂאת פֶּרִי”, to make branches and bear fruit: Zedekiah’s kingdom, set up by the king of Babylon (Ezk 17:12–14)."
+            },
+            {
+              "ref": "Ezk.17.23",
+              "role": "defining",
+              "note": "The tender twig Yahweh plants on the high mountain of Israel “וְנָשָׂא עָנָף וְעָשָׂה פֶרִי”, will bear branches and make fruit, and become a mighty cedar, with every bird dwelling in the shade of its boughs (דָּלִיּוֹת)."
+            },
+            {
+              "ref": "Ezk.36.8",
+              "role": "defining",
+              "note": "“You, mountains of Israel, עַנְפְּכֶם תִּתֵּנוּ, you shall give your branches, and bear your fruit for my people Israel, for they are near to come”: the land’s growth when its people return. The suffixed form points to a segholate עֶנֶף beside עָנָף."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κλάδος",
+          "gloss": "branch, bough",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.40, עֲנַף → κλάδους"
+            },
+            {
+              "ref": "Mrk.4.32",
+              "role": "defining",
+              "note": "The kingdom of God as a mustard seed that “puts out great κλάδους, so that the birds of heaven can lodge under its shade”: the picture of Ezk 17:23, the planted cedar with every bird under it."
+            },
+            {
+              "ref": "Mat.13.32",
+              "note": "The birds of heaven come and lodge “in its κλάδοις”."
+            },
+            {
+              "ref": "Luk.13.19",
+              "note": "The same: the birds lodged “in its κλάδοις”, as in the branches (עֲנַף) of Daniel’s tree (Dan 4:9, 18)."
+            },
+            {
+              "ref": "Mat.21.8",
+              "note": "The crowds cut κλάδους from the trees and spread them in the way before the king coming to Zion."
+            },
+            {
+              "ref": "Rom.11.16",
+              "note": "“If the root is holy, so are the κλάδοι”: root and branches as the whole tree, the olive that is Israel (Rom 11:17–24)."
+            },
+            {
+              "ref": "Mat.24.32"
+            }
+          ]
+        },
+        {
+          "lemma": "κλῆμα",
+          "gloss": "branch, especially of a vine",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Mal.3.19, וְעָנָף → κλῆμα"
+            },
+            {
+              "ref": "Jhn.15.5",
+              "role": "defining",
+              "note": "“I am the vine, you are the κλήματα”: the vine’s branches, which bear fruit only abiding in it."
+            },
+            {
+              "ref": "Jhn.15.6",
+              "note": "A branch that does not abide is cast out, withers, and is gathered and burned: the end of Mal 3:19."
+            },
+            {
+              "ref": "Jhn.15.2"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "פְּרִי",
+            "note": "“Fruit”: a planted vine or tree, or the land, puts out branches and bears fruit.",
+            "evidence": [
+              {
+                "ref": "Ezk.17.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.17.23"
+              },
+              {
+                "ref": "Ezk.36.8"
+              }
+            ]
+          },
+          {
+            "lemma": "צֵל",
+            "note": "“Shade, shadow”: the boughs are what casts it.",
+            "evidence": [
+              {
+                "ref": "Psa.80.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.31.3"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שֹׁרֶשׁ",
+            "note": "“Root”: the other end of the tree; the pair is the whole of it.",
+            "evidence": [
+              {
+                "ref": "Mal.3.19",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שֹׁרֶשׁ וְעָנָף",
+            "gloss": "root and branch: the whole, nothing left",
+            "evidence": [
+              {
+                "ref": "Mal.3.19",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲנַף עֵץ־עָבֹת",
+            "gloss": "boughs of leafy trees",
+            "evidence": [
+              {
+                "ref": "Lev.23.40",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עָשָׂה עָנָף / נָשָׂא עָנָף",
+            "gloss": "make branches, bear branches",
+            "evidence": [
+              {
+                "ref": "Ezk.17.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.17.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֲנַף",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "branch, bough",
+      "bdb": [
+        "xp.ak.ad"
+      ],
+      "cognate_ids": [
+        "arc-anpa",
+        "syc-anpa"
+      ],
+      "summary": "Daniel’s Aramaic for the branches of the great tree of Nebuchadnezzar’s dream, where the birds of heaven lodged; the tree is the king and his kingdom (Dan 4:17–19).",
+      "senses": [
+        {
+          "id": "aramaic-bough",
+          "gloss": "branches of a tree",
+          "definition": "The branches of a tree, where birds lodge, beside its leaves (עֳפִי) and fruit (אֵנֶב); cut off when the tree is felled.",
+          "kin": [
+            "bough"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.4.9",
+              "role": "defining",
+              "note": "“Its leaves fair and its fruit much … the beasts of the field had shade under it, וּבְעַנְפוֹהִי, and in its branches, the birds of heaven dwelt.”"
+            },
+            {
+              "ref": "Dan.4.11",
+              "role": "defining",
+              "note": "The watcher’s cry: “Hew down the tree וְקַצִּצוּ עַנְפוֹהִי, and cut off its branches, strip off its leaves and scatter its fruit; let the beasts flee from under it and the birds מִן־עַנְפוֹהִי, from its branches.”"
+            },
+            {
+              "ref": "Dan.4.18",
+              "note": "Daniel repeats the dream: in its branches the birds of heaven had their dwelling."
+            },
+            {
+              "ref": "Dan.4.19",
+              "role": "defining",
+              "note": "“It is you, O king, who have grown and become strong”: the tree and its branches are the king and his dominion to the end of the earth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָנֵף",
+      "pos": "adjective",
+      "gloss": "full of branches, branching",
+      "bdb": [
+        "p.ea.ac"
+      ],
+      "cognate_ids": [
+        "arc-anpa",
+        "syc-anpa"
+      ],
+      "summary": "Once only, of a vine: full of branches, set beside “fruitful”.",
+      "senses": [
+        {
+          "id": "full-of-branches",
+          "gloss": "full of branches",
+          "definition": "Of a vine well watered: putting out many branches, as פֹּרִיָּה is bearing much fruit.",
+          "kin": [
+            "branching-growth"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.19.10",
+              "role": "defining",
+              "note": "“Your mother was like a vine … planted by the waters; פֹּרִיָּה וַעֲנֵפָה הָיְתָה, fruitful and full of branches she was, from many waters.”"
+            },
+            {
+              "ref": "Ezk.19.11",
+              "note": "The branching vine’s strong rods became rulers’ sceptres: the vine is the royal house of Judah."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-anpa",
+      "lang": "arc",
+      "form": "ענפא",
+      "translit": "ʿanpā",
+      "gloss": "branch",
+      "relation": "cognate",
+      "note": "The same noun in the Aramaic of the Targums and the Talmud; the Targum of Ezekiel uses it where the Hebrew of Ezk 17:8 has עָנָף.",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ʿnp, ʿnpʾ n.m., sense 1 “branch”",
+          "url": "https://cal.huc.edu/oneentry.php?lemma=%28np%20N&cits=all",
+          "note": "Common Aramaic; Targum Neofiti Gen 50:1 ענפוי; BT Pes 111b כל תפיש ענפיה קשי טוליה, “whichever has more branches has a more harmful shadow”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲנַף (ch.), עֲנָפָא",
+          "note": "“same” as Hebrew עָנָף; Targ. Ezk 17:8, Targ. Isa 17:6."
+        }
+      ]
+    },
+    {
+      "id": "syc-anpa",
+      "lang": "syc",
+      "form": "ܥܢܦܐ",
+      "translit": "ʿnāpā",
+      "gloss": "branch; mane",
+      "relation": "cognate",
+      "note": "Syriac uses it of branches beside shoots, and of the mane of an animal, hair spreading as branches do.",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ʿnp, ʿnpʾ n.m., senses 1 “branch” and 2 “mane” (Syriac)",
+          "url": "https://cal.huc.edu/oneentry.php?lemma=%28np%20N&cits=all",
+          "note": "Peshitta Wisdom 4:4 ܥܘܦܝܐ ܘܥ̈ܢܦܐ, shoots and branches; Geoponica 107:24, “manes”."
+        }
+      ]
+    },
+    {
+      "id": "ar-unfuwan",
+      "lang": "ar",
+      "form": "عُنْفُوَان",
+      "translit": "ʿunfuwān",
+      "gloss": "the first of a thing; the first growth of youth or of herbage",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "The Arabic root عنف is chiefly harshness, violence (عُنْف, عَنِيف). Only this derivative touches growth, and Lane’s sources derive it from the root of harshness or from أَنْف; no Arabic word of the root means branch. Recorded so the lack of an Arabic match is visible, not as evidence for the Hebrew.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2174, art. عنف, عُنْفُوَانٌ",
+          "note": "“The first of a thing: or the first of the beauty and brightness thereof: and predominantly of youth … and of plants, or herbage.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2174, art. عنف, عُنْفٌ",
+          "note": "“Ungentleness, roughness, harshness … violence”: the root’s main sense."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Ezekiel sets two trees against each other. The vine the king of Babylon planted was to make branches and bear fruit under him, and was rooted up when it turned to Egypt (Ezk 17:8–10). Then Yahweh himself takes a tender twig from the top of the cedar and plants it on the high mountain of Israel, where it bears branches and fruit and becomes a mighty cedar with every bird dwelling under it, and all the trees of the field know that Yahweh brings down the high tree and lifts up the low (Ezk 17:22–24). Assyria’s cedar, fair of bough, and Nebuchadnezzar’s tree with the birds in its branches were great kingdoms of men, and both were cut down so that the living may know that the Most High rules in the kingdom of men and gives it to whom he will (Ezk 31:3, 10–12; Dan 4:11, 14, 19). Jesus takes up the same picture for the kingdom of God: a seed that grows and puts out great branches, so that the birds of heaven lodge under its shade (Mrk 4:30–32). So the kingdom of God is the tree Yahweh plants on Israel’s mountains to replace the kingdoms of men he fells, small in its beginning and filling the earth at its end.",
+      "evidence": [
+        {
+          "ref": "Ezk.17.22",
+          "role": "defining"
+        },
+        {
+          "ref": "Ezk.17.23",
+          "role": "defining"
+        },
+        {
+          "ref": "Ezk.17.24"
+        },
+        {
+          "ref": "Ezk.17.8"
+        },
+        {
+          "ref": "Ezk.31.3"
+        },
+        {
+          "ref": "Ezk.31.12"
+        },
+        {
+          "ref": "Dan.4.11"
+        },
+        {
+          "ref": "Dan.4.14",
+          "role": "defining"
+        },
+        {
+          "ref": "Dan.4.19"
+        },
+        {
+          "ref": "Mrk.4.30",
+          "to": "Mrk.4.32",
+          "role": "defining"
+        }
+      ]
+    },
+    {
+      "topic": "end-of-the-wicked",
+      "statement": "Malachi says the coming day will burn the proud and all who do wickedly as stubble, leaving them “neither root nor branch”, and that they will be ashes under the feet of those who fear Yahweh’s name (Mal 3:19, 21). Root and branch are the whole tree; nothing of it is left to go on living. The end of the wicked is to be consumed, not kept alive in another state.",
+      "evidence": [
+        {
+          "ref": "Mal.3.19",
+          "role": "defining"
+        },
+        {
+          "ref": "Mal.3.21",
+          "role": "defining"
+        },
+        {
+          "ref": "Jhn.15.6"
+        }
+      ]
+    }
+  ],
+  "note": "Root key ענפ as the corpus keys it. BDB key p.ea.aa is the bare root heading with no tokens and is not given to any word. Ezk 36:8 עַנְפְּכֶם is filed under p.ea.ab though its form suggests a segholate עֶנֶף; kept as one word. No Ugaritic, Akkadian or Phoenician match found; Arabic عنف means harshness, so the root is so far attested only in Hebrew and Aramaic. Payne Smith (payne-smith-1903) not yet consulted for Syriac ʿnāpā; CAL’s Syriac citation stands in for it. Rabbinic Hebrew (Jastrow s.v. עָנָף) also uses the word of locks of hair (Men. 42a), as Syriac does of a mane; and the Sifra on Lev 23:40 identifies עֵץ עָבֹת by its branches covering its trunk: tradition, not evidence, left out. Greek βλαστός (Ezk 17:8, 23 in the Septuagint) is not in the New Testament and is left out."
+}
