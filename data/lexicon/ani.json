@@ -1,0 +1,1503 @@
+{
+  "id": "ani",
+  "root": "אני",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "pronoun",
+    "self",
+    "name-of-god",
+    "one-god"
+  ],
+  "gloss": "I, I myself; we",
+  "summary": "The pronouns of the one speaking: אֲנִי and the longer אָנֹכִי “I”, אֲנַחְנוּ and the shorter נַחְנוּ “we”, and in scripture’s Aramaic אֲנָה and אֲנַחְנָא. Hebrew marks the person on the verb already, so the pronoun is written where the speaker is named or set apart: “I am Joseph”, “but as for me”, “I myself”, and above all in Yahweh’s own “I am Yahweh” and “I am he, and there is no god beside me”, which Jesus takes up as “I am he” in John. No root with a meaning stands behind these words: the same pronouns run through every Semitic language, and the only part they share with anything else is the pointing element ʾan- that “you” (אַתָּה, from ʾanta) shares too, so the entry is keyed by the word’s own consonants.",
+  "words": [
+    {
+      "lemma": "אֲנִי",
+      "bdb": [
+        "a.eg.aa"
+      ],
+      "cognate_ids": [
+        "ar-ana",
+        "akk-anaku",
+        "uga-an",
+        "phn-ank",
+        "gez-ana",
+        "arc-ana",
+        "syc-ena"
+      ],
+      "pos": "pronoun",
+      "gloss": "I",
+      "summary": "The commoner form, for man and woman alike. Leviticus (71 times) and Ezekiel (169) use it almost alone, as do Ecclesiastes and the later books; Deuteronomy prefers אָנֹכִי (56 to 9). The verses show no difference in meaning between the two.",
+      "senses": [
+        {
+          "id": "ani-speaker",
+          "gloss": "I (the speaker named or identified)",
+          "definition": "Stands as the subject of a clause with no verb, naming who the speaker is or what he is; alone, it answers “who are you?”: “(it is) I”.",
+          "evidence": [
+            {
+              "ref": "Gen.45.3",
+              "role": "defining",
+              "note": "אֲנִי יוֹסֵף: “I am Joseph”."
+            },
+            {
+              "ref": "Gen.27.24",
+              "role": "defining",
+              "note": "“Are you my son Esau?” and he said, אָנִי: “I am”."
+            },
+            {
+              "ref": "Gen.27.32",
+              "note": "“Who are you?” — “I am your son, your firstborn, Esau”."
+            },
+            {
+              "ref": "Gen.41.44",
+              "note": "אֲנִי פַרְעֹה: “I am Pharaoh”."
+            },
+            {
+              "ref": "Psa.39.5",
+              "note": "“Let me know how frail I am (מֶה־חָדֵל אָנִי)”."
+            }
+          ]
+        },
+        {
+          "id": "ani-stressed",
+          "gloss": "I, as for me (the speaker set apart)",
+          "definition": "Written beside a verb that already marks the person, it sets the speaker apart: against someone else (“but I”), or as the one who does what follows (“I am bringing”, “which I am giving”).",
+          "evidence": [
+            {
+              "ref": "Gen.6.17",
+              "role": "defining",
+              "note": "וַאֲנִי הִנְנִי מֵבִיא אֶת־הַמַּבּוּל: “and I, behold, I am bringing the flood”."
+            },
+            {
+              "ref": "Psa.31.15",
+              "role": "defining",
+              "note": "וַאֲנִי עָלֶיךָ בָטַחְתִּי: “but as for me, I have trusted in you, Yahweh”, against the enemies of the verses before."
+            },
+            {
+              "ref": "Lev.23.10",
+              "note": "הָאָרֶץ אֲשֶׁר אֲנִי נֹתֵן לָכֶם: “the land which I am giving you”."
+            },
+            {
+              "ref": "Psa.2.6",
+              "note": "וַאֲנִי נָסַכְתִּי מַלְכִּי: “but I, I have set my king on Zion”, against the kings who rage."
+            },
+            {
+              "ref": "Gen.9.9",
+              "note": "“And I, behold, I establish my covenant with you”."
+            },
+            {
+              "ref": "Gen.37.30",
+              "note": "וַאֲנִי אָנָה אֲנִי־בָא: “and I, where am I to go?”"
+            },
+            {
+              "ref": "Psa.82.6",
+              "note": "אֲנִי־אָמַרְתִּי אֱלֹהִים אַתֶּם: “I said, you are gods”, quoted by Jesus (Jhn 10:34)."
+            },
+            {
+              "ref": "Jhn.10.34",
+              "note": "ἐγὼ εἶπα, Peshitta ܐܢܐ ܐܡܪܬ: Psa 82:6 quoted."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "I myself (after the verb)",
+              "definition": "Set after a verb, the pronoun leans on the person who acts: “I myself”, “I too”; Ecclesiastes uses it so throughout.",
+              "evidence": [
+                {
+                  "ref": "Ecc.2.1",
+                  "role": "defining",
+                  "note": "אָמַרְתִּי אֲנִי בְּלִבִּי: “I said, I myself, in my heart”."
+                },
+                {
+                  "ref": "Ecc.1.16",
+                  "note": "דִּבַּרְתִּי אֲנִי עִם־לִבִּי: “I spoke, I, with my heart”."
+                },
+                {
+                  "ref": "Lev.26.24",
+                  "role": "defining",
+                  "note": "וְהִכֵּיתִי אֶתְכֶם גַּם־אָנִי: “and I, even I, will strike you seven times”."
+                }
+              ]
+            },
+            {
+              "gloss": "me, mine (after a suffix)",
+              "definition": "After a pronoun suffix of the first person, the free pronoun repeats it to stress it: “me, me also”.",
+              "evidence": [
+                {
+                  "ref": "Gen.27.34",
+                  "role": "defining",
+                  "note": "בָּרֲכֵנִי גַם־אָנִי אָבִי: “bless me, me also, my father”."
+                },
+                {
+                  "ref": "1Sa.25.24",
+                  "role": "defining",
+                  "note": "בִּי־אֲנִי אֲדֹנִי הֶעָוֺן: “on me, me, my lord, be the guilt”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ani-yahweh",
+          "gloss": "I (Yahweh, declaring who he is)",
+          "definition": "Yahweh names himself to his people: “I am Yahweh”, “I am Yahweh your God”, set at the end of a law as the ground for keeping it, and in the prophets as what his acts will make known.",
+          "kin": [
+            "anokhi-yahweh",
+            "ena-i-am"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.6.2",
+              "role": "defining",
+              "note": "וַיֹּאמֶר אֵלָיו אֲנִי יַהְוֶה: God reveals himself to Moses by his name."
+            },
+            {
+              "ref": "Lev.23.22",
+              "role": "defining",
+              "note": "The corner of the field left for the poor and the stranger: אֲנִי יַהְוֶה אֱלֹהֵיכֶם."
+            },
+            {
+              "ref": "Lev.23.43",
+              "note": "The booths, “that your generations may know that I made the children of Israel dwell in booths … I am Yahweh your God”."
+            },
+            {
+              "ref": "Num.10.10",
+              "note": "The trumpets over the offerings “for a memorial before your God: I am Yahweh your God”."
+            },
+            {
+              "ref": "Gen.15.7",
+              "note": "“I am Yahweh who brought you out of Ur of the Chaldeans”."
+            },
+            {
+              "ref": "Gen.17.1",
+              "note": "אֲנִי־אֵל שַׁדַּי: “I am El Shaddai; walk before me”."
+            },
+            {
+              "ref": "Exo.6.7",
+              "note": "“And you shall know that I am Yahweh your God, who brings you out”."
+            },
+            {
+              "ref": "Ezk.6.7",
+              "note": "וִידַעְתֶּם כִּי־אֲנִי יַהְוֶה: Ezekiel’s refrain."
+            }
+          ],
+          "senses": [
+            {
+              "id": "ani-hu",
+              "gloss": "I am he (אֲנִי הוּא)",
+              "definition": "“I (am) he”: Yahweh is the one who acts and there is no other god; in Isaiah, with “I am the first and I am the last”.",
+              "evidence": [
+                {
+                  "ref": "Deu.32.39",
+                  "role": "defining",
+                  "note": "כִּי אֲנִי אֲנִי הוּא וְאֵין אֱלֹהִים עִמָּדִי: “that I, I am he, and there is no god with me; I kill and I make alive”."
+                },
+                {
+                  "ref": "Isa.43.10",
+                  "role": "defining",
+                  "note": "“that you may know and believe me and understand that I am he: before me no god was formed, and after me there shall be none”."
+                },
+                {
+                  "ref": "Isa.41.4",
+                  "note": "“I, Yahweh, the first, and with the last, I am he”."
+                },
+                {
+                  "ref": "Isa.48.12",
+                  "note": "אֲנִי־הוּא אֲנִי רִאשׁוֹן אַף אֲנִי אַחֲרוֹן."
+                },
+                {
+                  "ref": "Isa.44.6",
+                  "note": "“I am the first and I am the last, and beside me there is no God”."
+                },
+                {
+                  "ref": "Isa.45.5",
+                  "note": "אֲנִי יַהְוֶה וְאֵין עוֹד: “I am Yahweh, and there is none else”."
+                },
+                {
+                  "ref": "Jhn.13.19",
+                  "note": "“that when it comes to pass you may believe that I am he (ἐγώ εἰμι)”, in the words of Isa 43:10."
+                }
+              ]
+            },
+            {
+              "gloss": "as I live (חַי־אָנִי)",
+              "definition": "Yahweh’s oath by his own life: what follows is as sure as that he lives.",
+              "evidence": [
+                {
+                  "ref": "Num.14.21",
+                  "role": "defining",
+                  "note": "וְאוּלָם חַי־אָנִי: “but truly, as I live, all the earth shall be filled with the glory of Yahweh”."
+                },
+                {
+                  "ref": "Num.14.28",
+                  "note": "חַי־אָנִי נְאֻם־יַהְוֶה: the oath that the generation in the wilderness would die there."
+                },
+                {
+                  "ref": "Isa.49.18",
+                  "note": "חַי־אָנִי נְאֻם־יַהְוֶה: Zion shall wear her gathered children."
+                },
+                {
+                  "ref": "Rom.14.11",
+                  "note": "ζῶ ἐγώ, Peshitta ܚܝ ܐܢܐ: Paul joins the oath of Isa 49:18 to Isa 45:23."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐγώ",
+          "gloss": "I",
+          "evidence": [
+            {
+              "ref": "Jhn.13.19",
+              "note": "ἵνα … πιστεύσητε ὅτι ἐγώ εἰμι, the words of Isa 43:10 in the Septuagint."
+            },
+            {
+              "ref": "Jhn.10.34",
+              "note": "ἐγὼ εἶπα, θεοί ἐστε: Psa 82:6."
+            },
+            {
+              "ref": "Rom.14.11",
+              "note": "ζῶ ἐγώ: Isa 49:18."
+            },
+            {
+              "ref": "Rev.1.17",
+              "note": "ἐγώ εἰμι ὁ πρῶτος καὶ ὁ ἔσχατος: the words of Isa 44:6; 48:12."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:22 word 18",
+              "note": "ἐγώ for אֲנִי in “I am Yahweh your God”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 43:10 words 14–15",
+              "note": "ἐγώ εἰμι for אֲנִי הוּא."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 32:39 words 4–6",
+              "note": "ἐγώ εἰμι for אֲנִי אֲנִי הוּא."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אָנֹכִי",
+            "note": "The two forms side by side in one verse, with no change of sense.",
+            "evidence": [
+              {
+                "ref": "Isa.45.12",
+                "note": "אָנֹכִי עָשִׂיתִי אֶרֶץ … אֲנִי יָדַי נָטוּ שָׁמַיִם."
+              },
+              {
+                "ref": "Deu.32.39",
+                "note": "אֲנִי three times, with the same God speaking."
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אַתָּה",
+            "note": "The speaker against the one spoken to.",
+            "evidence": [
+              {
+                "ref": "Psa.31.15",
+                "note": "וַאֲנִי … אֱלֹהַי אָתָּה: “but I … I said, you are my God”."
+              },
+              {
+                "ref": "Psa.82.6",
+                "note": "אֲנִי־אָמַרְתִּי אֱלֹהִים אַתֶּם."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֲנִי יַהְוֶה",
+            "gloss": "I am Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.6.2"
+              },
+              {
+                "ref": "Isa.45.5"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲנִי יַהְוֶה אֱלֹהֵיכֶם",
+            "gloss": "I am Yahweh your God (closing a law)",
+            "evidence": [
+              {
+                "ref": "Lev.23.22"
+              },
+              {
+                "ref": "Lev.23.43"
+              },
+              {
+                "ref": "Num.10.10"
+              }
+            ]
+          },
+          {
+            "phrase": "וִידַעְתֶּם כִּי־אֲנִי יַהְוֶה",
+            "gloss": "and you shall know that I am Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.6.7"
+              },
+              {
+                "ref": "Ezk.6.7"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲנִי הוּא",
+            "gloss": "I am he",
+            "evidence": [
+              {
+                "ref": "Deu.32.39"
+              },
+              {
+                "ref": "Isa.43.10"
+              },
+              {
+                "ref": "Isa.41.4"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲנִי רִאשׁוֹן וַאֲנִי אַחֲרוֹן",
+            "gloss": "I am the first and I am the last",
+            "evidence": [
+              {
+                "ref": "Isa.44.6"
+              },
+              {
+                "ref": "Isa.48.12"
+              },
+              {
+                "ref": "Rev.1.17"
+              }
+            ]
+          },
+          {
+            "phrase": "חַי־אָנִי",
+            "gloss": "as I live (Yahweh’s oath)",
+            "evidence": [
+              {
+                "ref": "Num.14.21"
+              },
+              {
+                "ref": "Num.14.28"
+              },
+              {
+                "ref": "Isa.49.18"
+              }
+            ]
+          },
+          {
+            "phrase": "וַאֲנִי",
+            "gloss": "and I; but as for me",
+            "evidence": [
+              {
+                "ref": "Psa.31.15"
+              },
+              {
+                "ref": "Gen.6.17"
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־אָנִי",
+            "gloss": "I too, even I; me also",
+            "evidence": [
+              {
+                "ref": "Lev.26.24"
+              },
+              {
+                "ref": "Gen.27.34"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אָנֹכִי",
+      "root": "אנכי",
+      "bdb": [
+        "a.ei.aa"
+      ],
+      "cognate_ids": [
+        "akk-anaku",
+        "uga-ank",
+        "phn-ank",
+        "arc-ana",
+        "syc-ena"
+      ],
+      "pos": "pronoun",
+      "gloss": "I",
+      "summary": "The longer form of “I”, used as אֲנִי is, in the same kinds of clause and sometimes in the same verse (Isa 45:12). Its ending -ki answers Akkadian anāku and Ugaritic and Phoenician ʾnk; the shorter אֲנִי answers Arabic and Ge'ez ʾana. Deuteronomy prefers it (56 times to 9), and Genesis uses it more than אֲנִי; Leviticus, Ecclesiastes and Lamentations never use it, and Ezekiel only once (Ezk 36:28).",
+      "senses": [
+        {
+          "gloss": "I (the speaker named or identified)",
+          "definition": "Subject of a clause with no verb: who or what the speaker is.",
+          "kin": [
+            "ani-speaker"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.24.24",
+              "role": "defining",
+              "note": "בַּת־בְּתוּאֵל אָנֹכִי: “I am the daughter of Bethuel”."
+            },
+            {
+              "ref": "Rut.3.9",
+              "role": "defining",
+              "note": "“Who are you?” — אָנֹכִי רוּת אֲמָתֶךָ: “I am Ruth your handmaid”."
+            },
+            {
+              "ref": "Gen.27.19",
+              "note": "אָנֹכִי עֵשָׂו בְּכֹרֶךָ: Jacob’s lie, “I am Esau your firstborn”."
+            },
+            {
+              "ref": "Gen.16.8",
+              "note": "מִפְּנֵי שָׂרַי גְּבִרְתִּי אָנֹכִי בֹּרַחַת: “I am fleeing from Sarai”."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "who am I? (the speaker made small)",
+              "definition": "Said of oneself before God or a greater one: who am I, I am dust, a worm, a youth.",
+              "evidence": [
+                {
+                  "ref": "Exo.3.11",
+                  "role": "defining",
+                  "note": "מִי אָנֹכִי כִּי אֵלֵךְ אֶל־פַּרְעֹה: “who am I, that I should go to Pharaoh?”"
+                },
+                {
+                  "ref": "Gen.18.27",
+                  "role": "defining",
+                  "note": "וְאָנֹכִי עָפָר וָאֵפֶר: “and I am dust and ashes”."
+                },
+                {
+                  "ref": "Psa.22.7",
+                  "note": "וְאָנֹכִי תוֹלַעַת וְלֹא־אִישׁ: “but I am a worm and no man”."
+                },
+                {
+                  "ref": "Jer.1.6",
+                  "note": "כִּי־נַעַר אָנֹכִי: “for I am a youth”."
+                },
+                {
+                  "ref": "Gen.4.9",
+                  "note": "הֲשֹׁמֵר אָחִי אָנֹכִי: “am I my brother’s keeper?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gloss": "I, as for me (set apart)",
+          "definition": "Written beside a verb to set the speaker against another.",
+          "kin": [
+            "ani-stressed"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.17.45",
+              "role": "defining",
+              "note": "אַתָּה בָּא אֵלַי בְּחֶרֶב … וְאָנֹכִי בָא־אֵלֶיךָ בְּשֵׁם יַהְוֶה: “you come to me with a sword … but I come to you in the name of Yahweh”."
+            },
+            {
+              "ref": "Jdg.5.3",
+              "note": "אָנֹכִי לַיהוָה אָנֹכִי אָשִׁירָה: “I, to Yahweh, I will sing”."
+            }
+          ]
+        },
+        {
+          "id": "anokhi-yahweh",
+          "gloss": "I (Yahweh, declaring who he is)",
+          "definition": "Yahweh’s “I am”: who he is, and that he is with his servant.",
+          "kin": [
+            "ani-yahweh"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.20.2",
+              "role": "defining",
+              "note": "אָנֹכִי יַהְוֶה אֱלֹהֶיךָ אֲשֶׁר הוֹצֵאתִיךָ: the first word of the ten."
+            },
+            {
+              "ref": "Exo.3.6",
+              "role": "defining",
+              "note": "אָנֹכִי אֱלֹהֵי אָבִיךָ אֱלֹהֵי אַבְרָהָם: “I am the God of your father, the God of Abraham”; Jesus argues from it that the dead are raised (Mat 22:32; Luk 20:37)."
+            },
+            {
+              "ref": "Isa.43.11",
+              "note": "אָנֹכִי אָנֹכִי יַהְוֶה וְאֵין מִבַּלְעָדַי מוֹשִׁיעַ: “I, I am Yahweh, and beside me there is no saviour”."
+            },
+            {
+              "ref": "Isa.43.25",
+              "note": "אָנֹכִי אָנֹכִי הוּא מֹחֶה פְשָׁעֶיךָ: “I, I am he who blots out your transgressions”."
+            },
+            {
+              "ref": "Gen.26.24",
+              "note": "אָנֹכִי אֱלֹהֵי אַבְרָהָם … כִּי־אִתְּךָ אָנֹכִי: “I am the God of Abraham … for I am with you”."
+            },
+            {
+              "ref": "Gen.28.15",
+              "note": "וְהִנֵּה אָנֹכִי עִמָּךְ: “and behold, I am with you”."
+            },
+            {
+              "ref": "Mrk.12.26",
+              "note": "ἐγὼ ὁ θεὸς Ἀβραάμ, Peshitta ܐܢܐ ܐܢܐ ܐܠܗܗ ܕܐܒܪܗܡ: Exo 3:6 quoted."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐγώ",
+          "gloss": "I",
+          "evidence": [
+            {
+              "ref": "Mat.22.32",
+              "note": "ἐγώ εἰμι ὁ θεὸς Ἀβραάμ: Exo 3:6."
+            },
+            {
+              "ref": "Mrk.12.26",
+              "note": "Exo 3:6."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 20:2 word 1",
+              "note": "ἐγώ for אָנֹכִי in “I am Yahweh your God”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 43:25 words 1–2",
+              "note": "ἐγώ ἐγώ for אָנֹכִי אָנֹכִי."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֲנִי",
+            "note": "Side by side in one verse.",
+            "evidence": [
+              {
+                "ref": "Isa.45.12"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אַתָּה",
+            "note": "David against Goliath.",
+            "evidence": [
+              {
+                "ref": "1Sa.17.45"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אָנֹכִי יַהְוֶה אֱלֹהֶיךָ",
+            "gloss": "I am Yahweh your God",
+            "evidence": [
+              {
+                "ref": "Exo.20.2"
+              }
+            ]
+          },
+          {
+            "phrase": "אָנֹכִי אָנֹכִי",
+            "gloss": "I, I (am he)",
+            "evidence": [
+              {
+                "ref": "Isa.43.11"
+              },
+              {
+                "ref": "Isa.43.25"
+              }
+            ]
+          },
+          {
+            "phrase": "מִי אָנֹכִי",
+            "gloss": "who am I?",
+            "evidence": [
+              {
+                "ref": "Exo.3.11"
+              }
+            ]
+          },
+          {
+            "phrase": "אָנֹכִי עִמָּךְ / אִתְּךָ אָנֹכִי",
+            "gloss": "I am with you",
+            "evidence": [
+              {
+                "ref": "Gen.28.15"
+              },
+              {
+                "ref": "Gen.26.24"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֲנַחְנוּ",
+      "root": "אנחנו",
+      "bdb": [
+        "a.ej.aa"
+      ],
+      "cognate_ids": [
+        "ar-nahnu",
+        "akk-ninu",
+        "phn-anhn",
+        "gez-nehna",
+        "arc-anahna",
+        "syc-hnan"
+      ],
+      "pos": "pronoun",
+      "gloss": "we",
+      "summary": "The pronoun of the speakers together, for men and women alike. It is the plural answering “I”, not formed from it: the related languages have naḥnu or nīnu “we” (Arabic, Ge'ez, Akkadian), and the front א- of the Hebrew, Aramaic and Phoenician forms answers the a- of Akkadian’s second form anīnu beside nīnu; the shorter נַחְנוּ is the form without it.",
+      "senses": [
+        {
+          "gloss": "we (the speakers)",
+          "definition": "Names the speakers together, as the subject of a clause with no verb or set beside a verb.",
+          "evidence": [
+            {
+              "ref": "Num.10.29",
+              "role": "defining",
+              "note": "נֹסְעִים אֲנַחְנוּ אֶל־הַמָּקוֹם: Moses to Hobab, “we are setting out for the place … come with us”."
+            },
+            {
+              "ref": "Gen.13.8",
+              "role": "defining",
+              "note": "כִּי־אֲנָשִׁים אַחִים אֲנָחְנוּ: “for we are brothers”."
+            },
+            {
+              "ref": "Gen.42.11",
+              "note": "כֵּנִים אֲנַחְנוּ: “we are honest men”, beside נַחְנוּ in the same verse."
+            },
+            {
+              "ref": "Jos.24.18",
+              "note": "גַּם־אֲנַחְנוּ נַעֲבֹד אֶת־יַהְוֶה: “we also will serve Yahweh, for he is our God”."
+            },
+            {
+              "ref": "Jer.42.6",
+              "note": "אֲשֶׁר אֲנַחְנוּ שֹׁלְחִים אֹתְךָ: read so; written אנו (see אֲנוּ)."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "us, we ourselves (after a suffix)",
+              "definition": "After a suffix of the first person plural, stressing it: “with us, we, these here today”.",
+              "evidence": [
+                {
+                  "ref": "Deu.5.3",
+                  "role": "defining",
+                  "note": "כִּי אִתָּנוּ אֲנַחְנוּ אֵלֶּה פֹה הַיּוֹם כֻּלָּנוּ חַיִּים: “not with our fathers … but with us, we, these here today, all of us alive”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anachnu-before-god",
+          "gloss": "we (what we are before God)",
+          "definition": "In confession and praise, what the people are beside their maker: dust, clay, his people.",
+          "evidence": [
+            {
+              "ref": "Psa.103.14",
+              "role": "defining",
+              "note": "זָכוּר כִּי־עָפָר אֲנָחְנוּ: “he remembers that we are dust”."
+            },
+            {
+              "ref": "Isa.64.7",
+              "role": "defining",
+              "note": "אֲנַחְנוּ הַחֹמֶר וְאַתָּה יֹצְרֵנוּ: “we are the clay, and you our potter”."
+            },
+            {
+              "ref": "Psa.100.3",
+              "note": "הוּא־עָשָׂנוּ וְלוֹ אֲנַחְנוּ: “he made us, and his we are” (read; the written text has לֹא, “and not we ourselves”)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἡμεῖς",
+          "gloss": "we",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 10:29 word 10",
+              "note": "ἡμεῖς for אֲנַחְנוּ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 100:3 word 10",
+              "note": "ἡμεῖς for אֲנַחְנוּ."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אַתָּה",
+            "note": "The people against their God.",
+            "evidence": [
+              {
+                "ref": "Isa.64.7",
+                "note": "אֲנַחְנוּ הַחֹמֶר וְאַתָּה יֹצְרֵנוּ."
+              },
+              {
+                "ref": "Lam.3.42",
+                "note": "נַחְנוּ פָשַׁעְנוּ … אַתָּה לֹא סָלָחְתָּ."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "גַּם־אֲנַחְנוּ",
+            "gloss": "we also",
+            "evidence": [
+              {
+                "ref": "Jos.24.18"
+              }
+            ]
+          },
+          {
+            "phrase": "עָפָר אֲנָחְנוּ",
+            "gloss": "we are dust",
+            "evidence": [
+              {
+                "ref": "Psa.103.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נַחְנוּ",
+      "root": "נחנו",
+      "bdb": [
+        "a.ej.ab"
+      ],
+      "cognate_ids": [
+        "ar-nahnu",
+        "akk-ninu",
+        "phn-anhn",
+        "gez-nehna"
+      ],
+      "pos": "pronoun",
+      "gloss": "we",
+      "summary": "The short form of אֲנַחְנוּ, six times, without the front א-: the form Arabic naḥnu, Ge'ez nəḥna and Akkadian nīnu have.",
+      "senses": [
+        {
+          "gloss": "we",
+          "definition": "As אֲנַחְנוּ: the speakers together.",
+          "evidence": [
+            {
+              "ref": "Gen.42.11",
+              "role": "defining",
+              "note": "כֻּלָּנוּ בְּנֵי אִישׁ־אֶחָד נָחְנוּ כֵּנִים אֲנַחְנוּ: both forms in one verse."
+            },
+            {
+              "ref": "Exo.16.7",
+              "role": "defining",
+              "note": "וְנַחְנוּ מָה כִּי תַלִּינוּ עָלֵינוּ: “and what are we, that you murmur against us?”"
+            },
+            {
+              "ref": "Exo.16.8",
+              "note": "וְנַחְנוּ מָה לֹא־עָלֵינוּ תְלֻנֹּתֵיכֶם כִּי עַל־יַהְוֶה: “and what are we? your murmurings are not against us but against Yahweh”."
+            },
+            {
+              "ref": "Lam.3.42",
+              "note": "נַחְנוּ פָשַׁעְנוּ וּמָרִינוּ: “we have transgressed and rebelled”."
+            },
+            {
+              "ref": "Num.32.32",
+              "note": "נַחְנוּ נַעֲבֹר חֲלוּצִים: “we will cross over armed”."
+            },
+            {
+              "ref": "2Sa.17.12",
+              "note": "וְנַחְנוּ עָלָיו כַּאֲשֶׁר יִפֹּל הַטַּל: “and we will light on him as the dew falls”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "וְנַחְנוּ מָה",
+            "gloss": "and what are we?",
+            "evidence": [
+              {
+                "ref": "Exo.16.7"
+              },
+              {
+                "ref": "Exo.16.8"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֲנוּ",
+      "root": "אנו",
+      "bdb": [
+        "a.eh.aa"
+      ],
+      "cognate_ids": [
+        "ar-nahnu",
+        "akk-ninu",
+        "phn-anhn",
+        "gez-nehna"
+      ],
+      "pos": "pronoun",
+      "gloss": "we",
+      "summary": "Only the written text (ketiv) of Jer 42:6, where the reading is אֲנַחְנוּ: a short “we” without the -ḥ-, which later Hebrew uses commonly. It shares the sense of the related languages’ “we”, but none of them has its shape, and with one written use it rests on little.",
+      "senses": [
+        {
+          "gloss": "we",
+          "definition": "The speakers together.",
+          "evidence": [
+            {
+              "ref": "Jer.42.6",
+              "role": "defining",
+              "note": "Written אֲשֶׁר אנו שֹׁלְחִים, read אֲנַחְנוּ: “to whom we are sending you”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲנָה",
+      "lang": "arc",
+      "root": "אנה",
+      "bdb": [
+        "xa.av.aa"
+      ],
+      "cognate_ids": [
+        "arc-ana",
+        "syc-ena",
+        "ar-ana",
+        "gez-ana"
+      ],
+      "pos": "pronoun",
+      "gloss": "I",
+      "summary": "Scripture’s Aramaic “I” (also written אֲנָא), in Daniel and Ezra: kings and Daniel name themselves with it, and it stands beside participles, “I know”, “I see”.",
+      "senses": [
+        {
+          "gloss": "I (with the speaker’s name)",
+          "definition": "The speaker names himself, in a narrative told in the first person or in a royal decree.",
+          "kin": [
+            "ani-speaker"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.4.1",
+              "role": "defining",
+              "note": "אֲנָה נְבוּכַדְנֶצַּר שְׁלֵה הֲוֵית בְּבֵיתִי: “I, Nebuchadnezzar, was at ease in my house”."
+            },
+            {
+              "ref": "Ezr.6.12",
+              "role": "defining",
+              "note": "אֲנָה דָרְיָוֶשׁ שָׂמֶת טְעֵם: “I, Darius, have made a decree”."
+            },
+            {
+              "ref": "Ezr.7.21",
+              "note": "וּמִנִּי אֲנָה אַרְתַּחְשַׁסְתְּא מַלְכָּא: “and I, Artaxerxes the king, from me a decree is made”."
+            },
+            {
+              "ref": "Dan.4.31",
+              "note": "“I, Nebuchadnezzar, lifted my eyes to heaven, and my understanding returned to me”."
+            },
+            {
+              "ref": "Dan.4.34",
+              "note": "“Now I, Nebuchadnezzar, praise and extol and honour the king of heaven”."
+            },
+            {
+              "ref": "Dan.7.15",
+              "note": "אֲנָה דָנִיֵּאל: “as for me, Daniel, my spirit was grieved”."
+            },
+            {
+              "ref": "Dan.7.28",
+              "note": "אֲנָה דָנִיֵּאל: the end of the vision."
+            }
+          ]
+        },
+        {
+          "gloss": "I (with a participle; set apart)",
+          "definition": "Beside a participle, the subject of what the speaker is doing or knows; or set against others.",
+          "kin": [
+            "ani-stressed"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.8",
+              "role": "defining",
+              "note": "מִן־יַצִּיב יָדַע אֲנָה: “I know for certain that you are buying time”."
+            },
+            {
+              "ref": "Dan.3.25",
+              "role": "defining",
+              "note": "הָא־אֲנָה חָזֵה גֻּבְרִין אַרְבְּעָה: “look, I see four men loose, walking in the fire”."
+            },
+            {
+              "ref": "Dan.2.23",
+              "note": "מְהוֹדֵא וּמְשַׁבַּח אֲנָה: “I thank and praise you, God of my fathers”."
+            },
+            {
+              "ref": "Dan.2.30",
+              "note": "וַאֲנָה לָא בְחָכְמָה דִּי־אִיתַי בִּי: “but as for me, not by any wisdom that is in me was this secret revealed”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲנַחְנָא",
+      "lang": "arc",
+      "root": "אנחנא",
+      "bdb": [
+        "xa.aw.aa"
+      ],
+      "cognate_ids": [
+        "arc-anahna",
+        "syc-hnan",
+        "ar-nahnu",
+        "gez-nehna"
+      ],
+      "pos": "pronoun",
+      "gloss": "we",
+      "summary": "Scripture’s Aramaic “we” (also written אֲנַחְנָה), four times.",
+      "senses": [
+        {
+          "gloss": "we",
+          "definition": "The speakers together, beside a participle or naming what they are.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.11",
+              "role": "defining",
+              "note": "אֲנַחְנָא הִמּוֹ עַבְדוֹהִי דִי־אֱלָהּ שְׁמַיָּא וְאַרְעָא: “we are the servants of the God of heaven and earth”."
+            },
+            {
+              "ref": "Dan.3.16",
+              "role": "defining",
+              "note": "לָא־חַשְׁחִין אֲנַחְנָה: “we have no need to answer you in this matter”."
+            },
+            {
+              "ref": "Dan.3.17",
+              "note": "אֱלָהַנָא דִּי־אֲנַחְנָא פָלְחִין: “our God whom we serve is able to deliver us”."
+            },
+            {
+              "ref": "Ezr.4.16",
+              "note": "מְהוֹדְעִין אֲנַחְנָה לְמַלְכָּא: “we inform the king”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֶנָא",
+      "lang": "syc",
+      "cognate_ids": [
+        "syc-ena",
+        "arc-ana",
+        "ar-ana",
+        "gez-ana"
+      ],
+      "pos": "pronoun",
+      "gloss": "I; (ܐܢܐ ܐܢܐ) I am, I am he",
+      "summary": "The Peshitta’s ܐܢܐ (ʾenā), for ἐγώ. After a word it also serves, shortened to -nā, as “am”: so ܐܢܐ ܐܢܐ, “I, I-am”, renders ἐγώ εἰμι, “I am (he)”.",
+      "senses": [
+        {
+          "gloss": "I",
+          "definition": "The speaker, as Hebrew אֲנִי.",
+          "evidence": [
+            {
+              "ref": "Jhn.10.30",
+              "role": "defining",
+              "note": "ܐܢܐ ܘܐܒܝ ܚܕ ܚܢܢ: “I and my Father are one”."
+            },
+            {
+              "ref": "Rom.14.11",
+              "role": "defining",
+              "note": "ܚܝ ܐܢܐ ܐܡܪ ܡܪܝܐ: “as I live, says the Lord”, Isa 49:18."
+            },
+            {
+              "ref": "Jhn.10.34",
+              "note": "ܐܢܐ ܐܡܪܬ ܕܐܠܗܐ ܐܢܬܘܢ: Psa 82:6."
+            }
+          ]
+        },
+        {
+          "id": "ena-i-am",
+          "gloss": "I am (he) (ܐܢܐ ܐܢܐ)",
+          "definition": "For ἐγώ εἰμι: “it is I”, “I am he”, and with a predicate “I am …”.",
+          "kin": [
+            "ani-hu"
+          ],
+          "evidence": [
+            {
+              "ref": "Jhn.13.19",
+              "role": "defining",
+              "note": "ܕܬܗܝܡܢܘܢ ܕܐܢܐ ܐܢܐ: “that you may believe that I am he”, Isa 43:10."
+            },
+            {
+              "ref": "Jhn.9.9",
+              "role": "defining",
+              "note": "The healed blind man of himself: ܐܢܐ ܐܢܐ, “I am he”."
+            },
+            {
+              "ref": "Jhn.8.24",
+              "note": "“If you do not believe that I am he, you will die in your sins”."
+            },
+            {
+              "ref": "Jhn.8.28",
+              "note": "“Then you will know that I am he, and that I do nothing of myself”."
+            },
+            {
+              "ref": "Jhn.4.26",
+              "note": "ܐܢܐ ܐܢܐ ܕܡܡܠܠ ܐܢܐ ܥܡܟܝ: “I who speak with you am he”, the Messiah."
+            },
+            {
+              "ref": "Mrk.14.62",
+              "note": "To “Are you the Christ, the son of the Blessed?”: ܐܢܐ ܐܢܐ."
+            },
+            {
+              "ref": "Mat.14.27",
+              "note": "On the water: “take heart, it is I; do not fear”."
+            },
+            {
+              "ref": "Mrk.12.26",
+              "note": "ܐܢܐ ܐܢܐ ܐܠܗܗ ܕܐܒܪܗܡ: Exo 3:6, “I am the God of Abraham”."
+            },
+            {
+              "ref": "Rev.1.17",
+              "note": "ܐܢܐ ܐܝܬܝ ܩܕܡܝܐ ܘܐܚܪܝܐ: “I am the first and the last”, Isa 44:6."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חְנַן",
+      "lang": "syc",
+      "cognate_ids": [
+        "syc-hnan",
+        "arc-anahna",
+        "ar-nahnu",
+        "gez-nehna"
+      ],
+      "pos": "pronoun",
+      "gloss": "we",
+      "summary": "The Peshitta’s ܚܢܢ (ḥnan), for ἡμεῖς, with the older ܐܢܚܢܢ (ʾenaḥnan) beside it; after a word it also serves as “we are”.",
+      "senses": [
+        {
+          "gloss": "we; we are",
+          "definition": "The speakers together, as Hebrew אֲנַחְנוּ.",
+          "evidence": [
+            {
+              "ref": "Jhn.10.30",
+              "role": "defining",
+              "note": "ܐܢܐ ܘܐܒܝ ܚܕ ܚܢܢ: “I and my Father are one”: ܚܢܢ as “we are”."
+            },
+            {
+              "ref": "Act.2.32",
+              "role": "defining",
+              "note": "ܘܚܢܢ ܟܠܢ ܣܗܕܘܗܝ: “and we all are his witnesses”."
+            },
+            {
+              "ref": "1Co.8.6",
+              "note": "ܚܕ ܗܘ ܐܠܗܐ ܐܒܐ … ܘܚܢܢ ܒܗ: “one God, the Father … and we in him”."
+            },
+            {
+              "ref": "Mat.19.27",
+              "note": "ܗܐ ܐܢܚܢܢ ܫܒܩܢ ܟܠܡܕܡ: the long form, “behold, we have left everything”."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ana",
+      "lang": "ar",
+      "form": "أَنَا",
+      "translit": "ʾanā",
+      "gloss": "I",
+      "relation": "cognate",
+      "note": "Arabic grammar takes the pronoun to be أَنْ (ʾan), the long final ā being added in a pause, and “thou”, أَنْتَ, to be the same ʾan with t added: so “I” and “you” share a pointing element ʾan-, as Hebrew אֲנִי and אַתָּה (from ʾanta) do. That element is the nearest thing to a root behind the word, and it has no meaning of its own beyond pointing to a person.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 103, art. ان, أَنٌ",
+          "note": "“a pronoun, denoting the speaker, [I, masc. and fem.]”; “the Basrees hold that the pronoun consists of the ء and the ن, and that the [final] ا is redundant”; “It is also a pronoun denoting the person addressed … ↓ أَنْتَ [Thou, masc.]; ت being added to it as the sign of the person addressed, and أَنْ being the pronoun”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic أنا",
+          "url": "https://en.wiktionary.org/wiki/%D8%A3%D9%86%D8%A7",
+          "note": "“I (first person singular subject pronoun)”."
+        }
+      ]
+    },
+    {
+      "id": "ar-nahnu",
+      "lang": "ar",
+      "form": "نَحْنُ",
+      "translit": "naḥnu",
+      "gloss": "we (also for two)",
+      "relation": "cognate",
+      "note": "The Arabic plural, with no front ʾa-: the shape of Hebrew נַחְנוּ. Its ح shows ḥ behind the ח of אֲנַחְנוּ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 103, art. ان, أَنٌ",
+          "note": "“For the dual, as well as the pl., only نَحْنُ is used.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic نحن",
+          "url": "https://en.wiktionary.org/wiki/%D9%86%D8%AD%D9%86",
+          "note": "“we (subject pronoun)”."
+        }
+      ]
+    },
+    {
+      "id": "akk-anaku",
+      "lang": "akk",
+      "form": "anāku",
+      "translit": "anāku",
+      "gloss": "I",
+      "relation": "cognate",
+      "note": "The long form with -k-, answering אָנֹכִי.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000006580, anāku [I] IP"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian anāku",
+          "url": "https://en.wiktionary.org/wiki/an%C4%81ku",
+          "note": "“I (first-person singular pronoun, nominative case)”."
+        }
+      ]
+    },
+    {
+      "id": "akk-ninu",
+      "lang": "akk",
+      "form": "nīnu, anīnu",
+      "translit": "nīnu, anīnu",
+      "gloss": "we",
+      "relation": "cognate",
+      "note": "Akkadian has both the short nīnu and anīnu with a front a-, as Hebrew has נַחְנוּ beside אֲנַחְנוּ; Akkadian loses the ḥ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000028950, nīnu [we] IP"
+        },
+        {
+          "source": "oracc",
+          "locator": "atae x000011510, anīnu [we] IP",
+          "note": "Forms anīnu, anēnu, nīnu, nīni."
+        }
+      ]
+    },
+    {
+      "id": "uga-an",
+      "lang": "uga",
+      "form": "𐎀𐎐",
+      "translit": "ʾan",
+      "gloss": "I",
+      "relation": "cognate",
+      "note": "The short form, beside the long 𐎀𐎐𐎋: Ugaritic, like Hebrew, has both.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎐, etym. 1",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%90",
+          "note": "“I”; “Compare Hebrew אֲנִי”."
+        }
+      ]
+    },
+    {
+      "id": "uga-ank",
+      "lang": "uga",
+      "form": "𐎀𐎐𐎋",
+      "translit": "ʾank",
+      "gloss": "I",
+      "relation": "cognate",
+      "note": "The long form, answering אָנֹכִי.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎐𐎋",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%90%F0%90%8E%8B",
+          "note": "“I”."
+        }
+      ]
+    },
+    {
+      "id": "phn-ank",
+      "lang": "phn",
+      "form": "𐤀𐤍𐤊, 𐤀𐤍𐤊𐤉, 𐤀𐤍𐤉",
+      "translit": "ʾnk, ʾnky, ʾny",
+      "gloss": "I",
+      "relation": "cognate",
+      "note": "Phoenician writes the long form ʾnk, and ʾnky as Hebrew אָנֹכִי, and the short ʾny as אֲנִי.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤀𐤍𐤊; 𐤀𐤍𐤊𐤉; 𐤀𐤍𐤉",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A4%80%F0%90%A4%8D%F0%90%A4%8A",
+          "note": "“I (first-person singular personal pronoun)”; ʾnky “alternative spelling of ʾnk”; ʾny “alternative form of ʾnk”."
+        }
+      ]
+    },
+    {
+      "id": "phn-anhn",
+      "lang": "phn",
+      "form": "𐤀𐤍𐤇𐤍",
+      "translit": "ʾnḥn",
+      "gloss": "we",
+      "relation": "cognate",
+      "note": "The same consonants as Hebrew אֲנַחְנוּ.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤀𐤍𐤇𐤍",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A4%80%F0%90%A4%8D%F0%90%A4%87%F0%90%A4%8D",
+          "note": "“we (first-person plural personal pronoun)”."
+        }
+      ]
+    },
+    {
+      "id": "gez-ana",
+      "lang": "gez",
+      "form": "አነ",
+      "translit": "ʾana",
+      "gloss": "I",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez አነ",
+          "url": "https://en.wiktionary.org/wiki/%E1%8A%A0%E1%8A%90",
+          "note": "“I (first person singular subject pronoun)”."
+        }
+      ]
+    },
+    {
+      "id": "gez-nehna",
+      "lang": "gez",
+      "form": "ንሕነ",
+      "translit": "nəḥna",
+      "gloss": "we",
+      "relation": "cognate",
+      "note": "Ge'ez ሕ is ḥ, as Arabic ح: the older sound behind the ח of אֲנַחְנוּ.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ንሕነ",
+          "url": "https://en.wiktionary.org/wiki/%E1%8A%95%E1%88%95%E1%8A%90",
+          "note": "“we (first person plural subject pronoun)”."
+        }
+      ]
+    },
+    {
+      "id": "arc-ana",
+      "lang": "arc",
+      "form": "אֲנָא",
+      "translit": "ʾănā",
+      "gloss": "I",
+      "relation": "cognate",
+      "note": "The Aramaic of the Targums: Targum Onkelos renders Abraham’s הִנֶּנִּי “here I am” by הָא אֲנָא.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲנָא",
+          "note": "“ch. = h. אֲנִי, I”; Targ. O. Gen. XXII, 7."
+        }
+      ]
+    },
+    {
+      "id": "arc-anahna",
+      "lang": "arc",
+      "form": "אֲנַחְנָא",
+      "translit": "ʾănaḥnā",
+      "gloss": "we",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲנַחְנָא",
+          "note": "“pl. of אֲנָא, אֲנִי”."
+        }
+      ]
+    },
+    {
+      "id": "syc-ena",
+      "lang": "syc",
+      "form": "ܐܢܐ",
+      "translit": "ʾenā",
+      "gloss": "I",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 178, ANA (root 131 ANA), I"
+        }
+      ]
+    },
+    {
+      "id": "syc-hnan",
+      "lang": "syc",
+      "form": "ܚܢܢ, ܐܢܚܢܢ",
+      "translit": "ḥnan, ʾenaḥnan",
+      "gloss": "we",
+      "relation": "cognate",
+      "note": "SEDRA files the plural forms under the lexeme for “I”.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 178, ANA (root 131 ANA): word forms ܚܢܢ, ܘܚܢܢ, ܕܚܢܢ, ܐܢܚܢܢ"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܚܢܢ, etym. 1",
+          "url": "https://en.wiktionary.org/wiki/%DC%9A%DC%A2%DC%A2",
+          "note": "“we, we ourselves”; “From the older form ܐܢܚܢܢ”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "one-god",
+      "statement": "The “I” who speaks in these verses says there is no other: “see now that I, I am he, and there is no god with me” (Deu 32:39); “before me no god was formed, and after me there shall be none” (Isa 43:10); “I am the first and I am the last, and beside me there is no God” (Isa 44:6); “I am Yahweh, and there is none else; beside me there is no God” (Isa 45:5). The scribe who answers Jesus says the same, “there is one God, and there is no other but he”, and Jesus says he has answered wisely (Mrk 12:32–34); Paul writes “to us there is one God, the Father” (1Co 8:6). From the verses: the one who says “I am Yahweh … beside me there is no God” is one speaker, the Father, and there is no second God beside him.",
+      "evidence": [
+        {
+          "ref": "Deu.32.39"
+        },
+        {
+          "ref": "Isa.43.10"
+        },
+        {
+          "ref": "Isa.44.6"
+        },
+        {
+          "ref": "Isa.45.5"
+        },
+        {
+          "ref": "Mrk.12.32",
+          "to": "Mrk.12.34"
+        },
+        {
+          "ref": "1Co.8.6"
+        }
+      ]
+    },
+    {
+      "topic": "i-am-he",
+      "statement": "Yahweh’s “I am he” in Isaiah asks Israel to “know and believe me and understand that I am he” (Isa 43:10). Jesus tells his disciples “I tell you before it comes, that when it comes to pass you may believe that I am he” (Jhn 13:19), in the same words, and the Jews, “if you do not believe that I am he, you will die in your sins … when you have lifted up the son of man, then you will know that I am he, and that I do nothing of myself, but as my Father taught me I speak” (Jhn 8:24, 28). The same words, ἐγώ εἰμι (Peshitta ܐܢܐ ܐܢܐ), are an ordinary “it is I”: the man born blind says them of himself (Jhn 9:9); Jesus says them to the Samaritan woman when she speaks of the Messiah, “I who speak to you am he” (Jhn 4:25–26), and to the high priest’s “are you the Christ, the son of the Blessed?” (Mrk 14:61–62). From the verses: in Jesus’ mouth “I am he” is the claim to be the one the Father sent, the Christ, through whom the Father speaks and works, who does nothing of himself (Jhn 8:28; 14:10); the words that in Isaiah show who God is, show in John who his son is.",
+      "evidence": [
+        {
+          "ref": "Isa.43.10"
+        },
+        {
+          "ref": "Jhn.13.19"
+        },
+        {
+          "ref": "Jhn.8.24"
+        },
+        {
+          "ref": "Jhn.8.28"
+        },
+        {
+          "ref": "Jhn.9.9"
+        },
+        {
+          "ref": "Jhn.4.25",
+          "to": "Jhn.4.26"
+        },
+        {
+          "ref": "Mrk.14.61",
+          "to": "Mrk.14.62"
+        },
+        {
+          "ref": "Jhn.14.10"
+        }
+      ]
+    },
+    {
+      "topic": "resurrection",
+      "statement": "At the bush God says אָנֹכִי אֱלֹהֵי אַבְרָהָם, “I am the God of Abraham, the God of Isaac and the God of Jacob” (Exo 3:6), long after all three had died. Jesus reads it against those who deny the resurrection: “as touching the resurrection of the dead … I am the God of Abraham … God is not the God of the dead but of the living” (Mat 22:31–32), and Luke has “that the dead are raised, even Moses showed at the bush” (Luk 20:37–38). Hebrews says these fathers “all died in faith, not having received the promises” (Heb 11:13), and that they will not be made perfect apart from those who come after (Heb 11:39–40). From the verses: the patriarchs are dead and have not yet received what was promised; God’s “I am their God” requires that they be raised to receive it, which is the point Jesus draws from it.",
+      "evidence": [
+        {
+          "ref": "Exo.3.6"
+        },
+        {
+          "ref": "Mat.22.31",
+          "to": "Mat.22.32"
+        },
+        {
+          "ref": "Luk.20.37",
+          "to": "Luk.20.38"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Heb.11.39",
+          "to": "Heb.11.40"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "What “we” are before God is said plainly: “he knows our frame, he remembers that we are dust” (Psa 103:14), and man’s days are as grass that the wind passes over “and it is gone” (Psa 103:15–16); “we are the clay, and you our potter” (Isa 64:7); Abraham, “I am dust and ashes” (Gen 18:27). This is the sentence of Gen 3:19, “dust you are, and to dust you shall return”. From the verses: man is made of the ground and returns to it; his hope is in God’s remembering and mercy, not in anything in himself that outlasts death (Psa 103:17).",
+      "evidence": [
+        {
+          "ref": "Psa.103.14",
+          "to": "Psa.103.17"
+        },
+        {
+          "ref": "Isa.64.7"
+        },
+        {
+          "ref": "Gen.18.27"
+        },
+        {
+          "ref": "Gen.3.19"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (אֲנִי, 23:10, 22, 43) and Numbers 10 (אֲנִי 10:10; אֲנַחְנוּ 10:29). Root investigation: no viable root. The words of the same consonants in scripture are אנה “mourn” (Isa 3:26), אנה “meet, befall” (Exo 21:13; Psa 91:10) with תֹּאֲנָה (Jdg 14:4), אנן “complain” (Num 11:1), אָנָּא “ah, I pray” (Exo 32:31), אָנָה “where?” (Gen 16:8), and אֳנִי “ships” (1Ki 9:26); none has a sense from which “I” could grow, as עַל grows from עלה. The cognates show the pronouns themselves in every Semitic language (Arabic ʾanā/naḥnu, Akkadian anāku/nīnu, Ugaritic ʾan/ʾank, Phoenician ʾnk/ʾnḥn, Ge'ez ʾana/nəḥna, Aramaic and Syriac ʾănā/ʾenā, ʾănaḥnā/ḥnan), and Egyptian has jnk “I” (Coptic anok), not entered since Egyptian is recorded only as a loan. The only shared element is the deictic ʾan- that Arabic grammar finds in both أَنَا and أَنْتَ (Lane p. 103), which Hebrew אַתָּה (Aramaic אַנְתְּה, Dan 2:31) shows too; it is a pointing element, not a root with a meaning. So the entry is keyed by אֲנִי’s own consonants, with each form’s spelling in its own `root`. “We” (*naḥnu) is a separate stem from “I” in every language, kept here as the plural of the same person. Left out: אַתָּה “you” (BDB root אנת, DB key xa.bb.aa for Aramaic אַנְתְּה), which shares ʾan- and would come into this entry only if the deictic is treated as its root; the zero-token cross-references a.ee.ae, a.ef.ac, a.ej.ad (BDB “see אֲנִי”); xa.au.aa (Aramaic אֲנָא), which counts the same 16 tokens as xa.av.aa (named); the ships אֳנִי (a.ed.ab, under אנה). אֲנוּ (a.eh.aa) has no tokens in the database: the text gives the qere אֲנַחְנוּ at Jer 42:6; a.cb.ab (אוֹן) carries two surface tokens spelled אנו (Deu 21:17; Job 18:12, אֹנוֹ), which are not this word. Jhn 8:58 (ἐγὼ εἰμί, Peshitta ܐܢܐ ܐܝܬܝ, “before Abraham was, I am”) is not cited in the doctrine; it belongs with 8:56 (“Abraham rejoiced to see my day, and he saw it”) and should be written up with the John passages if wanted. Cognates from Wiktionary only for Ugaritic, Phoenician and Ge'ez; not consulted: Segert’s glossary, Krahmalkov, Dillmann/Leslau, CAD A/2 anāku and N/2 nīnu."
+}
