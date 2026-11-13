@@ -1,0 +1,977 @@
+{
+  "id": "padah",
+  "root": "פדה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "redemption",
+    "ransom",
+    "firstborn",
+    "deliverance",
+    "death",
+    "exodus"
+  ],
+  "gloss": "ransom, redeem; set free; redemption, ransom price",
+  "summary": "The verb is to set free someone who is held, owed or doomed, by paying a price or giving a substitute for them, or by sheer power: the firstborn son and the firstborn donkey are redeemed with silver or a lamb, and an unredeemed thing is sold or killed (Exo 13:13; Num 18:15–16; Lev 27:27). Yahweh redeemed Israel from the house of slaves (Deu 7:8), and his servants ask him to redeem them from trouble, enemies, the grave and sin (Psa 25:22; 49:16; 130:8). The nouns are the ransom price (פִּדְיוֹן, פָּדוּיִם) and redemption itself (פְּדוּת). Arabic fadā, Akkadian padû, Ugaritic and Punic pdy and Sabaean fdy share the sense of buying back or setting free.",
+  "words": [
+    {
+      "lemma": "פָּדָה",
+      "pos": "verb",
+      "gloss": "ransom, redeem; rescue, set free",
+      "bdb": [
+        "q.aj.aa"
+      ],
+      "cognate_ids": [
+        "ar-fada",
+        "akk-padu",
+        "uga-pdy",
+        "phn-pdy",
+        "sem-fdy",
+        "gez-fadaya",
+        "arc-pdy"
+      ],
+      "summary": "To set a person or animal free from what holds or claims them. In the law it is release bought by a price or a substitute; of God it is release from Egypt, enemies, death and sin, where his power and love, not a payment to the oppressor, are named as the means (Deu 7:8; Neh 1:10).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "ransom, redeem; rescue",
+          "senses": [
+            {
+              "id": "ransom-by-price",
+              "gloss": "ransom by a price or substitute",
+              "definition": "To release what belongs to Yahweh or is forfeit, by giving silver or another life in its place. What is not ransomed is sold, or its neck is broken; what is holy is not ransomed but offered.",
+              "evidence": [
+                {
+                  "ref": "Exo.13.13",
+                  "role": "defining",
+                  "note": "Every firstling of a donkey תִּפְדֶּה בְשֶׂה, “you shall ransom with a lamb”; if you do not ransom it, you shall break its neck; and every firstborn of man among your sons you shall ransom."
+                },
+                {
+                  "ref": "Exo.13.15",
+                  "role": "defining",
+                  "note": "Because Yahweh killed every firstborn in Egypt, “I sacrifice to Yahweh every male that opens the womb, and every firstborn of my sons אֶפְדֶּה”."
+                },
+                {
+                  "ref": "Exo.34.20",
+                  "note": "The same law of the firstling donkey and the firstborn son."
+                },
+                {
+                  "ref": "Num.18.15",
+                  "role": "defining",
+                  "note": "“פָּדֹה תִפְדֶּה the firstborn of man, and the firstborn of the unclean beast you shall ransom.”"
+                },
+                {
+                  "ref": "Num.18.16",
+                  "role": "defining",
+                  "note": "“And its ransomed (פְדוּיָו) from a month old you shall ransom by your valuation, five shekels of silver”: the price is stated."
+                },
+                {
+                  "ref": "Num.18.17",
+                  "role": "defining",
+                  "note": "The firstborn of ox, sheep and goat “you shall not ransom; they are holy”: their blood goes on the altar."
+                },
+                {
+                  "ref": "Lev.27.27",
+                  "role": "defining",
+                  "note": "An unclean beast vowed to Yahweh: “he shall ransom it by your valuation and add a fifth; and if it is not redeemed, it shall be sold.”"
+                },
+                {
+                  "ref": "1Sa.14.45",
+                  "role": "defining",
+                  "note": "Jonathan, condemned under Saul’s oath: “the people ransomed Jonathan, and he did not die”."
+                },
+                {
+                  "ref": "Psa.49.8",
+                  "role": "defining",
+                  "note": "“A brother no man can ransom at all (פָדֹה יִפְדֶּה), nor give to God his ransom (כָּפְרוֹ)”: the ransom price set beside the verb."
+                }
+              ]
+            },
+            {
+              "id": "redeem-from-egypt",
+              "gloss": "redeem from slavery (Israel from Egypt)",
+              "definition": "Of Yahweh bringing Israel out of the house of slaves: setting free a people held as slaves, by his strong hand, so that they are his own.",
+              "evidence": [
+                {
+                  "ref": "Deu.7.8",
+                  "role": "defining",
+                  "note": "“Because Yahweh loves you … Yahweh brought you out with a strong hand וַיִּפְדְּךָ from the house of slaves, from the hand of Pharaoh king of Egypt.”"
+                },
+                {
+                  "ref": "Deu.15.15",
+                  "role": "defining",
+                  "note": "“Remember that you were a slave in the land of Egypt, and Yahweh your God redeemed you”: the reason for freeing a Hebrew slave in the seventh year."
+                },
+                {
+                  "ref": "Deu.24.18",
+                  "note": "The same memory as the reason for justice to the stranger, the fatherless and the widow."
+                },
+                {
+                  "ref": "Mic.6.4",
+                  "role": "defining",
+                  "note": "“I brought you up from the land of Egypt, and from the house of slaves I redeemed you”: parallel with הֶעֱלִתִיךָ."
+                },
+                {
+                  "ref": "Deu.9.26",
+                  "note": "“Your people and your inheritance, whom you redeemed through your greatness, whom you brought out of Egypt with a strong hand.”"
+                },
+                {
+                  "ref": "Deu.13.6",
+                  "note": "The false prophet speaks rebellion against Yahweh “who brought you out of the land of Egypt and redeemed you from the house of slaves”."
+                },
+                {
+                  "ref": "Deu.21.8",
+                  "note": "“Cover your people Israel, whom you redeemed, Yahweh.”"
+                },
+                {
+                  "ref": "2Sa.7.23",
+                  "role": "defining",
+                  "note": "The one nation “whom God went to redeem for himself as a people”, redeemed “from Egypt, nations and their gods”."
+                },
+                {
+                  "ref": "1Ch.17.21"
+                },
+                {
+                  "ref": "Neh.1.10",
+                  "note": "“Your servants and your people, whom you redeemed by your great power and by your strong hand.”"
+                },
+                {
+                  "ref": "Psa.78.42",
+                  "note": "They did not remember “the day he redeemed them from the adversary (צָר)”, followed by the signs in Egypt (Psa 78:43)."
+                }
+              ]
+            },
+            {
+              "id": "rescue-from-trouble",
+              "gloss": "rescue, deliver (from trouble, enemies, oppression)",
+              "definition": "Of God, and once of men, setting a person free from the hand of enemies, oppressors or distress; set beside deliver and redeem (גָּאַל).",
+              "evidence": [
+                {
+                  "ref": "Jer.15.21",
+                  "role": "defining",
+                  "note": "“I will deliver you (וְהִצַּלְתִּיךָ) from the hand of the wicked, and redeem you (וּפְדִתִיךָ) from the palm of the ruthless.”"
+                },
+                {
+                  "ref": "Job.6.23",
+                  "role": "defining",
+                  "note": "Job never asked his friends to pay for him: “Deliver me (וּמַלְּטוּנִי) from the hand of the enemy, and from the hand of the ruthless redeem me”, beside “give a bribe for me from your wealth” (Job 6:22)."
+                },
+                {
+                  "ref": "Psa.69.19",
+                  "role": "defining",
+                  "note": "“Draw near to my soul, redeem it (גְאָלָהּ); because of my enemies ransom me (פְּדֵנִי).”"
+                },
+                {
+                  "ref": "2Sa.4.9",
+                  "note": "David’s oath: “as Yahweh lives, who has redeemed my soul out of all distress”."
+                },
+                {
+                  "ref": "1Ki.1.29"
+                },
+                {
+                  "ref": "Psa.25.22",
+                  "note": "“Redeem Israel, O God, out of all his troubles.”"
+                },
+                {
+                  "ref": "Psa.26.11",
+                  "note": "“I will walk in my integrity; redeem me and be gracious to me.”"
+                },
+                {
+                  "ref": "Psa.31.6",
+                  "note": "“Into your hand I commit my spirit; you have redeemed me, Yahweh, God of truth”: the first half is Jesus’ last word on the cross (Luk 23:46)."
+                },
+                {
+                  "ref": "Psa.34.23",
+                  "note": "“Yahweh redeems the soul of his servants.”"
+                },
+                {
+                  "ref": "Psa.44.27",
+                  "note": "“Arise, help us, and redeem us for your covenant faithfulness’ sake.”"
+                },
+                {
+                  "ref": "Psa.55.19",
+                  "note": "“He has redeemed my soul in peace from the battle against me.”"
+                },
+                {
+                  "ref": "Psa.71.23"
+                },
+                {
+                  "ref": "Psa.119.134",
+                  "note": "“Redeem me from the oppression of man, that I may keep your precepts.”"
+                },
+                {
+                  "ref": "Isa.29.22",
+                  "note": "Yahweh “who redeemed Abraham”."
+                }
+              ]
+            },
+            {
+              "id": "redeem-from-death",
+              "gloss": "redeem from death and the grave",
+              "definition": "To set a person free from death or the grave, which hold him: what no man can pay for his brother, God does.",
+              "evidence": [
+                {
+                  "ref": "Psa.49.16",
+                  "role": "defining",
+                  "note": "After “a brother no man can ransom” (Psa 49:8): “But God will redeem my soul from the hand of the grave (מִיַּד־שְׁאוֹל), for he will take me.”"
+                },
+                {
+                  "ref": "Hos.13.14",
+                  "role": "defining",
+                  "note": "“From the hand of the grave I will ransom them (אֶפְדֵּם); from death I will redeem them (אֶגְאָלֵם). Where are your plagues, death? Where is your destruction, grave?”"
+                },
+                {
+                  "ref": "Job.33.28",
+                  "role": "defining",
+                  "note": "“He has redeemed my soul from going down into the pit, and my life shall see the light.”"
+                },
+                {
+                  "ref": "Job.5.20",
+                  "note": "“In famine he will redeem you from death, and in war from the power of the sword.”"
+                }
+              ]
+            },
+            {
+              "id": "redeem-from-sin",
+              "gloss": "redeem from iniquities",
+              "definition": "To set free from sins, which hold a person as a debt or a captor holds: once, of Yahweh redeeming Israel.",
+              "evidence": [
+                {
+                  "ref": "Psa.130.8",
+                  "role": "defining",
+                  "note": "“And he will redeem Israel from all his iniquities”, after “with him is plenteous redemption (פְדוּת)” (Psa 130:7)."
+                },
+                {
+                  "ref": "Tit.2.14",
+                  "role": "defining",
+                  "note": "Christ “gave himself for us, that he might redeem us (λυτρώσηται) from all iniquity”: Psa 130:8 in the Septuagint’s words, fulfilled in him."
+                }
+              ]
+            },
+            {
+              "id": "ransomed-return",
+              "gloss": "redeem Israel to return (the ransomed of Yahweh)",
+              "definition": "In the prophets, Yahweh redeeming scattered Israel from those stronger than they and gathering them back; the passive participle names them “the ransomed of Yahweh”, who return to Zion.",
+              "evidence": [
+                {
+                  "ref": "Jer.31.11",
+                  "role": "defining",
+                  "note": "“He who scattered Israel will gather him” (Jer 31:10), “for Yahweh has ransomed Jacob, and redeemed him (וּגְאָלוֹ) from the hand of him who was stronger than he.”"
+                },
+                {
+                  "ref": "Isa.35.10",
+                  "role": "defining",
+                  "note": "“And the ransomed of Yahweh (וּפְדוּיֵי יַהְוֶה) shall return and come to Zion with singing”, after “the redeemed (גְּאוּלִים) shall walk there” (Isa 35:9)."
+                },
+                {
+                  "ref": "Isa.51.11",
+                  "note": "The same words, after the drying of the sea “for the redeemed (גְּאוּלִים) to pass over” (Isa 51:10)."
+                },
+                {
+                  "ref": "Zec.10.8",
+                  "role": "defining",
+                  "note": "“I will whistle for them and gather them, for I have redeemed them.”"
+                },
+                {
+                  "ref": "Hos.7.13",
+                  "note": "“I would redeem them, but they speak lies against me.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be ransomed, be redeemed",
+          "senses": [
+            {
+              "gloss": "be ransomed, be redeemed",
+              "definition": "To be set free by a price, or not: of a slave woman, of one devoted to destruction who cannot be ransomed, and of Zion redeemed by justice.",
+              "evidence": [
+                {
+                  "ref": "Lev.27.29",
+                  "role": "defining",
+                  "note": "“No devoted thing (חֵרֶם) of man shall be ransomed; he shall surely be put to death.”"
+                },
+                {
+                  "ref": "Lev.19.20",
+                  "role": "defining",
+                  "note": "A slave woman betrothed to a man who “has not been redeemed (לֹא נִפְדָּתָה), nor has freedom (חֻפְשָׁה) been given her”."
+                },
+                {
+                  "ref": "Isa.1.27",
+                  "role": "defining",
+                  "note": "“Zion shall be redeemed with justice, and her returning ones with righteousness.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "let be ransomed",
+          "senses": [
+            {
+              "gloss": "let be ransomed",
+              "definition": "To allow someone to be bought free: the master who no longer wants a slave woman he took as wife must let her be redeemed and may not sell her to foreigners.",
+              "evidence": [
+                {
+                  "ref": "Exo.21.8",
+                  "role": "defining",
+                  "note": "“Then he shall let her be redeemed (וְהֶפְדָּהּ); to sell her to a foreign people he has no power.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be ransomed",
+          "senses": [
+            {
+              "gloss": "be ransomed",
+              "definition": "Only as the infinitive strengthening the niphal: “she has not been ransomed at all.”",
+              "evidence": [
+                {
+                  "ref": "Lev.19.20",
+                  "role": "defining",
+                  "note": "וְהָפְדֵּה לֹא נִפְדָּתָה, “and has not been redeemed at all”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λυτρόω",
+          "gloss": "set free by a ransom, redeem",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.21.8, פָּדִיתָ → λυτρόω; Psa.49.16 and Psa.130.8, יִפְדֶּה → λυτρόω; λυτρόω renders פָּדָה ×20"
+            },
+            {
+              "ref": "Tit.2.14",
+              "role": "defining",
+              "note": "“That he might redeem us from all iniquity”, Psa 130:8 in the Septuagint’s words."
+            },
+            {
+              "ref": "1Pe.1.18",
+              "role": "defining",
+              "note": "“You were redeemed not with corruptible things, silver or gold … but with the precious blood of Christ, as of a lamb without blemish” (1Pe 1:18–19)."
+            },
+            {
+              "ref": "Luk.24.21",
+              "note": "“We hoped that he was the one to redeem Israel.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גָּאַל",
+            "note": "“Redeem” as a kinsman does, set beside it of God redeeming his people and from death.",
+            "evidence": [
+              {
+                "ref": "Jer.31.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.13.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.69.19"
+              },
+              {
+                "ref": "Isa.35.9"
+              }
+            ]
+          },
+          {
+            "lemma": "נָצַל",
+            "note": "Hiphil “deliver, snatch away”.",
+            "evidence": [
+              {
+                "ref": "Jer.15.21",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מָלַט",
+            "note": "Piel “let escape, deliver”.",
+            "evidence": [
+              {
+                "ref": "Job.6.23",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יָצָא",
+            "note": "Hiphil “bring out” of Egypt, and עָלָה hiphil “bring up”.",
+            "evidence": [
+              {
+                "ref": "Deu.7.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Mic.6.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.9.26"
+              }
+            ]
+          },
+          {
+            "lemma": "כֹּפֶר",
+            "note": "The ransom given for a life.",
+            "evidence": [
+              {
+                "ref": "Psa.49.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.21.30"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "מָכַר",
+            "note": "“Sell”: what is not redeemed is sold; the master who must let the woman be redeemed may not sell her.",
+            "evidence": [
+              {
+                "ref": "Lev.27.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.21.8"
+              }
+            ]
+          },
+          {
+            "lemma": "עָרַף",
+            "note": "“Break the neck” of the firstling donkey not ransomed.",
+            "evidence": [
+              {
+                "ref": "Exo.13.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.20"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "פָּדָה מִבֵּית עֲבָדִים",
+            "gloss": "redeem from the house of slaves",
+            "evidence": [
+              {
+                "ref": "Deu.7.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.13.6"
+              },
+              {
+                "ref": "Mic.6.4"
+              }
+            ]
+          },
+          {
+            "phrase": "פָּדָה נֶפֶשׁ",
+            "gloss": "redeem a soul (a person’s life)",
+            "evidence": [
+              {
+                "ref": "2Sa.4.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.34.23"
+              },
+              {
+                "ref": "Psa.49.16"
+              },
+              {
+                "ref": "Job.33.28"
+              }
+            ]
+          },
+          {
+            "phrase": "פְּדוּיֵי יַהְוֶה",
+            "gloss": "the ransomed of Yahweh",
+            "evidence": [
+              {
+                "ref": "Isa.35.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.51.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פְּדוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "redemption, deliverance",
+      "bdb": [
+        "q.aj.ad"
+      ],
+      "cognate_ids": [
+        "akk-pidu",
+        "ar-fada"
+      ],
+      "senses": [
+        {
+          "id": "redemption",
+          "gloss": "redemption",
+          "definition": "The act of setting free, which God sends, has in plenty, and has the power to do.",
+          "kin": [
+            "redeem-from-sin",
+            "redeem-from-egypt"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.111.9",
+              "role": "defining",
+              "note": "“He sent redemption to his people; he commanded his covenant forever.”"
+            },
+            {
+              "ref": "Psa.130.7",
+              "role": "defining",
+              "note": "“With Yahweh is covenant faithfulness, and with him is plenteous redemption”, before “he will redeem Israel from all his iniquities”."
+            },
+            {
+              "ref": "Isa.50.2",
+              "role": "defining",
+              "note": "“Is my hand shortened at all, that it cannot redeem (מִפְּדוּת)? Or have I no power to deliver?” followed by the drying of the sea."
+            },
+            {
+              "ref": "Exo.8.19",
+              "role": "defining",
+              "note": "“I will put a redemption (פְדֻת) between my people and your people”: the land of Goshen kept free of the flies (Exo 8:18), Israel set apart by being spared."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λύτρωσις",
+          "gloss": "redemption, deliverance",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.111.9, פְּדוּת → λύτρωσις; Psa.130.7 the same; Exo.8.19, פְדֻת → διαστολή"
+            },
+            {
+              "ref": "Luk.1.68",
+              "role": "defining",
+              "note": "Zacharias: “he has visited and made redemption (λύτρωσιν) for his people”, the words of Psa 111:9."
+            },
+            {
+              "ref": "Luk.2.38",
+              "note": "Anna spoke of the child “to all who were looking for redemption in Jerusalem”."
+            },
+            {
+              "ref": "Heb.9.12",
+              "role": "defining",
+              "note": "Christ entered the holy place “by his own blood, having obtained eternal redemption”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פָּדוּיִם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ransom (money)",
+      "bdb": [
+        "q.aj.ab"
+      ],
+      "cognate_ids": [
+        "ar-fada"
+      ],
+      "summary": "A plural of the passive participle used as a noun, “the ransomed” and so the ransom paid for them; only in the account of the firstborn redeemed by the Levites.",
+      "senses": [
+        {
+          "id": "ransom-money",
+          "gloss": "ransom, redemption money",
+          "definition": "The price paid for the firstborn of Israel above the number of the Levites taken in their place: five shekels each, given to Aaron and his sons.",
+          "kin": [
+            "ransom-by-price",
+            "ransom-price"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.3.46",
+              "role": "defining",
+              "note": "“And for the ransom of the two hundred and seventy-three of the firstborn of Israel in excess of the Levites, you shall take five shekels apiece” (Num 3:46–47)."
+            },
+            {
+              "ref": "Num.3.48",
+              "note": "The silver given to Aaron and his sons as the ransom of those in excess."
+            },
+            {
+              "ref": "Num.3.49",
+              "note": "Moses took “the silver of the ransom (הַפִּדְיוֹם)” from those above the ones ransomed by the Levites."
+            },
+            {
+              "ref": "Num.3.51",
+              "role": "defining",
+              "note": "“Moses gave the silver of the ransom (כֶּסֶף הַפְּדֻיִם) to Aaron and to his sons.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פִּדְיוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ransom price",
+      "bdb": [
+        "q.aj.af"
+      ],
+      "cognate_ids": [
+        "ar-fada",
+        "akk-pidu"
+      ],
+      "summary": "Spelled פִּדְיוֹם once (Num 3:49). The price that frees a life, set beside כֹּפֶר.",
+      "senses": [
+        {
+          "id": "ransom-price",
+          "gloss": "ransom price (of a life)",
+          "definition": "What is paid to free a life that is forfeit: the owner of a goring ox pays it for his own life; no man can pay it for his brother’s.",
+          "kin": [
+            "ransom-by-price"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.21.30",
+              "role": "defining",
+              "note": "“If a ransom (כֹּפֶר) is laid on him, he shall give the ransom of his life (פִּדְיֹן נַפְשׁוֹ), whatever is laid on him.”"
+            },
+            {
+              "ref": "Psa.49.9",
+              "role": "defining",
+              "note": "“For the ransom of their soul is costly, and it ceases forever”: no wealth can buy a man out of death (Psa 49:7–10)."
+            },
+            {
+              "ref": "Num.3.49",
+              "note": "“The silver of the ransom” for the firstborn above the number of the Levites."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "λύτρον",
+          "gloss": "ransom",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.21.30, פִּדְיֹן → λύτρα; Num.3.49, פִּדְיוֹם → λύτρα"
+            },
+            {
+              "ref": "Mat.20.28",
+              "role": "defining",
+              "note": "The Son of man came “to give his life a ransom (λύτρον) for many”."
+            },
+            {
+              "ref": "Mrk.10.45"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-fada",
+      "lang": "ar",
+      "form": "فَدَى",
+      "translit": "fadā",
+      "gloss": "ransom, free a captive by giving something in his place; fidya, fidāʾ ransom",
+      "relation": "cognate",
+      "note": "The same release by a substitute or a price as the Hebrew’s law of the firstborn. Form III is used of accepting a bloodwit for a slayer, “a substitute for the blood, like as the ransom is a substitute for the captive”, as פִּדְיוֹן is the price of a forfeit life (Exo 21:30).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2353, root فدي, فَدَاهُ (n33282)",
+          "note": "“He gave his ransom; he gave a thing, or a captive, for him, and so liberated him; [i. e. he ransomed him;] … or the preserving a man from misfortune by what one gives by way of compensation for him.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2354, root فدي, فَاْدَىَ; فَدًى, فِدْيَةٌ (n33286)",
+          "note": "فَدًى, فِدَآءٌ, فِدْيَةٌ “A ransom; a thing, or a captive, that is given for a man, who is therewith liberated”."
+        }
+      ]
+    },
+    {
+      "id": "akk-padu",
+      "lang": "akk",
+      "form": "padû",
+      "translit": "padû",
+      "gloss": "spare, set free, ransom",
+      "relation": "cognate",
+      "note": "The Akkadian leans to sparing and letting go, as the Hebrew’s rescue of a life from death.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000007750, padû [spare] V",
+          "note": "Meanings: ransoming; set free; spare."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000293 pdy [redeem], AKK008742 padû [spare]"
+        }
+      ]
+    },
+    {
+      "id": "akk-pidu",
+      "lang": "akk",
+      "form": "pīdu",
+      "translit": "pīdu",
+      "gloss": "pardon, redemption",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000049920, pīdu [pardon] N",
+          "note": "Meanings: pardon; redemption."
+        }
+      ]
+    },
+    {
+      "id": "uga-pdy",
+      "lang": "uga",
+      "form": "𐎔𐎄𐎊",
+      "translit": "pdy",
+      "gloss": "ransom, redeem",
+      "relation": "cognate",
+      "note": "In a legal text on the redemption of captives (KTU 3.4): “Iwrikalli redeemed Agdan”.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 198, §93 Glossary, /p-d-y/",
+          "note": "pdy, pdyh[m] “to ransom” (H. p-d-y, Arab. fada(y), Akkad. padû)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 89, §64.24",
+          "note": "iwrkl.pdy agdn 3.4:2–3 “Iwrikalli redeemed Agdan”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000293 pdy [redeem], UGC003260 pdy [redeem]"
+        }
+      ]
+    },
+    {
+      "id": "phn-pdy",
+      "lang": "phn",
+      "form": "𐤐𐤃𐤉",
+      "translit": "pdy",
+      "gloss": "redeem, rescue (in personal names)",
+      "relation": "cognate",
+      "note": "Known in Punic personal names of the type pd-DN, “DN redeem!”, and b‘lpd’, “Baal redeem!”: the same kind of name as פְּדָהצוּר, פְּדַהְאֵל and פְּדָיָהוּ.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 395, P-D-Y I; PD’, var. PDY",
+          "note": "“v. qal REDEEM, RESCUE (in personal names) … in the hypocoristica pd’, pdy, ‘May he [my god] redeem <me>!’ Also … b’lpd’, ‘Baal redeem <me>!’”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000293 pdy [redeem], PUN001637 pdy [redeem]"
+        }
+      ]
+    },
+    {
+      "id": "sem-fdy",
+      "lang": "sem",
+      "form": "𐩰𐩵𐩺",
+      "translit": "fdy",
+      "gloss": "repay; purchase; redeem (Sabaean)",
+      "relation": "cognate",
+      "note": "Common in the Sabaean eponym formula, “(the god) redeemed him from (service in) all His temples” at the end of his term: release from an obligation, as the Hebrew firstborn is released from belonging to Yahweh.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 401, FDY",
+          "note": "“REPAY s.o.; PURCHASE s.th.; REDEEM s.o.” … C967/3 fdyhw bn kl ʾbythw “(the god) redeemed him from (service in) all His temples”."
+        }
+      ]
+    },
+    {
+      "id": "gez-fadaya",
+      "lang": "gez",
+      "form": "ፈደየ",
+      "translit": "fadaya",
+      "gloss": "pay, repay, requite, indemnify",
+      "relation": "cognate",
+      "note": "The Ge’ez keeps the side of paying the price; Tigre and Tigrinya forms mean pay and indemnify.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 162, Ug pdy",
+          "note": "Ug pdy “to ransom”; Gz fadaya “pay out, repay, indemnify”; n. “payment, ransom, requital”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000293 pdy [redeem], GEZ001662 fadaya [restore]"
+        }
+      ]
+    },
+    {
+      "id": "arc-pdy",
+      "lang": "arc",
+      "form": "פְּדָא",
+      "translit": "pədā",
+      "gloss": "set free, ransom (Jewish Palestinian Aramaic)",
+      "relation": "cognate",
+      "note": "The Yerushalmi uses it of a woman of standing freeing a man from impalement: ופְדָאֲתוֹ, “and she set him free”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פדי",
+          "note": "“Y. Yeb. XVI, 15ᶜ … ופְדָאֲתוֹ … an influential woman passed by and liberated him.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000293 pdy [redeem], ARM023336 PDY [liberate]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "firstborn-redeemed",
+      "statement": "Yahweh killed Egypt’s firstborn and spared Israel’s, and so every firstborn of Israel is his: the clean beast is offered, the donkey is ransomed with a lamb or killed, and the son is ransomed with five shekels (Exo 13:13–15; Num 18:15–17). He took the Levites in place of the firstborn, and the firstborn above their number were ransomed with silver given to the priests (Num 3:45–51). Redemption in the law is release of what belongs to Yahweh by a price or a life given in its place; what is not redeemed is lost.",
+      "evidence": [
+        {
+          "ref": "Exo.13.13"
+        },
+        {
+          "ref": "Exo.13.15"
+        },
+        {
+          "ref": "Num.18.15"
+        },
+        {
+          "ref": "Num.18.17"
+        },
+        {
+          "ref": "Num.3.45"
+        },
+        {
+          "ref": "Num.3.51"
+        },
+        {
+          "ref": "Lev.27.27"
+        }
+      ]
+    },
+    {
+      "topic": "redemption-from-death",
+      "statement": "No man can ransom his brother from death, for the ransom of a life is too costly (Psa 49:8–10); “but God will redeem my soul from the hand of the grave, for he will take me” (Psa 49:16). Through Hosea Yahweh says “from the hand of the grave I will ransom them, from death I will redeem them; where are your plagues, death?” (Hos 13:14), and Paul quotes these words of the dead raised incorruptible at Christ’s coming (1Co 15:52–55). The soul redeemed is the person himself, brought back from the grave that held him: redemption from death is resurrection, God’s work and not man’s.",
+      "evidence": [
+        {
+          "ref": "Psa.49.8"
+        },
+        {
+          "ref": "Psa.49.9"
+        },
+        {
+          "ref": "Psa.49.16"
+        },
+        {
+          "ref": "Hos.13.14"
+        },
+        {
+          "ref": "1Co.15.54"
+        },
+        {
+          "ref": "1Co.15.55"
+        },
+        {
+          "ref": "Job.33.28"
+        }
+      ]
+    },
+    {
+      "topic": "redemption-from-sin",
+      "statement": "The psalmist waits for Yahweh, with whom is “plenteous redemption”, and says “he will redeem Israel from all his iniquities” (Psa 130:7–8). The apostles take up the word for Christ: he “gave himself for us, that he might redeem us from all iniquity” (Tit 2:14), and believers were redeemed “not with silver or gold … but with the precious blood of Christ, as of a lamb without blemish” (1Pe 1:18–19), as the firstborn were ransomed by a lamb or by silver. He came “to give his life a ransom for many” (Mat 20:28).",
+      "evidence": [
+        {
+          "ref": "Psa.130.7"
+        },
+        {
+          "ref": "Psa.130.8"
+        },
+        {
+          "ref": "Tit.2.14"
+        },
+        {
+          "ref": "1Pe.1.18"
+        },
+        {
+          "ref": "1Pe.1.19"
+        },
+        {
+          "ref": "Mat.20.28"
+        },
+        {
+          "ref": "Exo.13.13"
+        }
+      ]
+    },
+    {
+      "topic": "redemption-of-israel",
+      "statement": "Yahweh redeemed Israel from Egypt to be his own people (Deu 7:8; 2Sa 7:23), and the prophets promise he will redeem them again: “he who scattered Israel will gather him … for Yahweh has ransomed Jacob” (Jer 31:10–11); “I will whistle for them and gather them, for I have redeemed them” (Zec 10:8); “the ransomed of Yahweh shall return and come to Zion with singing” (Isa 35:10; 51:11). In the days of Jesus the faithful were still “looking for redemption in Jerusalem” and hoped he was the one “to redeem Israel” (Luk 2:38; 24:21).",
+      "evidence": [
+        {
+          "ref": "Deu.7.8"
+        },
+        {
+          "ref": "2Sa.7.23"
+        },
+        {
+          "ref": "Jer.31.10"
+        },
+        {
+          "ref": "Jer.31.11"
+        },
+        {
+          "ref": "Zec.10.8"
+        },
+        {
+          "ref": "Isa.35.10"
+        },
+        {
+          "ref": "Isa.51.11"
+        },
+        {
+          "ref": "Luk.2.38"
+        },
+        {
+          "ref": "Luk.24.21"
+        }
+      ]
+    }
+  ],
+  "note": "Words BDB files under the root and left out: פַּדָּן (q.aj.aj), the place in Paddan-aram, a place name; its key's tokens in the database are אֲרָם, filed there by spelling, and its link to פדה is by spelling only (Jewish Aramaic פַּדָּנָא is plough, yoke of oxen). Proper names have their own entries: פְּדָהצוּר (names/pedahzur.json); not yet written: פְּדָיָהוּ (q.aj.ai), פָּדוֹן (q.aj.ac), פְּדַהְאֵל (q.aj.ag) and יִפְדְּיָה (j.cm.ai, filed by BDB as a verb). פִּדְיוֹן takes q.aj.af; BDB files the same three tokens under q.aj.ae (פִּדְיוֹם) too. The passive participle פָּדוּי (Num 18:16; Isa 35:10; 51:11) is counted with the verb. The Peshitta has no cognate root (it uses ܦܪܩ for redeem). Ge’ez is cited through Fisher’s comparison; Leslau and Dillmann not consulted."
+}
