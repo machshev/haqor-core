@@ -1,0 +1,513 @@
+{
+  "id": "peah",
+  "root": "פאה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "measure",
+    "land",
+    "tabernacle",
+    "body",
+    "harvest",
+    "poor",
+    "holiness",
+    "separation"
+  ],
+  "gloss": "edge, side, corner; (hiphil) make an end of",
+  "summary": "פֵּאָה is the edge or side of a thing: a corner of the table where its rings go, a side of the tabernacle or of a city or land measured toward one quarter (“the side of the north”), the edge of a field left unreaped for the poor and the stranger (Lev 19:9; 23:22), and the edge of the head and beard, the hair at the temples, which Israel was not to round or mar (Lev 19:27). Akkadian pūtu “forehead, front, side” and pātu “edge, border”, Ugaritic pảt “temple(s), border of the head” and Jewish Aramaic פָּאתָא answer to it. The one verb, אַפְאֵיהֶם (Deu 32:26), stands beside “I would make their memory cease from mankind”; whether it is the noun’s root or another is not clear.",
+  "words": [
+    {
+      "lemma": "פֵּאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "edge, side; corner; the edge of the head or beard",
+      "bdb": [
+        "q.ab.ab"
+      ],
+      "cognate_ids": [
+        "akk-putu",
+        "akk-patu",
+        "uga-pat",
+        "arc-pata"
+      ],
+      "senses": [
+        {
+          "id": "peah-side",
+          "gloss": "side, toward one quarter",
+          "definition": "The side of a building, court, city or land, named by the quarter it faces (“the side of the south”, “the side of the sea”), and measured as one face of the whole.",
+          "evidence": [
+            {
+              "ref": "Num.35.5",
+              "role": "defining",
+              "note": "The Levites’ pasture measured from outside the city: “the פְּאַת of the east 2,000 cubits”, and so for south, sea (west) and north, “and the city in the midst”: the four sides."
+            },
+            {
+              "ref": "Exo.27.9",
+              "role": "defining",
+              "note": "The court’s hangings “for the פְּאַת of the south … a hundred cubits long for the one פֵּאָה”; v. 11–13 the north, west and east sides."
+            },
+            {
+              "ref": "Exo.26.18",
+              "note": "Twenty boards “for the side of the south”; v. 20 the north side."
+            },
+            {
+              "ref": "Exo.38.11"
+            },
+            {
+              "ref": "Num.34.3",
+              "note": "“Your south side shall be from the wilderness of Zin”, beside גְּבוּל, the border that runs along it."
+            },
+            {
+              "ref": "Jos.18.14",
+              "note": "The border of Benjamin “turned round to the side of the sea (west)… this is the west side”."
+            },
+            {
+              "ref": "Jos.15.5"
+            },
+            {
+              "ref": "Ezk.47.18",
+              "note": "The land’s east side, measured from the border to the eastern sea; v. 15–20 its four sides."
+            },
+            {
+              "ref": "Ezk.48.1",
+              "note": "Each tribe’s portion runs “from the east side to the west side”."
+            },
+            {
+              "ref": "Ezk.48.16",
+              "note": "The city’s four sides, 4,500 each; v. 30–34 its gates by side."
+            },
+            {
+              "ref": "Ezk.41.12",
+              "note": "The building “at the side toward the west”."
+            }
+          ]
+        },
+        {
+          "id": "peah-corner",
+          "gloss": "corner, edge of an object or a field",
+          "definition": "The corner or edge where a thing ends: the corners of the table at its legs, the corner of a couch, and the edge of a field, which the reaper was not to finish but leave for the poor and the stranger.",
+          "evidence": [
+            {
+              "ref": "Exo.25.26",
+              "role": "defining",
+              "note": "Four rings of gold “on the four פֵּאֹת that are at its four feet”: the corners where the legs stand."
+            },
+            {
+              "ref": "Exo.37.13"
+            },
+            {
+              "ref": "Lev.19.9",
+              "role": "defining",
+              "note": "“You shall not finish (תְכַלֶּה) the פְּאַת of your field in reaping”: the edge is where the reaping would end."
+            },
+            {
+              "ref": "Lev.23.22",
+              "role": "defining",
+              "note": "Set among the feasts, after the day of firstfruits of wheat: the edge of the field and the gleanings are left “for the poor and for the stranger”."
+            },
+            {
+              "ref": "Amo.3.12",
+              "note": "Those of Israel who sit in Samaria “in the corner of a couch”, beside “the damask of a bed”: what is rescued is as little as two legs or a piece of an ear from the lion’s mouth."
+            }
+          ]
+        },
+        {
+          "id": "peah-head",
+          "gloss": "edge of the head or beard; the temples",
+          "definition": "The edge of the head, at the temples and the front, and the edge of the beard: the hair Israel and its priests were not to round off or mar. Of a people, its temples, the side of its head struck in war.",
+          "evidence": [
+            {
+              "ref": "Lev.19.27",
+              "role": "defining",
+              "note": "“You shall not round the פְּאַת of your head, nor mar the פְּאַת of your beard”, beside cuttings in the flesh for the dead (v. 28)."
+            },
+            {
+              "ref": "Lev.13.41",
+              "role": "defining",
+              "note": "If his head is plucked bare “from the פְּאַת of his face” he is forehead-bald (גִּבֵּחַ), against bald at the back (קֵרֵחַ, v. 40): the front edge of the head."
+            },
+            {
+              "ref": "Lev.21.5",
+              "note": "The priests shall not shave “the פְּאַת of their beard”."
+            },
+            {
+              "ref": "Jer.9.25",
+              "role": "defining",
+              "note": "“All who are cut at the פֵּאָה, who dwell in the wilderness”, set with Egypt, Judah, Edom, Ammon and Moab as uncircumcised: peoples who clipped the hair of their temples, as Lev 19:27 forbade Israel."
+            },
+            {
+              "ref": "Jer.25.23"
+            },
+            {
+              "ref": "Jer.49.32",
+              "note": "Yahweh will scatter to every wind “those cut at the פֵּאָה”, the tribes of Kedar and Hazor (v. 28)."
+            },
+            {
+              "ref": "Jer.48.45",
+              "role": "defining",
+              "note": "Fire “devours the פְּאַת of Moab and the crown of the head (קָדְקֹד) of the sons of tumult”: the parallel makes it the side of the head."
+            },
+            {
+              "ref": "Num.24.17",
+              "note": "The star out of Jacob “shall strike through the פַּאֲתֵי of Moab”; Jer 48:45 takes up the words with קָדְקֹד, the temples of Moab’s head."
+            }
+          ]
+        },
+        {
+          "id": "peah-quarter",
+          "gloss": "region, quarter (uncertain)",
+          "definition": "Once, of the kingdoms given to Israel: “you divided them לְפֵאָה”, apportioned them by sides or quarters, as the land is divided by its sides in Num 34 and Ezk 48. The use is single and its exact sense not fixed.",
+          "evidence": [
+            {
+              "ref": "Neh.9.22",
+              "role": "defining",
+              "note": "“You gave them kingdoms and peoples and divided them לְפֵאָה, and they possessed the land of Sihon … and the land of Og”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μέρος",
+          "gloss": "part; side; region",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.25.26, פֵּאֹת → μέρη; Jos.18.15, Jos.18.20, Ezk.47.20 → μέρος; μέρος renders פֵּאָה ×4"
+            },
+            {
+              "ref": "Jhn.21.6",
+              "note": "“Cast the net on the right μέρη of the boat”: side."
+            },
+            {
+              "ref": "Mat.15.21",
+              "note": "“The μέρη of Tyre and Sidon”: region."
+            }
+          ]
+        },
+        {
+          "lemma": "κόμη",
+          "gloss": "hair of the head",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.19.27, פְּאַת → κόμης"
+            },
+            {
+              "ref": "1Co.11.15"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָדְקֹד",
+            "note": "The crown of the head beside the פְּאַת, the side of the head, of Moab.",
+            "evidence": [
+              {
+                "ref": "Jer.48.45",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "גְּבוּל",
+            "note": "The border that runs along a side: the side is the face of the land, the border its line.",
+            "evidence": [
+              {
+                "ref": "Num.34.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.15.5"
+              },
+              {
+                "ref": "Ezk.47.18"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "פְּאַת שָׂדֶה",
+            "gloss": "the edge of the field, left unreaped for the poor",
+            "evidence": [
+              {
+                "ref": "Lev.19.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.23.22"
+              }
+            ]
+          },
+          {
+            "phrase": "פְּאַת רֹאשׁ / פְּאַת זָקָן",
+            "gloss": "the edge of the head, the temples; the edge of the beard",
+            "evidence": [
+              {
+                "ref": "Lev.19.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.21.5"
+              }
+            ]
+          },
+          {
+            "phrase": "קְצוּצֵי פֵאָה",
+            "gloss": "those cut at the edge (of the hair): the desert tribes",
+            "evidence": [
+              {
+                "ref": "Jer.9.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.25.23"
+              },
+              {
+                "ref": "Jer.49.32"
+              }
+            ]
+          },
+          {
+            "phrase": "פְּאַת צָפוֹן / נֶגֶב / יָם / קֵדְמָה",
+            "gloss": "the north, south, west (sea), east side",
+            "evidence": [
+              {
+                "ref": "Num.35.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.27.11"
+              },
+              {
+                "ref": "Ezk.48.16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פָּאָה",
+      "pos": "verb",
+      "gloss": "(hiphil) make an end of; perhaps cut in pieces or scatter",
+      "summary": "Used once, in the Song of Moses. Its parallel fixes only that it means destroying a people so that their memory ceases. Whether it is the same root as פֵּאָה (as a verb from the noun, “drive them to the far corners”) or a separate root “split, cleave” (Arabic faʾā) is not clear.",
+      "bdb": [
+        "q.ab.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "make an end of (them)",
+          "cognate_ids": [
+            "ar-fawa"
+          ],
+          "senses": [
+            {
+              "gloss": "make an end of, destroy",
+              "definition": "To do away with a people utterly, so that their memory is gone from mankind; Yahweh says he would have done so to Israel, but held back lest the enemy boast (Deu 32:27).",
+              "evidence": [
+                {
+                  "ref": "Deu.32.26",
+                  "role": "defining",
+                  "note": "“I said, אַפְאֵיהֶם; I would make their memory cease from mankind”: the second line restates the first."
+                },
+                {
+                  "ref": "Deu.32.27",
+                  "note": "Why he did not: “were it not that I feared the provocation of the enemy”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "διασπείρω",
+          "gloss": "scatter abroad",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.32.26, אַפְאֵיהֶם → διασπερῶ"
+            },
+            {
+              "ref": "Act.8.1",
+              "note": "The ecclesia at Jerusalem “were all scattered abroad (διεσπάρησαν)”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁבַת",
+            "note": "Hiphil “make cease”: “I would make their memory cease from mankind”.",
+            "evidence": [
+              {
+                "ref": "Deu.32.26",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-putu",
+      "lang": "akk",
+      "form": "pūtu",
+      "translit": "pūtu",
+      "gloss": "forehead, brow; front, façade; side, short side (of a field); opposite, before",
+      "relation": "cognate",
+      "note": "The front of the head, then the front or side of a thing and of a plot of land: the same span as פֵּאָה, from the front edge of the head (Lev 13:41) to the side of a field and of a measured land.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003690, pūtu [forehead] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003690.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-patu",
+      "lang": "akk",
+      "form": "pātu, piātu",
+      "translit": "pātu, piātu",
+      "gloss": "edge, border",
+      "relation": "cognate",
+      "note": "Edge and border, as פֵּאָה is the edge of a field and the side along a border.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000029280, pātu [edge] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000029280.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000140850, piātu [edge] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-pat",
+      "lang": "uga",
+      "form": "𐎔𐎀𐎚",
+      "translit": "pảt",
+      "gloss": "temple(s), border(s) of the head; edge",
+      "relation": "cognate",
+      "note": "The sides of the head, as פְּאַת רֹאשׁ (Lev 19:27), and edge.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 197, §93 Glossary, pảt 1.103:54 “temple(s), border(s) of the head”"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§53, feminine nouns: pảt “edge”"
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 161, pảt “corner; forehead, brow, temple”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000316 pʾt [corner] N, UGC003232 pit [temple]"
+        }
+      ]
+    },
+    {
+      "id": "arc-pata",
+      "lang": "arc",
+      "form": "פָּאתָא, פָּתָא",
+      "translit": "pāʾṯā, pāṯā",
+      "gloss": "corner, edge (of field, head, beard)",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums for פְּאַת in the same verses: the field’s edge (Targ. O. Lev 19:9; 23:22), the head and beard (Lev 19:27; 21:5), and the “cut at the corner” of Jer 9:25; 25:23.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פָּאתָא I (Q00031)",
+          "note": "Targ. O. Lev. XIX, 9, 27; XXIII, 22; XXI, 5; Targ. Is. III, 16, 24; Targ. Jer. IX, 25; XXV, 23."
+        }
+      ]
+    },
+    {
+      "id": "ar-fawa",
+      "lang": "ar",
+      "form": "فَأَى، فَأَوَ؛ اِنْفَأَى",
+      "translit": "faʾā, faʾawa; infaʾā",
+      "gloss": "split, cleave (a head with the sword, a bowl); smite; (VII) be split open",
+      "relation": "possible",
+      "note": "Lane’s sources: “I split, or clave, his head … with the sword”, “I split … the bowl”; form VII “it became split, or cloven … it opened so as to form a breach”. If Hebrew פָּאָה is this root, אַפְאֵיהֶם would be “I would cleave them in pieces”; Deu 32:26 fixes only “make an end of”, so the link is possible. The same Arabic article has فِئَةٌ “a party, portion, division”, which Lane’s sources derive from it or from فيأ; if from it, “a part split off” could stand behind פֵּאָה “side, quarter” too, but nothing in scripture shows that.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2326, root فأو and فأى, فَأَوْتُ رَأْسَهُ (n32851); انفأى (n32853); فِئَةٌ (n32855)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001262 pʾw [split] V, ARB025299 faA^awa"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "corner-for-the-poor",
+      "statement": "Israel was not to reap the פְּאַת of the field to its end, nor gather the gleanings, but leave them “for the poor and for the stranger” (Lev 19:9–10); the law is repeated in the midst of the feasts, between the day of firstfruits of wheat and the day of trumpets, ending “I am Yahweh your God” (Lev 23:22). Deuteronomy gives the reason: “you shall remember that you were a slave in the land of Egypt” (Deu 24:19–22). Ruth, a Moabite widow, lived by this law in the fields of Boaz, and Boaz bade his reapers leave her more (Rut 2:2–3, 15–16). From the verses: Israel’s harvest joy at the feasts was not complete without the poor and the stranger, and their share was left in the field by law, not given at the owner’s pleasure, because Israel itself had been redeemed from want.",
+      "evidence": [
+        {
+          "ref": "Lev.19.9",
+          "to": "Lev.19.10"
+        },
+        {
+          "ref": "Lev.23.22"
+        },
+        {
+          "ref": "Deu.24.19",
+          "to": "Deu.24.22"
+        },
+        {
+          "ref": "Rut.2.2",
+          "to": "Rut.2.3"
+        },
+        {
+          "ref": "Rut.2.15",
+          "to": "Rut.2.16"
+        }
+      ]
+    },
+    {
+      "topic": "separation",
+      "statement": "Israel was not to round the פְּאַת of the head nor mar the פְּאַת of the beard, set beside “you shall not make cuttings in your flesh for the dead” (Lev 19:27–28); the priests the same, “they shall be holy to their God” (Lev 21:5–6); and Deuteronomy gives the ground: “you are sons to Yahweh your God … you are a holy people” (Deu 14:1–2). Jeremiah names “all who are cut at the פֵּאָה” among the uncircumcised nations, and puts Israel with them, “uncircumcised in heart” (Jer 9:24–25). Paul says he is a Jew who is one inwardly, and circumcision is of the heart, in spirit (Rom 2:28–29). From the verses: the mark kept off Israel’s body set them apart from the nations, and Jeremiah shows that keeping the outward sign without the heart counted them among those from whom it was to set them apart.",
+      "evidence": [
+        {
+          "ref": "Lev.19.27",
+          "to": "Lev.19.28"
+        },
+        {
+          "ref": "Lev.21.5",
+          "to": "Lev.21.6"
+        },
+        {
+          "ref": "Deu.14.1",
+          "to": "Deu.14.2"
+        },
+        {
+          "ref": "Jer.9.24",
+          "to": "Jer.9.25"
+        },
+        {
+          "ref": "Rom.2.28",
+          "to": "Rom.2.29"
+        }
+      ]
+    }
+  ],
+  "note": "Refs follow the Hebrew versification (Jer 9:25 is English 9:26). The Num 24:17 star prophecy is treated under derek.json (star-out-of-jacob), so it is only noted here. Leads not cited for want of a local or listed source checked: Syriac ܦܐܬܐ paʾtā “side, edge” (payne-smith-1903, page not checked), Ge'ez/Amharic fit “face, front” (leslau-1987, mentioned by Fisher p. 161). The Ugaritic page in Fisher is read from OCR (p. 161, between printed 159 and 161); the §53 page in Segert is not printed in the OCR. Neh 9:22 לְפֵאָה is single and its sense uncertain."
+}
