@@ -1,0 +1,797 @@
+{
+  "id": "taqa",
+  "root": "תקע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "sound",
+    "worship",
+    "war",
+    "assembly",
+    "pledge"
+  ],
+  "gloss": "strike, thrust in; blow (a horn); clap, strike hands",
+  "summary": "תָּקַע is a sharp stroke: to drive a tent peg through a man’s temple or into a loom, to fasten a tent in the ground, to thrust a blade into the belly, and, most often, to blow a blast on the shofar or the silver trumpets (Num 10:3–10). Num 10:7 sets it apart from הֵרִיעַ, the alarm: the assembly is called by a blast, “but you shall not sound an alarm”. Struck together, the hands clap over a fallen enemy or in praise to God, and the man who “strikes his palm” for another becomes his surety (Pro 6:1; 17:18). Aramaic has the same verb for blowing the horn and clapping the hands.",
+  "words": [
+    {
+      "lemma": "תָּקַע",
+      "pos": "verb",
+      "gloss": "drive in, thrust; blow (a horn); clap, strike (hands)",
+      "bdb": [
+        "w.bp.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "drive in, fasten, pitch; thrust; blow a blast; clap the hands; strike hands in pledge",
+          "senses": [
+            {
+              "id": "taqa-drive",
+              "gloss": "drive in, fasten",
+              "definition": "Strike something so that it goes in and holds: a peg driven through a temple or into a loom, a peg fastened in a firm place, a dead man’s body or head fastened to a wall or in a temple.",
+              "evidence": [
+                {
+                  "ref": "Jdg.4.21",
+                  "role": "defining",
+                  "note": "Jael took a tent peg and a hammer and drove (וַתִּתְקַע) the peg into Sisera’s temple, and it went down into the ground."
+                },
+                {
+                  "ref": "Jdg.16.14",
+                  "role": "defining",
+                  "note": "Delilah fastened Samson’s locks with the peg, which he pulled out of the loom."
+                },
+                {
+                  "ref": "Isa.22.23",
+                  "role": "defining",
+                  "note": "“I will fasten him as a peg (וּתְקַעְתִּיו יָתֵד) in a firm place.”"
+                },
+                {
+                  "ref": "Isa.22.25",
+                  "note": "The passive participle: “the peg that was fastened (הַתְּקוּעָה) in a firm place will give way.”"
+                },
+                {
+                  "ref": "1Sa.31.10",
+                  "note": "The Philistines fastened Saul’s body to the wall of Beth-shan."
+                },
+                {
+                  "ref": "1Ch.10.10",
+                  "note": "They fastened his skull in the house of Dagon."
+                }
+              ],
+              "senses": [
+                {
+                  "gloss": "pitch (a tent)",
+                  "definition": "Set up a tent by driving its pegs into the ground.",
+                  "evidence": [
+                    {
+                      "ref": "Gen.31.25",
+                      "role": "defining",
+                      "note": "Jacob had pitched (תָּקַע) his tent in the mountain, and Laban pitched with his brothers in the mountain of Gilead."
+                    },
+                    {
+                      "ref": "Jer.6.3",
+                      "note": "Shepherds with their flocks “pitch their tents against her all around”: the besiegers of Jerusalem."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "taqa-thrust",
+              "gloss": "thrust in, drive",
+              "definition": "Drive something hard into or onto something else: a blade into the belly, darts into the heart, the locusts by the wind into the sea.",
+              "evidence": [
+                {
+                  "ref": "Jdg.3.21",
+                  "role": "defining",
+                  "note": "Ehud took the sword from his right thigh and thrust it into Eglon’s belly."
+                },
+                {
+                  "ref": "2Sa.18.14",
+                  "role": "defining",
+                  "note": "Joab took three darts in his hand and thrust them into the heart of Absalom while he was still alive."
+                },
+                {
+                  "ref": "Exo.10.19",
+                  "note": "A very strong west wind lifted the locusts and drove them into the Sea of Reeds."
+                }
+              ]
+            },
+            {
+              "id": "taqa-blow",
+              "gloss": "blow, give a blast (on a horn or trumpet)",
+              "definition": "Blow a horn or trumpet, with בְּ of the instrument (“blow on the shofar”) or with the instrument or the blast as object (“blow a shofar”, “blow a teruah”). Num 10 distinguishes it from הֵרִיעַ: a blast calls the assembly, and the teruah is the alarm that moves the camps; so תָּקַע is the act of blowing, of which the teruah is one kind.",
+              "evidence": [
+                {
+                  "ref": "Num.10.3",
+                  "role": "defining",
+                  "note": "“When they blow on them, all the congregation shall gather to you at the door of the tent of meeting.”"
+                },
+                {
+                  "ref": "Num.10.5",
+                  "role": "defining",
+                  "note": "“When you blow a teruah (וּתְקַעְתֶּם תְּרוּעָה), the camps lying on the east shall set out.”"
+                },
+                {
+                  "ref": "Num.10.7",
+                  "role": "defining",
+                  "note": "“When the assembly is to be gathered you shall blow (תִּתְקְעוּ), but you shall not sound an alarm (וְלֹא תָרִיעוּ).”"
+                },
+                {
+                  "ref": "Psa.81.4",
+                  "note": "“Blow the shofar at the new moon.”"
+                }
+              ],
+              "cognate_ids": [
+                "arc-teqa"
+              ],
+              "senses": [
+                {
+                  "id": "taqa-blow-assembly",
+                  "gloss": "blow to gather or move the people",
+                  "definition": "The priests blow the silver trumpets to call the congregation or its princes to the tent of meeting and to set the camps on their way.",
+                  "evidence": [
+                    {
+                      "ref": "Num.10.3",
+                      "role": "defining"
+                    },
+                    {
+                      "ref": "Num.10.4",
+                      "role": "defining",
+                      "note": "“If they blow on one, the princes, the heads of the thousands of Israel, shall gather to you.”"
+                    },
+                    {
+                      "ref": "Num.10.5"
+                    },
+                    {
+                      "ref": "Num.10.6",
+                      "note": "A second teruah moves the camps on the south: “they shall blow a teruah for their journeys.”"
+                    },
+                    {
+                      "ref": "Num.10.7"
+                    },
+                    {
+                      "ref": "Num.10.8",
+                      "role": "defining",
+                      "note": "“The sons of Aaron, the priests, shall blow on the trumpets, and they shall be to you a statute for ever throughout your generations.”"
+                    },
+                    {
+                      "ref": "2Sa.20.1",
+                      "note": "Sheba blows the shofar to call Israel away from David: “every man to his tents, Israel.”"
+                    }
+                  ]
+                },
+                {
+                  "id": "taqa-blow-feast",
+                  "gloss": "blow at feasts, offerings and fasts",
+                  "definition": "Blow over the offerings on the days of gladness, appointed times and new moons, and to call a solemn fast; and the priests’ blast before the ark at Jericho.",
+                  "evidence": [
+                    {
+                      "ref": "Num.10.10",
+                      "role": "defining",
+                      "note": "“In the day of your gladness, and in your appointed times and the heads of your months, you shall blow on the trumpets over your burnt offerings … a remembrance before your God.”"
+                    },
+                    {
+                      "ref": "Psa.81.4",
+                      "role": "defining",
+                      "note": "“Blow the shofar at the new moon, at the full moon, on our feast day”, called a חֹק for Israel in Psa 81:5."
+                    },
+                    {
+                      "ref": "Jol.2.15",
+                      "note": "“Blow the shofar in Zion, sanctify a fast, call a solemn assembly.”"
+                    },
+                    {
+                      "ref": "Jos.6.4",
+                      "note": "Seven priests with seven shofars of rams before the ark; on the seventh day they blow on the shofars."
+                    },
+                    {
+                      "ref": "Jos.6.8"
+                    },
+                    {
+                      "ref": "Jos.6.9"
+                    },
+                    {
+                      "ref": "Jos.6.13"
+                    },
+                    {
+                      "ref": "Jos.6.16",
+                      "note": "At the seventh time the priests blew, and Joshua said, “Shout, for Yahweh has given you the city.”"
+                    },
+                    {
+                      "ref": "Jos.6.20"
+                    }
+                  ]
+                },
+                {
+                  "id": "taqa-blow-war",
+                  "gloss": "blow to rally for war, to sound the warning",
+                  "definition": "Blow the shofar to call men out to battle, to start an attack, or to warn a city that the enemy is coming; the watchman’s blast.",
+                  "evidence": [
+                    {
+                      "ref": "Jdg.3.27",
+                      "role": "defining",
+                      "note": "Ehud blew the shofar in the hill country of Ephraim, and the sons of Israel went down with him."
+                    },
+                    {
+                      "ref": "Jdg.6.34",
+                      "role": "defining",
+                      "note": "The spirit of Yahweh clothed Gideon, he blew on the shofar, and Abiezer was called out after him."
+                    },
+                    {
+                      "ref": "Jdg.7.18",
+                      "note": "“I will blow on the shofar, I and all who are with me; and you shall blow on the shofars round the whole camp.”"
+                    },
+                    {
+                      "ref": "Jdg.7.19"
+                    },
+                    {
+                      "ref": "Jdg.7.20"
+                    },
+                    {
+                      "ref": "Jdg.7.22",
+                      "note": "The three hundred blew the shofars, and Yahweh set every man’s sword against his fellow."
+                    },
+                    {
+                      "ref": "1Sa.13.3",
+                      "note": "Saul blew the shofar through all the land: “Let the Hebrews hear.”"
+                    },
+                    {
+                      "ref": "Ezk.33.3",
+                      "role": "defining",
+                      "note": "The watchman sees the sword coming on the land, blows the shofar and warns the people."
+                    },
+                    {
+                      "ref": "Ezk.33.6",
+                      "note": "If he does not blow and the people are not warned, their blood is required at the watchman’s hand."
+                    },
+                    {
+                      "ref": "Jer.4.5",
+                      "note": "“Blow the shofar in the land; cry, fill your mouth: gather yourselves, let us go into the fortified cities.”"
+                    },
+                    {
+                      "ref": "Jer.6.1",
+                      "note": "“Blow the shofar in Tekoa”: evil looks out from the north."
+                    },
+                    {
+                      "ref": "Jer.51.27",
+                      "note": "Against Babylon: lift up a banner, blow the shofar among the nations."
+                    },
+                    {
+                      "ref": "Hos.5.8",
+                      "note": "“Blow the shofar in Gibeah, the trumpet in Ramah, sound the alarm at Beth-aven.”"
+                    },
+                    {
+                      "ref": "Jol.2.1",
+                      "note": "“Blow the shofar in Zion, sound the alarm in my holy mountain … for the day of Yahweh comes.”"
+                    },
+                    {
+                      "ref": "Neh.4.12",
+                      "note": "The man who blew the shofar stood by Nehemiah as the wall was built, to call the builders together against attack (Neh 4:14)."
+                    },
+                    {
+                      "ref": "Ezk.7.14",
+                      "note": "“They have blown on the תָּקוֹעַ and made everything ready, but no one goes to battle.”"
+                    },
+                    {
+                      "ref": "Isa.18.3",
+                      "note": "All the world is to see when a banner is lifted on the mountains and hear when the shofar is blown."
+                    },
+                    {
+                      "ref": "Zec.9.14",
+                      "role": "defining",
+                      "note": "“Adonai Yahweh will blow on the shofar and go with the storms of the south”, as he fights for his people."
+                    }
+                  ]
+                },
+                {
+                  "gloss": "blow to halt the fight",
+                  "definition": "Blow the shofar to call the people back from the pursuit and end a battle.",
+                  "evidence": [
+                    {
+                      "ref": "2Sa.2.28",
+                      "role": "defining",
+                      "note": "Joab blew on the shofar, and all the people stood and pursued Israel no more, nor fought any more."
+                    },
+                    {
+                      "ref": "2Sa.18.16",
+                      "note": "Joab blew, and the people turned back from pursuing Israel."
+                    },
+                    {
+                      "ref": "2Sa.20.22",
+                      "note": "Sheba’s head is thrown to Joab; he blew, and they were scattered from the city."
+                    }
+                  ]
+                },
+                {
+                  "gloss": "blow to proclaim a king",
+                  "definition": "Blow the shofar or trumpets when a king is anointed or set on the throne, with the people’s cry “Let the king live!”",
+                  "evidence": [
+                    {
+                      "ref": "1Ki.1.34",
+                      "role": "defining",
+                      "note": "“Anoint him there king over Israel, and blow on the shofar and say, Let king Solomon live!”"
+                    },
+                    {
+                      "ref": "1Ki.1.39"
+                    },
+                    {
+                      "ref": "2Ki.9.13",
+                      "role": "defining",
+                      "note": "They spread their garments under Jehu, blew on the shofar and said, “Jehu is king.”"
+                    },
+                    {
+                      "ref": "2Ki.11.14",
+                      "note": "At Joash’s crowning all the people of the land rejoiced and blew on the trumpets."
+                    },
+                    {
+                      "ref": "2Ch.23.13"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "taqa-clap",
+              "gloss": "clap (the hands)",
+              "definition": "Strike the palms together: over an enemy’s fall, or in praise of God the great king.",
+              "cognate_ids": [
+                "arc-teqa"
+              ],
+              "evidence": [
+                {
+                  "ref": "Nam.3.19",
+                  "role": "defining",
+                  "note": "“All who hear the report of you clap the palm (תָּקְעוּ כַף) over you”: the nations over fallen Nineveh."
+                },
+                {
+                  "ref": "Psa.47.2",
+                  "role": "defining",
+                  "note": "“All you peoples, clap the palm (תִּקְעוּ כָף); shout to God with the voice of triumph”, for Yahweh is a great king over all the earth."
+                }
+              ]
+            },
+            {
+              "id": "taqa-pledge",
+              "gloss": "strike hands (in pledge), become surety",
+              "definition": "Strike the palm with another’s to bind oneself for his debt: the gesture of becoming surety, set beside עָרַב in Proverbs.",
+              "cognate_ids": [
+                "arc-teqa"
+              ],
+              "evidence": [
+                {
+                  "ref": "Pro.6.1",
+                  "role": "defining",
+                  "note": "“If you have become surety (עָרַבְתָּ) for your neighbour, struck your palms (תָּקַעְתָּ … כַּפֶּיךָ) for a stranger.”"
+                },
+                {
+                  "ref": "Pro.17.18",
+                  "role": "defining",
+                  "note": "“A man lacking heart strikes the palm, becoming surety in the presence of his neighbour.”"
+                },
+                {
+                  "ref": "Pro.22.26",
+                  "note": "“Do not be among those who strike the palm, among those who are surety for debts.”"
+                },
+                {
+                  "ref": "Pro.11.15",
+                  "note": "The participle alone, “those who strike”: whoever is surety for a stranger suffers for it, but he who hates striking hands is secure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be blown; strike hands, pledge oneself",
+          "senses": [
+            {
+              "gloss": "be blown (of a shofar)",
+              "definition": "Of a shofar: be sounded, so that the people hear and act.",
+              "cognate_ids": [
+                "arc-teqa"
+              ],
+              "evidence": [
+                {
+                  "ref": "Amo.3.6",
+                  "role": "defining",
+                  "note": "“Is a shofar blown in a city, and the people not afraid?”"
+                },
+                {
+                  "ref": "Isa.27.13",
+                  "role": "defining",
+                  "note": "“In that day a great shofar will be blown, and those perishing in the land of Assyria and the outcasts in the land of Egypt will come and bow down to Yahweh in the holy mountain at Jerusalem.”"
+                }
+              ]
+            },
+            {
+              "gloss": "strike hands, pledge oneself",
+              "definition": "Bind oneself by striking another’s hand, as surety for him.",
+              "cognate_ids": [
+                "arc-teqa"
+              ],
+              "evidence": [
+                {
+                  "ref": "Job.17.3",
+                  "role": "defining",
+                  "note": "“Lay down a pledge, be surety for me with yourself; who is there who will strike hands with me (לְיָדִי יִתָּקֵעַ)?”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σαλπίζω",
+          "gloss": "sound a trumpet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "תָּקַע → σαλπίζω in most of the blowing verses (MACULA alignment): Num.10.3–10, Jos.6.9–20, Jdg.7.18–22, Psa.81.4, Isa.27.13, Zec.9.14; Jer.4.5, 6.1 and Ezk.33.6 have σημαίνω"
+            },
+            {
+              "ref": "1Co.15.52",
+              "note": "“In a moment, in the twinkling of an eye, at the last trumpet: for it will sound (σαλπίσει), and the dead will be raised incorruptible.”"
+            },
+            {
+              "ref": "Mat.6.2",
+              "note": "“Do not sound a trumpet before you”, as the hypocrites do when they give alms."
+            },
+            {
+              "ref": "Rev.8.6",
+              "note": "The seven angels with the seven trumpets prepare themselves to sound."
+            },
+            {
+              "ref": "Rev.11.15",
+              "note": "The seventh angel sounds, and the kingdom of the world becomes our Lord’s and his Messiah’s."
+            }
+          ]
+        },
+        {
+          "lemma": "πήγνυμι",
+          "gloss": "fix, fasten; pitch (a tent)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.31.25, Jdg.4.21, Jdg.16.14 תָּקַע → πήγνυμι; ἐμπήγνυμι Jdg.3.21, 2Sa.18.14; καταπήγνυμι 1Sa.31.10"
+            },
+            {
+              "ref": "Heb.8.2",
+              "note": "A minister of the holy places and of the true tent, “which the Lord pitched (ἔπηξεν), not man”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "הֵרִיעַ",
+            "note": "Sound the alarm, set beside blowing the shofar; but Num 10:7 sets the two apart: the assembly is called by a blast without the alarm.",
+            "evidence": [
+              {
+                "ref": "Num.10.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.5.8"
+              },
+              {
+                "ref": "Jol.2.1"
+              },
+              {
+                "ref": "Psa.47.2"
+              }
+            ]
+          },
+          {
+            "lemma": "נָשָׂא נֵס",
+            "note": "Lift up a banner: the sight beside the sound, both signals to a people or an army.",
+            "evidence": [
+              {
+                "ref": "Isa.18.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.51.27"
+              },
+              {
+                "ref": "Jer.6.1",
+                "note": "With מַשְׂאֵת, a signal raised over Beth-haccherem."
+              }
+            ]
+          },
+          {
+            "lemma": "עָרַב",
+            "note": "Become surety: striking the palm is the gesture of it.",
+            "evidence": [
+              {
+                "ref": "Pro.6.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.17.18"
+              },
+              {
+                "ref": "Pro.22.26"
+              },
+              {
+                "ref": "Job.17.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "תָּקַע בַּשּׁוֹפָר",
+            "gloss": "blow on the shofar",
+            "evidence": [
+              {
+                "ref": "Jdg.3.27"
+              },
+              {
+                "ref": "2Sa.2.28"
+              },
+              {
+                "ref": "1Ki.1.34"
+              },
+              {
+                "ref": "Ezk.33.3"
+              },
+              {
+                "ref": "Zec.9.14"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּקַע שׁוֹפָר",
+            "gloss": "blow a shofar",
+            "evidence": [
+              {
+                "ref": "Jer.4.5"
+              },
+              {
+                "ref": "Hos.5.8"
+              },
+              {
+                "ref": "Jol.2.1"
+              },
+              {
+                "ref": "Psa.81.4"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּקַע בַּחֲצֹצְרוֹת",
+            "gloss": "blow on the trumpets",
+            "evidence": [
+              {
+                "ref": "Num.10.8"
+              },
+              {
+                "ref": "Num.10.10"
+              },
+              {
+                "ref": "2Ki.11.14"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּקַע תְּרוּעָה",
+            "gloss": "blow a teruah, an alarm blast",
+            "evidence": [
+              {
+                "ref": "Num.10.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.10.6"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּקַע כַּף",
+            "gloss": "strike the palm: clap the hands; strike hands in pledge",
+            "evidence": [
+              {
+                "ref": "Nam.3.19"
+              },
+              {
+                "ref": "Psa.47.2"
+              },
+              {
+                "ref": "Pro.17.18"
+              },
+              {
+                "ref": "Pro.22.26"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּקַע אֹהֶל",
+            "gloss": "pitch a tent",
+            "evidence": [
+              {
+                "ref": "Gen.31.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.6.3"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּקַע יָתֵד",
+            "gloss": "drive or fasten a peg",
+            "evidence": [
+              {
+                "ref": "Jdg.4.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.22.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תֵּקַע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "blast (of a horn)",
+      "summary": "Used once, in the closing psalm’s call to praise. Its sense rests on that one verse and on the verb it is formed from.",
+      "bdb": [
+        "w.bp.ab"
+      ],
+      "cognate_ids": [
+        "arc-teqa"
+      ],
+      "senses": [
+        {
+          "gloss": "blast, blowing",
+          "definition": "The sound of a horn blown, as an act of praise.",
+          "kin": [
+            "taqa-blow"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.150.3",
+              "role": "defining",
+              "note": "“Praise him with the תֵּקַע of the shofar; praise him with harp and lyre.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἦχος",
+          "gloss": "sound, noise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.150.3, תֵּקַע → ἦχος (ἐν ἤχῳ σάλπιγγος)"
+            },
+            {
+              "ref": "Heb.12.19",
+              "note": "Israel came not to the mountain that burned with fire, “and to the sound of a trumpet (σάλπιγγος ἤχῳ) and the voice of words”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תָּקוֹעַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "horn, trumpet; or a blast",
+      "summary": "Used once, as the thing blown in Ezk 7:14; whether it names the instrument or the blast is not fixed by the verse, and it rests on that verse and on the verb.",
+      "bdb": [
+        "w.bp.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "horn, instrument for blowing",
+          "definition": "What is blown to call men to battle: the verb’s object, “they blew on the תָּקוֹעַ”, as elsewhere “on the shofar”.",
+          "kin": [
+            "taqa-blow"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.7.14",
+              "role": "defining",
+              "note": "“They have blown on the תָּקוֹעַ and made everything ready, but no one goes to the battle, for my wrath is on all her multitude.”"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-teqa"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-teqa",
+      "lang": "arc",
+      "form": "תְּקַע",
+      "translit": "təqaʿ",
+      "gloss": "clap (the hands); sound, blow (a horn); (ithpeel) be sounded",
+      "relation": "cognate",
+      "note": "Jewish Aramaic. The Targums use it for clapping the hands (Targ. Ps 47:2), blowing the trumpets (Onkelos Num 10:3 ff.) and, in the ithpeel, a shofar being sounded (Targ. Isa 27:13; Amos 3:6); in the Galilean and Babylonian Talmuds it is blowing the shofar. It shares the verb’s blowing and its striking of the palms. Aramaic ע does not show whether ʿ or ġ stands behind it. The Comprehensive Aramaic Lexicon lists no Syriac use.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּקַע (ch.)",
+          "note": "“to clap. Targ. Ps. XLVII, 2. … to sound, blow. Targ. I Chr. XXV, 5. Targ. Num. X, 3, sq.; … Ithpe. to be sounded. Targ. Is. XXVII, 13.”"
+        },
+        {
+          "source": "cal",
+          "locator": "tqʿ vb., senses 1–4",
+          "url": "https://cal.huc.edu/oneentry.php?lemma=tq%28%20V&cits=all",
+          "note": "G “to sound a horn” (TgO Num 10:6; TN Num 10:8), “to blow the shofar” (TgPs 81:4; BT Šab 114b); Gt “to be sounded” (TgJ Amos 3:6). Derived nouns tāqōʿā “shofar-blower”, tqyʿh “shofar blast”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-watchmans-blast",
+      "statement": "Yahweh set Ezekiel as a watchman: when he sees the sword coming on the land he is to blow the shofar and warn the people; whoever hears and does not take warning, his blood is on his own head; but if the watchman sees the sword and does not blow, and a soul is taken, its blood Yahweh will require at the watchman’s hand (Ezk 33:2–9). “Is a shofar blown in a city and the people not afraid? … Surely Adonai Yahweh does nothing unless he reveals his secret to his servants the prophets” (Amo 3:6–7). Paul, leaving Ephesus, says “I am pure from the blood of all, for I did not shrink from declaring to you all the counsel of God” (Act 20:26–27). From the verses: the one who has been given the warning is answerable for sounding it, and the hearer for heeding it.",
+      "evidence": [
+        {
+          "ref": "Ezk.33.2",
+          "to": "Ezk.33.9"
+        },
+        {
+          "ref": "Amo.3.6",
+          "to": "Amo.3.7"
+        },
+        {
+          "ref": "Act.20.26",
+          "to": "Act.20.27"
+        }
+      ]
+    },
+    {
+      "topic": "the-great-shofar",
+      "statement": "In scripture men blow the shofar, but twice it is Yahweh’s own: “Adonai Yahweh will blow on the shofar” when he goes out to fight for Zion’s sons (Zec 9:13–14), and “in that day a great shofar will be blown, and those perishing in the land of Assyria and the outcasts in the land of Egypt will come and bow down to Yahweh in the holy mountain at Jerusalem” (Isa 27:12–13). Paul writes that at the last trumpet “it will sound, and the dead will be raised incorruptible” (1Co 15:52), and that the Lord will come down from heaven “with the trumpet of God, and the dead in Christ will rise first” (1Th 4:16). From the verses: the gathering of scattered Israel to Jerusalem and the raising of the dead at Christ’s return are announced by a blast that is God’s own, as the camp in the wilderness was gathered by the priests’ blast (Num 10:3).",
+      "evidence": [
+        {
+          "ref": "Zec.9.13",
+          "to": "Zec.9.14"
+        },
+        {
+          "ref": "Isa.27.12",
+          "to": "Isa.27.13"
+        },
+        {
+          "ref": "1Co.15.52"
+        },
+        {
+          "ref": "1Th.4.16"
+        },
+        {
+          "ref": "Num.10.3"
+        }
+      ]
+    },
+    {
+      "topic": "a-peg-in-a-firm-place",
+      "statement": "Yahweh puts the key of the house of David on Eliakim’s shoulder, “and he will open and none shall shut, and shut and none shall open; and I will fasten him as a peg in a firm place, and he will be a throne of glory to his father’s house”, and all its glory will hang on him; yet “in that day the peg fastened in a firm place will give way, and be cut down and fall, and the burden on it will be cut off” (Isa 22:20–25). The risen Christ speaks to Philadelphia as “he who has the key of David, who opens and no one shuts, and shuts and no one opens” (Rev 3:7), and holds the keys of death and of the grave (Rev 1:18). From the verses: what Eliakim held for a time and lost, Christ holds without end; the one fastened by Yahweh in a firm place, on whom his father’s house hangs, is the Son.",
+      "evidence": [
+        {
+          "ref": "Isa.22.20",
+          "to": "Isa.22.25"
+        },
+        {
+          "ref": "Rev.3.7"
+        },
+        {
+          "ref": "Rev.1.18"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Not claimed: the place תְּקוֹעַ Tekoa (w.bp.ad; 2Sa 14:2, Amo 1:1, 2Ch 11:6) and its gentilic תְּקוֹעִי (w.bp.ae), a place and not a name entry; 1Ch 2:24 and 4:5 “Ashhur the father of Tekoa” name the town’s founder, not given a name entry here (task said none). The brief files Pro 11:15 תֹקְעִים with no stem; it is the qal participle and entered under the qal “strike hands”. Isa 22:25 הַתְּקוּעָה is the qal passive participle. Open questions: (1) The root shows “drive in, thrust” and “blow, clap” in one verb; the Aramaic cognate shares only blowing and clapping, so lexicon-support counts it against “drive in” and “thrust”. The tie in scripture is the one sharp stroke (a peg struck in, a blast struck on the horn, palms struck together), but no cognate has been found that shows the thrusting sense. (2) תָּקוֹעַ (Ezk 7:14) may be the instrument or the blast; entered as the instrument because it stands where שׁוֹפָר stands with בְּ. (3) Doctrine “a-peg-in-a-firm-place” reads Eliakim’s key as pointing to Christ through Rev 3:7; check the reviewer wants that conclusion. Leads not followed: Ge’ez ṭaqʿa / ṭaqaʿa “blow the trumpet” (given as a lead with the emphatic ṭ by assimilation) not checked in Dillmann or Leslau; no Syriac root TQʿ in SEDRA (the Peshitta New Testament has no word of this root), and CAL deletes the one Syriac example once listed; no Arabic تقع in Lane, and no Akkadian, Ugaritic, Phoenician or Sabaic cognate found (Oracc’s etēqu “pass by” and Biella’s WTQ do not match). κροτέω renders the verb at Psa 47:2 and Nah 3:19 but is not in the New Testament, so it is not recorded."
+}
