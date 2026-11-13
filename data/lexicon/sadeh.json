@@ -1,0 +1,783 @@
+{
+  "id": "sadeh",
+  "root": "שׂדה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "land",
+    "agriculture",
+    "creation",
+    "poor",
+    "inheritance",
+    "mortality"
+  ],
+  "gloss": "field; open country; territory",
+  "summary": "שָׂדֶה is the land outside the walls and the house: open country where wild beasts roam and a man is beyond help (Deu 22:25–27; Gen 2:19), and the same ground as a piece of farmland that is sown, reaped, bought, sold and inherited (Lev 23:22; Gen 23:17; Jer 32:9). Joined to a people's name it is their territory, “the field of Moab”, “the field of Edom” (Rut 1:1; Gen 32:4), and set against the sea it is the mainland (Ezk 26:5–6). It is set against the city (Deu 28:3, 16) and paired with house and vineyard as what a man owns; the flower of the field is scripture's picture of man's short life (Isa 40:6–8). Ugaritic and Phoenician šd, “field, farmland, region”, are the same word.",
+  "words": [
+    {
+      "lemma": "שָׂדֶה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "field; open country; territory, land",
+      "bdb": [
+        "u.ak.ac"
+      ],
+      "cognate_ids": [
+        "uga-shd",
+        "phn-sd"
+      ],
+      "summary": "The root's one word, about 330 times. Poetry also has an older form שָׂדַי (Deu 32:13; Psa 8:8; 50:11; 96:12; Jer 4:17; Jol 2:22), filed separately by the database but counted here; the plural is שָׂדוֹת (Jer 32:15; Neh 5:3).",
+      "senses": [
+        {
+          "id": "open-country",
+          "gloss": "open country, the land outside town and house",
+          "definition": "The unenclosed land outside a town or camp and away from the house: where one goes out alone, hides, meets an enemy or is beyond anyone's hearing, and where wild beasts and wild plants live. Of beasts and plants, “of the field” is what grows or roams free, not kept or tilled.",
+          "cognate_ids": [
+            "akk-shadu"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.22.25",
+              "role": "defining",
+              "note": "If a man finds a betrothed girl בַּשָּׂדֶה and lies with her, only he dies …"
+            },
+            {
+              "ref": "Deu.22.27",
+              "role": "defining",
+              "note": "“… for he found her בַשָּׂדֶה; the betrothed girl cried out, and there was none to save her”: in the field is out of earshot, against “in the city” (Deu 22:23–24)."
+            },
+            {
+              "ref": "Lev.14.53",
+              "role": "defining",
+              "note": "The living bird is let go “outside the city, אֶל פְּנֵי הַשָּׂדֶה”, into the open country."
+            },
+            {
+              "ref": "Lev.17.5",
+              "role": "defining",
+              "note": "The sacrifices Israel had been offering “on the face of the field” are to be brought to the door of the tent of meeting instead: anywhere out in the open, away from the sanctuary."
+            },
+            {
+              "ref": "Gen.25.27",
+              "role": "defining",
+              "note": "Esau “a man knowing game, אִישׁ שָׂדֶה”, against Jacob “dwelling in tents”."
+            },
+            {
+              "ref": "Gen.2.19",
+              "role": "defining",
+              "note": "Yahweh God formed from the ground “every beast of the field (חַיַּת הַשָּׂדֶה) and every bird of the heavens”: the wild animals, beside the cattle (בְּהֵמָה) of Gen 2:20."
+            },
+            {
+              "ref": "Gen.3.1",
+              "note": "The serpent more subtle than any beast of the field."
+            },
+            {
+              "ref": "Exo.23.29",
+              "note": "Left empty, the land would fill with the beast of the field."
+            },
+            {
+              "ref": "2Ki.4.39",
+              "role": "defining",
+              "note": "One went out אֶל הַשָּׂדֶה to gather herbs and found “a vine of the field” with “gourds of the field”: wild, not planted."
+            },
+            {
+              "ref": "Gen.4.8",
+              "note": "Cain rose against Abel “when they were בַּשָּׂדֶה”."
+            },
+            {
+              "ref": "Gen.24.63",
+              "note": "Isaac went out to meditate בַּשָּׂדֶה toward evening."
+            },
+            {
+              "ref": "1Sa.20.5",
+              "note": "David: “I will hide myself בַשָּׂדֶה until the third evening.”"
+            },
+            {
+              "ref": "Exo.9.19",
+              "note": "Man and beast found בַשָּׂדֶה and not brought home (הַבַּיְתָה) will die in the hail."
+            },
+            {
+              "ref": "1Ki.14.11",
+              "note": "Of Jeroboam's house, who dies in the city the dogs eat, who dies בַּשָּׂדֶה the birds eat."
+            },
+            {
+              "ref": "2Sa.18.6",
+              "note": "The people went out הַשָּׂדֶה to meet Israel, and the battle was in the forest of Ephraim: the open country as where armies meet."
+            },
+            {
+              "ref": "Jdg.5.18",
+              "note": "Naphtali “on the heights of the field (מְרוֹמֵי שָׂדֶה)”: the open hill country."
+            },
+            {
+              "ref": "Isa.40.6",
+              "note": "“All flesh is grass, and all its goodliness like the flower of the field (צִיץ הַשָּׂדֶה)”: the wild flower."
+            },
+            {
+              "ref": "Psa.103.15",
+              "note": "“As a flower of the field, so he flourishes.”"
+            }
+          ]
+        },
+        {
+          "id": "farmland",
+          "gloss": "field, farmland, a plot of land",
+          "definition": "A piece of land with its bounds, that is sown and reaped and has an owner: it is bought and sold, redeemed, inherited, consecrated, and gleaned. Paired with vineyard and house, it stands for what a family lives from.",
+          "evidence": [
+            {
+              "ref": "Lev.23.22",
+              "role": "defining",
+              "note": "“When you reap the harvest of your land, you shall not wholly reap פְּאַת שָׂדְךָ, the corner of your field”: the field is what is reaped, and its edge is left for the poor and the stranger."
+            },
+            {
+              "ref": "Lev.19.9",
+              "note": "The same law."
+            },
+            {
+              "ref": "Deu.24.19",
+              "note": "A sheaf forgotten בַשָּׂדֶה is left for the stranger, the fatherless and the widow."
+            },
+            {
+              "ref": "Lev.25.3",
+              "to": "Lev.25.4",
+              "role": "defining",
+              "note": "“Six years you shall sow שָׂדֶךָ”; in the seventh “you shall not sow שָׂדְךָ”, beside the vineyard not pruned."
+            },
+            {
+              "ref": "Exo.22.4",
+              "role": "defining",
+              "note": "If a man's beast grazes another's field or vineyard, he repays from the best of his own field."
+            },
+            {
+              "ref": "Gen.23.17",
+              "role": "defining",
+              "note": "Ephron's field in Machpelah, with the cave and every tree “in all its border round about”, made over to Abraham."
+            },
+            {
+              "ref": "Gen.49.30",
+              "note": "The field Abraham bought from Ephron for a possession of a burial place."
+            },
+            {
+              "ref": "Gen.37.7",
+              "note": "Joseph's dream: binding sheaves “in the midst of the field”."
+            },
+            {
+              "ref": "Exo.23.16",
+              "note": "The feasts of harvest and ingathering: firstfruits “of what you sow בַּשָּׂדֶה”, and gathering in your labours “from the field”."
+            },
+            {
+              "ref": "Lev.27.16",
+              "note": "“If a man consecrates to Yahweh part of the field of his possession (שְׂדֵה אֲחֻזָּתוֹ)”, valued by its seed."
+            },
+            {
+              "ref": "Lev.27.24",
+              "role": "defining",
+              "note": "In the jubilee “the field shall return to him from whom it was bought, to him whose the possession of the land is”."
+            },
+            {
+              "ref": "Rut.2.3",
+              "note": "Ruth gleaned בַּשָּׂדֶה after the reapers, and came to “the portion of the field belonging to Boaz”."
+            },
+            {
+              "ref": "Rut.4.5",
+              "note": "“The day you buy the field from the hand of Naomi …”"
+            },
+            {
+              "ref": "Jer.32.9",
+              "role": "defining",
+              "note": "“I bought the field of Hanamel my uncle's son, which was in Anathoth, and weighed him the silver.”"
+            },
+            {
+              "ref": "Pro.31.16",
+              "note": "“She considers a field and buys it; with the fruit of her hands she plants a vineyard.”"
+            },
+            {
+              "ref": "Isa.5.8",
+              "note": "Woe to those who join house to house and lay field to field, till there is no room."
+            },
+            {
+              "ref": "Mic.2.2",
+              "note": "“They covet fields and seize them, and houses, and take them away.”"
+            },
+            {
+              "ref": "Neh.5.3",
+              "note": "“We are mortgaging our fields, our vineyards and our houses.”"
+            },
+            {
+              "ref": "Gen.47.20",
+              "note": "The Egyptians sold every man his field to Pharaoh in the famine."
+            },
+            {
+              "ref": "1Sa.14.14",
+              "note": "“About half a furrow of a yoke of field”: a field measured by what a pair of oxen ploughs."
+            },
+            {
+              "ref": "Mic.3.12",
+              "note": "“Zion shall be ploughed as a field”: the city turned back into farmland; quoted by the elders in Jer 26:18."
+            },
+            {
+              "ref": "Jer.26.18"
+            }
+          ]
+        },
+        {
+          "id": "territory",
+          "gloss": "territory, the land of a people",
+          "definition": "With a people's or place's name, the country they hold: “the field of Moab” is the land of Moab, set in apposition with אֶרֶץ.",
+          "evidence": [
+            {
+              "ref": "Gen.32.4",
+              "role": "defining",
+              "note": "Jacob sent to Esau “to the land of Seir, the field of Edom (אַרְצָה שֵׂעִיר שְׂדֵה אֱדוֹם)”: field in apposition with land."
+            },
+            {
+              "ref": "Psa.78.12",
+              "role": "defining",
+              "note": "He did wonders “in the land of Egypt, the field of Zoan”: the same apposition."
+            },
+            {
+              "ref": "Jdg.5.4",
+              "note": "“When you marched from the field of Edom.”"
+            },
+            {
+              "ref": "Rut.1.1",
+              "role": "defining",
+              "note": "A man of Bethlehem went to sojourn “in the fields of Moab”; Naomi returns from there (Rut 1:6, 22; 4:3)."
+            },
+            {
+              "ref": "Num.21.20",
+              "note": "The valley that is “in the field of Moab”, at the top of Pisgah."
+            },
+            {
+              "ref": "Gen.36.35",
+              "note": "Hadad who struck Midian “in the field of Moab”."
+            },
+            {
+              "ref": "1Sa.6.1",
+              "note": "The ark of Yahweh was “in the field of the Philistines” seven months."
+            },
+            {
+              "ref": "Hos.12.13",
+              "note": "“Jacob fled to the field of Aram.”"
+            },
+            {
+              "ref": "Oba.1.19",
+              "note": "They shall possess “the field of Ephraim and the field of Samaria”."
+            }
+          ]
+        },
+        {
+          "id": "mainland",
+          "gloss": "mainland (as against the sea)",
+          "definition": "Of a sea city, the country on the shore behind it, where its dependent towns stand.",
+          "evidence": [
+            {
+              "ref": "Ezk.26.6",
+              "role": "defining",
+              "note": "Tyre is to be “a place for spreading nets in the midst of the sea” (26:5), “and her daughters which are בַּשָּׂדֶה shall be slain by the sword”: her towns on the mainland."
+            },
+            {
+              "ref": "Ezk.26.8",
+              "note": "“Your daughters בַּשָּׂדֶה he will slay with the sword”, before the siege works go up against Tyre itself."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀγρός",
+          "gloss": "field, the country",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.2.19, שָׂדֶה → ἀγροῦ; Lev.23.22 the same; Rut.1.1, שְׂדֵי → ἀγρῷ; ἀγρός renders שָׂדֶה ×192"
+            },
+            {
+              "ref": "Mat.6.28",
+              "note": "“Consider the lilies τοῦ ἀγροῦ”; and Mat 6:30, “the grass τοῦ ἀγροῦ, which today is and tomorrow is cast into the oven”: the wild flower of Isa 40:6 and Psa 103:15."
+            },
+            {
+              "ref": "Mat.6.30"
+            },
+            {
+              "ref": "Mat.13.44",
+              "note": "Treasure hidden ἐν τῷ ἀγρῷ, and a man sells all he has and buys that field."
+            },
+            {
+              "ref": "Mat.24.18",
+              "note": "“Let him who is ἐν τῷ ἀγρῷ not turn back”: out in the country, away from the house."
+            },
+            {
+              "ref": "Luk.15.25",
+              "note": "The elder son was ἐν ἀγρῷ."
+            },
+            {
+              "ref": "Mat.27.7",
+              "to": "Mat.27.10",
+              "note": "The priests bought with the thirty pieces “the potter's field (τὸν ἀγρὸν τοῦ κεραμέως)” to bury strangers in, which Matthew says fulfilled what was spoken by Jeremiah, whose prophecy turns on buying a field (Jer 32:6–9)."
+            }
+          ]
+        },
+        {
+          "lemma": "χόρτος",
+          "gloss": "grass",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.40.6, צִיץ הַשָּׂדֶה → ἄνθος χόρτου"
+            },
+            {
+              "ref": "1Pe.1.24",
+              "to": "1Pe.1.25",
+              "role": "defining",
+              "note": "Peter quotes Isa 40:6–8 in the Septuagint's wording: “all its glory as the flower of grass (ἄνθος χόρτου)”, the Hebrew's flower of the field."
+            },
+            {
+              "ref": "Jas.1.10",
+              "to": "Jas.1.11",
+              "note": "The rich man passes away “as the flower of grass”, the same words."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כֶּרֶם",
+            "note": "“Vineyard”: field and vineyard together are a family's land.",
+            "evidence": [
+              {
+                "ref": "Exo.22.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.20.17"
+              },
+              {
+                "ref": "1Sa.22.7"
+              },
+              {
+                "ref": "Pro.31.16"
+              },
+              {
+                "ref": "Neh.5.3"
+              },
+              {
+                "ref": "Lev.25.3"
+              }
+            ]
+          },
+          {
+            "lemma": "בַּיִת",
+            "note": "“House”: houses and fields, what a man owns and can lose.",
+            "evidence": [
+              {
+                "ref": "Isa.5.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Mic.2.2"
+              },
+              {
+                "ref": "Jer.32.15"
+              },
+              {
+                "ref": "Gen.39.5",
+                "note": "Yahweh's blessing on all Potiphar had “in the house and in the field”: together, everything he had."
+              }
+            ]
+          },
+          {
+            "lemma": "אֶרֶץ",
+            "note": "“Land”, in apposition with “field” of a people's territory.",
+            "evidence": [
+              {
+                "ref": "Gen.32.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.12"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עִיר",
+            "note": "“City”: inside the walls against out in the country.",
+            "evidence": [
+              {
+                "ref": "Deu.28.3",
+                "role": "defining",
+                "note": "“Blessed are you in the city, and blessed are you in the field.”"
+              },
+              {
+                "ref": "Deu.28.16"
+              },
+              {
+                "ref": "Lev.14.53"
+              },
+              {
+                "ref": "1Ki.14.11"
+              },
+              {
+                "ref": "Deu.22.25",
+                "to": "Deu.22.27",
+                "note": "The betrothed girl found in the city and in the field (Deu 22:23–27)."
+              }
+            ]
+          },
+          {
+            "lemma": "יָם",
+            "note": "“Sea”: the island city against its towns on the mainland.",
+            "evidence": [
+              {
+                "ref": "Ezk.26.5",
+                "to": "Ezk.26.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "בַּיִת",
+            "note": "Brought home (הַבַּיְתָה) against left in the field.",
+            "evidence": [
+              {
+                "ref": "Exo.9.19",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חַיַּת הַשָּׂדֶה",
+            "gloss": "the beast of the field, wild animals",
+            "evidence": [
+              {
+                "ref": "Gen.2.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.2.20"
+              },
+              {
+                "ref": "Gen.3.1"
+              },
+              {
+                "ref": "Gen.3.14"
+              },
+              {
+                "ref": "Exo.23.11"
+              },
+              {
+                "ref": "Lev.26.22"
+              },
+              {
+                "ref": "Hos.2.20"
+              }
+            ]
+          },
+          {
+            "phrase": "בַּהֲמוֹת שָׂדָי",
+            "gloss": "the beasts of the field (poetic)",
+            "evidence": [
+              {
+                "ref": "Psa.8.8"
+              },
+              {
+                "ref": "Jol.2.22"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵשֶׂב הַשָּׂדֶה",
+            "gloss": "the herb, green plants of the field",
+            "evidence": [
+              {
+                "ref": "Gen.2.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.3.18"
+              },
+              {
+                "ref": "Exo.9.25"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵץ הַשָּׂדֶה",
+            "gloss": "the tree(s) of the field",
+            "evidence": [
+              {
+                "ref": "Lev.26.4"
+              },
+              {
+                "ref": "Deu.20.19"
+              },
+              {
+                "ref": "Isa.55.12"
+              },
+              {
+                "ref": "Ezk.17.24"
+              }
+            ]
+          },
+          {
+            "phrase": "צִיץ הַשָּׂדֶה",
+            "gloss": "the flower of the field",
+            "evidence": [
+              {
+                "ref": "Isa.40.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.103.15"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׂדֵה אֲחֻזָּה",
+            "gloss": "a field of possession, family land",
+            "evidence": [
+              {
+                "ref": "Lev.27.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.27.22"
+              },
+              {
+                "ref": "Lev.27.28"
+              }
+            ]
+          },
+          {
+            "phrase": "פְּאַת שָׂדְךָ",
+            "gloss": "the corner, edge of your field",
+            "evidence": [
+              {
+                "ref": "Lev.19.9"
+              },
+              {
+                "ref": "Lev.23.22",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "אִישׁ שָׂדֶה",
+            "gloss": "a man of the field, an outdoorsman",
+            "evidence": [
+              {
+                "ref": "Gen.25.27",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל פְּנֵי הַשָּׂדֶה",
+            "gloss": "on the face of the field, out in the open country",
+            "evidence": [
+              {
+                "ref": "Lev.14.7"
+              },
+              {
+                "ref": "Lev.14.53",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.17.5"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׂדֵה מוֹאָב",
+            "gloss": "the field (country) of Moab",
+            "evidence": [
+              {
+                "ref": "Rut.1.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.21.20"
+              },
+              {
+                "ref": "Gen.36.35"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׂדֵה כוֹבֵס",
+            "gloss": "the fuller's field, outside Jerusalem by the upper pool",
+            "evidence": [
+              {
+                "ref": "Isa.7.3"
+              },
+              {
+                "ref": "2Ki.18.17"
+              },
+              {
+                "ref": "Isa.36.2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-shd",
+      "lang": "uga",
+      "form": "𐎌𐎄",
+      "translit": "šd (/šadû/); šdh, šdm",
+      "gloss": "field",
+      "relation": "cognate",
+      "note": "The same word, with the same consonants (Ugaritic š answers to Hebrew שׂ). The Ugaritic administrative texts record transfers of fields from one man to another (KTU 4.356), the owned and conveyed field of Gen 23 and Jer 32.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 201, §93 Glossary, šd /šadû/ “field”"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 149, §86.13, transfers of fields (KTU 4.356:1–2): šd.bn.šty.l bn.tbrn"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎌𐎄 (šd), noun: field"
+        }
+      ]
+    },
+    {
+      "id": "phn-sd",
+      "lang": "phn",
+      "form": "𐤔𐤃",
+      "translit": "šd (Punic sade, sady)",
+      "gloss": "field, farmland; plain; the field (of an army); land, region of a people; inland territory",
+      "relation": "cognate",
+      "note": "Phoenician and Punic use the word across the whole range of the Hebrew: farmland given, owned and not to be stolen, “field or vineyard” together as in Hebrew; the Sharon plain; an army “in the field”; “the land of the Libyans” (sd lwbym), as Hebrew says “the field of Moab”; and “Sidon of the field”, inland Sidon, against “Sidon of the sea”, as Ezekiel sets Tyre's daughters in the field against Tyre in the sea. Punic also names a plant “flower of the field” (nessoth essade), Hebrew's צִיץ הַשָּׂדֶה.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 455–456, ŠD I, n.m. 1. field, farmland; 2. plain region; 3. military: field; 4. land, region of an ethnic group or political state; 5. inland, as contrasted to maritime territory (KAI 15)"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 334, NṢT, nessoth essade “flower of the field”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤔𐤃 (šd), noun: field, farmland; plain; region"
+        }
+      ]
+    },
+    {
+      "id": "akk-shadu",
+      "lang": "akk",
+      "form": "šadû",
+      "translit": "šadû",
+      "gloss": "mountain, mountain region; open country, steppe; east",
+      "relation": "possible",
+      "note": "Akkadian's commonest sense is mountain (and from it the east, where the mountains lie); the sense open country, steppe, the land beyond the settled plain, comes near Hebrew's open country. Kept as possible because its main meaning differs. Hebrew's “heights of the field” (Jdg 5:18) shows the field reaching into the hills.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005970, šadû [mountain] N (meanings: east, mountain, mountain-dwellers, mountain-tree)"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian šadûm, noun: mountain, mountain region; open country, steppeland, desert"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Isaiah sets man beside the wild flower: “all flesh is grass, and all its goodliness like the flower of the field; the grass withers, the flower fades, because the breath of Yahweh blows on it; surely the people is grass; but the word of our God shall stand for ever” (Isa 40:6–8). The psalm says the same: “as for man, his days are as grass; as a flower of the field so he flourishes, for the wind passes over it and it is gone, and its place knows it no more; but the mercy of Yahweh is from everlasting to everlasting on those who fear him” (Psa 103:15–17). Peter quotes Isaiah and names the word that endures as the gospel preached to them, by which they were born again of incorruptible seed (1Pe 1:23–25); James applies it to the rich (Jas 1:10–11). From the verses: man by nature is as passing as a field flower, with nothing in him that lasts; what lasts is God's word and mercy, and life that does not fade comes only through them.",
+      "evidence": [
+        {
+          "ref": "Isa.40.6",
+          "to": "Isa.40.8"
+        },
+        {
+          "ref": "Psa.103.15",
+          "to": "Psa.103.17"
+        },
+        {
+          "ref": "1Pe.1.23",
+          "to": "1Pe.1.25"
+        },
+        {
+          "ref": "Jas.1.10",
+          "to": "Jas.1.11"
+        }
+      ]
+    },
+    {
+      "topic": "care-for-the-poor",
+      "statement": "The owner of a field did not own all its harvest. He was not to reap its corner or gather its gleanings or go back for a forgotten sheaf, but leave them “for the poor and for the stranger” (Lev 19:9; 23:22; Deu 24:19), and in the seventh year the field's growth was left to the poor and the beasts of the field (Exo 23:11). Lev 23:22 sets this law between the feast of firstfruits and the feast of trumpets, inside the harvest feasts themselves, and ends it “I am Yahweh your God”. Ruth the Moabitess lived by it, gleaning in Boaz's field (Rut 2:2–3), and Boaz, redeeming the field of Elimelech, took her as wife (Rut 4:3–10); from them came David (Rut 4:17) and so Jesus (Mat 1:5–6). From the verses: the harvest is Yahweh's gift, and the field is held on the condition that its owner shares it with those who have no land.",
+      "evidence": [
+        {
+          "ref": "Lev.19.9",
+          "to": "Lev.19.10"
+        },
+        {
+          "ref": "Lev.23.22"
+        },
+        {
+          "ref": "Deu.24.19"
+        },
+        {
+          "ref": "Exo.23.11"
+        },
+        {
+          "ref": "Rut.2.2",
+          "to": "Rut.2.3"
+        },
+        {
+          "ref": "Rut.4.3",
+          "to": "Rut.4.10"
+        },
+        {
+          "ref": "Rut.4.17"
+        },
+        {
+          "ref": "Mat.1.5",
+          "to": "Mat.1.6"
+        }
+      ]
+    },
+    {
+      "topic": "inheritance-of-the-land",
+      "statement": "A family's field of possession could be sold only until the jubilee: “in the year of the jubilee the field shall return to him from whom it was bought, to him whose the possession of the land is” (Lev 27:24; 25:31), and the Levites' fields were never to be sold, “for it is their perpetual possession” (Lev 25:34). The prophets condemn those who “join field to field” and “covet fields and seize them”, taking a man's inheritance (Isa 5:8; Mic 2:2). When Jerusalem was under siege and the land given to the Chaldeans, Yahweh told Jeremiah to buy his cousin's field at Anathoth by the right of redemption, as a sign: “houses and fields and vineyards shall yet be bought in this land”, “for I will cause their captivity to return” (Jer 32:7–15, 43–44). From the verses: the land was Yahweh's gift to each family, not to be lost for ever, and its loss in judgment was not the end, since Yahweh pledged by a deed of purchase to restore his people to it.",
+      "evidence": [
+        {
+          "ref": "Lev.27.24"
+        },
+        {
+          "ref": "Lev.25.31"
+        },
+        {
+          "ref": "Lev.25.34"
+        },
+        {
+          "ref": "Isa.5.8"
+        },
+        {
+          "ref": "Mic.2.2"
+        },
+        {
+          "ref": "Jer.32.7",
+          "to": "Jer.32.15"
+        },
+        {
+          "ref": "Jer.32.43",
+          "to": "Jer.32.44"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Lev 23:22 (פְּאַת שָׂדְךָ). Root key שׂדה as the database keys it. BDB keys: u.ak.ac (שָׂדֶה) claimed; u.ak.ab (שָׂדַי) carries the same 333 tokens in the database, so per the one-key rule it is not named, and the poetic form is described in the word's summary. Left out, for entries of their own: שֶׂה “one of the flock” (u.ak.af, with the zero-token cross-reference שֵׂיוֹ u.ba.ad) and שָׂהֵד “witness” (u.ak.ag, Job 16:19), which the database files under this root key only by BDB's page order. Their cognates put them elsewhere: שֶׂה is a two-consonant noun with no ד (Arabic شاة šāh, Phoenician š “sheep”), and שָׂהֵד is the Aramaic-type participle of שׂהד “bear witness” (Gen 31:47 יְגַר שָׂהֲדוּתָא; Arabic شَهِدَ). Also not this root: שִׂדִּים Siddim (u.ak.ad, a place, root שׂדד) and the name שְׁדֵיאוּר Shedeur (Num 10:18), spelled with shin. No Arabic cognate found: Lane's شدو/شدي (drive camels; sing) and شده (be confounded) have nothing of field. Old South Arabian śdw is mentioned by Segert but not found in Biella's Sabaic dictionary; not cited. The Peshitta has no word of this root (field there is ḥaqlā). CAD Š/1 šadû A (“mountain, open country”) not consulted by page; the Akkadian rests on Oracc and Wiktionary. The Septuagint's παντοκράτωρ for שָׂדַי in the brief comes from aligning the divine name שַׁדַּי, pointed differently, and is not this word."
+}
