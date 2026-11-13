@@ -1,0 +1,815 @@
+{
+  "id": "tur",
+  "root": "תור",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "exploration",
+    "wilderness",
+    "faith",
+    "wisdom",
+    "time",
+    "offerings",
+    "birds"
+  ],
+  "gloss": "go about, seek out, explore; a turn; a circlet; the turtledove",
+  "summary": "The verb is to go about a land or a matter to find out what is there: the twelve men sent to explore Canaan (Num 13–14), the ark going before Israel to seek out a resting place, and Yahweh who had already searched out the land he gave (Num 10:33; Deu 1:33; Ezk 20:6). The Preacher uses it of searching things out with the mind, and the law forbids Israel to go about after their own heart and eyes (Ecc 1:13; Num 15:39). Akkadian târu “turn, return” and Arabic tāra “a time, a turn” show an older sense of going round, which the noun תֹּר keeps: one's turn coming round (Est 2:12, 15), and circlets of ornament (Sng 1:10–11). The turtledove, תּוֹר, the bird the poor offered (Lev 12:8; Luk 2:24), has the same spelling; its tie to the root is not known.",
+  "words": [
+    {
+      "lemma": "תּוּר",
+      "pos": "verb",
+      "gloss": "go about, seek out, explore",
+      "bdb": [
+        "w.al.aa",
+        "j.ef.ab"
+      ],
+      "cognate_ids": [
+        "akk-taru"
+      ],
+      "summary": "To go about something in order to find it out. Fourteen of its twenty-three uses are the men sent to explore Canaan in Numbers 13–14. Its other uses spread from this: seeking out a place for another, searching a matter with the mind, and the traders “who go about”.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "seek out, explore, search out; go about",
+          "senses": [
+            {
+              "id": "seek-out-place",
+              "gloss": "seek out (a place) for someone",
+              "definition": "To go ahead of others and find for them a place to stop or to live: said of the ark of the covenant, of Yahweh in the cloud and fire, and of Yahweh choosing the land for Israel.",
+              "evidence": [
+                {
+                  "ref": "Num.10.33",
+                  "role": "defining",
+                  "note": "From the mountain of Yahweh the ark of the covenant set out before them three days' journey “לָתוּר לָהֶם מְנוּחָה”, to seek out a resting place for them."
+                },
+                {
+                  "ref": "Deu.1.33",
+                  "role": "defining",
+                  "note": "Yahweh “who went before you in the way לָתוּר לָכֶם מָקוֹם, to seek out a place for you to camp, in fire by night to show you the way … and in the cloud by day”: going ahead to find the place, set beside showing the way."
+                },
+                {
+                  "ref": "Ezk.20.6",
+                  "role": "defining",
+                  "note": "“To a land אֲשֶׁר תַּרְתִּי לָהֶם, which I had searched out for them, flowing with milk and honey”: Yahweh himself had explored the land before Israel's spies did."
+                }
+              ]
+            },
+            {
+              "id": "explore-land",
+              "gloss": "explore, spy out (a land)",
+              "definition": "To go through a land to see what it is like: its people, its cities and its fruit, and bring word back.",
+              "evidence": [
+                {
+                  "ref": "Num.13.2",
+                  "role": "defining",
+                  "note": "“Send men וְיָתֻרוּ אֶת־אֶרֶץ כְּנַעַן, that they may explore the land of Canaan, which I am giving to the sons of Israel.”"
+                },
+                {
+                  "ref": "Num.13.17",
+                  "role": "defining",
+                  "note": "Moses sends them לָתוּר the land and tells them what to look for: “see the land, what it is, and the people who dwell in it, whether they are strong or weak, few or many” (Num 13:18–20)."
+                },
+                {
+                  "ref": "Num.13.21",
+                  "role": "defining",
+                  "note": "“They went up וַיָּתֻרוּ the land from the wilderness of Zin to Rehob”: going through it from end to end."
+                },
+                {
+                  "ref": "Num.13.16"
+                },
+                {
+                  "ref": "Num.13.25",
+                  "note": "They returned מִתּוּר the land at the end of forty days."
+                },
+                {
+                  "ref": "Num.13.32",
+                  "role": "defining",
+                  "note": "They brought an evil report of the land “which we passed through לָתוּר אֹתָהּ, to explore it”: exploring is passing through."
+                },
+                {
+                  "ref": "Num.14.6",
+                  "note": "Joshua and Caleb, “of הַתָּרִים אֶת־הָאָרֶץ, those who explored the land”."
+                },
+                {
+                  "ref": "Num.14.7",
+                  "note": "“The land which we passed through to explore it is a very, very good land.”"
+                },
+                {
+                  "ref": "Num.14.34",
+                  "role": "defining",
+                  "note": "“According to the number of the days אֲשֶׁר תַּרְתֶּם, in which you explored the land, forty days, a day for a year, you shall bear your iniquities forty years.”"
+                },
+                {
+                  "ref": "Num.14.36"
+                },
+                {
+                  "ref": "Num.14.38",
+                  "note": "Of the men who went לָתוּר the land, Joshua and Caleb alone lived."
+                }
+              ],
+              "cognate_ids": [
+                "ar-atara-look"
+              ]
+            },
+            {
+              "id": "go-after-heart",
+              "gloss": "go about after (one's own heart and eyes)",
+              "definition": "To range after one's own desires to find what they want, as the spies ranged through a land; set beside going whoring.",
+              "evidence": [
+                {
+                  "ref": "Num.15.39",
+                  "role": "defining",
+                  "note": "The tassel is to remind them of the commandments, “and you shall not תָתֻרוּ after your own heart and after your own eyes, after which you go whoring”: the heart and eyes go out like spies, and the people follow."
+                }
+              ]
+            },
+            {
+              "id": "search-out-mind",
+              "gloss": "search out (with the mind)",
+              "definition": "To go into a matter thoroughly to understand it; in Ecclesiastes, beside seeking and knowing.",
+              "evidence": [
+                {
+                  "ref": "Ecc.1.13",
+                  "role": "defining",
+                  "note": "“I gave my heart לִדְרוֹשׁ וְלָתוּר בַּחָכְמָה, to seek and to search out by wisdom, all that is done under heaven.”"
+                },
+                {
+                  "ref": "Ecc.7.25",
+                  "role": "defining",
+                  "note": "“I turned, I and my heart, to know וְלָתוּר, and to search out, and to seek wisdom and the sum of things.”"
+                },
+                {
+                  "ref": "Ecc.2.3",
+                  "note": "“תַּרְתִּי בְלִבִּי, I searched in my heart how to draw my flesh with wine, my heart still guiding me with wisdom”: an experiment to find what is good for men."
+                }
+              ],
+              "cognate_ids": [
+                "ar-atara-look"
+              ]
+            },
+            {
+              "id": "traders",
+              "gloss": "(participle) those who go about, travelling traders",
+              "definition": "The participle as a noun: men who travel about, here as traders bringing revenue to Solomon.",
+              "evidence": [
+                {
+                  "ref": "1Ki.10.15",
+                  "role": "defining",
+                  "note": "Solomon's gold came “besides that from אַנְשֵׁי הַתָּרִים and the trade of the merchants (רֹכְלִים)”: set beside the merchants."
+                },
+                {
+                  "ref": "2Ch.9.14",
+                  "role": "defining",
+                  "note": "The same, with “אַנְשֵׁי הַתָּרִים and the merchants (סֹחֲרִים) brought”."
+                }
+              ],
+              "cognate_ids": [
+                "ar-tawr"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "send to spy out, make a reconnaissance; (uncertain) search out",
+          "senses": [
+            {
+              "id": "reconnoitre",
+              "gloss": "send to spy out, reconnoitre",
+              "definition": "To have a city spied out before attacking it.",
+              "evidence": [
+                {
+                  "ref": "Jdg.1.23",
+                  "role": "defining",
+                  "note": "“וַיָּתִירוּ, the house of Joseph had Bethel spied out”, and the watchers (הַשֹּׁמְרִים) saw a man coming out of the city and asked him to show them the way in (Jdg 1:24)."
+                }
+              ]
+            },
+            {
+              "gloss": "search out, show the way (uncertain)",
+              "definition": "In one proverb the form יָתֵר is read as this verb: the righteous man searches out the way for his neighbour, against the wicked whose way leads them astray. The reading is not certain; the same letters could be from יתר “excel”.",
+              "evidence": [
+                {
+                  "ref": "Pro.12.26",
+                  "role": "defining",
+                  "note": "“יָתֵר מֵרֵעֵהוּ צַדִּיק, but the way of the wicked leads them astray”: the opposite, leading astray, suits one who scouts out the way for another."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "דָּרַשׁ",
+            "note": "“Seek”, beside it of searching with wisdom, and of the wild donkey's ranging.",
+            "evidence": [
+              {
+                "ref": "Ecc.1.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.39.8"
+              }
+            ]
+          },
+          {
+            "lemma": "בִּקֵּשׁ",
+            "note": "“Seek”, beside it with knowing in the Preacher's search.",
+            "evidence": [
+              {
+                "ref": "Ecc.7.25",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "רָאָה",
+            "note": "“See”: the spies are to see the land, what it is.",
+            "evidence": [
+              {
+                "ref": "Num.13.18",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "זָנָה",
+            "note": "“Go whoring”: going about after heart and eyes is the way to it.",
+            "evidence": [
+              {
+                "ref": "Num.15.39",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הִתְעָה",
+            "note": "“Lead astray”: the way of the wicked, against the righteous who searches out (if the reading is right).",
+            "evidence": [
+              {
+                "ref": "Pro.12.26"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לָתוּר אֶת־הָאָרֶץ",
+            "gloss": "to explore the land",
+            "evidence": [
+              {
+                "ref": "Num.13.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.13.17"
+              },
+              {
+                "ref": "Num.14.36"
+              },
+              {
+                "ref": "Num.14.38"
+              }
+            ]
+          },
+          {
+            "phrase": "לָתוּר לָהֶם מְנוּחָה",
+            "gloss": "to seek out a resting place for them",
+            "evidence": [
+              {
+                "ref": "Num.10.33",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "אַנְשֵׁי הַתָּרִים",
+            "gloss": "the men who go about, the traders",
+            "evidence": [
+              {
+                "ref": "1Ki.10.15",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.9.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תּוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a turn; a circlet, plait (of ornament)",
+      "bdb": [
+        "w.al.ab"
+      ],
+      "cognate_ids": [
+        "akk-taru",
+        "ar-tara",
+        "arc-tora"
+      ],
+      "summary": "What comes round or goes round: a person's turn when it comes round (Esther), and circlets or plaits of ornament round the face (Song of Songs). Its five uses are late or in poetry; 1Ch 17:17 is uncertain.",
+      "senses": [
+        {
+          "id": "turn",
+          "gloss": "turn (when it comes round)",
+          "definition": "The time when one's place in an order comes round.",
+          "evidence": [
+            {
+              "ref": "Est.2.12",
+              "role": "defining",
+              "note": "“When the תֹּר of each young woman came to go in to king Ahasuerus”, after twelve months of preparation: one after another."
+            },
+            {
+              "ref": "Est.2.15",
+              "role": "defining",
+              "note": "“When the תֹּר of Esther … came to go in to the king.”"
+            }
+          ]
+        },
+        {
+          "id": "circlet",
+          "gloss": "circlet, plait (ornament)",
+          "definition": "Ornaments that go round, set on the cheeks: beside strings of beads on the neck and studs of silver.",
+          "evidence": [
+            {
+              "ref": "Sng.1.10",
+              "role": "defining",
+              "note": "“Your cheeks are lovely בַּתֹּרִים, your neck with strings of beads (חֲרוּזִים).”"
+            },
+            {
+              "ref": "Sng.1.11",
+              "role": "defining",
+              "note": "“תּוֹרֵי זָהָב, circlets of gold, we will make you, with studs (נְקֻדּוֹת) of silver”: made of metal, so ornaments, not braided hair."
+            }
+          ],
+          "cognate_ids": [
+            "akk-turru-band"
+          ]
+        },
+        {
+          "gloss": "manner, rank (uncertain)",
+          "definition": "In David's prayer the phrase כְּתוֹר הָאָדָם is not certain in sense: perhaps “after the manner (or turn) of a man”, perhaps “according to the rank of a man of high degree”.",
+          "evidence": [
+            {
+              "ref": "1Ch.17.17",
+              "role": "defining",
+              "note": "“You have regarded me כְּתוֹר הָאָדָם הַמַּעֲלָה, Yahweh God.” The parallel account has “וְזֹאת תּוֹרַת הָאָדָם, and this is the law of man” (2Sa 7:19), so the two texts read differently here."
+            },
+            {
+              "ref": "2Sa.7.19",
+              "note": "The parallel: תּוֹרַת הָאָדָם."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חֲרוּזִים",
+            "note": "Strings of beads on the neck, beside circlets on the cheeks.",
+            "evidence": [
+              {
+                "ref": "Sng.1.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נְקֻדּוֹת",
+            "note": "Studs or points of silver, worked with the gold circlets.",
+            "evidence": [
+              {
+                "ref": "Sng.1.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יְתוּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "range, what is searched out",
+      "bdb": [
+        "w.al.ac",
+        "j.eb.ac"
+      ],
+      "cognate_ids": [
+        "akk-taru"
+      ],
+      "summary": "Once only, of the wild donkey: the mountains it ranges over for its pasture. It may be a noun, “the range”, or the verb itself; either way it is the going about of the verb.",
+      "senses": [
+        {
+          "gloss": "range (of an animal's pasture)",
+          "definition": "The ground an animal goes about over in search of food.",
+          "evidence": [
+            {
+              "ref": "Job.39.8",
+              "role": "defining",
+              "note": "The wild donkey: “יְתוּר הָרִים מִרְעֵהוּ, the range of the mountains is his pasture, and he searches (יִדְרוֹשׁ) after every green thing”: set beside searching."
+            }
+          ],
+          "kin": [
+            "explore-land"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תּוֹר",
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "turtledove",
+      "bdb": [
+        "w.bq.ad",
+        "w.al.ad"
+      ],
+      "cognate_ids": [
+        "uga-tr"
+      ],
+      "summary": "The turtledove, offered with or instead of young pigeons, chiefly by those who could not afford a lamb, and known for its voice in spring and its keeping of its season. It has the root's spelling, but its link to the root's sense of going about is not known; Ugaritic tr shows it is an old Semitic name for the bird.",
+      "senses": [
+        {
+          "id": "turtledove-offering",
+          "gloss": "turtledove (as an offering)",
+          "definition": "A bird brought to the altar: in Abraham's covenant, as a burnt offering of birds, and, two at a time, by one whose hand could not reach a lamb.",
+          "evidence": [
+            {
+              "ref": "Gen.15.9",
+              "note": "For the covenant between the pieces: a heifer, a goat, a ram, “וְתֹר וְגוֹזָל, a turtledove and a young bird”."
+            },
+            {
+              "ref": "Lev.1.14",
+              "role": "defining",
+              "note": "“If his offering to Yahweh is a burnt offering of birds, he shall bring it מִן־הַתֹּרִים, of the turtledoves, or of young pigeons.”"
+            },
+            {
+              "ref": "Lev.5.7",
+              "role": "defining",
+              "note": "“If his hand cannot reach a lamb, he shall bring … שְׁתֵּי תֹרִים, two turtledoves, or two young pigeons”, one for a sin offering and one for a burnt offering."
+            },
+            {
+              "ref": "Lev.5.11"
+            },
+            {
+              "ref": "Lev.12.6"
+            },
+            {
+              "ref": "Lev.12.8",
+              "role": "defining",
+              "note": "The mother after childbirth: “if her hand cannot find enough for a lamb, she shall take two turtledoves or two young pigeons, one for a burnt offering and one for a sin offering.”"
+            },
+            {
+              "ref": "Lev.14.22"
+            },
+            {
+              "ref": "Lev.14.30"
+            },
+            {
+              "ref": "Lev.15.14"
+            },
+            {
+              "ref": "Lev.15.29"
+            },
+            {
+              "ref": "Num.6.10",
+              "note": "The Nazirite defiled by a death brings two turtledoves or two young pigeons on the eighth day."
+            },
+            {
+              "ref": "Luk.2.24",
+              "role": "defining",
+              "note": "Mary's offering “according to what is said in the law of the Lord, a pair of turtledoves or two young pigeons”: Lev 12:8 kept."
+            }
+          ]
+        },
+        {
+          "id": "turtledove-bird",
+          "gloss": "turtledove (the bird in its season)",
+          "definition": "The bird itself, whose voice is heard when spring comes, and which keeps the time of its coming.",
+          "evidence": [
+            {
+              "ref": "Sng.2.12",
+              "role": "defining",
+              "note": "“The flowers appear in the land, the time of singing has come, וְקוֹל הַתּוֹר, and the voice of the turtledove is heard in our land.”"
+            },
+            {
+              "ref": "Jer.8.7",
+              "role": "defining",
+              "note": "“The stork in the heavens knows her appointed times, וְתֹר, and the turtledove, and the swift and the crane keep the time of their coming, but my people do not know the judgment of Yahweh.”"
+            }
+          ]
+        },
+        {
+          "gloss": "turtledove (figure of Yahweh's afflicted people)",
+          "definition": "Yahweh's defenceless people, pictured as his dove at the mercy of a wild beast.",
+          "evidence": [
+            {
+              "ref": "Psa.74.19",
+              "role": "defining",
+              "note": "“Do not give the soul of תּוֹרֶךָ, your turtledove, to the wild beast; do not forget the life of your poor (עֲנִיֶּיךָ) for ever”: the dove beside the afflicted."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τρυγών",
+          "gloss": "turtledove",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.12.8, תֹרִים → τρυγόνας; Lev.1.14, תֹּרִים → τρυγών; Gen.15.9; Num.6.10; Jer.8.7; Sng.2.12"
+            },
+            {
+              "ref": "Luk.2.24",
+              "note": "“A pair of turtledoves (ζεῦγος τρυγόνων) or two young pigeons”, quoting Lev 12:8."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יוֹנָה",
+            "note": "The pigeon or dove: “two turtledoves or two young pigeons”, the offering of one who could not afford a lamb.",
+            "evidence": [
+              {
+                "ref": "Lev.5.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.12.8"
+              },
+              {
+                "ref": "Num.6.10"
+              }
+            ]
+          },
+          {
+            "lemma": "עָנִי",
+            "note": "“Afflicted, poor”: Yahweh's dove beside his poor.",
+            "evidence": [
+              {
+                "ref": "Psa.74.19",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שְׁתֵּי תֹרִים אוֹ שְׁנֵי בְּנֵי יוֹנָה",
+            "gloss": "two turtledoves or two young pigeons",
+            "evidence": [
+              {
+                "ref": "Lev.5.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.12.8"
+              },
+              {
+                "ref": "Lev.14.22"
+              },
+              {
+                "ref": "Lev.15.14"
+              },
+              {
+                "ref": "Lev.15.29"
+              },
+              {
+                "ref": "Num.6.10"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-taru",
+      "lang": "akk",
+      "form": "târu",
+      "translit": "târu",
+      "gloss": "turn, turn back, return; do again, repeat",
+      "relation": "cognate",
+      "note": "One of the commonest Akkadian verbs (over 9,000 attestations in Oracc): to turn, come back, come back repeatedly, do again. The adverb tūra “again” and the noun tayyartu “return, return journey” are from it. Its sense of going round and coming back stands behind the Hebrew noun's “turn” and the verb's “go about”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003220, târu [turn] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003220.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "atae x000030910, tūra [again] AV; armep x000031140, tayyartu [return] N"
+        }
+      ]
+    },
+    {
+      "id": "ar-tara",
+      "lang": "ar",
+      "form": "تَارَةٌ، تَاوَرَ، أَتَارَ",
+      "translit": "tāra, tāwara, ʾatāra",
+      "gloss": "a time, one time; return to time after time; repeat, do again time after time",
+      "relation": "cognate",
+      "note": "Lane's sources give tāra as “a time; one time” (fa‘ala ḏālika tāratan baʿda tāratin “he did that time after time”), form III “he returned to him, or it, time after time”, and form IV “he repeated it … time after time”: what comes round again, as the Hebrew noun's turn does (Est 2:12, 15).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 322, root تور, تَارَةٌ (n4194)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 322, تاورهُ (n4190); اتارهُ (n4191)"
+        }
+      ]
+    },
+    {
+      "id": "ar-atara-look",
+      "lang": "ar",
+      "form": "أَتَارَ النَّظَرَ",
+      "translit": "ʾatāra n-naẓara",
+      "gloss": "look at someone time after time, look sharply or intently",
+      "relation": "possible",
+      "note": "Form IV of the same Arabic root is also given as “he continued to look at him, or it, time after time”, and ʾatartu ilayhi n-naẓara “I looked at him sharply, or intently”, though the same entry equates it with ʾatʾartu, from a root with hamza (تأر). If it belongs to تور, it joins looking hard at a thing to going round it, the Hebrew verb's sense of exploring. Recorded as possible because of the hamza form.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 322, اتارهُ (n4191), senses 2 and 3"
+        }
+      ]
+    },
+    {
+      "id": "ar-tawr",
+      "lang": "ar",
+      "form": "تَوْرٌ",
+      "translit": "tawr",
+      "gloss": "a messenger who goes about between people",
+      "relation": "possible",
+      "note": "“A messenger between people, or that goes about between lovers”, said to be a genuine Arabic word. Its going about answers to the Hebrew participle's “those who go about” (1Ki 10:15). Possible only: Lane's sources give no link to the verb's other senses.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 322, تَوْرٌ (n4193)"
+        }
+      ]
+    },
+    {
+      "id": "arc-tora",
+      "lang": "arc",
+      "form": "תּוֹרָא",
+      "translit": "tōrā",
+      "gloss": "row, line, order; twisted band, border",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, of the row or edge of a lip, and in the Targum of the woven band round the neck of the high priest's robe (Targ. O. Exo 28:32, for Hebrew שָׂפָה). Both the Hebrew noun's senses are here: an order that goes in turn, and a band that goes round, as the circlets of Sng 1:10–11. Distinct from Aramaic תּוֹרָא “ox”, which answers to Hebrew שׁוֹר.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תּוֹרָא II",
+          "note": "Bekh. 38b, 39a; Targ. O. Ex. 28:32; 39:23."
+        }
+      ]
+    },
+    {
+      "id": "akk-turru-band",
+      "lang": "akk",
+      "form": "ṭurru",
+      "translit": "ṭurru",
+      "gloss": "band, binding, cord, string, thread",
+      "relation": "possible",
+      "note": "A cord or band, perhaps behind Aramaic תּוֹרָא “band” and so the Hebrew circlets; but its first letter is ṭ, not t, so the tie to תור is uncertain.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000035630, ṭurru [binding] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-tr",
+      "lang": "uga",
+      "form": "𐎚𐎗",
+      "translit": "tr",
+      "gloss": "turtledove",
+      "relation": "cognate",
+      "note": "The same name for the bird in Ugaritic: it is an old Semitic word, not a late one. Nothing in it ties the bird to the verb's going about.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎚𐎗 (tr)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000498 tr [dove], HEB007877 towr [dove], UGC004333 tr [turtledove]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "faith",
+      "statement": "Yahweh said “send men וְיָתֻרוּ, that they may explore the land of Canaan, which I am giving” (Num 13:2); Moses' retelling says the people asked for the men first (Deu 1:22). Yet the verb had already been used of Yahweh: the ark went before Israel “to seek out a resting place for them” (Num 10:33), Yahweh went before them “to seek out a place for you to camp” (Deu 1:33), and the land was one “which I had searched out for them” (Ezk 20:6). Ten of the men brought an evil report of the land they had explored, the people would not go up, and Moses says “in this you did not believe Yahweh your God, who went before you to seek out a place for you” (Num 13:32; 14:36; Deu 1:32–33). The forty days of exploring became forty years, a day for a year, and that generation died in the wilderness (Num 14:34–35). Hebrews says they could not enter his rest because of unbelief, and that a promise of entering his rest remains (Heb 3:17–19; 4:1). From the verses: Yahweh had searched out the land and the rest before them; the men saw the same land and the same fruit (Num 13:27), and what failed was not their information but their trust in the one who had gone before them.",
+      "evidence": [
+        {
+          "ref": "Num.13.2"
+        },
+        {
+          "ref": "Deu.1.22"
+        },
+        {
+          "ref": "Num.10.33"
+        },
+        {
+          "ref": "Deu.1.32",
+          "to": "Deu.1.33"
+        },
+        {
+          "ref": "Ezk.20.6"
+        },
+        {
+          "ref": "Num.13.27"
+        },
+        {
+          "ref": "Num.13.32"
+        },
+        {
+          "ref": "Num.14.36"
+        },
+        {
+          "ref": "Num.14.34",
+          "to": "Num.14.35"
+        },
+        {
+          "ref": "Heb.3.17",
+          "to": "Heb.3.19"
+        },
+        {
+          "ref": "Heb.4.1"
+        }
+      ]
+    },
+    {
+      "topic": "day-for-a-year",
+      "statement": "“According to the number of the days in which you explored the land, forty days, a day for a year, a day for a year, you shall bear your iniquities forty years” (Num 14:34). Yahweh gives the same measure to Ezekiel: he lies on his side 390 days and then 40 days, “a day for a year, a day for a year, I have given it to you” (Ezk 4:5–6). From the verses: in scripture's own words Yahweh has twice set a day to stand for a year in a period of judgment, so reading prophetic days as years has its warrant in the text itself.",
+      "evidence": [
+        {
+          "ref": "Num.14.34"
+        },
+        {
+          "ref": "Ezk.4.5",
+          "to": "Ezk.4.6"
+        }
+      ]
+    },
+    {
+      "topic": "human-nature",
+      "statement": "The tassel was to make Israel remember Yahweh's commandments and do them, “and you shall not go about (תָתֻרוּ) after your own heart and after your own eyes, after which you go whoring” (Num 15:39): the word used of the spies going through the land. Jesus says that out of the heart of men come evil thoughts and every sin, and these defile the man (Mar 7:21–23); James says each one is tempted when he is drawn away by his own desire, and desire when it has conceived brings forth sin (Jas 1:14–15); John names “the desire of the flesh and the desire of the eyes” as of the world, not of the Father (1Jo 2:16). From the verses: the law locates the source of going astray in a man's own heart and eyes, which go out searching for what they want; the New Testament says the same, and puts temptation's origin there, not in a power outside him.",
+      "evidence": [
+        {
+          "ref": "Num.15.39"
+        },
+        {
+          "ref": "Mrk.7.21",
+          "to": "Mrk.7.23"
+        },
+        {
+          "ref": "Jas.1.14",
+          "to": "Jas.1.15"
+        },
+        {
+          "ref": "1Jn.2.16"
+        }
+      ]
+    },
+    {
+      "topic": "the-offering-of-the-poor",
+      "statement": "The law let one whose hand could not reach a lamb bring two turtledoves or two young pigeons, and after childbirth the mother brought one for a burnt offering and one for a sin offering, and the priest made a covering for her and she was clean (Lev 12:6–8). Luke records that when the days of their purification according to the law of Moses were fulfilled, Jesus' parents brought him to Jerusalem and offered “a pair of turtledoves or two young pigeons” (Luk 2:22–24). From the verses: they brought the offering the law appointed for those who could not afford a lamb, so the family into which Jesus was born was poor; and Mary brought the sin offering the law required of every mother.",
+      "evidence": [
+        {
+          "ref": "Lev.12.6",
+          "to": "Lev.12.8"
+        },
+        {
+          "ref": "Lev.5.7"
+        },
+        {
+          "ref": "Luk.2.22",
+          "to": "Luk.2.24"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (לָתוּר, Num 10:33). The database keys the root תור, as the task gave it. BDB keys j.eb.ac (יְתוּר) and j.ef.ab (יָתֵר) are zero-token cross-references to this root, put on the words they point to; w.al.ad is the zero-token cross-reference to the turtledove (BDB files the turtledove, w.bq.ad, under תקפ, a filing artefact). Left out: Aramaic תּוֹר “bull” (xw.ac.ab: Dan 4:22, 29, 30; 5:21; Ezr 6:9, 17; 7:17), which the corpus keys under תור but which is Proto-Semitic ṯawr (anderson-moser-2024 SEM000505 ṯwr [bull]; Wiktionary Aramaic תורא etym. 1) and so belongs as an Aramaic word, with root תור, in an entry for Hebrew שׁוֹר (v.cc.ab), which does not yet exist. Kept with unclear link: the turtledove, which may be imitative of its call and which only Ugaritic tr shares; no cognate ties it to “go about”. Uncertain readings for review: Pro 12:26 יָתֵר (hiphil of תור, as the corpus files it, or from יתר); 1Ch 17:17 כְּתוֹר against 2Sa 7:19 תּוֹרַת; Job 39:8 יְתוּר as noun or verb. Greek: the Septuagint renders the verb chiefly by κατασκέπτομαι (Num 13–14; Ecc 1:13; 2:3; 7:25; Num 10:33; Job 39:8), which the New Testament does not use, and once each by διαστρέφω (Num 15:39), ἐκλέγομαι (Deu 1:33), ἑτοιμάζω (Ezk 20:6), ὑποτάσσω (1Ki 10:15; 2Ch 9:14) and ἐπιγνώμων (Pro 12:26), none of which bridges to a New Testament use of this word, so no Greek is recorded for it; the noun “turn” is καιρός at Est 2:12, and Sng 1:10 τρυγόνες, Sng 1:11 ὁμοιώματα, 1Ch 17:17 ὅρασις are guesses of the translators. Peshitta: SEDRA's root תור is “be amazed”, a different word; the Peshitta's renderings of the verb in the Old Testament were not checked. No New Testament quotation of a verse using the root was found by the alignment; Heb 3–4 expounds Num 14 without quoting a תּוּר verse. Hebrew of later periods (Jastrow תּוּר I “espy”; Klein's later forms) is not cognate evidence and is not cited. Not consulted: CAD for târu and ṭurru, DULAT for Ugaritic tr, Payne Smith for Syriac, Ge'ez dictionaries. No merged letters in the root."
+}
