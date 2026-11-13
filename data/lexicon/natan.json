@@ -1,0 +1,1822 @@
+{
+  "id": "natan",
+  "root": "נתנ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "giving",
+    "gift",
+    "offering",
+    "land",
+    "covenant",
+    "deliverance",
+    "service"
+  ],
+  "gloss": "give; put, set; make, appoint; let; gift",
+  "summary": "The verb is to give: to hand a thing over to another, so that it becomes his. From that it is to put or set a thing in its place (the lights in the expanse, the bow in the cloud), to make or appoint a man to be something (“a father of many nations I have made you”), to let or allow, and, of the earth, to yield its fruit. Scripture's commonest giver is Yahweh: the land to Abraham and his seed, enemies into Israel's hand and Israel into its enemies', rain, wisdom, a new heart and his spirit, and the breath of life that returns to him. The nouns מַתָּנָה, מַתָּן and מַתַּת are what is given: a gift, a gift brought to Yahweh (Lev 23:38), and also a bribe; the נְתִינִים are men “given” to the service of the house. Phoenician and Ugaritic ytn, Akkadian nadānu and the Aramaic of Daniel and Ezra give the same sense.",
+  "words": [
+    {
+      "lemma": "נָתַן",
+      "pos": "verb",
+      "gloss": "give; put, set; make, appoint; let; yield",
+      "bdb": [
+        "n.gg.aa"
+      ],
+      "cognate_ids": [
+        "akk-nadanu",
+        "uga-ytn",
+        "phn-ytn",
+        "arc-netan",
+        "syc-ntl"
+      ],
+      "summary": "One of the commonest verbs of the Old Testament, about two thousand times, nearly all in the qal. Its core is handing something over to another; most of its other uses (put, set, make, let, yield) are that act with a place, a role or a result in view, and the context and the preposition (לְ “to”, בְּיַד “into the hand of”, עַל “on”, לִפְנֵי “before”) show which.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "give, hand over; give into the hand; give in marriage; pay; put, set; make, appoint; let, allow; yield; “who will give” = would that",
+          "senses": [
+            {
+              "id": "give-hand-over",
+              "gloss": "give, hand over",
+              "definition": "To hand a thing to another so that it becomes his: food, goods, a field, a reward, a sign. The giver gives up what was his and the receiver has it.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.6",
+                  "role": "defining",
+                  "note": "“She took of its fruit and ate, וַתִּתֵּן also to her husband with her, and he ate”: what is given passes from hand to hand and is used by the receiver."
+                },
+                {
+                  "ref": "Gen.25.6",
+                  "role": "defining",
+                  "note": "“To the sons of the concubines Abraham נָתַן מַתָּנֹת”: the verb with its own noun, gave gifts."
+                },
+                {
+                  "ref": "Job.1.21",
+                  "role": "defining",
+                  "note": "“Yahweh נָתַן and Yahweh has taken (לָקָח)”: giving is the opposite of taking away."
+                },
+                {
+                  "ref": "Gen.14.20",
+                  "note": "Abram gave Melchizedek a tenth of all."
+                },
+                {
+                  "ref": "1Ki.13.7",
+                  "note": "The king to the man of God: “come home with me … וְאֶתְּנָה לְךָ מַתָּת”."
+                },
+                {
+                  "ref": "Pro.22.9",
+                  "note": "The good of eye is blessed, “for he gives of his bread to the poor”."
+                },
+                {
+                  "ref": "Ezk.18.16",
+                  "note": "The righteous man “gives his bread to the hungry and covers the naked with a garment”."
+                }
+              ]
+            },
+            {
+              "id": "give-land",
+              "gloss": "give (the land, an inheritance)",
+              "definition": "Yahweh's giving of the land of Canaan to Abraham, to his seed and to Israel, as a possession; and the giving of a portion of land or an inheritance by one man to another.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.7",
+                  "role": "defining",
+                  "note": "“To your seed אֶתֵּן this land.”"
+                },
+                {
+                  "ref": "Gen.13.15",
+                  "role": "defining",
+                  "note": "“All the land which you see, to you אֶתְּנֶנָּה and to your seed for ever (עַד עוֹלָם).”"
+                },
+                {
+                  "ref": "Gen.17.8",
+                  "role": "defining",
+                  "note": "“וְנָתַתִּי to you and to your seed after you the land of your sojournings, all the land of Canaan, for an everlasting possession.”"
+                },
+                {
+                  "ref": "Gen.15.7",
+                  "note": "“I am Yahweh who brought you out of Ur of the Chaldeans לָתֶת לְךָ this land to possess it.”"
+                },
+                {
+                  "ref": "Gen.48.4",
+                  "note": "Jacob recalls the promise: “I will give this land to your seed after you, an everlasting possession.”"
+                },
+                {
+                  "ref": "Lev.23.10",
+                  "role": "defining",
+                  "note": "“When you come into the land which I נֹתֵן to you and reap its harvest, you shall bring the עֹמֶר of the first of your harvest to the priest.”"
+                },
+                {
+                  "ref": "Num.10.29",
+                  "note": "Moses to Hobab: “we are setting out for the place of which Yahweh said, I will give it to you.”"
+                },
+                {
+                  "ref": "Num.14.8",
+                  "note": "“If Yahweh delights in us he will bring us into this land וּנְתָנָהּ to us.”"
+                },
+                {
+                  "ref": "Jos.13.15",
+                  "note": "Moses gave to the tribe of Reuben by their clans."
+                },
+                {
+                  "ref": "Ezk.46.16",
+                  "note": "“When the prince gives a gift to one of his sons, it is his inheritance.”"
+                }
+              ]
+            },
+            {
+              "id": "give-into-hand",
+              "gloss": "give into the hand, deliver up",
+              "definition": "With בְּיַד “into the hand of”: to deliver a person, a people or a city into another's power, for victory or for judgment. Yahweh is nearly always the giver.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.31",
+                  "role": "defining",
+                  "note": "“I will give the inhabitants of the land into your hand, and you shall drive them out before you.”"
+                },
+                {
+                  "ref": "Jos.6.2",
+                  "role": "defining",
+                  "note": "“See, נָתַתִּי בְיָדְךָ Jericho and its king.”"
+                },
+                {
+                  "ref": "Jdg.3.10",
+                  "note": "The spirit of Yahweh came on Othniel, “and Yahweh gave Cushan-rishathaim into his hand”."
+                },
+                {
+                  "ref": "Deu.2.30",
+                  "note": "Yahweh hardened Sihon's spirit “to give him into your hand”."
+                },
+                {
+                  "ref": "Jer.32.28",
+                  "role": "defining",
+                  "note": "In judgment on Judah: “Behold, I am giving this city into the hand of the Chaldeans.”"
+                },
+                {
+                  "ref": "Jer.21.10"
+                }
+              ]
+            },
+            {
+              "id": "give-in-marriage",
+              "gloss": "give (a daughter, a woman) as wife",
+              "definition": "With לְאִשָּׁה or לְ of the man: a father, master or king gives a woman to a man as his wife.",
+              "evidence": [
+                {
+                  "ref": "Gen.29.19",
+                  "role": "defining",
+                  "note": "Laban: “It is better that I give her (תִּתִּי אֹתָהּ) to you than that I give her to another man.”"
+                },
+                {
+                  "ref": "Gen.41.45",
+                  "note": "Pharaoh gave Joseph Asenath daughter of Potiphera as wife."
+                },
+                {
+                  "ref": "Jdg.1.12",
+                  "note": "Caleb: whoever takes Kiriath-sepher, “I will give him Achsah my daughter as wife”."
+                },
+                {
+                  "ref": "Gen.34.12",
+                  "role": "defining",
+                  "note": "Shechem: “ask of me ever so much bride-price and gift (מַתָּן), and I will give … only give me the girl as wife”."
+                }
+              ]
+            },
+            {
+              "id": "give-pay",
+              "gloss": "pay, give in exchange",
+              "definition": "To give money or goods as a price, wage, ransom or fine.",
+              "evidence": [
+                {
+                  "ref": "Gen.23.9",
+                  "role": "defining",
+                  "note": "Abraham: “for the full silver let him give it to me” — the cave of Machpelah sold for its price."
+                },
+                {
+                  "ref": "Jer.22.13",
+                  "role": "defining",
+                  "note": "Woe to him who makes his neighbour work for nothing “and does not give him his wages”."
+                },
+                {
+                  "ref": "Exo.30.12",
+                  "role": "defining",
+                  "note": "At the numbering “they shall give each man a ransom (כֹּפֶר) for his soul to Yahweh”."
+                },
+                {
+                  "ref": "Deu.2.28",
+                  "note": "“Sell me food for silver … and give me water for silver.”"
+                },
+                {
+                  "ref": "Exo.21.22",
+                  "note": "“He shall pay (וְנָתַן) as the judges determine.”"
+                }
+              ]
+            },
+            {
+              "id": "give-to-yahweh",
+              "gloss": "give to Yahweh (offerings, vows, the holy portion)",
+              "definition": "To bring what is one's own to Yahweh: offerings, vows, freewill offerings, the half-shekel, the tithe. What is given to him is first his gift.",
+              "evidence": [
+                {
+                  "ref": "Lev.23.38",
+                  "role": "defining",
+                  "note": "Besides the appointed offerings, “besides your gifts (מַתְּנוֹתֵיכֶם), besides all your vows, besides all your freewill offerings אֲשֶׁר תִּתְּנוּ לַיהוָה”."
+                },
+                {
+                  "ref": "Exo.30.14",
+                  "note": "Everyone numbered from twenty years old “shall give the contribution of Yahweh”."
+                },
+                {
+                  "ref": "1Ch.29.14",
+                  "role": "defining",
+                  "note": "David: “all things come from you, and of your own hand we have given (נָתַנּוּ) you”."
+                },
+                {
+                  "ref": "Deu.16.17",
+                  "note": "At the three feasts, “every man according to the gift (מַתְּנַת) of his hand, according to the blessing of Yahweh your God which he has given you”."
+                }
+              ]
+            },
+            {
+              "id": "given-to-service",
+              "gloss": "give over (to the service of the sanctuary)",
+              "definition": "To give men over wholly to the service of the tabernacle or house: the Levites given to Aaron and his sons, the Gibeonites given as hewers of wood and drawers of water for the altar.",
+              "evidence": [
+                {
+                  "ref": "Num.3.9",
+                  "role": "defining",
+                  "note": "“You shall give the Levites to Aaron and his sons; נְתוּנִם נְתוּנִם they are to him from the sons of Israel”: wholly given."
+                },
+                {
+                  "ref": "Num.8.16",
+                  "role": "defining",
+                  "note": "“For נְתֻנִים נְתֻנִים they are to me from among the sons of Israel, instead of every firstborn.”"
+                },
+                {
+                  "ref": "Num.8.19",
+                  "note": "“I have given the Levites, given (נְתֻנִים), to Aaron and his sons … to do the service of the sons of Israel in the tent of meeting.”"
+                },
+                {
+                  "ref": "Jos.9.27",
+                  "role": "defining",
+                  "note": "“Joshua gave them (וַיִּתְּנֵם) that day hewers of wood and drawers of water for the congregation and for the altar of Yahweh.”"
+                },
+                {
+                  "ref": "Ezr.8.20",
+                  "note": "“The נְתִינִים whom David and the princes had given (נָתַן) for the service of the Levites.”"
+                }
+              ],
+              "kin": [
+                "nethinim-given",
+                "levites-gift"
+              ]
+            },
+            {
+              "id": "put-set",
+              "gloss": "put, set, place",
+              "definition": "To put a thing in or on a place: the lights in the expanse, the bow in the cloud, the testimony in the ark, oil or frankincense on an offering, Yahweh's dwelling among his people.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.17",
+                  "role": "defining",
+                  "note": "“God set them (וַיִּתֵּן) in the expanse of the heavens to give light on the earth.”"
+                },
+                {
+                  "ref": "Gen.9.13",
+                  "role": "defining",
+                  "note": "“My bow נָתַתִּי in the cloud, and it shall be a sign of the covenant.”"
+                },
+                {
+                  "ref": "Exo.25.21",
+                  "role": "defining",
+                  "note": "“You shall put the covering on the ark above, and into the ark you shall put the testimony which I shall give you”: put and give in one verse."
+                },
+                {
+                  "ref": "Lev.2.1",
+                  "note": "On the grain offering “he shall pour oil and put (וְנָתַן) frankincense on it”."
+                },
+                {
+                  "ref": "Lev.14.18",
+                  "note": "The rest of the oil the priest “shall put on the head” of the one being cleansed."
+                },
+                {
+                  "ref": "Lev.26.11",
+                  "note": "“I will set my dwelling (מִשְׁכָּנִי) among you.”"
+                },
+                {
+                  "ref": "Deu.30.15",
+                  "role": "defining",
+                  "note": "“See, I have set before you (נָתַתִּי לְפָנֶיךָ) today life and good, death and evil.”"
+                },
+                {
+                  "ref": "Jer.31.33",
+                  "role": "defining",
+                  "note": "“I will put my law within them, and on their heart I will write it.”"
+                }
+              ]
+            },
+            {
+              "id": "make-appoint",
+              "gloss": "make, appoint, set (as or over)",
+              "definition": "With an object and a second noun, or לְ, or עַל: to make someone or something into what it was not, or set him in an office over others.",
+              "evidence": [
+                {
+                  "ref": "Gen.17.5",
+                  "role": "defining",
+                  "note": "“Your name shall be Abraham, for a father of many nations נְתַתִּיךָ”: I have made you."
+                },
+                {
+                  "ref": "Gen.41.41",
+                  "role": "defining",
+                  "note": "Pharaoh: “See, I have set you over all the land of Egypt.”"
+                },
+                {
+                  "ref": "Jer.1.5",
+                  "role": "defining",
+                  "note": "“A prophet to the nations נְתַתִּיךָ”: I appointed you."
+                },
+                {
+                  "ref": "Ezk.3.17",
+                  "note": "“Son of man, a watchman נְתַתִּיךָ for the house of Israel.”"
+                },
+                {
+                  "ref": "Isa.42.6",
+                  "role": "defining",
+                  "note": "“I will keep you וְאֶתֶּנְךָ for a covenant of the people, for a light of the nations.”"
+                },
+                {
+                  "ref": "Isa.49.6",
+                  "note": "“וּנְתַתִּיךָ for a light of the nations, to be my salvation to the end of the earth.”"
+                },
+                {
+                  "ref": "Deu.28.1",
+                  "note": "Yahweh “will set you high above all the nations of the earth”; also Deu 28:13, “the head and not the tail”."
+                },
+                {
+                  "ref": "Deu.28.13"
+                },
+                {
+                  "ref": "Lev.26.19",
+                  "note": "“I will make your heavens like iron and your earth like bronze.”"
+                },
+                {
+                  "ref": "Jer.9.10",
+                  "note": "“I will make Jerusalem heaps … the cities of Judah a desolation.”"
+                }
+              ]
+            },
+            {
+              "id": "let-allow",
+              "gloss": "let, allow (with an infinitive)",
+              "definition": "To give someone leave to do something; with a negative, not to let him.",
+              "evidence": [
+                {
+                  "ref": "Gen.20.6",
+                  "role": "defining",
+                  "note": "God to Abimelech: “I kept you from sinning against me; therefore לֹא נְתַתִּיךָ to touch her.”"
+                },
+                {
+                  "ref": "Exo.3.19",
+                  "role": "defining",
+                  "note": "“The king of Egypt will not let you go (לֹא יִתֵּן … לַהֲלֹךְ) except by a mighty hand.”"
+                },
+                {
+                  "ref": "Num.20.21",
+                  "role": "defining",
+                  "note": "“Edom refused נְתֹן Israel to pass through his border.”"
+                },
+                {
+                  "ref": "Gen.31.7",
+                  "note": "“God did not let him do me harm.”"
+                },
+                {
+                  "ref": "Psa.16.10",
+                  "role": "defining",
+                  "note": "“You will not leave my soul to Sheol; you will not let (לֹא תִתֵּן) your faithful one see the pit.”"
+                },
+                {
+                  "ref": "Job.9.18",
+                  "note": "“He will not let me get my breath.”"
+                }
+              ]
+            },
+            {
+              "id": "yield-give-forth",
+              "gloss": "yield, give forth (fruit, rain, voice)",
+              "definition": "Of the earth and trees, to yield their produce; of the heavens, to give rain and dew; with קוֹל, to give forth the voice, to cry out or thunder.",
+              "evidence": [
+                {
+                  "ref": "Lev.26.4",
+                  "role": "defining",
+                  "note": "“I will give your rains in their season, and the land shall give its produce, and the tree of the field shall give its fruit.”"
+                },
+                {
+                  "ref": "Lev.26.20",
+                  "note": "The curse: “your land shall not give its produce”."
+                },
+                {
+                  "ref": "Psa.1.3",
+                  "note": "Like a tree planted by streams of water, “which gives its fruit in its season”."
+                },
+                {
+                  "ref": "Psa.67.7",
+                  "note": "“The earth has given its produce; God, our God, blesses us.”"
+                },
+                {
+                  "ref": "Zec.8.12",
+                  "note": "“The vine shall give its fruit, the land its produce, the heavens shall give their dew.”"
+                },
+                {
+                  "ref": "Psa.18.14",
+                  "role": "defining",
+                  "note": "“Yahweh thundered in the heavens, and the Most High gave his voice (יִתֵּן קֹלוֹ).”"
+                },
+                {
+                  "ref": "Psa.46.7",
+                  "note": "“He gave his voice, the earth melted.”"
+                },
+                {
+                  "ref": "Pro.1.20",
+                  "note": "Wisdom “gives her voice in the squares”."
+                }
+              ]
+            },
+            {
+              "id": "god-gives",
+              "gloss": "God gives: life, a heart, his spirit, wisdom, strength",
+              "definition": "Yahweh giving what man cannot have of himself: food, rain, strength, wisdom, a heart to know him, his spirit, and the breath of life, which returns to him.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.29",
+                  "role": "defining",
+                  "note": "“Behold, I have given you every plant yielding seed … for food.”"
+                },
+                {
+                  "ref": "Deu.8.18",
+                  "note": "“He is the one who gives you power to get wealth.”"
+                },
+                {
+                  "ref": "Pro.2.6",
+                  "note": "“Yahweh gives wisdom; from his mouth come knowledge and understanding.”"
+                },
+                {
+                  "ref": "1Ki.3.9",
+                  "note": "Solomon: “give your servant a hearing heart to judge your people.”"
+                },
+                {
+                  "ref": "Deu.29.3",
+                  "role": "defining",
+                  "note": "“Yahweh has not given you a heart to know, and eyes to see, and ears to hear, to this day.”"
+                },
+                {
+                  "ref": "Jer.24.7",
+                  "note": "“I will give them a heart to know me, that I am Yahweh.”"
+                },
+                {
+                  "ref": "Ezk.36.26",
+                  "role": "defining",
+                  "note": "“I will give you a new heart, and a new spirit I will put within you.”"
+                },
+                {
+                  "ref": "Ezk.36.27",
+                  "note": "“And my spirit I will put within you, and cause you to walk in my statutes.”"
+                },
+                {
+                  "ref": "Num.11.29",
+                  "note": "Moses: “would that all Yahweh's people were prophets, that Yahweh would put (יִתֵּן) his spirit upon them!”"
+                },
+                {
+                  "ref": "Isa.40.29",
+                  "note": "“He gives power to the faint.”"
+                },
+                {
+                  "ref": "Psa.84.12",
+                  "note": "“Yahweh gives grace and glory; no good thing will he withhold.”"
+                },
+                {
+                  "ref": "Ecc.12.7",
+                  "role": "defining",
+                  "note": "“The dust returns to the earth as it was, and the spirit (הָרוּחַ) returns to God who gave it (נְתָנָהּ).”"
+                }
+              ]
+            },
+            {
+              "id": "who-will-give",
+              "gloss": "מִי יִתֵּן “who will give?” = would that, if only",
+              "definition": "A fixed form of wish: “who will give …?”, that is, “would that …!”, followed by a noun, an infinitive or a clause.",
+              "evidence": [
+                {
+                  "ref": "Exo.16.3",
+                  "role": "defining",
+                  "note": "“מִי יִתֵּן מוּתֵנוּ by the hand of Yahweh in the land of Egypt”: would that we had died."
+                },
+                {
+                  "ref": "Deu.5.29",
+                  "role": "defining",
+                  "note": "“מִי יִתֵּן that they had such a heart as this, to fear me and keep all my commandments always.”"
+                },
+                {
+                  "ref": "2Sa.19.1",
+                  "note": "David: “would that I had died (מִי יִתֵּן מוּתִי) instead of you, Absalom, my son, my son!”"
+                },
+                {
+                  "ref": "Job.19.23",
+                  "note": "“Oh that my words were written! Oh that they were inscribed in a book!”"
+                },
+                {
+                  "ref": "Psa.14.7",
+                  "note": "“Oh that the salvation of Israel would come out of Zion!”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be given; be given into the hand, be delivered up",
+          "senses": [
+            {
+              "gloss": "be given",
+              "definition": "Passive of the qal: of a thing handed over, a request granted, a law issued, a land assigned, a child born to a people.",
+              "evidence": [
+                {
+                  "ref": "Exo.5.18",
+                  "role": "defining",
+                  "note": "“Straw shall not be given (לֹא יִנָּתֵן) to you, yet you shall deliver the tally of bricks.”"
+                },
+                {
+                  "ref": "Est.5.6",
+                  "role": "defining",
+                  "note": "“What is your petition? וְיִנָּתֵן לָךְ”: it shall be granted you."
+                },
+                {
+                  "ref": "Lev.19.20",
+                  "note": "A slave woman “not redeemed, nor her freedom given her (לֹא נִתַּן לָהּ)”."
+                },
+                {
+                  "ref": "Ezk.11.15",
+                  "note": "Jerusalem's inhabitants say of the exiles: “to us the land is given for a possession”."
+                },
+                {
+                  "ref": "Ezk.33.24",
+                  "note": "“Abraham was one, and he possessed the land; we are many: to us the land is given”; Yahweh answers that those who eat blood and lift their eyes to idols shall not possess it (Ezk 33:25–26)."
+                },
+                {
+                  "ref": "Isa.9.5",
+                  "role": "defining",
+                  "note": "“For a child is born to us, a son נִתַּן לָנוּ, and the government shall be on his shoulder.”"
+                },
+                {
+                  "ref": "Isa.35.2",
+                  "note": "“The glory of Lebanon shall be given to it.”"
+                },
+                {
+                  "ref": "Est.3.14",
+                  "note": "A copy of the writing “to be given as law (לְהִנָּתֵן דָּת) in every province”."
+                }
+              ]
+            },
+            {
+              "gloss": "be given into the hand (of an enemy)",
+              "definition": "With בְּיַד: to be delivered into another's power; above all of Israel and its kings given up to their enemies for their sins.",
+              "evidence": [
+                {
+                  "ref": "Gen.9.2",
+                  "role": "defining",
+                  "note": "The beasts, birds and fish: “into your hand they are given”."
+                },
+                {
+                  "ref": "Lev.26.25",
+                  "role": "defining",
+                  "note": "The covenant's curse: “I will send pestilence among you, וְנִתַּתֶּם into the hand of the enemy”."
+                },
+                {
+                  "ref": "Jer.32.4",
+                  "role": "defining",
+                  "note": "Zedekiah “shall surely be given (הִנָּתֹן יִנָּתֵן) into the hand of the king of Babylon”."
+                },
+                {
+                  "ref": "Jer.37.17",
+                  "note": "“Into the hand of the king of Babylon you shall be given.”"
+                },
+                {
+                  "ref": "Jer.39.17",
+                  "note": "To Ebed-melech: “you shall not be given into the hand of the men you fear”."
+                },
+                {
+                  "ref": "Ezr.9.7",
+                  "note": "“For our iniquities we, our kings and our priests have been given into the hand of the kings of the lands.”"
+                },
+                {
+                  "ref": "1Ch.5.20",
+                  "note": "“The Hagrites were given into their hand, for they cried to God in the battle.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be given; be put",
+          "senses": [
+            {
+              "gloss": "be given, be put",
+              "definition": "The passive יֻתַּן: let a thing be given, or a thing is put on something.",
+              "evidence": [
+                {
+                  "ref": "Num.32.5",
+                  "role": "defining",
+                  "note": "Reuben and Gad: “let this land be given (יֻתַּן) to your servants for a possession”."
+                },
+                {
+                  "ref": "Num.26.54",
+                  "note": "“Each according to his numbered men יֻתַּן his inheritance.”"
+                },
+                {
+                  "ref": "1Ki.2.21",
+                  "role": "defining",
+                  "note": "“Let Abishag the Shunammite be given to Adonijah your brother as wife.”"
+                },
+                {
+                  "ref": "2Sa.21.6",
+                  "note": "“Let seven men of his sons be given to us.”"
+                },
+                {
+                  "ref": "2Ki.5.17",
+                  "note": "Naaman: “let there be given to your servant two mules' burden of earth”."
+                },
+                {
+                  "ref": "Job.28.15",
+                  "note": "Wisdom: “fine gold is not given for it”."
+                },
+                {
+                  "ref": "Lev.11.38",
+                  "role": "defining",
+                  "note": "“If water is put (יֻתַּן) on seed, and any of their carcass falls on it, it is unclean to you.”"
+                },
+                {
+                  "ref": "2Sa.18.9",
+                  "note": "Absalom “was put (וַיֻּתַּן) between heaven and earth”, hanging from the oak."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δίδωμι",
+          "gloss": "give",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.12.7, אֶתֵּן → δώσω; Lev.23.38, תִּתְּנוּ → δῶτε; Psa.16.10, תִתֵּן → δώσεις; Jer.31.33 → δώσω; δίδωμι renders נָתַן ×1381"
+            },
+            {
+              "ref": "Act.2.27",
+              "role": "defining",
+              "note": "Psa 16:10 quoted: “nor will you give (δώσεις) your holy one to see corruption”; also Act 13:35."
+            },
+            {
+              "ref": "Act.13.35"
+            },
+            {
+              "ref": "Heb.8.10",
+              "role": "defining",
+              "note": "Jer 31:33 quoted: “putting (διδούς) my laws into their mind”; also Heb 10:16."
+            },
+            {
+              "ref": "Heb.10.16"
+            },
+            {
+              "ref": "Act.7.5",
+              "role": "defining",
+              "note": "Stephen: God “gave him no inheritance in it, not even a foot's breadth, and promised to give it to him for a possession and to his seed after him” (Gen 12:7; 17:8; 48:4)."
+            },
+            {
+              "ref": "Rom.11.8",
+              "note": "“God gave them a spirit of stupor, eyes not to see and ears not to hear, to this day”: Deu 29:3 with Isa 29:10."
+            }
+          ]
+        },
+        {
+          "lemma": "παραδίδωμι",
+          "gloss": "hand over, deliver up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.23.31, אֶתֵּן בְּיֶדְכֶם → παραδώσω; Lev.26.25; Jer.21.10 → παραδοθήσεται; Jer.32.4; παραδίδωμι renders נָתַן ×92"
+            },
+            {
+              "ref": "Mat.17.22",
+              "role": "defining",
+              "note": "“The Son of man is about to be delivered up into the hands of men (παραδίδοσθαι εἰς χεῖρας ἀνθρώπων)”: the Hebrew “give into the hand”."
+            },
+            {
+              "ref": "Luk.24.7",
+              "note": "“The Son of man must be delivered into the hands of sinful men, and be crucified, and the third day rise again.”"
+            },
+            {
+              "ref": "Rom.4.25",
+              "note": "“Who was delivered up for our offences, and raised for our justification.”"
+            }
+          ]
+        },
+        {
+          "lemma": "τίθημι",
+          "gloss": "put, set, appoint",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.17.5, נְתַתִּיךָ → τέθεικά; Isa.49.6 → τέθεικά; Jer.1.5 → τέθεικά; τίθημι renders נָתַן ×68"
+            },
+            {
+              "ref": "Rom.4.17",
+              "role": "defining",
+              "note": "Gen 17:5 quoted: “a father of many nations I have made you (τέθεικά σε)”."
+            },
+            {
+              "ref": "Act.13.47",
+              "role": "defining",
+              "note": "Paul and Barnabas quote Isa 49:6 of their own preaching to the nations: “I have set you (τέθεικά σε) for a light of the nations, that you should be for salvation to the end of the earth.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שִׂים",
+            "note": "“Put, set”, beside נָתַן in the same sense.",
+            "evidence": [
+              {
+                "ref": "Isa.41.19",
+                "role": "defining",
+                "note": "“אֶתֵּן in the wilderness the cedar … אָשִׂים in the desert the cypress.”"
+              }
+            ]
+          },
+          {
+            "lemma": "כָּתַב",
+            "note": "“Write”: the law put within and written on the heart.",
+            "evidence": [
+              {
+                "ref": "Jer.31.33",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "לָקַח",
+            "note": "“Take”: Yahweh gives and takes away; the woman took and gave.",
+            "evidence": [
+              {
+                "ref": "Job.1.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.3.6"
+              }
+            ]
+          },
+          {
+            "lemma": "מָנַע",
+            "note": "“Withhold”: Yahweh gives grace and glory and withholds no good thing.",
+            "evidence": [
+              {
+                "ref": "Psa.84.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נָתַן בְּיַד",
+            "gloss": "give into the hand of, deliver up to",
+            "evidence": [
+              {
+                "ref": "Jos.6.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.32.28"
+              }
+            ]
+          },
+          {
+            "phrase": "מִי יִתֵּן",
+            "gloss": "would that, if only (“who will give?”)",
+            "evidence": [
+              {
+                "ref": "Exo.16.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.5.29"
+              }
+            ]
+          },
+          {
+            "phrase": "נָתַן קוֹל",
+            "gloss": "give forth the voice, cry aloud; thunder",
+            "evidence": [
+              {
+                "ref": "Psa.18.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.1.20"
+              }
+            ]
+          },
+          {
+            "phrase": "נָתַן לִפְנֵי",
+            "gloss": "set before (a choice, a law)",
+            "evidence": [
+              {
+                "ref": "Deu.30.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.11.26"
+              },
+              {
+                "ref": "Jer.21.8",
+                "note": "“Behold, I set before you the way of life and the way of death.”"
+              }
+            ]
+          },
+          {
+            "phrase": "נָתַן לֵב",
+            "gloss": "set the heart (to do something)",
+            "evidence": [
+              {
+                "ref": "1Ch.22.19",
+                "role": "defining",
+                "note": "“Now set (תְּנוּ) your heart and your soul to seek Yahweh your God.”"
+              }
+            ]
+          },
+          {
+            "phrase": "נָתַן לְאִשָּׁה",
+            "gloss": "give as wife",
+            "evidence": [
+              {
+                "ref": "Gen.41.45",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.1.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַתָּנָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "gift; gift to Yahweh, offering; bribe",
+      "bdb": [
+        "n.gg.ai"
+      ],
+      "cognate_ids": [
+        "akk-nidintu",
+        "uga-ytnt",
+        "arc-mattenta",
+        "syc-mattla"
+      ],
+      "summary": "What is given. It is the word of Lev 23:38, the gifts the Israelites brought to Yahweh beside the appointed offerings, and of the Levites, themselves a gift to Aaron.",
+      "senses": [
+        {
+          "gloss": "gift, present",
+          "definition": "Something given by one person to another: a father's gifts to his sons, gifts to the poor, a prince's gift of land.",
+          "evidence": [
+            {
+              "ref": "Gen.25.6",
+              "role": "defining",
+              "note": "Abraham gave gifts to the sons of the concubines and sent them away from Isaac."
+            },
+            {
+              "ref": "2Ch.21.3",
+              "note": "Jehoshaphat gave his sons “many gifts of silver and gold”, but the kingdom to Jehoram."
+            },
+            {
+              "ref": "Est.9.22",
+              "role": "defining",
+              "note": "The days of Purim: “sending portions to one another, and gifts (מַתָּנוֹת) to the poor”."
+            },
+            {
+              "ref": "Ezk.46.16",
+              "note": "The prince's gift to a son is his inheritance."
+            },
+            {
+              "ref": "Ezk.46.17",
+              "role": "defining",
+              "note": "His gift to a servant is his only “until the year of liberty, then it returns to the prince”."
+            },
+            {
+              "ref": "Psa.68.19",
+              "role": "defining",
+              "note": "“You have ascended on high, you have led captivity captive, you have received gifts (מַתָּנוֹת) among men, even the rebellious, that Yah God might dwell there.” Paul reads it “he gave gifts to men” (Eph 4:8)."
+            },
+            {
+              "ref": "Eph.4.8"
+            }
+          ]
+        },
+        {
+          "id": "gift-to-yahweh",
+          "gloss": "gift to Yahweh, holy gift",
+          "definition": "What Israel gives to Yahweh: the holy gifts that Aaron's plate covered, the gifts beside the feast offerings, each man's gift at the feasts; in Ezekiel, the gifts of the idolaters who passed their firstborn through the fire.",
+          "evidence": [
+            {
+              "ref": "Lev.23.38",
+              "role": "defining",
+              "note": "“Besides the sabbaths of Yahweh, and besides מַתְּנוֹתֵיכֶם, and besides all your vows and all your freewill offerings, which you give to Yahweh.”"
+            },
+            {
+              "ref": "Exo.28.38",
+              "role": "defining",
+              "note": "Aaron bears the iniquity of the holy things “in all the gifts of their holy things (מַתְּנֹת קָדְשֵׁיהֶם)”, that they may be accepted before Yahweh."
+            },
+            {
+              "ref": "Deu.16.17",
+              "note": "“Every man according to the gift (מַתְּנַת) of his hand, according to the blessing of Yahweh your God.”"
+            },
+            {
+              "ref": "Num.18.29",
+              "note": "The Levites: “out of all your gifts you shall raise every contribution of Yahweh, the best of it”."
+            },
+            {
+              "ref": "Ezk.20.26",
+              "role": "defining",
+              "note": "“I made them unclean in their gifts (בְּמַתְּנוֹתָם), in their causing all that opens the womb to pass through the fire.”"
+            },
+            {
+              "ref": "Ezk.20.31"
+            },
+            {
+              "ref": "Ezk.20.39",
+              "note": "“Profane my holy name no more with your gifts and your idols.”"
+            }
+          ],
+          "kin": [
+            "give-to-yahweh"
+          ]
+        },
+        {
+          "id": "levites-gift",
+          "gloss": "gift (of the Levites and the priesthood)",
+          "definition": "The Levites given to Aaron as a gift, and the priesthood given to Aaron's house as a service of gift.",
+          "evidence": [
+            {
+              "ref": "Num.18.6",
+              "role": "defining",
+              "note": "“I have taken your brothers the Levites from among the sons of Israel; to you they are a gift (מַתָּנָה), given (נְתֻנִים) to Yahweh, to do the service of the tent of meeting.”"
+            },
+            {
+              "ref": "Num.18.7",
+              "role": "defining",
+              "note": "“As a service of gift (עֲבֹדַת מַתָּנָה) I give (אֶתֵּן) your priesthood.”"
+            }
+          ],
+          "kin": [
+            "given-to-service"
+          ]
+        },
+        {
+          "gloss": "bribe",
+          "definition": "A gift given to bend a judgment or win favour, which corrupts the receiver.",
+          "evidence": [
+            {
+              "ref": "Pro.15.27",
+              "role": "defining",
+              "note": "“He who is greedy of gain troubles his house, but he who hates gifts (מַתָּנֹת) shall live.”"
+            },
+            {
+              "ref": "Ecc.7.7",
+              "role": "defining",
+              "note": "“Oppression makes a wise man mad, and a gift (מַתָּנָה) destroys the heart.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δόμα",
+          "gloss": "gift",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.25.6, מַתָּנֹת → δόματα; Num.18.6 → δόμα; Psa.68.19, מַתָּנוֹת → δόματα"
+            },
+            {
+              "ref": "Eph.4.8",
+              "role": "defining",
+              "note": "Psa 68:19 quoted: “when he ascended on high he led captivity captive and gave gifts (δόματα) to men”; then the gifts named: apostles, prophets, evangelists, shepherds and teachers (Eph 4:11)."
+            },
+            {
+              "ref": "Mat.7.11",
+              "note": "“If you, being evil, know how to give good gifts (δόματα) to your children.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְתִינִים",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the Nethinim, “given ones”, servants of the house",
+      "cognate_ids": [
+        "akk-nadanu",
+        "uga-ytn",
+        "phn-ytn",
+        "arc-netan"
+      ],
+      "bdb": [
+        "n.gg.ad"
+      ],
+      "summary": "Found only in the plural, in Ezra, Nehemiah and 1 Chronicles: a class of servants of the house of God beside the priests, Levites, singers and gatekeepers, counted with “the sons of Solomon's servants”. The name is the passive form “given”: Ezra calls them “the Nethinim whom David and the princes had given for the service of the Levites” (Ezr 8:20), as the Levites were נְתֻנִים to Aaron and the Gibeonites were given by Joshua to cut wood and draw water for the altar.",
+      "senses": [
+        {
+          "id": "nethinim-given",
+          "gloss": "temple servants, “those given” to the service of the house",
+          "definition": "Men given to the service of the house of God and of the Levites, who returned from Babylon, lived on the Ophel and joined in the covenant to keep the law.",
+          "evidence": [
+            {
+              "ref": "Ezr.8.20",
+              "role": "defining",
+              "note": "“Of the נְתִינִים whom David and the princes had given (שֶׁנָּתַן) for the service of the Levites, 220 נְתִינִים, all of them designated by name.”"
+            },
+            {
+              "ref": "Ezr.2.43",
+              "note": "The list of the returned begins “the נְתִינִים: the sons of Ziha …”."
+            },
+            {
+              "ref": "Ezr.2.58",
+              "role": "defining",
+              "note": "“All the נְתִינִים and the sons of Solomon's servants were 392”: counted with the descendants of Solomon's servants, apart from Israel, priests and Levites."
+            },
+            {
+              "ref": "Ezr.2.70"
+            },
+            {
+              "ref": "Ezr.7.7"
+            },
+            {
+              "ref": "Ezr.8.17",
+              "note": "Ezra sends to Iddo and his brothers the נְתִינִים at Casiphia for ministers for the house of God."
+            },
+            {
+              "ref": "Neh.3.26",
+              "note": "The נְתִינִים lived on the Ophel."
+            },
+            {
+              "ref": "Neh.3.31"
+            },
+            {
+              "ref": "Neh.7.46"
+            },
+            {
+              "ref": "Neh.7.60"
+            },
+            {
+              "ref": "Neh.7.72"
+            },
+            {
+              "ref": "Neh.10.29",
+              "role": "defining",
+              "note": "The נְתִינִים with all who had separated themselves from the peoples of the lands to the law of God, binding themselves to walk in it."
+            },
+            {
+              "ref": "Neh.11.3"
+            },
+            {
+              "ref": "Neh.11.21",
+              "note": "“The נְתִינִים lived on the Ophel, and Ziha and Gishpa were over the נְתִינִים.”"
+            },
+            {
+              "ref": "1Ch.9.2",
+              "note": "The first to dwell again in their cities: “Israel, the priests, the Levites and the נְתִינִים”."
+            }
+          ],
+          "kin": [
+            "given-to-service"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַתָּן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "gift",
+      "bdb": [
+        "n.gg.ag"
+      ],
+      "cognate_ids": [
+        "akk-nudunnu",
+        "uga-ytnt",
+        "arc-mattenta",
+        "syc-mattla"
+      ],
+      "summary": "A gift, five times: once beside מֹהַר, the price paid for a bride, three times in Proverbs of the gift that opens doors and turns away anger, and once of Aaron's portion of Israel's gifts. BDB's count of eight takes in three tokens of the name Mattan (2Ki 11:18; 2Ch 23:17; Jer 38:1).",
+      "senses": [
+        {
+          "gloss": "gift (given to win favour or a bride)",
+          "definition": "A gift given to a person to win his favour or his daughter: it makes room for the giver and pacifies anger.",
+          "evidence": [
+            {
+              "ref": "Gen.34.12",
+              "role": "defining",
+              "note": "“Ask of me ever so much מֹהַר and מַתָּן, and I will give as you say to me; only give me the girl as wife.”"
+            },
+            {
+              "ref": "Pro.18.16",
+              "role": "defining",
+              "note": "“A man's gift makes room for him and brings him before great men.”"
+            },
+            {
+              "ref": "Pro.19.6",
+              "note": "“Every man is a friend to him who gives gifts (לְאִישׁ מַתָּן).”"
+            },
+            {
+              "ref": "Pro.21.14",
+              "role": "defining",
+              "note": "“A gift in secret pacifies anger, and a bribe (שֹׁחַד) in the bosom strong wrath”: parallel to שֹׁחַד."
+            }
+          ]
+        },
+        {
+          "gloss": "gift (of Israel to Yahweh, given to the priests)",
+          "definition": "The gifts the Israelites raise to Yahweh, which he gives to Aaron and his house.",
+          "evidence": [
+            {
+              "ref": "Num.18.11",
+              "role": "defining",
+              "note": "“This is yours: the contribution of their gift (מַתָּנָם), all the wave offerings of the sons of Israel; to you I have given them (נְתַתִּים).”"
+            }
+          ],
+          "kin": [
+            "gift-to-yahweh"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δόμα",
+          "gloss": "gift",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.18.16, מַתָּן → δόμα; Num.18.11, מַתָּנָם → δομάτων"
+            },
+            {
+              "ref": "Php.4.17",
+              "note": "“Not that I seek the gift (τὸ δόμα), but I seek the fruit that abounds to your account.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְתַן",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "give",
+      "bdb": [
+        "xn.ar.aa"
+      ],
+      "cognate_ids": [
+        "arc-netan",
+        "syc-ntl"
+      ],
+      "summary": "The Aramaic of Daniel and Ezra uses נְתַן only in the imperfect and the infinitive (יִנְתֵּן, יִתְּנִנַּהּ, לְמִנְתַּן); for the perfect, the participle and the imperative it says יְהַב (Dan 2:21, 48; 5:17). Syriac does the same, with imperfect neṯel beside perfect yhab.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "give",
+          "senses": [
+            {
+              "gloss": "give, grant",
+              "definition": "To give or grant: time to a petitioner, a kingdom to whom the Most High will, tribute to a king, the needs of the house of God from the king's treasury.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.14",
+                  "role": "defining",
+                  "note": "“That the living may know that the Most High rules in the kingdom of men, וּלְמַן דִּי יִצְבֵּא יִתְּנִנַּהּ”: and gives it to whom he will; repeated at 4:22 and 4:29."
+                },
+                {
+                  "ref": "Dan.4.22"
+                },
+                {
+                  "ref": "Dan.4.29"
+                },
+                {
+                  "ref": "Dan.2.16",
+                  "role": "defining",
+                  "note": "Daniel asked the king “that he would give him time (זְמָן יִנְתֵּן לֵהּ)”."
+                },
+                {
+                  "ref": "Ezr.4.13",
+                  "note": "If the city is built, “they will not pay (לָא יִנְתְּנוּן) tribute, custom or toll”."
+                },
+                {
+                  "ref": "Ezr.7.20",
+                  "note": "Whatever else is needed for the house of your God “which falls to you to give (לְמִנְתַּן), you shall give (תִּנְתֵּן) out of the king's treasure-house”."
+                }
+              ],
+              "kin": [
+                "give-hand-over",
+                "give-pay"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δίδωμι",
+          "gloss": "give",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Aramaic נְתַן rendered δίδωμι ×4 (Daniel, Ezra)"
+            },
+            {
+              "ref": "Luk.4.6",
+              "note": "The adversary claims of the kingdoms of the world, “to whomever I will I give it (δίδωμι αὐτήν)”: the right Daniel gives to the Most High alone, who “gives it to whom he will” (Dan 4:14)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַתַּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "gift",
+      "bdb": [
+        "n.gg.al"
+      ],
+      "cognate_ids": [
+        "akk-nidintu",
+        "uga-ytnt",
+        "arc-mattenta",
+        "syc-mattla"
+      ],
+      "summary": "A gift, six times: a king's reward, the worshipper's own gift beside the fixed offerings, and twice in Ecclesiastes the gift of God, that a man should eat, drink and see good in his labour.",
+      "senses": [
+        {
+          "gloss": "gift",
+          "definition": "A thing given: a reward offered, what a man gives of his own hand, and above all what God gives.",
+          "evidence": [
+            {
+              "ref": "Ecc.3.13",
+              "role": "defining",
+              "note": "“That every man should eat and drink and see good in all his labour, it is the gift of God (מַתַּת אֱלֹהִים).”"
+            },
+            {
+              "ref": "Ecc.5.18",
+              "role": "defining",
+              "note": "Wealth and possessions, and power to eat of them and rejoice in his labour: “this is the gift of God”."
+            },
+            {
+              "ref": "1Ki.13.7",
+              "role": "defining",
+              "note": "The king to the man of God: “come home with me and refresh yourself, and I will give you a gift (מַתָּת)”."
+            },
+            {
+              "ref": "Ezk.46.5",
+              "note": "For the lambs, a grain offering “the gift of his hand (מַתַּת יָדוֹ)”: as much as he will give; also Ezk 46:11."
+            },
+            {
+              "ref": "Ezk.46.11"
+            },
+            {
+              "ref": "Pro.25.14",
+              "role": "defining",
+              "note": "“Clouds and wind without rain is a man who boasts of a gift of falsehood (בְּמַתַּת שָׁקֶר)”: a gift promised and never given."
+            }
+          ],
+          "kin": [
+            "god-gives"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δόμα",
+          "gloss": "gift",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ecc.3.13, מַתַּת → δόμα; Ecc.5.18; 1Ki.13.7; Ezk.46.5"
+            },
+            {
+              "ref": "Luk.11.13",
+              "note": "“If you then, being evil, know how to give good gifts (δόματα) to your children, how much more will your Father from heaven give the holy spirit to those who ask him!”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַתְּנָא",
+      "lang": "arc",
+      "root": "מתנא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "gift",
+      "bdb": [
+        "xn.ar.ab"
+      ],
+      "cognate_ids": [
+        "arc-mattenta",
+        "syc-mattla"
+      ],
+      "summary": "Three times in Daniel, of the king's gifts, always plural and always with the verb יְהַב, not נְתַן.",
+      "senses": [
+        {
+          "gloss": "gift, reward",
+          "definition": "A king's gift, promised or given as a reward.",
+          "evidence": [
+            {
+              "ref": "Dan.2.6",
+              "role": "defining",
+              "note": "“If you show the dream and its interpretation, you shall receive from me gifts (מַתְּנָן) and reward and great honour.”"
+            },
+            {
+              "ref": "Dan.2.48",
+              "note": "“The king made Daniel great and gave him many great gifts.”"
+            },
+            {
+              "ref": "Dan.5.17",
+              "role": "defining",
+              "note": "Daniel to Belshazzar: “Let your gifts (מַתְּנָתָךְ) be for yourself, and give your rewards to another.”"
+            }
+          ],
+          "kin": [
+            "give-hand-over"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְתִינִין",
+      "lang": "arc",
+      "root": "נתינינ",
+      "pos": "noun",
+      "cognate_ids": [
+        "akk-nadanu",
+        "uga-ytn",
+        "phn-ytn",
+        "arc-netan"
+      ],
+      "gender": "m",
+      "gloss": "the Nethinim, temple servants",
+      "bdb": [
+        "xn.aq.af"
+      ],
+      "summary": "The Aramaic form of נְתִינִים, once, in Artaxerxes' letter.",
+      "senses": [
+        {
+          "gloss": "temple servants (Nethinim)",
+          "definition": "The same servants of the house of God, exempted with priests and Levites from the king's taxes.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.24",
+              "role": "defining",
+              "note": "“Of all the priests and Levites, singers, gatekeepers, נְתִינַיָּא and servants of this house of God, it is not lawful to impose tribute, custom or toll on them.”"
+            }
+          ],
+          "kin": [
+            "nethinim-given"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-nadanu",
+      "lang": "akk",
+      "form": "nadānu",
+      "translit": "nadānu",
+      "gloss": "give, grant; hand over, deliver; pay; sell; set, put; permit",
+      "relation": "cognate",
+      "note": "One of the commonest Akkadian verbs, in every period (Assyrian also tadānu). Its range matches the Hebrew's closely: give, hand over, deliver, pay, put, permit. The middle consonant is d where Hebrew, Aramaic, Ugaritic and Phoenician have t.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003790, nadānu [give] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003790.html",
+          "note": "Meanings in the glossaries: give, grant, hand over, deliver, deliver over, be(come) paid, put, permit, sell, distribute; 4,523 instances."
+        },
+        {
+          "source": "oracc",
+          "locator": "tsae x000000960, tadānu [give] V",
+          "url": "https://oracc.museum.upenn.edu/tsae/cbd/akk/x000000960.html",
+          "note": "The Assyrian form: give, cause to give, collect."
+        }
+      ]
+    },
+    {
+      "id": "akk-nidintu",
+      "lang": "akk",
+      "form": "nidintu",
+      "translit": "nidintu",
+      "gloss": "gift; dowry",
+      "relation": "cognate",
+      "note": "A noun of nadānu, “gift”, as מַתָּנָה and מַתַּת are nouns of נָתַן.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000109010, nidintu [gift] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000109010.html",
+          "note": "Meanings: gift, dowry."
+        }
+      ]
+    },
+    {
+      "id": "akk-nudunnu",
+      "lang": "akk",
+      "form": "nudunnû",
+      "translit": "nudunnû",
+      "gloss": "marriage gift, dowry; present",
+      "relation": "cognate",
+      "note": "The gift that goes with a marriage, formed from nadānu; compare מַתָּן beside מֹהַר, the bride-price, in Gen 34:12.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000028980, nudunnû [marriage gift] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000028980.html",
+          "note": "Meanings: dowry, marriage gift, present."
+        }
+      ]
+    },
+    {
+      "id": "uga-ytn",
+      "lang": "uga",
+      "form": "𐎊𐎚𐎐",
+      "translit": "ytn",
+      "gloss": "give",
+      "relation": "cognate",
+      "note": "Ugaritic, like Phoenician, has the verb with y as its first consonant (perfect ytn, ytt), but its imperfect atn, ttn and imperative tn are formed as Hebrew אֶתֵּן, תִּתֵּן, תֵּן: “give me a cup of wine” (KTU 5.9:15). Names such as bʿlytn, “Baal gave”, are formed as נְתַנְאֵל.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "pp. 188–189, §93 Glossary, /y-t-n/",
+          "note": "“ytt … perf. 1. sing., atn imperf. 1. sing. … imper. tn, ‘to give’ (Phoen. y-t-n: yaton (perf.), cf. H. natan, yittēn, tēn)” (OCR read; PDF not rendered)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 140, §84.2, note to KTU 3.9:15",
+          "note": "“/tin(a)/ imperative sing. m. /y-t-n/ ‘to give’; cf. H. imperative ten < *tin, from n-t-n!”"
+        }
+      ]
+    },
+    {
+      "id": "uga-ytnt",
+      "lang": "uga",
+      "form": "𐎊𐎚𐎐𐎚",
+      "translit": "ytnt",
+      "gloss": "gift",
+      "relation": "cognate",
+      "note": "A feminine noun “gift” from ytn, in the Kirta epic (KTU 1.14 III 31), formed as מַתָּנָה is from נָתַן.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, /y-t-n/: ytnt",
+          "note": "“ytnt 1.14:III:31 = 88.71 ‘gift’” (OCR read)."
+        }
+      ]
+    },
+    {
+      "id": "phn-ytn",
+      "lang": "phn",
+      "form": "𐤉𐤕𐤍",
+      "translit": "ytn",
+      "gloss": "give, present (to a god); cede territory; deliver; pay; barter",
+      "relation": "cognate",
+      "note": "The Phoenician and Punic verb for giving, from dedications (“I presented to my lord Melqart silver cups”) to treaties (“the lord of kings ceded to us Dor and Joppa”) and tariffs (“he shall pay”). Its senses are those of the Hebrew: give to a god, give land, deliver, pay. Names are formed with it as Hebrew names are with נתן: ytnʾl “Il gave”, ytnbʿl, bʿlytn.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 218–219, Y-T-N I",
+          "note": "“[Heb. n-t-n] v. qal 1. GIVE, PRESENT … 2. GIVE territory, CEDE, KAI 14.18/20 … 3. DELIVER something to someone … 4. COMMEND … 5. PAY, KAI 69.18 … 6. BARTER, EXCHANGE, TRADE.”"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 219, YTNʾL; YTNBʿL; YTNMLK",
+          "note": "“YATON-ʾIL (‘Il/God give/gave’)”: the same form of name as נְתַנְאֵל."
+        }
+      ]
+    },
+    {
+      "id": "arc-netan",
+      "lang": "arc",
+      "form": "נְתַן",
+      "translit": "nətan",
+      "gloss": "give (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums use it where the Hebrew has נָתַן, as Onkelos at Deu 15:10, “you shall surely give to him”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְתַן (ch.), “same” as נָתַן, to give",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A0%D6%B0%D7%AA%D6%B7%D7%9F.1",
+          "note": "“Targ. Deut. XV, 10; a. fr.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-mattenta",
+      "lang": "arc",
+      "form": "מַתַּנְתָּא",
+      "translit": "mattantā",
+      "gloss": "gift, grant, donation (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targum's word for the מַתָּנָה of the Levites in Num 18:6 and the מַתָּן of Num 18:11; in the Talmud also a deed of gift.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מַתַּנְתָּא, מַתְּנָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9E%D6%B7%D7%AA%D6%B7%D6%BC%D7%A0%D6%B0%D7%AA%D6%B8%D6%BC%D7%90.1",
+          "note": "“gift, grant, donation. Targ. Num. XVIII, 6, sq. Ib. 11; a. fr.”"
+        }
+      ]
+    },
+    {
+      "id": "syc-ntl",
+      "lang": "syc",
+      "form": "ܢܬܠ",
+      "translit": "neṯel",
+      "gloss": "he will give (imperfect of “give”)",
+      "relation": "cognate",
+      "note": "Syriac gives the imperfect of “give” as neṯel, teṯel, neṯlūn, and takes its perfect from yhab, as Biblical Aramaic does with יִנְתֵּן beside יְהַב. The final l for n is a change within Syriac; SEDRA files these forms under the lexeme yhab.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1308, ;HB (root 769), give; word forms NTL “neṯel”, TTL “teṯel”, NTLON “neṯlūn”"
+        }
+      ]
+    },
+    {
+      "id": "syc-mattla",
+      "lang": "syc",
+      "form": "ܡܬܠܐ",
+      "translit": "mattəlā",
+      "gloss": "giving, act of giving",
+      "relation": "cognate",
+      "note": "The Syriac noun formed as מַתָּן and מַתָּנָה are, with the l of neṯel.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1311, MTLA (root 769, ;HB), giving (act of)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "land-promise",
+      "statement": "Yahweh said to Abram, “to your seed I will give this land” (Gen 12:7), and then, “all the land which you see, to you I will give it, and to your seed for ever” (Gen 13:15), “for an everlasting possession” (Gen 17:8; 48:4). Israel received it under Joshua, and every year at the עֹמֶר they confessed it “the land which I give you” (Lev 23:10). Yet Stephen says that God “gave him no inheritance in it, not even a foot's breadth, but promised to give it to him for a possession, and to his seed after him” (Act 7:5); Hebrews, that Abraham sojourned in the land of promise as in a foreign land, and he and his sons “died in faith, not having received the promises”, God having provided “something better for us, that they without us should not be made perfect” (Heb 11:8–9, 13, 39–40). Paul says the seed is one, “which is Christ”, and that those who are Christ's are Abraham's seed and heirs according to the promise (Gal 3:16, 29). When the people left in the ruins said “Abraham was one, and he possessed the land; to us the land is given”, Yahweh answered that men who eat blood and serve idols shall not possess it (Ezk 33:24–26). From the verses: the gift of the land to Abraham himself, for ever, has not yet been given; it waits for the day when he and his seed, Christ and those in him, are raised and made perfect together.",
+      "evidence": [
+        {
+          "ref": "Gen.12.7"
+        },
+        {
+          "ref": "Gen.13.15"
+        },
+        {
+          "ref": "Gen.17.8"
+        },
+        {
+          "ref": "Gen.48.4"
+        },
+        {
+          "ref": "Lev.23.10"
+        },
+        {
+          "ref": "Act.7.5"
+        },
+        {
+          "ref": "Heb.11.8",
+          "to": "Heb.11.9"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Heb.11.39",
+          "to": "Heb.11.40"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.29"
+        },
+        {
+          "ref": "Ezk.33.24",
+          "to": "Ezk.33.26"
+        }
+      ]
+    },
+    {
+      "topic": "holy-one-not-given-to-corruption",
+      "statement": "David says, “you will not leave my soul to Sheol; you will not let (לֹא תִתֵּן, literally ‘give’) your faithful one see the pit” (Psa 16:10). Peter says David spoke this of the resurrection of the Christ, since David himself died and was buried and his tomb was with them, while God raised Jesus up (Act 2:27–32); Paul, that David “saw corruption” but “he whom God raised up saw no corruption” (Act 13:35–37). From the verses: the psalm is the promise that God would not let his Holy One remain in death, kept when he raised Jesus on the third day.",
+      "evidence": [
+        {
+          "ref": "Psa.16.10"
+        },
+        {
+          "ref": "Act.2.27",
+          "to": "Act.2.32"
+        },
+        {
+          "ref": "Act.13.35",
+          "to": "Act.13.37"
+        }
+      ]
+    },
+    {
+      "topic": "servant-given-as-light",
+      "statement": "Yahweh says of his servant, “I will keep you and give you (וְאֶתֶּנְךָ) for a covenant of the people, for a light of the nations” (Isa 42:6), and “I will give you for a light of the nations, to be my salvation to the end of the earth” (Isa 49:6); Isaiah also says, “a child is born to us, a son is given (נִתַּן) to us” (Isa 9:5). Simeon took the child Jesus and blessed God for “a light to lighten the nations, and the glory of your people Israel” (Luk 2:30–32); Paul and Barnabas, turning to the nations, quoted Isa 49:6 as the Lord's command to them (Act 13:47); and Jesus said, “God so loved the world that he gave (ἔδωκεν) his only begotten son” (Jhn 3:16). From the verses: the servant and the son are God's gift, given to Israel and the nations for their salvation, and those who preach him carry on the servant's work of being a light to the nations.",
+      "evidence": [
+        {
+          "ref": "Isa.42.6"
+        },
+        {
+          "ref": "Isa.49.6"
+        },
+        {
+          "ref": "Isa.9.5"
+        },
+        {
+          "ref": "Luk.2.30",
+          "to": "Luk.2.32"
+        },
+        {
+          "ref": "Act.13.47"
+        },
+        {
+          "ref": "Jhn.3.16"
+        }
+      ]
+    },
+    {
+      "topic": "given-into-the-hand",
+      "statement": "“Give into the hand” is Yahweh's act in war: he gave Jericho into Joshua's hand (Jos 6:2), and the nations into Israel's (Exo 23:31). The covenant warned that if Israel broke it they would be “given into the hand of the enemy” (Lev 26:25), and so Jerusalem was given into the hand of the Chaldeans and her king into the hand of the king of Babylon (Jer 32:4, 28); Ezra confessed that “for our iniquities … we have been given into the hand of the kings of the lands” (Ezr 9:7). Jesus used the same words of himself: “the Son of man is about to be delivered into the hands of men (παραδίδοσθαι εἰς χεῖρας ἀνθρώπων), and they will kill him, and the third day he will be raised” (Mat 17:22–23); Peter, that he was “delivered up by the determined counsel and foreknowledge of God” (Act 2:23); and Paul, that he “was delivered up for our offences and raised for our justification” (Rom 4:25). From the verses: the sinless one was given into the hands of sinners as sinful Israel had been, by God's own counsel, for their sins and not his, and was raised.",
+      "evidence": [
+        {
+          "ref": "Jos.6.2"
+        },
+        {
+          "ref": "Exo.23.31"
+        },
+        {
+          "ref": "Lev.26.25"
+        },
+        {
+          "ref": "Jer.32.4"
+        },
+        {
+          "ref": "Jer.32.28"
+        },
+        {
+          "ref": "Ezr.9.7"
+        },
+        {
+          "ref": "Mat.17.22",
+          "to": "Mat.17.23"
+        },
+        {
+          "ref": "Act.2.23"
+        },
+        {
+          "ref": "Rom.4.25"
+        }
+      ]
+    },
+    {
+      "topic": "law-and-spirit-given",
+      "statement": "Moses told Israel at the end of the wilderness that “Yahweh has not given you a heart to know, and eyes to see, and ears to hear, to this day” (Deu 29:3), and Yahweh wished, “who will give that they had such a heart, to fear me” (Deu 5:29). The prophets promise that he will give it himself: “I will give them a heart to know me” (Jer 24:7); “I will put my law within them and write it on their heart” (Jer 31:33); “a new heart I will give you … and my spirit I will put within you, and cause you to walk in my statutes” (Ezk 36:26–27). Hebrews quotes Jer 31:33 as the new covenant made in Christ (Heb 8:10; 10:16); Paul writes that the Corinthians were a letter of Christ “written not with ink but with the spirit of the living God, not on tablets of stone but on tablets of hearts of flesh” (2Co 3:3), and that God gave the unbelieving part of Israel “eyes not to see and ears not to hear” (Rom 11:8). From the verses: the heart to know and obey God is his gift, given through the word written on the heart in the new covenant, and withheld from those who refuse it.",
+      "evidence": [
+        {
+          "ref": "Deu.29.3"
+        },
+        {
+          "ref": "Deu.5.29"
+        },
+        {
+          "ref": "Jer.24.7"
+        },
+        {
+          "ref": "Jer.31.33"
+        },
+        {
+          "ref": "Ezk.36.26",
+          "to": "Ezk.36.27"
+        },
+        {
+          "ref": "Heb.8.10"
+        },
+        {
+          "ref": "Heb.10.16"
+        },
+        {
+          "ref": "2Co.3.3"
+        },
+        {
+          "ref": "Rom.11.8"
+        }
+      ]
+    },
+    {
+      "topic": "life-is-gods-gift",
+      "statement": "Of a man's death the Preacher says, “the dust returns to the earth as it was, and the spirit (הָרוּחַ) returns to God who gave it” (Ecc 12:7). The spirit he gave is the breath of life he breathed into the dust (Gen 2:7); Job says that if God gathered to himself his spirit and his breath, all flesh would perish together and man return to dust (Job 34:14–15), and the psalmist, “you take away their breath, they die and return to their dust” (Psa 104:29). The same Preacher says that the dead know nothing (Ecc 9:5, 10). From the verses: what returns to God is the life he lent, not a conscious person; the man himself is dust again until God gives life anew.",
+      "evidence": [
+        {
+          "ref": "Ecc.12.7"
+        },
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Job.34.14",
+          "to": "Job.34.15"
+        },
+        {
+          "ref": "Psa.104.29"
+        },
+        {
+          "ref": "Ecc.9.5"
+        },
+        {
+          "ref": "Ecc.9.10"
+        }
+      ]
+    },
+    {
+      "topic": "giving-to-yahweh",
+      "statement": "At the feasts Israel brought to Yahweh not only the offerings he appointed but “your gifts (מַתְּנוֹתֵיכֶם), your vows and your freewill offerings, which you give to Yahweh” (Lev 23:38), each man “according to the gift of his hand, according to the blessing of Yahweh your God which he has given you” (Deu 16:17). David, giving gold and silver for the house, said, “all things come from you, and of your own hand we have given you” (1Ch 29:14). Ezekiel shows the opposite: gifts made unclean by passing children through the fire (Ezk 20:26, 31, 39). Paul cites Psa 112:9, “he has scattered, he has given (נָתַן) to the poor”, and tells the Corinthians that “God loves a cheerful giver” (2Co 9:7, 9). From the verses: what is given to God is first his gift; it is measured by what he has given, and he accepts it from a willing heart, not from hands that serve idols.",
+      "evidence": [
+        {
+          "ref": "Lev.23.38"
+        },
+        {
+          "ref": "Deu.16.17"
+        },
+        {
+          "ref": "1Ch.29.14"
+        },
+        {
+          "ref": "Ezk.20.26"
+        },
+        {
+          "ref": "Ezk.20.31"
+        },
+        {
+          "ref": "Ezk.20.39"
+        },
+        {
+          "ref": "Psa.112.9"
+        },
+        {
+          "ref": "2Co.9.7"
+        },
+        {
+          "ref": "2Co.9.9"
+        }
+      ]
+    },
+    {
+      "topic": "gifts-of-the-ascended-christ",
+      "statement": "Psalm 68 celebrates God going up to his sanctuary: “you have ascended on high, you have led captivity captive, you have received gifts (מַתָּנוֹת) among men, even the rebellious, that Yah God might dwell there” (Psa 68:19). Paul reads it of Christ: “when he ascended on high he led captivity captive and gave gifts (δόματα) to men”, and names them: “he gave some apostles, some prophets, some evangelists, some shepherds and teachers, for the perfecting of the saints … for the building up of the body of Christ” (Eph 4:8, 11–12). From the verses: what the ascended Christ received he gave again to men, and his gifts are the men he gave to the ecclesia to build it up, as the Levites had been a gift to Aaron for the service of the tent (Num 18:6).",
+      "evidence": [
+        {
+          "ref": "Psa.68.19"
+        },
+        {
+          "ref": "Eph.4.8"
+        },
+        {
+          "ref": "Eph.4.11",
+          "to": "Eph.4.12"
+        },
+        {
+          "ref": "Num.18.6"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (נֹתֵן Lev 23:10; תִּתְּנוּ and מַתְּנוֹתֵיכֶם Lev 23:38) and Numbers 10 (אֶתֵּן Num 10:29; the name נְתַנְאֵל Num 10:15). Root key נתנ as the corpus keys it. The Aramaic words keep their own root keys: מַתְּנָא as מתנא (xn.ar.ab) and נְתִינִין as נתינינ (xn.aq.af). Stems: the corpus tags יֻתַּן as hophal (7 tokens) and 1Ki 2:21 as qal passive; the schema has no qal-passive stem, so all eight are under hophal; they are probably all qal passives (there is no hiphil). The qal passive participle נְתֻנִים (Num 3:9; 8:16, 19) is under the qal. Shared tokens: BDB's n.gg.ai (gift) and n.gg.aj (the place Mattanah) each count Num 18:6, 7; 21:18; Ezk 46:16, 17; Ecc 7:7, and n.gg.ag (gift) and n.gg.ah (the name Mattan) each count all eight tokens of both; only Num 21:18–19 are the place and only 2Ki 11:18, 2Ch 23:17, Jer 38:1 the name. BDB's n.gg.ac (Nathan-melech) wrongly gathers 907 tokens of מֶלֶךְ; the name itself is 2Ki 23:11. The brief's verb “(no stem)” tokens are the name נָתָן. Zero-token cross-references m.ee.ad, m.ef.ah, xm.am.ah, n.gg.ak and xa.bk.ab (אַתַּרוּ, of נתר) are left out. Names not drafted in this task, for names/: Nathan נָתָן (n.gg.ab), Nathan-melech (n.gg.ac), Nethaniah (n.gg.af), Mattaniah (n.gg.am), Mattithiah (n.gg.ao), Mattan (n.gg.ah), Mattenai (n.gg.an), Mattattah (n.gg.ap); Mattanah (n.gg.aj) is a place. Not included: אֶתְנָה, אֶתְנַן (harlot's hire), which the corpus keys under תנה/תננ. Left out as cognate: Arabic natana “stink” (Lane p. 3028, art. نتن), linked by Wiktionary as possibly cognate by narrowing; it shares no sense and Arabic has no verb ntn “give”, so it is not recorded; if it is the same root it would count against every word. The brief's Greek “loan” δίδωμι is a false lead (Thayer only mentions נָתַן); not recorded as a loan. Not yet consulted: CAD N/1 nadānu, DULAT for Ugaritic ytn/ytnt (Segert read from OCR only), CAL for Old and Imperial Aramaic ytn/ntn (Elephantine has both), Payne Smith p. 341 for ܡܬܠܐ, Sabaic. Open questions: (1) qal passive under hophal; (2) Ecc 12:7 doctrine (life-is-gods-gift) and the land-promise statement are reasoned conclusions to review; (3) Aramaic מַתְּנָא kin to give-hand-over though it occurs only with יְהַב."
+}
