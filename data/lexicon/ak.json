@@ -1,0 +1,718 @@
+{
+  "id": "ak",
+  "root": "אכ",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "particle",
+    "restriction",
+    "affirmation"
+  ],
+  "gloss": "(particle) surely, indeed; only, alone; but, however",
+  "summary": "אַךְ is a short particle that singles out what follows it: it either affirms it (\"surely, indeed\": \"Surely God is good to Israel\", Psa 73:1) or limits to it (\"only\": \"only Noah was left\", Gen 7:23), and from limiting comes \"only, however\", which hedges a command or permission just given (\"he is in your hand; only spare his life\", Job 2:6), and \"but, yet\", which sets one thing against another. It has no verbal or noun root: no word of these consonants in scripture means anything it could come from. It is best taken as an old particle built on the pointing element k that also makes כִּי, כֵּן, כֹּה, כְּ and אֵיךְ, with a prefixed ʾa-, as Ugaritic ỉk \"how\", Akkadian akī \"as\" and Syriac ʾayk \"as\" are; that is likely but not proved, so it is keyed by its own consonants.",
+  "words": [
+    {
+      "lemma": "אַךְ",
+      "bdb": [
+        "a.da.ak"
+      ],
+      "pos": "particle",
+      "gloss": "surely, indeed; only, alone; only, however; but, yet",
+      "summary": "Never inflected; it stands at the head of a clause or just before the word it marks, often with maqqef (אַךְ־). Its two poles, \"surely\" and \"only\", are one movement: it fixes the attention on what follows, as the one thing that is so. Twice in Leviticus 23 it opens a feast day of the seventh month (Lev 23:27, 39), pointing to that very day.",
+      "senses": [
+        {
+          "id": "ak-surely",
+          "gloss": "surely, truly, indeed",
+          "definition": "Affirms what follows as certainly so, often as a conclusion just reached or a conviction confessed: \"surely he is the king of Israel\", \"surely he has been torn\".",
+          "cognate_ids": [
+            "uga-k-surely"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.44.28",
+              "role": "defining",
+              "note": "אַךְ טָרֹף טֹרָף: \"surely he has been torn to pieces\", the particle beside the infinitive that doubles the verb."
+            },
+            {
+              "ref": "1Sa.16.6",
+              "role": "defining",
+              "note": "Samuel sees Eliab and concludes: \"Surely his anointed is before Yahweh.\""
+            },
+            {
+              "ref": "Psa.73.1",
+              "role": "defining",
+              "note": "\"Surely God is good to Israel\": the conviction the psalm opens with and comes back to."
+            },
+            {
+              "ref": "Gen.26.9",
+              "note": "אַךְ הִנֵּה אִשְׁתְּךָ הִוא: \"so she is your wife after all!\""
+            },
+            {
+              "ref": "Gen.29.14",
+              "note": "\"Surely you are my bone and my flesh.\""
+            },
+            {
+              "ref": "Jdg.3.24",
+              "note": "The servants' guess: \"surely he is covering his feet.\""
+            },
+            {
+              "ref": "1Ki.22.32",
+              "note": "\"Surely he is the king of Israel.\""
+            },
+            {
+              "ref": "Gen.9.5",
+              "note": "וְאַךְ אֶת־דִּמְכֶם … אֶדְרֹשׁ: \"and surely your blood … I will require\"."
+            },
+            {
+              "ref": "Isa.45.14",
+              "note": "The nations' confession to Zion: אַךְ בָּךְ אֵל, \"surely God is in you, and there is no other\"."
+            },
+            {
+              "ref": "Psa.23.6",
+              "note": "\"Surely goodness and covenant love will pursue me all the days of my life.\""
+            },
+            {
+              "ref": "Psa.58.12",
+              "note": "Twice: \"surely there is fruit for the righteous; surely there is a God judging in the earth\"."
+            },
+            {
+              "ref": "Psa.85.10",
+              "note": "\"Surely his salvation is near those who fear him.\""
+            },
+            {
+              "ref": "Jer.10.19",
+              "note": "\"Surely this is a sickness, and I must bear it.\""
+            },
+            {
+              "ref": "Jer.16.19",
+              "note": "\"Surely our fathers inherited a lie.\""
+            },
+            {
+              "ref": "Lam.2.16",
+              "note": "The enemies: \"surely this is the day we hoped for\"."
+            },
+            {
+              "ref": "Hos.12.9",
+              "note": "Ephraim's boast: \"surely I have become rich\"."
+            }
+          ]
+        },
+        {
+          "id": "ak-only",
+          "gloss": "only, alone, nothing but",
+          "definition": "Limits what is said to the one thing that follows, excluding all else: \"only Noah was left\", \"only this once\". Set beside רַק \"only\" and doubled with it.",
+          "evidence": [
+            {
+              "ref": "Gen.7.23",
+              "role": "defining",
+              "note": "All flesh was wiped out, \"and only Noah was left, and those with him in the ark\"."
+            },
+            {
+              "ref": "1Sa.20.39",
+              "role": "defining",
+              "note": "\"The boy knew nothing; only Jonathan and David knew the matter.\""
+            },
+            {
+              "ref": "Jdg.6.39",
+              "role": "defining",
+              "note": "Gideon: \"let me speak אַךְ הַפַּעַם … let me test רַק־הַפַּעַם\": \"only this once\", the two particles in parallel."
+            },
+            {
+              "ref": "Num.12.2",
+              "role": "defining",
+              "note": "הֲרַק אַךְ־בְּמֹשֶׁה: \"has Yahweh spoken only, only by Moses?\", with רַק."
+            },
+            {
+              "ref": "Psa.62.2",
+              "note": "\"Only toward God is my soul silent; from him is my salvation.\""
+            },
+            {
+              "ref": "Psa.62.3",
+              "note": "\"He only is my rock and my salvation.\""
+            },
+            {
+              "ref": "Isa.45.24",
+              "note": "\"Only in Yahweh, one shall say of me, are righteousness and strength.\""
+            },
+            {
+              "ref": "Deu.16.15",
+              "note": "וְהָיִיתָ אַךְ שָׂמֵחַ: at the feast of booths \"you shall be nothing but joyful\"."
+            },
+            {
+              "ref": "Deu.28.29",
+              "note": "The curse's counterpart: וְהָיִיתָ אַךְ עָשׁוּק, \"you shall be nothing but oppressed\"."
+            },
+            {
+              "ref": "Pro.11.23",
+              "note": "\"The desire of the righteous is only good.\""
+            },
+            {
+              "ref": "Jer.32.30",
+              "note": "Israel and Judah \"have been doing only evil in my eyes from their youth\"."
+            },
+            {
+              "ref": "2Sa.23.10",
+              "note": "The people came back after him \"only to strip\" the dead."
+            },
+            {
+              "ref": "Job.13.20",
+              "note": "\"Only two things do not do to me.\""
+            },
+            {
+              "ref": "2Ki.18.20",
+              "note": "\"It is only a word of the lips.\""
+            }
+          ]
+        },
+        {
+          "id": "ak-limit",
+          "gloss": "only, except, however (limiting what was just said)",
+          "definition": "Coming after a grant, a command or a general statement, it marks the one exception or condition that limits it: \"every moving thing shall be food for you … only flesh with its life you shall not eat\".",
+          "evidence": [
+            {
+              "ref": "Gen.9.4",
+              "role": "defining",
+              "note": "After \"every moving thing that lives shall be food for you\" (Gen 9:3): \"only flesh with its life, its blood, you shall not eat\"."
+            },
+            {
+              "ref": "Job.2.6",
+              "role": "defining",
+              "note": "Yahweh to the adversary: \"behold, he is in your hand; only keep his life\"."
+            },
+            {
+              "ref": "Num.22.20",
+              "role": "defining",
+              "note": "\"Rise, go with them; but only the word I speak to you, that you shall do.\""
+            },
+            {
+              "ref": "Exo.12.16",
+              "role": "defining",
+              "note": "No work on the holy days, \"except what every soul must eat: that alone may be done\"."
+            },
+            {
+              "ref": "Lev.11.4",
+              "note": "Of the cud-chewers and hoof-dividers: \"only these you shall not eat\"."
+            },
+            {
+              "ref": "Lev.11.21",
+              "note": "Of the winged swarming things: \"only these you may eat\"."
+            },
+            {
+              "ref": "Num.18.3",
+              "note": "The Levites shall keep the tent, \"only they shall not come near the holy vessels or the altar\"."
+            },
+            {
+              "ref": "Num.18.15",
+              "note": "Every firstborn is the priest's; \"only you shall surely redeem the firstborn of man\"."
+            },
+            {
+              "ref": "Num.18.17",
+              "note": "\"Only the firstborn of an ox, sheep or goat you shall not redeem: they are holy.\""
+            },
+            {
+              "ref": "Num.14.9",
+              "note": "\"Only do not rebel against Yahweh.\""
+            },
+            {
+              "ref": "1Sa.18.17",
+              "note": "\"Here is Merab; … only be a valiant son for me.\""
+            },
+            {
+              "ref": "1Ki.17.13",
+              "note": "\"Do as you have said; only make me a little cake first.\""
+            },
+            {
+              "ref": "1Ki.11.12",
+              "note": "The kingdom will be torn away, \"only not in your days\"."
+            },
+            {
+              "ref": "1Ki.22.44",
+              "note": "Jehoshaphat did right, \"only the high places were not taken away\"."
+            },
+            {
+              "ref": "2Ki.13.6",
+              "note": "\"Only they did not turn from the sins of the house of Jeroboam.\""
+            },
+            {
+              "ref": "Ezk.46.17",
+              "note": "A gift to a servant returns to the prince; \"only his inheritance is his sons'\"."
+            }
+          ]
+        },
+        {
+          "id": "ak-but",
+          "gloss": "but, yet, nevertheless",
+          "definition": "Sets what follows against what has just been said, as the thing that holds in spite of it.",
+          "evidence": [
+            {
+              "ref": "Gen.20.12",
+              "role": "defining",
+              "note": "\"She is the daughter of my father, but not the daughter of my mother.\""
+            },
+            {
+              "ref": "Isa.14.15",
+              "role": "defining",
+              "note": "After \"I will ascend to the heavens … I will be like the Most High\" (Isa 14:13–14): \"but to the grave you are brought down\"."
+            },
+            {
+              "ref": "Psa.49.16",
+              "role": "defining",
+              "note": "After \"like sheep they are laid in the grave\" (Psa 49:15): \"but God will redeem my soul from the hand of the grave, for he will take me\"."
+            },
+            {
+              "ref": "Jer.30.11",
+              "note": "\"I will make a full end of all the nations … but you I will not make a full end of.\""
+            },
+            {
+              "ref": "1Sa.29.9",
+              "note": "\"You are good in my eyes …; nevertheless the princes of the Philistines have said…\""
+            },
+            {
+              "ref": "2Sa.2.10",
+              "note": "Ishbosheth reigned over Israel; \"but the house of Judah followed David\"."
+            },
+            {
+              "ref": "Jer.5.5",
+              "note": "The great know the way of Yahweh, \"but they have all broken the yoke\"."
+            },
+            {
+              "ref": "Jer.12.1",
+              "note": "\"You are righteous, Yahweh …; yet I would speak judgments with you.\""
+            },
+            {
+              "ref": "Jon.2.5",
+              "note": "\"I am cast out from before your eyes; yet I will look again toward your holy temple.\""
+            },
+            {
+              "ref": "Psa.68.7",
+              "note": "God brings out the prisoners, \"but the rebellious dwell in a dry land\"."
+            },
+            {
+              "ref": "Isa.43.24",
+              "note": "\"You have not bought me sweet cane …; but you have made me serve with your sins.\""
+            }
+          ]
+        },
+        {
+          "id": "ak-just",
+          "gloss": "just, no sooner; on that very (day)",
+          "definition": "Pins down a moment: an action only just done when another follows, or the very day on which something is to be done.",
+          "evidence": [
+            {
+              "ref": "Gen.27.30",
+              "role": "defining",
+              "note": "וַיְהִי אַךְ יָצֹא יָצָא יַעֲקֹב: \"Jacob had only just gone out\" from Isaac when Esau came in."
+            },
+            {
+              "ref": "Jdg.7.19",
+              "role": "defining",
+              "note": "Gideon came at the middle watch, \"they had only just set the watch\"."
+            },
+            {
+              "ref": "1Ki.9.24",
+              "note": "\"As soon as Pharaoh's daughter went up … then (אָז) he built the Millo.\""
+            },
+            {
+              "ref": "Exo.12.15",
+              "note": "Seven days of unleavened bread; אַךְ בַּיּוֹם הָרִאשׁוֹן, \"on the very first day you shall put away leaven\"."
+            },
+            {
+              "ref": "Lev.23.27",
+              "note": "אַךְ בֶּעָשׂוֹר לַחֹדֶשׁ הַשְּׁבִיעִי הַזֶּה: \"just on the tenth of this seventh month\" is the Day of Coverings; the month was named in Lev 23:24, and the particle fixes the day within it. \"Surely\" is also a possible reading."
+            },
+            {
+              "ref": "Lev.23.39",
+              "note": "After the closing summary of the feasts (Lev 23:37–38), אַךְ בַּחֲמִשָּׁה עָשָׂר יוֹם returns to \"the fifteenth day of the seventh month\" to add the harvest feast's rejoicing and booths: \"just on the fifteenth day\", or \"but, moreover\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πλήν",
+          "gloss": "only, except; but, nevertheless",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.9.4, אַךְ → πλήν; Psa.49.16, Psa.62.5 and Psa.73.18 the same; πλήν renders אַךְ ×53, its commonest Greek"
+            }
+          ]
+        },
+        {
+          "lemma": "μόνον",
+          "gloss": "only",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.2.6, אַךְ → μόνον; Gen.7.23 μόνος"
+            }
+          ]
+        },
+        {
+          "lemma": "ὄντως",
+          "gloss": "truly, really",
+          "evidence": [
+            {
+              "ref": "1Co.14.25",
+              "role": "defining",
+              "note": "The unbeliever falls down and declares ὅτι ὁ θεὸς ὄντως ἐν ὑμῖν ἐστιν, \"that God is truly among you\": the confession of Isa 45:14, אַךְ בָּךְ אֵל, with ὄντως for the particle where the Septuagint has only ὅτι."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.45.14, אַךְ → ὅτι"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רַק",
+            "note": "\"Only\": set in parallel with אַךְ, and doubled with it.",
+            "evidence": [
+              {
+                "ref": "Jdg.6.39",
+                "role": "defining",
+                "note": "אַךְ הַפַּעַם … רַק־הַפַּעַם."
+              },
+              {
+                "ref": "Num.12.2",
+                "note": "הֲרַק אַךְ."
+              },
+              {
+                "ref": "Exo.10.17",
+                "note": "אַךְ הַפַּעַם … רַק אֶת־הַמָּוֶת הַזֶּה."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אַךְ הַפַּעַם",
+            "gloss": "only this once",
+            "evidence": [
+              {
+                "ref": "Gen.18.32",
+                "role": "defining",
+                "note": "Abraham: \"let me speak only this once\"."
+              },
+              {
+                "ref": "Exo.10.17"
+              },
+              {
+                "ref": "Jdg.6.39"
+              },
+              {
+                "ref": "Jdg.16.28",
+                "note": "Samson: \"strengthen me only this once\"."
+              }
+            ]
+          },
+          {
+            "phrase": "אַךְ אֶת־זֶה לֹא תֹאכְלוּ",
+            "gloss": "only these you shall not eat",
+            "evidence": [
+              {
+                "ref": "Lev.11.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.14.7"
+              },
+              {
+                "ref": "Lev.11.21",
+                "note": "Without the negative: \"only these you may eat\"."
+              }
+            ]
+          },
+          {
+            "phrase": "אַךְ אִם",
+            "gloss": "only if; but if",
+            "evidence": [
+              {
+                "ref": "Exo.21.21",
+                "role": "defining",
+                "note": "\"But if he survives a day or two, he shall not be avenged.\""
+              },
+              {
+                "ref": "Gen.23.13"
+              },
+              {
+                "ref": "Jos.22.19"
+              }
+            ]
+          },
+          {
+            "phrase": "אַךְ בְּזֹאת",
+            "gloss": "only on this condition",
+            "evidence": [
+              {
+                "ref": "Gen.34.15",
+                "role": "defining",
+                "note": "\"Only on this will we consent to you: if you become as we are.\""
+              },
+              {
+                "ref": "Gen.34.22"
+              }
+            ]
+          },
+          {
+            "phrase": "אַךְ לְמַחְסוֹר",
+            "gloss": "(leads) only to want",
+            "evidence": [
+              {
+                "ref": "Pro.21.5",
+                "role": "defining",
+                "note": "\"The plans of the diligent lead only to profit (אַךְ לְמוֹתָר), but everyone who hurries only to want.\""
+              },
+              {
+                "ref": "Pro.11.24"
+              },
+              {
+                "ref": "Pro.14.23"
+              },
+              {
+                "ref": "Pro.22.16"
+              }
+            ]
+          },
+          {
+            "phrase": "אַךְ הֶבֶל",
+            "gloss": "surely (only) vapour",
+            "evidence": [
+              {
+                "ref": "Psa.39.12",
+                "role": "defining",
+                "note": "\"Surely every man is vapour.\""
+              },
+              {
+                "ref": "Psa.39.6"
+              },
+              {
+                "ref": "Psa.39.7"
+              },
+              {
+                "ref": "Psa.62.10",
+                "note": "\"Surely the sons of Adam are vapour.\""
+              }
+            ]
+          },
+          {
+            "phrase": "אַךְ דְּבַר־שְׂפָתַיִם",
+            "gloss": "only a word of the lips (empty talk)",
+            "evidence": [
+              {
+                "ref": "2Ki.18.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.36.5"
+              }
+            ]
+          },
+          {
+            "phrase": "וְהָיִיתָ אַךְ",
+            "gloss": "you shall be nothing but…",
+            "evidence": [
+              {
+                "ref": "Deu.16.15",
+                "role": "defining",
+                "note": "\"nothing but joyful\"."
+              },
+              {
+                "ref": "Deu.28.29",
+                "note": "\"nothing but oppressed\"."
+              }
+            ]
+          },
+          {
+            "phrase": "אַךְ טָרֹף טֹרָף",
+            "gloss": "surely torn: אַךְ before a verb strengthened by its infinitive",
+            "evidence": [
+              {
+                "ref": "Gen.44.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.20.39",
+                "note": "אַךְ נִגּוֹף נִגָּף: \"surely he is struck down\"."
+              },
+              {
+                "ref": "Num.18.15"
+              },
+              {
+                "ref": "Jer.26.15",
+                "note": "אַךְ יָדֹעַ תֵּדְעוּ: \"only know for certain\"."
+              },
+              {
+                "ref": "Gen.27.30"
+              },
+              {
+                "ref": "Jdg.7.19"
+              }
+            ]
+          },
+          {
+            "phrase": "אַךְ הַבָּמוֹת לֹא־סָרוּ",
+            "gloss": "only the high places were not taken away",
+            "evidence": [
+              {
+                "ref": "1Ki.22.44",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.20.33"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-ik",
+      "lang": "uga",
+      "form": "𐎛𐎋",
+      "translit": "ỉk",
+      "gloss": "how?, why?",
+      "relation": "possible",
+      "note": "The same two consonants, ʾ and k, as an interrogative adverb, and the counterpart of Hebrew אֵיךְ. It shows that ʾ + k made particles in the related languages; its sense is not אַךְ's, so it bears on the particle's make, not its meaning.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 179, glossary, ik, ikm \"how?, why?\""
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 77, § 55: \"The interrogative adverb of manner is ik 'how?' or 'why?', perhaps pronounced /ʾéka/\""
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎛𐎋",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%9B%F0%90%8E%8B",
+          "note": "\"how\"; compares Hebrew אֵיךְ."
+        }
+      ]
+    },
+    {
+      "id": "uga-k-surely",
+      "lang": "uga",
+      "form": "𐎋",
+      "translit": "k-",
+      "gloss": "surely, verily (before a verb); as, like",
+      "relation": "possible",
+      "note": "The bare pointing element k, both \"as, like\" and an affirming \"surely, verily\" before the imperfect, the two uses of Hebrew כְּ and כִּי. The \"surely\" is the sense of אַךְ's affirming use; if אַךְ is ʾa- + this k, its affirming sense is the older one.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, glossary, k- /ki-/ \"as, like\"; k- \"affirmative particle 'surely, verily,' before imperfect\""
+        }
+      ]
+    },
+    {
+      "id": "akk-aki",
+      "lang": "akk",
+      "form": "akī",
+      "translit": "akī",
+      "gloss": "as, like; that; when",
+      "relation": "possible",
+      "note": "Neo-Assyrian akī beside the older kī \"as\", and akê beside kē \"how?\": the same prefixed a- before the k element that אַךְ shows, though in the sense of כְּ \"as\", not of אַךְ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000010940, akī [as] PRP",
+          "note": "as; as, like; that; when; norms akī, ak, akkī."
+        },
+        {
+          "source": "oracc",
+          "locator": "atae x000011140, akê [how?] QP"
+        }
+      ]
+    },
+    {
+      "id": "syc-ayk",
+      "lang": "syc",
+      "form": "ܐܝܟ",
+      "translit": "ʾayk",
+      "gloss": "as, according to",
+      "relation": "possible",
+      "note": "The Syriac preposition of comparison, Hebrew כְּ in sense, with ʾ before the k; the Peshitta's word for \"as, like\". Like Akkadian akī it shows the ʾ + k make, not אַךְ's meaning.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 82, A;C (root 65), as; according to"
+        }
+      ]
+    },
+    {
+      "id": "ar-ka",
+      "lang": "ar",
+      "form": "كَ",
+      "translit": "ka-",
+      "gloss": "like, as (the kāf of comparison)",
+      "relation": "possible",
+      "note": "The k element by itself, prefixed to a noun: \"like\". It shows the element is common Semitic; Arabic has no ʾak.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2998, كَ (n42942), كَافُ التَّشْبِيهِ \"the ك of comparison\""
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "god-alone",
+      "statement": "Psalm 62 turns on אַךְ, six times: \"only toward God is my soul silent; from him is my salvation\"; \"he only is my rock and my salvation\" (Psa 62:2–3, 6–7). Isaiah has the nations confess to Israel, \"surely God is in you, and there is no other, no God\" (Isa 45:14), and every tongue say, \"only in Yahweh are righteousness and strength\" (Isa 45:24), the oath Paul applies to every man standing before God's judgment (Rom 14:10–11), and the confession he expects of the unbeliever who sees God at work in the ecclesia, \"God is truly (ὄντως) among you\" (1Co 14:25). The particle does the work: salvation, righteousness and strength are limited to one source, and that one is Yahweh, the one God beside whom there is no other (Isa 45:21–22). So trust rests on him alone, and not on men, who are \"surely vapour\" (Psa 62:10).",
+      "evidence": [
+        {
+          "ref": "Psa.62.2",
+          "to": "Psa.62.3"
+        },
+        {
+          "ref": "Psa.62.6",
+          "to": "Psa.62.7"
+        },
+        {
+          "ref": "Psa.62.10"
+        },
+        {
+          "ref": "Isa.45.14"
+        },
+        {
+          "ref": "Isa.45.21",
+          "to": "Isa.45.24"
+        },
+        {
+          "ref": "Rom.14.10",
+          "to": "Rom.14.11"
+        },
+        {
+          "ref": "1Co.14.25"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "The psalms use אַךְ to state man's frailty as certain: \"surely every man, standing firm, is all vapour\" (Psa 39:6), \"surely every man is vapour\" (Psa 39:12), \"surely the sons of Adam are vapour\" (Psa 62:10). Psalm 49 says the same of rich and foolish alike: \"like sheep they are laid in the grave; death shall shepherd them\" (Psa 49:15). Against that the same particle sets God's act: \"but God will redeem my soul from the hand of the grave, for he will take me\" (Psa 49:16). The soul that is redeemed is the man himself, in the grave's hand until God takes him out of it: his hope is not in anything of his own that survives death, but in God's redemption of him from the grave.",
+      "evidence": [
+        {
+          "ref": "Psa.39.6"
+        },
+        {
+          "ref": "Psa.39.12"
+        },
+        {
+          "ref": "Psa.62.10"
+        },
+        {
+          "ref": "Psa.49.15",
+          "to": "Psa.49.16"
+        }
+      ]
+    }
+  ],
+  "note": "Root: no viable verbal or noun root was found. Scripture has no verb or noun of the consonants אכ (or אוך, איך, אכך) whose sense the particle could grow from; the database files the particle under איש (BDB section a.da), which is only its alphabetical place, so it is keyed by its own consonants. The make proposed in the summary, ʾa- + the pointing element k of כִּי, כֵּן, כֹּה, כְּ, rests on parallels only (Ugaritic ỉk and k- \"surely\"; Akkadian akī/akê beside kī/kē; Syriac ʾayk); all cognates are therefore 'possible'. Hebrew's own asseverative כִּי \"surely\" (Gen 18:20; Psa 118:10–12) is the nearest support, but it is the same language and not a cognate. Aramaic: scripture's Aramaic has no אַךְ; its word for \"but, only\" is בְּרַם (Dan 2:28; 4:12; 5:17; Ezr 5:13), unrelated in form; Targumic אַךְ = אֵיךְ \"how\" is a different word. Not taken: אָכֵן \"surely, truly\" (a.dd.aa, root key אכנ), which looks like ʾa- + כֵּן on the same pattern and stands beside אַךְ in Zep 3:7 (אַךְ תִּירְאִי … אָכֵן הִשְׁכִּימוּ); it may belong here or with כֵּן, for the reviewer to decide. אֵיךְ / אֵיכָה \"how?\" (a.cu.ac–ad, root key איכ) likewise left to their own entry. Psalms are cited by Hebrew verse numbers. Lev 23:27 and 39 are placed under ak-just; \"surely\" (ak-surely) is also defensible. Still to consult: DULAT for Ugaritic ỉk and k; Payne Smith for Syriac ʾayk; CAD A/1 akī."
+}
