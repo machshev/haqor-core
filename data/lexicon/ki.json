@@ -1,0 +1,930 @@
+{
+  "id": "ki",
+  "root": "כי",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "particle"
+  ],
+  "gloss": "for, because; that; when, if; but rather; surely",
+  "summary": "The Hebrew Bible's commonest joining word after וְ: it points to a clause and says how it stands, giving the reason (\"for, because\"), what is seen or said (\"that\"), the case or time (\"when, if\"), the truth set against a denial (\"but rather\"), or simply affirming it (\"surely\"). No verb or noun of these consonants stands behind it in scripture; the cognates tie it instead to the pointing element k-, \"so, thus, like this\", that also makes כְּ \"like\" and כֹּה \"thus\": in Akkadian, Ugaritic and Sabaic one particle k-/kī is both \"as, like\" and \"that, because, when\", and the Peshitta's כַּי is still \"then, so\". That is a pronominal element, not a root, so the entry is keyed by the particle's own consonants; the link to k- is well supported by the cognates' shared form and range of use, but is an inference from them, not something any text states.",
+  "words": [
+    {
+      "lemma": "כִּי",
+      "bdb": [
+        "k.bg.aa"
+      ],
+      "cognate_ids": [
+        "akk-ki",
+        "uga-k",
+        "phn-k",
+        "moab-ky",
+        "arc-ky",
+        "sab-k"
+      ],
+      "pos": "conjunction",
+      "gloss": "for, because; that; when, if; but rather; surely",
+      "summary": "Never inflected; about 4,500 times. It stands at the head of its clause and points to it; what the clause is (reason, content, condition, correction, affirmation) is shown by what is round it, and often more than one reading is open. Joined to other words it makes the many compounds under usage: כִּי אִם \"but rather, except\", כִּי עַל־כֵּן \"since that is why\", וְהָיָה כִּי \"and it shall be, when\", יַעַן כִּי and עֵקֶב כִּי \"because\", אַף כִּי \"how much more\".",
+      "senses": [
+        {
+          "id": "ki-because",
+          "gloss": "for, because",
+          "definition": "Gives the reason for what has been said or commanded, or the ground of a statement; it may also come first, giving the cause before its outcome.",
+          "evidence": [
+            {
+              "ref": "Gen.2.3",
+              "role": "defining",
+              "note": "God sanctified the seventh day, כִּי בוֹ שָׁבַת: \"because on it he rested\"."
+            },
+            {
+              "ref": "Lev.23.28",
+              "role": "defining",
+              "note": "No work on that day, כִּי יוֹם כִּפֻּרִים הוּא: \"for it is a day of atonements\"."
+            },
+            {
+              "ref": "Gen.3.19",
+              "role": "defining",
+              "note": "\"until you return to the ground, for from it you were taken; for dust you are, and to dust you shall return\": twice the reason."
+            },
+            {
+              "ref": "Gen.3.14",
+              "role": "defining",
+              "note": "כִּי עָשִׂיתָ זֹּאת אָרוּר אַתָּה: \"because you have done this, cursed are you\": the cause first."
+            },
+            {
+              "ref": "Gen.2.23",
+              "note": "She is called אִשָּׁה \"because from man she was taken\"."
+            },
+            {
+              "ref": "Num.10.29",
+              "note": "\"Come with us … for Yahweh has spoken good concerning Israel\"."
+            },
+            {
+              "ref": "Lev.23.29",
+              "note": "\"For any soul that is not afflicted on that same day shall be cut off\": the reason for the command of verse 27."
+            },
+            {
+              "ref": "Psa.16.10",
+              "note": "כִּי לֹא תַעֲזֹב נַפְשִׁי לִשְׁאוֹל: \"for you will not leave my soul to the grave\"; quoted with ὅτι in Act 2:27."
+            },
+            {
+              "ref": "Act.2.27",
+              "note": "Peter's quotation of Psa 16:10 keeps the reason: ὅτι οὐκ ἐγκαταλείψεις."
+            },
+            {
+              "ref": "Isa.53.8",
+              "note": "כִּי נִגְזַר מֵאֶרֶץ חַיִּים: \"for he was cut off from the land of the living\"; read in Act 8:33."
+            },
+            {
+              "ref": "Jer.31.15",
+              "note": "Rachel refuses comfort, כִּי אֵינֶנּוּ: \"because they are not\"; Mat 2:18 ὅτι οὐκ εἰσίν."
+            },
+            {
+              "ref": "Jer.31.34",
+              "note": "\"for they shall all know me … for I will forgive their iniquity\": two reasons, both kept as ὅτι in Heb 8:11–12."
+            }
+          ]
+        },
+        {
+          "id": "ki-that",
+          "gloss": "that (what is seen, known or said)",
+          "definition": "After a verb of seeing, knowing, hearing or saying, introduces what is seen, known or said.",
+          "evidence": [
+            {
+              "ref": "Gen.1.4",
+              "role": "defining",
+              "note": "\"God saw the light, that it was good\" (כִּי טוֹב)."
+            },
+            {
+              "ref": "Lev.23.43",
+              "role": "defining",
+              "note": "\"so that your generations may know that I made the sons of Israel dwell in booths\"."
+            },
+            {
+              "ref": "Exo.14.4",
+              "note": "\"and Egypt shall know that I am Yahweh\"."
+            },
+            {
+              "ref": "Gen.3.6",
+              "note": "\"the woman saw that the tree was good for food, and that it was a delight to the eyes\"."
+            },
+            {
+              "ref": "Deu.8.3",
+              "note": "\"to make you know that man does not live by bread alone\"."
+            }
+          ],
+          "senses": [
+            {
+              "id": "ki-that-result",
+              "gloss": "that, such that (after a question)",
+              "definition": "After a question of who or what, gives what follows from it: \"what is man, that you remember him?\"",
+              "cognate_ids": [
+                "ar-kay"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.8.5",
+                  "role": "defining",
+                  "note": "מָה־אֱנוֹשׁ כִּי־תִזְכְּרֶנּוּ: \"what is man, that you remember him?\"; Heb 2:6 keeps it as ὅτι."
+                },
+                {
+                  "ref": "Exo.3.11",
+                  "role": "defining",
+                  "note": "\"Who am I, that I should go to Pharaoh?\""
+                },
+                {
+                  "ref": "Gen.20.9",
+                  "note": "\"how have I sinned against you, that you have brought on me … a great sin?\""
+                },
+                {
+                  "ref": "Heb.2.6",
+                  "note": "τί ἐστιν ἄνθρωπος ὅτι μιμνῄσκῃ αὐτοῦ: the quotation of Psa 8:5."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ki-when",
+          "gloss": "when, if",
+          "definition": "Sets out a case or a time, and what is to be done or what happens in it: the usual opening of a law (\"when a man…\") and of a promise or command for the land (\"when you come into the land…\").",
+          "evidence": [
+            {
+              "ref": "Lev.23.10",
+              "role": "defining",
+              "note": "כִּי־תָבֹאוּ אֶל־הָאָרֶץ: \"when you come into the land … you shall bring the sheaf\"."
+            },
+            {
+              "ref": "Num.10.9",
+              "role": "defining",
+              "note": "\"And when you go to war in your land … you shall sound an alarm with the trumpets\"."
+            },
+            {
+              "ref": "Exo.21.2",
+              "role": "defining",
+              "note": "כִּי תִקְנֶה עֶבֶד עִבְרִי: \"if you buy a Hebrew servant, six years he shall serve\"."
+            },
+            {
+              "ref": "Lev.1.2",
+              "note": "\"when any man of you brings an offering to Yahweh\"."
+            },
+            {
+              "ref": "Lev.25.2",
+              "note": "\"when you come into the land that I give you, the land shall keep a sabbath\"."
+            },
+            {
+              "ref": "Num.10.32",
+              "note": "וְהָיָה כִּי־תֵלֵךְ עִמָּנוּ: \"and it shall be, if you go with us\"."
+            },
+            {
+              "ref": "Gen.6.1",
+              "note": "וַיְהִי כִּי־הֵחֵל הָאָדָם לָרֹב: \"and it came to pass, when man began to multiply\"."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "though, even when",
+              "definition": "The case set out is one that might be expected to hinder, and does not.",
+              "evidence": [
+                {
+                  "ref": "Psa.23.4",
+                  "role": "defining",
+                  "note": "גַּם כִּי־אֵלֵךְ בְּגֵיא צַלְמָוֶת לֹא־אִירָא רָע: \"even when I walk in the valley of the shadow of death, I will fear no evil\"."
+                },
+                {
+                  "ref": "Exo.13.17",
+                  "role": "defining",
+                  "note": "God did not lead them by the way of the Philistines, כִּי קָרוֹב הוּא: \"though it was near\"."
+                },
+                {
+                  "ref": "Isa.1.15",
+                  "note": "גַּם כִּי־תַרְבּוּ תְפִלָּה אֵינֶנִּי שֹׁמֵעַ: \"even though you make many prayers, I am not listening\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ki-but",
+          "gloss": "but, rather (after a negative)",
+          "definition": "After a denial, brings in what is true instead: \"not this, but that\". With אִם the same, \"but rather; except\" (see usage).",
+          "evidence": [
+            {
+              "ref": "Gen.45.8",
+              "role": "defining",
+              "note": "\"it was not you who sent me here, but God\" (כִּי הָאֱלֹהִים)."
+            },
+            {
+              "ref": "Gen.18.15",
+              "role": "defining",
+              "note": "Sarah said \"I did not laugh\"; he said, לֹא כִּי צָחָקְתְּ: \"No, but you did laugh\"."
+            },
+            {
+              "ref": "1Sa.8.7",
+              "role": "defining",
+              "note": "\"they have not rejected you, but they have rejected me from reigning over them\"."
+            },
+            {
+              "ref": "Deu.8.3",
+              "note": "\"not by bread alone does man live, but (כִּי) by everything that comes out of the mouth of Yahweh\"; Mat 4:4 ἀλλά."
+            },
+            {
+              "ref": "Mat.4.4",
+              "note": "Jesus quotes Deu 8:3: οὐκ ἐπ᾽ ἄρτῳ μόνῳ … ἀλλ᾽ ἐπὶ παντὶ ῥήματι."
+            }
+          ]
+        },
+        {
+          "id": "ki-surely",
+          "gloss": "surely, indeed",
+          "definition": "Affirms the clause it points to, with no other clause for it to depend on: \"so it is!\". It stands in oaths after \"as Yahweh lives\", in promises, and after a condition to say what will then surely follow.",
+          "evidence": [
+            {
+              "ref": "Psa.128.2",
+              "role": "defining",
+              "note": "יְגִיעַ כַּפֶּיךָ כִּי תֹאכֵל: \"the labour of your hands you shall surely eat\"."
+            },
+            {
+              "ref": "1Sa.26.16",
+              "role": "defining",
+              "note": "חַי־יַהְוֶה כִּי בְנֵי־מָוֶת אַתֶּם: \"as Yahweh lives, surely you are sons of death\"."
+            },
+            {
+              "ref": "Psa.118.10",
+              "role": "defining",
+              "note": "\"All nations surrounded me; in the name of Yahweh I will surely cut them off\" (כִּי אֲמִילַם)."
+            },
+            {
+              "ref": "1Sa.14.39",
+              "note": "\"For as Yahweh lives … even if it is in Jonathan my son, he shall surely die\" (כִּי מוֹת יָמוּת)."
+            },
+            {
+              "ref": "Isa.7.9",
+              "note": "אִם לֹא תַאֲמִינוּ כִּי לֹא תֵאָמֵנוּ: \"if you will not believe, surely you shall not be established\"."
+            },
+            {
+              "ref": "Gen.43.10",
+              "note": "\"For if we had not delayed, surely by now we would have returned twice\" (כִּי־עַתָּה)."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "introducing what is said",
+              "definition": "After a verb of saying, points to the words spoken, standing where English uses quotation marks.",
+              "evidence": [
+                {
+                  "ref": "Gen.21.30",
+                  "role": "defining",
+                  "note": "\"And he said, 'These seven ewe lambs you shall take from my hand'\" (וַיֹּאמֶר כִּי אֶת־שֶׁבַע)."
+                },
+                {
+                  "ref": "Gen.29.32",
+                  "note": "כִּי אָמְרָה כִּי־רָאָה יַהְוֶה בְּעָנְיִי: \"for she said, 'Yahweh has looked on my affliction; surely now my husband will love me'\"."
+                },
+                {
+                  "ref": "Exo.3.12",
+                  "note": "וַיֹּאמֶר כִּי־אֶהְיֶה עִמָּךְ: \"and he said, 'Certainly I will be with you'\"."
+                },
+                {
+                  "ref": "1Sa.10.19",
+                  "note": "\"and you said to him, 'No, but set a king over us'\"."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὅτι",
+          "gloss": "because; that",
+          "evidence": [
+            {
+              "ref": "Heb.2.6",
+              "note": "ὅτι μιμνῄσκῃ αὐτοῦ for כִּי תִזְכְּרֶנּוּ (Psa 8:5)."
+            },
+            {
+              "ref": "Act.2.27",
+              "note": "ὅτι οὐκ ἐγκαταλείψεις for כִּי לֹא־תַעֲזֹב (Psa 16:10)."
+            },
+            {
+              "ref": "Mat.2.18",
+              "note": "ὅτι οὐκ εἰσίν for כִּי אֵינֶנּוּ (Jer 31:15)."
+            },
+            {
+              "ref": "Heb.8.12",
+              "note": "ὅτι ἵλεως ἔσομαι for כִּי אֶסְלַח (Jer 31:34)."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:43 word 4",
+              "note": "The Septuagint's commonest rendering of כִּי, about 2,700 times: here \"that I made them dwell in booths\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 2:3 word 8",
+              "note": "ὅτι \"because\" on it he rested."
+            }
+          ]
+        },
+        {
+          "lemma": "γάρ",
+          "gloss": "for",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:28 word 8",
+              "note": "ἡμέρα γὰρ ἐξιλασμοῦ: \"for it is a day of atonement\"."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐάν",
+          "gloss": "if, when",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 10:9 word 1",
+              "note": "\"if you go to war\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 21:2 word 1",
+              "note": "\"if you buy a Hebrew servant\"."
+            }
+          ]
+        },
+        {
+          "lemma": "ὅταν",
+          "gloss": "whenever, when",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:10 word 7",
+              "note": "\"when you come into the land\"."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀλλά",
+          "gloss": "but",
+          "evidence": [
+            {
+              "ref": "Mat.4.4",
+              "note": "ἀλλ᾽ ἐπὶ παντὶ ῥήματι for כִּי עַל־כָּל־מוֹצָא (Deu 8:3)."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 10:30 word 5",
+              "note": "ἀλλά for כִּי אִם: \"but to my own land\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 18:15 word 10",
+              "note": "\"No, but you did laugh\"."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "כִּי אִם",
+            "gloss": "but rather; except, unless; only",
+            "evidence": [
+              {
+                "ref": "Num.10.30",
+                "role": "defining",
+                "note": "\"I will not go, but to my own land and to my kindred I will go\"."
+              },
+              {
+                "ref": "Gen.32.27",
+                "role": "defining",
+                "note": "לֹא אֲשַׁלֵּחֲךָ כִּי אִם־בֵּרַכְתָּנִי: \"I will not let you go unless you bless me\"."
+              },
+              {
+                "ref": "Gen.15.4",
+                "note": "\"This one shall not be your heir, but one who comes out of your own body\"."
+              },
+              {
+                "ref": "Gen.28.17",
+                "note": "אֵין זֶה כִּי אִם־בֵּית אֱלֹהִים: \"this is none other than the house of God\"."
+              },
+              {
+                "ref": "Lev.22.6",
+                "note": "\"he shall not eat of the holy things unless he has bathed his flesh in water\"."
+              },
+              {
+                "ref": "Mic.6.8",
+                "note": "\"what does Yahweh require of you but to do justice, and to love kindness, and to walk humbly with your God?\""
+              }
+            ]
+          },
+          {
+            "phrase": "כִּי עַל־כֵּן",
+            "gloss": "since, for that is why; inasmuch as",
+            "evidence": [
+              {
+                "ref": "Num.10.31",
+                "role": "defining",
+                "note": "\"Do not leave us, since (כִּי עַל־כֵּן) you know how we are to camp in the wilderness\"."
+              },
+              {
+                "ref": "Gen.18.5",
+                "role": "defining",
+                "note": "\"refresh yourselves … since you have come to your servant\"."
+              },
+              {
+                "ref": "Gen.19.8",
+                "note": "\"do nothing to these men, since they have come under the shadow of my roof\"."
+              },
+              {
+                "ref": "Gen.33.10",
+                "note": "\"take my gift, since I have seen your face\"."
+              },
+              {
+                "ref": "Gen.38.26",
+                "note": "\"She is more righteous than I, since I did not give her to Shelah my son\"."
+              },
+              {
+                "ref": "Num.14.43",
+                "note": "\"since you have turned back from following Yahweh, Yahweh will not be with you\"."
+              }
+            ]
+          },
+          {
+            "phrase": "וְהָיָה כִּי",
+            "gloss": "and it shall be, when",
+            "evidence": [
+              {
+                "ref": "Num.10.32",
+                "role": "defining",
+                "note": "\"and it shall be, if you go with us, the good Yahweh does to us we will do to you\"."
+              },
+              {
+                "ref": "Gen.12.12",
+                "note": "\"and it shall be, when the Egyptians see you\"."
+              },
+              {
+                "ref": "Exo.12.26",
+                "note": "\"and it shall be, when your children say to you, What is this service?\""
+              }
+            ]
+          },
+          {
+            "phrase": "וַיְהִי כִּי",
+            "gloss": "and it came to pass, when",
+            "evidence": [
+              {
+                "ref": "Gen.6.1",
+                "role": "defining",
+                "note": "\"and it came to pass, when man began to multiply\"."
+              },
+              {
+                "ref": "Gen.26.8",
+                "note": "\"and it came to pass, when he had been there a long time\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כִּי עַתָּה",
+            "gloss": "for now; surely now (often after \"if not\": surely by now)",
+            "evidence": [
+              {
+                "ref": "Gen.26.22",
+                "role": "defining",
+                "note": "\"for now Yahweh has made room for us\"."
+              },
+              {
+                "ref": "Gen.31.42",
+                "role": "defining",
+                "note": "\"If the God of my father had not been with me, surely now you would have sent me away empty\"."
+              },
+              {
+                "ref": "Gen.43.10",
+                "note": "\"surely by now we would have returned twice\"."
+              },
+              {
+                "ref": "Num.22.33",
+                "note": "\"if she had not turned aside from me, surely now I would have killed you\"."
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם כִּי",
+            "gloss": "even though, even when",
+            "evidence": [
+              {
+                "ref": "Psa.23.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.1.15"
+              }
+            ]
+          },
+          {
+            "phrase": "אַף כִּי",
+            "gloss": "how much more (or less); is it even so that…?",
+            "evidence": [
+              {
+                "ref": "1Ki.8.27",
+                "role": "defining",
+                "note": "\"heaven and the heaven of heavens cannot contain you; how much less this house\"."
+              },
+              {
+                "ref": "Pro.11.31",
+                "role": "defining",
+                "note": "\"the righteous is repaid on the earth; how much more the wicked and the sinner\"."
+              },
+              {
+                "ref": "1Sa.14.30",
+                "note": "\"how much more, if the people had eaten freely today\"."
+              },
+              {
+                "ref": "Gen.3.1",
+                "note": "The serpent's אַף כִּי־אָמַר אֱלֹהִים: \"Is it even so, that God has said…?\""
+              }
+            ]
+          },
+          {
+            "phrase": "אֶפֶס כִּי",
+            "gloss": "only, however, except that",
+            "evidence": [
+              {
+                "ref": "Num.13.28",
+                "role": "defining",
+                "note": "\"However, the people who dwell in the land are strong\"."
+              },
+              {
+                "ref": "Deu.15.4",
+                "note": "\"except that there shall be no poor among you\"."
+              },
+              {
+                "ref": "Jdg.4.9",
+                "note": "\"I will surely go with you; only, the glory shall not be yours\"."
+              }
+            ]
+          },
+          {
+            "phrase": "עַד כִּי",
+            "gloss": "until",
+            "evidence": [
+              {
+                "ref": "Gen.26.13",
+                "role": "defining",
+                "note": "\"he grew greater and greater until he became very great\"."
+              },
+              {
+                "ref": "Gen.41.49",
+                "note": "\"until he stopped counting\"."
+              }
+            ]
+          },
+          {
+            "phrase": "עַל כִּי",
+            "gloss": "because",
+            "evidence": [
+              {
+                "ref": "Deu.31.17",
+                "role": "defining",
+                "note": "\"Is it not because my God is not among us that these evils have found us?\""
+              },
+              {
+                "ref": "Jdg.3.12",
+                "note": "\"because they had done evil in the eyes of Yahweh\"."
+              },
+              {
+                "ref": "Psa.139.14",
+                "note": "\"I will praise you, because I am fearfully and wonderfully made\"."
+              }
+            ]
+          },
+          {
+            "phrase": "יַעַן כִּי",
+            "gloss": "because",
+            "evidence": [
+              {
+                "ref": "Num.11.20",
+                "role": "defining",
+                "note": "\"because you have rejected Yahweh who is among you\"."
+              },
+              {
+                "ref": "1Ki.21.29",
+                "note": "\"because he has humbled himself before me\"."
+              },
+              {
+                "ref": "Isa.3.16",
+                "note": "\"because the daughters of Zion are haughty\"."
+              }
+            ]
+          },
+          {
+            "phrase": "עֵקֶב כִּי",
+            "gloss": "because, in consequence of (that)",
+            "evidence": [
+              {
+                "ref": "2Sa.12.10",
+                "role": "defining",
+                "note": "\"the sword shall never depart from your house, because you have despised me\"."
+              },
+              {
+                "ref": "Amo.4.12",
+                "note": "\"because I will do this to you, prepare to meet your God, Israel\"."
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחַת כִּי",
+            "gloss": "because, in return for (that)",
+            "evidence": [
+              {
+                "ref": "Deu.4.37",
+                "role": "defining",
+                "note": "\"because he loved your fathers, he chose their seed after them\"."
+              },
+              {
+                "ref": "Pro.1.29",
+                "note": "\"because they hated knowledge\"."
+              }
+            ]
+          },
+          {
+            "phrase": "הֲכִי",
+            "gloss": "is it that…? is it because…?",
+            "evidence": [
+              {
+                "ref": "Gen.27.36",
+                "role": "defining",
+                "note": "\"Is it because he is named Jacob that he has supplanted me these two times?\""
+              },
+              {
+                "ref": "Gen.29.15",
+                "note": "\"Is it because you are my kinsman that you should serve me for nothing?\""
+              },
+              {
+                "ref": "2Sa.9.1",
+                "note": "\"Is there yet anyone left of the house of Saul?\""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כַּי",
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-kiam"
+      ],
+      "pos": "particle",
+      "gloss": "then, so (in a question)",
+      "summary": "The Peshitta's particle of the same consonants, in the Gospels only and always in a question, where the Greek has ἄρα: \"who then…?\". It keeps the pointing sense \"so, thus\" that the cognates set behind כִּי, as Hebrew כִּי keeps it in its use \"surely\"; Old Aramaic כי is \"because, for\" (see arc-ky), so the Aramaic dialects have both uses as Hebrew does. Its tie to כִּי rests on the shared consonants and that pointing sense only: no cognate means \"then\", Akkadian kīam \"thus\" is no more than possible, and none of the other cognates counts for it.",
+      "senses": [
+        {
+          "id": "kay-then",
+          "gloss": "then, so",
+          "definition": "In a question, draws it from what has gone before: \"who then is…?\", \"what then will…?\".",
+          "evidence": [
+            {
+              "ref": "Mat.18.1",
+              "role": "defining",
+              "note": "\"Who then is greatest in the kingdom of heaven?\" (Greek ἄρα)."
+            },
+            {
+              "ref": "Mat.19.25",
+              "role": "defining",
+              "note": "\"Who then can be saved?\""
+            },
+            {
+              "ref": "Luk.8.25",
+              "note": "\"Who then is this, that he commands even the winds and the water?\""
+            },
+            {
+              "ref": "Mrk.4.41",
+              "note": "\"Who then is this, that even the wind and the sea obey him?\""
+            },
+            {
+              "ref": "Luk.1.66",
+              "note": "\"What then will this child be?\""
+            },
+            {
+              "ref": "Mat.24.45",
+              "note": "\"Who then is the faithful and wise servant?\""
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἄρα",
+          "gloss": "then, so",
+          "evidence": [
+            {
+              "ref": "Mat.18.1",
+              "note": "τίς ἄρα μείζων: the Greek the Peshitta's כַּי stands for in all its uses."
+            },
+            {
+              "ref": "Luk.8.25"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ki",
+      "lang": "akk",
+      "form": "kī",
+      "translit": "kī",
+      "gloss": "as, like, according to; when, as soon as; that; because; if; how?",
+      "relation": "cognate",
+      "note": "One particle doing both the work of כְּ \"like\" and of כִּי \"that, because, when, if\": the clearest sign that the two come from one source. Beside it kīma \"like; when; that\" and kīam \"thus\" (akk-kiam).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004650, kī [like] PRP",
+          "note": "as, like; according to; as soon as; because; that; when; if; how?"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian kī",
+          "url": "https://en.wiktionary.org/wiki/k%C4%AB",
+          "note": "\"as, like, in the manner of\"; \"From Proto-Semitic *kV- (like, in the manner of). Cognate with Arabic كَـ (ka-) and Biblical Hebrew כְּ־\"."
+        }
+      ]
+    },
+    {
+      "id": "akk-kiam",
+      "lang": "akk",
+      "form": "kīam",
+      "translit": "kīam",
+      "gloss": "thus, so, in the following way",
+      "relation": "possible",
+      "note": "An adverb of the same k- element, \"so, thus\", as כֹּה is; it shows the pointing sense the Peshitta's כַּי \"then, so\" keeps. Possible only: it is the k- element, not the particle kī itself.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000021860, kīam [so] AV",
+          "note": "in the following way; so; thus."
+        }
+      ]
+    },
+    {
+      "id": "uga-k",
+      "lang": "uga",
+      "form": "𐎋, 𐎋𐎊",
+      "translit": "k-, ky /ki/",
+      "gloss": "that; because; when, if, as soon as; surely; (as preposition) as, like",
+      "relation": "cognate",
+      "note": "The same particle with the same range as Hebrew: \"that\" after a verb of knowing (\"I know that you are compassionate\", KTU 1.16 I 33; \"may my mother know that I entered\", KTU 2.16:6–7), \"because\", \"when, if\", and \"surely\" before a verb, which Segert compares with Hebrew כִּי in Psa 128:2. The grammar takes the conjunction to be related to the pointing element k-, which is also the preposition \"as, like\".",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "§57.3, subordinating conjunctions",
+          "note": "\"The conjunction k- /ki/ is related to the deictic element k-. The conjunction k- /ki/ 'that, because, if,' etc. (cf. H. ki)\"; variant ky."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§55.6, affirmative particle",
+          "note": "\"The affirmative particle k- 'surely' is apparently related to the deictic element.\""
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§67.33 and §77.53",
+          "note": "k- in content clauses, conditional (\"when/if\") and temporal (\"as soon as\") clauses, and causal clauses (\"as, because\")."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§93 Glossary, k-, ky",
+          "note": "k- \"as, like\"; k- affirmative \"surely, verily\" (cf. H. ki Ps 128:2); k- \"when, if\", ky (H. ki, Phoen. chy, Anc. Aram. ky, Akkad. kī)."
+        }
+      ]
+    },
+    {
+      "id": "phn-k",
+      "lang": "phn",
+      "form": "𐤊",
+      "translit": "k (Punic ci, chy)",
+      "gloss": "because; that; (presentative) it was I who…, truly",
+      "relation": "cognate",
+      "note": "Phoenician and Punic write the particle k; Plautus' Punic lines spell it ci and chy, so it was spoken ki, as Hebrew. Its uses are those of כִּי: the reason (\"because Baal commissioned me to build it\", Karatepe), the content after \"they shall know\" or \"I am told\", and a presentative that opens a clause with nothing to depend on, as Hebrew's \"surely\".",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 220–221, K I",
+          "note": "conj. 1. BECAUSE (KAI 26 A II 9–11; Pyrgi); 2. THAT (KAI 60.6–8; Poen. 946A ci, 938 ch(y)); 3. presentative particle (KAI 14.12)."
+        }
+      ]
+    },
+    {
+      "id": "moab-ky",
+      "lang": "sem",
+      "form": "כי",
+      "translit": "ky",
+      "gloss": "for, because",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele, in the same consonants and use: \"for he had saved me from all the kings\" (line 4), \"for Chemosh was angry with his land\" (line 5), \"for all Dibon was obedient\" (line 28).",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 4, 5, 17, 27, 28",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "כי השעני מכל השלכן; כי יאנפ כמש בארצה."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 4–5, 17",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"for he had saved me from all the assailants\"; \"for Kemôš was angry with his land\"; \"for to ʿaštar-Kemôš had I devoted it\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-ky",
+      "lang": "arc",
+      "form": "כי",
+      "translit": "kay, kī",
+      "gloss": "because, for; (later Aramaic) as, like; when",
+      "relation": "cognate",
+      "note": "Aramaic outside scripture: \"because, for\"; in the Targums and Talmud כִּי is \"as, like\" and \"when\" (כי אתא \"when he came\"), the comparative and the temporal uses side by side again. Scripture's own Aramaic uses דִּי for these.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Aramaic כי (conj.)",
+          "url": "https://en.wiktionary.org/wiki/%D7%9B%D7%99",
+          "note": "\"kay: because, for\"."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כִּי (as, like; when)",
+          "note": "\"as, like … 1) when\"; Targ. Is. 14:19; כי סליק \"when R. El. went up\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-k",
+      "lang": "sem",
+      "form": "𐩫",
+      "translit": "k-",
+      "gloss": "because; that; so that; when, after; (preposition) like, as",
+      "relation": "cognate",
+      "note": "Sabaic (Old South Arabian): one k- that is the preposition \"like\" and the conjunction \"because\" (\"for they are sacred\"), \"that\" (\"they saw that the pestilence was approaching\"), \"so that\" and \"when\"; the dictionary notes a \"deictic\" use too. The same pairing of \"like\" with \"that, because, when\" as in Akkadian and Ugaritic.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 237, k- (prep.) and k- (conj.)",
+          "note": "prep. LIKE, (SUCH) AS; conj. (1) FOR, BECAUSE (cf. Ar kay); (2) THAT (cf. 'deictic' k-); (3) SO THAT; (4) WHEN, AFTER; (5) 'deictic' in certain expressions."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Old South Arabian 𐩫",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A9%AB",
+          "note": "conj. \"that … when, as, after … because, since … so that, in order that\"; prep. \"like, as\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-kay",
+      "lang": "ar",
+      "form": "كَيْ",
+      "translit": "kay",
+      "gloss": "in order that, so that",
+      "relation": "cognate",
+      "note": "Arabic keeps the particle only for purpose, \"so that\" (Qur'an 59:7, كَىْ لَا يَكُونَ دُولَةً \"that it may not be a thing passed round\"), the nearest Hebrew use being the result after a question. Wiktionary derives it from a pointing particle *kiyā, related to *ka (Arabic كَ \"like\", Lane p. 2998).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 509, art. حت, حَتَّى",
+          "note": "\"It is also syn. with كَىْ, denoting a cause or motive [of action], signifying To the end that, in order that, or so that\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic كي (conj.)",
+          "url": "https://en.wiktionary.org/wiki/%D9%83%D9%8A",
+          "note": "\"in order that (followed by the subjunctive)\"; \"From Proto-Semitic *kiyā, a deictic particle, related to *ka\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-ka",
+      "lang": "ar",
+      "form": "كَ",
+      "translit": "ka-",
+      "gloss": "like, as (the kāf of comparison)",
+      "relation": "possible",
+      "note": "Not כִּי itself but the comparative k- that the cognates set beside it (Hebrew כְּ). Recorded as the evidence for the k- element; it shares no sense of כִּי.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2998, art. ك, كَ",
+          "note": "\"prefixed to a noun is called كَافُ التَّشْبِيهِ The ك of comparison\"; كَذٰلِكَ \"the like thereof … and so\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Root investigation (asked for by the user): no viable verbal or nominal root. No verb כוה/כיה/כי in scripture gives a sense the particle could grow from; the noun כִּי \"branding, burning\" (Isa 3:24, BDB k.at.ab, filed under כוה) belongs to כוה and is left out (its BDB key also gathers every כי token by spelling, about 4,300, so it must not be claimed here). The cognates (Akkadian kī, Ugaritic k-/ky, Sabaic k-) join the conjunction to the comparative/deictic k- of כְּ \"like\" and כֹּה \"thus\" (Segert §57.3 states it for Ugaritic; Wiktionary reconstructs *kiyā, \"a deictic particle, related to *ka\"); Hebrew's own asseverative and recitative uses and the Peshitta's כַּי \"then, so\" fit a pointing word \"so!\". That is a pronominal element, not a three-letter root, and כְּ (BDB k.ab.aa, cons כ), כֹּה (k.ap.aa) and כָּה (xk.ab.aa) are other spellings, so they are not added here: if the user wants one k- entry, כִּי, כְּ, כֹּה, כָּכָה and perhaps כֵּן (whose link to כון is a separate question) could be gathered under a root key כ. The task named עַל כֵּן with this word: it is עַל + כֵּן and belongs to those entries; what Num 10:31 has is the compound כִּי עַל־כֵּן, recorded under usage. Senses are illustrative, not exhaustive (4,484 tokens); many verses allow more than one reading (Gen 17:15 and 18:20 read by some as \"because\", by others as \"surely\" or \"that\"), and such verses are not used as defining. Doctrine left empty: the particle carries no teaching of its own beyond the verses whose reasons it joins. Not consulted: Ge'ez ከመ kama \"as; that\" (Dillmann col. 818ff., Leslau), CAD K for kī, CAL for Old Aramaic ky, DULAT for Ugaritic k; Payne Smith for Syriac ܟܝ. Segert's page numbers were not fixed from the scan; cited by section. Psa 49:16, which Segert cites for affirmative כִּי, reads more naturally as \"for\" and is not used. The Peshitta's כַּי is SEDRA lexeme 1509 (\"now; indeed; perhaps\"), 16 tokens, all in Matthew–John questions rendering ἄρα."
+}
