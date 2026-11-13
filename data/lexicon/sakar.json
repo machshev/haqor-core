@@ -1,0 +1,850 @@
+{
+  "id": "sakar",
+  "root": "שׂכר",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "work",
+    "wages",
+    "reward",
+    "justice",
+    "resurrection"
+  ],
+  "gloss": "hire; wage, hire-fee; reward; hired man",
+  "summary": "The verb is to hire: to engage a man, an army or a craftsman for a price (Gen 30:16; 2Ch 25:6; Isa 46:6). שָׂכָר is what is paid for the work or service, a hired man’s wage, a nurse’s pay, the hire of a beast, a ship’s fare (Gen 30:32; Exo 2:9; 22:14; Jon 1:3), and so the reward God gives for work done for him: “I am your shield, your reward very great” (Gen 15:1), “his reward is with him” when Yahweh comes (Isa 40:10; 62:11). שָׂכִיר is the hired man, whose wage the law says must be paid the same day (Lev 19:13; Deu 24:14–15). Phoenician and Ugaritic škr, “hire”, have the same sense.",
+  "words": [
+    {
+      "lemma": "שָׂכָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wage, hire; fare; reward",
+      "bdb": [
+        "u.bk.ac"
+      ],
+      "cognate_ids": [
+        "phn-skr",
+        "uga-skr"
+      ],
+      "summary": "What is given in return for work or service: first a man’s pay, then the reward Yahweh gives for what is done for him. Its parallel is פְּעֻלָּה, “work, the wage of work” (Isa 40:10; Jer 31:16).",
+      "senses": [
+        {
+          "id": "wage",
+          "gloss": "wage, pay for work or service",
+          "definition": "What an employer gives a worker, servant or soldier for his work: agreed beforehand, owed when the work is done, and to be paid on the day.",
+          "evidence": [
+            {
+              "ref": "Gen.30.32",
+              "role": "defining",
+              "note": "Jacob names his pay for keeping Laban’s flocks: every speckled and spotted one “shall be my שָׂכָר”."
+            },
+            {
+              "ref": "Gen.30.28",
+              "note": "Laban: “Name your שָׂכָר to me, and I will give it.”"
+            },
+            {
+              "ref": "Gen.30.33"
+            },
+            {
+              "ref": "Gen.31.8",
+              "note": "“The speckled shall be your שָׂכָר”, and then “the streaked shall be your שָׂכָר”: the wage Laban kept changing."
+            },
+            {
+              "ref": "Exo.2.9",
+              "role": "defining",
+              "note": "Pharaoh’s daughter to Moses’ mother: “nurse him for me, and I will give your שָׂכָר”."
+            },
+            {
+              "ref": "Deu.24.15",
+              "role": "defining",
+              "note": "“In his day you shall give his שָׂכָר, and the sun shall not go down on it, for he is poor and lifts up his soul to it.”"
+            },
+            {
+              "ref": "Deu.15.18",
+              "note": "The released Hebrew slave has served six years, “double the שְׂכַר of a hired man”."
+            },
+            {
+              "ref": "1Ki.5.20",
+              "note": "Solomon to Hiram: “the שְׂכַר of your servants I will give you, according to all you say”."
+            },
+            {
+              "ref": "Num.18.31",
+              "role": "defining",
+              "note": "The tithe is the Levites’ “שָׂכָר … in return for (חֵלֶף) your service in the tent of meeting”: the wage is what is given in exchange for service."
+            },
+            {
+              "ref": "Zec.8.10",
+              "note": "Before the house was founded “there was no שְׂכַר for man, nor שְׂכַר for beast”."
+            },
+            {
+              "ref": "Zec.11.12",
+              "role": "defining",
+              "note": "The shepherd: “if it is good in your eyes, give me my שָׂכָר … and they weighed out my שָׂכָר, thirty of silver”."
+            },
+            {
+              "ref": "Ecc.4.9",
+              "note": "“Two are better than one, for they have a good שָׂכָר for their toil.”"
+            },
+            {
+              "ref": "Ezk.29.18",
+              "role": "defining",
+              "note": "Nebuchadnezzar served a great service against Tyre, “yet he had no שָׂכָר, nor his army, from Tyre for the service”."
+            },
+            {
+              "ref": "Ezk.29.19",
+              "note": "So Yahweh gives him Egypt: “it shall be the שָׂכָר for his army”."
+            }
+          ],
+          "senses": [
+            {
+              "id": "hire-fee",
+              "gloss": "hire of a beast; fare",
+              "definition": "The price paid for the use of something not one’s own: the hire of a borrowed animal, a passage on a ship.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.14",
+                  "role": "defining",
+                  "note": "If the owner was with the borrowed animal, the borrower does not repay; “if it was hired (שָׂכִיר), it came for its שָׂכָר”: the hire covers the loss."
+                },
+                {
+                  "ref": "Jon.1.3",
+                  "role": "defining",
+                  "note": "Jonah found a ship going to Tarshish, “and he gave its שָׂכָר and went down into it”: the fare."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reward",
+          "gloss": "reward (from God)",
+          "definition": "What Yahweh gives in return for faithfulness or work done for him, spoken of as a wage: the same word, because he repays as an honest master pays.",
+          "evidence": [
+            {
+              "ref": "Gen.15.1",
+              "role": "defining",
+              "note": "“Do not fear, Abram; I am a shield to you; your שָׂכָר is very great.” Abram had just refused the king of Sodom’s goods (Gen 14:22–23)."
+            },
+            {
+              "ref": "Isa.40.10",
+              "role": "defining",
+              "note": "“Behold, the Lord Yahweh comes with strength … behold, his שָׂכָר is with him, and his פְּעֻלָּה before him.”"
+            },
+            {
+              "ref": "Isa.62.11",
+              "note": "“Say to the daughter of Zion, ‘Behold, your salvation comes; behold, his שָׂכָר is with him.’”"
+            },
+            {
+              "ref": "Jer.31.16",
+              "role": "defining",
+              "note": "To Rachel weeping for her children: “there is שָׂכָר for your work … they shall return from the land of the enemy.”"
+            },
+            {
+              "ref": "2Ch.15.7",
+              "note": "Azariah to Asa: “Be strong … for there is שָׂכָר for your work.”"
+            },
+            {
+              "ref": "Psa.127.3",
+              "role": "defining",
+              "note": "“Sons are the inheritance of Yahweh; the fruit of the womb is a שָׂכָר.”"
+            },
+            {
+              "ref": "Gen.30.18",
+              "note": "Leah: “God has given me my שָׂכָר, because I gave my maid to my husband”; she names the son Issachar."
+            },
+            {
+              "ref": "Ecc.9.5",
+              "role": "defining",
+              "note": "“The living know that they will die, but the dead know nothing, and they have no more שָׂכָר, for their memory is forgotten.”"
+            }
+          ],
+          "cognate_ids": [
+            "ar-shakara"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μισθός",
+          "gloss": "wages, pay; reward",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.15.1, Deu.15.18, Deu.24.15, Isa.40.10, Isa.62.11, Ecc.9.5: שָׂכָר → μισθός; μισθός renders it ×21"
+            },
+            {
+              "ref": "Rev.22.12",
+              "role": "defining",
+              "note": "“Behold, I come quickly, and my μισθός is with me, to give to each as his work shall be”: Isa 40:10 and 62:11 in Christ’s mouth."
+            },
+            {
+              "ref": "Rev.11.18",
+              "note": "“The time of the dead to be judged, and to give the μισθός to your servants the prophets.”"
+            },
+            {
+              "ref": "Jas.5.4",
+              "role": "defining",
+              "note": "“The μισθός of the labourers who mowed your fields, kept back by you, cries out”: the wage of Deu 24:15 that cries to Yahweh."
+            },
+            {
+              "ref": "Luk.10.7",
+              "note": "“The labourer is worthy of his μισθός.”"
+            },
+            {
+              "ref": "1Ti.5.18"
+            },
+            {
+              "ref": "Mat.20.8",
+              "note": "“Call the labourers and pay them the μισθός.”"
+            },
+            {
+              "ref": "Mat.5.12",
+              "note": "“Your μισθός is great in heaven.”"
+            },
+            {
+              "ref": "1Co.3.8",
+              "note": "“Each will receive his own μισθός according to his own labour.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "פְּעֻלָּה",
+            "note": "“Work” and the wage it earns, set beside שָׂכָר.",
+            "evidence": [
+              {
+                "ref": "Isa.40.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.62.11"
+              },
+              {
+                "ref": "Lev.19.13",
+                "note": "פְּעֻלַּת שָׂכִיר, the hired man’s wage, must not stay with you till morning."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יֵשׁ שָׂכָר לִפְעֻלַּתְכֶם",
+            "gloss": "there is a reward for your work",
+            "evidence": [
+              {
+                "ref": "2Ch.15.7"
+              },
+              {
+                "ref": "Jer.31.16"
+              }
+            ]
+          },
+          {
+            "phrase": "הִנֵּה שְׂכָרוֹ אִתּוֹ",
+            "gloss": "behold, his reward is with him",
+            "evidence": [
+              {
+                "ref": "Isa.40.10"
+              },
+              {
+                "ref": "Isa.62.11"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׂכַר שָׂכִיר",
+            "gloss": "the wage of a hired man",
+            "evidence": [
+              {
+                "ref": "Deu.15.18"
+              },
+              {
+                "ref": "Mal.3.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שָׂכַר",
+      "root": "סכר",
+      "pos": "verb",
+      "gloss": "hire",
+      "bdb": [
+        "u.bk.aa"
+      ],
+      "cognate_ids": [
+        "phn-skr",
+        "uga-skr"
+      ],
+      "summary": "To engage someone for a price: a man for a night, a priest, soldiers, a goldsmith, masons, counsellors, a prophet to curse. Ezra 4:5 spells it with ס. The corpus analyses its forms under the root key סכר.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hire, engage for pay",
+          "senses": [
+            {
+              "id": "hire",
+              "gloss": "hire",
+              "definition": "To get the service of a person for payment named in the text: silver, a gift, mandrakes.",
+              "evidence": [
+                {
+                  "ref": "Gen.30.16",
+                  "role": "defining",
+                  "note": "Leah to Jacob: “You must come in to me, for שָׂכֹר שְׂכַרְתִּיךָ, I have surely hired you, with my son’s mandrakes.”"
+                },
+                {
+                  "ref": "Jdg.9.4",
+                  "role": "defining",
+                  "note": "With seventy pieces of silver from Baal-berith’s house Abimelech “hired worthless and reckless men”."
+                },
+                {
+                  "ref": "Jdg.18.4",
+                  "role": "defining",
+                  "note": "The Levite: “Micah has done thus to me; he has hired me, and I have become his priest”, for ten pieces of silver a year (Jdg 17:10)."
+                },
+                {
+                  "ref": "2Ch.25.6",
+                  "role": "defining",
+                  "note": "Amaziah “hired a hundred thousand mighty men of valour from Israel for a hundred talents of silver”."
+                },
+                {
+                  "ref": "2Sa.10.6",
+                  "note": "The Ammonites hired the Arameans of Beth-rehob and Zobah."
+                },
+                {
+                  "ref": "1Ch.19.6",
+                  "to": "1Ch.19.7",
+                  "note": "A thousand talents of silver “to hire for themselves chariots and horsemen”."
+                },
+                {
+                  "ref": "2Ki.7.6",
+                  "note": "The Arameans thought “the king of Israel has hired against us the kings of the Hittites”."
+                },
+                {
+                  "ref": "Deu.23.5",
+                  "note": "Moab “hired against you Balaam son of Beor … to curse you”."
+                },
+                {
+                  "ref": "Neh.13.2",
+                  "note": "The same, “but our God turned the curse into a blessing”."
+                },
+                {
+                  "ref": "Isa.46.6",
+                  "role": "defining",
+                  "note": "They weigh out silver in the balance, “they hire a goldsmith, and he makes it a god”."
+                },
+                {
+                  "ref": "2Ch.24.12",
+                  "note": "The money of the chest went to those “hiring masons and carpenters to restore the house of Yahweh”."
+                },
+                {
+                  "ref": "Pro.26.10",
+                  "note": "One who hires a fool and one who hires passers-by."
+                },
+                {
+                  "ref": "Ezr.4.5",
+                  "note": "The adversaries were “hiring (סֹכְרִים) counsellors against them to frustrate their purpose”: spelled with ס."
+                },
+                {
+                  "ref": "Neh.6.12",
+                  "to": "Neh.6.13",
+                  "note": "Shemaiah’s prophecy was false, “Tobiah and Sanballat had hired him … he was hired (שָׂכוּר) that I should be afraid”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "hire oneself out",
+          "senses": [
+            {
+              "gloss": "hire oneself out (for bread)",
+              "definition": "To give one’s work for hire, of those reduced to working for food.",
+              "evidence": [
+                {
+                  "ref": "1Sa.2.5",
+                  "role": "defining",
+                  "note": "Hannah: “The full have hired themselves out (נִשְׂכָּרוּ) for bread, and the hungry have ceased”: the full and the hungry change places."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "earn wages",
+          "senses": [
+            {
+              "gloss": "earn wages",
+              "definition": "To work for and receive a wage.",
+              "evidence": [
+                {
+                  "ref": "Hag.1.6",
+                  "role": "defining",
+                  "note": "“He who earns wages (הַמִּשְׂתַּכֵּר) earns wages into a bag with holes”: the reward of work drains away while Yahweh’s house lies waste."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μισθόω",
+          "gloss": "hire",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jdg.9.4, שָׂכַר → ἐμισθώσατο; μισθόω renders the verb about ten times"
+            },
+            {
+              "ref": "Mat.20.1",
+              "role": "defining",
+              "note": "A householder went out early “to hire (μισθώσασθαι) labourers into his vineyard”."
+            },
+            {
+              "ref": "Mat.20.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׂכִיר",
+      "pos": "adjective",
+      "gloss": "hired; hired man, hireling",
+      "bdb": [
+        "u.bk.ae"
+      ],
+      "cognate_ids": [
+        "phn-skr",
+        "uga-skr"
+      ],
+      "summary": "Hired, and as a noun the hired man, a free worker paid by the day or the year. The law sets him beside the sojourner and apart from the slave and the household, and guards his wage.",
+      "senses": [
+        {
+          "id": "hired",
+          "gloss": "hired (of a beast or thing)",
+          "definition": "Taken for hire, not owned.",
+          "evidence": [
+            {
+              "ref": "Exo.22.14",
+              "role": "defining",
+              "note": "A borrowed beast: “if it was שָׂכִיר, it came for its hire”."
+            },
+            {
+              "ref": "Isa.7.20",
+              "role": "defining",
+              "note": "“The Lord will shave with a razor that is hired (הַשְּׂכִירָה) beyond the River, with the king of Assyria”: Assyria, whom Ahaz paid to come against his enemies (2Ki 16:7–8), is the razor."
+            }
+          ]
+        },
+        {
+          "id": "hired-man",
+          "gloss": "hired man, hireling",
+          "definition": "A man working for another for wages, free, not a slave, and not of the household: his wage is owed by the day, and his days are counted.",
+          "evidence": [
+            {
+              "ref": "Lev.19.13",
+              "role": "defining",
+              "note": "“The wage of a שָׂכִיר shall not stay with you all night until the morning.”"
+            },
+            {
+              "ref": "Deu.24.14",
+              "role": "defining",
+              "note": "“You shall not oppress a שָׂכִיר who is poor and needy, of your brothers or of your sojourners.”"
+            },
+            {
+              "ref": "Lev.25.39",
+              "to": "Lev.25.40",
+              "role": "defining",
+              "note": "A brother who sells himself to you: “you shall not make him serve the service of a slave; as a שָׂכִיר, as a sojourner he shall be with you”."
+            },
+            {
+              "ref": "Lev.25.53",
+              "note": "“As a שָׂכִיר year by year he shall be with him; he shall not rule over him with harshness.”"
+            },
+            {
+              "ref": "Lev.25.50"
+            },
+            {
+              "ref": "Lev.25.6",
+              "note": "The sabbath year’s growth is food for the household and for the שָׂכִיר and sojourner."
+            },
+            {
+              "ref": "Exo.12.45",
+              "role": "defining",
+              "note": "“A sojourner and a שָׂכִיר shall not eat of” the Passover: outside the household that the bought slave, circumcised, belongs to (Exo 12:44)."
+            },
+            {
+              "ref": "Lev.22.10",
+              "note": "Nor of the holy things: “a sojourner of the priest, or a שָׂכִיר”."
+            },
+            {
+              "ref": "Deu.15.18"
+            },
+            {
+              "ref": "Mal.3.5",
+              "role": "defining",
+              "note": "Yahweh a swift witness “against those who oppress the שְׂכַר שָׂכִיר, the widow and the orphan”."
+            },
+            {
+              "ref": "Job.7.1",
+              "to": "Job.7.2",
+              "role": "defining",
+              "note": "“Are not his days like the days of a שָׂכִיר? As a slave pants for shade, and as a שָׂכִיר waits for his wage (פָּעֳלוֹ).”"
+            },
+            {
+              "ref": "Job.14.6",
+              "note": "“Look away from him … till he fulfils, as a שָׂכִיר, his day.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "years-of-hireling",
+              "gloss": "as the years of a hireling: exactly counted",
+              "definition": "A hired man’s term is reckoned to the day, neither more nor less; so a time Yahweh fixes for judgment.",
+              "evidence": [
+                {
+                  "ref": "Isa.16.14",
+                  "role": "defining",
+                  "note": "“Within three years, as the years of a שָׂכִיר, the glory of Moab shall be brought low.”"
+                },
+                {
+                  "ref": "Isa.21.16",
+                  "note": "“Within a year, as the years of a שָׂכִיר, all the glory of Kedar shall fail.”"
+                }
+              ]
+            },
+            {
+              "id": "mercenary",
+              "gloss": "hired soldier",
+              "definition": "A soldier fighting for pay.",
+              "evidence": [
+                {
+                  "ref": "Jer.46.21",
+                  "role": "defining",
+                  "note": "Egypt’s “hired men in her midst are like fatted calves; they too have turned and fled”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μισθωτός",
+          "gloss": "hired man, hireling",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.25.40, שָׂכִיר → μισθωτός; renders it about eleven times"
+            },
+            {
+              "ref": "Jhn.10.12",
+              "to": "Jhn.10.13",
+              "role": "defining",
+              "note": "“The μισθωτός, who is not the shepherd, whose own the sheep are not, sees the wolf coming and leaves the sheep and flees … because he is a μισθωτός and does not care for the sheep.”"
+            },
+            {
+              "ref": "Mrk.1.20",
+              "note": "James and John left their father in the boat with the μισθωτῶν."
+            }
+          ]
+        },
+        {
+          "lemma": "μίσθιος",
+          "gloss": "hired servant",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.7.1, שָׂכִיר → μισθίου"
+            },
+            {
+              "ref": "Luk.15.19",
+              "role": "defining",
+              "note": "The son returning: “make me as one of your μισθίων”: the place Lev 25:40 gives a poor brother, as a hired man and not a son."
+            },
+            {
+              "ref": "Luk.15.17"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תּוֹשָׁב",
+            "note": "The sojourner, the other free outsider living with a household.",
+            "evidence": [
+              {
+                "ref": "Lev.25.40",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.12.45"
+              },
+              {
+                "ref": "Lev.22.10"
+              },
+              {
+                "ref": "Lev.25.6"
+              }
+            ]
+          },
+          {
+            "lemma": "עֶבֶד",
+            "note": "The slave, beside the hired man as another who waits on a master.",
+            "evidence": [
+              {
+                "ref": "Job.7.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עֶבֶד",
+            "note": "A brother who sells himself is to serve as a שָׂכִיר, not with “the service of a slave”.",
+            "evidence": [
+              {
+                "ref": "Lev.25.39",
+                "to": "Lev.25.40",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כִּשְׁנֵי שָׂכִיר",
+            "gloss": "as the years of a hireling",
+            "evidence": [
+              {
+                "ref": "Isa.16.14"
+              },
+              {
+                "ref": "Isa.21.16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַשְׂכֹּרֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wages",
+      "bdb": [
+        "u.bk.ag"
+      ],
+      "cognate_ids": [
+        "phn-skr",
+        "uga-skr"
+      ],
+      "senses": [
+        {
+          "gloss": "wages",
+          "definition": "The pay agreed for service; once of the full wage Yahweh gives.",
+          "kin": [
+            "wage",
+            "reward"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.29.15",
+              "role": "defining",
+              "note": "Laban: “Because you are my brother, should you serve me for nothing? Tell me, what shall your מַשְׂכֹּרֶת be?”"
+            },
+            {
+              "ref": "Gen.31.7",
+              "note": "“Your father has cheated me and changed my מַשְׂכֹּרֶת ten times.”"
+            },
+            {
+              "ref": "Gen.31.41"
+            },
+            {
+              "ref": "Rut.2.12",
+              "role": "defining",
+              "note": "Boaz to Ruth: “Yahweh repay your work (פָּעֳלֵךְ), and may your מַשְׂכֹּרֶת be full from Yahweh the God of Israel, under whose wings you have come to take refuge.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׂכֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wage; hire",
+      "bdb": [
+        "u.bk.ab"
+      ],
+      "cognate_ids": [
+        "phn-skr",
+        "uga-skr"
+      ],
+      "summary": "A rarer form beside שָׂכָר, twice. In Proverbs it is plainly a wage; in Isaiah 19:10 the phrase עֹשֵׂי שֶׂכֶר may be “wage-workers”, or, if the word is a byform of סֶכֶר “dam” (the root סכר, “stop up”), “makers of dams”: the verse does not settle which.",
+      "senses": [
+        {
+          "gloss": "wage",
+          "definition": "What a man earns by what he does.",
+          "kin": [
+            "wage"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.11.18",
+              "role": "defining",
+              "note": "“The wicked earns a deceptive wage (פְּעֻלַּת שָׁקֶר), but he who sows righteousness a שֶׂכֶר of truth.”"
+            }
+          ]
+        },
+        {
+          "gloss": "hire (uncertain)",
+          "definition": "In Egypt’s ruin, those who “make שֶׂכֶר” are grieved in soul: either labourers working for hire or men who build weirs and dams on the Nile, beside the fishermen and flax-workers of Isa 19:8–9.",
+          "evidence": [
+            {
+              "ref": "Isa.19.10",
+              "note": "כָּל־עֹשֵׂי שֶׂכֶר אַגְמֵי־נָפֶשׁ: “all who make שֶׂכֶר, grieved of soul”."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-skr",
+      "lang": "phn",
+      "form": "𐤔𐤊𐤓",
+      "translit": "škr",
+      "gloss": "hire; reward",
+      "relation": "cognate",
+      "note": "King Kilamuwa of Samʾal “hired against him the king of Assyria”, as the Hebrew kings hire Arameans and Hittites; in Neo-Punic, the gods are asked to “reward” benefactors, the same two senses as שָׂכָר.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 459–460, Š-K-R",
+          "note": "“v. qal 1. HIRE, KAI 24.7/8 (Ph) … wškr ʾnk ʿly mlk ʾšr, ‘so I hired against him the king of Assyria’ … 2. REWARD, KAI 160.1 (NPu)”."
+        }
+      ]
+    },
+    {
+      "id": "uga-skr",
+      "lang": "uga",
+      "form": "𐎌𐎋𐎗",
+      "translit": "škr",
+      "gloss": "hire",
+      "relation": "cognate",
+      "note": "Ugaritic š answers to Hebrew שׂ here as in other roots. Another Ugaritic škr, “drunkenness”, belongs with Hebrew שֵׁכָר of שׁכר, not with this root.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 194, škr I “hire”",
+          "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-lexical-relationship_fisher-milton-charles_1969-04/page/n205"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000407 śkr [hire], UGC004017 škr [hire]"
+        }
+      ]
+    },
+    {
+      "id": "ar-shakara",
+      "lang": "ar",
+      "form": "شَكَرَ",
+      "translit": "šakara",
+      "gloss": "thank, be grateful for a benefit; (of God) requite, reward",
+      "relation": "possible",
+      "note": "Arabic š is the regular match of Hebrew שׂ. Lane’s sources define شُكْر as acknowledging a benefit, including “requiting the benefit according to its desert”, and of God “the requiting” of a man; الشَّكُور, of God, is “he who gives large reward for small works”. That is close to שָׂכָר as Yahweh’s reward, but the Arabic is thanks, not hire, so the tie is argued, not shown.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1584, root شكر, شَكَرَ لَهُ (n22809)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1585, root شكر, شُكْرٌ (n22815); شَكُورٌ (n22822)",
+          "note": "“شُكْرٌ on the part of God signifies The requiting and commending [a person]”; الشَّكُورُ “He who gives large reward for small, or few, works”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "reward-at-his-coming",
+      "statement": "The dead “know nothing, and they have no more שָׂכָר” (Ecc 9:5): the reward is not received at death. Isaiah ties it to Yahweh’s coming: “behold, the Lord Yahweh comes … his שָׂכָר is with him” (Isa 40:10), “behold, your salvation comes; his שָׂכָר is with him” (Isa 62:11). Jesus takes the words as his own: “Behold, I come quickly, and my μισθός is with me, to give to each as his work shall be” (Rev 22:12); the elders sing of “the time of the dead to be judged, and to give the μισθός to your servants the prophets” (Rev 11:18); and the one who helps the poor “will be repaid at the resurrection of the just” (Luk 14:14). From the verses: the wage God has promised is given when Christ returns and the dead are raised and judged, not before; until then they have none.",
+      "evidence": [
+        {
+          "ref": "Ecc.9.5"
+        },
+        {
+          "ref": "Isa.40.10"
+        },
+        {
+          "ref": "Isa.62.11"
+        },
+        {
+          "ref": "Rev.22.12"
+        },
+        {
+          "ref": "Rev.11.18"
+        },
+        {
+          "ref": "Luk.14.14"
+        }
+      ]
+    },
+    {
+      "topic": "wages-of-the-hired-man",
+      "statement": "The law makes the hired man’s wage a matter between the employer and Yahweh: it must not stay overnight (Lev 19:13); “in his day you shall give his שָׂכָר … lest he cry against you to Yahweh, and it be sin in you” (Deu 24:14–15). Malachi puts those who oppress the hired man’s wage beside sorcerers and adulterers as those Yahweh will witness against when he comes to judgment (Mal 3:5), and James says the wage kept back from the mowers “cries out, and the cries have entered the ears of the Lord of armies” (Jas 5:4), at “the coming of the Lord” (Jas 5:7–8). From the verses: withholding pay that is owed is not a private debt but a sin God hears and will judge.",
+      "evidence": [
+        {
+          "ref": "Lev.19.13"
+        },
+        {
+          "ref": "Deu.24.14",
+          "to": "Deu.24.15"
+        },
+        {
+          "ref": "Mal.3.5"
+        },
+        {
+          "ref": "Jas.5.4"
+        },
+        {
+          "ref": "Jas.5.7",
+          "to": "Jas.5.8"
+        }
+      ]
+    },
+    {
+      "topic": "thirty-pieces-of-silver",
+      "statement": "In Zechariah the shepherd who fed the flock asks his wage: “give me my שָׂכָר … and they weighed out my שָׂכָר, thirty of silver”, and Yahweh calls it in irony “the goodly price that I was priced at by them”, to be thrown to the potter in Yahweh’s house (Zec 11:12–13). The chief priests weighed out to Judas thirty pieces of silver for Jesus (Mat 26:15); the silver, thrown down in the temple, bought the potter’s field, and Matthew says this fulfilled the prophet’s word (Mat 27:3–10). From the verses: the leaders of the people valued Yahweh’s shepherd at a slave’s price (Exo 21:32), and that shepherd was Jesus.",
+      "evidence": [
+        {
+          "ref": "Zec.11.12",
+          "to": "Zec.11.13"
+        },
+        {
+          "ref": "Mat.26.15"
+        },
+        {
+          "ref": "Mat.27.3",
+          "to": "Mat.27.10"
+        },
+        {
+          "ref": "Exo.21.32"
+        }
+      ]
+    }
+  ],
+  "note": "The database keys the root שׂכר (BDB u.bk.*). The verb’s tokens are also filed under BDB o.bh.aa סָכַר “hire” (the spelling of Ezr 4:5), with the same occurrences, and the corpus morphology analyses every one of them under root סכר, so the verb carries \"root\": \"סכר\" for its uses to be counted (24, of which three, Deu 24:15 and Isa 40:10; 62:11, are the noun שְׂכָרוֹ sharing the spelling); this entry names only u.bk.aa. The verb is spelled with שׂ everywhere but Ezr 4:5; it is not the root סכר “stop up”. Left out, as not of this root: שְׂלָו “quail” (u.bk.ah), which BDB files next to this root but whose cognates (Syriac salway, Arabic salwā) point to its own root שׂלו; the names שַׂלְמוֹן/שַׂלְמָא Salmon/Salma (u.bk.ak, u.bk.ai) and שַׂלְמַי Shalmai (u.bk.al; also u.bo.ae, v.dy.aj), filed here only by BDB’s order, which belong with שַׂלְמָה/שִׂמְלָה “garment”. The name שָׂכָר Sachar (u.bk.ad; 1Ch 11:35; 26:4) has no name entry yet; BDB’s key also covers seven common-noun tokens (Num 18:31 etc.), so it is not named here. Issachar is names/issachar. Leads not followed: Fisher (p. 194) sets a Ge'ez passive participle “hired” beside Ugaritic škr, but the OCR is unreadable; check the scan and Leslau/Dillmann for Ge'ez śakara. No Aramaic or Syriac cognate found: Jewish Aramaic and Syriac hire with ʾgr; the Peshitta’s ܫܟܪ “make hideous” is another root. Akkadian has no škr “hire” in the Oracc glossaries (iškāru “work assignment” is not this root)."
+}
