@@ -1,0 +1,1966 @@
+{
+  "id": "natah",
+  "root": "נטה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "stretch",
+    "inclination",
+    "hand-of-god",
+    "creation",
+    "hearing",
+    "justice",
+    "tribes",
+    "staff",
+    "furniture"
+  ],
+  "gloss": "stretch out, spread; incline, turn aside; staff, tribe; bed; downward",
+  "summary": "The verb is to stretch a thing out from oneself or to lean it one way: a hand, staff or spear held out (Exo 7:19; Jos 8:18), a tent, a measuring line or the heavens spread out (Gen 12:8; Isa 40:22), and an ear, a heart or a path bent toward one side (Psa 31:3; Jos 24:23; Pro 4:27). Yahweh brought Israel out “with a strong hand and an outstretched arm” (Deu 26:8), and the same hand “is stretched out still” against them in their sin (Isa 9:11). Bent the wrong way it is to wrest judgment (Exo 23:6; Deu 16:19). Its nouns are מַטֶּה, the staff in the hand and then the tribe whose head bore it (Num 17:17–18; Num 1:4), מִטָּה, the bed one stretches out on, and מַטָּה, downward.",
+  "words": [
+    {
+      "lemma": "מַטֶּה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "staff, rod; tribe",
+      "bdb": [
+        "n.cz.ad"
+      ],
+      "cognate_ids": [
+        "uga-mt"
+      ],
+      "summary": "A staff held in the hand, a man’s mark and his authority (Gen 38:18), and so the tribe that his staff stood for: Num 17 sets one staff for each father’s house with the leader’s name written on it. Two-thirds of its uses are “tribe”, almost all in Numbers, Joshua and 1 Chronicles. How the staff goes back to the root’s “stretch out” is not shown by the text; the staff is often the thing Moses and Aaron stretch out (נְטֵה מַטְּךָ, Exo 8:1), but that is a pairing, not a derivation. Ugaritic mṭ “staff” shows the noun is old.",
+      "senses": [
+        {
+          "id": "staff-in-hand",
+          "gloss": "staff, rod (carried in the hand)",
+          "definition": "A walking or shepherd’s staff, held in the hand and owned by its bearer: given as a pledge that identifies its owner, and in the Exodus the staff by which Yahweh’s signs are done.",
+          "evidence": [
+            {
+              "ref": "Gen.38.18",
+              "role": "defining",
+              "note": "Tamar asks Judah for “your signet and your cord and your מַטֶּה that is in your hand” as a pledge; by them he is known (38:25)."
+            },
+            {
+              "ref": "Gen.38.25"
+            },
+            {
+              "ref": "Exo.4.2",
+              "role": "defining",
+              "note": "“What is that in your hand?” “A מַטֶּה”: Moses’ shepherd’s staff, which becomes a serpent and is taken up again (4:3–4)."
+            },
+            {
+              "ref": "Exo.4.17",
+              "note": "“Take this מַטֶּה in your hand, with which you shall do the signs.”"
+            },
+            {
+              "ref": "Exo.4.20",
+              "role": "defining",
+              "note": "“Moses took מַטֵּה הָאֱלֹהִים in his hand”: his own staff, now the staff of God."
+            },
+            {
+              "ref": "Exo.7.10",
+              "note": "Aaron’s staff becomes a serpent, and swallows the magicians’ staffs (7:12)."
+            },
+            {
+              "ref": "Exo.7.12"
+            },
+            {
+              "ref": "Exo.7.17",
+              "note": "“I will strike the waters with the מַטֶּה that is in my hand.”"
+            },
+            {
+              "ref": "Exo.8.12",
+              "note": "“Stretch out your staff and strike the dust of the earth.”"
+            },
+            {
+              "ref": "Exo.14.16",
+              "note": "“Lift up your staff and stretch out your hand over the sea and divide it.”"
+            },
+            {
+              "ref": "Exo.17.5",
+              "note": "At Horeb, “your staff with which you struck the river, take in your hand”; and at Rephidim with it in his hand on the hill (17:9)."
+            },
+            {
+              "ref": "Exo.17.9"
+            },
+            {
+              "ref": "Num.20.8",
+              "note": "“Take the staff … and speak to the rock”; Moses instead struck the rock with his staff twice (20:11)."
+            },
+            {
+              "ref": "Num.20.11"
+            },
+            {
+              "ref": "1Sa.14.27",
+              "note": "Jonathan puts out “the end of the מַטֶּה that was in his hand” and dips it in the honeycomb."
+            },
+            {
+              "ref": "Isa.28.27",
+              "note": "Cumin is beaten out בַּמַּטֶּה, with a rod, not threshed with a wheel."
+            }
+          ]
+        },
+        {
+          "id": "staff-of-tribe",
+          "gloss": "staff of a father’s house, bearing the leader’s name",
+          "definition": "The staff of each tribe’s head, standing for his tribe: twelve staffs, each with its leader’s name, laid before Yahweh, and the one he chose budded.",
+          "evidence": [
+            {
+              "ref": "Num.17.17",
+              "role": "defining",
+              "note": "“Take from them a מַטֶּה, a מַטֶּה for each father’s house, from all their leaders … twelve staffs; write each man’s name on his staff.”"
+            },
+            {
+              "ref": "Num.17.18",
+              "role": "defining",
+              "note": "“Write Aaron’s name on the staff of Levi; for one staff is for the head of their fathers’ house.”"
+            },
+            {
+              "ref": "Num.17.20",
+              "role": "defining",
+              "note": "“The man whom I choose, his staff shall bud.”"
+            },
+            {
+              "ref": "Num.17.23",
+              "note": "Aaron’s staff for the house of Levi had budded, blossomed and borne almonds."
+            },
+            {
+              "ref": "Num.17.25",
+              "note": "Kept before the testimony “as a sign against the rebels”."
+            },
+            {
+              "ref": "Ezk.7.10",
+              "note": "“The מַטֶּה has blossomed, pride has budded”: the figure of the budding staff turned to Israel’s judgment."
+            }
+          ]
+        },
+        {
+          "id": "tribe",
+          "gloss": "tribe",
+          "definition": "One of the tribes of Israel, as a body counted, ranked and given land: the people under one head and his staff.",
+          "evidence": [
+            {
+              "ref": "Num.1.4",
+              "role": "defining",
+              "note": "“With you shall be a man for each מַטֶּה, each one head of his fathers’ house.”"
+            },
+            {
+              "ref": "Num.1.21",
+              "note": "“Their numbered ones, of the tribe of Reuben”: the census formula of Num 1."
+            },
+            {
+              "ref": "Num.10.15",
+              "note": "In the order of march, “over the host of the tribe of the sons of Issachar was Nethanel son of Zuar”; so for each tribe through 10:27."
+            },
+            {
+              "ref": "Num.10.24"
+            },
+            {
+              "ref": "Num.13.2",
+              "note": "One man to spy out Canaan from each tribe of their fathers."
+            },
+            {
+              "ref": "Num.36.7",
+              "role": "defining",
+              "note": "“An inheritance shall not pass from מַטֶּה to מַטֶּה, for each of the sons of Israel shall keep to the inheritance of the tribe of his fathers.”"
+            },
+            {
+              "ref": "Num.36.9"
+            },
+            {
+              "ref": "Jos.14.2",
+              "note": "The land given by lot to the nine and a half tribes."
+            },
+            {
+              "ref": "Jos.21.4",
+              "note": "The Levites’ cities taken “from the tribe of Judah, and from the tribe of Simeon, and from the tribe of Benjamin”."
+            },
+            {
+              "ref": "1Ch.6.50"
+            },
+            {
+              "ref": "Exo.31.2",
+              "note": "Bezalel “of the tribe of Judah”."
+            },
+            {
+              "ref": "1Ki.7.14",
+              "note": "Hiram, “son of a widow of the tribe of Naphtali”."
+            }
+          ]
+        },
+        {
+          "id": "rod-of-power",
+          "gloss": "rod of rule or of chastisement",
+          "definition": "The staff as power used over others: the rod of a ruler, of an oppressor, or the rod by which Yahweh punishes, which he can lift or break.",
+          "evidence": [
+            {
+              "ref": "Isa.10.5",
+              "role": "defining",
+              "note": "“Woe to Assyria, the rod (שֵׁבֶט) of my anger; the מַטֶּה in their hand is my indignation.”"
+            },
+            {
+              "ref": "Isa.10.15",
+              "note": "As if a rod should wield those who lift it: the tool does not boast against the one who uses it."
+            },
+            {
+              "ref": "Isa.10.24",
+              "note": "The Assyrian “strikes you with the rod and lifts his staff against you after the manner of Egypt”; Yahweh will lift his own staff over the sea as in Egypt (10:26)."
+            },
+            {
+              "ref": "Isa.10.26"
+            },
+            {
+              "ref": "Isa.9.3",
+              "note": "“The staff of his shoulder, the rod of his oppressor, you have broken as in the day of Midian.”"
+            },
+            {
+              "ref": "Isa.14.5",
+              "role": "defining",
+              "note": "“Yahweh has broken the מַטֶּה of the wicked, the sceptre of rulers.”"
+            },
+            {
+              "ref": "Isa.30.32",
+              "note": "Every stroke of “the appointed staff” Yahweh lays on Assyria."
+            },
+            {
+              "ref": "Jer.48.17",
+              "note": "Over Moab: “How the strong staff is broken, the beautiful rod!”"
+            },
+            {
+              "ref": "Ezk.19.11",
+              "role": "defining",
+              "note": "The vine of Judah “had strong rods for the sceptres of rulers”; now “there is in her no strong rod, a sceptre to rule” (19:14)."
+            },
+            {
+              "ref": "Ezk.19.14"
+            },
+            {
+              "ref": "Ezk.7.11",
+              "note": "“Violence has risen up into a rod of wickedness.”"
+            },
+            {
+              "ref": "Mic.6.9",
+              "note": "“Hear the rod, and who has appointed it.”"
+            },
+            {
+              "ref": "Psa.110.2",
+              "role": "defining",
+              "note": "“Yahweh will send the rod of your strength out of Zion: rule in the midst of your enemies.”"
+            }
+          ]
+        },
+        {
+          "gloss": "shaft, spear",
+          "definition": "In Habakkuk’s song, rods used as weapons: shafts or spears.",
+          "evidence": [
+            {
+              "ref": "Hab.3.9",
+              "note": "“Your bow was made bare; sworn were the rods of the word.”"
+            },
+            {
+              "ref": "Hab.3.14",
+              "role": "defining",
+              "note": "“You pierced with his own shafts the head of his warriors.”"
+            }
+          ]
+        },
+        {
+          "gloss": "staff of bread",
+          "definition": "Bread as the staff a man leans on for life; to break it is to bring famine.",
+          "evidence": [
+            {
+              "ref": "Lev.26.26",
+              "role": "defining",
+              "note": "“When I break your staff of bread, ten women shall bake your bread in one oven, and give it back by weight, and you shall eat and not be satisfied.”"
+            },
+            {
+              "ref": "Ezk.4.16",
+              "note": "“I am breaking the staff of bread in Jerusalem; they shall eat bread by weight.”"
+            },
+            {
+              "ref": "Ezk.5.16"
+            },
+            {
+              "ref": "Ezk.14.13",
+              "note": "“I stretch out my hand against it and break its staff of bread and send famine on it.”"
+            },
+            {
+              "ref": "Psa.105.16",
+              "role": "defining",
+              "note": "“He called a famine on the land; he broke every staff of bread.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שֵׁבֶט",
+            "note": "The other word that is both “rod” and “tribe”, set beside it of a ruler’s or oppressor’s rod.",
+            "evidence": [
+              {
+                "ref": "Isa.10.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.14.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.9.3"
+              },
+              {
+                "ref": "Isa.10.24"
+              },
+              {
+                "ref": "Ezk.19.11"
+              }
+            ]
+          },
+          {
+            "lemma": "מַקֵּל",
+            "note": "“Rod, stick”, beside it over Moab’s broken might.",
+            "evidence": [
+              {
+                "ref": "Jer.48.17",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מַטֵּה הָאֱלֹהִים",
+            "gloss": "the staff of God",
+            "evidence": [
+              {
+                "ref": "Exo.4.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.17.9"
+              }
+            ]
+          },
+          {
+            "phrase": "מַטֵּה לֶחֶם",
+            "gloss": "the staff of bread",
+            "evidence": [
+              {
+                "ref": "Lev.26.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.105.16"
+              },
+              {
+                "ref": "Ezk.4.16"
+              }
+            ]
+          },
+          {
+            "phrase": "רָאשֵׁי הַמַּטּוֹת",
+            "gloss": "the heads of the tribes",
+            "evidence": [
+              {
+                "ref": "Num.30.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.14.1"
+              },
+              {
+                "ref": "1Ki.8.1"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "φυλή",
+          "gloss": "tribe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מַטֶּה → φυλή ×163 (MACULA alignment); Num.1.4, Num.10.15"
+            },
+            {
+              "ref": "Heb.7.14",
+              "role": "defining",
+              "note": "“Our Lord sprang out of Judah, of which φυλή Moses spoke nothing concerning priesthood.”"
+            },
+            {
+              "ref": "Rev.5.5",
+              "note": "“The lion of the φυλή of Judah.”"
+            },
+            {
+              "ref": "Rev.7.4",
+              "note": "Sealed “of every φυλή of the sons of Israel”, the tribes named one by one (7:5–8)."
+            },
+            {
+              "ref": "Rom.11.1",
+              "note": "Paul, “of the φυλή of Benjamin”."
+            },
+            {
+              "ref": "Luk.2.36",
+              "note": "Anna, “of the φυλή of Asher”."
+            }
+          ]
+        },
+        {
+          "lemma": "ῥάβδος",
+          "gloss": "staff, rod",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מַטֶּה → ῥάβδος ×21 (MACULA alignment); Exo.4.2, Num.17.21, Psa.110.2"
+            },
+            {
+              "ref": "Heb.9.4",
+              "role": "defining",
+              "note": "In the ark, “Aaron’s ῥάβδος that budded” (Num 17:23, 25)."
+            },
+            {
+              "ref": "Heb.11.21",
+              "note": "Jacob “worshipped on the top of his ῥάβδος”: Hebrews follows the Greek of Gen 47:31, which reads the consonants המטה as מַטֶּה “staff”, where the pointed text has מִטָּה “bed”."
+            },
+            {
+              "ref": "Mat.10.10",
+              "note": "The twelve are sent with no bag, no sandals, no ῥάβδος."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָטָה",
+      "pos": "verb",
+      "gloss": "stretch out, spread; incline, turn aside",
+      "bdb": [
+        "n.cz.aa"
+      ],
+      "cognate_ids": [
+        "arc-netei",
+        "ar-nita"
+      ],
+      "summary": "To put a thing out from oneself in one direction: stretched toward something (a hand, a staff), spread over something (a tent, the heavens), or leaned and bent aside from the straight (a path, a heart, a judgment). The qal is used both ways, transitive and intransitive; the hiphil is mostly to make something incline or turn, above all the ear and the heart.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "stretch out (hand, arm, staff); spread out, pitch (tent, heavens, line); turn aside, incline; decline (of day or shadow)",
+          "senses": [
+            {
+              "id": "stretch-out-hand",
+              "gloss": "stretch out (the hand, a staff, a spear)",
+              "definition": "To hold out the hand or arm, or what is in it, toward or over something, to act on it: Moses and Aaron over Egypt and the sea, Joshua with his spear over Ai, and Yahweh against a people.",
+              "evidence": [
+                {
+                  "ref": "Exo.7.19",
+                  "role": "defining",
+                  "note": "“Take your staff and stretch out your hand over the waters of Egypt.”"
+                },
+                {
+                  "ref": "Exo.8.12",
+                  "note": "“Stretch out your staff and strike the dust of the land.”"
+                },
+                {
+                  "ref": "Exo.10.22",
+                  "note": "Moses stretched out his hand toward the heavens, and there was thick darkness three days."
+                },
+                {
+                  "ref": "Exo.14.21",
+                  "role": "defining",
+                  "note": "“Moses stretched out his hand over the sea, and Yahweh drove the sea back”; and again over the sea to bring it back (14:26–27)."
+                },
+                {
+                  "ref": "Exo.14.27"
+                },
+                {
+                  "ref": "Jos.8.18",
+                  "role": "defining",
+                  "note": "“Stretch out the spear that is in your hand toward Ai”; Joshua did not draw back his hand until all Ai was destroyed (8:26)."
+                },
+                {
+                  "ref": "Jos.8.26"
+                },
+                {
+                  "ref": "Exo.15.12",
+                  "note": "“You stretched out your right hand; the earth swallowed them.”"
+                },
+                {
+                  "ref": "Exo.7.5",
+                  "note": "“The Egyptians shall know that I am Yahweh when I stretch out my hand on Egypt.”"
+                },
+                {
+                  "ref": "Isa.14.26",
+                  "role": "defining",
+                  "note": "“This is the hand that is stretched out over all the nations … his hand is stretched out, and who shall turn it back?” (14:27)."
+                },
+                {
+                  "ref": "Isa.14.27"
+                },
+                {
+                  "ref": "Ezk.25.7",
+                  "note": "“I have stretched out my hand against you”: so of Ammon, Edom and Philistia (25:13, 16)."
+                },
+                {
+                  "ref": "Zep.1.4"
+                },
+                {
+                  "ref": "1Ch.21.16",
+                  "note": "The angel of Yahweh “with a drawn sword in his hand stretched out over Jerusalem”."
+                },
+                {
+                  "ref": "Job.15.25",
+                  "note": "The wicked man “stretched out his hand against God”."
+                },
+                {
+                  "ref": "Pro.1.24",
+                  "note": "Wisdom: “I stretched out my hand and no one regarded.”"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "outstretched-arm",
+                  "gloss": "outstretched (arm, hand), of Yahweh’s power",
+                  "definition": "The passive participle נְטוּיָה, of Yahweh’s arm held out in power: to deliver Israel from Egypt, to make heaven and earth, and, turned against Israel, to punish them.",
+                  "evidence": [
+                    {
+                      "ref": "Exo.6.6",
+                      "role": "defining",
+                      "note": "“I will redeem you with an outstretched arm and with great judgments.”"
+                    },
+                    {
+                      "ref": "Deu.26.8",
+                      "role": "defining",
+                      "note": "“Yahweh brought us out of Egypt with a strong hand and an outstretched arm, with great terror, with signs and wonders.”"
+                    },
+                    {
+                      "ref": "Deu.4.34"
+                    },
+                    {
+                      "ref": "Deu.5.15",
+                      "note": "The reason given for the sabbath: “Yahweh your God brought you out from there with a strong hand and an outstretched arm.”"
+                    },
+                    {
+                      "ref": "1Ki.8.42",
+                      "note": "The foreigner will hear of “your strong hand and your outstretched arm”."
+                    },
+                    {
+                      "ref": "Psa.136.12"
+                    },
+                    {
+                      "ref": "Jer.32.17",
+                      "role": "defining",
+                      "note": "“You made the heavens and the earth by your great power and by your outstretched arm; nothing is too hard for you.”"
+                    },
+                    {
+                      "ref": "Jer.27.5"
+                    },
+                    {
+                      "ref": "Jer.21.5",
+                      "role": "defining",
+                      "note": "Against Judah: “I myself will fight against you with an outstretched hand and a strong arm, in anger.”"
+                    },
+                    {
+                      "ref": "Ezk.20.33",
+                      "note": "“With a strong hand and an outstretched arm and with fury poured out I will be king over you”, gathering Israel from the nations (20:34)."
+                    },
+                    {
+                      "ref": "Isa.9.11",
+                      "role": "defining",
+                      "note": "“For all this his anger is not turned away, and his hand is stretched out still”: the refrain of Isa 9:11, 16, 20; 10:4; 5:25."
+                    },
+                    {
+                      "ref": "Isa.5.25"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "spread-out",
+              "gloss": "spread out, pitch (a tent, the heavens, a line)",
+              "definition": "To stretch a thing out over a space so that it covers it: a tent pitched, the heavens spread out by Yahweh like a curtain, a measuring line stretched over a city to build or to destroy.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.8",
+                  "role": "defining",
+                  "note": "Abram “pitched his tent, with Bethel on the west and Ai on the east”."
+                },
+                {
+                  "ref": "Gen.26.25"
+                },
+                {
+                  "ref": "Exo.33.7",
+                  "note": "Moses pitched the tent outside the camp."
+                },
+                {
+                  "ref": "2Sa.6.17",
+                  "note": "The tent David pitched for the ark."
+                },
+                {
+                  "ref": "Jer.10.20",
+                  "note": "“There is no one to stretch out my tent any more.”"
+                },
+                {
+                  "ref": "Isa.40.22",
+                  "role": "defining",
+                  "note": "“Who stretches out the heavens like a curtain, and spreads them out like a tent to dwell in.”"
+                },
+                {
+                  "ref": "Isa.42.5",
+                  "role": "defining",
+                  "note": "“He who created the heavens and stretched them out, who spread out the earth … who gives breath to the people on it.”"
+                },
+                {
+                  "ref": "Isa.44.24",
+                  "note": "“I am Yahweh who makes all things, who alone stretched out the heavens.”"
+                },
+                {
+                  "ref": "Isa.45.12",
+                  "note": "“My hands stretched out the heavens.”"
+                },
+                {
+                  "ref": "Jer.10.12",
+                  "note": "“By his understanding he stretched out the heavens”; again Jer 51:15."
+                },
+                {
+                  "ref": "Zec.12.1",
+                  "note": "“Yahweh, who stretches out the heavens and lays the foundation of the earth and forms the spirit of man within him.”"
+                },
+                {
+                  "ref": "Psa.104.2",
+                  "note": "“Who stretches out the heavens like a curtain.”"
+                },
+                {
+                  "ref": "Job.9.8",
+                  "note": "“Who alone stretches out the heavens.”"
+                },
+                {
+                  "ref": "Job.26.7",
+                  "note": "“He stretches out the north over empty space, and hangs the earth upon nothing.”"
+                },
+                {
+                  "ref": "2Ki.21.13",
+                  "role": "defining",
+                  "note": "“I will stretch over Jerusalem the line of Samaria and the plummet of the house of Ahab”: measured for ruin."
+                },
+                {
+                  "ref": "Lam.2.8",
+                  "note": "“He stretched out a line; he did not turn back his hand from destroying.”"
+                },
+                {
+                  "ref": "Job.38.5",
+                  "note": "Who laid the earth’s measures, “or who stretched the line upon it?”"
+                },
+                {
+                  "ref": "Isa.44.13",
+                  "note": "The carpenter stretches out a line to shape an idol."
+                },
+                {
+                  "ref": "Jer.43.10",
+                  "note": "Nebuchadnezzar “will spread his canopy over them”."
+                }
+              ]
+            },
+            {
+              "id": "turn-aside",
+              "gloss": "turn aside, incline (from a way, toward a thing)",
+              "definition": "To bend off one’s straight course, to one side, toward someone or after something; with the heart, to lean toward and follow.",
+              "evidence": [
+                {
+                  "ref": "Num.20.17",
+                  "role": "defining",
+                  "note": "“We will go by the king’s highway; we will not turn aside to the right hand or the left.”"
+                },
+                {
+                  "ref": "Num.22.23",
+                  "note": "The donkey “turned aside out of the way and went into the field”; then in the narrow place there was “no way to turn aside right or left” (22:26)."
+                },
+                {
+                  "ref": "Num.22.26"
+                },
+                {
+                  "ref": "2Sa.2.21",
+                  "note": "Abner to Asahel: “Turn aside to your right hand or to your left.”"
+                },
+                {
+                  "ref": "Gen.38.1",
+                  "note": "Judah “turned in to” a man of Adullam; he turned to Tamar by the way (38:16)."
+                },
+                {
+                  "ref": "Pro.4.27",
+                  "role": "defining",
+                  "note": "“Do not turn to the right hand or to the left; remove your foot from evil.”"
+                },
+                {
+                  "ref": "Pro.4.5",
+                  "note": "“Do not turn from the words of my mouth.”"
+                },
+                {
+                  "ref": "Psa.44.19",
+                  "note": "“Our heart has not turned back, nor our steps turned aside from your way.”"
+                },
+                {
+                  "ref": "Psa.119.51",
+                  "note": "“I have not turned aside from your law”; again 119:157."
+                },
+                {
+                  "ref": "Job.31.7",
+                  "note": "“If my step has turned out of the way.”"
+                },
+                {
+                  "ref": "1Ki.11.9",
+                  "role": "defining",
+                  "note": "Yahweh was angry with Solomon “because his heart had turned from Yahweh”."
+                },
+                {
+                  "ref": "Jdg.9.3",
+                  "note": "“Their heart inclined after Abimelech.”"
+                },
+                {
+                  "ref": "1Ki.2.28",
+                  "note": "Joab “had turned after Adonijah”."
+                },
+                {
+                  "ref": "1Sa.8.3",
+                  "note": "Samuel’s sons “turned aside after gain, took bribes and perverted judgment”."
+                },
+                {
+                  "ref": "Exo.23.2",
+                  "note": "“Do not follow a multitude to do evil, nor testify in a cause to turn aside after a multitude.”"
+                },
+                {
+                  "ref": "Gen.49.15",
+                  "note": "Issachar “bowed his shoulder to bear”."
+                },
+                {
+                  "ref": "Psa.62.4",
+                  "note": "Like “a leaning wall”, קִיר נָטוּי, ready to fall."
+                },
+                {
+                  "ref": "Num.21.15",
+                  "note": "The slope of the wadis “that inclines to the dwelling of Ar”."
+                }
+              ]
+            },
+            {
+              "id": "bow-down",
+              "gloss": "bend down, bow (heavens); incline to (someone)",
+              "definition": "To bend down toward someone: Yahweh bowing the heavens to come down to his servant, or inclining to hear.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.10",
+                  "role": "defining",
+                  "note": "“He bowed the heavens and came down, and thick darkness was under his feet”; also 2Sa 22:10."
+                },
+                {
+                  "ref": "2Sa.22.10"
+                },
+                {
+                  "ref": "Psa.40.2",
+                  "role": "defining",
+                  "note": "“I waited patiently for Yahweh, and he inclined to me and heard my cry.”"
+                },
+                {
+                  "ref": "Psa.17.11",
+                  "note": "The wicked “set their eyes to bow down to the earth”."
+                }
+              ]
+            },
+            {
+              "id": "extend-decline",
+              "gloss": "extend, stretch on; decline (of day or shadow)",
+              "definition": "Of time and of what is held out to someone: the day stretching toward evening, a shadow lengthening; kindness or peace extended to a person.",
+              "evidence": [
+                {
+                  "ref": "Jdg.19.8",
+                  "role": "defining",
+                  "note": "“They lingered until the day declined.”"
+                },
+                {
+                  "ref": "Psa.102.12",
+                  "role": "defining",
+                  "note": "“My days are like a shadow that stretches out, and I wither like grass.”"
+                },
+                {
+                  "ref": "Psa.109.23",
+                  "note": "“I am gone like a shadow when it stretches out.”"
+                },
+                {
+                  "ref": "2Ki.20.10",
+                  "note": "“It is a light thing for the shadow to stretch out ten steps; rather let it go back.”"
+                },
+                {
+                  "ref": "Gen.39.21",
+                  "role": "defining",
+                  "note": "“Yahweh was with Joseph and extended kindness to him.”"
+                },
+                {
+                  "ref": "Isa.66.12",
+                  "note": "“I will extend peace to her like a river.”"
+                },
+                {
+                  "ref": "Psa.21.12",
+                  "note": "“They intended (stretched out) evil against you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be stretched out; lengthen",
+          "senses": [
+            {
+              "gloss": "be stretched out, spread; lengthen",
+              "definition": "Passive of the qal: valleys spread out, a line stretched, the shadows of evening lengthening.",
+              "evidence": [
+                {
+                  "ref": "Num.24.6",
+                  "role": "defining",
+                  "note": "Balaam: “Like valleys they are spread out, like gardens by a river.”"
+                },
+                {
+                  "ref": "Zec.1.16",
+                  "role": "defining",
+                  "note": "“My house shall be built in it, and a line shall be stretched out over Jerusalem”: measured to rebuild, the reverse of 2Ki 21:13."
+                },
+                {
+                  "ref": "Jer.6.4",
+                  "role": "defining",
+                  "note": "“Woe to us, for the day declines, for the shadows of evening are stretched out.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "incline, bend (ear, heart); stretch out, spread; turn aside, wrest (judgment)",
+          "senses": [
+            {
+              "id": "incline-ear",
+              "gloss": "incline the ear",
+              "definition": "To bend the ear toward a speaker: to listen with attention, said of Yahweh hearing prayer and of man hearing Yahweh and wisdom.",
+              "evidence": [
+                {
+                  "ref": "2Ki.19.16",
+                  "role": "defining",
+                  "note": "Hezekiah: “Incline your ear, Yahweh, and hear; open your eyes, Yahweh, and see.” Also Isa 37:17."
+                },
+                {
+                  "ref": "Psa.31.3",
+                  "note": "“Incline your ear to me; deliver me speedily.”"
+                },
+                {
+                  "ref": "Psa.17.6",
+                  "note": "“Incline your ear to me; hear my speech.”"
+                },
+                {
+                  "ref": "Psa.86.1"
+                },
+                {
+                  "ref": "Psa.116.2",
+                  "note": "“Because he has inclined his ear to me, I will call on him as long as I live.”"
+                },
+                {
+                  "ref": "Dan.9.18",
+                  "note": "“Incline your ear, my God, and hear”, not for our righteousness but for your great mercies."
+                },
+                {
+                  "ref": "Pro.4.20",
+                  "role": "defining",
+                  "note": "“My son, attend to my words; incline your ear to my sayings.”"
+                },
+                {
+                  "ref": "Pro.5.1"
+                },
+                {
+                  "ref": "Pro.22.17"
+                },
+                {
+                  "ref": "Psa.78.1",
+                  "note": "“Give ear, my people, to my law; incline your ears to the words of my mouth.”"
+                },
+                {
+                  "ref": "Isa.55.3",
+                  "role": "defining",
+                  "note": "“Incline your ear and come to me; hear, and your soul shall live; and I will make an everlasting covenant with you, the sure mercies of David.”"
+                },
+                {
+                  "ref": "Jer.7.24",
+                  "role": "defining",
+                  "note": "“They did not listen or incline their ear, but walked in the counsels of their evil heart”; and “stiffened their neck” (7:26)."
+                },
+                {
+                  "ref": "Jer.7.26"
+                },
+                {
+                  "ref": "Jer.17.23"
+                },
+                {
+                  "ref": "Jer.44.5"
+                }
+              ]
+            },
+            {
+              "id": "incline-heart",
+              "gloss": "incline, turn (the heart)",
+              "definition": "To bend the heart toward someone or something, so that it follows: toward Yahweh, or away after other gods.",
+              "evidence": [
+                {
+                  "ref": "Jos.24.23",
+                  "role": "defining",
+                  "note": "“Put away the foreign gods that are among you, and incline your heart to Yahweh, the God of Israel.”"
+                },
+                {
+                  "ref": "1Ki.8.58",
+                  "role": "defining",
+                  "note": "Solomon: “That he may incline our hearts to him, to walk in all his ways.”"
+                },
+                {
+                  "ref": "Psa.119.36",
+                  "role": "defining",
+                  "note": "“Incline my heart to your testimonies, and not to gain.”"
+                },
+                {
+                  "ref": "Psa.141.4",
+                  "note": "“Do not incline my heart to any evil thing.”"
+                },
+                {
+                  "ref": "1Ki.11.2",
+                  "role": "defining",
+                  "note": "Of the foreign nations: “Surely they will turn away your heart after their gods”; and Solomon’s wives turned away his heart (11:3–4)."
+                },
+                {
+                  "ref": "1Ki.11.4"
+                },
+                {
+                  "ref": "Pro.21.1",
+                  "note": "“The king’s heart is in Yahweh’s hand … he turns it wherever he will.”"
+                },
+                {
+                  "ref": "2Sa.19.15",
+                  "note": "David “bowed the heart of all the men of Judah as one man”."
+                },
+                {
+                  "ref": "Pro.7.21",
+                  "note": "The strange woman “turned him aside” with her fair speech."
+                },
+                {
+                  "ref": "Isa.44.20",
+                  "note": "“A deceived heart has turned him aside.”"
+                }
+              ]
+            },
+            {
+              "id": "stretch-spread-hiphil",
+              "gloss": "stretch out, spread out; bend down, let down",
+              "definition": "To stretch or spread a thing out, or to bend it down: a tent spread, curtains stretched, sackcloth spread on a rock, a jar let down from the shoulder, the heavens bowed.",
+              "evidence": [
+                {
+                  "ref": "2Sa.16.22",
+                  "role": "defining",
+                  "note": "“They spread a tent for Absalom on the roof.”"
+                },
+                {
+                  "ref": "Isa.54.2",
+                  "role": "defining",
+                  "note": "“Enlarge the place of your tent, and let them stretch out the curtains of your dwellings.”"
+                },
+                {
+                  "ref": "2Sa.21.10",
+                  "note": "Rizpah spread sackcloth on the rock."
+                },
+                {
+                  "ref": "Gen.24.14",
+                  "role": "defining",
+                  "note": "“Let down your jar, that I may drink.”"
+                },
+                {
+                  "ref": "Psa.144.5",
+                  "note": "“Bow your heavens, Yahweh, and come down.”"
+                },
+                {
+                  "ref": "Hos.11.4",
+                  "note": "“I bent down to him and fed him.”"
+                },
+                {
+                  "ref": "Isa.31.3",
+                  "note": "“Yahweh will stretch out his hand, and the helper will stumble.”"
+                },
+                {
+                  "ref": "Jer.6.12",
+                  "note": "“I will stretch out my hand on the inhabitants of the land.”"
+                },
+                {
+                  "ref": "Ezr.7.28",
+                  "note": "“Who has extended kindness to me before the king.” Also Ezr 9:9."
+                }
+              ]
+            },
+            {
+              "id": "recline",
+              "gloss": "stretch oneself out, recline",
+              "definition": "Of a person: to lay oneself out at length, to recline.",
+              "kin": [
+                "bed-couch"
+              ],
+              "evidence": [
+                {
+                  "ref": "Amo.2.8",
+                  "role": "defining",
+                  "note": "“They stretch themselves out (יַטּוּ) on garments taken in pledge beside every altar.”"
+                }
+              ]
+            },
+            {
+              "id": "turn-aside-hiphil",
+              "gloss": "turn aside, push aside (a person, a thing)",
+              "definition": "To make someone or something turn off its way: a donkey back to the road, the ark to another house, a man taken aside; the needy pushed out of their way.",
+              "evidence": [
+                {
+                  "ref": "Num.22.23",
+                  "role": "defining",
+                  "note": "Balaam struck the donkey “to turn her into the way”."
+                },
+                {
+                  "ref": "2Sa.6.10",
+                  "role": "defining",
+                  "note": "David “turned it aside to the house of Obed-edom”; also 1Ch 13:13."
+                },
+                {
+                  "ref": "2Sa.3.27",
+                  "note": "Joab “took him aside in the gate to speak with him quietly”."
+                },
+                {
+                  "ref": "Isa.30.11",
+                  "note": "“Get out of the way, turn aside out of the path.”"
+                },
+                {
+                  "ref": "Psa.27.9",
+                  "note": "“Do not turn your servant away in anger.”"
+                },
+                {
+                  "ref": "Psa.125.5",
+                  "note": "“Those who turn aside to their crooked ways.”"
+                },
+                {
+                  "ref": "Job.23.11",
+                  "note": "“I have kept his way and not turned aside.”"
+                },
+                {
+                  "ref": "Jer.5.25",
+                  "note": "“Your iniquities have turned these things away.”"
+                },
+                {
+                  "ref": "Amo.2.7",
+                  "note": "They “turn aside the way of the humble”."
+                },
+                {
+                  "ref": "Job.24.4",
+                  "note": "“They turn the needy out of the way.”"
+                }
+              ]
+            },
+            {
+              "id": "wrest-justice",
+              "gloss": "wrest, pervert (judgment); turn aside (the poor) in judgment",
+              "definition": "To bend judgment away from what is right, or to push a person aside from the justice due to him, usually by a bribe or for the strong against the weak.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.6",
+                  "role": "defining",
+                  "note": "“You shall not wrest the judgment of your poor in his cause.”"
+                },
+                {
+                  "ref": "Deu.16.19",
+                  "role": "defining",
+                  "note": "“You shall not wrest judgment; you shall not respect persons, nor take a bribe, for a bribe blinds the eyes of the wise.”"
+                },
+                {
+                  "ref": "Deu.24.17",
+                  "note": "“You shall not wrest the judgment of the stranger or of the fatherless.”"
+                },
+                {
+                  "ref": "Deu.27.19",
+                  "note": "“Cursed is he who wrests the judgment of the stranger, fatherless and widow.” The participle מַטֶּה here is filed under the noun’s key."
+                },
+                {
+                  "ref": "1Sa.8.3",
+                  "note": "Samuel’s sons “took bribes and perverted judgment”."
+                },
+                {
+                  "ref": "Pro.17.23",
+                  "role": "defining",
+                  "note": "“A wicked man takes a bribe from the bosom to pervert the ways of judgment.”"
+                },
+                {
+                  "ref": "Pro.18.5",
+                  "note": "“It is not good … to turn aside the righteous in judgment.”"
+                },
+                {
+                  "ref": "Isa.10.2",
+                  "note": "“To turn aside the needy from judgment and rob the poor of my people of their right.”"
+                },
+                {
+                  "ref": "Isa.29.21",
+                  "note": "They “turn aside the righteous with a thing of nought”."
+                },
+                {
+                  "ref": "Amo.5.12",
+                  "note": "“They take a bribe and turn aside the needy in the gate.”"
+                },
+                {
+                  "ref": "Mal.3.5",
+                  "note": "Against those “who turn aside the stranger”."
+                },
+                {
+                  "ref": "Lam.3.35",
+                  "note": "“To turn aside the right of a man before the face of the Most High … Yahweh does not approve.”"
+                },
+                {
+                  "ref": "Job.36.18",
+                  "note": "“Let not a great ransom turn you aside.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָתַח",
+            "note": "“Spread out”, beside it of the heavens spread like a tent.",
+            "evidence": [
+              {
+                "ref": "Isa.40.22",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "רָקַע",
+            "note": "“Beat out, spread out”, of the earth, beside stretching out the heavens.",
+            "evidence": [
+              {
+                "ref": "Isa.42.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.44.24"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַע",
+            "note": "“Hear”, the end of inclining the ear.",
+            "evidence": [
+              {
+                "ref": "2Ki.19.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.55.3"
+              },
+              {
+                "ref": "Psa.17.6"
+              }
+            ]
+          },
+          {
+            "lemma": "סוּר",
+            "note": "“Turn aside”, beside it of turning from the way or the words.",
+            "evidence": [
+              {
+                "ref": "Pro.4.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.4.5"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הִקְשָׁה עֹרֶף",
+            "note": "“Stiffen the neck”, set against inclining the ear.",
+            "evidence": [
+              {
+                "ref": "Jer.7.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.17.23"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּיָד חֲזָקָה וּבִזְרוֹעַ נְטוּיָה",
+            "gloss": "with a strong hand and an outstretched arm",
+            "evidence": [
+              {
+                "ref": "Deu.26.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.5.15"
+              },
+              {
+                "ref": "Psa.136.12"
+              },
+              {
+                "ref": "Ezk.20.33"
+              }
+            ]
+          },
+          {
+            "phrase": "וְעוֹד יָדוֹ נְטוּיָה",
+            "gloss": "and his hand is stretched out still",
+            "evidence": [
+              {
+                "ref": "Isa.9.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.9.16"
+              },
+              {
+                "ref": "Isa.9.20"
+              },
+              {
+                "ref": "Isa.10.4"
+              },
+              {
+                "ref": "Isa.5.25"
+              }
+            ]
+          },
+          {
+            "phrase": "נֹטֶה שָׁמַיִם",
+            "gloss": "who stretches out the heavens",
+            "evidence": [
+              {
+                "ref": "Isa.40.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.12.1"
+              },
+              {
+                "ref": "Psa.104.2"
+              },
+              {
+                "ref": "Job.9.8"
+              }
+            ]
+          },
+          {
+            "phrase": "הַטֵּה אָזְנְךָ",
+            "gloss": "incline your ear",
+            "evidence": [
+              {
+                "ref": "2Ki.19.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.31.3"
+              },
+              {
+                "ref": "Dan.9.18"
+              },
+              {
+                "ref": "Pro.22.17"
+              }
+            ]
+          },
+          {
+            "phrase": "הִטָּה מִשְׁפָּט",
+            "gloss": "wrest judgment",
+            "evidence": [
+              {
+                "ref": "Exo.23.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.16.19"
+              },
+              {
+                "ref": "1Sa.8.3"
+              }
+            ]
+          },
+          {
+            "phrase": "נָטָה אֹהֶל",
+            "gloss": "pitch a tent",
+            "evidence": [
+              {
+                "ref": "Gen.12.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.26.25"
+              },
+              {
+                "ref": "2Sa.6.17"
+              }
+            ]
+          },
+          {
+            "phrase": "נָטָה קַו",
+            "gloss": "stretch out a (measuring) line",
+            "evidence": [
+              {
+                "ref": "2Ki.21.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.2.8"
+              },
+              {
+                "ref": "Zec.1.16"
+              },
+              {
+                "ref": "Job.38.5"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ἐκτείνω",
+          "gloss": "stretch out",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נָטָה → ἐκτείνω ×32 (MACULA alignment); Exo.7.19, נְטֵה → ἔκτεινον"
+            },
+            {
+              "ref": "Act.4.30",
+              "note": "The disciples pray, “while you stretch out (ἐκτείνειν) your hand to heal”."
+            },
+            {
+              "ref": "Mat.12.13",
+              "note": "“Stretch out your hand”, to the man with the withered hand."
+            }
+          ]
+        },
+        {
+          "lemma": "ὑψηλός",
+          "gloss": "high, uplifted",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נְטוּיָה → ὑψηλός ×16 (ὑψηλῷ ×11, ὑψηλή ×5; MACULA alignment); Exo.6.6, Deu.5.15"
+            },
+            {
+              "ref": "Act.13.17",
+              "role": "defining",
+              "note": "Paul at Antioch: God “with an uplifted arm (μετὰ βραχίονος ὑψηλοῦ) brought them out” of Egypt, the outstretched arm of Exo 6:6 and Deu 26:8."
+            }
+          ]
+        },
+        {
+          "lemma": "κλίνω",
+          "gloss": "incline, bow; decline",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נָטָה → κλίνω ×16 (MACULA alignment); Psa.102.3, הַטֵּה → κλῖνον; Jdg.19.8, נְטוֹת → κλῖναι"
+            },
+            {
+              "ref": "Luk.24.29",
+              "note": "“The day has declined (κέκλικεν)”, as Jdg 19:8 of the day."
+            },
+            {
+              "ref": "Luk.9.58",
+              "note": "“The Son of man has nowhere to lay (κλίνῃ) his head.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐκκλίνω",
+          "gloss": "turn aside",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "נָטָה → ἐκκλίνω ×15 (MACULA alignment); Deu.16.19, תַטֶּה → ἐκκλινοῦσιν"
+            },
+            {
+              "ref": "Rom.16.17",
+              "note": "“Mark those who cause divisions … and turn away (ἐκκλίνατε) from them.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִטָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bed, couch; bier, litter",
+      "bdb": [
+        "n.cz.ae"
+      ],
+      "summary": "What one stretches out on: a bed for sleep, sickness and death, a couch for reclining at a feast, a bier, a carried litter. Its tie to the root is the hiphil’s “stretch oneself out” (Amo 2:8), where those who stretch out on pledged garments are set beside those on couches (Amo 6:4); no cognate has yet been found for it.",
+      "senses": [
+        {
+          "id": "bed-couch",
+          "gloss": "bed, couch",
+          "definition": "A raised bed to lie on, for sleep, sickness and dying; a couch for reclining at a meal.",
+          "kin": [
+            "recline"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.48.2",
+              "role": "defining",
+              "note": "Sick, “Israel strengthened himself and sat up on the bed”."
+            },
+            {
+              "ref": "Gen.49.33",
+              "role": "defining",
+              "note": "Jacob “gathered his feet into the bed, and breathed his last, and was gathered to his people”."
+            },
+            {
+              "ref": "Gen.47.31",
+              "note": "“Israel bowed himself on the head of the bed.” The Greek, and Heb 11:21 after it, read the same consonants as מַטֶּה “staff”."
+            },
+            {
+              "ref": "1Sa.19.13",
+              "note": "Michal laid the teraphim in the bed, and told Saul’s messengers David was sick (19:15)."
+            },
+            {
+              "ref": "1Ki.17.19",
+              "note": "Elijah laid the widow’s son on his own bed; Elisha likewise the Shunammite’s son (2Ki 4:21, 32)."
+            },
+            {
+              "ref": "2Ki.4.10",
+              "role": "defining",
+              "note": "“Let us set for him there a bed, and a table, and a chair, and a lampstand.”"
+            },
+            {
+              "ref": "2Ki.1.4",
+              "note": "“You shall not come down from the bed on which you have gone up, but shall surely die.”"
+            },
+            {
+              "ref": "1Ki.21.4",
+              "note": "Ahab “lay down on his bed and turned away his face”."
+            },
+            {
+              "ref": "Psa.6.7",
+              "note": "“All night I make my bed swim; I melt my couch with my tears.”"
+            },
+            {
+              "ref": "Pro.26.14",
+              "note": "“As the door turns on its hinges, so does the sluggard on his bed.”"
+            },
+            {
+              "ref": "Amo.6.4",
+              "role": "defining",
+              "note": "“Who lie on beds of ivory and stretch themselves on their couches.”"
+            },
+            {
+              "ref": "Amo.3.12",
+              "note": "Rescued like scraps from a lion’s mouth, “in the corner of a bed”."
+            },
+            {
+              "ref": "Est.7.8",
+              "note": "Haman fallen on the couch where Esther reclined at the banquet; couches of gold and silver at Ahasuerus’s feast (Est 1:6)."
+            },
+            {
+              "ref": "Est.1.6"
+            },
+            {
+              "ref": "Ezk.23.41",
+              "note": "“You sat on a stately couch, with a table prepared before it.”"
+            },
+            {
+              "ref": "Exo.7.28",
+              "note": "Frogs “into your bedroom and onto your bed”."
+            },
+            {
+              "ref": "2Ki.11.2",
+              "note": "Joash hidden “in the room of the beds”, the bedchamber; also 2Ch 22:11."
+            }
+          ]
+        },
+        {
+          "gloss": "bier; litter",
+          "definition": "A bed carried by others: the bier on which the dead is borne to burial, and a king’s litter.",
+          "evidence": [
+            {
+              "ref": "2Sa.3.31",
+              "role": "defining",
+              "note": "“King David followed the bier” of Abner."
+            },
+            {
+              "ref": "Sng.3.7",
+              "role": "defining",
+              "note": "“Behold Solomon’s litter; sixty mighty men are around it.”"
+            }
+          ],
+          "kin": [
+            "recline"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עֶרֶשׂ",
+            "note": "“Couch”, beside it.",
+            "evidence": [
+              {
+                "ref": "Amo.6.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.6.7"
+              },
+              {
+                "ref": "Amo.3.12"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κλίνη",
+          "gloss": "bed, couch",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מִטָּה → κλίνη ×12 (MACULA alignment); Gen.48.2, הַמִּטָּה → κλίνην"
+            },
+            {
+              "ref": "Mat.9.2",
+              "note": "A paralytic “lying on a κλίνη”."
+            },
+            {
+              "ref": "Luk.17.34",
+              "note": "“Two will be in one κλίνη; one will be taken and the other left.”"
+            },
+            {
+              "ref": "Mrk.4.21",
+              "note": "A lamp is not put under a bed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַטָּה",
+      "pos": "adverb",
+      "gloss": "downward, below, beneath",
+      "bdb": [
+        "n.cz.ac"
+      ],
+      "cognate_ids": [
+        "phn-lmt"
+      ],
+      "summary": "Toward or at the lower side, nearly always with לְ: “downward”, “below”, set against לְמַעְלָה “upward, above”. Its tie to the root is the bending down of the verb (Psa 18:10; 144:5); Phoenician lmṭ “below” is used exactly as Hebrew לְמַטָּה is, of roots below and fruit above.",
+      "senses": [
+        {
+          "id": "downward",
+          "gloss": "downward, below",
+          "definition": "To or at the lower part of a thing, or lower down in place or rank; the opposite of מַעְלָה.",
+          "kin": [
+            "bow-down"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ki.19.30",
+              "role": "defining",
+              "note": "“The remnant of the house of Judah shall again take root downward and bear fruit upward.” Also Isa 37:31."
+            },
+            {
+              "ref": "Isa.37.31"
+            },
+            {
+              "ref": "Deu.28.13",
+              "role": "defining",
+              "note": "“You shall be above only, and not beneath, if you obey.”"
+            },
+            {
+              "ref": "Deu.28.43",
+              "role": "defining",
+              "note": "“The stranger shall rise above you higher and higher, and you shall come down lower and lower”, מַטָּה מָּטָּה."
+            },
+            {
+              "ref": "Jer.31.37",
+              "note": "“If the heavens above can be measured, and the foundations of the earth below searched out.”"
+            },
+            {
+              "ref": "Ecc.3.21",
+              "role": "defining",
+              "note": "“Who knows the spirit of the sons of man, whether it goes upward, and the spirit of the beast, whether it goes downward to the earth?”"
+            },
+            {
+              "ref": "Pro.15.24",
+              "note": "“The way of life is upward for the wise, that he may turn away from the grave below.”"
+            },
+            {
+              "ref": "Ezk.1.27",
+              "note": "“From his waist upward … and from his waist downward”; also Ezk 8:2."
+            },
+            {
+              "ref": "Exo.27.5",
+              "note": "The grating of the altar set “beneath, under the ledge”."
+            },
+            {
+              "ref": "Exo.28.27",
+              "note": "Rings on the ephod’s shoulder pieces “at the lower part” of its front."
+            },
+            {
+              "ref": "1Ch.27.23",
+              "note": "David did not number those “twenty years old and under”."
+            },
+            {
+              "ref": "Ezr.9.13",
+              "note": "“You our God have punished us less than our iniquities deserve”: held below them."
+            },
+            {
+              "ref": "2Ch.32.30",
+              "note": "Hezekiah brought the waters of Gihon “down” to the west of the city of David."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מַעְלָה",
+            "note": "“Upward, above”, set against it.",
+            "evidence": [
+              {
+                "ref": "2Ki.19.30",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.28.43",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.3.21"
+              },
+              {
+                "ref": "Pro.15.24"
+              },
+              {
+                "ref": "Jer.31.37"
+              },
+              {
+                "ref": "Ezk.1.27"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κάτω",
+          "gloss": "below, downward",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "מַטָּה → κάτω ×10 (MACULA alignment); Ecc.3.21, מַטָּה → κάτω"
+            },
+            {
+              "ref": "Jhn.8.23",
+              "note": "“You are from beneath (κάτω); I am from above.”"
+            },
+            {
+              "ref": "Mat.27.51",
+              "note": "The veil torn “from top to bottom (κάτω)”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֻטָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "spreading, outspreading",
+      "bdb": [
+        "n.cz.af"
+      ],
+      "summary": "Once only, of the outspread wings of the Assyrian flood over Judah: a noun of the root’s “spread out”.",
+      "senses": [
+        {
+          "gloss": "outspreading (of wings)",
+          "definition": "The spreading out of wings to cover a breadth.",
+          "kin": [
+            "spread-out"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.8.8",
+              "role": "defining",
+              "note": "“The spreading out (מֻטּוֹת) of its wings shall fill the breadth of your land, Immanuel.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֻטֶּה",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "perversion (of justice)",
+      "bdb": [
+        "n.cz.ag"
+      ],
+      "summary": "Once only, of the city “full of perversion”, beside the land full of blood: a noun of the hiphil’s “wrest judgment”. One use fixes it only by its parallel.",
+      "senses": [
+        {
+          "gloss": "perversion, wresting (of justice)",
+          "definition": "What is bent from the right, justice turned aside.",
+          "kin": [
+            "wrest-justice"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.9.9",
+              "role": "defining",
+              "note": "“The land is full of blood, and the city full of מֻטֶּה; for they say, Yahweh has forsaken the land, and Yahweh does not see.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-netei",
+      "lang": "arc",
+      "form": "נְטֵי",
+      "translit": "nəṭē",
+      "gloss": "incline, lean; hang over; (aphel) bend, turn",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: of a tree whose branches hang over a neighbour’s ground, of an opinion that inclines toward the majority, and in the aphel of turning a discussion aside: the leaning and bending of the Hebrew verb.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְטֵי (N00556)",
+          "note": "“Snh. 26ᵃ … perhaps the opinion of the Lord inclines after the majority. Y. B. Bath. II … a tree the branches of which hung over that Roman’s ground … Af. אַטֵּי to bend.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-mt",
+      "lang": "uga",
+      "form": "𐎎𐎉",
+      "translit": "mṭ",
+      "gloss": "staff",
+      "relation": "cognate",
+      "note": "Ugaritic mṭ “staff” answers to מַטֶּה, the staff in the hand; the texts have it of a staff held in the hand (Aqhat, KTU 1.19 IV 7, mṭ ydh).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "Glossary, p. 192, mṭ",
+          "note": "“mṭ ‘staff’ (H. maṭṭæ)”. Read from the OCR text; page image not checked."
+        }
+      ]
+    },
+    {
+      "id": "phn-lmt",
+      "lang": "phn",
+      "form": "𐤋𐤌𐤈",
+      "translit": "lmṭ",
+      "gloss": "below",
+      "relation": "cognate",
+      "note": "Eshmunazar’s curse on whoever opens his coffin, “may they have no root below (lmṭ) nor fruit above (lmʿl)”, is the figure of 2Ki 19:30 and Isa 37:31 in the same two words. Neo-Punic lmmʿl mṭ “from top to bottom” has the bare mṭ.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 257, LMṬ (L- + MṬ)",
+          "note": "“adv. BELOW. KAI 14.11/12 (Ph) … ‘As for those persons, may they not have a root below nor fruit above.’” Read from the PDF’s text layer."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 258, LMMʿL … MṬ",
+          "note": "“adv. FROM TOP TO BOTTOM. KAI 145 III 12/14 (NPu).”"
+        }
+      ]
+    },
+    {
+      "id": "ar-nita",
+      "lang": "ar",
+      "form": "نِطَآءٌ",
+      "translit": "niṭāʾ",
+      "gloss": "distance, far extent",
+      "relation": "possible",
+      "note": "A root nṭw “stretch far” is proposed for Arabic and Hebrew together, but Lane’s nṭw has little in it: نِطَآءٌ “far extent” (a land destroying its people by its far extent) and اِنْتَطَتْ “the desert extended far”, which Lane takes as a transposition of اِنْتَاطَتْ from نوط “hang”. The far reach is near the Hebrew “stretch out”, but the root is thin and may not be its own.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3034, root نطو, نِطَآءٌ (n44022); اِنْتَطَتِ المَفَازَةُ (n44021)",
+          "note": "“Distance, or far extent; syn. بُعْدٌ.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2868, root نوط, انتاط (n40760)",
+          "note": "“It was, or became, distant, or remote, or far-extending … انتاطت المَفَازَةُ, and, by transposition, إِنْتَطَت, The desert extended far.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001110 nṭy [stretch] V: Arabic naTaA [far] (ARB041336), Hebrew naṭah (HEB004828)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "outstretched-arm",
+      "statement": "Yahweh promises, “I will redeem you with an outstretched arm” (Exo 6:6), and Israel confesses that he brought them out “with a strong hand and an outstretched arm” (Deu 26:8), the reason Deuteronomy gives for keeping the sabbath (Deu 5:15). By the same arm he made the heavens and the earth, “and nothing is too hard for you” (Jer 32:17; 27:5). Paul at Antioch tells the same deliverance: “with an uplifted arm he brought them out” (Act 13:17). But the arm is not Israel’s to command: against Judah’s sin Yahweh says “I myself will fight against you with an outstretched hand and a strong arm” (Jer 21:5), and Isaiah’s refrain is “for all this his anger is not turned away, and his hand is stretched out still” (Isa 9:11, 16, 20; 10:4). He will yet gather them from the nations “with a strong hand and an outstretched arm and with fury poured out”, to be king over them (Ezk 20:33–34). From the verses: the power that saved Israel and made the world is the same power that judges unfaithfulness, and his purpose with Israel is carried through by it either way.",
+      "evidence": [
+        {
+          "ref": "Exo.6.6"
+        },
+        {
+          "ref": "Deu.26.8"
+        },
+        {
+          "ref": "Deu.5.15"
+        },
+        {
+          "ref": "Jer.32.17"
+        },
+        {
+          "ref": "Jer.27.5"
+        },
+        {
+          "ref": "Act.13.17"
+        },
+        {
+          "ref": "Jer.21.5"
+        },
+        {
+          "ref": "Isa.9.11"
+        },
+        {
+          "ref": "Isa.9.16"
+        },
+        {
+          "ref": "Isa.9.20"
+        },
+        {
+          "ref": "Isa.10.4"
+        },
+        {
+          "ref": "Ezk.20.33",
+          "to": "Ezk.20.34"
+        }
+      ]
+    },
+    {
+      "topic": "creator",
+      "statement": "Yahweh is “he who created the heavens and stretched them out, who spread out the earth … who gives breath to the people on it” (Isa 42:5); “I am Yahweh who makes all things, who alone stretched out the heavens” (Isa 44:24); “my hands stretched out the heavens” (Isa 45:12); he “alone stretches out the heavens” and “hangs the earth upon nothing” (Job 9:8; 26:7). Zechariah joins the same acts to man’s life: Yahweh “stretches out the heavens and lays the foundation of the earth and forms the spirit of man within him” (Zec 12:1). From the verses: the heavens were spread by Yahweh’s own hand and by no one beside him, and he who did it is the giver of every man’s breath; Isaiah gives this as the ground for trusting his word against the idols (Isa 40:18–22; 44:24–25).",
+      "evidence": [
+        {
+          "ref": "Isa.42.5"
+        },
+        {
+          "ref": "Isa.44.24",
+          "to": "Isa.44.25"
+        },
+        {
+          "ref": "Isa.45.12"
+        },
+        {
+          "ref": "Job.9.8"
+        },
+        {
+          "ref": "Job.26.7"
+        },
+        {
+          "ref": "Zec.12.1"
+        },
+        {
+          "ref": "Isa.40.18",
+          "to": "Isa.40.22"
+        }
+      ]
+    },
+    {
+      "topic": "inclining-the-heart",
+      "statement": "Joshua tells Israel, “put away the foreign gods … and incline your heart to Yahweh” (Jos 24:23); Solomon prays that Yahweh “may incline our hearts to him, to walk in all his ways” (1Ki 8:58), yet his foreign wives “turned away his heart after other gods”, as Yahweh had warned (1Ki 11:2–4, 9). The psalmist asks, “incline my heart to your testimonies, and not to gain” (Psa 119:36). With the ear it is the same: “incline your ear and come to me; hear, and your soul shall live” (Isa 55:3), and Israel’s ruin is that “they did not listen or incline their ear, but stiffened their neck” (Jer 7:24–26). From the verses: the heart leans toward what it is turned to, man is told to turn it and also asks Yahweh to turn it, and life is promised to the one who inclines his ear to hear.",
+      "evidence": [
+        {
+          "ref": "Jos.24.23"
+        },
+        {
+          "ref": "1Ki.8.58"
+        },
+        {
+          "ref": "1Ki.11.2",
+          "to": "1Ki.11.4"
+        },
+        {
+          "ref": "1Ki.11.9"
+        },
+        {
+          "ref": "Psa.119.36"
+        },
+        {
+          "ref": "Isa.55.3"
+        },
+        {
+          "ref": "Jer.7.24",
+          "to": "Jer.7.26"
+        }
+      ]
+    },
+    {
+      "topic": "priesthood-chosen-by-god",
+      "statement": "After Korah’s rebellion each tribe’s leader laid up his staff, with his name on it, before the testimony, Aaron’s on the staff of Levi, and Yahweh said, “the man whom I choose, his staff shall bud”; Aaron’s budded, blossomed and bore almonds, and was kept “as a sign against the rebels” (Num 17:17–25). Hebrews names “Aaron’s staff that budded” among the things in the ark (Heb 9:4), and says “no one takes this honour to himself, but he who is called by God, as Aaron was”, so Christ was made high priest by God’s word in Psa 110 (Heb 5:4–6). That psalm also says, “Yahweh will send the staff of your strength out of Zion: rule in the midst of your enemies” (Psa 110:2). From the verses: the priest was chosen by God, not by the tribes, and shown by a dead staff made to live; and the priest after the order of Melchizedek holds the staff of rule as well.",
+      "evidence": [
+        {
+          "ref": "Num.17.17",
+          "to": "Num.17.25"
+        },
+        {
+          "ref": "Heb.9.4"
+        },
+        {
+          "ref": "Heb.5.4",
+          "to": "Heb.5.6"
+        },
+        {
+          "ref": "Psa.110.2"
+        },
+        {
+          "ref": "Psa.110.4"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "The Preacher says of men and beasts, “as one dies, so dies the other; they all have one breath, and man has no preeminence above a beast … all go to one place; all are of the dust, and all turn to dust again” (Ecc 3:19–20). He then asks, “who knows the spirit of the sons of man, whether it goes upward, and the spirit of the beast, whether it goes downward (לְמַטָּה) to the earth?” (Ecc 3:21). The question denies that anyone knows of a difference at death; the verse before it has said where both go. At death “the dust returns to the earth as it was, and the spirit returns to God who gave it” (Ecc 12:7), and “his breath goes forth, he returns to his earth; in that very day his thoughts perish” (Psa 146:4). From the verses: death does not carry man’s spirit upward to conscious life while the beast’s goes down; both die, and the hope is in God, who gave the breath.",
+      "evidence": [
+        {
+          "ref": "Ecc.3.19",
+          "to": "Ecc.3.21"
+        },
+        {
+          "ref": "Ecc.12.7"
+        },
+        {
+          "ref": "Psa.146.4"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Numbers 10 (מַטֶּה “tribe”, Num 10:15–27) and Leviticus 23. Words and keys: the verb n.cz.aa, מַטֶּה n.cz.ad, מִטָּה n.cz.ae, מַטָּה n.cz.ac, מֻטָּה n.cz.af, מֻטֶּה n.cz.ag. Left out: יֻטָּה Juttah (n.cz.ab, Jos 15:55; 21:16), a town of Judah, a place name, which cannot be a name entry; and the zero-token cross-references j.ax.ah, j.bj.af (Juttah), m.bq.an (מַט) and m.bq.aq. Counts: the verb’s key n.cz.aa holds nine “no stem” tokens that are the noun מַטֶּה (Exo 4:2; Num 17:17 ×2, 17:18, 17:21 ×2; 36:7; Isa 10:15; Mic 6:9); the noun’s key n.cz.ad holds one hiphil participle of the verb (Deu 27:19, מַטֶּה “who wrests”); so each word’s use count is slightly off. Gen 47:31 המטה is pointed מִטָּה “bed”; the Septuagint and Heb 11:21 read מַטֶּה “staff”; both are recorded and the reviewer may want a note on it. The link of מַטֶּה “staff” to the verb is not shown by the text; it is kept by the rule that every word of the spelling stays. Cognates: Ugaritic mṭ (Segert p. 192) read from OCR only (ṭ lost as t in the OCR); the KTU 1.19 IV 7 reference for mṭ ydh was found in Segert’s text selection, not checked against a Ugaritic dictionary. Krahmalkov pp. 257–258 read from the text layer only. Arabic نطو kept as possible. Not found: a Syriac cognate (SEDRA has no root nṭy; the Peshitta brief lists none); Akkadian naṭû in Oracc means “be suitable” and “beat”, not this root, and is left out. Not consulted: DULAT and Ugaritic texts for nṭy and for mṭt “bed”, Ge’ez (Dillmann, Leslau), Payne Smith. Open questions: (1) whether מַטָּה and מִטָּה should carry kin to the verb as given (bow-down, recline) or stand unlinked; (2) Mic 6:9 read as “rod” (chastisement) rather than “tribe”; (3) the mortality doctrine on Ecc 3:21 rests on one use of מַטָּה."
+}
