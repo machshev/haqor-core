@@ -1,0 +1,719 @@
+{
+  "id": "na",
+  "root": "נא",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "request",
+    "prayer",
+    "speech"
+  ],
+  "gloss": "please, I pray; now (particle of entreaty)",
+  "summary": "נָא is the particle of asking: set after a command, a wish or a \"let me\", it turns it into a request, \"please\", as when Moses asks Hobab \"do not leave us, please\" (Num 10:31). It stands after the imperative, the \"let me / let us\" form and the \"let him\" form, after אַל \"do not\", הִנֵּה \"see\" and אִם \"if\", and joined to an exclamation it makes אָנָּא, \"ah, please!\", the opening of earnest prayer (Exo 32:31; Psa 118:25). Superiors use it as well as suppliants, Yahweh himself among them (Gen 15:5; Isa 1:18; Mal 3:10), and in a taunt it presses rather than softens (Jdg 9:38; Isa 47:12). It has no root: no Hebrew verb or noun of these letters gives its sense, and the only kin in the related languages are possible ones, so the entry is keyed by its own consonants.",
+  "words": [
+    {
+      "lemma": "נָא",
+      "pos": "particle",
+      "bdb": [
+        "n.ab.aa"
+      ],
+      "cognate_ids": [
+        "uga-energic",
+        "syc-ne"
+      ],
+      "gloss": "please, I pray; now",
+      "summary": "Never inflected and never first in its clause: it leans on the word before it, most often a verb of command or wish (about 400 times, nearly three quarters of them in the narrative books, Genesis alone 74). English \"now\" is the older rendering; the verses show a request, not a time, and where a time is meant the text adds עַתָּה (Jdg 9:38; 1Sa 15:25). How it came to be is not known: it has no verb or noun behind it in Hebrew, and its likeness to the energic -n(a) that Ugaritic adds to the same wishing forms of the verb is only possible.",
+      "senses": [
+        {
+          "id": "please-command",
+          "gloss": "please (after a command)",
+          "definition": "After an imperative it makes the command a request: \"do this, please\". It is said by a servant to his master, a man to his wife, a guest to a host, and a worshipper to Yahweh.",
+          "evidence": [
+            {
+              "ref": "Gen.24.17",
+              "role": "defining",
+              "note": "Abraham's servant to Rebekah at the well: הַגְמִיאִינִי נָא מְעַט־מַיִם, \"let me sip, please, a little water from your jar\"; a stranger asking a favour."
+            },
+            {
+              "ref": "Gen.12.13",
+              "role": "defining",
+              "note": "Abram to Sarai: אִמְרִי־נָא אֲחֹתִי אָתְּ, \"say, please, that you are my sister\"."
+            },
+            {
+              "ref": "Num.12.13",
+              "role": "defining",
+              "note": "Moses for Miriam: אֵל נָא רְפָא נָא לָהּ, \"God, please, heal her, please\"; the particle twice in five words."
+            },
+            {
+              "ref": "Gen.50.17",
+              "note": "Joseph's brothers: \"forgive, please, the transgression of your brothers … and now forgive, please, the transgression of the servants of your father's God\"."
+            },
+            {
+              "ref": "1Sa.15.25",
+              "note": "Saul to Samuel: וְעַתָּה שָׂא נָא אֶת־חַטָּאתִי, \"and now, please, bear my sin\": עַתָּה \"now\" beside נָא, the time and the request each with its own word."
+            },
+            {
+              "ref": "Gen.19.2",
+              "note": "Lot to the two angels: \"turn aside, please, to your servant's house\"."
+            },
+            {
+              "ref": "Jer.37.20",
+              "note": "Jeremiah to Zedekiah: \"hear now, please, my lord the king; let my supplication fall, please, before you\"."
+            },
+            {
+              "ref": "Psa.118.25",
+              "role": "defining",
+              "note": "אָנָּא יַהְוֶה הוֹשִׁיעָה נָּא אָנָּא יַהְוֶה הַצְלִיחָה נָּא, \"Ah, Yahweh, save, please! Ah, Yahweh, prosper, please!\": the cry the crowds raise to Jesus as ὡσαννά (Mat 21:9)."
+            }
+          ]
+        },
+        {
+          "id": "please-let-me",
+          "gloss": "let me, let us … please (with the cohortative)",
+          "definition": "After a verb of the first person with the wishing -ה (\"let me go\"), it asks leave of the one addressed, or, where no one's leave is needed, marks a resolve: \"let me, now…\".",
+          "evidence": [
+            {
+              "ref": "Num.20.17",
+              "role": "defining",
+              "note": "Moses to the king of Edom: נַעְבְּרָה־נָּא בְאַרְצֶךָ, \"let us pass through your land, please\"; leave asked and refused (Num 20:18)."
+            },
+            {
+              "ref": "Deu.3.25",
+              "role": "defining",
+              "note": "Moses to Yahweh: אֶעְבְּרָה־נָּא וְאֶרְאֶה אֶת־הָאָרֶץ הַטּוֹבָה, \"let me cross over, please, and see the good land\"; Yahweh answers \"speak no more to me of this matter\" (Deu 3:26)."
+            },
+            {
+              "ref": "Exo.4.18",
+              "note": "Moses to Jethro: \"let me go, please, and return to my brothers\"; Jethro answers \"go in peace\"."
+            },
+            {
+              "ref": "Rut.2.2",
+              "note": "Ruth to Naomi: \"let me go, please, to the field and glean\"."
+            },
+            {
+              "ref": "Exo.3.3",
+              "note": "Moses to himself at the bush: אָסֻרָה־נָּא וְאֶרְאֶה, \"let me turn aside now and see\": a resolve, with no one to ask."
+            },
+            {
+              "ref": "Gen.18.21",
+              "note": "Yahweh: אֵרֲדָה־נָּא וְאֶרְאֶה, \"I will go down now and see\"."
+            },
+            {
+              "ref": "Isa.5.1",
+              "note": "אָשִׁירָה נָּא לִידִידִי, \"let me sing, please, for my beloved\": the song that asks its hearers to judge (Isa 5:3)."
+            }
+          ]
+        },
+        {
+          "id": "please-let-him",
+          "gloss": "let … please (with the jussive)",
+          "definition": "After a wish in the third person it makes the wish a request to the one who can grant it: \"let a little water be brought, please\"; in prayer, \"let your word be confirmed\".",
+          "evidence": [
+            {
+              "ref": "Gen.18.4",
+              "role": "defining",
+              "note": "Abraham to his three visitors: יֻקַּח־נָא מְעַט־מַיִם, \"let a little water be brought, please\"."
+            },
+            {
+              "ref": "1Ki.8.26",
+              "role": "defining",
+              "note": "Solomon: \"and now, God of Israel, let your word be confirmed, please, which you spoke to your servant David my father\"."
+            },
+            {
+              "ref": "Num.14.17",
+              "note": "Moses: \"and now let the power of Adonai be great, please, as you have spoken\"."
+            },
+            {
+              "ref": "Psa.118.2",
+              "note": "יֹאמַר־נָא יִשְׂרָאֵל, \"let Israel say, please: his steadfast love is forever\"; again Psa 124:1, 129:1."
+            },
+            {
+              "ref": "Gen.44.18",
+              "note": "Judah to Joseph: \"let your servant speak, please, a word in my lord's ears\"."
+            }
+          ]
+        },
+        {
+          "id": "please-do-not",
+          "gloss": "do not, please (אַל־נָא)",
+          "definition": "After אַל \"do not\" it makes a prohibition a plea: \"please do not\".",
+          "evidence": [
+            {
+              "ref": "Num.10.31",
+              "role": "defining",
+              "note": "Moses to Hobab: אַל־נָא תַּעֲזֹב אֹתָנוּ, \"do not leave us, please, for you know where we should camp in the wilderness, and you will be eyes for us\"."
+            },
+            {
+              "ref": "Gen.13.8",
+              "role": "defining",
+              "note": "Abram to Lot: \"let there be no strife, please, between me and you … for we are brothers\"."
+            },
+            {
+              "ref": "Num.12.11",
+              "note": "Aaron to Moses: \"please, my lord, do not lay sin on us\"; and \"do not let her be as one dead\" (Num 12:12)."
+            },
+            {
+              "ref": "Gen.18.30",
+              "note": "Abraham to Yahweh: \"let not Adonai be angry, please, and I will speak\"."
+            },
+            {
+              "ref": "Jon.1.14",
+              "note": "The sailors: \"ah, Yahweh, do not let us perish, please, for this man's life\"."
+            }
+          ]
+        },
+        {
+          "id": "see-now",
+          "gloss": "see now (הִנֵּה־נָא)",
+          "definition": "After הִנֵּה \"see, behold\" it asks the hearer to take note of something, mostly as the ground for a request that follows.",
+          "evidence": [
+            {
+              "ref": "Gen.12.11",
+              "role": "defining",
+              "note": "הִנֵּה־נָא יָדַעְתִּי, \"see now, I know that you are a woman beautiful to look at\": the ground of the request in Gen 12:13."
+            },
+            {
+              "ref": "Gen.16.2",
+              "role": "defining",
+              "note": "Sarai: \"see now, Yahweh has kept me from bearing; go in, please, to my maidservant\"."
+            },
+            {
+              "ref": "Gen.27.2",
+              "note": "Isaac: \"see now, I am old … now take, please, your weapons\" (Gen 27:2–3)."
+            },
+            {
+              "ref": "Job.40.15",
+              "note": "Yahweh to Job: הִנֵּה־נָא בְהֵמוֹת, \"see now Behemoth, which I made as I made you\"."
+            }
+          ]
+        },
+        {
+          "id": "if-please",
+          "gloss": "if, please (אִם־נָא)",
+          "definition": "After אִם \"if\" it makes a condition into a courteous request, above all in \"if, please, I have found favour in your eyes\", the opening of a request to a superior.",
+          "evidence": [
+            {
+              "ref": "Gen.47.29",
+              "role": "defining",
+              "note": "Jacob to Joseph: \"if, please, I have found favour in your eyes, put, please, your hand under my thigh\"."
+            },
+            {
+              "ref": "Exo.33.13",
+              "role": "defining",
+              "note": "Moses to Yahweh: \"and now, if, please, I have found favour in your eyes, make known to me, please, your way\"."
+            },
+            {
+              "ref": "Gen.18.3",
+              "note": "Abraham: \"Adonai, if, please, I have found favour in your eyes, do not pass by, please, from your servant\"."
+            },
+            {
+              "ref": "Gen.24.42",
+              "note": "אִם־יֶשְׁךָ־נָּא מַצְלִיחַ דַּרְכִּי, \"if, please, you are prospering my way\"."
+            }
+          ]
+        },
+        {
+          "id": "pressing-now",
+          "gloss": "now (pressing, in a lament or a taunt)",
+          "definition": "With a cry of woe, a question or a challenge it presses the word home rather than softening it: \"woe now to me\", \"where now is…?\", \"stand now with your enchantments\".",
+          "evidence": [
+            {
+              "ref": "Jdg.9.38",
+              "role": "defining",
+              "note": "Zebul to Gaal: \"where now is your mouth, with which you said, Who is Abimelech? … go out now, please, and fight them\": a taunt, with עַתָּה beside נָא."
+            },
+            {
+              "ref": "Isa.47.12",
+              "role": "defining",
+              "note": "To the daughter of Babylon: עִמְדִי־נָא בַחֲבָרַיִךְ, \"stand now with your enchantments … let them stand now and save you\" (Isa 47:12–13)."
+            },
+            {
+              "ref": "Jer.4.31",
+              "role": "defining",
+              "note": "The daughter of Zion: אוֹי־נָא לִי, \"woe now to me, for my soul faints before murderers\"."
+            },
+            {
+              "ref": "Psa.115.2",
+              "note": "\"Why should the nations say, Where now is their God?\""
+            },
+            {
+              "ref": "Mal.1.8",
+              "note": "\"Offer it, please, to your governor: will he be pleased with you?\": the blind and lame sacrifice."
+            },
+            {
+              "ref": "Lam.5.16",
+              "note": "\"The crown of our head has fallen; woe now to us, for we have sinned\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δή",
+          "gloss": "now, then, indeed (urging a command or wish)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 15:5 word 6",
+              "note": "δή for נָא in הַבֶּט־נָא הַשָּׁמַיְמָה, \"look now toward heaven\"; δή renders נָא 182 times in the alignment."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 118:25 words 4 and 8",
+              "note": "δή for both נָּא of הוֹשִׁיעָה נָּא and הַצְלִיחָה נָּא."
+            },
+            {
+              "ref": "Luk.2.15",
+              "note": "The shepherds: διέλθωμεν δὴ ἕως Βηθλεέμ, \"let us go now to Bethlehem\": δή after a \"let us\", as נָא."
+            },
+            {
+              "ref": "Act.13.2",
+              "note": "The holy Spirit: ἀφορίσατε δή μοι τὸν Βαρνάβαν καὶ τὸν Σαῦλον, \"set apart now for me Barnabas and Saul\"."
+            },
+            {
+              "ref": "Act.15.36",
+              "note": "Paul to Barnabas: ἐπιστρέψαντες δὴ ἐπισκεψώμεθα τοὺς ἀδελφούς, \"let us return now and visit the brothers\"."
+            },
+            {
+              "ref": "1Co.6.20",
+              "note": "δοξάσατε δὴ τὸν θεόν, \"glorify God, then, in your body\"."
+            }
+          ]
+        },
+        {
+          "lemma": "ὡσαννά",
+          "gloss": "hosanna, \"save, please!\"",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. ὡσαννά",
+              "note": "From Hebrew הוֹשֵׁעַ and נָא: the cry of Psa 118:25, הוֹשִׁיעָה נָּא. Its final syllable is this particle."
+            },
+            {
+              "ref": "Mat.21.9",
+              "role": "defining",
+              "note": "The crowds before and behind Jesus cry \"ὡσαννά to the Son of David! Blessed is he who comes in the name of the Lord!\": Psa 118:25–26, the prayer \"save, please\" cried to the king entering Jerusalem."
+            },
+            {
+              "ref": "Mat.21.15",
+              "note": "The children in the temple cry \"ὡσαννά to the Son of David\"."
+            },
+            {
+              "ref": "Mrk.11.9",
+              "to": "Mrk.11.10"
+            },
+            {
+              "ref": "Jhn.12.13"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עַתָּה",
+            "note": "\"now\": set before the request (וְעַתָּה … נָא, about 30 times), or after it (Jdg 9:38), the time and the asking each with its own word.",
+            "evidence": [
+              {
+                "ref": "1Sa.15.25"
+              },
+              {
+                "ref": "Num.22.6",
+                "note": "Balak: \"and now come, please, curse this people for me\"."
+              },
+              {
+                "ref": "Gen.50.17"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אִם־נָא מָצָאתִי חֵן בְּעֵינֶיךָ",
+            "gloss": "if, please, I have found favour in your eyes",
+            "evidence": [
+              {
+                "ref": "Gen.18.3"
+              },
+              {
+                "ref": "Gen.30.27"
+              },
+              {
+                "ref": "Gen.33.10"
+              },
+              {
+                "ref": "Gen.47.29"
+              },
+              {
+                "ref": "Gen.50.4"
+              },
+              {
+                "ref": "Exo.33.13"
+              },
+              {
+                "ref": "Exo.34.9"
+              },
+              {
+                "ref": "Jdg.6.17"
+              },
+              {
+                "ref": "1Sa.27.5"
+              }
+            ]
+          },
+          {
+            "phrase": "אַל־נָא",
+            "gloss": "please do not",
+            "evidence": [
+              {
+                "ref": "Num.10.31"
+              },
+              {
+                "ref": "Gen.13.8"
+              },
+              {
+                "ref": "Gen.19.7"
+              },
+              {
+                "ref": "Num.12.11"
+              },
+              {
+                "ref": "Num.12.12"
+              }
+            ]
+          },
+          {
+            "phrase": "הִנֵּה־נָא",
+            "gloss": "see now",
+            "evidence": [
+              {
+                "ref": "Gen.12.11"
+              },
+              {
+                "ref": "Gen.16.2"
+              },
+              {
+                "ref": "Gen.18.27"
+              },
+              {
+                "ref": "Gen.27.2"
+              },
+              {
+                "ref": "1Sa.16.15"
+              }
+            ]
+          },
+          {
+            "phrase": "הוֹשִׁיעָה נָּא",
+            "gloss": "save, please! (hosanna)",
+            "evidence": [
+              {
+                "ref": "Psa.118.25"
+              },
+              {
+                "ref": "Mat.21.9"
+              }
+            ]
+          },
+          {
+            "phrase": "אוֹי־נָא לִי",
+            "gloss": "woe now to me",
+            "evidence": [
+              {
+                "ref": "Jer.4.31"
+              },
+              {
+                "ref": "Jer.45.3"
+              },
+              {
+                "ref": "Lam.5.16"
+              }
+            ]
+          },
+          {
+            "phrase": "לְכָה־נָּא / לְכוּ־נָא",
+            "gloss": "come now, please",
+            "evidence": [
+              {
+                "ref": "Isa.1.18",
+                "note": "לְכוּ־נָא וְנִוָּכְחָה, \"come now, let us reason together, says Yahweh\"."
+              },
+              {
+                "ref": "Num.22.6"
+              },
+              {
+                "ref": "Ecc.2.1"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׁמְעוּ־נָא",
+            "gloss": "hear, please",
+            "evidence": [
+              {
+                "ref": "Num.12.6"
+              },
+              {
+                "ref": "Num.20.10"
+              },
+              {
+                "ref": "Isa.7.13"
+              },
+              {
+                "ref": "Mic.3.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אָנָּא",
+      "pos": "interjection",
+      "bdb": [
+        "a.ea.as"
+      ],
+      "gloss": "ah, please!; I beseech you",
+      "summary": "An exclamation of earnest entreaty, also spelled אָנָּה, which reads as the cry אָהּ \"ah!\" joined to נָא; it is set first in the plea, mostly before the divine name. Of its 13 uses, 12 are addressed to Yahweh (Moses, Hezekiah, Jonah's sailors and Jonah, the psalmists, Daniel, Nehemiah); the other is the brothers' plea to Joseph (Gen 50:17). That it is built from נָא is read from its form and its use; no verse or cognate shows it apart.",
+      "senses": [
+        {
+          "id": "ah-please",
+          "gloss": "ah, please!; I beseech you",
+          "definition": "Opens an earnest plea, to Yahweh above all, often with a confession of sin or an appeal to his covenant and mercy; an imperative with נָא or another plea follows.",
+          "kin": [
+            "please-command"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.32.31",
+              "role": "defining",
+              "note": "Moses: אָנָּא חָטָא הָעָם הַזֶּה חֲטָאָה גְדֹלָה, \"ah, please! this people has sinned a great sin\"; then \"and now, if you will forgive their sin…\" (Exo 32:32)."
+            },
+            {
+              "ref": "Gen.50.17",
+              "role": "defining",
+              "note": "The brothers through their messenger: אָנָּא שָׂא נָא פֶּשַׁע אַחֶיךָ, \"ah, please! forgive, please, the transgression of your brothers\"."
+            },
+            {
+              "ref": "Psa.118.25",
+              "role": "defining",
+              "note": "אָנָּא יַהְוֶה הוֹשִׁיעָה נָּא, \"ah, Yahweh, save, please!\": אָנָּא and נָא in one plea."
+            },
+            {
+              "ref": "Psa.116.4",
+              "note": "\"I called on the name of Yahweh: אָנָּה יַהְוֶה מַלְּטָה נַפְשִׁי, ah, Yahweh, deliver my soul!\"; again Psa 116:16, \"ah, Yahweh, I am your servant\"."
+            },
+            {
+              "ref": "2Ki.20.3",
+              "note": "Hezekiah: אָנָּה יַהְוֶה זְכָר־נָא, \"ah, Yahweh, remember, please, how I have walked before you\"; again Isa 38:3."
+            },
+            {
+              "ref": "Jon.1.14",
+              "note": "The sailors: \"ah, Yahweh, do not let us perish, please\"."
+            },
+            {
+              "ref": "Jon.4.2",
+              "note": "Jonah: \"ah, Yahweh, was not this my word …? for I knew that you are a gracious and merciful God\"."
+            },
+            {
+              "ref": "Dan.9.4",
+              "note": "Daniel's confession: \"ah, Adonai, the great and awesome God, keeping the covenant and the steadfast love…\"."
+            },
+            {
+              "ref": "Neh.1.5",
+              "note": "Nehemiah: \"ah, Yahweh God of heaven, the great and awesome God, who keeps the covenant\"; again Neh 1:11, \"ah, Adonai, let your ear be attentive, please\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δέομαι",
+          "gloss": "beg, beseech",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 32:31 word 6",
+              "note": "δέομαι for אָנָּא: \"I beseech you, this people has sinned\"."
+            },
+            {
+              "ref": "2Co.5.20",
+              "note": "\"As though God were pleading through us, we beseech (δεόμεθα) you on behalf of Christ: be reconciled to God\"."
+            },
+            {
+              "ref": "Luk.9.38",
+              "note": "A father to Jesus: \"Teacher, I beg (δέομαι) you, look on my son\"."
+            },
+            {
+              "ref": "Gal.4.12",
+              "note": "\"Brothers, I beseech (δέομαι) you, become as I am\"."
+            }
+          ]
+        },
+        {
+          "lemma": "ὦ",
+          "gloss": "O! (exclamation)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 118:25 words 1 and 5",
+              "note": "ὦ for both אָנָּא; also PSA 116:4, 116:16 and JON 4:2."
+            },
+            {
+              "ref": "Rom.11.33",
+              "note": "\"O (ὦ) the depth of the riches both of the wisdom and knowledge of God!\""
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "אָנָּא יַהְוֶה",
+            "gloss": "ah, Yahweh!",
+            "evidence": [
+              {
+                "ref": "Psa.118.25"
+              },
+              {
+                "ref": "Psa.116.4"
+              },
+              {
+                "ref": "2Ki.20.3"
+              },
+              {
+                "ref": "Isa.38.3"
+              },
+              {
+                "ref": "Jon.1.14"
+              },
+              {
+                "ref": "Jon.4.2"
+              },
+              {
+                "ref": "Neh.1.5"
+              }
+            ]
+          },
+          {
+            "phrase": "אָנָּא אֲדֹנָי",
+            "gloss": "ah, Adonai!",
+            "evidence": [
+              {
+                "ref": "Dan.9.4"
+              },
+              {
+                "ref": "Neh.1.11"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-energic",
+      "lang": "uga",
+      "form": "-𐎐",
+      "translit": "-n, /-an(na)/",
+      "gloss": "energic ending of the verb, mostly in wishes and exhortations",
+      "relation": "possible",
+      "note": "Ugaritic adds -n, read /-an/ or /-anna/, to the prefix verb in its wishing moods, \"may you fall down\", \"I will invoke\", and Segert's table of the volitive endings sets beside it a Hebrew -na (-nna) with a query. נָא follows the same forms in Hebrew: the imperative, the \"let me\" and the \"let him\". That is the only trace of an origin for the particle found here, and it is a likeness of use and sound, not a word of the same meaning, so it is kept as possible.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "pp. 62–63, §54.23, afformatives of the volitive moods",
+          "note": "\"energic -n / -an(na)\" against Arabic -an(na) and Hebrew \"-na (-nna) (?)\"; \"The function of these forms is mostly volitive.\""
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§64.34, energic",
+          "note": "tqln \"may you fall down\" (KTU 1.16:VI:57); iqran \"I will invoke\" (KTU 1.23:23); and §76.4, volitive clauses, for its use in commands and wishes."
+        }
+      ]
+    },
+    {
+      "id": "syc-ne",
+      "lang": "syc",
+      "form": "ܢܹܐ",
+      "translit": "nē",
+      "gloss": "please, if you please",
+      "relation": "possible",
+      "note": "The Aramaic side has no ordinary counterpart: Biblical Aramaic has no particle of entreaty, and the Peshitta's word for \"please\" is ܒܒܥܘ, from \"seek\". Wiktionary gives this word only in Assyrian Neo-Aramaic, as a learned borrowing from Classical Syriac; whether it is native to Syriac or taken from the Hebrew Bible has not been checked in a Syriac dictionary.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Assyrian Neo-Aramaic ܢܐ",
+          "url": "https://en.wiktionary.org/wiki/%DC%A2%DC%90",
+          "note": "\"please; if you please\"; \"learned borrowing from Classical Syriac\"; compares Hebrew נָא."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "yahweh-entreats",
+      "statement": "נָא is the word of one who asks, and Yahweh uses it to men. He tells Abram \"look now toward heaven\" (Gen 15:5) and \"take now your son, your only one, whom you love\" (Gen 22:2); he calls Judah to \"judge, please, between me and my vineyard\" (Isa 5:3), Israel to \"come now, and let us reason together\" (Isa 1:18) and to \"remember now\" what he did for them (Mic 6:5), and the remnant to \"test me now in this\" (Mal 3:10). The one who could simply command speaks as one who asks for a willing answer. The apostles speak of the gospel in the same way: \"as though God were pleading through us, we beseech (δεόμεθα) you on behalf of Christ: be reconciled to God\" (2Co 5:20), δέομαι being the word the Greek gives for Moses' אָנָּא (Exo 32:31).",
+      "evidence": [
+        {
+          "ref": "Gen.15.5"
+        },
+        {
+          "ref": "Gen.22.2"
+        },
+        {
+          "ref": "Isa.5.3"
+        },
+        {
+          "ref": "Isa.1.18"
+        },
+        {
+          "ref": "Mic.6.5"
+        },
+        {
+          "ref": "Mal.3.10"
+        },
+        {
+          "ref": "2Co.5.20"
+        },
+        {
+          "ref": "Exo.32.31"
+        }
+      ]
+    },
+    {
+      "topic": "prayer",
+      "statement": "Those who cry אָנָּא to Yahweh ask; they do not demand. Moses opens with the people's sin, \"ah, please! this people has sinned a great sin\" (Exo 32:31); Daniel and Nehemiah open with who Yahweh is, \"the great and awesome God, who keeps the covenant and steadfast love with those who love him\" (Dan 9:4; Neh 1:5), and go on to confess (Dan 9:5; Neh 1:6); Hezekiah asks to be remembered (2Ki 20:3); the psalmist asks for his soul to be delivered (Psa 116:4). So in scripture's prayers the plea stands on Yahweh's covenant and mercy and on the one praying owning his sin, as Jonah says: \"I knew that you are a gracious and merciful God\" (Jon 4:2).",
+      "evidence": [
+        {
+          "ref": "Exo.32.31"
+        },
+        {
+          "ref": "Dan.9.4"
+        },
+        {
+          "ref": "Dan.9.5"
+        },
+        {
+          "ref": "Neh.1.5"
+        },
+        {
+          "ref": "Neh.1.6"
+        },
+        {
+          "ref": "2Ki.20.3"
+        },
+        {
+          "ref": "Psa.116.4"
+        },
+        {
+          "ref": "Jon.4.2"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Num 10:31 (אַל־נָא תַּעֲזֹב אֹתָנוּ). Root investigation, as asked: (1) Hebrew: no verb or noun of these letters gives a sense the particle could grow from, as עַל from עלה. נאה \"be fitting\" (נָאוֶה) has no use that bridges to a request; נוא, the hiphil \"hinder, frustrate\" (Num 30:6; 32:7; Psa 33:10), is the opposite of asking. (2) Cognates: Wiktionary's Hebrew entry sets נָא under נ־ו־א and calls Arabic نِيَّة \"intention\" probably related, but that word is from نوى, whose third radical is y, not ʾ, and Hebrew נוא does not mean \"intend\"; rejected. Ge'ez naʿā \"come!\" (a lead from another lexicon) has an ʿ the Hebrew lacks; not followed. Lane's ن article notes only a redundant final نّ in verse; Lane does not describe the Arabic energic -an(na) in a citable place found here. Akkadian enna, inanna \"now\" (Oracc atae x000015470) were considered for the English \"now\" but scripture's use is a request, not a time (עַתָּה is added where a time is meant), so not recorded. The one trace is the Ugaritic energic -n(a) on the same wishing forms (Segert §54.23, p. 62, table, whose Hebrew column has \"-na (-nna) (?)\"); kept as possible. (3) Aramaic/Syriac: Biblical Aramaic has no counterpart; Jastrow's Aramaic נָא is \"I\" (= אֲנָא), another word; Syriac ܢܹܐ is from Wiktionary only (Payne Smith and SEDRA not checked; SEDRA's lexeme table has no ܢܐ). So no root is viable and the entry is keyed by its own consonants. Segert's page is read from the OCR's running heads (the table falls between the heads for pp. 62 and 64). Left out: נָא \"raw\" (Exo 12:9, n.df.ab), filed under ניא and matching Arabic نِيء \"raw\" (Wiktionary), another root; its key is left unclaimed. The corpus files every נָא token under both n.ab.aa and n.df.ab by spelling, so n.ab.aa's 405 tokens include Exo 12:9's adjective; the particle has 404. נֹא \"No, Thebes\" (n.ab.ac) is a place and another word. BDB's redirect keys n.ab.ab (see ניא) and a.ee.ad (אָנָּה, see אָנָּא) have no tokens and are left unclaimed. BDB files אָנָּא (a.ea.as) beside אָן, with the database root אמר from its page section; it is kept here as אָהּ + נָא, read from its form. Senses are illustrated, not exhaustive. Open leads: Payne Smith and Brockelmann for Syriac ܢܐ; Leslau for Ge'ez; DULAT and Huehnergard on the Ugaritic energic; a grammar on the Hebrew energic nun (-ennu) as kin of the particle."
+}
