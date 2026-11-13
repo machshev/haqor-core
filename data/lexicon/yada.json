@@ -1,0 +1,2873 @@
+{
+  "id": "yada",
+  "root": "ידע",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "knowledge",
+    "covenant",
+    "revelation",
+    "wisdom",
+    "marriage",
+    "death",
+    "feasts"
+  ],
+  "gloss": "know; perceive, learn; be acquainted with; make known; knowledge",
+  "summary": "יָדַע is to know: to be aware of a fact, to find it out by seeing or testing, to know a person or a place, to know how to do a thing, and, of a man and a woman, to lie together (Gen 4:1). Knowing in scripture is seldom bare information: Yahweh “knows” the ones he has chosen and owns (Amo 3:2; Jer 1:5), and to “know Yahweh” is to keep covenant with him and do justice (Jer 22:16; Hos 4:1, 6); he acts and keeps the feasts “so that you may know that I am Yahweh” and so that “your generations may know” what he did (Exo 6:7; Lev 23:43). The causative is to make known or teach, the passive to be known, and the nouns דַּעַת, דֵּעָה, דֵּעַ and מַדָּע are knowledge; the Aramaic of Daniel and Ezra and the Peshitta use the same verb, and Akkadian edû, Ugaritic and Phoenician ydʿ and Sabaic ydʿ all mean “know”.",
+  "words": [
+    {
+      "lemma": "יָדַע",
+      "pos": "verb",
+      "gloss": "know; find out, learn; be acquainted with; (hiphil) make known, teach; (niphal) be known",
+      "bdb": [
+        "j.au.aa"
+      ],
+      "cognate_ids": [
+        "akk-edu",
+        "uga-yda",
+        "phn-yda",
+        "arc-yeda"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "know; find out, learn; be acquainted with; know how; lie with",
+          "senses": [
+            {
+              "id": "know-fact",
+              "gloss": "know (a fact), be aware",
+              "definition": "To have in mind that something is so; with a negative, to be unaware of what is happening, even in oneself.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.16",
+                  "role": "defining",
+                  "note": "Jacob woke: “Surely Yahweh is in this place, and I did not know it.”"
+                },
+                {
+                  "ref": "Exo.34.29",
+                  "role": "defining",
+                  "note": "Moses לֹא־יָדַע that the skin of his face shone."
+                },
+                {
+                  "ref": "Jdg.16.20",
+                  "role": "defining",
+                  "note": "Samson did not know that Yahweh had turned from him."
+                },
+                {
+                  "ref": "Hos.7.9",
+                  "note": "Strangers have eaten his strength and he does not know it; grey hair is sprinkled on him and he does not know it."
+                },
+                {
+                  "ref": "Gen.3.7",
+                  "note": "Their eyes were opened “and they knew that they were naked”."
+                },
+                {
+                  "ref": "Hos.2.10",
+                  "note": "She did not know that it was I who gave her the grain, the wine and the oil."
+                },
+                {
+                  "ref": "Lev.5.17",
+                  "role": "defining",
+                  "note": "If a person sins “and does not know, he is guilty and shall bear his iniquity”: not knowing does not remove guilt."
+                },
+                {
+                  "ref": "Lev.5.3",
+                  "note": "Uncleanness hidden from him, “and he knows it, he is guilty”."
+                },
+                {
+                  "ref": "Lev.5.1",
+                  "note": "A witness who has seen “or known” and does not tell bears his iniquity."
+                },
+                {
+                  "ref": "Ecc.9.5",
+                  "role": "defining",
+                  "note": "“The living know that they will die, but the dead do not know anything.”"
+                },
+                {
+                  "ref": "Job.14.21",
+                  "note": "Of the dead man: his sons come to honour “and he does not know it”."
+                },
+                {
+                  "ref": "Job.19.25",
+                  "note": "“I know that my redeemer lives, and at the last he will stand upon the dust.”"
+                }
+              ]
+            },
+            {
+              "id": "find-out",
+              "gloss": "find out, learn, come to know",
+              "definition": "To come to know what was not known, by a sign, a test, a report, or by what is seen and kept in memory; and so to teach a coming generation by what it sees and does.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.11",
+                  "role": "defining",
+                  "note": "The dove came back with an olive leaf, “and Noah knew that the waters were abated”."
+                },
+                {
+                  "ref": "Gen.42.33",
+                  "role": "defining",
+                  "note": "“By this I shall know that you are honest men.”"
+                },
+                {
+                  "ref": "Gen.15.8",
+                  "note": "“By what shall I know that I shall inherit it?”"
+                },
+                {
+                  "ref": "Deu.18.21",
+                  "role": "defining",
+                  "note": "“How shall we know the word which Yahweh has not spoken?” Answered: by whether it comes to pass."
+                },
+                {
+                  "ref": "Jdg.6.37",
+                  "note": "Gideon’s fleece: “then I shall know that you will save Israel by my hand.”"
+                },
+                {
+                  "ref": "Gen.22.12",
+                  "role": "defining",
+                  "note": "“Now I know that you fear God, seeing you have not withheld your son.”"
+                },
+                {
+                  "ref": "Deu.8.2",
+                  "note": "Forty years in the wilderness “to test you, to know what was in your heart”."
+                },
+                {
+                  "ref": "Deu.13.4",
+                  "note": "Yahweh tests you by a false prophet “to know whether you love Yahweh your God”."
+                },
+                {
+                  "ref": "Lev.23.43",
+                  "role": "defining",
+                  "note": "Israel lives in booths seven days “so that your generations may know that I made the sons of Israel dwell in booths when I brought them out of the land of Egypt”: the feast teaches each generation what Yahweh did."
+                },
+                {
+                  "ref": "Psa.78.6",
+                  "note": "That the generation to come might know, sons yet to be born."
+                },
+                {
+                  "ref": "Deu.31.13",
+                  "note": "“Their sons, who have not known, shall hear and learn to fear Yahweh.”"
+                },
+                {
+                  "ref": "Num.14.34",
+                  "note": "Forty years for forty days, “and you shall know my opposition”."
+                }
+              ]
+            },
+            {
+              "id": "know-yahweh-acts",
+              "gloss": "know that I am Yahweh (by his acts)",
+              "definition": "To recognise Yahweh for who he is from what he does in judgement and in deliverance: the refrain of Exodus and Ezekiel, said of Israel and of the nations.",
+              "evidence": [
+                {
+                  "ref": "Exo.6.7",
+                  "role": "defining",
+                  "note": "“I will take you to me for a people … and you shall know that I am Yahweh your God who brings you out from under the burdens of Egypt.”"
+                },
+                {
+                  "ref": "Exo.7.5",
+                  "role": "defining",
+                  "note": "“The Egyptians shall know that I am Yahweh, when I stretch out my hand on Egypt.”"
+                },
+                {
+                  "ref": "Exo.14.4"
+                },
+                {
+                  "ref": "Exo.16.12",
+                  "note": "The quail and the manna: “and you shall know that I am Yahweh your God.”"
+                },
+                {
+                  "ref": "Exo.29.46"
+                },
+                {
+                  "ref": "Exo.31.13",
+                  "note": "The sabbath is a sign “to know that I am Yahweh who sanctifies you”."
+                },
+                {
+                  "ref": "Deu.4.39",
+                  "note": "“Know this day … that Yahweh, he is God in heaven above and on the earth beneath; there is no other.”"
+                },
+                {
+                  "ref": "1Sa.17.46",
+                  "note": "“That all the earth may know that there is a God in Israel.”"
+                },
+                {
+                  "ref": "1Ki.18.37",
+                  "note": "Elijah: “that this people may know that you, Yahweh, are God.”"
+                },
+                {
+                  "ref": "1Ki.20.28"
+                },
+                {
+                  "ref": "2Ki.19.19"
+                },
+                {
+                  "ref": "Isa.45.3",
+                  "note": "To Cyrus: “that you may know that I am Yahweh who calls you by your name.”"
+                },
+                {
+                  "ref": "Isa.49.23"
+                },
+                {
+                  "ref": "Ezk.6.7",
+                  "role": "defining",
+                  "note": "“The slain shall fall in your midst, and you shall know that I am Yahweh”: Ezekiel’s refrain, over seventy times."
+                },
+                {
+                  "ref": "Ezk.36.23",
+                  "note": "“The nations shall know that I am Yahweh, when I am sanctified in you before their eyes.”"
+                },
+                {
+                  "ref": "Ezk.37.13",
+                  "note": "“You shall know that I am Yahweh, when I have opened your graves.”"
+                },
+                {
+                  "ref": "Ezk.39.28"
+                },
+                {
+                  "ref": "Psa.46.11",
+                  "note": "“Be still and know that I am God.”"
+                },
+                {
+                  "ref": "Psa.83.19"
+                },
+                {
+                  "ref": "Jol.2.27"
+                }
+              ]
+            },
+            {
+              "id": "know-person",
+              "gloss": "know (a person or place), be acquainted with",
+              "definition": "To be familiar with someone or with a place: to know who he is, to know the way about it; with a negative, a stranger.",
+              "evidence": [
+                {
+                  "ref": "Gen.29.5",
+                  "role": "defining",
+                  "note": "“Do you know Laban the son of Nahor?” “We know him.”"
+                },
+                {
+                  "ref": "Exo.1.8",
+                  "role": "defining",
+                  "note": "A new king arose over Egypt “who did not know Joseph”; quoted in Act 7:18."
+                },
+                {
+                  "ref": "Num.10.31",
+                  "role": "defining",
+                  "note": "Moses to Hobab: “you know our camping places in the wilderness, and you shall be to us for eyes”: familiar with the land."
+                },
+                {
+                  "ref": "Deu.34.10",
+                  "note": "No prophet arose like Moses, “whom Yahweh knew face to face”."
+                },
+                {
+                  "ref": "Deu.34.6",
+                  "note": "No man knows his grave to this day."
+                },
+                {
+                  "ref": "Isa.1.3",
+                  "role": "defining",
+                  "note": "“The ox knows its owner and the donkey its master’s crib; Israel does not know, my people do not understand.”"
+                },
+                {
+                  "ref": "Rut.2.11",
+                  "note": "Ruth came “to a people whom you did not know before”."
+                },
+                {
+                  "ref": "Job.19.13",
+                  "note": "“Those who know me are wholly estranged from me.”"
+                }
+              ]
+            },
+            {
+              "id": "know-yahweh",
+              "gloss": "know Yahweh, own him as God, keep covenant",
+              "definition": "To know Yahweh as one’s God: to own him, serve him and walk in his ways, shown in justice and faithfulness; not to know him is to refuse him. “Other gods which you have not known” are gods Israel had no dealings with.",
+              "evidence": [
+                {
+                  "ref": "Jer.22.16",
+                  "role": "defining",
+                  "note": "Josiah judged the cause of the poor and needy: “Is not this to know me? says Yahweh.” (The infinitive הַדַּעַת.)"
+                },
+                {
+                  "ref": "Jer.9.23",
+                  "role": "defining",
+                  "note": "Let him who glories glory in this, “that he understands and knows me, that I am Yahweh who does lovingkindness, justice and righteousness”."
+                },
+                {
+                  "ref": "Exo.5.2",
+                  "role": "defining",
+                  "note": "Pharaoh: “Who is Yahweh, that I should obey his voice? I do not know Yahweh.”"
+                },
+                {
+                  "ref": "1Sa.2.12",
+                  "role": "defining",
+                  "note": "The sons of Eli, priests, “were sons of worthlessness; they did not know Yahweh”."
+                },
+                {
+                  "ref": "1Sa.3.7",
+                  "note": "Samuel did not yet know Yahweh: the word of Yahweh had not yet been revealed to him."
+                },
+                {
+                  "ref": "Jdg.2.10",
+                  "note": "Another generation arose “who did not know Yahweh, nor the work he had done for Israel”."
+                },
+                {
+                  "ref": "Jer.31.34",
+                  "role": "defining",
+                  "note": "“They shall no more teach … saying, Know Yahweh, for they shall all know me … for I will forgive their iniquity”; quoted in Heb 8:11."
+                },
+                {
+                  "ref": "Jer.24.7",
+                  "note": "“I will give them a heart to know me, that I am Yahweh.”"
+                },
+                {
+                  "ref": "Hos.2.22",
+                  "note": "“I will betroth you to me in faithfulness, and you shall know Yahweh.”"
+                },
+                {
+                  "ref": "Hos.6.3",
+                  "note": "“Let us know, let us press on to know Yahweh.”"
+                },
+                {
+                  "ref": "Hos.13.4",
+                  "note": "“You shall know no god but me, and there is no saviour beside me.”"
+                },
+                {
+                  "ref": "Psa.9.11",
+                  "note": "“Those who know your name will trust in you.”"
+                },
+                {
+                  "ref": "Psa.36.11"
+                },
+                {
+                  "ref": "Psa.79.6",
+                  "note": "The nations “that have not known you” and kingdoms that have not called on your name."
+                },
+                {
+                  "ref": "Psa.91.14",
+                  "note": "“I will set him on high, because he has known my name.”"
+                },
+                {
+                  "ref": "1Ch.28.9",
+                  "note": "“Know the God of your father, and serve him with a whole heart.”"
+                },
+                {
+                  "ref": "Dan.11.32",
+                  "note": "“The people who know their God shall be strong and act.”"
+                },
+                {
+                  "ref": "Deu.11.28",
+                  "note": "To go after other gods “which you have not known”."
+                },
+                {
+                  "ref": "Deu.13.3"
+                },
+                {
+                  "ref": "Deu.32.17",
+                  "note": "They sacrificed to gods they had not known, new ones lately come."
+                }
+              ]
+            },
+            {
+              "id": "god-knows-all",
+              "gloss": "know all, see into (of God)",
+              "definition": "God’s knowing of men: their ways, thoughts, frame and hearts, before they speak.",
+              "evidence": [
+                {
+                  "ref": "Psa.139.1",
+                  "role": "defining",
+                  "note": "“Yahweh, you have searched me and known me.”"
+                },
+                {
+                  "ref": "Psa.139.2",
+                  "to": "Psa.139.4",
+                  "note": "My sitting and my rising, my thoughts from afar; not a word on my tongue but you know it altogether."
+                },
+                {
+                  "ref": "1Ki.8.39",
+                  "role": "defining",
+                  "note": "“You, you alone, know the hearts of all the sons of men.”"
+                },
+                {
+                  "ref": "Psa.94.11",
+                  "note": "Yahweh knows the thoughts of man, that they are vapour; quoted in 1Co 3:20."
+                },
+                {
+                  "ref": "Psa.103.14",
+                  "note": "“He knows our frame; he remembers that we are dust.”"
+                },
+                {
+                  "ref": "Deu.2.7",
+                  "note": "“He has known your walking through this great wilderness.”"
+                },
+                {
+                  "ref": "Psa.144.3",
+                  "note": "“What is man, that you know him?”"
+                }
+              ]
+            },
+            {
+              "id": "god-knows-own",
+              "gloss": "choose, own as his (of God)",
+              "definition": "God’s knowing as his choosing a person or people for himself and caring for them; set against the way of the wicked that perishes.",
+              "evidence": [
+                {
+                  "ref": "Amo.3.2",
+                  "role": "defining",
+                  "note": "“You only have I known of all the families of the earth; therefore I will punish you for all your iniquities.”"
+                },
+                {
+                  "ref": "Gen.18.19",
+                  "role": "defining",
+                  "note": "Of Abraham: “I have known him, so that he will command his children … to keep the way of Yahweh.”"
+                },
+                {
+                  "ref": "Jer.1.5",
+                  "role": "defining",
+                  "note": "“Before I formed you in the belly I knew you, and before you came out of the womb I sanctified you.”"
+                },
+                {
+                  "ref": "Exo.33.12",
+                  "note": "“I know you by name, and you have found favour in my eyes.”"
+                },
+                {
+                  "ref": "Exo.33.17"
+                },
+                {
+                  "ref": "Psa.1.6",
+                  "role": "defining",
+                  "note": "“Yahweh knows the way of the righteous, but the way of the wicked will perish.”"
+                },
+                {
+                  "ref": "Nam.1.7",
+                  "note": "“He knows those who take refuge in him.”"
+                },
+                {
+                  "ref": "Hos.13.5",
+                  "note": "“I knew you in the wilderness, in the land of great drought.”"
+                }
+              ]
+            },
+            {
+              "id": "lie-with",
+              "gloss": "know (a woman or man), lie with",
+              "definition": "Of a man and a woman, to come together in marriage; “a virgin, and no man had known her” describes one untouched.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.1",
+                  "role": "defining",
+                  "note": "“The man knew Eve his wife, and she conceived and bore Cain.”"
+                },
+                {
+                  "ref": "Gen.4.25"
+                },
+                {
+                  "ref": "Gen.24.16",
+                  "role": "defining",
+                  "note": "Rebekah, “a virgin, and no man had known her”."
+                },
+                {
+                  "ref": "1Sa.1.19",
+                  "note": "Elkanah knew Hannah, and Yahweh remembered her."
+                },
+                {
+                  "ref": "Num.31.17",
+                  "note": "Every woman “who has known a man by lying with a male”."
+                },
+                {
+                  "ref": "Jdg.11.39",
+                  "note": "Jephthah’s daughter “had not known a man”."
+                },
+                {
+                  "ref": "1Ki.1.4",
+                  "note": "Abishag ministered to David, “but the king did not know her”."
+                },
+                {
+                  "ref": "Gen.19.5",
+                  "note": "The men of Sodom: “bring them out to us, that we may know them”."
+                },
+                {
+                  "ref": "Jdg.19.25"
+                },
+                {
+                  "ref": "Gen.38.26",
+                  "note": "Judah “did not know her again”."
+                }
+              ]
+            },
+            {
+              "id": "know-how",
+              "gloss": "know how, be skilled",
+              "definition": "To have the skill to do a thing; the participle יֹדֵעַ with a noun or infinitive is one skilled in it.",
+              "evidence": [
+                {
+                  "ref": "Gen.25.27",
+                  "role": "defining",
+                  "note": "Esau was אִישׁ יֹדֵעַ צַיִד, “a man knowing hunting”."
+                },
+                {
+                  "ref": "1Sa.16.16",
+                  "role": "defining",
+                  "note": "“A man who knows how to play on the harp.”"
+                },
+                {
+                  "ref": "1Sa.16.18"
+                },
+                {
+                  "ref": "1Ki.9.27",
+                  "note": "Sailors יֹדְעֵי הַיָּם, who knew the sea."
+                },
+                {
+                  "ref": "Exo.36.1",
+                  "note": "Wise-hearted men, in whom Yahweh put wisdom and understanding “to know how to do all the work”."
+                },
+                {
+                  "ref": "2Ch.2.6",
+                  "note": "A man who knows how to engrave."
+                },
+                {
+                  "ref": "Amo.5.16",
+                  "note": "יוֹדְעֵי נֶהִי, those skilled in lamentation."
+                },
+                {
+                  "ref": "Isa.29.11",
+                  "to": "Isa.29.12",
+                  "note": "The sealed book given to one “who knows the book” (can read) and to one who does not."
+                },
+                {
+                  "ref": "Jer.1.6",
+                  "note": "“I do not know how to speak, for I am a youth.”"
+                },
+                {
+                  "ref": "Ecc.6.8",
+                  "note": "The poor man who knows how to walk before the living."
+                }
+              ]
+            },
+            {
+              "id": "know-good-evil",
+              "gloss": "know good and evil, discern",
+              "definition": "To judge between good and evil: a power the child has not yet and the very old has lost; in Eden, a knowing that belongs to God, which the man took by disobedience.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.5",
+                  "role": "defining",
+                  "note": "“God knows that in the day you eat of it … you will be like God, knowing good and evil.”"
+                },
+                {
+                  "ref": "Gen.3.22",
+                  "role": "defining",
+                  "note": "“The man has become like one of us, to know good and evil.”"
+                },
+                {
+                  "ref": "Deu.1.39",
+                  "role": "defining",
+                  "note": "“Your sons, who this day do not know good and evil.”"
+                },
+                {
+                  "ref": "Isa.7.15",
+                  "to": "Isa.7.16",
+                  "note": "Before the child knows to refuse the evil and choose the good."
+                },
+                {
+                  "ref": "2Sa.19.36",
+                  "note": "Barzillai at eighty: “Can I discern between good and evil?”"
+                },
+                {
+                  "ref": "Jon.4.11",
+                  "note": "120,000 “who do not know between their right hand and their left”."
+                },
+                {
+                  "ref": "1Ki.3.7",
+                  "note": "Solomon: “I am a little child; I do not know how to go out or come in.”"
+                }
+              ]
+            },
+            {
+              "id": "know-experience",
+              "gloss": "know by experience, suffer",
+              "definition": "To have undergone something, so to know it from within; the passive participle יְדוּעַ is one acquainted with it.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.9",
+                  "role": "defining",
+                  "note": "“You know the soul of the stranger, for you were strangers in the land of Egypt.”"
+                },
+                {
+                  "ref": "Isa.53.3",
+                  "role": "defining",
+                  "note": "The servant, “a man of sorrows, and וִידוּעַ חֹלִי, acquainted with sickness”."
+                },
+                {
+                  "ref": "Isa.47.8",
+                  "note": "Babylon: “I shall not know the loss of children.”"
+                },
+                {
+                  "ref": "Ecc.8.5",
+                  "note": "Whoever keeps the command “will know no evil thing”."
+                }
+              ]
+            },
+            {
+              "id": "regard",
+              "gloss": "know, regard, care for",
+              "definition": "To know someone’s state so as to care for it; of God, to see the distress of his people and take it to heart.",
+              "evidence": [
+                {
+                  "ref": "Pro.12.10",
+                  "role": "defining",
+                  "note": "“A righteous man knows the soul of his beast, but the mercies of the wicked are cruel.”"
+                },
+                {
+                  "ref": "Pro.27.23",
+                  "role": "defining",
+                  "note": "“Know well the face of your flock; set your heart to your herds.”"
+                },
+                {
+                  "ref": "Exo.2.25",
+                  "role": "defining",
+                  "note": "“God saw the sons of Israel, and God knew.”"
+                },
+                {
+                  "ref": "Exo.3.7",
+                  "note": "“I have surely seen the affliction of my people … for I know their sorrows.”"
+                },
+                {
+                  "ref": "Psa.31.8",
+                  "note": "“You have seen my affliction, you have known my soul in distresses.”"
+                },
+                {
+                  "ref": "Psa.142.4",
+                  "note": "When my spirit fainted, “you knew my path”."
+                },
+                {
+                  "ref": "Job.9.21",
+                  "note": "“I do not know my soul”: I care nothing for my life."
+                }
+              ]
+            },
+            {
+              "gloss": "know! (warning)",
+              "definition": "The imperative דַּע, “know (and see)”, calls someone to face what follows from what he does.",
+              "evidence": [
+                {
+                  "ref": "Gen.20.7",
+                  "role": "defining",
+                  "note": "“If you do not return her, know that you shall surely die.”"
+                },
+                {
+                  "ref": "1Sa.25.17",
+                  "note": "“Now know and consider what you will do, for evil is determined against our master.”"
+                },
+                {
+                  "ref": "1Ki.20.7"
+                },
+                {
+                  "ref": "1Ki.20.22"
+                },
+                {
+                  "ref": "2Ki.5.7",
+                  "note": "“Know and see how he seeks a quarrel against me.”"
+                }
+              ]
+            },
+            {
+              "gloss": "known, recognised (passive participle)",
+              "definition": "The passive participle of men recognised and approved among their people.",
+              "evidence": [
+                {
+                  "ref": "Deu.1.13",
+                  "role": "defining",
+                  "note": "“Take wise men, and understanding, and known (וִידֻעִים) among your tribes.”"
+                },
+                {
+                  "ref": "Deu.1.15"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be known, become known; make oneself known",
+          "senses": [
+            {
+              "gloss": "be known, become known",
+              "definition": "Of a thing, to come to light; of a person, to be known or of note.",
+              "evidence": [
+                {
+                  "ref": "Exo.2.14",
+                  "role": "defining",
+                  "note": "Moses was afraid: “Surely the thing is known.”"
+                },
+                {
+                  "ref": "Rut.3.14",
+                  "role": "defining",
+                  "note": "“Let it not be known that the woman came to the threshing floor.”"
+                },
+                {
+                  "ref": "Exo.21.36",
+                  "note": "If it be known that the ox was wont to gore."
+                },
+                {
+                  "ref": "Lev.4.14",
+                  "note": "When the sin the assembly sinned becomes known."
+                },
+                {
+                  "ref": "Gen.41.21",
+                  "note": "The lean cows ate the fat, “and it could not be known that they had eaten them”."
+                },
+                {
+                  "ref": "Pro.10.9",
+                  "note": "He who perverts his ways will be found out."
+                },
+                {
+                  "ref": "Est.2.22",
+                  "note": "The plot became known to Mordecai."
+                },
+                {
+                  "ref": "Pro.31.23",
+                  "note": "“Her husband is known in the gates.”"
+                },
+                {
+                  "ref": "Psa.77.20",
+                  "note": "Your way was in the sea, and your footsteps were not known."
+                },
+                {
+                  "ref": "Jer.28.9",
+                  "note": "When the word of the prophet comes to pass, “the prophet will be known, that Yahweh has truly sent him”."
+                },
+                {
+                  "ref": "Psa.88.13",
+                  "role": "defining",
+                  "note": "“Shall your wonders be known in the dark, and your righteousness in the land of forgetfulness?”"
+                },
+                {
+                  "ref": "Jer.31.19",
+                  "note": "“After I was made to know, I struck my thigh”: the passive of being taught."
+                }
+              ]
+            },
+            {
+              "gloss": "make oneself known (of Yahweh)",
+              "definition": "Yahweh’s making himself known, by his name and by his acts in judgement and deliverance.",
+              "evidence": [
+                {
+                  "ref": "Exo.6.3",
+                  "role": "defining",
+                  "note": "“I appeared to Abraham, Isaac and Jacob as אֵל שַׁדַּי, but by my name Yahweh I was not known to them.”"
+                },
+                {
+                  "ref": "Ezk.20.5",
+                  "role": "defining",
+                  "note": "“I made myself known to them in the land of Egypt.”"
+                },
+                {
+                  "ref": "Ezk.20.9"
+                },
+                {
+                  "ref": "Psa.9.17",
+                  "role": "defining",
+                  "note": "“Yahweh is known by the judgement he executes.”"
+                },
+                {
+                  "ref": "Psa.76.2",
+                  "note": "“In Judah God is known; his name is great in Israel.”"
+                },
+                {
+                  "ref": "Psa.48.4",
+                  "note": "God is known in her palaces for a refuge."
+                },
+                {
+                  "ref": "Isa.19.21",
+                  "note": "“Yahweh will be known to Egypt, and Egypt will know Yahweh in that day.”"
+                },
+                {
+                  "ref": "Ezk.35.11"
+                },
+                {
+                  "ref": "Ezk.38.23",
+                  "note": "“I will make myself known in the eyes of many nations, and they shall know that I am Yahweh.”"
+                },
+                {
+                  "ref": "Zec.14.7",
+                  "note": "One day, “it is known to Yahweh”, neither day nor night."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make known, inform; teach; declare",
+          "cognate_ids": [
+            "sab-yda"
+          ],
+          "senses": [
+            {
+              "gloss": "make known, show, inform",
+              "definition": "To cause someone to know a fact: what will happen, what he is to do, who is chosen.",
+              "evidence": [
+                {
+                  "ref": "Gen.41.39",
+                  "role": "defining",
+                  "note": "“Since God has made you know all this, there is none so discerning and wise as you.”"
+                },
+                {
+                  "ref": "1Sa.10.8",
+                  "note": "“I will make known to you what you shall do.”"
+                },
+                {
+                  "ref": "1Sa.16.3"
+                },
+                {
+                  "ref": "1Ki.1.27",
+                  "note": "“You have not made your servant know who should sit on the throne.”"
+                },
+                {
+                  "ref": "Num.16.5",
+                  "role": "defining",
+                  "note": "“In the morning Yahweh will make known who are his, and who is holy”; cited in 2Ti 2:19 from the Greek, which reads “the Lord knew those who are his”."
+                },
+                {
+                  "ref": "Dan.8.19",
+                  "note": "“I will make you know what shall be in the last end of the indignation.”"
+                },
+                {
+                  "ref": "Psa.39.5",
+                  "note": "“Make me know my end, Yahweh, and the measure of my days.”"
+                },
+                {
+                  "ref": "Isa.5.5"
+                }
+              ]
+            },
+            {
+              "id": "teach",
+              "gloss": "teach, instruct",
+              "definition": "To make someone know ways, statutes, wisdom, so as to walk in them.",
+              "evidence": [
+                {
+                  "ref": "Exo.18.20",
+                  "role": "defining",
+                  "note": "“Make them know the way they must walk in and the work they must do.”"
+                },
+                {
+                  "ref": "Exo.18.16",
+                  "note": "“I make them know the statutes of God and his laws.”"
+                },
+                {
+                  "ref": "Exo.33.13",
+                  "role": "defining",
+                  "note": "“Make me know your ways, that I may know you.”"
+                },
+                {
+                  "ref": "Psa.103.7",
+                  "note": "“He made known his ways to Moses, his acts to the sons of Israel.”"
+                },
+                {
+                  "ref": "Psa.25.4",
+                  "note": "“Make me know your ways, Yahweh; teach me your paths.”"
+                },
+                {
+                  "ref": "Psa.16.11",
+                  "role": "defining",
+                  "note": "“You will make me know the path of life”; quoted in Act 2:28 of Christ’s resurrection."
+                },
+                {
+                  "ref": "Psa.90.12",
+                  "note": "“Teach us to number our days.”"
+                },
+                {
+                  "ref": "Ezk.20.11",
+                  "note": "“I gave them my statutes and made them know my judgements, which if a man do, he shall live in them.”"
+                },
+                {
+                  "ref": "Neh.9.14",
+                  "note": "“You made known to them your holy sabbath.”"
+                },
+                {
+                  "ref": "Ezk.44.23",
+                  "note": "The priests shall make them know the difference between unclean and clean."
+                },
+                {
+                  "ref": "Deu.8.3",
+                  "role": "defining",
+                  "note": "He fed you with manna “to make you know that man does not live by bread alone”; the words Jesus answered with in Mat 4:4."
+                },
+                {
+                  "ref": "Jos.4.22",
+                  "note": "“You shall make your sons know: Israel crossed this Jordan on dry ground.”"
+                },
+                {
+                  "ref": "Psa.78.5",
+                  "note": "The law given to the fathers, “to make them known to their sons”."
+                },
+                {
+                  "ref": "Isa.40.13",
+                  "to": "Isa.40.14",
+                  "note": "Who has directed the spirit of Yahweh, or as his counsellor made him know? quoted in Rom 11:34 and 1Co 2:16."
+                },
+                {
+                  "ref": "Pro.9.9",
+                  "note": "Teach a righteous man and he will increase in learning."
+                },
+                {
+                  "ref": "Pro.22.19"
+                }
+              ]
+            },
+            {
+              "gloss": "make known abroad, declare",
+              "definition": "To make Yahweh’s acts, name, faithfulness and salvation known to the peoples.",
+              "evidence": [
+                {
+                  "ref": "Psa.98.2",
+                  "role": "defining",
+                  "note": "“Yahweh has made known his salvation; in the sight of the nations he has revealed his righteousness.”"
+                },
+                {
+                  "ref": "Psa.105.1",
+                  "role": "defining",
+                  "note": "“Make known his deeds among the peoples”; also 1Ch 16:8."
+                },
+                {
+                  "ref": "Isa.12.4"
+                },
+                {
+                  "ref": "Psa.145.12"
+                },
+                {
+                  "ref": "Psa.89.2",
+                  "note": "“With my mouth I will make known your faithfulness to all generations.”"
+                },
+                {
+                  "ref": "Psa.106.8"
+                },
+                {
+                  "ref": "Isa.64.1",
+                  "note": "To make your name known to your adversaries."
+                },
+                {
+                  "ref": "Jer.16.21",
+                  "note": "“I will make them know my hand and my might, and they shall know that my name is Yahweh.”"
+                },
+                {
+                  "ref": "Isa.38.19",
+                  "note": "The father to the children shall make known your truth."
+                }
+              ]
+            },
+            {
+              "gloss": "make (someone) know his sin; acknowledge",
+              "definition": "To bring sin to someone’s knowledge as a charge; and to make one’s own sin known, to confess it.",
+              "evidence": [
+                {
+                  "ref": "Ezk.16.2",
+                  "role": "defining",
+                  "note": "“Son of man, make Jerusalem know her abominations.”"
+                },
+                {
+                  "ref": "Ezk.22.2"
+                },
+                {
+                  "ref": "Job.13.23",
+                  "note": "“Make me know my transgression and my sin.”"
+                },
+                {
+                  "ref": "Psa.32.5",
+                  "role": "defining",
+                  "note": "“I made my sin known to you, and my iniquity I did not cover.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be made known",
+          "senses": [
+            {
+              "gloss": "be made known (of a sin)",
+              "definition": "Of an unwitting sin, to be brought to the sinner’s knowledge, upon which he brings his sin offering.",
+              "evidence": [
+                {
+                  "ref": "Lev.4.23",
+                  "role": "defining",
+                  "note": "“If his sin which he has sinned is made known to him, he shall bring his offering, a kid of the goats.”"
+                },
+                {
+                  "ref": "Lev.4.28"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "make oneself known",
+          "senses": [
+            {
+              "gloss": "make oneself known, reveal oneself",
+              "definition": "To let oneself be known for who one is.",
+              "evidence": [
+                {
+                  "ref": "Gen.45.1",
+                  "role": "defining",
+                  "note": "No man stood with him “when Joseph made himself known to his brothers”."
+                },
+                {
+                  "ref": "Num.12.6",
+                  "role": "defining",
+                  "note": "“If there is a prophet among you, I Yahweh will make myself known to him in a vision.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "(participle) one known: acquaintance",
+          "senses": [
+            {
+              "id": "acquaintance",
+              "gloss": "acquaintance, familiar friend",
+              "definition": "The participle מְיֻדָּע, “one known (to me)”: an acquaintance or close friend, set with neighbours, kin and companions.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.14",
+                  "role": "defining",
+                  "note": "“But it was you, a man my equal, my companion and my acquaintance.”"
+                },
+                {
+                  "ref": "Job.19.14",
+                  "role": "defining",
+                  "note": "“My kin have failed, and my acquaintances have forgotten me.”"
+                },
+                {
+                  "ref": "Psa.31.12",
+                  "note": "A dread to my acquaintances."
+                },
+                {
+                  "ref": "Psa.88.9"
+                },
+                {
+                  "ref": "Psa.88.19",
+                  "note": "Lover and friend you have put far from me, my acquaintances are darkness."
+                },
+                {
+                  "ref": "2Ki.10.11",
+                  "note": "Jehu struck Ahab’s great men, his acquaintances and his priests."
+                }
+              ],
+              "kin": [
+                "kinsman",
+                "syc-acquaintance"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make know",
+          "senses": [
+            {
+              "gloss": "make (the dawn) know its place",
+              "definition": "Once, of Yahweh appointing the dawn its place; the written text has the piel, the read text the hiphil.",
+              "evidence": [
+                {
+                  "ref": "Job.38.12",
+                  "role": "defining",
+                  "note": "“Have you commanded the morning since your days, and caused the dawn to know (יִדַּעְתָּה) its place?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "direct, appoint (uncertain)",
+          "senses": [
+            {
+              "gloss": "direct (to a place)",
+              "definition": "Once, of David telling his young men where to meet him: to make them know the place, so to direct or appoint. The sense rests on this one verse.",
+              "evidence": [
+                {
+                  "ref": "1Sa.21.3",
+                  "role": "defining",
+                  "note": "“The young men I have directed (יוֹדַעְתִּי) to such and such a place.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γινώσκω",
+          "gloss": "know, come to know",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.4.1, Amo.3.2, Num.16.5, Jer.31.34 (דְּעוּ → γνῶθι), Ecc.9.5: יָדַע → γινώσκω; γινώσκω renders the verb about 458 times"
+            },
+            {
+              "ref": "Heb.8.11",
+              "role": "defining",
+              "note": "Quoting Jer 31:34: “they shall not teach … saying, Know (γνῶθι) the Lord, for all shall know me.”"
+            },
+            {
+              "ref": "2Ti.2.19",
+              "role": "defining",
+              "note": "“The Lord knew (ἔγνω) those who are his”: Num 16:5 in the Greek."
+            },
+            {
+              "ref": "Rom.3.17",
+              "note": "Quoting Isa 59:8: “the way of peace they have not known.”"
+            },
+            {
+              "ref": "Mat.1.25",
+              "note": "Joseph “knew her not” until she had borne her son: the Hebrew idiom of Gen 4:1."
+            },
+            {
+              "ref": "Luk.1.34",
+              "note": "“How shall this be, since I do not know a man?”"
+            },
+            {
+              "ref": "Jhn.17.3",
+              "note": "“That they may know you, the only true God, and Jesus Christ whom you have sent.”"
+            },
+            {
+              "ref": "Mat.7.23",
+              "note": "“I never knew you.”"
+            },
+            {
+              "ref": "1Co.8.3"
+            }
+          ]
+        },
+        {
+          "lemma": "οἶδα",
+          "gloss": "know",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.1.8 → ᾔδει; Exo.32.1 → οἴδαμεν; Lev.23.43 → ἴδωσιν; Isa.59.8 → οἴδασιν: יָדַע → εἴδω about 171 times"
+            },
+            {
+              "ref": "Act.7.18",
+              "role": "defining",
+              "note": "Quoting Exo 1:8: “another king arose who did not know (ᾔδει) Joseph.”"
+            },
+            {
+              "ref": "Act.7.40",
+              "note": "Quoting Exo 32:1: “as for this Moses … we do not know what has become of him.”"
+            }
+          ]
+        },
+        {
+          "lemma": "γνωρίζω",
+          "gloss": "make known",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.16.11, תּוֹדִיעֵנִי → ἐγνώρισάς: hiphil → γνωρίζω"
+            },
+            {
+              "ref": "Act.2.28",
+              "role": "defining",
+              "note": "Quoting Psa 16:11: “you have made known to me the ways of life.”"
+            },
+            {
+              "ref": "Jhn.15.15",
+              "note": "“All things I heard from my Father I have made known to you.”"
+            },
+            {
+              "ref": "Eph.1.9"
+            }
+          ]
+        },
+        {
+          "lemma": "γνωστός",
+          "gloss": "known; (pl.) acquaintances",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.31.12, מְיֻדָּעַי → γνωστοῖς: the pual participle"
+            },
+            {
+              "ref": "Luk.23.49",
+              "role": "defining",
+              "note": "“All his acquaintances (γνωστοί) stood far off”: the word for מְיֻדָּע, and the Peshitta’s ܝܕܘܥܐ."
+            },
+            {
+              "ref": "Luk.2.44",
+              "note": "They sought him among their kinsfolk and acquaintances."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רָאָה",
+            "note": "“See”: seeing and knowing go together, and Isaiah’s commission sets them side by side.",
+            "evidence": [
+              {
+                "ref": "Isa.41.20",
+                "role": "defining",
+                "note": "“That they may see and know, and consider and understand together.”"
+              },
+              {
+                "ref": "1Sa.24.12"
+              },
+              {
+                "ref": "Isa.6.9",
+                "note": "“See indeed, but do not know”; quoted in Mat 13:14."
+              },
+              {
+                "ref": "Exo.2.25"
+              }
+            ]
+          },
+          {
+            "lemma": "בִּין",
+            "note": "“Understand”, set beside it.",
+            "evidence": [
+              {
+                "ref": "Isa.1.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.9.23"
+              },
+              {
+                "ref": "Psa.82.5"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַע",
+            "note": "“Hear”: “have you not known? have you not heard?”",
+            "evidence": [
+              {
+                "ref": "Isa.40.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.40.28"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׁכַח",
+            "note": "“Forget”: rejecting knowledge is forgetting the law.",
+            "evidence": [
+              {
+                "ref": "Hos.4.6",
+                "role": "defining",
+                "note": "“Because you have rejected knowledge … seeing you have forgotten the law of your God.”"
+              },
+              {
+                "ref": "Hos.2.15",
+                "note": "She went after her lovers “and forgot me”; answered in 2:22, “you shall know Yahweh”."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וִידַעְתֶּם כִּי אֲנִי יַהְוֶה",
+            "gloss": "and you shall know that I am Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.6.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.6.7"
+              },
+              {
+                "ref": "Ezk.37.6"
+              }
+            ]
+          },
+          {
+            "phrase": "יָדַע אֶת־אִשְׁתּוֹ",
+            "gloss": "knew his wife: lay with her",
+            "evidence": [
+              {
+                "ref": "Gen.4.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.4.17"
+              }
+            ]
+          },
+          {
+            "phrase": "יֹדְעֵי טוֹב וָרָע",
+            "gloss": "knowing good and evil",
+            "evidence": [
+              {
+                "ref": "Gen.3.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.3.22"
+              },
+              {
+                "ref": "Deu.1.39"
+              }
+            ]
+          },
+          {
+            "phrase": "מִי יוֹדֵעַ",
+            "gloss": "who knows? (perhaps)",
+            "evidence": [
+              {
+                "ref": "Jon.3.9",
+                "role": "defining",
+                "note": "“Who knows? God may turn and repent.”"
+              },
+              {
+                "ref": "Jol.2.14"
+              },
+              {
+                "ref": "2Sa.12.22"
+              },
+              {
+                "ref": "Est.4.14"
+              },
+              {
+                "ref": "Ecc.3.21",
+                "note": "“Who knows the spirit of the sons of man, whether it goes upward?”"
+              },
+              {
+                "ref": "Psa.90.11"
+              }
+            ]
+          },
+          {
+            "phrase": "אֱלֹהִים אֲחֵרִים אֲשֶׁר לֹא־יְדַעְתֶּם",
+            "gloss": "other gods which you have not known",
+            "evidence": [
+              {
+                "ref": "Deu.11.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.13.7"
+              },
+              {
+                "ref": "Deu.28.64"
+              },
+              {
+                "ref": "Jer.7.9"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "דַּעַת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "knowledge, understanding; intent",
+      "bdb": [
+        "j.au.ae"
+      ],
+      "cognate_ids": [
+        "akk-edu",
+        "arc-madda"
+      ],
+      "summary": "The verb’s infinitive used as a noun: knowing, knowledge. In Proverbs it is the knowledge that begins in the fear of Yahweh; in the prophets, the knowledge of God whose lack destroys his people. Its key also counts some infinitives of the verb (Jos 4:24; 1Ki 8:60; Jer 22:16).",
+      "senses": [
+        {
+          "id": "knowledge",
+          "gloss": "knowledge, understanding",
+          "definition": "What a man knows and understands: given by Yahweh, sought by the wise and hated by fools, with wisdom and understanding beside it.",
+          "evidence": [
+            {
+              "ref": "Pro.1.7",
+              "role": "defining",
+              "note": "“The fear of Yahweh is the beginning of knowledge; fools despise wisdom and instruction.”"
+            },
+            {
+              "ref": "Pro.2.6",
+              "role": "defining",
+              "note": "“Yahweh gives wisdom; from his mouth come knowledge and understanding.”"
+            },
+            {
+              "ref": "Pro.1.22",
+              "note": "“How long will fools hate knowledge?”"
+            },
+            {
+              "ref": "Pro.1.29"
+            },
+            {
+              "ref": "Pro.8.10",
+              "note": "Knowledge rather than choice gold."
+            },
+            {
+              "ref": "Pro.15.2",
+              "note": "The tongue of the wise uses knowledge well, the mouth of fools pours out folly."
+            },
+            {
+              "ref": "Pro.18.15"
+            },
+            {
+              "ref": "Ecc.1.18",
+              "note": "“He who increases knowledge increases sorrow.”"
+            },
+            {
+              "ref": "Psa.139.6",
+              "note": "“Such knowledge is too wonderful for me.”"
+            },
+            {
+              "ref": "Psa.94.10",
+              "note": "He who teaches man knowledge."
+            },
+            {
+              "ref": "Mal.2.7",
+              "note": "“The priest’s lips should keep knowledge, and they should seek the law at his mouth.”"
+            },
+            {
+              "ref": "Job.38.2",
+              "note": "“Who is this who darkens counsel by words without knowledge?”"
+            },
+            {
+              "ref": "Dan.12.4",
+              "note": "“Many shall run to and fro, and knowledge shall be increased.”"
+            },
+            {
+              "ref": "Isa.47.10",
+              "note": "Babylon’s wisdom and knowledge led her astray."
+            }
+          ],
+          "kin": [
+            "dea-knowledge",
+            "dea-mine",
+            "madda-knowledge",
+            "manda-knowledge",
+            "syc-knowledge"
+          ]
+        },
+        {
+          "id": "knowledge-of-god",
+          "gloss": "knowledge of God",
+          "definition": "Knowing God, which shows in faithfulness and lovingkindness; Yahweh desires it more than burnt offerings, and its lack is his people’s ruin.",
+          "evidence": [
+            {
+              "ref": "Hos.4.1",
+              "role": "defining",
+              "note": "“No truth, no lovingkindness, and no knowledge of God in the land.”"
+            },
+            {
+              "ref": "Hos.4.6",
+              "role": "defining",
+              "note": "“My people are destroyed for lack of knowledge; because you have rejected knowledge, I will reject you.”"
+            },
+            {
+              "ref": "Hos.6.6",
+              "role": "defining",
+              "note": "“I desire lovingkindness and not sacrifice, and the knowledge of God more than burnt offerings”; the first half quoted in Mat 9:13 and 12:7."
+            },
+            {
+              "ref": "Pro.2.5",
+              "note": "“Then you will understand the fear of Yahweh and find the knowledge of God.”"
+            },
+            {
+              "ref": "Pro.9.10",
+              "note": "“The knowledge of the Holy One is understanding.”"
+            },
+            {
+              "ref": "Isa.11.2",
+              "note": "On the shoot of Jesse, “the spirit of knowledge and of the fear of Yahweh”."
+            },
+            {
+              "ref": "Isa.53.11",
+              "role": "defining",
+              "note": "“By his knowledge my righteous servant shall make many righteous, and he shall bear their iniquities.”"
+            },
+            {
+              "ref": "Jer.22.16",
+              "note": "Judging the cause of the poor: “is not this the knowing of me?”"
+            },
+            {
+              "ref": "Isa.5.13",
+              "note": "“My people go into exile for lack of knowledge.”"
+            }
+          ]
+        },
+        {
+          "gloss": "the knowledge of good and evil",
+          "definition": "In the name of the tree in Eden, from which the man was forbidden to eat.",
+          "evidence": [
+            {
+              "ref": "Gen.2.9",
+              "role": "defining",
+              "note": "“The tree of life in the midst of the garden, and the tree of the knowledge of good and evil.”"
+            },
+            {
+              "ref": "Gen.2.17",
+              "role": "defining",
+              "note": "“Of the tree of the knowledge of good and evil you shall not eat, for in the day you eat of it you shall surely die.”"
+            }
+          ]
+        },
+        {
+          "gloss": "skill",
+          "definition": "Knowledge of a craft, given with wisdom and understanding.",
+          "evidence": [
+            {
+              "ref": "Exo.31.3",
+              "role": "defining",
+              "note": "Bezalel filled with the spirit of God “in wisdom, in understanding, in knowledge and in all workmanship”."
+            },
+            {
+              "ref": "Exo.35.31"
+            },
+            {
+              "ref": "1Ki.7.14",
+              "note": "Hiram of Tyre, full of wisdom, understanding and knowledge to do all work in bronze."
+            }
+          ]
+        },
+        {
+          "gloss": "intent; without knowledge, unwittingly",
+          "definition": "בִּבְלִי־דַעַת, “without knowing”, of a man who kills another unintentionally, for whom the cities of refuge were set.",
+          "evidence": [
+            {
+              "ref": "Deu.19.4",
+              "role": "defining",
+              "note": "Whoever kills his neighbour without knowledge, and did not hate him before."
+            },
+            {
+              "ref": "Deu.4.42"
+            },
+            {
+              "ref": "Jos.20.3",
+              "role": "defining",
+              "note": "“By error, without knowledge.”"
+            },
+            {
+              "ref": "Jos.20.5"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γνῶσις",
+          "gloss": "knowledge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hos.4.6 (first דַּעַת) → γνῶσιν; γνῶσις renders דַּעַת about 25 times"
+            },
+            {
+              "ref": "Luk.1.77",
+              "role": "defining",
+              "note": "“To give knowledge of salvation to his people in the forgiveness of their sins”: the knowledge of Jer 31:34."
+            },
+            {
+              "ref": "Rom.11.33",
+              "note": "“The depth of the riches both of the wisdom and knowledge of God.”"
+            },
+            {
+              "ref": "1Co.8.1",
+              "note": "“Knowledge puffs up, but love builds up.”"
+            },
+            {
+              "ref": "2Co.4.6"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπίγνωσις",
+          "gloss": "knowledge, full knowledge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hos.6.6 → ἐπίγνωσιν θεοῦ; Hos.4.6 (second דַּעַת) → ἐπίγνωσιν"
+            },
+            {
+              "ref": "Rom.10.2",
+              "role": "defining",
+              "note": "“A zeal for God, but not according to knowledge.”"
+            },
+            {
+              "ref": "Rom.1.28",
+              "note": "They did not see fit to hold God in knowledge."
+            },
+            {
+              "ref": "Col.1.10",
+              "note": "Increasing in the knowledge of God."
+            },
+            {
+              "ref": "1Ti.2.4"
+            },
+            {
+              "ref": "2Pe.1.2"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָכְמָה",
+            "note": "“Wisdom”, with knowledge throughout Proverbs and Ecclesiastes.",
+            "evidence": [
+              {
+                "ref": "Pro.2.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.2.10"
+              },
+              {
+                "ref": "Ecc.1.16"
+              },
+              {
+                "ref": "Isa.33.6"
+              }
+            ]
+          },
+          {
+            "lemma": "יִרְאַת יַהְוֶה",
+            "note": "“The fear of Yahweh”, the beginning of knowledge and its fellow.",
+            "evidence": [
+              {
+                "ref": "Pro.1.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.2.5"
+              },
+              {
+                "ref": "Isa.11.2"
+              }
+            ]
+          },
+          {
+            "lemma": "חֶסֶד",
+            "note": "“Lovingkindness”, beside the knowledge of God.",
+            "evidence": [
+              {
+                "ref": "Hos.6.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.4.1"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אִוֶּלֶת",
+            "note": "“Folly”, what fools pour out where the wise give knowledge.",
+            "evidence": [
+              {
+                "ref": "Pro.15.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.15.14"
+              },
+              {
+                "ref": "Pro.13.16"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בִּבְלִי־דַעַת",
+            "gloss": "without knowing: unwittingly",
+            "evidence": [
+              {
+                "ref": "Deu.4.42",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.19.4"
+              },
+              {
+                "ref": "Jos.20.3"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵץ הַדַּעַת טוֹב וָרָע",
+            "gloss": "the tree of the knowledge of good and evil",
+            "evidence": [
+              {
+                "ref": "Gen.2.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.2.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַדּוּעַ",
+      "pos": "adverb",
+      "gloss": "why?",
+      "bdb": [
+        "j.au.an"
+      ],
+      "summary": "An interrogative, “why? for what reason?”, asking the cause of something seen. Its form looks like מָה “what” with a passive form of the root, “what is known?”, so “on what ground?”; no cognate shows the formation, and the link to the root rests on the form alone.",
+      "senses": [
+        {
+          "gloss": "why? for what reason?",
+          "definition": "Asks the cause of a thing done or seen, often as a reproach.",
+          "evidence": [
+            {
+              "ref": "Exo.3.3",
+              "role": "defining",
+              "note": "“I will turn aside and see this great sight, why the bush is not burnt.”"
+            },
+            {
+              "ref": "Gen.26.27",
+              "role": "defining",
+              "note": "“Why have you come to me, seeing you hate me?”"
+            },
+            {
+              "ref": "Exo.18.14",
+              "note": "“Why do you sit alone, and all the people stand by you from morning to evening?”"
+            },
+            {
+              "ref": "Jer.8.22",
+              "note": "“Is there no balm in Gilead? … Why then is the health of the daughter of my people not restored?”"
+            },
+            {
+              "ref": "Jer.12.1",
+              "note": "“Why does the way of the wicked prosper?”"
+            },
+            {
+              "ref": "Mal.2.10",
+              "note": "“Have we not all one father? … Why do we deal treacherously each with his brother?”"
+            },
+            {
+              "ref": "Job.21.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יִדְּעֹנִי",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "knowing one: one who claims knowledge from the dead",
+      "bdb": [
+        "j.au.aj"
+      ],
+      "cognate_ids": [
+        "sab-yda"
+      ],
+      "summary": "A “knowing one”, always paired with the אוֹב: one who claimed to know hidden things from the dead. The law forbade turning to them, on pain of death, and good kings put them out of the land.",
+      "senses": [
+        {
+          "gloss": "one who claims knowledge from the dead",
+          "definition": "One who professes to know, by the dead, what the living cannot; set with the אוֹב and with seeking the dead, and forbidden to Israel.",
+          "evidence": [
+            {
+              "ref": "Lev.19.31",
+              "role": "defining",
+              "note": "“Do not turn to the אֹבֹת, and do not seek the יִדְּעֹנִים, to be defiled by them: I am Yahweh your God.”"
+            },
+            {
+              "ref": "Lev.20.27",
+              "role": "defining",
+              "note": "A man or woman in whom is an אוֹב or a יִדְּעֹנִי shall surely be put to death."
+            },
+            {
+              "ref": "Lev.20.6"
+            },
+            {
+              "ref": "Deu.18.11",
+              "role": "defining",
+              "note": "Among the abominations of the nations: one who asks an אוֹב, a יִדְּעֹנִי, or seeks the dead."
+            },
+            {
+              "ref": "Isa.8.19",
+              "role": "defining",
+              "note": "“When they say to you, Seek the אֹבוֹת and the יִדְּעֹנִים who chirp and mutter: should not a people seek their God? For the living, to the dead?”"
+            },
+            {
+              "ref": "1Sa.28.3",
+              "note": "Saul had put the אֹבוֹת and the יִדְּעֹנִים out of the land."
+            },
+            {
+              "ref": "1Sa.28.9"
+            },
+            {
+              "ref": "2Ki.21.6",
+              "note": "Manasseh appointed an אוֹב and יִדְּעֹנִים."
+            },
+            {
+              "ref": "2Ki.23.24",
+              "note": "Josiah put them away, to perform the words of the law."
+            },
+            {
+              "ref": "Isa.19.3"
+            },
+            {
+              "ref": "2Ch.33.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֵּעָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "knowledge",
+      "bdb": [
+        "j.au.ad"
+      ],
+      "cognate_ids": [
+        "akk-edu"
+      ],
+      "summary": "A shorter noun of the same meaning as דַּעַת, mostly in poetry.",
+      "senses": [
+        {
+          "id": "dea-knowledge",
+          "gloss": "knowledge",
+          "definition": "Knowledge, especially the knowledge of Yahweh, and God’s own knowledge.",
+          "evidence": [
+            {
+              "ref": "Isa.11.9",
+              "role": "defining",
+              "note": "“The earth shall be full of the knowledge of Yahweh as the waters cover the sea.”"
+            },
+            {
+              "ref": "1Sa.2.3",
+              "role": "defining",
+              "note": "“Yahweh is a God of knowledge (דֵּעוֹת), and by him actions are weighed.”"
+            },
+            {
+              "ref": "Jer.3.15",
+              "note": "Shepherds after my heart, who shall feed you with knowledge and understanding."
+            },
+            {
+              "ref": "Isa.28.9",
+              "note": "“Whom will he teach knowledge?”"
+            },
+            {
+              "ref": "Psa.73.11",
+              "note": "“How does God know? Is there knowledge in the Most High?”"
+            },
+            {
+              "ref": "Job.36.4"
+            }
+          ],
+          "kin": [
+            "knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַדָּע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "knowledge; thought",
+      "bdb": [
+        "j.au.am"
+      ],
+      "cognate_ids": [
+        "arc-madda",
+        "arc-manda"
+      ],
+      "summary": "A late noun, the Hebrew of the Aramaic מַנְדַּע: knowledge, and once a man’s private thought.",
+      "senses": [
+        {
+          "id": "madda-knowledge",
+          "gloss": "knowledge",
+          "definition": "Knowledge as God gives it, asked with wisdom for judging.",
+          "evidence": [
+            {
+              "ref": "2Ch.1.10",
+              "role": "defining",
+              "note": "Solomon: “Give me now wisdom and knowledge, that I may go out and come in before this people.”"
+            },
+            {
+              "ref": "2Ch.1.11"
+            },
+            {
+              "ref": "2Ch.1.12"
+            },
+            {
+              "ref": "Dan.1.17",
+              "role": "defining",
+              "note": "“God gave them knowledge and skill in all learning and wisdom.”"
+            },
+            {
+              "ref": "Dan.1.4"
+            }
+          ],
+          "kin": [
+            "knowledge"
+          ]
+        },
+        {
+          "gloss": "thought, mind",
+          "definition": "What is in a man’s mind, unspoken.",
+          "evidence": [
+            {
+              "ref": "Ecc.10.20",
+              "role": "defining",
+              "note": "“Do not curse the king, even in your thought.”"
+            }
+          ],
+          "kin": [
+            "syc-mind"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֵּעַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "knowledge, opinion",
+      "bdb": [
+        "j.au.ac"
+      ],
+      "cognate_ids": [
+        "akk-edu"
+      ],
+      "summary": "Another short noun, used by Elihu of what he knows and would declare, and of God’s knowledge.",
+      "senses": [
+        {
+          "id": "dea-mine",
+          "gloss": "what one knows, one’s opinion",
+          "definition": "The knowledge a man holds and declares; and, in the plural, God’s perfect knowledge.",
+          "evidence": [
+            {
+              "ref": "Job.32.6",
+              "role": "defining",
+              "note": "Elihu: “I am young … so I was afraid to declare my knowledge (דֵּעִי) to you.”"
+            },
+            {
+              "ref": "Job.32.10"
+            },
+            {
+              "ref": "Job.32.17"
+            },
+            {
+              "ref": "Job.36.3"
+            },
+            {
+              "ref": "Job.37.16",
+              "role": "defining",
+              "note": "“The wonders of him who is perfect in knowledge (דֵּעִים).”"
+            }
+          ],
+          "kin": [
+            "knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מוֹדַע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "kinsman, one closely known",
+      "bdb": [
+        "j.au.ak"
+      ],
+      "cognate_ids": [
+        "akk-mudu",
+        "arc-yeda"
+      ],
+      "summary": "One closely known: a kinsman. Ruth 2:1 reads מוֹדַע where the written text has the pual participle מְיֻדָּע.",
+      "senses": [
+        {
+          "id": "kinsman",
+          "gloss": "kinsman",
+          "definition": "A near relative or intimate, one known as one’s own.",
+          "evidence": [
+            {
+              "ref": "Rut.2.1",
+              "role": "defining",
+              "note": "“Naomi had a kinsman of her husband’s, a mighty man of wealth … Boaz.”"
+            },
+            {
+              "ref": "Pro.7.4",
+              "role": "defining",
+              "note": "“Say to wisdom, You are my sister, and call understanding your kinsman.”"
+            }
+          ],
+          "kin": [
+            "acquaintance",
+            "kinship"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֹדַעַת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "kinship; kinsman",
+      "bdb": [
+        "j.au.al"
+      ],
+      "cognate_ids": [
+        "akk-mudu"
+      ],
+      "summary": "Kinship, and so a kinsman; once, of Boaz.",
+      "senses": [
+        {
+          "id": "kinship",
+          "gloss": "kinship, kinsman",
+          "definition": "One related to us.",
+          "evidence": [
+            {
+              "ref": "Rut.3.2",
+              "role": "defining",
+              "note": "“Is not Boaz our kinsman (מֹדַעְתָּנוּ)?”"
+            }
+          ],
+          "kin": [
+            "kinsman"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְדַע",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "know; (haphel) make known",
+      "bdb": [
+        "xj.ac.aa"
+      ],
+      "cognate_ids": [
+        "akk-edu",
+        "uga-yda",
+        "phn-yda",
+        "arc-yeda"
+      ],
+      "summary": "The Aramaic of Daniel and Ezra: know, be known, and make known, above all of the God of heaven who makes known to kings what will be.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "know",
+          "senses": [
+            {
+              "gloss": "know, learn",
+              "definition": "To know a fact or come to know it; of God, to know what is hidden; of idols, to know nothing.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.14",
+                  "role": "defining",
+                  "note": "“That the living may know that the Most High rules in the kingdom of men.”"
+                },
+                {
+                  "ref": "Dan.5.21",
+                  "role": "defining",
+                  "note": "Nebuchadnezzar was driven out “until he knew that the Most High God rules”."
+                },
+                {
+                  "ref": "Dan.2.22",
+                  "role": "defining",
+                  "note": "“He knows what is in the darkness, and the light dwells with him.”"
+                },
+                {
+                  "ref": "Dan.5.22",
+                  "note": "Belshazzar did not humble his heart, “though you knew all this”."
+                },
+                {
+                  "ref": "Dan.5.23",
+                  "note": "Gods of silver and gold “which do not see, nor hear, nor know”."
+                },
+                {
+                  "ref": "Dan.6.11",
+                  "note": "When Daniel knew the writing was signed, he went home and prayed as before."
+                },
+                {
+                  "ref": "Dan.2.21",
+                  "note": "He gives knowledge to יָדְעֵי בִינָה, “those who know understanding”."
+                },
+                {
+                  "ref": "Ezr.7.25",
+                  "note": "Judges “who know the laws of your God; and teach those who do not know”."
+                },
+                {
+                  "ref": "Dan.2.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peil",
+          "gloss": "be known",
+          "senses": [
+            {
+              "gloss": "be it known",
+              "definition": "In the formula יְדִיעַ לֶהֱוֵא, “be it known”, opening a report or a refusal.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.18",
+                  "role": "defining",
+                  "note": "“Be it known to you, O king, that we will not serve your gods.”"
+                },
+                {
+                  "ref": "Ezr.4.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezr.4.13"
+                },
+                {
+                  "ref": "Ezr.5.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "make known",
+          "senses": [
+            {
+              "gloss": "make known, declare",
+              "definition": "To make known a dream, its interpretation, or a matter; of God, to make known what will be.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.28",
+                  "role": "defining",
+                  "note": "“There is a God in heaven who reveals secrets, and he has made known to King Nebuchadnezzar what shall be in the latter days.”"
+                },
+                {
+                  "ref": "Dan.2.45",
+                  "role": "defining",
+                  "note": "The stone cut without hands: “the great God has made known to the king what shall be hereafter.”"
+                },
+                {
+                  "ref": "Dan.2.23",
+                  "note": "“You have made known to me what we asked of you.”"
+                },
+                {
+                  "ref": "Dan.2.5",
+                  "note": "“If you do not make known to me the dream and its interpretation …”"
+                },
+                {
+                  "ref": "Dan.7.16",
+                  "note": "He made me know the interpretation of the things."
+                },
+                {
+                  "ref": "Dan.5.17"
+                },
+                {
+                  "ref": "Ezr.4.14"
+                },
+                {
+                  "ref": "Ezr.7.25",
+                  "note": "“And teach (תְּהוֹדְעוּן) those who do not know.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַנְדַּע",
+      "lang": "arc",
+      "root": "מנדע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "knowledge; understanding, reason",
+      "bdb": [
+        "xj.ac.ab"
+      ],
+      "cognate_ids": [
+        "arc-manda"
+      ],
+      "summary": "The Aramaic noun, with its נ before the ד: knowledge given by God, and the reason that returned to Nebuchadnezzar.",
+      "senses": [
+        {
+          "id": "manda-knowledge",
+          "gloss": "knowledge, understanding",
+          "definition": "Knowledge as God gives it, and a man’s right mind.",
+          "evidence": [
+            {
+              "ref": "Dan.2.21",
+              "role": "defining",
+              "note": "“He gives wisdom to the wise and knowledge to those who know understanding.”"
+            },
+            {
+              "ref": "Dan.4.31",
+              "role": "defining",
+              "note": "“I lifted up my eyes to heaven, and my understanding returned to me, and I blessed the Most High.”"
+            },
+            {
+              "ref": "Dan.4.33"
+            },
+            {
+              "ref": "Dan.5.12",
+              "note": "In Daniel, “an excellent spirit, knowledge and understanding”."
+            }
+          ],
+          "kin": [
+            "knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְדַע",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "know; (aphel) make known; (ethpeel) be known",
+      "summary": "The Peshitta’s ܝܕܥ (īdaʿ), for γινώσκω and οἶδα: knowing God, and being known by him.",
+      "cognate_ids": [
+        "arc-yeda"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "know",
+          "senses": [
+            {
+              "gloss": "know (God, his own)",
+              "definition": "To know God, and of the Lord to know those who are his.",
+              "evidence": [
+                {
+                  "ref": "Jhn.17.3",
+                  "role": "defining",
+                  "note": "“This is life eternal, that they may know you, the only true God, and Jesus the Messiah whom you have sent.”"
+                },
+                {
+                  "ref": "1Jn.2.3",
+                  "role": "defining",
+                  "note": "“By this we know that we know him, if we keep his commandments.”"
+                },
+                {
+                  "ref": "1Jn.4.8",
+                  "note": "He who does not love has not known God, for God is love."
+                },
+                {
+                  "ref": "2Ti.2.19",
+                  "role": "defining",
+                  "note": "“The Lord knows those who are his.”"
+                },
+                {
+                  "ref": "Mat.7.23",
+                  "note": "“I never knew you.”"
+                },
+                {
+                  "ref": "Jhn.10.14",
+                  "note": "“I know mine, and am known by mine.”"
+                }
+              ],
+              "kin": [
+                "know-yahweh",
+                "god-knows-own"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be known",
+          "senses": [
+            {
+              "gloss": "be known (by God)",
+              "definition": "To be known by God, as his own.",
+              "evidence": [
+                {
+                  "ref": "1Co.8.3",
+                  "role": "defining",
+                  "note": "“If anyone loves God, he is known by him.”"
+                },
+                {
+                  "ref": "Gal.4.9",
+                  "note": "“Now that you have known God, or rather are known by God.”"
+                },
+                {
+                  "ref": "Jhn.10.14"
+                }
+              ],
+              "kin": [
+                "god-knows-own"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "make known",
+          "senses": [
+            {
+              "gloss": "make known",
+              "definition": "To make known what was heard from the Father, and the mystery of his will.",
+              "evidence": [
+                {
+                  "ref": "Jhn.15.15",
+                  "role": "defining",
+                  "note": "“All that I heard from my Father I have made known to you.”"
+                },
+                {
+                  "ref": "Eph.1.9",
+                  "note": "Having made known to us the mystery of his will."
+                }
+              ],
+              "kin": [
+                "teach"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יִדַּעְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "knowledge",
+      "summary": "The Peshitta’s ܝܕܥܬܐ (īdaʿtā), for γνῶσις and ἐπίγνωσις.",
+      "cognate_ids": [
+        "arc-yeda"
+      ],
+      "senses": [
+        {
+          "id": "syc-knowledge",
+          "gloss": "knowledge",
+          "definition": "Knowledge, above all of God and of his will.",
+          "evidence": [
+            {
+              "ref": "2Co.4.6",
+              "role": "defining",
+              "note": "“To give the light of the knowledge of the glory of God in the face of Jesus the Messiah.”"
+            },
+            {
+              "ref": "Rom.10.2",
+              "role": "defining",
+              "note": "Zeal for God, but not according to knowledge."
+            },
+            {
+              "ref": "1Co.8.1"
+            },
+            {
+              "ref": "Col.1.9"
+            },
+            {
+              "ref": "Col.1.10"
+            },
+            {
+              "ref": "1Ti.2.4"
+            },
+            {
+              "ref": "2Pe.3.18",
+              "note": "“Grow in grace and in the knowledge of our Lord.”"
+            }
+          ],
+          "kin": [
+            "knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַדְּעָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "mind, understanding; knowledge",
+      "summary": "The Peshitta’s ܡܕܥܐ (maddʿā), the word of Hebrew מַדָּע: knowledge, and the mind where God writes his laws.",
+      "cognate_ids": [
+        "arc-madda"
+      ],
+      "senses": [
+        {
+          "id": "syc-mind",
+          "gloss": "mind, understanding",
+          "definition": "The mind, darkened or renewed; where the new covenant puts God’s laws.",
+          "evidence": [
+            {
+              "ref": "Heb.8.10",
+              "role": "defining",
+              "note": "Quoting Jer 31:33: “I will put my laws into their mind, and write them on their hearts.”"
+            },
+            {
+              "ref": "Eph.4.23",
+              "note": "“Be renewed in the spirit of your mind.”"
+            },
+            {
+              "ref": "Eph.4.18",
+              "note": "Darkened in their understanding."
+            },
+            {
+              "ref": "Php.4.7"
+            },
+            {
+              "ref": "Heb.10.16"
+            }
+          ]
+        },
+        {
+          "gloss": "knowledge",
+          "definition": "Knowledge, of salvation and of God.",
+          "evidence": [
+            {
+              "ref": "Luk.1.77",
+              "role": "defining",
+              "note": "“To give knowledge of salvation to his people in the forgiveness of their sins.”"
+            },
+            {
+              "ref": "Rom.1.28"
+            }
+          ],
+          "kin": [
+            "knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְדִיעָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "known, notable",
+      "summary": "The Peshitta’s ܝܕܝܥܐ (yḏīʿā), the passive participle as an adjective: known, of note.",
+      "cognate_ids": [
+        "arc-yeda"
+      ],
+      "senses": [
+        {
+          "gloss": "known, notable",
+          "definition": "Known to all, of note; of a day, appointed.",
+          "evidence": [
+            {
+              "ref": "Mat.27.16",
+              "role": "defining",
+              "note": "“A notable prisoner, called Barabbas.”"
+            },
+            {
+              "ref": "2Co.6.9",
+              "role": "defining",
+              "note": "“As unknown, and yet well known.”"
+            },
+            {
+              "ref": "2Co.3.2",
+              "note": "Our letter, “known and read by all men”."
+            },
+            {
+              "ref": "Act.12.21",
+              "note": "On a set day Herod sat on the throne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָדוּעָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "acquaintance",
+      "summary": "The Peshitta’s ܝܕܘܥܐ (yāḏūʿā), one known to a man: his acquaintance, as Hebrew מְיֻדָּע.",
+      "cognate_ids": [
+        "arc-yeda",
+        "akk-mudu"
+      ],
+      "senses": [
+        {
+          "id": "syc-acquaintance",
+          "gloss": "acquaintance",
+          "definition": "Those who know a man and are known to him.",
+          "evidence": [
+            {
+              "ref": "Luk.23.49",
+              "role": "defining",
+              "note": "“All his acquaintances stood afar off, and the women who followed him from Galilee.”"
+            },
+            {
+              "ref": "Act.24.23",
+              "note": "Felix let none of Paul’s acquaintances be forbidden to serve him."
+            }
+          ],
+          "kin": [
+            "acquaintance"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-edu",
+      "lang": "akk",
+      "form": "edû",
+      "translit": "edû, idû; Assyrian wadû",
+      "gloss": "know; recognise; (D/Š) inform, make known; knowledge",
+      "relation": "cognate",
+      "note": "The commonest Akkadian verb for knowing, with the w- of the old root kept in Assyrian wadû and lost in Babylonian edû, as Hebrew has י for it. Its causative “inform, make known” matches the hiphil.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000003870, edû [know] V",
+          "note": "Meanings: “know; knowing; knowledge; recognize; identify; inform; make known; causing to know”; 875 instances, Old Babylonian to Seleucid."
+        },
+        {
+          "source": "oracc",
+          "locator": "tsae x000010540, wadû [know] V",
+          "note": "Meanings: “know; be known; recognize; identify; distinguish; inform; make known; make manifest; reveal”; 2,982 instances."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000514 wdʿ[know]V → AKK002167 edû[know]V (√wd')",
+          "note": "The same set lists Aramaic YDʿ, Hebrew yadaʿ, Punic ydʿ and Ugaritic ydʿ, all “know”."
+        }
+      ]
+    },
+    {
+      "id": "akk-mudu",
+      "lang": "akk",
+      "form": "mūdû",
+      "translit": "mūdû",
+      "gloss": "one who knows; acquaintance; expert",
+      "relation": "cognate",
+      "note": "The participle of edû as a noun: one known to a man, his acquaintance, and one who knows a craft. The same two uses as Hebrew מְיֻדָּע and מוֹדַע (acquaintance, kinsman) and the participle יֹדֵעַ (one skilled).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "oimea x000026560, mūdû [knower] N",
+          "note": "Meanings: “acquaintance; expert; initiate; knower; one who is familiar; one who knows; wise one”; 281 instances."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000028020, mūdû [knowing] AJ",
+          "note": "“experienced; expert; knowing; one who knows; wise”."
+        }
+      ]
+    },
+    {
+      "id": "uga-yda",
+      "lang": "uga",
+      "form": "𐎊𐎄𐎓",
+      "translit": "ydʿ",
+      "gloss": "know; know how",
+      "relation": "cognate",
+      "note": "Used of knowing a fact (“I know that you are compassionate”) and of knowing a skill: Paghat “knowing the course of the stars”, as Hebrew יֹדֵעַ with a craft. Ugaritic writes ʿ, not ġ.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "§93 Glossary, /y-d-ʿ/ (p. 188, page inferred from the text layer)",
+          "note": "“ydʿnn, tdʿ, imper. dʿ, ‘to know’ (H. yādaʿ, Aram. yədaʿ, Akkad. edû, idû)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 80, on the conjunction k-",
+          "note": "“ydʿt.krhmt 1.16:I:33 ‘I know that you are compassionate’”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 94, §64",
+          "note": "“pǵt … ydʿt.hlk.kbkbm 1.19:II:6–7 ‘Paghat … knowing the paths (or knower of the paths) of the stars’”."
+        }
+      ]
+    },
+    {
+      "id": "phn-yda",
+      "lang": "phn",
+      "form": "𐤉𐤃𐤏",
+      "translit": "ydʿ",
+      "gloss": "know, understand",
+      "relation": "cognate",
+      "note": "Phoenician and Punic use the verb as Hebrew does, and form the name ydʿmlk “Milk knows”, of the same shape as יְדַעְיָה “Yahweh knows”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 205, Y-D-ʿ; YDʿMLK",
+          "note": "“v. qal KNOW, UNDERSTAND. KAI 2 (Ph) ldʿt … ‘Know: I, your king, am here’ … KAI 60.6/8 (Ph) … ‘that the Sidonians may know that the community knows to compensate’ … Poen. 991 (Pu) … Iadata?, ‘Do you know <it>?’”; YDʿMLK “p.n. Yadoʿ-milk (‘Milk knows’)”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000514 wdʿ[know]V → PUN000791 ydʿ[know]V"
+        }
+      ]
+    },
+    {
+      "id": "sab-yda",
+      "lang": "sem",
+      "form": "𐩺𐩵𐩲",
+      "translit": "ydʿ (Sabaic)",
+      "gloss": "(h-stem) cause to know, give an oracular answer; (st-stem) ask to know, consult the oracle; mydʿ oracular replies",
+      "relation": "cognate",
+      "note": "Sabaic keeps ʿ apart from ġ and writes ʿ. Its causative is the hiphil “make known”, said of a god answering; the st-stem is seeking knowledge from a god, which is what Israel was to do instead of turning to the יִדְּעֹנִי (Isa 8:19).",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 230, YDʿ",
+          "note": "“h pf hydʿhw … CAUSE TO KNOW > GIVE AN ORACULAR RESPONSE (said of a god) [Cf Heb hôdîaʿ ‘cause to know’] … st pf stydʿthw … ASK TO KNOW, CONSULT (the response of) the oracle … np mydʿ … INFORMATION, REPLIES delivered by the oracle”."
+        }
+      ]
+    },
+    {
+      "id": "arc-yeda",
+      "lang": "arc",
+      "form": "יְדַע",
+      "translit": "yədaʿ",
+      "gloss": "know (Jewish Aramaic); af. make known; pa. pass. part. friend; ithpa. make oneself known",
+      "relation": "cognate",
+      "note": "The Targums use it for Hebrew יָדַע, including of a man knowing his wife (Targ. Gen 4:1); its passive participle מְיַדַּע “friend” renders מְיֻדָּע at Ps 88:9, and the ithpaal “make oneself known” the hithpael of Gen 45:1.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יְדַע",
+          "note": "“Targ. Gen. IV, 1; a. fr. … Af. as preced. Hif. Targ. Ex. XXXIII, 13 … Pa. … Part. pass. מְיַדַּע friend. Targ. Ps. LXXXVIII, 9 … Ithpa. to be made known, to make one’s self known. Targ. O. Gen. XLV, 1”."
+        }
+      ]
+    },
+    {
+      "id": "arc-madda",
+      "lang": "arc",
+      "form": "מַדַּע",
+      "translit": "maddaʿ",
+      "gloss": "knowledge, teaching; reason (Jewish Aramaic)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מַדַּע, מַדְּעָא",
+          "note": "“knowledge, teaching; reason. Targ. Jer. III, 15. Targ. Prov. I, 5”: Jer 3:15 is where the Hebrew has דֵּעָה."
+        }
+      ]
+    },
+    {
+      "id": "arc-manda",
+      "lang": "arc",
+      "form": "מַנְדַּע",
+      "translit": "mandaʿ",
+      "gloss": "knowledge, wisdom (Jewish Aramaic)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מַנְדַּע, מַנְדְּעָא",
+          "note": "“(= מַדַּע) knowledge, wisdom. Targ. Y. Deut. I, 13 מרי מ׳ possessors of knowledge … Targ. Job XXXIII, 3”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "knowing-god",
+      "statement": "Of Josiah, who judged the cause of the poor and needy, Yahweh says “is not this to know me?” (Jer 22:16), and a man may glory only “that he understands and knows me, that I am Yahweh who does lovingkindness, justice and righteousness in the earth” (Jer 9:23). Eli’s sons were priests and yet “did not know Yahweh” (1Sa 2:12); Hosea’s charge is “no truth, no lovingkindness, no knowledge of God in the land”, and “my people are destroyed for lack of knowledge; because you have rejected knowledge … seeing you have forgotten the law of your God” (Hos 4:1, 6); Yahweh desires “the knowledge of God more than burnt offerings” (Hos 6:6). In the new covenant “they shall all know me, from the least of them to the greatest, for I will forgive their iniquity” (Jer 31:34; Heb 8:11). Jesus says “this is life eternal, that they may know you, the only true God, and Jesus Christ whom you have sent” (Jhn 17:3), and John, “by this we know that we know him, if we keep his commandments; he who says ‘I know him’ and does not keep his commandments is a liar” (1Jn 2:3–4). From the verses: to know God is not to hold facts about him but to live in his ways, doing justice and mercy and keeping his law; it is the knowledge of the one true God and of the Son he sent, which he gives in forgiving sins, and it is life eternal.",
+      "evidence": [
+        {
+          "ref": "Jer.22.16"
+        },
+        {
+          "ref": "Jer.9.23"
+        },
+        {
+          "ref": "1Sa.2.12"
+        },
+        {
+          "ref": "Hos.4.1"
+        },
+        {
+          "ref": "Hos.4.6"
+        },
+        {
+          "ref": "Hos.6.6"
+        },
+        {
+          "ref": "Jer.31.34"
+        },
+        {
+          "ref": "Heb.8.11"
+        },
+        {
+          "ref": "Jhn.17.3"
+        },
+        {
+          "ref": "1Jn.2.3",
+          "to": "1Jn.2.4"
+        }
+      ]
+    },
+    {
+      "topic": "known-by-god",
+      "statement": "“You only have I known of all the families of the earth; therefore I will punish you for all your iniquities” (Amo 3:2). Yahweh knew Abraham “so that he will command his children … to keep the way of Yahweh” (Gen 18:19), Jeremiah before he was formed (Jer 1:5), Moses by name (Exo 33:17); “Yahweh knows the way of the righteous, but the way of the wicked will perish” (Psa 1:6). At Korah’s rebellion Moses said “in the morning Yahweh will make known who are his” (Num 16:5), and Paul cites it as “the Lord knows those who are his”, with “let everyone who names the name of Christ depart from iniquity” (2Ti 2:19); “if anyone loves God, he is known by him” (1Co 8:3; Gal 4:9). To those who did works in his name but worked iniquity Jesus will say “I never knew you; depart from me” (Mat 7:23). From the verses: God’s knowing is his choosing and owning a people as his, which brings a heavier responsibility, not a licence; it is shown in loving him and departing from iniquity, and without that the claim to be his is disowned.",
+      "evidence": [
+        {
+          "ref": "Amo.3.2"
+        },
+        {
+          "ref": "Gen.18.19"
+        },
+        {
+          "ref": "Jer.1.5"
+        },
+        {
+          "ref": "Exo.33.17"
+        },
+        {
+          "ref": "Psa.1.6"
+        },
+        {
+          "ref": "Num.16.5"
+        },
+        {
+          "ref": "2Ti.2.19"
+        },
+        {
+          "ref": "1Co.8.3"
+        },
+        {
+          "ref": "Gal.4.9"
+        },
+        {
+          "ref": "Mat.7.21",
+          "to": "Mat.7.23"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "“The living know that they will die, but the dead know not anything … their love, their hatred and their envy have now perished” (Ecc 9:5–6), and “there is no work, nor device, nor knowledge (דַּעַת), nor wisdom in the grave, where you are going” (Ecc 9:10). Of the man who dies, “his sons come to honour, and he does not know it” (Job 14:21); “shall your wonders be known in the dark?” (Psa 88:13); “Abraham does not know us” (Isa 63:16). So the law forbade turning to the אוֹב and the יִדְּעֹנִי, the “knowing one” who claimed knowledge from the dead, on pain of death (Lev 19:31; 20:27; Deu 18:10–12), and Isaiah asks “should not a people seek their God? For the living, to the dead?” and sends them “to the law and to the testimony” (Isa 8:19–20). Job’s knowledge in the face of death is of another kind: “I know that my redeemer lives, and at the last he will stand upon the earth; and after my skin is destroyed, yet in my flesh I shall see God” (Job 19:25–26). From the verses: death ends all knowing; the dead are not a source of knowledge, and those who claim to speak from them deceive. The hope of the dying is not knowledge after death but the redeemer who will stand on the earth, when the dead will see God in the flesh.",
+      "evidence": [
+        {
+          "ref": "Ecc.9.5",
+          "to": "Ecc.9.6"
+        },
+        {
+          "ref": "Ecc.9.10"
+        },
+        {
+          "ref": "Job.14.21"
+        },
+        {
+          "ref": "Psa.88.13"
+        },
+        {
+          "ref": "Isa.63.16"
+        },
+        {
+          "ref": "Lev.19.31"
+        },
+        {
+          "ref": "Lev.20.27"
+        },
+        {
+          "ref": "Deu.18.10",
+          "to": "Deu.18.12"
+        },
+        {
+          "ref": "Isa.8.19",
+          "to": "Isa.8.20"
+        },
+        {
+          "ref": "Job.19.25",
+          "to": "Job.19.26"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-made-known-by-his-acts",
+      "statement": "Yahweh does his works “so that you may know that I am Yahweh”: the plagues and the sea for Egypt and for Israel (Exo 6:7; 7:5; 14:4), the manna (Exo 16:12), the sabbath as a sign (Exo 31:13; Ezk 20:12), and the feast of booths, kept “so that your generations may know that I made the sons of Israel dwell in booths when I brought them out of the land of Egypt” (Lev 23:43). Ezekiel says it over seventy times, of judgement on Israel and the nations and of Israel’s restoration: “you shall know that I am Yahweh, when I have opened your graves” (Ezk 37:13). Of Gog, who comes “from the far north” against the land “in the latter days”, Yahweh says “that the nations may know me, when I am sanctified in you, O Gog, before their eyes”, and after his overthrow “the house of Israel shall know that I am Yahweh their God from that day and forward” (Ezk 38:15–16, 23; 39:22). From the verses: Yahweh is known by what he does, in judgement and in saving his people; the feasts were kept so that each generation would know it from what he had done; and the last great making-known is Gog’s overthrow at Christ’s return, when Israel and the nations together will know him.",
+      "evidence": [
+        {
+          "ref": "Exo.6.7"
+        },
+        {
+          "ref": "Exo.7.5"
+        },
+        {
+          "ref": "Exo.14.4"
+        },
+        {
+          "ref": "Exo.16.12"
+        },
+        {
+          "ref": "Exo.31.13"
+        },
+        {
+          "ref": "Ezk.20.12"
+        },
+        {
+          "ref": "Lev.23.43"
+        },
+        {
+          "ref": "Ezk.37.13"
+        },
+        {
+          "ref": "Ezk.38.15",
+          "to": "Ezk.38.16"
+        },
+        {
+          "ref": "Ezk.38.23"
+        },
+        {
+          "ref": "Ezk.39.22"
+        }
+      ]
+    },
+    {
+      "topic": "knowledge-of-good-and-evil",
+      "statement": "The tree was “the tree of the knowledge of good and evil”, and the command was “you shall not eat of it, for in the day you eat of it you shall surely die” (Gen 2:9, 17). The serpent said “God knows that … you will be like God, knowing good and evil” (Gen 3:5); when they ate, “they knew that they were naked” (Gen 3:7), and Yahweh God said “the man has become like one of us, to know good and evil”, and sent him out lest he eat of the tree of life and live for ever (Gen 3:22–23). Elsewhere to know good and evil is the judgement a child does not yet have (Deu 1:39; Isa 7:15–16) and the very old lose (2Sa 19:36), and Hebrews speaks of the mature “who by use have their senses exercised to discern both good and evil” (Heb 5:14). From the verses: to know good and evil is to judge for oneself what is good and what is evil, which belongs to God; the man took it for himself against God’s word and received death with it, while the way to rightly discern good and evil is by training in God’s word.",
+      "evidence": [
+        {
+          "ref": "Gen.2.9"
+        },
+        {
+          "ref": "Gen.2.17"
+        },
+        {
+          "ref": "Gen.3.5"
+        },
+        {
+          "ref": "Gen.3.7"
+        },
+        {
+          "ref": "Gen.3.22",
+          "to": "Gen.3.23"
+        },
+        {
+          "ref": "Deu.1.39"
+        },
+        {
+          "ref": "Isa.7.15",
+          "to": "Isa.7.16"
+        },
+        {
+          "ref": "2Sa.19.36"
+        },
+        {
+          "ref": "Heb.5.13",
+          "to": "Heb.5.14"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (Lev 23:43, “so that your generations may know”) and Numbers 10 (Num 10:31, “you know our camping places”; Deuel, Num 10:20). Keys: the brief’s counts overlap. j.au.aa and xj.ac.aa each count the other’s tokens where the spelling could be either (Hebrew יָדַע in Gen 4:1 etc. under xj.ac.aa; Aramaic Dan 2:8, 2:22 etc. under j.au.aa), and j.au.aa’s “(no stem)” tokens are דַּעַת nouns also under j.au.ae, whose “Qal” tokens are in turn infinitives of the verb (Jos 4:24; Jdg 3:2; 1Ki 8:60; Isa 48:4; Jer 9:5; Ezk 38:16; Mic 6:5; Ecc 1:17). j.au.ab (Jada, 1Ch 2:28, 32) likewise counts ten qal forms יָדָע. Rut 2:1 (qere מוֹדַע) and Job 38:12 (piel יִדַּעְתָּה) have no BDB key in the database and are not counted. Zero-token cross-reference keys d.by.af, d.by.ag, d.bz.ab, j.at.ai, m.am.ah, m.am.av, m.av.ab, m.bu.ak and xm.ak.ad are not claimed. Names left for their own entries: יָדָע Jada (j.au.ab), יְדַעְיָה Jedaiah (j.au.af), יְדִיעֲאֵל Jediael (j.au.ah), יַדּוּעַ Jaddua (j.au.ag), and the compounds אֶלְיָדָע, בְּעֶלְיָדָע, יְהוֹיָדָע, filed under other roots. Jdg 8:16 (hiphil וַיֹּדַע, “taught” the men of Succoth with thorns) is kept in the count but not cited; it is often read as וַיָּדָשׁ “threshed” (cf. 8:7). The poel of 1Sa 21:3 is a single use and its sense uncertain. The noun’s defining verse Jer 22:16 is the infinitive. Peshitta: SEDRA root 768 ܝܕܥ, lexemes 1304 (verb, 704 NT tokens), 1305 ܝܕܥܬܐ (49), 1306 ܡܕܥܐ (18), 1302 ܝܕܝܥܐ (12), 1301 ܝܕܘܥܐ (2), 1307 ܫܘܘܕܥܐ (2Pe 1:2, 3, 8; 2:20, for ἐπίγνωσις; not entered, a Shaphel-type noun worth adding), 3532 ܝܕܥܐ (Rom 7:1, “those who know”); all verses cited were checked against the Peshitta words table. The Peshitta does not use ܝܕܥ at Mat 1:25 or Luk 1:34 (it has another verb), so those verses are cited only for γινώσκω. Cognates not entered: Arabic. Wiktionary links Arabic daʿā “call” by metathesis, which has no evidence behind it; Lane’s وَدَعَ (p. 3051) is “be still; leave; bid farewell”, which does not share the meaning. Geʿez ʾaydaʿa “inform” (named by Biella and by Anderson and Moser, who gloss it “make”) was not checked in Dillmann or Leslau. Ugaritic dʿt “knowledge” (Wiktionary only) not checked in a dictionary. Segert’s glossary page (188) is inferred from the OCR text layer’s position between the page heads for 184 and 190; the scan was not viewed. Open questions for review: (1) the reading of Gog in Ezk 38–39 as the invasion at Christ’s return, stated in the doctrine; (2) the poel of 1Sa 21:3 and the piel of Job 38:12 as stems of their own; (3) sab-yda named on יִדְּעֹנִי for the shared idea of knowledge sought from a god or the dead."
+}
