@@ -3,7 +3,7 @@
   "root": "אלה",
   "status": "reviewed",
   "reviewed": "2026-11-09",
-  "updated": "2026-11-09",
+  "updated": "2026-11-13",
   "tags": [
     "god",
     "divinity",
@@ -11,9 +11,361 @@
     "oath",
     "curse"
   ],
-  "gloss": "mighty one, power; these; oath, curse",
-  "summary": "אֱלֹהִים, אֵל and אֱלוֹהַּ name the mighty one: one who holds power over others. Scripture sets אֵל against man and flesh (“the Egyptians are men and not אֵל, their horses flesh and not spirit”), and the idiom יֵשׁ לְאֵל יָדִי, “it is in the power of my hand”, uses the word for power itself. The title belongs above all to Yahweh, the Mighty One, but scripture also gives it to angels, to judges and to Moses acting for him, and to the gods the nations serve; Ugaritic, Phoenician, Sabaic, Akkadian, Aramaic and Arabic all have the word, ʾil or ʾilāh, for a god. אָלָה is the oath sworn under the Mighty One’s curse: Yahweh cuts it with his covenant and calls it his own, it is sworn before his altar, and he carries out the curse on the one who breaks it (Sabaic writes “curse, swear” with the same letters as its god-word). אֵלֶּה points to “these” (Phoenician, Sabaic and Ge'ez ʾl, ʾellu). The entry also keeps the fat tail אַלְיָה and the one-time verb “lament”, each with Aramaic cognates of its own, and the conditional אִלּוּ; no tie between these and the rest is shown.",
+  "gloss": "mighty one, power; these; oath, curse; to, toward",
+  "summary": "אֱלֹהִים, אֵל and אֱלוֹהַּ name the mighty one: one who holds power over others. Scripture sets אֵל against man and flesh (“the Egyptians are men and not אֵל, their horses flesh and not spirit”), and the idiom יֵשׁ לְאֵל יָדִי, “it is in the power of my hand”, uses the word for power itself. The title belongs above all to Yahweh, the Mighty One, but scripture also gives it to angels, to judges and to Moses acting for him, and to the gods the nations serve; Ugaritic, Phoenician, Sabaic, Akkadian, Aramaic and Arabic all have the word, ʾil or ʾilāh, for a god. אָלָה is the oath sworn under the Mighty One’s curse: Yahweh cuts it with his covenant and calls it his own, it is sworn before his altar, and he carries out the curse on the one who breaks it (Sabaic writes “curse, swear” with the same letters as its god-word). אֵלֶּה points to “these” (Phoenician, Sabaic and Ge'ez ʾl, ʾellu). The entry also keeps the fat tail אַלְיָה and the one-time verb “lament”, each with Aramaic cognates of its own, and the conditional אִלּוּ; no tie between these and the rest is shown. The preposition אֶל, “to, toward”, is kept here by its form: like עַל from עלה, it has a longer base in y (אֵלָיו, poetic אֱלֵי), as Arabic إِلَى has; but no word of the root meaning “go toward” is known for it to have come from.",
   "words": [
+    {
+      "lemma": "אֶל",
+      "bdb": [
+        "a.di.aa"
+      ],
+      "cognate_ids": [
+        "ar-ila",
+        "phn-el-to"
+      ],
+      "pos": "preposition",
+      "gloss": "to, toward; into; against; at, by; concerning",
+      "summary": "The commonest Hebrew word of direction: movement or speech toward a place or person. With suffixes it is built on a longer base ending in y (אֵלַי, אֵלָיו, אֲלֵיהֶם), and poetry keeps the long form אֱלֵי (Job 3:22; 5:26), as עַל has עָלַי and עֲלֵי from עלה and עַד has עֲדֵי; Arabic إِلَى “to” does the same (إِلَيْكَ as عَلَيْكَ), and Arabic grammar files it under the root ʾlw with عَلَى under ʿlw. So it is taken as a word of this spelling, from a third-weak root. But no verb or noun of the root meaning “go toward” is found, in scripture or in the cognates, for it to have grown from, as עַל grew from going up: the tie to the root is in its form only, and its sense has no known link to the root's other words.",
+      "senses": [
+        {
+          "gloss": "to, toward (a place)",
+          "definition": "Movement toward a place, to reach it.",
+          "evidence": [
+            {
+              "ref": "Gen.12.1",
+              "role": "defining",
+              "note": "“Go from your land … אֶל־הָאָרֶץ, to the land that I will show you.”"
+            },
+            {
+              "ref": "Num.10.29",
+              "role": "defining",
+              "note": "“We are setting out אֶל־הַמָּקוֹם, to the place of which Yahweh said, I will give it to you.”"
+            },
+            {
+              "ref": "Num.10.30",
+              "note": "Hobab: “I will go to my land and to my kindred.”"
+            },
+            {
+              "ref": "Ecc.3.20",
+              "note": "“All go to one place; all are from the dust, and all return to the dust.”"
+            }
+          ]
+        },
+        {
+          "gloss": "to (a person: speaking, sending, bringing)",
+          "definition": "Marks the one spoken to, sent to, or brought something.",
+          "evidence": [
+            {
+              "ref": "Lev.23.1",
+              "role": "defining",
+              "note": "“Yahweh spoke to Moses, saying …”"
+            },
+            {
+              "ref": "Lev.23.2",
+              "role": "defining",
+              "note": "“Speak to the sons of Israel and say to them (אֲלֵהֶם).”"
+            },
+            {
+              "ref": "Lev.23.10",
+              "note": "“You shall bring the sheaf of the firstfruits of your harvest to the priest.”"
+            },
+            {
+              "ref": "Num.10.1"
+            },
+            {
+              "ref": "Isa.65.2",
+              "note": "“I have spread out my hands all day to a rebellious people”, quoted in Rom 10:21 with πρός."
+            }
+          ]
+        },
+        {
+          "gloss": "toward (turning, looking)",
+          "definition": "The one turned to or looked to, for help or worship.",
+          "evidence": [
+            {
+              "ref": "Isa.45.22",
+              "role": "defining",
+              "note": "“Turn to me and be saved, all the ends of the earth.”"
+            },
+            {
+              "ref": "Num.21.9",
+              "role": "defining",
+              "note": "Whoever was bitten and looked to the bronze serpent lived."
+            },
+            {
+              "ref": "Psa.34.6",
+              "note": "“They looked to him and were radiant.”"
+            },
+            {
+              "ref": "Lev.19.4",
+              "note": "“Do not turn to the nothings.”"
+            }
+          ]
+        },
+        {
+          "gloss": "into",
+          "definition": "Movement into an enclosed place or the midst of something.",
+          "evidence": [
+            {
+              "ref": "Gen.7.1",
+              "role": "defining",
+              "note": "“Come, you and all your house, into the ark.”"
+            },
+            {
+              "ref": "Exo.14.23",
+              "note": "אֶל־תּוֹךְ הַיָּם, “into the midst of the sea.”"
+            },
+            {
+              "ref": "Lev.23.10",
+              "note": "“When you come into the land …”"
+            }
+          ]
+        },
+        {
+          "gloss": "against",
+          "definition": "Movement toward someone in hostility.",
+          "evidence": [
+            {
+              "ref": "Gen.4.8",
+              "role": "defining",
+              "note": "“Cain rose up against Abel his brother and killed him.”"
+            },
+            {
+              "ref": "Jer.50.31",
+              "role": "defining",
+              "note": "הִנְנִי אֵלֶיךָ, “Behold, I am against you, O pride.”"
+            },
+            {
+              "ref": "Nam.2.14"
+            }
+          ]
+        },
+        {
+          "gloss": "at, by",
+          "definition": "Where one arrives and stays: at or beside a place.",
+          "evidence": [
+            {
+              "ref": "Num.10.3",
+              "role": "defining",
+              "note": "“All the congregation shall gather to you (אֵלֶיךָ) at the opening (אֶל־פֶּתַח) of the tent of meeting.”"
+            },
+            {
+              "ref": "Jer.41.12",
+              "role": "defining",
+              "note": "They found Ishmael “by the great waters that are in Gibeon”."
+            },
+            {
+              "ref": "1Sa.20.24",
+              "note": "The king sat at the meal to eat."
+            }
+          ]
+        },
+        {
+          "gloss": "concerning, about",
+          "definition": "The matter spoken or heard about.",
+          "evidence": [
+            {
+              "ref": "Gen.20.2",
+              "role": "defining",
+              "note": "“Abraham said of Sarah his wife, She is my sister.”"
+            },
+            {
+              "ref": "1Sa.4.19",
+              "role": "defining",
+              "note": "She heard the news about the taking of the ark of God."
+            }
+          ]
+        },
+        {
+          "gloss": "in addition to",
+          "definition": "One thing added to another.",
+          "evidence": [
+            {
+              "ref": "Lev.18.18",
+              "role": "defining",
+              "note": "“You shall not take a woman in addition to (אֶל) her sister, as a rival, while she lives.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πρός",
+          "gloss": "to, toward",
+          "evidence": [
+            {
+              "ref": "Rom.10.21",
+              "note": "ἐξεπέτασα τὰς χεῖράς μου πρὸς λαὸν ἀπειθοῦντα, quoting Isa 65:2's אֶל־עַם סוֹרֵר."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 65:2 word 5, אֶל → πρός"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:2 word 6, אֲלֵהֶם → πρός"
+            }
+          ]
+        },
+        {
+          "lemma": "εἰς",
+          "gloss": "into, to",
+          "evidence": [
+            {
+              "ref": "Act.7.3",
+              "note": "“Come into (εἰς) the land which I will show you”, quoting Gen 12:1's אֶל־הָאָרֶץ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 12:1 word 11, אֶל → εἰς"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מִן",
+            "note": "“From” the starting point, set against אֶל the end of the journey.",
+            "evidence": [
+              {
+                "ref": "Gen.12.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַיְדַבֵּר יַהְוֶה אֶל־מֹשֶׁה לֵּאמֹר",
+            "gloss": "and Yahweh spoke to Moses, saying",
+            "evidence": [
+              {
+                "ref": "Lev.23.1"
+              },
+              {
+                "ref": "Num.10.1"
+              }
+            ]
+          },
+          {
+            "phrase": "פָּנִים אֶל־פָּנִים",
+            "gloss": "face to face",
+            "evidence": [
+              {
+                "ref": "Exo.33.11",
+                "note": "“As a man speaks to (אֶל) his friend.”"
+              }
+            ]
+          },
+          {
+            "phrase": "פֶּה אֶל־פֶּה",
+            "gloss": "mouth to mouth",
+            "evidence": [
+              {
+                "ref": "Num.12.8"
+              }
+            ]
+          },
+          {
+            "phrase": "אִישׁ אֶל־אָחִיו",
+            "gloss": "one to another",
+            "evidence": [
+              {
+                "ref": "Gen.37.19"
+              }
+            ]
+          },
+          {
+            "phrase": "נֶאֱסַף אֶל־עַמָּיו",
+            "gloss": "be gathered to one's people (die)",
+            "evidence": [
+              {
+                "ref": "Gen.25.8",
+                "note": "Abraham died “and was gathered to his people”."
+              },
+              {
+                "ref": "Num.20.24"
+              },
+              {
+                "ref": "Num.27.13"
+              },
+              {
+                "ref": "Gen.37.35",
+                "note": "Jacob: “I will go down to my son, mourning, to the grave.”"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוּב אֶל־עָפָר",
+            "gloss": "return to dust",
+            "evidence": [
+              {
+                "ref": "Gen.3.19",
+                "note": "“Until you return to the ground …; for dust you are, and to dust you shall return.”"
+              },
+              {
+                "ref": "Ecc.3.20"
+              },
+              {
+                "ref": "Psa.104.29"
+              }
+            ]
+          },
+          {
+            "phrase": "אֶל־תּוֹךְ",
+            "gloss": "into the midst of",
+            "evidence": [
+              {
+                "ref": "Exo.14.23"
+              }
+            ]
+          },
+          {
+            "phrase": "אֶל־מִחוּץ לַ",
+            "gloss": "to outside of",
+            "evidence": [
+              {
+                "ref": "Lev.4.12",
+                "note": "The bull is carried “outside the camp, to a clean place”."
+              }
+            ]
+          },
+          {
+            "phrase": "הִנְנִי אֵלֶיךָ",
+            "gloss": "behold, I am against you",
+            "evidence": [
+              {
+                "ref": "Jer.50.31"
+              },
+              {
+                "ref": "Jer.51.25"
+              },
+              {
+                "ref": "Nam.2.14"
+              },
+              {
+                "ref": "Nam.3.5"
+              }
+            ]
+          },
+          {
+            "phrase": "אֱלֵי",
+            "gloss": "to (the long form of poetry)",
+            "evidence": [
+              {
+                "ref": "Job.3.22",
+                "note": "“Who rejoice אֱלֵי־גִיל, to exultation, when they find the grave.”"
+              },
+              {
+                "ref": "Job.5.26",
+                "note": "“You will come to the grave in ripe age.”"
+              }
+            ]
+          }
+        ]
+      }
+    },
     {
       "lemma": "אֱלֹהִים",
       "pos": "noun",
@@ -1519,6 +1871,40 @@
         }
       ],
       "note": "A short Arabic god-word of the shape ʾil, whose meaning “God” the Arabic authorities dispute; the same word means a compact or covenant. Possible only."
+    },
+    {
+      "id": "ar-ila",
+      "lang": "ar",
+      "form": "إِلَى",
+      "translit": "ʾilā",
+      "gloss": "to, as far as; toward; till; together with",
+      "relation": "cognate",
+      "note": "The end of a movement, as opposed to مِنْ, its beginning: “I went forth from Kufa to Mecca”; also “toward” (“he looked toward me”) and “until”. Sibawayh holds that its final alif stands for و, as in عَلَى, and with a pronoun it becomes y, إِلَيْكَ as عَلَيْكَ: the same third-weak base as Hebrew אֵלֶיךָ. Lane files it under الو, the article of آلَى “swear” (ar-ala).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, pp. 85–86, art. الو, إِلَى"
+        }
+      ]
+    },
+    {
+      "id": "phn-el-to",
+      "lang": "phn",
+      "form": "𐤀𐤋",
+      "translit": "ʾl",
+      "gloss": "to; as for",
+      "relation": "cognate",
+      "note": "The address of a Punic letter: ʾl ʾršt, “to Arisuth”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 50, ʾL IV, prep. TO; AS FOR (KAI 50.1–2; KAI 1.2)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000975 ʾl [to], PUN000106 ʾl [to]"
+        }
+      ]
     }
   ],
   "doctrine": [
@@ -1571,5 +1957,5 @@
       ]
     }
   ],
-  "note": "The spelling holds words of several older roots, not one semantic origin. Proper names, including the month אֱלוּל, are left for name entries. Terebinth אֵלָה is not filed under this root in the brief (its tree-words go with אַיִל, אֵלוֹן); no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s אֱלֹהִים are read as Jesus reads them (Jhn 10:35), and Psa 8:6’s as Hebrews reads them (Heb 2:7); 1Sa 28:13’s reported vision still needs contextual review.\n\nOpen questions (2026-11-09): (1) The Hebrew forms themselves point to two older roots behind the spelling: אֱלוֹהַּ has a consonantal ה (mappiq), as Sabaic and Arabic ʾlh “god”, while the oath verb is third-weak (וַיֹּאֶל, אָלִית, תַּאֲלָה), as Arabic ʾlw/ʾly “swear”; the lament אֱלִי and the fat tail אַלְיָה are also ʾly. ה is not one of the merged letters the `sounds` field records, so the split shows only here. Against it, Sabaic writes “curse, swear” ʾlh with the same letters as its god-word, and Arabic إِلّ joins “God” (disputed) and “covenant”: whether the oath was first sworn by the god is open. (2) The “power” sense of אֵל (יֵשׁ לְאֵל יָדִי) and the superlative “mountains of God” may be another root (BDB's leads: אול “be strong”); no cognate meaning “power” has been found. (3) אִלּוּ looks like a compound (אִם/אִן + לוּ) rather than a word of this root; consider moving it out. (4) Not found or not checked: Ugaritic has no oath, fat-tail or lament word of this shape in Segert or Fisher; Krahmalkov has no Phoenician ʾlt “oath, curse” (the Arslan Tash amulet's ʾlt, if wanted, needs DNWSI); the Mesha stele text was not checked for ʾl; Ge'ez has no god-word of this root (አምላክ is from mlk), so none is cited; Syriac (Payne Smith) not yet consulted for the lament and fat-tail words.\n\nGloss change (2026-11-09, user's direction): the God-words are glossed “mighty one”, not “God”, because scripture gives the title to men and angels and sets אֵל against man and flesh (Isa 31:3, Ezk 28:2, Hos 11:9), and the idiom יֵשׁ לְאֵל יָדִי uses it for power. Against this: every cognate (Ugaritic il, Akkadian ilu, Phoenician ʾl, Sabaic ʾl/ʾlh, Arabic ʾilāh) means “god”, none “power”, so the sense rests on scripture's use alone; and the superlative uses could run either way (from “mighty” to “divine” or the reverse). Related spellings with י/ו to weigh later: אֵיל גּוֹיִם “mighty one of the nations” of Nebuchadnezzar (Ezk 31:11), אֵילֵי הָאָרֶץ “the mighty of the land” (2Ki 24:15, ketiv אולי), אֱיָלוּת “strength” (Psa 22:20), אוּל “strength” (Psa 73:4).\n\nOath and the Mighty One (2026-11-09, user's direction): the oath words are tied to “mighty one” by scripture's use: the אָלָה is Yahweh's (Deu 29:11), sworn before his altar (1Ki 8:31), carried out by him (Num 5:21, Deu 29:19). Formally the oath verb is third-weak (וַיֹּאֶל, אָלִית), as Arabic ʾlw “swear”, while אֱלוֹהַּ has a consonantal ה and אֵל has no third letter; Sabaic writes both ʾlh. A two-letter base ʾl extended two ways would fit, but is inference. Gal 3:10 quotes Deu 27:26 (אָרוּר), whose curse words are ארר, not this root; the doctrine ties it to אָלָה through Deu 29:19's “written in this book” and Dan 9:11's κατάρα, which Paul uses."
+  "note": "The spelling holds words of several older roots, not one semantic origin. Proper names, including the month אֱלוּל, are left for name entries. Terebinth אֵלָה is not filed under this root in the brief (its tree-words go with אַיִל, אֵלוֹן); no claim about its root is made here. Redirects are omitted. The Hebrew short demonstrative (rootless a.dj.aa) and Aramaic אִלֵּין are included as forms of the demonstrative family. The Aramaic short אֵל (xa.an.aa) has no distinct Aramaic occurrence established here. Exo 21:6 and 22:7–8 can be read as appearing before God or before judges; they are not used to make “judges” an unqualified separate sense. Psalm 82’s אֱלֹהִים are read as Jesus reads them (Jhn 10:35), and Psa 8:6’s as Hebrews reads them (Heb 2:7); 1Sa 28:13’s reported vision still needs contextual review.\n\nOpen questions (2026-11-09): (1) The Hebrew forms themselves point to two older roots behind the spelling: אֱלוֹהַּ has a consonantal ה (mappiq), as Sabaic and Arabic ʾlh “god”, while the oath verb is third-weak (וַיֹּאֶל, אָלִית, תַּאֲלָה), as Arabic ʾlw/ʾly “swear”; the lament אֱלִי and the fat tail אַלְיָה are also ʾly. ה is not one of the merged letters the `sounds` field records, so the split shows only here. Against it, Sabaic writes “curse, swear” ʾlh with the same letters as its god-word, and Arabic إِلّ joins “God” (disputed) and “covenant”: whether the oath was first sworn by the god is open. (2) The “power” sense of אֵל (יֵשׁ לְאֵל יָדִי) and the superlative “mountains of God” may be another root (BDB's leads: אול “be strong”); no cognate meaning “power” has been found. (3) אִלּוּ looks like a compound (אִם/אִן + לוּ) rather than a word of this root; consider moving it out. (4) Not found or not checked: Ugaritic has no oath, fat-tail or lament word of this shape in Segert or Fisher; Krahmalkov has no Phoenician ʾlt “oath, curse” (the Arslan Tash amulet's ʾlt, if wanted, needs DNWSI); the Mesha stele text was not checked for ʾl; Ge'ez has no god-word of this root (አምላክ is from mlk), so none is cited; Syriac (Payne Smith) not yet consulted for the lament and fat-tail words.\n\nGloss change (2026-11-09, user's direction): the God-words are glossed “mighty one”, not “God”, because scripture gives the title to men and angels and sets אֵל against man and flesh (Isa 31:3, Ezk 28:2, Hos 11:9), and the idiom יֵשׁ לְאֵל יָדִי uses it for power. Against this: every cognate (Ugaritic il, Akkadian ilu, Phoenician ʾl, Sabaic ʾl/ʾlh, Arabic ʾilāh) means “god”, none “power”, so the sense rests on scripture's use alone; and the superlative uses could run either way (from “mighty” to “divine” or the reverse). Related spellings with י/ו to weigh later: אֵיל גּוֹיִם “mighty one of the nations” of Nebuchadnezzar (Ezk 31:11), אֵילֵי הָאָרֶץ “the mighty of the land” (2Ki 24:15, ketiv אולי), אֱיָלוּת “strength” (Psa 22:20), אוּל “strength” (Psa 73:4).\n\nOath and the Mighty One (2026-11-09, user's direction): the oath words are tied to “mighty one” by scripture's use: the אָלָה is Yahweh's (Deu 29:11), sworn before his altar (1Ki 8:31), carried out by him (Num 5:21, Deu 29:19). Formally the oath verb is third-weak (וַיֹּאֶל, אָלִית), as Arabic ʾlw “swear”, while אֱלוֹהַּ has a consonantal ה and אֵל has no third letter; Sabaic writes both ʾlh. A two-letter base ʾl extended two ways would fit, but is inference. Gal 3:10 quotes Deu 27:26 (אָרוּר), whose curse words are ארר, not this root; the doctrine ties it to אָלָה through Deu 29:19's “written in this book” and Dan 9:11's κατάρα, which Paul uses.\n\nAdded 2026-11-13: the preposition אֶל (a.di.aa), placed here on the evidence of its form. Its suffixed forms (אֵלַי, אֵלָיו, אֵלֶיךָ, אֲלֵיהֶם) and the poetic אֱלֵי (Job 3:22; 5:26; 15:22; 29:19) show a third-weak base, as עָלָיו/עֲלֵי show for עַל (alah entry, root עלה) and עֲדֵי for עַד; Arabic إِلَى behaves the same and Lane files it under الو (Sibawayh: originally with و, like عَلَى). Phoenician ʾl “to” (Krahmalkov ʾL IV) is the same word. Against it: no verb or noun of ʾlw/ʾly meaning “go toward, reach” is attested in Hebrew or the cognates consulted (Arabic أَلَا is “fall short”, آلَى “swear”), so the link is formal only; the old proposal that the God-words come from this preposition (“the one men reach toward”) has no evidence and is not adopted. Akkadian ana “to” has no l and is not cited. Biblical Aramaic and the Peshitta use לְ and עַל, not אֶל, so there is no Aramaic word. The corpus maps the surfaces אֶל and וְאֶל to both a.di.aa and a.dh.aa (the negative אַל, entry el-al), so lexicon-support counts for both are inflated; the preposition has about 5,500 tokens. The negative אַל, which some join to אֶל, was weighed and kept apart (entry el-al, root אלל). Its senses are illustrated, not exhaustive."
 }
