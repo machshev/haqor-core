@@ -1,0 +1,2190 @@
+{
+  "id": "zebach",
+  "root": "זבח",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "sacrifice",
+    "worship",
+    "altar",
+    "feasts",
+    "idolatry",
+    "judgment"
+  ],
+  "gloss": "slaughter, sacrifice; a sacrifice; altar",
+  "summary": "The verb is to slaughter an animal, above all as an offering to God, but also simply for food (Deu 12:15, 21) and, of God, the slaughter of his enemies (Ezk 39:17). זֶבַח is the slaughtered offering whose blood went on the altar and whose flesh the worshipper ate before God, as in the peace offerings, the thank offering and the Passover (Deu 12:27; Lev 7:15; Exo 12:27); set beside עֹלָה it stands for sacrifice as a whole, which Yahweh values below obedience and covenant faithfulness (1Sa 15:22; Hos 6:6). מִזְבֵּחַ, the place of sacrifice, is the altar. Arabic ḏabaḥa, Ugaritic dbḥ, Phoenician zbḥ, Sabaic ḏbḥ and Aramaic dbḥ share the sense, and Ugaritic, Phoenician, Sabaic and Arabic share the altar noun.",
+  "words": [
+    {
+      "lemma": "מִזְבֵּחַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "altar",
+      "bdb": [
+        "g.ae.ad"
+      ],
+      "cognate_ids": [
+        "ar-madhbah",
+        "uga-mdbh",
+        "phn-mzbh",
+        "sab-mdbht",
+        "arc-madbecha"
+      ],
+      "summary": "The place of slaughter (מ- of place with the root): the raised place of earth or stone on which sacrifices were slaughtered or burnt. By extension also the golden altar of incense, on which nothing was slaughtered. The commonest word of the root.",
+      "senses": [
+        {
+          "id": "altar-of-sacrifice",
+          "gloss": "altar (for sacrifice)",
+          "definition": "A raised structure of earth, uncut stone or bronze on which offerings were made to God: the blood of sacrifices was thrown on it and the burnt offering burnt on it. Its purpose is to be the place of עֹלָה and זֶבַח.",
+          "evidence": [
+            {
+              "ref": "Exo.20.24",
+              "role": "defining",
+              "note": "“An altar of earth you shall make for me, וְזָבַחְתָּ עָלָיו your burnt offerings and your peace offerings”: the altar is where one sacrifices."
+            },
+            {
+              "ref": "Exo.20.25",
+              "note": "An altar of stones, not of hewn stone, “for if you wield your tool on it you have profaned it”."
+            },
+            {
+              "ref": "Deu.27.5",
+              "to": "Deu.27.6",
+              "note": "An altar of whole stones on Mount Ebal, to offer burnt offerings on it."
+            },
+            {
+              "ref": "Jos.22.26",
+              "role": "defining",
+              "note": "The tribes beyond Jordan built an altar “not for burnt offering and not for זָבַח”: an altar is by definition for both, which is why theirs alarmed Israel."
+            },
+            {
+              "ref": "Deu.12.27",
+              "role": "defining",
+              "note": "The burnt offerings, flesh and blood, on the altar of Yahweh; “the blood of your זְבָחִים shall be poured on the altar of Yahweh your God, and the flesh you shall eat”."
+            },
+            {
+              "ref": "Gen.8.20",
+              "role": "defining",
+              "note": "The first altar named: Noah builds an altar to Yahweh after the flood and offers burnt offerings of every clean animal and bird on it."
+            },
+            {
+              "ref": "Gen.12.7",
+              "note": "Abram builds an altar to Yahweh who appeared to him."
+            },
+            {
+              "ref": "Gen.22.9",
+              "role": "defining",
+              "note": "Abraham builds the altar, lays the wood, binds Isaac and lays him on the altar on the wood."
+            },
+            {
+              "ref": "Lev.1.5",
+              "note": "The priests throw the blood of the burnt offering on the altar round about."
+            },
+            {
+              "ref": "Lev.17.11",
+              "role": "defining",
+              "note": "“The life of the flesh is in the blood, and I have given it to you on the altar to make a covering for your souls.”"
+            },
+            {
+              "ref": "1Ki.18.30",
+              "note": "Elijah repairs the altar of Yahweh that was thrown down."
+            },
+            {
+              "ref": "1Ki.18.32"
+            },
+            {
+              "ref": "2Sa.24.25",
+              "note": "David builds an altar on Araunah’s threshing floor and the plague is stayed."
+            },
+            {
+              "ref": "1Ch.21.26",
+              "note": "Yahweh answers David by fire from heaven on the altar of burnt offering."
+            }
+          ],
+          "kin": [
+            "sacrifice-to-god",
+            "slain-offering"
+          ],
+          "senses": [
+            {
+              "id": "tabernacle-altars",
+              "gloss": "the altar of burnt offering; the altar of incense",
+              "definition": "The two altars of the tabernacle and temple: the bronze-covered altar of burnt offering before the tent, with its horns, on which the fire was never to go out, most holy and making holy whatever touched it; and the golden altar of incense within, on which only incense was burnt and on whose horns the blood of the sin offering was put.",
+              "evidence": [
+                {
+                  "ref": "Exo.27.1",
+                  "to": "Exo.27.2",
+                  "role": "defining",
+                  "note": "The altar of acacia wood, five cubits square, with horns at its four corners, overlaid with bronze."
+                },
+                {
+                  "ref": "Exo.30.1",
+                  "role": "defining",
+                  "note": "“You shall make מִזְבֵּחַ מִקְטַר קְטֹרֶת”, an altar for burning incense: the name is kept for an altar where nothing was slaughtered."
+                },
+                {
+                  "ref": "Exo.30.27",
+                  "to": "Exo.30.28",
+                  "note": "מִזְבַּח הַקְּטֹרֶת and מִזְבַּח הָעֹלָה anointed with the tabernacle’s vessels."
+                },
+                {
+                  "ref": "Exo.29.37",
+                  "role": "defining",
+                  "note": "“The altar shall be most holy; whatever touches the altar shall be holy.”"
+                },
+                {
+                  "ref": "Lev.4.7",
+                  "note": "Blood on the horns of the altar of incense; the rest poured at the base of the altar of burnt offering."
+                },
+                {
+                  "ref": "Lev.6.6",
+                  "role": "defining",
+                  "note": "“A fire shall burn continually on the altar; it shall not go out.”"
+                },
+                {
+                  "ref": "Exo.38.30",
+                  "note": "מִזְבַּח הַנְּחֹשֶׁת, the bronze altar."
+                },
+                {
+                  "ref": "1Ki.8.64",
+                  "note": "Solomon’s bronze altar too small to hold the offerings at the dedication."
+                },
+                {
+                  "ref": "Isa.6.6",
+                  "note": "A coal taken from the altar in Isaiah’s vision."
+                },
+                {
+                  "ref": "Psa.43.4",
+                  "note": "“Then I will go to the altar of God, to God my exceeding joy.”"
+                },
+                {
+                  "ref": "Psa.84.4",
+                  "note": "The sparrow’s nest “at your altars, Yahweh of armies”."
+                },
+                {
+                  "ref": "Mal.1.7",
+                  "note": "Defiled bread offered on “my altar”, called “the table of Yahweh”."
+                },
+                {
+                  "ref": "Ezk.43.18",
+                  "note": "“These are the statutes of the altar on the day it is made, to offer burnt offering on it and to throw blood on it.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "altar-of-other-gods",
+          "gloss": "altar of other gods",
+          "definition": "An altar built to Baal or another god, which Israel was commanded to tear down, and which Israel multiplied in its apostasy.",
+          "evidence": [
+            {
+              "ref": "Exo.34.13",
+              "role": "defining",
+              "note": "“Their altars you shall tear down, their pillars break, and their Asherim cut down.”"
+            },
+            {
+              "ref": "Deu.7.5"
+            },
+            {
+              "ref": "Deu.12.3"
+            },
+            {
+              "ref": "Jdg.6.25",
+              "role": "defining",
+              "note": "“Tear down the altar of Baal that your father has.”"
+            },
+            {
+              "ref": "1Ki.16.32",
+              "note": "Ahab sets up an altar for Baal in the house of Baal in Samaria."
+            },
+            {
+              "ref": "Hos.8.11",
+              "role": "defining",
+              "note": "“Ephraim has multiplied altars to sin; they have become to him altars to sin.”"
+            },
+            {
+              "ref": "Hos.10.1",
+              "note": "The more his fruit, the more altars he made."
+            },
+            {
+              "ref": "2Ki.23.20",
+              "note": "Josiah slaughters the priests of the high places on their altars."
+            },
+            {
+              "ref": "1Ki.13.2",
+              "note": "The man of God cries against the altar at Bethel: “Altar, altar …”"
+            },
+            {
+              "ref": "Amo.3.14",
+              "note": "“I will visit the altars of Bethel, and the horns of the altar shall be cut off.”"
+            }
+          ]
+        },
+        {
+          "id": "altar-witness",
+          "gloss": "altar as memorial or witness",
+          "definition": "An altar built and named to commemorate what Yahweh had done or to stand as a witness, sometimes not for sacrifice at all.",
+          "evidence": [
+            {
+              "ref": "Gen.33.20",
+              "role": "defining",
+              "note": "Jacob sets up an altar and calls it אֵל אֱלֹהֵי יִשְׂרָאֵל."
+            },
+            {
+              "ref": "Exo.17.15",
+              "role": "defining",
+              "note": "Moses builds an altar and calls its name יַהְוֶה נִסִּי."
+            },
+            {
+              "ref": "Jdg.6.24",
+              "note": "Gideon’s altar, “Yahweh is peace”."
+            },
+            {
+              "ref": "Jos.22.28",
+              "role": "defining",
+              "note": "“See the pattern of the altar of Yahweh … not for burnt offering nor for sacrifice, but it is a witness between us and you.”"
+            },
+            {
+              "ref": "Jos.22.34",
+              "note": "They named the altar: “it is a witness between us that Yahweh is God”."
+            },
+            {
+              "ref": "Isa.19.19",
+              "to": "Isa.19.20",
+              "note": "“In that day there will be an altar to Yahweh in the midst of the land of Egypt … it will be for a sign and for a witness to Yahweh of armies.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θυσιαστήριον",
+          "gloss": "altar",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.8.20, מִזְבֵּחַ → θυσιαστήριον; 1Ki.19.10, מִזְבְּחֹתֶיךָ → θυσιαστήριά; θυσιαστήριον renders מִזְבֵּחַ ×280"
+            },
+            {
+              "ref": "Rom.11.3",
+              "role": "defining",
+              "note": "Quoting Elijah (1Ki 19:10): “they have dug down your θυσιαστήρια”."
+            },
+            {
+              "ref": "Mat.23.19",
+              "role": "defining",
+              "note": "“Which is greater, the gift, or the altar that sanctifies the gift?”: Exo 29:37, whatever touches the altar is holy."
+            },
+            {
+              "ref": "Mat.5.23",
+              "to": "Mat.5.24",
+              "note": "Leave your gift before the altar and first be reconciled to your brother."
+            },
+            {
+              "ref": "Mat.23.35",
+              "note": "Zechariah slain between the temple and the altar."
+            },
+            {
+              "ref": "Jas.2.21",
+              "note": "Abraham offered Isaac on the altar (Gen 22:9)."
+            },
+            {
+              "ref": "1Co.9.13",
+              "note": "Those who serve at the altar share with the altar."
+            },
+            {
+              "ref": "1Co.10.18",
+              "note": "Those who eat the sacrifices are partakers of the altar."
+            },
+            {
+              "ref": "Heb.13.10",
+              "note": "“We have an altar of which those who serve the tabernacle have no right to eat.”"
+            },
+            {
+              "ref": "Luk.1.11",
+              "note": "An angel at the right of the altar of incense."
+            },
+            {
+              "ref": "Rev.6.9",
+              "note": "The souls of the slain under the altar."
+            }
+          ]
+        },
+        {
+          "lemma": "βωμός",
+          "gloss": "altar (of a pagan god)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.23.1, מִזְבְּחֹת → βωμούς (Balaam’s altars); Jos.22.10; Isa.17.8; βωμός renders מִזְבֵּחַ ×13, mostly altars not of Yahweh’s appointing"
+            },
+            {
+              "ref": "Act.17.23",
+              "role": "defining",
+              "note": "At Athens, “a βωμός with the inscription, To an unknown god”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מַצֵּבָה",
+            "note": "“Pillar”: altars and pillars of other gods named together for destruction; in Isaiah, an altar and a pillar to Yahweh in Egypt.",
+            "evidence": [
+              {
+                "ref": "Exo.34.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.12.3"
+              },
+              {
+                "ref": "Hos.10.1"
+              },
+              {
+                "ref": "Isa.19.19"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּמָה",
+            "note": "“High place”: the people sacrificing at high places and on altars there.",
+            "evidence": [
+              {
+                "ref": "2Ki.23.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.36.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִזְבַּח הָעֹלָה",
+            "gloss": "the altar of burnt offering",
+            "evidence": [
+              {
+                "ref": "Exo.30.28"
+              },
+              {
+                "ref": "Lev.4.7"
+              },
+              {
+                "ref": "1Ch.21.26"
+              }
+            ]
+          },
+          {
+            "phrase": "מִזְבַּח הַקְּטֹרֶת",
+            "gloss": "the altar of incense",
+            "evidence": [
+              {
+                "ref": "Exo.30.27"
+              },
+              {
+                "ref": "Lev.4.7"
+              }
+            ]
+          },
+          {
+            "phrase": "מִזְבַּח הַנְּחֹשֶׁת",
+            "gloss": "the bronze altar",
+            "evidence": [
+              {
+                "ref": "Exo.38.30"
+              },
+              {
+                "ref": "1Ki.8.64"
+              }
+            ]
+          },
+          {
+            "phrase": "קַרְנוֹת הַמִּזְבֵּחַ",
+            "gloss": "the horns of the altar",
+            "evidence": [
+              {
+                "ref": "Exo.27.2"
+              },
+              {
+                "ref": "1Ki.1.50",
+                "note": "Adonijah takes hold of the horns of the altar for refuge."
+              },
+              {
+                "ref": "Psa.118.27"
+              },
+              {
+                "ref": "Amo.3.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זֶבַח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sacrifice, slain offering",
+      "bdb": [
+        "g.ae.ab"
+      ],
+      "cognate_ids": [
+        "ar-dhabaha",
+        "uga-dbh",
+        "phn-zbh",
+        "sab-dbh",
+        "arc-debach",
+        "akk-zibu"
+      ],
+      "summary": "An animal slaughtered as an offering, and the meal made of it: its blood and fat went to the altar and its flesh was eaten by the worshipper and his guests before God. With עֹלָה, the offering wholly burnt, it stands for all sacrifice.",
+      "senses": [
+        {
+          "id": "slain-offering",
+          "gloss": "slain offering, sacrificial meal",
+          "definition": "An animal slaughtered to God, whose blood was poured or thrown on the altar and whose fat was burnt, while its flesh was eaten by the offerer, his household and his guests: a meal before God. So the peace offerings (זֶבַח שְׁלָמִים), the thank offering, the Passover and the family’s yearly sacrifice.",
+          "evidence": [
+            {
+              "ref": "Deu.12.27",
+              "role": "defining",
+              "note": "Burnt offerings, flesh and blood, on the altar; “the blood of your זְבָחִים shall be poured out on the altar, and the flesh you shall eat”: the זֶבַח is the offering that is eaten."
+            },
+            {
+              "ref": "Lev.7.15",
+              "to": "Lev.7.16",
+              "role": "defining",
+              "note": "“The flesh of the זֶבַח of thanksgiving of his peace offerings shall be eaten on the day of his offering.”"
+            },
+            {
+              "ref": "Gen.31.54",
+              "role": "defining",
+              "note": "“Jacob sacrificed a זֶבַח on the mountain and called his brothers to eat bread”: the covenant with Laban sealed with a sacrificial meal."
+            },
+            {
+              "ref": "Exo.18.12",
+              "note": "Jethro brings a burnt offering and זְבָחִים, and Aaron and the elders eat bread with him before God."
+            },
+            {
+              "ref": "1Sa.9.12",
+              "to": "1Sa.9.13",
+              "role": "defining",
+              "note": "“A זֶבַח of the people today at the high place”: the people do not eat till Samuel blesses the זֶבַח, then the invited eat."
+            },
+            {
+              "ref": "1Sa.2.13",
+              "note": "When any man offered a זֶבַח, the priest’s servant came with a fork while the flesh was boiling."
+            },
+            {
+              "ref": "Lev.3.1",
+              "role": "defining",
+              "note": "“If his offering is a זֶבַח שְׁלָמִים”, from the herd, male or female, without blemish."
+            },
+            {
+              "ref": "Lev.7.11",
+              "to": "Lev.7.12",
+              "note": "“This is the law of the זֶבַח of the peace offerings”; if for thanksgiving, with unleavened cakes."
+            },
+            {
+              "ref": "Lev.22.29",
+              "note": "“When you sacrifice a זֶבַח of thanksgiving to Yahweh, you shall sacrifice it for your acceptance.”"
+            },
+            {
+              "ref": "Lev.23.19",
+              "role": "defining",
+              "note": "At חַג שָׁבֻעוֹת, the fiftieth day: one male goat for a sin offering and two lambs a year old לְזֶבַח שְׁלָמִים, the only peace offering the feasts of Lev 23 name."
+            },
+            {
+              "ref": "Lev.23.37",
+              "role": "defining",
+              "note": "“These are the appointed times of Yahweh … to bring an offering by fire to Yahweh: burnt offering and grain offering, זֶבַח and drink offerings, each day’s matter on its day.”"
+            },
+            {
+              "ref": "Num.10.10",
+              "role": "defining",
+              "note": "In the day of gladness, at the appointed times and new moons, “you shall blow the trumpets over your burnt offerings and over זִבְחֵי שַׁלְמֵיכֶם, and they shall be a memorial for you before your God”."
+            },
+            {
+              "ref": "Exo.12.27",
+              "role": "defining",
+              "note": "“It is the זֶבַח of Yahweh’s Passover, who passed over the houses of the sons of Israel in Egypt.”"
+            },
+            {
+              "ref": "Exo.34.25",
+              "note": "“The זֶבַח of the feast of the Passover shall not be left until morning.”"
+            },
+            {
+              "ref": "1Sa.20.6",
+              "note": "“There is a yearly זֶבַח there for all the family.”"
+            },
+            {
+              "ref": "1Sa.20.29",
+              "note": "“Our family has a זֶבַח in the city.”"
+            },
+            {
+              "ref": "1Sa.1.21",
+              "note": "Elkanah goes up to offer the yearly זֶבַח."
+            },
+            {
+              "ref": "Ezk.46.24",
+              "note": "In Ezekiel’s house, the kitchens where the ministers boil the זֶבַח of the people."
+            },
+            {
+              "ref": "Pro.7.14",
+              "note": "“Peace-offering sacrifices are with me; today I have paid my vows”: she has meat to share."
+            }
+          ],
+          "kin": [
+            "sacrifice-to-god",
+            "dibchin"
+          ]
+        },
+        {
+          "id": "sacrifice-worship",
+          "gloss": "sacrifice (as worship)",
+          "definition": "Sacrifice as a whole, the worship of the altar, usually beside עֹלָה or מִנְחָה; what Yahweh says he prizes less than obedience, covenant faithfulness, the knowledge of God, and justice.",
+          "evidence": [
+            {
+              "ref": "Exo.10.25",
+              "note": "“You must also give into our hand זְבָחִים and burnt offerings, that we may sacrifice to Yahweh our God.”"
+            },
+            {
+              "ref": "1Sa.15.22",
+              "role": "defining",
+              "note": "“Has Yahweh as great delight in burnt offerings and זְבָחִים as in obeying the voice of Yahweh? To obey is better than זֶבַח.”"
+            },
+            {
+              "ref": "Hos.6.6",
+              "role": "defining",
+              "note": "“I desire חֶסֶד and not זָבַח, and the knowledge of God more than burnt offerings.”"
+            },
+            {
+              "ref": "Pro.21.3",
+              "role": "defining",
+              "note": "“To do righteousness and justice is more chosen by Yahweh than זָבַח.”"
+            },
+            {
+              "ref": "Psa.40.7",
+              "role": "defining",
+              "note": "“זֶבַח and grain offering you did not desire; ears you have dug for me; burnt offering and sin offering you did not ask.”"
+            },
+            {
+              "ref": "Psa.51.18",
+              "note": "“You do not delight in זֶבַח, or I would give it.”"
+            },
+            {
+              "ref": "Jer.7.22",
+              "to": "Jer.7.23",
+              "note": "“I did not speak to your fathers … concerning burnt offering and זָבַח, but this I commanded: Obey my voice.”"
+            },
+            {
+              "ref": "Isa.1.11",
+              "note": "“What to me is the multitude of your זְבָחִים?”"
+            },
+            {
+              "ref": "Amo.5.25",
+              "note": "“Did you bring me זְבָחִים and offering in the wilderness forty years, house of Israel?”"
+            },
+            {
+              "ref": "Pro.15.8",
+              "note": "“The זֶבַח of the wicked is an abomination to Yahweh, but the prayer of the upright is his delight.”"
+            },
+            {
+              "ref": "Pro.21.27"
+            },
+            {
+              "ref": "Ecc.4.17",
+              "note": "To draw near to listen is better than the זֶבַח of fools."
+            },
+            {
+              "ref": "Psa.50.8",
+              "note": "“Not for your זְבָחִים do I reprove you.”"
+            },
+            {
+              "ref": "Psa.50.5",
+              "note": "“My faithful ones, who cut my covenant over זָבַח.”"
+            },
+            {
+              "ref": "Hos.3.4",
+              "note": "Israel many days without king, prince or זֶבַח."
+            },
+            {
+              "ref": "2Ch.7.12",
+              "note": "“I have chosen this place for myself as a house of זָבַח.”"
+            },
+            {
+              "ref": "Isa.56.7",
+              "note": "“Their burnt offerings and their זְבָחִים will be accepted on my altar, for my house shall be called a house of prayer for all peoples.”"
+            },
+            {
+              "ref": "Isa.19.21",
+              "note": "Egypt will know Yahweh and serve with זֶבַח and offering."
+            },
+            {
+              "ref": "Jer.33.18",
+              "note": "The Levitical priests will not lack a man to offer burnt offerings and make זֶבַח continually."
+            }
+          ]
+        },
+        {
+          "id": "sacrifice-other-gods",
+          "gloss": "sacrifice to other gods",
+          "definition": "A sacrifice and its feast made to an idol, to which Israel was invited and in which it shared.",
+          "evidence": [
+            {
+              "ref": "Exo.34.15",
+              "role": "defining",
+              "note": "Lest they “sacrifice to their gods, and one invites you and you eat of his זֶבַח”."
+            },
+            {
+              "ref": "Num.25.2",
+              "role": "defining",
+              "note": "The women of Moab “called the people to the זִבְחֵי of their gods, and the people ate and bowed down to their gods”."
+            },
+            {
+              "ref": "Psa.106.28",
+              "note": "They joined Baal of Peor and ate the זִבְחֵי of the dead."
+            },
+            {
+              "ref": "Lev.17.7",
+              "note": "“They shall no more sacrifice their זְבָחִים to the goat-idols.”"
+            },
+            {
+              "ref": "Jdg.16.23",
+              "note": "The Philistine lords gather to sacrifice a great זֶבַח to Dagon."
+            },
+            {
+              "ref": "2Ki.10.19",
+              "note": "Jehu’s pretended “great זֶבַח to Baal”."
+            }
+          ]
+        },
+        {
+          "id": "yahwehs-sacrifice",
+          "gloss": "Yahweh’s sacrifice: the slaughter of his enemies",
+          "definition": "The slaughter Yahweh makes of the nations in his day of judgment, called his זֶבַח, with the birds and beasts, or his consecrated guests, called to it.",
+          "evidence": [
+            {
+              "ref": "Isa.34.6",
+              "role": "defining",
+              "note": "“The sword of Yahweh is full of blood … for Yahweh has a זֶבַח in Bozrah, and a great slaughter (טֶבַח) in the land of Edom.”"
+            },
+            {
+              "ref": "Jer.46.10",
+              "role": "defining",
+              "note": "The sword devours and is sated with their blood, “for the Lord Yahweh of armies has a זֶבַח in the north country by the river Euphrates”."
+            },
+            {
+              "ref": "Ezk.39.17",
+              "role": "defining",
+              "note": "Birds and beasts summoned “to my זֶבַח that I am sacrificing for you, a great זֶבַח on the mountains of Israel; you shall eat flesh and drink blood”."
+            },
+            {
+              "ref": "Ezk.39.19"
+            },
+            {
+              "ref": "Zep.1.7",
+              "to": "Zep.1.8",
+              "note": "“The day of Yahweh is near; Yahweh has prepared a זֶבַח, he has consecrated his guests”; “in the day of Yahweh’s זֶבַח I will visit the princes”."
+            }
+          ],
+          "kin": [
+            "slaughter-in-judgment"
+          ]
+        },
+        {
+          "id": "sacrifice-figurative",
+          "gloss": "sacrifice of the heart; feasting",
+          "definition": "Used beyond the animal: a broken spirit as the sacrifice God accepts, sacrifices offered in righteousness, and a house full of feasting (‘sacrifices’) with strife.",
+          "evidence": [
+            {
+              "ref": "Psa.51.19",
+              "role": "defining",
+              "note": "“The זִבְחֵי of God are a broken spirit; a broken and crushed heart, God, you will not despise.”"
+            },
+            {
+              "ref": "Psa.4.6",
+              "note": "“Sacrifice זִבְחֵי צֶדֶק, and trust in Yahweh.”"
+            },
+            {
+              "ref": "Psa.51.21",
+              "note": "“Then you will delight in זִבְחֵי צֶדֶק.”"
+            },
+            {
+              "ref": "Deu.33.19",
+              "note": "Zebulun and Issachar call peoples to the mountain and offer זִבְחֵי צֶדֶק there."
+            },
+            {
+              "ref": "Pro.17.1",
+              "role": "defining",
+              "note": "“Better a dry morsel and quiet with it than a house full of זִבְחֵי strife”: the feasting meat of the sacrifices."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θυσία",
+          "gloss": "sacrifice",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hos.6.6, זָבַח → θυσίαν; Psa.40.7, זֶבַח → θυσίαν; Lev.23.19 and Num.10.10, θυσία; θυσία renders זֶבַח ×125"
+            },
+            {
+              "ref": "Mat.9.13",
+              "role": "defining",
+              "note": "“Go and learn what this means: I desire mercy and not θυσίαν” (Hos 6:6)."
+            },
+            {
+              "ref": "Mat.12.7",
+              "role": "defining",
+              "note": "Hos 6:6 again, against condemning the guiltless."
+            },
+            {
+              "ref": "Mrk.12.33",
+              "note": "To love God and one’s neighbour is more than all burnt offerings and θυσιῶν (1Sa 15:22; Hos 6:6)."
+            },
+            {
+              "ref": "Heb.10.5",
+              "to": "Heb.10.10",
+              "role": "defining",
+              "note": "Psa 40:7–9 quoted: “θυσίαν and offering you did not desire, but a body you prepared for me … I have come to do your will”; and by that will we are made holy through the offering of the body of Jesus Christ once for all."
+            },
+            {
+              "ref": "Act.7.42",
+              "note": "Amo 5:25 quoted: “Did you offer me slain beasts and θυσίας forty years in the wilderness?”"
+            },
+            {
+              "ref": "1Co.10.18",
+              "note": "“Are not those who eat the θυσίας partakers of the altar?”: the eaten offering."
+            },
+            {
+              "ref": "Eph.5.2",
+              "note": "Christ gave himself for us, an offering and θυσίαν to God for a sweet-smelling savour."
+            },
+            {
+              "ref": "Heb.9.26",
+              "note": "He has appeared once to put away sin by the θυσίας of himself."
+            },
+            {
+              "ref": "Heb.13.15",
+              "to": "Heb.13.16",
+              "note": "“Let us offer the θυσίαν of praise to God continually, the fruit of lips”; doing good and sharing are θυσίαι God is pleased with."
+            },
+            {
+              "ref": "Rom.12.1",
+              "note": "Present your bodies a living θυσίαν, holy, acceptable to God."
+            },
+            {
+              "ref": "1Pe.2.5",
+              "note": "To offer spiritual θυσίας acceptable to God through Jesus Christ."
+            },
+            {
+              "ref": "Php.4.18"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עֹלָה",
+            "note": "“Burnt offering”: the offering wholly burnt, paired with זֶבַח, the offering eaten, to stand for all sacrifice.",
+            "evidence": [
+              {
+                "ref": "Exo.10.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.18.12"
+              },
+              {
+                "ref": "Deu.12.27",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.15.22"
+              },
+              {
+                "ref": "Jer.7.22"
+              },
+              {
+                "ref": "2Ki.5.17"
+              }
+            ]
+          },
+          {
+            "lemma": "מִנְחָה",
+            "note": "“Grain offering, gift”: זֶבַח וּמִנְחָה, slain offering and grain offering together.",
+            "evidence": [
+              {
+                "ref": "1Sa.2.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.40.7"
+              },
+              {
+                "ref": "Amo.5.25"
+              },
+              {
+                "ref": "Isa.19.21"
+              },
+              {
+                "ref": "Lev.23.37"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שְׁמֹעַ",
+            "note": "Obeying Yahweh’s voice, set above זֶבַח.",
+            "evidence": [
+              {
+                "ref": "1Sa.15.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.7.23"
+              }
+            ]
+          },
+          {
+            "lemma": "חֶסֶד",
+            "note": "Covenant faithfulness, desired “and not זָבַח”, with the knowledge of God.",
+            "evidence": [
+              {
+                "ref": "Hos.6.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "צְדָקָה וּמִשְׁפָּט",
+            "note": "Righteousness and justice, more chosen by Yahweh than זָבַח.",
+            "evidence": [
+              {
+                "ref": "Pro.21.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "תְּפִלָּה",
+            "note": "“The זֶבַח of the wicked is an abomination, but the prayer of the upright his delight.”",
+            "evidence": [
+              {
+                "ref": "Pro.15.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "זֶבַח שְׁלָמִים",
+            "gloss": "sacrifice of peace offerings",
+            "evidence": [
+              {
+                "ref": "Lev.3.1"
+              },
+              {
+                "ref": "Lev.7.11"
+              },
+              {
+                "ref": "Lev.23.19"
+              },
+              {
+                "ref": "Num.10.10"
+              }
+            ]
+          },
+          {
+            "phrase": "זֶבַח תּוֹדָה",
+            "gloss": "sacrifice of thanksgiving",
+            "evidence": [
+              {
+                "ref": "Lev.7.12"
+              },
+              {
+                "ref": "Lev.22.29"
+              },
+              {
+                "ref": "Psa.107.22"
+              },
+              {
+                "ref": "Psa.116.17"
+              }
+            ]
+          },
+          {
+            "phrase": "זֶבַח פֶּסַח",
+            "gloss": "the Passover sacrifice",
+            "evidence": [
+              {
+                "ref": "Exo.12.27"
+              },
+              {
+                "ref": "Exo.34.25"
+              }
+            ]
+          },
+          {
+            "phrase": "זֶבַח הַיָּמִים",
+            "gloss": "the yearly sacrifice",
+            "evidence": [
+              {
+                "ref": "1Sa.1.21"
+              },
+              {
+                "ref": "1Sa.2.19"
+              },
+              {
+                "ref": "1Sa.20.6"
+              }
+            ]
+          },
+          {
+            "phrase": "זִבְחֵי צֶדֶק",
+            "gloss": "sacrifices of righteousness",
+            "evidence": [
+              {
+                "ref": "Deu.33.19"
+              },
+              {
+                "ref": "Psa.4.6"
+              },
+              {
+                "ref": "Psa.51.21"
+              }
+            ]
+          },
+          {
+            "phrase": "זָבַח זֶבַח",
+            "gloss": "sacrifice a sacrifice (verb with its own noun)",
+            "evidence": [
+              {
+                "ref": "Gen.31.54"
+              },
+              {
+                "ref": "Lev.19.5"
+              },
+              {
+                "ref": "Jon.1.16"
+              },
+              {
+                "ref": "Psa.116.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זָבַח",
+      "pos": "verb",
+      "gloss": "slaughter; sacrifice",
+      "bdb": [
+        "g.ae.aa"
+      ],
+      "cognate_ids": [
+        "ar-dhabaha",
+        "uga-dbh",
+        "phn-zbh",
+        "sab-dbh",
+        "arc-debach",
+        "gez-zabha"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "slaughter, sacrifice",
+          "senses": [
+            {
+              "id": "sacrifice-to-god",
+              "gloss": "sacrifice (an animal) to God",
+              "definition": "Slaughter an animal as an offering to Yahweh, at his altar or in the place he chooses; often with its own noun, “sacrifice a זֶבַח”. To sacrifice to someone is to worship him, so it belongs to Yahweh alone.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.24",
+                  "role": "defining",
+                  "note": "“An altar of earth you shall make for me, וְזָבַחְתָּ on it your burnt offerings and your peace offerings, your sheep and your oxen.”"
+                },
+                {
+                  "ref": "Lev.19.5",
+                  "note": "“When you sacrifice a זֶבַח of peace offerings to Yahweh, you shall sacrifice it for your acceptance.”"
+                },
+                {
+                  "ref": "Lev.22.29"
+                },
+                {
+                  "ref": "Deu.16.2",
+                  "role": "defining",
+                  "note": "“וְזָבַחְתָּ the Passover to Yahweh your God, of the flock and the herd, in the place Yahweh chooses.”"
+                },
+                {
+                  "ref": "Deu.16.5",
+                  "to": "Deu.16.6"
+                },
+                {
+                  "ref": "Exo.3.18",
+                  "note": "“Let us go three days’ journey into the wilderness, that we may sacrifice to Yahweh our God.”"
+                },
+                {
+                  "ref": "Gen.46.1",
+                  "note": "Israel at Beersheba “sacrificed זְבָחִים to the God of his father Isaac”."
+                },
+                {
+                  "ref": "1Sa.1.3",
+                  "role": "defining",
+                  "note": "Elkanah went up yearly “to worship and to sacrifice to Yahweh of armies in Shiloh”."
+                },
+                {
+                  "ref": "2Ki.17.35",
+                  "to": "2Ki.17.36",
+                  "role": "defining",
+                  "note": "“You shall not fear other gods, nor bow down to them, nor serve them, nor sacrifice to them; but Yahweh … him you shall fear, to him you shall bow down, and to him you shall sacrifice.”"
+                },
+                {
+                  "ref": "Psa.50.14",
+                  "note": "“Sacrifice to God thanksgiving, and pay your vows to the Most High.”"
+                },
+                {
+                  "ref": "Psa.50.23",
+                  "note": "“Whoever sacrifices thanksgiving honours me.”"
+                },
+                {
+                  "ref": "Psa.107.22"
+                },
+                {
+                  "ref": "Psa.116.17"
+                },
+                {
+                  "ref": "Jon.1.16",
+                  "note": "The sailors feared Yahweh, sacrificed a זֶבַח to Yahweh and made vows."
+                },
+                {
+                  "ref": "1Sa.15.21",
+                  "note": "The people took the best of the devoted spoil “to sacrifice to Yahweh your God in Gilgal”."
+                },
+                {
+                  "ref": "2Sa.6.13",
+                  "note": "When the bearers of the ark had gone six paces, David sacrificed an ox and a fatling."
+                },
+                {
+                  "ref": "1Ki.8.62",
+                  "to": "1Ki.8.63"
+                },
+                {
+                  "ref": "Zec.14.21",
+                  "note": "“All who sacrifice will come and take of them and boil in them.”"
+                }
+              ],
+              "kin": [
+                "slain-offering",
+                "altar-of-sacrifice"
+              ]
+            },
+            {
+              "id": "slaughter-for-food",
+              "gloss": "slaughter (for food)",
+              "definition": "Slaughter an animal to eat its meat, with no altar or offering in view: the law allows it in any town once the altar is far off, and so a host kills for a guest or a feast.",
+              "evidence": [
+                {
+                  "ref": "Deu.12.15",
+                  "role": "defining",
+                  "note": "“Only, with all the desire of your soul you may תִּזְבַּח and eat flesh in all your gates … the unclean and the clean may eat it, as the gazelle and the deer”: not an offering, since the unclean may eat it."
+                },
+                {
+                  "ref": "Deu.12.21",
+                  "role": "defining",
+                  "note": "“If the place Yahweh chooses is too far from you, וְזָבַחְתָּ of your herd and flock … and eat in your gates.”"
+                },
+                {
+                  "ref": "1Sa.28.24",
+                  "role": "defining",
+                  "note": "The woman at En-dor had a fatted calf; she hurried and slaughtered it, and baked unleavened bread, for Saul to eat."
+                },
+                {
+                  "ref": "1Ki.19.21",
+                  "note": "Elisha slaughters his yoke of oxen, boils the flesh with their gear and gives it to the people."
+                },
+                {
+                  "ref": "1Ki.1.9",
+                  "note": "Adonijah slaughters sheep, oxen and fatlings and calls the king’s sons: a feast."
+                },
+                {
+                  "ref": "Ezk.34.3",
+                  "note": "The shepherds eat the fat, wear the wool, slaughter the fatlings, but do not feed the sheep."
+                }
+              ]
+            },
+            {
+              "id": "sacrifice-to-idols",
+              "gloss": "sacrifice to other gods",
+              "definition": "Slaughter offerings to an idol or other god, which the law punished with destruction; at its worst, sacrifice of sons and daughters.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.19",
+                  "role": "defining",
+                  "note": "“Whoever sacrifices to any god (לָאֱלֹהִים) shall be devoted to destruction, except to Yahweh alone.”"
+                },
+                {
+                  "ref": "Exo.32.8",
+                  "note": "They made a calf, bowed down to it and sacrificed to it."
+                },
+                {
+                  "ref": "Deu.32.17",
+                  "role": "defining",
+                  "note": "“They sacrificed to שֵׁדִים, not God (אֱלֹהַּ), gods they had not known, new ones that came lately.”"
+                },
+                {
+                  "ref": "Psa.106.37",
+                  "role": "defining",
+                  "note": "“They sacrificed their sons and their daughters to the שֵׁדִים”, whom verse 38 calls “the idols of Canaan”."
+                },
+                {
+                  "ref": "Ezk.16.20",
+                  "note": "Jerusalem took the sons and daughters she bore and sacrificed them to her idols to be devoured."
+                },
+                {
+                  "ref": "Lev.17.7",
+                  "note": "No more sacrifices to the goat-idols."
+                },
+                {
+                  "ref": "Jdg.16.23"
+                },
+                {
+                  "ref": "Hos.13.2",
+                  "note": "“Those who sacrifice men kiss calves.”"
+                },
+                {
+                  "ref": "Exo.34.15"
+                }
+              ]
+            },
+            {
+              "id": "slaughter-in-judgment",
+              "gloss": "slaughter (men) in judgment",
+              "definition": "Slay men as a sacrifice is slain, as a judgment: Josiah on the altars of Bethel, and Yahweh on the mountains of Israel.",
+              "evidence": [
+                {
+                  "ref": "1Ki.13.2",
+                  "role": "defining",
+                  "note": "“A son will be born to the house of David, Josiah by name, וְזָבַח on you the priests of the high places who burn incense on you.”"
+                },
+                {
+                  "ref": "2Ki.23.20",
+                  "role": "defining",
+                  "note": "Fulfilled: “he slaughtered all the priests of the high places who were there on the altars, and burned men’s bones on them”."
+                },
+                {
+                  "ref": "Ezk.39.17",
+                  "note": "“My זֶבַח that I am זֹבֵחַ for you.”"
+                },
+                {
+                  "ref": "Ezk.39.19"
+                }
+              ],
+              "kin": [
+                "yahwehs-sacrifice"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "sacrifice (repeatedly, in number)",
+          "senses": [
+            {
+              "gloss": "keep sacrificing; sacrifice in multitudes",
+              "definition": "Offer sacrifice again and again or in great number: the people at the high places, Israel to the Baals, and Solomon’s countless sheep and oxen at the ark. Mostly of worship Yahweh condemned.",
+              "evidence": [
+                {
+                  "ref": "1Ki.8.5",
+                  "role": "defining",
+                  "note": "Solomon and all Israel before the ark “sacrificing sheep and oxen that could not be counted or numbered for multitude”."
+                },
+                {
+                  "ref": "2Ch.5.6"
+                },
+                {
+                  "ref": "2Ch.30.22",
+                  "note": "Seven days of the feast, “sacrificing זִבְחֵי שְׁלָמִים and giving thanks to Yahweh”."
+                },
+                {
+                  "ref": "1Ki.3.2",
+                  "role": "defining",
+                  "note": "“The people were sacrificing at the high places, because no house had yet been built for Yahweh’s name.”"
+                },
+                {
+                  "ref": "1Ki.3.3"
+                },
+                {
+                  "ref": "2Ki.12.4",
+                  "note": "“The people still sacrificed and burned incense on the high places”, repeated of reign after reign."
+                },
+                {
+                  "ref": "2Ki.14.4"
+                },
+                {
+                  "ref": "2Ki.15.4"
+                },
+                {
+                  "ref": "Hos.4.13",
+                  "note": "On the tops of the mountains they sacrifice, and burn incense on the hills."
+                },
+                {
+                  "ref": "Hos.11.2",
+                  "role": "defining",
+                  "note": "“They kept sacrificing to the Baals and burning incense to images.”"
+                },
+                {
+                  "ref": "Hab.1.16",
+                  "note": "The Chaldean “sacrifices to his net and burns incense to his dragnet”."
+                },
+                {
+                  "ref": "Psa.106.38",
+                  "note": "Their sons and daughters “whom they sacrificed to the idols of Canaan”."
+                },
+                {
+                  "ref": "2Ch.28.23",
+                  "note": "Ahaz sacrificed to the gods of Damascus that struck him."
+                },
+                {
+                  "ref": "1Ki.11.8",
+                  "note": "Solomon’s foreign wives burning incense and sacrificing to their gods."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θύω",
+          "gloss": "sacrifice; slaughter, kill",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.20.24, וְזָבַחְתָּ → θύσετε; Deu.32.17, יִזְבְּחוּ → ἔθυσαν; θύω renders זָבַח ×37 as lemma and in many further inflected forms"
+            },
+            {
+              "ref": "1Co.10.20",
+              "role": "defining",
+              "note": "“The things the Gentiles θύουσιν, they θύουσιν to demons and not to God”: the words of Deu 32:17."
+            },
+            {
+              "ref": "1Co.5.7",
+              "role": "defining",
+              "note": "“Christ our Passover ἐτύθη for us”: the זֶבַח פֶּסַח of Exo 12:27 and Deu 16:2."
+            },
+            {
+              "ref": "Mrk.14.12",
+              "note": "The first day of unleavened bread, “when they ἔθυον the Passover”."
+            },
+            {
+              "ref": "Luk.22.7"
+            },
+            {
+              "ref": "Act.10.13",
+              "role": "defining",
+              "note": "“Rise, Peter, θῦσον and eat”: slaughter for food, as Deu 12:15."
+            },
+            {
+              "ref": "Act.11.7"
+            },
+            {
+              "ref": "Luk.15.23",
+              "note": "“Bring the fatted calf, θύσατε, and let us eat and be merry”, as at En-dor (1Sa 28:24)."
+            },
+            {
+              "ref": "Mat.22.4",
+              "note": "“My oxen and fatlings τεθυμένα”, for the wedding feast."
+            },
+            {
+              "ref": "Act.14.13",
+              "note": "The priest of Zeus at Lystra wanted to sacrifice to Paul and Barnabas."
+            },
+            {
+              "ref": "Act.14.18"
+            },
+            {
+              "ref": "Jhn.10.10",
+              "note": "The thief comes only to steal and θύσῃ and destroy."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קִטֵּר",
+            "note": "“Burn incense”, beside the piel at the high places and to other gods.",
+            "evidence": [
+              {
+                "ref": "1Ki.3.3",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.12.4"
+              },
+              {
+                "ref": "Hos.4.13"
+              },
+              {
+                "ref": "Hos.11.2"
+              },
+              {
+                "ref": "Hab.1.16"
+              }
+            ]
+          },
+          {
+            "lemma": "הִשְׁתַּחֲוָה",
+            "note": "“Bow down, worship”: sacrifice is an act of worship, owed to the one bowed to.",
+            "evidence": [
+              {
+                "ref": "1Sa.1.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.32.8"
+              },
+              {
+                "ref": "2Ki.17.35",
+                "to": "2Ki.17.36"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁחַט",
+            "note": "“Slaughter”, the plain act: “he who slaughters an ox … he who sacrifices a lamb”.",
+            "evidence": [
+              {
+                "ref": "Isa.66.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שִׁלֵּם נְדָרִים",
+            "note": "“Pay vows”, beside sacrificing thanksgiving.",
+            "evidence": [
+              {
+                "ref": "Psa.50.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Jon.1.16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "דְּבַח",
+      "lang": "arc",
+      "root": "דבח",
+      "pos": "verb",
+      "gloss": "sacrifice",
+      "bdb": [
+        "xd.ab.aa"
+      ],
+      "cognate_ids": [
+        "ar-dhabaha",
+        "uga-dbh",
+        "arc-debach"
+      ],
+      "summary": "Biblical Aramaic, once, in Cyrus’s decree; Aramaic ד answers to Hebrew ז from older ḏ.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sacrifice",
+          "senses": [
+            {
+              "gloss": "sacrifice (in the house of God)",
+              "definition": "Offer sacrifices: the house in Jerusalem is to be rebuilt as the place where they are offered.",
+              "evidence": [
+                {
+                  "ref": "Ezr.6.3",
+                  "role": "defining",
+                  "note": "“Let the house be built, the place אֲתַר דִּי דָבְחִין דִּבְחִין, where they sacrifice sacrifices.”"
+                }
+              ],
+              "kin": [
+                "sacrifice-to-god"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דְּבַח",
+      "lang": "arc",
+      "root": "דבח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sacrifice",
+      "bdb": [
+        "xd.ab.ab"
+      ],
+      "cognate_ids": [
+        "ar-dhabaha",
+        "uga-dbh",
+        "arc-debach"
+      ],
+      "senses": [
+        {
+          "id": "dibchin",
+          "gloss": "sacrifice",
+          "definition": "A sacrifice offered at the house of God, as Hebrew זֶבַח.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.3",
+              "role": "defining",
+              "note": "“The place where they sacrifice דִּבְחִין.”"
+            }
+          ],
+          "kin": [
+            "slain-offering"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַדְבַּח",
+      "lang": "arc",
+      "root": "מדבח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "altar",
+      "bdb": [
+        "xd.ab.ac"
+      ],
+      "cognate_ids": [
+        "ar-madhbah",
+        "uga-mdbh",
+        "arc-madbecha"
+      ],
+      "senses": [
+        {
+          "gloss": "altar",
+          "definition": "The altar of the house of God in Jerusalem, on which Ezra is to offer the bulls, rams and lambs bought with the king’s silver.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.17",
+              "role": "defining",
+              "note": "“You shall offer them עַל מַדְבְּחָה of the house of your God in Jerusalem.”"
+            }
+          ],
+          "kin": [
+            "altar-of-sacrifice"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דְּבַח",
+      "lang": "syc",
+      "root": "דבח",
+      "pos": "verb",
+      "gloss": "sacrifice",
+      "summary": "The Peshitta’s ܕܒܚ (dbaḥ), where the Greek has θύω, and once (Heb 9:28) of Christ being offered.",
+      "cognate_ids": [
+        "ar-dhabaha",
+        "arc-debach"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sacrifice",
+          "senses": [
+            {
+              "gloss": "sacrifice (the Passover; to demons); be offered",
+              "definition": "Sacrifice the Passover lamb; what the nations sacrifice to demons; and of Christ, offered once.",
+              "evidence": [
+                {
+                  "ref": "Mrk.14.12",
+                  "role": "defining",
+                  "note": "“On the first day of unleavened bread, when the Jews דָּבְחִין the Passover.”"
+                },
+                {
+                  "ref": "1Co.10.20",
+                  "role": "defining",
+                  "note": "What the nations sacrifice, “to demons they sacrifice and not to God” (Deu 32:17)."
+                },
+                {
+                  "ref": "Heb.9.28",
+                  "role": "defining",
+                  "note": "“So Christ was offered (ܕܒܚ) once, to bear the sins of many”: the Peshitta has the root of sacrifice where the Greek has προσενεχθείς."
+                }
+              ],
+              "kin": [
+                "sacrifice-to-god"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "sacrifice",
+          "senses": [
+            {
+              "gloss": "sacrifice (to idols, or to men as gods)",
+              "definition": "Offer sacrifice: to the calf in the wilderness, and at Lystra to Paul and Barnabas taken for gods.",
+              "evidence": [
+                {
+                  "ref": "Act.7.41",
+                  "role": "defining",
+                  "note": "“They made a calf in those days and sacrificed sacrifices to the idol.”"
+                },
+                {
+                  "ref": "Act.14.13",
+                  "role": "defining",
+                  "note": "The priest of Zeus brought bulls and garlands, wishing to sacrifice."
+                },
+                {
+                  "ref": "Act.14.18"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֶּבְחָא",
+      "lang": "syc",
+      "root": "דבח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sacrifice, victim",
+      "summary": "The Peshitta’s ܕܒܚܐ (debḥā), for θυσία and also for εἰδωλόθυτα, things sacrificed to idols.",
+      "cognate_ids": [
+        "ar-dhabaha",
+        "arc-debach"
+      ],
+      "senses": [
+        {
+          "gloss": "sacrifice",
+          "definition": "The sacrifices of the law, which could not make the worshipper perfect, set against the one sacrifice of Christ; and sacrifices to idols.",
+          "evidence": [
+            {
+              "ref": "Heb.10.5",
+              "role": "defining",
+              "note": "Psa 40:7: “ܕܒܚܐ and offering you did not desire, but a body you have prepared for me.”"
+            },
+            {
+              "ref": "Heb.10.1",
+              "note": "The law with the same sacrifices year by year cannot perfect those who draw near."
+            },
+            {
+              "ref": "Heb.10.12",
+              "role": "defining",
+              "note": "He offered one sacrifice for sins and sat down for ever at the right hand of God."
+            },
+            {
+              "ref": "Eph.5.2"
+            },
+            {
+              "ref": "1Co.10.18",
+              "note": "Those who eat the sacrifices share the altar."
+            },
+            {
+              "ref": "1Co.8.4",
+              "note": "Concerning eating what is sacrificed to idols: an idol is nothing in the world."
+            },
+            {
+              "ref": "Mrk.12.33"
+            },
+            {
+              "ref": "1Pe.2.5"
+            }
+          ],
+          "kin": [
+            "slain-offering",
+            "sacrifice-worship"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֶּבְחְתָא",
+      "lang": "syc",
+      "root": "דבח",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sacrifice",
+      "summary": "The Peshitta’s ܕܒܚܬܐ (debḥtā), a second noun for θυσία; it is the word in Hos 6:6 as Jesus quotes it.",
+      "cognate_ids": [
+        "ar-dhabaha",
+        "arc-debach"
+      ],
+      "senses": [
+        {
+          "gloss": "sacrifice",
+          "definition": "Sacrifice, set below mercy; the living sacrifice of the believer’s body; Abel’s better sacrifice.",
+          "evidence": [
+            {
+              "ref": "Mat.9.13",
+              "role": "defining",
+              "note": "“I desire mercy and not ܕܒܚܬܐ” (Hos 6:6)."
+            },
+            {
+              "ref": "Mat.12.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Rom.12.1",
+              "note": "Present your bodies a living sacrifice."
+            },
+            {
+              "ref": "Heb.11.4",
+              "note": "By faith Abel offered God a better sacrifice than Cain."
+            },
+            {
+              "ref": "Heb.10.26",
+              "note": "For wilful sin there remains no more sacrifice."
+            },
+            {
+              "ref": "Luk.2.24",
+              "note": "To offer a sacrifice according to the law, a pair of turtledoves."
+            },
+            {
+              "ref": "Act.7.42"
+            }
+          ],
+          "kin": [
+            "sacrifice-worship"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַדְבְּחָא",
+      "lang": "syc",
+      "root": "דבח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "altar",
+      "summary": "The Peshitta’s ܡܕܒܚܐ (madbḥā), for θυσιαστήριον.",
+      "cognate_ids": [
+        "ar-madhbah",
+        "arc-madbecha"
+      ],
+      "senses": [
+        {
+          "gloss": "altar",
+          "definition": "The altar of the temple, which sanctifies the gift; Elijah’s altars dug down; the altar on which Abraham offered Isaac; the altar of which believers eat.",
+          "evidence": [
+            {
+              "ref": "Mat.23.19",
+              "role": "defining",
+              "note": "“The gift, or the altar that sanctifies the gift?”"
+            },
+            {
+              "ref": "Rom.11.3",
+              "role": "defining",
+              "note": "“They have dug down your altars” (1Ki 19:10)."
+            },
+            {
+              "ref": "Jas.2.21"
+            },
+            {
+              "ref": "Heb.13.10",
+              "note": "“We have an altar of which those who serve the tabernacle have no right to eat.”"
+            },
+            {
+              "ref": "Mat.5.23"
+            },
+            {
+              "ref": "Luk.1.11"
+            }
+          ],
+          "kin": [
+            "altar-of-sacrifice"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דְּבִיחָא",
+      "lang": "syc",
+      "root": "דבח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "what is sacrificed (to idols)",
+      "summary": "The Peshitta’s ܕܒܝܚܐ (dbiḥā), the passive participle as a noun, for εἰδωλόθυτα, meat sacrificed to idols.",
+      "cognate_ids": [
+        "ar-dhabaha"
+      ],
+      "senses": [
+        {
+          "gloss": "meat sacrificed (to idols)",
+          "definition": "The flesh of sacrifices made to idols, which the ecclesias were to abstain from, and which Paul says the brother with knowledge should not eat where it causes another to stumble.",
+          "evidence": [
+            {
+              "ref": "Act.15.29",
+              "role": "defining",
+              "note": "Abstain from what is sacrificed to idols, from blood, from what is strangled and from fornication."
+            },
+            {
+              "ref": "Act.15.20"
+            },
+            {
+              "ref": "Act.21.25"
+            },
+            {
+              "ref": "1Co.8.7",
+              "note": "Some eat it as a thing sacrificed to an idol, and their conscience, being weak, is defiled."
+            },
+            {
+              "ref": "1Co.8.10"
+            },
+            {
+              "ref": "1Co.10.28"
+            }
+          ],
+          "kin": [
+            "sacrifice-other-gods"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דְּבִיחוּתָא",
+      "lang": "syc",
+      "root": "דבח",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sacrifice, immolation",
+      "summary": "The Peshitta’s ܕܒܝܚܘܬܐ (dbiḥutā), once: the sacrifice of Christ himself.",
+      "cognate_ids": [
+        "ar-dhabaha"
+      ],
+      "senses": [
+        {
+          "gloss": "the sacrificing (of himself)",
+          "definition": "Christ’s being sacrificed, by which he put away sin once at the end of the ages.",
+          "evidence": [
+            {
+              "ref": "Heb.9.26",
+              "role": "defining",
+              "note": "“Once at the end of the ages he has appeared to put away sin by the sacrifice of himself.”"
+            }
+          ],
+          "kin": [
+            "slain-offering"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-dhabaha",
+      "lang": "ar",
+      "form": "ذَبَحَ، ذِبْحٌ، ذَبِيحَةٌ",
+      "translit": "ḏabaḥa, ḏibḥ, ḏabīḥa",
+      "gloss": "slit; slaughter (for food or sacrifice) by cutting the throat; slay; an animal slaughtered or sacrificed",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ",
+        "ח": "ḥ"
+      },
+      "note": "Lane’s sources give the verb as “he slaughtered [for food, or sacrificed]” an animal by cutting the throat, and “he slaughtered, or slew, in any manner”; ḏibḥ is “an animal prepared for slaughter [or sacrifice]”, used of the ram that ransomed Abraham’s son (Qurʾān 37:107). The same three uses as זָבַח: sacrifice, slaughter for food, and slaying. Arabic ḏ (ذ) and ḥ (ح) stand behind ז and ח.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 953, root ذبح, ذَبَحَ (n13676)",
+          "note": "“He slaughtered [for food, or sacrificed,] an animal … by cutting the throat”; “He slaughtered, or slew, in any manner.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 954, ذِبْحٌ (n13679); ذَبِيحَةٌ (n13689)",
+          "note": "“An animal prepared for slaughter [or sacrifice] … or an animal that is slaughtered [or sacrificed].”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000040 ḏbḥ [sacrifice], ARB009609"
+        }
+      ]
+    },
+    {
+      "id": "ar-madhbah",
+      "lang": "ar",
+      "form": "مَذْبَحٌ",
+      "translit": "maḏbaḥ",
+      "gloss": "place of slaughter; the throat where an animal is cut; the chancel (altar) of a church",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ",
+        "ח": "ḥ"
+      },
+      "note": "The same pattern as מִזְבֵּחַ, the ma- noun of place: “the place … where الذبح is performed”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 955, مَذْبَحٌ (n13694)",
+          "note": "“The place of [the slaughter termed] الذَّبْح … (tropical:) The chancel of a church.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000220 mḏbḥ [altar], ARB009618"
+        }
+      ]
+    },
+    {
+      "id": "uga-dbh",
+      "lang": "uga",
+      "form": "𐎄𐎁𐎈",
+      "translit": "dbḥ",
+      "gloss": "to sacrifice; sacrifice, sacrificial feast",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Verb ydbḥ “(the king) shall sacrifice” in the ritual texts (KTU 1.115:1), and noun dbḥ, pl. dbḥt, “sacrifice”, also “slaughter, banquet” (KTU 1.114:1): the same sacrifice-and-feast as זֶבַח.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 183, §93 Glossary, /d-b-ḥ/ and dbḥ",
+          "note": "“ydbḥ, dbḥ … ‘to sacrifice’ (H. zābaḥ …)”; “dbḥ /dabḥ-/ … ‘festival’; pl. dbḥt; ‘sacrifice’ … ‘slaughter, banquet’ 1.114:1.”"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 90, §64.25, KTU 1.115:1",
+          "note": "id ydbḥ mlk “then the king (will/shall) sacrifice”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000040 ḏbḥ [sacrifice], UGC001342"
+        }
+      ]
+    },
+    {
+      "id": "uga-mdbh",
+      "lang": "uga",
+      "form": "𐎎𐎄𐎁𐎈",
+      "translit": "mdbḥ",
+      "gloss": "altar",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000220 mḏbḥ [altar], UGC002595"
+        }
+      ]
+    },
+    {
+      "id": "phn-zbh",
+      "lang": "phn",
+      "form": "𐤆𐤁𐤇",
+      "translit": "zbḥ",
+      "gloss": "sacrifice (an animal; in late Punic a child); a sacrifice",
+      "relation": "cognate",
+      "note": "Verb and noun as in Hebrew: “any sacrifice that one shall sacrifice” in the Marseilles tariff (KAI 69.14), and Azitawadda’s “a sacrifice … an ox at the periodic sacrifice” (KAI 26). The late Neo-Punic use of a child given in a molk-sacrifice answers to the sacrifice of sons and daughters condemned in Psa 106:37 and Ezk 16:20. Krahmalkov also lists zbḥ, a sacrificial priest.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 167–168, Z-B-Ḥ I (v. qal SACRIFICE)",
+          "note": "“1. SACRIFICE an animal … KAI 69.14 kl zbḥ ʾš ʾdm lzbḥ, ‘Any sacrifice that one shall sacrifice’ … 2. SACRIFICE a child; this usage confined to late Neo-Punic.”"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 168, ZBḤ II (n.m. SACRIFICE); pp. 168–169, ZBḤ III (n.m. SACRIFICIAL PRIEST)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000040 ḏbḥ [sacrifice], PUN000604"
+        }
+      ]
+    },
+    {
+      "id": "phn-mzbh",
+      "lang": "phn",
+      "form": "𐤌𐤆𐤁𐤇",
+      "translit": "mzbḥ",
+      "gloss": "altar",
+      "relation": "cognate",
+      "note": "Yeḥawmilk of Byblos made “this bronze altar” (hmzbḥ nḥšt zn) for the Lady of Byblos (KAI 10.4): the Hebrew מִזְבַּח הַנְּחֹשֶׁת in the same words.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 272, MZBḤ (n.m. SACRIFICIAL ALTAR)",
+          "note": "“KAI 10.3/4 (Ph) wpʿl ʾnk lrbty bʿlt gbl hmzbḥ nḥšt zn, ‘I made this altar for my Lady Baalt of Byblos.’”"
+        }
+      ]
+    },
+    {
+      "id": "sab-dbh",
+      "lang": "sem",
+      "form": "𐩹𐩨𐩢",
+      "translit": "ḏbḥ (Sabaic)",
+      "gloss": "sacrifice an animal ritually; kill; blood sacrifice; animal for butchering or sacrifice",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "note": "“mdbḥt bh ydbḥn mlkn ṯwrm, altar on which the king sacrifices a bull” (R 3104/1–2). Sabaic keeps ḏ apart from z.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 90–91, ḎBḤ (v. sacrifice; kill; n. ḏbḥ blood sacrifice, animal for butchering)",
+          "note": "“(1) SACRIFICE an animal ritually … (2) KILL, MURDER”; noun “(1) BLOOD SACRIFICE … (2) ANIMAL FOR BUTCHERING or SACRIFICE.” Read from the OCR text only."
+        }
+      ]
+    },
+    {
+      "id": "sab-mdbht",
+      "lang": "sem",
+      "form": "𐩣𐩹𐩨𐩢𐩩",
+      "translit": "mḏbḥt (Sabaic)",
+      "gloss": "altar for blood sacrifice",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 91, ḎBḤ, s. mḏbḥt (ALTAR for blood sacrifice)",
+          "note": "“R2643 (in full): mḏbḥt ḏ-B b-H ‘altar of (the clan) B. at (the sanctuary) H.’ AND OFTEN with owners’ names.” Read from the OCR text only."
+        }
+      ]
+    },
+    {
+      "id": "arc-debach",
+      "lang": "arc",
+      "form": "דְּבַח, דִּבְחָא",
+      "translit": "dəḇaḥ, diḇḥā",
+      "gloss": "slaughter, sacrifice, feast; a sacrifice, a feast (Jewish Aramaic)",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "note": "The Targums’ verb and noun; Aramaic ד for Hebrew ז shows older ḏ. The noun covers both the sacrifice and the feast made of it, as זֶבַח does.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דְּבַח I",
+          "note": "“to slaughter, to sacrifice, feast. Targ. Ps. LIV, 8.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דְּבַח II (דִּבְחָא)",
+          "note": "“slaughtering, sacrifice, feast. Targ. II Kings V, 17. Targ. Prov. XXI, 3 … Targ. Num. XXV, 2.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000040 ḏbḥ [sacrifice], ARM006565"
+        }
+      ]
+    },
+    {
+      "id": "arc-madbecha",
+      "lang": "arc",
+      "form": "מַדְבְּחָא",
+      "translit": "maḏbəḥā",
+      "gloss": "altar (Jewish Aramaic)",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מַדְבַּח (מַדְבְּחָא)",
+          "note": "“= h. מִזְבֵּחַ, altar. Targ. Josh. XXII, 10.”"
+        }
+      ]
+    },
+    {
+      "id": "gez-zabha",
+      "lang": "gez",
+      "form": "ዘብሐ",
+      "translit": "zabḥa",
+      "gloss": "slaughter",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Recorded from the Proto-Semitic root list only; Dillmann and Leslau not yet read for it. Geʿez z covers both older z and ḏ, so it says nothing of the sound behind ז.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000040 ḏbḥ [sacrifice], GEZ006256 zabḥa [slaughter]"
+        }
+      ]
+    },
+    {
+      "id": "akk-zibu",
+      "lang": "akk",
+      "form": "zību",
+      "translit": "zību",
+      "gloss": "food offering; sacrifice",
+      "relation": "possible",
+      "note": "Akkadian loses ḥ, lengthening the vowel, so zību could answer to ḏibḥ-, the Arabic and Syriac noun; but the root set does not include it and no verb is attested, so it is kept as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000053920, zību [food offering] N",
+          "note": "“food offering; sacrifice”; Middle Assyrian to Neo-Babylonian."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "obedience-above-sacrifice",
+      "statement": "Samuel asks Saul whether Yahweh delights in burnt offerings and זְבָחִים “as in obeying the voice of Yahweh”, and answers, “to obey is better than זֶבַח” (1Sa 15:22). Yahweh says by Hosea, “I desire חֶסֶד and not זָבַח, and the knowledge of God more than burnt offerings” (Hos 6:6); by Jeremiah, that when he brought Israel out of Egypt he did not command them about burnt offering and זָבַח but “obey my voice” (Jer 7:22–23); and the proverb says righteousness and justice are more chosen by him than זָבַח, and the זֶבַח of the wicked is an abomination (Pro 21:3; 15:8). Jesus sends the Pharisees to “learn what this means: I desire mercy and not sacrifice” (Mat 9:13; 12:7), and a scribe is not far from the kingdom when he says love of God and neighbour is more than all burnt offerings and sacrifices (Mrk 12:33–34). From the verses: sacrifice was commanded, but it was never what Yahweh wanted for its own sake; offered without obedience and faithfulness it was worthless to him.",
+      "evidence": [
+        {
+          "ref": "1Sa.15.22"
+        },
+        {
+          "ref": "Hos.6.6"
+        },
+        {
+          "ref": "Jer.7.22",
+          "to": "Jer.7.23"
+        },
+        {
+          "ref": "Pro.21.3"
+        },
+        {
+          "ref": "Pro.15.8"
+        },
+        {
+          "ref": "Mat.9.13"
+        },
+        {
+          "ref": "Mat.12.7"
+        },
+        {
+          "ref": "Mrk.12.33",
+          "to": "Mrk.12.34"
+        }
+      ]
+    },
+    {
+      "topic": "christ-the-sacrifice",
+      "statement": "The psalmist says, “זֶבַח and offering you did not desire; ears you have dug for me … then I said, Behold, I have come; in the scroll of the book it is written of me; I delight to do your will, my God” (Psa 40:7–9). Hebrews puts these words in Christ’s mouth when he comes into the world, “a body you have prepared for me”, and draws from them that God “takes away the first to establish the second”, and that “by that will we have been made holy through the offering of the body of Jesus Christ once for all” (Heb 10:5–10). The law said the life of the flesh is in the blood, given on the altar to make a covering for souls (Lev 17:11); the Passover was “the זֶבַח of Yahweh’s Passover” (Exo 12:27), and Paul writes “Christ our Passover was sacrificed for us” (1Co 5:7). Christ “gave himself for us, an offering and a sacrifice to God” (Eph 5:2), and “appeared once at the end of the ages to put away sin by the sacrifice of himself” (Heb 9:26). From the verses: the slain offerings of the law pointed to one man whose will was wholly God’s, and whose offered body did what their blood could not.",
+      "evidence": [
+        {
+          "ref": "Psa.40.7",
+          "to": "Psa.40.9"
+        },
+        {
+          "ref": "Heb.10.5",
+          "to": "Heb.10.10"
+        },
+        {
+          "ref": "Lev.17.11"
+        },
+        {
+          "ref": "Exo.12.27"
+        },
+        {
+          "ref": "1Co.5.7"
+        },
+        {
+          "ref": "Eph.5.2"
+        },
+        {
+          "ref": "Heb.9.26"
+        }
+      ]
+    },
+    {
+      "topic": "sacrifices-of-praise",
+      "statement": "Already in the Psalms the sacrifice God asks is thanksgiving and a broken heart: “sacrifice to God thanksgiving, and pay your vows to the Most High”; “whoever sacrifices thanksgiving honours me” (Psa 50:14, 23); “the זִבְחֵי of God are a broken spirit” (Psa 51:19). Hebrews takes this up: “through him let us offer the sacrifice of praise to God continually, that is, the fruit of lips confessing his name; and do not forget to do good and to share, for with such sacrifices God is well pleased” (Heb 13:15–16). Paul asks believers to present their bodies “a living sacrifice” (Rom 12:1), and Peter calls them a holy priesthood “to offer up spiritual sacrifices acceptable to God through Jesus Christ” (1Pe 2:5). From the verses: those in Christ still sacrifice, but what they offer is praise, good works, sharing and their own lives.",
+      "evidence": [
+        {
+          "ref": "Psa.50.14"
+        },
+        {
+          "ref": "Psa.50.23"
+        },
+        {
+          "ref": "Psa.51.19"
+        },
+        {
+          "ref": "Heb.13.15",
+          "to": "Heb.13.16"
+        },
+        {
+          "ref": "Rom.12.1"
+        },
+        {
+          "ref": "1Pe.2.5"
+        }
+      ]
+    },
+    {
+      "topic": "demons-are-idols",
+      "statement": "Moses says Israel “sacrificed to שֵׁדִים, not God (אֱלֹהַּ), gods they had not known, new ones that came lately” (Deu 32:17). The psalm says they “served their idols” and “sacrificed their sons and their daughters to the שֵׁדִים”, and then names them: “whom they sacrificed to the idols of Canaan” (Psa 106:36–38). Paul quotes Deuteronomy: “the things the Gentiles sacrifice, they sacrifice to demons and not to God”, having first asked, “what do I say? that an idol is anything, or that what is sacrificed to idols is anything?” (1Co 10:19–20), and having said, “we know that an idol is nothing in the world, and that there is no other God but one” (1Co 8:4). From the verses: the demons sacrificed to are the idols, the gods men invented, which are “not God”; and sacrifice, as worship, belongs to Yahweh alone: “whoever sacrifices to any god except Yahweh alone shall be devoted” (Exo 22:19; 2Ki 17:35–36).",
+      "evidence": [
+        {
+          "ref": "Deu.32.17"
+        },
+        {
+          "ref": "Psa.106.36",
+          "to": "Psa.106.38"
+        },
+        {
+          "ref": "1Co.10.19",
+          "to": "1Co.10.20"
+        },
+        {
+          "ref": "1Co.8.4"
+        },
+        {
+          "ref": "Exo.22.19"
+        },
+        {
+          "ref": "2Ki.17.35",
+          "to": "2Ki.17.36"
+        }
+      ]
+    },
+    {
+      "topic": "sacrifice-in-the-kingdom",
+      "statement": "The prophets speak of sacrifice at Yahweh’s altar in the day the nations turn to him. Of foreigners who join themselves to Yahweh: “their burnt offerings and their זְבָחִים will be accepted on my altar, for my house shall be called a house of prayer for all peoples” (Isa 56:6–7), words Jesus quotes of the temple (Mrk 11:17). “In that day there will be an altar to Yahweh in the midst of the land of Egypt … and Egypt will know Yahweh in that day and serve with זֶבַח and offering” (Isa 19:19–21). When the nations go up year by year to worship the King, Yahweh of armies, “all who sacrifice will come” and boil in the pots of Jerusalem (Zec 14:16, 21). Ezekiel is given “the statutes of the altar” for its house, after which “I will accept you” (Ezk 43:18, 27). From the verses: in the age when Yahweh reigns from Jerusalem, sacrifice is offered at his altar again, by Israel and the nations, not to take away sin, which Christ’s one sacrifice has done (Heb 10:12), but as worship of the one who has done it.",
+      "evidence": [
+        {
+          "ref": "Isa.56.6",
+          "to": "Isa.56.7"
+        },
+        {
+          "ref": "Mrk.11.17"
+        },
+        {
+          "ref": "Isa.19.19",
+          "to": "Isa.19.21"
+        },
+        {
+          "ref": "Zec.14.16"
+        },
+        {
+          "ref": "Zec.14.21"
+        },
+        {
+          "ref": "Ezk.43.18"
+        },
+        {
+          "ref": "Ezk.43.27"
+        },
+        {
+          "ref": "Heb.10.12"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13 for Leviticus 23 (זֶבַח, Lev 23:19, 37) and Numbers 10 (זִבְחֵי שַׁלְמֵיכֶם, Num 10:10). The database keys the root זבח, as here. BDB key g.ae.ac (n.pr.m. Zebah, the Midianite king, Jdg 8:5–21; Psa 83:12) is left unclaimed for a name entry: all 65 of its tokens are also counted under g.ae.ab, so g.ae.ab’s 174 uses include those twelve or so of the name. g.ae.aa also counts seven noun tokens (Lev 17:8; Num 15:8; Isa 57:7; Hos 6:6; Psa 50:5; Ecc 4:17; 2Ch 7:12) and g.ae.ab one verb token (1Ki 8:63). Left out: m.be.af and xm.aa.ah, zero-token cross-references; the name זְבִינָא (Zebina, Ezr 10:43, g.ae.af), which BDB files here but glosses “bought”, from Aramaic זבן “buy” (Jastrow s.v. זְבִינָא, זַבִּינָא), so not this root, and in any case a name. Biblical Aramaic words take the database’s own root keys (דבח; מדבח for the altar). Peshitta: SEDRA root 413 דבח, lexemes 639 (verb), 640 ܕܒܚܐ, 641 ܕܒܚܬܐ, 642 ܕܒܝܚܘܬܐ, 643 ܡܕܒܚܐ, 3482 ܕܒܝܚܐ, with their New Testament verses taken from the database; Payne Smith not read. Segert’s page for the glossary entry (p. 183) is from the running heads of the OCR text; Biella’s pages and the Sabaic forms are from OCR only (heading printed ḎBḤ); Krahmalkov’s from the pdftotext layer; none checked against the page image. Ugaritic mdbḥ rests on the Proto-Semitic root list only (not in Segert’s glossary); DULAT not consulted. Geʿez zabḥa likewise; Dillmann and Leslau not read. Krahmalkov’s ZBḤ III “sacrificial priest” has no Hebrew word to match and is only mentioned. Open questions for review: (1) whether the piel is rightly glossed “sacrifice repeatedly, in number”, since most of its uses are of high places and idols; (2) the doctrine item sacrifice-in-the-kingdom is a judgment call in the user’s prophetic scheme (Isa 56; Isa 19; Zec 14; Ezk 43 read of the millennial age); (3) Psa 106:37 uses qal, 38 piel, of the same act; (4) Pro 17:1 read as feasting meat."
+}
