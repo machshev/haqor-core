@@ -1,0 +1,1551 @@
+{
+  "id": "hu",
+  "root": "הוא",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "grammar",
+    "pronoun",
+    "one-god"
+  ],
+  "gloss": "he, she, it, they; (it) is; that, those",
+  "summary": "The pronoun of the one spoken about: הוּא \"he, it\", הִיא \"she\", הֵם/הֵמָּה and הֵן/הֵנָּה \"they\", with Aramaic הוּא, הִמּוֹ and אִנּוּן. Besides naming someone already in view, it links subject and predicate where Hebrew uses no verb \"be\" (שַׁבָּת הִוא לַיהוָה, \"it is a sabbath to Yahweh\", Lev 23:3), and with the article it points back, \"that, those\" (בַּיּוֹם הַהוּא, \"in that day\"). It has no verbal root: every Semitic language has the same pronoun, with h where Akkadian has š (šū, šī, šunu, šina), a pronominal base and not the letters of a root, and the verb הָוָה \"befall, be\" only shares its letters (Akkadian says \"he\" with šū but has no š in its verbs for \"be\"). Above all scripture uses it for Yahweh: \"Yahweh, he is the God; there is none besides him\" and \"I am he\".",
+  "words": [
+    {
+      "lemma": "הוּא",
+      "bdb": [
+        "e.aw.aa",
+        "e.av.aa"
+      ],
+      "cognate_ids": [
+        "akk-shu",
+        "ar-huwa",
+        "uga-hw",
+        "phn-ha",
+        "moab-ha",
+        "sab-ha",
+        "gez-hu",
+        "arc-targ-hu"
+      ],
+      "pos": "pronoun",
+      "gloss": "he, it; (he, it) is; that",
+      "summary": "It is not the object of a verb: for “him” Hebrew uses the suffix ־וֹ, ־הוּ or אֹתוֹ. Its tokens include those of הִיא, since the Torah writes the feminine the same way (see הִיא).",
+      "senses": [
+        {
+          "id": "hu-he",
+          "gloss": "he, it",
+          "definition": "The one already spoken of, as the subject of a verb. Since the verb already says \"he\", the pronoun usually marks him out: he, and not another; he himself.",
+          "evidence": [
+            {
+              "ref": "Gen.3.15",
+              "role": "defining",
+              "note": "הוּא יְשׁוּפְךָ רֹאשׁ וְאַתָּה תְּשׁוּפֶנּוּ עָקֵב: \"he shall bruise your head, and you shall bruise his heel\": he set against you."
+            },
+            {
+              "ref": "Gen.3.16",
+              "role": "defining",
+              "note": "וְהוּא יִמְשָׁל־בָּךְ: \"and he shall rule over you\": her husband, against her desire for him."
+            },
+            {
+              "ref": "Deu.1.30",
+              "role": "defining",
+              "note": "\"Yahweh your God who goes before you, he will fight for you\": the subject named, then taken up again by הוּא."
+            },
+            {
+              "ref": "Gen.44.17",
+              "note": "\"the man in whose hand the cup was found, he shall be my servant\"."
+            },
+            {
+              "ref": "Psa.130.8",
+              "note": "וְהוּא יִפְדֶּה אֶת־יִשְׂרָאֵל מִכֹּל עֲוֺנֹתָיו: \"and he will redeem Israel from all his iniquities\"."
+            },
+            {
+              "ref": "Gen.10.9",
+              "note": "Nimrod: \"he was a mighty hunter before Yahweh\"."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "he too; he and his company",
+              "definition": "With גַּם \"also\", the one spoken of does the same as another; followed by \"and…\", it is the head of a group that goes with him.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.4",
+                  "role": "defining",
+                  "note": "וְהֶבֶל הֵבִיא גַם־הוּא: \"and Abel, he too brought\", as Cain had."
+                },
+                {
+                  "ref": "Gen.50.22",
+                  "role": "defining",
+                  "note": "\"Joseph dwelt in Egypt, he and his father's house\"."
+                },
+                {
+                  "ref": "Gen.4.26",
+                  "note": "\"to Seth, to him also, a son was born\"."
+                },
+                {
+                  "ref": "1Sa.27.3",
+                  "note": "\"David dwelt with Achish in Gath, he and his men\"."
+                },
+                {
+                  "ref": "Gen.48.19",
+                  "note": "Manasseh: \"he also shall become a people, and he also shall be great\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hu-is",
+          "gloss": "is (in a clause without a verb)",
+          "definition": "Hebrew joins subject and predicate with no verb \"be\"; the pronoun, set after the predicate or between the two, ties them: \"a day of covering it (is)\", \"Yahweh, he (is) the God\".",
+          "evidence": [
+            {
+              "ref": "Lev.23.27",
+              "role": "defining",
+              "note": "יוֹם הַכִּפֻּרִים הוּא: \"it is the day of coverings\"."
+            },
+            {
+              "ref": "Lev.23.28",
+              "role": "defining",
+              "note": "כִּי יוֹם כִּפֻּרִים הוּא: \"for it is a day of coverings, to make a covering for you before Yahweh your God\"."
+            },
+            {
+              "ref": "Gen.41.25",
+              "role": "defining",
+              "note": "חֲלוֹם פַּרְעֹה אֶחָד הוּא: \"Pharaoh's dream is one\"."
+            },
+            {
+              "ref": "Lev.23.32",
+              "note": "שַׁבַּת שַׁבָּתוֹן הוּא לָכֶם: \"it is a sabbath of rest to you\"."
+            },
+            {
+              "ref": "Exo.3.5",
+              "note": "\"the place on which you stand is holy ground (אַדְמַת־קֹדֶשׁ הוּא)\"."
+            },
+            {
+              "ref": "Deu.4.35",
+              "role": "defining",
+              "note": "כִּי יַהְוֶה הוּא הָאֱלֹהִים: \"that Yahweh, he is the God\": between subject and predicate."
+            },
+            {
+              "ref": "Num.13.18",
+              "note": "\"whether the people … is strong or weak (הֶחָזָק הוּא הֲרָפֶה)\"."
+            }
+          ]
+        },
+        {
+          "id": "hu-the-one",
+          "gloss": "he, the one (meant); the same",
+          "definition": "As the predicate itself: \"I am he\", \"you are he\", the one spoken of and no other, the same at every time. Said by Yahweh of himself, and to him.",
+          "evidence": [
+            {
+              "ref": "Deu.32.39",
+              "role": "defining",
+              "note": "אֲנִי אֲנִי הוּא וְאֵין אֱלֹהִים עִמָּדִי: \"I, I am he, and there is no god with me\"."
+            },
+            {
+              "ref": "Isa.43.10",
+              "role": "defining",
+              "note": "\"that you may know and believe me and understand that I am he (אֲנִי הוּא): before me no god was formed, and after me there shall be none\"."
+            },
+            {
+              "ref": "Psa.102.28",
+              "role": "defining",
+              "note": "וְאַתָּה־הוּא וּשְׁנוֹתֶיךָ לֹא יִתָּמּוּ: \"but you are he (the same), and your years shall not end\", against heavens that wear out like a garment."
+            },
+            {
+              "ref": "Isa.41.4",
+              "note": "\"I, Yahweh, the first, and with the last I am he\"."
+            },
+            {
+              "ref": "Isa.46.4",
+              "note": "\"even to old age I am he\"."
+            },
+            {
+              "ref": "Isa.48.12",
+              "note": "\"I am he; I am the first, I also am the last\"."
+            },
+            {
+              "ref": "2Sa.7.28",
+              "note": "אַתָּה־הוּא הָאֱלֹהִים: \"you are he, the God\"."
+            },
+            {
+              "ref": "Neh.9.6",
+              "note": "אַתָּה־הוּא יַהְוֶה לְבַדֶּךָ: \"you are he, Yahweh, you alone\"."
+            }
+          ]
+        },
+        {
+          "id": "hu-that",
+          "gloss": "that (with the article)",
+          "definition": "After a noun with the article, הַהוּא points back to one already named, or out to a time spoken of: \"that day\", \"that good\".",
+          "evidence": [
+            {
+              "ref": "Num.10.32",
+              "role": "defining",
+              "note": "הַטּוֹב הַהוּא אֲשֶׁר יֵיטִיב יַהְוֶה עִמָּנוּ: \"that good which Yahweh will do to us\"."
+            },
+            {
+              "ref": "Num.9.6",
+              "role": "defining",
+              "note": "\"they could not keep the Passover on that day, … and they came before Moses and Aaron on that day\"."
+            },
+            {
+              "ref": "Gen.15.18",
+              "note": "\"on that day Yahweh made a covenant with Abram\"."
+            },
+            {
+              "ref": "Num.9.13",
+              "note": "חֶטְאוֹ יִשָּׂא הָאִישׁ הַהוּא: \"that man shall bear his sin\"."
+            },
+            {
+              "ref": "Zec.14.9",
+              "note": "בַּיּוֹם הַהוּא יִהְיֶה יַהְוֶה אֶחָד וּשְׁמוֹ אֶחָד: \"in that day Yahweh shall be one, and his name one\"."
+            }
+          ]
+        },
+        {
+          "id": "hu-it-matter",
+          "gloss": "it, that (a thing said or done)",
+          "definition": "Of a matter or event rather than a person: \"that is the thing\", \"what is it?\".",
+          "evidence": [
+            {
+              "ref": "Gen.41.28",
+              "role": "defining",
+              "note": "הוּא הַדָּבָר אֲשֶׁר דִּבַּרְתִּי אֶל־פַּרְעֹה: \"that is the thing which I spoke to Pharaoh\"."
+            },
+            {
+              "ref": "Exo.16.15",
+              "role": "defining",
+              "note": "מָן הוּא … כִּי לֹא יָדְעוּ מַה־הוּא … הוּא הַלֶּחֶם: \"they did not know what it was … it is the bread which Yahweh has given you\"."
+            },
+            {
+              "ref": "Exo.16.23",
+              "note": "הוּא אֲשֶׁר דִּבֶּר יַהְוֶה: \"this is what Yahweh has spoken\"."
+            },
+            {
+              "ref": "Gen.42.14",
+              "note": "\"it is as I said to you: you are spies\"."
+            }
+          ]
+        },
+        {
+          "gloss": "that is (naming a place)",
+          "definition": "Adds the name a place is known by: \"the valley of Siddim, that is the Salt Sea\".",
+          "evidence": [
+            {
+              "ref": "Gen.14.3",
+              "role": "defining",
+              "note": "עֵמֶק הַשִּׂדִּים הוּא יָם הַמֶּלַח."
+            },
+            {
+              "ref": "Gen.14.17",
+              "note": "עֵמֶק שָׁוֵה הוּא עֵמֶק הַמֶּלֶךְ: \"the valley of Shaveh, that is the King's Valley\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αὐτός",
+          "gloss": "he; (with the article) the same",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 3:15 word 10; PSA 130:8 word 1; PSA 102:28 word 2",
+              "note": "αὐτός for הוּא: \"he shall watch your head\"; \"and he will redeem Israel\"; σὺ δὲ ὁ αὐτὸς εἶ for וְאַתָּה־הוּא. αὐτός is the Septuagint's commonest word for the pronoun."
+            },
+            {
+              "ref": "Mat.1.21",
+              "role": "defining",
+              "note": "αὐτὸς γὰρ σώσει τὸν λαὸν αὐτοῦ ἀπὸ τῶν ἁμαρτιῶν αὐτῶν: \"for he shall save his people from their sins\", the words of Psa 130:8, וְהוּא יִפְדֶּה … מִכֹּל עֲוֺנֹתָיו, said of Jesus."
+            },
+            {
+              "ref": "Heb.1.12",
+              "role": "defining",
+              "note": "σὺ δὲ ὁ αὐτὸς εἶ, καὶ τὰ ἔτη σου οὐκ ἐκλείψουσιν: quoting Psa 102:28, וְאַתָּה־הוּא."
+            },
+            {
+              "ref": "Heb.13.8",
+              "note": "\"Jesus Christ, the same (ὁ αὐτός) yesterday, and today, and for ever\"."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐγώ εἰμι",
+          "gloss": "I am (he)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 32:39 word 6; ISA 43:10 word 15; ISA 41:4 word 13; ISA 46:4; ISA 48:12 word 7",
+              "note": "אֲנִי הוּא rendered ἐγώ εἰμι."
+            },
+            {
+              "ref": "Jhn.13.19",
+              "role": "defining",
+              "note": "ἵνα … πιστεύσητε ὅτι ἐγώ εἰμι, \"that you may believe that I am he\": the words of Isa 43:10 (לְמַעַן תֵּדְעוּ וְתַאֲמִינוּ … כִּי־אֲנִי הוּא)."
+            },
+            {
+              "ref": "Jhn.8.28",
+              "role": "defining",
+              "note": "\"When you have lifted up the son of man, then you shall know that I am he, and that I do nothing of myself, but as my Father taught me, I speak these things.\""
+            },
+            {
+              "ref": "Mrk.13.6",
+              "role": "defining",
+              "note": "\"many shall come in my name, saying, ἐγώ εἰμι\"; Mat 24:5 gives the same saying as ἐγώ εἰμι ὁ Χριστός, \"I am the Christ\": \"he\" is the Christ."
+            },
+            {
+              "ref": "Mat.24.5"
+            },
+            {
+              "ref": "Jhn.4.26",
+              "note": "To the woman who spoke of the Messiah: ἐγώ εἰμι, ὁ λαλῶν σοι, \"I am he, who speaks to you\"."
+            },
+            {
+              "ref": "Jhn.8.24"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐκεῖνος",
+          "gloss": "that",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 15:18 word 2; ISA 2:11 word 12; NUM 10:32 word 7",
+              "note": "ἐκεῖνος for הַהוּא: ἐν τῇ ἡμέρᾳ ἐκείνῃ for בַּיּוֹם הַהוּא."
+            },
+            {
+              "ref": "2Th.1.10",
+              "note": "\"when he shall come to be glorified in his saints … in that day (ἐν τῇ ἡμέρᾳ ἐκείνῃ)\": the prophets' בַּיּוֹם הַהוּא."
+            }
+          ]
+        },
+        {
+          "lemma": "οὗτος",
+          "gloss": "this one, he",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 4:35 word 6",
+              "note": "κύριος ὁ θεός σου οὗτος θεός ἐστιν for יַהְוֶה הוּא הָאֱלֹהִים."
+            },
+            {
+              "ref": "Mrk.12.32",
+              "note": "\"there is one God, and there is none other but he (πλὴν αὐτοῦ)\": the scribe's echo of Deu 4:35, אֵין עוֹד מִלְבַדּוֹ."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בַּיּוֹם הַהוּא",
+            "gloss": "in that day: of a day just told of, and in the prophets of the day Yahweh will act",
+            "evidence": [
+              {
+                "ref": "Num.9.6"
+              },
+              {
+                "ref": "Gen.15.18"
+              },
+              {
+                "ref": "Isa.2.11",
+                "note": "\"Yahweh alone shall be exalted in that day\"."
+              },
+              {
+                "ref": "Zec.14.4"
+              },
+              {
+                "ref": "Zec.14.9"
+              }
+            ]
+          },
+          {
+            "phrase": "אֲנִי הוּא",
+            "gloss": "I am he: Yahweh's word of himself",
+            "evidence": [
+              {
+                "ref": "Deu.32.39"
+              },
+              {
+                "ref": "Isa.41.4"
+              },
+              {
+                "ref": "Isa.43.10"
+              },
+              {
+                "ref": "Isa.43.13"
+              },
+              {
+                "ref": "Isa.46.4"
+              },
+              {
+                "ref": "Isa.48.12"
+              }
+            ]
+          },
+          {
+            "phrase": "אַתָּה־הוּא",
+            "gloss": "you are he, you are the same: said to Yahweh",
+            "evidence": [
+              {
+                "ref": "Psa.102.28"
+              },
+              {
+                "ref": "2Sa.7.28"
+              },
+              {
+                "ref": "Isa.37.16",
+                "note": "\"you are he, the God, you alone, of all the kingdoms of the earth\"."
+              },
+              {
+                "ref": "Neh.9.6"
+              },
+              {
+                "ref": "Neh.9.7"
+              }
+            ]
+          },
+          {
+            "phrase": "יַהְוֶה הוּא הָאֱלֹהִים",
+            "gloss": "Yahweh, he is the God",
+            "evidence": [
+              {
+                "ref": "Deu.4.35"
+              },
+              {
+                "ref": "Deu.4.39"
+              },
+              {
+                "ref": "Deu.7.9"
+              },
+              {
+                "ref": "1Ki.18.39",
+                "note": "The people at Carmel: \"Yahweh, he is the God; Yahweh, he is the God\"."
+              },
+              {
+                "ref": "Psa.100.3"
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־הוּא",
+            "gloss": "he too, he also",
+            "evidence": [
+              {
+                "ref": "Gen.4.4"
+              },
+              {
+                "ref": "Gen.4.26"
+              },
+              {
+                "ref": "Gen.48.19"
+              }
+            ]
+          },
+          {
+            "phrase": "הוּא אֲשֶׁר דִּבַּרְתִּי",
+            "gloss": "that is what I said",
+            "evidence": [
+              {
+                "ref": "Gen.41.28"
+              },
+              {
+                "ref": "Gen.42.14"
+              },
+              {
+                "ref": "Exo.16.23",
+                "note": "With דִּבֶּר יַהְוֶה: \"this is what Yahweh has said\"."
+              }
+            ]
+          },
+          {
+            "phrase": "מִי הוּא זֶה",
+            "gloss": "who is he?",
+            "evidence": [
+              {
+                "ref": "Est.7.5"
+              },
+              {
+                "ref": "Psa.24.10",
+                "note": "\"Who is he, this king of glory? Yahweh of hosts, he is the king of glory\"."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הִיא",
+      "bdb": [
+        "e.be.ac"
+      ],
+      "cognate_ids": [
+        "akk-shi",
+        "ar-hiya",
+        "uga-hy",
+        "phn-ha",
+        "sab-ha"
+      ],
+      "pos": "pronoun",
+      "gloss": "she, it; (she, it) is; that",
+      "summary": "The feminine of הוּא, used as it is, for a woman and for anything named by a feminine noun (a land, a soul, a time). In the Torah it is nearly always written הוא and read hî (Gen 3:12; 3:20; Lev 23:3, 30, 36): about 190 times there against 19 written היא; so its tokens are counted under הוּא's key.",
+      "senses": [
+        {
+          "gloss": "she, it",
+          "definition": "The woman or feminine thing already spoken of, as subject.",
+          "evidence": [
+            {
+              "ref": "Gen.3.12",
+              "role": "defining",
+              "note": "\"the woman whom you gave to be with me, she gave me of the tree\" (written הִוא)."
+            },
+            {
+              "ref": "Gen.3.20",
+              "role": "defining",
+              "note": "\"he called his wife's name Eve, because she was the mother of all living\"."
+            },
+            {
+              "ref": "Gen.20.5",
+              "note": "\"did he not say to me, She is my sister? and she, even she herself said, He is my brother\"."
+            },
+            {
+              "ref": "Jdg.18.28",
+              "note": "Laish: \"it was far from Sidon … and it was in the valley\"."
+            }
+          ]
+        },
+        {
+          "gloss": "is (in a clause without a verb)",
+          "definition": "As הוּא does, it ties subject and predicate: \"it is a sabbath\".",
+          "kin": [
+            "hu-is"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.23.3",
+              "role": "defining",
+              "note": "שַׁבָּת הִוא לַיהוָה בְּכֹל מוֹשְׁבֹתֵיכֶם: \"it is a sabbath to Yahweh in all your dwellings\"."
+            },
+            {
+              "ref": "Lev.23.36",
+              "role": "defining",
+              "note": "עֲצֶרֶת הִוא: \"it is a solemn assembly\"."
+            },
+            {
+              "ref": "Num.13.19",
+              "note": "\"whether it (the land) is good or bad (הֲטוֹבָה הִוא אִם־רָעָה)\"."
+            }
+          ]
+        },
+        {
+          "gloss": "that (with the article)",
+          "definition": "After a feminine noun with the article: \"that soul\", \"that time\".",
+          "kin": [
+            "hu-that"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.23.30",
+              "role": "defining",
+              "note": "וְהַאֲבַדְתִּי אֶת־הַנֶּפֶשׁ הַהִוא מִקֶּרֶב עַמָּהּ: \"I will destroy that soul from among its people\"."
+            },
+            {
+              "ref": "Deu.1.9",
+              "role": "defining",
+              "note": "בָּעֵת הַהִוא: \"at that time\"."
+            },
+            {
+              "ref": "Gen.17.14",
+              "note": "\"that soul shall be cut off from its people\"."
+            },
+            {
+              "ref": "Dan.12.1",
+              "note": "\"at that time Michael shall stand up … and at that time your people shall be delivered\"."
+            },
+            {
+              "ref": "Jer.50.20"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐκεῖνος",
+          "gloss": "that",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:30 word 13; DEU 1:9 word 4; DAN 12:1 word 2",
+              "note": "ἡ ψυχὴ ἐκείνη for הַנֶּפֶשׁ הַהִוא; ἐν τῷ καιρῷ ἐκείνῳ for בָּעֵת הַהִוא."
+            }
+          ]
+        },
+        {
+          "lemma": "εἰμί",
+          "gloss": "be (ἐστί, \"it is\")",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:3 word 16",
+              "note": "σάββατά ἐστιν τῷ κυρίῳ for שַׁבָּת הִוא לַיהוָה: the Greek supplies the verb the Hebrew does with the pronoun."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "וְנִכְרְתָה הַנֶּפֶשׁ הַהִוא",
+            "gloss": "and that soul shall be cut off: the penalty in the law for breaking a sign of the covenant or the feasts",
+            "evidence": [
+              {
+                "ref": "Gen.17.14"
+              },
+              {
+                "ref": "Exo.12.15"
+              },
+              {
+                "ref": "Num.9.13"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּעֵת הַהִוא",
+            "gloss": "at that time",
+            "evidence": [
+              {
+                "ref": "Deu.1.9"
+              },
+              {
+                "ref": "Jer.50.20"
+              },
+              {
+                "ref": "Dan.12.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֵם",
+      "bdb": [
+        "e.bs.aa"
+      ],
+      "cognate_ids": [
+        "akk-shunu",
+        "ar-hum",
+        "uga-hm"
+      ],
+      "pos": "pronoun",
+      "gloss": "they; (they) are; those",
+      "summary": "The masculine plural, in two forms, הֵם and the longer הֵמָּה, used alike (Deu 1:39 has both in one verse). It is the singular's base with the plural ending ־ם of אַתֶּם and the suffix ־הֶם, as Akkadian šunu and Arabic hum are of šū and huwa.",
+      "senses": [
+        {
+          "gloss": "they",
+          "definition": "Those already spoken of, as subject, usually marked out: they, and not others.",
+          "kin": [
+            "hu-he"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.1.39",
+              "role": "defining",
+              "note": "\"your little ones … they (הֵמָּה) shall go in there, and to them I will give it, and they (הֵם) shall possess it\": not you, who refused."
+            },
+            {
+              "ref": "Exo.5.7",
+              "role": "defining",
+              "note": "\"you shall no more give the people straw …; let them (הֵם) go and gather straw for themselves\"."
+            },
+            {
+              "ref": "Gen.42.23",
+              "note": "\"and they did not know that Joseph understood them\"."
+            },
+            {
+              "ref": "Jer.5.5",
+              "note": "\"for they know the way of Yahweh … but these have altogether broken the yoke\"."
+            },
+            {
+              "ref": "Num.16.33",
+              "note": "\"they and all that belonged to them went down alive into the grave (שְׁאֹלָה)\"."
+            }
+          ]
+        },
+        {
+          "gloss": "are (in a clause without a verb)",
+          "definition": "Ties a plural subject to its predicate: \"these are my appointed times\".",
+          "kin": [
+            "hu-is"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.23.2",
+              "role": "defining",
+              "note": "אֵלֶּה הֵם מוֹעֲדָי: \"these are my appointed times\"."
+            },
+            {
+              "ref": "Gen.25.16",
+              "note": "אֵלֶּה הֵם בְּנֵי יִשְׁמָעֵאל: \"these are the sons of Ishmael\"."
+            },
+            {
+              "ref": "Lev.11.8",
+              "role": "defining",
+              "note": "טְמֵאִים הֵם לָכֶם: \"they are unclean to you\"."
+            },
+            {
+              "ref": "Exo.5.8",
+              "note": "כִּי־נִרְפִּים הֵם: \"for they are idle\"."
+            },
+            {
+              "ref": "Jer.5.4",
+              "note": "\"surely these are poor (דַּלִּים הֵם)\"."
+            }
+          ]
+        },
+        {
+          "gloss": "those (with the article)",
+          "definition": "After a plural noun with the article: \"those days\", \"those men\".",
+          "kin": [
+            "hu-that"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.6.4",
+              "role": "defining",
+              "note": "בַּיָּמִים הָהֵם: \"in those days\"; and הֵמָּה הַגִּבֹּרִים, \"they were the mighty men\"."
+            },
+            {
+              "ref": "Num.9.7",
+              "role": "defining",
+              "note": "הָאֲנָשִׁים הָהֵמָּה: \"those men\"."
+            },
+            {
+              "ref": "Jdg.17.6",
+              "note": "\"in those days there was no king in Israel\"."
+            },
+            {
+              "ref": "Jer.31.33",
+              "note": "\"after those days, says Yahweh, I will put my law in their inward parts\"."
+            },
+            {
+              "ref": "Jol.3.2",
+              "note": "\"in those days I will pour out my spirit\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐκεῖνος",
+          "gloss": "those",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "JOL 3:2 word 7; JER 31:33 word 11",
+              "note": "ἐν ταῖς ἡμέραις ἐκείναις for בַּיָּמִים הָהֵמָּה; μετὰ τὰς ἡμέρας ἐκείνας for אַחֲרֵי הַיָּמִים הָהֵם."
+            },
+            {
+              "ref": "Act.2.18",
+              "role": "defining",
+              "note": "Peter quotes Joel 3:2: ἐν ταῖς ἡμέραις ἐκείναις ἐκχεῶ ἀπὸ τοῦ πνεύματός μου, \"in those days I will pour out of my spirit\"."
+            },
+            {
+              "ref": "Heb.8.10",
+              "role": "defining",
+              "note": "Quoting Jer 31:33: μετὰ τὰς ἡμέρας ἐκείνας, \"after those days\"."
+            }
+          ]
+        },
+        {
+          "lemma": "εἰμί",
+          "gloss": "be (εἰσί, \"they are\")",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:2 word 15",
+              "note": "αὗταί εἰσιν αἱ ἑορταί μου for אֵלֶּה הֵם מוֹעֲדָי."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בַּיָּמִים הָהֵם",
+            "gloss": "in those days; also בַּיָּמִים הָהֵמָּה",
+            "evidence": [
+              {
+                "ref": "Gen.6.4"
+              },
+              {
+                "ref": "Jdg.17.6"
+              },
+              {
+                "ref": "Jer.5.18"
+              },
+              {
+                "ref": "Jer.31.29"
+              },
+              {
+                "ref": "Jer.50.20"
+              },
+              {
+                "ref": "Jol.3.2"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵלֶּה הֵם",
+            "gloss": "these are",
+            "evidence": [
+              {
+                "ref": "Lev.23.2"
+              },
+              {
+                "ref": "Gen.25.16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֵן",
+      "bdb": [
+        "e.by.aa",
+        "e.bz.ad"
+      ],
+      "cognate_ids": [
+        "akk-shina",
+        "ar-hunna",
+        "uga-hn"
+      ],
+      "pos": "pronoun",
+      "gloss": "they (feminine); (they) are; those; (with a preposition) them",
+      "summary": "The feminine plural, הֵן and הֵנָּה, of women and of things named by feminine nouns, the plural of הִיא as Akkadian šina and Arabic hunna are. Standing alone it is mostly הֵנָּה; הֵן mostly follows a preposition (בָּהֵן \"with them\"). The database files the lone הֵנָּה under the adverb הֵנָּה \"hither\" and a lone הֵן under הֵן \"behold\", so its counted uses are only those with a preposition.",
+      "senses": [
+        {
+          "gloss": "they (women, feminine things)",
+          "definition": "Those spoken of, as subject.",
+          "kin": [
+            "hu-he"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.33.6",
+              "role": "defining",
+              "note": "\"the handmaids came near, they and their children (הֵנָּה וְיַלְדֵיהֶן)\"."
+            },
+            {
+              "ref": "Ezk.23.45",
+              "note": "\"for they are adulteresses (נֹאֲפֹת הֵנָּה)\", beside הֵמָּה of the righteous men."
+            }
+          ]
+        },
+        {
+          "gloss": "are (in a clause without a verb)",
+          "definition": "Ties a feminine plural subject to its predicate.",
+          "kin": [
+            "hu-is"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.41.26",
+              "role": "defining",
+              "note": "שֶׁבַע פָּרֹת הַטֹּבֹת שֶׁבַע שָׁנִים הֵנָּה: \"the seven good cows are seven years\"."
+            },
+            {
+              "ref": "Gen.6.2",
+              "note": "\"that the daughters of men were fair (טֹבֹת הֵנָּה)\"."
+            },
+            {
+              "ref": "Exo.1.19",
+              "note": "\"for they are lively (חָיוֹת הֵנָּה)\"."
+            },
+            {
+              "ref": "Gen.41.27"
+            }
+          ]
+        },
+        {
+          "gloss": "those (with the article)",
+          "definition": "After a feminine plural noun with the article.",
+          "kin": [
+            "hu-that"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.17.28",
+              "role": "defining",
+              "note": "מְעַט הַצֹּאן הָהֵנָּה בַּמִּדְבָּר: \"those few sheep in the wilderness\"."
+            }
+          ]
+        },
+        {
+          "gloss": "them (after a preposition)",
+          "definition": "With בְּ, מִן or כְּ, standing where the suffix ־הֶן would: \"with them\", \"than they\", \"like them\".",
+          "evidence": [
+            {
+              "ref": "Num.10.3",
+              "role": "defining",
+              "note": "וְתָקְעוּ בָּהֵן: \"and they shall blow with them\", the two silver trumpets."
+            },
+            {
+              "ref": "Gen.19.29",
+              "role": "defining",
+              "note": "\"the cities in which (בָּהֵן) Lot dwelt\"."
+            },
+            {
+              "ref": "Lev.11.21",
+              "note": "\"legs above their feet, to leap with them (בָּהֵן) on the earth\"."
+            },
+            {
+              "ref": "Ezk.16.47",
+              "note": "וַתַּשְׁחִתִי מֵהֵן: \"you were more corrupt than they\"."
+            },
+            {
+              "ref": "Ezk.18.14",
+              "note": "\"and does not do like them (כָּהֵן)\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הוּא",
+      "lang": "arc",
+      "bdb": [
+        "xe.af.aa"
+      ],
+      "cognate_ids": [
+        "akk-shu",
+        "ar-huwa",
+        "arc-targ-hu"
+      ],
+      "pos": "pronoun",
+      "gloss": "he, she (הִיא), it; (he) is; that",
+      "summary": "Scripture's Aramaic uses the pronoun, masculine הוּא and feminine הִיא, as Hebrew does: for the subject, as the link \"is\", and, before a noun, \"that\".",
+      "senses": [
+        {
+          "gloss": "he, she, it",
+          "definition": "The one spoken of, as subject, marked out.",
+          "kin": [
+            "hu-he"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.21",
+              "role": "defining",
+              "note": "וְהוּא מְהַשְׁנֵא עִדָּנַיָּא וְזִמְנַיָּא: \"and he changes the times and the seasons; he removes kings and sets up kings\"."
+            },
+            {
+              "ref": "Dan.2.22",
+              "note": "הוּא גָּלֵא עַמִּיקָתָא: \"he reveals the deep and secret things\"."
+            },
+            {
+              "ref": "Dan.6.17",
+              "role": "defining",
+              "note": "\"your God whom you serve continually, he will deliver you\"."
+            },
+            {
+              "ref": "Dan.2.44",
+              "note": "The kingdom the God of heaven sets up: וְהִיא תְּקוּם לְעָלְמַיָּא, \"and it shall stand for ever\"."
+            },
+            {
+              "ref": "Dan.7.24"
+            }
+          ]
+        },
+        {
+          "gloss": "is",
+          "definition": "Ties subject and predicate: \"you are the head of gold\".",
+          "kin": [
+            "hu-is"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.38",
+              "role": "defining",
+              "note": "אַנְתְּה־הוּא רֵאשָׁה דִּי דַהֲבָא: \"you are the head of gold\"."
+            },
+            {
+              "ref": "Dan.2.47",
+              "role": "defining",
+              "note": "\"your God is the God of gods and Lord of kings\"."
+            },
+            {
+              "ref": "Dan.6.27",
+              "note": "דִּי־הוּא אֱלָהָא חַיָּא וְקַיָּם לְעָלְמִין: \"for he is the living God, and steadfast for ever\"."
+            },
+            {
+              "ref": "Dan.4.21",
+              "note": "\"this is the interpretation, O king, and it is the decree of the Most High (הִיא)\"."
+            },
+            {
+              "ref": "Ezr.6.15",
+              "note": "דִּי־הִיא שְׁנַת־שֵׁת: \"which was the sixth year\"."
+            }
+          ]
+        },
+        {
+          "gloss": "that",
+          "definition": "Before a noun it points to what is in view: \"that image\".",
+          "kin": [
+            "hu-that"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.32",
+              "role": "defining",
+              "note": "הוּא צַלְמָא רֵאשֵׁהּ דִּי־דְהַב טָב: \"that image: its head was of fine gold\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הִמּוֹ",
+      "lang": "arc",
+      "root": "המו",
+      "bdb": [
+        "xe.ah.aa"
+      ],
+      "cognate_ids": [
+        "akk-shunu",
+        "ar-hum",
+        "uga-hm"
+      ],
+      "pos": "pronoun",
+      "gloss": "they; them",
+      "summary": "The Aramaic plural, also הִמּוֹן: the same base with the plural ־ם, ־ן, as Hebrew הֵם, הֵמָּה. In scripture it is mostly the object of a verb, \"them\".",
+      "senses": [
+        {
+          "gloss": "them (object)",
+          "definition": "Those spoken of, as the object of a verb.",
+          "evidence": [
+            {
+              "ref": "Dan.2.34",
+              "role": "defining",
+              "note": "וְהַדֵּקֶת הִמּוֹן: the stone \"broke them in pieces\"."
+            },
+            {
+              "ref": "Dan.2.35",
+              "note": "\"and the wind carried them away\"."
+            },
+            {
+              "ref": "Dan.3.22",
+              "note": "\"the flame of the fire slew them\"."
+            },
+            {
+              "ref": "Ezr.4.23",
+              "note": "\"and made them cease by force and power\"."
+            },
+            {
+              "ref": "Ezr.5.12",
+              "note": "\"he gave them into the hand of Nebuchadnezzar\"."
+            }
+          ]
+        },
+        {
+          "gloss": "(they) are",
+          "definition": "Ties subject and predicate.",
+          "kin": [
+            "hu-is"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.5.11",
+              "role": "defining",
+              "note": "אֲנַחְנָא הִמּוֹ עַבְדוֹהִי דִי־אֱלָהּ שְׁמַיָּא וְאַרְעָא: \"we are the servants of the God of heaven and earth\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אִנּוּן",
+      "lang": "arc",
+      "root": "אנונ",
+      "bdb": [
+        "xa.av.ab"
+      ],
+      "cognate_ids": [
+        "akk-shunu",
+        "ar-hum"
+      ],
+      "pos": "pronoun",
+      "gloss": "they, those; them",
+      "summary": "A second Aramaic plural, masculine אִנּוּן and feminine אִנִּין, with א for the base's ה: the Peshitta has both ܗܢܘܢ and ܐܢܘܢ of the same pronoun (SEDRA lexeme 781). It is the plural of הוּא in another form, not another word.",
+      "senses": [
+        {
+          "gloss": "they (are)",
+          "definition": "As the subject or the link: \"which are four\".",
+          "kin": [
+            "hu-is"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.7.17",
+              "role": "defining",
+              "note": "אִלֵּין חֵיוָתָא רַבְרְבָתָא דִּי אִנִּין אַרְבַּע: \"these great beasts, which are four, are four kings\"."
+            },
+            {
+              "ref": "Ezr.5.4",
+              "note": "מַן־אִנּוּן שְׁמָהָת גֻּבְרַיָּא: \"what are the names of the men?\""
+            }
+          ]
+        },
+        {
+          "gloss": "those",
+          "definition": "After a plural noun: \"those kings\".",
+          "kin": [
+            "hu-that"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.44",
+              "role": "defining",
+              "note": "וּבְיוֹמֵיהוֹן דִּי מַלְכַיָּא אִנּוּן: \"in the days of those kings the God of heaven shall set up a kingdom\"."
+            }
+          ]
+        },
+        {
+          "gloss": "them",
+          "definition": "As object, before the names of those meant.",
+          "evidence": [
+            {
+              "ref": "Dan.6.25",
+              "role": "defining",
+              "note": "\"they cast them into the den of lions, them (אִנּוּן), their children and their wives\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הוּ",
+      "lang": "syc",
+      "root": "הו",
+      "pos": "pronoun",
+      "gloss": "he, she (ܗܝ), they (ܗܢܘܢ); is",
+      "summary": "The Peshitta's pronoun, ܗܘ, ܗܝ, plural ܗܢܘܢ, ܗܢܝܢ (also ܐܢܘܢ, ܐܢܝܢ), one lexeme in SEDRA (781). After a word it often loses its ܗ in speech and serves as the link \"is\", as Hebrew הוּא does.",
+      "senses": [
+        {
+          "gloss": "he, they",
+          "definition": "The one or ones spoken of, as subject.",
+          "kin": [
+            "hu-he"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.1.21",
+              "role": "defining",
+              "note": "ܗܘ ܓܝܪ ܢܚܝܘܗܝ ܠܥܡܗ ܡܢ ܚܛܗܝܗܘܢ: \"for he shall save his people from their sins\"."
+            },
+            {
+              "ref": "Heb.1.12",
+              "note": "ܗܢܘܢ ܢܬܚܠܦܘܢ: \"they shall be changed\", the heavens."
+            }
+          ]
+        },
+        {
+          "gloss": "is",
+          "definition": "After the predicate, the link between it and the subject.",
+          "kin": [
+            "hu-is"
+          ],
+          "evidence": [
+            {
+              "ref": "Mrk.12.32",
+              "role": "defining",
+              "note": "ܕܚܕ ܗܘ ܘܠܝܬ ܐܚܪܝܢ ܠܒܪ ܡܢܗ: \"that he is one, and there is no other besides him\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הַו",
+      "lang": "syc",
+      "root": "הו",
+      "pos": "pronoun",
+      "gloss": "that, those",
+      "summary": "The same pronoun pointing out (SEDRA lexeme 782): ܗܿܘ, ܗܿܝ, plural ܗܿܢܘܢ, \"that, those\", as Hebrew הַהוּא, הָהֵם.",
+      "senses": [
+        {
+          "gloss": "that, those",
+          "definition": "Before or after a noun, the one or ones in view.",
+          "kin": [
+            "hu-that"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.2.18",
+              "role": "defining",
+              "note": "ܒܝܘܡܬܐ ܗܢܘܢ: \"in those days\", for Joel's בַּיָּמִים הָהֵמָּה."
+            },
+            {
+              "ref": "Mrk.12.32",
+              "note": "ܗܘ ܣܦܪܐ: \"that scribe\"."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-shu",
+      "lang": "akk",
+      "form": "𒋗𒌑",
+      "translit": "šū",
+      "gloss": "he; it; that (one just named)",
+      "relation": "cognate",
+      "note": "The same pronoun, with š where the West Semitic languages have h; it too points back, \"that, the same\". Akkadian's verbs for \"be, become\" (bašû, ewû) have no such š, so the pronoun is no form of a verb \"be\".",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003580, šū [he] IP",
+          "note": "he, him, it, that, this."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian šū, pronoun",
+          "note": "he; it; that, this same (aforementioned masculine noun)."
+        }
+      ]
+    },
+    {
+      "id": "akk-shi",
+      "lang": "akk",
+      "form": "𒅆𒄿",
+      "translit": "šī",
+      "gloss": "she; it; that",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000034970, šī [she] IP",
+          "note": "it, she, that, this."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian šī, pronoun"
+        }
+      ]
+    },
+    {
+      "id": "akk-shunu",
+      "lang": "akk",
+      "form": "𒋗𒉡",
+      "translit": "šunu",
+      "gloss": "they; those",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000035230, šunu [they] IP",
+          "note": "they, those."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian šunu, pronoun",
+          "note": "they; those, these same (aforementioned masculine plural noun)."
+        }
+      ]
+    },
+    {
+      "id": "akk-shina",
+      "lang": "akk",
+      "form": "𒅆𒈾",
+      "translit": "šina",
+      "gloss": "they (feminine); those",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "asbp x000031680, šina [they (f.)] IP",
+          "note": "these, they, they (f.), those."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian šina, pronoun"
+        }
+      ]
+    },
+    {
+      "id": "ar-huwa",
+      "lang": "ar",
+      "form": "هُوَ",
+      "translit": "huwa",
+      "gloss": "he, it; (as a link between two definite terms) is",
+      "relation": "cognate",
+      "note": "Arabic too sets the pronoun between subject and predicate as a link, as Hebrew יַהְוֶה הוּא הָאֱלֹהִים.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic هو (huwa), pronoun",
+          "note": "he; it; \"having a copulative effect, usually inserted when both the mubtadaʔ and ḵabar are definite\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-hiya",
+      "lang": "ar",
+      "form": "هِيَ",
+      "translit": "hiya",
+      "gloss": "she, it",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic هي (hiya), pronoun",
+          "note": "she; it (of animals and things of feminine gender)."
+        }
+      ]
+    },
+    {
+      "id": "ar-hum",
+      "lang": "ar",
+      "form": "هُمْ",
+      "translit": "hum",
+      "gloss": "they (masculine)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic هم (hum), pronoun"
+        }
+      ]
+    },
+    {
+      "id": "ar-hunna",
+      "lang": "ar",
+      "form": "هُنَّ",
+      "translit": "hunna",
+      "gloss": "they (feminine)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic هن (hunna), pronoun"
+        }
+      ]
+    },
+    {
+      "id": "uga-hw",
+      "lang": "uga",
+      "form": "𐎅𐎆",
+      "translit": "hw",
+      "gloss": "he",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎅𐎆 (hw), pronoun"
+        }
+      ]
+    },
+    {
+      "id": "uga-hy",
+      "lang": "uga",
+      "form": "𐎅𐎊",
+      "translit": "hy",
+      "gloss": "she",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎅𐎊 (hy), pronoun"
+        }
+      ]
+    },
+    {
+      "id": "uga-hm",
+      "lang": "uga",
+      "form": "𐎅𐎎",
+      "translit": "hm",
+      "gloss": "they",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎅𐎎 (hm), pronoun",
+          "note": "they; they, the two of them."
+        }
+      ]
+    },
+    {
+      "id": "uga-hn",
+      "lang": "uga",
+      "form": "𐎅𐎐",
+      "translit": "hn",
+      "gloss": "they",
+      "relation": "possible",
+      "note": "Given only as \"they\"; that it is the feminine, as Hebrew הֵן, is not stated in the source read.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎅𐎐 (hn), pronoun"
+        }
+      ]
+    },
+    {
+      "id": "phn-ha",
+      "lang": "phn",
+      "form": "𐤄𐤀",
+      "translit": "hʾ",
+      "gloss": "he; she",
+      "relation": "cognate",
+      "note": "Written with the same ה and א as Hebrew הוא, for both genders, as the Torah writes הוא for both.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤄𐤀 (hʾ), pronoun",
+          "note": "he (masculine third-person singular); she (feminine third-person singular)."
+        }
+      ]
+    },
+    {
+      "id": "moab-ha",
+      "lang": "sem",
+      "form": "הא",
+      "translit": "hʾ",
+      "gloss": "he",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele: גם הא, \"he too\", Hebrew's גַּם־הוּא (Gen 4:4), in the same consonants.",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, line 6",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "ויאמר גם הא אענו את מאב."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, line 6",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"and he too said, I will afflict Mōʾāḇ\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-ha",
+      "lang": "sem",
+      "form": "𐩠𐩱",
+      "translit": "hʾ",
+      "gloss": "he, she, it; that, that one",
+      "relation": "cognate",
+      "note": "Sabaic, South Arabia: the pronoun and the far demonstrative \"that\" in one word, as הוּא and הַהוּא.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Sabaean 𐩠𐩱 (hʾ), pronoun",
+          "note": "Remote demonstrative pronoun: that, that one; third-person singular independent pronoun: he, she, it."
+        }
+      ]
+    },
+    {
+      "id": "gez-hu",
+      "lang": "gez",
+      "form": "ሁ",
+      "translit": "-hu",
+      "gloss": "him, his, it, its (bound to a word)",
+      "relation": "cognate",
+      "note": "The bound form of the pronoun, as Hebrew ־הוּ, ־וֹ; Ge'ez's independent ውእቱ (wəʾətu) is not in the sources read.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ሁ (-hu), pronoun",
+          "note": "him, his, it, its (bound object pronoun)."
+        }
+      ]
+    },
+    {
+      "id": "arc-targ-hu",
+      "lang": "arc",
+      "form": "הוּא",
+      "translit": "hū",
+      "gloss": "he, it; (with ה) that",
+      "relation": "cognate",
+      "note": "The Aramaic of the Targums and Talmud: the same pronoun, plural הִינוּן, and with the article הַהוּא \"that\".",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הוּא (ch.)",
+          "note": "Targ. Ex. 1:16; pl. הִינוּן, Targ. Y. Ex. 1:10, 19; הַהוּא Targ. Y. Ex. 21:20."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "one-god",
+      "statement": "The pronoun carries Israel's confession: \"know … that Yahweh, he is the God (יַהְוֶה הוּא הָאֱלֹהִים) in heaven above and on the earth beneath: there is none else\" (Deu 4:35, 39); at Carmel the people fell on their faces and said it twice (1Ki 18:39). Yahweh says it of himself, אֲנִי הוּא, \"I am he, and there is no god with me\" (Deu 32:39), \"before me no god was formed, and after me there shall be none\" (Isa 43:10), and those who pray say it to him, \"you are he, Yahweh, you alone\" (Neh 9:6; Isa 37:16). The scribe who answered Jesus repeats Deuteronomy's words: \"there is one God, and there is none other but he\", and Jesus said he had answered wisely (Mrk 12:32–34); Paul, \"to us there is one God, the Father\" (1Co 8:6). From the verses: \"he\" in these confessions is one, Yahweh the Father, besides whom there is no other God.",
+      "evidence": [
+        {
+          "ref": "Deu.4.35"
+        },
+        {
+          "ref": "Deu.4.39"
+        },
+        {
+          "ref": "1Ki.18.39"
+        },
+        {
+          "ref": "Deu.32.39"
+        },
+        {
+          "ref": "Isa.43.10"
+        },
+        {
+          "ref": "Neh.9.6"
+        },
+        {
+          "ref": "Isa.37.16"
+        },
+        {
+          "ref": "Mrk.12.32",
+          "to": "Mrk.12.34"
+        },
+        {
+          "ref": "1Co.8.6"
+        }
+      ]
+    },
+    {
+      "topic": "i-am-he",
+      "statement": "In Isaiah Yahweh's witnesses are to \"know and believe me and understand that I am he\" (Isa 43:10). Jesus takes up those words: \"I tell you before it comes, that when it comes to pass you may believe that I am he\" (Jhn 13:19). What he claimed by them the Gospels say: to the woman who spoke of the coming Messiah he said \"I am he, who speaks to you\" (Jhn 4:25–26); the saying of the false claimants \"I am he\" in Mark is \"I am the Christ\" in Matthew (Mrk 13:6; Mat 24:5); and \"when you have lifted up the son of man, then you shall know that I am he, and that I do nothing of myself, but as my Father taught me\" (Jhn 8:28). From the verses: on Jesus' lips \"I am he\" is the claim to be the Christ whom Isaiah's God promised and sent, who does nothing of himself; the God who says \"I am he\" in Isaiah is the one Jesus calls \"my Father\" and \"the only true God\" (Jhn 17:3).",
+      "evidence": [
+        {
+          "ref": "Isa.43.10"
+        },
+        {
+          "ref": "Jhn.13.19"
+        },
+        {
+          "ref": "Jhn.4.25",
+          "to": "Jhn.4.26"
+        },
+        {
+          "ref": "Mrk.13.6"
+        },
+        {
+          "ref": "Mat.24.5"
+        },
+        {
+          "ref": "Jhn.8.28"
+        },
+        {
+          "ref": "Jhn.17.3"
+        }
+      ]
+    }
+  ],
+  "note": "Root investigation (2026-11-13). Keyed by its own consonants: no viable root was found. (1) Across the Semitic languages the pronoun is one inherited word: Akkadian šū/šī/šunu/šina, Arabic huwa/hiya/hum/hunna, Ugaritic hw/hy/hm/hn, Phoenician and Moabite hʾ, Sabaic hʾ, Aramaic and Syriac hū/hī; its h answers Akkadian š, which is not the regular match of a root's ה (Hebrew ה is usually Akkadian zero) but the same h/š that marks the causative stems (hiphil, haphel, Akkadian Š): a pronominal base, not radicals. The א of הוּא is not constant either (Aramaic and Syriac hū, Arabic huwa, Ugaritic hw). (2) The plurals are the base with the plural endings ־ם/־ן of אַתֶּם/אַתֶּן and the suffixes ־הֶם/־הֶן, so הֵם and הֵן are not roots המ, הנ either. (3) The only scripture word of the same letters is the verb הָוָה/Aramaic הֲוָא \"befall, be\" (in hayah.json), whose note already sets aside a link to the pronoun; Akkadian decides against it, since it says \"he\" with šū but has no š in bašû or ewû; Ugaritic says \"be\" with kwn. No noun of these letters could give \"he\". So, unlike עַל from עלה, no root is claimed; the evidence is strong. Cognate sources: Lane has no article on هُوَ (the pronouns were left for the Supplement, p. 2873), so Arabic, Ugaritic, Phoenician, Sabaic and Ge'ez cite Wiktionary only; Segert 1984, Krahmalkov 2000, Biella 1982, Dillmann/Leslau (wəʾətu) not consulted. Egyptian sw \"he\", sj \"she\" (Wiktionary's Proto-Semitic *šuʔa, *šiʔa) go back further than Semitic and are not recorded. Database: (a) the pronoun's tokens carry word_info root הוא, the same key hayah.json gives its words הָוָה and Aramaic הֲוָא, and haqor_lexicon_root resolves a root to the first id, so the word sheet of הוּא may open hayah, not this entry, until those words or the lookup change. (b) xe.af.aa (BDB's Aramaic הוּא) is matched by spelling to the Hebrew tokens too, so the Aramaic word's count repeats the Hebrew's. (c) e.be.ac (הִיא) has no tokens of its own: the feminine's tokens are under e.aw.aa. (d) The lone הֵנָּה is filed under e.bz.ac (\"hither\") and the lone הֵן under e.bz.aa (\"behold\"), which belong to the deictic הִנֵּה, not here; only prepositional הֵן is counted (e.by.aa). (e) Some הֵמָּה tokens carry word_info root המה, the root of הָמָה \"murmur\"; the Hebrew plurals are given no root of their own so that root does not lead here. (f) The Syriac words take root הו, SEDRA's key for this pronoun (493, 494) and also for ܗܘܬܐ \"gulf\" (499, in hayah.json under הוא), so Luke 16:26 may reach this entry. Names that seem to end in the pronoun (אֲבִיהוּא, אֱלִיהוּא, יֵהוּא) are not written here. Psalm verses are cited in the Hebrew numbering (Psa 102:28 = English 102:27; Joel 3:2 = English 2:29)."
+}
