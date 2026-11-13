@@ -1,0 +1,884 @@
+{
+  "id": "nus",
+  "root": "נוס",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "flight",
+    "escape",
+    "refuge",
+    "war",
+    "judgment"
+  ],
+  "gloss": "flee, escape; flight; refuge",
+  "summary": "To flee: to run from what threatens, whether an army routed before its enemy, a man from a snake or a lion, or the manslayer to a city of refuge (Num 35:11; Deu 19:4–5). Things too are said to flee when they vanish before a greater presence: the sea before God, shadows at daybreak, sorrow and sighing when the ransomed return (Psa 114:3; Sng 2:17; Isa 35:10). מָנוֹס is flight or a way of escape, and the place one flees to, a refuge, which David and Jeremiah find in Yahweh himself (2Sa 22:3; Jer 16:19). Ugaritic ns “flee” and Punic nws “flight” share the sense.",
+  "words": [
+    {
+      "lemma": "נוּס",
+      "pos": "verb",
+      "gloss": "flee, escape; (hiphil) put to flight, bring to safety",
+      "bdb": [
+        "n.cc.aa"
+      ],
+      "cognate_ids": [
+        "uga-ns",
+        "pun-ns",
+        "ar-nasa-flee"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "flee, escape; vanish",
+          "senses": [
+            {
+              "id": "flee-rout",
+              "gloss": "flee (from an enemy), be routed",
+              "definition": "To run from a stronger foe or a lost battle; the word of the rout, often set beside falling slain and being pursued.",
+              "evidence": [
+                {
+                  "ref": "Num.10.35",
+                  "role": "defining",
+                  "note": "As the ark sets out: “Rise, Yahweh, and let your enemies be scattered (יָפֻצוּ), and let those who hate you יָנֻסוּ from before you.”"
+                },
+                {
+                  "ref": "Psa.68.2",
+                  "note": "David takes up Moses’ words of Num 10:35: “Let God arise, let his enemies be scattered, and let those who hate him flee from before him.”"
+                },
+                {
+                  "ref": "1Sa.4.10",
+                  "role": "defining",
+                  "note": "“Israel was struck, and they fled, each to his tent; and the slaughter was very great.”"
+                },
+                {
+                  "ref": "1Sa.17.51",
+                  "note": "The Philistines saw that their champion was dead, and they fled."
+                },
+                {
+                  "ref": "1Sa.31.1",
+                  "note": "“The men of Israel fled from before the Philistines and fell slain on mount Gilboa.”"
+                },
+                {
+                  "ref": "Gen.14.10",
+                  "note": "The kings of Sodom and Gomorrah fled and fell into the tar pits; the rest fled to the hills."
+                },
+                {
+                  "ref": "Jos.8.5",
+                  "to": "Jos.8.6",
+                  "note": "A feigned flight at Ai, to draw the defenders out: “we will flee before them.”"
+                },
+                {
+                  "ref": "Jdg.7.21",
+                  "note": "The camp of Midian “ran, cried out and fled” before Gideon’s three hundred."
+                },
+                {
+                  "ref": "Deu.28.7",
+                  "role": "defining",
+                  "note": "Enemies “will come out against you one way and flee before you seven ways”; reversed in Deu 28:25 for Israel’s disobedience."
+                },
+                {
+                  "ref": "Deu.28.25"
+                },
+                {
+                  "ref": "Lev.26.17",
+                  "role": "defining",
+                  "note": "“You shall flee when no one is pursuing you.”"
+                },
+                {
+                  "ref": "Lev.26.36",
+                  "note": "“The sound of a driven leaf shall chase them, and they shall flee as one flees from a sword.”"
+                },
+                {
+                  "ref": "Pro.28.1",
+                  "role": "defining",
+                  "note": "“The wicked flee when no one pursues, but the righteous are bold as a young lion.”"
+                },
+                {
+                  "ref": "Isa.30.17",
+                  "note": "“A thousand at the rebuke of one; at the rebuke of five you shall flee.”"
+                },
+                {
+                  "ref": "Amo.2.16",
+                  "note": "“The stout of heart among the mighty shall flee naked in that day.”"
+                },
+                {
+                  "ref": "Jer.46.5",
+                  "to": "Jer.46.6",
+                  "note": "Egypt’s warriors “have fled in flight and not turned back”; “let not the swift flee.”"
+                },
+                {
+                  "ref": "2Ki.14.12",
+                  "note": "Judah was struck before Israel, and they fled each to his tent."
+                },
+                {
+                  "ref": "1Ch.19.14",
+                  "to": "1Ch.19.15"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "speed-on-horses",
+                  "gloss": "speed away (on horseback)",
+                  "definition": "To ride off at speed; Isaiah turns the word back on those who trust in horses for their haste.",
+                  "evidence": [
+                    {
+                      "ref": "Isa.30.16",
+                      "role": "defining",
+                      "note": "“You said, ‘No, for we will נָנוּס on horses’; therefore you shall flee (תְּנוּסוּן); ‘we will ride on the swift’; therefore your pursuers shall be swift.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "flee-to-refuge",
+              "gloss": "flee to (a place), escape there",
+              "definition": "To run to a place of safety and be out of reach: the manslayer to a city of refuge, David from Saul, a people out of a doomed city; with מָלַט “escape, save” as its parallel.",
+              "evidence": [
+                {
+                  "ref": "Num.35.11",
+                  "role": "defining",
+                  "note": "“Cities of refuge they shall be for you, that the manslayer who strikes a soul unwittingly may flee there.”"
+                },
+                {
+                  "ref": "Num.35.6"
+                },
+                {
+                  "ref": "Num.35.15"
+                },
+                {
+                  "ref": "Num.35.25",
+                  "to": "Num.35.26",
+                  "role": "defining",
+                  "note": "He “shall dwell in it until the death of the high priest”; if he goes out of the border of the city “to which he fled”, the avenger may kill him."
+                },
+                {
+                  "ref": "Num.35.32",
+                  "note": "No ransom may be taken for one “who has fled to his city of refuge” to return before the priest’s death."
+                },
+                {
+                  "ref": "Exo.21.13",
+                  "note": "“I will appoint you a place to which he shall flee.”"
+                },
+                {
+                  "ref": "Deu.4.42"
+                },
+                {
+                  "ref": "Deu.19.3",
+                  "to": "Deu.19.5",
+                  "role": "defining",
+                  "note": "The axe head flies off and kills a neighbour: “he shall flee to one of these cities and live.”"
+                },
+                {
+                  "ref": "Deu.19.11",
+                  "note": "A murderer who lay in wait and flees there is fetched back and given up to the avenger."
+                },
+                {
+                  "ref": "Jos.20.3",
+                  "to": "Jos.20.4"
+                },
+                {
+                  "ref": "Jos.20.9"
+                },
+                {
+                  "ref": "1Ki.2.28",
+                  "note": "Joab fled to the tent of Yahweh and took hold of the horns of the altar."
+                },
+                {
+                  "ref": "Gen.19.20",
+                  "role": "defining",
+                  "note": "Lot: “this city is near to flee to … let me escape (אִמָּלְטָה) there, and my soul shall live.”"
+                },
+                {
+                  "ref": "1Sa.19.10",
+                  "note": "“David fled and escaped (וַיִּמָּלֵט) that night.”"
+                },
+                {
+                  "ref": "Jer.48.6",
+                  "role": "defining",
+                  "note": "“Flee, save (מַלְּטוּ) your lives.”"
+                },
+                {
+                  "ref": "Jer.51.6",
+                  "role": "defining",
+                  "note": "“Flee from the midst of Babylon, and let each man save his soul; do not be cut off in her iniquity.”"
+                },
+                {
+                  "ref": "Zec.2.10",
+                  "note": "“Ho! ho! flee from the land of the north,” says Yahweh."
+                },
+                {
+                  "ref": "Zec.14.5",
+                  "note": "“You shall flee by the valley of my mountains … as you fled from before the earthquake in the days of Uzziah.”"
+                },
+                {
+                  "ref": "Isa.10.3",
+                  "note": "“To whom will you flee for help?”"
+                },
+                {
+                  "ref": "Isa.20.6",
+                  "note": "“Such is our hope, where we fled for help to be delivered from the king of Assyria.”"
+                },
+                {
+                  "ref": "Amo.9.1",
+                  "role": "defining",
+                  "note": "In judgment “not one of them shall flee away, and not one of them shall escape (יִמָּלֵט).”"
+                }
+              ]
+            },
+            {
+              "id": "flee-from-thing",
+              "gloss": "flee from (something feared)",
+              "definition": "Of a person running from a particular danger or temptation close at hand.",
+              "evidence": [
+                {
+                  "ref": "Gen.39.12",
+                  "role": "defining",
+                  "note": "Joseph left his garment in her hand “and fled and went outside.”"
+                },
+                {
+                  "ref": "Exo.4.3",
+                  "role": "defining",
+                  "note": "The staff became a snake, “and Moses fled from before it.”"
+                },
+                {
+                  "ref": "Amo.5.19",
+                  "role": "defining",
+                  "note": "“As if a man fled from a lion, and a bear met him.”"
+                },
+                {
+                  "ref": "Num.16.34",
+                  "note": "All Israel round about fled at the cry of those swallowed, “lest the earth swallow us.”"
+                },
+                {
+                  "ref": "Exo.14.25",
+                  "note": "Egypt: “Let us flee from before Israel, for Yahweh fights for them.”"
+                },
+                {
+                  "ref": "Isa.24.18",
+                  "note": "“He who flees from the sound of terror shall fall into the pit.”"
+                },
+                {
+                  "ref": "2Sa.4.4",
+                  "note": "Mephibosheth’s nurse, hurrying to flee, let him fall."
+                }
+              ]
+            },
+            {
+              "id": "vanish",
+              "gloss": "depart, vanish (of things)",
+              "definition": "Of what is not a person: to give way and be gone, as before a greater presence or at the coming of something new.",
+              "evidence": [
+                {
+                  "ref": "Psa.114.3",
+                  "role": "defining",
+                  "note": "“The sea saw and fled; the Jordan turned back”; asked “What ails you, sea, that you flee?” (114:5)."
+                },
+                {
+                  "ref": "Psa.114.5"
+                },
+                {
+                  "ref": "Psa.104.7",
+                  "note": "The waters stood above the mountains: “at your rebuke they fled.”"
+                },
+                {
+                  "ref": "Sng.2.17",
+                  "role": "defining",
+                  "note": "“Until the day breathes and the shadows flee.”"
+                },
+                {
+                  "ref": "Sng.4.6"
+                },
+                {
+                  "ref": "Isa.35.10",
+                  "role": "defining",
+                  "note": "The ransomed of Yahweh come to Zion with joy, “and sorrow and sighing shall flee away.” Again Isa 51:11."
+                },
+                {
+                  "ref": "Isa.51.11"
+                },
+                {
+                  "ref": "Deu.34.7",
+                  "role": "defining",
+                  "note": "Moses at a hundred and twenty: “his eye was not dim, nor his vigour fled.”"
+                },
+                {
+                  "ref": "Isa.17.13",
+                  "note": "The nations rebuked “flee far off, and are chased like the chaff of the mountains before the wind.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "put to flight; bring hastily to safety",
+          "senses": [
+            {
+              "gloss": "put to flight",
+              "definition": "To make an enemy flee.",
+              "evidence": [
+                {
+                  "ref": "Deu.32.30",
+                  "role": "defining",
+                  "note": "“How should one chase a thousand, and two put ten thousand to flight, unless their Rock had sold them?”"
+                }
+              ]
+            },
+            {
+              "gloss": "bring hastily to safety",
+              "definition": "To make something flee from danger: to get it away and under cover.",
+              "evidence": [
+                {
+                  "ref": "Exo.9.20",
+                  "role": "defining",
+                  "note": "Those of Pharaoh’s servants who feared Yahweh’s word made their servants and cattle flee into the houses, before the hail."
+                },
+                {
+                  "ref": "Jdg.6.11",
+                  "role": "defining",
+                  "note": "Gideon threshed wheat in the winepress “to get it away (לְהָנִיס) from before Midian.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "drive on (uncertain)",
+          "senses": [
+            {
+              "gloss": "drive on, put to flight (uncertain)",
+              "definition": "Used once, of Yahweh’s wind against a flood. Read under this root it is “the wind of Yahweh drives it on”; the doubled ס matches נֵס “banner” and the verb of Zec 9:16, so it may instead be “lifts a banner against it”. Its link to “flee” is not certain.",
+              "evidence": [
+                {
+                  "ref": "Isa.59.19",
+                  "role": "defining",
+                  "note": "“When the enemy comes in like a flood, the spirit of Yahweh נֹסְסָה בוֹ.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "flee for refuge (uncertain)",
+          "senses": [
+            {
+              "gloss": "flee for refuge, rally (uncertain)",
+              "definition": "Used once, beside נֵס “banner”: those who fear God are given a banner “to flee to it from before the bow”, a rallying point to escape to. The form may instead belong with נֵס and mean “to be lifted up, displayed”, so its link to “flee” is not certain.",
+              "evidence": [
+                {
+                  "ref": "Psa.60.6",
+                  "role": "defining",
+                  "note": "“You have given to those who fear you a נֵס, לְהִתְנוֹסֵס from before the bow.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φεύγω",
+          "gloss": "flee",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.35.11, Pro.28.1, Psa.114.3, Zec.2.10, נוּס → φεύγω; φεύγω renders נוּס about 83 times"
+            },
+            {
+              "ref": "Mat.24.16",
+              "note": "“Let those in Judea flee to the mountains”: the call to flee a doomed city, as the prophets called Israel out of Babylon (Jer 51:6)."
+            },
+            {
+              "ref": "Rev.20.11",
+              "note": "Earth and heaven fled from the face of him who sat on the throne; compare the sea that fled before God (Psa 114:3)."
+            }
+          ]
+        },
+        {
+          "lemma": "καταφεύγω",
+          "gloss": "flee for refuge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.35.25 and Num.35.26, נוּס → κατέφυγεν (the city “to which he fled”)"
+            },
+            {
+              "ref": "Heb.6.18",
+              "role": "defining",
+              "note": "“We who have fled for refuge (καταφυγόντες) to lay hold of the hope set before us”, the language of the cities of refuge."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָלַט",
+            "note": "Flee // escape, save one’s life: what the flight is for.",
+            "evidence": [
+              {
+                "ref": "Jer.48.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.51.6"
+              },
+              {
+                "ref": "1Sa.19.10"
+              },
+              {
+                "ref": "Amo.9.1"
+              },
+              {
+                "ref": "Jer.48.19"
+              }
+            ]
+          },
+          {
+            "lemma": "פּוּץ",
+            "note": "Enemies flee // are scattered before God.",
+            "evidence": [
+              {
+                "ref": "Num.10.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.68.2"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בָּטַח",
+            "note": "The wicked flee with no pursuer; the righteous are confident as a lion. Isaiah sets flight on horses against returning and rest, quietness and trust.",
+            "evidence": [
+              {
+                "ref": "Pro.28.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.30.15",
+                "to": "Isa.30.16"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נוּס מִפְּנֵי",
+            "gloss": "flee from before (someone)",
+            "evidence": [
+              {
+                "ref": "Num.10.35"
+              },
+              {
+                "ref": "Exo.4.3"
+              },
+              {
+                "ref": "Exo.14.25"
+              },
+              {
+                "ref": "1Sa.31.1"
+              }
+            ]
+          },
+          {
+            "phrase": "וְנַסְתֶּם וְאֵין רֹדֵף",
+            "gloss": "you shall flee with no one pursuing",
+            "evidence": [
+              {
+                "ref": "Lev.26.17"
+              },
+              {
+                "ref": "Lev.26.36"
+              },
+              {
+                "ref": "Pro.28.1"
+              }
+            ]
+          },
+          {
+            "phrase": "לָנוּס שָׁמָּה",
+            "gloss": "to flee there (to a city of refuge)",
+            "evidence": [
+              {
+                "ref": "Num.35.6"
+              },
+              {
+                "ref": "Num.35.11"
+              },
+              {
+                "ref": "Deu.19.3"
+              },
+              {
+                "ref": "Jos.20.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָנוֹס",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "flight, escape; refuge",
+      "bdb": [
+        "n.cc.ab"
+      ],
+      "cognate_ids": [
+        "pun-ns",
+        "ar-nasa-flee"
+      ],
+      "summary": "The verbal noun with מ־ of place: the act of fleeing or the way out, and the place fled to.",
+      "senses": [
+        {
+          "id": "escape",
+          "gloss": "flight, escape, a way out",
+          "definition": "The power or chance to get away; in judgment it “perishes” from the swift, the shepherds and the wicked.",
+          "kin": [
+            "flee-to-refuge"
+          ],
+          "evidence": [
+            {
+              "ref": "Amo.2.14",
+              "role": "defining",
+              "note": "“מָנוֹס shall perish from the swift, and the strong shall not strengthen his power.”"
+            },
+            {
+              "ref": "Jer.25.35",
+              "role": "defining",
+              "note": "“מָנוֹס shall perish from the shepherds, and escape (פְלֵיטָה) from the lords of the flock.”"
+            },
+            {
+              "ref": "Job.11.20",
+              "note": "“The eyes of the wicked shall fail, and מָנוֹס shall perish from them.”"
+            },
+            {
+              "ref": "Jer.46.5",
+              "role": "defining",
+              "note": "“They have fled in flight (וּמָנוֹס נָסוּ)”: the noun as the verb’s own object."
+            }
+          ]
+        },
+        {
+          "id": "refuge",
+          "gloss": "refuge, place of escape",
+          "definition": "The place or person one flees to and is safe with; said of Yahweh.",
+          "kin": [
+            "flee-to-refuge"
+          ],
+          "evidence": [
+            {
+              "ref": "2Sa.22.3",
+              "role": "defining",
+              "note": "“My high tower and my מָנוֹס, my saviour; you save me from violence.”"
+            },
+            {
+              "ref": "Psa.59.17",
+              "role": "defining",
+              "note": "“You have been my high tower (מִשְׂגָּב) and a מָנוֹס in the day of my distress.”"
+            },
+            {
+              "ref": "Jer.16.19",
+              "role": "defining",
+              "note": "“Yahweh, my strength and my stronghold, and my מָנוֹס in the day of distress.”"
+            },
+            {
+              "ref": "Psa.142.5",
+              "note": "“מָנוֹס has perished from me; no one cares for my soul”; and next, “You are my refuge (מַחְסִי)” (142:6)."
+            },
+            {
+              "ref": "Psa.142.6"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φυγή",
+          "gloss": "flight",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Amo.2.14, Psa.142.5, מָנוֹס → φυγή"
+            },
+            {
+              "ref": "Mat.24.20",
+              "note": "“Pray that your flight be not in winter, nor on a sabbath.”"
+            }
+          ]
+        },
+        {
+          "lemma": "καταφυγή",
+          "gloss": "refuge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Sa.22.3, Psa.59.17, Jer.16.19, מָנוֹס → καταφυγή (not used in the New Testament)"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִשְׂגָּב",
+            "note": "Refuge // high tower, of Yahweh.",
+            "evidence": [
+              {
+                "ref": "2Sa.22.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.59.17"
+              }
+            ]
+          },
+          {
+            "lemma": "מָעוֹז",
+            "note": "Refuge // stronghold.",
+            "evidence": [
+              {
+                "ref": "Jer.16.19",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "פְּלֵיטָה",
+            "note": "Escape // escape, of the shepherds.",
+            "evidence": [
+              {
+                "ref": "Jer.25.35",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אָבַד מָנוֹס מִן",
+            "gloss": "escape perishes from (someone): there is no way out",
+            "evidence": [
+              {
+                "ref": "Amo.2.14"
+              },
+              {
+                "ref": "Jer.25.35"
+              },
+              {
+                "ref": "Job.11.20"
+              },
+              {
+                "ref": "Psa.142.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְנוּסָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "flight",
+      "bdb": [
+        "n.cc.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "flight",
+          "definition": "The act of fleeing.",
+          "kin": [
+            "flee-rout"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.26.36",
+              "role": "defining",
+              "note": "“They shall flee מְנֻסַת חֶרֶב”, the flight of those fleeing a sword, though none pursues."
+            },
+            {
+              "ref": "Isa.52.12",
+              "role": "defining",
+              "note": "“You shall not go out in haste (בְחִפָּזוֹן), nor go in flight, for Yahweh goes before you”: unlike the hasty going out of Egypt (Deu 16:3)."
+            },
+            {
+              "ref": "Deu.16.3"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "pun-ns"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-ns",
+      "lang": "uga",
+      "form": "𐎐𐎒",
+      "translit": "ns",
+      "gloss": "flee",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000287 nws [flee] V: UGC003164 ns [flee] V"
+        }
+      ]
+    },
+    {
+      "id": "pun-ns",
+      "lang": "phn",
+      "form": "נס, נוס",
+      "translit": "ns; nws",
+      "gloss": "flee; (noun nws) flight",
+      "relation": "cognate",
+      "note": "Krahmalkov gives the verb N-S, qal “flee”, citing CIS i 5510 (Punic, on the taking of Agrigentum), where he renders the phrase bʿl nws “the refugees”, literally those of flight: a noun spelled with w, as מָנוֹס keeps the root’s middle letter.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 328, N-S, v. qal FLEE",
+          "note": "CIS i 5510.10/11 (Pu): “made peace, together with the refugees (bʿl nws)”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000287 nws [flee] V: PUN001327 ns [flee] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-nasa",
+      "lang": "ar",
+      "form": "نَاسَ",
+      "translit": "nāsa",
+      "gloss": "move to and fro, dangle, swing",
+      "relation": "possible",
+      "note": "The regular match for נוס (Arabic s for Hebrew ס), but its sense is swinging to and fro, as of hair or an earring, not fleeing; it is kept as possible only, sharing the movement but not the flight.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2866, root نوس, نَاسَ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000287 nws [flee] V: ARB043065 naAsa [Swung]"
+        }
+      ]
+    },
+    {
+      "id": "ar-nasa-flee",
+      "lang": "ar",
+      "form": "نَاصَ، مَنَاصٌ",
+      "translit": "nāṣa, manāṣ",
+      "gloss": "draw back, flee, escape; a place or time of escape",
+      "relation": "possible",
+      "note": "Lane’s sources give نَاصَ عَنْ قِرْنِهِ “he fled from his adversary and eluded him”, and the verbal noun مَنَاصٌ, formed as מָנוֹס is, in the Qur’an’s “when it was not a time of مَنَاصٍ, escape” (38:3). The sense and the form match closely, but Arabic ṣ does not answer regularly to Hebrew ס, so it is recorded as possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2867, root نوص, نَاصَ (n40754)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "refuge",
+      "statement": "Yahweh appointed cities to which one who killed a man unwittingly might flee (Exo 21:13; Num 35:11). There, and only there, he was safe from the avenger of blood; if he left the city, the avenger might kill him (Num 35:26–27). He stayed until the death of the high priest who was anointed with the holy oil, and then went back to the land of his possession, and no ransom could buy that return sooner (Num 35:25, 28, 32). Hebrews speaks of “we who have fled for refuge (καταφυγόντες) to lay hold of the hope set before us”, the verb the Greek of Num 35:25–26 uses for the manslayer’s flight, and anchors that hope within the veil, “where Jesus has entered as forerunner for us, made a high priest for ever” (Heb 6:18–20), who because he continues for ever is able to save completely those who come to God through him (Heb 7:24–25). From the verses: the city of refuge pictures the believer’s safety in Christ as the manslayer’s in the city, held by the life of a high priest, and outside it there is no other safety.",
+      "evidence": [
+        {
+          "ref": "Exo.21.13"
+        },
+        {
+          "ref": "Num.35.11"
+        },
+        {
+          "ref": "Num.35.25",
+          "to": "Num.35.28"
+        },
+        {
+          "ref": "Num.35.32"
+        },
+        {
+          "ref": "Heb.6.18",
+          "to": "Heb.6.20"
+        },
+        {
+          "ref": "Heb.7.24",
+          "to": "Heb.7.25"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-the-refuge",
+      "statement": "David calls Yahweh “my מָנוֹס, my saviour” (2Sa 22:3; Psa 59:17), and Jeremiah “my מָנוֹס in the day of distress” (Jer 16:19). When man fails him, David finds “מָנוֹס has perished from me” and turns to Yahweh, “you are my refuge” (Psa 142:5–6). But from the swift, the mighty and the shepherds of the flock in the day of judgment escape perishes (Amo 2:14–16; Jer 25:35), and of those Yahweh strikes not one will flee away (Amo 9:1). Israel’s “we will flee on horses” is answered “therefore you shall flee”, when their strength was to have been in returning, rest and trust (Isa 30:15–16). From the verses: escape does not lie in speed or strength, but in fleeing to Yahweh.",
+      "evidence": [
+        {
+          "ref": "2Sa.22.3"
+        },
+        {
+          "ref": "Psa.59.17"
+        },
+        {
+          "ref": "Jer.16.19"
+        },
+        {
+          "ref": "Psa.142.5",
+          "to": "Psa.142.6"
+        },
+        {
+          "ref": "Amo.2.14",
+          "to": "Amo.2.16"
+        },
+        {
+          "ref": "Jer.25.35"
+        },
+        {
+          "ref": "Amo.9.1"
+        },
+        {
+          "ref": "Isa.30.15",
+          "to": "Isa.30.16"
+        }
+      ]
+    },
+    {
+      "topic": "flight-in-the-covenant",
+      "statement": "Moses prayed as the ark set out, “let those who hate you flee from before you” (Num 10:35), and David sang it again (Psa 68:2). The covenant promised that Israel’s enemies would flee before them seven ways if they obeyed, and that Israel would flee seven ways before its enemies if not (Deu 28:7, 25), fleeing even when none pursued, at the sound of a driven leaf (Lev 26:17, 36). One chasing a thousand and two putting ten thousand to flight could only be because their Rock had sold them (Deu 32:30). “The wicked flee when no one pursues, but the righteous are bold as a lion” (Pro 28:1). From the verses: victory and rout are Yahweh’s to give, and the flight of the unfaithful comes from within, not from the strength of the enemy.",
+      "evidence": [
+        {
+          "ref": "Num.10.35"
+        },
+        {
+          "ref": "Psa.68.2"
+        },
+        {
+          "ref": "Deu.28.7"
+        },
+        {
+          "ref": "Deu.28.25"
+        },
+        {
+          "ref": "Lev.26.17"
+        },
+        {
+          "ref": "Lev.26.36"
+        },
+        {
+          "ref": "Deu.32.30"
+        },
+        {
+          "ref": "Pro.28.1"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. Left out: m.cm.ap (מָנוֹס) and m.co.ad (מְנֻסָה), cross-references to n.cc.ab and n.cc.ac, and n.df.aj (ניס), a cross-reference to the verb; none has tokens. The polel (Isa 59:19) and hithpolel (Psa 60:6) are filed under this verb by the corpus but have a doubled ס; both stand beside the idea of a banner (נֵס, root נסס, n.dy.ab; Zec 9:16 מִתְנוֹסְסוֹת is filed under נסס, n.dy.aa), and may belong there; kept here with that said. Isa 30:16 נָנוּס “speed on horses” is sometimes taken as “fly to the attack”; entered as a narrower sense of flight. Cognates: Ugaritic ns rests on Anderson–Moser only (Segert’s glossary has no n-w-s); the Punic is checked in Krahmalkov p. 328. Arabic نَاسَ is the regular sound match but means “swing”, so it is named on no word; Arabic نَاصَ / مَنَاصٌ “flee / escape” matches in sense and pattern but not in sound: both possible. Leads not followed: a Syriac נָס “tremble” (no Peshitta New Testament word of this root in SEDRA; Payne Smith not checked); Akkadian nesû “be far, withdraw” is root n-s-y, not this one; Jewish Aramaic נְסַס “be sick” is another root. Doctrine “refuge” reads the cities of refuge through Heb 6:18–20 on the strength of the shared verb καταφεύγω (LXX Num 35:25–26); the reviewer should check that framing, especially the closing sentence."
+}
