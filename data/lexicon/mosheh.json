@@ -1,0 +1,251 @@
+{
+  "id": "mosheh",
+  "root": "משה",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "deliverance",
+    "water",
+    "names"
+  ],
+  "gloss": "draw out (of water)",
+  "summary": "The verb is to draw someone out, and each of its three uses is out of water: Pharaoh’s daughter draws the child from the Nile and names him מֹשֶׁה for it (Exo 2:10), and David says Yahweh “drew me out of many waters”, set beside “he took me” and “he delivered me from my strong enemy” (2Sa 22:17–18; Psa 18:17–18). The name Moses is the root’s chief word in scripture, about 770 times; its own entry is under names. Jewish Aramaic has the same verb for handling, wiping with the hand and drawing a thing through water.",
+  "words": [
+    {
+      "lemma": "מָשָׁה",
+      "pos": "verb",
+      "bdb": [
+        "m.ds.aa"
+      ],
+      "gloss": "draw out (of water)",
+      "summary": "Three uses only, all of drawing a person out of water to save his life; scripture’s own explanation of the name Moses rests on it. So few uses fix little beyond that.",
+      "cognate_ids": [
+        "arc-meshe",
+        "ar-masa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "draw out (of water)",
+          "senses": [
+            {
+              "id": "draw-out-of-water",
+              "gloss": "draw out of the water",
+              "definition": "Lift a person out of water by hand: Pharaoh’s daughter takes the child out of the river into which Pharaoh had ordered every son cast.",
+              "evidence": [
+                {
+                  "ref": "Exo.2.10",
+                  "role": "defining",
+                  "note": "וַתִּקְרָא שְׁמוֹ מֹשֶׁה וַתֹּאמֶר כִּי מִן־הַמַּיִם מְשִׁיתִהוּ, “she called his name Moses and said, For out of the water I drew him.”"
+                },
+                {
+                  "ref": "Exo.2.5",
+                  "note": "She sends her maid, takes the ark from among the reeds of the river: what “drew him out” describes."
+                },
+                {
+                  "ref": "Exo.1.22",
+                  "note": "Pharaoh’s order: every son born you shall cast into the river."
+                },
+                {
+                  "ref": "Act.7.21",
+                  "note": "Stephen retells the verse: when he was set out, Pharaoh’s daughter ἀνείλετο αὐτόν, took him up, and brought him up as her own son."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "draw out (of many waters)",
+          "senses": [
+            {
+              "id": "draw-out-many-waters",
+              "gloss": "draw out of many waters, rescue",
+              "definition": "Of Yahweh, to reach down and pull the sufferer out of overwhelming waters; the next line says what the waters are: a strong enemy and those who hate him.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.17",
+                  "role": "defining",
+                  "note": "יִשְׁלַח מִמָּרוֹם יִקָּחֵנִי יַמְשֵׁנִי מִמַּיִם רַבִּים, “he sent from on high, he took me, he drew me out of many waters.”"
+                },
+                {
+                  "ref": "Psa.18.18",
+                  "role": "defining",
+                  "note": "יַצִּילֵנִי מֵאֹיְבִי עָז, “he delivered me from my strong enemy and from those who hated me”: the many waters are the enemy."
+                },
+                {
+                  "ref": "2Sa.22.17",
+                  "note": "The same words in the song as 2 Samuel keeps it."
+                },
+                {
+                  "ref": "Psa.18.20",
+                  "note": "“He brought me out into a broad place”: the end of the rescue."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀναιρέω",
+          "gloss": "take up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.2.10, מְשִׁיתִהוּ → ἀνειλόμην αὐτόν"
+            },
+            {
+              "ref": "Act.7.21",
+              "note": "Stephen uses the Septuagint’s word for Exo 2:10: Pharaoh’s daughter ἀνείλετο αὐτόν."
+            }
+          ]
+        },
+        {
+          "lemma": "ἕλκω",
+          "gloss": "draw, drag",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Sa.22.17, יַמְשֵׁנִי → εἵλκυσέν με"
+            }
+          ]
+        },
+        {
+          "lemma": "προσλαμβάνω",
+          "gloss": "take to oneself",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.18.17 (LXX 17:17), יַמְשֵׁנִי → προσελάβετό με"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "לָקַח",
+            "note": "“He took me” is the line’s first verb, “he drew me out” its second.",
+            "evidence": [
+              {
+                "ref": "Psa.18.17"
+              },
+              {
+                "ref": "2Sa.22.17"
+              }
+            ]
+          },
+          {
+            "lemma": "נָצַל",
+            "note": "The next line: “he delivered me (יַצִּילֵנִי) from my strong enemy”.",
+            "evidence": [
+              {
+                "ref": "Psa.18.18"
+              },
+              {
+                "ref": "2Sa.22.18"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִן־הַמַּיִם מְשִׁיתִהוּ",
+            "gloss": "out of the water I drew him",
+            "evidence": [
+              {
+                "ref": "Exo.2.10"
+              }
+            ]
+          },
+          {
+            "phrase": "יַמְשֵׁנִי מִמַּיִם רַבִּים",
+            "gloss": "he drew me out of many waters",
+            "evidence": [
+              {
+                "ref": "Psa.18.17"
+              },
+              {
+                "ref": "2Sa.22.17"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-meshe",
+      "lang": "arc",
+      "form": "מְשֵׁי, מְשָׁא; aphel אַמְשֵׁי",
+      "translit": "mšē, mšā; amšē",
+      "gloss": "feel, touch; rub, wash (the hands); aphel handle, draw (through water)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The Targums and Talmud use the verb for working with the hand: feeling (Targ. Onkelos Gen 27:22), wiping and washing the hands, and in the aphel drawing a man’s clothes through water (B. Bathra 153a). The aphel answers closely to the Hebrew, a causative of drawing something by hand through or out of water. Aramaic š, not t, behind ש.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְשֵׁי, מְשָׁא (M02866)"
+        }
+      ]
+    },
+    {
+      "id": "ar-masa",
+      "lang": "ar",
+      "form": "مَسَى",
+      "translit": "masā",
+      "gloss": "wipe with one’s hand",
+      "relation": "possible",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "A verb of the hand, like the Aramaic; Arabic s answers to Hebrew ש from š, as the Aramaic does. Not found in the vendored Lane, whose article مسى (p. 3020) gives only the root’s “evening” words; so it rests on Wiktionary alone and is left possible.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic مسى (masā), verb, root م س ي",
+          "note": "“to wipe with one’s hand”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "deliverance",
+      "statement": "Pharaoh ordered every Hebrew son cast into the river (Exo 1:22); the child was laid among the reeds of that river and drawn out of it, and named for being drawn out (Exo 2:3–10). David uses the same verb of Yahweh’s rescue of him, and says what the “many waters” were: a strong enemy and those who hated him (Psa 18:17–18). Isaiah recalls Moses in the same terms turned outward: Yahweh “who brought them up out of the sea with the shepherds of his flock … dividing the water before them” (Isa 63:11–12), the day Yahweh saved Israel and Israel saw Egypt dead on the shore of the sea (Exo 14:30); Stephen calls the man God sent “ruler and deliverer” the one Israel had refused (Act 7:35), and Paul says the fathers “were all baptized into Moses in the cloud and in the sea” (1Co 10:1–2). From the verses: the one who was drawn out of the water of death was the one through whom Yahweh drew his people out of the sea, and a deliverance out of water is scripture’s own figure for being saved from death by God’s hand.",
+      "evidence": [
+        {
+          "ref": "Exo.1.22"
+        },
+        {
+          "ref": "Exo.2.3",
+          "to": "Exo.2.10"
+        },
+        {
+          "ref": "Psa.18.17",
+          "to": "Psa.18.18"
+        },
+        {
+          "ref": "Isa.63.11",
+          "to": "Isa.63.12"
+        },
+        {
+          "ref": "Exo.14.30"
+        },
+        {
+          "ref": "Act.7.35"
+        },
+        {
+          "ref": "1Co.10.1",
+          "to": "1Co.10.2"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-13. The root’s only scripture words are the verb (m.ds.aa) and the name Moses (m.ds.ab, and xm.am.ab for the Aramaic of Ezr 6:18; the database counts the same tokens under both), which is in names/mosheh.json. The name has the shape of the qal active participle (as רֹעֶה, עֹשֶׂה), “one drawing out”, not the passive “one drawn out”; Exo 2:10 explains it from the verb without saying which; Isa 63:11 (מֹשֶׁה עַמּוֹ … הַמַּעֲלֵם מִיָּם) may play on it. Not this root: נִמְשִׁי Nimshi (BDB files it n.dr.af under נמר); מַשֶּׁה “loan” of Deu 15:2 (m.ds.ac, under נשׁה). Leads not followed: Arabic masā “put the hand into a she-camel’s womb and draw out the foetus” (not in the vendored Lane; Lane’s supplement or Taj al-ʿArus would be the place); Syriac ܡܫܐ “wipe, cleanse” (not in SEDRA; Payne Smith not checked); Akkadian mašāʾu “take away by force” (Oracc; third radical ʾ, not y, and the sense is far, so not recorded); Jastrow compares מוּשׁ/מָשַׁשׁ “feel”, which may be a related root (Targ. Onkelos uses מְשֵׁי for Hebrew מוּשׁ in Gen 27:22). The Peshitta New Testament has no word of this root in SEDRA. Egyptian msi̯ “give birth; fashion” (TLA tla74950, Wb 2, 137.4–138.17) and ms “child” (tla74750), as in Ḏḥw.tj-ms.w Tuthmosis (tla400441) and the personal names Ms (tla600129) and Ms.w (tla702426), are proposed as the source of the name; not recorded as a cognate, since the validator allows Egyptian only as a loan and the evidence is against one: scripture explains the name from the Hebrew verb (Exo 2:10), and where it writes Egyptian -ms- it writes ס, not ש (רַעְמְסֵס, Gen 47:11; Exo 1:11; 12:37)."
+}
