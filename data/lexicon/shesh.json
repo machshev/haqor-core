@@ -1,0 +1,1265 @@
+{
+  "id": "shesh",
+  "root": "שדש",
+  "status": "draft",
+  "updated": "2026-11-13",
+  "tags": [
+    "number",
+    "time",
+    "sabbath",
+    "creation",
+    "law"
+  ],
+  "gloss": "six; sixty; sixth, a sixth part; give a sixth",
+  "summary": "שדש is the number six: שֵׁשׁ “six”, its plural שִׁשִּׁים “sixty”, the ordinal שִׁשִּׁי “sixth”, whose feminine is also “a sixth part”, and a piel “give a sixth” (Ezk 45:13). The doubled ש of שֵׁשׁ comes from an older šidš-: Ugaritic ṯdṯ “sixth”, Sabaic s¹dṯ and Arabic sādis keep the ד. Scripture uses six above all for the days and years of work before the seventh: “six days work shall be done, and on the seventh day a sabbath of ceasing” (Lev 23:3), because “in six days Yahweh made the heavens and the earth” (Exo 20:11); so too six years of sowing before the land’s sabbath (Lev 25:3) and six years of a Hebrew servant before his release (Exo 21:2). Aramaic שֵׁת and שִׁתִּין (Daniel, Ezra, the Peshitta), Arabic sitta, Akkadian šediš, Ugaritic ṯṯ and Phoenician šš all mean six.",
+  "words": [
+    {
+      "lemma": "שֵׁשׁ",
+      "pos": "numeral",
+      "gender": "mf",
+      "gloss": "six; (with עָשָׂר) sixteen; (with מֵאוֹת, אֲלָפִים) six hundred, six thousand",
+      "summary": "שֵׁשׁ stands with feminine nouns (שֵׁשׁ שָׁנִים, שֵׁשׁ כְּנָפַיִם), and שִׁשָּׁה, construct שֵׁשֶׁת, with masculine ones (שֵׁשֶׁת יָמִים; שִׁשָּׁה קָנִים, Exo 25:32), as the numbers three to ten do. The two other words spelled שֵׁשׁ, “fine linen” (a loan from Egyptian) and “marble”, are not this word and belong to other entries.",
+      "bdb": [
+        "v.bk.ab"
+      ],
+      "cognate_ids": [
+        "ar-sitta",
+        "uga-tt",
+        "akk-sedis",
+        "sab-sdt",
+        "phn-ss",
+        "arc-shit",
+        "gez-sessu"
+      ],
+      "senses": [
+        {
+          "id": "six",
+          "gloss": "six",
+          "definition": "The number six: one more than five, three twos, half of twelve.",
+          "evidence": [
+            {
+              "ref": "Exo.26.9",
+              "role": "defining",
+              "note": "“You shall couple five curtains by themselves and six (שֵׁשׁ) curtains by themselves, and double over the sixth (הַשִּׁשִּׁית) curtain”: six counted to its last, beside five."
+            },
+            {
+              "ref": "Isa.6.2",
+              "role": "defining",
+              "note": "“Six (שֵׁשׁ) wings, six wings to each one: with two he covered his face, with two he covered his feet, and with two he flew”: six as three twos."
+            },
+            {
+              "ref": "Exo.25.32",
+              "role": "defining",
+              "note": "“Six (שִׁשָּׁה) branches going out from its sides, three branches of the lampstand from one side and three from the other.”"
+            },
+            {
+              "ref": "2Sa.21.20",
+              "role": "defining",
+              "note": "A man whose fingers and toes were “six and six (שֵׁשׁ וָשֵׁשׁ), twenty-four in number”."
+            },
+            {
+              "ref": "1Sa.17.4",
+              "note": "Goliath’s height was six cubits and a span."
+            },
+            {
+              "ref": "Num.35.6",
+              "note": "Of the Levites’ cities, “the six (שֵׁשׁ) cities of refuge”, to which the manslayer may flee; Num 35:13, 15."
+            },
+            {
+              "ref": "Ezk.9.2",
+              "note": "Six (שִׁשָּׁה) men came from the upper gate, each with his weapon of shattering, and one among them clothed in linen with a scribe’s inkhorn."
+            },
+            {
+              "ref": "Ezk.40.5",
+              "note": "The measuring reed in the man’s hand was six cubits, each a cubit and a handbreadth."
+            },
+            {
+              "ref": "Ezk.46.4",
+              "note": "On the sabbath the prince offers six (שִׁשָּׁה) lambs without blemish and a ram; at the new moon a bull besides (46:6)."
+            },
+            {
+              "ref": "1Ki.10.19",
+              "note": "Solomon’s throne had six steps, with twelve lions on them, one on each side of each step (10:20)."
+            },
+            {
+              "ref": "Rut.3.15",
+              "note": "Boaz measured six of barley into Ruth’s cloak."
+            },
+            {
+              "ref": "Gen.31.41",
+              "note": "Jacob served Laban fourteen years for his two daughters and six years for his flock."
+            }
+          ],
+          "senses": [
+            {
+              "id": "six-before-seventh",
+              "gloss": "six (days, years) before the seventh",
+              "definition": "Six days or six years counted as the time of work, sowing or service, which the seventh day or year ends in ceasing or release.",
+              "tags": [
+                "sabbath"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.23.3",
+                  "role": "defining",
+                  "note": "“Six days (שֵׁשֶׁת יָמִים) work shall be done, and on the seventh day a sabbath of ceasing, a holy convocation”: the six against the seventh, at the head of Yahweh’s appointed times."
+                },
+                {
+                  "ref": "Exo.20.9",
+                  "to": "Exo.20.11",
+                  "role": "defining",
+                  "note": "“Six days you shall labour and do all your work … for in six days Yahweh made the heavens and the earth, the sea and all that is in them, and rested on the seventh day.”"
+                },
+                {
+                  "ref": "Exo.21.2",
+                  "role": "defining",
+                  "note": "A Hebrew servant “shall serve six years (שֵׁשׁ שָׁנִים), and in the seventh he shall go out free for nothing”."
+                },
+                {
+                  "ref": "Lev.25.3",
+                  "role": "defining",
+                  "note": "“Six years you shall sow your field and six years prune your vineyard”, and the seventh year is a sabbath of ceasing for the land (25:4)."
+                },
+                {
+                  "ref": "Exo.16.26",
+                  "note": "“Six days you shall gather it, but on the seventh day, the sabbath, there will be none.”"
+                },
+                {
+                  "ref": "Exo.31.15",
+                  "note": "Six days work may be done, but the seventh is a sabbath of ceasing, holy to Yahweh."
+                },
+                {
+                  "ref": "Exo.31.17",
+                  "note": "A sign for ever, “for in six days Yahweh made the heavens and the earth, and on the seventh day he ceased and was refreshed”."
+                },
+                {
+                  "ref": "Exo.34.21",
+                  "note": "Six days you shall work, and on the seventh cease, even in ploughing time and in harvest."
+                },
+                {
+                  "ref": "Exo.23.10",
+                  "note": "Six years you shall sow your land and gather its produce."
+                },
+                {
+                  "ref": "Exo.23.12",
+                  "note": "Six days you shall do your work, and on the seventh cease, that your ox and donkey may rest and your servant’s son and the sojourner be refreshed."
+                },
+                {
+                  "ref": "Deu.5.13"
+                },
+                {
+                  "ref": "Deu.15.12",
+                  "note": "A Hebrew man or woman sold to you serves six years, and in the seventh year you shall send him away free."
+                },
+                {
+                  "ref": "Deu.15.18",
+                  "note": "“He has served you six years, worth double the hire of a hired man.”"
+                },
+                {
+                  "ref": "Jer.34.14",
+                  "note": "Yahweh recalls the law of release after six years, which their fathers did not hear."
+                },
+                {
+                  "ref": "Exo.24.16",
+                  "note": "The cloud covered Sinai six days, and on the seventh day Yahweh called to Moses out of the cloud."
+                },
+                {
+                  "ref": "Jos.6.3",
+                  "note": "Around Jericho once a day “thus you shall do six days”, and seven times on the seventh (6:4, 14–15)."
+                },
+                {
+                  "ref": "Deu.16.8",
+                  "note": "Six days you shall eat מַצּוֹת, and on the seventh day a solemn assembly to Yahweh."
+                },
+                {
+                  "ref": "Ezk.46.1",
+                  "note": "The gate of the inner court facing east shall be shut “the six days of work” and opened on the day of the sabbath."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "six-in-compounds",
+          "gloss": "sixteen; six hundred; six thousand",
+          "definition": "In compound numbers: with עָשָׂר or עֶשְׂרֵה sixteen, with מֵאוֹת six hundred, with אֲלָפִים six thousand, and in the larger counts of the censuses.",
+          "evidence": [
+            {
+              "ref": "Exo.26.25",
+              "role": "defining",
+              "note": "Eight frames with “sixteen (שִׁשָּׁה עָשָׂר) bases of silver, two bases under one frame and two bases under another”: sixteen is eight twos."
+            },
+            {
+              "ref": "Gen.7.6",
+              "role": "defining",
+              "note": "“Noah was a son of six hundred (שֵׁשׁ מֵאוֹת) years when the flood came”, and the flood began in the six hundredth year of his life (7:11)."
+            },
+            {
+              "ref": "Exo.12.37",
+              "note": "About six hundred thousand men on foot set out from Rameses, besides children; Num 11:21."
+            },
+            {
+              "ref": "Num.1.46",
+              "note": "All the counted of Israel: six hundred and three thousand, five hundred and fifty."
+            },
+            {
+              "ref": "Exo.14.7",
+              "note": "Pharaoh took six hundred chosen chariots."
+            },
+            {
+              "ref": "1Sa.17.7",
+              "note": "Goliath’s spearhead weighed six hundred shekels of iron."
+            },
+            {
+              "ref": "1Ki.10.14",
+              "note": "The gold that came to Solomon in one year: “six hundred and sixty and six (שֵׁשׁ מֵאוֹת שִׁשִּׁים וָשֵׁשׁ) talents of gold”; 2Ch 9:13."
+            },
+            {
+              "ref": "Ezr.2.13",
+              "note": "The sons of Adonikam who returned: six hundred and sixty-six."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἕξ",
+          "gloss": "six",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.23.3, שֵׁשֶׁת יָמִים → ἓξ ἡμέρας; Lev.12.5 the same; ἕξ renders שֵׁשׁ ×82"
+            },
+            {
+              "ref": "Luk.13.14",
+              "note": "The ruler of the synagogue: “There are six days in which men ought to work; in them come and be healed, and not on the day of the sabbath”, the words of Exo 20:9 and Lev 23:3."
+            },
+            {
+              "ref": "Rev.4.8",
+              "note": "The four living creatures, each with six wings, crying “holy, holy, holy”, as the seraphs of Isa 6:2–3."
+            },
+            {
+              "ref": "Luk.4.25",
+              "note": "The heaven shut three years and six months in Elijah’s days; Jas 5:17."
+            },
+            {
+              "ref": "Jhn.2.6",
+              "note": "Six stone water jars set for the Jews’ purification."
+            },
+            {
+              "ref": "Jhn.12.1",
+              "note": "Six days before the Passover Jesus came to Bethany."
+            },
+            {
+              "ref": "Mat.17.1",
+              "note": "After six days Jesus took Peter, James and John up a high mountain, as the cloud covered Sinai six days before Yahweh called Moses (Exo 24:16)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שֶׁבַע",
+            "note": "Seven, the next number, set in parallel with six in the rising count of a wisdom saying: six, and the seventh as the climax.",
+            "evidence": [
+              {
+                "ref": "Pro.6.16",
+                "role": "defining",
+                "note": "“Six things Yahweh hates, and seven are an abomination to his soul”, and seven are then listed (6:17–19)."
+              },
+              {
+                "ref": "Job.5.19",
+                "note": "“In six troubles he will deliver you, and in seven no evil shall touch you.”"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שֵׁשֶׁת יָמִים … וּבַיּוֹם הַשְּׁבִיעִי",
+            "gloss": "six days … and on the seventh day",
+            "evidence": [
+              {
+                "ref": "Lev.23.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.20.9",
+                "to": "Exo.20.10"
+              },
+              {
+                "ref": "Exo.31.15"
+              },
+              {
+                "ref": "Exo.34.21"
+              },
+              {
+                "ref": "Exo.24.16"
+              },
+              {
+                "ref": "Deu.16.8"
+              }
+            ]
+          },
+          {
+            "phrase": "שֵׁשׁ שָׁנִים … וּבַשְּׁבִעִת",
+            "gloss": "six years … and in the seventh",
+            "evidence": [
+              {
+                "ref": "Exo.21.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.15.12"
+              },
+              {
+                "ref": "Lev.25.3",
+                "to": "Lev.25.4"
+              }
+            ]
+          },
+          {
+            "phrase": "שֵׁשׁ עָרֵי מִקְלָט",
+            "gloss": "six cities of refuge",
+            "evidence": [
+              {
+                "ref": "Num.35.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.35.13"
+              },
+              {
+                "ref": "Num.35.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שִׁשִּׁים",
+      "pos": "numeral",
+      "gloss": "sixty",
+      "bdb": [
+        "v.bk.ad"
+      ],
+      "cognate_ids": [
+        "ar-sittun",
+        "uga-ttm",
+        "akk-susi",
+        "sab-sdty",
+        "phn-ssm",
+        "arc-shit"
+      ],
+      "senses": [
+        {
+          "id": "sixty",
+          "gloss": "sixty",
+          "definition": "The number sixty, six tens.",
+          "evidence": [
+            {
+              "ref": "Lev.12.5",
+              "role": "defining",
+              "note": "For a daughter the mother is unclean two weeks and stays “sixty days and six days (שִׁשִּׁים יוֹם וְשֵׁשֶׁת יָמִים)” in the blood of purifying: twice the one week and “thirty days and three days” for a son (12:2, 4)."
+            },
+            {
+              "ref": "Gen.46.26",
+              "role": "defining",
+              "note": "All the souls who came with Jacob into Egypt, “sixty and six (שִׁשִּׁים וָשֵׁשׁ)”; with Joseph and his two sons, and Jacob, seventy (46:27)."
+            },
+            {
+              "ref": "Gen.5.15",
+              "note": "Mahalalel lived sixty-five years and fathered Jared."
+            },
+            {
+              "ref": "Gen.5.27",
+              "note": "All the days of Methuselah were nine hundred and sixty-nine years."
+            },
+            {
+              "ref": "Lev.27.3",
+              "note": "The valuation of a male from twenty to sixty years old is fifty shekels; from sixty years and up, fifteen (27:7)."
+            },
+            {
+              "ref": "1Ki.6.2",
+              "note": "The house Solomon built for Yahweh: sixty cubits long, twenty wide and thirty high."
+            },
+            {
+              "ref": "Sng.3.7",
+              "note": "Sixty mighty men around Solomon’s litter."
+            },
+            {
+              "ref": "Sng.6.8",
+              "note": "Sixty queens and eighty concubines, and maidens without number."
+            },
+            {
+              "ref": "Dan.9.25",
+              "note": "From the going out of the word to restore and build Jerusalem to an anointed one, a prince: seven sevens, and sixty-two (שִׁשִּׁים וּשְׁנַיִם) sevens."
+            },
+            {
+              "ref": "Dan.9.26",
+              "note": "“After the sixty-two sevens an anointed one shall be cut off.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἑξήκοντα",
+          "gloss": "sixty",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.12.5 and Gen.46.26, שִׁשִּׁים → ἑξήκοντα; ἑξήκοντα renders the plural ×45"
+            },
+            {
+              "ref": "Mat.13.8",
+              "note": "Seed on good ground yielded a hundredfold, sixtyfold, thirtyfold; Mat 13:23."
+            },
+            {
+              "ref": "1Ti.5.9",
+              "note": "A widow is to be enrolled only if not under sixty years old."
+            },
+            {
+              "ref": "Luk.24.13",
+              "note": "Emmaus, sixty furlongs from Jerusalem."
+            },
+            {
+              "ref": "Rev.11.3",
+              "note": "The two witnesses prophesy a thousand two hundred and sixty days; Rev 12:6."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁשִּׁי",
+      "pos": "adjective",
+      "gloss": "sixth; (fem. שִׁשִּׁית) a sixth part",
+      "bdb": [
+        "v.bk.ac"
+      ],
+      "cognate_ids": [
+        "ar-sadis",
+        "uga-tdt",
+        "akk-sessu",
+        "sab-sdt"
+      ],
+      "senses": [
+        {
+          "id": "sixth",
+          "gloss": "sixth (in order)",
+          "definition": "The sixth in a sequence: of days, months, years, sons, lots and divisions.",
+          "evidence": [
+            {
+              "ref": "Gen.1.31",
+              "role": "defining",
+              "note": "“And there was evening and there was morning, the sixth day (יוֹם הַשִּׁשִּׁי)”: the day after the fifth (1:23), on which man was made (1:26–27), the last before God ceased (2:2)."
+            },
+            {
+              "ref": "Gen.30.19",
+              "role": "defining",
+              "note": "Leah bore Jacob “a sixth son (בֵּן שִׁשִּׁי)”, Zebulun, after Issachar the fifth (30:17–18)."
+            },
+            {
+              "ref": "2Sa.3.5",
+              "role": "defining",
+              "note": "David’s sons born in Hebron: after the fifth, Shephatiah, “the sixth (וְהַשִּׁשִּׁי), Ithream”."
+            },
+            {
+              "ref": "Exo.16.5",
+              "note": "“On the sixth day they shall prepare what they bring in, and it will be double what they gather daily.”"
+            },
+            {
+              "ref": "Exo.16.22",
+              "note": "On the sixth day they gathered twice as much bread, two omers each."
+            },
+            {
+              "ref": "Exo.16.29",
+              "note": "“Yahweh has given you the sabbath; therefore on the sixth day he gives you bread for two days.”"
+            },
+            {
+              "ref": "Lev.25.21",
+              "note": "“I will command my blessing on you in the sixth year (בַּשָּׁנָה הַשִּׁשִּׁית), and it will bring forth produce for three years.”"
+            },
+            {
+              "ref": "Num.7.42",
+              "note": "On the sixth day the leader of Gad brought his offering."
+            },
+            {
+              "ref": "Num.29.29",
+              "note": "The sixth day of חַג הַסֻּכּוֹת: eight bulls, two rams, fourteen lambs."
+            },
+            {
+              "ref": "Jos.19.32",
+              "note": "The sixth lot came out for Naphtali."
+            },
+            {
+              "ref": "Ezk.8.1",
+              "note": "In the sixth year, in the sixth month, the hand of Yahweh fell on Ezekiel."
+            },
+            {
+              "ref": "Hag.1.1",
+              "note": "In the sixth month the word of Yahweh came by Haggai; the work on the house began on its twenty-fourth day (1:15)."
+            },
+            {
+              "ref": "1Ch.27.9",
+              "note": "“The sixth, for the sixth month, Ira son of Ikkesh.”"
+            }
+          ]
+        },
+        {
+          "id": "sixth-part",
+          "gloss": "a sixth part (fem. שִׁשִּׁית)",
+          "definition": "The feminine as a noun: one part of six, of a measure of water, grain or flour.",
+          "cognate_ids": [
+            "ar-sudus",
+            "akk-sussu",
+            "arc-shetuta"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.4.11",
+              "role": "defining",
+              "note": "“Water by measure you shall drink, a sixth (שִׁשִּׁית) of a hin”, in the siege."
+            },
+            {
+              "ref": "Ezk.45.13",
+              "role": "defining",
+              "note": "“This is the offering you shall lift up: a sixth of an ephah (שִׁשִּׁית הָאֵיפָה) from a homer of wheat.”"
+            },
+            {
+              "ref": "Ezk.46.14",
+              "note": "The daily grain offering: a sixth of an ephah of flour and a third of a hin of oil, a sixth set beside a third."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἕκτος",
+          "gloss": "sixth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.31, יוֹם הַשִּׁשִּׁי → ἡμέρα ἕκτη; Ezk.45.13 שִׁשִּׁית → ἕκτον; ἕκτος renders שִׁשִּׁי ×25"
+            },
+            {
+              "ref": "Luk.1.26",
+              "note": "In the sixth month the angel Gabriel was sent to Nazareth; Luk 1:36."
+            },
+            {
+              "ref": "Mat.27.45",
+              "note": "From the sixth hour there was darkness over all the land until the ninth hour."
+            },
+            {
+              "ref": "Jhn.19.14",
+              "note": "It was the preparation of the Passover, about the sixth hour."
+            },
+            {
+              "ref": "Jhn.4.6"
+            },
+            {
+              "ref": "Act.10.9",
+              "note": "Peter went up on the housetop to pray about the sixth hour."
+            },
+            {
+              "ref": "Rev.6.12",
+              "note": "The sixth seal; Rev 9:13, 16:12, 21:20."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁשָּׁה",
+      "pos": "verb",
+      "gloss": "give a sixth part",
+      "summary": "A verb made from the number, once, repeating the noun of the clause before it.",
+      "bdb": [
+        "v.bk.ae"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "give a sixth part",
+          "cognate_ids": [
+            "ar-sudus"
+          ],
+          "senses": [
+            {
+              "gloss": "give a sixth part",
+              "definition": "Take or give the sixth part of a measure as an offering.",
+              "kin": [
+                "sixth-part"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.45.13",
+                  "role": "defining",
+                  "note": "“A sixth of an ephah from a homer of wheat, and you shall give a sixth (וְשִׁשִּׁיתֶם) of the ephah from a homer of barley”: the verb says again what שִׁשִּׁית said."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׁת",
+      "lang": "arc",
+      "root": "שת",
+      "pos": "numeral",
+      "gloss": "six",
+      "summary": "Scripture’s Aramaic six, with ת where Hebrew has ש, as Aramaic does for an older ṯ. BDB’s key also catches the Hebrew name Seth (Gen 4:25) and שֵׁת “buttocks” by spelling, which are other words.",
+      "bdb": [
+        "xv.ah.ab"
+      ],
+      "cognate_ids": [
+        "arc-shit"
+      ],
+      "senses": [
+        {
+          "gloss": "six",
+          "definition": "The number six.",
+          "kin": [
+            "six"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.1",
+              "role": "defining",
+              "note": "Nebuchadnezzar’s image of gold: its height sixty (שִׁתִּין) cubits, its breadth six (שִׁת) cubits."
+            },
+            {
+              "ref": "Ezr.6.15",
+              "role": "defining",
+              "note": "The house was finished on the third day of the month Adar, “in the sixth year (שְׁנַת שֵׁת) of the reign of Darius the king”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁתִּין",
+      "lang": "arc",
+      "root": "שתינ",
+      "pos": "numeral",
+      "gloss": "sixty",
+      "bdb": [
+        "xv.ah.ac"
+      ],
+      "cognate_ids": [
+        "arc-shit"
+      ],
+      "senses": [
+        {
+          "gloss": "sixty",
+          "definition": "The number sixty.",
+          "kin": [
+            "sixty"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.1",
+              "role": "defining",
+              "note": "The image’s height sixty cubits and its breadth six: sixty set beside six."
+            },
+            {
+              "ref": "Dan.6.1",
+              "note": "Darius the Mede received the kingdom “a son of sixty and two (שִׁתִּין וְתַרְתֵּין) years”."
+            },
+            {
+              "ref": "Ezr.6.3",
+              "note": "Cyrus’ decree: the house’s height sixty cubits and its breadth sixty cubits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁתָּא",
+      "lang": "syc",
+      "root": "שת",
+      "pos": "numeral",
+      "gloss": "six; (with דְּ) sixth; (in compounds) sixteen, six hundred",
+      "summary": "The Peshitta’s six: feminine שֵׁת, masculine שְׁתָּא. With דְּ it gives the ordinal (Luk 1:26), and the hour of the day is counted with the cardinal, “at six hours”, where the Greek has the sixth hour. SEDRA files the compounds שתתעסר “sixteen” and שֵׁתְמָאא “six hundred” as lexemes of their own under the root שת.",
+      "cognate_ids": [
+        "ar-sitta",
+        "uga-tt",
+        "akk-sedis",
+        "arc-shit"
+      ],
+      "senses": [
+        {
+          "gloss": "six",
+          "definition": "The number six.",
+          "kin": [
+            "six"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.13.14",
+              "role": "defining",
+              "note": "“There are six (שֵׁת) days in which it is right to work”: the six of Exo 20:9 and Lev 23:3."
+            },
+            {
+              "ref": "Jhn.2.6",
+              "role": "defining",
+              "note": "Six water jars of stone, each holding two or three measures."
+            },
+            {
+              "ref": "Mat.17.1",
+              "note": "After six days Jesus took Peter, James and John up a high mountain; Mrk 9:2."
+            },
+            {
+              "ref": "Jhn.12.1",
+              "note": "Six days before the Passover."
+            },
+            {
+              "ref": "Act.11.12",
+              "note": "Six brothers went with Peter to Caesarea."
+            },
+            {
+              "ref": "Luk.4.25",
+              "note": "Three years and six months without rain in Elijah’s days; Jas 5:17."
+            },
+            {
+              "ref": "Rev.4.8",
+              "note": "Each of the four living creatures had six wings."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "at six hours: the sixth hour",
+              "definition": "The hour of the day counted with the cardinal, where the Greek has the ordinal ἕκτη.",
+              "kin": [
+                "sixth"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.27.45",
+                  "role": "defining",
+                  "note": "“From six hours (מִן שֵׁת שָׁעִין) there was darkness over all the land until nine hours.”"
+                },
+                {
+                  "ref": "Mat.20.5"
+                },
+                {
+                  "ref": "Mrk.15.33"
+                },
+                {
+                  "ref": "Luk.23.44"
+                },
+                {
+                  "ref": "Jhn.4.6"
+                },
+                {
+                  "ref": "Jhn.19.14"
+                },
+                {
+                  "ref": "Act.10.9"
+                }
+              ]
+            },
+            {
+              "gloss": "sixteen; six hundred; and in larger numbers",
+              "definition": "In compound numbers.",
+              "kin": [
+                "six-in-compounds"
+              ],
+              "evidence": [
+                {
+                  "ref": "Rev.13.18",
+                  "role": "defining",
+                  "note": "“Its number is six hundred and sixty and six (שֵׁתְמָאא וְשִׁתִּין וְשֵׁת)”, the number of 1Ki 10:14 and Ezr 2:13."
+                },
+                {
+                  "ref": "Act.12.4",
+                  "note": "Peter guarded by sixteen (שתתעסר) soldiers, where the Greek has four squads of four."
+                },
+                {
+                  "ref": "Jhn.2.20",
+                  "note": "Forty-six years this temple was in building."
+                },
+                {
+                  "ref": "Act.27.37",
+                  "note": "Two hundred and seventy-six souls in the ship."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gloss": "sixth (with דְּ)",
+          "definition": "With the relative דְּ, the sixth in order.",
+          "kin": [
+            "sixth"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.1.26",
+              "role": "defining",
+              "note": "“In the sixth month (בְּיַרְחָא דְּשְׁתָּא)” Gabriel was sent; Luk 1:36."
+            },
+            {
+              "ref": "Rev.6.12",
+              "note": "The sixth seal."
+            },
+            {
+              "ref": "Rev.9.13"
+            },
+            {
+              "ref": "Rev.16.12"
+            },
+            {
+              "ref": "Rev.21.20",
+              "note": "The sixth foundation stone, sardius."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁתִּין",
+      "lang": "syc",
+      "root": "שת",
+      "pos": "numeral",
+      "gloss": "sixty",
+      "cognate_ids": [
+        "ar-sittun",
+        "uga-ttm",
+        "akk-susi",
+        "arc-shit"
+      ],
+      "senses": [
+        {
+          "gloss": "sixty",
+          "definition": "The number sixty.",
+          "kin": [
+            "sixty"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.13.8",
+              "role": "defining",
+              "note": "Some a hundred, some sixty, some thirty: sixty between thirty and a hundred; Mat 13:23; Mrk 4:8, 20."
+            },
+            {
+              "ref": "1Ti.5.9",
+              "role": "defining",
+              "note": "A widow enrolled not under sixty years old."
+            },
+            {
+              "ref": "Luk.24.13",
+              "note": "Emmaus, sixty furlongs from Jerusalem."
+            },
+            {
+              "ref": "Rev.11.3",
+              "note": "A thousand two hundred and sixty days; Rev 12:6."
+            },
+            {
+              "ref": "Rev.13.18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁתִיתָיָא",
+      "lang": "syc",
+      "root": "שת",
+      "pos": "adjective",
+      "gloss": "sixth",
+      "summary": "An ordinal adjective, once in the Peshitta; elsewhere it says “sixth” with דְּ and the cardinal.",
+      "cognate_ids": [
+        "ar-sadis",
+        "uga-tdt",
+        "akk-sessu"
+      ],
+      "senses": [
+        {
+          "gloss": "sixth",
+          "definition": "The sixth in order.",
+          "kin": [
+            "sixth"
+          ],
+          "evidence": [
+            {
+              "ref": "Rev.9.14",
+              "role": "defining",
+              "note": "A voice said “to the sixth (שְׁתִיתָיָא) angel who had the trumpet”, the one who sounded in 9:13."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sitta",
+      "lang": "ar",
+      "form": "سِتَّة، سِتّ؛ سِدْس",
+      "translit": "sitta, sitt; sids",
+      "gloss": "six",
+      "relation": "cognate",
+      "note": "Masculine سِتَّة with feminine nouns and feminine سِتّ with masculine, as Hebrew שִׁשָּׁה / שֵׁשׁ. The Arab grammarians give سِدْسَة and سِدْس as the older forms, the د assimilated, as the diminutive سُدَيْسَة and the plural أَسْدَاس keep it: the same assimilation of ד as Hebrew שֵׁשׁ from šidš-.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1304, root ست, سِتَّةٌ (n18849)",
+          "note": "“[signifying Six,] are originally سِدْسَةٌ and سِدْسٌ; the latter س is changed into ت, and the د is incorporated into it; for the dim. of سِتَّةٌ is سُدَيْسَةٌ, and the pl. is أَسْدَاسٌ.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1332, root سدس, سِدْسٌ (n19326)",
+          "note": "“the original form of سِتٌّ, fem. of سِتَّةٌ, which is originally سِدْسَةٌ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-sittun",
+      "lang": "ar",
+      "form": "سِتُّونَ",
+      "translit": "sittūna",
+      "gloss": "sixty; sixtieth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1304, root ست, سِتُّونَ (n18850)",
+          "note": "“[Sixty,] one of the tenfold numbers, that between خَمْسُونَ and سَبْعُونَ, is derived from سِتٌّ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-sadis",
+      "lang": "ar",
+      "form": "سَادِس؛ سَاتّ",
+      "translit": "sādis; sātt",
+      "gloss": "sixth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1332, root سدس, سَادِسٌ (n19335)",
+          "note": "“[Sixth]: fem. with ة.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1304, root ست, سَاتٌّ (n18851)",
+          "note": "“[Sixth]. … سادسا being formed from سِدْسٌ; and ساتّا, from سِتَّةٌ and سِتٌّ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-sudus",
+      "lang": "ar",
+      "form": "سُدُس؛ سَدَسَ",
+      "translit": "sudus; sadasa",
+      "gloss": "a sixth part; take the sixth part",
+      "relation": "cognate",
+      "note": "The noun is the sixth part, and the verb is to take the sixth of people’s goods: the fraction of Ezk 45:13 and its piel.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1332, root سدس, سُدُسٌ (n19328)",
+          "note": "“A sixth part.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1332, root سدس, سَدَسَ القَوْمَ (n19322)",
+          "note": "“He took the sixth part of the possessions of the people.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-tt",
+      "lang": "uga",
+      "form": "𐎘𐎘، 𐎘𐎘𐎚",
+      "translit": "ṯṯ, ṯṯt",
+      "gloss": "six",
+      "relation": "cognate",
+      "note": "Ugaritic writes both letters ṯ: the first assimilated to the last, with the ד gone as in Hebrew שֵׁשׁ.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 53, §53.2 Forms of numerals, “6” ṯṯ, ṯṯt",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“6” ṯṯ ṯṯt /ṯiṯṯ(at)-/. Read from the OCR text; check the page image."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 205, §93 Glossary, ṯṯ “6”",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "ṯṯ KTU 4.630:6, 1.78:1 “6” (cf. ṯdṯ “sixth”) (cf. H. šēš, Aram. šit, Akkad. šiššu). Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "uga-ttm",
+      "lang": "uga",
+      "form": "𐎘𐎘𐎎",
+      "translit": "ṯṯm",
+      "gloss": "sixty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 53, §53.2 Forms of numerals, “60” ṯṯm",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "uga-tdt",
+      "lang": "uga",
+      "form": "𐎘𐎄𐎘",
+      "translit": "ṯdṯ",
+      "gloss": "sixth",
+      "relation": "cognate",
+      "note": "The ordinal keeps the middle d that the cardinal has lost: the root is ṯ-d-ṯ in Ugaritic, Hebrew ש-ד-ש.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 53, §53.2 Forms of numerals, “6th” ṯdṯ",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“6th” ṯdṯ /ṯadiṯ-/. Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "akk-sedis",
+      "lang": "akk",
+      "form": "šediš; šeššu",
+      "translit": "šediš, šeššu",
+      "gloss": "six",
+      "relation": "cognate",
+      "note": "šediš keeps the d; šeššu has it assimilated, as Hebrew שֵׁשׁ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000078390, šediš [six] NU"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000128480, šeššu [six] NU"
+        }
+      ]
+    },
+    {
+      "id": "akk-susi",
+      "lang": "akk",
+      "form": "šūši",
+      "translit": "šūši",
+      "gloss": "sixty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005610, šūši [sixty] NU",
+          "note": "Meanings: sixty; sixtyfold."
+        }
+      ]
+    },
+    {
+      "id": "akk-sessu",
+      "lang": "akk",
+      "form": "šeššu",
+      "translit": "šeššu",
+      "gloss": "sixth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000128380, šeššu [sixth] AJ",
+          "note": "Meanings: sixth; one-sixth."
+        }
+      ]
+    },
+    {
+      "id": "akk-sussu",
+      "lang": "akk",
+      "form": "šuššu",
+      "translit": "šuššu",
+      "gloss": "one-sixth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000019330, šuššu [one-sixth] NU",
+          "note": "Meanings: one-sixth; (in dual) two-sixths."
+        }
+      ]
+    },
+    {
+      "id": "sab-sdt",
+      "lang": "sem",
+      "form": "𐩪𐩵𐩻",
+      "translit": "s¹dṯ, s¹dṯt",
+      "gloss": "six; sixth",
+      "relation": "cognate",
+      "note": "Sabaic, which keeps s¹ (old š) apart from ṯ: the root shows š, d and ṯ, all three letters of Hebrew ש-ד-ש. Cardinal f. s¹dṯ, m. s¹dṯt; the same spelling is the ordinal.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 328, S¹DṮ (cardinal number: six; ordinal: sixth)",
+          "note": "J855/3 “these six statues”; J644/25 “six hundred garments”; Ry538/22–3 “on the sixth (day) of that expedition”. Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "sab-sdty",
+      "lang": "sem",
+      "form": "𐩪𐩵𐩻𐩺",
+      "translit": "s¹dṯy",
+      "gloss": "sixty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 328, S¹DṮ (cardinal number: s¹dṯy, sixty)",
+          "note": "R2868/4 “sixty units (in length)”; R3943/12 “three thousand sixty”. Read from the OCR text; check the page image."
+        }
+      ]
+    },
+    {
+      "id": "phn-ss",
+      "lang": "phn",
+      "form": "𐤔𐤔، 𐤔𐤔𐤕",
+      "translit": "šš, ššt",
+      "gloss": "six",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 482, ŠŠ, masc. ŠŠT, num. SIX",
+          "note": "KAI 111.3/5 (Punic) “in year forty-six of the reign of King Massinissa”; KAI 130.1 (Neo-Punic) “these six seats”. Read from the OCR text."
+        }
+      ]
+    },
+    {
+      "id": "phn-ssm",
+      "lang": "phn",
+      "form": "𐤔𐤔𐤌",
+      "translit": "ššm",
+      "gloss": "sixty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 482, ŠŠM, num. SIXTY",
+          "note": "KAI 149.4 (Neo-Punic) “She lived sixty years.” Read from the OCR text."
+        }
+      ]
+    },
+    {
+      "id": "arc-shit",
+      "lang": "arc",
+      "form": "שִׁית، שִׁיתָּא؛ שִׁיתִּין",
+      "translit": "šīt, šittā; šittīn",
+      "gloss": "six; sixty",
+      "relation": "cognate",
+      "note": "The Targums’ Aramaic, with ת for the last letter where Hebrew has ש, as Aramaic writes an older ṯ.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שִׁית (= h. שֵׁשׁ, six)",
+          "note": "Targ. Gen. VII, 6; XXX, 20; pl. שִׁיתִּין sixty, Targ. Gen. XXV, 26; שִׁיתַּת עֲשַׂר sixteen, Targ. Ex. XXVI, 25."
+        }
+      ]
+    },
+    {
+      "id": "arc-shetuta",
+      "lang": "arc",
+      "form": "שְׁתוּתָא",
+      "translit": "šətūtā",
+      "gloss": "a sixth part",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁתוּתָא",
+          "note": "Bekh. 50ᵃ “deduct one Zuz and a sixth”; “deduct from them one-sixth”."
+        }
+      ]
+    },
+    {
+      "id": "gez-sessu",
+      "lang": "gez",
+      "form": "ስሱ، ስድስቱ",
+      "translit": "səssu, sədəstu",
+      "gloss": "six",
+      "relation": "cognate",
+      "note": "Feminine səssu with the d assimilated, masculine sədəstu keeping it. Not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ስሱ (səssu); ስድስቱ (sədəstu)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "six-days-of-creation",
+      "statement": "Genesis counts the making of all things in days, each closed by “evening and morning”, to “the sixth day” (Gen 1:31), on which God made the beasts of the earth and man in his own image, male and female (Gen 1:24–27), and saw all that he had made, and it was very good. The law repeats it as plain fact and makes it the measure of Israel’s week: “six days you shall labour … for in six days (שֵׁשֶׁת יָמִים) Yahweh made the heavens and the earth, the sea and all that is in them, and rested on the seventh day” (Exo 20:9–11); the שַׁבָּת is a sign for ever, “for in six days Yahweh made the heavens and the earth” (Exo 31:17); and Lev 23:3 sets the same six days and seventh at the head of the appointed times. Israel’s six working days are measured by Yahweh’s, which holds only if his were days of the same kind. Jesus places man and woman “from the beginning of the creation” (Mrk 10:6). From the verses: the heavens, the earth and all in them were made in six days of evening and morning, with man made on the last of them, not at the end of ages before him.",
+      "evidence": [
+        {
+          "ref": "Gen.1.24",
+          "to": "Gen.1.27"
+        },
+        {
+          "ref": "Gen.1.31"
+        },
+        {
+          "ref": "Exo.20.9",
+          "to": "Exo.20.11"
+        },
+        {
+          "ref": "Exo.31.17"
+        },
+        {
+          "ref": "Lev.23.3"
+        },
+        {
+          "ref": "Mrk.10.6"
+        }
+      ]
+    },
+    {
+      "topic": "provision-before-the-rest",
+      "statement": "With the manna, Yahweh gave on the sixth day bread for two days: “on the sixth day (בַּיּוֹם הַשִּׁשִּׁי) … it shall be double what they gather daily” (Exo 16:5); the people gathered twice as much, and what was kept for the seventh did not spoil (Exo 16:22–24), for “Yahweh has given you the sabbath; therefore on the sixth day he gives you bread for two days” (Exo 16:29). For the land’s sabbath he promises the same against the fear “what shall we eat in the seventh year?”: “I will command my blessing on you in the sixth year, and it will bring forth produce for three years” (Lev 25:20–22). The Hebrew servant who has served six years is not to be sent away empty but furnished from flock, threshing floor and winepress, “as Yahweh your God has blessed you” (Deu 15:12–14, 18). Jesus tells his disciples not to be anxious what they will eat, for the Father knows they need these things, but to seek first his kingdom (Mat 6:31–33). From the verses: the ceasing Yahweh commands on the seventh he provides for on the sixth, so that keeping it is trust in his supply.",
+      "evidence": [
+        {
+          "ref": "Exo.16.5"
+        },
+        {
+          "ref": "Exo.16.22",
+          "to": "Exo.16.24"
+        },
+        {
+          "ref": "Exo.16.29"
+        },
+        {
+          "ref": "Lev.25.20",
+          "to": "Lev.25.22"
+        },
+        {
+          "ref": "Deu.15.12",
+          "to": "Deu.15.14"
+        },
+        {
+          "ref": "Deu.15.18"
+        },
+        {
+          "ref": "Mat.6.31",
+          "to": "Mat.6.33"
+        }
+      ]
+    }
+  ],
+  "note": "Root key שדש as the database keys it (BDB v.bk). The database files under this key two words that are not of the root: שֹׁהַם (v.bk.af), a precious stone, and the name שֹׁהַם (v.bk.ag), and the name שְׁוָא (v.bk.ai); they sit next to the root in BDB’s order, not under it. They are left out: their consonants (שהם; שוא) are not this root’s, the stone’s root is unknown, and names have their own entries. The homographs שֵׁשׁ “fine linen” (v.gg.af, a loan from Egyptian šs) and שֵׁשׁ “marble” (v.cw.ab, beside שַׁיִשׁ) are other words; but the database maps their tokens to v.bk.ab too (marked “also” in the brief), so the use count of שֵׁשׁ includes about 35 linen and marble tokens (Exodus’ tabernacle and garments, Gen 41:42, Ezk 16:10–13, 27:7, Pro 31:22, Est 1:6, Sng 5:15). Aramaic שֵׁת (xv.ah.ab) and שִׁתִּין (xv.ah.ac) keep the database’s own root keys (שת, שתינ); BDB’s Aramaic root head is שׁדת (xv.ah.aa). xv.ah.ab also catches the name Seth and שֵׁת “buttocks” by spelling. Sounds: the root has ש twice, which stand for different older sounds: š first (Sabaic s¹, Arabic s, Aramaic ש) and ṯ last (Sabaic ṯ, Aramaic ת, Ugaritic ṯ); Arabic sādis with s in the last place is irregular. `sounds` is keyed by letter and cannot tell the two ש apart, so none is recorded. Peshitta words were found in SEDRA (root שת, lexemes 3331–3335) through BFBS word addresses; the compounds 3334 (six hundred) and 3335 (sixteen) are folded into שְׁתָּא as chamesh does. Segert pp. 53 and 205, Biella p. 328 and Krahmalkov p. 482 were read from the OCR text only; check the page images. Ge’ez forms are from Wiktionary only; check Dillmann and Leslau. The Peshitta of Rev 13:18 is cited only as the number; no doctrine is drawn from six or 666 as numbers in themselves, nor from Dan 9:25–26, which belongs to שבע."
+}
