@@ -1,0 +1,1080 @@
+{
+  "id": "ve",
+  "root": "ו",
+  "status": "draft",
+  "updated": "2026-11-14",
+  "tags": [
+    "grammar",
+    "conjunction",
+    "narrative",
+    "sequence",
+    "condition",
+    "purpose"
+  ],
+  "gloss": "(conjunction) and; and then (in narrative); and so (after a command or promise); but, yet; even, namely; or; with; while; then; so that",
+  "summary": "The joining word, prefixed to the next word: \"the heavens and the earth\" (Gen 1:1). It sets two things side by side and leaves the context to say how they relate, so the one וְ is \"and\", \"but\" (\"but of the tree of the knowledge of good and evil you shall not eat\", Gen 2:17), \"or\" (\"whoever curses his father or his mother\", Exo 21:17, ἤ in Mat 15:4), \"even\" (\"in Ramah, even in his own city\", 1Sa 28:3), \"while\" (\"as he sat in the tent door\", Gen 18:1), \"then\" after a condition (Gen 18:26), and \"that\" before a wish (\"that we may live\", Gen 42:2). Joined straight to a verb it carries a narrative from one event to the next (\"and God said … and there was light\", Gen 1:3), about 14,900 times, and carries a command or promise on to what is to follow (\"and you shall love Yahweh your God\", Deu 6:5), about 5,600 times: it is the commonest word in scripture, on about 50,000 Hebrew words and 709 Aramaic. It is the Semitic *wa- found in every branch (Arabic wa-, Ugaritic, Phoenician and Sabaic w-, Ge'ez wä-, Syriac w-, Akkadian u), with no noun or verb behind it anywhere, so it is keyed by its own letter; its likeness to וָו \"hook\", the letter's name, is a folk link, not a root.",
+  "words": [
+    {
+      "lemma": "וְ",
+      "bdb": [
+        "f.ab.aa"
+      ],
+      "cognate_ids": [
+        "ar-wa",
+        "akk-u",
+        "uga-w",
+        "phn-w",
+        "sab-w",
+        "gez-wa",
+        "arc-w",
+        "syc-w"
+      ],
+      "pos": "conjunction",
+      "gloss": "and; and then; and so; but, yet; even, namely; or; with; while; then; so that",
+      "summary": "Never written alone: the Open Scriptures Hebrew Bible marks it as the first segment of 50,012 Hebrew words and never as a word by itself. Its vowel follows the next sound: וְ (about 24,300 words); וּ before ב, מ, פ or a shewa (about 8,400: וּבְכָל, Deu 6:5; וּמֵעֵץ, Gen 2:17); וַ before a hateph-patah (וַאֲנַחְנוּ, Isa 53:4) and, with the next letter doubled, before the narrative verb (וַיֹּאמֶר, Gen 1:3); וָ before the first person of that verb (וָאֹמַר, Deu 1:9; about 610 words) and in pause, above all in fixed pairs (טוֹב וָרָע, Gen 2:9; וְיוֹם וָלַיְלָה, Gen 8:22); and וִ, וֶ, וֵ by the vowel that follows (וִהְיִיתֶם, Gen 3:5). Of its words, 14,921 are wayyiqtol verbs (וַיֹּאמֶר, \"and he said\") and 5,639 weqatal (וְאָהַבְתָּ, \"and you shall love\"), forms OSHB never tags without it; the rest join nouns (9,900), particles, prepositions, pronouns and other verb forms. The narrative and the consequence uses are senses of this word, not another word: the same prefix, with the same vowel rules, joins the same narratives as plain \"and\" (Gen 1:5 has both), and Biblical Aramaic, which has the word but not the verb forms, tells its narratives with וְ and a perfect (Dan 6:11).",
+      "senses": [
+        {
+          "id": "ve-and",
+          "gloss": "and",
+          "definition": "Sets one thing beside another of the same rank: two nouns, two phrases, two clauses, a list. It says only that they go together; any order or relation between them comes from the context.",
+          "evidence": [
+            {
+              "ref": "Gen.1.1",
+              "role": "defining",
+              "note": "\"אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ, the heavens and the earth\"."
+            },
+            {
+              "ref": "Deu.6.5",
+              "role": "defining",
+              "note": "\"בְּכָל־לְבָבְךָ וּבְכָל־נַפְשְׁךָ וּבְכָל־מְאֹדֶךָ, with all your heart and with all your soul and with all your might\"; Mrk 12:30, \"ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς σου …\"."
+            },
+            {
+              "ref": "Gen.2.24",
+              "note": "\"אֶת־אָבִיו וְאֶת־אִמּוֹ, his father and his mother\"; Mat 19:5, \"τὸν πατέρα καὶ τὴν μητέρα\"."
+            },
+            {
+              "ref": "Exo.20.10",
+              "note": "A list: \"you, וּבִנְךָ וּבִתֶּךָ … וַאֲמָתְךָ וּבְהֶמְתֶּךָ וְגֵרְךָ, and your son and your daughter … and your maidservant and your cattle and your stranger\"."
+            },
+            {
+              "ref": "Psa.2.2",
+              "note": "\"עַל־יְהוָה וְעַל־מְשִׁיחוֹ, against Yahweh and against his anointed\"; Act 4:26, \"κατὰ τοῦ κυρίου καὶ κατὰ τοῦ χριστοῦ αὐτοῦ\". See the doctrine."
+            },
+            {
+              "ref": "Gen.1.4",
+              "note": "\"בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ, between the light and the darkness\": with בֵּין repeated."
+            }
+          ],
+          "senses": [
+            {
+              "id": "ve-pair",
+              "gloss": "and (in fixed pairs); both … and",
+              "definition": "Two words that belong together, often opposites that make one whole: good and evil, day and night, summer and winter. The second commonly takes the pausal וָ, which binds the pair into one phrase; set before both, it is \"both … and\".",
+              "evidence": [
+                {
+                  "ref": "Gen.2.9",
+                  "role": "defining",
+                  "note": "\"עֵץ הַדַּעַת טוֹב וָרָע, the tree of the knowledge of good and evil\"; so Gen 2:17; 3:5, 22."
+                },
+                {
+                  "ref": "Gen.8.22",
+                  "role": "defining",
+                  "note": "\"זֶרַע וְקָצִיר וְקֹר וָחֹם וְקַיִץ וָחֹרֶף וְיוֹם וָלַיְלָה, seedtime and harvest, and cold and heat, and summer and winter, and day and night\": four pairs, each bound by וָ, joined to one another by וְ."
+                },
+                {
+                  "ref": "Gen.1.2",
+                  "note": "\"תֹהוּ וָבֹהוּ, waste and void\"; again in Jer 4:23."
+                },
+                {
+                  "ref": "Jos.1.8",
+                  "note": "\"וְהָגִיתָ בּוֹ יוֹמָם וָלַיְלָה, and you shall meditate in it day and night\"; so Psa 1:2."
+                },
+                {
+                  "ref": "Psa.76.7",
+                  "note": "\"נִרְדָּם וְרֶכֶב וָסוּס, both chariot and horse are cast into a deep sleep\"."
+                },
+                {
+                  "ref": "Num.9.14",
+                  "note": "\"חֻקָּה אַחַת יִהְיֶה לָכֶם וְלַגֵּר וּלְאֶזְרַח הָאָרֶץ, one statute shall be for you, both for the stranger and for the native of the land\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ve-with",
+          "gloss": "with, together with",
+          "definition": "Joins a person to those who go with him, where the action belongs to the first named: \"each man with his household\".",
+          "cognate_ids": [
+            "ar-wa",
+            "sab-w"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.1.1",
+              "role": "defining",
+              "note": "\"אִישׁ וּבֵיתוֹ בָּאוּ, each man with his household they came\"."
+            },
+            {
+              "ref": "Rut.1.1",
+              "role": "defining",
+              "note": "\"וַיֵּלֶךְ אִישׁ … הוּא וְאִשְׁתּוֹ וּשְׁנֵי בָנָיו, a man went … he with his wife and his two sons\": the verb is singular, the man's; the others go with him."
+            }
+          ]
+        },
+        {
+          "id": "ve-while",
+          "gloss": "while, as; though; seeing that (circumstance)",
+          "definition": "Before a clause whose subject comes first and which has no narrative verb (a pronoun or noun with a participle, an adjective or a noun), it gives the circumstance in which the main action takes place: while, as, although, seeing that.",
+          "cognate_ids": [
+            "ar-wa",
+            "sab-w",
+            "syc-w"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.18.1",
+              "role": "defining",
+              "note": "\"וַיֵּרָא אֵלָיו יְהוָה … וְהוּא יֹשֵׁב פֶּתַח־הָאֹהֶל, and Yahweh appeared to him … as he sat in the tent door\"."
+            },
+            {
+              "ref": "Gen.48.14",
+              "role": "defining",
+              "note": "Israel put his right hand on Ephraim's head \"וְהוּא הַצָּעִיר, though he was the younger\"."
+            },
+            {
+              "ref": "Gen.15.2",
+              "note": "\"What will you give me, וְאָנֹכִי הוֹלֵךְ עֲרִירִי, seeing I go childless?\" The Septuagint renders it δέ."
+            },
+            {
+              "ref": "Isa.53.4",
+              "note": "\"He carried our sicknesses, וַאֲנַחְנוּ חֲשַׁבְנֻהוּ נָגוּעַ, while we counted him stricken\": the circumstance turns into a contrast (see ve-but)."
+            }
+          ]
+        },
+        {
+          "id": "ve-but",
+          "gloss": "but, yet",
+          "definition": "Where what follows stands against what went before, the same joining word is \"but\": the context makes the contrast, usually with the subject or object put first.",
+          "cognate_ids": [
+            "phn-w",
+            "sab-w",
+            "gez-wa",
+            "akk-u",
+            "ar-wa"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.2.17",
+              "role": "defining",
+              "note": "After \"of every tree of the garden you may freely eat\" (Gen 2:16): \"וּמֵעֵץ הַדַּעַת טוֹב וָרָע לֹא תֹאכַל מִמֶּנּוּ, but of the tree of the knowledge of good and evil you shall not eat of it\"."
+            },
+            {
+              "ref": "Mal.1.3",
+              "role": "defining",
+              "note": "\"וָאֹהַב אֶת־יַעֲקֹב וְאֶת־עֵשָׂו שָׂנֵאתִי, and I loved Jacob, but Esau I hated\" (Mal 1:2–3); Rom 9:13, \"τὸν Ἰακὼβ ἠγάπησα, τὸν δὲ Ἠσαῦ ἐμίσησα\"."
+            },
+            {
+              "ref": "Gen.4.5",
+              "note": "After Yahweh's regard for Abel and his offering (Gen 4:4): \"וְאֶל־קַיִן וְאֶל־מִנְחָתוֹ לֹא שָׁעָה, but to Cain and to his offering he did not look\"."
+            },
+            {
+              "ref": "Gen.17.21",
+              "note": "After the blessing of Ishmael (Gen 17:20): \"וְאֶת־בְּרִיתִי אָקִים אֶת־יִצְחָק, but my covenant I will establish with Isaac\"."
+            },
+            {
+              "ref": "Psa.1.6",
+              "note": "\"Yahweh knows the way of the righteous, וְדֶרֶךְ רְשָׁעִים תֹּאבֵד, but the way of the wicked will perish\"."
+            },
+            {
+              "ref": "Gen.40.23",
+              "note": "\"The chief cupbearer did not remember Joseph, וַיִּשְׁכָּחֵהוּ, but forgot him\": the narrative verb as \"but\"; the Septuagint ἀλλά."
+            },
+            {
+              "ref": "Isa.53.5",
+              "note": "After \"we counted him stricken, smitten by God\" (Isa 53:4): \"וְהוּא מְחֹלָל מִפְּשָׁעֵנוּ, but he was pierced for our transgressions\"; 1Pe 2:24 quotes the end of the verse."
+            }
+          ]
+        },
+        {
+          "id": "ve-even",
+          "gloss": "even, namely, that is",
+          "definition": "The second term names again, more closely, what the first has named: \"in Ramah, even in his own city\".",
+          "cognate_ids": [
+            "phn-w",
+            "ar-wa",
+            "syc-w"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.28.3",
+              "role": "defining",
+              "note": "\"וַיִּקְבְּרֻהוּ בָרָמָה וּבְעִירוֹ, and they buried him in Ramah, even in his own city\": Ramah was his city, \"for there was his house\" (1Sa 7:17)."
+            },
+            {
+              "ref": "1Sa.17.40",
+              "note": "\"וַיָּשֶׂם אֹתָם בִּכְלִי הָרֹעִים אֲשֶׁר־לוֹ וּבַיַּלְקוּט, and he put them in the shepherd's bag that he had, even in the pouch\": one bag, named twice."
+            },
+            {
+              "ref": "Zec.9.9",
+              "note": "\"רֹכֵב עַל־חֲמוֹר וְעַל־עַיִר בֶּן־אֲתֹנוֹת, riding on a donkey, even on a colt, the foal of a she-donkey\": the parallel names the animal twice. John quotes it of the one young donkey Jesus sat on (Jhn 12:14–15); Matthew, who records that the colt's mother was brought with it (Mat 21:2, 7), renders the וְ with καί (Mat 21:5)."
+            }
+          ]
+        },
+        {
+          "id": "ve-or",
+          "gloss": "or",
+          "definition": "In a law or a list where either of the things joined is enough by itself: \"whoever curses his father or his mother\".",
+          "cognate_ids": [
+            "phn-w",
+            "sab-w",
+            "syc-w"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.21.17",
+              "role": "defining",
+              "note": "\"וּמְקַלֵּל אָבִיו וְאִמּוֹ מוֹת יוּמָת, and whoever curses his father or his mother shall surely be put to death\"; quoted Mat 15:4 and Mrk 7:10, \"ὁ κακολογῶν πατέρα ἢ μητέρα\"."
+            },
+            {
+              "ref": "Exo.21.15",
+              "role": "defining",
+              "note": "\"וּמַכֵּה אָבִיו וְאִמּוֹ, whoever strikes his father or his mother\"; the Septuagint ἤ."
+            },
+            {
+              "ref": "Exo.21.16",
+              "note": "\"וְגֹנֵב אִישׁ וּמְכָרוֹ וְנִמְצָא בְיָדוֹ, whoever steals a man, and sells him or he is found in his hand\"."
+            },
+            {
+              "ref": "Lev.20.9",
+              "note": "\"אָבִיו וְאִמּוֹ קִלֵּל, he has cursed his father or his mother\"."
+            }
+          ]
+        },
+        {
+          "id": "ve-narrative",
+          "gloss": "and (then), and so: the narrative verb (wayyiqtol)",
+          "definition": "Joined straight to a short prefix verb, with its own vowel patah and the verb's first letter doubled (וַיֹּאמֶר, וַיְהִי; וָ before the א of the first person, וָאֹמַר), it carries a narrative from one event to the next: \"and God said … and there was light\". Read in series, the verbs tell what happened one after another. When anything comes between the וְ and the verb (a subject or object put first, or לֹא), the same narrative uses the perfect instead, with no change of time: \"and to the darkness he called night\" (Gen 1:5), \"and Adam knew Eve\" (Gen 4:1). Scripture has 14,921 such verbs; וַיֹּאמֶר alone is 2,068 of them.",
+          "cognate_ids": [
+            "uga-w"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.1.3",
+              "role": "defining",
+              "note": "\"וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי־אוֹר, and God said, let there be light, and there was light\"; the Septuagint καὶ εἶπεν … καὶ ἐγένετο."
+            },
+            {
+              "ref": "Gen.1.5",
+              "role": "defining",
+              "note": "\"וַיִּקְרָא אֱלֹהִים לָאוֹר יוֹם וְלַחֹשֶׁךְ קָרָא לָיְלָה וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יוֹם אֶחָד, and God called the light day, and the darkness he called night, and there was evening and there was morning, day one\": narrative verb, then וְ with the object first and a perfect, then the narrative verb again, all one sequence."
+            },
+            {
+              "ref": "Gen.3.6",
+              "role": "defining",
+              "note": "\"וַתִּקַּח מִפִּרְיוֹ וַתֹּאכַל וַתִּתֵּן גַּם־לְאִישָׁהּ עִמָּהּ וַיֹּאכַל, and she took of its fruit and ate, and gave also to her husband with her, and he ate\": each act in turn."
+            },
+            {
+              "ref": "Gen.2.7",
+              "note": "\"וַיִּיצֶר יְהוָה אֱלֹהִים אֶת־הָאָדָם עָפָר … וַיִּפַּח בְּאַפָּיו נִשְׁמַת חַיִּים וַיְהִי הָאָדָם לְנֶפֶשׁ חַיָּה, and Yahweh God formed the man, dust … and breathed into his nostrils the breath of life, and the man became a living soul\"; 1Co 15:45, \"ἐγένετο ὁ πρῶτος ἄνθρωπος Ἀδὰμ εἰς ψυχὴν ζῶσαν\"."
+            },
+            {
+              "ref": "Gen.4.1",
+              "note": "\"וְהָאָדָם יָדַע אֶת־חַוָּה אִשְׁתּוֹ וַתַּהַר וַתֵּלֶד, and Adam knew Eve his wife, and she conceived and bore\": the subject put first takes the perfect, and the narrative verbs follow on."
+            },
+            {
+              "ref": "Deu.1.9",
+              "note": "\"וָאֹמַר אֲלֵכֶם, and I said to you\": the first person, with וָ."
+            },
+            {
+              "ref": "Gen.22.4",
+              "note": "\"בַּיּוֹם הַשְּׁלִישִׁי וַיִּשָּׂא אַבְרָהָם אֶת־עֵינָיו, on the third day Abraham lifted up his eyes\": a phrase of time put first, the narrative verb after it (see ve-then)."
+            }
+          ]
+        },
+        {
+          "id": "ve-consequence",
+          "gloss": "and (so), and then: what is to follow (weqatal)",
+          "definition": "Joined straight to a perfect after a command, a law, a promise or a prediction, it carries on what is to be done or what will follow: \"and you shall love\", \"and they shall be one flesh\", \"and when I see the blood I will pass over you\". The New Testament renders such verbs as futures (ἀγαπήσεις, ἔσονται). Laws are set out as one such verb after another (Lev 23:10–11). OSHB tags 5,639 of them as sequential perfects, and 756 more perfects after וְ as plain perfects, many of which read the same way (Exo 9:9 וְהָיָה).",
+          "cognate_ids": [
+            "phn-w"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.6.5",
+              "role": "defining",
+              "note": "After \"Hear, Israel: Yahweh our God, Yahweh is one\" (Deu 6:4): \"וְאָהַבְתָּ אֵת יְהוָה אֱלֹהֶיךָ, and you shall love Yahweh your God\"; Mrk 12:30, \"καὶ ἀγαπήσεις\"."
+            },
+            {
+              "ref": "Gen.2.24",
+              "role": "defining",
+              "note": "\"עַל־כֵּן יַעֲזָב־אִישׁ … וְדָבַק בְּאִשְׁתּוֹ וְהָיוּ לְבָשָׂר אֶחָד, therefore a man shall leave … and shall cleave to his wife, and they shall be one flesh\"; Mat 19:5, \"καὶ προσκολληθήσεται … καὶ ἔσονται οἱ δύο εἰς σάρκα μίαν\"."
+            },
+            {
+              "ref": "Exo.12.13",
+              "role": "defining",
+              "note": "\"וְרָאִיתִי אֶת־הַדָּם וּפָסַחְתִּי עֲלֵכֶם, and I will see the blood, and I will pass over you\": the first verb the condition, the second the consequence."
+            },
+            {
+              "ref": "Lev.19.18",
+              "note": "\"וְאָהַבְתָּ לְרֵעֲךָ כָּמוֹךָ, and you shall love your neighbour as yourself\"; Mat 22:39, \"ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν\"."
+            },
+            {
+              "ref": "Gen.12.3",
+              "note": "\"וְנִבְרְכוּ בְךָ כֹּל מִשְׁפְּחֹת הָאֲדָמָה, and in you all the families of the ground shall be blessed\"; Gal 3:8, \"ἐνευλογηθήσονται ἐν σοὶ πάντα τὰ ἔθνη\"."
+            },
+            {
+              "ref": "Lev.23.10",
+              "note": "\"כִּי־תָבֹאוּ אֶל־הָאָרֶץ … וּקְצַרְתֶּם אֶת־קְצִירָהּ וַהֲבֵאתֶם אֶת־עֹמֶר, when you come into the land … and reap its harvest, then you shall bring a sheaf\"; and Lev 23:11, \"וְהֵנִיף אֶת־הָעֹמֶר, and he shall wave the sheaf\"."
+            },
+            {
+              "ref": "Num.10.9",
+              "note": "\"וְכִי־תָבֹאוּ מִלְחָמָה … וַהֲרֵעֹתֶם בַּחֲצֹצְרֹת וְנִזְכַּרְתֶּם … וְנוֹשַׁעְתֶּם, and when you go to war … then you shall sound an alarm with the trumpets, and you shall be remembered … and you shall be saved\"."
+            },
+            {
+              "ref": "Exo.20.9",
+              "note": "\"שֵׁשֶׁת יָמִים תַּעֲבֹד וְעָשִׂיתָ כָּל־מְלַאכְתֶּךָ, six days you shall labour and do all your work\": the perfect carries on the imperfect command."
+            }
+          ]
+        },
+        {
+          "id": "ve-then",
+          "gloss": "then (opening the main clause)",
+          "definition": "After an \"if\" or \"when\" clause, or a phrase of time put first, it opens the main clause: \"if I find fifty righteous … then I will spare all the place\".",
+          "cognate_ids": [
+            "uga-w",
+            "phn-w",
+            "sab-w"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.18.26",
+              "role": "defining",
+              "note": "\"אִם־אֶמְצָא בִסְדֹם חֲמִשִּׁים צַדִּיקִם … וְנָשָׂאתִי לְכָל־הַמָּקוֹם, if I find in Sodom fifty righteous … then I will spare all the place\"."
+            },
+            {
+              "ref": "Gen.3.5",
+              "role": "defining",
+              "note": "\"בְּיוֹם אֲכָלְכֶם מִמֶּנּוּ וְנִפְקְחוּ עֵינֵיכֶם, in the day you eat of it, then your eyes will be opened\"."
+            },
+            {
+              "ref": "Num.10.10",
+              "role": "defining",
+              "note": "\"וּבְיוֹם שִׂמְחַתְכֶם וּבְמוֹעֲדֵיכֶם וּבְרָאשֵׁי חָדְשֵׁיכֶם וּתְקַעְתֶּם בַּחֲצֹצְרֹת, and in the day of your gladness, and in your appointed feasts, and at the beginnings of your months, then you shall blow with the trumpets\"; the Septuagint leaves this וְ untranslated."
+            },
+            {
+              "ref": "Exo.16.6",
+              "note": "\"עֶרֶב וִידַעְתֶּם, at evening, then you shall know that Yahweh brought you out\"."
+            },
+            {
+              "ref": "Gen.44.22",
+              "note": "\"וְעָזַב אֶת־אָבִיו וָמֵת, and should he leave his father, then he would die\": the condition itself unmarked."
+            },
+            {
+              "ref": "Gen.22.4",
+              "note": "\"בַּיּוֹם הַשְּׁלִישִׁי וַיִּשָּׂא אַבְרָהָם, on the third day, then Abraham lifted up\"."
+            }
+          ]
+        },
+        {
+          "id": "ve-purpose",
+          "gloss": "that, so that (with a wish)",
+          "definition": "After a command or request, וְ with a jussive or cohortative (or a further imperative) gives what the first is for: \"go down and buy for us from there, that we may live and not die\".",
+          "cognate_ids": [
+            "uga-w",
+            "sab-w",
+            "syc-w"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.42.2",
+              "role": "defining",
+              "note": "\"רְדוּ־שָׁמָּה וְשִׁבְרוּ־לָנוּ מִשָּׁם וְנִחְיֶה וְלֹא נָמוּת, go down there and buy for us from there, that we may live and not die\"; the Septuagint ἵνα ζῶμεν."
+            },
+            {
+              "ref": "Exo.4.23",
+              "role": "defining",
+              "note": "\"שַׁלַּח אֶת־בְּנִי וְיַעַבְדֵנִי, let my son go, that he may serve me\"; the Septuagint ἵνα λατρεύσῃ."
+            },
+            {
+              "ref": "Gen.27.4",
+              "note": "\"וְהָבִיאָה לִּי וְאֹכֵלָה, and bring it to me, that I may eat\"; the Septuagint ἵνα φάγω."
+            },
+            {
+              "ref": "1Ki.21.2",
+              "note": "\"תְּנָה־לִּי אֶת־כַּרְמְךָ וִיהִי־לִי לְגַן־יָרָק, give me your vineyard, that it may be mine for a garden of herbs\"."
+            },
+            {
+              "ref": "Gen.19.20",
+              "note": "\"אִמָּלְטָה נָּא שָׁמָּה … וּתְחִי נַפְשִׁי, let me escape there … that my soul may live\"."
+            },
+            {
+              "ref": "Exo.3.10",
+              "note": "\"לְכָה וְאֶשְׁלָחֲךָ אֶל־פַּרְעֹה וְהוֹצֵא אֶת־עַמִּי, come, and I will send you to Pharaoh, that you may bring out my people\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καί",
+          "gloss": "and; and then; also, even",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 1:3 words 1, 5",
+              "note": "καὶ εἶπεν … καὶ ἐγένετο for וַיֹּאמֶר … וַיְהִי. The Septuagint renders וְ by καί about 39,000 times, far beyond any other word."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 2:24 words 7, 9, 11",
+              "note": "καί for each וְ of \"and his mother, and shall cleave, and they shall be\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JOL 3:1 word 1",
+              "note": "καὶ ἔσται for וְהָיָה."
+            },
+            {
+              "ref": "Mat.19.5",
+              "note": "\"καὶ προσκολληθήσεται τῇ γυναικὶ αὐτοῦ, καὶ ἔσονται οἱ δύο εἰς σάρκα μίαν\": Gen 2:24's two וְ, with future verbs."
+            },
+            {
+              "ref": "Mrk.12.30",
+              "note": "\"καὶ ἀγαπήσεις κύριον τὸν θεόν σου\": Deu 6:5's וְאָהַבְתָּ."
+            },
+            {
+              "ref": "Act.4.26",
+              "note": "\"κατὰ τοῦ κυρίου καὶ κατὰ τοῦ χριστοῦ αὐτοῦ\": Psa 2:2."
+            },
+            {
+              "ref": "Act.2.17",
+              "note": "\"καὶ ἔσται ἐν ταῖς ἐσχάταις ἡμέραις\": Jol 3:1's וְהָיָה."
+            },
+            {
+              "ref": "Luk.24.4",
+              "note": "\"καὶ ἐγένετο … καὶ ἰδοὺ δύο ἄνδρες\": the Hebrew וַיְהִי … וְהִנֵּה carried into Greek. καὶ ἐγένετο or ἐγένετο δέ opens a narrative 100 times in the Received Text, 50 of them in Luke and 25 in Acts."
+            },
+            {
+              "ref": "Luk.5.1",
+              "note": "\"Ἐγένετο δὲ … καὶ αὐτὸς ἦν ἑστὼς παρὰ τὴν λίμνην, and it came to pass … and he was standing by the lake\": καὶ αὐτός is the circumstantial וְהוּא of Gen 18:1."
+            }
+          ]
+        },
+        {
+          "lemma": "δέ",
+          "gloss": "but; and",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "MAL 1:3 word 1",
+              "note": "τὸν δὲ Ησαυ for וְאֶת־עֵשָׂו. About 2,400 times in all."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 15:2 word 8",
+              "note": "ἐγὼ δέ for the circumstantial וְאָנֹכִי."
+            },
+            {
+              "ref": "Rom.9.13",
+              "note": "\"τὸν Ἰακὼβ ἠγάπησα, τὸν δὲ Ἠσαῦ ἐμίσησα\": Mal 1:2–3."
+            }
+          ]
+        },
+        {
+          "lemma": "ἤ",
+          "gloss": "or",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 21:17 word 3",
+              "note": "πατέρα αὐτοῦ ἢ μητέρα for אָבִיו וְאִמּוֹ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 21:15 word 3",
+              "note": "ἤ for וְאִמּוֹ."
+            },
+            {
+              "ref": "Mat.15.4",
+              "note": "\"ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ τελευτάτω\": Exo 21:17."
+            },
+            {
+              "ref": "Mrk.7.10",
+              "note": "The same quotation."
+            }
+          ]
+        },
+        {
+          "lemma": "ἵνα",
+          "gloss": "that, so that",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 42:2 word 13",
+              "note": "ἵνα ζῶμεν for וְנִחְיֶה."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 4:23 word 6",
+              "note": "ἵνα μοι λατρεύσῃ for וְיַעַבְדֵנִי."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 27:4 word 8",
+              "note": "ἵνα φάγω for וְאֹכֵלָה."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀλλά",
+          "gloss": "but",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 40:23 word 7",
+              "note": "ἀλλὰ ἐπελάθετο αὐτοῦ for וַיִּשְׁכָּחֵהוּ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 48:19 word 3",
+              "note": "ἀλλά for וַיֹּאמֶר, \"but he said\"."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אוֹ",
+            "note": "The word for \"or\" alone; in the same laws the plain וְ says \"or\" where either is enough.",
+            "evidence": [
+              {
+                "ref": "Exo.21.18",
+                "note": "\"בְּאֶבֶן אוֹ בְאֶגְרֹף, with a stone or with his fist\"."
+              },
+              {
+                "ref": "Exo.21.31",
+                "note": "\"אוֹ־בֵן יִגָּח אוֹ־בַת יִגָּח, whether it gores a son or gores a daughter\"."
+              },
+              {
+                "ref": "Exo.21.17",
+                "note": "\"אָבִיו וְאִמּוֹ, his father or his mother\"."
+              }
+            ]
+          },
+          {
+            "lemma": "גַּם",
+            "note": "\"Also\": joined to וְ it adds a second thing to the first, \"and also\".",
+            "evidence": [
+              {
+                "ref": "Gen.48.19",
+                "note": "\"גַּם־הוּא יִהְיֶה־לְּעָם וְגַם־הוּא יִגְדָּל, he also shall become a people, and he also shall be great\"."
+              },
+              {
+                "ref": "Gen.3.6",
+                "note": "\"וַתִּתֵּן גַּם־לְאִישָׁהּ, and she gave also to her husband\"."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַיְהִי",
+            "gloss": "and it came to pass; and there was",
+            "evidence": [
+              {
+                "ref": "Gen.1.3",
+                "role": "defining",
+                "note": "\"וַיְהִי־אוֹר, and there was light\"."
+              },
+              {
+                "ref": "Rut.1.1",
+                "note": "\"וַיְהִי בִּימֵי שְׁפֹט הַשֹּׁפְטִים, and it came to pass in the days when the judges judged\": opening a book. 784 times as וַיְהִי (third masculine singular)."
+              }
+            ]
+          },
+          {
+            "phrase": "וַיְהִי עֶרֶב וַיְהִי בֹקֶר",
+            "gloss": "and there was evening and there was morning",
+            "evidence": [
+              {
+                "ref": "Gen.1.5",
+                "role": "defining",
+                "note": "\"… יוֹם אֶחָד, day one\"."
+              },
+              {
+                "ref": "Gen.1.8"
+              },
+              {
+                "ref": "Gen.1.31",
+                "note": "\"… יוֹם הַשִּׁשִּׁי, the sixth day\"."
+              }
+            ]
+          },
+          {
+            "phrase": "וְהָיָה",
+            "gloss": "and it shall come to pass; and it shall be",
+            "evidence": [
+              {
+                "ref": "Isa.2.2",
+                "role": "defining",
+                "note": "\"וְהָיָה בְּאַחֲרִית הַיָּמִים, and it shall come to pass in the last days\". 352 times as וְהָיָה (third masculine singular)."
+              },
+              {
+                "ref": "Jol.3.1",
+                "note": "\"וְהָיָה אַחֲרֵי־כֵן אֶשְׁפּוֹךְ אֶת־רוּחִי, and it shall come to pass afterward that I will pour out my spirit\"; Act 2:17, καὶ ἔσται."
+              },
+              {
+                "ref": "Exo.12.13",
+                "note": "\"וְהָיָה הַדָּם לָכֶם לְאֹת, and the blood shall be a sign for you\"."
+              }
+            ]
+          },
+          {
+            "phrase": "וַיֹּאמֶר",
+            "gloss": "and he said",
+            "evidence": [
+              {
+                "ref": "Gen.1.3",
+                "role": "defining",
+                "note": "\"וַיֹּאמֶר אֱלֹהִים, and God said\". 2,068 times."
+              },
+              {
+                "ref": "Gen.42.2"
+              }
+            ]
+          },
+          {
+            "phrase": "וַיְדַבֵּר יְהוָה אֶל־מֹשֶׁה לֵּאמֹר",
+            "gloss": "and Yahweh spoke to Moses, saying",
+            "evidence": [
+              {
+                "ref": "Lev.23.1",
+                "role": "defining",
+                "note": "Opening the appointed feasts; each new law of the chapter opens with it again: Lev 23:9, 23, 26, 33. About 70 times in all."
+              },
+              {
+                "ref": "Lev.23.9",
+                "note": "The sheaf of firstfruits."
+              },
+              {
+                "ref": "Lev.23.23",
+                "note": "The day of trumpet blasts."
+              },
+              {
+                "ref": "Lev.23.26",
+                "note": "The day of coverings."
+              },
+              {
+                "ref": "Lev.23.33",
+                "note": "The feast of booths."
+              },
+              {
+                "ref": "Num.10.1",
+                "note": "The two silver trumpets."
+              }
+            ]
+          },
+          {
+            "phrase": "וְעַתָּה",
+            "gloss": "and now; now therefore",
+            "evidence": [
+              {
+                "ref": "Gen.3.22",
+                "role": "defining",
+                "note": "\"וְעַתָּה פֶּן־יִשְׁלַח יָדוֹ וְלָקַח גַּם מֵעֵץ הַחַיִּים וְאָכַל וָחַי לְעֹלָם, and now, lest he put out his hand and take also of the tree of life, and eat, and live for ever\": what is to be done, drawn from what has been said. 271 times."
+              },
+              {
+                "ref": "Exo.19.5",
+                "note": "\"וְעַתָּה אִם־שָׁמוֹעַ תִּשְׁמְעוּ בְּקֹלִי, now therefore, if you will indeed obey my voice\"."
+              },
+              {
+                "ref": "Exo.3.10"
+              }
+            ]
+          },
+          {
+            "phrase": "וְהִנֵּה",
+            "gloss": "and behold",
+            "evidence": [
+              {
+                "ref": "Gen.1.31",
+                "role": "defining",
+                "note": "\"וַיַּרְא אֱלֹהִים אֶת־כָּל־אֲשֶׁר עָשָׂה וְהִנֵּה־טוֹב מְאֹד, and God saw all that he had made, and behold, it was very good\". 368 times."
+              },
+              {
+                "ref": "Gen.28.12",
+                "note": "\"וַיַּחֲלֹם וְהִנֵּה סֻלָּם, and he dreamed, and behold, a ladder\"."
+              }
+            ]
+          },
+          {
+            "phrase": "טוֹב וָרָע",
+            "gloss": "good and evil",
+            "evidence": [
+              {
+                "ref": "Gen.2.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.2.17"
+              },
+              {
+                "ref": "Gen.3.5"
+              },
+              {
+                "ref": "Gen.3.22"
+              }
+            ]
+          },
+          {
+            "phrase": "יוֹמָם וָלַיְלָה",
+            "gloss": "day and night",
+            "evidence": [
+              {
+                "ref": "Jos.1.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.1.2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "וְ",
+      "lang": "arc",
+      "bdb": [
+        "xf.aa.aa"
+      ],
+      "cognate_ids": [
+        "arc-w",
+        "syc-w"
+      ],
+      "pos": "conjunction",
+      "gloss": "and; but; or; while",
+      "summary": "The same conjunction in the Aramaic of Daniel, Ezra and Jer 10:11, on 709 words, prefixed and pointed as in Hebrew (וּ before a labial or shewa, וּגְבוּרְתָא, Dan 2:20; וַ before a hateph, וַאֲרוּ, Dan 7:13). Biblical Aramaic has no wayyiqtol or weqatal: its narrative joins perfects and participles with וְ (Dan 6:11), and OSHB tags no sequential perfect there (the 70 perfects after וְ are plain perfects). So the Hebrew narrative and consequence uses belong to what the verb form does after the conjunction, while the joining word is one and the same.",
+      "senses": [
+        {
+          "id": "arc-ve-and",
+          "gloss": "and",
+          "definition": "Joins words and clauses, as the Hebrew.",
+          "kin": [
+            "ve-and"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.7.14",
+              "role": "defining",
+              "note": "\"וְלֵהּ יְהִיב שָׁלְטָן וִיקָר וּמַלְכוּ, and to him was given dominion and glory and a kingdom\"."
+            },
+            {
+              "ref": "Jer.10.11",
+              "note": "\"אֱלָהַיָּא דִּי־שְׁמַיָּא וְאַרְקָא לָא עֲבַדוּ, the gods that did not make the heavens and the earth\"."
+            },
+            {
+              "ref": "Dan.2.20",
+              "note": "\"דִּי חָכְמְתָא וּגְבוּרְתָא דִּי לֵהּ־הִיא, for wisdom and might are his\"."
+            },
+            {
+              "ref": "Dan.2.44",
+              "note": "\"וּבְיוֹמֵיהוֹן דִּי מַלְכַיָּא אִנּוּן יְקִים אֱלָהּ שְׁמַיָּא מַלְכוּ, and in the days of these kings the God of heaven will set up a kingdom\"."
+            }
+          ]
+        },
+        {
+          "id": "arc-ve-but",
+          "gloss": "but",
+          "definition": "Where what follows stands against what went before.",
+          "kin": [
+            "ve-but"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.18",
+              "role": "defining",
+              "note": "After \"our God … is able to deliver us\" (Dan 3:17): \"וְהֵן לָא, but if not, be it known to you, O king, that we will not serve your gods\"."
+            },
+            {
+              "ref": "Dan.2.30",
+              "note": "\"וַאֲנָה לָא בְחָכְמָה דִּי־אִיתַי בִּי, but as for me, not by any wisdom that is in me has this secret been revealed to me\"."
+            }
+          ]
+        },
+        {
+          "id": "arc-ve-or",
+          "gloss": "or",
+          "definition": "Where any one of the things joined is meant.",
+          "kin": [
+            "ve-or"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.29",
+              "role": "defining",
+              "note": "\"דִּי כָל־עַם אֻמָּה וְלִשָּׁן דִּי־יֵאמַר שָׁלוּ, that any people, nation or language that speaks anything amiss\": any one of them, with a singular verb."
+            }
+          ]
+        },
+        {
+          "id": "arc-ve-while",
+          "gloss": "while, with (circumstance)",
+          "definition": "Before a clause whose subject comes first, the circumstance of the main action.",
+          "kin": [
+            "ve-while"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "\"וְדָנִיֵּאל כְּדִי יְדַע … עַל לְבַיְתֵהּ וְכַוִּין פְּתִיחָן לֵהּ בְּעִלִּיתֵהּ נֶגֶד יְרוּשְׁלֶם, and Daniel, when he knew … went into his house, his windows being open in his upper room toward Jerusalem\"."
+            },
+            {
+              "ref": "Dan.7.13",
+              "note": "\"וַאֲרוּ עִם־עֲנָנֵי שְׁמַיָּא כְּבַר אֱנָשׁ אָתֵה הֲוָה, and behold, with the clouds of heaven one like a son of man was coming\"."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-wa",
+      "lang": "ar",
+      "form": "وَ",
+      "translit": "wa-",
+      "gloss": "and; with (of concomitance); while (of circumstance); but; that is",
+      "relation": "cognate",
+      "note": "Arabic's narrative \"and then\" is the separate fa-; wa- is the plain joiner, and with an accusative \"with\", the use of Exo 1:1.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3048, وَ (Supplement)",
+          "note": "\"سَارَ زَيْدٌ وَعْمْرٌو, using و as a conjunction … and سِرْتُ وَزَيْدًا, using و as [a prep.] denoting concomitance\"; \"الوَاوُ لِمُطْلَقِ الجَمْعِ [The و denoting unrestricted conjunction, not necessarily implying simultaneousness nor relative order]\"."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2913, و",
+          "note": "The letter, \"called وَاوٌ\"; \"for و in the sense of بل [but rather] see a verse in art. قَصَدَ\". As a numeral, six."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic و (wa), conj. and prep.",
+          "note": "\"and …; yet, but\"; \"while, at the same time\"; \"and in other words, that is to say\"; \"Introduces a clause describing the state or circumstance of the main action, often rendered as 'while' or 'when'\"; \"with (with following accusative)\"; \"From Proto-Semitic *wa. Cognate with Hebrew וְ־\"."
+        }
+      ]
+    },
+    {
+      "id": "akk-u",
+      "lang": "akk",
+      "form": "u",
+      "translit": "u",
+      "gloss": "and; but; moreover",
+      "relation": "cognate",
+      "note": "Akkadian loses initial w-, so *wa appears as u. Akkadian also joins clauses with the enclitic -ma, a different particle; see the note.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005170, u [and] CNJ",
+          "note": "\"(hypotaxis); and; but; moreover\"; about 64,600 instances."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian u, conj.",
+          "note": "\"and; moreover, likewise, also, too\"; \"From Proto-Semitic *wa (“and”). Cognate with Arabic وَ (wa) and Biblical Hebrew וְ־ (wə̆-)\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-w",
+      "lang": "uga",
+      "form": "𐎆",
+      "translit": "w- /wa-/",
+      "gloss": "and; (opening a main clause) then; and so, that",
+      "relation": "cognate",
+      "note": "Ugaritic shows the Hebrew uses beside \"and\": w- before a prefix verb in narrative (\"he raised his voice and he shouted\"), w- opening the main clause after a condition, and w- before a wish giving its purpose.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 79, §57.21, Conjunction w-",
+          "note": "\"The usual form is w- /wa-/, usually written together with the following word\"; also an extended form wn."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 103, §67.21, Conjunction w-",
+          "note": "\"a simple coordinating conjunction\": \"ysu gh | wysh 1.16:VI:40–41 'he raised his voice and he shouted'\"; it introduces \"contrasting elements\"; \"concluding clauses … actually dependent on the main clause\": \"pth.bt.wuba 1.100:72 'open the house and/that I may enter'\"; and \"a main verb following a subordinate clause\": \"tin.win … '(if) you will give, (then) give!'\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 120, §77.6, Conditional sentences",
+          "note": "\"The main clause (apodosis) is introduced, especially in prose, by the conjunction w- 'and,' which seems to indicate that the action in the main clause is considered a consequence of that expressed by the preceding subordinated clause.\""
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 185, §93 Glossary, w",
+          "note": "\"w-, w. 'and' (H., Aram. wa-, Arab. wa; Akkad. ū); coordinating conjunction\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-w",
+      "lang": "phn",
+      "form": "𐤅",
+      "translit": "w-",
+      "gloss": "and; yea; or; but; (opening the main clause) then",
+      "relation": "cognate",
+      "note": "Krahmalkov's senses match the Hebrew closely, including the main clause opened by w- and a perfect with future reference after an \"as for anyone who…\" clause, the Hebrew weqatal of consequence. Punic spells it u- and uy-, the Hebrew וּ.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 162–163, W-, senses 1–3",
+          "note": "\"[Heb. wə-, u-] conj. 1. AND …: KAI 26 A II 9/10 wbn ʾnk hqrt z wšt ʾnk šm ʾztwd, 'I built this city, and I named it Aztwaddiya.' 2. YEA, conjoining complementary or parallel statements … 3. OR, expressing contrast between individual items\"."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 163–164, W-, senses 4–6",
+          "note": "\"4. BUT, conjoining contrastive clauses\" (KAI 13.5/8); \"5. b. Introducing the main (result) clause of a sentence preceded by an anticipatory clause, the main (result) clause beginning with qatal with future tense-reference\"; \"6. … in Roman-letter Punic and Neo-Punic in free variation as u- and uy-\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-w",
+      "lang": "sem",
+      "form": "𐩥",
+      "translit": "w-",
+      "gloss": "and; together with; but; or; (opening the main clause, or a circumstance) then, while; so that",
+      "relation": "cognate",
+      "note": "Sabaic, Old South Arabian. The same range as the Hebrew: \"together with\" (Exo 1:1), the apodosis, the circumstantial clause, and a purpose with the prefix verb.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 119, w- cj (1)–(4)",
+          "note": "\"coordinating conjunction: (1) simple, AND [Ar wa- and many Sem cognates] … (1a) TOGETHER WITH … (2) adversative, BUT … (3) OR: C126/8: mn ʾš wʾntt 'whoever, man or woman' … (4) introducing second part of sentence: apodosis … description of attendant circumstances (cf Ar ḥāl-clauses)\"."
+        },
+        {
+          "source": "biella-1982",
+          "locator": "pp. 119–120, w- cj, notes",
+          "note": "\"When w- precedes the ipf, a modal or consequential translation is often required: R3945/16 … 'so that they would be slain'\"; \"so that it should be arranged canal by canal\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-wa",
+      "lang": "gez",
+      "form": "ወ",
+      "translit": "wä-",
+      "gloss": "and; and then; also; and so; but, yet",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ወ- (wä-), conj.",
+          "note": "\"and; and then, thereupon; also, and also; thus, and so; but, yet, however\"; \"From Proto-Semitic *wa. Cognate with Arabic وَ (wa), Hebrew ו־, Aramaic ו־\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-w",
+      "lang": "arc",
+      "form": "וְ",
+      "translit": "wə-",
+      "gloss": "and, but",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. וְ (וּ)",
+          "note": "\"a prefix, and, but; often introducing a question: but, is it indeed so?\""
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Aramaic ו־, conj.",
+          "note": "\"and\"; \"Inherited from Proto-Semitic *wa.\""
+        }
+      ]
+    },
+    {
+      "id": "syc-w",
+      "lang": "syc",
+      "form": "ܘ",
+      "translit": "w-",
+      "gloss": "and; while, when; but; or; even; in order that",
+      "relation": "cognate",
+      "note": "The Peshitta's conjunction, prefixed as in Hebrew and Aramaic. SEDRA records it as a word prefix, not a lexeme, so it has no lexeme number to cite.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܘ- (wə-), conj.",
+          "note": "\"and; while, when, as, then; various other senses: yet, also, for, but, however, since, because, that, in order that, or, even, again\"; \"Inherited from Proto-Semitic *wa\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "days-of-creation",
+      "statement": "Genesis 1 is told as one chain of narrative verbs joined by וְ, the form that tells the rest of scripture's history: \"and God said, let there be light, and there was light, and God saw the light … and God divided\" (Gen 1:3–4), and each day closes \"and there was evening and there was morning\", day one to the sixth day (Gen 1:5, 31). The chain runs on without a break into the seventh day (Gen 2:2–3), the forming of man (Gen 2:7), and Adam's life and children: \"and Adam lived a hundred and thirty years, and fathered a son in his likeness\" (Gen 5:3). The days are told in the same form and the same order of events as Adam's years. The fourth commandment sets the two side by side with the same joining word: \"six days you shall labour, and do all your work … for in six days Yahweh made the heavens and the earth, the sea and all that is in them, and rested on the seventh day\" (Exo 20:9–11). Jesus puts man at the start: \"from the beginning of the creation God made them male and female\" (Mrk 10:6). From the verses: the six days of Genesis 1 are a narrative sequence of days like Israel's working days, followed by a seventh, at the head of a history that runs on unbroken from Adam.",
+      "evidence": [
+        {
+          "ref": "Gen.1.3"
+        },
+        {
+          "ref": "Gen.1.4"
+        },
+        {
+          "ref": "Gen.1.5"
+        },
+        {
+          "ref": "Gen.1.31"
+        },
+        {
+          "ref": "Gen.2.2"
+        },
+        {
+          "ref": "Gen.2.3"
+        },
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Gen.5.3"
+        },
+        {
+          "ref": "Exo.20.9"
+        },
+        {
+          "ref": "Exo.20.11"
+        },
+        {
+          "ref": "Mrk.10.6"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-and-his-anointed",
+      "statement": "The kings of the earth take counsel together \"against Yahweh וְעַל־מְשִׁיחוֹ, and against his anointed\" (Psa 2:2). The וְ joins two: Yahweh, and the one Yahweh has anointed, to whom Yahweh then says \"you are my son, today I have begotten you\" (Psa 2:7). The believers in Jerusalem prayed the psalm, \"against the Lord and against his Christ\", and named the anointed: \"your holy servant Jesus, whom you anointed\" (Act 4:26–27); Paul reads the begetting of Psa 2:7 of God raising Jesus (Act 13:33). From the verses: Jesus is the one Yahweh anointed and calls his son, set beside Yahweh in the psalm as the second of two.",
+      "evidence": [
+        {
+          "ref": "Psa.2.2"
+        },
+        {
+          "ref": "Psa.2.7"
+        },
+        {
+          "ref": "Act.4.26"
+        },
+        {
+          "ref": "Act.4.27"
+        },
+        {
+          "ref": "Act.13.33"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-14. ROOT INVESTIGATION, as asked for a function word: no viable root; keyed by its own letter ו, as ke (כ), le and be are. (1) The conjunction is one consonant with a short vowel in every branch: Akkadian u (initial w lost; Oracc armep x000005170), Ugaritic w- /wa-/ (Segert §57.21, p. 79; §67.21, p. 103; glossary p. 185), Phoenician-Punic w-, Punic u-, uy- (Krahmalkov pp. 162–164), Sabaic w- (Biella pp. 119–120), Arabic wa- (Lane pp. 2913, 3048; Lane's article on the particle is in the unfinished Supplement and is short), Ge'ez wä- (Wiktionary only), Aramaic and Syriac w- (Jastrow; Wiktionary). No language has a noun or verb w-x-y it could be cut from. (2) וָו \"hook, peg\" (f.ab.ad, Strong's 2053; 13 times, Exo 26:32, 37; 27:10, 11, 17; 36:36, 38; 38:10, 11, 12, 17, 19, 28, always of the pillars' hooks; root key וו) has no entry, and none is made or edited here. It is very likely the acrophone of the letter's name (doc/lexicon/alphabet-origin.md: Petrovich's ו is a support pole, O30, acrophone וָו), so the letter is named from the hook, not the conjunction from either. The link \"the hook joins, so ו means and\" fails on the evidence: the picture stands for a sound (benner-evaluation.md); *wa was spoken across the family before the alphabet, Akkadian writing it u in cuneiform, where no hook-word stands behind it; the hook-word is not attested as a joining word, and Arabic wāw is only the letter's name (Lane p. 2913), with no meaning \"hook\". So the evidence for a primitive particle is strong, and the hook link is a folk link. If a וָו entry is written later, its note should say the same. (3) Not cognates: Akkadian -ma, the clause-joining enclitic (Oracc armep x000069680 ma [and] CNJ, only 39 lemmatised instances, and Wiktionary: \"Unknown. Compare Ge'ez -mma\"), is another particle; Akkadian ū \"or\" (Oracc armep x000005180) more likely goes with Hebrew אוֹ and Arabic aw than with וְ; Arabic fa- and Ugaritic p- are the other Semitic \"and (then)\", with no Hebrew counterpart. WAYYIQTOL AND WEQATAL: entered as senses of this word (ve-narrative, ve-consequence) for these reasons: the same prefix with the same vowel rules (וָ before א in וָאֹמַר as in pause); OSHB tags every wayyiqtol and every sequential perfect as c + verb and never without the c; the narrative switches between וַ + prefix verb and וְ + fronted word + perfect inside one sequence (Gen 1:5; 4:1), so the joining word is the same and the verb form carries the time; Biblical Aramaic, with the same conjunction and no such forms, narrates with וְ and a perfect; Ugaritic has w- + prefix verb in narrative (Segert §67.21, \"he raised his voice and he shouted\") and Phoenician w- + qatal with future reference in the main clause (Krahmalkov W- 5b). What the prefix form after וַ is (an old short preterite) is a question for the verb, not this entry. COUNTS (from oshb_primary in data/hebrew.db): every row's lemma split on \"/\", any segment exactly \"c\" taken as the conjunction (after trimming spaces); the conjunction is always the first segment and never occurs twice in one word, and no row has the lemma \"c\" alone (no standalone וְ). Morph segments do not line up one to one with lemma segments (pronominal suffixes and the Aramaic article have morph segments but no lemma segment), so the following form was read from the morph's second segment, the waw's own being the first. Hebrew 50,012: 50,007 tagged C, 5 tagged R by mistake (Isa 1:5; Jer 49:37; Jon 2:4; 3:5; 4:11). Of these, verbs: wayyiqtol (V?w) 14,921, sequential perfect (V?q) 5,639, perfect (V?p) 756 (many of them read as weqatal, e.g. Exo 9:9, Zec 8:8; others past, Jdg 5:26), imperfect 916, imperative 871, participle 655, cohortative 289, jussive 185, infinitive absolute 167, passive participle 139, infinitive construct 44; before a noun 9,900, a suffix pronoun or particle 6,736, a preposition 5,175, an adjective 1,601, a pronoun 1,092, an adverb 533, another conjunction 393. Aramaic 709, all tagged C: before a perfect 70, participle 61, imperfect 25, imperative 4, no wayyiqtol or sequential perfect. Pointing of the waw's own segment (Hebrew and Aramaic together, by the first two characters, so approximate): וְ 24,296, וַ 15,885, וּ 8,446, וָ 1,299 (614 before a first-person wayyiqtol; about 580 before nouns and particles, mostly in pairs), וִ 464, וֶ 114, וֵ 28; 186 have a meteg after the waw. Phrases: וַיְהִי 784 (c/1961 HC/Vqw3ms), וְהָיָה 352 (Vqq3ms), וַיֹּאמֶר 2,068 (c/559 Vqw3ms), וְעַתָּה 271, וְהִנֵּה 368, וַיְדַבֵּר יְהוָה אֶל־מֹשֶׁה … לֵאמֹר 70 (Lev 23:1, 9, 23, 26, 33; Num 10:1 among them). New Testament καὶ ἐγένετο / ἐγένετο δέ: 100 in the TR's Greek (greek_word): Mat 7, Mrk 7, Luk 50, Jhn 1, Act 25, 1Th 1, Rev 9. LEXICON-SUPPORT counts 50,012 uses for f.ab.aa and 709 for xf.aa.aa, matching the counts above. BDB KEYS: claimed f.ab.aa (Hebrew וְ) and xf.aa.aa (Aramaic וְ), both unclaimed before. Left: f.aa.aa (the letter's name, no tokens), f.ab.ad וָו \"hook\" (another word, root וו, no entry yet). NOT CONSULTED: Dillmann and Leslau for Ge'ez wä- (only Wiktionary cited); CAD U/W for Akkadian u; DULAT for Ugaritic w; CAL for Aramaic; Payne Smith for Syriac ܘ (SEDRA has no lexeme for the prefix). OPEN QUESTIONS: (a) the explicative \"even\" rests on 1Sa 28:3 (with 1Sa 7:17) and 1Sa 17:40; 1Ch 5:26 (Pul and Tiglath-pilneser with a singular וַיַּגְלֵם) and Dan 6:29 (\"in the reign of Darius, even the reign of Cyrus\"?) were left out as not decisive from the text alone; (b) Zec 9:9 is read as one animal named twice (John's quotation), with Matthew's καί cited as it stands; the reviewer may want to frame this; (c) the 756 OSHB plain perfects after וְ are not split between consequence and past here; (d) ἵνα and ἀλλά have only Septuagint evidence, no New Testament quotation; (e) doctrine: two items, days-of-creation (narrative sequence; complements erev.json's evening-and-morning-days) and yahweh-and-his-anointed (Psa 2:2), for the reviewer to check the framing."
+}
