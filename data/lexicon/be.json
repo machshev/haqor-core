@@ -1,0 +1,1589 @@
+{
+  "id": "be",
+  "root": "ב",
+  "status": "draft",
+  "updated": "2026-11-14",
+  "tags": [
+    "grammar",
+    "place",
+    "time",
+    "means",
+    "price"
+  ],
+  "gloss": "(preposition) in, within, among; on, at; in (a time), when; with, by, by means of; for (a price); because of; after (a pattern); as",
+  "summary": "The preposition of what a thing is in: the place it is within (\"the tree of life in the midst of the garden\", Gen 2:9), the people it is among, the time it falls in (\"in the beginning\", Gen 1:1), the state it is in (\"in peace\", Gen 15:15), what one has with one, and from that the means it is done by (\"not by might nor by power, but by my Spirit\", Zec 4:6), the price it is had for (\"seven years for Rachel\", Gen 29:18), the cause, the pattern (\"in our image\", Gen 1:26), and what a person is (\"the God of my father was as my help\", Exo 18:4). After verbs of trusting, ruling, delighting, hearing and seeing it marks the one these rest on (\"he believed in Yahweh\", Gen 15:6). It is always joined to the next word (בְּ־, בַּ־, בִּ־) and takes suffixes on its single letter (בִּי, בּוֹ, בָּנוּ, בָּכֶם, בָּהֶם); scripture's Aramaic has the same word. Every branch of the family has it (Ugaritic, Phoenician, Aramaic, Syriac, Arabic, Sabaic, Ge'ez), but no noun or verb is shown to be its source, so it is keyed by its own consonant: the proposal that it grew from בַּיִת \"house\" rests on likeness of sound and sense only, since no form of the preposition in any language shows the y or the t of bayt.",
+  "words": [
+    {
+      "lemma": "בְּ",
+      "bdb": [
+        "b.ab.aa"
+      ],
+      "cognate_ids": [
+        "ar-bi",
+        "arc-b",
+        "syc-b",
+        "phn-b",
+        "uga-b",
+        "sab-b",
+        "gez-ba"
+      ],
+      "pos": "preposition",
+      "gloss": "in, within, among; on, at; in (a time), when; with; by, by means of; for (a price); because of; after (a pattern); as",
+      "summary": "Never written alone: it is prefixed (בְּרֵאשִׁית, Gen 1:1), takes the article's vowel (בַּיּוֹם הַשְּׁבִיעִי, Gen 2:2; בַּיהוָה, Gen 15:6), and with suffixes is built straight on the one letter: בִּי \"in me\" (2Sa 23:2), בְּךָ, בָּךְ (Gen 3:16), בּוֹ (Gen 4:7), בָּנוּ (Num 12:2), בָּכֶם (Jdg 8:23), בָּהֶם (Exo 14:28), as Ugaritic bh, bhm and Arabic bihi, bihim. Its senses start from one picture, a thing set within another, and run out to what goes with a thing, what a thing is done with, and what it is given for. It covers much of what Greek does with ἐν, and also κατά, ἀντί, ἐπί and the dative. Its uses: of the 15,475 Hebrew words with this preposition in the Open Scriptures Hebrew Bible (a lemma segment b, morphology R), 1,361 are free forms with a suffix (or with וְ, or with a pronoun as in בָּהֵמָּה), and the 1,327 of these tagged with the bare lemma b are the ones linked to this word; the other 14,114 are prefixed and counted under the word they are joined to, as מִן and לְ are.",
+      "senses": [
+        {
+          "id": "be-in",
+          "gloss": "in, within (a place)",
+          "definition": "The place a person or thing is in, or within the bounds of: a land, a house, a garden, a city's gates, the mountain.",
+          "evidence": [
+            {
+              "ref": "Gen.2.8",
+              "role": "defining",
+              "note": "\"Yahweh God planted a garden בְעֵדֶן, in Eden.\""
+            },
+            {
+              "ref": "Gen.4.8",
+              "role": "defining",
+              "note": "\"when they were בַּשָּׂדֶה, in the field\"."
+            },
+            {
+              "ref": "Exo.20.10",
+              "role": "defining",
+              "note": "\"your stranger who is בִּשְׁעָרֶיךָ, within your gates\"."
+            },
+            {
+              "ref": "Gen.2.9",
+              "note": "\"the tree of life בְּתוֹךְ הַגָּן, in the midst of the garden\"."
+            },
+            {
+              "ref": "Exo.24.18",
+              "note": "\"Moses came בְּתוֹךְ הֶעָנָן, into the midst of the cloud … and Moses was בָּהָר, on (in) the mountain forty days\"."
+            },
+            {
+              "ref": "Gen.39.5",
+              "note": "\"the blessing of Yahweh was on all that he had, בַּבַּיִת וּבַשָּׂדֶה, in the house and in the field\"."
+            },
+            {
+              "ref": "Mat.2.1",
+              "note": "\"Jesus was born ἐν Βηθλεὲμ, in Bethlehem\": the Greek ἐν does the same work."
+            }
+          ],
+          "senses": [
+            {
+              "id": "be-among",
+              "gloss": "among; (the best) of; some of",
+              "definition": "Among a company of people or things; set among others it can single one out as the chief of them; and with some verbs it takes in only part of what follows (\"eat of\").",
+              "evidence": [
+                {
+                  "ref": "Exo.14.28",
+                  "role": "defining",
+                  "note": "\"there was not left בָּהֶם, among them, even one\"."
+                },
+                {
+                  "ref": "Sng.1.8",
+                  "role": "defining",
+                  "note": "\"הַיָּפָה בַּנָּשִׁים, the fair one among women\", the fairest; so Elizabeth to Mary, \"blessed are you ἐν γυναιξίν, among women\" (Luk 1:42)."
+                },
+                {
+                  "ref": "Pro.9.5",
+                  "role": "defining",
+                  "note": "\"Come, eat בְלַחְמִי, of my bread, and drink בְּיַיִן, of the wine I have mixed.\""
+                },
+                {
+                  "ref": "Num.11.17",
+                  "note": "\"they shall bear with you בְּמַשָּׂא הָעָם, in the burden of the people\": a share in it."
+                },
+                {
+                  "ref": "Luk.1.42",
+                  "note": "\"Blessed are you among women\"."
+                },
+                {
+                  "ref": "Dan.4.32",
+                  "note": "The Aramaic: \"he does according to his will בְּחֵיל שְׁמַיָּא, among the host of heaven\"."
+                }
+              ]
+            },
+            {
+              "id": "be-on-at",
+              "gloss": "on, at, by",
+              "definition": "On a surface or a height, and at or beside a place, where English would not say \"in\".",
+              "evidence": [
+                {
+                  "ref": "Gen.8.20",
+                  "role": "defining",
+                  "note": "Noah \"offered burnt offerings בַּמִּזְבֵּחַ, on the altar\"."
+                },
+                {
+                  "ref": "1Sa.29.1",
+                  "role": "defining",
+                  "note": "\"Israel camped בַּעַיִן, by the spring which is in Jezreel\"."
+                },
+                {
+                  "ref": "Ezk.10.15",
+                  "note": "\"the living creature that I saw בִּנְהַר כְּבָר, by the river Chebar\"."
+                },
+                {
+                  "ref": "Exo.12.11",
+                  "note": "\"your sandals בְּרַגְלֵיכֶם, on your feet, and your staff בְּיֶדְכֶם, in your hand\"."
+                }
+              ]
+            },
+            {
+              "id": "be-through",
+              "gloss": "through, along (with verbs of passing)",
+              "definition": "After a verb of going or passing, the ground gone over: through a land, along a dry path.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.6",
+                  "role": "defining",
+                  "note": "\"Abram passed through בָּאָרֶץ, the land, to the place of Shechem\"."
+                },
+                {
+                  "ref": "Exo.14.29",
+                  "role": "defining",
+                  "note": "\"the sons of Israel walked בַיַּבָּשָׁה, on (along) the dry ground, in the midst of the sea\"; Heb 11:29, \"they passed through the Red Sea as διὰ ξηρᾶς, through dry land\"."
+                },
+                {
+                  "ref": "Isa.43.2",
+                  "note": "\"When you pass בַּמַּיִם, through the waters … when you walk בְּמוֹ אֵשׁ, through fire, you shall not be burned.\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "be-time",
+          "gloss": "in, on, at (a time); when, while (with an infinitive)",
+          "definition": "The time a thing happens in: a day, a year, a beginning. Before an infinitive it makes a clause of time, \"in their being created\", that is, when they were created.",
+          "evidence": [
+            {
+              "ref": "Gen.1.1",
+              "role": "defining",
+              "note": "\"בְּרֵאשִׁית, in the beginning, God created the heavens and the earth\"; John opens the same way, Ἐν ἀρχῇ (Jhn 1:1)."
+            },
+            {
+              "ref": "Gen.2.2",
+              "role": "defining",
+              "note": "\"God finished בַּיּוֹם הַשְּׁבִיעִי, on the seventh day, his work … and rested בַּיּוֹם הַשְּׁבִיעִי, on the seventh day\"."
+            },
+            {
+              "ref": "Gen.2.4",
+              "role": "defining",
+              "note": "\"בְּהִבָּרְאָם, in their being created, בְּיוֹם, in the day that Yahweh God made earth and heavens\"."
+            },
+            {
+              "ref": "Gen.4.8",
+              "role": "defining",
+              "note": "\"בִּהְיוֹתָם בַּשָּׂדֶה, when they were in the field, Cain rose up against Abel\"."
+            },
+            {
+              "ref": "Gen.25.26",
+              "note": "\"Isaac was sixty years old בְּלֶדֶת אֹתָם, when she bore them\"."
+            },
+            {
+              "ref": "Exo.21.2",
+              "note": "\"six years he shall serve, וּבַשְּׁבִעִת, and in the seventh he shall go out free\"."
+            },
+            {
+              "ref": "Dan.5.30",
+              "note": "The Aramaic: \"בֵּהּ בְּלֵילְיָא, in that very night, Belshazzar was slain\"."
+            },
+            {
+              "ref": "Jhn.1.1",
+              "note": "Ἐν ἀρχῇ, \"in the beginning\": Gen 1:1."
+            }
+          ]
+        },
+        {
+          "id": "be-state",
+          "gloss": "in (a state or manner), with",
+          "definition": "The state or manner an act is done in: in peace, in haste, in integrity, with strength. English often turns it into an adverb.",
+          "evidence": [
+            {
+              "ref": "Gen.15.15",
+              "role": "defining",
+              "note": "\"You shall go to your fathers בְּשָׁלוֹם, in peace; you shall be buried בְּשֵׂיבָה טוֹבָה, in a good old age.\""
+            },
+            {
+              "ref": "Exo.12.11",
+              "role": "defining",
+              "note": "\"you shall eat it בְּחִפָּזוֹן, in haste\"."
+            },
+            {
+              "ref": "Psa.26.1",
+              "role": "defining",
+              "note": "\"I have walked בְּתֻמִּי, in my integrity\"."
+            },
+            {
+              "ref": "Gen.3.16",
+              "note": "\"בְּעֶצֶב, in pain, you shall bear children\"."
+            },
+            {
+              "ref": "Psa.29.4",
+              "note": "\"The voice of Yahweh is בַּכֹּחַ, with power; the voice of Yahweh is בֶּהָדָר, with majesty.\""
+            },
+            {
+              "ref": "Exo.15.13",
+              "note": "\"You led בְחַסְדְּךָ, in your kindness, the people you redeemed; you guided them בְעָזְּךָ, in your strength.\""
+            }
+          ]
+        },
+        {
+          "id": "be-with",
+          "gloss": "with (company, or what one brings)",
+          "definition": "The people one comes with, and what one carries or brings along: a staff, an offering.",
+          "evidence": [
+            {
+              "ref": "Num.20.20",
+              "role": "defining",
+              "note": "\"Edom came out against him בְּעַם כָּבֵד וּבְיָד חֲזָקָה, with many people and with a strong hand\"."
+            },
+            {
+              "ref": "Gen.32.11",
+              "role": "defining",
+              "note": "\"בְמַקְלִי, with my staff, I crossed this Jordan, and now I have become two camps\"."
+            },
+            {
+              "ref": "Lev.16.3",
+              "role": "defining",
+              "note": "\"בְּזֹאת, with this, Aaron shall come into the holy place: בְּפַר, with a young bull for a sin offering\"."
+            },
+            {
+              "ref": "Psa.66.13",
+              "note": "\"I will come into your house בְעוֹלוֹת, with burnt offerings\"."
+            },
+            {
+              "ref": "Mic.6.6",
+              "note": "\"בַּמָּה, with what, shall I come before Yahweh … shall I come before him בְעוֹלוֹת, with burnt offerings?\""
+            }
+          ]
+        },
+        {
+          "id": "be-means",
+          "gloss": "with, by, by means of; through (one who acts)",
+          "definition": "The tool or means an act is done with, the material a thing is made of, and the person through whom or by whom it is done.",
+          "evidence": [
+            {
+              "ref": "Num.20.11",
+              "role": "defining",
+              "note": "\"Moses struck the rock בְּמַטֵּהוּ, with his rod, twice\"."
+            },
+            {
+              "ref": "Zec.4.6",
+              "role": "defining",
+              "note": "\"Not בְחַיִל, by might, nor בְכֹחַ, by power, but בְּרוּחִי, by my Spirit, says Yahweh of hosts.\""
+            },
+            {
+              "ref": "Hos.1.7",
+              "role": "defining",
+              "note": "\"I will save them בַּיהוָה אֱלֹהֵיהֶם, by Yahweh their God, and will not save them בְּקֶשֶׁת וּבְחֶרֶב, by bow or by sword\"."
+            },
+            {
+              "ref": "Gen.9.6",
+              "role": "defining",
+              "note": "\"Whoever sheds man's blood, בָּאָדָם, by man, shall his blood be shed\": the one by whom."
+            },
+            {
+              "ref": "Num.12.2",
+              "role": "defining",
+              "note": "\"Has Yahweh spoken only בְּמֹשֶׁה, by Moses? Has he not spoken בָּנוּ, by us also?\""
+            },
+            {
+              "ref": "Lev.20.2",
+              "note": "\"the people of the land shall stone him בָאָבֶן, with stones\"."
+            },
+            {
+              "ref": "Exo.31.4",
+              "note": "\"to work בַּזָּהָב וּבַכֶּסֶף וּבַנְּחֹשֶׁת, in gold, in silver and in bronze\": the material."
+            },
+            {
+              "ref": "2Sa.23.2",
+              "note": "\"The Spirit of Yahweh spoke בִּי, by me, and his word was on my tongue.\""
+            },
+            {
+              "ref": "Hab.2.4",
+              "note": "\"the righteous shall live בֶּאֱמוּנָתוֹ, by his faith\"; Rom 1:17 and Gal 3:11 have ἐκ πίστεως."
+            },
+            {
+              "ref": "Isa.53.5",
+              "note": "\"וּבַחֲבֻרָתוֹ, and by his stripes, we are healed\"; 1Pe 2:24, \"by whose stripe (τῷ μώλωπι) you were healed\"."
+            },
+            {
+              "ref": "Heb.1.1",
+              "note": "God \"spoke to the fathers ἐν τοῖς προφήταις, in (by) the prophets … in these last days spoke to us ἐν υἱῷ, in (by) a Son\": the Hebrew use."
+            },
+            {
+              "ref": "Dan.2.34",
+              "note": "The Aramaic: \"a stone was cut out דִּי־לָא בִידַיִן, not by hands\"; so Dan 2:45, and Mrk 14:58, \"another not made with hands (ἀχειροποίητον)\"."
+            }
+          ],
+          "senses": [
+            {
+              "id": "be-name",
+              "gloss": "by, in (the name sworn by, called on, or acted in)",
+              "definition": "The name or person appealed to: swearing by Yahweh, calling on his name, blessing or coming in his name, that is, with his authority behind the act.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.16",
+                  "role": "defining",
+                  "note": "\"בִּי נִשְׁבַּעְתִּי, by myself I have sworn, says Yahweh\"; Heb 6:13, \"he swore by (κατά) himself\"."
+                },
+                {
+                  "ref": "Deu.6.13",
+                  "role": "defining",
+                  "note": "\"You shall fear Yahweh your God and serve him, וּבִשְׁמוֹ, and by his name you shall swear.\""
+                },
+                {
+                  "ref": "1Sa.17.45",
+                  "role": "defining",
+                  "note": "\"You come to me בְּחֶרֶב, with a sword … but I come to you בְּשֵׁם יְהוָה צְבָאוֹת, in the name of Yahweh of hosts\": the name set against the weapon."
+                },
+                {
+                  "ref": "Gen.4.26",
+                  "note": "\"Then men began to call בְּשֵׁם יְהוָה, on the name of Yahweh.\""
+                },
+                {
+                  "ref": "1Ki.2.23",
+                  "note": "\"King Solomon swore בַּיהוָה, by Yahweh\"."
+                },
+                {
+                  "ref": "Mat.5.34",
+                  "note": "\"Do not swear at all, neither ἐν τῷ οὐρανῷ, by heaven\": the Hebrew way of swearing \"in\"."
+                },
+                {
+                  "ref": "Ezr.5.1",
+                  "note": "The Aramaic: Haggai and Zechariah prophesied \"בְּשֻׁם אֱלָהּ יִשְׂרָאֵל, in the name of the God of Israel\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "be-price",
+          "gloss": "for, at the cost of; in exchange for",
+          "definition": "The price a thing is bought, served for or exchanged at, and what is forfeited: \"life for life\".",
+          "evidence": [
+            {
+              "ref": "Gen.29.18",
+              "role": "defining",
+              "note": "\"I will serve you seven years בְּרָחֵל, for Rachel your younger daughter.\""
+            },
+            {
+              "ref": "2Sa.24.24",
+              "role": "defining",
+              "note": "\"I will surely buy it from you בִּמְחִיר, at a price … and David bought the threshing floor בְּכֶסֶף, for fifty shekels of silver.\""
+            },
+            {
+              "ref": "Deu.19.21",
+              "role": "defining",
+              "note": "\"נֶפֶשׁ בְּנֶפֶשׁ עַיִן בְּעַיִן, life for life, eye for eye, tooth for tooth\"; Mat 5:38 gives the rule with ἀντί (where Exo 21:24 has תַּחַת)."
+            },
+            {
+              "ref": "Psa.106.20",
+              "role": "defining",
+              "note": "\"They exchanged their glory בְּתַבְנִית שׁוֹר, for the likeness of an ox that eats grass\"; Paul echoes it, \"they exchanged the glory of the incorruptible God ἐν ὁμοιώματι, for a likeness\" (Rom 1:23)."
+            },
+            {
+              "ref": "Hos.12.13",
+              "note": "\"Israel served בְּאִשָּׁה, for a wife, and בְאִשָּׁה, for a wife, he kept sheep\"."
+            },
+            {
+              "ref": "1Ki.2.23",
+              "note": "\"בְנַפְשׁוֹ, at the cost of his life, Adonijah has spoken this word\"."
+            }
+          ]
+        },
+        {
+          "id": "be-cause",
+          "gloss": "because of, for; (with an infinitive) in that, through",
+          "definition": "The cause or ground of an act: destroyed for the lack of five, put to death for one's own sin. Before an infinitive, \"in that\".",
+          "evidence": [
+            {
+              "ref": "Gen.18.28",
+              "role": "defining",
+              "note": "\"Will you destroy בַּחֲמִשָּׁה, for the five, the whole city?\""
+            },
+            {
+              "ref": "Deu.24.16",
+              "role": "defining",
+              "note": "\"Fathers shall not be put to death for sons … אִישׁ בְּחֶטְאוֹ יוּמָתוּ, each shall be put to death for his own sin.\""
+            },
+            {
+              "ref": "Gen.19.16",
+              "role": "defining",
+              "note": "The men seized Lot's hand \"בְּחֶמְלַת יְהוָה עָלָיו, Yahweh being merciful to him\": because of it."
+            },
+            {
+              "ref": "Deu.1.27",
+              "note": "\"בְּשִׂנְאַת יְהוָה אֹתָנוּ, because Yahweh hated us, he brought us out of Egypt\", the people's own complaint."
+            },
+            {
+              "ref": "Isa.28.7",
+              "note": "\"They reel בַּיַּיִן, through wine … they are swallowed up מִן־הַיַּיִן, by (from) wine\": בְּ and מִן side by side for the cause."
+            }
+          ]
+        },
+        {
+          "id": "be-measure",
+          "gloss": "after, according to (a pattern or measure); by (number)",
+          "definition": "The pattern or likeness a thing is made after, and the standard it is measured or counted by.",
+          "evidence": [
+            {
+              "ref": "Gen.1.26",
+              "role": "defining",
+              "note": "\"Let us make man בְּצַלְמֵנוּ כִּדְמוּתֵנוּ, in our image, after our likeness\"; Gen 5:3 turns the prepositions round, Adam begot a son \"בִּדְמוּתוֹ כְּצַלְמוֹ, in his likeness, after his image\", so here בְּ is close to כְּ."
+            },
+            {
+              "ref": "Exo.25.40",
+              "role": "defining",
+              "note": "\"See and make them בְּתַבְנִיתָם, after their pattern, which you were shown on the mountain\"; quoted Heb 8:5, κατὰ τὸν τύπον."
+            },
+            {
+              "ref": "Exo.30.13",
+              "role": "defining",
+              "note": "\"half a shekel בְּשֶׁקֶל הַקֹּדֶשׁ, by the shekel of the sanctuary\"."
+            },
+            {
+              "ref": "Gen.1.27",
+              "note": "\"God created man בְּצַלְמוֹ, in his image, בְּצֶלֶם אֱלֹהִים, in the image of God he created him\"."
+            },
+            {
+              "ref": "Gen.5.1",
+              "note": "\"בִּדְמוּת אֱלֹהִים, in the likeness of God he made him\"."
+            },
+            {
+              "ref": "Deu.25.2",
+              "note": "\"according to his wickedness בְּמִסְפָּר, by number\" of stripes."
+            },
+            {
+              "ref": "Num.26.53",
+              "note": "\"the land shall be divided בְּנַחֲלָה בְּמִסְפַּר שֵׁמוֹת, as an inheritance, by the number of names\"."
+            }
+          ]
+        },
+        {
+          "id": "be-essentiae",
+          "gloss": "as, being (marks what one is or acts as)",
+          "definition": "Before the predicate it marks what a person is or comes as: \"my God was as my help\", \"I appeared as El Shaddai\". English leaves it untranslated or says \"as\".",
+          "evidence": [
+            {
+              "ref": "Exo.18.4",
+              "role": "defining",
+              "note": "\"the God of my father בְּעֶזְרִי, was my help, and delivered me from the sword of Pharaoh\"."
+            },
+            {
+              "ref": "Exo.6.3",
+              "role": "defining",
+              "note": "\"I appeared to Abraham, to Isaac and to Jacob בְּאֵל שַׁדָּי, as El Shaddai, but by my name Yahweh I was not known to them\"."
+            },
+            {
+              "ref": "Isa.40.10",
+              "role": "defining",
+              "note": "\"Behold, the Lord Yahweh בְּחָזָק יָבוֹא, comes as a strong one\"."
+            },
+            {
+              "ref": "Psa.118.7",
+              "note": "\"Yahweh is for me בְּעֹזְרָי, as my helper\"."
+            },
+            {
+              "ref": "Psa.68.5",
+              "note": "\"בְּיָהּ שְׁמוֹ, his name is Yah\"."
+            },
+            {
+              "ref": "Num.26.53",
+              "note": "\"divided בְּנַחֲלָה, as an inheritance\"."
+            },
+            {
+              "ref": "Isa.48.10",
+              "note": "\"I have refined you, but not בְכָסֶף, as silver\"."
+            }
+          ]
+        },
+        {
+          "id": "be-against",
+          "gloss": "against; upon (of blood or guilt)",
+          "definition": "With words of hostility, the one acted against: a hand, speech or war against him. And of blood or guilt, the head it comes down on.",
+          "evidence": [
+            {
+              "ref": "Gen.16.12",
+              "role": "defining",
+              "note": "\"his hand בַכֹּל, against every one, and every one's hand בּוֹ, against him\"."
+            },
+            {
+              "ref": "Num.21.5",
+              "role": "defining",
+              "note": "\"the people spoke בֵּאלֹהִים וּבְמֹשֶׁה, against God and against Moses\"."
+            },
+            {
+              "ref": "Exo.14.25",
+              "role": "defining",
+              "note": "\"Yahweh fights for them בְּמִצְרָיִם, against Egypt\"."
+            },
+            {
+              "ref": "Jos.2.19",
+              "role": "defining",
+              "note": "\"his blood shall be בְרֹאשׁוֹ, on his head\"; compare Mat 27:25, \"his blood be on us (ἐφ᾽ ἡμᾶς)\"."
+            },
+            {
+              "ref": "Num.12.1",
+              "note": "\"Miriam and Aaron spoke בְּמֹשֶׁה, against Moses\"."
+            },
+            {
+              "ref": "Lev.20.9",
+              "note": "\"he has cursed his father and his mother; דָּמָיו בּוֹ, his blood is upon him\"."
+            },
+            {
+              "ref": "Jdg.2.14",
+              "note": "\"the anger of Yahweh burned בְּיִשְׂרָאֵל, against Israel\"."
+            }
+          ]
+        },
+        {
+          "id": "be-object",
+          "gloss": "in, on, over (after verbs of trusting, ruling, delighting, hearing, seeing, touching)",
+          "definition": "After certain verbs it marks the one the act rests on, where English has \"in\", \"over\", \"to\" or a plain object. The verbs fall in groups, below.",
+          "evidence": [
+            {
+              "ref": "Gen.15.6",
+              "role": "defining",
+              "note": "\"וְהֶאֱמִן בַּיהוָה, and he believed in Yahweh, and he counted it to him as righteousness\"; Rom 4:3, ἐπίστευσεν … τῷ θεῷ."
+            }
+          ],
+          "senses": [
+            {
+              "id": "be-trust",
+              "gloss": "in (after trust, believe, take refuge)",
+              "definition": "The one trusted, believed or taken refuge in.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.6",
+                  "role": "defining",
+                  "note": "\"he believed בַּיהוָה, in Yahweh\"."
+                },
+                {
+                  "ref": "Psa.22.5",
+                  "role": "defining",
+                  "note": "\"בְּךָ בָּטְחוּ אֲבֹתֵינוּ, in you our fathers trusted; they trusted and you delivered them\"."
+                },
+                {
+                  "ref": "Psa.118.8",
+                  "role": "defining",
+                  "note": "\"It is better to take refuge בַּיהוָה, in Yahweh, than to trust בָּאָדָם, in man.\""
+                },
+                {
+                  "ref": "Psa.2.12",
+                  "note": "\"Happy are all who take refuge בּוֹ, in him.\""
+                },
+                {
+                  "ref": "Num.14.11",
+                  "note": "\"How long will they not believe בִי, in me?\""
+                },
+                {
+                  "ref": "Dan.6.24",
+                  "note": "The Aramaic: \"no hurt was found on him, because הֵימִן בֵּאלָהֵהּ, he trusted in his God\"."
+                }
+              ]
+            },
+            {
+              "id": "be-rule",
+              "gloss": "over (after rule, have dominion)",
+              "definition": "The one ruled over.",
+              "evidence": [
+                {
+                  "ref": "Jdg.8.23",
+                  "role": "defining",
+                  "note": "\"I will not rule בָּכֶם, over you, nor shall my son rule בָּכֶם, over you; Yahweh shall rule בָּכֶם, over you.\""
+                },
+                {
+                  "ref": "Gen.1.28",
+                  "role": "defining",
+                  "note": "\"וּרְדוּ בִּדְגַת הַיָּם, and have dominion over the fish of the sea and over the birds of the heavens\"; so Gen 1:26."
+                },
+                {
+                  "ref": "Gen.3.16",
+                  "note": "\"he shall rule בָּךְ, over you\"."
+                },
+                {
+                  "ref": "Gen.4.7",
+                  "note": "\"you must rule בּוֹ, over it\"."
+                }
+              ]
+            },
+            {
+              "id": "be-delight",
+              "gloss": "in (after rejoice, delight)",
+              "definition": "The one rejoiced or delighted in.",
+              "evidence": [
+                {
+                  "ref": "Psa.149.2",
+                  "role": "defining",
+                  "note": "\"Let Israel rejoice בְּעֹשָׂיו, in his Maker; let the sons of Zion exult בְמַלְכָּם, in their King.\""
+                },
+                {
+                  "ref": "Isa.61.10",
+                  "role": "defining",
+                  "note": "\"I will greatly rejoice בַּיהוָה, in Yahweh; my soul shall exult בֵּאלֹהַי, in my God\"."
+                },
+                {
+                  "ref": "Psa.22.9",
+                  "note": "\"let him rescue him, for he delights בּוֹ, in him\"; the mockers' words at the cross, \"let him deliver him now, if he wants him\" (Mat 27:43)."
+                },
+                {
+                  "ref": "Psa.18.20",
+                  "note": "\"he rescued me, because he delighted בִּי, in me\"."
+                }
+              ]
+            },
+            {
+              "id": "be-perceive",
+              "gloss": "to, on (after hear, look, gaze)",
+              "definition": "After verbs of hearing and seeing, the one listened to or looked on, often with attention, delight or grief.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.18",
+                  "role": "defining",
+                  "note": "\"because you have listened בְּקֹלִי, to my voice\"."
+                },
+                {
+                  "ref": "Psa.27.4",
+                  "role": "defining",
+                  "note": "\"to gaze בְּנֹעַם יְהוָה, upon the beauty of Yahweh\"."
+                },
+                {
+                  "ref": "Gen.21.16",
+                  "role": "defining",
+                  "note": "\"Let me not look בְּמוֹת הַיָּלֶד, on the death of the child.\""
+                },
+                {
+                  "ref": "Exo.19.5",
+                  "note": "\"if you will indeed listen בְּקֹלִי, to my voice, and keep my covenant\"."
+                },
+                {
+                  "ref": "Psa.118.7",
+                  "note": "\"I shall look בְשֹׂנְאָי, on those who hate me\"."
+                },
+                {
+                  "ref": "Dan.7.8",
+                  "note": "The Aramaic: \"I was considering בְּקַרְנַיָּא, the horns\"."
+                }
+              ]
+            },
+            {
+              "id": "be-touch",
+              "gloss": "to, on (after cleave, touch, take hold)",
+              "definition": "What is touched, held or clung to.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.24",
+                  "role": "defining",
+                  "note": "\"and shall cleave בְּאִשְׁתּוֹ, to his wife\"."
+                },
+                {
+                  "ref": "Gen.3.3",
+                  "role": "defining",
+                  "note": "\"you shall not touch בּוֹ, it, lest you die\"."
+                },
+                {
+                  "ref": "Gen.25.26",
+                  "note": "\"his hand was holding בַּעֲקֵב עֵשָׂו, on to Esau's heel\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "be-concessive",
+          "gloss": "for all, in spite of",
+          "definition": "With \"all\", what something happens in spite of: \"for all this\".",
+          "evidence": [
+            {
+              "ref": "Num.14.11",
+              "role": "defining",
+              "note": "\"How long will they not believe in me, בְּכֹל הָאֹתוֹת, for all the signs which I have done among them?\""
+            },
+            {
+              "ref": "Isa.9.11",
+              "role": "defining",
+              "note": "\"בְּכָל־זֹאת, for all this, his anger is not turned away, and his hand is stretched out still\"; so Isa 9:16, 20; 10:4."
+            },
+            {
+              "ref": "Psa.78.32",
+              "note": "\"בְּכָל־זֹאת, for all this, they sinned still, and did not believe in his wonders\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐν",
+          "gloss": "in, among, at; by, with",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 1:1 word 1",
+              "note": "ἐν ἀρχῇ for בְּרֵאשִׁית; ἐν is the Septuagint's rendering in about 8,600 of its aligned uses of בְּ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 118:26 word 3",
+              "note": "ἐν ὀνόματι κυρίου for בְּשֵׁם יְהוָה."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "2SA 23:2 word 4",
+              "note": "ἐλάλησεν ἐν ἐμοί for דִּבֶּר־בִּי."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 106:20 word 4",
+              "note": "ἐν ὁμοιώματι for בְּתַבְנִית."
+            },
+            {
+              "ref": "Jhn.1.1",
+              "note": "Ἐν ἀρχῇ: Gen 1:1."
+            },
+            {
+              "ref": "Mat.21.9",
+              "note": "\"Blessed is he who comes ἐν ὀνόματι κυρίου\": Psa 118:26."
+            },
+            {
+              "ref": "Gal.3.8",
+              "note": "\"In you (ἐν σοί) shall all the nations be blessed\": Gen 12:3."
+            },
+            {
+              "ref": "Rom.1.23",
+              "note": "\"exchanged the glory … ἐν ὁμοιώματι\": Psa 106:20, the price sense in Greek dress."
+            },
+            {
+              "ref": "Heb.1.1",
+              "note": "God spoke ἐν τοῖς προφήταις … ἐν υἱῷ: the instrumental בְּ of 2Sa 23:2 and Num 12:2."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπί",
+          "gloss": "on, upon; (trust) in",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 22:5 word 1",
+              "note": "ἐπὶ σοὶ ἤλπισαν for בְּךָ בָּטְחוּ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "2SA 22:3 word 4",
+              "note": "πεποιθὼς ἔσομαι ἐπ᾽ αὐτῷ for אֶחֱסֶה־בּוֹ."
+            },
+            {
+              "ref": "Heb.2.13",
+              "note": "\"I will put my trust ἐπ᾽ αὐτῷ, in him\": the Greek of 2Sa 22:3 (and Isa 8:17)."
+            }
+          ]
+        },
+        {
+          "lemma": "κατά",
+          "gloss": "according to, after; by (in oaths)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 25:40 word 3",
+              "note": "κατὰ τὸν τύπον for בְּתַבְנִיתָם."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 1:26 word 5",
+              "note": "κατ᾽ εἰκόνα for בְּצַלְמֵנוּ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 22:16 word 2",
+              "note": "κατ᾽ ἐμαυτοῦ ὤμοσα for בִּי נִשְׁבַּעְתִּי."
+            },
+            {
+              "ref": "Heb.8.5",
+              "note": "\"make all things κατὰ τὸν τύπον, after the pattern\": Exo 25:40."
+            },
+            {
+              "ref": "Heb.6.13",
+              "note": "\"he swore καθ᾽ ἑαυτοῦ, by himself\": Gen 22:16."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀντί",
+          "gloss": "for, in exchange for",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 19:21 word 5",
+              "note": "ψυχὴν ἀντὶ ψυχῆς for נֶפֶשׁ בְּנֶפֶשׁ."
+            },
+            {
+              "ref": "Mat.5.38",
+              "note": "\"an eye ἀντί an eye\": the rule of Deu 19:21 (and Exo 21:24, with תַּחַת)."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐκ",
+          "gloss": "out of, by",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "HAB 2:4 word 8",
+              "note": "ἐκ πίστεως for בֶּאֱמוּנָתוֹ."
+            },
+            {
+              "ref": "Rom.1.17",
+              "note": "\"the righteous shall live ἐκ πίστεως, by faith\": Hab 2:4."
+            },
+            {
+              "ref": "Gal.3.11",
+              "note": "The same quotation."
+            }
+          ]
+        },
+        {
+          "lemma": "διά",
+          "gloss": "through",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 14:29 word 4",
+              "note": "διὰ ξηρᾶς for בַיַּבָּשָׁה."
+            },
+            {
+              "ref": "Heb.11.29",
+              "note": "\"they passed through the Red Sea as διὰ ξηρᾶς, through dry land\": Exo 14:29."
+            }
+          ]
+        },
+        {
+          "lemma": "ὁ",
+          "gloss": "the article in the dative: in, to (the Greek case doing the work)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 15:6 word 2",
+              "note": "ἐπίστευσεν … τῷ θεῷ for וְהֶאֱמִן בַּיהוָה."
+            },
+            {
+              "ref": "Rom.4.3",
+              "note": "\"Abraham believed God (τῷ θεῷ)\": Gen 15:6."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כְּ",
+            "note": "\"In\" a likeness and \"as\" a likeness are close: Gen 1:26 has בְּצַלְמֵנוּ כִּדְמוּתֵנוּ and Gen 5:3 בִּדְמוּתוֹ כְּצַלְמוֹ, the two prepositions changing places.",
+            "evidence": [
+              {
+                "ref": "Gen.1.26"
+              },
+              {
+                "ref": "Gen.5.3"
+              }
+            ]
+          },
+          {
+            "lemma": "מִן",
+            "note": "Both can give the cause: \"they reel בַּיַּיִן, through wine … they are swallowed up מִן־הַיַּיִן, of wine\".",
+            "evidence": [
+              {
+                "ref": "Isa.28.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּיוֹם / בַּיּוֹם הַהוּא",
+            "gloss": "in the day that, when; on that day",
+            "evidence": [
+              {
+                "ref": "Gen.2.17",
+                "role": "defining",
+                "note": "\"בְּיוֹם אֲכָלְךָ מִמֶּנּוּ, in the day you eat of it, you shall surely die\"."
+              },
+              {
+                "ref": "Gen.2.4",
+                "note": "\"בְּיוֹם עֲשׂוֹת יְהוָה אֱלֹהִים, in the day that Yahweh God made earth and heavens\"."
+              },
+              {
+                "ref": "Jer.17.24",
+                "note": "\"בְּיוֹם הַשַּׁבָּת, on the sabbath day\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּתוֹךְ",
+            "gloss": "in the midst of, among",
+            "evidence": [
+              {
+                "ref": "Gen.2.9",
+                "role": "defining",
+                "note": "\"the tree of life in the midst of the garden\"."
+              },
+              {
+                "ref": "Exo.25.8",
+                "role": "defining",
+                "note": "\"Let them make me a sanctuary, וְשָׁכַנְתִּי בְּתוֹכָם, that I may dwell among them.\""
+              },
+              {
+                "ref": "Lev.26.12",
+                "note": "\"I will walk בְּתוֹכְכֶם, among you, and be your God\"; quoted 2Co 6:16, ἐνοικήσω ἐν αὐτοῖς."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּקֶרֶב",
+            "gloss": "in the midst of, within, among",
+            "evidence": [
+              {
+                "ref": "Exo.17.7",
+                "role": "defining",
+                "note": "\"Is Yahweh בְּקִרְבֵּנוּ, among us, or not?\""
+              },
+              {
+                "ref": "Exo.23.21",
+                "note": "\"my name is בְּקִרְבּוֹ, in him\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּעֵינֵי",
+            "gloss": "in the eyes of, in the judgment of",
+            "evidence": [
+              {
+                "ref": "Gen.6.8",
+                "role": "defining",
+                "note": "\"Noah found favour בְּעֵינֵי יְהוָה, in the eyes of Yahweh.\""
+              },
+              {
+                "ref": "Jdg.21.25",
+                "role": "defining",
+                "note": "\"every man did what was right בְּעֵינָיו, in his own eyes\"."
+              },
+              {
+                "ref": "Gen.19.8",
+                "note": "\"do to them as is good בְּעֵינֵיכֶם, in your eyes\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּאָזְנֵי",
+            "gloss": "in the ears of, in the hearing of",
+            "evidence": [
+              {
+                "ref": "Gen.23.10",
+                "role": "defining",
+                "note": "\"Ephron answered Abraham בְּאָזְנֵי בְנֵי־חֵת, in the hearing of the sons of Heth\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּיַד",
+            "gloss": "by the hand of, through; into the hand (power) of",
+            "evidence": [
+              {
+                "ref": "Exo.9.35",
+                "role": "defining",
+                "note": "\"as Yahweh had spoken בְּיַד־מֹשֶׁה, by the hand of Moses\": the one through whom."
+              },
+              {
+                "ref": "Jdg.2.14",
+                "role": "defining",
+                "note": "\"he gave them בְּיַד שֹׁסִים, into the hand of plunderers\"."
+              },
+              {
+                "ref": "Deu.1.27",
+                "note": "\"to give us בְּיַד הָאֱמֹרִי, into the hand of the Amorites\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּשֵׁם יְהוָה / קָרָא בְּשֵׁם",
+            "gloss": "in the name of Yahweh; call on the name",
+            "evidence": [
+              {
+                "ref": "Gen.12.8",
+                "role": "defining",
+                "note": "Abram built an altar \"and called בְּשֵׁם יְהוָה, on the name of Yahweh\"."
+              },
+              {
+                "ref": "Psa.118.26",
+                "role": "defining",
+                "note": "\"Blessed is he who comes בְּשֵׁם יְהוָה, in the name of Yahweh\"; cried to Jesus, Mat 21:9."
+              },
+              {
+                "ref": "1Sa.17.45",
+                "note": "\"I come to you in the name of Yahweh of hosts\"."
+              },
+              {
+                "ref": "Mat.21.9",
+                "note": "ἐν ὀνόματι κυρίου."
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁמַע בְּקוֹל",
+            "gloss": "listen to the voice of, obey",
+            "evidence": [
+              {
+                "ref": "Gen.22.18",
+                "role": "defining",
+                "note": "\"because you have obeyed my voice\"."
+              },
+              {
+                "ref": "Exo.19.5",
+                "note": "\"if you will indeed obey my voice and keep my covenant\"."
+              },
+              {
+                "ref": "Exo.23.21",
+                "note": "\"Take heed before him and obey בְּקֹלוֹ, his voice\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּאַחֲרִית הַיָּמִים",
+            "gloss": "in the latter end of the days",
+            "evidence": [
+              {
+                "ref": "Gen.49.1",
+                "role": "defining",
+                "note": "\"that I may tell you what shall befall you בְּאַחֲרִית הַיָּמִים, in the latter end of the days\"."
+              },
+              {
+                "ref": "Isa.2.2",
+                "note": "\"in the latter end of the days the mountain of Yahweh's house shall be established at the top of the mountains\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בַּמֶּה / בַּמָּה",
+            "gloss": "by what? how? with what?",
+            "evidence": [
+              {
+                "ref": "Gen.15.8",
+                "role": "defining",
+                "note": "\"Lord Yahweh, בַּמָּה אֵדַע, by what shall I know that I shall inherit it?\""
+              },
+              {
+                "ref": "Mic.6.6",
+                "note": "\"With what shall I come before Yahweh?\""
+              }
+            ]
+          },
+          {
+            "phrase": "בְּזֹאת",
+            "gloss": "by this, hereby; with this",
+            "evidence": [
+              {
+                "ref": "Gen.42.15",
+                "role": "defining",
+                "note": "\"בְּזֹאת תִּבָּחֵנוּ, by this you shall be tested\"."
+              },
+              {
+                "ref": "Lev.16.3",
+                "note": "\"with this Aaron shall come into the holy place\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּכָל־זֹאת",
+            "gloss": "for all this, in spite of this",
+            "evidence": [
+              {
+                "ref": "Isa.9.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.32"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּטֶרֶם",
+            "gloss": "before (literally \"in not yet\")",
+            "evidence": [
+              {
+                "ref": "Gen.27.4",
+                "role": "defining",
+                "note": "\"that my soul may bless you בְּטֶרֶם אָמוּת, before I die\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בַּעֲבוּר / בִּגְלַל",
+            "gloss": "for the sake of, on account of",
+            "evidence": [
+              {
+                "ref": "Gen.8.21",
+                "role": "defining",
+                "note": "\"I will not again curse the ground בַּעֲבוּר הָאָדָם, on account of man\"."
+              },
+              {
+                "ref": "Gen.39.5",
+                "role": "defining",
+                "note": "\"Yahweh blessed the Egyptian's house בִּגְלַל יוֹסֵף, for Joseph's sake\"."
+              },
+              {
+                "ref": "Gen.27.4",
+                "note": "\"בַּעֲבוּר תְּבָרֶכְךָ נַפְשִׁי, so that my soul may bless you\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּאֵין / בִּבְלִי",
+            "gloss": "without, for lack of",
+            "evidence": [
+              {
+                "ref": "Pro.11.14",
+                "role": "defining",
+                "note": "\"בְּאֵין תַּחְבֻּלוֹת, where there is no guidance, a people falls\"."
+              },
+              {
+                "ref": "Deu.4.42",
+                "role": "defining",
+                "note": "\"who kills his neighbour בִּבְלִי־דַעַת, unawares\"."
+              }
+            ]
+          },
+          {
+            "phrase": "פָּנִים בְּפָנִים / עַיִן בְּעַיִן",
+            "gloss": "face to face; eye to eye",
+            "evidence": [
+              {
+                "ref": "Deu.5.4",
+                "role": "defining",
+                "note": "\"פָּנִים בְּפָנִים, face to face, Yahweh spoke with you on the mountain out of the midst of the fire\"."
+              },
+              {
+                "ref": "Num.14.14",
+                "role": "defining",
+                "note": "\"you, Yahweh, are seen עַיִן בְּעַיִן, eye to eye\"."
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁנָה בְשָׁנָה",
+            "gloss": "year by year",
+            "evidence": [
+              {
+                "ref": "1Sa.1.7",
+                "role": "defining",
+                "note": "\"so he did שָׁנָה בְשָׁנָה, year by year, when she went up to the house of Yahweh\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּעוֹדִי",
+            "gloss": "while I yet am, while I live",
+            "evidence": [
+              {
+                "ref": "Psa.104.33",
+                "role": "defining",
+                "note": "\"I will sing to Yahweh בְּחַיָּי, in my life; I will sing praise to my God בְּעוֹדִי, while I have my being\"."
+              }
+            ]
+          },
+          {
+            "phrase": "דָּמוֹ בְרֹאשׁוֹ",
+            "gloss": "his blood be on his head (the guilt is his own)",
+            "evidence": [
+              {
+                "ref": "Jos.2.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.20.9",
+                "note": "\"דָּמָיו בּוֹ, his blood is upon him\"."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בְּמוֹ",
+      "bdb": [
+        "b.ab.ab"
+      ],
+      "cognate_ids": [
+        "uga-b",
+        "sab-b"
+      ],
+      "pos": "preposition",
+      "gloss": "in, through, with (poetic)",
+      "summary": "A longer form of בְּ with an added -mô, found only in poetry: Isaiah (43:2; 44:16, 19), Job (16:4, 5; 19:16; 37:8) and Psa 11:2, as לְמוֹ beside לְ. Ugaritic has the same lengthened bm beside b, and Sabaic b-m and b-mw. The corpus also files Isa 25:10 here, where the written text has במו (read בְּמֵי, \"in the water of\").",
+      "senses": [
+        {
+          "gloss": "in, through; with",
+          "definition": "As בְּ: the element passed through or a thing is in, and the means something is done with.",
+          "evidence": [
+            {
+              "ref": "Isa.43.2",
+              "role": "defining",
+              "note": "\"When you walk בְּמוֹ אֵשׁ, through fire, you shall not be burned\", parallel to בַּמַּיִם, \"through the waters\"."
+            },
+            {
+              "ref": "Isa.44.16",
+              "role": "defining",
+              "note": "\"Half of it he burns בְּמוֹ אֵשׁ, in the fire\"; so Isa 44:19."
+            },
+            {
+              "ref": "Job.16.5",
+              "role": "defining",
+              "note": "\"I would strengthen you בְּמוֹ פִי, with my mouth\"."
+            },
+            {
+              "ref": "Job.16.4",
+              "note": "\"I could shake בְּמוֹ רֹאשִׁי, my head, at you\", parallel to בְּמִלִּים \"with words\"."
+            },
+            {
+              "ref": "Job.19.16",
+              "note": "\"I must entreat him בְּמוֹ פִי, with my mouth\"."
+            },
+            {
+              "ref": "Psa.11.2",
+              "note": "\"to shoot בְּמוֹ אֹפֶל, in darkness, at the upright in heart\"."
+            },
+            {
+              "ref": "Job.37.8",
+              "note": "\"the beast goes בְמוֹ אָרֶב, into its lair\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּ",
+      "lang": "arc",
+      "bdb": [
+        "xb.aa.aa"
+      ],
+      "cognate_ids": [
+        "arc-b",
+        "syc-b"
+      ],
+      "pos": "preposition",
+      "gloss": "in, at; by, with; (after trust) in",
+      "summary": "Scripture's Aramaic has the same preposition with the same range: place, time, means, the name acted in, and the one trusted. With suffixes: בֵּהּ (Dan 5:30; 6:24), בְּהוֹן (Dan 5:2, 3). It is in 225 Aramaic words of the text, 30 of them free forms with a suffix.",
+      "senses": [
+        {
+          "gloss": "in, at (place, time)",
+          "definition": "The place and the time a thing is in.",
+          "evidence": [
+            {
+              "ref": "Dan.2.19",
+              "role": "defining",
+              "note": "\"the secret was revealed to Daniel בְּחֶזְוָא דִי־לֵילְיָא, in a vision of the night\"."
+            },
+            {
+              "ref": "Dan.3.6",
+              "role": "defining",
+              "note": "\"whoever does not fall down and worship, בַּהּ־שַׁעֲתָא, in that hour, shall be cast into the furnace\"."
+            },
+            {
+              "ref": "Dan.2.44",
+              "role": "defining",
+              "note": "\"וּבְיוֹמֵיהוֹן, and in the days of those kings, the God of heaven shall set up a kingdom which shall never be destroyed\"."
+            },
+            {
+              "ref": "Ezr.6.12",
+              "note": "\"this house of God which is בִירוּשְׁלֶם, in Jerusalem\"."
+            },
+            {
+              "ref": "Dan.6.11",
+              "note": "\"his windows open בְּעִלִּיתֵהּ, in his upper room … three times בְיוֹמָא, in the day\"."
+            },
+            {
+              "ref": "Dan.5.30",
+              "note": "\"in that very night\"."
+            }
+          ]
+        },
+        {
+          "gloss": "with, by (means, name)",
+          "definition": "What a thing is done with or by, and the name acted in.",
+          "evidence": [
+            {
+              "ref": "Dan.5.2",
+              "role": "defining",
+              "note": "\"that the king and his lords might drink בְּהוֹן, with them\", the vessels taken from the temple; so Dan 5:3."
+            },
+            {
+              "ref": "Dan.2.34",
+              "role": "defining",
+              "note": "\"a stone was cut out דִּי־לָא בִידַיִן, not by hands\"; so Dan 2:45."
+            },
+            {
+              "ref": "Dan.4.27",
+              "note": "\"Babylon the great which I have built … בִּתְקַף חִסְנִי, by the might of my power\"."
+            },
+            {
+              "ref": "Ezr.5.1",
+              "note": "\"in the name of the God of Israel\"."
+            }
+          ]
+        },
+        {
+          "gloss": "in (after trust); among; against",
+          "definition": "The one trusted in, the company something is among, and the one acted against.",
+          "evidence": [
+            {
+              "ref": "Dan.6.24",
+              "role": "defining",
+              "note": "\"no hurt was found בֵּהּ, on him, because he trusted בֵּאלָהֵהּ, in his God\"; Heb 11:33, those who \"stopped the mouths of lions\" by faith."
+            },
+            {
+              "ref": "Dan.4.32",
+              "role": "defining",
+              "note": "\"he does according to his will בְּחֵיל שְׁמַיָּא, among the host of heaven … and none can strike בִידֵהּ, against his hand\"."
+            },
+            {
+              "ref": "Dan.7.8",
+              "note": "\"I was considering בְּקַרְנַיָּא, the horns\"."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bi",
+      "lang": "ar",
+      "form": "بِ",
+      "translit": "bi- (bī, bika, bihi, bihim)",
+      "gloss": "in, at; with, by means of; with (accompaniment); because of; for (a price), in exchange for; by (in oaths); (before a predicate after a negative) the beth of being",
+      "relation": "cognate",
+      "note": "The same one-letter preposition with nearly the whole Hebrew range: place, instrument, cause, accompaniment, price and exchange, swearing \"by God\", a partitive use (\"drink of\"), and a \"redundant\" b- before the predicate (\"Zeyd is not standing\", laysa Zaydun bi-qāʾimin), the same use as the Hebrew \"beth of being\" (Exo 18:4).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 141, art. ب",
+          "note": "\"It also denotes the employing a thing as an aid or instrument; as in كَتَبْتُ بِالقَلَمِ [I wrote with the reed-pen]\"; \"It also denotes a cause\"; \"concomitance, as syn. with مَعَ\"; \"syn. with فِى before a noun signifying a place or a time\"; \"It also denotes requital … اِشْتَرَيْتُهُ بِأَلْفِ دِرْهَمٍ [I purchased it for a thousand dirhems]\"; \"used to denote swearing … أُقْسِمُ بِٱللّٰهِ\"; \"It also denotes part of a whole\"; redundantly prefixed to the enunciative, لَيْسَ زَيْدٌ بِقَائِمٍ."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic ب (bi-), prep.",
+          "note": "\"denotes an instrument or tool, with, by (a means) … accompaniment … location, within (a place); in; on; at … requital, giving or doing in return; for … marks the predicate of a negative copula\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-b",
+      "lang": "arc",
+      "form": "בְּ־",
+      "translit": "bə-",
+      "gloss": "in, within, on, at, with",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בְּ־ I",
+          "note": "\"prefix (b. h.) in, within, on &c. בו ביום on that day; באותו מקום in that very place\"; בֹּון = בְּהוֹן."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Aramaic ב־ (bə-), prep.",
+          "note": "\"in, at, with\"."
+        }
+      ]
+    },
+    {
+      "id": "syc-b",
+      "lang": "syc",
+      "form": "ܒ",
+      "translit": "b-",
+      "gloss": "in, by, into, among, at, with, against",
+      "relation": "cognate",
+      "note": "The Peshitta's preposition, in both Testaments.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 327, B (root 240), in; by; into; among; at; with; against"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܒ- (bə-), prep.",
+          "note": "\"in, on, upon, at, among, to, into, by, according to, for, because, about, as, against, during … with\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-b",
+      "lang": "phn",
+      "form": "𐤁",
+      "translit": "b-",
+      "gloss": "in; among; in, during (a time); on; from; of (material, origin); of, among (partitive); with; because of; costing, in exchange for; as; in charge of",
+      "relation": "cognate",
+      "note": "Phoenician has almost every Hebrew sense, including the price (\"a girl for a sheep\") and \"as\" before what a thing is given as, the Hebrew \"beth of being\".",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 91–94, B- prep.",
+          "note": "\"1. IN (spacial) … 2. AMONG … 3. IN, ON, DURING (temporal) … 9. WITH … 10. BECAUSE OF … 12. COSTING, WORTH … 14. IN PAYMENT OR EXCHANGE FOR\", KAI 24.8 \"One used to barter a girl for a sheep (bš) and a man for a garment (bswt)\"; \"15. AS (predication, qualification or specification)\", Pyrgi \"as a gift (bmtn)\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-b",
+      "lang": "uga",
+      "form": "𐎁",
+      "translit": "b- /bi-/, by, bm",
+      "gloss": "in (place and direction, time), with, for (price), from; because of",
+      "relation": "cognate",
+      "note": "With suffixes bh, bhm. The lengthened bm answers to Hebrew בְּמוֹ. Ugaritic also joins it to words for \"hand\" and \"midst\" as Hebrew does: bd, byd \"in the hand of\" (בְּיַד), bqrb, btk \"in the midst of\" (בְּקֶרֶב, בְּתוֹךְ).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 78, §56.2–56.21, Preposition b-",
+          "note": "\"The one-consonant prepositions b- 'in,' l- 'to,' and k- 'as' … Variant forms with -m … bm\"; \"bym ḥdṯ 'on the day of the new moon' … The vocalization /bi-/ is indicated by the syllabic cuneiform bi-i\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "pp. 101–102, §66.2–66.4",
+          "note": "\"instrumental: b- 'with'\"; \"time, being in/at: b-\"; \"causal, 'on account of': b-\"; compound prepositions \"bd (b- + *-d- 'hand') and byd 'in/from the hand(s)/power of'; b- + words for 'midst': bqrb, btk\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "pp. 180–181, §93 Glossary, b-",
+          "note": "\"b-, b. /bi/ … variants: by; bm … with suff. bh, bhm, by prep. 'in' (place and direction, time), 'with,' 'for' (price) … 'from' … (H., Aram. b-, Arab. bi-)\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-b",
+      "lang": "sem",
+      "form": "𐩨",
+      "translit": "b-, b-m, b-mw",
+      "gloss": "in, on; by means of; with; in exchange for; by (in invocations)",
+      "relation": "cognate",
+      "note": "Sabaic, Old South Arabian. The variants with -m and -mw answer to Hebrew בְּמוֹ.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 33–34, b-",
+          "note": "\"b- passim; var b-m … var b-mw … IN, ON; BY MEANS OF; WITH; BY … (in invocations) [Cf Ar bi- in these senses; for use with enclitic -m(w), cf Ar bi-ma, Heb be-mō.]\"; local, temporal, instrumental, \"indicating accompaniment\", \"indicating exchange (rare): … 'in exchange for the well-being of their persons'\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-ba",
+      "lang": "gez",
+      "form": "በ",
+      "translit": "ba-",
+      "gloss": "in, with, by",
+      "relation": "cognate",
+      "note": "Recorded from Wiktionary's cognate list only; Dillmann and Leslau not checked.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic ب (bi-), prep., etymology",
+          "note": "\"Ultimately Proto-Semitic *bV- ('with, in, at, among') … cognates with Ugaritic 𐎁 (b), Aramaic ב־, Classical Syriac ܒ-, Hebrew בְּ־ (bə-), Ge'ez በ (bä)\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "blessed-in-the-seed",
+      "statement": "Yahweh's promise says the nations are blessed \"in\" Abraham: \"in you (בְךָ) shall all the families of the earth be blessed\" (Gen 12:3), and \"in your seed (בְזַרְעֲךָ) shall all the nations of the earth be blessed\" (Gen 22:18). Paul quotes the first as \"in you (ἐν σοί)\" (Gal 3:8), says the seed meant is one, \"which is Christ\" (Gal 3:16), and that those baptized into Christ have put on Christ and so are Abraham's seed and heirs of the promise (Gal 3:27-29). So the blessing is not given apart from the seed but in him: a man of the nations is blessed by being found in Christ, which baptism into him brings about.",
+      "evidence": [
+        {
+          "ref": "Gen.12.3"
+        },
+        {
+          "ref": "Gen.22.18"
+        },
+        {
+          "ref": "Gal.3.8"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.27"
+        },
+        {
+          "ref": "Gal.3.29"
+        }
+      ]
+    },
+    {
+      "topic": "god-speaks-through-his-servants",
+      "statement": "Scripture uses בְּ of the one God speaks by. Miriam and Aaron ask, \"Has Yahweh spoken only by (בְּ) Moses? Has he not spoken by (בָּ) us also?\" (Num 12:2); \"the beginning of Yahweh's speaking by (בְּ) Hosea\" (Hos 1:2); David says, \"the Spirit of Yahweh spoke by me (בִּי), and his word was on my tongue\" (2Sa 23:2), and Jesus reads a psalm as David speaking \"by the Holy Spirit\" (Mrk 12:36). Hebrews sets the Son in the same place: God, who spoke to the fathers \"in the prophets\", \"has in these last days spoken to us in a Son (ἐν υἱῷ), whom he appointed heir of all things\" (Heb 1:1-2). In every case the speaker is God and the one he speaks by is the one he sent and appointed: the word the prophets and the Son spoke is God's own word.",
+      "evidence": [
+        {
+          "ref": "Num.12.2"
+        },
+        {
+          "ref": "Hos.1.2"
+        },
+        {
+          "ref": "2Sa.23.2"
+        },
+        {
+          "ref": "Mrk.12.36"
+        },
+        {
+          "ref": "Heb.1.1"
+        },
+        {
+          "ref": "Heb.1.2"
+        }
+      ]
+    },
+    {
+      "topic": "in-the-name-of-yahweh",
+      "statement": "To act \"in\" a name is to act with the authority of the one named. David goes against Goliath not with sword and spear but \"in the name of Yahweh of hosts\" (1Sa 17:45). Of the angel Yahweh sends before Israel he says, \"obey his voice … for my name is in him (בְּקִרְבּוֹ)\" (Exo 23:20-21): the angel is sent, and bears the name of the one who sends him. The psalm's \"blessed is he who comes in the name of Yahweh\" (Psa 118:26) is cried to Jesus as he enters Jerusalem (Mat 21:9), and he says of himself, \"I have come in my Father's name\" (Jhn 5:43). So the one who comes in Yahweh's name is his sent representative, carrying his name and speaking with his authority, as the angel did.",
+      "evidence": [
+        {
+          "ref": "1Sa.17.45"
+        },
+        {
+          "ref": "Exo.23.20"
+        },
+        {
+          "ref": "Exo.23.21"
+        },
+        {
+          "ref": "Psa.118.26"
+        },
+        {
+          "ref": "Mat.21.9"
+        },
+        {
+          "ref": "Jhn.5.43"
+        }
+      ]
+    },
+    {
+      "topic": "the-righteous-live-by-faith",
+      "statement": "Abraham \"believed in (בְּ) Yahweh, and he counted it to him as righteousness\" (Gen 15:6), and Habakkuk is told that \"the righteous shall live by (בְּ) his faith\" (Hab 2:4). The New Testament builds on both: \"Abraham believed God, and it was counted to him for righteousness\" (Rom 4:3), and \"the righteous shall live by faith\" (Rom 1:17; Gal 3:11), set against being justified by law. The one preposition gives both sides: faith rests in Yahweh, and the righteous man's life comes by that faith.",
+      "evidence": [
+        {
+          "ref": "Gen.15.6"
+        },
+        {
+          "ref": "Hab.2.4"
+        },
+        {
+          "ref": "Rom.4.3"
+        },
+        {
+          "ref": "Rom.1.17"
+        },
+        {
+          "ref": "Gal.3.11"
+        }
+      ]
+    }
+  ],
+  "note": "Root investigation (2026-11-14). No root is shown; the entry is keyed by its own consonant ב, as le.json is keyed ל and min.json מנ. (1) The particle is one consonant with a short vowel in every language that has it (Hebrew bə-, Aramaic and Syriac b-, Ugaritic b /bi-/, Phoenician b-, Sabaic b-, Arabic bi-, Ge'ez ba-), and with suffixes is built on that letter alone (בּוֹ, בָּהֶם; Ugaritic bh, bhm; Arabic bihi). Akkadian has none (it uses ina). (2) The proposal from בַּיִת \"house\": Wiktionary's Arabic entry says bi- has a \"likely interrelation with Proto-Semitic *bayt-\", and its Hebrew entry traces *bV- to an Afroasiatic *bǔ \"place\" (Egyptian bw \"place\"). Against it: no form of the preposition in any language shows the y or the t of bayt (Ugaritic bt, Phoenician bt, Arabic bayt, Akkadian bītu all keep the t), the preposition's oldest attested sense range is as wide as its use with \"house\" is narrow, and no dictionary followed (Lane, Segert, Krahmalkov, Biella) derives it from \"house\". A parallel exists (Neo-Assyrian Akkadian bīt \"where\", a conjunction from bītu \"house\", Oracc), showing a word for house can become a word of place, but that is Akkadian and not the b- preposition. So the link is likeness of sound and sense only. בַּיִת has no entry yet (bayin.json leaves b.bo.ad, which carries the 2,320 tokens of בַּיִת, unclaimed); if a bayit entry is written, the proposal could be noted there too. The letter's name בֵּית is from the same word \"house\", but that says nothing of the preposition. Egyptian bw is not recorded as a cognate (the schema allows Egyptian only as a loan). (3) BDB keys: b.ab.aa named (1,386 tokens in the corpus: the 1,327 Hebrew free forms OSHB tags with the bare lemma b, 16 with וְ, 8 of בָּהֵן, 5 Aramaic, and others filed by spelling, among them 12 of בִּי \"please\" and 11 of בָּנוּ \"they built\" (lemma 1129)); b.ab.ab named (9 tokens, 8 of בְּמוֹ and Isa 25:10, Kethiv במו for בְּמֵי); xb.aa.aa named for the Aramaic (178 tokens, but only 30 are Aramaic; the rest are Hebrew surfaces it shares, 136, and 12 of בִּי \"please\", so its count is inflated as min.json's Aramaic key is). Left unclaimed: b.aa.aa (the letter's name, no tokens), b.ab.ac (BDB's cross-reference \"see בֶּן־, see בֵּית\" under בינ, no tokens), and the compounds BDB files elsewhere: בִּגְלַל (b.ae.ag, under גלל), בַּעֲבוּר, בְּטֶרֶם, בְּתוֹךְ, בְּקֶרֶב, בִּבְלִי, entered here only as phrases. Token counts: OSHB tags 15,475 Hebrew words with a lemma segment b (all morphology R), of which 1,361 are free forms (morphology R with only a suffix, a pronoun or the conjunction besides; 1,327 of them with the bare lemma b) and 14,114 are prefixed and counted under their host words; Aramaic 225, 30 free. (4) Sources not consulted: Dillmann and Leslau for Ge'ez በ (Wiktionary only); Payne Smith for ܒ (SEDRA only); CAL for Aramaic; DULAT for Ugaritic; Moabite בּ in the Mesha inscription (no KAI source in sources.json). (5) The senses are illustrated, not exhaustive; the borders between \"in a state\", \"with\" and \"by means of\" are not sharp, and a verse can fit two of them (Exo 15:13; Psa 29:4). Act 3:25 in the TR quotes Gen 22:18 with the plain dative (τῷ σπέρματί σου), not ἐν, so it is not cited for ἐν. Doctrine: four points written evidence-first (blessed-in-the-seed, god-speaks-through-his-servants, in-the-name-of-yahweh, the-righteous-live-by-faith); the reviewer should check the framing of the last sentence of each."
+}
