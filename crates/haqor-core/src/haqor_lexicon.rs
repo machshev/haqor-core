@@ -1458,7 +1458,8 @@ fn same_root(a: &str, b: &str) -> bool {
 
 /// The Old Testament tokens of BDB `key`, as `db lexicon-brief` counts them:
 /// leaving out tokens filed under it by spelling whose own analysis is a verb
-/// of another root BDB has verbs for. `schema` prefixes the runtime
+/// of another root BDB has verbs for. A prefixed particle's tokens include the
+/// words it is prefixed to (`word_proclitic`). `schema` prefixes the runtime
 /// database's tables (`"data."` through a `Bible`, `""` opened directly).
 pub fn bdb_tokens(db: &Connection, schema: &str, key: &str, root: &str) -> rusqlite::Result<usize> {
     const NT_START: i64 = 40 << 16;
@@ -1486,6 +1487,23 @@ pub fn bdb_tokens(db: &Connection, schema: &str, key: &str, root: &str) -> rusql
         if !elsewhere {
             total += n;
         }
+    }
+    // A prefixed particle (the בְּ of בַּיּוֹם) is a use of its own, which the
+    // word it joins is not, so the filter above does not apply. Databases built
+    // before `word_proclitic` count the free forms only.
+    let has_proclitics: bool = db.query_row(
+        &format!(
+            "SELECT EXISTS(SELECT 1 FROM {schema}sqlite_master \
+             WHERE type = 'table' AND name = 'word_proclitic')"
+        ),
+        [],
+        |r| r.get(0),
+    )?;
+    if has_proclitics {
+        let mut stmt = db.prepare_cached(&format!(
+            "SELECT count(*) FROM {schema}word_proclitic WHERE key = ?1 AND ref < ?2"
+        ))?;
+        total += stmt.query_row(rusqlite::params![key, NT_START], |r| r.get::<_, i64>(0))? as usize;
     }
     Ok(total)
 }

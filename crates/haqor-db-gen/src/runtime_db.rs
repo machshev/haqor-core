@@ -376,6 +376,8 @@ pub fn generate_runtime(
         info!("  {dictionary} Klein and Jastrow entries");
         let entries = build_surface_entries(db)?;
         info!("  {entries} (surface, lexicon entry) links from the OSHB lemmas");
+        let proclitics = build_word_proclitics(db)?;
+        info!("  {proclitics} (token, prefixed particle) links");
         copy_syriac(db)?;
 
         let words = build_words(db, &mut builder, &mut reader_glosses)?;
@@ -601,6 +603,16 @@ CREATE TABLE surface_entry(
     PRIMARY KEY(surface_id, key)
 ) WITHOUT ROWID;
 
+-- The particles prefixed to each token (וְ, הַ, בְּ, לְ …), by lexicon entry.
+-- Per token, because one spelling can carry a prefix in one place and not in
+-- another; apart from surface_entry because a prefix is not what the word is.
+CREATE TABLE word_proclitic(
+    key      TEXT    NOT NULL,
+    ref      INTEGER NOT NULL,
+    position INTEGER NOT NULL,
+    PRIMARY KEY(key, ref, position)
+) WITHOUT ROWID;
+
 -- Klein and Jastrow (`source`), keyed by their Sefaria entry id. `body` is the
 -- same span JSON as `lexicon_entry.body`, with `etymology`, `derivatives`,
 -- `plural` and `alternatives` beside the senses, and a `dref` span naming
@@ -693,8 +705,7 @@ CREATE INDEX out.idx_lexicon_entry_root ON lexicon_entry(root);
 CREATE INDEX out.idx_lexicon_entry_norm ON lexicon_entry(norm);
 CREATE INDEX out.idx_lexicon_entry_cons ON lexicon_entry(cons);
 CREATE INDEX out.idx_entry_root_root ON entry_root(root);
-CREATE INDEX out.idx_surface_entry_key ON surface_entry(key);
-CREATE INDEX out.idx_surface_cons ON surface(cons);
+CREATE INDEX out.idx_surface_entry_key ON surface_entry(key);CREATE INDEX out.idx_surface_cons ON surface(cons);
 CREATE UNIQUE INDEX out.idx_dictionary_entry_key ON dictionary_entry(source, key);
 CREATE INDEX out.idx_syriac_lexeme_root ON syriac_lexeme(root_id);
 CREATE INDEX out.idx_syriac_word_lexeme ON syriac_word(lexeme_id);
@@ -1052,9 +1063,10 @@ fn build_surface_entries(db: &Connection) -> Result<usize> {
     Ok(linked)
 }
 
-/// OSHB gives a preposition that carries a pronoun suffix (לָהֶם, בּוֹ) the
-/// bare prefix code as its lemma, with no Strong's number to look up. These
-/// are the dictionary entries those codes stand for.
+/// The dictionary entries OSHB's proclitic codes stand for. A code is the
+/// lemma of a prefix (`l/1755`, לְדֹרֹתֵיכֶם), and the whole lemma of a
+/// preposition that carries only a pronoun suffix (לָהֶם, בּוֹ), which has no
+/// Strong's number to look up. Biblical Aramaic has no prefixed article.
 fn proclitic_key(code: &str, aramaic: bool) -> Option<&'static str> {
     Some(match (code, aramaic) {
         ("l", false) => "l.aa.ab",
@@ -1067,8 +1079,61 @@ fn proclitic_key(code: &str, aramaic: bool) -> Option<&'static str> {
         ("m", true) => "xm.ak.aa",
         ("i", false) => "e.ac.aa",
         ("i", true) => "xe.aa.aa",
+        ("c", false) => "f.ab.aa",
+        ("c", true) => "xf.aa.aa",
+        ("d", false) => ARTICLE,
+        ("s", false) => "v.ab.aa",
         _ => return None,
     })
+}
+
+const ARTICLE: &str = "e.ab.aa";
+
+/// `word_proclitic`: the particles prefixed to each token (וְ, הַ, בְּ, לְ,
+/// כְּ, מִן, הֲ, שֶׁ), from the leading segments of its OSHB lemma. The
+/// article swallowed by a preposition's vowel (בַּיּוֹם, `b/3117` tagged
+/// `HRd/Ncmsa`) is in the morphology alone, as `Rd`.
+///
+/// Per token, not per spelling: one spelling can carry a prefix in one place
+/// and none in another (Aramaic כָּל־קֳבֵל is כְּ + כֹּל, Hebrew כָּל is "all").
+/// And apart from `surface_entry`, which says what a word *is*: the
+/// concordance, word search and quotation alignment read that, and would file
+/// every בְּ-prefixed word under the root ב. Only a particle's own use count
+/// reads this table.
+fn build_word_proclitics(db: &Connection) -> Result<usize> {
+    let mut stmt = db.prepare(
+        "SELECT o.book, o.chapter, o.verse, o.position, o.lemma, o.morph
+         FROM hebrewdb.oshb_primary o WHERE instr(o.lemma, '/') OR instr(o.morph, 'Rd')",
+    )?;
+    let mut insert = db.prepare(
+        "INSERT OR IGNORE INTO out.word_proclitic(key, ref, position) VALUES (?1, ?2, ?3)",
+    )?;
+    let mut rows = stmt.query([])?;
+    let mut linked = 0;
+    while let Some(row) = rows.next()? {
+        let reference = pack_ref(row.get(0)?, row.get(1)?, row.get(2)?);
+        let position: i64 = row.get(3)?;
+        let lemma: String = row.get(4)?;
+        let morph: String = row.get(5)?;
+        let aramaic = morph.starts_with('A');
+        let codes: Vec<&str> = lemma.split('/').collect();
+        let tags: Vec<&str> = morph.get(1..).unwrap_or_default().split('/').collect();
+        for (i, code) in codes[..codes.len() - 1].iter().enumerate() {
+            // The morphology decides between the two ה: 87 interrogatives
+            // (הַמְעַט) carry the article's lemma code but are tagged `Ti`.
+            let code = match (*code, tags.get(i)) {
+                ("d", Some(&"Ti")) => "i",
+                _ => *code,
+            };
+            if let Some(key) = proclitic_key(code, aramaic) {
+                linked += insert.execute(params![key, reference, position])?;
+            }
+            if !aramaic && tags.get(i).is_some_and(|tag| *tag == "Rd") {
+                linked += insert.execute(params![ARTICLE, reference, position])?;
+            }
+        }
+    }
+    Ok(linked)
 }
 
 fn copy_syriac(db: &Connection) -> Result<()> {

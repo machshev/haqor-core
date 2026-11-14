@@ -552,6 +552,58 @@ fn root_surface_reproduces_the_concordance_union() {
         .expect("counting suffixed lamed");
     assert!(lamed > 4_000, "only {lamed} suffixed lamed tokens reach לְ");
 
+    // Prefixed particles are linked per token, to tokens that exist, and stay
+    // out of surface_entry, which the concordance reads as what a word is.
+    let prefix = |key: &str, book: i64, chapter: i64, verse: i64, position: i64| -> bool {
+        db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM rt.word_proclitic
+                           WHERE key = ?1 AND ref = ?2 AND position = ?3)",
+            rusqlite::params![key, pack_ref(book, chapter, verse), position],
+            |row| row.get(0),
+        )
+        .expect("querying word_proclitic")
+    };
+    // Lev 23:14 וְלֶחֶם, הַיּוֹם, לְדֹרֹתֵיכֶם, בְּכֹל. Lev 23:3 וּבַיּוֹם, whose
+    // article is in the morphology alone; לַיהוָה, whose vowel is no article.
+    assert!(prefix("f.ab.aa", 3, 23, 14, 0));
+    assert!(prefix("e.ab.aa", 3, 23, 14, 7));
+    assert!(prefix("l.aa.ab", 3, 23, 14, 16));
+    assert!(prefix("b.ab.aa", 3, 23, 14, 17));
+    assert!(prefix("b.ab.aa", 3, 23, 3, 4));
+    assert!(prefix("e.ab.aa", 3, 23, 3, 4));
+    assert!(prefix("l.aa.ab", 3, 23, 3, 16));
+    assert!(!prefix("e.ab.aa", 3, 23, 3, 16));
+    // Hebrew כָּל is "all", though Aramaic כָּל־קֳבֵל spells כְּ + כֹּל alike.
+    let kaph_on_kol: i64 = db
+        .query_row(
+            "SELECT COUNT(*) FROM rt.word_proclitic p
+             JOIN rt.word w ON w.ref = p.ref AND w.position = p.position
+             JOIN rt.surface s ON s.surface_id = w.surface_id
+             WHERE p.key = 'xk.aa.aa' AND s.text = 'כָּל'",
+            [],
+            |row| row.get(0),
+        )
+        .expect("counting כָּל");
+    assert!(kaph_on_kol < 30, "{kaph_on_kol} כָּל tokens given Aramaic כְּ");
+    let (rows, dangling, in_entry): (i64, i64, i64) = db
+        .query_row(
+            "SELECT COUNT(*),
+                    SUM(NOT EXISTS(SELECT 1 FROM rt.word w
+                                   WHERE w.ref = p.ref AND w.position = p.position)),
+                    (SELECT COUNT(*) FROM rt.surface_entry
+                     WHERE key IN ('f.ab.aa', 'e.ab.aa'))
+             FROM rt.word_proclitic p",
+            [],
+            |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)),
+        )
+        .expect("checking word_proclitic");
+    assert!(rows > 120_000, "only {rows} prefixed particles linked");
+    assert_eq!(
+        dangling, 0,
+        "prefixed particles on tokens that do not exist"
+    );
+    assert_eq!(in_entry, 0, "prefix-only entries leaked into surface_entry");
+
     let _ = std::fs::remove_file(&output);
 }
 
