@@ -8699,9 +8699,11 @@ mod tests {
         // The rootless particle, through its BDB key, prefix and all.
         assert_eq!(id("", "אֲשֶׁר", "").as_deref(), Some("ashar"));
         assert_eq!(id("", "כַּאֲשֶׁר", "כַּ").as_deref(), Some("ashar"));
-        // The covered noun and uncovered preposition share consonants.
+        // The noun and the preposition share consonants and an entry; the
+        // negative, spelled alike unpointed, has its own.
         assert_eq!(id("", "אֵל", "").as_deref(), Some("elah"));
-        assert_eq!(id("", "אֶל", ""), None);
+        assert_eq!(id("", "אֶל", "").as_deref(), Some("elah"));
+        assert_eq!(id("", "אַל", "").as_deref(), Some("el-al"));
         // No entry yet.
         assert_eq!(id("ברא", "", ""), None);
         // Which words of the text the entry is for: the particle is, the name
