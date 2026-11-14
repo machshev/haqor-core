@@ -1,0 +1,965 @@
+{
+  "id": "ha",
+  "root": "ה",
+  "homograph": 2,
+  "status": "draft",
+  "updated": "2026-11-14",
+  "tags": [
+    "grammar",
+    "pointing"
+  ],
+  "gloss": "the; (with time words) this, today; (addressing) O …!; (on a participle or verb) who, which",
+  "summary": "הַ is the article \"the\": one syllable, ha-, prefixed to a noun and doubling its first letter (הַשָּׁמַיִם, הַבַּיִת; before א, ע, ר and often ה, ח, which cannot be doubled, הָ or הֶ). It points out the thing as one the hearer can identify: one already named (\"a ram … and Abraham took the ram\", Gen 22:13), the only one there is (\"the sun had risen on the earth\", Gen 19:23), the kind as a whole (\"man does not live by bread alone\", Deu 8:3), the person spoken to (\"Help, O king!\", 2Sa 14:4), the present time (הַיּוֹם \"today\", Exo 14:13), and, on a participle or verb, \"the one who\" (\"to Yahweh who had appeared to him\", Gen 12:7). An adjective or pointing word with a definite noun takes it too (הַיּוֹם הַזֶּה \"this day\", Lev 23:14), but a personal name, a construct noun and a noun with a suffix never do: they are definite already (אֲרוֹן בְּרִית־יְהוָה, Num 10:33). It is a pointing word with no verb or noun behind it, the same as Phoenician and Moabite h-; whether it was once *han- and is akin to the h- of הֵן, הִנֵּה is argued but not shown, so the entry is keyed by its letter. It is not the interrogative הֲ (ha-interrogative), and the Aramaic of scripture has no such prefix: Aramaic makes a noun definite with the ending -ā (מַלְכָּא \"the king\").",
+  "words": [
+    {
+      "lemma": "הַ",
+      "bdb": [
+        "e.ab.aa"
+      ],
+      "cognate_ids": [
+        "phn-h",
+        "moab-h",
+        "ar-al",
+        "ar-ha",
+        "arc-ha",
+        "akk-annu"
+      ],
+      "pos": "particle",
+      "gloss": "the; this (present); O …!; who, which",
+      "summary": "Written הַ with the next letter doubled, הָ before א, ע, ר (and some ה, ח), הֶ before an unaccented הָ or עָ and before חָ. After the prepositions בְּ, לְ, כְּ the ה drops and its vowel passes to the preposition (בַּבַּיִת \"in the house\", לַמֶּלֶךְ, כַּשֶּׁלֶג); it is written out only 23 times (כְּהַיּוֹם Gen 39:11; בְּהַשָּׁמַיִם Psa 36:6, English 36:5; בְּהַדֶּרֶךְ Neh 9:19), but kept after מִן (מֵהָאָרֶץ). About 30,200 Old Testament tokens: some 23,800 written with ה and 6,400 hidden in a preposition's vowel.",
+      "senses": [
+        {
+          "id": "ha-known",
+          "gloss": "the (one named, or known to the hearer)",
+          "definition": "Marks a thing as one the hearer can already identify: named just before, in view, or known from the situation. A thing is often brought in without it and then taken up with it.",
+          "evidence": [
+            {
+              "ref": "Gen.1.3",
+              "role": "defining",
+              "note": "\"Let there be אוֹר, light\"; then (Gen 1:4) \"God saw הָאוֹר, the light, that it was good\": first mention without the article, the next with it."
+            },
+            {
+              "ref": "Gen.1.4"
+            },
+            {
+              "ref": "Gen.22.13",
+              "role": "defining",
+              "note": "\"behold, אַיִל, a ram … and Abraham went and took הָאַיִל, the ram.\""
+            },
+            {
+              "ref": "Gen.22.7",
+              "note": "\"Behold הָאֵשׁ וְהָעֵצִים, the fire and the wood\", which they had brought (22:6); \"but where is הַשֶּׂה, the lamb?\", the one an offering needs. Abraham answers, \"God will provide himself הַשֶּׂה, the lamb\" (22:8)."
+            },
+            {
+              "ref": "Gen.22.8"
+            },
+            {
+              "ref": "Lev.23.10",
+              "role": "defining",
+              "note": "\"You shall bring עֹמֶר, a sheaf of the firstfruits of your harvest, to the priest\"; then (23:11) \"he shall wave הָעֹמֶר, the sheaf\"."
+            },
+            {
+              "ref": "Lev.23.11"
+            },
+            {
+              "ref": "Num.10.2",
+              "note": "\"Make two silver trumpets\"; thereafter בַּחֲצֹצְרוֹת, \"with the trumpets\" (10:8, 9, 10), the article in the preposition's vowel."
+            },
+            {
+              "ref": "Num.10.8"
+            },
+            {
+              "ref": "Num.10.29",
+              "note": "\"We are journeying אֶל־הַמָּקוֹם, to the place of which Yahweh said, I will give it you\": known by the promise."
+            },
+            {
+              "ref": "Num.10.35",
+              "note": "\"When הָאָרֹן, the ark, set out\": the one ark of 10:33."
+            }
+          ]
+        },
+        {
+          "id": "ha-unique",
+          "gloss": "the (only one there is)",
+          "definition": "Marks what exists once in the hearer's world, so that naming it identifies it: the heavens, the earth, the sun, the moon, the sea; and a single office, the high priest, the king of the land.",
+          "evidence": [
+            {
+              "ref": "Gen.1.1",
+              "role": "defining",
+              "note": "\"God created אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ, the heavens and the earth.\""
+            },
+            {
+              "ref": "Gen.19.23",
+              "role": "defining",
+              "note": "\"הַשֶּׁמֶשׁ, the sun, had risen on הָאָרֶץ, the earth, when Lot came to Zoar.\""
+            },
+            {
+              "ref": "Gen.37.9",
+              "note": "\"הַשֶּׁמֶשׁ וְהַיָּרֵחַ, the sun and the moon, and eleven stars\": the stars, many, have no article."
+            },
+            {
+              "ref": "Num.35.25",
+              "note": "\"until the death of הַכֹּהֵן הַגָּדֹל, the high priest\"."
+            },
+            {
+              "ref": "Lev.23.20",
+              "note": "\"הַכֹּהֵן, the priest, shall wave them\": whichever priest serves, known by his office."
+            }
+          ]
+        },
+        {
+          "id": "ha-class",
+          "gloss": "the (kind as a whole); (in comparisons) as …",
+          "definition": "Marks a noun as standing for its whole kind, or any one of it, not a particular one. Comparisons with כְּ \"as\" usually take it (כַּשֶּׁלֶג \"as snow\"). English often leaves the article out here, and so does the New Testament's Greek.",
+          "evidence": [
+            {
+              "ref": "Deu.8.3",
+              "role": "defining",
+              "note": "\"לֹא עַל־הַלֶּחֶם לְבַדּוֹ יִחְיֶה הָאָדָם, man does not live by bread alone\": bread and man as kinds. Jesus quotes it with no article on either (Mat 4:4)."
+            },
+            {
+              "ref": "Mat.4.4"
+            },
+            {
+              "ref": "Amo.5.19",
+              "role": "defining",
+              "note": "\"As if a man fled from הָאֲרִי, a lion, and הַדֹּב, a bear, met him … and הַנָּחָשׁ, a serpent, bit him\": any lion, bear or serpent."
+            },
+            {
+              "ref": "1Sa.17.34",
+              "note": "\"הָאֲרִי וְאֶת־הַדּוֹב, a lion, or a bear, came and took a lamb\"."
+            },
+            {
+              "ref": "Isa.1.18",
+              "note": "\"they shall be white כַּשֶּׁלֶג, as snow … כַּצֶּמֶר, as wool\": the article in כַּ."
+            },
+            {
+              "ref": "Lev.23.42",
+              "note": "\"כָּל־הָאֶזְרָח בְּיִשְׂרָאֵל, every native in Israel, shall dwell in booths\"."
+            }
+          ]
+        },
+        {
+          "id": "ha-vocative",
+          "gloss": "O …! (the one addressed)",
+          "definition": "Marks a noun as the person or people spoken to, where English says \"O king\". The one addressed is the most definite of all; a name needs no article (\"Joshua\", Zec 3:8), but a title or common noun takes it.",
+          "evidence": [
+            {
+              "ref": "2Sa.14.4",
+              "role": "defining",
+              "note": "The woman of Tekoa \"said to הַמֶּלֶךְ, the king … and said, הוֹשִׁעָה הַמֶּלֶךְ, Help, O king!\": the same word spoken of and spoken to."
+            },
+            {
+              "ref": "1Sa.17.55",
+              "role": "defining",
+              "note": "Abner: \"As your soul lives, הַמֶּלֶךְ, O king, I do not know.\""
+            },
+            {
+              "ref": "Jdg.3.19",
+              "note": "\"I have a secret word for you, הַמֶּלֶךְ, O king.\""
+            },
+            {
+              "ref": "2Ki.6.26",
+              "note": "\"Help, my lord, הַמֶּלֶךְ, O king!\""
+            },
+            {
+              "ref": "Jer.2.31",
+              "note": "\"הַדּוֹר, O generation, you, see the word of Yahweh!\""
+            },
+            {
+              "ref": "Dan.2.4",
+              "note": "Aramaic says it with its definite ending: \"מַלְכָּא, O king, live for ever\", as Hebrew says \"Let my lord הַמֶּלֶךְ David live for ever\" (1Ki 1:31)."
+            },
+            {
+              "ref": "1Ki.1.31"
+            },
+            {
+              "ref": "Mrk.5.41",
+              "note": "The Aramaic ṭalyĕthā, with its definite ending, addressing the girl, is given in Greek as τὸ κοράσιον, \"the girl\", with the article, meaning \"girl!\"."
+            },
+            {
+              "ref": "Mrk.14.36",
+              "note": "\"Αββα ὁ πατήρ\": the Aramaic ʾabbā, addressing the Father, given with the Greek article."
+            }
+          ]
+        },
+        {
+          "id": "ha-present",
+          "gloss": "this (present): הַיּוֹם today, הַפַּעַם this time, הַלַּיְלָה tonight, הַשָּׁנָה this year",
+          "definition": "On a word of time, marks the one the speaker is in, so that it means \"this\": the day is \"today\", the time \"this time\", the night \"tonight\". This pointing \"this\" is the article's force at its plainest.",
+          "evidence": [
+            {
+              "ref": "Exo.14.13",
+              "role": "defining",
+              "note": "\"see the salvation of Yahweh which he will work for you הַיּוֹם, today; for the Egyptians whom you have seen הַיּוֹם, today, you shall never see again\"."
+            },
+            {
+              "ref": "Gen.4.14",
+              "role": "defining",
+              "note": "Cain: \"Behold, you have driven me out הַיּוֹם, this day, from the face of the ground.\""
+            },
+            {
+              "ref": "Deu.30.15",
+              "note": "\"See, I have set before you הַיּוֹם, today, life and good, death and evil.\""
+            },
+            {
+              "ref": "Psa.95.7",
+              "note": "\"הַיּוֹם, today, if you will hear his voice\": Hebrews reads it as \"σήμερον, today\" and presses the word: \"exhort one another daily, while it is called today\" (Heb 3:7, 13, 15; 4:7)."
+            },
+            {
+              "ref": "Heb.3.13"
+            },
+            {
+              "ref": "Gen.2.23",
+              "role": "defining",
+              "note": "\"זֹאת הַפַּעַם, this at last, this time, is bone of my bones.\""
+            },
+            {
+              "ref": "Gen.46.30",
+              "note": "\"Now let me die, הַפַּעַם, this time, since I have seen your face.\""
+            },
+            {
+              "ref": "Exo.9.27",
+              "note": "Pharaoh: \"I have sinned הַפַּעַם, this time.\""
+            },
+            {
+              "ref": "Gen.19.5",
+              "note": "\"the men who came to you הַלַּיְלָה, tonight\"."
+            },
+            {
+              "ref": "Gen.30.15",
+              "note": "\"he shall lie with you הַלַּיְלָה, tonight\"."
+            },
+            {
+              "ref": "Jer.28.16",
+              "role": "defining",
+              "note": "To Hananiah: \"הַשָּׁנָה, this year, you shall die\"; and he died \"in the same year\" (28:17)."
+            }
+          ]
+        },
+        {
+          "id": "ha-relative",
+          "gloss": "who, which, the one who (on a participle; rarely on a perfect)",
+          "definition": "On a participle, makes it a relative clause, \"the one who does\": a description that identifies, like a clause with אֲשֶׁר. In a few places (17 tokens, mostly late books) it stands in the same way on a perfect verb, \"who did\".",
+          "evidence": [
+            {
+              "ref": "Gen.12.7",
+              "role": "defining",
+              "note": "\"he built an altar to Yahweh הַנִּרְאֶה אֵלָיו, who had appeared to him\"."
+            },
+            {
+              "ref": "Deu.8.15",
+              "role": "defining",
+              "note": "Yahweh \"הַמּוֹלִיכְךָ, who led you through the great and terrible wilderness … הַמּוֹצִיא, who brought you water out of the flint rock, הַמַּאֲכִלְךָ, who fed you manna\" (8:15–16)."
+            },
+            {
+              "ref": "Deu.8.16"
+            },
+            {
+              "ref": "Psa.103.3",
+              "note": "\"הַסֹּלֵחַ, who forgives all your iniquities, הָרֹפֵא, who heals all your diseases, הַגּוֹאֵל, who redeems your life from the pit\" (103:3–4)."
+            },
+            {
+              "ref": "Psa.103.4"
+            },
+            {
+              "ref": "Isa.40.22",
+              "note": "\"הַיֹּשֵׁב, he who sits on the circle of the earth … הַנּוֹטֶה, who stretches out the heavens\"."
+            },
+            {
+              "ref": "Num.10.9",
+              "note": "\"against הַצַּר הַצֹּרֵר אֶתְכֶם, the adversary who oppresses you\"."
+            },
+            {
+              "ref": "Num.10.5",
+              "note": "\"הַמַּחֲנוֹת הַחֹנִים קֵדְמָה, the camps that lie on the east\"."
+            },
+            {
+              "ref": "Gen.24.65",
+              "note": "\"Who is the man הַלָּזֶה הַהֹלֵךְ, this one who is walking in the field?\""
+            },
+            {
+              "ref": "1Ki.11.9",
+              "role": "defining",
+              "note": "On a perfect: Yahweh, \"הַנִּרְאָה אֵלָיו פַּעֲמָיִם, who had appeared to him twice\"."
+            },
+            {
+              "ref": "Rut.1.22",
+              "note": "On a perfect: \"Ruth the Moabitess … הַשָּׁבָה, who returned from the country of Moab\" (so Rut 2:6; 4:3)."
+            },
+            {
+              "ref": "Isa.56.3",
+              "note": "\"the son of the foreigner הַנִּלְוָה, who has joined himself to Yahweh\"."
+            },
+            {
+              "ref": "Jos.10.24",
+              "note": "On a perfect: \"the men of war הֶהָלְכוּא אִתּוֹ, who went with him\"."
+            },
+            {
+              "ref": "2Ch.29.36",
+              "note": "On a perfect: \"Hezekiah rejoiced … because of הַהֵכִין הָאֱלֹהִים, what God had prepared for the people\"."
+            }
+          ]
+        },
+        {
+          "id": "ha-attributive",
+          "gloss": "the (repeated on an adjective, ordinal or pointing word: הַיּוֹם הַזֶּה this day)",
+          "definition": "An adjective, ordinal number, demonstrative or pronoun that describes a definite noun takes the article too, so that \"the great light\" is הַמָּאוֹר הַגָּדֹל, \"this day\" הַיּוֹם הַזֶּה, and \"that soul\" הַנֶּפֶשׁ הַהִוא, with the pronoun הוּא as \"that\". An adjective without it, after a definite noun, is said of the noun: \"the day is great\". An ordinal sometimes takes it alone, as in \"the sixth day\" (Gen 1:31).",
+          "evidence": [
+            {
+              "ref": "Gen.1.16",
+              "role": "defining",
+              "note": "\"הַמָּאוֹר הַגָּדֹל, the great light, to rule the day, and הַמָּאוֹר הַקָּטֹן, the lesser light, to rule the night\"."
+            },
+            {
+              "ref": "Gen.29.7",
+              "role": "defining",
+              "note": "\"עוֹד הַיּוֹם גָּדוֹל, the day is yet high\": the adjective without the article is what is said of the noun."
+            },
+            {
+              "ref": "Lev.23.14",
+              "role": "defining",
+              "note": "\"until עֶצֶם הַיּוֹם הַזֶּה, this selfsame day\"."
+            },
+            {
+              "ref": "Lev.23.30",
+              "role": "defining",
+              "note": "\"I will destroy הַנֶּפֶשׁ הַהִוא, that soul, from among its people\": the pronoun with the article is \"that\"."
+            },
+            {
+              "ref": "Num.10.32",
+              "note": "\"הַטּוֹב הַהוּא, that good which Yahweh shall do to us\"."
+            },
+            {
+              "ref": "Num.10.11",
+              "note": "\"בַּשָּׁנָה הַשֵּׁנִית בַּחֹדֶשׁ הַשֵּׁנִי, in the second year, in the second month\"."
+            },
+            {
+              "ref": "Lev.23.6",
+              "note": "\"on the fifteenth day לַחֹדֶשׁ הַזֶּה, of this month\"."
+            },
+            {
+              "ref": "Gen.1.31",
+              "note": "\"יוֹם הַשִּׁשִּׁי, the sixth day\", and \"יוֹם הַשְּׁבִיעִי, the seventh day\" (Gen 2:3), while the first five are counted without it: \"יוֹם אֶחָד, one day\" (1:5), \"יוֹם שֵׁנִי, a second day\" (1:8)."
+            },
+            {
+              "ref": "Gen.2.3"
+            },
+            {
+              "ref": "Gen.1.5"
+            },
+            {
+              "ref": "Rut.1.22",
+              "note": "\"Ruth הַמּוֹאֲבִיָּה, the Moabitess\": a name without the article, its description with it."
+            }
+          ]
+        },
+        {
+          "id": "ha-absent",
+          "gloss": "(not used) on personal names, construct nouns and nouns with a suffix",
+          "definition": "A personal name, a noun bound to a following noun (the construct), and a noun with a pronoun suffix are definite without the article and never take it. A construct chain is definite when its last word is: a name, a suffixed noun, or a noun with the article (מִשְׁכַּן הָעֵדֻת \"the tabernacle of the testimony\"). אָדָם with the article is \"the man\"; without it, it becomes the name Adam.",
+          "evidence": [
+            {
+              "ref": "Num.10.33",
+              "role": "defining",
+              "note": "\"וַאֲרוֹן בְּרִית־יְהוָה, and the ark of the covenant of Yahweh, went before them\": definite through the name, no article. So \"עֲנַן יְהוָה, the cloud of Yahweh\" (10:34)."
+            },
+            {
+              "ref": "Num.10.34"
+            },
+            {
+              "ref": "Num.10.11",
+              "role": "defining",
+              "note": "\"הֶעָנָן, the cloud, was taken up from over מִשְׁכַּן הָעֵדֻת, the tabernacle of the testimony\": the article on the last word only."
+            },
+            {
+              "ref": "Lev.23.27",
+              "note": "\"יוֹם הַכִּפֻּרִים, the day of coverings\"."
+            },
+            {
+              "ref": "Num.10.3",
+              "note": "\"אֶל־פֶּתַח אֹהֶל מוֹעֵד, to the door of the tent of meeting\": a chain used as a name, definite with no article at all."
+            },
+            {
+              "ref": "Gen.2.7",
+              "role": "defining",
+              "note": "\"Yahweh God formed הָאָדָם, the man, of dust\"; but \"Adam knew his wife again\" (4:25) and \"the book of the generations of אָדָם, Adam\" (5:1), with no article, as a name."
+            },
+            {
+              "ref": "Gen.4.25"
+            },
+            {
+              "ref": "Gen.5.1"
+            },
+            {
+              "ref": "Num.3.6",
+              "note": "\"אַהֲרֹן הַכֹּהֵן, Aaron the priest\": the name bare, the title with the article."
+            },
+            {
+              "ref": "Gen.3.15",
+              "note": "\"between זַרְעֲךָ, your seed, and זַרְעָהּ, her seed\": definite by the suffix, with no article."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὁ, ἡ, τό",
+          "gloss": "the",
+          "evidence": [
+            {
+              "ref": "Mat.1.23",
+              "note": "\"ἰδοὺ ἡ παρθένος\" for Isa 7:14 \"הִנֵּה הָעַלְמָה\": the article kept."
+            },
+            {
+              "ref": "Mat.4.4",
+              "note": "\"οὐκ ἐπ᾽ ἄρτῳ μόνῳ ζήσεται ἄνθρωπος\" for Deu 8:3 \"עַל־הַלֶּחֶם … הָאָדָם\": the generic article dropped."
+            },
+            {
+              "ref": "Mat.22.32",
+              "note": "\"ὁ θεὸς Ἀβραάμ\" for Exo 3:6 \"אֱלֹהֵי אַבְרָהָם\": the Greek adds an article where the Hebrew construct is definite without one."
+            },
+            {
+              "ref": "Mrk.12.29",
+              "note": "\"κύριος ὁ θεὸς ἡμῶν\" for Deu 6:4 \"יְהוָה אֱלֹהֵינוּ\": an article for the Hebrew suffix."
+            },
+            {
+              "ref": "Act.3.22",
+              "note": "\"προφήτην, a prophet\", without the article, for Deu 18:15 \"נָבִיא\", as the Hebrew."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 7:14 word 8",
+              "note": "ἡ for the article of הָעַלְמָה."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 8:3 word 28",
+              "note": "ὁ for the article of הָאָדָם; Matthew's Greek drops it."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 12:7 word 15",
+              "note": "τῷ ὀφθέντι for הַנִּרְאֶה: article and participle, \"who appeared\", as the Hebrew."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 10:5 word 5",
+              "note": "αἱ παρεμβάλλουσαι for הַחֹנִים."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 23:30 word 12",
+              "note": "ἡ ψυχή for הַנֶּפֶשׁ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JOB 1:6 word 11",
+              "note": "ὁ διάβολος for הַשָּׂטָן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "1CH 21:1 word 2",
+              "note": "διάβολος with no article for שָׂטָן with none."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "2SA 14:4 word 13",
+              "note": "βασιλεῦ, the Greek vocative with no article, for the vocative הַמֶּלֶךְ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 4:35 word 7",
+              "note": "θεός with no article for הָאֱלֹהִים: \"κύριος ὁ θεός σου, οὗτος θεός ἐστιν\"."
+            }
+          ]
+        },
+        {
+          "lemma": "σήμερον",
+          "gloss": "today (for הַיּוֹם)",
+          "evidence": [
+            {
+              "ref": "Heb.3.7",
+              "note": "Quotes Psa 95:7, \"הַיּוֹם, today, if you will hear his voice\"."
+            },
+            {
+              "ref": "Heb.3.15"
+            },
+            {
+              "ref": "Heb.4.7",
+              "note": "\"he again marks out a certain day, σήμερον, saying in David, Today\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 95:7 word 9",
+              "note": "σήμερον for הַיּוֹם."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 14:13 word 15",
+              "note": "σήμερον for הַיּוֹם."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "הַיּוֹם",
+            "gloss": "today, this day (622 times with the ה written)",
+            "evidence": [
+              {
+                "ref": "Exo.14.13"
+              },
+              {
+                "ref": "Deu.30.15"
+              },
+              {
+                "ref": "Psa.95.7"
+              }
+            ]
+          },
+          {
+            "phrase": "הַיּוֹם הַזֶּה",
+            "gloss": "this (very) day (177 times, 147 with the ה written)",
+            "evidence": [
+              {
+                "ref": "Deu.26.16",
+                "note": "\"הַיּוֹם הַזֶּה, this day, Yahweh your God commands you to do these statutes\"."
+              },
+              {
+                "ref": "Gen.39.11",
+                "note": "\"כְּהַיּוֹם הַזֶּה, about this time\", one of the few places the ה is written after כְּ."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּעֶצֶם הַיּוֹם הַזֶּה",
+            "gloss": "on this selfsame day: a day fixed exactly (18 times)",
+            "evidence": [
+              {
+                "ref": "Gen.7.13",
+                "note": "Noah enters the ark."
+              },
+              {
+                "ref": "Exo.12.41",
+                "note": "At the end of 430 years, \"on this selfsame day all the hosts of Yahweh went out of the land of Egypt\"."
+              },
+              {
+                "ref": "Lev.23.21",
+                "note": "The day of the firstfruits of wheat, a holy convocation."
+              },
+              {
+                "ref": "Lev.23.28",
+                "note": "The day of coverings: \"you shall do no work בְּעֶצֶם הַיּוֹם הַזֶּה\"."
+              },
+              {
+                "ref": "Lev.23.29"
+              },
+              {
+                "ref": "Lev.23.30"
+              },
+              {
+                "ref": "Ezk.40.1",
+                "note": "The day Yahweh's hand came on Ezekiel for the vision of the temple."
+              }
+            ]
+          },
+          {
+            "phrase": "בַּיּוֹם הַהוּא",
+            "gloss": "in that day (208 times; 225 with the article written or in the preposition)",
+            "evidence": [
+              {
+                "ref": "Isa.2.11",
+                "note": "\"Yahweh alone shall be exalted בַּיּוֹם הַהוּא, in that day\"."
+              },
+              {
+                "ref": "Zec.14.9",
+                "note": "\"בַּיּוֹם הַהוּא, in that day, Yahweh shall be one, and his name one\"."
+              }
+            ]
+          },
+          {
+            "phrase": "בְּאַחֲרִית הַיָּמִים",
+            "gloss": "in the end of the days (13 times): the article on the last word of the chain",
+            "evidence": [
+              {
+                "ref": "Gen.49.1"
+              },
+              {
+                "ref": "Isa.2.2"
+              }
+            ]
+          },
+          {
+            "phrase": "הַפַּעַם",
+            "gloss": "this time, now at last (13 times)",
+            "evidence": [
+              {
+                "ref": "Gen.2.23"
+              },
+              {
+                "ref": "Gen.46.30"
+              },
+              {
+                "ref": "Exo.9.27"
+              }
+            ]
+          },
+          {
+            "phrase": "הָאָרֶץ",
+            "gloss": "the land; the earth (1,024 times with ה written, 258 in a preposition's vowel)",
+            "evidence": [
+              {
+                "ref": "Gen.1.1"
+              },
+              {
+                "ref": "Lev.23.10",
+                "note": "\"when you come into הָאָרֶץ, the land, which I give you\"."
+              }
+            ]
+          },
+          {
+            "phrase": "הָעָם",
+            "gloss": "the people (859 times, and 96 in a preposition's vowel)",
+            "evidence": [
+              {
+                "ref": "Exo.32.1"
+              },
+              {
+                "ref": "1Ki.18.39"
+              }
+            ]
+          },
+          {
+            "phrase": "הָאֱלֹהִים",
+            "gloss": "the God, the true God (374 times, and twice in a preposition's vowel)",
+            "evidence": [
+              {
+                "ref": "1Ki.18.39"
+              },
+              {
+                "ref": "Deu.4.35"
+              },
+              {
+                "ref": "Gen.22.1",
+                "note": "\"וְהָאֱלֹהִים נִסָּה, and God tested Abraham\"."
+              }
+            ]
+          },
+          {
+            "phrase": "הַכֹּהֵן",
+            "gloss": "the priest (576 times with the plural, and 54 in a preposition's vowel); הַכֹּהֵן הַגָּדוֹל the high priest",
+            "evidence": [
+              {
+                "ref": "Lev.23.11"
+              },
+              {
+                "ref": "Num.35.25"
+              },
+              {
+                "ref": "Zec.3.1",
+                "note": "\"יְהוֹשֻׁעַ הַכֹּהֵן הַגָּדוֹל, Joshua the high priest\"."
+              }
+            ]
+          },
+          {
+            "phrase": "הַמֶּלֶךְ",
+            "gloss": "the king; (addressing him) O king (1,120 times, and 113 in a preposition's vowel)",
+            "evidence": [
+              {
+                "ref": "2Sa.14.4"
+              },
+              {
+                "ref": "1Sa.17.55"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-h",
+      "lang": "phn",
+      "form": "𐤄",
+      "translit": "h-",
+      "gloss": "the (definite article); who, which (on a participle or perfect); O …! (vocative)",
+      "relation": "cognate",
+      "note": "The same article with the same uses, one by one: with a noun, with a noun taken generically, on an adjective after a definite noun (ym h-ḥmšy \"the fifth day\", as Hebrew יוֹם הַשִּׁשִּׁי), on demonstratives in late Punic, introducing a relative clause on a participle and on a perfect (ʾnk ʾztwd h-brk bʿl \"I am Azatiwada, whom Baal blessed\"), and as a vocative. In Punic it is also written ʾ- and pronounced with the next consonant doubled, as Hebrew; Krahmalkov takes both shapes to come from a West Semitic pointing word *han-.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 153–154, H- pron. THE (definite article), uses 1–10",
+          "note": "KAI 26 A II 9 wbn ʾnk hqrt z \"I built this city\"; KAI 76 B 1 ym hʾrbʿy \"the fourth day\"; KAI 26 A I 1 ʾnk ʾztwd hbrk bʿl \"I am Aztwadda, whom Baal blessed\"; KAI 165 \"Tarry, O passer-by\"."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 24–25, ʾ- = H-, pr. THE",
+          "note": "\"The Punic definite article has two, complementary shapes, each a different reflex of the Proto-West Semitic demonstrative *han-\": /iC-/ with gemination of the consonant, and /a:-/ before the laryngeals and pharyngeals."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Punic 𐤄 (h), article",
+          "note": "\"the\"; from Phoenician 𐤄."
+        }
+      ]
+    },
+    {
+      "id": "moab-h",
+      "lang": "sem",
+      "form": "ה",
+      "translit": "h- (Moabite)",
+      "gloss": "the",
+      "relation": "cognate",
+      "note": "Moabite, the closest neighbour of Hebrew, writes the article as Hebrew does, also with a demonstrative after it (הבמת זאת \"this high place\", as Hebrew הַבָּמָה הַזֹּאת).",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 3, 24, 26",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 3 ואעש הבמת זאת לכמש בקרחה; line 24 ואמר לכל העמ; line 26 ואנכ עשתי המסלת בארנן."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 3, 24, 26",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"And I made this high place for Kemôš\"; \"And I said to all the people\"; \"I made the high-road by the Arnon.\""
+        }
+      ]
+    },
+    {
+      "id": "ar-al",
+      "lang": "ar",
+      "form": "اَلْ",
+      "translit": "al-",
+      "gloss": "the (particle of determination); (on a participle) who, which",
+      "relation": "possible",
+      "note": "Arabic's article has the Hebrew article's uses almost one for one: a thing known by being mentioned before, or present, or in the mind; اَلْيَوْمَ \"this day, today\" as הַיּוֹם; the whole species; a title used for the one pre-eminent; with يَا أَيُّهَا in addressing (\"O man\"); and, before an active or passive participle, \"he who\" (اَلضَّارِبُ \"he who strikes\"), and in poetry even before a verb, as Hebrew rarely before a perfect. Its l assimilates to many following consonants, doubling them (اَلرَّجُلُ ar-rajul), as the Hebrew article doubles every consonant it can. But its form does not answer the Hebrew's sound for sound: Arabic has ʾ/l where Hebrew has h and doubling, and some Yemenite dialects say am- for it. Lane also records a rare ʾal used for the interrogative hal, the only hint found of article and question particle sharing a form. So the likeness of use is plain, the shared origin only possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 74, art. ال, اَلْ",
+          "note": "\"a particle of determination … equivalent to our article The\"; used \"to distinguish a noun as known\": by being mentioned before, by being conceived in the mind, by being applied to a thing present (\"اَلْيَوْمَ … This day\"); \"to denote the species\"; with يَا أَيُّهَا الرَّجُلُ \"O man\"; \"a conjunct noun in the sense of الَّذِى\" before participles; in the dialect of Himyer امْ for ال; أَلْ فَعَلْتَ \"in the sense of هَلْ فَعَلْتَ\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic ال (al-), article",
+          "note": "\"the\"; etymology \"uncertain\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-ha",
+      "lang": "ar",
+      "form": "هَا",
+      "translit": "hā",
+      "gloss": "lo!, look! (calling attention); prefixed to the demonstrative in هٰذَا hāḏā \"this\"",
+      "relation": "possible",
+      "note": "A pointing h- with a vowel a, as the article's, which Arabic prefixes to its demonstrative (hā + ḏā \"this\"), as Hebrew's article goes before זֶה in הַלָּזֶה. Hebrew's own pointing words with h, הֵן and הִנֵּה \"lo\", הֵנָּה \"hither\", are of the same kind. That the article grew from such a word fits its \"this\" (הַיּוֹם \"today\") but cannot be shown.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3041, art. ه",
+          "note": "\"The هَا, termed تَنْبِيهٌ [calling attention] … When followed by a pronoun, as هو, &c., it is best rendered Lo.\""
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 947, art. ذا",
+          "note": "هَا, \"to give notice, to a person addressed, of something about to be said to him, is prefixed to ذَا … thus you say هٰذَا\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Hebrew ה־ (ha-), article, etym. 1",
+          "note": "\"Possibly akin to Arabic هَا (hā) and هٰذَا (hāḏā, 'this')\"; with an assimilated -n of *han-."
+        }
+      ]
+    },
+    {
+      "id": "arc-ha",
+      "lang": "arc",
+      "form": "הָא",
+      "translit": "hā",
+      "gloss": "this; lo!",
+      "relation": "possible",
+      "note": "The Aramaic of the Talmud and Targums has a pointing הָא \"this\" (and \"lo!\"), and builds \"this\" as hā + dēn (הָדֵין) as Arabic builds hāḏā. Aramaic never made it a prefixed article: its definite noun ends in -ā. Scripture's Aramaic has הָא only as \"lo!\" (Dan 3:25), which is not claimed here.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הָא I",
+          "note": "\"(demonstr. pronoun) this\": Yoma 26a הא שכיחא והא וכ׳ \"the one is a frequent performance, but the other is rare\"."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הָ־ (הַ־)",
+          "note": "The Mishnaic Hebrew article \"(followed by Dagesh forte) the\"; in the Aramaic \"= הָא\"."
+        }
+      ]
+    },
+    {
+      "id": "akk-annu",
+      "lang": "akk",
+      "form": "𒀭𒉡𒌑",
+      "translit": "annû",
+      "gloss": "this",
+      "relation": "possible",
+      "note": "Akkadian has no article, but its demonstrative \"this\" has the n of the proposed *han-, with Akkadian's usual loss of h. If the Hebrew article is *han- with its n assimilated, annû is its kin; if not, it is only a pointing word of like shape. It does not join the article to the pronoun הוּא, whose h Akkadian writes š (šū).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004080, annû [this] DP"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian annûm, adjective",
+          "note": "\"this, these\"; \"Compare Aramaic הָ־ (hā-, 'this') and perhaps Biblical Hebrew הַ(נ)־ (ha(n)-, definite article).\""
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-adversary",
+      "statement": "With the article, הַשָּׂטָן is \"the adversary\" of one scene: seventeen times, in Job 1–2 (Job 1:6; 2:1) and Zec 3:1–2, where the verse gives his part in its own words: \"and הַשָּׂטָן, the adversary, standing at his right hand לְשִׂטְנוֹ, to oppose him\" (Zec 3:1). Without the article שָׂטָן is any opponent, and scripture gives it to men and to Yahweh's own messenger: the angel of Yahweh stood in the way \"לְשָׂטָן, for an adversary\" to Balaam (Num 22:22, 32); the Philistine lords feared David would become one to them (1Sa 29:4); God raised up Hadad and Rezon as adversaries to Solomon (1Ki 11:14, 23); and \"an adversary stood up against Israel and moved David to number Israel\" (1Ch 21:1), where the same account says \"the anger of Yahweh was kindled against Israel, and he moved David\" (2Sa 24:1). Hebrew never puts the article on a personal name: אָדָם is \"the man\" with it (Gen 2:7) and the name Adam without it (Gen 4:25; 5:1). So הַשָּׂטָן is a description, \"the adversary\", the one opposing in that scene, and not a proper name.",
+      "evidence": [
+        {
+          "ref": "Job.1.6"
+        },
+        {
+          "ref": "Job.2.1"
+        },
+        {
+          "ref": "Zec.3.1"
+        },
+        {
+          "ref": "Zec.3.2"
+        },
+        {
+          "ref": "Num.22.22"
+        },
+        {
+          "ref": "Num.22.32"
+        },
+        {
+          "ref": "1Sa.29.4"
+        },
+        {
+          "ref": "1Ki.11.14"
+        },
+        {
+          "ref": "1Ki.11.23"
+        },
+        {
+          "ref": "1Ch.21.1"
+        },
+        {
+          "ref": "2Sa.24.1"
+        },
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Gen.4.25"
+        },
+        {
+          "ref": "Gen.5.1"
+        }
+      ]
+    },
+    {
+      "topic": "one-god",
+      "statement": "On Carmel the question was which is הָאֱלֹהִים, \"the God\": \"If Yahweh is הָאֱלֹהִים, follow him; but if הַבַּעַל, follow him\" (1Ki 18:21), Baal too with the article, \"the master\", a title. Elijah set the test: \"the God who answers by fire, he is הָאֱלֹהִים\" (1Ki 18:24); and when the fire fell, the people said, \"Yahweh, he is הָאֱלֹהִים; Yahweh, he is הָאֱלֹהִים\" (1Ki 18:39). Moses had said the same: \"Yahweh, he is הָאֱלֹהִים; there is none else beside him\" (Deu 4:35, 39). The name Yahweh never takes the article; אֱלֹהִים takes it when it means the one who is God in truth, and the confession joins the name to it. Jesus prays to the Father as \"the only true God\" (Jhn 17:3).",
+      "evidence": [
+        {
+          "ref": "1Ki.18.21"
+        },
+        {
+          "ref": "1Ki.18.24"
+        },
+        {
+          "ref": "1Ki.18.39"
+        },
+        {
+          "ref": "Deu.4.35"
+        },
+        {
+          "ref": "Deu.4.39"
+        },
+        {
+          "ref": "Jhn.17.3"
+        }
+      ]
+    },
+    {
+      "topic": "virgin-birth",
+      "statement": "The sign given to Ahaz points at one woman: \"הִנֵּה הָעַלְמָה, behold, the young woman, shall conceive and bear a son\" (Isa 7:14), with the article, as \"behold, the fire and the wood\" points at what is in view (Gen 22:7). Matthew keeps the article, \"ἰδοὺ ἡ παρθένος\", and says the sign was fulfilled when Mary, before she and Joseph came together, was found with child of the holy spirit (Mat 1:18, 22–23). The article shows a particular woman, not any woman; Matthew names her.",
+      "evidence": [
+        {
+          "ref": "Isa.7.14"
+        },
+        {
+          "ref": "Gen.22.7"
+        },
+        {
+          "ref": "Mat.1.18"
+        },
+        {
+          "ref": "Mat.1.22"
+        },
+        {
+          "ref": "Mat.1.23"
+        }
+      ]
+    },
+    {
+      "topic": "prophet-like-moses",
+      "statement": "Moses' promise has no article: \"נָבִיא, a prophet, from your midst, of your brothers, like me, Yahweh your God will raise up\" (Deu 18:15, 18). By the time of John the Baptist the people spoke of him with the article, as one known: \"Are you ὁ προφήτης, the prophet?\" (Jhn 1:21, 25); \"this is truly the prophet who comes into the world\" (Jhn 6:14; 7:40). Peter, quoting Moses, keeps the Hebrew's \"a prophet\" (Act 3:22) and says God raised him up in Jesus (Act 3:26). So the article in the Gospels marks the one Moses promised, and the promise itself named no one but described him.",
+      "evidence": [
+        {
+          "ref": "Deu.18.15"
+        },
+        {
+          "ref": "Deu.18.18"
+        },
+        {
+          "ref": "Jhn.1.21"
+        },
+        {
+          "ref": "Jhn.1.25"
+        },
+        {
+          "ref": "Jhn.6.14"
+        },
+        {
+          "ref": "Jhn.7.40"
+        },
+        {
+          "ref": "Act.3.22"
+        },
+        {
+          "ref": "Act.3.26"
+        }
+      ]
+    },
+    {
+      "topic": "blessed-in-the-seed",
+      "statement": "The promises speak of \"your seed\" and \"her seed\" (Gen 3:15; 22:18), definite by the suffix, which in Hebrew takes no article. Paul's argument rests on the number, not on an article: \"He does not say, and to seeds, as of many, but as of one, and to your seed, which is Christ\" (Gal 3:16); and the law was added \"until τὸ σπέρμα, the seed, should come to whom the promise was made\" (Gal 3:19), the Greek article pointing back to the seed already named in the promise.",
+      "evidence": [
+        {
+          "ref": "Gen.3.15"
+        },
+        {
+          "ref": "Gen.22.18"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.19"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-14. ROOT INVESTIGATION. No root is viable; the entry is keyed by its own letter ה, as le is keyed ל and ha-interrogative ה. (1) Form: one syllable ha- with the next consonant doubled, or, where the consonant cannot be doubled, the vowel lengthened (הָאָרֶץ) or kept short before ה, ח (virtual doubling). Nothing in scripture's Hebrew shows a longer base: no n or l ever appears, not even before a vowel (הָאָדָם, not *הַנְאָדָם or *הַלְאָדָם). No verb or noun הה/הנן/הלל could give \"the\". (2) The *han- theory: the doubling-or-lengthening pattern is what an assimilated n does in Hebrew (מִן: מִמִּצְרַיִם but מֵאֶרֶץ, exactly as הַמֶּלֶךְ but הָאָרֶץ); Krahmalkov derives the Punic article from a West Semitic demonstrative *han- (pp. 24–25); Akkadian annû \"this\" has the n; Hebrew's own pointing words הֵן, הִנֵּה, הֵנָּה and Ugaritic hn \"behold\" (Segert p. 81, §58.1) share h-n; the South Arabian article is a suffixed -n; and the Dedanite/Lihyanite inscriptions are said to write the article h- but hn- before ʾ and ʿ, where Hebrew lengthens (not checked: no Dedanite, Safaitic or Thamudic source is in sources.json). Against it: מָה \"what\" doubles the next consonant after its shortened vowel (מַה־זֹּאת, Gen 3:13) with no n, so doubling after a short ha- needs no lost consonant; and none of these languages is shown to have had *han- as an article. Evidence: moderate for a pointing h(n)- behind the article; none for a root. (3) The *hal- theory (from Arabic al-) is weaker: Arabic has ʾ, not h; its l is the consonant that assimilates, and some Yemenite dialects say am- (Lane p. 74), so even in Arabic the consonant is not fixed; Hebrew הַלָּז, הַלָּזֶה (in zeh.json) is the article with a pointing l before ז, the same build as Arabic al-la-ḏī, and shows the l as a separate element, not part of the article. (4) Distribution: Ugaritic has no article (Segert p. 51, §52.6: \"There is no definite article in Ugaritic\"; p. 14, §12.3, a conservative feature); Akkadian has none; Aramaic has a suffixed -ā (the emphatic state), Sabaic a suffixed -n, Arabic prefixed al-, Phoenician, Moabite and Hebrew prefixed h-. Each language built its article late and from its own pointing words, which is why the articles do not answer one another sound for sound. Hebrew's is one of the Canaanite group's (Phoenician, Moabite, Hebrew), and only there is the article strictly cognate. (5) The pronoun הוּא: not the same h. Akkadian writes the pronoun šū with š (hu.json), but its \"this\", annû, with no š; the article goes with the pointing words, not with the pronoun. The article does combine with the pronoun to make \"that\" (הַהוּא, Lev 23:30). (6) The interrogative הֲ: not shown to be one word with the article. They differ in form (the interrogative does not double: הֲלֹא, הַלְּבֶן; the two meet only before a shewa or a guttural), in what they attach to (the article to nouns, adjectives, participles; the interrogative to any first word, verbs and particles included), and in distribution: Aramaic has the interrogative הֲ but no prefixed article; Arabic has ʾa-/hal for the question and al- for the article. Lane's rare ʾal for hal (p. 74) is the only hint of a shared form. A common pointing h- behind both, and behind הֵן/הִנֵּה, is possible but nothing shows it; so this entry is homograph 2 and ha-interrogative homograph 1, and no merger is proposed. COUNT: from oshb_primary in data/hebrew.db, splitting lemma and morph on '/'. (a) Lemma segment 'd' with morph Td: 23,804 Hebrew tokens; plus 3 more with lemma 'd' tagged R (2Sa 19:4; Hag 2:6) or Tr (2Ch 29:36, the relative use); plus הָאָטָד Gen 50:10, lemmatized as the name (329) with morph HTd: 23,808 written with ה. The 87 Hebrew segments with lemma 'd' and morph Ti are interrogatives (counted in ha-interrogative), and so are the 5 with lemma 'i' and morph Td; both are left out. 23 of the 23,808 are ה written after בְּ, לְ, כְּ, and 94 after מִן. (b) The article in a preposition's vowel: OSHB writes no 'd' lemma but tags the preposition's morph Rd (בַּ 3,898, לַ 1,904, כַּ 609): 6,411 tokens. Total about 30,219. Aramaic: no Hebrew article; OSHB tags the emphatic ending -א as a separate segment Td 833 times (e.g. אֱלָהַיָּא, Jer 10:11) and 2 Aramaic segments lemma 'd' Ti (Dan 3:14; 6:21) are interrogatives; none is counted. Participles with the article (written or in a preposition): 1,873; perfects with the article: 17 (Gen 18:21; 21:3; 46:27; Jos 10:24; 1Ki 11:9; Isa 56:3; Ezk 26:17; Job 2:11; Rut 1:22; 4:3; Dan 8:1; Ezr 8:25; 10:14, 17; 1Ch 26:28; 29:17; 2Ch 29:36); a few (Gen 18:21; 46:27; Rut 1:22) differ from the feminine participle only by the accent, which OSHB follows. Phrase counts are from the same extraction: הַיּוֹם with ה written 622; הַיּוֹם הַזֶּה 147 written (177 with the preposition forms); בְּעֶצֶם הַיּוֹם הַזֶּה 18 (counting עַד עֶצֶם, Lev 23:14); בַּיּוֹם הַהוּא 208, הַיּוֹם הַהוּא in all 225; הַפַּעַם 13; אַחֲרִית הַיָּמִים 13; הַשָּׂטָן 17 (Job 14, Zec 3). DATABASE: the runtime corpus links the article to no dictionary key: it never stands alone as a surface, so e.ab.aa has no tokens and lexicon-support will show 0 uses, as for the prefixed לְ. BDB keys: e.ab.aa claimed here; e.aa.aa (the letter's name, ה \"Hē, fifth letter\") left unclaimed, as other letter keys are; הַלָּז, הַלָּזֶה, הַלֵּזוּ (e.bk.aa, e.bl.aa, e.bm.aa) are already in zeh.json and left there; Aramaic xe.ab.aa הָא \"lo!\" is a deictic, not the article, and not claimed. NOT CONSULTED: Dedanite/Lihyanite, Safaitic and Thamudic article h-/hn- (needs a source such as Macdonald's or OCIANA's, not in sources.json); Sabaic -n article (Biella has no grammar section on it; SabaWeb not checked); Ge'ez (no article; demonstratives and suffixes serve); a grammar of Classical Arabic for al- (Wright), not in sources.json. The senses are illustrated, not exhaustive."
+}
