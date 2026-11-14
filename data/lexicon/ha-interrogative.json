@@ -1,0 +1,923 @@
+{
+  "id": "ha-interrogative",
+  "root": "ה",
+  "status": "draft",
+  "updated": "2026-11-14",
+  "tags": [
+    "grammar",
+    "question",
+    "speech"
+  ],
+  "gloss": "(interrogative) is it…?, does…?; (הֲלֹא) is it not…?, surely; (הֲ…אִם) … or …?; whether",
+  "summary": "הֲ turns a statement into a question. Prefixed to the first word of a clause, it asks for yes or no (\"Is there a word from Yahweh?\" \"There is\", Jer 37:17), and as often asks what the speaker takes to be plain already: with לֹא, הֲלֹא \"is it not…?\" expects yes (\"Did we not cast three men?\" \"True, O king\", Dan 3:24), and without it the question can expect no (\"Is anything too wonderful for Yahweh?\", Gen 18:14; \"Is Yahweh's hand shortened?\", Num 11:23); with a following אִם it asks \"… or …?\", and after verbs of seeing, knowing and testing it means \"whether\" (Deu 8:2). It is a single syllable with no verb or noun behind it: the same particle is Arabic ʾa- (with ʾ for h, as Arabic also says hayā for ʾayā) and hal, and the הֲ of Daniel's and the Targums' Aramaic, while Ugaritic and Punic mark a yes-no question with no particle at all; so the entry is keyed by its own letter. It is not the article הַ, which doubles the next consonant and stands on nouns and words used as nouns, and which Aramaic lacks (its article is the suffix -ā) though it has this הֲ; that both grew from one pointing h- (as in הֵן, הִנֵּה) is possible, but nothing in the evidence shows it.",
+  "words": [
+    {
+      "lemma": "הֲ",
+      "bdb": [
+        "e.ac.aa"
+      ],
+      "cognate_ids": [
+        "ar-a",
+        "ar-hal",
+        "arc-ha"
+      ],
+      "pos": "particle",
+      "gloss": "is it…?, does…?; (הֲלֹא) is it not…?; (הֲ…אִם) … or …?; whether",
+      "summary": "About 744 uses in the Hebrew (273 of them הֲלֹא), always joined to the first word of its clause: הֲ before most letters (הֲשֹׁמֵר, Gen 4:9), הַ before a guttural or a shewa (הַאַתָּה, Gen 27:21; הַלְּבֶן, Gen 17:17), הֶ before a guttural with qamets (הֶאָנֹכִי, Num 11:12). Once it stands alone: הֲ לַיהוָה, Deu 32:6. A question can also be asked with no particle at all (\"you are my son Esau?\", Gen 27:24, after הַאַתָּה in 27:21), so הֲ marks a question but is not needed for one.",
+      "senses": [
+        {
+          "id": "ha-yes-no",
+          "gloss": "is it…?, does…? (asking yes or no)",
+          "definition": "Asks whether a thing is so, and is answered yes or no, often by repeating the word asked about (\"Is there…?\" \"There is\"; \"Is it you?\" \"I am\").",
+          "evidence": [
+            {
+              "ref": "Jer.37.17",
+              "role": "defining",
+              "note": "Zedekiah: \"הֲיֵשׁ, is there a word from Yahweh?\" Jeremiah: \"יֵשׁ, there is.\""
+            },
+            {
+              "ref": "Jdg.12.5",
+              "role": "defining",
+              "note": "\"הַאֶפְרָתִי אַתָּה, are you an Ephraimite?\" and he said \"No\"."
+            },
+            {
+              "ref": "Gen.29.6",
+              "role": "defining",
+              "note": "\"הֲשָׁלוֹם לוֹ, is it well with him?\" They said \"Well\"."
+            },
+            {
+              "ref": "1Ki.18.7",
+              "role": "defining",
+              "note": "\"הַאַתָּה זֶה אֲדֹנִי אֵלִיָּהוּ, is it you, my lord Elijah?\" and he said \"I am\" (18:8)."
+            },
+            {
+              "ref": "1Ki.18.8"
+            },
+            {
+              "ref": "Gen.43.7",
+              "note": "The brothers report Joseph's questions: \"Is your father yet alive? Have you a brother?\", הַעוֹד … הֲיֵשׁ."
+            },
+            {
+              "ref": "Jdg.13.11",
+              "note": "\"Are you the man who spoke to the woman?\" \"I am.\""
+            },
+            {
+              "ref": "Gen.24.23",
+              "note": "\"Is there room in your father's house for us to lodge?\""
+            },
+            {
+              "ref": "2Ki.9.22",
+              "note": "\"הֲשָׁלוֹם, is it peace, Jehu?\" answered with another question: \"What peace, so long as…?\""
+            },
+            {
+              "ref": "Ezk.37.3",
+              "note": "\"Son of man, הֲתִחְיֶינָה, can these bones live?\" A real question; the prophet answers \"O Lord Yahweh, you know.\""
+            },
+            {
+              "ref": "Gen.3.11",
+              "note": "Yahweh to Adam: \"הֲמִן הָעֵץ, have you eaten of the tree I commanded you not to eat of?\""
+            }
+          ]
+        },
+        {
+          "id": "ha-expect-yes",
+          "gloss": "(הֲלֹא) is it not…?, surely; (pointing to a known fact)",
+          "definition": "With the negative לֹא the question expects the answer yes and calls on the hearer to grant what is plain: \"is it not so?\", in effect \"surely\". It points to what is written, seen or known, and can stand where a statement would.",
+          "evidence": [
+            {
+              "ref": "Dan.3.24",
+              "role": "defining",
+              "note": "The Aramaic: \"הֲלָא, did we not cast three men bound into the fire?\" They answered \"True (יַצִּיבָא), O king.\""
+            },
+            {
+              "ref": "Dan.6.13",
+              "role": "defining",
+              "note": "\"הֲלָא, did you not sign a decree…?\" The king answered \"The thing is certain.\""
+            },
+            {
+              "ref": "Deu.32.6",
+              "role": "defining",
+              "note": "\"הֲלוֹא הוּא אָבִיךָ, is he not your father who bought you?\" followed by statements: \"he made you and established you\"."
+            },
+            {
+              "ref": "1Ki.11.41",
+              "role": "defining",
+              "note": "\"הֲלוֹא הֵם כְּתֻבִים, are they not written in the book of the acts of Solomon?\": a reference to the record, \"they are written\"."
+            },
+            {
+              "ref": "1Sa.20.37",
+              "note": "Jonathan's agreed signal: \"הֲלוֹא, is not the arrow beyond you?\", meaning \"the arrow is beyond you\" (20:22)."
+            },
+            {
+              "ref": "Isa.40.21",
+              "note": "Four times: \"Have you not known? Have you not heard? …\""
+            },
+            {
+              "ref": "Isa.40.28"
+            },
+            {
+              "ref": "Mal.2.10",
+              "note": "\"Have we not all one father? Has not one God created us?\""
+            },
+            {
+              "ref": "Num.12.2",
+              "note": "Miriam and Aaron: \"Has Yahweh spoken only by Moses? הֲלֹא, has he not spoken also by us?\": the first expects no, the second yes."
+            },
+            {
+              "ref": "Num.14.3",
+              "note": "The murmuring at Kadesh: \"הֲלוֹא, would it not be better for us to return to Egypt?\""
+            },
+            {
+              "ref": "Num.22.30",
+              "note": "The donkey: \"הֲלוֹא, am I not your donkey, on which you have ridden…? הַהַסְכֵּן, was I ever wont to do so to you?\" and he said \"No\": the two kinds of question side by side."
+            },
+            {
+              "ref": "1Sa.2.27",
+              "note": "Without לֹא but expecting yes: \"הֲנִגְלֹה נִגְלֵיתִי, did I not plainly reveal myself to your father's house in Egypt?\""
+            },
+            {
+              "ref": "Gen.4.7",
+              "note": "\"הֲלוֹא, if you do well, shall there not be a lifting up?\""
+            }
+          ]
+        },
+        {
+          "id": "ha-expect-no",
+          "gloss": "is it…? (expecting no: denial, reproach, disbelief)",
+          "definition": "The question is put so that the only answer is no: to deny a thing (\"Am I my brother's keeper?\"), to reproach, or, on unbelieving lips, to doubt that God can do what he says. The answer is often given by the speaker or by events.",
+          "evidence": [
+            {
+              "ref": "Gen.18.14",
+              "role": "defining",
+              "note": "\"הֲיִפָּלֵא, is anything too wonderful for Yahweh?\": answered by the birth of Isaac at the set time (Gen 21:1–2)."
+            },
+            {
+              "ref": "Num.11.23",
+              "role": "defining",
+              "note": "\"הֲיַד יַהְוֶה תִּקְצָר, is Yahweh's hand shortened? Now you shall see…\": answered by the quail (11:31)."
+            },
+            {
+              "ref": "Num.11.12",
+              "role": "defining",
+              "note": "Moses: \"הֶאָנֹכִי הָרִיתִי, did I conceive all this people? did I beget them…?\": he did not, so he cannot carry them."
+            },
+            {
+              "ref": "Gen.4.9",
+              "note": "Cain: \"הֲשֹׁמֵר אָחִי אָנֹכִי, am I my brother's keeper?\": a denial."
+            },
+            {
+              "ref": "Num.11.22",
+              "note": "\"הֲצֹאן וּבָקָר, shall flocks and herds be slaughtered for them, to suffice them? or (אִם) shall all the fish of the sea be gathered…?\""
+            },
+            {
+              "ref": "Num.20.10",
+              "note": "\"Hear now, you rebels: הֲמִן הַסֶּלַע, shall we bring you water out of this rock?\""
+            },
+            {
+              "ref": "Isa.44.8",
+              "note": "\"הֲיֵשׁ אֱלוֹהַּ, is there a God beside me?\" answered at once: \"there is no Rock; I know not any.\""
+            },
+            {
+              "ref": "Amo.3.3",
+              "note": "\"Do two walk together unless they have agreed?\""
+            },
+            {
+              "ref": "Amo.5.25",
+              "note": "\"הַזְּבָחִים, did you bring me slain beasts and offerings in the wilderness forty years?\" Quoted in Acts 7:42 with μή."
+            },
+            {
+              "ref": "Exo.2.14",
+              "note": "\"הַלְהָרְגֵנִי, do you mean to kill me as you killed the Egyptian?\" Quoted in Acts 7:28 with μή."
+            },
+            {
+              "ref": "Isa.45.9",
+              "note": "\"הֲיֹאמַר חֹמֶר, shall the clay say to its potter, What are you making?\" Echoed in Rom 9:20 with μή."
+            },
+            {
+              "ref": "Mal.3.8",
+              "note": "\"הֲיִקְבַּע, will a man rob God? Yet you rob me.\""
+            },
+            {
+              "ref": "Jer.32.27",
+              "note": "\"הֲמִמֶּנִּי, is anything too wonderful for me?\", Yahweh's answer to Jeremiah's \"nothing is too wonderful for you\" (32:17)."
+            },
+            {
+              "ref": "Psa.78.19",
+              "note": "Unbelief: \"הֲיוּכַל אֵל, can God prepare a table in the wilderness?\", called testing God (78:18) and not believing in him (78:22)."
+            },
+            {
+              "ref": "Job.38.16",
+              "note": "Yahweh's questions to Job: \"הֲבָאתָ, have you entered the springs of the sea?\""
+            }
+          ],
+          "senses": [
+            {
+              "id": "ha-exclaim",
+              "gloss": "(in astonishment or indignation) what! is it…?",
+              "definition": "A question that is really an exclamation of astonishment, indignation or scorn, often with an infinitive absolute (\"will you indeed reign?\") or with מְעַט \"is it a small thing…?\".",
+              "evidence": [
+                {
+                  "ref": "Gen.37.8",
+                  "role": "defining",
+                  "note": "Joseph's brothers: \"הֲמָלֹךְ תִּמְלֹךְ עָלֵינוּ, will you indeed reign over us?\" and they hated him yet more."
+                },
+                {
+                  "ref": "Exo.10.7",
+                  "role": "defining",
+                  "note": "Pharaoh's servants: \"הֲטֶרֶם תֵּדַע, do you not yet know that Egypt is destroyed?\""
+                },
+                {
+                  "ref": "Num.16.9",
+                  "note": "\"הַמְעַט מִכֶּם, is it a small thing to you that the God of Israel has separated you…?\""
+                },
+                {
+                  "ref": "Num.16.13",
+                  "note": "Dathan and Abiram turn it back: \"הַמְעַט, is it a small thing that you have brought us up … to kill us in the wilderness?\""
+                },
+                {
+                  "ref": "Num.11.29",
+                  "note": "Moses to Joshua: \"הַמְקַנֵּא אַתָּה לִי, are you jealous for my sake?\""
+                },
+                {
+                  "ref": "Est.7.8",
+                  "note": "\"הֲגַם, will he even force the queen before me in the house?\""
+                },
+                {
+                  "ref": "Job.1.9",
+                  "note": "The adversary: \"הַחִנָּם, does Job fear God for nothing?\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ha-or",
+          "gloss": "(הֲ … אִם) … or …?; (הֲ … אִם לֹא) … or not?",
+          "definition": "With אִם before the second half, the question offers two answers to choose between: \"is it this, or that?\"; with אִם לֹא or אִם אַיִן, \"or not?\".",
+          "evidence": [
+            {
+              "ref": "Jos.5.13",
+              "role": "defining",
+              "note": "\"הֲלָנוּ אַתָּה אִם לְצָרֵינוּ, are you for us, or for our adversaries?\""
+            },
+            {
+              "ref": "Exo.17.7",
+              "role": "defining",
+              "note": "Massah and Meribah: \"הֲיֵשׁ יַהְוֶה בְּקִרְבֵּנוּ אִם אָיִן, is Yahweh among us, or not?\": the question by which they tested Yahweh."
+            },
+            {
+              "ref": "Gen.27.21",
+              "role": "defining",
+              "note": "\"הַאַתָּה זֶה בְּנִי עֵשָׂו אִם לֹא, are you my very son Esau, or not?\""
+            },
+            {
+              "ref": "Gen.37.8",
+              "note": "The two halves in parallel: \"will you indeed reign over us, אִם, or will you indeed rule over us?\""
+            },
+            {
+              "ref": "Gen.17.17",
+              "note": "\"הַלְּבֶן, shall a child be born to one a hundred years old? וְאִם, and shall Sarah, ninety years old, bear?\""
+            },
+            {
+              "ref": "Jdg.20.28",
+              "note": "\"Shall I yet again go out to battle … or shall I cease (אִם אֶחְדָּל)?\""
+            }
+          ]
+        },
+        {
+          "id": "ha-whether",
+          "gloss": "whether (in an indirect question)",
+          "definition": "After a verb of seeing, knowing, asking or testing, הֲ brings in the question to be found out: \"to see whether…\", often with אִם לֹא \"or not\".",
+          "evidence": [
+            {
+              "ref": "Deu.8.2",
+              "role": "defining",
+              "note": "Yahweh led Israel forty years in the wilderness \"to test you, to know what was in your heart, הֲתִשְׁמֹר מִצְוֹתָו אִם לֹא, whether you would keep his commandments or not\"."
+            },
+            {
+              "ref": "Gen.8.8",
+              "role": "defining",
+              "note": "Noah sent the dove \"to see הֲקַלּוּ הַמַּיִם, whether the waters were abated\"."
+            },
+            {
+              "ref": "Exo.16.4",
+              "role": "defining",
+              "note": "The manna: \"that I may test them, הֲיֵלֵךְ בְּתוֹרָתִי אִם לֹא, whether they will walk in my law or not\"."
+            },
+            {
+              "ref": "Num.11.23",
+              "note": "\"Now you shall see הֲיִקְרְךָ דְבָרִי אִם לֹא, whether my word shall come to pass for you or not.\""
+            },
+            {
+              "ref": "Num.13.18",
+              "note": "The spies are to see the land \"whether they are strong or weak, few or many\" (הֶחָזָק … הֲרָפֶה, הַמְעַט … אִם רָב), and so on through 13:20."
+            },
+            {
+              "ref": "Num.13.19"
+            },
+            {
+              "ref": "Num.13.20"
+            },
+            {
+              "ref": "Gen.24.21",
+              "note": "\"to know הַהִצְלִיחַ יַהְוֶה דַּרְכּוֹ אִם לֹא, whether Yahweh had prospered his way or not\"."
+            },
+            {
+              "ref": "Jdg.2.22",
+              "note": "The nations left \"to test Israel by them, whether they will keep the way of Yahweh\"."
+            },
+            {
+              "ref": "Gen.37.32",
+              "note": "\"Know now הַכְּתֹנֶת בִּנְךָ הִוא אִם לֹא, whether it is your son's coat or not.\""
+            }
+          ]
+        },
+        {
+          "id": "ha-counsel",
+          "gloss": "shall I…? (asking what to do)",
+          "definition": "With a first-person verb it asks for a decision: put to Yahweh or to a prophet, \"shall I go?\", and answered by a command.",
+          "evidence": [
+            {
+              "ref": "1Sa.23.2",
+              "role": "defining",
+              "note": "David asked of Yahweh: \"הַאֵלֵךְ, shall I go and strike these Philistines?\" Yahweh said \"Go\"."
+            },
+            {
+              "ref": "2Sa.2.1",
+              "role": "defining",
+              "note": "\"הַאֶעֱלֶה, shall I go up into any of the cities of Judah?\" \"Go up.\""
+            },
+            {
+              "ref": "1Sa.30.8",
+              "note": "\"Shall I pursue? הַאַשִּׂגֶנּוּ, shall I overtake them?\" \"Pursue, for you shall surely overtake.\""
+            },
+            {
+              "ref": "Jdg.20.28",
+              "note": "Phinehas asks: \"Shall I yet again go out…?\" \"Go up.\""
+            },
+            {
+              "ref": "1Ki.22.6",
+              "note": "Ahab to the prophets: \"הַאֵלֵךְ, shall I go against Ramoth-gilead, or shall I forbear?\""
+            },
+            {
+              "ref": "2Ki.6.21",
+              "note": "\"הַאַכֶּה אַכֶּה, my father, shall I strike them?\""
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μή",
+          "gloss": "(in a question expecting no) surely not…?",
+          "evidence": [
+            {
+              "ref": "Act.7.42",
+              "note": "Stephen quotes Amo 5:25: \"μή, did you offer me slain beasts and sacrifices forty years in the wilderness?\""
+            },
+            {
+              "ref": "Act.7.28",
+              "note": "Quotes Exo 2:14: \"μή, do you want to kill me as you killed the Egyptian yesterday?\""
+            },
+            {
+              "ref": "Rom.9.20",
+              "note": "\"μή, shall the thing formed say to him that formed it, Why have you made me thus?\": Isa 45:9."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "AMO 5:25 word 1",
+              "note": "μή for הַזְּבָחִים."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 2:14 word 8",
+              "note": "μή for הַלְהָרְגֵנִי."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 45:9 word 9",
+              "note": "μή for הֲיֹאמַר."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 18:14 word 1",
+              "note": "μή for הֲיִפָּלֵא."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 11:23 word 5",
+              "note": "μή for הֲיַד."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JDG 12:5 word 17",
+              "note": "μή for a real question, answered \"No\"."
+            }
+          ]
+        },
+        {
+          "lemma": "οὐ",
+          "gloss": "(in a question expecting yes) not…?",
+          "evidence": [
+            {
+              "ref": "Rom.9.21",
+              "note": "\"ἢ οὐκ, or has not the potter power over the clay…?\": the question of Jer 18:6, \"הֲכַיּוֹצֵר … לֹא, can I not do with you as this potter?\""
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 4:7 word 1",
+              "note": "οὐκ for הֲלוֹא."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 32:6 word 9",
+              "note": "οὐκ for הֲלוֹא, \"is he not your father?\""
+            }
+          ]
+        },
+        {
+          "lemma": "εἰ",
+          "gloss": "whether; (in a direct question) is it…?",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 8:8 word 6",
+              "note": "εἰ, \"whether\", for הֲקַלּוּ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 24:21 word 6",
+              "note": "εἰ … ἢ οὔ for הַ… אִם לֹא."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 17:7 word 15",
+              "note": "εἰ … ἢ οὔ for הֲיֵשׁ … אִם אָיִן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 11:23 word 10",
+              "note": "εἰ, \"whether my word shall overtake you\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "1KI 18:7 word 12",
+              "note": "εἰ in a direct question: \"is it you?\""
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "AMO 3:3 word 1",
+              "note": "εἰ in a direct question."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "הֲלֹא / הֲלוֹא",
+            "gloss": "is it not…?, surely (273 times)",
+            "evidence": [
+              {
+                "ref": "Deu.32.6"
+              },
+              {
+                "ref": "Isa.40.21"
+              },
+              {
+                "ref": "Mal.2.10"
+              },
+              {
+                "ref": "Num.14.3"
+              },
+              {
+                "ref": "Gen.13.9",
+                "note": "\"הֲלֹא, is not the whole land before you?\""
+              }
+            ]
+          },
+          {
+            "phrase": "הֲלֹא הִיא כְתוּבָה / הֲלֹא הֵם כְּתוּבִים עַל סֵפֶר",
+            "gloss": "is it not (are they not) written in the book of…?: the record cited",
+            "evidence": [
+              {
+                "ref": "Jos.10.13",
+                "note": "\"Is it not written in the book of Jashar?\""
+              },
+              {
+                "ref": "1Ki.11.41"
+              }
+            ]
+          },
+          {
+            "phrase": "הֲ… אִם / הֲ… אִם לֹא",
+            "gloss": "… or …?; whether … or not",
+            "evidence": [
+              {
+                "ref": "Jos.5.13"
+              },
+              {
+                "ref": "Exo.17.7"
+              },
+              {
+                "ref": "Exo.16.4"
+              },
+              {
+                "ref": "Num.11.23"
+              }
+            ]
+          },
+          {
+            "phrase": "הַאִם",
+            "gloss": "is it (then) that…?, shall we indeed…? (twice)",
+            "evidence": [
+              {
+                "ref": "Num.17.28",
+                "note": "After Korah: \"הַאִם תַּמְנוּ לִגְוֹעַ, shall we all perish utterly?\""
+              },
+              {
+                "ref": "Job.6.13"
+              }
+            ]
+          },
+          {
+            "phrase": "הֲכִי",
+            "gloss": "is it (really) that…?, is it because…? (five times)",
+            "evidence": [
+              {
+                "ref": "Gen.27.36",
+                "note": "\"הֲכִי, is he not rightly named Jacob? for he has supplanted me twice.\""
+              },
+              {
+                "ref": "Gen.29.15",
+                "note": "\"Because you are my brother, should you serve me for nothing?\""
+              },
+              {
+                "ref": "2Sa.9.1",
+                "note": "\"הֲכִי יֶשׁ עוֹד, is there yet anyone left of the house of Saul?\""
+              }
+            ]
+          },
+          {
+            "phrase": "הֲגַם",
+            "gloss": "is … also…?, will he even…? (eight times)",
+            "evidence": [
+              {
+                "ref": "1Sa.10.11",
+                "note": "\"הֲגַם שָׁאוּל בַּנְּבִיאִים, is Saul also among the prophets?\" (again 10:12; 19:24)."
+              },
+              {
+                "ref": "Psa.78.20",
+                "note": "\"Lo (הֵן), he struck the rock … הֲגַם, can he give bread also?\""
+              },
+              {
+                "ref": "Est.7.8"
+              }
+            ]
+          },
+          {
+            "phrase": "הֲטֶרֶם",
+            "gloss": "(do you) not yet…? (once)",
+            "evidence": [
+              {
+                "ref": "Exo.10.7"
+              }
+            ]
+          },
+          {
+            "phrase": "הֲיֵשׁ",
+            "gloss": "is there…? (twenty times)",
+            "evidence": [
+              {
+                "ref": "Jer.37.17"
+              },
+              {
+                "ref": "Gen.43.7"
+              },
+              {
+                "ref": "Isa.44.8"
+              }
+            ]
+          },
+          {
+            "phrase": "הֲשָׁלוֹם",
+            "gloss": "is it well?, is it peace? (fourteen times)",
+            "evidence": [
+              {
+                "ref": "Gen.29.6"
+              },
+              {
+                "ref": "2Ki.4.26",
+                "note": "\"Is it well with you? with your husband? with the child?\" \"It is well.\""
+              },
+              {
+                "ref": "2Ki.9.22"
+              }
+            ]
+          },
+          {
+            "phrase": "הַעוֹד",
+            "gloss": "is … still…? (ten times)",
+            "evidence": [
+              {
+                "ref": "Gen.45.3",
+                "note": "\"I am Joseph; הַעוֹד אָבִי חָי, is my father still alive?\""
+              },
+              {
+                "ref": "Gen.43.27"
+              },
+              {
+                "ref": "Exo.4.18"
+              }
+            ]
+          },
+          {
+            "phrase": "הַמְעַט",
+            "gloss": "is it a small thing…? (nine times)",
+            "evidence": [
+              {
+                "ref": "Num.16.9"
+              },
+              {
+                "ref": "Isa.7.13",
+                "note": "\"הַמְעַט מִכֶּם, is it a small thing for you to weary men, that you will weary my God also?\""
+              },
+              {
+                "ref": "Gen.30.15"
+              }
+            ]
+          },
+          {
+            "phrase": "הַאַף",
+            "gloss": "will you indeed…? (six times)",
+            "evidence": [
+              {
+                "ref": "Gen.18.23",
+                "note": "\"הַאַף תִּסְפֶּה, will you indeed sweep away the righteous with the wicked?\""
+              },
+              {
+                "ref": "Job.40.8"
+              }
+            ]
+          },
+          {
+            "phrase": "הַאַתָּה (זֶה)",
+            "gloss": "is it you…?, are you…? (ten times)",
+            "evidence": [
+              {
+                "ref": "1Ki.18.7"
+              },
+              {
+                "ref": "Jdg.13.11"
+              },
+              {
+                "ref": "Gen.27.21"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "אִם",
+            "note": "The partner of הֲ in a double question: הֲ opens the first half and אִם the second, as Arabic ʾa- … ʾam (see im).",
+            "evidence": [
+              {
+                "ref": "Gen.37.8"
+              },
+              {
+                "ref": "Num.11.22"
+              },
+              {
+                "ref": "Jos.5.13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֲ",
+      "lang": "arc",
+      "bdb": [
+        "xe.aa.aa"
+      ],
+      "cognate_ids": [
+        "arc-ha",
+        "ar-a",
+        "ar-hal"
+      ],
+      "pos": "particle",
+      "gloss": "is it…?; (הֲלָא) is it not…?",
+      "summary": "The same particle in Daniel's Aramaic, five times, three of them הֲלָא. Its form is Hebrew's, though Aramaic's article is the suffix -ā, not a prefix.",
+      "senses": [
+        {
+          "gloss": "is it…? (asking yes or no)",
+          "definition": "Asks whether a thing is so.",
+          "kin": [
+            "ha-yes-no"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.14",
+              "role": "defining",
+              "note": "\"הַצְדָּא, is it true, Shadrach, Meshach and Abed-nego, that you do not serve my gods?\": answered in 3:16–18."
+            },
+            {
+              "ref": "Dan.6.21",
+              "role": "defining",
+              "note": "\"Daniel, servant of the living God, הַיְכִל, has your God been able to deliver you from the lions?\" Daniel answers \"My God sent his angel\" (6:23)."
+            }
+          ]
+        },
+        {
+          "gloss": "(הֲלָא) is it not…?",
+          "definition": "With the negative לָא, expects the answer yes.",
+          "kin": [
+            "ha-expect-yes"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.24",
+              "role": "defining",
+              "note": "\"Did we not cast three men bound into the fire?\" \"True, O king.\""
+            },
+            {
+              "ref": "Dan.6.13",
+              "role": "defining",
+              "note": "\"Did you not sign a decree…?\" \"The thing is certain.\""
+            },
+            {
+              "ref": "Dan.4.27",
+              "note": "\"הֲלָא, is not this great Babylon that I have built…?\": a boast, not a request for an answer."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-a",
+      "lang": "ar",
+      "form": "أَ",
+      "translit": "ʾa-",
+      "gloss": "is it…? (the interrogative prefix); with أَمْ, … or …?; with لَمْ, did … not?; after \"I know not\", whether",
+      "relation": "cognate",
+      "note": "The same one-syllable prefix with the same uses: a question answered نَعَمْ \"yes\" or لَا \"no\"; أَلَمْ \"did we not…?\" as הֲלֹא; with أَمْ for the second half of a double question, as הֲ … אִם; to reprove, to deny, to express wonder; and after \"I care not\" or \"I know not\", \"whether\". It has ʾ where Hebrew has h, a correspondence seen in other particles: Arabic says هَيَا for the vocative أَيَا, \"ه being substituted for its hemzeh\".",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, pp. 1–3, art. ا, أَلِفُ الٱِسْتِفْهَامِ (the interrogative alif)",
+          "note": "أَقَامَ زَيْدٌ \"Did Zeyd stand?\", \"to which the answer is لَا or نَعَمْ\"; أَزَيْدٌ عِنْدَكَ أَمْ عَمْرٌو \"Is Zeyd with thee, or 'Amr?\"; أَلَمْ نَشْرَحْ \"Did we not dilate?\"; used to reprove, to deny, to denote wonder; after مَا أُبَالِى, \"I care not whether thou stand or sit\"."
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 135, art. ايا, أَيَا",
+          "note": "\"ه is substituted for its hemzeh; so that one says, هَيَا.\""
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic أ (ʔa-), particle, etym. 2",
+          "note": "Introduces a positive or negative yes-no question; with أَمْ an alternative question; derived there from an older ha-, cognate with Hebrew הֲ."
+        }
+      ]
+    },
+    {
+      "id": "ar-hal",
+      "lang": "ar",
+      "form": "هَلْ",
+      "translit": "hal",
+      "gloss": "is it…? (introducing a yes-no question); with أَمْ, … or …?",
+      "relation": "cognate",
+      "note": "Arabic's other yes-no particle, with Hebrew's h. Its -l is taken to be the affirmative la-, so it is not the same compound as הֲלֹא, whose לֹא is \"not\". Arabic أَمْ can also stand alone \"in the sense of هَلْ\", as Hebrew uses אִם alone in some questions.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic هل (hal), particle, etym. 1",
+          "note": "\"introduces a positive yes-no question\"; \"indicates an exclusive disjunction with أَمْ\"; analysed as ha- (now ʾa-) + l-."
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3044, art. هل, هَلْ"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 88, art. ام, أَمْ",
+          "note": "\"It is also used as a simple interrogative … in the sense of هَلْ; or in the sense of the interrogative أَ\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-ha",
+      "lang": "arc",
+      "form": "הֲ",
+      "translit": "hă-",
+      "gloss": "is it…? (interrogative prefix); הֲלָא is it not?, indeed",
+      "relation": "cognate",
+      "note": "The Targums use the same prefix as Daniel, and הֲלָא for Hebrew הֲלֹא, as in Onkelos at Gen 4:7 and 4:9.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הַ־ (הֲ), interrogative prefix",
+          "note": "\"an interrogative prefix. Targ. O. Gen. IV, 9\"; \"With לא, הֲלָא … is it not?, behold, indeed. Targ. Gen. IV, 7\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "power-of-god",
+      "statement": "Yahweh asks Abraham, \"Is anything too wonderful for Yahweh?\" (Gen 18:14), a question whose answer is no, and he answers it by deed: Sarah bore a son \"at the set time of which God had spoken\" (Gen 21:1–2). In the wilderness Moses asks whether flocks and herds, or all the fish of the sea, could suffice the people (Num 11:22); Yahweh answers with the same kind of question, \"Is Yahweh's hand shortened? Now you shall see whether my word shall come to pass for you or not\" (Num 11:23), and the wind brought the quail (Num 11:31). Israel asked the question the other way: \"Is Yahweh among us, or not?\" (Exo 17:7) and \"Can God prepare a table in the wilderness? … can he give bread also?\" (Psa 78:19–20), which the psalm calls testing God and not believing him (Psa 78:18, 22). Jeremiah confesses \"nothing is too wonderful for you\", and Yahweh puts it back to him as a question (Jer 32:17, 27); Isaiah has \"Is my hand shortened at all, that it cannot redeem?\" (Isa 50:2). The angel's word to Mary, \"no word shall be impossible with God\" (Luk 1:37), says as a statement what Gen 18:14 asked. So when Yahweh asks whether he can, the question is put to be believed; when men ask it of him, it is unbelief.",
+      "evidence": [
+        {
+          "ref": "Gen.18.14"
+        },
+        {
+          "ref": "Gen.21.1"
+        },
+        {
+          "ref": "Gen.21.2"
+        },
+        {
+          "ref": "Num.11.22"
+        },
+        {
+          "ref": "Num.11.23"
+        },
+        {
+          "ref": "Num.11.31"
+        },
+        {
+          "ref": "Exo.17.7"
+        },
+        {
+          "ref": "Psa.78.18"
+        },
+        {
+          "ref": "Psa.78.19"
+        },
+        {
+          "ref": "Psa.78.20"
+        },
+        {
+          "ref": "Psa.78.22"
+        },
+        {
+          "ref": "Jer.32.17"
+        },
+        {
+          "ref": "Jer.32.27"
+        },
+        {
+          "ref": "Isa.50.2"
+        },
+        {
+          "ref": "Luk.1.37"
+        }
+      ]
+    },
+    {
+      "topic": "one-god",
+      "statement": "Several of scripture's questions expecting the hearer's assent are about who God is. \"Is he not your father who bought you? He made you and established you\" (Deu 32:6). \"Is there a God beside me? There is no Rock; I know not any\" (Isa 44:8), after \"I am the first and I am the last, and beside me there is no God\" (Isa 44:6). \"Have we not all one father? Has not one God created us?\" (Mal 2:10). Each question expects yes, or for Isa 44:8 no, and each answer is the same: one God, who is the father who made his people. Paul says it as a statement: \"to us there is one God, the Father, of whom are all things\" (1Co 8:6).",
+      "evidence": [
+        {
+          "ref": "Deu.32.6"
+        },
+        {
+          "ref": "Isa.44.6"
+        },
+        {
+          "ref": "Isa.44.8"
+        },
+        {
+          "ref": "Mal.2.10"
+        },
+        {
+          "ref": "1Co.8.6"
+        }
+      ]
+    },
+    {
+      "topic": "repentance",
+      "statement": "Ezekiel sets out God's will as a pair of questions: \"Have I any pleasure at all that the wicked should die? says the Lord Yahweh; is it not rather that he should turn from his ways and live?\" (Ezk 18:23). The first expects no, the second (הֲלוֹא) yes. The chapter states the same plainly, \"I have no pleasure in the death of him that dies … turn and live\" (Ezk 18:32), and Ezk 33:11 swears it: \"as I live, I have no pleasure in the death of the wicked, but that the wicked turn from his way and live; turn, turn … why will you die?\" The two outcomes set before the wicked are dying and living: the one who turns \"shall surely live, he shall not die\" (Ezk 18:28), the one who turns from righteousness \"shall die\" in his sin (Ezk 18:24). So God's wish is that men should turn and live, and the end of the one who does not turn is death.",
+      "evidence": [
+        {
+          "ref": "Ezk.18.23"
+        },
+        {
+          "ref": "Ezk.18.24"
+        },
+        {
+          "ref": "Ezk.18.28"
+        },
+        {
+          "ref": "Ezk.18.32"
+        },
+        {
+          "ref": "Ezk.33.11"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-14. ROOT INVESTIGATION. No root is viable; the entry is keyed by its own letter ה, as le is keyed ל. (1) Form: one consonant with a reduced vowel (הֲ, הַ, הֶ), always proclitic; nothing in Hebrew or Aramaic shows a longer base, and no verb or noun הה/ההה exists for it to come from. (2) Cognates: Arabic ʾa- (Lane pp. 1–3) has the same uses, down to ʾa-lam = הֲלֹא and ʾa … ʾam = הֲ … אִם; the ʾ/h difference is the one seen in Arabic ʾayā/hayā (Lane p. 135) and Hebrew hiphil beside Aramaic aphel and Arabic ʾafʿala. Arabic hal (Wiktionary: ha- + affirmative l-) keeps the h. Daniel's Aramaic and the Targums (Jastrow s.v. הַ־) have הֲ and הֲלָא. Evidence that the particle is shared is good; evidence for anything behind it is none. (3) Absences: Ugaritic marks yes-no questions with no particle (Segert 1984 p. 117, §76.3: \"Yes-no questions usually have no introductory particle\"; rgb.rgbt \"are you very hungry?\" KTU 1.4:IV:33); Ugaritic hm \"whether, or\" (p. 77, §55.5) answers אִם, not הֲ. Punic in Plautus asks Iadata? \"do you know?\" with no particle (Krahmalkov p. 205, s.v. Y-D-ʿ, Poen. 991). The Peshitta has no such prefix: it renders the μή-questions of Acts 7:28 and Rom 9:20 with ܕܠܡܐ and Acts 7:42 with ܠܡܐ. These are recorded here, not as cognates. (4) The article הַ (e.ab.aa) is not taken. It differs in form (הַ with doubling of the next letter; the interrogative הֲ without it), in what it attaches to (nouns, adjectives, participles; the interrogative to any first word, including verbs, pronouns and particles), and in distribution: Aramaic has the interrogative הֲ but its article is the suffix -ā. The two coincide in pointing before a shewa (הַלְּבֶן Gen 17:17; הַשְּׁמֵנָה Num 13:20; הַמְעַט), which is why OSHB lemmatizes 87 interrogative tokens as the article (lemma d, morph Ti). Lane p. 74 art. ال notes a rare Arabic ʾal used for hal (\"أَلْ فَعَلْتَ in the sense of هَلْ فَعَلْتَ\"), the only hint found of article and interrogative sharing a form; Wiktionary links the article to Arabic hā \"lo\" (Lane p. 3041) and the interrogative to ʾa-/hal, so a common deictic h- behind the article, הֵן/הִנֵּה and הֲ is possible but unshown: proposed for review only, not encoded. The exclamatory uses (sense ha-exclaim) are questions, not a separate exclamatory ה. COUNT: from oshb_primary in data/hebrew.db, splitting lemma and morph on '/', and counting a segment whose lemma is 'i' (interrogative he; 652 with morph Ti, 5 with morph Td) or whose morph is 'Ti' with lemma 'd' (87, OSHB's article lemma on an interrogative): 744 Hebrew tokens, of which 273 are הֲלֹא (next lemma 3808). Aramaic: 3 lemma 'i' (הֲלָא, Dan 3:24; 4:27; 6:13) + 2 lemma 'd' morph Ti (Dan 3:14; 6:21) = 5. Morph Ti alone is not the count: OSHB tags מָה, מִי, אֵיךְ, מַדּוּעַ and the like Ti too (about 1,580 tokens). Strong's has no number for the particle. In the runtime corpus the prefix is not its own surface, so e.ac.aa reaches only Deu 32:6's free-standing הֲ and xe.aa.aa none; lexicon-support will show 1 and 0 uses until prefixes are linked (as with לְ). Lev 23 and Num 10 have no interrogative ה; Num 11 has five (11:12, 22, 23 twice, 29), all used above. Phrase counts are from the same extraction (next lemma): הֲלֹא 273, הֲיֵשׁ 20, הֲשָׁלוֹם 14, הַעוֹד 10, הַאַתָּה 10, הַמְעַט 9, הֲגַם 8, הַאַף 6, הֲכִי 5, הַאִם 2, הֲטֶרֶם 1. BDB keys not claimed: e.ac.ab (an empty הַל stub, no tokens) and e.bi.ac (הַל \"interrog. part., see הֲ\", a cross-reference with no tokens). GREEK: the New Testament's own direct questions with εἰ (Mat 12:10; Luk 13:23; Act 1:6) follow the Septuagint's rendering of הֲ (1Ki 18:7; Amo 3:3), but none quotes a Hebrew הֲ, so they are not cited. Rom 9:21 alludes to Jer 18:6 rather than quoting it; the Septuagint there has εἰ … οὐ. NOT CONSULTED: Ge'ez enclitic question particles -nu and -hu (Dillmann, Leslau; no Wiktionary entry found); Akkadian question marking (CAD); Payne Smith for ܠܡܐ/ܕܠܡܐ; Wright's or another Arabic grammar for ʾa-/hal, which is not in sources.json. The senses are illustrated, not exhaustive."
+}
