@@ -523,6 +523,35 @@ fn root_surface_reproduces_the_concordance_union() {
         "noun stems outside the generated roots were dropped ({stems_kept} kept)"
     );
 
+    // A preposition with a pronoun suffix (לָהֶם, בּוֹ) is tagged with the bare
+    // prefix code and no Strong's number; it still has to reach its entry.
+    let unlinked: Vec<(String, String)> = db
+        .prepare(
+            "SELECT DISTINCT o.lemma, o.source_word FROM hebrewdb.oshb_primary o
+             WHERE o.lemma NOT GLOB '*[0-9]*'
+               AND NOT EXISTS(SELECT 1 FROM rt.surface_entry se
+                              WHERE se.surface_id = o.surface_id)",
+        )
+        .expect("preparing")
+        .query_map([], |row| Ok((row.get(0)?, row.get(1)?)))
+        .expect("querying")
+        .collect::<rusqlite::Result<_>>()
+        .expect("collecting");
+    assert!(
+        unlinked.is_empty(),
+        "suffixed prefixes left unlinked: {unlinked:?}"
+    );
+    let lamed: i64 = db
+        .query_row(
+            "SELECT COUNT(*) FROM hebrewdb.oshb_primary o
+             JOIN rt.surface_entry se ON se.surface_id = o.surface_id
+             WHERE o.lemma = 'l' AND o.morph LIKE 'H%' AND se.key = 'l.aa.ab'",
+            [],
+            |row| row.get(0),
+        )
+        .expect("counting suffixed lamed");
+    assert!(lamed > 4_000, "only {lamed} suffixed lamed tokens reach לְ");
+
     let _ = std::fs::remove_file(&output);
 }
 

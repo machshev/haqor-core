@@ -1014,7 +1014,8 @@ fn copy_dictionary(db: &Connection, encoder: &mut Encoder) -> Result<usize> {
 /// several entries can answer to one number, so the table is many-to-many.
 fn build_surface_entries(db: &Connection) -> Result<usize> {
     let mut stmt = db.prepare(
-        "SELECT DISTINCT o.surface_id, o.lemma FROM hebrewdb.oshb_primary o ORDER BY o.surface_id",
+        "SELECT DISTINCT o.surface_id, o.lemma, substr(o.morph, 1, 1)
+         FROM hebrewdb.oshb_primary o ORDER BY o.surface_id",
     )?;
     let mut entries = db.prepare(
         "SELECT DISTINCT bdb_id FROM lexdb.lexical_index WHERE strong = ?1 AND bdb_id IS NOT NULL",
@@ -1026,12 +1027,17 @@ fn build_surface_entries(db: &Connection) -> Result<usize> {
     while let Some(row) = rows.next()? {
         let surface_id: i64 = row.get(0)?;
         let lemma: String = row.get(1)?;
+        let language: String = row.get(2)?;
         // The last segment is the lemma itself; anything before a slash is a
         // proclitic the tagging spells out separately.
-        let Some(strong) = lemma
-            .rsplit('/')
+        let last = lemma.rsplit('/').next().unwrap_or_default();
+        if let Some(key) = proclitic_key(last, language == "A") {
+            linked += insert.execute(params![surface_id, key])?;
+            continue;
+        }
+        let Some(strong) = last
+            .split_whitespace()
             .next()
-            .and_then(|segment| segment.split_whitespace().next())
             .and_then(|digits| digits.parse::<i64>().ok())
         else {
             continue;
@@ -1044,6 +1050,25 @@ fn build_surface_entries(db: &Connection) -> Result<usize> {
         }
     }
     Ok(linked)
+}
+
+/// OSHB gives a preposition that carries a pronoun suffix (לָהֶם, בּוֹ) the
+/// bare prefix code as its lemma, with no Strong's number to look up. These
+/// are the dictionary entries those codes stand for.
+fn proclitic_key(code: &str, aramaic: bool) -> Option<&'static str> {
+    Some(match (code, aramaic) {
+        ("l", false) => "l.aa.ab",
+        ("l", true) => "xl.aa.aa",
+        ("b", false) => "b.ab.aa",
+        ("b", true) => "xb.aa.aa",
+        ("k", false) => "k.ab.aa",
+        ("k", true) => "xk.aa.aa",
+        ("m", false) => "m.cl.aa",
+        ("m", true) => "xm.ak.aa",
+        ("i", false) => "e.ac.aa",
+        ("i", true) => "xe.aa.aa",
+        _ => return None,
+    })
 }
 
 fn copy_syriac(db: &Connection) -> Result<()> {
