@@ -1,0 +1,1300 @@
+{
+  "id": "ke",
+  "root": "כ",
+  "status": "draft",
+  "updated": "2026-11-14",
+  "tags": [
+    "grammar",
+    "comparison",
+    "correspondence",
+    "time",
+    "number"
+  ],
+  "gloss": "(preposition) like, as; according to; about (with numbers); when, as soon as (with an infinitive); as … so",
+  "summary": "The preposition of likeness: one thing set beside another as its match (\"you will be like God\", Gen 3:5; \"all we like sheep have gone astray\", Isa 53:6), a deed done to match a word or pattern (\"according to all that God commanded him, so he did\", Gen 6:22; the feast offerings \"according to the ordinance\", Num 29:18), a number or time given as near enough (\"about six hundred thousand\", Exo 12:37), and, before an infinitive, the moment one thing matches another (\"as soon as you come into the city, so you will find him\", 1Sa 9:13). Doubled, it makes two things alike (\"as you, so the stranger\", Num 15:15); its longer form כְּמוֹ takes the suffixes (כָּמוֹנִי \"like me\", Deu 18:15), and Biblical Aramaic has the same כְּ (\"one like a son of man\", Dan 7:13). The same one-consonant particle runs through every branch of the family (Akkadian kī, kīma; Ugaritic k, km; Phoenician km; Arabic ka-, kamā; Sabaic k-; Ge'ez kəmä), with no noun or verb behind it anywhere, so it is keyed by its own letter: the evidence is strong that it is a primitive particle, not a root word, and the k- of כֹּה \"thus\", כֵּן \"so\" and כִּי may be built on it, not it on them.",
+  "words": [
+    {
+      "lemma": "כְּ",
+      "bdb": [
+        "k.ab.aa"
+      ],
+      "cognate_ids": [
+        "ar-ka",
+        "akk-ki",
+        "uga-k",
+        "sab-k",
+        "arc-k",
+        "syc-ak"
+      ],
+      "pos": "preposition",
+      "gloss": "like, as; according to; about; when, as soon as (with an infinitive); as … so (doubled)",
+      "summary": "Never written alone: it is prefixed (כְּעֵץ, Psa 1:3), takes the article's vowel (כַּצֹּאן, Isa 53:6; כַּמִּשְׁפָּט, Num 29:18), and almost never takes a suffix, for which the longer כְּמוֹ is used (כָּמוֹנִי, כָּמוֹךָ); the only suffixed forms are כָּכֶם \"like you\" (Num 15:15; Deu 1:11; 3:20; Jos 1:15; Jdg 8:2, 3; Job 16:4; Ezr 4:2) and כָּהֵם \"like them\" (2Ki 17:15). The Open Scriptures Hebrew Bible marks it as a separate segment on 2,888 Hebrew words, 510 of them in כַּאֲשֶׁר \"just as, when\" (whose sense is entered under אֲשֶׁר); only the nine suffixed forms are its own words, and the rest are counted under the word it joins, as with לְ and מִן. Its senses all start from one picture, two things set side by side as a match: in kind, in measure, in number, or in time.",
+      "senses": [
+        {
+          "id": "ke-like",
+          "gloss": "like, as (likeness)",
+          "definition": "One thing likened to another: what a person or thing is, does or suffers, set beside something it resembles.",
+          "kin": [
+            "kemo-like",
+            "arc-ke-like"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.3.5",
+              "role": "defining",
+              "note": "\"וִהְיִיתֶם כֵּאלֹהִים, and you will be like God, knowing good and evil\"."
+            },
+            {
+              "ref": "Psa.1.3",
+              "role": "defining",
+              "note": "\"וְהָיָה כְּעֵץ שָׁתוּל, and he shall be like a tree planted by streams of water\"; the wicked, by contrast, \"כַּמֹּץ, like the chaff\" (Psa 1:4)."
+            },
+            {
+              "ref": "Isa.53.6",
+              "role": "defining",
+              "note": "\"כֻּלָּנוּ כַּצֹּאן תָּעִינוּ, all we like sheep have gone astray\"; Peter, \"you were like (ὡς) sheep going astray\" (1Pe 2:25)."
+            },
+            {
+              "ref": "Isa.53.7",
+              "note": "\"כַּשֶּׂה לַטֶּבַח, like a lamb to the slaughter … וּכְרָחֵל, and as a ewe before her shearers\"; read by the eunuch and applied to Jesus (Act 8:32–35), ὡς πρόβατον … ὡς ἀμνός."
+            },
+            {
+              "ref": "Isa.40.6",
+              "note": "\"All flesh is grass, and all its goodness כְּצִיץ הַשָּׂדֶה, like the flower of the field\"; quoted 1Pe 1:24, ὡς χόρτος … ὡς ἄνθος χόρτου."
+            },
+            {
+              "ref": "Psa.1.4",
+              "note": "\"Not so the wicked, but כַּמֹּץ, like the chaff that the wind drives away.\""
+            },
+            {
+              "ref": "Psa.82.7",
+              "note": "\"אָכֵן כְּאָדָם תְּמוּתוּן, surely you shall die like men\"."
+            },
+            {
+              "ref": "Gen.18.25",
+              "note": "\"to do כַּדָּבָר הַזֶּה, a thing like this\": with a demonstrative, \"such a\"."
+            }
+          ],
+          "senses": [
+            {
+              "id": "ke-as-if",
+              "gloss": "as it were, like (what is not quite so)",
+              "definition": "Where the likeness is near but not exact: about how far, or as if.",
+              "evidence": [
+                {
+                  "ref": "Gen.21.16",
+                  "role": "defining",
+                  "note": "Hagar sat down \"הַרְחֵק כִּמְטַחֲוֵי קֶשֶׁת, a good way off, about a bowshot\"."
+                },
+                {
+                  "ref": "Num.11.31",
+                  "note": "The quails fell \"כְּדֶרֶךְ יוֹם כֹּה, about a day's journey on this side … וּכְאַמָּתַיִם, and about two cubits\" deep."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ke-according",
+          "gloss": "according to, after, in keeping with",
+          "definition": "A deed, a thing made or a rite kept to match a pattern, a word, a command or an ordinance.",
+          "kin": [
+            "arc-ke-according"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.1.26",
+              "role": "defining",
+              "note": "\"Let us make man בְּצַלְמֵנוּ כִּדְמוּתֵנוּ, in our image, according to our likeness\"; James, \"made according to (καθ᾽) the likeness of God\" (Jas 3:9)."
+            },
+            {
+              "ref": "Gen.5.3",
+              "role": "defining",
+              "note": "Adam fathered a son \"בִּדְמוּתוֹ כְּצַלְמוֹ, in his likeness, according to his image\": the same two nouns as Gen 1:26 with the prepositions exchanged, so here בְּ and כְּ say the same."
+            },
+            {
+              "ref": "Gen.6.22",
+              "role": "defining",
+              "note": "\"כְּכֹל אֲשֶׁר צִוָּה אֹתוֹ אֱלֹהִים כֵּן עָשָׂה, according to all that God commanded him, so he did.\""
+            },
+            {
+              "ref": "Num.14.20",
+              "role": "defining",
+              "note": "\"סָלַחְתִּי כִּדְבָרֶךָ, I have forgiven according to your word.\""
+            },
+            {
+              "ref": "Num.9.3",
+              "note": "The passover kept on the fourteenth \"כְּכָל־חֻקֹּתָיו וּכְכָל־מִשְׁפָּטָיו, according to all its statutes and according to all its ordinances\"."
+            },
+            {
+              "ref": "Num.29.18",
+              "note": "The offerings of the feast of booths \"בְּמִסְפָּרָם כַּמִּשְׁפָּט, by their number, according to the ordinance\"; so each day, Num 29:21, 24, 27, 30, 33, 37."
+            },
+            {
+              "ref": "Exo.25.9",
+              "note": "\"כְּכֹל אֲשֶׁר אֲנִי מַרְאֶה אוֹתְךָ, according to all that I show you, the pattern of the tabernacle … וְכֵן תַּעֲשׂוּ, and so you shall make it\"."
+            },
+            {
+              "ref": "Lev.10.7",
+              "note": "\"וַיַּעֲשׂוּ כִּדְבַר מֹשֶׁה, and they did according to the word of Moses\"."
+            }
+          ]
+        },
+        {
+          "id": "ke-about",
+          "gloss": "about, nearly (with numbers, measures and times)",
+          "definition": "Before a number, a measure or an hour: the figure given as near enough, not counted exactly.",
+          "kin": [
+            "arc-ke-about"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.12.37",
+              "role": "defining",
+              "note": "Israel journeyed from Rameses \"כְּשֵׁשׁ־מֵאוֹת אֶלֶף רַגְלִי, about six hundred thousand on foot\"."
+            },
+            {
+              "ref": "Rut.1.4",
+              "role": "defining",
+              "note": "\"They dwelt there כְּעֶשֶׂר שָׁנִים, about ten years.\""
+            },
+            {
+              "ref": "Jdg.3.29",
+              "note": "\"They struck of Moab כַּעֲשֶׂרֶת אֲלָפִים אִישׁ, about ten thousand men\"."
+            },
+            {
+              "ref": "1Sa.14.14",
+              "note": "\"כְּעֶשְׂרִים אִישׁ, about twenty men, כְּבַחֲצִי מַעֲנָה, within about half a furrow\"."
+            },
+            {
+              "ref": "Exo.11.4",
+              "role": "defining",
+              "note": "\"כַּחֲצֹת הַלַּיְלָה, about midnight, I will go out into the midst of Egypt\"."
+            }
+          ]
+        },
+        {
+          "id": "ke-when",
+          "gloss": "when, as soon as (with an infinitive); at (a time)",
+          "definition": "Before an infinitive, the moment one thing happens as another does; before a word of time, the time a thing falls at.",
+          "kin": [
+            "kemo-when"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.12.14",
+              "role": "defining",
+              "note": "\"וַיְהִי כְּבוֹא אַבְרָם מִצְרָיְמָה, and it came to pass, when Abram came into Egypt\"."
+            },
+            {
+              "ref": "Gen.39.18",
+              "role": "defining",
+              "note": "\"כַּהֲרִימִי קוֹלִי וָאֶקְרָא, as I lifted up my voice and cried, he left his garment beside me\"."
+            },
+            {
+              "ref": "1Sa.9.13",
+              "role": "defining",
+              "note": "\"כְּבֹאֲכֶם הָעִיר כֵּן תִּמְצְאוּן אֹתוֹ, as soon as you come into the city, so you will find him\": כְּ answered by כֵּן, the two events matched in time."
+            },
+            {
+              "ref": "Gen.24.30",
+              "note": "\"כִּרְאֹת אֶת־הַנֶּזֶם … וּכְשָׁמְעוֹ, when he saw the ring … and when he heard\"."
+            },
+            {
+              "ref": "Gen.18.10",
+              "role": "defining",
+              "note": "\"I will surely return to you כָּעֵת חַיָּה, at the time of life\", the same season next year; quoted Rom 9:9, κατὰ τὸν καιρὸν τοῦτον."
+            },
+            {
+              "ref": "Exo.9.18",
+              "note": "\"כָּעֵת מָחָר, about this time tomorrow, I will cause it to rain a very heavy hail\"."
+            }
+          ]
+        },
+        {
+          "id": "ke-as-so",
+          "gloss": "as … so; the one as the other (doubled)",
+          "definition": "Set before each of two words, it makes them alike: what holds for the one holds for the other.",
+          "kin": [
+            "kemo-as-so"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.18.25",
+              "role": "defining",
+              "note": "\"וְהָיָה כַצַּדִּיק כָּרָשָׁע, so that the righteous should be as the wicked; far be it from you\"."
+            },
+            {
+              "ref": "Lev.24.22",
+              "role": "defining",
+              "note": "\"One judgment shall be to you, כַּגֵּר כָּאֶזְרָח, as for the stranger, so for the native\"."
+            },
+            {
+              "ref": "Num.15.15",
+              "role": "defining",
+              "note": "\"כָּכֶם כַּגֵּר יִהְיֶה לִפְנֵי יַהְוֶה, as you are, so shall the stranger be before Yahweh\": one of the few suffixed forms."
+            },
+            {
+              "ref": "Lev.7.7",
+              "note": "\"כַּחַטָּאת כָּאָשָׁם תּוֹרָה אַחַת לָהֶם, as the sin offering, so the guilt offering: one law for them\"."
+            },
+            {
+              "ref": "Hos.4.9",
+              "note": "\"וְהָיָה כָעָם כַּכֹּהֵן, and it shall be, like people, like priest\"; so Isa 24:2 through six pairs."
+            },
+            {
+              "ref": "Deu.1.17",
+              "note": "\"כַּקָּטֹן כַּגָּדֹל תִּשְׁמָעוּן, you shall hear the small as the great\"."
+            },
+            {
+              "ref": "1Ki.22.4",
+              "note": "Jehoshaphat: \"כָּמוֹנִי כָמוֹךָ כְּעַמִּי כְעַמֶּךָ כְּסוּסַי כְּסוּסֶיךָ, I am as you, my people as your people, my horses as your horses\"."
+            }
+          ]
+        },
+        {
+          "id": "ke-indeed",
+          "gloss": "as, being (what one truly is)",
+          "definition": "Now and then the likeness is identity: the person or thing is set beside the very kind it belongs to, and is that in fact.",
+          "evidence": [
+            {
+              "ref": "Neh.7.2",
+              "role": "defining",
+              "note": "Nehemiah gave Hananiah charge over Jerusalem \"כִּי־הוּא כְּאִישׁ אֱמֶת, for he was a faithful man\", and feared God above many: the reason he was chosen, so not merely like one."
+            },
+            {
+              "ref": "Num.11.1",
+              "role": "defining",
+              "note": "\"וַיְהִי הָעָם כְּמִתְאֹנְנִים רַע, and the people were as complainers of evil\" in Yahweh's ears; he heard, and his fire burned among them: they were complaining in fact."
+            },
+            {
+              "ref": "Hos.5.10",
+              "note": "\"The princes of Judah have become כְּמַסִּיגֵי גְּבוּל, as those who move the boundary\"."
+            },
+            {
+              "ref": "Isa.13.6",
+              "note": "\"The day of Yahweh is near; כְּשֹׁד מִשַּׁדַּי יָבוֹא, as destruction from Shaddai it comes\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὡς",
+          "gloss": "as, like",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 53:7 word 7",
+              "note": "ὡς πρόβατον for כַּשֶּׂה."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 53:6 word 2",
+              "note": "ὡς πρόβατα for כַּצֹּאן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 40:6 word 12",
+              "note": "ὡς ἄνθος for כְּצִיץ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 3:5 word 11",
+              "note": "ὡς θεοί for כֵּאלֹהִים."
+            },
+            {
+              "ref": "Act.8.32",
+              "note": "\"As (ὡς) a sheep he was led to slaughter\": Isa 53:7."
+            },
+            {
+              "ref": "1Pe.2.25",
+              "note": "\"You were as (ὡς) sheep going astray\": Isa 53:6."
+            },
+            {
+              "ref": "1Pe.1.24",
+              "note": "\"All flesh is as (ὡς) grass, and all its glory as (ὡς) the flower of grass\": Isa 40:6."
+            }
+          ]
+        },
+        {
+          "lemma": "κατά",
+          "gloss": "according to; at (a time)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 18:10 word 5",
+              "note": "κατὰ καιρόν for כָּעֵת."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 29:18 word 7",
+              "note": "κατά for כַּמִּשְׁפָּט, \"according to the ordinance\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 14:20 word 4",
+              "note": "κατά … σου for כִּדְבָרֶךָ, \"according to your word\"."
+            },
+            {
+              "ref": "Rom.9.9",
+              "note": "\"At (κατά) this time I will come, and Sarah shall have a son\": Gen 18:10, 14."
+            },
+            {
+              "ref": "Jas.3.9",
+              "note": "\"men made according to (καθ᾽) the likeness of God\": Gen 1:26 כִּדְמוּתֵנוּ."
+            }
+          ]
+        },
+        {
+          "lemma": "ὡσεί",
+          "gloss": "about (with numbers); as it were",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "JDG 3:29 word 6",
+              "note": "ὡσεὶ δέκα χιλιάδας for כַּעֲשֶׂרֶת אֲלָפִים, \"about ten thousand\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 21:16 word 6",
+              "note": "ὡσεὶ τόξου for כִּמְטַחֲוֵי קֶשֶׁת, \"about a bowshot\"."
+            }
+          ]
+        },
+        {
+          "lemma": "καθώς",
+          "gloss": "just as",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "HOS 4:9 word 2",
+              "note": "καθὼς ὁ λαός for כָעָם in \"like people, like priest\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "1KI 22:4 word 16",
+              "note": "καθὼς ὁ λαός μου for כְּעַמִּי, \"as my people\"."
+            }
+          ]
+        },
+        {
+          "lemma": "ἡνίκα",
+          "gloss": "when",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 12:14 word 2",
+              "note": "ἡνίκα for כְּבוֹא, \"when he came\": the temporal כְּ with an infinitive."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בְּ",
+            "note": "In \"image\" and \"likeness\" the two prepositions trade places: בְּצַלְמֵנוּ כִּדְמוּתֵנוּ in Gen 1:26, בִּדְמוּת in Gen 5:1, בִּדְמוּתוֹ כְּצַלְמוֹ in Gen 5:3; there כְּ \"according to\" and בְּ \"in\" say one thing.",
+            "evidence": [
+              {
+                "ref": "Gen.1.26"
+              },
+              {
+                "ref": "Gen.5.1"
+              },
+              {
+                "ref": "Gen.5.3"
+              }
+            ]
+          },
+          {
+            "lemma": "כֵּן",
+            "note": "The answering \"so\": כְּ sets out the pattern, כֵּן the deed or event that matches it.",
+            "evidence": [
+              {
+                "ref": "Gen.6.22",
+                "note": "\"כְּכֹל אֲשֶׁר … כֵּן עָשָׂה\"."
+              },
+              {
+                "ref": "1Sa.9.13",
+                "note": "\"כְּבֹאֲכֶם … כֵּן תִּמְצְאוּן\"."
+              },
+              {
+                "ref": "Num.9.14",
+                "note": "\"כְּחֻקַּת הַפֶּסַח וּכְמִשְׁפָּטוֹ כֵּן יַעֲשֶׂה\"."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כְּכֹל אֲשֶׁר … כֵּן",
+            "gloss": "according to all that … so",
+            "evidence": [
+              {
+                "ref": "Gen.6.22",
+                "role": "defining",
+                "note": "\"According to all that God commanded him, so he did.\""
+              },
+              {
+                "ref": "Exo.39.42",
+                "note": "\"According to all that Yahweh commanded Moses, so the sons of Israel did all the work.\""
+              },
+              {
+                "ref": "Exo.25.9"
+              },
+              {
+                "ref": "Num.9.3",
+                "note": "כְּכָל־חֻקֹּתָיו וּכְכָל־מִשְׁפָּטָיו, of the passover."
+              }
+            ]
+          },
+          {
+            "phrase": "כִּדְבַר",
+            "gloss": "according to the word of",
+            "evidence": [
+              {
+                "ref": "Num.14.20",
+                "role": "defining",
+                "note": "\"I have forgiven according to your word.\""
+              },
+              {
+                "ref": "Gen.44.2",
+                "note": "\"He did according to the word of Joseph.\""
+              },
+              {
+                "ref": "Lev.10.7"
+              },
+              {
+                "ref": "1Ki.3.12",
+                "note": "\"I have done according to your words\", כִּדְבָרֶיךָ."
+              }
+            ]
+          },
+          {
+            "phrase": "כַּמִּשְׁפָּט / כְּמִשְׁפָּטָם",
+            "gloss": "according to the ordinance, as prescribed",
+            "evidence": [
+              {
+                "ref": "Num.29.18",
+                "role": "defining",
+                "note": "The offerings of each day of the feast of booths, \"by their number, according to the ordinance\"; so Num 29:21, 24, 27, 30, 33, 37."
+              },
+              {
+                "ref": "Num.29.6",
+                "note": "On the first of the seventh month, the day of the trumpet blast, \"their drink offerings כְּמִשְׁפָּטָם, according to their ordinance\"."
+              },
+              {
+                "ref": "Num.9.14",
+                "note": "The stranger keeps the passover \"כְּחֻקַּת הַפֶּסַח וּכְמִשְׁפָּטוֹ, according to the statute of the passover and according to its ordinance\"."
+              },
+              {
+                "ref": "Num.15.24",
+                "note": "The grain and drink offering \"כַּמִּשְׁפָּט\"."
+              },
+              {
+                "ref": "Ezr.3.4",
+                "note": "The returned exiles keep the feast of booths \"כַּכָּתוּב, as it is written … כְּמִשְׁפַּט, according to the ordinance\"."
+              },
+              {
+                "ref": "Neh.8.18",
+                "note": "Seven days of feast, \"and on the eighth day a solemn assembly, כַּמִּשְׁפָּט\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כַּכָּתוּב",
+            "gloss": "as it is written",
+            "evidence": [
+              {
+                "ref": "Neh.8.15",
+                "role": "defining",
+                "note": "\"to make booths, כַּכָּתוּב, as it is written\"."
+              },
+              {
+                "ref": "Ezr.3.4"
+              }
+            ]
+          },
+          {
+            "phrase": "כַּיּוֹם הַזֶּה",
+            "gloss": "as at this day, as it is today",
+            "evidence": [
+              {
+                "ref": "Gen.50.20",
+                "role": "defining",
+                "note": "\"God meant it for good, to bring it about כַּיּוֹם הַזֶּה, as it is this day, to save many people alive.\""
+              },
+              {
+                "ref": "Deu.6.24",
+                "note": "\"to keep us alive כְּהַיּוֹם הַזֶּה, as at this day\"."
+              },
+              {
+                "ref": "Dan.9.7",
+                "note": "\"To you, Lord, righteousness, and to us shame of face כַּיּוֹם הַזֶּה\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כַּיּוֹם",
+            "gloss": "this day, now first; (כְהַיּוֹם) just now",
+            "evidence": [
+              {
+                "ref": "Gen.25.31",
+                "role": "defining",
+                "note": "\"מִכְרָה כַיּוֹם, sell me this day your birthright\"."
+              },
+              {
+                "ref": "1Sa.9.13",
+                "note": "\"כִּי־אֹתוֹ כְהַיּוֹם תִּמְצְאוּן, for about this time you will find him\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כָּעֵת",
+            "gloss": "at the time (of); about this time",
+            "evidence": [
+              {
+                "ref": "Gen.18.10",
+                "role": "defining",
+                "note": "\"כָּעֵת חַיָּה, at the time of life\"; Rom 9:9."
+              },
+              {
+                "ref": "Gen.18.14"
+              },
+              {
+                "ref": "Exo.9.18",
+                "note": "\"כָּעֵת מָחָר, about this time tomorrow\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כְּאִישׁ אֶחָד",
+            "gloss": "as one man, all together",
+            "evidence": [
+              {
+                "ref": "Jdg.20.1",
+                "role": "defining",
+                "note": "\"The congregation was gathered together כְּאִישׁ אֶחָד, as one man, from Dan to Beersheba\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כִּמְעַט",
+            "gloss": "almost; a little more and",
+            "evidence": [
+              {
+                "ref": "Psa.73.2",
+                "role": "defining",
+                "note": "\"כִּמְעַט נָטָיוּ רַגְלָי, my feet had almost slipped\"."
+              },
+              {
+                "ref": "Gen.26.10",
+                "note": "\"כִּמְעַט שָׁכַב, one of the people might lightly have lain with your wife\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כְּרֶגַע",
+            "gloss": "in a moment",
+            "evidence": [
+              {
+                "ref": "Num.16.21",
+                "role": "defining",
+                "note": "\"that I may consume them כְּרָגַע, in a moment\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כָּזֶה / כָּזֹאת / כָּאֵלֶּה",
+            "gloss": "such a one, such a thing, things like these",
+            "evidence": [
+              {
+                "ref": "Isa.66.8",
+                "role": "defining",
+                "note": "\"מִי־שָׁמַע כָּזֹאת מִי רָאָה כָּאֵלֶּה, who has heard such a thing? who has seen things like these?\""
+              },
+              {
+                "ref": "Gen.41.38",
+                "note": "\"Can we find כָזֶה, such a one as this, a man in whom is the spirit of God?\""
+              },
+              {
+                "ref": "Num.28.24",
+                "note": "The seven days of unleavened bread: \"כָּאֵלֶּה תַּעֲשׂוּ לַיּוֹם, like these you shall offer daily, seven days\"."
+              }
+            ]
+          },
+          {
+            "phrase": "כַּמָּה",
+            "gloss": "how many? how much? (כְּ + מָה)",
+            "evidence": [
+              {
+                "ref": "Gen.47.8",
+                "role": "defining",
+                "note": "\"כַּמָּה יְמֵי שְׁנֵי חַיֶּיךָ, how many are the days of the years of your life?\""
+              }
+            ]
+          },
+          {
+            "phrase": "כַּאֲשֶׁר … כֵּן",
+            "gloss": "just as … so (כְּ + אֲשֶׁר; its sense is entered under אֲשֶׁר)",
+            "evidence": [
+              {
+                "ref": "Num.15.14",
+                "role": "defining",
+                "note": "\"כַּאֲשֶׁר תַּעֲשׂוּ כֵּן יַעֲשֶׂה, as you do, so he shall do\", of the stranger's offering."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כְּמוֹ",
+      "bdb": [
+        "k.ab.ac"
+      ],
+      "cognate_ids": [
+        "akk-kima",
+        "ar-kama",
+        "uga-km",
+        "phn-km",
+        "gez-kema",
+        "arc-kema"
+      ],
+      "pos": "preposition",
+      "gloss": "like, as; (with suffixes) like me, like you…; (as a conjunction) when, as",
+      "summary": "The longer form of כְּ, כְּ with an added -mô, as לְמוֹ beside לְ and בְּמוֹ beside בְּ. It carries the suffixes that כְּ does not (כָּמוֹנִי \"like me\", כָּמוֹךָ \"like you\", כָּמֹהוּ \"like him, the like of it\", כָּמוֹנוּ, כְּמוֹהֶם), and stands alone, mostly in poetry (כְּמוֹ־אָבֶן \"like a stone\", Exo 15:5). 142 uses (Open Scriptures Hebrew Bible, Strong's 3644). The same lengthened form is in Akkadian kīma, Ugaritic km, Phoenician km, Arabic kamā, Ge'ez kəmä and Aramaic כְּמָא; Arabic kamā and Aramaic כְּמָא are \"like what\", ka- with mā \"what\", and so כְּמוֹ is most likely כְּ with the ending of מָה \"what\".",
+      "senses": [
+        {
+          "id": "kemo-like",
+          "gloss": "like, as; the like of",
+          "definition": "As כְּ: one likened to another; with a negative, \"there is none like\", the like of a thing never seen before.",
+          "kin": [
+            "ke-like"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.15.11",
+              "role": "defining",
+              "note": "\"מִי־כָמֹכָה בָּאֵלִם יַהְוֶה, who is like you among the gods, Yahweh? מִי כָּמֹכָה נֶאְדָּר בַּקֹּדֶשׁ, who is like you, glorious in holiness?\""
+            },
+            {
+              "ref": "Deu.18.15",
+              "role": "defining",
+              "note": "\"A prophet from your midst, of your brothers, כָּמֹנִי, like me, Yahweh your God will raise up for you\"; Peter and Stephen quote it of Jesus, ὡς ἐμέ (Act 3:22; 7:37)."
+            },
+            {
+              "ref": "Lev.19.18",
+              "role": "defining",
+              "note": "\"You shall love your neighbour כָּמוֹךָ, as yourself\"; quoted Mat 22:39, ὡς σεαυτόν."
+            },
+            {
+              "ref": "Exo.15.5",
+              "note": "\"They went down into the depths כְּמוֹ־אָבֶן, like a stone\"; so Neh 9:11."
+            },
+            {
+              "ref": "Exo.9.24",
+              "note": "Hail \"אֲשֶׁר לֹא־הָיָה כָמֹהוּ, such as there had not been the like of it in all the land of Egypt\"."
+            },
+            {
+              "ref": "Psa.115.8",
+              "note": "Of the idols: \"כְּמוֹהֶם יִהְיוּ עֹשֵׂיהֶם, those who make them shall be like them\"."
+            },
+            {
+              "ref": "Psa.102.4",
+              "note": "\"My bones are burned כְּמוֹ־קֵד, like a hearth\"."
+            }
+          ]
+        },
+        {
+          "id": "kemo-as-so",
+          "gloss": "as … so (doubled)",
+          "definition": "As doubled כְּ: the one as the other.",
+          "kin": [
+            "ke-as-so"
+          ],
+          "evidence": [
+            {
+              "ref": "Jdg.8.18",
+              "role": "defining",
+              "note": "\"כָּמוֹךָ כְמוֹהֶם, as you are, so were they: each like the form of a king's son\"."
+            },
+            {
+              "ref": "1Ki.22.4",
+              "note": "\"כָּמוֹנִי כָמוֹךָ, I am as you are\"; so 2Ki 3:7."
+            }
+          ]
+        },
+        {
+          "id": "kemo-when",
+          "gloss": "when, as; as if (before a verb)",
+          "definition": "Before a finite verb, the time a thing happens, or a likeness drawn with a whole clause.",
+          "kin": [
+            "ke-when"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.19.15",
+              "role": "defining",
+              "note": "\"וּכְמוֹ הַשַּׁחַר עָלָה, and when the dawn came up, the angels hurried Lot\"."
+            },
+            {
+              "ref": "Isa.26.18",
+              "note": "\"We have been with child, we have writhed, כְּמוֹ יָלַדְנוּ רוּחַ, as it were we have brought forth wind\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὡς",
+          "gloss": "as, like",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "LEV 19:18 word 10",
+              "note": "ὡς σεαυτόν for כָּמוֹךָ."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 18:15 word 4",
+              "note": "ὡς ἐμέ for כָּמֹנִי."
+            },
+            {
+              "ref": "Mat.22.39",
+              "note": "\"You shall love your neighbour as (ὡς) yourself\": Lev 19:18."
+            },
+            {
+              "ref": "Act.3.22",
+              "note": "\"A prophet … like (ὡς) me\": Deu 18:15."
+            },
+            {
+              "ref": "Act.7.37",
+              "note": "The same, in Stephen's speech."
+            }
+          ]
+        },
+        {
+          "lemma": "ὅμοιος",
+          "gloss": "like",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 15:11 word 2",
+              "note": "τίς ὅμοιός σοι for מִי־כָמֹכָה."
+            },
+            {
+              "ref": "Rev.13.4",
+              "note": "\"Who is like (ὅμοιος) the beast?\": the worshippers give the beast the praise of Exo 15:11."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "מִי כָמֹכָה",
+            "gloss": "who is like you? (none is)",
+            "evidence": [
+              {
+                "ref": "Exo.15.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.35.10",
+                "note": "\"Yahweh, who is like you, delivering the poor from him that is too strong for him?\""
+              }
+            ]
+          },
+          {
+            "phrase": "אֵין כָּמוֹהוּ",
+            "gloss": "there is none like him",
+            "evidence": [
+              {
+                "ref": "1Sa.10.24",
+                "role": "defining",
+                "note": "\"Do you see him whom Yahweh has chosen, that there is none like him among all the people?\""
+              },
+              {
+                "ref": "Exo.9.14",
+                "note": "\"that you may know that אֵין כָּמֹנִי, there is none like me in all the earth\"."
+              },
+              {
+                "ref": "1Ki.3.12",
+                "note": "\"none like you before you, and after you none shall arise like you\"."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כְּ",
+      "lang": "arc",
+      "bdb": [
+        "xk.aa.aa"
+      ],
+      "cognate_ids": [
+        "arc-k",
+        "syc-ak"
+      ],
+      "pos": "preposition",
+      "gloss": "like, as; according to; about (with numbers); (כְּדִי) when",
+      "summary": "Scripture's Aramaic has the same prefixed כְּ with the same range: likeness, correspondence, approximate numbers, and with דִּי, כְּדִי \"when, as\". About 41 uses (63 words carrying a כְּ segment in the Open Scriptures Hebrew Bible, less 22 of the phrase כָּל־קֳבֵל, whose כָּל it parses as כְּ; see the note).",
+      "senses": [
+        {
+          "id": "arc-ke-like",
+          "gloss": "like, as",
+          "definition": "One thing likened to another.",
+          "kin": [
+            "ke-like"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.7.13",
+              "role": "defining",
+              "note": "\"With the clouds of heaven כְּבַר אֱנָשׁ, one like a son of man, was coming\"; John sees \"one like (ὅμοιον) a son of man\" (Rev 1:13; 14:14)."
+            },
+            {
+              "ref": "Dan.7.9",
+              "role": "defining",
+              "note": "The Ancient of Days: \"his garment כִּתְלַג חִוָּר, white as snow, and the hair of his head כַּעֲמַר נְקֵא, like pure wool\"; Rev 1:14, ὡς ἔριον … ὡς χιών."
+            },
+            {
+              "ref": "Dan.2.35",
+              "note": "\"They became כְּעוּר מִן־אִדְּרֵי־קַיִט, like chaff from the summer threshing floors\"."
+            },
+            {
+              "ref": "Dan.7.4",
+              "note": "\"The first was כְאַרְיֵה, like a lion … and it was made to stand on two feet כֶּאֱנָשׁ, like a man\"; so כִּנְמַר \"like a leopard\" (Dan 7:6)."
+            },
+            {
+              "ref": "Dan.4.30",
+              "note": "Nebuchadnezzar \"ate grass כְתוֹרִין, like oxen … his hair grew כְּנִשְׁרִין, like eagles' feathers\"."
+            }
+          ]
+        },
+        {
+          "id": "arc-ke-according",
+          "gloss": "according to",
+          "definition": "A thing done to match a law or a writing.",
+          "kin": [
+            "ke-according"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.6.9",
+              "role": "defining",
+              "note": "\"that it be not changed, כְּדָת־מָדַי וּפָרַס, according to the law of the Medes and Persians\"."
+            },
+            {
+              "ref": "Ezr.6.18",
+              "role": "defining",
+              "note": "The priests and Levites set over the service \"כִּכְתָב סְפַר מֹשֶׁה, according to the writing of the book of Moses\"."
+            }
+          ]
+        },
+        {
+          "id": "arc-ke-about",
+          "gloss": "about (with numbers and times)",
+          "definition": "Before a number or a span of time: about.",
+          "kin": [
+            "ke-about"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.6.1",
+              "role": "defining",
+              "note": "\"Darius the Mede received the kingdom כְּבַר שְׁנִין שִׁתִּין וְתַרְתֵּין, being about sixty-two years old\"."
+            },
+            {
+              "ref": "Dan.4.16",
+              "role": "defining",
+              "note": "Daniel \"was astonished כְּשָׁעָה חֲדָה, for about one hour\"."
+            }
+          ]
+        },
+        {
+          "gloss": "when, as (כְּדִי)",
+          "definition": "With דִּי \"that\": the time a thing happens, or \"just as\".",
+          "evidence": [
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "\"וְדָנִיֵּאל כְּדִי יְדַע, and Daniel, when he knew that the writing was signed, went into his house\"."
+            },
+            {
+              "ref": "Dan.3.7",
+              "note": "\"כְּדִי שָׁמְעִין, when all the peoples heard the sound of the horn\"."
+            },
+            {
+              "ref": "Dan.2.43",
+              "note": "\"הֵא־כְדִי פַרְזְלָא, even as iron does not mix with clay\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὡς",
+          "gloss": "as, like",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DAN 7:13 word 9",
+              "note": "ὡς υἱὸς ἀνθρώπου for כְּבַר אֱנָשׁ."
+            },
+            {
+              "ref": "Rev.1.14",
+              "note": "\"white as (ὡς) wool, as (ὡς) snow\": Dan 7:9."
+            }
+          ]
+        },
+        {
+          "lemma": "κατά",
+          "gloss": "according to",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EZR 6:18 word 11",
+              "note": "κατά for כִּכְתָב, \"according to the writing\" of the book of Moses."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "כִּדְנָה",
+            "gloss": "thus, like this (כְּ + דְנָה \"this\")",
+            "evidence": [
+              {
+                "ref": "Jer.10.11",
+                "role": "defining",
+                "note": "\"כִּדְנָה תֵּאמְרוּן לְהוֹם, thus you shall say to them: the gods that did not make the heavens and the earth shall perish\"."
+              },
+              {
+                "ref": "Dan.2.10",
+                "note": "\"no king has asked מִלָּה כִדְנָה, a thing like this\"."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ka",
+      "lang": "ar",
+      "form": "كَ",
+      "translit": "ka-",
+      "gloss": "like, as (the kāf of comparison); (كَذٰلِكَ) the like of that, so",
+      "relation": "cognate",
+      "note": "The same one-consonant prefix of likeness, with a genitive. With the demonstrative it makes \"thus\", كَذَا, كَذٰلِكَ, as Aramaic כְּ with דְנָה makes כִּדְנָה \"thus\" (Jer 10:11).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2998, كَ (Supplement)",
+          "note": "\"prefixed to a noun is called كَافُ التَّشْبِيهِ The ك of comparison … كَذٰلِكَ The like thereof; such like; and simply such; and so.\""
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic ك (ka-), prep.",
+          "note": "\"like, as (followed by a genitive case)\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-kama",
+      "lang": "ar",
+      "form": "كَمَا",
+      "translit": "kamā",
+      "gloss": "like as, just as; like as when",
+      "relation": "cognate",
+      "note": "ka- with mā \"what\": the build proposed for כְּמוֹ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2998, كَ (Supplement), -b5-",
+          "note": "\"كَمَا followed by a pret. often means Like as when\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic كما (kamā), conj.",
+          "note": "\"like, as\"; \"كَ (ka, 'like') + مَا (mā, 'that')\"."
+        }
+      ]
+    },
+    {
+      "id": "akk-ki",
+      "lang": "akk",
+      "form": "kī",
+      "translit": "kī",
+      "gloss": "like, as; according to; as soon as, when; that; if",
+      "relation": "cognate",
+      "note": "Its range is very close to כְּ with כִּי added: likeness, correspondence, \"as soon as\".",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004650, kī [like] PRP",
+          "note": "\"according to; according to what; as; as soon as; as, like … in accordance with; just as; like … when\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian kī, prep.",
+          "note": "\"as, like, in the manner of, according to\"; \"cognate with Arabic كَـ (ka-) and Biblical Hebrew כְּ־\"."
+        }
+      ]
+    },
+    {
+      "id": "akk-kima",
+      "lang": "akk",
+      "form": "kīma",
+      "translit": "kīma",
+      "gloss": "like, as; according to; as soon as, when",
+      "relation": "cognate",
+      "note": "The lengthened form in -ma, as כְּמוֹ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004640, kīma [like] PRP",
+          "note": "\"according to; after; as; as if … as soon as; as, like … in accordance with; just as; like … when; while\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian kīma, prep. and conj.",
+          "note": "\"like, as; according to; instead of\"; \"when, as soon as\"; compared with Hebrew כְּמוֹ."
+        }
+      ]
+    },
+    {
+      "id": "uga-k",
+      "lang": "uga",
+      "form": "𐎋",
+      "translit": "k- /ki-/",
+      "gloss": "as, like; according to",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 78, §56.23, Preposition k-",
+          "note": "\"k-, e.g., klrmn 1.23:50 'like a pomegranate'; k. also occurs: k.sprt 1.127:9 'according to the documents(?)'\"; §56.2: b-, l- and k- are \"one-consonant prepositions\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, k-",
+          "note": "\"k-, k. /ki-/ 'as, like' … 'according to' … (H. kə-, Arab. ka); with -m: km /kima/ (H. kəmo, Arab. kama, cf. Akkad. kima)\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-km",
+      "lang": "uga",
+      "form": "𐎋𐎎",
+      "translit": "km /kima/",
+      "gloss": "as, like; (conjunction) as, as soon as",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, k- and km",
+          "note": "\"with -m: km /kima/ … conj. 'as' 1.18:IV:(18), 29\"; \"km 'as, like' see k-\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§77.52, Temporal sentences",
+          "note": "A temporal clause \"may be introduced by … km 'as soon as'\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-km",
+      "lang": "phn",
+      "form": "𐤊𐤌",
+      "translit": "km",
+      "gloss": "like; just as; (km ʾš) when, just as",
+      "relation": "cognate",
+      "note": "Phoenician uses the lengthened km for plain \"like\"; km ʾš answers to Hebrew כַּאֲשֶׁר.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 229–230, KM",
+          "note": "\"[Heb. kəmo] prep. LIKE\": KAI 24.9/10 ytlkn mškbm km klbm \"the mškbm used to go about like dogs\"; \"conj. 1. AS, JUST AS\"."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 230, KM ʾŠ",
+          "note": "\"[Heb. kaʾašer] conj. 1. WHEN, WHENEVER … 2. JUST AS\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-k",
+      "lang": "sem",
+      "form": "𐩫",
+      "translit": "k-",
+      "gloss": "like, (such) as; at the time of",
+      "relation": "cognate",
+      "note": "Sabaic, Old South Arabian. Its \"like one man\" is Hebrew's כְּאִישׁ אֶחָד (Jdg 20:1).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 237, k- prep. (1)–(2)",
+          "note": "\"(1) LIKE, (SUCH) AS [Ar ka- 'like, as'] … R3945/1 … kʾḥd … (lit., like one man) … (2) AT THE TIME OF … ktbʿlhmw 'at the time of their foundation'\"."
+        }
+      ]
+    },
+    {
+      "id": "gez-kema",
+      "lang": "gez",
+      "form": "ክመ",
+      "translit": "kəmä",
+      "gloss": "like, as",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ክመ (kəmä), prep., conj., adv.",
+          "note": "prep. \"like as\"; conj. \"like, as\"; adv. \"almost, like\"; \"cognate with Arabic كَمَا (kamā), Hebrew כמו\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-k",
+      "lang": "arc",
+      "form": "כְּ־",
+      "translit": "kə-",
+      "gloss": "as, like",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כְּ־",
+          "note": "\"as, like. Targ. Gen. IX, 3. Targ. Hos. IV, 9\", the latter the Aramaic of \"like people, like priest\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-kema",
+      "lang": "arc",
+      "form": "כְּמָא",
+      "translit": "kəmā",
+      "gloss": "like that which",
+      "relation": "cognate",
+      "note": "כְּ with מָא \"what\": the Aramaic counterpart of כְּמוֹ, and evidence for its build.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כְּמָא",
+          "note": "\"(v. כְּ־ a. מָא) (followed by ד־) like that which. Targ. Jud. XI, 39\"."
+        }
+      ]
+    },
+    {
+      "id": "syc-ak",
+      "lang": "syc",
+      "form": "ܐܝܟ",
+      "translit": "ʾak",
+      "gloss": "as, like; according to; about",
+      "relation": "possible",
+      "note": "The Peshitta's word for \"like\", with the same senses, \"about\" included; Syriac has no prefixed k- of comparison. Its initial ʾ- is unexplained (compare Akkadian akī beside kī, and Aramaic אֵיךְ \"as, how\"), so the tie is likely but not shown.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 82, ʾYK (root 65), as; according to"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܐܝܟ (ʾāḵ), prep.",
+          "note": "\"like, as, as if, as it were, such as; almost, about, approximately, somewhat\"; compared with Arabic ka- and Hebrew כְּ־."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "likeness-of-god",
+      "statement": "God said \"let us make man in our image, כִּדְמוּתֵנוּ, according to our likeness\" (Gen 1:26), and Gen 5:3 uses the same two words of Adam's son: Adam \"fathered a son in his likeness, according to his image (כְּצַלְמוֹ)\". So the likeness is the likeness of a son to his father, and James calls men \"made according to the likeness of God\" (Jas 3:9). Man so made was formed of dust (Gen 2:7). The serpent promised \"you will be like God (כֵּאלֹהִים), knowing good and evil\" (Gen 3:5), and Yahweh says the man \"has become like one of us, to know good and evil\", and sends him out \"lest he take also of the tree of life, and eat, and live for ever\" (Gen 3:22). The likeness he gained was knowledge, not life: he stayed mortal, and life for ever was withheld from him.",
+      "evidence": [
+        {
+          "ref": "Gen.1.26"
+        },
+        {
+          "ref": "Gen.5.3"
+        },
+        {
+          "ref": "Jas.3.9"
+        },
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Gen.3.5"
+        },
+        {
+          "ref": "Gen.3.22"
+        }
+      ]
+    },
+    {
+      "topic": "prophet-like-moses",
+      "statement": "Moses foretold \"a prophet from your midst, of your brothers, כָּמֹנִי, like me\" (Deu 18:15), and Yahweh's words to him say what the likeness is: \"I will raise them up a prophet from among their brothers, כָּמוֹךָ, like you, and will put my words in his mouth, and he shall speak to them all that I command him\" (Deu 18:18). Peter and Stephen say this prophet is Jesus (Act 3:22, 26; 7:37), and Jesus says of himself, \"I have not spoken of myself, but the Father who sent me gave me a commandment, what I should say\" (Jhn 12:49). Hebrews sets him beside Moses as faithful in God's house (Heb 3:2) and says he had to be \"made like his brothers in all things\" (Heb 2:17). So the prophet like Moses is a man raised up from among Israel's brothers, speaking the words God gives him.",
+      "evidence": [
+        {
+          "ref": "Deu.18.15"
+        },
+        {
+          "ref": "Deu.18.18"
+        },
+        {
+          "ref": "Act.3.22"
+        },
+        {
+          "ref": "Act.3.26"
+        },
+        {
+          "ref": "Act.7.37"
+        },
+        {
+          "ref": "Jhn.12.49"
+        },
+        {
+          "ref": "Heb.3.2"
+        },
+        {
+          "ref": "Heb.2.17"
+        }
+      ]
+    },
+    {
+      "topic": "son-of-man",
+      "statement": "Daniel's beasts are \"like a lion\", \"like a leopard\" (Dan 7:4, 6); then \"with the clouds of heaven one כְּבַר אֱנָשׁ, like a son of man, came\" to the Ancient of Days, and to him was given dominion, glory and a kingdom that shall not be destroyed (Dan 7:13–14). The כְּ says what he looked like: a man, against the beasts. Jesus takes the vision as his own before the high priest, \"you will see the Son of Man … coming on the clouds of heaven\" (Mat 26:64), and John sees him as \"one like a son of man\" (Rev 1:13; 14:14). The everlasting kingdom is given to a man.",
+      "evidence": [
+        {
+          "ref": "Dan.7.4"
+        },
+        {
+          "ref": "Dan.7.6"
+        },
+        {
+          "ref": "Dan.7.13"
+        },
+        {
+          "ref": "Dan.7.14"
+        },
+        {
+          "ref": "Mat.26.64"
+        },
+        {
+          "ref": "Rev.1.13"
+        },
+        {
+          "ref": "Rev.14.14"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-14. Root investigation, as asked for a function word: no viable root; keyed by its own consonant כ, as le is keyed ל and min מנ (the database already keys Hebrew k.ab.aa with cons כ and Aramaic xk.aa.aa with root כ). The evidence: (1) the particle is one consonant with a short vowel, or that consonant with -m(a), in every branch: Akkadian kī and kīma (Oracc), Ugaritic k- /ki-/ and km (Segert §56.23, p. 189), Phoenician km (Krahmalkov pp. 229–230; no bare k- \"like\" there), Arabic ka- and kamā (Lane p. 2998), Sabaic k- (Biella p. 237), Ge'ez kəmä (Wiktionary only), Aramaic כְּ and כְּמָא (Jastrow); Syriac has ʾak instead (possible). No language has a noun or verb of likeness k-x-y it could be cut from, and the idea that it was first a noun \"likeness\" (because Arabic ka- governs a genitive) rests on nothing attested. (2) Words of the same consonants: כֵּן \"so\" (ken.json, root כונ; its note already says the k- of כְּ could lie behind כֵּן), כֹּה \"thus\" (k.ap.aa), כָּכָה (k.ap.ab), Aramaic כָּה \"here\" (xk.ab.aa), כִּי (ki.json, root כי, whose note proposes one k- entry). These look built on the k- of comparison plus a deictic, not the reverse: Aramaic כִּדְנָה \"thus\" is plainly כְּ + דְנָה \"this\" (Jer 10:11; Dan 2:10), Arabic كَذَا, كَذٰلِكَ \"thus\" are ka- + dhā (Lane p. 2998), and Akkadian kīam \"thus\" sits beside kī. So כְּ is the base; כונ (\"be firm\") cannot be its source, since כְּ never shows n or w and Akkadian kī has nothing to do with kânu. (3) כְּמוֹ is כְּ + the ending of מָה \"what\": Arabic kamā = ka + mā, Aramaic כְּמָא = כְּ + מָא (Jastrow), with Akkadian kīma, Ugaritic km, Phoenician km, Ge'ez kəmä the same lengthened form; Hebrew לְמוֹ and בְּמוֹ are parallel. (4) כַּאֲשֶׁר is כְּ + אֲשֶׁר (Phoenician km ʾš); its tokens and its sense \"as, just as; when\" are in ashar.json (a.gk.aa), so it appears here only as a phrase. Proposal for the reviewer: if one entry for the k- particles is wanted, כְּ, כְּמוֹ, כֹּה, כָּכָה, Aramaic כָּה and כִּדְנָה (and perhaps כִּי and the particle כֵּן) could be gathered under root כ here; ki.json and ken.json are not edited. USE COUNTS (from oshb_primary in data/hebrew.db): Hebrew words with a lemma segment \"k\": 2,888, of which 510 are כַּאֲשֶׁר (k/834) and 13 כַּמָּה (k/4100); the nine with lemma exactly \"k\" are the suffixed כָּכֶם (Num 15:15; Deu 1:11; 3:20; Jos 1:15; Jdg 8:2, 3; Job 16:4; Ezr 4:2) and כָּהֵם (2Ki 17:15), and they are all k.ab.aa counts in lexicon-support (the generator links only those; the prefixed כְּ is a proclitic counted under the word it joins, as with לְ and מִן). כְּמוֹ: 142 (Strong's 3644, all forms, one parsed כְּ/מוֹ at Psa 102:4), k.ab.ac. Aramaic: 63 words with a k segment; 22 are כָּל in כָּל־קֳבֵל, which OSHB parses as k + כֹּל (whether it holds כְּ is not settled here and they are not counted as uses), leaving 41, including כְּדִי (5) and כִּדְנָה (4). xk.aa.aa links no tokens in the database. So scripture has about 3,030 Hebrew uses (2,888 + 142) and about 41 Aramaic. BDB KEYS: claimed k.ab.aa, k.ab.ac, xk.aa.aa (all unclaimed before). Left: k.ab.ab כַּאֲשֶׁר (5,500 tokens by spelling, i.e. every אשר; its true uses are under a.gk.aa in ashar); k.bq.ae (BDB's \"כְּמוֹ see כְּ\" cross-reference under כמה, no tokens); k.bq.ad כַּמָּה (\"see מָה\"); xk.aa.ac Aramaic כְּדִי (\"see דִּי\"); k.ap.aa כֹּה, k.ap.ab כָּכָה, xk.ab.aa Aramaic כָּה (other words, other spellings); k.aa.aa (the letter). kaph.json is כַּף \"palm\" (root כפפ), another word. LEV 23 AND NUM 10: neither chapter uses כְּ at all; Lev 23 says בְּמוֹעֲדָם. The feast laws' כַּמִּשְׁפָּט is in Num 29:6–37 (the seventh month's feasts), Num 9:3, 14 (passover), Num 28:24 (כָּאֵלֶּה, unleavened bread), Ezr 3:4 and Neh 8:15, 18 (booths). Senses are illustrated, not exhaustive. The asseverative (\"veritatis\") sense rests on a handful of verses read in context (Neh 7:2; Num 11:1); a reviewer may prefer to fold it into \"like\". Not consulted: CAD K for kī/kīma; Dillmann or Leslau for Ge'ez kama (only Wiktionary's ክመ cited); DULAT for Ugaritic; CAL for Aramaic כְּ and כְּמָא; Payne Smith for Syriac ܐܝܟ. Segert's §56.23 page (78) is inferred from §56.22 on the same page as cited in le.json; §77.52 cited by section. Greek: Rom 9:9 and Jas 3:9 are cited under κατά as the New Testament's own rendering; the Septuagint aligns Gen 1:26's כְּ with καί, so it is not cited there. Doctrine: three items (likeness-of-god, prophet-like-moses, son-of-man) for the reviewer to check the framing."
+}
