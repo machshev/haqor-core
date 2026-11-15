@@ -1,0 +1,1721 @@
+{
+  "id": "hinneh",
+  "root": "הנה",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "grammar",
+    "particle",
+    "seeing",
+    "speech",
+    "prophecy"
+  ],
+  "gloss": "look! here is; here, hither",
+  "summary": "הִנֵּה is the Hebrew Bible's pointing word, \"look!\", \"here is\": it sets a person, a thing or a fact before the hearer's eyes, more than a thousand times. It answers \"where?\" (Gen 18:9), and with a pronoun joined it is the answer to a call, הִנֵּנִי \"here I am\" (Gen 22:1); after a verb of seeing or dreaming, וְהִנֵּה shows what met the eye (Gen 28:12; 29:25); it lays down a fact on which a request or a ruling rests (Gen 16:2; 1Sa 8:5); and on Yahweh's lips, with a participle, it announces what he is about to do (Gen 6:17; Isa 7:14; Jer 31:31). The shorter הֵן does the same work, mostly in poetry, and from \"look, suppose\" becomes \"if\" (2Ch 7:13), which is its only sense in the Aramaic of Daniel and Ezra. הֵנָּה, with the same letters, points to the speaker's own place: \"hither, here\", and of time \"until now\" (Gen 45:8; 1Sa 7:12).",
+  "words": [
+    {
+      "lemma": "הִנֵּה",
+      "pos": "interjection",
+      "bdb": [
+        "e.bz.ab"
+      ],
+      "cognate_ids": [
+        "uga-hn",
+        "phn-hn",
+        "ar-inna",
+        "sab-an",
+        "arc-hen"
+      ],
+      "gloss": "look! see! here is",
+      "summary": "Never a verb, though English often renders it by one: it does not tell the hearer to look but holds something up to be seen. It stands at the head of its clause, about a third of the time as וְהִנֵּה, and takes the pronoun endings for the one pointed at: הִנְנִי or הִנֵּנִי \"here I am\" (about 180 times, most of them Yahweh's in the prophets), הִנְּךָ, הִנָּךְ, הִנּוֹ, הִנְנוּ, הִנְּכֶם, הִנָּם. Once it is written הִנֶּה (Gen 19:2). It is thickest in narrative and in the prophets: Genesis, Samuel, Kings, Isaiah, Jeremiah and Ezekiel have most of its uses.",
+      "senses": [
+        {
+          "id": "hinneh-here-is",
+          "gloss": "look, here is (what is present)",
+          "definition": "It points to a person or thing that is there to be seen: \"here is\", \"there is\". It is the answer to \"where?\", and with a noun alone it makes a whole sentence.",
+          "evidence": [
+            {
+              "ref": "Gen.18.9",
+              "role": "defining",
+              "note": "\"Where is Sarah your wife?\" And he said, הִנֵּה בָאֹהֶל, \"There, in the tent\": the answer to אַיֵּה \"where?\"."
+            },
+            {
+              "ref": "Gen.22.7",
+              "role": "defining",
+              "note": "Isaac: הִנֵּה הָאֵשׁ וְהָעֵצִים וְאַיֵּה הַשֶּׂה, \"Here are the fire and the wood, but where is the lamb?\": הִנֵּה for what is in sight, אַיֵּה for what is not."
+            },
+            {
+              "ref": "Gen.12.19",
+              "note": "Pharaoh to Abram: הִנֵּה אִשְׁתְּךָ קַח וָלֵךְ, \"Here is your wife: take her and go.\""
+            },
+            {
+              "ref": "Gen.24.51",
+              "note": "\"Here is Rebekah before you: take her and go.\""
+            },
+            {
+              "ref": "Gen.31.51",
+              "note": "Laban: \"Here is this heap, and here is the pillar that I have set between me and you.\""
+            },
+            {
+              "ref": "Gen.16.14",
+              "note": "Of the well Beer-lahai-roi: הִנֵּה בֵין־קָדֵשׁ וּבֵין בָּרֶד, \"there it is, between Kadesh and Bered\"."
+            },
+            {
+              "ref": "Sng.1.15",
+              "note": "With the pronoun ending: הִנָּךְ יָפָה רַעְיָתִי, \"Look at you, you are fair, my love.\""
+            },
+            {
+              "ref": "Isa.40.9",
+              "note": "The herald to the cities of Judah: הִנֵּה אֱלֹהֵיכֶם, \"Here is your God!\""
+            },
+            {
+              "ref": "Isa.25.9",
+              "note": "\"And it will be said in that day, Look, this is our God; we have waited for him, and he will save us.\""
+            }
+          ],
+          "senses": [
+            {
+              "id": "hinneh-here-i-am",
+              "gloss": "here I am (answering a call; putting oneself at another's disposal)",
+              "definition": "With the first-person ending, הִנֵּנִי or הִנְנִי, it is the answer of one who is called: he presents himself, ready to hear and to do. Said of others, \"here we are\", \"here he is\", it hands them over to the hearer's will.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.1",
+                  "role": "defining",
+                  "note": "God said to him, \"Abraham!\" And he said, הִנֵּנִי, \"Here I am.\" The same answer to Isaac (22:7) and to the angel (22:11)."
+                },
+                {
+                  "ref": "1Sa.3.4",
+                  "role": "defining",
+                  "note": "Yahweh called Samuel, and he said הִנֵּנִי; then he ran to Eli: \"Here I am, for you called me\" (3:5, 8)."
+                },
+                {
+                  "ref": "Exo.3.4",
+                  "note": "God called to him out of the bush, \"Moses, Moses!\" And he said, \"Here I am.\""
+                },
+                {
+                  "ref": "Isa.6.8",
+                  "note": "\"Whom shall I send, and who will go for us?\" And I said, הִנְנִי שְׁלָחֵנִי, \"Here I am; send me.\""
+                },
+                {
+                  "ref": "Isa.58.9",
+                  "note": "Yahweh gives the same answer to those who call on him: \"you will cry, and he will say, Here I am\"."
+                },
+                {
+                  "ref": "Isa.65.1",
+                  "note": "\"I said, Here I am, here I am, to a nation that was not called by my name.\""
+                },
+                {
+                  "ref": "Gen.50.18",
+                  "note": "Joseph's brothers fall before him: הִנֶּנּוּ לְךָ לַעֲבָדִים, \"Here we are, your servants.\""
+                },
+                {
+                  "ref": "Jos.9.25",
+                  "note": "The Gibeonites: \"And now, here we are in your hand: do to us as seems good and right in your eyes.\""
+                },
+                {
+                  "ref": "2Sa.15.26",
+                  "note": "David: \"if he says, I have no delight in you, here I am: let him do to me as is good in his eyes\"."
+                },
+                {
+                  "ref": "Job.2.6",
+                  "note": "Yahweh to the adversary: הִנּוֹ בְיָדֶךָ, \"Here he is, in your hand; only keep his life.\""
+                },
+                {
+                  "ref": "Psa.40.8",
+                  "note": "\"Then I said, Look, I have come (הִנֵּה־בָאתִי); in the roll of the book it is written of me\"; verse 9, \"to do your will, my God, I delight\"."
+                },
+                {
+                  "ref": "Heb.10.7",
+                  "note": "Psa 40:8 in the mouth of Christ: ἰδοὺ ἥκω … τοῦ ποιῆσαι, ὁ θεός, τὸ θέλημά σου, \"Look, I have come … to do your will, O God\"; again in 10:9."
+                },
+                {
+                  "ref": "Act.9.10",
+                  "note": "The Lord said in a vision, \"Ananias!\" And he said, ἰδοὺ ἐγώ, κύριε, \"Here I am, Lord\": הִנֵּנִי in Greek."
+                },
+                {
+                  "ref": "Luk.1.38",
+                  "note": "Mary: ἰδοὺ ἡ δούλη κυρίου, \"Here is the Lord's bondmaid; let it be to me according to your word.\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hinneh-and-there-was",
+          "gloss": "and there was (what one sees or finds)",
+          "definition": "After a verb of seeing, dreaming, coming or waking, וְהִנֵּה shows what met the person's eyes, as he saw it and at the moment he saw it. What is found is often not what was looked for, so it carries surprise. It is the word of dream and vision reports.",
+          "evidence": [
+            {
+              "ref": "Gen.29.25",
+              "role": "defining",
+              "note": "וַיְהִי בַבֹּקֶר וְהִנֵּה־הִוא לֵאָה, \"and it was in the morning, and there she was: Leah!\" The reader finds it out when Jacob does."
+            },
+            {
+              "ref": "Gen.28.12",
+              "role": "defining",
+              "note": "\"And he dreamed, and there was a ladder set up on the earth … and there were angels of God going up and coming down on it\"; verse 13, \"and there was Yahweh standing above it\"."
+            },
+            {
+              "ref": "Gen.1.31",
+              "note": "\"And God saw all that he had made, and look, it was very good.\""
+            },
+            {
+              "ref": "Gen.8.13",
+              "note": "Noah removed the covering of the ark \"and looked, and there: the face of the ground was dry\"."
+            },
+            {
+              "ref": "Gen.22.13",
+              "note": "\"Abraham lifted his eyes and looked, and there was a ram behind him, caught in the thicket by its horns.\""
+            },
+            {
+              "ref": "Gen.37.7",
+              "note": "Joseph's dream, three times וְהִנֵּה: \"and there we were, binding sheaves … and there, my sheaf rose … and there, your sheaves came round\"."
+            },
+            {
+              "ref": "Gen.41.7",
+              "note": "\"And Pharaoh awoke, and look: it was a dream.\""
+            },
+            {
+              "ref": "Num.17.23",
+              "note": "Moses came into the tent of the testimony, \"and look, the rod of Aaron for the house of Levi had budded\"."
+            },
+            {
+              "ref": "Jdg.3.25",
+              "note": "Eglon's servants opened the doors, \"and there was their lord, fallen to the ground, dead\"."
+            },
+            {
+              "ref": "1Ki.3.21",
+              "note": "\"I rose in the morning to nurse my son, and look, he was dead; and I looked closely at him in the morning, and look, it was not my son.\""
+            },
+            {
+              "ref": "Lev.13.5",
+              "note": "In the law of skin disease the priest looks, \"and if (וְהִנֵּה) the mark has stood still in his eyes\", he acts on it: what he finds is the condition of the ruling, some twenty-five times in Lev 13 and 14."
+            },
+            {
+              "ref": "Isa.5.7",
+              "note": "\"He waited for justice, but look: bloodshed; for righteousness, but look: a cry.\""
+            },
+            {
+              "ref": "Jer.4.23",
+              "note": "\"I saw the earth, and look, it was waste and empty.\""
+            },
+            {
+              "ref": "Ezk.1.4",
+              "note": "וָאֵרֶא וְהִנֵּה, \"and I saw, and there was a storm wind coming out of the north\": the opening of Ezekiel's visions, as of Zechariah's (Zec 2:1) and Daniel's (Dan 8:3)."
+            },
+            {
+              "ref": "Zec.2.1",
+              "note": "\"And I lifted my eyes and saw, and there were four horns.\""
+            },
+            {
+              "ref": "Dan.8.3",
+              "note": "\"I lifted my eyes and saw, and there was a ram standing before the river.\" Daniel's Aramaic visions have וַאֲלוּ and וַאֲרוּ in the same place (Dan 2:31; 7:13)."
+            },
+            {
+              "ref": "Ecc.1.14",
+              "note": "\"I saw all the works that are done under the sun, and look, all is vapour.\""
+            },
+            {
+              "ref": "Rev.4.1",
+              "note": "John's visions keep the Hebrew shape in Greek: μετὰ ταῦτα εἶδον, καὶ ἰδού, \"after this I saw, and look, a door opened in heaven\"; so Rev 6:2; 14:14."
+            }
+          ]
+        },
+        {
+          "id": "hinneh-see-then",
+          "gloss": "see now (a fact put before the hearer)",
+          "definition": "It holds up a fact for the hearer to take in, most often as the ground of what the speaker goes on to ask, command or conclude: \"see, this is how things stand; now then …\". The request commonly follows with וְעַתָּה \"and now\" or נָא \"please\".",
+          "evidence": [
+            {
+              "ref": "Gen.16.2",
+              "role": "defining",
+              "note": "Sarai: הִנֵּה־נָא עֲצָרַנִי יַהְוֶה מִלֶּדֶת בֹּא־נָא אֶל־שִׁפְחָתִי, \"See now, Yahweh has kept me from bearing; go in, please, to my maid\": the fact, then the request that rests on it."
+            },
+            {
+              "ref": "1Sa.8.5",
+              "role": "defining",
+              "note": "The elders to Samuel: \"Look, you are old, and your sons do not walk in your ways; now set a king over us.\""
+            },
+            {
+              "ref": "Gen.12.11",
+              "note": "Abram: \"See now, I know that you are a woman fair to look at\"; the request follows in verse 13, \"say, please, that you are my sister\"."
+            },
+            {
+              "ref": "Gen.27.2",
+              "note": "Isaac: \"See now, I am old; I do not know the day of my death\"; verse 3, \"and now take, please, your weapons\"."
+            },
+            {
+              "ref": "Gen.19.19",
+              "note": "Lot: \"See now, your servant has found favour in your eyes … but I cannot escape to the mountain\"; verse 20, \"see now, this city is near to flee to … let me escape there, please\"."
+            },
+            {
+              "ref": "Exo.3.9",
+              "note": "Yahweh: \"And now, look, the cry of the sons of Israel has come to me\"; verse 10, \"and now come, and I will send you to Pharaoh\"."
+            },
+            {
+              "ref": "1Sa.9.6",
+              "note": "Saul's servant: \"See now, there is a man of God in this city … now let us go there.\""
+            },
+            {
+              "ref": "Gen.25.32",
+              "note": "Esau: \"Look, I am going to die; what is a birthright to me?\""
+            },
+            {
+              "ref": "Gen.27.36",
+              "note": "Esau: \"he took my birthright, and look, now he has taken my blessing\"."
+            },
+            {
+              "ref": "Jer.1.6",
+              "note": "\"Ah, Lord Yahweh! Look, I do not know how to speak, for I am a youth.\""
+            },
+            {
+              "ref": "Job.1.12",
+              "note": "Yahweh to the adversary: \"Look, all that he has is in your hand; only on himself do not put out your hand.\""
+            },
+            {
+              "ref": "Psa.39.6",
+              "note": "\"Look, you have made my days handbreadths, and my lifetime is as nothing before you.\""
+            },
+            {
+              "ref": "Psa.133.1",
+              "note": "\"Look, how good and how pleasant it is for brothers to dwell together.\""
+            },
+            {
+              "ref": "Psa.121.4",
+              "note": "\"Look, he who keeps Israel neither slumbers nor sleeps.\""
+            }
+          ],
+          "senses": [
+            {
+              "id": "hinneh-suppose",
+              "gloss": "suppose, granted that",
+              "definition": "The fact held up may be only supposed: \"say that this is so; what then?\". A question usually follows. This is the step from \"look\" to \"if\" that the shorter הֵן takes fully.",
+              "kin": [
+                "hen-if"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.9.7",
+                  "role": "defining",
+                  "note": "Saul: וְהִנֵּה נֵלֵךְ וּמַה־נָּבִיא לָאִישׁ, \"But suppose we go: what shall we bring the man?\""
+                },
+                {
+                  "ref": "2Ki.7.2",
+                  "role": "defining",
+                  "note": "The officer to Elisha: \"Suppose Yahweh were making windows in heaven: could this thing be?\" Elisha answers with the same word used plainly: הִנְּכָה רֹאֶה בְּעֵינֶיךָ, \"Look, you will see it with your eyes.\""
+                },
+                {
+                  "ref": "Exo.3.13",
+                  "note": "Moses: \"Suppose I come to the sons of Israel and say to them … and they say to me, What is his name? What shall I say to them?\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hinneh-about-to",
+          "gloss": "look, I am about to (announcing an act)",
+          "definition": "Before a participle, most often as הִנְנִי or הִנֵּה אָנֹכִי, it announces what the speaker is on the point of doing, as if it were already in sight. It is the form of Yahweh's announcements of judgment and of promise, and the prophets' \"look, days are coming\".",
+          "evidence": [
+            {
+              "ref": "Gen.6.17",
+              "role": "defining",
+              "note": "וַאֲנִי הִנְנִי מֵבִיא אֶת־הַמַּבּוּל מַיִם עַל־הָאָרֶץ, \"And I, look, I am bringing the flood of waters on the earth\": said before the ark is built."
+            },
+            {
+              "ref": "Gen.9.9",
+              "note": "\"And I, look, I am establishing my covenant with you and with your seed after you.\""
+            },
+            {
+              "ref": "Exo.4.23",
+              "note": "\"Look, I am about to kill your son, your firstborn.\""
+            },
+            {
+              "ref": "Exo.23.20",
+              "note": "\"Look, I am sending an angel before you to keep you in the way.\""
+            },
+            {
+              "ref": "Num.25.12",
+              "note": "\"Look, I am giving him my covenant of peace.\""
+            },
+            {
+              "ref": "Isa.7.14",
+              "role": "defining",
+              "note": "The sign: הִנֵּה הָעַלְמָה הָרָה וְיֹלֶדֶת בֵּן, \"Look, the virgin is with child and is bearing a son\"; quoted of the birth of Jesus with ἰδού (Mat 1:23). The same words are said to Hagar and to Manoah's wife (Gen 16:11; Jdg 13:5)."
+            },
+            {
+              "ref": "Mat.1.23",
+              "note": "ἰδοὺ ἡ παρθένος ἐν γαστρὶ ἕξει καὶ τέξεται υἱόν: Isa 7:14."
+            },
+            {
+              "ref": "Isa.28.16",
+              "note": "\"Look, I am laying in Zion a stone\"; Rom 9:33 and 1Pe 2:6 quote it with ἰδού."
+            },
+            {
+              "ref": "Isa.65.17",
+              "note": "כִּי־הִנְנִי בוֹרֵא שָׁמַיִם חֲדָשִׁים וָאָרֶץ חֲדָשָׁה, \"For look, I am creating new heavens and a new earth.\""
+            },
+            {
+              "ref": "Jer.31.31",
+              "role": "defining",
+              "note": "הִנֵּה יָמִים בָּאִים, \"Look, days are coming, says Yahweh, when I will make a new covenant with the house of Israel\"; quoted in Heb 8:8, ἰδοὺ ἡμέραι ἔρχονται."
+            },
+            {
+              "ref": "Amo.9.13",
+              "note": "\"Look, days are coming, says Yahweh, when the ploughman will overtake the reaper.\""
+            },
+            {
+              "ref": "Ezk.37.12",
+              "note": "\"Look, I am opening your graves, and I will bring you up out of your graves, my people, and bring you to the land of Israel.\""
+            },
+            {
+              "ref": "Zec.9.9",
+              "note": "With the imperfect: הִנֵּה מַלְכֵּךְ יָבוֹא לָךְ, \"Look, your king is coming to you\"; quoted with ἰδού in Mat 21:5 and Jhn 12:15."
+            },
+            {
+              "ref": "Mal.3.1",
+              "note": "הִנְנִי שֹׁלֵחַ מַלְאָכִי, \"Look, I am sending my messenger\"; quoted of John the Baptist in Mat 11:10, ἰδοὺ ἐγὼ ἀποστέλλω."
+            },
+            {
+              "ref": "Mal.3.23",
+              "note": "\"Look, I am sending you Elijah the prophet before the great and fearful day of Yahweh comes.\""
+            },
+            {
+              "ref": "Isa.38.5",
+              "note": "With the imperfect: הִנְנִי יוֹסִף עַל־יָמֶיךָ, \"Look, I will add fifteen years to your days.\""
+            }
+          ],
+          "senses": [
+            {
+              "id": "hinneh-hereby",
+              "gloss": "look, I have (an act done in the saying)",
+              "definition": "Before a perfect in the first person it marks a grant or appointment that takes effect as it is spoken: \"I hereby give\". The imperative רְאֵה \"see\" stands in the same place.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.29",
+                  "role": "defining",
+                  "note": "הִנֵּה נָתַתִּי לָכֶם אֶת־כָּל־עֵשֶׂב, \"Look, I have given you every plant yielding seed\": the grant of food to the man and the woman."
+                },
+                {
+                  "ref": "Gen.17.20",
+                  "note": "Of Ishmael: \"Look, I have blessed him, and I will make him fruitful.\""
+                },
+                {
+                  "ref": "Jer.1.9",
+                  "note": "Yahweh touched my mouth and said, \"Look, I have put my words in your mouth.\""
+                },
+                {
+                  "ref": "Gen.20.16",
+                  "note": "Abimelech to Sarah: \"Look, I have given your brother a thousand pieces of silver.\""
+                },
+                {
+                  "ref": "Gen.41.41",
+                  "note": "The same act with רְאֵה: Pharaoh to Joseph, רְאֵה נָתַתִּי אֹתְךָ, \"See, I have set you over all the land of Egypt.\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἰδού",
+          "gloss": "look! see! here is",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 22:1 word 13",
+              "note": "ἰδοὺ ἐγώ for הִנֵּנִי; ἰδού renders הִנֵּה 834 times in the alignment."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 7:14 word 7",
+              "note": "ἰδοὺ ἡ παρθένος for הִנֵּה הָעַלְמָה."
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. ἰδού",
+              "note": "\"in LXX chiefly for הִנֵּה\"; \"in elliptical sentences, taking the place of copula or predicate (like הִנֵּה in Heb.)\". The word is Greek, the aorist middle imperative of \"see\" used as a particle, not a loan; the New Testament's frequent use of it follows the Hebrew."
+            },
+            {
+              "ref": "Mat.1.23",
+              "note": "Isa 7:14."
+            },
+            {
+              "ref": "Mat.11.10",
+              "note": "Mal 3:1: \"Look, I send my messenger before your face\"; so Mrk 1:2 and Luk 7:27."
+            },
+            {
+              "ref": "Mat.21.5",
+              "note": "Zec 9:9, introduced by Isa 62:11's \"say to the daughter of Zion\": \"Look, your king is coming to you.\""
+            },
+            {
+              "ref": "Jhn.12.15",
+              "note": "Zec 9:9."
+            },
+            {
+              "ref": "Rom.9.33",
+              "note": "Isa 28:16: \"Look, I lay in Zion a stone.\""
+            },
+            {
+              "ref": "1Pe.2.6",
+              "note": "Isa 28:16."
+            },
+            {
+              "ref": "Heb.8.8",
+              "note": "Jer 31:31: \"Look, days are coming.\""
+            },
+            {
+              "ref": "Heb.10.7",
+              "note": "Psa 40:8: \"Look, I have come.\""
+            },
+            {
+              "ref": "Heb.2.13",
+              "note": "Isa 8:18, הִנֵּה אָנֹכִי וְהַיְלָדִים: \"Look, I and the children whom God has given me.\""
+            },
+            {
+              "ref": "Rev.21.5",
+              "note": "He who sits on the throne: ἰδοὺ καινὰ ποιῶ πάντα, \"Look, I am making all things new\", as Isa 43:19 הִנְנִי עֹשֶׂה חֲדָשָׁה and Isa 65:17."
+            },
+            {
+              "ref": "Rev.22.12",
+              "note": "\"Look, I am coming quickly, and my reward is with me\": Isa 62:11, הִנֵּה שְׂכָרוֹ אִתּוֹ."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רְאֵה",
+            "note": "\"see!\", the imperative of רָאָה, used as הִנֵּה is to present a grant or a fact: רְאֵה נָתַתִּי beside הִנֵּה נָתַתִּי (Gen 1:29).",
+            "evidence": [
+              {
+                "ref": "Gen.41.41"
+              },
+              {
+                "ref": "Deu.1.8",
+                "note": "\"See, I have set the land before you.\""
+              },
+              {
+                "ref": "Deu.30.15",
+                "note": "\"See, I have set before you today life and good, and death and evil.\""
+              },
+              {
+                "ref": "Gen.27.27",
+                "note": "\"See, the smell of my son is as the smell of a field that Yahweh has blessed.\""
+              }
+            ]
+          },
+          {
+            "lemma": "הֵן",
+            "note": "The shorter form, in the first half of a saying whose second half has הִנֵּה.",
+            "evidence": [
+              {
+                "ref": "Gen.15.3",
+                "note": "הֵן לִי לֹא נָתַתָּה זָרַע וְהִנֵּה בֶן־בֵּיתִי יוֹרֵשׁ אֹתִי, \"Look, to me you have given no seed, and look, one born in my house is my heir.\""
+              }
+            ]
+          },
+          {
+            "lemma": "אֲלוּ",
+            "note": "Aramaic אֲלוּ and אֲרוּ stand in Daniel's Aramaic visions exactly where וְהִנֵּה stands in his Hebrew ones: חָזֵה הֲוֵית וַאֲלוּ, \"I was looking, and there was\", beside וָאֶרְאֶה וְהִנֵּה (Dan 8:3; 10:5).",
+            "evidence": [
+              {
+                "ref": "Dan.2.31",
+                "note": "\"You, O king, were looking, and there was (וַאֲלוּ) a great image.\""
+              },
+              {
+                "ref": "Dan.4.7"
+              },
+              {
+                "ref": "Dan.7.8"
+              },
+              {
+                "ref": "Dan.7.2",
+                "note": "\"I was looking in my vision by night, and there were (וַאֲרוּ) the four winds of heaven.\""
+              },
+              {
+                "ref": "Dan.7.13",
+                "note": "\"and there, with the clouds of heaven, one like a son of man was coming\"; Rev 1:7 has ἰδού: \"Look, he is coming with the clouds.\""
+              },
+              {
+                "ref": "Dan.8.3"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אַיֵּה",
+            "note": "\"where is?\": the question for what is not in sight, which הִנֵּה answers.",
+            "evidence": [
+              {
+                "ref": "Gen.18.9"
+              },
+              {
+                "ref": "Gen.22.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הִנֵּנִי",
+            "gloss": "here I am",
+            "evidence": [
+              {
+                "ref": "Gen.22.1"
+              },
+              {
+                "ref": "Gen.22.11"
+              },
+              {
+                "ref": "Exo.3.4"
+              },
+              {
+                "ref": "1Sa.3.4"
+              },
+              {
+                "ref": "Isa.6.8"
+              },
+              {
+                "ref": "Isa.58.9"
+              }
+            ]
+          },
+          {
+            "phrase": "וַיַּרְא וְהִנֵּה",
+            "gloss": "and he looked, and there was",
+            "evidence": [
+              {
+                "ref": "Gen.8.13"
+              },
+              {
+                "ref": "Gen.18.2"
+              },
+              {
+                "ref": "Gen.22.13"
+              },
+              {
+                "ref": "Ezk.1.4"
+              },
+              {
+                "ref": "Zec.2.1"
+              },
+              {
+                "ref": "Dan.8.3"
+              }
+            ]
+          },
+          {
+            "phrase": "הִנֵּה־נָא",
+            "gloss": "see now, see please",
+            "evidence": [
+              {
+                "ref": "Gen.12.11"
+              },
+              {
+                "ref": "Gen.16.2"
+              },
+              {
+                "ref": "Gen.19.2",
+                "note": "Written הִנֶּה here only."
+              },
+              {
+                "ref": "Gen.27.2"
+              },
+              {
+                "ref": "Jdg.13.3"
+              },
+              {
+                "ref": "1Sa.9.6"
+              }
+            ]
+          },
+          {
+            "phrase": "וְעַתָּה הִנֵּה",
+            "gloss": "and now, look",
+            "evidence": [
+              {
+                "ref": "Gen.12.19"
+              },
+              {
+                "ref": "Exo.3.9"
+              },
+              {
+                "ref": "Jos.9.25"
+              },
+              {
+                "ref": "Jos.14.10"
+              }
+            ]
+          },
+          {
+            "phrase": "הִנֵּה יָמִים בָּאִים",
+            "gloss": "look, days are coming",
+            "evidence": [
+              {
+                "ref": "1Sa.2.31"
+              },
+              {
+                "ref": "Isa.39.6"
+              },
+              {
+                "ref": "Amo.4.2"
+              },
+              {
+                "ref": "Amo.9.13"
+              },
+              {
+                "ref": "Jer.7.32"
+              },
+              {
+                "ref": "Jer.16.14"
+              },
+              {
+                "ref": "Jer.23.5"
+              },
+              {
+                "ref": "Jer.30.3"
+              },
+              {
+                "ref": "Jer.31.31"
+              },
+              {
+                "ref": "Heb.8.8"
+              }
+            ]
+          },
+          {
+            "phrase": "הִנְנִי אֵלֶיךָ",
+            "gloss": "here I am against you (Yahweh's challenge)",
+            "evidence": [
+              {
+                "ref": "Jer.21.13"
+              },
+              {
+                "ref": "Ezk.5.8",
+                "note": "הִנְנִי עָלַיִךְ גַּם־אָנִי, \"Here I am against you, I myself.\""
+              },
+              {
+                "ref": "Ezk.13.8"
+              },
+              {
+                "ref": "Nam.2.14"
+              }
+            ]
+          },
+          {
+            "phrase": "כִּי הִנֵּה",
+            "gloss": "for look",
+            "evidence": [
+              {
+                "ref": "Isa.26.21",
+                "note": "\"For look, Yahweh is coming out of his place to visit the iniquity of the inhabitants of the earth.\""
+              },
+              {
+                "ref": "Mic.1.3"
+              },
+              {
+                "ref": "Isa.65.17"
+              },
+              {
+                "ref": "Mal.3.19",
+                "note": "\"For look, the day is coming, burning like an oven.\""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֵן",
+      "root": "הנ",
+      "pos": "interjection",
+      "bdb": [
+        "e.bz.aa"
+      ],
+      "gloss": "look, see; if",
+      "summary": "The short form of הִנֵּה, nearly ninety times, most of them in Isaiah (26), Job (22) and speeches in the Torah (26); it takes no pronoun endings. It does the work of הִנֵּה's \"see now\", and in a number of places, most of them late or poetic, it is \"if\", as in Aramaic. The count from its key (363) is not its own: the key is also given the forms of הִנֵּה with pronoun endings (הִנְנִי and the rest, about 250) and, by spelling, the sixteen Aramaic uses and ten of לָהֵן; by the references the Hebrew הֵן has 87.",
+      "senses": [
+        {
+          "id": "hen-look",
+          "gloss": "look, see (a fact put before the hearer)",
+          "definition": "It holds up a fact, usually one the hearer cannot deny, as the ground of what follows: a decision, a request, or an argument from the lesser to the greater (\"look, even this is so; how much more that\").",
+          "cognate_ids": [
+            "uga-hn",
+            "phn-hn",
+            "ar-inna",
+            "sab-an",
+            "arc-hen"
+          ],
+          "kin": [
+            "hinneh-see-then",
+            "hinneh-here-is"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.15.3",
+              "role": "defining",
+              "note": "הֵן and הִנֵּה in the two halves of one saying, with one meaning: \"Look, to me you have given no seed, and look, one born in my house is my heir.\""
+            },
+            {
+              "ref": "Gen.3.22",
+              "role": "defining",
+              "note": "Yahweh God: הֵן הָאָדָם הָיָה כְּאַחַד מִמֶּנּוּ, \"Look, the man has become as one of us, knowing good and evil; and now, lest he put out his hand …\": the fact, then וְעַתָּה and what is done about it."
+            },
+            {
+              "ref": "Gen.11.6",
+              "note": "\"Look, they are one people and they all have one language … and now nothing will be kept from them.\""
+            },
+            {
+              "ref": "Gen.4.14",
+              "note": "Cain: \"Look, you have driven me out today from the face of the ground.\""
+            },
+            {
+              "ref": "Gen.47.23",
+              "note": "Joseph: \"Look, I have bought you today and your land for Pharaoh; here (הֵא) is seed for you.\""
+            },
+            {
+              "ref": "Exo.6.12",
+              "note": "From the lesser to the greater: \"Look, the sons of Israel have not listened to me; how then will Pharaoh hear me?\""
+            },
+            {
+              "ref": "Deu.31.27",
+              "note": "\"Look, while I am still alive with you today you have been rebellious against Yahweh; how much more (וְאַף כִּי) after my death?\""
+            },
+            {
+              "ref": "Pro.11.31",
+              "note": "\"Look, the righteous will be repaid on the earth; how much more the wicked and the sinner.\""
+            },
+            {
+              "ref": "Job.4.18",
+              "note": "\"Look, he puts no trust in his servants\"; verse 19, \"how much less those who dwell in houses of clay, whose foundation is in the dust\"."
+            },
+            {
+              "ref": "Num.17.27",
+              "note": "\"Look, we perish, we are lost, all of us are lost.\""
+            },
+            {
+              "ref": "Deu.10.14",
+              "note": "\"Look, to Yahweh your God belong the heavens and the heavens of heavens, the earth and all that is in it.\""
+            },
+            {
+              "ref": "Isa.40.15",
+              "note": "\"Look, nations are as a drop from a bucket.\""
+            },
+            {
+              "ref": "Isa.42.1",
+              "note": "הֵן עַבְדִּי אֶתְמָךְ־בּוֹ, \"Look, my servant, whom I uphold\"; Matthew renders it ἰδοὺ ὁ παῖς μου (Mat 12:18)."
+            },
+            {
+              "ref": "Mat.12.18",
+              "note": "Isa 42:1 quoted of Jesus, with ἰδού for הֵן."
+            },
+            {
+              "ref": "Psa.51.7",
+              "note": "\"Look, I was brought forth in iniquity.\""
+            },
+            {
+              "ref": "Ezk.18.4",
+              "note": "\"Look, all the souls are mine … the soul that sins, it shall die.\""
+            }
+          ]
+        },
+        {
+          "id": "hen-if",
+          "gloss": "if, suppose; whether",
+          "definition": "A supposed case put before the hearer, with a question or a consequence after it: \"suppose a man does this: will he …?\". In Chronicles it stands in a row with אִם, and after a verb of seeing it is \"whether\".",
+          "cognate_ids": [
+            "ar-in",
+            "sab-hn",
+            "arc-hen"
+          ],
+          "kin": [
+            "arc-hen-if",
+            "hinneh-suppose"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ch.7.13",
+              "role": "defining",
+              "note": "הֵן אֶעֱצֹר הַשָּׁמַיִם … וְהֵן־אֲצַוֶּה עַל־חָגָב … וְאִם־אֲשַׁלַּח דֶּבֶר, \"If I shut up the heavens … and if I command the locust … and if I send pestilence\": הֵן twice and then אִם, in one list of conditions."
+            },
+            {
+              "ref": "Jer.3.1",
+              "role": "defining",
+              "note": "הֵן יְשַׁלַּח אִישׁ אֶת־אִשְׁתּוֹ … הֲיָשׁוּב אֵלֶיהָ עוֹד, \"If a man sends his wife away, and she goes from him and becomes another man's, will he return to her again?\""
+            },
+            {
+              "ref": "Hag.2.12",
+              "role": "defining",
+              "note": "\"If (הֵן) a man carries holy flesh in the skirt of his garment … will it become holy?\" The second case, in verse 13, begins with אִם."
+            },
+            {
+              "ref": "Exo.8.22",
+              "note": "Moses: \"Suppose we sacrifice the abomination of the Egyptians before their eyes: will they not stone us?\""
+            },
+            {
+              "ref": "Exo.4.1",
+              "note": "\"But suppose (וְהֵן) they do not believe me or listen to my voice.\""
+            },
+            {
+              "ref": "Lev.25.20",
+              "note": "\"What shall we eat in the seventh year, if (הֵן) we do not sow or gather our produce?\""
+            },
+            {
+              "ref": "Isa.54.15",
+              "note": "\"If anyone stirs up strife, it is not from me.\""
+            },
+            {
+              "ref": "Job.9.12",
+              "note": "\"If he snatches away, who can turn him back?\"; so verse 11, \"if he passes by me, I do not see him\"."
+            },
+            {
+              "ref": "Job.12.14",
+              "note": "\"If he tears down, it is not rebuilt\"; verse 15, \"if he holds back the waters, they dry up\"."
+            },
+            {
+              "ref": "Job.23.8",
+              "note": "\"If I go forward, he is not there.\""
+            },
+            {
+              "ref": "Job.40.23",
+              "note": "Of Behemoth: \"If the river rages, he is not alarmed.\""
+            },
+            {
+              "ref": "Job.13.15",
+              "note": "הֵן יִקְטְלֵנִי, \"though he slay me\", or \"look, he will slay me\": the two senses meet."
+            },
+            {
+              "ref": "Jer.2.10",
+              "note": "After \"see\": וּרְאוּ הֵן הָיְתָה כָּזֹאת, \"and see whether there has been such a thing\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἰδού",
+          "gloss": "look!",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 3:22 word 4",
+              "note": "ἰδοὺ Αδαμ γέγονεν for הֵן הָאָדָם הָיָה; ἰδού renders הֵן 38 times in the alignment."
+            },
+            {
+              "ref": "Mat.12.18",
+              "note": "Isa 42:1."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐάν",
+          "gloss": "if",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2CH 7:13 words 1 and 7",
+              "note": "ἐάν for both הֵן; ἐάν and εἰ together render the spelling הֵן, Hebrew and Aramaic, 33 times in the alignment."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אִם",
+            "note": "\"if\": the ordinary word, which takes over from הֵן in the same list or the next case.",
+            "evidence": [
+              {
+                "ref": "2Ch.7.13"
+              },
+              {
+                "ref": "Hag.2.12",
+                "note": "הֵן here, אִם in verse 13."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הֵן … וְאַף כִּי",
+            "gloss": "look, (even) this …; how much more that",
+            "evidence": [
+              {
+                "ref": "Deu.31.27"
+              },
+              {
+                "ref": "Pro.11.31"
+              },
+              {
+                "ref": "Job.4.18"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵן … וְאֵיךְ",
+            "gloss": "look, this …; how then …?",
+            "evidence": [
+              {
+                "ref": "Exo.6.12"
+              },
+              {
+                "ref": "Exo.6.30"
+              },
+              {
+                "ref": "Gen.44.8"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֵנָּה",
+      "pos": "adverb",
+      "bdb": [
+        "e.bz.ac"
+      ],
+      "cognate_ids": [
+        "phn-hn-here",
+        "phn-hn-hither",
+        "uga-hnny",
+        "uga-hn-hither",
+        "ar-huna",
+        "akk-annisha"
+      ],
+      "gloss": "hither, here; until now",
+      "summary": "The pointing word turned to place: \"to here\", where the speaker is. About fifty times; the count from its key (75) is by spelling and takes in the pronoun הֵנָּה \"they\" (feminine), which belongs with הֵמָּה. Phoenician has one word hn for \"look\", \"here\" and \"hither\", which ties this adverb to הִנֵּה; how the two Hebrew forms are related beyond that is not worked out here.",
+      "senses": [
+        {
+          "id": "hennah-hither",
+          "gloss": "hither, to this place",
+          "definition": "Toward the place where the speaker is, after verbs of coming, bringing, sending and drawing near.",
+          "evidence": [
+            {
+              "ref": "Gen.45.8",
+              "role": "defining",
+              "note": "Joseph in Egypt: לֹא־אַתֶּם שְׁלַחְתֶּם אֹתִי הֵנָּה כִּי הָאֱלֹהִים, \"it was not you who sent me here, but God\"; so 45:5, \"you sold me here\", and 45:13, \"bring my father down here\"."
+            },
+            {
+              "ref": "Jos.3.9",
+              "role": "defining",
+              "note": "Joshua: גֹּשׁוּ הֵנָּה וְשִׁמְעוּ, \"Come near, here, and hear the words of Yahweh your God.\""
+            },
+            {
+              "ref": "Gen.15.16",
+              "note": "\"In the fourth generation they will return here.\""
+            },
+            {
+              "ref": "Gen.42.15",
+              "note": "\"unless your youngest brother comes here\"."
+            },
+            {
+              "ref": "Jos.2.2",
+              "note": "הִנֵּה and הֵנָּה together: \"Look, men have come here tonight.\""
+            },
+            {
+              "ref": "Jos.18.6",
+              "note": "\"Bring them to me here (הֵנָּה), and I will cast lots for you here (פֹּה) before Yahweh\": הֵנָּה for the coming, פֹּה for the place."
+            },
+            {
+              "ref": "2Sa.5.6",
+              "note": "The Jebusites to David: לֹא־תָבוֹא הֵנָּה, \"You shall not come in here.\""
+            },
+            {
+              "ref": "2Sa.14.32",
+              "note": "\"Come here, that I may send you to the king.\""
+            },
+            {
+              "ref": "Isa.57.3",
+              "note": "\"But you, draw near, here, sons of the sorceress.\""
+            },
+            {
+              "ref": "Jer.31.8",
+              "note": "\"a great assembly will return here\"."
+            },
+            {
+              "ref": "Pro.9.4",
+              "note": "Wisdom: \"Whoever is simple, let him turn in here.\""
+            },
+            {
+              "ref": "Pro.25.7",
+              "note": "\"Better that it be said to you, Come up here (עֲלֵה הֵנָּה), than that you be put lower before a noble.\""
+            }
+          ]
+        },
+        {
+          "id": "hennah-here-there",
+          "gloss": "here (on this side); this way and that",
+          "definition": "A place or side near the speaker; doubled, הֵנָּה וָהֵנָּה, \"this way and that\", \"to one side and the other\".",
+          "evidence": [
+            {
+              "ref": "2Ki.2.8",
+              "role": "defining",
+              "note": "Elijah struck the waters, וַיֵּחָצוּ הֵנָּה וָהֵנָּה, \"and they were divided this way and that\"; again in 2:14."
+            },
+            {
+              "ref": "1Sa.20.21",
+              "role": "defining",
+              "note": "\"Look, the arrows are on this side of you (מִמְּךָ וָהֵנָּה)\", against verse 22, \"the arrows are beyond you (מִמְּךָ וָהָלְאָה)\"."
+            },
+            {
+              "ref": "Jos.8.20",
+              "note": "The men of Ai \"had no power to flee this way or that\"."
+            },
+            {
+              "ref": "1Ki.20.40",
+              "note": "\"As your servant was busy here and there, he was gone.\""
+            },
+            {
+              "ref": "2Ki.4.35",
+              "note": "Elisha \"walked in the house once this way and once that way\"."
+            },
+            {
+              "ref": "Dan.12.5",
+              "note": "\"two others standing, one on this bank of the river and one on that bank of the river\": אֶחָד הֵנָּה … וְאֶחָד הֵנָּה."
+            }
+          ]
+        },
+        {
+          "id": "hennah-until-now",
+          "gloss": "as far as here; until now",
+          "definition": "With עַד: of place, \"as far as here\"; of time or of a matter, \"until now\", \"thus far\".",
+          "evidence": [
+            {
+              "ref": "1Sa.7.12",
+              "role": "defining",
+              "note": "Samuel names the stone Ebenezer: עַד־הֵנָּה עֲזָרָנוּ יַהְוֶה, \"Thus far Yahweh has helped us.\""
+            },
+            {
+              "ref": "Gen.44.28",
+              "role": "defining",
+              "note": "Jacob of Joseph: \"I have not seen him until now.\""
+            },
+            {
+              "ref": "Gen.15.16",
+              "note": "The second הֵנָּה of the verse: \"the iniquity of the Amorite is not yet (עַד־הֵנָּה) full\"."
+            },
+            {
+              "ref": "Num.14.19",
+              "note": "\"as you have forgiven this people from Egypt until now\"."
+            },
+            {
+              "ref": "1Sa.1.16",
+              "note": "Hannah: \"out of my great complaint and grief I have spoken until now\"."
+            },
+            {
+              "ref": "Psa.71.17",
+              "note": "\"God, you have taught me from my youth, and until now I declare your wonders.\""
+            },
+            {
+              "ref": "2Sa.20.16",
+              "note": "Of place: \"Come near, as far as here, that I may speak to you.\""
+            },
+            {
+              "ref": "2Ki.8.7",
+              "note": "Of place: \"The man of God has come as far as here.\""
+            },
+            {
+              "ref": "Jer.51.64",
+              "note": "Of a writing: עַד־הֵנָּה דִּבְרֵי יִרְמְיָהוּ, \"Thus far the words of Jeremiah\"; so Jer 48:47, \"thus far the judgment of Moab\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὧδε",
+          "gloss": "here, hither",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 45:5 word 10",
+              "note": "ὧδε for הֵנָּה, \"you sold me here\"; ὧδε renders הֵנָּה 27 times in the alignment."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JOS 3:9 word 7",
+              "note": "προσαγάγετε ὧδε for גֹּשׁוּ הֵנָּה."
+            },
+            {
+              "ref": "Mat.14.18",
+              "note": "\"Bring them here to me.\""
+            },
+            {
+              "ref": "Jhn.20.27",
+              "note": "Jesus to Thomas: φέρε τὸν δάκτυλόν σου ὧδε, \"Bring your finger here.\""
+            },
+            {
+              "ref": "Rev.4.1",
+              "note": "ἀνάβα ὧδε, \"Come up here\", the words of Pro 25:7, עֲלֵה הֵנָּה; so Rev 11:12."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "פֹּה",
+            "note": "\"here\", of rest in a place, beside הֵנָּה of coming to it.",
+            "evidence": [
+              {
+                "ref": "Jos.18.6"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הָלְאָה",
+            "note": "\"onward, beyond\": the far side, against הֵנָּה the near side.",
+            "evidence": [
+              {
+                "ref": "1Sa.20.21"
+              },
+              {
+                "ref": "1Sa.20.22"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עַד־הֵנָּה",
+            "gloss": "as far as here; until now, thus far",
+            "evidence": [
+              {
+                "ref": "1Sa.7.12"
+              },
+              {
+                "ref": "Gen.44.28"
+              },
+              {
+                "ref": "Num.14.19"
+              },
+              {
+                "ref": "Psa.71.17"
+              },
+              {
+                "ref": "2Ki.8.7"
+              },
+              {
+                "ref": "Jer.51.64"
+              },
+              {
+                "ref": "1Ch.9.18"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵנָּה וָהֵנָּה",
+            "gloss": "this way and that, here and there",
+            "evidence": [
+              {
+                "ref": "Jos.8.20"
+              },
+              {
+                "ref": "1Ki.20.40"
+              },
+              {
+                "ref": "2Ki.2.8"
+              },
+              {
+                "ref": "2Ki.2.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הֵן",
+      "lang": "arc",
+      "root": "הנ",
+      "pos": "conjunction",
+      "bdb": [
+        "xe.ai.aa"
+      ],
+      "cognate_ids": [
+        "ar-in",
+        "sab-hn",
+        "arc-hen"
+      ],
+      "gloss": "if; whether",
+      "summary": "The Aramaic of Daniel and Ezra uses הֵן only as \"if\" and \"whether\", sixteen times; for \"look\" it has other words (אֲלוּ, אֲרוּ, הָא). It is the same word as Hebrew הֵן, whose \"if\" is found in the later books beside it (2Ch 7:13; Hag 2:12), and it does the work of Hebrew אִם; the Peshitta's ܐܢ \"if\" (see the entry for אִם) is the same particle with the ה worn down. The count from its key (113) is by spelling and takes in the Hebrew הֵן.",
+      "senses": [
+        {
+          "id": "arc-hen-if",
+          "gloss": "if",
+          "definition": "It sets a condition, often in a pair: \"if you do … ; but if not (וְהֵן לָא) …\".",
+          "kin": [
+            "hen-if"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.3.15",
+              "role": "defining",
+              "note": "Nebuchadnezzar: \"Now if (הֵן) you are ready … to fall down and worship the image that I have made; but if you do not worship (וְהֵן לָא תִסְגְּדוּן), in that hour you will be thrown into the furnace.\""
+            },
+            {
+              "ref": "Dan.3.17",
+              "role": "defining",
+              "note": "The three answer in the same form: \"If it be so (הֵן אִיתַי), our God whom we serve is able to deliver us\"; verse 18, \"but if not (וְהֵן לָא), be it known to you, O king, that we will not serve your gods\"."
+            },
+            {
+              "ref": "Dan.2.5",
+              "note": "\"If you do not make known to me the dream and its interpretation, you will be cut in pieces\"; verse 6, \"but if you show the dream … you will receive gifts\"."
+            },
+            {
+              "ref": "Dan.5.16",
+              "note": "\"Now if you can read the writing … you will be clothed in purple.\""
+            },
+            {
+              "ref": "Ezr.4.13",
+              "note": "\"if this city is built and the walls finished, they will not pay tribute\"; so 4:16."
+            },
+            {
+              "ref": "Ezr.5.17",
+              "note": "The first הֵן of the verse, a polite condition: \"And now, if it seems good to the king, let search be made.\""
+            }
+          ]
+        },
+        {
+          "id": "arc-hen-whether",
+          "gloss": "whether; if perhaps",
+          "definition": "After a verb of searching or in a hope: \"whether it is so\", \"in case\".",
+          "evidence": [
+            {
+              "ref": "Ezr.5.17",
+              "role": "defining",
+              "note": "The second הֵן: \"let search be made in the king's treasure house … whether it is so (הֵן אִיתַי) that a decree was made by Cyrus the king\"."
+            },
+            {
+              "ref": "Dan.4.24",
+              "note": "Daniel's counsel: \"break off your sins by righteousness … if perhaps there may be a lengthening of your ease\"."
+            }
+          ],
+          "senses": [
+            {
+              "id": "arc-hen-whether-or",
+              "gloss": "whether … or (repeated)",
+              "definition": "Repeated before each of a list of alternatives.",
+              "evidence": [
+                {
+                  "ref": "Ezr.7.26",
+                  "role": "defining",
+                  "note": "הֵן לְמוֹת הֵן לִשְׁרֹשִׁי הֵן־לַעֲנָשׁ נִכְסִין וְלֶאֱסוּרִין, \"whether to death, or to banishment, or to confiscation of goods and to imprisonment\"."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐάν",
+          "gloss": "if",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DAN 2:5 word 9",
+              "note": "ἐάν for הֵן לָא; εἰ in Ezra (EZR 5:17 word 2)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "וְהֵן לָא",
+            "gloss": "but if not",
+            "evidence": [
+              {
+                "ref": "Dan.3.15"
+              },
+              {
+                "ref": "Dan.3.18"
+              },
+              {
+                "ref": "Dan.2.5"
+              }
+            ]
+          },
+          {
+            "phrase": "הֵן … הֵן",
+            "gloss": "whether … or",
+            "evidence": [
+              {
+                "ref": "Ezr.7.26"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-hn",
+      "lang": "uga",
+      "form": "𐎅𐎐",
+      "translit": "hn",
+      "gloss": "look, behold (clause-opening interjection)",
+      "relation": "cognate",
+      "note": "The Hebrew הֵן in the same letters and the same place, at the head of its clause. Ugaritic builds on it as Hebrew builds הִנֵּה: hnn, hnny, and the demonstrative hnd \"this\" (hn with d).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 81, §58.1, interjections introducing a clause",
+          "note": "\"The particles hn 'behold, lo' and its derivatives hnn, hnny, and hl (and perhaps hlm) usually occur at the beginning of a clause.\""
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 105, §68, function of interjections",
+          "note": "\"The deictic interjections, roughly 'behold,' are hn (2.33:27, 30; 1.16:III:14-15); mk (1.15:III:22); and perhaps also hlm.\""
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 184, glossary, hn /hin/(?)",
+          "note": "KTU 1.23:46; 2.33:27; 1.14:III:14: interjection \"behold\"; compares Hebrew hēn, and with a query Arabic ʾinna and Akkadian annû."
+        }
+      ]
+    },
+    {
+      "id": "phn-hn",
+      "lang": "phn",
+      "form": "𐤄𐤍",
+      "translit": "hn; Neo-Punic yn, ynny",
+      "gloss": "presentative particle; here is, here are",
+      "relation": "cognate",
+      "note": "Phoenician and Punic have the word with both of הִנֵּה's chief uses: opening a statement, and \"here is\" (Latin ecce) with a noun, as in \"here are their names\".",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 159, HN I",
+          "note": "\"[Heb. hinnē, hēn] 1. presentative particle, introducing a declarative sentence\" (Poenulus 938, 932/33); \"2. deictic particle: HERE IS [Lat. ecce]\": Mactar B IV 2, \"Here are their names.\""
+        }
+      ]
+    },
+    {
+      "id": "ar-inna",
+      "lang": "ar",
+      "form": "إِنَّ",
+      "translit": "ʾinna",
+      "gloss": "verily, certainly (corroborating particle opening a statement); also yes",
+      "relation": "cognate",
+      "note": "It stands first in its sentence and presents what follows as sure, often with nothing to translate it by, as הִנֵּה does; and it takes the pronoun endings (إِنَّهُ, إِنِّي) as הִנֵּה does (הִנּוֹ, הִנְנִי). It has ʾ where Hebrew has h, the same exchange as in Arabic إِنْ, Ṭayyiʾ هِنْ, \"if\".",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 109, art. ان, إِنَّ",
+          "note": "\"it is a corroborative particle … [and may generally be rendered by Verily, or certainly, or the like … though it often seems to be nothing more than a sign of inception, which can hardly be rendered at all in English]\"; \"The former must be used when it occurs inceptively\"; and Ibn-Ez-Zubeyr's use of it \"in the sense of نَعَمْ\" [yes]."
+        }
+      ]
+    },
+    {
+      "id": "sab-an",
+      "lang": "sem",
+      "form": "𐩱𐩬",
+      "translit": "ʾn",
+      "gloss": "behold, lo! (Sabaean)",
+      "relation": "cognate",
+      "note": "Sabaean, with ʾ as in Arabic: \"he wrote this inscription: lo! Abraha\". Cited from one inscription.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 22, 'N, ij. ʾn (C541/4)",
+          "note": "\"BEHOLD, LO! [Ar ʾinna, Eth ʾen, id.]\"; the same article gives b-ʾn \"if, when\" (R3910/5), compared with Arabic ʾin."
+        }
+      ]
+    },
+    {
+      "id": "arc-hen",
+      "lang": "arc",
+      "form": "הֵן, הֵין",
+      "translit": "hēn",
+      "gloss": "here is, behold; if; whether … or; yes (Mishnaic Hebrew and the Aramaic of the Targums and Talmud)",
+      "relation": "cognate",
+      "note": "Later Jewish usage keeps both senses in the one word, \"here is, behold\" and \"if\" (with הן … הן \"whether … or\", as Ezr 7:26), and adds \"yes\", the sense Arabic إِنَّ also has.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הֵן (second article), הֵין",
+          "note": "\"(b. h. הֵן) 1) here is, behold. הִינָּם, הִינָּן behold, they are … 2) if. Dan. II, 5 … הן … הן whether … or. Ezra VII, 26 … 3) yes\"; s.v. הֵין: \"(= b. h. הֵן) behold!, now.\""
+        }
+      ]
+    },
+    {
+      "id": "ar-in",
+      "lang": "ar",
+      "form": "إِنْ",
+      "translit": "ʾin; Ṭayyiʾ hin",
+      "gloss": "if",
+      "relation": "cognate",
+      "note": "The Arabic conditional, which the tribe of Ṭayyiʾ pronounced هِنْ, with the h of Hebrew and Aramaic הֵן. It is also a cognate of Hebrew אִם (see that entry), which ends in m where these end in n.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 106, art. ان, إِنْ, first (conditional)",
+          "note": "\"as a conditional particle … إِنْ تَأْتِنِى آتِكَ [If thou come to me, I will come to thee] … for which the tribe of Teiyi say … هِنْ فَعَلْتَ فَعَلْتُ\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-hn",
+      "lang": "sem",
+      "form": "𐩠𐩬",
+      "translit": "hn",
+      "gloss": "when; if; because (Sabaean)",
+      "relation": "cognate",
+      "note": "Sabaean writes the conditional with h and n, as Aramaic does: \"if he defiles his weapons, let him pay a fine\".",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 114, HN I, cj. hn (C542/7; C548/2)",
+          "note": "\"(1) WHEN; IF [Ar ʾin, Mh hēn 'when; if.' Cf also Sab hm 'if']\"; \"(2) BECAUSE [Extension from conditional use.]\""
+        }
+      ]
+    },
+    {
+      "id": "phn-hn-here",
+      "lang": "phn",
+      "form": "𐤄𐤍",
+      "translit": "hn",
+      "gloss": "here",
+      "relation": "cognate",
+      "note": "The same two letters as the presentative particle, as an adverb of place: \"And so here do I lie in this coffin\"; \"Here she lies at the age of eighty years\".",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 159, HN II",
+          "note": "\"[Heb. hinnē; Ar. hunā] adv. HERE\": Byblos 13.1, \"And so here do I lie in this coffin\"; NP 130.6, \"Here she lies at the age of eighty years.\""
+        }
+      ]
+    },
+    {
+      "id": "phn-hn-hither",
+      "lang": "phn",
+      "form": "𐤄𐤍",
+      "translit": "hn",
+      "gloss": "hither",
+      "relation": "cognate",
+      "note": "With a verb of coming, as Hebrew הֵנָּה: a traveller's graffito at Abydos, \"I … came hither on the 2nd day of the month\".",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 159–160, HN III",
+          "note": "\"[Heb. hēnnā] adv. HITHER\": \"I, Abdubast son of Sidyaton, came hither <to Abydos> on the 2nd day of the month of ḤYR.\""
+        }
+      ]
+    },
+    {
+      "id": "uga-hnny",
+      "lang": "uga",
+      "form": "𐎅𐎐𐎐𐎊",
+      "translit": "hnny",
+      "gloss": "here",
+      "relation": "cognate",
+      "note": "One of the forms Ugaritic builds on hn \"behold\", used of place in letters.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 185, glossary, hnny",
+          "note": "KTU 2.38:6: \"here\"; p. 81, §58.1, names hnny among the derivatives of hn \"behold, lo\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-hn-hither",
+      "lang": "uga",
+      "form": "𐎅𐎐",
+      "translit": "hn, /hina/(?)",
+      "gloss": "hither(?)",
+      "relation": "possible",
+      "note": "One place in a letter, read with a query; if right, it is Hebrew הֵנָּה without the ending.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 184, glossary, hn /hina/(?)",
+          "note": "KTU 2.33:31: \"hither\"(?); compares Hebrew hēnnā and Arabic hunā."
+        }
+      ]
+    },
+    {
+      "id": "ar-huna",
+      "lang": "ar",
+      "form": "هُنَا",
+      "translit": "hunā",
+      "gloss": "here, in this place (near the speaker)",
+      "relation": "cognate",
+      "note": "The Arabic adverb of the near place, set against ثَمَّ and هُنَاكَ \"there\" as Hebrew הֵנָּה is against הָלְאָה. Lane's lexicon has no article of its own for it (it falls in the unfinished part), so it is cited where Lane defines it in passing.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 350, art. ثم, ثَمَّ",
+          "note": "\"There; syn. هُنَاكَ … denoting a place that is remote from the speaker, like as هُنَا denotes that which is near\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic هنا (hunā), adv",
+          "url": "https://en.wiktionary.org/wiki/%D9%87%D9%86%D8%A7",
+          "note": "\"here, in this place\"."
+        }
+      ]
+    },
+    {
+      "id": "akk-annisha",
+      "lang": "akk",
+      "form": "annîša",
+      "translit": "annîša, annîš",
+      "gloss": "hither, here",
+      "relation": "possible",
+      "note": "Akkadian forms its \"here\" and \"hither\" (annîš, annîša, annaka, annânu) on annû \"this\", which begins with a vowel where Hebrew has h. The likeness to הֵנָּה is of sense and of the n; whether ann- and hn are one base is not shown here, so it is kept as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000039580, annîša [here] AV",
+          "note": "\"hither\"; with armep x000007040, annîš [here] AV, \"here; hither\", and armep x000004080, annû [this] DP."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "kingdom-of-god",
+      "statement": "What Yahweh points to with this word as coming is spelled out by the prophets. \"Look, days are coming … when I will raise up for David a righteous branch, and a king shall reign and act wisely, and shall do justice and righteousness in the land\" (Jer 23:5); \"look, days are coming … when I will turn the captivity of my people Israel and Judah … and bring them back to the land that I gave to their fathers\" (Jer 30:3); \"look, your king is coming to you … and his rule shall be from sea to sea, and from the river to the ends of the earth\" (Zec 9:9–10); \"look, a king shall reign in righteousness\" (Isa 32:1); \"look, I am creating new heavens and a new earth\" (Isa 65:17). In Daniel's vision the Aramaic word of the same use shows \"one like a son of man\" coming with the clouds of heaven, to whom dominion is given over all peoples (Dan 7:13–14), the kingdom \"under the whole heaven\" (Dan 7:27). The New Testament repeats the announcements with ἰδού: \"Look, your king is coming to you\" (Mat 21:5); \"Look, he is coming with the clouds\" (Rev 1:7); \"Look, the tabernacle of God is with men … Look, I am making all things new\" (Rev 21:3, 5). From the verses: the thing held up to be looked for is a king of David's line reigning in the land and to the ends of the earth, Israel brought back, and God dwelling with men; it is announced as already in sight because he who speaks is about to do it.",
+      "evidence": [
+        {
+          "ref": "Jer.23.5"
+        },
+        {
+          "ref": "Jer.30.3"
+        },
+        {
+          "ref": "Zec.9.9",
+          "to": "Zec.9.10"
+        },
+        {
+          "ref": "Isa.32.1"
+        },
+        {
+          "ref": "Isa.65.17"
+        },
+        {
+          "ref": "Dan.7.13",
+          "to": "Dan.7.14"
+        },
+        {
+          "ref": "Dan.7.27"
+        },
+        {
+          "ref": "Mat.21.5"
+        },
+        {
+          "ref": "Rev.1.7"
+        },
+        {
+          "ref": "Rev.21.3"
+        },
+        {
+          "ref": "Rev.21.5"
+        }
+      ]
+    },
+    {
+      "topic": "messiah",
+      "statement": "The one whom Yahweh presents with this word is described as he presents him. \"Look, the virgin is with child and is bearing a son\" (Isa 7:14; Mat 1:23): he is born of a woman. \"Look, my servant, whom I uphold, my chosen, in whom my soul delights; I have put my spirit upon him\" (Isa 42:1), which Matthew says was fulfilled in Jesus (Mat 12:17–18): he is Yahweh's servant, chosen and upheld by him, and the spirit he has is given him. \"Look, my servant shall act wisely; he shall be exalted\" (Isa 52:13). \"Look, a man whose name is Branch … he shall build the temple of Yahweh\" (Zec 6:12): he is called a man. And he speaks as a servant speaks: \"Look, I have come … to do your will, my God\" (Psa 40:8–9; Heb 10:7). From the verses: the Christ whom God holds up to Israel is a man, born of a woman, God's servant who does God's will and receives God's spirit; he who says \"look\" and he who is looked at are two, God and the servant he has chosen.",
+      "evidence": [
+        {
+          "ref": "Isa.7.14"
+        },
+        {
+          "ref": "Mat.1.23"
+        },
+        {
+          "ref": "Isa.42.1"
+        },
+        {
+          "ref": "Mat.12.17",
+          "to": "Mat.12.18"
+        },
+        {
+          "ref": "Isa.52.13"
+        },
+        {
+          "ref": "Zec.6.12"
+        },
+        {
+          "ref": "Psa.40.8",
+          "to": "Psa.40.9"
+        },
+        {
+          "ref": "Heb.10.7"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Several of the plain facts that scripture holds up with \"look\" are about man's end. Yahweh God said, \"Look, the man has become as one of us, knowing good and evil; and now, lest he put out his hand and take also of the tree of life, and eat, and live for ever\", and sent him out of the garden (Gen 3:22): life for ever was not in him, and the way to it was shut. \"Look, I am going to die\" (Esau, Gen 25:32); \"Look, I am dying\" (Israel, Gen 48:21); \"Look, your days have drawn near to die\" (Yahweh to Moses, Deu 31:14). \"Look, you have made my days handbreadths, and my lifetime is as nothing before you; every man standing is altogether vapour\" (Psa 39:6). \"Look, all the souls are mine … the soul that sins, it shall die\" (Ezk 18:4). From the verses: death is the end set before every man, the soul is what dies, and endless life is something man was barred from, not something he has.",
+      "evidence": [
+        {
+          "ref": "Gen.3.22"
+        },
+        {
+          "ref": "Gen.25.32"
+        },
+        {
+          "ref": "Gen.48.21"
+        },
+        {
+          "ref": "Deu.31.14"
+        },
+        {
+          "ref": "Psa.39.6"
+        },
+        {
+          "ref": "Ezk.18.4"
+        }
+      ]
+    },
+    {
+      "topic": "here-i-am",
+      "statement": "הִנֵּנִי is the answer of the one who is called. Abraham gives it to God (Gen 22:1), Moses at the bush (Exo 3:4), Samuel in the night (1Sa 3:4), Isaiah when he hears \"Whom shall I send?\" (Isa 6:8); in each case a charge follows and is taken up. The psalm gives the same answer, \"Look, I have come … to do your will, my God, I delight\" (Psa 40:8–9), and the letter to the Hebrews puts it in the mouth of Christ coming into the world, in place of sacrifice and offering (Heb 10:7). Mary and Ananias answer so (Luk 1:38; Act 9:10). Yahweh promises the same word in return to those who call on him and put away oppression: \"then you will call, and Yahweh will answer; you will cry, and he will say, Here I am\" (Isa 58:9). From the verses: what God asks of those he calls is the presenting of oneself to do his will, which his son gave fully; and to those who so answer, he answers.",
+      "evidence": [
+        {
+          "ref": "Gen.22.1"
+        },
+        {
+          "ref": "Exo.3.4"
+        },
+        {
+          "ref": "1Sa.3.4"
+        },
+        {
+          "ref": "Isa.6.8"
+        },
+        {
+          "ref": "Psa.40.8",
+          "to": "Psa.40.9"
+        },
+        {
+          "ref": "Heb.10.7"
+        },
+        {
+          "ref": "Luk.1.38"
+        },
+        {
+          "ref": "Act.9.10"
+        },
+        {
+          "ref": "Isa.58.9"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. ROOT: keyed הנה, the key the database files הִנֵּה (e.bz.ab) and הֵנָּה (e.bz.ac) under; no verb of these letters is behind them (the later הנה \"enjoy\" is another word, not in scripture), so like כִּי and אִם the entry is keyed by the particle's own consonants. Hebrew הֵן (e.bz.aa) and Aramaic הֵן (xe.ai.aa) are words here with root הנ, as the database keys them (cons הנ; the database gives e.bz.aa no root, so `lexicon-brief הנה` does not list it; `lexicon-brief הנ` lists the spelling under xe.ai.aa). COUNTS: e.bz.aa, xe.ai.aa and לָהֵן's xl.af.aa are each given all 113 tokens spelled הֵן, and e.bz.aa is also given the about 250 suffixed forms of הִנֵּה (הִנְנִי, הִנָּם and the rest; the brief marks them \"also e.bz.aa\"), so lexicon-support shows 363 uses for Hebrew הֵן; by the references the Hebrew particle has 87, לָהֵן 10 and the Aramaic particle 16 (Dan 2:5, 6, 9; 3:15 twice, 17, 18; 4:24; 5:16; Ezr 4:13, 16; 5:17 twice; 7:26 three times). e.bz.ac's 75 include about 25 of the pronoun הֵנָּה \"they\" (e.bz.ad, with הֵמָּה: left to that entry). LEFT OUT, each for the reviewer to place: (1) Aramaic אֲלוּ (xa.ap.aa; Dan 2:31; 4:7, 10; 7:8 twice) and אֲרוּ (xa.bg.aa; Dan 7:2, 5, 6, 7, 13), \"look, and there was\". They do וְהִנֵּה's work in Daniel's visions and are cited under usage, but nothing found ties their form to הנה: Jastrow sets אֲרוּ with Targumic אֲרֵי \"behold; for, that\" and אֲלוּ as its variant; Segert has Ugaritic hl, hlm \"behold\" and Krahmalkov Punic HLM (p. 159, \"cf. Ug. hlm, hl\"), a possible kin of אֲלוּ with Hebrew הֲלֹא. By the rule that put Aramaic הֵן here and not under אִם (form, not function), they want their own small entry. (2) הֵא (e.ad.aa; Gen 47:23; Ezk 16:43), Aramaic הָא (xe.ab.aa; Dan 3:25) and הֵא (xe.ac.aa; Dan 2:43), root הא, with the Peshitta's ܗܐ \"look\" (SEDRA lexeme 767, about 270 uses, its word for ἰδού) and ܗܪܟܐ \"here\" (lexeme 819): the bare h- pointing element, plausibly the base of הֵן itself, but that is a reconstruction and not shown from a dictionary here; a הא entry should hold them and name this entry. (3) לָהֵן (xl.af.aa \"therefore\": Dan 2:6, 9; 4:24, and Hebrew Rut 1:13; xl.ag.aa \"except, but\": Dan 2:11, 30; 3:28; 6:6, 8, 13; Ezr 5:12), keyed להנ: by its uses it is לָא + הֵן \"if not\" and לְ + הֵן, so it could be added here as a word; left unclaimed in case another draft has the key. GREEK: the brief lists ἰδού as a loan because Thayer says the New Testament uses it \"in imitation of the Hebr. הִנֵּה\"; it is a Greek word and is recorded as a rendering. Jhn 19:5 is ἴδε in the TR and ἰδού in other texts, so it is not cited. COGNATES not followed: Ge'ez (Biella compares \"Eth ʾen\" with Sabaean ʾn; a Ge'ez nāhu, na- \"behold\" is reported) not checked in Dillmann or Leslau; Akkadian anumma \"now, herewith\" and annû \"this\" (Segert compares annû with a query) and the Amarna letters' use not checked in CAD; DULAT for Ugaritic hn, hnny, hnd; Old Aramaic hn \"if\" and hʾ \"behold\" in the inscriptions (Hoftijzer-Jongeling); Payne Smith for ܗܐ and ܐܢ. Segert's page numbers are from the OCR's running heads; Krahmalkov's from the page footers; his transliterations are quoted in English translation only because the OCR garbles the Semitic letters. The Lane citation for هُنَا is incidental (art. ثم), since Lane's article for it was never written. UNSURE: whether sab-an and ar-inna should be `possible` (Segert queries the Arabic); whether the `messiah` and `mortality` doctrine items belong on a particle or should move to the entries for עֶבֶד and מוּת; the verse counts in the word summaries are from the UHB word list and approximate."
+}
