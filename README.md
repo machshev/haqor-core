@@ -110,9 +110,18 @@ app ships — and what `Bible::open` reads — is a single curated `haqor.db`,
 built from all four:
 
 ```sh
+nix develop -c bash scripts/rebuild-runtime-db.sh        # full rebuild, zstd
+nix develop -c bash scripts/rebuild-runtime-db.sh none   # full rebuild, uncompressed
 cargo run --release -- db gen-runtime                      # data/haqor.db
 cargo run --release -- db gen-runtime --blob-codec zstd    # ~8 MiB smaller
 ```
+
+The full rebuild runs `gen-bible`, `gen-lexicon`, `gen-hebrew --force`,
+`gen-sedra`, and `gen-runtime` in dependency order. It initializes the
+`HebrewLexicon` and `morphhb` Git submodules if they are missing, which needs
+network access on the first run. When a sibling `haqor` checkout exists, it
+also copies the new database into the app's assets and
+refreshes its local install marker.
 
 It resolves every word's analysis once at build time, packs verse references,
 interns repeated strings and drops what only the generator needed — 87 MiB of
@@ -124,6 +133,17 @@ the database. See [ADR 6](doc/adr/0006-single-runtime-database.md).
 Tagged releases publish the validated zstd runtime database with a SHA-256
 checksum and a manifest binding it to the exact core commit. The app consumes
 that asset when available and retains generation fallback for older tags.
+For a quick local starting point, download the latest release database:
+
+```sh
+bash scripts/download-release-db.sh
+```
+
+This needs `gh`, `jq`, `sha256sum`, and `sqlite3`. It checks the release checksum,
+manifest, and SQLite integrity before replacing `data/haqor.db`. With a sibling
+`haqor` checkout, it also syncs the database into the app. The release database
+reflects its tagged core version; rebuild locally after changing generation
+sources or schema.
 
 `gen-runtime` is a prerequisite for everything that reads data: the CLI, the
 tests that need a corpus, and the app all open `haqor.db`. Regenerate it
