@@ -1,0 +1,3223 @@
+{
+  "id": "achar",
+  "root": "אחר",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "time",
+    "place",
+    "direction",
+    "order",
+    "prophecy"
+  ],
+  "gloss": "behind, after; other; latter, last; end; delay",
+  "summary": "The root is the hinder side: what is at the back in place and what comes after in time. From it come the preposition אַחַר / אַחֲרֵי “behind, after” (and so “following” a leader or a god), אָחוֹר “the back, backward”, אַחֲרוֹן “hinder, latter, last”, אַחֲרִית “the after-part, the end, what a thing comes to”, and the verb אָחַר “stay behind, delay”. אַחֵר “another, other” is the one that comes after the first. The east is the front and the west the back, so “behind” is also “west”; and time is faced the same way, so what lies behind is what is still to come. The cognates in Ugaritic, Phoenician, Moabite, Sabaic, Akkadian, Aramaic and Arabic carry the same range, all with ḫ behind the ח.",
+  "words": [
+    {
+      "lemma": "אַחַר",
+      "bdb": [
+        "a.cp.ac"
+      ],
+      "cognate_ids": [
+        "uga-ahr",
+        "phn-ahr",
+        "moab-ahr"
+      ],
+      "pos": "preposition",
+      "gloss": "behind; after",
+      "summary": "About 710 times, mostly in the plural construct form אַחֲרֵי, which alone takes suffixes (אַחֲרַי, אַחֲרֶיךָ, אַחֲרָיו). It is a noun in origin, “the hinder part” (2Sa 2:23, בְּאַחֲרֵי הַחֲנִית, “with the butt of the spear”), used as preposition, adverb (“afterwards”) and, with or without אֲשֶׁר, as conjunction (“after that”). With מִן it is “from behind, from following”.",
+      "senses": [
+        {
+          "id": "achar-behind",
+          "gloss": "behind (place)",
+          "definition": "At the back of a person or thing, on the side away from its face; set against “before” (לִפְנֵי).",
+          "kin": [
+            "achor-behind",
+            "acharon-behind"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.14.19",
+              "role": "defining",
+              "note": "The angel who went before the camp of Israel “went behind them” (מֵאַחֲרֵיהֶם), and the pillar of cloud moved from before them and stood behind them: before and behind set against each other."
+            },
+            {
+              "ref": "Gen.18.10",
+              "role": "defining",
+              "note": "Sarah was listening at the opening of the tent, וְהוּא אַחֲרָיו: “and it was behind him”."
+            },
+            {
+              "ref": "2Sa.2.23",
+              "role": "defining",
+              "note": "Abner struck him בְּאַחֲרֵי הַחֲנִית, “with the hinder end of the spear”, and the spear came out מֵאַחֲרָיו, “from behind him”: the noun and the preposition together."
+            },
+            {
+              "ref": "Gen.19.26",
+              "note": "Lot’s wife looked “from behind him”."
+            },
+            {
+              "ref": "Exo.11.5",
+              "note": "The slave girl “who is behind the mill”."
+            },
+            {
+              "ref": "Sng.2.9",
+              "note": "“Standing behind our wall.”"
+            },
+            {
+              "ref": "Isa.30.21",
+              "note": "“Your ears will hear a word from behind you.”"
+            },
+            {
+              "ref": "Jos.8.2",
+              "note": "An ambush set “from behind” the city."
+            },
+            {
+              "ref": "Isa.38.17",
+              "note": "“You have thrown all my sins behind your back.”"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "behind, to the west of",
+              "definition": "The east being in front (קֶדֶם), what is behind a place lies to its west.",
+              "evidence": [
+                {
+                  "ref": "Num.3.23",
+                  "role": "defining",
+                  "note": "The Gershonites camp אַחֲרֵי הַמִּשְׁכָּן יָמָּה: “behind the Dwelling, westward”; the text itself glosses behind as west."
+                },
+                {
+                  "ref": "Deu.11.30",
+                  "note": "Gerizim and Ebal are across the Jordan, “behind the road of the going in of the sun”."
+                },
+                {
+                  "ref": "Jdg.18.12",
+                  "note": "Mahaneh Dan is אַחֲרֵי קִרְיַת יְעָרִים, behind (west of) Kiriath Jearim."
+                }
+              ]
+            },
+            {
+              "gloss": "from behind, from following (מֵאַחֲרֵי)",
+              "definition": "With מִן: away from the back of, and so leaving off following.",
+              "evidence": [
+                {
+                  "ref": "2Sa.7.8",
+                  "role": "defining",
+                  "note": "“I took you from the pasture, from after the flock (מֵאַחַר הַצֹּאן), to be ruler over my people.”"
+                },
+                {
+                  "ref": "Num.14.43",
+                  "role": "defining",
+                  "note": "“You have turned back from after Yahweh (מֵאַחֲרֵי יַהְוֶה), and Yahweh will not be with you.”"
+                },
+                {
+                  "ref": "Amo.7.15",
+                  "note": "“Yahweh took me from after the flock.”"
+                },
+                {
+                  "ref": "1Sa.15.11",
+                  "note": "Saul “has turned back from after me”."
+                },
+                {
+                  "ref": "Jos.22.16",
+                  "note": "“To turn today from after Yahweh.”"
+                },
+                {
+                  "ref": "Rut.1.16",
+                  "note": "“Do not press me to forsake you, to turn back from after you.”"
+                },
+                {
+                  "ref": "Jer.32.40",
+                  "note": "Yahweh’s side of it: “I will not turn back from after them, to do them good.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "achar-follow",
+          "gloss": "after, following (a person, a god)",
+          "definition": "Behind one who is moving: going where he goes, whether to pursue him or to be led by him. Of Yahweh and of other gods, “walking after” is serving and obeying.",
+          "evidence": [
+            {
+              "ref": "Deu.13.5",
+              "role": "defining",
+              "note": "אַחֲרֵי יַהְוֶה אֱלֹהֵיכֶם תֵּלֵכוּ: “after Yahweh your God you shall walk”, explained by what follows: fear him, keep his commandments, listen to his voice, serve him, cling to him."
+            },
+            {
+              "ref": "1Ki.18.21",
+              "role": "defining",
+              "note": "“If Yahweh is God, go after him; and if Baal, go after him.”"
+            },
+            {
+              "ref": "1Ki.19.20",
+              "role": "defining",
+              "note": "Elisha “ran after Elijah” and said, “let me go after you”: the follower behind his master."
+            },
+            {
+              "ref": "Deu.6.14",
+              "note": "“You shall not go after other gods.”"
+            },
+            {
+              "ref": "Num.14.24",
+              "note": "Caleb וַיְמַלֵּא אַחֲרָי: “was full after me”, followed wholly."
+            },
+            {
+              "ref": "Deu.1.36",
+              "note": "“Because he was full after Yahweh.”"
+            },
+            {
+              "ref": "1Ki.11.6",
+              "note": "Solomon “was not full after Yahweh like David his father”."
+            },
+            {
+              "ref": "1Sa.12.14",
+              "note": "People and king are to “be after Yahweh your God”."
+            },
+            {
+              "ref": "Jer.2.2",
+              "note": "“Your going after me in the wilderness.”"
+            },
+            {
+              "ref": "Hos.11.10",
+              "note": "“They will go after Yahweh; he will roar like a lion.”"
+            },
+            {
+              "ref": "2Ki.17.15",
+              "note": "“They went after the vapour and became vapour”: a man becomes like what he follows."
+            },
+            {
+              "ref": "Exo.34.15",
+              "note": "The nations “whore after their gods” (זָנוּ אַחֲרֵי אֱלֹהֵיהֶם)."
+            },
+            {
+              "ref": "Num.15.39",
+              "note": "“You shall not explore after your heart and after your eyes, after which you go whoring.”"
+            },
+            {
+              "ref": "Exo.23.2",
+              "note": "“You shall not be after many to do evil.”"
+            },
+            {
+              "ref": "Sng.1.4",
+              "note": "“Draw me after you; let us run.”"
+            },
+            {
+              "ref": "Mat.4.19",
+              "note": "Jesus’ call in the same idiom: δεῦτε ὀπίσω μου, “come after me”."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "after, in pursuit of",
+              "definition": "With verbs of pursuing, sending and looking: behind one who flees or goes away.",
+              "evidence": [
+                {
+                  "ref": "Exo.14.8",
+                  "role": "defining",
+                  "note": "Pharaoh “pursued after the sons of Israel” (וַיִּרְדֹּף אַחֲרֵי)."
+                },
+                {
+                  "ref": "1Sa.24.15",
+                  "role": "defining",
+                  "note": "“After whom has the king of Israel come out? After whom are you pursuing? After a dead dog, after one flea!”"
+                },
+                {
+                  "ref": "Gen.31.23",
+                  "note": "Laban “pursued after him a seven days’ journey”."
+                },
+                {
+                  "ref": "Jos.2.7",
+                  "note": "“The men pursued after them … and they shut the gate after the pursuers had gone out after them”: pursuit and time in one verse."
+                },
+                {
+                  "ref": "Lev.26.33",
+                  "note": "“I will draw out a sword after you.”"
+                },
+                {
+                  "ref": "2Ki.19.21",
+                  "note": "The daughter of Jerusalem “shakes her head after you”, at the back of the retreating Assyrian."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "achar-after",
+          "gloss": "after (time)",
+          "definition": "Later than an event, a time or a person: with a noun, an infinitive, or a clause (alone, or with אֲשֶׁר or כֵן).",
+          "kin": [
+            "acharon-latter",
+            "arc-achare-after"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.5.4",
+              "role": "defining",
+              "note": "“The days of Adam after he fathered Seth (אַחֲרֵי הוֹלִידוֹ אֶת־שֵׁת) were 800 years”: the years counted from the birth onward."
+            },
+            {
+              "ref": "Jos.1.1",
+              "role": "defining",
+              "note": "“It happened after the death of Moses.”"
+            },
+            {
+              "ref": "Gen.15.1",
+              "role": "defining",
+              "note": "אַחַר הַדְּבָרִים הָאֵלֶּה: “after these things”, the narrative’s link to what went before."
+            },
+            {
+              "ref": "Gen.9.28",
+              "note": "“Noah lived after the flood 350 years.”"
+            },
+            {
+              "ref": "Gen.10.1",
+              "note": "“Sons were born to them after the flood.”"
+            },
+            {
+              "ref": "Jos.9.16",
+              "note": "אַחֲרֵי אֲשֶׁר כָּרְתוּ לָהֶם בְּרִית: “after they had cut a covenant with them”, as conjunction with אֲשֶׁר."
+            },
+            {
+              "ref": "Jer.41.16",
+              "note": "אַחַר הִכָּה: “after he had struck Gedaliah”, as conjunction with no אֲשֶׁר."
+            },
+            {
+              "ref": "Gen.15.14",
+              "note": "וְאַחֲרֵי־כֵן יֵצְאוּ: “and after that they will come out with great possessions.”"
+            },
+            {
+              "ref": "Jer.31.33",
+              "note": "“The covenant that I will cut with the house of Israel after those days”; Heb 8:10 μετὰ τὰς ἡμέρας ἐκείνας."
+            },
+            {
+              "ref": "Jol.3.1",
+              "note": "וְהָיָה אַחֲרֵי־כֵן: “and it will be after this, I will pour out my spirit on all flesh”; Peter gives it as “in the last days” (Act 2:17)."
+            },
+            {
+              "ref": "Dan.9.26",
+              "note": "“After the sixty-two sevens an anointed one will be cut off.”"
+            },
+            {
+              "ref": "Job.19.26",
+              "note": "וְאַחַר עוֹרִי נִקְּפוּ־זֹאת: “and after my skin has been struck off, yet from my flesh I shall see God.”"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "after, succeeding (a person)",
+              "definition": "Coming next in a line: the seed after a father, the king after a king, the builder next along the wall; and of what is left when a man is gone.",
+              "evidence": [
+                {
+                  "ref": "Gen.17.7",
+                  "role": "defining",
+                  "note": "“Between me and you and your seed after you (זַרְעֲךָ אַחֲרֶיךָ) throughout their generations.”"
+                },
+                {
+                  "ref": "2Sa.7.12",
+                  "role": "defining",
+                  "note": "“When your days are full and you lie down with your fathers, I will raise up your seed after you.”"
+                },
+                {
+                  "ref": "1Ki.1.13",
+                  "note": "“Solomon your son shall reign after me.”"
+                },
+                {
+                  "ref": "Num.25.13",
+                  "note": "A covenant of priesthood “for him and for his seed after him”."
+                },
+                {
+                  "ref": "Isa.43.10",
+                  "note": "“Before me no god was formed, and after me there will be none.”"
+                },
+                {
+                  "ref": "Ecc.3.22",
+                  "note": "“Who will bring him to see what will be after him?”"
+                },
+                {
+                  "ref": "Ecc.6.12",
+                  "note": "“Who will tell a man what will be after him under the sun?”"
+                },
+                {
+                  "ref": "Psa.49.18",
+                  "note": "“His glory will not go down after him.”"
+                },
+                {
+                  "ref": "Neh.3.16",
+                  "note": "אַחֲרָיו הֶחֱזִיק: “after him repaired Nehemiah son of Azbuk”, the next man along the wall."
+                }
+              ]
+            },
+            {
+              "id": "achar-afterwards",
+              "gloss": "afterwards (adverb)",
+              "definition": "Standing alone: then, after that.",
+              "evidence": [
+                {
+                  "ref": "Lev.14.19",
+                  "role": "defining",
+                  "note": "The priest makes the sin offering, וְאַחַר יִשְׁחַט אֶת־הָעֹלָה: “and afterwards he shall slaughter the burnt offering”."
+                },
+                {
+                  "ref": "Gen.33.7",
+                  "role": "defining",
+                  "note": "Leah and her children came near, “and afterwards Joseph and Rachel came near”."
+                },
+                {
+                  "ref": "Pro.24.27",
+                  "note": "“Prepare your work outside … afterwards you shall build your house.”"
+                },
+                {
+                  "ref": "Num.12.14",
+                  "note": "“Let her be shut out seven days, and afterwards she shall be gathered in.”"
+                },
+                {
+                  "ref": "Hos.3.5",
+                  "note": "After many days without king or sacrifice, אַחַר יָשֻׁבוּ: “afterwards the sons of Israel will return”."
+                },
+                {
+                  "ref": "Psa.73.24",
+                  "note": "“You guide me with your counsel, and afterwards you will take me to glory.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὀπίσω",
+          "gloss": "behind, after",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 13:5 word 1, אַחֲרֵי → ὀπίσω; DEU 6:14 word 3; 1KI 19:20 words 5 and 13; ὀπίσω renders אַחַר ×252"
+            },
+            {
+              "ref": "Mat.4.19",
+              "role": "defining",
+              "note": "δεῦτε ὀπίσω μου: “come after me”, the Hebrew “walk after”."
+            },
+            {
+              "ref": "Mat.16.24",
+              "note": "“If anyone wants to come after me (ὀπίσω μου ἐλθεῖν), let him deny himself and take up his cross.”"
+            },
+            {
+              "ref": "1Ti.5.15",
+              "note": "“Some have already turned aside after the adversary.”"
+            },
+            {
+              "ref": "Jud.1.7",
+              "note": "Sodom and Gomorrah “having gone after other flesh”."
+            },
+            {
+              "ref": "Rev.13.3",
+              "note": "“The whole earth wondered after the beast.”"
+            }
+          ]
+        },
+        {
+          "lemma": "μετά",
+          "gloss": "after (with the accusative)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "JER 31:33 word 9, אַחֲרֵי → μετὰ; JOL 3:1 word 2; HOS 3:5 word 1; μετά renders אַחַר ×253"
+            },
+            {
+              "ref": "Heb.8.10",
+              "role": "defining",
+              "note": "Jer 31:33 quoted: “after those days” (μετὰ τὰς ἡμέρας ἐκείνας); again in Heb 10:16."
+            },
+            {
+              "ref": "Heb.10.16"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "לִפְנֵי",
+            "note": "“Before, in front of”: in place and in time.",
+            "evidence": [
+              {
+                "ref": "Exo.14.19",
+                "role": "defining",
+                "note": "The angel goes from before them to behind them."
+              },
+              {
+                "ref": "Isa.43.10",
+                "role": "defining",
+                "note": "לְפָנַי … וְאַחֲרַי: “before me no god was formed, and after me there will be none.”"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הָלַךְ אַחֲרֵי",
+            "gloss": "walk after: follow, serve (Yahweh, or other gods)",
+            "evidence": [
+              {
+                "ref": "Deu.13.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.6.14"
+              },
+              {
+                "ref": "1Ki.18.21"
+              },
+              {
+                "ref": "Jer.2.5"
+              }
+            ]
+          },
+          {
+            "phrase": "מִלֵּא אַחֲרֵי",
+            "gloss": "be full after: follow wholly",
+            "evidence": [
+              {
+                "ref": "Num.14.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.1.36"
+              },
+              {
+                "ref": "Jos.14.8"
+              },
+              {
+                "ref": "1Ki.11.6"
+              }
+            ]
+          },
+          {
+            "phrase": "זָנָה אַחֲרֵי",
+            "gloss": "whore after (other gods, idols, one’s own eyes)",
+            "evidence": [
+              {
+                "ref": "Exo.34.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.17.7"
+              },
+              {
+                "ref": "Lev.20.6"
+              },
+              {
+                "ref": "Jdg.2.17"
+              },
+              {
+                "ref": "Num.15.39"
+              }
+            ]
+          },
+          {
+            "phrase": "רָדַף אַחֲרֵי",
+            "gloss": "pursue after",
+            "evidence": [
+              {
+                "ref": "Exo.14.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.31.23"
+              },
+              {
+                "ref": "Jos.2.7"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוּב מֵאַחֲרֵי",
+            "gloss": "turn back from after: leave off following",
+            "evidence": [
+              {
+                "ref": "Num.14.43",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.15.11"
+              },
+              {
+                "ref": "Jos.22.16"
+              },
+              {
+                "ref": "Num.32.15"
+              }
+            ]
+          },
+          {
+            "phrase": "זַרְעֲךָ אַחֲרֶיךָ",
+            "gloss": "your seed after you",
+            "evidence": [
+              {
+                "ref": "Gen.17.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.9.9"
+              },
+              {
+                "ref": "2Sa.7.12"
+              }
+            ]
+          },
+          {
+            "phrase": "אַחַר הַדְּבָרִים הָאֵלֶּה",
+            "gloss": "after these things",
+            "evidence": [
+              {
+                "ref": "Gen.15.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.22.1"
+              },
+              {
+                "ref": "Est.2.1"
+              }
+            ]
+          },
+          {
+            "phrase": "אַחֲרֵי־כֵן",
+            "gloss": "after this, afterwards",
+            "evidence": [
+              {
+                "ref": "Gen.15.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Jol.3.1"
+              },
+              {
+                "ref": "Jer.49.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אַחֵר",
+      "bdb": [
+        "a.cp.ab"
+      ],
+      "cognate_ids": [
+        "ar-akhar",
+        "phn-ahrym",
+        "sab-aakhr",
+        "arc-ochoran"
+      ],
+      "pos": "adjective",
+      "gloss": "another, other",
+      "summary": "About 165 times: feminine אַחֶרֶת, plural אֲחֵרִים, אֲחֵרוֹת. The other is the one that comes after the first: one more of the same, or one that is not this one. Sixty-odd of its uses are אֱלֹהִים אֲחֵרִים, “other gods”. One of the tokens counted here (1Ch 7:12) is the man’s name Aher.",
+      "senses": [
+        {
+          "id": "acher-another",
+          "gloss": "another, a further one",
+          "definition": "One more of the same kind, added to or put in the place of the first.",
+          "evidence": [
+            {
+              "ref": "Gen.4.25",
+              "role": "defining",
+              "note": "“God has appointed me another seed (זֶרַע אַחֵר) in place of Abel”: a second, in the place of the first."
+            },
+            {
+              "ref": "Gen.30.24",
+              "role": "defining",
+              "note": "Joseph’s name: “May Yahweh add to me another son (בֵּן אַחֵר).”"
+            },
+            {
+              "ref": "Gen.8.10",
+              "note": "“He waited another seven days.”"
+            },
+            {
+              "ref": "Gen.29.27",
+              "note": "“Another seven years.”"
+            },
+            {
+              "ref": "Gen.37.9",
+              "note": "“He dreamed yet another dream.”"
+            },
+            {
+              "ref": "Gen.26.21",
+              "note": "“They dug another well.”"
+            },
+            {
+              "ref": "Jer.36.28",
+              "note": "“Take another scroll and write on it all the former words that were on the first scroll.”"
+            },
+            {
+              "ref": "Exo.21.10",
+              "note": "“If he takes another (wife) for himself.”"
+            }
+          ]
+        },
+        {
+          "id": "acher-other",
+          "gloss": "other, different, someone else’s",
+          "definition": "Not this one but a different one; of persons, someone else, an outsider to whom a thing passes.",
+          "kin": [
+            "arc-ochoran-other",
+            "syc-other"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.10.6",
+              "role": "defining",
+              "note": "“You will be turned into another man”; verse 9, “God changed for him another heart”: other is changed, not the same."
+            },
+            {
+              "ref": "Isa.42.8",
+              "role": "defining",
+              "note": "“I am Yahweh, that is my name; and my glory I will not give to another (לְאַחֵר).”"
+            },
+            {
+              "ref": "1Sa.10.9"
+            },
+            {
+              "ref": "Num.14.24",
+              "note": "Caleb had “another spirit” with him, unlike the ten."
+            },
+            {
+              "ref": "Lev.6.4",
+              "note": "The priest takes off his clothes and puts on “other clothes”."
+            },
+            {
+              "ref": "Isa.28.11",
+              "note": "“With another tongue (בְלָשׁוֹן אַחֶרֶת) he will speak to this people”; 1Co 14:21 ἐν ἑτερογλώσσοις … ἑτέροις."
+            },
+            {
+              "ref": "Isa.65.15",
+              "note": "“His servants he will call by another name.”"
+            },
+            {
+              "ref": "Deu.29.27",
+              "note": "Yahweh “threw them into another land”."
+            },
+            {
+              "ref": "Deu.28.30",
+              "note": "“You will betroth a woman and another man will lie with her.”"
+            },
+            {
+              "ref": "Psa.109.8",
+              "note": "“Let another take his office”; applied to Judas in Act 1:20 (ἕτερος)."
+            },
+            {
+              "ref": "Job.31.8",
+              "note": "“Let me sow and another eat.”"
+            },
+            {
+              "ref": "Isa.65.22",
+              "note": "“They will not build and another dwell.”"
+            },
+            {
+              "ref": "Jdg.11.2",
+              "note": "“You are the son of another woman.”"
+            },
+            {
+              "ref": "Neh.7.33",
+              "note": "“The other Nebo”, to tell two places of one name apart."
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "other gods (אֱלֹהִים אֲחֵרִים)",
+              "definition": "Any god that is not Yahweh: the gods of the nations, which Israel is not to have, walk after or serve.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.3",
+                  "role": "defining",
+                  "note": "לֹא יִהְיֶה־לְךָ אֱלֹהִים אֲחֵרִים עַל־פָּנָי: “you shall have no other gods before my face.”"
+                },
+                {
+                  "ref": "Deu.6.14",
+                  "role": "defining",
+                  "note": "“You shall not go after other gods, of the gods of the peoples who are round about you”: the text says who they are."
+                },
+                {
+                  "ref": "Exo.34.14",
+                  "note": "“You shall not bow down to another god (לְאֵל אַחֵר), for Yahweh, Jealous is his name.”"
+                },
+                {
+                  "ref": "Jos.24.2",
+                  "note": "The fathers beyond the river “served other gods”."
+                },
+                {
+                  "ref": "Jdg.2.17",
+                  "note": "“They whored after other gods.”"
+                },
+                {
+                  "ref": "Jer.1.16",
+                  "note": "“They burned incense to other gods and bowed down to the works of their hands.”"
+                },
+                {
+                  "ref": "Psa.16.4",
+                  "note": "“Their sorrows will be many who hasten after another.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "acher-next",
+          "gloss": "next, following (of time)",
+          "definition": "The year, day or generation that comes after this one.",
+          "kin": [
+            "acharon-latter"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.17.21",
+              "role": "defining",
+              "note": "Isaac will be born “at this set time in the next year” (בַּשָּׁנָה הָאַחֶרֶת)."
+            },
+            {
+              "ref": "2Ki.6.29",
+              "role": "defining",
+              "note": "“I said to her on the next day (בַּיּוֹם הָאַחֵר).”"
+            },
+            {
+              "ref": "Jdg.2.10",
+              "note": "“Another generation arose after them (דּוֹר אַחֵר אַחֲרֵיהֶם), who did not know Yahweh”: the adjective beside the preposition."
+            },
+            {
+              "ref": "Jol.1.3",
+              "note": "“And their sons to the next generation.”"
+            },
+            {
+              "ref": "Psa.109.13",
+              "note": "“In the next generation let their name be blotted out.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἕτερος",
+          "gloss": "other, another",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 28:11 word 5, אַחֶרֶת → ἑτέρας; PSA 109:8 word 6, אַחֵר → ἕτερος; EXO 20:3 word 5; GEN 4:25 word 17; ἕτερος renders אַחֵר ×101"
+            },
+            {
+              "ref": "1Co.14.21",
+              "role": "defining",
+              "note": "Isa 28:11 quoted: “by men of other tongues and by other lips (ἐν χείλεσιν ἑτέροις) I will speak to this people.”"
+            },
+            {
+              "ref": "Act.1.20",
+              "role": "defining",
+              "note": "Psa 109:8 quoted of Judas: “his overseership let another (ἕτερος) take.”"
+            },
+            {
+              "ref": "Gal.1.6",
+              "note": "“Another gospel” (ἕτερον εὐαγγέλιον): other in the sense of different."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "רִאשׁוֹן",
+            "note": "“First, former”: the other is the one after the first.",
+            "evidence": [
+              {
+                "ref": "Jer.36.28",
+                "role": "defining",
+                "note": "“Another scroll … the first scroll.”"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֱלֹהִים אֲחֵרִים",
+            "gloss": "other gods",
+            "evidence": [
+              {
+                "ref": "Exo.20.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.6.14"
+              },
+              {
+                "ref": "Jos.24.16"
+              },
+              {
+                "ref": "Jer.35.15"
+              }
+            ]
+          },
+          {
+            "phrase": "דּוֹר אַחֵר",
+            "gloss": "another generation, the next generation",
+            "evidence": [
+              {
+                "ref": "Jdg.2.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.109.13"
+              },
+              {
+                "ref": "Jol.1.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אַחֲרִית",
+      "bdb": [
+        "a.cp.ah"
+      ],
+      "cognate_ids": [
+        "akk-ahritu",
+        "ar-akhir",
+        "sab-akhr-future"
+      ],
+      "pos": "noun",
+      "gloss": "after-part, end; outcome; future",
+      "gender": "f",
+      "summary": "Sixty-one times in the Hebrew (the sixty-second token counted is Daniel’s Aramaic, Dan 2:28). It is the after-part of a thing as against its רֵאשִׁית, its first part: the later part of a span of time, what a course of action comes to, the future a man has to hope for, and what is left of a people. It is not the stopping-point (that is קֵץ) but all that lies on the far side.",
+      "senses": [
+        {
+          "id": "acharit-end",
+          "gloss": "after-part, latter part, end",
+          "definition": "The later part of a thing or a time, set against its beginning (רֵאשִׁית).",
+          "kin": [
+            "acharon-last",
+            "syc-end"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.8.7",
+              "role": "defining",
+              "note": "“Though your beginning (רֵאשִׁיתְךָ) was small, your latter part (אַחֲרִיתְךָ) will grow very great.”"
+            },
+            {
+              "ref": "Job.42.12",
+              "role": "defining",
+              "note": "“Yahweh blessed the latter part of Job more than his beginning”: years of life followed, so the word is not the last moment."
+            },
+            {
+              "ref": "Deu.11.12",
+              "role": "defining",
+              "note": "“From the beginning of the year to the end of the year (אַחֲרִית שָׁנָה).”"
+            },
+            {
+              "ref": "Isa.46.10",
+              "note": "“Declaring from the beginning the end (מֵרֵאשִׁית אַחֲרִית), and from before what has not been done.”"
+            },
+            {
+              "ref": "Ecc.7.8",
+              "note": "“Better is the end of a thing than its beginning.”"
+            },
+            {
+              "ref": "Ecc.10.13",
+              "note": "“The beginning of the words of his mouth is folly, and the end of his mouth is evil madness.”"
+            },
+            {
+              "ref": "Dan.8.23",
+              "note": "“In the latter part of their kingdom.”"
+            },
+            {
+              "ref": "Dan.8.19",
+              "note": "“What will be in the latter part of the indignation.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "acharit-outcome",
+              "gloss": "outcome, what a thing comes to",
+              "definition": "Where a way, a deed or a people ends up: its result, often not what its beginning promised.",
+              "evidence": [
+                {
+                  "ref": "Pro.14.12",
+                  "role": "defining",
+                  "note": "“There is a way that is straight before a man, and its end (אַחֲרִיתָהּ) is the ways of death.”"
+                },
+                {
+                  "ref": "Pro.23.32",
+                  "role": "defining",
+                  "note": "Wine goes down smoothly; “its end bites like a serpent”."
+                },
+                {
+                  "ref": "Pro.16.25"
+                },
+                {
+                  "ref": "Pro.5.4",
+                  "note": "The strange woman’s lips drip honey, “but her end is bitter as wormwood”."
+                },
+                {
+                  "ref": "Pro.20.21",
+                  "note": "“An inheritance gained hastily at the beginning, its end will not be blessed.”"
+                },
+                {
+                  "ref": "Deu.32.29",
+                  "note": "“If they were wise … they would understand their end.”"
+                },
+                {
+                  "ref": "Deu.32.20",
+                  "note": "“I will see what their end will be.”"
+                },
+                {
+                  "ref": "Psa.73.17",
+                  "note": "“Until I went into the sanctuary of God; then I understood their end”, the end of the prosperous wicked."
+                },
+                {
+                  "ref": "Num.23.10",
+                  "note": "“Let my soul die the death of the upright, and let my end be like his.”"
+                },
+                {
+                  "ref": "Num.24.20",
+                  "note": "“Amalek was the first of the nations, and his end is destruction.”"
+                },
+                {
+                  "ref": "Isa.47.7",
+                  "note": "Babylon “did not remember its end”."
+                },
+                {
+                  "ref": "Lam.1.9",
+                  "note": "Jerusalem “did not remember her end”."
+                },
+                {
+                  "ref": "Jer.5.31",
+                  "note": "“What will you do at the end of it?”"
+                },
+                {
+                  "ref": "Amo.8.10",
+                  "note": "“Its end like a bitter day.”"
+                },
+                {
+                  "ref": "Dan.12.8",
+                  "note": "“My lord, what will be the end of these things?”"
+                }
+              ]
+            },
+            {
+              "id": "acharit-future",
+              "gloss": "a future, a hope hereafter",
+              "definition": "A latter part worth having: set beside תִּקְוָה, “hope”, and denied to the wicked.",
+              "evidence": [
+                {
+                  "ref": "Jer.29.11",
+                  "role": "defining",
+                  "note": "“Thoughts of peace and not of evil, to give you a future and a hope (אַחֲרִית וְתִקְוָה).”"
+                },
+                {
+                  "ref": "Pro.23.18",
+                  "role": "defining",
+                  "note": "“Surely there is a future, and your hope will not be cut off.”"
+                },
+                {
+                  "ref": "Pro.24.14",
+                  "note": "The same, of the one who finds wisdom."
+                },
+                {
+                  "ref": "Pro.24.20",
+                  "note": "“There will be no future for the evil man; the lamp of the wicked will go out.”"
+                },
+                {
+                  "ref": "Psa.37.37",
+                  "note": "“There is a future for the man of peace.”"
+                },
+                {
+                  "ref": "Psa.37.38",
+                  "note": "“The future of the wicked is cut off.”"
+                },
+                {
+                  "ref": "Jer.31.17",
+                  "note": "“There is hope for your future: sons will return to their border.”"
+                },
+                {
+                  "ref": "Deu.8.16",
+                  "note": "The wilderness was to humble and prove Israel, “to do you good in your latter end”."
+                },
+                {
+                  "ref": "Pro.19.20",
+                  "note": "“Hear counsel … that you may be wise in your latter end.”"
+                }
+              ]
+            },
+            {
+              "id": "acharit-days",
+              "gloss": "the latter part of the days (אַחֲרִית הַיָּמִים)",
+              "definition": "The time that lies after the speaker’s own, in which what he foretells comes about: thirteen times, always with בְּ, and once “of the years”. Each verse says what falls in it (see the doctrine).",
+              "kin": [
+                "arc-acharit-days"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.49.1",
+                  "role": "defining",
+                  "note": "Jacob to his sons: “I will tell you what will meet you in the latter part of the days”; what follows is the lot of each tribe."
+                },
+                {
+                  "ref": "Num.24.14",
+                  "role": "defining",
+                  "note": "Balaam to Balak: “what this people will do to your people in the latter part of the days”; what follows is the star from Jacob that strikes Moab."
+                },
+                {
+                  "ref": "Deu.4.30",
+                  "role": "defining",
+                  "note": "“When you are in distress and all these things have found you, in the latter part of the days, you will return to Yahweh your God.”"
+                },
+                {
+                  "ref": "Deu.31.29",
+                  "role": "defining",
+                  "note": "“After my death you will surely act corruptly … and the evil will meet you in the latter part of the days”: it begins after Moses’ death."
+                },
+                {
+                  "ref": "Isa.2.2",
+                  "role": "defining",
+                  "note": "“It will be in the latter part of the days: the mountain of the house of Yahweh will be established at the head of the mountains … and all the nations will flow to it.”"
+                },
+                {
+                  "ref": "Mic.4.1",
+                  "note": "The same oracle."
+                },
+                {
+                  "ref": "Jer.23.20",
+                  "note": "Yahweh’s anger will not turn back until he has done the purposes of his heart: “in the latter part of the days you will understand it.”"
+                },
+                {
+                  "ref": "Jer.30.24",
+                  "note": "The same words."
+                },
+                {
+                  "ref": "Jer.48.47",
+                  "note": "“I will turn the captivity of Moab in the latter part of the days.”"
+                },
+                {
+                  "ref": "Jer.49.39",
+                  "note": "The same of Elam."
+                },
+                {
+                  "ref": "Ezk.38.16",
+                  "note": "To Gog: “In the latter part of the days it will be, and I will bring you against my land, so that the nations may know me.”"
+                },
+                {
+                  "ref": "Ezk.38.8",
+                  "note": "בְּאַחֲרִית הַשָּׁנִים: “after many days you will be mustered; in the latter part of the years you will come to a land brought back from the sword, gathered out of many peoples.”"
+                },
+                {
+                  "ref": "Hos.3.5",
+                  "note": "“Afterwards the sons of Israel will return and seek Yahweh their God and David their king … in the latter part of the days.”"
+                },
+                {
+                  "ref": "Dan.10.14",
+                  "note": "“To make you understand what will meet your people in the latter part of the days, for the vision is yet for days.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "acharit-posterity",
+          "gloss": "what is left: posterity, remnant",
+          "definition": "Those who come after a man or are left of a people.",
+          "evidence": [
+            {
+              "ref": "Psa.109.13",
+              "role": "defining",
+              "note": "“Let his posterity (אַחֲרִיתוֹ) be cut off; in the next generation let their name be blotted out”: the two halves explain each other."
+            },
+            {
+              "ref": "Dan.11.4",
+              "role": "defining",
+              "note": "His kingdom will be divided to the four winds, “but not to his posterity”."
+            },
+            {
+              "ref": "Amo.4.2",
+              "note": "“He will take you away with hooks, and the last of you with fish-hooks.”"
+            },
+            {
+              "ref": "Amo.9.1",
+              "note": "“The last of them I will kill with the sword.”"
+            },
+            {
+              "ref": "Ezk.23.25",
+              "note": "“Your remnant will fall by the sword … your remnant will be devoured by fire.”"
+            }
+          ]
+        },
+        {
+          "id": "acharit-farthest",
+          "gloss": "farthest part, hindmost (place and rank)",
+          "definition": "The far end of a place, and the last in rank.",
+          "kin": [
+            "acharon-behind"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.139.9",
+              "role": "defining",
+              "note": "“If I take the wings of the dawn and dwell in the farthest part of the sea (בְּאַחֲרִית יָם)”: the dawn is the east, the far end of the sea the west."
+            },
+            {
+              "ref": "Jer.50.12",
+              "note": "Babylon will be “the last of the nations, a wilderness”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔσχατος",
+          "gloss": "last",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 2:2 word 2, אַחֲרִית → ἐσχάταις; GEN 49:1 word 13; NUM 24:14 word 12; DEU 4:30 word 7; HOS 3:5 word 17; DAN 10:14 word 7; ἔσχατος renders אַחֲרִית ×29"
+            },
+            {
+              "ref": "Heb.1.1",
+              "to": "Heb.1.2",
+              "role": "defining",
+              "note": "ἐπ᾽ ἐσχάτων τῶν ἡμερῶν τούτων: “at the last of these days” God spoke by a son; the Septuagint’s phrase for בְּאַחֲרִית הַיָּמִים."
+            },
+            {
+              "ref": "Act.2.17",
+              "role": "defining",
+              "note": "Peter gives Joel’s “after this” as ἐν ταῖς ἐσχάταις ἡμέραις, “in the last days”."
+            },
+            {
+              "ref": "2Pe.3.3",
+              "note": "“In the last of the days mockers will come.”"
+            },
+            {
+              "ref": "2Ti.3.1",
+              "note": "“In the last days hard times will come.”"
+            },
+            {
+              "ref": "2Pe.2.20",
+              "note": "τὰ ἔσχατα χείρονα τῶν πρώτων: “their last state has become worse than the first”, אַחֲרִית against רֵאשִׁית."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תִּקְוָה",
+            "note": "“Hope”: a future worth waiting for.",
+            "evidence": [
+              {
+                "ref": "Jer.29.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.23.18"
+              },
+              {
+                "ref": "Pro.24.14"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רֵאשִׁית",
+            "note": "“Beginning, first part”.",
+            "evidence": [
+              {
+                "ref": "Job.8.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.42.12"
+              },
+              {
+                "ref": "Isa.46.10"
+              },
+              {
+                "ref": "Ecc.7.8"
+              },
+              {
+                "ref": "Deu.11.12"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּאַחֲרִית הַיָּמִים",
+            "gloss": "in the latter part of the days",
+            "evidence": [
+              {
+                "ref": "Gen.49.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.24.14"
+              },
+              {
+                "ref": "Deu.4.30"
+              },
+              {
+                "ref": "Deu.31.29"
+              },
+              {
+                "ref": "Isa.2.2"
+              },
+              {
+                "ref": "Jer.23.20"
+              },
+              {
+                "ref": "Jer.30.24"
+              },
+              {
+                "ref": "Jer.48.47"
+              },
+              {
+                "ref": "Jer.49.39"
+              },
+              {
+                "ref": "Ezk.38.16"
+              },
+              {
+                "ref": "Hos.3.5"
+              },
+              {
+                "ref": "Mic.4.1"
+              },
+              {
+                "ref": "Dan.10.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אַחֲרוֹן",
+      "bdb": [
+        "a.cp.ag"
+      ],
+      "cognate_ids": [
+        "ar-akhir",
+        "sab-akhr-future"
+      ],
+      "pos": "adjective",
+      "gloss": "hinder; latter; last",
+      "summary": "Fifty-one times: feminine אַחֲרוֹנָה, plural אַחֲרֹנִים. The adjective of אַחַר, nearly always set against רִאשׁוֹן, “first, former”: of place, the one behind (and so the western); of time, the later of two and those who come after; of a series, the last. With בְּ or לְ the feminine is an adverb, “afterwards, at the last”.",
+      "senses": [
+        {
+          "id": "acharon-behind",
+          "gloss": "hinder, rear; western",
+          "definition": "Placed behind the others; of the sea, the one at the back of a man facing east, the Mediterranean.",
+          "kin": [
+            "achar-behind",
+            "achor-behind",
+            "acharit-farthest"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.33.2",
+              "role": "defining",
+              "note": "Jacob put the maidservants and their children first (רִאשֹׁנָה), Leah and her children behind (אַחֲרֹנִים), and Rachel and Joseph hindmost."
+            },
+            {
+              "ref": "Jol.2.20",
+              "role": "defining",
+              "note": "“His face to the eastern sea (הַיָּם הַקַּדְמֹנִי) and his rear to the hinder sea (הַיָּם הָאַחֲרוֹן)”: the front sea is the east, the hinder sea the west."
+            },
+            {
+              "ref": "Zec.14.8",
+              "note": "Living waters from Jerusalem, half to the eastern sea and half to the hinder sea."
+            },
+            {
+              "ref": "Deu.11.24",
+              "note": "The border “to the hinder sea”."
+            },
+            {
+              "ref": "Deu.34.2",
+              "note": "Moses sees all Judah “as far as the hinder sea”."
+            },
+            {
+              "ref": "Num.2.31",
+              "note": "The camp of Dan “shall set out last”, at the rear of the march."
+            },
+            {
+              "ref": "1Sa.29.2",
+              "note": "David and his men passed on “in the rear” with Achish."
+            }
+          ]
+        },
+        {
+          "id": "acharon-latter",
+          "gloss": "latter, later, following",
+          "definition": "The later of two, or what comes after the present: the following sign, the second husband, the generation to come.",
+          "kin": [
+            "achar-after",
+            "acher-next"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.4.8",
+              "role": "defining",
+              "note": "“If they do not listen to the voice of the first sign (הָרִאשׁוֹן), they will believe the voice of the latter sign (הָאַחֲרוֹן)”; a third sign follows in verse 9, so it is “latter”, not “last”."
+            },
+            {
+              "ref": "Deu.24.3",
+              "role": "defining",
+              "note": "“The latter husband”, against “her first husband” in verse 4."
+            },
+            {
+              "ref": "Hag.2.9",
+              "role": "defining",
+              "note": "“Greater will be the latter glory of this house than the former.”"
+            },
+            {
+              "ref": "Rut.3.10",
+              "note": "“You have made your latter kindness better than the first.”"
+            },
+            {
+              "ref": "Isa.8.23",
+              "note": "“As the former time brought contempt on the land of Zebulun and the land of Naphtali, the latter has brought honour.”"
+            },
+            {
+              "ref": "Dan.11.29",
+              "note": "“It will not be as the former or as the latter.”"
+            },
+            {
+              "ref": "Psa.78.6",
+              "note": "“That the generation to come (דּוֹר אַחֲרוֹן) might know, sons yet to be born.”"
+            },
+            {
+              "ref": "Psa.102.19",
+              "note": "“This will be written for a generation to come.”"
+            },
+            {
+              "ref": "Deu.29.21",
+              "note": "“The generation to come, your sons who will rise up after you (מֵאַחֲרֵיכֶם)”: the adjective explained by the preposition."
+            },
+            {
+              "ref": "Isa.30.8",
+              "note": "Written on a tablet “that it may be for a day to come”."
+            },
+            {
+              "ref": "Pro.31.25",
+              "note": "“She laughs at the day to come.”"
+            },
+            {
+              "ref": "Job.18.20",
+              "note": "“Those who come after” set beside “those who went before” (קַדְמֹנִים)."
+            },
+            {
+              "ref": "Ecc.1.11",
+              "note": "“There is no remembrance of the former ones, nor will there be of the latter ones who will be.”"
+            }
+          ],
+          "senses": [
+            {
+              "gloss": "afterwards (בָּאַחֲרֹנָה, לָאַחֲרֹנָה)",
+              "definition": "The feminine as an adverb: after the first, and so at the last.",
+              "evidence": [
+                {
+                  "ref": "Deu.13.10",
+                  "role": "defining",
+                  "note": "“Your hand shall be on him first (בָרִאשׁוֹנָה) to put him to death, and the hand of all the people afterwards (בָּאַחֲרֹנָה).”"
+                },
+                {
+                  "ref": "Deu.17.7"
+                },
+                {
+                  "ref": "1Ki.17.13",
+                  "note": "“Make me a little cake of it first … and make for yourself and your son afterwards.”"
+                },
+                {
+                  "ref": "2Sa.2.26",
+                  "note": "“Do you not know that it will be bitter at the last?”"
+                },
+                {
+                  "ref": "Dan.8.3",
+                  "note": "“The higher horn came up afterwards.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "acharon-last",
+          "gloss": "last",
+          "definition": "The final one of a series, after which none comes; with “first”, the whole from one end to the other.",
+          "kin": [
+            "acharit-end",
+            "syc-last"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.44.6",
+              "role": "defining",
+              "note": "אֲנִי רִאשׁוֹן וַאֲנִי אַחֲרוֹן וּמִבַּלְעָדַי אֵין אֱלֹהִים: “I am first and I am last, and besides me there is no God.”"
+            },
+            {
+              "ref": "Neh.8.18",
+              "role": "defining",
+              "note": "He read in the book “from the first day to the last day”."
+            },
+            {
+              "ref": "2Sa.23.1",
+              "role": "defining",
+              "note": "“These are the last words of David.”"
+            },
+            {
+              "ref": "Isa.48.12",
+              "note": "“I am he; I am first, I am also last.”"
+            },
+            {
+              "ref": "Isa.41.4",
+              "note": "“I, Yahweh, the first, and with the last ones I am he.”"
+            },
+            {
+              "ref": "2Sa.19.12",
+              "note": "“Why are you the last to bring the king back?”"
+            },
+            {
+              "ref": "1Ch.29.29",
+              "note": "“The acts of David the king, the first and the last”: the whole of them."
+            },
+            {
+              "ref": "2Ch.9.29"
+            },
+            {
+              "ref": "Jer.50.17",
+              "note": "“First the king of Assyria devoured him, and this last one, Nebuchadnezzar, has broken his bones.”"
+            },
+            {
+              "ref": "Job.19.25",
+              "note": "“I know that my redeemer lives, and at the last (אַחֲרוֹן) he will stand upon the dust.”"
+            },
+            {
+              "ref": "Rev.1.17",
+              "note": "ὁ πρῶτος καὶ ὁ ἔσχατος: “the first and the last”, Isaiah’s words on the lips of the risen Jesus."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔσχατος",
+          "gloss": "last",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 24:3 words 3 and 16, אַחֲרוֹן → ἔσχατος; HAG 2:9 word 6 → ἐσχάτη; ἔσχατος renders אַחֲרוֹן ×27"
+            },
+            {
+              "ref": "Rev.1.17",
+              "role": "defining",
+              "note": "“I am the first and the last” (Isa 44:6; 48:12)."
+            },
+            {
+              "ref": "Rev.2.8"
+            },
+            {
+              "ref": "Rev.22.13"
+            },
+            {
+              "ref": "Mat.19.30",
+              "note": "“Many first will be last, and last first.”"
+            },
+            {
+              "ref": "Jhn.6.39",
+              "note": "“I will raise it up at the last day.”"
+            },
+            {
+              "ref": "1Co.15.45",
+              "note": "“The first man Adam … the last Adam.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "רִאשׁוֹן",
+            "note": "“First, former”: its regular counterpart.",
+            "evidence": [
+              {
+                "ref": "Isa.44.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.4.8"
+              },
+              {
+                "ref": "Hag.2.9"
+              },
+              {
+                "ref": "Deu.13.10"
+              },
+              {
+                "ref": "Neh.8.18"
+              }
+            ]
+          },
+          {
+            "lemma": "קַדְמֹנִי",
+            "note": "“Eastern; former”: the front against the back.",
+            "evidence": [
+              {
+                "ref": "Jol.2.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.14.8"
+              },
+              {
+                "ref": "Job.18.20"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הַיָּם הָאַחֲרוֹן",
+            "gloss": "the hinder sea: the western sea, the Mediterranean",
+            "evidence": [
+              {
+                "ref": "Jol.2.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.11.24"
+              },
+              {
+                "ref": "Deu.34.2"
+              },
+              {
+                "ref": "Zec.14.8"
+              }
+            ]
+          },
+          {
+            "phrase": "דּוֹר אַחֲרוֹן",
+            "gloss": "a later generation, the generation to come",
+            "evidence": [
+              {
+                "ref": "Psa.78.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.4"
+              },
+              {
+                "ref": "Psa.48.14"
+              },
+              {
+                "ref": "Psa.102.19"
+              },
+              {
+                "ref": "Deu.29.21"
+              }
+            ]
+          },
+          {
+            "phrase": "הָרִאשֹׁנִים וְהָאַחֲרֹנִים",
+            "gloss": "the first and the last (acts of a king): all of them",
+            "evidence": [
+              {
+                "ref": "1Ch.29.29",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.9.29"
+              },
+              {
+                "ref": "2Ch.20.34"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אָחוֹר",
+      "bdb": [
+        "a.cp.ae"
+      ],
+      "cognate_ids": [
+        "ar-ukhur",
+        "arc-achora"
+      ],
+      "pos": "noun",
+      "gloss": "the back; behind; backward",
+      "gender": "m",
+      "summary": "Forty-one times, mostly in the prophets and psalms. The hinder side of a thing, set against its face (פָּנִים) or its front (קֶדֶם); used without a preposition as an adverb, “behind” and, far the most often, “backward” with verbs of turning, falling and being driven. The plural אֲחֹרִים is the back parts of a body.",
+      "senses": [
+        {
+          "id": "achor-back",
+          "gloss": "the back, hinder side",
+          "definition": "The side of a thing or body away from its face.",
+          "evidence": [
+            {
+              "ref": "Exo.33.23",
+              "role": "defining",
+              "note": "“You will see my back (אֲחֹרָי), but my face (פָּנַי) will not be seen.”"
+            },
+            {
+              "ref": "Ezk.2.10",
+              "role": "defining",
+              "note": "The scroll was written פָּנִים וְאָחוֹר, “front and back”."
+            },
+            {
+              "ref": "Exo.26.12",
+              "note": "The spare half curtain hangs “over the back of the Dwelling”."
+            },
+            {
+              "ref": "1Ki.7.25",
+              "note": "The twelve oxen under the sea, “all their hinder parts inward”."
+            },
+            {
+              "ref": "Ezk.8.16",
+              "note": "Twenty-five men, “their backs to the temple of Yahweh and their faces eastward”."
+            }
+          ]
+        },
+        {
+          "id": "achor-behind",
+          "gloss": "behind; on the west",
+          "definition": "On the hinder side, set against “in front”; with the east in front, the west.",
+          "kin": [
+            "achar-behind",
+            "acharon-behind"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.139.5",
+              "role": "defining",
+              "note": "אָחוֹר וָקֶדֶם צַרְתָּנִי: “behind and before you have hemmed me in.”"
+            },
+            {
+              "ref": "Isa.9.11",
+              "role": "defining",
+              "note": "“Aram from the front (מִקֶּדֶם) and the Philistines from behind (מֵאָחוֹר)”: Aram lay east of Israel and the Philistines west."
+            },
+            {
+              "ref": "Job.23.8",
+              "note": "“I go forward (קֶדֶם) and he is not there, and backward (אָחוֹר) and I do not perceive him”, with left and right in the next verse."
+            },
+            {
+              "ref": "2Sa.10.9",
+              "note": "The battle was against him “in front and behind”."
+            },
+            {
+              "ref": "2Ch.13.14",
+              "note": "“The battle was before them and behind.”"
+            }
+          ]
+        },
+        {
+          "id": "achor-backward",
+          "gloss": "backward, back",
+          "definition": "In the direction of one’s back: of falling, of an army or an enemy driven off, and of a people turning away from Yahweh.",
+          "kin": [
+            "achoranit-backward"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.49.17",
+              "role": "defining",
+              "note": "The viper bites the horse’s heels “and its rider falls backward”."
+            },
+            {
+              "ref": "Jer.7.24",
+              "role": "defining",
+              "note": "וַיִּהְיוּ לְאָחוֹר וְלֹא לְפָנִים: “they went backward and not forward.”"
+            },
+            {
+              "ref": "Psa.114.3",
+              "role": "defining",
+              "note": "“The sea saw and fled; the Jordan turned backward.”"
+            },
+            {
+              "ref": "Isa.1.4",
+              "note": "“They have forsaken Yahweh … they have turned away backward.”"
+            },
+            {
+              "ref": "Isa.50.5",
+              "note": "The servant: “I was not rebellious; I did not turn backward.”"
+            },
+            {
+              "ref": "Psa.40.15",
+              "note": "“Let them be turned backward and put to shame who delight in my hurt.”"
+            },
+            {
+              "ref": "Isa.42.17",
+              "note": "Those who trust in carved images “will be turned backward”."
+            },
+            {
+              "ref": "Psa.9.4",
+              "note": "“When my enemies turn back.”"
+            },
+            {
+              "ref": "Isa.28.13",
+              "note": "“That they may go and stumble backward and be broken.”"
+            },
+            {
+              "ref": "Isa.59.14",
+              "note": "“Justice is driven backward.”"
+            },
+            {
+              "ref": "Lam.2.3",
+              "note": "“He has drawn back his right hand from before the enemy.”"
+            },
+            {
+              "ref": "Jhn.18.6",
+              "note": "ἀπῆλθον εἰς τὰ ὀπίσω: those who came to seize Jesus “went backward and fell to the ground”."
+            }
+          ]
+        },
+        {
+          "id": "achor-hereafter",
+          "gloss": "hereafter, the time to come",
+          "definition": "Twice in Isaiah, of time: what lies behind a man is what he cannot yet see, the things still to come.",
+          "kin": [
+            "acharit-end",
+            "acharon-latter"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.41.23",
+              "role": "defining",
+              "note": "“Declare the things that are coming hereafter (הָאֹתִיּוֹת לְאָחוֹר), that we may know that you are gods”: the test of a god is to tell what is to come."
+            },
+            {
+              "ref": "Isa.42.23",
+              "note": "“Who among you will give ear to this, will attend and hear for the time to come?”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὀπίσω",
+          "gloss": "behind, back",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 40:15 word 8, אָחוֹר → ὀπίσω; PSA 70:3 word 6; ὀπίσω renders אָחוֹר ×22"
+            },
+            {
+              "ref": "Jhn.18.6",
+              "role": "defining",
+              "note": "“They went backward (εἰς τὰ ὀπίσω) and fell to the ground.”"
+            },
+            {
+              "ref": "Luk.9.62",
+              "note": "“No one who puts his hand to the plough and looks to the things behind is fit for the kingdom of God.”"
+            },
+            {
+              "ref": "Php.3.13",
+              "note": "“Forgetting the things behind and reaching out to the things before.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "פָּנִים",
+            "note": "“Face, front”.",
+            "evidence": [
+              {
+                "ref": "Exo.33.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.2.10"
+              },
+              {
+                "ref": "Jer.7.24"
+              },
+              {
+                "ref": "2Sa.10.9"
+              }
+            ]
+          },
+          {
+            "lemma": "קֶדֶם",
+            "note": "“Front, east”.",
+            "evidence": [
+              {
+                "ref": "Psa.139.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.9.11"
+              },
+              {
+                "ref": "Job.23.8"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נָסוֹג אָחוֹר",
+            "gloss": "be turned backward, draw back",
+            "evidence": [
+              {
+                "ref": "Psa.40.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.42.17"
+              },
+              {
+                "ref": "Isa.50.5"
+              },
+              {
+                "ref": "Psa.44.19"
+              }
+            ]
+          },
+          {
+            "phrase": "שׁוּב אָחוֹר",
+            "gloss": "turn back",
+            "evidence": [
+              {
+                "ref": "Psa.9.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.1.8"
+              },
+              {
+                "ref": "Psa.56.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אָחַר",
+      "bdb": [
+        "a.cp.aa"
+      ],
+      "cognate_ids": [
+        "ar-akhkhara",
+        "akk-aharu",
+        "sab-akhr",
+        "arc-achar"
+      ],
+      "pos": "verb",
+      "gloss": "stay behind; delay",
+      "summary": "Sixteen times, all but one in the piel. To be behind in time: to come late or stay late, and with an object to keep a person or a thing back. Most of its uses are denials or prayers: he did not delay, do not delay. In 2Sa 20:5 the written text has וייחר and the reading tradition וַיּוֹחֶר: Amasa “delayed beyond the set time”; the form is taken as a qal or a hiphil of this verb and is not counted here.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "stay on, tarry",
+          "senses": [
+            {
+              "id": "achar-stay",
+              "gloss": "stay on, tarry",
+              "definition": "Remain behind in a place longer than was looked for. Once only.",
+              "evidence": [
+                {
+                  "ref": "Gen.32.5",
+                  "role": "defining",
+                  "note": "Jacob to Esau: “I have sojourned with Laban and have stayed on (וָאֵחַר) until now.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "delay, be late; keep back",
+          "senses": [
+            {
+              "id": "achar-delay",
+              "gloss": "delay, be late, linger",
+              "definition": "Be slow in coming or in acting; stay late at a thing. Of Yahweh and of what he has promised, that it will not be late.",
+              "kin": [
+                "syc-delay"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jdg.5.28",
+                  "role": "defining",
+                  "note": "“Why is his chariot so long in coming (בֹּשֵׁשׁ)? Why do the beats of his chariots delay (אֶחֱרוּ)?”: the two lines say one thing."
+                },
+                {
+                  "ref": "Hab.2.3",
+                  "role": "defining",
+                  "note": "The vision is for an appointed time: “though it tarries, wait for it; for it will surely come, it will not delay (לֹא יְאַחֵר)”. Quoted in Heb 10:37."
+                },
+                {
+                  "ref": "Psa.70.6",
+                  "role": "defining",
+                  "note": "“God, hasten to me (חוּשָׁה לִּי) … Yahweh, do not delay (אַל־תְּאַחַר)”: delay is the opposite of haste."
+                },
+                {
+                  "ref": "Psa.40.18",
+                  "note": "“My God, do not delay.”"
+                },
+                {
+                  "ref": "Dan.9.19",
+                  "note": "“Lord, attend and act; do not delay, for your own sake, my God.”"
+                },
+                {
+                  "ref": "Isa.46.13",
+                  "note": "“I bring near my righteousness, it will not be far off, and my salvation will not delay.”"
+                },
+                {
+                  "ref": "Gen.34.19",
+                  "note": "“The young man did not delay to do the thing.”"
+                },
+                {
+                  "ref": "Deu.7.10",
+                  "note": "“He will not delay with the one who hates him; to his face he will repay him.”"
+                },
+                {
+                  "ref": "Isa.5.11",
+                  "note": "“Woe to those who rise early in the morning to pursue strong drink, who stay late into the twilight (מְאַחֲרֵי בַנֶּשֶׁף).”"
+                },
+                {
+                  "ref": "Psa.127.2",
+                  "note": "“Rising early, sitting down late.”"
+                },
+                {
+                  "ref": "Pro.23.30",
+                  "note": "“Those who stay late over the wine.”"
+                }
+              ]
+            },
+            {
+              "id": "achar-detain",
+              "gloss": "keep back, detain, put off",
+              "definition": "With an object: hold a person back from going, or put off giving what is due.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.56",
+                  "role": "defining",
+                  "note": "Abraham’s servant: “Do not keep me back (אַל־תְּאַחֲרוּ אֹתִי), since Yahweh has prospered my way; send me off.”"
+                },
+                {
+                  "ref": "Exo.22.28",
+                  "role": "defining",
+                  "note": "“Your fullness and your outflow you shall not keep back.”"
+                },
+                {
+                  "ref": "Deu.23.22",
+                  "note": "“When you vow a vow to Yahweh your God you shall not delay to pay it.”"
+                },
+                {
+                  "ref": "Ecc.5.3",
+                  "note": "The same of a vow to God."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χρονίζω",
+          "gloss": "take time, delay",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "HAB 2:3 word 17, יְאַחֵר → χρονίσῃ; PSA 70:6 word 12, תְּאַחַר → χρονίσῃς; χρονίζω renders אָחַר ×9"
+            },
+            {
+              "ref": "Heb.10.37",
+              "role": "defining",
+              "note": "Hab 2:3 quoted: “the one who is coming will come, and will not delay (οὐ χρονιεῖ).”"
+            },
+            {
+              "ref": "Mat.24.48",
+              "note": "The evil servant: “My lord delays to come.”"
+            },
+            {
+              "ref": "Mat.25.5",
+              "note": "“While the bridegroom delayed, they all slumbered and slept.”"
+            }
+          ]
+        },
+        {
+          "lemma": "βραδύνω",
+          "gloss": "be slow",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 7:10 word 7, יְאַחֵר → βραδυνεῖ; βραδύνω renders אָחַר ×2"
+            },
+            {
+              "ref": "2Pe.3.9",
+              "role": "defining",
+              "note": "“The Lord is not slow about the promise, as some count slowness.”"
+            },
+            {
+              "ref": "1Ti.3.15",
+              "note": "“If I am slow in coming.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בּוֹשֵׁשׁ",
+            "note": "“Be long in coming”.",
+            "evidence": [
+              {
+                "ref": "Jdg.5.28",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הִתְמַהְמַהּ",
+            "note": "“Tarry, linger”: the vision may tarry, yet it will not be late.",
+            "evidence": [
+              {
+                "ref": "Hab.2.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "חוּשׁ",
+            "note": "“Hasten”.",
+            "evidence": [
+              {
+                "ref": "Psa.70.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הִשְׁכִּים",
+            "note": "“Rise early”: early at one end of the day, late at the other.",
+            "evidence": [
+              {
+                "ref": "Isa.5.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.127.2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֲחֹרַנִּית",
+      "bdb": [
+        "a.cp.af"
+      ],
+      "cognate_ids": [
+        "ar-ukhur",
+        "arc-achora"
+      ],
+      "pos": "adverb",
+      "gloss": "backward",
+      "summary": "Seven times: אָחוֹר with the adverbial ending ־ַנִּית. Of walking, falling and turning backward, and of the shadow going back on the steps of Ahaz.",
+      "senses": [
+        {
+          "id": "achoranit-backward",
+          "gloss": "backward",
+          "definition": "With the back foremost, or back the way one came.",
+          "kin": [
+            "achor-backward"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.9.23",
+              "role": "defining",
+              "note": "Shem and Japheth “walked backward (אֲחֹרַנִּית) and covered the nakedness of their father, and their faces were backward, and they did not see”: twice, of walking and of the face turned away."
+            },
+            {
+              "ref": "1Sa.4.18",
+              "role": "defining",
+              "note": "Eli “fell from the seat backward” and his neck was broken."
+            },
+            {
+              "ref": "2Ki.20.10",
+              "role": "defining",
+              "note": "“Let the shadow return backward ten steps”, against going forward ten steps."
+            },
+            {
+              "ref": "2Ki.20.11"
+            },
+            {
+              "ref": "Isa.38.8",
+              "note": "“I am turning the shadow on the steps … backward ten steps.”"
+            },
+            {
+              "ref": "1Ki.18.37",
+              "note": "“You have turned their heart backward.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָחֳרָן",
+      "lang": "arc",
+      "bdb": [
+        "xa.ak.ae"
+      ],
+      "cognate_ids": [
+        "arc-ochoran",
+        "ar-akhar",
+        "phn-ahrym"
+      ],
+      "pos": "adjective",
+      "gloss": "another, other",
+      "summary": "Daniel’s Aramaic for אַחֵר, eleven times; the feminine is אָחֳרִי. It numbers off the kingdoms and beasts of the visions: another, and another after that.",
+      "senses": [
+        {
+          "id": "arc-ochoran-other",
+          "gloss": "another, other",
+          "definition": "One more after the first, or one that is not this one.",
+          "kin": [
+            "acher-other",
+            "acher-another",
+            "syc-other"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.39",
+              "role": "defining",
+              "note": "“After you another kingdom (מַלְכוּ אָחֳרִי) will arise, lower than you, and a third kingdom, another, of bronze.”"
+            },
+            {
+              "ref": "Dan.2.44",
+              "role": "defining",
+              "note": "The kingdom the God of heaven sets up “will not be left to another people (לְעַם אָחֳרָן)”."
+            },
+            {
+              "ref": "Dan.7.24",
+              "role": "defining",
+              "note": "“Another will arise after them (וְאָחֳרָן יְקוּם אַחֲרֵיהוֹן)”: adjective and preposition of the one root together."
+            },
+            {
+              "ref": "Dan.2.11",
+              "note": "“There is no other who can show it before the king, except the gods.”"
+            },
+            {
+              "ref": "Dan.3.29",
+              "note": "“There is no other god who is able to deliver like this.”"
+            },
+            {
+              "ref": "Dan.5.17",
+              "note": "“Give your rewards to another.”"
+            },
+            {
+              "ref": "Dan.7.5",
+              "note": "“Another beast, a second, like a bear.”"
+            },
+            {
+              "ref": "Dan.7.6"
+            },
+            {
+              "ref": "Dan.7.8",
+              "note": "“Another horn, a little one.”"
+            },
+            {
+              "ref": "Dan.7.20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַחֲרֵי",
+      "lang": "arc",
+      "bdb": [
+        "xa.ak.aa"
+      ],
+      "cognate_ids": [
+        "uga-ahr",
+        "phn-ahr",
+        "moab-ahr"
+      ],
+      "pos": "preposition",
+      "gloss": "after",
+      "summary": "Three times in Daniel’s Aramaic, of time only (Dan 2:29, 45; 7:24); the common Aramaic word for “after” in Daniel is בָּאתַר (Dan 2:39; 7:6). The count of uses is inflated: the key is spelt like the Hebrew אַחֲרֵי, so the Hebrew tokens are filed under it too.",
+      "senses": [
+        {
+          "id": "arc-achare-after",
+          "gloss": "after (time)",
+          "definition": "Later than: “after this”, “after them”.",
+          "kin": [
+            "achar-after"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.29",
+              "role": "defining",
+              "note": "The king’s thoughts were of “what will be after this (אַחֲרֵי דְנָה)”."
+            },
+            {
+              "ref": "Dan.2.45",
+              "role": "defining",
+              "note": "“The great God has made known to the king what will be after this.”"
+            },
+            {
+              "ref": "Dan.7.24",
+              "note": "“Another will arise after them (אַחֲרֵיהוֹן).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַחֲרִית",
+      "lang": "arc",
+      "bdb": [
+        "xa.ak.ad"
+      ],
+      "cognate_ids": [
+        "akk-ahritu",
+        "ar-akhir"
+      ],
+      "pos": "noun",
+      "gloss": "latter part, end",
+      "gender": "f",
+      "summary": "Once in Aramaic, Dan 2:28, in the Aramaic form of the Hebrew phrase: בְּאַחֲרִית יוֹמַיָּא. The count of uses is inflated: the key is spelt like the Hebrew word in בְּאַחֲרִית הַיָּמִים, so those tokens are filed under it too.",
+      "senses": [
+        {
+          "id": "arc-acharit-days",
+          "gloss": "the latter part of the days",
+          "definition": "The time after the speaker’s own in which the dream comes about: explained in the next verse as “what will be after this”.",
+          "kin": [
+            "acharit-days"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.28",
+              "role": "defining",
+              "note": "“There is a God in heaven who reveals secrets, and he has made known to king Nebuchadnezzar what will be in the latter part of the days (בְּאַחֲרִית יוֹמַיָּא).”"
+            },
+            {
+              "ref": "Dan.2.29",
+              "note": "The same thing in other words: “what will be after this (אַחֲרֵי דְנָה)”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָחֳרֵין",
+      "lang": "arc",
+      "bdb": [
+        "xa.ak.ac"
+      ],
+      "cognate_ids": [
+        "ar-akhir"
+      ],
+      "pos": "adverb",
+      "gloss": "at last",
+      "summary": "Once, Dan 4:5, וְעַד אָחֳרֵין: “and at the last” Daniel came in, after all the wise men of Babylon had failed. The form is uncertain: the written text can also be read “until another came in”, which gives the same sense of one coming after the rest.",
+      "senses": [
+        {
+          "id": "arc-ochoren-last",
+          "gloss": "at last",
+          "definition": "After all the others.",
+          "kin": [
+            "acharon-last"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.4.5",
+              "role": "defining",
+              "note": "The magicians, enchanters, Chaldeans and astrologers came in and could not make the interpretation known (verse 4); “and at the last Daniel came in before me”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אחרָיָא",
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-akhir"
+      ],
+      "pos": "adjective",
+      "gloss": "last",
+      "summary": "The Peshitta’s word for “last”, about fifty times, where the Hebrew has אַחֲרוֹן and אַחֲרִית: the last day, the last days, the first and the last.",
+      "senses": [
+        {
+          "id": "syc-last",
+          "gloss": "last, latter",
+          "definition": "The final one, set against the first; of days and times, the latter ones.",
+          "kin": [
+            "acharon-last",
+            "acharon-latter"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.19.30",
+              "role": "defining",
+              "note": "“Many first will be last, and last first.”"
+            },
+            {
+              "ref": "Rev.1.17",
+              "role": "defining",
+              "note": "“I am the first and the last”, as Isa 44:6."
+            },
+            {
+              "ref": "Jhn.6.39",
+              "role": "defining",
+              "note": "“I will raise it up on the last day.”"
+            },
+            {
+              "ref": "Jhn.11.24",
+              "note": "Martha: “he will rise in the resurrection on the last day.”"
+            },
+            {
+              "ref": "Act.2.17",
+              "note": "“It will be in the last days”, Peter’s quotation of Jol 3:1."
+            },
+            {
+              "ref": "Heb.1.2",
+              "note": "“In these last days he spoke with us by his son.”"
+            },
+            {
+              "ref": "2Ti.3.1",
+              "note": "“In the last days hard times will come.”"
+            },
+            {
+              "ref": "1Jn.2.18",
+              "note": "“It is the last time.”"
+            },
+            {
+              "ref": "1Co.15.45",
+              "note": "“The last Adam.”"
+            },
+            {
+              "ref": "1Co.15.52",
+              "note": "“At the last trumpet.”"
+            },
+            {
+              "ref": "Mat.20.8",
+              "note": "“Beginning from the last and on to the first.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אחרִנָא",
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-ochoran",
+        "ar-akhar"
+      ],
+      "pos": "adjective",
+      "gloss": "another, other",
+      "summary": "The Peshitta’s word for “another, other”, nearly three hundred times: the same word as Daniel’s אָחֳרָן.",
+      "senses": [
+        {
+          "id": "syc-other",
+          "gloss": "another, other",
+          "definition": "One more, or a different one.",
+          "kin": [
+            "acher-other",
+            "arc-ochoran-other"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.11.3",
+              "role": "defining",
+              "note": "“Are you the one who is coming, or is it another we should expect?”"
+            },
+            {
+              "ref": "Jhn.5.32",
+              "role": "defining",
+              "note": "“It is another who testifies about me.”"
+            },
+            {
+              "ref": "Mat.12.45",
+              "note": "“Seven other spirits worse than itself.”"
+            },
+            {
+              "ref": "Jhn.14.16",
+              "note": "“He will give you another advocate.”"
+            },
+            {
+              "ref": "Gal.1.6",
+              "note": "“To another gospel.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַרְתָא",
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-ahritu",
+        "ar-akhir"
+      ],
+      "pos": "noun",
+      "gloss": "end, outcome",
+      "gender": "f",
+      "summary": "The Peshitta’s noun for the end of a thing and what it comes to, about forty times: the Aramaic form of אַחֲרִית, with the first letter dropped. With בְּ it is “at last, afterwards”.",
+      "senses": [
+        {
+          "id": "syc-end",
+          "gloss": "end; outcome",
+          "definition": "The last part of a time, and what a course comes to; set against the beginning.",
+          "kin": [
+            "acharit-end"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.12.45",
+              "role": "defining",
+              "note": "“The end of that man becomes worse than his beginning.”"
+            },
+            {
+              "ref": "Rom.6.21",
+              "role": "defining",
+              "note": "“Its end is death.”"
+            },
+            {
+              "ref": "Mat.24.13",
+              "note": "“He who endures to the end will live.”"
+            },
+            {
+              "ref": "1Co.15.24",
+              "note": "“And then will be the end, when he delivers up the kingdom to God the Father.”"
+            },
+            {
+              "ref": "Heb.6.8",
+              "note": "“Its end is burning.”"
+            },
+            {
+              "ref": "Jas.5.11",
+              "note": "“You have seen the end that the Lord made for him”: Job’s latter part, as Job 42:12."
+            },
+            {
+              "ref": "2Pe.2.20",
+              "note": "“Their end has become worse than the first.”"
+            },
+            {
+              "ref": "2Pe.3.3",
+              "note": "“Mockers will come at the end of the days”: the Peshitta’s form of בְּאַחֲרִית הַיָּמִים."
+            },
+            {
+              "ref": "Mat.21.29",
+              "note": "“Afterwards (בְּחַרְתָא) he repented and went.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַוְחַר",
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-akhkhara",
+        "akk-aharu",
+        "arc-achar"
+      ],
+      "pos": "verb",
+      "gloss": "delay, be late",
+      "summary": "The Peshitta’s verb for delaying, eleven times, in the causative stem (with ו for the first letter) and its reflexive. It stands in Heb 10:37 where the Hebrew of Hab 2:3 has יְאַחֵר.",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "delay, be late",
+          "senses": [
+            {
+              "id": "syc-delay",
+              "gloss": "delay, be late",
+              "definition": "Be slow in coming.",
+              "kin": [
+                "achar-delay"
+              ],
+              "evidence": [
+                {
+                  "ref": "Heb.10.37",
+                  "role": "defining",
+                  "note": "Hab 2:3 quoted: “the one who is coming will come and will not delay (לָא נַוְחַר)”, the same root as the Hebrew יְאַחֵר."
+                },
+                {
+                  "ref": "Mat.24.48",
+                  "role": "defining",
+                  "note": "“My lord is late in coming.”"
+                },
+                {
+                  "ref": "Mat.25.5",
+                  "note": "“While the bridegroom delayed.”"
+                },
+                {
+                  "ref": "Luk.12.45"
+                },
+                {
+                  "ref": "1Ti.3.15",
+                  "note": "“If I delay.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "eshtaphal",
+          "gloss": "delay, hold oneself back",
+          "senses": [
+            {
+              "gloss": "delay, hold oneself back",
+              "definition": "The reflexive of the causative: be slow, put off acting.",
+              "kin": [
+                "achar-delay"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Pe.3.9",
+                  "role": "defining",
+                  "note": "“The Lord does not delay his promises, as some count delay.”"
+                },
+                {
+                  "ref": "Act.22.16",
+                  "note": "“And now, why are you delaying? Rise, be baptized.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-akhkhara",
+      "lang": "ar",
+      "form": "أَخَّرَ",
+      "translit": "ʾaḫḫara",
+      "gloss": "put back, put behind or after; keep back; postpone, delay",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 31, root أخر, 2 أخّر (n372)",
+          "note": "“He made to go back or backwards … he put, or placed, behind, or after … he made to remain behind, hold back, hang back, or lag behind: he kept, or held, back: he postponed, put off, procrastinated, deferred, delayed, or retarded: he made backward, or late: contr. of قَدَّمَ.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 31, root أخر, 5 تأخّر (n373)",
+          "note": "“He remained behind, or in the rear; held back, hung back, lagged behind, or delayed; was, or became, backward, or late … contr. of تَقَدَّمَ.”"
+        }
+      ],
+      "note": "The second stem, as the Hebrew piel: both “delay” and “keep back”, and set against the verb of going in front as אַחַר is against קֶדֶם."
+    },
+    {
+      "id": "ar-akhar",
+      "lang": "ar",
+      "form": "آخَرُ",
+      "translit": "ʾāḫar, fem. ʾuḫrā",
+      "gloss": "another, the other; one other than the first",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 31, root أخر, آخَرُ (n386)",
+          "note": "“Another; the other; a thing [or person] other than the former or first … as in the phrases, رَجُلٌ آخَرُ another man, and ثَوْبٌ آخَرُ another garment … originally meaning more backward.”"
+        }
+      ],
+      "note": "Arabic keeps “other” and “last” apart by the vowel (ʾāḫar, ʾāḫir), as Hebrew does by the pattern (אַחֵר, אַחֲרוֹן). The Arabic lexicographers’ “originally more backward” is the link this entry draws between אַחֵר and אַחַר."
+    },
+    {
+      "id": "ar-akhir",
+      "lang": "ar",
+      "form": "آخِرٌ",
+      "translit": "ʾāḫir, fem. ʾāḫira",
+      "gloss": "last, hindmost; latter; the end",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 32, root أخر, آخِرٌ (n387)",
+          "note": "“The last; aftermost; hindmost: and the latter; after; hinder: and [as a subst.] the end: contr. of أَوَّلُ”; جَآءَ آخِرًا and أَخِيرًا “he came lastly, or latterly”; فِى آخِرِ الشَّهْرِ “in the end of the month”; الآخِرُ a name of God, “The last”; الآخِرَةُ “the latter, ultimate, or last … world; the world, or life, to come”."
+        }
+      ],
+      "note": "The same pairing with “first” as רִאשׁוֹן and אַחֲרוֹן, the end of a span of time as אַחֲרִית, and “the last” as a title of God as in Isa 44:6."
+    },
+    {
+      "id": "ar-ukhur",
+      "lang": "ar",
+      "form": "أُخُرٌ",
+      "translit": "ʾuḫur",
+      "gloss": "the back, hinder part; (adverbially) behind, backwards",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 31, root أخر, أُخُرٌ (n375)",
+          "note": "“The back, hinder, or latter, part: the hindermost, or last, part: contr. of قُدُمٌ”; شُقَّ ثَوْبُهُ أُخُرًا “his garment was rent … in its back, or hinder, part”; تَأَخَّرَ أُخُرًا “he retired backwards”."
+        }
+      ],
+      "note": "The noun of the back used as an adverb, as אָחוֹר is, and set against the front (قُدُم, Hebrew קֶדֶם)."
+    },
+    {
+      "id": "akk-aharu",
+      "lang": "akk",
+      "form": "aḫāru",
+      "translit": "aḫāru, D uḫḫuru",
+      "gloss": "be behind, be late; delay, hold back",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000032260, ahāru [be behind] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000032260.html",
+          "note": "Meanings in the glossaries: being late, delay, delaying, hold back, holding back, stay behind; written forms uhhuru, uhhirma, uhhara, ūtahhira."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000016920, ahāru [be(come) behind] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000016920.html",
+          "note": "“be(come) late; delay; hold itself back”."
+        }
+      ],
+      "note": "The forms the glossaries list are of the doubled stem (uḫḫuru), as the Hebrew verb is nearly always piel. Akkadian’s own words for “after” and “behind” (arki, arkû) are from another root."
+    },
+    {
+      "id": "akk-ahritu",
+      "lang": "akk",
+      "form": "aḫrītu",
+      "translit": "aḫrītu, pl. aḫrâtu",
+      "gloss": "later time, future; posterity",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000085620, ahrītu [later time] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000085620.html",
+          "note": "Meanings: future, later time, posterity; written forms ahrât, ahrâti, ahrīti."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000085630, ahrâtaš [for ever after] AV",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000085630.html",
+          "note": "“for ever after; for posterity”."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000085650, ahrûtu [descendants] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000085650.html"
+        }
+      ],
+      "note": "The same feminine noun in ‑īt as אַחֲרִית, with its two senses: the time to come, and those who come after (Psa 109:13; Dan 11:4). The plural aḫrât ūmī, “the after-part of days”, is the Akkadian counterpart of אַחֲרִית הַיָּמִים: a lead not yet followed to a text (see the note)."
+    },
+    {
+      "id": "akk-ahurru",
+      "lang": "akk",
+      "form": "aḫurrû",
+      "translit": "aḫurrû",
+      "gloss": "junior, younger child; social inferior",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000081900, ahurrû [junior] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000081900.html",
+          "note": "“junior; social inferior; younger child”."
+        }
+      ],
+      "note": "If of this root, the one who comes after: later-born, and lower in rank. The derivation is not stated in the glossary."
+    },
+    {
+      "id": "uga-ahr",
+      "lang": "uga",
+      "form": "𐎀𐎃𐎗",
+      "translit": "ảḫr",
+      "gloss": "afterwards; after",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 178, §93 Glossary, ảḫr",
+          "note": "“adv. ‘afterwards’ 1.24:32 … 1.17:V:25 (or conj. ‘after’?); 1.14:IV:32 (or prep. ‘after the sun(set)’?) (cf. H. ʾaḥar, ʾaḥărē)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§67.34; §74.3, KTU 1.14:IV:32–34; §55.1",
+          "note": "§67.34, among the temporal conjunctions: ảḫr “after”. §74.3: ảḫr špšm bṯlṯ ymġy lqdš, “afterwards, at sun(set), on the third (day), they arrive at the sanctuary”. In §55.1 it is the example of one word used as adverb, preposition and conjunction."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎃𐎗 (ảḫr), prep: after",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%83%F0%90%8E%97"
+        }
+      ],
+      "note": "Adverb, preposition and conjunction in one word, as אַחַר is; of time in the texts cited."
+    },
+    {
+      "id": "uga-uhry",
+      "lang": "uga",
+      "form": "𐎜𐎃𐎗𐎊",
+      "translit": "ủḫry",
+      "gloss": "the end, what comes after: the next world, or posterity",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 178, §93 Glossary, ủḫry",
+          "note": "“1.19:IV:7 ‘the other/next world’ (cf. Arab. al-uḫrā); 1.103:39”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎜𐎃𐎗𐎊 (ủḫry), noun: posterity",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%9C%F0%90%8E%83%F0%90%8E%97%F0%90%8E%8A"
+        }
+      ],
+      "note": "A noun of the root for what lies after. Its sense is disputed between the two sources, “the next world” and “posterity”; either is within the range of אַחֲרִית, but it is named on no word until the texts are read."
+    },
+    {
+      "id": "phn-ahr",
+      "lang": "phn",
+      "form": "𐤀𐤇𐤓",
+      "translit": "ʾḥr",
+      "gloss": "after; (with ʾš) after that",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 43, ʾḤR",
+          "note": "“[Heb. ʾaḥar, ʾaḥărē] prep. AFTER, TO”, Trip. 51 (Neo-Punic), šmʿ ʾḥr ʾbkʾ, “Listen to (= obey) your father”."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 44, ʾḤR ʾŠ",
+          "note": "“[Heb. ʾaḥar ʾăšer, ʾaḥărē ʾăšer] conj. AFTER”, NSI no. 56 (Neo-Punic): “After her husband Asdrubal … made a farewell to the living”."
+        }
+      ],
+      "note": "Punic: the conjunction with ʾš is the Hebrew אַחֲרֵי אֲשֶׁר (Jos 9:16), and “listen after your father” is “after” in the sense of following and obeying, as הָלַךְ אַחֲרֵי. Phoenician writes one ḥ for both older sounds."
+    },
+    {
+      "id": "phn-ahrym",
+      "lang": "phn",
+      "form": "𐤀𐤇𐤓𐤉",
+      "translit": "ʾḥry (construct plural)",
+      "gloss": "the other; the rest of",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 44, ʾḤRYM",
+          "note": "“[cf. Heb. ʾaḥēr, other, another] n.pl. 1. OTHER (construct plural)”, KAI 19.9/10, kl ʾḥry hmqdšm, “all the other sanctuaries that are in the land”; “2. REST”, KAI 69.4, wʾḥry hšʾr, “and the rest of the meat”."
+        }
+      ],
+      "note": "Phoenician and Punic: “the others” and “the rest”, what remains after the part named."
+    },
+    {
+      "id": "moab-ahr",
+      "lang": "sem",
+      "form": "אחר",
+      "translit": "ʾḥr",
+      "gloss": "after (in succession)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 2–3",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "אבי מלך על מאב שלשן שת ואנך מלכתי אחר אבי: “my father reigned over Moab thirty years, and I reigned after my father”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Moabite 𐤀𐤇𐤓 (ʾḥr), prep: after",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A4%80%F0%90%A4%87%F0%90%A4%93"
+        }
+      ],
+      "note": "Moabite, the Mesha stele: the son reigning after the father, as 1Ki 1:13 “Solomon your son shall reign after me”."
+    },
+    {
+      "id": "sab-akhr",
+      "lang": "sem",
+      "form": "𐩱𐩭𐩧",
+      "translit": "ʾḫr",
+      "gloss": "keep off, keep away; (causative) keep back, delay",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 13, ʾḪR (verb)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“KEEP OFF, KEEP AWAY [Ar ʾāḫir ‘last, rearmost,’ ʾḫr D ‘cause to remain behind = hinder.’]”, C573/5; h-stem “KEEP BACK, DELAY”, C81/5–6 hʾḫrw hwfyn, “they delayed the payment of that which was promised”."
+        }
+      ],
+      "note": "Sabaic: the causative “delay the payment” is the Hebrew piel of Deu 23:22 and Exo 22:28."
+    },
+    {
+      "id": "sab-akhr-future",
+      "lang": "sem",
+      "form": "𐩱𐩭𐩧",
+      "translit": "ʾḫr; adj. ʾḫrn, fem. ʾḫrtn",
+      "gloss": "the future; (adjective) latter",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 13, ʾḪR (noun and adjective)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“THE FUTURE; l-ʾḫr: FOR THE FUTURE, HENCEFORTH; adj: LATTER [Ar al-ʾāḫir ‘the hereafter,’ ʾāḫir ‘last.’]”, J633/12 “from (the date of) this offering and henceforth”; C541/96 “in the latter part of (the month) ḏ-D”."
+        }
+      ],
+      "note": "Sabaic: the time to come, and the latter part of a month, as אַחֲרִית שָׁנָה is the latter part of a year (Deu 11:12)."
+    },
+    {
+      "id": "sab-aakhr",
+      "lang": "sem",
+      "form": "𐩱𐩱𐩭𐩧",
+      "translit": "ʾʾḫr",
+      "gloss": "another (time), again",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 13, ʾḪR, ʾʾḫr",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“ANOTHER (TIME), AGAIN [cf Ar ʾāḫar ‘another.’]”, C547/12, “so let them beware of (committing) the like of this again”. One occurrence."
+        }
+      ],
+      "note": "Sabaic: “another” of the same pattern as Arabic ʾāḫar. Rests on one text."
+    },
+    {
+      "id": "arc-achar",
+      "lang": "arc",
+      "form": "אֲחַר",
+      "translit": "ʾăḥar, aphel ʾôḥar",
+      "gloss": "be behind; (causative) delay",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲחַר",
+          "note": "“to be behind”; Af. אוֹחַר, Targ. II Sam. XX, 5; Targ. Prov. XXIII, 30 מַוְחֲרִין."
+        },
+        {
+          "source": "sedra",
+          "locator": "lexeme 1160, AKR (root 691 AKR), tarry; delay; with 1165 WOOKRA and 1166 TOKRTA, delay, tarrying"
+        }
+      ],
+      "note": "Targum Aramaic has the causative with ו for the first letter, as the Peshitta’s אַוְחַר; the Targum uses it in 2Sa 20:5 and Pro 23:30 for this Hebrew verb."
+    },
+    {
+      "id": "arc-ochoran",
+      "lang": "arc",
+      "form": "אָחֳרָן",
+      "translit": "ʾoḥŏrān, fem. ʾoḥŏrantā",
+      "gloss": "another, other",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אָחֳרָן (אוֹחֲרָן, אוֹחֲרָנָא)",
+          "note": "Targ. Ex. XX, 3 (other gods); fem. Targ. O. Ex. XXI, 10 “(another, additional wife)”, Gen. XVII, 21; B. Bath. 16a אחרניתא “a stranger (not his own wife)”."
+        },
+        {
+          "source": "sedra",
+          "locator": "lexeme 1162, AKRNA (root 691 AKR), another"
+        }
+      ],
+      "note": "The Targums put it for אַחֵר in the verses this entry cites for “other gods”, “another wife” and “the next year” (Exo 20:3; 21:10; Gen 17:21)."
+    },
+    {
+      "id": "arc-achora",
+      "lang": "arc",
+      "form": "אֲחוֹרָא",
+      "translit": "ʾăḥôrā",
+      "gloss": "back; (with ל) backward; behind",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲחוֹרָא",
+          "note": "לאחורא “backward”, Targ. Gen. XLIX, 17; pl. אֲחוֹרִין, Targ. Ps. LXXVIII, 66; אֲחוֹרֵי “behind, after”."
+        }
+      ],
+      "note": "The Targum’s word for אָחוֹר in Gen 49:17 and Psa 78:66."
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "latter-days",
+      "statement": "בְּאַחֲרִית הַיָּמִים stands thirteen times in the Hebrew, once as “of the years” (Ezk 38:8), and once in Daniel’s Aramaic (Dan 2:28). אַחֲרִית is the after-part of a thing as against its beginning (Job 8:7; 42:12; Isa 46:10), so the phrase is “in the latter part of the days”: the time lying after the speaker’s own, in which what he announces comes about. Its own verses say what falls in it. What will meet the tribes of Jacob, with the sceptre in Judah until Shiloh comes (Gen 49:1, 10). What Israel will do to Moab, when a star comes out of Jacob and a sceptre rises from Israel (Num 24:14, 17); David struck Moab (2Sa 8:2). Israel’s corruption after the death of Moses and the evil that meets them for it, then their distress and their return to Yahweh (Deu 31:29; 4:30). Yahweh’s anger carried through until the purposes of his heart are done, which his people will then understand (Jer 23:20; 30:24). The sons of Israel, after many days without king or sacrifice, returning to seek Yahweh and David their king (Hos 3:4–5). The captivity of Moab and of Elam turned (Jer 48:47; 49:39). Gog brought against the land of a people gathered out of the nations, so that the nations may know Yahweh (Ezk 38:8, 16). What will meet Daniel’s people (Dan 10:14). And the mountain of the house of Yahweh set at the head of the mountains, instruction going out from Zion, Yahweh judging between the nations, and war learned no more (Isa 2:2–4; Mic 4:1–3). Nebuchadnezzar’s dream of “what will be in the latter part of the days” runs from his own kingdom, through those that follow it, to a kingdom that the God of heaven sets up, which breaks them all, fills the whole earth and stands for ever (Dan 2:28, 35, 44). So the phrase does not name a single last moment. It reaches from things near the speaker to the kingdom of God on the earth with Israel returned, and it is those that the prophets set at its far end. The apostles speak of their own days as within it: Peter gives Joel’s “after this” as “in the last days” and says it of the day of Pentecost (Jol 3:1; Act 2:16–17), God spoke by a son “at the last of these days” (Heb 1:1–2), and John writes “it is the last hour” (1Jn 2:18); and they still look ahead to hard times and mockers “in the last days” (2Ti 3:1; 2Pe 3:3).",
+      "evidence": [
+        {
+          "ref": "Gen.49.1"
+        },
+        {
+          "ref": "Gen.49.10"
+        },
+        {
+          "ref": "Num.24.14"
+        },
+        {
+          "ref": "Num.24.17"
+        },
+        {
+          "ref": "2Sa.8.2"
+        },
+        {
+          "ref": "Deu.31.29"
+        },
+        {
+          "ref": "Deu.4.30"
+        },
+        {
+          "ref": "Jer.23.20"
+        },
+        {
+          "ref": "Jer.30.24"
+        },
+        {
+          "ref": "Hos.3.4",
+          "to": "Hos.3.5"
+        },
+        {
+          "ref": "Jer.48.47"
+        },
+        {
+          "ref": "Jer.49.39"
+        },
+        {
+          "ref": "Ezk.38.8"
+        },
+        {
+          "ref": "Ezk.38.16"
+        },
+        {
+          "ref": "Dan.10.14"
+        },
+        {
+          "ref": "Isa.2.2",
+          "to": "Isa.2.4"
+        },
+        {
+          "ref": "Mic.4.1",
+          "to": "Mic.4.3"
+        },
+        {
+          "ref": "Dan.2.28"
+        },
+        {
+          "ref": "Dan.2.35"
+        },
+        {
+          "ref": "Dan.2.44"
+        },
+        {
+          "ref": "Job.8.7"
+        },
+        {
+          "ref": "Job.42.12"
+        },
+        {
+          "ref": "Isa.46.10"
+        },
+        {
+          "ref": "Jol.3.1"
+        },
+        {
+          "ref": "Act.2.16",
+          "to": "Act.2.17"
+        },
+        {
+          "ref": "Heb.1.1",
+          "to": "Heb.1.2"
+        },
+        {
+          "ref": "1Jn.2.18"
+        },
+        {
+          "ref": "2Ti.3.1"
+        },
+        {
+          "ref": "2Pe.3.3"
+        }
+      ]
+    },
+    {
+      "topic": "one-god",
+      "statement": "The first of the ten words is “you shall have no other gods before my face” (Exo 20:3), and “other gods” are named as the gods of the peoples round about (Deu 6:14). To walk after them is to leave walking after Yahweh (Deu 13:5; 1Ki 18:21), and is called whoring (Exo 34:15; Jdg 2:17); Yahweh’s name is Jealous (Exo 34:14), and his glory he will not give to another (Isa 42:8; 48:11). He says of himself, “I am first and I am last, and besides me there is no God” (Isa 44:6; 48:12), and “before me no god was formed, and after me there will be none” (Isa 43:10). So there is no place before, beside or after him for another god: God is one. In the Revelation the risen Jesus says, “I am the first and the last, and the living one; and I became dead, and behold, I am living for the ages” (Rev 1:17–18; 2:8). He says it in a revelation that God gave him (Rev 1:1), and as one who died, which the only one having immortality cannot (1Ti 6:16). The title on his lips is therefore his Father’s, borne by the son whom God raised; it does not make him the God of Isaiah 44, besides whom there is none.",
+      "evidence": [
+        {
+          "ref": "Exo.20.3"
+        },
+        {
+          "ref": "Deu.6.14"
+        },
+        {
+          "ref": "Deu.13.5"
+        },
+        {
+          "ref": "1Ki.18.21"
+        },
+        {
+          "ref": "Exo.34.14",
+          "to": "Exo.34.15"
+        },
+        {
+          "ref": "Jdg.2.17"
+        },
+        {
+          "ref": "Isa.42.8"
+        },
+        {
+          "ref": "Isa.48.11",
+          "to": "Isa.48.12"
+        },
+        {
+          "ref": "Isa.44.6"
+        },
+        {
+          "ref": "Isa.43.10"
+        },
+        {
+          "ref": "Rev.1.17",
+          "to": "Rev.1.18"
+        },
+        {
+          "ref": "Rev.2.8"
+        },
+        {
+          "ref": "Rev.1.1"
+        },
+        {
+          "ref": "1Ti.6.16"
+        }
+      ]
+    },
+    {
+      "topic": "resurrection",
+      "statement": "Of a man’s death the Preacher asks, “who will bring him to see what will be after him?” (Ecc 3:22; 6:12), and says of the living, “and after it, to the dead” (Ecc 9:3); the psalm says of the rich man, “his glory will not go down after him” (Psa 49:18). What comes after a man under the sun is not his to see. Yet the upright are told that there is an אַחֲרִית, a latter part, and that their hope will not be cut off, while the wicked have none (Pro 23:18; 24:14, 20; Psa 37:37–38); Balaam wished his own to be like that of the upright (Num 23:10). Job places it: “I know that my redeemer lives, and at the last he will stand upon the dust; and after my skin has been struck off, yet from my flesh I shall see God” (Job 19:25–26). Martha says the same of her brother, “he will rise in the resurrection at the last day” (Jhn 11:24), and Jesus four times, “I will raise him up at the last day” (Jhn 6:39, 40, 44, 54); Paul sets it “at the last trumpet”, when the dead are raised (1Co 15:52). The hope of the dead is therefore placed after death, at the last day, in a rising from the dust, and not in anything that goes on at death.",
+      "evidence": [
+        {
+          "ref": "Ecc.3.22"
+        },
+        {
+          "ref": "Ecc.6.12"
+        },
+        {
+          "ref": "Ecc.9.3"
+        },
+        {
+          "ref": "Psa.49.18"
+        },
+        {
+          "ref": "Pro.23.18"
+        },
+        {
+          "ref": "Pro.24.14"
+        },
+        {
+          "ref": "Pro.24.20"
+        },
+        {
+          "ref": "Psa.37.37",
+          "to": "Psa.37.38"
+        },
+        {
+          "ref": "Num.23.10"
+        },
+        {
+          "ref": "Job.19.25",
+          "to": "Job.19.26"
+        },
+        {
+          "ref": "Jhn.11.24"
+        },
+        {
+          "ref": "Jhn.6.39",
+          "to": "Jhn.6.40"
+        },
+        {
+          "ref": "Jhn.6.44"
+        },
+        {
+          "ref": "Jhn.6.54"
+        },
+        {
+          "ref": "1Co.15.52"
+        }
+      ]
+    },
+    {
+      "topic": "return-of-christ",
+      "statement": "Habakkuk is told that the vision is for an appointed time: “though it tarries, wait for it; for it will surely come, it will not delay” (Hab 2:3). The letter to the Hebrews reads this of a person, “the one who is coming will come, and will not delay”, and bids its readers endure until then (Heb 10:36–37). Jesus’ parables put the opposite thought in the mouth of the evil servant, “my lord delays to come” (Mat 24:48; Luk 12:45), and have the bridegroom come after a delay that sent the virgins to sleep (Mat 25:5). Peter answers those who ask where the promise of his coming is: “the Lord is not slow about the promise, as some count slowness, but is patient” (2Pe 3:9). So the time until he comes may be long to those who wait, but it is a set time and he will not be late for it; the waiting is to be spent in endurance and watching.",
+      "evidence": [
+        {
+          "ref": "Hab.2.3"
+        },
+        {
+          "ref": "Heb.10.36",
+          "to": "Heb.10.37"
+        },
+        {
+          "ref": "Mat.24.48"
+        },
+        {
+          "ref": "Luk.12.45"
+        },
+        {
+          "ref": "Mat.25.5"
+        },
+        {
+          "ref": "2Pe.3.9"
+        }
+      ]
+    }
+  ],
+  "note": "Root key אחר, as the brief’s key and as the corpus keys the words; no other entry has it. BDB keys: a.cp.ac (אַחַר) and a.cp.ad (BDB’s separate heading אַחֲרַי, “backwards”, for Pro 28:23) hold the same 711 tokens, so only a.cp.ac is named. The three Aramaic keys are spelt like Hebrew words and so are inflated: xa.ak.aa has 274 tokens, of which only Dan 2:29, 2:45 and 7:24 are Aramaic; xa.ak.ad has 17, of which only Dan 2:28 is; a.cp.ah (Hebrew אַחֲרִית, 62) includes Dan 2:28. a.cp.ai (the name Aher, 1Ch 7:12) is given to names/aher.json; its 49 tokens are every singular אַחֵר, also counted under a.cp.ab. xa.ak.ab (אָחֳרִי, no tokens) is the feminine of אָחֳרָן and is treated under it. Left out, as Persian loans filed here by the alphabet: אֲחַשְׁוֵרוֹשׁ Ahasuerus (a.cp.am), אֲחַשְׁדַּרְפְּנִים satraps (a.cp.al), אֲחַשְׁתְּרָן royal (a.cp.ao), הָאֲחַשְׁתָּרִי (a.cp.an); xa.bj.ad (אִתַי) is a cross-reference only. מָחָר “tomorrow” has its own entry (machar), whose note records that some derive it from this root. Names: Aher and Aharhel have name entries; אַחְרַח Aharah (a.cp.aj, 1Ch 8:1) has none: TIPNR counts it a form of Ahiram’s name (Ahiram@Gen.46.21; Num 26:38), which belongs to אח and רום. Open questions and leads: (1) the link of אַחֵר “other” to “behind” rests on the shared consonants in every language that has the root and on Lane’s “originally meaning more backward”; no verse states it. (2) Akkadian ina aḫrât ūmī, the counterpart of בְּאַחֲרִית הַיָּמִים, is known from the dictionaries (CAD A/1 s.v. aḫrâtu) but no text or page was checked; Oracc gives only the lemma. (3) Ge’ez: Anderson and Moser list ʾaḫara “kept” under *ʾḫr (SEM001082, GEZ000162); not checked in Dillmann or Leslau, so no Ge’ez cognate is given. (4) Ugaritic ủḫry: Segert glosses “the other/next world”, Wiktionary “posterity”; the texts (KTU 1.19:IV:7; 1.103:39) were not read, so it is “possible” and named on no word. (5) Segert’s §55.1 reference for ảḫr as adverb, preposition and conjunction is from the OCR text (the section number should be checked on the scan). (6) Krahmalkov’s readings were taken from the extracted text; the Punic transliterations should be checked on the PDF. (7) Old Aramaic and Imperial Aramaic ʾḥr, ʾḥrn (Sefire, Elephantine) were not looked up (CAL, DNWSI). (8) Pro 29:11 בְּאָחוֹר (the wise man stills his spirit “back” or “afterwards”) and Gen 16:13, 22:13 and Zec 2:12 (אַחַר כָּבוֹד) are difficult and not cited. (9) Dan 4:5 וְעַד אָחֳרֵין is read “at last”; the written form allows “until another”. (10) 2Sa 20:5 וייחר / וַיּוֹחֶר is mentioned in the verb’s summary but given no stem (BDB j.bh.ad has no tokens). (11) The Peshitta lemmas are pointed from SEDRA’s vocalised forms; the eshtaphal of אַוְחַר is cited for Act 22:16 and 2Pe 3:9 from the forms מֵשתַּוחַר there. (12) The Septuagint renders Isa 44:6 and 48:12 אַחֲרוֹן by other words than ἔσχατος, so the tie of Rev 1:17 to those verses rests on the Hebrew."
+}
