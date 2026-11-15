@@ -173,7 +173,7 @@ each sense where a word's senses differ:
 | Uses | The word's Old Testament tokens, from its `bdb` keys. One use is a word scripture barely fixes. |
 | Verses cited (defining) | The verses its senses cite, and how many of them fix a meaning. |
 | Cognates sharing its meaning | The cognates it names in `cognate_ids` (its own or inherited) as `cognate`, or as a loan into Hebrew, and how many languages they come from. |
-| Cognates against it | Where it and its kin name no cognate sharing its meaning, all the root's cognates (`cognate`, Semitic): nothing ties it to the root. Where they name one, only those showing a different older sound behind a merged letter than the ones named (see Sounds): another older root in the same spelling. Another word of the same root is no evidence against it. |
+| Cognates against it | Where it and its kin name no cognate sharing its meaning, the root's other Semitic cognates: nothing yet ties it to the root. Once a word has its own cognate support, cognates assigned to other words or another older root in the same spelling do not count against it. |
 | Balance | Languages sharing the meaning, less **twice** the languages against it: opposing evidence weighs double. |
 | Possible | Cognates it names only as `possible`; they count neither way. |
 | Kin senses | Sibling senses sharing its meaning, with their own uses, verses and cognates: support from the rest of the root. |
@@ -183,10 +183,10 @@ cognate on every word and sense whose meaning it shares, and on none other: a
 cognate named on no word is listed under the table. The balance is there to
 find the words with no evident tie to their root: a word no cognate shares
 (the tree תְּאַשּׁוּר of אשר, whose cognates mean "footstep, trace") counts
-all the root's cognates against it, which says the root's sense is not yet
-understood, or the word belongs to another root, or its own sense is not. A
-word whose cognates show one older sound behind a merged letter is opposed by
-those showing another (ערב "evening", ġ, against عربون "pledge", ʿ).
+the root's other cognates against it, which says the root's sense is not yet
+understood, or the word belongs to another root, or its own sense is not.
+Where two older roots merged into one Hebrew spelling, each supported word
+is scored by its assigned cognates; the other root does not lower its balance.
 
 ### Sounds
 

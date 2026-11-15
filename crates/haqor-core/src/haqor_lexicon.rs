@@ -1545,11 +1545,9 @@ pub struct CognateCount {
     pub sharing: Vec<String>,
     /// How many languages those come from.
     pub sharing_languages: usize,
-    /// The root's cognates (`cognate`, from a Semitic language) that count
-    /// against it: all those it and its kin do not name, where they name
-    /// none sharing its meaning; otherwise those showing an older sound
-    /// behind a merged letter other than the ones named (another older
-    /// root). Each as `Language form (gloss)`.
+    /// The root's other Semitic cognates when neither the word nor its kin
+    /// names a cognate sharing its meaning. Cognates of another older root
+    /// in the same Hebrew spelling do not count against a supported word.
     pub differing: Vec<String>,
     pub differing_languages: usize,
     /// Cognates it names only as `possible`.
@@ -1626,10 +1624,8 @@ pub fn entry_support(entry: &Entry, uses: &dyn Fn(&Word) -> Option<usize>) -> Ve
     // against them. `named` is every cognate that goes with the meaning (its
     // own and its kin's). Where none of them shares it, cognates show no
     // connection to the root, and each of the root's other cognates counts
-    // against it. Where one does, another word of the same root is no
-    // evidence against it: a cognate counts against it only when it shows,
-    // behind a merged letter, an older sound other than those it names (an
-    // older root merged into the same spelling).
+    // against it. Where one does, cognates assigned to another word or to
+    // another older root in the same spelling do not weaken its support.
     let count = |own: &BTreeSet<&str>, named: &BTreeSet<&str>| {
         let mut out = CognateCount::default();
         let mut sharing = BTreeSet::new();
@@ -1643,42 +1639,25 @@ pub fn entry_support(entry: &Entry, uses: &dyn Fn(&Word) -> Option<usize>) -> Ve
                 out.possible.push(name);
             }
         }
-        let connecting: Vec<&Cognate> = named
+        let connected = named
             .iter()
-            .filter_map(|id| by_cognate_id.get(id).copied())
-            .filter(|c| shares(c))
-            .collect();
-        let mut shown: BTreeMap<&str, BTreeSet<&str>> = BTreeMap::new();
-        for c in &connecting {
-            for (letter, sound) in &c.sounds {
-                shown
-                    .entry(letter.as_str())
-                    .or_default()
-                    .insert(sound.as_str());
-            }
-        }
-        let another_root = |c: &Cognate| {
-            connecting.is_empty()
-                || c.sounds.iter().any(|(letter, sound)| {
-                    shown
-                        .get(letter.as_str())
-                        .is_some_and(|sounds| !sounds.contains(sound.as_str()))
-                })
-        };
-        for c in &entry.cognates {
-            let is_named = c.id.as_deref().is_some_and(|id| named.contains(id));
-            if c.relation == Relation::Cognate
-                && !LOAN_ONLY_LANGS.contains(&c.lang.as_str())
-                && !is_named
-                && another_root(c)
-            {
-                differing.insert(c.lang.as_str());
-                out.differing.push(format!(
-                    "{} {} ({})",
-                    language_name(&c.lang),
-                    c.form,
-                    c.gloss
-                ));
+            .filter_map(|id| by_cognate_id.get(id))
+            .any(|c| shares(c));
+        if !connected {
+            for c in &entry.cognates {
+                let is_named = c.id.as_deref().is_some_and(|id| named.contains(id));
+                if c.relation == Relation::Cognate
+                    && !LOAN_ONLY_LANGS.contains(&c.lang.as_str())
+                    && !is_named
+                {
+                    differing.insert(c.lang.as_str());
+                    out.differing.push(format!(
+                        "{} {} ({})",
+                        language_name(&c.lang),
+                        c.form,
+                        c.gloss
+                    ));
+                }
             }
         }
         out.sharing_languages = sharing.len();
@@ -1841,9 +1820,9 @@ pub fn support_report(lexicon: &Lexicon, db: &Connection, schema: &str) -> Strin
         "Uses: the word's Old Testament tokens (its `bdb` keys). Balance: languages \
          with cognates sharing the meaning, less twice the languages with cognates \
          against it (opposing evidence weighs double). Against a word with no \
-         cognate of its own (nor its kin's) count all the root's cognates; against \
-         one with cognates, only those showing another older sound behind a merged \
-         letter. Its senses are listed under it where they differ.\n\n",
+         cognate of its own (nor its kin's) count the root's other cognates. \
+         Cognates assigned to another older root do not count against a word \
+         with its own support. Its senses are listed under it where they differ.\n\n",
     );
     for entry in &lexicon.entries {
         let _ = writeln!(out, "## {} `{}`\n", entry.root, entry.id);
@@ -2324,19 +2303,33 @@ mod tests {
     }
 
     #[test]
-    fn a_cognate_of_another_meaning_counts_double() {
+    fn a_cognate_of_another_root_does_not_penalize_a_supported_word() {
         let entry: Entry = serde_json::from_str(EREV).unwrap();
         let support = entry_support(&entry, &|word| (word.lemma == "עֶרֶב").then_some(134));
         let evening = &support[0];
         assert_eq!(evening.uses, Some(134));
         assert_eq!((evening.cited, evening.defining), (1, 0));
         assert_eq!(evening.cognates.sharing, ["Arabic غرب"]);
-        assert_eq!(evening.cognates.differing, ["Arabic عربون (earnest money)"]);
-        // One language for, one against: the one against counts twice.
-        assert_eq!(evening.cognates.balance, -1);
+        assert!(evening.cognates.differing.is_empty());
+        assert_eq!(evening.cognates.balance, 1);
         // The Aramaic "be mixed" shares neither cognate's meaning.
         assert_eq!(support[2].cognates.differing_languages, 1);
         assert_eq!(support[2].cognates.balance, -2);
+    }
+
+    #[test]
+    fn am_words_keep_their_two_older_roots_apart() {
+        let entry: Entry =
+            serde_json::from_str(include_str!("../../../data/lexicon/am.json")).unwrap();
+        let support = entry_support(&entry, &|_| None);
+        let people = &support[0].cognates;
+        let dim = &support[3].cognates;
+        assert!(people.sharing.iter().any(|c| c.contains("عَمٌّ")));
+        assert!(!people.sharing.iter().any(|c| c.contains("غَمَّ")));
+        assert!(people.differing.is_empty());
+        assert!(dim.sharing.iter().any(|c| c.contains("غَمَّ")));
+        assert!(!dim.sharing.iter().any(|c| c.contains("عَمٌّ")));
+        assert!(dim.differing.is_empty());
     }
 
     #[test]
@@ -2354,8 +2347,8 @@ mod tests {
         let entry: Entry = serde_json::from_str(&json).unwrap();
         let support = entry_support(&entry, &|_| None);
         let evening = &support[0];
-        // Only the ʿ cognate, another older root, counts against it.
-        assert_eq!(evening.cognates.differing, ["Arabic عربون (earnest money)"]);
+        // Both older roots are present, but only the word's own cognate supports it.
+        assert!(evening.cognates.differing.is_empty());
         // The Aramaic "be mixed" names no cognate: every one counts against it.
         assert_eq!(support[2].cognates.differing.len(), 3);
     }
@@ -2380,8 +2373,8 @@ mod tests {
         assert_eq!(mixed.kin.len(), 1);
         assert_eq!(mixed.kin[0].sense, "עָרַב qal: pledge");
         assert_eq!(mixed.kin[0].cognates, 1);
-        // عربون goes with its kin; only غرب has another meaning.
-        assert_eq!(mixed.cognates.differing, ["Arabic غرب (set (of the sun))"]);
+        // عربون goes with its kin; the other root does not count against it.
+        assert!(mixed.cognates.differing.is_empty());
     }
 
     #[test]

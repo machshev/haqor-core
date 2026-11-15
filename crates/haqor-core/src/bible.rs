@@ -4206,6 +4206,25 @@ impl Bible {
                 .optional()
         };
         let root = fold_consonants(root);
+        // BDB can file a longer noun under a neighboring triliteral root.
+        // An explicit entry for that noun must win when its headword is clicked.
+        if !word.is_empty() {
+            for bdb in self.hebrew_bdb_for_surface(word, prefix)? {
+                let by_word: Option<String> = self
+                    .db
+                    .query_row(
+                        "SELECT h.id FROM data.haqor_lexicon_bdb h \
+                         JOIN data.haqor_lexicon l ON l.id = h.id \
+                         WHERE h.key = ?1 AND length(l.root) > 3",
+                        [&bdb.key],
+                        |row| row.get(0),
+                    )
+                    .optional()?;
+                if by_word.is_some() {
+                    return entry(by_word);
+                }
+            }
+        }
         if !root.is_empty() {
             let by_root = self
                 .db
@@ -8645,21 +8664,27 @@ mod tests {
     }
 
     #[test]
-    fn rootless_haqor_lexicon_lookup_distinguishes_pointed_homographs() {
+    fn haqor_lexicon_lookup_distinguishes_homographs_and_longer_words() {
         let db = Connection::open_in_memory().unwrap();
         db.execute_batch(
             "ATTACH DATABASE ':memory:' AS data;
-             CREATE TABLE data.haqor_lexicon(id TEXT, json TEXT);
+             CREATE TABLE data.haqor_lexicon(id TEXT, root TEXT, json TEXT);
+             CREATE TABLE data.haqor_lexicon_root(root TEXT, id TEXT);
              CREATE TABLE data.haqor_lexicon_bdb(key TEXT, id TEXT);
              CREATE TABLE data.lexicon_entry(
                  key TEXT, word TEXT, cons TEXT, root TEXT, gloss TEXT,
                  body BLOB, pos TEXT, kind TEXT
              );
-             INSERT INTO data.haqor_lexicon VALUES ('elah', '{}');
-             INSERT INTO data.haqor_lexicon_bdb VALUES ('noun', 'elah');
+             INSERT INTO data.haqor_lexicon VALUES
+                 ('elah', 'אלה', '{}'), ('akar', 'עכר', '{}'),
+                 ('akshuv', 'עכשב', '{}');
+             INSERT INTO data.haqor_lexicon_root VALUES ('עכר', 'akar');
+             INSERT INTO data.haqor_lexicon_bdb VALUES
+                 ('noun', 'elah'), ('asp', 'akshuv');
              INSERT INTO data.lexicon_entry VALUES
                  ('noun', 'אֵל', 'אל', 'אלה', 'mighty one', NULL, 'noun', ''),
-                 ('preposition', 'אֶל', 'אל', '', 'to', NULL, 'preposition', '');",
+                 ('preposition', 'אֶל', 'אל', '', 'to', NULL, 'preposition', ''),
+                 ('asp', 'עַכְשׁוּב', 'עכשוב', 'עכר', 'asp', NULL, 'noun', '');",
         )
         .unwrap();
         let bible = Bible {
@@ -8673,6 +8698,14 @@ mod tests {
         );
         assert_eq!(bible.haqor_lexicon_entry("", "אֶל", "").unwrap(), None);
         assert_eq!(bible.haqor_lexicon_entry("", "וְאֶל", "וְ").unwrap(), None);
+        assert_eq!(
+            bible.haqor_lexicon_entry("עכר", "עַכְשׁוּב", "").unwrap(),
+            Some(("akshuv".into(), "{}".into()))
+        );
+        assert_eq!(
+            bible.haqor_lexicon_entry("עכר", "עָכַר", "").unwrap(),
+            Some(("akar".into(), "{}".into()))
+        );
     }
 
     /// A prophecy is found from its own passage and from a fulfilment; the

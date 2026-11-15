@@ -1,8 +1,9 @@
 {
   "id": "ad",
   "root": "עדה",
-  "status": "draft",
-  "updated": "2026-11-13",
+  "status": "reviewed",
+  "reviewed": "2026-11-15",
+  "updated": "2026-11-15",
   "tags": [
     "grammar",
     "time",
@@ -12,8 +13,8 @@
     "spoil",
     "ornament"
   ],
-  "gloss": "pass on, pass beyond; (particle) as far as, until; perpetuity; prey; (ornament)",
-  "summary": "The root of passing on. The verb is to pass over or along (Job 28:8), in Aramaic to pass from or pass away, and causatively to take away (Dan 4:28; 7:14, 26). Its commonest word, עַד, says how far a thing goes on: \"as far as, up to\" of place, \"until\" of time (Lev 23:14, 16), \"even to\" of amount, and before a clause \"until\" or \"while\"; as a noun עַד is the going on itself, perpetuity, \"for ever\" (Psa 37:29), and a second noun עַד is prey, what is fallen on and carried off (Gen 49:27). That the particle grows from this root is well supported, though no text shows the step: its poetic form עֲדֵי is built as עֲלֵי beside עַל of עלה; Ugaritic, Phoenician, Moabite, Sabaic and Akkadian all have ʿd or adi \"until, as far as\"; and Arabic ʿadā \"pass from, pass beyond\" and Sabaic ʿdw \"enter, invade\" are verbs of the same consonants, the Arabic one serving as a particle too. The ornaments עֲדִי and the verb \"adorn\" share the spelling, but how they join \"passing on\" is not clear.",
+  "gloss": "pass on, pass beyond; (particle) as far as, until; perpetuity; spoil, prey; (ornament)",
+  "summary": "The root of passing on. The verb is to pass over or along (Job 28:8), in Aramaic to pass from or pass away, and causatively to take away (Dan 4:28; 7:14, 26). Its commonest word, עַד, says how far a thing goes on: \"as far as, up to\" of place, \"until\" of time (Lev 23:14, 16), \"even to\" of amount, and before a clause \"until\" or \"while\"; as a noun עַד is continuance or duration, often rendered \"for ever\" in a phrase such as לָעַד (Psa 37:29), but also looking back to ancient time (Job 20:4). A rare sense of the same spelling is usually read as spoil or prey (Gen 49:27; Isa 33:23), though the exact sense and its link to this root are uncertain. That the particle grows from this root is well supported, though no text shows the step: its poetic form עֲדֵי is built as עֲלֵי beside עַל of עלה; Ugaritic, Phoenician, Moabite, Sabaic and Akkadian all have ʿd or adi \"until, as far as\"; and Arabic ʿadā \"pass from, pass beyond\" and Sabaic ʿdw \"enter, invade\" are verbs of the same consonants, the Arabic one serving as a particle too. The ornaments עֲדִי and the verb \"adorn\" plausibly extend \"pass over\" to putting an ornament over or onto the body; no independent cognate yet shows that adornment sense.",
   "words": [
     {
       "lemma": "עַד",
@@ -130,7 +131,7 @@
             {
               "id": "ad-forever",
               "gloss": "for ever (עַד־עוֹלָם, עֲדֵי־עַד)",
-              "definition": "With עוֹלָם or the noun עַד: up to a time with no end in view, for ever.",
+              "definition": "With עוֹלָם or the noun עַד: up to a duration conceived as extending onward. 'For ever' is a conventional rendering of the whole phrase; its extent depends on context.",
               "evidence": [
                 {
                   "ref": "1Sa.1.22",
@@ -482,25 +483,39 @@
     {
       "lemma": "עַד",
       "bdb": [
-        "p.aq.ab"
+        "p.aq.ab",
+        "p.aq.ac"
       ],
       "cognate_ids": [
         "phn-ad",
-        "uga-ad"
+        "uga-ad",
+        "ar-ada-ala",
+        "arc-adi-spoil",
+        "sab-adw"
       ],
       "pos": "noun",
       "gender": "m",
-      "gloss": "perpetuity, continuance; (לָעַד, עֲדֵי־עַד) for ever",
-      "summary": "The going on itself: time that continues. It stands after a preposition (לָעַד \"to perpetuity\", עֲדֵי־עַד), as the second word of the pair לְעוֹלָם וָעֶד \"for ever and ever\", or bound after a noun, \"perpetual mountains\". Whether it has no end at all is said by what it is said of: Yahweh's reign and the king's throne (Exo 15:18; Psa 45:7), or a curse that lasts (Psa 9:6). Its link to the root is that of the particle: the time things go on to. The Ugaritic and Phoenician cognates show only the phrase \"until ʿlm\", for ever, not the noun alone.",
+      "gloss": "continuance, duration; spoil, prey",
+      "summary": "The time sense names the continuing duration of a person, thing, or state, without marking a beginning or an end. לָעַד speaks of continuance ahead, while מִנִּי־עַד in Job 20:4 looks back to ancient time. Bound after another noun, עַד describes the ancient mountains (Hab 3:6); in לְעוֹלָם וָעֶד it reinforces עוֹלָם. Such phrases are often translated 'for ever', but that is a reading of the whole expression in context, not a claim that עַד by itself means endlessness. The king's blessing (Psa 21:7) and the ancient mountains show its range; Yahweh's reign (Exo 15:18) supplies a context of unbounded duration. This sense follows the particle's idea of how far time goes on; Ugaritic and Phoenician cognates show the phrase 'until ʿlm', not the noun alone. A rare use is usually read as spoil or prey (Gen 49:27; Isa 33:23); it need not arise from temporal continuance. A possible link through the root is something passing into the taker's hands: Hebrew hiphil עָדָה can remove a garment (Pro 25:20), while Arabic ʿadā ʿalā and Sabaic ʿdw show advancing upon or raiding. Neither Hebrew verse defines the noun as a thing transferred, so this remains a proposed bridge.",
       "senses": [
         {
           "id": "ad-perpetuity",
-          "gloss": "perpetuity; for ever",
-          "definition": "Time going on with no end set; with לְ or עֲדֵי, \"for ever\".",
+          "gloss": "continuance, duration",
+          "definition": "The ongoing duration of a person, thing, state, or action, looking ahead or back without the noun itself marking a beginning or an end. Phrases such as לָעַד and עֲדֵי־עַד are conventionally rendered 'for ever' in some contexts.",
           "kin": [
             "ad-forever"
           ],
           "evidence": [
+            {
+              "ref": "Job.20.4",
+              "role": "defining",
+              "note": "מִנִּי־עַד, 'from long ago', is followed by 'since humankind was placed on earth'; this use looks back rather than forward."
+            },
+            {
+              "ref": "Psa.21.7",
+              "role": "defining",
+              "note": "The king is made a blessing לָעַד, for enduring time; the phrase alone does not specify whether his own lifetime is unending."
+            },
             {
               "ref": "Psa.37.29",
               "role": "defining",
@@ -529,14 +544,14 @@
             },
             {
               "ref": "Isa.30.8",
-              "note": "Written down \"for a later day, for ever (לָעַד), to perpetuity (עַד־עוֹלָם)\"."
+              "note": "The Masoretic pointing reads לָעַד, followed by עַד־עוֹלָם, for lasting record; some ancient versions and scholars instead read לְעֵד, 'for a witness', so this is not decisive evidence for the noun."
             }
           ],
           "senses": [
             {
               "id": "ad-forever-and-ever",
-              "gloss": "for ever and ever (לְעוֹלָם וָעֶד)",
-              "definition": "Joined after עוֹלָם, the two together say it as strongly as the language can.",
+              "gloss": "for an age and continuing onward (לְעוֹלָם וָעֶד)",
+              "definition": "Joined after עוֹלָם, עַד reinforces continuing duration. The phrase is conventionally translated 'for ever and ever'; that rendering does not make endlessness part of either noun by itself.",
               "evidence": [
                 {
                   "ref": "Exo.15.18",
@@ -559,23 +574,47 @@
             },
             {
               "id": "ad-perpetual",
-              "gloss": "perpetual, abiding (bound after a noun)",
-              "definition": "Bound after a noun, of what lasts: the abiding mountains; Yahweh \"who inhabits perpetuity\"; the child named \"father of perpetuity\".",
+              "gloss": "ancient, enduring (bound after a noun)",
+              "definition": "Bound after a noun, of what extends through time: the ancient mountains; Yahweh 'who inhabits enduring time'; the child named 'father of enduring time'.",
               "evidence": [
                 {
                   "ref": "Hab.3.6",
                   "role": "defining",
-                  "note": "הַרְרֵי־עַד \"the perpetual mountains\" beside גִּבְעוֹת עוֹלָם \"the everlasting hills\"."
+                  "note": "הַרְרֵי־עַד, 'the ancient mountains', beside גִּבְעוֹת עוֹלָם, 'the enduring hills'; both are scattered or bowed in the verse. Their great age is in view, not existence without a beginning or an end."
                 },
                 {
                   "ref": "Isa.57.15",
-                  "note": "שֹׁכֵן עַד: \"who inhabits perpetuity\"."
+                  "note": "שֹׁכֵן עַד: 'who inhabits enduring time'; of Yahweh, the context supports 'eternity'."
                 },
                 {
                   "ref": "Isa.9.5",
-                  "note": "אֲבִי־עַד: \"father of perpetuity\", one of the names of the child born to sit on David's throne (v. 6)."
+                  "note": "אֲבִי־עַד: 'father of enduring time', one of the names of the child born to sit on David's throne (v. 6)."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "ad-prey",
+          "gloss": "spoil, prey",
+          "definition": "What is taken; in the wolf image of Gen 49:27, what is eaten. It may be what passes into the taker's hands through being taken away, but that derivation is not directly attested.",
+          "kin": [
+            "syc-ada-seize"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.49.27",
+              "role": "defining",
+              "note": "\"Benjamin is a wolf that tears; in the morning he devours prey (עַד), and at evening he divides spoil (שָׁלָל)\". The wolf and the verbs supply the hunting and devouring imagery, not עַד itself."
+            },
+            {
+              "ref": "Isa.33.23",
+              "role": "defining",
+              "note": "\"Then abundant spoil (עַד־שָׁלָל מַרְבֶּה) is divided; the lame take the plunder\". The phrase is difficult: the context establishes spoil, but does not fix the separate force of עַד."
+            },
+            {
+              "ref": "Zep.3.8",
+              "note": "\"Wait for me … for the day I rise up to the prey (לְעַד)\"; the letters can also be read לְעֵד, \"as a witness\"."
             }
           ]
         }
@@ -617,6 +656,27 @@
                 "ref": "Isa.30.8"
               }
             ]
+          },
+          {
+            "lemma": "שָׁלָל",
+            "note": "spoil: parallel to the rare עַד sense.",
+            "evidence": [
+              {
+                "ref": "Gen.49.27"
+              },
+              {
+                "ref": "Isa.33.23"
+              }
+            ]
+          },
+          {
+            "lemma": "בַּז",
+            "note": "plunder: parallel to the rare עַד sense.",
+            "evidence": [
+              {
+                "ref": "Isa.33.23"
+              }
+            ]
           }
         ],
         "phrases": [
@@ -634,7 +694,7 @@
           },
           {
             "phrase": "לְעוֹלָם וָעֶד / עוֹלָם וָעֶד",
-            "gloss": "for ever and ever",
+            "gloss": "for an age and continuing onward (idiomatically, for ever and ever)",
             "evidence": [
               {
                 "ref": "Exo.15.18"
@@ -664,88 +724,24 @@
       }
     },
     {
-      "lemma": "עַד",
-      "bdb": [
-        "p.aq.ac"
-      ],
-      "cognate_ids": [
-        "ar-ada-ala",
-        "arc-adi-spoil",
-        "sab-adw"
-      ],
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "prey, booty",
-      "summary": "Three uses only. Benjamin the wolf devours עַד in the morning and divides שָׁלָל, spoil, at evening (Gen 49:27), and in Isa 33:23 עַד־שָׁלָל is \"prey of spoil\". In Zep 3:8 the pointing reads לְעַד \"for the prey\", but the same letters read לְעֵד are \"as a witness\", so that verse is uncertain. Its link to the root is the falling upon and carrying off that the same consonants mean in Arabic (ʿadā ʿalā, of a thief and of a wolf), Sabaic (ʿdw \"invade, raid\") and the Peshitta's Syriac (ʿdā \"seize, come upon\"); this is argued from the cognates, not shown in Hebrew.",
-      "senses": [
-        {
-          "id": "ad-prey",
-          "gloss": "prey, booty",
-          "definition": "What a beast of prey or a victor seizes and carries off.",
-          "kin": [
-            "syc-ada-seize"
-          ],
-          "evidence": [
-            {
-              "ref": "Gen.49.27",
-              "role": "defining",
-              "note": "\"Benjamin is a wolf that tears; in the morning he devours prey (עַד), and at evening he divides spoil (שָׁלָל)\"."
-            },
-            {
-              "ref": "Isa.33.23",
-              "role": "defining",
-              "note": "\"Then prey of abundant spoil (עַד־שָׁלָל) is divided; the lame take the plunder\"."
-            },
-            {
-              "ref": "Zep.3.8",
-              "note": "\"Wait for me … for the day I rise up to the prey (לְעַד)\"; the letters can also be read לְעֵד, \"as a witness\"."
-            }
-          ]
-        }
-      ],
-      "usage": {
-        "parallels": [
-          {
-            "lemma": "שָׁלָל",
-            "note": "spoil.",
-            "evidence": [
-              {
-                "ref": "Gen.49.27"
-              },
-              {
-                "ref": "Isa.33.23"
-              }
-            ]
-          },
-          {
-            "lemma": "בַּז",
-            "note": "plunder.",
-            "evidence": [
-              {
-                "ref": "Isa.33.23"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "lemma": "עָדָה",
       "bdb": [
-        "p.aq.aa"
+        "p.aq.aa",
+        "p.ar.aa"
       ],
       "cognate_ids": [
         "ar-ada",
         "arc-ade",
-        "sab-adw"
+        "sab-adw",
+        "arc-adi-ornament"
       ],
       "pos": "verb",
-      "gloss": "pass over, pass along; (hiphil) take off, take away",
-      "summary": "Twice only in Hebrew. The lion has not passed over the path to wisdom, beside \"trodden\" (Job 28:8); the hiphil is to take a garment off on a cold day (Pro 25:20), making it pass from someone. Scripture's Aramaic verb of the same root (below) is used more, \"pass from, pass away\" and \"take away\", and gives the sense its fuller witness.",
+      "gloss": "pass over, pass along; put on ornaments, adorn; (hiphil) take off, take away",
+      "summary": "The lion has not passed over the path to wisdom, beside \"trodden\" (Job 28:8). Putting an ornament over or onto the body gives a plausible extension to \"put on, adorn\" (Hos 2:15; Ezk 16:11): a ring passes over a finger, for example. The hiphil takes a garment off on a cold day (Pro 25:20), making it pass from someone. Scripture's Aramaic verb of the same root is used more for \"pass from, pass away\" and \"take away\"; no independent cognate yet attests the adornment sense.",
       "stems": [
         {
           "stem": "qal",
-          "gloss": "pass over, pass along",
+          "gloss": "pass over, pass along; put on ornaments, adorn",
           "senses": [
             {
               "id": "adah-pass-over",
@@ -756,6 +752,55 @@
                   "ref": "Job.28.8",
                   "role": "defining",
                   "note": "\"The proud beasts have not trodden it (הִדְרִיכֻהוּ); the lion has not passed over it (עָדָה עָלָיו)\"."
+                }
+              ]
+            },
+            {
+              "id": "adah-adorn",
+              "gloss": "put on ornaments, adorn",
+              "definition": "Put ornaments on oneself or on another; with the ornament as object, put it on. A plausible extension of passing something over or onto the body.",
+              "kin": [
+                "adi-ornament"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.16.11",
+                  "role": "defining",
+                  "note": "\"I decked you with ornaments (וָאֶעְדֵּךְ עֶדִי), and put bracelets on your hands and a chain on your neck\"."
+                },
+                {
+                  "ref": "Jer.4.30",
+                  "role": "defining",
+                  "note": "\"Though you clothe yourself (לָבַשׁ) in scarlet, though you deck yourself (עָדָה) with ornaments of gold\": clothing and jewellery are named separately."
+                },
+                {
+                  "ref": "Hos.2.15",
+                  "role": "defining",
+                  "note": "וַתַּעַד נִזְמָהּ וְחֶלְיָתָהּ: \"she put on her ring and her jewellery\" and went after her lovers."
+                },
+                {
+                  "ref": "Ezk.16.12",
+                  "note": "The list of adornments begun in v. 11 continues with a nose ring, earrings, and a beautiful crown (עֲטֶרֶת תִּפְאֶרֶת) on her head; the crown is named here, though the verb עָדָה occurs in vv. 11 and 13."
+                },
+                {
+                  "ref": "Ezk.16.13",
+                  "note": "\"You were decked with gold and silver\"."
+                },
+                {
+                  "ref": "Ezk.23.40",
+                  "note": "\"you painted your eyes and decked yourself with ornaments\"."
+                },
+                {
+                  "ref": "Isa.61.10",
+                  "note": "\"as a bride adorns herself with her jewels\"."
+                },
+                {
+                  "ref": "Jer.31.4",
+                  "note": "\"again you will deck yourself with your tambourines\"."
+                },
+                {
+                  "ref": "Job.40.10",
+                  "note": "\"Deck yourself with majesty and dignity\", beside \"clothe yourself (תִּלְבָּשׁ) with splendour\"."
                 }
               ]
             }
@@ -795,87 +840,7 @@
               "note": "παρῆλθεν for עָדָה."
             }
           ]
-        }
-      ],
-      "usage": {
-        "parallels": [
-          {
-            "lemma": "הִדְרִיךְ",
-            "note": "tread: the beasts have not trodden it, the lion not passed over it.",
-            "evidence": [
-              {
-                "ref": "Job.28.8"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "lemma": "עָדָה",
-      "bdb": [
-        "p.ar.aa"
-      ],
-      "cognate_ids": [
-        "arc-adi-ornament"
-      ],
-      "pos": "verb",
-      "gloss": "deck oneself, adorn; put on (ornaments)",
-      "summary": "Always of decking with ornaments: most often a woman, or Israel or Jerusalem pictured as one (Ezk 16:11, 13; Hos 2:15; Jer 31:4), once Job, challenged to deck himself with majesty (Job 40:10). It is spelled as עָדָה \"pass on\", but how adorning joins passing on is not clear. One reading is \"put on\", the counterpart of the hiphil \"take off\" (Pro 25:20), and Hos 2:15 \"she put on her ring\" fits it, but no verse or cognate shows it; Aramaic עֲדִי \"what is put on, cloak, ornament\" is the nearest, and it may come from the Hebrew.",
-      "stems": [
-        {
-          "stem": "qal",
-          "gloss": "deck oneself; deck (another) with ornaments",
-          "senses": [
-            {
-              "id": "adah-adorn",
-              "gloss": "deck with ornaments, adorn",
-              "definition": "Put ornaments on oneself or on another; with the ornament as object, put it on.",
-              "kin": [
-                "adi-ornament"
-              ],
-              "evidence": [
-                {
-                  "ref": "Ezk.16.11",
-                  "role": "defining",
-                  "note": "\"I decked you with ornaments (וָאֶעְדֵּךְ עֶדִי), and put bracelets on your hands and a chain on your neck\"."
-                },
-                {
-                  "ref": "Jer.4.30",
-                  "role": "defining",
-                  "note": "\"though you clothe yourself in scarlet, though you deck yourself with ornaments of gold\"."
-                },
-                {
-                  "ref": "Hos.2.15",
-                  "role": "defining",
-                  "note": "וַתַּעַד נִזְמָהּ וְחֶלְיָתָהּ: \"she put on her ring and her jewellery\" and went after her lovers."
-                },
-                {
-                  "ref": "Ezk.16.13",
-                  "note": "\"You were decked with gold and silver\"."
-                },
-                {
-                  "ref": "Ezk.23.40",
-                  "note": "\"you painted your eyes and decked yourself with ornaments\"."
-                },
-                {
-                  "ref": "Isa.61.10",
-                  "note": "\"as a bride adorns herself with her jewels\"."
-                },
-                {
-                  "ref": "Jer.31.4",
-                  "note": "\"again you will deck yourself with your tambourines\"."
-                },
-                {
-                  "ref": "Job.40.10",
-                  "note": "\"Deck yourself with majesty and dignity\", beside \"clothe yourself (תִּלְבָּשׁ) with splendour\"."
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "greek": [
+        },
         {
           "lemma": "κοσμέω",
           "gloss": "adorn, put in order",
@@ -904,6 +869,15 @@
       "usage": {
         "parallels": [
           {
+            "lemma": "הִדְרִיךְ",
+            "note": "tread: the beasts have not trodden it, the lion not passed over it.",
+            "evidence": [
+              {
+                "ref": "Job.28.8"
+              }
+            ]
+          },
+          {
             "lemma": "לָבַשׁ",
             "note": "clothe: adorning and clothing set side by side.",
             "evidence": [
@@ -931,8 +905,8 @@
       ],
       "pos": "noun",
       "gender": "m",
-      "gloss": "ornament(s), jewellery",
-      "summary": "Ornaments worn on the body or the clothing, gold above all (2Sa 1:24; Jer 4:30), a bride's especially (Jer 2:32; Isa 49:18). Israel took theirs off at Horeb, mourning at Yahweh's word that he would not go up among them (Exo 33:4–6). Three uses are difficult (Psa 32:9; 103:5; Ezk 16:7). Its link to the root is not clear (see the verb \"adorn\"). The BDB key's count also takes in בַּעֲדִי \"behind, about, for me\" (Exo 8:24; 1Ki 13:6; Psa 3:4; Lam 3:7 and others), which is בְּעַד, another word.",
+      "gloss": "ornament(s), jewellery; (animal) trappings",
+      "summary": "Ornaments worn on the body or the clothing, gold above all (2Sa 1:24; Jer 4:30), a bride's especially (Jer 2:32; Isa 49:18). Israel took theirs off at Horeb, mourning at Yahweh's word that he would not go up among them (Exo 33:4–6). Ezk 16:7 says that the young woman came בַּעֲדִי עֲדָיִים, literally 'in/with ornament of ornaments'; the phrase uses adornment poetically, and its application to her beauty or maturity is an interpretation from the context. In Psa 32:9 the word can extend to the gear placed on a horse or mule, though that verse's wording is disputed. Psa 103:5 remains difficult. The noun belongs with the verb \"adorn\", whose link to \"pass over\" is plausible through putting ornaments onto the body; no independent cognate yet attests that sense. The BDB key's count also takes in בַּעֲדִי \"behind, about, for me\" (Exo 8:24; 1Ki 13:6; Psa 3:4; Lam 3:7 and others), which is בְּעַד, another word.",
       "senses": [
         {
           "id": "adi-ornament",
@@ -970,6 +944,10 @@
               "note": "Zion's returning children: \"you will put them all on like an ornament and bind them on like a bride\"."
             },
             {
+              "ref": "Ezk.16.7",
+              "note": "וַתָּבֹאִי בַּעֲדִי עֲדָיִים: literally, 'you came in/with ornament of ornaments'. This is poetic adornment language; taking it to describe her beauty or maturity follows from the surrounding description, not from a separate meaning of עֲדִי."
+            },
+            {
               "ref": "Ezk.16.11"
             },
             {
@@ -986,20 +964,23 @@
           ]
         },
         {
-          "gloss": "uncertain uses",
-          "definition": "Three verses where the sense \"ornament\" is hard to fit and the meaning is not settled.",
+          "id": "adi-animal-trappings",
+          "gloss": "trappings, tack (of a horse or mule)",
+          "definition": "Equipment placed on an animal, here the bit and bridle used to restrain it.",
           "evidence": [
             {
               "ref": "Psa.32.9",
-              "note": "Of a horse or mule, \"whose עֲדִי is to be curbed with bit and bridle\": perhaps its trappings, or its mouth."
-            },
+              "note": "בְּמֶתֶג־וָרֶסֶן עֶדְיוֹ לִבְלוֹם: on this reading, the bit and bridle are its trappings for restraint. The compressed Hebrew syntax and the Greek version's reading 'jaws' where Hebrew has עֶדְיוֹ leave the exact wording uncertain; the verse does not describe decorating the animal."
+            }
+          ]
+        },
+        {
+          "gloss": "uncertain uses",
+          "definition": "A verse where the sense \"ornament\" is hard to fit and the meaning is not settled.",
+          "evidence": [
             {
               "ref": "Psa.103.5",
               "note": "\"who satisfies your עֲדִי with good\": the sense is not clear."
-            },
-            {
-              "ref": "Ezk.16.7",
-              "note": "בַּעֲדִי עֲדָיִים: \"you came to full ornament\", perhaps \"full beauty\"."
             }
           ]
         }
@@ -1627,7 +1608,7 @@
       "sounds": {
         "ע": "ʿ"
       },
-      "note": "The same verb with عَلَى \"against\": overstepping against someone, assailing, robbing. عَدَوَانٌ is said of a wolf that attacks men and عَادٍ of a beast of prey: the sense of עַד \"prey\" that Benjamin the wolf devours (Gen 49:27).",
+      "note": "The same verb with عَلَى \"against\": overstepping against someone, assailing, robbing. عَدَوَانٌ is said of a wolf that attacks men and عَادٍ of a beast of prey. This may bear on the rare Hebrew noun עַד in Gen 49:27, but the wolf imagery alone does not establish its derivation.",
       "evidence": [
         {
           "source": "lane",
@@ -1947,5 +1928,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-13 for Leviticus 23 (Lev 23:14 twice, 16, 32) and Numbers 10 (Num 10:21), where עַד is the particle. Root decision: the particle is keyed under עדה, the root of the verb עָדָה \"pass on\" and Aramaic עֲדָה \"pass, pass away\". Evidence for it: the poetic form עֲדֵי, a bound form of a III-weak noun like עֲלֵי (עַל, עלה) and אֱלֵי; Segert's Ugaritic class of prepositions in -ē (ʿd, ʿl); Arabic عدو ʿadā \"pass from, pass beyond\", which also serves as a particle of exception (Lane pp. 1977–1979); Sabaic ʿdw \"enter, invade, trespass\" beside the preposition ʿdy \"as far as, until\" (Biella pp. 352–354); the particle itself in Ugaritic, Phoenician, Moabite, Sabaic, Akkadian (adi) and all Aramaic. Against it, or not shown: no text shows the noun becoming the particle; Arabic has no ʿad \"until\" (its word is حَتَّى, not cognate) and Akkadian adi cannot show the ʿ. The alternative, that עַד goes with עוֹד \"still, again\" (root עוד, edut.json), is weaker: Segert lists Ugaritic ʿd \"until\" and ʿd \"still, yet\" apart, Arabic keeps ʿwd \"return\" and ʿdw \"pass beyond\" apart, and the -ē form points to a final weak radical, not a middle one. BDB keys: the keys here are filed by spelling, so the counts overlap and are too high: p.aq.ad (prep), p.aq.ab (perpetuity), p.aq.ac (prey) and xp.ac.aa (Aramaic עַד, root עד) each take in nearly all עַד tokens, Hebrew and Aramaic alike; p.aq.aa (pass on) and p.ar.aa (adorn) list the same 18 tokens, including the name Adah (Gen 4:19–23; 36:2–16) and Pro 25:20; p.ar.ac (ornament) includes בַּעֲדִי of בְּעַד (b.ce.ab: Exo 8:24; 1Ki 13:6; 2Ki 22:13; Psa 3:4; 138:8; Lam 3:7; 2Ch 34:21). Zero-token cross-references p.ao.ac, xp.aa.ag, p.ar.ak, p.ar.an, p.av.ad left out. Two verbs עָדָה are kept as two words of one entry (one spelling, one entry), since nothing yet joins \"adorn\" to \"pass on\". Left out: the names עָדָה Adah (p.ar.ab), עֲדָיָה Adaiah (p.ar.ae) and עֲדִיאֵל Adiel (p.ar.ad), BDB's \"ornament\" names, for name entries not written in this task; עֲדִיתַיִם Adithaim (p.ar.af), a place. Biblical Aramaic עִדָּן \"time\" (xp.ac.ab, root עדנ; Dan 7:25 \"a time, times and half a time\") is not taken in: the database keys it as its own root and yaad.json cites Akkadian adānu for it; whether it is a noun of עדה \"passing (time)\" is open. Peshitta: SEDRA lexemes 2243 ܥܕ (29 NT uses), 2244 ܥܕܠܐ (12), 2249 ܥܕܡܐ (219, root EDMA in SEDRA, taken here as ʿad with mā) and 2245 ܥܕܐ verb (4: Luk 9:39; Act 20:19; 24:7; 1Pe 1:6), found through nt_word; the vocalisations follow SEDRA. Sources read from text layers only: Segert pp. 78–80, 195; Krahmalkov pp. 359–361; Biella pp. 352–354 (check the scans). Not consulted: Dillmann or Leslau for Ge'ez ʿadawa \"pass through, cross\" (Biella's lead) and ʿadi; CAD A/1 adi; DULAT; Payne Smith or Brockelmann for Syriac ʿdā \"seize, invade\" and ʿad; CAL for Old and Imperial Aramaic ʿd. Open questions: (1) Zep 3:8 לְעַד \"to the prey\" or לְעֵד \"as witness\"; (2) Psa 32:9; 103:5; Ezk 16:7 עֲדִי; (3) whether the prey sense and the Syriac \"seize\" are kin (kin set on that reading); (4) the doctrine items are the reasoned reading and should be reviewed, especially Ezk 21:30–32 with Luk 1:32."
+  "note": "Drafted 2026-11-13 for Leviticus 23 (Lev 23:14 twice, 16, 32) and Numbers 10 (Num 10:21), where עַד is the particle. Root decision: the particle is keyed under עדה, the root of the verb עָדָה \"pass on\" and Aramaic עֲדָה \"pass, pass away\". Evidence for it: the poetic form עֲדֵי, a bound form of a III-weak noun like עֲלֵי (עַל, עלה) and אֱלֵי; Segert's Ugaritic class of prepositions in -ē (ʿd, ʿl); Arabic عدو ʿadā \"pass from, pass beyond\", which also serves as a particle of exception (Lane pp. 1977–1979); Sabaic ʿdw \"enter, invade, trespass\" beside the preposition ʿdy \"as far as, until\" (Biella pp. 352–354); the particle itself in Ugaritic, Phoenician, Moabite, Sabaic, Akkadian (adi) and all Aramaic. Limits of the particle derivation: no text shows the noun becoming the particle; Arabic has no ʿad \"until\" (its word is حَتَّى, not cognate) and Akkadian adi cannot show the ʿ. The alternative, that עַד goes with עוֹד \"still, again\" (root עוד, edut.json), is weaker: Segert lists Ugaritic ʿd \"until\" and ʿd \"still, yet\" apart, Arabic keeps ʿwd \"return\" and ʿdw \"pass beyond\" apart, and the -ē form points to a final weak radical, not a middle one. BDB keys: the keys here are filed by spelling, so the counts overlap and are too high: p.aq.ad (prep), p.aq.ab (perpetuity), p.aq.ac (prey) and xp.ac.aa (Aramaic עַד, root עד) each take in nearly all עַד tokens, Hebrew and Aramaic alike; p.aq.aa (pass on) and p.ar.aa (adorn) list the same 18 tokens, including the name Adah (Gen 4:19–23; 36:2–16) and Pro 25:20; p.ar.ac (ornament) includes בַּעֲדִי of בְּעַד (b.ce.ab: Exo 8:24; 1Ki 13:6; 2Ki 22:13; Psa 3:4; 138:8; Lam 3:7; 2Ch 34:21). Zero-token cross-references p.ao.ac, xp.aa.ag, p.ar.ak, p.ar.an, p.av.ad left out. The uses of עָדָה are treated as senses of one verb: passing over or along, putting ornaments over or onto the body, and in the hiphil taking a garment off. The adornment link is plausible, though no independent cognate yet attests that sense. Left out: the names עָדָה Adah (p.ar.ab), עֲדָיָה Adaiah (p.ar.ae) and עֲדִיאֵל Adiel (p.ar.ad), BDB's \"ornament\" names, for name entries not written in this task; עֲדִיתַיִם Adithaim (p.ar.af), a place. Biblical Aramaic עִדָּן \"time\" (xp.ac.ab, root עדנ; Dan 7:25 \"a time, times and half a time\") is not taken in: the database keys it as its own root and yaad.json cites Akkadian adānu for it; whether it is a noun of עדה \"passing (time)\" is open. Peshitta: SEDRA lexemes 2243 ܥܕ (29 NT uses), 2244 ܥܕܠܐ (12), 2249 ܥܕܡܐ (219, root EDMA in SEDRA, taken here as ʿad with mā) and 2245 ܥܕܐ verb (4: Luk 9:39; Act 20:19; 24:7; 1Pe 1:6), found through nt_word; the vocalisations follow SEDRA. Sources read from text layers only: Segert pp. 78–80, 195; Krahmalkov pp. 359–361; Biella pp. 352–354 (check the scans). Not consulted: Dillmann or Leslau for Ge'ez ʿadawa \"pass through, cross\" (Biella's lead) and ʿadi; CAD A/1 adi; DULAT; Payne Smith or Brockelmann for Syriac ʿdā \"seize, invade\" and ʿad; CAL for Old and Imperial Aramaic ʿd. Open questions: (1) Zep 3:8 לְעַד \"to the prey\" or לְעֵד \"as witness\"; (2) the exact wording of Psa 32:9 and the sense of עֲדִי in Psa 103:5; (3) whether the prey sense and the Syriac \"seize\" are kin (kin set on that reading); (4) the doctrine items are the reasoned reading and should be reviewed, especially Ezk 21:30–32 with Luk 1:32."
 }

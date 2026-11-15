@@ -2,7 +2,7 @@
   "id": "olam",
   "root": "עלמ",
   "status": "draft",
-  "updated": "2026-11-11",
+  "updated": "2026-11-15",
   "tags": [
     "time",
     "age",
@@ -12,14 +12,14 @@
     "hiddenness",
     "youth"
   ],
-  "gloss": "time out of sight, the age, for ever; hide; young man, young woman",
-  "summary": "עוֹלָם is time whose bounds are out of view: the far past (“the days of עוֹלָם”, Deu 32:7), and a future with no end in sight, which lasts as long as what it is said of lasts: a servant’s life (Exo 21:6), a child’s years at the sanctuary (1Sa 1:22, 28), Yahweh’s own kingdom without end (Exo 15:18; Psa 145:13). Its plural, “ages”, and the Aramaic and the Peshitta’s עָלְמָא, the word behind the New Testament’s “age(s)” and “eternal life”, carry it into the ages of God’s purpose (Dan 2:44; Heb 1:2). The verb עָלַם is to be hidden or to hide, most often to look away from what one ought to see (Lev 5:2–4; Deu 22:1–4); עֶלֶם and עַלְמָה are a young man and an unmarried young woman (1Sa 17:56; Gen 24:43; Isa 7:14). Cognates show two older roots in the one spelling: the time word with ʿ (Ugaritic ʿlm “eternity”) and the youth words with ġ (Ugaritic ġlm “boy”, Arabic ġulām); no cognate has been found for “hide”, so its tie to either is not established.",
+  "gloss": "an age, time beyond sight, long duration; hide; young man, young woman",
+  "summary": "עוֹלָם names a span of time whose boundary is out of view: the distant past ('the days of עוֹלָם', Deu 32:7) or time extending ahead. Its actual extent comes from the subject and context: a servant's lifetime (Exo 21:6), a desolation lasting until a new event (Isa 32:14-15), or Yahweh's reign without end (Exo 15:18). לְעוֹלָם וָעֶד can be read, in a word-conscious paraphrase, 'for an age and continuing onward'; 'for ever and ever' is its conventional idiomatic translation, not a separate lexical meaning of either noun. The plural עֹלָמִים speaks of long duration or ages, and Aramaic עָלְמָא likewise speaks of an age or world. The verb עָלַם means 'be hidden' or 'hide' (Lev 5:2-4; Deu 22:1-4). 'A time beyond sight' fits its meaning, but derivation from that verb is possible rather than proved: Ugaritic ʿlm is the time word, while youth words such as עֶלֶם and עַלְמָה correspond to Ugaritic ġlm and Arabic ġulām. The older sound behind the Hebrew hide verb remains uncertain.",
   "words": [
     {
       "lemma": "עוֹלָם",
       "pos": "noun",
       "gender": "m",
-      "gloss": "time out of sight; the age; of old; for ever",
+      "gloss": "an age, time beyond sight, long duration; of old",
       "bdb": [
         "p.cz.ab"
       ],
@@ -29,7 +29,7 @@
         "arc-alma",
         "ar-alam"
       ],
-      "summary": "Almost always with a preposition (לְעוֹלָם, עַד עוֹלָם, מֵעוֹלָם) or bound to a noun as “of עוֹלָם” (חֻקַּת עוֹלָם, בְּרִית עוֹלָם). It names duration reaching beyond what can be seen, backward or forward; how long it is in fact is set by what it is said of, so that it is a lifetime for a servant and without end for Yahweh. In Leviticus 23 each feast is a חֻקַּת עוֹלָם “throughout your generations” (Lev 23:14, 21, 31, 41).",
+      "summary": "Almost always with a preposition (לְעוֹלָם, עַד עוֹלָם, מֵעוֹלָם) or bound to a noun as 'of עוֹלָם' (חֻקַּת עוֹלָם, בְּרִית עוֹלָם). It names a span extending beyond the speaker's view, backward or forward; the word does not itself declare that the span has no end. Its extent may be a servant's lifetime (Exo 21:6), until an event that changes a desolation (Isa 32:14-15), or without end when said of Yahweh's reign (Exo 15:18). In Leviticus 23 each feast is a חֻקַּת עוֹלָם 'throughout your generations' (Lev 23:14, 21, 31, 41).",
       "senses": [
         {
           "id": "olam-of-old",
@@ -82,10 +82,16 @@
           ]
         },
         {
-          "id": "olam-lifelong",
-          "gloss": "for as long as the bearer lasts; for life",
-          "definition": "Lasting with no end in view, where the end is in fact set by the life or state of the one it is said of: a servant’s service, a child given to the sanctuary, a slave held, a time in the deep.",
+          "id": "olam-bounded-duration",
+          "gloss": "long duration bounded by a life or later event",
+          "definition": "An extended span whose end is supplied by a person's life, a change in circumstances, or a later event: a servant's service, a child given to the sanctuary, a desolation before restoration, or a time in the deep.",
           "evidence": [
+            {
+              "ref": "Isa.32.14",
+              "to": "Isa.32.15",
+              "role": "defining",
+              "note": "The abandoned stronghold is a pasture עַד־עוֹלָם, then v. 15 says 'until a spirit is poured upon us from on high'. The following clause supplies a turning point, so עוֹלָם here need not mean an endless state."
+            },
             {
               "ref": "Exo.21.6",
               "role": "defining",
@@ -120,8 +126,8 @@
         },
         {
           "id": "olam-for-ever",
-          "gloss": "for ever, with no end",
-          "definition": "Lasting without end, where what it is said of has none: Yahweh, his reign, his word, his covenant faithfulness, the king he promises David, and the life he gives at the resurrection.",
+          "gloss": "duration with no stated endpoint (in context)",
+          "definition": "Time continuing beyond any endpoint named in the passage. Of Yahweh and his reign, the context supports an unbounded reading; promises, poetic claims, and judgments need to be read in their own settings. עוֹלָם itself does not require endlessness.",
           "evidence": [
             {
               "ref": "Psa.90.2",
@@ -178,17 +184,13 @@
             {
               "ref": "Isa.34.10",
               "note": "Edom’s smoke goes up לְעוֹלָם, parallel with לְנֵצַח נְצָחִים: a desolation that will not be undone."
-            },
-            {
-              "ref": "Ecc.3.11",
-              "note": "“He has put הָעֹלָם in their heart, yet so that man cannot find out the work God does from beginning to end.” The sense here is not settled: long duration set in man’s mind, or something hidden from him."
             }
           ]
         },
         {
           "id": "olam-ages",
           "gloss": "ages (plural)",
-          "definition": "In the plural, the ages: spans of time one beyond another, past or to come, through which God and his works last.",
+          "definition": "In the plural, extended time spoken of repeatedly or with emphasis; in some contexts, past or future ages. The plural need not by itself divide time into separate periods.",
           "evidence": [
             {
               "ref": "Psa.145.13",
@@ -219,6 +221,18 @@
             {
               "ref": "Dan.9.24",
               "note": "At the end of the seventy weeks, to bring in צֶדֶק עֹלָמִים, a righteousness of the ages."
+            }
+          ]
+        },
+        {
+          "id": "olam-in-heart",
+          "gloss": "the age or span of time (uncertain use)",
+          "definition": "What God puts in human hearts in Ecclesiastes 3:11; the verse contrasts this with people's inability to find out his work from beginning to end. The precise force of הָעֹלָם here remains uncertain.",
+          "evidence": [
+            {
+              "ref": "Ecc.3.11",
+              "role": "defining",
+              "note": "God puts הָעֹלָם in their heart, yet they cannot discover his work 'from beginning to end'; this may be an awareness of time's extent, but the text does not define the word more narrowly."
             }
           ]
         }
@@ -269,7 +283,7 @@
           },
           {
             "lemma": "עַד",
-            "note": "“Perpetuity”, joined with it in לְעוֹלָם וָעֶד.",
+            "note": "Continuance or duration, joined with עוֹלָם in לְעוֹלָם וָעֶד; the phrase extends the time expression onward.",
             "evidence": [
               {
                 "ref": "Exo.15.18",
@@ -409,6 +423,23 @@
               },
               {
                 "ref": "Mic.7.14"
+              }
+            ]
+          },
+          {
+            "phrase": "לְעוֹלָם וָעֶד / עוֹלָם וָעֶד",
+            "gloss": "for an age and continuing onward; idiomatically, for ever and ever",
+            "evidence": [
+              {
+                "ref": "Exo.15.18",
+                "role": "defining",
+                "note": "Yahweh will reign לְעֹלָם וָעֶד. 'For a hidden period and beyond' conveys the open horizon, provided 'period' is not taken to have a fixed ending here; וָעֶד adds continued duration rather than naming a new period."
+              },
+              {
+                "ref": "Psa.10.16"
+              },
+              {
+                "ref": "Psa.45.7"
               }
             ]
           },
@@ -1612,5 +1643,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-11 for Leviticus 23 (חֻקַּת עוֹלָם, Lev 23:14, 21, 31, 41). Left out: the names עָלֶמֶת (Alemeth, p.cx.af), יַעְלָם (Jalam, p.cx.ag), עַלְמוֹן (Almon, p.cx.ac) and עַלְמֹן דִּבְלָתָיְמָה (Almon-diblathaim, p.cx.ad), which belong in names/; the zero-token cross-reference keys p.bi.aj, p.cj.af, p.cz.ac (עֵילוֹם, a spelling of עוֹלָם), p.cx.ae, p.cz.ad, p.cz.ae (עַל־מוּת, Psa 9:1, 48:15, a heading of unclear sense that may or may not be עֲלָמוֹת; the brief gives them no tokens), j.cg.af and w.bh.ah. The plural עֲלָמוֹת in Psa 46:1 and 1Ch 15:20 is kept as a sense of עַלְמָה, as BDB’s key counts it. Merged letter ע: the time word shows ʿ (Ugaritic ʿlm, and Arabic ʿālam if native); the youth words show ġ (Ugaritic ġlm, ġlmt; Arabic ġulām; Sabaic ġlm); no cognate shows the sound behind the verb “hide”, so whether “hidden” and “time out of view” are one older root is not shown by the cognates either way, and the verses never tie them. Anderson and Moser put all three under one *ġlm, against Ugaritic ʿlm for the time word; the entry follows the Ugaritic spelling. The Peshitta does not use ʿlm for “hide” (Payne Smith p. 415 has only the Palpel “blow away”, not entered), and renders Isa 7:14 at Mat 1:23 by ܒܬܘܠܬܐ, not ܥܠܝܡܬܐ. Peshitta words were found from SEDRA roots 1383 ܥܠܡܐ (lexemes 2331 age/world, 2332, 2333, 3515 the compound ܠܥܠܡܥܠܡܝܢ at Rom 16:26, not entered as a word) and 1382 ܥܠܝܡܐ (2329, 2330) via the BFBS word list; the brief found no Peshitta root because SEDRA keys these roots with a final ܐ. Payne Smith pp. 414 (ܥܠܝܡܐ “a youth, maiden; … a serving-lad, hand-maiden; adj. young”) and 415 (ܥܠܡܐ “an age, generation, life-time, era; eternity, ever … 2) the world”) were read from the Dukhrana page images 0423 and 0424 but are not cited as sources: the Peshitta’s own verses are. Scans checked from page images: Segert pp. 196–197 (archive.org leaves 223–224), Biella p. 395 (leaf 408; the examples on p. 396 from OCR only). Krahmalkov p. 371 (ʿLM I, ʿLM II, ʿLMT) read from the local PDF’s text layer only; page image unverified (no renderer available). Not entered: Arabic ʿalima “know”, ʿalam “sign, mark” (no shared meaning); Arabic ġalima “be lustful” (Lane p. 2286, n32300), which may lie behind ġulām but is not needed; Akkadian ullânu/ellamu “before” (proposed for the time word, not checked); Klein’s Nabataean and Palmyrene ʿlym (not followed). Not consulted: DULAT, Dillmann/Leslau for Geʿez ʿālam “world” and ʿlm “hidden”, CAL. Open questions for review: (1) the gloss of עוֹלָם (“time out of sight; the age; of old; for ever”) and whether “out of sight” should be kept, given that the cognates do not tie it to the verb; (2) Ecc 3:11 is left inside the “for ever” sense with its reading unresolved; (3) Mic 5:1 is glossed only by its words, with no doctrinal reading; (4) the doctrine “statute-of-the-age” states that עוֹלָם statutes lasted for their age, from Heb 7 and Col 2; check this is wanted as worded; (5) the Psa 46:1 heading sense of עֲלָמוֹת."
+  "note": "Drafted 2026-11-11 for Leviticus 23 (חֻקַּת עוֹלָם, Lev 23:14, 21, 31, 41). Left out: the names עָלֶמֶת (Alemeth, p.cx.af), יַעְלָם (Jalam, p.cx.ag), עַלְמוֹן (Almon, p.cx.ac) and עַלְמֹן דִּבְלָתָיְמָה (Almon-diblathaim, p.cx.ad), which belong in names/; the zero-token cross-reference keys p.bi.aj, p.cj.af, p.cz.ac (עֵילוֹם, a spelling of עוֹלָם), p.cx.ae, p.cz.ad, p.cz.ae (עַל־מוּת, Psa 9:1, 48:15, a heading of unclear sense that may or may not be עֲלָמוֹת; the brief gives them no tokens), j.cg.af and w.bh.ah. The plural עֲלָמוֹת in Psa 46:1 and 1Ch 15:20 is kept as a sense of עַלְמָה, as BDB’s key counts it. Merged letter ע: the time word shows ʿ (Ugaritic ʿlm, and Arabic ʿālam if native); the youth words show ġ (Ugaritic ġlm, ġlmt; Arabic ġulām; Sabaic ġlm); no cognate shows the sound behind the verb “hide”, so whether “hidden” and “time out of view” are one older root is not shown by the cognates either way, and the verses never tie them. Anderson and Moser put all three under one *ġlm, against Ugaritic ʿlm for the time word; the entry follows the Ugaritic spelling. The Peshitta does not use ʿlm for “hide” (Payne Smith p. 415 has only the Palpel “blow away”, not entered), and renders Isa 7:14 at Mat 1:23 by ܒܬܘܠܬܐ, not ܥܠܝܡܬܐ. Peshitta words were found from SEDRA roots 1383 ܥܠܡܐ (lexemes 2331 age/world, 2332, 2333, 3515 the compound ܠܥܠܡܥܠܡܝܢ at Rom 16:26, not entered as a word) and 1382 ܥܠܝܡܐ (2329, 2330) via the BFBS word list; the brief found no Peshitta root because SEDRA keys these roots with a final ܐ. Payne Smith pp. 414 (ܥܠܝܡܐ “a youth, maiden; … a serving-lad, hand-maiden; adj. young”) and 415 (ܥܠܡܐ “an age, generation, life-time, era; eternity, ever … 2) the world”) were read from the Dukhrana page images 0423 and 0424 but are not cited as sources: the Peshitta’s own verses are. Scans checked from page images: Segert pp. 196–197 (archive.org leaves 223–224), Biella p. 395 (leaf 408; the examples on p. 396 from OCR only). Krahmalkov p. 371 (ʿLM I, ʿLM II, ʿLMT) read from the local PDF’s text layer only; page image unverified (no renderer available). Not entered: Arabic ʿalima “know”, ʿalam “sign, mark” (no shared meaning); Arabic ġalima “be lustful” (Lane p. 2286, n32300), which may lie behind ġulām but is not needed; Akkadian ullânu/ellamu “before” (proposed for the time word, not checked); Klein’s Nabataean and Palmyrene ʿlym (not followed). Not consulted: DULAT, Dillmann/Leslau for Geʿez ʿālam “world” and ʿlm “hidden”, CAL. Draft revision 2026-11-15: the core עוֹלָם gloss now describes an age or span beyond view; “for ever” is kept as a contextual or idiomatic rendering, and לְעוֹלָם וָעֶד is read provisionally as “for an age and continuing onward.” The “hidden” derivation remains unproved by the cognates. Ecc 3:11 now has its own uncertain sense. Open questions for review: (1) whether this time-horizon gloss fits all uses; (2) the precise force of Ecc 3:11; (3) Mic 5:1 is glossed only by its words, with no doctrinal reading; (4) the doctrine “statute-of-the-age” states that עוֹלָם statutes lasted for their age, from Heb 7 and Col 2; check this is wanted as worded; (5) the Psa 46:1 heading sense of עֲלָמוֹת."
 }

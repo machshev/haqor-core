@@ -357,6 +357,26 @@ so five Hebrew letters each cover more than one older sound:
 | ז | z, ḏ | זָהָב "gold", Aramaic דְּהַב (Daniel 2:32), Arabic ذهب *ḏahab* |
 | צ | ṣ, ṣ́, ṯ̣ | אֶרֶץ "land", Aramaic אַרְעָא; צֵל "shade", Aramaic טְלַל |
 
+Here is a guide to saying the symbols in the **Older sounds** column. These
+are approximate pronunciations: the symbols distinguish sounds found by
+comparing languages, but the exact ancient articulation, especially of the
+three *emphatic* sounds under צ, is debated. For a first attempt, make an
+emphatic sound with the throat tightened.
+
+| Symbol | How to say it |
+|---|---|
+| ḥ | A strong, breathy **h** made deep in the throat, as in Arabic ح; keep the vocal cords still. |
+| ḫ | The **ch** in Scottish *loch*, made at the back of the mouth; Arabic خ. |
+| ʿ | Tighten the throat and voice the sound, as in Arabic ع (*ʿayn*). |
+| ġ | A voiced ḫ, roughly like the throaty French **r**; Arabic غ. |
+| š | **sh** in *ship*. |
+| ṯ | **th** in *thin*; Arabic ث. |
+| z | **z** in *zoo*. |
+| ḏ | **th** in *this*; Arabic ذ. |
+| ṣ | An emphatic **s**, as in Arabic ص; start with *s* and tighten the throat. |
+| ṣ́ | An emphatic sideways hiss: let air pass along the sides of the tongue, roughly like Welsh **ll**, while tightening the throat. |
+| ṯ̣ | An emphatic **th** in *thin*: put the tongue between the teeth and tighten the throat. |
+
 Other Semitic alphabets kept more of these sounds apart: Ugaritic's cuneiform
 alphabet (13th century BC) had 30 signs, and Old South Arabian 29 letters. A
 letter of the 22 does not stand for one thing. It stands for whatever sounds

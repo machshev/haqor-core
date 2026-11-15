@@ -1,8 +1,9 @@
 {
   "id": "avot",
   "root": "עבת",
-  "status": "draft",
-  "updated": "2026-11-13",
+  "status": "reviewed",
+  "reviewed": "2026-11-15",
+  "updated": "2026-11-15",
   "tags": [
     "binding",
     "craft",
@@ -11,7 +12,7 @@
     "tabernacle"
   ],
   "gloss": "twist, intertwine; twisted cord, rope; dense, leafy (of trees)",
-  "summary": "The root is twisting strands together. Its noun עֲבֹת is a twisted cord or rope: the new ropes that bound Samson (Jdg 15:13), the harness rope of an ox (Job 39:10), the gold cord-work chains of the high priest’s breastpiece (Exo 28:14), and in figure the cords Yahweh draws Israel with, “cords of love” (Hos 11:4), and the cords the rulers would cast off (Psa 2:3). The adjective עָבֹת describes a tree thick with interlaced boughs, whose branches Israel took at the feast of סֻכּוֹת to build booths (Lev 23:40; Neh 8:15); the verb, once, is the rulers and judges twisting a matter together (Mic 7:3). No cognate in the other Semitic languages has yet been found, so the root’s sense rests on scripture’s own use.",
+  "summary": "The root is twisting strands together. Its noun עֲבֹת is a twisted cord or rope: the new ropes that bound Samson (Jdg 15:13), the harness rope of an ox (Job 39:10), the gold cord-work chains of the high priest’s breastpiece (Exo 28:14), and in figure the cords Yahweh draws Israel with, “cords of love” (Hos 11:4), and the cords the rulers would cast off (Psa 2:3). The adjective עָבֹת describes a tree thick with interlaced boughs, whose branches Israel took at the feast of סֻכּוֹת to build booths (Lev 23:40; Neh 8:15); the verb, once, is the rulers and judges twisting a matter together (Mic 7:3). Mandaic ABT / ʿBT “bind, fetter” supports the binding sense, though it does not establish the proposed development from twisting to dense boughs.",
   "words": [
     {
       "lemma": "עֲבֹת",
@@ -27,6 +28,9 @@
           "id": "avot-rope",
           "gloss": "rope, cord (for binding)",
           "definition": "A rope used to tie a man fast, set beside the verb אָסַר “bind”; new ones are the strongest.",
+          "cognate_ids": [
+            "mnd-abt"
+          ],
           "evidence": [
             {
               "ref": "Jdg.15.13",
@@ -65,6 +69,9 @@
           "id": "avot-harness",
           "gloss": "draught rope, harness",
           "definition": "The rope that yokes a beast to a plough or cart, by which it is led and draws its load.",
+          "cognate_ids": [
+            "mnd-abt"
+          ],
           "evidence": [
             {
               "ref": "Job.39.10",
@@ -91,6 +98,9 @@
           "id": "avot-bonds",
           "gloss": "bonds (of rule)",
           "definition": "In figure, the ties by which a ruler holds those under him; the rebel’s wish is to throw them off.",
+          "cognate_ids": [
+            "mnd-abt"
+          ],
           "evidence": [
             {
               "ref": "Psa.2.3",
@@ -111,6 +121,9 @@
           "id": "avot-cordwork",
           "gloss": "twisted cord-work (of gold)",
           "definition": "Gold worked as twisted cord: the chains that tie the breastpiece to the ephod’s shoulder settings are “the work of עֲבֹת”, and in the plural the cords themselves.",
+          "cognate_ids": [
+            "mnd-abt"
+          ],
           "evidence": [
             {
               "ref": "Exo.28.14",
@@ -388,7 +401,24 @@
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "mnd-abt",
+      "lang": "arc",
+      "form": "ࡀࡁࡕ",
+      "translit": "abt, ʿbt",
+      "gloss": "bind, fetter, take captive, hold fast",
+      "relation": "cognate",
+      "note": "Mandaic; the form is rendered in Unicode Mandaic script from the dictionary’s Latin transliteration ABT (variant ʿBT). The matching consonants and binding sense support the Hebrew rope and bonds, but do not independently confirm twisting or the leafy-tree adjective.",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "p. 4a, ABT I / ʿBT; Gs 77:10, 94:19; CP 455:13",
+          "note": "The cited Mandaic forms mean fetter, bind, and bound/captive."
+        }
+      ]
+    }
+  ],
   "doctrine": [
     {
       "topic": "anointed-king",
@@ -428,5 +458,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-13 for Lev 23 (עָבֹת, 23:40) and Num 10 (the task named עֲבֹת “cord” as well; it does not occur in Num 10). The database keys the root עבת, as the task gave it. BDB key p.ad.ad (עָבוֹת, “see עבת”, filed under עבה) is a cross-reference with no tokens and is not claimed. Cognates: none found. Lane has no عبت or غبت (Arabic عبث is ʿbṯ, which answers to Hebrew עבש, not עבת); Wiktionary, Oracc (Akkadian bt candidates: bītu, abātu, none fitting), SEDRA (Syriac NT), the Proto-Semitic list and the local Ugaritic, Phoenician and Sabaic scans give nothing for ʿbt. Not yet consulted: CAL and Payne Smith for a Jewish Aramaic or Syriac ʿbt. Jastrow has only later Hebrew: עָבוֹת “network, matting” of a tree “whose branches cover its trunk” (Sifra Emor, b. Sukk. 32b, on Lev 23:40) and עֲבוֹת “chain, rope fastening the yoke to the plough” (m. Kelim 21:2): Hebrew, not a cognate, so not entered; it agrees with the senses here. Some derive the adjective from עבה “be thick”; the Ezekiel phrase בֵּין עֲבֹתִים is read by the Septuagint as “clouds” (νεφελῶν, Ezk 31:3, 10, 14) and in Psa 118:27 עֲבֹתִים as leafy boughs (πυκάζουσιν), but the verb אִסְרוּ there fixes ropes. Septuagint renderings of the adjective (δασύς Neh 8:15, κατάσκιος Ezk 20:28) are not in the New Testament and are not entered."
+  "note": "Drafted 2026-11-13 for Lev 23 (עָבֹת, 23:40) and Num 10 (the task named עֲבֹת “cord” as well; it does not occur in Num 10). The database keys the root עבת, as the task gave it. BDB key p.ad.ad (עָבוֹת, “see עבת”, filed under עבה) is a cross-reference with no tokens and is not claimed. A Mandaic ABT / ʿBT cognate meaning “bind, fetter” was verified in Drower and Macuch, p. 4a, on 2026-11-15. Lane has no عبت or غبت (Arabic عبث is ʿbṯ, which answers to Hebrew עבש, not עבת); Wiktionary, Oracc (Akkadian bt candidates: bītu, abātu, none fitting), SEDRA (Syriac NT), the Proto-Semitic list and the local Ugaritic, Phoenician and Sabaic scans give nothing else secure for ʿbt. CAL and Payne Smith remain to be checked for Jewish Aramaic or Syriac ʿbt. Jastrow has only later Hebrew: עָבוֹת “network, matting” of a tree “whose branches cover its trunk” (Sifra Emor, b. Sukk. 32b, on Lev 23:40) and עֲבוֹת “chain, rope fastening the yoke to the plough” (m. Kelim 21:2): Hebrew, not a cognate, so not entered; it agrees with the senses here. Some derive the adjective from עבה “be thick”; the Ezekiel phrase בֵּין עֲבֹתִים is read by the Septuagint as “clouds” (νεφελῶν, Ezk 31:3, 10, 14) and in Psa 118:27 עֲבֹתִים as leafy boughs (πυκάζουσιν), but the verb אִסְרוּ there fixes ropes. Septuagint renderings of the adjective (δασύς Neh 8:15, κατάσκιος Ezk 20:28) are not in the New Testament and are not entered."
 }

@@ -1,0 +1,81 @@
+{
+  "id": "akshuv",
+  "root": "עכשב",
+  "status": "reviewed",
+  "reviewed": "2026-11-15",
+  "updated": "2026-11-15",
+  "tags": [
+    "animals",
+    "speech"
+  ],
+  "gloss": "venomous creature, asp",
+  "summary": "The עַכְשׁוּב occurs once, in a comparison with a serpent whose venom lies under the wicked’s lips (Psa 140:4). Paul quotes the line with Greek ἀσπίς, “asp” (Rom 3:13). The word’s origin is uncertain; its own consonants give this entry its key, without assigning it to עכר.",
+  "words": [
+    {
+      "lemma": "עַכְשׁוּב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a venomous creature, asp",
+      "summary": "The word occurs only in Psa 140:4. Its formation and any connection with עַכָּבִישׁ, “spider”, remain uncertain.",
+      "bdb": [
+        "p.cq.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "asp, venomous creature",
+          "definition": "A creature with venom, set in parallel with the serpent, as a picture of wicked men’s tongues.",
+          "tags": [
+            "animals",
+            "speech"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.140.4",
+              "role": "defining",
+              "note": "“They sharpen their tongue like a serpent (נָחָשׁ); the venom of an עַכְשׁוּב is under their lips.”"
+            },
+            {
+              "ref": "Rom.3.13",
+              "role": "defining",
+              "note": "Paul quotes the line, “the poison of asps (ἀσπίδων) is under their lips”, among the verses showing that all are under sin."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀσπίς",
+          "gloss": "asp",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.140.4, עַכְשׁוּב → ἀσπίς"
+            },
+            {
+              "ref": "Rom.3.13",
+              "role": "defining",
+              "note": "ἰὸς ἀσπίδων ὑπὸ τὰ χείλη αὐτῶν, quoting Psa 140:4."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָחָשׁ",
+            "note": "The serpent, beside the עַכְשׁוּב, for the tongue of the wicked.",
+            "evidence": [
+              {
+                "ref": "Psa.140.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Filed separately from עכר because no evidence derives עַכְשׁוּב from that root. The key עכשב represents the word's consonants without the vowel letter ו; it is not a reconstructed verbal root. BDB p.cq.ae files the word in its עכר section without deriving it from עכר. Possible comparison with עַכָּבִישׁ 'spider' by metathesis remains conjectural; Arabic ʿankabūt 'spider' (Lane p. 2177, root عنكب) has not been established as a cognate. The Greek ἀσπίς is the Septuagint rendering and Paul's wording in Rom 3:13."
+}

@@ -1,8 +1,9 @@
 {
   "id": "av",
   "root": "אבה",
-  "status": "draft",
-  "updated": "2026-11-13",
+  "status": "reviewed",
+  "reviewed": "2026-11-15",
+  "updated": "2026-11-15",
   "tags": [
     "family",
     "father",
@@ -12,8 +13,8 @@
     "poverty",
     "death"
   ],
-  "gloss": "father; be willing, consent; needy",
-  "summary": "אָב is father: the man who begets and is honoured (Exo 20:12), then the forefathers to whom a man is gathered at death and to whom Yahweh swore the land (Gen 15:15; Deu 1:8), the founder of a line or a way of life (Gen 4:20; 17:5), the ‘father’s house’ by which Israel was counted and camped (Num 1:2; 2:2), a title for a prophet, priest or protector (2Ki 2:12; Jdg 17:10; Job 29:16), and Yahweh himself, who made and bought his people (Deu 32:6; Mal 2:10). The verb אָבָה is to be willing, to consent, and is almost always said with ‘not’: men and Israel would not hear, and Yahweh would not destroy (Isa 30:9; 2Ki 8:19). אֶבְיוֹן is the needy man, beside the עָנִי, whom the law protects and Yahweh lifts up (Deu 15:11; 1Sa 2:8). Arabic keeps ʾab ‘father’ (root ʾbw) and ʾabā ‘refuse’ (ʾby) apart, so this one spelling covers two older roots; how אֶבְיוֹן and two rare nouns belong to either is not shown.",
+  "gloss": "father; be willing, want; needy",
+  "summary": "אָב is father: the man who begets and is honoured (Exo 20:12), the forefathers to whom Yahweh swore the land (Deu 1:8), and, by extension, a founder or protector (Gen 4:20; Job 29:16) and Yahweh himself (Deu 32:6). אָבָה is to be willing, usually in the negative: Israel would not hear, and Yahweh would not destroy (Isa 30:9; 2Ki 8:19). אֶבְיוֹן is the person in want whom the law protects (Deu 15:11); its form and meaning plausibly place it with the verb, though scripture does not derive one from the other. A father's authority or care could give a path to willing or choosing, but no attested use traces that change. Job calls himself a ‘father to the needy’ (Job 29:16), joining the words in use without establishing a common origin. Cognates attest ‘father’ and ‘be willing, refuse’ separately, but do not settle whether the words share an older base. The ties of the two rare nouns to either family remain unclear.",
   "words": [
     {
       "lemma": "אָב",
@@ -31,7 +32,7 @@
         "gez-ab",
         "arc-abba"
       ],
-      "summary": "About 1,200 times, in every part of scripture. Every Semitic language has the word in the same sense.",
+      "summary": "About 1,200 times, in every part of scripture. Its Semitic cognates show an old ʾab ‘father’ word; whether this and ʾby ‘be willing, want’ share a still older base is unknown.",
       "senses": [
         {
           "id": "father-begetter",
@@ -621,7 +622,7 @@
       "cognate_ids": [
         "uga-abyn"
       ],
-      "summary": "The man in want, almost always beside עָנִי “afflicted” or דַּל “poor”; 61 times, mostly in the law, the prophets and the Psalms. Ugaritic has the same word. Its tie to the verb “be willing” (one who wants?) is not shown by any use or cognate, so its place in the root rests on its letters.",
+      "summary": "The person in want, almost always beside עָנִי “afflicted” or דַּל “poor”; 61 times, mostly in the law, the prophets and the Psalms. The consonants ʾby and the sense ‘in want’ make a link with אָבָה ‘be willing, want’ plausible; Ugaritic abyn shows the adjective is older than Hebrew alone. No verse states that derivation, and its sense is distinct from אָב ‘father’.",
       "senses": [
         {
           "gloss": "needy, poor (person)",
@@ -1390,7 +1391,7 @@
       "translit": "ʾab",
       "gloss": "father; ancestor; (verb أَبَوْتُ) I became a father, was a father to him, fed and reared him",
       "relation": "cognate",
-      "note": "Arabic shows a w as the third letter (dual أَبَوَانِ, “father and mother”; أُبُوَّة “fatherhood”), so its root is ʾbw, apart from ʾby “refuse”. The verb’s sense of feeding and rearing an orphan “as the father does his children” matches the Hebrew father as provider and protector.",
+      "note": "The Arabic father noun shows w in أَبَوَانِ, “father and mother”, and أُبُوَّة, “fatherhood”. Arabic also has أَبَيْتُ ‘I became a father’ beside أَبَوْتُ, so the w/y contrast alone does not establish a separate origin from the verb of willing or refusing. The sense of feeding and rearing an orphan ‘as the father does his children’ matches the Hebrew father as provider and protector.",
       "evidence": [
         {
           "source": "lane",
@@ -1447,9 +1448,9 @@
       "lang": "ar",
       "form": "أَبَى",
       "translit": "ʾabā",
-      "gloss": "refuse, refrain or hold back of one’s own will; dislike",
+      "gloss": "choose to refuse or refrain; dislike",
       "relation": "cognate",
-      "note": "Final y (aorist يَأْبَى, verbal noun إِبَاء), root ʾby, apart from ʾbw “father”. The Arabic verb says outright what the Hebrew says with לֹא: refusing of one’s own free choice. Both are words of the will, consent and its withholding.",
+      "note": "The verb of refusing has final y (aorist يَأْبَى, verbal noun إِبَاء). Arabic also uses a y-form for ‘become a father’, so the final consonant alone cannot settle whether the two meanings share a more ancient base. Lane’s ‘of his own free will or choice’ describes a voluntary refusal; it does not mean denying one’s own desires. The refusal verb says outright what the Hebrew says with לֹא: withholding consent.",
       "evidence": [
         {
           "source": "lane",
@@ -1655,5 +1656,5 @@
       ]
     }
   ],
-  "note": "Root key אבה: the database files אָב (a.ae.ab) under this key with the verb, as BDB’s II אבה. Two older roots in one spelling: Arabic, Ugaritic, Ge’ez and Aramaic keep ʾb(w) “father” and ʾby “want/refuse” apart (Lane files them as ابو and ابى). ה is not one of the merged letters, so no `sounds` are recorded; the split is shown by the cognate sets instead. אֶבְיוֹן: Ugaritic abyn is the only cognate; Coptic ⲉⲃⲓⲏⲛ “a poor, wretched person” (coptic-lexicon C628, CD 53a) is not recorded, since whether it is Egyptian (bjn “bad”) borrowed into Semitic or the Semitic word borrowed into Egyptian is not shown, and Ugaritic has the word early. Akkadian buʾʾû “look for, seek” was not taken as a cognate of the verb. אֲבִיּוֹנָה: the caper identification rests on the Mishnah (Maaserot 4:6, plural אִבְיוֹנוֹת) and the Septuagint’s κάππαρις (macula-lxx Ecc.12.5); no Greek recorded as it is not in the NT. Left out: Mic 1:15 אָבִי (the brief analyses it as בוא); a.aa.ab and xa.aa.ab (cross-references, no tokens); the gentilic אֲבִי הָעֶזְרִי (a.ae.au, Abiezrite) and all the personal names in אֲבִי-/אַב- (a.ae.*), which belong in names/; אֵב “fresh green, shoot” (a.ab.ab, root אבב) and Aramaic אֵב “fruit” (xa.aa.ac, keyed אב), whose cognates (Akkadian inbu, Ugaritic ib, Syriac ʾebbā) point to another root. Peshitta words from SEDRA root 2 (lexeme 2 ܐܒܐ, about 400 verses; lexeme 3 ܐܒܗܘܬܐ, Eph 3:15 only) with verses from the BFBS word list. Not consulted: Fisher/DULAT for Ugaritic ab and abyn, Krahmalkov for Punic ʾb, Leslau and Dillmann for Ge’ez ʾab and ʾabaya, CAD for abu and abbūtu, Payne Smith for Syriac ܐܒܐ. Open: (1) Isa 9:5 אֲבִי עַד is listed under the title sense with a literal gloss; whether “father of perpetuity” or “father of the age” better fits עַד is for review. (2) Mat 23:37 is an echo of Isa 30:15, not a quotation; review whether to keep it."
+  "note": "Root key אבה: the database files אָב (a.ae.ab) under this key with the verb, as BDB’s II אבה. The evidence for a historical split is inconclusive: cognates attest ʾab “father” and ʾby “want/refuse”, but do not show whether these share an older base. Arabic father forms with w and willing/refusing forms with y are useful contrasts, yet Arabic also has a y-form meaning “become a father” (Lane, n122); neither the final consonant nor a proposed semantic bridge settles the question. ה is not one of the merged letters, so no `sounds` are recorded. אֶבְיוֹן: Ugaritic abyn is the only cognate; Coptic ⲉⲃⲓⲏⲛ “a poor, wretched person” (coptic-lexicon C628, CD 53a) is not recorded, since whether it is Egyptian (bjn “bad”) borrowed into Semitic or the Semitic word borrowed into Egyptian is not shown, and Ugaritic has the word early. Akkadian buʾʾû “look for, seek” was not taken as a cognate of the verb. אֲבִיּוֹנָה: the caper identification rests on the Mishnah (Maaserot 4:6, plural אִבְיוֹנוֹת) and the Septuagint’s κάππαρις (macula-lxx Ecc.12.5); no Greek recorded as it is not in the NT. Left out: Mic 1:15 אָבִי (the brief analyses it as בוא); a.aa.ab and xa.aa.ab (cross-references, no tokens); the gentilic אֲבִי הָעֶזְרִי (a.ae.au, Abiezrite) and all the personal names in אֲבִי-/אַב- (a.ae.*), which belong in names/; אֵב “fresh green, shoot” (a.ab.ab, root אבב) and Aramaic אֵב “fruit” (xa.aa.ac, keyed אב), whose cognates (Akkadian inbu, Ugaritic ib, Syriac ʾebbā) point to another root. Peshitta words from SEDRA root 2 (lexeme 2 ܐܒܐ, about 400 verses; lexeme 3 ܐܒܗܘܬܐ, Eph 3:15 only) with verses from the BFBS word list. Not consulted: Fisher/DULAT for Ugaritic ab and abyn, Krahmalkov for Punic ʾb, Leslau and Dillmann for Ge’ez ʾab and ʾabaya, CAD for abu and abbūtu, Payne Smith for Syriac ܐܒܐ. Open: (1) Isa 9:5 אֲבִי עַד is listed under the title sense with a literal gloss; whether “father of perpetuity” or “father of the age” better fits עַד is for review. (2) Mat 23:37 is an echo of Isa 30:15, not a quotation; review whether to keep it."
 }
