@@ -1,0 +1,4333 @@
+{
+  "id": "lev",
+  "root": "לבב",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "body",
+    "heart",
+    "mind",
+    "thought",
+    "will",
+    "understanding",
+    "courage",
+    "conscience",
+    "new-covenant"
+  ],
+  "gloss": "heart: the inner man, his thought, will and feeling",
+  "summary": "לֵב and its longer form לֵבָב are the heart: the organ in the breast (2Sa 18:14; Psa 104:15), and far more often the inner man that Yahweh sees where man sees only the outside (1Sa 16:7). Scripture puts in the heart what English divides between mind, will and feelings: a man says, plans and understands in his heart (Gen 6:5; 1Ki 3:9; Pro 16:9), purposes and is hardened there (Exo 7:3; 35:5), and is glad, afraid or broken there (Psa 34:19; Jos 2:11). The heart of a thing is its midst (Exo 15:8). Daniel’s Aramaic and the Peshitta use the same word in the same ways, and the root’s verbs are made from the noun: to get a heart (Job 11:12), to take hold of the heart (Sng 4:9) and, in Syriac, to take heart (Mat 9:2). Akkadian libbu, Ugaritic lb, Phoenician lb, Sabaic lb, Geʿez ləbb and Aramaic libbā are all the heart and mind; Arabic lubb is the kernel of a thing and the understanding.",
+  "words": [
+    {
+      "lemma": "לֵב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "heart; mind, will, feeling; midst",
+      "bdb": [
+        "l.ai.ac"
+      ],
+      "cognate_ids": [
+        "akk-libbu",
+        "uga-lb",
+        "phn-lb",
+        "sem-lb",
+        "gez-lebb",
+        "ar-lubb",
+        "arc-libba",
+        "syc-lebba"
+      ],
+      "summary": "The shorter and commoner form, about 600 times, with suffixes לִבִּי, לִבּוֹ. Both forms are used with no difference of meaning, sometimes in one verse (Isa 6:10; Ecc 9:3; 1Ch 12:39); Deuteronomy, Joshua, Chronicles and Daniel mostly write לֵבָב, while Exodus, Proverbs, Ecclesiastes, Jeremiah and Ezekiel mostly write לֵב. It is seldom plural: a people has “a heart” (Exo 14:5; Jos 7:5).",
+      "senses": [
+        {
+          "id": "lev-inner",
+          "gloss": "the inner man, hidden from others",
+          "definition": "What a person is within, which others cannot see and the mouth may belie: set against the eyes, the lips and the mouth, known to the man himself and to God.",
+          "kin": [
+            "levav-inner",
+            "arc-heart-thoughts",
+            "syc-heart-source",
+            "syc-heart-searched"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.29.13",
+              "role": "defining",
+              "note": "“This people draws near with its mouth and honours me with its lips, but its לֵב is far from me”; quoted in Mat 15:8 and Mrk 7:6."
+            },
+            {
+              "ref": "Psa.44.22",
+              "role": "defining",
+              "note": "God “knows the secrets of the לֵב”."
+            },
+            {
+              "ref": "Pro.14.10",
+              "role": "defining",
+              "note": "“The heart knows its own bitterness, and a stranger does not share its joy.”"
+            },
+            {
+              "ref": "Jdg.16.17",
+              "role": "defining",
+              "note": "Samson “told her all his heart”: everything he had kept back."
+            },
+            {
+              "ref": "Jdg.16.15",
+              "note": "“How can you say, I love you, when your heart is not with me?”"
+            },
+            {
+              "ref": "Psa.55.22",
+              "note": "His mouth smooth as butter, “but his heart was war”."
+            },
+            {
+              "ref": "Pro.26.23",
+              "note": "Burning lips and an evil heart: silver dross over an earthen pot."
+            },
+            {
+              "ref": "Pro.26.25",
+              "note": "A gracious voice, “seven abominations in his heart”."
+            },
+            {
+              "ref": "Ezk.33.31",
+              "note": "With their mouth they show love, “their heart goes after their gain”."
+            },
+            {
+              "ref": "Pro.23.7",
+              "note": "“Eat and drink, he says to you, but his heart is not with you.”"
+            },
+            {
+              "ref": "1Sa.1.13",
+              "note": "Hannah “was speaking in her heart; only her lips moved, and her voice was not heard”."
+            },
+            {
+              "ref": "Pro.27.19",
+              "note": "As water shows face to face, so the heart of man to man."
+            },
+            {
+              "ref": "Pro.25.3",
+              "note": "The heart of kings is unsearchable."
+            },
+            {
+              "ref": "Psa.64.7",
+              "note": "“The inward part of a man and the heart are deep.”"
+            },
+            {
+              "ref": "Jer.17.10",
+              "note": "“I, Yahweh, search the heart, I try the kidneys.”"
+            },
+            {
+              "ref": "1Pe.3.4",
+              "note": "“The hidden man of the heart.”"
+            }
+          ]
+        },
+        {
+          "id": "lev-organ",
+          "gloss": "the heart in the breast",
+          "definition": "The bodily heart of man or beast, in the breast: it can be pierced, it beats and melts, bread sustains it, and it can die within a man.",
+          "kin": [
+            "levav-organ"
+          ],
+          "evidence": [
+            {
+              "ref": "2Sa.18.14",
+              "role": "defining",
+              "note": "Joab thrust three darts “into the heart of Absalom” while he was still alive."
+            },
+            {
+              "ref": "2Ki.9.24",
+              "role": "defining",
+              "note": "Jehu’s arrow struck Jehoram between his arms and “went out at his heart”."
+            },
+            {
+              "ref": "Exo.28.29",
+              "role": "defining",
+              "note": "Aaron bears the names of the sons of Israel in the breastpiece “over his heart”."
+            },
+            {
+              "ref": "Exo.28.30"
+            },
+            {
+              "ref": "1Sa.25.37",
+              "role": "defining",
+              "note": "Nabal’s “heart died within him, and he became as a stone”; ten days later he died."
+            },
+            {
+              "ref": "Psa.38.11",
+              "note": "“My heart throbs, my strength has left me.”"
+            },
+            {
+              "ref": "Hos.13.8",
+              "note": "“I will tear open the enclosure of their heart.”"
+            },
+            {
+              "ref": "Psa.22.15",
+              "note": "“My heart is like wax; it is melted within my inward parts.”"
+            },
+            {
+              "ref": "Jer.4.19",
+              "note": "“The walls of my heart! My heart is in tumult within me.”"
+            },
+            {
+              "ref": "Job.37.1",
+              "note": "“My heart trembles and leaps from its place.”"
+            },
+            {
+              "ref": "Gen.18.5",
+              "note": "“A morsel of bread, and sustain your heart.”"
+            },
+            {
+              "ref": "Jdg.19.5",
+              "note": "“Sustain your heart with a morsel of bread.”"
+            },
+            {
+              "ref": "Psa.37.15",
+              "note": "Their sword shall enter their own heart."
+            },
+            {
+              "ref": "Psa.45.6",
+              "note": "Arrows in the heart of the king’s enemies."
+            },
+            {
+              "ref": "Job.41.16",
+              "note": "Leviathan’s heart “firm as a stone”."
+            },
+            {
+              "ref": "2Sa.17.10",
+              "note": "“The heart of the lion.”"
+            },
+            {
+              "ref": "Sng.8.6",
+              "note": "“Set me as a seal upon your heart, as a seal upon your arm.”"
+            }
+          ]
+        },
+        {
+          "id": "lev-thought",
+          "gloss": "thought: what one says and plans within",
+          "definition": "The heart as where a person thinks: he speaks in his heart, and his plans, schemes and meditation are the heart’s.",
+          "kin": [
+            "levav-thought",
+            "arc-heart-thoughts",
+            "syc-heart-thought"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.6.5",
+              "role": "defining",
+              "note": "“Every inclination of the thoughts of his heart (יֵצֶר מַחְשְׁבֹת לִבּוֹ) was only evil all the day.”"
+            },
+            {
+              "ref": "Gen.17.17",
+              "role": "defining",
+              "note": "Abraham “said in his heart, Shall a child be born to one a hundred years old?”"
+            },
+            {
+              "ref": "Gen.24.45",
+              "role": "defining",
+              "note": "“Before I had finished speaking to my heart”: the servant’s silent prayer."
+            },
+            {
+              "ref": "Pro.16.9",
+              "role": "defining",
+              "note": "“The heart of a man plans his way, but Yahweh establishes his step.”"
+            },
+            {
+              "ref": "Pro.19.21",
+              "note": "“Many are the plans in a man’s heart.”"
+            },
+            {
+              "ref": "Gen.27.41",
+              "note": "Esau said in his heart, “I will kill Jacob.”"
+            },
+            {
+              "ref": "Psa.14.1",
+              "note": "“The fool has said in his heart, No God.”"
+            },
+            {
+              "ref": "1Ki.12.26",
+              "note": "Jeroboam said in his heart."
+            },
+            {
+              "ref": "Est.6.6"
+            },
+            {
+              "ref": "Oba.1.3"
+            },
+            {
+              "ref": "Ecc.2.1",
+              "note": "“I said in my heart.”"
+            },
+            {
+              "ref": "Pro.6.18",
+              "note": "“A heart devising plans of iniquity.”"
+            },
+            {
+              "ref": "Psa.140.3"
+            },
+            {
+              "ref": "Psa.19.15",
+              "note": "“The words of my mouth and the meditation of my heart.”"
+            },
+            {
+              "ref": "Psa.49.4"
+            },
+            {
+              "ref": "Pro.15.28",
+              "note": "“The heart of the righteous ponders how to answer.”"
+            },
+            {
+              "ref": "Pro.16.1"
+            },
+            {
+              "ref": "Neh.5.7",
+              "note": "“My heart took counsel within me.”"
+            },
+            {
+              "ref": "Neh.6.8",
+              "note": "“You are inventing them out of your own heart.”"
+            },
+            {
+              "ref": "Jer.23.16",
+              "note": "The prophets speak “a vision of their own heart, not from the mouth of Yahweh”."
+            },
+            {
+              "ref": "Ezk.13.2"
+            },
+            {
+              "ref": "Isa.65.17",
+              "note": "The former things “shall not come up on the heart”: not be thought of."
+            },
+            {
+              "ref": "Mat.9.4",
+              "note": "“Why do you think evil in your hearts?”"
+            },
+            {
+              "ref": "Heb.4.12",
+              "note": "The word of God judges “the thoughts and intents of the heart”."
+            }
+          ]
+        },
+        {
+          "id": "lev-understanding",
+          "gloss": "understanding, wisdom, knowledge; attention and memory",
+          "definition": "The heart as what knows, understands and remembers. A wise man is “wise of heart”, a fool “lacks heart”; to set the heart on a thing is to attend to it, and what is kept is kept on the heart.",
+          "kin": [
+            "levav-understanding",
+            "arc-heart-kept",
+            "syc-heart-thought"
+          ],
+          "cognate_ids": [
+            "akk-libbu",
+            "uga-lb",
+            "phn-lb",
+            "gez-lebb",
+            "ar-lubb",
+            "ar-labba",
+            "arc-libba",
+            "syc-lebba"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.3.9",
+              "role": "defining",
+              "note": "Solomon asks for “a hearing heart (לֵב שֹׁמֵעַ) to judge your people, to discern between good and evil”."
+            },
+            {
+              "ref": "1Ki.3.12",
+              "role": "defining",
+              "note": "“I have given you a wise and discerning heart.”"
+            },
+            {
+              "ref": "Deu.29.3",
+              "role": "defining",
+              "note": "“Yahweh has not given you a heart to know, and eyes to see, and ears to hear”: the heart knows as the eye sees."
+            },
+            {
+              "ref": "Isa.6.10",
+              "role": "defining",
+              "note": "“Make the heart of this people fat … lest it understand with its heart”; quoted in Mat 13:15, Jhn 12:40, Act 28:27."
+            },
+            {
+              "ref": "Pro.6.32",
+              "role": "defining",
+              "note": "The adulterer “lacks heart” (חֲסַר־לֵב): he has no sense."
+            },
+            {
+              "ref": "Hos.7.11",
+              "role": "defining",
+              "note": "Ephraim “like a silly dove, without heart”."
+            },
+            {
+              "ref": "Pro.2.2"
+            },
+            {
+              "ref": "Pro.2.10",
+              "note": "“Wisdom shall enter your heart.”"
+            },
+            {
+              "ref": "1Ki.5.9",
+              "note": "God gave Solomon wisdom “and breadth of heart as the sand on the seashore”."
+            },
+            {
+              "ref": "Exo.31.6",
+              "note": "“In the heart of every wise-hearted man I have put wisdom”: skill in craft."
+            },
+            {
+              "ref": "Exo.35.25",
+              "note": "Every woman wise of heart spun with her hands."
+            },
+            {
+              "ref": "Exo.36.2"
+            },
+            {
+              "ref": "Pro.15.14"
+            },
+            {
+              "ref": "Pro.18.15"
+            },
+            {
+              "ref": "Pro.19.8",
+              "note": "“He who gets heart loves his own soul.”"
+            },
+            {
+              "ref": "Pro.15.32",
+              "note": "“He who hears reproof gets heart.”"
+            },
+            {
+              "ref": "Pro.17.16",
+              "note": "A price in a fool’s hand to buy wisdom, “and there is no heart”."
+            },
+            {
+              "ref": "Pro.28.26",
+              "note": "“He who trusts in his own heart is a fool.”"
+            },
+            {
+              "ref": "Hos.4.11",
+              "note": "“Whoredom and wine and new wine take away the heart.”"
+            },
+            {
+              "ref": "Jer.5.21",
+              "note": "“A foolish people, without heart.”"
+            },
+            {
+              "ref": "Jer.24.7",
+              "note": "“I will give them a heart to know me.”"
+            },
+            {
+              "ref": "Isa.44.18",
+              "note": "Their hearts are smeared over so that they cannot understand."
+            },
+            {
+              "ref": "Ecc.1.13",
+              "note": "“I gave my heart to seek and search out by wisdom.”"
+            },
+            {
+              "ref": "Ecc.1.16",
+              "note": "“My heart has seen much wisdom and knowledge.”"
+            },
+            {
+              "ref": "Exo.7.23",
+              "role": "defining",
+              "note": "Pharaoh “did not set his heart even to this”: paid it no attention."
+            },
+            {
+              "ref": "Exo.9.21",
+              "note": "He who did not set his heart to the word of Yahweh left his servants in the field."
+            },
+            {
+              "ref": "Isa.42.25",
+              "note": "It burned him, “and he did not lay it to heart”."
+            },
+            {
+              "ref": "Ezk.40.4",
+              "note": "“See with your eyes, hear with your ears, and set your heart on all that I show you.”"
+            },
+            {
+              "ref": "Pro.3.1",
+              "note": "“Let your heart keep my commandments.”"
+            },
+            {
+              "ref": "Pro.3.3",
+              "note": "“Write them on the tablet of your heart.”"
+            },
+            {
+              "ref": "Psa.119.11",
+              "note": "“I have hidden your word in my heart.”"
+            },
+            {
+              "ref": "Psa.31.13",
+              "note": "“I am forgotten like a dead man, out of heart”: out of mind."
+            },
+            {
+              "ref": "Lam.3.21",
+              "note": "“This I bring back to my heart; therefore I hope.”"
+            },
+            {
+              "ref": "Jer.31.33",
+              "note": "“I will write it on their heart”; quoted in Heb 8:10 and 10:16."
+            },
+            {
+              "ref": "Luk.24.25",
+              "note": "“Slow of heart to believe all that the prophets have spoken.”"
+            }
+          ]
+        },
+        {
+          "id": "lev-will",
+          "gloss": "will, purpose, inclination",
+          "definition": "The heart as what chooses and purposes: it moves a man to give or to act, it is turned, inclined, made firm or hardened, and to do a thing with all the heart is to do it wholly.",
+          "kin": [
+            "levav-will",
+            "syc-heart-will"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.35.5",
+              "role": "defining",
+              "note": "“Everyone willing of heart (נְדִיב לִבּוֹ), let him bring it.”"
+            },
+            {
+              "ref": "Exo.35.21",
+              "role": "defining",
+              "note": "“Every man whose heart lifted him” came with his offering."
+            },
+            {
+              "ref": "Num.16.28",
+              "role": "defining",
+              "note": "“Yahweh has sent me to do all these works; they are not from my own heart”: not of his own will."
+            },
+            {
+              "ref": "Num.24.13",
+              "note": "Balaam cannot do good or evil “from my own heart”."
+            },
+            {
+              "ref": "Exo.7.3",
+              "role": "defining",
+              "note": "“I will harden the heart of Pharaoh”; see the doctrine."
+            },
+            {
+              "ref": "Exo.4.21"
+            },
+            {
+              "ref": "Exo.8.11",
+              "note": "Pharaoh “made his heart heavy and did not listen”."
+            },
+            {
+              "ref": "Jos.11.20"
+            },
+            {
+              "ref": "Ezk.3.7",
+              "note": "The house of Israel is “strong of forehead and hard of heart”."
+            },
+            {
+              "ref": "Zec.7.12",
+              "note": "“They made their heart as flint, so as not to hear the law.”"
+            },
+            {
+              "ref": "Pro.28.14"
+            },
+            {
+              "ref": "Jer.7.24",
+              "note": "They walked “in the stubbornness of their evil heart”."
+            },
+            {
+              "ref": "Jer.18.12"
+            },
+            {
+              "ref": "1Ki.11.3",
+              "note": "Solomon’s wives “turned away his heart”."
+            },
+            {
+              "ref": "1Ki.18.37",
+              "note": "“You have turned their heart back again.”"
+            },
+            {
+              "ref": "Mal.3.24",
+              "note": "Elijah “will turn the heart of the fathers to the sons”; quoted in Luk 1:17."
+            },
+            {
+              "ref": "Jdg.9.3",
+              "note": "The heart of the men of Shechem “inclined after Abimelech”."
+            },
+            {
+              "ref": "2Sa.15.13",
+              "note": "“The heart of the men of Israel is after Absalom.”"
+            },
+            {
+              "ref": "Psa.119.36",
+              "note": "“Incline my heart to your testimonies.”"
+            },
+            {
+              "ref": "Psa.119.112"
+            },
+            {
+              "ref": "Pro.21.1",
+              "note": "“The king’s heart is channels of water in the hand of Yahweh; he turns it wherever he will.”"
+            },
+            {
+              "ref": "Ezr.7.27",
+              "note": "Yahweh “put this in the heart of the king”."
+            },
+            {
+              "ref": "Neh.2.12",
+              "note": "“What my God was putting in my heart to do for Jerusalem.”"
+            },
+            {
+              "ref": "Neh.3.38",
+              "note": "“The people had a heart to work.”"
+            },
+            {
+              "ref": "Psa.57.8",
+              "note": "“My heart is fixed, O God.”"
+            },
+            {
+              "ref": "2Ch.12.14",
+              "note": "Rehoboam “did not set his heart to seek Yahweh”."
+            },
+            {
+              "ref": "Dan.1.8",
+              "note": "Daniel “set on his heart that he would not defile himself”."
+            },
+            {
+              "ref": "Jer.3.10",
+              "note": "Judah did not return “with all her heart, but in falsehood”."
+            },
+            {
+              "ref": "1Ki.8.23",
+              "note": "Servants who walk before him “with all their heart”."
+            },
+            {
+              "ref": "Pro.3.5",
+              "note": "“Trust in Yahweh with all your heart.”"
+            },
+            {
+              "ref": "Psa.37.4",
+              "note": "“He will give you the requests of your heart.”"
+            },
+            {
+              "ref": "Pro.23.26",
+              "note": "“My son, give me your heart.”"
+            },
+            {
+              "ref": "Ecc.8.11",
+              "note": "“The heart of the sons of man is full in them to do evil.”"
+            },
+            {
+              "ref": "Rom.6.17",
+              "note": "“You obeyed from the heart.”"
+            }
+          ]
+        },
+        {
+          "id": "lev-feeling",
+          "gloss": "feeling: joy and grief, desire and anger",
+          "definition": "The heart as what is glad or grieved, loves, desires, envies and rages. A “good heart” is a merry one, and a broken heart is one crushed by grief.",
+          "kin": [
+            "levav-feeling",
+            "syc-heart-feeling"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.15.13",
+              "role": "defining",
+              "note": "“A glad heart makes a cheerful face, but by sorrow of heart the spirit is broken.”"
+            },
+            {
+              "ref": "Pro.14.10",
+              "role": "defining",
+              "note": "The heart’s bitterness and its joy."
+            },
+            {
+              "ref": "Psa.34.19",
+              "role": "defining",
+              "note": "“Yahweh is near to the broken of heart (נִשְׁבְּרֵי־לֵב)”, beside “the crushed of spirit”."
+            },
+            {
+              "ref": "Exo.4.14",
+              "note": "Aaron “will see you and be glad in his heart”."
+            },
+            {
+              "ref": "1Sa.2.1",
+              "note": "“My heart exults in Yahweh.”"
+            },
+            {
+              "ref": "Psa.16.9",
+              "note": "“My heart is glad”; quoted in Act 2:26."
+            },
+            {
+              "ref": "Psa.4.8"
+            },
+            {
+              "ref": "Pro.17.22",
+              "note": "“A glad heart does good like medicine.”"
+            },
+            {
+              "ref": "Pro.12.25",
+              "note": "“Anxiety in a man’s heart weighs it down.”"
+            },
+            {
+              "ref": "Pro.13.12",
+              "note": "“Hope deferred makes the heart sick.”"
+            },
+            {
+              "ref": "Pro.14.13"
+            },
+            {
+              "ref": "Isa.61.1",
+              "note": "“To bind up the broken of heart”; quoted in Luk 4:18."
+            },
+            {
+              "ref": "Psa.147.3"
+            },
+            {
+              "ref": "Psa.51.19",
+              "note": "“A broken and crushed heart, O God, you will not despise.”"
+            },
+            {
+              "ref": "Isa.65.14",
+              "note": "“Goodness of heart” against “pain of heart”."
+            },
+            {
+              "ref": "Jdg.16.25",
+              "note": "“When their heart was good”: merry."
+            },
+            {
+              "ref": "Rut.3.7",
+              "note": "Boaz ate and drank “and his heart was good”."
+            },
+            {
+              "ref": "Est.1.10",
+              "note": "“When the heart of the king was good with wine.”"
+            },
+            {
+              "ref": "Pro.15.15",
+              "note": "“He who is good of heart has a continual feast.”"
+            },
+            {
+              "ref": "Gen.6.6",
+              "note": "Yahweh “was grieved to his heart”."
+            },
+            {
+              "ref": "Lam.1.20",
+              "note": "“My heart is turned within me.”"
+            },
+            {
+              "ref": "Psa.69.21",
+              "note": "“Reproach has broken my heart.”"
+            },
+            {
+              "ref": "Jer.48.36",
+              "note": "“My heart moans for Moab like flutes.”"
+            },
+            {
+              "ref": "Neh.2.2",
+              "note": "“This is nothing but sadness of heart.”"
+            },
+            {
+              "ref": "Jdg.16.15",
+              "note": "Love: “your heart is not with me”."
+            },
+            {
+              "ref": "Sng.3.11",
+              "note": "“The day of the gladness of his heart.”"
+            },
+            {
+              "ref": "Pro.31.11",
+              "note": "“The heart of her husband trusts in her.”"
+            },
+            {
+              "ref": "Job.31.7",
+              "note": "“If my heart has gone after my eyes.”"
+            },
+            {
+              "ref": "Psa.62.11",
+              "note": "“If riches increase, do not set your heart on them.”"
+            },
+            {
+              "ref": "Pro.23.17",
+              "note": "“Let not your heart envy sinners.”"
+            },
+            {
+              "ref": "Pro.19.3",
+              "note": "“His heart rages against Yahweh.”"
+            },
+            {
+              "ref": "2Sa.6.16",
+              "note": "Michal “despised him in her heart”."
+            },
+            {
+              "ref": "2Ki.6.11",
+              "note": "The heart of the king of Aram “was stormy” over this."
+            },
+            {
+              "ref": "Ecc.11.10",
+              "note": "“Remove vexation from your heart.”"
+            },
+            {
+              "ref": "Jhn.16.22",
+              "note": "“Your heart shall rejoice.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "lev-courage",
+              "gloss": "courage, or its loss",
+              "definition": "The heart as courage: it is strong or firm in the brave, and in fear it falls, goes out, trembles or melts.",
+              "kin": [
+                "levav-courage",
+                "syc-take-heart",
+                "syc-hearten",
+                "syc-encouragement"
+              ],
+              "cognate_ids": [
+                "akk-libbu",
+                "arc-labbev",
+                "syc-lebba"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.17.32",
+                  "role": "defining",
+                  "note": "“Let no man’s heart fall because of him; your servant will go and fight.”"
+                },
+                {
+                  "ref": "2Sa.17.10",
+                  "role": "defining",
+                  "note": "Even the valiant man “whose heart is as the heart of the lion will utterly melt”."
+                },
+                {
+                  "ref": "Psa.27.14",
+                  "role": "defining",
+                  "note": "“Be strong, and let your heart take courage.”"
+                },
+                {
+                  "ref": "Gen.42.28",
+                  "note": "“Their heart went out, and they trembled.”"
+                },
+                {
+                  "ref": "Gen.45.26",
+                  "note": "Jacob’s heart “grew numb, for he did not believe them”."
+                },
+                {
+                  "ref": "1Sa.4.13",
+                  "note": "Eli’s “heart trembled for the ark of God”."
+                },
+                {
+                  "ref": "1Sa.28.5"
+                },
+                {
+                  "ref": "Jos.14.8",
+                  "note": "“My brothers made the heart of the people melt.”"
+                },
+                {
+                  "ref": "Psa.27.3",
+                  "note": "“Though a host encamp against me, my heart shall not fear.”"
+                },
+                {
+                  "ref": "Psa.112.7",
+                  "note": "“His heart is fixed, trusting in Yahweh.”"
+                },
+                {
+                  "ref": "Amo.2.16",
+                  "note": "“The stout of heart among the mighty shall flee naked.”"
+                },
+                {
+                  "ref": "Ezk.22.14",
+                  "note": "“Will your heart stand, or your hands be strong?”"
+                },
+                {
+                  "ref": "Jer.4.9",
+                  "note": "“The heart of the king shall perish.”"
+                },
+                {
+                  "ref": "Jer.48.41",
+                  "note": "The heart of Moab’s warriors “as the heart of a woman in labour”."
+                },
+                {
+                  "ref": "Isa.35.4",
+                  "note": "“Say to the hasty of heart, Be strong, fear not.”"
+                },
+                {
+                  "ref": "Psa.40.13",
+                  "note": "“My heart has forsaken me.”"
+                },
+                {
+                  "ref": "Psa.76.6"
+                },
+                {
+                  "ref": "Job.23.16",
+                  "note": "“God has made my heart soft.”"
+                },
+                {
+                  "ref": "Jhn.14.27",
+                  "note": "“Let not your heart be troubled, nor let it be afraid.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lev-conscience",
+          "gloss": "the heart that accuses or acquits",
+          "definition": "The heart as a man’s own knowledge of what he has done, which strikes him when he has done wrong.",
+          "kin": [
+            "levav-conscience",
+            "syc-heart-conscience"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.24.6",
+              "role": "defining",
+              "note": "“David’s heart struck him, because he had cut off Saul’s skirt.”"
+            },
+            {
+              "ref": "2Sa.24.10",
+              "role": "defining",
+              "note": "“David’s heart struck him after he had numbered the people, and he said, I have sinned greatly.”"
+            },
+            {
+              "ref": "Ecc.7.22",
+              "role": "defining",
+              "note": "“Your heart knows that you yourself have cursed others.”"
+            },
+            {
+              "ref": "1Sa.25.31",
+              "note": "Shed blood would be “a stumbling of heart” to David."
+            },
+            {
+              "ref": "Psa.66.18",
+              "note": "“If I had regarded iniquity in my heart.”"
+            },
+            {
+              "ref": "1Jn.3.20",
+              "note": "“If our heart condemns us, God is greater than our heart.”"
+            },
+            {
+              "ref": "Rom.2.15",
+              "note": "The work of the law written on their heart, their conscience bearing witness."
+            }
+          ]
+        },
+        {
+          "id": "lev-character",
+          "gloss": "the heart as upright or perverse, clean or uncircumcised",
+          "definition": "What a man is morally is called his heart: upright or crooked, clean, proud (“high”), stubborn, uncircumcised, of stone or of flesh; and God gives or creates a new one.",
+          "kin": [
+            "levav-character",
+            "arc-heart-proud",
+            "libbah-heart",
+            "syc-heart-source"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.17.9",
+              "role": "defining",
+              "note": "“The heart is deceitful (עָקֹב) above all things, and incurable; who can know it?”"
+            },
+            {
+              "ref": "Psa.51.12",
+              "role": "defining",
+              "note": "“Create in me a clean heart (לֵב טָהוֹר), O God.”"
+            },
+            {
+              "ref": "Ezk.36.26",
+              "role": "defining",
+              "note": "“A new heart (לֵב חָדָשׁ) … I will take away the heart of stone out of your flesh and give you a heart of flesh.”"
+            },
+            {
+              "ref": "Gen.8.21",
+              "role": "defining",
+              "note": "“The inclination of the heart of man is evil from his youth.”"
+            },
+            {
+              "ref": "Psa.7.11",
+              "note": "God saves “the upright of heart” (יִשְׁרֵי־לֵב)."
+            },
+            {
+              "ref": "Psa.32.11"
+            },
+            {
+              "ref": "Psa.97.11"
+            },
+            {
+              "ref": "Pro.11.20",
+              "note": "“The crooked of heart are an abomination to Yahweh.”"
+            },
+            {
+              "ref": "Pro.17.20"
+            },
+            {
+              "ref": "Pro.20.9",
+              "note": "“Who can say, I have made my heart clean?”"
+            },
+            {
+              "ref": "Pro.22.11"
+            },
+            {
+              "ref": "Jer.4.14",
+              "note": "“Wash your heart from evil, Jerusalem.”"
+            },
+            {
+              "ref": "Jer.9.25",
+              "note": "“All the house of Israel are uncircumcised of heart.”"
+            },
+            {
+              "ref": "Ezk.44.7",
+              "note": "“Uncircumcised of heart and uncircumcised of flesh.”"
+            },
+            {
+              "ref": "Ezk.11.19"
+            },
+            {
+              "ref": "Ezk.18.31",
+              "note": "“Make yourselves a new heart and a new spirit.”"
+            },
+            {
+              "ref": "Jer.5.23",
+              "note": "“A stubborn and rebellious heart.”"
+            },
+            {
+              "ref": "Pro.16.5",
+              "note": "“Everyone high of heart is an abomination to Yahweh.”"
+            },
+            {
+              "ref": "Pro.18.12",
+              "note": "“Before destruction the heart of a man is high.”"
+            },
+            {
+              "ref": "Ezk.28.2",
+              "note": "The prince of Tyre: “your heart is high, and you have said, I am a god”."
+            },
+            {
+              "ref": "2Ch.26.16",
+              "note": "Uzziah’s heart “was high, to his destruction”."
+            },
+            {
+              "ref": "2Ch.32.26",
+              "note": "Hezekiah humbled himself for “the height of his heart”."
+            },
+            {
+              "ref": "Psa.131.1",
+              "note": "“My heart is not high, nor my eyes lifted up.”"
+            },
+            {
+              "ref": "Hos.10.2",
+              "note": "“Their heart is divided.”"
+            },
+            {
+              "ref": "Ecc.9.3",
+              "note": "“The heart of the sons of man is full of evil.”"
+            },
+            {
+              "ref": "Mat.5.8",
+              "note": "“Blessed are the pure in heart.”"
+            },
+            {
+              "ref": "Luk.8.15",
+              "note": "“A good and honest heart.”"
+            }
+          ]
+        },
+        {
+          "id": "lev-of-yahweh",
+          "gloss": "Yahweh’s own heart: his mind and purpose",
+          "definition": "Scripture speaks of Yahweh’s heart as it does of a man’s: he says in his heart, purposes, is grieved, and chooses men after his heart.",
+          "kin": [
+            "levav-of-yahweh"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.8.21",
+              "role": "defining",
+              "note": "“Yahweh said to his heart, I will not again curse the ground.”"
+            },
+            {
+              "ref": "Gen.6.6",
+              "role": "defining",
+              "note": "“He was grieved to his heart.”"
+            },
+            {
+              "ref": "Jer.7.31",
+              "role": "defining",
+              "note": "Burning sons and daughters in the valley of the son of Hinnom, “which I did not command, nor did it come up on my heart”."
+            },
+            {
+              "ref": "Jer.3.15",
+              "note": "“Shepherds according to my heart.”"
+            },
+            {
+              "ref": "Jer.23.20",
+              "note": "“Until he has performed the purposes of his heart.”"
+            },
+            {
+              "ref": "Jer.32.41",
+              "note": "“I will plant them in this land in truth, with all my heart and with all my soul.”"
+            },
+            {
+              "ref": "Psa.33.11",
+              "note": "“The counsel of Yahweh stands for ever, the thoughts of his heart to all generations.”"
+            },
+            {
+              "ref": "Isa.63.4",
+              "note": "“The day of vengeance was in my heart.”"
+            },
+            {
+              "ref": "Hos.11.8",
+              "note": "“My heart is turned within me; my compassions are kindled.”"
+            },
+            {
+              "ref": "1Ki.9.3",
+              "note": "Of the house: “my eyes and my heart shall be there all the days”."
+            },
+            {
+              "ref": "2Sa.7.21",
+              "note": "“According to your heart you have done all this greatness.”"
+            },
+            {
+              "ref": "Lam.3.33",
+              "note": "“He does not afflict from his heart.”"
+            },
+            {
+              "ref": "Job.36.5"
+            }
+          ]
+        },
+        {
+          "id": "lev-midst",
+          "gloss": "the midst, the inmost part of a thing",
+          "definition": "The heart of the sea, of the heavens or of a tree is its middle, far from the edge.",
+          "kin": [
+            "levav-midst",
+            "syc-heart-midst"
+          ],
+          "cognate_ids": [
+            "akk-libbu",
+            "ar-lubb",
+            "gez-lebb",
+            "arc-libba"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.15.8",
+              "role": "defining",
+              "note": "“The deeps were congealed in the heart of the sea (בְּלֶב־יָם).”"
+            },
+            {
+              "ref": "Deu.4.11",
+              "role": "defining",
+              "note": "The mountain burned with fire “to the heart of the heavens”."
+            },
+            {
+              "ref": "2Sa.18.14",
+              "role": "defining",
+              "note": "Absalom was still alive “in the heart of the oak”."
+            },
+            {
+              "ref": "Ezk.27.4",
+              "note": "Tyre’s borders are “in the heart of the seas”."
+            },
+            {
+              "ref": "Ezk.27.26"
+            },
+            {
+              "ref": "Ezk.28.2"
+            },
+            {
+              "ref": "Ezk.28.8"
+            },
+            {
+              "ref": "Pro.23.34"
+            },
+            {
+              "ref": "Pro.30.19",
+              "note": "“The way of a ship in the heart of the sea.”"
+            },
+            {
+              "ref": "Psa.46.3"
+            },
+            {
+              "ref": "Mat.12.40",
+              "note": "“Three days and three nights in the heart of the earth”, as Jonah in the heart of the seas (Jon 2:4)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καρδία",
+          "gloss": "heart",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.6.5, לִבּוֹ → καρδίᾳ; Isa.6.10 → καρδία; Isa.29.13 → καρδία; Jer.31.33 → καρδίας; Jer.17.10 → καρδίας; Ezk.36.26 → καρδίαν (×3); καρδία renders לֵב ×464"
+            },
+            {
+              "ref": "Mat.13.15",
+              "role": "defining",
+              "note": "Isa 6:10: “the heart of this people has grown fat … lest they understand with the heart”."
+            },
+            {
+              "ref": "Jhn.12.40"
+            },
+            {
+              "ref": "Act.28.27"
+            },
+            {
+              "ref": "Mat.15.8",
+              "role": "defining",
+              "note": "Isa 29:13: “their heart is far from me”."
+            },
+            {
+              "ref": "Mrk.7.6"
+            },
+            {
+              "ref": "Heb.8.10",
+              "role": "defining",
+              "note": "Jer 31:33: “on their hearts I will write them”."
+            },
+            {
+              "ref": "Heb.10.16"
+            },
+            {
+              "ref": "Luk.4.18",
+              "note": "Isa 61:1: “to heal the broken of heart”."
+            },
+            {
+              "ref": "Act.2.26",
+              "note": "Psa 16:9: “my heart was glad”."
+            },
+            {
+              "ref": "Luk.1.17",
+              "note": "Mal 3:24: “to turn the hearts of the fathers to the children”."
+            },
+            {
+              "ref": "Rev.2.23",
+              "note": "Jer 17:10: “I am he who searches kidneys and hearts”."
+            },
+            {
+              "ref": "1Co.2.9",
+              "note": "“Nor has it come up on the heart of man”: the Hebrew idiom עָלָה עַל־לֵב (Isa 65:17; Jer 3:16)."
+            },
+            {
+              "ref": "Mat.12.40",
+              "note": "“The heart of the earth”: the Hebrew use for the midst."
+            }
+          ]
+        },
+        {
+          "lemma": "διάνοια",
+          "gloss": "mind, understanding",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.35.35, חָכְמַת־לֵב → σοφίας καὶ συνέσεως διανοίας; Pro.2.10, לִבֶּךָ → διάνοιαν (διάνοια renders לֵב ×2)"
+            },
+            {
+              "ref": "Heb.8.10",
+              "note": "Jer 31:33: “I will put my laws into their διάνοια, and on their hearts I will write them”."
+            },
+            {
+              "ref": "Luk.1.51",
+              "note": "“The proud in the διάνοια of their heart.”"
+            },
+            {
+              "ref": "Eph.4.18",
+              "note": "“Darkened in διάνοια … because of the hardness of their heart.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נֶפֶשׁ",
+            "note": "“Soul”: heart and soul together for the whole inner person.",
+            "evidence": [
+              {
+                "ref": "Pro.2.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.84.3"
+              },
+              {
+                "ref": "Jer.32.41"
+              },
+              {
+                "ref": "2Ki.23.3"
+              }
+            ]
+          },
+          {
+            "lemma": "רוּחַ",
+            "note": "“Spirit”: a new heart and a new spirit, a broken heart and a crushed spirit.",
+            "evidence": [
+              {
+                "ref": "Psa.51.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.36.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.34.19"
+              },
+              {
+                "ref": "Psa.51.19"
+              },
+              {
+                "ref": "Exo.35.21"
+              },
+              {
+                "ref": "Ezk.11.19"
+              },
+              {
+                "ref": "Ezk.18.31"
+              },
+              {
+                "ref": "Isa.57.15"
+              },
+              {
+                "ref": "Psa.78.8"
+              }
+            ]
+          },
+          {
+            "lemma": "כִּלְיָה",
+            "note": "“Kidneys”: the two inmost organs that Yahweh tries.",
+            "evidence": [
+              {
+                "ref": "Jer.17.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.11.20"
+              },
+              {
+                "ref": "Jer.20.12"
+              },
+              {
+                "ref": "Psa.26.2"
+              },
+              {
+                "ref": "Rev.2.23"
+              }
+            ]
+          },
+          {
+            "lemma": "עַיִן",
+            "note": "“Eye”: heart and eyes together as what a man follows.",
+            "evidence": [
+              {
+                "ref": "Job.31.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.22.17"
+              },
+              {
+                "ref": "Ecc.2.10"
+              },
+              {
+                "ref": "Ecc.11.9"
+              },
+              {
+                "ref": "Ezk.6.9"
+              },
+              {
+                "ref": "1Ki.9.3"
+              }
+            ]
+          },
+          {
+            "lemma": "קֶרֶב",
+            "note": "“Inward part”: the law put within and written on the heart.",
+            "evidence": [
+              {
+                "ref": "Jer.31.33",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.39.4"
+              },
+              {
+                "ref": "Psa.64.7"
+              },
+              {
+                "ref": "Ezk.36.26"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּשָׂר",
+            "note": "“Flesh”: heart and flesh as the whole man, inner and outer.",
+            "evidence": [
+              {
+                "ref": "Psa.84.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.16.9"
+              },
+              {
+                "ref": "Ezk.44.7"
+              },
+              {
+                "ref": "Ecc.11.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "פֶּה",
+            "note": "“Mouth” (and שָׂפָה “lip”): what is said, against what is within.",
+            "evidence": [
+              {
+                "ref": "Isa.29.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.55.22"
+              },
+              {
+                "ref": "Ezk.33.31"
+              },
+              {
+                "ref": "Pro.26.23"
+              },
+              {
+                "ref": "1Sa.1.13"
+              },
+              {
+                "ref": "Mat.15.8"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אָמַר בְּלִבּוֹ",
+            "gloss": "say in one’s heart: think",
+            "evidence": [
+              {
+                "ref": "Gen.17.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.27.41"
+              },
+              {
+                "ref": "Psa.14.1"
+              },
+              {
+                "ref": "Psa.10.6"
+              },
+              {
+                "ref": "Est.6.6"
+              },
+              {
+                "ref": "Rev.18.7"
+              }
+            ]
+          },
+          {
+            "phrase": "דִּבֶּר עַל־לֵב",
+            "gloss": "speak to the heart: speak kindly, comfort, win over",
+            "evidence": [
+              {
+                "ref": "Gen.34.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.50.21",
+                "role": "defining",
+                "note": "“He comforted them and spoke to their heart.”"
+              },
+              {
+                "ref": "Isa.40.2"
+              },
+              {
+                "ref": "Hos.2.16"
+              },
+              {
+                "ref": "Rut.2.13"
+              },
+              {
+                "ref": "Jdg.19.3"
+              },
+              {
+                "ref": "2Sa.19.8"
+              },
+              {
+                "ref": "2Ch.30.22"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׂים לֵב",
+            "gloss": "set the heart on: attend to, consider (also שִׁית לֵב)",
+            "evidence": [
+              {
+                "ref": "Exo.9.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.7.23"
+              },
+              {
+                "ref": "1Sa.9.20"
+              },
+              {
+                "ref": "2Sa.13.33"
+              },
+              {
+                "ref": "Job.1.8"
+              },
+              {
+                "ref": "Isa.57.1"
+              },
+              {
+                "ref": "Ezk.44.5"
+              },
+              {
+                "ref": "Mal.2.2"
+              }
+            ]
+          },
+          {
+            "phrase": "עָלָה עַל־לֵב",
+            "gloss": "come up on the heart: come to mind",
+            "evidence": [
+              {
+                "ref": "Jer.3.16",
+                "role": "defining",
+                "note": "“It shall not come up on the heart, nor shall they remember it.”"
+              },
+              {
+                "ref": "Isa.65.17"
+              },
+              {
+                "ref": "Jer.7.31"
+              },
+              {
+                "ref": "Jer.19.5"
+              },
+              {
+                "ref": "Jer.32.35"
+              },
+              {
+                "ref": "Jer.44.21"
+              },
+              {
+                "ref": "1Co.2.9"
+              },
+              {
+                "ref": "Act.7.23"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲכַם־לֵב",
+            "gloss": "wise of heart: skilled, wise",
+            "evidence": [
+              {
+                "ref": "Exo.31.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.28.3"
+              },
+              {
+                "ref": "Exo.35.10"
+              },
+              {
+                "ref": "Pro.10.8"
+              },
+              {
+                "ref": "Pro.16.21"
+              },
+              {
+                "ref": "Job.37.24"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲסַר־לֵב",
+            "gloss": "lacking heart: without sense",
+            "evidence": [
+              {
+                "ref": "Pro.6.32",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.7.7"
+              },
+              {
+                "ref": "Pro.9.4"
+              },
+              {
+                "ref": "Pro.10.13"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּכָל־לֵב",
+            "gloss": "with all the heart: wholly",
+            "evidence": [
+              {
+                "ref": "Jer.3.10",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.8.23"
+              },
+              {
+                "ref": "Jer.24.7"
+              },
+              {
+                "ref": "Psa.119.2"
+              },
+              {
+                "ref": "Psa.119.10"
+              },
+              {
+                "ref": "Pro.3.5"
+              },
+              {
+                "ref": "Zep.3.14"
+              }
+            ]
+          },
+          {
+            "phrase": "גָּנַב לֵב",
+            "gloss": "steal the heart: deceive; win over by stealth",
+            "evidence": [
+              {
+                "ref": "Gen.31.20",
+                "role": "defining",
+                "note": "Jacob “stole the heart of Laban” by not telling him that he fled."
+              },
+              {
+                "ref": "2Sa.15.6",
+                "role": "defining",
+                "note": "Absalom “stole the heart of the men of Israel”."
+              }
+            ]
+          },
+          {
+            "phrase": "לֵב וָלֵב",
+            "gloss": "a heart and a heart: a double heart",
+            "evidence": [
+              {
+                "ref": "Psa.12.3",
+                "role": "defining",
+                "note": "“With a smooth lip, with a heart and a heart they speak.”"
+              },
+              {
+                "ref": "1Ch.12.34",
+                "note": "Zebulun kept rank “without a heart and a heart”."
+              }
+            ]
+          },
+          {
+            "phrase": "לֵב אֶחָד",
+            "gloss": "one heart: a single mind and purpose",
+            "evidence": [
+              {
+                "ref": "Jer.32.39",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.11.19"
+              },
+              {
+                "ref": "2Ch.30.12"
+              },
+              {
+                "ref": "1Ch.12.39"
+              }
+            ]
+          },
+          {
+            "phrase": "נִשְׁבְּרֵי־לֵב",
+            "gloss": "the broken of heart",
+            "evidence": [
+              {
+                "ref": "Psa.34.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.147.3"
+              },
+              {
+                "ref": "Isa.61.1"
+              },
+              {
+                "ref": "Luk.4.18"
+              }
+            ]
+          },
+          {
+            "phrase": "טוֹב לֵב",
+            "gloss": "good of heart: merry",
+            "evidence": [
+              {
+                "ref": "Pro.15.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.16.25"
+              },
+              {
+                "ref": "1Sa.25.36"
+              },
+              {
+                "ref": "2Sa.13.28"
+              },
+              {
+                "ref": "Est.5.9"
+              },
+              {
+                "ref": "1Ki.8.66"
+              },
+              {
+                "ref": "Ecc.9.7"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁרִרוּת לֵב",
+            "gloss": "stubbornness of heart",
+            "evidence": [
+              {
+                "ref": "Jer.7.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.18.12"
+              },
+              {
+                "ref": "Jer.13.10"
+              },
+              {
+                "ref": "Jer.16.12"
+              },
+              {
+                "ref": "Jer.23.17"
+              },
+              {
+                "ref": "Deu.29.18"
+              },
+              {
+                "ref": "Psa.81.13"
+              }
+            ]
+          },
+          {
+            "phrase": "יִשְׁרֵי־לֵב",
+            "gloss": "the upright of heart",
+            "evidence": [
+              {
+                "ref": "Psa.7.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.11.2"
+              },
+              {
+                "ref": "Psa.32.11"
+              },
+              {
+                "ref": "Psa.36.11"
+              },
+              {
+                "ref": "Psa.64.11"
+              },
+              {
+                "ref": "Psa.94.15"
+              },
+              {
+                "ref": "Psa.97.11"
+              }
+            ]
+          },
+          {
+            "phrase": "לֵב קָמָי",
+            "gloss": "“the heart of those who rise against me”: a cipher for כַּשְׂדִּים, the Chaldeans",
+            "evidence": [
+              {
+                "ref": "Jer.51.1",
+                "role": "defining",
+                "note": "Set beside Babylon. Read by the alphabet reversed (א for ת, ב for שׁ), ל ב ק מ י is כ שׂ ד י ם, as שֵׁשַׁךְ is בָּבֶל."
+              },
+              {
+                "ref": "Jer.51.41",
+                "note": "Sheshach beside Babylon: the same cipher."
+              },
+              {
+                "ref": "Jer.25.26"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "לֵבָב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "heart; mind, will, feeling",
+      "bdb": [
+        "l.ai.ab"
+      ],
+      "cognate_ids": [
+        "akk-libbu",
+        "uga-lb",
+        "phn-lb",
+        "sem-lb",
+        "gez-lebb",
+        "ar-lubb",
+        "arc-libba",
+        "syc-lebba"
+      ],
+      "summary": "The longer form, about 250 times, with the same range as לֵב and often beside it. It is the form of “with all your heart and with all your soul” in Deuteronomy and of the “whole heart” (לֵבָב שָׁלֵם) of Kings and Chronicles. Its plural לְבָבוֹת is found once (1Ch 28:9). The brief’s count for this key includes a few tokens of שָׁלֵם filed with it by the phrase לֵבָב שָׁלֵם.",
+      "senses": [
+        {
+          "id": "levav-inner",
+          "gloss": "the inner man, which Yahweh sees",
+          "definition": "What a man is within, set against his appearance: man looks at the eyes, Yahweh at the heart, and he alone knows it.",
+          "kin": [
+            "lev-inner",
+            "syc-heart-searched"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.16.7",
+              "role": "defining",
+              "note": "“Man looks at the eyes, but Yahweh looks at the לֵבָב.”"
+            },
+            {
+              "ref": "1Ki.8.39",
+              "role": "defining",
+              "note": "“You know his heart; for you alone know the heart of all the sons of man.”"
+            },
+            {
+              "ref": "Deu.8.2",
+              "role": "defining",
+              "note": "Forty years in the wilderness, “to test you, to know what was in your heart”."
+            },
+            {
+              "ref": "2Ch.32.31",
+              "note": "God left Hezekiah, “to test him, to know all that was in his heart”."
+            },
+            {
+              "ref": "1Ch.28.9",
+              "note": "“Yahweh searches all hearts (לְבָבוֹת).”"
+            },
+            {
+              "ref": "1Ch.29.17"
+            },
+            {
+              "ref": "Psa.139.23",
+              "note": "“Search me, O God, and know my heart.”"
+            },
+            {
+              "ref": "Psa.28.3",
+              "note": "They speak peace with their neighbours, “and evil is in their heart”."
+            },
+            {
+              "ref": "1Ki.10.2",
+              "note": "The queen of Sheba spoke with Solomon “all that was in her heart”."
+            },
+            {
+              "ref": "Luk.16.15",
+              "note": "“God knows your hearts.”"
+            }
+          ]
+        },
+        {
+          "id": "levav-organ",
+          "gloss": "the heart in the breast",
+          "definition": "The bodily heart: beaten upon in mourning, sustained by bread, failing with the flesh.",
+          "kin": [
+            "lev-organ"
+          ],
+          "evidence": [
+            {
+              "ref": "Nam.2.8",
+              "role": "defining",
+              "note": "Her maids moan like doves, “beating upon their hearts”: their breasts."
+            },
+            {
+              "ref": "Psa.104.15",
+              "role": "defining",
+              "note": "“Wine gladdens the heart of man … and bread sustains the heart of man.”"
+            },
+            {
+              "ref": "Psa.73.26",
+              "role": "defining",
+              "note": "“My flesh and my heart fail.”"
+            },
+            {
+              "ref": "Jdg.19.8",
+              "note": "“Sustain your heart”, by eating."
+            },
+            {
+              "ref": "Isa.1.5",
+              "note": "“The whole head is sick, and the whole heart faint.”"
+            }
+          ]
+        },
+        {
+          "id": "levav-thought",
+          "gloss": "thought: what one says and plans within",
+          "definition": "A man says in his heart what he thinks, and plans there.",
+          "kin": [
+            "lev-thought",
+            "arc-heart-thoughts",
+            "syc-heart-thought"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.8.17",
+              "role": "defining",
+              "note": "“You say in your heart, My power and the might of my hand have made me this wealth.”"
+            },
+            {
+              "ref": "Isa.10.7",
+              "role": "defining",
+              "note": "The Assyrian “does not mean so, nor does his heart think so; but it is in his heart to destroy”."
+            },
+            {
+              "ref": "Deu.7.17"
+            },
+            {
+              "ref": "Deu.9.4",
+              "note": "“Do not say in your heart”; taken up in Rom 10:6."
+            },
+            {
+              "ref": "Deu.18.21"
+            },
+            {
+              "ref": "Isa.14.13",
+              "note": "The king of Babylon: “you said in your heart, I will ascend to the heavens”."
+            },
+            {
+              "ref": "Isa.47.8"
+            },
+            {
+              "ref": "Isa.49.21"
+            },
+            {
+              "ref": "Zep.1.12"
+            },
+            {
+              "ref": "Zep.2.15"
+            },
+            {
+              "ref": "Psa.15.2",
+              "note": "He “speaks truth in his heart”."
+            },
+            {
+              "ref": "Psa.4.5",
+              "note": "“Speak in your heart on your bed, and be silent.”"
+            },
+            {
+              "ref": "Psa.77.7"
+            },
+            {
+              "ref": "Zec.8.17",
+              "note": "“Let none of you devise evil in your heart against his neighbour.”"
+            },
+            {
+              "ref": "Ezk.38.10",
+              "note": "“Things shall come up on your heart, and you shall devise an evil device.”"
+            },
+            {
+              "ref": "1Ch.29.18",
+              "note": "“The inclination of the thoughts of the heart of your people”, as Gen 6:5."
+            }
+          ]
+        },
+        {
+          "id": "levav-understanding",
+          "gloss": "understanding; attention and memory",
+          "definition": "The heart that knows and understands: “men of heart” are men of understanding, and words are laid on the heart to be kept.",
+          "kin": [
+            "lev-understanding",
+            "arc-heart-kept",
+            "syc-heart-thought"
+          ],
+          "cognate_ids": [
+            "akk-libbu",
+            "uga-lb",
+            "phn-lb",
+            "gez-lebb",
+            "ar-lubb",
+            "ar-labba",
+            "arc-libba",
+            "syc-lebba"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.12.3",
+              "role": "defining",
+              "note": "“I have a heart as well as you; I am not inferior to you”: understanding."
+            },
+            {
+              "ref": "Job.34.10",
+              "role": "defining",
+              "note": "“Men of heart, listen to me”; in 34:34 beside “a wise man”."
+            },
+            {
+              "ref": "Job.34.34"
+            },
+            {
+              "ref": "Deu.4.39",
+              "role": "defining",
+              "note": "“Know this day, and bring it back to your heart, that Yahweh is God.”"
+            },
+            {
+              "ref": "Deu.6.6",
+              "note": "“These words shall be on your heart.”"
+            },
+            {
+              "ref": "Deu.11.18"
+            },
+            {
+              "ref": "Deu.4.9",
+              "note": "“Lest they depart from your heart all the days of your life”: be forgotten."
+            },
+            {
+              "ref": "Deu.8.5",
+              "note": "“Know with your heart.”"
+            },
+            {
+              "ref": "Deu.32.46"
+            },
+            {
+              "ref": "Psa.90.12",
+              "note": "“Teach us to number our days, that we may get a heart of wisdom.”"
+            },
+            {
+              "ref": "Isa.6.10",
+              "note": "“Lest its heart understand.”"
+            },
+            {
+              "ref": "Isa.32.4",
+              "note": "“The heart of the hasty shall understand knowledge.”"
+            },
+            {
+              "ref": "Job.9.4",
+              "note": "God is “wise of heart and mighty in strength”."
+            },
+            {
+              "ref": "Deu.28.28",
+              "note": "“Astonishment of heart”, beside madness and blindness."
+            },
+            {
+              "ref": "Job.22.22",
+              "note": "“Lay up his words in your heart.”"
+            },
+            {
+              "ref": "1Sa.21.13",
+              "note": "David “laid these words in his heart”."
+            },
+            {
+              "ref": "Ezk.3.10"
+            },
+            {
+              "ref": "Hag.1.5",
+              "note": "“Set your heart on your ways”: consider them."
+            },
+            {
+              "ref": "Pro.4.21"
+            },
+            {
+              "ref": "Deu.30.14",
+              "note": "“The word is very near you, in your mouth and in your heart”; quoted in Rom 10:8."
+            }
+          ]
+        },
+        {
+          "id": "levav-will",
+          "gloss": "will, purpose; the whole or divided heart",
+          "definition": "The heart that purposes and chooses: it is with a man’s heart to do a thing, it is turned aside or hardened, and Yahweh asks for all of it.",
+          "kin": [
+            "lev-will",
+            "syc-heart-will"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.6.5",
+              "role": "defining",
+              "note": "“You shall love Yahweh your God with all your heart and with all your soul and with all your strength”; quoted in Mat 22:37, Mrk 12:30, Luk 10:27."
+            },
+            {
+              "ref": "1Ki.8.17",
+              "role": "defining",
+              "note": "“It was with the heart of David my father to build a house”: his purpose."
+            },
+            {
+              "ref": "1Ki.8.61",
+              "role": "defining",
+              "note": "“Let your heart be whole (שָׁלֵם) with Yahweh our God.”"
+            },
+            {
+              "ref": "1Ki.11.4",
+              "note": "Solomon’s wives turned away his heart, “and his heart was not whole with Yahweh”."
+            },
+            {
+              "ref": "1Ki.15.14"
+            },
+            {
+              "ref": "2Ch.16.9",
+              "note": "Yahweh shows himself strong for “those whose heart is whole toward him”."
+            },
+            {
+              "ref": "2Ch.25.2",
+              "note": "Amaziah did right, “only not with a whole heart”."
+            },
+            {
+              "ref": "Deu.10.12"
+            },
+            {
+              "ref": "Deu.30.2"
+            },
+            {
+              "ref": "Jos.22.5"
+            },
+            {
+              "ref": "1Sa.12.24"
+            },
+            {
+              "ref": "Jer.29.13",
+              "note": "“You shall seek me and find me, when you search for me with all your heart.”"
+            },
+            {
+              "ref": "Jol.2.12"
+            },
+            {
+              "ref": "1Sa.7.3",
+              "note": "“Direct your heart to Yahweh and serve him only.”"
+            },
+            {
+              "ref": "Ezr.7.10",
+              "note": "Ezra “had set his heart to seek the law of Yahweh, and to do it, and to teach”."
+            },
+            {
+              "ref": "2Ch.11.16"
+            },
+            {
+              "ref": "1Sa.13.14",
+              "note": "“A man according to his heart”: of David; quoted in Act 13:22."
+            },
+            {
+              "ref": "1Sa.14.7",
+              "note": "“Do all that is in your heart.”"
+            },
+            {
+              "ref": "2Sa.7.3"
+            },
+            {
+              "ref": "Deu.2.30",
+              "note": "Yahweh “made his heart strong”: Sihon’s."
+            },
+            {
+              "ref": "Deu.15.7",
+              "note": "“You shall not harden your heart nor shut your hand from your poor brother.”"
+            },
+            {
+              "ref": "Psa.95.8",
+              "note": "“Do not harden your heart, as at Meribah”; quoted in Heb 3:8."
+            },
+            {
+              "ref": "2Ch.36.13"
+            },
+            {
+              "ref": "Deu.30.17",
+              "note": "“If your heart turns away.”"
+            },
+            {
+              "ref": "Deu.17.17"
+            },
+            {
+              "ref": "1Ki.8.58",
+              "note": "“That he may incline our heart to him.”"
+            },
+            {
+              "ref": "Psa.86.11",
+              "note": "“Unite my heart to fear your name.”"
+            },
+            {
+              "ref": "2Ki.10.15",
+              "note": "“Is your heart right, as my heart is with your heart?”"
+            }
+          ]
+        },
+        {
+          "id": "levav-feeling",
+          "gloss": "feeling: gladness, sorrow, anger, desire",
+          "definition": "The heart that is glad or sorrowful, hot with anger, or desiring.",
+          "kin": [
+            "lev-feeling",
+            "syc-heart-feeling"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.28.47",
+              "role": "defining",
+              "note": "“With joy and with gladness of heart (טוּב לֵבָב).”"
+            },
+            {
+              "ref": "Psa.13.3",
+              "role": "defining",
+              "note": "“Sorrow in my heart all the day.”"
+            },
+            {
+              "ref": "Deu.19.6",
+              "role": "defining",
+              "note": "The avenger of blood pursues “while his heart is hot”."
+            },
+            {
+              "ref": "Isa.30.29"
+            },
+            {
+              "ref": "Jer.15.16",
+              "note": "“Your words were the joy and gladness of my heart.”"
+            },
+            {
+              "ref": "1Sa.1.8",
+              "note": "“Why is your heart sad?”"
+            },
+            {
+              "ref": "Psa.25.17",
+              "note": "“The troubles of my heart.”"
+            },
+            {
+              "ref": "Psa.73.21",
+              "note": "“My heart was embittered.”"
+            },
+            {
+              "ref": "Lev.19.17",
+              "note": "“You shall not hate your brother in your heart.”"
+            },
+            {
+              "ref": "Pro.6.25",
+              "note": "“Do not desire her beauty in your heart.”"
+            },
+            {
+              "ref": "Psa.62.9",
+              "note": "“Pour out your heart before him.”"
+            },
+            {
+              "ref": "Isa.60.5",
+              "note": "“Your heart shall tremble and be enlarged.”"
+            }
+          ]
+        },
+        {
+          "id": "levav-courage",
+          "gloss": "courage, or its loss",
+          "definition": "The heart melts, is soft or faint in fear, and is strong in courage.",
+          "kin": [
+            "lev-courage",
+            "syc-take-heart",
+            "syc-hearten"
+          ],
+          "cognate_ids": [
+            "akk-libbu",
+            "arc-labbev",
+            "syc-lebba"
+          ],
+          "evidence": [
+            {
+              "ref": "Jos.2.11",
+              "role": "defining",
+              "note": "“We heard, and our heart melted, and no spirit rose any more in any man because of you.”"
+            },
+            {
+              "ref": "Deu.20.8",
+              "role": "defining",
+              "note": "“Who is the man that is afraid and soft of heart (רַךְ הַלֵּבָב)? Let him go home, lest his brothers’ heart melt as his heart.”"
+            },
+            {
+              "ref": "Psa.31.25",
+              "role": "defining",
+              "note": "“Be strong, and let your heart take courage.”"
+            },
+            {
+              "ref": "Jos.5.1"
+            },
+            {
+              "ref": "Jos.7.5",
+              "note": "“The heart of the people melted and became as water.”"
+            },
+            {
+              "ref": "Deu.1.28"
+            },
+            {
+              "ref": "Deu.20.3"
+            },
+            {
+              "ref": "Lev.26.36",
+              "note": "“I will bring faintness into their heart”: the sound of a driven leaf shall chase them."
+            },
+            {
+              "ref": "Deu.28.67"
+            },
+            {
+              "ref": "Isa.7.2",
+              "note": "The heart of Ahaz and of his people shook “as the trees of the forest shake before the wind”."
+            },
+            {
+              "ref": "Isa.7.4"
+            },
+            {
+              "ref": "Isa.13.7"
+            },
+            {
+              "ref": "Isa.19.1"
+            },
+            {
+              "ref": "Isa.21.4"
+            },
+            {
+              "ref": "2Ch.13.7",
+              "note": "Rehoboam was “young and soft of heart”."
+            },
+            {
+              "ref": "Dan.11.25",
+              "note": "“He shall stir up his power and his heart against the king of the south.”"
+            }
+          ]
+        },
+        {
+          "id": "levav-conscience",
+          "gloss": "the heart that accuses or acquits",
+          "definition": "A man’s own knowledge of his deeds: integrity of heart, a heart that knows its evil, or does not reproach.",
+          "kin": [
+            "lev-conscience",
+            "syc-heart-conscience"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.27.6",
+              "role": "defining",
+              "note": "“My heart does not reproach any of my days.”"
+            },
+            {
+              "ref": "1Ki.2.44",
+              "role": "defining",
+              "note": "“You know all the evil which your heart knows, that you did to David.”"
+            },
+            {
+              "ref": "Gen.20.5",
+              "role": "defining",
+              "note": "Abimelech: “in the integrity of my heart (בְּתָם־לְבָבִי) and the innocence of my hands I did this”; God grants it in 20:6."
+            },
+            {
+              "ref": "Gen.20.6"
+            }
+          ]
+        },
+        {
+          "id": "levav-character",
+          "gloss": "the heart as pure, upright, proud or uncircumcised",
+          "definition": "What a man is morally: pure or upright of heart, lifted up in pride, or uncircumcised until it is humbled.",
+          "kin": [
+            "lev-character",
+            "arc-heart-proud",
+            "syc-heart-source"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.10.16",
+              "role": "defining",
+              "note": "“Circumcise the foreskin of your heart (עָרְלַת לְבַבְכֶם), and be no more stiff-necked.”"
+            },
+            {
+              "ref": "Psa.24.4",
+              "role": "defining",
+              "note": "Who shall stand in his holy place? “The clean of hands and pure of heart (בַר־לֵבָב).”"
+            },
+            {
+              "ref": "Deu.8.14",
+              "role": "defining",
+              "note": "“Your heart is lifted up, and you forget Yahweh your God.”"
+            },
+            {
+              "ref": "Deu.30.6",
+              "note": "“Yahweh your God will circumcise your heart.”"
+            },
+            {
+              "ref": "Jer.4.4"
+            },
+            {
+              "ref": "Lev.26.41",
+              "note": "“If then their uncircumcised heart is humbled.”"
+            },
+            {
+              "ref": "Psa.73.1",
+              "note": "God is good “to the pure of heart”."
+            },
+            {
+              "ref": "Psa.73.13"
+            },
+            {
+              "ref": "Deu.9.5",
+              "note": "“Not for your righteousness or the uprightness of your heart.”"
+            },
+            {
+              "ref": "1Ki.9.4",
+              "note": "David walked “in integrity of heart and in uprightness”."
+            },
+            {
+              "ref": "Psa.78.72"
+            },
+            {
+              "ref": "Psa.101.2"
+            },
+            {
+              "ref": "Psa.101.4",
+              "note": "“A perverse heart shall depart from me.”"
+            },
+            {
+              "ref": "Psa.101.5",
+              "note": "“Lofty of eyes and wide of heart”: proud."
+            },
+            {
+              "ref": "Deu.17.20",
+              "note": "The king reads the law, “that his heart be not lifted up above his brothers”."
+            },
+            {
+              "ref": "Ezk.28.5"
+            },
+            {
+              "ref": "Ezk.31.10"
+            },
+            {
+              "ref": "Isa.9.8",
+              "note": "“In pride and greatness of heart.”"
+            },
+            {
+              "ref": "Isa.10.12"
+            },
+            {
+              "ref": "Dan.8.25",
+              "note": "“In his heart he will magnify himself.”"
+            },
+            {
+              "ref": "Dan.11.12"
+            },
+            {
+              "ref": "Jol.2.13",
+              "note": "“Rend your heart and not your garments.”"
+            },
+            {
+              "ref": "Psa.95.10",
+              "note": "“A people who err in heart”; quoted in Heb 3:10."
+            },
+            {
+              "ref": "Ecc.9.3",
+              "note": "“Madness is in their heart while they live.”"
+            }
+          ]
+        },
+        {
+          "id": "levav-of-yahweh",
+          "gloss": "Yahweh’s own heart",
+          "definition": "Yahweh’s mind and purpose, which a faithful servant carries out.",
+          "kin": [
+            "lev-of-yahweh"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.2.35",
+              "role": "defining",
+              "note": "“A faithful priest, who shall do according to what is in my heart and in my soul.”"
+            },
+            {
+              "ref": "2Ki.10.30",
+              "role": "defining",
+              "note": "Jehu did to the house of Ahab “according to all that was in my heart”."
+            },
+            {
+              "ref": "1Sa.13.14",
+              "note": "“Yahweh has sought for himself a man according to his heart.”"
+            },
+            {
+              "ref": "Job.10.13",
+              "note": "“These things you hid in your heart.”"
+            }
+          ]
+        },
+        {
+          "id": "levav-midst",
+          "gloss": "the midst",
+          "definition": "The heart of the seas: their depth, far from land. Once.",
+          "kin": [
+            "lev-midst",
+            "syc-heart-midst"
+          ],
+          "cognate_ids": [
+            "akk-libbu",
+            "ar-lubb",
+            "gez-lebb",
+            "arc-libba"
+          ],
+          "evidence": [
+            {
+              "ref": "Jon.2.4",
+              "role": "defining",
+              "note": "“You cast me into the deep, into the heart of the seas (בִּלְבַב יַמִּים), and the flood surrounded me”; Jesus’ “heart of the earth” (Mat 12:40) answers to it."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καρδία",
+          "gloss": "heart",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.6.5, לְבָבְךָ → καρδίας; Psa.95.8 → καρδίας; Psa.95.10 → καρδίᾳ; 1Sa.13.14 → καρδίαν; Deu.9.4 → καρδίᾳ; Deu.30.14 → καρδίᾳ; Deu.30.6 → καρδίαν; καρδία renders לֵבָב ×200"
+            },
+            {
+              "ref": "Mat.22.37",
+              "role": "defining",
+              "note": "Deu 6:5: “with all your heart”."
+            },
+            {
+              "ref": "Mrk.12.30"
+            },
+            {
+              "ref": "Luk.10.27"
+            },
+            {
+              "ref": "Heb.3.8",
+              "role": "defining",
+              "note": "Psa 95:8: “do not harden your hearts”."
+            },
+            {
+              "ref": "Heb.3.10",
+              "note": "Psa 95:10: “they always go astray in heart”."
+            },
+            {
+              "ref": "Act.13.22",
+              "note": "1Sa 13:14: “a man according to my heart”."
+            },
+            {
+              "ref": "Rom.10.6",
+              "note": "Deu 9:4: “do not say in your heart”."
+            },
+            {
+              "ref": "Rom.10.8",
+              "note": "Deu 30:14: “in your mouth and in your heart”."
+            },
+            {
+              "ref": "Rom.2.29",
+              "note": "“Circumcision is of the heart”, from Deu 10:16 and 30:6."
+            },
+            {
+              "ref": "Act.7.51",
+              "note": "“Uncircumcised in heart”, as Lev 26:41."
+            },
+            {
+              "ref": "Mat.5.8",
+              "note": "“The pure in heart”, as Psa 24:4 and 73:1."
+            }
+          ]
+        },
+        {
+          "lemma": "διάνοια",
+          "gloss": "mind, understanding",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.19.17, בִּלְבָבֶךָ → τῇ διανοίᾳ; Deu.28.28 → διανοίας; Job.9.4 → διανοίᾳ (διάνοια renders לֵבָב ×3)"
+            },
+            {
+              "ref": "Mat.22.37",
+              "note": "Quoting Deu 6:5, “with all your διάνοια” stands beside “with all your heart”."
+            },
+            {
+              "ref": "Mrk.12.30"
+            },
+            {
+              "ref": "Luk.10.27"
+            }
+          ]
+        },
+        {
+          "lemma": "σκληροκαρδία",
+          "gloss": "hardness of heart",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.10.16, עָרְלַת לְבַבְכֶם → τὴν σκληροκαρδίαν ὑμῶν; Jer.4.4, עָרְלוֹת לְבַבְכֶם → τὴν σκληροκαρδίαν ὑμῶν (×2)"
+            },
+            {
+              "ref": "Mat.19.8",
+              "role": "defining",
+              "note": "Moses allowed divorce “because of your hardness of heart”."
+            },
+            {
+              "ref": "Mrk.10.5"
+            },
+            {
+              "ref": "Mrk.16.14",
+              "note": "Jesus rebuked the eleven for “unbelief and hardness of heart”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נֶפֶשׁ",
+            "note": "“Soul”: “with all your heart and with all your soul”.",
+            "evidence": [
+              {
+                "ref": "Deu.6.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.29"
+              },
+              {
+                "ref": "Deu.11.18"
+              },
+              {
+                "ref": "Jos.23.14"
+              },
+              {
+                "ref": "1Sa.2.35"
+              },
+              {
+                "ref": "1Ch.22.19"
+              },
+              {
+                "ref": "Psa.13.3"
+              },
+              {
+                "ref": "1Ki.8.48"
+              }
+            ]
+          },
+          {
+            "lemma": "כַּף",
+            "note": "“Palm, hand”: clean hands and a pure heart, the deed and the mind behind it.",
+            "evidence": [
+              {
+                "ref": "Psa.24.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.20.5"
+              },
+              {
+                "ref": "Psa.73.13"
+              },
+              {
+                "ref": "Psa.78.72"
+              },
+              {
+                "ref": "Lam.3.41"
+              }
+            ]
+          },
+          {
+            "lemma": "כִּלְיָה",
+            "note": "“Kidneys”.",
+            "evidence": [
+              {
+                "ref": "Psa.73.21",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּשָׂר",
+            "note": "“Flesh”: flesh and heart as the whole man.",
+            "evidence": [
+              {
+                "ref": "Psa.73.26",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עַיִן",
+            "note": "“Eye”, the outward appearance that man sees.",
+            "evidence": [
+              {
+                "ref": "1Sa.16.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּכָל־לְבָבְךָ וּבְכָל־נַפְשְׁךָ",
+            "gloss": "with all your heart and with all your soul",
+            "evidence": [
+              {
+                "ref": "Deu.6.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.29"
+              },
+              {
+                "ref": "Deu.10.12"
+              },
+              {
+                "ref": "Deu.11.13"
+              },
+              {
+                "ref": "Deu.13.4"
+              },
+              {
+                "ref": "Deu.26.16"
+              },
+              {
+                "ref": "Deu.30.2"
+              },
+              {
+                "ref": "Deu.30.6"
+              },
+              {
+                "ref": "Deu.30.10"
+              },
+              {
+                "ref": "Jos.22.5"
+              },
+              {
+                "ref": "1Ki.2.4"
+              },
+              {
+                "ref": "2Ki.23.25"
+              },
+              {
+                "ref": "Mat.22.37"
+              }
+            ]
+          },
+          {
+            "phrase": "לֵבָב שָׁלֵם",
+            "gloss": "a whole heart: undivided",
+            "evidence": [
+              {
+                "ref": "1Ki.8.61",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.11.4"
+              },
+              {
+                "ref": "1Ki.15.3"
+              },
+              {
+                "ref": "1Ki.15.14"
+              },
+              {
+                "ref": "2Ki.20.3"
+              },
+              {
+                "ref": "1Ch.28.9"
+              },
+              {
+                "ref": "1Ch.29.9"
+              },
+              {
+                "ref": "2Ch.16.9"
+              },
+              {
+                "ref": "2Ch.19.9"
+              },
+              {
+                "ref": "2Ch.25.2"
+              }
+            ]
+          },
+          {
+            "phrase": "אָמַר בִּלְבָבוֹ",
+            "gloss": "say in one’s heart: think",
+            "evidence": [
+              {
+                "ref": "Deu.8.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.7.17"
+              },
+              {
+                "ref": "Deu.9.4"
+              },
+              {
+                "ref": "Isa.14.13"
+              },
+              {
+                "ref": "Isa.47.8"
+              },
+              {
+                "ref": "Zep.2.15"
+              },
+              {
+                "ref": "Rom.10.6"
+              }
+            ]
+          },
+          {
+            "phrase": "עָרְלַת לֵבָב",
+            "gloss": "foreskin of the heart: its unresponsiveness to God",
+            "evidence": [
+              {
+                "ref": "Deu.10.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.4.4"
+              },
+              {
+                "ref": "Lev.26.41"
+              },
+              {
+                "ref": "Deu.30.6"
+              },
+              {
+                "ref": "Rom.2.29"
+              }
+            ]
+          },
+          {
+            "phrase": "תָּם־לֵבָב",
+            "gloss": "integrity of heart (also יֹשֶׁר לֵבָב, uprightness of heart)",
+            "evidence": [
+              {
+                "ref": "Gen.20.5",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.9.4"
+              },
+              {
+                "ref": "Psa.78.72"
+              },
+              {
+                "ref": "Psa.101.2"
+              },
+              {
+                "ref": "Deu.9.5"
+              },
+              {
+                "ref": "Psa.119.7"
+              }
+            ]
+          },
+          {
+            "phrase": "רַךְ הַלֵּבָב",
+            "gloss": "soft of heart: fearful",
+            "evidence": [
+              {
+                "ref": "Deu.20.8",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.13.7"
+              },
+              {
+                "ref": "Deu.20.3"
+              },
+              {
+                "ref": "Isa.7.4"
+              }
+            ]
+          },
+          {
+            "phrase": "נָמֵס לֵבָב",
+            "gloss": "the heart melts: courage fails",
+            "evidence": [
+              {
+                "ref": "Jos.2.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.5.1"
+              },
+              {
+                "ref": "Jos.7.5"
+              },
+              {
+                "ref": "Deu.20.8"
+              },
+              {
+                "ref": "Isa.13.7"
+              },
+              {
+                "ref": "Isa.19.1"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׂים לֵבָב",
+            "gloss": "set the heart on: consider",
+            "evidence": [
+              {
+                "ref": "Hag.1.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Hag.1.7"
+              },
+              {
+                "ref": "Hag.2.15"
+              },
+              {
+                "ref": "Hag.2.18"
+              },
+              {
+                "ref": "Deu.32.46"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "לְבַב",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "heart",
+      "bdb": [
+        "xl.ad.aa"
+      ],
+      "cognate_ids": [
+        "akk-libbu",
+        "uga-lb",
+        "phn-lb",
+        "sem-lb",
+        "gez-lebb",
+        "arc-libba",
+        "syc-lebba"
+      ],
+      "summary": "Daniel’s Aramaic, seven times (Dan 2:30; 4:13 twice; 5:20, 21, 22; 7:4), all of kings and of the beasts that stand for kingdoms. The key’s count of ten includes three Hebrew constructs לְבַב in Isaiah (7:2; 19:1; 32:4) filed with it by spelling.",
+      "senses": [
+        {
+          "id": "arc-heart-thoughts",
+          "gloss": "the heart that thinks",
+          "definition": "The heart as the seat of a man’s thoughts.",
+          "kin": [
+            "lev-thought",
+            "levav-thought",
+            "lev-inner"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.30",
+              "role": "defining",
+              "note": "The secret is revealed “that you may know the thoughts of your heart (רַעְיוֹנֵי לִבְבָךְ)”."
+            }
+          ]
+        },
+        {
+          "id": "arc-heart-nature",
+          "gloss": "the heart of a man or of a beast: the mind that makes him one",
+          "definition": "A man’s heart is the understanding that sets him apart from the beasts: Nebuchadnezzar’s is changed for a beast’s until he knows that the Most High rules, and the lion of the first kingdom is given a man’s.",
+          "kin": [
+            "lev-understanding",
+            "levav-understanding"
+          ],
+          "cognate_ids": [
+            "akk-libbu",
+            "uga-lb",
+            "phn-lb",
+            "gez-lebb",
+            "arc-libba",
+            "syc-lebba"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.4.13",
+              "role": "defining",
+              "note": "“Let his heart be changed from a man’s, and let the heart of a beast be given him.”"
+            },
+            {
+              "ref": "Dan.5.21",
+              "role": "defining",
+              "note": "“His heart was made like the beasts’ … until he knew that the Most High God rules in the kingdom of men.”"
+            },
+            {
+              "ref": "Dan.7.4",
+              "role": "defining",
+              "note": "The lion was made to stand on two feet as a man, “and the heart of a man was given to it”."
+            }
+          ]
+        },
+        {
+          "id": "arc-heart-proud",
+          "gloss": "the heart lifted up or humbled",
+          "definition": "The heart as proud or humble before God.",
+          "kin": [
+            "lev-character",
+            "levav-character"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.5.20",
+              "role": "defining",
+              "note": "“When his heart was lifted up (רִם לִבְבֵהּ) and his spirit grew strong to act proudly, he was put down from the throne.”"
+            },
+            {
+              "ref": "Dan.5.22",
+              "role": "defining",
+              "note": "“You, Belshazzar, have not humbled your heart, though you knew all this.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לֵב",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "heart",
+      "bdb": [
+        "xl.ad.ab"
+      ],
+      "cognate_ids": [
+        "akk-libbu",
+        "uga-lb",
+        "phn-lb",
+        "sem-lb",
+        "gez-lebb",
+        "arc-libba",
+        "syc-lebba"
+      ],
+      "summary": "The shorter Aramaic form, once, with a suffix (בְּלִבִּי, Dan 7:28). One use, fixed by its context and by the Hebrew and Syriac idiom of keeping a matter in the heart. The key’s count of seven is inflated by other tokens filed with it by spelling; Dan 7:28 is its one use.",
+      "senses": [
+        {
+          "id": "arc-heart-kept",
+          "gloss": "the heart where a matter is kept",
+          "definition": "The heart as memory and thought: Daniel keeps the vision to himself and turns it over.",
+          "kin": [
+            "lev-understanding",
+            "levav-understanding",
+            "syc-heart-thought"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.7.28",
+              "role": "defining",
+              "note": "“My thoughts troubled me greatly … but I kept the matter in my heart (וּמִלְּתָא בְּלִבִּי נִטְרֵת).”"
+            },
+            {
+              "ref": "Luk.2.19",
+              "note": "The same idiom: Mary “kept all these words, pondering them in her heart”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לִבָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "heart",
+      "bdb": [
+        "l.ai.ad"
+      ],
+      "cognate_ids": [
+        "akk-libbu",
+        "arc-libba",
+        "syc-lebba",
+        "gez-lebb"
+      ],
+      "summary": "A feminine form found once in the singular (לִבָּתֵךְ, Ezk 16:30). The plural לִבּוֹת, six times (Psa 7:10; 125:4; Pro 15:11; 17:3; 21:2; 24:12), is counted under this key but may as well be the plural of לֵב, which has no other; almost all are of Yahweh trying hearts.",
+      "senses": [
+        {
+          "id": "libbah-heart",
+          "gloss": "heart, as what God tries",
+          "definition": "The heart as a person’s moral state, weak or upright, which Yahweh examines.",
+          "kin": [
+            "lev-character",
+            "lev-inner",
+            "levav-inner"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.16.30",
+              "role": "defining",
+              "note": "Of Jerusalem the harlot: “How weak is your heart (לִבָּתֵךְ), that you do all these things.”"
+            },
+            {
+              "ref": "Pro.17.3",
+              "role": "defining",
+              "note": "“The refining pot for silver and the furnace for gold, and Yahweh tries hearts (לִבּוֹת).”"
+            },
+            {
+              "ref": "Pro.21.2",
+              "note": "“Yahweh weighs hearts.”"
+            },
+            {
+              "ref": "Pro.24.12"
+            },
+            {
+              "ref": "Psa.7.10",
+              "note": "“The righteous God tries hearts and kidneys.”"
+            },
+            {
+              "ref": "Pro.15.11",
+              "note": "The grave and destruction are before Yahweh; “how much more the hearts of the sons of man”."
+            },
+            {
+              "ref": "Psa.125.4",
+              "note": "“The upright in their hearts.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לִבֵּב",
+      "pos": "verb",
+      "gloss": "(niphal) get a heart; (piel) take hold of the heart; make heart-cakes",
+      "bdb": [
+        "l.ai.af"
+      ],
+      "summary": "A verb made from the noun, five times in three places. The same five tokens are also filed under l.ai.ah (“make cakes”); they are counted here once. Each stem has one context, so each sense rests on little. The piel’s “make cakes” names no cognate as sharing its meaning (the Sabaic and Akkadian food words are possible only), so the root’s “heart” cognates count against it: its tie to the heart is through the noun לְבִבָה, and that tie is not explained by scripture.",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "get a heart, get understanding",
+          "cognate_ids": [
+            "ar-labba"
+          ],
+          "senses": [
+            {
+              "id": "get-heart",
+              "gloss": "get a heart: become wise",
+              "definition": "To come to have a heart, that is understanding. Zophar’s proverb says a hollow man will get one when a wild ass’s colt is born a man, or as surely as it is.",
+              "kin": [
+                "lev-understanding",
+                "levav-understanding"
+              ],
+              "evidence": [
+                {
+                  "ref": "Job.11.12",
+                  "role": "defining",
+                  "note": "“A hollow man (אִישׁ נָבוּב) will get a heart (יִלָּבֵב), and a wild ass’s colt be born a man.” One use; the sense rests on the noun’s “heart” as understanding (Job 12:3 answers it: “I have a heart as well as you”)."
+                },
+                {
+                  "ref": "Job.12.3",
+                  "note": "Job’s reply takes up the word."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "take hold of the heart; make לְבִבוֹת",
+          "senses": [
+            {
+              "id": "take-heart-of",
+              "gloss": "take hold of someone’s heart",
+              "definition": "To do something to another’s heart: the bride has done it to the bridegroom with one look of her eyes. The verse allows “you have taken my heart” or “you have put heart into me”; Aramaic and Syriac use the same stem for “put heart into, encourage”.",
+              "kin": [
+                "lev-feeling",
+                "syc-hearten"
+              ],
+              "cognate_ids": [
+                "arc-labbev",
+                "syc-lebba"
+              ],
+              "evidence": [
+                {
+                  "ref": "Sng.4.9",
+                  "role": "defining",
+                  "note": "“You have לִבַּבְתִּנִי, my sister, my bride; you have לִבַּבְתִּנִי with one of your eyes, with one chain of your necklace.” The only context."
+                }
+              ]
+            },
+            {
+              "id": "make-cakes",
+              "gloss": "make לְבִבוֹת, cakes",
+              "definition": "To make the cakes called לְבִבוֹת: Tamar takes dough, kneads it, makes them in Amnon’s sight and cooks them.",
+              "kin": [
+                "levivah-cakes"
+              ],
+              "cognate_ids": [
+                "sem-lbbm",
+                "akk-libbu-bread"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Sa.13.6",
+                  "role": "defining",
+                  "note": "“Let Tamar my sister come and make (וּתְלַבֵּב) two cakes in my sight.”"
+                },
+                {
+                  "ref": "2Sa.13.8",
+                  "role": "defining",
+                  "note": "“She took the dough and kneaded it and made cakes (וַתְּלַבֵּב) in his sight, and cooked the cakes.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְבִבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "cake (of kneaded dough, cooked in a pan)",
+      "bdb": [
+        "l.ai.ag"
+      ],
+      "cognate_ids": [
+        "sem-lbbm",
+        "akk-libbu-bread"
+      ],
+      "summary": "Only in the plural לְבִבוֹת and only in 2Sa 13, of the food Tamar made for Amnon. How it comes from “heart” is not clear from scripture: it may be named from its shape, or as food that sustains the heart of the sick (Amnon asks to be fed, אֶבְרֶה, 13:6, and bread “sustains the heart”, Psa 104:15; Jdg 19:5). Sabaic lbbm, a food listed with honey, and an Akkadian bread called libbu may be the same word, but both are uncertain, so no cognate is counted as sharing its meaning and the root’s “heart” cognates stand against it.",
+      "senses": [
+        {
+          "id": "levivah-cakes",
+          "gloss": "cakes",
+          "definition": "Cakes made of kneaded dough, shaped, cooked and turned out of a pan, fit food for a sick man.",
+          "kin": [
+            "make-cakes"
+          ],
+          "evidence": [
+            {
+              "ref": "2Sa.13.6",
+              "role": "defining",
+              "note": "“Two לְבִבוֹת”, asked for by Amnon feigning sickness."
+            },
+            {
+              "ref": "2Sa.13.8",
+              "role": "defining",
+              "note": "Dough kneaded, made into cakes and cooked."
+            },
+            {
+              "ref": "2Sa.13.10",
+              "role": "defining",
+              "note": "“Tamar took the cakes that she had made and brought them to Amnon”; in 13:9 she had poured them out of the pan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לֶבָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "heart",
+      "cognate_ids": [
+        "syc-lebba",
+        "arc-libba",
+        "akk-libbu",
+        "uga-lb",
+        "phn-lb",
+        "gez-lebb"
+      ],
+      "summary": "The Peshitta’s ܠܒܐ (lebbā), 168 times in the New Testament, for καρδία throughout, with the Hebrew word’s whole range: thought, will, feeling, conscience, and the midst of the earth.",
+      "senses": [
+        {
+          "id": "syc-heart-thought",
+          "gloss": "the heart that thinks, understands and remembers",
+          "definition": "Thoughts and reasonings are in the heart; it understands or is dull, and keeps what it has heard.",
+          "kin": [
+            "lev-thought",
+            "lev-understanding",
+            "levav-thought",
+            "levav-understanding",
+            "arc-heart-kept"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.9.4",
+              "role": "defining",
+              "note": "“Why do you think evil in your heart?”"
+            },
+            {
+              "ref": "Mrk.2.8",
+              "role": "defining",
+              "note": "“Why do you reason these things in your heart?”"
+            },
+            {
+              "ref": "Mat.13.15",
+              "role": "defining",
+              "note": "Isa 6:10: “lest they understand with their heart”."
+            },
+            {
+              "ref": "Luk.2.19",
+              "note": "Mary kept these words, pondering them in her heart."
+            },
+            {
+              "ref": "Luk.2.51"
+            },
+            {
+              "ref": "Luk.1.51",
+              "note": "“The imagination of their heart.”"
+            },
+            {
+              "ref": "Luk.24.25",
+              "note": "“Slow of heart to believe.”"
+            },
+            {
+              "ref": "Luk.24.38",
+              "note": "“Why do thoughts arise in your hearts?”"
+            },
+            {
+              "ref": "Act.7.23",
+              "note": "“It came up on his heart to visit his brothers”: the Hebrew idiom."
+            },
+            {
+              "ref": "1Co.2.9"
+            },
+            {
+              "ref": "Rom.1.21",
+              "note": "“Their heart, without understanding, was darkened.”"
+            },
+            {
+              "ref": "Heb.4.12",
+              "note": "The word of God judges the thoughts and intents of the heart."
+            },
+            {
+              "ref": "Eph.1.18",
+              "note": "“The eyes of your hearts enlightened.”"
+            },
+            {
+              "ref": "Heb.8.10",
+              "note": "Jer 31:33: the law written on their hearts."
+            }
+          ]
+        },
+        {
+          "id": "syc-heart-source",
+          "gloss": "the heart as the source of word and deed",
+          "definition": "What a man says and does comes out of his heart, good or evil; so the heart is what he is.",
+          "kin": [
+            "lev-inner",
+            "lev-character",
+            "levav-character"
+          ],
+          "evidence": [
+            {
+              "ref": "Mrk.7.21",
+              "role": "defining",
+              "note": "“From within, out of the heart of men, come evil thoughts, adulteries, fornications, thefts, murders.”"
+            },
+            {
+              "ref": "Mat.15.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.15.18",
+              "note": "“What comes out of the mouth comes from the heart, and that defiles the man.”"
+            },
+            {
+              "ref": "Mat.12.34",
+              "role": "defining",
+              "note": "“Out of the abundance of the heart the mouth speaks.”"
+            },
+            {
+              "ref": "Luk.6.45",
+              "note": "The good man out of the good treasure of his heart, the evil man out of the evil."
+            },
+            {
+              "ref": "Mat.5.8",
+              "note": "“Blessed are the pure in heart.”"
+            },
+            {
+              "ref": "Mat.5.28",
+              "note": "Adultery committed “in his heart”."
+            },
+            {
+              "ref": "Mat.15.8",
+              "note": "Isa 29:13: lips that honour, a heart far off."
+            },
+            {
+              "ref": "Luk.8.15",
+              "note": "The good ground: those who hear the word with a good heart and keep it."
+            },
+            {
+              "ref": "Act.8.21",
+              "note": "“Your heart is not right before God.”"
+            },
+            {
+              "ref": "Heb.3.12",
+              "note": "“An evil heart of unbelief.”"
+            },
+            {
+              "ref": "1Ti.1.5",
+              "note": "“Love out of a pure heart.”"
+            },
+            {
+              "ref": "1Pe.3.4",
+              "note": "“The hidden man of the heart.”"
+            }
+          ]
+        },
+        {
+          "id": "syc-heart-will",
+          "gloss": "the heart that believes, obeys or is hardened",
+          "definition": "Faith and obedience are of the heart, and unbelief is its hardness.",
+          "kin": [
+            "lev-will",
+            "levav-will"
+          ],
+          "evidence": [
+            {
+              "ref": "Rom.10.10",
+              "role": "defining",
+              "note": "“With the heart man believes to righteousness.”"
+            },
+            {
+              "ref": "Rom.10.9"
+            },
+            {
+              "ref": "Mat.22.37",
+              "role": "defining",
+              "note": "Deu 6:5: “with all your heart”."
+            },
+            {
+              "ref": "Mrk.11.23",
+              "note": "“And does not doubt in his heart.”"
+            },
+            {
+              "ref": "Mat.19.8",
+              "note": "“Because of the hardness of your heart.”"
+            },
+            {
+              "ref": "Mrk.3.5"
+            },
+            {
+              "ref": "Mrk.6.52",
+              "note": "“Their heart was hardened.”"
+            },
+            {
+              "ref": "Heb.3.8",
+              "note": "Psa 95:8."
+            },
+            {
+              "ref": "Rom.2.5"
+            },
+            {
+              "ref": "Act.7.51",
+              "note": "“Uncircumcised in heart.”"
+            },
+            {
+              "ref": "Rom.2.29",
+              "note": "“Circumcision is of the heart.”"
+            },
+            {
+              "ref": "Rom.6.17",
+              "note": "“You obeyed from the heart.”"
+            },
+            {
+              "ref": "Act.11.23"
+            },
+            {
+              "ref": "Act.16.14",
+              "note": "The Lord opened Lydia’s heart to attend to what Paul said."
+            },
+            {
+              "ref": "Act.5.4",
+              "note": "“Why did you set this thing in your heart?”"
+            }
+          ]
+        },
+        {
+          "id": "syc-heart-feeling",
+          "gloss": "the heart that is troubled, grieved or glad",
+          "definition": "The heart as the seat of sorrow, joy and fear.",
+          "kin": [
+            "lev-feeling",
+            "levav-feeling"
+          ],
+          "evidence": [
+            {
+              "ref": "Jhn.14.1",
+              "role": "defining",
+              "note": "“Let not your heart be troubled.”"
+            },
+            {
+              "ref": "Jhn.16.6",
+              "role": "defining",
+              "note": "“Sorrow has filled your heart.”"
+            },
+            {
+              "ref": "Jhn.16.22",
+              "note": "“Your heart shall rejoice.”"
+            },
+            {
+              "ref": "Jhn.14.27"
+            },
+            {
+              "ref": "Act.2.26",
+              "note": "Psa 16:9: “my heart was glad”."
+            },
+            {
+              "ref": "Act.2.37",
+              "note": "“They were pricked in their heart.”"
+            },
+            {
+              "ref": "Rom.9.2",
+              "note": "“Unceasing pain in my heart.”"
+            },
+            {
+              "ref": "Act.14.17",
+              "note": "God filled their hearts with food and gladness."
+            }
+          ]
+        },
+        {
+          "id": "syc-heart-conscience",
+          "gloss": "the heart that condemns or does not",
+          "definition": "The heart as a man’s own witness against or for himself.",
+          "kin": [
+            "lev-conscience",
+            "levav-conscience"
+          ],
+          "evidence": [
+            {
+              "ref": "1Jn.3.20",
+              "role": "defining",
+              "note": "“If our heart condemns us, God is greater than our heart and knows all things.”"
+            },
+            {
+              "ref": "1Jn.3.21"
+            },
+            {
+              "ref": "Rom.2.15",
+              "note": "The work of the law written on their heart, their conscience bearing witness."
+            },
+            {
+              "ref": "Heb.10.22",
+              "note": "“Our hearts sprinkled from an evil conscience.”"
+            }
+          ]
+        },
+        {
+          "id": "syc-heart-searched",
+          "gloss": "the heart that God knows and searches",
+          "definition": "The heart as what is hidden from men and open to God.",
+          "kin": [
+            "lev-inner",
+            "levav-inner",
+            "libbah-heart"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.16.15",
+              "role": "defining",
+              "note": "“You justify yourselves before men, but God knows your hearts.”"
+            },
+            {
+              "ref": "Act.1.24",
+              "role": "defining",
+              "note": "“You, Lord, who know the hearts of all.”"
+            },
+            {
+              "ref": "Act.15.8"
+            },
+            {
+              "ref": "Rom.8.27",
+              "note": "“He who searches the hearts.”"
+            },
+            {
+              "ref": "1Th.2.4"
+            },
+            {
+              "ref": "1Co.4.5",
+              "note": "The Lord at his coming “will reveal the thoughts of hearts”."
+            },
+            {
+              "ref": "1Co.14.25"
+            },
+            {
+              "ref": "Rev.2.23",
+              "note": "Jer 17:10: “I am he who searches kidneys and heart.”"
+            }
+          ]
+        },
+        {
+          "id": "syc-heart-midst",
+          "gloss": "the midst",
+          "definition": "The heart of the earth: within it, as Jonah was in the heart of the seas.",
+          "kin": [
+            "lev-midst",
+            "levav-midst"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.12.40",
+              "role": "defining",
+              "note": "“As Jonah was three days and three nights in the belly of the fish, so shall the son of man be three days and three nights in the heart of the earth”: in the tomb."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לַבֵּב",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "(pael) put heart into, encourage; (ethpaal) take heart",
+      "cognate_ids": [
+        "syc-lebba",
+        "arc-labbev"
+      ],
+      "summary": "The Peshitta’s verb made from “heart”, ten times: the ethpaal ܐܬܠܒܒ is Jesus’ “take heart!” (θάρσει), and the pael “encourage”. It shows the heart as courage, as Hebrew “let your heart be strong”.",
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "take heart, be of good courage",
+          "senses": [
+            {
+              "id": "syc-take-heart",
+              "gloss": "take heart",
+              "definition": "To take courage, said to the sick, the frightened and the troubled.",
+              "kin": [
+                "lev-courage",
+                "levav-courage"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.9.2",
+                  "role": "defining",
+                  "note": "To the paralytic: “Take heart, my son; your sins are forgiven you.”"
+                },
+                {
+                  "ref": "Mat.14.27",
+                  "role": "defining",
+                  "note": "On the sea: “Take heart; it is I; do not be afraid.”"
+                },
+                {
+                  "ref": "Jhn.16.33",
+                  "role": "defining",
+                  "note": "“In the world you will have trouble; but take heart, I have overcome the world.”"
+                },
+                {
+                  "ref": "Mat.9.22"
+                },
+                {
+                  "ref": "Mrk.6.50"
+                },
+                {
+                  "ref": "Mrk.10.49"
+                },
+                {
+                  "ref": "Luk.8.48"
+                },
+                {
+                  "ref": "Luk.21.28",
+                  "note": "“When these things begin to be, take heart and lift up your heads.”"
+                },
+                {
+                  "ref": "Act.27.25"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "put heart into, encourage",
+          "senses": [
+            {
+              "id": "syc-hearten",
+              "gloss": "encourage",
+              "definition": "To put heart into those who have little.",
+              "kin": [
+                "lev-courage",
+                "levav-courage",
+                "take-heart-of"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Th.5.14",
+                  "role": "defining",
+                  "note": "“Encourage the faint-hearted.” One use."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לוּבָּבָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "encouragement, heartiness",
+      "cognate_ids": [
+        "syc-lebba",
+        "arc-labbev"
+      ],
+      "summary": "The pael’s noun ܠܘܒܒܐ (lubbāḇā), twice in the Peshitta.",
+      "senses": [
+        {
+          "id": "syc-encouragement",
+          "gloss": "encouragement; readiness of heart",
+          "definition": "The putting of heart into others, and a ready, willing heart.",
+          "kin": [
+            "lev-courage",
+            "syc-hearten"
+          ],
+          "evidence": [
+            {
+              "ref": "1Co.14.3",
+              "role": "defining",
+              "note": "He who prophesies speaks to men “for building up and encouragement and comfort”."
+            },
+            {
+              "ref": "2Co.8.19",
+              "role": "defining",
+              "note": "The gift is ministered “to the glory of God and our own heartiness” (Greek προθυμία, readiness)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-libbu",
+      "lang": "akk",
+      "form": "libbu",
+      "translit": "libbu",
+      "gloss": "heart, belly, inner body; mind, thought, wish, courage; inside, middle",
+      "relation": "cognate",
+      "note": "The commonest of all the cognates (some 29,500 attestations in Oracc’s glossaries), with the same spread as the Hebrew: the organ and the inner body, the mind with its intention, desire and mood, courage, and the inside or middle of a thing, so that ina libbi is simply “in, within”, as Hebrew בְּלֶב־יָם.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004690, libbu [interior] N",
+          "note": "Meanings listed include “abdomen; belly; centre; courage; desire; heart; in the middle of; inside; intention; mind; mood; will; wish; womb”."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000012140, libbu [inner body] N",
+          "note": "“belly; heart; innards; inner body; inside; interior; intestines; thought.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000197 lbb [heart], AKK006021 libbu [interior]"
+        }
+      ]
+    },
+    {
+      "id": "akk-libbu-bread",
+      "lang": "akk",
+      "form": "libbu",
+      "translit": "libbu",
+      "gloss": "(a kind of bread)",
+      "relation": "possible",
+      "note": "Neo-Assyrian texts name a bread libbu, spelled as the word for heart. It may be the same naming as Hebrew לְבִבָה, a cake called after the heart, but the glossary gives no more than “a kind of bread”, so it is recorded as possible only.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000056750, libbu [(a kind of bread)] N",
+          "note": "36 attestations, Neo-Assyrian."
+        }
+      ]
+    },
+    {
+      "id": "uga-lb",
+      "lang": "uga",
+      "form": "𐎍𐎁",
+      "translit": "lb",
+      "gloss": "heart, mind",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 190, §93 Glossary, lb",
+          "note": "“lb /libb-/ ‘heart, mind’ (cf. H. lēb < libb-, Aram. libb-, Arab. libb, Akkad. libbu)”."
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 119, *lbb: lb",
+          "note": "Ugaritic lb “heart”."
+        }
+      ]
+    },
+    {
+      "id": "phn-lb",
+      "lang": "phn",
+      "form": "𐤋𐤁",
+      "translit": "lb",
+      "gloss": "mind, intelligence; heart",
+      "relation": "cognate",
+      "note": "In Azatiwada’s inscription at Karatepe the king is honoured for his righteousness, his wisdom and “the goodness of my heart”, and his people dwell in “rest of heart”: the heart as mind and as the seat of ease, as in Hebrew. A Neo-Punic offering is made “with a pure heart”, as Hebrew בַר־לֵבָב.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 251, LB",
+          "note": "“n.f. MIND, INTELLIGENCE; HEART”: KAI 26 A I 12–13 “because of my excellent mind”; KAI 26 A II 7–9 nḥt lb “peace of mind”; Neo-Punic “a sacrifice <rendered> with a pure heart”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000197 lbb [heart], PUN000976 lb [mind]"
+        }
+      ]
+    },
+    {
+      "id": "sem-lb",
+      "lang": "sem",
+      "form": "𐩡𐩨",
+      "translit": "lb",
+      "gloss": "(Sabaic) heart",
+      "relation": "cognate",
+      "note": "Sabaic lb, plural ʾlbb, in the dedicants’ prayers for what will “satisfy the heart of their lord” and for “the satisfaction of their hearts”: the heart as the seat of pleasure and goodwill. The plural keeps both b’s, as Hebrew לֵבָב.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 256, LBB I",
+          "note": "n¹ lb, pl. ʾlbb: “HEART”; J632/6 “booty which satisfied the heart of his lord”; C28/6 “the satisfaction of their hearts”."
+        }
+      ]
+    },
+    {
+      "id": "sem-lbbm",
+      "lang": "sem",
+      "form": "𐩡𐩨𐩨𐩣",
+      "translit": "lbbm",
+      "gloss": "(Sabaic) cakes (?)",
+      "relation": "possible",
+      "note": "A plural lbbm in a list of foods, after a dairy product and honey. The dictionary’s “cakes” is marked doubtful and leans on the Hebrew לְבִבָה, so it cannot count as independent evidence; but it is a foodstuff of this root.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 256–257, LBB I, n²",
+          "note": "p lbbm C548/13: “CAKES (?)”, “šnn (a dairy product), honey and cakes”."
+        }
+      ]
+    },
+    {
+      "id": "gez-lebb",
+      "lang": "gez",
+      "form": "ልብ",
+      "translit": "ləbb",
+      "gloss": "heart, mind; a central thing",
+      "relation": "cognate",
+      "note": "Geʿez has all three of the Hebrew’s chief uses: the heart, the mind, and the middle of a thing. Tigre adds “reason, intelligence”; Tigrinya and Amharic have the same word.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 119, *lbb: lb",
+          "note": "Geʿez ləb(b) “heart, mind; a central thing”, Tigre the same, “heart, reason, intelligence” (so Tigrinya ləbbi and Amharic)."
+        }
+      ]
+    },
+    {
+      "id": "ar-lubb",
+      "lang": "ar",
+      "form": "لُبٌّ",
+      "translit": "lubb",
+      "gloss": "what is inside: the heart or kernel of a nut, the pith of a palm; the choicest part; understanding, intellect, mind",
+      "relation": "cognate",
+      "note": "Arabic names the organ قَلْب; its لُبّ is the inside of a thing, the kernel of a nut or almond and the heart of a palm, and so the best part of anything, and of a man his understanding, “that is put into the heart of a man”. It answers to two of the Hebrew’s uses, the midst (לֶב־יָם) and the understanding (חֲסַר־לֵב, אַנְשֵׁי לֵבָב). The related لَبَّة is the middle of the breast, where the necklace lies, the place of the Hebrew heart (Exo 28:29).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2643, root لب, لُبٌّ (n37427)",
+          "note": "“Of a nut, an almond, and the like, What is in the inside; the heart, or kernel: of a palm-tree, the heart, or pith” … “What is pure, or the choice, or best, part, of anything” … “Understanding; intellect; intelligence; or mind … the understanding, &c., that is put into the heart of a man”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2643, لَبَّةٌ (n37429)",
+          "note": "“The middle of the breast … The place of the breast where the necklace or collar lies.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000197 lbb [heart], ARB033946 lub~ [Heart]"
+        }
+      ]
+    },
+    {
+      "id": "ar-labba",
+      "lang": "ar",
+      "form": "لَبَّ",
+      "translit": "labba",
+      "gloss": "become possessed of understanding; (adjective labīb) a person of understanding",
+      "relation": "cognate",
+      "note": "A verb made from lubb as Hebrew נִלְבַּב is from לֵב, and with the same sense: to come to have understanding (Job 11:12). Forms II and IV are said of grain that “got a heart”, an edible kernel.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2641, root لب, form 1 لَبَّ",
+          "note": "“He was, or became, possessed of لُبّ, i. e., understanding, intellect, or intelligence.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2643, لَبِيبٌ (n37432)",
+          "note": "“A person of understanding, or intelligence.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2642, form 2 لبّب (n37421)",
+          "note": "“It (grain) got a لُبّ, or heart, an edible heart.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-libba",
+      "lang": "arc",
+      "form": "לִבָּא",
+      "translit": "libbā",
+      "gloss": "heart; thought, mind (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums’ word for Hebrew לֵב and לֵבָב (Targ. Gen 6:5), with the longer forms לְבָבָא and לִבְבָא beside it as in Daniel. In the later Hebrew of the same sources לֵב is also the pith of a tree and the central part of a thing.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לֵב II (לִבָּא, לִיבָּא, לְבָבָא, לִבְבָא)",
+          "note": "“Targ. Gen. VI, 5 … what was in his heart remained there … אַלִּ׳ ריקנא on an empty stomach”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לֵב I",
+          "note": "“[innermost,] heart, bosom; thought, inclination, mind … the marrow of trees, the sap-wood … centre, central portion”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000197 lbb [heart], ARM013626 lbb [heart]"
+        }
+      ]
+    },
+    {
+      "id": "arc-labbev",
+      "lang": "arc",
+      "form": "לַבֵּב",
+      "translit": "labbēḇ",
+      "gloss": "(piel, made from לֵב) encourage, strengthen, make courageous",
+      "relation": "cognate",
+      "note": "The later Hebrew and Aramaic piel means to put heart into someone, as the Syriac pael does; this is the cognate evidence for how Sng 4:9 uses the stem. The same dictionary entry records another explanation of Sng 4:9 from the Talmud (Shabbat 53b), “you have bound me”, from a use of the root for joining closely.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לָבַב, Pi.",
+          "note": "“(denom. of לֵב) to encourage; to strengthen … in order to make him courageous”; also “to join closely; to tie”, with Sng 4:9 explained as “thou hast chained me”."
+        }
+      ]
+    },
+    {
+      "id": "syc-lebba",
+      "lang": "syc",
+      "form": "ܠܒܐ, ܠܒܒ, ܠܘܒܒܐ",
+      "translit": "lebbā, labbeḇ, lubbāḇā",
+      "gloss": "heart; (pael) encourage; encouragement, heartiness",
+      "relation": "cognate",
+      "note": "Syriac root lb: the noun “heart”, a verb made from it, “put heart into”, with its reflexive “take heart”, and the verb’s noun. The Peshitta New Testament’s use of them is given as words of the entry.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexemes 1619 LBA (heart), 1618 LBB (encourage), 1620 LOBBA (encouragement; heartiness), root 948 LB"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "heart-of-man",
+      "statement": "Before the flood Yahweh saw of man “that every inclination of the thoughts of his heart was only evil all the day” (Gen 6:5), and after it he said the same of those who came out of the ark: “the inclination of the heart of man is evil from his youth” (Gen 8:21). Jeremiah says, “The heart is deceitful above all things, and incurable; who can know it?” (Jer 17:9); Ecclesiastes, “the heart of the sons of man is full of evil, and madness is in their heart while they live” (Ecc 9:3); Proverbs, “he who trusts in his own heart is a fool” (Pro 28:26). Israel wore fringes so as not to “go about after your own heart and your own eyes” (Num 15:39). Jesus says where the things that defile a man come from: nothing from outside him can do it (Mrk 7:15), but “from within, out of the heart of men, come evil thoughts, adulteries, fornications, thefts, murders … all these evil things come from within” (Mrk 7:21, 23; Mat 15:19). James traces sin the same way: each man is tempted by his own desire, desire conceives and bears sin, and sin brings death (Jas 1:14–15). Peter puts two ways of speaking side by side in one rebuke: “why has the adversary filled your heart to lie?” and “why did you set this thing in your heart?” (Act 5:3–4). From the verses: scripture finds the source of sin in man himself, in the inclination of his own heart, and in these passages names no source outside him. The heart is therefore not to be trusted but guarded (Pro 4:23) and judged by the word of God (Heb 4:12).",
+      "evidence": [
+        {
+          "ref": "Gen.6.5"
+        },
+        {
+          "ref": "Gen.8.21"
+        },
+        {
+          "ref": "Jer.17.9"
+        },
+        {
+          "ref": "Ecc.9.3"
+        },
+        {
+          "ref": "Pro.28.26"
+        },
+        {
+          "ref": "Num.15.39"
+        },
+        {
+          "ref": "Mrk.7.15"
+        },
+        {
+          "ref": "Mrk.7.21",
+          "to": "Mrk.7.23"
+        },
+        {
+          "ref": "Mat.15.19"
+        },
+        {
+          "ref": "Jas.1.14",
+          "to": "Jas.1.15"
+        },
+        {
+          "ref": "Act.5.3",
+          "to": "Act.5.4"
+        },
+        {
+          "ref": "Pro.4.23"
+        },
+        {
+          "ref": "Heb.4.12"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "The heart is where scripture puts a man’s thinking: his thoughts and plans (Gen 6:5; Pro 16:9; 19:21), his knowledge and wisdom (Deu 29:3; 1Ki 3:9; Pro 2:10), his memory (Deu 4:9) and his purpose (1Ki 8:17). The same word is the heart of flesh in his breast: pierced by a dart or an arrow (2Sa 18:14; 2Ki 9:24), sustained by bread (Psa 104:15; Jdg 19:5), failing with the flesh (Psa 73:26), and able to die within him (1Sa 25:37). Ecclesiastes follows that heart to its end: “madness is in their heart while they live, and after that, to the dead” (Ecc 9:3); “the living know that they will die, but the dead know nothing” (Ecc 9:5); their love, their hatred and their envy have perished (Ecc 9:6); “there is no work, nor reckoning, nor knowledge, nor wisdom in the grave where you are going” (Ecc 9:10). When a man’s breath goes out “he returns to his ground; in that day his thoughts perish” (Psa 146:4). From the verses: thought, knowledge and feeling belong to the heart of the living man, scripture gives them no other seat that outlives him, and they cease when he dies. The hope of the dead is therefore resurrection, as David says: “my heart is glad … my flesh also shall dwell in safety, for you will not leave my soul to the grave” (Psa 16:9–10), which Peter says David spoke of the resurrection of the anointed (Act 2:26–27, 31).",
+      "evidence": [
+        {
+          "ref": "Gen.6.5"
+        },
+        {
+          "ref": "Pro.16.9"
+        },
+        {
+          "ref": "Pro.19.21"
+        },
+        {
+          "ref": "Deu.29.3"
+        },
+        {
+          "ref": "1Ki.3.9"
+        },
+        {
+          "ref": "Pro.2.10"
+        },
+        {
+          "ref": "Deu.4.9"
+        },
+        {
+          "ref": "1Ki.8.17"
+        },
+        {
+          "ref": "2Sa.18.14"
+        },
+        {
+          "ref": "2Ki.9.24"
+        },
+        {
+          "ref": "Psa.104.15"
+        },
+        {
+          "ref": "Jdg.19.5"
+        },
+        {
+          "ref": "Psa.73.26"
+        },
+        {
+          "ref": "1Sa.25.37"
+        },
+        {
+          "ref": "Ecc.9.3"
+        },
+        {
+          "ref": "Ecc.9.5",
+          "to": "Ecc.9.6"
+        },
+        {
+          "ref": "Ecc.9.10"
+        },
+        {
+          "ref": "Psa.146.4"
+        },
+        {
+          "ref": "Psa.16.9",
+          "to": "Psa.16.10"
+        },
+        {
+          "ref": "Act.2.26",
+          "to": "Act.2.27"
+        },
+        {
+          "ref": "Act.2.31"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-searches-the-heart",
+      "statement": "“Man looks at the eyes, but Yahweh looks at the heart” (1Sa 16:7). Solomon prays that Yahweh will “give to each man according to all his ways, whose heart you know; for you alone know the heart of all the sons of man” (1Ki 8:39), and Yahweh says the same of himself: “I, Yahweh, search the heart, I try the kidneys, to give to each man according to his ways” (Jer 17:10). He “knows the secrets of the heart” (Psa 44:22), “searches all hearts and understands every inclination of the thoughts” (1Ch 28:9), tries hearts as the furnace tries gold (Pro 17:3; 21:2), and repays a man who says “we did not know this” (Pro 24:12). The New Testament says it of God in the same words (Luk 16:15; Act 1:24; 15:8; Rom 8:27), and of his word that it “judges the thoughts and intents of the heart, and there is no creature hidden before him” (Heb 4:12–13). Jesus says to the ecclesias, “I am he who searches kidneys and heart, and I will give to each of you according to your works” (Rev 2:23), Jeremiah’s words of Yahweh; he says in the same message that what he has he received from his Father (Rev 2:27), as the Father “has given all judgment to the son” (Jhn 5:22) and “will judge the world in righteousness by a man whom he has appointed” (Act 17:31). When the Lord comes he “will reveal the thoughts of hearts” (1Co 4:5). From the verses: only God knows the heart, his judgment is according to it and to a man’s ways, and he has committed that judgment to his son, to be given at his coming.",
+      "evidence": [
+        {
+          "ref": "1Sa.16.7"
+        },
+        {
+          "ref": "1Ki.8.39"
+        },
+        {
+          "ref": "Jer.17.10"
+        },
+        {
+          "ref": "Psa.44.22"
+        },
+        {
+          "ref": "1Ch.28.9"
+        },
+        {
+          "ref": "Pro.17.3"
+        },
+        {
+          "ref": "Pro.21.2"
+        },
+        {
+          "ref": "Pro.24.12"
+        },
+        {
+          "ref": "Luk.16.15"
+        },
+        {
+          "ref": "Act.1.24"
+        },
+        {
+          "ref": "Act.15.8"
+        },
+        {
+          "ref": "Rom.8.27"
+        },
+        {
+          "ref": "Heb.4.12",
+          "to": "Heb.4.13"
+        },
+        {
+          "ref": "Rev.2.23"
+        },
+        {
+          "ref": "Rev.2.27"
+        },
+        {
+          "ref": "Jhn.5.22"
+        },
+        {
+          "ref": "Act.17.31"
+        },
+        {
+          "ref": "1Co.4.5"
+        }
+      ]
+    },
+    {
+      "topic": "hardening-the-heart",
+      "statement": "Three things are said of Pharaoh’s heart. Before Moses went, Yahweh said “I will make his heart strong” (Exo 4:21) and “I will harden the heart of Pharaoh” (Exo 7:3). Through the first plagues the text says “the heart of Pharaoh was strong” (Exo 7:13) and that Pharaoh “made his heart heavy” (Exo 8:11, 28), and again after the hail, when “he sinned yet more” (Exo 9:34). From the plague of boils it says “Yahweh made the heart of Pharaoh strong” (Exo 9:12; 10:1; 14:4), and gives the reason: “for this I have made you stand, to show you my power, and that my name be declared in all the earth” (Exo 9:16), which Paul quotes and concludes, “whom he will he hardens” (Rom 9:17–18). The Philistine priests took it as Pharaoh’s own act and a warning: “why do you make your heart heavy, as Egypt and Pharaoh made their heart heavy?” (1Sa 6:6). The same is said of Sihon (Deu 2:30) and of the kings of Canaan (Jos 11:20), and of Israel, whose heart Isaiah was sent to make fat (Isa 6:10; Jhn 12:40; Act 28:27): Yahweh “sent them away in the stubbornness of their heart” (Psa 81:13), as Paul says God gave the nations over to the desires of their hearts (Rom 1:24). Yet the command stands, “do not harden your heart” (Psa 95:8), repeated to believers with the warning “lest any of you be hardened by the deceitfulness of sin” (Heb 3:8, 13), and the man who hardens his heart is storing up wrath for himself (Rom 2:5). From the verses: a man hardens his own heart by refusing what he has heard; God confirms him in it and uses it for his purpose; and the man answers for it.",
+      "evidence": [
+        {
+          "ref": "Exo.4.21"
+        },
+        {
+          "ref": "Exo.7.3"
+        },
+        {
+          "ref": "Exo.7.13"
+        },
+        {
+          "ref": "Exo.8.11"
+        },
+        {
+          "ref": "Exo.8.28"
+        },
+        {
+          "ref": "Exo.9.34"
+        },
+        {
+          "ref": "Exo.9.12"
+        },
+        {
+          "ref": "Exo.10.1"
+        },
+        {
+          "ref": "Exo.14.4"
+        },
+        {
+          "ref": "Exo.9.16"
+        },
+        {
+          "ref": "Rom.9.17",
+          "to": "Rom.9.18"
+        },
+        {
+          "ref": "1Sa.6.6"
+        },
+        {
+          "ref": "Deu.2.30"
+        },
+        {
+          "ref": "Jos.11.20"
+        },
+        {
+          "ref": "Isa.6.10"
+        },
+        {
+          "ref": "Jhn.12.40"
+        },
+        {
+          "ref": "Act.28.27"
+        },
+        {
+          "ref": "Psa.81.13"
+        },
+        {
+          "ref": "Rom.1.24"
+        },
+        {
+          "ref": "Psa.95.8"
+        },
+        {
+          "ref": "Heb.3.8"
+        },
+        {
+          "ref": "Heb.3.13"
+        },
+        {
+          "ref": "Rom.2.5"
+        }
+      ]
+    },
+    {
+      "topic": "new-heart",
+      "statement": "Moses told Israel, “circumcise the foreskin of your heart, and be no more stiff-necked” (Deu 10:16), and Jeremiah said it again to Judah (Jer 4:4), calling the house of Israel “uncircumcised of heart” like the nations (Jer 9:25; Lev 26:41). Moses also promised that after their scattering and return “Yahweh your God will circumcise your heart … to love Yahweh your God with all your heart” (Deu 30:6). The prophets say what that will be: “I will put my law in their inward parts and write it on their heart” (Jer 31:33); “I will give them a heart to know me” (Jer 24:7); “one heart and one way” (Jer 32:39); “a new heart … I will take away the heart of stone out of your flesh and give you a heart of flesh” (Ezk 36:26; 11:19). Ezekiel also commands it, “make yourselves a new heart and a new spirit” (Ezk 18:31), and David prays for it, “create in me a clean heart, O God” (Psa 51:12). In each of these prophecies the promise stands beside the gathering of Israel back to their own land (Jer 24:6; 32:37; Ezk 11:17; 36:24, 28). Hebrews quotes Jeremiah’s words as the new covenant (Heb 8:10; 10:16); Paul says “circumcision is of the heart, in spirit, not in letter” (Rom 2:29), and calls the Corinthians a letter written “not on tablets of stone but on tablets of the heart of flesh” (2Co 3:3). The means is the word believed: the law of his God is in the heart of the righteous (Psa 37:31; 119:11), the good ground is those who hear the word and keep it in a good heart (Luk 8:15), God purified the hearts of the nations “by faith” (Act 15:9), and “with the heart man believes to righteousness” (Rom 10:10). From the verses: the heart God accepts is one changed by his word received in faith, as it is now in those who believe; and he has promised it to Israel as a nation when he gathers them to the land he gave their fathers.",
+      "evidence": [
+        {
+          "ref": "Deu.10.16"
+        },
+        {
+          "ref": "Jer.4.4"
+        },
+        {
+          "ref": "Jer.9.25"
+        },
+        {
+          "ref": "Lev.26.41"
+        },
+        {
+          "ref": "Deu.30.6"
+        },
+        {
+          "ref": "Jer.31.33"
+        },
+        {
+          "ref": "Jer.24.7"
+        },
+        {
+          "ref": "Jer.32.39"
+        },
+        {
+          "ref": "Ezk.36.26"
+        },
+        {
+          "ref": "Ezk.11.19"
+        },
+        {
+          "ref": "Ezk.18.31"
+        },
+        {
+          "ref": "Psa.51.12"
+        },
+        {
+          "ref": "Jer.24.6"
+        },
+        {
+          "ref": "Jer.32.37"
+        },
+        {
+          "ref": "Ezk.11.17"
+        },
+        {
+          "ref": "Ezk.36.24"
+        },
+        {
+          "ref": "Ezk.36.28"
+        },
+        {
+          "ref": "Heb.8.10"
+        },
+        {
+          "ref": "Heb.10.16"
+        },
+        {
+          "ref": "Rom.2.29"
+        },
+        {
+          "ref": "2Co.3.3"
+        },
+        {
+          "ref": "Psa.37.31"
+        },
+        {
+          "ref": "Psa.119.11"
+        },
+        {
+          "ref": "Luk.8.15"
+        },
+        {
+          "ref": "Act.15.9"
+        },
+        {
+          "ref": "Rom.10.10"
+        }
+      ]
+    },
+    {
+      "topic": "first-commandment",
+      "statement": "“Hear, Israel: Yahweh our God, Yahweh is one. And you shall love Yahweh your God with all your heart and with all your soul and with all your strength” (Deu 6:4–5). Asked which commandment is first of all, Jesus answers with these words, beginning from “the Lord our God is one” (Mrk 12:29–30; Mat 22:37); the scribe replies, “he is one, and there is no other but he, and to love him with all the heart … is more than all burnt offerings and sacrifices”, and Jesus tells him he is not far from the kingdom of God (Mrk 12:32–34). The words are to be on the heart (Deu 6:6), and the whole heart is asked for again and again (Deu 10:12; Jos 22:5; 1Sa 12:24; Jer 29:13); its opposite is the “heart and a heart” (Psa 12:3) and the heart that is far off while the lips give honour (Isa 29:13; Mat 15:8). From the verses: the God of Israel is one, Jesus confesses him as “our God” with the rest of Israel, and because he is one he asks for a heart that is not divided.",
+      "evidence": [
+        {
+          "ref": "Deu.6.4",
+          "to": "Deu.6.5"
+        },
+        {
+          "ref": "Mrk.12.29",
+          "to": "Mrk.12.30"
+        },
+        {
+          "ref": "Mat.22.37"
+        },
+        {
+          "ref": "Mrk.12.32",
+          "to": "Mrk.12.34"
+        },
+        {
+          "ref": "Deu.6.6"
+        },
+        {
+          "ref": "Deu.10.12"
+        },
+        {
+          "ref": "Jos.22.5"
+        },
+        {
+          "ref": "1Sa.12.24"
+        },
+        {
+          "ref": "Jer.29.13"
+        },
+        {
+          "ref": "Psa.12.3"
+        },
+        {
+          "ref": "Isa.29.13"
+        },
+        {
+          "ref": "Mat.15.8"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root: לבב, the key under which the database files לֵב and לֵבָב and the root of the denominative verb; no other entry has it. The nouns are primary and the verbs are made from them (Arabic and Syriac show the same), so there is no verbal sense for the nouns to be derived from. BDB keys: l.ai.ac לֵב, l.ai.ab לֵבָב, l.ai.ad לִבָּה (with the plural לִבּוֹת), l.ai.af the verb, l.ai.ag לְבִבָה, xl.ad.aa Aramaic לְבַב, xl.ad.ab Aramaic לֵב (Dan 7:28). Left unclaimed: l.ai.ah (the verb’s “make cakes”, the same five tokens as l.ai.af); l.ai.ae לֵב קָמָי (Jer 51:1, entered as a phrase under לֵב: the key collects some 1,200 tokens of קוּם by spelling, and Chaldea is a place, so no name entry); l.ai.aa and l.ag.ad (cross-references, no tokens); l.ai.ai is already used by bad.json. No personal name is formed from this root in names.jsonl (Caleb’s gentilic is glossed “like his heart” there but belongs to כלב), so no name entries were written. לַבָּה “flame” (Exo 3:2 בְּלַבַּת־אֵשׁ) is filed under להב, not here. Senses: the boundaries between thought, understanding, will and feeling are the entry’s, not the text’s; many verses could sit under two. The split between לֵב and לֵבָב was checked verse by verse against the brief’s lists; verses with both forms (Isa 6:10; Ecc 9:3; 1Ch 12:39; 28:9; Ezk 28:6) are cited where the form quoted stands. Sng 4:9: the piel is left open between “take the heart” and “put heart into”; the Aramaic and Syriac piel/pael favour the second, the Talmud (Shabbat 53b, in Jastrow s.v. לָבַב) explains it as “bind”. לְבִבָה: the link to “heart” is not shown by scripture; the Sabaic and Akkadian food words are possible only (Biella’s gloss leans on the Hebrew). Cognates checked: Lane pp. 2641–2643 (vendored), Oracc glossary ids, Segert p. 190, Biella pp. 256–257 and Fisher p. 119 (page images read), Krahmalkov p. 251 (from the PDF’s text layer, page number from the running page numbers; KAI 26 readings not checked against an edition), Jastrow (vendored), SEDRA lexemes. Leads not followed: Akkadian labābu “rage” and libbātu “anger” (Oracc armep x000100380, x000012130), a different sense that an older proposal made the root’s origin, left out as unproven; Geʿez in Dillmann and Leslau (no scan; Fisher cited instead); Ugaritic in DULAT; the Deir ʿAlla and Old Aramaic lbb; Payne Smith for the Syriac verb’s other stems. Greek: νοῦς (Exo 7:23; Jos 14:7; Isa 10:7, 12) and ψυχή (a few places) also render the words in the Septuagint and were not entered. The New Testament English checked was the Peshitta translation in the database; Luk 24:32 (Peshitta “heavy”, Greek “burning”) and Act 4:32 (Peshitta lacks ܠܒܐ) were left out of the Syriac word for that reason."
+}
