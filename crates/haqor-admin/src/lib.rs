@@ -19,6 +19,239 @@ const LEGACY_APP_ID: &str = "com.example.haqor";
 
 mod issue_tui;
 
+fn lexicon_reports(progress: &Path) -> Result<Vec<haqor_core::tutor::IssueReport>> {
+    haqor_core::lexicon_review::read_file(progress)?
+        .into_iter()
+        .map(|record| {
+            let context_json = serde_json::to_string(&json!({
+                "entry": record.entry_id,
+                "kind": record.entry_kind,
+                "sourceHash": record.source_hash,
+                "target": record.target_kind,
+                "targetKey": record.target_key,
+                "approved": record.approved,
+                "file": if record.entry_kind == "name" {
+                    format!("data/lexicon/names/{}.json", record.entry_id)
+                } else {
+                    format!("data/lexicon/{}.json", record.entry_id)
+                },
+            }))?;
+            Ok(haqor_core::tutor::IssueReport {
+                id: record.id,
+                report_type: if record.approved {
+                    "lexicon approval"
+                } else {
+                    "lexicon note"
+                }
+                .into(),
+                note: if record.approved {
+                    "Approve bundled entry as reviewed".into()
+                } else {
+                    record.note
+                },
+                context_json,
+                created_epoch: record.created_epoch,
+                updated_epoch: record.updated_epoch,
+            })
+        })
+        .collect()
+}
+
+/// Apply a phone approval only when the checkout still contains precisely the
+/// entry the reviewer saw. A changed entry stays pending for another review.
+fn apply_lexicon_approval(
+    record: &haqor_core::lexicon_review::LexiconReviewRecord,
+    dir: &Path,
+) -> Result<()> {
+    if !record.approved {
+        return Ok(());
+    }
+    if !record
+        .entry_id
+        .bytes()
+        .all(|byte| byte.is_ascii_alphanumeric() || byte == b'-' || byte == b'_')
+    {
+        bail!("invalid lexicon entry id {}", record.entry_id);
+    }
+    let folder = if record.entry_kind == "name" {
+        dir.join("names")
+    } else {
+        dir.to_path_buf()
+    };
+    let file = folder.join(format!("{}.json", record.entry_id));
+    let source =
+        std::fs::read_to_string(&file).with_context(|| format!("reading {}", file.display()))?;
+    if haqor_core::lexicon_review::source_hash(&source) != record.source_hash {
+        bail!(
+            "{} changed since the phone review; leave its approval pending",
+            file.display()
+        );
+    }
+    let date = chrono::DateTime::from_timestamp(record.updated_epoch, 0)
+        .context("invalid approval timestamp")?
+        .date_naive()
+        .to_string();
+    let parsed: Value = serde_json::from_str(&source)?;
+    let status = parsed["status"].as_str().context("entry has no status")?;
+    let signed = match status {
+        "draft" => {
+            let old = "\"status\": \"draft\",";
+            if !source.contains(old) {
+                bail!("{} has an unexpected status format", file.display());
+            }
+            source.replacen(
+                old,
+                &format!("\"status\": \"reviewed\",\n  \"reviewed\": \"{date}\","),
+                1,
+            )
+        }
+        "reviewed" => {
+            let old_date = parsed["reviewed"]
+                .as_str()
+                .context("reviewed entry has no date")?;
+            let old = format!("\"reviewed\": \"{old_date}\"");
+            if !source.contains(&old) {
+                bail!("{} has an unexpected reviewed format", file.display());
+            }
+            source.replacen(&old, &format!("\"reviewed\": \"{date}\""), 1)
+        }
+        _ => bail!("{} has an invalid status", file.display()),
+    };
+    let temporary = file.with_extension("json.mobile-review.tmp");
+    std::fs::write(&temporary, signed)?;
+    if let Err(error) = std::fs::rename(&temporary, &file) {
+        let _ = std::fs::remove_file(&temporary);
+        return Err(error).with_context(|| format!("replacing {}", file.display()));
+    }
+    Ok(())
+}
+
+fn review_lexicon_file(progress: &Path, lexicon: &Path, remote: Option<&Remote>) -> Result<usize> {
+    let reports = lexicon_reports(progress)?;
+    issue_tui::review(reports, " Lexicon reviews ", |action, _current| {
+        let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
+        let (resolved, message) = match action {
+            issue_tui::Action::Pull => {
+                if let Some(remote) = remote {
+                    let snapshot = download_remote_snapshot(remote, "lexicon reviews")?;
+                    std::fs::write(progress, snapshot)?;
+                }
+                (0, "Pulled lexicon reviews".to_string())
+            }
+            issue_tui::Action::Edit { id, note } => {
+                if !haqor_core::lexicon_review::update_note_file(progress, &id, &note, now)? {
+                    bail!("review note {id} is no longer active or is an approval");
+                }
+                if let Some(remote) = remote {
+                    let merged = post_sync_snapshot(remote, &std::fs::read(progress)?)?;
+                    std::fs::write(progress, merged)?;
+                }
+                (0, "Updated lexicon review note".to_string())
+            }
+            issue_tui::Action::Sync(ids) => {
+                let records = haqor_core::lexicon_review::read_file(progress)?;
+                let mut count = 0;
+                for id in &ids {
+                    let record = records
+                        .iter()
+                        .find(|record| &record.id == id)
+                        .with_context(|| format!("review {id} is no longer active"))?;
+                    apply_lexicon_approval(record, lexicon)?;
+                    let changed = if record.approved {
+                        haqor_core::lexicon_review::mark_handled_file(progress, id, now)?
+                    } else {
+                        haqor_core::lexicon_review::resolve_file(progress, id, now)?
+                    };
+                    if changed {
+                        count += 1;
+                    }
+                }
+                if let Some(remote) = remote {
+                    let merged = post_sync_snapshot(remote, &std::fs::read(progress)?)?;
+                    std::fs::write(progress, merged)?;
+                    let still_active = haqor_core::lexicon_review::read_file(progress)?;
+                    if ids
+                        .iter()
+                        .any(|id| still_active.iter().any(|record| &record.id == id))
+                    {
+                        bail!(
+                            "sync server did not retain resolved lexicon reviews; update and restart it"
+                        );
+                    }
+                }
+                (count, format!("Handled {count} lexicon review(s)"))
+            }
+        };
+        Ok(issue_tui::ActionResult {
+            reports: lexicon_reports(progress)?,
+            resolved,
+            message,
+        })
+    })
+}
+
+pub fn review_lexicon(progress: &Path, lexicon: &Path) -> Result<usize> {
+    review_lexicon_file(progress, lexicon, None)
+}
+
+pub fn review_lexicon_from_server(remote: &Remote, lexicon: &Path) -> Result<usize> {
+    let snapshot = download_remote_snapshot(remote, "lexicon reviews")?;
+    let nonce = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
+    let temporary = std::env::temp_dir().join(format!(
+        "haqor-admin-review-lexicon-{}-{nonce}.db",
+        std::process::id()
+    ));
+    std::fs::write(&temporary, snapshot)?;
+    if !haqor_core::lexicon_review::has_reviews_file(&temporary)? {
+        let _ = std::fs::remove_file(&temporary);
+        bail!(
+            "sync server has no lexicon review table; update and restart it, then sync the phone again"
+        );
+    }
+    let result = review_lexicon_file(&temporary, lexicon, Some(remote));
+    let _ = std::fs::remove_file(&temporary);
+    result
+}
+
+#[cfg(test)]
+mod lexicon_review_tests {
+    use super::*;
+
+    #[test]
+    fn approval_updates_only_the_exact_file_seen_on_phone() -> Result<()> {
+        let nonce = SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos();
+        let dir = std::env::temp_dir().join(format!("haqor-admin-approval-{nonce}"));
+        std::fs::create_dir(&dir)?;
+        let file = dir.join("anan.json");
+        let source =
+            "{\n  \"id\": \"anan\",\n  \"status\": \"draft\",\n  \"updated\": \"2026-11-15\"\n}\n";
+        std::fs::write(&file, source)?;
+        let record = haqor_core::lexicon_review::LexiconReviewRecord {
+            id: "approval:root:anan".into(),
+            entry_id: "anan".into(),
+            entry_kind: "root".into(),
+            source_hash: haqor_core::lexicon_review::source_hash(source),
+            target_kind: "entry".into(),
+            target_key: String::new(),
+            note: String::new(),
+            approved: true,
+            created_epoch: 1_792_000_000,
+            updated_epoch: 1_792_000_000,
+            handled: false,
+            deleted: false,
+        };
+        std::fs::write(&file, source.replace("draft", "reviewed"))?;
+        assert!(apply_lexicon_approval(&record, &dir).is_err());
+        std::fs::write(&file, source)?;
+        apply_lexicon_approval(&record, &dir)?;
+        let result = std::fs::read_to_string(&file)?;
+        assert!(result.contains("\"status\": \"reviewed\""));
+        assert!(result.contains("\"reviewed\": \"2026-10-14\""));
+        std::fs::remove_dir_all(dir)?;
+        Ok(())
+    }
+}
+
 /// The server credentials the Flutter app keeps in its platform preferences.
 /// They are read only for a remote invocation and are never printed.
 pub type AppSyncSettings = Remote;
@@ -393,47 +626,51 @@ pub fn pull_issue_reports_from_server(remote: &Remote, output: &Path) -> Result<
 pub fn review_issue_reports(progress: &Path, output: &Path) -> Result<usize> {
     let reports = haqor_core::progress_sync::read_issue_reports_file(progress)
         .with_context(|| format!("reading issue reports from {}", progress.display()))?;
-    issue_tui::review(reports, |action, _current| match action {
-        issue_tui::Action::Pull => {
-            let count = pull_issue_reports(progress, output)?;
-            Ok(issue_tui::ActionResult {
-                reports: haqor_core::progress_sync::read_issue_reports_file(progress)?,
-                resolved: 0,
-                message: format!("Pulled {count} issue report(s) to {}", output.display()),
-            })
-        }
-        issue_tui::Action::Edit { id, note } => {
-            let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
-            let changed = haqor_core::progress_sync::update_issue_report_note_file(
-                progress,
-                &id,
-                &note,
-                updated_epoch,
-            )?;
-            if changed == 0 {
-                bail!("issue report {id} is no longer active");
+    issue_tui::review(
+        reports,
+        " App issue reports ",
+        |action, _current| match action {
+            issue_tui::Action::Pull => {
+                let count = pull_issue_reports(progress, output)?;
+                Ok(issue_tui::ActionResult {
+                    reports: haqor_core::progress_sync::read_issue_reports_file(progress)?,
+                    resolved: 0,
+                    message: format!("Pulled {count} issue report(s) to {}", output.display()),
+                })
             }
-            Ok(issue_tui::ActionResult {
-                reports: haqor_core::progress_sync::read_issue_reports_file(progress)?,
-                resolved: 0,
-                message: "Updated issue report note locally".to_string(),
-            })
-        }
-        issue_tui::Action::Sync(selected) => {
-            let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
-            let count = haqor_core::progress_sync::resolve_issue_reports_file(
-                progress,
-                &selected,
-                updated_epoch,
-            )
-            .with_context(|| format!("resolving issue reports in {}", progress.display()))?;
-            Ok(issue_tui::ActionResult {
-                reports: haqor_core::progress_sync::read_issue_reports_file(progress)?,
-                resolved: count,
-                message: format!("Resolved {count} issue report(s) locally"),
-            })
-        }
-    })
+            issue_tui::Action::Edit { id, note } => {
+                let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
+                let changed = haqor_core::progress_sync::update_issue_report_note_file(
+                    progress,
+                    &id,
+                    &note,
+                    updated_epoch,
+                )?;
+                if changed == 0 {
+                    bail!("issue report {id} is no longer active");
+                }
+                Ok(issue_tui::ActionResult {
+                    reports: haqor_core::progress_sync::read_issue_reports_file(progress)?,
+                    resolved: 0,
+                    message: "Updated issue report note locally".to_string(),
+                })
+            }
+            issue_tui::Action::Sync(selected) => {
+                let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
+                let count = haqor_core::progress_sync::resolve_issue_reports_file(
+                    progress,
+                    &selected,
+                    updated_epoch,
+                )
+                .with_context(|| format!("resolving issue reports in {}", progress.display()))?;
+                Ok(issue_tui::ActionResult {
+                    reports: haqor_core::progress_sync::read_issue_reports_file(progress)?,
+                    resolved: count,
+                    message: format!("Resolved {count} issue report(s) locally"),
+                })
+            }
+        },
+    )
 }
 
 /// Review the server's live issue log, then upload the selected resolution
@@ -456,73 +693,79 @@ pub fn review_issue_reports_from_server(remote: &Remote, output: &Path) -> Resul
         .with_context(|| format!("writing temporary sync snapshot {}", temporary.display()))?;
     let result = (|| {
         let reports = haqor_core::progress_sync::read_issue_reports_file(&temporary)?;
-        issue_tui::review(reports, |action, current| match action {
-            issue_tui::Action::Pull => {
-                let snapshot = download_remote_snapshot(remote, "app issue reports")?;
-                std::fs::write(&temporary, snapshot)?;
-                let count = pull_issue_reports(&temporary, output)?;
-                Ok(issue_tui::ActionResult {
-                    reports: haqor_core::progress_sync::read_issue_reports_file(&temporary)?,
-                    resolved: 0,
-                    message: format!("Pulled {count} issue report(s) to {}", output.display()),
-                })
-            }
-            issue_tui::Action::Edit { id, note } => {
-                let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
-                let changed = haqor_core::progress_sync::update_issue_report_note_file(
-                    &temporary,
-                    &id,
-                    &note,
-                    updated_epoch,
-                )?;
-                if changed == 0 {
-                    bail!("issue report {id} is no longer active");
+        issue_tui::review(
+            reports,
+            " App issue reports ",
+            |action, current| match action {
+                issue_tui::Action::Pull => {
+                    let snapshot = download_remote_snapshot(remote, "app issue reports")?;
+                    std::fs::write(&temporary, snapshot)?;
+                    let count = pull_issue_reports(&temporary, output)?;
+                    Ok(issue_tui::ActionResult {
+                        reports: haqor_core::progress_sync::read_issue_reports_file(&temporary)?,
+                        resolved: 0,
+                        message: format!("Pulled {count} issue report(s) to {}", output.display()),
+                    })
                 }
-                let merged = post_sync_snapshot(remote, &std::fs::read(&temporary)?)?;
-                if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
-                    bail!("sync server returned an invalid progress snapshot");
+                issue_tui::Action::Edit { id, note } => {
+                    let updated_epoch =
+                        SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
+                    let changed = haqor_core::progress_sync::update_issue_report_note_file(
+                        &temporary,
+                        &id,
+                        &note,
+                        updated_epoch,
+                    )?;
+                    if changed == 0 {
+                        bail!("issue report {id} is no longer active");
+                    }
+                    let merged = post_sync_snapshot(remote, &std::fs::read(&temporary)?)?;
+                    if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
+                        bail!("sync server returned an invalid progress snapshot");
+                    }
+                    std::fs::write(&temporary, merged)?;
+                    Ok(issue_tui::ActionResult {
+                        reports: haqor_core::progress_sync::read_issue_reports_file(&temporary)?,
+                        resolved: 0,
+                        message: "Updated and synced issue report note".to_string(),
+                    })
                 }
-                std::fs::write(&temporary, merged)?;
-                Ok(issue_tui::ActionResult {
-                    reports: haqor_core::progress_sync::read_issue_reports_file(&temporary)?,
-                    resolved: 0,
-                    message: "Updated and synced issue report note".to_string(),
-                })
-            }
-            issue_tui::Action::Sync(selected) => {
-                let updated_epoch = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
-                haqor_core::progress_sync::resolve_issue_reports_file(
-                    &temporary,
-                    &selected,
-                    updated_epoch,
-                )?;
-                eprintln!(
-                    "Syncing {} resolved app issue report(s) back to the server",
-                    selected.len()
-                );
-                let merged = post_sync_snapshot(remote, &std::fs::read(&temporary)?)?;
-                if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
-                    bail!("sync server returned an invalid progress snapshot");
-                }
-                std::fs::write(&temporary, merged)?;
-                let merged_reports =
-                    haqor_core::progress_sync::read_issue_reports_file(&temporary)?;
-                if selected.iter().any(|id| {
-                    current.iter().any(|report| report.id == *id)
-                        && merged_reports.iter().any(|report| report.id == *id)
-                }) {
-                    bail!(
-                        "the sync server did not retain resolved issue reports; update and restart \
-                         haqor-sync-server before resolving reports"
+                issue_tui::Action::Sync(selected) => {
+                    let updated_epoch =
+                        SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() as i64;
+                    haqor_core::progress_sync::resolve_issue_reports_file(
+                        &temporary,
+                        &selected,
+                        updated_epoch,
+                    )?;
+                    eprintln!(
+                        "Syncing {} resolved app issue report(s) back to the server",
+                        selected.len()
                     );
+                    let merged = post_sync_snapshot(remote, &std::fs::read(&temporary)?)?;
+                    if !haqor_core::progress_sync::is_sqlite_snapshot(&merged) {
+                        bail!("sync server returned an invalid progress snapshot");
+                    }
+                    std::fs::write(&temporary, merged)?;
+                    let merged_reports =
+                        haqor_core::progress_sync::read_issue_reports_file(&temporary)?;
+                    if selected.iter().any(|id| {
+                        current.iter().any(|report| report.id == *id)
+                            && merged_reports.iter().any(|report| report.id == *id)
+                    }) {
+                        bail!(
+                            "the sync server did not retain resolved issue reports; update and restart \
+                         haqor-sync-server before resolving reports"
+                        );
+                    }
+                    Ok(issue_tui::ActionResult {
+                        reports: merged_reports,
+                        resolved: selected.len(),
+                        message: format!("Synced {} resolved issue report(s)", selected.len()),
+                    })
                 }
-                Ok(issue_tui::ActionResult {
-                    reports: merged_reports,
-                    resolved: selected.len(),
-                    message: format!("Synced {} resolved issue report(s)", selected.len()),
-                })
-            }
-        })
+            },
+        )
     })();
     let _ = std::fs::remove_file(&temporary);
     result

@@ -177,6 +177,31 @@ fn ensure_issue_reports(db: &Connection, schema: &str) -> rusqlite::Result<()> {
     Ok(())
 }
 
+fn ensure_lexicon_reviews(db: &Connection, schema: &str) -> rusqlite::Result<()> {
+    db.execute_batch(&format!(
+        "CREATE TABLE IF NOT EXISTS {schema}.lexicon_reviews(
+            id            TEXT PRIMARY KEY,
+            entry_id      TEXT NOT NULL,
+            entry_kind    TEXT NOT NULL,
+            source_hash   TEXT NOT NULL,
+            target_kind   TEXT NOT NULL,
+            target_key    TEXT NOT NULL DEFAULT '',
+            note          TEXT NOT NULL DEFAULT '',
+            approved      INTEGER NOT NULL DEFAULT 0,
+            created_epoch INTEGER NOT NULL,
+            updated_epoch INTEGER NOT NULL,
+            handled       INTEGER NOT NULL DEFAULT 0,
+            deleted       INTEGER NOT NULL DEFAULT 0
+        )"
+    ))?;
+    if !has_column(db, schema, "lexicon_reviews", "handled")? {
+        db.execute_batch(&format!(
+            "ALTER TABLE {schema}.lexicon_reviews ADD COLUMN handled INTEGER NOT NULL DEFAULT 0"
+        ))?;
+    }
+    Ok(())
+}
+
 fn ensure_lexicon_entry_overrides(db: &Connection, schema: &str) -> rusqlite::Result<()> {
     db.execute_batch(&format!(
         "CREATE TABLE IF NOT EXISTS {schema}.lexicon_entry_overrides(
@@ -227,6 +252,8 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
     ensure_lexicon_entry_overrides(db, "sync")?;
     ensure_issue_reports(db, "progress")?;
     ensure_issue_reports(db, "sync")?;
+    ensure_lexicon_reviews(db, "progress")?;
+    ensure_lexicon_reviews(db, "sync")?;
     ensure_study_state(db, "progress")?;
     ensure_study_state(db, "sync")?;
     ensure_commentary_notes(db, "progress")?;
@@ -351,6 +378,27 @@ fn merge_attached_snapshot(db: &Connection) -> rusqlite::Result<()> {
              WHERE excluded.updated_epoch > progress.issue_reports.updated_epoch
                 OR (excluded.updated_epoch = progress.issue_reports.updated_epoch
                     AND excluded.deleted > progress.issue_reports.deleted);",
+        )?;
+        db.execute_batch(
+            "INSERT INTO progress.lexicon_reviews(
+                 id, entry_id, entry_kind, source_hash, target_kind, target_key,
+                 note, approved, created_epoch, updated_epoch, handled, deleted)
+             SELECT id, entry_id, entry_kind, source_hash, target_kind, target_key,
+                    note, approved, created_epoch, updated_epoch, handled, deleted
+             FROM sync.lexicon_reviews WHERE true
+             ON CONFLICT(id) DO UPDATE SET
+                entry_id=excluded.entry_id, entry_kind=excluded.entry_kind,
+                source_hash=excluded.source_hash, target_kind=excluded.target_kind,
+                target_key=excluded.target_key, note=excluded.note,
+                approved=excluded.approved,
+                created_epoch=MIN(progress.lexicon_reviews.created_epoch,
+                                  excluded.created_epoch),
+                updated_epoch=excluded.updated_epoch, handled=excluded.handled,
+                deleted=excluded.deleted
+             WHERE excluded.updated_epoch > progress.lexicon_reviews.updated_epoch
+                OR (excluded.updated_epoch = progress.lexicon_reviews.updated_epoch
+                    AND (excluded.deleted > progress.lexicon_reviews.deleted
+                         OR excluded.handled > progress.lexicon_reviews.handled));",
         )?;
         db.execute_batch(
             "INSERT INTO progress.lexicon_entry_overrides(

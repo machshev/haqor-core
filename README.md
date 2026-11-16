@@ -444,6 +444,24 @@ The admin server can also be run independently:
 cargo run -p haqor-admin -- server --bind 127.0.0.1:8787
 ```
 
+### Reviewing the Haqor lexicon on a phone
+
+Open **Lexicon review** in the app. When no source checkout is available, the
+review page reads the entries bundled in `haqor.db`. You can approve an entry
+whose text needs no changes, or leave a note on the whole entry, a word, a
+sense, or a doctrine statement. These decisions travel with ordinary progress
+sync. A note on an approved entry withdraws that phone approval.
+
+In the core checkout, run `cargo run -p haqor-admin -- review-lexicon` to
+review the synced queue in the terminal. The command uses the app's saved sync
+settings; `--server` and `--token` can be supplied instead, or `--progress`
+can read a local canonical progress database. Press `c` to copy a selected
+review with its entry, target, and source version for an LLM session. Mark
+items with Space and press `s` to resolve them. An approval signs off the JSON
+entry only if its bytes still match the version seen on the phone; a changed
+entry stays pending for another review. Notes are resolved after their changes
+have been handled.
+
 Build or test every package with:
 
 ```sh

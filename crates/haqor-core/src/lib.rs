@@ -31,6 +31,7 @@ pub mod memorise;
 /// Pronominal-ending inventory and stem/suffix splitting.
 pub mod pronoun_suffix;
 
+pub mod lexicon_review;
 /// Safe snapshot and merge support for synchronising learner progress.
 pub mod progress_sync;
 

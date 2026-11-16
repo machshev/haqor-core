@@ -77,6 +77,7 @@ Further reading:
 | `root` | The root as the database keys roots, so entries join to the words: bare consonants with no final forms, sin written `שׂ` and shin a bare `ש` (`נפש`, `מלכ`, `עשׂה`). A noun with no verbal root gives its own consonants. |
 | `homograph` | 1, 2… where two unrelated roots share consonants; left out otherwise. |
 | `status` | `draft` until the user has signed it off, then `reviewed`. |
+| `created` | Date the entry was first added to the lexicon, `YYYY-MM-DD`. Existing entries use their first Git addition date. |
 | `reviewed` | The date it was signed off, `YYYY-MM-DD`, while `status` is `reviewed`; left out of a draft. An `updated` later than it means the entry has changed since. |
 | `updated` | The date of the last substantive change, `YYYY-MM-DD`. |
 | `tags` | Kebab case topics to filter by (`life`, `death`, `body`, `speech`). |
@@ -138,6 +139,7 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 
 A proper name has its own entry in `names/<id>.json`, linked back to the
 entry of the root it is formed from, and tagged with the people who bear it.
+Name entries also record `created` and `updated` dates.
 The root's entry holds the evidence for the root's sense; the name entry
 cites what ties the name to it.
 
@@ -147,6 +149,7 @@ cites what ties the name to it.
 | `name` | The pointed name as the text spells it (`שִׁפְרָה`). |
 | `english` | The name in English (`Shiphrah`). |
 | `root` | The root key it is formed from: the root entry's own, or one of its words' `root`s. |
+| `additional_roots` | Other root keys in a compound name, in name order. These need not have entries yet; `root` and `entry` identify the linked root entry. |
 | `entry` | The `id` of that root's entry, which must exist. |
 | `word` | Optional: the `lemma` of the root entry's word the name is, where it is one (Shiphrah is the noun שִׁפְרָה, "fairness"). |
 | `status`, `reviewed`, `updated` | As for an entry. |
@@ -329,6 +332,14 @@ desktop app with this directory named:
 ```sh
 HAQOR_LEXICON_DIR=$HOME/base/haqor-core/data/lexicon flutter run -d linux
 ```
+
+On a phone, the same page reads the bundled `haqor.db` when the source
+directory is unavailable. It offers **Approve** for an entry needing no edit,
+or review notes on the entry, a word, a sense, or doctrine. These decisions
+sync with progress. In this checkout, `cargo run -p haqor-admin -- review-lexicon`
+opens the synced queue in the terminal; `c` copies a selected item for an LLM
+session, and `s` handles selected items. An approval changes the source file
+only if it still matches the version reviewed on the phone.
 
 A save is checked first (schema, verses, sources, across the whole lexicon)
 and nothing is written if it fails. Files are kept in the layout `jq .`

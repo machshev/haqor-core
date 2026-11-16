@@ -145,6 +145,9 @@ pub struct Entry {
     /// The date the entry was signed off, while `status` is `reviewed`.
     #[serde(default)]
     pub reviewed: Option<String>,
+    /// First added to the lexicon, for review ordering.
+    #[serde(default)]
+    pub created: Option<String>,
     pub updated: String,
     #[serde(default)]
     pub tags: Vec<String>,
@@ -180,6 +183,9 @@ pub struct NameEntry {
     pub english: String,
     /// The root key the name is formed from.
     pub root: String,
+    /// Other root keys in a compound name, in the order they occur.
+    #[serde(default)]
+    pub additional_roots: Vec<String>,
     /// The id of the root's entry, which this one links back to.
     pub entry: String,
     /// The lemma of the root entry's word the name is, or is formed from,
@@ -189,6 +195,8 @@ pub struct NameEntry {
     pub status: Status,
     #[serde(default)]
     pub reviewed: Option<String>,
+    #[serde(default)]
+    pub created: Option<String>,
     pub updated: String,
     /// The BDB keys whose tokens are this name.
     #[serde(default)]
@@ -972,6 +980,9 @@ impl Checker<'_> {
         if !is_date(&entry.updated) {
             self.fault(&at, "`updated` must be YYYY-MM-DD");
         }
+        if entry.created.as_ref().is_some_and(|date| !is_date(date)) {
+            self.fault(&at, "`created` must be YYYY-MM-DD");
+        }
         match (entry.status, &entry.reviewed) {
             (Status::Reviewed, None) => {
                 self.fault(
@@ -1095,7 +1106,22 @@ impl Checker<'_> {
         if !is_root(&name.root) {
             self.fault(&at, format_args!("root `{}` must be a root key", name.root));
         }
+        let mut roots = HashSet::from([name.root.as_str()]);
+        for root in &name.additional_roots {
+            if !is_root(root) {
+                self.fault(
+                    &at,
+                    format_args!("additional root `{root}` must be a root key"),
+                );
+            }
+            if !roots.insert(root) {
+                self.fault(&at, format_args!("root `{root}` listed twice"));
+            }
+        }
         self.status(&at, name.status, &name.reviewed, &name.updated);
+        if name.created.as_ref().is_some_and(|date| !is_date(date)) {
+            self.fault(&at, "`created` must be YYYY-MM-DD");
+        }
         self.text(&at, "gloss", &name.gloss);
         self.text(&at, "summary", &name.summary);
         match entries.iter().find(|e| e.id == name.entry) {
@@ -2048,6 +2074,17 @@ mod tests {
         assert!(is_name_entry(NAME));
         assert!(!is_name_entry(ENTRY));
         assert_eq!(check_name(NAME).unwrap().names, 1);
+    }
+
+    #[test]
+    fn accepts_a_compound_name_with_an_additional_root() {
+        let json = NAME.replace(
+            r#""root": "נפש""#,
+            r#""root": "נפש", "additional_roots": ["צדק"]"#,
+        );
+        assert_eq!(check_name(&json).unwrap().names, 1);
+        let name: NameEntry = serde_json::from_str(&json).unwrap();
+        assert_eq!(name.additional_roots, ["צדק"]);
     }
 
     #[test]

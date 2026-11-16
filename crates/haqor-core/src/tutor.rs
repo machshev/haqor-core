@@ -1005,6 +1005,22 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
             updated_epoch INTEGER NOT NULL,
             deleted       INTEGER NOT NULL DEFAULT 0
          );
+         CREATE TABLE IF NOT EXISTS progress.lexicon_reviews(
+            id            TEXT PRIMARY KEY,
+            entry_id      TEXT NOT NULL,
+            entry_kind    TEXT NOT NULL,
+            source_hash   TEXT NOT NULL,
+            target_kind   TEXT NOT NULL,
+            target_key    TEXT NOT NULL DEFAULT '',
+            note          TEXT NOT NULL DEFAULT '',
+            approved      INTEGER NOT NULL DEFAULT 0,
+            created_epoch INTEGER NOT NULL,
+            updated_epoch INTEGER NOT NULL,
+            handled       INTEGER NOT NULL DEFAULT 0,
+            deleted       INTEGER NOT NULL DEFAULT 0
+         );
+         CREATE INDEX IF NOT EXISTS progress.idx_lexicon_reviews_entry
+             ON lexicon_reviews(entry_kind, entry_id);
          CREATE TABLE IF NOT EXISTS progress.study_state(
             id                  INTEGER PRIMARY KEY CHECK (id = 1),
             workspaces_json     TEXT    NOT NULL,
@@ -1019,6 +1035,12 @@ pub fn init_progress_schema(db: &Connection) -> rusqlite::Result<()> {
          );",
     )?;
     crate::memorise::init_memory_schema(db)?;
+
+    if !crate::progress_sync::has_column(db, "progress", "lexicon_reviews", "handled")? {
+        db.execute_batch(
+            "ALTER TABLE progress.lexicon_reviews ADD COLUMN handled INTEGER NOT NULL DEFAULT 0",
+        )?;
+    }
 
     let issue_reports_has_deleted = {
         let mut stmt = db.prepare("PRAGMA progress.table_info(issue_reports)")?;

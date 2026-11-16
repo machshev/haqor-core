@@ -123,6 +123,22 @@ enum Command {
         #[arg(long, default_value = "data/issue_reports.json")]
         output: PathBuf,
     },
+    /// Review phone lexicon approvals and targeted notes in the TUI.
+    ReviewLexicon {
+        /// Canonical learner-progress database, instead of the sync server.
+        #[arg(long, conflicts_with = "server")]
+        progress: Option<PathBuf>,
+        /// Sync-server URL; defaults to the app's saved setting.
+        #[arg(long, conflicts_with = "progress")]
+        server: Vec<String>,
+        #[arg(long)]
+        pin: Option<String>,
+        #[arg(long)]
+        token: Option<String>,
+        /// Checkout directory where approved entry files are signed off.
+        #[arg(long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+    },
 }
 
 fn remote_settings(
@@ -218,6 +234,22 @@ fn main() -> Result<()> {
                 haqor_admin::review_issue_reports_from_server(&remote, &output)?
             };
             println!("Resolved {count} app issue report(s).");
+            Ok(())
+        }
+        Command::ReviewLexicon {
+            progress,
+            server,
+            pin,
+            token,
+            lexicon,
+        } => {
+            let count = if let Some(progress) = progress {
+                haqor_admin::review_lexicon(&progress, &lexicon)?
+            } else {
+                let remote = remote_settings(server, pin, token)?;
+                haqor_admin::review_lexicon_from_server(&remote, &lexicon)?
+            };
+            println!("Handled {count} lexicon review decision(s).");
             Ok(())
         }
     }

@@ -41,6 +41,7 @@ pub(super) struct ActionResult {
 /// Show reports and run pull/sync actions without leaving the TUI.
 pub(super) fn review(
     mut reports: Vec<IssueReport>,
+    title: &'static str,
     mut action: impl FnMut(Action, &[IssueReport]) -> Result<ActionResult>,
 ) -> Result<usize> {
     enable_raw_mode()?;
@@ -61,6 +62,7 @@ pub(super) fn review(
             draw(
                 frame,
                 &reports,
+                title,
                 selected,
                 &resolving,
                 &status,
@@ -195,6 +197,7 @@ pub(super) fn review(
 fn draw(
     frame: &mut ratatui::Frame,
     reports: &[IssueReport],
+    title: &'static str,
     selected: usize,
     resolving: &[bool],
     status: &str,
@@ -251,17 +254,13 @@ fn draw(
     let mut state = ListState::default();
     state.select(Some(selected));
     let list = List::new(items)
-        .block(
-            Block::default()
-                .borders(Borders::ALL)
-                .title(" App issue reports "),
-        )
+        .block(Block::default().borders(Borders::ALL).title(title))
         .highlight_style(Style::default().bg(Color::DarkGray));
     frame.render_stateful_widget(list, areas[0], &mut state);
 
     if reports.is_empty() {
         frame.render_widget(
-            Paragraph::new("No active app issue reports.").block(
+            Paragraph::new(format!("No active {}.", title.trim())).block(
                 Block::default()
                     .borders(Borders::ALL)
                     .title(" Selected report "),
@@ -378,8 +377,16 @@ fn llm_snippet(report: &IssueReport) -> String {
         .map(|value| compact_json(&value))
         .unwrap_or_else(|_| report.context_json.clone());
     format!(
-        "[Haqor issue]\ntype: {}\nid: {}\nnote: {}\ncontext: {}",
-        report.report_type, report.id, report.note, context
+        "[Haqor {}]\ntype: {}\nid: {}\nnote: {}\ncontext: {}",
+        if report.report_type.starts_with("lexicon") {
+            "lexicon review"
+        } else {
+            "issue"
+        },
+        report.report_type,
+        report.id,
+        report.note,
+        context
     )
 }
 

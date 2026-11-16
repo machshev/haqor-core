@@ -4180,6 +4180,60 @@ impl Bible {
             .collect())
     }
 
+    /// All bundled lexicon JSON for the review index. The app can browse it
+    /// without a local source checkout.
+    pub fn haqor_lexicon_review_index(
+        &self,
+    ) -> rusqlite::Result<(Vec<(String, String)>, Vec<(String, String)>)> {
+        let read = |table: &str| -> rusqlite::Result<Vec<(String, String)>> {
+            if !self.has_table(table)? {
+                return Ok(Vec::new());
+            }
+            let mut stmt = self
+                .db
+                .prepare(&format!("SELECT id, json FROM data.{table} ORDER BY id"))?;
+            stmt.query_map([], |row| Ok((row.get(0)?, row.get(1)?)))?
+                .collect()
+        };
+        Ok((read("haqor_lexicon")?, read("haqor_lexicon_name")?))
+    }
+
+    /// One bundled entry by id for detailed review.
+    pub fn haqor_lexicon_review_entry(
+        &self,
+        id: &str,
+        is_name: bool,
+    ) -> rusqlite::Result<Option<String>> {
+        let table = if is_name {
+            "haqor_lexicon_name"
+        } else {
+            "haqor_lexicon"
+        };
+        if !self.has_table(table)? {
+            return Ok(None);
+        }
+        self.db
+            .query_row(
+                &format!("SELECT json FROM data.{table} WHERE id = ?1"),
+                [id],
+                |row| row.get(0),
+            )
+            .optional()
+    }
+
+    pub fn lexicon_reviews(
+        &self,
+    ) -> rusqlite::Result<Vec<crate::lexicon_review::LexiconReviewRecord>> {
+        crate::lexicon_review::read(&self.db)
+    }
+
+    pub fn save_lexicon_review(
+        &self,
+        record: &crate::lexicon_review::LexiconReviewRecord,
+    ) -> rusqlite::Result<()> {
+        crate::lexicon_review::save(&self.db, record)
+    }
+
     /// The Haqor lexicon entry (ADR 7) for a word, as its id and JSON: the
     /// entry whose root, or one of whose words' roots, is `root`, or which
     /// holds a BDB entry of `root`'s tree; for a rootless word (`root` empty)
