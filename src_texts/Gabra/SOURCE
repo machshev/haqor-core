@@ -1,0 +1,17 @@
+Ġabra Maltese Open Lexicon
+
+John J. Camilleri and other Ġabra contributors, Malta Language Resource Server, University of Malta.
+Lexical data licensed under Creative Commons Attribution 3.0 Unported.
+https://creativecommons.org/licenses/by/3.0/
+Licence statement in Camilleri (2013), A computational grammar and lexicon for Maltese, Appendix D, p. 100.
+https://publications.lib.chalmers.se/records/fulltext/185320/185320.pdf
+Upstream project: https://github.com/MLRS/gabra-api
+
+Local derivative of the entry snapshot distributed by Jingyuan Zheng:
+https://github.com/Jingyuan-Zheng/gabra-maltese-dictionary/blob/6f5ca8bb8bcfbfc18e1b27aab91c12012e134e91/sources/gabra/Body.data
+Distributor's attribution and adaptation notes:
+https://github.com/Jingyuan-Zheng/gabra-maltese-dictionary/blob/6f5ca8bb8bcfbfc18e1b27aab91c12012e134e91/docs/ATTRIBUTION.md
+Source SHA-256: c0c6b8b73f74661fc26cf91e1a42307e2779795c0e93875861cfdb6173e7757d
+Retrieved 2026-11-18. The underlying BSON snapshot date is unknown.
+
+lexemes.jsonl contains the 21,083 entry IDs, source headwords and nonempty leaf-element texts in source order. Haqor extracted them from the packaged XML, discarded layout and stripped surrounding whitespace. Wordform indexes are outside this extract. The upstream and distribution projects do not endorse this adaptation.
