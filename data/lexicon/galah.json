@@ -1,0 +1,1913 @@
+{
+  "id": "galah",
+  "root": "גלה",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "revelation",
+    "uncovering",
+    "nakedness",
+    "exile",
+    "departure",
+    "prophecy",
+    "return-of-christ"
+  ],
+  "gloss": "uncover, lay bare, reveal; depart, go into exile",
+  "summary": "To uncover what was covered, and so to lay bare and to reveal; and, of people, to leave their place bare, to depart and go into exile. The piel uncovers nakedness (the laws of Lev 18 and 20), lays bare a city's shame or foundations in judgment, and reveals or makes known; the niphal is to be uncovered or to be revealed, above all of God revealing himself and his word (1Sa 3:21; Isa 40:5; 53:1); the qal uncovers the ear, telling someone a thing, and Yahweh reveals his secret counsel to the prophets (Amo 3:7); the same qal is to depart, as the glory departed from Israel (1Sa 4:21), and to go into exile, which the hiphil causes and the hophal suffers: Israel to Assyria, Judah to Babylon. The nouns גּוֹלָה and גָּלוּת are the exile and the exiles, the community of Jer 29, Ezekiel and Ezra. Arabic jalā shows the same two sides, “be uncovered, disclose” and “emigrate, expel”, and so does Phoenician gly (remove, reveal, exile); Biblical Aramaic גְּלָא reveals mysteries (Dan 2) and deports (Ezr 5:12), and the Peshitta's גְּלָא and גֶּלְיָנָא are its words for the revealing of Christ at his return.",
+  "words": [
+    {
+      "lemma": "גָּלָה",
+      "pos": "verb",
+      "gloss": "uncover, lay bare, reveal; be revealed; depart, go into exile; carry into exile",
+      "bdb": [
+        "c.ca.aa"
+      ],
+      "cognate_ids": [
+        "ar-jala",
+        "ar-jala-go",
+        "phn-gly",
+        "arc-gele"
+      ],
+      "summary": "About 190 times, in seven stems. Its core is the removal of a covering, so that what was hidden lies open: a body, an ear, eyes, a foundation, a secret, a land. The opposites are כָּסָה “cover” (Isa 26:21; Pro 11:13) and סָתַר “hide” (Deu 29:28; Pro 27:5). Going into exile is the same act seen from the land: its people are taken off it and it is left bare (Jdg 18:30, “until the day of the exile of the land”). The brief's five tokens with no stem are גַּל “heap” of גלל, filed here by spelling; Psa 119:18 גַּל is the piel imperative of this verb.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "uncover (the ear), tell; open, uncovered; depart; go into exile",
+          "senses": [
+            {
+              "id": "uncover-ear",
+              "gloss": "uncover the ear: tell, disclose",
+              "definition": "With אֹזֶן, to uncover someone's ear: to tell him something he did not know, a plan, a danger or a word of Yahweh; and without it, to disclose a secret.",
+              "evidence": [
+                {
+                  "ref": "1Sa.9.15",
+                  "role": "defining",
+                  "note": "“Yahweh had uncovered the ear of Samuel a day before Saul came, saying …”: he told him beforehand."
+                },
+                {
+                  "ref": "1Sa.20.2",
+                  "role": "defining",
+                  "note": "“My father does nothing great or small וְלֹא יִגְלֶה אֶת־אָזְנִי”: does not tell me."
+                },
+                {
+                  "ref": "1Sa.20.12",
+                  "to": "1Sa.20.13"
+                },
+                {
+                  "ref": "1Sa.22.8",
+                  "note": "“There is none who uncovers my ear”: none told Saul of the covenant with David."
+                },
+                {
+                  "ref": "1Sa.22.17"
+                },
+                {
+                  "ref": "2Sa.7.27",
+                  "role": "defining",
+                  "note": "“You have uncovered the ear of your servant, saying, ‘I will build you a house’”: the promise to David."
+                },
+                {
+                  "ref": "1Ch.17.25"
+                },
+                {
+                  "ref": "Rut.4.4",
+                  "note": "Boaz: “I said I would uncover your ear, saying, Buy it.”"
+                },
+                {
+                  "ref": "Job.33.16",
+                  "note": "God “uncovers the ear of men and seals their instruction”."
+                },
+                {
+                  "ref": "Job.36.10"
+                },
+                {
+                  "ref": "Job.36.15"
+                },
+                {
+                  "ref": "Amo.3.7",
+                  "role": "defining",
+                  "note": "“The Lord Yahweh does nothing unless he has revealed (גָּלָה) his secret counsel (סוֹדוֹ) to his servants the prophets.”"
+                },
+                {
+                  "ref": "Pro.20.19",
+                  "note": "“He who goes about as a slanderer reveals a secret (גּוֹלֶה סּוֹד).”"
+                }
+              ],
+              "kin": [
+                "arc-reveal"
+              ]
+            },
+            {
+              "id": "open-uncovered",
+              "gloss": "(passive participle) open, uncovered",
+              "definition": "Open to view: a deed left unsealed beside the sealed one, an edict published to all peoples, eyes uncovered to see a vision.",
+              "evidence": [
+                {
+                  "ref": "Jer.32.11",
+                  "role": "defining",
+                  "note": "“The deed of purchase, the sealed (הֶחָתוּם) … and the open (הַגָּלוּי)”: open set against sealed."
+                },
+                {
+                  "ref": "Jer.32.14"
+                },
+                {
+                  "ref": "Est.3.14",
+                  "note": "A copy of the writing “to be given as law in every province, open (גָּלוּי) to all the peoples”."
+                },
+                {
+                  "ref": "Est.8.13"
+                },
+                {
+                  "ref": "Num.24.4",
+                  "role": "defining",
+                  "note": "Balaam, “who sees the vision of the Almighty, falling down, and uncovered of eyes (וּגְלוּי עֵינָיִם)”."
+                },
+                {
+                  "ref": "Num.24.16"
+                }
+              ]
+            },
+            {
+              "id": "depart",
+              "gloss": "depart, be gone",
+              "definition": "To go away and leave a place bare of what was in it: the glory from Israel, the joy from the land, the wealth from a house.",
+              "evidence": [
+                {
+                  "ref": "1Sa.4.21",
+                  "role": "defining",
+                  "note": "She named the child Ichabod, “saying, The glory has departed (גָּלָה) from Israel, because the ark of God was taken”."
+                },
+                {
+                  "ref": "1Sa.4.22"
+                },
+                {
+                  "ref": "Hos.10.5",
+                  "note": "The calf of Beth-aven, “for its glory, because it has departed from it”."
+                },
+                {
+                  "ref": "Isa.24.11",
+                  "role": "defining",
+                  "note": "“All joy is darkened, the gladness of the land is gone (גָּלָה).”"
+                },
+                {
+                  "ref": "Job.20.28",
+                  "note": "“The increase of his house will depart, flowing away in the day of his anger.”"
+                },
+                {
+                  "ref": "Pro.27.25",
+                  "note": "“גָּלָה חָצִיר and the new grass appears”: either the hay is removed or it shows itself; the verse does not decide."
+                }
+              ],
+              "cognate_ids": [
+                "uga-gly"
+              ]
+            },
+            {
+              "id": "go-into-exile",
+              "gloss": "go into exile",
+              "definition": "Of a people, to be taken off their land into a foreign one, as the end of their unfaithfulness; of one man, to be an exile from his place.",
+              "evidence": [
+                {
+                  "ref": "2Ki.17.23",
+                  "role": "defining",
+                  "note": "“Yahweh removed Israel from his face, as he had spoken by all his servants the prophets, and Israel went into exile (וַיִּגֶל) from its land to Assyria to this day.”"
+                },
+                {
+                  "ref": "2Ki.25.21",
+                  "role": "defining",
+                  "note": "“And Judah went into exile from its land.”"
+                },
+                {
+                  "ref": "Jer.52.27"
+                },
+                {
+                  "ref": "Jdg.18.30",
+                  "note": "The Danite priesthood lasted “until the day of the exile of the land”."
+                },
+                {
+                  "ref": "Isa.5.13",
+                  "role": "defining",
+                  "note": "“Therefore my people go into exile for lack of knowledge.”"
+                },
+                {
+                  "ref": "Isa.49.21",
+                  "note": "Zion: “I was bereaved and barren, an exile (גֹּלָה) and put away.”"
+                },
+                {
+                  "ref": "Jer.1.3",
+                  "note": "Jeremiah prophesied “until the exile of Jerusalem in the fifth month”."
+                },
+                {
+                  "ref": "Ezk.12.3",
+                  "role": "defining",
+                  "note": "“Make for yourself an exile's baggage, and go into exile by day before their eyes; you shall go into exile from your place to another place.”"
+                },
+                {
+                  "ref": "Ezk.39.23",
+                  "note": "“The nations shall know that the house of Israel went into exile for their iniquity.”"
+                },
+                {
+                  "ref": "Amo.1.5"
+                },
+                {
+                  "ref": "Amo.5.5",
+                  "note": "“Gilgal shall surely go into exile (הַגִּלְגָּל גָּלֹה יִגְלֶה).”"
+                },
+                {
+                  "ref": "Amo.6.7",
+                  "note": "“They shall go into exile at the head of the exiles.”"
+                },
+                {
+                  "ref": "Amo.7.11"
+                },
+                {
+                  "ref": "Amo.7.17"
+                },
+                {
+                  "ref": "Mic.1.16"
+                },
+                {
+                  "ref": "Lam.1.3",
+                  "note": "“Judah has gone into exile because of affliction … she dwells among the nations, she finds no rest.”"
+                },
+                {
+                  "ref": "2Sa.15.19",
+                  "note": "David to Ittai: “You are a foreigner, and also an exile from your place.”"
+                },
+                {
+                  "ref": "2Ki.24.14",
+                  "note": "גּוֹלֶה, the participle: “exiling” or “as exiles”."
+                }
+              ],
+              "kin": [
+                "exiles-community",
+                "exile-state",
+                "exile-captivity",
+                "arc-exile"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be uncovered, laid bare; be revealed, reveal oneself; show oneself; be removed",
+          "senses": [
+            {
+              "id": "be-revealed",
+              "gloss": "be revealed; (of God) reveal himself",
+              "definition": "Of God, his word, his glory, his arm or his righteousness: to be made known to men who did not know it, by his own act.",
+              "evidence": [
+                {
+                  "ref": "Gen.35.7",
+                  "role": "defining",
+                  "note": "Jacob named the place El-bethel, “because there God revealed himself (נִגְלוּ) to him when he fled from his brother”."
+                },
+                {
+                  "ref": "1Sa.2.27",
+                  "note": "“Did I not plainly reveal myself to the house of your father when they were in Egypt?”"
+                },
+                {
+                  "ref": "1Sa.3.7",
+                  "role": "defining",
+                  "note": "“Samuel did not yet know Yahweh, and the word of Yahweh was not yet revealed to him”: revealing is parallel to knowing."
+                },
+                {
+                  "ref": "1Sa.3.21",
+                  "role": "defining",
+                  "note": "“Yahweh revealed himself to Samuel in Shiloh by the word of Yahweh.”"
+                },
+                {
+                  "ref": "Isa.22.14",
+                  "note": "“It was revealed in my ears by Yahweh of armies.”"
+                },
+                {
+                  "ref": "Isa.40.5",
+                  "role": "defining",
+                  "note": "“The glory of Yahweh shall be revealed, and all flesh shall see it together”: revealing is parallel to seeing."
+                },
+                {
+                  "ref": "Isa.53.1",
+                  "role": "defining",
+                  "note": "“To whom has the arm of Yahweh been revealed?” Quoted in Jhn 12:38."
+                },
+                {
+                  "ref": "Jhn.12.38",
+                  "note": "The Peshitta renders Isaiah's נִגְלָתָה with אֶתְגְּלִי, the same root."
+                },
+                {
+                  "ref": "Isa.56.1",
+                  "note": "“My salvation is near to come, and my righteousness to be revealed.”"
+                },
+                {
+                  "ref": "Isa.23.1",
+                  "note": "“From the land of Kittim it is revealed to them”: the news is made known."
+                },
+                {
+                  "ref": "Deu.29.28",
+                  "role": "defining",
+                  "note": "“The hidden things (הַנִּסְתָּרֹת) belong to Yahweh our God, but the revealed things (הַנִּגְלֹת) belong to us and to our sons for ever, to do all the words of this law.”"
+                },
+                {
+                  "ref": "Dan.10.1",
+                  "note": "“A word was revealed to Daniel … and the word was true.”"
+                }
+              ],
+              "kin": [
+                "arc-reveal",
+                "syc-be-revealed"
+              ]
+            },
+            {
+              "id": "show-oneself",
+              "gloss": "show oneself, come out into view",
+              "definition": "Of men, to come out from hiding into the open where they are seen.",
+              "evidence": [
+                {
+                  "ref": "1Sa.14.8",
+                  "role": "defining",
+                  "note": "“We will cross over to the men and show ourselves (וְנִגְלֵינוּ) to them.”"
+                },
+                {
+                  "ref": "1Sa.14.11",
+                  "role": "defining",
+                  "note": "They showed themselves, and the Philistines said, “Hebrews are coming out of the holes where they hid themselves.”"
+                },
+                {
+                  "ref": "Isa.49.9",
+                  "note": "“To those in darkness, Show yourselves!”, beside “to the prisoners, Come out”."
+                }
+              ]
+            },
+            {
+              "id": "be-uncovered",
+              "gloss": "be uncovered, laid bare",
+              "definition": "Of nakedness, of foundations or of sin: to be laid open to view, often as shame or judgment.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.26",
+                  "role": "defining",
+                  "note": "“You shall not go up by steps to my altar, that your nakedness be not uncovered on it.”"
+                },
+                {
+                  "ref": "2Sa.6.20",
+                  "note": "Michal: the king “uncovered himself today in the eyes of the maidservants, as one of the worthless fellows shamelessly uncovers himself”."
+                },
+                {
+                  "ref": "Isa.47.3",
+                  "role": "defining",
+                  "note": "“Your nakedness shall be uncovered, and your shame shall be seen.”"
+                },
+                {
+                  "ref": "Jer.13.22",
+                  "note": "“For the greatness of your iniquity your skirts are uncovered.”"
+                },
+                {
+                  "ref": "Ezk.16.36"
+                },
+                {
+                  "ref": "Ezk.16.57",
+                  "note": "“Before your wickedness was uncovered.”"
+                },
+                {
+                  "ref": "Ezk.23.29"
+                },
+                {
+                  "ref": "Hos.7.1",
+                  "note": "“When I would heal Israel, the iniquity of Ephraim was uncovered.”"
+                },
+                {
+                  "ref": "Ezk.21.29",
+                  "note": "“Your transgressions are uncovered, so that your sins appear.”"
+                },
+                {
+                  "ref": "Pro.26.26",
+                  "role": "defining",
+                  "note": "“Hatred is covered (תִּכַּסֶּה) by deceit; his wickedness will be uncovered in the assembly”: opposite covered."
+                },
+                {
+                  "ref": "Psa.18.16",
+                  "note": "“The foundations of the world were uncovered at your rebuke, Yahweh.”"
+                },
+                {
+                  "ref": "2Sa.22.16"
+                },
+                {
+                  "ref": "Ezk.13.14",
+                  "note": "The daubed wall thrown down, “and its foundation shall be uncovered”."
+                },
+                {
+                  "ref": "Job.38.17",
+                  "note": "“Have the gates of death been revealed to you?”"
+                }
+              ]
+            },
+            {
+              "id": "be-removed",
+              "gloss": "be removed, carried off",
+              "definition": "To be taken away like a tent struck and carried off, as the qal's “depart”.",
+              "evidence": [
+                {
+                  "ref": "Isa.38.12",
+                  "role": "defining",
+                  "note": "Hezekiah: “My dwelling is plucked up and removed (וְנִגְלָה) from me like a shepherd's tent.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "uncover (nakedness); lay bare; reveal, make known; open (the eyes)",
+          "senses": [
+            {
+              "id": "uncover-nakedness",
+              "gloss": "uncover the nakedness of",
+              "definition": "To uncover a near relative's nakedness: to lie with her, forbidden in the law of Yahweh; also to uncover a man's feet, as Ruth did.",
+              "evidence": [
+                {
+                  "ref": "Lev.18.6",
+                  "role": "defining",
+                  "note": "“No man shall approach any who is near of kin to him, to uncover nakedness. I am Yahweh.”"
+                },
+                {
+                  "ref": "Lev.18.7",
+                  "to": "Lev.18.19"
+                },
+                {
+                  "ref": "Lev.20.11"
+                },
+                {
+                  "ref": "Lev.20.17",
+                  "role": "defining",
+                  "note": "“If a man takes his sister and sees her nakedness … he has uncovered his sister's nakedness.”"
+                },
+                {
+                  "ref": "Lev.20.18",
+                  "to": "Lev.20.21"
+                },
+                {
+                  "ref": "Deu.23.1",
+                  "note": "“A man shall not take his father's wife, and shall not uncover his father's skirt.”"
+                },
+                {
+                  "ref": "Deu.27.20"
+                },
+                {
+                  "ref": "Ezk.22.10"
+                },
+                {
+                  "ref": "Rut.3.4",
+                  "note": "“Uncover his feet and lie down.”"
+                },
+                {
+                  "ref": "Rut.3.7"
+                }
+              ]
+            },
+            {
+              "id": "lay-bare",
+              "gloss": "lay bare, strip; take off a covering",
+              "definition": "To strip away a covering: in judgment, to expose a city or nation's nakedness to its lovers and enemies, to lay bare its foundations or hiding places, or to uncover its sins.",
+              "evidence": [
+                {
+                  "ref": "Ezk.16.37",
+                  "role": "defining",
+                  "note": "“I will uncover your nakedness to them, and they shall see all your nakedness.”"
+                },
+                {
+                  "ref": "Hos.2.12",
+                  "note": "“Now I will uncover her lewdness in the eyes of her lovers.”"
+                },
+                {
+                  "ref": "Nam.3.5"
+                },
+                {
+                  "ref": "Ezk.23.10"
+                },
+                {
+                  "ref": "Ezk.23.18"
+                },
+                {
+                  "ref": "Isa.47.2",
+                  "note": "Babylon: “uncover your veil, strip off the skirt, uncover the leg.”"
+                },
+                {
+                  "ref": "Isa.57.8"
+                },
+                {
+                  "ref": "Mic.1.6",
+                  "note": "Samaria: “I will pour down her stones into the valley, and uncover her foundations.”"
+                },
+                {
+                  "ref": "Jer.49.10",
+                  "role": "defining",
+                  "note": "“I have stripped Esau bare, I have uncovered his hiding places, and he shall not be able to hide himself.”"
+                },
+                {
+                  "ref": "Isa.22.8",
+                  "note": "“He removed the covering of Judah.”"
+                },
+                {
+                  "ref": "Job.41.5",
+                  "note": "“Who can strip off its outer garment?”"
+                },
+                {
+                  "ref": "Lam.4.22",
+                  "note": "“He will punish your iniquity, daughter of Edom; he will uncover your sins.”"
+                },
+                {
+                  "ref": "Lam.2.14",
+                  "note": "“Your prophets have not uncovered your iniquity, to turn back your captivity.”"
+                },
+                {
+                  "ref": "Isa.26.21",
+                  "role": "defining",
+                  "note": "“The earth shall uncover her blood, and shall no more cover (תְכַסֶּה) her slain”: opposite cover."
+                }
+              ]
+            },
+            {
+              "id": "reveal-make-known",
+              "gloss": "reveal, make known, disclose",
+              "definition": "To bring into the open what was hidden or unknown: a cause, a secret, the deep things of darkness, Yahweh's salvation before the nations.",
+              "evidence": [
+                {
+                  "ref": "Psa.98.2",
+                  "role": "defining",
+                  "note": "“Yahweh has made known (הוֹדִיעַ) his salvation; in the sight of the nations he has revealed (גִּלָּה) his righteousness”: parallel to make known."
+                },
+                {
+                  "ref": "Job.12.22",
+                  "role": "defining",
+                  "note": "“He uncovers deep things out of darkness, and brings out to light the shadow of death.”"
+                },
+                {
+                  "ref": "Jer.11.20",
+                  "note": "“To you I have revealed my cause.”"
+                },
+                {
+                  "ref": "Jer.20.12"
+                },
+                {
+                  "ref": "Jer.33.6",
+                  "note": "“I will heal them and reveal to them abundance of peace and truth.”"
+                },
+                {
+                  "ref": "Pro.11.13",
+                  "role": "defining",
+                  "note": "“He who goes about as a slanderer reveals a secret, but the faithful of spirit covers (מְכַסֶּה) a matter.”"
+                },
+                {
+                  "ref": "Pro.25.9",
+                  "note": "“Do not reveal the secret of another.”"
+                },
+                {
+                  "ref": "Isa.16.3",
+                  "note": "“Hide the outcasts; do not betray (אַל־תְּגַלִּי) the fugitive.”"
+                }
+              ],
+              "kin": [
+                "arc-reveal",
+                "syc-reveal"
+              ]
+            },
+            {
+              "id": "open-eyes",
+              "gloss": "uncover (the eyes), open",
+              "definition": "To uncover a man's eyes so that he sees what was there and hidden from him.",
+              "evidence": [
+                {
+                  "ref": "Num.22.31",
+                  "role": "defining",
+                  "note": "“Yahweh uncovered the eyes of Balaam, and he saw the angel of Yahweh standing in the way.”"
+                },
+                {
+                  "ref": "Psa.119.18",
+                  "role": "defining",
+                  "note": "“Uncover my eyes, that I may behold wonderful things out of your law.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be uncovered, open",
+          "senses": [
+            {
+              "id": "pual-open",
+              "gloss": "open, uncovered",
+              "definition": "Open, not hidden; once perhaps of a city or its queen stripped and carried off.",
+              "evidence": [
+                {
+                  "ref": "Pro.27.5",
+                  "role": "defining",
+                  "note": "“Better is open (מְגֻלָּה) rebuke than hidden (מְסֻתָּרֶת) love.”"
+                },
+                {
+                  "ref": "Nam.2.8",
+                  "note": "Nineveh: “it is decreed: she is uncovered (or exiled), she is carried away.” Either sense fits the verse."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "carry into exile, deport",
+          "senses": [
+            {
+              "id": "carry-into-exile",
+              "gloss": "carry into exile",
+              "definition": "To take a people off their land into another: the kings of Assyria and Babylon did it, and Yahweh did it by their hand.",
+              "evidence": [
+                {
+                  "ref": "2Ki.15.29",
+                  "role": "defining",
+                  "note": "Tiglath-pileser took Galilee, all the land of Naphtali, “and carried them into exile to Assyria”."
+                },
+                {
+                  "ref": "2Ki.17.6",
+                  "note": "“The king of Assyria took Samaria and carried Israel into exile to Assyria.”"
+                },
+                {
+                  "ref": "2Ki.17.11"
+                },
+                {
+                  "ref": "2Ki.17.26",
+                  "to": "2Ki.17.28"
+                },
+                {
+                  "ref": "2Ki.17.33"
+                },
+                {
+                  "ref": "2Ki.18.11"
+                },
+                {
+                  "ref": "2Ki.16.9"
+                },
+                {
+                  "ref": "2Ki.24.14",
+                  "role": "defining",
+                  "note": "Nebuchadnezzar “carried into exile all Jerusalem … none remained except the poorest people of the land”."
+                },
+                {
+                  "ref": "2Ki.24.15"
+                },
+                {
+                  "ref": "2Ki.25.11"
+                },
+                {
+                  "ref": "Jer.20.4"
+                },
+                {
+                  "ref": "Jer.29.4",
+                  "role": "defining",
+                  "note": "“Thus says Yahweh … to all the exiles whom I have carried into exile from Jerusalem to Babylon”: Yahweh owns the act."
+                },
+                {
+                  "ref": "Jer.29.7"
+                },
+                {
+                  "ref": "Jer.29.14",
+                  "note": "“I will bring you back to the place from which I carried you into exile.”"
+                },
+                {
+                  "ref": "Jer.52.28",
+                  "to": "Jer.52.30"
+                },
+                {
+                  "ref": "Ezk.39.28",
+                  "note": "“In my carrying them into exile among the nations, and gathering them to their own land.”"
+                },
+                {
+                  "ref": "Amo.1.6",
+                  "note": "Gaza “carried into exile a whole exile, to deliver them to Edom”."
+                },
+                {
+                  "ref": "Amo.5.27",
+                  "note": "“I will carry you into exile beyond Damascus.”"
+                },
+                {
+                  "ref": "1Ch.5.26"
+                },
+                {
+                  "ref": "1Ch.5.41",
+                  "note": "“When Yahweh carried Judah and Jerusalem into exile by the hand of Nebuchadnezzar.”"
+                },
+                {
+                  "ref": "2Ch.36.20"
+                },
+                {
+                  "ref": "Ezr.2.1"
+                },
+                {
+                  "ref": "Est.2.6"
+                }
+              ],
+              "kin": [
+                "arc-deport"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be carried into exile",
+          "senses": [
+            {
+              "id": "be-exiled",
+              "gloss": "be carried into exile",
+              "definition": "To be taken into exile, the passive of the hiphil.",
+              "evidence": [
+                {
+                  "ref": "Jer.13.19",
+                  "role": "defining",
+                  "note": "“All Judah is carried into exile, wholly carried into exile.”"
+                },
+                {
+                  "ref": "Jer.40.1",
+                  "note": "Jeremiah bound among “all the exiles of Jerusalem and Judah who were carried into exile to Babylon”."
+                },
+                {
+                  "ref": "Jer.40.7"
+                },
+                {
+                  "ref": "Est.2.6"
+                },
+                {
+                  "ref": "1Ch.9.1",
+                  "role": "defining",
+                  "note": "“Judah was carried into exile to Babylon for their unfaithfulness.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "uncover oneself; reveal itself",
+          "senses": [
+            {
+              "id": "uncover-oneself",
+              "gloss": "uncover oneself; show itself",
+              "definition": "Of Noah drunk, to lie uncovered; of a fool's heart, to show itself.",
+              "evidence": [
+                {
+                  "ref": "Gen.9.21",
+                  "role": "defining",
+                  "note": "“He drank of the wine and was drunk, and he uncovered himself in his tent.”"
+                },
+                {
+                  "ref": "Pro.18.2",
+                  "note": "“A fool has no delight in understanding, but only in his heart's revealing itself.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀποκαλύπτω",
+          "gloss": "uncover, reveal",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Sa.3.21, נִגְלָה → ἀπεκαλύφθη; Isa.53.1, נִגְלָתָה → ἀπεκαλύφθη; Amo.3.7, גָּלָה → ἀποκαλύψῃ; ἀποκαλύπτω renders גָּלָה ×57"
+            },
+            {
+              "ref": "Jhn.12.38",
+              "role": "defining",
+              "note": "Quoting Isa 53:1: “to whom has the arm of the Lord been revealed (ἀπεκαλύφθη)?”"
+            },
+            {
+              "ref": "Mat.11.25",
+              "note": "“You have hidden these things from the wise and understanding and revealed them to infants”: hidden against revealed, as Deu 29:28."
+            },
+            {
+              "ref": "Rom.8.18",
+              "note": "“The glory that is to be revealed to us.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνακαλύπτω",
+          "gloss": "uncover, unveil",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ἀνακαλύπτω renders גָּלָה ×13, chiefly the piel of uncovering"
+            },
+            {
+              "ref": "2Co.3.18",
+              "note": "“We all, with unveiled (ἀνακεκαλυμμένῳ) face beholding the glory of the Lord”; the Peshitta has גַּלְיָא, this root."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רָאָה",
+            "note": "“See”: what is uncovered or revealed is seen.",
+            "evidence": [
+              {
+                "ref": "Isa.40.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.47.3"
+              },
+              {
+                "ref": "Ezk.16.37"
+              }
+            ]
+          },
+          {
+            "lemma": "יָדַע",
+            "note": "“Know, make known”: revealing gives knowledge.",
+            "evidence": [
+              {
+                "ref": "1Sa.3.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.98.2"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "כָּסָה",
+            "note": "“Cover”: the plainest opposite.",
+            "evidence": [
+              {
+                "ref": "Isa.26.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.11.13"
+              },
+              {
+                "ref": "Pro.26.26"
+              }
+            ]
+          },
+          {
+            "lemma": "סָתַר",
+            "note": "“Hide”: the hidden against the revealed.",
+            "evidence": [
+              {
+                "ref": "Deu.29.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.27.5"
+              },
+              {
+                "ref": "Jer.49.10"
+              }
+            ]
+          },
+          {
+            "lemma": "חָתַם",
+            "note": "“Seal”: the sealed deed against the open one.",
+            "evidence": [
+              {
+                "ref": "Jer.32.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.32.14"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "גָּלָה אֹזֶן",
+            "gloss": "uncover the ear: tell, disclose to",
+            "evidence": [
+              {
+                "ref": "1Sa.9.15",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.20.2"
+              },
+              {
+                "ref": "2Sa.7.27"
+              },
+              {
+                "ref": "Job.33.16"
+              }
+            ]
+          },
+          {
+            "phrase": "גִּלָּה עֶרְוָה",
+            "gloss": "uncover the nakedness of: lie with",
+            "evidence": [
+              {
+                "ref": "Lev.18.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.20.17"
+              }
+            ]
+          },
+          {
+            "phrase": "גָּלָה כָבוֹד",
+            "gloss": "the glory has departed",
+            "evidence": [
+              {
+                "ref": "1Sa.4.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.10.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גּוֹלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "exile; the exiles",
+      "bdb": [
+        "c.ca.ab"
+      ],
+      "cognate_ids": [
+        "ar-jala-go",
+        "arc-galuta",
+        "akk-galu"
+      ],
+      "summary": "The feminine participle of the qal “go into exile”, used as a noun: the exiles as a body, and the state of exile. In Jeremiah, Ezekiel and Ezra it is the name of the community taken to Babylon and returned from it, “the sons of the exile”. The brief's two qal tokens (2Ki 24:14; Pro 20:19) are the masculine participle גּוֹלֶה of the verb.",
+      "senses": [
+        {
+          "id": "exiles-community",
+          "gloss": "the exiles, the exile (as a community)",
+          "definition": "The people carried away to Babylon, as one body: those Jeremiah wrote to, among whom Ezekiel sat, who returned under Ezra and kept the Passover.",
+          "evidence": [
+            {
+              "ref": "Jer.29.1",
+              "role": "defining",
+              "note": "The letter Jeremiah sent “to the rest of the elders of the exile … and to all the people whom Nebuchadnezzar had carried into exile”."
+            },
+            {
+              "ref": "Jer.29.4"
+            },
+            {
+              "ref": "Jer.29.20"
+            },
+            {
+              "ref": "Jer.29.31"
+            },
+            {
+              "ref": "Jer.28.6"
+            },
+            {
+              "ref": "Ezk.1.1",
+              "note": "“I was among the exile by the river Chebar.”"
+            },
+            {
+              "ref": "Ezk.3.11"
+            },
+            {
+              "ref": "Ezk.3.15",
+              "role": "defining",
+              "note": "“I came to the exile at Tel-abib, who dwelt by the river Chebar.”"
+            },
+            {
+              "ref": "Ezk.11.24",
+              "to": "Ezk.11.25"
+            },
+            {
+              "ref": "Zec.6.10",
+              "note": "“Take from the exile, from Heldai, Tobijah and Jedaiah.”"
+            },
+            {
+              "ref": "Ezr.1.11",
+              "note": "“When the exile was brought up from Babylon to Jerusalem.”"
+            },
+            {
+              "ref": "Ezr.2.1"
+            },
+            {
+              "ref": "Ezr.4.1",
+              "note": "“The sons of the exile were building the temple to Yahweh the God of Israel.”"
+            },
+            {
+              "ref": "Ezr.6.19",
+              "role": "defining",
+              "note": "“The sons of the exile kept the Passover on the fourteenth of the first month.”"
+            },
+            {
+              "ref": "Ezr.6.20",
+              "to": "Ezr.6.21"
+            },
+            {
+              "ref": "Ezr.8.35"
+            },
+            {
+              "ref": "Ezr.9.4"
+            },
+            {
+              "ref": "Ezr.10.6",
+              "to": "Ezr.10.8"
+            },
+            {
+              "ref": "Ezr.10.16"
+            },
+            {
+              "ref": "Neh.7.6"
+            },
+            {
+              "ref": "Est.2.6"
+            }
+          ],
+          "kin": [
+            "go-into-exile",
+            "exile-captivity",
+            "arc-exile"
+          ]
+        },
+        {
+          "id": "exile-state",
+          "gloss": "exile, going into exile",
+          "definition": "The state or the going: “go into exile” (הָלַךְ בַּגּוֹלָה), “an exile's baggage”, a city or people given to exile.",
+          "evidence": [
+            {
+              "ref": "Jer.48.7",
+              "role": "defining",
+              "note": "“Chemosh shall go into exile (בַגּוֹלָה), his priests and his princes together.”"
+            },
+            {
+              "ref": "Jer.48.11",
+              "note": "Moab “has not gone into exile”, so his taste remains in him."
+            },
+            {
+              "ref": "Jer.49.3"
+            },
+            {
+              "ref": "Amo.1.15"
+            },
+            {
+              "ref": "Jer.46.19",
+              "note": "“Make yourself vessels for exile (כְּלֵי גוֹלָה), daughter of Egypt.”"
+            },
+            {
+              "ref": "Ezk.12.3",
+              "role": "defining",
+              "note": "“Make for yourself an exile's baggage (כְּלֵי גוֹלָה).”"
+            },
+            {
+              "ref": "Ezk.12.4"
+            },
+            {
+              "ref": "Ezk.12.7"
+            },
+            {
+              "ref": "Ezk.12.11",
+              "note": "“As I have done, so it shall be done to them; into exile, into captivity they shall go.”"
+            },
+            {
+              "ref": "Ezk.25.3",
+              "note": "The house of Judah “when they went into exile”."
+            },
+            {
+              "ref": "Nam.3.10",
+              "note": "No-amon “went into exile, into captivity”."
+            },
+            {
+              "ref": "Zec.14.2",
+              "note": "“Half of the city shall go out into exile, and the rest of the people shall not be cut off from the city.”"
+            },
+            {
+              "ref": "2Ki.24.15",
+              "to": "2Ki.24.16"
+            },
+            {
+              "ref": "1Ch.5.22",
+              "note": "They dwelt in their place “until the exile”."
+            }
+          ],
+          "kin": [
+            "go-into-exile"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μετοικεσία",
+          "gloss": "removal, deportation",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ki.24.16, גּוֹלָה → μετοικεσίαν; Nam.3.10, גֹּלָה → μετοικεσίαν; 1Ch.5.22, גֹּלָה → μετοικεσίας; Ezk.12.11 → μετοικεσίᾳ"
+            },
+            {
+              "ref": "Mat.1.11",
+              "role": "defining",
+              "note": "“Josiah begot Jechoniah and his brothers at the time of the deportation (μετοικεσίας) to Babylon”: the גּוֹלָה of 2Ki 24:15–16, and the Peshitta's גָּלוּתָא."
+            },
+            {
+              "ref": "Mat.1.12"
+            },
+            {
+              "ref": "Mat.1.17"
+            }
+          ]
+        },
+        {
+          "lemma": "αἰχμαλωσία",
+          "gloss": "captivity; captives",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.1.1, Ezk.3.15, Ezk.12.3, Amo.1.15, Zec.6.10, Zec.14.2: גּוֹלָה → αἰχμαλωσία; αἰχμαλωσία renders גּוֹלָה ×12"
+            },
+            {
+              "ref": "Rev.13.10",
+              "note": "“If anyone is for captivity (αἰχμαλωσίαν), into captivity he goes.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גָּלוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "exile; the exiles",
+      "bdb": [
+        "c.ca.ac"
+      ],
+      "cognate_ids": [
+        "arc-galuta",
+        "akk-galu"
+      ],
+      "summary": "A noun of the qal “go into exile”, with the same two uses as גּוֹלָה: the exiles as a body, and the exile as an event from which years are counted.",
+      "senses": [
+        {
+          "id": "exile-captivity",
+          "gloss": "exile; the exiles",
+          "definition": "The people in exile, as a body (“the exile of Judah”), and the exile of Jehoiachin as the point from which the years are numbered.",
+          "evidence": [
+            {
+              "ref": "Jer.24.5",
+              "role": "defining",
+              "note": "“Like these good figs, so I will regard the exile of Judah, whom I have sent out of this place to the land of the Chaldeans, for good.”"
+            },
+            {
+              "ref": "Jer.28.4"
+            },
+            {
+              "ref": "Jer.29.22"
+            },
+            {
+              "ref": "Jer.40.1"
+            },
+            {
+              "ref": "Isa.20.4",
+              "note": "“The king of Assyria will lead away the captives of Egypt and the exiles of Cush, naked and barefoot.”"
+            },
+            {
+              "ref": "Isa.45.13",
+              "role": "defining",
+              "note": "Cyrus “shall build my city and send out my exiles (גָּלוּתִי), not for price nor reward”."
+            },
+            {
+              "ref": "Amo.1.6",
+              "note": "“A whole exile”, a people deported entire."
+            },
+            {
+              "ref": "Amo.1.9"
+            },
+            {
+              "ref": "Oba.1.20",
+              "note": "“The exiles of this host of the sons of Israel … and the exiles of Jerusalem who are in Sepharad shall possess the cities of the Negev.”"
+            },
+            {
+              "ref": "2Ki.25.27",
+              "role": "defining",
+              "note": "“In the thirty-seventh year of the exile of Jehoiachin king of Judah.”"
+            },
+            {
+              "ref": "Jer.52.31"
+            },
+            {
+              "ref": "Ezk.1.2",
+              "note": "“The fifth year of the exile of king Jehoiachin.”"
+            },
+            {
+              "ref": "Ezk.33.21",
+              "note": "“In the twelfth year of our exile … one who had escaped from Jerusalem came to me, saying, The city is struck.”"
+            },
+            {
+              "ref": "Ezk.40.1"
+            }
+          ],
+          "kin": [
+            "exiles-community",
+            "go-into-exile",
+            "arc-exile"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גִּלָּיוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tablet; (plural) mirrors",
+      "bdb": [
+        "c.ca.ad"
+      ],
+      "cognate_ids": [
+        "ar-jala-polish"
+      ],
+      "summary": "Twice: a great tablet to write on (Isa 8:1), and among the ornaments of the daughters of Zion, plural, most likely hand mirrors (Isa 3:23). Both are smooth, bare surfaces; Arabic jalā “polish a sword or a mirror”, from the same root, may explain the word as a polished or cleared surface. The tie to “uncover” is not certain, and two uses fix little.",
+      "senses": [
+        {
+          "id": "tablet",
+          "gloss": "tablet (to write on)",
+          "definition": "A smooth surface to write on.",
+          "evidence": [
+            {
+              "ref": "Isa.8.1",
+              "role": "defining",
+              "note": "“Take a great tablet and write on it with a man's stylus, For Maher-shalal-hash-baz.”"
+            }
+          ]
+        },
+        {
+          "id": "mirror",
+          "gloss": "mirror (?)",
+          "definition": "Among the finery Yahweh will take away from the daughters of Zion; most likely polished hand mirrors.",
+          "evidence": [
+            {
+              "ref": "Isa.3.23",
+              "note": "“The mirrors (הַגִּלְיֹנִים), the fine linen, the turbans and the veils.” Nothing in the list fixes the sense."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּלָא",
+      "lang": "arc",
+      "root": "גלא",
+      "pos": "verb",
+      "gloss": "reveal; (peil) be revealed; (haphel) carry into exile",
+      "bdb": [
+        "xc.af.aa"
+      ],
+      "cognate_ids": [
+        "arc-gele"
+      ],
+      "summary": "Biblical Aramaic, spelled with א: the God of heaven “reveals mysteries” in Dan 2, and the haphel carries peoples into exile in Ezra, the same two sides as the Hebrew.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "reveal",
+          "senses": [
+            {
+              "id": "arc-reveal",
+              "gloss": "reveal (mysteries)",
+              "definition": "Of God, to make known what is hidden and what will be, which no wise man can tell.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.22",
+                  "role": "defining",
+                  "note": "“He reveals the deep and hidden things; he knows what is in the darkness, and the light dwells with him.”"
+                },
+                {
+                  "ref": "Dan.2.28",
+                  "role": "defining",
+                  "note": "“There is a God in heaven who reveals mysteries, and he has made known to king Nebuchadnezzar what shall be in the latter days.”"
+                },
+                {
+                  "ref": "Dan.2.29"
+                },
+                {
+                  "ref": "Dan.2.47",
+                  "note": "“Your God is God of gods and Lord of kings and a revealer of mysteries, since you could reveal this mystery.”"
+                }
+              ],
+              "kin": [
+                "reveal-make-known",
+                "be-revealed",
+                "uncover-ear"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peil",
+          "gloss": "be revealed",
+          "senses": [
+            {
+              "id": "arc-be-revealed",
+              "gloss": "be revealed",
+              "definition": "Of the mystery, to be made known to Daniel in a vision of the night.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.19",
+                  "role": "defining",
+                  "note": "“Then the mystery was revealed to Daniel in a vision of the night.”"
+                },
+                {
+                  "ref": "Dan.2.30",
+                  "role": "defining",
+                  "note": "“This mystery has not been revealed to me for any wisdom that I have more than any living.”"
+                }
+              ],
+              "kin": [
+                "be-revealed"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "carry into exile",
+          "senses": [
+            {
+              "id": "arc-deport",
+              "gloss": "carry into exile, deport",
+              "definition": "To deport a people, as the Hebrew hiphil.",
+              "evidence": [
+                {
+                  "ref": "Ezr.4.10",
+                  "role": "defining",
+                  "note": "“The rest of the nations whom the great and noble Osnappar deported and settled in the cities of Samaria.”"
+                },
+                {
+                  "ref": "Ezr.5.12",
+                  "role": "defining",
+                  "note": "God “gave them into the hand of Nebuchadnezzar … who destroyed this house and carried the people into exile to Babylon”."
+                }
+              ],
+              "kin": [
+                "carry-into-exile"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גָּלוּ",
+      "lang": "arc",
+      "root": "גלו",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "exile, the exiles",
+      "bdb": [
+        "xc.af.ab"
+      ],
+      "cognate_ids": [
+        "arc-galuta"
+      ],
+      "summary": "Biblical Aramaic גָּלוּתָא, the Aramaic of גָּלוּת: Daniel is “of the sons of the exile of Judah”.",
+      "senses": [
+        {
+          "id": "arc-exile",
+          "gloss": "exile; the exiles",
+          "definition": "The exiled community of Judah in Babylon, and those of it who returned.",
+          "evidence": [
+            {
+              "ref": "Dan.2.25",
+              "role": "defining",
+              "note": "“I have found a man of the sons of the exile of Judah.”"
+            },
+            {
+              "ref": "Dan.5.13"
+            },
+            {
+              "ref": "Dan.6.14"
+            },
+            {
+              "ref": "Ezr.6.16",
+              "role": "defining",
+              "note": "“The sons of Israel, the priests and the Levites and the rest of the sons of the exile, kept the dedication of this house of God with joy.”"
+            }
+          ],
+          "kin": [
+            "exiles-community",
+            "exile-captivity"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּלָא",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "reveal, uncover; (ethpeel) be revealed, appear",
+      "cognate_ids": [
+        "arc-gele"
+      ],
+      "summary": "The Peshitta's ܓܠܐ (glā). It renders ἀποκαλύπτω and φανερόω alike, so the New Testament's “revealed” and “manifested”, of the Son of man and of the glory to come, are one word in its Syriac.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "reveal",
+          "senses": [
+            {
+              "id": "syc-reveal",
+              "gloss": "reveal",
+              "definition": "Of the Father, to make known to whom he will what is hidden from others.",
+              "evidence": [
+                {
+                  "ref": "Mat.11.25",
+                  "role": "defining",
+                  "note": "“You have hidden these things from the wise and understanding, and revealed them to infants.”"
+                },
+                {
+                  "ref": "Mat.11.27"
+                },
+                {
+                  "ref": "Mat.16.17",
+                  "role": "defining",
+                  "note": "“Flesh and blood has not revealed this to you, but my Father who is in heaven.”"
+                },
+                {
+                  "ref": "Gal.1.16",
+                  "note": "“To reveal his Son in me.”"
+                }
+              ],
+              "kin": [
+                "reveal-make-known"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be revealed, appear",
+          "senses": [
+            {
+              "id": "syc-be-revealed",
+              "gloss": "be revealed, appear",
+              "definition": "Of God's righteousness, of the hidden things, and above all of Christ and his glory at his coming.",
+              "evidence": [
+                {
+                  "ref": "Rom.1.17",
+                  "note": "“The righteousness of God is revealed in it”, as Isa 56:1."
+                },
+                {
+                  "ref": "Luk.12.2",
+                  "note": "“Nothing is covered that will not be revealed.”"
+                },
+                {
+                  "ref": "Luk.17.30",
+                  "role": "defining",
+                  "note": "“So shall it be in the day when the Son of man is revealed.”"
+                },
+                {
+                  "ref": "Rom.8.18",
+                  "note": "“The glory that is to be revealed in us.”"
+                },
+                {
+                  "ref": "Col.3.4",
+                  "role": "defining",
+                  "note": "“When Christ, who is our life, is revealed, then you also will be revealed with him in glory.”"
+                },
+                {
+                  "ref": "1Pe.5.4",
+                  "note": "“When the chief shepherd is revealed, you will receive the crown of glory.”"
+                },
+                {
+                  "ref": "1Jn.3.2",
+                  "role": "defining",
+                  "note": "“It has not yet been revealed what we shall be; but we know that when he is revealed we shall be like him.”"
+                }
+              ],
+              "kin": [
+                "be-revealed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גֶּלְיָנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "revelation, appearing",
+      "cognate_ids": [
+        "arc-gele"
+      ],
+      "summary": "The Peshitta's ܓܠܝܢܐ (gelyānā), for both ἀποκάλυψις and ἐπιφάνεια: the revealing of Jesus Christ, above all at his return.",
+      "senses": [
+        {
+          "id": "syc-revelation",
+          "gloss": "revelation, revealing; appearing",
+          "definition": "A making known from God; and the revealing or appearing of Christ from heaven at his coming, when his servants are rewarded.",
+          "evidence": [
+            {
+              "ref": "Luk.2.32",
+              "note": "“A light for revelation to the nations.”"
+            },
+            {
+              "ref": "Gal.1.12",
+              "note": "The gospel received “by revelation of Jesus Christ”."
+            },
+            {
+              "ref": "Rev.1.1"
+            },
+            {
+              "ref": "Rom.8.19",
+              "note": "“The creation waits for the revealing of the sons of God.”"
+            },
+            {
+              "ref": "1Co.1.7",
+              "note": "“Waiting for the revelation of our Lord Jesus Christ.”"
+            },
+            {
+              "ref": "2Th.1.7",
+              "role": "defining",
+              "note": "“At the revelation of our Lord Jesus Christ from heaven with the might of his angels.”"
+            },
+            {
+              "ref": "1Pe.1.7"
+            },
+            {
+              "ref": "1Pe.1.13",
+              "role": "defining",
+              "note": "“Hope fully for the grace to be brought to you at the revelation of Jesus Christ.”"
+            },
+            {
+              "ref": "1Pe.4.13"
+            },
+            {
+              "ref": "2Ti.4.1",
+              "note": "“Who will judge the living and the dead at his appearing (ἐπιφάνεια) and his kingdom.”"
+            },
+            {
+              "ref": "2Ti.4.8"
+            },
+            {
+              "ref": "Tit.2.13"
+            }
+          ],
+          "kin": [
+            "be-revealed",
+            "syc-be-revealed"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גָּלוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "exile, deportation",
+      "cognate_ids": [
+        "arc-galuta"
+      ],
+      "summary": "The Peshitta's ܓܠܘܬܐ (gālūṯā), for μετοικεσία in the genealogy of Mat 1: the exile to Babylon, the Hebrew גּוֹלָה and גָּלוּת.",
+      "senses": [
+        {
+          "id": "syc-exile",
+          "gloss": "the exile (to Babylon)",
+          "definition": "The deportation to Babylon, by which the generations from David to Christ are divided.",
+          "evidence": [
+            {
+              "ref": "Mat.1.11",
+              "role": "defining",
+              "note": "“At the time of the exile to Babylon.”"
+            },
+            {
+              "ref": "Mat.1.12"
+            },
+            {
+              "ref": "Mat.1.17",
+              "role": "defining",
+              "note": "“From David to the exile of Babylon fourteen generations, and from the exile of Babylon to Christ fourteen generations.”"
+            }
+          ],
+          "kin": [
+            "exiles-community",
+            "exile-captivity"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּלְיָאִית",
+      "lang": "syc",
+      "pos": "adverb",
+      "gloss": "openly",
+      "cognate_ids": [
+        "arc-gele"
+      ],
+      "summary": "The Peshitta's ܓܠܝܐܝܬ (galyāʾīṯ), for παρρησίᾳ: openly, in the open, plainly.",
+      "senses": [
+        {
+          "id": "syc-openly",
+          "gloss": "openly, plainly",
+          "definition": "In the open, not in secret; plainly, not in figures.",
+          "evidence": [
+            {
+              "ref": "Jhn.7.13",
+              "role": "defining",
+              "note": "“No one spoke openly of him, for fear of the Jews.”"
+            },
+            {
+              "ref": "Jhn.11.54",
+              "note": "“Jesus no longer walked openly among the Jews.”"
+            },
+            {
+              "ref": "Jhn.10.24",
+              "note": "“If you are the Christ, tell us plainly.”"
+            },
+            {
+              "ref": "Jhn.16.29"
+            }
+          ],
+          "kin": [
+            "open-uncovered",
+            "pual-open"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-jala",
+      "lang": "ar",
+      "form": "جَلَا، جَلِيٌّ",
+      "translit": "jalā, jaliyy",
+      "gloss": "be clear, uncovered, laid open, disclosed; disclose, reveal; display (a bride); (jaliyy) clear, manifest",
+      "relation": "cognate",
+      "note": "The Hebrew's uncovering and revealing: a thing laid open to view, an affair made plain, the sun clear of eclipse, a bride unveiled and shown to her husband.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 446, root جلو, جَلَا (n6187)",
+          "note": "“It … was, or became, clear, unobscured, exposed to view, displayed, laid open, disclosed, or uncovered … جَلَا العَرُوسَ He displayed the bride … جَلَا فُلَانٌ الأَمْرَ Such a one displayed, discovered, disclosed, revealed, or manifested, the affair.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 447, root جلو, جَلِىٌّ (n6202)",
+          "note": "“Clear, unobscured, exposed to view, displayed, laid open, disclosed, or uncovered: apparent … manifest.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Hebrew root ג־ל־ה, etymology",
+          "note": "Compares Arabic ج ل و and ج ل ي."
+        }
+      ]
+    },
+    {
+      "id": "ar-jala-go",
+      "lang": "ar",
+      "form": "جَلَا عَنِ البَلَدِ، أَجْلَى، جَالِيَةٌ",
+      "translit": "jalā ʿani l-balad, ʾajlā, jāliya",
+      "gloss": "go forth, emigrate from one's country; (ʾajlā) expel, drive out; (jāliya) emigrants, an exiled community",
+      "relation": "cognate",
+      "note": "The Hebrew's “depart” and “go into exile”, with the causative “expel” as the hiphil, and جَالِيَة a body of people gone from their homes, as גּוֹלָה. The same Arabic verb carries both sides of the Hebrew, so they are one root, not two.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 446, root جلو, جَلَا (n6187)",
+          "note": "“He, or they, went forth, or emigrated, from the country, or town, and from their homes … جَلَاهُمْ, and اجلاهم … caused them … to go forth, or emigrate; or expelled them … drove them … forth.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 447, root جلو, اجلولى (n6195)",
+          "note": "“He went forth, or emigrated, from one country, or town, to another.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 448, root جلو, جَالٍ (n6206)",
+          "note": "“Going forth, or emigrating, from his country … جَالِيَةٌ, applied to … people who have gone forth, or emigrated, from their homes.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-jala-polish",
+      "lang": "ar",
+      "form": "جَلَا السَّيْفَ، جَلَا المِرْآةَ",
+      "translit": "jalā s-sayf, jalā l-mirʾāh",
+      "gloss": "clear the rust off, polish (a sword, a mirror, silver)",
+      "relation": "possible",
+      "note": "Clearing a surface bare: a possible explanation of גִּלָּיוֹן, a smooth tablet and (plural) polished mirrors. Only a lead, since the Hebrew noun has two uses.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 446, root جلو, جَلَا (n6187)",
+          "note": "“جَلَوْتُ السَّيْفَ … I removed, or cleared off, the rust from the sword; I polished, or furbished, the sword; and المِرْآةَ the mirror.”"
+        }
+      ]
+    },
+    {
+      "id": "phn-gly",
+      "lang": "phn",
+      "form": "גלי",
+      "translit": "gly",
+      "gloss": "(qal) move, remove; (piel) reveal, disclose; (yiphil) carry into exile",
+      "relation": "cognate",
+      "note": "Phoenician has all three of the Hebrew's uses in its stems: the Ahiram sarcophagus curses a king who “removes (ygl) this coffin” (KAI 1.2), the Yehawmilk stele one who “reveals (tgl) its hiding place” (KAI 10), and the Çineköy inscription tells “when they exiled (ygl) MSNZMS”, the causative as the Hebrew hiphil.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 139, G-L-Y",
+          "note": "“v. ?qal MOVE, REMOVE. KAI 1.2 … ‘if he shall (re)move this coffin’ … v. pi‘el REVEAL, DISCLOSE. KAI 10.14–16 … ‘or reveal its hiding place’ … v. yiph‘il EXILE. CID, lines 7–8 … ‘When they exiled MSNZMS’.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-gly",
+      "lang": "uga",
+      "form": "𐎚𐎂𐎍𐎊",
+      "translit": "tgly",
+      "gloss": "go in, set out (to)",
+      "relation": "possible",
+      "note": "Athirat “tgly to the tent (dd) of El and enters the pavilion of the king” (KTU 1.4:IV:23–24). The sense of movement away from one place to another is the Hebrew qal's “depart”, but the one context does not fix it.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 182, §93 Glossary, g-l-y",
+          "note": "“tgly 1.4:IV:23 … ‘to go in (and also out?)’ (cf. H. g-l-y ‘to go away/in exile,’ cf. also Aram. g-l-y).”"
+        }
+      ]
+    },
+    {
+      "id": "arc-gele",
+      "lang": "arc",
+      "form": "גְּלֵי، גְּלָא",
+      "translit": "gəlē, gəlā",
+      "gloss": "reveal, uncover; go into exile, go away, emigrate",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: both sides of the Hebrew in one verb. The Targum of Amo 3:7 and Num 22:31 keep it for “reveal” and “uncover (the eyes)”; the Targum of Hos 10:5 and Amo 5:5 for “go into exile”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גְּלֵי, גְּלָא (ch.) (C00927), citing Targ. Num. XXII, 31; Targ. Am. III, 7 (reveal, uncover); Targ. Hos. X, 5; Targ. Am. V, 5; Ber. 56a (go into exile, emigrate)"
+        }
+      ]
+    },
+    {
+      "id": "arc-galuta",
+      "lang": "arc",
+      "form": "גָּלוּתָא",
+      "translit": "gālūṯā",
+      "gloss": "exile; the exiled community",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, as Biblical Aramaic גָּלוּ and the Hebrew גָּלוּת; ריש גלותא, the head of the exile in Babylonia.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גָּלוּתָא (ch.) (C00920), citing Targ. Am. I, 6; Targ. O. Deut. XXX, 4; Succ. 31a"
+        }
+      ]
+    },
+    {
+      "id": "akk-galu",
+      "lang": "akk",
+      "form": "galû",
+      "translit": "galû",
+      "gloss": "be deported, emigrate; (Š) deport, send into exile",
+      "relation": "loan",
+      "note": "Attested only in Neo-Assyrian and Neo-Babylonian, the age of the Assyrian and Babylonian deportations, and not in older Akkadian: taken to be borrowed from Aramaic, the empire's common speech. It shows the word for deportation in use by the very kings who deported Israel and Judah.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "atae x000017860, galû [be(come) deported] V (meanings: “be(come) deported”, “deport”, “emigrate”, “exile”, “send into exile”; Neo-Assyrian, ×175)"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000145260, galû [be deported] V (“take/send into exile”; Neo-Babylonian, ×9)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "revelation",
+      "statement": "“The hidden things belong to Yahweh our God, but the revealed things belong to us and to our sons for ever, to do all the words of this law” (Deu 29:28). Samuel “did not yet know Yahweh, and the word of Yahweh was not yet revealed to him”, until “Yahweh revealed himself to Samuel in Shiloh by the word of Yahweh” (1Sa 3:7, 21). “The Lord Yahweh does nothing unless he has revealed his secret counsel to his servants the prophets” (Amo 3:7). Daniel told the king that no wise man could tell the dream, “but there is a God in heaven who reveals mysteries”, and that it was not revealed to him “for any wisdom that I have” (Dan 2:27–30). Jesus thanked the Father that he had hidden these things from the wise and “revealed them to infants”, and told Peter, “flesh and blood has not revealed this to you, but my Father” (Mat 11:25; 16:17); Paul received his gospel “by revelation of Jesus Christ” (Gal 1:12). From the verses: what man knows of God and his purpose he knows because God has uncovered it, in the word given through the prophets and through his Son, not by human wisdom; and what is revealed is given to be done.",
+      "evidence": [
+        {
+          "ref": "Deu.29.28"
+        },
+        {
+          "ref": "1Sa.3.7"
+        },
+        {
+          "ref": "1Sa.3.21"
+        },
+        {
+          "ref": "Amo.3.7"
+        },
+        {
+          "ref": "Dan.2.27",
+          "to": "Dan.2.30"
+        },
+        {
+          "ref": "Mat.11.25"
+        },
+        {
+          "ref": "Mat.16.17"
+        },
+        {
+          "ref": "Gal.1.12"
+        }
+      ]
+    },
+    {
+      "topic": "return-of-christ",
+      "statement": "Isaiah foretold, “the glory of Yahweh shall be revealed, and all flesh shall see it together” (Isa 40:5). Jesus spoke of “the day when the Son of man is revealed” (Luk 17:30). Paul looks for “the revelation of our Lord Jesus Christ from heaven with the might of his angels” (2Th 1:7), and says that the creation waits for “the revealing of the sons of God” and that the glory “is to be revealed” (Rom 8:18–19); “when Christ, who is our life, is revealed, then you also will be revealed with him in glory” (Col 3:4). Peter sets the believers' hope on “the grace to be brought to you at the revelation of Jesus Christ” and their crown on the day “when the chief shepherd is revealed” (1Pe 1:13; 5:4); John writes, “it has not yet been revealed what we shall be; but when he is revealed we shall be like him” (1Jn 3:2); and Christ “will judge the living and the dead at his appearing and his kingdom”, when Paul will receive his crown (2Ti 4:1, 8). In the Peshitta every one of these is this root. From the verses: the glory, the reward and the change of the saints are not given at death but at Christ's revealing, his return from heaven, when the dead are raised and judged and the kingdom set up.",
+      "evidence": [
+        {
+          "ref": "Isa.40.5"
+        },
+        {
+          "ref": "Luk.17.30"
+        },
+        {
+          "ref": "2Th.1.7"
+        },
+        {
+          "ref": "Rom.8.18",
+          "to": "Rom.8.19"
+        },
+        {
+          "ref": "Col.3.4"
+        },
+        {
+          "ref": "1Pe.1.13"
+        },
+        {
+          "ref": "1Pe.5.4"
+        },
+        {
+          "ref": "1Jn.3.2"
+        },
+        {
+          "ref": "2Ti.4.1"
+        },
+        {
+          "ref": "2Ti.4.8"
+        }
+      ]
+    },
+    {
+      "topic": "exile-and-regathering",
+      "statement": "Israel went into exile from its land “as Yahweh had spoken by all his servants the prophets” (2Ki 17:23), and Judah “for their unfaithfulness” (1Ch 9:1); “my people go into exile for lack of knowledge” (Isa 5:13). Yahweh calls the deportation his own act, done by the hand of Nebuchadnezzar: “all the exiles whom I have carried into exile from Jerusalem to Babylon” (Jer 29:4; 1Ch 5:41), and promises, “I will bring you back to the place from which I carried you into exile” (Jer 29:14). Ezekiel, after the invasion of Gog from the far north (Ezk 38:15; 39:2), records the end of it: “the nations shall know that the house of Israel went into exile for their iniquity … and they shall know that I am Yahweh their God, in my carrying them into exile among the nations and gathering them to their own land, and I will leave none of them there any more” (Ezk 39:23, 28). The return from Babylon left many among the nations (Est 2:6; 3:8), and Jesus foretold a new dispersion when Jerusalem fell in AD 70: “they shall be led captive into all the nations, and Jerusalem shall be trodden down by the nations until the times of the nations are fulfilled” (Luk 21:24). From the verses: the exile was Yahweh's judgment on his people for breaking his covenant, not the end of his promise of the land; the full regathering, with none left among the nations, follows the northern invasion and is still to come.",
+      "evidence": [
+        {
+          "ref": "2Ki.17.23"
+        },
+        {
+          "ref": "1Ch.9.1"
+        },
+        {
+          "ref": "Isa.5.13"
+        },
+        {
+          "ref": "Jer.29.4"
+        },
+        {
+          "ref": "1Ch.5.41"
+        },
+        {
+          "ref": "Jer.29.14"
+        },
+        {
+          "ref": "Ezk.38.15"
+        },
+        {
+          "ref": "Ezk.39.2"
+        },
+        {
+          "ref": "Ezk.39.23"
+        },
+        {
+          "ref": "Ezk.39.28"
+        },
+        {
+          "ref": "Est.2.6"
+        },
+        {
+          "ref": "Est.3.8"
+        },
+        {
+          "ref": "Luk.21.24"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key גלה; no existing entry used it. BDB keys assigned: c.ca.aa verb, c.ca.ab גּוֹלָה, c.ca.ac גָּלוּת, c.ca.ad גִּלָּיוֹן; Biblical Aramaic xc.af.aa גְּלָא (root גלא) and xc.af.ab גָּלוּ (root גלו); c.ca.af the name Jogli in names/jogli.json. Left unassigned: c.ca.ae גָּלְיַת Goliath, a Philistine of Gath whose name is most likely not Semitic (the ‑yat ending is foreign to Hebrew names); BDB's “conspicuous” is a guess from the root, so no name file is written; j.am.ac יָגְלִי (a zero-token cross-reference filed as a verb). Not this root: the brief's five no-stem tokens גַּל “heap” (Jos 7:26; 8:29; 2Sa 18:17; Job 8:17; Sng 4:12) and Psa 119:22 are גלל; גֻּלָּה “bowl” is גלל; גִּלֹה Giloh is filed under גיל; Golan (a place) is not a personal name and has no entry. Psa 119:18 גַּל is kept here as the piel imperative. Readings to review: Pro 27:25 (hay removed or hay appearing); Nam 2:8 גֻּלְּתָה (uncovered or exiled; the corpus tags it pual); Isa 3:23 הַגִּלְיֹנִים as mirrors rests on context and the Arabic “polish a mirror”, both weak. The Peshitta: only its verb, גֶּלְיָנָא, גָּלוּתָא and גַּלְיָאִית are recorded as words; SEDRA root 373 GLA also has גַּלְיָא “manifest, uncovered” (Act 4:16; 2Co 3:18), גַּלְיוּתָא “openness, boldness” (παρρησία; 2Co 4:2; Heb 4:16 under the verb lexeme), בְּגֶלְיָא “openly” (Mat 6:4, 6), not yet written up; SEDRA's lexeme 567 GLA also covers the noun גְּלָא in בַּגְלֵא “openly” (19 tokens), so its verb count is inflated. Peshitta NT refs follow its own numbering in a few places (Rom 16:24 in SEDRA for 16:25). Leads not followed: Ge'ez (the Proto-Semitic list gives galaya “cut”, not checked in Dillmann or Leslau; another lead gives Ethiopic tagalgala “be taken into exile”); Ugaritic gly in DULAT (not vendored); Old and Imperial Aramaic gly (CAL, Hoftijzer–Jongeling); whether Akkadian galû is an Aramaic loan, as here, should be confirmed in CAD. No Greek loan. The doctrine statements are reasoned conclusions to review; the third reads Ezk 39:28 after the northern invasion and Luk 21:24 of AD 70."
+}
