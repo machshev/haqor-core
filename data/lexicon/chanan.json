@@ -1,0 +1,2170 @@
+{
+  "id": "chanan",
+  "root": "חננ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "grace",
+    "favour",
+    "mercy",
+    "prayer",
+    "supplication",
+    "character-of-god",
+    "poor",
+    "zion"
+  ],
+  "gloss": "be gracious, show favour; (hithpael) plead for favour; favour, grace; for nothing",
+  "summary": "To show favour to one who has no claim on it: to look kindly on the needy and give, to spare, to grant what is asked. The qal is said of Yahweh to those who cry to him (“be gracious to me, Yahweh”) and of a man who is gracious to the poor and lends; the hithpael is to ask for such favour, to plead and supplicate, and gives the nouns תְּחִנָּה and תַּחֲנוּנִים “supplication”. The noun חֵן is favour found in another's eyes, and also the grace or charm that wins it; the adjective חַנּוּן “gracious” is said only of Yahweh, in the words of his name proclaimed to Moses, and once of the upright; and חִנָּם, favour that is not paid for, is “for nothing, freely”, and so “in vain” and “without cause”. Arabic ḥanna “be compassionate”, ḥanān “mercy”, and the Aramaic, Syriac and Akkadian words share the same meaning.",
+  "words": [
+    {
+      "lemma": "חָנַן",
+      "pos": "verb",
+      "gloss": "be gracious, show favour; give graciously; (hithpael) plead for favour, supplicate",
+      "bdb": [
+        "h.dz.aa"
+      ],
+      "cognate_ids": [
+        "ar-hanna",
+        "uga-hnn",
+        "phn-hnn",
+        "akk-enenu",
+        "arc-chanan"
+      ],
+      "summary": "About eighty times. The qal is the act of favour, the hithpael the asking for it. Its partners are רָחַם “have compassion” (Exo 33:19; 2Ki 13:23; Isa 27:11; 30:18) and חֶסֶד (Psa 51:3; 109:12); what it gives is undeserved: a gift (Gen 33:5, 11), healing (Psa 6:3; 41:5), a loan to the poor (Psa 37:26). Job 19:17 וְחַנֹּתִי is uncertain (see its sense).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be gracious, show favour; give graciously; spare",
+          "senses": [
+            {
+              "id": "be-gracious",
+              "gloss": "be gracious to, show favour",
+              "definition": "To turn kindly toward one in need and act for him, without his having earned it: said above all of Yahweh to one who cries to him in distress, sickness or sin, and in blessing (“may God be gracious to you”).",
+              "evidence": [
+                {
+                  "ref": "Exo.33.19",
+                  "role": "defining",
+                  "note": "“וְחַנֹּתִי אֶת־אֲשֶׁר אָחֹן, and I will have compassion on whom I will have compassion”: favour is Yahweh's to give as he wills. Quoted at Rom 9:15."
+                },
+                {
+                  "ref": "Psa.6.3",
+                  "role": "defining",
+                  "note": "“חָנֵּנִי יַהְוֶה, for I am weak; heal me, Yahweh.”"
+                },
+                {
+                  "ref": "Psa.51.3",
+                  "role": "defining",
+                  "note": "“חָנֵּנִי אֱלֹהִים according to your חֶסֶד; according to the abundance of your compassions blot out my transgressions.”"
+                },
+                {
+                  "ref": "2Ki.13.23",
+                  "role": "defining",
+                  "note": "“Yahweh was gracious to them and had compassion on them and turned to them, because of his covenant with Abraham, Isaac and Jacob.”"
+                },
+                {
+                  "ref": "Num.6.25",
+                  "note": "The blessing of the priests: “Yahweh make his face shine on you וִיחֻנֶּךָּ.”"
+                },
+                {
+                  "ref": "Psa.67.2",
+                  "note": "The priests' blessing taken up: “God יְחָנֵּנוּ and bless us, make his face shine on us.” (The corpus tags this form piel.)"
+                },
+                {
+                  "ref": "Gen.43.29",
+                  "note": "Joseph to Benjamin: “God be gracious to you, my son.”"
+                },
+                {
+                  "ref": "Psa.41.5",
+                  "note": "“Yahweh, be gracious to me; heal my soul, for I have sinned against you.”"
+                },
+                {
+                  "ref": "Psa.9.14",
+                  "note": "“Be gracious to me, Yahweh; see my affliction … you who lift me up from the gates of death.”"
+                },
+                {
+                  "ref": "Psa.25.16",
+                  "note": "“Turn to me and be gracious to me, for I am alone and afflicted.”"
+                },
+                {
+                  "ref": "Psa.123.3",
+                  "note": "“Be gracious to us, Yahweh, be gracious to us, for we are greatly filled with contempt.”"
+                },
+                {
+                  "ref": "Isa.30.18",
+                  "role": "defining",
+                  "note": "“Therefore Yahweh waits לַחֲנַנְכֶם, and therefore he rises up to have compassion on you.”"
+                },
+                {
+                  "ref": "Isa.30.19",
+                  "note": "“A people shall dwell in Zion at Jerusalem … he will surely be gracious to you at the sound of your cry.”"
+                },
+                {
+                  "ref": "Isa.33.2",
+                  "note": "“Yahweh, be gracious to us; we have waited for you.”"
+                },
+                {
+                  "ref": "Amo.5.15",
+                  "note": "“Hate evil, love good … perhaps Yahweh God of hosts will be gracious to the remnant of Joseph.”"
+                },
+                {
+                  "ref": "Mal.1.9",
+                  "note": "Ironic: “Entreat the face of God, that he may be gracious to us,” with blemished offerings."
+                },
+                {
+                  "ref": "Psa.102.14",
+                  "role": "defining",
+                  "note": "“You will arise and have compassion on Zion, for it is time לְחֶנְנָהּ, for the appointed time has come.”"
+                },
+                {
+                  "ref": "Isa.27.11",
+                  "note": "Negative: “He who made them will not have compassion on them, and he who formed them will not be gracious to them,” for they are a people without understanding."
+                },
+                {
+                  "ref": "Psa.59.6",
+                  "note": "“Do not be gracious to any treacherous evildoers.”"
+                },
+                {
+                  "ref": "Psa.4.2"
+                },
+                {
+                  "ref": "Psa.27.7"
+                },
+                {
+                  "ref": "Psa.31.10"
+                },
+                {
+                  "ref": "Psa.56.2"
+                },
+                {
+                  "ref": "Psa.57.2"
+                },
+                {
+                  "ref": "Psa.86.3"
+                },
+                {
+                  "ref": "Psa.86.16"
+                },
+                {
+                  "ref": "Psa.119.58",
+                  "note": "“Be gracious to me according to your word.”"
+                },
+                {
+                  "ref": "Psa.119.132",
+                  "note": "“Turn to me and be gracious to me, as is the custom toward those who love your name.”"
+                },
+                {
+                  "ref": "Psa.123.2",
+                  "note": "“As the eyes of servants to the hand of their masters … so our eyes are on Yahweh our God until he is gracious to us.”"
+                },
+                {
+                  "ref": "Psa.26.11"
+                },
+                {
+                  "ref": "Psa.30.11"
+                },
+                {
+                  "ref": "Job.33.24",
+                  "note": "“He is gracious to him and says, Deliver him from going down to the pit; I have found a ransom.”"
+                }
+              ]
+            },
+            {
+              "id": "give-graciously",
+              "gloss": "give graciously, favour with",
+              "definition": "With a second object: to give something as a favour, unearned: children, possessions, a law, or captives let go.",
+              "evidence": [
+                {
+                  "ref": "Gen.33.5",
+                  "role": "defining",
+                  "note": "“The children whom God חָנַן your servant”: given as a favour."
+                },
+                {
+                  "ref": "Gen.33.11",
+                  "role": "defining",
+                  "note": "“Take my blessing … for God חַנַּנִי and I have everything.”"
+                },
+                {
+                  "ref": "Psa.119.29",
+                  "note": "“Put false ways far from me, and וְתוֹרָתְךָ חָנֵּנִי”: grant me your law."
+                },
+                {
+                  "ref": "Jdg.21.22",
+                  "note": "“Favour us with them (חָנּוּנוּ אוֹתָם), for we did not take for each man his wife in the war.”"
+                }
+              ]
+            },
+            {
+              "id": "pity-the-needy",
+              "gloss": "be gracious to the poor; spare, show pity",
+              "definition": "Of a man: to look kindly on the poor, the fatherless, the old or the young, and give or lend to them; with a negative, to spare no one.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.21",
+                  "role": "defining",
+                  "note": "“The wicked borrows and does not repay, but the righteous חוֹנֵן וְנוֹתֵן”: is gracious and gives."
+                },
+                {
+                  "ref": "Psa.37.26",
+                  "note": "“All the day he is gracious and lends, and his seed is a blessing.”"
+                },
+                {
+                  "ref": "Psa.112.5",
+                  "note": "“Good is the man who is gracious and lends.”"
+                },
+                {
+                  "ref": "Pro.14.31",
+                  "role": "defining",
+                  "note": "“He who oppresses the poor reproaches his Maker, but he who honours him חֹנֵן אֶבְיוֹן.”"
+                },
+                {
+                  "ref": "Pro.19.17",
+                  "role": "defining",
+                  "note": "“He who is gracious to the poor lends to Yahweh, and he will repay him his deed.”"
+                },
+                {
+                  "ref": "Pro.28.8",
+                  "note": "Wealth gained by interest is gathered “for him who is gracious to the poor”."
+                },
+                {
+                  "ref": "Psa.109.12",
+                  "note": "“Let there be none to extend חֶסֶד to him, nor any to be gracious to his fatherless children.”"
+                },
+                {
+                  "ref": "Deu.28.50",
+                  "role": "defining",
+                  "note": "“A nation fierce of face, which will not lift up the face of the old, and will not be gracious to the young.”"
+                },
+                {
+                  "ref": "Lam.4.16",
+                  "note": "“They did not lift up the faces of the priests; they were not gracious to the elders.”"
+                },
+                {
+                  "ref": "Deu.7.2",
+                  "note": "Of the nations of Canaan: “Make no covenant with them וְלֹא תְחָנֵּם”: show them no favour."
+                },
+                {
+                  "ref": "Job.19.21",
+                  "note": "“Have pity on me, have pity on me, O you my friends, for the hand of God has touched me.”"
+                }
+              ]
+            },
+            {
+              "id": "job-loathsome",
+              "gloss": "(uncertain) be loathsome; or plead",
+              "definition": "Job 19:17 only, where the sense of the root does not fit plainly: “my breath is strange to my wife, and וְחַנֹּתִי to the sons of my womb”. Read in parallel with זָרָה “strange” it is “I am loathsome”; read as the qal of this root, “I make supplication” or “I was gracious”. Nothing outside the verse decides.",
+              "evidence": [
+                {
+                  "ref": "Job.19.17",
+                  "role": "defining",
+                  "note": "Parallel to רוּחִי זָרָה לְאִשְׁתִּי “my breath is strange to my wife”."
+                },
+                {
+                  "ref": "Job.19.16",
+                  "note": "The verse before: “with my mouth I entreat him (אֶתְחַנֶּן־לוֹ)”, the hithpael of the root."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be pitied (?)",
+          "senses": [
+            {
+              "gloss": "be pitied; or groan",
+              "definition": "Jer 22:23 only: “how נֵּחַנְתְּ when pangs come upon you”, said to the house of the king of Judah nesting in Lebanon's cedars. As this root, “how you will be pitied” (ironic, or “how you will plead for pity”); the form has also been read from אָנַח “groan”.",
+              "evidence": [
+                {
+                  "ref": "Jer.22.23",
+                  "role": "defining",
+                  "note": "“How you will be pitied (נֵּחַנְתְּ) when pangs come upon you, pain as of a woman in labour.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make gracious; be gracious",
+          "senses": [
+            {
+              "gloss": "make (the voice) gracious; be gracious",
+              "definition": "To make one's voice pleasing so as to win favour; and, in Psa 77:10, the act of favour itself.",
+              "evidence": [
+                {
+                  "ref": "Pro.26.25",
+                  "role": "defining",
+                  "note": "“When he makes his voice gracious (יְחַנֵּן קוֹלוֹ), do not believe him, for there are seven abominations in his heart.”"
+                },
+                {
+                  "ref": "Psa.77.10",
+                  "role": "defining",
+                  "note": "“Has God forgotten חַנּוֹת? Has he shut up his compassions in anger?” Parallel to רַחֲמִים."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "show favour to, take pity on",
+          "senses": [
+            {
+              "gloss": "show favour to, pity",
+              "definition": "To be gracious toward the lowly, or toward the ruined stones and dust of Zion.",
+              "evidence": [
+                {
+                  "ref": "Psa.102.15",
+                  "role": "defining",
+                  "note": "“Your servants take pleasure in her stones, and favour (יְחֹנֵנוּ) her dust”: Zion in ruins, in the time Yahweh will favour her (102:14)."
+                },
+                {
+                  "ref": "Pro.14.21",
+                  "role": "defining",
+                  "note": "“He who despises his neighbour sins, but he who shows favour to the lowly (וּמְחוֹנֵן עֲנָוִים), blessed is he.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be shown favour",
+          "senses": [
+            {
+              "gloss": "be shown favour",
+              "definition": "To receive favour, of the wicked who are spared and do not learn, and of the neighbour whom the wicked never favours.",
+              "evidence": [
+                {
+                  "ref": "Isa.26.10",
+                  "role": "defining",
+                  "note": "“Let favour be shown to the wicked (יֻחַן רָשָׁע), he does not learn righteousness.”"
+                },
+                {
+                  "ref": "Pro.21.10",
+                  "note": "“The soul of the wicked desires evil; his neighbour finds no favour in his eyes.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "plead for favour, supplicate",
+          "senses": [
+            {
+              "id": "plead-for-favour",
+              "gloss": "plead for favour, make supplication",
+              "definition": "To ask for favour from one who can grant or withhold it: from Yahweh in prayer, from a king, a captor, a brother, a prophet. The plea is that of one with no claim, often in tears or on his knees.",
+              "evidence": [
+                {
+                  "ref": "Deu.3.23",
+                  "role": "defining",
+                  "note": "“וָאֶתְחַנַּן אֶל־יַהְוֶה at that time, saying, … let me go over and see the good land.”"
+                },
+                {
+                  "ref": "Gen.42.21",
+                  "role": "defining",
+                  "note": "“We saw the distress of his soul when he pleaded with us, and we would not hear.”"
+                },
+                {
+                  "ref": "Est.8.3",
+                  "role": "defining",
+                  "note": "Esther “fell at his feet and wept וַתִּתְחַנֶּן־לוֹ, to put away the evil of Haman”."
+                },
+                {
+                  "ref": "Est.4.8",
+                  "note": "Mordecai charges Esther “to go in to the king לְהִתְחַנֶּן־לוֹ and to make request before him for her people”."
+                },
+                {
+                  "ref": "Hos.12.5",
+                  "role": "defining",
+                  "note": "Jacob “strove with the angel and prevailed; he wept וַיִּתְחַנֶּן־לוֹ”: Gen 32, where he would not let go without a blessing."
+                },
+                {
+                  "ref": "2Ki.1.13",
+                  "note": "The third captain “bowed on his knees before Elijah וַיִּתְחַנֵּן אֵלָיו: let my life be precious in your eyes”."
+                },
+                {
+                  "ref": "1Ki.8.33",
+                  "note": "“If they turn back to you and confess your name and pray and make supplication to you in this house.”"
+                },
+                {
+                  "ref": "1Ki.8.47",
+                  "role": "defining",
+                  "note": "In the land of their captivity, “and make supplication to you, saying, We have sinned and done perversely”."
+                },
+                {
+                  "ref": "1Ki.8.59"
+                },
+                {
+                  "ref": "1Ki.9.3",
+                  "note": "“I have heard your prayer and your supplication which you made before me.”"
+                },
+                {
+                  "ref": "2Ch.6.24"
+                },
+                {
+                  "ref": "2Ch.6.37"
+                },
+                {
+                  "ref": "Psa.30.9",
+                  "note": "“To you, Yahweh, I call, and to the Lord I make supplication.”"
+                },
+                {
+                  "ref": "Psa.142.2",
+                  "note": "“With my voice to Yahweh I cry; with my voice to Yahweh I make supplication.”"
+                },
+                {
+                  "ref": "Job.8.5",
+                  "note": "“If you will seek God early and make supplication to the Almighty.”"
+                },
+                {
+                  "ref": "Job.9.15",
+                  "note": "“Though I were righteous I could not answer; I must plead with my judge for favour.”"
+                },
+                {
+                  "ref": "Job.19.16",
+                  "note": "“I call my servant and he gives no answer; I must plead with him with my mouth.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐλεέω",
+          "gloss": "have mercy, show mercy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.33.19, חַנֹּתִי → ἐλεήσω, אָחֹן → ἐλεῶ; Num.6.25 → ἐλεήσαι; Pro.14.21 מְחוֹנֵן → ἐλεῶν; ἐλεέω renders חָנַן ×28"
+            },
+            {
+              "ref": "Rom.9.15",
+              "role": "defining",
+              "note": "Quoting Exo 33:19: “I will have mercy on whom I have mercy”; the Peshitta has the same root, ܐܚܘܢ."
+            },
+            {
+              "ref": "Rom.9.18",
+              "note": "“So then he has mercy on whom he will.”"
+            },
+            {
+              "ref": "Php.2.27",
+              "note": "Epaphroditus was sick near to death, “but God had mercy on him”: as the psalmist's “be gracious to me … heal me” (Psa 6:3)."
+            }
+          ]
+        },
+        {
+          "lemma": "δέομαι",
+          "gloss": "ask, beseech, pray",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.3.23, אֶתְחַנַּן → ἐδεήθην; δέομαι renders חָנַן ×12, mostly the hithpael"
+            },
+            {
+              "ref": "Luk.5.12",
+              "note": "A leper “fell on his face and besought him (ἐδεήθη αὐτοῦ)”, as the captain on his knees before Elijah (2Ki 1:13)."
+            },
+            {
+              "ref": "2Co.5.20",
+              "note": "“We beseech you (δεόμεθα) on behalf of Christ, be reconciled to God.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רָחַם",
+            "note": "“Have compassion”: the constant partner of the qal.",
+            "evidence": [
+              {
+                "ref": "Exo.33.19",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.13.23"
+              },
+              {
+                "ref": "Isa.27.11"
+              },
+              {
+                "ref": "Isa.30.18"
+              },
+              {
+                "ref": "Psa.102.14"
+              }
+            ]
+          },
+          {
+            "lemma": "הִתְפַּלֵּל",
+            "note": "“Pray”: beside the hithpael in Solomon's prayer.",
+            "evidence": [
+              {
+                "ref": "1Ki.8.33",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.6.24"
+              }
+            ]
+          },
+          {
+            "lemma": "קָרָא",
+            "note": "“Call, cry”: the plea is a cry to Yahweh.",
+            "evidence": [
+              {
+                "ref": "Psa.30.9"
+              },
+              {
+                "ref": "Psa.86.3"
+              },
+              {
+                "ref": "Psa.4.2"
+              }
+            ]
+          },
+          {
+            "lemma": "נָתַן",
+            "note": "“Give”: grace to the poor is giving and lending.",
+            "evidence": [
+              {
+                "ref": "Psa.37.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.37.26"
+              },
+              {
+                "ref": "Psa.112.5"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עָשַׁק",
+            "note": "“Oppress”: the opposite of being gracious to the poor.",
+            "evidence": [
+              {
+                "ref": "Pro.14.31",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חָנֵּנִי יַהְוֶה",
+            "gloss": "be gracious to me, Yahweh",
+            "evidence": [
+              {
+                "ref": "Psa.6.3"
+              },
+              {
+                "ref": "Psa.9.14"
+              },
+              {
+                "ref": "Psa.31.10"
+              },
+              {
+                "ref": "Psa.41.5"
+              }
+            ]
+          },
+          {
+            "phrase": "יָאֵר פָּנָיו … וִיחֻנֶּךָּ",
+            "gloss": "make his face shine … and be gracious to you",
+            "evidence": [
+              {
+                "ref": "Num.6.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.67.2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֵן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "favour; grace, charm",
+      "bdb": [
+        "h.dz.ab"
+      ],
+      "summary": "Sixty-nine times, most often in “find favour in the eyes of”. Favour is what one finds or is given, never what one takes: it is in the eyes of the one who grants it. The noun is also the grace that wins favour: of words, of a woman, of a jewel; and Yahweh gives it to the lowly.",
+      "senses": [
+        {
+          "id": "favour-in-eyes",
+          "gloss": "favour, goodwill (in someone's eyes)",
+          "definition": "The kindly regard of a superior toward one who asks: found (מָצָא חֵן) by the one who receives it, or given (נָתַן חֵן) by Yahweh in the eyes of others. It is the language of request: “if I have found favour in your eyes”.",
+          "cognate_ids": [
+            "ar-hanna",
+            "uga-hnn",
+            "arc-chanan"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.6.8",
+              "role": "defining",
+              "note": "“Noah found חֵן in the eyes of Yahweh”, when every imagination of man's heart was only evil."
+            },
+            {
+              "ref": "Exo.33.12",
+              "to": "Exo.33.13",
+              "role": "defining",
+              "note": "“You have said, I know you by name and you have found favour in my eyes. Now if I have found favour in your eyes, show me now your ways.”"
+            },
+            {
+              "ref": "Exo.33.17",
+              "note": "“I will do this thing also, for you have found favour in my eyes and I know you by name.”"
+            },
+            {
+              "ref": "Exo.34.9",
+              "note": "“If now I have found favour in your eyes, Lord, let the Lord go in our midst … and pardon our iniquity.”"
+            },
+            {
+              "ref": "Gen.18.3",
+              "note": "Abraham to the three: “My lord, if now I have found favour in your eyes, do not pass by.”"
+            },
+            {
+              "ref": "Gen.39.21",
+              "role": "defining",
+              "note": "“Yahweh was with Joseph and extended חֶסֶד to him, and gave him favour (וַיִּתֵּן חִנּוֹ) in the eyes of the keeper of the prison.”"
+            },
+            {
+              "ref": "Exo.3.21",
+              "note": "“I will give this people favour in the eyes of the Egyptians.”"
+            },
+            {
+              "ref": "Exo.11.3"
+            },
+            {
+              "ref": "Exo.12.36"
+            },
+            {
+              "ref": "Gen.47.25",
+              "note": "“You have saved our lives; let us find favour in the eyes of my lord, and we will be Pharaoh's servants.”"
+            },
+            {
+              "ref": "Rut.2.10",
+              "role": "defining",
+              "note": "“Why have I found favour in your eyes, that you take notice of me, since I am a foreigner?”"
+            },
+            {
+              "ref": "Rut.2.2"
+            },
+            {
+              "ref": "Rut.2.13"
+            },
+            {
+              "ref": "1Sa.1.18",
+              "note": "Hannah to Eli: “Let your handmaid find favour in your eyes.”"
+            },
+            {
+              "ref": "Est.2.17",
+              "note": "“She obtained favour and חֶסֶד in his sight more than all the virgins.”"
+            },
+            {
+              "ref": "Est.5.8"
+            },
+            {
+              "ref": "Est.7.3"
+            },
+            {
+              "ref": "Num.11.11",
+              "note": "Moses: “Why have I not found favour in your eyes, that you lay the burden of all this people on me?”"
+            },
+            {
+              "ref": "Jdg.6.17"
+            },
+            {
+              "ref": "2Sa.15.25",
+              "note": "David: “If I find favour in the eyes of Yahweh, he will bring me back.”"
+            },
+            {
+              "ref": "Jer.31.2",
+              "note": "“The people who survived the sword found favour in the wilderness; Israel, when I went to give him rest.”"
+            },
+            {
+              "ref": "Pro.3.4",
+              "note": "“So you will find favour and good understanding in the eyes of God and man.”"
+            },
+            {
+              "ref": "Deu.24.1",
+              "note": "“If she finds no favour in his eyes, because he has found some uncleanness in her.”"
+            }
+          ]
+        },
+        {
+          "id": "grace-given-by-yahweh",
+          "gloss": "grace given by Yahweh",
+          "definition": "Favour as Yahweh's gift: he gives it to the lowly and withholds it from the scornful, gives it with glory to those who walk uprightly, and pours out a spirit of grace on Jerusalem.",
+          "cognate_ids": [
+            "ar-hanna"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.3.34",
+              "role": "defining",
+              "note": "“He scorns the scorners, but to the lowly he gives חֵן.” Quoted at Jas 4:6 and 1Pe 5:5."
+            },
+            {
+              "ref": "Psa.84.12",
+              "role": "defining",
+              "note": "“Yahweh God is a sun and shield; Yahweh gives חֵן and glory; no good thing will he withhold from those who walk uprightly.”"
+            },
+            {
+              "ref": "Zec.12.10",
+              "role": "defining",
+              "note": "“I will pour out on the house of David and the inhabitants of Jerusalem a spirit of חֵן and supplications (תַחֲנוּנִים).”"
+            },
+            {
+              "ref": "Zec.4.7",
+              "note": "The top stone of the house brought out “with shoutings, Grace, grace to it”."
+            }
+          ]
+        },
+        {
+          "id": "grace-charm",
+          "gloss": "grace, charm, attractiveness",
+          "definition": "The pleasing quality that wins favour: of speech, of a woman, of wisdom worn like an ornament; it can deceive, as a harlot's or a bribe's.",
+          "cognate_ids": [
+            "arc-chanan"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.31.30",
+              "role": "defining",
+              "note": "“Charm (הַחֵן) is false and beauty is vain; a woman who fears Yahweh, she shall be praised.”"
+            },
+            {
+              "ref": "Psa.45.3",
+              "role": "defining",
+              "note": "“You are fairer than the sons of men; grace is poured on your lips.”"
+            },
+            {
+              "ref": "Pro.22.11",
+              "note": "“He who loves purity of heart, whose lips are gracious, the king will be his friend.”"
+            },
+            {
+              "ref": "Ecc.10.12",
+              "note": "“The words of a wise man's mouth are grace.”"
+            },
+            {
+              "ref": "Pro.11.16",
+              "note": "“A gracious woman (אֵשֶׁת־חֵן) obtains honour.”"
+            },
+            {
+              "ref": "Pro.5.19",
+              "note": "The wife of one's youth, “a loving hind and a graceful doe (יַעֲלַת חֵן)”."
+            },
+            {
+              "ref": "Pro.1.9",
+              "note": "A father's instruction “a garland of grace for your head”; also Pro 3:22; 4:9."
+            },
+            {
+              "ref": "Pro.3.22"
+            },
+            {
+              "ref": "Pro.4.9"
+            },
+            {
+              "ref": "Nam.3.4",
+              "note": "Nineveh, “the well-favoured harlot (טוֹבַת חֵן), the mistress of sorceries”."
+            },
+            {
+              "ref": "Pro.17.8",
+              "note": "“A bribe is a stone of grace in the eyes of its owner.”"
+            },
+            {
+              "ref": "Pro.13.15",
+              "note": "“Good understanding gives favour.”"
+            },
+            {
+              "ref": "Ecc.9.11",
+              "note": "“Nor favour to men of skill, but time and chance happen to them all.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χάρις",
+          "gloss": "favour, grace",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.6.8; Exo.3.21; Psa.45.3; Psa.84.12; Pro.3.34; Zec.12.10, חֵן → χάρις; χάρις renders חֵן ×60"
+            },
+            {
+              "ref": "Jas.4.6",
+              "role": "defining",
+              "note": "Quoting Pro 3:34: “God resists the proud, but gives grace to the humble.”"
+            },
+            {
+              "ref": "1Pe.5.5",
+              "role": "defining",
+              "note": "The same verse, with “be clothed with humility”."
+            },
+            {
+              "ref": "Luk.1.30",
+              "note": "“Do not fear, Mary, for you have found favour (εὗρες χάριν) with God”: the Hebrew phrase מָצָא חֵן."
+            },
+            {
+              "ref": "Act.7.46",
+              "note": "David “found favour before God”."
+            },
+            {
+              "ref": "Luk.4.22",
+              "note": "They marvelled “at the words of grace (τοῖς λόγοις τῆς χάριτος) that proceeded out of his mouth”: as Psa 45:3, grace poured on the king's lips."
+            },
+            {
+              "ref": "Heb.10.29",
+              "note": "“The Spirit of grace”, as Zec 12:10."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חֶסֶד",
+            "note": "Favour beside covenant faithfulness, given together.",
+            "evidence": [
+              {
+                "ref": "Gen.39.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.2.17"
+              }
+            ]
+          },
+          {
+            "lemma": "כָּבוֹד",
+            "note": "“Glory”: what Yahweh gives with grace.",
+            "evidence": [
+              {
+                "ref": "Psa.84.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.11.16"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "לֵץ",
+            "note": "The scorner, whom Yahweh scorns, against the lowly to whom he gives grace.",
+            "evidence": [
+              {
+                "ref": "Pro.3.34",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מָצָא חֵן בְּעֵינֵי",
+            "gloss": "find favour in the eyes of",
+            "evidence": [
+              {
+                "ref": "Gen.6.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.33.13"
+              },
+              {
+                "ref": "Rut.2.10"
+              }
+            ]
+          },
+          {
+            "phrase": "נָתַן חֵן בְּעֵינֵי",
+            "gloss": "give favour in the eyes of",
+            "evidence": [
+              {
+                "ref": "Exo.3.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.11.3"
+              },
+              {
+                "ref": "Exo.12.36"
+              },
+              {
+                "ref": "Gen.39.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חִנָּם",
+      "pos": "adverb",
+      "gloss": "for nothing, freely; in vain; without cause",
+      "bdb": [
+        "h.dz.ac"
+      ],
+      "cognate_ids": [
+        "arc-chanan"
+      ],
+      "summary": "Thirty-two times. חֵן with an adverbial ending: “as a favour”, so “for nothing”, without payment or wages; then “for nothing” in the sense of to no purpose, and of hatred or bloodshed with no reason given for it.",
+      "senses": [
+        {
+          "id": "for-nothing",
+          "gloss": "for nothing, without payment, freely",
+          "definition": "Without wages or price: work unpaid, a slave going free, food that cost nothing, a people sold and redeemed without money.",
+          "kin": [
+            "give-graciously"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.29.15",
+              "role": "defining",
+              "note": "Laban: “Because you are my brother, should you serve me חִנָּם? Tell me, what shall your wages be?”"
+            },
+            {
+              "ref": "Exo.21.2",
+              "role": "defining",
+              "note": "The Hebrew slave “in the seventh he shall go out free (לַחָפְשִׁי) חִנָּם”."
+            },
+            {
+              "ref": "Exo.21.11",
+              "note": "“She shall go out חִנָּם, without money.”"
+            },
+            {
+              "ref": "Num.11.5",
+              "note": "“We remember the fish which we ate in Egypt חִנָּם.”"
+            },
+            {
+              "ref": "2Sa.24.24",
+              "role": "defining",
+              "note": "“I will surely buy it from you at a price; I will not offer to Yahweh my God burnt offerings חִנָּם”: that cost me nothing (also 1Ch 21:24)."
+            },
+            {
+              "ref": "1Ch.21.24"
+            },
+            {
+              "ref": "Jer.22.13",
+              "note": "“Who makes his neighbour serve חִנָּם and does not give him his wages.”"
+            },
+            {
+              "ref": "Isa.52.3",
+              "role": "defining",
+              "note": "“You were sold חִנָּם, and you shall be redeemed without money.”"
+            },
+            {
+              "ref": "Isa.52.5"
+            },
+            {
+              "ref": "Job.1.9",
+              "role": "defining",
+              "note": "The adversary to Yahweh: “Does Job fear God חִנָּם?”: for nothing in return."
+            }
+          ]
+        },
+        {
+          "gloss": "in vain, to no purpose",
+          "definition": "For nothing in the sense of with no result: a net spread where the bird sees it, an altar fire lit for an offering not accepted, a threat Yahweh did not speak idly.",
+          "evidence": [
+            {
+              "ref": "Pro.1.17",
+              "role": "defining",
+              "note": "“Surely in vain the net is spread in the sight of any bird.”"
+            },
+            {
+              "ref": "Mal.1.10",
+              "role": "defining",
+              "note": "“Who is there among you who would shut the doors, so that you do not kindle fire on my altar in vain?”"
+            },
+            {
+              "ref": "Ezk.6.10",
+              "role": "defining",
+              "note": "“They shall know that I am Yahweh; I did not say in vain that I would do this evil to them.”"
+            },
+            {
+              "ref": "Ezk.14.23"
+            }
+          ]
+        },
+        {
+          "id": "without-cause",
+          "gloss": "without cause, undeservedly",
+          "definition": "Of hatred, attack, accusation or bloodshed: given for nothing the victim did, undeserved.",
+          "evidence": [
+            {
+              "ref": "Psa.35.19",
+              "role": "defining",
+              "note": "“Let not those who hate me without cause (שֹׂנְאַי חִנָּם) wink with the eye.” Quoted at Joh 15:25."
+            },
+            {
+              "ref": "Psa.69.5",
+              "role": "defining",
+              "note": "“More than the hairs of my head are those who hate me without cause.”"
+            },
+            {
+              "ref": "Psa.35.7",
+              "note": "“Without cause they hid their net for me; without cause they dug a pit for my soul.”"
+            },
+            {
+              "ref": "Psa.109.3"
+            },
+            {
+              "ref": "Psa.119.161",
+              "note": "“Princes persecute me without cause, but my heart stands in awe of your word.”"
+            },
+            {
+              "ref": "1Sa.19.5",
+              "role": "defining",
+              "note": "Jonathan to Saul: “Why will you sin against innocent blood, to kill David without cause?”"
+            },
+            {
+              "ref": "1Sa.25.31",
+              "note": "“That you have shed blood without cause.”"
+            },
+            {
+              "ref": "1Ki.2.31",
+              "note": "“The innocent blood which Joab shed.”"
+            },
+            {
+              "ref": "Job.2.3",
+              "role": "defining",
+              "note": "Yahweh to the adversary: “you moved me against him to destroy him without cause”."
+            },
+            {
+              "ref": "Job.9.17",
+              "note": "“He multiplies my wounds without cause.”"
+            },
+            {
+              "ref": "Pro.3.30",
+              "note": "“Do not strive with a man without cause, if he has done you no harm.”"
+            },
+            {
+              "ref": "Pro.24.28"
+            },
+            {
+              "ref": "Pro.26.2",
+              "note": "“A curse without cause does not alight.”"
+            },
+            {
+              "ref": "Pro.1.11"
+            },
+            {
+              "ref": "Pro.23.29"
+            },
+            {
+              "ref": "Lam.3.52",
+              "note": "“My enemies hunted me like a bird, without cause.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δωρεάν",
+          "gloss": "as a gift, freely; without cause; in vain",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.29.15; Exo.21.11; 1Sa.19.5; Psa.35.19; Psa.69.5; Isa.52.3, חִנָּם → δωρεάν; δωρεάν renders חִנָּם ×19"
+            },
+            {
+              "ref": "Jhn.15.25",
+              "role": "defining",
+              "note": "“That the word might be fulfilled that is written in their law, They hated me without a cause (δωρεάν)”: Psa 35:19; 69:5."
+            },
+            {
+              "ref": "Rom.3.24",
+              "role": "defining",
+              "note": "“Being justified freely (δωρεάν) by his grace through the redemption that is in Christ Jesus”: the “without money” of Isa 52:3."
+            },
+            {
+              "ref": "Mat.10.8",
+              "note": "“Freely you received, freely give.”"
+            },
+            {
+              "ref": "Gal.2.21",
+              "note": "“If righteousness comes by the law, then Christ died in vain (δωρεάν).”"
+            },
+            {
+              "ref": "Rev.22.17",
+              "note": "“Whoever will, let him take the water of life freely.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מְחִיר",
+            "note": "“Price”: what is bought, against what is free.",
+            "evidence": [
+              {
+                "ref": "2Sa.24.24",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "כֶּסֶף",
+            "note": "“Silver, money”: redeemed not with money.",
+            "evidence": [
+              {
+                "ref": "Isa.52.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.21.11"
+              }
+            ]
+          },
+          {
+            "lemma": "מַשְׂכֹּרֶת",
+            "note": "“Wages”: service for nothing against service for wages.",
+            "evidence": [
+              {
+                "ref": "Gen.29.15",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תְּחִנָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "supplication, plea for favour; favour",
+      "bdb": [
+        "h.dz.aq"
+      ],
+      "summary": "Twenty-five times (one more token of the spelling, 1Ch 4:12, is the man Tehinnah). The noun of the hithpael: a plea for favour, “made to fall” before Yahweh or a king; twice the favour itself.",
+      "senses": [
+        {
+          "id": "supplication",
+          "gloss": "supplication, plea for favour",
+          "definition": "A request for favour laid before one who can grant it, often beside תְּפִלָּה “prayer”; it is said to “fall” (נָפַל) before the hearer, as one falls down to ask.",
+          "kin": [
+            "plead-for-favour"
+          ],
+          "cognate_ids": [
+            "akk-unninu"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.8.28",
+              "role": "defining",
+              "note": "“Turn to the prayer of your servant and to his supplication, Yahweh my God, to listen to the cry and the prayer.”"
+            },
+            {
+              "ref": "1Ki.8.30"
+            },
+            {
+              "ref": "1Ki.8.38"
+            },
+            {
+              "ref": "1Ki.8.45"
+            },
+            {
+              "ref": "1Ki.8.49"
+            },
+            {
+              "ref": "1Ki.8.52"
+            },
+            {
+              "ref": "1Ki.8.54"
+            },
+            {
+              "ref": "1Ki.9.3"
+            },
+            {
+              "ref": "Jer.36.7",
+              "role": "defining",
+              "note": "“It may be their supplication will fall before Yahweh, and they will return each from his evil way.”"
+            },
+            {
+              "ref": "Jer.37.20",
+              "role": "defining",
+              "note": "Jeremiah to Zedekiah: “Let my supplication fall before you, and do not make me return to the house of Jonathan the scribe, lest I die there.”"
+            },
+            {
+              "ref": "Jer.38.26"
+            },
+            {
+              "ref": "Jer.42.2"
+            },
+            {
+              "ref": "Jer.42.9"
+            },
+            {
+              "ref": "Psa.6.10",
+              "note": "“Yahweh has heard my supplication; Yahweh receives my prayer.”"
+            },
+            {
+              "ref": "Psa.55.2"
+            },
+            {
+              "ref": "Psa.119.170"
+            },
+            {
+              "ref": "Dan.9.20",
+              "note": "“Confessing my sin and the sin of my people Israel, and presenting my supplication before Yahweh my God for the holy mountain.”"
+            },
+            {
+              "ref": "2Ch.33.13",
+              "role": "defining",
+              "note": "Manasseh in Babylon prayed, “and he heard his supplication and brought him back to Jerusalem to his kingdom; then Manasseh knew that Yahweh is God.”"
+            },
+            {
+              "ref": "2Ch.6.19"
+            },
+            {
+              "ref": "2Ch.6.29"
+            },
+            {
+              "ref": "2Ch.6.35"
+            },
+            {
+              "ref": "2Ch.6.39"
+            }
+          ]
+        },
+        {
+          "id": "favour-shown",
+          "gloss": "favour (shown)",
+          "definition": "The favour asked for, granted or withheld.",
+          "kin": [
+            "be-gracious"
+          ],
+          "evidence": [
+            {
+              "ref": "Jos.11.20",
+              "role": "defining",
+              "note": "The kings of Canaan were hardened “that they might be devoted, that they might have no favour (תְּחִנָּה), but be destroyed”."
+            },
+            {
+              "ref": "Ezr.9.8",
+              "role": "defining",
+              "note": "“Now for a little moment favour has been shown from Yahweh our God, to leave us a remnant and give us a peg in his holy place.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δέησις",
+          "gloss": "prayer, supplication",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.8.30, תְּחִנַּת → δεήσεως; δέησις renders תְּחִנָּה ×8 and תַּחֲנוּן ×3"
+            },
+            {
+              "ref": "Luk.1.13",
+              "note": "“Do not fear, Zacharias, for your supplication (δέησις) is heard; your wife Elisabeth shall bear you a son, and you shall call his name John”: Johanan, “Yahweh has been gracious”."
+            },
+            {
+              "ref": "Php.4.6",
+              "note": "“In everything by prayer and supplication (δεήσει) with thanksgiving let your requests be made known to God.”"
+            },
+            {
+              "ref": "Heb.5.7",
+              "role": "defining",
+              "note": "“In the days of his flesh he offered up prayers and supplications (δεήσεις) with strong crying and tears to him who was able to save him from death, and was heard.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תְּפִלָּה",
+            "note": "“Prayer”, its constant partner.",
+            "evidence": [
+              {
+                "ref": "1Ki.8.28",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.8.45"
+              },
+              {
+                "ref": "1Ki.9.3"
+              },
+              {
+                "ref": "Psa.6.10"
+              },
+              {
+                "ref": "Psa.55.2"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הִפִּיל תְּחִנָּה לִפְנֵי",
+            "gloss": "lay a supplication before (literally, make it fall)",
+            "evidence": [
+              {
+                "ref": "Jer.38.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.9.20"
+              },
+              {
+                "ref": "Jer.42.9"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תַּחֲנוּן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "supplications, pleas for favour",
+      "bdb": [
+        "h.dz.as"
+      ],
+      "summary": "Eighteen times, always plural: “the voice of my supplications”. The pleas of the needy, of Israel returning, and of Daniel for Jerusalem.",
+      "senses": [
+        {
+          "gloss": "supplications, pleas for favour",
+          "definition": "Pleas for favour, spoken aloud and heard: of the psalmist, of the poor man before the rich, of Daniel for his people and city, and of Israel weeping on the way back to Yahweh.",
+          "kin": [
+            "plead-for-favour"
+          ],
+          "cognate_ids": [
+            "akk-unninu"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.28.2",
+              "role": "defining",
+              "note": "“Hear the voice of my supplications when I cry to you, when I lift up my hands toward your holy sanctuary.”"
+            },
+            {
+              "ref": "Psa.28.6",
+              "note": "“Blessed be Yahweh, for he has heard the voice of my supplications.”"
+            },
+            {
+              "ref": "Psa.31.23"
+            },
+            {
+              "ref": "Psa.86.6"
+            },
+            {
+              "ref": "Psa.116.1",
+              "note": "“I love Yahweh, for he hears my voice, my supplications.”"
+            },
+            {
+              "ref": "Psa.130.2"
+            },
+            {
+              "ref": "Psa.140.7"
+            },
+            {
+              "ref": "Psa.143.1"
+            },
+            {
+              "ref": "Pro.18.23",
+              "role": "defining",
+              "note": "“The poor man speaks supplications, but the rich answers roughly.”"
+            },
+            {
+              "ref": "Job.40.27",
+              "note": "Of Leviathan: “Will he make many supplications to you? Will he speak soft words to you?”"
+            },
+            {
+              "ref": "Dan.9.3",
+              "role": "defining",
+              "note": "“I set my face to the Lord God, to seek by prayer and supplications, with fasting and sackcloth and ashes.”"
+            },
+            {
+              "ref": "Dan.9.17"
+            },
+            {
+              "ref": "Dan.9.18",
+              "role": "defining",
+              "note": "“We do not present our supplications before you because of our righteousness, but because of your great compassions.”"
+            },
+            {
+              "ref": "Dan.9.23",
+              "note": "“At the beginning of your supplications the word went out.”"
+            },
+            {
+              "ref": "Jer.3.21",
+              "note": "“A voice is heard on the bare heights, the weeping and supplications of the sons of Israel.”"
+            },
+            {
+              "ref": "Jer.31.9",
+              "role": "defining",
+              "note": "“They shall come with weeping, and with supplications I will lead them … for I am a father to Israel.”"
+            },
+            {
+              "ref": "Zec.12.10",
+              "note": "“A spirit of grace and supplications.”"
+            },
+            {
+              "ref": "2Ch.6.21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַנּוּן",
+      "pos": "adjective",
+      "gloss": "gracious",
+      "bdb": [
+        "h.dz.ai"
+      ],
+      "summary": "Thirteen times, twelve of Yahweh, always beside רַחוּם “compassionate”: the words of the name Yahweh proclaimed to Moses, repeated by the prophets and psalms. Psa 112:4 says it of the upright man, who is like his God.",
+      "cognate_ids": [
+        "ar-hanna"
+      ],
+      "senses": [
+        {
+          "gloss": "gracious (of Yahweh, and of the upright)",
+          "definition": "Ready to show favour to the one who cries or returns: Yahweh's character as he declared it, the ground of appeal for the poor man's cloak, for Nineveh, and for Israel returning.",
+          "kin": [
+            "be-gracious"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.34.6",
+              "role": "defining",
+              "note": "“Yahweh, Yahweh, God compassionate and gracious (רַחוּם וְחַנּוּן), slow to anger and abounding in חֶסֶד and truth.”"
+            },
+            {
+              "ref": "Exo.22.26",
+              "role": "defining",
+              "note": "Of the pledged cloak: “When he cries to me I will hear, for I am gracious.”"
+            },
+            {
+              "ref": "Jol.2.13",
+              "note": "“Tear your heart and not your garments, and return to Yahweh your God, for he is gracious and compassionate.”"
+            },
+            {
+              "ref": "Jon.4.2",
+              "role": "defining",
+              "note": "Jonah fled “for I knew that you are a gracious and compassionate God … and relent of evil”: toward Nineveh."
+            },
+            {
+              "ref": "Psa.86.15"
+            },
+            {
+              "ref": "Psa.103.8"
+            },
+            {
+              "ref": "Psa.111.4"
+            },
+            {
+              "ref": "Psa.116.5",
+              "note": "“Gracious is Yahweh, and righteous; our God is compassionate.”"
+            },
+            {
+              "ref": "Psa.145.8"
+            },
+            {
+              "ref": "Neh.9.17",
+              "note": "“They hardened their necks … but you are a God ready to forgive, gracious and compassionate.”"
+            },
+            {
+              "ref": "Neh.9.31"
+            },
+            {
+              "ref": "2Ch.30.9",
+              "role": "defining",
+              "note": "“If you return to Yahweh, your brothers and sons will find compassion before their captors and return to this land, for Yahweh your God is gracious and compassionate.”"
+            },
+            {
+              "ref": "Psa.112.4",
+              "note": "Of the upright: “gracious and compassionate and righteous”; he “is gracious and lends” (112:5)."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐλεήμων",
+          "gloss": "merciful",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.34.6; Jol.2.13; Jon.4.2; Psa.103.8; Psa.111.4, חַנּוּן → ἐλεήμων; ἐλεήμων renders חַנּוּן ×12"
+            },
+            {
+              "ref": "Heb.2.17",
+              "role": "defining",
+              "note": "Christ was made like his brothers in all things, “that he might be a merciful (ἐλεήμων) and faithful high priest”."
+            },
+            {
+              "ref": "Mat.5.7",
+              "note": "“Blessed are the merciful (ἐλεήμονες), for they shall obtain mercy.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רַחוּם",
+            "note": "“Compassionate”: with חַנּוּן in every listing of Yahweh's name.",
+            "evidence": [
+              {
+                "ref": "Exo.34.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.103.8"
+              },
+              {
+                "ref": "Jon.4.2"
+              },
+              {
+                "ref": "2Ch.30.9"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "רַחוּם וְחַנּוּן אֶרֶךְ אַפַּיִם וְרַב־חֶסֶד",
+            "gloss": "compassionate and gracious, slow to anger and abounding in covenant faithfulness",
+            "evidence": [
+              {
+                "ref": "Exo.34.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.86.15"
+              },
+              {
+                "ref": "Psa.103.8"
+              },
+              {
+                "ref": "Psa.145.8"
+              },
+              {
+                "ref": "Jol.2.13"
+              },
+              {
+                "ref": "Jon.4.2"
+              },
+              {
+                "ref": "Neh.9.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֲנִינָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "favour",
+      "bdb": [
+        "h.dz.aj"
+      ],
+      "summary": "Once: the favour Yahweh will not show to Judah in exile.",
+      "senses": [
+        {
+          "gloss": "favour",
+          "definition": "Favour shown; here withheld.",
+          "kin": [
+            "be-gracious"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.16.13",
+              "role": "defining",
+              "note": "“I will cast you out of this land … and there you shall serve other gods day and night, for I will show you no favour (חֲנִינָה).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חִין",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "grace, comeliness",
+      "bdb": [
+        "h.dz.ae"
+      ],
+      "summary": "Once, of Leviathan's frame. The spelling with yod, not nun, makes its tie to the root uncertain; the sense “grace of form” fits חֵן.",
+      "senses": [
+        {
+          "gloss": "grace, comeliness (of form)",
+          "definition": "The fine proportion of a creature's body.",
+          "kin": [
+            "grace-charm"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.41.4",
+              "role": "defining",
+              "note": "“I will not keep silence about his limbs, or his mighty strength, or the grace of his frame (וְחִין עֶרְכּוֹ).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲנַן",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "show mercy; (hithpaal) make supplication",
+      "bdb": [
+        "xh.ak.aa"
+      ],
+      "cognate_ids": [
+        "arc-chanan"
+      ],
+      "summary": "Daniel's Aramaic, twice: Daniel counsels Nebuchadnezzar to show mercy to the poor, and is found making supplication before his God.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "show mercy",
+          "senses": [
+            {
+              "gloss": "show mercy (to the poor)",
+              "definition": "To be gracious to the afflicted, as the way to break off sin.",
+              "kin": [
+                "pity-the-needy"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.4.24",
+                  "role": "defining",
+                  "note": "“Break off your sins by righteousness, and your iniquities בְּמִחַן עֲנָיִן, by showing mercy to the afflicted, if there may be a lengthening of your prosperity.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpaal",
+          "gloss": "make supplication",
+          "senses": [
+            {
+              "gloss": "make supplication",
+              "definition": "To plead for favour before God in prayer.",
+              "kin": [
+                "plead-for-favour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.6.12",
+                  "role": "defining",
+                  "note": "“These men … found Daniel praying and making supplication (וּמִתְחַנַּן) before his God.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐλεημοσύνη",
+          "gloss": "mercy shown, alms",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.4.24, בְּמִחַן → ἐλεημοσύναις"
+            },
+            {
+              "ref": "Act.10.4",
+              "note": "To Cornelius: “Your prayers and your alms (ἐλεημοσύναι) have come up for a memorial before God.”"
+            },
+            {
+              "ref": "Luk.11.41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַן",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "have mercy; (ethpeel) obtain mercy; (ethpaal) implore",
+      "cognate_ids": [
+        "ar-hanna"
+      ],
+      "summary": "The Peshitta's ܚܢ (ḥan), for ἐλεέω and ἱλάσκομαι, and in Rom 9:15 for the Hebrew חָנַן of Exo 33:19 quoted.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "have mercy, be gracious",
+          "senses": [
+            {
+              "gloss": "have mercy, be gracious",
+              "definition": "To show mercy to one who has no claim: God to whom he will, the master to his debtor, God to the sinner who asks.",
+              "kin": [
+                "gracious-of-god"
+              ],
+              "evidence": [
+                {
+                  "ref": "Rom.9.15",
+                  "role": "defining",
+                  "note": "Quoting Exo 33:19: “I will have mercy (אֵחוֹן) on whom I have mercy.”"
+                },
+                {
+                  "ref": "Luk.18.13",
+                  "role": "defining",
+                  "note": "The tax collector: “God, be merciful (חוּנַיְנִי) to me a sinner”, as Psa 51:3 חָנֵּנִי."
+                },
+                {
+                  "ref": "Mat.18.33",
+                  "note": "“Should you not have had mercy on your fellow servant, as I had mercy on you?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "obtain mercy",
+          "senses": [
+            {
+              "gloss": "obtain mercy, be shown mercy",
+              "definition": "To receive mercy undeserved.",
+              "evidence": [
+                {
+                  "ref": "1Ti.1.13",
+                  "role": "defining",
+                  "note": "“I was before a blasphemer and a persecutor … but I obtained mercy (אֶתְחַנְנֶת), because I did it ignorantly.”"
+                },
+                {
+                  "ref": "Rom.11.30",
+                  "note": "“You were once disobedient to God, but now have obtained mercy.”"
+                },
+                {
+                  "ref": "1Co.7.25",
+                  "note": "“As one who has obtained mercy from the Lord to be faithful.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "implore, make request",
+          "senses": [
+            {
+              "gloss": "implore, make request",
+              "definition": "To ask God earnestly, as the Hebrew hithpael.",
+              "kin": [
+                "plead-for-favour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Rom.1.10",
+                  "role": "defining",
+                  "note": "“Making request (וּמֶתְחַנַּן), if by any means I may have a prosperous journey by the will of God to come to you.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חְנָנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "mercy, compassion, favour",
+      "cognate_ids": [
+        "ar-hanna"
+      ],
+      "summary": "The Peshitta's ܚܢܢܐ (ḥnānā), most often for ἔλεος, which the Septuagint uses for חֶסֶד: so the Peshitta's word for God's mercy in Luke's songs and in the hope of the resurrection is from this root.",
+      "senses": [
+        {
+          "id": "gracious-of-god",
+          "gloss": "mercy, compassion (of God)",
+          "definition": "God's mercy on those who fear him, remembered to Israel and the fathers, shown in John's birth, and looked for at Christ's coming for life eternal.",
+          "evidence": [
+            {
+              "ref": "Luk.1.50",
+              "role": "defining",
+              "note": "“His mercy (חְנָנֵהּ) is on those who fear him, from generation to generation.”"
+            },
+            {
+              "ref": "Luk.1.54",
+              "note": "“He has helped Israel his servant, to remember his mercy.”"
+            },
+            {
+              "ref": "Luk.1.58",
+              "role": "defining",
+              "note": "Elisabeth's neighbours heard “that the Lord had magnified his mercy on her”, and the child was named John, Johanan."
+            },
+            {
+              "ref": "Luk.1.72",
+              "note": "“To perform mercy with our fathers, and to remember his holy covenant.”"
+            },
+            {
+              "ref": "Luk.1.78"
+            },
+            {
+              "ref": "1Pe.1.3",
+              "role": "defining",
+              "note": "“Who according to his great mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead.”"
+            },
+            {
+              "ref": "Jud.1.21",
+              "note": "“Looking for the mercy of our Lord Jesus Christ unto life eternal.”"
+            },
+            {
+              "ref": "Mat.9.13",
+              "note": "Quoting Hos 6:6, “I desire mercy and not sacrifice”: the Hebrew there is חֶסֶד."
+            },
+            {
+              "ref": "Mat.12.7"
+            },
+            {
+              "ref": "Mat.23.23",
+              "note": "“Judgment, mercy and faith.”"
+            },
+            {
+              "ref": "Luk.2.30",
+              "note": "Simeon: “My eyes have seen your mercy”, where the Greek has τὸ σωτήριόν σου."
+            }
+          ],
+          "kin": [
+            "be-gracious"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּחְנַנְתָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "intercession, supplication",
+      "summary": "The Peshitta's ܬܚܢܢܬܐ, once, formed as Hebrew תְּחִנָּה.",
+      "senses": [
+        {
+          "gloss": "intercession, supplication",
+          "definition": "A plea made to God for others.",
+          "kin": [
+            "supplication"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ti.2.1",
+              "role": "defining",
+              "note": "“I exhort first of all that supplications, prayers, intercessions (וְתַחְנַנְתָּא) and thanksgivings be made for all men.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hanna",
+      "lang": "ar",
+      "form": "حَنَّ، حَنَانٌ",
+      "translit": "ḥanna, ḥanān",
+      "gloss": "yearn toward; (with ʿalā) be merciful, compassionate, favourably inclined toward; (ḥanān) mercy, compassion, tenderness of heart; a blessing, provision bestowed by God",
+      "relation": "cognate",
+      "note": "The same turning toward another in kindness, and the same use in prayer: ḥanānaka yā rabbi “your mercy, my Lord!” as the Hebrew חָנֵּנִי. The yearning of a she-camel toward her young is the root's wider Arabic sense. Arabic shows ḥ behind ח.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 652–653, art. حن, حَنَّ (n9237)",
+          "note": "“حَنَّ عَلَيْهِ … He was merciful, compassionate, or pitiful, towards him, or it; … he was, or became, favourably inclined towards him, or it.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 653, art. حن, حَنَانٌ (n9243)",
+          "note": "“Mercy, compassion, or pity: tenderness of heart … حَنَانَكَ يَا رَبِّ [I beg thy mercy, O my Lord] … Also i. q. رِزْقٌ [means of subsistence] and بَرَكَةٌ [a blessing; any good that is bestowed by God].”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic حنون (ḥanūn)",
+          "note": "“Loving, fond, affectionate; compassionate, merciful, gracious”, compared with Hebrew חָנוּן."
+        }
+      ]
+    },
+    {
+      "id": "uga-hnn",
+      "lang": "uga",
+      "form": "𐎈𐎐𐎐، 𐎈𐎐",
+      "translit": "ḥnn, ḥn",
+      "gloss": "be gracious, show favour; grace",
+      "relation": "cognate",
+      "note": "Ugaritic keeps ḥ and ḫ apart and writes ḥ here.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000128 ḥnn [favor] V, UGC001870 ḥnn [G/D?] V; SEM000131 ḥn [favor] N, UGC001867 ḥn [grace] N"
+        }
+      ]
+    },
+    {
+      "id": "phn-hnn",
+      "lang": "phn",
+      "form": "𐤇𐤍𐤍، 𐤇𐤍",
+      "translit": "ḥnn, ḥn",
+      "gloss": "be gracious; grace, favour (above all in names: ḥnbʿl Hannibal, “grace of Baal”)",
+      "relation": "cognate",
+      "note": "Punic names formed as Hebrew חֲנַנְאֵל, בַּעַל חָנָן. Phoenician writes one ḥ for both older sounds, so it cannot show which.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000128 ḥnn [favor] V, PUN000707 ḥnn [gracious] V; SEM000131 ḥn [favor] N, PUN000697 ḥn N"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Punic 𐤇𐤍𐤁𐤏𐤋 (ḥnbʿl)",
+          "note": "A male given name from Carthage, borne by Hannibal Barca."
+        }
+      ]
+    },
+    {
+      "id": "akk-enenu",
+      "lang": "akk",
+      "form": "enēnu",
+      "translit": "enēnu",
+      "gloss": "grant favour, be(come) favourable",
+      "relation": "cognate",
+      "note": "Akkadian lost the guttural, so it cannot show which older sound stood behind ח.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000095180, enēnu [grant favour] V",
+          "note": "“Be(come) favourable.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000128 ḥnn [favor] V, AKK002354 enēnu [grant] V"
+        }
+      ]
+    },
+    {
+      "id": "akk-unninu",
+      "lang": "akk",
+      "form": "unnīnu",
+      "translit": "unnīnu",
+      "gloss": "supplication, entreaty, prayer",
+      "relation": "cognate",
+      "note": "The plea for favour, as Hebrew תְּחִנָּה and תַּחֲנוּנִים.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000017020, unnīnu [supplication] N",
+          "note": "“Entreaty; praying; supplication.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-chanan",
+      "lang": "arc",
+      "form": "חֲנַן، חֵן، חִנָּם",
+      "translit": "ḥănan, ḥēn, ḥinnām",
+      "gloss": "be gracious, favour; (hithpael) supplicate; grace, favour, loveliness; gratuitous act, for no reason",
+      "relation": "cognate",
+      "note": "Jewish Aramaic and the Hebrew of the rabbis: the Targum renders Gen 33:5 and Exo 33:19 with the same verb, and חִנָּם is “gratuitously, for no reason”, as in שִׂנְאַת חִנָּם “hatred without cause”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲנַן (ch.), citing Targ. O. Gen. XXXIII, 5; Targ. O. Ex. XXXIII, 19 אֵיחוֹן; Targ. Jud. XXI, 22"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֵן, “grace, favor; loveliness”, citing Ber. 60ᵇ; and s.v. חִנָּם, “gratuitous act, favor … gratuitously; for no reason”, citing Sabb. 32ᵇ שִׂנְאַת ח׳"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "grace-sovereign-and-free",
+      "statement": "When Moses asked to see Yahweh's glory, Yahweh answered, “I will make all my goodness pass before you, and proclaim the name of Yahweh before you; and I will be gracious to whom I will be gracious, and have compassion on whom I will have compassion” (Exo 33:19); Paul quotes it and concludes, “so then it is not of him who wills, nor of him who runs, but of God who shows mercy” (Rom 9:15–16). The verb's own uses show favour going to those with no claim: children given (Gen 33:5), the poor man helped (Pro 19:17), the sinner who says “be gracious to me … for I have sinned” (Psa 41:5; 51:3). Daniel pleads “not because of our righteousness, but because of your great compassions” (Dan 9:18). Grace is given to the lowly and refused to the scornful (Pro 3:34; Jas 4:6; 1Pe 5:5). What is freely given is חִנָּם, “for nothing”: Israel “sold for nothing” is “redeemed without money” (Isa 52:3), and believers are “justified freely (δωρεάν) by his grace through the redemption that is in Christ Jesus” (Rom 3:24). Noah, who “found grace in the eyes of Yahweh”, is in the next verse “a righteous man, blameless in his generations; Noah walked with God” (Gen 6:8–9). From the verses: grace is Yahweh's free choice, not wages for work; it is given to the humble who ask, and those who receive it walk with him.",
+      "evidence": [
+        {
+          "ref": "Exo.33.19"
+        },
+        {
+          "ref": "Rom.9.15",
+          "to": "Rom.9.16"
+        },
+        {
+          "ref": "Gen.33.5"
+        },
+        {
+          "ref": "Pro.19.17"
+        },
+        {
+          "ref": "Psa.41.5"
+        },
+        {
+          "ref": "Psa.51.3"
+        },
+        {
+          "ref": "Dan.9.18"
+        },
+        {
+          "ref": "Pro.3.34"
+        },
+        {
+          "ref": "Jas.4.6"
+        },
+        {
+          "ref": "1Pe.5.5"
+        },
+        {
+          "ref": "Isa.52.3"
+        },
+        {
+          "ref": "Rom.3.24"
+        },
+        {
+          "ref": "Gen.6.8",
+          "to": "Gen.6.9"
+        }
+      ]
+    },
+    {
+      "topic": "name-of-yahweh",
+      "statement": "Yahweh passed before Moses and proclaimed, “Yahweh, Yahweh, God compassionate and gracious (חַנּוּן), slow to anger and abounding in חֶסֶד and truth, keeping חֶסֶד for thousands, forgiving iniquity … and who will by no means clear the guilty” (Exo 34:6–7). The words return wherever Israel or the nations turn back: Hezekiah's call to the north, “Yahweh your God is gracious and compassionate, and will not turn away his face from you, if you return to him”, with the promise that their captives would “return to this land” (2Ch 30:9); “tear your heart and not your garments, and return to Yahweh your God, for he is gracious and compassionate” (Jol 2:13); the Levites' confession, “you did not forsake them” (Neh 9:17, 31); and Jonah's complaint that Yahweh would spare Nineveh (Jon 4:2). The law already said it of the poor man's pledged cloak, “when he cries to me I will hear, for I am gracious” (Exo 22:26), and the upright man is “gracious and compassionate” as his God is (Psa 112:4). Christ, made like his brothers, is “a merciful and faithful high priest” (Heb 2:17). From the verses: “gracious” is part of the name Yahweh declared of himself; it is the ground on which the sinner and the captive may return, and the character his people are to bear.",
+      "evidence": [
+        {
+          "ref": "Exo.34.6",
+          "to": "Exo.34.7"
+        },
+        {
+          "ref": "2Ch.30.9"
+        },
+        {
+          "ref": "Jol.2.13"
+        },
+        {
+          "ref": "Neh.9.17"
+        },
+        {
+          "ref": "Neh.9.31"
+        },
+        {
+          "ref": "Jon.4.2"
+        },
+        {
+          "ref": "Exo.22.26"
+        },
+        {
+          "ref": "Psa.112.4"
+        },
+        {
+          "ref": "Heb.2.17"
+        }
+      ]
+    },
+    {
+      "topic": "zion-favoured",
+      "statement": "The psalmist looks for a set time: “You will arise and have compassion on Zion, for it is time to be gracious to her, for the appointed time has come; for your servants take pleasure in her stones and favour her dust … When Yahweh builds up Zion, he shall appear in his glory” (Psa 102:14–17). Isaiah says “Yahweh waits to be gracious to you … a people shall dwell in Zion at Jerusalem; you shall weep no more; he will surely be gracious to you at the sound of your cry” (Isa 30:18–19). Jeremiah sees Israel coming back “with weeping, and with supplications I will lead them … for I am a father to Israel” (Jer 31:9). Zechariah sets it in the day Yahweh defends Jerusalem against the nations: “I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and supplications, and they shall look on me whom they pierced, and mourn for him as for an only son” (Zec 12:9–10). John says the piercing was fulfilled at the cross (Joh 19:37), and Revelation that at his coming “every eye shall see him, and those who pierced him, and all the tribes of the land shall mourn because of him” (Rev 1:7). From the verses: Yahweh's favour to Zion has an appointed time; it comes when he builds up Zion and appears in glory at Christ's return, and Israel's grief and supplication for the one they pierced are part of it.",
+      "evidence": [
+        {
+          "ref": "Psa.102.14",
+          "to": "Psa.102.17"
+        },
+        {
+          "ref": "Isa.30.18",
+          "to": "Isa.30.19"
+        },
+        {
+          "ref": "Jer.31.9"
+        },
+        {
+          "ref": "Zec.12.9",
+          "to": "Zec.12.10"
+        },
+        {
+          "ref": "Jhn.19.37"
+        },
+        {
+          "ref": "Rev.1.7"
+        }
+      ]
+    },
+    {
+      "topic": "hated-without-cause",
+      "statement": "David says, “Let not those who are my enemies wrongfully rejoice over me, nor let those who hate me without cause wink with the eye” (Psa 35:19), and “more than the hairs of my head are those who hate me without cause” (Psa 69:5); Jonathan asked Saul, “why will you sin against innocent blood, to kill David without cause?” (1Sa 19:5). Jesus said of those who had seen his works and hated him and his Father, “this happened that the word might be fulfilled that is written in their law, They hated me without a cause” (Joh 15:24–25). Job too was struck “without cause” (Job 2:3), after the adversary asked, “Does Job fear God for nothing?” (Job 1:9). From the verses: the hatred that fell on David, and on Jesus the son of David, was given for nothing they had done; the righteous sufferer is hated without cause and commits his cause to God.",
+      "evidence": [
+        {
+          "ref": "Psa.35.19"
+        },
+        {
+          "ref": "Psa.69.5"
+        },
+        {
+          "ref": "1Sa.19.5"
+        },
+        {
+          "ref": "Jhn.15.24",
+          "to": "Jhn.15.25"
+        },
+        {
+          "ref": "Job.2.3"
+        },
+        {
+          "ref": "Job.1.9"
+        }
+      ]
+    },
+    {
+      "topic": "grace-to-the-poor",
+      "statement": "The righteous man “is gracious and gives” (Psa 37:21); “he who is gracious to the poor lends to Yahweh, and he will repay him his deed” (Pro 19:17); “he who oppresses the poor reproaches his Maker, but he who is gracious to the needy honours him” (Pro 14:31). Daniel told Nebuchadnezzar to “break off your iniquities by showing mercy to the afflicted” (Dan 4:24). Jesus taught, “freely you received, freely give” (Mat 10:8), and the master asked the unforgiving servant, “should you not have had mercy on your fellow servant, as I had mercy on you?” (Mat 18:33). From the verses: the favour a man receives from Yahweh is to be shown to the poor; what is given to them is lent to Yahweh, who repays it.",
+      "evidence": [
+        {
+          "ref": "Psa.37.21"
+        },
+        {
+          "ref": "Pro.19.17"
+        },
+        {
+          "ref": "Pro.14.31"
+        },
+        {
+          "ref": "Dan.4.24"
+        },
+        {
+          "ref": "Mat.10.8"
+        },
+        {
+          "ref": "Mat.18.33"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key חננ (the corpus's; BDB h.dz.aa as the root heading). BDB keys assigned: h.dz.aa verb, h.dz.ab חֵן, h.dz.ac חִנָּם, h.dz.aq תְּחִנָּה, h.dz.as תַּחֲנוּן, h.dz.ai חַנּוּן, h.dz.aj חֲנִינָה, h.dz.ae חִין, xh.ak.aa Aramaic חֲנַן. Names in names/: hananiah (h.dz.ao, xh.ak.ab), hanan (h.dz.ag), hannah (h.dz.af), hanun (h.dz.ah), hanani (h.dz.an), henadad (h.dz.am), tehinnah (h.dz.ar), hanniel (h.dz.ak), hen (h.dz.ad), elhanan (a.dl.ah), baal-hanan (b.ci.af), ben-hanan (b.ca.al), johanan (e.az.ak, e.az.bj). Not assigned: h.ea.aa (BDB's חָנַן II “be loathsome”, Job 19:17 only, but the database files every verb token under it by spelling; Job 19:17 is kept here as an uncertain qal sense); h.ea.ab חָנֵס Hanes (Isa 30:4), an Egyptian town, not of this root; h.dz.al חֲנַנְאֵל the tower of Hananel and h.dz.ap חַנָּתֹן Hannathon, places, which cannot be name entries; b.bp.au (Elon-)beth-hanan, a place; and the zero-token cross-references h.cd.ap, h.du.af, h.dw.ad, h.dy.ag, h.ec.ac, w.am.ak, w.am.al. Stems are the corpus's: Psa 67:2 יְחָנֵּנוּ is tagged piel but is a qal form with suffix and is cited under the qal; Psa 77:10 חַנּוֹת is tagged piel (it has also been read as a qal infinitive of חנן or from חָנָה). Open questions: (1) Job 19:17 וְחַנֹּתִי “be loathsome” has no cognate checked (Arabic, Syriac); left as an uncertain sense. (2) Jer 22:23 נֵּחַנְתְּ may be from אָנַח “groan” (the Septuagint has καταστενάχεις); not decided. (3) חִין (Job 41:4) has yod for nun; kept here on its sense only. (4) Ugaritic and Punic rest on Anderson–Moser only; DULAT and Krahmalkov not consulted for texts. (5) Syriac lemma pointing (חַן, חְנָנָא, תַּחְנַנְתָּא) is mine from SEDRA's vocalised forms; SEDRA root 650 ḤN, lexemes 1083–1085. (6) The doctrine statements are reasoned conclusions to review. Leads not followed: Ge'ez and Old South Arabian (Leslau, Biella); CAD for Akkadian enēnu/unnīnu and the noun ennu “favour”; Payne Smith for ܚܢ beyond SEDRA. The Peshitta's Annas (ܚܢܢ, Joh 18:13) and the Greek Ἄννα, Ἁνανίας, Ἰωάννης are the names Hannah, Hananiah and Johanan; they are mentioned in the name entries, not tagged."
+}
