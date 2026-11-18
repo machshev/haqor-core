@@ -1,0 +1,2341 @@
+{
+  "id": "kaved",
+  "root": "כבד",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "glory",
+    "honour",
+    "weight",
+    "wealth",
+    "body",
+    "heart",
+    "worship",
+    "kingdom-of-god"
+  ],
+  "gloss": "be heavy; honour; glory; liver",
+  "summary": "The root is weight. The verb is to be heavy, and so burdensome or severe (a famine, a yoke, God's hand), dull (eyes, ears, and Pharaoh's heart made heavy), and weighty in standing: honoured; its piel is to honour, to give a person weight, as a son his father and Israel Yahweh. The noun כָּבוֹד is what gives weight: a man's wealth (Gen 31:1), his honour and position, and above all the glory of Yahweh, seen in cloud and fire at Sinai and in the tent, which he showed to Moses as his name and character (Exo 33:18–19; 34:5–7), and with which he has sworn to fill the earth (Num 14:21). The opposite throughout is קָלַל, to be light, lightly esteemed. כָּבֵד is also the liver, the heavy organ, as in every language that has the root: Akkadian kabattu, Ugaritic kbd, Arabic kabid, Ge'ez kabd.",
+  "words": [
+    {
+      "lemma": "כָּבוֹד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "glory, honour; wealth, abundance",
+      "bdb": [
+        "k.af.af"
+      ],
+      "cognate_ids": [
+        "phn-kbd-noun",
+        "akk-kabtu"
+      ],
+      "summary": "About two hundred uses. What gives a person or thing weight: first wealth and abundance, then honour and standing, then the glory given to or belonging to God, and above all “the glory of Yahweh”, his presence made visible and his character made known. Its opposite is קָלוֹן, dishonour (literally lightness).",
+      "senses": [
+        {
+          "id": "wealth",
+          "gloss": "wealth, riches, abundance",
+          "definition": "The weight of a man's possessions: his flocks, silver and gold, the goods of a house or a nation; and of a land or army, its mass or multitude.",
+          "cognate_ids": [
+            "akk-kubuttu"
+          ],
+          "kin": [
+            "goods",
+            "heavy-rich"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.31.1",
+              "role": "defining",
+              "note": "Laban's sons: “from what was our father's he has made all this הַכָּבֹד”: the flocks Jacob had gained."
+            },
+            {
+              "ref": "Gen.13.2",
+              "role": "defining",
+              "note": "The adjective in the same sense: Abram was כָּבֵד מְאֹד “very heavy” in livestock, silver and gold."
+            },
+            {
+              "ref": "Psa.49.17",
+              "role": "defining",
+              "note": "“When a man becomes rich (יַעֲשִׁר), when the כְּבוֹד of his house increases”: parallel to riches."
+            },
+            {
+              "ref": "Est.5.11",
+              "note": "Haman recounted “the כְּבוֹד of his riches and the multitude of his sons”."
+            },
+            {
+              "ref": "Nam.2.10",
+              "note": "“Plunder silver, plunder gold … כָּבֹד from every precious vessel.”"
+            },
+            {
+              "ref": "Isa.61.6",
+              "note": "“You shall eat the wealth (חֵיל) of the nations, and in their כָּבוֹד you shall boast.”"
+            },
+            {
+              "ref": "Isa.66.12",
+              "note": "“Like an overflowing stream, the כְּבוֹד of the nations.”"
+            },
+            {
+              "ref": "Isa.10.3",
+              "note": "“Where will you leave your כָּבוֹד?” on the day of visitation."
+            },
+            {
+              "ref": "Isa.8.7",
+              "note": "The king of Assyria “and all his כָּבוֹד”: his host, coming like the River in flood."
+            },
+            {
+              "ref": "Isa.17.4",
+              "note": "“The כְּבוֹד of Jacob will be made thin, and the fat of his flesh grow lean.”"
+            },
+            {
+              "ref": "Isa.10.16",
+              "note": "Leanness on Assyria's fat ones, and burning “under his כָּבוֹד”."
+            }
+          ]
+        },
+        {
+          "id": "honour",
+          "gloss": "honour, dignity, standing",
+          "definition": "The weight a man carries among others: rank, reputation, the respect due to him. It is given by God, and it is set against shame and lightness.",
+          "kin": [
+            "honour-men",
+            "honoured"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.45.13",
+              "role": "defining",
+              "note": "Joseph: “tell my father of all my כָּבוֹד in Egypt”: his rank over the land and all he had."
+            },
+            {
+              "ref": "1Ki.3.13",
+              "role": "defining",
+              "note": "“What you did not ask I have given you, both riches and כָּבוֹד.”"
+            },
+            {
+              "ref": "Num.24.11",
+              "role": "defining",
+              "note": "Balak: “I said, I will surely honour you (כַּבֵּד אֲכַבֶּדְךָ), and behold, Yahweh has kept you back from כָּבוֹד”."
+            },
+            {
+              "ref": "Pro.3.35",
+              "role": "defining",
+              "note": "“The wise will inherit כָּבוֹד, but fools carry away קָלוֹן (dishonour).”"
+            },
+            {
+              "ref": "Hab.2.16",
+              "role": "defining",
+              "note": "“You are filled with קָלוֹן instead of כָּבוֹד.”"
+            },
+            {
+              "ref": "Hos.4.7",
+              "note": "“I will change their כָּבוֹד into קָלוֹן.”"
+            },
+            {
+              "ref": "1Sa.2.8",
+              "note": "Yahweh raises the poor from the dust to make them inherit “a seat of כָּבוֹד”."
+            },
+            {
+              "ref": "Psa.8.6",
+              "role": "defining",
+              "note": "Of man: “you have crowned him with כָּבוֹד and majesty (הָדָר)”."
+            },
+            {
+              "ref": "Psa.84.12",
+              "note": "“Yahweh gives favour and כָּבוֹד.”"
+            },
+            {
+              "ref": "Pro.15.33",
+              "note": "“Before כָּבוֹד is humility”; also Pro 18:12; 29:23."
+            },
+            {
+              "ref": "Pro.29.23"
+            },
+            {
+              "ref": "Pro.26.1",
+              "note": "“Like snow in summer … so כָּבוֹד is not fitting for a fool.”"
+            },
+            {
+              "ref": "Job.19.9",
+              "note": "“He has stripped my כָּבוֹד from me and taken the crown from my head.”"
+            },
+            {
+              "ref": "Isa.22.23",
+              "note": "Eliakim will be “a throne of כָּבוֹד to his father's house”."
+            },
+            {
+              "ref": "Mal.1.6",
+              "role": "defining",
+              "note": "“A son honours (יְכַבֵּד) a father … if I am a father, where is my כָּבוֹד?”"
+            },
+            {
+              "ref": "Isa.5.13",
+              "note": "“Its כָּבוֹד are men of famine”: the honoured men, the nobles, of the people."
+            }
+          ]
+        },
+        {
+          "id": "my-glory-self",
+          "gloss": "my glory: the inner man, the self",
+          "definition": "In poetry “my glory” stands for the man himself, his inner being, set in parallel with “my soul” and “my heart”: the weightiest part of him, that rejoices, sings and may be laid in the dust.",
+          "evidence": [
+            {
+              "ref": "Gen.49.6",
+              "role": "defining",
+              "note": "“Into their council let my soul (נַפְשִׁי) not come; to their assembly let my glory (כְּבֹדִי) not be joined.”"
+            },
+            {
+              "ref": "Psa.16.9",
+              "role": "defining",
+              "note": "“My heart is glad and my glory rejoices; my flesh also will dwell secure.” Peter quotes the verse of Christ (Act 2:26)."
+            },
+            {
+              "ref": "Psa.7.6",
+              "role": "defining",
+              "note": "“Let the enemy pursue my soul … trample my life to the ground and lay my glory in the dust.”"
+            },
+            {
+              "ref": "Psa.30.13",
+              "note": "“That glory may sing praise to you and not be silent.”"
+            },
+            {
+              "ref": "Psa.57.9",
+              "note": "“Awake, my glory! Awake, harp and lyre!”"
+            },
+            {
+              "ref": "Psa.108.2",
+              "note": "“I will sing and make music, even my glory.”"
+            },
+            {
+              "ref": "Act.2.26",
+              "note": "Psa 16:9 quoted; the Peshitta has ܫܘܒܚܝ “my glory” where the Greek has “my tongue”."
+            }
+          ]
+        },
+        {
+          "id": "glory-given-to-god",
+          "gloss": "glory, honour (given to God)",
+          "definition": "The honour men ascribe to God: with “give” (נָתַן, שִׂים, הָבוּ) it is to acknowledge his weight, by confession, praise or obedience.",
+          "kin": [
+            "honour-god"
+          ],
+          "evidence": [
+            {
+              "ref": "Jos.7.19",
+              "role": "defining",
+              "note": "Joshua to Achan: “give כָבוֹד to Yahweh, the God of Israel, and make confession to him”: confessing the truth is giving him glory."
+            },
+            {
+              "ref": "Psa.29.1",
+              "role": "defining",
+              "note": "“Ascribe to Yahweh כָּבוֹד and strength; ascribe to Yahweh the כְּבוֹד of his name” (29:2)."
+            },
+            {
+              "ref": "Psa.29.2"
+            },
+            {
+              "ref": "Psa.96.7",
+              "to": "Psa.96.8"
+            },
+            {
+              "ref": "Psa.115.1",
+              "role": "defining",
+              "note": "“Not to us, Yahweh, not to us, but to your name give כָּבוֹד, for your חֶסֶד, for your truth.”"
+            },
+            {
+              "ref": "1Sa.6.5",
+              "note": "The Philistines are to “give כָּבוֹד to the God of Israel”, that he may lighten (יָקֵל) his hand."
+            },
+            {
+              "ref": "Jer.13.16",
+              "note": "“Give כָּבוֹד to Yahweh your God before he brings darkness.”"
+            },
+            {
+              "ref": "Mal.2.2",
+              "note": "If the priests will not lay it to heart “to give כָּבוֹד to my name”, he will curse their blessings."
+            },
+            {
+              "ref": "Isa.42.12",
+              "note": "“Let them give כָּבוֹד to Yahweh and declare his praise in the coastlands.”"
+            },
+            {
+              "ref": "Jhn.9.24",
+              "note": "“Give glory to God (δὸς δόξαν τῷ θεῷ)”: the formula of Jos 7:19, calling for a true confession."
+            }
+          ]
+        },
+        {
+          "id": "glory-of-yahweh",
+          "gloss": "the glory of Yahweh: his presence made visible",
+          "definition": "כְּבוֹד יַהְוֶה is Yahweh's own weight and majesty, made visible: a brightness like devouring fire within the cloud at Sinai, filling the tent and the house, appearing to the congregation, leaving the temple in Ezekiel's day and returning to it.",
+          "evidence": [
+            {
+              "ref": "Exo.16.10",
+              "role": "defining",
+              "note": "“Behold, the glory of Yahweh appeared in the cloud.”"
+            },
+            {
+              "ref": "Exo.24.16",
+              "to": "Exo.24.17",
+              "role": "defining",
+              "note": "“The glory of Yahweh dwelt on Mount Sinai … and the appearance of the glory of Yahweh was like a devouring fire on the top of the mountain.”"
+            },
+            {
+              "ref": "Exo.40.34",
+              "to": "Exo.40.35",
+              "role": "defining",
+              "note": "“The cloud covered the tent of meeting, and the glory of Yahweh filled the dwelling”, so that Moses could not enter."
+            },
+            {
+              "ref": "Exo.29.43",
+              "note": "“It shall be made holy by my glory.”"
+            },
+            {
+              "ref": "Lev.9.23",
+              "note": "“The glory of Yahweh appeared to all the people.”"
+            },
+            {
+              "ref": "Num.16.19",
+              "note": "It appeared to all the congregation when Korah gathered them; also Num 14:10; 20:6."
+            },
+            {
+              "ref": "Deu.5.24",
+              "note": "“Yahweh our God has shown us his glory and his greatness, and we have heard his voice from the midst of the fire.”"
+            },
+            {
+              "ref": "1Ki.8.11",
+              "note": "“The glory of Yahweh filled the house of Yahweh”; also 2Ch 7:1–3."
+            },
+            {
+              "ref": "2Ch.7.3"
+            },
+            {
+              "ref": "Ezk.1.28",
+              "role": "defining",
+              "note": "The brightness round about like the bow in the cloud: “this was the appearance of the likeness of the glory of Yahweh”."
+            },
+            {
+              "ref": "Ezk.10.18",
+              "note": "The glory went out from the threshold of the house; it left the city for the mountain on the east (Ezk 11:23)."
+            },
+            {
+              "ref": "Ezk.11.23"
+            },
+            {
+              "ref": "Ezk.43.2",
+              "to": "Ezk.43.5",
+              "role": "defining",
+              "note": "“The glory of the God of Israel came from the way of the east … and the earth shone with his glory … and the glory of Yahweh filled the house.”"
+            },
+            {
+              "ref": "Luk.2.9",
+              "note": "“The glory of the Lord (δόξα κυρίου) shone round about them.”"
+            }
+          ]
+        },
+        {
+          "id": "glory-name-character",
+          "gloss": "his glory: his name and character",
+          "definition": "Asked by Moses to show his glory, Yahweh made his goodness pass by and proclaimed his name, which is his character: compassionate, gracious, great in חֶסֶד and truth, forgiving and yet just. His glory is what he is, made known.",
+          "evidence": [
+            {
+              "ref": "Exo.33.18",
+              "role": "defining",
+              "note": "“Show me, please, your glory (כְּבֹדֶךָ).”"
+            },
+            {
+              "ref": "Exo.33.19",
+              "role": "defining",
+              "note": "“I will make all my goodness pass before you, and I will proclaim the name Yahweh before you.”"
+            },
+            {
+              "ref": "Exo.33.22",
+              "note": "“While my glory passes by, I will put you in a cleft of the rock.”"
+            },
+            {
+              "ref": "Exo.34.5",
+              "to": "Exo.34.7",
+              "role": "defining",
+              "note": "What passed by: “Yahweh, Yahweh, God compassionate and gracious, long of nostrils, and great in חֶסֶד and truth …”."
+            },
+            {
+              "ref": "Psa.29.2",
+              "note": "“The glory of his name.”"
+            },
+            {
+              "ref": "Psa.79.9",
+              "note": "“Help us … for the glory of your name, and deliver us and cover our sins for your name's sake.”"
+            },
+            {
+              "ref": "Isa.42.8",
+              "role": "defining",
+              "note": "“I am Yahweh, that is my name, and my glory I will not give to another, nor my praise to carved images”; also Isa 48:11."
+            },
+            {
+              "ref": "Isa.48.11"
+            },
+            {
+              "ref": "Jhn.1.14",
+              "note": "“We beheld his glory … full of grace and truth”: the חֶסֶד וֶאֱמֶת of Exo 34:6."
+            }
+          ]
+        },
+        {
+          "id": "glory-fills-earth",
+          "gloss": "the glory that is to fill the earth",
+          "definition": "The promised day when Yahweh's glory is seen by all nations and fills the earth, when he reigns in Zion.",
+          "evidence": [
+            {
+              "ref": "Num.14.21",
+              "role": "defining",
+              "note": "“As I live, all the earth shall be filled with the glory of Yahweh.”"
+            },
+            {
+              "ref": "Hab.2.14",
+              "role": "defining",
+              "note": "“The earth shall be filled with the knowledge of the glory of Yahweh, as the waters cover the sea.”"
+            },
+            {
+              "ref": "Psa.72.19",
+              "role": "defining",
+              "note": "“Let all the earth be filled with his glory. Amen and amen.”"
+            },
+            {
+              "ref": "Isa.6.3",
+              "note": "“Holy, holy, holy is Yahweh of armies; the fullness of all the earth is his glory.”"
+            },
+            {
+              "ref": "Isa.40.5",
+              "note": "“The glory of Yahweh shall be revealed, and all flesh shall see it together.”"
+            },
+            {
+              "ref": "Isa.24.23",
+              "note": "“Yahweh of armies will reign on Mount Zion and in Jerusalem, and before his elders glory.”"
+            },
+            {
+              "ref": "Psa.102.16",
+              "to": "Psa.102.17",
+              "note": "“All the kings of the earth your glory, when Yahweh builds up Zion; he appears in his glory.”"
+            },
+            {
+              "ref": "Isa.66.18",
+              "to": "Isa.66.19",
+              "note": "All nations and tongues gathered to see his glory, and it declared among the nations."
+            },
+            {
+              "ref": "Hag.2.7",
+              "to": "Hag.2.9",
+              "note": "“I will fill this house with glory … the latter glory of this house shall be greater than the former.”"
+            },
+            {
+              "ref": "Zec.2.9",
+              "note": "“I will be to her a wall of fire round about, and the glory in her midst.”"
+            }
+          ]
+        },
+        {
+          "id": "glory-majesty",
+          "gloss": "glory, majesty (of God, the king of glory)",
+          "definition": "God's glory as his majesty and splendour, declared by the heavens and praised by men: “the King of glory”, “the God of glory”.",
+          "evidence": [
+            {
+              "ref": "Psa.24.7",
+              "to": "Psa.24.10",
+              "role": "defining",
+              "note": "“Who is this King of glory (מֶלֶךְ הַכָּבוֹד)? Yahweh, strong and mighty.”"
+            },
+            {
+              "ref": "Psa.29.3",
+              "role": "defining",
+              "note": "“The God of glory (אֵל־הַכָּבוֹד) thunders”; Stephen's “the God of glory appeared to our father Abraham” (Act 7:2)."
+            },
+            {
+              "ref": "Act.7.2"
+            },
+            {
+              "ref": "Psa.19.2",
+              "role": "defining",
+              "note": "“The heavens declare the glory of God.”"
+            },
+            {
+              "ref": "Psa.145.11",
+              "to": "Psa.145.12",
+              "note": "“The glory of your kingdom”, made known to the sons of man."
+            },
+            {
+              "ref": "Psa.96.3",
+              "note": "“Declare his glory among the nations.”"
+            },
+            {
+              "ref": "Jer.17.12",
+              "note": "“A throne of glory, on high from the beginning, is the place of our sanctuary.”"
+            },
+            {
+              "ref": "Pro.25.2",
+              "note": "“It is the glory of God to conceal a matter, and the glory of kings to search it out.”"
+            }
+          ]
+        },
+        {
+          "id": "glory-exchanged",
+          "gloss": "their glory: the God who was Israel's glory",
+          "definition": "Israel's glory is the God it worships, and his presence among them; to turn to idols is to exchange that glory, and when the ark was taken glory went into exile.",
+          "evidence": [
+            {
+              "ref": "Psa.106.20",
+              "role": "defining",
+              "note": "“They exchanged their glory for the likeness of an ox that eats grass.” Paul: “they changed the glory of the incorruptible God into an image” (Rom 1:23)."
+            },
+            {
+              "ref": "Jer.2.11",
+              "role": "defining",
+              "note": "“My people have changed their glory for what does not profit.”"
+            },
+            {
+              "ref": "1Sa.4.21",
+              "to": "1Sa.4.22",
+              "role": "defining",
+              "note": "“Glory has gone into exile (גָּלָה כָבוֹד) from Israel, for the ark of God is taken.”"
+            },
+            {
+              "ref": "Hos.10.5",
+              "note": "The priests of the calf of Beth-aven mourn “over its glory, because it has gone into exile from it”."
+            },
+            {
+              "ref": "Psa.3.4",
+              "note": "“You, Yahweh, are a shield about me, my glory, and the lifter of my head.”"
+            },
+            {
+              "ref": "Rom.1.23"
+            }
+          ]
+        },
+        {
+          "gloss": "for glory and for beauty (the priests' garments)",
+          "definition": "The holy garments of Aaron and his sons were made to give them weight and dignity in their office.",
+          "evidence": [
+            {
+              "ref": "Exo.28.2",
+              "role": "defining",
+              "note": "“Holy garments for Aaron your brother, לְכָבוֹד וּלְתִפְאָרֶת.”"
+            },
+            {
+              "ref": "Exo.28.40"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "δόξα",
+          "gloss": "glory, honour",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.16.10, Num.14.21, Isa.6.3, Isa.40.5, Hab.2.14, Psa.106.20, Gen.31.1 → δόξα; δόξα renders כָּבוֹד ×168"
+            },
+            {
+              "ref": "Rom.1.23",
+              "role": "defining",
+              "note": "Psa 106:20 and Jer 2:11 expounded: “they changed the glory (δόξαν) of the incorruptible God into the likeness of an image”."
+            },
+            {
+              "ref": "Heb.2.7",
+              "role": "defining",
+              "note": "Psa 8:6 quoted: “with glory and honour (δόξῃ καὶ τιμῇ) you crowned him”."
+            },
+            {
+              "ref": "Jhn.1.14",
+              "note": "“We beheld his glory … full of grace and truth”, the words of Exo 34:6."
+            },
+            {
+              "ref": "Jhn.9.24",
+              "note": "“Give glory to God”: the phrase of Jos 7:19."
+            },
+            {
+              "ref": "Act.7.2",
+              "note": "“The God of glory”: Psa 29:3."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עֹשֶׁר",
+            "note": "Riches, the commonest pair: “riches and honour”.",
+            "evidence": [
+              {
+                "ref": "1Ki.3.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.3.16"
+              },
+              {
+                "ref": "Pro.8.18"
+              },
+              {
+                "ref": "1Ch.29.12"
+              }
+            ]
+          },
+          {
+            "lemma": "הָדָר",
+            "note": "Majesty, splendour, beside glory.",
+            "evidence": [
+              {
+                "ref": "Psa.8.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.145.5"
+              },
+              {
+                "ref": "Isa.35.2"
+              }
+            ]
+          },
+          {
+            "lemma": "הוֹד",
+            "note": "Splendour: “his glory is great in your salvation; splendour and majesty you lay on him”.",
+            "evidence": [
+              {
+                "ref": "Psa.21.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "תִּפְאֶרֶת",
+            "note": "Beauty, adornment.",
+            "evidence": [
+              {
+                "ref": "Exo.28.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עֹז",
+            "note": "Strength: “ascribe to Yahweh glory and strength”.",
+            "evidence": [
+              {
+                "ref": "Psa.29.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.63.3"
+              }
+            ]
+          },
+          {
+            "lemma": "נֶפֶשׁ",
+            "note": "Soul, for the self: “my soul … my glory”.",
+            "evidence": [
+              {
+                "ref": "Gen.49.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.7.6"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קָלוֹן",
+            "note": "Dishonour, lightness: glory changed into shame.",
+            "evidence": [
+              {
+                "ref": "Hab.2.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.4.7"
+              },
+              {
+                "ref": "Pro.3.35"
+              }
+            ]
+          },
+          {
+            "lemma": "כְּלִמָּה",
+            "note": "Shame: “how long will my glory be turned to shame?”",
+            "evidence": [
+              {
+                "ref": "Psa.4.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כְּבוֹד יַהְוֶה",
+            "gloss": "the glory of Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.16.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.40.34"
+              },
+              {
+                "ref": "Num.14.21"
+              },
+              {
+                "ref": "Ezk.1.28"
+              }
+            ]
+          },
+          {
+            "phrase": "נָתַן כָּבוֹד לְ",
+            "gloss": "give glory to (confess, honour)",
+            "evidence": [
+              {
+                "ref": "Jos.7.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.13.16"
+              },
+              {
+                "ref": "Psa.115.1"
+              }
+            ]
+          },
+          {
+            "phrase": "מֶלֶךְ הַכָּבוֹד",
+            "gloss": "the King of glory",
+            "evidence": [
+              {
+                "ref": "Psa.24.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.24.10"
+              }
+            ]
+          },
+          {
+            "phrase": "כִּסֵּא כָבוֹד",
+            "gloss": "throne, seat of honour",
+            "evidence": [
+              {
+                "ref": "1Sa.2.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.22.23"
+              },
+              {
+                "ref": "Jer.14.21"
+              },
+              {
+                "ref": "Jer.17.12"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹשֶׁר וְכָבוֹד",
+            "gloss": "riches and honour",
+            "evidence": [
+              {
+                "ref": "1Ki.3.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.22.4"
+              },
+              {
+                "ref": "2Ch.32.27"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כָּבֵד",
+      "pos": "verb",
+      "gloss": "be heavy; be honoured; (piel) honour; (hiphil) make heavy",
+      "bdb": [
+        "k.af.aa"
+      ],
+      "cognate_ids": [
+        "akk-kabatu",
+        "gez-kabda"
+      ],
+      "summary": "To be heavy, in weight and then in every way a thing may weigh: burdensome, severe, dull, and weighty in standing. The piel gives a person weight, honours him; the hiphil makes a yoke, a heart or ears heavy. The opposite is קָלַל, be light (1Sa 2:30; Isa 8:23; 1Ki 12:10). The brief's thirty verb tokens “without stem” are the adjective כָּבֵד.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be heavy; be grievous, severe; be dull; be honoured",
+          "senses": [
+            {
+              "id": "be-heavy",
+              "gloss": "be heavy, weigh on; be grievous, severe",
+              "definition": "Of a load, labour, a hand, a sin, a battle: to weigh on someone, to be hard to bear.",
+              "cognate_ids": [
+                "ar-kabad"
+              ],
+              "kin": [
+                "heavy-weight",
+                "heavy-severe"
+              ],
+              "evidence": [
+                {
+                  "ref": "Job.6.3",
+                  "role": "defining",
+                  "note": "“Now it would be heavier (יִכְבָּד) than the sand of the seas.”"
+                },
+                {
+                  "ref": "Psa.38.5",
+                  "role": "defining",
+                  "note": "“My iniquities have gone over my head; like a heavy burden they are too heavy (יִכְבְּדוּ) for me.”"
+                },
+                {
+                  "ref": "Exo.5.9",
+                  "role": "defining",
+                  "note": "Pharaoh: “let the labour be heavy (תִּכְבַּד) on the men”; Neh 5:18, the bondage was heavy on the people."
+                },
+                {
+                  "ref": "Neh.5.18"
+                },
+                {
+                  "ref": "1Sa.5.6",
+                  "role": "defining",
+                  "note": "“The hand of Yahweh was heavy on the Ashdodites”; also 1Sa 5:11; Psa 32:4."
+                },
+                {
+                  "ref": "Psa.32.4",
+                  "note": "“Day and night your hand was heavy upon me.”"
+                },
+                {
+                  "ref": "Gen.18.20",
+                  "note": "“Their sin is very heavy (כָּבְדָה).”"
+                },
+                {
+                  "ref": "Isa.24.20",
+                  "note": "“Its transgression is heavy upon it, and it will fall and not rise again.”"
+                },
+                {
+                  "ref": "1Sa.31.3",
+                  "note": "“The battle was heavy against Saul”; also Jdg 20:34; 1Ch 10:3."
+                },
+                {
+                  "ref": "Jdg.1.35",
+                  "note": "“The hand of the house of Joseph was heavy”, and the Amorites became forced labour."
+                },
+                {
+                  "ref": "2Sa.13.25",
+                  "note": "David: “let us not all go, lest we be heavy (נִכְבַּד) on you”, a burden."
+                }
+              ]
+            },
+            {
+              "id": "be-dull",
+              "gloss": "be heavy, dull (eyes, ears, heart)",
+              "definition": "Of an organ of sense or of the heart: slow, unresponsive, failing to see, hear or yield.",
+              "cognate_ids": [
+                "gez-kabda"
+              ],
+              "kin": [
+                "heavy-heart"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.48.10",
+                  "role": "defining",
+                  "note": "“The eyes of Israel were heavy (כָּבְדוּ) from age; he could not see.”"
+                },
+                {
+                  "ref": "Isa.59.1",
+                  "role": "defining",
+                  "note": "“Yahweh's hand is not too short to save, nor his ear too heavy to hear.”"
+                },
+                {
+                  "ref": "Exo.9.7",
+                  "role": "defining",
+                  "note": "“The heart of Pharaoh was heavy (וַיִּכְבַּד), and he did not let the people go.”"
+                }
+              ]
+            },
+            {
+              "gloss": "be honoured, glorious",
+              "definition": "To have weight in standing; of Yahweh, to be shown glorious.",
+              "kin": [
+                "honour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.66.5",
+                  "role": "defining",
+                  "note": "The scoffers: “Let Yahweh be glorious (יִכְבַּד), that we may see your joy.”"
+                },
+                {
+                  "ref": "Job.14.21",
+                  "role": "defining",
+                  "note": "Of the dead man: “his sons come to honour (יִכְבְּדוּ) and he does not know it”."
+                },
+                {
+                  "ref": "Ezk.27.25",
+                  "note": "Tyre “was filled and made very heavy (glorious) in the heart of the seas”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be honoured, honourable; (of God) get glory, be glorified",
+          "cognate_ids": [
+            "akk-kabtu"
+          ],
+          "senses": [
+            {
+              "id": "honoured",
+              "gloss": "be honoured; honoured ones, nobles",
+              "definition": "To be held in weight and respect; the participle נִכְבָּד, נִכְבַּדִּים are the honoured men, the nobles of a people.",
+              "kin": [
+                "honour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.34.19",
+                  "role": "defining",
+                  "note": "Shechem “was honoured above all his father's house”."
+                },
+                {
+                  "ref": "Num.22.15",
+                  "role": "defining",
+                  "note": "Balak sent princes “more numerous and more honoured than these”."
+                },
+                {
+                  "ref": "1Sa.9.6",
+                  "note": "“The man is honoured: all that he says surely comes to pass.”"
+                },
+                {
+                  "ref": "1Sa.22.14",
+                  "note": "David, “honoured in your house”."
+                },
+                {
+                  "ref": "1Ch.4.9",
+                  "note": "“Jabez was more honoured than his brothers.”"
+                },
+                {
+                  "ref": "Isa.3.5",
+                  "role": "defining",
+                  "note": "“The lightly esteemed (הַנִּקְלֶה) against the honoured (הַנִּכְבָּד)”: light set against heavy."
+                },
+                {
+                  "ref": "Isa.23.9",
+                  "role": "defining",
+                  "note": "Yahweh purposed “to make light (לְהָקֵל) all the honoured ones of the earth”."
+                },
+                {
+                  "ref": "Psa.149.8",
+                  "note": "“To bind their kings with chains and their nobles (נִכְבְּדֵיהֶם) with fetters of iron.”"
+                },
+                {
+                  "ref": "Isa.43.4",
+                  "role": "defining",
+                  "note": "“Because you are precious in my eyes, you are honoured, and I love you.”"
+                },
+                {
+                  "ref": "Isa.49.5",
+                  "note": "The servant: “I am honoured in the eyes of Yahweh, and my God has become my strength.”"
+                },
+                {
+                  "ref": "2Sa.6.22",
+                  "note": "David to Michal: “I will be yet more lightly esteemed (וּנְקַלֹּתִי) … but with the maidservants … I shall be honoured”; she had mocked, “How the king honoured himself today!” (2Sa 6:20)."
+                },
+                {
+                  "ref": "2Sa.6.20"
+                }
+              ]
+            },
+            {
+              "id": "god-glorified",
+              "gloss": "(of Yahweh) get himself glory, be glorified",
+              "definition": "Yahweh shows his weight by his acts, in judgment on his enemies and in the reverence of those who draw near to him.",
+              "kin": [
+                "glory-of-yahweh"
+              ],
+              "evidence": [
+                {
+                  "ref": "Exo.14.4",
+                  "role": "defining",
+                  "note": "“I will strengthen Pharaoh's heart … and I will get glory (וְאִכָּבְדָה) over Pharaoh and all his host, and the Egyptians shall know that I am Yahweh.”"
+                },
+                {
+                  "ref": "Exo.14.17",
+                  "to": "Exo.14.18"
+                },
+                {
+                  "ref": "Lev.10.3",
+                  "role": "defining",
+                  "note": "“Among those who draw near me I will be made holy, and before all the people I will be glorified (אֶכָּבֵד).”"
+                },
+                {
+                  "ref": "Ezk.28.22",
+                  "note": "“I will be glorified in your midst, Sidon … when I execute judgments in her.”"
+                },
+                {
+                  "ref": "Ezk.39.13",
+                  "note": "“The day that I am glorified”, after Gog's fall."
+                },
+                {
+                  "ref": "Hag.1.8",
+                  "note": "“Build the house, and I will take pleasure in it and be glorified.”"
+                },
+                {
+                  "ref": "Isa.26.15",
+                  "note": "“You have increased the nation, Yahweh; you are glorified.”"
+                }
+              ]
+            },
+            {
+              "gloss": "glorious (of things)",
+              "definition": "The participle of a name, of things spoken, and of springs heavy with water.",
+              "evidence": [
+                {
+                  "ref": "Deu.28.58",
+                  "role": "defining",
+                  "note": "“To fear this glorious and fearful name (הַשֵּׁם הַנִּכְבָּד וְהַנּוֹרָא), Yahweh your God.”"
+                },
+                {
+                  "ref": "Psa.87.3",
+                  "note": "“Glorious things (נִכְבָּדוֹת) are spoken of you, city of God.”"
+                },
+                {
+                  "ref": "Pro.8.24",
+                  "note": "“When there were no springs heavy (נִכְבַּדֵּי) with water.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "honour, glorify; make heavy (the heart)",
+          "cognate_ids": [
+            "uga-kbd-verb",
+            "phn-kbd-verb"
+          ],
+          "senses": [
+            {
+              "id": "honour-parents",
+              "gloss": "honour (father and mother)",
+              "definition": "To give weight to one's parents: to respect, obey and provide for them.",
+              "kin": [
+                "honour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Exo.20.12",
+                  "role": "defining",
+                  "note": "“Honour (כַּבֵּד) your father and your mother, that your days may be long on the land.”"
+                },
+                {
+                  "ref": "Deu.5.16"
+                },
+                {
+                  "ref": "Mal.1.6",
+                  "role": "defining",
+                  "note": "“A son honours a father, and a servant his master.”"
+                },
+                {
+                  "ref": "Mat.15.4",
+                  "note": "Jesus cites the command, τίμα τὸν πατέρα, against tradition that let a man withhold support from his parents (Mat 15:5–6)."
+                },
+                {
+                  "ref": "Eph.6.2"
+                }
+              ]
+            },
+            {
+              "id": "honour-god",
+              "gloss": "honour, glorify (God)",
+              "definition": "To give Yahweh his weight: by offerings and substance, by keeping his sabbath, by mercy to the poor, by thanks, by fearing him; not with the lips only.",
+              "kin": [
+                "glory-given-to-god"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.2.30",
+                  "role": "defining",
+                  "note": "“Those who honour me (מְכַבְּדַי) I will honour (אֲכַבֵּד), and those who despise me shall be lightly esteemed (יֵקָלּוּ).”"
+                },
+                {
+                  "ref": "1Sa.2.29",
+                  "note": "Eli “honoured your sons above me”, fattening on Israel's offerings."
+                },
+                {
+                  "ref": "Isa.29.13",
+                  "role": "defining",
+                  "note": "“With their lips they honour me (כִּבְּדוּנִי), but their heart is far from me”; quoted Mat 15:8; Mrk 7:6."
+                },
+                {
+                  "ref": "Pro.3.9",
+                  "role": "defining",
+                  "note": "“Honour Yahweh with your substance and with the first of all your produce.”"
+                },
+                {
+                  "ref": "Pro.14.31",
+                  "note": "“He who is gracious to the needy honours him (his Maker).”"
+                },
+                {
+                  "ref": "Isa.43.23",
+                  "note": "“You have not honoured me with your sacrifices.”"
+                },
+                {
+                  "ref": "Isa.58.13",
+                  "note": "The sabbath “honoured (מְכֻבָּד)”, “and you honour it, not doing your own ways”."
+                },
+                {
+                  "ref": "Psa.50.15",
+                  "note": "“I will deliver you, and you shall glorify me”; Psa 50:23, “he who sacrifices thanks glorifies me”."
+                },
+                {
+                  "ref": "Psa.50.23"
+                },
+                {
+                  "ref": "Psa.22.24",
+                  "note": "“All the seed of Jacob, glorify him.”"
+                },
+                {
+                  "ref": "Psa.86.9",
+                  "role": "defining",
+                  "note": "“All nations whom you have made shall come and bow before you, Lord, and glorify your name”; Rev 15:4."
+                },
+                {
+                  "ref": "Psa.86.12"
+                },
+                {
+                  "ref": "Isa.24.15"
+                },
+                {
+                  "ref": "Isa.25.3"
+                },
+                {
+                  "ref": "Mat.15.8"
+                }
+              ]
+            },
+            {
+              "id": "honour-men",
+              "gloss": "honour (a man), reward; (of God) honour his own",
+              "definition": "To treat a man as weighty: with gifts and reward, with deference before others; and of Yahweh, to raise and honour the one who loves him.",
+              "kin": [
+                "honour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Num.22.17",
+                  "role": "defining",
+                  "note": "Balak to Balaam: “I will honour you greatly (כַּבֵּד אֲכַבֶּדְךָ), and whatever you say to me I will do”; the honour was a reward (Num 24:11)."
+                },
+                {
+                  "ref": "Num.24.11"
+                },
+                {
+                  "ref": "Jdg.13.17",
+                  "note": "Manoah: “What is your name, that when your words come true we may honour you?”"
+                },
+                {
+                  "ref": "1Sa.15.30",
+                  "role": "defining",
+                  "note": "Saul: “Honour me now before the elders of my people.”"
+                },
+                {
+                  "ref": "2Sa.10.3",
+                  "note": "“Is David honouring your father, that he has sent comforters to you?”"
+                },
+                {
+                  "ref": "Psa.15.4",
+                  "note": "“He honours those who fear Yahweh.”"
+                },
+                {
+                  "ref": "Pro.4.8",
+                  "note": "Wisdom “will honour you when you embrace her”."
+                },
+                {
+                  "ref": "Lam.1.8",
+                  "note": "“All who honoured her despise her, for they have seen her nakedness.”"
+                },
+                {
+                  "ref": "Jdg.9.9",
+                  "note": "The olive's oil, “by which gods and men are honoured”."
+                },
+                {
+                  "ref": "Psa.91.15",
+                  "role": "defining",
+                  "note": "“I will deliver him and honour him (וַאֲכַבְּדֵהוּ).”"
+                },
+                {
+                  "ref": "Dan.11.38",
+                  "note": "The king “will honour a god of fortresses … with gold and silver”."
+                },
+                {
+                  "ref": "Isa.60.13",
+                  "note": "“I will glorify the place of my feet.”"
+                }
+              ]
+            },
+            {
+              "id": "make-heavy-heart",
+              "gloss": "make (the heart) heavy",
+              "definition": "To make one's heart dull and unyielding.",
+              "evidence": [
+                {
+                  "ref": "1Sa.6.6",
+                  "role": "defining",
+                  "note": "“Why do you make your heart heavy (תְכַבְּדוּ) as the Egyptians and Pharaoh made their heart heavy?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be honoured",
+          "senses": [
+            {
+              "gloss": "be honoured",
+              "definition": "To receive honour; of the sabbath, honoured as holy.",
+              "kin": [
+                "honour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Pro.13.18",
+                  "role": "defining",
+                  "note": "“Poverty and shame (קָלוֹן) to him who refuses correction, but he who heeds reproof will be honoured.”"
+                },
+                {
+                  "ref": "Pro.27.18",
+                  "note": "“He who guards his master will be honoured.”"
+                },
+                {
+                  "ref": "Isa.58.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make heavy; make honoured, glorious",
+          "senses": [
+            {
+              "id": "make-heavy-yoke",
+              "gloss": "make heavy (a yoke, chains); be burdensome",
+              "definition": "To lay a heavy burden on someone.",
+              "kin": [
+                "heavy-severe"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Ki.12.10",
+                  "role": "defining",
+                  "note": "“Your father made our yoke heavy (הִכְבִּיד), but you make it lighter (הָקֵל) for us”; also 1Ki 12:14; 2Ch 10:10, 14."
+                },
+                {
+                  "ref": "1Ki.12.14"
+                },
+                {
+                  "ref": "Isa.47.6",
+                  "note": "Babylon: “on the aged you made your yoke very heavy”."
+                },
+                {
+                  "ref": "Lam.3.7",
+                  "note": "“He has made my chain heavy.”"
+                },
+                {
+                  "ref": "Neh.5.15",
+                  "note": "The former governors “were heavy on the people”."
+                },
+                {
+                  "ref": "Hab.2.6",
+                  "note": "Woe to him “who loads himself with pledges”."
+                }
+              ]
+            },
+            {
+              "id": "make-heavy-heart-ear",
+              "gloss": "make (the heart, the ears) heavy",
+              "definition": "To make the heart unyielding or the ears dull: of Pharaoh, of Israel, and of Yahweh's judgment on those who will not hear.",
+              "kin": [
+                "heavy-heart"
+              ],
+              "evidence": [
+                {
+                  "ref": "Exo.8.11",
+                  "role": "defining",
+                  "note": "“When Pharaoh saw that there was relief, he made his heart heavy (וְהַכְבֵּד) and did not listen to them.”"
+                },
+                {
+                  "ref": "Exo.8.28"
+                },
+                {
+                  "ref": "Exo.9.34",
+                  "role": "defining",
+                  "note": "“He sinned yet more and made his heart heavy, he and his servants.”"
+                },
+                {
+                  "ref": "Exo.10.1",
+                  "role": "defining",
+                  "note": "Yahweh: “I have made his heart heavy, and the heart of his servants, that I may set these my signs in his midst.”"
+                },
+                {
+                  "ref": "Isa.6.10",
+                  "role": "defining",
+                  "note": "“Make the heart of this people fat, and make its ears heavy (הַכְבֵּד), and shut its eyes”; quoted Mat 13:15; Act 28:27."
+                },
+                {
+                  "ref": "Zec.7.11",
+                  "note": "“They refused to listen … and made their ears heavy from hearing.”"
+                }
+              ]
+            },
+            {
+              "gloss": "make honoured, glorious",
+              "definition": "To give weight and honour: Yahweh to Galilee and to restored Israel; Amaziah's heart lifting him up “to glory”.",
+              "kin": [
+                "honour"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.8.23",
+                  "role": "defining",
+                  "note": "“In the former time he made light (הֵקַל) the land of Zebulun and Naphtali, but afterward he has made glorious (הִכְבִּיד) the way of the sea … Galilee of the nations”; Mat 4:15–16."
+                },
+                {
+                  "ref": "Jer.30.19",
+                  "role": "defining",
+                  "note": "“I will multiply them and they shall not be few; I will make them honoured, and they shall not be small.”"
+                },
+                {
+                  "ref": "2Ch.25.19",
+                  "note": "“Your heart has lifted you up to boast (לְהַכְבִּיד).”"
+                },
+                {
+                  "ref": "Mat.4.15"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "make oneself heavy, many; honour oneself",
+          "senses": [
+            {
+              "gloss": "make oneself many; honour oneself",
+              "definition": "To make oneself heavy: numerous, as locusts; or to give oneself airs of weight.",
+              "evidence": [
+                {
+                  "ref": "Nam.3.15",
+                  "role": "defining",
+                  "note": "“Make yourself many (הִתְכַּבֵּד) as the locust.”"
+                },
+                {
+                  "ref": "Pro.12.9",
+                  "role": "defining",
+                  "note": "“Better a man lightly esteemed (נִקְלֶה) with a servant than one who honours himself and lacks bread.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τιμάω",
+          "gloss": "honour",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.20.12, Deu.5.16, Pro.3.9, כַּבֵּד → τίμα; Isa.29.13, כִּבְּדוּנִי → τιμῶσίν; τιμάω renders כָּבֵד ×4 in the aligned text"
+            },
+            {
+              "ref": "Mat.15.4",
+              "role": "defining",
+              "note": "Exo 20:12 quoted: “Honour (τίμα) your father and your mother”; also Mrk 7:10; Eph 6:2."
+            },
+            {
+              "ref": "Mrk.7.10"
+            },
+            {
+              "ref": "Eph.6.2"
+            },
+            {
+              "ref": "Mat.15.8",
+              "role": "defining",
+              "note": "Isa 29:13 quoted: “This people honours (τιμᾷ) me with their lips”; also Mrk 7:6."
+            },
+            {
+              "ref": "Mrk.7.6"
+            }
+          ]
+        },
+        {
+          "lemma": "δοξάζω",
+          "gloss": "glorify",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Sa.2.30, אֲכַבֵּד → δοξάσω; Psa.22.24 → δοξάσατε; Psa.91.15 → δοξάσω; Lev.10.3 and Exo.14.4 (niphal) → δοξασθήσομαι, ἐνδοξασθήσομαι; δοξάζω renders כָּבֵד ×10"
+            },
+            {
+              "ref": "Rev.15.4",
+              "role": "defining",
+              "note": "Psa 86:9: “Who will not fear you, Lord, and glorify (δοξάσει) your name? … all the nations will come and worship before you.”"
+            },
+            {
+              "ref": "Jhn.8.54",
+              "note": "“It is my Father who glorifies (δοξάζων) me.”"
+            }
+          ]
+        },
+        {
+          "lemma": "βαρύνω",
+          "gloss": "weigh down, make heavy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.8.28, Exo.9.34, 1Ki.12.10, Lam.3.7 → ἐβάρυνεν; Exo.9.7 → ἐβαρύνθη; Zec.7.11 → ἐβάρυναν; 1Sa.6.6 → βαρύνετε"
+            },
+            {
+              "ref": "Mat.13.15",
+              "role": "defining",
+              "note": "Isa 6:10: “with their ears they hear heavily (βαρέως ἤκουσαν)”; also Act 28:27."
+            },
+            {
+              "ref": "Act.28.27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כָּבֵד",
+      "pos": "adjective",
+      "gloss": "heavy; grievous; great, numerous; rich; dull, slow",
+      "bdb": [
+        "k.af.ab"
+      ],
+      "cognate_ids": [
+        "akk-kabtu",
+        "gez-kabda",
+        "ar-kabad"
+      ],
+      "summary": "Heavy, and so in the same range as the verb: a heavy weight, a grievous famine or plague, a great company or army, a man rich in cattle, a mouth or tongue slow of speech, a heart unyielding. Construct כְּבַד, כִּבְדֵי, כֶּבֶד. The brief's count includes the eleven uses of the liver, filed here by spelling.",
+      "senses": [
+        {
+          "id": "heavy-weight",
+          "gloss": "heavy (in weight)",
+          "definition": "Of weight: a stone, hair, a man's body, his tired hands.",
+          "evidence": [
+            {
+              "ref": "Pro.27.3",
+              "role": "defining",
+              "note": "“A stone is heavy (כֹּבֶד) and sand weighty, but a fool's vexation is heavier (כָּבֵד) than both.”"
+            },
+            {
+              "ref": "1Sa.4.18",
+              "role": "defining",
+              "note": "Eli fell backward and died, “for the man was old and heavy”."
+            },
+            {
+              "ref": "2Sa.14.26",
+              "note": "Absalom's hair: “because it was heavy on him he cut it”, weighing two hundred shekels."
+            },
+            {
+              "ref": "Exo.17.12",
+              "note": "“Moses' hands were heavy (כְּבֵדִים).”"
+            }
+          ]
+        },
+        {
+          "id": "heavy-severe",
+          "gloss": "heavy, grievous, severe; too heavy, burdensome",
+          "definition": "Of famine, plague, hail, mourning, a yoke, a task: weighing hard on those who bear it.",
+          "evidence": [
+            {
+              "ref": "Gen.12.10",
+              "role": "defining",
+              "note": "“The famine was heavy in the land”; also Gen 41:31; 43:1; 47:4, 13."
+            },
+            {
+              "ref": "Gen.41.31"
+            },
+            {
+              "ref": "Exo.9.3",
+              "note": "“A very heavy plague”; Exo 9:18, “very heavy hail”."
+            },
+            {
+              "ref": "Exo.9.18"
+            },
+            {
+              "ref": "Gen.50.10",
+              "note": "“A great and very heavy lamentation.”"
+            },
+            {
+              "ref": "Exo.18.18",
+              "role": "defining",
+              "note": "Jethro: “the thing is too heavy for you; you cannot do it alone”."
+            },
+            {
+              "ref": "Num.11.14",
+              "role": "defining",
+              "note": "Moses: “I cannot carry all this people alone, for it is too heavy for me.”"
+            },
+            {
+              "ref": "1Ki.12.4",
+              "note": "“His heavy yoke (עֻלּוֹ הַכָּבֵד) that he put on us”, beside “the hard service”."
+            },
+            {
+              "ref": "1Ki.12.11"
+            },
+            {
+              "ref": "Psa.38.5",
+              "note": "“Like a heavy burden.”"
+            },
+            {
+              "ref": "Isa.1.4",
+              "role": "defining",
+              "note": "“A people heavy (כֶּבֶד) with iniquity.”"
+            },
+            {
+              "ref": "Exo.19.16",
+              "note": "“A heavy cloud on the mountain.”"
+            }
+          ]
+        },
+        {
+          "id": "heavy-rich",
+          "gloss": "great, numerous; rich",
+          "definition": "Of a company, an army, cattle, a people: heavy in number; of a man, heavy in possessions.",
+          "kin": [
+            "wealth"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.13.2",
+              "role": "defining",
+              "note": "“Abram was very heavy (rich) in livestock, in silver and in gold.”"
+            },
+            {
+              "ref": "Exo.12.38",
+              "role": "defining",
+              "note": "“Flocks and herds, very heavy livestock”: very many."
+            },
+            {
+              "ref": "Gen.50.9",
+              "note": "“It was a very heavy (great) company.”"
+            },
+            {
+              "ref": "Num.20.20",
+              "note": "Edom came out “with a heavy people and a strong hand”; also 2Ki 6:14; 18:17; Isa 36:2."
+            },
+            {
+              "ref": "2Ki.6.14"
+            },
+            {
+              "ref": "1Ki.10.2",
+              "note": "The queen of Sheba came “with a very heavy train”."
+            },
+            {
+              "ref": "1Ki.3.9",
+              "note": "Solomon: “who is able to judge this your heavy (great) people?”"
+            },
+            {
+              "ref": "Exo.10.14",
+              "note": "The locusts, “very heavy”."
+            },
+            {
+              "ref": "Isa.32.2",
+              "note": "“The shadow of a heavy (great) rock in a weary land.”"
+            }
+          ]
+        },
+        {
+          "id": "heavy-heart",
+          "gloss": "heavy, slow (of mouth, tongue, heart)",
+          "definition": "Of the organs of speech: slow, halting; of the heart: unyielding.",
+          "evidence": [
+            {
+              "ref": "Exo.4.10",
+              "role": "defining",
+              "note": "Moses: “I am heavy of mouth and heavy of tongue (כְבַד־פֶּה וּכְבַד לָשׁוֹן).”"
+            },
+            {
+              "ref": "Ezk.3.5",
+              "to": "Ezk.3.6",
+              "note": "“A people of deep lip and heavy of tongue”, whose words one cannot understand."
+            },
+            {
+              "ref": "Exo.7.14",
+              "role": "defining",
+              "note": "“Pharaoh's heart is heavy (כָּבֵד); he refuses to let the people go.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βαρύς",
+          "gloss": "heavy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.27.3, כָּבֵד → βαρυτέρα, כֹּבֶד → βαρύ; βαρύς renders כָּבֵד ×21 in the aligned text"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָשֶׁה",
+            "note": "Hard: the hard service and the heavy yoke.",
+            "evidence": [
+              {
+                "ref": "1Ki.12.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "חָזָק",
+            "note": "Strong: Edom's heavy people and strong hand.",
+            "evidence": [
+              {
+                "ref": "Num.20.20",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קַל",
+            "note": "Light: “make it lighter (הָקֵל) than … his heavy yoke”.",
+            "evidence": [
+              {
+                "ref": "1Ki.12.4",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.12.10"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כְבַד־פֶּה וּכְבַד לָשׁוֹן",
+            "gloss": "heavy of mouth and heavy of tongue: slow of speech",
+            "evidence": [
+              {
+                "ref": "Exo.4.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כָּבֵד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "liver",
+      "bdb": [
+        "k.af.ac"
+      ],
+      "cognate_ids": [
+        "akk-kabattu",
+        "uga-kbd-liver",
+        "ar-kabid",
+        "gez-kabd",
+        "arc-kabda",
+        "syc-kabda"
+      ],
+      "summary": "The liver, the heaviest organ, a noun of the same spelling as the adjective. Every Semitic language with the root has the noun: Akkadian kabattu, Ugaritic kbd, Arabic kabid, Ge'ez kabd, Aramaic and Syriac kabdā. Most of its uses are the lobe (יֹתֶרֶת) above the liver burnt on the altar. The brief's count includes three uses of the adjective (1Ki 3:9; 12:4; 2Ch 10:4).",
+      "senses": [
+        {
+          "id": "liver",
+          "gloss": "liver",
+          "definition": "The organ: in sacrifice, the lobe above it was taken off with the kidneys and burnt; a man pierced through it dies; the king of Babylon divined by looking at it.",
+          "evidence": [
+            {
+              "ref": "Exo.29.13",
+              "role": "defining",
+              "note": "“The lobe above the liver (הַיֹּתֶרֶת עַל־הַכָּבֵד) and the two kidneys … burn them on the altar.”"
+            },
+            {
+              "ref": "Lev.3.4",
+              "note": "In the peace offering; also Lev 3:10, 15; 4:9; 7:4; 8:16, 25; 9:10, 19."
+            },
+            {
+              "ref": "Lev.9.10"
+            },
+            {
+              "ref": "Pro.7.23",
+              "role": "defining",
+              "note": "The young man led astray, “until an arrow splits his liver … and he does not know that it is for his life”."
+            },
+            {
+              "ref": "Ezk.21.26",
+              "role": "defining",
+              "note": "The king of Babylon at the parting of the ways: “he shook the arrows, he consulted the teraphim, he looked at the liver”."
+            }
+          ]
+        },
+        {
+          "gloss": "liver, as the seat of grief",
+          "definition": "Poured out in the extremity of grief, beside the eyes and the inward parts.",
+          "evidence": [
+            {
+              "ref": "Lam.2.11",
+              "role": "defining",
+              "note": "“My eyes fail with tears, my inward parts (מֵעַי) churn, my liver is poured out to the ground for the breaking of the daughter of my people.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἧπαρ",
+          "gloss": "liver",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.29.13, הַכָּבֵד → ἥπατος; ἧπαρ renders the liver ×11; not in the New Testament"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כֹּבֶד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "heaviness, weight; mass; vehemence",
+      "bdb": [
+        "k.af.ad"
+      ],
+      "cognate_ids": [
+        "akk-kabatu",
+        "gez-kabda"
+      ],
+      "senses": [
+        {
+          "gloss": "heaviness, weight; mass, vehemence",
+          "definition": "The weight of a stone; the press and mass of battle, of corpses, of rising smoke.",
+          "kin": [
+            "heavy-weight",
+            "heavy-severe"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.27.3",
+              "role": "defining",
+              "note": "“The weight (כֹּבֶד) of a stone and the burden of sand.”"
+            },
+            {
+              "ref": "Isa.21.15",
+              "role": "defining",
+              "note": "They fled “from the heaviness (כֹּבֶד) of war”."
+            },
+            {
+              "ref": "Nam.3.3",
+              "note": "“A multitude of slain and a mass (כֹּבֶד) of corpses.”"
+            },
+            {
+              "ref": "Isa.30.27",
+              "note": "The name of Yahweh comes from afar, his anger burning, “and heavy (כֹבֶד) its rising smoke”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כָּבוּד",
+      "pos": "adjective",
+      "gloss": "glorious, splendid",
+      "bdb": [
+        "k.af.ae"
+      ],
+      "cognate_ids": [
+        "akk-kabtu"
+      ],
+      "summary": "Twice, in the feminine כְּבוּדָּה. The same three tokens are filed under the noun כְּבוּדָּה (k.af.ag); Psa 45:14 and Ezk 23:41 are this adjective.",
+      "senses": [
+        {
+          "gloss": "glorious, splendid",
+          "definition": "Of the king's daughter and of a couch: weighty in splendour.",
+          "kin": [
+            "honour"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.45.14",
+              "role": "defining",
+              "note": "“All glorious (כָּל־כְּבוּדָּה) is the king's daughter within; her clothing is woven with gold.”"
+            },
+            {
+              "ref": "Ezk.23.41",
+              "note": "“You sat on a glorious couch (מִטָּה כְבוּדָּה).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּבוּדָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "goods, wealth",
+      "bdb": [
+        "k.af.ag"
+      ],
+      "cognate_ids": [
+        "akk-kubuttu"
+      ],
+      "summary": "Once, Jdg 18:21. BDB files the same three tokens under this key and k.af.ae; only Jdg 18:21 is this noun.",
+      "senses": [
+        {
+          "id": "goods",
+          "gloss": "goods, possessions",
+          "definition": "The heavy things a migrating people carries: their wealth and baggage.",
+          "kin": [
+            "wealth"
+          ],
+          "evidence": [
+            {
+              "ref": "Jdg.18.21",
+              "role": "defining",
+              "note": "The Danites “put the little ones and the livestock and the כְּבוּדָּה before them”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּבֵדֻת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "heaviness",
+      "bdb": [
+        "k.af.ah"
+      ],
+      "cognate_ids": [
+        "akk-kabatu",
+        "gez-kabda"
+      ],
+      "summary": "Once, of Pharaoh's chariots at the sea.",
+      "senses": [
+        {
+          "gloss": "heaviness",
+          "definition": "With בְּ: heavily, with difficulty.",
+          "kin": [
+            "heavy-weight"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.14.25",
+              "role": "defining",
+              "note": "Yahweh took off their chariot wheels “and made them drive בִּכְבֵדֻת, heavily”: the heart Pharaoh made heavy ends in chariots dragging heavily."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כַּבְדָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "liver; gall",
+      "summary": "The Peshitta's ܟܒܕܐ (kabdā), once in the New Testament, for χολή “gall”.",
+      "cognate_ids": [
+        "syc-kabda",
+        "akk-kabattu",
+        "arc-kabda"
+      ],
+      "senses": [
+        {
+          "gloss": "gall (of bitterness)",
+          "definition": "The bitter organ, as the image of a heart soured by wickedness.",
+          "kin": [
+            "liver"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.8.23",
+              "role": "defining",
+              "note": "Peter to Simon: “I see that you are in the gall (בּכַבדָּא) of bitterness and in the bond of iniquity.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-kabatu",
+      "lang": "akk",
+      "form": "kabātu",
+      "translit": "kabātu",
+      "gloss": "be(come) heavy; be(come) important, honoured; be(come) rich; be burdensome; (D) honour, treat honourably",
+      "relation": "cognate",
+      "note": "The Akkadian verb covers the whole range of the Hebrew: heavy, burdensome, important, rich, and in the D stem (ukabbit, kubbutu) to honour, as the Hebrew piel.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000045270, kabātu [be(come) heavy] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000045270.html",
+          "note": "Meanings: be(come) heavy, be(come) important, be(com)ing rich, be(come) burdensome, honour, esteem, treat honourably, aggravate."
+        }
+      ]
+    },
+    {
+      "id": "akk-kabtu",
+      "lang": "akk",
+      "form": "kabtu",
+      "translit": "kabtu",
+      "gloss": "heavy; honoured, important, venerable; (as noun) dignitary, nobleman",
+      "relation": "cognate",
+      "note": "The verbal adjective, both “heavy” and “honoured”; as a noun “important one, dignitary”, as the niphal participle נִכְבָּד, “honoured one, noble”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000011000, kabtu [heavy] AJ",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000011000.html",
+          "note": "Meanings: heavy, weighty, dense, honoured, important, respected, venerable, eminent, magnate; 2,018 instances."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000000880, kabtu [important one] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000000880.html",
+          "note": "Meanings: dignitary, heavy one, important one, nobleman."
+        }
+      ]
+    },
+    {
+      "id": "akk-kubuttu",
+      "lang": "akk",
+      "form": "kubuttû",
+      "translit": "kubuttû",
+      "gloss": "abundance; abundant wealth",
+      "relation": "cognate",
+      "note": "A noun of kabātu meaning wealth, as כָּבוֹד in Gen 31:1 and כְּבוּדָּה in Jdg 18:21.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000135370, kubuttû [abundant wealth] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000135370.html",
+          "note": "Neo-Babylonian."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000135380, kubuttû [abundance] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000135380.html"
+        }
+      ]
+    },
+    {
+      "id": "akk-kabattu",
+      "lang": "akk",
+      "form": "kabattu",
+      "translit": "kabattu",
+      "gloss": "liver; innards; mind, mood, temper, will",
+      "relation": "cognate",
+      "note": "The liver, and as the seat of feeling, mood and temper; compare Lam 2:11, the liver poured out in grief.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000011010, kabattu [liver] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000011010.html",
+          "note": "Meanings: innards, inside, liver, mind, mood, temper, will; 911 instances."
+        }
+      ]
+    },
+    {
+      "id": "uga-kbd-verb",
+      "lang": "uga",
+      "form": "𐎋𐎁𐎄",
+      "translit": "kbd (D)",
+      "gloss": "honour",
+      "relation": "cognate",
+      "note": "In the D stem, the Hebrew piel: “bow down and honour her (tštḥwy kbd hyt)”, KTU 1.3 III 10, prostration and honour together.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, /k-b-d/",
+          "note": "“D tkbd ‘(to consider heavy >) to honor’ (cf. H. k-b-d Pi; cf. Akkad. kabātu D)” (OCR read)."
+        }
+      ]
+    },
+    {
+      "id": "uga-kbd-liver",
+      "lang": "uga",
+      "form": "𐎋𐎁𐎄",
+      "translit": "kbd /kabid-/",
+      "gloss": "liver",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, kbd /kabid-/",
+          "note": "“kbd /kabid-/ … pl. kbdt 1.6:II:16, 17 … ‘liver’ (H. kābēd, Arab. kabid, cf. Akkad. kabattu, kabittu)” (OCR read)."
+        }
+      ]
+    },
+    {
+      "id": "phn-kbd-verb",
+      "lang": "phn",
+      "form": "𐤊𐤁𐤃",
+      "translit": "kbd (piel)",
+      "gloss": "honour, respect",
+      "relation": "cognate",
+      "note": "Phoenician and Punic piel “honour, respect”, as in the Kilamuwa inscription; names such as kbdbʿl “Honour Baal!”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 221, K-B-D I",
+          "note": "“[Heb. k-b-d] v. pi‘el 1. HONOR, RESPECT, KAI 24.13/15 … CIS i 5510.1/2.”"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 222, KBDBʿL; KBDMLQRT; KBDʿŠTRT",
+          "note": "Personal names “Honour Baal!”, “Honour Milqart!”, “Honour Astarte!”."
+        }
+      ]
+    },
+    {
+      "id": "phn-kbd-noun",
+      "lang": "phn",
+      "form": "𐤊𐤁𐤃",
+      "translit": "kbd",
+      "gloss": "honour, respect; glory (of a god)",
+      "relation": "cognate",
+      "note": "The noun, as כָּבוֹד: “a memorial of honour”, and as an epithet of a god in names, kbdmlqrt “Milqart is the Glory”, formed as יוֹכֶבֶד.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 221–222, KBD II",
+          "note": "“[Heb. kabōd] n.m. 1. HONOR, RESPECT … 2. GLORY, epithet of divinity … kbdmlqrt, ‘Milqart is the Glory’; kbdʿštrt, ‘Astarte is the Glory’.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-kabid",
+      "lang": "ar",
+      "form": "كَبِدٌ",
+      "translit": "kabid",
+      "gloss": "liver; the middle, main part of a thing",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2584, art. كبد, كَبِدٌ",
+          "note": "“[The liver;] a certain black piece of flesh on the right of the lungs … The middle of anything, and its main part.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-kabad",
+      "lang": "ar",
+      "form": "كَبَدٌ، كَبِدَ، كَابَدَ",
+      "translit": "kabad, kabida, kābada",
+      "gloss": "difficulty, distress, affliction; (kabida) be bulky in the middle and slow; (kābada) endure hardship",
+      "relation": "cognate",
+      "note": "Arabic has no “honour” in the root, but it has weight as hardship and bulk: kabad “difficulty, distress”, kābada “he endured the thing, struggled against its severity”, and kabida “he was bulky in the middle, and therefore slow in his pace”, which is Eli “old and heavy” (1Sa 4:18).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2584, art. كبد, كَبَدٌ",
+          "note": "“Difficulty; distress; affliction; trouble.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2584, art. كبد, كابد الأَمْرَ (3)",
+          "note": "“He endured the thing; struggled, or contended, with, or against, it … its difficulty, or severity.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2584, art. كبد, كَبَدَهُ (1)",
+          "note": "“كَبِدَ … He was big in the belly … bulky in the middle, and therefore slow in his pace.”"
+        }
+      ]
+    },
+    {
+      "id": "gez-kabda",
+      "lang": "gez",
+      "form": "ከብደ",
+      "translit": "kabda",
+      "gloss": "be heavy, gain weight; be troublesome, grievous; grow dull, faint",
+      "relation": "cognate",
+      "note": "The Ge'ez verb has the weight, the grievousness and the dullness of the Hebrew; Tigre adds “be honoured”.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 106, kbd D ‘honor’",
+          "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-lexical-relationship_fisher-milton-charles_1969-04/page/n117",
+          "note": "Ge'ez kăbdă “be heavy, gain weight; be troublesome, grievous; grow dull, faint”, but Tigre “be heavy, big, much; be honored”."
+        }
+      ]
+    },
+    {
+      "id": "gez-kabd",
+      "lang": "gez",
+      "form": "ከብድ",
+      "translit": "kabd",
+      "gloss": "viscera; liver, stomach",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 106, kbd ‘midst; liver, insides’",
+          "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-lexical-relationship_fisher-milton-charles_1969-04/page/n117",
+          "note": "Ge'ez kăbɪd “viscera; liver, stomach”; Tigre “belly; heart, interior”."
+        }
+      ]
+    },
+    {
+      "id": "arc-kabda",
+      "lang": "arc",
+      "form": "כַּבְדָּא",
+      "translit": "kabdā",
+      "gloss": "liver (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums' word for the liver of Exo 29:13, 22 and Lam 2:11.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כַּבְדָּא (ch.), “same” as כָּבֵד liver",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9B%D6%B7%D6%BC%D7%91%D6%B0%D7%93%D6%B8%D6%BC%D7%90.1",
+          "note": "“Targ. Ex. XXIX, 13; 22. Targ. Lam. II, 11; a. e.”"
+        }
+      ]
+    },
+    {
+      "id": "syc-kabda",
+      "lang": "syc",
+      "form": "ܟܒܕܐ",
+      "translit": "kabdā",
+      "gloss": "liver; gall; bile",
+      "relation": "cognate",
+      "note": "Syriac root kbd has only this noun; Syriac says “heavy” and “honour” with yqr. The Peshitta's use is given as a word of the entry.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 865 CBD; lexeme 1461 CBDA, liver; gall; bile"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "glory-of-yahweh",
+      "statement": "Moses asked, “Show me, please, your glory” (Exo 33:18). Yahweh answered, “I will make all my goodness pass before you and proclaim the name Yahweh before you” (Exo 33:19), and while his glory passed by Moses was hidden in the rock (Exo 33:22). What passed by was a proclamation: “Yahweh, Yahweh, God compassionate and gracious, long of nostrils, great in חֶסֶד and truth, keeping חֶסֶד for thousands, forgiving iniquity, transgression and sin, and by no means clearing the guilty” (Exo 34:5–7). At Kadesh Moses pleaded these words back to him, and Yahweh pardoned and swore, “as I live, all the earth shall be filled with the glory of Yahweh” (Num 14:17–21). The psalmist gives glory “to your name, for your חֶסֶד, for your truth” (Psa 115:1). John says of the son, “we beheld his glory, glory as of the only begotten from the Father, full of grace and truth” (Jhn 1:14), the words of Exo 34:6, and Paul that God gives “the light of the knowledge of the glory of God in the face of Jesus Christ” (2Co 4:6). From the verses: the cloud and fire showed Yahweh's presence, but his glory itself is his character, mercy and truth joined with justice, declared in his name; that character was shown in a man, his son, and is to fill the earth.",
+      "evidence": [
+        {
+          "ref": "Exo.33.18",
+          "to": "Exo.33.19"
+        },
+        {
+          "ref": "Exo.33.22"
+        },
+        {
+          "ref": "Exo.34.5",
+          "to": "Exo.34.7"
+        },
+        {
+          "ref": "Num.14.17",
+          "to": "Num.14.21"
+        },
+        {
+          "ref": "Psa.115.1"
+        },
+        {
+          "ref": "Jhn.1.14"
+        },
+        {
+          "ref": "2Co.4.6"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Yahweh swore, “as I live, all the earth shall be filled with the glory of Yahweh”, in the same oath by which the men who had seen his glory and tested him would not see the land (Num 14:21–23). Habakkuk, amid the woes on Babylon, says “the earth shall be filled with the knowledge of the glory of Yahweh as the waters cover the sea” (Hab 2:14). The psalm of the king who “shall rule from sea to sea”, whose name “all nations shall call blessed”, ends “let all the earth be filled with his glory” (Psa 72:8, 17, 19). The glory comes with a reign on earth: “Yahweh of armies will reign on Mount Zion and in Jerusalem, and before his elders glory” (Isa 24:23); “all the kings of the earth your glory, when Yahweh builds up Zion; he appears in his glory” (Psa 102:16–17); all nations and tongues “shall come and see my glory” (Isa 66:18). Jesus says, “when the Son of man comes in his glory … he will sit on the throne of his glory” (Mat 25:31). From the verses: the earth is not yet full of Yahweh's glory; it will be when his king reigns from Zion and the son of man returns to his throne, and the kingdom of God is that rule on this earth.",
+      "evidence": [
+        {
+          "ref": "Num.14.21",
+          "to": "Num.14.23"
+        },
+        {
+          "ref": "Hab.2.14"
+        },
+        {
+          "ref": "Psa.72.8"
+        },
+        {
+          "ref": "Psa.72.17"
+        },
+        {
+          "ref": "Psa.72.19"
+        },
+        {
+          "ref": "Isa.24.23"
+        },
+        {
+          "ref": "Psa.102.16",
+          "to": "Psa.102.17"
+        },
+        {
+          "ref": "Isa.66.18"
+        },
+        {
+          "ref": "Mat.25.31"
+        }
+      ]
+    },
+    {
+      "topic": "hardening-the-heart",
+      "statement": "Yahweh tells Moses, “Pharaoh's heart is heavy (כָּבֵד); he refuses to let the people go” (Exo 7:14). When Pharaoh saw relief, “he made his heart heavy” (Exo 8:11, 28); after the hail, “he sinned yet more and made his heart heavy, he and his servants” (Exo 9:34). Then Yahweh says, “I have made his heart heavy … that I may set these my signs in his midst” (Exo 10:1), and at the sea, “I will strengthen Pharaoh's heart … and I will get glory (וְאִכָּבְדָה, be made heavy) over Pharaoh and all his host” (Exo 14:4, 17–18); Pharaoh's chariots then drove “heavily” (Exo 14:25). The Philistine priests warned, “why do you make your heart heavy as the Egyptians and Pharaoh made their heart heavy?” (1Sa 6:6). Israel too made their ears heavy so as not to hear (Zec 7:11), and Isaiah was sent to “make their ears heavy” (Isa 6:10), words Jesus and Paul applied to those who would not hear them (Mat 13:15; Act 28:27). From the verses: the heaviness began in Pharaoh's own choice and was then confirmed by God; the one who would not give Yahweh weight became the occasion of Yahweh's being shown weighty, and the same judgment falls on any who will not hear.",
+      "evidence": [
+        {
+          "ref": "Exo.7.14"
+        },
+        {
+          "ref": "Exo.8.11"
+        },
+        {
+          "ref": "Exo.8.28"
+        },
+        {
+          "ref": "Exo.9.34"
+        },
+        {
+          "ref": "Exo.10.1"
+        },
+        {
+          "ref": "Exo.14.4"
+        },
+        {
+          "ref": "Exo.14.17",
+          "to": "Exo.14.18"
+        },
+        {
+          "ref": "Exo.14.25"
+        },
+        {
+          "ref": "1Sa.6.6"
+        },
+        {
+          "ref": "Zec.7.11"
+        },
+        {
+          "ref": "Isa.6.10"
+        },
+        {
+          "ref": "Mat.13.15"
+        },
+        {
+          "ref": "Act.28.27"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "The psalmist says, “do not fear when a man becomes rich, when the glory of his house increases; for when he dies he will take nothing away; his glory will not go down after him” (Psa 49:17–18), and “man in honour who does not understand is like the beasts that perish” (Psa 49:21). Job says of the dead man, “his sons come to honour and he does not know it; they are brought low and he does not perceive it” (Job 14:21), as the Preacher says “the dead know nothing” (Ecc 9:5). Paul says God gives eternal life “to those who by patient continuance in well doing seek for glory and honour and incorruptibility” (Rom 2:7). From the verses: a man's glory ends at death, and the dead know nothing of the honour of those they leave; lasting glory and incorruptibility are not possessed by nature but sought, and given by God with eternal life.",
+      "evidence": [
+        {
+          "ref": "Psa.49.17",
+          "to": "Psa.49.18"
+        },
+        {
+          "ref": "Psa.49.21"
+        },
+        {
+          "ref": "Job.14.21"
+        },
+        {
+          "ref": "Ecc.9.5"
+        },
+        {
+          "ref": "Rom.2.7"
+        }
+      ]
+    },
+    {
+      "topic": "honouring-god",
+      "statement": "The command is “honour your father and your mother, that your days may be long on the land” (Exo 20:12), and Yahweh claims the same from Israel: “a son honours a father … if I am a father, where is my honour?” (Mal 1:6). Eli “honoured his sons above me”, fattening on Israel's offerings, so Yahweh said, “those who honour me I will honour, and those who despise me shall be lightly esteemed” (1Sa 2:29–30). Israel honoured him “with their lips, but their heart is far from me” (Isa 29:13), and Jesus applied this to men whose tradition let a son withhold from his parents what should have honoured them (Mat 15:4–9). Honour is shown by substance (Pro 3:9), by kindness to the poor (Pro 14:31) and by keeping the sabbath (Isa 58:13). From the verses: to honour is to give weight in deed; Yahweh weighs honour that way, and the light esteem of men for him is answered in kind.",
+      "evidence": [
+        {
+          "ref": "Exo.20.12"
+        },
+        {
+          "ref": "Mal.1.6"
+        },
+        {
+          "ref": "1Sa.2.29",
+          "to": "1Sa.2.30"
+        },
+        {
+          "ref": "Isa.29.13"
+        },
+        {
+          "ref": "Mat.15.4",
+          "to": "Mat.15.9"
+        },
+        {
+          "ref": "Pro.3.9"
+        },
+        {
+          "ref": "Pro.14.31"
+        },
+        {
+          "ref": "Isa.58.13"
+        }
+      ]
+    },
+    {
+      "topic": "glory-given-to-the-son",
+      "statement": "Psalm 8 asks “what is man, that you remember him, or the son of man that you visit him?” and answers, “you have made him lack a little from אֱלֹהִים and crowned him with glory and majesty”, ruling the works of God's hands (Psa 8:5–7). Hebrews says this is fulfilled in Jesus, “made a little lower than the angels, because of the suffering of death crowned with glory and honour” (Heb 2:6–9). Yahweh says, “I am Yahweh, that is my name, and my glory I will not give to another, nor my praise to carved images” (Isa 42:8; 48:11). Jesus says, “if I glorify myself, my glory is nothing; it is my Father who glorifies me” (Jhn 8:54); Peter, that “he received from God the Father honour and glory” (2Pe 1:17); and Jesus, that “the glory which you have given me I have given them” (Jhn 17:22). From the verses: glory belongs to the one God, the Father, and is his to give; Jesus, a man who suffered death, did not take it but received it from the Father, as Psalm 8 says man was meant to be crowned, and he shares it with those who are his.",
+      "evidence": [
+        {
+          "ref": "Psa.8.5",
+          "to": "Psa.8.7"
+        },
+        {
+          "ref": "Heb.2.6",
+          "to": "Heb.2.9"
+        },
+        {
+          "ref": "Isa.42.8"
+        },
+        {
+          "ref": "Isa.48.11"
+        },
+        {
+          "ref": "Jhn.8.54"
+        },
+        {
+          "ref": "2Pe.1.17"
+        },
+        {
+          "ref": "Jhn.17.22"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key כבד as the database and the brief key it; no other entry has it. Shared tokens: k.af.aa's 30 tokens with no stem are the adjective (all shared with k.af.ab); k.af.ab includes the 11 liver tokens of k.af.ac, and k.af.ac includes three adjective tokens (1Ki 3:9; 12:4; 2Ch 10:4); k.af.ae (adjective כָּבוּד) and k.af.ag (noun כְּבוּדָּה) list the same three tokens (Jdg 18:21; Ezk 23:41; Psa 45:14), so the uses are counted twice; they are kept as two words because the verses show two words (Psa 45:14 and Ezk 23:41 adjectival, Jdg 18:21 a noun), against the rule to name one key. k.af.af includes the two כָבוֹד of the name at 1Sa 4:21 (also keyed a.cw.ab). Hag 1:8 (ketiv ואכבד, qere וְאֶכָּבְדָה) is not under any key but is cited. Psalms cited by Hebrew verse numbers. Names drafted: Ichabod (names/ichabod.json, BDB a.cw.ab, filed under אי; eyn.json's note suggested it go with אִי, but its meaning is given by 1Sa 4:21 with כָּבוֹד, so it is linked here) and Jochebed (names/jochebed.json, BDB e.az.bo, filed under יהו). The Peshitta says “glory” with ܫܘܒܚܐ and “honour, heavy” with ܐܝܩܪܐ, ܝܩܝܪ (roots שׁבח, יקר), which are not words of this entry; only ܟܒܕܐ (Act 8:23) is. Leads not followed: CAD K for kabātu, kabtu, kabattu (Oracc glossaries used); DULAT s.v. kbd (Segert only, read from OCR); Leslau and Dillmann for Ge'ez (Fisher's typescript only, Ge'ez letters read from the scan); Payne Smith for ܟܒܕܐ; CAL for Old and Imperial Aramaic kbd; Sabaic (Biella has no kbd entry). Jewish Aramaic Pa. כַּבֵּד “sweep” (Jastrow) not recorded: its tie to the root is not shown. Wiktionary's statement that the liver is named as “the heavy one” is not cited from any dictionary; the summary says only that the noun is the liver in every language that has the root. Open questions: (1) the poetic “my glory” = the self (Gen 49:6; Psa 16:9; 57:9) beside Akkadian kabattu “liver; mind, mood” and Lam 2:11 may be one use with the liver as seat of feeling; not asserted, no cognate named on that sense. (2) Arabic kabad “hardship” and kabida “bulky” are named as sharing the sense “heavy, grievous”; a reviewer may judge this a stretch. (3) Doctrine statements on Jhn 1:14 and on the son's received glory are reasoned conclusions to review."
+}
