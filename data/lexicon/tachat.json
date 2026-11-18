@@ -1,0 +1,1490 @@
+{
+  "id": "tachat",
+  "root": "תחת",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "grammar",
+    "place",
+    "substitution",
+    "exchange",
+    "subjection",
+    "succession",
+    "death",
+    "kingdom"
+  ],
+  "gloss": "under, beneath; (one's) place; in place of, instead of; in return for; because; (adj.) lower, lowest",
+  "summary": "The word for what is underneath, and so for the spot a thing stands on: its place. As a preposition תַּחַת is \"under\" (waters under the expanse, Gen 1:7; each man under his vine, Mic 4:4) and, of persons, \"under the hand\" or \"under the feet\" of one who rules them (Gen 16:9; Psa 8:7); with a suffix it is \"in his place\", where a man stands (Exo 16:29), and so \"in his stead\", of a son who reigns after his father (1Ki 11:43) or a thing put where another was (Lev 14:42). From standing in another's place come \"instead of\" (the ram offered \"in place of his son\", Gen 22:13), \"in return for\" (\"eye for eye\", Exo 21:24; \"evil for good\", 1Sa 25:21), and before a clause \"because\" (Isa 53:12). The adjectives תַּחְתִּי and תַּחְתּוֹן are \"lower, lowest\", used of the lower springs and Lower Beth Horon and of \"the lowest grave\" and the \"lower land\" of the dead (Deu 32:22; Ezk 32:24). Scripture's Aramaic תְּחוֹת and the Peshitta's תְּחֵית are the same word, and Ugaritic, Phoenician, Sabaic and Arabic all have tḥt \"under\", Ugaritic and Phoenician also \"instead of, in one's place\".",
+  "words": [
+    {
+      "lemma": "תַּחַת",
+      "bdb": [
+        "w.an.aa"
+      ],
+      "cognate_ids": [
+        "ar-tahta",
+        "uga-tht",
+        "phn-tht",
+        "sab-tht",
+        "arc-tehot"
+      ],
+      "pos": "preposition",
+      "gloss": "under, beneath; (one's) place; in place of, instead of; in return for; (תַּחַת אֲשֶׁר) because",
+      "summary": "A noun \"the part beneath\" used almost always as a preposition. With suffixes it is built on a plural base (תַּחְתָּיו \"under him, in his place\", תַּחְתַּי, תַּחְתֵּינוּ), and with מִן it is מִתַּחַת \"from under, below\". Every sense starts from what lies beneath a thing or a person: the ground he stands on is his place, and what is put where he stood stands in his place.",
+      "senses": [
+        {
+          "id": "tachat-under",
+          "gloss": "under, beneath, below",
+          "definition": "In the space beneath a thing: under a tree, under the sky, under the earth; with מִן, from under or below, set against מִמַּעַל \"above\".",
+          "evidence": [
+            {
+              "ref": "Gen.1.7",
+              "role": "defining",
+              "note": "The waters \"under (מִתַּחַת) the expanse\" against the waters \"above (מֵעַל) the expanse\"."
+            },
+            {
+              "ref": "Gen.18.4",
+              "role": "defining",
+              "note": "\"Rest yourselves under (תַּחַת) the tree.\""
+            },
+            {
+              "ref": "Exo.20.4",
+              "note": "\"in the heavens above, in the earth beneath (מִתָּחַת), in the waters under (מִתַּחַת) the earth\"."
+            },
+            {
+              "ref": "Exo.24.10",
+              "note": "\"Under his feet\" a work like sapphire, at the vision of the God of Israel."
+            },
+            {
+              "ref": "1Ki.5.5",
+              "note": "\"a man under his vine and under his fig tree\"."
+            },
+            {
+              "ref": "Psa.140.4",
+              "note": "\"the venom of a viper is under their lips\"; quoted in Rom 3:13."
+            },
+            {
+              "ref": "Psa.91.4",
+              "note": "\"under his wings you will take refuge\"."
+            },
+            {
+              "ref": "Amo.2.9",
+              "note": "\"his fruit from above and his roots from beneath (מִתָּחַת)\"."
+            },
+            {
+              "ref": "Ecc.1.3",
+              "note": "\"his toil that he toils under the sun\"."
+            }
+          ],
+          "senses": [
+            {
+              "id": "tachat-under-rule",
+              "gloss": "under (the hand, the feet, the authority of)",
+              "definition": "Of persons: beneath one who rules them, holds them or has defeated them: under someone's hand or feet, or a wife \"under her husband\".",
+              "evidence": [
+                {
+                  "ref": "Gen.16.9",
+                  "role": "defining",
+                  "note": "Hagar told to \"humble yourself under her hands (תַּחַת יָדֶיהָ)\"."
+                },
+                {
+                  "ref": "Psa.8.7",
+                  "role": "defining",
+                  "note": "\"You have put all things under his feet (תַּחַת־רַגְלָיו)\"; quoted in 1Co 15:27, Eph 1:22 and Heb 2:8."
+                },
+                {
+                  "ref": "Jdg.3.30",
+                  "note": "\"Moab was subdued that day under the hand of Israel.\""
+                },
+                {
+                  "ref": "Psa.47.4",
+                  "note": "\"He subdues peoples under us, and nations under our feet.\""
+                },
+                {
+                  "ref": "Psa.18.39",
+                  "note": "Enemies \"fell under my feet\"."
+                },
+                {
+                  "ref": "Num.5.19",
+                  "note": "A wife who has not gone aside \"under your husband\": while bound to him."
+                },
+                {
+                  "ref": "2Ki.13.5",
+                  "note": "Israel \"came out from under the hand of Aram\"."
+                },
+                {
+                  "ref": "Mal.3.21",
+                  "note": "The wicked \"ashes under the soles of your feet\"."
+                }
+              ]
+            },
+            {
+              "id": "tachat-from-under",
+              "gloss": "from under (deliverance, removal)",
+              "definition": "With מִן: brought out from beneath a load or a ruler, or blotted out from under the heavens, that is, from the earth.",
+              "evidence": [
+                {
+                  "ref": "Exo.6.6",
+                  "role": "defining",
+                  "note": "\"I will bring you out from under (מִתַּחַת) the burdens of Egypt.\""
+                },
+                {
+                  "ref": "Exo.17.14",
+                  "role": "defining",
+                  "note": "\"I will utterly blot out the memory of Amalek from under the heavens.\""
+                },
+                {
+                  "ref": "Deu.9.14",
+                  "note": "\"blot out their name from under the heavens\"."
+                },
+                {
+                  "ref": "2Ki.8.20",
+                  "note": "\"Edom revolted from under the hand of Judah.\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tachat-place",
+          "gloss": "(one's) place, where one stands",
+          "definition": "With a suffix, the ground beneath a person or thing: the spot where he is, \"in his place\", \"where he stood\".",
+          "evidence": [
+            {
+              "ref": "Exo.16.29",
+              "role": "defining",
+              "note": "\"Remain every man in his place (תַּחְתָּיו); let no one go out of his place (מִמְּקֹמוֹ) on the seventh day\": תַּחַת and מָקוֹם side by side."
+            },
+            {
+              "ref": "Exo.10.23",
+              "role": "defining",
+              "note": "\"No one rose from his place (מִתַּחְתָּיו) for three days.\""
+            },
+            {
+              "ref": "Jdg.7.21",
+              "note": "\"They stood every man in his place around the camp.\""
+            },
+            {
+              "ref": "Jos.5.8",
+              "note": "The circumcised \"remained in their places in the camp until they recovered\"."
+            },
+            {
+              "ref": "Gen.2.21",
+              "note": "Yahweh God \"closed up the flesh in its place (תַּחְתֶּנָּה)\" where the rib had been."
+            },
+            {
+              "ref": "Isa.46.7",
+              "note": "The idol is set \"in its place, and it stands; from its place (מִמְּקוֹמוֹ) it does not move\"."
+            },
+            {
+              "ref": "Zec.12.6",
+              "note": "\"Jerusalem shall dwell again in her place, in Jerusalem.\""
+            },
+            {
+              "ref": "Zec.6.12",
+              "note": "\"A man whose name is the Branch, and from his place (מִתַּחְתָּיו) he will sprout.\""
+            }
+          ]
+        },
+        {
+          "id": "tachat-instead",
+          "gloss": "in place of, instead of",
+          "definition": "One person or thing standing where another stood, or put where another was: a replacement, a substitute, a successor.",
+          "evidence": [
+            {
+              "ref": "Gen.22.13",
+              "role": "defining",
+              "note": "Abraham \"offered it as a burnt offering in place of (תַּחַת) his son\"."
+            },
+            {
+              "ref": "Lev.14.42",
+              "role": "defining",
+              "note": "Other stones brought \"in place of the stones\" taken out of the house."
+            },
+            {
+              "ref": "Num.3.12",
+              "role": "defining",
+              "note": "\"I have taken the Levites ... instead of every firstborn\"; again Num 3:41, 45; 8:16."
+            },
+            {
+              "ref": "Gen.4.25",
+              "note": "God \"has appointed me another seed in place of Abel\"."
+            },
+            {
+              "ref": "Gen.44.33",
+              "note": "Judah: \"let your servant remain instead of the lad as a slave to my lord\"."
+            },
+            {
+              "ref": "2Sa.19.1",
+              "note": "David: \"would I had died in your place (תַּחְתֶּיךָ), Absalom\"."
+            },
+            {
+              "ref": "Isa.43.3",
+              "note": "\"I give Egypt as your covering price, Cush and Seba in place of you\"; 43:4 \"peoples in place of your life\"."
+            },
+            {
+              "ref": "Isa.61.3",
+              "note": "\"a headdress instead of ashes, the oil of joy instead of mourning\"."
+            },
+            {
+              "ref": "Isa.55.13",
+              "note": "\"Instead of the thorn the cypress will come up.\""
+            }
+          ],
+          "senses": [
+            {
+              "id": "tachat-succession",
+              "gloss": "in his place, after him (succession)",
+              "definition": "Of an office: a son or another man who reigns or serves in the place of the one before him.",
+              "evidence": [
+                {
+                  "ref": "1Ki.11.43",
+                  "role": "defining",
+                  "note": "\"And Rehoboam his son reigned in his place (תַּחְתָּיו).\""
+                },
+                {
+                  "ref": "Deu.10.6",
+                  "role": "defining",
+                  "note": "Aaron died, \"and Eleazar his son served as priest in his place\"."
+                },
+                {
+                  "ref": "1Ki.1.30",
+                  "note": "Solomon \"shall sit on my throne in my place\"."
+                },
+                {
+                  "ref": "Gen.36.33",
+                  "note": "The kings of Edom, one \"reigned in his place\" after another."
+                },
+                {
+                  "ref": "Psa.45.17",
+                  "note": "\"In place of your fathers shall be your sons.\""
+                }
+              ]
+            },
+            {
+              "id": "tachat-in-gods-place",
+              "gloss": "in the place of (God)",
+              "definition": "Standing where another stands, doing what is his to do: \"Am I in the place of God?\"",
+              "evidence": [
+                {
+                  "ref": "Gen.30.2",
+                  "role": "defining",
+                  "note": "Jacob: \"Am I in the place of God, who has withheld from you the fruit of the womb?\""
+                },
+                {
+                  "ref": "Gen.50.19",
+                  "role": "defining",
+                  "note": "Joseph: \"Do not fear, for am I in the place of God?\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tachat-in-return",
+          "gloss": "in return for, in exchange for, for",
+          "definition": "What is given or paid back answering to something else: a payment, a penalty matching the harm, or a return of evil for good.",
+          "evidence": [
+            {
+              "ref": "Exo.21.23",
+              "role": "defining",
+              "note": "\"you shall give life for (תַּחַת) life\"."
+            },
+            {
+              "ref": "Exo.21.24",
+              "role": "defining",
+              "note": "\"eye for eye, tooth for tooth, hand for hand, foot for foot\"; quoted in Mat 5:38."
+            },
+            {
+              "ref": "Lev.24.20",
+              "note": "\"fracture for fracture, eye for eye, tooth for tooth; as he has given a blemish in a man, so it shall be given in him\"."
+            },
+            {
+              "ref": "Exo.21.37",
+              "note": "\"five oxen for the ox, and four sheep for the sheep\"."
+            },
+            {
+              "ref": "Exo.21.26",
+              "note": "The slave goes free \"for his eye\"."
+            },
+            {
+              "ref": "Gen.30.15",
+              "note": "\"he shall lie with you tonight in exchange for your son's mandrakes\"."
+            },
+            {
+              "ref": "1Ki.21.2",
+              "note": "Ahab: \"I will give you a better vineyard in its place\"."
+            },
+            {
+              "ref": "1Ki.20.39",
+              "note": "\"your life shall be in place of his life, or you shall pay a talent of silver\"."
+            },
+            {
+              "ref": "1Sa.25.21",
+              "role": "defining",
+              "note": "\"He has returned me evil for good.\""
+            },
+            {
+              "ref": "Psa.109.5",
+              "note": "\"evil for good, and hatred for my love\"."
+            },
+            {
+              "ref": "Pro.17.13",
+              "note": "\"Whoever returns evil for good, evil will not depart from his house.\""
+            }
+          ]
+        },
+        {
+          "id": "tachat-because",
+          "gloss": "because, for that (תַּחַת אֲשֶׁר, תַּחַת כִּי)",
+          "definition": "Before a clause, with אֲשֶׁר or כִּי or alone: what has happened is the ground in return for which something follows, so \"because\".",
+          "evidence": [
+            {
+              "ref": "Num.25.13",
+              "role": "defining",
+              "note": "A covenant of perpetual priesthood \"because (תַּחַת אֲשֶׁר) he was zealous for his God and made a covering for the sons of Israel\"."
+            },
+            {
+              "ref": "Deu.28.47",
+              "role": "defining",
+              "note": "\"Because (תַּחַת אֲשֶׁר) you did not serve Yahweh your God with joy\", you will serve your enemies."
+            },
+            {
+              "ref": "Deu.4.37",
+              "note": "\"And because (וְתַחַת כִּי) he loved your fathers, he chose their seed after them.\""
+            },
+            {
+              "ref": "Isa.53.12",
+              "note": "\"Therefore I will divide him a portion with the great ... because (תַּחַת אֲשֶׁר) he poured out his soul to death.\""
+            },
+            {
+              "ref": "Pro.1.29",
+              "note": "\"Because (תַּחַת כִּי) they hated knowledge.\""
+            },
+            {
+              "ref": "2Ki.22.17",
+              "note": "\"Because they have forsaken me and burned incense to other gods.\""
+            },
+            {
+              "ref": "Isa.60.15",
+              "note": "With an infinitive: \"Whereas (תַּחַת) you have been forsaken and hated ... I will make you a majesty for ever.\""
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὑπό",
+          "gloss": "under",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 140:4 word 7",
+              "note": "ὑπό for תַּחַת: \"under their lips\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 16:9 word 9",
+              "note": "ὑπό for תַּחַת יָדֶיהָ."
+            },
+            {
+              "ref": "Rom.3.13",
+              "note": "Psa 140:4 quoted: ἰὸς ἀσπίδων ὑπὸ τὰ χείλη αὐτῶν."
+            },
+            {
+              "ref": "1Co.15.27",
+              "note": "Psa 8:7: πάντα γὰρ ὑπέταξεν ὑπὸ τοὺς πόδας αὐτοῦ."
+            },
+            {
+              "ref": "Eph.1.22",
+              "note": "Psa 8:7 again: πάντα ὑπέταξεν ὑπὸ τοὺς πόδας αὐτοῦ."
+            },
+            {
+              "ref": "1Pe.5.6",
+              "note": "ταπεινώθητε ... ὑπὸ τὴν κραταιὰν χεῖρα τοῦ θεοῦ, the phrase of Gen 16:9 (הִתְעַנִּי תַּחַת יָדֶיהָ)."
+            }
+          ]
+        },
+        {
+          "lemma": "ὑποκάτω",
+          "gloss": "under, underneath",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 8:7 word 6",
+              "note": "ὑποκάτω for תַּחַת־רַגְלָיו."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 1:7 word 9"
+            },
+            {
+              "ref": "Heb.2.8",
+              "note": "Psa 8:7 quoted: πάντα ὑπέταξας ὑποκάτω τῶν ποδῶν αὐτοῦ."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀντί",
+          "gloss": "instead of, in return for",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 21:24 word 2",
+              "note": "ἀντί for each תַּחַת of \"eye for eye\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 22:13 word 19",
+              "note": "ἀντὶ Ισαακ τοῦ υἱοῦ αὐτοῦ: the ram offered in place of his son."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "NUM 3:12 word 9"
+            },
+            {
+              "ref": "Mat.5.38",
+              "note": "Exo 21:24 and Lev 24:20 quoted: ὀφθαλμὸν ἀντὶ ὀφθαλμοῦ καὶ ὀδόντα ἀντὶ ὀδόντος."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "מַעַל",
+            "note": "above: מִמַּעַל \"above\" against מִתַּחַת \"beneath\", together naming the whole of the world from the heavens to the earth and the waters under it.",
+            "evidence": [
+              {
+                "ref": "Gen.1.7"
+              },
+              {
+                "ref": "Exo.20.4"
+              },
+              {
+                "ref": "Deu.4.39"
+              },
+              {
+                "ref": "Amo.2.9"
+              },
+              {
+                "ref": "Job.18.16"
+              }
+            ]
+          },
+          {
+            "lemma": "עַל",
+            "note": "over, upon: the heavens \"over your head\" against the earth \"under you\".",
+            "evidence": [
+              {
+                "ref": "Deu.28.23"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "מָקוֹם",
+            "note": "place: set beside תַּחְתָּיו \"in his place\".",
+            "evidence": [
+              {
+                "ref": "Exo.16.29"
+              },
+              {
+                "ref": "Isa.46.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "תַּחַת הַשֶּׁמֶשׁ",
+            "gloss": "under the sun: in the world of the living",
+            "evidence": [
+              {
+                "ref": "Ecc.1.3"
+              },
+              {
+                "ref": "Ecc.1.9",
+                "note": "\"there is nothing new under the sun\"."
+              },
+              {
+                "ref": "Ecc.9.6",
+                "note": "The dead have no more portion \"in anything done under the sun\"."
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחַת (כָּל־)הַשָּׁמַיִם",
+            "gloss": "under (all) the heavens: on all the earth",
+            "evidence": [
+              {
+                "ref": "Gen.7.19"
+              },
+              {
+                "ref": "Deu.4.19"
+              },
+              {
+                "ref": "Job.28.24"
+              },
+              {
+                "ref": "Ecc.3.1"
+              },
+              {
+                "ref": "Dan.9.12"
+              }
+            ]
+          },
+          {
+            "phrase": "מָחָה ... מִתַּחַת הַשָּׁמַיִם",
+            "gloss": "blot out from under the heavens",
+            "evidence": [
+              {
+                "ref": "Exo.17.14"
+              },
+              {
+                "ref": "Deu.9.14"
+              }
+            ]
+          },
+          {
+            "phrase": "אִישׁ תַּחַת גַּפְנוֹ וְתַחַת תְּאֵנָתוֹ",
+            "gloss": "each man under his vine and under his fig tree: settled peace",
+            "evidence": [
+              {
+                "ref": "1Ki.5.5"
+              },
+              {
+                "ref": "Mic.4.4"
+              },
+              {
+                "ref": "Zec.3.10"
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחַת כָּל־עֵץ רַעֲנָן",
+            "gloss": "under every green tree: the places of idol worship",
+            "evidence": [
+              {
+                "ref": "Deu.12.2"
+              },
+              {
+                "ref": "1Ki.14.23"
+              },
+              {
+                "ref": "Jer.3.13"
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחַת רַגְלָיו",
+            "gloss": "under his feet: subdued to him",
+            "evidence": [
+              {
+                "ref": "Psa.8.7"
+              },
+              {
+                "ref": "2Sa.22.39"
+              },
+              {
+                "ref": "1Ki.5.17",
+                "note": "\"until Yahweh put them under the soles of his feet\"."
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחַת כְּנָפָיו",
+            "gloss": "under his wings: in his shelter",
+            "evidence": [
+              {
+                "ref": "Rut.2.12"
+              },
+              {
+                "ref": "Psa.91.4"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׂים יָד תַּחַת יָרֵךְ",
+            "gloss": "put the hand under the thigh: to swear an oath",
+            "evidence": [
+              {
+                "ref": "Gen.24.2"
+              },
+              {
+                "ref": "Gen.47.29"
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחַת לָשׁוֹן",
+            "gloss": "under the tongue: kept in the mouth, ready to be spoken or savoured",
+            "evidence": [
+              {
+                "ref": "Psa.10.7"
+              },
+              {
+                "ref": "Job.20.12"
+              },
+              {
+                "ref": "Sng.4.11"
+              }
+            ]
+          },
+          {
+            "phrase": "וַיִּמְלֹךְ ... תַּחְתָּיו",
+            "gloss": "and ... reigned in his place",
+            "evidence": [
+              {
+                "ref": "1Ki.11.43"
+              },
+              {
+                "ref": "Gen.36.33"
+              }
+            ]
+          },
+          {
+            "phrase": "עַיִן תַּחַת עַיִן",
+            "gloss": "eye for eye: penalty matching the harm",
+            "evidence": [
+              {
+                "ref": "Exo.21.24"
+              },
+              {
+                "ref": "Lev.24.20"
+              }
+            ]
+          },
+          {
+            "phrase": "רָעָה תַּחַת טוֹבָה",
+            "gloss": "evil for good",
+            "evidence": [
+              {
+                "ref": "Gen.44.4"
+              },
+              {
+                "ref": "1Sa.25.21"
+              },
+              {
+                "ref": "Psa.35.12"
+              },
+              {
+                "ref": "Jer.18.20"
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחַת אֲשֶׁר / תַּחַת כִּי",
+            "gloss": "because",
+            "evidence": [
+              {
+                "ref": "Num.25.13"
+              },
+              {
+                "ref": "Deu.4.37"
+              },
+              {
+                "ref": "Isa.53.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תַּחְתִּי",
+      "bdb": [
+        "w.an.ac"
+      ],
+      "cognate_ids": [
+        "ar-tahtani",
+        "sab-tht"
+      ],
+      "pos": "adjective",
+      "gloss": "lower, lowest; (pl. תַּחְתִּיּוֹת) the lowest parts, the depths",
+      "summary": "Formed from תַּחַת with the ending ־ִי: what belongs beneath. Of things it is the lower of two (the lower springs, the lower deck, the lower millstone); the feminine plural as a noun is \"the lowest parts\", of the earth and of the pit; and with שְׁאוֹל and אֶרֶץ it names the place of the dead, \"the lowest grave\" and \"the lower land\".",
+      "senses": [
+        {
+          "id": "tachti-lower",
+          "gloss": "lower, the bottom (of things)",
+          "definition": "The lower of two or three levels, or the bottom of a thing.",
+          "kin": [
+            "tachton-lower"
+          ],
+          "evidence": [
+            {
+              "ref": "Jos.15.19",
+              "role": "defining",
+              "note": "\"the upper springs (עִלִּיּוֹת) and the lower springs (תַּחְתִּיּוֹת)\"; again Jdg 1:15."
+            },
+            {
+              "ref": "Gen.6.16",
+              "role": "defining",
+              "note": "The ark: \"with lower, second and third decks you shall make it\"."
+            },
+            {
+              "ref": "Exo.19.17",
+              "note": "The people stood \"at the bottom of (בְּתַחְתִּית) the mountain\"."
+            },
+            {
+              "ref": "Job.41.16",
+              "note": "\"hard as the lower millstone\"."
+            },
+            {
+              "ref": "Neh.4.7",
+              "note": "Men set \"in the lowest parts of the place behind the wall\"."
+            }
+          ]
+        },
+        {
+          "id": "tachti-depths",
+          "gloss": "the lowest parts (of the earth), the depths",
+          "definition": "The feminine plural as a noun: the deepest places, of the earth, set against the heavens.",
+          "evidence": [
+            {
+              "ref": "Isa.44.23",
+              "role": "defining",
+              "note": "\"Sing, heavens ... shout, lowest parts of the earth (תַּחְתִּיּוֹת אָרֶץ)\": the heights and the depths of creation."
+            },
+            {
+              "ref": "Psa.139.15",
+              "note": "\"when I was woven in the lowest parts of the earth\": the hidden place where a man is formed."
+            },
+            {
+              "ref": "Psa.63.10",
+              "note": "Those who seek his life \"shall go into the lowest parts of the earth\": into death."
+            }
+          ]
+        },
+        {
+          "id": "tachti-grave",
+          "gloss": "the lowest grave, the lower land (of the dead)",
+          "definition": "With שְׁאוֹל, בּוֹר or אֶרֶץ: the grave, the pit, the land the dead go down to, set against the land of the living.",
+          "tags": [
+            "death"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.32.24",
+              "role": "defining",
+              "note": "Elam's slain \"went down uncircumcised to the lower land (אֶרֶץ תַּחְתִּיּוֹת)\", who caused terror \"in the land of the living\", and bore their shame \"with those who go down to the pit\"."
+            },
+            {
+              "ref": "Ezk.26.20",
+              "role": "defining",
+              "note": "\"I will bring you down with those who go down to the pit ... and make you dwell in the lower land ... and I will set glory in the land of the living.\""
+            },
+            {
+              "ref": "Deu.32.22",
+              "note": "A fire \"burns to the lowest grave (שְׁאוֹל תַּחְתִּית)\"."
+            },
+            {
+              "ref": "Psa.86.13",
+              "note": "\"You have delivered my soul from the lowest grave (מִשְּׁאוֹל תַּחְתִּיָּה).\""
+            },
+            {
+              "ref": "Psa.88.7",
+              "note": "\"You have put me in the pit of the lowest parts (בְּבוֹר תַּחְתִּיּוֹת), in dark places, in the deeps.\""
+            },
+            {
+              "ref": "Lam.3.55",
+              "note": "\"I called on your name, Yahweh, from the pit of the lowest parts.\""
+            },
+            {
+              "ref": "Ezk.31.14",
+              "note": "\"all of them are given to death, to the lower land, among the sons of men, with those who go down to the pit\"."
+            },
+            {
+              "ref": "Ezk.32.18"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "עִלִּית",
+            "note": "upper: the upper and the lower springs.",
+            "evidence": [
+              {
+                "ref": "Jos.15.19"
+              },
+              {
+                "ref": "Jdg.1.15"
+              }
+            ]
+          },
+          {
+            "lemma": "אֶרֶץ חַיִּים",
+            "note": "the land of the living, against the lower land of the dead.",
+            "evidence": [
+              {
+                "ref": "Ezk.26.20"
+              },
+              {
+                "ref": "Ezk.32.24"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַיִם",
+            "note": "the heavens, against the lowest parts of the earth.",
+            "evidence": [
+              {
+                "ref": "Isa.44.23"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "בּוֹר",
+            "note": "the pit: \"the lower land\" with \"those who go down to the pit\", and \"the pit of the lowest parts\".",
+            "evidence": [
+              {
+                "ref": "Ezk.32.18"
+              },
+              {
+                "ref": "Psa.88.7"
+              },
+              {
+                "ref": "Lam.3.55"
+              }
+            ]
+          },
+          {
+            "lemma": "שְׁאוֹל",
+            "note": "the grave: \"the lowest grave\".",
+            "evidence": [
+              {
+                "ref": "Deu.32.22"
+              },
+              {
+                "ref": "Psa.86.13"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שְׁאוֹל תַּחְתִּית",
+            "gloss": "the lowest grave",
+            "evidence": [
+              {
+                "ref": "Deu.32.22"
+              },
+              {
+                "ref": "Psa.86.13"
+              }
+            ]
+          },
+          {
+            "phrase": "אֶרֶץ תַּחְתִּית / אֶרֶץ תַּחְתִּיּוֹת",
+            "gloss": "the lower land: where the dead lie",
+            "evidence": [
+              {
+                "ref": "Ezk.31.14"
+              },
+              {
+                "ref": "Ezk.32.18"
+              },
+              {
+                "ref": "Ezk.32.24"
+              }
+            ]
+          },
+          {
+            "phrase": "תַּחְתִּיּוֹת (הָ)אָרֶץ",
+            "gloss": "the lowest parts of the earth",
+            "evidence": [
+              {
+                "ref": "Psa.63.10"
+              },
+              {
+                "ref": "Psa.139.15"
+              },
+              {
+                "ref": "Isa.44.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תַּחְתּוֹן",
+      "bdb": [
+        "w.an.ab"
+      ],
+      "cognate_ids": [
+        "ar-tahtani",
+        "sab-tht"
+      ],
+      "pos": "adjective",
+      "gloss": "lower, lowest",
+      "summary": "Formed from תַּחַת with the ending ־וֹן: the lower or lowest of a set. Used of Lower Beth Horon against Upper, of the lowest storey round the temple, of the lower pool and of the lower levels of Ezekiel's temple.",
+      "senses": [
+        {
+          "id": "tachton-lower",
+          "gloss": "lower, lowest",
+          "definition": "The lower of two places of one name, or the lowest of the levels of a building.",
+          "kin": [
+            "tachti-lower"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ch.7.24",
+              "role": "defining",
+              "note": "Sheerah built \"Beth Horon the lower (הַתַּחְתּוֹן) and the upper (הָעֶלְיוֹן)\"."
+            },
+            {
+              "ref": "1Ki.6.6",
+              "role": "defining",
+              "note": "\"The lowest (הַתַּחְתֹּנָה) storey was five cubits wide, the middle six, and the third seven.\""
+            },
+            {
+              "ref": "2Ch.8.5",
+              "note": "\"Upper Beth Horon and Lower Beth Horon\"."
+            },
+            {
+              "ref": "Jos.16.3"
+            },
+            {
+              "ref": "Isa.22.9",
+              "note": "\"you gathered the waters of the lower pool\"."
+            },
+            {
+              "ref": "Ezk.40.18",
+              "note": "\"the lower pavement\"."
+            },
+            {
+              "ref": "Ezk.43.14",
+              "note": "\"the lower ledge\" of the altar."
+            },
+            {
+              "ref": "Ezk.42.5",
+              "note": "The upper chambers shorter than \"the lowest and the middle\"."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "עֶלְיוֹן",
+            "note": "upper: Lower and Upper Beth Horon.",
+            "evidence": [
+              {
+                "ref": "1Ch.7.24"
+              },
+              {
+                "ref": "2Ch.8.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תְּחוֹת",
+      "lang": "arc",
+      "root": "תחות",
+      "bdb": [
+        "xw.ac.ac"
+      ],
+      "cognate_ids": [
+        "arc-tehot",
+        "ar-tahta",
+        "uga-tht",
+        "phn-tht"
+      ],
+      "pos": "preposition",
+      "gloss": "under, beneath; from under",
+      "summary": "Scripture's Aramaic has the same word with ו: תְּחוֹת, with suffixes תְּחֹתוֹהִי \"under it\", and with מִן \"from under\". Its five uses are all \"under\": beneath the great tree of Nebuchadnezzar's dream, and \"under the heavens\", the earth men live on.",
+      "senses": [
+        {
+          "id": "arc-tehot-under",
+          "gloss": "under, beneath",
+          "definition": "In the space beneath: the beasts sheltering under the tree.",
+          "kin": [
+            "tachat-under"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.4.9",
+              "role": "defining",
+              "note": "\"the beasts of the field found shade under it (תְּחֹתוֹהִי), and the birds of the heavens dwelt in its branches\"."
+            },
+            {
+              "ref": "Dan.4.18",
+              "note": "\"under it the beasts of the field dwelt\"."
+            },
+            {
+              "ref": "Dan.4.11",
+              "note": "\"Let the beasts flee from under it (מִן־תַּחְתּוֹהִי).\""
+            }
+          ]
+        },
+        {
+          "id": "arc-tehot-under-heaven",
+          "gloss": "under the heavens: on the earth",
+          "definition": "With שְׁמַיָּא: the whole earth, where men and their kingdoms are.",
+          "kin": [
+            "tachat-under",
+            "tachat-from-under"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.7.27",
+              "role": "defining",
+              "note": "\"the greatness of the kingdoms under the whole heaven (תְּחוֹת כָּל־שְׁמַיָּא) shall be given to the people of the saints of the Most High\"."
+            },
+            {
+              "ref": "Jer.10.11",
+              "role": "defining",
+              "note": "\"The gods who did not make the heavens and the earth shall perish from the earth and from under (וּמִן־תְּחוֹת) these heavens.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּחֵית",
+      "lang": "syc",
+      "root": "תחית",
+      "cognate_ids": [
+        "arc-tehot",
+        "ar-tahta",
+        "uga-tht",
+        "phn-tht",
+        "sab-tht"
+      ],
+      "pos": "preposition",
+      "gloss": "under; (לְתַחְתּ) below, down",
+      "summary": "The Peshitta's word, in the New Testament some seventy times. It is \"under\" in every Old Testament phrase above: \"under his feet\" (Psa 8:7 in 1Co 15:27), \"under their lips\" (Psa 140:4 in Rom 3:13), \"under heaven\", \"under the fig tree\", \"under her wings\"; and under an authority, a law or a judgment. As an adverb, לְתַחְתּ is \"down, below\" and מֵן דַּלְתַחְתּ \"from below\", set against לְעֵל \"above\". The Peshitta renders \"eye for eye\" (Mat 5:38) with another word, חְלָף, so it has no use here for \"instead of\".",
+      "senses": [
+        {
+          "id": "syc-tehet-under",
+          "gloss": "under, beneath",
+          "definition": "In the space beneath: under the feet, the lips, a tree, a basket, the heavens.",
+          "kin": [
+            "tachat-under",
+            "arc-tehot-under",
+            "arc-tehot-under-heaven"
+          ],
+          "evidence": [
+            {
+              "ref": "Rom.3.13",
+              "role": "defining",
+              "note": "Psa 140:4: \"the venom of asps is under (תְּחֵית) their lips\"."
+            },
+            {
+              "ref": "Jhn.1.48",
+              "role": "defining",
+              "note": "\"when you were under the fig tree, I saw you\"; again Jhn 1:50."
+            },
+            {
+              "ref": "Mat.23.37",
+              "note": "\"as a hen gathers her chicks under her wings\"."
+            },
+            {
+              "ref": "Act.4.12",
+              "note": "\"there is no other name under heaven given among men by which we must be saved\"."
+            },
+            {
+              "ref": "Act.2.5",
+              "note": "\"from every nation under heaven\"."
+            },
+            {
+              "ref": "Mat.5.15",
+              "note": "A lamp is not put \"under a measure\"."
+            }
+          ]
+        },
+        {
+          "id": "syc-tehet-under-rule",
+          "gloss": "under (the feet, the hand, the authority of)",
+          "definition": "Subject to someone, or to a law, an authority or a judgment.",
+          "kin": [
+            "tachat-under-rule"
+          ],
+          "evidence": [
+            {
+              "ref": "1Co.15.27",
+              "role": "defining",
+              "note": "Psa 8:7: \"he has put all things under (תְּחֵית) his feet\"; also Eph 1:22 and Heb 2:8."
+            },
+            {
+              "ref": "Mat.8.9",
+              "role": "defining",
+              "note": "\"I too am a man under authority, with soldiers under me.\""
+            },
+            {
+              "ref": "1Pe.5.6",
+              "note": "\"Humble yourselves under the mighty hand of God\": the phrase of Gen 16:9."
+            },
+            {
+              "ref": "1Co.15.25",
+              "note": "\"until he has put all his enemies under his feet\"."
+            },
+            {
+              "ref": "Gal.4.4",
+              "note": "God's son \"made of a woman, made under the law\"."
+            },
+            {
+              "ref": "Rom.6.14",
+              "note": "\"you are not under the law but under grace\"."
+            },
+            {
+              "ref": "Jas.5.12",
+              "note": "\"lest you fall under judgment\"."
+            }
+          ]
+        },
+        {
+          "id": "syc-tehet-below",
+          "gloss": "(לְתַחְתּ) down, below; (מֵן דַּלְתַחְתּ) from below",
+          "definition": "As an adverb: downward, or below a point; set against לְעֵל \"above\".",
+          "evidence": [
+            {
+              "ref": "Jhn.8.23",
+              "role": "defining",
+              "note": "\"You are from below (מֵן דַּלְתַחְתּ), I am from above (מֵן דַּלְעֵל).\""
+            },
+            {
+              "ref": "Mat.27.51",
+              "role": "defining",
+              "note": "The veil torn \"from above to below (לְתַחְתּ)\"."
+            },
+            {
+              "ref": "Mat.4.6",
+              "note": "\"Throw yourself down (לְתַחְתּ).\""
+            },
+            {
+              "ref": "Mat.2.16",
+              "note": "\"from two years old and under\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּחְתָּיָא",
+      "lang": "syc",
+      "root": "תחית",
+      "cognate_ids": [
+        "ar-tahtani",
+        "sab-tht"
+      ],
+      "pos": "adjective",
+      "gloss": "lower, lowest; (fem.) the lower parts",
+      "summary": "The Peshitta's adjective from the same root, as Hebrew תַּחְתִּי: the dust \"that is beneath\" the feet, and \"the lower parts of the earth\", the phrase of Psa 63:10 and 139:15.",
+      "senses": [
+        {
+          "id": "syc-tachtaya-lower",
+          "gloss": "lower, beneath; the lower parts",
+          "definition": "What lies beneath; as a feminine noun, the lower parts of the earth.",
+          "kin": [
+            "tachti-lower",
+            "tachti-depths"
+          ],
+          "evidence": [
+            {
+              "ref": "Mrk.6.11",
+              "role": "defining",
+              "note": "\"shake off the dust that is beneath (דַּבְתַחְתָּיָא) your feet\"."
+            },
+            {
+              "ref": "Eph.4.9",
+              "role": "defining",
+              "note": "\"he also descended first to the lower parts (לְתַחְתָּיָתָה) of the earth\"; the phrase of Psa 63:10 and 139:15 (תַּחְתִּיּוֹת הָאָרֶץ)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-tahta",
+      "lang": "ar",
+      "form": "تَحْتَ، تَحْت",
+      "translit": "taḥta, taḥt",
+      "gloss": "under, beneath, below; (fig.) under the command or authority of; (of a man) having as his wife",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "The opposite of فَوْق \"above\", as תַּחַת is of מַעַל; a noun of place used as an adverb and preposition, as the Hebrew is. Its figurative uses match Hebrew \"under the hand\" (Jdg 3:30) and a wife \"under her husband\" (Num 5:19).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 298, art. تحت, تَحْت (n3787)",
+          "note": "\"the contr. of فَوْق ... The location that is beneath, below, or under\"; \"فُلَانٌ تَحْتَ أَمْرِ فُلَانٍ Such a one is under the command, rule, or authority, of such a one. And فُلَانٌ تَحْتَهُ فُلَانَةُ Such a one has as his wife such a woman\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-tahtani",
+      "lang": "ar",
+      "form": "تَحْتَانِيٌّ",
+      "translit": "taḥtāniyy",
+      "gloss": "lower, inferior; of the place beneath",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "The adjective of relation from تَحْت, formed with -ān- and -iyy, as Hebrew תַּחְתּוֹן and תַּחְתִּי are formed from תַּחַת with -ôn and -î.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 298, art. تحت, تَحْتَانِىٌّ (n3788)",
+          "note": "\"Of, or relating to, the location that is beneath, below, or under; inferior; lower; rel. n. of تَحْت, like as فَوْقَانِىٌّ is of فَوْق\"."
+        }
+      ]
+    },
+    {
+      "id": "uga-tht",
+      "lang": "uga",
+      "form": "𐎚𐎈𐎚",
+      "translit": "tḥt (taḥta)",
+      "gloss": "under, beneath; instead of",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Segert sets it beside Hebrew תַּחַת, Aramaic תְּחוֹת and Arabic taḥta. Besides \"under the table\" it is \"instead of\" in an administrative list: \"ʿAbdu-ilu instead of Ilimilku\", the substitution sense of Hebrew תַּחַת (Gen 22:13; Num 3:12).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 79, §56.5 \"Prepositions in *-ay/-ē\"",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "\"The preposition tḥt /taḥta/ 'under, beneath' has the simple form tḥt: tḥt.tlḥn 1.114:6, 8 = 88.3 'under the table'; ʿbdil tḥt ilmlk 4.133:2 'ʿAbdu-ilu instead of Ilimilku.'\""
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 203, §93 Glossary, tḥt",
+          "note": "\"tḥt 1.114:5, 8 = 88.3 'under' (H. táḥat, Aram. təḥôt, Arab. taḥta)\"."
+        }
+      ]
+    },
+    {
+      "id": "phn-tht",
+      "lang": "phn",
+      "form": "𐤕𐤇𐤕",
+      "translit": "tḥt",
+      "gloss": "beneath, under; at the feet of; at the bottom of; below, south of; in one's place; exercising (authority)",
+      "relation": "cognate",
+      "note": "Phoenician has the whole range of the Hebrew word. Its royal curses wish that a violator have no seed \"among the living under the sun\" (bḥym tḥt šmš), Ecclesiastes' תַּחַת הַשֶּׁמֶשׁ, and \"no root below nor fruit above\", as Amo 2:9; Azatiwada \"placed them under my feet\" as Psa 18:39; and \"whichever of my sons shall sit in my place\" is the succession of 1Ki 1:30. Phoenician writes ḥ and ḫ alike, so it cannot show which stands behind ח.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 489–490, TḤT prep. (KAI 13.7/8; 14.11–12; 26 A I 16/17; 18.3/8; 2; 14.8/9; 24.13/15; 120.1)",
+          "note": "\"1. BENEATH, UNDER ... 'May you not have seed among those living under the sun!' ... 'But I, Azatiwada, placed them under my feet' (=conquered them). 2. AT THE FEET OF (connoting fealty) 3. AT THE BOTTOM OF 4. BELOW, SOUTH OF 5. IN ONE'S PLACE ... 'May they not have son nor seed in their place!' ... 'whichever of my sons who shall sit <on the throne> in my place' 6. EXERCISING AUTHORITY\"."
+        }
+      ]
+    },
+    {
+      "id": "sab-tht",
+      "lang": "sem",
+      "form": "𐩩𐩢𐩩",
+      "translit": "tḥt",
+      "gloss": "under; under the authority of; (adj. tḥtyn) lower, lowest",
+      "relation": "cognate",
+      "note": "Sabaic: \"below this boundary stone\"; \"to submit under their lord\", as Hebrew \"under the hand\"; and an adjective \"lowest\" of the bottom tier of a tomb, as Hebrew תַּחְתּוֹן of the lowest storey (1Ki 6:6).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 533, TḤT pp (C 971/1; J 578/22; C 461/9–10) and adj. tḥtyn (R 3954/2)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"(1) UNDER ... bn tḥt dn wtnn 'below this boundary stone' (2) UNDER or BY THE AUTHORITY OF ... 'to submit under their lord'\"; adj. \"LOWER, LOWEST\"."
+        }
+      ]
+    },
+    {
+      "id": "arc-tehot",
+      "lang": "arc",
+      "form": "תְּחוֹת",
+      "translit": "təḥôt",
+      "gloss": "under, beneath; in place of",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud, where it stands for Hebrew תַּחַת in all its senses: Targ. Exo 10:23 (no one rose from his place), Gen 36:33 (reigned in his place), Gen 2:21; and \"get me a man to go up the tree in my place\".",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּחוֹת",
+          "note": "\"= h. תַּחַת, under, beneath, in place of. Targ. Ps. X, 7. Targ. Y. Ex. XIX, 17. Targ. O. ib. X, 23. Targ. Gen. XXXVI, 33. Targ. O. ib. II, 21\"; Y. Snh. I, 18b תְּחוֹתַי \"in my place\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "one-god",
+      "statement": "Moses sets מִמַּעַל \"above\" against מִתַּחַת \"beneath\" to take in the whole of the world: Israel is to know \"that Yahweh, he is God in the heavens above and on the earth beneath; there is none else\" (Deu 4:39). Rahab confesses it in the same words (Jos 2:11), and Solomon prays \"there is no God like you in the heavens above or on the earth beneath\" (1Ki 8:23). Nothing above or below is left for another God to occupy. A scribe answers Jesus with this truth, \"he is one, and there is no other besides him\", and Jesus says he has answered wisely (Mrk 12:32, 34). God is one, in heaven and on earth.",
+      "evidence": [
+        {
+          "ref": "Deu.4.39"
+        },
+        {
+          "ref": "Jos.2.11"
+        },
+        {
+          "ref": "1Ki.8.23"
+        },
+        {
+          "ref": "Mrk.12.32"
+        },
+        {
+          "ref": "Mrk.12.34"
+        }
+      ]
+    },
+    {
+      "topic": "global-flood",
+      "statement": "God said he would destroy \"all flesh in which is the breath of life from under the heavens\" (Gen 6:17), and the waters covered \"all the high mountains that were under all the heavens\", rising fifteen cubits above them (Gen 7:19–20). \"Under all the heavens\" is the whole earth wherever scripture uses it: the sun, moon and stars are allotted to \"all the peoples under all the heavens\" (Deu 4:19), and God \"looks to the ends of the earth and sees under all the heavens\" (Job 28:24). So the text says the flood covered every high mountain on the earth, and Peter speaks of \"the world that then was\" perishing, flooded with water (2Pe 3:6).",
+      "evidence": [
+        {
+          "ref": "Gen.6.17"
+        },
+        {
+          "ref": "Gen.7.19"
+        },
+        {
+          "ref": "Gen.7.20"
+        },
+        {
+          "ref": "Deu.4.19"
+        },
+        {
+          "ref": "Job.28.24"
+        },
+        {
+          "ref": "2Pe.3.6"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Ecclesiastes calls the world of the living \"under the sun\" (Ecc 1:3, 9), and says of the dead that they \"know nothing\" and \"have no more a portion for ever in anything that is done under the sun\" (Ecc 9:5–6). The place they go to is called with תַּחְתִּי \"the lowest grave\" (Deu 32:22; Psa 86:13) and \"the lower land\", where the slain lie \"with those who go down to the pit\", set against \"the land of the living\" (Ezk 26:20; 32:24). The psalmist laid in \"the pit of the lowest parts\" asks whether the dead will praise God, or his faithfulness be told in the grave, or his righteousness known in \"the land of forgetfulness\" (Psa 88:7, 11–13). None of these verses gives the dead knowledge, activity or praise; they lie in the grave. Deliverance from \"the lowest grave\" is God's work, not anything in man (Psa 86:13).",
+      "evidence": [
+        {
+          "ref": "Ecc.9.5"
+        },
+        {
+          "ref": "Ecc.9.6"
+        },
+        {
+          "ref": "Deu.32.22"
+        },
+        {
+          "ref": "Psa.86.13"
+        },
+        {
+          "ref": "Ezk.26.20"
+        },
+        {
+          "ref": "Ezk.32.24"
+        },
+        {
+          "ref": "Psa.88.7"
+        },
+        {
+          "ref": "Psa.88.11",
+          "to": "Psa.88.13"
+        }
+      ]
+    },
+    {
+      "topic": "all-things-under-the-son",
+      "statement": "Psalm 8 asks \"what is man ... or the son of man\" and answers that God made him a little lower than the heavenly ones, crowned him, and \"put all things under his feet\" (Psa 8:5–7). Hebrews reads it of Jesus: \"we do not yet see all things put under him, but we see Jesus, made a little lower than the angels ... crowned with glory and honour because of the suffering of death\" (Heb 2:6–9). So the one under whose feet all things are put is a man, a son of man, raised to that place by God. Paul adds what the psalm implies: when it says all things are put under him, \"it is clear that he is excepted who put all things under him\", and then \"the Son himself will be subjected to him who put all things under him, that God may be all in all\" (1Co 15:27–28). The Son receives his dominion from the Father and remains subject to him.",
+      "evidence": [
+        {
+          "ref": "Psa.8.5",
+          "to": "Psa.8.7"
+        },
+        {
+          "ref": "Heb.2.6",
+          "to": "Heb.2.9"
+        },
+        {
+          "ref": "1Co.15.25",
+          "to": "1Co.15.28"
+        },
+        {
+          "ref": "Eph.1.22"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Daniel is told that \"the kingdom and the dominion and the greatness of the kingdoms under the whole heaven (תְּחוֹת כָּל־שְׁמַיָּא) shall be given to the people of the saints of the Most High\" (Dan 7:27). The kingdoms under the whole heaven are the kingdoms of the earth; the saints receive them, so the kingdom is on the earth. Micah says the same of \"the latter days\": Yahweh will judge between many peoples, they will learn war no more, \"and they shall sit every man under his vine and under his fig tree, and none shall make them afraid\" (Mic 4:1–4), the peace Israel once had under Solomon (1Ki 5:5). Zechariah sets the same scene \"in that day\" (Zec 3:10).",
+      "evidence": [
+        {
+          "ref": "Dan.7.27"
+        },
+        {
+          "ref": "Mic.4.1",
+          "to": "Mic.4.4"
+        },
+        {
+          "ref": "1Ki.5.5"
+        },
+        {
+          "ref": "Zec.3.10"
+        }
+      ]
+    },
+    {
+      "topic": "offering-in-place-of",
+      "statement": "The ram Abraham found was offered \"as a burnt offering in place of (תַּחַת) his son\" (Gen 22:13), the lamb he had said God would provide (Gen 22:8, 14); Isaac lived, and Hebrews says Abraham reasoned that God could raise him from the dead, from which he received him back in a figure (Heb 11:17–19). The Levites were taken \"instead of every firstborn\" of Israel, because the firstborn were Yahweh's from the night he struck the firstborn of Egypt, and the firstborn beyond the number of the Levites were redeemed with silver (Num 3:12–13, 41, 45–47). These are the uses of תַּחַת for one given in place of another to God. The laws of the offerings themselves do not use it: the offerer lays his hand on the animal's head, \"and it shall be accepted for him, to make a covering over him\" (Lev 1:4).",
+      "evidence": [
+        {
+          "ref": "Gen.22.8"
+        },
+        {
+          "ref": "Gen.22.13"
+        },
+        {
+          "ref": "Gen.22.14"
+        },
+        {
+          "ref": "Heb.11.17",
+          "to": "Heb.11.19"
+        },
+        {
+          "ref": "Num.3.12",
+          "to": "Num.3.13"
+        },
+        {
+          "ref": "Num.3.41"
+        },
+        {
+          "ref": "Num.3.45",
+          "to": "Num.3.47"
+        },
+        {
+          "ref": "Lev.1.4"
+        }
+      ]
+    },
+    {
+      "topic": "exaltation-of-christ",
+      "statement": "In the servant passage the word is the conjunction \"because\": \"Therefore I will divide him a portion with the great ... because (תַּחַת אֲשֶׁר) he poured out his soul to death, and was numbered with the transgressors; and he bore the sin of many, and makes intercession for the transgressors\" (Isa 53:12). The servant's exaltation is given in return for his obedience to death. Jesus says this verse is fulfilled in him (Luk 22:37), and Paul says the same thing of him: he \"humbled himself, becoming obedient to death, even the death of the cross; therefore God also highly exalted him\" (Php 2:8–9). He was raised up by God because he obeyed.",
+      "evidence": [
+        {
+          "ref": "Isa.53.12"
+        },
+        {
+          "ref": "Luk.22.37"
+        },
+        {
+          "ref": "Php.2.8",
+          "to": "Php.2.9"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key תחת, BDB's own key, which no other entry uses. Words claimed: w.an.aa (תַּחַת, 510 tokens), w.an.ac (תַּחְתִּי), w.an.ab (תַּחְתּוֹן), and the Aramaic xw.ac.ac (תְּחוֹת, 5 tokens: Jer 10:11; Dan 4:9, 11, 18; 7:27), which lexicon-brief does not list because the database keys it under תחות; it is given its own root תחות. w.an.ad (BDB's proper name תַּחַת, 291 tokens, nearly all the preposition filed there by spelling) is claimed by names/tahath.json and not here. Left out, as other words BDB happens to file under the key תחת (alphabetical neighbours, no tie to this root): תֵּימָא Tema (w.an.ah, w.aw.al), תַּיִשׁ he-goat (w.an.ao; Arabic tays, Syriac tayšā), תִּירָס Tiras (w.an.an), תִּיצִי Tizite (w.an.ak), תִּילוֹן Tilon (w.an.ag, w.aj.aj); they need entries of their own. The Peshitta's verb from this root, ethpali of ܬܚܬܝ \"be brought low\" (SEDRA lexeme 3385; Mat 11:23 and Luk 10:15, Capernaum \"brought down to the grave\"), is not entered because the schema has no ethpali stem; it is kin to תַּחְתִּי \"the lowest grave\". Syriac words cited from SEDRA lexemes 3384 (TK;T, root 1966, \"under\") and 3386 (TKT;A, \"low\"); New Testament counts from the database (73 uses of תְּחֵית). Sounds: ḥ shown by Arabic (Lane) and Ugaritic (𐎈); Sabaic tḥt is filed by Biella between TWṬM and TYM and cited by her beside Arabic taḥta, which fits ḥ, but the OCR does not show the dot, so no sound is recorded for it until checked in the PDF. Leads not followed: Ge'ez taḥta, taḥt \"under\" (Dillmann, Leslau not checked; Wiktionary only); Akkadian has no cognate preposition (it uses šapal), and Klein's link of תַּחְתּוֹן to Akkadian tēnû \"substitute\" is unverified; Old Aramaic tḥt in Hoftijzer–Jongeling not checked; Payne Smith for ܬܚܝܬ not checked. Doctrine: offering-in-place-of says only what Gen 22, Num 3 and Lev 1:4 show (reviewer to check the framing beside min.json's sufferings-of-christ, which contrasts מִן in Isa 53:5, 8 with תַּחַת); exaltation-of-christ rests on the causal תַּחַת אֲשֶׁר of Isa 53:12. Eph 4:9 is cited only for the Peshitta's word and the phrase it shares with Psa 63:10 and 139:15; how the descent is to be read is not argued here. Greek κάτω (Deu 4:39 LXX) and the adjectives' κατώτατος, βάθος not entered: no New Testament quotation of those verses. Mat 20:28 (λύτρον ἀντὶ πολλῶν) not cited: it quotes no verse using תַּחַת."
+}
