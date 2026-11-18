@@ -1,0 +1,260 @@
+{
+  "id": "kavah",
+  "root": "כוה",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "fire",
+    "body"
+  ],
+  "gloss": "be scorched; a burn",
+  "summary": "Walking on coals scorches the feet. The law names both the burn for which an injured person receives recompense and the patch of skin a priest must examine as it heals.",
+  "words": [
+    {
+      "lemma": "מִכְוָה",
+      "gender": "f",
+      "pos": "noun",
+      "gloss": "burn on the skin",
+      "senses": [
+        {
+          "gloss": "burn injury",
+          "definition": "Fire leaves an injured patch of skin. The priest examines changes in that patch to distinguish a spreading skin disease from the scar left by the original injury.",
+          "evidence": [
+            {
+              "ref": "Lev.13.24",
+              "role": "defining",
+              "note": "The passage specifies a burn caused by fire."
+            },
+            {
+              "ref": "Lev.13.28",
+              "role": "defining",
+              "note": "A faded spot that has stayed in place is identified as the scar of the burn."
+            }
+          ]
+        }
+      ],
+      "bdb": [
+        "k.at.ad"
+      ],
+      "cognate_ids": [
+        "ar-kawa",
+        "arc-kevaah"
+      ]
+    },
+    {
+      "lemma": "כָּוָה",
+      "pos": "verb",
+      "bdb": [
+        "k.at.aa"
+      ],
+      "gloss": "be scorched",
+      "cognate_ids": [
+        "ar-kawa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be scorched",
+          "senses": [
+            {
+              "gloss": "be burned",
+              "definition": "Heat injures the person exposed to it. Proverbs asks whether anyone could walk on coals and escape with unburned feet.",
+              "evidence": [
+                {
+                  "ref": "Pro.6.28",
+                  "role": "defining",
+                  "note": "The feet bear the injury from the coals."
+                },
+                {
+                  "ref": "Isa.43.2",
+                  "role": "defining",
+                  "note": "Yahweh promises Israel safe passage through fire."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּוִיָּה",
+      "gender": "f",
+      "pos": "noun",
+      "gloss": "burn",
+      "senses": [
+        {
+          "gloss": "burn",
+          "definition": "A bodily injury inflicted by heat, listed alongside wounds and bruises in the law of recompense.",
+          "evidence": [
+            {
+              "ref": "Exo.21.25",
+              "role": "defining",
+              "note": "The same injury is named on each side of the expression “burn for burn”."
+            }
+          ]
+        }
+      ],
+      "bdb": [
+        "k.at.ac"
+      ],
+      "cognate_ids": [
+        "ar-kawa",
+        "arc-kevaah"
+      ]
+    },
+    {
+      "lemma": "כִּי",
+      "gender": "m",
+      "pos": "noun",
+      "gloss": "brand, burn mark",
+      "senses": [
+        {
+          "gloss": "brand",
+          "definition": "A mark of burning, on the reading that takes the last contrast in Isaiah’s list as a brand in place of beauty.",
+          "evidence": [
+            {
+              "ref": "Isa.3.24",
+              "role": "defining",
+              "note": "The closing words parallel the preceding exchanges of adornment for disfigurement."
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-kawa",
+        "arc-kevaah"
+      ]
+    },
+    {
+      "lemma": "כּוָא",
+      "lang": "syc",
+      "root": "כוא",
+      "pos": "verb",
+      "gloss": "be seared",
+      "cognate_ids": [
+        "ar-kawa"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sear",
+          "senses": [
+            {
+              "gloss": "seared in conscience",
+              "definition": "The Peshitta describes speakers of falsehood as bearing the effect of burning in their conscience.",
+              "evidence": [
+                {
+                  "ref": "1Ti.4.2",
+                  "role": "defining",
+                  "note": "The burn is predicated of the speakers in relation to their conscience."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כַּוָּה",
+      "gender": "f",
+      "pos": "noun",
+      "gloss": "window",
+      "senses": [
+        {
+          "gloss": "window",
+          "definition": "An opening in a wall. Daniel’s upper room had windows that opened toward Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "The direction in which the windows open identifies them as openings to the outside."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "bdb": [
+        "xk.ac.ac"
+      ],
+      "cognate_ids": [
+        "arc-kavta"
+      ],
+      "summary": "This Aramaic noun shares the spelling of the Hebrew root. Its connection with burning is uncertain."
+    },
+    {
+      "lemma": "כַּותָֿא",
+      "gender": "f",
+      "pos": "noun",
+      "gloss": "window",
+      "senses": [
+        {
+          "gloss": "window",
+          "definition": "An opening where a person can sit or through which someone can be lowered.",
+          "evidence": [
+            {
+              "ref": "Act.20.9",
+              "role": "defining",
+              "note": "Eutychus sits in the window and falls from the third storey."
+            },
+            {
+              "ref": "2Co.11.33",
+              "role": "defining",
+              "note": "Paul is lowered through a window in the wall."
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "כותא",
+      "cognate_ids": [
+        "arc-kavta"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-kawa",
+      "lang": "ar",
+      "form": "كَوَى",
+      "translit": "kawā",
+      "gloss": "burn the skin, cauterize",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3004, كَوَاهُ, n43169"
+        }
+      ]
+    },
+    {
+      "id": "arc-kevaah",
+      "lang": "arc",
+      "form": "כְּוָאָה",
+      "translit": "kəwāʾā",
+      "gloss": "burn or cautery",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Aramaic lemma כְּוָאָה, citing Targum Onkelos to Exo 21:25 and Lev 13:24"
+        }
+      ]
+    },
+    {
+      "id": "arc-kavta",
+      "lang": "arc",
+      "form": "כַּוְּתָא",
+      "translit": "kawtā",
+      "gloss": "window, aperture",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Aramaic lemma with variant כַּוְּתָא, Targum Jonathan to Zep 2:14"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The particle כִּי belongs to ki. Key k.at.ab merges its occurrences with the proposed noun in Isa 3:24, so assigning it would count thousands of conjunctions as brands. The two zero-token cross-reference headings have no independent uses. SEDRA lexemes 1478 and 1505 distinguish the Syriac verb and window noun. Daniel’s window and its Syriac counterpart have separate Aramaic lexical support. Is the last word pair in Isa 3:24 a nominal contrast like the others? The proposed Akkadian roasting verb still needs direct attestation."
+}
