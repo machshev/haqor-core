@@ -1,0 +1,281 @@
+{
+  "id": "palash",
+  "root": "פלש",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "mourning",
+    "peoples",
+    "land"
+  ],
+  "gloss": "roll in ashes; break through",
+  "summary": "Jeremiah calls mourners to put on sackcloth and roll in ashes. The Peshitta uses a similarly spelled verb for thieves breaking through a house. Philistia and Philistine are also filed here, but the origin of the people’s name is uncertain.",
+  "words": [
+    {
+      "lemma": "פְּלִשְׁתִּי",
+      "pos": "adjective",
+      "bdb": [
+        "q.bt.ac"
+      ],
+      "gloss": "Philistine",
+      "senses": [
+        {
+          "gloss": "Philistine",
+          "definition": "A member of the people whose rulers governed Gaza, Ashdod, Ashkelon, Gath and Ekron. The singular identifies Goliath of Gath and the plural names the people collectively.",
+          "evidence": [
+            {
+              "ref": "1Sa.6.17",
+              "role": "defining",
+              "note": "The five cities supply one offering apiece on behalf of the Philistines."
+            },
+            {
+              "ref": "1Sa.17.4"
+            },
+            {
+              "ref": "1Sa.17.23"
+            },
+            {
+              "ref": "Amo.9.7"
+            }
+          ],
+          "cognate_ids": [
+            "akk-philistine"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּלֶשֶׁת",
+      "pos": "name",
+      "bdb": [
+        "q.bt.ab"
+      ],
+      "gloss": "Philistia",
+      "senses": [
+        {
+          "gloss": "Philistia",
+          "definition": "The territory inhabited by the Philistines. Prophets can address the land as a whole or distinguish its several districts.",
+          "evidence": [
+            {
+              "ref": "Jol.4.4",
+              "role": "defining",
+              "note": "Joel addresses all the regions of Philistia alongside Tyre and Sidon."
+            },
+            {
+              "ref": "Exo.15.14"
+            },
+            {
+              "ref": "Isa.14.31"
+            }
+          ],
+          "cognate_ids": [
+            "akk-philistia"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּלֵתִי",
+      "pos": "adjective",
+      "bdb": [
+        "q.bt.ae"
+      ],
+      "gloss": "Pelethite",
+      "senses": [
+        {
+          "gloss": "Pelethite",
+          "definition": "A member of a body of royal retainers repeatedly named with the Cherethites.",
+          "evidence": [
+            {
+              "ref": "2Sa.15.18",
+              "role": "defining",
+              "note": "The groups pass before David as he leaves Jerusalem."
+            },
+            {
+              "ref": "2Sa.8.18"
+            },
+            {
+              "ref": "1Ki.1.38"
+            }
+          ]
+        }
+      ],
+      "summary": "Their service to David is clear. The shorter name has been compared with “Philistine,” but the passages do not establish that derivation."
+    },
+    {
+      "lemma": "פָּלַשׁ",
+      "pos": "verb",
+      "bdb": [
+        "q.bt.aa"
+      ],
+      "gloss": "roll oneself in dust or ashes",
+      "stems": [
+        {
+          "stem": "hithpael",
+          "gloss": "roll oneself in dust or ashes",
+          "senses": [
+            {
+              "gloss": "roll oneself in dust or ashes",
+              "definition": "A mourner lowers himself into dust or ashes, accompanying bitter cries or the wearing of sackcloth.",
+              "evidence": [
+                {
+                  "ref": "Ezk.27.30",
+                  "role": "defining",
+                  "note": "Those mourning Tyre cast dust on their heads and roll in ashes."
+                },
+                {
+                  "ref": "Jer.6.26"
+                },
+                {
+                  "ref": "Jer.25.34"
+                },
+                {
+                  "ref": "Mic.1.10"
+                }
+              ],
+              "cognate_ids": [
+                "ug-wallow",
+                "arc-roll"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פּלַש",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "break through, break in",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "break in",
+          "senses": [
+            {
+              "gloss": "break in",
+              "definition": "Thieves force an opening to reach property stored inside.",
+              "evidence": [
+                {
+                  "ref": "Mat.6.19",
+                  "role": "defining",
+                  "note": "Breaking in precedes stealing in the warning about laying up treasure."
+                },
+                {
+                  "ref": "Mat.6.20"
+                }
+              ],
+              "cognate_ids": [
+                "akk-perforate"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be broken into",
+          "senses": [
+            {
+              "gloss": "be broken into",
+              "definition": "A house is breached while its owner is unprepared.",
+              "evidence": [
+                {
+                  "ref": "Mat.24.43",
+                  "role": "defining",
+                  "note": "Keeping watch would have prevented the house from being broken into."
+                },
+                {
+                  "ref": "Luk.12.39"
+                }
+              ],
+              "cognate_ids": [
+                "akk-perforate"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ug-wallow",
+      "lang": "uga",
+      "form": "𐎔𐎍𐎘",
+      "translit": "plṯ",
+      "gloss": "wallowing",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "Glossary, plṯ; §87.3, p. 158, KTU 1.5 VI:15, plṯt in the mourning of El"
+        }
+      ]
+    },
+    {
+      "id": "arc-roll",
+      "lang": "arc",
+      "form": "אִתְפַּלֵּשׁ",
+      "translit": "ʾitpallēš",
+      "gloss": "roll oneself in dust",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Aramaic פְּלַשׁ, Q01128, ithpael in Targum Micah 1:10"
+        }
+      ]
+    },
+    {
+      "id": "akk-perforate",
+      "lang": "akk",
+      "form": "palāšu",
+      "translit": "palāšu",
+      "gloss": "perforate, break through",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000025090, palāšu; rinap x000008650, pierce"
+        }
+      ]
+    },
+    {
+      "id": "akk-philistia",
+      "lang": "akk",
+      "form": "KUR.pi-liš-tu",
+      "translit": "Pilištu",
+      "gloss": "Philistia",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tsae qpn x000047730, Pilistu, also Palastu",
+          "url": "https://oracc.museum.upenn.edu/tsae/cbd/qpn/x000047730.html",
+          "note": "An Assyrian form of the geographical name. The ultimate source of the name is uncertain."
+        }
+      ]
+    },
+    {
+      "id": "akk-philistine",
+      "lang": "akk",
+      "form": "KUR.pi-liš-ta-a-a",
+      "translit": "Pilištāya",
+      "gloss": "of Philistia",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "oimea qpn, ethnic name Pilistayu, written KUR.pi-liš-ta-a-a",
+          "url": "https://oracc.museum.upenn.edu/oimea/cbd/qpn/P.html",
+          "note": "A parallel ethnic designation from the geographical name."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Ugaritic text ties wallowing to mourning and preserves ṯ. The Akkadian and Syriac verbs of breaking in provide a separate comparison. No verse derives the people’s name from a verb meaning to invade. The three indexed Hithpael tokens omit the spelling in Mic 1:10. The conjunction פֶּן and the foodstuff פַּנַּג have different consonants and no demonstrated derivation from פלש. Peleth is the name of two people (Num 16:1 and 1Ch 2:33); the name itself has no shin and no demonstrated link to this root. No personal name file assigned."
+}
