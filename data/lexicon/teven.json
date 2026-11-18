@@ -1,0 +1,299 @@
+{
+  "id": "teven",
+  "root": "תבנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "agriculture"
+  ],
+  "gloss": "straw; heap of straw",
+  "summary": "Straw feeds the camels in Rebekah’s household and the horses supplied for Solomon. When Pharaoh withholds it from his brickmakers, the Israelites scour the fields for stubble to take its place.",
+  "words": [
+    {
+      "lemma": "תֶּבֶן",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "w.af.aa"
+      ],
+      "gloss": "straw",
+      "senses": [
+        {
+          "id": "straw",
+          "gloss": "straw",
+          "definition": "Dry stalks of grain used as animal feed and in brickmaking. Their lightness and their difference from the grain itself furnish comparisons.",
+          "evidence": [
+            {
+              "ref": "Gen.24.32",
+              "role": "defining",
+              "note": "The camels receive straw and fodder when they are unloaded."
+            },
+            {
+              "ref": "1Ki.5.8",
+              "role": "defining",
+              "note": "Barley and straw are brought for the horses."
+            },
+            {
+              "ref": "Isa.11.7",
+              "role": "defining",
+              "note": "The lion eating straw like the ox pictures peace among animals."
+            },
+            {
+              "ref": "Exo.5.7",
+              "role": "defining",
+              "note": "The workers must now find their own straw for their bricks."
+            },
+            {
+              "ref": "Exo.5.12",
+              "role": "defining",
+              "note": "They gather קַשׁ, stubble, for use as תֶּבֶן."
+            },
+            {
+              "ref": "Jer.23.28",
+              "role": "defining",
+              "note": "The question about straw and grain distinguishes a dream from Yahweh’s word."
+            },
+            {
+              "ref": "Job.21.18",
+              "role": "defining",
+              "note": "Straw before the wind stands alongside chaff carried away by a storm."
+            }
+          ],
+          "cognate_ids": [
+            "akk-straw",
+            "ug-straw",
+            "arc-straw",
+            "palmyrene-straw",
+            "syc-straw",
+            "ar-straw",
+            "mt-straw",
+            "mt-stalk",
+            "mt-short"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַתְבֵּן",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "w.af.ab"
+      ],
+      "gloss": "heap of straw",
+      "senses": [
+        {
+          "id": "straw-heap",
+          "gloss": "heap of straw",
+          "definition": "Straw lying together, trampled down in Isaiah’s comparison for Moab.",
+          "evidence": [
+            {
+              "ref": "Isa.25.10",
+              "role": "defining",
+              "note": "Moab’s humiliation is likened to straw trampled where dung lies."
+            }
+          ],
+          "cognate_ids": [
+            "ar-store",
+            "mt-store"
+          ],
+          "kin": [
+            "straw"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תֵּבְנָא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "chaff, straw",
+      "senses": [
+        {
+          "id": "threshing-floor",
+          "gloss": "chaff, straw",
+          "definition": "The light residue separated from wheat on the threshing floor.",
+          "evidence": [
+            {
+              "ref": "Mat.3.12",
+              "role": "defining",
+              "note": "John contrasts the wheat gathered into storage with the residue burned in fire."
+            },
+            {
+              "ref": "Luk.3.17",
+              "role": "defining",
+              "note": "The same contrast appears in Luke’s account of John’s preaching."
+            }
+          ],
+          "cognate_ids": [
+            "syc-straw",
+            "arc-straw"
+          ],
+          "kin": [
+            "straw"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "תבנא"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-straw",
+      "lang": "akk",
+      "form": "tibnu",
+      "translit": "tibnu",
+      "gloss": "straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000016670"
+        }
+      ]
+    },
+    {
+      "id": "ug-straw",
+      "lang": "uga",
+      "form": "ti-ib-nu",
+      "translit": "tibnu",
+      "gloss": "straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep Ugaritic glossary, tbn, syllabic spelling ti-ib-nu, Ugaritica V 130 III 17"
+        }
+      ]
+    },
+    {
+      "id": "arc-straw",
+      "lang": "arc",
+      "form": "תִּבְנָא",
+      "translit": "tibnā",
+      "gloss": "straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "V00065, Onkelos Exo 5:7 and Targum Job 21:18"
+        }
+      ]
+    },
+    {
+      "id": "palmyrene-straw",
+      "lang": "arc",
+      "form": "תבנא",
+      "translit": "tbnʾ",
+      "gloss": "straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "tbn, tbnˀ, Palmyrene Tariff Trf 2.2.59, load of wheat, wine or straw"
+        }
+      ]
+    },
+    {
+      "id": "syc-straw",
+      "lang": "syc",
+      "form": "ܬܒܢܐ",
+      "translit": "teḇnā",
+      "gloss": "straw, chaff",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 3349, Mat 3:12 and Luk 3:17"
+        }
+      ]
+    },
+    {
+      "id": "ar-straw",
+      "lang": "ar",
+      "form": "تِبْنٌ",
+      "translit": "tibn",
+      "gloss": "straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 297, n3765, stalks of grain"
+        }
+      ]
+    },
+    {
+      "id": "mt-straw",
+      "lang": "sem",
+      "form": "tiben",
+      "translit": "tiben",
+      "gloss": "straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 522d86816f3bad51370016ad"
+        }
+      ]
+    },
+    {
+      "id": "mt-stalk",
+      "lang": "sem",
+      "form": "tibna",
+      "translit": "tibna",
+      "gloss": "a straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 54a0161a28d34f1008000950"
+        }
+      ]
+    },
+    {
+      "id": "mt-short",
+      "lang": "sem",
+      "form": "tbejna",
+      "translit": "tbejna",
+      "gloss": "a short straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 5631e78328080a232f216495, diminutive of tibna"
+        }
+      ]
+    },
+    {
+      "id": "ar-store",
+      "lang": "ar",
+      "form": "مَتْبَنٌ",
+      "translit": "matban",
+      "gloss": "place for storing straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 297, n3770 referring to n3769"
+        }
+      ]
+    },
+    {
+      "id": "mt-store",
+      "lang": "sem",
+      "form": "mitben",
+      "translit": "mitben",
+      "gloss": "storage for straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 5631e85d28080a232f2164a7"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Isaiah supplies the only occurrence of מַתְבֵּן. The Arabic and Maltese parallels name a storage place, while Isaiah’s image points to the straw being trodden. The name Tibni may contain the straw noun. The index also groups Tiglath-pileser, Togarmah, Thebez, Tadmor and Tidal here by spelling."
+}
