@@ -1,0 +1,853 @@
+{
+  "id": "natsal",
+  "root": "נצל",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "deliverance",
+    "rescue",
+    "plunder",
+    "death",
+    "idols"
+  ],
+  "gloss": "snatch away, pull out; deliver, rescue; strip, plunder",
+  "summary": "To pull something out of another's grip: a lamb from a lion's mouth, a brand from the fire, a people from the hand of Egypt. Almost every use is the hiphil “deliver, rescue”, most often of Yahweh, who delivers from enemies, from death and the grave, and from sin, while the gods of the nations and the idols cannot deliver and “there is none to deliver” from his hand. The same act turned the other way is to take away: God took Laban's flocks and gave them to Jacob, and in the piel Israel stripped the Egyptians, as in the hithpael they stripped off their own ornaments. Daniel's Aramaic uses the root of the God who rescued Daniel from the lions, and Jewish Aramaic keeps it as “save”.",
+  "words": [
+    {
+      "lemma": "נָצַל",
+      "pos": "verb",
+      "gloss": "snatch away, take away; deliver, rescue; (niphal) be delivered, escape; (piel) strip, plunder",
+      "bdb": [
+        "n.ev.aa"
+      ],
+      "cognate_ids": [
+        "arc-natsal",
+        "ar-nasala"
+      ],
+      "summary": "About 210 times, 191 of them hiphil. The act is pulling out of a grip: the shepherd who “snatches from the mouth of the lion two legs or a piece of an ear” (Amo 3:12), the firebrand “snatched from the fire” (Zec 3:2). Whether it is rescue or robbery depends on whose grip it is taken from. The brief's three tokens with no stem (2Ki 20:9–11, הַצֵּל) are “the shadow”, צֵל with the article, filed here by spelling; they are not this word.",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "snatch out, deliver, rescue; take away, take back",
+          "senses": [
+            {
+              "id": "rescue-from",
+              "gloss": "snatch out, rescue, deliver",
+              "definition": "To pull a person or animal out of the grip of what holds or threatens it: from a mouth, a hand, a power; most often of Yahweh delivering his people from their enemies.",
+              "evidence": [
+                {
+                  "ref": "Amo.3.12",
+                  "role": "defining",
+                  "note": "“As the shepherd יַצִּיל from the mouth of the lion two legs or a piece of an ear”: pulled out of the jaws."
+                },
+                {
+                  "ref": "1Sa.17.35",
+                  "role": "defining",
+                  "note": "David went after the lion or bear, struck it “וְהִצַּלְתִּי from its mouth”."
+                },
+                {
+                  "ref": "Exo.3.8",
+                  "role": "defining",
+                  "note": "“I have come down לְהַצִּילוֹ from the hand of Egypt, and to bring them up out of that land”; quoted at Act 7:34."
+                },
+                {
+                  "ref": "Exo.18.10",
+                  "note": "“Blessed be Yahweh, who delivered you from the hand of Egypt and from the hand of Pharaoh.”"
+                },
+                {
+                  "ref": "Gen.37.21",
+                  "note": "Reuben “delivered him out of their hand” and said, Let us not take his life."
+                },
+                {
+                  "ref": "Exo.2.19",
+                  "note": "“An Egyptian man delivered us from the hand of the shepherds.”"
+                },
+                {
+                  "ref": "Deu.25.11",
+                  "note": "A wife who comes “to deliver her husband from the hand of the one striking him”."
+                },
+                {
+                  "ref": "Num.35.25",
+                  "note": "The congregation shall deliver the manslayer from the hand of the avenger of blood."
+                },
+                {
+                  "ref": "Jer.22.3",
+                  "note": "“Deliver the robbed from the hand of the oppressor.”"
+                },
+                {
+                  "ref": "Jer.1.8",
+                  "note": "“Do not fear their faces, for I am with you לְהַצִּלֶךָ.”"
+                },
+                {
+                  "ref": "Jer.39.17",
+                  "role": "defining",
+                  "note": "“I will deliver you on that day … and you shall not be given into the hand of the men you fear”: the opposite of being handed over."
+                },
+                {
+                  "ref": "Ezk.34.10",
+                  "note": "“I will deliver my sheep from their mouth, and they shall not be food for them.”"
+                },
+                {
+                  "ref": "Psa.22.21",
+                  "note": "“Deliver my soul from the sword.”"
+                },
+                {
+                  "ref": "Psa.142.7",
+                  "note": "“Deliver me from my pursuers, for they are stronger than I.”"
+                },
+                {
+                  "ref": "Jon.4.6",
+                  "note": "The plant was to be a shade over Jonah's head “לְהַצִּיל לוֹ from his evil”: from his distress in the heat."
+                },
+                {
+                  "ref": "Dan.8.4",
+                  "note": "No beast could stand before the ram, “and there was none delivering from his hand”."
+                },
+                {
+                  "ref": "Isa.36.18",
+                  "note": "The Rabshakeh: “Has any of the gods of the nations delivered his land from the hand of the king of Assyria?”"
+                }
+              ],
+              "kin": [
+                "arc-rescue",
+                "deliverance"
+              ]
+            },
+            {
+              "id": "deliver-from-death",
+              "gloss": "deliver from death, from the grave",
+              "definition": "To keep a soul, a person's life, from death, or bring it back from the grave's edge.",
+              "evidence": [
+                {
+                  "ref": "Psa.33.19",
+                  "role": "defining",
+                  "note": "“To deliver their soul from death and to keep them alive in famine”: delivering the soul is keeping alive."
+                },
+                {
+                  "ref": "Psa.56.14",
+                  "role": "defining",
+                  "note": "“You have delivered my soul from death … that I may walk before God in the light of the living.”"
+                },
+                {
+                  "ref": "Psa.86.13",
+                  "note": "“You have delivered my soul from the lowest grave (מִשְּׁאוֹל תַּחְתִּיָּה).”"
+                },
+                {
+                  "ref": "Pro.23.14",
+                  "note": "“You shall strike him with the rod, and deliver his soul from the grave.”"
+                },
+                {
+                  "ref": "Pro.10.2",
+                  "note": "“Treasures of wickedness do not profit, but righteousness delivers from death”; so Pro 11:4."
+                },
+                {
+                  "ref": "Pro.11.4"
+                },
+                {
+                  "ref": "Pro.24.11",
+                  "note": "“Deliver those taken to death.”"
+                },
+                {
+                  "ref": "Pro.14.25",
+                  "note": "“A true witness delivers souls.”"
+                },
+                {
+                  "ref": "Zep.1.18",
+                  "note": "“Neither their silver nor their gold shall be able to deliver them in the day of the wrath of Yahweh”; so Ezk 7:19."
+                },
+                {
+                  "ref": "Ezk.3.19",
+                  "note": "The watchman who warns the wicked “has delivered his own soul”; so Ezk 3:21; 33:9."
+                }
+              ]
+            },
+            {
+              "id": "deliver-from-sin",
+              "gloss": "deliver from sin and guilt",
+              "definition": "To set free from transgressions and bloodguilt, set beside forgiveness and atonement.",
+              "evidence": [
+                {
+                  "ref": "Psa.39.9",
+                  "role": "defining",
+                  "note": "“From all my transgressions deliver me; do not make me the reproach of the fool.”"
+                },
+                {
+                  "ref": "Psa.51.16",
+                  "role": "defining",
+                  "note": "“Deliver me from bloodguilt, O God, God of my salvation.”"
+                },
+                {
+                  "ref": "Psa.79.9",
+                  "role": "defining",
+                  "note": "“Deliver us and atone for our sins, for your name's sake”: deliverance paired with atonement."
+                }
+              ]
+            },
+            {
+              "id": "take-away",
+              "gloss": "take away; take back, recover",
+              "definition": "To take something out of its holder's possession: of God taking Laban's flocks for Jacob, or his gifts from unfaithful Israel; and to take back what had been carried off.",
+              "evidence": [
+                {
+                  "ref": "Gen.31.9",
+                  "role": "defining",
+                  "note": "“God has taken away (וַיַּצֵּל) the livestock of your father and given them to me.”"
+                },
+                {
+                  "ref": "Gen.31.16",
+                  "note": "“All the wealth that God has taken away from our father is ours.”"
+                },
+                {
+                  "ref": "Hos.2.11",
+                  "role": "defining",
+                  "note": "“I will take back my grain … and I will take away my wool and my flax that covered her nakedness.”"
+                },
+                {
+                  "ref": "Jdg.11.26",
+                  "note": "Why did Ammon not take back the cities in three hundred years?"
+                },
+                {
+                  "ref": "1Sa.30.8",
+                  "note": "“You shall surely overtake, and הַצֵּל תַּצִּיל”: take back what Amalek carried off."
+                },
+                {
+                  "ref": "1Sa.30.18",
+                  "role": "defining",
+                  "note": "“David recovered all that Amalek had taken, and David recovered his two wives.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be delivered, escape; deliver oneself",
+          "senses": [
+            {
+              "id": "be-delivered",
+              "gloss": "be delivered, escape",
+              "definition": "To be pulled out of danger or a grip, or to get free of it.",
+              "evidence": [
+                {
+                  "ref": "Gen.32.31",
+                  "role": "defining",
+                  "note": "“I have seen God face to face, וַתִּנָּצֵל נַפְשִׁי”: my life was kept from death."
+                },
+                {
+                  "ref": "Deu.23.16",
+                  "role": "defining",
+                  "note": "A slave “who has escaped (יִנָּצֵל) to you from his master” is not to be handed back."
+                },
+                {
+                  "ref": "Amo.3.12",
+                  "note": "So shall the sons of Israel in Samaria “be snatched out” with the corner of a bed: what is left after the lion."
+                },
+                {
+                  "ref": "Isa.20.6",
+                  "note": "“Where we fled for help to be delivered from the king of Assyria; and we, how shall we escape?”"
+                },
+                {
+                  "ref": "2Ki.19.11",
+                  "note": "“And you, shall you be delivered?” (so Isa 37:11)."
+                },
+                {
+                  "ref": "Mic.4.10",
+                  "note": "“You shall go to Babylon; there you shall be delivered, there Yahweh shall redeem you.”"
+                },
+                {
+                  "ref": "Psa.33.16",
+                  "note": "“A mighty man is not delivered by great strength.”"
+                },
+                {
+                  "ref": "Jer.7.10",
+                  "note": "Standing in the house and saying, “We are delivered”, to go on in abominations."
+                },
+                {
+                  "ref": "Ezk.14.16",
+                  "note": "“They alone would be delivered, but the land would be a desolation”; so Ezk 14:18."
+                }
+              ]
+            },
+            {
+              "id": "deliver-oneself",
+              "gloss": "free oneself",
+              "definition": "To pull oneself free of a snare or a pledge.",
+              "evidence": [
+                {
+                  "ref": "Pro.6.5",
+                  "role": "defining",
+                  "note": "“Free yourself like a gazelle from the hand, and like a bird from the hand of the fowler.”"
+                },
+                {
+                  "ref": "Pro.6.3",
+                  "note": "Of one who has given surety: “Do this, my son, and free yourself.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "strip, plunder; deliver",
+          "senses": [
+            {
+              "id": "plunder",
+              "gloss": "strip, plunder",
+              "definition": "To strip someone of their goods, taking them out of their hands.",
+              "evidence": [
+                {
+                  "ref": "Exo.3.22",
+                  "role": "defining",
+                  "note": "Each woman shall ask of her neighbour silver, gold and clothing, “and you shall plunder the Egyptians”."
+                },
+                {
+                  "ref": "Exo.12.36",
+                  "role": "defining",
+                  "note": "“Yahweh gave the people favour … and they plundered the Egyptians.”"
+                },
+                {
+                  "ref": "2Ch.20.25",
+                  "note": "Jehoshaphat's people came to take the spoil “and stripped off for themselves” more than they could carry."
+                }
+              ]
+            },
+            {
+              "id": "piel-deliver",
+              "gloss": "deliver",
+              "definition": "To deliver, as the hiphil.",
+              "evidence": [
+                {
+                  "ref": "Ezk.14.14",
+                  "role": "defining",
+                  "note": "Noah, Daniel and Job “by their righteousness would deliver their own souls”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be snatched out",
+          "senses": [
+            {
+              "id": "snatched-out",
+              "gloss": "snatched out",
+              "definition": "Pulled out, as a burning stick from the fire.",
+              "evidence": [
+                {
+                  "ref": "Zec.3.2",
+                  "role": "defining",
+                  "note": "“Is this not a brand snatched from the fire?”, of Joshua the high priest, as Yahweh rebukes the adversary."
+                },
+                {
+                  "ref": "Amo.4.11",
+                  "role": "defining",
+                  "note": "“You were as a brand snatched from the burning, yet you did not return to me.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "strip oneself",
+          "senses": [
+            {
+              "id": "strip-oneself",
+              "gloss": "strip oneself of",
+              "definition": "To take something off oneself.",
+              "evidence": [
+                {
+                  "ref": "Exo.33.6",
+                  "role": "defining",
+                  "note": "“The sons of Israel stripped themselves of their ornaments from Mount Horeb.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ῥύομαι",
+          "gloss": "rescue, deliver",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.22.21, הַצִּיל → ῥῦσαι; Psa.39.9; 51.16 → ῥῦσαι; Psa.56.14; 86.13 → ἐρρύσω; Pro.23.14; Ezk.3.19 → ῥύσῃ; ῥύομαι renders נָצַל ×58"
+            },
+            {
+              "ref": "Mat.27.43",
+              "role": "defining",
+              "note": "The mockers at the cross quote Psa 22:9, where the verb is יַצִּילֵהוּ: “let him deliver (ῥυσάσθω) him now, if he delights in him.”"
+            },
+            {
+              "ref": "2Ti.4.17",
+              "note": "“I was delivered out of the mouth of the lion”, the image of 1Sa 17:35, 37 and Amo 3:12."
+            },
+            {
+              "ref": "Mat.6.13",
+              "note": "“Deliver us from evil.”"
+            },
+            {
+              "ref": "Col.1.13",
+              "note": "“Who delivered us from the authority of darkness.”"
+            },
+            {
+              "ref": "1Th.1.10",
+              "note": "“Jesus, who delivers us from the wrath to come.”"
+            },
+            {
+              "ref": "2Pe.2.9",
+              "note": "“The Lord knows how to deliver the godly out of trial.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐξαιρέω",
+          "gloss": "take out, rescue",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.3.8, לְהַצִּילוֹ → ἐξελέσθαι; Jer.1.8, לְהַצִּלֶךָ → ἐξαιρεῖσθαι; ἐξαιρέω renders נָצַל ×36"
+            },
+            {
+              "ref": "Act.7.34",
+              "role": "defining",
+              "note": "Stephen quotes Exo 3:7–8: “I have come down to deliver (ἐξελέσθαι) them.”"
+            },
+            {
+              "ref": "Act.26.17",
+              "note": "To Paul, “delivering (ἐξαιρούμενος) you from the people and the nations, to whom I send you”, as Jer 1:8 to Jeremiah."
+            },
+            {
+              "ref": "Act.7.10",
+              "note": "God “delivered him (Joseph) out of all his afflictions”."
+            },
+            {
+              "ref": "Act.12.11",
+              "note": "“The Lord … delivered me out of the hand of Herod.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָשַׁע",
+            "note": "Hiphil “save”, the commonest partner.",
+            "evidence": [
+              {
+                "ref": "Psa.7.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.59.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.31.3"
+              },
+              {
+                "ref": "1Ch.16.35"
+              }
+            ]
+          },
+          {
+            "lemma": "פָּלַט",
+            "note": "Piel “bring out safe, rescue”.",
+            "evidence": [
+              {
+                "ref": "Psa.71.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.82.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.22.9"
+              }
+            ]
+          },
+          {
+            "lemma": "גָּאַל",
+            "note": "“Redeem”: delivered and redeemed out of Babylon.",
+            "evidence": [
+              {
+                "ref": "Mic.4.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.6.6"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "נָתַן בְּיַד",
+            "note": "“Give into the hand”: to be delivered is not to be handed over.",
+            "evidence": [
+              {
+                "ref": "Jer.39.17",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.18.30",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.36.15"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וְאֵין מַצִּיל",
+            "gloss": "and there is none to deliver",
+            "evidence": [
+              {
+                "ref": "Deu.32.39",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.43.13"
+              },
+              {
+                "ref": "Isa.5.29"
+              },
+              {
+                "ref": "Isa.42.22"
+              },
+              {
+                "ref": "Hos.5.14"
+              },
+              {
+                "ref": "Mic.5.7"
+              },
+              {
+                "ref": "Psa.7.3"
+              },
+              {
+                "ref": "Psa.50.22"
+              },
+              {
+                "ref": "Psa.71.11"
+              },
+              {
+                "ref": "Job.5.4"
+              },
+              {
+                "ref": "Job.10.7"
+              },
+              {
+                "ref": "Jdg.18.28"
+              }
+            ]
+          },
+          {
+            "phrase": "הִצִּיל מִיַּד",
+            "gloss": "deliver from the hand of",
+            "evidence": [
+              {
+                "ref": "Exo.18.10",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.12.7"
+              },
+              {
+                "ref": "1Sa.7.3"
+              },
+              {
+                "ref": "Psa.82.4"
+              }
+            ]
+          },
+          {
+            "phrase": "הִצִּיל אֶת־נַפְשׁוֹ",
+            "gloss": "deliver one's own soul",
+            "evidence": [
+              {
+                "ref": "Ezk.3.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.3.21"
+              },
+              {
+                "ref": "Ezk.33.9"
+              },
+              {
+                "ref": "Ezk.14.20"
+              },
+              {
+                "ref": "Isa.44.20"
+              },
+              {
+                "ref": "Isa.47.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "הַצָּלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "deliverance",
+      "bdb": [
+        "n.ev.ab"
+      ],
+      "cognate_ids": [
+        "arc-natsal"
+      ],
+      "summary": "Once, the hiphil's verbal noun.",
+      "senses": [
+        {
+          "id": "deliverance",
+          "gloss": "deliverance",
+          "definition": "Rescue of a people from destruction.",
+          "evidence": [
+            {
+              "ref": "Est.4.14",
+              "role": "defining",
+              "note": "“If you keep silent at this time, relief and deliverance (וְהַצָּלָה) will arise for the Jews from another place”, set against “you and your father's house will perish”."
+            }
+          ],
+          "kin": [
+            "rescue-from"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְצַל",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "(haphel, aphel) rescue, deliver",
+      "bdb": [
+        "xn.ao.aa"
+      ],
+      "cognate_ids": [
+        "arc-natsal"
+      ],
+      "summary": "Daniel's Aramaic, three times, always of the God of Daniel and his friends as the one who rescues.",
+      "stems": [
+        {
+          "stem": "haphel",
+          "gloss": "rescue",
+          "senses": [
+            {
+              "id": "arc-rescue",
+              "gloss": "rescue, deliver",
+              "definition": "To rescue a person out of a power that would destroy him.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.29",
+                  "role": "defining",
+                  "note": "Nebuchadnezzar: “there is no other god who is able to rescue (לְהַצָּלָה) like this”, after the furnace."
+                },
+                {
+                  "ref": "Dan.6.15",
+                  "role": "defining",
+                  "note": "Darius “set his heart on Daniel to deliver him, and until the going down of the sun he laboured לְהַצָּלוּתֵהּ”."
+                }
+              ],
+              "kin": [
+                "rescue-from"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "rescue",
+          "senses": [
+            {
+              "id": "arc-rescues",
+              "gloss": "rescue",
+              "definition": "To rescue, of God.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.28",
+                  "role": "defining",
+                  "note": "“He delivers (מְשֵׁיזִב) and rescues (וּמַצִּל), and works signs and wonders … who delivered Daniel from the hand of the lions.”"
+                }
+              ],
+              "kin": [
+                "rescue-from"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-natsal",
+      "lang": "arc",
+      "form": "נְצַל، אַצֵּל، הַצָּלָה",
+      "translit": "nəṣal, ʾaṣṣēl, haṣṣālā",
+      "gloss": "save; (aphel) save, rescue; (ittaphal) be saved; (noun) rescue, relief",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Talmud: “may the Merciful save us (לִיצְּלַן)”, “when he cannot save him (אַצּוּלֵיה)”; the same act as the Hebrew hiphil. Aramaic צ shows ṣ, since older ṯ̣ and ṣ́ became ט and ע there.",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְצַל (ch.), citing Taan. 9ᵇ (רחמנא לִיצְּלַן); Snh. 72ᵇ (Af. אַצּוּלֵיה, save him); Sabb. 115ᵃ (Af.); Ab. Zar. 18ᵃ (Ittaf. מִתַּצְּלַת, you shall be saved)"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הַצָּלָה, citing Gitt. 56ᵃ (in Chald. diction, ה׳ פורתא, a little relief)",
+          "note": "rescue, relief"
+        }
+      ]
+    },
+    {
+      "id": "ar-nasala",
+      "lang": "ar",
+      "form": "نَصَلَ، تَنَصَّلَ، نَصْلٌ",
+      "translit": "naṣala, tanaṣṣala, naṣl",
+      "gloss": "take out, extract; come out, fall off; (tanaṣṣala) free oneself, get rid of; (naṣl) the iron head or blade of an arrow, spear or sword",
+      "relation": "possible",
+      "note": "If it is the same root, the shared sense is drawing out and coming off: the Hebrew pulls out of a grip (hiphil, hophal) and strips off (piel, hithpael), as the Arabic verb takes out or falls off. Arabic shows ṣ behind צ. Lane's article in the vendored text (from the supplement) gives only nouns; the verb's senses are from Wiktionary and not yet checked in an Arabic dictionary.",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3033, art. نصل, نَصْلٌ (n43986)",
+          "note": "“The iron head or blade of an arrow, and of a spear, and of a sword, and of a knife.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic نصل (naṣala), verb; تنصل (tanaṣṣala), verb",
+          "note": "naṣala “to free, to extract, to take out; to fall off, to flake off”; tanaṣṣala “to free oneself, to get rid of”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "What Yahweh delivers is the soul, and what it is delivered from is death: “to deliver their soul from death and to keep them alive in famine” (Psa 33:19); “you have delivered my soul from death … that I may walk before God in the light of the living” (Psa 56:14); “deliver my soul from the sword” (Psa 22:21); “you have delivered my soul from the lowest grave” (Psa 86:13). Jacob, having seen God face to face, said “my soul is delivered” (Gen 32:31): his life was spared. Righteousness delivers from death (Pro 10:2; 11:4), and silver and gold cannot deliver in the day of Yahweh's wrath (Zep 1:18). At the cross the mockers quoted Psa 22:9, “let him deliver him now, if he delights in him” (Mat 27:43); he was not delivered from dying, but “God raised him up, having loosed the pangs of death, because it was not possible for him to be held by it” (Act 2:24), and he is now the one “who delivers us from the wrath to come” (1Th 1:10). From the verses: the soul is the living person, which the sword can reach and death can take; to deliver it is to keep it alive, and the deliverance from a death already suffered is resurrection.",
+      "evidence": [
+        {
+          "ref": "Psa.33.19"
+        },
+        {
+          "ref": "Psa.56.14"
+        },
+        {
+          "ref": "Psa.22.21"
+        },
+        {
+          "ref": "Psa.86.13"
+        },
+        {
+          "ref": "Gen.32.31"
+        },
+        {
+          "ref": "Pro.10.2"
+        },
+        {
+          "ref": "Pro.11.4"
+        },
+        {
+          "ref": "Zep.1.18"
+        },
+        {
+          "ref": "Psa.22.9"
+        },
+        {
+          "ref": "Mat.27.43"
+        },
+        {
+          "ref": "Act.2.24"
+        },
+        {
+          "ref": "1Th.1.10"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-the-deliverer",
+      "statement": "“I kill and I make alive; I wound and I heal; and there is none who delivers from my hand” (Deu 32:39; so Isa 43:13). The Rabshakeh made deliverance the test: “Has any of the gods of the nations delivered his land from the hand of the king of Assyria? … that Yahweh should deliver Jerusalem from my hand?” (2Ki 18:33, 35), and Hezekiah prayed that all the kingdoms of the earth might know “that you, Yahweh, are God alone” (2Ki 19:19), and that night the Assyrian camp was struck (2Ki 19:35). The idol-maker prays to what he made, “deliver me, for you are my god”, yet “he cannot deliver his soul” (Isa 44:17, 20); the idols are “vain things that cannot profit or deliver” (1Sa 12:21). Even the kings of Babylon and Persia confessed it: “there is no other god who is able to rescue like this” (Dan 3:29); “he delivers and rescues … who delivered Daniel from the hand of the lions” (Dan 6:28). From the verses: to deliver is the work by which the one God shows himself God, and what cannot deliver is no god.",
+      "evidence": [
+        {
+          "ref": "Deu.32.39"
+        },
+        {
+          "ref": "Isa.43.13"
+        },
+        {
+          "ref": "2Ki.18.33"
+        },
+        {
+          "ref": "2Ki.18.35"
+        },
+        {
+          "ref": "2Ki.19.19"
+        },
+        {
+          "ref": "2Ki.19.35"
+        },
+        {
+          "ref": "Isa.44.17"
+        },
+        {
+          "ref": "Isa.44.20"
+        },
+        {
+          "ref": "1Sa.12.21"
+        },
+        {
+          "ref": "Dan.3.29"
+        },
+        {
+          "ref": "Dan.6.28"
+        }
+      ]
+    },
+    {
+      "topic": "individual-responsibility",
+      "statement": "Of a land that sins against him, Yahweh says, “though these three men, Noah, Daniel and Job, were in it, they by their righteousness would deliver their own souls”; they would deliver “neither sons nor daughters; they alone would be delivered” (Ezk 14:14, 16, 18, 20). The watchman who warns the wicked, if the wicked does not turn, “has delivered his own soul” (Ezk 3:19, 21; 33:9). “The soul that sins, it shall die … the righteousness of the righteous shall be upon him, and the wickedness of the wicked shall be upon him” (Ezk 18:20). From the verses: no one's righteousness delivers another; each answers for his own life.",
+      "evidence": [
+        {
+          "ref": "Ezk.14.14"
+        },
+        {
+          "ref": "Ezk.14.16"
+        },
+        {
+          "ref": "Ezk.14.18"
+        },
+        {
+          "ref": "Ezk.14.20"
+        },
+        {
+          "ref": "Ezk.3.19"
+        },
+        {
+          "ref": "Ezk.3.21"
+        },
+        {
+          "ref": "Ezk.33.9"
+        },
+        {
+          "ref": "Ezk.18.20"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key נצל; no existing entry used it. BDB keys: n.ev.aa verb, n.ev.ab הַצָּלָה (Est 4:14), xn.ao.aa Aramaic נְצַל (Dan 3:29; 6:15, 28). e.cb.ai (הַצָּלָה, a zero-token cross-reference “see נצל”) is the same word as n.ev.ab and is left unassigned. The verb's three tokens with no stem (2Ki 20:9–11 הַצֵּל) are צֵל “shadow” with the article (r.cc.ab), filed here by spelling; they belong to the צלל entry when it is written. No personal names from the root in TIPNR. Verse numbers are the Hebrew text's (Psa 22:9 = Eng 22:8, Hos 2:11 = Eng 2:9, Gen 32:31 = Eng 32:30, Dan 6:28 = Eng 6:27). Greek: Mat 27:43 follows the LXX's ῥύομαι for the parallel יְפַלְּטֵהוּ in Psa 22:9, but its “if he delights in him” is the clause with יַצִּילֵהוּ; MACULA aligns that verb to σωσάτω. The piel's ‘deliver’ (Ezk 14:14) is the hiphil's sense in another stem, and 2Ch 20:25 “stripped off for themselves” is read as plunder. Leads not followed: Ge'ez tanaṣla “fall out, fall off” (Dillmann, not vendored); Ugaritic (DULAT); Arabic naṣala in Lisān al-ʿArab; Payne Smith for Syriac ܢܨܠ. Syriac ܢܨܠ “pour” (SEDRA root 1202, lexeme 2017; once in the Peshitta, Luk 10:34, of pouring on oil and wine) shares no sense with the Hebrew words and is not recorded as a cognate. Open questions: (1) whether Arabic naṣala “take out, come off” is the same root, which would make “pull out, strip off” the core (marked possible until checked in an Arabic dictionary); (2) how Syriac ܢܨܠ “pour” relates, if at all; (3) 2Sa 20:6 וְהִצִּיל עֵינֵנוּ (“and escape our eye”?) is left uncited; (4) the doctrine statements are reasoned conclusions to review."
+}
