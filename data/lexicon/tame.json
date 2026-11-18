@@ -1,0 +1,1252 @@
+{
+  "id": "tame",
+  "root": "טמא",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "uncleanness",
+    "holiness",
+    "law",
+    "death",
+    "sanctuary",
+    "land",
+    "idolatry",
+    "separation"
+  ],
+  "gloss": "be unclean, defiled; defile, pronounce unclean; unclean; uncleanness",
+  "summary": "To be in the state that keeps a person or thing from what is holy, and to bring something into that state: the opposite of טָהוֹר “clean”, set with חֹל “common” over against קֹדֶשׁ “holy” (Lev 10:10). Under the law it came by touching a carcass or a dead body, by issues of the body and by childbirth, and lasted until the evening or seven days, until washing, the water of separation or an offering made clean again. The same words describe the moral defilement of adultery, bloodshed and idolatry, which defile the sanctuary, Yahweh's holy name and the land, so that the land vomits out its inhabitants; and the prophets promise a day when Yahweh will cleanse Israel from all its uncleanness and no unclean one will enter Zion. Aramaic and the Peshitta's Syriac use the root the same way.",
+  "words": [
+    {
+      "lemma": "טָמֵא",
+      "pos": "verb",
+      "bdb": [
+        "i.ay.aa"
+      ],
+      "gloss": "be, become unclean; defile, pronounce unclean",
+      "cognate_ids": [
+        "arc-tema"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be, become unclean",
+          "senses": [
+            {
+              "id": "be-unclean",
+              "gloss": "become unclean (under the law)",
+              "definition": "Come into the state the law calls unclean, by touching a carcass, a dead body or a grave, by an issue of the body or by childbirth, or by eating what is forbidden; it lasts a set time and ends with washing or the prescribed rite.",
+              "evidence": [
+                {
+                  "ref": "Lev.11.24",
+                  "role": "defining",
+                  "note": "“Anyone who touches their carcasses will be unclean until the evening.”"
+                },
+                {
+                  "ref": "Lev.11.32"
+                },
+                {
+                  "ref": "Lev.12.2",
+                  "role": "defining",
+                  "note": "A woman who bears a son “shall be unclean seven days, as in the days of her menstruation”."
+                },
+                {
+                  "ref": "Lev.15.16",
+                  "role": "defining",
+                  "note": "An emission of seed: he bathes “and shall be unclean until the evening”."
+                },
+                {
+                  "ref": "Lev.15.19"
+                },
+                {
+                  "ref": "Lev.17.15",
+                  "note": "Eating a carcass: wash, bathe, “be unclean until the evening; then he will be clean”."
+                },
+                {
+                  "ref": "Num.19.11",
+                  "role": "defining",
+                  "note": "“He who touches the dead body of any soul of man shall be unclean seven days.”"
+                },
+                {
+                  "ref": "Num.19.16"
+                },
+                {
+                  "ref": "Hag.2.13",
+                  "role": "defining",
+                  "note": "“If one unclean of a soul touches any of these, will it be unclean?” The priests answer, “It will be unclean.”"
+                }
+              ]
+            },
+            {
+              "id": "be-defiled",
+              "gloss": "be defiled (by sin)",
+              "definition": "Become defiled by sexual sin, bloodshed or idolatry; said of people and of the land itself.",
+              "evidence": [
+                {
+                  "ref": "Lev.18.20",
+                  "note": "Lying with a neighbour's wife “to become unclean with her”."
+                },
+                {
+                  "ref": "Lev.18.25",
+                  "role": "defining",
+                  "note": "“The land became unclean, and I visited its iniquity on it, and the land vomited out its inhabitants.”"
+                },
+                {
+                  "ref": "Lev.18.27"
+                },
+                {
+                  "ref": "Psa.106.39",
+                  "role": "defining",
+                  "note": "“They became unclean by their works and went whoring in their deeds,” after shedding innocent blood to the idols of Canaan (106:38)."
+                },
+                {
+                  "ref": "Ezk.22.4",
+                  "note": "“By your idols which you have made you have become unclean.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be defiled, defile oneself",
+          "senses": [
+            {
+              "gloss": "be defiled, defile oneself",
+              "definition": "Be made unclean or make oneself unclean, above all by adultery, and by Israel's whoring after idols, which the prophets count as adultery.",
+              "evidence": [
+                {
+                  "ref": "Num.5.13",
+                  "role": "defining",
+                  "note": "A man lies with her “and she is defiled (נִטְמָאָה), and there is no witness against her”."
+                },
+                {
+                  "ref": "Num.5.28",
+                  "note": "“If the woman is not defiled, but is clean, she will be free.”"
+                },
+                {
+                  "ref": "Lev.18.24",
+                  "note": "The nations “defiled themselves” by all these things."
+                },
+                {
+                  "ref": "Jer.2.23",
+                  "note": "“How can you say, I am not defiled, I have not gone after the Baals?”"
+                },
+                {
+                  "ref": "Ezk.20.30",
+                  "role": "defining",
+                  "note": "“Are you defiling yourselves in the way of your fathers, and whoring after their detestable things?”"
+                },
+                {
+                  "ref": "Ezk.23.7"
+                },
+                {
+                  "ref": "Hos.5.3",
+                  "note": "“Ephraim, you have whored; Israel is defiled.”"
+                },
+                {
+                  "ref": "Hos.6.10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "defile; pronounce unclean",
+          "senses": [
+            {
+              "id": "defile",
+              "gloss": "defile, make unclean",
+              "definition": "Make a person, place or thing unclean: a woman by lying with her; the sanctuary, Yahweh's holy name, the camp or the land by uncleanness, blood or idols; and the high places, made unfit for worship by burning bones on them.",
+              "evidence": [
+                {
+                  "ref": "Gen.34.5",
+                  "role": "defining",
+                  "note": "Jacob heard that Shechem “had defiled Dinah his daughter”."
+                },
+                {
+                  "ref": "Ezk.18.6",
+                  "note": "The righteous man “does not defile his neighbour's wife”."
+                },
+                {
+                  "ref": "Lev.15.31",
+                  "role": "defining",
+                  "note": "Israel kept from their uncleanness, “that they not die in their uncleanness by defiling my dwelling that is among them”."
+                },
+                {
+                  "ref": "Num.19.20",
+                  "note": "One who does not purify himself “has defiled the sanctuary of Yahweh”."
+                },
+                {
+                  "ref": "Lev.20.3",
+                  "note": "Giving seed to Molech, “to defile my sanctuary and to profane my holy name”."
+                },
+                {
+                  "ref": "Num.5.3",
+                  "note": "The unclean are sent out “that they not defile their camps, in the midst of which I dwell”."
+                },
+                {
+                  "ref": "Num.35.34",
+                  "role": "defining",
+                  "note": "“You shall not defile the land in which you live, in the midst of which I dwell.”"
+                },
+                {
+                  "ref": "Deu.21.23"
+                },
+                {
+                  "ref": "Jer.2.7"
+                },
+                {
+                  "ref": "Jer.32.34",
+                  "note": "Detestable things set in the house called by Yahweh's name, “to defile it”."
+                },
+                {
+                  "ref": "Ezk.43.7",
+                  "note": "“The house of Israel will no more defile my holy name.”"
+                },
+                {
+                  "ref": "2Ki.23.16",
+                  "role": "defining",
+                  "note": "Josiah burned bones from the graves on the altar at Bethel “and defiled it”."
+                },
+                {
+                  "ref": "2Ki.23.10"
+                },
+                {
+                  "ref": "Psa.79.1",
+                  "note": "“They have defiled your holy temple.”"
+                },
+                {
+                  "ref": "Isa.30.22",
+                  "note": "Israel will treat the overlay of their idols as unclean and throw it away."
+                },
+                {
+                  "ref": "Ezk.20.26",
+                  "note": "Yahweh: “I made them unclean in their own gifts.”"
+                }
+              ]
+            },
+            {
+              "gloss": "pronounce unclean",
+              "definition": "Of the priest: declare a person or thing unclean after examining it, in the law of skin disease.",
+              "evidence": [
+                {
+                  "ref": "Lev.13.3",
+                  "role": "defining",
+                  "note": "“The priest shall see it and pronounce him unclean.”"
+                },
+                {
+                  "ref": "Lev.13.8"
+                },
+                {
+                  "ref": "Lev.13.20"
+                },
+                {
+                  "ref": "Lev.13.44",
+                  "note": "“He is unclean; the priest shall surely pronounce him unclean.”"
+                },
+                {
+                  "ref": "Lev.13.59"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be defiled",
+          "senses": [
+            {
+              "gloss": "defiled",
+              "definition": "The participle: made unclean.",
+              "evidence": [
+                {
+                  "ref": "Ezk.4.14",
+                  "role": "defining",
+                  "note": "“Behold, my soul has not been defiled; I have not eaten what died of itself or was torn.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "make oneself unclean; (hothpaal) be made unclean",
+          "senses": [
+            {
+              "gloss": "make oneself unclean",
+              "definition": "Bring uncleanness on oneself: a priest or Nazirite by going near the dead, Israel by eating swarming things, by the practices of the nations, or by idols.",
+              "evidence": [
+                {
+                  "ref": "Lev.21.1",
+                  "role": "defining",
+                  "note": "“None shall make himself unclean for a soul among his people,” except for his nearest kin (21:2–3)."
+                },
+                {
+                  "ref": "Lev.21.11",
+                  "note": "The high priest “shall not go in to any dead souls, nor make himself unclean for his father or his mother”."
+                },
+                {
+                  "ref": "Num.6.7",
+                  "note": "The Nazirite “shall not make himself unclean for them when they die, because the separation of his God is on his head”."
+                },
+                {
+                  "ref": "Lev.11.43"
+                },
+                {
+                  "ref": "Lev.18.30"
+                },
+                {
+                  "ref": "Ezk.20.7",
+                  "role": "defining",
+                  "note": "“Do not defile yourselves with the idols of Egypt; I am Yahweh your God.”"
+                },
+                {
+                  "ref": "Ezk.37.23",
+                  "note": "“They will no more defile themselves with their idols … and I will cleanse them.”"
+                },
+                {
+                  "ref": "Ezk.44.25"
+                },
+                {
+                  "ref": "Hos.9.4"
+                }
+              ]
+            },
+            {
+              "gloss": "be made unclean (hothpaal)",
+              "definition": "The passive of this stem (hothpaal), once: of a divorced wife who has married another, made unclean to her first husband, who may not take her back.",
+              "evidence": [
+                {
+                  "ref": "Deu.24.4",
+                  "role": "defining",
+                  "note": "“Her first husband … may not take her again to be his wife, after she has been made unclean; for that is an abomination before Yahweh.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μιαίνω",
+          "gloss": "stain, defile",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.11.44, תְטַמְּאוּ → μιανεῖτε; Num.19.20, טִמֵּא → ἐμίανεν; Hag.2.13, יִטְמָא → μιανθήσεται; μιαίνω renders טָמֵא ×37 as a lemma, more under its forms"
+            },
+            {
+              "ref": "Jhn.18.28",
+              "note": "The Jews did not enter the praetorium “lest they be defiled (μιανθῶσιν), but might eat the Passover”: the concern of Num 9:6."
+            },
+            {
+              "ref": "Tit.1.15",
+              "note": "“To the defiled and unbelieving nothing is pure, but even their mind and conscience are defiled.”"
+            },
+            {
+              "ref": "Heb.12.15",
+              "note": "A root of bitterness by which many are defiled."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָלַל",
+            "note": "“Profane”: defiling oneself and profaning oneself, defiling the sanctuary and profaning the holy name.",
+            "evidence": [
+              {
+                "ref": "Lev.21.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.20.3"
+              },
+              {
+                "ref": "Ezk.22.26"
+              }
+            ]
+          },
+          {
+            "lemma": "זָנָה",
+            "note": "“Whore”: defilement by idolatry is Israel's harlotry.",
+            "evidence": [
+              {
+                "ref": "Psa.106.39",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.5.3"
+              },
+              {
+                "ref": "Ezk.20.30"
+              },
+              {
+                "ref": "Ezk.23.30"
+              }
+            ]
+          },
+          {
+            "lemma": "שִׁקֵּץ",
+            "note": "“Make detestable”: eating swarming things makes the soul detestable and unclean.",
+            "evidence": [
+              {
+                "ref": "Lev.11.43",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.20.25"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "טָהֵר",
+            "note": "“Be clean”: the uncleanness lasts until the evening, “then he will be clean”; Yahweh will cleanse Israel from its uncleannesses.",
+            "evidence": [
+              {
+                "ref": "Lev.17.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.5.28"
+              },
+              {
+                "ref": "Ezk.36.25"
+              },
+              {
+                "ref": "Ezk.37.23"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "טָמֵא עַד־הָעָרֶב",
+            "gloss": "unclean until the evening",
+            "evidence": [
+              {
+                "ref": "Lev.11.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.15.5"
+              },
+              {
+                "ref": "Lev.17.15"
+              },
+              {
+                "ref": "Num.19.7"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "טָמֵא",
+      "pos": "adjective",
+      "bdb": [
+        "i.ay.ab"
+      ],
+      "gloss": "unclean",
+      "cognate_ids": [
+        "arc-tema"
+      ],
+      "senses": [
+        {
+          "gloss": "unclean (animals, food)",
+          "definition": "Of animals Israel was not to eat or whose carcasses defiled: the opposite of the clean animals.",
+          "evidence": [
+            {
+              "ref": "Lev.11.4",
+              "note": "The camel: “it is unclean to you”."
+            },
+            {
+              "ref": "Lev.11.47",
+              "role": "defining",
+              "note": "“To distinguish between the unclean and the clean, between the living thing that may be eaten and the living thing that may not be eaten.”"
+            },
+            {
+              "ref": "Lev.20.25",
+              "role": "defining",
+              "note": "“You shall distinguish between the clean beast and the unclean, between the unclean bird and the clean.”"
+            },
+            {
+              "ref": "Deu.14.19"
+            },
+            {
+              "ref": "Hos.9.3",
+              "note": "“They will eat unclean food in Assyria.”"
+            },
+            {
+              "ref": "Ezk.4.13"
+            }
+          ]
+        },
+        {
+          "gloss": "unclean (person, thing, place)",
+          "definition": "In the state of uncleanness under the law, and so kept from the holy things, the Passover and the camp; of a garment, house or place, contaminated and set apart.",
+          "evidence": [
+            {
+              "ref": "Lev.13.45",
+              "role": "defining",
+              "note": "The man with the skin disease “shall cover his lip and cry, Unclean, unclean!”"
+            },
+            {
+              "ref": "Lev.13.46",
+              "note": "“He is unclean; he shall dwell alone; outside the camp shall be his dwelling.”"
+            },
+            {
+              "ref": "Num.9.6",
+              "role": "defining",
+              "note": "Men “unclean by the soul of a man” could not keep the Passover on that day."
+            },
+            {
+              "ref": "Num.19.13"
+            },
+            {
+              "ref": "Lev.5.2"
+            },
+            {
+              "ref": "Lev.14.45",
+              "note": "The stones of a diseased house go out of the city “to an unclean place”."
+            },
+            {
+              "ref": "Jos.22.19",
+              "note": "“If the land of your possession is unclean, cross over to the land of Yahweh's possession, where Yahweh's dwelling dwells.”"
+            },
+            {
+              "ref": "Amo.7.17",
+              "note": "Amaziah “shall die on an unclean land”."
+            },
+            {
+              "ref": "Hag.2.13"
+            }
+          ]
+        },
+        {
+          "gloss": "unclean (morally)",
+          "definition": "Defiled before Yahweh by sin: of lips, of a city's name, of a whole people whose righteousnesses are like a soiled rag.",
+          "evidence": [
+            {
+              "ref": "Isa.6.5",
+              "role": "defining",
+              "note": "“I am a man unclean of lips, and I dwell among a people unclean of lips; for my eyes have seen the King, Yahweh of hosts.”"
+            },
+            {
+              "ref": "Isa.64.5",
+              "role": "defining",
+              "note": "“We have all become like the unclean, and all our righteousnesses like a menstrual garment.”"
+            },
+            {
+              "ref": "Ezk.22.5",
+              "note": "Jerusalem, “unclean of name, great in tumult”."
+            },
+            {
+              "ref": "Job.14.4",
+              "role": "defining",
+              "note": "“Who can bring a clean thing out of an unclean? Not one.”"
+            },
+            {
+              "ref": "Ecc.9.2",
+              "note": "One event comes to all, “to the clean and to the unclean”."
+            },
+            {
+              "ref": "Isa.35.8",
+              "note": "“The way of holiness: the unclean shall not pass over it.”"
+            },
+            {
+              "ref": "Isa.52.1",
+              "note": "“There shall no more come into you the uncircumcised and the unclean.”"
+            },
+            {
+              "ref": "Isa.52.11",
+              "note": "“Depart, depart, go out from there, touch no unclean thing.”"
+            },
+            {
+              "ref": "Lam.4.15",
+              "note": "Of Jerusalem's own: “Depart! Unclean!” they cried to them."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀκάθαρτος",
+          "gloss": "unclean",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.11.47, הַטָּמֵא → ἀκαθάρτων; Isa.6.5, טְמֵא → ἀκάθαρτα; Isa.52.1, טָמֵא → ἀκάθαρτος; ἀκάθαρτος renders טָמֵא ×73 (Isa.52.11's טָמֵא is unaligned there, though its Greek has ἀκαθάρτου)"
+            },
+            {
+              "ref": "2Co.6.17",
+              "note": "“Come out from their midst and be separate, says the Lord, and touch no unclean thing (ἀκαθάρτου)”: Isa 52:11."
+            },
+            {
+              "ref": "Act.10.14",
+              "note": "Peter: “I have never eaten anything common or unclean”, the law's word for forbidden animals (Lev 11:47)."
+            },
+            {
+              "ref": "Act.10.28",
+              "note": "“God has shown me that I should not call any man common or unclean.”"
+            },
+            {
+              "ref": "Mrk.1.23",
+              "note": "“A man with an unclean spirit”; compare “the spirit of uncleanness” of Zec 13:2."
+            },
+            {
+              "ref": "1Co.7.14"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "טָהוֹר",
+            "note": "“Clean”: the pair the priests were to teach Israel to tell apart.",
+            "evidence": [
+              {
+                "ref": "Lev.10.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.11.47"
+              },
+              {
+                "ref": "Ezk.44.23"
+              },
+              {
+                "ref": "Ezk.22.26"
+              },
+              {
+                "ref": "Job.14.4"
+              },
+              {
+                "ref": "Ecc.9.2"
+              }
+            ]
+          },
+          {
+            "lemma": "קֹדֶשׁ",
+            "note": "“Holiness, the holy”: unclean and clean stand beside common and holy; the unclean may not touch the holy things.",
+            "evidence": [
+              {
+                "ref": "Lev.10.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.44.23"
+              },
+              {
+                "ref": "Lev.7.20"
+              },
+              {
+                "ref": "Hag.2.12"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "טְמֵא נֶפֶשׁ",
+            "gloss": "unclean by a soul (a dead person)",
+            "evidence": [
+              {
+                "ref": "Num.9.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.5.2"
+              },
+              {
+                "ref": "Num.9.10"
+              },
+              {
+                "ref": "Hag.2.13"
+              }
+            ]
+          },
+          {
+            "phrase": "טָמֵא טָמֵא יִקְרָא",
+            "gloss": "he shall cry, Unclean, unclean!",
+            "evidence": [
+              {
+                "ref": "Lev.13.45",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.4.15"
+              }
+            ]
+          },
+          {
+            "phrase": "טְמֵא שְׂפָתַיִם",
+            "gloss": "unclean of lips",
+            "evidence": [
+              {
+                "ref": "Isa.6.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "טֻמְאָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "i.ay.ac"
+      ],
+      "gloss": "uncleanness",
+      "cognate_ids": [
+        "arc-tema"
+      ],
+      "senses": [
+        {
+          "gloss": "uncleanness (under the law)",
+          "definition": "The state of being unclean, or the thing that makes one so: an issue of the body, menstruation, the uncleanness of a man or a dead body, or forbidden food.",
+          "evidence": [
+            {
+              "ref": "Lev.15.3",
+              "role": "defining",
+              "note": "“This shall be his uncleanness in his discharge.”"
+            },
+            {
+              "ref": "Lev.15.31",
+              "role": "defining",
+              "note": "“That they not die in their uncleanness by defiling my dwelling.”"
+            },
+            {
+              "ref": "Lev.18.19",
+              "note": "“A woman in the separation of her uncleanness.”"
+            },
+            {
+              "ref": "Lev.5.3"
+            },
+            {
+              "ref": "Lev.7.20",
+              "note": "One who eats of the peace offering “with his uncleanness on him” is cut off."
+            },
+            {
+              "ref": "Num.19.13",
+              "note": "He who touches a dead soul and does not purify himself: “his uncleanness is still on him”."
+            },
+            {
+              "ref": "2Sa.11.4",
+              "note": "Bathsheba “was sanctifying herself from her uncleanness”."
+            },
+            {
+              "ref": "Jdg.13.7",
+              "note": "The mother of the Nazirite is to eat “nothing unclean”."
+            }
+          ]
+        },
+        {
+          "id": "moral-uncleanness",
+          "gloss": "uncleanness (of sin)",
+          "definition": "The defilement of Israel's sins and idols, and of the nations of the land: atoned for in the holy place, judged by exile, and to be cleansed by Yahweh.",
+          "evidence": [
+            {
+              "ref": "Lev.16.16",
+              "role": "defining",
+              "note": "Atonement for the holy place “because of the uncleannesses of the sons of Israel, and because of their transgressions in all their sins”; the tent “dwells with them in the midst of their uncleannesses”."
+            },
+            {
+              "ref": "Lev.16.19"
+            },
+            {
+              "ref": "Ezk.36.17",
+              "role": "defining",
+              "note": "“Their way before me was like the uncleanness of menstruation.”"
+            },
+            {
+              "ref": "Ezk.36.25",
+              "role": "defining",
+              "note": "“I will sprinkle clean water on you, and you will be clean from all your uncleannesses, and from all your idols I will cleanse you.”"
+            },
+            {
+              "ref": "Ezk.36.29"
+            },
+            {
+              "ref": "Ezk.39.24",
+              "note": "“According to their uncleanness and according to their transgressions I did to them, and hid my face from them.”"
+            },
+            {
+              "ref": "Ezk.24.11"
+            },
+            {
+              "ref": "Lam.1.9",
+              "note": "Jerusalem: “her uncleanness is in her skirts; she did not remember her end”."
+            },
+            {
+              "ref": "Ezr.6.21",
+              "note": "Those who separated themselves “from the uncleanness of the nations of the land” to seek Yahweh."
+            },
+            {
+              "ref": "Ezr.9.11"
+            },
+            {
+              "ref": "2Ch.29.16",
+              "note": "Hezekiah's priests brought out “all the uncleanness” found in the temple."
+            },
+            {
+              "ref": "Zec.13.2",
+              "role": "defining",
+              "note": "“The prophets and the spirit of uncleanness I will cause to pass from the land.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀκαθαρσία",
+          "gloss": "uncleanness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.15.31, טֻמְאָת → ἀκαθαρσίαν; Lev.16.16, טֻמְאֹת → ἀκαθαρσιῶν, ἀκαθαρσίας; ἀκαθαρσία renders טֻמְאָה ×25"
+            },
+            {
+              "ref": "Mat.23.27",
+              "note": "Whitewashed tombs, “full of dead men's bones and all uncleanness”: the uncleanness of the dead (Num 19:16)."
+            },
+            {
+              "ref": "Rom.6.19",
+              "note": "Members once presented “as slaves to uncleanness”, now to righteousness for holiness."
+            },
+            {
+              "ref": "1Th.4.7",
+              "note": "“God did not call us to uncleanness, but in holiness.”"
+            },
+            {
+              "ref": "Eph.5.3"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נִדָּה",
+            "note": "“Menstruation, impurity”: the land is a land of נִדָּה by the uncleanness of its peoples; Israel's way like the uncleanness of נִדָּה.",
+            "evidence": [
+              {
+                "ref": "Ezr.9.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.36.17"
+              },
+              {
+                "ref": "Lev.18.19"
+              }
+            ]
+          },
+          {
+            "lemma": "פֶּשַׁע",
+            "note": "“Transgression”: uncleannesses and transgressions together, atoned for and punished.",
+            "evidence": [
+              {
+                "ref": "Lev.16.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.39.24"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "רוּחַ הַטֻּמְאָה",
+            "gloss": "the spirit of uncleanness",
+            "evidence": [
+              {
+                "ref": "Zec.13.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "טָמְאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "uncleanness",
+      "summary": "Once only, Mic 2:10, beside the commoner טֻמְאָה; the form could also be read as the qal infinitive of the verb (as in Lev 15:32; 22:8, לְטָמְאָה).",
+      "cognate_ids": [
+        "arc-tema"
+      ],
+      "senses": [
+        {
+          "gloss": "uncleanness",
+          "definition": "The defilement for which the land is no rest for those who wronged their brothers.",
+          "evidence": [
+            {
+              "ref": "Mic.2.10",
+              "role": "defining",
+              "note": "“Arise and go, for this is not the resting place, because of uncleanness that destroys, with a grievous destruction.”"
+            }
+          ],
+          "kin": [
+            "moral-uncleanness"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טְמָא",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "be defiled",
+      "summary": "The Peshitta's ܛܡܐ (ṭmā), in the New Testament only in its passive-reflexive stem, of those defiled under the law.",
+      "cognate_ids": [
+        "arc-tema"
+      ],
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "be defiled",
+          "senses": [
+            {
+              "gloss": "be defiled",
+              "definition": "Be made unclean, as those sprinkled with the ashes of the heifer had been.",
+              "evidence": [
+                {
+                  "ref": "Heb.9.13",
+                  "role": "defining",
+                  "note": "“The ashes of a heifer, sprinkled on those who were defiled (דּמֵתּטַמִאינ), sanctify them for the cleansing of their flesh”: the rite of Num 19."
+                }
+              ],
+              "kin": [
+                "be-unclean"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טַמְאָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "unclean",
+      "summary": "The Peshitta's ܛܡܐܐ (ṭamʾā), for ἀκάθαρτος, also for an unclean spirit.",
+      "cognate_ids": [
+        "arc-tema"
+      ],
+      "senses": [
+        {
+          "gloss": "unclean",
+          "definition": "Unclean as the law defined it, of food and of people; of a spirit; and of those kept out of the city of God.",
+          "evidence": [
+            {
+              "ref": "Act.10.14",
+              "role": "defining",
+              "note": "“I have never eaten anything common (מסַיַבֿ) or unclean (טמַא).”"
+            },
+            {
+              "ref": "Act.10.28"
+            },
+            {
+              "ref": "Act.11.8"
+            },
+            {
+              "ref": "Rom.14.14",
+              "note": "“Nothing is unclean of itself; but to him who reckons anything unclean, to him it is unclean.”"
+            },
+            {
+              "ref": "2Co.6.17",
+              "role": "defining",
+              "note": "“Do not come near the unclean (וַלטַמֵאא)”: Isa 52:11."
+            },
+            {
+              "ref": "1Co.7.14"
+            },
+            {
+              "ref": "Mrk.1.23",
+              "note": "“A man in whom was an unclean spirit (רֻוחָא טַמַאתָֿא).”"
+            },
+            {
+              "ref": "Rom.1.24"
+            },
+            {
+              "ref": "Rev.21.27",
+              "note": "“There shall not enter there anything unclean”: Isa 52:1."
+            },
+            {
+              "ref": "Rev.22.15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טַמְאוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "uncleanness",
+      "summary": "The Peshitta's ܛܡܐܘܬܐ (ṭamʾūtā).",
+      "cognate_ids": [
+        "arc-tema"
+      ],
+      "senses": [
+        {
+          "gloss": "uncleanness, pollution",
+          "definition": "Defilement of flesh and spirit; the pollution of what is sacrificed to idols.",
+          "evidence": [
+            {
+              "ref": "2Co.7.1",
+              "role": "defining",
+              "note": "“Let us cleanse ourselves from all uncleanness (טַמאוֻתָֿא) of flesh and spirit,” after the quotation of Isa 52:11."
+            },
+            {
+              "ref": "Act.15.20",
+              "note": "“The uncleanness of the sacrifice” (for the Greek's pollutions of idols)."
+            },
+            {
+              "ref": "2Pe.2.10"
+            },
+            {
+              "ref": "Rev.17.4"
+            }
+          ],
+          "kin": [
+            "moral-uncleanness"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-tema",
+      "lang": "arc",
+      "form": "טְמָא، טְמֵא",
+      "translit": "ṭǝmā, ṭǝmē",
+      "gloss": "be, become unclean; (pael) make unclean; (adjective) unclean",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums: the same verb and adjective in the same use. The Targum of Psa 106:39 has טְמִיאוּ for Hebrew וַיִּטְמְאוּ, of Mic 2:10 the pael, and of Num 5:2 טְמֵא נַפְשָׁא, the Hebrew טָמֵא לָנָפֶשׁ.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. טְמִי (alt. טְמָא)",
+          "note": "“= h. טָמֵא, to be, become unclean. Targ. Ps. CVI, 39 טְמִיאוּ … Pa. to make unclean … Targ. Mic. II, 10.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. טְמֵי",
+          "note": "“Unclean. Targ. Num. V, 2, a. fr. ט׳ נפשא.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "clean-and-unclean",
+      "statement": "Yahweh told Aaron that the priests were “to distinguish between the holy and the common, and between the unclean and the clean, and to teach the sons of Israel all the statutes” (Lev 10:10–11), and the food laws end, “to distinguish between the unclean and the clean” (Lev 11:47). The reason given is Israel's own separation: “I am Yahweh your God, who has separated you from the peoples; so you shall distinguish between the clean beast and the unclean … and you shall be holy to me” (Lev 20:24–26). When the priests stopped teaching the difference, Yahweh said they had profaned his holy things (Ezk 22:26), and in Ezekiel's temple the priests teach it again (Ezk 44:23). In Joppa Peter refused to eat “anything common or unclean”, and then said, “God has shown me that I should not call any man common or unclean” (Act 10:14, 28); Paul writes, “nothing is unclean of itself” (Rom 14:14). From the verses: the clean and unclean animals taught Israel that it was separated from the nations to Yahweh, and when the nations were called in Christ, that sign of separation was laid aside, while the separation it taught remains.",
+      "evidence": [
+        {
+          "ref": "Lev.10.10"
+        },
+        {
+          "ref": "Lev.10.11"
+        },
+        {
+          "ref": "Lev.11.47"
+        },
+        {
+          "ref": "Lev.20.24",
+          "to": "Lev.20.26"
+        },
+        {
+          "ref": "Ezk.22.26"
+        },
+        {
+          "ref": "Ezk.44.23"
+        },
+        {
+          "ref": "Act.10.14"
+        },
+        {
+          "ref": "Act.10.28"
+        },
+        {
+          "ref": "Rom.14.14"
+        }
+      ]
+    },
+    {
+      "topic": "death-defiles",
+      "statement": "The longest uncleanness of the law came from death: “He who touches the dead body of any soul of man shall be unclean seven days” (Num 19:11), and so did anyone who touched a bone or a grave, or entered a tent where someone died (Num 19:14–16). The dead person is called a soul: men “unclean by the soul of a man” could not keep the Passover (Num 9:6), and Haggai asks about “one unclean of a soul” (Hag 2:13). Priests and Nazirites were not to make themselves unclean for the dead (Lev 21:1, 11; Num 6:6–7), and one who would not be cleansed “has defiled the sanctuary of Yahweh” (Num 19:13, 20). The cleansing was water mixed with the ashes of a red heifer burnt outside the camp (Num 19:9, 17–19). Hebrews takes this up: “if … the ashes of a heifer, sprinkling the defiled, sanctify for the cleansing of the flesh, how much more will the blood of Christ … cleanse your conscience from dead works to serve the living God” (Heb 9:13–14). From the verses: the soul is the person who dies, death is the uncleanness furthest from the living God, and the rite of the heifer foreshadowed the cleansing that Christ's sacrifice gives.",
+      "evidence": [
+        {
+          "ref": "Num.19.11"
+        },
+        {
+          "ref": "Num.19.14",
+          "to": "Num.19.16"
+        },
+        {
+          "ref": "Num.9.6"
+        },
+        {
+          "ref": "Hag.2.13"
+        },
+        {
+          "ref": "Lev.21.1"
+        },
+        {
+          "ref": "Lev.21.11"
+        },
+        {
+          "ref": "Num.6.6",
+          "to": "Num.6.7"
+        },
+        {
+          "ref": "Num.19.13"
+        },
+        {
+          "ref": "Num.19.20"
+        },
+        {
+          "ref": "Num.19.9"
+        },
+        {
+          "ref": "Heb.9.13",
+          "to": "Heb.9.14"
+        }
+      ]
+    },
+    {
+      "topic": "nature-of-man",
+      "statement": "Much of what the law calls unclean is no one's wrongdoing: a woman who has borne a child “shall be unclean seven days”, and at the end she brings a burnt offering and a sin offering, and “the priest shall make atonement for her, and she shall be clean” (Lev 12:2, 6–8); issues of the body also need a sin offering and atonement (Lev 15:15, 30). Mary brought this offering after Jesus was born, “when the days of their purification according to the law of Moses were fulfilled” (Luk 2:22–24). Job asks, “Who can bring a clean thing out of an unclean? Not one” (Job 14:4), of “man born of a woman” (Job 14:1); Isaiah confesses, “we have all become like the unclean” (Isa 64:5), and before Yahweh's glory, “I am a man unclean of lips” (Isa 6:5); the Preacher sees one event, death, coming “to the clean and to the unclean” (Ecc 9:2). From the verses: the flesh born of woman is itself unclean and mortal, and cannot make itself clean; cleanness comes from Yahweh, who touched Isaiah's lips and took away his iniquity (Isa 6:7), and Jesus was born into that nature, under the law that required the offering.",
+      "evidence": [
+        {
+          "ref": "Lev.12.2"
+        },
+        {
+          "ref": "Lev.12.6",
+          "to": "Lev.12.8"
+        },
+        {
+          "ref": "Lev.15.15"
+        },
+        {
+          "ref": "Lev.15.30"
+        },
+        {
+          "ref": "Luk.2.22",
+          "to": "Luk.2.24"
+        },
+        {
+          "ref": "Job.14.1"
+        },
+        {
+          "ref": "Job.14.4"
+        },
+        {
+          "ref": "Isa.64.5"
+        },
+        {
+          "ref": "Isa.6.5"
+        },
+        {
+          "ref": "Isa.6.7"
+        },
+        {
+          "ref": "Ecc.9.2"
+        }
+      ]
+    },
+    {
+      "topic": "defiled-land",
+      "statement": "Yahweh warned Israel not to defile themselves by the nations' sexual sins, “for by all these the nations I am casting out before you defiled themselves, and the land became unclean, and I visited its iniquity on it, and the land vomited out its inhabitants” (Lev 18:24–25, 27–28). Blood and an unburied hanged man defile it too, because Yahweh dwells in it: “you shall not defile the land in which you live, in the midst of which I dwell” (Num 35:33–34; Deu 21:23). Israel did the same: “you came in and defiled my land” (Jer 2:7); “they shed innocent blood … and the land was polluted with blood, and they became unclean by their works” (Psa 106:38–39). Ezekiel says, “when the house of Israel dwelt in their own land, they defiled it by their way … so I poured out my fury on them … and scattered them among the nations” (Ezk 36:17–19). From the verses: the land is Yahweh's dwelling, and the exile was the land vomiting out a people who had defiled it, as it had the Canaanites.",
+      "evidence": [
+        {
+          "ref": "Lev.18.24",
+          "to": "Lev.18.28"
+        },
+        {
+          "ref": "Num.35.33",
+          "to": "Num.35.34"
+        },
+        {
+          "ref": "Deu.21.23"
+        },
+        {
+          "ref": "Jer.2.7"
+        },
+        {
+          "ref": "Psa.106.38",
+          "to": "Psa.106.39"
+        },
+        {
+          "ref": "Ezk.36.17",
+          "to": "Ezk.36.19"
+        }
+      ]
+    },
+    {
+      "topic": "cleansing-in-the-kingdom",
+      "statement": "After the exile Yahweh promises, “I will sprinkle clean water on you, and you will be clean from all your uncleannesses … and I will give you a new heart” and “I will save you from all your uncleannesses” (Ezk 36:25–26, 29); “they will no more defile themselves with their idols … and I will cleanse them, and they will be my people, and I will be their God” with David their king over them (Ezk 37:23–24). In that day “a fountain will be opened to the house of David and the inhabitants of Jerusalem for sin and for impurity”, and Yahweh will cause “the prophets and the spirit of uncleanness to pass from the land” (Zec 13:1–2). Zion is told, “there shall no more come into you the uncircumcised and the unclean” (Isa 52:1), and the way of holiness is one “the unclean shall not pass over” (Isa 35:8); John sees the city into which “there shall not enter anything unclean” (Rev 21:27). From the verses: Israel will be cleansed in its own land under the son of David, and Jerusalem made holy, when the kingdom of God is set up on the earth.",
+      "evidence": [
+        {
+          "ref": "Ezk.36.25",
+          "to": "Ezk.36.26"
+        },
+        {
+          "ref": "Ezk.36.29"
+        },
+        {
+          "ref": "Ezk.37.23",
+          "to": "Ezk.37.24"
+        },
+        {
+          "ref": "Zec.13.1",
+          "to": "Zec.13.2"
+        },
+        {
+          "ref": "Isa.52.1"
+        },
+        {
+          "ref": "Isa.35.8"
+        },
+        {
+          "ref": "Rev.21.27"
+        }
+      ]
+    },
+    {
+      "topic": "come-out-and-be-separate",
+      "statement": "Isaiah calls those who carry Yahweh's vessels out of Babylon: “Depart, depart, go out from there, touch no unclean thing; go out from her midst, purify yourselves” (Isa 52:11). Paul quotes it to the believers at Corinth, against being yoked with unbelievers and joining the temple of God with idols: “Come out from their midst and be separate, says the Lord, and touch no unclean thing, and I will receive you” (2Co 6:14–17), and concludes, “let us cleanse ourselves from all uncleanness of flesh and spirit, perfecting holiness in the fear of God” (2Co 7:1). The returned exiles likewise “separated themselves from the uncleanness of the nations of the land to seek Yahweh” (Ezr 6:21). From the verses: those whom God receives as his sons and daughters come out from the world's idolatry and keep themselves from its uncleanness.",
+      "evidence": [
+        {
+          "ref": "Isa.52.11"
+        },
+        {
+          "ref": "2Co.6.14",
+          "to": "2Co.6.18"
+        },
+        {
+          "ref": "2Co.7.1"
+        },
+        {
+          "ref": "Ezr.6.21"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key טמא (BDB i.ay.aa as the root heading). Keys: i.ay.aa verb, i.ay.ab adjective, i.ay.ac טֻמְאָה. i.ay.ad (טָמְאָה, Mic 2:10 only) is given no bdb key: the database counts every verb token under it by spelling (205), so naming it would credit the noun with the verb's uses; the word cites Mic 2:10 alone. i.ay.aa and i.ay.ab also share 43 tokens by spelling (טָמֵא as qal perfect 3ms or adjective, e.g. Lev 13:11, 13:45; Num 19:20), so their use counts overlap. Deu 24:4 הֻטַּמָּאָה is a hothpaal, the passive of the hithpael; the lexicon’s stem list (crates/haqor-core/src/haqor_lexicon.rs STEMS, and the app’s label map in haqor_lexicon_view.dart) has no hothpaal, so it is entered as a sense of the hithpael. Move it to its own stem if one is added. No proper names from the root. No Biblical Aramaic word. Cognates: only Aramaic and Syriac are recorded. Arabic: no طمأ in Lane's vendored text; Lane's طمى / طمو (p. 1882, under طيو in the jsonl), “water rose high, filled the channel”, ends in y/w, not hamza, and has nothing of uncleanness, so it is not recorded; a reported Arabic ṭamiʾa “silted up” (a lead from another lexicon) was not found in Lane and is unverified. No Akkadian candidate in Oracc shares the meaning (ṭēmu “report, mind” and ṭamû “spin” are unrelated). Not consulted: Payne Smith and Brockelmann for the Syriac; CAL for Aramaic beyond Jastrow; Ge'ez (Dillmann, Leslau); Ugaritic (DULAT). The Peshitta often uses ܛܢܦ and ܣܝܒ (other roots) for “unclean, defile” (e.g. Mrk 7:15; Mat 23:27, where its word is not this root), so the Syriac words cite only verses where SEDRA tags lexemes 1249–1251 (root 738 YMA: 1249 YMA “unclean, be considered”, 1250 YMAA “unclean; impure”, 1251 YMAOTA “uncleanness; impurity; pollution”). Rom 1:24 טַמָאתָֿא is SEDRA's 1250 (unclean) modifying “desires”. Greek: Isa 52:11's טָמֵא is unaligned in MACULA though the Septuagint's ἀκαθάρτου stands there and Paul quotes it (2Co 6:17). Open questions for review: (1) the nature-of-man doctrine's wording on Jesus' birth into the unclean nature; (2) the Mic 2:10 noun may better be read as the qal infinitive and moved to the verb."
+}
