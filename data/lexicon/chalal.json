@@ -1,0 +1,2241 @@
+{
+  "id": "chalal",
+  "root": "חלל",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "holiness",
+    "profane",
+    "sabbath",
+    "name",
+    "beginning",
+    "death",
+    "war",
+    "music",
+    "building"
+  ],
+  "gloss": "profane, make common; begin; pierce, wound; the slain",
+  "summary": "One spelling holding two older roots. With ḥ (Arabic ḥalla “untie; become free, lawful”, Ugaritic ḥll) it is to loose a thing from holiness and make it common: to profane Yahweh's name, his sabbaths, his sanctuary and holy things, a covenant or one's word, and, of a vineyard, to bring its fruit into common use; its noun חֹל is the common set against the holy, and חָלִילָה “to the profane!” is the oath “far be it!”. The hiphil “begin” (with its noun תְּחִלָּה) is the commonest single use, though how it comes from the root is not shown. With ḫ (Arabic ḫalla “pierce, transfix”) it is to pierce: the noun חָלָל is one pierced, the slain of the sword lying on the field or in the grave, and the polal says of Yahweh's servant, “he was pierced for our transgressions” (Isa 53:5); the hole, the window and the bored pipe, the flute, are other words of the spelling.",
+  "words": [
+    {
+      "lemma": "חָלַל",
+      "pos": "verb",
+      "gloss": "profane, make common; begin; pierce; play the pipe",
+      "bdb": [
+        "h.ct.aa"
+      ],
+      "summary": "About 140 times in eight stems. The piel and niphal are “profane, be profaned”, from the ḥ root: to treat what Yahweh has made holy as common. The hiphil is almost always “begin”, twice “profane” (Num 30:3; Ezk 39:7), and the hophal “it was begun” once. The poel, polal, one piel, one pual and one qal are “pierce, wound”, from the ḫ root, and one piel and one qal participle are “play the pipe”, from the noun חָלִיל. BDB files the same tokens under three keys (h.ct.aa, h.cs.aa, h.cs.af); this word names one.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "profane, defile, dishonour; make common (a vineyard); pierce; play the pipe",
+          "senses": [
+            {
+              "id": "profane-holy",
+              "gloss": "profane (what is holy)",
+              "definition": "To treat as common what Yahweh has made holy and set apart for himself: his name, his sabbaths, his sanctuary and altar, the holy things given to him; the opposite of sanctifying (קִדֵּשׁ) it.",
+              "cognate_ids": [
+                "ar-halla",
+                "uga-hll",
+                "arc-chalal",
+                "syc-hll",
+                "akk-elelu"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.22.32",
+                  "role": "defining",
+                  "note": "“You shall not profane (תְחַלְּלוּ) the name of my holiness, but I will be sanctified (וְנִקְדַּשְׁתִּי) in the midst of the sons of Israel”: profaning is the opposite of hallowing."
+                },
+                {
+                  "ref": "Ezk.22.26",
+                  "role": "defining",
+                  "note": "“Her priests … have profaned my holy things; between holy and common (בֵּין קֹדֶשׁ לְחֹל) they have not separated”: to profane is to erase the line between the holy and the common."
+                },
+                {
+                  "ref": "Exo.31.14",
+                  "role": "defining",
+                  "note": "“Keep the sabbath, for it is holy to you; every one who profanes it (מְחַלְלֶיהָ) shall surely be put to death; whoever does any work on it…”: the holy day profaned by common work."
+                },
+                {
+                  "ref": "Lev.19.12",
+                  "note": "Swearing falsely by his name profanes the name of God."
+                },
+                {
+                  "ref": "Lev.18.21",
+                  "note": "Giving one's seed to Molech profanes the name of God."
+                },
+                {
+                  "ref": "Lev.20.3",
+                  "note": "“To make my sanctuary unclean and to profane my holy name.”"
+                },
+                {
+                  "ref": "Lev.21.6",
+                  "note": "The priests “shall be holy to their God and not profane the name of their God”."
+                },
+                {
+                  "ref": "Lev.22.2"
+                },
+                {
+                  "ref": "Lev.19.8",
+                  "note": "Eating the peace offering on the third day “profaned the holy thing of Yahweh”."
+                },
+                {
+                  "ref": "Lev.21.12",
+                  "note": "The high priest shall not go out of the sanctuary “nor profane the sanctuary of his God”."
+                },
+                {
+                  "ref": "Lev.21.23",
+                  "note": "A priest with a blemish shall not approach the altar, “that he not profane my sanctuaries”."
+                },
+                {
+                  "ref": "Lev.22.15"
+                },
+                {
+                  "ref": "Num.18.32"
+                },
+                {
+                  "ref": "Exo.20.25",
+                  "role": "defining",
+                  "note": "“If you lift up your tool on it, you have profaned it (וַתְּחַלְלֶהָ)”: an altar of cut stone is the work of man's hands made common."
+                },
+                {
+                  "ref": "Isa.56.2",
+                  "note": "Blessed is the man “keeping the sabbath from profaning it”."
+                },
+                {
+                  "ref": "Isa.56.6",
+                  "note": "The foreigners who join themselves to Yahweh, keeping the sabbath from profaning it."
+                },
+                {
+                  "ref": "Ezk.20.13",
+                  "note": "“My sabbaths they greatly profaned”, in the wilderness (also Ezk 20:16, 21, 24)."
+                },
+                {
+                  "ref": "Ezk.20.16"
+                },
+                {
+                  "ref": "Ezk.20.21"
+                },
+                {
+                  "ref": "Ezk.20.24"
+                },
+                {
+                  "ref": "Ezk.22.8",
+                  "note": "“My holy things you have despised (בָּזִית), and my sabbaths you have profaned.”"
+                },
+                {
+                  "ref": "Ezk.23.38",
+                  "note": "“They made my sanctuary unclean (טִמְּאוּ) … and my sabbaths they profaned.”"
+                },
+                {
+                  "ref": "Ezk.23.39"
+                },
+                {
+                  "ref": "Neh.13.17",
+                  "note": "Treading winepresses and trading on the sabbath is “profaning the sabbath day”."
+                },
+                {
+                  "ref": "Neh.13.18"
+                },
+                {
+                  "ref": "Ezk.20.39",
+                  "note": "“The name of my holiness you shall no more profane with your gifts and your idols.”"
+                },
+                {
+                  "ref": "Ezk.36.20",
+                  "note": "Scattered among the nations for their sins, Israel profaned his name, for men said, “These are the people of Yahweh, and they have gone out of his land.”"
+                },
+                {
+                  "ref": "Ezk.36.21"
+                },
+                {
+                  "ref": "Ezk.36.22"
+                },
+                {
+                  "ref": "Ezk.36.23",
+                  "role": "defining",
+                  "note": "“I will sanctify my great name, which is profaned among the nations, which you have profaned in their midst.”"
+                },
+                {
+                  "ref": "Amo.2.7",
+                  "note": "A man and his father going in to the same girl, “to profane the name of my holiness”."
+                },
+                {
+                  "ref": "Jer.34.16",
+                  "note": "Taking back the slaves they had set free under oath: “you turned and profaned my name”."
+                },
+                {
+                  "ref": "Ezk.13.19",
+                  "note": "“You have profaned me among my people for handfuls of barley”: lying prophetesses."
+                },
+                {
+                  "ref": "Ezk.44.7",
+                  "note": "Bringing uncircumcised foreigners into the sanctuary “to profane it, my house”."
+                },
+                {
+                  "ref": "Zep.3.4",
+                  "note": "“Her priests have profaned the holy; they have done violence to the law.”"
+                },
+                {
+                  "ref": "Mal.1.12",
+                  "note": "Saying “the table of the Lord is defiled” and offering the blind and the lame profanes his name."
+                },
+                {
+                  "ref": "Mal.2.11",
+                  "note": "“Judah has profaned the holiness of Yahweh, which he loves, and has married the daughter of a foreign god.”"
+                },
+                {
+                  "ref": "Psa.74.7",
+                  "note": "The enemy “profaned the dwelling place of your name to the ground”."
+                },
+                {
+                  "ref": "Ezk.7.22",
+                  "note": "Yahweh turns his face, and robbers “profane my treasured place”."
+                },
+                {
+                  "ref": "Ezk.24.21",
+                  "note": "“Behold, I am profaning my sanctuary, the pride of your strength”: Yahweh himself gives it up to the Babylonians."
+                },
+                {
+                  "ref": "Dan.11.31",
+                  "note": "“They shall profane the sanctuary, the fortress, and take away the continual offering, and set up the abomination that makes desolate.”"
+                },
+                {
+                  "ref": "Mat.12.5",
+                  "note": "The Peshitta: the priests in the temple “profane (מַחלִינ) the sabbath and are guiltless”, the Syriac verb of the root."
+                }
+              ],
+              "kin": [
+                "common"
+              ]
+            },
+            {
+              "id": "profane-covenant",
+              "gloss": "violate (a covenant, statutes)",
+              "definition": "To break a covenant or statutes, treating as nothing what was bound by oath.",
+              "cognate_ids": [
+                "ar-halla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.89.35",
+                  "role": "defining",
+                  "note": "“I will not profane my covenant (לֹא אֲחַלֵּל בְּרִיתִי), nor change what has gone out of my lips”: parallel “change” (שִׁנָּה) the word spoken."
+                },
+                {
+                  "ref": "Psa.89.32",
+                  "role": "defining",
+                  "note": "“If they profane my statutes and do not keep (יִשְׁמֹרוּ) my commandments.”"
+                },
+                {
+                  "ref": "Mal.2.10",
+                  "role": "defining",
+                  "note": "“Why do we deal treacherously (נִבְגַּד) a man against his brother, to profane the covenant of our fathers?”"
+                },
+                {
+                  "ref": "Psa.55.21",
+                  "note": "“He has put out his hand against those at peace with him; he has profaned his covenant.”"
+                }
+              ]
+            },
+            {
+              "id": "profane-dishonour",
+              "gloss": "dishonour, bring down (from a holy or high place)",
+              "definition": "Of Yahweh: to take from persons or things the holy or honoured standing he gave them and give them over as common: the princes of the sanctuary, his inheritance, the kingdom, the crown, the pride of Tyre.",
+              "cognate_ids": [
+                "ar-halla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.43.28",
+                  "role": "defining",
+                  "note": "“I profaned the princes of the sanctuary (שָׂרֵי קֹדֶשׁ), and gave Jacob to destruction.”"
+                },
+                {
+                  "ref": "Isa.47.6",
+                  "role": "defining",
+                  "note": "“I was angry with my people; I profaned my inheritance and gave them into your hand.”"
+                },
+                {
+                  "ref": "Lam.2.2",
+                  "note": "“He has brought them down to the ground; he has profaned the kingdom and its princes.”"
+                },
+                {
+                  "ref": "Psa.89.40",
+                  "note": "“You have renounced the covenant of your servant; you have profaned his crown to the ground.”"
+                },
+                {
+                  "ref": "Isa.23.9",
+                  "note": "Yahweh purposed it against Tyre “to profane the pride of all glory, to bring into contempt all the honoured of the earth”."
+                },
+                {
+                  "ref": "Ezk.28.7",
+                  "note": "Strangers “shall profane your splendour”."
+                },
+                {
+                  "ref": "Ezk.28.16",
+                  "role": "defining",
+                  "note": "To the covering cherub, the king of Tyre: “I cast you as profane (וָאֶחַלֶּלְךָ) from the mountain of God.”"
+                },
+                {
+                  "ref": "Ezk.28.18",
+                  "note": "“By the multitude of your iniquities … you profaned your sanctuaries.”"
+                }
+              ]
+            },
+            {
+              "id": "profane-defile",
+              "gloss": "defile (a bed, a daughter, seed, the land)",
+              "definition": "To degrade what should be kept honourable, especially by sexual sin: a father's bed, a daughter given to harlotry, a priest's seed, the land filled with idols.",
+              "cognate_ids": [
+                "ar-halla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.49.4",
+                  "role": "defining",
+                  "note": "Reuben “went up to your father's bed; then you profaned it (חִלַּלְתָּ)”."
+                },
+                {
+                  "ref": "1Ch.5.1",
+                  "note": "“Because he profaned his father's couch, his birthright was given to the sons of Joseph.”"
+                },
+                {
+                  "ref": "Lev.19.29",
+                  "role": "defining",
+                  "note": "“Do not profane your daughter by making her a harlot.”"
+                },
+                {
+                  "ref": "Lev.21.9",
+                  "note": "The priest's daughter who plays the harlot “profanes (מְחַלֶּלֶת) her father”."
+                },
+                {
+                  "ref": "Lev.21.15",
+                  "note": "The high priest marries a virgin of his people, “that he not profane his seed among his people”."
+                },
+                {
+                  "ref": "Jer.16.18",
+                  "note": "“Because they profaned my land with the carcasses of their detestable things.”"
+                }
+              ]
+            },
+            {
+              "id": "make-common-vineyard",
+              "gloss": "bring into common use (a vineyard)",
+              "definition": "Of a new vineyard: to begin to eat its fruit as ordinary food, once the years in which its fruit was forbidden and then holy to Yahweh were past.",
+              "cognate_ids": [
+                "ar-halla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.20.6",
+                  "role": "defining",
+                  "note": "“Who has planted a vineyard and not made it common (חִלְּלוֹ)? Let him go home, lest he die in the battle and another make it common (יְחַלְּלֶנּוּ).”"
+                },
+                {
+                  "ref": "Lev.19.24",
+                  "role": "defining",
+                  "note": "The law behind it: in the fourth year all the fruit is “holy (קֹדֶשׁ), praise to Yahweh”; in the fifth “you shall eat its fruit” (Lev 19:25). The fruit passes from holy to common."
+                },
+                {
+                  "ref": "Lev.19.25"
+                },
+                {
+                  "ref": "Deu.28.30",
+                  "note": "Under the curse: “you shall plant a vineyard and not make it common”."
+                },
+                {
+                  "ref": "Jer.31.5",
+                  "note": "In the restoration: “you shall again plant vineyards on the mountains of Samaria; the planters shall plant and make them common (וְחִלֵּלוּ)”."
+                }
+              ]
+            },
+            {
+              "id": "piel-pierce",
+              "gloss": "pierce, wound",
+              "definition": "To pierce a man to death: the participle “those who pierce you”, parallel to “those who kill you”.",
+              "cognate_ids": [
+                "ar-khalla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.28.9",
+                  "role": "defining",
+                  "note": "“Will you still say ‘I am God’ before him who kills you (הֹרְגֶךָ)? You are man and not God in the hand of those who pierce you (מְחַלְלֶיךָ).”"
+                }
+              ],
+              "kin": [
+                "slain"
+              ]
+            },
+            {
+              "id": "piel-pipe",
+              "gloss": "play the pipe",
+              "definition": "To play the flute, חָלִיל.",
+              "cognate_ids": [
+                "ar-khalla"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Ki.1.40",
+                  "role": "defining",
+                  "note": "At Solomon's anointing “the people were piping with pipes (מְחַלְּלִים בַּחֲלִלִים) and rejoicing with great joy, so that the earth split with their sound”."
+                }
+              ],
+              "kin": [
+                "flute"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be profaned; profane oneself",
+          "senses": [
+            {
+              "gloss": "be profaned, profane oneself",
+              "definition": "Of Yahweh's name, his sanctuary, or Yahweh himself: to be treated as common in men's eyes; of a priest or a priest's daughter: to make oneself common.",
+              "cognate_ids": [
+                "ar-halla",
+                "uga-hll"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.20.9",
+                  "role": "defining",
+                  "note": "“I acted for my name's sake, that it should not be profaned (לְבִלְתִּי הֵחֵל) in the sight of the nations” (also Ezk 20:14, 22)."
+                },
+                {
+                  "ref": "Ezk.20.14"
+                },
+                {
+                  "ref": "Ezk.20.22"
+                },
+                {
+                  "ref": "Isa.48.11",
+                  "role": "defining",
+                  "note": "“For my own sake, for my own sake I will do it, for how should it be profaned (יֵחָל)? My glory I will not give to another.”"
+                },
+                {
+                  "ref": "Ezk.22.26",
+                  "note": "“…and I am profaned (וָאֵחַל) among them.”"
+                },
+                {
+                  "ref": "Ezk.22.16",
+                  "note": "“You shall be profaned in yourself in the sight of the nations, and you shall know that I am Yahweh.”"
+                },
+                {
+                  "ref": "Ezk.25.3",
+                  "note": "Ammon said “Aha!” over Yahweh's sanctuary “when it was profaned”."
+                },
+                {
+                  "ref": "Ezk.7.24",
+                  "note": "“Their holy places shall be profaned.”"
+                },
+                {
+                  "ref": "Lev.21.4",
+                  "note": "A priest “shall not make himself unclean … to profane himself (לְהֵחַלּוֹ)”."
+                },
+                {
+                  "ref": "Lev.21.9",
+                  "role": "defining",
+                  "note": "“The daughter of a priest, if she profanes herself (תֵחֵל) by playing the harlot, profanes her father.”"
+                }
+              ],
+              "kin": [
+                "profaned-woman"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "begin; (rarely) let be profaned, break (one's word)",
+          "senses": [
+            {
+              "id": "begin",
+              "gloss": "begin, start",
+              "definition": "To begin to do something, usually with an infinitive: the first act of what goes on, often set against finishing (כִּלָּה).",
+              "evidence": [
+                {
+                  "ref": "1Sa.3.12",
+                  "role": "defining",
+                  "note": "“I will perform against Eli all that I have spoken … beginning and finishing (הָחֵל וְכַלֵּה).”"
+                },
+                {
+                  "ref": "1Ch.27.24",
+                  "role": "defining",
+                  "note": "“Joab began to count, but did not finish (וְלֹא כִלָּה).”"
+                },
+                {
+                  "ref": "2Ch.29.17",
+                  "role": "defining",
+                  "note": "“They began to sanctify on the first of the first month … and on the sixteenth day they finished (כִּלּוּ).”"
+                },
+                {
+                  "ref": "Gen.6.1",
+                  "note": "“When man began to multiply on the face of the ground.”"
+                },
+                {
+                  "ref": "Gen.9.20",
+                  "note": "“Noah began to be a man of the soil, and planted a vineyard.”"
+                },
+                {
+                  "ref": "Gen.10.8",
+                  "note": "Nimrod “began to be a mighty one in the earth” (1Ch 1:10)."
+                },
+                {
+                  "ref": "Gen.11.6",
+                  "note": "At Babel: “this is what they begin to do.”"
+                },
+                {
+                  "ref": "Gen.41.54",
+                  "note": "“The seven years of famine began to come, as Joseph had said.”"
+                },
+                {
+                  "ref": "Gen.44.12",
+                  "note": "“He searched, beginning with the eldest and ending (כִלָּה) with the youngest.”"
+                },
+                {
+                  "ref": "Num.17.11",
+                  "note": "“The plague has begun.”"
+                },
+                {
+                  "ref": "Deu.2.31",
+                  "note": "“See, I have begun to give Sihon and his land before you; begin to possess.”"
+                },
+                {
+                  "ref": "Deu.3.24",
+                  "note": "“You have begun to show your servant your greatness and your strong hand.”"
+                },
+                {
+                  "ref": "Deu.16.9",
+                  "note": "Counting seven weeks “from when you begin to put the sickle to the standing grain”."
+                },
+                {
+                  "ref": "Jos.3.7",
+                  "note": "“This day I will begin to make you great in the eyes of all Israel.”"
+                },
+                {
+                  "ref": "Jdg.13.5",
+                  "note": "Samson “shall begin to save Israel from the hand of the Philistines”."
+                },
+                {
+                  "ref": "Jdg.13.25"
+                },
+                {
+                  "ref": "Jdg.16.22",
+                  "note": "“The hair of his head began to grow again after it had been shaved.”"
+                },
+                {
+                  "ref": "1Sa.14.35",
+                  "note": "“It was the first altar that he built to Yahweh”: literally “he began to build it”."
+                },
+                {
+                  "ref": "2Ki.10.32",
+                  "note": "“In those days Yahweh began to cut off from Israel.”"
+                },
+                {
+                  "ref": "Jer.25.29",
+                  "note": "“I am beginning to work evil at the city that is called by my name.”"
+                },
+                {
+                  "ref": "Ezk.9.6",
+                  "note": "“Begin at my sanctuary”; and they began with the elders."
+                },
+                {
+                  "ref": "Jon.3.4",
+                  "note": "“Jonah began to go into the city a day's journey.”"
+                },
+                {
+                  "ref": "Ezr.3.6"
+                },
+                {
+                  "ref": "2Ch.3.1",
+                  "note": "“Solomon began to build the house of Yahweh in Jerusalem on mount Moriah.”"
+                },
+                {
+                  "ref": "2Ch.34.3",
+                  "note": "Josiah “began to seek the God of David his father … and began to purge Judah and Jerusalem”."
+                }
+              ],
+              "kin": [
+                "beginning"
+              ]
+            },
+            {
+              "id": "hiphil-profane-word",
+              "gloss": "break (one's word); let (the name) be profaned",
+              "definition": "To make common what is bound: a vow or oath spoken to Yahweh, treated as not binding; and Yahweh's holy name, which he will no longer let be profaned.",
+              "cognate_ids": [
+                "ar-halla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Num.30.3",
+                  "role": "defining",
+                  "note": "“When a man vows a vow to Yahweh or swears an oath to bind his soul with a bond, he shall not profane (לֹא יַחֵל) his word; he shall do according to all that goes out of his mouth.”"
+                },
+                {
+                  "ref": "Ezk.39.7",
+                  "role": "defining",
+                  "note": "“My holy name I will make known among my people Israel, and I will not let my holy name be profaned (וְלֹא אַחֵל) any more.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be begun",
+          "senses": [
+            {
+              "gloss": "be begun",
+              "definition": "Impersonal passive of “begin”: it was begun, that is, men began.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.26",
+                  "role": "defining",
+                  "note": "In the days of Enosh “then it was begun (הוּחַל) to call on the name of Yahweh”."
+                }
+              ],
+              "kin": [
+                "beginning"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "be pierced; (participle) piper",
+          "senses": [
+            {
+              "id": "qal-pierced",
+              "gloss": "be pierced, wounded (the heart)",
+              "definition": "Of the heart: to be pierced within, in affliction.",
+              "cognate_ids": [
+                "ar-khalla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.109.22",
+                  "role": "defining",
+                  "note": "“I am poor and needy, and my heart is pierced (חָלַל) within me.”"
+                }
+              ],
+              "kin": [
+                "slain"
+              ]
+            },
+            {
+              "gloss": "piper",
+              "definition": "The participle, beside singers: those who play the pipe; or, if from חוּל, those who dance.",
+              "evidence": [
+                {
+                  "ref": "Psa.87.7",
+                  "role": "defining",
+                  "note": "“Singers as well as pipers (כְּחֹלְלִים): all my springs are in you.”"
+                }
+              ],
+              "kin": [
+                "flute"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "pierce",
+          "senses": [
+            {
+              "gloss": "pierce (the sea monster)",
+              "definition": "Of Yahweh's arm and hand: to pierce through the monster of the sea, Rahab, the fleeing serpent.",
+              "cognate_ids": [
+                "ar-khalla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.51.9",
+                  "role": "defining",
+                  "note": "“Was it not you who hewed (הַמַּחְצֶבֶת) Rahab, who pierced (מְחוֹלֶלֶת) the dragon?”: Egypt at the sea, as the next verse says."
+                },
+                {
+                  "ref": "Job.26.13",
+                  "role": "defining",
+                  "note": "“His hand has pierced (חֹלֲלָה) the fleeing serpent.”"
+                }
+              ],
+              "kin": [
+                "slain"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be pierced; be profaned",
+          "senses": [
+            {
+              "gloss": "pierced (by the sword)",
+              "definition": "The participle: those pierced through by the sword.",
+              "cognate_ids": [
+                "ar-khalla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.32.26",
+                  "role": "defining",
+                  "note": "Meshech and Tubal, “all of them uncircumcised, pierced (מְחֻלְלֵי) by the sword”, as the חַלְלֵי חֶרֶב of the same chapter."
+                }
+              ],
+              "kin": [
+                "slain"
+              ]
+            },
+            {
+              "gloss": "profaned",
+              "definition": "The participle: Yahweh's name as profaned among the nations.",
+              "cognate_ids": [
+                "ar-halla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.36.23",
+                  "role": "defining",
+                  "note": "“My great name, which is profaned (הַמְחֻלָּל) among the nations.”"
+                }
+              ],
+              "kin": [
+                "profaned-woman"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polal",
+          "gloss": "be pierced",
+          "senses": [
+            {
+              "id": "servant-pierced",
+              "gloss": "be pierced (to death)",
+              "definition": "Of Yahweh's servant: pierced, wounded to death, for the transgressions of others; parallel “crushed”.",
+              "cognate_ids": [
+                "ar-khalla"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.53.5",
+                  "role": "defining",
+                  "note": "“He was pierced (מְחֹלָל) for our transgressions, crushed (מְדֻכָּא) for our iniquities.”"
+                },
+                {
+                  "ref": "Isa.53.8",
+                  "note": "“He was cut off from the land of the living.”"
+                },
+                {
+                  "ref": "Isa.53.12",
+                  "note": "“He poured out his soul to death.”"
+                },
+                {
+                  "ref": "1Pe.2.24",
+                  "note": "Peter applies the same verse to Jesus: “by whose stripes you were healed”."
+                }
+              ],
+              "kin": [
+                "slain"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βεβηλόω",
+          "gloss": "profane, desecrate",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.21.9 תֵחֵל → βεβηλωθῇ, מְחַלֶּלֶת → βεβηλοῖ; Num.30.3 → βεβηλώσει; Ezk.22.26 → ἐβεβήλουν; Ezk.36.23 → βεβηλωθὲν, ἐβεβηλώσατε; Mal.2.10 → βεβηλῶσαι"
+            },
+            {
+              "ref": "Mat.12.5",
+              "role": "defining",
+              "note": "“The priests in the temple profane (βεβηλοῦσιν) the sabbath and are guiltless”; and “something greater than the temple is here” (Mat 12:6)."
+            },
+            {
+              "ref": "Act.24.6",
+              "note": "Paul accused of trying “to profane (βεβηλῶσαι) the temple”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "טִמֵּא",
+            "note": "“Make unclean”: beside profaning the sanctuary and the sabbath.",
+            "evidence": [
+              {
+                "ref": "Ezk.23.38",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.20.3"
+              },
+              {
+                "ref": "Lev.21.4"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּזָה",
+            "note": "“Despise”: holy things despised, sabbaths profaned.",
+            "evidence": [
+              {
+                "ref": "Ezk.22.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Mal.1.12"
+              }
+            ]
+          },
+          {
+            "lemma": "הָרַג",
+            "note": "“Kill”: those who kill, those who pierce.",
+            "evidence": [
+              {
+                "ref": "Ezk.28.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "דָּכָא",
+            "note": "“Crush”: pierced and crushed.",
+            "evidence": [
+              {
+                "ref": "Isa.53.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קִדֵּשׁ",
+            "note": "“Sanctify, hallow”: Yahweh sanctifies the name Israel profaned.",
+            "evidence": [
+              {
+                "ref": "Lev.22.32",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.36.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.56.6"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַר",
+            "note": "“Keep”: the sabbath, the commandments.",
+            "evidence": [
+              {
+                "ref": "Isa.56.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.89.32"
+              },
+              {
+                "ref": "Exo.31.14"
+              }
+            ]
+          },
+          {
+            "lemma": "כִּלָּה",
+            "note": "“Finish”: begin and finish.",
+            "evidence": [
+              {
+                "ref": "1Sa.3.12",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ch.27.24"
+              },
+              {
+                "ref": "2Ch.29.17"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חִלֵּל אֶת־שֵׁם",
+            "gloss": "profane the name (of God)",
+            "evidence": [
+              {
+                "ref": "Lev.22.32"
+              },
+              {
+                "ref": "Lev.19.12"
+              },
+              {
+                "ref": "Ezk.36.20"
+              },
+              {
+                "ref": "Amo.2.7"
+              }
+            ]
+          },
+          {
+            "phrase": "חִלֵּל אֶת־הַשַּׁבָּת",
+            "gloss": "profane the sabbath",
+            "evidence": [
+              {
+                "ref": "Exo.31.14"
+              },
+              {
+                "ref": "Isa.56.2"
+              },
+              {
+                "ref": "Ezk.20.13"
+              },
+              {
+                "ref": "Neh.13.17"
+              }
+            ]
+          },
+          {
+            "phrase": "לֹא יַחֵל דְּבָרוֹ",
+            "gloss": "he shall not break his word",
+            "evidence": [
+              {
+                "ref": "Num.30.3"
+              }
+            ]
+          },
+          {
+            "phrase": "הָחֵל וְכַלֵּה",
+            "gloss": "beginning and finishing: from first to last",
+            "evidence": [
+              {
+                "ref": "1Sa.3.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָלָל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "one pierced, slain; (adjective) profaned",
+      "bdb": [
+        "h.cs.ab"
+      ],
+      "summary": "About ninety times, almost always the man pierced to death in battle: “the slain”, often “the slain of the sword”. Twice it is the ḥ root's adjective, “profaned”, of a woman a priest may not marry, and twice it may be either (Ezk 21:30, 34). BDB files the same tokens under h.cs.ab and h.ct.ac; this word names one.",
+      "senses": [
+        {
+          "id": "slain",
+          "gloss": "pierced, slain, mortally wounded",
+          "definition": "A man pierced through, by sword or spear, and lying dead or dying; collectively “the slain” of a battle or a judgment.",
+          "cognate_ids": [
+            "ar-khalla"
+          ],
+          "evidence": [
+            {
+              "ref": "Num.19.16",
+              "role": "defining",
+              "note": "“Whoever touches in the open field one slain by the sword (חֲלַל־חֶרֶב), or one dead (מֵת), or a bone of a man, or a grave, shall be unclean seven days.”"
+            },
+            {
+              "ref": "Deu.21.1",
+              "role": "defining",
+              "note": "“If one slain is found in the land … lying in the field, and it is not known who struck him.”"
+            },
+            {
+              "ref": "Isa.22.2",
+              "role": "defining",
+              "note": "“Your slain are not slain by the sword, nor dead (מֵתֵי) in battle”: the noun is for the man killed by a weapon."
+            },
+            {
+              "ref": "1Sa.31.1",
+              "note": "The men of Israel “fell slain on mount Gilboa”."
+            },
+            {
+              "ref": "1Sa.17.52",
+              "note": "“The slain of the Philistines fell on the way to Shaaraim.”"
+            },
+            {
+              "ref": "2Sa.1.19",
+              "note": "“Your glory, Israel, is slain on your high places; how the mighty have fallen!” (also 2Sa 1:25, of Jonathan)."
+            },
+            {
+              "ref": "2Sa.1.25"
+            },
+            {
+              "ref": "2Sa.1.22"
+            },
+            {
+              "ref": "2Sa.23.8",
+              "note": "He lifted his spear against eight hundred, “slain at one time”."
+            },
+            {
+              "ref": "Gen.34.27",
+              "note": "Jacob's sons came upon the slain and plundered the city."
+            },
+            {
+              "ref": "Num.31.19",
+              "note": "Whoever has killed a soul or touched any slain must purify himself."
+            },
+            {
+              "ref": "Num.23.24",
+              "note": "Like a lion Israel “shall not lie down until it … drinks the blood of the slain”."
+            },
+            {
+              "ref": "Deu.32.42",
+              "note": "Yahweh's sword shall devour flesh “with the blood of the slain and the captives”."
+            },
+            {
+              "ref": "Jdg.9.40",
+              "note": "“Many fell wounded, up to the entrance of the gate.”"
+            },
+            {
+              "ref": "Jer.8.23",
+              "note": "“That I might weep day and night for the slain of the daughter of my people.”"
+            },
+            {
+              "ref": "Jer.14.18",
+              "note": "“If I go out into the field, behold, the slain by the sword; if I enter the city, behold, the diseases of famine.”"
+            },
+            {
+              "ref": "Lam.4.9",
+              "role": "defining",
+              "note": "“Better are the slain of the sword than the slain of hunger, who pine away, pierced (מְדֻקָּרִים) for lack of the fruits of the field.”"
+            },
+            {
+              "ref": "Jer.25.33",
+              "note": "“The slain of Yahweh shall be from one end of the earth to the other … not lamented, gathered, or buried.”"
+            },
+            {
+              "ref": "Isa.66.16",
+              "note": "“By fire and by his sword Yahweh will judge all flesh, and the slain of Yahweh shall be many.”"
+            },
+            {
+              "ref": "Isa.34.3",
+              "note": "“Their slain shall be cast out, and the stench of their corpses shall rise.”"
+            },
+            {
+              "ref": "Nam.3.3",
+              "note": "“A multitude of slain, a heap of corpses (פָּגֶר); no end of bodies.”"
+            },
+            {
+              "ref": "Ezk.6.7",
+              "note": "“The slain shall fall in your midst, and you shall know that I am Yahweh.”"
+            },
+            {
+              "ref": "Ezk.28.8",
+              "note": "“They shall bring you down to the pit, and you shall die the deaths of the slain in the heart of the seas.”"
+            },
+            {
+              "ref": "Ezk.30.24",
+              "note": "Pharaoh “shall groan before him with the groanings of one mortally wounded”."
+            },
+            {
+              "ref": "Ezk.32.21",
+              "note": "“They have gone down; they lie, the uncircumcised, slain by the sword”, spoken from the midst of the grave (שְׁאוֹל)."
+            },
+            {
+              "ref": "Ezk.32.25"
+            },
+            {
+              "ref": "Ezk.32.32"
+            },
+            {
+              "ref": "Psa.88.6",
+              "role": "defining",
+              "note": "“Free among the dead, like the slain (חֲלָלִים) who lie in the grave, whom you remember no more, and they are cut off from your hand.”"
+            },
+            {
+              "ref": "Psa.89.11",
+              "note": "“You crushed Rahab like one slain.”"
+            },
+            {
+              "ref": "Psa.69.27",
+              "note": "“They tell of the pain of those you have wounded.”"
+            },
+            {
+              "ref": "Job.24.12",
+              "note": "“From the city men groan, and the soul of the wounded cries out.”"
+            },
+            {
+              "ref": "Job.39.30",
+              "note": "Of the eagle: “where the slain are, there is she.”"
+            },
+            {
+              "ref": "Pro.7.26",
+              "note": "Of the strange woman: “many are the wounded she has cast down, and numerous all her slain.”"
+            },
+            {
+              "ref": "Lam.2.12",
+              "note": "Children “fainting like the wounded in the streets of the city”."
+            },
+            {
+              "ref": "Zep.2.12",
+              "note": "“You also, Cushites, shall be slain by my sword.”"
+            },
+            {
+              "ref": "Dan.11.26",
+              "note": "“Many shall fall down slain.”"
+            },
+            {
+              "ref": "Ezk.21.30",
+              "note": "“And you, slain (or profane) wicked one, prince of Israel, whose day has come”: either sense fits."
+            },
+            {
+              "ref": "Ezk.21.34"
+            }
+          ],
+          "kin": [
+            "servant-pierced",
+            "piel-pierce",
+            "qal-pierced"
+          ]
+        },
+        {
+          "id": "profaned-woman",
+          "gloss": "profaned (woman)",
+          "definition": "Of a woman: one made common by harlotry, whom a priest may not take as his wife.",
+          "cognate_ids": [
+            "ar-halla"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.21.7",
+              "role": "defining",
+              "note": "“A woman who is a harlot or profaned (וַחֲלָלָה) they shall not take … for he is holy to his God.”"
+            },
+            {
+              "ref": "Lev.21.14",
+              "role": "defining",
+              "note": "“A widow, or a divorced woman, or a profaned woman, a harlot, these he shall not take; but a virgin of his own people.”"
+            }
+          ],
+          "kin": [
+            "common"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מֵת",
+            "note": "“Dead”: the slain beside those who die otherwise.",
+            "evidence": [
+              {
+                "ref": "Isa.22.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.19.16"
+              },
+              {
+                "ref": "Psa.88.6"
+              }
+            ]
+          },
+          {
+            "lemma": "פֶּגֶר",
+            "note": "“Corpse”: the slain and their corpses.",
+            "evidence": [
+              {
+                "ref": "Nam.3.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.34.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חַלְלֵי חֶרֶב",
+            "gloss": "the slain of the sword",
+            "evidence": [
+              {
+                "ref": "Num.19.16"
+              },
+              {
+                "ref": "Isa.22.2"
+              },
+              {
+                "ref": "Ezk.32.21"
+              },
+              {
+                "ref": "Lam.4.9"
+              }
+            ]
+          },
+          {
+            "phrase": "חַלְלֵי יַהְוֶה",
+            "gloss": "the slain of Yahweh: those he slays in judgment",
+            "evidence": [
+              {
+                "ref": "Isa.66.16"
+              },
+              {
+                "ref": "Jer.25.33"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חַלּוֹן",
+      "pos": "noun",
+      "gender": "mf",
+      "gloss": "window",
+      "bdb": [
+        "h.cs.ad"
+      ],
+      "cognate_ids": [
+        "uga-hln",
+        "ar-ihlil"
+      ],
+      "summary": "An opening in a wall, through which one looks out or is let down. Ugaritic ḥln “window” shows ḥ behind the ח, so the window does not go with “pierce” (ḫ); it may be an opening in the sense of Arabic ḥalla “untie, open” and iḥlīl “orifice”, but that is not shown.",
+      "senses": [
+        {
+          "gloss": "window",
+          "definition": "An opening in the wall of a house, the ark, the temple or a city wall: to look out from, to shoot an arrow through, or to let a man down by a rope.",
+          "evidence": [
+            {
+              "ref": "Gen.8.6",
+              "role": "defining",
+              "note": "“Noah opened the window (חַלּוֹן) of the ark which he had made.”"
+            },
+            {
+              "ref": "Jos.2.15",
+              "role": "defining",
+              "note": "Rahab “let them down by a rope through the window, for her house was in the wall”."
+            },
+            {
+              "ref": "1Sa.19.12",
+              "note": "“Michal let David down through the window.”"
+            },
+            {
+              "ref": "2Ki.13.17",
+              "role": "defining",
+              "note": "“Open the window eastward”; and he opened it, and Elisha said “Shoot”."
+            },
+            {
+              "ref": "Jdg.5.28",
+              "note": "“Through the window she looked out, the mother of Sisera, and cried through the lattice.”"
+            },
+            {
+              "ref": "2Sa.6.16",
+              "note": "Michal “looked through the window and saw King David leaping and dancing before Yahweh” (also 1Ch 15:29)."
+            },
+            {
+              "ref": "1Ch.15.29"
+            },
+            {
+              "ref": "Gen.26.8",
+              "note": "Abimelech “looked out of the window and saw Isaac sporting with Rebekah his wife”."
+            },
+            {
+              "ref": "2Ki.9.30",
+              "note": "Jezebel “painted her eyes … and looked out of the window”."
+            },
+            {
+              "ref": "2Ki.9.32"
+            },
+            {
+              "ref": "Pro.7.6",
+              "note": "“At the window of my house I looked out through my lattice.”"
+            },
+            {
+              "ref": "Sng.2.9",
+              "note": "“He is looking through the windows, gazing through the lattice.”"
+            },
+            {
+              "ref": "1Ki.6.4",
+              "note": "The windows of Solomon's temple."
+            },
+            {
+              "ref": "Ezk.40.16",
+              "note": "The windows of the gates in Ezekiel's temple (and through Ezk 40–41)."
+            },
+            {
+              "ref": "Ezk.41.16"
+            },
+            {
+              "ref": "Jer.22.14",
+              "note": "“He cuts out windows for himself, panels it with cedar.”"
+            },
+            {
+              "ref": "Jer.9.20",
+              "note": "“Death has come up into our windows, it has entered our palaces.”"
+            },
+            {
+              "ref": "Jol.2.9",
+              "note": "The locust army “enters through the windows like a thief”."
+            },
+            {
+              "ref": "Zep.2.14",
+              "note": "“A voice shall sing in the windows” of desolate Nineveh."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θυρίς",
+          "gloss": "window",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jos.2.15 הַחַלּוֹן → θυρίδος; θυρίς renders חַלּוֹן ×22"
+            },
+            {
+              "ref": "2Co.11.33",
+              "role": "defining",
+              "note": "“Through a window (θυρίδος) I was let down in a basket by the wall, and escaped”, as Rahab let down the spies and Michal David (Jos 2:15; 1Sa 19:12)."
+            },
+            {
+              "ref": "Act.20.9",
+              "note": "Eutychus, sitting in the window, fell from the third storey."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּחִלָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "beginning, first time",
+      "bdb": [
+        "h.ct.ae",
+        "w.am.ag"
+      ],
+      "summary": "The noun of the hiphil “begin”: the beginning of a thing, or, with בְּ, “at first, the first time”. Like the verb, how it comes from the root is not shown.",
+      "senses": [
+        {
+          "id": "beginning",
+          "gloss": "beginning; at first",
+          "definition": "The first part or first time of something: the beginning of harvest, of Yahweh's speaking, of wisdom; בַּתְּחִלָּה “at the first, formerly”.",
+          "evidence": [
+            {
+              "ref": "Ecc.10.13",
+              "role": "defining",
+              "note": "“The beginning (תְּחִלַּת) of the words of his mouth is folly, and the end (אַחֲרִית) of his mouth is evil madness.”"
+            },
+            {
+              "ref": "Pro.9.10",
+              "role": "defining",
+              "note": "“The fear of Yahweh is the beginning of wisdom (תְּחִלַּת חָכְמָה).”"
+            },
+            {
+              "ref": "Hos.1.2",
+              "role": "defining",
+              "note": "“The beginning of Yahweh's speaking by Hosea.”"
+            },
+            {
+              "ref": "Rut.1.22",
+              "note": "They came to Bethlehem “at the beginning of barley harvest” (also 2Sa 21:9–10)."
+            },
+            {
+              "ref": "2Sa.21.9"
+            },
+            {
+              "ref": "2Sa.21.10"
+            },
+            {
+              "ref": "Amo.7.1",
+              "note": "“At the beginning of the shooting up of the latter growth.”"
+            },
+            {
+              "ref": "2Ki.17.25",
+              "note": "“At the beginning of their dwelling there, they did not fear Yahweh.”"
+            },
+            {
+              "ref": "Gen.13.3",
+              "role": "defining",
+              "note": "To the place “where his tent had been at the beginning (בַּתְּחִלָּה), between Bethel and Ai”."
+            },
+            {
+              "ref": "Gen.43.20",
+              "note": "“We came down the first time to buy food.”"
+            },
+            {
+              "ref": "Gen.43.18"
+            },
+            {
+              "ref": "Gen.41.21",
+              "note": "The thin cows were still ugly “as at the beginning”."
+            },
+            {
+              "ref": "Jdg.1.1",
+              "note": "“Who shall go up for us first against the Canaanites?” (also Jdg 20:18)."
+            },
+            {
+              "ref": "Jdg.20.18"
+            },
+            {
+              "ref": "2Sa.17.9"
+            },
+            {
+              "ref": "Isa.1.26",
+              "role": "defining",
+              "note": "“I will restore your judges as at the first, and your counsellors as at the beginning (כְּבַתְּחִלָּה).”"
+            },
+            {
+              "ref": "Dan.8.1",
+              "note": "The vision “that appeared to me at the first”."
+            },
+            {
+              "ref": "Dan.9.21"
+            },
+            {
+              "ref": "Dan.9.23",
+              "note": "“At the beginning of your supplications the word went out.”"
+            },
+            {
+              "ref": "Ezr.4.6",
+              "note": "“In the beginning of his reign.”"
+            },
+            {
+              "ref": "Neh.11.17"
+            }
+          ],
+          "kin": [
+            "begin"
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אַחֲרִית",
+            "note": "“End”: the beginning of his words and their end.",
+            "evidence": [
+              {
+                "ref": "Ecc.10.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בַּתְּחִלָּה",
+            "gloss": "at the first, the first time, formerly",
+            "evidence": [
+              {
+                "ref": "Gen.13.3"
+              },
+              {
+                "ref": "Gen.43.20"
+              },
+              {
+                "ref": "Isa.1.26"
+              },
+              {
+                "ref": "Dan.8.1"
+              }
+            ]
+          },
+          {
+            "phrase": "תְּחִלַּת חָכְמָה",
+            "gloss": "the beginning of wisdom",
+            "evidence": [
+              {
+                "ref": "Pro.9.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָלִילָה",
+      "pos": "interjection",
+      "gloss": "far be it! (literally “to the profane!”)",
+      "bdb": [
+        "h.ct.ad"
+      ],
+      "cognate_ids": [
+        "ar-halla"
+      ],
+      "summary": "חָלִיל, “profane, common”, with the ending ‑ָה “toward”: “(it would be) to profaneness!”, an oath refusing a thing as unthinkable, often with לְ of the person and מִן of the deed, sometimes “from Yahweh” (1Sa 24:7; 26:11).",
+      "senses": [
+        {
+          "gloss": "far be it!, God forbid!",
+          "definition": "The refusal of a deed as a profane thing, never to be done: said by men of themselves, and by Abraham and Elihu of God.",
+          "evidence": [
+            {
+              "ref": "Gen.18.25",
+              "role": "defining",
+              "note": "“Far be it from you (חָלִלָה לְּךָ) to do such a thing, to kill the righteous with the wicked … far be it from you! Shall not the judge of all the earth do right?”"
+            },
+            {
+              "ref": "Job.34.10",
+              "role": "defining",
+              "note": "“Far be it from God (חָלִלָה לָאֵל) to do wickedness, and from the Almighty to do wrong.”"
+            },
+            {
+              "ref": "1Sa.24.7",
+              "role": "defining",
+              "note": "“Far be it from me, from Yahweh (חָלִילָה לִּי מֵיהוָה), that I should do this thing to my lord, Yahweh's anointed”: the deed would profane what is Yahweh's."
+            },
+            {
+              "ref": "1Sa.26.11"
+            },
+            {
+              "ref": "Jos.24.16",
+              "note": "“Far be it from us to forsake Yahweh to serve other gods.”"
+            },
+            {
+              "ref": "Jos.22.29",
+              "note": "“Far be it from us to rebel against Yahweh.”"
+            },
+            {
+              "ref": "1Sa.12.23",
+              "note": "“Far be it from me that I should sin against Yahweh in ceasing to pray for you.”"
+            },
+            {
+              "ref": "1Sa.2.30",
+              "note": "Yahweh: “Far be it from me; for those who honour me I will honour.”"
+            },
+            {
+              "ref": "1Sa.14.45",
+              "note": "“Far be it! As Yahweh lives, not one hair of his head shall fall to the ground.”"
+            },
+            {
+              "ref": "2Sa.23.17",
+              "note": "“Far be it from me, Yahweh, that I should do this: is it not the blood of the men?” (also 1Ch 11:19)."
+            },
+            {
+              "ref": "1Ch.11.19"
+            },
+            {
+              "ref": "1Ki.21.3",
+              "note": "Naboth: “Far be it from me, from Yahweh, that I should give you the inheritance of my fathers.”"
+            },
+            {
+              "ref": "Gen.44.7",
+              "note": "“Far be it from your servants to do such a thing.”"
+            },
+            {
+              "ref": "Gen.44.17"
+            },
+            {
+              "ref": "1Sa.20.2"
+            },
+            {
+              "ref": "1Sa.20.9"
+            },
+            {
+              "ref": "1Sa.22.15"
+            },
+            {
+              "ref": "2Sa.20.20",
+              "note": "“Far be it, far be it from me, that I should swallow up or destroy!”"
+            },
+            {
+              "ref": "Job.27.5",
+              "note": "“Far be it from me that I should justify you; till I die I will not put away my integrity.”"
+            }
+          ],
+          "kin": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַלָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "cake, loaf (of offering)",
+      "bdb": [
+        "h.cs.ac"
+      ],
+      "summary": "A ring-shaped or pierced loaf, on the reading “perforated (cake)”, used in offerings: with oil in the ordination and Nazirite offerings, twelve as the bread of the presence, and the first of the dough. No verse shows its shape, and its tie to the root's senses is not clear; no cognate yet shares it.",
+      "senses": [
+        {
+          "gloss": "cake, loaf",
+          "definition": "A loaf of fine flour, unleavened with oil or leavened, presented in offerings or given out at a feast.",
+          "evidence": [
+            {
+              "ref": "Lev.24.5",
+              "role": "defining",
+              "note": "“Bake twelve cakes (חַלּוֹת) of it; two tenths shall be in each cake”: the bread of the presence."
+            },
+            {
+              "ref": "Exo.29.2",
+              "note": "“Unleavened bread, and unleavened cakes mixed with oil, and unleavened wafers.”"
+            },
+            {
+              "ref": "Exo.29.23"
+            },
+            {
+              "ref": "Lev.2.4",
+              "note": "A grain offering baked in an oven: “unleavened cakes of fine flour mixed with oil”."
+            },
+            {
+              "ref": "Lev.7.12",
+              "note": "With the thanksgiving sacrifice, unleavened cakes; and leavened bread too (Lev 7:13)."
+            },
+            {
+              "ref": "Lev.7.13"
+            },
+            {
+              "ref": "Lev.8.26"
+            },
+            {
+              "ref": "Num.6.15",
+              "note": "The Nazirite's basket of unleavened cakes (also Num 6:19)."
+            },
+            {
+              "ref": "Num.6.19"
+            },
+            {
+              "ref": "Num.15.20",
+              "role": "defining",
+              "note": "“Of the first of your dough you shall offer a cake (חַלָּה) as a heave offering.”"
+            },
+            {
+              "ref": "2Sa.6.19",
+              "note": "David gave to each of the people “a cake of bread” when the ark came to Jerusalem."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "common (not holy)",
+      "bdb": [
+        "h.ct.ab",
+        "h.cg.ag"
+      ],
+      "cognate_ids": [
+        "ar-halla",
+        "syc-hll"
+      ],
+      "summary": "What is not holy, free for ordinary use: the noun the priests were to keep apart from the holy. Arabic ḥill, of the months and the land outside the sacred precinct, is the same idea.",
+      "senses": [
+        {
+          "id": "common",
+          "gloss": "common, profane (not holy)",
+          "definition": "What is for ordinary use, set against what is holy to Yahweh: common bread against holy bread, a common journey, the common land outside the holy portion.",
+          "evidence": [
+            {
+              "ref": "Lev.10.10",
+              "role": "defining",
+              "note": "“To distinguish between the holy and the common (הַחֹל), and between the unclean and the clean.”"
+            },
+            {
+              "ref": "Ezk.44.23",
+              "role": "defining",
+              "note": "The priests “shall teach my people the difference between holy and common”."
+            },
+            {
+              "ref": "Ezk.22.26",
+              "note": "“Between holy and common they have not separated.”"
+            },
+            {
+              "ref": "1Sa.21.5",
+              "role": "defining",
+              "note": "“There is no common bread (לֶחֶם חֹל) under my hand, but there is holy bread.”"
+            },
+            {
+              "ref": "1Sa.21.6",
+              "note": "“Though it was a common journey (דֶּרֶךְ חֹל).”"
+            },
+            {
+              "ref": "Ezk.42.20",
+              "note": "A wall “to separate between the holy and the common”."
+            },
+            {
+              "ref": "Ezk.48.15",
+              "note": "The rest of the land beside the holy portion “is common, for the city, for dwellings and pasture”."
+            },
+            {
+              "ref": "Mat.12.4",
+              "note": "Jesus on 1Sa 21: David ate the holy bread “which was not lawful for him to eat”."
+            }
+          ],
+          "kin": [
+            "profane-holy"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βέβηλος",
+          "gloss": "common, profane",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.10.10 הַחֹל → βεβήλων; 1Sa.21.5 → βέβηλοι; Ezk.22.26 לְחֹל → βεβήλου"
+            },
+            {
+              "ref": "Heb.12.16",
+              "role": "defining",
+              "note": "“Lest there be any … profane (βέβηλος) person like Esau, who for one meal sold his birthright”: the holy thing treated as common."
+            },
+            {
+              "ref": "1Ti.4.7",
+              "note": "“Refuse profane (βεβήλους) and old wives' fables.”"
+            },
+            {
+              "ref": "1Ti.1.9",
+              "note": "The law is for “the unholy and profane (βεβήλοις)”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "קֹדֶשׁ",
+            "note": "“Holy”: the line the priests were to keep.",
+            "evidence": [
+              {
+                "ref": "Lev.10.10",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.21.5"
+              },
+              {
+                "ref": "Ezk.44.23"
+              },
+              {
+                "ref": "Ezk.42.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָלִיל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "flute, pipe",
+      "bdb": [
+        "h.cs.ae"
+      ],
+      "cognate_ids": [
+        "ar-khalla"
+      ],
+      "summary": "A bored or hollow pipe, played in procession, at feasts, and in lament. It goes with the ḫ root “pierce, bore” (Arabic ḫilāl, a thing that perforates) as a pierced tube, but no cognate shows the sound behind the ח in this word itself.",
+      "senses": [
+        {
+          "id": "flute",
+          "gloss": "flute, pipe",
+          "definition": "A wind instrument, a pipe: with harp, tambourine and lyre among the prophets and at feasts; played going up to the mountain of Yahweh; its moaning sound for lament.",
+          "evidence": [
+            {
+              "ref": "1Sa.10.5",
+              "role": "defining",
+              "note": "A band of prophets “with harp, tambourine, flute (חָלִיל) and lyre before them”."
+            },
+            {
+              "ref": "Isa.30.29",
+              "role": "defining",
+              "note": "“Gladness of heart, as when one goes with the flute to come to the mountain of Yahweh, to the Rock of Israel.”"
+            },
+            {
+              "ref": "1Ki.1.40",
+              "note": "“Piping with pipes (בַּחֲלִלִים).”"
+            },
+            {
+              "ref": "Isa.5.12",
+              "note": "“Harp and lyre, tambourine and flute and wine are at their feasts, but they do not regard the work of Yahweh.”"
+            },
+            {
+              "ref": "Jer.48.36",
+              "role": "defining",
+              "note": "“My heart moans for Moab like flutes (כַּחֲלִלִים)”: the pipe of mourning."
+            }
+          ],
+          "kin": [
+            "piel-pipe"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αὐλός",
+          "gloss": "flute, pipe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Sa.10.5 וְחָלִיל → αὐλὸς; αὐλός renders חָלִיל ×3"
+            },
+            {
+              "ref": "1Co.14.7",
+              "role": "defining",
+              "note": "“Things without life giving sound, whether pipe (αὐλός) or harp, unless they give a distinction in the sounds, how shall it be known what is piped?”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְחִלָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "hole (in the ground)",
+      "bdb": [
+        "h.cs.ag",
+        "m.bn.al"
+      ],
+      "cognate_ids": [
+        "ar-khalla",
+        "syc-hlala"
+      ],
+      "summary": "Once, of the holes of the earth men will hide in on the day of Yahweh: a hollow bored into the ground, as Arabic ḫalal “gap, breach” and Syriac ḥlālā “hole, cave”.",
+      "senses": [
+        {
+          "gloss": "hole, cavity",
+          "definition": "A hole in the ground, beside the caves of the rocks, as a hiding place.",
+          "evidence": [
+            {
+              "ref": "Isa.2.19",
+              "role": "defining",
+              "note": "“They shall go into the caves (מְעָרוֹת) of the rocks and into the holes (מְחִלּוֹת) of the dust, from before the terror of Yahweh.”"
+            },
+            {
+              "ref": "Isa.2.21",
+              "note": "The same flight “into the clefts of the rocks”, with other words."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַל",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "(aphel) profane; (pael) wash",
+      "cognate_ids": [
+        "syc-hll"
+      ],
+      "summary": "The Peshitta's verb of the root: the aphel “profane”, of the sabbath, as the Hebrew piel; and the pael “wash”, of robes washed in the blood of the Lamb, which Jewish Aramaic also has (“rinse”). How “wash” belongs to the root is not shown.",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "profane",
+          "senses": [
+            {
+              "gloss": "profane",
+              "definition": "To make common what is holy, by working on the sabbath.",
+              "cognate_ids": [
+                "ar-halla",
+                "arc-chalal"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.12.5",
+                  "role": "defining",
+                  "note": "“Have you not read in the law that the priests in the temple מַחלִינ לָה לשַבּתָֿא, and are without blame?”: they profane the sabbath (βεβηλοῦσιν)."
+                }
+              ],
+              "kin": [
+                "profane-holy"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "wash",
+          "senses": [
+            {
+              "gloss": "wash",
+              "definition": "To wash garments clean.",
+              "evidence": [
+                {
+                  "ref": "Rev.7.14",
+                  "role": "defining",
+                  "note": "“These are those who came out of the great tribulation, וחַלֵלו their robes and made them white in the blood of the Lamb” (ἔπλυναν)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-halla",
+      "lang": "ar",
+      "form": "حَلَّ، حِلٌّ، حَلَالٌ، تَحِلَّةٌ",
+      "translit": "ḥalla, ḥill, ḥalāl, taḥilla",
+      "gloss": "untie, undo a knot (the primary sense); become lawful, free; quit the sacred state; (ḥill) the profane months, the land outside the sacred territory; (ḥallala al-yamīna, taḥilla) free an oath from obligation, expiate it",
+      "relation": "cognate",
+      "note": "The thing loosed from a bond: what is ḥalāl is free for use, the opposite of ḥarām, as the Hebrew חֹל is free for common use, the opposite of קֹדֶשׁ; the months and land that are ḥill are those not sacred. To ḥallala an oath is to loose oneself from it, as לֹא יַחֵל דְּבָרוֹ forbids a man to loose himself from his vow (Num 30:3). Arabic shows ḥ, not ḫ, behind ח.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 619, art. حل, حَلَّ (n8734)",
+          "note": "“He untied, or undid, or opened, a knot: this is the primary signification”; “It was, or became, lawful, allowable, or free … contr. of حَرُمَ: a metaphorical signification, from حَلُّ العُقْدَةِ”; “He quitted his state of إِحْرَام.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 620, art. حل, حلّل اليَمِينَ (n8735)",
+          "note": "“He expiated the oath … he freed the oath from obligation.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 621, art. حل, حِلٌّ (n8746)",
+          "note": "“شُهُورُ الحِلِّ, the profane months … الحِلُّ, the region that is without the حَرَم [or sacred territory].”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 621, art. حل, حَلَالٌ (n8751)",
+          "note": "“Lawful, allowable, or free; contr. of حَرَامٌ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-khalla",
+      "lang": "ar",
+      "form": "خَلَّ، خَلَلٌ، خِلَالٌ",
+      "translit": "ḫalla, ḫalal, ḫilāl",
+      "gloss": "perforate, transpierce, pierce with a spear; (ḫalal) gap, breach, interstice; (ḫilāl) a pin, skewer, anything that perforates",
+      "relation": "cognate",
+      "note": "The pierced man, the hole bored in the ground and the bored pipe. Arabic shows ḫ, not ḥ, behind ח: a second older root in the same Hebrew spelling.",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 777, art. خل, خَلَّ (n11157)",
+          "note": "“He, or it, perforated the thing; transpierced it, or pierced it through … خَلَلْتُهُ بِالرُّمْحِ I pierced him with the spear … he pierced him with the spear and transfixed his heart.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 780, art. خل, خَلَلٌ (n11172)",
+          "note": "“An interstice … a break, a breach, a chink, or a gap, between two things.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 780, art. خل, خِلَالٌ (n11178)",
+          "note": "“A thing with which one perforates, or transpierces, a thing, either of iron or of wood … a skewer.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ihlil",
+      "lang": "ar",
+      "form": "إِحْلِيلٌ",
+      "translit": "iḥlīl",
+      "gloss": "orifice, outlet (of the urethra, the breast, the udder)",
+      "relation": "possible",
+      "note": "An opening from ḥll, with ḥ, as Ugaritic ḥln “window”: a lead for the window as an “opening” of the ḥ root, not shown.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 622, art. حل, إِحْلِيلٌ (n8760)",
+          "note": "“The orifice through which the urine passes forth … and the orifice through which the milk passes forth from the breast.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-hln",
+      "lang": "uga",
+      "form": "𐎈𐎍𐎐",
+      "translit": "ḥln",
+      "gloss": "window",
+      "relation": "cognate",
+      "note": "The same word as חַלּוֹן, written with ḥ (not ḫ), so the window is not from “pierce”.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎈𐎍𐎐 (ḥln), noun: window",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%88%F0%90%8E%8D%F0%90%8E%90"
+        }
+      ]
+    },
+    {
+      "id": "uga-hll",
+      "lang": "uga",
+      "form": "𐎈𐎍𐎍",
+      "translit": "ḥll",
+      "gloss": "desacralisation, making common",
+      "relation": "cognate",
+      "note": "The Ugaritic noun of the “profane” root, with ḥ.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001079 ḥll [profane], UGC001843 ḥll [desacralisation]"
+        }
+      ]
+    },
+    {
+      "id": "akk-elelu",
+      "lang": "akk",
+      "form": "elēlu",
+      "translit": "elēlu",
+      "gloss": "be(come) pure, clean; purify; manumit (a slave)",
+      "relation": "possible",
+      "note": "Set beside ḥll in the Proto-Semitic list: Akkadian drops ḥ and colours the vowel e, which fits ḥll (not ḫll). Its sense is the reverse of “profane”, unless both come from “free, loosed” (freed from defilement, or from a slave's bond; freed from holiness): not shown.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000004110, elēlu [be(come) pure] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001079 ḥll [profane], AKK002246 elēlu [be(come) pure]"
+        }
+      ]
+    },
+    {
+      "id": "arc-chalal",
+      "lang": "arc",
+      "form": "חֲלַל",
+      "translit": "ḥălal",
+      "gloss": "(pael) desecrate, profane, degrade; (passive participle) degraded, profaned",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums: the Hebrew sense, used for it in Targum Onkelos to Lev 21 and Targum Ezekiel 22:26.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲלַל (H01073), citing Targ. O. Lev. XXI, 14 (part. pass. חֲלִיל, degraded); Targ. Ez. XXII, 26 (וְחַלַת, be profaned); Targ. Prov. XXX, 9 (Pa., desecrate, profane)"
+        }
+      ]
+    },
+    {
+      "id": "syc-hll",
+      "lang": "syc",
+      "form": "ܚܠ، ܚܘܠܐ",
+      "translit": "ḥal, ḥūlā",
+      "gloss": "profane; wash; (ḥūlā) profane",
+      "relation": "cognate",
+      "note": "The Syriac of the Peshitta: “profane” (Mat 12:5) and “wash” (Rev 7:14) under one lexeme.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 607 KL; lexemes 984 KL (wash; profane), 983 KOLA (profane)"
+        }
+      ]
+    },
+    {
+      "id": "syc-hlala",
+      "lang": "syc",
+      "form": "ܚܠܠܐ",
+      "translit": "ḥlālā",
+      "gloss": "hole, cavity; trench; cave, tunnel",
+      "relation": "possible",
+      "note": "Syriac does not keep ḥ and ḫ apart. Not yet checked in a Syriac dictionary.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܚܠܠܐ, noun (etym. 1): hole, cavity; trench; cave, cavern, tunnel; mine",
+          "url": "https://en.wiktionary.org/wiki/%DC%9A%DC%A0%DC%A0%DC%90"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "holy-and-common",
+      "statement": "The priests were set “to distinguish between the holy and the common (הַחֹל), and between the unclean and the clean” (Lev 10:10) and to teach it (Ezk 44:23); when they did not, Yahweh said, “they have profaned my holy things … and I am profaned among them” (Ezk 22:26). To profane is to treat as common what Yahweh has made holy: his name, by swearing falsely or worshipping idols (Lev 19:12; 20:3; Ezk 20:39); his sabbath, by doing one's own work on it (Exo 31:14; Neh 13:17–18); his sanctuary and its holy things (Lev 21:12; 22:15; Mal 1:12). The fruit of a new vineyard was “holy, praise to Yahweh” in the fourth year and eaten in the fifth (Lev 19:24–25), and that eating is called making it common (Deu 20:6). The sabbath was given “as a sign between me and them, to know that I am Yahweh who sanctifies them” (Ezk 20:12), and the foreigner who keeps it “from profaning it” and holds the covenant is brought to the holy mountain (Isa 56:6–7). Jesus answered the charge of profaning the sabbath from the law itself: David ate the holy bread, and “the priests in the temple profane the sabbath and are guiltless; but I say to you that one greater than the temple is here” (Mat 12:3–6). Esau, who sold his birthright for a meal, is “profane” (Heb 12:16). From the verses: holiness is what Yahweh sets apart for himself, profaning is treating it as one's own and common, and the one greater than the temple has authority over what the temple's service may do.",
+      "evidence": [
+        {
+          "ref": "Lev.10.10"
+        },
+        {
+          "ref": "Ezk.44.23"
+        },
+        {
+          "ref": "Ezk.22.26"
+        },
+        {
+          "ref": "Lev.19.12"
+        },
+        {
+          "ref": "Lev.20.3"
+        },
+        {
+          "ref": "Ezk.20.39"
+        },
+        {
+          "ref": "Exo.31.14"
+        },
+        {
+          "ref": "Neh.13.17",
+          "to": "Neh.13.18"
+        },
+        {
+          "ref": "Lev.21.12"
+        },
+        {
+          "ref": "Lev.22.15"
+        },
+        {
+          "ref": "Mal.1.12"
+        },
+        {
+          "ref": "Lev.19.24",
+          "to": "Lev.19.25"
+        },
+        {
+          "ref": "Deu.20.6"
+        },
+        {
+          "ref": "Ezk.20.12"
+        },
+        {
+          "ref": "Isa.56.6",
+          "to": "Isa.56.7"
+        },
+        {
+          "ref": "Mat.12.3",
+          "to": "Mat.12.6"
+        },
+        {
+          "ref": "Heb.12.16"
+        }
+      ]
+    },
+    {
+      "topic": "name-sanctified-in-the-land",
+      "statement": "Israel scattered among the nations for its sins profaned Yahweh's name there, “when men said of them, These are the people of Yahweh, and they have gone out of his land” (Ezk 36:20–21); Paul applies the same reproach to the Jews of his day, “the name of God is blasphemed among the Gentiles because of you” (Rom 2:24). Yahweh's answer is not for Israel's sake but for his name: “I will sanctify my great name, which is profaned among the nations … I will take you from the nations and gather you from all the countries and bring you into your own land … I will put my spirit within you … and you shall dwell in the land that I gave to your fathers” (Ezk 36:22–28); “I will not let my holy name be profaned any more … I will gather them to their own land and leave none of them there any more” (Ezk 39:7, 25–28). He did the same in the wilderness, acting “for my name's sake, that it should not be profaned in the sight of the nations” (Ezk 20:9, 14, 22; Isa 48:11). From the verses: the name profaned by Israel's exile from its land is sanctified by Israel's return to that same land, the land given to the fathers, and by a new heart and Yahweh's spirit given them there; the land promise is literal, and its fulfilment is the vindication of his name before the nations.",
+      "evidence": [
+        {
+          "ref": "Ezk.36.20",
+          "to": "Ezk.36.21"
+        },
+        {
+          "ref": "Rom.2.24"
+        },
+        {
+          "ref": "Ezk.36.22",
+          "to": "Ezk.36.28"
+        },
+        {
+          "ref": "Ezk.39.7"
+        },
+        {
+          "ref": "Ezk.39.25",
+          "to": "Ezk.39.28"
+        },
+        {
+          "ref": "Ezk.20.9"
+        },
+        {
+          "ref": "Ezk.20.14"
+        },
+        {
+          "ref": "Ezk.20.22"
+        },
+        {
+          "ref": "Isa.48.11"
+        }
+      ]
+    },
+    {
+      "topic": "slain-in-the-grave",
+      "statement": "The slain (חֲלָלִים) are men pierced to death, lying on the field (Deu 21:1; Num 19:16). The psalmist counts himself “among the dead, like the slain who lie in the grave, whom you remember no more, and they are cut off from your hand”, and asks, “Will you show wonders to the dead? … Shall your lovingkindness be declared in the grave, … your righteousness in the land of forgetfulness?” (Psa 88:6, 11–13). Ezekiel shows the nations' armies “slain by the sword” lying in the grave, “uncircumcised”, with “their swords laid under their heads” (Ezk 32:21–32). From the verses: the slain are dead, not living elsewhere; they lie in the grave, without praise or remembrance, cut off until God acts for them.",
+      "evidence": [
+        {
+          "ref": "Deu.21.1"
+        },
+        {
+          "ref": "Num.19.16"
+        },
+        {
+          "ref": "Psa.88.6"
+        },
+        {
+          "ref": "Psa.88.11",
+          "to": "Psa.88.13"
+        },
+        {
+          "ref": "Ezk.32.21",
+          "to": "Ezk.32.32"
+        }
+      ]
+    },
+    {
+      "topic": "servant-pierced",
+      "statement": "Of Yahweh's servant the prophet says, “he was pierced (מְחֹלָל) for our transgressions, crushed for our iniquities; the chastisement of our peace was on him, and by his stripes we are healed” (Isa 53:5). He was “cut off from the land of the living”, “his grave was made with the wicked”, and “he poured out his soul to death”; yet “he shall see his seed, he shall prolong his days” (Isa 53:8–12). Philip, beginning from this scripture, preached Jesus (Act 8:32–35), and Peter says Jesus “bore our sins in his own body on the tree … by whose stripes you were healed” (1Pe 2:24). From the verses: the servant was a man who truly died, his soul poured out to death and laid in a grave, and the prolonging of his days after it is resurrection; his piercing was for the sins of others.",
+      "evidence": [
+        {
+          "ref": "Isa.53.5"
+        },
+        {
+          "ref": "Isa.53.8",
+          "to": "Isa.53.12"
+        },
+        {
+          "ref": "Act.8.32",
+          "to": "Act.8.35"
+        },
+        {
+          "ref": "1Pe.2.24"
+        }
+      ]
+    },
+    {
+      "topic": "sanctuary-profaned",
+      "statement": "Yahweh himself said of the first temple, “Behold, I will profane my sanctuary, the pride of your strength … and your sons and daughters shall fall by the sword” (Ezk 24:21), and the psalmist mourns that the enemy “profaned the dwelling place of your name to the ground” (Psa 74:7). Daniel foresaw forces that “shall profane the sanctuary, the fortress, and take away the continual offering, and set up the abomination that makes desolate” (Dan 11:31; 12:11). Jesus named “the abomination of desolation, spoken of by Daniel the prophet, standing in the holy place” as the sign for those in Judea to flee (Mat 24:15), said “this generation shall not pass till all these things are fulfilled” (Mat 24:34), and in Luke gave the same sign as “Jerusalem surrounded by armies; then know that its desolation has come near” (Luk 21:20). From the verses: the profaning of the sanctuary Daniel foretold, as Jesus read it, came in his own generation, when the Roman armies surrounded Jerusalem and the temple was profaned and destroyed in AD 70.",
+      "evidence": [
+        {
+          "ref": "Ezk.24.21"
+        },
+        {
+          "ref": "Psa.74.7"
+        },
+        {
+          "ref": "Dan.11.31"
+        },
+        {
+          "ref": "Dan.12.11"
+        },
+        {
+          "ref": "Mat.24.15"
+        },
+        {
+          "ref": "Mat.24.34"
+        },
+        {
+          "ref": "Luk.21.20"
+        }
+      ]
+    }
+  ],
+  "note": "Two older roots in one spelling, by the Arabic: ḥll (ḥalla “untie; become lawful, free”; Ugaritic ḥll; Aramaic and Syriac “profane”) behind “profane” and חֹל, חָלָל “profaned”, חָלִילָה; ḫll (ḫalla “pierce”, ḫalal “gap”) behind “pierce”, חָלָל “slain”, מְחִלָּה. The window has ḥ (Ugaritic ḥln), so it is not “pierced”. The flute is set with ḫ only by sense (a bored pipe); no cognate of the flute itself has been found (Akkadian ḫalḫallatu, given by other lexicons, is not in the Oracc glossary; check CAD). BDB files the verb's 141 tokens three times (h.ct.aa profane, h.cs.aa pierce, h.cs.af pipe) and the noun's 94 twice (h.cs.ab, h.ct.ac); the verb names h.ct.aa and the noun h.cs.ab, so the uses are counted once. The brief left out tokens of חוּל and יחל filed here by spelling (Gen 8:10; 1Sa 31:3; Psa 130:7; 131:3; 1Ch 10:3). Open questions: (1) how the hiphil “begin” and תְּחִלָּה come from the root; one lead is ḥalla “untie, open (a knot)” (Lane, primary sense) as an opening of an action, not shown, so no cognate is named on them; (2) חַלָּה “cake”: the “pierced cake” reading has no evidence in a verse; Wiktionary's Syriac ܚܠܠܐ “something punctured” and Arabic ḥallūn “bun” are unchecked leads; (3) Psa 87:7 כְּחֹלְלִים may be from חוּל “dance” (the Septuagint has a different text); (4) Ezk 21:30, 34 חָלָל רָשָׁע may be “slain” or “profane”; (5) Akkadian elēlu “be pure” is set beside ḥll only in the Proto-Semitic list; (6) the Syriac “wash” (Rev 7:14; Jewish Aramaic חַלֵּיל “rinse”, Jastrow H01074) may be another root. The Septuagint renders Gen 4:26 הוּחַל by ἤλπισεν, reading יחל. חלה “be sick” and חול “sand, dance, writhe” are other roots. No personal names of this root in TIPNR."
+}
