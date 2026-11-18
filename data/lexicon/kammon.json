@@ -1,0 +1,268 @@
+{
+  "id": "kammon",
+  "root": "כמנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "agriculture",
+    "wealth"
+  ],
+  "gloss": "cumin; stored treasure",
+  "summary": "Isaiah describes the farmer sowing cumin on levelled ground and beating out its seed with a rod. Daniel uses a similarly spelled noun for the stores of gold and silver that come under a king’s control.",
+  "words": [
+    {
+      "lemma": "כַּמֹּן",
+      "bdb": [
+        "k.bs.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "cumin",
+      "senses": [
+        {
+          "gloss": "cumin",
+          "definition": "A seed crop. The farmer scatters its seed and threshes it with a rod light enough for the purpose.",
+          "evidence": [
+            {
+              "ref": "Isa.28.27",
+              "note": "The wheel of a cart would be too heavy for cumin.",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.28.25",
+              "note": "Cumin is sown alongside black cumin and grains."
+            }
+          ],
+          "id": "cumin-crop",
+          "cognate_ids": [
+            "akk-cumin",
+            "phn-cumin",
+            "ug-cumin",
+            "ar-cumin",
+            "gez-cumin",
+            "mandaic-cumin"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κύμινον",
+          "gloss": "cumin",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa 28:25, 27, כַּמֹּן rendered by κύμινον"
+            },
+            {
+              "ref": "Mat.23.23"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִכְמָן",
+      "bdb": [
+        "k.bs.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "treasure, stored wealth",
+      "senses": [
+        {
+          "gloss": "stores of treasure",
+          "definition": "Accumulated valuables over which a conqueror gains control.",
+          "evidence": [
+            {
+              "ref": "Dan.11.43",
+              "note": "Gold and silver specify the contents of the stores among Egypt’s riches.",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כַּמּוּנָא",
+      "root": "כמונא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "cumin",
+      "senses": [
+        {
+          "gloss": "cumin",
+          "definition": "A spice on which the scribes and Pharisees carefully pay a tithe.",
+          "evidence": [
+            {
+              "ref": "Mat.23.23",
+              "note": "Jesus names it with mint and anise.",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "cumin-crop"
+          ],
+          "cognate_ids": [
+            "akk-cumin",
+            "phn-cumin",
+            "ug-cumin",
+            "ar-cumin",
+            "gez-cumin",
+            "mandaic-cumin"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּמֵאנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "ambush",
+      "senses": [
+        {
+          "gloss": "ambush",
+          "definition": "A concealed attack prepared for a traveller.",
+          "evidence": [
+            {
+              "ref": "Act.25.3",
+              "note": "The men asking for Paul’s transfer to Jerusalem plan an ambush on the road.",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.23.21"
+            },
+            {
+              "ref": "Act.23.30"
+            }
+          ],
+          "cognate_ids": [
+            "arc-ambush",
+            "ar-hide"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-cumin",
+      "lang": "akk",
+      "form": "kamūnu",
+      "translit": "kamūnu",
+      "gloss": "cumin",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000026030; dcclt x0003954"
+        }
+      ]
+    },
+    {
+      "id": "phn-cumin",
+      "lang": "phn",
+      "form": "𐤊𐤌𐤍",
+      "translit": "kmn",
+      "gloss": "cumin",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "KMN, KAI 51 obverse 6, listed with almonds and sesame"
+        }
+      ]
+    },
+    {
+      "id": "ug-cumin",
+      "lang": "uga",
+      "form": "𐎋𐎎𐎐",
+      "translit": "kmn",
+      "gloss": "cumin",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000181, UGC002278"
+        },
+        {
+          "source": "dulat-2015",
+          "locator": "kmn, KTU 4.14:9; compare Watson, A Botanical Snapshot of Ugarit, §7",
+          "url": "https://www.ub.edu/ipoa/wp-content/uploads/2021/09/20041AuOrWatson.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ar-cumin",
+      "lang": "ar",
+      "form": "كَمُّون",
+      "translit": "kammūn",
+      "gloss": "cumin",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1440, n20878, كَمُّون as the spice put into a cooking pot"
+        }
+      ]
+    },
+    {
+      "id": "gez-cumin",
+      "lang": "gez",
+      "form": "ከሚን",
+      "translit": "kämin",
+      "gloss": "cumin",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "ክሚን and variants including ከሚን, Matt 23:23 and Isa 28"
+        }
+      ]
+    },
+    {
+      "id": "mandaic-cumin",
+      "lang": "arc",
+      "form": "ࡊࡀࡌࡅࡍࡀ",
+      "translit": "kamuna",
+      "gloss": "cumin",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "kamuna, AM 287:42; DC 46, plural kamunia"
+        }
+      ],
+      "note": "Classical Mandaic."
+    },
+    {
+      "id": "ar-hide",
+      "lang": "ar",
+      "form": "مَكْمَنٌ",
+      "translit": "makman",
+      "gloss": "hiding place, place of ambush",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3003, مَكْمَنٌ"
+        }
+      ]
+    },
+    {
+      "id": "arc-ambush",
+      "lang": "arc",
+      "form": "יכמון",
+      "translit": "yikmōn",
+      "gloss": "lie in ambush",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "kmn V, Targum Pseudo-Jonathan Deut 19:11; also Samaritan Targum J Ex 21:13"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The evidence identifies the spice widely but leaves the routes by which its name spread open. The Arabic and Aramaic words for hiding explain the proposed connection with treasure kept in store. Daniel specifies the precious metals without saying where or how they were concealed. SEDRA 1539 and 1540 have New Testament occurrences; verb 1541 has none."
+}
