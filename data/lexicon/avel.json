@@ -1,0 +1,1383 @@
+{
+  "id": "avel",
+  "root": "אבל",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "mourning",
+    "grief",
+    "death",
+    "lament",
+    "comfort",
+    "land",
+    "drought",
+    "place-names",
+    "camels",
+    "particle"
+  ],
+  "gloss": "mourn; mourning, mourner; (of land) mourn, wither",
+  "summary": "To mourn: to keep the days and signs of grief for the dead, or for a loss, a sin or a ruin, putting off ornaments, oil and pleasant food. The hithpael is the mourning of people (Jacob for Joseph, David for Absalom, Samuel for Saul, Daniel three weeks); the qal is mostly said of the land, its pastures, vines and gates, which “mourn” and wither under drought and judgment, beside יָבֵשׁ “dry up” and אֻמְלַל “languish”. The noun אֵבֶל is mourning, set against joy and feasting, and the adjective אָבֵל is the mourner, whom Yahweh promises to comfort (Isa 61:2–3), a promise Jesus takes up: “blessed are those who mourn, for they will be comforted” (Mat 5:4). The same spelling gives the place-name element Abel, perhaps “meadow”, and the particle אֲבָל “truly; but”, whose ties to the root are not shown.",
+  "words": [
+    {
+      "lemma": "אָבַל",
+      "pos": "verb",
+      "gloss": "mourn; (of land) mourn, wither; (hiphil) cause to mourn",
+      "bdb": [
+        "a.ai.aa"
+      ],
+      "cognate_ids": [
+        "arc-avel"
+      ],
+      "summary": "39 times. The hithpael (19) is said of people and their rites; the qal (18) is said once of a man's soul (Job 14:22) and of people under judgment, but mostly of the land, its pastures and gates, beside words for drying and withering; the hiphil (2) is Yahweh's act.",
+      "stems": [
+        {
+          "stem": "hithpael",
+          "gloss": "mourn, keep mourning",
+          "senses": [
+            {
+              "id": "keep-mourning",
+              "gloss": "mourn, keep mourning",
+              "definition": "To mourn and show it: for the dead, for many days, in garments of mourning and without oil or ornaments; also over an evil word, a sin, a rejected king or a ruined city, with fasting, weeping and prayer.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.34",
+                  "role": "defining",
+                  "note": "Jacob tore his clothes, put sackcloth on his loins, “וַיִּתְאַבֵּל for his son many days”."
+                },
+                {
+                  "ref": "2Sa.14.2",
+                  "role": "defining",
+                  "note": "“הִתְאַבְּלִי נָא, put on garments of mourning (בִגְדֵי אֵבֶל), do not anoint yourself with oil, but be like a woman these many days מִתְאַבֶּלֶת for one dead”: the rites named."
+                },
+                {
+                  "ref": "Exo.33.4",
+                  "role": "defining",
+                  "note": "The people heard the evil word, “וַיִּתְאַבָּלוּ, and no man put his ornaments on him”."
+                },
+                {
+                  "ref": "Dan.10.2",
+                  "to": "Dan.10.3",
+                  "role": "defining",
+                  "note": "“I was מִתְאַבֵּל three weeks of days: pleasant bread I did not eat, no flesh or wine came into my mouth, nor did I anoint myself.”"
+                },
+                {
+                  "ref": "Neh.1.4",
+                  "note": "Hearing of Jerusalem's broken wall, “I sat down and wept, וָאֶתְאַבְּלָה days, and was fasting and praying”."
+                },
+                {
+                  "ref": "Ezr.10.6",
+                  "note": "Ezra ate no bread and drank no water, “for he was מִתְאַבֵּל over the unfaithfulness of the exiles”."
+                },
+                {
+                  "ref": "Num.14.39",
+                  "note": "At Moses' words that the generation would die in the wilderness, “the people mourned greatly”."
+                },
+                {
+                  "ref": "1Sa.6.19",
+                  "note": "The people mourned because Yahweh had struck them."
+                },
+                {
+                  "ref": "1Sa.15.35",
+                  "note": "Samuel mourned for Saul, whom Yahweh had rejected."
+                },
+                {
+                  "ref": "1Sa.16.1",
+                  "role": "defining",
+                  "note": "“How long will you be מִתְאַבֵּל for Saul, since I have rejected him?”: mourning for one still living."
+                },
+                {
+                  "ref": "2Sa.13.37",
+                  "note": "David mourned for his son all the days."
+                },
+                {
+                  "ref": "2Sa.19.2",
+                  "note": "“The king is weeping וַיִּתְאַבֵּל for Absalom”: weeping beside it."
+                },
+                {
+                  "ref": "1Ch.7.22",
+                  "note": "Ephraim mourned many days, “and his brothers came to comfort him”."
+                },
+                {
+                  "ref": "2Ch.35.24",
+                  "note": "All Judah and Jerusalem mourned for Josiah."
+                },
+                {
+                  "ref": "Neh.8.9",
+                  "role": "defining",
+                  "note": "“This day is holy to Yahweh your God; אַל תִּתְאַבְּלוּ and do not weep”: mourning has no place on a holy day."
+                },
+                {
+                  "ref": "Isa.66.10",
+                  "note": "“Rejoice with Jerusalem … all הַמִּתְאַבְּלִים over her”: mourners become rejoicers."
+                },
+                {
+                  "ref": "Ezk.7.12",
+                  "role": "defining",
+                  "note": "“Let not the buyer rejoice (יִשְׂמָח) nor the seller יִתְאַבָּל”: the opposite of rejoicing."
+                },
+                {
+                  "ref": "Ezk.7.27",
+                  "note": "“The king will mourn, and the prince will be clothed with desolation.”"
+                }
+              ],
+              "kin": [
+                "mourning-rites",
+                "mourning-mourner"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "mourn; (of land and its growth) mourn, wither",
+          "senses": [
+            {
+              "id": "people-mourn",
+              "gloss": "mourn",
+              "definition": "Of people, a city's gates or a man's own soul: to mourn under loss or judgment, beside lamenting and languishing.",
+              "evidence": [
+                {
+                  "ref": "Isa.3.26",
+                  "role": "defining",
+                  "note": "“Her gates will lament (וְאָנוּ) and mourn (וְאָבְלוּ), and emptied she will sit on the ground.”"
+                },
+                {
+                  "ref": "Isa.19.8",
+                  "note": "The fishermen of the Nile “will lament … will mourn … will languish”."
+                },
+                {
+                  "ref": "Jer.14.2",
+                  "note": "“Judah mourns and her gates languish (אֻמְלְלוּ).”"
+                },
+                {
+                  "ref": "Hos.10.5",
+                  "note": "Its people will mourn over the calf of Beth-aven, whose glory has departed."
+                },
+                {
+                  "ref": "Jol.1.9",
+                  "note": "The offerings are cut off from the house of Yahweh; “the priests mourn, the servants of Yahweh”."
+                },
+                {
+                  "ref": "Amo.8.8",
+                  "note": "“Will not the land tremble for this, and everyone who dwells in it mourn?”"
+                },
+                {
+                  "ref": "Amo.9.5",
+                  "note": "Yahweh touches the land and it melts, “and all who dwell in it mourn”."
+                },
+                {
+                  "ref": "Job.14.22",
+                  "role": "defining",
+                  "note": "Of a man who dies and does not rise (Job 14:10–12): “his flesh upon him is in pain, and his soul (נַפְשׁוֹ) upon him תֶּאֱבָל”: the mourning is the man's own, as long as he lives."
+                }
+              ],
+              "kin": [
+                "mourning-mourner"
+              ]
+            },
+            {
+              "id": "land-mourns",
+              "gloss": "(of land, pasture, vine) mourn, wither, dry up",
+              "definition": "Of the land, the ground, the pastures and the new wine: to mourn, shown by its drying and withering under drought, curse or judgment. The verb stands each time beside יָבֵשׁ “dry up”, אֻמְלַל “languish” or נָבֵל “wither”, so that the land's mourning is its dryness.",
+              "cognate_ids": [
+                "akk-abalu"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jer.12.4",
+                  "role": "defining",
+                  "note": "“How long תֶּאֱבַל the land, and the grass of every field dries up (יִיבָשׁ)? For the evil of those who dwell in it.”"
+                },
+                {
+                  "ref": "Jer.23.10",
+                  "role": "defining",
+                  "note": "“Because of the curse אָבְלָה the land, the pastures of the wilderness are dried up (יָבְשׁוּ).”"
+                },
+                {
+                  "ref": "Amo.1.2",
+                  "role": "defining",
+                  "note": "“Yahweh roars from Zion … and the pastures of the shepherds mourn, and the top of Carmel dries up (וְיָבֵשׁ).”"
+                },
+                {
+                  "ref": "Isa.24.4",
+                  "role": "defining",
+                  "note": "“אָבְלָה, withers (נָבְלָה) the earth; the world languishes (אֻמְלְלָה), withers.”"
+                },
+                {
+                  "ref": "Isa.24.7",
+                  "note": "“The new wine mourns, the vine languishes.”"
+                },
+                {
+                  "ref": "Isa.33.9",
+                  "note": "“The land mourns, languishes; Lebanon is ashamed and withers.”"
+                },
+                {
+                  "ref": "Jer.4.28",
+                  "note": "“For this the land will mourn, and the heavens above be dark.”"
+                },
+                {
+                  "ref": "Jer.12.11",
+                  "note": "“Made a desolation, it mourns to me, desolate.”"
+                },
+                {
+                  "ref": "Hos.4.3",
+                  "role": "defining",
+                  "note": "“Therefore the land תֶּאֱבַל, and all who dwell in it languish, with the beasts of the field and the birds of the heavens; and the fish of the sea are taken away.”"
+                },
+                {
+                  "ref": "Jol.1.10",
+                  "role": "defining",
+                  "note": "“The field is laid waste, the ground אָבְלָה, for the grain is laid waste; the new wine is dried up (הוֹבִישׁ), the oil languishes.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to mourn",
+          "senses": [
+            {
+              "gloss": "cause to mourn",
+              "definition": "Of Yahweh: to make a land, a rampart or a wall mourn at a fall, again beside languishing and withering.",
+              "evidence": [
+                {
+                  "ref": "Ezk.31.15",
+                  "role": "defining",
+                  "note": "“In the day it went down to the grave (שְׁאֹלָה) הֶאֱבַלְתִּי; I covered the deep over it … I made Lebanon dark over it, and all the trees of the field fainted.”"
+                },
+                {
+                  "ref": "Lam.2.8",
+                  "role": "defining",
+                  "note": "“וַיַּאֲבֶל rampart and wall; together they languish (אֻמְלָלוּ).”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πενθέω",
+          "gloss": "mourn",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Sa.16.1 → πενθεῖς; 2Sa.14.2 → πενθοῦσα; 2Sa.19.2 → πενθεῖ; Neh.8.9 → πενθεῖτε; Isa.66.10 → πενθεῖτε; Hos.4.3 → πενθήσει; Jer.12.4 → πενθήσει; πενθέω renders אָבַל through both stems"
+            },
+            {
+              "ref": "Jas.4.9",
+              "role": "defining",
+              "note": "“Be wretched and mourn (πενθήσατε) and weep; let your laughter be turned to mourning (πένθος)”: the turning of Amo 8:10 and Lam 5:15, and the Peshitta has ܐܬܐܒܠܘ."
+            },
+            {
+              "ref": "1Co.5.2",
+              "note": "“You have not rather mourned (ἐπενθήσατε)”, over sin in the assembly, as Ezra over the exiles' unfaithfulness (Ezr 10:6)."
+            },
+            {
+              "ref": "2Co.12.21",
+              "note": "“I may mourn (πενθήσω) over many who have sinned and not repented.”"
+            },
+            {
+              "ref": "Mat.9.15",
+              "note": "“Can the sons of the bridechamber mourn (πενθεῖν) while the bridegroom is with them?”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֻמְלַל",
+            "note": "“Languish”: the land, the gates, the people and the wall languish as they mourn.",
+            "evidence": [
+              {
+                "ref": "Isa.24.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.33.9"
+              },
+              {
+                "ref": "Jer.14.2"
+              },
+              {
+                "ref": "Hos.4.3"
+              },
+              {
+                "ref": "Jol.1.10"
+              },
+              {
+                "ref": "Lam.2.8"
+              }
+            ]
+          },
+          {
+            "lemma": "יָבֵשׁ",
+            "note": "“Dry up”: the land mourns and its grass and pastures dry up.",
+            "evidence": [
+              {
+                "ref": "Jer.12.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.23.10"
+              },
+              {
+                "ref": "Amo.1.2"
+              },
+              {
+                "ref": "Jol.1.10"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּכָה",
+            "note": "“Weep”: mourning is done with weeping.",
+            "evidence": [
+              {
+                "ref": "2Sa.19.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.1.4"
+              },
+              {
+                "ref": "Neh.8.9"
+              },
+              {
+                "ref": "Gen.37.35"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׂמַח",
+            "note": "“Rejoice”: the buyer rejoices and the seller mourns; Jerusalem's mourners are called to rejoice with her.",
+            "evidence": [
+              {
+                "ref": "Ezk.7.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.66.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֵבֶל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "mourning",
+      "bdb": [
+        "a.ai.ab"
+      ],
+      "cognate_ids": [
+        "arc-evla"
+      ],
+      "senses": [
+        {
+          "id": "mourning-rites",
+          "gloss": "mourning, the days and rites of mourning",
+          "definition": "Mourning for the dead and its time and signs: “days of mourning”, “garments of mourning”, mourning that is “made” for seven or thirty days, the bread and cup of mourners, and the house where it is kept.",
+          "evidence": [
+            {
+              "ref": "Gen.50.10",
+              "role": "defining",
+              "note": "“He made for his father אֵבֶל seven days.”"
+            },
+            {
+              "ref": "Gen.50.11",
+              "role": "defining",
+              "note": "The Canaanites “saw the אֵבֶל at the threshing floor of Atad and said, אֵבֶל כָּבֵד this is to Egypt; therefore its name was called אָבֵל מִצְרַיִם”."
+            },
+            {
+              "ref": "Deu.34.8",
+              "role": "defining",
+              "note": "Israel wept for Moses thirty days, “and the days of weeping, of אֵבֶל for Moses, were ended”."
+            },
+            {
+              "ref": "Gen.27.41",
+              "note": "“The days of mourning for my father are near.”"
+            },
+            {
+              "ref": "2Sa.11.27",
+              "note": "“The mourning passed”, and David took Bathsheba."
+            },
+            {
+              "ref": "2Sa.14.2",
+              "note": "“Put on garments of mourning (בִגְדֵי אֵבֶל).”"
+            },
+            {
+              "ref": "Jer.6.26",
+              "note": "“Gird on sackcloth, roll in ashes; make yourself אֵבֶל as for an only son, a most bitter lament.”"
+            },
+            {
+              "ref": "Jer.16.7",
+              "note": "No one will break bread for them “in mourning” to comfort them for the dead, nor give them the cup of consolation."
+            },
+            {
+              "ref": "Ezk.24.17",
+              "role": "defining",
+              "note": "“Sigh in silence; for the dead you shall not make אֵבֶל”: then are named the turban, sandals, covered lip and bread of men that mourning would change."
+            },
+            {
+              "ref": "Ecc.7.2",
+              "role": "defining",
+              "note": "“Better to go to a house of אֵבֶל than to a house of feasting, for that is the end of every man, and the living will lay it to heart.”"
+            },
+            {
+              "ref": "Ecc.7.4",
+              "note": "“The heart of the wise is in the house of mourning, the heart of fools in the house of joy.”"
+            },
+            {
+              "ref": "Mic.1.8",
+              "note": "“I will make a lament like the jackals and mourning like the ostriches.”"
+            },
+            {
+              "ref": "Amo.5.16",
+              "note": "They will call the farmer to mourning and the skilled in lament to wailing."
+            }
+          ],
+          "kin": [
+            "keep-mourning"
+          ]
+        },
+        {
+          "id": "mourning-for-joy",
+          "gloss": "mourning, as the opposite of joy",
+          "definition": "Mourning as the state set against joy, feasting and dancing: Yahweh turns feasts into mourning in judgment, and turns mourning into joy when he restores his people.",
+          "evidence": [
+            {
+              "ref": "Amo.8.10",
+              "role": "defining",
+              "note": "“I will turn your feasts into אֵבֶל and all your songs into lament … I will make it like the mourning for an only son.”"
+            },
+            {
+              "ref": "Lam.5.15",
+              "role": "defining",
+              "note": "“The joy of our heart has ceased; our dancing is turned to אֵבֶל.”"
+            },
+            {
+              "ref": "Jer.31.13",
+              "role": "defining",
+              "note": "“I will turn their mourning (אֶבְלָם) to joy (לְשָׂשׂוֹן) and comfort them.”"
+            },
+            {
+              "ref": "Est.9.22",
+              "role": "defining",
+              "note": "The month “turned for them from sorrow to joy and from אֵבֶל to a good day”."
+            },
+            {
+              "ref": "Isa.61.3",
+              "role": "defining",
+              "note": "To give the mourners of Zion “the oil of joy instead of אֵבֶל”."
+            },
+            {
+              "ref": "Isa.60.20",
+              "note": "“Yahweh will be your everlasting light, and the days of your mourning will be ended.”"
+            },
+            {
+              "ref": "2Sa.19.3",
+              "note": "“The victory that day became mourning for all the people.”"
+            },
+            {
+              "ref": "Est.4.3",
+              "note": "Where the king's decree came “there was great mourning among the Jews, and fasting, weeping and wailing”."
+            },
+            {
+              "ref": "Job.30.31",
+              "note": "“My harp is turned to mourning, and my pipe to the voice of those who weep.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πένθος",
+          "gloss": "mourning",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.50.11; 2Sa.11.27; 19.3; Est.4.3; Jer.6.26; 31.13; Lam.5.15; Amo.5.16; 8.10; Mic.1.8, אֵבֶל → πένθος"
+            },
+            {
+              "ref": "Jas.4.9",
+              "role": "defining",
+              "note": "“Let your laughter be turned to mourning (πένθος) and your joy to gloom”: Amo 8:10 and Lam 5:15 made a call to repentance."
+            },
+            {
+              "ref": "Rev.21.4",
+              "role": "defining",
+              "note": "“Death will be no more, nor mourning (πένθος) nor crying nor pain”: the days of mourning ended, as Isa 60:20."
+            },
+            {
+              "ref": "Rev.18.7",
+              "to": "Rev.18.8",
+              "note": "Babylon says “I will not see mourning”; in one day come “death and mourning and famine”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִסְפֵּד",
+            "note": "“Wailing, lament for the dead.”",
+            "evidence": [
+              {
+                "ref": "Gen.50.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.4.3"
+              },
+              {
+                "ref": "Jer.6.26"
+              },
+              {
+                "ref": "Amo.5.16"
+              },
+              {
+                "ref": "Mic.1.8"
+              }
+            ]
+          },
+          {
+            "lemma": "קִינָה",
+            "note": "“Lament, dirge.”",
+            "evidence": [
+              {
+                "ref": "Amo.8.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׂשׂוֹן",
+            "note": "“Joy”: mourning turned to joy, the oil of joy for mourning.",
+            "evidence": [
+              {
+                "ref": "Jer.31.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.61.3"
+              }
+            ]
+          },
+          {
+            "lemma": "שִׂמְחָה",
+            "note": "“Gladness”: the house of mourning against the house of gladness; sorrow turned to gladness.",
+            "evidence": [
+              {
+                "ref": "Ecc.7.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.9.22"
+              }
+            ]
+          },
+          {
+            "lemma": "מָחוֹל",
+            "note": "“Dancing”, turned to mourning.",
+            "evidence": [
+              {
+                "ref": "Lam.5.15",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יְמֵי אֵבֶל",
+            "gloss": "days of mourning",
+            "evidence": [
+              {
+                "ref": "Gen.27.41",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.34.8"
+              },
+              {
+                "ref": "Isa.60.20"
+              }
+            ]
+          },
+          {
+            "phrase": "עָשָׂה אֵבֶל",
+            "gloss": "make, keep mourning",
+            "evidence": [
+              {
+                "ref": "Gen.50.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.6.26"
+              },
+              {
+                "ref": "Ezk.24.17"
+              },
+              {
+                "ref": "Mic.1.8"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית אֵבֶל",
+            "gloss": "house of mourning",
+            "evidence": [
+              {
+                "ref": "Ecc.7.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.7.4"
+              }
+            ]
+          },
+          {
+            "phrase": "בִּגְדֵי אֵבֶל",
+            "gloss": "garments of mourning",
+            "evidence": [
+              {
+                "ref": "2Sa.14.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אָבֵל",
+      "pos": "adjective",
+      "gloss": "mourning; (as a noun) mourner",
+      "bdb": [
+        "a.ai.ad"
+      ],
+      "cognate_ids": [
+        "arc-avel",
+        "ar-abil"
+      ],
+      "summary": "Seven uses; the other ten tokens filed under its key are the place-name element אָבֵל (Abel), which the database tags under both.",
+      "senses": [
+        {
+          "id": "mourning-mourner",
+          "gloss": "mourning; mourner",
+          "definition": "In mourning, said of a man in grief or of Zion's empty roads; with the article or a suffix, the mourner, the one Yahweh and the righteous comfort.",
+          "evidence": [
+            {
+              "ref": "Gen.37.35",
+              "role": "defining",
+              "note": "Jacob refused to be comforted: “I will go down to my son to the grave (שְׁאֹלָה) אָבֵל.”"
+            },
+            {
+              "ref": "Psa.35.14",
+              "role": "defining",
+              "note": "“As one mourning (כַּאֲבֶל) a mother, in dark clothes (קֹדֵר) I bowed down.”"
+            },
+            {
+              "ref": "Est.6.12",
+              "note": "Haman hurried home “אָבֵל and with his head covered”."
+            },
+            {
+              "ref": "Lam.1.4",
+              "note": "“The roads of Zion are mourning (אֲבֵלוֹת), for none come to the appointed feast.”"
+            },
+            {
+              "ref": "Job.29.25",
+              "role": "defining",
+              "note": "“As one who comforts mourners (אֲבֵלִים יְנַחֵם).”"
+            },
+            {
+              "ref": "Isa.57.18",
+              "note": "“I will heal him … and restore comforts to him and to his mourners.”"
+            },
+            {
+              "ref": "Isa.61.2",
+              "role": "defining",
+              "note": "The anointed one is sent “to comfort (לְנַחֵם) all אֲבֵלִים”."
+            },
+            {
+              "ref": "Isa.61.3",
+              "note": "“To appoint to the mourners of Zion (לַאֲבֵלֵי צִיּוֹן) … the oil of joy instead of mourning.”"
+            },
+            {
+              "ref": "Mat.5.4",
+              "role": "defining",
+              "note": "“Blessed are those who mourn (οἱ πενθοῦντες), for they will be comforted (παρακληθήσονται)”: the comforting of Isa 61:2; the Peshitta has ܠܐܒܝܠܐ."
+            }
+          ],
+          "kin": [
+            "keep-mourning",
+            "people-mourn"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πενθέω",
+          "gloss": "mourn; (participle) mourner",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.37.35 → πενθῶν; Psa.35.14 → πενθῶν; Isa.61.3 → πενθοῦσιν"
+            },
+            {
+              "ref": "Mat.5.4",
+              "role": "defining",
+              "note": "“Blessed are οἱ πενθοῦντες, for they will be comforted”: Isa 61:2–3."
+            },
+            {
+              "ref": "Luk.6.25",
+              "note": "The reverse: “woe to you who laugh now, for you will mourn and weep.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "נִחַם אֲבֵלִים",
+            "gloss": "comfort mourners",
+            "evidence": [
+              {
+                "ref": "Isa.61.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.29.25"
+              },
+              {
+                "ref": "Isa.57.18"
+              },
+              {
+                "ref": "Gen.37.35"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "קֹדֵר",
+            "note": "“Dark, in mourning clothes.”",
+            "evidence": [
+              {
+                "ref": "Psa.35.14",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֲבָל",
+      "pos": "adverb",
+      "gloss": "truly, indeed; but, however",
+      "bdb": [
+        "a.ak.aa"
+      ],
+      "cognate_ids": [
+        "phn-bl",
+        "ar-bal",
+        "arc-abal"
+      ],
+      "summary": "Eleven times. In Genesis to Kings it answers or asserts, “no, rather” or “truly”; in Daniel, Ezra and Chronicles it is “but, however”. Its tie to the root's sense of mourning is not shown: its cognates are particles, Punic ʾbl “not” and Arabic bal “nay, rather”, which point to a particle בַּל with a prefixed א rather than to mourning. It is kept here because it has the root's spelling.",
+      "senses": [
+        {
+          "gloss": "truly, indeed; no, rather",
+          "definition": "In answer or assertion, setting a fact against what was said or hoped: “no, rather”, “truly”.",
+          "evidence": [
+            {
+              "ref": "Gen.17.19",
+              "role": "defining",
+              "note": "Abraham asks that Ishmael might live before God; God answers, “אֲבָל, Sarah your wife will bear you a son”: no, rather."
+            },
+            {
+              "ref": "Gen.42.21",
+              "role": "defining",
+              "note": "“אֲבָל we are guilty concerning our brother.”"
+            },
+            {
+              "ref": "2Sa.14.5",
+              "note": "“אֲבָל, I am a widow woman, and my husband is dead”, said by the woman told to feign mourning (2Sa 14:2)."
+            },
+            {
+              "ref": "1Ki.1.43",
+              "note": "“אֲבָל, our lord king David has made Solomon king.”"
+            },
+            {
+              "ref": "2Ki.4.14",
+              "note": "“אֲבָל, she has no son, and her husband is old.”"
+            }
+          ]
+        },
+        {
+          "gloss": "but, however",
+          "definition": "In the later books, an adversative opening a clause: but, nevertheless.",
+          "evidence": [
+            {
+              "ref": "Dan.10.7",
+              "role": "defining",
+              "note": "The men with Daniel did not see the vision, “אֲבָל a great trembling fell on them”."
+            },
+            {
+              "ref": "Dan.10.21"
+            },
+            {
+              "ref": "Ezr.10.13",
+              "note": "“אֲבָל the people are many and it is a time of rain.”"
+            },
+            {
+              "ref": "2Ch.1.4"
+            },
+            {
+              "ref": "2Ch.19.3",
+              "role": "defining",
+              "note": "After rebuke: “אֲבָל good things are found in you.”"
+            },
+            {
+              "ref": "2Ch.33.17",
+              "note": "“אֲבָל the people still sacrificed at the high places, only to Yahweh their God.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָבֵל",
+      "pos": "name",
+      "gloss": "Abel, in place names; perhaps “meadow, watered ground”",
+      "bdb": [
+        "a.aj.ab"
+      ],
+      "cognate_ids": [
+        "ar-ubul"
+      ],
+      "summary": "The first part of several place names, mostly with a second word: Abel-beth-maacah (also Abel, Abel-maim), Abel-shittim, Abel-keramim, Abel-meholah and Abel-mizraim. Scripture explains only Abel-mizraim, by the mourning for Jacob there (Gen 50:11), a play on אֵבֶל. The names with “waters”, “vineyards” and “acacias” suggest watered, green ground, and Arabic ʾubul “fresh herbage on which camels fatten” may be the same word, which rests on little. Its key's 414 tokens count the second words of these names (Egypt, water, Maacah…) as well; Abel itself is about twenty. Places, so they have no name entries.",
+      "senses": [
+        {
+          "gloss": "Abel-beth-maacah; Abel; Abel-maim",
+          "definition": "A walled city in the far north of Naphtali, near Ijon and Dan, where Sheba son of Bichri was besieged; a city known for wise counsel.",
+          "evidence": [
+            {
+              "ref": "2Sa.20.14",
+              "to": "2Sa.20.15",
+              "role": "defining",
+              "note": "Sheba went “to אָבֵלָה and Beth-maacah”, and Joab besieged him “in אָבֵל בֵּית הַמַּעֲכָה”."
+            },
+            {
+              "ref": "2Sa.20.18",
+              "note": "“Let them ask counsel at אָבֵל, and so they settled a matter.”"
+            },
+            {
+              "ref": "1Ki.15.20",
+              "note": "Struck by Ben-hadad with Ijon and Dan."
+            },
+            {
+              "ref": "2Ch.16.4",
+              "role": "defining",
+              "note": "The same list names it אָבֵל מָיִם, “Abel of waters”."
+            },
+            {
+              "ref": "2Ki.15.29",
+              "note": "Taken by Tiglath-pileser."
+            }
+          ]
+        },
+        {
+          "gloss": "Abel-shittim",
+          "definition": "Israel's last camp in the plains of Moab by the Jordan, “Abel of the acacias”.",
+          "evidence": [
+            {
+              "ref": "Num.33.49",
+              "role": "defining",
+              "note": "“From Beth-jeshimoth to אָבֵל הַשִּׁטִּים in the plains of Moab.”"
+            }
+          ]
+        },
+        {
+          "gloss": "Abel-keramim",
+          "definition": "A place in Ammon, the limit of Jephthah's victory, “Abel of vineyards”.",
+          "evidence": [
+            {
+              "ref": "Jdg.11.33",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "Abel-meholah",
+          "definition": "A place in the Jordan valley near Beth-shan, the home of Elisha.",
+          "evidence": [
+            {
+              "ref": "Jdg.7.22",
+              "role": "defining",
+              "note": "Midian fled “to the border of אָבֵל מְחוֹלָה”."
+            },
+            {
+              "ref": "1Ki.4.12",
+              "note": "Named with Beth-shan in Solomon's fifth district."
+            },
+            {
+              "ref": "1Ki.19.16",
+              "note": "“Elisha son of Shaphat of אָבֵל מְחוֹלָה.”"
+            }
+          ]
+        },
+        {
+          "gloss": "Abel-mizraim",
+          "definition": "The threshing floor of Atad beyond the Jordan, named for the mourning of Egypt there for Jacob.",
+          "evidence": [
+            {
+              "ref": "Gen.50.11",
+              "role": "defining",
+              "note": "“אֵבֶל כָּבֵד this is to Egypt; therefore its name was called אָבֵל מִצְרַיִם”: the text reads the name as אֵבֶל “mourning”."
+            }
+          ]
+        },
+        {
+          "gloss": "“the great Abel” at Beth-shemesh",
+          "definition": "The great stone on which the ark was set in the field of Joshua of Beth-shemesh; the text spells it אָבֵל where the story calls it a stone.",
+          "evidence": [
+            {
+              "ref": "1Sa.6.18",
+              "role": "defining",
+              "note": "“Unto אָבֵל הַגְּדוֹלָה on which they set the ark of Yahweh.”"
+            },
+            {
+              "ref": "1Sa.6.14",
+              "to": "1Sa.6.15",
+              "note": "“There was a great stone (אֶבֶן גְּדוֹלָה)” and “they set them on the great stone”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲבַל",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "mourn",
+      "cognate_ids": [
+        "arc-avel"
+      ],
+      "summary": "The Peshitta's ܐܒܠ, where the Greek has πενθέω: the same verb as the Hebrew, in the same sense.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "mourn (participle: mourning)",
+          "senses": [
+            {
+              "gloss": "mourning",
+              "definition": "The participle, of those mourning and weeping.",
+              "evidence": [
+                {
+                  "ref": "Mrk.16.10",
+                  "role": "defining",
+                  "note": "Mary told those who had been with him, “who were mourning (ܕܐܒܝܠܝܢ) and weeping”."
+                },
+                {
+                  "ref": "Rev.18.15",
+                  "note": "The merchants stand afar off “weeping and mourning”."
+                },
+                {
+                  "ref": "Rev.18.19"
+                }
+              ],
+              "kin": [
+                "keep-mourning"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "mourn",
+          "senses": [
+            {
+              "gloss": "mourn",
+              "definition": "To mourn, for the dead, over sin, or under judgment.",
+              "evidence": [
+                {
+                  "ref": "Act.8.2",
+                  "role": "defining",
+                  "note": "Devout men buried Stephen “and mourned for him greatly”."
+                },
+                {
+                  "ref": "Luk.6.25",
+                  "note": "“Woe to you who laugh now, for you will mourn and weep.”"
+                },
+                {
+                  "ref": "2Co.12.21",
+                  "note": "“I may mourn over many who have sinned.”"
+                },
+                {
+                  "ref": "Jas.4.9",
+                  "role": "defining",
+                  "note": "“Mourn and weep; let your laughter be turned to mourning.”"
+                },
+                {
+                  "ref": "Rev.18.11",
+                  "note": "The merchants of the earth weep and mourn over her."
+                }
+              ],
+              "kin": [
+                "keep-mourning"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֶבְלָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "mourning, grief",
+      "cognate_ids": [
+        "arc-evla"
+      ],
+      "senses": [
+        {
+          "gloss": "mourning, grief",
+          "definition": "Mourning, grief, as the Hebrew אֵבֶל, for the Greek πένθος and once ὀδυρμός.",
+          "evidence": [
+            {
+              "ref": "1Co.5.2",
+              "note": "“You have not rather sat in mourning (ܒܐܒܠܐ).”"
+            },
+            {
+              "ref": "2Co.7.7",
+              "note": "“Your mourning (ܐܒܠܟܘܢ)”, the Corinthians' grief over their sin."
+            },
+            {
+              "ref": "Jas.4.9",
+              "role": "defining",
+              "note": "“Let your laughter be turned to mourning (ܠܐܒܠܐ).”"
+            },
+            {
+              "ref": "Rev.18.7",
+              "to": "Rev.18.8"
+            },
+            {
+              "ref": "Rev.21.4",
+              "role": "defining",
+              "note": "“Death will be no more, nor mourning.”"
+            }
+          ],
+          "kin": [
+            "mourning-rites",
+            "mourning-for-joy"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲבִילָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "mourner",
+      "cognate_ids": [
+        "arc-avel",
+        "ar-abil"
+      ],
+      "senses": [
+        {
+          "gloss": "mourner",
+          "definition": "One who mourns, as the Hebrew אָבֵל.",
+          "evidence": [
+            {
+              "ref": "Mat.5.4",
+              "role": "defining",
+              "note": "“Blessed are the mourners (ܠܐܒܝܠܐ), for they will be comforted”: the אֲבֵלִים of Isa 61:2."
+            }
+          ],
+          "kin": [
+            "mourning-mourner"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-avel",
+      "lang": "arc",
+      "form": "אָבֵל، אֲבֵל، אֲבֵלָא",
+      "translit": "ʾāḇēl, ʾăḇēl, ʾăḇēlā",
+      "gloss": "mourner; (ithpaal, pael) mourn, wear mourning",
+      "relation": "cognate",
+      "note": "Jewish Aramaic and Mishnaic Hebrew: the mourner during the seven days after burial, and the verb “mourn, keep the rites of mourning”, used in the Targum of Gen 37:34 where the Hebrew has the hithpael.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אָבֵל II (A00154); s.v. אָבֵל III (A00155); s.v. אֲבֵל (A00156), citing Targ. Gen. XXXVII, 34; s.v. אֲבֵלָא (A00159), citing Targ. Koh. VII, 2"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001313 ʾbl [mourn] V, ARM000079 ʾBL [mourn]"
+        }
+      ]
+    },
+    {
+      "id": "arc-evla",
+      "lang": "arc",
+      "form": "אֵבֶל، אֶבְלָא",
+      "translit": "ʾēḇel, ʾeḇlā",
+      "gloss": "mourning",
+      "relation": "cognate",
+      "note": "The noun in Mishnaic Hebrew and the Targums: the Targum of Gen 50:11 keeps it for the Hebrew אֵבֶל, and the plural is “mourning days”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֵבֶל (A00157); s.v. אֶבְלָא (A00160), citing Targ. Gen. L, 11; Targ. O. Gen. XXVII, 41"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Aramaic אבלא (ʾeḇlā)",
+          "note": "“grief, sadness, sorrow; mourning, lamentation”."
+        }
+      ]
+    },
+    {
+      "id": "akk-abalu",
+      "lang": "akk",
+      "form": "abālu",
+      "translit": "abālu",
+      "gloss": "dry up, dry out",
+      "relation": "possible",
+      "note": "The Akkadian verb is “dry (up)”, of land and things. The Hebrew qal of the land is every time beside “dry up” or “wither”, and the Proto-Semitic list sets abālu with Hebrew and Aramaic ʾbl “mourn”. Whether the land's “mourning” is a figure of mourning or a second sense “be dry” the Akkadian shows is not settled; the Hebrew verses read well as mourning shown by drying.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000031790, abālu [dry (up)] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001313 ʾbl [mourn] V, AKK000013 abālu [dry] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-abil",
+      "lang": "ar",
+      "form": "أَبِيلٌ",
+      "translit": "ʾabīl",
+      "gloss": "monk, devotee; (in Syriac) mourning",
+      "relation": "loan",
+      "note": "Arabic's word for a Christian monk, which Lane's sources say “in the Syriac language signifies mourning”: the Syriac ʾabīlā “mourner”, borrowed for the ascetic who mourns. It shows the Aramaic sense, not an Arabic verb “mourn”, which Arabic does not have.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 8, art. ابل, أَبِيلٌ (n77)",
+          "note": "“A Christian monk … In the Syriac language it signifies Mourning, or sorrowing.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ubul",
+      "lang": "ar",
+      "form": "أُبُلٌ، أَبَلَ العُشْبُ",
+      "translit": "ʾubul, ʾabala l-ʿušbu",
+      "gloss": "fresh herbage growing among dried herbage, on which camels fatten; (of herbage) grow tall",
+      "relation": "possible",
+      "note": "Green growth in dry pasture; if the Hebrew place-name element means “meadow, watered ground”, this may be the same word. Nothing in scripture fixes the place-name's meaning.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 8, art. ابل, أُبُلٌ (n68)",
+          "note": "“The خِلْفَة of herbage, i.e., of dry herbage … upon which camels, or the like, fatten.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 7, art. ابل, أَبِلَ (n62), b12–b13",
+          "note": "“أَبَلَ العُشْبُ The herbage became tall, so that the camels were able to feed upon it”; of trees, “had green growing in its dried parts”."
+        }
+      ]
+    },
+    {
+      "id": "ar-ibil",
+      "lang": "ar",
+      "form": "إِبِلٌ، أَبِلٌ، أَبَّالٌ",
+      "translit": "ʾibil, ʾabil, ʾabbāl",
+      "gloss": "camels; skilled in managing camels; a pastor of camels",
+      "relation": "cognate",
+      "note": "The Arabic word for camels and its derivatives: the man skilled in the care of camels and the keeper of camels. It is the likeliest meaning of the name Obil, the Ishmaelite over David's camels (1Ch 27:30).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 8, art. ابل, إِبِلٌ (n69)",
+          "note": "“Camels: and a herd of camels.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 8, art. ابل, أَبِلٌ (n67)",
+          "note": "“Skilled in the good management of camels … A man possessing camels.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 9, art. ابل, أَبَّالٌ (n84)",
+          "note": "“A pastor of camels, who manages them, or takes care of them, well.”"
+        }
+      ]
+    },
+    {
+      "id": "phn-bl",
+      "lang": "phn",
+      "form": "ʾbl",
+      "translit": "ʾbl",
+      "gloss": "not",
+      "relation": "cognate",
+      "note": "Punic: a negative particle of the same spelling, which the Proto-Semitic list sets with Hebrew אֲבָל “but”. It ties אֲבָל to the particle בַּל, not to mourning.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000967 ʾbl [but] O, PUN000010 ʾbl [not] O"
+        }
+      ]
+    },
+    {
+      "id": "ar-bal",
+      "lang": "ar",
+      "form": "بَلْ",
+      "translit": "bal",
+      "gloss": "nay, rather; nay but (a particle of correction or digression)",
+      "relation": "cognate",
+      "note": "The Arabic particle that cancels or corrects what was said, as אֲבָל does in Gen 17:19, “no, rather Sarah will bear”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 243, art. بل, بَلْ (n3106)",
+          "note": "“A particle of digression … or a word of emendation … nay, or nay rather, or nay but.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-abal",
+      "lang": "arc",
+      "form": "אֲבָל",
+      "translit": "ʾăḇāl",
+      "gloss": "indeed, yes; but, however",
+      "relation": "cognate",
+      "note": "Mishnaic Hebrew and Jewish Aramaic keep both uses, “yes, indeed” and “but”, with a note that it is a southern Palestinian expression for בְּרַם “but”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲבָל (A00152)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Mourning in scripture is for the dead because death is an end. Jacob, believing Joseph dead, would not be comforted: “I will go down to my son to the grave (שְׁאֹלָה) mourning” (Gen 37:35); he expected to join his son in the grave, not elsewhere. Israel made mourning for Jacob seven days and for Moses thirty, and then “the days of mourning were ended” (Gen 50:10; Deu 34:8). The preacher counsels the house of mourning over the house of feasting “for that is the end of every man, and the living will lay it to heart” (Ecc 7:2, 4); Job says of man that he lies down and does not rise “until the heavens are no more”, and while he lives “his soul upon him mourns” (Job 14:12, 22): the soul is the living man, who mourns, and not something that leaves him at death. From the verses: death is the end of a man, the dead go to the grave, and the living mourn because of it, with hope only in what God will do (Job 14:13–15).",
+      "evidence": [
+        {
+          "ref": "Gen.37.35"
+        },
+        {
+          "ref": "Gen.50.10"
+        },
+        {
+          "ref": "Deu.34.8"
+        },
+        {
+          "ref": "Ecc.7.2"
+        },
+        {
+          "ref": "Ecc.7.4"
+        },
+        {
+          "ref": "Job.14.10",
+          "to": "Job.14.15"
+        },
+        {
+          "ref": "Job.14.22"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Yahweh promises an end of mourning with the restoration of Zion. The anointed one is sent “to comfort all who mourn, to appoint to the mourners of Zion … the oil of joy instead of mourning” (Isa 61:1–3); “the days of your mourning will be ended” (Isa 60:20); “I will turn their mourning to joy” for the regathered of Israel (Jer 31:10–13); and those who mourn over Jerusalem are told to rejoice with her (Isa 66:10). Jesus read Isa 61:1–2 at Nazareth, stopped before “the day of vengeance” and “to comfort all who mourn”, and said, “today this scripture is fulfilled in your ears” (Luk 4:18–21); he then said, “blessed are those who mourn, for they will be comforted”, beside “the meek will inherit the earth” (Mat 5:4–5, after Psa 37:11). The comfort is described at the end, when “death will be no more, nor mourning nor crying nor pain” (Rev 21:4). From the verses: the comfort of mourners is not given at death but in the restored Zion and the kingdom on the earth, when death itself is removed; the mourners of the present are those who will be comforted then.",
+      "evidence": [
+        {
+          "ref": "Isa.61.1",
+          "to": "Isa.61.3"
+        },
+        {
+          "ref": "Isa.60.20"
+        },
+        {
+          "ref": "Jer.31.10",
+          "to": "Jer.31.13"
+        },
+        {
+          "ref": "Isa.66.10"
+        },
+        {
+          "ref": "Luk.4.18",
+          "to": "Luk.4.21"
+        },
+        {
+          "ref": "Mat.5.4",
+          "to": "Mat.5.5"
+        },
+        {
+          "ref": "Psa.37.11"
+        },
+        {
+          "ref": "Rev.21.4"
+        }
+      ]
+    },
+    {
+      "topic": "land-and-sin",
+      "statement": "The prophets say the land mourns, and they say why: “How long will the land mourn … for the evil of those who dwell in it?” (Jer 12:4); “because of the curse the land mourns” (Jer 23:10); there is no faithfulness or knowledge of God, only swearing, lying, murder and adultery, “therefore the land mourns” with its beasts, birds and fish (Hos 4:1–3); “the earth mourns … the earth is defiled under its inhabitants, because they have transgressed the laws” (Isa 24:4–5). The mourning is seen in drought: grass dried up, pastures withered, the vine languishing (Jer 12:4; Amo 1:2; Jol 1:10). From the verses: the condition of the land answers to the conduct of its people under Yahweh's covenant, as the curses of Lev 26:19–20 and Deu 28:23–24 set out.",
+      "evidence": [
+        {
+          "ref": "Jer.12.4"
+        },
+        {
+          "ref": "Jer.23.10"
+        },
+        {
+          "ref": "Hos.4.1",
+          "to": "Hos.4.3"
+        },
+        {
+          "ref": "Isa.24.4",
+          "to": "Isa.24.5"
+        },
+        {
+          "ref": "Amo.1.2"
+        },
+        {
+          "ref": "Jol.1.10"
+        },
+        {
+          "ref": "Lev.26.19",
+          "to": "Lev.26.20"
+        },
+        {
+          "ref": "Deu.28.23",
+          "to": "Deu.28.24"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key אבל. BDB keys: a.ai.aa verb; a.ai.ab אֵבֶל; a.ai.ad adjective אָבֵל, whose 17 tokens include 10 of the place-name element (Jdg 7:22; 1Sa 6:18; 1Ki 4:12; 15:20; 2Ki 15:29; 2Ch 16:4; Gen 50:11; Num 33:49; Jdg 11:33 and the like) counted under both keys; a.aj.ab the place-name element (414 tokens, inflated because the compound names' second words, Egypt, water, Maacah, are filed under it too); a.ak.aa אֲבָל. a.ai.ac (אֵבֶל מִצְרַיִם, 0 tokens, a cross-reference to a.aj.ab) is left unnamed. a.al.ab אוֹבִיל is the name entry names/obil.json. No Biblical Aramaic word of the root. Peshitta words from SEDRA root 11 (lexemes 14 ܐܒܝܠܐ, 15 ܐܒܠ, 16 ܐܒܠܐ); the stems of the Peshitta verb (peal participle Mrk 16:10, Rev 18:15, 19; ethpeel Luk 6:25, Act 8:2, 2Co 12:21, Jas 4:9, Rev 18:11) are read from the vocalised forms and should be checked. Open questions: (1) whether the qal of the land (Jer 12:4; 23:10; Amo 1:2) is the mourning verb used as a figure or a second sense “be dry”, as Akkadian abālu “dry up” would suggest; recorded as possible on that sense only. (2) Whether אֲבָל belongs to this root at all: its cognates (Punic ʾbl “not”, Arabic bal) point to the particle בַּל with א; kept here by spelling. (3) The place-name element: “meadow” is a guess from the second words (waters, vineyards, acacias); Arabic ʾubul is possible only; 1Sa 6:18 אָבֵל הַגְּדוֹלָה stands where the story has “the great stone” (vv. 14–15). Leads not followed: Ugaritic ʾbl “mourn” (DULAT, Segert, not consulted); Akkadian in CAD A/1 (abālu B); Syriac ʾabbāltā “herd of camels” (Wiktionary's note under Arabic إبل), not checked in Payne Smith; Sabaean ʾbl “camels”. The verb's qal participle-like form at Job 14:22 is read as the qal imperfect. Doctrine statements are reasoned conclusions to review."
+}
