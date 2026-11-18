@@ -1,0 +1,2340 @@
+{
+  "id": "chazaq",
+  "root": "חזק",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "strength",
+    "courage",
+    "holding",
+    "repair",
+    "heart",
+    "hardening",
+    "exodus"
+  ],
+  "gloss": "be strong, firm; strengthen, harden; take hold, hold fast; repair",
+  "summary": "To be firm and strong, and to make firm: a man, his hands and his heart, a kingdom, a famine or a battle that grows strong, a wall or a house made fast again. The qal is to be strong or to prevail, and its imperative חֲזַק “be strong!” is the word of courage, often with אֱמָץ and the promise that Yahweh is with the hearer; the piel strengthens hands, repairs the house of Yahweh, fastens with nails or a sash, and hardens a heart, as Yahweh strengthened Pharaoh's; the hiphil takes hold and keeps hold, of a hand, a robe, the covenant or one's integrity; the hithpael is to take courage or make oneself strong. The adjective חָזָק is strong, above all in “a strong hand”, the hand by which Yahweh brought Israel out of Egypt. Arabic ḥazaqa “bind tight” and the Aramaic and Syriac verb “bind, gird” show the firmness of what is held fast.",
+  "words": [
+    {
+      "lemma": "חָזַק",
+      "pos": "verb",
+      "gloss": "be strong, prevail; strengthen, repair, fasten, harden; take hold, hold fast",
+      "bdb": [
+        "h.bs.aa"
+      ],
+      "cognate_ids": [
+        "ar-hazaqa",
+        "arc-chazaq"
+      ],
+      "summary": "About three hundred times, in four stems. Its core is firmness: what is strong holds and is not loosed (the bonds of Isa 28:22, the ropes of a mast, Isa 33:23), and what is weak, slack or broken is made strong. The opposite is רָפָה “be slack, let go”: weak hands (Isa 35:3), the people “strong or weak” (Num 13:18 of the adjective), grasp and do not let go (Pro 4:13). The brief's 14 verb tokens with no stem are the adjective חָזָק, filed here by spelling.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be strong, grow strong; be firm; prevail, be stronger than; be severe; (rarely) strengthen",
+          "senses": [
+            {
+              "id": "be-strong",
+              "gloss": "be or grow strong",
+              "definition": "Of a people, a man, his hands or arm, or a kingdom: to have or gain strength, to be established; of the sick, to recover.",
+              "evidence": [
+                {
+                  "ref": "Jos.17.13",
+                  "role": "defining",
+                  "note": "“When the sons of Israel חָזְקוּ, they put the Canaanite to forced labour.”"
+                },
+                {
+                  "ref": "2Ki.14.5",
+                  "role": "defining",
+                  "note": "“As soon as the kingdom חָזְקָה in his hand”: established, firm."
+                },
+                {
+                  "ref": "Isa.39.1",
+                  "role": "defining",
+                  "note": "Merodach-baladan heard that Hezekiah “had been sick (חָלָה) and וַיֶּחֱזָק”: recovered strength, the opposite of sickness."
+                },
+                {
+                  "ref": "Ezk.30.21",
+                  "role": "defining",
+                  "note": "Pharaoh's broken arm has not been bound up “to make it strong (לְחָזְקָהּ) to grasp the sword”."
+                },
+                {
+                  "ref": "Jdg.7.11",
+                  "note": "“Afterward תֶּחֱזַקְנָה יָדֶיךָ and you shall go down against the camp.”"
+                },
+                {
+                  "ref": "2Sa.16.21",
+                  "note": "“The hands of all who are with you will be strong.”"
+                },
+                {
+                  "ref": "Zec.8.9",
+                  "note": "“Let your hands be strong, you who hear these words in these days.”"
+                },
+                {
+                  "ref": "Ezk.22.14",
+                  "note": "“Will your heart stand, or will your hands be strong, in the days that I deal with you?”"
+                },
+                {
+                  "ref": "2Ch.26.15",
+                  "note": "Uzziah “was marvellously helped until he was strong”."
+                },
+                {
+                  "ref": "Isa.28.22",
+                  "role": "defining",
+                  "note": "“Do not mock, lest your bonds (מוֹסְרֵיכֶם) יֶחְזְקוּ”: bonds grow tight, the firmness of what holds fast."
+                },
+                {
+                  "ref": "2Sa.18.9",
+                  "note": "“His head וַיֶּחֱזַק in the oak”: was caught fast."
+                }
+              ],
+              "kin": [
+                "strong-mighty"
+              ]
+            },
+            {
+              "id": "be-strong-courage",
+              "gloss": "be strong! take courage",
+              "definition": "The imperative and jussive, said to one who must face a task or an enemy: be firm, do not fear. Often with אָמַץ, and with the reason that Yahweh is with him.",
+              "evidence": [
+                {
+                  "ref": "Deu.31.7",
+                  "role": "defining",
+                  "note": "Moses to Joshua before all Israel: “חֲזַק וֶאֱמָץ, for you shall go with this people into the land.”"
+                },
+                {
+                  "ref": "Jos.1.9",
+                  "role": "defining",
+                  "note": "“Have I not commanded you? חֲזַק וֶאֱמָץ; do not be terrified or dismayed, for Yahweh your God is with you.”"
+                },
+                {
+                  "ref": "Deu.31.6",
+                  "role": "defining",
+                  "note": "“חִזְקוּ וְאִמְצוּ, do not fear … for Yahweh your God, he goes with you.”"
+                },
+                {
+                  "ref": "Jos.1.6"
+                },
+                {
+                  "ref": "Deu.31.23"
+                },
+                {
+                  "ref": "Jos.10.25",
+                  "note": "“Do not fear … חִזְקוּ וְאִמְצוּ, for thus Yahweh will do to all your enemies.”"
+                },
+                {
+                  "ref": "Hag.2.4",
+                  "role": "defining",
+                  "note": "“Be strong, Zerubbabel … be strong, Joshua … be strong, all people of the land, and work, for I am with you.”"
+                },
+                {
+                  "ref": "Isa.35.4",
+                  "role": "defining",
+                  "note": "“Say to those of hasty heart, חִזְקוּ אַל־תִּירָאוּ; behold, your God will come … and save you.”"
+                },
+                {
+                  "ref": "Psa.27.14",
+                  "note": "“Wait on Yahweh; חֲזַק and let your heart take courage.”"
+                },
+                {
+                  "ref": "Psa.31.25"
+                },
+                {
+                  "ref": "1Ch.28.20",
+                  "note": "David to Solomon: “Be strong and courageous and act … for Yahweh God, my God, is with you.”"
+                },
+                {
+                  "ref": "2Ch.32.7",
+                  "note": "Hezekiah: “Be strong and courageous … for with us is one greater than with him.”"
+                },
+                {
+                  "ref": "Dan.10.19",
+                  "note": "“Do not fear, man greatly loved; peace to you; חֲזַק וַחֲזָק.”"
+                },
+                {
+                  "ref": "Isa.41.6",
+                  "note": "Of idol-makers: “Each says to his brother, חֲזָק.”"
+                },
+                {
+                  "ref": "2Sa.10.12"
+                },
+                {
+                  "ref": "Ezr.10.4",
+                  "note": "“Arise … we are with you; חֲזַק וַעֲשֵׂה.”"
+                },
+                {
+                  "ref": "2Ch.15.7",
+                  "note": "“Be strong, and let not your hands be slack (יִרְפּוּ), for there is a reward for your work.”"
+                },
+                {
+                  "ref": "2Sa.13.28",
+                  "note": "Absalom to his servants, of killing Amnon: “Be strong and be sons of valour.”"
+                }
+              ]
+            },
+            {
+              "id": "be-firm-keep",
+              "gloss": "be firm (to keep, to do)",
+              "definition": "With an infinitive or בְּ: to hold firmly to a course, above all to keep Yahweh's law without turning aside.",
+              "evidence": [
+                {
+                  "ref": "Jos.1.7",
+                  "role": "defining",
+                  "note": "“Only be strong and very courageous לִשְׁמֹר לַעֲשׂוֹת according to all the law … do not turn from it to the right or to the left.”"
+                },
+                {
+                  "ref": "Jos.23.6",
+                  "role": "defining",
+                  "note": "“וַחֲזַקְתֶּם מְאֹד to keep and to do all that is written in the book of the law of Moses.”"
+                },
+                {
+                  "ref": "Deu.12.23",
+                  "role": "defining",
+                  "note": "“Only be firm (חֲזַק) not to eat the blood, for the blood is the life.”"
+                },
+                {
+                  "ref": "1Ch.28.7",
+                  "note": "“I will establish his kingdom for ever, if he is strong to do my commandments.”"
+                },
+                {
+                  "ref": "2Ch.31.4",
+                  "note": "The portion of the priests and Levites given “that they might be strong in the law of Yahweh”."
+                },
+                {
+                  "ref": "Deu.11.8",
+                  "note": "“Keep all the commandment … that you may be strong and go in and possess the land.”"
+                },
+                {
+                  "ref": "Ezr.9.12"
+                },
+                {
+                  "ref": "1Ch.22.13"
+                }
+              ]
+            },
+            {
+              "id": "prevail",
+              "gloss": "prevail, be stronger than; press upon",
+              "definition": "With מִן or עַל: to be stronger than another and overcome him; of a word or command, to prevail against objection; with בְּ, to press someone.",
+              "evidence": [
+                {
+                  "ref": "1Sa.17.50",
+                  "role": "defining",
+                  "note": "“David וַיֶּחֱזַק מִן־הַפְּלִשְׁתִּי with the sling and the stone.”"
+                },
+                {
+                  "ref": "2Sa.10.11",
+                  "role": "defining",
+                  "note": "“If Aram תֶּחֱזַק מִמֶּנִּי, you shall help me.”"
+                },
+                {
+                  "ref": "2Sa.13.14",
+                  "note": "Amnon “was stronger than she” and forced her."
+                },
+                {
+                  "ref": "1Ki.20.23",
+                  "note": "“Their gods are gods of the hills, therefore they were stronger than we.”"
+                },
+                {
+                  "ref": "2Ki.3.26",
+                  "note": "The king of Moab saw “that the battle was too strong for him”."
+                },
+                {
+                  "ref": "2Ch.8.3",
+                  "note": "Solomon went to Hamath-zobah “and prevailed against it”."
+                },
+                {
+                  "ref": "2Sa.24.4",
+                  "role": "defining",
+                  "note": "“The word of the king prevailed against Joab” (also 1Ch 21:4)."
+                },
+                {
+                  "ref": "1Ch.21.4"
+                },
+                {
+                  "ref": "Jer.20.7",
+                  "role": "defining",
+                  "note": "“You persuaded me, Yahweh, and I was persuaded; חֲזַקְתַּנִי וַתּוּכָל”: you were stronger than I and prevailed."
+                },
+                {
+                  "ref": "Jdg.19.4",
+                  "note": "“His father-in-law pressed him (וַיֶּחֱזַק־בּוֹ), and he stayed with him three days.”"
+                },
+                {
+                  "ref": "Exo.12.33",
+                  "note": "“Egypt וַתֶּחֱזַק עַל־הָעָם to send them out of the land in haste, for they said, We are all dead men.”"
+                },
+                {
+                  "ref": "Mal.3.13",
+                  "note": "“Your words have been strong against me, says Yahweh.”"
+                },
+                {
+                  "ref": "Dan.11.5",
+                  "note": "“The king of the south shall be strong, and one of his princes shall be stronger than he.”"
+                },
+                {
+                  "ref": "2Ch.28.20",
+                  "note": "Transitive: Tilgath-pilneser distressed Ahaz “and did not strengthen him (חֲזָקוֹ)”."
+                }
+              ]
+            },
+            {
+              "id": "be-severe",
+              "gloss": "be severe (of famine)",
+              "definition": "Of a famine: to grow strong, take hold of a land.",
+              "evidence": [
+                {
+                  "ref": "Gen.41.56",
+                  "role": "defining",
+                  "note": "“וַיֶּחֱזַק הָרָעָב in the land of Egypt.”"
+                },
+                {
+                  "ref": "Gen.41.57",
+                  "note": "“All the earth came to Egypt … because the famine was severe in all the earth.”"
+                },
+                {
+                  "ref": "Gen.47.20",
+                  "note": "The Egyptians sold their fields “because the famine was severe upon them”."
+                },
+                {
+                  "ref": "2Ki.25.3",
+                  "note": "In the siege of Jerusalem “the famine was severe in the city, and there was no bread”."
+                }
+              ]
+            },
+            {
+              "id": "heart-strong",
+              "gloss": "(the heart) be strong, unyielding",
+              "definition": "Of Pharaoh's heart: to be firm in refusing, so that he does not listen or let Israel go. The qal names no agent; the piel says Yahweh did it.",
+              "evidence": [
+                {
+                  "ref": "Exo.7.13",
+                  "role": "defining",
+                  "note": "“וַיֶּחֱזַק לֵב פַּרְעֹה, and he did not listen to them, as Yahweh had spoken.”"
+                },
+                {
+                  "ref": "Exo.7.22",
+                  "note": "After the magicians did the same: “the heart of Pharaoh was strong”."
+                },
+                {
+                  "ref": "Exo.8.15",
+                  "role": "defining",
+                  "note": "Even after the magicians said “It is the finger of God”, “the heart of Pharaoh was strong, and he did not listen”."
+                },
+                {
+                  "ref": "Exo.9.35",
+                  "note": "After the hail: “the heart of Pharaoh was strong, and he did not let the sons of Israel go”."
+                }
+              ],
+              "kin": [
+                "strong-of-heart"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "strengthen, encourage; repair, make firm; fasten, gird; harden (the heart)",
+          "senses": [
+            {
+              "id": "piel-strengthen-hands",
+              "gloss": "strengthen, encourage, support",
+              "definition": "To make another strong: to encourage a man for his task, strengthen weak hands, support or embolden one side against another, nurse the weak back to strength.",
+              "evidence": [
+                {
+                  "ref": "Deu.3.28",
+                  "role": "defining",
+                  "note": "“Command Joshua וְחַזְּקֵהוּ וְאַמְּצֵהוּ, for he shall go over before this people.”"
+                },
+                {
+                  "ref": "Deu.1.38",
+                  "note": "“Joshua … אֹתוֹ חַזֵּק, for he shall cause Israel to inherit it.”"
+                },
+                {
+                  "ref": "Isa.35.3",
+                  "role": "defining",
+                  "note": "“חַזְּקוּ יָדַיִם רָפוֹת, and make firm the tottering knees”: the slack hand is the one to strengthen."
+                },
+                {
+                  "ref": "Heb.12.12",
+                  "note": "Isa 35:3 applied to believers under discipline: “lift up the hands that hang down and the paralysed knees.”"
+                },
+                {
+                  "ref": "Job.4.3",
+                  "note": "“You have instructed many, and weak hands you have strengthened.”"
+                },
+                {
+                  "ref": "1Sa.23.16",
+                  "role": "defining",
+                  "note": "Jonathan went to David “וַיְחַזֵּק אֶת־יָדוֹ בֵּאלֹהִים”: strengthened his hand in God."
+                },
+                {
+                  "ref": "Jdg.16.28",
+                  "note": "Samson: “Remember me, and strengthen me only this once, O God.”"
+                },
+                {
+                  "ref": "Dan.10.18",
+                  "note": "One like the appearance of a man touched Daniel “וַיְחַזְּקֵנִי”."
+                },
+                {
+                  "ref": "Dan.10.19",
+                  "note": "“Let my lord speak, for חִזַּקְתָּנִי.”"
+                },
+                {
+                  "ref": "Ezr.6.22",
+                  "note": "Yahweh turned the heart of the king of Assyria to them “to strengthen their hands in the work of the house of God”."
+                },
+                {
+                  "ref": "Neh.2.18",
+                  "note": "“Let us rise up and build; and they strengthened their hands for the good.”"
+                },
+                {
+                  "ref": "Neh.6.9",
+                  "note": "Against those who said “their hands will be slack (יִרְפּוּ) from the work”: “now strengthen my hands”."
+                },
+                {
+                  "ref": "Ezk.13.22",
+                  "role": "defining",
+                  "note": "False prophets “strengthen the hands of the wicked, that he should not turn from his evil way”."
+                },
+                {
+                  "ref": "Jer.23.14",
+                  "note": "The prophets of Jerusalem “strengthen the hands of evildoers, so that no man turns from his evil”."
+                },
+                {
+                  "ref": "Jdg.9.24",
+                  "note": "The lords of Shechem “strengthened his hands to kill his brothers”."
+                },
+                {
+                  "ref": "Jdg.3.12",
+                  "role": "defining",
+                  "note": "“Yahweh strengthened Eglon king of Moab against Israel, because they had done evil in the eyes of Yahweh.”"
+                },
+                {
+                  "ref": "Ezk.30.24",
+                  "note": "“I will strengthen the arms of the king of Babylon … and break the arms of Pharaoh.”"
+                },
+                {
+                  "ref": "Hos.7.15",
+                  "note": "“I trained and strengthened their arms, yet against me they devise evil.”"
+                },
+                {
+                  "ref": "Ezk.34.4",
+                  "role": "defining",
+                  "note": "To the shepherds: “the weak you have not strengthened (לֹא חִזַּקְתֶּם) … but with force (וּבְחָזְקָה) you have ruled them.”"
+                },
+                {
+                  "ref": "Ezk.34.16",
+                  "note": "“The sick I will strengthen (אֲחַזֵּק); but the fat and the strong (הַחֲזָקָה) I will destroy.”"
+                },
+                {
+                  "ref": "1Ch.29.12",
+                  "note": "“In your hand it is to make great and to strengthen all.”"
+                },
+                {
+                  "ref": "2Ch.29.34",
+                  "note": "The Levites helped the priests, too few to flay the burnt offerings, until the work was done."
+                },
+                {
+                  "ref": "2Ch.35.2",
+                  "note": "Josiah set the priests in their charges “and encouraged them in the service of the house of Yahweh”."
+                },
+                {
+                  "ref": "2Sa.11.25",
+                  "note": "“Strengthen your battle against the city … and encourage him (וְחַזְּקֵהוּ).”"
+                },
+                {
+                  "ref": "Ezr.1.6",
+                  "note": "Their neighbours “strengthened their hands” with silver, gold and goods."
+                }
+              ]
+            },
+            {
+              "id": "repair",
+              "gloss": "repair, make firm (a building)",
+              "definition": "To make a building or fortification firm again: to repair the breach (בֶּדֶק) of the house of Yahweh, its doors, a wall, a fortress.",
+              "evidence": [
+                {
+                  "ref": "2Ki.12.6",
+                  "role": "defining",
+                  "note": "“They shall repair (יְחַזְּקוּ) the breach of the house (בֶּדֶק הַבַּיִת), wherever any breach is found.”"
+                },
+                {
+                  "ref": "2Ki.12.7"
+                },
+                {
+                  "ref": "2Ki.12.15",
+                  "note": "“They gave it to the workmen, and they repaired the house of Yahweh with it.”"
+                },
+                {
+                  "ref": "2Ki.22.5",
+                  "note": "Under Josiah: “to repair the breach of the house”."
+                },
+                {
+                  "ref": "2Ch.24.12",
+                  "role": "defining",
+                  "note": "Masons and carpenters “to renew (לְחַדֵּשׁ) the house of Yahweh”, and workers in iron and bronze “to repair (לְחַזֵּק) the house of Yahweh”."
+                },
+                {
+                  "ref": "2Ch.29.3",
+                  "note": "Hezekiah, in his first year, “opened the doors of the house of Yahweh and repaired them”."
+                },
+                {
+                  "ref": "2Ch.32.5",
+                  "note": "Hezekiah built up the broken wall “and strengthened the Millo in the city of David”."
+                },
+                {
+                  "ref": "2Ch.11.11",
+                  "note": "Rehoboam “strengthened the fortresses”."
+                },
+                {
+                  "ref": "Nam.3.14",
+                  "note": "“Draw water for the siege, strengthen your fortresses.”"
+                },
+                {
+                  "ref": "Neh.3.19",
+                  "note": "In the list of builders, once in the piel: Ezer “repaired another section”."
+                },
+                {
+                  "ref": "1Ch.26.27",
+                  "note": "Spoil dedicated “to repair the house of Yahweh”."
+                },
+                {
+                  "ref": "Psa.147.13",
+                  "note": "“He has strengthened the bars of your gates.”"
+                }
+              ]
+            },
+            {
+              "id": "fasten",
+              "gloss": "fasten, gird, make tight",
+              "definition": "To make a thing fast so that it does not move or come loose: an idol with nails, tent pegs, a mast with ropes, a sash about the body, the loins girded.",
+              "evidence": [
+                {
+                  "ref": "Isa.41.7",
+                  "role": "defining",
+                  "note": "“He fastened it (וַיְחַזְּקֵהוּ) with nails, that it should not totter.”"
+                },
+                {
+                  "ref": "Jer.10.4",
+                  "role": "defining",
+                  "note": "“With nails and hammers יְחַזְּקוּם, that it does not move.”"
+                },
+                {
+                  "ref": "Isa.54.2",
+                  "note": "“Lengthen your cords, and strengthen your stakes (וִיתֵדֹתַיִךְ חַזֵּקִי).”"
+                },
+                {
+                  "ref": "Isa.33.23",
+                  "role": "defining",
+                  "note": "“Your ropes are loosed; they could not hold firm the base of their mast.”"
+                },
+                {
+                  "ref": "Isa.22.21",
+                  "role": "defining",
+                  "note": "To Eliakim: “I will clothe him with your tunic, and with your sash אֲחַזְּקֶנּוּ”: bind it fast on him."
+                },
+                {
+                  "ref": "Nam.2.2",
+                  "role": "defining",
+                  "note": "“Watch the road, חַזֵּק מָתְנַיִם”: gird up the loins."
+                },
+                {
+                  "ref": "Psa.64.6",
+                  "note": "“They make firm for themselves an evil plan; they talk of laying snares.”"
+                }
+              ],
+              "kin": [
+                "syc-gird"
+              ]
+            },
+            {
+              "id": "harden-heart",
+              "gloss": "harden, make unyielding (the heart, the face)",
+              "definition": "To make a heart strong in its purpose so that it does not yield: Yahweh strengthening Pharaoh's heart not to let Israel go, and the hearts of the kings of Canaan to fight; men making their own faces hard against correction.",
+              "evidence": [
+                {
+                  "ref": "Exo.4.21",
+                  "role": "defining",
+                  "note": "Before the signs: “וַאֲנִי אֲחַזֵּק אֶת־לִבּוֹ, and he will not let the people go.”"
+                },
+                {
+                  "ref": "Exo.9.12",
+                  "role": "defining",
+                  "note": "At the boils, the first time the narrative names the agent: “וַיְחַזֵּק יַהְוֶה אֶת־לֵב פַּרְעֹה, and he did not listen to them, as Yahweh had spoken to Moses.”"
+                },
+                {
+                  "ref": "Exo.10.20",
+                  "note": "After the locusts: “Yahweh strengthened Pharaoh's heart, and he did not let the sons of Israel go.”"
+                },
+                {
+                  "ref": "Exo.10.27",
+                  "note": "After the darkness: “and he was not willing (וְלֹא אָבָה) to let them go.”"
+                },
+                {
+                  "ref": "Exo.11.10",
+                  "note": "Summing up the signs: “Yahweh strengthened Pharaoh's heart, and he did not let the sons of Israel go out of his land.”"
+                },
+                {
+                  "ref": "Exo.14.4",
+                  "role": "defining",
+                  "note": "“וְחִזַּקְתִּי אֶת־לֵב־פַּרְעֹה and he will pursue them, and I will be glorified through Pharaoh … and Egypt shall know that I am Yahweh.”"
+                },
+                {
+                  "ref": "Exo.14.8"
+                },
+                {
+                  "ref": "Exo.14.17",
+                  "note": "“I will strengthen the heart of Egypt, and they shall go in after them.”"
+                },
+                {
+                  "ref": "Jos.11.20",
+                  "role": "defining",
+                  "note": "“It was from Yahweh לְחַזֵּק אֶת־לִבָּם to meet Israel in battle, that he might devote them.”"
+                },
+                {
+                  "ref": "Rom.9.18",
+                  "note": "After Exo 9:16 (Rom 9:17): “whom he will he hardens (σκληρύνει)”, the Septuagint's word for חִזֵּק at Exo 4:21; 9:12; 14:17."
+                },
+                {
+                  "ref": "Jer.5.3",
+                  "role": "defining",
+                  "note": "“They refused to receive correction; חִזְּקוּ פְנֵיהֶם מִסֶּלַע; they refused to return”: men hardening themselves."
+                }
+              ],
+              "kin": [
+                "strong-of-heart"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "take hold, seize, grasp; hold fast, keep hold of; make strong, support; repair; be strong",
+          "senses": [
+            {
+              "id": "seize",
+              "gloss": "take hold of, seize, grasp",
+              "definition": "With בְּ (sometimes a direct object): to lay hold of a person or thing with the hand and keep it in one's grip.",
+              "evidence": [
+                {
+                  "ref": "Exo.4.4",
+                  "role": "defining",
+                  "note": "“Put out your hand וֶאֱחֹז בִּזְנָבוֹ”; and he put out his hand “וַיַּחֲזֶק בּוֹ”: the verb answers אָחַז “take hold”."
+                },
+                {
+                  "ref": "Gen.19.16",
+                  "role": "defining",
+                  "note": "The men “seized his hand and the hand of his wife … and brought him out”."
+                },
+                {
+                  "ref": "Gen.21.18",
+                  "note": "“Lift the boy, and hold him fast with your hand.”"
+                },
+                {
+                  "ref": "1Sa.15.27",
+                  "role": "defining",
+                  "note": "Saul “seized the edge of his robe (בִּכְנַף־מְעִילוֹ), and it tore”."
+                },
+                {
+                  "ref": "1Sa.17.35",
+                  "note": "“I caught it by its beard and struck it.”"
+                },
+                {
+                  "ref": "2Sa.1.11",
+                  "note": "“David took hold of his clothes and tore them.”"
+                },
+                {
+                  "ref": "1Ki.1.50",
+                  "note": "Adonijah “caught hold of the horns of the altar”."
+                },
+                {
+                  "ref": "Deu.22.25",
+                  "note": "“If the man seizes her and lies with her.”"
+                },
+                {
+                  "ref": "2Sa.13.11"
+                },
+                {
+                  "ref": "Deu.25.11"
+                },
+                {
+                  "ref": "Jdg.19.25",
+                  "note": "“The man seized his concubine and brought her out to them.”"
+                },
+                {
+                  "ref": "2Ki.4.27",
+                  "note": "The Shunammite “caught him by the feet”."
+                },
+                {
+                  "ref": "Isa.4.1",
+                  "note": "“Seven women shall take hold of one man in that day.”"
+                },
+                {
+                  "ref": "Zec.8.23",
+                  "role": "defining",
+                  "note": "“Ten men from all the languages of the nations shall take hold of the hem of a man of Judah, saying, Let us go with you, for we have heard that God is with you.”"
+                },
+                {
+                  "ref": "Zec.14.13",
+                  "note": "“They shall seize each the hand of his neighbour.”"
+                },
+                {
+                  "ref": "Pro.26.17",
+                  "note": "“One who takes a dog by the ears.”"
+                },
+                {
+                  "ref": "Jdg.16.26",
+                  "note": "“The young man who held him by the hand.”"
+                },
+                {
+                  "ref": "Jdg.7.20",
+                  "note": "“They held the torches in their left hand and the shofars in their right.”"
+                },
+                {
+                  "ref": "Neh.4.11",
+                  "note": "“With one hand doing the work and with the other holding (מַחֲזֶקֶת) a weapon.”"
+                },
+                {
+                  "ref": "Psa.35.2",
+                  "note": "To Yahweh: “Take hold of shield and buckler, and rise for my help.”"
+                },
+                {
+                  "ref": "Jer.6.23",
+                  "note": "“They grasp bow and spear.”"
+                },
+                {
+                  "ref": "2Ch.28.15",
+                  "note": "Men of Ephraim “took the captives” and clothed, fed and anointed them."
+                },
+                {
+                  "ref": "Dan.11.21",
+                  "note": "A despised one “shall seize the kingdom by flatteries”."
+                },
+                {
+                  "ref": "Job.18.9",
+                  "note": "“A trap seizes (יֹאחֵז) him by the heel; a snare יַחֲזֵק עָלָיו.”"
+                },
+                {
+                  "ref": "2Ch.4.5",
+                  "note": "Of the sea of cast metal: “holding (מַחֲזִיק) baths, it contained three thousand.”"
+                }
+              ]
+            },
+            {
+              "id": "hold-hand",
+              "gloss": "hold by the hand (of God)",
+              "definition": "Yahweh taking the hand of his servant, his people or his anointed to lead, keep and help him.",
+              "evidence": [
+                {
+                  "ref": "Isa.42.6",
+                  "role": "defining",
+                  "note": "“I, Yahweh, have called you in righteousness, וְאַחְזֵק בְּיָדֶךָ, and I will keep you and give you for a covenant of the people, for a light of the nations.”"
+                },
+                {
+                  "ref": "Isa.41.13",
+                  "role": "defining",
+                  "note": "“I, Yahweh your God, מַחֲזִיק יְמִינֶךָ, who says to you, Do not fear; I will help you.”"
+                },
+                {
+                  "ref": "Isa.41.9",
+                  "note": "“You whom I took hold of from the ends of the earth … I have chosen you and not rejected you.”"
+                },
+                {
+                  "ref": "Isa.45.1",
+                  "note": "“To his anointed, to Cyrus, whose right hand I have grasped, to subdue nations before him.”"
+                },
+                {
+                  "ref": "Jer.31.32",
+                  "role": "defining",
+                  "note": "“The covenant I made with their fathers בְּיוֹם הֶחֱזִיקִי בְיָדָם to bring them out of the land of Egypt.”"
+                },
+                {
+                  "ref": "Job.8.20",
+                  "note": "“God will not reject the blameless, nor take the hand of evildoers.”"
+                },
+                {
+                  "ref": "Isa.51.18",
+                  "note": "Of Jerusalem: “there is none to take her by the hand of all the sons she has brought up.”"
+                }
+              ]
+            },
+            {
+              "id": "hold-fast",
+              "gloss": "hold fast, keep hold of, cling to",
+              "definition": "To keep one's grip on something and not let go: the covenant, wisdom and instruction, one's integrity; or, for ill, deceit, other gods, captives, anger.",
+              "evidence": [
+                {
+                  "ref": "Pro.4.13",
+                  "role": "defining",
+                  "note": "“הַחֲזֵק בַּמּוּסָר אַל־תֶּרֶף; keep her, for she is your life”: hold and do not let go."
+                },
+                {
+                  "ref": "Job.27.6",
+                  "role": "defining",
+                  "note": "“My righteousness הֶחֱזַקְתִּי וְלֹא אַרְפֶּהָ.”"
+                },
+                {
+                  "ref": "Job.2.3",
+                  "role": "defining",
+                  "note": "Yahweh to the adversary: “he still holds fast his integrity (מַחֲזִיק בְּתֻמָּתוֹ).”"
+                },
+                {
+                  "ref": "Job.2.9",
+                  "note": "His wife: “Do you still hold fast your integrity? Bless God and die.”"
+                },
+                {
+                  "ref": "Pro.3.18",
+                  "role": "defining",
+                  "note": "Wisdom “is a tree of life לַמַּחֲזִיקִים בָּהּ, and those who hold her (וְתֹמְכֶיהָ) are happy”."
+                },
+                {
+                  "ref": "Isa.56.4",
+                  "role": "defining",
+                  "note": "“The eunuchs who keep my sabbaths … וּמַחֲזִיקִים בִּבְרִיתִי.”"
+                },
+                {
+                  "ref": "Isa.56.6",
+                  "note": "“The sons of the foreigner who join themselves to Yahweh … and hold fast my covenant.”"
+                },
+                {
+                  "ref": "Isa.56.2",
+                  "note": "“Happy the son of man who holds it fast, keeping the sabbath.”"
+                },
+                {
+                  "ref": "Isa.27.5",
+                  "note": "“Or let him take hold of my refuge, let him make peace with me.”"
+                },
+                {
+                  "ref": "Isa.64.6",
+                  "note": "“There is none who calls on your name, who rouses himself to take hold of you.”"
+                },
+                {
+                  "ref": "Neh.10.30",
+                  "note": "The people “cleave to their brothers, their nobles, and enter into a curse and an oath to walk in the law of God”."
+                },
+                {
+                  "ref": "Neh.5.16",
+                  "note": "“I held to the work of this wall, and we bought no field.”"
+                },
+                {
+                  "ref": "Jer.8.5",
+                  "role": "defining",
+                  "note": "“הֶחֱזִיקוּ בַּתַּרְמִית, they refuse to return.”"
+                },
+                {
+                  "ref": "1Ki.9.9",
+                  "note": "“Because they forsook Yahweh … and laid hold on other gods and bowed to them.”"
+                },
+                {
+                  "ref": "2Ch.7.22"
+                },
+                {
+                  "ref": "Exo.9.2",
+                  "note": "To Pharaoh: “If you refuse to let them go and still hold them.”"
+                },
+                {
+                  "ref": "Jer.50.33",
+                  "note": "“All who took them captive held them fast; they refused to let them go.”"
+                },
+                {
+                  "ref": "Mic.7.18",
+                  "role": "defining",
+                  "note": "“He does not keep hold of (לֹא־הֶחֱזִיק) his anger for ever, because he delights in covenant love.”"
+                },
+                {
+                  "ref": "Jdg.7.8",
+                  "note": "Gideon sent the rest away “but kept the three hundred men”."
+                },
+                {
+                  "ref": "Job.8.15",
+                  "note": "“He leans on his house, but it does not stand; he holds fast to it, but it does not endure.”"
+                },
+                {
+                  "ref": "2Ki.4.8",
+                  "note": "The great woman of Shunem “urged him (וַתַּחֲזֶק־בּוֹ) to eat bread”."
+                }
+              ]
+            },
+            {
+              "id": "seize-pain",
+              "gloss": "seize (of pain, fear)",
+              "definition": "Of anguish or terror: to take hold of a person, as pangs seize a woman in labour.",
+              "evidence": [
+                {
+                  "ref": "Jer.6.24",
+                  "role": "defining",
+                  "note": "“Our hands are slack (רָפוּ); צָרָה הֶחֱזִיקַתְנוּ, pain as of a woman in labour.”"
+                },
+                {
+                  "ref": "Jer.49.24",
+                  "role": "defining",
+                  "note": "“Trembling has seized her (הֶחֱזִיקָה); anguish and pangs have taken hold of her (אֲחָזַתָּה)”: parallel with אָחַז."
+                },
+                {
+                  "ref": "Jer.50.43",
+                  "note": "“His hands are slack; anguish has seized him.”"
+                },
+                {
+                  "ref": "Mic.4.9",
+                  "note": "“Pain has seized you like a woman in labour.”"
+                },
+                {
+                  "ref": "Jer.8.21",
+                  "note": "“Horror has seized me.”"
+                }
+              ]
+            },
+            {
+              "id": "hiph-repair",
+              "gloss": "repair (a wall, a breach)",
+              "definition": "To make the wall or a breach firm again; the word of the list of Nehemiah's builders, section by section.",
+              "evidence": [
+                {
+                  "ref": "Neh.3.4",
+                  "role": "defining",
+                  "note": "“Next to them Meremoth … הֶחֱזִיק; and next to them Meshullam … הֶחֱזִיק; and next to them Zadok … הֶחֱזִיק.”"
+                },
+                {
+                  "ref": "Neh.3.6",
+                  "role": "defining",
+                  "note": "They repaired the old gate: “they laid its beams and set up its doors, its bolts and its bars”."
+                },
+                {
+                  "ref": "Neh.3.13"
+                },
+                {
+                  "ref": "Neh.3.23"
+                },
+                {
+                  "ref": "Neh.3.32"
+                },
+                {
+                  "ref": "Ezk.27.9",
+                  "role": "defining",
+                  "note": "Of Tyre as a ship: “the elders of Gebal and her wise men were in you, מַחֲזִיקֵי בִּדְקֵךְ”: caulking your seams."
+                },
+                {
+                  "ref": "Ezk.27.27"
+                }
+              ]
+            },
+            {
+              "id": "hiph-make-strong",
+              "gloss": "make strong, strengthen, support",
+              "definition": "To give strength to another or to a thing: to support a poor brother, a weak king, a watch, a battle.",
+              "evidence": [
+                {
+                  "ref": "Lev.25.35",
+                  "role": "defining",
+                  "note": "“If your brother becomes poor and his hand fails with you, וְהֶחֱזַקְתָּ בּוֹ … that he may live with you.”"
+                },
+                {
+                  "ref": "Ezk.16.49",
+                  "role": "defining",
+                  "note": "The iniquity of Sodom: pride, fullness of bread, ease, “and the hand of the poor and needy she did not strengthen”."
+                },
+                {
+                  "ref": "Ezk.30.25",
+                  "note": "“I will strengthen the arms of the king of Babylon, and the arms of Pharaoh shall fall.”"
+                },
+                {
+                  "ref": "2Ki.15.19",
+                  "note": "Menahem paid Pul “to strengthen the kingdom in his hand”."
+                },
+                {
+                  "ref": "Dan.11.1",
+                  "note": "“I stood up to confirm and strengthen him (לְמַחֲזִיק וּלְמָעוֹז לוֹ).”"
+                },
+                {
+                  "ref": "Dan.11.6",
+                  "note": "“She shall be given up … and he who strengthened her.”"
+                },
+                {
+                  "ref": "Jer.51.12",
+                  "note": "“Make the watch strong, set up watchmen.”"
+                }
+              ]
+            },
+            {
+              "id": "hiph-be-strong",
+              "gloss": "be strong, prevail",
+              "definition": "Intransitive: to show strength, to prevail.",
+              "evidence": [
+                {
+                  "ref": "Dan.11.32",
+                  "role": "defining",
+                  "note": "“The people who know their God יַחֲזִקוּ וְעָשׂוּ.”"
+                },
+                {
+                  "ref": "Dan.11.7",
+                  "note": "“He shall deal with them and prevail.”"
+                },
+                {
+                  "ref": "2Ch.26.8",
+                  "note": "Uzziah's name spread to Egypt, “for he became exceedingly strong”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "strengthen oneself, take courage; make oneself strong, establish oneself; hold with",
+          "senses": [
+            {
+              "id": "hith-take-courage",
+              "gloss": "strengthen oneself, take courage, rally",
+              "definition": "To gather one's own strength or courage, in weakness, fear or defeat; for the faithful, in Yahweh.",
+              "evidence": [
+                {
+                  "ref": "1Sa.30.6",
+                  "role": "defining",
+                  "note": "When the people spoke of stoning him, “וַיִּתְחַזֵּק דָּוִד בַּיַהְוֶה אֱלֹהָיו”."
+                },
+                {
+                  "ref": "Ezr.7.28",
+                  "role": "defining",
+                  "note": "“I took courage (הִתְחַזַּקְתִּי) as the hand of Yahweh my God was upon me.”"
+                },
+                {
+                  "ref": "Gen.48.2",
+                  "role": "defining",
+                  "note": "Told that Joseph had come, “Israel gathered his strength and sat up on the bed”."
+                },
+                {
+                  "ref": "Jdg.20.22",
+                  "note": "After defeat “the people, the men of Israel, took courage” and set the battle again."
+                },
+                {
+                  "ref": "1Sa.4.9",
+                  "note": "The Philistines: “הִתְחַזְּקוּ וִהְיוּ לַאֲנָשִׁים … and fight.”"
+                },
+                {
+                  "ref": "2Sa.10.12",
+                  "note": "“Be strong, and let us show ourselves strong (וְנִתְחַזַּק) for our people.”"
+                },
+                {
+                  "ref": "Num.13.20",
+                  "note": "To the spies: “be of good courage, and bring of the fruit of the land.”"
+                },
+                {
+                  "ref": "1Ki.20.22"
+                },
+                {
+                  "ref": "Dan.10.19",
+                  "note": "“As he spoke with me I was strengthened (הִתְחַזַּקְתִּי).”"
+                },
+                {
+                  "ref": "2Ch.15.8",
+                  "note": "When Asa heard the prophecy “he took courage, and put away the abominations”."
+                },
+                {
+                  "ref": "2Ch.23.1"
+                },
+                {
+                  "ref": "2Ch.25.11"
+                },
+                {
+                  "ref": "2Ch.13.7",
+                  "note": "“Rehoboam was young and tender of heart and could not withstand them.”"
+                }
+              ]
+            },
+            {
+              "id": "hith-establish",
+              "gloss": "make oneself strong, establish oneself",
+              "definition": "Of a king or a leader: to make his position firm over a kingdom or a party.",
+              "evidence": [
+                {
+                  "ref": "2Ch.1.1",
+                  "role": "defining",
+                  "note": "“Solomon the son of David strengthened himself over his kingdom, and Yahweh his God was with him.”"
+                },
+                {
+                  "ref": "2Ch.21.4",
+                  "role": "defining",
+                  "note": "Jehoram “rose over the kingdom of his father and strengthened himself, and killed all his brothers with the sword”."
+                },
+                {
+                  "ref": "2Ch.12.13"
+                },
+                {
+                  "ref": "2Ch.13.21"
+                },
+                {
+                  "ref": "2Ch.17.1"
+                },
+                {
+                  "ref": "2Ch.27.6",
+                  "note": "“Jotham became strong, because he ordered his ways before Yahweh his God.”"
+                },
+                {
+                  "ref": "2Sa.3.6",
+                  "note": "“Abner was making himself strong in the house of Saul.”"
+                },
+                {
+                  "ref": "2Ch.13.8",
+                  "note": "“You think to withstand the kingdom of Yahweh in the hand of the sons of David.”"
+                },
+                {
+                  "ref": "2Ch.32.5",
+                  "note": "Hezekiah “took courage and built up all the broken wall”."
+                }
+              ]
+            },
+            {
+              "id": "hith-hold-with",
+              "gloss": "hold with, show oneself strong for",
+              "definition": "With עִם: to side with someone in strength.",
+              "evidence": [
+                {
+                  "ref": "2Ch.16.9",
+                  "role": "defining",
+                  "note": "“The eyes of Yahweh run to and fro in all the earth לְהִתְחַזֵּק עִם those whose heart is whole toward him.”"
+                },
+                {
+                  "ref": "Dan.10.21",
+                  "note": "“There is none who holds with me against these, except Michael your prince.”"
+                },
+                {
+                  "ref": "1Ch.11.10",
+                  "note": "David's mighty men “who held strongly with him in his kingdom … to make him king”."
+                },
+                {
+                  "ref": "Ezk.7.13",
+                  "note": "“No man shall hold on to his life in his iniquity.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κρατέω",
+          "gloss": "take hold of, hold fast",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.41.13, מַחֲזִיק → κρατῶν; Isa.42.6, אַחְזֵק → κρατήσω; κρατέω renders חָזַק ×39"
+            },
+            {
+              "ref": "Mrk.5.41",
+              "note": "“Taking (κρατήσας) the child by the hand, he says to her, Talitha koum”: the act of Isa 42:6, take by the hand."
+            },
+            {
+              "ref": "Heb.4.14",
+              "note": "“Let us hold fast (κρατῶμεν) our confession”: the hold fast of Isa 56:4, 6."
+            },
+            {
+              "ref": "Rev.2.25",
+              "note": "“What you have, hold fast (κρατήσατε) until I come.”"
+            }
+          ]
+        },
+        {
+          "lemma": "σκληρύνω",
+          "gloss": "harden",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.4.21, אֲחַזֵּק → σκληρυνῶ; Exo.9.12; 10.20, 27; 11.10; 14.8 → ἐσκλήρυνεν; Exo.14.17 → σκληρυνῶ; passive for the qal at Exo.7.22; 8.15; 9.35 → ἐσκληρύνθη"
+            },
+            {
+              "ref": "Rom.9.18",
+              "role": "defining",
+              "note": "Of Pharaoh, after Exo 9:16 (Rom 9:17): “he has mercy on whom he will, and whom he will he hardens (σκληρύνει).”"
+            },
+            {
+              "ref": "Rom.9.17"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνδρίζομαι",
+          "gloss": "act like a man, be courageous",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.31.6, 7, 23; Jos.10.25; Psa.27.14; 31.25; Dan.10.19, חֲזַק → ἀνδρίζου, ἀνδρίζεσθε; ἀνδρίζομαι renders חָזַק ×11"
+            },
+            {
+              "ref": "1Co.16.13",
+              "role": "defining",
+              "note": "“Watch, stand firm in the faith, ἀνδρίζεσθε, κραταιοῦσθε”: the Septuagint's words for חֲזַק and הִתְחַזְּקוּ."
+            }
+          ]
+        },
+        {
+          "lemma": "κραταιόω",
+          "gloss": "strengthen; (passive) be strong",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Sa.4.9, הִתְחַזְּקוּ → κραταιοῦσθε; 2Ki.12.7, 15; Neh.2.18; κραταιόω renders חָזַק ×5"
+            },
+            {
+              "ref": "1Co.16.13",
+              "note": "“κραταιοῦσθε”, as the Septuagint of 1Sa 4:9 “κραταιοῦσθε καὶ γίνεσθε εἰς ἄνδρας”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐνισχύω",
+          "gloss": "strengthen",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.10.19, חִזַּקְתָּנִי → ἐνίσχυσέ; ἐνισχύω renders חָזַק ×6"
+            },
+            {
+              "ref": "Luk.22.43",
+              "note": "“An angel from heaven appeared to him, strengthening him (ἐνισχύων αὐτόν)”: as the messenger strengthened Daniel (Dan 10:18–19)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אָמַץ",
+            "note": "“Be firm, courageous”: the fixed partner of חָזַק in charges and encouragement.",
+            "evidence": [
+              {
+                "ref": "Deu.31.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.3.28"
+              },
+              {
+                "ref": "Isa.35.3"
+              },
+              {
+                "ref": "Psa.27.14"
+              }
+            ]
+          },
+          {
+            "lemma": "אָחַז",
+            "note": "“Take hold”: beside the hiphil, the same act.",
+            "evidence": [
+              {
+                "ref": "Exo.4.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.18.9"
+              },
+              {
+                "ref": "Jer.49.24"
+              }
+            ]
+          },
+          {
+            "lemma": "תָּמַךְ",
+            "note": "“Grasp, hold”: those who hold wisdom.",
+            "evidence": [
+              {
+                "ref": "Pro.3.18",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "קָשֶׁה",
+            "note": "“Hard”: hard of face and strong of heart, strong of forehead and hard of heart.",
+            "evidence": [
+              {
+                "ref": "Ezk.2.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.3.7"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רָפָה",
+            "note": "“Be slack, weak; let go”: weak hands are strengthened, and what is held is not let go.",
+            "evidence": [
+              {
+                "ref": "Pro.4.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.27.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.35.3"
+              },
+              {
+                "ref": "2Ch.15.7"
+              },
+              {
+                "ref": "Neh.6.9"
+              },
+              {
+                "ref": "Num.13.18"
+              }
+            ]
+          },
+          {
+            "lemma": "חָלָה",
+            "note": "“Be sick”: Hezekiah was sick and grew strong; the sick are strengthened.",
+            "evidence": [
+              {
+                "ref": "Isa.39.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.34.4"
+              },
+              {
+                "ref": "Ezk.34.16"
+              }
+            ]
+          },
+          {
+            "lemma": "דַּל",
+            "note": "“Weak, poor”: David growing strong, the house of Saul growing weak.",
+            "evidence": [
+              {
+                "ref": "2Sa.3.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חֲזַק וֶאֱמָץ",
+            "gloss": "be strong and courageous",
+            "evidence": [
+              {
+                "ref": "Deu.31.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.1.6"
+              },
+              {
+                "ref": "Jos.1.9"
+              },
+              {
+                "ref": "1Ch.22.13"
+              },
+              {
+                "ref": "1Ch.28.20"
+              },
+              {
+                "ref": "2Ch.32.7"
+              }
+            ]
+          },
+          {
+            "phrase": "חִזֵּק יָדַיִם",
+            "gloss": "strengthen the hands of, encourage, abet",
+            "evidence": [
+              {
+                "ref": "Isa.35.3",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.23.16"
+              },
+              {
+                "ref": "Jer.23.14"
+              },
+              {
+                "ref": "Ezk.13.22"
+              },
+              {
+                "ref": "Neh.2.18"
+              }
+            ]
+          },
+          {
+            "phrase": "חִזֵּק אֶת־לֵב",
+            "gloss": "strengthen (harden) the heart",
+            "evidence": [
+              {
+                "ref": "Exo.4.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.14.4"
+              },
+              {
+                "ref": "Jos.11.20"
+              }
+            ]
+          },
+          {
+            "phrase": "חִזֵּק בֶּדֶק הַבַּיִת",
+            "gloss": "repair the breach of the house",
+            "evidence": [
+              {
+                "ref": "2Ki.12.6",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.22.5"
+              }
+            ]
+          },
+          {
+            "phrase": "הֶחֱזִיק בְּיַד",
+            "gloss": "take by the hand",
+            "evidence": [
+              {
+                "ref": "Isa.42.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.31.32"
+              },
+              {
+                "ref": "Job.8.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָזָק",
+      "pos": "adjective",
+      "gloss": "strong, mighty; hard",
+      "bdb": [
+        "h.bs.ab"
+      ],
+      "cognate_ids": [
+        "arc-chazaq"
+      ],
+      "summary": "About sixty times, a third of them in “a strong hand”, Yahweh's hand that brought Israel out of Egypt. The brief also counts 2Ch 26:15 here, which is the qal verb חָזָק “he was strong”.",
+      "senses": [
+        {
+          "id": "strong-mighty",
+          "gloss": "strong, mighty",
+          "definition": "Having strength: a people or an enemy too strong to face, a man strong in old age, a wind, a horn blast, a sword; as a noun, the strong one, from whose hand Yahweh rescues the weak; and Yahweh himself, the strong redeemer.",
+          "evidence": [
+            {
+              "ref": "Num.13.18",
+              "role": "defining",
+              "note": "“See the people who dwell in it, הֶחָזָק הוּא הֲרָפֶה, whether they are few or many.”"
+            },
+            {
+              "ref": "Num.13.31",
+              "role": "defining",
+              "note": "“We cannot go up against the people, כִּי־חָזָק הוּא מִמֶּנּוּ.”"
+            },
+            {
+              "ref": "Jos.14.11",
+              "role": "defining",
+              "note": "Caleb: “I am still strong today as on the day Moses sent me; as my strength was then (כְּכֹחִי אָז), so is my strength now.”"
+            },
+            {
+              "ref": "Jos.17.18",
+              "note": "“You shall drive out the Canaanite, though they have chariots of iron, though he is strong.”"
+            },
+            {
+              "ref": "Jdg.18.26",
+              "note": "Micah saw “that they were too strong for him”."
+            },
+            {
+              "ref": "Amo.2.14",
+              "note": "“The strong shall not strengthen his power, nor the mighty save himself.”"
+            },
+            {
+              "ref": "Exo.10.19",
+              "note": "“A very strong west wind.”"
+            },
+            {
+              "ref": "Exo.19.16",
+              "note": "“The sound of a horn, very strong.”"
+            },
+            {
+              "ref": "1Ki.19.11",
+              "note": "“A great and strong wind tearing the mountains … Yahweh was not in the wind.”"
+            },
+            {
+              "ref": "1Sa.14.52",
+              "note": "“The war was strong against the Philistines all the days of Saul.”"
+            },
+            {
+              "ref": "2Sa.11.15",
+              "note": "“Set Uriah in the front of the strongest battle.”"
+            },
+            {
+              "ref": "1Ki.17.17",
+              "note": "“His sickness was very strong, until no breath was left in him.”"
+            },
+            {
+              "ref": "1Ki.18.2",
+              "note": "“The famine was strong in Samaria.”"
+            },
+            {
+              "ref": "Isa.27.1",
+              "note": "“Yahweh with his hard and great and strong sword will visit Leviathan.”"
+            },
+            {
+              "ref": "Ezk.26.17",
+              "note": "Tyre, “the city that was strong in the sea”."
+            },
+            {
+              "ref": "Psa.35.10",
+              "role": "defining",
+              "note": "“Yahweh, who is like you, delivering the poor מֵחָזָק מִמֶּנּוּ?”"
+            },
+            {
+              "ref": "Jer.31.11",
+              "note": "“Yahweh has redeemed Jacob and ransomed him from the hand of one stronger than he.”"
+            },
+            {
+              "ref": "Job.5.15",
+              "note": "“He saves the needy … from the hand of the strong.”"
+            },
+            {
+              "ref": "Ezk.34.16",
+              "note": "“The fat and the strong I will destroy; I will feed them with judgment.”"
+            },
+            {
+              "ref": "Jer.50.34",
+              "role": "defining",
+              "note": "“גֹּאֲלָם חָזָק, Yahweh of Armies is his name; he will surely plead their cause.”"
+            },
+            {
+              "ref": "Pro.23.11",
+              "note": "Of the fatherless: “their redeemer is strong; he will plead their cause against you.”"
+            },
+            {
+              "ref": "Rev.18.8",
+              "note": "Of Babylon: “strong (ἰσχυρὸς) is the Lord God who judges her”, the Septuagint's word for חָזָק at Jer 50:34."
+            },
+            {
+              "ref": "Isa.40.10",
+              "note": "“Behold, the Lord Yahweh will come בְּחָזָק, and his arm rules for him.”"
+            },
+            {
+              "ref": "Isa.28.2",
+              "note": "“Behold, the Lord has one mighty and strong.”"
+            }
+          ],
+          "kin": [
+            "be-strong"
+          ]
+        },
+        {
+          "id": "strong-hand",
+          "gloss": "strong (hand, arm)",
+          "definition": "In יָד חֲזָקָה, Yahweh's power put forth to bring Israel out of Egypt, often beside “an outstretched arm”, “signs and wonders” and “great terror”; once of Edom's armed force, and in the prophets of Yahweh's hand against Judah and in a second bringing out of the peoples.",
+          "evidence": [
+            {
+              "ref": "Exo.6.1",
+              "role": "defining",
+              "note": "“Now you shall see what I will do to Pharaoh: כִּי בְיָד חֲזָקָה he will send them, and with a strong hand he will drive them out of his land.”"
+            },
+            {
+              "ref": "Exo.3.19",
+              "role": "defining",
+              "note": "“I know that the king of Egypt will not let you go, וְלֹא בְּיָד חֲזָקָה”: not except by a strong hand."
+            },
+            {
+              "ref": "Exo.13.9",
+              "note": "“For with a strong hand Yahweh brought you out of Egypt.”"
+            },
+            {
+              "ref": "Exo.32.11"
+            },
+            {
+              "ref": "Deu.4.34",
+              "role": "defining",
+              "note": "“By trials, by signs and by wonders and by war, וּבְיָד חֲזָקָה וּבִזְרוֹעַ נְטוּיָה, and by great terrors.”"
+            },
+            {
+              "ref": "Deu.5.15",
+              "note": "“Remember that you were a slave in the land of Egypt, and Yahweh your God brought you out from there with a strong hand and an outstretched arm; therefore … the sabbath day.”"
+            },
+            {
+              "ref": "Deu.6.21"
+            },
+            {
+              "ref": "Deu.7.8"
+            },
+            {
+              "ref": "Deu.7.19"
+            },
+            {
+              "ref": "Deu.26.8"
+            },
+            {
+              "ref": "Deu.3.24"
+            },
+            {
+              "ref": "Deu.9.26"
+            },
+            {
+              "ref": "Deu.11.2"
+            },
+            {
+              "ref": "Deu.34.12",
+              "note": "Of Moses: “all the strong hand and all the great terror which Moses did before the eyes of all Israel.”"
+            },
+            {
+              "ref": "Jos.4.24",
+              "note": "“That all the peoples of the earth may know the hand of Yahweh, that it is strong.”"
+            },
+            {
+              "ref": "1Ki.8.42",
+              "note": "The foreigner “shall hear of your great name and your strong hand”."
+            },
+            {
+              "ref": "2Ch.6.32"
+            },
+            {
+              "ref": "Psa.136.12"
+            },
+            {
+              "ref": "Jer.32.21"
+            },
+            {
+              "ref": "Dan.9.15"
+            },
+            {
+              "ref": "Neh.1.10"
+            },
+            {
+              "ref": "Num.20.20",
+              "note": "“Edom came out against him with much people and with a strong hand.”"
+            },
+            {
+              "ref": "Jer.21.5",
+              "role": "defining",
+              "note": "Against Judah: “I myself will fight against you with an outstretched hand and with a strong arm.”"
+            },
+            {
+              "ref": "Ezk.20.33",
+              "role": "defining",
+              "note": "“With a strong hand and an outstretched arm and with fury poured out, I will reign over you.”"
+            },
+            {
+              "ref": "Ezk.20.34"
+            },
+            {
+              "ref": "Ezk.30.22",
+              "note": "“I will break his arms, the strong and the broken.”"
+            },
+            {
+              "ref": "1Pe.5.6",
+              "note": "“Humble yourselves under the strong hand (κραταιὰν χεῖρα) of God”: the Septuagint's κραταιά for חֲזָקָה."
+            }
+          ],
+          "kin": [
+            "hozeq-strength"
+          ]
+        },
+        {
+          "id": "strong-of-heart",
+          "gloss": "hard, firm (of face, forehead, heart)",
+          "definition": "Of the face, forehead or heart: hard, unyielding. Of Israel, stubborn against Yahweh's word; of the prophet, made harder than they to stand against them; of the sky, firm as cast metal.",
+          "evidence": [
+            {
+              "ref": "Ezk.2.4",
+              "role": "defining",
+              "note": "“The sons are קְשֵׁי פָנִים וְחִזְקֵי־לֵב.”"
+            },
+            {
+              "ref": "Ezk.3.7",
+              "role": "defining",
+              "note": "“All the house of Israel חִזְקֵי־מֵצַח וּקְשֵׁי־לֵב הֵמָּה.”"
+            },
+            {
+              "ref": "Ezk.3.8",
+              "role": "defining",
+              "note": "“I have made your face strong (חֲזָקִים) against their faces, and your forehead strong (חָזָק) against their foreheads.”"
+            },
+            {
+              "ref": "Ezk.3.9",
+              "note": "“Like a diamond, harder than flint, I have made your forehead; do not fear them.”"
+            },
+            {
+              "ref": "Job.37.18",
+              "note": "“Can you spread out the skies with him, strong as a cast mirror?”"
+            }
+          ],
+          "kin": [
+            "heart-strong",
+            "harden-heart"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κραταιός",
+          "gloss": "mighty, strong",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.6.1; Deu.7.8; 26.8; Psa.136.12, חֲזָקָה → κραταιᾷ; Pro.23.11 → κραταιός"
+            },
+            {
+              "ref": "1Pe.5.6",
+              "role": "defining",
+              "note": "“Under the mighty hand of God (ὑπὸ τὴν κραταιὰν χεῖρα τοῦ θεοῦ)”: the Septuagint's phrase for יָד חֲזָקָה."
+            }
+          ]
+        },
+        {
+          "lemma": "ἰσχυρός",
+          "gloss": "strong",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.50.34, חָזָק → ἰσχυρός; Num.13.18 → ἰσχυρότερος; ἰσχυρός renders חָזָק ×7"
+            },
+            {
+              "ref": "Rev.18.8",
+              "role": "defining",
+              "note": "Of Babylon's judgment: “strong is the Lord God who judges her”, as Jer 50:34 of Babylon: “their redeemer is strong”."
+            },
+            {
+              "ref": "Luk.11.22",
+              "note": "“When one stronger than he comes upon him”: compare Jer 31:11, redeemed “from the hand of one stronger than he”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָטָה (זְרוֹעַ נְטוּיָה)",
+            "note": "“An outstretched arm”, the partner of “a strong hand”.",
+            "evidence": [
+              {
+                "ref": "Deu.4.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.26.8"
+              },
+              {
+                "ref": "Psa.136.12"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רָפֶה",
+            "note": "“Weak”: the spies were to see whether the people were strong or weak.",
+            "evidence": [
+              {
+                "ref": "Num.13.18",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּיָד חֲזָקָה",
+            "gloss": "with a strong hand",
+            "evidence": [
+              {
+                "ref": "Exo.6.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.6.21"
+              },
+              {
+                "ref": "Ezk.20.33"
+              }
+            ]
+          },
+          {
+            "phrase": "גֹּאֲלָם חָזָק",
+            "gloss": "their redeemer is strong",
+            "evidence": [
+              {
+                "ref": "Jer.50.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.23.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָזְקָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "force, strength (בְּחָזְקָה: by force, strongly)",
+      "bdb": [
+        "h.bs.ag"
+      ],
+      "cognate_ids": [
+        "arc-chazaq"
+      ],
+      "summary": "Only with בְּ, five times. The brief's two qal tokens here (2Ki 12:13; Ezk 30:21) are the verb's infinitive with a suffix, filed by spelling.",
+      "senses": [
+        {
+          "id": "by-force",
+          "gloss": "force; by force, strongly",
+          "definition": "Strength used against another, oppressively or violently; once of crying to God with all one's strength.",
+          "evidence": [
+            {
+              "ref": "1Sa.2.16",
+              "role": "defining",
+              "note": "Eli's servant: “No, you shall give it now, and if not, לָקַחְתִּי בְחָזְקָה.”"
+            },
+            {
+              "ref": "Jdg.4.3",
+              "role": "defining",
+              "note": "Jabin, with nine hundred chariots of iron, “oppressed the sons of Israel בְּחָזְקָה twenty years”."
+            },
+            {
+              "ref": "Ezk.34.4",
+              "role": "defining",
+              "note": "“With force (וּבְחָזְקָה) you have ruled them, and with harshness (וּבְפָרֶךְ).”"
+            },
+            {
+              "ref": "Jdg.8.1",
+              "note": "The men of Ephraim “contended with him strongly”."
+            },
+            {
+              "ref": "Jon.3.8",
+              "role": "defining",
+              "note": "“Let them cry to God בְּחָזְקָה, and let each turn from his evil way.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹזֶק",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "strength",
+      "bdb": [
+        "h.bs.af"
+      ],
+      "cognate_ids": [
+        "arc-chazaq"
+      ],
+      "summary": "Five times: three in בְּחֹזֶק יָד, “with strength of hand”, Exodus's own form of the strong hand. Amo 6:13 בְחָזְקֵנוּ is filed here; its vowel could as well be חָזְקָה.",
+      "senses": [
+        {
+          "id": "hozeq-strength",
+          "gloss": "strength",
+          "definition": "Strength, the might of a hand or of kingdoms.",
+          "evidence": [
+            {
+              "ref": "Exo.13.14",
+              "role": "defining",
+              "note": "“When your son asks you … say to him, בְּחֹזֶק יָד Yahweh brought us out of Egypt, from the house of slaves.”"
+            },
+            {
+              "ref": "Exo.13.3",
+              "note": "“Remember this day … for בְּחֹזֶק יָד Yahweh brought you out from here.”"
+            },
+            {
+              "ref": "Exo.13.16"
+            },
+            {
+              "ref": "Hag.2.22",
+              "role": "defining",
+              "note": "“I will overthrow the throne of kingdoms, וְהִשְׁמַדְתִּי חֹזֶק מַמְלְכוֹת הַגּוֹיִם.”"
+            },
+            {
+              "ref": "Amo.6.13",
+              "role": "defining",
+              "note": "“Who say, Have we not taken Karnaim for ourselves בְחָזְקֵנוּ?”"
+            }
+          ],
+          "kin": [
+            "strong-hand"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶזְקָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "strength; being strong",
+      "bdb": [
+        "h.bs.ae"
+      ],
+      "cognate_ids": [
+        "arc-chazaq"
+      ],
+      "summary": "Four times, three with כְּ: “as he was strong”, “according to his strength”. Twice of a king of Judah whose strength led to his fall.",
+      "senses": [
+        {
+          "id": "hezqah-strength",
+          "gloss": "strength; the time of being strong",
+          "definition": "A man's or a hand's strength; with כְּ, when or as one is strong.",
+          "evidence": [
+            {
+              "ref": "2Ch.26.16",
+              "role": "defining",
+              "note": "“וּכְחֶזְקָתוֹ his heart was lifted up to his destruction, and he trespassed against Yahweh his God.”"
+            },
+            {
+              "ref": "2Ch.12.1",
+              "role": "defining",
+              "note": "“When the kingdom of Rehoboam was established, וּכְחֶזְקָתוֹ, he forsook the law of Yahweh.”"
+            },
+            {
+              "ref": "Dan.11.2",
+              "note": "“By his strength through his riches he shall stir up all against the kingdom of Javan.”"
+            },
+            {
+              "ref": "Isa.8.11",
+              "role": "defining",
+              "note": "“Yahweh spoke thus to me כְּחֶזְקַת הַיָּד, and instructed me not to walk in the way of this people.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָזֵק",
+      "pos": "adjective",
+      "gloss": "growing strong",
+      "bdb": [
+        "h.bs.ac"
+      ],
+      "cognate_ids": [
+        "arc-chazaq"
+      ],
+      "summary": "The stative participle of the verb, twice, after הָלַךְ “go on”: growing stronger and stronger.",
+      "senses": [
+        {
+          "gloss": "growing strong",
+          "definition": "Becoming steadily stronger.",
+          "evidence": [
+            {
+              "ref": "2Sa.3.1",
+              "role": "defining",
+              "note": "“David הֹלֵךְ וְחָזֵק, and the house of Saul הֹלְכִים וְדַלִּים.”"
+            },
+            {
+              "ref": "Exo.19.19",
+              "role": "defining",
+              "note": "“The sound of the horn הוֹלֵךְ וְחָזֵק מְאֹד; Moses spoke, and God answered him by a voice.”"
+            }
+          ],
+          "kin": [
+            "be-strong"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֵזֶק",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "strength",
+      "bdb": [
+        "h.bs.ad"
+      ],
+      "cognate_ids": [
+        "arc-chazaq"
+      ],
+      "summary": "Once, of Yahweh as the psalmist's strength: the same form, חִזְקִי, as the name Hizki, and the first part of Hezekiah's name.",
+      "senses": [
+        {
+          "gloss": "strength",
+          "definition": "Strength; Yahweh as the source of it.",
+          "evidence": [
+            {
+              "ref": "Psa.18.2",
+              "role": "defining",
+              "note": "“I love you, Yahweh, חִזְקִי.”"
+            }
+          ],
+          "kin": [
+            "hozeq-strength"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חזַק",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "gird; set out, go abroad",
+      "cognate_ids": [
+        "syc-hzq",
+        "ar-hazaqa"
+      ],
+      "summary": "The Peshitta's verb of the root: to gird the loins, for περιζώννυμι and ἀναζώννυμι, and to go away on a journey, for ἀποδημέω. Girding is the binding fast of the Arabic and of the Hebrew piel (Nah 2:2); how “go abroad” comes from it (girding oneself to set out) is not shown by the verses.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "gird; go abroad",
+          "senses": [
+            {
+              "id": "syc-gird",
+              "gloss": "gird (the loins)",
+              "definition": "To bind the loins, for readiness: with truth, and the loins of the mind.",
+              "evidence": [
+                {
+                  "ref": "Eph.6.14",
+                  "role": "defining",
+                  "note": "“Stand therefore, וַחזֻוקו חַצַיכֻּון בּקֻושתָּא”: gird your loins with truth (περιζωσάμενοι)."
+                },
+                {
+                  "ref": "1Pe.1.13",
+                  "role": "defining",
+                  "note": "“חזֻוקו חַצֵא דּתַרעיָתכֻון”: gird the loins of your mind (ἀναζωσάμενοι)."
+                }
+              ],
+              "kin": [
+                "fasten"
+              ]
+            },
+            {
+              "id": "syc-go-abroad",
+              "gloss": "set out, go abroad",
+              "definition": "To go away on a journey, of the master in the parables who leaves his house or vineyard to his servants.",
+              "evidence": [
+                {
+                  "ref": "Mat.25.14",
+                  "role": "defining",
+                  "note": "“As a man דַּחזַק called his servants and handed over to them his goods” (ἀποδημῶν)."
+                },
+                {
+                  "ref": "Mat.25.15",
+                  "note": "“… to each according to his ability, וַחזַק.”"
+                },
+                {
+                  "ref": "Mrk.13.34",
+                  "role": "defining",
+                  "note": "“As a man דַּחזַק and left his house, and gave authority to his servants.”"
+                },
+                {
+                  "ref": "Mat.21.33"
+                },
+                {
+                  "ref": "Mrk.12.1"
+                },
+                {
+                  "ref": "Act.25.4",
+                  "note": "Festus himself was about to depart (דֵּאחזֻוק) to Caesarea."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חזָקָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bond",
+      "cognate_ids": [
+        "syc-hzq",
+        "ar-hazaqa"
+      ],
+      "summary": "The Peshitta's noun for σύνδεσμος, “that which binds together”: the bond of peace and the bond of perfection.",
+      "senses": [
+        {
+          "gloss": "bond",
+          "definition": "What binds things together and holds them fast.",
+          "evidence": [
+            {
+              "ref": "Eph.4.3",
+              "role": "defining",
+              "note": "“To keep the unity of the spirit בַּחזָקָא דַּשלָמָא”: in the bond of peace."
+            },
+            {
+              "ref": "Col.3.14",
+              "role": "defining",
+              "note": "Love, “which is חזָקָא דַּגמִירֻותָא”: the bond of perfection."
+            }
+          ],
+          "kin": [
+            "fasten"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hazaqa",
+      "lang": "ar",
+      "form": "حَزَقَ، حِزَاقٌ",
+      "translit": "ḥazaqa, ḥizāq",
+      "gloss": "tie, bind strongly with a rope; string a bow; pull a bond hard; squeeze, compress; (ḥizāq) anything that binds or makes fast",
+      "relation": "cognate",
+      "note": "The firmness of what is bound tight: the Hebrew's strength is held fast, its piel fastens and girds, its hiphil grips and does not let go, and its bonds “grow strong” (Isa 28:22). Arabic shows ḥ behind ח and z (not ḏ) behind ז.",
+      "sounds": {
+        "ח": "ḥ",
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 560, art. حزق, حَزَقَ (n7851)",
+          "note": "“He tied, or bound, a thing with a rope: he tied, or bound, it strongly with a rope … He strung a bow … He pulled, or drew, a bond, and a bow-string, hard, or vehemently … He, or it, squeezed, pressed, compressed.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 560, art. حزق, حِزَاقٌ (n7862)",
+          "note": "“Anything with which one ties, binds, or makes fast.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Hebrew root ח־ז־ק, etymology",
+          "note": "Compares Classical Syriac ܚ ܙ ܩ and Arabic حَزَقَ “to constrict”."
+        }
+      ]
+    },
+    {
+      "id": "arc-chazaq",
+      "lang": "arc",
+      "form": "חֲזַק، חֲזִיק",
+      "translit": "ḥăzaq, ḥăzīq",
+      "gloss": "(passive participle) tied up, bandaged; (pael) fasten, tighten; (aphel) take possession; be strong, take courage; (ithpaal) adhere to",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums and Talmud: the same two sides as the Hebrew, binding fast and being strong. The Targum of Pro 4:13 uses the ithpaal for the Hebrew hiphil “hold fast to instruction”, and אַחֲזוּקוּ “be strong” was a greeting to labourers in the field.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲזַק (ch.), citing Y. Ber. II, 4c (part. pass. חֲזִיק, his head tied up); Lev. R. s. 21 (Pa. חַזֵּק, tighten his muzzle); Gitt. 62a (Af. אַחֲזוּקוּ, be strong); Targ. Prov. IV, 13 (Ithpa. adhere to)"
+        }
+      ]
+    },
+    {
+      "id": "syc-hzq",
+      "lang": "syc",
+      "form": "ܚܙܩ، ܚܙܩܐ",
+      "translit": "ḥzaq, ḥzāqā",
+      "gloss": "gird; go on a journey; bond, belt, band",
+      "relation": "cognate",
+      "note": "The Syriac of the Peshitta: the binding sense (gird, a belt, a bond), as Arabic ḥazaqa; no Syriac “be strong” is attested in the Peshitta, which uses ܚܣܢ and ܬܩܦ for that.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 615 KZX; lexemes 1005 KZX (gird; journey), 1006 KZXA (bond; belt; band)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "pharaoh-heart-strengthened",
+      "statement": "Before the signs began Yahweh told Moses, “I know that the king of Egypt will not let you go, not even by a strong hand” (Exo 3:19), and then, “I will strengthen his heart, and he will not let the people go” (Exo 4:21). Through the first signs the text says only, “the heart of Pharaoh was strong (וַיֶּחֱזַק), and he did not listen to them, as Yahweh had spoken”, even after his own magicians told him, “It is the finger of God” (Exo 7:13, 22; 8:15); it says the same after the hail (Exo 9:35). From the boils on, Yahweh is named as the one who did it: “Yahweh strengthened the heart of Pharaoh, and he did not listen to them” (Exo 9:12; 10:20, 27; 11:10), and at the sea, “I will strengthen Pharaoh's heart, and he will pursue them, and I will be glorified through Pharaoh and all his army, and Egypt shall know that I am Yahweh” (Exo 14:4, 8, 17). In every verse what was made strong was Pharaoh's will not to let Israel go; at the last Egypt itself “was strong (וַתֶּחֱזַק) upon the people” to send them out in haste (Exo 12:33). Paul quotes Exo 9:16, “for this very purpose I raised you up, that I might show my power in you, and that my name might be declared in all the earth”, and concludes, “whom he will he hardens” (Rom 9:17–18). The same is said of the kings of Canaan, “it was from Yahweh to strengthen their heart to meet Israel in battle, that he might devote them” (Jos 11:20). Men also strengthen their own faces: “they made their faces harder than rock, they refused to return” (Jer 5:3). From the verses: the refusal was known and foretold before any strengthening, and Yahweh made firm a will already set against him, so that it held to the end and his power and name were shown through it.",
+      "evidence": [
+        {
+          "ref": "Exo.3.19"
+        },
+        {
+          "ref": "Exo.4.21"
+        },
+        {
+          "ref": "Exo.7.13"
+        },
+        {
+          "ref": "Exo.7.22"
+        },
+        {
+          "ref": "Exo.8.15"
+        },
+        {
+          "ref": "Exo.9.35"
+        },
+        {
+          "ref": "Exo.9.12"
+        },
+        {
+          "ref": "Exo.10.20"
+        },
+        {
+          "ref": "Exo.10.27"
+        },
+        {
+          "ref": "Exo.11.10"
+        },
+        {
+          "ref": "Exo.14.4"
+        },
+        {
+          "ref": "Exo.14.8"
+        },
+        {
+          "ref": "Exo.14.17"
+        },
+        {
+          "ref": "Exo.12.33"
+        },
+        {
+          "ref": "Exo.9.16"
+        },
+        {
+          "ref": "Rom.9.17",
+          "to": "Rom.9.18"
+        },
+        {
+          "ref": "Jos.11.20"
+        },
+        {
+          "ref": "Jer.5.3"
+        }
+      ]
+    },
+    {
+      "topic": "strength-from-god",
+      "statement": "The command “be strong” is given with its ground: “be strong and courageous, do not fear … for Yahweh your God, he goes with you; he will not fail you or forsake you” (Deu 31:6; Jos 1:9; 1Ch 28:20); “be strong … and work, for I am with you” (Hag 2:4); “say to those of hasty heart, Be strong, do not fear; behold, your God will come … and save you” (Isa 35:4). It is strength to obey: “only be strong and very courageous to keep and do all the law … do not turn from it to the right or the left” (Jos 1:7; 23:6). David in distress “strengthened himself in Yahweh his God” (1Sa 30:6); Ezra “took courage as the hand of Yahweh my God was upon me” (Ezr 7:28); “the eyes of Yahweh run to and fro in all the earth, to show himself strong with those whose heart is whole toward him” (2Ch 16:9); the people who know their God “shall be strong and act” (Dan 11:32). The command to strengthen weak hands (Isa 35:3) is laid on believers (Heb 12:12), and Paul's charge, “stand firm in the faith, act like men, be strong” (1Co 16:13), uses the Septuagint's words for חֲזַק. From the verses: the strength scripture commands is courage to do Yahweh's will, resting on his presence and promise, not on a man's own power.",
+      "evidence": [
+        {
+          "ref": "Deu.31.6"
+        },
+        {
+          "ref": "Jos.1.9"
+        },
+        {
+          "ref": "1Ch.28.20"
+        },
+        {
+          "ref": "Hag.2.4"
+        },
+        {
+          "ref": "Isa.35.4"
+        },
+        {
+          "ref": "Jos.1.7"
+        },
+        {
+          "ref": "Jos.23.6"
+        },
+        {
+          "ref": "1Sa.30.6"
+        },
+        {
+          "ref": "Ezr.7.28"
+        },
+        {
+          "ref": "2Ch.16.9"
+        },
+        {
+          "ref": "Dan.11.32"
+        },
+        {
+          "ref": "Isa.35.3"
+        },
+        {
+          "ref": "Heb.12.12"
+        },
+        {
+          "ref": "1Co.16.13"
+        }
+      ]
+    },
+    {
+      "topic": "servant-upheld",
+      "statement": "Yahweh says to his servant, “I, Yahweh, have called you in righteousness, and I will hold your hand (וְאַחְזֵק בְּיָדֶךָ) and keep you, and give you for a covenant of the people, for a light of the nations” (Isa 42:6); the same chapter begins “Behold my servant, whom I uphold” (Isa 42:1), and he holds Israel's right hand in the same way (Isa 41:13). Matthew applies Isa 42:1 to Jesus (Mat 12:18), and Simeon calls the child “a light for revelation to the nations” (Luk 2:32). In the garden “an angel from heaven appeared to him, strengthening him” (Luk 22:43), as a messenger strengthened Daniel (Dan 10:18–19), and “in the days of his flesh” he offered prayers with strong crying “to him who was able to save him from death” (Heb 5:7). From the verses: the servant is held by Yahweh's hand and kept by him; Jesus, a man, was upheld and strengthened by his Father and by his messenger, as Israel and the prophets were.",
+      "evidence": [
+        {
+          "ref": "Isa.42.6"
+        },
+        {
+          "ref": "Isa.42.1"
+        },
+        {
+          "ref": "Isa.41.13"
+        },
+        {
+          "ref": "Mat.12.18"
+        },
+        {
+          "ref": "Luk.2.32"
+        },
+        {
+          "ref": "Luk.22.43"
+        },
+        {
+          "ref": "Dan.10.18",
+          "to": "Dan.10.19"
+        },
+        {
+          "ref": "Heb.5.7"
+        }
+      ]
+    },
+    {
+      "topic": "strength-and-pride",
+      "statement": "When the kingdom of Rehoboam was established “and he was strong (וּכְחֶזְקָתוֹ), he forsook the law of Yahweh, and all Israel with him” (2Ch 12:1). Uzziah “was marvellously helped until he was strong; but when he was strong his heart was lifted up to his destruction” (2Ch 26:15–16). Amos rebukes those who say, “Have we not taken Karnaim by our own strength?” (Amo 6:13), and Ezekiel's shepherd will destroy “the fat and the strong” who ruled “with force” (Ezk 34:4, 16). Amaziah is told, “God has power to help and to cast down” (2Ch 25:8), and David says, “in your hand it is to make great and to give strength to all” (1Ch 29:12). Haggai hears that Yahweh “will overthrow the throne of kingdoms and destroy the strength of the kingdoms of the nations” (Hag 2:22), and set his chosen servant like a signet (Hag 2:23). From the verses: strength is Yahweh's gift, and when a man or a kingdom counts it his own it leads to pride and a fall; the strength of the nations' kingdoms is to be broken by Yahweh himself.",
+      "evidence": [
+        {
+          "ref": "2Ch.12.1"
+        },
+        {
+          "ref": "2Ch.26.15",
+          "to": "2Ch.26.16"
+        },
+        {
+          "ref": "Amo.6.13"
+        },
+        {
+          "ref": "Ezk.34.4"
+        },
+        {
+          "ref": "Ezk.34.16"
+        },
+        {
+          "ref": "2Ch.25.8"
+        },
+        {
+          "ref": "1Ch.29.12"
+        },
+        {
+          "ref": "Hag.2.22",
+          "to": "Hag.2.23"
+        }
+      ]
+    },
+    {
+      "topic": "strong-hand-exodus",
+      "statement": "Israel was taught to answer its sons, “with a strong hand (בְּחֹזֶק יָד) Yahweh brought us out of Egypt, from the house of slaves” (Exo 13:14), and the sabbath was given to remember it (Deu 5:15). The strong hand is the power shown in signs and wonders and great terrors, so that “all the peoples of the earth may know the hand of Yahweh, that it is strong” (Deu 4:34; Jos 4:24), and the foreigner who hears of it may come and pray toward the house (1Ki 8:42). The prophets turn the phrase against Judah, “I myself will fight against you with an outstretched hand and a strong arm” (Jer 21:5), and then forward: “with a strong hand and an outstretched arm and with fury poured out I will reign over you; I will bring you out from the peoples and gather you from the countries where you are scattered … and bring you into the bond of the covenant, and purge out the rebels” (Ezk 20:33–38). From the verses: the strong hand that brought Israel out of Egypt will bring them out again from among the nations, judge them, and reign over them in their own land.",
+      "evidence": [
+        {
+          "ref": "Exo.13.14"
+        },
+        {
+          "ref": "Deu.5.15"
+        },
+        {
+          "ref": "Deu.4.34"
+        },
+        {
+          "ref": "Jos.4.24"
+        },
+        {
+          "ref": "1Ki.8.42"
+        },
+        {
+          "ref": "Jer.21.5"
+        },
+        {
+          "ref": "Ezk.20.33",
+          "to": "Ezk.20.38"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key חזק, the corpus's and BDB's (h.bs.aa as the root heading); no existing entry used it. All BDB keys under the root are assigned: h.bs.aa verb, h.bs.ab adjective, h.bs.ac חָזֵק, h.bs.ad חֵזֶק, h.bs.ae חֶזְקָה, h.bs.af חֹזֶק, h.bs.ag חָזְקָה; the names in names/: h.bs.ai and h.bs.ak hezekiah (יְחִזְקִיָּהוּ, 0 tokens, is Hezekiah's longer spelling), h.bs.aj ezekiel, h.bs.ah hizki. j.be.ai (a zero-token cross-reference filed as a verb under יְחֶזְקֵאל, text “יְחִזְקִיָּה(וּ) see חזק”) is left unassigned. Shared tokens: the 14 verb tokens with no stem are the adjective חָזָק (counted under both keys); the adjective's one qal token (2Ch 26:15) is the verb; חָזְקָה's two qal tokens (2Ki 12:13; Ezk 30:21) are the infinitive with a suffix. No Biblical Aramaic word: Daniel and Ezra use תקף for “be strong”. The Peshitta's חזַק and חזָקָא are its words of the root (gird; go abroad; bond); the Peshitta's own words for “strong” are חסן and תקף (Luk 11:21–22; 1Pe 5:6). Greek: the brief's “loan” ἰσχυρός is a false lead (Thayer lists חָזָק among the Hebrew words it renders); recorded as a rendering only. Pharaoh's heart: this entry keeps to the חָזַק verses; כָּבֵד (Exo 8:11, 28; 9:34) and קָשָׁה (Exo 7:3; 13:15) are treated in kaved and qashah. Leads not followed: Akkadian izqātu “fetters” (Oracc armep x000061520) and a possible eṣqu/esqu “strong”, argued as cognate but not checked in CAD; Ugaritic ḥzq (DULAT, not vendored); Old and Imperial Aramaic (CAL, Hoftijzer–Jongeling); Payne Smith for ܚܙܩ beyond SEDRA. Arabic حذق (ḥḏq, “cut; be skilful”) and خزق (ḫzq, “pierce”), tried by sound correspondence, share no sense and are not recorded. Open questions: (1) how the Peshitta's “go abroad” comes from the root; (2) whether 2Ch 28:20 חֲזָקוֹ is qal or a piel by form (the corpus tags it qal); (3) the doctrine statements are reasoned conclusions to review."
+}
