@@ -1,0 +1,1222 @@
+{
+  "id": "gam",
+  "root": "גממ",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "grammar",
+    "particle",
+    "addition",
+    "emphasis"
+  ],
+  "gloss": "(particle) also, too; even; both … and",
+  "summary": "גַּם is the particle of addition: it sets one more thing beside what has already been said, a person (\"she gave also to her husband\", Gen 3:6), a pair or a list (\"both straw and fodder\", Gen 24:25) or a whole statement (\"and moreover I have heard\", Exo 6:5). When the thing added is the last one expected it is \"even\" (\"even a fool who keeps silent is counted wise\", Pro 17:28), with a pronoun it stresses the person (\"bless me, me also\", Gen 27:34) or marks an act that answers another (\"I also will laugh at your calamity\", Pro 1:26), and with כִּי it concedes: \"even though I walk in the valley of deep shadow\" (Psa 23:4). Scripture has no verb of this root; the doubled מ of מְגַמָּה (Hab 1:9) and Arabic jamma \"become much, collect\" point to a root גמם \"mass, be many\", so that גַּם would at first have meant \"in a mass, together with\". That origin is likely, not proved; what is certain is the particle's use, which Moabite shares (the stele of Mesha: \"and he also said\").",
+  "words": [
+    {
+      "lemma": "גַּם",
+      "bdb": [
+        "c.ck.ab"
+      ],
+      "cognate_ids": [
+        "moab-gm"
+      ],
+      "pos": "particle",
+      "gloss": "also, too; moreover; both … and; even; (I) myself, in turn; even though, yet",
+      "summary": "Never inflected and never given a suffix; about 770 uses, in every book but a few of the shortest. It stands directly before the word or clause it bears on, often joined to it by maqqef (גַּם־), and after a verb's subject where it stresses a pronoun (וַיֵּלֶךְ גַּם־הוּא). With וְ it is וְגַם \"and also\", with the question particle הֲגַם, and in the late style with שֶׁ (שֶׁגַּם, בְּשַׁגַּם). Repeated, גַּם … גַּם binds the members of a pair or list together. Its senses are one movement: something more is laid on what stands already, whether the more is another like it (\"also\"), the furthest case (\"even\"), the speaker's own part (\"I for my part\") or a thing that might have been thought to cancel what is said and does not (\"even though\").",
+      "senses": [
+        {
+          "id": "gam-also",
+          "gloss": "also, too, as well",
+          "definition": "Adds a person or thing to one already named, as sharing in what is said of it: the second does, receives or suffers the same as the first.",
+          "evidence": [
+            {
+              "ref": "Gen.3.6",
+              "role": "defining",
+              "note": "The woman ate, וַתִּתֵּן גַּם־לְאִישָׁהּ עִמָּהּ וַיֹּאכַל: \"and she gave also to her husband with her, and he ate\"."
+            },
+            {
+              "ref": "Gen.4.4",
+              "role": "defining",
+              "note": "After Cain's offering: וְהֶבֶל הֵבִיא גַם־הוּא, \"and Abel, he also brought\"."
+            },
+            {
+              "ref": "1Sa.19.24",
+              "role": "defining",
+              "note": "After three companies of messengers had prophesied (1Sa 19:20–21), Saul \"also stripped off his clothes, and he also prophesied\"; hence the saying, הֲגַם שָׁאוּל בַּנְּבִיאִם, \"is Saul also among the prophets?\""
+            },
+            {
+              "ref": "Num.12.2",
+              "role": "defining",
+              "note": "Set against \"only\": \"Has Yahweh spoken only by Moses? Has he not spoken also by us (גַּם־בָּנוּ)?\""
+            },
+            {
+              "ref": "Gen.4.22",
+              "note": "After Adah's sons: \"and Zillah, she also (גַם־הִוא) bore Tubal-cain\"."
+            },
+            {
+              "ref": "Gen.24.19",
+              "note": "Rebekah, having given the servant drink: \"I will draw for your camels also\"."
+            },
+            {
+              "ref": "Gen.29.30",
+              "note": "\"And he went in also to Rachel, and he loved also Rachel, more than Leah.\""
+            },
+            {
+              "ref": "Gen.38.10",
+              "note": "After Er: Yahweh \"put him to death also\" (וַיָּמֶת גַּם־אֹתוֹ)."
+            },
+            {
+              "ref": "Gen.50.18",
+              "note": "\"And his brothers also went and fell down before him.\""
+            },
+            {
+              "ref": "Exo.12.32",
+              "note": "Pharaoh: \"take your flocks also and your herds also … and go; and bless me also (גַּם־אֹתִי)\"."
+            },
+            {
+              "ref": "Exo.19.9",
+              "note": "The people are to hear Yahweh speak with Moses, \"and may believe in you also for ever\"."
+            },
+            {
+              "ref": "Deu.3.20",
+              "note": "\"Until Yahweh gives rest to your brothers as to you, and they also (גַם־הֵם) possess the land.\""
+            },
+            {
+              "ref": "Deu.1.37",
+              "note": "Moses: \"with me also Yahweh was angry on your account, saying, You also shall not go in there.\""
+            },
+            {
+              "ref": "1Sa.8.8",
+              "note": "As Israel forsook Yahweh, \"so they are doing to you also\"."
+            },
+            {
+              "ref": "1Sa.28.19",
+              "note": "\"Yahweh will give Israel also with you into the hand of the Philistines.\""
+            },
+            {
+              "ref": "Job.1.6",
+              "note": "The sons of God came to present themselves before Yahweh, \"and the adversary also came among them\"."
+            },
+            {
+              "ref": "Psa.8.8",
+              "note": "Under man's feet: \"sheep and oxen, all of them, and also the beasts of the field\"."
+            },
+            {
+              "ref": "Psa.132.12",
+              "note": "If David's sons keep the covenant, \"their sons also shall sit on your throne for ever\"."
+            },
+            {
+              "ref": "Isa.66.21",
+              "note": "\"And of them also I will take for priests, for Levites, says Yahweh.\""
+            },
+            {
+              "ref": "Zec.9.7",
+              "note": "Of the Philistine, cleansed of his abominations: וְנִשְׁאַר גַּם־הוּא לֵאלֹהֵינוּ, \"he also shall be left for our God\"."
+            },
+            {
+              "ref": "Jol.3.2",
+              "note": "After sons, daughters, old men and young men (Jol 3:1): \"and also on the servants and on the handmaids I will pour out my spirit in those days\"."
+            },
+            {
+              "ref": "Act.2.18",
+              "note": "Peter quotes Jol 3:2 with καί γε for וְגַם: \"and on my servants also, and on my handmaids, I will pour out of my spirit\"."
+            }
+          ]
+        },
+        {
+          "id": "gam-moreover",
+          "gloss": "moreover, and besides, and further",
+          "definition": "At the head of a clause, mostly as וְגַם, it adds a further statement to those before it: one more fact in a report, one more count in a charge, one more ground in an argument.",
+          "evidence": [
+            {
+              "ref": "Jos.7.11",
+              "role": "defining",
+              "note": "Five times, piling up the charge: \"Israel has sinned, and they have also transgressed my covenant …, and have also taken of the devoted thing, and have also stolen, and have also lied, and have also put it among their own things.\""
+            },
+            {
+              "ref": "1Ki.1.46",
+              "to": "1Ki.1.48",
+              "role": "defining",
+              "note": "Jonathan's report, each new item opening with וְגַם: \"and also Solomon sits on the throne …, and also the king's servants came …, and also thus the king said\"."
+            },
+            {
+              "ref": "Exo.6.4",
+              "to": "Exo.6.5",
+              "role": "defining",
+              "note": "\"And I also established my covenant with them …; and moreover I (וְגַם אֲנִי) have heard the groaning of the sons of Israel.\""
+            },
+            {
+              "ref": "Gen.20.12",
+              "note": "Abraham adds a second defence: וְגַם־אָמְנָה, \"and besides, she is truly my sister\"."
+            },
+            {
+              "ref": "Gen.17.16",
+              "note": "\"I will bless her, and moreover I will give you a son from her.\""
+            },
+            {
+              "ref": "Gen.15.14",
+              "note": "After the four hundred years of affliction: \"and also the nation that they serve I will judge\"."
+            },
+            {
+              "ref": "Act.7.7",
+              "note": "Stephen quotes Gen 15:14: καὶ τὸ ἔθνος ᾧ ἐὰν δουλεύσωσιν, κρινῶ ἐγώ."
+            },
+            {
+              "ref": "Gen.38.24",
+              "note": "\"Tamar your daughter-in-law has played the harlot, and moreover, behold, she is with child.\""
+            },
+            {
+              "ref": "Exo.33.12",
+              "note": "\"I know you by name, and you have also found favour in my eyes.\""
+            },
+            {
+              "ref": "1Sa.15.29",
+              "note": "Samuel adds to the sentence on Saul: \"and moreover the Enduring One of Israel will not lie and will not repent\"."
+            },
+            {
+              "ref": "2Sa.20.26",
+              "note": "The last name in the list of David's officers: \"and also Ira the Jairite was priest to David\"."
+            },
+            {
+              "ref": "1Ki.8.41",
+              "note": "A new petition in Solomon's prayer: \"and also to the foreigner, who is not of your people Israel\"."
+            },
+            {
+              "ref": "1Ki.21.19",
+              "note": "\"Have you murdered, and also taken possession?\""
+            },
+            {
+              "ref": "Rut.4.10",
+              "note": "After all that was Elimelech's (Rut 4:9): \"and also Ruth the Moabitess … I have acquired to be my wife\"."
+            },
+            {
+              "ref": "Est.7.9",
+              "note": "Harbonah adds a fact: \"also, behold, the tree that Haman made for Mordecai … stands in Haman's house\"."
+            },
+            {
+              "ref": "Neh.5.14",
+              "note": "Nehemiah adds to his account: \"moreover, from the day I was appointed their governor … I and my brothers did not eat the governor's bread\"."
+            },
+            {
+              "ref": "Ecc.3.11",
+              "note": "\"He has made everything beautiful in its time; also he has put the age in their heart.\""
+            },
+            {
+              "ref": "Ecc.9.3",
+              "note": "\"One event is to all; and also the heart of the sons of Adam is full of evil.\""
+            },
+            {
+              "ref": "Psa.137.1",
+              "note": "Joining two verbs: \"there we sat, and we wept (גַּם־בָּכִינוּ)\"."
+            },
+            {
+              "ref": "Jer.12.2",
+              "note": "\"You planted them, they have also taken root; they grow, they have also borne fruit.\""
+            }
+          ]
+        },
+        {
+          "id": "gam-both",
+          "gloss": "both … and; (with a negative) neither … nor",
+          "definition": "Repeated before each member, גַּם … גַּם (or גַּם … וְגַם) binds two or more things into one statement: \"both … and\", \"… and … alike\". Where the statement is denied, the same pair is \"neither … nor\".",
+          "evidence": [
+            {
+              "ref": "Gen.24.25",
+              "role": "defining",
+              "note": "גַּם־תֶּבֶן גַּם־מִסְפּוֹא רַב עִמָּנוּ גַּם־מָקוֹם לָלוּן: \"both straw and fodder in plenty are with us, and room to lodge as well\"."
+            },
+            {
+              "ref": "1Sa.17.36",
+              "role": "defining",
+              "note": "\"Your servant has struck both the lion and the bear\" (גַּם אֶת־הָאֲרִי גַּם־הַדּוֹב)."
+            },
+            {
+              "ref": "Gen.43.8",
+              "role": "defining",
+              "note": "\"That we may live and not die, both we and you and our little ones\": three members."
+            },
+            {
+              "ref": "1Sa.28.6",
+              "role": "defining",
+              "note": "Under a negative: Yahweh did not answer Saul, גַּם בַּחֲלֹמוֹת גַּם בָּאוּרִים גַּם בַּנְּבִיאִם, \"neither by dreams nor by Urim nor by the prophets\"."
+            },
+            {
+              "ref": "1Ki.3.26",
+              "role": "defining",
+              "note": "גַּם־לִי גַם־לָךְ לֹא יִהְיֶה: \"it shall be neither mine nor yours\"."
+            },
+            {
+              "ref": "Gen.24.44",
+              "note": "\"Both drink yourself, and I will draw for your camels also\" (גַּם־אַתָּה שְׁתֵה וְגַם לִגְמַלֶּיךָ אֶשְׁאָב)."
+            },
+            {
+              "ref": "Gen.44.16",
+              "note": "\"We are my lord's servants, both we and he in whose hand the cup was found.\""
+            },
+            {
+              "ref": "Exo.12.31",
+              "note": "\"Go out from among my people, both you and the sons of Israel.\""
+            },
+            {
+              "ref": "Exo.4.10",
+              "note": "\"I am not a man of words, neither yesterday nor the day before, nor since you have spoken to your servant.\""
+            },
+            {
+              "ref": "Num.18.3",
+              "note": "\"That they do not die, both they and you\" (גַם־הֵם גַּם־אַתֶּם)."
+            },
+            {
+              "ref": "Num.23.25",
+              "note": "Balak: גַּם־קֹב לֹא תִקֳּבֶנּוּ גַּם־בָּרֵךְ לֹא תְבָרֲכֶנּוּ, \"neither curse him at all nor bless him at all\"."
+            },
+            {
+              "ref": "Deu.32.25",
+              "note": "The sword bereaves \"both young man and virgin, the suckling with the grey-haired man\"."
+            },
+            {
+              "ref": "Jdg.8.22",
+              "note": "\"Rule over us, both you and your son and your son's son.\""
+            },
+            {
+              "ref": "1Sa.21.9",
+              "note": "\"I have taken neither my sword nor my weapons in my hand\" (גַם־חַרְבִּי וְגַם־כֵּלַי לֹא־לָקַחְתִּי)."
+            },
+            {
+              "ref": "1Ki.3.13",
+              "note": "\"What you did not ask I have given you, both riches and honour.\""
+            },
+            {
+              "ref": "Gen.21.26",
+              "note": "Abimelech: \"neither did you tell me, nor did I hear of it until today\" (וְגַם־אַתָּה לֹא … וְגַם אָנֹכִי לֹא)."
+            },
+            {
+              "ref": "Isa.48.8",
+              "note": "Three times with the negative: \"you neither heard, nor knew, nor was your ear opened from of old\"."
+            },
+            {
+              "ref": "Jer.51.12",
+              "note": "\"Yahweh has both purposed and done what he spoke against the inhabitants of Babylon.\""
+            },
+            {
+              "ref": "Zep.1.18",
+              "note": "\"Neither their silver nor their gold shall be able to deliver them in the day of Yahweh's wrath.\""
+            },
+            {
+              "ref": "Psa.49.3",
+              "note": "The psalm's hearers: גַּם־בְּנֵי אָדָם גַּם־בְּנֵי־אִישׁ, \"both sons of Adam and sons of man, rich and poor together\"."
+            },
+            {
+              "ref": "Job.15.10",
+              "note": "\"Both the grey-haired and the aged are among us.\""
+            },
+            {
+              "ref": "Ecc.9.1",
+              "note": "גַּם־אַהֲבָה גַם־שִׂנְאָה אֵין יוֹדֵעַ הָאָדָם: \"whether love or hatred, man does not know\"."
+            },
+            {
+              "ref": "Ecc.9.6",
+              "note": "Of the dead: \"their love and their hatred and their envy alike have already perished\" (three times גַּם)."
+            }
+          ]
+        },
+        {
+          "id": "gam-even",
+          "gloss": "even",
+          "definition": "Adds the extreme or least expected case, and by it carries the statement to its limit: if it holds here, it holds everywhere. With a negative, \"not even\".",
+          "evidence": [
+            {
+              "ref": "Pro.17.28",
+              "role": "defining",
+              "note": "גַּם אֱוִיל מַחֲרִישׁ חָכָם יֵחָשֵׁב: \"even a fool, keeping silent, is counted wise\"."
+            },
+            {
+              "ref": "Pro.14.20",
+              "role": "defining",
+              "note": "\"Even by his neighbour the poor man is hated.\""
+            },
+            {
+              "ref": "Psa.139.12",
+              "role": "defining",
+              "note": "\"Even darkness is not dark to you, and night shines as the day.\""
+            },
+            {
+              "ref": "Isa.49.15",
+              "role": "defining",
+              "note": "Of mothers and their sucking children: גַּם־אֵלֶּה תִשְׁכַּחְנָה וְאָנֹכִי לֹא אֶשְׁכָּחֵךְ, \"even these may forget, but I will not forget you\"."
+            },
+            {
+              "ref": "Psa.14.3",
+              "role": "defining",
+              "note": "אֵין עֹשֵׂה־טוֹב אֵין גַּם־אֶחָד: \"there is none doing good, there is not even one\"."
+            },
+            {
+              "ref": "Rom.3.12",
+              "note": "Paul quotes Psa 14:3: οὐκ ἔστιν ἕως ἑνός, \"there is not so much as one\"."
+            },
+            {
+              "ref": "Gen.20.4",
+              "note": "Abimelech: הֲגוֹי גַּם־צַדִּיק תַּהֲרֹג, \"will you slay a nation even though righteous?\""
+            },
+            {
+              "ref": "Exo.4.9",
+              "note": "\"If they will not believe even these two signs.\""
+            },
+            {
+              "ref": "1Sa.14.15",
+              "note": "The panic reached the garrison and the raiders: \"even they trembled\"."
+            },
+            {
+              "ref": "2Sa.17.10",
+              "note": "\"And even he who is valiant, whose heart is as a lion's heart, will utterly melt.\""
+            },
+            {
+              "ref": "Psa.41.10",
+              "note": "\"Even the man of my peace, in whom I trusted, who ate my bread, has lifted up his heel against me.\""
+            },
+            {
+              "ref": "Psa.84.4",
+              "note": "\"Even the sparrow has found a house, and the swallow a nest for herself.\""
+            },
+            {
+              "ref": "Psa.139.10",
+              "note": "At the far side of the sea: \"even there your hand will lead me\"."
+            },
+            {
+              "ref": "Psa.38.11",
+              "note": "\"The light of my eyes, even that is not with me.\""
+            },
+            {
+              "ref": "Pro.14.13",
+              "note": "\"Even in laughter the heart may ache.\""
+            },
+            {
+              "ref": "Pro.20.11",
+              "note": "\"Even a child makes himself known by his deeds.\""
+            },
+            {
+              "ref": "Jer.8.7",
+              "note": "\"Even the stork in the heavens knows her appointed times …, but my people do not know the judgment of Yahweh.\""
+            },
+            {
+              "ref": "Jer.2.33",
+              "note": "\"Even the wicked women you have taught your ways.\""
+            },
+            {
+              "ref": "Ecc.4.8",
+              "note": "One alone, with no second: \"he has not even a son or a brother\"."
+            },
+            {
+              "ref": "Ecc.9.12",
+              "note": "\"Man does not even know his time.\""
+            },
+            {
+              "ref": "Neh.3.35",
+              "note": "Tobiah's taunt: \"even what they are building, if a fox goes up he will break down their stone wall\"."
+            },
+            {
+              "ref": "Mal.3.15",
+              "note": "\"The doers of wickedness are even built up; they even test God and escape.\""
+            }
+          ]
+        },
+        {
+          "id": "gam-self",
+          "gloss": "(I) myself, (you) yourself; indeed, yes",
+          "definition": "Lays stress on the word it stands with, most often a pronoun repeated after the verb or suffix: \"me, me also\", \"your blood, yes yours\". Before an infinitive that doubles the verb it strengthens the act itself.",
+          "evidence": [
+            {
+              "ref": "Gen.27.34",
+              "role": "defining",
+              "note": "Esau: בָּרֲכֵנִי גַם־אָנִי אָבִי, \"bless me, me also, my father\"; the pronoun repeats the suffix, and גַּם sets Esau beside the brother already blessed. Again in Gen 27:38."
+            },
+            {
+              "ref": "1Ki.21.19",
+              "role": "defining",
+              "note": "\"Where the dogs licked the blood of Naboth, the dogs shall lick your blood, yes yours\" (אֶת־דָּמְךָ גַּם־אָתָּה)."
+            },
+            {
+              "ref": "Pro.23.15",
+              "role": "defining",
+              "note": "\"My son, if your heart is wise, my heart will be glad, mine also\" (לִבִּי גַם־אָנִי)."
+            },
+            {
+              "ref": "Gen.20.5",
+              "note": "\"Did he not himself say to me, She is my sister? And she, she herself also (וְהִיא־גַם־הִוא) said, He is my brother.\""
+            },
+            {
+              "ref": "Gen.30.3",
+              "note": "Rachel: \"that I also (גַם־אָנֹכִי) may be built up from her\"."
+            },
+            {
+              "ref": "Gen.48.19",
+              "note": "Of Manasseh: \"he also shall become a people, and he also shall be great; yet his younger brother shall be greater than he\"."
+            },
+            {
+              "ref": "1Sa.19.23",
+              "note": "\"And the spirit of God came on him, on him also\" (עָלָיו גַּם־הוּא)."
+            },
+            {
+              "ref": "Ecc.2.14",
+              "to": "Ecc.2.15",
+              "note": "\"And I myself (גַם־אָנִי) knew that one event befalls them all …; as the fool's lot, so it will befall me, even me.\""
+            },
+            {
+              "ref": "Ecc.7.22",
+              "note": "\"Your heart knows that you yourself also have cursed others.\""
+            },
+            {
+              "ref": "Zec.9.11",
+              "note": "Turning to Zion: גַּם־אַתְּ, \"as for you also, by the blood of your covenant I have sent out your prisoners from the pit\"."
+            },
+            {
+              "ref": "Zec.8.21",
+              "note": "The men of one city to another: \"let us go to seek Yahweh of hosts; I will go, I also\"."
+            },
+            {
+              "ref": "Gen.31.15",
+              "note": "With the doubling infinitive: וַיֹּאכַל גַּם־אָכוֹל אֶת־כַּסְפֵּנוּ, \"he has indeed eaten up our silver\"."
+            },
+            {
+              "ref": "Gen.46.4",
+              "note": "\"I will go down with you to Egypt, and I will surely bring you up as well\" (אַעַלְךָ גַם־עָלֹה)."
+            },
+            {
+              "ref": "Psa.118.11",
+              "note": "The verb repeated with גַּם between: סַבּוּנִי גַם־סְבָבוּנִי, \"they surrounded me, yes, they surrounded me\"."
+            },
+            {
+              "ref": "Job.2.10",
+              "note": "גַּם אֶת־הַטּוֹב נְקַבֵּל … וְאֶת־הָרָע לֹא נְקַבֵּל: \"shall we indeed receive good from God, and not receive evil?\""
+            },
+            {
+              "ref": "Psa.95.9",
+              "note": "\"Your fathers tested me, tried me; yes, they saw my work\" (גַּם־רָאוּ פָעֳלִי)."
+            },
+            {
+              "ref": "Heb.3.9",
+              "note": "The quotation of Psa 95:9 has καί: ἐδοκιμασάν με καὶ εἶδον τὰ ἔργα μου."
+            }
+          ]
+        },
+        {
+          "id": "gam-in-turn",
+          "gloss": "(I) also, in turn, for (my) part",
+          "definition": "Marks an act as the answer to another's act: what one has done, the other now does in return, most often Yahweh answering what men have done to him. גַּם אֲנִי is then \"I for my part, I in turn\".",
+          "evidence": [
+            {
+              "ref": "Lev.26.24",
+              "role": "defining",
+              "note": "If Israel walks contrary to Yahweh (Lev 26:23): \"then I also (אַף־אֲנִי) will walk contrary to you, and I will strike you, I also (גַּם־אָנִי), seven times for your sins\"."
+            },
+            {
+              "ref": "Hos.4.6",
+              "role": "defining",
+              "note": "\"You have forgotten the law of your God; I also will forget your sons\" (אֶשְׁכַּח בָּנֶיךָ גַּם־אָנִי)."
+            },
+            {
+              "ref": "Isa.66.3",
+              "to": "Isa.66.4",
+              "role": "defining",
+              "note": "The pair set side by side: גַּם־הֵמָּה בָּחֲרוּ, \"as they have chosen their own ways\", גַּם־אֲנִי אֶבְחַר, \"so I will choose their mockings\"."
+            },
+            {
+              "ref": "Pro.1.26",
+              "role": "defining",
+              "note": "Wisdom, whose counsel was refused: \"I also will laugh at your calamity\"."
+            },
+            {
+              "ref": "Jdg.2.21",
+              "note": "Because the nation transgressed the covenant (Jdg 2:20): \"I also will no longer drive out any of the nations before them\"."
+            },
+            {
+              "ref": "2Sa.12.13",
+              "note": "David: \"I have sinned against Yahweh.\" Nathan: גַּם־יַהְוֶה הֶעֱבִיר חַטָּאתְךָ, \"Yahweh on his part has put away your sin; you shall not die\"."
+            },
+            {
+              "ref": "Gen.20.6",
+              "note": "God answers Abimelech's plea of integrity: \"I also know that you did this in the integrity of your heart, and I also withheld you from sinning against me.\""
+            },
+            {
+              "ref": "Jer.4.12",
+              "note": "\"Now I also will speak judgments against them.\""
+            },
+            {
+              "ref": "Ezk.5.8",
+              "note": "הִנְנִי עָלַיִךְ גַּם־אָנִי: \"behold, I am against you, I also\"."
+            },
+            {
+              "ref": "Ezk.8.18",
+              "note": "After the abominations in the temple: \"so I also will act in fury; my eye will not spare\"."
+            },
+            {
+              "ref": "Ezk.16.43",
+              "note": "\"Because you did not remember the days of your youth …, I also, behold, have put your way on your head.\""
+            },
+            {
+              "ref": "Amo.4.6",
+              "note": "\"And I for my part gave you cleanness of teeth in all your cities …, yet you did not return to me.\""
+            },
+            {
+              "ref": "Mic.6.13",
+              "note": "\"So I also have made you sick with striking you, desolating you because of your sins.\""
+            },
+            {
+              "ref": "Mal.2.9",
+              "note": "To the priests who despised his name: \"so I also have made you despised and low before all the people\"."
+            },
+            {
+              "ref": "Psa.52.7",
+              "note": "To the man who loved evil: \"God also will pull you down for ever.\""
+            },
+            {
+              "ref": "Deu.12.30",
+              "note": "Of a man answering to other men's ways: \"how do these nations serve their gods? I also will do so.\""
+            }
+          ]
+        },
+        {
+          "id": "gam-though",
+          "gloss": "even though, although; and yet",
+          "definition": "Adds a circumstance that might have been expected to change the outcome and does not. As גַּם כִּי (or גַּם alone before a verb) it is \"even though, even when\"; before the main statement, often with a negative, it is \"and yet, for all that\".",
+          "evidence": [
+            {
+              "ref": "Psa.23.4",
+              "role": "defining",
+              "note": "גַּם כִּי־אֵלֵךְ בְּגֵיא צַלְמָוֶת לֹא־אִירָא רָע: \"even though I walk in the valley of deep shadow, I will fear no evil\"."
+            },
+            {
+              "ref": "Isa.1.15",
+              "role": "defining",
+              "note": "\"Even though you multiply prayer (גַּם כִּי־תַרְבּוּ תְפִלָּה), I am not hearing.\""
+            },
+            {
+              "ref": "Psa.129.2",
+              "role": "defining",
+              "note": "\"Greatly have they afflicted me from my youth; yet they have not prevailed against me\" (גַּם לֹא־יָכְלוּ לִי)."
+            },
+            {
+              "ref": "Ezk.16.28",
+              "role": "defining",
+              "note": "\"You played the harlot with them, and yet you were not satisfied\" (וְגַם לֹא שָׂבָעַתְּ)."
+            },
+            {
+              "ref": "Lam.3.8",
+              "note": "\"Even when I cry and call for help, he shuts out my prayer.\""
+            },
+            {
+              "ref": "Hos.8.10",
+              "note": "\"Even though they hire among the nations, now I will gather them.\""
+            },
+            {
+              "ref": "Hos.9.16",
+              "note": "\"Even though they bear, I will put to death the precious ones of their womb.\""
+            },
+            {
+              "ref": "Psa.119.23",
+              "note": "Without כִּי: גַּם יָשְׁבוּ שָׂרִים בִּי נִדְבָּרוּ, \"though princes sit and talk against me, your servant meditates on your statutes\"."
+            },
+            {
+              "ref": "Rut.1.12",
+              "note": "Naomi's supposed case: \"even if I had a husband tonight, and even if I bore sons\"."
+            },
+            {
+              "ref": "Ecc.8.17",
+              "note": "וְגַם אִם: \"and even if the wise man says he knows it, he is not able to find it\"."
+            },
+            {
+              "ref": "Neh.6.1",
+              "note": "The wall was built with no breach left, \"though up to that time I had not set up the doors in the gates\"."
+            },
+            {
+              "ref": "Jer.6.15",
+              "note": "After their abomination: גַּם־בּוֹשׁ לֹא־יֵבוֹשׁוּ, \"yet they were not at all ashamed\"."
+            },
+            {
+              "ref": "Lev.26.44",
+              "note": "After all the curses: וְאַף־גַּם־זֹאת, \"and yet for all that, when they are in the land of their enemies I will not reject them\"."
+            },
+            {
+              "ref": "Jol.2.12",
+              "note": "With the day of Yahweh at the door: וְגַם־עַתָּה, \"yet even now, says Yahweh, return to me with all your heart\"."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καί",
+          "gloss": "and; also, even",
+          "evidence": [
+            {
+              "ref": "Act.7.7",
+              "role": "defining",
+              "note": "Stephen's quotation of Gen 15:14, וְגַם אֶת־הַגּוֹי: καὶ τὸ ἔθνος ᾧ ἐὰν δουλεύσωσιν, κρινῶ ἐγώ, where the Septuagint has τὸ δὲ ἔθνος."
+            },
+            {
+              "ref": "Heb.3.9",
+              "note": "Psa 95:9, גַּם־רָאוּ פָעֳלִי: καὶ εἶδον τὰ ἔργα μου."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.3.6, גַּם → καί; Gen.24.25 (three times), Num.12.2, Psa.23.4 and Psa.95.9 the same; καί renders גַּם ×274, its commonest Greek"
+            }
+          ]
+        },
+        {
+          "lemma": "γέ",
+          "gloss": "at least, indeed; καί γε \"and indeed, and even\"",
+          "evidence": [
+            {
+              "ref": "Act.2.18",
+              "role": "defining",
+              "note": "Peter's quotation of Jol 3:2, וְגַם עַל־הָעֲבָדִים: καί γε ἐπὶ τοὺς δούλους μου, where the Septuagint has a bare καί."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Ecc.9.6, גַּם → γε (three times, in καί γε); Ecc.2.15 the same; γέ renders גַּם ×125, most of them in Ecclesiastes and the later books"
+            }
+          ]
+        },
+        {
+          "lemma": "ἕως",
+          "gloss": "as far as, up to; (with a negative) not so much as",
+          "evidence": [
+            {
+              "ref": "Rom.3.12",
+              "role": "defining",
+              "note": "Paul's quotation of Psa 14:3, אֵין גַּם־אֶחָד: οὐκ ἔστιν ἕως ἑνός, \"there is not so much as one\"."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.14.3 and Psa.53.4, גַּם → ἕως"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אַף",
+            "note": "\"Also, even; how much more\": the other particle of addition, commoner in poetry, set in parallel with גַּם and doubled with it (אַף גַּם). It is the only one of the two that scripture's Aramaic has (וְאַף, Dan 6:23), and the Peshitta's word for \"also\".",
+            "evidence": [
+              {
+                "ref": "Lev.26.24",
+                "role": "defining",
+                "note": "וְהָלַכְתִּי אַף־אֲנִי … וְהִכֵּיתִי אֶתְכֶם גַּם־אָנִי: the two in parallel clauses, each with \"I\"."
+              },
+              {
+                "ref": "Lev.26.44",
+                "note": "וְאַף־גַּם־זֹאת: the two together, \"and yet for all that\"."
+              },
+              {
+                "ref": "Isa.40.24",
+                "note": "Three times אַף בַּל \"scarcely\", then וְגַם־נָשַׁף בָּהֶם, \"and he also blows on them and they wither\"."
+              },
+              {
+                "ref": "Est.5.12",
+                "note": "Haman's boast: אַף לֹא־הֵבִיאָה … וְגַם־לְמָחָר, \"moreover Esther brought no one … but me; and tomorrow also I am invited\"."
+              },
+              {
+                "ref": "Dan.6.23",
+                "note": "Aramaic: וְאַף קָדָמָךְ מַלְכָּא חֲבוּלָה לָא עַבְדֵת, \"and also before you, O king, I have done no harm\"."
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רַק",
+            "note": "\"Only\": the particle that shuts out, against the one that brings in.",
+            "evidence": [
+              {
+                "ref": "Num.12.2",
+                "role": "defining",
+                "note": "הֲרַק אַךְ־בְּמֹשֶׁה … הֲלֹא גַּם־בָּנוּ: \"only by Moses? … not also by us?\""
+              },
+              {
+                "ref": "Exo.10.24",
+                "note": "Pharaoh's terms: רַק צֹאנְכֶם וּבְקַרְכֶם יֻצָּג גַּם־טַפְּכֶם יֵלֵך עִמָּכֶם, \"only your flocks and herds shall be kept back; your little ones also may go with you\"."
+              }
+            ]
+          },
+          {
+            "lemma": "אַךְ",
+            "note": "\"Only; but\": doubled with רַק against גַּם, and limiting where גַּם includes.",
+            "evidence": [
+              {
+                "ref": "Num.12.2",
+                "role": "defining",
+                "note": "הֲרַק אַךְ־בְּמֹשֶׁה against גַּם־בָּנוּ."
+              },
+              {
+                "ref": "Gen.20.12",
+                "note": "The two in one sentence: וְגַם־אָמְנָה אֲחֹתִי … אַךְ לֹא בַת־אִמִּי, \"and besides she is truly my sister …, only not the daughter of my mother\"."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "גַּם … גַּם",
+            "gloss": "both … and; (denied) neither … nor",
+            "evidence": [
+              {
+                "ref": "Gen.24.25",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.17.36"
+              },
+              {
+                "ref": "Exo.12.31"
+              },
+              {
+                "ref": "1Sa.28.6",
+                "note": "Denied: \"neither by dreams nor by Urim nor by the prophets\"."
+              },
+              {
+                "ref": "1Ki.3.26",
+                "note": "Denied: \"neither mine nor yours\"."
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־הוּא",
+            "gloss": "he also, he too (and גַּם־הִוא, גַּם־הֵם, גַּם־הֵמָּה)",
+            "evidence": [
+              {
+                "ref": "Gen.4.4",
+                "role": "defining",
+                "note": "וְהֶבֶל הֵבִיא גַם־הוּא."
+              },
+              {
+                "ref": "Gen.4.22",
+                "note": "גַם־הִוא."
+              },
+              {
+                "ref": "Gen.4.26",
+                "note": "\"And to Seth, to him also, a son was born.\""
+              },
+              {
+                "ref": "Gen.19.38",
+                "note": "\"And the younger, she also bore a son.\""
+              },
+              {
+                "ref": "Gen.38.11",
+                "note": "\"Lest he also die, like his brothers.\""
+              },
+              {
+                "ref": "1Sa.19.20",
+                "to": "1Sa.19.24",
+                "note": "Six times: the three companies of messengers (גַּם־הֵמָּה) and then Saul (גַּם־הוּא)."
+              },
+              {
+                "ref": "Deu.3.20",
+                "note": "גַם־הֵם."
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־אֲנִי",
+            "gloss": "I also; I myself; I in turn (and גַּם־אָנֹכִי)",
+            "evidence": [
+              {
+                "ref": "Gen.27.34",
+                "role": "defining",
+                "note": "בָּרֲכֵנִי גַם־אָנִי."
+              },
+              {
+                "ref": "Lev.26.24"
+              },
+              {
+                "ref": "Pro.1.26"
+              },
+              {
+                "ref": "Isa.66.4"
+              },
+              {
+                "ref": "Job.33.6",
+                "note": "Elihu to Job: \"I also was nipped from the clay.\""
+              },
+              {
+                "ref": "Gen.20.6",
+                "note": "גַּם אָנֹכִי, twice."
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־שְׁנֵיהֶם",
+            "gloss": "both of them, the two of them alike",
+            "evidence": [
+              {
+                "ref": "Pro.17.15",
+                "role": "defining",
+                "note": "He who justifies the wicked and he who condemns the righteous: \"an abomination to Yahweh are they both\"."
+              },
+              {
+                "ref": "Pro.20.10",
+                "note": "Divers weights and divers measures."
+              },
+              {
+                "ref": "Pro.20.12",
+                "note": "\"The hearing ear and the seeing eye, Yahweh has made them both.\""
+              },
+              {
+                "ref": "Deu.22.22",
+                "note": "\"They shall die, both of them.\""
+              },
+              {
+                "ref": "Deu.23.19"
+              },
+              {
+                "ref": "Rut.1.5",
+                "note": "\"And they died, both of them, Mahlon and Chilion.\""
+              },
+              {
+                "ref": "Gen.27.45",
+                "note": "גַּם־שְׁנֵיכֶם: \"why should I be bereaved of you both in one day?\""
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם כִּי",
+            "gloss": "even though, even when",
+            "evidence": [
+              {
+                "ref": "Psa.23.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.1.15"
+              },
+              {
+                "ref": "Hos.8.10"
+              },
+              {
+                "ref": "Hos.9.16"
+              },
+              {
+                "ref": "Lam.3.8"
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־עַתָּה",
+            "gloss": "even now",
+            "evidence": [
+              {
+                "ref": "Jol.2.12",
+                "role": "defining",
+                "note": "\"Yet even now, return to me.\""
+              },
+              {
+                "ref": "1Sa.12.16",
+                "note": "\"Even now, stand and see this great thing.\""
+              },
+              {
+                "ref": "Job.16.19",
+                "note": "\"Even now, behold, my witness is in the heavens.\""
+              }
+            ]
+          },
+          {
+            "phrase": "הֲגַם",
+            "gloss": "is … also?, … even?",
+            "evidence": [
+              {
+                "ref": "1Sa.19.24",
+                "role": "defining",
+                "note": "הֲגַם שָׁאוּל בַּנְּבִיאִם: \"is Saul also among the prophets?\""
+              },
+              {
+                "ref": "1Sa.10.11"
+              },
+              {
+                "ref": "Est.7.8",
+                "note": "\"Will he even assault the queen with me in the house?\""
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־תְּמוֹל גַּם־שִׁלְשֹׁם",
+            "gloss": "both yesterday and the day before: in time past",
+            "evidence": [
+              {
+                "ref": "2Sa.3.17",
+                "role": "defining",
+                "note": "\"Both yesterday and the day before you were seeking David as king over you.\""
+              },
+              {
+                "ref": "2Sa.5.2"
+              },
+              {
+                "ref": "Exo.4.10",
+                "note": "Denied, with מִן: \"neither yesterday nor the day before\"."
+              },
+              {
+                "ref": "Exo.5.14",
+                "note": "גַּם־תְּמוֹל גַּם־הַיּוֹם: \"both yesterday and today\"."
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־זֶה הֶבֶל",
+            "gloss": "this also is vapour",
+            "evidence": [
+              {
+                "ref": "Ecc.2.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.2.15",
+                "note": "With שֶׁ: שֶׁגַּם־זֶה הָבֶל."
+              },
+              {
+                "ref": "Ecc.4.8"
+              },
+              {
+                "ref": "Ecc.4.16"
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־אֵלֶּה",
+            "gloss": "these also (heading a further collection, or a further group)",
+            "evidence": [
+              {
+                "ref": "Pro.25.1",
+                "role": "defining",
+                "note": "\"These also are proverbs of Solomon, which the men of Hezekiah king of Judah copied out.\""
+              },
+              {
+                "ref": "Pro.24.23",
+                "note": "\"These also are of the wise.\""
+              },
+              {
+                "ref": "Isa.28.7",
+                "note": "After Ephraim's drunkards: \"and these also reel with wine\"."
+              }
+            ]
+          },
+          {
+            "phrase": "גַּם־בּוֹשׁ לֹא־יֵבוֹשׁוּ",
+            "gloss": "they were not at all ashamed: גַּם before a verb strengthened by its infinitive",
+            "evidence": [
+              {
+                "ref": "Jer.6.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.8.12"
+              },
+              {
+                "ref": "Num.23.25",
+                "note": "גַּם־קֹב לֹא תִקֳּבֶנּוּ גַּם־בָּרֵךְ לֹא תְבָרֲכֶנּוּ."
+              },
+              {
+                "ref": "Gen.31.15",
+                "note": "The infinitive after the verb: וַיֹּאכַל גַּם־אָכוֹל."
+              },
+              {
+                "ref": "Gen.46.4",
+                "note": "אַעַלְךָ גַם־עָלֹה."
+              }
+            ]
+          },
+          {
+            "phrase": "וְאַף־גַּם־זֹאת",
+            "gloss": "and yet for all that",
+            "evidence": [
+              {
+                "ref": "Lev.26.44",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּשַׁגַּם",
+            "gloss": "in that also (בְּ + שֶׁ + גַּם)",
+            "evidence": [
+              {
+                "ref": "Gen.6.3",
+                "role": "defining",
+                "note": "\"My spirit shall not abide in man for ever, in that he also is flesh (בְּשַׁגַּם הוּא בָשָׂר); and his days shall be a hundred and twenty years.\""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְגַמָּה",
+      "bdb": [
+        "c.ck.ac"
+      ],
+      "cognate_ids": [
+        "ar-jamma",
+        "ar-jamm"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "massing, throng (?); meaning uncertain",
+      "summary": "One use only (Hab 1:9), so its sense rests on its form and its context, not on scripture's usage. The form is a noun with prefixed מ from a root with doubled מ (the dagesh in מְגַמַּת), the only word in scripture that shows the root גמם as a root. If that root means \"be many, mass together\", as Arabic jamma does, the phrase is \"the massing of their faces is forward\": the Chaldean host pressing on as one body. The context would also bear \"the set, the eagerness of their faces\", which is how it has often been translated, but nothing ties that sense to the root. The Arabic words are named as possible only, and the one certain cognate of the root, Moabite gm \"also\", is the particle and says nothing for this noun, which is why its balance of evidence is negative.",
+      "senses": [
+        {
+          "id": "megammah-massing",
+          "gloss": "massing, throng (?)",
+          "definition": "Said of the faces of the Chaldeans as they come on: what all their faces do together, in one direction. Probably their massing, the whole body of them; the sense is not fixed by any other use.",
+          "evidence": [
+            {
+              "ref": "Hab.1.9",
+              "role": "defining",
+              "note": "כֻּלֹּה לְחָמָס יָבוֹא מְגַמַּת פְּנֵיהֶם קָדִימָה וַיֶּאֱסֹף כַּחוֹל שֶׁבִי: \"all of it comes for violence; the massing (?) of their faces is forward, and it gathers captives like the sand\". \"All of it\" before and \"gathers like the sand\" after both speak of a multitude taken as one."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "moab-gm",
+      "lang": "sem",
+      "form": "גם",
+      "translit": "gm",
+      "gloss": "also, too (Moabite)",
+      "relation": "cognate",
+      "note": "The same particle in the same use and the same place in the sentence as Hebrew וַיֵּלֶךְ גַּם־הוּא: Mesha says of Omri's son, \"and he also said, I will afflict Moab\". It shows the particle is not Hebrew's alone, but nothing of where it came from.",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, line 6",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "ויחלפה בנה ויאמר גם הא אענו את מאב."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, line 6",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"And his son succeeded him, and he too said I will afflict Mōʾāḇ.\""
+        }
+      ]
+    },
+    {
+      "id": "ar-jamma",
+      "lang": "ar",
+      "form": "جَمَّ",
+      "translit": "jamma",
+      "gloss": "it became much, abundant; it collected (of water in a well); they became many",
+      "relation": "possible",
+      "note": "A verb of the same consonants with doubled m, said of water that gathers again in a well and of people who become many. If גַּם and מְגַמָּה are from this root, the particle began as \"in a mass, together\" and the noun is \"a massing\". The sense is not the particle's, so the link is an inference.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 448, جَمَّ (n6213)",
+          "note": "\"It became much, or abundant\"; of water, \"it became much, or abundant, in the well, and collected after it had been drawn from\"; جَمُّوا \"They became many\"."
+        }
+      ]
+    },
+    {
+      "id": "ar-jamm",
+      "lang": "ar",
+      "form": "جَمٌّ",
+      "translit": "jamm",
+      "gloss": "much, many; (جَمَّةٌ) a company of people; (جَمًّا غَفِيرًا) all together",
+      "relation": "possible",
+      "note": "The noun and adjective of the same root: \"much, many\", a company come together, and the adverbial phrase \"they came all together, none remaining behind\", which is the nearest the Arabic comes to the Hebrew particle's \"both … and, alike\" and to a \"massing\" of faces.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 449, جَمٌّ (n6219)",
+          "note": "\"Much, or many\"; مَالٌ جَمٌّ \"much property, or many cattle\"; جَاؤُوا جَمًّا غَفِيرًا."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 449, جَمَّةٌ (n6220)",
+          "note": "\"A company demanding a bloodwit …, or coming for some other purpose\"; \"He came in a great company\"."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 450, أَجَمُّ (n6237)",
+          "note": "جَاؤُوا الجَمَّآءَ الغَفِيرَ, and جَمًّا غَفِيرًا: \"They came all together, high and low, none of them remaining behind, and they being many\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic جما (adv.)",
+          "url": "https://en.wiktionary.org/wiki/%D8%AC%D9%85%D8%A7",
+          "note": "jamman \"abundantly, much, greatly\"; \"Adverbial accusative of جَمّ (jamm, 'gathered, bunched')\"."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Again and again גַּם puts a man beside what he would like to think himself different from. Yahweh says of man before the flood, \"my spirit shall not abide in man for ever, in that he also is flesh\" (Gen 6:3). Elihu says to Job, \"I also was nipped from the clay\" (Job 33:6). The preacher, wise as he was, says \"as the fool's lot, so it will befall me, even me\" (Ecc 2:15), for \"one event befalls them all\" (Ecc 2:14); Psalm 49 calls \"both sons of Adam and sons of man, rich and poor together\" (Psa 49:3) to hear that \"man in honour does not abide; he is like the beasts that perish\" (Psa 49:13). The fallen king of Babylon is met with the words \"you also have become weak as we; you have become like us\" (Isa 14:10). And of the dead, who \"know nothing\" (Ecc 9:5), it is said that \"their love and their hatred and their envy alike have already perished\" (Ecc 9:6): three times גַּם, leaving nothing of the man's thought or feeling still alive. So no class of man is exempt and no part of a man lives on in death. Endless life was never man's by nature: after he sinned he was kept from the tree of life, \"lest he put out his hand and take also of the tree of life, and eat, and live for ever\" (Gen 3:22). Living for ever would have been something more, to be taken in addition, and it was withheld.",
+      "evidence": [
+        {
+          "ref": "Gen.6.3"
+        },
+        {
+          "ref": "Job.33.6"
+        },
+        {
+          "ref": "Ecc.2.14",
+          "to": "Ecc.2.15"
+        },
+        {
+          "ref": "Psa.49.3"
+        },
+        {
+          "ref": "Psa.49.13"
+        },
+        {
+          "ref": "Isa.14.10"
+        },
+        {
+          "ref": "Ecc.9.5",
+          "to": "Ecc.9.6"
+        },
+        {
+          "ref": "Gen.3.22"
+        }
+      ]
+    },
+    {
+      "topic": "gentiles-in-israel",
+      "statement": "When Solomon has prayed for Israel, he goes on: \"and also to the foreigner, who is not of your people Israel, and comes from a far land for your name's sake\" (1Ki 8:41), asking that Yahweh hear him too, \"that all the peoples of the earth may know your name, to fear you, as your people Israel\" (1Ki 8:43). The prophets use the same particle of the days to come. The inhabitants of one city will say to another, \"let us go to entreat the face of Yahweh and to seek Yahweh of hosts; I will go, I also\", and many peoples and strong nations will come to seek him in Jerusalem, taking hold of the skirt of a Jew (Zec 8:21–23). Even the Philistine, cleansed of his abominations, \"he also shall be left for our God, and shall be as a chief in Judah\" (Zec 9:7). In each place the hope is Israel's first, in Israel's land and city, and the men of the nations are brought in beside Israel by the word \"also\": they share Israel's God and Israel's hope, they are not given another.",
+      "evidence": [
+        {
+          "ref": "1Ki.8.41",
+          "to": "1Ki.8.43"
+        },
+        {
+          "ref": "Zec.8.21",
+          "to": "Zec.8.23"
+        },
+        {
+          "ref": "Zec.9.7"
+        }
+      ]
+    },
+    {
+      "topic": "spirit-poured-out",
+      "statement": "Joel's prophecy names those on whom Yahweh will pour out his spirit: all flesh, sons and daughters, old men and young men (Jol 3:1), \"and also on the servants and on the handmaids in those days I will pour out my spirit\" (Jol 3:2). Peter says that what was seen and heard at Pentecost \"is what was spoken by the prophet Joel\" (Act 2:16), and gives the last clause as \"and on my servants also and on my handmaids I will pour out of my spirit, and they shall prophesy\" (Act 2:18). The same particle marks the spirit coming on men one after another in Saul's day: on three companies of messengers, \"they also prophesied\", and then \"the spirit of God came on him, on him also\" (1Sa 19:20–23). What these verses show is a thing poured out, \"of my spirit\", that comes on one man and then also on another, on a king and on a slave alike: God's own power given to whom he chooses, without regard to rank, and not a person.",
+      "evidence": [
+        {
+          "ref": "Jol.3.1",
+          "to": "Jol.3.2"
+        },
+        {
+          "ref": "Act.2.16",
+          "to": "Act.2.18"
+        },
+        {
+          "ref": "1Sa.19.20",
+          "to": "1Sa.19.23"
+        }
+      ]
+    }
+  ],
+  "note": "Root: keyed גממ, the database's key for these words (BDB section c.ck), and not by the particle's own consonants גמ as the other particle entries are (אַךְ, כִּי, אִם). The reason is that here the key is not an alphabetical accident: the lexical tradition derives the particle from a root גמם \"be many, mass\", scripture has a noun of that root with doubled מ filed with it (מְגַמָּה, Hab 1:9), and Arabic has the verb (jamma). No existing entry has root גממ or גמ. The derivation is still only likely: no verb גמם occurs in scripture, the particle never takes a suffix that would show a doubled מ, and מְגַמָּה is a single use of uncertain sense, so both Arabic cognates are 'possible' and the summary says so. If the reviewer prefers the particle keyed by its own consonants (root גמ), מְגַמָּה would then need its own entry or a word-level root. BDB keys c.cg.ab and m.aj.al are cross-references with no tokens and are not claimed. Aramaic: scripture's Aramaic and the Peshitta have no גַּם; their word is אַף / ܐܦ (Dan 6:23; BDB a.ex.aa Hebrew, xa.be.aa Aramaic), which belongs to its own entry and is recorded here only as a parallel under usage. Jastrow's גַּם in the Talmud is the Hebrew particle discussed as a term of exegesis, not an Aramaic word, and is not cited. Senses are illustrative, not exhaustive (769 tokens), and many verses can be read under two senses (\"also\" or \"even\": Psa 139:10; \"I myself\" or \"I in turn\": Gen 20:6, Ezk 5:8); the dividing line between gam-self and gam-in-turn in particular is for the reviewer. Verses left unused because their reading is disputed: Psa 37:25 (גַּם־זָקַנְתִּי, \"and now am old\"), Isa 43:13 (גַּם־מִיּוֹם), Pro 17:26, Sng 8:1, Jer 13:23, Jer 31:36–37 and 33:26 (גַּם opening an apodosis, \"then also\": a use worth a sense of its own if the reviewer wants it). Isa 66:21 \"of them also\" is cited only for the particle; whether \"them\" is the nations or the brothers they bring is left open, so it is not used under gentiles-in-israel. Psalms, Joel and Malachi are cited by Hebrew verse numbers. Greek: MACULA's alignment has no Greek for גַּם at Gen 15:14 (the Septuagint has δέ) or Jol 3:2 (a bare καί), so Acts 7:7 and 2:18 are cited as the New Testament's own renderings; καίγε ×5 in the alignment is the same καί γε written as one word. Leads not followed: Samalian gm \"also\" in the Hadad and Panamuwa inscriptions (KAI 214, 215), not verified in any source to hand; Ugaritic gm \"aloud\" is g \"voice\" + adverbial -m (Segert §55, citing KTU 1.6 III 22) and is not this word; Krahmalkov's Neo-Punic GM (KAI 161, p. 140) is of unknown meaning; Biella has no Sabaean gm(m) of this sense (her ĠMM \"clouds\" is another root); Phoenician and Ugaritic use ʾp for \"also\", which belongs with אַף. Also not followed: later Hebrew גמם \"cut level, lop\" (Mishnah Shebi'it 4:5), which matches Arabic أَجَمُّ \"hornless\" (Lane p. 450) and may be the same root in another sense or a second root; it is not in scripture. Not consulted: CAD, DULAT, Leslau (Ge'ez gəmmā?), Hoftijzer–Jongeling for epigraphic gm."
+}
