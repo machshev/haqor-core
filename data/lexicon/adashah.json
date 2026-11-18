@@ -1,0 +1,126 @@
+{
+  "id": "adashah",
+  "root": "עדש",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "food",
+    "agriculture"
+  ],
+  "gloss": "lentil",
+  "summary": "Lentils grow in the field defended by Shammah. Jacob cooks them in a stew, and Ezekiel mixes them into bread.",
+  "words": [
+    {
+      "lemma": "עֲדָשָׁה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "p.az.af"
+      ],
+      "gloss": "lentil",
+      "senses": [
+        {
+          "gloss": "lentil",
+          "definition": "A pulse grown as a field crop and eaten in stew or mixed into bread.",
+          "evidence": [
+            {
+              "ref": "Gen.25.34",
+              "role": "defining",
+              "note": "Jacob serves Esau bread and lentil stew."
+            },
+            {
+              "ref": "2Sa.17.28",
+              "role": "defining",
+              "note": "Lentils and beans are brought as separate provisions."
+            },
+            {
+              "ref": "2Sa.23.11",
+              "role": "defining",
+              "note": "Shammah takes his stand in a field full of lentils."
+            },
+            {
+              "ref": "Ezk.4.9",
+              "role": "defining",
+              "note": "Ezekiel includes lentils in the mixture for his bread."
+            }
+          ],
+          "cognate_ids": [
+            "ar-lentil",
+            "mt-lentil",
+            "ug-lentil",
+            "egy-lentil"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-lentil",
+      "lang": "ar",
+      "form": "عَدَسٌ",
+      "translit": "ʿadas",
+      "gloss": "lentils",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1972, n28304"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ",
+        "ש": "š"
+      }
+    },
+    {
+      "id": "mt-lentil",
+      "lang": "sem",
+      "form": "għads",
+      "translit": "għads",
+      "gloss": "lentils",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 522d86246f3bad5137000db7"
+        }
+      ]
+    },
+    {
+      "id": "ug-lentil",
+      "lang": "uga",
+      "form": "𐎓𐎄𐎌",
+      "translit": "ʿdš",
+      "gloss": "lentil (proposed interpretation of a name)",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "s.v. ʿdš; Watson, A Botanical Snapshot of Ugarit, on the names in KTU 4.170:15 and 4.261:12"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ",
+        "ש": "š"
+      }
+    },
+    {
+      "id": "egy-lentil",
+      "lang": "egy",
+      "form": "ꜥršn",
+      "translit": "ꜥršn",
+      "gloss": "lentils",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla39590, Wb 1, 211.15, Hoch no. 84"
+        }
+      ],
+      "note": "An Egyptian borrowing from Semitic. Compare Coptic ⲁⲣϣⲓⲛ (Comprehensive Coptic Lexicon C202). The donor language is uncertain."
+    }
+  ],
+  "doctrine": [],
+  "note": "All four biblical attestations are plural. The corpus assigns the noun to עדר, but the Hebrew spelling and its Semitic comparisons point to עדש. The Ugaritic comparison depends on the interpretation of personal names."
+}
