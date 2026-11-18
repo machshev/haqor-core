@@ -1,0 +1,2519 @@
+{
+  "id": "paqad",
+  "root": "פקד",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "oversight",
+    "visitation",
+    "judgment",
+    "numbering",
+    "appointment",
+    "deposit",
+    "commandment"
+  ],
+  "gloss": "attend to, look after; visit; count, muster; appoint, put in charge; entrust; miss",
+  "summary": "The verb is to turn one's attention to someone or something in order to act on what is found: to attend to, look after, take stock of. When Yahweh attends to his people he comes to help them (he “visited Sarah”, Gen 21:1; “God will surely visit you”, Gen 50:24); when he attends to sin he “visits” it on the sinner, and Jeremiah sets the two side by side: the shepherds did not attend to the flock, so Yahweh will attend to them for their evil (Jer 23:2). Taking stock of men is counting or mustering them (Num 1:3), and the one not found at the count is “missed” (1Sa 20:6; Num 31:49); putting a man where he will look after a thing is appointing him over it, and putting a thing in another's care is entrusting it, a deposit (Gen 39:4; Psa 31:6; Lev 5:23). The nouns are the oversight or charge a man holds and the day of visitation (פְּקֻדָּה), the overseer (פָּקִיד), the muster (מִפְקָד), the deposit (פִּקָּדוֹן) and the precepts Yahweh has charged (פִּקּוּדִים). Arabic faqada “miss, seek what is absent”, Akkadian paqādu “entrust, take care of, appoint”, Phoenician pqd “oversee” and the Peshitta's pqd “command” show the same range.",
+  "words": [
+    {
+      "lemma": "פָּקַד",
+      "pos": "verb",
+      "gloss": "attend to, visit; visit (sin) upon; count, muster; miss; appoint, put in charge; entrust, deposit",
+      "bdb": [
+        "q.co.aa"
+      ],
+      "cognate_ids": [
+        "akk-paqadu",
+        "phn-pqd",
+        "uga-pqd",
+        "ar-faqada",
+        "sab-fqd",
+        "arc-peqad"
+      ],
+      "summary": "About three hundred uses, three quarters in the qal, and nearly a third of all of them the counting of Israel in Numbers 1 to 4 and 26. Its senses are one act seen from different sides: to look into a matter with a view to dealing with it. The object and the preposition show which: a person in the accusative is attended to, for good (Gen 21:1) or for punishment; עַל with iniquity is to visit the iniquity on someone (Exo 20:5); a body of men is counted or mustered (Num 1:3); a man עַל something is put in charge of it (Gen 39:4, hiphil). The niphal is to be looked for and not found, “missing” (Num 31:49). The four forms the corpus tags hothpaal (Num 1:47; 2:33; 26:62; 1Ki 20:27) are passives of the hithpael and are counted under it.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "attend to, look after, visit; examine; visit (sin) upon, punish; count, muster; miss; appoint, charge; deposit",
+          "senses": [
+            {
+              "id": "attend-to",
+              "gloss": "attend to, look after, visit (to help)",
+              "definition": "To turn one's attention to someone in order to act for him. Of Yahweh it is his coming to his people, or to one of them, to do what he has promised: a son to Sarah and to Hannah, bread to his people, the bringing up out of Egypt and out of Babylon. Its parallel is זָכַר “remember”.",
+              "evidence": [
+                {
+                  "ref": "Gen.21.1",
+                  "role": "defining",
+                  "note": "Yahweh “visited Sarah as he had said, and did for Sarah as he had spoken”: the visit is the doing of what was promised."
+                },
+                {
+                  "ref": "Gen.50.24",
+                  "role": "defining",
+                  "note": "Joseph, dying: “God פָּקֹד יִפְקֹד אֶתְכֶם, and bring you up from this land to the land which he swore to Abraham.”"
+                },
+                {
+                  "ref": "Gen.50.25"
+                },
+                {
+                  "ref": "Exo.3.16",
+                  "role": "defining",
+                  "note": "Yahweh at the bush: “פָּקֹד פָּקַדְתִּי אֶתְכֶם and what is done to you in Egypt”: Joseph's words come true."
+                },
+                {
+                  "ref": "Exo.4.31",
+                  "note": "The people believed when they heard “that Yahweh had visited the sons of Israel and that he had seen their affliction”."
+                },
+                {
+                  "ref": "Exo.13.19",
+                  "note": "Moses takes Joseph's bones, for Joseph had made them swear, “God will surely visit you”."
+                },
+                {
+                  "ref": "1Sa.2.21",
+                  "role": "defining",
+                  "note": "“כִּי־ פָקַד יַהְוֶה אֶת־ חַנָּה, and she conceived and bore three sons and two daughters.”"
+                },
+                {
+                  "ref": "Rut.1.6",
+                  "role": "defining",
+                  "note": "Naomi heard “that Yahweh had visited his people, giving them bread (לָתֵת לָהֶם לָחֶם)”."
+                },
+                {
+                  "ref": "Jer.29.10",
+                  "role": "defining",
+                  "note": "“When seventy years are completed for Babylon אֶפְקֹד אֶתְכֶם, and I will establish my good word to you, to bring you back to this place.”"
+                },
+                {
+                  "ref": "Jer.27.22",
+                  "note": "The vessels go to Babylon “until the day of my visiting them”, and then Yahweh brings them back."
+                },
+                {
+                  "ref": "Psa.8.5",
+                  "role": "defining",
+                  "note": "“What is man that you remember him (תִזְכְּרֶנּוּ), and the son of man that you visit him (תִפְקְדֶנּוּ)?”, quoted in Heb 2:6."
+                },
+                {
+                  "ref": "Psa.106.4",
+                  "note": "“Remember me (זָכְרֵנִי), Yahweh … visit me (פָּקְדֵנִי) with your salvation.”"
+                },
+                {
+                  "ref": "Jer.15.15",
+                  "note": "“Remember me and visit me (זָכְרֵנִי וּפָקְדֵנִי) and avenge me of my persecutors.”"
+                },
+                {
+                  "ref": "Psa.80.15",
+                  "note": "“Look down from heaven and see, and visit this vine.”"
+                },
+                {
+                  "ref": "Psa.65.10",
+                  "note": "“You visit the earth and water it; you greatly enrich it.”"
+                },
+                {
+                  "ref": "Zep.2.7",
+                  "note": "“Yahweh their God will visit them and restore their captivity.”"
+                },
+                {
+                  "ref": "Isa.23.17",
+                  "note": "At the end of seventy years Yahweh will visit Tyre and she will return to her trade."
+                },
+                {
+                  "ref": "Jer.23.2",
+                  "role": "defining",
+                  "note": "The shepherds “have scattered my flock … וְלֹא פְקַדְתֶּם אֹתָם”: the shepherd's work is to attend to the flock."
+                },
+                {
+                  "ref": "Zec.10.3",
+                  "note": "“Yahweh of armies has visited his flock, the house of Judah.”"
+                },
+                {
+                  "ref": "Zec.11.16",
+                  "role": "defining",
+                  "note": "The worthless shepherd “will not attend to (לֹא־ יִפְקֹד) the perishing, will not seek (לֹא־ יְבַקֵּשׁ) the young, will not heal the broken”."
+                }
+              ],
+              "senses": [
+                {
+                  "id": "go-see",
+                  "gloss": "go to see, look after (a person)",
+                  "definition": "Of men: to go to see someone and see to him, often with something in hand.",
+                  "evidence": [
+                    {
+                      "ref": "1Sa.17.18",
+                      "role": "defining",
+                      "note": "Jesse to David: “וְאֶת־ אַחֶיךָ תִּפְקֹד לְשָׁלוֹם”, look in on your brothers' welfare, and bring back a token from them."
+                    },
+                    {
+                      "ref": "Jdg.15.1",
+                      "role": "defining",
+                      "note": "“Samson visited his wife with a kid of the goats.”"
+                    },
+                    {
+                      "ref": "2Ki.9.34",
+                      "note": "Jehu: “פִּקְדוּ־ נָא this cursed woman and bury her, for she is a king's daughter”: see to her."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "examine",
+              "gloss": "examine, inspect",
+              "definition": "To look a man over to find what is in him; its parallels are בָּחַן “test” and צָרַף “refine”.",
+              "evidence": [
+                {
+                  "ref": "Job.7.18",
+                  "role": "defining",
+                  "note": "“וַתִּפְקְדֶנּוּ every morning, every moment you test him (תִּבְחָנֶנּוּ).”"
+                },
+                {
+                  "ref": "Psa.17.3",
+                  "role": "defining",
+                  "note": "“You have tested (בָּחַנְתָּ) my heart, פָּקַדְתָּ by night, you have refined me (צְרַפְתַּנִי) and found nothing.”"
+                },
+                {
+                  "ref": "Job.5.24",
+                  "note": "“You shall visit your fold and miss nothing”: look it over and find it all there."
+                },
+                {
+                  "ref": "Job.31.14",
+                  "note": "“If God arises … if he visits, what shall I answer him?”: he comes to call to account."
+                }
+              ]
+            },
+            {
+              "id": "visit-upon",
+              "gloss": "visit (sin) upon, punish",
+              "definition": "With iniquity or sin as object and עַל of the sinner, or עַל of the sinner alone: to take up a man's sin and bring it back on him. The same attention that brings help to the faithful brings judgment on the wicked.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.5",
+                  "role": "defining",
+                  "note": "“פֹּקֵד עֲוֺן אָבֹת עַל־ בָּנִים … לְשֹׂנְאָי”: visiting the iniquity of the fathers on the sons, of those who hate me."
+                },
+                {
+                  "ref": "Exo.34.7",
+                  "note": "In the proclamation of the name, beside “forgiving iniquity”: “he will by no means clear, visiting the iniquity of the fathers on the sons”."
+                },
+                {
+                  "ref": "Exo.32.34",
+                  "role": "defining",
+                  "note": "After the calf: “וּבְיוֹם פָּקְדִי וּפָקַדְתִּי עֲלֵיהֶם חַטָּאתָם”, in the day I visit, I will visit their sin on them."
+                },
+                {
+                  "ref": "Lev.18.25",
+                  "note": "“The land became unclean, and I visited its iniquity on it, and the land vomited out its inhabitants.”"
+                },
+                {
+                  "ref": "Isa.13.11",
+                  "role": "defining",
+                  "note": "“וּפָקַדְתִּי עַל־ תֵּבֵל רָעָה”, I will visit on the world its evil and on the wicked their iniquity, parallel “I will make the pride of the arrogant cease”."
+                },
+                {
+                  "ref": "Isa.24.21",
+                  "note": "Yahweh will visit the host of the height and the kings of the earth."
+                },
+                {
+                  "ref": "Isa.26.21",
+                  "note": "Yahweh comes out of his place “to visit the iniquity of the inhabitant of the earth on him”."
+                },
+                {
+                  "ref": "Jer.5.9",
+                  "note": "“Shall I not punish for these things? … shall not my soul avenge itself (תִתְנַקֵּם)?”"
+                },
+                {
+                  "ref": "Jer.23.2",
+                  "role": "defining",
+                  "note": "The shepherds did not attend to the flock, so “הִנְנִי פֹקֵד עֲלֵיכֶם אֶת־ רֹעַ מַעַלְלֵיכֶם”: the one verb for both, the neglect and the reckoning."
+                },
+                {
+                  "ref": "Hos.1.4",
+                  "note": "“I will visit the blood of Jezreel on the house of Jehu.”"
+                },
+                {
+                  "ref": "Hos.2.15",
+                  "note": "“I will visit on her the days of the Baals.”"
+                },
+                {
+                  "ref": "Hos.4.9",
+                  "role": "defining",
+                  "note": "“וּפָקַדְתִּי עָלָיו דְּרָכָיו, and his deeds I will return to him (אָשִׁיב לוֹ)”: visiting is returning a man's deeds on him."
+                },
+                {
+                  "ref": "Hos.8.13",
+                  "note": "“Now he will remember (יִזְכֹּר) their iniquity and visit (וְיִפְקֹד) their sins.”"
+                },
+                {
+                  "ref": "Amo.3.2",
+                  "role": "defining",
+                  "note": "“You only have I known of all the families of the ground; therefore I will visit on you all your iniquities.”"
+                },
+                {
+                  "ref": "Amo.3.14"
+                },
+                {
+                  "ref": "Zep.1.8",
+                  "note": "In the day of Yahweh's sacrifice he will visit the princes and the king's sons."
+                },
+                {
+                  "ref": "Zep.1.12",
+                  "note": "“I will search Jerusalem with lamps, and visit the men who … say in their heart, Yahweh will not do good, nor will he do evil.”"
+                },
+                {
+                  "ref": "Psa.89.33",
+                  "role": "defining",
+                  "note": "Of David's sons who break the statutes: “I will visit their transgression with the rod and their iniquity with stripes”, yet “my covenant faithfulness I will not take from him” (v. 34)."
+                },
+                {
+                  "ref": "Psa.59.6",
+                  "note": "“Awake to visit all the nations.”"
+                },
+                {
+                  "ref": "Lam.4.22",
+                  "note": "“He will visit your iniquity, daughter of Edom; he will uncover your sins.”"
+                },
+                {
+                  "ref": "Isa.10.12",
+                  "note": "Yahweh will visit the fruit of the king of Assyria's proud heart."
+                },
+                {
+                  "ref": "Isa.26.14",
+                  "note": "Of the oppressors: “dead, they will not live … therefore you visited and destroyed them and made all memory of them perish.”"
+                },
+                {
+                  "ref": "2Sa.3.8",
+                  "note": "Of a man: Abner to Ish-bosheth, “today you charge me (וַתִּפְקֹד עָלַי) with the iniquity of this woman”."
+                }
+              ]
+            },
+            {
+              "id": "count-muster",
+              "gloss": "count, number, muster",
+              "definition": "To look over a body of men (or things) one by one and take their number: the census of Israel's men of war, of the Levites, of an army before battle. The passive participle פְּקֻדִים is “the counted ones”, the number found.",
+              "evidence": [
+                {
+                  "ref": "Num.1.3",
+                  "role": "defining",
+                  "note": "“From twenty years old and upward, all who go out to war in Israel, תִּפְקְדוּ אֹתָם by their hosts, you and Aaron.”"
+                },
+                {
+                  "ref": "Num.1.19"
+                },
+                {
+                  "ref": "Num.1.44",
+                  "role": "defining",
+                  "note": "“אֵלֶּה הַפְּקֻדִים אֲשֶׁר פָּקַד מֹשֶׁה”: these are the counted ones whom Moses counted."
+                },
+                {
+                  "ref": "Num.1.46",
+                  "note": "“All the counted ones were 603,550.”"
+                },
+                {
+                  "ref": "Num.3.15",
+                  "note": "“Count the sons of Levi … every male from a month old and upward.”"
+                },
+                {
+                  "ref": "Num.3.39"
+                },
+                {
+                  "ref": "Num.14.29",
+                  "note": "“Your carcasses shall fall in this wilderness, and all your counted ones, according to your whole number, from twenty years old and upward.”"
+                },
+                {
+                  "ref": "Num.26.64",
+                  "note": "Of the second count: not a man was left of those whom Moses and Aaron counted in the wilderness of Sinai."
+                },
+                {
+                  "ref": "Exo.30.12",
+                  "role": "defining",
+                  "note": "“When you lift up the head (תִשָּׂא אֶת־ רֹאשׁ) of the sons of Israel by their counted ones, each shall give a ransom (כֹּפֶר) for his soul to Yahweh בִּפְקֹד אֹתָם, that there be no plague among them.”"
+                },
+                {
+                  "ref": "Exo.38.25",
+                  "note": "“The silver of the counted ones of the congregation”, the half-shekels of the census."
+                },
+                {
+                  "ref": "Exo.38.21",
+                  "note": "“אֵלֶּה פְקוּדֵי הַמִּשְׁכָּן”: these are the reckonings of the Dwelling, its materials counted up."
+                },
+                {
+                  "ref": "Num.7.2",
+                  "note": "The leaders of the tribes “who stood over the counted ones”."
+                },
+                {
+                  "ref": "1Sa.11.8",
+                  "note": "Saul mustered them at Bezek: 300,000 of Israel and 30,000 of Judah."
+                },
+                {
+                  "ref": "1Sa.15.4"
+                },
+                {
+                  "ref": "1Sa.14.17",
+                  "role": "defining",
+                  "note": "“פִּקְדוּ־ נָא and see who has gone from us. And they mustered, and behold, Jonathan and his armour-bearer were not there”: the count finds who is missing."
+                },
+                {
+                  "ref": "2Sa.24.2",
+                  "role": "defining",
+                  "note": "David: “go through all the tribes … וּפִקְדוּ אֶת־ הָעָם, that I may know the number of the people”."
+                },
+                {
+                  "ref": "2Sa.24.4"
+                },
+                {
+                  "ref": "1Ch.21.6",
+                  "note": "Joab did not count Levi and Benjamin, for the king's word was abhorrent to him."
+                },
+                {
+                  "ref": "1Ki.20.15"
+                },
+                {
+                  "ref": "2Ki.3.6"
+                },
+                {
+                  "ref": "Jos.8.10",
+                  "note": "Joshua rose early and mustered the people before going up to Ai."
+                },
+                {
+                  "ref": "2Sa.18.1",
+                  "note": "“David mustered the people who were with him and set over them captains of thousands.”"
+                }
+              ]
+            },
+            {
+              "id": "miss",
+              "gloss": "miss, find missing",
+              "definition": "To look for someone or something and not find it there: the other side of taking stock. Its parallel is נֶעְדַּר “be lacking”.",
+              "evidence": [
+                {
+                  "ref": "1Sa.20.6",
+                  "role": "defining",
+                  "note": "David to Jonathan: “אִם־ פָּקֹד יִפְקְדֵנִי אָבִיךָ”, if your father misses me at the new moon, say David asked leave to go to Bethlehem."
+                },
+                {
+                  "ref": "1Sa.25.15",
+                  "role": "defining",
+                  "note": "Nabal's men: “we were not hurt, וְלֹא־ פָקַדְנוּ מְאוּמָה all the days we went with them”: we missed nothing."
+                },
+                {
+                  "ref": "Isa.34.16",
+                  "role": "defining",
+                  "note": "“Seek out of the book of Yahweh and read: not one of these is lacking (לֹא נֶעְדָּרָה), none misses her mate (לֹא פָקָדוּ).”"
+                },
+                {
+                  "ref": "Jer.3.16",
+                  "note": "Of the ark of the covenant in the days to come: “it shall not come to mind, nor shall they remember it, nor miss it (וְלֹא יִפְקֹדוּ), nor shall it be made again”."
+                }
+              ]
+            },
+            {
+              "id": "appoint-charge",
+              "gloss": "appoint, put in charge; charge (with a task)",
+              "definition": "To set a man where he will look after something or someone: appoint him over a people or a work, assign him to a charge, or lay a task on him.",
+              "evidence": [
+                {
+                  "ref": "Gen.40.4",
+                  "role": "defining",
+                  "note": "“The captain of the guard appointed (וַיִּפְקֹד) Joseph with them, and he served them.”"
+                },
+                {
+                  "ref": "Num.27.16",
+                  "role": "defining",
+                  "note": "Moses: “יִפְקֹד יַהְוֶה, the God of the spirits of all flesh, a man over the congregation”, who will lead them out and in, that they be not as sheep without a shepherd (v. 17)."
+                },
+                {
+                  "ref": "Num.3.10",
+                  "note": "“Aaron and his sons you shall appoint, and they shall keep their priesthood.”"
+                },
+                {
+                  "ref": "Num.4.27",
+                  "note": "“You shall appoint to them in charge all their burden.”"
+                },
+                {
+                  "ref": "Num.4.32",
+                  "note": "“By name you shall assign the vessels of their charge.”"
+                },
+                {
+                  "ref": "Deu.20.9",
+                  "note": "“They shall appoint captains of hosts at the head of the people.”"
+                },
+                {
+                  "ref": "Jer.49.19",
+                  "note": "“Who is chosen, that I may appoint him over her?” Also Jer 50:44."
+                },
+                {
+                  "ref": "Jer.51.27",
+                  "note": "“Appoint a marshal against her.”"
+                },
+                {
+                  "ref": "Jer.13.21",
+                  "note": "“What will you say when he appoints over you those you yourself taught as chiefs?”"
+                },
+                {
+                  "ref": "Job.34.13",
+                  "role": "defining",
+                  "note": "“מִי־ פָקַד עָלָיו אָרְצָה, and who set (שָׂם) the whole world?”: no one gave God his charge."
+                },
+                {
+                  "ref": "Job.36.23",
+                  "note": "“Who has appointed him his way?”"
+                },
+                {
+                  "ref": "Ezr.1.2",
+                  "role": "defining",
+                  "note": "Cyrus: Yahweh the God of heaven “וְהוּא־ פָקַד עָלַי לִבְנוֹת־ לוֹ בַיִת בִּירוּשָׁלִַם”: he has charged me to build him a house."
+                },
+                {
+                  "ref": "2Ch.36.23"
+                },
+                {
+                  "ref": "Num.31.14",
+                  "role": "defining",
+                  "note": "“Moses was angry with פְּקוּדֵי הֶחָיִל, the captains of thousands and captains of hundreds”: the appointed ones of the force, its officers."
+                },
+                {
+                  "ref": "Num.31.48"
+                },
+                {
+                  "ref": "2Ki.11.15",
+                  "note": "“The captains of hundreds, the officers of the force (פְּקֻדֵי הַחַיִל).”"
+                }
+              ]
+            },
+            {
+              "id": "deposit-qal",
+              "gloss": "lay up, deposit",
+              "definition": "To put a thing in a place for keeping.",
+              "evidence": [
+                {
+                  "ref": "2Ki.5.24",
+                  "role": "defining",
+                  "note": "Gehazi “took them from their hand וַיִּפְקֹד בַּבָּיִת”, laid them up in the house."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be missed, be missing; be visited (in judgment or for good); be appointed",
+          "senses": [
+            {
+              "id": "be-missing",
+              "gloss": "be missed, be missing",
+              "definition": "To be looked for and not found: the passive of “miss”.",
+              "evidence": [
+                {
+                  "ref": "Num.31.49",
+                  "role": "defining",
+                  "note": "“Your servants have lifted up the head (counted) the men of war in our hand, וְלֹא־ נִפְקַד מִמֶּנּוּ אִישׁ.”"
+                },
+                {
+                  "ref": "1Sa.20.18",
+                  "role": "defining",
+                  "note": "“Tomorrow is the new moon, וְנִפְקַדְתָּ כִּי יִפָּקֵד מוֹשָׁבֶךָ”: you will be missed, for your seat will be empty."
+                },
+                {
+                  "ref": "1Sa.20.25"
+                },
+                {
+                  "ref": "1Sa.20.27",
+                  "note": "“David's place was missing, and Saul said to Jonathan, Why has the son of Jesse not come?”"
+                },
+                {
+                  "ref": "1Sa.25.7"
+                },
+                {
+                  "ref": "1Sa.25.21"
+                },
+                {
+                  "ref": "2Sa.2.30",
+                  "note": "“Of David's servants nineteen men were missing, and Asahel.”"
+                },
+                {
+                  "ref": "1Ki.20.39",
+                  "note": "“Guard this man; if he is missing at all, your life shall be for his life.”"
+                },
+                {
+                  "ref": "2Ki.10.19"
+                },
+                {
+                  "ref": "Jdg.21.3",
+                  "note": "“Why should one tribe be missing today from Israel?”"
+                },
+                {
+                  "ref": "Jer.23.4",
+                  "role": "defining",
+                  "note": "“I will raise up shepherds over them … they shall fear no more … וְלֹא יִפָּקֵדוּ”: none shall be missing, the opposite of the shepherds who did not attend (v. 2)."
+                }
+              ]
+            },
+            {
+              "id": "be-visited",
+              "gloss": "be visited (in judgment, or after long days)",
+              "definition": "To have Yahweh's attention come upon one, for punishment or for deliverance.",
+              "evidence": [
+                {
+                  "ref": "Num.16.29",
+                  "role": "defining",
+                  "note": "Moses of Korah's men: “if they die as all men die, וּפְקֻדַּת כָּל־ הָאָדָם יִפָּקֵד עֲלֵיהֶם”, if the visitation of all men is visited on them, Yahweh has not sent me."
+                },
+                {
+                  "ref": "Isa.24.22",
+                  "role": "defining",
+                  "note": "The host of the height and the kings of the earth “shall be shut up in prison, וּמֵרֹב יָמִים יִפָּקֵדוּ”, after many days they shall be visited."
+                },
+                {
+                  "ref": "Isa.29.6",
+                  "note": "“From Yahweh of armies she shall be visited with thunder and earthquake.”"
+                },
+                {
+                  "ref": "Pro.19.23",
+                  "note": "“The fear of Yahweh is to life; he shall abide satisfied, בַּל־ יִפָּקֶד רָע”, not visited with evil."
+                },
+                {
+                  "ref": "Ezk.38.8",
+                  "note": "“After many days you shall be visited (or mustered); in the latter years you shall come into the land.”"
+                }
+              ]
+            },
+            {
+              "gloss": "be appointed",
+              "definition": "To be set in charge of a work.",
+              "evidence": [
+                {
+                  "ref": "Neh.7.1",
+                  "role": "defining",
+                  "note": "When the wall was built “the gatekeepers and the singers and the Levites were appointed (וַיִּפָּקְדוּ)”."
+                },
+                {
+                  "ref": "Neh.12.44",
+                  "note": "Men were appointed over the chambers for the stores, the contributions and the tithes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "muster (an army)",
+          "senses": [
+            {
+              "gloss": "muster",
+              "definition": "To gather and review a host for battle.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.4",
+                  "role": "defining",
+                  "note": "“Yahweh of armies מְפַקֵּד צְבָא מִלְחָמָה”, is mustering a host for battle."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be counted up; be deprived of",
+          "senses": [
+            {
+              "gloss": "be counted up, reckoned",
+              "definition": "To be counted and recorded.",
+              "evidence": [
+                {
+                  "ref": "Exo.38.21",
+                  "role": "defining",
+                  "note": "“These are the reckonings of the Dwelling … אֲשֶׁר פֻּקַּד עַל־ פִּי מֹשֶׁה”, which were counted at the command of Moses."
+                }
+              ]
+            },
+            {
+              "gloss": "be deprived of (made to miss)",
+              "definition": "Hezekiah's “I am deprived of the rest of my years”: made to miss them. The sense is drawn from the niphal “be missing” and the context, and is not certain.",
+              "evidence": [
+                {
+                  "ref": "Isa.38.10",
+                  "role": "defining",
+                  "note": "“In the noontide of my days I shall go into the gates of the grave; פֻּקַּדְתִּי the rest of my years.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "muster oneself, be counted",
+          "senses": [
+            {
+              "gloss": "be mustered, be counted (with others)",
+              "definition": "To present oneself at a muster, or be counted among a people. The corpus tags Num 1:47, 2:33, 26:62 and 1Ki 20:27 hothpaal, the hithpael's passive.",
+              "evidence": [
+                {
+                  "ref": "Jdg.20.15",
+                  "note": "The sons of Benjamin mustered themselves from the cities, 26,000 men."
+                },
+                {
+                  "ref": "Jdg.20.17"
+                },
+                {
+                  "ref": "Jdg.21.9",
+                  "role": "defining",
+                  "note": "“וַיִּתְפָּקֵד הָעָם, and behold, there was not a man there of the inhabitants of Jabesh-gilead”: the muster finds who is missing."
+                },
+                {
+                  "ref": "Num.1.47",
+                  "note": "“The Levites by the tribe of their fathers were not counted among them.”"
+                },
+                {
+                  "ref": "Num.2.33"
+                },
+                {
+                  "ref": "Num.26.62",
+                  "role": "defining",
+                  "note": "“כִּי לֹא הָתְפָּקְדוּ בְּתוֹךְ בְּנֵי יִשְׂרָאֵל, because no inheritance was given them among the sons of Israel.”"
+                },
+                {
+                  "ref": "1Ki.20.27",
+                  "note": "“The sons of Israel were mustered and provisioned and went against them.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "set over, appoint; commit, entrust, deposit",
+          "senses": [
+            {
+              "id": "set-over",
+              "gloss": "set over, appoint, put in charge",
+              "definition": "To make a man the one who looks after a house, a land, a people or a work; with עַל of what he is set over.",
+              "evidence": [
+                {
+                  "ref": "Gen.39.4",
+                  "role": "defining",
+                  "note": "“וַיַּפְקִדֵהוּ עַל־ בֵּיתוֹ, and all that he had he gave into his hand.”"
+                },
+                {
+                  "ref": "Gen.39.5",
+                  "note": "From the time he set him over his house, Yahweh blessed the Egyptian's house for Joseph's sake."
+                },
+                {
+                  "ref": "Gen.41.34",
+                  "role": "defining",
+                  "note": "“Let Pharaoh וְיַפְקֵד פְּקִדִים עַל־ הָאָרֶץ”, appoint overseers over the land: the verb with its own noun."
+                },
+                {
+                  "ref": "Num.1.50",
+                  "role": "defining",
+                  "note": "“You, appoint (הַפְקֵד) the Levites over the Dwelling of the testimony and over all its vessels.”"
+                },
+                {
+                  "ref": "Jer.1.10",
+                  "role": "defining",
+                  "note": "“See, הִפְקַדְתִּיךָ this day over the nations and over the kingdoms, to pluck up and to break down … to build and to plant.”"
+                },
+                {
+                  "ref": "Isa.62.6",
+                  "role": "defining",
+                  "note": "“On your walls, Jerusalem, I have set watchmen (הִפְקַדְתִּי שֹׁמְרִים); all the day and all the night they shall never be silent.”"
+                },
+                {
+                  "ref": "1Ki.11.28",
+                  "note": "Solomon set Jeroboam over all the forced labour of the house of Joseph."
+                },
+                {
+                  "ref": "2Ki.25.22",
+                  "note": "Nebuchadnezzar appointed Gedaliah over the people left in Judah."
+                },
+                {
+                  "ref": "2Ki.25.23"
+                },
+                {
+                  "ref": "Jer.40.5"
+                },
+                {
+                  "ref": "Jer.40.7"
+                },
+                {
+                  "ref": "Jer.40.11"
+                },
+                {
+                  "ref": "Jer.41.2"
+                },
+                {
+                  "ref": "Jer.41.18"
+                },
+                {
+                  "ref": "Est.2.3",
+                  "note": "“Let the king appoint officers (פְּקִידִים) in all the provinces.”"
+                },
+                {
+                  "ref": "1Ch.26.32",
+                  "note": "David set the Hebronites over the Reubenites, the Gadites and half Manasseh, “for every matter of God and matter of the king”."
+                },
+                {
+                  "ref": "Jos.10.18",
+                  "note": "“Set men by it to guard them.”"
+                },
+                {
+                  "ref": "1Sa.29.4",
+                  "note": "“Let him return to the place where you appointed him.”"
+                },
+                {
+                  "ref": "Psa.109.6",
+                  "note": "“Set a wicked man over him, and let an adversary (שָׂטָן) stand at his right hand.”"
+                },
+                {
+                  "ref": "Lev.26.16",
+                  "role": "defining",
+                  "note": "“וְהִפְקַדְתִּי עֲלֵיכֶם בֶּהָלָה”, I will appoint over you terror, consumption and fever: judgment set over them as an overseer."
+                }
+              ]
+            },
+            {
+              "id": "commit-deposit",
+              "gloss": "commit, entrust, deposit",
+              "definition": "To put a thing or a person into another's keeping, or in a place for safe keeping, to be looked after and given back.",
+              "evidence": [
+                {
+                  "ref": "Psa.31.6",
+                  "role": "defining",
+                  "note": "“בְּיָדְךָ אַפְקִיד רוּחִי; you have redeemed me, Yahweh, God of truth”: quoted by Jesus on the cross (Luk 23:46)."
+                },
+                {
+                  "ref": "Jer.36.20",
+                  "role": "defining",
+                  "note": "“The scroll they deposited (הִפְקִדוּ) in the chamber of Elishama the scribe.”"
+                },
+                {
+                  "ref": "1Ki.14.27",
+                  "role": "defining",
+                  "note": "Rehoboam made bronze shields “וְהִפְקִיד עַל־ יַד the captains of the runners who kept the door of the king's house”: committed them to their keeping."
+                },
+                {
+                  "ref": "2Ch.12.10"
+                },
+                {
+                  "ref": "Jer.37.21",
+                  "note": "“They committed Jeremiah to the court of the guard, and gave him a loaf of bread daily.”"
+                },
+                {
+                  "ref": "Jer.41.10",
+                  "note": "The people “whom Nebuzaradan had committed to Gedaliah”."
+                },
+                {
+                  "ref": "Isa.10.28",
+                  "note": "“At Michmash he lays up his baggage.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be deposited; be appointed; be visited",
+          "senses": [
+            {
+              "id": "be-deposited",
+              "gloss": "be deposited, be entrusted",
+              "definition": "To be put into another's keeping.",
+              "evidence": [
+                {
+                  "ref": "Lev.5.23",
+                  "role": "defining",
+                  "note": "He shall return “אֶת־ הַפִּקָּדוֹן אֲשֶׁר הָפְקַד אִתּוֹ”, the deposit which was deposited with him: verb and noun together."
+                }
+              ]
+            },
+            {
+              "gloss": "be appointed, be overseer",
+              "definition": "The passive participle הַמֻּפְקָדִים: those appointed over a work.",
+              "evidence": [
+                {
+                  "ref": "2Ki.12.12",
+                  "role": "defining",
+                  "note": "The silver given to “the doers of the work, הַמֻּפְקָדִים בֵּית יַהְוֶה”, those appointed over the house of Yahweh."
+                },
+                {
+                  "ref": "2Ki.22.5"
+                },
+                {
+                  "ref": "2Ki.22.9"
+                },
+                {
+                  "ref": "2Ch.34.10"
+                },
+                {
+                  "ref": "2Ch.34.12",
+                  "note": "Levites were appointed to oversee the workmen."
+                },
+                {
+                  "ref": "2Ch.34.17"
+                }
+              ]
+            },
+            {
+              "gloss": "be visited (for punishment)",
+              "definition": "Of Jerusalem: the city on which judgment is visited.",
+              "evidence": [
+                {
+                  "ref": "Jer.6.6",
+                  "role": "defining",
+                  "note": "“Cast up a mound against Jerusalem; הִיא הָעִיר הָפְקַד, she is wholly oppression within.” The form is hard; the context is judgment."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπισκέπτομαι",
+          "gloss": "look upon, visit; look out, select",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.21.1, פָּקַד → ἐπεσκέψατο; Gen.50.24 → ἐπισκέψεται; Exo.3.16 → ἐπέσκεμμαι; Psa.8.5 → ἐπισκέπτῃ; Jer.23.2, פְקַדְתֶּם → ἐπεσκέψασθε; Num.1.3 → ἐπισκέψασθε; ἐπισκέπτομαι renders פָּקַד ×80"
+            },
+            {
+              "ref": "Heb.2.6",
+              "role": "defining",
+              "note": "Psa 8:5 quoted: “what is man that you remember him, or the son of man that you visit him (ἐπισκέπτῃ αὐτόν)?”"
+            },
+            {
+              "ref": "Luk.1.68",
+              "role": "defining",
+              "note": "Zacharias: “Blessed be the Lord God of Israel, for he has visited (ἐπεσκέψατο) and wrought redemption for his people”, remembering the oath he swore to Abraham (vv. 72–73), as Joseph had said God would (Gen 50:24)."
+            },
+            {
+              "ref": "Luk.1.78"
+            },
+            {
+              "ref": "Luk.7.16",
+              "role": "defining",
+              "note": "“A great prophet has arisen among us, and God has visited his people.”"
+            },
+            {
+              "ref": "Act.15.14",
+              "note": "“God first visited the Gentiles to take out of them a people for his name.”"
+            },
+            {
+              "ref": "Act.6.3",
+              "note": "“Look out (ἐπισκέψασθε) seven men from among you … whom we may appoint (καταστήσομεν) over this business”: the Greek of Num 1:3 and Num 27:16 for choosing men to set in charge."
+            },
+            {
+              "ref": "Mat.25.36",
+              "note": "“I was sick and you visited me”: the shepherd's attending (Jer 23:2; Zec 11:16) asked of every disciple; also Jas 1:27."
+            },
+            {
+              "ref": "Jas.1.27"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐκδικέω",
+          "gloss": "avenge, punish",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.23.2, פֹקֵד → ἐκδικῶ; ἐκδικέω renders פָּקַד ×15, of visiting sin upon the sinner"
+            },
+            {
+              "ref": "Rev.6.10",
+              "note": "“How long, O Master, holy and true, do you not judge and avenge (ἐκδικεῖς) our blood on those who dwell on the earth?”"
+            }
+          ]
+        },
+        {
+          "lemma": "καθίστημι",
+          "gloss": "set over, appoint",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.39.4, וַיַּפְקִדֵהוּ → κατέστησεν; Gen.41.34 → καταστησάτω; Jer.1.10, הִפְקַדְתִּיךָ → κατέστακα; καθίστημι renders פָּקַד ×13"
+            },
+            {
+              "ref": "Mat.24.45",
+              "role": "defining",
+              "note": "“Who is the faithful and wise servant whom his lord has set over (κατέστησεν) his household?”, as Joseph was set over Potiphar's house (Gen 39:4)."
+            },
+            {
+              "ref": "Act.6.3"
+            },
+            {
+              "ref": "Tit.1.5",
+              "note": "“That you should appoint (καταστήσῃς) elders in every city”; the Peshitta here has פַּקֵדּתָּך “I charged you”."
+            }
+          ]
+        },
+        {
+          "lemma": "παρατίθημι",
+          "gloss": "commit, entrust",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.31.6, אַפְקִיד → παραθήσομαι; Lev.5.23, הָפְקַד → παρετέθη"
+            },
+            {
+              "ref": "Luk.23.46",
+              "role": "defining",
+              "note": "Psa 31:6 on Jesus' lips: “Father, into your hands I commit (παραθήσομαι) my spirit; and having said this he breathed out (ἐξέπνευσεν).”"
+            },
+            {
+              "ref": "1Pe.4.19",
+              "note": "“Let those who suffer according to the will of God commit (παρατιθέσθωσαν) their souls to a faithful Creator.”"
+            },
+            {
+              "ref": "Act.20.32",
+              "note": "“I commit you to God and to the word of his grace, which is able … to give you an inheritance.”"
+            },
+            {
+              "ref": "Act.14.23"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זָכַר",
+            "note": "“Remember”: to bring to mind and so to act, for good or for judgment; פָּקַד follows it as the act that remembering leads to.",
+            "evidence": [
+              {
+                "ref": "Psa.8.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.106.4"
+              },
+              {
+                "ref": "Jer.15.15"
+              },
+              {
+                "ref": "Hos.8.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.3.16"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּחַן",
+            "note": "“Test, examine”: the visit that looks a man over.",
+            "evidence": [
+              {
+                "ref": "Job.7.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.17.3"
+              }
+            ]
+          },
+          {
+            "lemma": "בִּקֵּשׁ",
+            "note": "“Seek”: the shepherd's attending to the perishing and seeking the young.",
+            "evidence": [
+              {
+                "ref": "Zec.11.16",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נֶעְדַּר",
+            "note": "“Be lacking”, beside פָּקַד “miss”.",
+            "evidence": [
+              {
+                "ref": "Isa.34.16",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הֵשִׁיב",
+            "note": "“Return (a man's deeds on him)”: what visiting sin upon him means.",
+            "evidence": [
+              {
+                "ref": "Hos.4.9",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "נָשָׂא עָוֺן",
+            "note": "“Lift up (forgive) iniquity”, set against “visiting iniquity” in the proclamation of the name.",
+            "evidence": [
+              {
+                "ref": "Exo.34.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.14.18"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "פָּקֹד יִפְקֹד",
+            "gloss": "he will surely visit",
+            "evidence": [
+              {
+                "ref": "Gen.50.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.50.25"
+              },
+              {
+                "ref": "Exo.13.19"
+              },
+              {
+                "ref": "Exo.3.16",
+                "note": "פָּקֹד פָּקַדְתִּי, “I have surely visited”: the promise kept."
+              }
+            ]
+          },
+          {
+            "phrase": "פֹּקֵד עֲוֺן אָבֹת עַל־ בָּנִים",
+            "gloss": "visiting the iniquity of the fathers on the sons",
+            "evidence": [
+              {
+                "ref": "Exo.20.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.7"
+              },
+              {
+                "ref": "Num.14.18"
+              },
+              {
+                "ref": "Deu.5.9"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא אֶת־ רֹאשׁ … לִפְקֻדֵיהֶם",
+            "gloss": "lift up the head (take the census) by their counted ones",
+            "evidence": [
+              {
+                "ref": "Exo.30.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.31.49"
+              }
+            ]
+          },
+          {
+            "phrase": "פְּקוּדֵי הֶחָיִל",
+            "gloss": "the officers of the force",
+            "evidence": [
+              {
+                "ref": "Num.31.14",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.11.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פְּקֻדָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "oversight, charge, office; muster; visitation, punishment; care; store",
+      "bdb": [
+        "q.co.ab"
+      ],
+      "cognate_ids": [
+        "akk-piqittu",
+        "phn-mpqd"
+      ],
+      "summary": "The noun of the act: the charge a man is given to look after, and so his office; the muster of an army; and, most often in the prophets, the day or time of Yahweh's visitation, when he comes to deal with a people.",
+      "senses": [
+        {
+          "id": "oversight-charge",
+          "gloss": "oversight, charge, office",
+          "definition": "What a man is set to look after, and the office of looking after it; in the plural, those who hold the charge, officers.",
+          "evidence": [
+            {
+              "ref": "Num.3.32",
+              "role": "defining",
+              "note": "Eleazar, chief of the Levites, had “פְּקֻדַּת שֹׁמְרֵי מִשְׁמֶרֶת הַקֹּדֶשׁ”, the oversight of those who kept the charge of the holy place."
+            },
+            {
+              "ref": "Num.3.36"
+            },
+            {
+              "ref": "Num.4.16",
+              "role": "defining",
+              "note": "“The charge of Eleazar … the oil for the light, the incense, the continual grain offering and the anointing oil, פְּקֻדַּת כָּל־ הַמִּשְׁכָּן.”"
+            },
+            {
+              "ref": "Psa.109.8",
+              "role": "defining",
+              "note": "“Let his days be few; פְּקֻדָּתוֹ יִקַּח אַחֵר”: let another take his office. Peter applies it to Judas (Act 1:20)."
+            },
+            {
+              "ref": "Isa.60.17",
+              "role": "defining",
+              "note": "“I will make your overseers (פְקֻדָּתֵךְ) peace and your taskmasters (נֹגְשַׂיִךְ) righteousness.”"
+            },
+            {
+              "ref": "1Ch.23.11"
+            },
+            {
+              "ref": "1Ch.24.3",
+              "note": "David divided the priests “according to their office in their service”."
+            },
+            {
+              "ref": "1Ch.24.19"
+            },
+            {
+              "ref": "1Ch.26.30",
+              "note": "The Hebronites “over the oversight of Israel” west of the Jordan."
+            },
+            {
+              "ref": "2Ch.23.18",
+              "note": "Jehoiada set “the offices of the house of Yahweh” in the hand of the priests."
+            },
+            {
+              "ref": "2Ch.24.11",
+              "note": "The chest was brought “to the king's office”."
+            },
+            {
+              "ref": "Ezk.44.11",
+              "note": "The Levites shall be ministers in the sanctuary, “having oversight (פְּקֻדּוֹת) at the gates of the house”."
+            },
+            {
+              "ref": "2Ki.11.18",
+              "note": "“The priest appointed officers (פְּקֻדּוֹת) over the house of Yahweh.”"
+            },
+            {
+              "ref": "Ezk.9.1",
+              "note": "“קָרְבוּ פְּקֻדּוֹת הָעִיר, each with his weapon of destruction in his hand”: those who have charge of the city, come to visit it."
+            },
+            {
+              "ref": "Jer.52.11",
+              "note": "Zedekiah was put “בֵית־ הַפְּקֻדֹּת until the day of his death”: the house of custody."
+            }
+          ],
+          "kin": [
+            "set-over",
+            "appoint-charge"
+          ]
+        },
+        {
+          "gloss": "muster, numbering",
+          "definition": "The counting of an army, and the number found.",
+          "evidence": [
+            {
+              "ref": "2Ch.26.11",
+              "role": "defining",
+              "note": "Uzziah's army went out “בְּמִסְפַּר פְּקֻדָּתָם”, by the number of their muster, by the hand of Jeiel the scribe."
+            },
+            {
+              "ref": "2Ch.17.14",
+              "note": "“These were their musterings by their fathers' houses.”"
+            }
+          ],
+          "kin": [
+            "count-muster"
+          ]
+        },
+        {
+          "id": "visitation",
+          "gloss": "visitation, the time of punishment",
+          "definition": "The day or time when Yahweh comes to deal with a people for their deeds; its parallels are שׁוֹאָה “desolation” and שִׁלֻּם “recompense”.",
+          "evidence": [
+            {
+              "ref": "Isa.10.3",
+              "role": "defining",
+              "note": "“What will you do לְיוֹם פְּקֻדָּה, and in the desolation (שׁוֹאָה) which comes from afar?”"
+            },
+            {
+              "ref": "Hos.9.7",
+              "role": "defining",
+              "note": "“בָּאוּ יְמֵי הַפְּקֻדָּה, the days of recompense (הַשִׁלֻּם) have come.”"
+            },
+            {
+              "ref": "Jer.8.12",
+              "note": "“They shall fall among the fallen; in the time of their visitation they shall stumble.”"
+            },
+            {
+              "ref": "Jer.10.15",
+              "role": "defining",
+              "note": "Of the idols: “בְּעֵת פְּקֻדָּתָם יֹאבֵדוּ”, in the time of their visitation they shall perish; also Jer 51:18."
+            },
+            {
+              "ref": "Jer.51.18"
+            },
+            {
+              "ref": "Jer.11.23",
+              "note": "“I will bring evil on the men of Anathoth, the year of their visitation.”"
+            },
+            {
+              "ref": "Jer.23.12"
+            },
+            {
+              "ref": "Jer.46.21"
+            },
+            {
+              "ref": "Jer.48.44"
+            },
+            {
+              "ref": "Jer.50.27"
+            },
+            {
+              "ref": "Mic.7.4",
+              "note": "“The day of your watchmen, your visitation, has come.”"
+            },
+            {
+              "ref": "Num.16.29",
+              "role": "defining",
+              "note": "“The visitation of all men”: the common lot of death that comes on every man, against which Korah's end was to be a new thing."
+            }
+          ],
+          "kin": [
+            "visit-upon"
+          ]
+        },
+        {
+          "gloss": "care, keeping",
+          "definition": "God's attending to a man, which keeps him alive.",
+          "evidence": [
+            {
+              "ref": "Job.10.12",
+              "role": "defining",
+              "note": "“Life and covenant faithfulness you granted me, וּפְקֻדָּתְךָ שָׁמְרָה רוּחִי”: your care has kept my breath."
+            }
+          ],
+          "kin": [
+            "attend-to"
+          ]
+        },
+        {
+          "gloss": "what is laid up, store",
+          "definition": "What has been put by for keeping.",
+          "evidence": [
+            {
+              "ref": "Isa.15.7",
+              "role": "defining",
+              "note": "Moab's fugitives: “the abundance they have gotten וּפְקֻדָּתָם they carry over the brook of the willows”."
+            }
+          ],
+          "kin": [
+            "commit-deposit"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπισκοπή",
+          "gloss": "visitation; office of oversight",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.109.8, פְּקֻדָּתוֹ → ἐπισκοπήν; Isa.10.3, פְּקֻדָּה → ἐπισκοπῆς; Jer.10.15 → ἐπισκοπῆς"
+            },
+            {
+              "ref": "Act.1.20",
+              "role": "defining",
+              "note": "Psa 109:8 quoted of Judas: “and his office (ἐπισκοπήν) let another take”."
+            },
+            {
+              "ref": "Luk.19.44",
+              "role": "defining",
+              "note": "Jesus over Jerusalem: they will not leave in you one stone on another, “because you did not know the time of your visitation (τὸν καιρὸν τῆς ἐπισκοπῆς σου)”: the prophets' עֵת פְּקֻדָּה (Jer 8:12; 10:15)."
+            },
+            {
+              "ref": "1Pe.2.12",
+              "note": "That the Gentiles may glorify God “in the day of visitation”."
+            },
+            {
+              "ref": "1Ti.3.1",
+              "note": "“If a man desires the office of oversight (ἐπισκοπῆς), he desires a good work.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐκδίκησις",
+          "gloss": "vengeance, punishment",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Hos.9.7, הַפְּקֻדָּה → ἐκδικήσεως; ἐκδίκησις renders פְּקֻדָּה ×3"
+            },
+            {
+              "ref": "Luk.21.22",
+              "role": "defining",
+              "note": "“When you see Jerusalem surrounded by armies … these are days of vengeance (ἡμέραι ἐκδικήσεως), that all things written may be fulfilled”: Hosea's “days of visitation” (Hos 9:7) in the Septuagint's Greek."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שׁוֹאָה",
+            "note": "“Desolation, ruin”: what the day of visitation brings.",
+            "evidence": [
+              {
+                "ref": "Isa.10.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שִׁלֻּם",
+            "note": "“Recompense”: the visitation pays back.",
+            "evidence": [
+              {
+                "ref": "Hos.9.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נֹגֵשׂ",
+            "note": "“Taskmaster, ruler”, beside “overseers”.",
+            "evidence": [
+              {
+                "ref": "Isa.60.17",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יוֹם פְּקֻדָּה",
+            "gloss": "the day of visitation",
+            "evidence": [
+              {
+                "ref": "Isa.10.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵת פְּקֻדָּתָם",
+            "gloss": "the time of their visitation",
+            "evidence": [
+              {
+                "ref": "Jer.10.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.8.12"
+              },
+              {
+                "ref": "Jer.46.21"
+              },
+              {
+                "ref": "Jer.50.27"
+              },
+              {
+                "ref": "Jer.51.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פִּקּוּד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "precept, charge (always plural)",
+      "bdb": [
+        "q.co.af"
+      ],
+      "cognate_ids": [
+        "arc-puqdana",
+        "arc-peqad",
+        "uga-pqd"
+      ],
+      "summary": "Only in the Psalms, always plural and always Yahweh's: his precepts, the charges he has laid on his people to keep, as a master lays a charge on one he puts in trust (the qal “charge”, Ezr 1:2). Twenty-one of its twenty-four uses are in Psalm 119. The Peshitta's noun of the same root, פּוּקְדָּנָא, is the New Testament's “commandment”.",
+      "senses": [
+        {
+          "id": "precepts",
+          "gloss": "precepts (of Yahweh)",
+          "definition": "The things Yahweh has charged his people to do; set beside his commandment (מִצְוָה), covenant, testimonies and statutes, kept, sought, loved and not forgotten.",
+          "evidence": [
+            {
+              "ref": "Psa.19.9",
+              "role": "defining",
+              "note": "“פִּקּוּדֵי יַהְוֶה are right, rejoicing the heart; the commandment (מִצְוַת) of Yahweh is pure.”"
+            },
+            {
+              "ref": "Psa.119.4",
+              "role": "defining",
+              "note": "“אַתָּה צִוִּיתָה פִקֻּדֶיךָ to keep diligently”: Yahweh commanded his precepts."
+            },
+            {
+              "ref": "Psa.103.18",
+              "role": "defining",
+              "note": "“To those who keep his covenant (בְרִיתוֹ) and remember his precepts to do them.”"
+            },
+            {
+              "ref": "Psa.111.7",
+              "note": "“All his precepts are sure.”"
+            },
+            {
+              "ref": "Psa.119.15"
+            },
+            {
+              "ref": "Psa.119.27",
+              "note": "“Make me understand the way of your precepts.”"
+            },
+            {
+              "ref": "Psa.119.40",
+              "note": "“Behold, I long for your precepts; in your righteousness give me life.”"
+            },
+            {
+              "ref": "Psa.119.45",
+              "note": "“I will walk at liberty, for I have sought your precepts.”"
+            },
+            {
+              "ref": "Psa.119.56"
+            },
+            {
+              "ref": "Psa.119.63",
+              "note": "“A companion of all who fear you, and of those who keep your precepts.”"
+            },
+            {
+              "ref": "Psa.119.69"
+            },
+            {
+              "ref": "Psa.119.78"
+            },
+            {
+              "ref": "Psa.119.87"
+            },
+            {
+              "ref": "Psa.119.93",
+              "role": "defining",
+              "note": "“I will never forget your precepts, כִּי בָם חִיִּיתָנִי”: by them you have given me life."
+            },
+            {
+              "ref": "Psa.119.94"
+            },
+            {
+              "ref": "Psa.119.100"
+            },
+            {
+              "ref": "Psa.119.104",
+              "note": "“Through your precepts I get understanding; therefore I hate every false way.”"
+            },
+            {
+              "ref": "Psa.119.110"
+            },
+            {
+              "ref": "Psa.119.128"
+            },
+            {
+              "ref": "Psa.119.134"
+            },
+            {
+              "ref": "Psa.119.141"
+            },
+            {
+              "ref": "Psa.119.159"
+            },
+            {
+              "ref": "Psa.119.168",
+              "note": "“I keep your precepts and your testimonies.”"
+            },
+            {
+              "ref": "Psa.119.173"
+            }
+          ],
+          "kin": [
+            "appoint-charge",
+            "syc-commandment",
+            "syc-command"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐντολή",
+          "gloss": "commandment",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.119.40, פִקֻּדֶיךָ → ἐντολάς (the only token of פִּקּוּד the alignment pairs)"
+            },
+            {
+              "ref": "Jhn.14.15",
+              "role": "defining",
+              "note": "“If you love me, keep my commandments (τὰς ἐντολὰς τὰς ἐμάς)”; the Peshitta's word is פֻּוקדָּנַי, of this root."
+            },
+            {
+              "ref": "1Jn.5.3",
+              "note": "“This is the love of God, that we keep his commandments; and his commandments are not burdensome.”"
+            },
+            {
+              "ref": "Rev.22.14",
+              "note": "“Blessed are those who do his commandments, that they may have right to the tree of life.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִצְוָה",
+            "note": "“Commandment”.",
+            "evidence": [
+              {
+                "ref": "Psa.19.9",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "בְּרִית",
+            "note": "“Covenant”: the precepts are its terms.",
+            "evidence": [
+              {
+                "ref": "Psa.103.18",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עֵדָה",
+            "note": "“Testimony”.",
+            "evidence": [
+              {
+                "ref": "Psa.119.168",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פָּקִיד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "overseer, officer, deputy",
+      "bdb": [
+        "q.co.ad"
+      ],
+      "cognate_ids": [
+        "akk-paqdu",
+        "phn-mpqd",
+        "arc-peqad"
+      ],
+      "senses": [
+        {
+          "gloss": "overseer, officer, deputy",
+          "definition": "One appointed (hiphil) to look after a land, a city, a work or a body of men on behalf of the one who set him there.",
+          "evidence": [
+            {
+              "ref": "Gen.41.34",
+              "role": "defining",
+              "note": "“Let Pharaoh appoint (וְיַפְקֵד) overseers (פְּקִדִים) over the land.”"
+            },
+            {
+              "ref": "Jdg.9.28",
+              "role": "defining",
+              "note": "“Is he not the son of Jerubbaal, and Zebul פְּקִידוֹ?”: Abimelech's deputy over Shechem."
+            },
+            {
+              "ref": "Jer.20.1",
+              "note": "Pashhur the priest, “פָקִיד נָגִיד in the house of Yahweh”, chief officer."
+            },
+            {
+              "ref": "Jer.29.26",
+              "note": "The priest made “overseers in the house of Yahweh” over every madman who prophesies."
+            },
+            {
+              "ref": "2Ki.25.19",
+              "note": "A eunuch “who was overseer over the men of war”; also Jer 52:25."
+            },
+            {
+              "ref": "Jer.52.25"
+            },
+            {
+              "ref": "Est.2.3"
+            },
+            {
+              "ref": "Neh.11.9",
+              "note": "“Joel the son of Zichri was overseer over them.”"
+            },
+            {
+              "ref": "Neh.11.14"
+            },
+            {
+              "ref": "Neh.11.22",
+              "note": "“The overseer of the Levites in Jerusalem was Uzzi.”"
+            },
+            {
+              "ref": "Neh.12.42"
+            },
+            {
+              "ref": "2Ch.24.11",
+              "note": "“The king's scribe and the high priest's officer” emptied the chest."
+            },
+            {
+              "ref": "2Ch.31.13",
+              "role": "defining",
+              "note": "“פְּקִידִים under the hand of Conaniah … בְּמִפְקַד יְחִזְקִיָּהוּ הַמֶּלֶךְ”: overseers by the king's appointment."
+            }
+          ],
+          "kin": [
+            "set-over",
+            "oversight-charge"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐπίσκοπος",
+          "gloss": "overseer",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Neh.11.9, פָּקִיד → ἐπίσκοπος; Num.4.16, פְקֻדַּת → ἐπίσκοπος; ἐπίσκοπος renders פָּקִיד ×4"
+            },
+            {
+              "ref": "Act.20.28",
+              "role": "defining",
+              "note": "“Take heed to all the flock in which the holy spirit has made you overseers (ἐπισκόπους), to shepherd the ecclesia of God.”"
+            },
+            {
+              "ref": "1Pe.2.25",
+              "role": "defining",
+              "note": "“You were as sheep going astray, but have now returned to the shepherd and overseer (ἐπίσκοπον) of your souls”: the shepherd who attends to the flock (Jer 23:2–4)."
+            },
+            {
+              "ref": "Php.1.1"
+            },
+            {
+              "ref": "1Ti.3.2"
+            },
+            {
+              "ref": "Tit.1.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִפְקָד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "muster, count; appointment; appointed place",
+      "bdb": [
+        "q.co.ah"
+      ],
+      "cognate_ids": [
+        "phn-mpqd"
+      ],
+      "summary": "Five uses: the count of a census, an appointment, and a place set apart. The gate of Nehemiah 3:31 takes its name from it.",
+      "senses": [
+        {
+          "gloss": "muster, count",
+          "definition": "The counting of the people, and its sum.",
+          "evidence": [
+            {
+              "ref": "2Sa.24.9",
+              "role": "defining",
+              "note": "“Joab gave the number of מִפְקַד־ הָעָם to the king.”"
+            },
+            {
+              "ref": "1Ch.21.5"
+            }
+          ],
+          "kin": [
+            "count-muster"
+          ]
+        },
+        {
+          "gloss": "appointment, command",
+          "definition": "An appointing, by which men are set over a work.",
+          "evidence": [
+            {
+              "ref": "2Ch.31.13",
+              "role": "defining",
+              "note": "The overseers served “בְּמִפְקַד יְחִזְקִיָּהוּ הַמֶּלֶךְ”, by the appointment of Hezekiah the king."
+            }
+          ],
+          "kin": [
+            "set-over"
+          ]
+        },
+        {
+          "gloss": "appointed place",
+          "definition": "A place assigned for a purpose; the name of a gate of Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Ezk.43.21",
+              "role": "defining",
+              "note": "The bull of the sin offering is burned “בְּמִפְקַד הַבַּיִת, outside the sanctuary”."
+            },
+            {
+              "ref": "Neh.3.31",
+              "note": "“Over against שַׁעַר הַמִּפְקָד”: the Muster Gate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פִּקָּדוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "deposit, thing entrusted; reserve",
+      "bdb": [
+        "q.co.ag"
+      ],
+      "cognate_ids": [
+        "akk-puquddu",
+        "arc-puqdana",
+        "phn-mpqd"
+      ],
+      "senses": [
+        {
+          "gloss": "deposit, thing entrusted",
+          "definition": "What one man puts into another's keeping, to be kept and given back; to deny it is a trespass against Yahweh.",
+          "evidence": [
+            {
+              "ref": "Lev.5.21",
+              "role": "defining",
+              "note": "“If a soul sins and trespasses against Yahweh and lies to his neighbour בְּפִקָּדוֹן, or in a pledge, or in robbery.”"
+            },
+            {
+              "ref": "Lev.5.23",
+              "role": "defining",
+              "note": "He shall return “the deposit which was deposited with him (הַפִּקָּדוֹן אֲשֶׁר הָפְקַד אִתּוֹ)”."
+            }
+          ],
+          "kin": [
+            "commit-deposit",
+            "be-deposited"
+          ]
+        },
+        {
+          "gloss": "reserve, store",
+          "definition": "What is laid up and kept against a coming need.",
+          "evidence": [
+            {
+              "ref": "Gen.41.36",
+              "role": "defining",
+              "note": "“The food shall be לְפִקָּדוֹן for the land against the seven years of famine.”"
+            }
+          ],
+          "kin": [
+            "commit-deposit"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παραθήκη",
+          "gloss": "deposit, what is entrusted",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.5.21, בְּפִקָּדוֹן → παραθήκῃ; Lev.5.23, הַפִּקָּדוֹן → παραθήκην"
+            },
+            {
+              "ref": "2Ti.1.12",
+              "role": "defining",
+              "note": "“I know whom I have believed, and am persuaded that he is able to keep my deposit (τὴν παραθήκην μου) against that day.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּקִדֻת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "oversight, watch",
+      "bdb": [
+        "q.co.ae"
+      ],
+      "cognate_ids": [
+        "akk-piqittu"
+      ],
+      "summary": "One use, in the title בַּעַל פְּקִדֻת, the officer of the watch at the Benjamin Gate; its sense rests on that verse and on פְּקֻדָּה.",
+      "senses": [
+        {
+          "gloss": "oversight, watch",
+          "definition": "The charge of keeping a gate: בַּעַל פְּקִדֻת, the one who holds it, the captain of the watch.",
+          "evidence": [
+            {
+              "ref": "Jer.37.13",
+              "role": "defining",
+              "note": "“At the gate of Benjamin, שָׁם בַּעַל פְּקִדֻת, whose name was Irijah”, who seized Jeremiah."
+            }
+          ],
+          "kin": [
+            "oversight-charge"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּקַד",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "command, charge; appoint; commend",
+      "cognate_ids": [
+        "arc-peqad"
+      ],
+      "summary": "The Peshitta's verb of this root, about 130 times in the New Testament, nearly always for “command, charge” (ἐντέλλομαι, κελεύω, προστάσσω, παραγγέλλω, διατάσσω). It is the qal's “charge” (Ezr 1:2) and the noun פִּקּוּדִים “precepts”. At Heb 11:22 it is Joseph's charge about his bones, the charge of Gen 50:25 whose Hebrew is פָּקֹד יִפְקֹד.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "command",
+          "senses": [
+            {
+              "id": "syc-command",
+              "gloss": "command, order",
+              "definition": "To give an order that another must carry out.",
+              "evidence": [
+                {
+                  "ref": "Mat.8.18",
+                  "role": "defining",
+                  "note": "Jesus saw the crowds “פּקַד דּנִאזֻלון לעֵברָא”, commanded them to go to the other side (ἐκέλευσεν)."
+                },
+                {
+                  "ref": "Mat.1.24",
+                  "role": "defining",
+                  "note": "Joseph “did as the angel of the Lord had commanded him (דַּפקַד לֵה)”."
+                },
+                {
+                  "ref": "1Pe.3.20",
+                  "note": "“When the patience of God commanded (פֵּקדַּת) that there be an ark.”"
+                }
+              ],
+              "kin": [
+                "appoint-charge"
+              ]
+            },
+            {
+              "gloss": "commanded, appointed (passive participle)",
+              "definition": "What has been laid down by order, or set in place by another's order.",
+              "evidence": [
+                {
+                  "ref": "Rom.13.1",
+                  "role": "defining",
+                  "note": "“The authorities that exist are appointed of God (מֵן אַלָהָא הֻו פּקִידִין)”, for τεταγμέναι."
+                },
+                {
+                  "ref": "Luk.17.10",
+                  "role": "defining",
+                  "note": "“When you have done all that is commanded you (כֻּלהֵין אַילֵין דַּפקִידָן לכֻון), say, We are unprofitable servants.”"
+                }
+              ],
+              "kin": [
+                "set-over",
+                "appoint-charge"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be commanded",
+          "senses": [
+            {
+              "gloss": "be commanded",
+              "definition": "To be the one an order is given to; what one is commanded.",
+              "evidence": [
+                {
+                  "ref": "Luk.17.9",
+                  "role": "defining",
+                  "note": "“Does he thank that servant because he did what was commanded him (דֵּאתפּקֵד לֵה)?”"
+                },
+                {
+                  "ref": "Act.10.33",
+                  "note": "“To hear all that has been commanded you (דֵּאתפּקֵד לָך) from God.”"
+                },
+                {
+                  "ref": "Act.22.10"
+                },
+                {
+                  "ref": "Heb.9.19",
+                  "note": "“When every commandment had been commanded (אֵתפּקֵד … פֻּוקדָּנָא) by Moses to all the people”: verb and noun together."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "command, charge; commend",
+          "senses": [
+            {
+              "gloss": "command, charge",
+              "definition": "To lay a charge on someone.",
+              "evidence": [
+                {
+                  "ref": "Mat.28.20",
+                  "role": "defining",
+                  "note": "“Teaching them to keep all that I have commanded you (דּפַקֵדּתּכֻון).”"
+                },
+                {
+                  "ref": "Act.17.30",
+                  "role": "defining",
+                  "note": "God “now commands (מפַקֵד) all men everywhere to repent”."
+                },
+                {
+                  "ref": "Jhn.15.14",
+                  "note": "“You are my friends if you do whatever I command you.”"
+                },
+                {
+                  "ref": "Act.1.2",
+                  "note": "“After he had given commandment to the apostles.”"
+                },
+                {
+                  "ref": "1Co.7.10",
+                  "note": "“To the married I command, not I but the Lord.”"
+                },
+                {
+                  "ref": "1Ti.6.17"
+                },
+                {
+                  "ref": "Heb.11.22",
+                  "role": "defining",
+                  "note": "“By faith Joseph, when he died, remembered the exodus of the sons of Israel ופַקֵד עַל גַּרמַוהי”, and gave charge about his bones: Gen 50:24–25."
+                },
+                {
+                  "ref": "Act.7.44",
+                  "note": "The tabernacle was made “as he commanded (דּפַקֵד) who spoke with Moses”, recounting Exo 38:21, where the Hebrew has פֻּקַּד."
+                }
+              ],
+              "kin": [
+                "appoint-charge"
+              ]
+            },
+            {
+              "gloss": "commend",
+              "definition": "To commit a person to another's good opinion by letter.",
+              "evidence": [
+                {
+                  "ref": "2Co.3.1",
+                  "role": "defining",
+                  "note": "“Do we need, as some, letters of commendation (דּפֻוקָדֵא) to you, or that you write and commend us (תּפַקדֻון עלַין)?”"
+                }
+              ],
+              "kin": [
+                "commit-deposit"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be commanded",
+          "senses": [
+            {
+              "gloss": "be commanded",
+              "definition": "To be laid on someone as a command.",
+              "evidence": [
+                {
+                  "ref": "Heb.9.20",
+                  "role": "defining",
+                  "note": "“This is the blood of the covenant which was commanded (דֵּאתפַּקדַּת) for you by God.”"
+                },
+                {
+                  "ref": "Heb.12.20",
+                  "note": "“They could not endure what was commanded.”"
+                },
+                {
+                  "ref": "Act.23.31"
+                },
+                {
+                  "ref": "Col.4.10"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פּוּקְדָּנָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "commandment",
+      "cognate_ids": [
+        "arc-puqdana"
+      ],
+      "summary": "The Peshitta's word for ἐντολή, “commandment”, about ninety times; the Syriac counterpart of the Psalms' פִּקּוּדִים.",
+      "senses": [
+        {
+          "id": "syc-commandment",
+          "gloss": "commandment",
+          "definition": "A charge God or Christ has laid on men, to be kept and done.",
+          "evidence": [
+            {
+              "ref": "Mat.22.38",
+              "role": "defining",
+              "note": "“This is the great and first commandment (פֻּוקדָּנָא).”"
+            },
+            {
+              "ref": "Jhn.13.34",
+              "role": "defining",
+              "note": "“A new commandment I give you, that you love one another.”"
+            },
+            {
+              "ref": "Jhn.14.15",
+              "role": "defining",
+              "note": "“If you love me, keep my commandments (פֻּוקדָּנַי טַרו).”"
+            },
+            {
+              "ref": "Rom.7.12",
+              "note": "“The law is holy, and the commandment holy and righteous and good.”"
+            },
+            {
+              "ref": "1Jn.5.3",
+              "note": "“This is the love of God, that we keep his commandments (פֻּוקדָּנַוהי).”"
+            },
+            {
+              "ref": "Rev.22.14"
+            }
+          ],
+          "kin": [
+            "precepts"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פּוּקָדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ordinance, injunction; commendation",
+      "cognate_ids": [
+        "arc-puqdana"
+      ],
+      "summary": "Six uses, all plural (פֻּוקָדֵא): men's injunctions and the ordinances of the first covenant, and once letters of commendation.",
+      "senses": [
+        {
+          "gloss": "ordinance, injunction",
+          "definition": "A rule laid down to be kept.",
+          "evidence": [
+            {
+              "ref": "Heb.9.10",
+              "role": "defining",
+              "note": "Foods, drinks and washings, “which are ordinances of the flesh (פֻּוקָדֵא דּבֵסרָא) laid on until the time of reformation”."
+            },
+            {
+              "ref": "Heb.9.1",
+              "note": "“The first had ordinances of service (פֻּוקָדֵא דּתֵשמֵשתָּא).”"
+            },
+            {
+              "ref": "Col.2.22",
+              "note": "“According to the commandments and teachings of men.”"
+            },
+            {
+              "ref": "Eph.2.15",
+              "note": "“The law of commandments in ordinances”, both words of this root."
+            },
+            {
+              "ref": "Tit.1.14"
+            }
+          ],
+          "kin": [
+            "precepts"
+          ]
+        },
+        {
+          "gloss": "commendation",
+          "definition": "A recommending of a person to others.",
+          "evidence": [
+            {
+              "ref": "2Co.3.1",
+              "role": "defining",
+              "note": "“Letters of commendation (אֵגּרָתָא דּפֻוקָדֵא).”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-paqadu",
+      "lang": "akk",
+      "form": "paqādu",
+      "translit": "paqādu",
+      "gloss": "entrust, hand over; take care of; appoint, assign; review, check",
+      "relation": "cognate",
+      "note": "One of the commonest Akkadian verbs, in every period. Its meanings in the glossaries run as the Hebrew's do: to take care of, to appoint and assign, to entrust and hand over, to review and check.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004090, paqādu [entrust] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000004090.html",
+          "note": "Meanings: allocate, appoint, assign, be careful, bestow, care for, checking, commission, consigning, entrust, hand over, make a test, review, take care of; 2,140 instances."
+        }
+      ]
+    },
+    {
+      "id": "akk-piqittu",
+      "lang": "akk",
+      "form": "piqittu",
+      "translit": "piqittu",
+      "gloss": "charge, office, appointment; allocation; check, inspection",
+      "relation": "cognate",
+      "note": "A noun of paqādu: what is entrusted, the office of looking after it, and the inspection, as פְּקֻדָּה is charge, office and muster.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000020870, piqittu [allocation] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000020870.html",
+          "note": "Meanings: allocation, appointee, appointment, charge, check, check-up, inspection, mandate, office, official; 639 instances."
+        }
+      ]
+    },
+    {
+      "id": "akk-paqdu",
+      "lang": "akk",
+      "form": "paqdu",
+      "translit": "paqdu",
+      "gloss": "entrusted, appointed (official); deputy, overseer",
+      "relation": "cognate",
+      "note": "The verbal adjective of paqādu, used as a noun for the man entrusted with a charge, as פָּקִיד.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000029060, paqdu [entrusted] AJ",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000029060.html",
+          "note": "Meanings: appointed, appointed (official), appointees, assigned, entrusted, taking care of; 404 instances."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000141150, paqdu [deputy] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000141150.html",
+          "note": "Middle Assyrian: deputy."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000005480, paqdu [trusted one] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000005480.html",
+          "note": "Seleucid: overseer."
+        }
+      ]
+    },
+    {
+      "id": "akk-puquddu",
+      "lang": "akk",
+      "form": "puquddû",
+      "translit": "puquddû",
+      "gloss": "(formal) delivery; deposit",
+      "relation": "cognate",
+      "note": "A noun of paqādu for what is handed into another's keeping, as פִּקָּדוֹן.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000111190, puquddû [(formal) delivery] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000111190.html",
+          "note": "Meanings: (formal) delivery, deposit; 16 instances."
+        }
+      ]
+    },
+    {
+      "id": "phn-pqd",
+      "lang": "phn",
+      "form": "𐤐𐤒𐤃",
+      "translit": "pqd",
+      "gloss": "administer, oversee",
+      "relation": "cognate",
+      "note": "In a dedication from Cyprus, a man and his sons take over the oversight of a depository and of the statues, images and altars in its storerooms: the charge of looking after things put in one's keeping.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 406, P-Q-D II",
+          "note": "“[Heb. p-q-d] v. yiph'il ADMINISTER, OVERSEE. CIS i 88.4 … ‘Adonisemes took over administration of this depository and the storerooms of this depository.’” (OCR read; PDF not rendered.)"
+        }
+      ]
+    },
+    {
+      "id": "phn-mpqd",
+      "lang": "phn",
+      "form": "𐤌𐤐𐤒𐤃",
+      "translit": "mpqd",
+      "gloss": "administration; administrator; depository, storehouse",
+      "relation": "cognate",
+      "note": "Three nouns of one spelling, formed as מִפְקָד: the administration of a city (on the coins of Lepcis), the administrator, and the depository where things are kept. They answer to פְּקֻדָּה “oversight”, פָּקִיד “overseer” and פִּקָּדוֹן “deposit”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 302, MPQD I–III",
+          "note": "“MPQD I [cf. Heb. pequdda, administration (1 Ch 26:30)] n.m. ADMINISTRATION, GOVERNMENT … MPQD II … n.m. ADMINISTRATOR, SUPERVISOR … MPQD III [Heb. mipqad; piqqadon, deposit, supply] n.m. DEPOSITORY, STOREHOUSE, WAREHOUSE.” (OCR read; PDF not rendered.)"
+        }
+      ]
+    },
+    {
+      "id": "uga-pqd",
+      "lang": "uga",
+      "form": "𐎔𐎖𐎄",
+      "translit": "pqd",
+      "gloss": "give orders, command",
+      "relation": "cognate",
+      "note": "Listed in a comparison of Ugaritic with Ethiopic as “give orders”, the sense of the Peshitta's pqd and of the qal's “charge” (Ezr 1:2). The texts it occurs in were not read.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "pp. 162–163, pqd",
+          "note": "“pqd give orders” (OCR read; the page's columns are disordered in the OCR and the PDF was not rendered)."
+        }
+      ]
+    },
+    {
+      "id": "ar-faqada",
+      "lang": "ar",
+      "form": "فَقَدَ",
+      "translit": "faqada",
+      "gloss": "miss, fail to find, lose; (V tafaqqada) seek after what is absent, investigate",
+      "relation": "cognate",
+      "note": "Arabic f answers to Semitic p. The simple verb is to look for a thing and not find it, “missed”, as the qal “miss” and the niphal “be missing”; the fifth form is to seek after what is absent, or to investigate it, as the qal “look after, examine”. The two meet in the Hebrew muster that finds who is missing (1Sa 14:17).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2424, فَقَدَهُ (n34281); تفقّدهُ (n34283)",
+          "note": "“He found it not, lost it, saw it not, [missed, or failed of finding or seeing, it,] it was, or became, absent from him … ” ; 5: “He sought it, or sought for it or after it … it being absent from him … [Also He investigated it.]”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2424, فَقِيدٌ (n34288)",
+          "note": "“Not found, lost, not seen, missed … absent from one.”"
+        }
+      ]
+    },
+    {
+      "id": "sab-fqd",
+      "lang": "sem",
+      "form": "𐩰𐩤𐩵",
+      "translit": "fqd",
+      "gloss": "lose; be lost, be missing; (t-stem) be reported missing; loss (Sabaic)",
+      "relation": "cognate",
+      "note": "Sabaic, with Arabic's f: returning from a campaign “not one man was missing from their army”, the very use of the niphal in Num 31:49.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 407–408, FQD (J 651/26; J 665/48–49; J 525/2)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“(1) LOSE; pass BE LOST, MISSING [Ar faqada id.] … ‘nothing was missing from their articles of booty’ … tfqd BE REPORTED MISSING … ‘no one was reported missing from their army except one man’ … fqdh LOSS, THING LOST (?).” (OCR read.)"
+        }
+      ]
+    },
+    {
+      "id": "arc-peqad",
+      "lang": "arc",
+      "form": "פְּקַד",
+      "translit": "pəqad",
+      "gloss": "command; give in charge, deposit (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums' verb: “command” (pael), “give in charge, deposit” (aphel), and in the passive “be deposited” at Lev 5:23, where the Hebrew is הָפְקַד.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּקַד (ch.)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A4%D6%B0%D6%BC%D7%A7%D6%B7%D7%93.1",
+          "note": "“to command. Targ. O. Lev. VIII, 31 … [to give in charge,] to store up … Pa. to command, commission … Af. … to give in charge, deposit … Ithpa. … to be commanded … to be given in charge, be deposited. Targ. Lev. V, 23.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-puqdana",
+      "lang": "arc",
+      "form": "פּוּקְדָנָא",
+      "translit": "puqdānā",
+      "gloss": "commandment; safe-keeping, trust (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "One Aramaic noun for both the commandment (Targum of Proverbs, for מִצְוֹתַי) and the thing held in trust (Onkelos at Lev 5:21, 23, for פִּקָּדוֹן): the two sides of a charge laid on a man.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פּוּקְדָנָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A4%D6%BC%D7%95%D6%BC%D7%A7%D6%B0%D7%93%D6%B8%D7%A0%D6%B8%D7%90.1",
+          "note": "“(פְּקַד) commandment. Targ. Prov. II, 1. Ib. VI, 23; a. fr. … safe-keeping, trust. Targ. O. Lev. V, 21; 23.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "god-visits-his-people",
+      "statement": "Joseph, dying in Egypt, said, “God will surely visit you (פָּקֹד יִפְקֹד) and bring you up out of this land to the land which he swore to Abraham, to Isaac and to Jacob”, and made Israel swear to carry up his bones (Gen 50:24–25). At the bush Yahweh said, “I have surely visited you” (Exo 3:16), the people believed when they heard he had visited them (Exo 4:31), and Moses took Joseph's bones (Exo 13:19); Hebrews counts Joseph's charge about his bones as faith (Heb 11:22). Yahweh's visit is his coming to do what he had promised: a son to Sarah “as he had said” (Gen 21:1), to Hannah (1Sa 2:21), bread to his people (Rut 1:6), the return from Babylon after seventy years (Jer 29:10). Zacharias, filled with the holy spirit, blessed God because “he has visited and wrought redemption for his people, and raised up a horn of salvation for us in the house of David”, to perform the oath he swore to Abraham (Luk 1:68–73); when Jesus raised the widow's son the people said, “a great prophet has arisen among us, and God has visited his people” (Luk 7:16). From the verses: God visited his people in the man Jesus, the son of David he raised up; the visit was God's own, done through his son, and it was the keeping of the promise to Abraham, which Joseph's bones had waited for.",
+      "evidence": [
+        {
+          "ref": "Gen.50.24",
+          "to": "Gen.50.25"
+        },
+        {
+          "ref": "Exo.3.16"
+        },
+        {
+          "ref": "Exo.4.31"
+        },
+        {
+          "ref": "Exo.13.19"
+        },
+        {
+          "ref": "Heb.11.22"
+        },
+        {
+          "ref": "Gen.21.1"
+        },
+        {
+          "ref": "1Sa.2.21"
+        },
+        {
+          "ref": "Rut.1.6"
+        },
+        {
+          "ref": "Jer.29.10"
+        },
+        {
+          "ref": "Luk.1.68",
+          "to": "Luk.1.73"
+        },
+        {
+          "ref": "Luk.7.16"
+        }
+      ]
+    },
+    {
+      "topic": "time-of-visitation",
+      "statement": "The prophets speak of “the day of visitation” and “the time of their visitation”, when Yahweh comes to repay a people for their deeds: “what will you do in the day of visitation, and in the desolation which comes from afar?” (Isa 10:3); “the days of visitation have come, the days of recompense have come” (Hos 9:7; Jer 8:12; 10:15). The shepherds who did not attend to the flock are themselves attended to for their evil (Jer 23:2). Jesus wept over Jerusalem: its enemies would cast up a bank about it and leave not one stone on another, “because you did not know the time of your visitation” (Luk 19:43–44). He told the disciples that when they saw Jerusalem surrounded by armies its desolation was near, for “these are days of vengeance (ἡμέραι ἐκδικήσεως), that all things written may be fulfilled”, and Jerusalem would be trodden down by the Gentiles (Luk 21:20–24); ἐκδίκησις is the word the Greek of Hosea uses for Hosea's “days of visitation”. From the verses: God visited Jerusalem in mercy when Jesus came, and the city did not know it; the visitation for its sins followed in that generation, when the Roman armies surrounded and destroyed it in AD 70, as the prophets' “day of visitation” had foretold.",
+      "evidence": [
+        {
+          "ref": "Isa.10.3"
+        },
+        {
+          "ref": "Hos.9.7"
+        },
+        {
+          "ref": "Jer.8.12"
+        },
+        {
+          "ref": "Jer.10.15"
+        },
+        {
+          "ref": "Jer.23.2"
+        },
+        {
+          "ref": "Luk.19.43",
+          "to": "Luk.19.44"
+        },
+        {
+          "ref": "Luk.21.20",
+          "to": "Luk.21.24"
+        }
+      ]
+    },
+    {
+      "topic": "son-of-man",
+      "statement": "David asks, “What is man (אֱנוֹשׁ) that you remember him, and the son of man (בֶן־ אָדָם) that you visit him?”, and answers that God made him a little lower than אֱלֹהִים and made him rule over the works of his hands (Psa 8:5–7). Hebrews quotes the psalm, reading “a little lower than the angels”, and says that we do not yet see all things put under man, “but we see Jesus, who was made a little lower than the angels for the suffering of death, crowned with glory and honour, that by the grace of God he should taste death for every man” (Heb 2:6–9). From the verses: the son of man whom God visited is a man, mortal like those he came for, made lower than the angels so that he could die; the dominion the psalm gives to man is his first, by resurrection, and the rest of the world to come is still to be put under him.",
+      "evidence": [
+        {
+          "ref": "Psa.8.5",
+          "to": "Psa.8.7"
+        },
+        {
+          "ref": "Heb.2.6",
+          "to": "Heb.2.9"
+        }
+      ]
+    },
+    {
+      "topic": "life-committed-to-god",
+      "statement": "The hiphil of פָּקַד is to put a thing into another's keeping, and the פִּקָּדוֹן is what a man holds for another and must give back (Lev 5:21–23; Jer 36:20). David prays, “into your hand I commit (אַפְקִיד) my spirit; you have redeemed me, Yahweh, God of truth” (Psa 31:6). Jesus said it on the cross, “Father, into your hands I commit my spirit”, and having said this he breathed out (Luk 23:46); he was dead and buried, and God raised him the third day. Peter tells those who suffer to “commit their souls to a faithful Creator” (1Pe 4:19), and Paul says, “I know whom I have believed, and am persuaded that he is able to keep my deposit (παραθήκην) against that day”, the day when the Lord, the righteous judge, will give the crown to him and to all who love his appearing (2Ti 1:12; 4:8). From the verses: the dying do not go on living in another place; they hand their life to God as a deposit in his keeping, and it is given back on “that day”, at the resurrection when Christ appears.",
+      "evidence": [
+        {
+          "ref": "Lev.5.21",
+          "to": "Lev.5.23"
+        },
+        {
+          "ref": "Psa.31.6"
+        },
+        {
+          "ref": "Luk.23.46"
+        },
+        {
+          "ref": "1Pe.4.19"
+        },
+        {
+          "ref": "2Ti.1.12"
+        },
+        {
+          "ref": "2Ti.4.8"
+        }
+      ]
+    },
+    {
+      "topic": "numbering-the-people",
+      "statement": "Israel was counted at Yahweh's command, by its hosts, “all who go out to war” (Num 1:2–3), and whenever the head of the sons of Israel was lifted up “each shall give a ransom (כֹּפֶר) for his soul to Yahweh when you count them, that there be no plague among them” (Exo 30:12). David counted the people “that I may know the number of the people” (2Sa 24:2); afterwards his heart struck him and he said, “I have sinned greatly”, and the plague came on Israel, seventy thousand men (2Sa 24:10, 15). Of the first count none but Caleb and Joshua entered the land; the counted ones fell in the wilderness (Num 14:29–30; 26:64–65). From the verses: the people counted are Yahweh's host, numbered by his word and covered by the ransom; to number them as a king's own strength is sin, and being counted among them is no promise of the land without faith.",
+      "evidence": [
+        {
+          "ref": "Num.1.2",
+          "to": "Num.1.3"
+        },
+        {
+          "ref": "Exo.30.12"
+        },
+        {
+          "ref": "2Sa.24.2"
+        },
+        {
+          "ref": "2Sa.24.10"
+        },
+        {
+          "ref": "2Sa.24.15"
+        },
+        {
+          "ref": "Num.14.29",
+          "to": "Num.14.30"
+        },
+        {
+          "ref": "Num.26.64",
+          "to": "Num.26.65"
+        }
+      ]
+    },
+    {
+      "topic": "visiting-iniquity",
+      "statement": "Yahweh proclaims himself “visiting the iniquity of the fathers on the sons, on the third and on the fourth generation of those who hate me (לְשֹׂנְאָי)” (Exo 20:5), beside “forgiving iniquity and transgression and sin” (Exo 34:7). The sons on whom it is visited are those who go on hating him; Ezekiel says, “the soul that sins, it shall die; the son shall not bear the iniquity of the father” (Ezk 18:20). The same verb is Yahweh's attending to his people in mercy (Gen 50:24) and to sinners in judgment (Jer 23:2): his visit finds each as he is. From the verses: no one is punished for a father's sin he has left; the fathers' iniquity comes on the sons who keep it.",
+      "evidence": [
+        {
+          "ref": "Exo.20.5"
+        },
+        {
+          "ref": "Exo.34.7"
+        },
+        {
+          "ref": "Ezk.18.20"
+        },
+        {
+          "ref": "Gen.50.24"
+        },
+        {
+          "ref": "Jer.23.2"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key פקד, BDB's key and the verb's own root; no other entry has it. Words and keys: the verb q.co.aa (303 tokens); פְּקֻדָּה q.co.ab; פִּקּוּד q.co.af; פָּקִיד q.co.ad; מִפְקָד q.co.ah; פִּקָּדוֹן q.co.ag; פְּקִדֻת q.co.ae. BDB's noun פְּקוּדִים “musterings, expenses” (q.co.ac) has in the database exactly the verb's 303 tokens (it was filed by spelling), so it is not given as a word: its one real use, פְקוּדֵי הַמִּשְׁכָּן in Exo 38:21, is the qal passive participle and is cited under the qal's count-muster sense; naming q.co.ac would count the verb twice. Left out: פְּקוֹד (q.co.ai, Jer 50:21; Ezk 23:23), a people of the Babylonian army, a proper name with no name entry (not a person); m.da.bk is a zero-token cross-reference. No personal name is formed from the root. Stems: the four hothpaal forms (Num 1:47; 2:33; 26:62; 1Ki 20:27) are under the hithpael, the schema having no hothpaal. Isa 38:10 (pual) “deprived of the rest of my years” and Jer 6:6 (hophal) are uncertain forms. Ezk 38:8 niphal may be “mustered” rather than “visited”. Syriac: lemmas normalized as other entries do; the Peshitta's forms quoted in notes are the database's. The Peshitta does not use פקד for ἐπισκέπτομαι (it has סער), so “visit” has no Syriac witness of this root. Cognates not cited, leads only: Ge'ez faqada (Fisher p. 163 OCR, garbled, seems to list Geʿez “will, permit … look after, visit, care for; search for … need”, Tigre “remember”, Tigrinya “number, count”; Dillmann and Leslau not read); Ugaritic pqd in DULAT (only Fisher's gloss is cited, texts not read); CAD P for paqādu; Payne Smith and Brockelmann for Syriac pqd; Nabataean and Imperial Aramaic pqd “command” and Elephantine pqdn “deposit” (CAL not consulted). Krahmalkov and Biella are read from OCR; the page for Krahmalkov's P-Q-D II follows the printed page number at the foot of the OCR page (405 ends the page before it). Doctrine statements on AD 70 (time-of-visitation) and on the deposit (life-committed-to-god) are reasoned conclusions for review."
+}
