@@ -271,7 +271,7 @@
         },
         {
           "stem": "hithpael",
-          "gloss": "make oneself unclean; (hothpaal) be made unclean",
+          "gloss": "make oneself unclean",
           "senses": [
             {
               "gloss": "make oneself unclean",
@@ -312,10 +312,16 @@
                   "ref": "Hos.9.4"
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "stem": "hothpaal",
+          "gloss": "be made unclean",
+          "senses": [
             {
-              "gloss": "be made unclean (hothpaal)",
-              "definition": "The passive of this stem (hothpaal), once: of a divorced wife who has married another, made unclean to her first husband, who may not take her back.",
+              "gloss": "be made unclean",
+              "definition": "The passive of the hithpael, once: of a divorced wife who has married another, made unclean to her first husband, who may not take her back.",
               "evidence": [
                 {
                   "ref": "Deu.24.4",
@@ -1248,5 +1254,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-18. Root key טמא (BDB i.ay.aa as the root heading). Keys: i.ay.aa verb, i.ay.ab adjective, i.ay.ac טֻמְאָה. i.ay.ad (טָמְאָה, Mic 2:10 only) is given no bdb key: the database counts every verb token under it by spelling (205), so naming it would credit the noun with the verb's uses; the word cites Mic 2:10 alone. i.ay.aa and i.ay.ab also share 43 tokens by spelling (טָמֵא as qal perfect 3ms or adjective, e.g. Lev 13:11, 13:45; Num 19:20), so their use counts overlap. Deu 24:4 הֻטַּמָּאָה is a hothpaal, the passive of the hithpael; the lexicon’s stem list (crates/haqor-core/src/haqor_lexicon.rs STEMS, and the app’s label map in haqor_lexicon_view.dart) has no hothpaal, so it is entered as a sense of the hithpael. Move it to its own stem if one is added. No proper names from the root. No Biblical Aramaic word. Cognates: only Aramaic and Syriac are recorded. Arabic: no طمأ in Lane's vendored text; Lane's طمى / طمو (p. 1882, under طيو in the jsonl), “water rose high, filled the channel”, ends in y/w, not hamza, and has nothing of uncleanness, so it is not recorded; a reported Arabic ṭamiʾa “silted up” (a lead from another lexicon) was not found in Lane and is unverified. No Akkadian candidate in Oracc shares the meaning (ṭēmu “report, mind” and ṭamû “spin” are unrelated). Not consulted: Payne Smith and Brockelmann for the Syriac; CAL for Aramaic beyond Jastrow; Ge'ez (Dillmann, Leslau); Ugaritic (DULAT). The Peshitta often uses ܛܢܦ and ܣܝܒ (other roots) for “unclean, defile” (e.g. Mrk 7:15; Mat 23:27, where its word is not this root), so the Syriac words cite only verses where SEDRA tags lexemes 1249–1251 (root 738 YMA: 1249 YMA “unclean, be considered”, 1250 YMAA “unclean; impure”, 1251 YMAOTA “uncleanness; impurity; pollution”). Rom 1:24 טַמָאתָֿא is SEDRA's 1250 (unclean) modifying “desires”. Greek: Isa 52:11's טָמֵא is unaligned in MACULA though the Septuagint's ἀκαθάρτου stands there and Paul quotes it (2Co 6:17). Open questions for review: (1) the nature-of-man doctrine's wording on Jesus' birth into the unclean nature; (2) the Mic 2:10 noun may better be read as the qal infinitive and moved to the verb."
+  "note": "Drafted 2026-11-18. Root key טמא (BDB i.ay.aa as the root heading). Keys: i.ay.aa verb, i.ay.ab adjective, i.ay.ac טֻמְאָה. i.ay.ad (טָמְאָה, Mic 2:10 only) is given no bdb key: the database counts every verb token under it by spelling (205), so naming it would credit the noun with the verb's uses; the word cites Mic 2:10 alone. i.ay.aa and i.ay.ab also share 43 tokens by spelling (טָמֵא as qal perfect 3ms or adjective, e.g. Lev 13:11, 13:45; Num 19:20), so their use counts overlap. Deu 24:4 הֻטַּמָּאָה is a hothpaal, the passive of the hithpael; entered as its own stem. No proper names from the root. No Biblical Aramaic word. Cognates: only Aramaic and Syriac are recorded. Arabic: no طمأ in Lane's vendored text; Lane's طمى / طمو (p. 1882, under طيو in the jsonl), “water rose high, filled the channel”, ends in y/w, not hamza, and has nothing of uncleanness, so it is not recorded; a reported Arabic ṭamiʾa “silted up” (a lead from another lexicon) was not found in Lane and is unverified. No Akkadian candidate in Oracc shares the meaning (ṭēmu “report, mind” and ṭamû “spin” are unrelated). Not consulted: Payne Smith and Brockelmann for the Syriac; CAL for Aramaic beyond Jastrow; Ge'ez (Dillmann, Leslau); Ugaritic (DULAT). The Peshitta often uses ܛܢܦ and ܣܝܒ (other roots) for “unclean, defile” (e.g. Mrk 7:15; Mat 23:27, where its word is not this root), so the Syriac words cite only verses where SEDRA tags lexemes 1249–1251 (root 738 YMA: 1249 YMA “unclean, be considered”, 1250 YMAA “unclean; impure”, 1251 YMAOTA “uncleanness; impurity; pollution”). Rom 1:24 טַמָאתָֿא is SEDRA's 1250 (unclean) modifying “desires”. Greek: Isa 52:11's טָמֵא is unaligned in MACULA though the Septuagint's ἀκαθάρτου stands there and Paul quotes it (2Co 6:17). Open questions for review: (1) the nature-of-man doctrine's wording on Jesus' birth into the unclean nature; (2) the Mic 2:10 noun may better be read as the qal infinitive and moved to the verb."
 }

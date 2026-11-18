@@ -87,6 +87,7 @@ pub const STEMS: &[&str] = &[
     "hishtaphel",
     "tiphil",
     "nithpael",
+    "hothpaal",
 ];
 
 /// The languages a cognate may be in (see the README).
