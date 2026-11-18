@@ -1,0 +1,2772 @@
+{
+  "id": "avar",
+  "root": "עבר",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "crossing",
+    "travel",
+    "land",
+    "transgression",
+    "covenant",
+    "forgiveness",
+    "wrath",
+    "judgment",
+    "time"
+  ],
+  "gloss": "pass over, cross; pass by, pass away; transgress; the side beyond",
+  "summary": "The verb is to pass over or across: to cross a river, a border or the sea from one side to the other, and so to pass through a land, to pass by someone, to go on ahead, and of waters to sweep over. Time and things pass and are gone; a man who passes over a command or covenant transgresses it, and God who passes over transgression, or causes sin to pass from a man, forgives it. The hiphil makes something pass: Israel through the sea and the Jordan, a proclamation through the land, sons through the fire to Molech, iniquity away. The noun עֵבֶר is the side across, the region beyond (the Jordan, the River), and עֶבְרָה is wrath as an overflowing; the people of Abraham are the עִבְרִים, the Hebrews. Arabic ʿabara “cross a river”, Akkadian ebēru “cross over”, Sabaean ʿbr “cross” and the Aramaic of Ezra and the Peshitta give the same sense.",
+  "words": [
+    {
+      "lemma": "עָבַר",
+      "pos": "verb",
+      "gloss": "pass over, cross; pass through, by; pass away; overflow; transgress; (hiphil) make pass, bring across, take away",
+      "bdb": [
+        "p.ah.aa"
+      ],
+      "cognate_ids": [
+        "ar-abara",
+        "akk-eberu",
+        "sab-abr-v",
+        "arc-avar"
+      ],
+      "summary": "About 560 times, nearly all qal and hiphil. Its core is movement across or past something: a river, a border, a land, a person. The object and the preposition show which (אֶת “cross”, בְּ “pass through”, עַל “pass over”, לִפְנֵי “pass on before”). The same movement, made against a word or covenant, is transgression. BDB also files these tokens under a second key (p.ah.ah, the hithpael “be furious”), so only p.ah.aa is named here; the brief's five unstemmed tokens are עִבְרִי “Hebrew” filed here by spelling.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cross; pass through; pass by; go on before; sweep over; pass away; transgress; pass over (a fault)",
+          "senses": [
+            {
+              "id": "cross-over",
+              "gloss": "cross, pass over (a river, border, the sea)",
+              "definition": "To go across from one side of a river, border or sea to the other: Jacob over the Jordan with his staff, Israel over the Jordan into the land and through the sea on dry ground.",
+              "evidence": [
+                {
+                  "ref": "Gen.32.11",
+                  "role": "defining",
+                  "note": "Jacob: “with my staff עָבַרְתִּי this Jordan, and now I have become two camps”."
+                },
+                {
+                  "ref": "Gen.31.21",
+                  "note": "Jacob fled “and crossed (וַיַּעֲבֹר) the River, and set his face toward the hill country of Gilead”."
+                },
+                {
+                  "ref": "Jos.3.17",
+                  "role": "defining",
+                  "note": "“All Israel were crossing over (עֹבְרִים) on dry ground, until all the nation had finished crossing (לַעֲבֹר) the Jordan.”"
+                },
+                {
+                  "ref": "Jos.4.23",
+                  "note": "Yahweh dried the Jordan “until you had crossed, as Yahweh your God did to the Sea of Reeds … until we had crossed”."
+                },
+                {
+                  "ref": "Jos.1.2",
+                  "note": "“Now arise, cross (עֲבֹר) this Jordan, you and all this people, to the land which I am giving them.”"
+                },
+                {
+                  "ref": "Deu.9.1",
+                  "note": "“Hear, Israel, you are crossing the Jordan today to go in to dispossess nations greater than you.”"
+                },
+                {
+                  "ref": "Deu.3.25",
+                  "note": "Moses: “let me cross (אֶעְבְּרָה) and see the good land which is beyond (בְּעֵבֶר) the Jordan”: the verb and its noun together."
+                },
+                {
+                  "ref": "Deu.4.22",
+                  "role": "defining",
+                  "note": "“I am dying in this land; I am not crossing the Jordan, but you are crossing and shall possess this good land.”"
+                },
+                {
+                  "ref": "Num.33.8",
+                  "note": "“They passed through the midst of the sea into the wilderness.”"
+                },
+                {
+                  "ref": "Psa.66.6",
+                  "note": "“He turned the sea into dry land; through the river they passed (יַעַבְרוּ) on foot.”"
+                },
+                {
+                  "ref": "Isa.51.10",
+                  "note": "“Who made the depths of the sea a way for the redeemed to pass over (לַעֲבֹר).”"
+                },
+                {
+                  "ref": "Isa.43.2",
+                  "note": "“When you pass through the waters, I will be with you.”"
+                },
+                {
+                  "ref": "Jdg.12.5",
+                  "note": "The fugitives of Ephraim said “let me cross over” at the fords of the Jordan."
+                }
+              ]
+            },
+            {
+              "id": "pass-through",
+              "gloss": "pass through (a land, a camp); pass between",
+              "definition": "To go through a land or place from end to end, on a journey or as a judgment going through it; and to pass between the halves of the covenant sacrifice.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.6",
+                  "role": "defining",
+                  "note": "“Abram passed through the land as far as the place of Shechem.”"
+                },
+                {
+                  "ref": "Num.20.17",
+                  "role": "defining",
+                  "note": "To Edom: “let us pass through your land; we will not pass through field or vineyard … until we have passed your border”."
+                },
+                {
+                  "ref": "Num.20.21",
+                  "note": "“Edom refused to let Israel pass through his border.”"
+                },
+                {
+                  "ref": "Deu.2.27",
+                  "note": "“Let me pass through your land; I will go only by the road.”"
+                },
+                {
+                  "ref": "Exo.12.12",
+                  "role": "defining",
+                  "note": "“I will pass through (וְעָבַרְתִּי) the land of Egypt this night and strike every firstborn.”"
+                },
+                {
+                  "ref": "Exo.32.27",
+                  "note": "“Pass through and return (עִבְרוּ וָשׁוּבוּ) from gate to gate in the camp.”"
+                },
+                {
+                  "ref": "Ezk.14.17",
+                  "note": "“Let a sword pass through the land.”"
+                },
+                {
+                  "ref": "Gen.15.17",
+                  "role": "defining",
+                  "note": "A smoking furnace and a torch of fire “which passed (עָבַר) between these pieces”, the day Yahweh made a covenant with Abram (Gen 15:18)."
+                },
+                {
+                  "ref": "Jer.34.18",
+                  "note": "The men who transgressed the covenant, “the calf which they cut in two and passed between its parts”."
+                }
+              ]
+            },
+            {
+              "id": "pass-by",
+              "gloss": "pass by, go past",
+              "definition": "To go past someone or something without stopping; the participle is the passer-by. Yahweh's passing by Moses and Elijah is a showing of himself.",
+              "evidence": [
+                {
+                  "ref": "Gen.18.3",
+                  "role": "defining",
+                  "note": "Abraham: “if I have found favour in your eyes, do not pass by (אַל נָא תַעֲבֹר) your servant”."
+                },
+                {
+                  "ref": "2Ki.4.8",
+                  "note": "“As often as he passed by (מִדֵּי עָבְרוֹ) he turned in there to eat bread.”"
+                },
+                {
+                  "ref": "Rut.4.1",
+                  "note": "“Behold, the redeemer was passing by (עֹבֵר), of whom Boaz had spoken.”"
+                },
+                {
+                  "ref": "Lam.1.12",
+                  "role": "defining",
+                  "note": "“Is it nothing to you, all you who pass by the way (עֹבְרֵי דֶרֶךְ)?”"
+                },
+                {
+                  "ref": "Gen.37.28",
+                  "note": "“Midianite men, traders, passed by, and they drew Joseph up out of the pit.”"
+                },
+                {
+                  "ref": "Exo.33.22",
+                  "role": "defining",
+                  "note": "“While my glory passes by (בַּעֲבֹר כְּבֹדִי) I will put you in a cleft of the rock and cover you with my hand until I have passed by (עַד עָבְרִי).”"
+                },
+                {
+                  "ref": "Exo.34.6",
+                  "note": "“Yahweh passed by before his face and proclaimed, Yahweh, Yahweh, a God compassionate and gracious.”"
+                },
+                {
+                  "ref": "1Ki.19.11",
+                  "note": "“Behold, Yahweh was passing by (עֹבֵר), and a great and strong wind.”"
+                },
+                {
+                  "ref": "Job.9.11",
+                  "note": "“He passes by me and I do not see him; he moves on (וְיַחֲלֹף) and I do not perceive him.”"
+                }
+              ]
+            },
+            {
+              "id": "go-before",
+              "gloss": "pass on before, go ahead (עָבַר לִפְנֵי)",
+              "definition": "With לִפְנֵי: to go on ahead of others, leading them or going first to meet what lies ahead.",
+              "evidence": [
+                {
+                  "ref": "Gen.33.3",
+                  "role": "defining",
+                  "note": "“He himself passed on before them (עָבַר לִפְנֵיהֶם) and bowed to the ground seven times, until he came near to his brother.”"
+                },
+                {
+                  "ref": "Gen.32.17",
+                  "note": "Jacob to his servants: “pass on before me (עִבְרוּ לְפָנַי) and put a space between drove and drove”."
+                },
+                {
+                  "ref": "Exo.17.5",
+                  "note": "“Pass on before the people, and take with you some of the elders of Israel.”"
+                },
+                {
+                  "ref": "Deu.31.3",
+                  "role": "defining",
+                  "note": "“Yahweh your God, he is passing over before you (עֹבֵר לְפָנֶיךָ) … Joshua, he is passing over before you.”"
+                },
+                {
+                  "ref": "Jos.3.11",
+                  "note": "“The ark of the covenant of the Lord of all the earth is passing over before you into the Jordan.”"
+                },
+                {
+                  "ref": "Mic.2.13",
+                  "note": "“Their king passes on before them, and Yahweh at their head.”"
+                }
+              ]
+            },
+            {
+              "id": "overflow-sweep",
+              "gloss": "sweep over, overflow (of waters, and of what overwhelms)",
+              "definition": "Of a flood or waves: to pass over a man or a land and cover it; used of the Assyrian like a river, of a king of the north, of iniquities and of God's fierce anger going over the sufferer's head.",
+              "evidence": [
+                {
+                  "ref": "Isa.8.8",
+                  "role": "defining",
+                  "note": "The River, the king of Assyria, “will sweep into Judah, it will overflow and pass over (שָׁטַף וְעָבַר), it will reach to the neck”."
+                },
+                {
+                  "ref": "Psa.124.4",
+                  "role": "defining",
+                  "note": "“Then the waters had swept us away, the torrent had passed over (עָבַר עַל) our soul.”"
+                },
+                {
+                  "ref": "Psa.42.8",
+                  "role": "defining",
+                  "note": "“All your breakers and your waves have passed over me (עָלַי עָבָרוּ).”"
+                },
+                {
+                  "ref": "Jon.2.4",
+                  "note": "Jonah in the deep: the same words, “all your breakers and your waves have passed over me”."
+                },
+                {
+                  "ref": "Dan.11.40",
+                  "note": "The king of the north “will enter into lands and overflow and pass through (וְשָׁטַף וְעָבָר)”."
+                },
+                {
+                  "ref": "Nam.1.8",
+                  "note": "“With an overflowing flood passing through (וּבְשֶׁטֶף עֹבֵר) he will make an end of its place.”"
+                },
+                {
+                  "ref": "Isa.28.15",
+                  "note": "“The overflowing scourge, when it passes through, will not come to us.”"
+                },
+                {
+                  "ref": "Psa.88.17",
+                  "note": "“Your fierce angers (חֲרוֹנֶיךָ) have passed over me.”"
+                },
+                {
+                  "ref": "Psa.38.5",
+                  "note": "“My iniquities have passed over my head (עָבְרוּ רֹאשִׁי); like a heavy burden they are too heavy for me.”"
+                }
+              ],
+              "kin": [
+                "overflowing-pride",
+                "wrath-of-god"
+              ]
+            },
+            {
+              "id": "pass-away",
+              "gloss": "pass, be over, pass away",
+              "definition": "Of time, a season or a trouble: to go by and be over; of man and his life, to pass and be gone.",
+              "evidence": [
+                {
+                  "ref": "Gen.50.4",
+                  "role": "defining",
+                  "note": "“When the days of weeping for him had passed (וַיַּעַבְרוּ).”"
+                },
+                {
+                  "ref": "Sng.2.11",
+                  "role": "defining",
+                  "note": "“For behold, the winter is past (עָבָר), the rain is over and gone (חָלַף הָלַךְ לוֹ).”"
+                },
+                {
+                  "ref": "Jer.8.20",
+                  "note": "“The harvest is past, the summer is ended, and we are not saved.”"
+                },
+                {
+                  "ref": "Amo.8.5",
+                  "note": "“When will the new moon pass, that we may sell grain?”"
+                },
+                {
+                  "ref": "Isa.26.20",
+                  "note": "“Hide for a little moment until the indignation passes (עַד יַעֲבָר זָעַם).”"
+                },
+                {
+                  "ref": "Psa.57.2",
+                  "note": "“In the shadow of your wings I take refuge until destructions pass by.”"
+                },
+                {
+                  "ref": "Psa.144.4",
+                  "role": "defining",
+                  "note": "“Man is like a vapour; his days are like a passing shadow (כְּצֵל עוֹבֵר).”"
+                },
+                {
+                  "ref": "Psa.103.16",
+                  "role": "defining",
+                  "note": "Of man like grass: “the wind passes over it (רוּחַ עָבְרָה בּוֹ) and it is gone”."
+                },
+                {
+                  "ref": "Psa.37.36",
+                  "note": "Of the wicked: “he passed away, and behold, he was no more”."
+                },
+                {
+                  "ref": "Job.34.20",
+                  "note": "“In a moment they die … the people are shaken and pass away.”"
+                }
+              ]
+            },
+            {
+              "id": "transgress",
+              "gloss": "transgress, overstep (a covenant, a command, a bound)",
+              "definition": "To pass over a word, command or covenant instead of keeping within it: to transgress. Of the sea and of a man's days, not to pass the bound God has set.",
+              "evidence": [
+                {
+                  "ref": "Jos.7.11",
+                  "role": "defining",
+                  "note": "“Israel has sinned; they have also transgressed (עָבְרוּ) my covenant which I commanded them.”"
+                },
+                {
+                  "ref": "Jos.7.15",
+                  "note": "“Because he has transgressed the covenant of Yahweh and done folly in Israel.”"
+                },
+                {
+                  "ref": "Hos.6.7",
+                  "role": "defining",
+                  "note": "“But they, like Adam (כְּאָדָם), have transgressed the covenant; there they dealt treacherously against me.”"
+                },
+                {
+                  "ref": "Hos.8.1",
+                  "note": "“Because they have transgressed my covenant and rebelled against my law.”"
+                },
+                {
+                  "ref": "Deu.17.2",
+                  "note": "A man or woman who does evil in Yahweh's eyes, “to transgress his covenant”."
+                },
+                {
+                  "ref": "Num.14.41",
+                  "role": "defining",
+                  "note": "“Why are you transgressing the mouth of Yahweh (עֹבְרִים אֶת פִּי יַהְוֶה)? It will not succeed.”"
+                },
+                {
+                  "ref": "1Sa.15.24",
+                  "note": "Saul: “I have sinned, for I have transgressed the mouth of Yahweh and your words.”"
+                },
+                {
+                  "ref": "Isa.24.5",
+                  "note": "The earth is defiled under its inhabitants, “for they have transgressed laws, changed the statute, broken the everlasting covenant”."
+                },
+                {
+                  "ref": "Dan.9.11",
+                  "note": "“All Israel has transgressed your law and turned aside, not listening to your voice.”"
+                },
+                {
+                  "ref": "Est.3.3",
+                  "note": "“Why are you transgressing (עוֹבֵר) the king's command?”"
+                },
+                {
+                  "ref": "Jer.5.22",
+                  "role": "defining",
+                  "note": "Yahweh set the sand as a bound for the sea, “an everlasting decree, and it cannot pass over it”."
+                },
+                {
+                  "ref": "Psa.104.9",
+                  "note": "“A bound you set, which they may not pass over.”"
+                },
+                {
+                  "ref": "Job.14.5",
+                  "note": "Of man: “you have appointed his limits, and he cannot pass (וְלֹא יַעֲבוֹר)”."
+                },
+                {
+                  "ref": "Psa.148.6",
+                  "note": "“He established them for ever and ever; a statute he gave, and it will not pass.”"
+                },
+                {
+                  "ref": "Est.1.19",
+                  "note": "A law of the Persians and Medes “that it may not pass (וְלֹא יַעֲבוֹר)”."
+                }
+              ]
+            },
+            {
+              "id": "pass-over-fault",
+              "gloss": "pass over (a transgression), let go unpunished",
+              "definition": "With עַל פֶּשַׁע, or לְ of a person: to pass over a fault and not exact it; with a negative, not to pass by a people again but to punish.",
+              "evidence": [
+                {
+                  "ref": "Mic.7.18",
+                  "role": "defining",
+                  "note": "“Who is a God like you, lifting iniquity and passing over transgression (וְעֹבֵר עַל פֶּשַׁע) for the remnant of his inheritance?”"
+                },
+                {
+                  "ref": "Pro.19.11",
+                  "role": "defining",
+                  "note": "“It is his glory to pass over a transgression (עֲבֹר עַל פָּשַׁע).”"
+                },
+                {
+                  "ref": "Amo.7.8",
+                  "role": "defining",
+                  "note": "“I will not again pass by him any more (לֹא אוֹסִיף עוֹד עֲבוֹר לוֹ)”: the plumb line set in Israel."
+                },
+                {
+                  "ref": "Amo.8.2",
+                  "note": "“The end has come upon my people Israel; I will not again pass by him any more.”"
+                }
+              ]
+            },
+            {
+              "id": "pass-under-count",
+              "gloss": "pass over to, pass under (be counted); be current; come upon",
+              "definition": "To pass over to the numbered, or under the counter's rod or hand; of silver, to pass in trade; of a spirit or a matter, to come over a man.",
+              "evidence": [
+                {
+                  "ref": "Exo.30.13",
+                  "role": "defining",
+                  "note": "“This they shall give, everyone who passes over to the numbered (כָּל הָעֹבֵר עַל הַפְּקֻדִים): half a shekel.”"
+                },
+                {
+                  "ref": "Lev.27.32",
+                  "role": "defining",
+                  "note": "“All the tithe of herd and flock, all that passes under the rod, the tenth shall be holy to Yahweh.”"
+                },
+                {
+                  "ref": "Jer.33.13",
+                  "note": "“Again the flocks will pass under the hands of him who counts them.”"
+                },
+                {
+                  "ref": "Gen.23.16",
+                  "note": "“Four hundred shekels of silver, current with the merchant (עֹבֵר לַסֹּחֵר).”"
+                },
+                {
+                  "ref": "Num.5.14",
+                  "note": "“And a spirit of jealousy comes over him (וְעָבַר עָלָיו).”"
+                },
+                {
+                  "ref": "1Ch.29.30",
+                  "note": "“The times that passed over him and over Israel.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be crossed",
+          "senses": [
+            {
+              "gloss": "be crossed, be passable",
+              "definition": "Of a river: to be able to be crossed. One use.",
+              "evidence": [
+                {
+                  "ref": "Ezk.47.5",
+                  "role": "defining",
+                  "note": "“A river that I could not pass over (לַעֲבֹר) … a river that could not be passed over (לֹא יֵעָבֵר).”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "draw across; (of a bull) breed",
+          "senses": [
+            {
+              "gloss": "draw across",
+              "definition": "To make something run across: chains of gold drawn across before the inner sanctuary.",
+              "evidence": [
+                {
+                  "ref": "1Ki.6.21",
+                  "role": "defining",
+                  "note": "“He drew across (וַיְעַבֵּר) chains of gold before the inner sanctuary.”"
+                }
+              ]
+            },
+            {
+              "gloss": "breed, impregnate",
+              "definition": "Of a bull, to breed the cow. One use; its link to “pass over” is not clear from scripture.",
+              "evidence": [
+                {
+                  "ref": "Job.21.10",
+                  "role": "defining",
+                  "note": "“His bull breeds (עִבַּר) and does not fail; his cow calves and does not miscarry.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring across, lead through; make pass, cause to go over; proclaim through; make pass through the fire; take away",
+          "senses": [
+            {
+              "id": "bring-across",
+              "gloss": "bring across, lead through",
+              "definition": "To bring people or things over a river or through the sea.",
+              "evidence": [
+                {
+                  "ref": "Psa.78.13",
+                  "role": "defining",
+                  "note": "“He split the sea and made them pass through (וַיַּעֲבִירֵם), and made the waters stand like a heap.”"
+                },
+                {
+                  "ref": "Psa.136.14",
+                  "note": "“And made Israel pass through the midst of it, for his covenant love is for ever.”"
+                },
+                {
+                  "ref": "Jos.7.7",
+                  "role": "defining",
+                  "note": "“Why have you indeed brought this people across (הֵעֲבַרְתָּ הַעֲבִיר) the Jordan … would that we had stayed beyond (בְּעֵבֶר) the Jordan!”"
+                },
+                {
+                  "ref": "Jos.4.3",
+                  "note": "The twelve stones from the Jordan: “bring them over with you”."
+                },
+                {
+                  "ref": "Gen.32.24",
+                  "note": "Jacob “took them and sent them across the stream, and sent across what he had”."
+                },
+                {
+                  "ref": "2Sa.19.16",
+                  "note": "Judah came to Gilgal “to bring the king over the Jordan”."
+                },
+                {
+                  "ref": "Neh.2.7",
+                  "note": "Letters to the governors beyond the River “that they may let me pass through (יַעֲבִירוּנִי) until I come to Judah”."
+                }
+              ]
+            },
+            {
+              "id": "make-pass",
+              "gloss": "make pass (over, by, under); transfer",
+              "definition": "To cause something to pass over, by or under: a wind over the earth, Yahweh's goodness before Moses, sons before Samuel, Israel under the rod; and to pass an inheritance or a kingdom over to another.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.1",
+                  "role": "defining",
+                  "note": "“God made a wind pass over the earth, and the waters subsided.”"
+                },
+                {
+                  "ref": "Exo.33.19",
+                  "role": "defining",
+                  "note": "“I will make all my goodness pass before your face (אַעֲבִיר כָּל טוּבִי עַל פָּנֶיךָ), and proclaim the name of Yahweh before you.”"
+                },
+                {
+                  "ref": "1Sa.16.10",
+                  "note": "“Jesse made seven of his sons pass before Samuel.”"
+                },
+                {
+                  "ref": "Ezk.20.37",
+                  "note": "“I will make you pass under the rod and bring you into the bond of the covenant.”"
+                },
+                {
+                  "ref": "Ezk.5.1",
+                  "note": "“Make it (the sword, as a barber's razor) pass over your head and over your beard.”"
+                },
+                {
+                  "ref": "Num.27.8",
+                  "role": "defining",
+                  "note": "“If a man dies and has no son, you shall make his inheritance pass to his daughter.”"
+                },
+                {
+                  "ref": "Num.27.7",
+                  "note": "The daughters of Zelophehad: “make the inheritance of their father pass to them”."
+                },
+                {
+                  "ref": "2Sa.3.10",
+                  "note": "“To transfer (לְהַעֲבִיר) the kingdom from the house of Saul and set up the throne of David.”"
+                }
+              ]
+            },
+            {
+              "id": "proclaim-through",
+              "gloss": "make (a voice, a horn) pass through, proclaim",
+              "definition": "With קוֹל or שׁוֹפָר: to send a proclamation or a blast through the camp or land.",
+              "evidence": [
+                {
+                  "ref": "Exo.36.6",
+                  "role": "defining",
+                  "note": "“Moses commanded, and they made a voice pass through the camp (וַיַּעֲבִירוּ קוֹל בַּמַּחֲנֶה), saying, Let no man or woman do more work.”"
+                },
+                {
+                  "ref": "Lev.25.9",
+                  "role": "defining",
+                  "note": "“You shall make the horn of the loud blast pass through in the seventh month on the tenth of the month.”"
+                },
+                {
+                  "ref": "Ezr.1.1",
+                  "note": "Cyrus “made a voice pass through all his kingdom, and also in writing”."
+                },
+                {
+                  "ref": "Ezr.10.7",
+                  "note": "“They made a voice pass through Judah and Jerusalem.”"
+                },
+                {
+                  "ref": "Neh.8.15",
+                  "note": "That they should proclaim through all their cities, “Go out to the mountain and bring branches”."
+                }
+              ]
+            },
+            {
+              "id": "through-the-fire",
+              "gloss": "make pass (through the fire, to Molech); set apart to Yahweh",
+              "definition": "To make a child pass over to a god: the firstborn set apart to Yahweh, and the nations' practice, forbidden to Israel, of making sons and daughters pass through the fire to Molech. Metal too was passed through the fire to cleanse it.",
+              "evidence": [
+                {
+                  "ref": "Exo.13.12",
+                  "role": "defining",
+                  "note": "“You shall make every one that opens the womb pass over to Yahweh (וְהַעֲבַרְתָּ כָל פֶּטֶר רֶחֶם לַיַהְוֶה).”"
+                },
+                {
+                  "ref": "Lev.18.21",
+                  "role": "defining",
+                  "note": "“Of your seed you shall not give, to make them pass over to Molech.”"
+                },
+                {
+                  "ref": "Deu.18.10",
+                  "role": "defining",
+                  "note": "“There shall not be found among you one who makes his son or his daughter pass through the fire (מַעֲבִיר … בָּאֵשׁ).”"
+                },
+                {
+                  "ref": "2Ki.16.3",
+                  "note": "Ahaz “made his son pass through the fire, according to the abominations of the nations”."
+                },
+                {
+                  "ref": "2Ki.21.6",
+                  "note": "Manasseh “made his son pass through the fire”."
+                },
+                {
+                  "ref": "2Ki.23.10",
+                  "note": "Josiah defiled Topheth in the valley of the son of Hinnom, “that no man might make his son or daughter pass through the fire to Molech”."
+                },
+                {
+                  "ref": "Jer.32.35",
+                  "note": "In the valley of the son of Hinnom, “to make their sons and daughters pass over to Molech, which I did not command them”."
+                },
+                {
+                  "ref": "Ezk.20.31",
+                  "note": "“When you make your sons pass through the fire, you defile yourselves.”"
+                },
+                {
+                  "ref": "Num.31.23",
+                  "note": "“Everything that can stand the fire, you shall make pass through the fire, and it shall be clean.”"
+                }
+              ]
+            },
+            {
+              "id": "take-away",
+              "gloss": "take away, put away, remove (sin, idols, a garment)",
+              "definition": "To make a thing pass away from someone: Yahweh putting away sin and iniquity; a king putting idols and abominations out of the land; taking off a robe or a ring.",
+              "evidence": [
+                {
+                  "ref": "2Sa.12.13",
+                  "role": "defining",
+                  "note": "Nathan to David: “Yahweh also has put away your sin (הֶעֱבִיר חַטָּאתְךָ); you shall not die.”"
+                },
+                {
+                  "ref": "Zec.3.4",
+                  "role": "defining",
+                  "note": "“Remove the filthy garments from him … See, I have made your iniquity pass from you (הֶעֱבַרְתִּי מֵעָלֶיךָ עֲונֶךָ), and will clothe you with rich robes.”"
+                },
+                {
+                  "ref": "2Sa.24.10",
+                  "note": "David: “Now, Yahweh, take away the iniquity of your servant.”"
+                },
+                {
+                  "ref": "Job.7.21",
+                  "note": "“Why do you not pardon my transgression and take away my iniquity?”"
+                },
+                {
+                  "ref": "Zec.13.2",
+                  "note": "“I will make the prophets and the unclean spirit pass out of the land.”"
+                },
+                {
+                  "ref": "1Ki.15.12",
+                  "note": "Asa “put away the male prostitutes out of the land”."
+                },
+                {
+                  "ref": "2Ch.15.8",
+                  "note": "Asa “put away the abominations from all the land of Judah and Benjamin”."
+                },
+                {
+                  "ref": "Jon.3.6",
+                  "note": "The king of Nineveh “took off his robe from him and covered himself with sackcloth”."
+                },
+                {
+                  "ref": "Est.8.2",
+                  "note": "The signet ring “which he had taken from Haman”."
+                },
+                {
+                  "ref": "Psa.119.37",
+                  "note": "“Turn away (הַעֲבֵר) my eyes from looking at vanity.”"
+                },
+                {
+                  "ref": "Ecc.11.10",
+                  "note": "“Remove vexation from your heart, and put away evil from your flesh.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "be furious, rage; meddle in fury",
+          "senses": [
+            {
+              "id": "be-furious",
+              "gloss": "be furious, pour out one's fury",
+              "definition": "To let one's wrath (עֶבְרָה) go: of Yahweh against Israel and against Moses; of a fool, to rage; of a man, to fly into a fury over another's quarrel.",
+              "evidence": [
+                {
+                  "ref": "Deu.3.26",
+                  "role": "defining",
+                  "note": "“Yahweh was furious with me (וַיִּתְעַבֵּר יַהְוֶה בִּי) for your sakes and would not hear me.”"
+                },
+                {
+                  "ref": "Psa.78.21",
+                  "role": "defining",
+                  "note": "“Yahweh heard and was furious, and a fire was kindled against Jacob, and anger (אַף) also went up against Israel.”"
+                },
+                {
+                  "ref": "Psa.78.59",
+                  "note": "“God heard and was furious, and greatly rejected Israel.”"
+                },
+                {
+                  "ref": "Psa.78.62",
+                  "note": "“He gave his people over to the sword, and was furious with his inheritance.”"
+                },
+                {
+                  "ref": "Psa.89.39",
+                  "note": "“You have cast off and rejected, you have been furious with your anointed (הִתְעַבַּרְתָּ עִם מְשִׁיחֶךָ).”"
+                },
+                {
+                  "ref": "Pro.14.16",
+                  "role": "defining",
+                  "note": "“A wise man fears and turns from evil, but a fool rages (מִתְעַבֵּר) and is confident.”"
+                },
+                {
+                  "ref": "Pro.20.2",
+                  "note": "“Whoever provokes him (מִתְעַבְּרוֹ), the king, sins against his own soul.”"
+                },
+                {
+                  "ref": "Pro.26.17",
+                  "note": "“Like one who takes a dog by the ears is he who passes by and is furious (עֹבֵר מִתְעַבֵּר) over a quarrel not his own.”"
+                }
+              ],
+              "kin": [
+                "wrath-of-god",
+                "overflowing-pride"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "διαβαίνω",
+          "gloss": "cross over, go across",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.32.11, עָבַרְתִּי → διαβαίνω; Num.33.8 → διέβησαν; Jos.3.17 → διέβαινον; διαβαίνω renders עָבַר ×89"
+            },
+            {
+              "ref": "Heb.11.29",
+              "role": "defining",
+              "note": "“By faith they crossed (διέβησαν) the Red Sea as by dry land”: Num 33:8; Psa 66:6."
+            },
+            {
+              "ref": "Luk.16.26",
+              "note": "“A great chasm is fixed, so that those who would cross (διαβῆναι) from here to you cannot.”"
+            }
+          ]
+        },
+        {
+          "lemma": "παρέρχομαι",
+          "gloss": "pass by; pass away; pass over (neglect)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.15.16; Exo.33.22; Psa.148.6 → παρελεύσεται; Jer.34.18; παρέρχομαι renders עָבַר ×69"
+            },
+            {
+              "ref": "Mat.24.35",
+              "role": "defining",
+              "note": "“Heaven and earth will pass away (παρελεύσονται), but my words will not pass away.”"
+            },
+            {
+              "ref": "Mat.26.39",
+              "note": "“Father, if it is possible, let this cup pass (παρελθέτω) from me.”"
+            },
+            {
+              "ref": "Luk.11.42",
+              "role": "defining",
+              "note": "“You pass over (παρέρχεσθε) justice and the love of God”: the Hebrew “pass over” of a command."
+            },
+            {
+              "ref": "Jas.1.10",
+              "note": "“Like the flower of the grass he will pass away”: Psa 103:15–16."
+            }
+          ]
+        },
+        {
+          "lemma": "διέρχομαι",
+          "gloss": "pass through, go through",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.15.17 → διέρχομαι; Exo.12.12 → διελεύσομαι; Psa.66.6 → διελεύσονται; Ezk.14.17; διέρχομαι renders עָבַר ×54"
+            },
+            {
+              "ref": "1Co.10.1",
+              "role": "defining",
+              "note": "“Our fathers were all under the cloud, and all passed through (διῆλθον) the sea.”"
+            },
+            {
+              "ref": "Rom.5.12",
+              "note": "“So death passed through (διῆλθεν) to all men, because all sinned.”"
+            },
+            {
+              "ref": "Luk.2.35",
+              "note": "“A sword will pass through (διελεύσεται) your own soul.”"
+            }
+          ]
+        },
+        {
+          "lemma": "παραβαίνω",
+          "gloss": "transgress, overstep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.14.41 → παραβαίνετε; Jos.7.11 → παρέβη; Jos.7.15 → παρέβη; Hos.6.7 → παραβαίνων"
+            },
+            {
+              "ref": "Mat.15.3",
+              "role": "defining",
+              "note": "“Why do you also transgress (παραβαίνετε) the commandment of God because of your tradition?”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀφαιρέω",
+          "gloss": "take away",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zec.3.4, הֶעֱבַרְתִּי → ἀφῄρηκα; ἀφαιρέω renders עָבַר ×8"
+            },
+            {
+              "ref": "Heb.10.4",
+              "note": "“It is not possible that the blood of bulls and goats should take away (ἀφαιρεῖν) sins.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁטַף",
+            "note": "“Overflow, sweep away”: a flood that overflows and passes over.",
+            "evidence": [
+              {
+                "ref": "Isa.8.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.11.40"
+              },
+              {
+                "ref": "Psa.124.4"
+              }
+            ]
+          },
+          {
+            "lemma": "חָלַף",
+            "note": "“Pass on, be gone”: the winter passes, the rain is gone; God passes by and moves on.",
+            "evidence": [
+              {
+                "ref": "Sng.2.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.9.11"
+              }
+            ]
+          },
+          {
+            "lemma": "חָטָא",
+            "note": "“Sin”, beside transgressing the covenant.",
+            "evidence": [
+              {
+                "ref": "Jos.7.11",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.15.24"
+              }
+            ]
+          },
+          {
+            "lemma": "נָשָׂא עָוֹן",
+            "note": "“Lift iniquity”, beside passing over transgression.",
+            "evidence": [
+              {
+                "ref": "Mic.7.18",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עָמַד",
+            "note": "“Stand, be established”: what God establishes for ever does not pass.",
+            "evidence": [
+              {
+                "ref": "Psa.148.6",
+                "role": "defining",
+                "note": "“He made them stand (וַיַּעֲמִידֵם) for ever … a statute he gave, and it will not pass.”"
+              }
+            ]
+          },
+          {
+            "lemma": "שׁוּב",
+            "note": "“Return”: pass through and come back.",
+            "evidence": [
+              {
+                "ref": "Exo.32.27",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָבַר בְּרִית",
+            "gloss": "transgress the covenant",
+            "evidence": [
+              {
+                "ref": "Jos.7.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.6.7"
+              },
+              {
+                "ref": "Jer.34.18"
+              }
+            ]
+          },
+          {
+            "phrase": "עָבַר בִּבְרִית",
+            "gloss": "pass into the covenant, enter the covenant",
+            "evidence": [
+              {
+                "ref": "Deu.29.11",
+                "role": "defining",
+                "note": "“That you may pass into the covenant of Yahweh your God and into his oath (לְעָבְרְךָ בִּבְרִית).”"
+              }
+            ]
+          },
+          {
+            "phrase": "עָבַר אֶת פִּי יַהְוֶה",
+            "gloss": "transgress the mouth (command) of Yahweh",
+            "evidence": [
+              {
+                "ref": "Num.14.41",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.15.24"
+              }
+            ]
+          },
+          {
+            "phrase": "עָבַר עַל פֶּשַׁע",
+            "gloss": "pass over a transgression, forgive",
+            "evidence": [
+              {
+                "ref": "Mic.7.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.19.11"
+              }
+            ]
+          },
+          {
+            "phrase": "עָבַר לִפְנֵי",
+            "gloss": "pass on before, go ahead of",
+            "evidence": [
+              {
+                "ref": "Gen.33.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.31.3"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹבְרֵי דֶרֶךְ",
+            "gloss": "passers-by",
+            "evidence": [
+              {
+                "ref": "Lam.1.12",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "הֶעֱבִיר בָּאֵשׁ",
+            "gloss": "make pass through the fire (to Molech)",
+            "evidence": [
+              {
+                "ref": "Deu.18.10",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.21.6"
+              },
+              {
+                "ref": "Ezk.20.31"
+              }
+            ]
+          },
+          {
+            "phrase": "הֶעֱבִיר קוֹל",
+            "gloss": "make a voice pass through, proclaim",
+            "evidence": [
+              {
+                "ref": "Exo.36.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezr.10.7"
+              }
+            ]
+          },
+          {
+            "phrase": "הֶעֱבִיר חַטָּאת",
+            "gloss": "put away sin",
+            "evidence": [
+              {
+                "ref": "2Sa.12.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֵבֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the side across, region beyond; side; (אֶל עֵבֶר פָּנָיו) straight ahead",
+      "bdb": [
+        "p.ah.ab"
+      ],
+      "cognate_ids": [
+        "ar-ibr",
+        "akk-ebertu",
+        "phn-abr",
+        "sab-abr-n",
+        "arc-eibar"
+      ],
+      "summary": "The land or place on the other side of a river, sea or valley, where one would arrive by crossing (עָבַר): commonly with בְּ or מִן, “beyond, across” the Jordan or the River (Euphrates). Then any side of a thing, and with פָּנִים the direction straight before one. About ninety uses; the brief's total also takes in the man Eber, filed here by spelling (see the name entry).",
+      "senses": [
+        {
+          "id": "beyond-the-river",
+          "gloss": "the region across, beyond (the Jordan, the River, the sea)",
+          "definition": "The land on the far side of a river or sea from the speaker: beyond the Jordan (east or west, as the speaker stands), beyond the River Euphrates, where Abraham's fathers lived, and in the Persian period the province “Beyond the River”.",
+          "evidence": [
+            {
+              "ref": "Deu.3.25",
+              "role": "defining",
+              "note": "“Let me cross and see the good land which is beyond the Jordan (בְּעֵבֶר הַיַּרְדֵּן).”"
+            },
+            {
+              "ref": "Jos.24.2",
+              "role": "defining",
+              "note": "“Your fathers dwelt beyond the River (בְּעֵבֶר הַנָּהָר) from of old, Terah the father of Abraham … and served other gods.”"
+            },
+            {
+              "ref": "Jos.24.3",
+              "role": "defining",
+              "note": "“I took your father Abraham from beyond the River and led him through all the land of Canaan.”"
+            },
+            {
+              "ref": "Jos.24.14",
+              "note": "“Put away the gods which your fathers served beyond the River and in Egypt.”"
+            },
+            {
+              "ref": "Deu.1.1",
+              "note": "“These are the words which Moses spoke to all Israel beyond the Jordan in the wilderness.”"
+            },
+            {
+              "ref": "Jos.12.7",
+              "note": "The kings whom Joshua struck “beyond the Jordan westward”: the west side, seen from the east."
+            },
+            {
+              "ref": "Num.32.19",
+              "note": "“We will not inherit with them across the Jordan and beyond, for our inheritance has come to us across the Jordan eastward.”"
+            },
+            {
+              "ref": "Isa.8.23",
+              "role": "defining",
+              "note": "“The way of the sea, beyond the Jordan (עֵבֶר הַיַּרְדֵּן), Galilee of the nations”: quoted Mat 4:15."
+            },
+            {
+              "ref": "Deu.30.13",
+              "role": "defining",
+              "note": "“Nor is it beyond the sea (מֵעֵבֶר לַיָּם), that you should say, Who will cross over (יַעֲבָר) to beyond the sea for us?”"
+            },
+            {
+              "ref": "1Ki.5.4",
+              "note": "Solomon “had dominion over all beyond the River, from Tiphsah to Gaza”."
+            },
+            {
+              "ref": "Neh.2.7",
+              "note": "“The governors beyond the River (עֵבֶר הַנָּהָר).”"
+            },
+            {
+              "ref": "Zep.3.10",
+              "note": "“From beyond the rivers of Cush my worshippers will bring my offering.”"
+            }
+          ]
+        },
+        {
+          "id": "side",
+          "gloss": "side",
+          "definition": "One side of a thing or place, set against the other side; in the plural, all sides round about.",
+          "evidence": [
+            {
+              "ref": "Exo.32.15",
+              "role": "defining",
+              "note": "“Tablets written on both their sides (מִשְּׁנֵי עֶבְרֵיהֶם); on the one side and on the other they were written.”"
+            },
+            {
+              "ref": "1Sa.14.4",
+              "role": "defining",
+              "note": "“A crag of rock on the one side (מֵהָעֵבֶר מִזֶּה) and a crag of rock on the other side.”"
+            },
+            {
+              "ref": "1Sa.14.40",
+              "note": "“You shall be on one side, and I and Jonathan my son on the other side.”"
+            },
+            {
+              "ref": "1Ki.5.4",
+              "note": "“He had peace on all his sides (מִכָּל עֲבָרָיו) round about.”"
+            },
+            {
+              "ref": "Jer.49.32",
+              "note": "“From all its sides I will bring their calamity.”"
+            },
+            {
+              "ref": "Exo.28.26",
+              "note": "Rings on the edge of the breastpiece “on the side of the ephod inward”."
+            }
+          ]
+        },
+        {
+          "gloss": "straight before one (אֶל עֵבֶר פָּנָיו)",
+          "definition": "With פָּנִים, toward the side of one's face: straight forward, without turning.",
+          "evidence": [
+            {
+              "ref": "Ezk.1.9",
+              "role": "defining",
+              "note": "“They did not turn when they went; each went straight forward (אֶל עֵבֶר פָּנָיו).”"
+            },
+            {
+              "ref": "Ezk.1.12"
+            },
+            {
+              "ref": "Ezk.10.22"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πέραν",
+          "gloss": "beyond, across, on the other side",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.8.23, עֵבֶר → πέραν; Deu.30.13 → πέραν; Jos.24.3 → πέραν; πέραν renders עֵבֶר ×65"
+            },
+            {
+              "ref": "Mat.4.15",
+              "role": "defining",
+              "note": "Isa 8:23 quoted: “the way of the sea, beyond (πέραν) the Jordan, Galilee of the nations”."
+            },
+            {
+              "ref": "Jhn.1.28",
+              "note": "“These things happened in Bethabara beyond the Jordan, where John was baptizing.”"
+            },
+            {
+              "ref": "Mat.8.18",
+              "note": "Jesus “commanded to depart to the other side (εἰς τὸ πέραν)”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבַר",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the region beyond; (עֲבַר נַהֲרָה) the province Beyond the River",
+      "bdb": [
+        "xp.aa.af"
+      ],
+      "cognate_ids": [
+        "arc-eibar",
+        "akk-ebertu"
+      ],
+      "summary": "The Aramaic of Ezra uses it only in עֲבַר נַהֲרָה, the Persian province west of the Euphrates, as the Hebrew does in Ezra and Nehemiah.",
+      "senses": [
+        {
+          "gloss": "Beyond the River (the province)",
+          "definition": "The land beyond the Euphrates as seen from the Persian court, governed by a פַּחָה and taxed for the king.",
+          "evidence": [
+            {
+              "ref": "Ezr.4.10",
+              "role": "defining",
+              "note": "The nations settled “in the city of Samaria and the rest of Beyond the River (עֲבַר נַהֲרָה)”."
+            },
+            {
+              "ref": "Ezr.5.3",
+              "role": "defining",
+              "note": "“Tattenai, governor of Beyond the River.”"
+            },
+            {
+              "ref": "Ezr.4.20",
+              "note": "“Mighty kings were over Jerusalem, ruling over all Beyond the River.”"
+            },
+            {
+              "ref": "Ezr.6.8",
+              "note": "Expenses paid “from the tribute of Beyond the River”."
+            },
+            {
+              "ref": "Ezr.7.21",
+              "note": "Artaxerxes' decree “to all the treasurers who are in Beyond the River”."
+            },
+            {
+              "ref": "Ezr.7.25"
+            }
+          ],
+          "kin": [
+            "beyond-the-river"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πέραν",
+          "gloss": "beyond",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezr.4.10 and the rest: עֲבַר → πέραν ×12"
+            },
+            {
+              "ref": "Mat.19.1",
+              "note": "Jesus “came into the borders of Judea beyond (πέραν) the Jordan”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבוּר",
+      "pos": "preposition",
+      "gloss": "(בַּעֲבוּר) for the sake of, on account of; in exchange for; in order that",
+      "bdb": [
+        "p.ah.am"
+      ],
+      "cognate_ids": [
+        "sab-abr-prep"
+      ],
+      "summary": "Always with בְּ (once לְבַעֲבוּר): for the sake of a person, because of a thing, for a price, and with an infinitive or imperfect, in order that. About fifty times. The link to “pass over” is not stated in scripture; its use for a price (Amo 2:6) suggests what passes over in exchange, and Sabaean uses its ʿbr as a preposition “to, toward” and “to the end that”.",
+      "senses": [
+        {
+          "gloss": "for the sake of, on account of, because of",
+          "definition": "On a person's account, for his benefit or because of what he is or did.",
+          "evidence": [
+            {
+              "ref": "Gen.3.17",
+              "role": "defining",
+              "note": "“Cursed is the ground because of you (בַּעֲבוּרֶךָ).”"
+            },
+            {
+              "ref": "Gen.18.26",
+              "role": "defining",
+              "note": "“If I find in Sodom fifty righteous … I will spare all the place for their sake (בַּעֲבוּרָם).”"
+            },
+            {
+              "ref": "Gen.8.21",
+              "note": "“I will not again curse the ground because of man.”"
+            },
+            {
+              "ref": "Gen.12.13",
+              "note": "“That it may be well with me for your sake.”"
+            },
+            {
+              "ref": "Gen.26.24",
+              "note": "“I will bless you and multiply your seed for the sake of Abraham my servant.”"
+            },
+            {
+              "ref": "1Sa.12.22",
+              "note": "“Yahweh will not forsake his people for his great name's sake.”"
+            },
+            {
+              "ref": "2Sa.7.21",
+              "note": "“For your word's sake and according to your heart you have done all this greatness.”"
+            },
+            {
+              "ref": "Psa.132.10",
+              "note": "“For the sake of David your servant, do not turn away the face of your anointed.”"
+            },
+            {
+              "ref": "Psa.106.32",
+              "note": "“It went ill with Moses on their account.”"
+            }
+          ]
+        },
+        {
+          "gloss": "in exchange for, for (a price)",
+          "definition": "For the price of something.",
+          "evidence": [
+            {
+              "ref": "Amo.2.6",
+              "role": "defining",
+              "note": "“They sold the righteous for silver, and the needy for (בַּעֲבוּר) a pair of sandals.”"
+            },
+            {
+              "ref": "Amo.8.6",
+              "note": "“To buy the poor for silver and the needy for a pair of sandals.”"
+            }
+          ]
+        },
+        {
+          "gloss": "in order that, so that",
+          "definition": "With an infinitive or an imperfect: the purpose for which a thing is done.",
+          "evidence": [
+            {
+              "ref": "Exo.9.16",
+              "role": "defining",
+              "note": "“For this purpose I have raised you up, in order to show you (בַּעֲבוּר הַרְאֹתְךָ) my power, and that my name may be declared in all the earth.”"
+            },
+            {
+              "ref": "Exo.20.20",
+              "role": "defining",
+              "note": "“God has come in order to test you, and in order that his fear may be before you, that you do not sin.”"
+            },
+            {
+              "ref": "Gen.21.30",
+              "note": "“That it may be a witness for me that I dug this well.”"
+            },
+            {
+              "ref": "Gen.27.4",
+              "note": "“That my soul may bless you before I die.”"
+            },
+            {
+              "ref": "Exo.19.9",
+              "note": "“That the people may hear when I speak with you, and believe you for ever.”"
+            },
+            {
+              "ref": "Psa.105.45",
+              "note": "“That they might keep his statutes and observe his laws.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עִבְרִי",
+      "pos": "adjective",
+      "gloss": "Hebrew; a Hebrew",
+      "bdb": [
+        "p.ah.ad"
+      ],
+      "cognate_ids": [
+        "arc-ivray"
+      ],
+      "summary": "The gentilic of עֵבֶר: Abraham and his descendants as other peoples named them, and as Israel named itself before them. Scripture ties it to both of its senses of עֵבֶר without choosing between them: Shem is “the father of all the sons of Eber” (Gen 10:21), and Abraham was taken “from beyond the River” (Jos 24:3). It is kept here as a word of the entry, as the README directs for a word formed from the root (מִצְרִי stands in its own root's entry the same way); a people takes no name entry. The brief's three qal tokens under it are the feminine imperative עִבְרִי “pass over!” (Isa 23:10; 47:2; Mic 1:11), filed here by spelling.",
+      "senses": [
+        {
+          "gloss": "a Hebrew; the Hebrews",
+          "definition": "A man or woman of Abraham's people, named so especially by and before foreigners: Egyptians, Philistines, the sailors of Jonah's ship.",
+          "evidence": [
+            {
+              "ref": "Gen.14.13",
+              "role": "defining",
+              "note": "“One who had escaped came and told Abram the Hebrew (הָעִבְרִי).”"
+            },
+            {
+              "ref": "Gen.40.15",
+              "note": "Joseph: “I was stolen away from the land of the Hebrews.”"
+            },
+            {
+              "ref": "Gen.43.32",
+              "role": "defining",
+              "note": "“The Egyptians could not eat bread with the Hebrews, for that is an abomination to Egypt.”"
+            },
+            {
+              "ref": "Exo.1.19",
+              "note": "“The Hebrew women are not like the Egyptian women.”"
+            },
+            {
+              "ref": "Exo.2.6",
+              "note": "Pharaoh's daughter: “This is one of the Hebrews' children.”"
+            },
+            {
+              "ref": "1Sa.4.6",
+              "note": "The Philistines: “What is the noise of this great shout in the camp of the Hebrews?”"
+            },
+            {
+              "ref": "1Sa.29.3",
+              "note": "“What are these Hebrews doing here?”"
+            },
+            {
+              "ref": "Jon.1.9",
+              "role": "defining",
+              "note": "“I am a Hebrew (עִבְרִי אָנֹכִי), and I fear Yahweh, the God of heaven, who made the sea and the dry land.”"
+            }
+          ]
+        },
+        {
+          "gloss": "the God of the Hebrews",
+          "definition": "Yahweh named before Pharaoh as the God of this people.",
+          "evidence": [
+            {
+              "ref": "Exo.3.18",
+              "role": "defining",
+              "note": "“Yahweh, the God of the Hebrews (אֱלֹהֵי הָעִבְרִיִּים), has met with us.”"
+            },
+            {
+              "ref": "Exo.5.3"
+            },
+            {
+              "ref": "Exo.9.1"
+            }
+          ]
+        },
+        {
+          "gloss": "a Hebrew (servant), a brother",
+          "definition": "In the law of release: a Hebrew sold as a servant is a brother and goes free in the seventh year.",
+          "evidence": [
+            {
+              "ref": "Exo.21.2",
+              "role": "defining",
+              "note": "“If you buy a Hebrew servant (עֶבֶד עִבְרִי), six years he shall serve, and in the seventh he shall go out free.”"
+            },
+            {
+              "ref": "Deu.15.12",
+              "role": "defining",
+              "note": "“If your brother, a Hebrew man or a Hebrew woman, is sold to you.”"
+            },
+            {
+              "ref": "Jer.34.9",
+              "note": "“That no one should keep them in bondage, a Jew his brother.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "Ἑβραῖος",
+          "gloss": "a Hebrew",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. Ἑβραῖος",
+              "note": "From Aramaic עִבְרַי; in the Septuagint for עֵבֶר and עִבְרִי."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.3.18, הָעִבְרִיִּים → Ἑβραῖος; Ἑβραῖος renders עִבְרִי ×23"
+            },
+            {
+              "ref": "Php.3.5",
+              "role": "defining",
+              "note": "Paul: “of the race of Israel, of the tribe of Benjamin, a Hebrew of Hebrews (Ἑβραῖος ἐξ Ἑβραίων)”."
+            },
+            {
+              "ref": "2Co.11.22",
+              "role": "defining",
+              "note": "“Are they Hebrews? So am I. Are they Israelites? So am I. Are they the seed of Abraham? So am I.”"
+            },
+            {
+              "ref": "Act.6.1",
+              "note": "The Hellenists murmured against the Hebrews (τοὺς Ἑβραίους)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֶבְרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "overflowing; arrogance; fury, wrath",
+      "bdb": [
+        "p.ah.ag"
+      ],
+      "summary": "An overflowing: of a man's pride and rage, and above all of the wrath of Yahweh, poured out like water (Hos 5:10). Its senses are kin to the verb's “overflow, pass over” (Isa 8:8) and its hithpael “be furious”, and it shares their cognates. “The day of עֶבְרָה” is the day of Yahweh's judgment.",
+      "senses": [
+        {
+          "id": "overflowing-pride",
+          "gloss": "overflowing (of pride), arrogance, rage",
+          "definition": "A man's or a nation's pride and fury running over its bounds.",
+          "evidence": [
+            {
+              "ref": "Isa.16.6",
+              "role": "defining",
+              "note": "“We have heard of the pride of Moab, very proud, his haughtiness and his pride and his overflowing (וְעֶבְרָתוֹ).”"
+            },
+            {
+              "ref": "Jer.48.30",
+              "note": "Of Moab: “I know his overflowing, says Yahweh, but it is not so.”"
+            },
+            {
+              "ref": "Pro.21.24",
+              "role": "defining",
+              "note": "“Proud, haughty, scorner is his name, who acts in the overflowing of pride (בְּעֶבְרַת זָדוֹן).”"
+            },
+            {
+              "ref": "Gen.49.7",
+              "role": "defining",
+              "note": "Of Simeon and Levi: “Cursed be their anger (אַפָּם), for it was fierce, and their fury (וְעֶבְרָתָם), for it was cruel.”"
+            },
+            {
+              "ref": "Amo.1.11",
+              "note": "Edom “kept his fury for ever”."
+            },
+            {
+              "ref": "Pro.14.35",
+              "note": "“His fury is against him who acts shamefully.”"
+            },
+            {
+              "ref": "Pro.22.8",
+              "note": "“The rod of his fury will fail.”"
+            }
+          ],
+          "kin": [
+            "overflow-sweep",
+            "be-furious"
+          ]
+        },
+        {
+          "id": "wrath-of-god",
+          "gloss": "the wrath of Yahweh; the day of wrath",
+          "definition": "Yahweh's wrath poured out on the wicked and on his people when they sin, beside אַף and חֲרוֹן אַף; “the day of עֶבְרָה” is the day of his judgment, when wealth does not deliver.",
+          "evidence": [
+            {
+              "ref": "Hos.5.10",
+              "role": "defining",
+              "note": "“On them I will pour out my wrath like water (אֶשְׁפּוֹךְ כַּמַּיִם עֶבְרָתִי).”"
+            },
+            {
+              "ref": "Zep.1.15",
+              "role": "defining",
+              "note": "“That day is a day of wrath (יוֹם עֶבְרָה), a day of trouble and distress.”"
+            },
+            {
+              "ref": "Zep.1.18",
+              "role": "defining",
+              "note": "“Neither their silver nor their gold will be able to deliver them in the day of Yahweh's wrath.”"
+            },
+            {
+              "ref": "Isa.13.9",
+              "role": "defining",
+              "note": "“The day of Yahweh comes, cruel, with wrath (וְעֶבְרָה) and fierce anger (וַחֲרוֹן אַף).”"
+            },
+            {
+              "ref": "Isa.9.18",
+              "note": "“Through the wrath of Yahweh of hosts the land is burned.”"
+            },
+            {
+              "ref": "Ezk.7.19",
+              "note": "“Their silver and their gold will not be able to deliver them in the day of the wrath of Yahweh.”"
+            },
+            {
+              "ref": "Pro.11.4",
+              "role": "defining",
+              "note": "“Riches do not profit in the day of wrath, but righteousness delivers from death.”"
+            },
+            {
+              "ref": "Ezk.22.21",
+              "note": "“I will blow on you with the fire of my wrath.”"
+            },
+            {
+              "ref": "Ezk.21.36",
+              "note": "“I will pour out my indignation (זַעְמִי) on you; with the fire of my wrath I will blow on you.”"
+            },
+            {
+              "ref": "Psa.78.49",
+              "note": "“He sent on them the fierceness of his anger, wrath and indignation and trouble.”"
+            },
+            {
+              "ref": "Psa.90.9",
+              "note": "“All our days pass away in your wrath; we finish our years like a sigh.”"
+            },
+            {
+              "ref": "Psa.90.11"
+            },
+            {
+              "ref": "Psa.85.4",
+              "note": "“You withdrew all your wrath; you turned from the fierceness of your anger.”"
+            },
+            {
+              "ref": "Hab.3.8",
+              "note": "“Was your anger against the rivers, or your wrath against the sea?”"
+            },
+            {
+              "ref": "Lam.3.1",
+              "note": "“I am the man who has seen affliction by the rod of his wrath.”"
+            },
+            {
+              "ref": "Job.40.11",
+              "note": "“Scatter the overflowings of your anger (עֶבְרוֹת אַפֶּךָ).”"
+            },
+            {
+              "ref": "Job.21.30",
+              "note": "“The wicked is reserved for the day of calamity, brought forth to the day of wrath (לְיוֹם עֲבָרוֹת).”"
+            }
+          ],
+          "kin": [
+            "overflow-sweep",
+            "be-furious"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὀργή",
+          "gloss": "wrath",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zep.1.15, עֶבְרָה → ὀργῆς; Zep.1.18 → ὀργῆς; ὀργή renders עֶבְרָה ×6"
+            },
+            {
+              "ref": "Rom.2.5",
+              "role": "defining",
+              "note": "“You treasure up for yourself wrath in the day of wrath (ἐν ἡμέρᾳ ὀργῆς) and revelation of the righteous judgment of God.”"
+            },
+            {
+              "ref": "Rev.6.17",
+              "note": "“The great day of his wrath has come, and who is able to stand?”"
+            }
+          ]
+        },
+        {
+          "lemma": "θυμός",
+          "gloss": "fury, passion",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.13.9, עֶבְרָה → θυμοῦ; θυμός renders עֶבְרָה ×7"
+            },
+            {
+              "ref": "Rev.16.19",
+              "note": "“The cup of the wine of the fury of his wrath (τοῦ θυμοῦ τῆς ὀργῆς αὐτοῦ).”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אַף",
+            "note": "“Anger”, beside עֶבְרָה.",
+            "evidence": [
+              {
+                "ref": "Gen.49.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Hab.3.8"
+              },
+              {
+                "ref": "Job.40.11"
+              }
+            ]
+          },
+          {
+            "lemma": "זַעַם",
+            "note": "“Indignation”.",
+            "evidence": [
+              {
+                "ref": "Ezk.21.36",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.49"
+              }
+            ]
+          },
+          {
+            "lemma": "גַּאֲוָה",
+            "note": "“Pride”: Moab's pride and overflowing.",
+            "evidence": [
+              {
+                "ref": "Isa.16.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "צְדָקָה",
+            "note": "“Righteousness” delivers from death in the day of wrath, where riches do not.",
+            "evidence": [
+              {
+                "ref": "Pro.11.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יוֹם עֶבְרָה",
+            "gloss": "the day of wrath",
+            "evidence": [
+              {
+                "ref": "Zep.1.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.11.4"
+              },
+              {
+                "ref": "Ezk.7.19"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַעְבָּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "ford; pass",
+      "bdb": [
+        "p.ah.ao"
+      ],
+      "cognate_ids": [
+        "ar-mabar",
+        "akk-neberu",
+        "arc-mabarta"
+      ],
+      "summary": "A place of crossing: the fords of the Jordan or the Arnon, and a pass through the hills. The brief counts eleven tokens for it and for מַעֲבָר together, by spelling; the plural fords and passes and Isa 10:29 are this word.",
+      "senses": [
+        {
+          "id": "ford",
+          "gloss": "ford, crossing-place; pass",
+          "definition": "The place where a river is crossed, held in war to stop those fleeing; and a pass between crags.",
+          "evidence": [
+            {
+              "ref": "Jdg.12.5",
+              "role": "defining",
+              "note": "“Gilead took the fords of the Jordan (מַעְבְּרוֹת הַיַּרְדֵּן) against Ephraim; and when the fugitives of Ephraim said, Let me cross over (אֶעֱבֹרָה) …”"
+            },
+            {
+              "ref": "Jdg.3.28",
+              "role": "defining",
+              "note": "“They took the fords of the Jordan against Moab, and let no man cross over (לַעֲבֹר).”"
+            },
+            {
+              "ref": "Jos.2.7",
+              "note": "The pursuers went “the way to the Jordan, to the fords”."
+            },
+            {
+              "ref": "Isa.16.2",
+              "note": "“The daughters of Moab will be at the fords of the Arnon.”"
+            },
+            {
+              "ref": "Jer.51.32",
+              "note": "Babylon: “the fords are seized”."
+            },
+            {
+              "ref": "1Sa.14.4",
+              "note": "“Between the passes (הַמַּעְבְּרוֹת) by which Jonathan sought to cross over (לַעֲבֹר).”"
+            },
+            {
+              "ref": "Isa.10.29",
+              "note": "“They have passed through the pass (עָבְרוּ מַעְבָּרָה).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲבָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ford, pass; passing (of a stroke)",
+      "bdb": [
+        "p.ah.an"
+      ],
+      "cognate_ids": [
+        "ar-mabar",
+        "akk-neberu",
+        "arc-mabarta",
+        "phn-mabr"
+      ],
+      "summary": "The masculine of the same pattern: the ford of the Jabbok, the pass of Michmash, and once the passing (stroke) of a rod. Only three of the eleven tokens the brief counts for it are this word; the rest are מַעְבָּרָה.",
+      "senses": [
+        {
+          "gloss": "ford, pass",
+          "definition": "A crossing-place of a stream or a pass in the hills.",
+          "evidence": [
+            {
+              "ref": "Gen.32.23",
+              "role": "defining",
+              "note": "“He crossed the ford of the Jabbok (וַיַּעֲבֹר אֵת מַעֲבַר יַבֹּק).”"
+            },
+            {
+              "ref": "1Sa.13.23",
+              "note": "“The garrison of the Philistines went out to the pass of Michmash.”"
+            }
+          ],
+          "kin": [
+            "ford"
+          ]
+        },
+        {
+          "gloss": "passing, stroke (of a rod)",
+          "definition": "Each passing of Yahweh's rod laid on Assyria. One use.",
+          "evidence": [
+            {
+              "ref": "Isa.30.32",
+              "role": "defining",
+              "note": "“Every passing (מַעֲבַר) of the appointed staff which Yahweh lays on him will be with tambourines and lyres.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבָרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "ford, crossing",
+      "bdb": [
+        "p.ah.af"
+      ],
+      "cognate_ids": [
+        "ar-mabar",
+        "akk-neberu"
+      ],
+      "summary": "One use, of the crossing of the Jordan by which David's household was brought back.",
+      "senses": [
+        {
+          "gloss": "ford, crossing",
+          "definition": "The place, or perhaps the ferry, by which the king's household crossed the Jordan.",
+          "evidence": [
+            {
+              "ref": "2Sa.19.19",
+              "role": "defining",
+              "note": "“The ford crossed over (וְעָבְרָה הָעֲבָרָה) to bring over the king's household.”"
+            }
+          ],
+          "kin": [
+            "ford"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָבוּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "produce, yield (of the land)",
+      "bdb": [
+        "p.ah.al"
+      ],
+      "cognate_ids": [
+        "arc-ibbura",
+        "akk-eburu"
+      ],
+      "summary": "Two uses, of the grain of Canaan which Israel ate when the manna ceased. Aramaic עִיבּוּרָא and the Peshitta's ʿbūrā mean grain and crop. How it comes from “pass over” is not clear.",
+      "senses": [
+        {
+          "gloss": "produce, grain of the land",
+          "definition": "The grain of the land of Canaan, eaten by Israel after the Passover at Gilgal.",
+          "evidence": [
+            {
+              "ref": "Jos.5.11",
+              "role": "defining",
+              "note": "“They ate of the produce of the land (מֵעֲבוּר הָאָרֶץ) on the morrow after the Passover, unleavened cakes and parched grain.”"
+            },
+            {
+              "ref": "Jos.5.12",
+              "role": "defining",
+              "note": "“The manna ceased on the morrow when they ate of the produce of the land.”"
+            }
+          ],
+          "kin": [
+            "syc-grain"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבַר",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "cross over; pass by; pass away; transgress; (aphel) make pass, take away",
+      "summary": "The Peshitta's ܥܒܪ (ʿbar), with the Hebrew verb's range: crossing the sea, passing by, passing away, and transgressing a command.",
+      "cognate_ids": [
+        "arc-avar"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "cross; pass by; pass away; transgress",
+          "senses": [
+            {
+              "gloss": "cross over",
+              "definition": "To cross the lake or sea to the other side.",
+              "evidence": [
+                {
+                  "ref": "Mrk.4.35",
+                  "role": "defining",
+                  "note": "“Let us cross over to the other side”: the verb with its noun ʿebrā."
+                },
+                {
+                  "ref": "Heb.11.29",
+                  "role": "defining",
+                  "note": "“By faith they crossed the Red Sea.”"
+                },
+                {
+                  "ref": "1Co.10.1",
+                  "note": "“All passed through the sea.”"
+                },
+                {
+                  "ref": "Mrk.6.53"
+                },
+                {
+                  "ref": "Luk.16.26"
+                }
+              ],
+              "kin": [
+                "cross-over"
+              ]
+            },
+            {
+              "gloss": "pass by, pass through",
+              "definition": "To go past or through a place.",
+              "evidence": [
+                {
+                  "ref": "Luk.18.37",
+                  "role": "defining",
+                  "note": "“Jesus the Nazarene is passing by.”"
+                },
+                {
+                  "ref": "Mat.20.30"
+                },
+                {
+                  "ref": "Luk.19.1",
+                  "note": "Jesus entered and passed through Jericho."
+                },
+                {
+                  "ref": "Mrk.15.21"
+                }
+              ],
+              "kin": [
+                "pass-by"
+              ]
+            },
+            {
+              "gloss": "pass away",
+              "definition": "To pass and be gone: heaven and earth, the old things, the world.",
+              "evidence": [
+                {
+                  "ref": "Mat.24.35",
+                  "role": "defining",
+                  "note": "“Heaven and earth will pass away, but my words will not pass away.”"
+                },
+                {
+                  "ref": "2Co.5.17",
+                  "role": "defining",
+                  "note": "“Old things have passed away.”"
+                },
+                {
+                  "ref": "1Jn.2.17"
+                },
+                {
+                  "ref": "Jas.1.10"
+                },
+                {
+                  "ref": "Mat.5.18"
+                }
+              ],
+              "kin": [
+                "pass-away"
+              ]
+            },
+            {
+              "gloss": "transgress (a command, the law)",
+              "definition": "To pass over a command or the law.",
+              "evidence": [
+                {
+                  "ref": "Mat.15.3",
+                  "role": "defining",
+                  "note": "“Why do you transgress the commandment of God because of your tradition?”"
+                },
+                {
+                  "ref": "Rom.2.23"
+                },
+                {
+                  "ref": "Jas.2.11"
+                },
+                {
+                  "ref": "1Ti.2.14",
+                  "note": "“The woman was deceived and transgressed the command.”"
+                },
+                {
+                  "ref": "Heb.9.15"
+                }
+              ],
+              "kin": [
+                "transgress"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "make pass, take away; carry across",
+          "senses": [
+            {
+              "gloss": "make pass, take away",
+              "definition": "To make something pass from someone or pass away; to carry across.",
+              "evidence": [
+                {
+                  "ref": "Mrk.14.36",
+                  "role": "defining",
+                  "note": "“Make this cup pass from me.”"
+                },
+                {
+                  "ref": "Act.17.30",
+                  "note": "God has made the times of error pass away (Greek “overlooked”)."
+                },
+                {
+                  "ref": "Act.27.44",
+                  "note": "The rest were carried across on planks."
+                }
+              ],
+              "kin": [
+                "take-away",
+                "bring-across"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵבְרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the other side, the far shore; crossing",
+      "summary": "The Peshitta's ܥܒܪܐ (ʿebrā), for the Greek πέραν, and in Mat 4:15 for Isaiah's עֵבֶר הַיַּרְדֵּן.",
+      "cognate_ids": [
+        "arc-eibar"
+      ],
+      "senses": [
+        {
+          "gloss": "the other side; beyond",
+          "definition": "The far side of the lake or the Jordan.",
+          "evidence": [
+            {
+              "ref": "Mat.4.15",
+              "role": "defining",
+              "note": "Isa 8:23 quoted: “the way of the sea, the crossing (ʿebrā) of the Jordan, Galilee of the nations”."
+            },
+            {
+              "ref": "Mat.8.18",
+              "role": "defining",
+              "note": "“He commanded to go to the other side.”"
+            },
+            {
+              "ref": "Jhn.1.28",
+              "note": "“In Bethany, across the Jordan, where John was baptizing.”"
+            },
+            {
+              "ref": "Mat.19.1"
+            },
+            {
+              "ref": "Jhn.18.1",
+              "note": "“Across the brook Kidron.”"
+            }
+          ],
+          "kin": [
+            "beyond-the-river"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבָרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "transgression",
+      "summary": "The Peshitta's ܥܒܪܐ (ʿbārā), for παράβασις.",
+      "cognate_ids": [
+        "arc-avar"
+      ],
+      "senses": [
+        {
+          "gloss": "transgression",
+          "definition": "A crossing of the law's command.",
+          "evidence": [
+            {
+              "ref": "Rom.4.15",
+              "role": "defining",
+              "note": "“Where there is no law, there is no transgression.”"
+            },
+            {
+              "ref": "Rom.5.14",
+              "role": "defining",
+              "note": "“After the likeness of the transgression of Adam.”"
+            }
+          ],
+          "kin": [
+            "transgress"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲבוּרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "grain, crop",
+      "summary": "The Peshitta's ܥܒܘܪܐ (ʿbūrā), the word of the Hebrew עָבוּר “produce of the land”.",
+      "cognate_ids": [
+        "arc-ibbura",
+        "akk-eburu"
+      ],
+      "senses": [
+        {
+          "id": "syc-grain",
+          "gloss": "grain, crop",
+          "definition": "Grain stored or bought.",
+          "evidence": [
+            {
+              "ref": "Act.7.12",
+              "role": "defining",
+              "note": "“When Jacob heard that there was grain in Egypt.”"
+            },
+            {
+              "ref": "Luk.12.18",
+              "role": "defining",
+              "note": "“I will gather there all my grain and my goods.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵבְרָיָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "Hebrew; a Hebrew",
+      "summary": "The Peshitta's ܥܒܪܝܐ (ʿebrāyā), for Ἑβραῖος.",
+      "cognate_ids": [
+        "arc-ivray"
+      ],
+      "senses": [
+        {
+          "gloss": "a Hebrew",
+          "definition": "One of the Hebrew people; in Acts, the Hebrew-speaking disciples beside the Hellenists.",
+          "evidence": [
+            {
+              "ref": "Php.3.5",
+              "role": "defining",
+              "note": "“A Hebrew, son of Hebrews.”"
+            },
+            {
+              "ref": "2Co.11.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.6.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֵבְרָאִית",
+      "lang": "syc",
+      "pos": "adverb",
+      "gloss": "in Hebrew",
+      "summary": "The Peshitta's ܥܒܪܐܝܬ (ʿebrāʾīt), for Ἑβραϊστί and ἡ Ἑβραῒς διάλεκτος.",
+      "cognate_ids": [
+        "arc-ivray"
+      ],
+      "senses": [
+        {
+          "gloss": "in Hebrew (the language)",
+          "definition": "In the language of the Hebrews: the title on the cross, Paul's speech, place names.",
+          "evidence": [
+            {
+              "ref": "Jhn.19.20",
+              "role": "defining",
+              "note": "The title “was written in Hebrew and Greek and Latin”."
+            },
+            {
+              "ref": "Act.21.40",
+              "role": "defining",
+              "note": "Paul “spoke to them in Hebrew”."
+            },
+            {
+              "ref": "Jhn.5.2"
+            },
+            {
+              "ref": "Rev.9.11"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-abara",
+      "lang": "ar",
+      "form": "عَبَرَ",
+      "translit": "ʿabara",
+      "gloss": "cross (a river, a valley), go across from one side to the other; travel the road; (tropical) die",
+      "relation": "cognate",
+      "note": "The same movement as the Hebrew qal: crossing a river from one side to the other, and travelling along a road. Form II is to make another cross, as the hiphil. The wayfarer, ʿābiru sabīlin, is the Hebrew עֹבְרֵי דֶרֶךְ (Lam 1:12).",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1936, عَبَرَهُ (n27822)",
+          "note": "“He crossed it, went across it, or passed over it, from one side thereof to the other; namely, a river, and a valley.” Also “He travelled, or passed along, the way”, and tropically “He died”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1937, عبّرهُ بِالمَآءِ (n27823)",
+          "note": "Form II: “He made him to cross … or conveyed him across, the water, and the river.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1938, عَابِرُ سَبِيلٍ (n27844)",
+          "note": "“A wayfarer; a passenger; a person passing along a way or road.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ibr",
+      "lang": "ar",
+      "form": "عِبْرٌ",
+      "translit": "ʿibr",
+      "gloss": "bank, side (of a river, a valley)",
+      "relation": "cognate",
+      "note": "The far side one crosses to, as עֵבֶר: “its waves casting foam upon the two banks” of the Euphrates.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1938, عِبْرٌ (n27828)",
+          "note": "“The bank, or side, of a river, and of a valley.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-mabar",
+      "lang": "ar",
+      "form": "مَعْبَرٌ",
+      "translit": "maʿbar",
+      "gloss": "place where a river is crossed, ferry",
+      "relation": "cognate",
+      "note": "Formed with m- as מַעֲבָר is.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1938, مَعْبَرٌ (n27846)",
+          "note": "“A place where a river is crossed; a ferry: a bank, or side, of a river, prepared for crossing.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1939, مِعْبَرٌ (n27847)",
+          "note": "“A thing upon which one crosses a river; whether it be a boat or a bridge.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-eberu",
+      "lang": "akk",
+      "form": "ebēru",
+      "translit": "ebēru",
+      "gloss": "cross over; bring across, make cross over; extend beyond",
+      "relation": "cognate",
+      "note": "The common Akkadian verb for crossing a river, with a causative “bring across” as the hiphil.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000041590, ebēru [cross over] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000041590.html",
+          "note": "Meanings: bring across, cross over, cross over constantly, extend beyond, make cross over, stretch over; 1,446 instances."
+        }
+      ]
+    },
+    {
+      "id": "akk-ebertu",
+      "lang": "akk",
+      "form": "ebertu",
+      "translit": "ebertu",
+      "gloss": "bank; the opposite bank, the other side",
+      "relation": "cognate",
+      "note": "As עֵבֶר, the land across the river; the Persian province “Beyond the River” is in Akkadian eber nāri.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000023220, ebertu [bank] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000023220.html",
+          "note": "Meanings: bank, on the opposite bank, opposite bank, other side; 271 instances."
+        }
+      ]
+    },
+    {
+      "id": "akk-neberu",
+      "lang": "akk",
+      "form": "nēberu",
+      "translit": "nēberu",
+      "gloss": "crossing, crossing point, ford; ferry",
+      "relation": "cognate",
+      "note": "A noun of ebēru for the place or means of crossing, as מַעֲבָר and מַעְבָּרָה.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000014170, nēberu [crossing] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000014170.html",
+          "note": "Meanings: crossing, crossing point, ferry, ferryboat, ford; also the planet Jupiter."
+        }
+      ]
+    },
+    {
+      "id": "akk-eburu",
+      "lang": "akk",
+      "form": "ebūru",
+      "translit": "ebūru",
+      "gloss": "harvest, crop; summer",
+      "relation": "possible",
+      "note": "Its meaning matches עָבוּר “produce of the land” and the Aramaic and Syriac “grain”; that it is the same root as ebēru “cross” is not shown.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000036080, ebūru [harvest] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000036080.html",
+          "note": "Meanings: harvest, summer; 937 instances."
+        }
+      ]
+    },
+    {
+      "id": "phn-abr",
+      "lang": "phn",
+      "form": "𐤏𐤁𐤓",
+      "translit": "ʿbr",
+      "gloss": "trans-riverine region",
+      "relation": "cognate",
+      "note": "In a title, “governor of the region across LSPT”, as עֵבֶר הַנָּהָר.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 359, ʿBR; ʿBR LSPT (RES 930.1)",
+          "note": "“[Heb. ʿeber] n.m. TRANS-RIVERINE REGION … ʿbdmskr rb ʿbr lspt, ‘Abdmescar, Governor of the Trans-LSPT.’”"
+        }
+      ]
+    },
+    {
+      "id": "phn-mabr",
+      "lang": "phn",
+      "form": "𐤌𐤏𐤁𐤓",
+      "translit": "mʿbr",
+      "gloss": "pass (in the mountains)?",
+      "relation": "possible",
+      "note": "One Neo-Punic use, whose context the dictionary marks as difficult.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 300, MʿBR (KAI 145 II 7/8)",
+          "note": "“[Heb. maʿabar] n.m. ?PASS in the mountains … ‘Through the pass he came down into the valley.’ (Context difficult; translation problematic.)”"
+        }
+      ]
+    },
+    {
+      "id": "sab-abr-v",
+      "lang": "sem",
+      "form": "𐩲𐩨𐩧",
+      "translit": "ʿbr",
+      "gloss": "pass, cross (Sabaean)",
+      "relation": "cognate",
+      "note": "Sabaean: “Beware of crossing! (This is) the boundary! And whoever crosses, entering it …”: crossing a bound, as עָבַר of a border.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 350, ʿBR v. (R 4088/1–3)",
+          "note": "“(1) PASS, CROSS [cf Ar ʿabara ‘cross, pass over.’]”"
+        }
+      ]
+    },
+    {
+      "id": "sab-abr-n",
+      "lang": "sem",
+      "form": "𐩲𐩨𐩧",
+      "translit": "ʿbr",
+      "gloss": "crossing; cultivated bank of a canal or river, meadow; canal (Sabaean)",
+      "relation": "cognate",
+      "note": "The noun of the Sabaean verb: the crossing, and the bank across the water.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 351, ʿBR n. (R 4088/1; 5623/17)",
+          "note": "“(1) CROSSING (masdar) (2) CULTIVATED BANK OF CANAL OR RIVER = MEADOW (3) (LARGE) CANAL.”"
+        }
+      ]
+    },
+    {
+      "id": "sab-abr-prep",
+      "lang": "sem",
+      "form": "𐩲𐩨𐩧",
+      "translit": "ʿbr",
+      "gloss": "to, toward; against; (k-ʿbrn) to the end that, so that (Sabaean)",
+      "relation": "cognate",
+      "note": "The Sabaean root used as a preposition of direction and, with k-, of purpose, as בַּעֲבוּר is “for the sake of, in order that”.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 350, ʿBR prep. and k-ʿbrn-mw (J 628/7)",
+          "note": "“(1) TO, TOWARD … (2) AGAINST … (3) INCUMBENT UPON”; k-ʿbrn-mw “TO THE END THAT, SO THAT”."
+        }
+      ]
+    },
+    {
+      "id": "arc-avar",
+      "lang": "arc",
+      "form": "עֲבַר",
+      "translit": "ʿăḇar",
+      "gloss": "pass, cross, step over; transgress; forgive (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums use it where the Hebrew has עָבַר, as at Gen 12:6 and 32:17, and its aphel for the hiphil (Lev 18:21; Exo 36:6).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲבַר (ch.)",
+          "note": "“to pass, cross, step over, forgive &c. … Targ. Gen. XXXII, 17. Ib. XII, 6 … Af. as preced. Hif. Targ. O. Lev. XVIII, 21.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-eibar",
+      "lang": "arc",
+      "form": "עֵיבַר",
+      "translit": "ʿēḇar",
+      "gloss": "border, bank, side (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targum's word for Hebrew עֵבֶר, as at Gen 50:10 and Exo 32:15.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֵיבַר II",
+          "note": "“= h. עֵבֶר, border, bank, side … Targ. O. Gen. L, 10 … Pl. … Targ. O. Ex. XXXII, 15.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-mabarta",
+      "lang": "arc",
+      "form": "מַעְבַּרְתָּא",
+      "translit": "maʿbartā",
+      "gloss": "crossing, ferry, ford (Jewish Aramaic)",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מַעְבַּרְתָּא (ch.)",
+          "note": "“crossing, ferry, ford.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-ibbura",
+      "lang": "arc",
+      "form": "עִיבּוּרָא",
+      "translit": "ʿibbūrā",
+      "gloss": "grain, breadstuff (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targum's word for grain, where the Hebrew has דָּגָן (Gen 27:28).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עִיבּוּר II (ch.), עִיבּוּרָא",
+          "note": "“grain, breadstuff. Targ. Gen. XXVII, 28; 37 (h. text דגן) … Targ. Gen. XLI, 35.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-ivray",
+      "lang": "arc",
+      "form": "עִבְרַי",
+      "translit": "ʿiḇray",
+      "gloss": "Hebrew, a Hebrew (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targum's word for עִבְרִי at Gen 14:13 and 39:14, 17.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עִבְרַי (ch.)",
+          "note": "“Targ. Gen. XIV, 13 … Ib. XXXIX, 14; 17 … Pl. עִבְרָאֵי.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "transgression-and-death",
+      "statement": "To transgress is to pass over (עָבַר) what God has commanded: Israel “transgressed my covenant which I commanded them” (Jos 7:11); Saul “transgressed the mouth of Yahweh” (1Sa 15:24). Hosea says Israel transgressed the covenant “like Adam” (Hos 6:7), and Paul speaks of “the transgression of Adam” (Rom 5:14), through whom “sin entered into the world, and death through sin, and so death passed through to all men, because all sinned” (Rom 5:12). From the verses: death is the consequence of transgression, passed to all Adam's race; it is the end of life, not a passing into another life.",
+      "evidence": [
+        {
+          "ref": "Jos.7.11"
+        },
+        {
+          "ref": "1Sa.15.24"
+        },
+        {
+          "ref": "Hos.6.7"
+        },
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Rom.5.12"
+        },
+        {
+          "ref": "Rom.5.14"
+        }
+      ]
+    },
+    {
+      "topic": "forgiveness",
+      "statement": "When David confessed, “I have sinned against Yahweh”, Nathan answered, “Yahweh also has put away (הֶעֱבִיר, made to pass) your sin; you shall not die” (2Sa 12:13). To Joshua the high priest, standing in filthy garments, Yahweh said, “I have made your iniquity pass from you, and will clothe you with rich robes” (Zec 3:4); Micah asks, “Who is a God like you, lifting iniquity and passing over transgression?” (Mic 7:18), and Yahweh proclaimed himself to Moses as “lifting iniquity and transgression and sin” as he passed by (Exo 34:6–7). From the verses: forgiveness is God's own act, taking away the sin that would bring death, and he does it for those who confess it.",
+      "evidence": [
+        {
+          "ref": "2Sa.12.13"
+        },
+        {
+          "ref": "Zec.3.4"
+        },
+        {
+          "ref": "Mic.7.18"
+        },
+        {
+          "ref": "Exo.34.6",
+          "to": "Exo.34.7"
+        },
+        {
+          "ref": "Job.7.21"
+        }
+      ]
+    },
+    {
+      "topic": "through-the-sea",
+      "statement": "Yahweh made Israel pass through the sea (Psa 78:13; 136:14); “through the river they passed on foot” (Psa 66:6); he “made the depths of the sea a way for the redeemed to pass over” (Isa 51:10). Paul says that “our fathers were all under the cloud, and all passed through the sea, and were all baptized into Moses in the cloud and in the sea” (1Co 10:1–2), and Hebrews that “by faith they crossed the Red Sea” (Heb 11:29). From the verses: the crossing of the sea was Israel's redemption out of Egypt, and Paul reads it as a figure of baptism.",
+      "evidence": [
+        {
+          "ref": "Psa.78.13"
+        },
+        {
+          "ref": "Psa.136.14"
+        },
+        {
+          "ref": "Psa.66.6"
+        },
+        {
+          "ref": "Isa.51.10"
+        },
+        {
+          "ref": "1Co.10.1",
+          "to": "1Co.10.2"
+        },
+        {
+          "ref": "Heb.11.29"
+        }
+      ]
+    },
+    {
+      "topic": "crossing-into-the-land",
+      "statement": "The Jordan stood between Israel and the land Yahweh swore to the fathers: “you are crossing the Jordan today to go in to possess” (Deu 9:1); “Yahweh your God, he is crossing over before you” (Deu 31:3). Moses pleaded, “let me cross and see the good land”, but Yahweh was furious with him (וַיִּתְעַבֵּר) and said, “you shall not cross this Jordan” (Deu 3:25–27); he was shown the land promised “to Abraham, to Isaac and to Jacob” and told, “you shall not cross over there” (Deu 34:4), and he died. From the verses: the land is the inheritance promised to Abraham's seed, which Moses saw and did not receive; Hebrews says the faithful of old all died not having received the promises (Heb 11:13, 39).",
+      "evidence": [
+        {
+          "ref": "Deu.9.1"
+        },
+        {
+          "ref": "Deu.31.3"
+        },
+        {
+          "ref": "Deu.3.25",
+          "to": "Deu.3.27"
+        },
+        {
+          "ref": "Deu.4.21",
+          "to": "Deu.4.22"
+        },
+        {
+          "ref": "Deu.34.4"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Heb.11.39"
+        }
+      ]
+    },
+    {
+      "topic": "valley-of-hinnom",
+      "statement": "The nations made their sons and daughters pass through the fire, and Israel was forbidden it (Lev 18:21; Deu 18:10). Kings of Judah did it (2Ki 16:3; 21:6) in the valley of the son of Hinnom, at Topheth, “which I did not command them, nor did it come into my heart” (Jer 32:35; 7:31); Josiah defiled Topheth so that none could do it again (2Ki 23:10). Jeremiah says the place will be called “the valley of slaughter”, where they will bury until there is no room (Jer 7:32). Jesus names “the valley of Hinnom of fire” as the end of the wicked (Mat 5:22; Mrk 9:47), in the words of Isa 66:24, where the worm and the fire are on “the corpses of the men who transgressed against me”. From the verses: the valley of Hinnom is a place of slaughter and of dead bodies, the figure of the destruction of the wicked, not of living torment.",
+      "evidence": [
+        {
+          "ref": "Lev.18.21"
+        },
+        {
+          "ref": "Deu.18.10"
+        },
+        {
+          "ref": "2Ki.23.10"
+        },
+        {
+          "ref": "Jer.32.35"
+        },
+        {
+          "ref": "Jer.7.31",
+          "to": "Jer.7.32"
+        },
+        {
+          "ref": "Mat.5.22"
+        },
+        {
+          "ref": "Mrk.9.47",
+          "to": "Mrk.9.48"
+        },
+        {
+          "ref": "Isa.66.24"
+        }
+      ]
+    },
+    {
+      "topic": "day-of-wrath",
+      "statement": "The prophets call the day of Yahweh “a day of wrath (יוֹם עֶבְרָה)” (Zep 1:15), when “neither their silver nor their gold will be able to deliver them” (Zep 1:18; Ezk 7:19), coming “to make the land a desolation and destroy its sinners from it” (Isa 13:9). The Proverbs add that “riches do not profit in the day of wrath, but righteousness delivers from death” (Pro 11:4). Paul warns of “the day of wrath and revelation of the righteous judgment of God” (Rom 2:5), and Revelation of “the great day of his wrath” (Rev 6:17). From the verses: God's wrath falls on the earth's sinners in a day of judgment, and what delivers from death then is righteousness, not wealth.",
+      "evidence": [
+        {
+          "ref": "Zep.1.15"
+        },
+        {
+          "ref": "Zep.1.18"
+        },
+        {
+          "ref": "Ezk.7.19"
+        },
+        {
+          "ref": "Isa.13.9"
+        },
+        {
+          "ref": "Pro.11.4"
+        },
+        {
+          "ref": "Rom.2.5"
+        },
+        {
+          "ref": "Rev.6.17"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Man's days are “like a passing shadow (כְּצֵל עוֹבֵר)” (Psa 144:4); he is like grass, and “the wind passes over it and it is gone, and its place knows it no more” (Psa 103:15–16); God has set his limits “and he cannot pass” (Job 14:5). Against this the statute God gave “will not pass” (Psa 148:6), and Jesus says, “Heaven and earth will pass away, but my words will not pass away” (Mat 24:35); “the world passes away … but he who does the will of God abides for ever” (1Jn 2:17). From the verses: man is mortal and passes away; what lasts is God's word, and life that lasts is given to those who do his will.",
+      "evidence": [
+        {
+          "ref": "Psa.144.4"
+        },
+        {
+          "ref": "Psa.103.15",
+          "to": "Psa.103.16"
+        },
+        {
+          "ref": "Job.14.5"
+        },
+        {
+          "ref": "Psa.148.6"
+        },
+        {
+          "ref": "Mat.24.35"
+        },
+        {
+          "ref": "1Jn.2.17"
+        },
+        {
+          "ref": "Jas.1.10"
+        }
+      ]
+    },
+    {
+      "topic": "light-in-galilee",
+      "statement": "Isaiah foretold that the land of Zebulun and Naphtali, “the way of the sea, beyond the Jordan (עֵבֶר הַיַּרְדֵּן), Galilee of the nations”, would be honoured: “the people who walked in darkness have seen a great light” (Isa 8:23–9:1). Matthew says this was fulfilled when Jesus went to live at Capernaum and began to preach there (Mat 4:13–17).",
+      "evidence": [
+        {
+          "ref": "Isa.8.23"
+        },
+        {
+          "ref": "Isa.9.1"
+        },
+        {
+          "ref": "Mat.4.15",
+          "to": "Mat.4.16"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key עבר as BDB keys it (p.ah). Word keys: verb p.ah.aa only (p.ah.ah, BDB's “denominative” hithpael “be furious”, lists the same tokens and is left unnamed; its sense is the hithpael stem here); עֵבֶר p.ah.ab; עֲבוּר (בַּעֲבוּר) p.ah.am; עִבְרִי p.ah.ad; עֶבְרָה p.ah.ag; Aramaic עֲבַר xp.aa.af; מַעֲבָר p.ah.an and מַעְבָּרָה p.ah.ao (the brief counts the same eleven tokens under both, by spelling: really three and eight); עֲבָרָה p.ah.af; עָבוּר “produce” p.ah.al. עִבְרִי “Hebrew” is a people's name, which takes no name entry, so it is kept as a word of the entry (as מִצְרִי is in mitsrayim), with its Targum cognate. Names: Eber (p.ah.ac) and Ibri (p.ah.ae) have their own entries in names/. Left out as places: Abarim (p.ah.ai), Abronah (p.ah.ak), Ebron (p.ah.aj). The cross-reference keys יַעְבֵּץ (j.ca.af) and m.ct.ah have no tokens. The Peshitta's מתעברנותא “transgression” (2Pe 2:16, SEDRA lexeme 2231) is left out as a one-use derived form. Sounds: Arabic and Sabaean show ʿ behind ע in every word; Arabic غبر “remain; pass away; dust” (ġ) means something else and is not a cognate; no sense of the root needs it. Leads not followed: Ugaritic ʿbr “pass” (not in Segert's glossary; DULAT not vendored); Ge'ez ʿadawa/ʿabara (Dillmann, Leslau, not vendored); Arabic عِبْرِيٌّ “Hebrew” (Lane p. 1938) is a loan from Hebrew into Arabic, not a cognate. The Krahmalkov pages (300, 359) are from the text layer's page footers, not checked against the PDF image. The link of the piel “breed” (Job 21:10), of בַּעֲבוּר and of עָבוּר “produce” to “pass over” is not shown by scripture; the Sabaean preposition ʿbr is named as בַּעֲבוּר's cognate on the strength of its being the same root used as a preposition of purpose. The Septuagint renders Abram הָעִבְרִי at Gen 14:13 by τῷ περάτῃ “the one from across”, which is a translation, not evidence."
+}
