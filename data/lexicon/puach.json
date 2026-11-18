@@ -1,0 +1,385 @@
+{
+  "id": "puach",
+  "root": "פוח",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "food",
+    "speech"
+  ],
+  "gloss": "breathe, blow, utter; furnace soot; eye paint; beans",
+  "summary": "The wind blows through a garden, and a witness breathes out testimony. In the same index group, Exodus names the soot Moses took from a furnace. Two other nouns name eye paint and edible beans.",
+  "words": [
+    {
+      "lemma": "פּוּחַ",
+      "pos": "verb",
+      "gloss": "breathe, blow, utter",
+      "bdb": [
+        "q.ao.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "breathe",
+          "senses": [
+            {
+              "gloss": "breathe",
+              "definition": "Of the day, to stir with a breeze as the shadows flee.",
+              "evidence": [
+                {
+                  "ref": "Sng.2.17",
+                  "role": "defining",
+                  "note": "The breathing of the day and the flight of the shadows mark the time for the beloved to turn."
+                },
+                {
+                  "ref": "Sng.4.6",
+                  "role": "defining",
+                  "note": "The same refrain accompanies the journey to the mountain of myrrh."
+                }
+              ],
+              "cognate_ids": [
+                "arc-blow"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "blow, utter, stir up",
+          "senses": [
+            {
+              "gloss": "blow upon",
+              "definition": "To direct a current of air toward something.",
+              "evidence": [
+                {
+                  "ref": "Sng.4.16",
+                  "role": "defining",
+                  "note": "The winds are summoned to blow on the garden so that its spices give off their scent."
+                },
+                {
+                  "ref": "Ezk.21.36",
+                  "role": "defining",
+                  "note": "Yahweh pictures his wrath as fire blown against the one he judges."
+                }
+              ],
+              "cognate_ids": [
+                "arc-blow",
+                "ar-exhale",
+                "mt-smell"
+              ]
+            },
+            {
+              "gloss": "puff, pant",
+              "definition": "To express contempt or longing with the breath.",
+              "evidence": [
+                {
+                  "ref": "Psa.10.5",
+                  "role": "defining",
+                  "note": "The wicked man puffs at his enemies."
+                },
+                {
+                  "ref": "Psa.12.6",
+                  "role": "defining",
+                  "note": "The final verb can describe someone panting for safety. The subject and object are disputed."
+                }
+              ],
+              "cognate_ids": [
+                "arc-blow"
+              ]
+            },
+            {
+              "gloss": "utter",
+              "definition": "To give voice to a statement, especially as a witness.",
+              "evidence": [
+                {
+                  "ref": "Pro.6.19",
+                  "role": "defining",
+                  "note": "The false witness breathes out lies."
+                },
+                {
+                  "ref": "Pro.12.17",
+                  "role": "defining",
+                  "note": "A truthful speaker gives honest testimony."
+                },
+                {
+                  "ref": "Hab.2.3",
+                  "role": "defining",
+                  "note": "The vision itself speaks of its appointed end."
+                }
+              ]
+            },
+            {
+              "gloss": "inflame",
+              "definition": "To stir up conflict among people.",
+              "evidence": [
+                {
+                  "ref": "Pro.29.8",
+                  "role": "defining",
+                  "note": "Mockers inflame a city, while wise people turn away anger."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פִּיחַ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "q.ao.ab"
+      ],
+      "gloss": "furnace soot",
+      "senses": [
+        {
+          "gloss": "furnace soot",
+          "definition": "Fine residue from a furnace that can be scattered into the air.",
+          "evidence": [
+            {
+              "ref": "Exo.9.8",
+              "role": "defining",
+              "note": "Moses and Aaron are told to take handfuls of furnace soot."
+            },
+            {
+              "ref": "Exo.9.10",
+              "role": "defining",
+              "note": "Moses throws it toward the sky in Pharaoh’s presence."
+            }
+          ],
+          "cognate_ids": [
+            "arc-soot"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פּוּךְ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "q.ao.ag"
+      ],
+      "gloss": "eye paint; mineral used in decoration",
+      "senses": [
+        {
+          "gloss": "eye paint",
+          "definition": "A cosmetic applied around the eyes to emphasize their appearance.",
+          "evidence": [
+            {
+              "ref": "2Ki.9.30",
+              "role": "defining",
+              "note": "Jezebel paints her eyes and dresses her hair before appearing at the window."
+            },
+            {
+              "ref": "Jer.4.30",
+              "role": "defining",
+              "note": "The woman addressed enlarges her eyes with paint."
+            }
+          ]
+        },
+        {
+          "gloss": "material used with stones",
+          "definition": "A mineral or decorative material used in costly stonework.",
+          "evidence": [
+            {
+              "ref": "Isa.54.11",
+              "role": "defining",
+              "note": "The material is named in the setting of the restored city’s stones."
+            },
+            {
+              "ref": "1Ch.29.2",
+              "role": "defining",
+              "note": "David includes stones of פּוּךְ among the materials for the temple."
+            }
+          ]
+        }
+      ],
+      "summary": "The two building passages leave the identity and function of the material uncertain. The word’s connection with the verb for blowing is unclear."
+    },
+    {
+      "lemma": "פּוֹל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "q.ao.ah"
+      ],
+      "gloss": "beans, broad beans",
+      "senses": [
+        {
+          "gloss": "beans",
+          "definition": "An edible pulse carried as provisions and used in a mixture for bread.",
+          "evidence": [
+            {
+              "ref": "2Sa.17.28",
+              "role": "defining",
+              "note": "Beans and lentils are among the provisions brought to David at Mahanaim."
+            },
+            {
+              "ref": "Ezk.4.9",
+              "role": "defining",
+              "note": "Ezekiel puts beans and lentils into the same vessel as the grains for his bread."
+            }
+          ],
+          "cognate_ids": [
+            "ar-bean",
+            "arc-bean",
+            "syc-bean",
+            "gez-bean",
+            "mt-bean",
+            "egy-bean"
+          ]
+        }
+      ],
+      "summary": "The collective noun belongs to a widespread Semitic bean name. Its final consonant is l."
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-blow",
+      "lang": "arc",
+      "form": "פּוּחַ",
+      "translit": "pūaḥ",
+      "gloss": "blow",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Q00175, Jewish Aramaic, Jerusalem Talmud Rosh Hashanah 1"
+        }
+      ]
+    },
+    {
+      "id": "ar-exhale",
+      "lang": "ar",
+      "form": "فَاحَ",
+      "translit": "fāḥa",
+      "gloss": "exhale or diffuse fragrance",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2456, n34773, of musk and its odour"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "mt-smell",
+      "lang": "sem",
+      "form": "fieħ",
+      "translit": "fieħ",
+      "gloss": "have a sweet smell",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 5200a366e36f237975000c9d, root f-w-ħ"
+        }
+      ]
+    },
+    {
+      "id": "arc-soot",
+      "lang": "arc",
+      "form": "פִּיחָא",
+      "translit": "pīḥā",
+      "gloss": "furnace soot",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Q00612, Targum Onkelos to Exo 9:8"
+        }
+      ]
+    },
+    {
+      "id": "ar-bean",
+      "lang": "ar",
+      "form": "فُولٌ",
+      "translit": "fūl",
+      "gloss": "beans, broad beans",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2463, n34866"
+        }
+      ]
+    },
+    {
+      "id": "arc-bean",
+      "lang": "arc",
+      "form": "פּוּלָא",
+      "translit": "pūlā",
+      "gloss": "bean",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "pwl, pwlˀ, masculine grain or pulse noun"
+        }
+      ]
+    },
+    {
+      "id": "syc-bean",
+      "lang": "syc",
+      "form": "ܦܘܠܐ",
+      "translit": "pūlā",
+      "gloss": "bean",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "pwl, pwlˀ, Syriac masculine noun, listed among the supplements to A Syriac Lexicon"
+        }
+      ]
+    },
+    {
+      "id": "gez-bean",
+      "lang": "gez",
+      "form": "ፋል",
+      "translit": "fāl",
+      "gloss": "bean, chickpea",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 1339, ፋል, digital entry Ld7a99385a2a0430dae9c4dde93d0f0a3"
+        }
+      ]
+    },
+    {
+      "id": "mt-bean",
+      "lang": "sem",
+      "form": "fula",
+      "translit": "fula",
+      "gloss": "broad bean",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 522d85a76f3bad51370001c0"
+        }
+      ]
+    },
+    {
+      "id": "egy-bean",
+      "lang": "egy",
+      "form": "prj",
+      "translit": "prj",
+      "gloss": "beans",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla60970, Wb 1, 531.12, Hoch no. 150"
+        }
+      ],
+      "note": "The Egyptian dictionary identifies a borrowing from Semitic. The particular donor language is uncertain."
+    }
+  ],
+  "doctrine": [],
+  "note": "The corpus key also groups Put, Putiel, Potiphar, Potiphera and Pul by spelling. Their biblical uses supply no derivation from the verb for breathing. The derivation of Aphiah (1Sa 9:1) is also unclear. Job’s daughter Keren-happuch bears the compound name formed with the eye-paint noun."
+}
