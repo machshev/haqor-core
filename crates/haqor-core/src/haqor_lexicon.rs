@@ -123,6 +123,7 @@ pub const ARAMAIC_STEMS: &[&str] = &[
     "eshtaphal",
     "palpel",
     "ethpalpal",
+    "ithpolel",
 ];
 
 /// The Hebrew letters that each stand for more than one older sound, with the
