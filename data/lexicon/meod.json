@@ -1,0 +1,102 @@
+{
+  "id": "meod",
+  "root": "מאד",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "degree",
+    "strength"
+  ],
+  "gloss": "very, greatly; might",
+  "summary": "When God surveys all he has made, he calls it very good. The same word that intensifies “good” can carry a personal ending: Israel is to love Yahweh with all its might, and Josiah turns to him with all his might.",
+  "words": [
+    {
+      "lemma": "מְאֹד",
+      "bdb": [
+        "m.ab.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "very, exceedingly; might",
+      "senses": [
+        {
+          "gloss": "very, greatly",
+          "definition": "Used adverbially, it gives the degree of a quality or action. Repetition can heighten it further.",
+          "evidence": [
+            {
+              "ref": "Gen.1.31",
+              "role": "defining",
+              "note": "The good of the preceding days (Gen 1:25) becomes very good when God sees the whole."
+            },
+            {
+              "ref": "Exo.19.18",
+              "note": "The whole mountain trembles violently."
+            },
+            {
+              "ref": "Gen.7.19",
+              "note": "The doubled word describes how greatly the waters rose."
+            }
+          ],
+          "cognate_ids": [
+            "uga-mid",
+            "akk-madish"
+          ]
+        },
+        {
+          "gloss": "might, full capacity",
+          "definition": "With a possessive ending it names the might a person brings to an act of devotion. Josiah's response to the law echoes the command given to Israel.",
+          "evidence": [
+            {
+              "ref": "Deu.6.5",
+              "role": "defining",
+              "note": "With all your heart, with all your soul, and with all your might."
+            },
+            {
+              "ref": "2Ki.23.25",
+              "role": "defining",
+              "note": "Josiah turned to Yahweh with all his heart, soul and might according to the law of Moses."
+            },
+            {
+              "ref": "Mrk.12.30",
+              "note": "Jesus includes all one's strength when citing the command."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-mid",
+      "lang": "uga",
+      "form": "𐎎𐎛𐎄",
+      "translit": "mʾid",
+      "gloss": "plenty; very, much",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "§86.43, KTU 2.10:13, and §88.53, KTU 1.4 V:15",
+          "note": "The letter uses it to intensify strength. In the poem the mountains bring plenty of silver."
+        }
+      ]
+    },
+    {
+      "id": "akk-madish",
+      "lang": "akk",
+      "form": "maʾdiš",
+      "translit": "mādiš",
+      "gloss": "very, greatly, in large numbers",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000012400, mādiš (adverb); compare armep x000004720, mādu (adjective)",
+          "note": "The glossary records maʾdiš alongside mādiš. The adjective maʾdu describes what is abundant or numerous."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Does the possessive use distinguish strength from the resources a person commands? The two Hebrew passages do not enumerate these. Lane, p. 2687, n38182, Arabic maʾada describes a flourishing, supple plant; its relationship to the Hebrew intensifier is uncertain. The proposed Sabaean parallel still needs a securely located inscription."
+}
