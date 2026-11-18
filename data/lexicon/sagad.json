@@ -1,0 +1,718 @@
+{
+  "id": "sagad",
+  "root": "סגד",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "worship",
+    "idolatry",
+    "homage",
+    "body"
+  ],
+  "gloss": "bow down, prostrate oneself; worship, do homage",
+  "summary": "To bend low to the ground before another, in worship or in homage. In Hebrew it is found only in Isaiah's mockery of the idol-maker, who burns half a log for warmth and bread and bows down (יִסְגֹּד) to the rest of it, always beside הִשְׁתַּחֲוָה “bow down”. In the Aramaic of Daniel it is the word of the golden image: “fall down and worship”, set beside פְּלַח “serve”, refused by Shadrach, Meshach and Abednego, who would worship no god but their own; and Nebuchadnezzar uses it of himself, falling on his face before Daniel. The Peshitta uses it for προσκυνέω throughout the New Testament, so it is Jesus' own word in “you shall worship Yahweh your God and serve him only” (Mat 4:10). Arabic sajada “be lowly, bend down; put the forehead to the ground” shows the bodily act.",
+  "words": [
+    {
+      "lemma": "סָגַד",
+      "pos": "verb",
+      "gloss": "bow down, prostrate oneself (to an idol)",
+      "bdb": [
+        "o.ag.aa"
+      ],
+      "cognate_ids": [
+        "ar-sajada",
+        "arc-segad"
+      ],
+      "summary": "Four times, all in Isa 44–46 and all of bowing to a made god, each time with הִשְׁתַּחֲוָה “bow down” beside it. Its few uses are fixed by their context and by the Aramaic, which is far commoner.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bow down, prostrate oneself",
+          "senses": [
+            {
+              "id": "bow-to-idol",
+              "gloss": "bow down to a made god",
+              "definition": "To bend down to the ground before an idol as before a god, and pray to it: the act Isaiah sets beside the work of the man who made the idol from wood or gold.",
+              "evidence": [
+                {
+                  "ref": "Isa.44.15",
+                  "role": "defining",
+                  "note": "From the same tree he warms himself and bakes bread; “he makes a god וַיִּשְׁתָּחוּ, he makes it an idol וַיִּסְגָּד־לָמוֹ.”"
+                },
+                {
+                  "ref": "Isa.44.17",
+                  "role": "defining",
+                  "note": "“The rest of it he makes into a god, his idol; יִסְגָּד־לוֹ וְיִשְׁתַּחוּ, and prays to it and says, Deliver me, for you are my god.”"
+                },
+                {
+                  "ref": "Isa.44.19",
+                  "role": "defining",
+                  "note": "“Half of it I burned in the fire … shall I make the rest an abomination? לְבוּל עֵץ אֶסְגּוֹד”: bow down to a block of wood."
+                },
+                {
+                  "ref": "Isa.46.6",
+                  "role": "defining",
+                  "note": "They weigh out gold and silver, hire a smith, and he makes it a god; “יִסְגְּדוּ אַף־יִשְׁתַּחֲווּ.”"
+                },
+                {
+                  "ref": "Isa.46.7",
+                  "note": "They carry it and set it in its place; it does not move, and when one cries to it, it does not answer or save."
+                }
+              ],
+              "kin": [
+                "arc-worship-god"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προσκυνέω",
+          "gloss": "bow down to, worship",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.44.15, וַיִּשְׁתָּחוּ → προσκυνοῦσιν, with וַיִּסְגָּד left untranslated; for the Aramaic Dan.3.5, 6, 11, 12, 14, 15, 28, סְגִד → προσκυνέω"
+            },
+            {
+              "ref": "Rev.13.15",
+              "role": "defining",
+              "note": "“That as many as would not worship (προσκυνήσωσιν) the image of the beast should be killed”: the decree of Dan 3:6, where the Peshitta has נֵסגְּדוּן."
+            },
+            {
+              "ref": "Act.7.43",
+              "note": "“The figures which you made to worship (προσκυνεῖν) them”, Amo 5:26 quoted: the made god of Isa 44."
+            },
+            {
+              "ref": "Rev.9.20",
+              "note": "They did not repent “that they should not worship … idols of gold and silver and bronze and stone and wood, which can neither see nor hear nor walk”: the idols of Isa 44:9–20 and 46:6–7."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "הִשְׁתַּחֲוָה",
+            "note": "“Bow down”: beside סָגַד in every one of its Hebrew uses but Isa 44:19.",
+            "evidence": [
+              {
+                "ref": "Isa.44.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.44.17"
+              },
+              {
+                "ref": "Isa.46.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הִתְפַּלֵּל",
+            "note": "“Pray”: what the idol-maker does after he bows down.",
+            "evidence": [
+              {
+                "ref": "Isa.44.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "סְגִד",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "fall down and worship; do homage",
+      "bdb": [
+        "xo.ac.ab"
+      ],
+      "cognate_ids": [
+        "ar-sajada",
+        "arc-segad"
+      ],
+      "summary": "Twelve times in Daniel, eleven of them in chapter 3, where it is joined with נְפַל “fall” and set beside פְּלַח “serve”.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "fall down and worship; do homage",
+          "senses": [
+            {
+              "id": "arc-worship-god",
+              "gloss": "worship (an image, a god)",
+              "definition": "To fall to the ground before an image or a god as an act of worship; with פְּלַח “serve”, the two acts that belong to a god alone.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.5",
+                  "role": "defining",
+                  "note": "“You shall fall down (תִּפְּלוּן) וְתִסְגְּדוּן to the image of gold that Nebuchadnezzar the king has set up.”"
+                },
+                {
+                  "ref": "Dan.3.6",
+                  "note": "“Whoever does not fall down וְיִסְגֻּד shall be thrown into the midst of a burning fiery furnace.”"
+                },
+                {
+                  "ref": "Dan.3.7"
+                },
+                {
+                  "ref": "Dan.3.10"
+                },
+                {
+                  "ref": "Dan.3.11"
+                },
+                {
+                  "ref": "Dan.3.12",
+                  "role": "defining",
+                  "note": "“Your gods they do not serve (פָלְחִין), and the image of gold which you set up they do not worship (סָגְדִין).”"
+                },
+                {
+                  "ref": "Dan.3.14",
+                  "note": "“Is it true … you do not serve my gods nor worship the image of gold which I have set up?”"
+                },
+                {
+                  "ref": "Dan.3.15",
+                  "note": "“If you do not worship … and who is the god who will deliver you out of my hands?”"
+                },
+                {
+                  "ref": "Dan.3.18",
+                  "role": "defining",
+                  "note": "“Be it known to you, O king, that we will not serve your gods nor worship (נִסְגֻּד) the image of gold.”"
+                },
+                {
+                  "ref": "Dan.3.28",
+                  "role": "defining",
+                  "note": "Nebuchadnezzar blesses their God, who delivered his servants who gave up their bodies “that they might not serve nor worship (יִסְגְּדוּן) any god except their own God”."
+                }
+              ],
+              "kin": [
+                "bow-to-idol",
+                "syc-worship-god",
+                "syc-worship-idol"
+              ]
+            },
+            {
+              "id": "arc-homage-man",
+              "gloss": "do homage (to a man)",
+              "definition": "To fall on one's face before a man and honour him with the gestures of worship.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.46",
+                  "role": "defining",
+                  "note": "“Nebuchadnezzar the king fell on his face, וּלְדָנִיֵּאל סְגִד, and commanded that they should offer an offering and sweet odours to him”; Daniel had said the secret was revealed by the God in heaven, not by any wisdom of his own (Dan 2:28, 30)."
+                },
+                {
+                  "ref": "Dan.2.47",
+                  "note": "The king's answer turns to Daniel's God: “Truly your God is God of gods and Lord of kings, and a revealer of secrets.”"
+                }
+              ],
+              "kin": [
+                "syc-homage"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προσκυνέω",
+          "gloss": "bow down to, worship",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.3.5, 6, 11, 12, 14, 15, 28, סְגִד → προσκυνέω (Theodotion)"
+            },
+            {
+              "ref": "Mat.2.11",
+              "note": "The magi “fell down and worshipped him (πεσόντες προσεκύνησαν)”: the “fall down and worship” of Dan 3:5, 10."
+            },
+            {
+              "ref": "Rev.20.4",
+              "note": "Those “who had not worshipped the beast nor his image” live and reign with Christ a thousand years: the refusal of Dan 3:18."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "פְּלַח",
+            "note": "“Serve”: serving the gods and worshipping the image are named together each time the charge is made or answered.",
+            "evidence": [
+              {
+                "ref": "Dan.3.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.3.14"
+              },
+              {
+                "ref": "Dan.3.18"
+              },
+              {
+                "ref": "Dan.3.28",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נְפַל",
+            "note": "“Fall (down)”: the movement of which סְגִד is the act.",
+            "evidence": [
+              {
+                "ref": "Dan.2.46",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.3.5"
+              },
+              {
+                "ref": "Dan.3.10"
+              },
+              {
+                "ref": "Dan.3.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "סְגֵד",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "worship; bow down, do homage",
+      "summary": "The Peshitta's ܣܓܕ (sgeḏ), about sixty times, for προσκυνέω (and in Rom 11:4 beside κάμπτω, bow the knee). It is said of God, of Jesus, of men, of idols and of the beast and his image.",
+      "cognate_ids": [
+        "ar-sajada",
+        "arc-segad"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "worship; bow down, do homage",
+          "senses": [
+            {
+              "id": "syc-worship-god",
+              "gloss": "worship God",
+              "definition": "To bow down to God and serve him; the worship that belongs to him alone, given in spirit and truth and not bound to a mountain or a city.",
+              "evidence": [
+                {
+                  "ref": "Mat.4.10",
+                  "role": "defining",
+                  "note": "Deu 6:13 quoted to the adversary: “You shall worship (תֵּסגֻּוד) Yahweh your God, and him only shall you serve (תֵּפלֻוח)”: the pair סגד and פלח of Dan 3:12–28."
+                },
+                {
+                  "ref": "Luk.4.8"
+                },
+                {
+                  "ref": "Jhn.4.20",
+                  "to": "Jhn.4.22",
+                  "note": "“Our fathers worshipped on this mountain, and you say that in Jerusalem is the place where one must worship”; “the hour comes when neither on this mountain nor in Jerusalem shall you worship the Father.”"
+                },
+                {
+                  "ref": "Jhn.4.23",
+                  "to": "Jhn.4.24",
+                  "role": "defining",
+                  "note": "“The true worshippers (סָגוֹדֵא) shall worship the Father in spirit and in truth … God is spirit, and those who worship him must worship in spirit and in truth.”"
+                },
+                {
+                  "ref": "1Co.14.25",
+                  "role": "defining",
+                  "note": "The unbeliever “will fall on his face and worship God, declaring that God is truly among you”."
+                },
+                {
+                  "ref": "Rev.19.10",
+                  "role": "defining",
+                  "note": "John fell at the angel's feet to worship him; “See that you do not; I am your fellow servant … worship God.”"
+                },
+                {
+                  "ref": "Rev.22.8",
+                  "to": "Rev.22.9",
+                  "note": "Again: “I am your fellow servant, and of your brothers the prophets … worship God (לַאלָהָא סגֻוד).”"
+                },
+                {
+                  "ref": "Rev.4.10",
+                  "note": "The twenty-four elders fall down before him who sits on the throne and worship him who lives for ever."
+                },
+                {
+                  "ref": "Rev.7.11"
+                },
+                {
+                  "ref": "Rev.11.16"
+                },
+                {
+                  "ref": "Rev.14.7",
+                  "note": "“Fear God and give glory to him … and worship him who made heaven and earth and the sea and the springs of water.”"
+                },
+                {
+                  "ref": "Rev.15.4",
+                  "note": "“All nations shall come and worship before you, for your judgments have been revealed.”"
+                },
+                {
+                  "ref": "Act.8.27",
+                  "note": "The Ethiopian “had come to Jerusalem to worship”."
+                },
+                {
+                  "ref": "Jhn.12.20",
+                  "note": "Greeks who came up to worship at the feast."
+                },
+                {
+                  "ref": "Act.24.11"
+                },
+                {
+                  "ref": "Heb.11.21",
+                  "note": "Jacob “worshipped, leaning on the top of his staff” (Gen 47:31)."
+                }
+              ],
+              "kin": [
+                "arc-worship-god"
+              ]
+            },
+            {
+              "id": "syc-worship-son",
+              "gloss": "bow down to Jesus, worship him",
+              "definition": "To fall before Jesus as the king born to Israel, the Son of God, and the one raised and given all authority; done at God's command and confessing him as God's Son.",
+              "evidence": [
+                {
+                  "ref": "Mat.2.2",
+                  "role": "defining",
+                  "note": "“Where is he who is born king of the Jews? … we have come to worship him”; and Mat 2:11 “they fell down and worshipped him”."
+                },
+                {
+                  "ref": "Mat.2.11"
+                },
+                {
+                  "ref": "Mat.14.33",
+                  "role": "defining",
+                  "note": "Those in the boat “worshipped him, saying, Truly you are the Son of God”."
+                },
+                {
+                  "ref": "Jhn.9.35",
+                  "to": "Jhn.9.38",
+                  "role": "defining",
+                  "note": "“Do you believe in the Son of God?” … “Lord, I believe,” and he worshipped him."
+                },
+                {
+                  "ref": "Heb.1.6",
+                  "role": "defining",
+                  "note": "“When he brings the firstborn into the world he says, Let all the angels of God worship him”: God commands it of his Son."
+                },
+                {
+                  "ref": "Mat.28.9"
+                },
+                {
+                  "ref": "Mat.28.17",
+                  "to": "Mat.28.18",
+                  "note": "They worshipped him; and he said, “All authority has been given to me in heaven and on earth.”"
+                },
+                {
+                  "ref": "Luk.24.52"
+                },
+                {
+                  "ref": "Mat.8.2",
+                  "note": "A leper bowed before him: “Lord, if you will, you can make me clean.”"
+                },
+                {
+                  "ref": "Mat.9.18"
+                },
+                {
+                  "ref": "Mat.15.25"
+                },
+                {
+                  "ref": "Mat.20.20"
+                },
+                {
+                  "ref": "Mrk.5.6"
+                },
+                {
+                  "ref": "Mrk.15.19",
+                  "note": "The soldiers, mocking, “bowing their knees worshipped him”."
+                }
+              ]
+            },
+            {
+              "id": "syc-homage",
+              "gloss": "bow down to a man, do homage",
+              "definition": "To fall before a man in homage or entreaty; refused by the apostles when it was given to them as to more than a man.",
+              "evidence": [
+                {
+                  "ref": "Mat.18.26",
+                  "role": "defining",
+                  "note": "The servant “fell down and bowed before him”, his master, “Have patience with me, and I will pay you all.”"
+                },
+                {
+                  "ref": "Act.10.25",
+                  "to": "Act.10.26",
+                  "role": "defining",
+                  "note": "Cornelius fell at Peter's feet and worshipped (סגֵד); Peter raised him, “Stand up; I too am a man.”"
+                },
+                {
+                  "ref": "Rev.3.9",
+                  "note": "“I will make them come and worship before your feet”, after Isa 60:14."
+                }
+              ],
+              "kin": [
+                "arc-homage-man"
+              ]
+            },
+            {
+              "id": "syc-worship-idol",
+              "gloss": "worship idols, the beast and his image",
+              "definition": "To worship what men have made or what is not God: idols, Baal, a goddess, the beast and his image.",
+              "evidence": [
+                {
+                  "ref": "Rev.13.15",
+                  "role": "defining",
+                  "note": "The image of the beast causes “that as many as would not worship the image of the beast should be killed”: Dan 3:6 again."
+                },
+                {
+                  "ref": "Rev.13.4",
+                  "note": "“They worshipped the dragon … and they worshipped the beast, saying, Who is like the beast?”"
+                },
+                {
+                  "ref": "Rev.13.8"
+                },
+                {
+                  "ref": "Rev.13.12"
+                },
+                {
+                  "ref": "Rev.14.9",
+                  "to": "Rev.14.11"
+                },
+                {
+                  "ref": "Rev.16.2"
+                },
+                {
+                  "ref": "Rev.19.20"
+                },
+                {
+                  "ref": "Rev.20.4",
+                  "role": "defining",
+                  "note": "Those “who had not worshipped the beast nor his image” lived and reigned with Christ a thousand years."
+                },
+                {
+                  "ref": "Rev.9.20",
+                  "role": "defining",
+                  "note": "Idols of gold, silver, bronze, stone and wood, “which can neither see nor hear nor walk”: Isaiah's idols."
+                },
+                {
+                  "ref": "Act.7.43",
+                  "note": "“The figures which you made to worship them” (Amo 5:26)."
+                },
+                {
+                  "ref": "Act.19.27",
+                  "note": "Artemis, “whom all Asia and the world worships”."
+                },
+                {
+                  "ref": "Rom.11.4",
+                  "note": "1Ki 19:18 quoted: seven thousand men “who have not bowed the knee and have not worshipped (סגֵדו) Baal”."
+                },
+                {
+                  "ref": "Mat.4.9",
+                  "note": "The adversary: “All these I will give you, if you will fall down and worship me.”"
+                },
+                {
+                  "ref": "Luk.4.7"
+                }
+              ],
+              "kin": [
+                "arc-worship-god",
+                "bow-to-idol"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προσκυνέω",
+          "gloss": "bow down to, worship",
+          "evidence": [
+            {
+              "ref": "Mat.4.10",
+              "note": "προσκυνήσεις where the Peshitta has תֵּסגֻּוד."
+            },
+            {
+              "ref": "Jhn.4.24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סָגוֹדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "worshipper",
+      "summary": "The Peshitta's ܣܓܘܕܐ (sāḡoḏā), once, for προσκυνητής.",
+      "cognate_ids": [
+        "ar-sajada"
+      ],
+      "senses": [
+        {
+          "gloss": "worshipper",
+          "definition": "One who worships; the true worshippers worship the Father in spirit and truth.",
+          "evidence": [
+            {
+              "ref": "Jhn.4.23",
+              "role": "defining",
+              "note": "“The true worshippers (סָגוֹדֵא שַׁרִירֵא) shall worship the Father in spirit and in truth, for the Father seeks such to worship him.”"
+            }
+          ],
+          "kin": [
+            "syc-worship-god"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sajada",
+      "lang": "ar",
+      "form": "سَجَدَ",
+      "translit": "sajada",
+      "gloss": "be lowly, submissive; bend down toward the ground; put the forehead on the ground (in prayer); (of a camel) lower the head to be mounted; salute, honour",
+      "relation": "cognate",
+      "note": "Arabic ج answers to Hebrew and Aramaic ג. Lane gives the primary sense as lowliness joined with bending down; the bodily prostration of prayer comes from it, and it is used of a man bowing to salute or honour another. مَسْجِدٌ is any place where one prostrates oneself, a house of prayer; سَجَّادَةٌ the mat on which one prostrates oneself.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1307, root سجد, سَجَدَ (n18911)",
+          "note": "He was lowly, humble or submissive; he bent himself down toward the ground; he put his forehead on the ground; he saluted him."
+        },
+        {
+          "source": "lane",
+          "locator": "pp. 1307–1308, root سجد, سَاجِدٌ (n18918), مَسْجِدٌ (n18922), سَجَّادَةٌ (n18916)"
+        }
+      ]
+    },
+    {
+      "id": "arc-segad",
+      "lang": "arc",
+      "form": "סְגַד",
+      "translit": "sǝḡaḏ",
+      "gloss": "bend, bow; worship",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums, where it renders Hebrew וַיִּשְׁתַּחוּ: Onkelos Gen 24:26, of Abraham's servant who bowed and worshipped Yahweh. So Aramaic uses סגד where Hebrew uses הִשְׁתַּחֲוָה, as Isaiah sets the two side by side.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סְגַד",
+          "note": "Targ. Gen. XXIV, 26; Targ. O. ib. XXVII, 7."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "worship-god-alone",
+      "statement": "Isaiah mocks the man who burns half a log to warm himself and bake bread and bows down to the other half, praying “Deliver me, for you are my god”, and does not stop to say “shall I bow down to a block of wood?” (Isa 44:15–19); the gold idol is carried and set in its place, and does not answer or save (Isa 46:6–7). The three Jews would neither serve Nebuchadnezzar's gods nor worship his image, though the furnace was the price (Dan 3:12, 18), and the king himself blessed their God, who delivered servants who would not serve or worship any god except their own (Dan 3:28). Jesus answered the adversary's offer of the kingdoms with Deu 6:13: worship Yahweh your God and serve him only (Mat 4:9–10). Peter would not take a man's worship, “I too am a man” (Act 10:25–26), and the angel would not take John's, “I am your fellow servant … worship God” (Rev 19:10; 22:8–9). From the verses: bowing down in worship and serving belong together, and both belong to the one God; to give them to what a man has made, to a man, or to an angel is to give God's due to another.",
+      "evidence": [
+        {
+          "ref": "Isa.44.15",
+          "to": "Isa.44.19"
+        },
+        {
+          "ref": "Isa.46.6",
+          "to": "Isa.46.7"
+        },
+        {
+          "ref": "Dan.3.12"
+        },
+        {
+          "ref": "Dan.3.18"
+        },
+        {
+          "ref": "Dan.3.28"
+        },
+        {
+          "ref": "Deu.6.13"
+        },
+        {
+          "ref": "Mat.4.9",
+          "to": "Mat.4.10"
+        },
+        {
+          "ref": "Act.10.25",
+          "to": "Act.10.26"
+        },
+        {
+          "ref": "Rev.19.10"
+        },
+        {
+          "ref": "Rev.22.8",
+          "to": "Rev.22.9"
+        }
+      ]
+    },
+    {
+      "topic": "the-son-honoured",
+      "statement": "The worship given to Jesus is commanded by God: “when he brings the firstborn into the world he says, Let all the angels of God worship him” (Heb 1:6). Those who bowed to him did so as to the king born to Israel (Mat 2:2, 11), confessing “Truly you are the Son of God” (Mat 14:33), believing in the Son of God (Jhn 9:35–38), and before the risen one to whom “all authority has been given” (Mat 28:17–18). The Father “has given all judgment to the Son, that all should honour the Son as they honour the Father” (Jhn 5:22–23); God exalted him and gave him the name above every name, that every knee should bow “to the glory of God the Father” (Php 2:9–11); and the risen Jesus calls the Father “my God and your God” (Jhn 20:17). From the verses: the Son is worshipped because God has given him the authority, the judgment and the name, and the worship given him is to the glory of the Father, who remains his God.",
+      "evidence": [
+        {
+          "ref": "Heb.1.6"
+        },
+        {
+          "ref": "Mat.2.2"
+        },
+        {
+          "ref": "Mat.2.11"
+        },
+        {
+          "ref": "Mat.14.33"
+        },
+        {
+          "ref": "Jhn.9.35",
+          "to": "Jhn.9.38"
+        },
+        {
+          "ref": "Mat.28.17",
+          "to": "Mat.28.18"
+        },
+        {
+          "ref": "Jhn.5.22",
+          "to": "Jhn.5.23"
+        },
+        {
+          "ref": "Php.2.9",
+          "to": "Php.2.11"
+        },
+        {
+          "ref": "Jhn.20.17"
+        }
+      ]
+    },
+    {
+      "topic": "image-of-the-beast",
+      "statement": "Nebuchadnezzar's decree was that whoever did not fall down and worship the image should be thrown into the furnace (Dan 3:6, 11), and his servants were delivered by their God (Dan 3:28). Revelation uses the same decree of the image of the beast: as many as would not worship it should be killed (Rev 13:15), and those who worship the beast and his image drink the wine of God's wrath (Rev 14:9–11). Those who had not worshipped the beast or his image lived and reigned with Christ a thousand years, the first resurrection (Rev 20:4–5). From the verses: faithfulness under the threat of death is answered not by escape in every case but by resurrection and reign with Christ at his coming.",
+      "evidence": [
+        {
+          "ref": "Dan.3.6"
+        },
+        {
+          "ref": "Dan.3.11"
+        },
+        {
+          "ref": "Dan.3.28"
+        },
+        {
+          "ref": "Rev.13.15"
+        },
+        {
+          "ref": "Rev.14.9",
+          "to": "Rev.14.11"
+        },
+        {
+          "ref": "Rev.20.4",
+          "to": "Rev.20.5"
+        }
+      ]
+    }
+  ],
+  "note": "BDB key o.ag.aa carries 1036 mis-filed tokens of לוֹ (\"to him\") with no stem, besides the qal; lexicon-support's use count for the Hebrew verb is therefore inflated (the real count is four: Isa 44:15, 17, 19; 46:6; Isa 44:17's יִסְגָּד was among the no-stem tokens in the brief, ketiv יסגוד). Worth fixing in the BDB mapping. The Hebrew occurs only in Isa 44–46, always with הִשְׁתַּחֲוָה; whether Isaiah uses an Aramaic word here is a lead from other lexicons, not followed to evidence. Not yet followed: Nabataean מסגדא (stele, place of worship) in inscriptions, and Ge'ez sagada (Dillmann, Leslau), said to be from Arabic; both need their own dictionaries cited before they are added. Peshitta Luk 8:47 uses סגד of the woman falling before Jesus (Greek προσπίπτω) and is not cited. No personal names are formed from the root (no TIPNR record)."
+}
