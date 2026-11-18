@@ -1,0 +1,1626 @@
+{
+  "id": "navi",
+  "root": "נבא",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "prophecy",
+    "speech",
+    "word-of-god",
+    "spirit",
+    "revelation"
+  ],
+  "gloss": "prophet; prophesy, speak for God",
+  "summary": "The נָבִיא is the man who speaks for another, and in scripture above all the man who speaks for Yahweh: scripture defines him itself when Aaron, Moses' mouth, is called his נָבִיא (Exo 4:16; 7:1), and when Yahweh says of the prophet like Moses, “I will put my words in his mouth, and he shall speak to them all that I command him” (Deu 18:18). The verb, used only in the niphal and hithpael, is to act as a נָבִיא: to speak Yahweh's word by his spirit, and also, of those he did not send, to prophesy falsehood or by Baal, or to rave. The feminine נְבִיאָה is a prophetess (Miriam, Deborah, Huldah), and נְבוּאָה a prophecy, a word spoken or written by a prophet. The Aramaic of Ezra, the Peshitta and the Targums use the same words, and Arabic has the root for giving news and for the prophet.",
+  "words": [
+    {
+      "lemma": "נָבִיא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "prophet, spokesman (of God)",
+      "bdb": [
+        "n.ai.ab"
+      ],
+      "cognate_ids": [
+        "ar-nabi",
+        "arc-nebiya",
+        "akk-nabu"
+      ],
+      "summary": "About 315 times, nearly all of men who speak, or claim to speak, for a god. Two tokens BDB files here by spelling (Lam 5:9; Neh 10:38) are forms of בּוֹא “come, bring” and are not counted.",
+      "senses": [
+        {
+          "id": "prophet-of-yahweh",
+          "gloss": "prophet of Yahweh, his spokesman",
+          "definition": "A man through whom Yahweh speaks: Yahweh puts his words in his mouth and he speaks them to the people, to kings and to the nations. Aaron, speaking to Pharaoh for Moses, is Moses' נָבִיא, which shows what the word is: one who speaks another's words for him.",
+          "evidence": [
+            {
+              "ref": "Exo.7.1",
+              "role": "defining",
+              "note": "“See, I have made you God to Pharaoh, וְאַהֲרֹן אָחִיךָ יִהְיֶה נְבִיאֶךָ”: Aaron will be your prophet; and v. 2, “you shall speak all that I command you, and Aaron your brother shall speak to Pharaoh”."
+            },
+            {
+              "ref": "Exo.4.16",
+              "role": "defining",
+              "note": "The same relation first given: “he shall speak for you to the people, and הוּא יִהְיֶה־לְּךָ לְפֶה (he shall be to you for a mouth), and you shall be to him for God”; v. 15, “you shall put the words in his mouth”."
+            },
+            {
+              "ref": "Exo.4.15"
+            },
+            {
+              "ref": "Deu.18.18",
+              "role": "defining",
+              "note": "“A prophet I will raise up for them … וְנָתַתִּי דְבָרַי בְּפִיו, and he shall speak to them all that I command him.”"
+            },
+            {
+              "ref": "Jer.1.5",
+              "role": "defining",
+              "note": "“נָבִיא לַגּוֹיִם נְתַתִּיךָ”, a prophet to the nations I appointed you; and v. 9, “Behold, I have put my words in your mouth”."
+            },
+            {
+              "ref": "Jer.1.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Amo.3.7",
+              "role": "defining",
+              "note": "“The Lord Yahweh will not do a thing unless he has revealed his counsel to עֲבָדָיו הַנְּבִיאִים, his servants the prophets.”"
+            },
+            {
+              "ref": "Num.12.6",
+              "role": "defining",
+              "note": "“If there is a prophet among you, I Yahweh make myself known to him in a vision, in a dream I speak with him”; with Moses, mouth to mouth (v. 8)."
+            },
+            {
+              "ref": "1Sa.9.9",
+              "note": "“The one now called the prophet (לַנָּבִיא) was formerly called the seer (הָרֹאֶה).”"
+            },
+            {
+              "ref": "1Sa.3.20",
+              "note": "All Israel knew that Samuel was established as a prophet of Yahweh."
+            },
+            {
+              "ref": "Gen.20.7",
+              "note": "God to Abimelech, of Abraham: “כִּי־נָבִיא הוּא, and he will pray for you, and you will live.”"
+            },
+            {
+              "ref": "Hos.12.14",
+              "note": "“By a prophet Yahweh brought Israel up from Egypt, and by a prophet he was kept”: Moses called a prophet."
+            },
+            {
+              "ref": "2Ki.17.13",
+              "note": "Yahweh warned Israel and Judah “by the hand of all his prophets, every seer”, sending the law “by the hand of my servants the prophets”."
+            },
+            {
+              "ref": "Jer.7.25",
+              "note": "“I have sent to you all my servants the prophets, daily rising early and sending.”"
+            },
+            {
+              "ref": "Hag.1.12",
+              "note": "The people obeyed “the voice of Yahweh their God and the words of Haggai the prophet, as Yahweh their God had sent him”; v. 13 calls him “the messenger of Yahweh”."
+            },
+            {
+              "ref": "Hag.1.13"
+            },
+            {
+              "ref": "Ezk.2.5",
+              "note": "Whether they hear or refuse, “they will know that a prophet has been among them”."
+            },
+            {
+              "ref": "Jer.18.18",
+              "note": "“The law shall not perish from the priest, nor counsel from the wise, nor the word from the prophet (וְדָבָר מִנָּבִיא)”: the word is what the prophet has."
+            },
+            {
+              "ref": "2Sa.7.2",
+              "note": "Nathan the prophet."
+            },
+            {
+              "ref": "Mal.3.23",
+              "note": "“Behold, I am sending you Elijah the prophet before the great and fearful day of Yahweh comes.”"
+            },
+            {
+              "ref": "Act.2.16",
+              "note": "The New Testament calls the writers of the prophetic books by the same title: “what was spoken by the prophet Joel”."
+            }
+          ],
+          "senses": [
+            {
+              "id": "prophet-like-moses",
+              "gloss": "the prophet like Moses",
+              "definition": "The one prophet Yahweh promised to raise up from among Israel's brothers, like Moses, whom all must hear. No prophet like Moses arose in Israel after him; the New Testament says this prophet is Jesus.",
+              "evidence": [
+                {
+                  "ref": "Deu.18.15",
+                  "role": "defining",
+                  "note": "“נָבִיא מִקִּרְבְּךָ מֵאַחֶיךָ כָּמֹנִי יָקִים לְךָ יַהְוֶה אֱלֹהֶיךָ אֵלָיו תִּשְׁמָעוּן”: a prophet from among you, from your brothers, like me; to him you shall listen."
+                },
+                {
+                  "ref": "Deu.18.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.18.19",
+                  "note": "Whoever will not hear his words, which he speaks in my name, “I will require it of him”."
+                },
+                {
+                  "ref": "Deu.34.10",
+                  "role": "defining",
+                  "note": "“וְלֹא־קָם נָבִיא עוֹד בְּיִשְׂרָאֵל כְּמֹשֶׁה, whom Yahweh knew face to face”: the promise was not fulfilled in any prophet of the old covenant."
+                },
+                {
+                  "ref": "Act.3.22",
+                  "role": "defining",
+                  "note": "Peter quotes Deu 18:15 of Jesus: “προφήτην ὑμῖν ἀναστήσει κύριος ὁ θεὸς ὑμῶν ἐκ τῶν ἀδελφῶν ὑμῶν ὡς ἐμέ”; v. 23 quotes 18:19."
+                },
+                {
+                  "ref": "Act.3.23"
+                },
+                {
+                  "ref": "Act.7.37",
+                  "role": "defining",
+                  "note": "Stephen quotes Deu 18:15 again."
+                },
+                {
+                  "ref": "Jhn.6.14",
+                  "note": "After the loaves: “this is truly ὁ προφήτης ὁ ἐρχόμενος εἰς τὸν κόσμον”."
+                },
+                {
+                  "ref": "Jhn.1.21",
+                  "note": "John is asked, “Are you the prophet?” and says no."
+                },
+                {
+                  "ref": "Jhn.7.40",
+                  "note": "“This is truly the prophet.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "false-prophet",
+          "gloss": "false prophet, one who speaks unsent",
+          "definition": "A man who speaks in Yahweh's name what Yahweh did not speak to him, out of his own heart or for gain, promising peace. Scripture calls him נָבִיא still, and shows by context that he is false.",
+          "evidence": [
+            {
+              "ref": "Deu.18.20",
+              "role": "defining",
+              "note": "“הַנָּבִיא אֲשֶׁר יָזִיד לְדַבֵּר דָּבָר בִּשְׁמִי, which I did not command him to speak … that prophet shall die.”"
+            },
+            {
+              "ref": "Deu.18.22",
+              "role": "defining",
+              "note": "If what he speaks in Yahweh's name does not come to pass, “Yahweh has not spoken it; the prophet has spoken it presumptuously”."
+            },
+            {
+              "ref": "Jer.23.21",
+              "role": "defining",
+              "note": "“לֹא־שָׁלַחְתִּי אֶת־הַנְּבִאִים וְהֵם רָצוּ לֹא־דִבַּרְתִּי אֲלֵיהֶם וְהֵם נִבָּאוּ”: I did not send them, yet they ran; I did not speak to them, yet they prophesied."
+            },
+            {
+              "ref": "Jer.23.16",
+              "note": "“They speak a vision of their own heart, not from the mouth of Yahweh.”"
+            },
+            {
+              "ref": "Jer.28.15",
+              "role": "defining",
+              "note": "Jeremiah to “Hananiah the prophet”: “Yahweh has not sent you, and you have made this people trust in a lie.”"
+            },
+            {
+              "ref": "Ezk.13.2",
+              "note": "“Prophesy against the prophets of Israel … and say to the prophets out of their own heart.”"
+            },
+            {
+              "ref": "Ezk.13.3",
+              "note": "“Woe to the foolish prophets who follow their own spirit and have seen nothing.”"
+            },
+            {
+              "ref": "Mic.3.5",
+              "note": "The prophets who lead my people astray, who cry “peace” while they have something to bite, and declare war on whoever puts nothing in their mouths."
+            },
+            {
+              "ref": "Mic.3.11",
+              "note": "“Her prophets divine for silver.”"
+            },
+            {
+              "ref": "Isa.9.14",
+              "note": "“The prophet who teaches lies, he is the tail.”"
+            },
+            {
+              "ref": "1Ki.13.18",
+              "note": "“I also am a prophet like you … but he lied to him.”"
+            },
+            {
+              "ref": "1Ki.22.22",
+              "note": "“A spirit of falsehood in the mouth of all his prophets.”"
+            },
+            {
+              "ref": "Zec.13.2",
+              "note": "In that day Yahweh will remove “the prophets and the spirit of uncleanness” from the land."
+            },
+            {
+              "ref": "Neh.6.14",
+              "note": "“The rest of the prophets who were making me afraid.”"
+            }
+          ]
+        },
+        {
+          "id": "prophet-of-baal",
+          "gloss": "prophet of another god",
+          "definition": "A man who speaks for Baal or Asherah, the servant of a false god as Yahweh's prophets are his servants.",
+          "evidence": [
+            {
+              "ref": "1Ki.18.19",
+              "role": "defining",
+              "note": "“The four hundred and fifty prophets of Baal (נְבִיאֵי הַבַּעַל) and the four hundred prophets of Asherah, who eat at Jezebel's table.”"
+            },
+            {
+              "ref": "1Ki.18.40",
+              "note": "Elijah has the prophets of Baal seized and killed at the brook Kishon."
+            },
+            {
+              "ref": "2Ki.10.19",
+              "role": "defining",
+              "note": "“Call to me all the prophets of Baal, all his servants and all his priests.”"
+            },
+            {
+              "ref": "Jer.23.13",
+              "note": "The prophets of Samaria “prophesied by Baal and led my people Israel astray”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προφήτης",
+          "gloss": "prophet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.7.1, נְבִיאֶךָ → προφήτης; Deu.18.15 and Deu.18.18, נָבִיא → προφήτην; 1Sa.9.9 → προφήτην; προφήτης renders נָבִיא ×240"
+            },
+            {
+              "ref": "Act.3.22",
+              "role": "defining",
+              "note": "Deu 18:15 quoted: “a prophet (προφήτην) the Lord your God will raise up for you from your brothers, like me”; also Act 7:37."
+            },
+            {
+              "ref": "Act.7.37"
+            },
+            {
+              "ref": "Heb.1.1",
+              "role": "defining",
+              "note": "“God, who spoke long ago to the fathers ἐν τοῖς προφήταις, has in these last days spoken to us ἐν υἱῷ.”"
+            },
+            {
+              "ref": "Luk.24.19",
+              "note": "Jesus “was a man, a prophet (ἀνὴρ προφήτης), mighty in deed and word before God and all the people”."
+            },
+            {
+              "ref": "Mat.13.57",
+              "note": "“A prophet is not without honour except in his own country and in his own house.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ψευδοπροφήτης",
+          "gloss": "false prophet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zec.13.2, הַנְּבִיאִים → ψευδοπροφήτας; Jer.28.1, Hananiah הַנָּבִיא → ψευδοπροφήτης; Jer.26.7, 8, 11, 16; 27.9; 29.1"
+            },
+            {
+              "ref": "Mat.7.15",
+              "role": "defining",
+              "note": "“Beware of the false prophets (τῶν ψευδοπροφητῶν), who come to you in sheep's clothing but inwardly are ravenous wolves.”"
+            },
+            {
+              "ref": "Mat.24.24",
+              "note": "False Christs and false prophets will rise and give great signs and wonders, to lead astray if possible even the chosen: Deu 13:2-4."
+            },
+            {
+              "ref": "1Jn.4.1",
+              "note": "“Test the spirits whether they are of God, because many false prophets have gone out into the world.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רֹאֶה",
+            "note": "“Seer”, the older name for the prophet; with חֹזֶה “seer” beside it.",
+            "evidence": [
+              {
+                "ref": "1Sa.9.9",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.17.13",
+                "note": "“by the hand of all his prophets, every seer (חֹזֶה)”"
+              },
+              {
+                "ref": "2Sa.24.11",
+                "note": "“Gad the prophet, David's seer (חֹזֵה)”"
+              }
+            ]
+          },
+          {
+            "lemma": "עֶבֶד",
+            "note": "“Servant”: Yahweh's prophets are “my servants the prophets”.",
+            "evidence": [
+              {
+                "ref": "Amo.3.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.7.25"
+              },
+              {
+                "ref": "Dan.9.6"
+              }
+            ]
+          },
+          {
+            "lemma": "מַלְאָךְ",
+            "note": "“Messenger”: the prophets are Yahweh's messengers.",
+            "evidence": [
+              {
+                "ref": "2Ch.36.16",
+                "role": "defining",
+                "note": "“They mocked the messengers of God and despised his words and scoffed at his prophets.”"
+              },
+              {
+                "ref": "Hag.1.13",
+                "note": "“Haggai, the messenger of Yahweh, in the message of Yahweh.”"
+              }
+            ]
+          },
+          {
+            "lemma": "חֹלֵם חֲלוֹם",
+            "note": "“Dreamer of dreams”, beside the prophet in the law of the false prophet.",
+            "evidence": [
+              {
+                "ref": "Deu.13.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.13.4"
+              }
+            ]
+          },
+          {
+            "lemma": "כֹּהֵן",
+            "note": "“Priest”: prophet and priest named together as Israel's teachers, and together in their corruption.",
+            "evidence": [
+              {
+                "ref": "Jer.18.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Mic.3.11"
+              },
+              {
+                "ref": "Jer.6.13"
+              },
+              {
+                "ref": "Isa.28.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עֲבָדַי הַנְּבִיאִים",
+            "gloss": "my servants the prophets",
+            "evidence": [
+              {
+                "ref": "Jer.7.25",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.17.13"
+              },
+              {
+                "ref": "Ezk.38.17"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּיַד הַנְּבִיאִים",
+            "gloss": "by the hand of the prophets, through the prophets",
+            "evidence": [
+              {
+                "ref": "Hos.12.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.7.12"
+              },
+              {
+                "ref": "Dan.9.10"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּנֵי הַנְּבִיאִים",
+            "gloss": "the sons of the prophets, the prophets' disciples",
+            "evidence": [
+              {
+                "ref": "2Ki.2.3",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.20.35"
+              },
+              {
+                "ref": "Amo.7.14",
+                "note": "Amos: “לֹא־נָבִיא אָנֹכִי וְלֹא בֶן־נָבִיא אָנֹכִי”: no prophet, nor a prophet's son, but a herdsman whom Yahweh took from the flock."
+              }
+            ]
+          },
+          {
+            "phrase": "חֶבֶל נְבִיאִים",
+            "gloss": "a band of prophets",
+            "evidence": [
+              {
+                "ref": "1Sa.10.5",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.10.10"
+              }
+            ]
+          },
+          {
+            "phrase": "הֲגַם שָׁאוּל בַּנְּבִאִים",
+            "gloss": "is Saul also among the prophets? (a proverb)",
+            "evidence": [
+              {
+                "ref": "1Sa.10.12",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.19.24"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נָבָא",
+      "pos": "verb",
+      "gloss": "prophesy, speak as a prophet; rave",
+      "bdb": [
+        "n.ai.ac"
+      ],
+      "cognate_ids": [
+        "ar-anbaa",
+        "arc-itnabba",
+        "ar-naba"
+      ],
+      "summary": "Used only in the niphal (87 times) and the hithpael (28 times), never in the qal: to do what a נָבִיא does. Its uses follow the noun's: to speak Yahweh's word, to prophesy falsely, and, in the hithpael, also the behaviour of men seized by a spirit. The two stems overlap (Jer 14:14 has both of the same men), and the niphal is the usual stem in Jeremiah and Ezekiel for the prophet's speaking.",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "prophesy: speak Yahweh's word; prophesy falsely; praise with music",
+          "senses": [
+            {
+              "id": "prophesy-word",
+              "gloss": "prophesy, speak Yahweh's word as his prophet",
+              "definition": "To speak to people, cities or nations the word Yahweh has spoken to the prophet, commonly introduced “thus says Yahweh”. Yahweh's speaking is its cause, and it cannot be held back.",
+              "evidence": [
+                {
+                  "ref": "Amo.3.8",
+                  "role": "defining",
+                  "note": "“אֲדֹנָי יַהְוֶה דִּבֶּר מִי לֹא יִנָּבֵא”: the Lord Yahweh has spoken; who will not prophesy?"
+                },
+                {
+                  "ref": "Amo.7.15",
+                  "role": "defining",
+                  "note": "“Yahweh took me from following the flock, and Yahweh said to me, Go, prophesy (הִנָּבֵא) to my people Israel.”"
+                },
+                {
+                  "ref": "Jer.26.12",
+                  "role": "defining",
+                  "note": "“Yahweh sent me to prophesy against this house and against this city all the words that you have heard.”"
+                },
+                {
+                  "ref": "Ezk.37.4",
+                  "role": "defining",
+                  "note": "“Prophesy over these bones, and say to them, O dry bones, hear the word of Yahweh.”"
+                },
+                {
+                  "ref": "Ezk.37.7",
+                  "note": "“So I prophesied as I was commanded.”"
+                },
+                {
+                  "ref": "Ezk.21.14",
+                  "note": "“Son of man, prophesy and say, Thus says the Lord.”"
+                },
+                {
+                  "ref": "Jer.25.13",
+                  "note": "“All that is written in this book, which Jeremiah prophesied against all the nations.”"
+                },
+                {
+                  "ref": "Jer.26.18",
+                  "note": "Micah the Morashtite prophesied in the days of Hezekiah, saying, “Thus says Yahweh of Armies, Zion shall be ploughed as a field.”"
+                },
+                {
+                  "ref": "Jer.28.8",
+                  "note": "The prophets before Jeremiah and Hananiah “prophesied against many lands and great kingdoms, of war and of evil and of pestilence”."
+                },
+                {
+                  "ref": "Jer.28.9",
+                  "note": "“The prophet who prophesies of peace, when the word of the prophet comes to pass, then the prophet will be known, that Yahweh has truly sent him.”"
+                },
+                {
+                  "ref": "Jol.3.1",
+                  "role": "defining",
+                  "note": "“I will pour out my spirit on all flesh, וְנִבְּאוּ בְּנֵיכֶם וּבְנוֹתֵיכֶם”: and your sons and your daughters shall prophesy; quoted in Act 2:17-18."
+                },
+                {
+                  "ref": "Act.2.17",
+                  "note": "“προφητεύσουσιν οἱ υἱοὶ ὑμῶν καὶ αἱ θυγατέρες ὑμῶν.”"
+                },
+                {
+                  "ref": "Amo.7.16",
+                  "note": "“You say, You shall not prophesy against Israel, and you shall not drip (וְלֹא תַטִּיף) against the house of Isaac.”"
+                },
+                {
+                  "ref": "Amo.2.12",
+                  "note": "“You commanded the prophets, saying, You shall not prophesy.”"
+                },
+                {
+                  "ref": "Jer.11.21",
+                  "note": "The men of Anathoth: “Do not prophesy in the name of Yahweh, or you will die by our hand.”"
+                }
+              ],
+              "kin": [
+                "prophet-of-yahweh"
+              ]
+            },
+            {
+              "id": "prophesy-falsely",
+              "gloss": "prophesy falsely, in Yahweh's name unsent or by Baal",
+              "definition": "To speak as a prophet what Yahweh did not speak: a lie in his name, the dream or vision of one's own heart, or a word by Baal.",
+              "evidence": [
+                {
+                  "ref": "Jer.14.14",
+                  "role": "defining",
+                  "note": "“שֶׁקֶר הַנְּבִאִים נִבְּאִים בִּשְׁמִי: I did not send them, nor command them, nor speak to them.”"
+                },
+                {
+                  "ref": "Jer.23.21",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.23.25",
+                  "note": "“The prophets who prophesy a lie in my name, saying, I have dreamed, I have dreamed.”"
+                },
+                {
+                  "ref": "Jer.27.15",
+                  "note": "“I did not send them, and they prophesy falsely in my name.”"
+                },
+                {
+                  "ref": "Jer.29.9"
+                },
+                {
+                  "ref": "Jer.5.31",
+                  "note": "“The prophets prophesy falsely, and the priests rule by their hands, and my people love it so.”"
+                },
+                {
+                  "ref": "Jer.2.8",
+                  "role": "defining",
+                  "note": "“וְהַנְּבִיאִים נִבְּאוּ בַבַּעַל”: the prophets prophesied by Baal."
+                },
+                {
+                  "ref": "Ezk.13.2",
+                  "note": "“The prophets of Israel who prophesy”, prophets out of their own heart."
+                },
+                {
+                  "ref": "Zec.13.3",
+                  "role": "defining",
+                  "note": "In that day, if a man still prophesies, his parents will say, “You shall not live, for you speak a lie in the name of Yahweh.”"
+                },
+                {
+                  "ref": "Zec.13.4"
+                }
+              ],
+              "kin": [
+                "false-prophet",
+                "prophet-of-baal"
+              ]
+            },
+            {
+              "id": "prophesy-praise",
+              "gloss": "prophesy with music, in thanks and praise",
+              "definition": "Of the Levite singers David appointed: to prophesy with harps, lyres and cymbals, which the text explains as giving thanks and praising Yahweh.",
+              "evidence": [
+                {
+                  "ref": "1Ch.25.1",
+                  "role": "defining",
+                  "note": "The sons of Asaph, Heman and Jeduthun, “who prophesied (הַנִּבְּאִים) with lyres, with harps and with cymbals”."
+                },
+                {
+                  "ref": "1Ch.25.3",
+                  "role": "defining",
+                  "note": "Jeduthun “הַנִּבָּא עַל־הֹדוֹת וְהַלֵּל לַיַהְוֶה”: who prophesied with the lyre in giving thanks and praising Yahweh."
+                },
+                {
+                  "ref": "1Ch.25.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "prophesy (by the spirit); rave, behave as a prophet; prophesy falsely",
+          "senses": [
+            {
+              "id": "prophesy-by-spirit",
+              "gloss": "prophesy when the spirit comes on a man",
+              "definition": "To prophesy when God's spirit rests on or rushes upon a man: the elders in the wilderness, Saul and his messengers among the prophets; also of a prophet speaking Yahweh's word.",
+              "evidence": [
+                {
+                  "ref": "Num.11.25",
+                  "role": "defining",
+                  "note": "Yahweh took of the spirit on Moses and put it on the seventy elders, “and when the spirit rested on them וַיִּתְנַבְּאוּ”."
+                },
+                {
+                  "ref": "Num.11.26",
+                  "note": "Eldad and Medad, on whom the spirit rested, prophesied in the camp."
+                },
+                {
+                  "ref": "Num.11.27"
+                },
+                {
+                  "ref": "1Sa.10.6",
+                  "role": "defining",
+                  "note": "“The spirit of Yahweh will rush upon you, וְהִתְנַבִּיתָ with them, and you will be turned into another man.”"
+                },
+                {
+                  "ref": "1Sa.10.10",
+                  "note": "“The spirit of God rushed upon him, and he prophesied among them.”"
+                },
+                {
+                  "ref": "1Sa.19.20",
+                  "note": "The spirit of God came on Saul's messengers “and they also prophesied”."
+                },
+                {
+                  "ref": "1Sa.19.23"
+                },
+                {
+                  "ref": "Ezk.37.10",
+                  "note": "“וְהִנַּבֵּאתִי כַּאֲשֶׁר צִוָּנִי, and the breath came into them and they lived.”"
+                },
+                {
+                  "ref": "1Ki.22.8",
+                  "note": "Micaiah “does not prophesy good concerning me, but evil”."
+                },
+                {
+                  "ref": "2Ch.20.37",
+                  "note": "Eliezer prophesied against Jehoshaphat: “Because you have joined with Ahaziah, Yahweh has broken your works.”"
+                },
+                {
+                  "ref": "Jer.26.20",
+                  "note": "Uriah “prophesied in the name of Yahweh” against the city."
+                }
+              ],
+              "kin": [
+                "prophet-of-yahweh"
+              ]
+            },
+            {
+              "id": "rave",
+              "gloss": "rave, behave as a prophet",
+              "definition": "Of men not speaking Yahweh's word, the outward behaviour of a prophet: Saul under an evil spirit from God, with a spear in his hand; the prophets of Baal crying and cutting themselves until evening; the madman who makes himself a prophet.",
+              "evidence": [
+                {
+                  "ref": "1Sa.18.10",
+                  "role": "defining",
+                  "note": "“An evil spirit from God rushed upon Saul, וַיִּתְנַבֵּא בְתוֹךְ־הַבַּיִת”, and the spear was in Saul's hand."
+                },
+                {
+                  "ref": "1Ki.18.29",
+                  "role": "defining",
+                  "note": "After crying aloud and cutting themselves (v. 28), the prophets of Baal “prophesied (וַיִּתְנַבְּאוּ) until the offering of the evening offering, but there was no voice, and none answered”."
+                },
+                {
+                  "ref": "Jer.29.26",
+                  "role": "defining",
+                  "note": "Officers in the house of Yahweh “לְכָל־אִישׁ מְשֻׁגָּע וּמִתְנַבֵּא”, over every madman who makes himself a prophet; v. 27 applies it to Jeremiah in scorn."
+                },
+                {
+                  "ref": "Jer.29.27"
+                },
+                {
+                  "ref": "1Sa.19.24",
+                  "note": "Saul stripped off his clothes and prophesied before Samuel and lay naked all that day and night."
+                }
+              ],
+              "kin": [
+                "prophet-of-baal"
+              ]
+            },
+            {
+              "id": "prophesy-falsely-hith",
+              "gloss": "prophesy falsely",
+              "definition": "As the niphal: to prophesy a lie, out of one's own heart, or by Baal.",
+              "evidence": [
+                {
+                  "ref": "Jer.14.14",
+                  "role": "defining",
+                  "note": "“A lying vision and divination … and the deceit of their heart הֵמָּה מִתְנַבְּאִים לָכֶם.”"
+                },
+                {
+                  "ref": "Jer.23.13",
+                  "role": "defining",
+                  "note": "“הִנַּבְּאוּ בַבַּעַל”, they prophesied by Baal and led my people astray."
+                },
+                {
+                  "ref": "Ezk.13.17",
+                  "note": "The daughters of your people “who prophesy out of their own heart”."
+                }
+              ],
+              "kin": [
+                "false-prophet"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προφητεύω",
+          "gloss": "prophesy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.11.25, וַיִּתְנַבְּאוּ → ἐπροφήτευσαν; Jol.3.1, וְנִבְּאוּ → προφητεύσουσιν; Amo.3.8, יִנָּבֵא → προφητεύσει; προφητεύω renders נָבָא ×64"
+            },
+            {
+              "ref": "Act.2.17",
+              "role": "defining",
+              "note": "Joel 3:1 quoted at Pentecost: “and your sons and your daughters shall prophesy (προφητεύσουσιν)”; v. 18, “and they shall prophesy”."
+            },
+            {
+              "ref": "Act.2.18"
+            },
+            {
+              "ref": "1Pe.1.10",
+              "role": "defining",
+              "note": "“The prophets who prophesied (προφητεύσαντες) of the grace that was to come to you.”"
+            },
+            {
+              "ref": "Act.21.9",
+              "note": "Philip “had four virgin daughters who prophesied”."
+            },
+            {
+              "ref": "1Co.14.3",
+              "note": "“He who prophesies speaks to men for building up and exhortation and comfort.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "דִּבֶּר",
+            "note": "“Speak”: Yahweh speaks, and the prophet prophesies.",
+            "evidence": [
+              {
+                "ref": "Amo.3.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.23.21"
+              }
+            ]
+          },
+          {
+            "lemma": "הִטִּיף",
+            "note": "“Drip, let words fall”, the hiphil of נָטַף set beside the niphal of נָבָא.",
+            "evidence": [
+              {
+                "ref": "Amo.7.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.21.2",
+                "note": "“וְהַטֵּף אֶל־דָּרוֹם וְהִנָּבֵא”"
+              },
+              {
+                "ref": "Ezk.21.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נִבָּא בְּשֵׁם יַהְוֶה",
+            "gloss": "prophesy in the name of Yahweh (or “in my name”)",
+            "evidence": [
+              {
+                "ref": "Jer.26.9",
+                "role": "defining",
+                "note": "“מַדּוּעַ נִבֵיתָ בְשֵׁם־יַהְוֶה”"
+              },
+              {
+                "ref": "Jer.14.14"
+              },
+              {
+                "ref": "Jer.26.20"
+              }
+            ]
+          },
+          {
+            "phrase": "נִבָּא בַבַּעַל",
+            "gloss": "prophesy by Baal",
+            "evidence": [
+              {
+                "ref": "Jer.2.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.23.13"
+              }
+            ]
+          },
+          {
+            "phrase": "הִנָּבֵא וְאָמַרְתָּ",
+            "gloss": "prophesy and say (Ezekiel's commission)",
+            "evidence": [
+              {
+                "ref": "Ezk.37.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.36.1"
+              },
+              {
+                "ref": "Ezk.38.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נְבִיאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "prophetess",
+      "bdb": [
+        "n.ai.ae"
+      ],
+      "cognate_ids": [
+        "ar-nabi",
+        "arc-nebiya"
+      ],
+      "summary": "Six times: Miriam, Deborah and Huldah, through whom Yahweh spoke; Noadiah, who opposed Nehemiah; and Isaiah's wife, called “the prophetess” without more being said.",
+      "senses": [
+        {
+          "gloss": "prophetess, a woman who speaks for Yahweh",
+          "definition": "A woman through whom Yahweh speaks, as through a prophet: Huldah answers the king's men “thus says Yahweh”, Deborah judges Israel and gives Barak Yahweh's command. The word is also used of a woman who opposed Yahweh's work.",
+          "evidence": [
+            {
+              "ref": "2Ki.22.14",
+              "role": "defining",
+              "note": "Hilkiah and the king's men go to “Huldah the prophetess (הַנְּבִיאָה)”, and she says to them, “Thus says Yahweh, the God of Israel” (v. 15)."
+            },
+            {
+              "ref": "2Ki.22.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.4.4",
+              "role": "defining",
+              "note": "“Deborah, אִשָּׁה נְבִיאָה, the wife of Lappidoth, she was judging Israel at that time”; in v. 6 she gives Barak the command of Yahweh."
+            },
+            {
+              "ref": "Exo.15.20",
+              "note": "“Miriam the prophetess, the sister of Aaron”, leads the women's song of the deliverance at the sea."
+            },
+            {
+              "ref": "2Ch.34.22",
+              "note": "Huldah again."
+            },
+            {
+              "ref": "Isa.8.3",
+              "note": "“I went to the prophetess, and she conceived and bore a son”: Isaiah's wife; the text does not say whether she prophesied."
+            },
+            {
+              "ref": "Neh.6.14",
+              "note": "“Noadiah the prophetess and the rest of the prophets who were making me afraid”: a prophetess who opposed the work."
+            }
+          ],
+          "kin": [
+            "prophet-of-yahweh"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προφῆτις",
+          "gloss": "prophetess",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.15.20, הַנְּבִיאָה → προφῆτις; Jdg.4.4, נְבִיאָה → προφῆτις; προφῆτις renders נְבִיאָה ×5"
+            },
+            {
+              "ref": "Luk.2.36",
+              "role": "defining",
+              "note": "“Anna, a prophetess (προφῆτις), the daughter of Phanuel, of the tribe of Asher.”"
+            },
+            {
+              "ref": "Rev.2.20",
+              "note": "“Jezebel, who calls herself a prophetess (προφῆτιν)”: the false prophetess, as Noadiah."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְבוּאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "prophecy",
+      "bdb": [
+        "n.ai.ad"
+      ],
+      "cognate_ids": [
+        "ar-nubuwwa",
+        "arc-nebuata",
+        "ar-naba"
+      ],
+      "summary": "Three times, all in Chronicles and Nehemiah: what a prophet speaks, or the record of it in writing. Ezra's Aramaic has the same word (Ezr 6:14).",
+      "senses": [
+        {
+          "gloss": "prophecy, a prophet's word or writing",
+          "definition": "The word a prophet speaks, whether from Yahweh or not, and a written record of it beside the records of other prophets.",
+          "evidence": [
+            {
+              "ref": "2Ch.9.29",
+              "role": "defining",
+              "note": "Solomon's acts written “in the words of Nathan the prophet and in נְבוּאַת אֲחִיָּה הַשִּׁילוֹנִי and in the visions of Iddo the seer”: a prophecy written as a record."
+            },
+            {
+              "ref": "2Ch.15.8",
+              "role": "defining",
+              "note": "When Asa heard “these words, and the prophecy (וְהַנְּבוּאָה)”, he took courage and put away the abominations: the prophecy of vv. 1-7, spoken when the spirit of God came on Azariah son of Oded."
+            },
+            {
+              "ref": "2Ch.15.1"
+            },
+            {
+              "ref": "Neh.6.12",
+              "role": "defining",
+              "note": "“God had not sent him, but הַנְּבוּאָה דִּבֶּר עָלַי, because Tobiah and Sanballat had hired him”: a prophecy bought."
+            }
+          ],
+          "kin": [
+            "prophesy-word",
+            "prophesy-falsely"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προφητεία",
+          "gloss": "prophecy",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Neh.6.12, הַנְּבוּאָה → προφητεία; 2Ch.15.8, וְהַנְּבוּאָה → προφητείαν; Ezr.6.14 (Aramaic) בִּנְבוּאַת → προφητείᾳ"
+            },
+            {
+              "ref": "2Pe.1.21",
+              "role": "defining",
+              "note": "“Prophecy (προφητεία) never came by the will of man, but holy men of God spoke ὑπὸ πνεύματος ἁγίου φερόμενοι, carried along by holy spirit”; v. 20, no prophecy of scripture is of its own interpretation."
+            },
+            {
+              "ref": "2Pe.1.20"
+            },
+            {
+              "ref": "Rev.19.10",
+              "note": "“The testimony of Jesus is the spirit of prophecy.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְבִיא",
+      "lang": "arc",
+      "root": "נביא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "prophet",
+      "bdb": [
+        "xn.aa.ab"
+      ],
+      "cognate_ids": [
+        "arc-nebiya"
+      ],
+      "summary": "Scripture's Aramaic word for the prophet, four times in Ezra of Haggai and Zechariah. The database does not yet link its four tokens (Ezr 5:1 twice, 5:2, 6:14) to its BDB key, so its uses count as none.",
+      "senses": [
+        {
+          "gloss": "prophet",
+          "definition": "Haggai and Zechariah, who prophesied in the name of the God of Israel and stood with the builders of the house.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.1",
+              "role": "defining",
+              "note": "“וְהִתְנַבִּי חַגַּי נְבִיָּא וּזְכַרְיָה בַר־עִדּוֹא נְבִיַּיָּא”: Haggai the prophet and Zechariah son of Iddo, the prophets, prophesied to the Jews in the name of the God of Israel."
+            },
+            {
+              "ref": "Ezr.5.2",
+              "role": "defining",
+              "note": "“With them were נְבִיַּיָּא דִי־אֱלָהָא, the prophets of God, helping them.”"
+            },
+            {
+              "ref": "Ezr.6.14"
+            }
+          ],
+          "kin": [
+            "prophet-of-yahweh"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְבָא",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "prophesy",
+      "bdb": [
+        "xn.aa.aa"
+      ],
+      "cognate_ids": [
+        "arc-itnabba"
+      ],
+      "summary": "Once, in the hithpaal: Haggai and Zechariah prophesied to the Jews (Ezr 5:1). BDB stores the token under its root heading.",
+      "stems": [
+        {
+          "stem": "hithpaal",
+          "gloss": "prophesy",
+          "senses": [
+            {
+              "gloss": "prophesy in the name of God",
+              "definition": "To speak as God's prophet, in his name.",
+              "evidence": [
+                {
+                  "ref": "Ezr.5.1",
+                  "role": "defining",
+                  "note": "“וְהִתְנַבִּי … בְּשֻׁם אֱלָהּ יִשְׂרָאֵל”: they prophesied in the name of the God of Israel."
+                }
+              ],
+              "kin": [
+                "prophesy-word"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְבוּאָה",
+      "lang": "arc",
+      "root": "נבואה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "prophesying, prophecy",
+      "bdb": [
+        "xn.aa.ac"
+      ],
+      "cognate_ids": [
+        "arc-nebuata"
+      ],
+      "summary": "Once, Ezr 6:14: the building prospered by the prophesying of Haggai and Zechariah.",
+      "senses": [
+        {
+          "gloss": "prophesying",
+          "definition": "The prophets' speaking, by which the work was carried forward.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.14",
+              "role": "defining",
+              "note": "“The elders of the Jews built and prospered בִּנְבוּאַת חַגַּי נְבִיָּא וּזְכַרְיָה בַּר־עִדּוֹא.”"
+            }
+          ],
+          "kin": [
+            "prophesy-word"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נבִֿיָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "prophet",
+      "summary": "The Peshitta's ܢܒܝܐ (nḇiyā), about 170 times, for προφήτης; with ܢܒܝܐ ܕܓܠܐ, “false prophet”, for ψευδοπροφήτης.",
+      "cognate_ids": [
+        "arc-nebiya",
+        "ar-nabi"
+      ],
+      "senses": [
+        {
+          "gloss": "prophet",
+          "definition": "The prophets of old, John, and the prophet like Moses; and with a qualifier, false prophets.",
+          "evidence": [
+            {
+              "ref": "Act.3.22",
+              "role": "defining",
+              "note": "Deu 18:15 in the Peshitta: “דַּנבִֿיָא נקִימ לכֻֿונ מָריָא מֵנ אַחַיכֻּונ אַכֿוָתֿי”."
+            },
+            {
+              "ref": "Act.3.23",
+              "note": "“Every soul that does not hear לַנבִֿיָא הַו shall perish from the people.”"
+            },
+            {
+              "ref": "Jhn.6.14",
+              "note": "“This is truly the prophet who comes into the world.”"
+            },
+            {
+              "ref": "Luk.7.16",
+              "note": "“A great prophet has risen among us, and God has visited his people.”"
+            },
+            {
+              "ref": "Mat.7.15",
+              "role": "defining",
+              "note": "“נבִֿיֵא דַּגָּלֵא”, false prophets, for τῶν ψευδοπροφητῶν."
+            },
+            {
+              "ref": "1Jn.4.1"
+            }
+          ],
+          "kin": [
+            "prophet-of-yahweh",
+            "false-prophet"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נבִֿיתָֿא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "prophetess",
+      "summary": "The Peshitta's ܢܒܝܬܐ, twice, for προφῆτις.",
+      "cognate_ids": [
+        "arc-nebiya"
+      ],
+      "senses": [
+        {
+          "gloss": "prophetess",
+          "definition": "Anna in the temple; and Jezebel, who called herself one.",
+          "evidence": [
+            {
+              "ref": "Luk.2.36",
+              "role": "defining",
+              "note": "“וחַנָא דֵּינ נבִֿיתָֿא”, and Anna, a prophetess."
+            },
+            {
+              "ref": "Rev.2.20",
+              "note": "Jezebel, who says of herself that she is “דַּנבִֿיתָֿא”, a prophetess."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֵתֿנַבִּי",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "prophesy",
+      "summary": "The Peshitta's ܐܬܢܒܝ, for προφητεύω, in the ethpaal as Ezra's Aramaic has the hithpaal.",
+      "cognate_ids": [
+        "arc-itnabba"
+      ],
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "prophesy",
+          "senses": [
+            {
+              "gloss": "prophesy",
+              "definition": "To speak by the holy spirit as a prophet: the old prophets, Zechariah father of John, the disciples on whom the spirit came, and in the ecclesia.",
+              "evidence": [
+                {
+                  "ref": "Act.2.17",
+                  "role": "defining",
+                  "note": "Joel 3:1 in the Peshitta: “ונֵתֿנַבֻּונ בּנַיכֻּונ וַבֿנָתֿכֻֿונ”."
+                },
+                {
+                  "ref": "Luk.1.67",
+                  "role": "defining",
+                  "note": "Zechariah “was filled with holy spirit וֵאתֿנַבִּי”."
+                },
+                {
+                  "ref": "1Pe.1.10",
+                  "note": "The prophets “אֵתֿנַבִּיו”, prophesied, of the grace to come to you."
+                },
+                {
+                  "ref": "Act.19.6"
+                },
+                {
+                  "ref": "1Co.14.3"
+                }
+              ],
+              "kin": [
+                "prophesy-word",
+                "prophesy-by-spirit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נבִֿיֻותָֿא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "prophecy",
+      "summary": "The Peshitta's ܢܒܝܘܬܐ, for προφητεία.",
+      "cognate_ids": [
+        "arc-nebuata"
+      ],
+      "senses": [
+        {
+          "gloss": "prophecy",
+          "definition": "The word of the prophets, and the gift of prophesying.",
+          "evidence": [
+            {
+              "ref": "2Pe.1.19",
+              "role": "defining",
+              "note": "“A sure word of prophecy (מֵלתָֿא דַּנבִֿיֻותָֿא), to which you do well to give heed, as to a lamp shining in a dark place.”"
+            },
+            {
+              "ref": "2Pe.1.21",
+              "role": "defining",
+              "note": "“Not by the will of man did prophecy (נבִֿיֻותָֿא) come at any time.”"
+            }
+          ],
+          "kin": [
+            "prophesy-word"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-anbaa",
+      "lang": "ar",
+      "form": "أَنْبَأَ، نَبَّأَ",
+      "translit": "ʾanbaʾa, nabbaʾa",
+      "gloss": "inform, tell (someone) of a thing",
+      "relation": "cognate",
+      "note": "The Arabic verb of the root in its causative stems is to give someone news, to make him know; the fifth stem, tanabbaʾa, is to claim to be a prophet. The Hebrew verb is likewise used only in derived stems.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2753, art. نبأ, 4 أنبأه",
+          "note": "“He informed him, or told him, of it … he made him to know it”; also 2 نبّأ."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2753, art. نبأ, 5 تنبّأ",
+          "note": "“He arrogated to himself the gift of prophecy, or office of a prophet.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-naba",
+      "lang": "ar",
+      "form": "نَبَأٌ",
+      "translit": "nabaʾ",
+      "gloss": "news, tidings, an announcement",
+      "relation": "cognate",
+      "note": "The noun of the verb above: information, an announcement of weight. It shows the root's sense in Arabic to be the telling of news, which is the prophet's work.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2753, art. نبأ, نَبَأٌ",
+          "note": "“Information; a piece of information; intelligence; an announcement; news; tidings.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-nabi",
+      "lang": "ar",
+      "form": "نَبِىْءٌ، نَبِىٌّ",
+      "translit": "nabīʾ, nabiyy",
+      "gloss": "prophet",
+      "relation": "cognate",
+      "note": "The same noun pattern as נָבִיא, explained by the Arabic grammarians as one who informs men of God or is informed. It may have been taken into Arabic with the religious sense from Aramaic; the Arabic verb and noun נבא of news stand beside it either way.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2753, art. نبأ, نَبِىْءٌ",
+          "note": "“A prophet … who acquaints or informs mankind, or who is acquainted or informed, respecting God and things unseen.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-nubuwwa",
+      "lang": "ar",
+      "form": "نُبُوْءَةٌ، نُبُوَّةٌ",
+      "translit": "nubūʾa, nubuwwa",
+      "gloss": "prophecy, the office of a prophet",
+      "relation": "cognate",
+      "note": "Formed as נְבוּאָה is.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2753, art. نبأ, نُبُوْءَةٌ",
+          "note": "“Prophecy; the gift of prophecy; the office, or function, of a prophet.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-nabu",
+      "lang": "akk",
+      "form": "nabû",
+      "translit": "nabû",
+      "gloss": "name, call; proclaim; appoint, nominate",
+      "relation": "possible",
+      "note": "The Akkadian verb of calling and naming, used of gods who call a king to his office; its adjective nabû is “called, named”. A נָבִיא would then be one called, or one who calls out. The sounds agree (a verb with weak third radical), but the meaning is calling and naming, not speaking for another, so the link is argued, not shown.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004560, nabû [name] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000004560.html",
+          "note": "Meanings in the glossaries: agree, appoint, be named, call, cause to proclaim, name, nominate; 1,397 instances."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000048660, nabû [called] AJ",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000048660.html",
+          "note": "Meanings: called, invoked, named."
+        }
+      ]
+    },
+    {
+      "id": "arc-nebiya",
+      "lang": "arc",
+      "form": "נְבִיָּא",
+      "translit": "nəḇiyyā",
+      "gloss": "prophet (Jewish Aramaic); fem. נְבִיאֲתָא prophetess",
+      "relation": "cognate",
+      "note": "The Targums' word where the Hebrew has נָבִיא, as at Gen 20:7 and Deu 18:20, and the feminine for Miriam and Deborah (Targ. Exo 15:20; Jdg 4:4).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְבִיָּא (ch.), “same” as נָבִיא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A0%D6%B0%D7%91%D6%B4%D7%99%D6%B8%D6%BC%D7%90.1",
+          "note": "“Targ. Jud. VI, 8. Targ. Gen. XX, 7 … Targ. Deut. XVIII, 20; a. v. fr. … Fem. נְבִיאֲתָא … Targ. Ex. XV, 20. Targ. Jud. IV, 4.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-itnabba",
+      "lang": "arc",
+      "form": "אִיתְנַבָּא",
+      "translit": "ʾiṯnabbā",
+      "gloss": "prophesy (Jewish Aramaic, ithpaal)",
+      "relation": "cognate",
+      "note": "The Targum of Num 11:25 uses it where the Hebrew has וַיִּתְנַבְּאוּ, in the reflexive stem as the Hebrew and Ezra's Aramaic do.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְבֵי, נְבָא (ch.), Ithpa. אִיתְנַבָּא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A0%D6%B0%D7%91%D6%B5%D7%99.1",
+          "note": "“Ithpa. אִיתְנַבָּא, אִיתְנַבֵּי, אִינַּבֵּי same. Targ. Num. XI, 25, sq.; a. fr.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-nebuata",
+      "lang": "arc",
+      "form": "נְבוּאֲתָא",
+      "translit": "nəḇuʾăṯā",
+      "gloss": "prophecy (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums' noun, as at Num 11:28-29.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְבוּאָה ² (ch.), נְבוּאֲתָא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A0%D6%B0%D7%91%D7%95%D6%BC%D7%90%D6%B8%D7%94%20%C2%B2.1",
+          "note": "“Targ. O. Gen. XV, 1. Targ. Num. XI, 28. Ib. 29.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-prophet-speaks-gods-words",
+      "statement": "Yahweh told Moses that Aaron would speak for him: “you shall put the words in his mouth … he shall be to you for a mouth, and you shall be to him for God” (Exo 4:15-16), and then, “I have made you God to Pharaoh, and Aaron your brother shall be your prophet (נְבִיאֶךָ)” (Exo 7:1-2). The prophet is the mouth, speaking another's words. So Yahweh promised, “I will put my words in his mouth, and he shall speak to them all that I command him” (Deu 18:18); he touched Jeremiah's mouth and said, “I have put my words in your mouth” (Jer 1:9); Micaiah would speak only “what Yahweh says to me” (1Ki 22:14). He made himself known to the prophets in visions and dreams (Num 12:6) and does nothing without revealing his counsel to them (Amo 3:7); when he has spoken, the prophet cannot keep silent (Amo 3:8). Peter says the same: “prophecy never came by the will of man, but holy men of God spoke as they were carried along by holy spirit” (2Pe 1:21). From the verses: a prophet's message is not his own thought about God but God's word, given to a man and spoken through him; this is why it is to be heard as God's own voice, and why the scriptures the prophets wrote carry his authority.",
+      "evidence": [
+        {
+          "ref": "Exo.4.15",
+          "to": "Exo.4.16"
+        },
+        {
+          "ref": "Exo.7.1",
+          "to": "Exo.7.2"
+        },
+        {
+          "ref": "Deu.18.18"
+        },
+        {
+          "ref": "Jer.1.9"
+        },
+        {
+          "ref": "1Ki.22.14"
+        },
+        {
+          "ref": "Num.12.6"
+        },
+        {
+          "ref": "Amo.3.7",
+          "to": "Amo.3.8"
+        },
+        {
+          "ref": "2Pe.1.20",
+          "to": "2Pe.1.21"
+        }
+      ]
+    },
+    {
+      "topic": "spirit-of-prophecy",
+      "statement": "Yahweh “took of the spirit that was on Moses and put it on the seventy elders, and when the spirit rested on them they prophesied” (Num 11:25); Moses wished that “all Yahweh's people were prophets, that Yahweh would put his spirit on them” (Num 11:29). The spirit of Yahweh rushed upon Saul and he prophesied (1Sa 10:6, 10). Yahweh testified against Israel “by your spirit, by the hand of your prophets” (Neh 9:30), sent his words “by his spirit, by the hand of the former prophets” (Zec 7:12), and Micah was “full of power, the spirit of Yahweh” to declare Israel's sin (Mic 3:8). Joel promised, “I will pour out my spirit on all flesh, and your sons and your daughters shall prophesy” (Jol 3:1), and Peter said at Pentecost, “this is what was spoken by the prophet Joel” (Act 2:16-18). In each of these verses the spirit is Yahweh's own: he has it, takes of it, puts it on men and pours it out, and by it he speaks. From the verses: the spirit by which the prophets spoke is God's power at work in men, given and measured out by him, not a person beside him; the same gift was seen in the first ecclesia, in the disciples at Ephesus and in Philip's daughters (Act 19:6; 21:9).",
+      "evidence": [
+        {
+          "ref": "Num.11.25"
+        },
+        {
+          "ref": "Num.11.29"
+        },
+        {
+          "ref": "1Sa.10.6"
+        },
+        {
+          "ref": "1Sa.10.10"
+        },
+        {
+          "ref": "Neh.9.30"
+        },
+        {
+          "ref": "Zec.7.12"
+        },
+        {
+          "ref": "Mic.3.8"
+        },
+        {
+          "ref": "Jol.3.1",
+          "to": "Jol.3.2"
+        },
+        {
+          "ref": "Act.2.16",
+          "to": "Act.2.18"
+        },
+        {
+          "ref": "Act.19.6"
+        },
+        {
+          "ref": "Act.21.9"
+        }
+      ]
+    },
+    {
+      "topic": "testing-a-prophet",
+      "statement": "The law gave two tests. If a prophet gives a sign that comes to pass and then says, “let us go after other gods”, he is not to be heard, for Yahweh is testing whether Israel loves him; that prophet is to die (Deu 13:2-6). And if a prophet speaks in Yahweh's name and the word does not come to pass, “that is the word which Yahweh has not spoken” (Deu 18:20-22). Jeremiah applied the second to Hananiah: the prophet who prophesies peace is known as sent by Yahweh only when his word comes to pass (Jer 28:9, 15), and Micaiah staked his word on the same (1Ki 22:28). Yahweh said of the false prophets, “I did not send them, yet they ran; I did not speak to them, yet they prophesied”, and that had they stood in his counsel they would have turned the people from their evil way (Jer 23:21-22). Jesus warned of false prophets known by their fruits (Mat 7:15), who would give great signs and wonders to lead astray even the chosen (Mat 24:24), and John wrote, “test the spirits, whether they are of God, because many false prophets have gone out into the world” (1Jn 4:1). From the verses: a sign is not proof; a prophet is tested by whether what he says agrees with what God has already spoken, by whether it comes to pass, and by whether it turns men to God or away from him.",
+      "evidence": [
+        {
+          "ref": "Deu.13.2",
+          "to": "Deu.13.6"
+        },
+        {
+          "ref": "Deu.18.20",
+          "to": "Deu.18.22"
+        },
+        {
+          "ref": "Jer.28.9"
+        },
+        {
+          "ref": "Jer.28.15"
+        },
+        {
+          "ref": "1Ki.22.28"
+        },
+        {
+          "ref": "Jer.23.21",
+          "to": "Jer.23.22"
+        },
+        {
+          "ref": "Mat.7.15"
+        },
+        {
+          "ref": "Mat.24.24"
+        },
+        {
+          "ref": "1Jn.4.1"
+        }
+      ]
+    },
+    {
+      "topic": "prophet-like-moses",
+      "statement": "Moses told Israel, “Yahweh your God will raise up for you a prophet from among you, from your brothers, like me; to him you shall listen” (Deu 18:15), and Yahweh said, “I will put my words in his mouth, and he shall speak to them all that I command him; and whoever will not listen to my words which he speaks in my name, I will require it of him” (Deu 18:18-19). The book closes saying no prophet like Moses had arisen in Israel, whom Yahweh knew face to face (Deu 34:10; Num 12:7-8). Peter and Stephen both quote the promise of Jesus (Act 3:22-23; 7:37), and Peter adds that God “raised up his servant Jesus” and sent him to bless them (Act 3:26). At the transfiguration the voice said, “This is my beloved son … hear him (αὐτοῦ ἀκούετε)”, the words of Deu 18:15 (Mat 17:5). Jesus said of himself what the law says of that prophet: “I have not spoken of myself, but the Father who sent me gave me a commandment, what I should say and what I should speak” (Jhn 12:49), and “the words which you gave me I have given them” (Jhn 17:8). From the verses: Jesus is the prophet like Moses, raised up from among his brothers, a man of Israel, in whose mouth God put his words; he does not speak from himself, and, as he said, “the Father is greater than I” (Jhn 14:28). To refuse him is to refuse God's own word.",
+      "evidence": [
+        {
+          "ref": "Deu.18.15",
+          "to": "Deu.18.19"
+        },
+        {
+          "ref": "Deu.34.10"
+        },
+        {
+          "ref": "Num.12.7",
+          "to": "Num.12.8"
+        },
+        {
+          "ref": "Act.3.22",
+          "to": "Act.3.23"
+        },
+        {
+          "ref": "Act.3.26"
+        },
+        {
+          "ref": "Act.7.37"
+        },
+        {
+          "ref": "Mat.17.5"
+        },
+        {
+          "ref": "Jhn.12.49",
+          "to": "Jhn.12.50"
+        },
+        {
+          "ref": "Jhn.17.8"
+        },
+        {
+          "ref": "Jhn.14.28"
+        }
+      ]
+    },
+    {
+      "topic": "prophets-rejected",
+      "statement": "Yahweh sent his servants the prophets to Israel “daily, rising early and sending”, but they did not listen (Jer 7:25-26); they mocked his messengers and scoffed at his prophets until there was no remedy (2Ch 36:15-16); Elijah said, “they have killed your prophets with the sword” (1Ki 19:10). Jesus said, “Jerusalem, Jerusalem, who kills the prophets” (Mat 23:37), and that a prophet could not perish outside Jerusalem (Luk 13:33); Stephen asked, “which of the prophets did your fathers not persecute? And they killed those who foretold the coming of the Righteous One, whom you have now betrayed and murdered” (Act 7:52). From the verses: the rejection of the prophet like Moses was the last act of a long refusal of God's word in his prophets, and the judgment that followed was the one the law had threatened on those who would not hear him (Deu 18:19).",
+      "evidence": [
+        {
+          "ref": "Jer.7.25",
+          "to": "Jer.7.26"
+        },
+        {
+          "ref": "2Ch.36.15",
+          "to": "2Ch.36.16"
+        },
+        {
+          "ref": "1Ki.19.10"
+        },
+        {
+          "ref": "Mat.23.37"
+        },
+        {
+          "ref": "Luk.13.33"
+        },
+        {
+          "ref": "Act.7.52"
+        },
+        {
+          "ref": "Deu.18.19"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key נבא, as BDB keys the Hebrew words (n.ai.aa is the heading; n.ai.ab–ae the words) and as the Aramaic verb's heading xn.aa.aa. The Aramaic nouns keep their own root keys as the database keys them: נְבִיא as נביא (xn.aa.ab), נְבוּאָה as נבואה (xn.aa.ac). The Aramaic verb's single token (Ezr 5:1) is stored under its root heading xn.aa.aa, which is given as the verb's bdb key. Database gap: xn.aa.ab has no surface_entry rows, so the four tokens of Aramaic נְבִיא (Ezr 5:1 ×2, 5:2, 6:14) are not linked and lexicon-support counts no uses for it. Filed here by spelling and left out: Lam 5:9 and Neh 10:38 נָבִיא (of בּוֹא). Other xn.aa keys are not this root: xn.aa.ad Nebuchadnezzar, xn.aa.ae נְבִזְבָּה reward, xn.aa.af נֶבְרַשְׁתָּא lampstand. No personal names are formed from the root (Nebo is a place and a god, under another key). The brief's Greek “loan” προφητεία is a false lead: Thayer only names נְבוּאָה as its Hebrew equivalent; recorded as a rendering. MACULA aligns ψευδοπροφήτου in Jer 6:13 to כֹּהֵן, a misalignment; not cited. Leads not followed (no vendored copy or verified locator): Ge'ez nabiy and Tigre näbi “prophet” (Wiktionary; check Dillmann, Leslau, Littmann-Höfner); Mari Akkadian nabûm / nabiʾum, a kind of prophet, in the Mari letters (check CAD N/1 and the Mari edition); Payne Smith for ܢܒܝܐ; CAL for Imperial Aramaic; Ugaritic nothing known. Whether Arabic nabiyy is native or taken from Aramaic is open; recorded as cognate, since the Arabic verb and noun of news are certainly native. Akkadian nabû recorded as possible only. Open questions: (1) 1Ch 25:1-3 prophesying with music as praise, kept as its own niphal sense; (2) 2Ch 15:8 reads “the prophecy, Oded the prophet” while v. 1 names Azariah son of Oded; the note follows v. 1; (3) doctrine statements on prophet-like-moses and prophets-rejected are reasoned conclusions to review."
+}
