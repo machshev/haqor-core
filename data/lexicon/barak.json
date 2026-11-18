@@ -1,0 +1,2913 @@
+{
+  "id": "barak",
+  "root": "ברכ",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "blessing",
+    "praise",
+    "prayer",
+    "speech",
+    "covenant",
+    "promise",
+    "body",
+    "kneeling",
+    "water",
+    "gift"
+  ],
+  "gloss": "bless; blessed; blessing; kneel, knee; pool",
+  "summary": "The verb, nearly always in the piel, is to bless. God blesses by giving life, increase and good (“God blessed them, saying, Be fruitful and multiply”, Gen 1:22); a father, priest or king blesses by speaking God's good over another, in Yahweh's name; men bless God by acknowledging with praise what he has done (“bless Yahweh, my soul, and forget not all his benefits”, Psa 103:2); and the word is used of greeting on meeting and parting. Its passive participle בָּרוּךְ is “blessed”, above all in “blessed be Yahweh”; בְּרָכָה is the blessing, both the good given and the words that wish it, and also a gift. The same root gives בֶּרֶךְ the knee, the qal and hiphil “kneel” and “make kneel”, and בְּרֵכָה a pool; how the knee and the blessing are joined scripture does not say. The promise to Abraham, “in you all the families of the ground shall be blessed”, is read by Peter and Paul as the gospel, fulfilled in Jesus (Act 3:25–26; Gal 3:8, 14); Arabic, Ugaritic, Phoenician, Sabaean, the Aramaic of Daniel and the Peshitta have the same root for blessing, and most of them for the knee.",
+  "words": [
+    {
+      "lemma": "בָּרַךְ",
+      "pos": "verb",
+      "gloss": "bless; be blessed; blessed (be); kneel",
+      "bdb": [
+        "b.dd.aa"
+      ],
+      "summary": "About 330 times. The piel is “bless”, with God, man or God himself as the one blessed; the pual, niphal and hithpael are its passives and reflexive; the qal is used only as “kneel” (twice) and in the passive participle בָּרוּךְ “blessed”; the hiphil once, “make (camels) kneel”. In six verses of Job and 1 Kings the piel stands where the sense is to curse God.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "bless (of God: prosper; of men: speak blessing on; of God as object: praise); greet; “bless” for curse",
+          "cognate_ids": [
+            "ar-baraka-bless",
+            "phn-brk",
+            "uga-brk-v",
+            "sab-brk",
+            "gez-baraka",
+            "arc-berak"
+          ],
+          "senses": [
+            {
+              "id": "god-blesses",
+              "gloss": "bless (God blesses): make fruitful, prosper",
+              "definition": "God's blessing on a creature, a man, a house or a people: he gives it life, fruitfulness, increase and good. The verses define it by what follows the word: “be fruitful and multiply”, flocks and herds, silver and gold, a hundredfold harvest.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.22",
+                  "role": "defining",
+                  "note": "“וַיְבָרֶךְ אֹתָם אֱלֹהִים, saying, Be fruitful and multiply and fill the waters in the seas”: the blessing is the gift of increase."
+                },
+                {
+                  "ref": "Gen.1.28",
+                  "note": "The same blessing on man: “be fruitful and multiply and fill the earth.”"
+                },
+                {
+                  "ref": "Gen.9.1",
+                  "note": "God blessed Noah and his sons with the same words after the flood."
+                },
+                {
+                  "ref": "Gen.24.35",
+                  "role": "defining",
+                  "note": "“Yahweh בֵּרַךְ my master greatly, and he has become great, and he has given him flocks and herds and silver and gold.”"
+                },
+                {
+                  "ref": "Gen.26.12",
+                  "role": "defining",
+                  "note": "Isaac sowed and reaped a hundredfold in that year, “וַיְבָרֲכֵהוּ יַהְוֶה”."
+                },
+                {
+                  "ref": "Deu.7.13",
+                  "role": "defining",
+                  "note": "“He will love you and bless you and multiply you, and bless the fruit of your womb and the fruit of your ground.”"
+                },
+                {
+                  "ref": "Gen.39.5",
+                  "note": "Yahweh blessed the Egyptian's house for Joseph's sake, “and the blessing of Yahweh was on all that he had, in the house and in the field”."
+                },
+                {
+                  "ref": "Job.1.10",
+                  "note": "“The work of his hands בֵּרַכְתָּ, and his cattle has spread out in the land.”"
+                },
+                {
+                  "ref": "Job.42.12",
+                  "note": "Yahweh blessed Job's latter end more than his beginning: fourteen thousand sheep and the rest."
+                },
+                {
+                  "ref": "Hag.2.19",
+                  "note": "To the builders of the house: “from this day אֲבָרֵךְ”, though the vine and fig had not yet borne."
+                },
+                {
+                  "ref": "Psa.67.2",
+                  "note": "“God be gracious to us וִיבָרְכֵנוּ, cause his face to shine on us.”"
+                },
+                {
+                  "ref": "Gen.12.2",
+                  "note": "To Abram: “I will make you a great nation וַאֲבָרֶכְךָ, and make your name great.”"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "bless-seventh-day",
+                  "gloss": "bless (the seventh day)",
+                  "definition": "God blessed the seventh day, on which he rested from the work of the six days, and set it apart as holy: blessing beside sanctifying.",
+                  "evidence": [
+                    {
+                      "ref": "Gen.2.3",
+                      "role": "defining",
+                      "note": "“וַיְבָרֶךְ אֱלֹהִים אֶת־יוֹם הַשְּׁבִיעִי וַיְקַדֵּשׁ אֹתוֹ, because in it he rested from all his work.”"
+                    },
+                    {
+                      "ref": "Exo.20.11",
+                      "role": "defining",
+                      "note": "“In six days Yahweh made the heavens and the earth … and rested on the seventh day; therefore בֵּרַךְ יַהְוֶה אֶת־יוֹם הַשַׁבָּת and sanctified it.”"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "man-blesses",
+              "gloss": "bless (a man blesses another): speak blessing on",
+              "definition": "A father, priest, prophet or king speaks over another the good he asks God to give him, often in Yahweh's name; the words spoken are the blessing (בְּרָכָה), and what is spoken stands.",
+              "evidence": [
+                {
+                  "ref": "Num.6.23",
+                  "to": "Num.6.24",
+                  "role": "defining",
+                  "note": "“Thus תְבָרֲכוּ the sons of Israel … יְבָרֶכְךָ יַהְוֶה וְיִשְׁמְרֶךָ”: the priest's blessing is a spoken asking of Yahweh's good."
+                },
+                {
+                  "ref": "Num.6.27",
+                  "role": "defining",
+                  "note": "“They shall put my name on the sons of Israel, וַאֲנִי אֲבָרֲכֵם”: the priests speak and Yahweh blesses."
+                },
+                {
+                  "ref": "Gen.27.4",
+                  "role": "defining",
+                  "note": "Isaac: “bring it to me and I will eat, that my soul may bless you (תְּבָרֶכְךָ) before I die.”"
+                },
+                {
+                  "ref": "Gen.27.33",
+                  "role": "defining",
+                  "note": "Isaac, finding he had blessed Jacob: “וָאֲבָרֲכֵהוּ; yes, and blessed he shall be”: the blessing once spoken is not taken back."
+                },
+                {
+                  "ref": "Gen.48.15",
+                  "to": "Gen.48.16",
+                  "note": "Jacob blessed Joseph: “the God before whom my fathers walked … the angel who redeemed me from all evil, bless the lads.”"
+                },
+                {
+                  "ref": "Gen.49.28",
+                  "note": "“Each according to his blessing (כְּבִרְכָתוֹ) he blessed them.”"
+                },
+                {
+                  "ref": "Gen.14.19",
+                  "note": "Melchizedek blessed Abram: “blessed be Abram of El Elyon, possessor of heaven and earth.”"
+                },
+                {
+                  "ref": "Lev.9.22",
+                  "note": "“Aaron lifted up his hands toward the people וַיְבָרְכֵם, and came down from offering the sin offering.”"
+                },
+                {
+                  "ref": "Deu.10.8",
+                  "note": "The tribe of Levi was separated “to stand before Yahweh to serve him וּלְבָרֵךְ בִּשְׁמוֹ”."
+                },
+                {
+                  "ref": "2Sa.6.18",
+                  "note": "David “blessed the people in the name of Yahweh of hosts”."
+                },
+                {
+                  "ref": "1Ki.8.55",
+                  "note": "Solomon stood and blessed all the assembly of Israel with a loud voice."
+                },
+                {
+                  "ref": "Num.23.11",
+                  "role": "defining",
+                  "note": "Balak: “I took you to curse (לָקֹב) my enemies, and behold, בֵּרַכְתָּ בָרֵךְ”: blessing is the opposite of cursing."
+                },
+                {
+                  "ref": "Num.23.20",
+                  "note": "Balaam: “I have received a command to bless; he has blessed, and I cannot reverse it.”"
+                },
+                {
+                  "ref": "Deu.33.1",
+                  "note": "“This is the blessing with which Moses the man of God blessed the sons of Israel before his death.”"
+                },
+                {
+                  "ref": "1Sa.9.13",
+                  "note": "Samuel “blesses the sacrifice (יְבָרֵךְ הַזֶּבַח); afterwards those who are invited eat”."
+                },
+                {
+                  "ref": "Heb.11.20",
+                  "to": "Heb.11.21",
+                  "note": "“By faith Isaac blessed (εὐλόγησεν) Jacob and Esau concerning things to come”; Jacob dying blessed the sons of Joseph (Gen 27; 48)."
+                }
+              ]
+            },
+            {
+              "id": "bless-god",
+              "gloss": "bless (God, his name): praise, give thanks",
+              "definition": "With God or his name as object: to acknowledge him with praise for what he is and has done, often with bowing; set beside “extol”, “praise” and “give thanks”.",
+              "evidence": [
+                {
+                  "ref": "Psa.103.1",
+                  "to": "Psa.103.2",
+                  "role": "defining",
+                  "note": "“בָּרֲכִי נַפְשִׁי אֶת־יַהְוֶה, and all that is within me his holy name … and forget not all his benefits.”"
+                },
+                {
+                  "ref": "Deu.8.10",
+                  "role": "defining",
+                  "note": "“You shall eat and be satisfied וּבֵרַכְתָּ אֶת־יַהְוֶה אֱלֹהֶיךָ for the good land which he has given you”: blessing God is thanks for his gift."
+                },
+                {
+                  "ref": "Gen.24.48",
+                  "role": "defining",
+                  "note": "Abraham's servant “bowed and worshipped Yahweh וָאֲבָרֵךְ אֶת־יַהְוֶה … who led me in the way of truth”."
+                },
+                {
+                  "ref": "Psa.145.1",
+                  "role": "defining",
+                  "note": "“I will extol you (אֲרוֹמִמְךָ), my God the King, וַאֲבָרֲכָה your name for ever and ever.”"
+                },
+                {
+                  "ref": "Psa.145.10",
+                  "note": "“All your works shall give thanks to you (יוֹדוּךָ), Yahweh, and your faithful ones shall bless you.”"
+                },
+                {
+                  "ref": "Psa.16.7",
+                  "note": "“אֲבָרֵךְ אֶת־יַהְוֶה who has given me counsel.”"
+                },
+                {
+                  "ref": "Neh.9.5",
+                  "note": "“Stand up, bless Yahweh your God from everlasting to everlasting, and let them bless your glorious name, exalted above all blessing and praise.”"
+                },
+                {
+                  "ref": "1Ch.29.20",
+                  "note": "“All the assembly blessed Yahweh the God of their fathers, and bowed and worshipped.”"
+                },
+                {
+                  "ref": "Jdg.5.2",
+                  "note": "“For the people's offering themselves willingly, בָּרֲכוּ יַהְוֶה.”"
+                },
+                {
+                  "ref": "2Ch.20.26",
+                  "note": "“There they blessed Yahweh; therefore they called the name of that place the valley of Beracah (בְּרָכָה).”"
+                },
+                {
+                  "ref": "Psa.103.20",
+                  "note": "“Bless Yahweh, his angels, mighty in strength, who do his word.”"
+                }
+              ]
+            },
+            {
+              "id": "greet",
+              "gloss": "greet, salute; take leave",
+              "definition": "To greet a man on meeting him or on parting, with a word of blessing: the ordinary salutation, as shown where the verb goes with meeting, kissing, coming in and going out, and asking after a man's peace.",
+              "cognate_ids": [
+                "phn-brk"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.47.7",
+                  "role": "defining",
+                  "note": "Joseph set Jacob before Pharaoh, “וַיְבָרֶךְ יַעֲקֹב אֶת־פַּרְעֹה”, on coming in."
+                },
+                {
+                  "ref": "Gen.47.10",
+                  "role": "defining",
+                  "note": "“Jacob blessed Pharaoh and went out from before Pharaoh”: on going out."
+                },
+                {
+                  "ref": "1Sa.13.10",
+                  "role": "defining",
+                  "note": "Samuel came, “and Saul went out to meet him לְבָרֲכוֹ”."
+                },
+                {
+                  "ref": "2Ki.4.29",
+                  "role": "defining",
+                  "note": "Elisha to Gehazi: “if you meet a man, לֹא תְבָרְכֶנּוּ, and if a man blesses you, do not answer him”: no greetings on the way."
+                },
+                {
+                  "ref": "2Sa.8.10",
+                  "note": "Toi sent his son to David “to ask him of peace (לִשְׁאָל־לוֹ לְשָׁלוֹם) and to bless him”."
+                },
+                {
+                  "ref": "2Sa.19.40",
+                  "note": "“The king kissed Barzillai וַיְבָרֲכֵהוּ, and he returned to his place”: parting."
+                },
+                {
+                  "ref": "2Ki.10.15",
+                  "note": "Jehu met Jehonadab “וַיְבָרְכֵהוּ” and asked, “Is your heart right?”"
+                },
+                {
+                  "ref": "Rut.2.4",
+                  "note": "Boaz to the reapers, “Yahweh be with you”; they answered, “יְבָרֶכְךָ יַהְוֶה”."
+                },
+                {
+                  "ref": "1Sa.25.14",
+                  "note": "David sent messengers from the wilderness “לְבָרֵךְ אֶת־אֲדֹנֵינוּ”, and Nabal railed at them."
+                },
+                {
+                  "ref": "Pro.27.14",
+                  "note": "“He who blesses his friend with a loud voice, rising early in the morning, it shall be counted a curse to him.”"
+                }
+              ]
+            },
+            {
+              "id": "bless-for-curse",
+              "gloss": "“bless” God (or the king) for curse him",
+              "definition": "In six verses the verb, with God (and in 1 Kings the king) as object, stands where the context requires the opposite: to curse or renounce him. The text shows it: Job offered burnt offerings lest his sons had done it in their hearts; the adversary sets it against Job's own blessing of Yahweh's name; Job calls his wife's “bless God and die” the speech of a foolish woman, and “in all this Job did not sin with his lips”; and Naboth is stoned on the charge, as the law stones the one who curses (קִלֵּל) his God or blasphemes the name. Scripture writes “bless” here where God is the one cursed.",
+              "evidence": [
+                {
+                  "ref": "Job.1.5",
+                  "role": "defining",
+                  "note": "Job offered burnt offerings for his sons, “for Job said, Perhaps my sons have sinned וּבֵרֲכוּ אֱלֹהִים בִּלְבָבָם”: a sin needing an offering."
+                },
+                {
+                  "ref": "Job.1.11",
+                  "role": "defining",
+                  "note": "The adversary: “touch all that he has; אִם־לֹא עַל־פָּנֶיךָ יְבָרֲכֶךָּ”. Job's answer to the loss is the true blessing, “may the name of Yahweh be blessed (מְבֹרָךְ)” (Job 1:21)."
+                },
+                {
+                  "ref": "Job.1.21"
+                },
+                {
+                  "ref": "Job.2.5",
+                  "note": "The same words again: “touch his bone and his flesh, and he will bless you to your face.”"
+                },
+                {
+                  "ref": "Job.2.9",
+                  "role": "defining",
+                  "note": "His wife: “Do you still hold fast your integrity? בָּרֵךְ אֱלֹהִים וָמֻת.”"
+                },
+                {
+                  "ref": "Job.2.10",
+                  "role": "defining",
+                  "note": "Job: “You speak as one of the foolish women speaks … In all this Job did not sin with his lips”: what she urged was a sin of the lips."
+                },
+                {
+                  "ref": "1Ki.21.10",
+                  "role": "defining",
+                  "note": "Jezebel's false witnesses: “בֵּרַכְתָּ אֱלֹהִים וָמֶלֶךְ; then carry him out and stone him, that he die.”"
+                },
+                {
+                  "ref": "1Ki.21.13",
+                  "note": "“Naboth בֵּרַךְ God and king”, and they stoned him with stones."
+                },
+                {
+                  "ref": "Lev.24.15",
+                  "to": "Lev.24.16",
+                  "note": "The law: “whoever curses (יְקַלֵּל) his God shall bear his sin; and he who blasphemes the name of Yahweh shall surely be put to death, all the congregation shall stone him.”"
+                },
+                {
+                  "ref": "Exo.22.27",
+                  "note": "“You shall not curse (תְקַלֵּל) God, nor curse a ruler of your people”: God and ruler together, as in 1Ki 21:10."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be blessed",
+          "cognate_ids": [
+            "ar-baraka-bless",
+            "sab-brk"
+          ],
+          "senses": [
+            {
+              "id": "blessed-pual",
+              "gloss": "be blessed",
+              "definition": "The passive of the piel: of men, a land or a generation blessed by God, and of God's name, blessed by men.",
+              "evidence": [
+                {
+                  "ref": "Num.22.6",
+                  "role": "defining",
+                  "note": "Balak to Balaam: “whom you bless is blessed (מְבֹרָךְ), and whom you curse is cursed (יוּאָר).”"
+                },
+                {
+                  "ref": "Psa.37.22",
+                  "role": "defining",
+                  "note": "“Those blessed by him (מְבֹרָכָיו) shall inherit the land, and those cursed by him shall be cut off.”"
+                },
+                {
+                  "ref": "Job.1.21",
+                  "role": "defining",
+                  "note": "“Yahweh gave and Yahweh has taken; יְהִי שֵׁם יַהְוֶה מְבֹרָךְ.”"
+                },
+                {
+                  "ref": "Psa.113.2",
+                  "note": "“Blessed be the name of Yahweh from this time forth and for ever.”"
+                },
+                {
+                  "ref": "Deu.33.13",
+                  "note": "“Blessed of Yahweh (מְבֹרֶכֶת יַהְוֶה) be his land, with the precious things of heaven, with the dew.”"
+                },
+                {
+                  "ref": "Psa.112.2",
+                  "note": "“The generation of the upright shall be blessed.”"
+                },
+                {
+                  "ref": "Psa.128.4",
+                  "note": "“Behold, thus shall the man be blessed who fears Yahweh.”"
+                },
+                {
+                  "ref": "Pro.22.9",
+                  "note": "“He who has a good eye shall be blessed, for he gives of his bread to the poor.”"
+                },
+                {
+                  "ref": "Pro.20.21",
+                  "note": "An inheritance hastily gained at the beginning, its end shall not be blessed."
+                },
+                {
+                  "ref": "2Sa.7.29",
+                  "note": "David: “from your blessing the house of your servant shall be blessed for ever.”"
+                },
+                {
+                  "ref": "Jdg.5.24",
+                  "note": "“Blessed above women (תְּבֹרַךְ מִנָּשִׁים) shall Jael be.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be blessed (in Abraham and his seed)",
+          "cognate_ids": [
+            "ar-baraka-bless",
+            "sab-brk"
+          ],
+          "senses": [
+            {
+              "id": "nations-blessed",
+              "gloss": "be blessed (all families of the earth in Abraham)",
+              "definition": "Used only in the promise to Abraham, Isaac and Jacob, that in them all the families of the earth shall be blessed. The New Testament quotes it as a passive, ἐνευλογηθήσονται, “shall be blessed”, and calls it the gospel preached beforehand to Abraham.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.3",
+                  "role": "defining",
+                  "note": "“וְנִבְרְכוּ בְךָ כֹּל מִשְׁפְּחֹת הָאֲדָמָה.”"
+                },
+                {
+                  "ref": "Gen.18.18",
+                  "note": "“Abraham shall surely become a great and mighty nation, וְנִבְרְכוּ בוֹ כֹּל גּוֹיֵי הָאָרֶץ.”"
+                },
+                {
+                  "ref": "Gen.28.14",
+                  "note": "To Jacob: “in you and in your seed shall all the families of the ground be blessed.”"
+                },
+                {
+                  "ref": "Gal.3.8",
+                  "role": "defining",
+                  "note": "“The scripture, foreseeing that God would justify the nations by faith, preached the gospel beforehand to Abraham, In you shall all the nations be blessed (ἐνευλογηθήσονται).”"
+                },
+                {
+                  "ref": "Act.3.25",
+                  "note": "Peter quotes the promise with “in your seed” (Gen 22:18)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "be blessed, bless oneself (in another); bless oneself (in one's heart)",
+          "cognate_ids": [
+            "ar-baraka-bless",
+            "sab-brk"
+          ],
+          "senses": [
+            {
+              "id": "nations-blessed-hith",
+              "gloss": "be blessed, bless themselves (in Abraham's seed, in Yahweh)",
+              "definition": "The nations' blessing in the seed of Abraham, or in Yahweh or his king. Peter quotes Gen 22:18 with the passive “shall be blessed”, as Paul quotes Gen 12:3, so the New Testament reads the hithpael as the niphal.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.18",
+                  "role": "defining",
+                  "note": "“וְהִתְבָּרֲכוּ בְזַרְעֲךָ כֹּל גּוֹיֵי הָאָרֶץ, because you obeyed my voice.”"
+                },
+                {
+                  "ref": "Act.3.25",
+                  "role": "defining",
+                  "note": "“In your seed shall all the families of the earth be blessed (ἐνευλογηθήσονται)”: Gen 22:18 with Gen 12:3, read as a passive."
+                },
+                {
+                  "ref": "Gen.26.4",
+                  "note": "The same words to Isaac."
+                },
+                {
+                  "ref": "Psa.72.17",
+                  "note": "Of the king: “his name shall endure before the sun, וְיִתְבָּרְכוּ בוֹ, all nations shall call him happy.”"
+                },
+                {
+                  "ref": "Jer.4.2",
+                  "note": "If Israel swears “as Yahweh lives” in truth, “וְהִתְבָּרְכוּ בוֹ גּוֹיִם, and in him they shall glory”."
+                }
+              ]
+            },
+            {
+              "id": "bless-oneself",
+              "gloss": "bless oneself, count oneself blessed",
+              "definition": "To speak blessing over oneself: the man who hears the curse and tells himself he shall have peace, and the one who blesses himself by the God of truth.",
+              "evidence": [
+                {
+                  "ref": "Deu.29.18",
+                  "role": "defining",
+                  "note": "When he hears the words of this oath, “וְהִתְבָּרֵךְ בִּלְבָבוֹ, saying, I shall have peace, though I walk in the stubbornness of my heart”."
+                },
+                {
+                  "ref": "Isa.65.16",
+                  "role": "defining",
+                  "note": "“He who blesses himself (הַמִּתְבָּרֵךְ) in the land shall bless himself by the God of truth (אָמֵן), and he who swears in the land shall swear by the God of truth.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "kneel; passive participle בָּרוּךְ “blessed”",
+          "senses": [
+            {
+              "id": "kneel",
+              "gloss": "kneel",
+              "definition": "To go down on the knees: in prayer, or in worship beside bowing down.",
+              "cognate_ids": [
+                "ar-baraka-kneel",
+                "gez-berk"
+              ],
+              "kin": [
+                "knee-bowed"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Ch.6.13",
+                  "role": "defining",
+                  "note": "Solomon stood on the bronze platform “וַיִּבְרַךְ עַל־בִּרְכָּיו before all the assembly of Israel, and spread out his hands toward heaven”: the verb with its own noun."
+                },
+                {
+                  "ref": "Psa.95.6",
+                  "role": "defining",
+                  "note": "“Come, let us worship (נִשְׁתַּחֲוֶה) and bow down (וְנִכְרָעָה), נִבְרְכָה before Yahweh our maker.”"
+                }
+              ]
+            },
+            {
+              "id": "blessed-be-god",
+              "gloss": "blessed (be) Yahweh",
+              "definition": "בָּרוּךְ יַהְוֶה, “blessed be Yahweh”, with what he has done: the commonest form of praise in the Old Testament, said on receiving his help, and closing the books of the Psalms.",
+              "cognate_ids": [
+                "ar-mubarak",
+                "arc-berak"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.14.20",
+                  "role": "defining",
+                  "note": "“וּבָרוּךְ אֵל עֶלְיוֹן, who has delivered your enemies into your hand.”"
+                },
+                {
+                  "ref": "Gen.24.27",
+                  "role": "defining",
+                  "note": "“בָּרוּךְ יַהְוֶה God of my master Abraham, who has not forsaken his kindness and his truth toward my master.”"
+                },
+                {
+                  "ref": "Psa.28.6",
+                  "role": "defining",
+                  "note": "“בָּרוּךְ יַהְוֶה, for he has heard the voice of my supplications.”"
+                },
+                {
+                  "ref": "Gen.9.26",
+                  "note": "“Blessed be Yahweh, the God of Shem.”"
+                },
+                {
+                  "ref": "1Sa.25.32",
+                  "note": "David to Abigail: “blessed be Yahweh, God of Israel, who sent you this day to meet me.”"
+                },
+                {
+                  "ref": "Psa.41.14",
+                  "note": "“Blessed be Yahweh, God of Israel, from everlasting to everlasting. Amen and amen”: the close of the first book."
+                },
+                {
+                  "ref": "Psa.72.18",
+                  "to": "Psa.72.19",
+                  "note": "“Blessed be Yahweh God, the God of Israel, who alone does wonders; and blessed be his glorious name for ever.”"
+                },
+                {
+                  "ref": "Rut.4.14",
+                  "note": "The women to Naomi: “blessed be Yahweh, who has not left you without a redeemer this day.”"
+                },
+                {
+                  "ref": "Ezk.3.12",
+                  "note": "“Blessed be the glory of Yahweh from his place.”"
+                },
+                {
+                  "ref": "Zec.11.5",
+                  "note": "The false shepherds' sellers say “blessed be Yahweh, for I am rich”: the formula on wicked lips."
+                },
+                {
+                  "ref": "Luk.1.68",
+                  "role": "defining",
+                  "note": "Zechariah: “Blessed (εὐλογητὸς) be the Lord, the God of Israel, for he has visited and wrought redemption for his people”: the Hebrew formula in Greek."
+                }
+              ]
+            },
+            {
+              "id": "blessed-ptc",
+              "gloss": "blessed (of men): declared or wished blessed",
+              "definition": "בָּרוּךְ of a man, a people or a thing: one whom God has blessed, or on whom blessing is pronounced; the opposite of אָרוּר “cursed”.",
+              "cognate_ids": [
+                "ar-mubarak",
+                "arc-berak",
+                "sab-brk"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.27.29",
+                  "role": "defining",
+                  "note": "“אֹרְרֶיךָ אָרוּר וּמְבָרֲכֶיךָ בָּרוּךְ”: those who curse you cursed, those who bless you blessed."
+                },
+                {
+                  "ref": "Num.22.12",
+                  "role": "defining",
+                  "note": "God to Balaam: “you shall not curse the people, כִּי בָרוּךְ הוּא.”"
+                },
+                {
+                  "ref": "Deu.28.3",
+                  "role": "defining",
+                  "note": "“בָּרוּךְ אַתָּה in the city, and blessed you in the field”: the blessings of obedience, against the curses of Deu 28:16."
+                },
+                {
+                  "ref": "Deu.28.6",
+                  "note": "“Blessed shall you be in your coming in, and blessed in your going out.”"
+                },
+                {
+                  "ref": "Jer.17.7",
+                  "role": "defining",
+                  "note": "“בָּרוּךְ הַגֶּבֶר who trusts in Yahweh”, set against “cursed is the man who trusts in man” (Jer 17:5)."
+                },
+                {
+                  "ref": "Psa.118.26",
+                  "role": "defining",
+                  "note": "“בָּרוּךְ הַבָּא בְּשֵׁם יַהְוֶה; we have blessed you from the house of Yahweh.”"
+                },
+                {
+                  "ref": "Mat.21.9",
+                  "note": "Psa 118:26 cried to Jesus at his entry: “blessed (εὐλογημένος) is he who comes in the name of the Lord.”"
+                },
+                {
+                  "ref": "Gen.24.31",
+                  "note": "Laban to Abraham's servant: “Come in, blessed of Yahweh (בְּרוּךְ יַהְוֶה).”"
+                },
+                {
+                  "ref": "Deu.7.14",
+                  "note": "“You shall be blessed above all peoples.”"
+                },
+                {
+                  "ref": "1Sa.15.13",
+                  "note": "Saul's greeting to Samuel: “Blessed are you of Yahweh; I have performed the word of Yahweh.”"
+                },
+                {
+                  "ref": "Rut.2.20",
+                  "note": "Naomi: “blessed is he of Yahweh, who has not forsaken his kindness to the living and the dead.”"
+                },
+                {
+                  "ref": "Isa.19.25",
+                  "note": "“Blessed be Egypt my people, and Assyria the work of my hands, and Israel my inheritance.”"
+                },
+                {
+                  "ref": "Isa.65.23",
+                  "note": "“They are the seed of the blessed of Yahweh (בְּרוּכֵי יַהְוֶה), and their offspring with them.”"
+                },
+                {
+                  "ref": "Jer.20.14",
+                  "note": "“Cursed be the day on which I was born … let it not be blessed.”"
+                },
+                {
+                  "ref": "Pro.5.18",
+                  "note": "“Let your fountain be blessed, and rejoice in the wife of your youth.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make kneel",
+          "senses": [
+            {
+              "id": "make-kneel",
+              "gloss": "make (camels) kneel",
+              "definition": "To make an animal kneel down to rest.",
+              "cognate_ids": [
+                "ar-baraka-kneel"
+              ],
+              "kin": [
+                "knee-bowed"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.24.11",
+                  "role": "defining",
+                  "note": "“וַיַּבְרֵךְ הַגְּמַלִּים outside the city by the well of water, at evening.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "εὐλογέω",
+          "gloss": "bless",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.22.17, בָרֵךְ אֲבָרֶכְךָ → εὐλογῶν εὐλογήσω; Gen.14.19, בָּרוּךְ → εὐλογημένος; Psa.118.26, בָּרוּךְ → εὐλογημένος, בֵּרַכְנוּכֶם → εὐλογήκαμεν; εὐλογέω renders בָּרַךְ ×180"
+            },
+            {
+              "ref": "Heb.6.14",
+              "role": "defining",
+              "note": "Gen 22:17 quoted: “surely blessing I will bless you (εὐλογῶν εὐλογήσω σε) and multiplying I will multiply you.”"
+            },
+            {
+              "ref": "Heb.7.1",
+              "note": "Melchizedek “met Abraham returning from the slaughter of the kings and blessed him” (Gen 14:19)."
+            },
+            {
+              "ref": "Heb.7.7",
+              "role": "defining",
+              "note": "“Without any dispute the less is blessed by the greater.”"
+            },
+            {
+              "ref": "Mat.21.9",
+              "role": "defining",
+              "note": "Psa 118:26: “blessed is he who comes in the name of the Lord.”"
+            },
+            {
+              "ref": "Mat.23.39",
+              "note": "“You shall not see me from now until you say, Blessed is he who comes in the name of the Lord.”"
+            },
+            {
+              "ref": "Luk.24.50",
+              "to": "Luk.24.51",
+              "note": "“He lifted up his hands and blessed them; and while he blessed them he was parted from them.”"
+            },
+            {
+              "ref": "Rom.12.14",
+              "note": "“Bless those who persecute you; bless and do not curse.”"
+            },
+            {
+              "ref": "Mat.25.34",
+              "note": "“Come, you blessed (εὐλογημένοι) of my Father, inherit the kingdom.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐνευλογέω",
+          "gloss": "bless in (someone)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.12.3, וְנִבְרְכוּ → ἐνευλογηθήσονται; Gen.18.18; Gen.22.18, וְהִתְבָּרֲכוּ → ἐνευλογηθήσονται; Gen.26.4; Gen.28.14"
+            },
+            {
+              "ref": "Act.3.25",
+              "role": "defining",
+              "note": "“In your seed shall all the families of the earth be blessed (ἐνευλογηθήσονται).”"
+            },
+            {
+              "ref": "Gal.3.8",
+              "role": "defining",
+              "note": "“In you shall all the nations be blessed (ἐνευλογηθήσονται).”"
+            }
+          ]
+        },
+        {
+          "lemma": "εὐλογητός",
+          "gloss": "blessed (of God)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.14.20, וּבָרוּךְ → εὐλογητὸς; 1Ki.1.48; Psa.41.14, בָּרוּךְ יַהְוֶה → εὐλογητὸς; εὐλογητός renders בָּרַךְ ×40"
+            },
+            {
+              "ref": "Luk.1.68",
+              "role": "defining",
+              "note": "“Blessed be the Lord, the God of Israel”: the words of Psa 41:14 and 1Ki 1:48."
+            },
+            {
+              "ref": "2Co.1.3",
+              "note": "“Blessed be the God and Father of our Lord Jesus Christ”; also Eph 1:3; 1Pe 1:3."
+            },
+            {
+              "ref": "Eph.1.3"
+            },
+            {
+              "ref": "1Pe.1.3"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רוּם",
+            "note": "Polel “extol” (אֲרוֹמִמְךָ), beside blessing God's name.",
+            "evidence": [
+              {
+                "ref": "Psa.145.1",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יָדָה",
+            "note": "“Give thanks”: all his works give thanks, his faithful ones bless.",
+            "evidence": [
+              {
+                "ref": "Psa.145.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁחָה",
+            "note": "“Bow down, worship” (הִשְׁתַּחֲוָה), done with blessing God and with kneeling.",
+            "evidence": [
+              {
+                "ref": "Gen.24.48",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ch.29.20"
+              },
+              {
+                "ref": "Psa.95.6"
+              }
+            ]
+          },
+          {
+            "lemma": "כָּרַע",
+            "note": "“Bow down (on the knees)”, beside the qal “kneel”.",
+            "evidence": [
+              {
+                "ref": "Psa.95.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קָלַל",
+            "note": "“Curse” (piel): blessing those who bless Abram and cursing him who curses him; men curse, Yahweh blesses.",
+            "evidence": [
+              {
+                "ref": "Gen.12.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.109.28",
+                "role": "defining",
+                "note": "“Let them curse (יְקַלְלוּ), but you bless (תְבָרֵךְ).”"
+              },
+              {
+                "ref": "Psa.62.5",
+                "note": "“With their mouth they bless, but inwardly they curse.”"
+              },
+              {
+                "ref": "Pro.30.11",
+                "note": "A generation that curses its father and does not bless its mother."
+              }
+            ]
+          },
+          {
+            "lemma": "אָרַר",
+            "note": "“Curse”: blessed (בָּרוּךְ) set against cursed (אָרוּר).",
+            "evidence": [
+              {
+                "ref": "Gen.27.29",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.24.9"
+              },
+              {
+                "ref": "Num.22.6"
+              }
+            ]
+          },
+          {
+            "lemma": "קָבַב",
+            "note": "“Curse, execrate”: Balak hired Balaam to curse and he blessed.",
+            "evidence": [
+              {
+                "ref": "Num.23.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.24.10"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בָּרוּךְ יַהְוֶה",
+            "gloss": "blessed be Yahweh",
+            "evidence": [
+              {
+                "ref": "Gen.24.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.41.14"
+              },
+              {
+                "ref": "Psa.28.6"
+              }
+            ]
+          },
+          {
+            "phrase": "לְבָרֵךְ בְּשֵׁם יַהְוֶה",
+            "gloss": "bless in the name of Yahweh",
+            "evidence": [
+              {
+                "ref": "Deu.10.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.21.5"
+              },
+              {
+                "ref": "2Sa.6.18"
+              },
+              {
+                "ref": "Psa.129.8",
+                "note": "“The blessing of Yahweh be on you; we bless you in the name of Yahweh.”"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּרוּךְ הַבָּא בְּשֵׁם יַהְוֶה",
+            "gloss": "blessed is he who comes in the name of Yahweh",
+            "evidence": [
+              {
+                "ref": "Psa.118.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Mat.21.9"
+              },
+              {
+                "ref": "Mat.23.39"
+              }
+            ]
+          },
+          {
+            "phrase": "כִּי־בָרֵךְ אֲבָרֶכְךָ",
+            "gloss": "I will surely bless you (“blessing I will bless you”)",
+            "evidence": [
+              {
+                "ref": "Gen.22.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Heb.6.14"
+              },
+              {
+                "ref": "1Ch.4.10",
+                "note": "Jabez: “אִם־בָּרֵךְ תְּבָרֲכֵנִי, and enlarge my border.”"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּרְכִי נַפְשִׁי אֶת־יַהְוֶה",
+            "gloss": "bless Yahweh, my soul",
+            "evidence": [
+              {
+                "ref": "Psa.103.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.104.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בְּרָכָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "blessing; a blessing; gift; peace terms",
+      "bdb": [
+        "b.dd.ac"
+      ],
+      "summary": "The noun of the piel: the good God gives, the words of blessing spoken over another, the blessing set before Israel against the curse, a man or people who is a blessing, and, as something given with good will, a gift.",
+      "cognate_ids": [
+        "ar-baraka-n",
+        "phn-brkt"
+      ],
+      "senses": [
+        {
+          "id": "blessing-good",
+          "gloss": "blessing: the good God gives",
+          "definition": "What God's blessing brings: increase of house and field, rain, plenty, riches, and life for ever.",
+          "kin": [
+            "god-blesses"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.39.5",
+              "role": "defining",
+              "note": "“וַיְהִי בִּרְכַּת יַהְוֶה בְּכָל־אֲשֶׁר יֶשׁ־לוֹ, in the house and in the field.”"
+            },
+            {
+              "ref": "Gen.49.25",
+              "role": "defining",
+              "note": "“Blessings of heaven above, blessings of the deep that lies beneath, blessings of the breasts and of the womb.”"
+            },
+            {
+              "ref": "Pro.10.22",
+              "role": "defining",
+              "note": "“בִּרְכַּת יַהְוֶה הִיא תַעֲשִׁיר, and he adds no sorrow with it.”"
+            },
+            {
+              "ref": "Mal.3.10",
+              "role": "defining",
+              "note": "“Whether I will not open for you the windows of heaven וַהֲרִיקֹתִי לָכֶם בְּרָכָה until there is no more need.”"
+            },
+            {
+              "ref": "Lev.25.21",
+              "note": "“I will command my blessing on you in the sixth year, and it shall bring forth produce for three years.”"
+            },
+            {
+              "ref": "Deu.28.8",
+              "note": "“Yahweh will command the blessing on you in your barns.”"
+            },
+            {
+              "ref": "Psa.133.3",
+              "role": "defining",
+              "note": "“There Yahweh commanded אֶת־הַבְּרָכָה, life for ever (חַיִּים עַד־הָעוֹלָם).”"
+            },
+            {
+              "ref": "Ezk.34.26",
+              "note": "“I will send down the rain in its season; there shall be rains of blessing (גִּשְׁמֵי בְרָכָה).”"
+            },
+            {
+              "ref": "Isa.44.3",
+              "note": "“I will pour my spirit on your seed and my blessing (וּבִרְכָתִי) on your offspring.”"
+            },
+            {
+              "ref": "Deu.16.17",
+              "note": "Each gives “according to the blessing of Yahweh your God which he has given you”."
+            },
+            {
+              "ref": "Jol.2.14",
+              "note": "“Who knows whether he will turn … and leave a blessing behind him, a grain offering and a drink offering for Yahweh your God?”"
+            },
+            {
+              "ref": "Psa.24.5",
+              "note": "“He shall receive a blessing from Yahweh, and righteousness from the God of his salvation.”"
+            }
+          ]
+        },
+        {
+          "id": "blessing-spoken",
+          "gloss": "blessing: the words of blessing spoken",
+          "definition": "The blessing a father, prophet or priest speaks over another: once given it is his, and can be taken by deceit but not taken back.",
+          "kin": [
+            "man-blesses"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.27.35",
+              "role": "defining",
+              "note": "“Your brother came with deceit וַיִּקַּח בִּרְכָתֶךָ.”"
+            },
+            {
+              "ref": "Gen.27.36",
+              "note": "Esau: “he took my birthright, and behold, now he has taken my blessing … have you not reserved a blessing for me?”"
+            },
+            {
+              "ref": "Gen.27.38",
+              "note": "“Have you only one blessing, my father? Bless me, me also.”"
+            },
+            {
+              "ref": "Gen.27.41",
+              "note": "Esau hated Jacob “because of the blessing with which his father blessed him”."
+            },
+            {
+              "ref": "Gen.49.28",
+              "role": "defining",
+              "note": "“Each according to his blessing (כְּבִרְכָתוֹ) he blessed them.”"
+            },
+            {
+              "ref": "Deu.33.1",
+              "role": "defining",
+              "note": "“וְזֹאת הַבְּרָכָה אֲשֶׁר בֵּרַךְ מֹשֶׁה … before his death.”"
+            },
+            {
+              "ref": "Gen.28.4",
+              "role": "defining",
+              "note": "Isaac to Jacob: “may he give you אֶת־בִּרְכַּת אַבְרָהָם, to you and to your seed with you, to inherit the land of your sojournings, which God gave to Abraham.”"
+            },
+            {
+              "ref": "Psa.129.8",
+              "note": "“Nor do those who pass by say, בִּרְכַּת־יַהְוֶה אֲלֵיכֶם”: the spoken greeting of blessing."
+            },
+            {
+              "ref": "Pro.11.11",
+              "note": "“By the blessing of the upright the city is exalted, but by the mouth of the wicked it is overthrown.”"
+            },
+            {
+              "ref": "Job.29.13",
+              "note": "“The blessing of him who was perishing came upon me.”"
+            },
+            {
+              "ref": "Heb.12.17",
+              "note": "Esau “afterwards, when he wished to inherit the blessing (εὐλογίαν), was rejected” (Gen 27:34–38)."
+            }
+          ]
+        },
+        {
+          "id": "blessing-and-curse",
+          "gloss": "the blessing (set against the curse)",
+          "definition": "The blessing of the covenant, set before Israel with the curse: blessing if they obey, curse if they do not; Yahweh can turn a curse into a blessing.",
+          "evidence": [
+            {
+              "ref": "Deu.11.26",
+              "to": "Deu.11.28",
+              "role": "defining",
+              "note": "“See, I set before you today בְּרָכָה וּקְלָלָה: the blessing, if you obey the commandments of Yahweh your God … and the curse, if you do not obey.”"
+            },
+            {
+              "ref": "Deu.11.29",
+              "note": "The blessing to be put on mount Gerizim and the curse on mount Ebal."
+            },
+            {
+              "ref": "Deu.30.19",
+              "role": "defining",
+              "note": "“Life and death I have set before you, הַבְּרָכָה וְהַקְּלָלָה; therefore choose life.”"
+            },
+            {
+              "ref": "Deu.30.1",
+              "note": "When all these things come on you, the blessing and the curse."
+            },
+            {
+              "ref": "Jos.8.34",
+              "note": "Joshua read all the words of the law, the blessing and the curse."
+            },
+            {
+              "ref": "Deu.23.6",
+              "role": "defining",
+              "note": "“Yahweh your God turned the curse into a blessing (לִבְרָכָה) for you, because Yahweh your God loved you”; also Neh 13:2."
+            },
+            {
+              "ref": "Neh.13.2"
+            },
+            {
+              "ref": "Gen.27.12",
+              "note": "Jacob: “I shall bring on myself a curse and not a blessing.”"
+            },
+            {
+              "ref": "Psa.109.17",
+              "note": "“He loved cursing, and it came to him; he did not delight in blessing, and it was far from him.”"
+            },
+            {
+              "ref": "Mal.2.2",
+              "note": "“I will send the curse on you and curse your blessings.”"
+            }
+          ]
+        },
+        {
+          "id": "a-blessing",
+          "gloss": "a blessing (one in whom blessing is seen)",
+          "definition": "A man, a people or a place that is itself a blessing: so blessed that others are blessed by him and name him in blessing; the opposite of being a curse among the nations.",
+          "evidence": [
+            {
+              "ref": "Gen.12.2",
+              "role": "defining",
+              "note": "“I will bless you and make your name great, וֶהְיֵה בְּרָכָה.”"
+            },
+            {
+              "ref": "Zec.8.13",
+              "role": "defining",
+              "note": "“As you were a curse (קְלָלָה) among the nations … so I will save you, וִהְיִיתֶם בְּרָכָה.”"
+            },
+            {
+              "ref": "Isa.19.24",
+              "note": "“Israel shall be the third with Egypt and with Assyria, a blessing in the midst of the earth.”"
+            },
+            {
+              "ref": "Ezk.34.26",
+              "note": "“I will make them and the places round about my hill a blessing.”"
+            },
+            {
+              "ref": "Psa.21.7",
+              "note": "Of the king: “you make him blessings (בְרָכוֹת) for ever.”"
+            },
+            {
+              "ref": "Psa.37.26",
+              "note": "The righteous lends, “and his seed is for a blessing”."
+            },
+            {
+              "ref": "Pro.10.7",
+              "note": "“The memory of the righteous is for a blessing, but the name of the wicked shall rot.”"
+            }
+          ]
+        },
+        {
+          "id": "blessing-gift",
+          "gloss": "a gift, present",
+          "definition": "A gift brought or sent with good will, called a blessing: Jacob's gift to Esau, Abigail's to David, David's share of the spoil, Naaman's offering to Elisha; and the springs Achsah asked of her father.",
+          "cognate_ids": [
+            "phn-brk-gift"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.33.11",
+              "role": "defining",
+              "note": "“קַח־נָא אֶת־בִּרְכָתִי that is brought to you”, the same gift he has just called מִנְחָתִי (Gen 33:10)."
+            },
+            {
+              "ref": "Gen.33.10"
+            },
+            {
+              "ref": "1Sa.25.27",
+              "role": "defining",
+              "note": "Abigail: “now this blessing (הַבְּרָכָה הַזֹּאת) which your servant has brought to my lord, let it be given to the young men.”"
+            },
+            {
+              "ref": "1Sa.30.26",
+              "role": "defining",
+              "note": "David sent of the spoil to the elders of Judah: “here is a blessing for you from the spoil of the enemies of Yahweh.”"
+            },
+            {
+              "ref": "2Ki.5.15",
+              "role": "defining",
+              "note": "Naaman to Elisha: “take a blessing from your servant”; Elisha refused to take it (2Ki 5:16)."
+            },
+            {
+              "ref": "Jos.15.19",
+              "note": "Achsah: “give me a blessing; since you have given me the land of the Negev, give me also springs of water”; also Jdg 1:15."
+            },
+            {
+              "ref": "Jdg.1.15"
+            },
+            {
+              "ref": "2Co.9.5",
+              "note": "Paul calls the Corinthians' gift for the saints “your blessing (εὐλογίαν) … ready as a blessing and not as a thing extorted”: the same use of the word."
+            }
+          ]
+        },
+        {
+          "id": "blessing-peace",
+          "gloss": "peace terms (“make a blessing with”)",
+          "definition": "With עָשָׂה אֶת “make with”: a settlement of peace, offered by the king of Assyria to Jerusalem.",
+          "evidence": [
+            {
+              "ref": "2Ki.18.31",
+              "role": "defining",
+              "note": "“Thus says the king of Assyria, עֲשׂוּ־אִתִּי בְרָכָה and come out to me, and eat every man of his own vine.”"
+            },
+            {
+              "ref": "Isa.36.16"
+            }
+          ]
+        },
+        {
+          "id": "blessing-praise",
+          "gloss": "blessing, praise (given to God)",
+          "definition": "The blessing men give to God, beside praise.",
+          "kin": [
+            "bless-god"
+          ],
+          "evidence": [
+            {
+              "ref": "Neh.9.5",
+              "role": "defining",
+              "note": "“Your glorious name, exalted above all blessing and praise (עַל־כָּל־בְּרָכָה וּתְהִלָּה).”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "εὐλογία",
+          "gloss": "blessing; bounty, gift",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.27.35, בִּרְכָתֶךָ → εὐλογίαν; Gen.33.11 → εὐλογίας; 1Sa.25.27; 2Ki.5.15 → εὐλογίαν; Deu.11.26; εὐλογία renders בְּרָכָה ×61"
+            },
+            {
+              "ref": "Gal.3.14",
+              "role": "defining",
+              "note": "“That the blessing of Abraham (ἡ εὐλογία τοῦ Ἀβραὰμ) might come on the nations in Christ Jesus”: Gen 28:4's בִּרְכַּת אַבְרָהָם."
+            },
+            {
+              "ref": "Heb.12.17",
+              "note": "Esau wished to inherit the blessing and was rejected."
+            },
+            {
+              "ref": "1Pe.3.9",
+              "note": "“You were called to this, that you should inherit a blessing.”"
+            },
+            {
+              "ref": "2Co.9.5",
+              "note": "The gift called a blessing, as בְּרָכָה is a gift in Gen 33:11."
+            },
+            {
+              "ref": "Jas.3.10",
+              "note": "“Out of the same mouth comes blessing and cursing”, as in Psa 62:5."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִנְחָה",
+            "note": "“Gift, present”: Jacob calls the same gift both.",
+            "evidence": [
+              {
+                "ref": "Gen.33.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.33.11",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "תְּהִלָּה",
+            "note": "“Praise”, beside blessing given to God.",
+            "evidence": [
+              {
+                "ref": "Neh.9.5",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "רוּחַ",
+            "note": "God's spirit poured out beside his blessing on Israel's seed.",
+            "evidence": [
+              {
+                "ref": "Isa.44.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "צְדָקָה",
+            "note": "“Righteousness”, received from God beside blessing.",
+            "evidence": [
+              {
+                "ref": "Psa.24.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קְלָלָה",
+            "note": "“Curse”: the blessing and the curse set before Israel.",
+            "evidence": [
+              {
+                "ref": "Deu.11.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.30.19"
+              },
+              {
+                "ref": "Zec.8.13"
+              },
+              {
+                "ref": "Deu.23.6"
+              }
+            ]
+          },
+          {
+            "lemma": "מְאֵרָה",
+            "note": "“Curse”: Yahweh sends the curse and curses their blessings.",
+            "evidence": [
+              {
+                "ref": "Mal.2.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.3.33",
+                "note": "“The curse of Yahweh is in the house of the wicked, but he blesses the dwelling of the righteous.”"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בִּרְכַּת אַבְרָהָם",
+            "gloss": "the blessing of Abraham",
+            "evidence": [
+              {
+                "ref": "Gen.28.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Gal.3.14"
+              }
+            ]
+          },
+          {
+            "phrase": "וֶהְיֵה בְּרָכָה",
+            "gloss": "and be a blessing",
+            "evidence": [
+              {
+                "ref": "Gen.12.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.8.13"
+              }
+            ]
+          },
+          {
+            "phrase": "עֲשׂוּ־אִתִּי בְרָכָה",
+            "gloss": "make peace with me (âmake a blessing with meâ)",
+            "evidence": [
+              {
+                "ref": "2Ki.18.31",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.36.16"
+              }
+            ]
+          },
+          {
+            "phrase": "בִּרְכַּת יַהְוֶה",
+            "gloss": "the blessing of Yahweh",
+            "evidence": [
+              {
+                "ref": "Pro.10.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.39.5"
+              },
+              {
+                "ref": "Psa.129.8"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בֶּרֶךְ",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "knee; lap",
+      "bdb": [
+        "b.dd.ab"
+      ],
+      "summary": "The knee, in the Old Testament always dual or plural: the joint that fails in fear and weakness, the knee bowed in prayer and worship, and the knees as a lap on which a child is born, nursed or held.",
+      "cognate_ids": [
+        "akk-birku",
+        "uga-brk-n",
+        "arc-birka",
+        "gez-berk"
+      ],
+      "senses": [
+        {
+          "id": "knee-joint",
+          "gloss": "knee (that trembles, fails)",
+          "definition": "The knee as the joint of the leg, which goes weak in fear, fasting or grief; strengthening feeble knees is restoring courage.",
+          "evidence": [
+            {
+              "ref": "Isa.35.3",
+              "role": "defining",
+              "note": "“Strengthen the weak hands, וּבִרְכַּיִם כֹּשְׁלוֹת make firm.”"
+            },
+            {
+              "ref": "Ezk.7.17",
+              "role": "defining",
+              "note": "“All hands shall be feeble, וְכָל־בִּרְכַּיִם תֵּלַכְנָה מָּיִם”: knees turned to water in terror."
+            },
+            {
+              "ref": "Ezk.21.12"
+            },
+            {
+              "ref": "Job.4.4",
+              "note": "“Your words have upheld him who was stumbling, and you have made firm the bowing knees.”"
+            },
+            {
+              "ref": "Nam.2.11",
+              "note": "“The heart melts, and the knees knock together.”"
+            },
+            {
+              "ref": "Psa.109.24",
+              "note": "“My knees are weak through fasting.”"
+            },
+            {
+              "ref": "Dan.10.10",
+              "note": "“A hand touched me and set me trembling on my knees and the palms of my hands.”"
+            },
+            {
+              "ref": "Deu.28.35",
+              "note": "“Yahweh will strike you with a sore boil on the knees and on the legs.”"
+            },
+            {
+              "ref": "Ezk.47.4",
+              "note": "The water of the river from the house “to the knees (מַיִם בִּרְכָּיִם)”."
+            },
+            {
+              "ref": "Heb.12.12",
+              "note": "Isa 35:3 applied to the believers: “lift up the hands which hang down and the feeble knees (γόνατα).”"
+            }
+          ]
+        },
+        {
+          "id": "knee-bowed",
+          "gloss": "knee bowed: kneeling (in prayer, worship, submission)",
+          "definition": "The knees bent to the ground in prayer, in worship, in pleading, or in submission to a god; to bow the knee to one is to own him as God.",
+          "kin": [
+            "kneel"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.19.18",
+              "role": "defining",
+              "note": "“Seven thousand, all the knees which have not bowed (כָרְעוּ) to Baal, and every mouth which has not kissed him.”"
+            },
+            {
+              "ref": "Isa.45.23",
+              "role": "defining",
+              "note": "“By myself I have sworn … כִּי־לִי תִּכְרַע כָּל־בֶּרֶךְ, every tongue shall swear.”"
+            },
+            {
+              "ref": "1Ki.8.54",
+              "role": "defining",
+              "note": "Solomon rose from before the altar “from kneeling on his knees (מִכְּרֹעַ עַל־בִּרְכָּיו), with his hands spread out to heaven”."
+            },
+            {
+              "ref": "Ezr.9.5",
+              "note": "“I fell on my knees and spread out my hands to Yahweh my God.”"
+            },
+            {
+              "ref": "2Ch.6.13",
+              "note": "Solomon “knelt on his knees (וַיִּבְרַךְ עַל־בִּרְכָּיו)”."
+            },
+            {
+              "ref": "2Ki.1.13",
+              "note": "The third captain of fifty “knelt on his knees before Elijah and pleaded with him”."
+            },
+            {
+              "ref": "Jdg.7.5",
+              "to": "Jdg.7.6",
+              "note": "Those who knelt on their knees to drink were set apart from those who lapped."
+            },
+            {
+              "ref": "1Ki.18.42",
+              "note": "Elijah on Carmel bowed to the ground “and put his face between his knees”."
+            },
+            {
+              "ref": "Rom.11.4",
+              "note": "1Ki 19:18 quoted: “who have not bowed the knee (γόνυ) to Baal.”"
+            },
+            {
+              "ref": "Rom.14.11",
+              "note": "Isa 45:23 quoted: “every knee shall bow to me.”"
+            },
+            {
+              "ref": "Php.2.10",
+              "note": "Isa 45:23 applied: “that at the name of Jesus every knee should bow.”"
+            }
+          ]
+        },
+        {
+          "id": "knee-lap",
+          "gloss": "knees, lap",
+          "definition": "The knees of one sitting, as a lap: a child born on them is owned as one's own; a child is held, nursed or dandled on them, and a man laid to sleep on them.",
+          "cognate_ids": [
+            "akk-birku"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.30.3",
+              "role": "defining",
+              "note": "Rachel: “go in to her, וְתֵלֵד עַל־בִּרְכַּי, that I also may be built up from her”: the child is owned as hers."
+            },
+            {
+              "ref": "Gen.50.23",
+              "role": "defining",
+              "note": "“The sons of Machir son of Manasseh were born on the knees of Joseph (יֻלְּדוּ עַל־בִּרְכֵּי יוֹסֵף).”"
+            },
+            {
+              "ref": "Gen.48.12",
+              "note": "Joseph brought his sons out from between Jacob's knees and bowed with his face to the ground."
+            },
+            {
+              "ref": "Job.3.12",
+              "note": "“Why did the knees receive me, or why the breasts, that I should suck?”"
+            },
+            {
+              "ref": "Isa.66.12",
+              "note": "“You shall be carried on her side and dandled on her knees.”"
+            },
+            {
+              "ref": "2Ki.4.20",
+              "note": "The Shunammite's son “sat on her knees until noon, and died”."
+            },
+            {
+              "ref": "Jdg.16.19",
+              "note": "“She made him sleep on her knees.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γόνυ",
+          "gloss": "knee",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.45.23, בֶּרֶךְ → γόνυ; Isa.35.3 → γόνυ; 1Ki.19.18 → γόνυ; Job.4.4 → γόνασίν; γόνυ renders בֶּרֶךְ ×9, γονάτων ×2"
+            },
+            {
+              "ref": "Rom.14.11",
+              "role": "defining",
+              "note": "Isa 45:23: “to me every knee shall bow (κάμψει πᾶν γόνυ).”"
+            },
+            {
+              "ref": "Php.2.10",
+              "role": "defining",
+              "note": "“That at the name of Jesus every knee should bow.”"
+            },
+            {
+              "ref": "Rom.11.4",
+              "note": "1Ki 19:18: “who have not bowed the knee to Baal.”"
+            },
+            {
+              "ref": "Heb.12.12",
+              "note": "Isa 35:3: “the feeble knees.”"
+            },
+            {
+              "ref": "Eph.3.14",
+              "note": "“For this cause I bow my knees to the Father of our Lord Jesus Christ.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָד",
+            "note": "Weak hands and feeble knees together.",
+            "evidence": [
+              {
+                "ref": "Isa.35.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.7.17"
+              },
+              {
+                "ref": "Ezk.21.12"
+              }
+            ]
+          },
+          {
+            "lemma": "שַׁד",
+            "note": "Knees and breasts: the mother's lap and nursing.",
+            "evidence": [
+              {
+                "ref": "Job.3.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "וַיִּכְרַע עַל־בִּרְכָּיו",
+            "gloss": "and he knelt on his knees",
+            "evidence": [
+              {
+                "ref": "1Ki.8.54",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.1.13"
+              },
+              {
+                "ref": "Ezr.9.5"
+              }
+            ]
+          },
+          {
+            "phrase": "וְתֵלֵד עַל־בִּרְכַּי",
+            "gloss": "she shall bear on my knees: a child owned as one's own",
+            "evidence": [
+              {
+                "ref": "Gen.30.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.50.23"
+              }
+            ]
+          },
+          {
+            "phrase": "בִּרְכַּיִם תֵּלַכְנָה מָּיִם",
+            "gloss": "knees go (as) water: knees give way in terror",
+            "evidence": [
+              {
+                "ref": "Ezk.7.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.21.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בְּרֵכָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pool, reservoir",
+      "bdb": [
+        "b.dd.af"
+      ],
+      "summary": "A pool or reservoir for water, natural or made, by a city or for watering gardens. How it is tied to the root's other words is not clear: Arabic birka is both a manner of a camel's kneeling and a tank or pool, and the Arabic dictionary says it is named from the water's remaining in it; Sabaean brkt is a cistern. Scripture itself gives no link.",
+      "cognate_ids": [
+        "ar-birka",
+        "sab-brkt"
+      ],
+      "senses": [
+        {
+          "id": "pool",
+          "gloss": "pool, reservoir",
+          "definition": "A pool of water: the pools of Gibeon, Hebron and Samaria, the upper, lower and old pools of Jerusalem and the pool Hezekiah made to bring water into the city, the pool of Shelah by the king's garden, and pools made to water trees.",
+          "evidence": [
+            {
+              "ref": "2Sa.2.13",
+              "role": "defining",
+              "note": "“They met them at בְּרֵכַת גִּבְעוֹן, and sat, these on one side of the pool and those on the other side of the pool.”"
+            },
+            {
+              "ref": "2Ki.20.20",
+              "role": "defining",
+              "note": "Hezekiah “made הַבְּרֵכָה and the conduit, and brought the water into the city”."
+            },
+            {
+              "ref": "Ecc.2.6",
+              "role": "defining",
+              "note": "“I made myself בְּרֵכוֹת מָיִם, to water from them a forest growing trees.”"
+            },
+            {
+              "ref": "Isa.7.3",
+              "note": "“At the end of the conduit of the upper pool, on the highway of the fuller's field”; also 2Ki 18:17; Isa 36:2."
+            },
+            {
+              "ref": "2Ki.18.17"
+            },
+            {
+              "ref": "Isa.22.9",
+              "note": "“You gathered the waters of the lower pool.”"
+            },
+            {
+              "ref": "Isa.22.11",
+              "note": "A reservoir between the two walls “for the water of the old pool; but you did not look to its maker”."
+            },
+            {
+              "ref": "Neh.3.15",
+              "note": "“The wall of בְּרֵכַת הַשֶּׁלַח by the king's garden.”"
+            },
+            {
+              "ref": "Neh.2.14",
+              "note": "“The king's pool”, where there was no room for Nehemiah's animal to pass."
+            },
+            {
+              "ref": "1Ki.22.38",
+              "note": "They washed Ahab's chariot “by the pool of Samaria, and the dogs licked up his blood”."
+            },
+            {
+              "ref": "2Sa.4.12",
+              "note": "David hanged the murderers of Ish-bosheth “by the pool in Hebron”."
+            },
+            {
+              "ref": "Nam.2.9",
+              "note": "“Nineveh has been like a pool of water from her days.”"
+            },
+            {
+              "ref": "Sng.7.5",
+              "note": "“Your eyes are pools in Heshbon.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κολυμβήθρα",
+          "gloss": "pool",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.7.3, הַבְּרֵכָה → κολυμβήθραν; Isa.22.11 → κολυμβήθρας; κολυμβήθρα renders בְּרֵכָה ×9, κρήνη ×4"
+            },
+            {
+              "ref": "Jhn.9.7",
+              "role": "defining",
+              "note": "“Go, wash in the pool (κολυμβήθραν) of Siloam, which is interpreted Sent”: the meaning of the name שֶׁלַח in Neh 3:15."
+            },
+            {
+              "ref": "Jhn.5.2",
+              "note": "“A pool (κολυμβήθρα) by the sheep gate, called in Hebrew Bethesda, having five porches.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּרַךְ",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "kneel; bless (God); blessed",
+      "bdb": [
+        "xb.am.aa"
+      ],
+      "summary": "Daniel's Aramaic has the verb as the Hebrew does: kneeling in prayer (peal), blessing God (pael), and בְּרִיךְ “blessed (be)” in a king's praise of Israel's God.",
+      "cognate_ids": [
+        "arc-berak"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "kneel",
+          "senses": [
+            {
+              "id": "arc-kneel",
+              "gloss": "kneel (in prayer)",
+              "definition": "Daniel's kneeling on his knees three times a day to pray and give thanks.",
+              "kin": [
+                "kneel",
+                "knee-bowed"
+              ],
+              "cognate_ids": [
+                "ar-baraka-kneel"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.6.11",
+                  "role": "defining",
+                  "note": "“Three times a day הוּא בָּרֵךְ עַל־בִּרְכוֹהִי, and prayed and gave thanks before his God.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peil",
+          "gloss": "blessed (be)",
+          "senses": [
+            {
+              "id": "arc-blessed",
+              "gloss": "blessed (be God)",
+              "definition": "The passive participle בְּרִיךְ, in Nebuchadnezzar's praise of the God who delivered his servants: Aramaic for Hebrew בָּרוּךְ.",
+              "kin": [
+                "blessed-be-god"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.3.28",
+                  "role": "defining",
+                  "note": "“בְּרִיךְ אֱלָהֲהוֹן of Shadrach, Meshach and Abed-nego, who sent his angel and delivered his servants who trusted in him.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "bless (God)",
+          "senses": [
+            {
+              "id": "arc-bless-god",
+              "gloss": "bless (God), praise",
+              "definition": "To bless God for what he has done, set beside praising and honouring him.",
+              "kin": [
+                "bless-god"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.2.19",
+                  "role": "defining",
+                  "note": "When the secret was revealed, “Daniel בָּרִךְ לֶאֱלָהּ שְׁמַיָּא”."
+                },
+                {
+                  "ref": "Dan.2.20",
+                  "role": "defining",
+                  "note": "“Let the name of God be blessed (מְבָרַךְ) from everlasting to everlasting, for wisdom and might are his.”"
+                },
+                {
+                  "ref": "Dan.4.31",
+                  "role": "defining",
+                  "note": "Nebuchadnezzar: “וּלְעִלָּאָה בָּרְכֵת, and I praised (שַׁבְּחֵת) and honoured him who lives for ever.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שְׁבַח",
+            "note": "Aramaic “praise”, beside blessing the Most High.",
+            "evidence": [
+              {
+                "ref": "Dan.4.31",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "צְלָא",
+            "note": "Aramaic “pray”, with kneeling.",
+            "evidence": [
+              {
+                "ref": "Dan.6.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בְּרַךְ",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "knee",
+      "bdb": [
+        "xb.am.ab"
+      ],
+      "summary": "Daniel's Aramaic word for the knee, once, with the verb: he knelt on his knees.",
+      "cognate_ids": [
+        "arc-birka",
+        "akk-birku",
+        "uga-brk-n"
+      ],
+      "senses": [
+        {
+          "id": "arc-knee",
+          "gloss": "knee",
+          "definition": "The knees on which Daniel knelt to pray.",
+          "kin": [
+            "knee-bowed"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "“בָּרֵךְ עַל־בִּרְכוֹהִי”: kneeling on his knees."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַרְכֻבָּה",
+      "lang": "arc",
+      "root": "ארכבה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "knee",
+      "bdb": [
+        "xb.am.ac"
+      ],
+      "summary": "A second Aramaic word for the knee, once, of Belshazzar's knees knocking in terror. Its consonants are those of בְּרַךְ with r and k before b and a prefixed א, as Jewish Aramaic אַרְכּוּבְתָּא and Arabic rukba “knee” have them; scripture gives no link between the two forms, and Arabic files rukba under rkb, so its tie to this root rests on the shared meaning and the like consonants only.",
+      "cognate_ids": [
+        "arc-arkubta",
+        "ar-rukba"
+      ],
+      "senses": [
+        {
+          "id": "arc-knees-knock",
+          "gloss": "knee",
+          "definition": "The knees, which knock together in fear.",
+          "kin": [
+            "knee-joint"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.5.6",
+              "role": "defining",
+              "note": "“The joints of his loins were loosed, וְאַרְכֻבָּתֵהּ דָּא לְדָא נָקְשָׁן”: his knees knocked one against another."
+            },
+            {
+              "ref": "Nam.2.11",
+              "note": "The Hebrew has the same picture with בִּרְכַּיִם: “the knees knock together (וּפִק בִּרְכַּיִם).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּרַךְ",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "kneel; bless; be blessed",
+      "summary": "The Peshitta's ܒܪܟ: kneel (peal), bless (pael), and be blessed (ethpaal), where the Greek has γονυπετέω or κάμπτω γόνυ, εὐλογέω and ἐνευλογέω.",
+      "cognate_ids": [
+        "arc-berak"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "kneel",
+          "senses": [
+            {
+              "id": "syc-kneel",
+              "gloss": "kneel, bow the knee",
+              "definition": "To kneel on the knees: in mockery before Jesus, and of the seven thousand who did not kneel to Baal.",
+              "kin": [
+                "kneel",
+                "knee-bowed"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.27.29",
+                  "role": "defining",
+                  "note": "The soldiers “וַברַכו עַל בֻּורכַּיהֻון before him and mocked him”."
+                },
+                {
+                  "ref": "Rom.11.4",
+                  "role": "defining",
+                  "note": "1Ki 19:18: “who did not kneel on their knees (דּעַל בֻּורכַּיהֻון לָא בּרֵכו) nor worship Baal.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "bless",
+          "senses": [
+            {
+              "id": "syc-bless",
+              "gloss": "bless",
+              "definition": "To bless men, with words or by laying on hands; to bless the bread before breaking it; and God's blessing of Abraham.",
+              "kin": [
+                "man-blesses",
+                "god-blesses"
+              ],
+              "evidence": [
+                {
+                  "ref": "Heb.6.14",
+                  "role": "defining",
+                  "note": "Gen 22:17: “דַּמבַרָכֻו אֵבַּרכָך”, blessing I will bless you."
+                },
+                {
+                  "ref": "Luk.24.50",
+                  "role": "defining",
+                  "note": "“He lifted up his hands ובַרֵך אֵנֻון.”"
+                },
+                {
+                  "ref": "Mat.5.44",
+                  "role": "defining",
+                  "note": "“Bless (ובַרֵכו) him who curses you.”"
+                },
+                {
+                  "ref": "Act.3.26",
+                  "note": "God sent his son “blessing you (מבַרֵך לכֻון), if you turn from your evil”."
+                },
+                {
+                  "ref": "Heb.11.20",
+                  "note": "“By faith Isaac blessed (בַּרֵך) Jacob and Esau.”"
+                },
+                {
+                  "ref": "Mrk.10.16",
+                  "note": "He laid his hand on the children and blessed them."
+                },
+                {
+                  "ref": "Mat.26.26",
+                  "note": "Jesus took bread “ובַרֵך” and broke it."
+                },
+                {
+                  "ref": "Rom.12.14",
+                  "note": "“Bless those who persecute you; bless and do not curse.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be blessed",
+          "senses": [
+            {
+              "id": "syc-be-blessed",
+              "gloss": "be blessed",
+              "definition": "The passive: the nations blessed in Abraham and his seed, and the less blessed by the greater.",
+              "kin": [
+                "nations-blessed",
+                "nations-blessed-hith"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gal.3.8",
+                  "role": "defining",
+                  "note": "Gen 12:3: “in you נֵתבַּרכֻון all the nations.”"
+                },
+                {
+                  "ref": "Act.3.25",
+                  "role": "defining",
+                  "note": "Gen 22:18: “in your seed נֵתבַּרכָן all the families of the earth.”"
+                },
+                {
+                  "ref": "Gal.3.9",
+                  "note": "“The believers are blessed (מֵתבַּרכִין) with believing Abraham.”"
+                },
+                {
+                  "ref": "Heb.7.7",
+                  "note": "“The less is blessed (מֵתבַּרַך) by the greater.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בּוּרְכְּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "blessing; bounty",
+      "summary": "The Peshitta's ܒܘܪܟܬܐ, where the Greek has εὐλογία: the blessing of Abraham, the blessing Esau lost, and a gift.",
+      "cognate_ids": [
+        "ar-baraka-n"
+      ],
+      "senses": [
+        {
+          "id": "syc-blessing",
+          "gloss": "blessing",
+          "definition": "The blessing given or inherited: the blessing of Abraham that comes on the nations, and the blessing believers inherit.",
+          "kin": [
+            "blessing-spoken",
+            "blessing-good"
+          ],
+          "evidence": [
+            {
+              "ref": "Gal.3.14",
+              "role": "defining",
+              "note": "“That בֻּורכּתֵה דַּאברָהָם might be among the nations in Jesus Christ.”"
+            },
+            {
+              "ref": "Heb.12.17",
+              "role": "defining",
+              "note": "Esau “wished to inherit the blessing (דּנִארַת בֻּורכּתָא) and was rejected”."
+            },
+            {
+              "ref": "1Pe.3.9",
+              "note": "“To this you were called, that you should inherit a blessing (דּבֻורכּתָא תִּארתֻּון).”"
+            },
+            {
+              "ref": "Eph.1.3",
+              "note": "“Who blessed us with every blessing (בּכֻל בֻּורכָּן) of the spirit.”"
+            },
+            {
+              "ref": "Jas.3.10",
+              "note": "“From the same mouth come blessings (בֻּורכָּתָא) and curses.”"
+            }
+          ]
+        },
+        {
+          "id": "syc-bounty",
+          "gloss": "bounty, gift",
+          "definition": "A gift given willingly, called a blessing.",
+          "kin": [
+            "blessing-gift"
+          ],
+          "evidence": [
+            {
+              "ref": "2Co.9.5",
+              "role": "defining",
+              "note": "“That they may prepare בֻּורכּתָא … as a blessing and not as covetousness.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בּוּרְכָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "knee",
+      "summary": "The Peshitta's ܒܘܪܟܐ, where the Greek has γόνυ; in Rom 14:11 and Php 2:10 the text spells it בּרֻוך.",
+      "cognate_ids": [
+        "arc-birka"
+      ],
+      "senses": [
+        {
+          "id": "syc-knee",
+          "gloss": "knee (bowed)",
+          "definition": "The knees bent in prayer, and every knee that shall bow.",
+          "kin": [
+            "knee-bowed"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.22.41",
+              "role": "defining",
+              "note": "Jesus “put his knees (וסָם בֻּורכַּוהי) and prayed”."
+            },
+            {
+              "ref": "Eph.3.14",
+              "role": "defining",
+              "note": "“I bow my knees (וכָאֵפנָא בֻּורכַּי) to the Father of our Lord Jesus Christ.”"
+            },
+            {
+              "ref": "Act.20.36",
+              "note": "Paul “knelt on his knees (קעֵד עַל בֻּורכַּוהי) and prayed with them all”."
+            },
+            {
+              "ref": "Rom.14.11",
+              "note": "Isa 45:23: “every knee (כֻּל בּרֻוך) shall bow to me.”"
+            },
+            {
+              "ref": "Php.2.10",
+              "note": "“That at the name of Jesus every knee should bow.”"
+            },
+            {
+              "ref": "Heb.12.12",
+              "note": "Isa 35:3: “your feeble knees (ובֻורכַּיכֻּון רָעלָתָא).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּרִיכָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "blessed",
+      "summary": "The Peshitta's ܒܪܝܟܐ, the passive participle as in Biblical Aramaic בְּרִיךְ: “blessed is he who comes in the name of the Lord”, and the blessed of the Father.",
+      "cognate_ids": [
+        "arc-berak",
+        "ar-mubarak"
+      ],
+      "senses": [
+        {
+          "id": "syc-brika",
+          "gloss": "blessed",
+          "definition": "Blessed: he who comes in the name of the Lord, the coming kingdom of David, and those whom the Father has blessed.",
+          "kin": [
+            "blessed-ptc"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.21.9",
+              "role": "defining",
+              "note": "Psa 118:26: “בּרִיך הֻו דָּאתֵא בַּשמֵה דּמָריָא.”"
+            },
+            {
+              "ref": "Mat.25.34",
+              "role": "defining",
+              "note": "“Come, blessed of my Father (בּרִיכַוהי דָּאבי), inherit the kingdom.”"
+            },
+            {
+              "ref": "Mat.23.39",
+              "note": "“Until you say, Blessed is he who comes in the name of the Lord.”"
+            },
+            {
+              "ref": "Mrk.11.10",
+              "note": "“Blessed (וַברִיכָא) is the coming kingdom of our father David.”"
+            },
+            {
+              "ref": "Luk.19.38",
+              "note": "“Blessed is the king who comes in the name of the Lord.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְבָרְכָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "blessed",
+      "summary": "The Peshitta's ܡܒܪܟܐ, the pael passive participle: “blessed be God”, for εὐλογητός, and “blessed” of Mary and her child, for εὐλογημένος.",
+      "cognate_ids": [
+        "ar-mubarak"
+      ],
+      "senses": [
+        {
+          "id": "syc-mbarka",
+          "gloss": "blessed (be God); blessed (among women)",
+          "definition": "Blessed: God blessed in praise, and the one blessed by God.",
+          "kin": [
+            "blessed-be-god",
+            "blessed-pual"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.1.68",
+              "role": "defining",
+              "note": "“מבַרַך הֻו מָריָא אַלָהֵה דִּאיסרָיֵל”, as Hebrew בָּרוּךְ יַהְוֶה אֱלֹהֵי יִשְׂרָאֵל (Psa 41:14)."
+            },
+            {
+              "ref": "Eph.1.3",
+              "role": "defining",
+              "note": "“Blessed (מבַרַך) be God the Father of our Lord Jesus Christ.”"
+            },
+            {
+              "ref": "2Co.1.3"
+            },
+            {
+              "ref": "1Pe.1.3"
+            },
+            {
+              "ref": "Luk.1.42",
+              "note": "Elisabeth: “blessed (מבַרַכתָּא) are you among women, and blessed is the fruit of your womb”; compare Jael, “blessed above women” (Jdg 5:24)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-baraka-kneel",
+      "lang": "ar",
+      "form": "بَرَكَ",
+      "translit": "baraka",
+      "gloss": "(of a camel) kneel and lie down on its breast; (of a man) kneel; stay fixed, be steadfast; form 4 أَبْرَكَ make (a camel) kneel",
+      "relation": "cognate",
+      "note": "The Arabic verb of the camel's kneeling, said also of a man falling on his knees, and the causative “I made him (a camel) kneel”, as וַיַּבְרֵךְ הַגְּמַלִּים in Gen 24:11. From it the Arabic dictionary derives “be firm, remain fixed in a place”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 193, art. برك, بَرَكَ (1)",
+          "note": "“said of a camel … He lay down, or kneeled and lay down, upon his breast … بَرَكَ is also said of a lion, and of a man … He fell, or set himself, upon his knees; he kneeled … He, or it, was, or became, firm, steady, steadfast, or fixed.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 193, art. برك, أَبْرَكَ (4)",
+          "note": "“He made him (namely, a camel,) to lie down [or kneel and lie down] upon his breast.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-baraka-bless",
+      "lang": "ar",
+      "form": "بَارَكَ",
+      "translit": "bāraka",
+      "gloss": "(of God) bless, give blessing, prosper; form 2 بَرَّكَ pray for blessing on",
+      "relation": "cognate",
+      "note": "Arabic's verb for God's blessing, “God put in thee, gave thee, made thee to possess, baraka”; the second form is to pray for blessing on a man or on food, as the piel is used of a man blessing another and of blessing the sacrifice (1Sa 9:13). The dictionary also records that the Arabs said بُورِكَ فِيكَ “may you be blessed” to a beggar to send him away, not to pray for him: “bless” used against its sense, as in Job 1:11.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 193, art. برك, بارك (3)",
+          "note": "“بارك ٱللّٰهُ فِيكَ … [God bless, beatify, felicitate, or prosper, thee;] God put in thee … give thee, make thee to possess … بَرَكَة … The Arabs say to the beggar, بُورِكَ فِيكَ … meaning thereby to repel him; not to pray for him.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 193, art. برك, بَرَّكَ (2)",
+          "note": "“تَبْرِيكٌ also signifies The praying for بَرَكَة, for a man … برّك علي الطَّعَامِ He prayed for, or invoked, a blessing on the food.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-baraka-n",
+      "lang": "ar",
+      "form": "بَرَكَةٌ",
+      "translit": "baraka",
+      "gloss": "blessing; good bestowed by God; increase, abundance",
+      "relation": "cognate",
+      "note": "The Arabic noun is the good God gives, “particularly such as continues and increases and abounds”: the sense of בְּרָכָה in Gen 39:5 and Pro 10:22.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 194, art. برك, بَرَكَةٌ",
+          "note": "“[A blessing; any good that is bestowed by God; and particularly such as continues and increases and abounds:] good, or prosperity, or good fortune, that proceeds from God … increase; accession; redundance; abundance, or plenty.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-mubarak",
+      "lang": "ar",
+      "form": "مُبَارَكٌ",
+      "translit": "mubārak",
+      "gloss": "blessed, gifted with blessing; abounding in good",
+      "relation": "cognate",
+      "note": "The passive participle of bāraka, as בָּרוּךְ is the Hebrew's: “blessed, prospered, made to possess a blessing”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 194, art. برك, مُبَارَكٌ",
+          "note": "“Blessed, beatified, felicitated, or prospered; gifted with, or made to possess, بَرَكة … abounding in good.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-birka",
+      "lang": "ar",
+      "form": "بِرْكَةٌ",
+      "translit": "birka",
+      "gloss": "manner of (a camel's) kneeling; tank, cistern, pool",
+      "relation": "cognate",
+      "note": "One Arabic noun is both a manner of kneeling and a tank or pool, “said to be so called because of the continuance of the water therein”: the dictionary's own account of how “pool” belongs to the root of kneeling. It answers to בְּרֵכָה.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 194, art. برك, بِرْكَةٌ",
+          "note": "“A mode, or manner, of بُرُوك [i. e. of a camel's kneeling and lying down upon the breast] … A حَوْض [i. e. watering-trough or tank] … dug in the ground … said to be so called because of the continuance of the water therein … [a basin; a pool; a pond].”"
+        }
+      ]
+    },
+    {
+      "id": "ar-rukba",
+      "lang": "ar",
+      "form": "رُكْبَةٌ",
+      "translit": "rukba",
+      "gloss": "knee",
+      "relation": "possible",
+      "note": "The ordinary Arabic word for the knee, with r-k-b where Hebrew בֶּרֶךְ has b-r-k; Arabic files it under ركب “ride”. Its consonants match Aramaic אַרְכֻבָּה, but whether it is the same word as birk- with its consonants moved is not shown.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1143, art. ركب, رُكْبَةٌ",
+          "note": "“The knee; i. e., in a man, the joint between the lower parts of the thigh and the upper parts of the shank.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-birku",
+      "lang": "akk",
+      "form": "birku",
+      "translit": "birku, burku",
+      "gloss": "knee; lap; (euphemistically) genitals",
+      "relation": "cognate",
+      "note": "Akkadian's word for the knee, also the lap, as בֶּרֶךְ is in Gen 30:3 and 50:23; Neo-Assyrian has burku. Akkadian has no verb brk “bless”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000002530, birku [knee] N",
+          "url": "https://oracc.museum.upenn.edu/cmawro/cbd/akk/x000002530.html",
+          "note": "Meanings in the glossaries: knee, lap, genitals, euphemistic designation for genitals; 295 instances, Old Babylonian to Hellenistic."
+        },
+        {
+          "source": "oracc",
+          "locator": "atae x000013850, burku [knee] N",
+          "url": "https://oracc.museum.upenn.edu/atae/cbd/akk/x000013850.html",
+          "note": "Meanings: knee, lap, loin; Neo-Assyrian, 824 instances."
+        }
+      ]
+    },
+    {
+      "id": "uga-brk-v",
+      "lang": "uga",
+      "form": "𐎁𐎗𐎋",
+      "translit": "brk",
+      "gloss": "(D stem) bless",
+      "relation": "cognate",
+      "note": "The Ugaritic verb, in the D stem as Hebrew uses the piel. In the Kirta epic El takes a cup and “blessing he blesses (brkm ybrk) [his servant], El blesses Kirta”, the infinitive with the finite verb as in בָּרֵךְ אֲבָרֶכְךָ (Gen 22:17).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 182, §93 Glossary, /b-r-k/",
+          "note": "“D brk, brkm, inf. + -m ‘to bless’ (H., Phoen. b-r-k Pi., Arab. b-r-k)” (OCR read; transliteration normalized)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 157, text 87.2 (KTU 1.15 II 12–20), “A blessing (from Keret)”",
+          "note": "Lines 18–19: “[ym]n.brkm.ybrk [ʿbdh].ybrk.il.krt” (OCR read); line 14 ltbrk “may you bless”."
+        }
+      ]
+    },
+    {
+      "id": "uga-brk-n",
+      "lang": "uga",
+      "form": "𐎁𐎗𐎋",
+      "translit": "brk",
+      "gloss": "knee",
+      "relation": "cognate",
+      "note": "The Ugaritic noun for the knee, listed with the Hebrew, Syriac, Jewish Aramaic and Akkadian words.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 182, §93 Glossary, brk",
+          "note": "“brk ‘knee’ (H. bæræk, bwrk, Syr. burkā, Jew.-Aram. birka, Akkad. birku, burku)” (OCR read; transliteration normalized)."
+        }
+      ]
+    },
+    {
+      "id": "phn-brk",
+      "lang": "phn",
+      "form": "𐤁𐤓𐤊",
+      "translit": "brk",
+      "gloss": "bless; bless = greet in the name of a god",
+      "relation": "cognate",
+      "note": "The Phoenician and Punic verb, of a god blessing a king (“may Baalat of Byblos bless Yeḥawmilk”) and of the god who “heard his voice and blessed him”; also a greeting in a god's name, as the piel is used in greeting (Gen 47:7; Rut 2:4).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 126, B-R-K I",
+          "note": "“[Heb. b-r-k] v. qal 1. BLESS … KAI 10.8/9 tbrk bʿlt gbl ʾyt yḥwmlk … 2. BLESS = GREET someone in the name of (l-) a god, KAI 50.2/3 … brktk lbʿlṣpn, ‘I bless/greet you in the name of Baalsaphon’” (OCR read; transliteration normalized)."
+        }
+      ]
+    },
+    {
+      "id": "phn-brk-gift",
+      "lang": "phn",
+      "form": "𐤁𐤓𐤊",
+      "translit": "brk",
+      "gloss": "gift (vowed to a goddess)",
+      "relation": "cognate",
+      "note": "A Punic noun brk “gift”, as בְּרָכָה is a gift in Gen 33:11 and 1Sa 25:27.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 126, BRK II",
+          "note": "“n.m. GIFT … IFPCO p. 27 no. 9.1/3 (Pu) … ndr brk lrbt lʿštrt, ‘vowed <this> as a gift for the Lady Astarte’” (OCR read; transliteration normalized)."
+        }
+      ]
+    },
+    {
+      "id": "phn-brkt",
+      "lang": "phn",
+      "form": "𐤁𐤓𐤊𐤕",
+      "translit": "brkt",
+      "gloss": "blessing",
+      "relation": "cognate",
+      "note": "The Neo-Punic noun, “may God grant us of his blessings”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 127, BRKT I",
+          "note": "“[Heb. beraka] n.f. BLESSING, KAI 147.1/3 (NPu) … ‘May the god/God grant us of his blessings!’” (OCR read; transliteration normalized)."
+        }
+      ]
+    },
+    {
+      "id": "phn-brk-names",
+      "lang": "phn",
+      "form": "𐤁𐤓𐤊𐤁𐤏𐤋",
+      "translit": "brkbʿl",
+      "gloss": "personal names of the type brk-DN “(the god) bless(es)”, and the short form brk",
+      "relation": "cognate",
+      "note": "Phoenician and Punic names formed as בֶּרֶכְיָה and בָּרַכְאֵל are: BRKBʿL “Baal bless (him)”, BRKMLQRT, BRKŠMŠ, with the god's name second, and a short form BRK.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 126, BRK III",
+          "note": "“p.n. BIRREK … short form of the name-type brk-DN, DN-brk” (OCR read; transliteration normalized)."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 127, BRKBʿL; BRKMLK; BRKMLQRT; BRKŠMŠ",
+          "note": "“BIRREK-BAʿAL (‘Baʿal bless <him/me/you>’) and BARREK-BAʿAL (‘Bless <him/me>, O Baʿal!’)” (OCR read; transliteration normalized)."
+        }
+      ]
+    },
+    {
+      "id": "sab-brk",
+      "lang": "sem",
+      "form": "𐩨𐩧𐩫",
+      "translit": "brk",
+      "gloss": "(Sabaean) bless; tD be praised, be blessed",
+      "relation": "cognate",
+      "note": "Old South Arabian: a god who owns heaven and earth blesses the king, and “may the name of Raḥmānān be blessed and praised”, as Hebrew blesses God's name (Psa 113:2).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 57, BRK I, v",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“BLESS [Ar brk D] J1028/1 … ‘may (the god) … who owns heaven and earth, bless the king Y.’; C543/1 … ‘may the name of (the god) R. be blessed and praised’ … tD BE PRAISED, or BLESSED” (OCR read; transliteration normalized)."
+        }
+      ]
+    },
+    {
+      "id": "sab-brkt",
+      "lang": "sem",
+      "form": "𐩨𐩧𐩫𐩩",
+      "translit": "brkt",
+      "gloss": "(Sabaean) cistern",
+      "relation": "cognate",
+      "note": "A Sabaean noun for a cistern, dug out and faced with stone, as Hezekiah made his בְּרֵכָה (2Ki 20:20).",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 58, BRK II, n",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“brkt(n) … CISTERN … ‘he dug out and faced with stone/strengthened the cistern of the hill-town’” (OCR read; transliteration normalized)."
+        }
+      ]
+    },
+    {
+      "id": "gez-baraka",
+      "lang": "gez",
+      "form": "ባረከ",
+      "translit": "bāraka",
+      "gloss": "bless",
+      "relation": "cognate",
+      "note": "Geʿez has brk “bless”, in the same root as brk “kneel” and bərk “knee”.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000675 brk [bless] V, GEZ001141 brk [bless] V"
+        }
+      ]
+    },
+    {
+      "id": "gez-berk",
+      "lang": "gez",
+      "form": "ብርክ",
+      "translit": "bərk",
+      "gloss": "knee; verb brk kneel",
+      "relation": "cognate",
+      "note": "The Geʿez noun for the knee and its verb “kneel”.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000022 brk [knee] N, GEZ001140 brk [kneel] V"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Geʿez ብርክ (bərk), noun",
+          "note": "“knee”; from Proto-Semitic *birk-."
+        }
+      ]
+    },
+    {
+      "id": "arc-berak",
+      "lang": "arc",
+      "form": "בְּרַךְ",
+      "translit": "bəraḵ",
+      "gloss": "(Jewish Aramaic) pael bless, say grace; peil participle בְּרִיךְ blessed; also, by euphemism, blaspheme",
+      "relation": "cognate",
+      "note": "The Targums' verb: בְּרִיךְ “blessed” at Gen 9:26, the pael “bless” at Deu 8:10, and in the Targum of Job 2:9 and the Talmud the euphemistic sense “blaspheme”, as in the Hebrew of Job 2:9.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בְּרַךְ (ch.)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%91%D6%B0%D6%BC%D7%A8%D6%B7%D7%9A%D6%B0.1",
+          "note": "“Part. Peil בְּרִיךְ blessed. Targ. Gen. IX, 26 … Pa. … to bless &c. Targ. Deut. VIII, 10 … to blaspheme. Targ. Job II, 9.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-birka",
+      "lang": "arc",
+      "form": "בִּרְכָּא",
+      "translit": "birkā",
+      "gloss": "(Jewish Aramaic) knee",
+      "relation": "cognate",
+      "note": "The Targums' word for the knee, as at Isa 45:23 “every knee shall bow”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בֶּרֶךְ II (ch.), בִּרְכָּא",
+          "note": "“knee. Targ. Is. XLV, 23. Pl. בִּרְכַּיָא, בִּרְכֵּי. Targ. Jud. VII, 6.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-arkubta",
+      "lang": "arc",
+      "form": "אַרְכּוּבְתָּא",
+      "translit": "arkubtā",
+      "gloss": "(Jewish Aramaic) knee",
+      "relation": "cognate",
+      "note": "The Targums' other word for the knee, with the consonants of Daniel's אַרְכֻבָּה, as at Job 4:4 (plural אַרְכּוּבַיָּא).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אַרְכּוּבְתָּא",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%90%D6%B7%D7%A8%D6%B0%D7%9B%D6%BC%D7%95%D6%BC%D7%91%D6%B0%D7%AA%D6%B8%D6%BC%D7%90.1",
+          "note": "“Targ. Esth. V, 9 … Pl. אַרְכּוּבָתָא. Targ. Koh. XII, 3 … אַרְכּוּבַיָּא Targ. Job. IV, 4.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "blessing-of-abraham",
+      "statement": "Yahweh told Abram, “I will bless you … and be a blessing (בְּרָכָה) … and in you all the families of the ground shall be blessed (וְנִבְרְכוּ)” (Gen 12:2–3). After Abraham offered Isaac he swore by himself, “blessing I will bless you … and in your seed all the nations of the earth shall be blessed, because you obeyed my voice” (Gen 22:16–18; Heb 6:13–14), and he said the same to Isaac and to Jacob (Gen 26:4; 28:14). Isaac called it “the blessing of Abraham” and said what it held: “to inherit the land of your sojournings, which God gave to Abraham” (Gen 28:4). Peter told Israel they were sons of this covenant, quoted “in your seed shall all the families of the earth be blessed”, and said that God, having raised up his servant Jesus, sent him to them first “to bless you, in turning away every one of you from your iniquities” (Act 3:25–26). Paul says the scripture “preached the gospel beforehand to Abraham” in these words, that those of faith are blessed with believing Abraham, that Christ redeemed us from the curse of the law “that the blessing of Abraham might come on the nations in Christ Jesus”, that the seed is one, “which is Christ”, and that those who are Christ's are Abraham's seed and heirs according to the promise (Gal 3:8–9, 13–14, 16, 29). From the verses: the blessing sworn to Abraham comes through one descendant, Jesus; it begins in the forgiveness and turning from sin which the gospel offers to Israel and the nations alike, and it holds the inheritance of the land promised to Abraham and his seed, of which all who are Christ's are heirs with him.",
+      "evidence": [
+        {
+          "ref": "Gen.12.2",
+          "to": "Gen.12.3"
+        },
+        {
+          "ref": "Gen.22.16",
+          "to": "Gen.22.18"
+        },
+        {
+          "ref": "Heb.6.13",
+          "to": "Heb.6.14"
+        },
+        {
+          "ref": "Gen.26.4"
+        },
+        {
+          "ref": "Gen.28.14"
+        },
+        {
+          "ref": "Gen.28.4"
+        },
+        {
+          "ref": "Act.3.25",
+          "to": "Act.3.26"
+        },
+        {
+          "ref": "Gal.3.8",
+          "to": "Gal.3.9"
+        },
+        {
+          "ref": "Gal.3.13",
+          "to": "Gal.3.14"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.29"
+        }
+      ]
+    },
+    {
+      "topic": "blessed-inherit-the-land",
+      "statement": "The psalm says, “those blessed by him (מְבֹרָכָיו) shall inherit the land, and those cursed by him shall be cut off” (Psa 37:22), as it says that “the meek shall inherit the land” (Psa 37:11), which Jesus repeats: “the meek … shall inherit the earth” (Mat 5:5). He says that when the Son of man comes in his glory and sits on the throne of his glory, the king will say to those on his right, “Come, you blessed of my Father, inherit the kingdom prepared for you from the foundation of the world” (Mat 25:31, 34). Peter tells believers to return blessing for reviling, “knowing that you were called to this, that you should inherit a blessing” (1Pe 3:9); and Esau, who wanted to inherit the blessing after he had sold his birthright, was rejected (Heb 12:16–17; Gen 27:34–38). From the verses: those God blesses inherit the land, which is the kingdom the king gives when he comes and sits on his throne; the inheritance is received then, at his coming, and can be lost by those who despise it now.",
+      "evidence": [
+        {
+          "ref": "Psa.37.22"
+        },
+        {
+          "ref": "Psa.37.11"
+        },
+        {
+          "ref": "Mat.5.5"
+        },
+        {
+          "ref": "Mat.25.31"
+        },
+        {
+          "ref": "Mat.25.34"
+        },
+        {
+          "ref": "1Pe.3.9"
+        },
+        {
+          "ref": "Heb.12.16",
+          "to": "Heb.12.17"
+        },
+        {
+          "ref": "Gen.27.34",
+          "to": "Gen.27.38"
+        }
+      ]
+    },
+    {
+      "topic": "god-the-father-blessed",
+      "statement": "Israel's commonest praise is בָּרוּךְ יַהְוֶה, “blessed be Yahweh”, with what he has done: “blessed be Yahweh, God of Israel, from everlasting to everlasting” (Psa 41:14); “blessed be Yahweh God, the God of Israel, who alone does wonders” (Psa 72:18). David blessed Yahweh before the assembly: “blessed are you, Yahweh, God of Israel our father, from everlasting to everlasting” (1Ch 29:10). Zechariah used the same words when God visited his people: “Blessed be the Lord, the God of Israel, for he has visited and wrought redemption for his people” (Luk 1:68). The apostles bless him as “the God and Father of our Lord Jesus Christ” (2Co 1:3; Eph 1:3; 1Pe 1:3), “who according to his great mercy begot us again to a living hope through the resurrection of Jesus Christ from the dead” (1Pe 1:3). From the verses: the one blessed in Israel's praise is the one God, the Father, who alone does wonders; the apostles bless him as the God of Jesus Christ as well as his Father, and Jesus is the son whom he raised from the dead.",
+      "evidence": [
+        {
+          "ref": "Psa.41.14"
+        },
+        {
+          "ref": "Psa.72.18"
+        },
+        {
+          "ref": "1Ch.29.10"
+        },
+        {
+          "ref": "Luk.1.68"
+        },
+        {
+          "ref": "2Co.1.3"
+        },
+        {
+          "ref": "Eph.1.3"
+        },
+        {
+          "ref": "1Pe.1.3"
+        }
+      ]
+    },
+    {
+      "topic": "he-who-comes-in-the-name",
+      "statement": "Psalm 118 says, “Blessed is he who comes in the name of Yahweh; we have blessed you from the house of Yahweh” (Psa 118:26). The crowds cried it to Jesus as he rode into Jerusalem, with “Hosanna to the son of David” (Mat 21:9), and said with it, “blessed is the coming kingdom of our father David” (Mrk 11:10) and “blessed is the king who comes in the name of the Lord” (Luk 19:38; Jhn 12:13). Jesus told Jerusalem, “you shall not see me from now until you say, Blessed is he who comes in the name of the Lord” (Mat 23:39). From the verses: the one who comes in Yahweh's name is the son of David, coming as king of David's kingdom; Jerusalem refused him then, and he will not be seen there again until it welcomes him with the psalm's words.",
+      "evidence": [
+        {
+          "ref": "Psa.118.26"
+        },
+        {
+          "ref": "Mat.21.9"
+        },
+        {
+          "ref": "Mrk.11.10"
+        },
+        {
+          "ref": "Luk.19.38"
+        },
+        {
+          "ref": "Jhn.12.13"
+        },
+        {
+          "ref": "Mat.23.39"
+        }
+      ]
+    },
+    {
+      "topic": "every-knee-shall-bow",
+      "statement": "Yahweh swears by himself, “to me every knee (בֶּרֶךְ) shall bow, every tongue shall swear” (Isa 45:23). Paul quotes it of all men standing before the judgment seat, where “each of us shall give account of himself to God” (Rom 14:10–12), and applies it to Jesus: God highly exalted him and gave him the name above every name, that at the name of Jesus every knee should bow and every tongue confess that Jesus Christ is Lord, “to the glory of God the Father” (Php 2:9–11). Elijah was told of seven thousand “whose knees have not bowed to Baal” (1Ki 19:18; Rom 11:4). From the verses: the bowing of every knee that Yahweh swore would be to himself is given to Jesus because God exalted him, and it is to the Father's glory; bowing the knee is owning one as God and Lord, and the judgment at which every knee bows is still to come.",
+      "evidence": [
+        {
+          "ref": "Isa.45.23"
+        },
+        {
+          "ref": "Rom.14.10",
+          "to": "Rom.14.12"
+        },
+        {
+          "ref": "Php.2.9",
+          "to": "Php.2.11"
+        },
+        {
+          "ref": "1Ki.19.18"
+        },
+        {
+          "ref": "Rom.11.4"
+        }
+      ]
+    },
+    {
+      "topic": "priestly-blessing",
+      "statement": "Yahweh gave Aaron and his sons the words with which to bless Israel, “Yahweh bless you and keep you …”, and said, “they shall put my name on the sons of Israel, and I will bless them” (Num 6:23–27); the tribe of Levi was set apart “to stand before Yahweh to serve him and to bless in his name” (Deu 10:8). When the altar was first used, Aaron lifted up his hands toward the people and blessed them as he came down from offering the sin offering (Lev 9:22). Melchizedek, priest of El Elyon, blessed Abram (Gen 14:19), and Hebrews reasons from it that “the less is blessed by the greater”, and Jesus is “a priest for ever after the order of Melchizedek” (Heb 7:1, 6–7, 17). After his resurrection Jesus led the disciples out to Bethany, “lifted up his hands and blessed them, and while he blessed them he was parted from them” (Luk 24:50–51). From the verses: blessing in Yahweh's name was the priest's work after the offering; Jesus, raised from the dead and made priest, blessed his disciples as Aaron blessed Israel, and God sent him to bless men by turning them from their iniquities (Act 3:26).",
+      "evidence": [
+        {
+          "ref": "Num.6.23",
+          "to": "Num.6.27"
+        },
+        {
+          "ref": "Deu.10.8"
+        },
+        {
+          "ref": "Lev.9.22"
+        },
+        {
+          "ref": "Gen.14.19"
+        },
+        {
+          "ref": "Heb.7.1"
+        },
+        {
+          "ref": "Heb.7.6",
+          "to": "Heb.7.7"
+        },
+        {
+          "ref": "Heb.7.17"
+        },
+        {
+          "ref": "Luk.24.50",
+          "to": "Luk.24.51"
+        },
+        {
+          "ref": "Act.3.26"
+        }
+      ]
+    },
+    {
+      "topic": "six-days-and-the-blessed-seventh",
+      "statement": "God blessed the creatures of the waters and the air, and then the man and the woman, to be fruitful and multiply (Gen 1:22, 28); when he had finished his work he blessed the seventh day and sanctified it, because on it he rested from all his work which he had made (Gen 2:2–3). The fourth commandment gives the same act as the reason for the sabbath: “in six days Yahweh made the heavens and the earth, the sea and all that is in them, and rested on the seventh day; therefore Yahweh blessed the sabbath day and sanctified it” (Exo 20:11). From the verses: the creation was made in six days and the seventh day blessed, days of the same kind as Israel's six working days and sabbath; and the blessing given to living things at their making is fruitfulness.",
+      "evidence": [
+        {
+          "ref": "Gen.1.22"
+        },
+        {
+          "ref": "Gen.1.28"
+        },
+        {
+          "ref": "Gen.2.2",
+          "to": "Gen.2.3"
+        },
+        {
+          "ref": "Exo.20.11"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key ברכ, BDB's key and the corpus's; no other entry had it. Words and keys: verb b.dd.aa; בְּרָכָה b.dd.ac; בֶּרֶךְ b.dd.ab; בְּרֵכָה b.dd.af; Aramaic verb xb.am.aa; Aramaic noun בְּרַךְ xb.am.ab; Aramaic אַרְכֻבָּה xb.am.ac under its own root key ארכבה (Dan 5:6, 1 token). Names drafted in names/: Baruch (b.dd.ae), Berechiah with Jeberechiah (b.dd.ah), Barachel (b.dd.ag). Not drafted: Beracah (b.dd.ad), the man of 1Ch 12:3 (Beracah@1Ch.12.3) and the valley of 2Ch 20:26, a place; its key also counts 15 tokens of the noun בְּרָכָה by spelling. Zero-token cross-references left out: b.dd.ai (בֶּרֶכְיָה, whose tokens are under b.dd.ah), j.ai.ag, xa.bi.ac. Shared tokens: b.dd.aa's 26 “(no stem)” tokens are the name Baruch, and its qal tokens include the passive participle בָּרוּךְ, which b.dd.ae (the name) also counts, 56 of them; only 26 of b.dd.ae's 82 tokens are the name. xb.am.aa's five “piel” tokens (Num 23:25; Deu 33:11; Psa 132:15; Job 2:9; 1Ch 4:10) are Hebrew בָּרֵךְ filed there by spelling; its Aramaic tokens are Dan 2:19, 20; 3:28; 4:31; 6:11. Stems: the qal is used only as “kneel” (2Ch 6:13; Psa 95:6) and in the passive participle בָּרוּךְ, which is kept under the qal; Dan 2:20 מְבָרַךְ is the pael participle. The piel's “bless” for curse (Job 1:5, 11; 2:5, 9; 1Ki 21:10, 13) is written from the verses only; Psa 10:3 (בֹצֵעַ בֵּרֵךְ נִאֵץ יַהְוֶה) is ambiguous between “the greedy man blesses (himself), despises Yahweh” and a euphemism, and is not cited. The hithpael of Gen 22:18; 26:4 is given the passive sense on the strength of Act 3:25 (ἐνευλογηθήσονται); its reflexive sense is clear in Deu 29:18 and Isa 65:16. The link between knee/kneel and bless is not shown by scripture; the summary says so. The Arabic dictionary derives bāraka from the camel's kneeling (“lay down … in a place and clave thereto”) and birka “pool” from water remaining in it; these are recorded in the cognate notes as Arabic's own account, not as the Hebrew's meaning. Leads not followed: Ugaritic brkt “pool” (Wiktionary only; check DULAT); DULAT and CAD B (birku) not consulted; Segert and Krahmalkov and Biella read from OCR, transliteration normalized, PDFs not rendered; Fisher 1969 has brk I “bless” and II “knee” with Geʿez forms (OCR around source.txt line 3130, page uncertain, about p. 57) not cited; Dillmann and Leslau not consulted for Geʿez; Akkadian karābu “bless, pray” and ikribu “blessing” have k-r-b, not b-r-k, and are not recorded (a claimed metathesis, unverified); Egyptian brk “gift” (a lead from another lexicon, perhaps a Semitic loan) not checked in the TLA; Payne Smith for the Syriac words not consulted; Mandaic braka not checked. Review: (1) the cognate notes quote the Arabic dictionary's derivations; (2) אַרְכֻבָּה is kept in the entry though Arabic files rukba under rkb; (3) the doctrine statements on the blessing of Abraham, the inheritance of the land and the coming in the name are reasoned conclusions; (4) Rom 9:5 (εὐλογητός) is deliberately not cited."
+}
