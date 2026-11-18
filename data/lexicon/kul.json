@@ -1,0 +1,713 @@
+{
+  "id": "kul",
+  "root": "כול",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "measure",
+    "containing",
+    "sustenance",
+    "provision",
+    "endurance",
+    "temple"
+  ],
+  "gloss": "hold, contain; sustain, provide for; bear, endure",
+  "summary": "To hold what is put in: a measure holds the dust of the earth, a basin holds two thousand baths, a cistern holds water or cannot, and the heavens cannot hold God. The hiphil is to contain and to hold in, and so to bear or endure (“the nations cannot endure his indignation”); the pilpel כִּלְכֵּל is to hold up and keep a man, to sustain him with bread and water, as Joseph sustained his father's house and Yahweh sustained Israel forty years in the wilderness, and also to contain and to bear (“who can endure the day of his coming?”). Arabic kāla and Aramaic כּוּל “measure”, and Akkadian kullu “hold, contain, maintain, provide”, show the same two sides: holding a measure, and holding up and providing.",
+  "words": [
+    {
+      "lemma": "כּוּל",
+      "pos": "verb",
+      "gloss": "hold, contain; hold in, endure; sustain, provide for",
+      "bdb": [
+        "k.au.aa"
+      ],
+      "cognate_ids": [
+        "akk-kullu"
+      ],
+      "summary": "About thirty-six true tokens: one qal, eleven hiphil, and the reduplicated pilpel כִּלְכֵּל with its passive polpal. The brief's 629 tokens with no stem are the quantifier כֹּל “all” (filed under kalal, k.bn.ab), counted under this key by spelling, so the key's use count is far too high. The core is holding: a vessel holds its measure, a man is held up with food, a heart holds in a word or wrath until it cannot, and a man holds out under what comes on him.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hold (in a measure), measure out",
+          "cognate_ids": [
+            "ar-kala",
+            "arc-kul"
+          ],
+          "senses": [
+            {
+              "id": "hold-measure",
+              "gloss": "hold in a measure",
+              "definition": "To take up the dust of the earth in a measuring vessel: the qal stands in a row of verbs of measuring, and is the act of filling a measure.",
+              "evidence": [
+                {
+                  "ref": "Isa.40.12",
+                  "role": "defining",
+                  "note": "“Who has measured (מָדַד) the waters in his palm, and marked out (תִּכֵּן) the heavens with a span, וְכָל in a third‑measure (בַּשָּׁלִשׁ) the dust of the earth, and weighed (שָׁקַל) the mountains in scales?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "contain, hold; hold in; bear, endure",
+          "senses": [
+            {
+              "id": "contain",
+              "gloss": "contain, hold",
+              "definition": "Of a vessel, a cistern or an altar: to hold a quantity, or to have room for what is put on it; of a land, to bear all a prophet's words.",
+              "cognate_ids": [
+                "ar-kala",
+                "arc-kul"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Ki.7.26",
+                  "role": "defining",
+                  "note": "The sea of cast bronze: “two thousand baths יָכִיל”."
+                },
+                {
+                  "ref": "1Ki.7.38",
+                  "note": "“Forty baths יָכִיל the one basin.”"
+                },
+                {
+                  "ref": "2Ch.4.5",
+                  "note": "“Holding three thousand baths יָכִיל.”"
+                },
+                {
+                  "ref": "Jer.2.13",
+                  "role": "defining",
+                  "note": "“Broken cisterns that לֹא־יָכִלוּ the water”, set against Yahweh, the spring of living waters."
+                },
+                {
+                  "ref": "Ezk.23.32",
+                  "note": "The cup of her sister, “deep and wide … much to contain (מִרְבָּה לְהָכִיל)”."
+                },
+                {
+                  "ref": "1Ki.8.64",
+                  "role": "defining",
+                  "note": "The bronze altar “was too small מֵהָכִיל the burnt offering and the grain offering and the fat”."
+                },
+                {
+                  "ref": "2Ch.7.7",
+                  "note": "The same, “was not able לְהָכִיל”."
+                },
+                {
+                  "ref": "Amo.7.10",
+                  "note": "“The land is not able לְהָכִיל all his words.”"
+                }
+              ]
+            },
+            {
+              "id": "endure",
+              "gloss": "hold in; bear, endure",
+              "definition": "To hold in what presses to come out, and so to bear or withstand it: the wrath of Yahweh in the prophet, Yahweh's indignation, the day of Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Jer.6.11",
+                  "role": "defining",
+                  "note": "“I am full of the wrath of Yahweh; I am weary הָכִיל. Pour it out …”: holding in, the opposite of pouring out."
+                },
+                {
+                  "ref": "Jer.10.10",
+                  "role": "defining",
+                  "note": "“At his wrath the earth quakes, and the nations לֹא־יָכִלוּ his indignation.”"
+                },
+                {
+                  "ref": "Jol.2.11",
+                  "role": "defining",
+                  "note": "“Great is the day of Yahweh and very fearful, and who יְכִילֶנּוּ?”"
+                },
+                {
+                  "ref": "Rev.6.17",
+                  "note": "“For the great day of his wrath has come, and who is able to stand?”: the question of Jol 2:11 and Mal 3:2."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pilpel",
+          "gloss": "sustain, provide for, keep; contain; bear, endure",
+          "senses": [
+            {
+              "id": "sustain",
+              "gloss": "sustain, provide for",
+              "definition": "To hold a man up by giving him what he needs to live, above all bread: in famine, in old age, in hiding, in the wilderness; and of Yahweh, to uphold the one who casts his burden on him.",
+              "evidence": [
+                {
+                  "ref": "Gen.45.11",
+                  "role": "defining",
+                  "note": "“וְכִלְכַּלְתִּי you there, for there are yet five years of famine, lest you come to poverty.”"
+                },
+                {
+                  "ref": "Gen.47.12",
+                  "role": "defining",
+                  "note": "“Joseph וַיְכַלְכֵּל his father and his brothers and all his father's house with bread, according to the little ones.”"
+                },
+                {
+                  "ref": "Gen.50.21",
+                  "note": "“Do not fear; I אֲכַלְכֵּל you and your little ones.”"
+                },
+                {
+                  "ref": "2Sa.19.33",
+                  "to": "2Sa.19.34",
+                  "note": "Barzillai “had sustained the king” at Mahanaim; David: “וְכִלְכַּלְתִּי you with me in Jerusalem”."
+                },
+                {
+                  "ref": "2Sa.20.3",
+                  "note": "The ten concubines put in a house under guard, “and he sustained them”."
+                },
+                {
+                  "ref": "1Ki.4.7",
+                  "note": "Twelve officers “וְכִלְכְּלוּ the king and his house; each had a month in the year לְכַלְכֵּל”."
+                },
+                {
+                  "ref": "1Ki.5.7",
+                  "role": "defining",
+                  "note": "“They sustained king Solomon and all who came to his table … they let nothing be lacking.”"
+                },
+                {
+                  "ref": "1Ki.17.4",
+                  "note": "“I have commanded the ravens לְכַלְכֶּלְךָ there.”"
+                },
+                {
+                  "ref": "1Ki.17.9",
+                  "note": "“I have commanded a widow there לְכַלְכְּלֶךָ.”"
+                },
+                {
+                  "ref": "1Ki.18.4",
+                  "note": "Obadiah hid a hundred prophets “וְכִלְכְּלָם with bread and water” (tagged piel; the same reduplicated form)."
+                },
+                {
+                  "ref": "1Ki.18.13",
+                  "note": "“וָאֲכַלְכְּלֵם with bread and water.”"
+                },
+                {
+                  "ref": "Neh.9.21",
+                  "role": "defining",
+                  "note": "“Forty years כִּלְכַּלְתָּם in the wilderness; they lacked nothing, their clothes did not wear out.”"
+                },
+                {
+                  "ref": "Rut.4.15",
+                  "note": "“A restorer of life (מֵשִׁיב נֶפֶשׁ) וּלְכַלְכֵּל your old age.”"
+                },
+                {
+                  "ref": "Psa.55.23",
+                  "role": "defining",
+                  "note": "“Cast your burden on Yahweh, and he יְכַלְכְּלֶךָ; he will never let the righteous be moved.”"
+                },
+                {
+                  "ref": "1Pe.5.7",
+                  "note": "“Casting all your care on him, for he cares for you”: Psa 55:23 taken up."
+                },
+                {
+                  "ref": "Zec.11.16",
+                  "note": "The worthless shepherd “will not יְכַלְכֵּל the one that stands”, but eats the flesh of the fat."
+                }
+              ],
+              "senses": [
+                {
+                  "gloss": "maintain, order (affairs)",
+                  "definition": "Of a man's own affairs: to hold and manage them.",
+                  "evidence": [
+                    {
+                      "ref": "Psa.112.5",
+                      "note": "“Good is the man who is gracious and lends; יְכַלְכֵּל his affairs with justice.”",
+                      "role": "defining"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "contain-pilpel",
+              "gloss": "contain, hold in",
+              "definition": "To hold within: the heavens cannot hold God; the prophet cannot hold in the word that burns in him.",
+              "evidence": [
+                {
+                  "ref": "1Ki.8.27",
+                  "role": "defining",
+                  "note": "“Will God indeed dwell on the earth? The heavens and the heaven of heavens לֹא יְכַלְכְּלוּךָ, how much less this house.”"
+                },
+                {
+                  "ref": "2Ch.2.5",
+                  "note": "“The heavens and the heaven of heavens do not contain him.”"
+                },
+                {
+                  "ref": "2Ch.6.18",
+                  "note": "As 1Ki 8:27."
+                },
+                {
+                  "ref": "Jer.20.9",
+                  "role": "defining",
+                  "note": "“It was in my heart as a burning fire shut up in my bones, and I was weary כַּלְכֵל, and could not.”"
+                }
+              ]
+            },
+            {
+              "id": "bear",
+              "gloss": "bear, endure",
+              "definition": "To hold out under something: sickness, or the day of the Lord's coming.",
+              "evidence": [
+                {
+                  "ref": "Mal.3.2",
+                  "role": "defining",
+                  "note": "“Who מְכַלְכֵּל the day of his coming, and who is standing (הָעֹמֵד) when he appears? For he is like a refiner's fire.”"
+                },
+                {
+                  "ref": "Pro.18.14",
+                  "role": "defining",
+                  "note": "“A man's spirit יְכַלְכֵּל his sickness; but a crushed spirit, who can bear (יִשָּׂאֶנָּה) it?”"
+                },
+                {
+                  "ref": "Rev.6.17",
+                  "note": "“Who is able to stand?”: the question of Mal 3:2."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pilpal",
+          "gloss": "be provisioned",
+          "senses": [
+            {
+              "gloss": "be provisioned",
+              "definition": "The passive of the pilpel (pointed כָּלְכְּלוּ, a polpal by form): of an army, to be supplied with food before marching.",
+              "evidence": [
+                {
+                  "ref": "1Ki.20.27",
+                  "role": "defining",
+                  "note": "“The sons of Israel were mustered וְכָלְכְּלוּ, and went against them.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀρκέω",
+          "gloss": "be enough, suffice",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.8.27 and 2Ch.6.18, יְכַלְכְּלוּךָ → ἀρκέσουσίν"
+            },
+            {
+              "ref": "Act.7.48",
+              "to": "Act.7.49",
+              "note": "“The Most High does not dwell in houses made with hands”: Stephen, after Solomon's house, as Solomon himself said."
+            },
+            {
+              "ref": "Act.17.24",
+              "note": "“God who made the world … being Lord of heaven and earth, does not dwell in temples made with hands.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ὑπομένω",
+          "gloss": "endure, hold out",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Mal.3.2, מְכַלְכֵּל → ὑπομενεῖ"
+            },
+            {
+              "ref": "Mat.24.13",
+              "note": "“He who endures (ὑπομείνας) to the end will be saved”: enduring the day that came on that generation."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָדַד",
+            "note": "“Measure”: the qal stands with measuring, marking out and weighing.",
+            "evidence": [
+              {
+                "ref": "Isa.40.12",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עָמַד",
+            "note": "“Stand”: who can endure his coming is who can stand when he appears.",
+            "evidence": [
+              {
+                "ref": "Mal.3.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נָשָׂא",
+            "note": "“Bear”: the spirit that bears sickness, and the crushed spirit no one can bear.",
+            "evidence": [
+              {
+                "ref": "Pro.18.14",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׁפַךְ",
+            "note": "“Pour out”: wrath held in until it must be poured out.",
+            "evidence": [
+              {
+                "ref": "Jer.6.11",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מוֹט",
+            "note": "“Totter, be moved”: the one Yahweh sustains is not moved.",
+            "evidence": [
+              {
+                "ref": "Psa.55.23",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הַשָּׁמַיִם וּשְׁמֵי הַשָּׁמַיִם לֹא יְכַלְכְּלוּךָ",
+            "gloss": "the heavens and the heaven of heavens cannot contain you",
+            "evidence": [
+              {
+                "ref": "1Ki.8.27",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.2.5"
+              },
+              {
+                "ref": "2Ch.6.18"
+              }
+            ]
+          },
+          {
+            "phrase": "וּמִי יְכִילֶנּוּ",
+            "gloss": "and who can endure it?",
+            "evidence": [
+              {
+                "ref": "Jol.2.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Mal.3.2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כִּיל",
+      "lang": "syc",
+      "root": "כיל",
+      "pos": "verb",
+      "gloss": "measure; be measured",
+      "cognate_ids": [
+        "ar-kala",
+        "arc-kul"
+      ],
+      "summary": "The Peshitta's verb of the root, in the saying “with the measure you measure it will be measured to you”: the measuring of the Hebrew qal (Isa 40:12), in the hollow root's y spelling as in the Hebrew hiphil הֵכִיל.",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "measure (out)",
+          "senses": [
+            {
+              "id": "syc-measure",
+              "gloss": "measure out",
+              "definition": "To measure out to another, as with a measure of grain.",
+              "evidence": [
+                {
+                  "ref": "Mat.7.2",
+                  "role": "defining",
+                  "note": "“With the measure דַּמכִֿילִינ you, it will be measured to you” (μετρεῖτε)."
+                },
+                {
+                  "ref": "Mrk.4.24"
+                },
+                {
+                  "ref": "Luk.6.38"
+                }
+              ],
+              "kin": [
+                "hold-measure"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be measured",
+          "senses": [
+            {
+              "id": "syc-be-measured",
+              "gloss": "be measured (out)",
+              "definition": "The passive: to be measured back to one.",
+              "evidence": [
+                {
+                  "ref": "Mat.7.2",
+                  "role": "defining",
+                  "note": "“… מֵתּתּכִֿיל to you” (μετρηθήσεται)."
+                },
+                {
+                  "ref": "Luk.6.38",
+                  "note": "“With the measure you measure, it will be measured to you.”"
+                }
+              ],
+              "kin": [
+                "hold-measure"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּיָלְתָּא",
+      "lang": "syc",
+      "root": "כיל",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "measure",
+      "cognate_ids": [
+        "ar-kala",
+        "arc-kul"
+      ],
+      "senses": [
+        {
+          "id": "syc-measure-noun",
+          "gloss": "a measure",
+          "definition": "A measure for grain, full, pressed down and running over; the measure one deals with is dealt back.",
+          "evidence": [
+            {
+              "ref": "Luk.6.38",
+              "role": "defining",
+              "note": "“Good measure (כּיָלתָּא), pressed down, shaken together, running over, they will give into your bosom” (μέτρον)."
+            },
+            {
+              "ref": "Mat.7.2",
+              "note": "“With the measure (בַּכֿיָלתָּא) you measure …”"
+            },
+            {
+              "ref": "Mrk.4.24"
+            }
+          ],
+          "kin": [
+            "hold-measure"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כַּילָא",
+      "lang": "syc",
+      "root": "כיל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "measure",
+      "cognate_ids": [
+        "ar-kala",
+        "arc-kul"
+      ],
+      "senses": [
+        {
+          "gloss": "measure, limit",
+          "definition": "A measure set to what is given: “not by measure” is without limit.",
+          "evidence": [
+            {
+              "ref": "Jhn.3.34",
+              "role": "defining",
+              "note": "“For God does not give the spirit בּכַֿילָא” (ἐκ μέτρου)."
+            }
+          ],
+          "kin": [
+            "hold-measure"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-kullu",
+      "lang": "akk",
+      "form": "kullu",
+      "translit": "kullu",
+      "gloss": "hold, grip, contain; keep, retain; maintain, provide, take care of; bear, suffer",
+      "relation": "cognate",
+      "note": "The D stem of the hollow root kwl (G kâlu is rare). Its range is the Hebrew's: holding and containing, as the hiphil; maintaining and providing for, as the pilpel; bearing what one suffers, as both.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000011800, kullu [hold] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000011800.html",
+          "note": "“be(come) ready; care for; consider; contain; … grip; … hold; hold (back); keep; … maintain; provide; remain; retain; … suffer from; take; take care of”"
+        }
+      ]
+    },
+    {
+      "id": "ar-kala",
+      "lang": "ar",
+      "form": "كَالَ، كَيْلٌ، مِكْيَالٌ",
+      "translit": "kāla, kayl, mikyāl",
+      "gloss": "measure (grain); a measure of capacity",
+      "relation": "cognate",
+      "note": "Measuring by capacity: what a vessel holds, as the Hebrew qal (Isa 40:12) and the hiphil of a basin's baths. Arabic writes the hollow root with y (kyl), as the Hebrew hiphil יָכִיל and Syriac כִּיל.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3005, art. كيل, مِكْيَالٌ (n43180)",
+          "note": "“A measure with which corn is measured … as also كَيْلٌ; a measure of capacity.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3005, art. كيل, كَيَّالٌ (n43179)",
+          "note": "“A measurer of corn and the like.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic كال (kāla), root ك ي ل",
+          "note": "“to measure, to mete”"
+        }
+      ]
+    },
+    {
+      "id": "arc-kul",
+      "lang": "arc",
+      "form": "כּוּל، כִּיל",
+      "translit": "kūl, kīl",
+      "gloss": "measure; (ithpeel) be measured",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud. The Targum of Isa 40:12 renders the Hebrew qal with this verb, and the Targums use it of measuring the manna (Exo 16:18) and the barley Boaz measured for Ruth (Rut 3:15).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כּוּל II, כִּיל (ch.) (K00260), citing Targ. O. Ex. XVI, 18; Targ. Ruth III, 15; Targ. Is. XXVII, 8; Men. 53b “when he measures”; Ithpe. “to be measured”, Targ. Is. XL, 12"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "god-not-contained",
+      "statement": "At the dedication of the house Solomon asked, “Will God indeed dwell on the earth? Behold, the heavens and the heaven of heavens cannot contain you; how much less this house that I have built” (1Ki 8:27; 2Ch 6:18), and he had said the same when he began to build (2Ch 2:5). Yet he prayed that Yahweh's eyes would be open toward the house, “the place of which you said, my name shall be there” (1Ki 8:29). Yahweh himself says, “Heaven is my throne and the earth my footstool; what house would you build for me? … to this one I will look, to the humble and contrite in spirit, who trembles at my word” (Isa 66:1–2). Stephen quotes this after naming Solomon's house (Act 7:47–50), and Paul tells Athens that the God who made the world “does not dwell in temples made with hands” (Act 17:24). From the verses: no building holds the creator; he put his name in a place, and dwells with the humble who hear his word.",
+      "evidence": [
+        {
+          "ref": "1Ki.8.27"
+        },
+        {
+          "ref": "2Ch.6.18"
+        },
+        {
+          "ref": "2Ch.2.5"
+        },
+        {
+          "ref": "1Ki.8.29"
+        },
+        {
+          "ref": "Isa.66.1",
+          "to": "Isa.66.2"
+        },
+        {
+          "ref": "Act.7.47",
+          "to": "Act.7.50"
+        },
+        {
+          "ref": "Act.17.24"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-sustains",
+      "statement": "Nehemiah's prayer says, “Forty years you sustained them in the wilderness; they lacked nothing; their clothes did not wear out and their feet did not swell” (Neh 9:21), as Moses told them, that Yahweh fed them manna to teach that man does not live by bread alone but by everything that comes out of the mouth of Yahweh (Deu 8:3–4), which Jesus answered the adversary with in the wilderness (Mat 4:4). Yahweh commanded ravens and then a widow to sustain Elijah (1Ki 17:4, 9). The psalm says, “Cast your burden on Yahweh, and he will sustain you; he will never let the righteous be moved” (Psa 55:23), and Peter takes it up: “casting all your care on him, for he cares for you” (1Pe 5:7). From the verses: Yahweh holds up those who trust him, with what they need to live, and teaches by it that life is from his word.",
+      "evidence": [
+        {
+          "ref": "Neh.9.21"
+        },
+        {
+          "ref": "Deu.8.3",
+          "to": "Deu.8.4"
+        },
+        {
+          "ref": "Mat.4.4"
+        },
+        {
+          "ref": "1Ki.17.4"
+        },
+        {
+          "ref": "1Ki.17.9"
+        },
+        {
+          "ref": "Psa.55.23"
+        },
+        {
+          "ref": "1Pe.5.7"
+        }
+      ]
+    },
+    {
+      "topic": "day-of-his-coming",
+      "statement": "Joel asks of the day of Yahweh, “who can endure it?” (Jol 2:11), and Malachi of the Lord who comes suddenly to his temple, “who can endure the day of his coming, and who can stand when he appears? For he is like a refiner's fire”; he will purify the sons of Levi, and come near in judgement (Mal 3:1–5). Jesus names John as the messenger of Mal 3:1 sent before him (Mat 11:10), and John warned of the fire and the axe at the root of the trees (Mat 3:10–12). Jesus told his disciples of the days when Jerusalem would be thrown down, “not one stone left on another”, and said, “he who endures to the end will be saved” and “this generation will not pass away until all these things take place” (Mat 24:2, 13, 34). From the verses: the day of his coming tests who can stand; it came on that generation in AD 70, and the answer of Malachi stands for every such day, that those who fear Yahweh's name are his own possession, spared as a man spares his son (Mal 3:16–17).",
+      "evidence": [
+        {
+          "ref": "Jol.2.11"
+        },
+        {
+          "ref": "Mal.3.1",
+          "to": "Mal.3.5"
+        },
+        {
+          "ref": "Mat.11.10"
+        },
+        {
+          "ref": "Mat.3.10",
+          "to": "Mat.3.12"
+        },
+        {
+          "ref": "Mat.24.2"
+        },
+        {
+          "ref": "Mat.24.13"
+        },
+        {
+          "ref": "Mat.24.34"
+        },
+        {
+          "ref": "Mal.3.16",
+          "to": "Mal.3.17"
+        }
+      ]
+    },
+    {
+      "topic": "spirit-without-measure",
+      "statement": "John the Baptist says of the one who comes from above, “he whom God has sent speaks the words of God, for God does not give the spirit by measure; the Father loves the Son and has given all things into his hand” (Jhn 3:34–35), where the Peshitta's word is the root's noun כַּילָא. Isaiah had said of the shoot from the stem of Jesse, “the spirit of Yahweh shall rest on him” (Isa 11:2), and Peter preached “how God anointed Jesus of Nazareth with holy spirit and with power … for God was with him” (Act 10:38). From the verses: the spirit is God's to give, the Son received it from the Father without limit, and so spoke God's words and did God's works.",
+      "evidence": [
+        {
+          "ref": "Jhn.3.34",
+          "to": "Jhn.3.35"
+        },
+        {
+          "ref": "Isa.11.1",
+          "to": "Isa.11.2"
+        },
+        {
+          "ref": "Act.10.38"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key כול (BDB k.au.aa). The verb's tokens: qal 1 (Isa 40:12), hiphil 11, pilpel 23, piel 1 (1Ki 18:4, the same reduplicated form as the pilpel, filed under it here), polpal 1 (1Ki 20:27, recorded as the schema's pilpal). The brief's 629 tokens with no stem are the quantifier כֹּל, which belongs to kalal (k.bn.ab, with the Aramaic xk.ad.ab) and stays there; they are counted under k.au.aa by spelling, so this word's use count in lexicon-support is inflated by them. Ezk 21:33 לְהָכִיל (of the sword) is analysed by the corpus as אכל and left out; Ezk 23:32, also listed under a.dc.aa, is kept here as “contain”. Calcol (k.au.ab) is in names/calcol.json. k.bm.ag (כִּלְכֵּל, a zero-token cross-reference) is left unassigned. Peshitta: the verb כִּיל (aphel, ethpeel) and the nouns כְּיָלְתָּא and כַּילָא “measure” are added as syc words (SEDRA root כיל, lexemes 1511–1513; the aphel/ethpeel reading follows the vocalised forms in the database). The Peshitta's כֵּוֵילָא “ark” (Mat 24:38; Luk 17:27), which the brief lists under כול, is left out: Wiktionary takes it from Greek χηλός “chest”, not from this root; to check in Payne Smith or Brockelmann. Kalal's כְּלִי “vessel” is not claimed here (it is in kalah). Leads not followed: Ugaritic kl “contain, measure” (DULAT not vendored; not in Segert's glossary under kwl); Phoenician and Ge'ez; CAD for kâlu/kullu. Open questions: (1) whether the pilpel's “sustain” comes from holding up (Akkadian kullu “maintain, provide”) or from measuring out rations (Gen 47:12, “according to the little ones”); the entry takes the first and notes both; (2) whether הֵכִיל and כִּלְכֵּל share a root with כָּלָה and כָּלַל (all with כ־ל) is not argued. The doctrine statements, including the AD 70 reading of Mal 3:2 with Mat 24, are for review."
+}
