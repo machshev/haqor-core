@@ -1,0 +1,1669 @@
+{
+  "id": "halal",
+  "root": "הלל",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "praise",
+    "worship",
+    "boasting",
+    "light",
+    "madness",
+    "psalms"
+  ],
+  "gloss": "praise; boast, glory; shine; act madly",
+  "summary": "To praise: to speak well of and acclaim a man, a woman, and above all Yahweh, whose people are called to it in the cry הַלְלוּ־יָהּ “praise Yah!”; the pual is to be praised, the hithpael to glory or boast, rightly in Yahweh (Jer 9:22–23, quoted in 1Co 1:31) or vainly in wealth, idols and tomorrow, and the noun תְּהִלָּה is the praise given and the renown that earns it. The hiphil is to shine, of the stars, a lamp and the light, and הֵילֵל “shining one, son of dawn” (Isa 14:12) is the king of Babylon brought down to the grave. The poel, poal and hithpolel, with the nouns הוֹלֵלוֹת and הוֹלֵלוּת, are to rave and act madly; their tie to praise and boasting rests on scripture's use alone. Arabic hilāl “new moon” and hallala “acclaim”, and Akkadian alālu “sing a joyful song, boast”, show the root's shining and its acclaim.",
+  "words": [
+    {
+      "lemma": "הָלַל",
+      "pos": "verb",
+      "gloss": "praise; be praised; boast, glory; shine; act madly",
+      "bdb": [
+        "e.bp.aa",
+        "e.bp.af"
+      ],
+      "summary": "About 165 times, two thirds of them in the Psalms and Chronicles. The piel praises and the pual is praised; the hithpael is to praise oneself, boast or glory; the qal participle הוֹלְלִים are the boastful. The hiphil (four times, all in Isaiah and Job) is to shine. The poel, poal and hithpolel, with doubled ל and a long ō, are to make mad, be mad and act madly; scripture sets them beside drunkenness, folly and the frenzy of chariots, and no cognate yet checked shares the sense. The brief's two stemless tokens are the name Hillel (Jdg 12:13, 15).",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "praise (a person; Yahweh); boast",
+          "cognate_ids": [
+            "ar-hallala",
+            "akk-alalu"
+          ],
+          "senses": [
+            {
+              "id": "praise-yahweh",
+              "gloss": "praise Yahweh",
+              "definition": "To acclaim Yahweh aloud for who he is and what he has done, in song, with instruments, in the assembly and at the temple; its plural imperative with יָהּ is the call הַלְלוּ־יָהּ. It is the act of the living.",
+              "evidence": [
+                {
+                  "ref": "Psa.117.1",
+                  "role": "defining",
+                  "note": "“הַלְלוּ אֶת־יַהְוֶה, all nations; laud him (שַׁבְּחוּהוּ), all peoples”: quoted in Rom 15:11."
+                },
+                {
+                  "ref": "Psa.22.23",
+                  "role": "defining",
+                  "note": "“I will tell your name to my brothers; in the midst of the assembly אֲהַלְלֶךָּ”: quoted of Christ in Heb 2:12."
+                },
+                {
+                  "ref": "Psa.22.24",
+                  "note": "“You who fear Yahweh, הַלְלוּהוּ; all the seed of Jacob, honour him.”"
+                },
+                {
+                  "ref": "Psa.115.17",
+                  "role": "defining",
+                  "note": "“The dead do not praise (יְהַלְלוּ) Yah, nor any who go down into silence.”"
+                },
+                {
+                  "ref": "Psa.115.18",
+                  "note": "“But we will bless Yah from now and for ever. הַלְלוּ־יָהּ.”"
+                },
+                {
+                  "ref": "Isa.38.18",
+                  "role": "defining",
+                  "note": "“The grave cannot thank you, death cannot praise you (יְהַלְלֶךָּ).”"
+                },
+                {
+                  "ref": "Psa.146.2",
+                  "role": "defining",
+                  "note": "“אֲהַלְלָה יַהְוֶה while I live (בְּחַיָּי); I will make music to my God while I have being.”"
+                },
+                {
+                  "ref": "Psa.69.31",
+                  "note": "“I will praise the name of God with a song and magnify him with thanksgiving.”"
+                },
+                {
+                  "ref": "Psa.109.30",
+                  "note": "“I will thank Yahweh greatly with my mouth, and in the midst of many I will praise him.”"
+                },
+                {
+                  "ref": "Psa.150.3",
+                  "note": "“Praise him with the blast of the shofar; praise him with harp and lyre.”"
+                },
+                {
+                  "ref": "Psa.150.6",
+                  "role": "defining",
+                  "note": "“Let everything that has breath (כֹּל הַנְּשָׁמָה) praise Yah. הַלְלוּ־יָהּ.”"
+                },
+                {
+                  "ref": "Psa.149.3",
+                  "note": "“Let them praise his name with dancing.”"
+                },
+                {
+                  "ref": "Psa.148.2",
+                  "note": "“Praise him, all his messengers; praise him, all his hosts.”"
+                },
+                {
+                  "ref": "Psa.148.5",
+                  "note": "“Let them praise the name of Yahweh, for he commanded and they were created.”"
+                },
+                {
+                  "ref": "Psa.84.5",
+                  "note": "“Blessed are those who dwell in your house; they will still be praising you.”"
+                },
+                {
+                  "ref": "Jol.2.26",
+                  "note": "“You shall eat and be full, וְהִלַּלְתֶּם the name of Yahweh your God, who has dealt wondrously with you.”"
+                },
+                {
+                  "ref": "Isa.62.9",
+                  "note": "Those who gather the harvest “shall eat it and praise Yahweh” in the courts of his sanctuary."
+                },
+                {
+                  "ref": "Jer.20.13",
+                  "note": "“Sing to Yahweh, praise Yahweh, for he has delivered the soul of the needy.”"
+                },
+                {
+                  "ref": "1Ch.16.4",
+                  "note": "Levites appointed “to record, to thank and to praise Yahweh the God of Israel”."
+                },
+                {
+                  "ref": "1Ch.23.30",
+                  "note": "The Levites “to stand every morning to thank and praise Yahweh, and likewise at evening”."
+                },
+                {
+                  "ref": "2Ch.5.13",
+                  "role": "defining",
+                  "note": "Trumpeters and singers as one voice “to praise and to thank Yahweh … for he is good, for his covenant love is for ever”, and the house was filled with cloud."
+                },
+                {
+                  "ref": "2Ch.20.21",
+                  "note": "Jehoshaphat appointed singers and “those praising in holy array” to go before the army."
+                },
+                {
+                  "ref": "Ezr.3.10",
+                  "note": "At the foundation of the temple, priests and Levites “to praise Yahweh, after the order of David”."
+                },
+                {
+                  "ref": "Ezr.3.11",
+                  "note": "“They answered in praising and thanking Yahweh, for he is good”; all the people shouted with a great shout בְהַלֵּל לַיַהְוֶה."
+                },
+                {
+                  "ref": "Neh.5.13",
+                  "note": "“All the assembly said Amen, and praised Yahweh.”"
+                },
+                {
+                  "ref": "Jdg.16.24",
+                  "note": "Of the Philistines: “they praised their god, for they said, Our god has given our enemy into our hand.”"
+                }
+              ],
+              "kin": [
+                "praise-given",
+                "syc-praise",
+                "syc-hallelujah",
+                "praise-festival"
+              ]
+            },
+            {
+              "id": "praise-person",
+              "gloss": "praise, commend (a person)",
+              "definition": "To speak well of a man or woman for beauty, worth or deeds.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.15",
+                  "role": "defining",
+                  "note": "Pharaoh's princes saw Sarai “וַיְהַלְלוּ אֹתָהּ to Pharaoh”, and she was taken into his house."
+                },
+                {
+                  "ref": "2Sa.14.25",
+                  "role": "defining",
+                  "note": "“In all Israel there was no man so to be praised (לְהַלֵּל) for his beauty as Absalom.”"
+                },
+                {
+                  "ref": "Pro.27.2",
+                  "role": "defining",
+                  "note": "“Let a stranger praise you (יְהַלֶּלְךָ), and not your own mouth.”"
+                },
+                {
+                  "ref": "Pro.31.28",
+                  "note": "“Her sons rise up and call her blessed; her husband, וַיְהַלְלָהּ.”"
+                },
+                {
+                  "ref": "Pro.31.31",
+                  "note": "“Let her works praise her in the gates.”"
+                },
+                {
+                  "ref": "Sng.6.9",
+                  "note": "“The daughters saw her and called her blessed; queens and concubines, וַיְהַלְלוּהָ.”"
+                },
+                {
+                  "ref": "Pro.28.4",
+                  "note": "“Those who forsake the law praise the wicked.”"
+                }
+              ],
+              "kin": [
+                "praise-of-man"
+              ]
+            },
+            {
+              "id": "boast-piel",
+              "gloss": "boast",
+              "definition": "Once, of the wicked man: to boast of his own desire.",
+              "evidence": [
+                {
+                  "ref": "Psa.10.3",
+                  "role": "defining",
+                  "note": "“The wicked הִלֵּל of the desire of his soul, and blesses the greedy; he despises Yahweh.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be praised; worthy to be praised",
+          "cognate_ids": [
+            "ar-hallala",
+            "akk-alalu"
+          ],
+          "senses": [
+            {
+              "id": "be-praised",
+              "gloss": "be praised, worthy of praise",
+              "definition": "Above all the participle מְהֻלָּל, Yahweh “the one to be praised”, “great and greatly to be praised”; also a man praised for his insight and a city renowned.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.4",
+                  "role": "defining",
+                  "note": "“מְהֻלָּל I call Yahweh, and I am saved from my enemies” (also 2Sa 22:4)."
+                },
+                {
+                  "ref": "2Sa.22.4"
+                },
+                {
+                  "ref": "Psa.48.2",
+                  "role": "defining",
+                  "note": "“Great is Yahweh, וּמְהֻלָּל מְאֹד, in the city of our God.”"
+                },
+                {
+                  "ref": "Psa.96.4",
+                  "note": "“Great is Yahweh and greatly to be praised; he is to be feared above all gods” (also 1Ch 16:25)."
+                },
+                {
+                  "ref": "1Ch.16.25"
+                },
+                {
+                  "ref": "Psa.145.3",
+                  "note": "“Great is Yahweh and greatly to be praised, and his greatness is unsearchable.”"
+                },
+                {
+                  "ref": "Psa.113.3",
+                  "note": "“From the rising of the sun to its going down, the name of Yahweh is to be praised.”"
+                },
+                {
+                  "ref": "Pro.12.8",
+                  "role": "defining",
+                  "note": "“According to his insight a man יְהֻלַּל, but the twisted of heart is despised.”"
+                },
+                {
+                  "ref": "Ezk.26.17",
+                  "note": "Tyre, “הָעִיר הַהֻלָּלָה, which was strong in the sea”."
+                }
+              ],
+              "kin": [
+                "renown"
+              ]
+            },
+            {
+              "id": "praised-wedding",
+              "gloss": "be praised in the wedding song",
+              "definition": "Of virgins: to have the bride's song sung over them; in war and judgment there were none.",
+              "cognate_ids": [
+                "arc-hillula"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.78.63",
+                  "role": "defining",
+                  "note": "“Fire devoured his young men, and his virgins לֹא הוּלָּלוּ”: no wedding song, for the young men were dead."
+                }
+              ],
+              "kin": [
+                "praise-festival"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "glory, boast; be praised",
+          "cognate_ids": [
+            "ar-hallala",
+            "akk-alalu"
+          ],
+          "senses": [
+            {
+              "id": "glory-in-yahweh",
+              "gloss": "glory, make one's boast (in Yahweh)",
+              "definition": "With בְּ: to make Yahweh, his name and his knowledge the ground of one's boast and joy.",
+              "evidence": [
+                {
+                  "ref": "Jer.9.23",
+                  "role": "defining",
+                  "note": "“Let him who boasts (הַמִּתְהַלֵּל) boast in this, that he understands and knows me, that I am Yahweh”: quoted in 1Co 1:31 and 2Co 10:17."
+                },
+                {
+                  "ref": "Psa.34.3",
+                  "role": "defining",
+                  "note": "“In Yahweh my soul תִּתְהַלֵּל; the humble shall hear and be glad.”"
+                },
+                {
+                  "ref": "Psa.105.3",
+                  "note": "“Glory in his holy name; let the heart of those who seek Yahweh rejoice” (also 1Ch 16:10)."
+                },
+                {
+                  "ref": "1Ch.16.10"
+                },
+                {
+                  "ref": "Isa.41.16",
+                  "note": "“You shall rejoice in Yahweh, in the Holy One of Israel תִּתְהַלָּל.”"
+                },
+                {
+                  "ref": "Isa.45.25",
+                  "note": "“In Yahweh all the seed of Israel shall be justified and shall glory.”"
+                },
+                {
+                  "ref": "Jer.4.2",
+                  "note": "“Nations shall bless themselves in him, and in him shall they glory.”"
+                },
+                {
+                  "ref": "Psa.63.12",
+                  "note": "“Everyone who swears by him shall glory.”"
+                },
+                {
+                  "ref": "Psa.64.11",
+                  "note": "“The righteous shall be glad in Yahweh … and all the upright in heart shall glory.”"
+                },
+                {
+                  "ref": "Psa.106.5",
+                  "note": "“To glory with your inheritance.”"
+                }
+              ]
+            },
+            {
+              "id": "boast-vainly",
+              "gloss": "boast (of oneself, wealth, idols)",
+              "definition": "To praise oneself: of wisdom, might or riches, of evil, of idols, of what is not yet done or not given.",
+              "evidence": [
+                {
+                  "ref": "Jer.9.22",
+                  "role": "defining",
+                  "note": "“Let not the wise boast in his wisdom, nor the mighty in his might, nor the rich in his riches.”"
+                },
+                {
+                  "ref": "1Ki.20.11",
+                  "role": "defining",
+                  "note": "“Let not him who girds on his armour boast like him who takes it off.”"
+                },
+                {
+                  "ref": "Pro.27.1",
+                  "role": "defining",
+                  "note": "“Do not boast of tomorrow, for you do not know what a day may bring.”"
+                },
+                {
+                  "ref": "Psa.49.7",
+                  "note": "“Those who trust in their wealth and boast in the abundance of their riches.”"
+                },
+                {
+                  "ref": "Psa.52.3",
+                  "note": "“Why do you boast in evil, O mighty man?”"
+                },
+                {
+                  "ref": "Psa.97.7",
+                  "note": "“Let all who serve carved images be ashamed, הַמִּתְהַלְלִים in idols.”"
+                },
+                {
+                  "ref": "Pro.25.14",
+                  "note": "“Clouds and wind and no rain: a man who boasts of a gift he does not give.”"
+                },
+                {
+                  "ref": "Pro.20.14",
+                  "note": "“Bad, bad, says the buyer; but when he has gone his way, then he boasts.”"
+                },
+                {
+                  "ref": "Jer.49.4",
+                  "note": "To Ammon: “Why do you boast in the valleys?”"
+                }
+              ]
+            },
+            {
+              "id": "be-praised-hith",
+              "gloss": "be praised",
+              "definition": "Once: to win praise.",
+              "evidence": [
+                {
+                  "ref": "Pro.31.30",
+                  "role": "defining",
+                  "note": "“Charm is false and beauty vapour; a woman who fears Yahweh, she תִתְהַלָּל.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "be boastful (participle: the boastful)",
+          "cognate_ids": [
+            "akk-alalu"
+          ],
+          "senses": [
+            {
+              "id": "boasters",
+              "gloss": "the boastful, arrogant",
+              "definition": "The participle הוֹלְלִים: those who boast and lift themselves up, set beside the wicked and the workers of iniquity.",
+              "evidence": [
+                {
+                  "ref": "Psa.75.5",
+                  "role": "defining",
+                  "note": "“I said to the boasters (לַהוֹלְלִים), Do not boast (אַל־תָּהֹלּוּ), and to the wicked, Do not lift up the horn.”"
+                },
+                {
+                  "ref": "Psa.5.6",
+                  "role": "defining",
+                  "note": "“The boastful shall not stand before your eyes; you hate all workers of iniquity.”"
+                },
+                {
+                  "ref": "Psa.73.3",
+                  "note": "“I was envious of the boastful when I saw the peace of the wicked.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "shine, give light",
+          "cognate_ids": [
+            "ar-hilal",
+            "uga-hll",
+            "akk-ellu"
+          ],
+          "senses": [
+            {
+              "id": "shine",
+              "gloss": "shine, flash forth light",
+              "definition": "Of stars, a lamp, the sun's light and the breath of Leviathan: to give out light.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.10",
+                  "role": "defining",
+                  "note": "In the burden of Babylon: “the stars of heaven and their constellations לֹא יָהֵלּוּ their light; the sun is dark at its going out.”"
+                },
+                {
+                  "ref": "Job.31.26",
+                  "role": "defining",
+                  "note": "“If I looked at the light (אוֹר) when it shone (יָהֵל), or the moon walking in splendour”, and kissed my hand to them."
+                },
+                {
+                  "ref": "Job.29.3",
+                  "note": "“When his lamp shone (בְּהִלּוֹ) over my head, and by his light I walked through darkness”: the form is an infinitive with suffix."
+                },
+                {
+                  "ref": "Job.41.10",
+                  "note": "“His sneezings flash forth (תָּהֶל) light, and his eyes are like the eyelids of the dawn (שָׁחַר).”"
+                }
+              ],
+              "kin": [
+                "shining-one"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "make mad, make a fool of",
+          "senses": [
+            {
+              "id": "make-mad",
+              "gloss": "make mad, turn to folly",
+              "definition": "To bring the wise, diviners and judges to folly, so that their counsel fails.",
+              "evidence": [
+                {
+                  "ref": "Isa.44.25",
+                  "role": "defining",
+                  "note": "Yahweh “frustrates the signs of the babblers, וְקֹסְמִים יְהוֹלֵל, turns the wise back and makes their knowledge foolish (יְשַׂכֵּל)”."
+                },
+                {
+                  "ref": "Job.12.17",
+                  "role": "defining",
+                  "note": "“He leads counsellors away stripped, וְשֹׁפְטִים יְהוֹלֵל.”"
+                },
+                {
+                  "ref": "Ecc.7.7",
+                  "note": "“Oppression יְהוֹלֵל a wise man, and a bribe destroys the heart.”"
+                }
+              ],
+              "kin": [
+                "madness",
+                "madness-folly"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poal",
+          "gloss": "be mad; (participle) one who raves",
+          "senses": [
+            {
+              "id": "mad-mocking",
+              "gloss": "mad; one raving against",
+              "definition": "The participle: what is mad, and those who rave against a man in derision.",
+              "evidence": [
+                {
+                  "ref": "Ecc.2.2",
+                  "role": "defining",
+                  "note": "“I said of laughter, מְהוֹלָל, and of joy, What does it do?”"
+                },
+                {
+                  "ref": "Psa.102.9",
+                  "note": "“All the day my enemies reproach me; מְהוֹלָלַי swear by me.”"
+                }
+              ],
+              "kin": [
+                "madness",
+                "madness-folly"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "act madly, rave; drive furiously",
+          "senses": [
+            {
+              "id": "act-madly",
+              "gloss": "act madly, rave",
+              "definition": "To behave as one out of his mind: David feigning madness, nations drunk on the cup of Yahweh's wrath, and chariots driving in frenzy.",
+              "evidence": [
+                {
+                  "ref": "1Sa.21.14",
+                  "role": "defining",
+                  "note": "David “changed his behaviour before them, וַיִּתְהֹלֵל in their hand”, scrabbling on the doors and letting his spittle run down his beard."
+                },
+                {
+                  "ref": "Jer.25.16",
+                  "role": "defining",
+                  "note": "“They shall drink and stagger וְהִתְהֹלָלוּ because of the sword I send among them.”"
+                },
+                {
+                  "ref": "Jer.51.7",
+                  "note": "“Babylon a golden cup in Yahweh's hand, making all the earth drunk; the nations drank of her wine, therefore the nations יִתְהֹלְלוּ.” The corpus tags it hithpael."
+                },
+                {
+                  "ref": "Jer.50.38",
+                  "note": "“It is a land of carved images, and they are mad (יִתְהֹלָלוּ) over terrors.” The corpus tags it hithpael."
+                },
+                {
+                  "ref": "Jer.46.9",
+                  "note": "“Go up, horses, וְהִתְהֹלְלוּ, chariots!”"
+                },
+                {
+                  "ref": "Nam.2.5",
+                  "note": "“The chariots rage (יִתְהוֹלְלוּ) in the streets … they run like lightning.”"
+                }
+              ],
+              "kin": [
+                "madness",
+                "madness-folly"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀλληλουϊά",
+          "gloss": "hallelujah, praise Yah",
+          "relation": "loan",
+          "evidence": [
+            {
+              "ref": "Rev.19.1",
+              "role": "defining",
+              "note": "“A great voice of a great multitude in heaven, saying, ἀλληλουϊά; salvation and glory and power to our God”; the Peshitta writes הַלֵלוּיָא."
+            },
+            {
+              "ref": "Rev.19.3",
+              "note": "“A second time they said, ἀλληλουϊά.”"
+            },
+            {
+              "ref": "Rev.19.4",
+              "note": "The twenty-four elders and the four living ones: “Amen, ἀλληλουϊά.”"
+            },
+            {
+              "ref": "Rev.19.6",
+              "role": "defining",
+              "note": "“ἀλληλουϊά, for the Lord God the Almighty reigns.”"
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. ἁλληλουιά",
+              "note": "“Heb. הַלְלוּיָהּ, praise the Lord”; Rev 19:1, 3, 4, 6."
+            },
+            {
+              "source": "thayer",
+              "locator": "s.v. ἀλληλούϊα",
+              "note": "“Praise ye the Lord, Hallelujah”, from the Hebrew."
+            }
+          ]
+        },
+        {
+          "lemma": "αἰνέω",
+          "gloss": "praise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.117.1, הַלְלוּ → αἰνεῖτε; Psa.113.1; 135.1; 150.6 → αἰνεσάτω; αἰνέω renders הָלַל ×63"
+            },
+            {
+              "ref": "Rom.15.11",
+              "role": "defining",
+              "note": "Psa 117:1: “Praise (αἰνεῖτε) the Lord, all you nations.”"
+            },
+            {
+              "ref": "Rev.19.5",
+              "note": "“Praise (αἰνεῖτε) our God, all you his servants”, as Psa 113:1; 135:1."
+            },
+            {
+              "ref": "Luk.2.20",
+              "note": "The shepherds returned “glorifying and praising God”; the Peshitta's word is the root's (ומהללין)."
+            }
+          ]
+        },
+        {
+          "lemma": "καυχάομαι",
+          "gloss": "boast, glory",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.9.22, יִתְהַלֵּל → καυχάσθω (three times); Jer.9.23, יִתְהַלֵּל הַמִּתְהַלֵּל → καυχάσθω ὁ καυχώμενος"
+            },
+            {
+              "ref": "1Co.1.31",
+              "role": "defining",
+              "note": "“As it is written, Let him who boasts, boast in the Lord”: Jer 9:23."
+            },
+            {
+              "ref": "2Co.10.17",
+              "role": "defining",
+              "note": "“Let him who boasts, boast in the Lord.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ὑμνέω",
+          "gloss": "sing praise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.22.23, אֲהַלְלֶךָּ → ὑμνήσω"
+            },
+            {
+              "ref": "Heb.2.12",
+              "role": "defining",
+              "note": "Psa 22:23 in the mouth of Christ: “I will declare your name to my brothers; in the midst of the ecclesia I will sing your praise (ὑμνήσω).”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "הוֹדָה",
+            "note": "“Thank, confess”: the constant partner of praise in the Psalms and at the temple.",
+            "evidence": [
+              {
+                "ref": "Isa.38.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.109.30"
+              },
+              {
+                "ref": "2Ch.5.13"
+              },
+              {
+                "ref": "Ezr.3.11"
+              },
+              {
+                "ref": "1Ch.23.30"
+              }
+            ]
+          },
+          {
+            "lemma": "שִׁבַּח",
+            "note": "“Laud”: set beside הַלְלוּ in the call to the nations.",
+            "evidence": [
+              {
+                "ref": "Psa.117.1",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "זִמֵּר",
+            "note": "“Make music”: praise sung and played.",
+            "evidence": [
+              {
+                "ref": "Psa.146.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.149.3"
+              },
+              {
+                "ref": "Psa.135.3"
+              }
+            ]
+          },
+          {
+            "lemma": "אִשֵּׁר",
+            "note": "“Call blessed, happy”: of the woman praised by her sons and husband, and by queens.",
+            "evidence": [
+              {
+                "ref": "Pro.31.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Sng.6.9"
+              }
+            ]
+          },
+          {
+            "lemma": "בֵּרַךְ",
+            "note": "“Bless”: the living bless and praise Yah.",
+            "evidence": [
+              {
+                "ref": "Psa.115.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.104.35"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׂמַח",
+            "note": "“Rejoice”: glorying in Yahweh is rejoicing in him.",
+            "evidence": [
+              {
+                "ref": "Psa.64.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.105.3"
+              },
+              {
+                "ref": "Psa.63.12"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בּוּז",
+            "note": "“Be despised”: the man praised for his insight against the twisted of heart.",
+            "evidence": [
+              {
+                "ref": "Pro.12.8",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מוּת",
+            "note": "“Die”: the dead do not praise; the living praise.",
+            "evidence": [
+              {
+                "ref": "Psa.115.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.38.18"
+              },
+              {
+                "ref": "Isa.38.19"
+              }
+            ]
+          },
+          {
+            "lemma": "חָכְמָה",
+            "note": "“Wisdom”, against the madness of the poel and the nouns.",
+            "evidence": [
+              {
+                "ref": "Ecc.2.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.7.7"
+              },
+              {
+                "ref": "Isa.44.25"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הַלְלוּ־יָהּ",
+            "gloss": "praise Yah! (hallelujah)",
+            "evidence": [
+              {
+                "ref": "Psa.104.35",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.106.1"
+              },
+              {
+                "ref": "Psa.111.1"
+              },
+              {
+                "ref": "Psa.113.1"
+              },
+              {
+                "ref": "Psa.115.18"
+              },
+              {
+                "ref": "Psa.146.1"
+              },
+              {
+                "ref": "Psa.150.6"
+              },
+              {
+                "ref": "Rev.19.1",
+                "note": "Borrowed into Greek as ἀλληλουϊά."
+              }
+            ]
+          },
+          {
+            "phrase": "גָּדוֹל יַהְוֶה וּמְהֻלָּל מְאֹד",
+            "gloss": "great is Yahweh and greatly to be praised",
+            "evidence": [
+              {
+                "ref": "Psa.48.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.96.4"
+              },
+              {
+                "ref": "Psa.145.3"
+              },
+              {
+                "ref": "1Ch.16.25"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תְּהִלָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "praise; renown; praiseworthy deeds; song of praise",
+      "bdb": [
+        "e.bp.aj",
+        "w.ag.ad"
+      ],
+      "cognate_ids": [
+        "ar-hallala",
+        "akk-alalu"
+      ],
+      "summary": "The noun of the piel, 56 times: the praise spoken or sung, the renown of the one praised, the deeds that call it out, and the song itself (the title of Psa 145, and the name later given to the book of Psalms).",
+      "senses": [
+        {
+          "id": "praise-given",
+          "gloss": "praise (given to Yahweh)",
+          "definition": "Praise in the mouth and in the assembly, the people's acclaim of Yahweh.",
+          "evidence": [
+            {
+              "ref": "Psa.34.2",
+              "role": "defining",
+              "note": "“I will bless Yahweh at all times; continually תְּהִלָּתוֹ in my mouth.”"
+            },
+            {
+              "ref": "Psa.40.4",
+              "role": "defining",
+              "note": "“He put a new song in my mouth, תְּהִלָּה to our God.”"
+            },
+            {
+              "ref": "Psa.22.26",
+              "note": "“From you is my praise in the great assembly.”"
+            },
+            {
+              "ref": "Psa.22.4",
+              "note": "“You are holy, enthroned on the praises of Israel.”"
+            },
+            {
+              "ref": "Psa.119.171",
+              "note": "“My lips shall pour out praise.”"
+            },
+            {
+              "ref": "Psa.149.1",
+              "note": "“Sing to Yahweh a new song, his praise in the assembly of the godly.”"
+            },
+            {
+              "ref": "Isa.42.10",
+              "note": "“His praise from the end of the earth.”"
+            },
+            {
+              "ref": "Isa.43.21",
+              "role": "defining",
+              "note": "“This people I formed for myself; תְּהִלָּתִי they shall recount”: taken up in 1Pe 2:9."
+            },
+            {
+              "ref": "Psa.106.47",
+              "note": "“Gather us from the nations … to triumph in your praise.”"
+            },
+            {
+              "ref": "2Ch.20.22",
+              "note": "“When they began to sing and praise, Yahweh set ambushes.”"
+            }
+          ],
+          "kin": [
+            "praise-yahweh"
+          ]
+        },
+        {
+          "id": "renown",
+          "gloss": "renown, glory; one's praise",
+          "definition": "The fame or glory of one praised: Yahweh as his people's praise, Israel or Jerusalem made a praise among the nations, and the renown of a city.",
+          "evidence": [
+            {
+              "ref": "Deu.10.21",
+              "role": "defining",
+              "note": "“He is your praise (תְהִלָּתְךָ) and he is your God, who has done for you these great and fearful things.”"
+            },
+            {
+              "ref": "Jer.17.14",
+              "role": "defining",
+              "note": "“Heal me, Yahweh, and I shall be healed … for you are my praise.”"
+            },
+            {
+              "ref": "Deu.26.19",
+              "role": "defining",
+              "note": "“To set you high above all nations לִתְהִלָּה וּלְשֵׁם וּלְתִפְאָרֶת.”"
+            },
+            {
+              "ref": "Jer.13.11",
+              "note": "“To be for me a people, and a name, and a praise, and a glory; but they would not hear.”"
+            },
+            {
+              "ref": "Isa.62.7",
+              "note": "“Till he makes Jerusalem a praise in the earth.”"
+            },
+            {
+              "ref": "Isa.60.18",
+              "note": "“You shall call your walls Salvation and your gates Praise.”"
+            },
+            {
+              "ref": "Zep.3.19"
+            },
+            {
+              "ref": "Zep.3.20",
+              "note": "“I will make you a name and a praise among all the peoples of the earth when I turn back your captivity.”"
+            },
+            {
+              "ref": "Jer.33.9"
+            },
+            {
+              "ref": "Isa.42.8",
+              "note": "“My glory I will not give to another, nor my praise to carved images.”"
+            },
+            {
+              "ref": "Hab.3.3",
+              "note": "“His splendour covered the heavens, and the earth was full of his praise.”"
+            },
+            {
+              "ref": "Jer.51.41",
+              "note": "Babylon, “the praise of all the earth”, taken."
+            },
+            {
+              "ref": "Jer.48.2",
+              "note": "“The praise of Moab is no more.”"
+            }
+          ],
+          "kin": [
+            "be-praised"
+          ]
+        },
+        {
+          "id": "praiseworthy-deeds",
+          "gloss": "praiseworthy deeds",
+          "definition": "In the plural, the acts of Yahweh that call out praise.",
+          "evidence": [
+            {
+              "ref": "Exo.15.11",
+              "role": "defining",
+              "note": "“Who is like you, majestic in holiness, fearful in praises (תְהִלֹּת), doing wonders?”"
+            },
+            {
+              "ref": "Psa.78.4",
+              "role": "defining",
+              "note": "“Recounting to the generation to come the praises of Yahweh, and his strength, and his wonders that he has done.”"
+            },
+            {
+              "ref": "Isa.63.7",
+              "note": "“I will recount the covenant loves of Yahweh, the praises of Yahweh, according to all that Yahweh has done for us.”"
+            },
+            {
+              "ref": "Psa.9.15",
+              "note": "“That I may recount all your praises in the gates of the daughter of Zion.”"
+            }
+          ]
+        },
+        {
+          "id": "song-of-praise",
+          "gloss": "song of praise",
+          "definition": "A psalm of praise, as a title and as the temple's song.",
+          "evidence": [
+            {
+              "ref": "Psa.145.1",
+              "role": "defining",
+              "note": "The title: “תְּהִלָּה of David.”"
+            },
+            {
+              "ref": "Neh.12.46",
+              "role": "defining",
+              "note": "“In the days of David and Asaph of old there were heads of the singers, and שִׁיר־תְּהִלָּה and thanksgivings to God.”"
+            },
+            {
+              "ref": "Isa.61.3",
+              "note": "“A garment of praise instead of a faint spirit.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀρετή",
+          "gloss": "excellence; (plural) praiseworthy deeds",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.42.12, תְּהִלָּתוֹ → ἀρετὰς; the Septuagint of Isa.43.21 (not aligned there) has τὰς ἀρετάς μου διηγεῖσθαι"
+            },
+            {
+              "ref": "1Pe.2.9",
+              "role": "defining",
+              "note": "“A people for his own possession, that you may proclaim the excellencies (ἀρετάς) of him who called you out of darkness”: Isa 43:21."
+            }
+          ]
+        },
+        {
+          "lemma": "ὕμνος",
+          "gloss": "hymn, song of praise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.40.4; Psa.119.171; Neh.12.46, תְּהִלָּה → ὕμνον; Psa.65.2; Psa.148.14 → ὕμνος"
+            },
+            {
+              "ref": "Eph.5.19",
+              "note": "“Speaking to one another in psalms and hymns (ὕμνοις) and spiritual songs.”"
+            },
+            {
+              "ref": "Col.3.16"
+            }
+          ]
+        },
+        {
+          "lemma": "ἔπαινος",
+          "gloss": "praise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.22.4, תְּהִלּוֹת → ἔπαινος"
+            },
+            {
+              "ref": "Eph.1.6",
+              "note": "“To the praise (ἔπαινον) of the glory of his grace”: the people made for his praise, as Jer 13:11; Isa 43:21."
+            },
+            {
+              "ref": "Eph.1.12"
+            },
+            {
+              "ref": "Eph.1.14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הִלּוּל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "praise festival, rejoicing",
+      "bdb": [
+        "e.bp.ac"
+      ],
+      "cognate_ids": [
+        "arc-hillula",
+        "akk-alalu",
+        "ar-hallala"
+      ],
+      "summary": "Twice, in the plural, both at the fruit of the vine and tree: the praise and rejoicing of harvest, holy to Yahweh in the Law, given to Baal-berith at Shechem.",
+      "senses": [
+        {
+          "id": "praise-festival",
+          "gloss": "praise, festal rejoicing (at harvest)",
+          "definition": "Thanksgiving and festal praise over the first full yield of fruit.",
+          "evidence": [
+            {
+              "ref": "Lev.19.24",
+              "role": "defining",
+              "note": "“In the fourth year all its fruit shall be holy, הִלּוּלִים to Yahweh.”"
+            },
+            {
+              "ref": "Jdg.9.27",
+              "role": "defining",
+              "note": "The men of Shechem gathered and trod their vineyards “וַיַּעֲשׂוּ הִלּוּלִים, and went into the house of their god, and ate and drank, and cursed Abimelech”."
+            }
+          ],
+          "kin": [
+            "praise-yahweh",
+            "praised-wedding"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַהֲלָל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "praise (that a man receives)",
+      "bdb": [
+        "e.bp.ah",
+        "m.ap.ac"
+      ],
+      "cognate_ids": [
+        "ar-hallala",
+        "akk-alalu"
+      ],
+      "summary": "Once, in Proverbs; the first part of the name Mahalalel.",
+      "senses": [
+        {
+          "id": "praise-of-man",
+          "gloss": "praise received",
+          "definition": "The praise others give a man, which tests him as the furnace tests metal.",
+          "evidence": [
+            {
+              "ref": "Pro.27.21",
+              "role": "defining",
+              "note": "“The crucible for silver and the furnace for gold, and a man according to his praise (מַהֲלָלוֹ).”"
+            }
+          ],
+          "kin": [
+            "praise-person"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֵילֵל",
+      "pos": "noun",
+      "gloss": "shining one",
+      "bdb": [
+        "e.bo.ab",
+        "e.bh.ab"
+      ],
+      "cognate_ids": [
+        "ar-hilal",
+        "uga-hll",
+        "akk-ellu"
+      ],
+      "summary": "Once, Isa 14:12, in the taunt against the king of Babylon: “How you have fallen from heaven, הֵילֵל son of dawn!” Read as a noun of the hiphil “shine”, the shining one, as the root's stars and dawn in Isa 13:10 and Job 41:10. The same letters are the hiphil imperative of ילל “howl!” in Zec 11:2 and the same chapter has הֵילִילִי (Isa 14:31), so “Howl, son of dawn” is a possible reading of the form; the parallel “son of dawn” favours the noun. The word is the king's title in a taunt; the Latin rendering “Lucifer” is not the Hebrew and nothing in the chapter makes him an angel.",
+      "senses": [
+        {
+          "id": "shining-one",
+          "gloss": "shining one (the king of Babylon)",
+          "definition": "A title for the king of Babylon, who exalted himself to the heavens like a bright star of dawn and was cut down to the earth and brought down to the grave.",
+          "evidence": [
+            {
+              "ref": "Isa.14.12",
+              "role": "defining",
+              "note": "“How you have fallen from heaven, הֵילֵל בֶּן־שָׁחַר! You are cut down to the ground, you who laid the nations low.”"
+            },
+            {
+              "ref": "Isa.14.4",
+              "role": "defining",
+              "note": "“You shall take up this taunt against the king of Babylon.”"
+            },
+            {
+              "ref": "Isa.14.13",
+              "note": "“You said in your heart, I will ascend to heaven; above the stars of God (כּוֹכְבֵי־אֵל) I will set my throne.”"
+            },
+            {
+              "ref": "Isa.14.14",
+              "note": "“I will make myself like the Most High.”"
+            },
+            {
+              "ref": "Isa.14.15",
+              "note": "“Yet you are brought down to the grave (שְׁאוֹל), to the depths of the pit.”"
+            },
+            {
+              "ref": "Isa.14.16",
+              "role": "defining",
+              "note": "“Is this the man (הָאִישׁ) who made the earth tremble, who shook kingdoms?”"
+            },
+            {
+              "ref": "Isa.13.10",
+              "note": "In the burden of Babylon the stars of heaven “will not shine (יָהֵלּוּ) their light”."
+            },
+            {
+              "ref": "Job.41.10",
+              "note": "The verb “flash forth light” beside “the eyelids of the dawn (שָׁחַר)”."
+            }
+          ],
+          "kin": [
+            "shine"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הוֹלֵלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "madness",
+      "bdb": [
+        "e.bp.ad"
+      ],
+      "summary": "Four times, all in Ecclesiastes, always in the plural הוֹלֵלוֹת and beside folly (סִכְלוּת). The noun of the poel and hithpolel; no cognate yet checked shares its sense, so its tie to the root rests on scripture's use.",
+      "senses": [
+        {
+          "id": "madness",
+          "gloss": "madness, folly",
+          "definition": "The senseless behaviour that the Preacher sets against wisdom: folly turned to frenzy, which fills men's hearts while they live.",
+          "evidence": [
+            {
+              "ref": "Ecc.1.17",
+              "role": "defining",
+              "note": "“I gave my heart to know wisdom, and to know הוֹלֵלוֹת and folly.”"
+            },
+            {
+              "ref": "Ecc.2.12",
+              "role": "defining",
+              "note": "“I turned to see wisdom and madness and folly.”"
+            },
+            {
+              "ref": "Ecc.7.25",
+              "note": "“To know wickedness as folly, and foolishness as madness.”"
+            },
+            {
+              "ref": "Ecc.9.3",
+              "note": "“The heart of the sons of man is full of evil, and madness is in their heart while they live, and after that, to the dead.”"
+            }
+          ],
+          "kin": [
+            "act-madly",
+            "make-mad",
+            "mad-mocking"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הוֹלֵלוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "madness",
+      "bdb": [
+        "e.bp.ae"
+      ],
+      "summary": "Once, Ecc 10:13, the same sense as הוֹלֵלוֹת.",
+      "senses": [
+        {
+          "id": "madness-folly",
+          "gloss": "madness",
+          "definition": "Where a fool's words end.",
+          "evidence": [
+            {
+              "ref": "Ecc.10.13",
+              "role": "defining",
+              "note": "“The beginning of the words of his mouth is folly, and the end of his mouth is evil madness (הוֹלֵלוּת רָעָה).”"
+            }
+          ],
+          "kin": [
+            "act-madly",
+            "make-mad",
+            "mad-mocking"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הַלֵּל",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "praise",
+      "summary": "The Peshitta's ܗܠܠ, in the pael, once in the New Testament, beside ܫܒܚ “glorify”.",
+      "cognate_ids": [
+        "ar-hallala",
+        "akk-alalu"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "praise",
+          "senses": [
+            {
+              "id": "syc-praise",
+              "gloss": "praise (God)",
+              "definition": "To praise God for what he has done.",
+              "evidence": [
+                {
+                  "ref": "Luk.2.20",
+                  "role": "defining",
+                  "note": "“The shepherds returned, glorifying (משבחין) and praising (ומהללין) God for all they had heard and seen.”"
+                }
+              ],
+              "kin": [
+                "praise-yahweh"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הַלֵלוּיָא",
+      "lang": "syc",
+      "pos": "interjection",
+      "gloss": "hallelujah",
+      "summary": "The Peshitta's ܗܠܠܘܝܐ, the Hebrew הַלְלוּ־יָהּ kept as it is, in the heavenly praise of Rev 19.",
+      "cognate_ids": [
+        "ar-hallala",
+        "akk-alalu"
+      ],
+      "senses": [
+        {
+          "id": "syc-hallelujah",
+          "gloss": "praise Yah!",
+          "definition": "The call to praise, sung at the judgment of Babylon and the reign of God.",
+          "evidence": [
+            {
+              "ref": "Rev.19.1",
+              "role": "defining",
+              "note": "“A great multitude in heaven saying, הַלֵלוּיָא: salvation and glory and power to our God.”"
+            },
+            {
+              "ref": "Rev.19.3"
+            },
+            {
+              "ref": "Rev.19.4"
+            },
+            {
+              "ref": "Rev.19.6",
+              "role": "defining",
+              "note": "“הַלֵלוּיָא, for the Lord God the Almighty reigns.”"
+            }
+          ],
+          "kin": [
+            "praise-yahweh"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hilal",
+      "lang": "ar",
+      "form": "هِلَال",
+      "translit": "hilāl",
+      "gloss": "new moon, crescent; moonlight, glow",
+      "relation": "cognate",
+      "note": "The first thin light of the moon: the root's shining (the hiphil, and הֵילֵל of Isa 14:12). Arabic also has the verb أَهَلَّ “appear, come to light” of the new moon, and اِسْتَهَلَّ “appear; raise the voice”, joining the sight of the new light with the shout that greets it.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3044, art. هل, الهِلاَلُ (n44324)",
+          "note": "“The new moon; or the moon when it is termed هِلاَل … the moon when near the sun, or moon a little after or before the change.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 3044, art. هل, مُسْتَهَلُّ الشَّهْرِ (n44325)",
+          "note": "“The first night of the lunar month.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic هلال, noun",
+          "note": "“crescent, crescent moon; moonlight, glow, aura”; compared with Hebrew ה־ל־ל “clear and shining” and Ugaritic hll."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic أهل (ʔahalla), verb, etym. 2; Arabic استهل (istahalla), verb",
+          "note": "ʔahalla “to begin, to come to light”; istahalla “to appear, come into sight, rise … to raise the voice”."
+        }
+      ]
+    },
+    {
+      "id": "ar-hallala",
+      "lang": "ar",
+      "form": "هَلَّلَ، تَهَلَّلَ",
+      "translit": "hallala, tahallala",
+      "gloss": "cheer, acclaim; say the confession of God's oneness; (tahallala) be exultant, rejoice",
+      "relation": "cognate",
+      "note": "The doubled stem, as the Hebrew piel: to acclaim aloud, used of the confession “there is no god but God”; its reflexive is to exult, as the hithpael glories.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic هلل (hallala), verb",
+          "note": "“to cheer, acclaim; to say لا إله إلا الله”; compared with Hebrew הילל “to praise, glorify, exalt”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic تهلل (tahallala), verb",
+          "note": "“to be happy, to be exultant, to rejoice”."
+        }
+      ]
+    },
+    {
+      "id": "akk-alalu",
+      "lang": "akk",
+      "form": "alālu",
+      "translit": "alālu",
+      "gloss": "sing a joyful song; boast; celebrate; hail; rejoice triumphantly",
+      "relation": "cognate",
+      "note": "Akkadian loses h, so alālu answers to hll. Its senses are the Hebrew's praise and boasting together: to hail, to celebrate in song, to boast. The nouns alālu and elēlu are a joyful or work song.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000095470, alālu [sing a joyful song] V",
+          "note": "boast; celebrate; hail; make jubilant; rejoice triumphantly; to boast."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000065980, alālu [sing a joyfull song] V",
+          "note": "boasting (Old Babylonian)."
+        },
+        {
+          "source": "oracc",
+          "locator": "cmawro x000004120, elēlu [cheerful song] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-ellu",
+      "lang": "akk",
+      "form": "ellu",
+      "translit": "ellu",
+      "gloss": "bright, shining; pure, clean, holy",
+      "relation": "possible",
+      "note": "Bright and shining, as the hiphil; but ellu's commoner sense is “pure”, and its first letter may go back to another root than h, so it is recorded only as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000000390, ellu [pure] AJ",
+          "note": "bright; clean; holy; pure; shining; shiny."
+        }
+      ]
+    },
+    {
+      "id": "uga-hll",
+      "lang": "uga",
+      "form": "𐎅𐎍𐎍",
+      "translit": "hll",
+      "gloss": "crescent moon",
+      "relation": "cognate",
+      "note": "As Arabic hilāl, the new moon's light: the root's shining.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎅𐎍𐎍 (hll), noun",
+          "note": "“crescent moon”; compared with Arabic هِلَال."
+        }
+      ]
+    },
+    {
+      "id": "arc-hillula",
+      "lang": "arc",
+      "form": "הִילּוּלָא",
+      "translit": "hillūlā",
+      "gloss": "praising the bride in dancing; wedding, wedding feast",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the praise sung over the bride, and so the wedding itself; Jastrow ties it to Psa 78:63, where Israel's virgins “were not praised”. It shares the festal praise of הִלּוּל.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הִילּוּלָא (also הִלּוּלָא), citing Targ. Koh. III, 4; Ber. 6b; Keth. 17a",
+          "note": "“esp. praising the bride in dancing before her (v. Ps. LXXVIII, 63 …), in gen. wedding”; בי ה׳ “wedding house, feast”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "“The dead do not praise Yah, nor any who go down into silence; but we will bless Yah from now and for ever. הַלְלוּ־יָהּ” (Psa 115:17–18). Hezekiah, raised from his sickness, says, “the grave (שְׁאוֹל) cannot thank you, death cannot praise you; those who go down to the pit cannot hope for your truth; the living, the living, he shall thank you, as I do this day” (Isa 38:18–19). “Will you work wonders for the dead? Will the shades rise and thank you?” (Psa 88:11). The psalmist will “praise Yahweh while I live”, because man's “breath goes out, he returns to his ground; in that very day his thoughts perish” (Psa 146:2, 4); “the dead know nothing at all” (Ecc 9:5). The sufferer of Psa 22, delivered from death, says, “I will tell your name to my brothers; in the midst of the assembly I will praise you” (Psa 22:23), and Heb 2:12 gives the words to Christ, raised, among his brothers; Isaiah's hope for the dead is “your dead shall live … awake and sing, you who dwell in the dust” (Isa 26:19). From the verses: praise is the act of the living, death silences it, and none of them puts the dead praising anywhere; a man praises God again only when he is raised from the dead.",
+      "evidence": [
+        {
+          "ref": "Psa.115.17"
+        },
+        {
+          "ref": "Psa.115.18"
+        },
+        {
+          "ref": "Isa.38.18"
+        },
+        {
+          "ref": "Isa.38.19"
+        },
+        {
+          "ref": "Psa.88.11"
+        },
+        {
+          "ref": "Psa.146.2"
+        },
+        {
+          "ref": "Psa.146.4"
+        },
+        {
+          "ref": "Ecc.9.5"
+        },
+        {
+          "ref": "Psa.22.23"
+        },
+        {
+          "ref": "Heb.2.12"
+        },
+        {
+          "ref": "Isa.26.19"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Israel was taken to be Yahweh's “people, and a name, and a praise (תְהִלָּה), and a glory; but they would not hear” (Jer 13:11; Deu 26:19). The prophets promise it again for the time of the return: “at that time I will bring you in … for I will make you a name and a praise among all the peoples of the earth, when I turn back your captivity before your eyes” (Zep 3:19–20); the city “shall be to me a name of joy, a praise and a glory before all the nations of the earth” (Jer 33:9); “you shall call your walls Salvation and your gates Praise” (Isa 60:18); the watchmen give Yahweh no rest “till he establishes and makes Jerusalem a praise in the earth” (Isa 62:7); “Adonai Yahweh will cause righteousness and praise to spring up before all the nations” (Isa 61:11). The nations join it: “praise Yahweh, all nations” (Psa 117:1), which Paul cites for the Gentiles' hope in Christ (Rom 15:11–12), and in Rev 19:6 the hallelujah is sung “for the Lord God the Almighty reigns”. From the verses: the praise promised is on the earth, centred on a restored Jerusalem and Israel gathered back to their land, with the nations praising beside them, when God's kingdom is set up.",
+      "evidence": [
+        {
+          "ref": "Jer.13.11"
+        },
+        {
+          "ref": "Deu.26.19"
+        },
+        {
+          "ref": "Zep.3.19"
+        },
+        {
+          "ref": "Zep.3.20"
+        },
+        {
+          "ref": "Jer.33.9"
+        },
+        {
+          "ref": "Isa.60.18"
+        },
+        {
+          "ref": "Isa.62.7"
+        },
+        {
+          "ref": "Isa.61.11"
+        },
+        {
+          "ref": "Psa.117.1"
+        },
+        {
+          "ref": "Rom.15.11",
+          "to": "Rom.15.12"
+        },
+        {
+          "ref": "Rev.19.6"
+        }
+      ]
+    },
+    {
+      "topic": "king-of-babylon",
+      "statement": "The verse is part of “this taunt against the king of Babylon” (Isa 14:4), within the burden of Babylon (Isa 13:1), where already “the stars of heaven and their constellations will not shine (יָהֵלּוּ) their light” and Yahweh “will shake the heavens” in the day of his anger (Isa 13:10, 13). The one called הֵילֵל בֶּן־שָׁחַר, “shining one, son of dawn”, is “fallen from heaven … cut down to the ground, you who laid the nations low” (14:12). He “said in his heart, I will ascend to heaven, above the stars of God I will set my throne … I will make myself like the Most High” (14:13–14), the boast of Nebuchadnezzar over “Babylon the great, which I have built” until he learned “that the Most High rules in the kingdom of men” (Dan 4:27, 29). He goes down to the grave (שְׁאוֹל), maggots his bed and worms his covering (14:11, 15); the dead kings greet him, “you too have become weak as we” (14:10); those who see him ask, “Is this the man (הָאִישׁ) who made the earth tremble, who shook kingdoms, who made the world a wilderness?” (14:16–17); he is cast out of his grave and denied burial with the kings (14:18–20), and Babylon's name is cut off (14:22). The heaven he fell from is the height of his rule, as the heavens and stars of Isa 13:10, 13 are Babylon's powers. From the verses: הֵילֵל is a mortal man, the king of Babylon, mocked for his pride and brought down to the grave; nothing in the chapter makes him an angel, or speaks of a being cast out of heaven before the world began.",
+      "evidence": [
+        {
+          "ref": "Isa.14.4"
+        },
+        {
+          "ref": "Isa.13.1"
+        },
+        {
+          "ref": "Isa.13.10"
+        },
+        {
+          "ref": "Isa.13.13"
+        },
+        {
+          "ref": "Isa.14.12"
+        },
+        {
+          "ref": "Isa.14.13"
+        },
+        {
+          "ref": "Isa.14.14"
+        },
+        {
+          "ref": "Dan.4.27"
+        },
+        {
+          "ref": "Dan.4.29"
+        },
+        {
+          "ref": "Isa.14.11"
+        },
+        {
+          "ref": "Isa.14.15"
+        },
+        {
+          "ref": "Isa.14.10"
+        },
+        {
+          "ref": "Isa.14.16",
+          "to": "Isa.14.17"
+        },
+        {
+          "ref": "Isa.14.18",
+          "to": "Isa.14.20"
+        },
+        {
+          "ref": "Isa.14.22"
+        }
+      ]
+    },
+    {
+      "topic": "boasting",
+      "statement": "“Let not the wise boast in his wisdom, nor the mighty in his might, nor the rich in his riches; but let him who boasts boast in this, that he understands and knows me, that I am Yahweh, who does covenant love, justice and righteousness in the earth” (Jer 9:22–23). Those who boast in wealth (Psa 49:7), in evil (Psa 52:3), in idols (Psa 97:7) or in tomorrow (Pro 27:1) are shamed; “in Yahweh all the seed of Israel shall be justified and shall glory” (Isa 45:25). Paul quotes Jer 9:23 twice, after saying that Christ “became to us wisdom from God, righteousness and sanctification and redemption” (1Co 1:30–31), and against those who commend themselves (2Co 10:17–18). From the verses: a man has nothing of his own to boast of; the only right boast is in knowing Yahweh and what he has done, now through Christ.",
+      "evidence": [
+        {
+          "ref": "Jer.9.22"
+        },
+        {
+          "ref": "Jer.9.23"
+        },
+        {
+          "ref": "Psa.49.7"
+        },
+        {
+          "ref": "Psa.52.3"
+        },
+        {
+          "ref": "Psa.97.7"
+        },
+        {
+          "ref": "Pro.27.1"
+        },
+        {
+          "ref": "Isa.45.25"
+        },
+        {
+          "ref": "1Co.1.30",
+          "to": "1Co.1.31"
+        },
+        {
+          "ref": "2Co.10.17",
+          "to": "2Co.10.18"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key הלל; no existing entry used it. BDB files the verb twice with the same 165 tokens (e.bo.aa “shine”, e.bp.aa “praise”); e.bp.aa is named, e.bo.aa left unassigned as the duplicate. Keys assigned: e.bp.aa and e.bp.af (הַלֲלוּיָהּ, 0 tokens) verb; e.bp.aj and w.ag.ad תְּהִלָּה; e.bp.ac הִלּוּל; e.bp.ah and m.ap.ac מַהֲלָל; e.bo.ab and e.bh.ab הֵילֵל; e.bp.ad הוֹלֵלָה; e.bp.ae הוֹלֵלוּת; names in names/: e.bp.ai mahalalel, e.bp.ab hillel, e.bp.ag and j.av.aq jehallelel. Stems: the corpus tags Isa 44:25 and Job 12:17 (יְהוֹלֵל) piel and Jer 50:38; 51:7 (יִתְהֹלְלוּ) hithpael; by form they are poel and hithpolel and are placed there. Job 29:3 בְּהִלּוֹ is tagged hiphil but is an infinitive of qal form. Isa 14:12 הֵילֵל: the corpus also files the token under ילל (j.bo.aa); Zec 11:2 הֵילֵל is ילל “howl” and is left out. The reading “howl, son of dawn” is noted in the word's summary, not adopted. The Septuagint renders Isa 14:12 ὁ ἑωσφόρος ὁ πρωὶ ἀνατέλλων (not aligned in MACULA); ἑωσφόρος is not in the New Testament (2Pe 1:19 has φωσφόρος, unrelated) and is not recorded. Syriac: SEDRA root 505 HL, lexemes 794 HLL “praise” (Luk 2:20, word ref 540202006) and 795 HLLO;A “Hallelujah” (Rev 19:1, 3, 4, 6); recorded as the Peshitta's words. Madness (poel, poal, hithpolel, הוֹלֵלָה, הוֹלֵלוּת): no cognate checked; leads are a Syriac aphel ܐܗܠ “deride” and Tigre halawlaw “unwise” (both from a lexicon, not followed to Payne Smith or Littmann–Höfner), so these words score against the root's other cognates. Open questions: (1) whether the madness group is the same root as praise and boasting (boasting run to frenzy, Psa 75:5 beside Ecc 2:2) or a separate older root in the same spelling; no cognate decides it; (2) whether הֵילֵל is a noun “shining one” or the imperative “howl”; (3) Ugaritic hll cited from Wiktionary only (DULAT not vendored), and Lane's هل article (in the posthumous part) is brief; (4) doctrine statements are reasoned conclusions to review."
+}
