@@ -1,0 +1,2169 @@
+{
+  "id": "shaal",
+  "root": "שאל",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "asking",
+    "prayer",
+    "inquiry",
+    "borrowing",
+    "greeting",
+    "death",
+    "grave",
+    "resurrection"
+  ],
+  "gloss": "ask: inquire, request, borrow; a request; the grave",
+  "summary": "The verb is to ask: to put a question and wait for the answer, to ask for a thing and wait for it to be given, to ask the use of a thing (borrow), to ask of Yahweh by the Urim or a prophet, and to ask after a man's peace (greet him). Its nouns שְׁאֵלָה and מִשְׁאָלָה are the thing asked for, and its commonest name, שָׁאוּל Saul, is “asked”, the king Israel asked for. Akkadian, Ugaritic, Phoenician, Sabaean, Arabic and Aramaic all have the same verb with the same sense. שְׁאוֹל, the grave, is written with the same three letters and is kept here: it is where all the dead go down, righteous and wicked alike, where there is no work, knowledge, remembrance or praise, and from which God brings up; no verse explains its name, and no other language has the word except by borrowing it, so its tie to “ask” rests on the spelling, on one verse that sets the two together (Isa 7:11), and on the grave that never says “enough” (Pro 30:16).",
+  "words": [
+    {
+      "lemma": "שָׁאַל",
+      "pos": "verb",
+      "gloss": "ask: inquire, request, borrow, consult, greet",
+      "bdb": [
+        "v.ag.aa"
+      ],
+      "cognate_ids": [
+        "akk-shalu",
+        "uga-shal",
+        "phn-shal",
+        "sab-sal",
+        "ar-saala",
+        "arc-sheel"
+      ],
+      "summary": "About 170 times, nearly all in the qal. The count the tools give for this key is far higher, because its tokens are gathered by spelling and take in the name שָׁאוּל and the unrelated לוֹ “to him”; the references of the stems below are the verb's own. One act runs through every use: the asker lacks something, a fact or a thing or a decision, and turns to one who has it. The construction shows which: the person asked is the object or follows מִן, מֵעִם or מֵאֵת “from”; the thing asked for is the object; לְ marks the one whose welfare is asked after; and בְּ marks the one consulted, God or an oracle.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "ask a question; ask for, request; require; borrow; inquire of God or an oracle; ask after one's peace",
+          "senses": [
+            {
+              "id": "ask-question",
+              "gloss": "ask (a question), inquire",
+              "definition": "To put a question to someone and look for the answer: the words asked usually follow, and the one asked tells or answers.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.47",
+                  "role": "defining",
+                  "note": "“וָאֶשְׁאַל her and said, Whose daughter are you? And she said, The daughter of Bethuel”: the question and its answer."
+                },
+                {
+                  "ref": "Deu.32.7",
+                  "role": "defining",
+                  "note": "“שְׁאַל your father and he will tell you (וְיַגֵּדְךָ), your elders and they will say to you”: asking is answered by telling."
+                },
+                {
+                  "ref": "Exo.13.14",
+                  "role": "defining",
+                  "note": "“When your son asks you (יִשְׁאָלְךָ) tomorrow, saying, What is this? you shall say to him…”"
+                },
+                {
+                  "ref": "Deu.6.20",
+                  "note": "The son asks, “What are the testimonies and the statutes and the judgments?”"
+                },
+                {
+                  "ref": "Jos.4.6",
+                  "note": "“When your sons ask tomorrow, saying, What are these stones to you?”"
+                },
+                {
+                  "ref": "Gen.32.30",
+                  "note": "Jacob asked, “Tell your name”; the answer, “Why is it that you ask (תִּשְׁאַל) my name?”"
+                },
+                {
+                  "ref": "Jdg.13.18",
+                  "note": "The angel of Yahweh to Manoah: “Why do you ask my name, seeing it is wonderful?”"
+                },
+                {
+                  "ref": "Gen.43.7",
+                  "note": "“The man asked closely (שָׁאוֹל שָׁאַל) about us and our kindred … and we told him.”"
+                },
+                {
+                  "ref": "Deu.4.32",
+                  "note": "“Ask now of the former days which were before you”: inquire into the past."
+                },
+                {
+                  "ref": "Deu.13.15",
+                  "role": "defining",
+                  "note": "“You shall seek (וְדָרַשְׁתָּ) and search (וְחָקַרְתָּ) and ask well (וְשָׁאַלְתָּ הֵיטֵב)”: asking beside seeking and searching out, the judge's inquiry."
+                },
+                {
+                  "ref": "Jer.6.16",
+                  "note": "“Stand by the ways and see, and ask for the old paths, which is the good way, and walk in it.”"
+                },
+                {
+                  "ref": "Hag.2.11",
+                  "note": "“Ask the priests torah”: put a question of law to those who should know."
+                },
+                {
+                  "ref": "Job.8.8",
+                  "note": "“Ask the former generation.”"
+                },
+                {
+                  "ref": "Job.12.7",
+                  "note": "“Ask the beasts and they will teach you.”"
+                },
+                {
+                  "ref": "Job.38.3",
+                  "note": "Yahweh to Job: “I will ask you (וְאֶשְׁאָלְךָ), and you make me know”; so Job 40:7 and 42:4."
+                },
+                {
+                  "ref": "Isa.41.28",
+                  "note": "Of the idols' counsellors: “I asked them, but they did not return a word.”"
+                },
+                {
+                  "ref": "Jer.38.14",
+                  "note": "Zedekiah to Jeremiah: “I am asking you a thing; hide nothing from me.”"
+                },
+                {
+                  "ref": "Neh.1.2",
+                  "note": "Nehemiah asked the men from Judah about the Jews who had escaped and about Jerusalem."
+                },
+                {
+                  "ref": "Ecc.7.10",
+                  "note": "“Not out of wisdom do you ask about this.”"
+                }
+              ]
+            },
+            {
+              "id": "ask-request",
+              "gloss": "ask for, request",
+              "definition": "To ask someone for a thing, so that he may give it: of men from men, and above all of men from Yahweh. The thing asked for is the object and the giver follows מִן or מֵעִם; what answers the asking is giving.",
+              "evidence": [
+                {
+                  "ref": "1Ki.3.5",
+                  "role": "defining",
+                  "note": "God to Solomon: “שְׁאַל what I shall give you (מָה אֶתֶּן לָךְ)”: to ask is to name what one would be given."
+                },
+                {
+                  "ref": "1Ki.3.11",
+                  "note": "“Because you have asked this thing, and have not asked for yourself many days, nor asked riches, nor asked the life of your enemies, but have asked understanding to hear judgment”: the verb five times."
+                },
+                {
+                  "ref": "1Sa.1.20",
+                  "role": "defining",
+                  "note": "Hannah “called his name Samuel, כִּי מֵיַהְוֶה שְׁאִלְתִּיו, for from Yahweh I asked him”."
+                },
+                {
+                  "ref": "1Sa.1.27",
+                  "role": "defining",
+                  "note": "“For this boy I prayed (הִתְפַּלָּלְתִּי), and Yahweh gave me my request which I asked from him (שְׁאֵלָתִי אֲשֶׁר שָׁאַלְתִּי מֵעִמּוֹ)”: the asking is prayer, and its answer a gift."
+                },
+                {
+                  "ref": "Psa.2.8",
+                  "role": "defining",
+                  "note": "Yahweh to his son: “שְׁאַל מִמֶּנִּי, ask of me, and I will give nations for your inheritance.”"
+                },
+                {
+                  "ref": "Psa.21.5",
+                  "note": "“Life he asked of you; you gave it to him, length of days for ever and ever.”"
+                },
+                {
+                  "ref": "Psa.27.4",
+                  "note": "“One thing I have asked from Yahweh, that I will seek (אֲבַקֵּשׁ): to dwell in the house of Yahweh all the days of my life.”"
+                },
+                {
+                  "ref": "Jdg.5.25",
+                  "note": "“Water he asked; milk she gave.”"
+                },
+                {
+                  "ref": "Jdg.8.24",
+                  "note": "Gideon: “Let me ask a request of you (אֶשְׁאֲלָה מִכֶּם שְׁאֵלָה), that each give me the earring of his spoil.”"
+                },
+                {
+                  "ref": "Jos.15.18",
+                  "note": "Achsah urged Othniel “to ask (לִשְׁאוֹל) the field from her father”."
+                },
+                {
+                  "ref": "1Sa.8.10",
+                  "note": "“The people who were asking a king from him (הַשֹּׁאֲלִים מֵאִתּוֹ מֶלֶךְ).”"
+                },
+                {
+                  "ref": "1Sa.12.13",
+                  "note": "“Here is the king whom you have chosen, whom you asked for (שְׁאֶלְתֶּם)”: said of Saul, שָׁאוּל."
+                },
+                {
+                  "ref": "1Sa.12.17",
+                  "note": "“Your evil is great which you have done in the eyes of Yahweh, to ask for yourselves a king.”"
+                },
+                {
+                  "ref": "2Ki.2.9",
+                  "note": "Elijah to Elisha: “Ask what I shall do for you before I am taken from you.”"
+                },
+                {
+                  "ref": "1Ki.19.4",
+                  "note": "Elijah “asked his soul to die (וַיִּשְׁאַל אֶת־נַפְשׁוֹ לָמוּת)”; so Jonah, Jon 4:8."
+                },
+                {
+                  "ref": "Isa.7.11",
+                  "note": "“Ask for yourself a sign from Yahweh your God”; Ahaz answers (v. 12), “I will not ask, and I will not test Yahweh.”"
+                },
+                {
+                  "ref": "Zec.10.1",
+                  "note": "“Ask from Yahweh rain in the time of the latter rain.”"
+                },
+                {
+                  "ref": "Pro.30.7",
+                  "note": "“Two things I have asked of you; do not withhold them from me before I die.”"
+                },
+                {
+                  "ref": "Psa.105.40",
+                  "note": "“He asked, and he brought quail.”"
+                },
+                {
+                  "ref": "Psa.78.18",
+                  "note": "“They tested God in their heart by asking food for their soul”: asking that is not faith."
+                },
+                {
+                  "ref": "Lam.4.4",
+                  "note": "“Children ask bread; no one breaks it for them.”"
+                },
+                {
+                  "ref": "Ezr.8.22",
+                  "note": "“I was ashamed to ask from the king a force and horsemen.”"
+                },
+                {
+                  "ref": "Mat.7.7",
+                  "note": "Jesus: “Ask and it shall be given to you”; the Peshitta, שַאלו ונֵתִֿיהֵבֿ לכֻֿונ, with this verb."
+                }
+              ]
+            },
+            {
+              "id": "ask-require",
+              "gloss": "require, demand; desire",
+              "definition": "To ask as one who has the right or the power: what a lord requires of his servant, what a captor or a ruler demands. Of the eyes and the soul, what they ask is what they desire.",
+              "evidence": [
+                {
+                  "ref": "Deu.10.12",
+                  "role": "defining",
+                  "note": "“And now, Israel, what does Yahweh your God ask of you (שֹׁאֵל מֵעִמָּךְ), but to fear Yahweh your God, to walk in all his ways, to love him and to serve him”."
+                },
+                {
+                  "ref": "Psa.40.7",
+                  "note": "“Burnt offering and sin offering you have not asked.”"
+                },
+                {
+                  "ref": "Psa.137.3",
+                  "role": "defining",
+                  "note": "“There our captors asked of us words of song”: a demand."
+                },
+                {
+                  "ref": "Mic.7.3",
+                  "note": "“The prince asks, and the judge, for payment.”"
+                },
+                {
+                  "ref": "Psa.35.11",
+                  "note": "False witnesses “ask me of what I do not know”: call to account."
+                },
+                {
+                  "ref": "Ecc.2.10",
+                  "note": "“All that my eyes asked I did not keep from them.”"
+                },
+                {
+                  "ref": "Deu.14.26",
+                  "note": "“Whatever your soul asks of you (תִּשְׁאָלְךָ נַפְשֶׁךָ).”"
+                }
+              ]
+            },
+            {
+              "id": "ask-borrow",
+              "gloss": "ask the use of, borrow",
+              "definition": "To ask a thing of its owner for use, the thing remaining his: an animal, a tool, vessels. The passive participle שָׁאוּל is “borrowed”.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.13",
+                  "role": "defining",
+                  "note": "“If a man asks (יִשְׁאַל) of his neighbour and it is hurt or dies, its owner not being with it, he shall surely repay”: the thing asked still has its owner, so it is borrowed."
+                },
+                {
+                  "ref": "2Ki.6.5",
+                  "role": "defining",
+                  "note": "The axe head fell into the water: “Alas, my lord, and it was borrowed (וְהוּא שָׁאוּל).”"
+                },
+                {
+                  "ref": "2Ki.4.3",
+                  "note": "“Go, ask for yourself vessels from outside, from all your neighbours, empty vessels.”"
+                },
+                {
+                  "ref": "Exo.3.22",
+                  "note": "“A woman shall ask of her neighbour vessels of silver and vessels of gold and clothing”; so Exo 11:2 and 12:35. The verb is the plain “ask”; what Israel asked was given them and not returned (Exo 12:36)."
+                },
+                {
+                  "ref": "Exo.12.35"
+                }
+              ]
+            },
+            {
+              "id": "ask-of-god",
+              "gloss": "inquire of (God, an oracle), consult",
+              "definition": "With בְּ of the one consulted: to seek a decision or a word from God, through the priest and the Urim, a prophet or the ark. The same construction is used of consulting what is not God: an idol, the teraphim, a medium.",
+              "cognate_ids": [
+                "akk-shailu"
+              ],
+              "evidence": [
+                {
+                  "ref": "Num.27.21",
+                  "role": "defining",
+                  "note": "Joshua “shall stand before Eleazar the priest, who shall ask for him by the judgment of the Urim before Yahweh; at his mouth they shall go out and at his mouth come in”."
+                },
+                {
+                  "ref": "Jdg.1.1",
+                  "role": "defining",
+                  "note": "“The sons of Israel asked of Yahweh (וַיִּשְׁאֲלוּ … בַּיַהְוֶה), saying, Who shall go up for us first?” and Yahweh said, “Judah shall go up.”"
+                },
+                {
+                  "ref": "1Sa.28.6",
+                  "role": "defining",
+                  "note": "“Saul asked of Yahweh, and Yahweh did not answer him, neither by dreams nor by Urim nor by prophets”: the three ways an answer came."
+                },
+                {
+                  "ref": "1Sa.14.37",
+                  "note": "“Saul asked of God, Shall I go down after the Philistines? … and he did not answer him that day.”"
+                },
+                {
+                  "ref": "1Sa.23.2",
+                  "note": "“David asked of Yahweh, saying, Shall I go and strike these Philistines?”; so 1Sa 30:8; 2Sa 2:1; 5:19, 23."
+                },
+                {
+                  "ref": "1Sa.22.10",
+                  "note": "Ahimelech “asked of Yahweh for him”."
+                },
+                {
+                  "ref": "Jdg.20.18",
+                  "note": "Israel went up to Bethel “and asked of God”."
+                },
+                {
+                  "ref": "Jos.9.14",
+                  "role": "defining",
+                  "note": "Of the Gibeonites' deceit: “the mouth of Yahweh they did not ask (וְאֶת־פִּי יַהְוֶה לֹא שָׁאָלוּ).”"
+                },
+                {
+                  "ref": "Isa.30.2",
+                  "note": "“Who walk to go down to Egypt, and my mouth they have not asked.”"
+                },
+                {
+                  "ref": "Isa.65.1",
+                  "note": "“I let myself be sought (נִדְרַשְׁתִּי) by those who did not ask; I let myself be found by those who did not seek me (בִקְשֻׁנִי).”"
+                },
+                {
+                  "ref": "2Sa.16.23",
+                  "note": "Ahithophel's counsel was “as when a man asks of the word of God”."
+                },
+                {
+                  "ref": "Hos.4.12",
+                  "note": "“My people asks of its wood, and its staff tells it.”"
+                },
+                {
+                  "ref": "Ezk.21.26",
+                  "note": "The king of Babylon at the parting of the ways “asked of the teraphim”."
+                },
+                {
+                  "ref": "Deu.18.11",
+                  "role": "defining",
+                  "note": "Among the abominations of the nations: “one who asks an אוֹב (שֹׁאֵל אוֹב) … and one who seeks to the dead (דֹרֵשׁ אֶל־הַמֵּתִים)”."
+                },
+                {
+                  "ref": "1Ch.10.13",
+                  "note": "Saul died for his trespass, “and also for asking of the אוֹב, to seek (לִשְׁאוֹל בָּאוֹב לִדְרוֹשׁ)”, and (v. 14) he did not seek Yahweh."
+                }
+              ]
+            },
+            {
+              "id": "ask-peace",
+              "gloss": "ask after (one's peace), greet",
+              "definition": "With לְ of the person and לְשָׁלוֹם: to ask how it is with someone, and so to greet him. The greeting is a question about his peace.",
+              "evidence": [
+                {
+                  "ref": "Gen.43.27",
+                  "role": "defining",
+                  "note": "Joseph “asked them of their peace (וַיִּשְׁאַל לָהֶם לְשָׁלוֹם) and said, Is your father well (הֲשָׁלוֹם), the old man of whom you spoke? Is he still alive?”: the idiom and the question it stands for."
+                },
+                {
+                  "ref": "Exo.18.7",
+                  "note": "Moses and Jethro “asked each man his neighbour of peace”."
+                },
+                {
+                  "ref": "1Sa.10.4",
+                  "note": "“They will ask you of peace and give you two loaves.”"
+                },
+                {
+                  "ref": "1Sa.17.22",
+                  "note": "David ran to the battle line “and asked his brothers of peace”."
+                },
+                {
+                  "ref": "1Sa.25.5",
+                  "note": "David's young men are to “ask him in my name of peace”."
+                },
+                {
+                  "ref": "2Sa.11.7",
+                  "note": "David asked of the peace of Joab, of the people and of the war."
+                },
+                {
+                  "ref": "Jer.15.5",
+                  "note": "“Who will turn aside to ask of your peace?”"
+                },
+                {
+                  "ref": "Psa.122.6",
+                  "note": "“Ask the peace of Jerusalem (שַׁאֲלוּ שְׁלוֹם יְרוּשָׁלִָם)”: here the asking is prayer for it."
+                },
+                {
+                  "ref": "Rom.16.3",
+                  "note": "The Peshitta greets with the same idiom: שַאלו בַּשלָמָא, “ask of the peace of Priscilla and Aquila”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "ask for oneself, ask leave",
+          "senses": [
+            {
+              "id": "ask-leave",
+              "gloss": "ask leave (to go)",
+              "definition": "To ask for oneself permission to be away, from the one whose leave is needed.",
+              "evidence": [
+                {
+                  "ref": "1Sa.20.6",
+                  "role": "defining",
+                  "note": "“David earnestly asked leave of me (נִשְׁאֹל נִשְׁאַל מִמֶּנִּי) to run to Bethlehem his city.”"
+                },
+                {
+                  "ref": "1Sa.20.28",
+                  "note": "Jonathan repeats it to Saul."
+                },
+                {
+                  "ref": "Neh.13.6",
+                  "role": "defining",
+                  "note": "“At the end of days I asked leave of the king (נִשְׁאַלְתִּי מִן־הַמֶּלֶךְ)”, and came to Jerusalem."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "inquire; beg",
+          "cognate_ids": [
+            "ar-sail"
+          ],
+          "senses": [
+            {
+              "id": "inquire-carefully",
+              "gloss": "inquire (as a custom)",
+              "definition": "To make inquiry, of a place men went to for counsel. One verse.",
+              "evidence": [
+                {
+                  "ref": "2Sa.20.18",
+                  "role": "defining",
+                  "note": "“They used to say in former times, Let them inquire at Abel (שָׁאֹל יְשָׁאֲלוּ בְּאָבֵל), and so they ended the matter.”"
+                }
+              ]
+            },
+            {
+              "id": "beg",
+              "gloss": "beg",
+              "definition": "To go about asking for bread: of the children of the wicked, left fatherless. One verse.",
+              "evidence": [
+                {
+                  "ref": "Psa.109.10",
+                  "role": "defining",
+                  "note": "“Let his sons wander and beg (וְשִׁאֵלוּ), and seek out of their ruins.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "let one have what he asks; lend, grant",
+          "cognate_ids": [
+            "ar-asala"
+          ],
+          "senses": [
+            {
+              "id": "grant-lend",
+              "gloss": "grant what is asked, lend",
+              "definition": "To make the asking succeed: to give or hand over what was asked. Of Hannah, to give over to Yahweh the son she had asked from him.",
+              "evidence": [
+                {
+                  "ref": "Exo.12.36",
+                  "role": "defining",
+                  "note": "“Yahweh gave the people favour in the eyes of the Egyptians, וַיַּשְׁאִלוּם, and they let them have what they asked”: it answers the qal of v. 35."
+                },
+                {
+                  "ref": "1Sa.1.28",
+                  "role": "defining",
+                  "note": "“And I also have granted him to Yahweh (הִשְׁאִלְתִּהוּ לַיַהְוֶה); all the days that he lives he is שָׁאוּל to Yahweh”: the son asked from Yahweh (v. 27) is handed back to him, hiphil and passive participle together."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αἰτέω",
+          "gloss": "ask for, request",
+          "evidence": [
+            {
+              "ref": "Act.13.21",
+              "note": "“Then they asked for (ᾐτήσαντο) a king, and God gave them Saul son of Kish” takes up 1Sa 8:10 and 12:13."
+            },
+            {
+              "ref": "Mat.7.7",
+              "note": "“Ask (αἰτεῖτε) and it shall be given to you.”"
+            },
+            {
+              "ref": "Jas.1.5",
+              "note": "“If any of you lacks wisdom, let him ask of God, who gives to all”, as Solomon asked (1Ki 3:5–12)."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "1SA 1:20 word 14",
+              "note": "ᾐτησάμην for שְׁאִלְתִּיו; so 1KI 3:5 word 10 and PSA 2:8 word 1."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπερωτάω",
+          "gloss": "inquire of, question",
+          "evidence": [
+            {
+              "ref": "Rom.10.20",
+              "note": "“I became manifest to those who did not ask for me (τοῖς ἐμὲ μὴ ἐπερωτῶσιν)” quotes Isa 65:1."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JOS 9:14 word 8",
+              "note": "ἐπηρώτησαν for שָׁאָלוּ, of asking the mouth of Yahweh; so JDG 1:1 word 5."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐρωτάω",
+          "gloss": "ask (a question)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 6:20 word 2",
+              "note": "ἐρωτήσῃ for יִשְׁאָלְךָ, the son's question; so GEN 43:27 word 1, of asking after peace."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "דָּרַשׁ",
+            "note": "seek, inquire: joined with it in the judge's inquiry and in consulting God or the dead.",
+            "evidence": [
+              {
+                "ref": "Deu.13.15"
+              },
+              {
+                "ref": "Isa.65.1"
+              },
+              {
+                "ref": "1Ch.10.13"
+              },
+              {
+                "ref": "Deu.18.11"
+              }
+            ]
+          },
+          {
+            "lemma": "בִּקֵּשׁ",
+            "note": "seek: what is asked of Yahweh is what is sought.",
+            "evidence": [
+              {
+                "ref": "Psa.27.4"
+              },
+              {
+                "ref": "Isa.65.1"
+              }
+            ]
+          },
+          {
+            "lemma": "הִתְפַּלֵּל",
+            "note": "pray: Hannah's asking is her prayer.",
+            "evidence": [
+              {
+                "ref": "1Sa.1.27"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "נָתַן",
+            "note": "give: the act that answers a request.",
+            "evidence": [
+              {
+                "ref": "1Ki.3.5"
+              },
+              {
+                "ref": "Psa.2.8"
+              },
+              {
+                "ref": "Jdg.5.25"
+              },
+              {
+                "ref": "Psa.21.5"
+              }
+            ]
+          },
+          {
+            "lemma": "עָנָה",
+            "note": "answer: what one who asks of God waits for.",
+            "evidence": [
+              {
+                "ref": "1Sa.28.6"
+              },
+              {
+                "ref": "1Sa.14.37"
+              }
+            ]
+          },
+          {
+            "lemma": "הִגִּיד",
+            "note": "tell: what answers a question.",
+            "evidence": [
+              {
+                "ref": "Deu.32.7"
+              },
+              {
+                "ref": "Gen.43.7"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שָׁאַל לוֹ לְשָׁלוֹם",
+            "gloss": "asked him of peace: greeted him, asked how he was",
+            "evidence": [
+              {
+                "ref": "Gen.43.27"
+              },
+              {
+                "ref": "Exo.18.7"
+              },
+              {
+                "ref": "1Sa.17.22"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁאַל בַּיַהְוֶה",
+            "gloss": "asked of Yahweh: sought his decision, by Urim or prophet",
+            "evidence": [
+              {
+                "ref": "Jdg.1.1"
+              },
+              {
+                "ref": "1Sa.23.2"
+              },
+              {
+                "ref": "1Sa.28.6"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁאַל אֶת־פִּי יַהְוֶה",
+            "gloss": "asked the mouth of Yahweh: asked what he would say",
+            "evidence": [
+              {
+                "ref": "Jos.9.14"
+              },
+              {
+                "ref": "Isa.30.2"
+              }
+            ]
+          },
+          {
+            "phrase": "שֹׁאֵל אוֹב",
+            "gloss": "one who asks an אוֹב: who consults a medium, forbidden",
+            "evidence": [
+              {
+                "ref": "Deu.18.11"
+              },
+              {
+                "ref": "1Ch.10.13"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁאַל אֶת־נַפְשׁוֹ לָמוּת",
+            "gloss": "asked his soul to die: asked that he might die",
+            "evidence": [
+              {
+                "ref": "1Ki.19.4"
+              },
+              {
+                "ref": "Jon.4.8"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁאוֹל",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "the grave",
+      "bdb": [
+        "v.ag.ai"
+      ],
+      "cognate_ids": [
+        "arc-sheyol"
+      ],
+      "summary": "Sixty-five times, written שְׁאוֹל or שְׁאֹל, never with the article, and usually feminine (Isa 5:14; 14:9). It is where the dead are: down in the earth, with dust, worm and darkness, and it takes righteous and wicked alike. Its tie to “ask” is not settled. For it: the letters are the root's, so that לִשְׁאוֹל is both “to ask” (Jos 15:18) and “to the grave” (Psa 16:10); Isa 7:11 sets the two side by side, “ask (שְׁאַל) a sign … make it deep, שְׁאָלָה”, where the one word can be read “ask it” or “to the grave”; and scripture's own picture of the grave is of what always asks for more, never satisfied and never saying “enough” (Pro 27:20; 30:15–16; Hab 2:5; Isa 5:14). Against it: no verse explains the name from the verb; the passages on its hunger use no word of the root; a “place of inquiry” has no support, since asking of the dead is forbidden and the dead know nothing (Deu 18:11; Ecc 9:5, 10); and none of the languages that share the verb has the noun, the Aramaic and Syriac שְׁיוֹל being the Hebrew word itself, spelled with yod, which SEDRA files under a root of its own. The support count is negative for that reason: the root's cognates all mean “ask”.",
+      "senses": [
+        {
+          "id": "sheol-grave",
+          "gloss": "the grave, where the dead are",
+          "definition": "The place of the dead, down in the ground: every man goes down to it at death, the righteous in sorrow or in peace and the wicked in blood, and he does not come up again of himself. It is described by what a grave holds: dust, the worm, darkness, silence, the bones and the weapons of the slain.",
+          "kin": [
+            "peshitta-sheol"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.37.35",
+              "role": "defining",
+              "note": "Jacob, believing Joseph torn by a beast: “I will go down to my son mourning, שְׁאֹלָה.” The righteous expect to go there, and to be where their dead are."
+            },
+            {
+              "ref": "Gen.42.38",
+              "note": "“You would bring down my grey hair in sorrow to the grave”; so Gen 44:29, 31."
+            },
+            {
+              "ref": "1Ki.2.6",
+              "role": "defining",
+              "note": "David of Joab: “do not let his grey hair go down to the grave in peace”; of Shimei (v. 9), “bring his grey hair down with blood to the grave”. The wicked go to the same place; the difference is only how."
+            },
+            {
+              "ref": "Num.16.30",
+              "role": "defining",
+              "note": "“If the ground opens its mouth and swallows them … and they go down alive to the grave”; v. 33, “they went down alive to the grave, and the earth covered over them, and they perished from the midst of the assembly”. The grave is in the earth, and to be in it is to perish."
+            },
+            {
+              "ref": "Job.17.13",
+              "to": "Job.17.16",
+              "role": "defining",
+              "note": "“If I wait for the grave as my house, spread my bed in the darkness, call to corruption, You are my father, to the worm, My mother and my sister … they go down to the bars of the grave, when together there is rest in the dust.”"
+            },
+            {
+              "ref": "Ecc.9.10",
+              "role": "defining",
+              "note": "“There is no work or reckoning or knowledge or wisdom in the grave, where you are going”: said to every reader."
+            },
+            {
+              "ref": "Psa.89.49",
+              "role": "defining",
+              "note": "“What man lives and will not see death, will deliver his soul from the hand of the grave?”"
+            },
+            {
+              "ref": "Psa.6.6",
+              "role": "defining",
+              "note": "“For in death there is no remembrance of you; in the grave who will give you thanks?”"
+            },
+            {
+              "ref": "Isa.38.18",
+              "role": "defining",
+              "note": "Hezekiah: “the grave does not thank you, death does not praise you; those who go down to the pit do not hope for your truth”; v. 19, “the living, the living, he thanks you”."
+            },
+            {
+              "ref": "Job.7.9",
+              "note": "“As a cloud is spent and goes, so he who goes down to the grave does not come up.”"
+            },
+            {
+              "ref": "Job.14.13",
+              "note": "Job, a righteous man, asks to be there: “O that you would hide me in the grave, keep me secret until your anger turns, set me a limit and remember me.”"
+            },
+            {
+              "ref": "Job.21.13",
+              "note": "The wicked “spend their days in good, and in a moment go down to the grave”."
+            },
+            {
+              "ref": "Psa.49.15",
+              "note": "“Like sheep they are set for the grave; death shepherds them.”"
+            },
+            {
+              "ref": "Psa.31.18",
+              "note": "“Let the wicked be ashamed, let them be silent to the grave.”"
+            },
+            {
+              "ref": "Psa.88.4",
+              "note": "“My life has drawn near to the grave”; the psalm goes on (v. 6) “like the slain who lie in the tomb (קֶבֶר), whom you remember no more”."
+            },
+            {
+              "ref": "Psa.141.7",
+              "note": "“Our bones are scattered at the mouth of the grave.”"
+            },
+            {
+              "ref": "Isa.14.9",
+              "to": "Isa.14.11",
+              "note": "The taunt over the king of Babylon: the grave is stirred to meet him; “your pomp is brought down to the grave … the maggot is spread under you and the worm covers you”. A taunt song, in which the dead kings speak as the trees do in v. 8."
+            },
+            {
+              "ref": "Isa.14.15",
+              "note": "“Yet you shall be brought down to the grave, to the sides of the pit.”"
+            },
+            {
+              "ref": "Ezk.32.27",
+              "note": "The fallen mighty “went down to the grave with their weapons of war, and their swords were laid under their heads”: a burial."
+            },
+            {
+              "ref": "Ezk.31.15",
+              "to": "Ezk.31.17",
+              "note": "Assyria, the felled cedar, brought down “to the grave with those who go down to the pit”."
+            },
+            {
+              "ref": "Psa.9.18",
+              "note": "“The wicked shall return to the grave, all nations that forget God.”"
+            },
+            {
+              "ref": "Psa.55.16",
+              "note": "“Let them go down alive to the grave”, as Korah's company did."
+            },
+            {
+              "ref": "Job.24.19",
+              "note": "“Drought and heat snatch away snow waters; the grave, those who have sinned.”"
+            },
+            {
+              "ref": "Pro.5.5",
+              "note": "Of the strange woman: “her feet go down to death; her steps take hold of the grave”; so Pro 7:27 and 9:18."
+            },
+            {
+              "ref": "Pro.1.12",
+              "note": "Sinners: “let us swallow them alive like the grave, and whole, like those who go down to the pit”."
+            }
+          ]
+        },
+        {
+          "id": "sheol-brought-up",
+          "gloss": "the grave as what Yahweh delivers from",
+          "definition": "Yahweh brings down to the grave and brings up from it. Men at the point of death say they were in its cords or its belly and that he brought them up, kept alive; and of the dead it is promised that he will redeem them from its hand.",
+          "evidence": [
+            {
+              "ref": "1Sa.2.6",
+              "role": "defining",
+              "note": "“Yahweh kills and makes alive; he brings down to the grave and brings up (מוֹרִיד שְׁאוֹל וַיָּעַל)”: bringing up from the grave is making alive."
+            },
+            {
+              "ref": "Psa.16.10",
+              "role": "defining",
+              "note": "“You will not leave my soul to the grave; you will not give your faithful one to see the pit.” Peter: David “spoke of the resurrection of the Christ” (Act 2:31)."
+            },
+            {
+              "ref": "Act.2.27",
+              "to": "Act.2.31",
+              "role": "defining",
+              "note": "The psalm quoted (εἰς ᾅδου, Peshitta בַּשיֻול) and expounded: David died and was buried, and his tomb is with us; the Christ “was not left in the grave, nor did his flesh see corruption”. He was in the grave, and was raised out of it."
+            },
+            {
+              "ref": "Hos.13.14",
+              "role": "defining",
+              "note": "“From the hand of the grave I will ransom them; from death I will redeem them. Where are your plagues, O death? Where is your destruction, O grave?”"
+            },
+            {
+              "ref": "1Co.15.55",
+              "note": "Paul quotes it of the day when the dead are raised incorruptible: “Where, O death, is your sting? Where, O grave (ᾅδη in the received text, Peshitta שיֻול), is your victory?”"
+            },
+            {
+              "ref": "Psa.49.16",
+              "note": "“But God will redeem my soul from the hand of the grave, for he will take me.”"
+            },
+            {
+              "ref": "Psa.30.4",
+              "role": "defining",
+              "note": "“Yahweh, you brought up my soul from the grave; you kept me alive from going down to the pit”: said by a living man healed of sickness (v. 3), so that to be near death is to be at the grave."
+            },
+            {
+              "ref": "Psa.86.13",
+              "note": "“You have delivered my soul from the lowest grave.”"
+            },
+            {
+              "ref": "Psa.18.6",
+              "note": "“The cords of the grave surrounded me; the snares of death confronted me”; so 2Sa 22:6 and Psa 116:3."
+            },
+            {
+              "ref": "Jon.2.3",
+              "note": "Jonah in the fish: “from the belly of the grave I cried; you heard my voice.”"
+            },
+            {
+              "ref": "Isa.38.10",
+              "note": "Hezekiah, sick to death: “in the quiet of my days I shall go to the gates of the grave.”"
+            },
+            {
+              "ref": "Pro.23.14",
+              "note": "“You shall strike him with the rod and deliver his soul from the grave.”"
+            },
+            {
+              "ref": "Pro.15.24",
+              "note": "“The path of life is upward for the wise, to turn from the grave below.”"
+            }
+          ]
+        },
+        {
+          "id": "sheol-depth",
+          "gloss": "the grave as the lowest depth",
+          "definition": "The deepest place a man can name, set against heaven as the highest: nothing in it is hidden from Yahweh or out of his reach.",
+          "evidence": [
+            {
+              "ref": "Amo.9.2",
+              "role": "defining",
+              "note": "“If they dig into the grave, from there my hand shall take them; if they go up to the heavens, from there I will bring them down.”"
+            },
+            {
+              "ref": "Psa.139.8",
+              "role": "defining",
+              "note": "“If I go up to the heavens, you are there; if I make my bed in the grave, behold, you.”"
+            },
+            {
+              "ref": "Job.11.8",
+              "note": "“Heights of the heavens, what can you do? Deeper than the grave, what can you know?”"
+            },
+            {
+              "ref": "Deu.32.22",
+              "note": "“A fire is kindled in my anger and burns to the lowest grave (עַד־שְׁאוֹל תַּחְתִּית), and eats up the earth and its produce”: the fire of his anger reaches as deep as the earth goes."
+            },
+            {
+              "ref": "Isa.7.11",
+              "note": "“Make it deep, שְׁאָלָה, or make it high above”: the word here is pointed so as to read “ask it” or “to the grave”, beside שְׁאַל “ask” in the same verse."
+            },
+            {
+              "ref": "Isa.57.9",
+              "note": "“You sent your envoys far off, and went down low, as far as the grave.”"
+            },
+            {
+              "ref": "Pro.15.11",
+              "note": "“The grave and Abaddon are before Yahweh; how much more the hearts of the sons of man.”"
+            },
+            {
+              "ref": "Job.26.6",
+              "note": "“The grave is naked before him, and Abaddon has no covering.”"
+            },
+            {
+              "ref": "Mat.11.23",
+              "note": "“You, Capernaum, exalted to heaven, shall be brought down to the grave (ἕως ᾅδου, Peshitta לַשיֻול)”: the figure of Isa 14:13–15."
+            }
+          ]
+        },
+        {
+          "id": "sheol-insatiable",
+          "gloss": "the grave as what is never satisfied",
+          "definition": "A figure for what takes without end and gives nothing back: the grave always has room for more, and does not let go.",
+          "evidence": [
+            {
+              "ref": "Pro.30.16",
+              "role": "defining",
+              "note": "After “the leech has two daughters, Give, give” (v. 15): four things that never say “enough”, the first of them the grave."
+            },
+            {
+              "ref": "Pro.27.20",
+              "role": "defining",
+              "note": "“The grave and Abaddon are not satisfied, and the eyes of man are not satisfied.”"
+            },
+            {
+              "ref": "Hab.2.5",
+              "note": "The proud man “has widened his soul like the grave; he is like death and is not satisfied”."
+            },
+            {
+              "ref": "Isa.5.14",
+              "note": "“Therefore the grave has widened her soul and opened her mouth without limit, and her splendour and her multitude go down.”"
+            },
+            {
+              "ref": "Sng.8.6",
+              "note": "“Love is strong as death; jealousy is hard as the grave.”"
+            },
+            {
+              "ref": "Isa.28.15",
+              "note": "The scoffers: “we have cut a covenant with death, and with the grave we have made a vision”; v. 18, it shall not stand."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ᾅδης",
+          "gloss": "the grave",
+          "evidence": [
+            {
+              "ref": "Act.2.27",
+              "note": "Quotes Psa 16:10: “you will not leave my soul to the grave (εἰς ᾅδου)”."
+            },
+            {
+              "ref": "Act.2.31",
+              "note": "Peter's exposition: the Christ was not left in the grave."
+            },
+            {
+              "ref": "1Co.15.55",
+              "note": "Quotes Hos 13:14, with ᾅδη in the received text."
+            },
+            {
+              "ref": "Mat.16.18",
+              "note": "“The gates of the grave (πύλαι ᾅδου) shall not prevail against it”: the gates of Isa 38:10."
+            },
+            {
+              "ref": "Rev.1.18",
+              "note": "“I was dead, and behold, I am alive for the ages of the ages, and I have the keys of death and of the grave.”"
+            },
+            {
+              "ref": "Rev.20.13",
+              "to": "Rev.20.14",
+              "note": "“Death and the grave gave up the dead who were in them … and death and the grave were cast into the lake of fire.”"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 16:10 word 5",
+              "note": "ᾅδην for שְׁאוֹל; so HOS 13:14 words 2 and 11, and ECC 9:10 word 14."
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. ᾅδης",
+              "note": "“In LXX chiefly for שְׁאוֹל.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָוֶת",
+            "note": "death: the constant pair; to be in the grave is to be dead.",
+            "evidence": [
+              {
+                "ref": "Psa.6.6"
+              },
+              {
+                "ref": "Hos.13.14"
+              },
+              {
+                "ref": "Isa.28.15"
+              },
+              {
+                "ref": "Sng.8.6"
+              },
+              {
+                "ref": "Pro.5.5"
+              }
+            ]
+          },
+          {
+            "lemma": "בּוֹר",
+            "note": "the pit: those who go down to the pit are those who go down to the grave.",
+            "evidence": [
+              {
+                "ref": "Psa.30.4"
+              },
+              {
+                "ref": "Isa.14.15"
+              },
+              {
+                "ref": "Isa.38.18"
+              },
+              {
+                "ref": "Pro.1.12"
+              }
+            ]
+          },
+          {
+            "lemma": "שַׁחַת",
+            "note": "the pit, corruption.",
+            "evidence": [
+              {
+                "ref": "Psa.16.10"
+              },
+              {
+                "ref": "Job.17.13",
+                "to": "Job.17.14"
+              }
+            ]
+          },
+          {
+            "lemma": "אֲבַדּוֹן",
+            "note": "Abaddon, the place of perishing.",
+            "evidence": [
+              {
+                "ref": "Pro.15.11"
+              },
+              {
+                "ref": "Pro.27.20"
+              },
+              {
+                "ref": "Job.26.6"
+              }
+            ]
+          },
+          {
+            "lemma": "עָפָר",
+            "note": "dust: the rest of the grave is rest in the dust.",
+            "evidence": [
+              {
+                "ref": "Job.17.16"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׁמַיִם",
+            "note": "the heavens: the highest against the lowest.",
+            "evidence": [
+              {
+                "ref": "Amo.9.2"
+              },
+              {
+                "ref": "Psa.139.8"
+              },
+              {
+                "ref": "Job.11.8"
+              }
+            ]
+          },
+          {
+            "lemma": "חַיִּים",
+            "note": "life, the living: the grave does not thank God, the living does.",
+            "evidence": [
+              {
+                "ref": "Isa.38.18",
+                "to": "Isa.38.19"
+              },
+              {
+                "ref": "Pro.15.24"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יָרַד שְׁאֹלָה",
+            "gloss": "went down to the grave: died",
+            "evidence": [
+              {
+                "ref": "Gen.37.35"
+              },
+              {
+                "ref": "Num.16.33"
+              },
+              {
+                "ref": "Job.7.9"
+              }
+            ]
+          },
+          {
+            "phrase": "מִיַּד שְׁאוֹל",
+            "gloss": "from the hand of the grave: out of its power",
+            "evidence": [
+              {
+                "ref": "Psa.49.16"
+              },
+              {
+                "ref": "Psa.89.49"
+              },
+              {
+                "ref": "Hos.13.14"
+              }
+            ]
+          },
+          {
+            "phrase": "חֶבְלֵי שְׁאוֹל",
+            "gloss": "the cords of the grave",
+            "evidence": [
+              {
+                "ref": "2Sa.22.6"
+              },
+              {
+                "ref": "Psa.18.6"
+              }
+            ]
+          },
+          {
+            "phrase": "שַׁעֲרֵי שְׁאוֹל",
+            "gloss": "the gates of the grave",
+            "evidence": [
+              {
+                "ref": "Isa.38.10"
+              },
+              {
+                "ref": "Mat.16.18"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׁאוֹל תַּחְתִּית",
+            "gloss": "the lowest grave: the depth of it",
+            "evidence": [
+              {
+                "ref": "Deu.32.22"
+              },
+              {
+                "ref": "Psa.86.13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁאֵלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "request, thing asked for",
+      "bdb": [
+        "v.ag.af"
+      ],
+      "cognate_ids": [
+        "ar-sul",
+        "arc-sheelta"
+      ],
+      "summary": "Fourteen times: the asking, and more often the thing asked for, which is “given”. Often with its own verb (“ask a request”), and in Esther paired with בַּקָּשָׁה. Once contracted to שֵׁלָה (1Sa 1:17).",
+      "senses": [
+        {
+          "id": "request",
+          "gloss": "request, petition; the thing asked for",
+          "definition": "What one asks of another: the petition put to a king or to God, and the thing itself when it is granted.",
+          "evidence": [
+            {
+              "ref": "1Sa.1.27",
+              "role": "defining",
+              "note": "“Yahweh gave me my request (שְׁאֵלָתִי) which I asked from him”: the request given is the boy."
+            },
+            {
+              "ref": "1Sa.1.17",
+              "note": "Eli: “May the God of Israel give your request (שֵׁלָתֵךְ) which you asked from him.”"
+            },
+            {
+              "ref": "1Sa.2.20",
+              "note": "“In place of the request (הַשְּׁאֵלָה) which was asked for Yahweh.”"
+            },
+            {
+              "ref": "Est.5.6",
+              "role": "defining",
+              "note": "“What is your request (שְּׁאֵלָתֵךְ)? It shall be given you. And what is your petition (בַּקָּשָׁתֵךְ)? To half the kingdom, it shall be done.”"
+            },
+            {
+              "ref": "Est.7.3",
+              "note": "“Let my soul be given me at my request, and my people at my petition.”"
+            },
+            {
+              "ref": "Jdg.8.24",
+              "note": "“Let me ask a request of you.”"
+            },
+            {
+              "ref": "1Ki.2.16",
+              "note": "Adonijah: “One request I ask of you; do not turn away my face.”"
+            },
+            {
+              "ref": "Job.6.8",
+              "note": "“O that my request would come, and that God would give my hope.”"
+            },
+            {
+              "ref": "Psa.106.15",
+              "role": "defining",
+              "note": "“He gave them their request (שֶׁאֱלָתָם), and sent leanness into their soul”: a request granted in anger."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αἴτημα",
+          "gloss": "request, thing asked",
+          "evidence": [
+            {
+              "ref": "1Jn.5.15",
+              "note": "“We know that we have the requests (τὰ αἰτήματα) which we have asked of him”; the Peshitta, שֵאלָתַֿנ דּשֵאלנ."
+            },
+            {
+              "ref": "Php.4.6",
+              "note": "“Let your requests be made known to God.”"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "1SA 1:17 word 10",
+              "note": "αἴτημα for שֵׁלָתֵךְ; so JDG 8:24 word 6 and EST 7:3 word 17."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בַּקָּשָׁה",
+            "note": "petition, the thing sought: the pair of Esther's banquets.",
+            "evidence": [
+              {
+                "ref": "Est.5.6",
+                "to": "Est.5.8"
+              },
+              {
+                "ref": "Est.7.2",
+                "to": "Est.7.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שָׁאַל שְׁאֵלָה",
+            "gloss": "asked a request",
+            "evidence": [
+              {
+                "ref": "Jdg.8.24"
+              },
+              {
+                "ref": "1Ki.2.16"
+              },
+              {
+                "ref": "1Ki.2.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִשְׁאָלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "request, desire",
+      "bdb": [
+        "v.ag.ag"
+      ],
+      "cognate_ids": [
+        "ar-masala"
+      ],
+      "summary": "Twice, in the plural, of what the heart asks of Yahweh.",
+      "senses": [
+        {
+          "id": "petition",
+          "gloss": "request, what the heart asks",
+          "definition": "The things a man asks of Yahweh, which Yahweh fulfils or gives.",
+          "kin": [
+            "ask-request"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.37.4",
+              "role": "defining",
+              "note": "“Delight yourself in Yahweh, and he will give you the requests of your heart (מִשְׁאֲלֹת לִבֶּךָ).”"
+            },
+            {
+              "ref": "Psa.20.6",
+              "role": "defining",
+              "note": "“May Yahweh fulfil all your requests (כָּל־מִשְׁאֲלוֹתֶיךָ).”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁאֵל",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "ask; require",
+      "bdb": [
+        "xv.aa.aa"
+      ],
+      "cognate_ids": [
+        "akk-shalu",
+        "uga-shal",
+        "phn-shal",
+        "sab-sal",
+        "ar-saala",
+        "arc-sheel"
+      ],
+      "summary": "Biblical Aramaic, six times in Daniel and Ezra, with the Hebrew's senses of asking a question and asking for a thing.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "ask (a question); ask for, require",
+          "senses": [
+            {
+              "id": "aramaic-ask-question",
+              "gloss": "ask (a question)",
+              "definition": "To question someone, the question following.",
+              "kin": [
+                "ask-question"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezr.5.9",
+                  "role": "defining",
+                  "note": "“Then we asked (שְׁאֵלְנָא) those elders; thus we said to them, Who gave you a decree to build this house?”"
+                },
+                {
+                  "ref": "Ezr.5.10",
+                  "note": "“We asked them their names also, to let you know.”"
+                }
+              ]
+            },
+            {
+              "id": "aramaic-ask-require",
+              "gloss": "ask for, require",
+              "definition": "To ask a thing of someone who is bound to supply it: a king of his wise men, Ezra of the king's treasurers.",
+              "kin": [
+                "ask-require",
+                "ask-request"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.2.11",
+                  "role": "defining",
+                  "note": "“The thing that the king asks (שָׁאֵל) is hard, and there is no other who can show it before the king except the gods.”"
+                },
+                {
+                  "ref": "Dan.2.10",
+                  "note": "“No great and mighty king has asked a thing like this of any magician.”"
+                },
+                {
+                  "ref": "Dan.2.27",
+                  "note": "“The mystery which the king has asked.”"
+                },
+                {
+                  "ref": "Ezr.7.21",
+                  "role": "defining",
+                  "note": "Artaxerxes to the treasurers: “all that Ezra the priest shall ask of you (יִשְׁאֲלֶנְכוֹן), let it be done with diligence.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁאֵלָא",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "matter, decision",
+      "bdb": [
+        "xv.aa.ab"
+      ],
+      "cognate_ids": [
+        "arc-sheelta"
+      ],
+      "summary": "Once, in the emphatic שְׁאֵלְתָא, parallel to פִּתְגָמָא “the sentence”. It is the Aramaic form of שְׁאֵלָה; how “request” or “question” comes to mean a matter decided rests on this one verse: the matter that was in question, or what the holy ones require.",
+      "senses": [
+        {
+          "id": "aramaic-matter",
+          "gloss": "the matter, the decision",
+          "definition": "The thing in question, as settled by those who have authority over it.",
+          "evidence": [
+            {
+              "ref": "Dan.4.14",
+              "role": "defining",
+              "note": "“By the decree of the watchers is the sentence (פִּתְגָמָא), and by the word of the holy ones the matter (שְׁאֵלְתָא), to the end that the living may know that the Most High rules in the kingdom of men.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שאֵל",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "ask; question; greet; lend; excuse oneself",
+      "cognate_ids": [
+        "akk-shalu",
+        "uga-shal",
+        "phn-shal",
+        "sab-sal",
+        "ar-saala",
+        "arc-sheel"
+      ],
+      "summary": "The Peshitta's ܫܐܠ, some 240 times in the New Testament. It keeps every use of the Hebrew: asking God and receiving, questioning, the greeting “ask of the peace of”, and in the causative, lending.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "ask for; ask after the peace of",
+          "senses": [
+            {
+              "id": "peshitta-ask",
+              "gloss": "ask for, request",
+              "definition": "To ask a thing of God or of a man, so as to be given it.",
+              "kin": [
+                "ask-request"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.7.7",
+                  "role": "defining",
+                  "note": "שַאלו ונֵתִֿיהֵבֿ לכֻֿונ: “ask, and it shall be given to you.”"
+                },
+                {
+                  "ref": "Jhn.16.24",
+                  "note": "“Until now you have asked nothing in my name; ask, and you shall receive.”"
+                },
+                {
+                  "ref": "Jas.1.5",
+                  "note": "“If any of you lacks wisdom, let him ask of God.”"
+                },
+                {
+                  "ref": "Act.13.21",
+                  "note": "שֵאלו להֻונ מַלכָּא … לשָאוָל: “they asked for themselves a king, and God gave them Saul”: verb and name together, as in 1Sa 12:13."
+                }
+              ]
+            },
+            {
+              "id": "peshitta-greet",
+              "gloss": "ask of the peace of, greet",
+              "definition": "With בַּשלָמָא: to greet, the Hebrew שָׁאַל לְשָׁלוֹם.",
+              "kin": [
+                "ask-peace"
+              ],
+              "evidence": [
+                {
+                  "ref": "Rom.16.3",
+                  "role": "defining",
+                  "note": "שַאלו בַּשלָמָא דַּפּרִיסקֵלַא ודַֿאקֵלַס: “ask of the peace of Priscilla and Aquila”, where the Greek has ἀσπάσασθε."
+                },
+                {
+                  "ref": "1Co.16.19",
+                  "note": "“The ecclesias of Asia ask of your peace.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "question",
+          "senses": [
+            {
+              "id": "peshitta-question",
+              "gloss": "question, inquire of",
+              "definition": "To put questions to someone.",
+              "kin": [
+                "ask-question"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.2.4",
+                  "role": "defining",
+                  "note": "Herod gathered the chief priests and scribes וַמשַאֵל: “and was asking them where the Messiah should be born.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "lend",
+          "senses": [
+            {
+              "id": "peshitta-lend",
+              "gloss": "lend",
+              "definition": "To let another have the use of a thing he asks for.",
+              "kin": [
+                "grant-lend",
+                "ask-borrow"
+              ],
+              "evidence": [
+                {
+                  "ref": "Luk.11.5",
+                  "role": "defining",
+                  "note": "אַשֵאלַיני תּלָתֿ גּרִיצָנ: “lend me three loaves.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "excuse oneself, refuse",
+          "senses": [
+            {
+              "id": "peshitta-excuse",
+              "gloss": "ask to be excused, refuse",
+              "definition": "To ask off for oneself, and so to decline: compare the Hebrew niphal, “ask leave”.",
+              "kin": [
+                "ask-leave"
+              ],
+              "evidence": [
+                {
+                  "ref": "Luk.14.18",
+                  "role": "defining",
+                  "note": "“They all began as one למֵשתָּאלֻו, to excuse themselves … allow me, for I am excused (דּמֵשתֵּאל).”"
+                },
+                {
+                  "ref": "Heb.12.25",
+                  "note": "“See that you do not refuse him who speaks.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵאלתָֿא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "request",
+      "cognate_ids": [
+        "ar-sul",
+        "arc-sheelta"
+      ],
+      "summary": "The Peshitta's ܫܐܠܬܐ, three times, the Hebrew שְׁאֵלָה.",
+      "senses": [
+        {
+          "id": "peshitta-request",
+          "gloss": "request, thing asked for",
+          "definition": "What is asked, of God or of a ruler.",
+          "kin": [
+            "request"
+          ],
+          "evidence": [
+            {
+              "ref": "1Jn.5.15",
+              "role": "defining",
+              "note": "“We are confident that we have already received our requests which we asked of him (שֵאלָתַֿנ דּשֵאלנ מֵנֵה).”"
+            },
+            {
+              "ref": "Php.4.6",
+              "note": "“Let your requests be made known before God.”"
+            },
+            {
+              "ref": "Luk.23.24",
+              "note": "“Pilate commanded that their request be done.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שיֻול",
+      "lang": "syc",
+      "root": "שיול",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "the grave",
+      "cognate_ids": [
+        "arc-sheyol"
+      ],
+      "summary": "The Peshitta's ܫܝܘܠ, fifteen times in the New Testament: the Hebrew שְׁאוֹל, written with yod for the alef and kept apart from ܫܐܠ “ask”. It stands where the Greek has ᾅδης, and also where the Greek has other words: “the pains of death” (Act 2:24), “the abyss” (Rom 10:7), “in prison” (1Pe 3:19).",
+      "senses": [
+        {
+          "id": "peshitta-sheol",
+          "gloss": "the grave, where the dead are",
+          "definition": "The place of the dead, from which the Messiah was raised and which must give up its dead.",
+          "kin": [
+            "sheol-grave"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.2.27",
+              "role": "defining",
+              "note": "Psa 16:10 in the Peshitta: “you do not leave my soul in the grave (בַּשיֻול)”, for the Hebrew לִשְׁאוֹל."
+            },
+            {
+              "ref": "Act.2.31",
+              "role": "defining",
+              "note": "“He spoke of the resurrection of the Messiah, that he was not left in the grave, nor did his body see corruption.”"
+            },
+            {
+              "ref": "Act.2.24",
+              "note": "“God raised him and loosed the cords of the grave (חֵבֿלֵיה דַּשיֻול), because it was not possible that he should be held in the grave”: the חֶבְלֵי שְׁאוֹל of Psa 18:6."
+            },
+            {
+              "ref": "1Co.15.55",
+              "note": "“Where is your sting, O death? Where is your victory, O grave (שיֻול)?”: Hos 13:14."
+            },
+            {
+              "ref": "Mat.16.18",
+              "note": "“The gates of the grave shall not prevail against it.”"
+            },
+            {
+              "ref": "Rev.1.18",
+              "note": "“I have the key of death and of the grave.”"
+            },
+            {
+              "ref": "Rev.20.13",
+              "to": "Rev.20.14",
+              "note": "“Death and the grave gave up the dead that were with them … and death and the grave were cast into the lake of fire.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-shalu",
+      "lang": "akk",
+      "form": "šâlu",
+      "translit": "šâlu",
+      "gloss": "ask, question, interrogate; consult; ask oneself, ponder",
+      "relation": "cognate",
+      "note": "The common Akkadian verb for asking, in every period (uncontracted šaʾālu, as in the forms lišʾal, assaʾal). Its range is the Hebrew's first and fourth senses: putting a question, and consulting.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000018490, šâlu [ask] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000018490.html",
+          "note": "Meanings in the glossaries: ask, ask around, consult, enquiry, interrogate, ponder, question; forms lišʾal, assaʾal, šaʾāl; 3,434 instances."
+        }
+      ]
+    },
+    {
+      "id": "akk-shailu",
+      "lang": "akk",
+      "form": "šāʾilu",
+      "translit": "šāʾilu",
+      "gloss": "asker; dream interpreter, diviner",
+      "relation": "cognate",
+      "note": "The participle “asker” as the name of a diviner, one who asks the gods for others (feminine šāʾiltu): the same use of the root as Hebrew שָׁאַל בְּ “inquire of”, and the same word as the forbidden שֹׁאֵל אוֹב of Deu 18:11.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000018200, šāʾilu [asker] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000018200.html",
+          "note": "Meanings: asker, dream interpreter; also armep x000058230, šāʾilu [dream interpreter] N, “seer”."
+        }
+      ]
+    },
+    {
+      "id": "uga-shal",
+      "lang": "uga",
+      "form": "𐎌𐎀𐎍",
+      "translit": "šảl",
+      "gloss": "ask",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Ugaritic keeps š apart from ṯ, and writes this root with š. The reflexive yštảl “ask for oneself” and the causative yššỉl “let ask” answer to the Hebrew niphal and hiphil.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "§54.26, construct infinitive: (b)šal; G /š-ʾ-l/ “to ask”",
+          "note": "OCR read; the PDF was not rendered."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§38.41: išal, KTU 2.34:28, “I shall ask”",
+          "note": "Also §54.32, Gt yštal, /š-ʾ-l/ “to ask (for oneself)”, and §54.44, Š yššil, “to let ask” (OCR read)."
+        }
+      ]
+    },
+    {
+      "id": "phn-shal",
+      "lang": "phn",
+      "form": "𐤔𐤀𐤋",
+      "translit": "šʾl",
+      "gloss": "ask, request (of a god)",
+      "relation": "cognate",
+      "note": "In Phoenician and Punic dedications, of asking a god for blessing: “of the gods do I request: Bless my four sons” (KAI 48); “his sons had made a request of Astarte, and she heard the sound of their word”. The sense is the Hebrew's “ask of Yahweh”, with the answer a gift.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 452, Š-ʾ-L",
+          "note": "“[Heb. š-ʾ-l] v. qal ASK, REQUEST. KAI 48.2/4 … IFPCO no. 16.3/5 … Dreder 6.10/11 (NPu) ‘The enemy asked for mercy for himself.’” Page from the text extraction's page breaks; the PDF was not rendered."
+        }
+      ]
+    },
+    {
+      "id": "sab-sal",
+      "lang": "sem",
+      "form": "𐩪𐩱𐩡",
+      "translit": "s¹ʾl",
+      "gloss": "ask for, lay claim to; question, call to account; ask a response from an oracle (Sabaean)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Sabaean writes the root with s¹, the sound that answers to Hebrew š, not with ṯ. Besides asking for and claiming property, a worshipper “asks” the god and the god commands “in his oracle” (ms¹ʾl): the consulting sense of the Hebrew, in another branch of the family.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 321–322, SʾL",
+          "note": "“(1) ASK FOR, LAY CLAIM TO a piece of property … (2) QUESTION s.o.'s right or title; CALL s.o. TO ACCOUNT … ASK, BEG a response from an oracle”; J 721/4, C 318/4, C 76/5–6, C 80/3 (OCR read)."
+        }
+      ]
+    },
+    {
+      "id": "ar-saala",
+      "lang": "ar",
+      "form": "سَأَلَ",
+      "translit": "saʾala",
+      "gloss": "ask, question, inquire of; ask for, demand, beg",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Arabic س answers to Hebrew שׁ where the older sound is š (ṯ would give ث; the Arabic root ثأل means “wart”). The verb has both of the Hebrew's main senses in one entry: asking about a thing, and asking for it.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1282, art. سأل",
+          "note": "“He asked him such a thing; or asked him, interrogated him, questioned him, or inquired of him, respecting such a thing … when سَأَلَ means the asking, or demanding, of property, it is trans. by itself or by means of مِنْ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-asala",
+      "lang": "ar",
+      "form": "أَسْأَلَ",
+      "translit": "ʾasʾala",
+      "gloss": "grant one his request (form IV)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The Arabic causative has the sense of the Hebrew hiphil: to make the asking succeed, to give what was asked.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1283, art. سأل, form 4",
+          "note": "“أَسْأَلَهُ سُؤْلَهُ … He accomplished for him his want.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-sul",
+      "lang": "ar",
+      "form": "سُؤْل",
+      "translit": "suʾl",
+      "gloss": "petition, request; a thing asked for",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "As שְׁאֵלָה, both the asking and the thing asked for, which is “granted”: “Thou hast been granted thy petition, O Moses” (Qur'an 20:36).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1283, art. سأل, سُؤْلٌ",
+          "note": "“[A petition; or a request; meaning] a thing that people ask or beg; or a thing that one has asked or begged.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-masala",
+      "lang": "ar",
+      "form": "مَسْأَلَة",
+      "translit": "masʾala",
+      "gloss": "asking; a petition, question",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "A noun of the root with prefixed m, as מִשְׁאָלָה is: the asking, and the thing asked.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1282, art. سأل (inf. n. مَسْأَلَةٌ); p. 1283, voce سُؤْلٌ",
+          "note": "Listed as an infinitive noun of سَأَلَ, and under سُؤْلٌ as a word for a petition, the thing asked."
+        }
+      ]
+    },
+    {
+      "id": "ar-sail",
+      "lang": "ar",
+      "form": "سَائِل",
+      "translit": "sāʾil",
+      "gloss": "asking; a beggar",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The participle “asker” as “beggar”, the sense of the Hebrew piel in Psa 109:10.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1283, art. سأل, سَائِلٌ",
+          "note": "“Asking; meaning interrogating, questioning, or inquiring; and demanding, or begging … [A beggar; i. e.] a poor man asking, or begging, a thing.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-sheel",
+      "lang": "arc",
+      "form": "שְׁאֵל",
+      "translit": "šəʾēl",
+      "gloss": "ask, inquire, beg; borrow; (causative) lend (Jewish Aramaic)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Aramaic writes ת where the older sound is ṯ, and writes this root with שׁ. The Targums use it for Hebrew שָׁאַל, as at Exo 22:13 of borrowing and Exo 12:36 of lending.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁאַל, שְׁאֵיל (ch.)",
+          "note": "“to ask, inquire, beg. Targ. II Kings III, 11 … to borrow. Targ. Ex. XXII, 13 … Af. to lend. Targ. O. Ex. XII, 36.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-sheelta",
+      "lang": "arc",
+      "form": "שְׁאֵלְתָּא",
+      "translit": "šəʾeltā",
+      "gloss": "request, prayer, desire; question, problem (Jewish Aramaic)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The Targum's word for Hebrew שְׁאֵלָה (Jdg 8:24; 1Ki 2:16; Est 5:6). Its second sense, “question, problem”, a matter to be decided, is the nearest witness to the שְׁאֵלְתָא of Dan 4:14.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁאֵלְתָּא, שְׁאֵילְתָּא",
+          "note": "“request, prayer, desire. Targ. Jud. VIII, 24. Targ. I Kings II, 16 … question, problem. Targ. Jer. XII, 1.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-sheyol",
+      "lang": "arc",
+      "form": "שְׁיוֹל",
+      "translit": "šəyōl",
+      "gloss": "nether world, grave (Jewish Aramaic)",
+      "relation": "possible",
+      "note": "The Targums' word where the Hebrew has שְׁאוֹל (Num 16:30; Deu 32:22; Psa 9:18), given as equal to the Hebrew word. It is spelled with yod, not alef, and the Peshitta's שיֻול is the same word; SEDRA files that under a root of its own (root 1851, lexeme 3180), apart from ܫܐܠ “ask” (root 1800). It is recorded as possible and not as a cognate because it looks like the Hebrew word taken over with the scriptures, and so is no independent witness to the word or to its root.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁיוֹל, שִׁיוֹלָא",
+          "note": "“= h. שְׁאוֹל, nether world, grave. Targ. Y. I Deut. XXXII, 22 … Targ. Y. Num. XVI, 30 … Targ. Ps. IX, 18.”"
+        },
+        {
+          "source": "sedra",
+          "locator": "lexeme 3180, Š;OL (root 1851), sheol, place of the dead; compare lexeme 3094, ŠAL (root 1800), ask, inquire, salute, lend, and lexeme 3095, ŠALTA, request, petition"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Jacob, a man to whom the promises were made, expected to “go down to the grave” to his son (Gen 37:35; 42:38). Job, whom Yahweh called upright, asked to be hidden there (Job 14:13) and called it his house, with darkness for a bed, corruption and the worm for kin, and “rest in the dust” (Job 17:13–16). David sent Joab and Shimei, men of blood, to the same place (1Ki 2:6, 9), and Korah's company went down to it when the ground swallowed them, “and they perished” (Num 16:30–33). The psalmist asks, “What man lives and will not see death, will deliver his soul from the hand of the grave?” (Psa 89:49), and the Preacher says to every reader, “the grave, where you are going” (Ecc 9:10), for “all go to one place; all are from the dust, and all return to the dust” (Ecc 3:20), as God said to Adam (Gen 3:19). From the verses: the grave is one place for all men, righteous and wicked, and it is in the earth; the soul goes there (Psa 89:49; 16:10), not to heaven and not to a place of torment; what separates the righteous from the wicked is not where they go at death but whether God brings them up.",
+      "evidence": [
+        {
+          "ref": "Gen.37.35"
+        },
+        {
+          "ref": "Gen.42.38"
+        },
+        {
+          "ref": "Job.14.13"
+        },
+        {
+          "ref": "Job.17.13",
+          "to": "Job.17.16"
+        },
+        {
+          "ref": "1Ki.2.6"
+        },
+        {
+          "ref": "1Ki.2.9"
+        },
+        {
+          "ref": "Num.16.30",
+          "to": "Num.16.33"
+        },
+        {
+          "ref": "Psa.89.49"
+        },
+        {
+          "ref": "Ecc.9.10"
+        },
+        {
+          "ref": "Ecc.3.20"
+        },
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Psa.16.10"
+        }
+      ]
+    },
+    {
+      "topic": "state-of-the-dead",
+      "statement": "“In death there is no remembrance of you; in the grave who will give you thanks?” (Psa 6:6). Hezekiah, spared from death, says the same: “the grave does not thank you, death does not praise you; those who go down to the pit do not hope for your truth. The living, the living, he thanks you, as I do this day” (Isa 38:18–19). “There is no work or reckoning or knowledge or wisdom in the grave” (Ecc 9:10), for “the dead do not know anything” (Ecc 9:5); “the dead do not praise Yah, nor any who go down into silence” (Psa 115:17); when a man's breath goes out “he returns to his ground; in that day his thoughts perish” (Psa 146:4). From the verses: the grave is a place of silence, without thought, memory, hope or praise. The dead are not alive elsewhere; if they were, the faithful among them would be praising God, and these men say they cannot.",
+      "evidence": [
+        {
+          "ref": "Psa.6.6"
+        },
+        {
+          "ref": "Isa.38.18",
+          "to": "Isa.38.19"
+        },
+        {
+          "ref": "Ecc.9.10"
+        },
+        {
+          "ref": "Ecc.9.5"
+        },
+        {
+          "ref": "Psa.115.17"
+        },
+        {
+          "ref": "Psa.146.4"
+        }
+      ]
+    },
+    {
+      "topic": "resurrection",
+      "statement": "Hannah sang, “Yahweh kills and makes alive; he brings down to the grave and brings up” (1Sa 2:6). Job, asking to be hidden in the grave, asked also for a set time and to be remembered: “If a man dies, shall he live? All the days of my service I will wait, until my change comes; you will call, and I will answer you” (Job 14:13–15). The sons of Korah: “God will redeem my soul from the hand of the grave, for he will take me” (Psa 49:16). David: “You will not leave my soul to the grave; you will not give your faithful one to see the pit” (Psa 16:10). Peter says that David, who “died and was buried, and his tomb is with us to this day”, spoke this of the resurrection of the Christ, “that he was not left in the grave, nor did his flesh see corruption; this Jesus God raised up” (Act 2:27–32); Paul, that David “saw corruption, but he whom God raised saw no corruption” (Act 13:35–37). Through Hosea Yahweh says, “From the hand of the grave I will ransom them … where is your destruction, O grave?” (Hos 13:14), and Paul sets the words at the day when “the dead shall be raised incorruptible” (1Co 15:52–55). The risen Jesus has “the keys of death and of the grave” (Rev 1:18); those in the tombs shall hear his voice and come out (Jhn 5:28–29); and at the end death and the grave give up their dead and are themselves done away (Rev 20:13–14). From the verses: the hope scripture sets against the grave is being brought up out of it. Jesus himself was in the grave, his soul with him, until God raised him the third day; and those who are his wait there, as Job said, until he calls.",
+      "evidence": [
+        {
+          "ref": "1Sa.2.6"
+        },
+        {
+          "ref": "Job.14.13",
+          "to": "Job.14.15"
+        },
+        {
+          "ref": "Psa.49.16"
+        },
+        {
+          "ref": "Psa.16.10"
+        },
+        {
+          "ref": "Act.2.27",
+          "to": "Act.2.32"
+        },
+        {
+          "ref": "Act.13.35",
+          "to": "Act.13.37"
+        },
+        {
+          "ref": "Hos.13.14"
+        },
+        {
+          "ref": "1Co.15.52",
+          "to": "1Co.15.55"
+        },
+        {
+          "ref": "Rev.1.18"
+        },
+        {
+          "ref": "Jhn.5.28",
+          "to": "Jhn.5.29"
+        },
+        {
+          "ref": "Rev.20.13",
+          "to": "Rev.20.14"
+        }
+      ]
+    },
+    {
+      "topic": "inquiring-of-the-dead",
+      "statement": "Israel was to ask of Yahweh: by the priest with the Urim (Num 27:21), and by the prophets, so that going to Egypt without asking his mouth was rebellion (Isa 30:1–2), and the league with Gibeon a snare because “the mouth of Yahweh they did not ask” (Jos 9:14). The law forbids the other kind of asking: “there shall not be found among you … one who asks an אוֹב, or a wizard, or one who seeks to the dead; for everyone who does these things is an abomination to Yahweh” (Deu 18:10–12; Lev 19:31). Isaiah gives the reason in a question: “should not a people seek to its God? On behalf of the living, to the dead? To the torah and to the testimony!” (Isa 8:19–20). Saul asked of Yahweh and was not answered, and went to the woman at En-dor (1Sa 28:6–7); and he died “for the word of Yahweh which he did not keep, and also for asking of the אוֹב, to seek, and he did not seek Yahweh” (1Ch 10:13–14). From the verses: the living are to ask the living God, through his word. The dead have nothing to tell, since there is no knowledge in the grave (Ecc 9:10), and to ask of them is to turn from him.",
+      "evidence": [
+        {
+          "ref": "Num.27.21"
+        },
+        {
+          "ref": "Isa.30.1",
+          "to": "Isa.30.2"
+        },
+        {
+          "ref": "Jos.9.14"
+        },
+        {
+          "ref": "Deu.18.10",
+          "to": "Deu.18.12"
+        },
+        {
+          "ref": "Lev.19.31"
+        },
+        {
+          "ref": "Isa.8.19",
+          "to": "Isa.8.20"
+        },
+        {
+          "ref": "1Sa.28.6",
+          "to": "1Sa.28.7"
+        },
+        {
+          "ref": "1Ch.10.13",
+          "to": "1Ch.10.14"
+        },
+        {
+          "ref": "Ecc.9.10"
+        }
+      ]
+    },
+    {
+      "topic": "prayer",
+      "statement": "God said to Solomon, “Ask what I shall give you”; Solomon asked for a hearing heart to judge the people, “and the thing was good in the eyes of the Lord (אֲדֹנָי), that Solomon had asked this thing”, and God gave it, and also what he had not asked (1Ki 3:5–13). Hannah asked a son from Yahweh, was given her request, and gave the son back to him (1Sa 1:20, 27–28). Israel in the wilderness asked food “for their soul”, testing God, and “he gave them their request, and sent leanness into their soul” (Psa 78:18; 106:15). Jesus says, “Ask, and it shall be given to you … how much more shall your Father who is in the heavens give good things to those who ask him” (Mat 7:7–11), and “whatever you ask the Father in my name, he will give you” (Jhn 16:23–24). James: “let him ask of God, who gives to all freely … but let him ask in faith”; “you ask and do not receive, because you ask wrongly, to spend it on your pleasures” (Jas 1:5–6; 4:3). John: “if we ask anything according to his will, he hears us” (1Jn 5:14–15). From the verses: God invites asking and answers it by giving; what he looks at is what is asked and why. A request can be granted in anger, and the request that pleases him is for what serves his purpose.",
+      "evidence": [
+        {
+          "ref": "1Ki.3.5",
+          "to": "1Ki.3.13"
+        },
+        {
+          "ref": "1Sa.1.20"
+        },
+        {
+          "ref": "1Sa.1.27",
+          "to": "1Sa.1.28"
+        },
+        {
+          "ref": "Psa.78.18"
+        },
+        {
+          "ref": "Psa.106.15"
+        },
+        {
+          "ref": "Mat.7.7",
+          "to": "Mat.7.11"
+        },
+        {
+          "ref": "Jhn.16.23",
+          "to": "Jhn.16.24"
+        },
+        {
+          "ref": "Jas.1.5",
+          "to": "Jas.1.6"
+        },
+        {
+          "ref": "Jas.4.3"
+        },
+        {
+          "ref": "1Jn.5.14",
+          "to": "1Jn.5.15"
+        }
+      ]
+    },
+    {
+      "topic": "the-king-they-asked-for",
+      "statement": "The elders said to Samuel, “set us a king to judge us, like all the nations”, and Yahweh said, “they have not rejected you, but they have rejected me from being king over them” (1Sa 8:5–7). Samuel spoke Yahweh's words “to the people who were asking a king from him” (1Sa 8:10), and when the king was made he said, “you said to me, No, but a king shall reign over us, when Yahweh your God was your king. And now, here is the king whom you have chosen, whom you asked for” (1Sa 12:12–13); the thunder in wheat harvest showed “that your evil is great … to ask for yourselves a king”, and the people owned it (1Sa 12:17–19). The king's name, שָׁאוּל, is “asked”. Through Hosea Yahweh says, “I give you a king in my anger, and take him away in my wrath” (Hos 13:10–11); Paul, “they asked for a king, and God gave them Saul son of Kish … and when he had removed him, he raised up David to be their king, a man after my heart” (Act 13:21–22). From the verses: Israel's kingdom was Yahweh's own, and he was its king; the king they asked for was given as they asked and then removed, and the throne passed to the man of God's choosing, from whose seed, Paul goes on, God brought Israel a saviour, Jesus (Act 13:23).",
+      "evidence": [
+        {
+          "ref": "1Sa.8.5",
+          "to": "1Sa.8.7"
+        },
+        {
+          "ref": "1Sa.8.10"
+        },
+        {
+          "ref": "1Sa.12.12",
+          "to": "1Sa.12.13"
+        },
+        {
+          "ref": "1Sa.12.17",
+          "to": "1Sa.12.19"
+        },
+        {
+          "ref": "Hos.13.10",
+          "to": "Hos.13.11"
+        },
+        {
+          "ref": "Act.13.21",
+          "to": "Act.13.23"
+        }
+      ]
+    }
+  ],
+  "note": "Root: שאל, the key BDB files the words under and the key the database joins on; no other entry has it. One spelling, one entry: שְׁאוֹל is kept here as the README directs, with the evidence for and against its tie to “ask” in its summary; its support balance is negative because no cognate shares its meaning (arc-sheyol is named only as possible). Uses: the verb's key v.ag.aa is counted by spelling and its total (about 1,560) takes in לוֹ “to him” and the name שָׁאוּל; the verb's own tokens are the brief's stem lists (qal 161, niphal 5, piel 2, hiphil 2). v.ag.ai likewise includes seven tokens that are the infinitive לִשְׁאוֹל and Isa 7:11. Names have their own entries: Saul (v.ag.ac, with the gentilic v.ag.ad), Shealtiel (v.ag.ah, xv.aa.ac), Sheal (v.ag.ab). Keys with no tokens are not given to any word: v.ag.ae (שְׁאָלָה, a cross-reference to שְׁאוֹל), m.dr.bh (a cross-reference), v.dj.ad (שֵׁלָה, the contracted form in 1Sa 1:17, cited under שְׁאֵלָה). The places Eshtaol (אֶשְׁתָּאוֹל) and Mishal (מִשְׁאָל), which the brief's lexicons set beside this root, are places and have no entry. Leads not followed: Ge'ez saʾala “ask” (Leslau 1987 and Dillmann 1865 are not vendored; Fisher's dissertation has it but the OCR of the Ethiopic is unreadable, so no locator could be checked); Akkadian mašʾaltu “questioning” (Oracc armep x000102660), formed like מִשְׁאָלָה but with another meaning, left out; the Nabataean and Old Aramaic inscriptions (DNWSI not vendored); the Ugaritic glossary entry in Segert could not be found in the OCR, so the cognate is cited from the grammar sections that give the forms. Page numbers for Krahmalkov and Biella are from the text extractions (no PDF renderer was available): check p. 452 and pp. 321–322 against the scans. To review: (1) Luk 16:23, the rich man “in the grave” in the parable, is not cited; it wants a decision on where a parable's use belongs. (2) Exo 3:22; 11:2; 12:35–36 are placed under “borrow” and “grant” with a note that the verb is the plain “ask” and nothing was returned; they could as well stand under “request”. (3) 1Co 15:55 has ᾅδη in the received text and θάνατε in others; the entry follows the received text and the Peshitta. (4) Isa 7:11 שְׁאָלָה is cited under both the verb and the noun, since the pointing allows both. (5) The gender of שְׁאוֹל is given as feminine; Job 26:6 construes it as masculine."
+}
