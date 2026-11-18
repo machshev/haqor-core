@@ -1,0 +1,1693 @@
+{
+  "id": "yare",
+  "root": "ירא",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "fear",
+    "reverence",
+    "worship",
+    "wisdom",
+    "obedience",
+    "awe"
+  ],
+  "gloss": "fear, be afraid; revere, worship; fear, the fear of Yahweh; fearful, to be feared",
+  "summary": "The verb is to fear. Of danger, an enemy or harm it is to be afraid, and scripture's commonest use of it is the word to the afraid, “do not fear”, nearly always with its reason: “for I am with you”. Of God it is the awe that hears him and does what he says: Abraham feared God in not withholding his son (Gen 22:12), the midwives in disobeying the king (Exo 1:17), and so to fear a god is to worship and serve him (Deu 6:13; 2Ki 17). The noun יִרְאָה is fear, and “the fear of Yahweh” is defined by its verses as hating evil and turning from it, the beginning of wisdom and knowledge (Pro 8:13; 9:10; Job 28:28); נוֹרָא, the niphal participle, is what is to be feared: God, his name, his deeds, his day; and מוֹרָא is fear, the one feared, or a fearful deed. Ugaritic has the same verb, yrʾ “to fear”; the Aramaic of Daniel and the Peshitta use another root, דְּחַל.",
+  "words": [
+    {
+      "lemma": "יָרֵא",
+      "pos": "verb",
+      "gloss": "fear, be afraid; fear God, revere, worship; (niphal) be feared, fearful; (piel) frighten",
+      "bdb": [
+        "j.df.aa"
+      ],
+      "cognate_ids": [
+        "uga-yra"
+      ],
+      "summary": "A verb of state (“be afraid”), about three hundred and thirty times, most of them in the qal. What is feared stands as a plain object or with אֶת (to fear God, a man, a thing), or after מִן and מִפְּנֵי “from, from the face of” (to be afraid of); an action one is afraid to do follows with לְ or מִן and the infinitive. The qal infinitive is יִרְאָה, the same form as the noun (Deu 4:10; 10:12; 28:58). Many forms are spelled like forms of רָאָה “see” (וַיִּרְאוּ “and they saw”, וַיִּירְאוּ or וַיִּרְאוּ “and they feared”; יִרְאֶה “he sees”), and the text plays on the two: “many will see and fear” (Psa 40:4; 52:8).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be afraid; fear God and so obey; worship (a god); revere, stand in awe of",
+          "senses": [
+            {
+              "id": "be-afraid",
+              "gloss": "be afraid, fear (danger, an enemy, harm)",
+              "definition": "To be afraid of what may do one harm: an enemy, a ruler, death, shame, bad news. It shows in hiding, fleeing, crying out, or the heart trembling. The one feared follows as an object or after מִן, מִפְּנֵי “from the face of”.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.10",
+                  "role": "defining",
+                  "note": "The first use: “I heard your sound in the garden, and I was afraid because I was naked, and I hid.”"
+                },
+                {
+                  "ref": "Gen.32.12",
+                  "role": "defining",
+                  "note": "Jacob of Esau: “I am afraid of him, lest he come and strike me, mother with children”: the fear names the harm expected."
+                },
+                {
+                  "ref": "Exo.14.10",
+                  "note": "Israel saw Egypt marching after them, “and they were very afraid, and the sons of Israel cried to Yahweh”."
+                },
+                {
+                  "ref": "1Sa.17.11",
+                  "role": "defining",
+                  "note": "At Goliath's words Saul and all Israel וַיֵּחַתּוּ וַיִּרְאוּ מְאֹד: were dismayed and greatly afraid."
+                },
+                {
+                  "ref": "1Sa.28.5",
+                  "note": "Saul saw the camp of the Philistines, “and he was afraid, and his heart trembled greatly”."
+                },
+                {
+                  "ref": "1Sa.18.12",
+                  "note": "“Saul was afraid from the face of David, for Yahweh was with him.”"
+                },
+                {
+                  "ref": "1Ki.1.50",
+                  "note": "Adonijah was afraid from the face of Solomon and took hold of the horns of the altar."
+                },
+                {
+                  "ref": "Jon.1.5",
+                  "note": "In the storm “the sailors were afraid and cried out, each man to his god”."
+                },
+                {
+                  "ref": "Jos.9.24",
+                  "note": "The Gibeonites: “we were very afraid for our lives from your faces, and we did this thing.”"
+                },
+                {
+                  "ref": "Psa.27.1",
+                  "role": "defining",
+                  "note": "“Yahweh is my light and my salvation: of whom shall I be afraid (מִמִּי אִירָא)? … of whom shall I be in dread (מִמִּי אֶפְחָד)?”"
+                },
+                {
+                  "ref": "Psa.23.4",
+                  "note": "“Though I walk in the valley of deep darkness I will fear no evil, for you are with me.”"
+                },
+                {
+                  "ref": "Psa.112.7",
+                  "note": "The man who fears Yahweh (verse 1) “will not be afraid of evil tidings; his heart is fixed, trusting in Yahweh”."
+                },
+                {
+                  "ref": "Isa.51.12",
+                  "note": "“Who are you, that you are afraid of man, who dies, and of the son of man, who is given up as grass?”"
+                },
+                {
+                  "ref": "Amo.3.8",
+                  "note": "“The lion has roared: who will not fear?”"
+                }
+              ],
+              "senses": [
+                {
+                  "gloss": "be afraid to do (a thing)",
+                  "definition": "With לְ or מִן and an infinitive: to hold back from an action through fear of what will come of it.",
+                  "evidence": [
+                    {
+                      "ref": "Gen.19.30",
+                      "role": "defining",
+                      "note": "Lot went up out of Zoar, “for he was afraid to dwell in Zoar”."
+                    },
+                    {
+                      "ref": "Gen.26.7",
+                      "role": "defining",
+                      "note": "Isaac “was afraid to say, My wife, lest the men of the place kill me”."
+                    },
+                    {
+                      "ref": "Exo.3.6",
+                      "note": "“Moses hid his face, for he was afraid to look toward God.”"
+                    },
+                    {
+                      "ref": "Exo.34.30",
+                      "note": "The skin of Moses' face shone, “and they were afraid to come near him”."
+                    },
+                    {
+                      "ref": "1Sa.3.15",
+                      "note": "“Samuel was afraid to tell the vision to Eli.”"
+                    },
+                    {
+                      "ref": "Jdg.7.10",
+                      "note": "“If you are afraid to go down, go down with Purah your servant.”"
+                    },
+                    {
+                      "ref": "2Sa.1.14",
+                      "note": "David: “How were you not afraid to stretch out your hand to destroy the anointed of Yahweh?”"
+                    },
+                    {
+                      "ref": "Num.12.8",
+                      "note": "“Why were you not afraid to speak against my servant, against Moses?”"
+                    }
+                  ]
+                }
+              ],
+              "cognate_ids": [
+                "ar-istawraa",
+                "ar-waara"
+              ]
+            },
+            {
+              "id": "fear-god",
+              "gloss": "fear God: stand in awe of him and so do what he says",
+              "definition": "To hold God in such awe that one does what he commands and keeps from what he forbids, whatever it costs and whoever is watching. It is shown by what a man does: the verses set it beside keeping his commandments, walking in his ways, serving him and turning from evil, and it is something to be learned from hearing his words.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.12",
+                  "role": "defining",
+                  "note": "“Now I know that you fear God (יְרֵא אֱלֹהִים אַתָּה), and you have not withheld your son, your only one, from me”: the fear is known by the obedience."
+                },
+                {
+                  "ref": "Exo.1.17",
+                  "role": "defining",
+                  "note": "“The midwives feared God and did not do as the king of Egypt told them, and they let the boys live”: fearing God above the king."
+                },
+                {
+                  "ref": "Deu.6.2",
+                  "role": "defining",
+                  "note": "“That you may fear Yahweh your God, to keep all his statutes and his commandments.”"
+                },
+                {
+                  "ref": "Deu.10.12",
+                  "role": "defining",
+                  "note": "“What does Yahweh your God ask of you, but to fear Yahweh your God, to walk in all his ways and to love him, and to serve Yahweh your God with all your heart”: fear, love and service together."
+                },
+                {
+                  "ref": "Ecc.12.13",
+                  "role": "defining",
+                  "note": "“The end of the matter: fear God and keep his commandments, for this is the whole of man.”"
+                },
+                {
+                  "ref": "Deu.4.10",
+                  "role": "defining",
+                  "note": "At Horeb: “I will make them hear my words, that they may learn to fear me all the days that they live on the earth”: it is learned by hearing."
+                },
+                {
+                  "ref": "Deu.31.12",
+                  "to": "Deu.31.13",
+                  "note": "The law read every seventh year, “that they may hear, and that they may learn, and fear Yahweh your God”; their sons who have not known “shall hear and learn to fear”."
+                },
+                {
+                  "ref": "Deu.17.19",
+                  "note": "The king reads his copy of the law all his days, “that he may learn to fear Yahweh his God”."
+                },
+                {
+                  "ref": "Deu.5.29",
+                  "note": "“Would that they had such a heart as this, to fear me and keep all my commandments always.”"
+                },
+                {
+                  "ref": "Exo.14.31",
+                  "note": "Israel saw the great hand of Yahweh on Egypt, “and the people feared Yahweh, and they believed in Yahweh and in Moses his servant”."
+                },
+                {
+                  "ref": "Gen.42.18",
+                  "note": "Joseph: “Do this and live: I fear God”, and so he will deal justly with them."
+                },
+                {
+                  "ref": "Lev.19.14",
+                  "note": "“You shall not curse the deaf, nor put a stumbling block before the blind, and you shall fear your God”: the fear that governs what no man would see or punish. So Lev 19:32; 25:17, 36, 43."
+                },
+                {
+                  "ref": "Lev.25.17"
+                },
+                {
+                  "ref": "Deu.25.18",
+                  "note": "Amalek struck the stragglers, the faint and weary, “and he did not fear God”."
+                },
+                {
+                  "ref": "1Sa.12.14",
+                  "note": "“If you fear Yahweh and serve him and listen to his voice and do not rebel against the mouth of Yahweh.”"
+                },
+                {
+                  "ref": "Pro.3.7",
+                  "note": "“Do not be wise in your own eyes; fear Yahweh and turn from evil.”"
+                },
+                {
+                  "ref": "Pro.24.21",
+                  "note": "“My son, fear Yahweh and the king”; 1Pe 2:17, “fear God, honour the king”."
+                },
+                {
+                  "ref": "Job.1.9",
+                  "note": "The adversary: “Is it for nothing that Job fears God?”"
+                },
+                {
+                  "ref": "Jer.5.22",
+                  "note": "“Do you not fear me? says Yahweh; do you not tremble (תָחִילוּ) from my face, who set the sand as a bound for the sea?”"
+                },
+                {
+                  "ref": "Jer.32.39",
+                  "note": "“I will give them one heart and one way, to fear me all the days, for their good.”"
+                },
+                {
+                  "ref": "Mal.3.5",
+                  "note": "Judgment on sorcerers, adulterers, false swearers and oppressors of the hireling, the widow and the fatherless, who “do not fear me”."
+                },
+                {
+                  "ref": "Psa.86.11",
+                  "note": "“Unite my heart to fear your name.”"
+                },
+                {
+                  "ref": "1Pe.2.17"
+                },
+                {
+                  "ref": "Rev.14.7",
+                  "note": "The everlasting good news to every nation: “Fear God and give him glory, for the hour of his judgment has come.”"
+                }
+              ]
+            },
+            {
+              "id": "worship",
+              "gloss": "fear (a god): worship, serve",
+              "definition": "To fear a god is to have him as one's god: to bow down, sacrifice and serve. It is said of other gods as of Yahweh, and stands in a row with “serve”, “bow down” and “sacrifice”.",
+              "evidence": [
+                {
+                  "ref": "2Ki.17.35",
+                  "to": "2Ki.17.36",
+                  "role": "defining",
+                  "note": "“You shall not fear other gods, nor bow down to them, nor serve them, nor sacrifice to them; but Yahweh … him you shall fear, and to him you shall bow down, and to him you shall sacrifice.”"
+                },
+                {
+                  "ref": "Deu.6.13",
+                  "role": "defining",
+                  "note": "אֶת־יַהְוֶה אֱלֹהֶיךָ תִּירָא וְאֹתוֹ תַעֲבֹד: “Yahweh your God you shall fear, and him you shall serve, and by his name you shall swear.”"
+                },
+                {
+                  "ref": "Mat.4.10",
+                  "role": "defining",
+                  "note": "Jesus quotes Deu 6:13 as “You shall worship (προσκυνήσεις) the Lord your God, and him only shall you serve”: “fear” there is worship. So Luk 4:8."
+                },
+                {
+                  "ref": "Luk.4.8"
+                },
+                {
+                  "ref": "2Ki.17.7",
+                  "note": "Israel sinned against Yahweh “and feared other gods”."
+                },
+                {
+                  "ref": "2Ki.17.28",
+                  "note": "A priest came to Bethel “and was teaching them how they should fear Yahweh”: the manner of his worship."
+                },
+                {
+                  "ref": "2Ki.17.33",
+                  "note": "“They were fearing Yahweh, and serving their own gods”; verse 34 answers that they are not fearing Yahweh at all."
+                },
+                {
+                  "ref": "Jdg.6.10",
+                  "note": "“I am Yahweh your God; you shall not fear the gods of the Amorite.”"
+                },
+                {
+                  "ref": "Jos.24.14",
+                  "note": "“Fear Yahweh and serve him in sincerity and in truth, and put away the gods your fathers served.”"
+                },
+                {
+                  "ref": "Jos.22.25",
+                  "note": "With no portion in Yahweh, “your sons might make our sons cease from fearing Yahweh”."
+                },
+                {
+                  "ref": "Jon.1.9",
+                  "note": "“I am a Hebrew, and Yahweh, the God of the heavens, I fear, who made the sea and the dry land”: said to men who had each cried to his own god."
+                },
+                {
+                  "ref": "Isa.29.13",
+                  "role": "defining",
+                  "note": "“Their fearing of me (יִרְאָתָם אֹתִי) is a commandment of men, learned”: the infinitive, of worship by rote."
+                },
+                {
+                  "ref": "Mat.15.9",
+                  "note": "Isa 29:13 quoted: “in vain they worship me (σέβονταί με), teaching as doctrines commandments of men.”"
+                }
+              ]
+            },
+            {
+              "id": "revere",
+              "gloss": "revere, stand in awe of (parents, the holy place, a leader, a command)",
+              "definition": "To hold a person or a thing in awe and treat it accordingly: father and mother, Yahweh's holy place, a man in whom God's hand is seen, an oath or a commandment.",
+              "evidence": [
+                {
+                  "ref": "Lev.19.3",
+                  "role": "defining",
+                  "note": "“Each man his mother and his father you shall fear, and my sabbaths you shall keep.”"
+                },
+                {
+                  "ref": "Lev.19.30",
+                  "role": "defining",
+                  "note": "“My sabbaths you shall keep and my holy place you shall fear”; so Lev 26:2."
+                },
+                {
+                  "ref": "Jos.4.14",
+                  "role": "defining",
+                  "note": "Yahweh made Joshua great, “and they feared him as they had feared Moses all the days of his life”."
+                },
+                {
+                  "ref": "1Ki.3.28",
+                  "note": "Israel “feared from the face of the king, for they saw that the wisdom of God was in him to do judgment”."
+                },
+                {
+                  "ref": "1Sa.12.18",
+                  "note": "At the thunder and rain “all the people greatly feared Yahweh and Samuel”."
+                },
+                {
+                  "ref": "Ecc.9.2",
+                  "note": "“He who swears is as he who fears an oath.”"
+                },
+                {
+                  "ref": "Psa.119.120",
+                  "note": "“My flesh shudders from dread of you, and I fear your judgments.”"
+                },
+                {
+                  "ref": "Hab.3.2",
+                  "note": "“Yahweh, I have heard your report; I feared, Yahweh, your work.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be feared; (participle נוֹרָא) to be feared, fearful, terrible; (plural) fearful deeds",
+          "senses": [
+            {
+              "gloss": "be feared",
+              "definition": "The one finite form: to be held in fear and so served.",
+              "evidence": [
+                {
+                  "ref": "Psa.130.4",
+                  "role": "defining",
+                  "note": "כִּי־עִמְּךָ הַסְּלִיחָה לְמַעַן תִּוָּרֵא: “for with you is forgiveness, that you may be feared”. The fear here is the fruit of being forgiven, not dread of punishment."
+                }
+              ]
+            },
+            {
+              "id": "nora-god",
+              "gloss": "נוֹרָא: to be feared, fearful (of God, his name)",
+              "definition": "The participle as an adjective of Yahweh and his name: the one who is to be feared, set beside “great” and “mighty” and “holy”.",
+              "evidence": [
+                {
+                  "ref": "Deu.10.17",
+                  "role": "defining",
+                  "note": "הָאֵל הַגָּדֹל הַגִּבֹּר וְהַנּוֹרָא: “the God, the great, the mighty and the fearful, who does not lift up faces and does not take a bribe”. So Neh 1:5; 9:32; Dan 9:4."
+                },
+                {
+                  "ref": "Deu.7.21",
+                  "role": "defining",
+                  "note": "“You shall not be in dread from their faces, for Yahweh your God is in your midst, a great and fearful God”: the one to be feared drives out the fear of men."
+                },
+                {
+                  "ref": "Psa.96.4",
+                  "note": "“Great is Yahweh and greatly to be praised; he is to be feared above all gods”; so 1Ch 16:25."
+                },
+                {
+                  "ref": "Psa.47.3",
+                  "note": "“Yahweh Most High is to be feared, a great king over all the earth.”"
+                },
+                {
+                  "ref": "Psa.76.8",
+                  "note": "“You, you are to be feared, and who shall stand before your face?”; verse 13, “to be feared by the kings of the earth”."
+                },
+                {
+                  "ref": "Psa.89.8",
+                  "note": "“To be feared above all who are around him.”"
+                },
+                {
+                  "ref": "Deu.28.58",
+                  "role": "defining",
+                  "note": "“To fear (לְיִרְאָה) this glorious and fearful name (הַשֵּׁם הַנִּכְבָּד וְהַנּוֹרָא), Yahweh your God”: the verb and its participle together."
+                },
+                {
+                  "ref": "Psa.111.9",
+                  "note": "“Holy and fearful is his name”; the next verse begins “the fear of Yahweh”."
+                },
+                {
+                  "ref": "Psa.99.3",
+                  "note": "“Let them praise your name, great and fearful; holy is he.”"
+                },
+                {
+                  "ref": "Mal.1.14",
+                  "note": "“I am a great king, says Yahweh of armies, and my name is feared among the nations.”"
+                },
+                {
+                  "ref": "Neh.1.5"
+                },
+                {
+                  "ref": "Dan.9.4"
+                }
+              ]
+            },
+            {
+              "id": "nora-thing",
+              "gloss": "נוֹרָא: fearful, terrible (a place, a day, a people, a sight)",
+              "definition": "Of whatever fills with fear: the place where God is, the wilderness, the day of Yahweh, a conquering nation, the look of an angel.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.17",
+                  "role": "defining",
+                  "note": "וַיִּירָא וַיֹּאמַר מַה־נּוֹרָא הַמָּקוֹם הַזֶּה: “he was afraid and said, How fearful is this place! This is none other than the house of God”: the verb and its participle."
+                },
+                {
+                  "ref": "Deu.1.19",
+                  "role": "defining",
+                  "note": "“All that great and fearful wilderness”; Deu 8:15 adds its fiery serpents, scorpions and thirst."
+                },
+                {
+                  "ref": "Deu.8.15"
+                },
+                {
+                  "ref": "Jol.2.11",
+                  "note": "“The day of Yahweh is great and very fearful, and who can endure it?”"
+                },
+                {
+                  "ref": "Jol.3.4",
+                  "role": "defining",
+                  "note": "“Before the coming of the day of Yahweh, the great and the fearful (הַגָּדוֹל וְהַנּוֹרָא)”; so Mal 3:23."
+                },
+                {
+                  "ref": "Mal.3.23"
+                },
+                {
+                  "ref": "Jdg.13.6",
+                  "note": "“His appearance was like the appearance of the angel of God, very fearful.”"
+                },
+                {
+                  "ref": "Hab.1.7",
+                  "note": "Of the Chaldeans: אָיֹם וְנוֹרָא הוּא, “dreadful and fearful is he”."
+                },
+                {
+                  "ref": "Isa.18.2",
+                  "note": "“A people feared from there and onward.”"
+                },
+                {
+                  "ref": "Ezk.1.22",
+                  "note": "The expanse over the living creatures, “like the gleam of the fearful ice”."
+                }
+              ]
+            },
+            {
+              "id": "noraot",
+              "gloss": "נוֹרָאוֹת: fearful deeds",
+              "definition": "The feminine plural as a noun: the deeds of Yahweh that make men fear him, above all those of the exodus; and as an adverb, “fearfully”.",
+              "evidence": [
+                {
+                  "ref": "Deu.10.21",
+                  "role": "defining",
+                  "note": "“He is your God, who has done with you these great and fearful things (אֶת־הַגְּדֹלֹת וְאֶת־הַנּוֹרָאֹת הָאֵלֶּה) which your eyes have seen.”"
+                },
+                {
+                  "ref": "Psa.106.22",
+                  "role": "defining",
+                  "note": "“Wonders in the land of Ham, fearful things at the Sea of Reeds.”"
+                },
+                {
+                  "ref": "Exo.34.10",
+                  "note": "“All the people shall see the work of Yahweh, that it is fearful, what I am doing with you.”"
+                },
+                {
+                  "ref": "Exo.15.11",
+                  "note": "“Who is like you, majestic in holiness, fearful in praises, doing wonders?”"
+                },
+                {
+                  "ref": "2Sa.7.23",
+                  "note": "God went to redeem a people “and to do great and fearful things for your land”."
+                },
+                {
+                  "ref": "Psa.66.3",
+                  "note": "“Say to God, How fearful are your works!”"
+                },
+                {
+                  "ref": "Psa.145.6",
+                  "note": "“They shall speak of the might of your fearful deeds.”"
+                },
+                {
+                  "ref": "Isa.64.2",
+                  "note": "“When you did fearful things we did not look for, you came down.”"
+                },
+                {
+                  "ref": "Psa.139.14",
+                  "note": "נוֹרָאוֹת נִפְלֵיתִי: “fearfully I am wonderfully made”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make afraid, frighten",
+          "senses": [
+            {
+              "gloss": "make afraid, frighten",
+              "definition": "To put fear into someone, mostly so that he will stop what he is doing.",
+              "evidence": [
+                {
+                  "ref": "Neh.6.9",
+                  "role": "defining",
+                  "note": "כֻלָּם מְיָרְאִים אוֹתָנוּ: “all of them were frightening us, saying, Their hands will drop from the work”."
+                },
+                {
+                  "ref": "2Ch.32.18",
+                  "role": "defining",
+                  "note": "The Assyrians cried aloud in Judean to the people on the wall לְיָרְאָם וּלְבַהֲלָם, “to frighten them and to terrify them, that they might take the city”."
+                },
+                {
+                  "ref": "Neh.6.19",
+                  "note": "“Tobiah sent letters to frighten me”; verse 14, the prophets “who were frightening me”."
+                },
+                {
+                  "ref": "Neh.6.14"
+                },
+                {
+                  "ref": "2Sa.14.15",
+                  "note": "The woman of Tekoa: “the people have made me afraid”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φοβέω",
+          "gloss": "fear, be afraid; fear (God)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.15.1, תִּירָא → φοβοῦ; Psa.118.6, אִירָא → φοβηθήσομαι; Isa.41.10, תִּירָא → φοβοῦ; Pro.24.21, יְרָא → φοβοῦ; φοβέω renders יָרֵא ×191"
+            },
+            {
+              "ref": "Heb.13.6",
+              "role": "defining",
+              "note": "Psa 118:6 quoted: “The Lord is my helper, and I will not fear (οὐ φοβηθήσομαι): what will man do to me?”"
+            },
+            {
+              "ref": "1Pe.3.14",
+              "role": "defining",
+              "note": "Isa 8:12 quoted: τὸν δὲ φόβον αὐτῶν μὴ φοβηθῆτε, “do not fear their fear”; verse 15 goes on with Isa 8:13, “sanctify the Lord”."
+            },
+            {
+              "ref": "Jhn.12.15",
+              "note": "“Do not fear (μὴ φοβοῦ), daughter of Zion; behold, your king comes”: the “do not fear” said to Zion (Zep 3:16; Isa 40:9) joined to Zec 9:9."
+            },
+            {
+              "ref": "Rev.15.4",
+              "note": "Jer 10:7 taken up: “Who shall not fear you, Lord, and glorify your name?”"
+            },
+            {
+              "ref": "Luk.1.50",
+              "note": "“His mercy is to generations of generations for those who fear him”: Psa 103:17."
+            },
+            {
+              "ref": "Rev.19.5",
+              "note": "“You who fear him, the small and the great”: Psa 115:13."
+            },
+            {
+              "ref": "Act.10.35",
+              "note": "“In every nation he who fears him and works righteousness is accepted by him.”"
+            },
+            {
+              "ref": "1Pe.2.17",
+              "note": "“Fear God, honour the king”: Pro 24:21."
+            }
+          ]
+        },
+        {
+          "lemma": "θαρσέω",
+          "gloss": "take courage",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.14.13, אַל־תִּירָאוּ → θαρσεῖτε; Zep.3.16, אַל־תִּירָאִי → θάρσει; Hag.2.5 → θαρσεῖτε; θαρσέω renders יָרֵא (always the negated “do not fear”) ×10"
+            },
+            {
+              "ref": "Mat.14.27",
+              "role": "defining",
+              "note": "θαρσεῖτε· ἐγώ εἰμι, μὴ φοβεῖσθε: “Take courage, it is I; do not fear”: both Greek renderings of “do not fear” together, with the reason between them."
+            }
+          ]
+        },
+        {
+          "lemma": "προσκυνέω",
+          "gloss": "bow down to, worship",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.6.13, תִּירָא → φοβηθήσῃ: the Septuagint as aligned keeps “fear”; προσκυνήσεις is the wording of the quotation in Matthew and Luke"
+            },
+            {
+              "ref": "Mat.4.10",
+              "role": "defining",
+              "note": "γέγραπται γάρ· κύριον τὸν θεόν σου προσκυνήσεις καὶ αὐτῷ μόνῳ λατρεύσεις: Deu 6:13, “you shall fear”, quoted as “you shall worship”."
+            },
+            {
+              "ref": "Luk.4.8"
+            }
+          ]
+        },
+        {
+          "lemma": "σέβομαι",
+          "gloss": "revere, worship",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.29.13, יִרְאָתָם אֹתִי → μάτην δὲ σέβονταί με"
+            },
+            {
+              "ref": "Mat.15.9",
+              "role": "defining",
+              "note": "Isa 29:13 quoted: μάτην δὲ σέβονταί με, “in vain they worship me”; so Mrk 7:7."
+            }
+          ]
+        },
+        {
+          "lemma": "φοβερός",
+          "gloss": "fearful, to be feared",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.28.17, נּוֹרָא → φοβερός; Psa.111.9, נוֹרָא → φοβερόν; Dan.9.4, הַנּוֹרָא → φοβερός; φοβερός renders the participle נוֹרָא"
+            },
+            {
+              "ref": "Heb.10.31",
+              "role": "defining",
+              "note": "“It is a fearful thing (φοβερόν) to fall into the hands of the living God.”"
+            },
+            {
+              "ref": "Heb.12.21",
+              "note": "Of Sinai: “so fearful (φοβερόν) was the sight”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπιφανής",
+          "gloss": "manifest, notable",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jol.3.4, הַנּוֹרָא → ἐπιφανῆ; Mal.3.23, הַנּוֹרָא → ἐπιφανῆ; Hab.1.7, נוֹרָא → ἐπιφανής: the translators took נוֹרָא here from רָאָה “see”, “appearing”"
+            },
+            {
+              "ref": "Act.2.20",
+              "role": "defining",
+              "note": "Joel 3:4 quoted in the Septuagint's wording: “the day of the Lord, the great and notable (ἐπιφανῆ)”. The Peshitta of the verse has “great and fearful” (דחילא), as the Hebrew."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָתַת",
+            "note": "“Be dismayed, shattered”: the usual partner of fear before an enemy.",
+            "evidence": [
+              {
+                "ref": "Deu.1.21",
+                "role": "defining",
+                "note": "אַל־תִּירָא וְאַל־תֵּחָת: “do not fear and do not be dismayed”."
+              },
+              {
+                "ref": "1Sa.17.11"
+              },
+              {
+                "ref": "Isa.51.7",
+                "note": "“Do not fear the reproach of man, and from their revilings do not be dismayed.”"
+              }
+            ]
+          },
+          {
+            "lemma": "עָרַץ",
+            "note": "“Be in dread, be terrified.”",
+            "evidence": [
+              {
+                "ref": "Deu.31.6",
+                "role": "defining",
+                "note": "אַל־תִּירְאוּ וְאַל־תַּעַרְצוּ מִפְּנֵיהֶם: “do not fear and do not be in dread from their faces”."
+              },
+              {
+                "ref": "Isa.8.12",
+                "to": "Isa.8.13"
+              }
+            ]
+          },
+          {
+            "lemma": "פָּחַד",
+            "note": "“Be in dread”; its noun פַּחַד stands beside יִרְאָה and מוֹרָא.",
+            "evidence": [
+              {
+                "ref": "Psa.27.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.119.120"
+              }
+            ]
+          },
+          {
+            "lemma": "גּוּר",
+            "note": "“Stand in awe, be afraid.”",
+            "evidence": [
+              {
+                "ref": "Psa.33.8",
+                "role": "defining",
+                "note": "“Let all the earth fear Yahweh (יִירְאוּ מֵיַהְוֶה); of him let all the dwellers of the world stand in awe (יָגוּרוּ).”"
+              },
+              {
+                "ref": "Psa.22.24"
+              }
+            ]
+          },
+          {
+            "lemma": "עָבַד",
+            "note": "“Serve”: to fear Yahweh and to serve him are said together.",
+            "evidence": [
+              {
+                "ref": "Deu.6.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.24.14"
+              },
+              {
+                "ref": "1Sa.12.24",
+                "note": "“Only fear Yahweh and serve him in truth with all your heart.”"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמַר",
+            "note": "“Keep” his commandments: what fearing God comes to.",
+            "evidence": [
+              {
+                "ref": "Ecc.12.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.6.2"
+              },
+              {
+                "ref": "Deu.5.29"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בָּטַח",
+            "note": "“Trust”: the one who trusts in God does not fear man.",
+            "evidence": [
+              {
+                "ref": "Psa.56.5",
+                "role": "defining",
+                "note": "בֵּאלֹהִים בָּטַחְתִּי לֹא אִירָא: “in God I have trusted; I will not fear. What can flesh do to me?”"
+              },
+              {
+                "ref": "Psa.112.7"
+              }
+            ]
+          },
+          {
+            "lemma": "בּוּז",
+            "note": "“Despise”: to fear a commandment is the opposite of despising the word; so בָּזָה of Yahweh himself.",
+            "evidence": [
+              {
+                "ref": "Pro.13.13",
+                "role": "defining",
+                "note": "“He who despises a word (בָּז לְדָבָר) will be bound by it, and he who fears a commandment (וִירֵא מִצְוָה) will be repaid.”"
+              },
+              {
+                "ref": "Pro.14.2",
+                "note": "“He who walks in his uprightness fears Yahweh, and he who is crooked in his ways despises him.”"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אַל־תִּירָא",
+            "gloss": "do not fear: the word of assurance, nearly always with its reason",
+            "evidence": [
+              {
+                "ref": "Gen.15.1",
+                "role": "defining",
+                "note": "The first: “Do not fear, Abram: I am a shield to you.”"
+              },
+              {
+                "ref": "Gen.26.24",
+                "role": "defining",
+                "note": "“Do not fear, for I am with you.”"
+              },
+              {
+                "ref": "Isa.41.10",
+                "role": "defining",
+                "note": "“Do not fear, for I am with you; do not look about, for I am your God.”"
+              },
+              {
+                "ref": "Exo.14.13",
+                "note": "“Do not fear; stand and see the salvation of Yahweh.”"
+              },
+              {
+                "ref": "Gen.21.17"
+              },
+              {
+                "ref": "Gen.46.3"
+              },
+              {
+                "ref": "Deu.31.6"
+              },
+              {
+                "ref": "Jdg.6.23",
+                "note": "“Peace to you; do not fear; you shall not die.”"
+              },
+              {
+                "ref": "Isa.43.1",
+                "note": "“Do not fear, for I have redeemed you.”"
+              },
+              {
+                "ref": "Jer.1.8"
+              },
+              {
+                "ref": "Dan.10.12"
+              },
+              {
+                "ref": "Zep.3.16"
+              },
+              {
+                "ref": "Luk.1.30",
+                "note": "The angel to Mary: “Do not fear, for you have found favour with God.”"
+              },
+              {
+                "ref": "Luk.12.32",
+                "note": "“Do not fear, little flock, for it is your Father's good pleasure to give you the kingdom.”"
+              },
+              {
+                "ref": "Rev.1.17"
+              }
+            ]
+          },
+          {
+            "phrase": "וְיָרֵאתָ מֵאֱלֹהֶיךָ",
+            "gloss": "and you shall fear your God: the ground of laws no court could enforce",
+            "evidence": [
+              {
+                "ref": "Lev.25.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.19.14"
+              },
+              {
+                "ref": "Lev.19.32"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יָרֵא",
+      "pos": "adjective",
+      "gloss": "fearing, afraid; one who fears (God)",
+      "bdb": [
+        "j.df.ab"
+      ],
+      "cognate_ids": [
+        "uga-yra"
+      ],
+      "summary": "The verb's participle, used as an adjective and a noun: יְרֵא אֱלֹהִים “fearing God”, יִרְאֵי יַהְוֶה “those who fear Yahweh”, feminine construct יִרְאַת (Pro 31:30). Its tokens are counted by spelling, so the count takes in forms of the qal perfect יָרֵא and the noun's construct יִרְאַת, which belong to the words above and below.",
+      "senses": [
+        {
+          "gloss": "afraid",
+          "definition": "In a state of fear, of an enemy or of harm.",
+          "kin": [
+            "be-afraid"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.20.8",
+              "role": "defining",
+              "note": "“Who is the man who is afraid and soft of heart? Let him go and return to his house.”"
+            },
+            {
+              "ref": "Jdg.7.3",
+              "role": "defining",
+              "note": "מִי־יָרֵא וְחָרֵד: “whoever is afraid and trembling, let him turn back”."
+            },
+            {
+              "ref": "1Sa.23.3",
+              "note": "David's men: “Behold, we are afraid here in Judah.”"
+            },
+            {
+              "ref": "Jer.42.11",
+              "note": "“The king of Babylon, of whom you are afraid.”"
+            },
+            {
+              "ref": "Jer.42.16",
+              "note": "“The sword of which you are afraid shall overtake you there.”"
+            }
+          ]
+        },
+        {
+          "gloss": "fearing God; one who fears Yahweh",
+          "definition": "One whose way is governed by the fear of God: he turns from evil, walks in God's ways, keeps his word, and God's care is on him. In the plural, the company of those who do so.",
+          "kin": [
+            "fear-god"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.1.1",
+              "role": "defining",
+              "note": "תָּם וְיָשָׁר וִירֵא אֱלֹהִים וְסָר מֵרָע: “blameless and upright, and fearing God and turning from evil”."
+            },
+            {
+              "ref": "Gen.22.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.128.1",
+              "role": "defining",
+              "note": "“Happy is everyone who fears Yahweh, who walks in his ways.”"
+            },
+            {
+              "ref": "Exo.18.21",
+              "note": "Judges are to be “men of ability, fearers of God (יִרְאֵי אֱלֹהִים), men of truth, hating unjust gain”."
+            },
+            {
+              "ref": "Exo.9.20",
+              "note": "“He who feared the word of Yahweh among the servants of Pharaoh made his servants and his cattle flee to the houses”: fear shown in acting on the word."
+            },
+            {
+              "ref": "1Ki.18.3",
+              "note": "“Obadiah feared Yahweh greatly”, and hid a hundred prophets from Jezebel."
+            },
+            {
+              "ref": "Pro.31.30",
+              "note": "“A woman who fears Yahweh (אִשָּׁה יִרְאַת־יַהְוֶה), she shall be praised.”"
+            },
+            {
+              "ref": "Psa.25.12",
+              "note": "“Who is the man who fears Yahweh? He will teach him in the way he should choose”; verse 14, “the counsel of Yahweh is for those who fear him”."
+            },
+            {
+              "ref": "Psa.103.13",
+              "note": "“As a father has compassion on sons, Yahweh has compassion on those who fear him”; so verses 11 and 17."
+            },
+            {
+              "ref": "Psa.103.17"
+            },
+            {
+              "ref": "Psa.34.8",
+              "note": "“The angel of Yahweh encamps around those who fear him, and delivers them.”"
+            },
+            {
+              "ref": "Psa.147.11",
+              "note": "“Yahweh takes pleasure in those who fear him, who hope for his kindness.”"
+            },
+            {
+              "ref": "Psa.115.13",
+              "note": "“He will bless those who fear Yahweh, the small with the great.”"
+            },
+            {
+              "ref": "Mal.3.16",
+              "note": "“Then those who feared Yahweh (יִרְאֵי יַהְוֶה) spoke, each with his neighbour … and a book of remembrance was written before him for those who feared Yahweh and thought on his name.”"
+            },
+            {
+              "ref": "Mal.3.20",
+              "note": "“To you who fear my name the sun of righteousness shall rise.”"
+            },
+            {
+              "ref": "Isa.50.10",
+              "note": "“Who among you fears Yahweh, hearing the voice of his servant?”"
+            },
+            {
+              "ref": "Act.13.26",
+              "note": "Paul in the synagogue: “sons of the family of Abraham, and those among you who fear God”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "יְרֵא אֱלֹהִים",
+            "gloss": "fearing God, a fearer of God",
+            "evidence": [
+              {
+                "ref": "Gen.22.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.1.1"
+              },
+              {
+                "ref": "Exo.18.21"
+              }
+            ]
+          },
+          {
+            "phrase": "יִרְאֵי יַהְוֶה",
+            "gloss": "those who fear Yahweh",
+            "evidence": [
+              {
+                "ref": "Mal.3.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.22.24"
+              },
+              {
+                "ref": "Psa.115.11",
+                "note": "After “Israel” and “house of Aaron”: “You who fear Yahweh, trust in Yahweh.”"
+              },
+              {
+                "ref": "Psa.135.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יִרְאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "fear; the fear of God",
+      "bdb": [
+        "j.df.ac"
+      ],
+      "cognate_ids": [
+        "uga-yra"
+      ],
+      "summary": "The noun of the verb, and in form also its infinitive (“to fear”, Deu 10:12). About three times in four it is the fear of God or of Yahweh, which Proverbs, Job and the Psalms define; the rest is plain fear.",
+      "senses": [
+        {
+          "gloss": "fear, terror",
+          "definition": "Being afraid: the fear that comes on a man, or the fear of him that falls on others.",
+          "kin": [
+            "be-afraid"
+          ],
+          "evidence": [
+            {
+              "ref": "Jon.1.10",
+              "role": "defining",
+              "note": "“The men feared a great fear”: the verb with its own noun."
+            },
+            {
+              "ref": "Psa.55.6",
+              "role": "defining",
+              "note": "יִרְאָה וָרַעַד יָבֹא בִי: “fear and trembling come on me, and horror covers me”."
+            },
+            {
+              "ref": "Deu.2.25",
+              "role": "defining",
+              "note": "“I will begin to put the dread of you and the fear of you (פַּחְדְּךָ וְיִרְאָתְךָ) on the faces of the peoples … and they shall quake and writhe from your face.”"
+            },
+            {
+              "ref": "Ezk.30.13",
+              "note": "“I will put fear in the land of Egypt.”"
+            },
+            {
+              "ref": "Isa.7.25",
+              "note": "“You will not go there for fear of brier and thorn.”"
+            },
+            {
+              "ref": "Ezk.1.18",
+              "note": "The rims of the wheels: “they had height, and they had fear”, that is, they were fearful to see."
+            }
+          ]
+        },
+        {
+          "id": "fear-of-god",
+          "gloss": "the fear of God, of Yahweh",
+          "definition": "The awe of God that keeps a man from sin and turns him from evil. Scripture defines it: it is to hate evil; it is wisdom, and the beginning of wisdom and of knowledge; it is taught and learned; and its fruit is life. In Psa 19:10 it stands among the names of Yahweh's law.",
+          "kin": [
+            "fear-god"
+          ],
+          "evidence": [
+            {
+              "ref": "Pro.8.13",
+              "role": "defining",
+              "note": "יִרְאַת יַהְוֶה שְׂנֹאת רָע: “the fear of Yahweh is to hate evil”."
+            },
+            {
+              "ref": "Job.28.28",
+              "role": "defining",
+              "note": "הֵן יִרְאַת אֲדֹנָי הִיא חָכְמָה וְסוּר מֵרָע בִּינָה: “Behold, the fear of the Lord, that is wisdom, and to turn from evil is understanding.”"
+            },
+            {
+              "ref": "Pro.1.7",
+              "role": "defining",
+              "note": "יִרְאַת יַהְוֶה רֵאשִׁית דָּעַת: “the fear of Yahweh is the beginning of knowledge; wisdom and instruction fools despise”."
+            },
+            {
+              "ref": "Pro.9.10",
+              "role": "defining",
+              "note": "תְּחִלַּת חָכְמָה יִרְאַת יַהְוֶה: “the beginning of wisdom is the fear of Yahweh, and the knowledge of the holy is understanding”."
+            },
+            {
+              "ref": "Psa.111.10",
+              "role": "defining",
+              "note": "רֵאשִׁית חָכְמָה יִרְאַת יַהְוֶה: “the beginning of wisdom is the fear of Yahweh; good understanding have all who do them”: it is a thing done."
+            },
+            {
+              "ref": "Exo.20.20",
+              "role": "defining",
+              "note": "“Do not fear (אַל־תִּירָאוּ), for God has come to prove you, and that his fear (יִרְאָתוֹ) may be on your faces, that you do not sin”: being afraid and the fear of God told apart in one verse."
+            },
+            {
+              "ref": "Pro.16.6",
+              "role": "defining",
+              "note": "“By the fear of Yahweh one turns from evil.”"
+            },
+            {
+              "ref": "Gen.20.11",
+              "note": "Abraham: “Surely there is no fear of God in this place, and they will kill me for my wife's sake”: where it is absent nothing restrains a man."
+            },
+            {
+              "ref": "Neh.5.15",
+              "note": "The former governors laid burdens on the people, “but I did not do so, because of the fear of God”."
+            },
+            {
+              "ref": "Psa.34.12",
+              "note": "“Come, sons, listen to me: the fear of Yahweh I will teach you”; the lesson (verses 13 to 15) is to keep the tongue from evil, turn from evil and do good."
+            },
+            {
+              "ref": "Pro.2.5",
+              "note": "He who receives the words and seeks wisdom as silver “will understand the fear of Yahweh and find the knowledge of God”."
+            },
+            {
+              "ref": "Pro.1.29",
+              "note": "“They hated knowledge, and the fear of Yahweh they did not choose.”"
+            },
+            {
+              "ref": "Psa.19.10",
+              "note": "After the law, the testimony, the precepts and the commandment of Yahweh: “the fear of Yahweh is clean, standing for ever; the judgments of Yahweh are truth”."
+            },
+            {
+              "ref": "Pro.14.27",
+              "note": "“The fear of Yahweh is a fountain of life, to turn from the snares of death”; verse 26, “in the fear of Yahweh is strong confidence”."
+            },
+            {
+              "ref": "Pro.14.26"
+            },
+            {
+              "ref": "Pro.19.23",
+              "note": "“The fear of Yahweh is to life.” So Pro 10:27; 22:4."
+            },
+            {
+              "ref": "Pro.15.33",
+              "note": "“The fear of Yahweh is the instruction of wisdom.”"
+            },
+            {
+              "ref": "Isa.11.2",
+              "to": "Isa.11.3",
+              "note": "On the shoot from the stock of Jesse rests “the spirit of knowledge and of the fear of Yahweh (רוּחַ דַּעַת וְיִרְאַת יַהְוֶה)”, and his delight is in the fear of Yahweh."
+            },
+            {
+              "ref": "Isa.33.6",
+              "note": "“The fear of Yahweh, that is his treasure.”"
+            },
+            {
+              "ref": "Jer.32.40",
+              "note": "The everlasting covenant: “my fear I will put in their heart, that they do not turn aside from me.”"
+            },
+            {
+              "ref": "2Sa.23.3",
+              "note": "“He who rules over men, righteous, ruling in the fear of God.”"
+            },
+            {
+              "ref": "2Ch.19.9",
+              "note": "Jehoshaphat to the judges: “Thus you shall do, in the fear of Yahweh, in faithfulness and with a whole heart.”"
+            },
+            {
+              "ref": "Psa.2.11",
+              "note": "עִבְדוּ אֶת־יַהְוֶה בְּיִרְאָה וְגִילוּ בִּרְעָדָה: “serve Yahweh with fear, and rejoice with trembling”."
+            },
+            {
+              "ref": "Job.4.6",
+              "note": "Eliphaz to Job: “Is not your fear your confidence?”: the word alone, for the fear of God; so Job 15:4."
+            },
+            {
+              "ref": "Act.9.31",
+              "note": "The ecclesias “walking in the fear of the Lord (τῷ φόβῳ τοῦ κυρίου)”."
+            },
+            {
+              "ref": "2Co.7.1",
+              "note": "“Perfecting holiness in the fear of God.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φόβος",
+          "gloss": "fear",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.9.10, יִרְאַת → φόβος; Psa.111.10, יִרְאַת → φόβος; Exo.20.20, יִרְאָתוֹ → φόβος; Psa.2.11, בְּיִרְאָה → φόβῳ; φόβος renders יִרְאָה ×30 and מוֹרָא ×5 (Isa.8.12, 13; Mal.1.6)"
+            },
+            {
+              "ref": "1Pe.3.14",
+              "role": "defining",
+              "note": "Isa 8:12 quoted, where φόβος is מוֹרָא: “do not fear their fear”."
+            },
+            {
+              "ref": "Act.9.31",
+              "role": "defining",
+              "note": "“The fear of the Lord”, the Hebrew phrase carried into the life of the ecclesias."
+            },
+            {
+              "ref": "2Co.7.1"
+            },
+            {
+              "ref": "Php.2.12",
+              "note": "“With fear and trembling”: the pair of Psa 2:11 and Psa 55:6."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָכְמָה",
+            "note": "“Wisdom”: the fear of Yahweh is wisdom and its beginning.",
+            "evidence": [
+              {
+                "ref": "Job.28.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.9.10"
+              },
+              {
+                "ref": "Pro.15.33"
+              }
+            ]
+          },
+          {
+            "lemma": "דַּעַת",
+            "note": "“Knowledge”: named beside the fear of Yahweh, which is where it begins.",
+            "evidence": [
+              {
+                "ref": "Pro.1.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.2.5"
+              },
+              {
+                "ref": "Isa.11.2"
+              }
+            ]
+          },
+          {
+            "lemma": "רַעַד",
+            "note": "“Trembling” (and רְעָדָה): fear's bodily companion.",
+            "evidence": [
+              {
+                "ref": "Psa.55.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.2.11"
+              }
+            ]
+          },
+          {
+            "lemma": "פַּחַד",
+            "note": "“Dread”: the fear a people casts on its enemies.",
+            "evidence": [
+              {
+                "ref": "Deu.2.25",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יִרְאַת יַהְוֶה",
+            "gloss": "the fear of Yahweh: hating evil and turning from it; the beginning of wisdom",
+            "evidence": [
+              {
+                "ref": "Pro.8.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.1.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.9.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.111.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.28.28",
+                "role": "defining",
+                "note": "Here יִרְאַת אֲדֹנָי, “the fear of the Lord”."
+              },
+              {
+                "ref": "Ecc.12.13",
+                "note": "The same thing said with the verb: “fear God and keep his commandments”."
+              },
+              {
+                "ref": "Psa.19.10"
+              },
+              {
+                "ref": "Isa.11.2"
+              }
+            ]
+          },
+          {
+            "phrase": "יִרְאַת אֱלֹהִים",
+            "gloss": "the fear of God",
+            "evidence": [
+              {
+                "ref": "Gen.20.11",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.23.3"
+              },
+              {
+                "ref": "Neh.5.15"
+              }
+            ]
+          },
+          {
+            "phrase": "יִרְאָה גְדוֹלָה",
+            "gloss": "(fear) a great fear: the verb with its own noun",
+            "evidence": [
+              {
+                "ref": "Jon.1.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Jon.1.16",
+                "note": "וַיִּירְאוּ הָאֲנָשִׁים יִרְאָה גְדוֹלָה אֶת־יַהְוֶה: now of Yahweh, and they sacrifice and vow to him."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מוֹרָא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "fear; the one feared; a fearful deed",
+      "bdb": [
+        "j.df.ae"
+      ],
+      "cognate_ids": [
+        "uga-yra"
+      ],
+      "summary": "A noun of the verb with prefixed מ, twelve times. It is the fear felt, the one who is feared, and (in the plural or with “great”) the fearful deeds of the exodus. Psa 9:21 spells it מוֹרָה. Its token count is shared with that spelling, and takes in Jdg 16:17 מוֹרָה “razor”, a different word.",
+      "senses": [
+        {
+          "gloss": "fear, dread (of someone)",
+          "definition": "The fear of a man or a people that lies on others; and the fear due to a master.",
+          "kin": [
+            "be-afraid",
+            "revere"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.9.2",
+              "role": "defining",
+              "note": "וּמוֹרַאֲכֶם וְחִתְּכֶם: “the fear of you and the dread of you shall be on every living thing of the earth”."
+            },
+            {
+              "ref": "Deu.11.25",
+              "role": "defining",
+              "note": "“The dread of you and the fear of you (פַּחְדְּכֶם וּמוֹרַאֲכֶם) Yahweh your God will put on the face of all the land.”"
+            },
+            {
+              "ref": "Mal.1.6",
+              "role": "defining",
+              "note": "“A son honours a father, and a servant his master. If I am a father, where is my honour? And if I am a master, where is my fear (אַיֵּה מוֹרָאִי)?”: fear answers to honour."
+            },
+            {
+              "ref": "Mal.2.5",
+              "note": "Of Levi: “I gave them to him for fear, and he feared me (מוֹרָא וַיִּירָאֵנִי)”."
+            },
+            {
+              "ref": "Psa.9.21",
+              "note": "שִׁיתָה יַהְוֶה מוֹרָה לָהֶם: “Put fear on them, Yahweh; let the nations know they are men.”"
+            }
+          ]
+        },
+        {
+          "gloss": "the one feared, object of fear",
+          "definition": "The person or thing that is feared: what a people fears, and Yahweh as the one his own are to fear.",
+          "kin": [
+            "fear-god"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.8.12",
+              "to": "Isa.8.13",
+              "role": "defining",
+              "note": "“Its fear you shall not fear (וְאֶת־מוֹרָאוֹ לֹא־תִירְאוּ), nor be in dread. Yahweh of armies, him you shall sanctify, and he is your fear (וְהוּא מוֹרַאֲכֶם) and he is your dread.”"
+            },
+            {
+              "ref": "Psa.76.12",
+              "role": "defining",
+              "note": "“Vow and pay to Yahweh your God; let all around him bring a gift to the Fear (לַמּוֹרָא)”: a name for Yahweh."
+            }
+          ]
+        },
+        {
+          "gloss": "fearful deed, terror",
+          "definition": "A deed that strikes fear: named with the signs, wonders, mighty hand and outstretched arm by which Yahweh brought Israel out of Egypt.",
+          "kin": [
+            "noraot"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.4.34",
+              "role": "defining",
+              "note": "“By trials, by signs and by wonders and by war and by a mighty hand and by an outstretched arm and by great terrors (וּבְמוֹרָאִים גְּדֹלִים)”."
+            },
+            {
+              "ref": "Deu.26.8",
+              "note": "“With a mighty hand and an outstretched arm and with great fearfulness, and with signs and wonders.”"
+            },
+            {
+              "ref": "Deu.34.12",
+              "note": "“All the mighty hand and all the great fearful deed that Moses did before the eyes of all Israel.”"
+            },
+            {
+              "ref": "Jer.32.21"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-yra",
+      "lang": "uga",
+      "form": "𐎊𐎗𐎀",
+      "translit": "yrʾ",
+      "gloss": "to fear",
+      "relation": "cognate",
+      "note": "The same three consonants and the same meaning as the Hebrew verb, inflected as a verb with first y (imperfect yru, perfect yritn). The root has none of the five merged letters, so no older sound is in question. The form is given as the bare root in Ugaritic letters; the attested forms are those cited.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 71, § 54.54 Verbs I /y/: /y-r-ʾ/ “to fear”, listed with /y-r-d/ “to go down” and /y-t-n/ “to give”; imperfect 3 m. sing. yru"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 59, § 54.21 Perfect: /y-r-ʾ/ “to fear”, perfect yritn"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000524 wrʾ [fear] V: HEB003122 yareʾ [fear] V, UGC004841 yrʾ"
+        }
+      ]
+    },
+    {
+      "id": "ar-istawraa",
+      "lang": "ar",
+      "form": "اِسْتَوْرَأَتِ الإِبِلُ",
+      "translit": "istawraʾat al-ibil",
+      "gloss": "the camels took fright and ran away",
+      "relation": "possible",
+      "note": "The Arabic root w-r-ʾ answers letter for letter to Hebrew y-r-ʾ (Hebrew first y from older w), and its tenth form means “take fright”. It is marked possible because the form is rare, is said of camels only, has a variant from another root (istaʾwarat), and the root's first form means “repel, push”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2933, root ورأ, form 10 استورأتِ الإِبِلُ (n41817)",
+          "note": "“The camels took fright and ran away, in a body, one after another … [but see إِسْتَؤَرتْ.]”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2933, root ورأ, form 1 وَرَأَ (n41815)",
+          "note": "“He repelled, pushed, or thrust.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-waara",
+      "lang": "ar",
+      "form": "وأر",
+      "translit": "w-ʾ-r",
+      "gloss": "(passive) be frightened",
+      "relation": "possible",
+      "note": "The same three consonants with the last two in the other order. If it belongs here it is by a transposition, so it is recorded as possible only.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3048 (Supplement), root وأر, form 1",
+          "note": "A verse of Lebeed: “… he not being frightened by her (لَمْ يُوأَرْ بِهَا)”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "fear-of-yahweh",
+      "statement": "Scripture defines the fear of Yahweh by what it does. It “is to hate evil” (Pro 8:13); “by the fear of Yahweh one turns from evil” (Pro 16:6); it “is wisdom, and to turn from evil is understanding” (Job 28:28), and is the beginning of wisdom and of knowledge (Pro 9:10; 1:7; Psa 111:10). Abraham's fear of God was known when he did not withhold his son (Gen 22:12), and the whole of man is to “fear God and keep his commandments” (Ecc 12:13). It is not being afraid: at Sinai Moses says in one breath, “Do not fear … God has come that his fear may be on your faces, that you do not sin” (Exo 20:20), and the psalm says, “with you is forgiveness, that you may be feared” (Psa 130:4). Nor is it inborn: Israel was gathered to hear Yahweh's words “that they may learn to fear me” (Deu 4:10), the law was read so that the children “may hear and learn to fear Yahweh” (Deu 31:12-13), and the psalmist says, “the fear of Yahweh I will teach you” (Psa 34:12). So the fear of Yahweh is the reverence for God, learned from his word, that shows itself in obeying him and departing from evil; and it is asked of the ecclesias as it was of Israel: “walking in the fear of the Lord” (Act 9:31), “perfecting holiness in the fear of God” (2Co 7:1), “fear God” (1Pe 2:17; Rev 14:7).",
+      "evidence": [
+        {
+          "ref": "Pro.8.13"
+        },
+        {
+          "ref": "Pro.16.6"
+        },
+        {
+          "ref": "Job.28.28"
+        },
+        {
+          "ref": "Pro.9.10"
+        },
+        {
+          "ref": "Pro.1.7"
+        },
+        {
+          "ref": "Psa.111.10"
+        },
+        {
+          "ref": "Gen.22.12"
+        },
+        {
+          "ref": "Ecc.12.13"
+        },
+        {
+          "ref": "Exo.20.20"
+        },
+        {
+          "ref": "Psa.130.4"
+        },
+        {
+          "ref": "Deu.4.10"
+        },
+        {
+          "ref": "Deu.31.12",
+          "to": "Deu.31.13"
+        },
+        {
+          "ref": "Psa.34.12"
+        },
+        {
+          "ref": "Act.9.31"
+        },
+        {
+          "ref": "2Co.7.1"
+        },
+        {
+          "ref": "1Pe.2.17"
+        },
+        {
+          "ref": "Rev.14.7"
+        }
+      ]
+    },
+    {
+      "topic": "one-god",
+      "statement": "“Yahweh your God you shall fear, and him you shall serve” (Deu 6:13). The covenant set this against all other worship: “you shall not fear other gods … but Yahweh, him you shall fear” (2Ki 17:35-36), and those who “feared Yahweh and served their own gods” are said not to fear Yahweh at all (2Ki 17:33-34). Jesus answered the adversary with this verse, giving its sense as “You shall worship the Lord your God, and him only shall you serve” (Mat 4:10): he puts himself among those who owe that fear to God. Isaiah had said that on the shoot from the stock of Jesse would rest “the spirit of knowledge and of the fear of Yahweh” (Isa 11:2-3), and Hebrews says that in the days of his flesh he prayed with loud cries and tears to the one able to save him from death, “and was heard for his godly fear” (Heb 5:7). The one to be feared and worshipped is therefore one, Yahweh, the Father; and his son, a man on whom his spirit rested, feared and worshipped him.",
+      "evidence": [
+        {
+          "ref": "Deu.6.13"
+        },
+        {
+          "ref": "2Ki.17.33",
+          "to": "2Ki.17.36"
+        },
+        {
+          "ref": "Mat.4.10"
+        },
+        {
+          "ref": "Isa.11.2",
+          "to": "Isa.11.3"
+        },
+        {
+          "ref": "Heb.5.7"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "The fear of man is answered by what man is: “Who are you, that you are afraid of man, who dies, and of the son of man, who is given up as grass, and forget Yahweh your maker?” (Isa 51:12-13). “Yahweh is for me; I will not fear: what can man do to me?” (Psa 118:6, quoted in Heb 13:6); “its fear you shall not fear … Yahweh of armies, he is your fear” (Isa 8:12-13, quoted in 1Pe 3:14-15). Jesus draws the line in the same terms: do not fear those who kill the body and after that can do no more; fear the one who is able to destroy both soul and body in the valley of Hinnom (Mat 10:28; Luk 12:4-5). The one to be feared is the one with power over a man's whole being, and that being, soul as well as body, can be destroyed: the soul is not something that cannot die.",
+      "evidence": [
+        {
+          "ref": "Isa.51.12",
+          "to": "Isa.51.13"
+        },
+        {
+          "ref": "Psa.118.6"
+        },
+        {
+          "ref": "Heb.13.6"
+        },
+        {
+          "ref": "Isa.8.12",
+          "to": "Isa.8.13"
+        },
+        {
+          "ref": "1Pe.3.14",
+          "to": "1Pe.3.15"
+        },
+        {
+          "ref": "Mat.10.28"
+        },
+        {
+          "ref": "Luk.12.4",
+          "to": "Luk.12.5"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "The prophets look to a time when the fear of Yahweh fills the earth: “the nations shall fear the name of Yahweh, and all the kings of the earth your glory, for Yahweh has built Zion; he has appeared in his glory” (Psa 102:16-17); “they shall fear the name of Yahweh from the west, and his glory from the rising of the sun” (Isa 59:19); “God will bless us, and all the ends of the earth shall fear him” (Psa 67:8); “who would not fear you, king of the nations?” (Jer 10:7), taken up in “all the nations shall come and worship before you” (Rev 15:4). Those who fear him now are written in a book of remembrance, and “to you who fear my name the sun of righteousness shall rise” on the day Yahweh is preparing (Mal 3:16-20); at the time when the dead are judged the reward is given “to those who fear your name, the small and the great” (Rev 11:18). The fear of Yahweh is thus the mark of his people now and of the nations of the earth when Zion is built up and he reigns; and to them it is said, “Do not fear, little flock, for it is your Father's good pleasure to give you the kingdom” (Luk 12:32).",
+      "evidence": [
+        {
+          "ref": "Psa.102.16",
+          "to": "Psa.102.17"
+        },
+        {
+          "ref": "Isa.59.19"
+        },
+        {
+          "ref": "Psa.67.8"
+        },
+        {
+          "ref": "Jer.10.7"
+        },
+        {
+          "ref": "Rev.15.4"
+        },
+        {
+          "ref": "Mal.3.16",
+          "to": "Mal.3.20"
+        },
+        {
+          "ref": "Rev.11.18"
+        },
+        {
+          "ref": "Luk.12.32"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key ירא, the brief's key, which is also the root itself; no existing entry had it. Words and keys: verb j.df.aa; participle/adjective j.df.ab; noun יִרְאָה j.df.ac; מוֹרָא j.df.ae. נוֹרָא has no BDB key of its own and is treated under the niphal, of which it is the participle. Token counts overlap by spelling: j.df.aa and j.df.ab share the forms יָרֵא, יְרֵאִים, יִרְאֵי; j.df.ab and j.df.ac share the construct יִרְאַת (the noun, except Pro 31:30, the feminine adjective); j.df.ae and j.df.af (מוֹרָה, Psa 9:21) list the same thirteen tokens, so only j.df.ae is named, and one of the thirteen, Jdg 16:17 מוֹרָה “razor”, is another word. The brief's j.df.aa list also holds forms of רָאָה “see” (וַיִּרְאוּ, יִרְאֶה), which it leaves out itself; Jer 17:8 יִרְאֶה (ketiv, “he shall not see/fear when heat comes”; qere יִרְאֶה from ראה) was not used as evidence. Left out: j.dg.aa יָרָא “shoot; pour” (2Sa 11:24 ketiv, 2Ch 26:15 לִירוֹא, Pro 11:25 יוֹרֶא): these are spellings with א of ירה “throw, shoot; water”, every token is also counted under j.di.aa, and they belong to that root's entry (none yet). Zero-token cross-references m.bc.ad, m.bc.ag, m.di.ad, w.an.am left out. Names: the place יִרְאוֹן Yiron (j.df.ad, Jos 19:38) is a place; תִּירְיָא Tiria (j.df.ag, 1Ch 4:16; TIPNR Tiria@1Ch.4.16) is a person, but nothing in scripture ties the name to this root and the task expected no name entry, so none was drafted: reviewer to decide. Aramaic: Biblical Aramaic and the Peshitta say “fear” with דְּחַל (Dan 5:19; 6:27; Peshitta Act 2:20 דחילא), so the entry has no arc or syc word; the brief's Peshitta section is empty. Cognates: Ugaritic yrʾ from Segert's grammar (pp. 59, 71), read from the OCR text with the page numbers taken from the running heads, page images not checked; Segert's glossary has no entry for it and DULAT was not consulted; the Ugaritic-letter form is the bare root, conventional. Arabic istawraʾat (Lane p. 2933) and wʾr (Lane Supplement p. 3048, where the headword in the vendored file is garbled) are recorded as possible only; the Supplement's fuller treatment of وأر “frighten” was not found in the vendored text. Leads not followed: Arabic وَرِعَ “be timid, abstain from the unlawful” (third consonant ʿ, not ʾ: not a regular correspondence, left out); Old South Arabian and Geʿez (none found in Biella's OCR or Fisher); no Akkadian cognate found (Oracc's arāru “tremble, be convulsed” is a different root). Greek: the alignment in MACULA covers under half the tokens; θεοσεβής / θεοσέβεια (Job 1:1; 28:28; Gen 20:11) and εὐσέβεια (Pro 1:7; Isa 11:2; 33:6) are known Septuagint renderings of the fear of God but are not in the alignment rows checked, so they are not recorded; εὐλάβεια in Heb 5:7 is cited in doctrine only. προσκυνέω is recorded on the strength of Mat 4:10 / Luk 4:8, though the aligned Septuagint has φοβηθήσῃ at Deu 6:13. Open questions for review: (1) whether the adjective should be its own word or folded into the qal; (2) the sense “worship” as distinct from “fear God”; (3) the doctrine items one-god (resting on Mat 4:10, Isa 11:2-3, Heb 5:7) and mortality (Mat 10:28) are reasoned conclusions; (4) Psa 130:4 as showing that the fear of God is not dread."
+}
