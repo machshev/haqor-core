@@ -1,0 +1,402 @@
+{
+  "id": "dov",
+  "root": "דבב",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "animals",
+    "speech"
+  ],
+  "gloss": "bear; adverse report; glide",
+  "summary": "David recalls a bear taking a sheep. The same animal figures in comparisons of rage, danger and, in Isaiah, peace. The index also groups words for an adverse report and for the movement of wine across the lips.",
+  "words": [
+    {
+      "lemma": "דֹּב",
+      "pos": "noun",
+      "gender": "mf",
+      "bdb": [
+        "d.af.ab"
+      ],
+      "gloss": "bear",
+      "senses": [
+        {
+          "id": "bear",
+          "gloss": "bear",
+          "definition": "A wild animal that can take livestock and fiercely defend its young.",
+          "evidence": [
+            {
+              "ref": "1Sa.17.34",
+              "role": "defining",
+              "note": "A bear carries a sheep from David’s flock."
+            },
+            {
+              "ref": "2Ki.2.24",
+              "role": "defining",
+              "note": "Two female bears come out of the forest."
+            },
+            {
+              "ref": "Hos.13.8",
+              "role": "defining",
+              "note": "Yahweh compares his attack to that of a bear bereaved of her cubs."
+            },
+            {
+              "ref": "Isa.11.7",
+              "role": "defining",
+              "note": "The cow grazes with the bear, and their young lie down together."
+            },
+            {
+              "ref": "Isa.59.11",
+              "role": "defining",
+              "note": "The speakers compare their growling to the sound of bears."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bear",
+            "ar-bear",
+            "ug-bear",
+            "gez-bear",
+            "amh-bear",
+            "tig-bear",
+            "nea-bear",
+            "mlt-bear"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דִּבָּה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "d.af.ac"
+      ],
+      "gloss": "adverse report, slander",
+      "senses": [
+        {
+          "gloss": "adverse report",
+          "definition": "An account that discredits someone or something.",
+          "evidence": [
+            {
+              "ref": "Gen.37.2",
+              "role": "defining",
+              "note": "Joseph brings his father a bad report about his brothers."
+            },
+            {
+              "ref": "Num.13.32",
+              "role": "defining",
+              "note": "The scouts circulate a frightening account of the land they explored."
+            }
+          ],
+          "cognate_ids": [
+            "akk-words"
+          ]
+        },
+        {
+          "gloss": "hostile talk",
+          "definition": "Talk that harms someone’s standing or encourages others to act against them.",
+          "evidence": [
+            {
+              "ref": "Jer.20.10",
+              "role": "defining",
+              "note": "Jeremiah hears people urging one another to denounce him."
+            },
+            {
+              "ref": "Pro.10.18",
+              "role": "defining",
+              "note": "Spreading slander is coupled with concealing hatred."
+            },
+            {
+              "ref": "Psa.31.14",
+              "role": "defining",
+              "note": "The whisperers conspire against the speaker’s life."
+            }
+          ],
+          "cognate_ids": [
+            "akk-words"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּבַב",
+      "pos": "verb",
+      "bdb": [
+        "d.af.aa"
+      ],
+      "gloss": "glide, move the lips",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "glide, move the lips",
+          "senses": [
+            {
+              "gloss": "glide over the lips",
+              "definition": "The wine moves smoothly over the lips in the lover’s comparison. A second reading takes the wine as making the sleepers’ lips speak.",
+              "evidence": [
+                {
+                  "ref": "Sng.7.10",
+                  "role": "defining",
+                  "note": "The participle follows the description of good wine going down smoothly."
+                }
+              ],
+              "cognate_ids": [
+                "ar-creep",
+                "akk-speak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דִּבְיוֹנִים",
+      "pos": "noun",
+      "bdb": [
+        "d.af.ad"
+      ],
+      "gloss": "dove’s dung (traditional reading)",
+      "senses": [
+        {
+          "gloss": "dove’s dung",
+          "definition": "A substance sold by the quarter-kab during the siege of Samaria. Its identification is uncertain.",
+          "evidence": [
+            {
+              "ref": "2Ki.6.25",
+              "role": "defining",
+              "note": "The marginal reading names the substance for which five pieces of silver are paid."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֹּב",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "xd.aa.ab"
+      ],
+      "gloss": "bear",
+      "senses": [
+        {
+          "gloss": "bear",
+          "definition": "The animal whose appearance characterizes the second beast in Daniel’s vision.",
+          "evidence": [
+            {
+              "ref": "Dan.7.5",
+              "role": "defining",
+              "note": "The beast resembles a bear and holds three ribs between its teeth."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bear",
+            "ar-bear",
+            "ug-bear",
+            "gez-bear",
+            "amh-bear",
+            "tig-bear",
+            "nea-bear",
+            "mlt-bear"
+          ],
+          "kin": [
+            "bear"
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "דב"
+    },
+    {
+      "lemma": "דֵּבָּא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bear",
+      "senses": [
+        {
+          "gloss": "bear",
+          "definition": "The animal whose feet the visionary beast resembles.",
+          "evidence": [
+            {
+              "ref": "Rev.13.2",
+              "role": "defining",
+              "note": "The beast combines a leopard’s appearance, a bear’s feet and a lion’s mouth."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bear",
+            "ar-bear",
+            "ug-bear",
+            "gez-bear",
+            "amh-bear",
+            "tig-bear",
+            "nea-bear",
+            "mlt-bear"
+          ],
+          "kin": [
+            "bear"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "דבא"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-bear",
+      "lang": "akk",
+      "form": "dabû",
+      "translit": "dabû",
+      "gloss": "bear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000088350"
+        }
+      ]
+    },
+    {
+      "id": "ar-bear",
+      "lang": "ar",
+      "form": "دُبّ",
+      "translit": "dubb",
+      "gloss": "bear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 841, n11948"
+        }
+      ]
+    },
+    {
+      "id": "ug-bear",
+      "lang": "uga",
+      "form": "𐎄𐎁",
+      "translit": "db",
+      "gloss": "bear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "s.v. db; compare Watson, Additional Names for Animals in the Ugaritic Texts, p. 107"
+        }
+      ]
+    },
+    {
+      "id": "gez-bear",
+      "lang": "gez",
+      "form": "ድብ",
+      "translit": "dəbb",
+      "gloss": "bear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 1105, ድብ"
+        }
+      ]
+    },
+    {
+      "id": "amh-bear",
+      "lang": "sem",
+      "form": "ድብ",
+      "translit": "dəbb",
+      "gloss": "bear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "nagato-2022",
+          "locator": "‘Bear’ in Semitic, pp. 273–274, Amharic"
+        }
+      ]
+    },
+    {
+      "id": "tig-bear",
+      "lang": "sem",
+      "form": "ድቢ",
+      "translit": "dəbbi",
+      "gloss": "bear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "nagato-2022",
+          "locator": "‘Bear’ in Semitic, pp. 273–274, Tigrinya"
+        }
+      ]
+    },
+    {
+      "id": "nea-bear",
+      "lang": "arc",
+      "form": "debba",
+      "translit": "debba",
+      "gloss": "bear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "nagato-2022",
+          "locator": "‘Bear’ in Semitic, pp. 273–274, Koy Sanjaq and Hertevin Neo-Aramaic"
+        }
+      ]
+    },
+    {
+      "id": "mlt-bear",
+      "lang": "sem",
+      "form": "debb",
+      "translit": "debb",
+      "gloss": "bear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 55fd2bd045b585c771bae2f7, third gloss"
+        }
+      ]
+    },
+    {
+      "id": "ar-creep",
+      "lang": "ar",
+      "form": "دَبَّ",
+      "translit": "dabba",
+      "gloss": "creep, walk gently",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 841, n11944"
+        }
+      ]
+    },
+    {
+      "id": "akk-words",
+      "lang": "akk",
+      "form": "dibbu",
+      "translit": "dibbu",
+      "gloss": "words, legal case",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tsae x000003700"
+        }
+      ]
+    },
+    {
+      "id": "akk-speak",
+      "lang": "akk",
+      "form": "dabābu",
+      "translit": "dabābu",
+      "gloss": "speak, argue",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tsae x000003680"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The origin of the animal name is separate from the question of speech or movement in Sng 7:10. The Akkadian comparisons leave open whether Hebrew borrowed the report noun. The siege term is a marginal reading whose first element and relationship to this root are uncertain. SEDRA lexeme 638 identifies the Syriac bear in Rev 13:2."
+}
