@@ -1,0 +1,79 @@
+{
+  "id": "tsoneh",
+  "root": "צנה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals",
+    "livestock"
+  ],
+  "gloss": "sheep, flock",
+  "summary": "This rare form stands beside cattle in the psalm’s list of animals. Its sense and consonants connect it with the usual Hebrew collective for flocks.",
+  "words": [
+    {
+      "lemma": "צֹנֶה",
+      "bdb": [
+        "r.cn.ae"
+      ],
+      "pos": "noun",
+      "gloss": "sheep, small livestock",
+      "senses": [
+        {
+          "gloss": "sheep, small livestock",
+          "definition": "Psalm 8 names the sheep and oxen under human care before turning to wild animals, birds and fish. The rare sheep word functions collectively. Numbers has a similar expanded form for the livestock that need enclosures.",
+          "evidence": [
+            {
+              "ref": "Psa.8.8",
+              "to": "Psa.8.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.32.24"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-dan"
+      ],
+      "greek": [
+        {
+          "lemma": "πρόβατον",
+          "gloss": "sheep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 8:8, πρόβατα beside oxen"
+            },
+            {
+              "ref": "Jhn.10.11"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-dan",
+      "lang": "ar",
+      "form": "ضَأْنٌ",
+      "translit": "ḍaʾn",
+      "gloss": "sheep, wool-bearing small cattle",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1760, ضأن, n25416"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ́"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The entry key follows the rare spelling. The common word צֹאן, its Syriac equivalent and the place-name Zaanan already belong to tson. Psalm 8 has neither the usual aleph nor the normal ending. Numbers 32:24 retains the aleph in its suffixed form. The index groups the rare form with צמת, whose verb means to put an end to something."
+}
