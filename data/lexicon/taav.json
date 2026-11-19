@@ -1,0 +1,963 @@
+{
+  "id": "taav",
+  "root": "תעב",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "abhorrence",
+    "idolatry",
+    "holiness",
+    "worship",
+    "justice",
+    "land"
+  ],
+  "gloss": "abhor, detest; abomination, what is abhorrent",
+  "summary": "What is abhorred, and the abhorring of it. The noun תּוֹעֵבָה is a thing someone cannot bear: shepherds and eating with Hebrews were “an abomination to Egyptians”, but above all it is “an abomination to Yahweh”, which he hates: the gods of the nations and their rites, burning children in the fire and inquiring of the dead, lying with a male and the other practices for which the land cast out its peoples, blemished or ill-gotten offerings, false weights, lying lips, a proud heart and the sacrifice of the wicked. In the prophets “your abominations” are the idolatries that defiled Yahweh's land and house and brought the exile. The verb (piel) is to abhor, beside “hate”, and the hiphil is to act abominably. Phoenician tʿbt, “an abomination to Astarte”, is the same noun.",
+  "words": [
+    {
+      "lemma": "תּוֹעֵבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "abomination; abhorrent thing, deed or person; (of idols) an abomination",
+      "bdb": [
+        "w.bg.ab"
+      ],
+      "cognate_ids": [
+        "phn-tabt"
+      ],
+      "summary": "117 times, most in Ezekiel (43), Proverbs (21) and Deuteronomy (17). It is always said from someone's side: an abomination “to” Yahweh, “to” Egyptians, “to” the righteous or the wicked. Nearly always the one who abhors is Yahweh, whether said or understood, and the word marks what he will not bear in his people, his land or his house.",
+      "senses": [
+        {
+          "id": "abhorrent-to",
+          "gloss": "what is abhorrent to someone",
+          "definition": "A thing, act or person that someone cannot bear and turns from, named with לְ or a construct of the one who abhors it.",
+          "evidence": [
+            {
+              "ref": "Pro.29.27",
+              "role": "defining",
+              "note": "“תּוֹעֲבַת צַדִּיקִים is a man of injustice, and תּוֹעֲבַת רָשָׁע is one upright of way”: each abhors the other; the word names a relation, not a quality in the thing."
+            }
+          ],
+          "senses": [
+            {
+              "id": "abhorrent-to-men",
+              "gloss": "abhorrent to men, a people, a king",
+              "definition": "What a man or a people will not touch or bear: a custom held unclean, a hated person, a deed a king cannot allow.",
+              "evidence": [
+                {
+                  "ref": "Gen.43.32",
+                  "role": "defining",
+                  "note": "Egyptians could not eat bread with Hebrews, “for תוֹעֵבָה הִוא לְמִצְרָיִם”."
+                },
+                {
+                  "ref": "Gen.46.34",
+                  "role": "defining",
+                  "note": "“Every shepherd of sheep is an abomination to Egyptians”: so Israel is set apart in Goshen."
+                },
+                {
+                  "ref": "Exo.8.22",
+                  "note": "“We would sacrifice the abomination of the Egyptians before their eyes, and would they not stone us?”"
+                },
+                {
+                  "ref": "Psa.88.9",
+                  "role": "defining",
+                  "note": "“You have put my acquaintances far from me; you have made me תוֹעֵבוֹת to them”: the sufferer shunned."
+                },
+                {
+                  "ref": "Pro.24.9",
+                  "note": "“A mocker is an abomination to man.”"
+                },
+                {
+                  "ref": "Pro.13.19",
+                  "note": "“The abomination of fools is turning away from evil.”"
+                },
+                {
+                  "ref": "Pro.16.12",
+                  "note": "“Doing wickedness is an abomination of kings, for by righteousness is a throne established.”"
+                },
+                {
+                  "ref": "Pro.8.7",
+                  "note": "Wisdom: “wickedness is an abomination to my lips”."
+                },
+                {
+                  "ref": "Pro.29.27"
+                }
+              ],
+              "kin": [
+                "abhor",
+                "be-abhorred"
+              ]
+            },
+            {
+              "id": "abhorrent-to-yahweh",
+              "gloss": "an abomination to Yahweh",
+              "definition": "What Yahweh hates and will not accept: in worship, an offering that is blemished, ill-gotten or brought by the wicked; in conduct, falsehood, injustice and pride; in the law, unclean food and certain practices of men and women.",
+              "evidence": [
+                {
+                  "ref": "Deu.12.31",
+                  "role": "defining",
+                  "note": "“Every תּוֹעֲבַת יַהְוֶה which he hates (אֲשֶׁר שָׂנֵא) they have done for their gods; they even burn their sons and their daughters in the fire.”"
+                },
+                {
+                  "ref": "Pro.6.16",
+                  "to": "Pro.6.19",
+                  "role": "defining",
+                  "note": "“Six things Yahweh hates, and seven are an abomination to his soul”: haughty eyes, a lying tongue, hands shedding innocent blood, a heart devising wicked plans, feet running to evil, a false witness, one who sows strife among brothers."
+                },
+                {
+                  "ref": "Pro.11.1",
+                  "role": "defining",
+                  "note": "“Scales of deceit are תּוֹעֲבַת יַהְוֶה, but a whole stone is his delight (רְצוֹנוֹ).”"
+                },
+                {
+                  "ref": "Pro.15.8",
+                  "role": "defining",
+                  "note": "“The sacrifice of the wicked is an abomination to Yahweh, but the prayer of the upright is his delight.”"
+                },
+                {
+                  "ref": "Pro.15.9",
+                  "note": "“The way of the wicked is an abomination to Yahweh, but he loves one who pursues righteousness.”"
+                },
+                {
+                  "ref": "Deu.17.1",
+                  "role": "defining",
+                  "note": "An ox or sheep with a blemish is not to be sacrificed, “for it is an abomination to Yahweh your God”."
+                },
+                {
+                  "ref": "Deu.23.19",
+                  "note": "The hire of a prostitute and the price of a dog are not brought into Yahweh's house for a vow: “both are an abomination to Yahweh your God”."
+                },
+                {
+                  "ref": "Isa.1.13",
+                  "note": "“Incense is an abomination to me”: worship from hands full of blood (Isa 1:15)."
+                },
+                {
+                  "ref": "Pro.21.27",
+                  "note": "“The sacrifice of the wicked is an abomination; how much more when he brings it with a wicked plan.”"
+                },
+                {
+                  "ref": "Pro.28.9",
+                  "role": "defining",
+                  "note": "“One who turns away his ear from hearing the law, even his prayer is an abomination.”"
+                },
+                {
+                  "ref": "Deu.14.3",
+                  "note": "“You shall not eat any תּוֹעֵבָה”: introducing the unclean animals."
+                },
+                {
+                  "ref": "Deu.22.5",
+                  "note": "A woman wearing a man's things or a man a woman's garment: “all who do these are an abomination to Yahweh your God”."
+                },
+                {
+                  "ref": "Deu.24.4",
+                  "note": "The first husband taking back a wife who has since married another: “it is an abomination before Yahweh”."
+                },
+                {
+                  "ref": "Deu.25.16",
+                  "note": "Two kinds of weights and measures: “all who do injustice are an abomination to Yahweh your God”."
+                },
+                {
+                  "ref": "Pro.20.10"
+                },
+                {
+                  "ref": "Pro.20.23"
+                },
+                {
+                  "ref": "Pro.12.22",
+                  "note": "“Lips of falsehood are an abomination to Yahweh, but those who deal faithfully are his delight.”"
+                },
+                {
+                  "ref": "Pro.3.32",
+                  "note": "“The devious is an abomination to Yahweh, but his counsel is with the upright.”"
+                },
+                {
+                  "ref": "Pro.11.20"
+                },
+                {
+                  "ref": "Pro.15.26",
+                  "note": "“Evil thoughts are an abomination to Yahweh.”"
+                },
+                {
+                  "ref": "Pro.16.5",
+                  "role": "defining",
+                  "note": "“Everyone proud of heart is an abomination to Yahweh.”"
+                },
+                {
+                  "ref": "Pro.17.15",
+                  "note": "“He who justifies the wicked and he who condemns the righteous, both of them are an abomination to Yahweh.”"
+                },
+                {
+                  "ref": "Luk.16.15",
+                  "role": "defining",
+                  "note": "Jesus to the Pharisees: “What is exalted among men is an abomination (βδέλυγμα) before God”: the proud heart of Pro 16:5."
+                }
+              ],
+              "kin": [
+                "abhor"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "abominable-deed",
+          "gloss": "an abominable deed; abominations, the practices of the nations",
+          "definition": "A deed Yahweh abhors, above all the worship of other gods and its rites, and the sexual sins and violence that defiled the land. Often plural, “the abominations of the nations” or “your abominations”, with עָשָׂה “do”.",
+          "evidence": [
+            {
+              "ref": "Lev.18.22",
+              "role": "defining",
+              "note": "“You shall not lie with a male as one lies with a woman; תּוֹעֵבָה הִוא.”"
+            },
+            {
+              "ref": "Lev.18.26",
+              "to": "Lev.18.27",
+              "role": "defining",
+              "note": "“You shall not do any of these abominations … for all these abominations the men of the land did who were before you, and the land became unclean.”"
+            },
+            {
+              "ref": "Lev.18.29"
+            },
+            {
+              "ref": "Lev.18.30"
+            },
+            {
+              "ref": "Lev.20.13",
+              "note": "“Both of them have done an abomination; they shall surely be put to death.”"
+            },
+            {
+              "ref": "Deu.18.9",
+              "to": "Deu.18.12",
+              "role": "defining",
+              "note": "“You shall not learn to do according to the abominations of those nations”: passing a son or daughter through the fire, divination, sorcery, mediums, “one who inquires of the dead (דֹרֵשׁ אֶל־הַמֵּתִים)”, and “because of these abominations Yahweh your God is driving them out”."
+            },
+            {
+              "ref": "Deu.20.18",
+              "note": "“That they may not teach you to do according to all their abominations which they have done for their gods.”"
+            },
+            {
+              "ref": "Deu.13.15",
+              "note": "A city drawn after other gods: “this abomination has been done in your midst”."
+            },
+            {
+              "ref": "Deu.17.4"
+            },
+            {
+              "ref": "1Ki.14.24",
+              "note": "Cult prostitutes in the land: “they did according to all the abominations of the nations”."
+            },
+            {
+              "ref": "2Ki.16.3",
+              "role": "defining",
+              "note": "Ahaz “made his son pass through the fire, according to the abominations of the nations whom Yahweh drove out”."
+            },
+            {
+              "ref": "2Ki.21.2"
+            },
+            {
+              "ref": "2Ki.21.11",
+              "note": "“Manasseh … has done these abominations, more evil than all the Amorites did.”"
+            },
+            {
+              "ref": "Jer.32.35",
+              "role": "defining",
+              "note": "Sons and daughters passed through to Molech in the valley of Ben-Hinnom, “which I did not command them, nor did it come into my heart, to do this abomination”."
+            },
+            {
+              "ref": "Jer.44.4",
+              "note": "“Do not do this abominable thing which I hate.”"
+            },
+            {
+              "ref": "Jer.44.22"
+            },
+            {
+              "ref": "Jer.6.15",
+              "note": "“Were they ashamed when they had done an abomination? No.”"
+            },
+            {
+              "ref": "Jer.7.10",
+              "note": "They stand in the house called by Yahweh's name and say “We are delivered”, to go on doing all these abominations."
+            },
+            {
+              "ref": "Jer.2.7",
+              "note": "“You defiled my land and made my inheritance an abomination.”"
+            },
+            {
+              "ref": "Jer.16.18",
+              "note": "Beside שִׁקּוּצִים: “they have filled my inheritance with their abominations”."
+            },
+            {
+              "ref": "Ezk.8.6",
+              "role": "defining",
+              "note": "In the temple court: “the great abominations that the house of Israel is doing here, to drive me far from my sanctuary”."
+            },
+            {
+              "ref": "Ezk.8.13"
+            },
+            {
+              "ref": "Ezk.8.17"
+            },
+            {
+              "ref": "Ezk.9.4",
+              "note": "A mark on the foreheads of those who sigh and groan over all the abominations done in Jerusalem."
+            },
+            {
+              "ref": "Ezk.5.11",
+              "note": "“You have defiled my sanctuary with all your detestable things (שִׁקּוּצַיִךְ) and all your abominations.”"
+            },
+            {
+              "ref": "Ezk.5.9"
+            },
+            {
+              "ref": "Ezk.6.9",
+              "note": "The survivors “will loathe themselves for the evils they did in all their abominations”."
+            },
+            {
+              "ref": "Ezk.14.6",
+              "note": "“Return, and turn from your idols, and from all your abominations turn your faces.”"
+            },
+            {
+              "ref": "Ezk.16.2",
+              "note": "“Make Jerusalem know her abominations.”"
+            },
+            {
+              "ref": "Ezk.16.22"
+            },
+            {
+              "ref": "Ezk.16.47"
+            },
+            {
+              "ref": "Ezk.16.50",
+              "note": "Sodom “was haughty and did an abomination before me”."
+            },
+            {
+              "ref": "Ezk.16.51"
+            },
+            {
+              "ref": "Ezk.18.12",
+              "to": "Ezk.18.13",
+              "note": "Oppressing the poor, robbery, keeping a pledge, lifting the eyes to idols, usury: “he has done all these abominations; he shall surely die”."
+            },
+            {
+              "ref": "Ezk.18.24"
+            },
+            {
+              "ref": "Ezk.22.11",
+              "note": "“A man has done an abomination with his neighbour's wife.”"
+            },
+            {
+              "ref": "Ezk.33.26",
+              "note": "“You have done an abomination … and shall you possess the land?”"
+            },
+            {
+              "ref": "Ezk.36.31",
+              "note": "Restored, “you will loathe yourselves for your iniquities and your abominations”."
+            },
+            {
+              "ref": "Ezk.43.8",
+              "note": "“They defiled my holy name by their abominations which they did.”"
+            },
+            {
+              "ref": "Ezk.44.6",
+              "to": "Ezk.44.7",
+              "note": "Foreigners uncircumcised in heart and flesh brought into the sanctuary: “enough of all your abominations, house of Israel”."
+            },
+            {
+              "ref": "Ezk.44.13"
+            },
+            {
+              "ref": "Mal.2.11",
+              "role": "defining",
+              "note": "“An abomination has been done in Israel and in Jerusalem: Judah has profaned the holiness of Yahweh … and married the daughter of a foreign god.”"
+            },
+            {
+              "ref": "Ezr.9.1",
+              "note": "The people had not separated themselves from the peoples of the lands “according to their abominations”."
+            },
+            {
+              "ref": "Ezr.9.11",
+              "note": "“A land unclean … by their abominations, which have filled it from end to end with their uncleanness.”"
+            },
+            {
+              "ref": "Ezr.9.14"
+            },
+            {
+              "ref": "2Ch.28.3"
+            },
+            {
+              "ref": "2Ch.33.2"
+            },
+            {
+              "ref": "2Ch.36.8"
+            },
+            {
+              "ref": "2Ch.36.14",
+              "note": "Priests and people “according to all the abominations of the nations, and they defiled the house of Yahweh”."
+            },
+            {
+              "ref": "Pro.26.25",
+              "note": "Of the deceiver: “seven abominations are in his heart”."
+            },
+            {
+              "ref": "Rev.21.27",
+              "note": "Nothing enters the city “that does abomination (ποιῶν βδέλυγμα) and falsehood”: the Hebrew עָשָׂה תּוֹעֵבָה."
+            },
+            {
+              "ref": "Rev.17.4",
+              "to": "Rev.17.5",
+              "note": "Babylon's cup “full of abominations”; she is “the mother of harlots and of the abominations of the earth”."
+            }
+          ],
+          "kin": [
+            "act-abominably",
+            "make-abhorrent"
+          ]
+        },
+        {
+          "id": "idol-abomination",
+          "gloss": "an abomination: an idol, a foreign god",
+          "definition": "The idol or god itself, named by what it is to Yahweh: the gods of the nations and the images and the precious metal on them.",
+          "evidence": [
+            {
+              "ref": "2Ki.23.13",
+              "role": "defining",
+              "note": "Josiah defiled the high places Solomon built for Ashtoreth “the detestable thing (שִׁקֻּץ) of the Sidonians”, Chemosh “the detestable thing of Moab”, and Milcom “תּוֹעֲבַת בְּנֵי־עַמּוֹן”."
+            },
+            {
+              "ref": "Isa.44.19",
+              "role": "defining",
+              "note": "Of the wood half burned for bread: “shall I make the rest of it לְתוֹעֵבָה? Shall I bow down to a block of wood?”"
+            },
+            {
+              "ref": "Deu.7.25",
+              "to": "Deu.7.26",
+              "role": "defining",
+              "note": "The silver and gold on the images of their gods “is an abomination to Yahweh your God … do not bring an abomination into your house”."
+            },
+            {
+              "ref": "Deu.27.15",
+              "note": "“Cursed is the man who makes a carved or cast image, an abomination to Yahweh, the work of a craftsman's hands.”"
+            },
+            {
+              "ref": "Deu.32.16",
+              "note": "“They made him jealous with strange gods; with abominations they provoked him.”"
+            },
+            {
+              "ref": "Ezk.7.20",
+              "note": "Of their ornaments “they made the images of their abominations, their detestable things”."
+            },
+            {
+              "ref": "2Ch.34.33",
+              "note": "“Josiah took away all the abominations from all the lands belonging to the sons of Israel.”"
+            },
+            {
+              "ref": "Isa.41.24",
+              "note": "To the idols: “you are of nothing … an abomination is he who chooses you”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βδέλυγμα",
+          "gloss": "abomination, detestable thing",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.18.22; Deu.7.25; Deu.17.1; Pro.11.1; Pro.15.8; Isa.44.19; Mal.2.11, תּוֹעֵבָה → βδέλυγμα; βδέλυγμα renders תּוֹעֵבָה ×48"
+            },
+            {
+              "ref": "Luk.16.15",
+              "role": "defining",
+              "note": "“What is exalted among men is an abomination before God”: the proud heart that is תּוֹעֲבַת יַהְוֶה (Pro 16:5)."
+            },
+            {
+              "ref": "Rev.21.27",
+              "note": "“One who does abomination and falsehood”: עָשָׂה תּוֹעֵבָה."
+            },
+            {
+              "ref": "Rev.17.4",
+              "to": "Rev.17.5"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνομία",
+          "gloss": "lawlessness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.8.6; Ezk.9.4; Ezk.18.13; Ezk.18.24, תּוֹעֵבָה → ἀνομία; ×9, all in Ezekiel"
+            },
+            {
+              "ref": "Mat.24.12",
+              "note": "“Because lawlessness will be multiplied, the love of many will grow cold.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שִׁקּוּץ",
+            "note": "“Detestable thing”, of idols: set beside the abominations, and its verb שִׁקֵּץ beside תִּעֵב.",
+            "evidence": [
+              {
+                "ref": "Deu.7.26",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.23.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.16.18"
+              },
+              {
+                "ref": "Ezk.5.11"
+              },
+              {
+                "ref": "Ezk.7.20"
+              },
+              {
+                "ref": "Ezk.11.18"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׂנֵא",
+            "note": "“Hate”: what Yahweh hates is his abomination.",
+            "evidence": [
+              {
+                "ref": "Deu.12.31",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.6.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.44.4"
+              }
+            ]
+          },
+          {
+            "lemma": "טֻמְאָה",
+            "note": "“Uncleanness”: the abominations make the land unclean.",
+            "evidence": [
+              {
+                "ref": "Ezr.9.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.18.27"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "רָצוֹן",
+            "note": "“Delight, acceptance”: what Yahweh accepts against what he abhors.",
+            "evidence": [
+              {
+                "ref": "Pro.11.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.11.20"
+              },
+              {
+                "ref": "Pro.12.22"
+              },
+              {
+                "ref": "Pro.15.8",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "אָהַב",
+            "note": "“Love”: the way of the wicked against the one he loves.",
+            "evidence": [
+              {
+                "ref": "Pro.15.9",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "תּוֹעֲבַת יַהְוֶה",
+            "gloss": "an abomination to Yahweh",
+            "evidence": [
+              {
+                "ref": "Deu.7.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.17.1"
+              },
+              {
+                "ref": "Pro.11.1"
+              },
+              {
+                "ref": "Pro.15.8"
+              }
+            ]
+          },
+          {
+            "phrase": "תּוֹעֲבֹת הַגּוֹיִם",
+            "gloss": "the abominations of the nations (whom Yahweh drove out)",
+            "evidence": [
+              {
+                "ref": "2Ki.16.3",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.14.24"
+              },
+              {
+                "ref": "2Ki.21.2"
+              },
+              {
+                "ref": "2Ch.28.3"
+              },
+              {
+                "ref": "2Ch.33.2"
+              },
+              {
+                "ref": "2Ch.36.14"
+              }
+            ]
+          },
+          {
+            "phrase": "עָשָׂה תּוֹעֵבָה",
+            "gloss": "do an abomination",
+            "evidence": [
+              {
+                "ref": "Lev.20.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.6.15"
+              },
+              {
+                "ref": "Ezk.22.11"
+              },
+              {
+                "ref": "Mal.2.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תָּעַב",
+      "pos": "verb",
+      "gloss": "abhor, detest; make abhorrent; act abominably; be abhorred",
+      "bdb": [
+        "w.bg.ac",
+        "w.ab.ac"
+      ],
+      "cognate_ids": [
+        "arc-teev"
+      ],
+      "summary": "23 times, in the piel, hiphil and niphal; no qal. Its parallel is שָׂנֵא “hate” and its opposite אָהַב “love”. Amo 6:8 spells the participle with א, מְתָאֵב, beside “I hate”; it is the same verb (BDB's תָּאַב w.ab.ac, “see תעב”).",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "abhor, detest, loathe; make abhorrent",
+          "senses": [
+            {
+              "id": "abhor",
+              "gloss": "abhor, detest, loathe",
+              "definition": "To turn from someone or something as unbearable: men from the upright, the sick from food, friends from the sufferer; Yahweh from the man of blood, the pride of Jacob, and once his own inheritance.",
+              "evidence": [
+                {
+                  "ref": "Deu.7.26",
+                  "role": "defining",
+                  "note": "Of the silver and gold of the idols: “שַׁקֵּץ תְּשַׁקְּצֶנּוּ וְתַעֵב תְּתַעֲבֶנּוּ, for it is devoted”: the verb answers the noun תּוֹעֵבָה of the same verse."
+                },
+                {
+                  "ref": "Psa.119.163",
+                  "role": "defining",
+                  "note": "“Falsehood I hate (שָׂנֵאתִי) and abhor (וַאֲתַעֵבָה); your law I love.”"
+                },
+                {
+                  "ref": "Amo.5.10",
+                  "role": "defining",
+                  "note": "“They hate the reprover in the gate, and abhor the one who speaks blamelessly.”"
+                },
+                {
+                  "ref": "Amo.6.8",
+                  "role": "defining",
+                  "note": "“מְתָאֵב אָנֹכִי the pride of Jacob, and his citadels I hate.”"
+                },
+                {
+                  "ref": "Psa.5.7",
+                  "note": "“The man of blood and deceit Yahweh abhors.”"
+                },
+                {
+                  "ref": "Psa.106.40",
+                  "note": "“The anger of Yahweh burned against his people, and he abhorred his inheritance”, after they served the idols of Canaan (Psa 106:36–38)."
+                },
+                {
+                  "ref": "Mic.3.9",
+                  "note": "The rulers “who abhor justice and twist all that is straight”."
+                },
+                {
+                  "ref": "Deu.23.8",
+                  "role": "defining",
+                  "note": "“You shall not abhor an Edomite, for he is your brother; you shall not abhor an Egyptian, for you were a sojourner in his land.”"
+                },
+                {
+                  "ref": "Psa.107.18",
+                  "role": "defining",
+                  "note": "“Their soul abhorred all food, and they drew near to the gates of death.”"
+                },
+                {
+                  "ref": "Job.19.19",
+                  "note": "“All the men of my counsel abhor me, and those I loved have turned against me.”"
+                },
+                {
+                  "ref": "Job.30.10",
+                  "note": "“They abhor me, they keep far from me, and do not spare to spit in my face.”"
+                },
+                {
+                  "ref": "Job.9.31",
+                  "note": "“You would plunge me into a pit, and my own clothes would abhor me.”"
+                },
+                {
+                  "ref": "Isa.49.7",
+                  "note": "To the servant, “one despised of soul, one the nation abhors (לִמְתָעֵב גּוֹי)”: kings will see and rise."
+                }
+              ],
+              "kin": [
+                "abhorrent-to-men",
+                "abhorrent-to-yahweh"
+              ]
+            },
+            {
+              "id": "make-abhorrent",
+              "gloss": "make abhorrent",
+              "definition": "To make something a thing to be abhorred.",
+              "evidence": [
+                {
+                  "ref": "Ezk.16.25",
+                  "role": "defining",
+                  "note": "Jerusalem the harlot: “you built your high place at the head of every road וַתְּתַעֲבִי אֶת־יָפְיֵךְ”: made your beauty abhorrent."
+                }
+              ],
+              "kin": [
+                "abominable-deed"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "act abominably",
+          "senses": [
+            {
+              "id": "act-abominably",
+              "gloss": "act abominably, do abominable deeds",
+              "definition": "To do what is an abomination, of idolatry and of the corrupt who deny God.",
+              "evidence": [
+                {
+                  "ref": "1Ki.21.26",
+                  "role": "defining",
+                  "note": "Ahab “וַיַּתְעֵב מְאֹד in going after idols, according to all that the Amorites did”."
+                },
+                {
+                  "ref": "Ezk.16.52",
+                  "role": "defining",
+                  "note": "“Your sins in which you acted more abominably than they.”"
+                },
+                {
+                  "ref": "Psa.14.1",
+                  "role": "defining",
+                  "note": "“The fool says in his heart, ‘There is no God.’ They are corrupt, הִתְעִיבוּ עֲלִילָה; there is none who does good”; quoted at Rom 3:10–12."
+                },
+                {
+                  "ref": "Psa.53.2"
+                }
+              ],
+              "kin": [
+                "abominable-deed"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be abhorred, be abominable",
+          "senses": [
+            {
+              "id": "be-abhorred",
+              "gloss": "be abhorred, abominable",
+              "definition": "To be a thing abhorred: of a cast-off branch, a corrupt man, a command a servant cannot bear to carry out.",
+              "evidence": [
+                {
+                  "ref": "Isa.14.19",
+                  "role": "defining",
+                  "note": "The king of Babylon “cast out of your grave like an abhorred branch (כְּנֵצֶר נִתְעָב)”."
+                },
+                {
+                  "ref": "Job.15.16",
+                  "role": "defining",
+                  "note": "“How much less one who is abominable and corrupt, a man who drinks iniquity like water.”"
+                },
+                {
+                  "ref": "1Ch.21.6",
+                  "role": "defining",
+                  "note": "Joab did not number Levi and Benjamin, “for the king's word was abhorrent to Joab”."
+                }
+              ],
+              "kin": [
+                "abhorrent-to-men"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βδελύσσομαι",
+          "gloss": "abhor, detest",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.7.26, תְּתַעֲבֶנּוּ → βδελύξῃ; Psa.5.7, יְתָעֵב → βδελύσσεται; Psa.119.163, וַאֲתַעֵבָה → ἐβδελυξάμην; Amo.5.10, יְתָעֵבוּ → ἐβδελύξαντο"
+            },
+            {
+              "ref": "Rom.2.22",
+              "note": "“You who abhor (βδελυσσόμενος) idols, do you rob temples?”: the abhorring of idols the law commands (Deu 7:26)."
+            },
+            {
+              "ref": "Rev.21.8",
+              "note": "“The abominable (ἐβδελυγμένοις)” among those whose part is the second death."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-tabt",
+      "lang": "phn",
+      "form": "𐤕𐤏𐤁𐤕",
+      "translit": "tʿbt",
+      "gloss": "abomination",
+      "relation": "cognate",
+      "note": "The same noun, with the same construction as תּוֹעֲבַת יַהְוֶה: Tabnit king of Sidon on his coffin, “do not open it and do not disturb me, for that act is an abomination to Astarte (tʿbt ʿštrt)” (KAI 13.6). Phoenician writes one ע for both older sounds, so it does not show which stands behind it.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 495, TʿBT",
+          "note": "“[Heb. toʿeba] n.f. ABOMINATION”; KAI 13.6/6 (Ph) ʾl ʾl tptḥ ʿlty wʾl trgzn k tʿbt ʿštrt hdbr hʾ, “for that act is an abomination to Astarte!”"
+        }
+      ]
+    },
+    {
+      "id": "arc-teev",
+      "lang": "arc",
+      "form": "תְּעֵב, אַתְעֵב",
+      "translit": "tʿēḇ, ʾaṯʿēḇ",
+      "gloss": "(aphel) act abominably",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targum of Ezk 16:52, where it renders the Hebrew hiphil of the same verse: it shows the verb in Aramaic with the hiphil's sense, but is not independent of the Hebrew text. Aramaic, like Hebrew, writes one ע.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּעֵב",
+          "note": "“Af. to act abominably. Targ. Ez. XVI, 52.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "inquiring-of-the-dead",
+      "statement": "Among “the abominations of those nations” for which Yahweh drove them out of the land, the law names “one who inquires of the dead (דֹרֵשׁ אֶל־הַמֵּתִים)”, with mediums and spiritists: “all who do these are an abomination to Yahweh” (Deu 18:9–12). Isaiah asks the reason: “should not a people inquire of their God? On behalf of the living, to the dead?” (Isa 8:19). Scripture's account of the dead is that “the dead know nothing” (Ecc 9:5), and that when man's breath goes out he returns to his ground and “on that day his thoughts perish” (Psa 146:4). So seeking the dead is not only forbidden but empty: there is no one there to answer, and it turns a people from the living God who alone can raise the dead.",
+      "evidence": [
+        {
+          "ref": "Deu.18.9",
+          "to": "Deu.18.12",
+          "role": "defining"
+        },
+        {
+          "ref": "Isa.8.19",
+          "role": "defining"
+        },
+        {
+          "ref": "Ecc.9.5",
+          "role": "defining"
+        },
+        {
+          "ref": "Psa.146.4"
+        }
+      ]
+    },
+    {
+      "topic": "acceptable-worship",
+      "statement": "The law calls a blemished sacrifice “an abomination to Yahweh” (Deu 17:1), and the proverbs carry the same word from the offering to the offerer: “the sacrifice of the wicked is an abomination to Yahweh, but the prayer of the upright is his delight” (Pro 15:8; 21:27), and “one who turns away his ear from hearing the law, even his prayer is an abomination” (Pro 28:9). Isaiah hears Yahweh say of Jerusalem's incense, new moons and sabbaths, “incense is an abomination to me … your hands are full of blood” (Isa 1:13–15), and Jeremiah of those who come into the house called by his name saying “we are delivered” so as to go on doing these abominations (Jer 7:9–10). What makes worship acceptable or abhorrent is the worshipper's obedience, not the rite; and Jesus applies the word to the heart: “what is exalted among men is an abomination before God” (Luk 16:15).",
+      "evidence": [
+        {
+          "ref": "Deu.17.1"
+        },
+        {
+          "ref": "Pro.15.8",
+          "role": "defining"
+        },
+        {
+          "ref": "Pro.21.27"
+        },
+        {
+          "ref": "Pro.28.9",
+          "role": "defining"
+        },
+        {
+          "ref": "Isa.1.13",
+          "to": "Isa.1.15",
+          "role": "defining"
+        },
+        {
+          "ref": "Jer.7.9",
+          "to": "Jer.7.10"
+        },
+        {
+          "ref": "Luk.16.15"
+        }
+      ]
+    },
+    {
+      "topic": "land",
+      "statement": "Yahweh's land does not bear abominations: the nations before Israel did them “and the land became unclean”, and Israel is warned not to do them “so that the land does not vomit you out” (Lev 18:26–28); the nations are driven out “because of these abominations” (Deu 18:12). When Israel did the same, Yahweh said, “you defiled my land and made my inheritance an abomination” (Jer 2:7), and the land became “a desolation … without inhabitant” (Jer 44:22). Ezekiel asks the men left in the ruins, “you have done an abomination … and shall you possess the land?” (Ezk 33:26). The land is held on the terms of its owner, who gives it to those who keep his ways.",
+      "evidence": [
+        {
+          "ref": "Lev.18.26",
+          "to": "Lev.18.28",
+          "role": "defining"
+        },
+        {
+          "ref": "Deu.18.12"
+        },
+        {
+          "ref": "Jer.2.7",
+          "role": "defining"
+        },
+        {
+          "ref": "Jer.44.22"
+        },
+        {
+          "ref": "Ezk.33.26",
+          "role": "defining"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-19. Root key תעב (BDB w.bg.aa). All BDB keys under the root are assigned: w.bg.ab the noun (BDB's heading is pointed תּוֹעֵבַה; written here תּוֹעֵבָה), w.bg.ac the verb, and w.ab.ac (תָּאַב “see תעב”, 0 tokens) on the verb, since its one form, מְתָאֵב at Amo 6:8, is counted in the brief under the piel. The other תאב, “long for” (Psa 119:20, 40, 174), is a different root and not here. No personal names are formed from the root. Open questions: (1) the noun's form, with prefixed ת and ō, suggests the noun is primary and the verb formed from it, or that both go back to a root יעב / ועב; no cognate evidence for such a root was found, and the entry keeps the corpus's key. (2) No cognate shows which older sound stands behind ע: Phoenician and Aramaic write one ע. Arabic تَعِبَ taʿiba is “be tired, fatigued” (Lane Book I, p. 307, art. تعب), which does not share the meaning and is not recorded as a cognate; Akkadian tebû “arise” (from the brief's sound search) has no tie. Syriac (SEDRA) has no ܬܥܒ. (3) The Jewish Aramaic aphel is attested only in the Targum to the same verse (Ezk 16:52), so it adds little independent support; Mishnaic Hebrew uses the piel “declare forbidden” (Jastrow s.v. תָּעַב), which is Hebrew, not a cognate. (4) The LXX Pro 16:5 has ἀκάθαρτος, not βδέλυγμα; Luk 16:15 is linked to it by sense, not by quotation. Leads not followed: Ugaritic (DULAT not vendored) and Old South Arabian."
+}
