@@ -1,0 +1,391 @@
+{
+  "id": "chaser",
+  "root": "חסר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "need",
+    "quantity"
+  ],
+  "gloss": "lack, diminish",
+  "summary": "A person can lack food, money or understanding. The verb can also describe something dwindling or someone being made less in relation to another.",
+  "words": [
+    {
+      "lemma": "חָסֵר",
+      "bdb": [
+        "h.ej.aa"
+      ],
+      "pos": "verb",
+      "gloss": "lack, diminish",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be in want or decrease",
+          "senses": [
+            {
+              "gloss": "be in want or decrease",
+              "definition": "Israel lacked nothing during the wilderness journey. The speaker who calls Yahweh his shepherd expects to lack nothing. The floodwaters steadily diminish.",
+              "evidence": [
+                {
+                  "ref": "Deu.2.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.23.1"
+                },
+                {
+                  "ref": "Gen.8.3",
+                  "to": "Gen.8.5"
+                }
+              ],
+              "id": "lack"
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make less, deprive",
+          "senses": [
+            {
+              "gloss": "make less, deprive",
+              "definition": "In Psalm 8 God places humanity a little below elohim and crowns it with glory. Ecclesiastes pictures a man depriving himself of good while he labours alone.",
+              "evidence": [
+                {
+                  "ref": "Psa.8.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ecc.4.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "have too little or cause to be without",
+          "senses": [
+            {
+              "gloss": "have too little or cause to be without",
+              "definition": "When the manna is measured, the person who gathered little has enough. Isaiah describes a fool who deprives a thirsty person of drink.",
+              "evidence": [
+                {
+                  "ref": "Exo.16.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.32.6"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-khasira"
+      ],
+      "greek": [
+        {
+          "lemma": "ἐλαττόω",
+          "gloss": "make lower",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 8:6, quoted in Hebrews"
+            },
+            {
+              "ref": "Heb.2.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָסֵר",
+      "bdb": [
+        "h.ej.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "lacking, deficient",
+      "senses": [
+        {
+          "gloss": "lacking, deficient",
+          "definition": "A youth lacking sense appears among the inexperienced. Achish ironically asks whether he lacks madmen.",
+          "evidence": [
+            {
+              "ref": "Pro.7.7",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.21.16"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "מַחְסוֹר",
+      "bdb": [
+        "h.ej.ag",
+        "m.bn.bg"
+      ],
+      "pos": "noun",
+      "gloss": "need, shortage",
+      "senses": [
+        {
+          "gloss": "need, shortage",
+          "definition": "Israel must supply a poor brother’s need. Proverbs says that toil brings profit while mere talk leads to poverty.",
+          "evidence": [
+            {
+              "ref": "Deu.15.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.14.23"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "חֹסֶר",
+      "bdb": [
+        "h.ej.ac"
+      ],
+      "pos": "noun",
+      "gloss": "lack, deprivation",
+      "senses": [
+        {
+          "gloss": "lack, deprivation",
+          "definition": "The people have bread withheld. Deuteronomy describes hunger, thirst and lack of everything.",
+          "evidence": [
+            {
+              "ref": "Amo.4.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.28.48"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "חֶסֶר",
+      "bdb": [
+        "h.ej.ab"
+      ],
+      "pos": "noun",
+      "gloss": "poverty, want",
+      "senses": [
+        {
+          "gloss": "poverty, want",
+          "definition": "A man hurrying after wealth fails to see the want ahead of him. Job describes men gaunt from hunger and poverty.",
+          "evidence": [
+            {
+              "ref": "Pro.28.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.30.3"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "חֶסְרוֹן",
+      "bdb": [
+        "h.ej.af"
+      ],
+      "pos": "noun",
+      "gloss": "what is missing",
+      "senses": [
+        {
+          "gloss": "what is missing",
+          "definition": "The observer cannot count what is missing, just as he cannot straighten what is crooked.",
+          "evidence": [
+            {
+              "ref": "Ecc.1.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "חַסִּיר",
+      "bdb": [
+        "xh.al.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "deficient",
+      "senses": [
+        {
+          "gloss": "deficient",
+          "definition": "Daniel tells the king that he has been weighed on the scales and found wanting.",
+          "evidence": [
+            {
+              "ref": "Dan.5.27",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "חְסַר",
+      "pos": "verb",
+      "gloss": "lack, suffer loss",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "run short or suffer loss",
+          "senses": [
+            {
+              "gloss": "run short or suffer loss",
+              "definition": "The wine runs short at Cana. Jesus asks the disciples whether they lacked anything when he sent them out.",
+              "evidence": [
+                {
+                  "ref": "Jhn.2.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.22.35"
+                },
+                {
+                  "ref": "1Co.3.15"
+                }
+              ],
+              "kin": [
+                "lack"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "חוּסְרָנָא",
+      "pos": "noun",
+      "gloss": "loss, damage",
+      "senses": [
+        {
+          "gloss": "loss, damage",
+          "definition": "Paul warns of damage at sea and later describes what he counted as loss for Christ.",
+          "evidence": [
+            {
+              "ref": "Act.27.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Php.3.7",
+              "to": "Php.3.8"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "חַסִּירָא",
+      "pos": "adjective",
+      "gloss": "lacking",
+      "senses": [
+        {
+          "gloss": "lacking",
+          "definition": "Jesus tells the rich man that he still lacks one thing. James speaks of lacking wisdom.",
+          "evidence": [
+            {
+              "ref": "Mrk.10.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Jas.1.5"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    },
+    {
+      "lemma": "חַסִּירוּתָא",
+      "pos": "noun",
+      "gloss": "want, deficiency",
+      "senses": [
+        {
+          "gloss": "want, deficiency",
+          "definition": "The widow gives out of her poverty. Paul has learned how to live with need and with plenty.",
+          "evidence": [
+            {
+              "ref": "Mrk.12.44",
+              "role": "defining"
+            },
+            {
+              "ref": "Php.4.12"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-khasira"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-khasira",
+      "lang": "ar",
+      "form": "خَسِرَ",
+      "translit": "ḫasira",
+      "gloss": "suffer loss",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 736, خَسِرَ n10590"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Psalm 8 does not specify the dimension in which humanity is a little lower. Hebrews 2:7 quotes the Greek rendering with angels, and 2:9 applies the passage to Jesus."
+}
