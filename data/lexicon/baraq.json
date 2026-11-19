@@ -1,0 +1,231 @@
+{
+  "id": "baraq",
+  "root": "ברק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "weather",
+    "light"
+  ],
+  "gloss": "lightning, flash",
+  "summary": "The noun can describe a flash in the sky or light reflected by a blade. Psalm 18:15 uses the masculine plural noun בְרָקִים in parallel with arrows.",
+  "words": [
+    {
+      "lemma": "בָּרָק",
+      "bdb": [
+        "b.df.ab"
+      ],
+      "pos": "noun",
+      "gloss": "lightning, flash",
+      "senses": [
+        {
+          "gloss": "lightning",
+          "definition": "David describes arrows and flashes of lightning scattering his foes. In Ezekiel’s vision lightning comes out of the fire among the living creatures.",
+          "evidence": [
+            {
+              "ref": "Psa.18.15",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.22.15"
+            },
+            {
+              "ref": "Ezk.1.13"
+            }
+          ]
+        },
+        {
+          "gloss": "flash of a weapon",
+          "definition": "The gleam of a sharpened sword is called its lightning.",
+          "evidence": [
+            {
+              "ref": "Deu.32.41",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.21.15"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-barq",
+        "syc-barqa"
+      ]
+    },
+    {
+      "lemma": "בָּרַק",
+      "bdb": [
+        "b.df.aa"
+      ],
+      "pos": "verb",
+      "gloss": "flash",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "send a flash",
+          "senses": [
+            {
+              "gloss": "send a flash",
+              "definition": "David asks Yahweh to flash lightning and scatter his enemies, pairing the verb with its cognate noun.",
+              "evidence": [
+                {
+                  "ref": "Psa.144.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-barq",
+        "syc-barqa"
+      ]
+    },
+    {
+      "lemma": "בָּרֶקֶת",
+      "bdb": [
+        "b.df.ae",
+        "b.df.af"
+      ],
+      "pos": "noun",
+      "gloss": "a precious stone",
+      "senses": [
+        {
+          "gloss": "a precious stone",
+          "definition": "The third stone in the first row of the priestly breastpiece also appears among the gems in Ezekiel’s lament over Tyre. The latter passage has the form בָּרְקַת.",
+          "evidence": [
+            {
+              "ref": "Exo.28.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.39.10"
+            },
+            {
+              "ref": "Ezk.28.13"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "בַּרְקָנִים",
+      "bdb": [
+        "b.df.ah"
+      ],
+      "pos": "noun",
+      "gloss": "briers",
+      "senses": [
+        {
+          "gloss": "briers",
+          "definition": "Gideon threatens to punish the men of Succoth with wilderness thorns and briers, then returns with them.",
+          "evidence": [
+            {
+              "ref": "Jdg.8.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.8.16"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "ברק",
+      "pos": "verb",
+      "gloss": "flash, gleam",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "flash",
+          "senses": [
+            {
+              "gloss": "flash",
+              "definition": "Lightning shines from one end of the sky to the other in Jesus’ comparison.",
+              "evidence": [
+                {
+                  "ref": "Luk.17.24",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "gleam",
+          "senses": [
+            {
+              "gloss": "gleam",
+              "definition": "The women at the tomb see two men in gleaming garments.",
+              "evidence": [
+                {
+                  "ref": "Luk.24.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "בַּרְקָא",
+      "pos": "noun",
+      "gloss": "lightning",
+      "senses": [
+        {
+          "gloss": "lightning",
+          "definition": "The messenger at the tomb has an appearance like lightning.",
+          "evidence": [
+            {
+              "ref": "Mat.28.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-barq",
+      "lang": "ar",
+      "form": "بَرْق",
+      "translit": "barq",
+      "gloss": "lightning",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 190, n2313, بَرْقٌ"
+        }
+      ]
+    },
+    {
+      "id": "syc-barqa",
+      "lang": "syc",
+      "form": "ܒܪܩܐ",
+      "translit": "barqā",
+      "gloss": "lightning",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 486, gloss 798; Matthew 28:3; compare verb 485"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The index key for the plural in Psalm 18 points to the verb, although the form is nominal. The precise gemstone species and the proposed connection of the brier name with lightning are uncertain."
+}
