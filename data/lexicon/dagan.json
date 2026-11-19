@@ -1,0 +1,85 @@
+{
+  "id": "dagan",
+  "root": "דגנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "agriculture",
+    "harvest"
+  ],
+  "gloss": "grain, cereal produce",
+  "summary": "The grain is what comes from the threshing floor. An abundant harvest can feed a household and supply a tithe. Psalm 4 pairs grain and new wine when speaking of gladness.",
+  "words": [
+    {
+      "lemma": "דָּגָן",
+      "bdb": [
+        "d.am.ab"
+      ],
+      "pos": "noun",
+      "gloss": "grain",
+      "senses": [
+        {
+          "gloss": "grain of the harvest",
+          "definition": "The grain comes from the threshing floor. It can be stored, tithed or lent, and is often named beside wine and oil as produce of the land.",
+          "evidence": [
+            {
+              "ref": "Num.18.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.12.17"
+            },
+            {
+              "ref": "Neh.5.10"
+            },
+            {
+              "ref": "Neh.13.5"
+            }
+          ],
+          "cognate_ids": [
+            "phn-dgn"
+          ]
+        },
+        {
+          "gloss": "grain as a measure of plenty",
+          "definition": "Isaac blesses Jacob with plentiful grain and wine. David measures his gladness against the joy of a rich harvest.",
+          "evidence": [
+            {
+              "ref": "Gen.27.28",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.4.8"
+            },
+            {
+              "ref": "Hos.2.10"
+            }
+          ],
+          "cognate_ids": [
+            "phn-dgn"
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-dgn",
+      "lang": "phn",
+      "form": "דגנ",
+      "translit": "dgn",
+      "gloss": "grain",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 146, DGN, KAI 14.18–19"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The biblical noun does not identify a particular cereal. The similar name Dagon belongs to the Philistine god in Judges 16:23. That verse gives no derivation of the name."
+}
