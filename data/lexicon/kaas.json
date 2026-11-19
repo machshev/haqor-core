@@ -1,0 +1,187 @@
+{
+  "id": "kaas",
+  "root": "כעס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "anger",
+    "grief"
+  ],
+  "gloss": "be vexed, provoke anger",
+  "summary": "Distress can be seen in tears or in an angry response. Hannah weeps at her rival’s taunting, and Asa imprisons the man whose words angered him. Israel repeatedly provokes Yahweh by serving other gods.",
+  "words": [
+    {
+      "lemma": "כָּעַס",
+      "bdb": [
+        "k.cn.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be angry, provoke",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "become angry",
+          "senses": [
+            {
+              "gloss": "become angry",
+              "definition": "Asa is so angry with the seer who speaks against him that he puts him in prison. The psalm depicts the wicked grinding their teeth.",
+              "evidence": [
+                {
+                  "ref": "2Ch.16.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.112.10"
+                },
+                {
+                  "ref": "Ecc.7.9"
+                }
+              ],
+              "id": "angry",
+              "kin": [
+                "anger"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "provoke, vex",
+          "senses": [
+            {
+              "gloss": "provoke, vex",
+              "definition": "Hannah’s rival deliberately provokes her over her childlessness until she weeps and cannot eat.",
+              "evidence": [
+                {
+                  "ref": "1Sa.1.6",
+                  "to": "1Sa.1.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.32.21"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause anger",
+          "senses": [
+            {
+              "gloss": "cause anger",
+              "definition": "Israel provokes Yahweh by worshipping other gods. In the song of Moses he answers in kind by stirring Israel through another people.",
+              "evidence": [
+                {
+                  "ref": "Deu.32.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.32.21"
+                },
+                {
+                  "ref": "Jer.44.3"
+                },
+                {
+                  "ref": "Rom.10.19"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-keas"
+      ],
+      "greek": [
+        {
+          "lemma": "παροργίζω",
+          "gloss": "provoke to anger",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 32:21 word 13"
+            },
+            {
+              "ref": "Rom.10.19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כַּעַס",
+      "bdb": [
+        "k.cn.ab"
+      ],
+      "pos": "noun",
+      "gloss": "vexation, grief, anger",
+      "senses": [
+        {
+          "gloss": "grief, distress",
+          "definition": "The psalmist’s eye wastes away with distress, following a night of weeping. Ecclesiastes sets this grief opposite laughter.",
+          "evidence": [
+            {
+              "ref": "Psa.6.7",
+              "to": "Psa.6.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.31.10"
+            },
+            {
+              "ref": "Ecc.7.3"
+            }
+          ]
+        },
+        {
+          "gloss": "anger or its provocation",
+          "definition": "A fool lets his anger show at once. The same word names the provocation that arouses the anger, as when Manasseh provokes Yahweh.",
+          "evidence": [
+            {
+              "ref": "Pro.12.16",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.23.26"
+            },
+            {
+              "ref": "Job.5.2"
+            },
+            {
+              "ref": "Job.10.17"
+            }
+          ],
+          "id": "anger",
+          "kin": [
+            "angry"
+          ],
+          "cognate_ids": [
+            "arc-keas"
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "Job spells the noun כַּעַשׂ (Job 5:2 and 10:17)."
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-keas",
+      "lang": "arc",
+      "form": "כְּעַס",
+      "translit": "kəʿas",
+      "gloss": "be angry, provoke to anger",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כְּעַס, Targum Psalms 112:10 and Targum Deuteronomy 32:19, 21"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The two indexes of the noun have the same occurrences. The entry counts them once. כֵּף, rock, has a distinct spelling and an Aramaic counterpart כֵּיפָא, also the name given to Simon in John 1:42. It belongs to a separate entry."
+}
