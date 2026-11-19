@@ -1,0 +1,44 @@
+{
+  "id": "hagig",
+  "root": "הגג",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "prayer",
+    "thought",
+    "speech"
+  ],
+  "gloss": "musing, murmured thought",
+  "summary": "Both occurrences place inward thought beside spoken words. Psalm 39 traces the movement from silence through musing to speech. Psalm 5 asks Yahweh to understand even the musing.",
+  "words": [
+    {
+      "lemma": "הָגִיג",
+      "bdb": [
+        "e.ai.ab"
+      ],
+      "pos": "noun",
+      "gloss": "musing, murmured thought",
+      "senses": [
+        {
+          "gloss": "musing, murmured thought",
+          "definition": "David asks Yahweh to hear his words and understand what he is musing. In Psalm 39 he describes his heart growing hot as he muses, before he finally speaks.",
+          "evidence": [
+            {
+              "ref": "Psa.5.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.39.3",
+              "to": "Psa.39.4"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The two verses leave open how audible the musing is. The similar-sounding הגה can describe murmuring or meditation and has its own entry. No separately attested Hebrew verb or securely identified cognate is claimed for הגג."
+}
