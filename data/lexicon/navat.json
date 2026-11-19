@@ -1,0 +1,146 @@
+{
+  "id": "navat",
+  "root": "נבט",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "sight",
+    "expectation"
+  ],
+  "gloss": "look, direct attention",
+  "summary": "Looking can mean directing the eyes toward a visible object. In prayer it asks God to take notice and respond. The related noun can name a person or power to whom others look for support.",
+  "words": [
+    {
+      "lemma": "נָבַט",
+      "bdb": [
+        "n.al.aa"
+      ],
+      "pos": "verb",
+      "gloss": "look, direct attention",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "look attentively",
+          "senses": [
+            {
+              "gloss": "direct the eyes toward",
+              "definition": "Abram is told to look toward heaven and count the stars. Lot’s wife looks back.",
+              "evidence": [
+                {
+                  "ref": "Gen.15.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.19.26"
+                }
+              ]
+            },
+            {
+              "gloss": "pay attention or respond",
+              "definition": "Psalm 10 insists that God sees trouble and grief and takes them in hand. The speaker in Psalm 13 asks Yahweh to look and answer him.",
+              "evidence": [
+                {
+                  "ref": "Psa.10.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.13.4"
+                }
+              ],
+              "id": "look"
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "look about",
+          "senses": [
+            {
+              "gloss": "look about",
+              "definition": "Isaiah pictures someone looking toward the land and seeing darkness and distress.",
+              "evidence": [
+                {
+                  "ref": "Isa.5.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-nabatu"
+      ]
+    },
+    {
+      "lemma": "מַבָּט",
+      "bdb": [
+        "n.al.ab",
+        "m.ai.an"
+      ],
+      "pos": "noun",
+      "gloss": "object of expectation",
+      "senses": [
+        {
+          "gloss": "object of expectation",
+          "definition": "People who looked to Cush for help are dismayed at its humiliation. Zechariah describes Ekron losing the support to which it looked.",
+          "evidence": [
+            {
+              "ref": "Isa.20.5",
+              "to": "Isa.20.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Zec.9.5"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נֵבֶךְ",
+      "bdb": [
+        "n.al.ae"
+      ],
+      "pos": "noun",
+      "gloss": "source, recess of the sea",
+      "senses": [
+        {
+          "gloss": "source, recess of the sea",
+          "definition": "God asks Job whether he has reached the sources of the sea or walked through the recesses of the deep. The rare plural is interpreted from that parallel.",
+          "evidence": [
+            {
+              "ref": "Job.38.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-nabatu",
+      "lang": "akk",
+      "form": "nabāṭu",
+      "translit": "nabāṭu",
+      "gloss": "shine, become bright",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000068180, nabāṭu [be(come) bright]"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000255 nbṭ [look], AKK007691 and HEB004685"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The proposed Akkadian comparison denotes brightness, while the Hebrew passages directly attest looking. Job’s sea-source noun has a different final consonant. Nebaioth also has a different ending and no established derivation from this verb."
+}
