@@ -2,10 +2,10 @@
   "id": "gerah",
   "root": "גרה",
   "status": "draft",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "tags": [],
-  "gloss": "gerah, one twentieth of a shekel",
-  "summary": "The census contribution, valuations and redemption payments all use a shekel of twenty gerahs. Ezekiel specifies the same ratio when calling for honest measures.",
+  "gloss": "gerah, one twentieth of a shekel, throat or neck",
+  "summary": "The census contribution, valuations and redemption payments all use a shekel of twenty gerahs. Ezekiel specifies the same ratio when calling for honest measures. The noun גָּרוֹן denotes the neck that bears a necklace and the throat from which a voice comes.",
   "words": [
     {
       "lemma": "גֵּרָה",
@@ -52,6 +52,52 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "גָּרוֹן",
+      "bdb": [
+        "c.cx.ab"
+      ],
+      "pos": "noun",
+      "gloss": "throat, neck",
+      "senses": [
+        {
+          "gloss": "throat, organ of the voice",
+          "definition": "Calling out leaves the psalmist’s throat parched. Isaiah tells the prophet to cry out at full voice. Psalm 5 compares the throat of those who speak deceitfully to an open grave.",
+          "evidence": [
+            {
+              "ref": "Psa.69.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.58.1"
+            },
+            {
+              "ref": "Psa.5.10"
+            },
+            {
+              "ref": "Psa.115.7"
+            }
+          ]
+        },
+        {
+          "gloss": "neck",
+          "definition": "Isaiah depicts the women of Zion walking with outstretched necks. In Ezekiel a chain is placed around the neck.",
+          "evidence": [
+            {
+              "ref": "Isa.3.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.16.11"
+            }
+          ],
+          "cognate_ids": [
+            "ar-jiran"
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [
@@ -72,8 +118,22 @@
           "locator": "armep x000079540"
         }
       ]
+    },
+    {
+      "id": "ar-jiran",
+      "lang": "ar",
+      "form": "جِرَانٌ",
+      "translit": "jirān",
+      "gloss": "front or underside of the neck",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 414, جرن, n5611"
+        }
+      ]
     }
   ],
   "doctrine": [],
-  "note": "The Akkadian unit is usually reckoned at one twenty-fourth of a shekel. CAD also discusses a possible twelfth in one account. The biblical texts consistently specify a twentieth. The identical Hebrew spelling in the dietary laws means ‘cud’."
+  "note": "The Akkadian unit is usually reckoned at one twenty-fourth of a shekel. CAD also discusses a possible twelfth in one account. The biblical texts consistently specify a twentieth. The identical Hebrew spelling in the dietary laws means ‘cud’. The index groups the throat under גרה. Arabic jirān supports the meaning of the body part. Its connection to the Hebrew unit of weight remains uncertain."
 }
