@@ -1,0 +1,1443 @@
+{
+  "id": "zamar",
+  "root": "זמר",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "music",
+    "praise",
+    "psalms",
+    "vine",
+    "pruning",
+    "kingdom-of-god"
+  ],
+  "gloss": "make music, sing praise; psalm, song; prune (the vine)",
+  "summary": "One spelling with two meanings. Most often it is to make music in praise of Yahweh: the piel זִמֵּר, sung to his name and played on the harp and lyre, set beside שִׁיר “sing” and הוֹדָה “give thanks”; from it come מִזְמוֹר, the title “psalm” of fifty-seven psalms, and זִמְרָה, זָמִיר “song, music”, as in “Yah is my strength and my song” (Exo 15:2). Its other meaning is to prune the vine (Lev 25:3–4), with the vine-branch זְמוֹרָה, the pruning hook מַזְמֵרָה into which the nations will beat their spears when Yahweh judges from Zion (Isa 2:4), and the temple's trimmers. Akkadian zamāru “sing”, Arabic zamara “play the pipe” and Aramaic זְמַר “sing”, “prune” bear out both.",
+  "words": [
+    {
+      "lemma": "מִזְמוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "psalm, song with music",
+      "bdb": [
+        "g.bq.ae",
+        "m.bh.ag"
+      ],
+      "cognate_ids": [
+        "akk-zamaru",
+        "ar-zamara",
+        "gez-zammara",
+        "arc-zammer"
+      ],
+      "summary": "Only in the titles of the Psalms, 57 times, always this form: a song made to be sung or played, the noun of the piel זִמֵּר “make music”. Psalm 98 begins “A מִזְמוֹר: sing to Yahweh a new song” and goes on “make music to Yahweh with the harp” (Psa 98:5). Jesus and the apostles call the book “the book of Psalms” (Luk 20:42), the Peshitta's מַזְמוֹרָא.",
+      "senses": [
+        {
+          "id": "psalm",
+          "gloss": "psalm",
+          "definition": "A song to be sung with music, named in a psalm's title, usually with its author (“a מִזְמוֹר of David”, of Asaph, of the sons of Korah) and often with directions for the chief musician and the instrument.",
+          "evidence": [
+            {
+              "ref": "Psa.98.1",
+              "role": "defining",
+              "note": "“מִזְמוֹר. Sing to Yahweh a new song”; and in verse 5 “make music (זַמְּרוּ) to Yahweh with the harp … and the voice of זִמְרָה”."
+            },
+            {
+              "ref": "Psa.3.1",
+              "note": "“A מִזְמוֹר of David, when he fled from Absalom his son.”"
+            },
+            {
+              "ref": "Psa.4.1",
+              "note": "“For the chief musician, on stringed instruments (בִּנְגִינוֹת): a מִזְמוֹר of David.”"
+            },
+            {
+              "ref": "Psa.92.1",
+              "role": "defining",
+              "note": "“A מִזְמוֹר, a song for the sabbath day. It is good to give thanks to Yahweh and to make music (לְזַמֵּר) to your name … on the ten-stringed lute, and on the harp.”"
+            },
+            {
+              "ref": "Psa.48.1",
+              "note": "“A song, a מִזְמוֹר of the sons of Korah.”"
+            },
+            {
+              "ref": "Psa.50.1",
+              "note": "“A מִזְמוֹר of Asaph.”"
+            },
+            {
+              "ref": "Psa.100.1",
+              "note": "“A מִזְמוֹר for thanksgiving.”"
+            },
+            {
+              "ref": "Psa.110.1",
+              "note": "“Of David, a מִזְמוֹר”: the psalm Jesus cites as David's own words “in the book of Psalms” (Luk 20:42)."
+            },
+            {
+              "ref": "Psa.23.1"
+            },
+            {
+              "ref": "Psa.51.1"
+            },
+            {
+              "ref": "Luk.20.42",
+              "role": "defining",
+              "note": "“David himself says in the book of Psalms (ψαλμῶν; Peshitta מַזְמוֹרֵא), The Lord said to my lord.”"
+            },
+            {
+              "ref": "Luk.24.44",
+              "note": "“All things written in the law of Moses and the prophets and the psalms concerning me.”"
+            },
+            {
+              "ref": "Act.13.33",
+              "note": "“As it is written in the second psalm, You are my Son, today I have begotten you.”"
+            }
+          ],
+          "kin": [
+            "play-music",
+            "song-music",
+            "syc-psalm"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ψαλμός",
+          "gloss": "psalm, song sung to the harp",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.3.1, 5.1, 6.1 and throughout the titles, מִזְמוֹר → ψαλμός; ψαλμός renders מִזְמוֹר ×52, ᾠδή ×3"
+            },
+            {
+              "ref": "Luk.20.42",
+              "role": "defining",
+              "note": "“In the book of Psalms”, citing Psa 110:1, a מִזְמוֹר."
+            },
+            {
+              "ref": "Act.1.20",
+              "note": "“It is written in the book of Psalms.”"
+            },
+            {
+              "ref": "Act.13.33"
+            },
+            {
+              "ref": "1Co.14.26",
+              "note": "“Each one has a psalm.”"
+            },
+            {
+              "ref": "Eph.5.19",
+              "note": "“Speaking to yourselves in psalms and hymns and spiritual songs, singing and making music (ψάλλοντες) in your heart to the Lord.”"
+            },
+            {
+              "ref": "Col.3.16"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "מִזְמוֹר לְדָוִד",
+            "gloss": "a psalm of David",
+            "evidence": [
+              {
+                "ref": "Psa.3.1"
+              },
+              {
+                "ref": "Psa.23.1"
+              },
+              {
+                "ref": "Psa.101.1"
+              }
+            ]
+          },
+          {
+            "phrase": "מִזְמוֹר שִׁיר",
+            "gloss": "a psalm, a song",
+            "evidence": [
+              {
+                "ref": "Psa.30.1"
+              },
+              {
+                "ref": "Psa.92.1"
+              },
+              {
+                "ref": "Psa.68.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זָמַר",
+      "pos": "verb",
+      "gloss": "make music, sing praise, play (an instrument)",
+      "bdb": [
+        "g.bq.aa"
+      ],
+      "cognate_ids": [
+        "akk-zamaru",
+        "ar-zamara",
+        "gez-zammara",
+        "arc-zammer",
+        "uga-dmr"
+      ],
+      "summary": "Piel only, 45 times, all but four in the Psalms, and always of music to Yahweh, his name, or the king who is God (Psa 47:7). It is sung (set beside שִׁיר, Jdg 5:3; Psa 27:6) and played (“with the harp”, Psa 98:5; “on a ten-stringed lute”, Psa 144:9). Paul quotes Psa 18:50 for the nations' praise (Rom 15:9).",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "make music, sing praise, play",
+          "senses": [
+            {
+              "id": "sing-praise",
+              "gloss": "sing praise (to Yahweh, to his name)",
+              "definition": "To praise Yahweh in song, beside שִׁיר “sing” and הוֹדָה “give thanks”: to him, to his name, of his power and loyal love, among the nations.",
+              "evidence": [
+                {
+                  "ref": "Jdg.5.3",
+                  "role": "defining",
+                  "note": "“I, to Yahweh I will sing (אָשִׁירָה); I will make music (אֲזַמֵּר) to Yahweh, the God of Israel.”"
+                },
+                {
+                  "ref": "Psa.7.18",
+                  "role": "defining",
+                  "note": "“I will give thanks (אוֹדֶה) to Yahweh according to his righteousness, and וַאֲזַמְּרָה to the name of Yahweh Most High.”"
+                },
+                {
+                  "ref": "Psa.18.50",
+                  "role": "defining",
+                  "note": "“Therefore I will give thanks to you among the nations, Yahweh, and to your name אֲזַמֵּרָה”; quoted in Rom 15:9."
+                },
+                {
+                  "ref": "2Sa.22.50"
+                },
+                {
+                  "ref": "Psa.27.6",
+                  "note": "“I will sing and make music (אָשִׁירָה וַאֲזַמְּרָה) to Yahweh.”"
+                },
+                {
+                  "ref": "Psa.47.7",
+                  "to": "Psa.47.8",
+                  "role": "defining",
+                  "note": "“Make music to God, make music; make music to our king, make music; for God is king of all the earth.”"
+                },
+                {
+                  "ref": "Psa.57.8",
+                  "note": "“My heart is fixed … I will sing and make music.”"
+                },
+                {
+                  "ref": "Psa.59.18",
+                  "note": "“My strength, to you I will make music (אֲזַמֵּרָה), for God is my high refuge, the God of my loyal love.”"
+                },
+                {
+                  "ref": "Psa.66.4",
+                  "note": "“All the earth bows down to you and makes music to you; they make music to your name.”"
+                },
+                {
+                  "ref": "Psa.101.1",
+                  "note": "“Of loyal love and justice I will sing; to you, Yahweh, I will make music.”"
+                },
+                {
+                  "ref": "Psa.104.33",
+                  "note": "“I will sing to Yahweh in my life; I will make music to my God while I am.”"
+                },
+                {
+                  "ref": "Psa.105.2",
+                  "note": "“Sing to him, make music to him; speak of all his wonders.”"
+                },
+                {
+                  "ref": "1Ch.16.9"
+                },
+                {
+                  "ref": "Psa.135.3",
+                  "note": "“Make music to his name, for it is pleasant.”"
+                },
+                {
+                  "ref": "Psa.146.2",
+                  "note": "“I will praise Yahweh in my life; I will make music to my God while I am.”"
+                },
+                {
+                  "ref": "Psa.30.13",
+                  "note": "“That my glory may make music to you and not be silent.”"
+                },
+                {
+                  "ref": "Isa.12.5",
+                  "note": "“Make music to Yahweh, for he has done majestic things; let this be known in all the earth.”"
+                },
+                {
+                  "ref": "Psa.9.12",
+                  "note": "“Make music to Yahweh who dwells in Zion; tell among the peoples his deeds.”"
+                },
+                {
+                  "ref": "Rom.15.9",
+                  "role": "defining",
+                  "note": "“That the nations might glorify God for his mercy, as it is written, For this I will confess you among the nations and make music (ψαλῶ; Peshitta אֶזַמַּר) to your name”: Psa 18:50."
+                }
+              ],
+              "kin": [
+                "syc-sing"
+              ]
+            },
+            {
+              "id": "play-music",
+              "gloss": "play (harp, lyre, lute)",
+              "definition": "To make music on a stringed instrument, the instrument named with בְּ.",
+              "evidence": [
+                {
+                  "ref": "Psa.33.2",
+                  "role": "defining",
+                  "note": "“Give thanks to Yahweh with the harp (בְּכִנּוֹר); with the ten-stringed lute זַמְּרוּ־לוֹ.”"
+                },
+                {
+                  "ref": "Psa.98.5",
+                  "role": "defining",
+                  "note": "“Make music to Yahweh with the harp, with the harp and the voice of זִמְרָה.”"
+                },
+                {
+                  "ref": "Psa.144.9",
+                  "role": "defining",
+                  "note": "“O God, a new song I will sing to you; on a ten-stringed lute I will make music to you.”"
+                },
+                {
+                  "ref": "Psa.71.22",
+                  "note": "“I will praise you with the lute … I will make music to you with the harp, Holy One of Israel.”"
+                },
+                {
+                  "ref": "Psa.147.7",
+                  "note": "“Answer to Yahweh with thanksgiving; make music to our God with the harp.”"
+                },
+                {
+                  "ref": "Psa.149.3",
+                  "note": "“Let them praise his name with dancing; with the tambourine and harp let them make music to him.”"
+                },
+                {
+                  "ref": "Psa.57.9",
+                  "note": "“Awake, lute and harp”, after “I will sing and make music” (Psa 57:8)."
+                },
+                {
+                  "ref": "Psa.92.2",
+                  "to": "Psa.92.4"
+                }
+              ],
+              "kin": [
+                "psalm",
+                "song-music"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ψάλλω",
+          "gloss": "play a stringed instrument; sing praise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jdg.5.3, 2Sa.22.50, Psa.18.50, 57.8, 101.1, אֲזַמֵּר(ָה) → ψαλῶ; Psa.47.7; 98.4–5, זַמְּרוּ → ψάλατε; ψάλλω renders זָמַר in nearly every place"
+            },
+            {
+              "ref": "Rom.15.9",
+              "role": "defining",
+              "note": "“I will make music (ψαλῶ) to your name”, quoting Psa 18:50."
+            },
+            {
+              "ref": "1Co.14.15",
+              "note": "“I will make music (ψαλῶ) with the spirit, and I will make music with the understanding also.”"
+            },
+            {
+              "ref": "Eph.5.19",
+              "note": "“Singing and making music (ψάλλοντες) in your heart to the Lord.”"
+            },
+            {
+              "ref": "Jas.5.13",
+              "note": "“Is anyone cheerful? Let him make music (ψαλλέτω).”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שִׁיר",
+            "note": "Sing; the commonest pair, “I will sing and make music”.",
+            "evidence": [
+              {
+                "ref": "Jdg.5.3"
+              },
+              {
+                "ref": "Psa.27.6"
+              },
+              {
+                "ref": "Psa.57.8"
+              },
+              {
+                "ref": "Psa.101.1"
+              },
+              {
+                "ref": "Psa.104.33"
+              },
+              {
+                "ref": "Psa.105.2"
+              }
+            ]
+          },
+          {
+            "lemma": "הוֹדָה",
+            "note": "Give thanks, confess.",
+            "evidence": [
+              {
+                "ref": "Psa.7.18"
+              },
+              {
+                "ref": "Psa.18.50"
+              },
+              {
+                "ref": "Psa.57.10"
+              },
+              {
+                "ref": "Psa.92.2"
+              },
+              {
+                "ref": "Psa.138.1"
+              }
+            ]
+          },
+          {
+            "lemma": "הִלֵּל",
+            "note": "Praise.",
+            "evidence": [
+              {
+                "ref": "Psa.135.3"
+              },
+              {
+                "ref": "Psa.146.2"
+              },
+              {
+                "ref": "Psa.149.3"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "זַמְּרוּ לִשְׁמוֹ",
+            "gloss": "make music to his name",
+            "evidence": [
+              {
+                "ref": "Psa.66.2"
+              },
+              {
+                "ref": "Psa.68.5"
+              },
+              {
+                "ref": "Psa.135.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זִמְרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "song, music",
+      "bdb": [
+        "g.bq.ab",
+        "g.bq.ac"
+      ],
+      "cognate_ids": [
+        "akk-zamaru",
+        "arc-zammer"
+      ],
+      "summary": "Music, sung or played (“the music of your harps”, Amo 5:23). In the confession “Yah is my strength and my זִמְרָת” (Exo 15:2; Isa 12:2; Psa 118:14), sung by Moses and Israel at the sea, Yahweh is himself the theme of the song; a reading “my protection” from an older ḏmr is possible but rests on cognates only.",
+      "senses": [
+        {
+          "id": "song-music",
+          "gloss": "song, music",
+          "definition": "The music of singing and of instruments, in praise or joy.",
+          "evidence": [
+            {
+              "ref": "Psa.81.3",
+              "role": "defining",
+              "note": "“Lift up זִמְרָה and sound the tambourine, the pleasant harp with the lute.”"
+            },
+            {
+              "ref": "Psa.98.5",
+              "note": "“With the harp and the voice of זִמְרָה.”"
+            },
+            {
+              "ref": "Amo.5.23",
+              "role": "defining",
+              "note": "“Take away from me the noise of your songs; the music (זִמְרַת) of your harps I will not hear.”"
+            },
+            {
+              "ref": "Isa.51.3",
+              "note": "Zion restored like Eden: “joy and gladness will be found in her, thanksgiving and the voice of זִמְרָה.”"
+            }
+          ],
+          "kin": [
+            "play-music",
+            "songs"
+          ]
+        },
+        {
+          "id": "my-song",
+          "gloss": "(Yah is) my song",
+          "definition": "In the confession עָזִּי וְזִמְרָת יָהּ “Yah is my strength and my song”: Yahweh, who saved his people, is the subject of their song. Its setting is a song (Exo 15:1, אָשִׁירָה), and Psa 59:18 says “my strength, to you I will make music”.",
+          "cognate_ids": [
+            "ar-dhimar"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.15.2",
+              "role": "defining",
+              "note": "“Yah is my strength and my זִמְרָת, and he has become my salvation”, in the song Moses and Israel sang (Exo 15:1)."
+            },
+            {
+              "ref": "Exo.15.1",
+              "note": "“Then Moses and the sons of Israel sang this song to Yahweh … I will sing (אָשִׁירָה) to Yahweh.”"
+            },
+            {
+              "ref": "Isa.12.2",
+              "note": "The same words in the song of the day of salvation, followed by “make music (זַמְּרוּ) to Yahweh” (Isa 12:5)."
+            },
+            {
+              "ref": "Psa.118.14",
+              "note": "The same words, followed by “the voice of joyful shouting and salvation in the tents of the righteous” (Psa 118:15)."
+            },
+            {
+              "ref": "Psa.59.18",
+              "note": "“My strength (עֻזִּי), to you I will make music (אֲזַמֵּרָה)”: strength and song side by side again."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ψαλμός",
+          "gloss": "psalm, music",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.81.3, זִמְרָה → ψαλμόν; Psa.98.5 → ψαλμοῦ; Amo.5.23, זִמְרַת → ψαλμόν; Exo.15.2, זִמְרָת → σκεπαστής"
+            },
+            {
+              "ref": "Eph.5.19"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "עָזִּי וְזִמְרָת יָהּ",
+            "gloss": "Yah is my strength and my song",
+            "evidence": [
+              {
+                "ref": "Exo.15.2"
+              },
+              {
+                "ref": "Isa.12.2"
+              },
+              {
+                "ref": "Psa.118.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "זָמִיר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "song",
+      "bdb": [
+        "g.bq.ad"
+      ],
+      "cognate_ids": [
+        "akk-zamaru",
+        "arc-zammer"
+      ],
+      "summary": "Songs, always plural but once (Isa 25:5): the songs of Israel of which David was the delight, songs God gives in the night, Yahweh's statutes as songs.",
+      "senses": [
+        {
+          "id": "songs",
+          "gloss": "songs",
+          "definition": "Songs sung in praise or joy.",
+          "evidence": [
+            {
+              "ref": "Psa.95.2",
+              "role": "defining",
+              "note": "“Let us come before his face with thanksgiving; with זְמִרוֹת let us shout to him.”"
+            },
+            {
+              "ref": "Job.35.10",
+              "role": "defining",
+              "note": "“Where is God my maker, who gives songs in the night?”"
+            },
+            {
+              "ref": "Psa.119.54",
+              "note": "“Your statutes have been songs to me in the house of my sojourning.”"
+            },
+            {
+              "ref": "2Sa.23.1",
+              "note": "David, “the pleasant one of the songs (זְמִרוֹת) of Israel”."
+            },
+            {
+              "ref": "Isa.24.16",
+              "note": "“From the end of the earth we have heard songs: Glory to the righteous one!”"
+            },
+            {
+              "ref": "Isa.25.5",
+              "note": "“The song (זְמִיר) of the ruthless he brings low”, beside “the uproar of strangers”."
+            }
+          ],
+          "kin": [
+            "song-music",
+            "sing-praise"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זְמוֹרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "vine-branch, shoot",
+      "bdb": [
+        "g.br.ac"
+      ],
+      "summary": "A branch of the vine: what the pruner cuts (the verb זָמַר “prune”, Lev 25:3), and a cutting set to grow.",
+      "senses": [
+        {
+          "id": "vine-branch",
+          "gloss": "vine-branch",
+          "definition": "A branch or shoot of the vine, cut or planted.",
+          "evidence": [
+            {
+              "ref": "Num.13.23",
+              "role": "defining",
+              "note": "At the wadi Eshcol “they cut from there a זְמוֹרָה and one cluster of grapes”."
+            },
+            {
+              "ref": "Ezk.15.2",
+              "role": "defining",
+              "note": "“What is the wood of the vine more than any tree, the זְמוֹרָה that was among the trees of the forest?”"
+            },
+            {
+              "ref": "Nam.2.3",
+              "note": "“Plunderers have plundered them and destroyed their vine-branches.”"
+            },
+            {
+              "ref": "Isa.17.10",
+              "note": "“You plant pleasant plants and sow it with a foreign slip (זְמֹרַת זָר)”: a cutting set in the ground."
+            },
+            {
+              "ref": "Ezk.8.17",
+              "note": "“They put the branch to their nose”, a rite among the abominations of Judah worshipping the sun (Ezk 8:16)."
+            }
+          ],
+          "kin": [
+            "prune"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κλῆμα",
+          "gloss": "vine-branch",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.13.23, זְמוֹרָה → κλῆμα; Ezk.15.2 → κλημάτων"
+            },
+            {
+              "ref": "Jhn.15.6",
+              "note": "“If anyone does not abide in me, he is thrown out as a branch (κλῆμα) and withers”: the branch of the useless vine of Ezk 15."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְזַמֶּרֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "trimmers (temple utensil)",
+      "bdb": [
+        "g.br.ae",
+        "m.bh.ah"
+      ],
+      "summary": "Always plural, among the gold or bronze utensils of the temple, listed with basins, bowls and firepans; the noun of the piel of “prune”, so a cutting tool, probably for trimming the lamps' wicks. The text names the utensil but not its use.",
+      "senses": [
+        {
+          "id": "trimmers",
+          "gloss": "trimmers",
+          "definition": "Cutting tools among the temple's vessels, made of gold for Solomon's house and carried off by Babylon.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.50",
+              "role": "defining",
+              "note": "“The basins and the מְזַמְּרוֹת and the bowls and the spoons and the firepans, of pure gold”, after the lampstands and lamps and tongs (1Ki 7:49)."
+            },
+            {
+              "ref": "2Ch.4.22"
+            },
+            {
+              "ref": "2Ki.12.14",
+              "note": "Silver basins, מְזַמְּרוֹת, bowls, trumpets, not made from the money for repairing the house."
+            },
+            {
+              "ref": "2Ki.25.14",
+              "note": "The Chaldeans took “the pots and the shovels and the מְזַמְּרוֹת … all the vessels of bronze with which they ministered”."
+            },
+            {
+              "ref": "Jer.52.18"
+            }
+          ],
+          "kin": [
+            "prune"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַזְמֵרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pruning hook",
+      "bdb": [
+        "g.br.ad"
+      ],
+      "summary": "The vinedresser's knife for cutting the shoots, which the nations will make of their spears when Yahweh judges among them from Zion.",
+      "senses": [
+        {
+          "id": "pruning-hook",
+          "gloss": "pruning hook",
+          "definition": "A blade for cutting off the vine's shoots and spreading branches.",
+          "evidence": [
+            {
+              "ref": "Isa.18.5",
+              "role": "defining",
+              "note": "“When the blossom is over and the flower becomes a ripening grape, he will cut off the shoots with מַזְמֵרוֹת, and the spreading branches he will remove.”"
+            },
+            {
+              "ref": "Isa.2.4",
+              "role": "defining",
+              "note": "“They will beat their swords into ploughshares and their spears into מַזְמֵרוֹת; nation will not lift up sword against nation.”"
+            },
+            {
+              "ref": "Mic.4.3"
+            },
+            {
+              "ref": "Jol.4.10",
+              "note": "The reverse before the judgment in the valley of Jehoshaphat: “Beat your ploughshares into swords and your מַזְמְרֹת into spears.”"
+            }
+          ],
+          "kin": [
+            "prune"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זְמָר",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "music",
+      "bdb": [
+        "xg.ag.aa"
+      ],
+      "cognate_ids": [
+        "arc-zammer",
+        "akk-zamaru"
+      ],
+      "summary": "Biblical Aramaic, only in Daniel 3, in the list of Nebuchadnezzar's instruments: כֹּל זְנֵי זְמָרָא “all kinds of music”, at whose sound all were to fall down before the image.",
+      "senses": [
+        {
+          "id": "arc-music",
+          "gloss": "music",
+          "definition": "Music of instruments.",
+          "evidence": [
+            {
+              "ref": "Dan.3.5",
+              "role": "defining",
+              "note": "“The sound of the horn, pipe, lyre, trigon, harp, bagpipe and all kinds of זְמָרָא.”"
+            },
+            {
+              "ref": "Dan.3.7"
+            },
+            {
+              "ref": "Dan.3.10"
+            },
+            {
+              "ref": "Dan.3.15"
+            }
+          ],
+          "kin": [
+            "song-music"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μουσικός",
+          "gloss": "musician; (neuter) music",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.3.5, 15, זְמָרָא → μουσικῶν"
+            },
+            {
+              "ref": "Rev.18.22",
+              "note": "“The voice of harpers and musicians (μουσικῶν) … will be heard in you no more”, of Babylon; the Peshitta has זְמָרָא."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זָמַר",
+      "pos": "verb",
+      "gloss": "prune (the vine)",
+      "bdb": [
+        "g.br.aa"
+      ],
+      "cognate_ids": [
+        "arc-azmer",
+        "uga-zbr"
+      ],
+      "summary": "Three times, always of the vineyard: pruned six years and left in the seventh, and the vineyard of Isa 5 left unpruned and given to thorns.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "prune",
+          "senses": [
+            {
+              "id": "prune",
+              "gloss": "prune (a vineyard)",
+              "definition": "To cut back the vine, the vinedresser's work beside sowing the field.",
+              "evidence": [
+                {
+                  "ref": "Lev.25.3",
+                  "role": "defining",
+                  "note": "“Six years you shall sow your field, and six years you shall prune your vineyard and gather its produce.”"
+                },
+                {
+                  "ref": "Lev.25.4",
+                  "role": "defining",
+                  "note": "“In the seventh year … your field you shall not sow and your vineyard you shall not prune.”"
+                }
+              ],
+              "kin": [
+                "vine-branch",
+                "pruning-hook",
+                "trimmers"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be pruned",
+          "senses": [
+            {
+              "gloss": "be pruned",
+              "definition": "Of a vineyard, to be pruned.",
+              "evidence": [
+                {
+                  "ref": "Isa.5.6",
+                  "role": "defining",
+                  "note": "“I will make it a waste; it will not be pruned and it will not be hoed, and briars and thorns will come up.”"
+                }
+              ],
+              "kin": [
+                "pruning-hook"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זָמִיר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pruning (time); or song",
+      "bdb": [
+        "g.br.ab"
+      ],
+      "summary": "Once, in “the time of הַזָּמִיר has come” (Sng 2:12). The vines are in flower beside it (Sng 2:13) and “the voice of the turtledove” follows, so it may be the time of pruning or the time of song; the text does not decide.",
+      "senses": [
+        {
+          "id": "pruning-time",
+          "gloss": "pruning; or singing",
+          "definition": "The season that comes in spring, when the flowers appear and the vines blossom: the pruning of the vines, or the singing of birds.",
+          "evidence": [
+            {
+              "ref": "Sng.2.12",
+              "role": "defining",
+              "note": "“The blossoms appear in the land, the time of הַזָּמִיר has come, and the voice of the turtledove is heard in our land.”"
+            },
+            {
+              "ref": "Sng.2.13",
+              "note": "“The vines in blossom give their fragrance.”"
+            }
+          ],
+          "kin": [
+            "prune",
+            "songs"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זִמְרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "choice produce",
+      "bdb": [
+        "g.bs.ab"
+      ],
+      "summary": "Once: “the זִמְרָה of the land”, the gift Israel sent down to Egypt. Its link to the root is not clear: it may be what the land is praised for, or what is cut from the vine and tree. No cognate yet ties it to either.",
+      "senses": [
+        {
+          "id": "choice-produce",
+          "gloss": "choice produce (of the land)",
+          "definition": "The best of what the land yields, sent as a gift: balm, honey, gum, myrrh, pistachios and almonds.",
+          "evidence": [
+            {
+              "ref": "Gen.43.11",
+              "role": "defining",
+              "note": "“Take of מִזִּמְרַת הָאָרֶץ in your vessels and carry down a gift to the man: a little balm and a little honey, gum and myrrh, pistachio nuts and almonds.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זֶמֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a wild clean animal (mountain sheep?)",
+      "bdb": [
+        "g.bs.ac"
+      ],
+      "summary": "Once, the last of the seven wild animals Israel may eat; which animal it is, and how it comes from the root, is not known.",
+      "senses": [
+        {
+          "id": "zemer-animal",
+          "gloss": "a wild clean animal",
+          "definition": "A wild animal that chews the cud and has a parted hoof, listed with deer, gazelle, wild goat and antelope.",
+          "evidence": [
+            {
+              "ref": "Deu.14.5",
+              "role": "defining",
+              "note": "“The deer and the gazelle and the roebuck and the wild goat and the ibex and the antelope וָזָמֶר.”"
+            },
+            {
+              "ref": "Deu.14.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זַמָּר",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "singer",
+      "bdb": [
+        "xg.ag.ab"
+      ],
+      "cognate_ids": [
+        "arc-zammer",
+        "akk-zamaru"
+      ],
+      "summary": "Biblical Aramaic, once: the temple's singers, freed by Artaxerxes' decree from tax.",
+      "senses": [
+        {
+          "id": "singers",
+          "gloss": "singer",
+          "definition": "One of the Levitical singers of the house of God.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.24",
+              "role": "defining",
+              "note": "“The priests and the Levites, the זַמָּרַיָּא, the gatekeepers, the temple servants”: no tax to be laid on them."
+            }
+          ],
+          "kin": [
+            "sing-praise"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זְמַר",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "sing, make music; pipe",
+      "summary": "The Peshitta's ܙܡܪ (zmar), for ψάλλω “make music” and αὐλέω “pipe”.",
+      "cognate_ids": [
+        "arc-zammer",
+        "ar-zamara"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sing; pipe",
+          "senses": [
+            {
+              "id": "syc-sing",
+              "gloss": "sing",
+              "definition": "To sing in the heart to the Lord, with psalms and songs.",
+              "evidence": [
+                {
+                  "ref": "Eph.5.19",
+                  "role": "defining",
+                  "note": "“Singing (זָמְרִין) in your hearts to the Lord.”"
+                },
+                {
+                  "ref": "Col.3.16"
+                }
+              ],
+              "kin": [
+                "sing-praise"
+              ]
+            },
+            {
+              "gloss": "pipe, play the flute",
+              "definition": "To play the pipe, for dancing.",
+              "evidence": [
+                {
+                  "ref": "Mat.11.17",
+                  "role": "defining",
+                  "note": "“We piped (זְמַרן) for you and you did not dance.”"
+                },
+                {
+                  "ref": "Luk.7.32"
+                }
+              ],
+              "kin": [
+                "play-music"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "sing praise, make music",
+          "senses": [
+            {
+              "gloss": "sing praise, make music",
+              "definition": "To make music in praise of God, for the Greek ψάλλω.",
+              "evidence": [
+                {
+                  "ref": "Rom.15.9",
+                  "role": "defining",
+                  "note": "“I will make music (אֶזַמַּר) to your name”, Psa 18:50."
+                },
+                {
+                  "ref": "1Co.14.15",
+                  "note": "“I will make music with my spirit, and I will make music with my understanding also.”"
+                },
+                {
+                  "ref": "Jas.5.13",
+                  "role": "defining",
+                  "note": "“Is anyone glad? Let him make music (מְזַמַּר).”"
+                }
+              ],
+              "kin": [
+                "sing-praise"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be piped, be played",
+          "senses": [
+            {
+              "gloss": "be played (on a pipe)",
+              "definition": "Of a tune, to be played.",
+              "evidence": [
+                {
+                  "ref": "1Co.14.7",
+                  "role": "defining",
+                  "note": "“How will what is piped (מֶזְדַּמַּר) or harped be known?”"
+                }
+              ],
+              "kin": [
+                "play-music"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַזְמוֹרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "psalm",
+      "summary": "The Peshitta's ܡܙܡܘܪܐ (mazmōrā), the Hebrew מִזְמוֹר, for ψαλμός.",
+      "cognate_ids": [
+        "arc-zammer",
+        "gez-zammara"
+      ],
+      "senses": [
+        {
+          "id": "syc-psalm",
+          "gloss": "psalm; the book of Psalms",
+          "definition": "A psalm, and in the plural the book of Psalms.",
+          "evidence": [
+            {
+              "ref": "Luk.20.42",
+              "role": "defining",
+              "note": "“David says in the book of Psalms (מַזְמוֹרֵא).”"
+            },
+            {
+              "ref": "Luk.24.44"
+            },
+            {
+              "ref": "Act.1.20"
+            },
+            {
+              "ref": "Act.13.33",
+              "note": "“In the second psalm (מַזְמוֹרָא).”"
+            },
+            {
+              "ref": "1Co.14.26"
+            },
+            {
+              "ref": "Eph.5.19"
+            },
+            {
+              "ref": "Col.3.16"
+            }
+          ],
+          "kin": [
+            "psalm"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זְמָרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "music; revelry",
+      "summary": "The Peshitta's ܙܡܪܐ (zmārā): music, and the music of drinking parties, for κῶμος “revelling”.",
+      "cognate_ids": [
+        "arc-zammer"
+      ],
+      "senses": [
+        {
+          "gloss": "music",
+          "definition": "Music of instruments, for feasting or in a city.",
+          "evidence": [
+            {
+              "ref": "Luk.15.25",
+              "role": "defining",
+              "note": "The elder son “heard the sound of music (זְמָרָא) and dancing”."
+            },
+            {
+              "ref": "Rev.18.22"
+            }
+          ],
+          "kin": [
+            "song-music"
+          ]
+        },
+        {
+          "gloss": "revelry, carousing",
+          "definition": "Drunken feasting with music, a work of the flesh.",
+          "evidence": [
+            {
+              "ref": "Rom.13.13",
+              "role": "defining",
+              "note": "“Not in revelry (בְּזְמָרָא) and drunkenness.”"
+            },
+            {
+              "ref": "Gal.5.21",
+              "note": "Among the works of the flesh, “drunkenness, revelry”."
+            },
+            {
+              "ref": "1Pe.4.3"
+            }
+          ],
+          "kin": [
+            "song-music"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זַמָּרָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "piper, musician",
+      "summary": "The Peshitta's ܙܡܪܐ (zammārā), for αὐλητής “flute-player”.",
+      "cognate_ids": [
+        "arc-zammer",
+        "akk-zamaru",
+        "ar-zamara"
+      ],
+      "senses": [
+        {
+          "gloss": "piper, flute-player",
+          "definition": "A player of the pipe, at mourning.",
+          "evidence": [
+            {
+              "ref": "Mat.9.23",
+              "role": "defining",
+              "note": "Jesus “saw the pipers (זַמָּרֵא) and the crowd making a noise” at the ruler's house."
+            }
+          ],
+          "kin": [
+            "singers"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זְמִירְתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "song",
+      "summary": "The Peshitta's ܙܡܝܪܬܐ (zmīrtā), for ᾠδή “song”.",
+      "cognate_ids": [
+        "arc-zammer"
+      ],
+      "senses": [
+        {
+          "gloss": "song",
+          "definition": "A song sung to God.",
+          "evidence": [
+            {
+              "ref": "Eph.5.19",
+              "role": "defining",
+              "note": "“In psalms and in hymns and in spiritual songs (זְמִירָתָא).”"
+            },
+            {
+              "ref": "Col.3.16"
+            }
+          ],
+          "kin": [
+            "songs"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-zamaru",
+      "lang": "akk",
+      "form": "zamāru, zamāru, zammāru",
+      "translit": "zamāru (v.), zamāru (n.), zammāru",
+      "gloss": "sing (with or without instruments); song; singer",
+      "relation": "cognate",
+      "note": "The verb, the song and the singer, as Hebrew זִמֵּר, זִמְרָה and Aramaic זַמָּר. Akkadian writes one z for both older sounds, so it does not say which stands behind ז.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000025260, zamāru [sing] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000017500, zamāru [song] N; armep x000020470, zammāru [singer] N"
+        }
+      ]
+    },
+    {
+      "id": "ar-zamara",
+      "lang": "ar",
+      "form": "زَمَرَ، مِزْمَارٌ",
+      "translit": "zamara, mizmār",
+      "gloss": "play on a reed pipe; (of a she-ostrich) cry; (mizmār) musical reed, pipe",
+      "relation": "cognate",
+      "note": "Music of the pipe; the mizmār is the same pattern as מִזְמוֹר. Lane records the saying that a sweet reciter was given “a pipe of the pipes of the family of David”. Arabic shows z behind ז, as does Aramaic זְמַר; Ugaritic ḏmr (uga-dmr) points the other way.",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1250, art. زمر, زَمَرَ (n18096)",
+          "note": "“He [piped, or] played upon (lit. sang in) a reed; he blew in a مِزْمَار.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1251, art. زمر, مِزْمَارٌ (n18109)",
+          "note": "“A musical reed, or pipe.”"
+        }
+      ]
+    },
+    {
+      "id": "gez-zammara",
+      "lang": "gez",
+      "form": "ዘመረ، መዝሙር",
+      "translit": "zammara, mazmur",
+      "gloss": "sing; psalm, hymn, psalter",
+      "relation": "cognate",
+      "note": "Ge'ez z covers both older sounds, so it does not decide the sound behind ז.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000053 ḏmr [sing] V, GEZ006337 zammara [sing] V"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez መዝሙር (mäzmur)",
+          "note": "“Psalm, hymn, sacred ode; book of psalms, psalter.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-zammer",
+      "lang": "arc",
+      "form": "זַמֵּר، זְמָרָא",
+      "translit": "zammēr, zmārā",
+      "gloss": "(pael) sing; sing a satire; music",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: the Targum of Psa 18:50 renders אֲזַמֵּרָה with this verb, and Targ. Ezk 33:32 has זְמַר אַבּוּבִין “music of pipes”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. זְמַר ² (Pa. זַמֵּיר, to sing; Targ. Ps. XVIII, 50; Sot. 48a; Targ. Lam. III, 14)"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. זְמָרָא I (music; Dan. III, 5; Targ. Koh. II, 8; Targ. Ez. XXXIII, 32)"
+        }
+      ]
+    },
+    {
+      "id": "arc-azmer",
+      "lang": "arc",
+      "form": "אַזְמֵיר",
+      "translit": "azmēr",
+      "gloss": "(aphel) prune",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, of pruning a vineyard in the sabbatical year, the very case of Lev 25:4.",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. זְמַר (Af. אַזְמֵיר, prune; Y. Shebi. IV, 35a)"
+        }
+      ]
+    },
+    {
+      "id": "uga-dmr",
+      "lang": "uga",
+      "form": "ḏmr",
+      "translit": "ḏmr",
+      "gloss": "sing, make music",
+      "relation": "possible",
+      "note": "Listed as the Ugaritic member of a Proto-Semitic ḏmr “sing”. If it is, ḏ stands behind ז, against the z of Arabic زمر and Aramaic זמר; the Ugaritic word is few times attested and not yet checked in its texts.",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000053 ḏmr [sing] V, UGC001467 ḏmr [G(pass)/D(pass)] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-zbr",
+      "lang": "uga",
+      "form": "zbr",
+      "translit": "zbr",
+      "gloss": "prune (the vine)",
+      "relation": "possible",
+      "note": "With b for m, of pruning a vine (KTU 1.23:9). If it belongs here it shows z behind ז for “prune”; the b and m differ, so it is only possible.",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "s.v. z-b-r, to prune (KTU 1.23:9)"
+        }
+      ]
+    },
+    {
+      "id": "ar-dhimar",
+      "lang": "ar",
+      "form": "ذِمَارٌ، ذَمَارَةٌ",
+      "translit": "ḏimār, ḏamāra",
+      "gloss": "what one is bound to guard and defend; courage",
+      "relation": "possible",
+      "note": "Would support reading זִמְרָת in “Yah is my strength and my זִמְרָת” as “my protection, my might”, from a root with ḏ, and perhaps the names זִמְרִי, זִמְרָן. Scripture's use favours “song” (see the sense), so this stays possible.",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 978, art. ذمر, ذِمَارٌ (n14049)",
+          "note": "“Whatever one is obliged, or bound, to preserve and guard and defend or protect … things that are sacred, or inviolable.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 978, art. ذمر, ذَمَارَةٌ (n14051)",
+          "note": "“Courage.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Isaiah and Micah say that “in the last days” the mountain of Yahweh's house will be established above the hills, the nations will go up to it to be taught his ways, the law will go out from Zion, and he will judge between the nations; then they will beat their swords into ploughshares and their spears into pruning hooks, and nation will not lift up sword against nation or learn war any more (Isa 2:2–4; Mic 4:1–3). Micah adds that every man will sit under his vine and fig tree with none to make him afraid (Mic 4:4). Joel describes the reverse first, the nations beating pruning hooks into spears and gathering to the valley of Jehoshaphat, where Yahweh sits to judge them (Jol 4:10–12). So the peace of the pruning hook does not come by the nations' own efforts: it follows Yahweh's judgment of the nations, and it is a peace on the earth, ruled from Zion.",
+      "evidence": [
+        {
+          "ref": "Isa.2.2",
+          "to": "Isa.2.4"
+        },
+        {
+          "ref": "Mic.4.1",
+          "to": "Mic.4.4"
+        },
+        {
+          "ref": "Jol.4.9",
+          "to": "Jol.4.12"
+        }
+      ]
+    },
+    {
+      "topic": "promises-to-the-fathers",
+      "statement": "David ends his song with “I will give thanks to you among the nations, Yahweh, and make music to your name”, because Yahweh gives great salvation to his king and shows loyal love to his anointed, “to David and to his seed for ever” (Psa 18:50–51; 2Sa 22:50–51). Paul quotes the verse to show that Christ became a servant of the circumcision for the truth of God, to confirm the promises made to the fathers, and so that the nations should glorify God for his mercy (Rom 15:8–9). The music of the nations to Yahweh's name rests on the promises to Abraham and David fulfilled in David's seed.",
+      "evidence": [
+        {
+          "ref": "Psa.18.50",
+          "to": "Psa.18.51"
+        },
+        {
+          "ref": "2Sa.22.50",
+          "to": "2Sa.22.51"
+        },
+        {
+          "ref": "Rom.15.8",
+          "to": "Rom.15.12"
+        }
+      ]
+    }
+  ],
+  "note": "Two meanings in one spelling, “make music” (g.bq) and “prune” (g.br), and BDB's third root (g.bs) for Gen 43:11 זִמְרָה, Deu 14:5 זֶמֶר and the names. Sounds: Arabic زمر and Aramaic זמר (which would be דמר from an older ḏ) show z for “sing”, and Aramaic אַזְמֵיר and possibly Ugaritic zbr show z for “prune”; so the two meanings may be one root (pruning and music not yet explained as one) or two roots of the same sound. Against this, the Proto-Semitic list sets “sing” under ḏmr from Ugaritic ḏmr (uga-dmr, marked possible); check KTU 1.108:3 and the Ugaritic attestations in DULAT, and whether Arabic زمر is a loan from Aramaic. The Septuagint renders Exo 15:2 זִמְרָת by σκεπαστής “protector”, a lead for the ḏmr “protect” reading (Arabic ذِمَار, Old South Arabian ḏmr “protect”, Amorite names in zimri-), not followed to Sabaic dictionaries; entered as possible only. Klein's Arabic zabara “prune” is not in Lane's art. زبر (which has casing a well, writing, chiding), so not used; uga-zbr cited from DULAT by its well-known KTU 1.23 passage, page not checked. Klein's Arabic zamara of an antelope bounding (for זֶמֶר) is not in Lane's art. زمر, so זֶמֶר and Gen 43:11 זִמְרָה have no cognate. Sng 2:12 זָמִיר is kept as its own word (BDB g.br.ab) with both readings. Left out: זַן “kind” (g.bs.ah; 2Ch 16:14; Psa 144:13; and Aramaic זְנֵי in Dan 3:5), a loan from Old Persian zana by the Aramaic, not this root; and g.bs.ae, the gentilic זִמְרִי of Jer 25:25 (“the kings of Zimri”), a people, not a person, so in no name file. The names זִמְרִי, זִמְרָן, זְמִירָה are in names/zimri, zimran, zemirah. Peshitta words from SEDRA root 569 (lexemes 891–895): ܙܡܪ, ܡܙܡܘܪܐ, ܙܡܪܐ “music; revelry” (κῶμος in Rom 13:13; Gal 5:21; 1Pe 4:3), ܙܡܪܐ “piper”, ܙܡܝܪܬܐ; their stems (peal zmar, zomrin; pael ezammar, mzammar; ethpaal mezdammar) are from SEDRA's vocalisation and should be checked against the BFBS text. Ge'ez not yet checked in Dillmann."
+}
