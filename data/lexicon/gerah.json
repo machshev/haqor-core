@@ -1,0 +1,79 @@
+{
+  "id": "gerah",
+  "root": "גרה",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "gerah, one twentieth of a shekel",
+  "summary": "The census contribution, valuations and redemption payments all use a shekel of twenty gerahs. Ezekiel specifies the same ratio when calling for honest measures.",
+  "words": [
+    {
+      "lemma": "גֵּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "c.df.ac"
+      ],
+      "gloss": "gerah, one twentieth of a shekel",
+      "senses": [
+        {
+          "id": "weight",
+          "gloss": "gerah, one twentieth of a shekel",
+          "definition": "A small unit of weight. Twenty make one shekel by the standard given in the biblical passages.",
+          "evidence": [
+            {
+              "ref": "Exo.30.13",
+              "role": "defining",
+              "note": "The census offering is half a sanctuary shekel, and the full shekel is defined as twenty gerahs."
+            },
+            {
+              "ref": "Lev.27.25",
+              "role": "defining",
+              "note": "The standard applies to the sanctuary valuations."
+            },
+            {
+              "ref": "Num.3.47",
+              "role": "defining",
+              "note": "The payment for each firstborn beyond the number of Levites is five shekels at twenty gerahs to the shekel."
+            },
+            {
+              "ref": "Num.18.16",
+              "role": "defining",
+              "note": "The same reckoning applies to redemption from a month old."
+            },
+            {
+              "ref": "Ezk.45.12",
+              "role": "defining",
+              "note": "The prophet specifies twenty gerahs to the shekel alongside the reckoning of the mina."
+            }
+          ],
+          "cognate_ids": [
+            "akk-weight"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-weight",
+      "lang": "akk",
+      "form": "girû",
+      "translit": "girû",
+      "gloss": "small fraction of a shekel",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "G, pp. 96–97, girû A, BE 8 3:15 and YOS 6 112"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000079540"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Akkadian unit is usually reckoned at one twenty-fourth of a shekel. CAD also discusses a possible twelfth in one account. The biblical texts consistently specify a twentieth. The identical Hebrew spelling in the dietary laws means ‘cud’."
+}
