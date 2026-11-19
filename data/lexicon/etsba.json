@@ -1,0 +1,349 @@
+{
+  "id": "etsba",
+  "root": "צבע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "body",
+    "clothing"
+  ],
+  "gloss": "finger, dyed cloth, dip",
+  "summary": "A finger touches, points or writes. Biblical Aramaic also uses the word for a toe. The words for colouring cloth and wetting something share Hebrew consonants with finger, but Arabic preserves different final sounds.",
+  "words": [
+    {
+      "lemma": "אֶצְבַּע",
+      "bdb": [
+        "r.ak.ab",
+        "a.fi.ad"
+      ],
+      "pos": "noun",
+      "gloss": "finger",
+      "senses": [
+        {
+          "gloss": "finger",
+          "definition": "The priest dips his finger in the blood and sprinkles it. The bronze pillars are measured in fingerbreadths.",
+          "evidence": [
+            {
+              "ref": "Lev.4.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.52.21"
+            }
+          ],
+          "id": "finger"
+        },
+        {
+          "gloss": "finger of God",
+          "definition": "Egypt’s magicians identify the plague as the finger of God. The tablets are written by his finger. Psalm 8 calls the heavens the work of his fingers.",
+          "evidence": [
+            {
+              "ref": "Exo.8.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.31.18"
+            },
+            {
+              "ref": "Psa.8.4"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-isba"
+      ],
+      "greek": [
+        {
+          "lemma": "δάκτυλος",
+          "gloss": "finger",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 8:15, finger of God"
+            },
+            {
+              "ref": "Luk.11.20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֶצְבַּע",
+      "bdb": [
+        "xr.ac.ab",
+        "xa.be.af"
+      ],
+      "pos": "noun",
+      "gloss": "finger or toe",
+      "senses": [
+        {
+          "gloss": "finger",
+          "definition": "Fingers of a human hand appear and write on the wall during Belshazzar’s feast.",
+          "evidence": [
+            {
+              "ref": "Dan.5.5",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "toe",
+          "definition": "Daniel describes the toes of the statue’s feet as partly iron and partly clay.",
+          "evidence": [
+            {
+              "ref": "Dan.2.41",
+              "to": "Dan.2.42",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "ar-isba"
+      ]
+    },
+    {
+      "lemma": "צֶבַע",
+      "bdb": [
+        "r.aj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "dyed cloth",
+      "senses": [
+        {
+          "gloss": "dyed cloth",
+          "definition": "Sisera’s mother imagines him dividing spoil that includes coloured, embroidered cloth.",
+          "evidence": [
+            {
+              "ref": "Jdg.5.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-sabagha"
+      ]
+    },
+    {
+      "lemma": "צָבוּעַ",
+      "bdb": [
+        "r.aj.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "dyed, variegated",
+      "senses": [
+        {
+          "gloss": "dyed, variegated",
+          "definition": "Jeremiah asks whether Yahweh’s inheritance has become a speckled bird of prey surrounded by others. The precise animal pictured is disputed.",
+          "evidence": [
+            {
+              "ref": "Jer.12.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-sabagha"
+      ]
+    },
+    {
+      "lemma": "צְבַע",
+      "bdb": [
+        "xr.ab.aa"
+      ],
+      "pos": "verb",
+      "gloss": "wet, soak",
+      "stems": [
+        {
+          "stem": "hithpaal",
+          "gloss": "become wet",
+          "senses": [
+            {
+              "gloss": "become wet",
+              "definition": "The stump in the dream is drenched with dew. The account uses the same verb of Nebuchadnezzar when he lives outside.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.4.30"
+                },
+                {
+                  "ref": "Dan.5.21"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "drench",
+          "senses": [
+            {
+              "gloss": "drench",
+              "definition": "Daniel warns the king that he will be driven out and drenched with the dew of heaven.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "ar-sabagha"
+      ]
+    },
+    {
+      "lemma": "צְבֹעִים",
+      "bdb": [
+        "r.al.ac"
+      ],
+      "pos": "noun",
+      "gloss": "Zeboim",
+      "senses": [
+        {
+          "gloss": "Zeboim",
+          "definition": "A raiding party heads for the border overlooking the valley of Zeboim. Nehemiah lists a settlement of this name with Hadid and Neballat.",
+          "evidence": [
+            {
+              "ref": "1Sa.13.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.11.34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צֶבְעָא",
+      "pos": "noun",
+      "gloss": "finger",
+      "senses": [
+        {
+          "gloss": "finger",
+          "definition": "Jesus uses finger in the expression finger of God. Thomas is invited to put his finger where he can examine Jesus’ hands.",
+          "evidence": [
+            {
+              "ref": "Luk.11.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.20.27"
+            },
+            {
+              "ref": "Luk.16.24"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-isba"
+      ]
+    },
+    {
+      "lemma": "צְבַע",
+      "pos": "verb",
+      "gloss": "dip, wet",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "dip into liquid",
+          "senses": [
+            {
+              "gloss": "dip into liquid",
+              "definition": "The rich man asks for the tip of a finger dipped in water. Jesus dips a morsel before giving it to Judas.",
+              "evidence": [
+                {
+                  "ref": "Luk.16.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jhn.13.26"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "wet, wash",
+          "senses": [
+            {
+              "gloss": "wet, wash",
+              "definition": "The woman wets Jesus’ feet with her tears.",
+              "evidence": [
+                {
+                  "ref": "Luk.7.38",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.7.44"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-sabagha"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-isba",
+      "lang": "ar",
+      "form": "إِصْبَعٌ",
+      "translit": "ʾiṣbaʿ",
+      "gloss": "finger",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1646, إِصْبَعٌ n23705"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ",
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "ar-sabagha",
+      "lang": "ar",
+      "form": "صَبَغَ",
+      "translit": "ṣabagha",
+      "gloss": "dye, colour",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1647, صَبَغَهُ n23709"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ",
+        "ע": "ġ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The group contains more than one historical root. A further proposed comparison for the names Zibeon and Zeboim is the Arabic word for hyena. The biblical narratives do not explain either name."
+}
