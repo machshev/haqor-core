@@ -1,0 +1,103 @@
+{
+  "id": "mots",
+  "root": "מוצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "grain",
+    "judgment"
+  ],
+  "gloss": "chaff",
+  "summary": "Chaff is the light material the wind carries off a threshing floor. In Psalm 1 the wicked are like chaff driven away, while the tree by water stands and bears fruit.",
+  "words": [
+    {
+      "lemma": "מוֹץ",
+      "bdb": [
+        "m.ba.ab",
+        "m.da.bs"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "chaff",
+      "cognate_ids": [
+        "arc-motsa"
+      ],
+      "senses": [
+        {
+          "gloss": "chaff blown from threshed grain",
+          "definition": "The light remains of threshing that scatter when the grain is winnowed. The poets compare what vanishes quickly or is easily swept away to chaff before the wind.",
+          "evidence": [
+            {
+              "ref": "Hos.13.3",
+              "role": "defining",
+              "note": "The wind takes chaff directly from the threshing floor."
+            },
+            {
+              "ref": "Isa.41.15",
+              "to": "Isa.41.16",
+              "role": "defining",
+              "note": "The mountains are threshed and the hills become chaff. The wind carries them off when they are winnowed."
+            },
+            {
+              "ref": "Psa.1.3",
+              "to": "Psa.1.5"
+            },
+            {
+              "ref": "Psa.35.5"
+            },
+            {
+              "ref": "Isa.17.13"
+            },
+            {
+              "ref": "Zep.2.2"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תֶּבֶן",
+            "note": "Job sets straw before the wind beside chaff carried away by a storm.",
+            "evidence": [
+              {
+                "ref": "Job.21.18"
+              }
+            ]
+          },
+          {
+            "lemma": "אָבָק",
+            "note": "The multitude is likened to fine dust and passing chaff.",
+            "evidence": [
+              {
+                "ref": "Isa.29.5"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-motsa",
+      "lang": "arc",
+      "form": "מוֹצָא",
+      "translit": "mōṣā",
+      "gloss": "chaff",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מוֹץ³, מוֹצָא I, Targum Isaiah 29:5 and Jerusalem Talmud Sanhedrin X, 27d"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "מֹץ is the spelling without waw. The proposal to derive chaff from sucking out moisture is uncertain. The two spellings share one sense, and מִיץ belongs with squeezing."
+}
