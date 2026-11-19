@@ -1,0 +1,233 @@
+{
+  "id": "yakach",
+  "root": "יכח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "judgment"
+  ],
+  "gloss": "decide a dispute, reprove",
+  "summary": "The parties to a dispute can lay out their case and ask another to decide between them. A person who sees a wrong can also name it and call for change. Proverbs speaks of the father who corrects a son he loves, words Hebrews applies to those undergoing discipline.",
+  "words": [
+    {
+      "lemma": "יָכַח",
+      "bdb": [
+        "j.bl.aa"
+      ],
+      "pos": "verb",
+      "gloss": "rebuke, argue a case, decide",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "bring a matter to decision or correction",
+          "senses": [
+            {
+              "gloss": "decide, designate",
+              "definition": "A third party decides between those in dispute. The servant asks God to designate the woman for Isaac by the response she gives at the well.",
+              "evidence": [
+                {
+                  "ref": "Gen.31.37",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.2.4"
+                },
+                {
+                  "ref": "Gen.24.14"
+                },
+                {
+                  "ref": "Gen.24.44"
+                }
+              ]
+            },
+            {
+              "gloss": "present a case or complaint",
+              "definition": "Abraham takes up with Abimelech the seizure of a well. Job says he will defend his conduct to God’s face.",
+              "evidence": [
+                {
+                  "ref": "Gen.21.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.13.15"
+                }
+              ]
+            },
+            {
+              "gloss": "rebuke, correct",
+              "definition": "A father corrects the child he loves. The psalmist asks Yahweh to temper his correction, pairing rebuke with discipline.",
+              "evidence": [
+                {
+                  "ref": "Pro.3.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.6.2"
+                },
+                {
+                  "ref": "Lev.19.17"
+                },
+                {
+                  "ref": "Heb.12.5",
+                  "to": "Heb.12.6"
+                }
+              ],
+              "id": "correct",
+              "kin": [
+                "rebuke"
+              ],
+              "cognate_ids": [
+                "arc-tokhecha"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "argue together, be vindicated",
+          "senses": [
+            {
+              "gloss": "reason a case together",
+              "definition": "Yahweh summons his people to reason the matter out. Job imagines appearing before his judge to plead his cause.",
+              "evidence": [
+                {
+                  "ref": "Isa.1.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.23.7"
+                }
+              ]
+            },
+            {
+              "gloss": "be vindicated",
+              "definition": "Abimelech’s public payment on Sarah’s behalf sets her right before those with her. The precise force of his last words is disputed.",
+              "evidence": [
+                {
+                  "ref": "Gen.20.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "contend with",
+          "senses": [
+            {
+              "gloss": "contend with",
+              "definition": "The mountains hear Yahweh’s dispute as he argues his case against Israel.",
+              "evidence": [
+                {
+                  "ref": "Mic.6.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be chastened",
+          "senses": [
+            {
+              "gloss": "be chastened",
+              "definition": "Elihu describes a person corrected through pain while lying on his bed.",
+              "evidence": [
+                {
+                  "ref": "Job.33.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παιδεύω",
+          "gloss": "discipline, educate",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PRO 3:12 word 6"
+            },
+            {
+              "ref": "Heb.12.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תּוֹכֵחָה",
+      "bdb": [
+        "j.bl.ab"
+      ],
+      "pos": "noun",
+      "gloss": "rebuke, correction, argument",
+      "senses": [
+        {
+          "gloss": "rebuke or correction",
+          "definition": "Wisdom calls her hearers to turn at her rebuke. Whoever disregards correction loses the way, and whoever listens can gain wisdom.",
+          "evidence": [
+            {
+              "ref": "Pro.1.23",
+              "to": "Pro.1.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.10.17"
+            },
+            {
+              "ref": "Pro.29.15"
+            },
+            {
+              "ref": "Psa.39.12"
+            }
+          ],
+          "id": "rebuke",
+          "kin": [
+            "correct"
+          ],
+          "cognate_ids": [
+            "arc-tokhecha"
+          ]
+        },
+        {
+          "gloss": "argument, case in dispute",
+          "definition": "Job fills his mouth with arguments as he prepares to lay his case before his judge.",
+          "evidence": [
+            {
+              "ref": "Job.23.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "summary": "The noun also takes the form תּוֹכַחַת, as in Proverbs 27:5, where open rebuke is preferable to concealed love."
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-tokhecha",
+      "lang": "arc",
+      "form": "תּוֹכֵחָא",
+      "translit": "tôḵēḥā",
+      "gloss": "reproof, admonition",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תּוֹכֵחָה (Aramaic), Targum Micah 6:2 and Genesis Rabbah 52"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The two noun keys recover the same 28 tokens. Their two citation forms are given together. Sarah’s vindication in Genesis 20:16 and the designation of Rebekah in Genesis 24 show how broadly the verb may express settling a matter."
+}
