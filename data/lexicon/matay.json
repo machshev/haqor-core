@@ -1,0 +1,129 @@
+{
+  "id": "matay",
+  "root": "מתי",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "time",
+    "questions"
+  ],
+  "gloss": "when?",
+  "summary": "The psalmist asks when Yahweh will comfort him. With עַד, the question asks how much longer something will last. In Psalm 6 the speaker breaks off at “and you, Yahweh, how long?” before asking Yahweh to turn and deliver him.",
+  "words": [
+    {
+      "lemma": "מָתַי",
+      "bdb": [
+        "m.ed.aa"
+      ],
+      "pos": "adverb",
+      "gloss": "when?",
+      "cognate_ids": [
+        "ar-mata",
+        "akk-mati"
+      ],
+      "senses": [
+        {
+          "gloss": "at what time?",
+          "definition": "The speaker asks at what time an event will take place. Nehemiah is asked when he will return and gives the king a time.",
+          "evidence": [
+            {
+              "ref": "Neh.2.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.30.30"
+            },
+            {
+              "ref": "Psa.119.82"
+            }
+          ]
+        },
+        {
+          "gloss": "how much longer? (with עַד)",
+          "definition": "The question asks when a continuing state will end. Abner asks whether the sword will devour forever, then asks how long Joab will wait before calling off the pursuit.",
+          "evidence": [
+            {
+              "ref": "2Sa.2.26",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.6.9",
+              "role": "defining",
+              "note": "How long will you lie down? When will you rise?"
+            },
+            {
+              "ref": "Psa.6.4",
+              "to": "Psa.6.5"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "עַד־מָתַי",
+            "gloss": "until when? how long?",
+            "evidence": [
+              {
+                "ref": "Psa.94.3"
+              },
+              {
+                "ref": "Exo.10.7"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "πότε",
+          "gloss": "when?",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 6:4, word 8"
+            },
+            {
+              "ref": "Rev.6.10",
+              "note": "The petition asks how long it will be before judgment, ἕως πότε."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-mata",
+      "lang": "ar",
+      "form": "مَتَى",
+      "translit": "matā",
+      "gloss": "when?",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3017, مَتَى, n43498",
+          "note": "Also حَتَّى مَتَى, how long?"
+        }
+      ]
+    },
+    {
+      "id": "akk-mati",
+      "lang": "akk",
+      "form": "mati",
+      "translit": "mati",
+      "gloss": "when?",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000025590, mati [when?], question particle"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The zero-token redirects מְתִים (men) and מְתֹם point elsewhere. The noun מְתֹם meaning soundness belongs to tamam. The Peshitta name Matthew has the same consonants. Its spelling supplies no evidence that the name derives from the question word."
+}
