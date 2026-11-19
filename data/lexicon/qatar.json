@@ -1,0 +1,1244 @@
+{
+  "id": "qatar",
+  "root": "קטר",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "worship",
+    "sacrifice",
+    "incense",
+    "smoke",
+    "priesthood",
+    "prayer",
+    "idolatry",
+    "binding"
+  ],
+  "gloss": "make smoke, send up in smoke; burn incense; (Aramaic) knot, joint",
+  "summary": "To make an offering go up as smoke: the fat, the whole burnt offering and the memorial of the grain offering turned to smoke on the altar as “a scent of rest to Yahweh”, and the sweet incense burned morning and evening before him. The noun קְטֹרֶת is that incense, compounded by Yahweh's own recipe and burned only by Aaron's seed (Num 17:5), whose cloud covered the mercy seat (Lev 16:13) and which David asked to be the likeness of his prayer (Psa 141:2); the piel is almost always the incense of the high places and of other gods. Akkadian qatāru “smoke”, qutru “smoke” and qutrēnu “incense offering”, Ugaritic qṭr “smoke” and Sabaic mqṭr “incense altar” show the same sense. The same spelling also covers “tie, knot” (Daniel's Aramaic קְטַר, the Syriac and Jewish Aramaic verb “tie”, and perhaps Ezk 46:22 “enclosed”), and how that joins the smoke is not clear.",
+  "words": [
+    {
+      "lemma": "קָטַר",
+      "pos": "verb",
+      "gloss": "make smoke, turn to smoke on the altar; burn incense",
+      "bdb": [
+        "s.bg.af"
+      ],
+      "cognate_ids": [
+        "akk-qataru",
+        "uga-qtr",
+        "ar-qutar",
+        "ar-qutr",
+        "arc-aqtar"
+      ],
+      "summary": "About 115 times, never in the qal: hiphil (70), piel (42), and once each hophal and pual. The hiphil is the priest's word in the law, turning fat, flesh and grain into smoke on the altar and burning the sanctuary's incense; the piel, with a few hiphils, is the word of the prophets and Kings for the incense and offerings of the high places, Baal, the queen of the heavens and the host of heaven. The database files the spelling under three BDB keys (s.bg.af, s.bg.ai, s.bg.ak), so the 116 tokens are also counted under מֻקְטָר and מְקַטְּרָה.",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "make (an offering) go up in smoke; burn incense",
+          "senses": [
+            {
+              "id": "turn-to-smoke",
+              "gloss": "turn an offering to smoke on the altar",
+              "definition": "Of the priest: to put the fat, the parts of a burnt offering, or a handful of the grain offering on the altar fire so that it goes up as smoke, “a fire offering, a scent of rest to Yahweh”.",
+              "evidence": [
+                {
+                  "ref": "Lev.1.9",
+                  "role": "defining",
+                  "note": "“וְהִקְטִיר the priest all of it on the altar, a burnt offering, a fire offering, a scent of rest to Yahweh.”"
+                },
+                {
+                  "ref": "Lev.2.2",
+                  "role": "defining",
+                  "note": "The handful of fine flour, oil and frankincense: “וְהִקְטִיר the priest its memorial on the altar.”"
+                },
+                {
+                  "ref": "Lev.3.5",
+                  "note": "The fat of the peace offering, on the burnt offering “on the wood that is on the fire”."
+                },
+                {
+                  "ref": "Exo.29.18",
+                  "note": "“וְהִקְטַרְתָּ the whole ram on the altar; it is a burnt offering to Yahweh.”"
+                },
+                {
+                  "ref": "Exo.29.13"
+                },
+                {
+                  "ref": "Lev.4.10"
+                },
+                {
+                  "ref": "Lev.16.25",
+                  "note": "The fat of the sin offering on the Day of Coverings."
+                },
+                {
+                  "ref": "1Sa.2.15",
+                  "role": "defining",
+                  "note": "“Before they made the fat smoke (יַקְטִרוּן)”, Eli's servant demanded raw meat: the fat was Yahweh's portion, to go up first."
+                },
+                {
+                  "ref": "2Ki.16.15",
+                  "note": "Ahaz to Urijah: “on the great altar הַקְטֵר the morning burnt offering and the evening grain offering.”"
+                },
+                {
+                  "ref": "Jer.33.18",
+                  "note": "The Levitical priests “offering up a burnt offering and מַקְטִיר a grain offering and making sacrifice all the days”."
+                }
+              ]
+            },
+            {
+              "id": "burn-incense-hiphil",
+              "gloss": "burn incense",
+              "definition": "To burn the sanctuary's incense on its golden altar, morning and evening, the work only Aaron and his sons may do; also of incense and offerings to other gods.",
+              "evidence": [
+                {
+                  "ref": "Exo.30.7",
+                  "to": "Exo.30.8",
+                  "role": "defining",
+                  "note": "“Aaron וְהִקְטִיר on it incense of spices; every morning when he dresses the lamps יַקְטִירֶנָּה … a continual incense before Yahweh.”"
+                },
+                {
+                  "ref": "Num.17.5",
+                  "role": "defining",
+                  "note": "After Korah: “that no stranger who is not of the seed of Aaron come near לְהַקְטִיר קְטֹרֶת before Yahweh.”"
+                },
+                {
+                  "ref": "2Ch.26.18",
+                  "role": "defining",
+                  "note": "To Uzziah: “It is not for you לְהַקְטִיר to Yahweh, but for the priests, the sons of Aaron, who are consecrated לְהַקְטִיר.”"
+                },
+                {
+                  "ref": "2Ch.26.16"
+                },
+                {
+                  "ref": "Exo.40.27",
+                  "note": "Moses “burned on it incense of spices, as Yahweh commanded Moses”."
+                },
+                {
+                  "ref": "1Sa.2.28",
+                  "note": "The priest chosen “to go up on my altar, לְהַקְטִיר קְטֹרֶת, to wear an ephod”."
+                },
+                {
+                  "ref": "1Ch.6.34",
+                  "note": "“Aaron and his sons מַקְטִירִים on the altar of burnt offering and on the altar of incense … and to make covering for Israel.”"
+                },
+                {
+                  "ref": "2Ch.29.11",
+                  "note": "“Yahweh has chosen you … to be his ministers וּמַקְטִרִים.”"
+                },
+                {
+                  "ref": "1Ki.11.8",
+                  "note": "Solomon's foreign wives “מַקְטִירוֹת and sacrificing to their gods”."
+                },
+                {
+                  "ref": "Hos.2.15",
+                  "note": "“The days of the Baals to which she burned incense.”"
+                },
+                {
+                  "ref": "Jer.48.35",
+                  "note": "Moab, “him who offers on the high place וּמַקְטִיר to his gods”."
+                },
+                {
+                  "ref": "2Ch.28.3",
+                  "note": "Ahaz “burned incense in the valley of Hinnom and burned his sons in the fire”."
+                }
+              ],
+              "kin": [
+                "incense"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "burn incense, make offerings smoke (mostly to other gods or at the high places)",
+          "senses": [
+            {
+              "id": "burn-incense-piel",
+              "gloss": "burn incense; make offerings smoke",
+              "definition": "To burn incense or make offerings go up in smoke, in almost every verse at the high places or to Baal, the queen of the heavens, the host of heaven or other gods, and set beside זִבֵּחַ “sacrifice”.",
+              "evidence": [
+                {
+                  "ref": "1Ki.22.44",
+                  "role": "defining",
+                  "note": "“The high places were not removed; the people still sacrificed וּמְקַטְּרִים on the high places.”"
+                },
+                {
+                  "ref": "Jer.44.17",
+                  "role": "defining",
+                  "note": "“לְקַטֵּר to the queen of the heavens and to pour out drink offerings to her.”"
+                },
+                {
+                  "ref": "Jer.44.18"
+                },
+                {
+                  "ref": "Jer.44.21",
+                  "note": "“The incense (הַקִּטֵּר) that you burned (קִטַּרְתֶּם) in the cities of Judah … has Yahweh not remembered?”"
+                },
+                {
+                  "ref": "Jer.1.16",
+                  "role": "defining",
+                  "note": "“They have forsaken me וַיְקַטְּרוּ to other gods and bowed down to the works of their hands.”"
+                },
+                {
+                  "ref": "Jer.7.9",
+                  "note": "“Steal, murder, commit adultery, swear falsely, וְקַטֵּר to Baal.”"
+                },
+                {
+                  "ref": "Jer.11.13",
+                  "note": "“Altars לְקַטֵּר to Baal.”"
+                },
+                {
+                  "ref": "Jer.19.13",
+                  "note": "The houses “on whose roofs they burned incense to all the host of the heavens”."
+                },
+                {
+                  "ref": "2Ki.18.4",
+                  "note": "Until Hezekiah's days Israel “were burning incense to” the bronze serpent."
+                },
+                {
+                  "ref": "2Ki.23.5"
+                },
+                {
+                  "ref": "Hos.4.13",
+                  "note": "“On the tops of the mountains they sacrifice, and on the hills יְקַטֵּרוּ.”"
+                },
+                {
+                  "ref": "Hab.1.16",
+                  "role": "defining",
+                  "note": "The Chaldean “sacrifices to his net וִיקַטֵּר to his dragnet”: worship of what has fed him."
+                },
+                {
+                  "ref": "Isa.65.3"
+                },
+                {
+                  "ref": "Amo.4.5",
+                  "note": "“וְקַטֵּר a thank offering of leavened bread”: Bethel's offerings, in irony."
+                },
+                {
+                  "ref": "1Sa.2.16",
+                  "note": "The one lawful use: “Let them surely make the fat smoke (קַטֵּר יַקְטִירוּן) today.”"
+                }
+              ],
+              "kin": [
+                "incense"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be turned to smoke",
+          "senses": [
+            {
+              "gloss": "be turned to smoke on the altar",
+              "definition": "Of the anointed priest's grain offering: to be burned whole as smoke, none of it eaten.",
+              "evidence": [
+                {
+                  "ref": "Lev.6.15",
+                  "role": "defining",
+                  "note": "“A statute for ever to Yahweh: כָּלִיל תָּקְטָר”, wholly turned to smoke; Lev 6:16, “it shall not be eaten”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be perfumed (with smoke of incense)",
+          "senses": [
+            {
+              "gloss": "perfumed, fragrant with incense smoke",
+              "definition": "Of one coming up out of the wilderness like columns of smoke: made fragrant with the smoke of myrrh and frankincense.",
+              "evidence": [
+                {
+                  "ref": "Sng.3.6",
+                  "role": "defining",
+                  "note": "“Like columns of smoke (עָשָׁן), מְקֻטֶּרֶת myrrh and frankincense.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θυμιάω",
+          "gloss": "burn incense",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.30.7, הִקְטִיר → θυμιάσει; the forms of θυμιάω render קָטַר about fifty times, above all the piel in Kings and Jeremiah"
+            },
+            {
+              "ref": "Luk.1.9",
+              "role": "defining",
+              "note": "Zechariah's lot was “to burn incense (θυμιᾶσαι), going into the temple of the Lord”: the daily incense of Exo 30:7–8 by a son of Aaron."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀναφέρω",
+          "gloss": "offer up, bring up (on the altar)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.29.18, 25; Lev.2.16; 3.5, הִקְטִיר → ἀνοίσεις, ἀνοίσει, ἀνοίσουσιν; ἀναφέρω renders קָטַר ×21"
+            },
+            {
+              "ref": "Heb.7.27",
+              "note": "The high priests “offer up (ἀναφέρειν) sacrifices daily … for this he did once for all when he offered up himself”."
+            },
+            {
+              "ref": "Heb.13.15",
+              "note": "“Let us offer up (ἀναφέρωμεν) a sacrifice of praise to God continually, the fruit of lips.”"
+            },
+            {
+              "ref": "1Pe.2.5",
+              "note": "“A holy priesthood, to offer up (ἀνενέγκαι) spiritual sacrifices acceptable to God through Jesus Christ.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זָבַח",
+            "note": "“Sacrifice”: the fixed partner of the piel in the worship of the high places, and of the hiphil in Solomon's and Moab's.",
+            "evidence": [
+              {
+                "ref": "1Ki.22.44",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.4.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Hab.1.16"
+              },
+              {
+                "ref": "1Ki.3.3"
+              },
+              {
+                "ref": "1Ki.11.8"
+              },
+              {
+                "ref": "Hos.11.2"
+              }
+            ]
+          },
+          {
+            "lemma": "הֶעֱלָה",
+            "note": "“Offer up” a burnt offering: set beside the hiphil of the burning of grain or incense.",
+            "evidence": [
+              {
+                "ref": "Jer.33.18",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.9.25"
+              },
+              {
+                "ref": "Jer.48.35"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "רֵיחַ נִיחֹחַ לַיַהְוֶה",
+            "gloss": "a scent of rest to Yahweh",
+            "evidence": [
+              {
+                "ref": "Lev.1.9",
+                "role": "defining",
+                "note": "What the offering turned to smoke is to Yahweh."
+              },
+              {
+                "ref": "Lev.2.2"
+              },
+              {
+                "ref": "Lev.3.5"
+              },
+              {
+                "ref": "Exo.29.18"
+              }
+            ]
+          },
+          {
+            "phrase": "קַטֵּר לִמְלֶכֶת הַשָּׁמַיִם",
+            "gloss": "burn incense to the queen of the heavens",
+            "evidence": [
+              {
+                "ref": "Jer.44.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.44.18"
+              },
+              {
+                "ref": "Jer.44.19"
+              },
+              {
+                "ref": "Jer.44.25"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קְטֹרֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "incense; smoke (of sacrifice)",
+      "bdb": [
+        "s.bg.ae"
+      ],
+      "cognate_ids": [
+        "akk-qataru",
+        "uga-qtr",
+        "ar-qutar",
+        "ar-qutr",
+        "sem-mqtr",
+        "arc-aqtar"
+      ],
+      "senses": [
+        {
+          "id": "incense",
+          "gloss": "incense",
+          "definition": "The fragrant compound burned before Yahweh: stacte, onycha, galbanum and pure frankincense, salted, pure and holy, made by his recipe and for no other use; burned on its own golden altar, morning and evening, and in the censers. “Strange” incense, and incense offered by those he had not chosen, brought death.",
+          "evidence": [
+            {
+              "ref": "Exo.30.34",
+              "to": "Exo.30.37",
+              "role": "defining",
+              "note": "“Make it קְטֹרֶת, a perfume, the work of a perfumer, salted, pure, holy … you shall not make it for yourselves; it shall be holy to you for Yahweh.”"
+            },
+            {
+              "ref": "Exo.30.1",
+              "note": "“An altar, מִקְטַר קְטֹרֶת.”"
+            },
+            {
+              "ref": "Exo.30.8",
+              "role": "defining",
+              "note": "“קְטֹרֶת תָּמִיד before Yahweh throughout your generations.”"
+            },
+            {
+              "ref": "Exo.30.9",
+              "note": "“You shall offer no strange incense (קְטֹרֶת זָרָה) on it.”"
+            },
+            {
+              "ref": "Lev.16.12",
+              "to": "Lev.16.13",
+              "role": "defining",
+              "note": "On the Day of Coverings, a censer full of coals and two handfuls of beaten incense inside the veil: “the cloud of the incense shall cover the covering lid that is on the testimony, and he will not die.”"
+            },
+            {
+              "ref": "Lev.10.1",
+              "note": "Nadab and Abihu “put incense on it and offered strange fire before Yahweh, which he had not commanded them”."
+            },
+            {
+              "ref": "Num.16.7",
+              "note": "Korah's company: “put incense on them before Yahweh tomorrow, and the man whom Yahweh chooses, he is the holy one.”"
+            },
+            {
+              "ref": "Num.16.35",
+              "note": "Fire from Yahweh consumed “the two hundred and fifty men offering the incense”."
+            },
+            {
+              "ref": "Num.17.11",
+              "to": "Num.17.13",
+              "role": "defining",
+              "note": "Aaron “put on the incense and made covering for the people; and he stood between the dead and the living, and the plague was stayed.”"
+            },
+            {
+              "ref": "Num.7.14",
+              "note": "Each prince's gold pan “full of incense”."
+            },
+            {
+              "ref": "Num.4.16"
+            },
+            {
+              "ref": "2Ch.13.11",
+              "note": "“Burnt offerings every morning and every evening, and incense of spices.”"
+            },
+            {
+              "ref": "2Ch.26.19",
+              "note": "Uzziah, censer in hand, struck with leprosy “from beside the altar of incense”."
+            },
+            {
+              "ref": "Ezk.8.11",
+              "note": "Seventy elders of Israel before the idols, each with his censer, “and the smell of the cloud of the incense went up”."
+            },
+            {
+              "ref": "Ezk.16.18",
+              "note": "“My oil and my incense you set before them”: Yahweh's gifts given to idols."
+            },
+            {
+              "ref": "Ezk.23.41"
+            },
+            {
+              "ref": "Isa.1.13",
+              "role": "defining",
+              "note": "“Bring no more vain offerings; incense is an abomination to me”: offered with hands full of blood (Isa 1:15)."
+            },
+            {
+              "ref": "Psa.141.2",
+              "role": "defining",
+              "note": "“Let my prayer be set before you as קְטֹרֶת, the lifting up of my hands as the evening grain offering.”"
+            },
+            {
+              "ref": "Pro.27.9",
+              "note": "“Oil and incense gladden the heart”: its fragrance."
+            }
+          ],
+          "kin": [
+            "burn-incense-hiphil",
+            "burn-incense-piel"
+          ]
+        },
+        {
+          "gloss": "smoke of a burnt offering",
+          "definition": "The smoke of the flesh of burnt offerings going up.",
+          "evidence": [
+            {
+              "ref": "Psa.66.15",
+              "role": "defining",
+              "note": "“Burnt offerings of fatlings I will offer up to you, with קְטֹרֶת of rams.”"
+            }
+          ],
+          "kin": [
+            "turn-to-smoke"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θυμίαμα",
+          "gloss": "incense",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.30.7, 8, 9; Lev.16.13; Num.17.11, 12, קְטֹרֶת → θυμίαμα; θυμίαμα renders קְטֹרֶת ×42"
+            },
+            {
+              "ref": "Luk.1.10",
+              "to": "Luk.1.11",
+              "note": "“The whole multitude of the people were praying outside at the hour of incense”; the angel stood at the right of the altar of incense."
+            },
+            {
+              "ref": "Rev.5.8",
+              "role": "defining",
+              "note": "“Golden bowls full of incense (θυμιαμάτων), which are the prayers of the saints”: the likeness of Psa 141:2."
+            },
+            {
+              "ref": "Rev.8.3",
+              "to": "Rev.8.4",
+              "note": "Much incense given at the golden altar “with the prayers of all the saints”, and its smoke went up before God."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תְּפִלָּה",
+            "note": "Prayer, set before Yahweh as incense.",
+            "evidence": [
+              {
+                "ref": "Psa.141.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מִנְחָה",
+            "note": "The grain offering, named beside incense in worship accepted and rejected.",
+            "evidence": [
+              {
+                "ref": "Psa.141.2"
+              },
+              {
+                "ref": "Isa.1.13"
+              },
+              {
+                "ref": "Exo.30.9"
+              }
+            ]
+          },
+          {
+            "lemma": "שֶׁמֶן",
+            "note": "Oil, paired with incense as fragrance and as Yahweh's gifts.",
+            "evidence": [
+              {
+                "ref": "Pro.27.9"
+              },
+              {
+                "ref": "Ezk.16.18"
+              },
+              {
+                "ref": "Ezk.23.41"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִזְבַּח הַקְּטֹרֶת",
+            "gloss": "the altar of incense",
+            "evidence": [
+              {
+                "ref": "Exo.30.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.4.7"
+              },
+              {
+                "ref": "1Ch.6.34"
+              },
+              {
+                "ref": "2Ch.26.16"
+              },
+              {
+                "ref": "2Ch.26.19"
+              }
+            ]
+          },
+          {
+            "phrase": "קְטֹרֶת הַסַּמִּים",
+            "gloss": "the incense of spices",
+            "evidence": [
+              {
+                "ref": "Exo.30.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.40.27"
+              },
+              {
+                "ref": "Lev.16.12"
+              },
+              {
+                "ref": "Num.4.16"
+              },
+              {
+                "ref": "2Ch.13.11"
+              }
+            ]
+          },
+          {
+            "phrase": "קְטֹרֶת זָרָה",
+            "gloss": "strange incense",
+            "evidence": [
+              {
+                "ref": "Exo.30.9",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קִיטוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "thick smoke; vapour",
+      "bdb": [
+        "s.bg.ab"
+      ],
+      "cognate_ids": [
+        "akk-qataru",
+        "uga-qtr"
+      ],
+      "senses": [
+        {
+          "gloss": "thick smoke, as of a furnace",
+          "definition": "Smoke rising in a mass: from the burned cities of the plain, or the smoke that blackens and dries a hanging wineskin.",
+          "evidence": [
+            {
+              "ref": "Gen.19.28",
+              "role": "defining",
+              "note": "“Behold, the קִיטֹר of the land went up like the קִיטֹר of a furnace.”"
+            },
+            {
+              "ref": "Psa.119.83",
+              "note": "“I have become like a wineskin in the smoke, yet I do not forget your statutes.”"
+            }
+          ],
+          "kin": [
+            "turn-to-smoke"
+          ]
+        },
+        {
+          "gloss": "vapour, mist",
+          "definition": "One of the things of the sky that do Yahweh's word, listed with fire, hail and snow.",
+          "evidence": [
+            {
+              "ref": "Psa.148.8",
+              "role": "defining",
+              "note": "“Fire and hail, snow וְקִיטוֹר, stormy wind doing his word.” Whether it is smoke, cloud or frost here, the list does not fix."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִקְטֶרֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "censer",
+      "bdb": [
+        "s.bg.aj"
+      ],
+      "cognate_ids": [
+        "akk-qataru",
+        "sem-mqtr"
+      ],
+      "senses": [
+        {
+          "gloss": "censer",
+          "definition": "A vessel carried in the hand for burning incense.",
+          "evidence": [
+            {
+              "ref": "2Ch.26.19",
+              "role": "defining",
+              "note": "“In his hand a מִקְטֶרֶת לְהַקְטִיר.”"
+            },
+            {
+              "ref": "Ezk.8.11",
+              "role": "defining",
+              "note": "“Each man his מִקְטַרְתּוֹ in his hand, and the smell of the cloud of the incense went up.”"
+            }
+          ],
+          "kin": [
+            "incense"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θυμιατήριον",
+          "gloss": "censer; altar of incense",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ch.26.19, מִקְטֶרֶת → θυμιατήριον"
+            },
+            {
+              "ref": "Heb.9.4",
+              "note": "The holiest place “having the golden θυμιατήριον and the ark of the covenant”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְטוֹרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "incense; smoke of offering",
+      "bdb": [
+        "s.bg.ac"
+      ],
+      "cognate_ids": [
+        "akk-qataru"
+      ],
+      "summary": "Once only, in Moses' blessing of Levi; BDB calls it masculine, but the form is feminine.",
+      "senses": [
+        {
+          "gloss": "incense set before Yahweh",
+          "definition": "What Levi puts before Yahweh, beside the whole offerings on his altar.",
+          "evidence": [
+            {
+              "ref": "Deu.33.10",
+              "role": "defining",
+              "note": "“They teach your judgments to Jacob and your law to Israel; they put קְטוֹרָה in your nostrils and whole offerings on your altar.”"
+            }
+          ],
+          "kin": [
+            "incense"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קִטֵּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "incense (burned)",
+      "bdb": [
+        "s.bg.ag"
+      ],
+      "cognate_ids": [
+        "akk-qataru"
+      ],
+      "summary": "Once, as the object of the piel in the same verse; it may be the piel's verbal noun, “the burning of incense”. BDB calls it feminine; nothing in the verse shows the gender.",
+      "senses": [
+        {
+          "gloss": "incense burned (to other gods)",
+          "definition": "The incense Judah burned in its cities and streets, which Yahweh remembered.",
+          "evidence": [
+            {
+              "ref": "Jer.44.21",
+              "role": "defining",
+              "note": "“הַקִּטֵּר אֲשֶׁר קִטַּרְתֶּם in the cities of Judah … has Yahweh not remembered them?”"
+            }
+          ],
+          "kin": [
+            "burn-incense-piel"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִקְטָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "place for burning (incense)",
+      "bdb": [
+        "s.bg.ah"
+      ],
+      "cognate_ids": [
+        "akk-qataru",
+        "sem-mqtr"
+      ],
+      "summary": "Once, in construct, naming the golden altar of incense.",
+      "senses": [
+        {
+          "gloss": "place of burning",
+          "definition": "The altar as the place where incense is burned.",
+          "evidence": [
+            {
+              "ref": "Exo.30.1",
+              "role": "defining",
+              "note": "“You shall make an altar, מִקְטַר קְטֹרֶת; of acacia wood you shall make it.”"
+            }
+          ],
+          "kin": [
+            "incense"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֻקְטָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "incense offering; what is turned to smoke",
+      "bdb": [
+        "s.bg.ai"
+      ],
+      "cognate_ids": [
+        "akk-qataru"
+      ],
+      "summary": "Once. In form it is the hophal participle, “what is made to smoke”, and may be read as the verb (“incense is offered”); BDB files it as a noun. Its token count is shared with the verb's spelling (see the verb).",
+      "senses": [
+        {
+          "gloss": "incense offered to Yahweh's name",
+          "definition": "What will be made to go up in smoke to Yahweh's name in every place among the nations.",
+          "evidence": [
+            {
+              "ref": "Mal.1.11",
+              "role": "defining",
+              "note": "“My name is great among the nations, and in every place מֻקְטָר is brought near to my name, and a pure grain offering.”"
+            }
+          ],
+          "kin": [
+            "incense"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θυμίαμα",
+          "gloss": "incense",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Mal.1.11, מֻקְטָר → θυμίαμα"
+            },
+            {
+              "ref": "Rev.8.3",
+              "note": "Incense offered “with the prayers of all the saints” on the golden altar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְקַטְּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "incense altar",
+      "bdb": [
+        "s.bg.ak"
+      ],
+      "cognate_ids": [
+        "akk-qataru",
+        "sem-mqtr"
+      ],
+      "summary": "Once, plural, of the altars of Ahaz's Jerusalem. In form the feminine piel participle; its token count is shared with the verb's spelling (see the verb).",
+      "senses": [
+        {
+          "gloss": "altar for burning incense (to other gods)",
+          "definition": "The incense altars set up through Jerusalem, removed and thrown into the Kidron at Hezekiah's Passover.",
+          "evidence": [
+            {
+              "ref": "2Ch.30.14",
+              "role": "defining",
+              "note": "“They removed the altars that were in Jerusalem, and all הַמְקַטְּרוֹת they removed and threw into the wadi Kidron.”"
+            },
+            {
+              "ref": "2Ch.28.24",
+              "note": "Ahaz “made himself altars in every corner of Jerusalem”."
+            }
+          ],
+          "kin": [
+            "burn-incense-piel"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְטַר",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "joint; knot, hard problem",
+      "bdb": [
+        "xs.af.ab"
+      ],
+      "cognate_ids": [
+        "arc-qetar-tie",
+        "syc-qtr",
+        "ar-qitar"
+      ],
+      "summary": "Daniel's Aramaic, three times: the “knots” of the loins are the joints that give way in fear, and “loosening knots” is solving riddles, as the Syriac ܩܛܪܐ is both a joint and a knot or enigma. Its link to the smoke of the Hebrew is not clear.",
+      "senses": [
+        {
+          "id": "joint",
+          "gloss": "joint (of the body)",
+          "definition": "The joints of the hips or loins, which are “loosed” when a man's strength fails in terror.",
+          "evidence": [
+            {
+              "ref": "Dan.5.6",
+              "role": "defining",
+              "note": "“וְקִטְרֵי חַרְצֵהּ were loosed, and his knees knocked one against another.”"
+            }
+          ]
+        },
+        {
+          "id": "knot-riddle",
+          "gloss": "knot, hard problem",
+          "definition": "A knotted question to be untied: set with interpreting dreams and declaring riddles, and “loosed” by understanding.",
+          "evidence": [
+            {
+              "ref": "Dan.5.12",
+              "role": "defining",
+              "note": "“Interpreting dreams, declaring riddles (אֲחִידָן) וּמְשָׁרֵא קִטְרִין.”"
+            },
+            {
+              "ref": "Dan.5.16",
+              "note": "“That you can give interpretations וְקִטְרִין לְמִשְׁרֵא.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָטַר",
+      "pos": "verb",
+      "gloss": "enclose, shut in (?)",
+      "bdb": [
+        "s.bh.aa"
+      ],
+      "cognate_ids": [
+        "arc-qetar-tie",
+        "syc-qtr",
+        "ar-qitar"
+      ],
+      "summary": "Once, the qal passive participle of the courts in the corners of Ezekiel's outer court. If the reading stands it is the verb “tie, bind” of Aramaic and Syriac, of courts closed in; the word rests on one verse.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "(passive) enclosed",
+          "senses": [
+            {
+              "gloss": "enclosed",
+              "definition": "Of courts: closed in, as the four small courts in the corners of the outer court, forty by thirty cubits, where the sacrifices were boiled.",
+              "evidence": [
+                {
+                  "ref": "Ezk.46.22",
+                  "role": "defining",
+                  "note": "“In the four corners of the court were חֲצֵרוֹת קְטֻרוֹת, forty long and thirty wide.”"
+                },
+                {
+                  "ref": "Ezk.46.24",
+                  "note": "“These are the houses of those who boil, where the ministers of the house boil the people's sacrifice.”"
+                }
+              ],
+              "kin": [
+                "knot-riddle"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-qataru",
+      "lang": "akk",
+      "form": "qatāru, qutru, qutrēnu",
+      "translit": "qatāru, qutru, qutrēnu",
+      "gloss": "(verb) smoke, billow, rise (of smoke), fumigate; (qutru) smoke; (qutrēnu, qutrinnu) incense, incense offering",
+      "relation": "cognate",
+      "note": "The whole Hebrew family in one language: the verb of rising smoke and fumigating, the noun “smoke” (קִיטוֹר), and the incense offering (קְטֹרֶת).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000029780, qatāru [smoke] V",
+          "note": "“billow; fumigate; rise (of smoke); smoke”."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000015330, qutru [smoke] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000081510, qutrēnu [incense (offering)] N",
+          "note": "Also written qutrinnu."
+        }
+      ]
+    },
+    {
+      "id": "uga-qtr",
+      "lang": "uga",
+      "form": "𐎖𐎉𐎗",
+      "translit": "qṭr",
+      "gloss": "smoke",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎖𐎉𐎗 (qṭr), noun",
+          "note": "“smoke”; compares Hebrew קְטֹרֶת, Akkadian qutru and Arabic qutār."
+        }
+      ]
+    },
+    {
+      "id": "ar-qutar",
+      "lang": "ar",
+      "form": "قَتَرَ، قُتَارٌ، قَتَّرَ",
+      "translit": "qatara, qutār, qattara",
+      "gloss": "(of roast meat, a cooking pot, burnt bone, aloes-wood for fumigating) give off its smell; (of fire) smoke; the smell of roast meat; fumigate",
+      "relation": "cognate",
+      "note": "The smell of flesh roasting on coals and of fumigating wood is the smell of the altar's fat and incense going up. Arabic has t here where ṭ is expected for ט, as in the dialect form قُتْرٌ for قُطْرٌ that Lane records; the sense agrees closely.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2486, art. قتر, قَتَرَ (n35153)",
+          "note": "“It (roast meat, and a cookingpot, and burnt bone, and a perfume with which one fumigates, or aloes-wood) exhaled its scent, smell, or odour … قَتَرَتِ النَّارُ The fire smoked.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2486, art. قتر, قُتَارٌ (n35164)",
+          "note": "“The scent, smell, or odour, of roast meat; or of flesh-meat when roasted upon live coals … and of aloes-wood which is burnt and with which one fumigates.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2486, art. قتر, اقترت (n35155)",
+          "note": "“She fumigated herself with aloes-wood … اقتر النَّارَ He made the fire to smoke.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-qutr",
+      "lang": "ar",
+      "form": "قُطْرٌ، قُطُرٌ، قَطَّرَ",
+      "translit": "quṭr, quṭur, qaṭṭara",
+      "gloss": "aloes-wood with which one fumigates; (form II) fumigate a garment with it",
+      "relation": "cognate",
+      "note": "With the regular ṭ for ט: wood burned for its fragrant smoke. The same Arabic root's commoner sense “drip” is a different word.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2542, art. قطر, قُطْرٌ (n35900)",
+          "note": "“قُطْرٌ and قُطُرٌ Aloes-wood with which one fumigates.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2542, art. قطر, قطّرهُ (n35893)",
+          "note": "“قطّر ثَوْبَهُ He fumigated his garment with قُطْر, i. e., aloes-wood.”"
+        }
+      ]
+    },
+    {
+      "id": "sem-mqtr",
+      "lang": "sem",
+      "form": "𐩣𐩤𐩷𐩧",
+      "translit": "mqṭr",
+      "gloss": "(Sabaic) incense altar",
+      "relation": "cognate",
+      "note": "South Arabian, from the land of frankincense: the same m- noun of place as מִקְטָר and מְקַטְּרָה.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Old South Arabian 𐩣𐩤𐩷𐩧 (mqṭr), noun",
+          "note": "“incense altar”."
+        }
+      ]
+    },
+    {
+      "id": "arc-aqtar",
+      "lang": "arc",
+      "form": "אַקְטַר",
+      "translit": "ʾaqṭar",
+      "gloss": "(aphel) let incense rise",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targum: Onkelos renders the Hebrew hiphil of the incense altar with the aphel of the same root.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְטַר (ch.) I, citing Targ. O. Ex. XXX, 1, 7; XL, 27 (Af. to let incense rise)"
+        }
+      ]
+    },
+    {
+      "id": "arc-qetar-tie",
+      "lang": "arc",
+      "form": "קְטַר، קְטִיר، מְקַטְּרָן",
+      "translit": "qĕṭar, qĕṭīr, mĕqaṭṭĕrān",
+      "gloss": "tie, bind; (passive participle) tied; (pael passive) fenced in",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the Targum renders Ezk 46:22 קְטֻרוֹת by the pael participle מְקַטְּרָן “fenced in”, and the verb is the common word for tying a cord or a captive.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְטַר (ch.) II, citing Targ. Jud. XV, 4; Targ. Gen. XXXVIII, 28 (to tie); Targ. Ez. XLVI, 22 (Pa. part. pass. מְקַטְּרָן fenced in)"
+        }
+      ]
+    },
+    {
+      "id": "syc-qtr",
+      "lang": "syc",
+      "form": "ܩܛܪ، ܩܛܪܐ",
+      "translit": "qṭar, qeṭrā",
+      "gloss": "tie, bind, knot; be joined together; (noun) tie, knot; joint; enigma; bond, fetter",
+      "relation": "cognate",
+      "note": "The Syriac noun is both a joint of the body and a knot or enigma, the two uses of Daniel's קְטַר. The Peshitta's ܩܛܝܪܐ “force, constraint” is from the same verb.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 1651 XYR; lexemes 2799 XYR (be joined together), 2800 XYRA (bond; fetter), 2797 XY;RA (violence; necessity; force)"
+        },
+        {
+          "source": "payne-smith-1903",
+          "locator": "p. 502, ܩܛܪ and ܩܛܪܐ",
+          "note": "“a) to tie, bind, knot, interlace … ܩܛܪܐ a tie, bandage; knot … joint, articulation; an enigma.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-qitar",
+      "lang": "ar",
+      "form": "قِطَارٌ، قَطَّرَ الإِبِلَ",
+      "translit": "qiṭār, qaṭṭara l-ʾibil",
+      "gloss": "a file of camels, each tied to the one before; line camels up in a file",
+      "relation": "possible",
+      "note": "Camels joined by their halters, as a possible Arabic trace of the sense “tie” in the root.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2543, art. قطر, قِطَارٌ (n35907)",
+          "note": "“A file, string, or series, of camels … one behind another.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "prayer",
+      "statement": "The incense was to burn “continually before Yahweh” every morning and evening (Exo 30:7–8), and David asked, “let my prayer be set before you as incense, the lifting up of my hands as the evening grain offering” (Psa 141:2). When Zechariah went in to burn incense, “the whole multitude of the people were praying outside at the hour of incense” (Luk 1:9–10). In the Revelation the golden bowls “full of incense” are “the prayers of the saints” (Rev 5:8), and the smoke of the incense goes up before God “with the prayers of the saints” (Rev 8:3–4). Incense offered while the hands were full of blood was “an abomination” (Isa 1:13, 15). From the verses: incense was the likeness of prayer, going up to God from the place he appointed; the believer's prayer is now that offering, and it is accepted only from those who turn from evil.",
+      "evidence": [
+        {
+          "ref": "Exo.30.7",
+          "to": "Exo.30.8"
+        },
+        {
+          "ref": "Psa.141.2"
+        },
+        {
+          "ref": "Luk.1.9",
+          "to": "Luk.1.10"
+        },
+        {
+          "ref": "Rev.5.8"
+        },
+        {
+          "ref": "Rev.8.3",
+          "to": "Rev.8.4"
+        },
+        {
+          "ref": "Isa.1.13"
+        },
+        {
+          "ref": "Isa.1.15"
+        }
+      ]
+    },
+    {
+      "topic": "priesthood",
+      "statement": "Only the seed of Aaron could burn incense: “that no stranger who is not of the seed of Aaron come near to burn incense before Yahweh” (Num 17:5). Nadab and Abihu, offering what he had not commanded, died (Lev 10:1–2); Korah's two hundred and fifty men with their censers were consumed (Num 16:35); King Uzziah was told, “it is not for you … but for the priests, the sons of Aaron” and was struck with leprosy with the censer in his hand (2Ch 26:18–19). When wrath had gone out, Aaron took incense, “made covering for the people, and stood between the dead and the living, and the plague was stayed” (Num 17:11–13). Hebrews draws the same line: “no one takes this honour to himself, but he who is called by God, as was Aaron; so also Christ did not glorify himself to be made a high priest”, but was appointed by the one who said, “You are my Son” (Heb 5:4–5), and “he always lives to make intercession” for those who come to God through him (Heb 7:25). From the verses: approach to God is by the priest God appoints and no other; that priest is now Jesus, the Son of God, appointed by his Father.",
+      "evidence": [
+        {
+          "ref": "Num.17.5"
+        },
+        {
+          "ref": "Lev.10.1",
+          "to": "Lev.10.2"
+        },
+        {
+          "ref": "Num.16.35"
+        },
+        {
+          "ref": "2Ch.26.18",
+          "to": "2Ch.26.19"
+        },
+        {
+          "ref": "Num.17.11",
+          "to": "Num.17.13"
+        },
+        {
+          "ref": "Heb.5.4",
+          "to": "Heb.5.5"
+        },
+        {
+          "ref": "Heb.7.25"
+        }
+      ]
+    },
+    {
+      "topic": "nations",
+      "statement": "Against priests who despised his table, Yahweh said, “from the rising of the sun to its setting my name is great among the nations, and in every place incense is brought near to my name, and a pure grain offering” (Mal 1:10–11). The Revelation shows the incense of the saints' prayers before the throne (Rev 8:3–4), offered by those redeemed “out of every tribe and tongue and people and nation”, who “will reign on the earth” (Rev 5:8–10). From the verses: the worship once limited to one altar and one family will be offered to Yahweh's name by the nations in every place, in the kingdom of God on earth.",
+      "evidence": [
+        {
+          "ref": "Mal.1.10",
+          "to": "Mal.1.11"
+        },
+        {
+          "ref": "Rev.8.3",
+          "to": "Rev.8.4"
+        },
+        {
+          "ref": "Rev.5.8",
+          "to": "Rev.5.10"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key קטר; no existing entry used it, and no BDB key under it was assigned. Assigned: s.bg.af verb; s.bg.ae קְטֹרֶת; s.bg.ab קִיטוֹר; s.bg.aj מִקְטֶרֶת; s.bg.ac קְטוֹרָה; s.bg.ag קִטֵּר; s.bg.ah מִקְטָר (BDB [מִקְטָר], the brief's lemma מַקְטֵר); s.bg.ai מֻקְטָר (Mal 1:11 only); s.bg.ak מְקַטְּרָה (2Ch 30:14 only); xs.af.ab Aramaic קְטַר; s.bh.aa קָטַר “enclose” (Ezk 46:22); names/keturah.json takes s.bg.ad. The database files the verb's 116 tokens under s.bg.af, s.bg.ai and s.bg.ak alike (spelling), so lexicon-support overstates the uses of מֻקְטָר and מְקַטְּרָה. Left unassigned: s.bh.ab Kitron and s.bh.ac Kattath (places in Zebulun, Jdg 1:30; Jos 19:15; TIPNR counts them as one place, Kitron@Jos.19.15, with Kartah; name entries are for people; קַטָּת is spelled with ת and may not be of this root at all); m.df.aq and s.bj.ab (zero-token cross-references to מִקְטֶרֶת and קִיטוֹר); xs.ak.ag קַתְרֹס (Dan 3, the Greek κίθαρις, another root). Two senses in one spelling: smoke/incense (Akkadian, Ugaritic, Arabic, Sabaic, Targumic aphel) and tie/knot (Daniel's Aramaic, Jewish Aramaic, Syriac, Ezk 46:22). ט is not a merged letter, so no sounds separate them; Jastrow's lead (rising in circles) for joining them is not followed to evidence. Ezk 46:22 קְטֻרוֹת: the Targum's מְקַטְּרָן “fenced in” supports the reading; others emend to קְטַנּוֹת “small” (not adopted; the text stands). The Arabic قتر has t where ṭ is expected; kept as cognate for its close sense, with the regular قُطْر “aloes-wood for fumigating”. Leads not followed: Ugaritic qṭr in DULAT (cited only from Wiktionary; KTU 1.17 I 27–28 “his smoke from the earth”); Sabaic mqṭr in Sabaweb (cited from Wiktionary); Ge'ez/Amharic qaṭara “bind” (Dillmann OCR unusable here, Leslau not vendored); Jewish Aramaic קוּטְרָא “smoke”; CAD Q for qatāru and qutrēnu; an Egyptian loan of קְטֹרֶת (k-d-r-t?) not checked in TLA. Peshitta: SEDRA's ܩܛܪ, ܩܛܪܐ and ܩܛܝܪܐ are recorded as the Syriac cognate, not as words of the entry. Open questions: (1) whether “tie, knot” and “smoke” are one root or two that fell together; (2) whether Mal 1:11 מֻקְטָר is a noun or the hophal participle; (3) the doctrine statements are reasoned conclusions to review."
+}
