@@ -1,0 +1,137 @@
+{
+  "id": "ash",
+  "root": "עשש",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "moth",
+  "summary": "Isaiah and Job describe the damage a moth does to a garment. Hosea uses that slow destruction to describe what Ephraim faces.",
+  "words": [
+    {
+      "lemma": "עָשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.gf.ab",
+        "p.gb.ak"
+      ],
+      "gloss": "moth",
+      "senses": [
+        {
+          "id": "moth",
+          "gloss": "moth",
+          "definition": "An insect whose young eat holes in clothing.",
+          "evidence": [
+            {
+              "ref": "Isa.50.9",
+              "role": "defining",
+              "note": "Those who condemn the speaker wear out like a garment eaten by a moth."
+            },
+            {
+              "ref": "Isa.51.8",
+              "role": "defining",
+              "note": "The moth eats a garment, in parallel with the grub eating wool."
+            },
+            {
+              "ref": "Hos.5.12",
+              "role": "defining",
+              "note": "Yahweh compares himself to a moth to Ephraim and to rot to Judah."
+            },
+            {
+              "ref": "Psa.39.12",
+              "role": "defining",
+              "note": "Under divine rebuke a person’s treasured possession wastes away as if consumed by a moth."
+            },
+            {
+              "ref": "Job.4.19",
+              "role": "defining",
+              "note": "Eliphaz invokes the moth in describing the frailty of those who dwell in houses of clay."
+            },
+            {
+              "ref": "Job.13.28",
+              "role": "defining",
+              "note": "Job compares decay to a garment a moth has eaten."
+            },
+            {
+              "ref": "Job.27.18",
+              "role": "defining",
+              "note": "The moth’s house and a watchman’s hut illustrate how precarious the house of the wicked is."
+            }
+          ],
+          "cognate_ids": [
+            "akk-moth",
+            "ar-moth",
+            "syc-moth"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-moth",
+      "lang": "akk",
+      "form": "ašāšu",
+      "translit": "ašāšu",
+      "gloss": "a kind of moth",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 213, §5.6.5, SED II no. 45"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep/x000085290"
+        }
+      ]
+    },
+    {
+      "id": "ar-moth",
+      "lang": "ar",
+      "form": "عُثَّة",
+      "translit": "ʿuṯṯa",
+      "gloss": "moth that eats wool",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 213, §5.6.5, SED II no. 45"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1951, n28022"
+        }
+      ]
+    },
+    {
+      "id": "syc-moth",
+      "lang": "syc",
+      "form": "ܥܫܐ",
+      "translit": "ʿaššā",
+      "gloss": "moth",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 213, §5.6.5, SED II no. 45"
+        }
+      ]
+    }
+  ],
+  "note": "Job 9:9 names a constellation alongside Orion and the Pleiades. The Aramaic grass in Daniel 4–5 belongs to a separate word. In Matthew 6:19 the Peshitta uses a different Syriac word for moth, ܣܣܐ."
+}
