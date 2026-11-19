@@ -1,0 +1,111 @@
+{
+  "id": "nasag",
+  "root": "נשׂג",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "pursuit"
+  ],
+  "gloss": "reach, overtake, afford",
+  "summary": "A pursuer reaches someone ahead of him. A harvest reaches the next season, and a person’s hand reaches the purchase price when he has enough to pay.",
+  "words": [
+    {
+      "lemma": "נָשַׂג",
+      "bdb": [
+        "n.fn.aa"
+      ],
+      "pos": "verb",
+      "gloss": "reach, overtake",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "catch up, attain, afford",
+          "senses": [
+            {
+              "gloss": "overtake in pursuit",
+              "definition": "The Egyptians follow the Israelites and catch up with them at their camp by the sea. In Psalm 7 the speaker calls down such a pursuit on himself if he is guilty.",
+              "evidence": [
+                {
+                  "ref": "Exo.14.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.31.25"
+                },
+                {
+                  "ref": "Psa.7.4",
+                  "to": "Psa.7.6"
+                },
+                {
+                  "ref": "Psa.18.38"
+                }
+              ]
+            },
+            {
+              "gloss": "reach in time",
+              "definition": "The harvest is so plentiful that threshing lasts until the grape harvest and grape gathering until sowing time. Blessings and curses can also reach a person.",
+              "evidence": [
+                {
+                  "ref": "Lev.26.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.28.2"
+                },
+                {
+                  "ref": "Deu.28.15"
+                }
+              ]
+            },
+            {
+              "gloss": "have sufficient means",
+              "definition": "When a person’s hand reaches the price, he can redeem property he has sold. The offering of birds is likewise set within reach of the worshipper.",
+              "evidence": [
+                {
+                  "ref": "Lev.25.26",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.14.22"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καταλαμβάνω",
+          "gloss": "catch up, overtake",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 7:6 word 4"
+            },
+            {
+              "ref": "1Th.5.4"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "וְהִשִּׂיגָה יָדוֹ",
+            "gloss": "his means suffice",
+            "evidence": [
+              {
+                "ref": "Lev.25.26"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Moving a boundary in Job 24:2 belongs with the boundary prohibition in Deuteronomy 19:14 and the verb נסג. The consonants of the Arabic lead نشج do not establish a related meaning."
+}
