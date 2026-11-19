@@ -1,0 +1,169 @@
+{
+  "id": "lakhad",
+  "root": "לכד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "capture",
+    "judgment"
+  ],
+  "gloss": "capture, seize, catch",
+  "summary": "An army can take a city, a hunter can catch an animal, and a net can seize a foot. Psalm 9 turns the image against those who laid the trap.",
+  "words": [
+    {
+      "lemma": "לָכַד",
+      "bdb": [
+        "l.bp.aa"
+      ],
+      "pos": "verb",
+      "gloss": "capture, seize",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "capture",
+          "senses": [
+            {
+              "gloss": "capture a place or person",
+              "definition": "Joshua captures Lachish and its people. A person can likewise be seized as a prisoner.",
+              "evidence": [
+                {
+                  "ref": "Jos.10.32",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.15.4"
+                },
+                {
+                  "ref": "2Ki.25.5",
+                  "to": "2Ki.25.6"
+                }
+              ]
+            },
+            {
+              "gloss": "take by selection",
+              "definition": "In the inquiry over the devoted goods, the procedure successively singles out a tribe, clan, household and person.",
+              "evidence": [
+                {
+                  "ref": "Jos.7.14",
+                  "to": "Jos.7.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be caught or selected",
+          "senses": [
+            {
+              "gloss": "be caught or selected",
+              "definition": "The foot of the nation that hid a net is caught in it. Saul is selected when the people are brought forward tribe by tribe.",
+              "evidence": [
+                {
+                  "ref": "Psa.9.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.10.20",
+                  "to": "1Sa.10.21"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "hold together, congeal",
+          "senses": [
+            {
+              "gloss": "hold together, congeal",
+              "definition": "The surface of deep water freezes solid. The plates of Leviathan’s armour fit so tightly that the parts cling together.",
+              "evidence": [
+                {
+                  "ref": "Job.38.30",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.41.8",
+                  "to": "Job.41.9"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-lekhad"
+      ]
+    },
+    {
+      "lemma": "לֶכֶד",
+      "bdb": [
+        "l.bp.ab"
+      ],
+      "pos": "noun",
+      "gloss": "capture",
+      "senses": [
+        {
+          "gloss": "capture",
+          "definition": "Yahweh keeps a person’s foot from being caught.",
+          "evidence": [
+            {
+              "ref": "Pro.3.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-lekhad"
+      ]
+    },
+    {
+      "lemma": "מַלְכֹּדֶת",
+      "bdb": [
+        "l.bp.ac",
+        "m.ce.ab"
+      ],
+      "pos": "noun",
+      "gloss": "trap",
+      "senses": [
+        {
+          "gloss": "trap",
+          "definition": "Bildad describes a rope hidden in the ground and a trap set on the path.",
+          "evidence": [
+            {
+              "ref": "Job.18.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-lekhad"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-lekhad",
+      "lang": "arc",
+      "form": "לְכַד",
+      "translit": "ləḵaḏ",
+      "gloss": "seize",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "לְכַד, Targum Proverbs 26:17"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The verb of selection in Joshua describes the outcome of a procedure that narrows from a tribe to an individual. Lachish and Lecah are neighbouring place-names in the index. Neither narrative establishes a derivation from capture."
+}
