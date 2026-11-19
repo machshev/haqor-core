@@ -1,0 +1,1197 @@
+{
+  "id": "shevet",
+  "root": "שבט",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "rod",
+    "sceptre",
+    "tribe",
+    "chastening",
+    "kingship",
+    "israel",
+    "kingdom-of-god"
+  ],
+  "gloss": "rod, staff; rod of striking; sceptre; tribe",
+  "summary": "A rod: the shepherd's rod that counts and guards the flock, the rod that strikes and corrects, and the sceptre a ruler holds. From the rod that marks a ruler and a father's house the same word names a tribe, above all the twelve tribes of Israel, as מַטֶּה “rod” does too (Num 17:17–18; 18:2). Jacob's “the sceptre shall not depart from Judah” (Gen 49:10), the sceptre of Psa 45:7 quoted of the Son (Heb 1:8), and the rod of iron of Psa 2:9 (Rev 2:27; 19:15) carry the promise of the king. Akkadian šabbiṭu “staff, sceptre” and šabāṭu “beat”, and the Aramaic and Syriac שִׁבְטָא “rod; tribe”, share both sides of the word.",
+  "words": [
+    {
+      "lemma": "שֵׁבֶט",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "rod, staff; rod of striking, chastening; sceptre; tribe",
+      "bdb": [
+        "v.ar.ab"
+      ],
+      "summary": "About 190 times. Half the uses are “tribe”, mostly in “the tribes of Israel”; the rest are the rod in the hand: of a shepherd, of one who strikes or corrects, and of a king. The rod and the tribe stand together in the same verses as מַטֶּה, which also means both (Num 18:2; Ezk 19:11, 14), and the tribe is the house whose head holds the rod (Num 17:17–18).",
+      "senses": [
+        {
+          "id": "rod-staff",
+          "gloss": "rod, staff",
+          "definition": "A stick carried in the hand: the shepherd's rod that guides, guards and counts the flock, a staff used as a weapon, a rod for beating out small seed, and the staff of an officer.",
+          "cognate_ids": [
+            "akk-shabbitu",
+            "arc-shivta",
+            "syc-shabta"
+          ],
+          "kin": [
+            "syc-rod-staff"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.23.4",
+              "role": "defining",
+              "note": "Of Yahweh the shepherd: “שִׁבְטְךָ וּמִשְׁעַנְתֶּךָ, they comfort me.”"
+            },
+            {
+              "ref": "Mic.7.14",
+              "role": "defining",
+              "note": "“Shepherd (רְעֵה) your people בְשִׁבְטֶךָ, the flock of your inheritance.”"
+            },
+            {
+              "ref": "Lev.27.32",
+              "role": "defining",
+              "note": "The tithe of herd and flock: “all that passes under the rod (תַּחַת הַשָּׁבֶט), the tenth shall be holy to Yahweh”: the animals counted one by one under the shepherd's rod."
+            },
+            {
+              "ref": "Ezk.20.37",
+              "note": "“I will make you pass under the rod, and bring you into the bond of the covenant”: Israel counted like the flock of Lev 27:32."
+            },
+            {
+              "ref": "Isa.28.27",
+              "role": "defining",
+              "note": "“Dill is beaten out with a rod (בַמַּטֶּה), and cumin בַּשָּׁבֶט”, not with the threshing sledge."
+            },
+            {
+              "ref": "2Sa.23.21",
+              "note": "Benaiah “went down to him בַּשָּׁבֶט”, against the Egyptian's spear, and killed him with it."
+            },
+            {
+              "ref": "1Ch.11.23"
+            },
+            {
+              "ref": "2Sa.18.14",
+              "note": "Joab “took three שְׁבָטִים in his hand and thrust them into the heart of Absalom”: sticks or darts."
+            },
+            {
+              "ref": "Jdg.5.14",
+              "note": "“From Zebulun those who draw בְּשֵׁבֶט סֹפֵר”: the staff of the officer who musters."
+            }
+          ]
+        },
+        {
+          "id": "rod-striking",
+          "gloss": "rod of striking; chastening, punishment",
+          "definition": "The rod used to strike: a master's on a servant, a father's on a son to correct him, and God's on the wicked or on his own people, of which an enemy nation may be the instrument.",
+          "cognate_ids": [
+            "akk-shabatu",
+            "arc-shevat-strike",
+            "syc-shabta",
+            "gez-zabata"
+          ],
+          "kin": [
+            "syc-rod-staff"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.21.20",
+              "role": "defining",
+              "note": "“If a man strikes (יַכֶּה) his servant or his handmaid בַּשֵּׁבֶט and he dies under his hand, he shall surely be avenged.”"
+            },
+            {
+              "ref": "Pro.13.24",
+              "role": "defining",
+              "note": "“He who spares שִׁבְטוֹ hates his son, but he who loves him seeks him early with correction (מוּסָר).”"
+            },
+            {
+              "ref": "Pro.22.15",
+              "role": "defining",
+              "note": "“Folly is bound in the heart of a youth; שֵׁבֶט מוּסָר will drive it far from him.”"
+            },
+            {
+              "ref": "Pro.23.13",
+              "to": "Pro.23.14",
+              "role": "defining",
+              "note": "“If you strike him בַּשֵּׁבֶט he will not die; you strike him with the rod, and deliver his soul from the grave (מִשְּׁאוֹל).”"
+            },
+            {
+              "ref": "Pro.29.15",
+              "note": "“The rod and reproof (תוֹכַחַת) give wisdom.”"
+            },
+            {
+              "ref": "Pro.10.13",
+              "note": "“A rod for the back of him who lacks heart.”"
+            },
+            {
+              "ref": "Pro.26.3",
+              "note": "“A whip for the horse, a bridle for the ass, and a rod for the back of fools.”"
+            },
+            {
+              "ref": "2Sa.7.14",
+              "role": "defining",
+              "note": "Of David's seed: “I will be his father and he shall be my son; when he commits iniquity I will chasten him בְּשֵׁבֶט אֲנָשִׁים, with the strokes of the sons of man.”"
+            },
+            {
+              "ref": "Psa.89.33",
+              "role": "defining",
+              "note": "If David's sons forsake the law, “I will visit their transgression בְשֵׁבֶט, and their iniquity with strokes”, yet not take away lovingkindness (89:34)."
+            },
+            {
+              "ref": "Job.9.34",
+              "note": "“Let him take his rod away from me, and let not his terror frighten me.”"
+            },
+            {
+              "ref": "Job.21.9",
+              "note": "Of the wicked: “their houses are safe from fear, and no rod of God (שֵׁבֶט אֱלוֹהַּ) is on them.”"
+            },
+            {
+              "ref": "Job.37.13",
+              "note": "The clouds come “whether for a rod (לְשֵׁבֶט), or for his land, or for lovingkindness”."
+            },
+            {
+              "ref": "Lam.3.1",
+              "note": "“I am the man who has seen affliction בְּשֵׁבֶט עֶבְרָתוֹ.”"
+            },
+            {
+              "ref": "Isa.10.5",
+              "role": "defining",
+              "note": "“Woe, Assyria, שֵׁבֶט אַפִּי, and the staff in their hand is my indignation”: the nation as the rod in God's hand."
+            },
+            {
+              "ref": "Isa.10.15",
+              "note": "“As if a rod should wave those who lift it up, as if a staff should lift up what is not wood.”"
+            },
+            {
+              "ref": "Isa.10.24",
+              "note": "“Do not fear Assyria: בַּשֵּׁבֶט יַכֶּכָּה, and lift up his staff against you after the manner of Egypt.”"
+            },
+            {
+              "ref": "Isa.30.31",
+              "note": "Assyria itself is broken at Yahweh's voice: “בַּשֵּׁבֶט יַכֶּה.”"
+            },
+            {
+              "ref": "Isa.14.29",
+              "note": "“Do not rejoice, Philistia, that שֵׁבֶט מַכֵּךְ is broken.”"
+            },
+            {
+              "ref": "Isa.9.3",
+              "note": "“The yoke of his burden, the staff of his shoulder, שֵׁבֶט הַנֹּגֵשׂ בּוֹ, you have broken as in the day of Midian.”"
+            },
+            {
+              "ref": "Pro.22.8",
+              "note": "“The rod of his fury shall fail.”"
+            },
+            {
+              "ref": "Mic.4.14",
+              "role": "defining",
+              "note": "“בַּשֵּׁבֶט יַכּוּ on the cheek the judge of Israel.”"
+            }
+          ]
+        },
+        {
+          "id": "sceptre",
+          "gloss": "sceptre, rod of rule",
+          "definition": "The rod a ruler holds as the sign of his rule, and so the rule itself: Judah's, the promised king's, a foreign king's, or the wicked's.",
+          "cognate_ids": [
+            "akk-shabbitu",
+            "syc-shabta"
+          ],
+          "kin": [
+            "sharvit-sceptre",
+            "syc-sceptre"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.49.10",
+              "role": "defining",
+              "note": "“לֹא־יָסוּר שֵׁבֶט מִיהוּדָה, nor a lawgiver (מְחֹקֵק) from between his feet, until Shiloh comes, and to him shall be the obedience of the peoples.”"
+            },
+            {
+              "ref": "Num.24.17",
+              "role": "defining",
+              "note": "“A star shall tread out of Jacob, וְקָם שֵׁבֶט מִיִּשְׂרָאֵל, and shall crush the corners of Moab.”"
+            },
+            {
+              "ref": "Psa.45.7",
+              "role": "defining",
+              "note": "“Your throne, O God, is for ever and ever; שֵׁבֶט מִישֹׁר is שֵׁבֶט מַלְכוּתֶךָ”: quoted of the Son in Heb 1:8."
+            },
+            {
+              "ref": "Heb.1.8",
+              "role": "defining",
+              "note": "“ῥάβδος εὐθύτητος ἡ ῥάβδος τῆς βασιλείας σου”; the Peshitta שַבטָא פּשִיטָא שַבטָא דּמַלכֻּותָך."
+            },
+            {
+              "ref": "Psa.2.9",
+              "role": "defining",
+              "note": "To the Son set as king on Zion: “תְּרֹעֵם בְּשֵׁבֶט בַּרְזֶל; you shall dash them in pieces like a potter's vessel.”"
+            },
+            {
+              "ref": "Rev.2.27",
+              "note": "Psa 2:9 given to him who overcomes: “he shall rule them with a rod of iron (ἐν ῥάβδῳ σιδηρᾷ) … as I also have received from my Father.”"
+            },
+            {
+              "ref": "Rev.19.15",
+              "note": "“He shall rule them with a rod of iron.”"
+            },
+            {
+              "ref": "Isa.11.4",
+              "role": "defining",
+              "note": "The shoot of Jesse “shall strike the earth בְּשֵׁבֶט פִּיו, and with the breath of his lips slay the wicked”."
+            },
+            {
+              "ref": "Amo.1.5",
+              "role": "defining",
+              "note": "“I will cut off the one sitting (יוֹשֵׁב) from the valley of Aven, וְתוֹמֵךְ שֵׁבֶט from Beth-eden”: the king, beside the one enthroned."
+            },
+            {
+              "ref": "Amo.1.8",
+              "note": "The same of Ashdod and Ashkelon."
+            },
+            {
+              "ref": "Zec.10.11",
+              "note": "“The pride of Assyria shall be brought down, וְשֵׁבֶט מִצְרַיִם shall depart.”"
+            },
+            {
+              "ref": "Isa.14.5",
+              "role": "defining",
+              "note": "“Yahweh has broken the staff (מַטֵּה) of the wicked, שֵׁבֶט מֹשְׁלִים”: the rod of those who rule."
+            },
+            {
+              "ref": "Ezk.19.11",
+              "note": "“She had strong rods (מַטּוֹת) for שִׁבְטֵי מֹשְׁלִים.”"
+            },
+            {
+              "ref": "Ezk.19.14",
+              "note": "“There is in her no strong rod, שֵׁבֶט לִמְשׁוֹל”: no more kings of Judah."
+            },
+            {
+              "ref": "Psa.125.3",
+              "note": "“The sceptre of wickedness shall not rest on the lot of the righteous.”"
+            },
+            {
+              "ref": "Ezk.21.15",
+              "note": "The sword “despises שֵׁבֶט בְּנִי, every tree”; the sense of the phrase is not clear: perhaps the rod (sceptre) of Judah, the son."
+            },
+            {
+              "ref": "Ezk.21.18",
+              "note": "“What if even the despising rod shall be no more?” As obscure as 21:15."
+            }
+          ]
+        },
+        {
+          "id": "tribe",
+          "gloss": "tribe",
+          "definition": "A tribe: the descendants of one of Jacob's sons as a body, the unit by which Israel is counted, chosen by lot, given the land, and ruled; above all “the tribes of Israel”, twelve. Once of the tribes of Egypt (Isa 19:13).",
+          "cognate_ids": [
+            "arc-shivta",
+            "syc-shabta",
+            "ar-sibt"
+          ],
+          "kin": [
+            "arc-tribe",
+            "syc-tribe"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.49.28",
+              "role": "defining",
+              "note": "After Jacob blesses his sons: “All these are שִׁבְטֵי יִשְׂרָאֵל, twelve.”"
+            },
+            {
+              "ref": "Gen.49.16",
+              "note": "“Dan shall judge his people as one of the tribes of Israel.”"
+            },
+            {
+              "ref": "Exo.24.4",
+              "note": "Twelve pillars “for the twelve tribes of Israel”."
+            },
+            {
+              "ref": "Exo.28.21",
+              "note": "The twelve stones of the breastpiece, each with a son's name, “for the twelve tribes”."
+            },
+            {
+              "ref": "Jos.7.14",
+              "role": "defining",
+              "note": "“The tribe which Yahweh takes shall come near by families (מִשְׁפָּחוֹת), the family by houses, the house by men”: tribe, then family, then house."
+            },
+            {
+              "ref": "1Sa.10.20",
+              "to": "1Sa.10.21",
+              "role": "defining",
+              "note": "“The tribe of Benjamin was taken … he brought the tribe of Benjamin near by its families, and the family of the Matrites was taken, and Saul son of Kish was taken.”"
+            },
+            {
+              "ref": "1Sa.9.21",
+              "note": "“A Benjamite, from the smallest of the tribes of Israel, and my family the least of all the families of the tribe of Benjamin.”"
+            },
+            {
+              "ref": "Deu.29.17",
+              "note": "“Man or woman or family or tribe, whose heart turns away today from Yahweh.”"
+            },
+            {
+              "ref": "Num.18.2",
+              "role": "defining",
+              "note": "“Your brothers also, מַטֵּה לֵוִי שֵׁבֶט אָבִיךָ”: the two words for rod both name the tribe."
+            },
+            {
+              "ref": "Num.4.18",
+              "note": "“Do not cut off שֵׁבֶט מִשְׁפְּחֹת הַקְּהָתִי from among the Levites.”"
+            },
+            {
+              "ref": "Deu.10.8",
+              "note": "“Yahweh separated the tribe of Levi to carry the ark of the covenant of Yahweh.”"
+            },
+            {
+              "ref": "Jos.13.14",
+              "note": "“Only to the tribe of Levi he gave no inheritance; the fire offerings of Yahweh … are his inheritance.”"
+            },
+            {
+              "ref": "Jos.1.12",
+              "note": "“The half tribe of Manasseh.”"
+            },
+            {
+              "ref": "Jdg.18.1",
+              "note": "The tribe of the Danites sought an inheritance, for none had yet fallen to it among the tribes of Israel."
+            },
+            {
+              "ref": "Jdg.21.17",
+              "note": "“That a tribe be not wiped out from Israel.”"
+            },
+            {
+              "ref": "1Ki.11.31",
+              "to": "1Ki.11.32",
+              "role": "defining",
+              "note": "“I will tear the kingdom from Solomon and give you ten tribes; but he shall have one tribe, for David my servant's sake and for Jerusalem, the city I have chosen out of all the tribes of Israel.”"
+            },
+            {
+              "ref": "1Ki.18.31",
+              "note": "Elijah took twelve stones “according to the number of the tribes of the sons of Jacob”."
+            },
+            {
+              "ref": "Psa.78.67",
+              "to": "Psa.78.68",
+              "role": "defining",
+              "note": "“He did not choose the tribe of Ephraim, but chose the tribe of Judah, mount Zion which he loved.”"
+            },
+            {
+              "ref": "Psa.122.4",
+              "note": "“Where the tribes go up, the tribes of Yah.”"
+            },
+            {
+              "ref": "Psa.74.2",
+              "note": "“The tribe of your inheritance (שֵׁבֶט נַחֲלָתֶךָ) which you redeemed”: the whole people as one tribe."
+            },
+            {
+              "ref": "Jer.10.16",
+              "note": "“Israel is the tribe of his inheritance; Yahweh of hosts is his name.”"
+            },
+            {
+              "ref": "Jer.51.19"
+            },
+            {
+              "ref": "Isa.63.17",
+              "note": "“Return for the sake of your servants, the tribes of your inheritance.”"
+            },
+            {
+              "ref": "Isa.49.6",
+              "role": "defining",
+              "note": "To the servant: “It is too light a thing … to raise up the tribes of Jacob and to restore the preserved of Israel; I will give you for a light to the nations.”"
+            },
+            {
+              "ref": "Ezk.37.19",
+              "note": "“The stick of Joseph … and the tribes of Israel his companions” joined with the stick of Judah into one."
+            },
+            {
+              "ref": "Ezk.47.13",
+              "note": "“The border by which you shall inherit the land according to the twelve tribes of Israel.”"
+            },
+            {
+              "ref": "Ezk.47.22",
+              "note": "The strangers among them “shall have an inheritance with you among the tribes of Israel”."
+            },
+            {
+              "ref": "Ezk.48.31",
+              "note": "“The gates of the city shall be after the names of the tribes of Israel.”"
+            },
+            {
+              "ref": "Isa.19.13",
+              "note": "“They have led Egypt astray, the cornerstone of her tribes.”"
+            },
+            {
+              "ref": "Hos.5.9",
+              "note": "“Among the tribes of Israel I have made known what is sure.”"
+            },
+            {
+              "ref": "Mat.19.28",
+              "note": "“You shall sit on twelve thrones judging the twelve tribes of Israel”; the Peshitta writes שַבטֵא."
+            },
+            {
+              "ref": "Rev.21.12",
+              "note": "On the gates of the city “the names of the twelve tribes of the sons of Israel”, as Ezk 48:31."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "φυλή",
+          "gloss": "tribe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.49.16; Exo.24.4; Num.4.18; Deu.33.5, שֵׁבֶט → φυλή; φυλή renders שֵׁבֶט ×100"
+            },
+            {
+              "ref": "Mat.19.28",
+              "role": "defining",
+              "note": "“Judging the twelve tribes (φυλάς) of Israel.”"
+            },
+            {
+              "ref": "Heb.7.14",
+              "note": "“Our Lord sprang out of Judah, of which tribe (φυλήν) Moses spoke nothing about priests.”"
+            },
+            {
+              "ref": "Rev.5.5",
+              "note": "“The lion of the tribe (φυλῆς) of Judah, the root of David.”"
+            },
+            {
+              "ref": "Act.26.7",
+              "note": "“Our twelve tribes (τὸ δωδεκάφυλον).”"
+            },
+            {
+              "ref": "Jas.1.1",
+              "note": "“To the twelve tribes in the dispersion.”"
+            },
+            {
+              "ref": "Rev.21.12"
+            }
+          ]
+        },
+        {
+          "lemma": "ῥάβδος",
+          "gloss": "rod, staff, sceptre",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.2.9, בְּשֵׁבֶט בַּרְזֶל → ἐν ῥάβδῳ σιδηρᾷ; Psa.45.7 → ῥάβδος ×2; 2Sa.7.14; Psa.23.4; ῥάβδος renders שֵׁבֶט ×26"
+            },
+            {
+              "ref": "Heb.1.8",
+              "role": "defining",
+              "note": "Psa 45:7 quoted to the Son: “a sceptre (ῥάβδος) of uprightness is the sceptre of your kingdom.”"
+            },
+            {
+              "ref": "Rev.2.27",
+              "role": "defining",
+              "note": "Psa 2:9: “He shall rule them with a rod of iron.”"
+            },
+            {
+              "ref": "Rev.12.5"
+            },
+            {
+              "ref": "Rev.19.15"
+            },
+            {
+              "ref": "1Co.4.21",
+              "note": "“Shall I come to you with a rod (ἐν ῥάβδῳ), or in love?”: the rod of correction."
+            }
+          ]
+        },
+        {
+          "lemma": "σκῆπτρον",
+          "gloss": "sceptre",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zec.10.11 → σκῆπτρον; for “tribe” in 1Sa.10.20–21; 1Ki.11.13, 31, 35, 36; 12.20–21; σκῆπτρον renders שֵׁבֶט ×12; not used in the New Testament"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מַטֶּה",
+            "note": "Rod, staff; and tribe. Set beside שֵׁבֶט in both meanings.",
+            "evidence": [
+              {
+                "ref": "Isa.10.5"
+              },
+              {
+                "ref": "Isa.14.5"
+              },
+              {
+                "ref": "Isa.9.3"
+              },
+              {
+                "ref": "Isa.28.27"
+              },
+              {
+                "ref": "Ezk.19.11"
+              },
+              {
+                "ref": "Num.18.2",
+                "note": "Of the tribe of Levi."
+              },
+              {
+                "ref": "Num.17.17",
+                "to": "Num.17.18",
+                "note": "A rod for each father's house, twelve rods, with the head's name written on it: the rod stands for the tribe."
+              }
+            ]
+          },
+          {
+            "lemma": "מִשְׁעֶנֶת",
+            "note": "Staff, the shepherd's support.",
+            "evidence": [
+              {
+                "ref": "Psa.23.4"
+              }
+            ]
+          },
+          {
+            "lemma": "מְחֹקֵק",
+            "note": "Lawgiver, or the staff of command.",
+            "evidence": [
+              {
+                "ref": "Gen.49.10"
+              }
+            ]
+          },
+          {
+            "lemma": "מוּסָר",
+            "note": "Correction, discipline.",
+            "evidence": [
+              {
+                "ref": "Pro.13.24"
+              },
+              {
+                "ref": "Pro.22.15"
+              }
+            ]
+          },
+          {
+            "lemma": "תּוֹכַחַת",
+            "note": "Reproof.",
+            "evidence": [
+              {
+                "ref": "Pro.29.15"
+              }
+            ]
+          },
+          {
+            "lemma": "מִשְׁפָּחָה",
+            "note": "Family, clan: the division under the tribe.",
+            "evidence": [
+              {
+                "ref": "Jos.7.14"
+              },
+              {
+                "ref": "1Sa.10.21"
+              },
+              {
+                "ref": "Deu.29.17"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "שִׁבְטֵי יִשְׂרָאֵל",
+            "gloss": "the tribes of Israel",
+            "evidence": [
+              {
+                "ref": "Gen.49.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.24.4"
+              },
+              {
+                "ref": "1Ki.11.32"
+              },
+              {
+                "ref": "Ezk.47.13"
+              }
+            ]
+          },
+          {
+            "phrase": "חֲצִי שֵׁבֶט הַמְנַשֶּׁה",
+            "gloss": "the half tribe of Manasseh",
+            "evidence": [
+              {
+                "ref": "Deu.3.13"
+              },
+              {
+                "ref": "Jos.1.12"
+              }
+            ]
+          },
+          {
+            "phrase": "שֵׁבֶט נַחֲלָתוֹ",
+            "gloss": "the tribe of his inheritance",
+            "evidence": [
+              {
+                "ref": "Jer.10.16"
+              },
+              {
+                "ref": "Jer.51.19"
+              },
+              {
+                "ref": "Psa.74.2"
+              }
+            ]
+          },
+          {
+            "phrase": "עָבַר תַּחַת הַשָּׁבֶט",
+            "gloss": "pass under the rod (be counted)",
+            "evidence": [
+              {
+                "ref": "Lev.27.32",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.20.37"
+              }
+            ]
+          },
+          {
+            "phrase": "שֵׁבֶט בַּרְזֶל",
+            "gloss": "a rod of iron",
+            "evidence": [
+              {
+                "ref": "Psa.2.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Rev.2.27"
+              },
+              {
+                "ref": "Rev.12.5"
+              },
+              {
+                "ref": "Rev.19.15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שַׁרְבִיט",
+      "root": "שרבט",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sceptre",
+      "bdb": [
+        "v.ar.ac"
+      ],
+      "summary": "Four times, all in Esther, of the golden sceptre of the Persian king. It is שֵׁבֶט with an r after the first letter, as Aramaic has it (the Targum and the Mishnah use שַׁרְבִיט for a king's sceptre); no cognate outside Aramaic has the r. Its own uses fix only “the king's sceptre”.",
+      "senses": [
+        {
+          "id": "sharvit-sceptre",
+          "gloss": "sceptre",
+          "definition": "The golden sceptre the Persian king held out to one who came uncalled into the inner court, as the sign that he would live.",
+          "cognate_ids": [
+            "arc-sharvita"
+          ],
+          "evidence": [
+            {
+              "ref": "Est.4.11",
+              "role": "defining",
+              "note": "Whoever comes uncalled to the king is put to death, “except the one to whom the king holds out שַׁרְבִיט הַזָּהָב, and he shall live”."
+            },
+            {
+              "ref": "Est.5.2",
+              "role": "defining",
+              "note": "The king held out to Esther “the golden sceptre that was in his hand, and Esther came near and touched the top of הַשַּׁרְבִיט”."
+            },
+            {
+              "ref": "Est.8.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁבָט",
+      "pos": "name",
+      "gloss": "Shebat, the eleventh month",
+      "bdb": [
+        "v.ar.ad"
+      ],
+      "cognate_ids": [
+        "akk-shabatu-month"
+      ],
+      "summary": "Once, Zec 1:7, where the text itself explains it: “the eleventh month, which is the month שְׁבָט”. It is the Babylonian month name Šabāṭu, which Israel took with the other month names in the exile (as נִיסָן, Neh 2:1; אֲדָר, Est 3:7). Whether the Babylonian name comes from šabāṭu “strike” (perhaps of the season's storms) is not shown by any text; the link to the root is through Akkadian, not through Hebrew use.",
+      "senses": [
+        {
+          "gloss": "Shebat",
+          "definition": "The eleventh month of the year counted from Nisan.",
+          "evidence": [
+            {
+              "ref": "Zec.1.7",
+              "role": "defining",
+              "note": "“On the twenty-fourth day of the eleventh month, הוּא־חֹדֶשׁ שְׁבָט, in the second year of Darius.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁבַט",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tribe",
+      "bdb": [
+        "xv.ac.ab"
+      ],
+      "summary": "Once in scripture's Aramaic, at the dedication of the rebuilt house of God: twelve goats for a sin offering for all Israel, “according to the number of the tribes of Israel”. Its BDB key also counts 49 Hebrew tokens of שִׁבְטֵי filed by spelling; they are the Hebrew שֵׁבֶט.",
+      "senses": [
+        {
+          "id": "arc-tribe",
+          "gloss": "tribe",
+          "definition": "A tribe of Israel, of the twelve.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.17",
+              "role": "defining",
+              "note": "“Twelve he-goats for a sin offering for all Israel, לְמִנְיָן שִׁבְטֵי יִשְׂרָאֵל.”"
+            }
+          ],
+          "kin": [
+            "tribe",
+            "syc-tribe"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-shivta",
+        "syc-shabta"
+      ]
+    },
+    {
+      "lemma": "שַׁבְטָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "rod, staff; sceptre; tribe",
+      "summary": "The Peshitta's word, in the same three senses as the Hebrew: the traveller's staff, the rod that strikes, Aaron's rod, the sceptre and rod of iron, and the tribe. The magistrates' attendants of Act 16:35, 38 are שָקלַי שַבטֵא, “rod-bearers”.",
+      "senses": [
+        {
+          "id": "syc-rod-staff",
+          "gloss": "rod, staff",
+          "definition": "A staff carried in the hand, and a rod to beat with.",
+          "evidence": [
+            {
+              "ref": "Mat.10.10",
+              "role": "defining",
+              "note": "The twelve sent out with “no bag … nor sandals, nor staff (שַבטָא)”."
+            },
+            {
+              "ref": "Mrk.6.8"
+            },
+            {
+              "ref": "Luk.9.3"
+            },
+            {
+              "ref": "Heb.9.4",
+              "note": "“שַבטָא דַּאהרֻון that budded”: the מַטֶּה of Num 17:23."
+            },
+            {
+              "ref": "Rev.11.1",
+              "note": "“A reed like a rod (דּשַבטָא).”"
+            },
+            {
+              "ref": "2Co.11.25",
+              "role": "defining",
+              "note": "“Three times I was beaten בּשַבטֵא.”"
+            },
+            {
+              "ref": "Act.16.35",
+              "note": "The magistrates sent “שָקלַי שַבטֵא”, the rod-bearers."
+            },
+            {
+              "ref": "Act.16.38"
+            }
+          ],
+          "kin": [
+            "rod-staff",
+            "rod-striking"
+          ],
+          "cognate_ids": [
+            "akk-shabbitu",
+            "akk-shabatu",
+            "arc-shevat-strike"
+          ]
+        },
+        {
+          "id": "syc-sceptre",
+          "gloss": "sceptre, rod of rule",
+          "definition": "The sceptre of the Son's kingdom, and the rod of iron with which he rules the nations.",
+          "evidence": [
+            {
+              "ref": "Heb.1.8",
+              "role": "defining",
+              "note": "“שַבטָא פּשִיטָא שַבטָא דּמַלכֻּותָך”, Psa 45:7."
+            },
+            {
+              "ref": "Rev.2.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.12.5"
+            },
+            {
+              "ref": "Rev.19.15"
+            }
+          ],
+          "kin": [
+            "sceptre",
+            "sharvit-sceptre"
+          ],
+          "cognate_ids": [
+            "akk-shabbitu"
+          ]
+        },
+        {
+          "id": "syc-tribe",
+          "gloss": "tribe",
+          "definition": "A tribe of Israel.",
+          "evidence": [
+            {
+              "ref": "Mat.19.28",
+              "role": "defining",
+              "note": "“Judging the twelve tribes of Israel.”"
+            },
+            {
+              "ref": "Luk.22.30"
+            },
+            {
+              "ref": "Luk.2.36",
+              "note": "Anna, “of the tribe of Asher”."
+            },
+            {
+              "ref": "Php.3.5",
+              "note": "“מֵן שַבטָא דּבֵניָמִין.”"
+            },
+            {
+              "ref": "Rev.5.5"
+            },
+            {
+              "ref": "Rev.21.12"
+            }
+          ],
+          "kin": [
+            "tribe",
+            "arc-tribe"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "syc-shabta",
+        "arc-shivta"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-shabbitu",
+      "lang": "akk",
+      "form": "šabbiṭu, šabiṭṭu",
+      "translit": "šabbiṭu, šabiṭṭu",
+      "gloss": "staff; sceptre",
+      "relation": "cognate",
+      "note": "The rod in the hand and the rod of rule, as the Hebrew's staff and sceptre. Akkadian š does not show whether š or ṯ stands behind ש.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000123180, šabbiṭu [staff] N, “sceptre; staff”",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000123180.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000018750, šabiṭṭu [staff] N (Middle Babylonian)"
+        }
+      ]
+    },
+    {
+      "id": "akk-shabatu",
+      "lang": "akk",
+      "form": "šabāṭu, šibṭu",
+      "translit": "šabāṭu, šibṭu",
+      "gloss": "(verb) beat, strike; sweep away; (šibṭu) blow, stroke; plague",
+      "relation": "cognate",
+      "note": "The verb the rod is used for, and the noun “blow, plague”: the rod of striking and of God's punishment (Isa 10:5; Psa 89:33).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000020100, šabāṭu [beat] V, “beat; beating; striking; sweep; sweep away”"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000058530, šibṭu [blow] N, “blow; gale; plague”"
+        }
+      ]
+    },
+    {
+      "id": "akk-shabatu-month",
+      "lang": "akk",
+      "form": "Šabāṭu",
+      "translit": "Šabāṭu",
+      "gloss": "the eleventh month of the Babylonian calendar",
+      "relation": "loan",
+      "note": "Borrowed into Hebrew and Aramaic with the other Babylonian month names.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian Šabāṭum",
+          "note": "“Šabāṭu, the eleventh month of the Babylonian calendar”; descendants include Hebrew שְׁבָט and Aramaic and Syriac שְׁבָט."
+        }
+      ]
+    },
+    {
+      "id": "arc-shivta",
+      "lang": "arc",
+      "form": "שִׁבְטָא, שֵׁיבַט",
+      "translit": "šibṭā",
+      "gloss": "rod, staff; tribe",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums: both the rod (Targ. Prov 10:13; 22:8; 26:3) and the tribe (Targ. Num 1:4, 16; Gen 49:28), as the Hebrew. Aramaic keeps š apart from ṯ (which it writes t), so it shows š behind ש.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁבַט, שִׁבְטָא (ch.) “rod, staff”, citing Targ. Prov. XXII, 8; X, 13; XXVI, 3; 1) “tribe”, Targ. I Chr. XXVI, 32; Targ. Num. I, 4, 16; Targ. Gen. XLIX, 28"
+        }
+      ]
+    },
+    {
+      "id": "arc-shevat-strike",
+      "lang": "arc",
+      "form": "שְׁבַט",
+      "translit": "šəḇaṭ",
+      "gloss": "(verb) strike with the rod, beat",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the verb of the rod, of beating an olive tree (Targ. Y. I Deu 24:20, for Hebrew חָבַט).",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁבַט (verb, ch.) “to strike with the rod, to beat”, citing Targ. Y. I Deut. XXIV, 20"
+        }
+      ]
+    },
+    {
+      "id": "arc-sharvita",
+      "lang": "arc",
+      "form": "שַׁרְבִיטָא",
+      "translit": "šarbīṭā",
+      "gloss": "staff, sceptre, rod; shoot, twig",
+      "relation": "cognate",
+      "note": "Jewish Aramaic and Mishnaic usage of the form with r: a king's sceptre (Sanh. II, 5: none may use the king's sceptre) and God's rod of chastening.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שַׁרְבִיט, citing Snh. II, 5; Cant. R. to II, 16"
+        }
+      ]
+    },
+    {
+      "id": "syc-shabta",
+      "lang": "syc",
+      "form": "ܫܒܛܐ",
+      "translit": "šabṭā",
+      "gloss": "rod; sceptre; tribe; staff; (with “bearers”) magistrates' attendants",
+      "relation": "cognate",
+      "note": "Syriac has the same rod, sceptre and tribe as the Hebrew; it shows š behind ש, as Aramaic writes ṯ as t.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 3102, WBYA (root 1805 WBYA), rod; sceptre; tribe; magistrates; staff"
+        }
+      ]
+    },
+    {
+      "id": "ar-sibt",
+      "lang": "ar",
+      "form": "سِبْطٌ، أَسْبَاطٌ",
+      "translit": "sibṭ, asbāṭ",
+      "gloss": "grandchild; a tribe of the Children of Israel",
+      "relation": "possible",
+      "note": "Lane gives “a tribe of the Jews”, used of the Children of Israel as قَبِيلَة is of the Arabs, and the Qur'an's “twelve asbāṭ” (vii. 160): this sense is likely the Hebrew or Aramaic word taken into Arabic, and so not independent evidence. The native sense “grandchild” is a line of descent, near to the tribe. If native, Arabic s would show š behind ש. No Arabic sibṭ “rod” was found.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1294, art. سبط, سِبْطٌ (n18726)",
+          "note": "“A grandchild … A tribe of the Jews: pl. أَسْبَاطٌ … being like قَبِيلَةٌ … in relation to the Arabs.”"
+        }
+      ]
+    },
+    {
+      "id": "gez-zabata",
+      "lang": "gez",
+      "form": "ዘበጠ",
+      "translit": "zabaṭa",
+      "gloss": "beat, strike, inflict blows; thresh; hammer out",
+      "relation": "possible",
+      "note": "The striking, threshing and hammering of the rod; Dillmann cites it for the Ge'ez of Isa 10:24 (“he will strike you with the rod”) and Mic 4:14. The z for ש is not the regular correspondence (Ge'ez writes š as s), so the link is uncertain.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 1051, ዘበጠ",
+          "note": "“Verberare, percutere, plagas infligere, ferire, pulsare … percutere (triturare) frumentum … malleo percutere et ducere metallum.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "sceptre-of-judah",
+      "statement": "Jacob said, “The sceptre shall not depart from Judah, nor a lawgiver from between his feet, until Shiloh comes, and to him shall be the obedience of the peoples” (Gen 49:10), and Balaam saw “a star out of Jacob, and a sceptre shall rise out of Israel” (Num 24:17). Psalm 45 says to the king, “Your throne, O God, is for ever and ever; a sceptre of uprightness is the sceptre of your kingdom”, and goes on, “therefore God, your God, has anointed you with the oil of gladness above your fellows” (Psa 45:7–8). Hebrews quotes both verses “of the Son” (Heb 1:8–9): the one addressed as אֱלֹהִים has a God over him who anoints him, as judges who stand for God are called אֱלֹהִים (Psa 82:6; Jhn 10:34–36). “Our Lord sprang out of Judah” (Heb 7:14); he is “the lion of the tribe of Judah, the root of David” (Rev 5:5), to whom “the Lord God will give the throne of his father David, and he shall reign over the house of Jacob for ever” (Luk 1:32–33). From the verses: the sceptre promised to Judah is the rule of Jesus, the son of David and Son of God, given to him by his God, and his kingdom is David's throne over Israel.",
+      "evidence": [
+        {
+          "ref": "Gen.49.10"
+        },
+        {
+          "ref": "Num.24.17"
+        },
+        {
+          "ref": "Psa.45.7",
+          "to": "Psa.45.8"
+        },
+        {
+          "ref": "Heb.1.8",
+          "to": "Heb.1.9"
+        },
+        {
+          "ref": "Psa.82.6"
+        },
+        {
+          "ref": "Jhn.10.34",
+          "to": "Jhn.10.36"
+        },
+        {
+          "ref": "Heb.7.14"
+        },
+        {
+          "ref": "Rev.5.5"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "In Psalm 2 Yahweh sets his king on Zion and says to him, “You are my son, today I have begotten you; ask of me, and I will give the nations for your inheritance and the ends of the earth for your possession; you shall break them with a rod of iron” (Psa 2:6–9). Paul reads “today I have begotten you” of God raising Jesus from the dead (Act 13:33). Revelation gives the rod of iron to the Son at his coming: the male child “who is to rule all nations with a rod of iron” (Rev 12:5), the rider called the Word of God, who “shall rule them with a rod of iron” (Rev 19:15); and he shares it: “he who overcomes … to him I will give authority over the nations, and he shall rule them with a rod of iron … as I also have received from my Father” (Rev 2:26–27). Isaiah's shoot of Jesse “shall strike the earth with the rod of his mouth” (Isa 11:4), which Paul applies to the Lord's coming (2Th 2:8). From the verses: the rule is over the nations of the earth, it begins when Christ comes, it is given him by his Father, and his faithful servants reign with him in it.",
+      "evidence": [
+        {
+          "ref": "Psa.2.6",
+          "to": "Psa.2.9"
+        },
+        {
+          "ref": "Act.13.33"
+        },
+        {
+          "ref": "Rev.12.5"
+        },
+        {
+          "ref": "Rev.19.15"
+        },
+        {
+          "ref": "Rev.2.26",
+          "to": "Rev.2.27"
+        },
+        {
+          "ref": "Isa.11.4"
+        },
+        {
+          "ref": "2Th.2.8"
+        }
+      ]
+    },
+    {
+      "topic": "twelve-tribes-restored",
+      "statement": "The prophets foretell the tribes gathered again in their land: the stick of Joseph “and the tribes of Israel his companions” joined to the stick of Judah, “one nation in the land, on the mountains of Israel, and one king shall be king to them all” (Ezk 37:19–22); the land divided “according to the twelve tribes of Israel”, the land sworn to their fathers, with strangers among them given an inheritance “among the tribes of Israel” (Ezk 47:13–14, 21–23); a city whose gates bear the names of the tribes (Ezk 48:31). The servant is “to raise up the tribes of Jacob” and also to be a light to the nations (Isa 49:6), which Paul takes as his own commission to the Gentiles (Act 13:47). Jesus promised the twelve, “in the regeneration, when the Son of man shall sit on the throne of his glory, you also shall sit on twelve thrones, judging the twelve tribes of Israel” (Mat 19:28; Luk 22:29–30); Paul stood on trial “for the hope of the promise made to our fathers, to which our twelve tribes hope to come” (Act 26:6–7); and the holy city bears “the names of the twelve tribes” (Rev 21:12). From the verses: the promise of the land to Abraham's seed is still to be kept, to the tribes of Israel in their own land under one king, Christ, with the apostles judging them and the Gentiles who believe sharing the inheritance.",
+      "evidence": [
+        {
+          "ref": "Ezk.37.19",
+          "to": "Ezk.37.22"
+        },
+        {
+          "ref": "Ezk.47.13",
+          "to": "Ezk.47.14"
+        },
+        {
+          "ref": "Ezk.47.21",
+          "to": "Ezk.47.23"
+        },
+        {
+          "ref": "Ezk.48.31"
+        },
+        {
+          "ref": "Isa.49.6"
+        },
+        {
+          "ref": "Act.13.47"
+        },
+        {
+          "ref": "Mat.19.28"
+        },
+        {
+          "ref": "Luk.22.29",
+          "to": "Luk.22.30"
+        },
+        {
+          "ref": "Act.26.6",
+          "to": "Act.26.7"
+        },
+        {
+          "ref": "Rev.21.12"
+        }
+      ]
+    },
+    {
+      "topic": "chastening",
+      "statement": "To David's seed Yahweh promised, “I will be his father and he shall be my son; when he commits iniquity I will chasten him with the rod of men”, and yet “my lovingkindness shall not depart from him” (2Sa 7:14–15); the psalm repeats it of David's sons who forsake the law: “I will visit their transgression with the rod … but my lovingkindness I will not break off from him” (Psa 89:31–34). Proverbs says the father who spares the rod hates his son, and that the rod delivers a child's soul from the grave (Pro 13:24; 23:13–14), and “whom Yahweh loves he corrects, as a father the son in whom he delights” (Pro 3:11–12), which Hebrews quotes: “if you are without chastening … then you are bastards and not sons”, for he chastens “for our profit, that we might be partakers of his holiness” (Heb 12:5–11). From the verses: God's rod on his own children is a father's correction, kept within his covenant love, meant to save them from death and make them holy, and it is evidence that they are his sons.",
+      "evidence": [
+        {
+          "ref": "2Sa.7.14",
+          "to": "2Sa.7.15"
+        },
+        {
+          "ref": "Psa.89.31",
+          "to": "Psa.89.34"
+        },
+        {
+          "ref": "Pro.13.24"
+        },
+        {
+          "ref": "Pro.23.13",
+          "to": "Pro.23.14"
+        },
+        {
+          "ref": "Pro.3.11",
+          "to": "Pro.3.12"
+        },
+        {
+          "ref": "Heb.12.5",
+          "to": "Heb.12.11"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key שבט; no existing entry used it. BDB keys assigned: v.ar.ab שֵׁבֶט, v.ar.ac שַׁרְבִיט (own root key שרבט), v.ar.ad שְׁבָט (the month), xv.ac.ab Aramaic שְׁבַט (Ezr 6:17; its key also counts 49 Hebrew tokens of שִׁבְטֵי filed by spelling). v.fx.ad (שַׁרְבִֿתט, a zero-token cross-reference “see שׁבט”) is left unassigned. No personal names are formed from the root in TIPNR; Shebat@Zec.1.7 is a TIPNR Time record, not a person, so the month is a word of the entry (pos name) with no name file. Sounds: Jewish Aramaic and Syriac š shows š behind ש (Aramaic writes PS ṯ as t); Akkadian cannot tell; Arabic sibṭ, if native, would agree, but its “tribe” sense is probably borrowed from Hebrew/Aramaic, so it is recorded as possible. No split behind ש. Open questions: (1) how “rod” gives “tribe”: the entry rests on the parallel of מַטֶּה, which scripture uses for both (Num 17:17–18; 18:2), the rod of the head of a father's house; no verse states it. (2) Whether the month Šabāṭu is named from šabāṭu “strike” is not shown; the month is kept in the entry as an Akkadian loan of the same root. (3) Ezk 21:15, 18 (“the rod of my son”) are obscure and placed under sceptre tentatively. (4) 2Sa 7:7 has שִׁבְטֵי where 1Ch 17:6 has שֹׁפְטֵי “judges”; the verse is not cited. (5) Ge'ez ዘበጠ has z for ש, irregular; kept as possible. Leads not followed: CAD Š/1 for šabbiṭu, šabāṭu and the month (not checked); Ugaritic (DULAT not vendored); Sabaic s¹bṭ “strike” (Wiktionary's Proto-Semitic šabaṭ-, not checked in Sabaweb); Payne Smith for Syriac ܫܒܛ beyond SEDRA; Arabic شُبَاط (the month, a loan from Aramaic, not recorded). Greek: the LXX renders שֵׁבֶט “tribe” by σκῆπτρον in Samuel–Kings; Isa 11:4 בְּשֵׁבֶט פִּיו is λόγῳ, Gen 49:10 ἄρχων. The doctrine statements are reasoned conclusions to review."
+}
