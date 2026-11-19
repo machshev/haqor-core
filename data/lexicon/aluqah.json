@@ -1,0 +1,179 @@
+{
+  "id": "aluqah",
+  "root": "עלק",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "leech",
+  "summary": "The leech in Proverbs has two daughters whose only cry is ‘Give! Give!’ Their demand introduces the saying about things that never have enough.",
+  "words": [
+    {
+      "lemma": "עֲלוּקָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "p.de.ab"
+      ],
+      "gloss": "leech",
+      "senses": [
+        {
+          "id": "leech",
+          "gloss": "leech",
+          "definition": "A bloodsucking creature used as an image of appetite that cannot be satisfied.",
+          "evidence": [
+            {
+              "ref": "Pro.30.15",
+              "role": "defining",
+              "note": "The two daughters keep asking for more. The next verse names the grave, the barren womb, thirsty land and fire as things that never say ‘Enough’."
+            }
+          ],
+          "cognate_ids": [
+            "akk-leech",
+            "arc-leech",
+            "syc-leech",
+            "ar-leech",
+            "gez-leech",
+            "meh-leech",
+            "jib-leech"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-leech",
+      "lang": "akk",
+      "form": "ilqu",
+      "translit": "ilqu",
+      "gloss": "leech",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "pp. 213–214, §5.8, SED II no. 32"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000651, AKK004238"
+        }
+      ]
+    },
+    {
+      "id": "arc-leech",
+      "lang": "arc",
+      "form": "עַלְקָא",
+      "translit": "ʿalqā",
+      "gloss": "leech",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "P00786, Arukh variant in Avodah Zarah 12b"
+        }
+      ]
+    },
+    {
+      "id": "syc-leech",
+      "lang": "syc",
+      "form": "ܥܠܩܬܐ",
+      "translit": "ʿelaqtā",
+      "gloss": "leech",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "pp. 213–214, §5.8, SED II no. 32"
+        }
+      ]
+    },
+    {
+      "id": "ar-leech",
+      "lang": "ar",
+      "form": "عَلَق",
+      "translit": "ʿalaq",
+      "gloss": "leeches",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2134, n30280, leeches in water"
+        },
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "pp. 213–214, §5.8, SED II no. 32"
+        }
+      ]
+    },
+    {
+      "id": "gez-leech",
+      "lang": "gez",
+      "form": "ዐለቅት",
+      "translit": "ʿalaqt",
+      "gloss": "leech",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "s.v. ዐለቅት, hirudo, sanguisuga"
+        },
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "pp. 213–214, §5.8, SED II no. 32"
+        }
+      ]
+    },
+    {
+      "id": "meh-leech",
+      "lang": "sem",
+      "form": "ʾāwqáyt",
+      "translit": "ʾāwqáyt",
+      "gloss": "Mehri leech",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "pp. 213–214, §5.8, SED II no. 32"
+        }
+      ]
+    },
+    {
+      "id": "jib-leech",
+      "lang": "sem",
+      "form": "ʿoqót",
+      "translit": "ʿoqót",
+      "gloss": "Jibbali leech",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "pp. 213–214, §5.8, SED II no. 32"
+        }
+      ]
+    }
+  ],
+  "note": "The verse does not identify the two daughters. The cry they share explains how the image leads into the list. The related words for the animal are widespread, including in Akkadian and Modern South Arabian."
+}
