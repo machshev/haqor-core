@@ -1,0 +1,1340 @@
+{
+  "id": "emeq",
+  "root": "עמק",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "depth",
+    "valley",
+    "land",
+    "grave",
+    "wisdom",
+    "speech",
+    "judgment"
+  ],
+  "gloss": "be deep; make deep; deep; depth; valley",
+  "summary": "To be deep, and what is deep: a well, a pit, waters, a sore that goes below the skin, and so what lies beyond man's reach or search, the heart, counsel, God's thoughts, the grave. The hiphil makes deep, of Tophet's pile, of those who go deep to hide or to dwell, and of those who sink deep in revolt. The noun עֵמֶק is the valley, the low ground between hills where grain grows and chariots run, opposed to the mountains, and the scene of battles and of Yahweh's judgment of the nations in the valley of Jehoshaphat. Arabic ʿamuqa “be deep”, of a well, with ʿamq “bottom, depth”, and Ugaritic and Punic ʿmq “valley” show the same root.",
+  "words": [
+    {
+      "lemma": "עֵמֶק",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "valley, vale; low ground",
+      "bdb": [
+        "p.dm.ab"
+      ],
+      "cognate_ids": [
+        "uga-mq",
+        "phn-mq",
+        "arc-imqa",
+        "ar-amq"
+      ],
+      "summary": "Seventy times: the broad low ground between hills, the opposite of the mountains (1Ki 20:28; Jdg 1:19), where wheat is reaped and herds kept, and where armies camp and chariots run. Most uses name a valley. Its tie to “deep” is the low ground: Arabic ʿamq is the bottom of a well “and of a valley”, and the Aramaic of the Targums uses one word for “valley” and “depth”.",
+      "senses": [
+        {
+          "id": "valley",
+          "gloss": "valley, low ground",
+          "definition": "The low, level ground between hills or mountains: farmland, pasture, and open ground for chariots and armies; its people are “the inhabitants of the valley”.",
+          "evidence": [
+            {
+              "ref": "1Ki.20.28",
+              "role": "defining",
+              "note": "Aram said “Yahweh is a god of mountains (הָרִים) and not a god of valleys (עֲמָקִים)”: the valley is the opposite of the hill country."
+            },
+            {
+              "ref": "Jdg.1.19",
+              "role": "defining",
+              "note": "Judah took the hill country but could not drive out “the inhabitants of the valley, for they had chariots of iron”."
+            },
+            {
+              "ref": "Jos.17.16",
+              "note": "“Every Canaanite who dwells in the land of the valley has chariots of iron.”"
+            },
+            {
+              "ref": "Mic.1.4",
+              "role": "defining",
+              "note": "“The mountains melt under him and the valleys split”: mountains and valleys, the whole land."
+            },
+            {
+              "ref": "Psa.65.14",
+              "role": "defining",
+              "note": "“The pastures are clothed with flocks, and the valleys are covered with grain.”"
+            },
+            {
+              "ref": "1Sa.6.13",
+              "note": "Beth-shemesh was “reaping the wheat harvest in the valley”."
+            },
+            {
+              "ref": "Isa.17.5",
+              "note": "One gleaning ears “in the valley of Rephaim”."
+            },
+            {
+              "ref": "1Ch.27.29",
+              "note": "One overseer for the herds in the Sharon, another “over the herds in the valleys”."
+            },
+            {
+              "ref": "Job.39.10",
+              "note": "“Will he harrow the valleys after you?”"
+            },
+            {
+              "ref": "Job.39.21",
+              "note": "The war-horse “paws in the valley”."
+            },
+            {
+              "ref": "Sng.2.1",
+              "note": "“I am a rose of the Sharon, a lily of the valleys.”"
+            },
+            {
+              "ref": "Num.14.25",
+              "note": "“The Amalekite and the Canaanite dwell in the valley.”"
+            },
+            {
+              "ref": "Jer.21.13",
+              "note": "Jerusalem addressed as “inhabitant of the valley, rock of the plain (מִישֹׁר)”."
+            },
+            {
+              "ref": "Jer.48.8",
+              "note": "“The valley shall perish and the plain (מִישֹׁר) be destroyed.”"
+            },
+            {
+              "ref": "Isa.22.7",
+              "note": "“Your choicest valleys were full of chariots.”"
+            },
+            {
+              "ref": "Jer.49.4",
+              "note": "To Ammon: “Why do you boast in the valleys, your valley flowing?”"
+            },
+            {
+              "ref": "Jer.47.5",
+              "note": "“Ashkelon is silenced, the remnant of their valley.”"
+            },
+            {
+              "ref": "1Ch.12.16",
+              "note": "They “put to flight all the valleys”: the valleys' people."
+            },
+            {
+              "ref": "Jdg.7.12",
+              "note": "Midian and Amalek “lay in the valley like locusts for multitude”."
+            },
+            {
+              "ref": "Jdg.18.28",
+              "note": "Laish “was in the valley that belongs to Beth-rehob”."
+            }
+          ]
+        },
+        {
+          "id": "named-valley",
+          "gloss": "a named valley",
+          "definition": "A particular valley named by a place, a people or an event: the scene of battles, of judgment, and of blessing.",
+          "evidence": [
+            {
+              "ref": "Gen.14.3",
+              "role": "defining",
+              "note": "“The valley of Siddim, which is the Sea of Salt.”"
+            },
+            {
+              "ref": "Gen.14.17",
+              "note": "“The valley of Shaveh, which is the King's valley”, where the king of Sodom met Abram."
+            },
+            {
+              "ref": "2Sa.18.18",
+              "note": "Absalom's pillar “in the King's valley”."
+            },
+            {
+              "ref": "Jos.7.26",
+              "role": "defining",
+              "note": "After Achan was stoned, “the name of that place is called עֵמֶק עָכוֹר to this day”: the valley named from the event."
+            },
+            {
+              "ref": "Jos.10.12",
+              "note": "“Sun, stand still in Gibeon, and moon, in the valley of Aijalon.”"
+            },
+            {
+              "ref": "Jdg.6.33",
+              "note": "Midian and Amalek “camped in the valley of Jezreel”."
+            },
+            {
+              "ref": "Hos.1.5",
+              "note": "“I will break the bow of Israel in the valley of Jezreel.”"
+            },
+            {
+              "ref": "1Sa.17.2",
+              "note": "Saul and Israel “camped in the valley of Elah” against the Philistines."
+            },
+            {
+              "ref": "2Sa.5.18",
+              "note": "The Philistines “spread out in the valley of Rephaim”."
+            },
+            {
+              "ref": "2Ch.20.26",
+              "role": "defining",
+              "note": "“They assembled in עֵמֶק בְּרָכָה, for there they blessed Yahweh; therefore they called the name of that place the valley of Berachah.”"
+            },
+            {
+              "ref": "Isa.28.21",
+              "note": "Yahweh will rage “as in the valley of Gibeon” to do his strange work."
+            },
+            {
+              "ref": "Psa.84.7",
+              "note": "“Passing through the valley of Baca, they make it a spring.”"
+            },
+            {
+              "ref": "Psa.60.8",
+              "note": "“I will divide Shechem and measure out the valley of Succoth.”"
+            },
+            {
+              "ref": "Gen.37.14",
+              "note": "Jacob sent Joseph “from the valley of Hebron”."
+            },
+            {
+              "ref": "Jol.4.2",
+              "role": "defining",
+              "note": "“I will gather all the nations and bring them down to the valley of Jehoshaphat, and I will judge them there.”"
+            },
+            {
+              "ref": "Jol.4.14",
+              "note": "“Multitudes, multitudes in the valley of decision, for the day of Yahweh is near.”"
+            },
+            {
+              "ref": "Jer.31.40",
+              "note": "“The whole valley of the corpses and the ashes … shall be holy to Yahweh.”"
+            },
+            {
+              "ref": "Jos.19.27",
+              "note": "בֵּית הָעֵמֶק, Beth-emek, “house of the valley”, a town of Asher."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִישֹׁר",
+            "note": "“Plain, level ground”: the valley beside the tableland.",
+            "evidence": [
+              {
+                "ref": "Jer.48.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.21.13"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁרוֹן",
+            "note": "The Sharon, the coastal plain, beside the valley as pasture.",
+            "evidence": [
+              {
+                "ref": "Isa.65.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Sng.2.1"
+              },
+              {
+                "ref": "1Ch.27.29"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הַר",
+            "note": "“Mountain, hill country”: valley and mountains are the low and the high ground.",
+            "evidence": [
+              {
+                "ref": "1Ki.20.28",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.1.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Mic.1.4"
+              },
+              {
+                "ref": "Jos.17.16"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עֵמֶק עָכוֹר",
+            "gloss": "the valley of Achor, “valley of trouble”",
+            "evidence": [
+              {
+                "ref": "Jos.7.24"
+              },
+              {
+                "ref": "Jos.7.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.2.17"
+              },
+              {
+                "ref": "Isa.65.10"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵמֶק יְהוֹשָׁפָט",
+            "gloss": "the valley of Jehoshaphat, “Yahweh judges”",
+            "evidence": [
+              {
+                "ref": "Jol.4.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jol.4.12"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵמֶק הֶחָרוּץ",
+            "gloss": "the valley of decision",
+            "evidence": [
+              {
+                "ref": "Jol.4.14",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵמֶק יִזְרְעֶאל",
+            "gloss": "the valley of Jezreel",
+            "evidence": [
+              {
+                "ref": "Jdg.6.33"
+              },
+              {
+                "ref": "Jos.17.16"
+              },
+              {
+                "ref": "Hos.1.5"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵמֶק רְפָאִים",
+            "gloss": "the valley of Rephaim",
+            "evidence": [
+              {
+                "ref": "2Sa.5.18"
+              },
+              {
+                "ref": "2Sa.5.22"
+              },
+              {
+                "ref": "Isa.17.5"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵמֶק הָאֵלָה",
+            "gloss": "the valley of Elah, “of the terebinth”",
+            "evidence": [
+              {
+                "ref": "1Sa.17.2"
+              },
+              {
+                "ref": "1Sa.17.19"
+              },
+              {
+                "ref": "1Sa.21.10"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵמֶק הַמֶּלֶךְ",
+            "gloss": "the King's valley",
+            "evidence": [
+              {
+                "ref": "Gen.14.17"
+              },
+              {
+                "ref": "2Sa.18.18"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵמֶק בְּרָכָה",
+            "gloss": "the valley of Berachah, “of blessing”",
+            "evidence": [
+              {
+                "ref": "2Ch.20.26",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עָמֹק",
+      "pos": "adjective",
+      "gloss": "deep; too deep to reach, unsearchable",
+      "bdb": [
+        "p.dm.ae"
+      ],
+      "cognate_ids": [
+        "ar-amiq",
+        "gez-amaqa",
+        "arc-ammiq"
+      ],
+      "senses": [
+        {
+          "id": "deep",
+          "gloss": "deep",
+          "definition": "Going far down: a sore lower than the surrounding skin, a cup, a pit, waters.",
+          "evidence": [
+            {
+              "ref": "Lev.13.3",
+              "role": "defining",
+              "note": "“The appearance of the sore is deeper (עָמֹק) than the skin of his flesh”: below the surface."
+            },
+            {
+              "ref": "Lev.13.4"
+            },
+            {
+              "ref": "Lev.13.25"
+            },
+            {
+              "ref": "Lev.13.30"
+            },
+            {
+              "ref": "Lev.13.31"
+            },
+            {
+              "ref": "Lev.13.32"
+            },
+            {
+              "ref": "Lev.13.34"
+            },
+            {
+              "ref": "Ezk.23.32",
+              "role": "defining",
+              "note": "“Your sister's cup you shall drink, the deep and the wide (הָרְחָבָה)”, holding much."
+            },
+            {
+              "ref": "Pro.22.14",
+              "role": "defining",
+              "note": "“The mouth of strange women is a deep pit (שׁוּחָה עֲמֻקָּה).”"
+            },
+            {
+              "ref": "Pro.23.27",
+              "note": "“A harlot is a deep pit, and a foreign woman a narrow well.”"
+            },
+            {
+              "ref": "Pro.18.4",
+              "note": "“The words of a man's mouth are deep waters.”"
+            }
+          ],
+          "kin": [
+            "make-deep",
+            "depth",
+            "depths-waters",
+            "deep-syc"
+          ]
+        },
+        {
+          "id": "deep-unsearchable",
+          "gloss": "deep, beyond reach or search",
+          "definition": "Too deep for man to reach or find out: what is past, the heart and its counsel, the things hidden in darkness, the grave below.",
+          "evidence": [
+            {
+              "ref": "Ecc.7.24",
+              "role": "defining",
+              "note": "“Far off is what has been, and deep, deep (וְעָמֹק עָמֹק): who can find it?”"
+            },
+            {
+              "ref": "Job.11.8",
+              "role": "defining",
+              "note": "Of the search of God (11:7): “higher than heaven, what can you do? deeper (עֲמֻקָּה) than the grave, what can you know?”"
+            },
+            {
+              "ref": "Job.12.22",
+              "role": "defining",
+              "note": "“He uncovers deep things (עֲמֻקוֹת) out of darkness and brings the shadow of death to light.”"
+            },
+            {
+              "ref": "Psa.64.7",
+              "note": "Of the plotters: “the inward thought of a man and the heart are deep.”"
+            },
+            {
+              "ref": "Pro.20.5",
+              "role": "defining",
+              "note": "“Counsel in a man's heart is deep waters, but a man of understanding will draw it out.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-emequ"
+          ],
+          "kin": [
+            "be-deep",
+            "deep-things",
+            "depth",
+            "go-deep-hide"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βαθύς",
+          "gloss": "deep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.12.22, עֲמֻקוֹת → βαθέα; Psa.64.7 → βαθεῖα; Pro.18.4, Pro.20.5 → βαθύ; Pro.22.14 → βαθύς; Ezk.23.32 → βαθύ"
+            },
+            {
+              "ref": "Jhn.4.11",
+              "role": "defining",
+              "note": "“The well is deep (βαθύ)”; the Peshitta's עַמִּיקָא."
+            },
+            {
+              "ref": "Rev.2.24",
+              "note": "“Who have not known the deep things (τὰ βαθέα) of the adversary”, against the deep things of God revealed (Job 12:22; Dan 2:22)."
+            },
+            {
+              "ref": "Act.20.9",
+              "note": "“A deep sleep.”"
+            }
+          ]
+        },
+        {
+          "lemma": "βάθος",
+          "gloss": "depth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ecc.7.24, עָמֹק → βάθος"
+            },
+            {
+              "ref": "Rom.11.33",
+              "role": "defining",
+              "note": "“O the depth (βάθος) of the riches and wisdom and knowledge of God! How unsearchable his judgments”: Ecc 7:24 and Job 11:7–8, said of God."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָמַק",
+      "pos": "verb",
+      "gloss": "be deep; make deep, go deep",
+      "bdb": [
+        "p.dm.aa"
+      ],
+      "cognate_ids": [
+        "ar-amuqa",
+        "gez-amaqa",
+        "arc-amaq"
+      ],
+      "summary": "Nine times: once in the qal, of Yahweh's thoughts, and eight in the hiphil, which makes deep or goes deep, of a pit, of a hiding place, and of sin.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be deep",
+          "senses": [
+            {
+              "id": "be-deep",
+              "gloss": "be deep (of thoughts)",
+              "definition": "Of Yahweh's thoughts: deep, past the reach of the brutish man who does not know.",
+              "evidence": [
+                {
+                  "ref": "Psa.92.6",
+                  "role": "defining",
+                  "note": "“How great are your works, Yahweh; your thoughts are very deep (מְאֹד עָמְקוּ)”, parallel to גָּדְלוּ; the brutish man does not know (92:7)."
+                }
+              ],
+              "kin": [
+                "deep-unsearchable"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make deep; go deep (to hide, to dwell); go deep in sin",
+          "senses": [
+            {
+              "id": "make-deep",
+              "gloss": "make deep",
+              "definition": "To make something deep: a pit for burning, or a request reaching down to the grave.",
+              "evidence": [
+                {
+                  "ref": "Isa.30.33",
+                  "role": "defining",
+                  "note": "Tophet is prepared: “he has made deep (הֶעְמִיק), he has made wide (הִרְחִב) its pyre”."
+                },
+                {
+                  "ref": "Isa.7.11",
+                  "role": "defining",
+                  "note": "“Ask a sign … make it deep (הַעְמֵק) to the grave, or make it high (הַגְבֵּהַּ) above”: deep and high as opposites."
+                }
+              ],
+              "kin": [
+                "deep",
+                "dig-deep"
+              ]
+            },
+            {
+              "id": "go-deep-hide",
+              "gloss": "go deep, hide deep",
+              "definition": "To go down deep out of sight: to take refuge in deep places from an enemy, or to hide counsel from Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Jer.49.8",
+                  "role": "defining",
+                  "note": "“Flee, turn back, go deep to dwell (הֶעְמִיקוּ לָשֶׁבֶת), inhabitants of Dedan”: with “flee”, to hide in deep places."
+                },
+                {
+                  "ref": "Jer.49.30",
+                  "note": "The same to the inhabitants of Hazor before Nebuchadnezzar."
+                },
+                {
+                  "ref": "Isa.29.15",
+                  "role": "defining",
+                  "note": "“Woe to those who go deep (הַמַּעֲמִיקִים) to hide counsel from Yahweh, whose works are in the dark, who say, Who sees us?”"
+                }
+              ],
+              "kin": [
+                "deep-unsearchable"
+              ]
+            },
+            {
+              "id": "deepen-sin",
+              "gloss": "go deep in sin",
+              "definition": "With a word for sin, or before another verb: to do it deeply, to sink far into it.",
+              "evidence": [
+                {
+                  "ref": "Isa.31.6",
+                  "role": "defining",
+                  "note": "“Return to him from whom they have deeply revolted (הֶעְמִיקוּ סָרָה), sons of Israel.”"
+                },
+                {
+                  "ref": "Hos.9.9",
+                  "role": "defining",
+                  "note": "“They have deeply corrupted themselves (הֶעְמִיקוּ שִׁחֵתוּ), as in the days of Gibeah.”"
+                },
+                {
+                  "ref": "Hos.5.2",
+                  "note": "“The revolters have gone deep in slaughter.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βαθύνω",
+          "gloss": "make deep, go deep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.92.6, עָמְקוּ → ἐβαθύνθησαν; Jer.49.8, Jer.49.30, הֶעְמִיקוּ → βαθύνατε"
+            },
+            {
+              "ref": "Luk.6.48",
+              "role": "defining",
+              "note": "The wise builder “dug and went deep (ἐβάθυνεν)” to lay the foundation on the rock; the Peshitta's pael וְעַמֵּק."
+            }
+          ]
+        },
+        {
+          "lemma": "βάθος",
+          "gloss": "depth",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.7.11, הַעְמֵק → εἰς βάθος"
+            },
+            {
+              "ref": "Rom.8.39",
+              "note": "“Neither height nor depth (οὔτε ὕψωμα οὔτε βάθος)”: the pair of Isa 7:11."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲמַקִּים",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "depths",
+      "bdb": [
+        "p.dm.ag",
+        "m.cz.aj"
+      ],
+      "cognate_ids": [
+        "ar-amq",
+        "arc-imqa"
+      ],
+      "summary": "Five times, always plural: the depths of the sea or of the waters, and the depths of distress from which the psalmist cries.",
+      "senses": [
+        {
+          "id": "depths-waters",
+          "gloss": "the depths of the sea, deep waters",
+          "definition": "The deep places of the sea and of great waters.",
+          "evidence": [
+            {
+              "ref": "Isa.51.10",
+              "role": "defining",
+              "note": "“Who dried up the sea, the waters of the great deep (תְּהוֹם), who made the depths of the sea (מַעֲמַקֵּי־יָם) a way for the redeemed to pass over”: the Red Sea."
+            },
+            {
+              "ref": "Ezk.27.34",
+              "note": "Tyre “broken by the seas in the depths of the waters”."
+            }
+          ],
+          "kin": [
+            "deep",
+            "depth-syc"
+          ]
+        },
+        {
+          "id": "depths-distress",
+          "gloss": "the depths (of distress)",
+          "definition": "Deep waters as the place of one overwhelmed and near death, from which he calls on Yahweh.",
+          "evidence": [
+            {
+              "ref": "Psa.69.3",
+              "role": "defining",
+              "note": "“I sink in deep mire where there is no standing; I have come into the depths of the waters, and the flood sweeps over me.”"
+            },
+            {
+              "ref": "Psa.69.15",
+              "note": "“Deliver me from the mire … from those who hate me and from the depths of the waters.”"
+            },
+            {
+              "ref": "Psa.130.1",
+              "role": "defining",
+              "note": "“Out of the depths (מִמַּעֲמַקִּים) I cry to you, Yahweh”; the hope is his redemption (130:7–8)."
+            }
+          ],
+          "kin": [
+            "depths-grave"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βάθος",
+          "gloss": "depth; the deep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.69.3, מַעֲמַקֵּי → βάθη; Psa.69.15 → βάθους; Isa.51.10 → βάθη; Ezk.27.34 → βάθει (βαθύς in the alignment); Psa.130.1 → βαθέων"
+            },
+            {
+              "ref": "Luk.5.4",
+              "note": "“Put out into the deep (εἰς τὸ βάθος).”"
+            },
+            {
+              "ref": "1Co.2.10",
+              "role": "defining",
+              "note": "“The spirit searches all things, even the deep things (τὰ βάθη) of God”: the depths no man reaches, revealed by God (Job 12:22; Dan 2:22)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָמֵק",
+      "pos": "adjective",
+      "gloss": "deep (of lip): unintelligible; (plural) depths",
+      "bdb": [
+        "p.dm.ad"
+      ],
+      "summary": "Four times, always in the construct plural עִמְקֵי: “deep of lip”, of foreign speech that cannot be understood, and once “the depths of the grave”. Pro 9:18 may be the noun עֹמֶק in the plural.",
+      "senses": [
+        {
+          "id": "deep-of-lip",
+          "gloss": "deep of lip: of unintelligible speech",
+          "definition": "Of a people whose speech is too deep to follow: a foreign tongue that cannot be understood.",
+          "evidence": [
+            {
+              "ref": "Ezk.3.5",
+              "role": "defining",
+              "note": "“Not to a people deep of lip (עִמְקֵי שָׂפָה) and heavy of tongue (כִבְדֵי לָשׁוֹן) are you sent, but to the house of Israel.”"
+            },
+            {
+              "ref": "Ezk.3.6",
+              "role": "defining",
+              "note": "“… whose words you do not understand (לֹא־תִשְׁמַע).”"
+            },
+            {
+              "ref": "Isa.33.19",
+              "role": "defining",
+              "note": "“A people deep of lip, past hearing, stammering of tongue, without understanding (אֵין בִּינָה).”"
+            }
+          ],
+          "cognate_ids": [
+            "arc-ammiq"
+          ]
+        },
+        {
+          "id": "depths-grave",
+          "gloss": "depths (of the grave)",
+          "definition": "As a noun: the deep places, of the grave where the dead are.",
+          "evidence": [
+            {
+              "ref": "Pro.9.18",
+              "role": "defining",
+              "note": "“He does not know that the dead (רְפָאִים) are there, her guests in the depths of the grave (בְּעִמְקֵי שְׁאוֹל).”"
+            }
+          ],
+          "cognate_ids": [
+            "ar-amq"
+          ],
+          "kin": [
+            "deep-unsearchable",
+            "depths-distress",
+            "make-deep"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כְּבַד לָשׁוֹן",
+            "note": "“Heavy of tongue”: speech hard to follow.",
+            "evidence": [
+              {
+                "ref": "Ezk.3.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.3.6"
+              }
+            ]
+          },
+          {
+            "lemma": "נִלְעַג לָשׁוֹן",
+            "note": "“Stammering of tongue.”",
+            "evidence": [
+              {
+                "ref": "Isa.33.19",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֹמֶק",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "depth",
+      "bdb": [
+        "p.dm.ac"
+      ],
+      "cognate_ids": [
+        "ar-amq",
+        "arc-umqa"
+      ],
+      "senses": [
+        {
+          "id": "depth",
+          "gloss": "depth",
+          "definition": "Depth, set against height: the earth below as the heavens above, both past measuring, as the heart of kings is past searching.",
+          "evidence": [
+            {
+              "ref": "Pro.25.3",
+              "role": "defining",
+              "note": "“The heavens for height (לָרוּם) and the earth for depth (לָעֹמֶק), and the heart of kings is unsearchable (אֵין חֵקֶר).”"
+            }
+          ],
+          "kin": [
+            "deep",
+            "deep-unsearchable",
+            "depth-syc"
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "רוּם",
+            "note": "“Height”: the heavens' height and the earth's depth.",
+            "evidence": [
+              {
+                "ref": "Pro.25.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עַמִּיק",
+      "lang": "arc",
+      "root": "עמיק",
+      "pos": "adjective",
+      "gloss": "deep; (plural, as a noun) deep things",
+      "bdb": [
+        "xp.ah.ab"
+      ],
+      "cognate_ids": [
+        "arc-ammiq",
+        "ar-amiq"
+      ],
+      "senses": [
+        {
+          "id": "deep-things",
+          "gloss": "deep things, hidden things",
+          "definition": "The feminine plural as a noun: things too deep for man to know, which God reveals.",
+          "evidence": [
+            {
+              "ref": "Dan.2.22",
+              "role": "defining",
+              "note": "“He reveals the deep and hidden things (עַמִּיקָתָא וּמְסַתְּרָתָא); he knows what is in the darkness, and the light dwells with him”: Job 12:22's words in Aramaic."
+            }
+          ],
+          "kin": [
+            "deep-unsearchable"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עוּמְקָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "depth; the deep",
+      "summary": "The Peshitta's ܥܘܡܩܐ (ʿumqā), for Greek βάθος and for the deep of the sea.",
+      "cognate_ids": [
+        "ar-amq",
+        "arc-umqa"
+      ],
+      "senses": [
+        {
+          "id": "depth-syc",
+          "gloss": "depth; the deep",
+          "definition": "Depth of soil or of the sea; the deep of God's riches and wisdom, and of his things searched out by the spirit.",
+          "evidence": [
+            {
+              "ref": "Rom.11.33",
+              "role": "defining",
+              "note": "“O the depth (ܥܘܡܩܐ) of the riches and wisdom and knowledge of God.”"
+            },
+            {
+              "ref": "1Co.2.10",
+              "role": "defining",
+              "note": "“The spirit searches all things, even the depths of God.”"
+            },
+            {
+              "ref": "Mat.13.5",
+              "note": "Seed sprang up quickly “because it had no depth of earth”."
+            },
+            {
+              "ref": "Mrk.4.5"
+            },
+            {
+              "ref": "Mat.18.6",
+              "note": "Better to be sunk “in the depths of the sea”."
+            },
+            {
+              "ref": "Luk.5.4",
+              "note": "“Put out into the deep.”"
+            },
+            {
+              "ref": "Act.27.41"
+            },
+            {
+              "ref": "Rom.8.39",
+              "note": "“Neither height nor depth.”"
+            },
+            {
+              "ref": "2Co.8.2",
+              "note": "Their “deep poverty”."
+            },
+            {
+              "ref": "Eph.3.18",
+              "note": "“The breadth and length and depth and height.”"
+            }
+          ],
+          "kin": [
+            "depths-waters",
+            "depth"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַמִּיקָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "deep",
+      "summary": "The Peshitta's ܥܡܝܩܐ (ʿamīqā), for βαθύς.",
+      "cognate_ids": [
+        "ar-amiq",
+        "arc-ammiq"
+      ],
+      "senses": [
+        {
+          "id": "deep-syc",
+          "gloss": "deep",
+          "definition": "Deep, of a well; as a noun, the deep things of the adversary's teaching.",
+          "evidence": [
+            {
+              "ref": "Jhn.4.11",
+              "role": "defining",
+              "note": "“You have no bucket, and the well is deep (ܥܡܝܩܐ).”"
+            },
+            {
+              "ref": "Rev.2.24",
+              "note": "“Who have not known the deep things of the adversary.”"
+            }
+          ],
+          "kin": [
+            "deep"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַמֵּק",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "(pael) dig deep, make deep",
+      "summary": "The Peshitta's ܥܡܩ in the pael, once, for βαθύνω.",
+      "cognate_ids": [
+        "ar-amuqa",
+        "arc-amaq"
+      ],
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "dig deep, make deep",
+          "senses": [
+            {
+              "id": "dig-deep",
+              "gloss": "dig deep",
+              "definition": "To dig down deep, to reach the rock for a foundation.",
+              "evidence": [
+                {
+                  "ref": "Luk.6.48",
+                  "role": "defining",
+                  "note": "The man who hears and does Jesus' words is like one who “dug and went deep (ܘܥܡܩ) and laid the foundation on the rock”."
+                }
+              ],
+              "kin": [
+                "make-deep"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-amuqa",
+      "lang": "ar",
+      "form": "عَمُقَ، أَعْمَقَ، عَمَّقَ، تَعَمَّقَ",
+      "translit": "ʿamuqa, ʾaʿmaqa, ʿammaqa, taʿammaqa",
+      "gloss": "be deep (of a well); make (a well) deep; go deep into a matter or speech",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Lane: ʿamuqa, said of a well, “it was, or became, deep”, and of a place “distant, remote”; forms II and IV “he made the well deep”; form II of looking into affairs, “he looked, or examined, deeply”; form V “he went deeply, or far, in his speech”, “he dived deeply into the thing”. The Hebrew qal and hiphil, and the hiphil's going deep. Arabic ʿ (ع), not ġ (غ), stands behind ע.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2157, عَمُقَ (n30549)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2157, عَمَّقَ form II; اعمق البِئْرَ form IV (n30550)"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2157, تعمّق فِى كَلَامِهِ form V (n30551)"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000603 ʿmq [deep] V, ARB022863 ʿamuqa [deep]"
+        }
+      ]
+    },
+    {
+      "id": "ar-amq",
+      "lang": "ar",
+      "form": "عَمْقٌ، عُمْقٌ",
+      "translit": "ʿamq, ʿumq",
+      "gloss": "bottom, depth (of a well, a road, a valley); deep places of the ground",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Lane: “the bottom of a well and the like, and of a [mountain road], and of a valley”, “the depth of a well … the distance to the bottom”, and ʿumūq “deep places of the ground”; also “the remote extremity of a desert”. The form of עֹמֶק, and the low ground of עֵמֶק.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2157, عَمْقٌ (n30552)"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic عمق (ʕamq, ʕumq), noun: depth, bottom"
+        }
+      ]
+    },
+    {
+      "id": "ar-amiq",
+      "lang": "ar",
+      "form": "عَمِيقٌ",
+      "translit": "ʿamīq",
+      "gloss": "deep (of a well); far-extending (of a road)",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Lane: biʾr ʿamīqa “a deep well”; of a mountain road “remote, or far-extending” (Lane's Kur xxii. 28). The adjective עָמֹק, and the deep well of Jhn 4:11.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2157, عَمِيقٌ (n30560)"
+        }
+      ]
+    },
+    {
+      "id": "gez-amaqa",
+      "lang": "gez",
+      "form": "ዐመቀ",
+      "translit": "ʿamaqa",
+      "gloss": "be deep",
+      "relation": "cognate",
+      "note": "Listed in the Proto-Semitic root set ʿmq “deep”; not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000603 ʿmq [deep] V, GEZ000776 ʿamaqa [deep] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-mq",
+      "lang": "uga",
+      "form": "𐎓𐎎𐎖",
+      "translit": "ʿmq",
+      "gloss": "valley",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "The noun “valley”, written with ʿ (𐎓), not ġ: עֵמֶק. Not yet checked in DULAT.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎓𐎎𐎖 (ʿmq), noun: valley"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000604 ʿmq [valley] N, UGC000939 ʿmq [valley] N"
+        }
+      ]
+    },
+    {
+      "id": "phn-mq",
+      "lang": "phn",
+      "form": "𐤏𐤌𐤒",
+      "translit": "ʿmq",
+      "gloss": "valley (Punic)",
+      "relation": "cognate",
+      "note": "Punic ʿmq “valley”. Not yet checked in Krahmalkov.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000604 ʿmq [valley] N, PUN001556 ʿmq [valley] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-imqa",
+      "lang": "arc",
+      "form": "עִמְקָא",
+      "translit": "ʿimqā",
+      "gloss": "valley; depth",
+      "relation": "cognate",
+      "note": "The Targums' word for both “valley” (Targ. 1Ch 27:29, plural עִמְקַיָּא) and “depth” (Targ. Psa 69:3, עִמְקֵי for מַעֲמַקֵּי): one word for the valley and the deep.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עִמְקָא"
+        }
+      ]
+    },
+    {
+      "id": "arc-umqa",
+      "lang": "arc",
+      "form": "עוּמְקָא",
+      "translit": "ʿumqā",
+      "gloss": "depth; the ground beneath a building",
+      "relation": "cognate",
+      "note": "“Depth, foundation”: in sale contracts “depth and height” (עוּמְקָא וְרוּמָא), the ground below and the space above, the pair of Pro 25:3.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עוּמְקָא I"
+        }
+      ]
+    },
+    {
+      "id": "arc-ammiq",
+      "lang": "arc",
+      "form": "עַמִּיק",
+      "translit": "ʿammīq",
+      "gloss": "deep; (of speech) obscure, indistinct; profound",
+      "relation": "cognate",
+      "note": "The Targums' adjective for עָמֹק (Targ. Lev 13:3; Prov 18:4; Psa 92:6), and transferred “obscure, indistinct”, rendering “heavy of mouth” in Targ. Onkelos Exo 4:10 and in Targ. Isa 33:19: the same use as עִמְקֵי שָׂפָה.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עַמִּיק (עָמִיק I)"
+        }
+      ]
+    },
+    {
+      "id": "arc-amaq",
+      "lang": "arc",
+      "form": "אַעֲמִיק",
+      "translit": "ʾaʿmīq",
+      "gloss": "(aphel) grow deeper",
+      "relation": "cognate",
+      "note": "In Targ. Isa 30:33, rendering the hiphil הֶעְמִיק of Tophet's pyre.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲמַק"
+        }
+      ]
+    },
+    {
+      "id": "akk-emequ",
+      "lang": "akk",
+      "form": "emēqu, emqu, nēmequ",
+      "translit": "emēqu, emqu, nēmequ",
+      "gloss": "be wise, pray fervently; wise, skilled; wisdom",
+      "relation": "possible",
+      "note": "Set beside ʿmq “deep” in the Proto-Semitic list; if so, “deep” of the mind, as in Psa 92:6 and Pro 20:5. The meaning is not “deep” in Akkadian itself, so the link is argued, not shown.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000019160, emēqu [be(come) wise] V"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000066950, emqu [wise] AJ"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000049100, nēmequ [wisdom] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000603 ʿmq [deep] V, AKK002314 emēqu [be(come) wise] V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "judgment-of-nations",
+      "statement": "Yahweh says he will gather all the nations and bring them down to the valley of Jehoshaphat, “Yahweh judges”, and judge them there for his people and his inheritance Israel, whom they scattered among the nations, and for his land, which they divided (Jol 4:2). The nations come up, for there he will sit to judge them (4:12); multitudes fill the valley of decision, for the day of Yahweh is near (4:14). Then Yahweh roars from Zion, is a refuge to the sons of Israel, and dwells in Zion his holy mountain, and Jerusalem is holy, never again passed through by strangers (4:16–17). The judgment is on earth, in the land, over the land and people that are Yahweh's, and it ends with Yahweh dwelling in Jerusalem.",
+      "evidence": [
+        {
+          "ref": "Jol.4.2"
+        },
+        {
+          "ref": "Jol.4.12"
+        },
+        {
+          "ref": "Jol.4.14"
+        },
+        {
+          "ref": "Jol.4.16",
+          "to": "Jol.4.17"
+        }
+      ]
+    },
+    {
+      "topic": "restoration-of-israel",
+      "statement": "The valley of Achor is where Achan was stoned for taking the devoted things, and Yahweh turned from his anger (Jos 7:24–26). The prophets name the same valley in the promise: Yahweh will give Israel “the valley of Achor for a door of hope”, and she will answer as in the days of her youth when she came up out of Egypt (Hos 2:17); it will be a resting place for herds “for my people who have sought me” (Isa 65:10). The valley of the corpses and the ashes beside Jerusalem is to be holy to Yahweh and never uprooted or thrown down again (Jer 31:40). The place of trouble becomes the place of hope, in the land itself.",
+      "evidence": [
+        {
+          "ref": "Jos.7.24",
+          "to": "Jos.7.26"
+        },
+        {
+          "ref": "Hos.2.17"
+        },
+        {
+          "ref": "Isa.65.10"
+        },
+        {
+          "ref": "Jer.31.40"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "The grave is the depth set against the height of the heavens: “make it deep to the grave, or make it high above” (Isa 7:11), “higher than heaven … deeper than the grave” (Job 11:8). The dead (רְפָאִים) are there, in the depths of the grave (Pro 9:18). From the depths the psalmist cries to Yahweh, and his hope is Yahweh's redemption (Psa 130:1, 7–8). The depths are the place of the dead, below, not of a living soul elsewhere; deliverance from them is Yahweh's work.",
+      "evidence": [
+        {
+          "ref": "Isa.7.11"
+        },
+        {
+          "ref": "Job.11.8"
+        },
+        {
+          "ref": "Pro.9.18"
+        },
+        {
+          "ref": "Psa.130.1"
+        },
+        {
+          "ref": "Psa.130.7",
+          "to": "Psa.130.8"
+        }
+      ]
+    },
+    {
+      "topic": "god-reveals",
+      "statement": "What is deep is beyond man: “deep, deep: who can find it?” (Ecc 7:24); God's thoughts are very deep, and the brutish man does not know (Psa 92:6–7). Yet God uncovers deep things out of darkness (Job 12:22), and Daniel blesses him who “reveals the deep and hidden things” (Dan 2:22). Those who go deep to hide their counsel from Yahweh are not hidden (Isa 29:15). Paul takes up the same words: God has revealed to us by his spirit what eye has not seen, “for the spirit searches all things, even the deep things of God” (1Co 2:10), while his judgments remain unsearchable to man (Rom 11:33).",
+      "evidence": [
+        {
+          "ref": "Ecc.7.24"
+        },
+        {
+          "ref": "Psa.92.6",
+          "to": "Psa.92.7"
+        },
+        {
+          "ref": "Job.12.22"
+        },
+        {
+          "ref": "Dan.2.22"
+        },
+        {
+          "ref": "Isa.29.15"
+        },
+        {
+          "ref": "1Co.2.10"
+        },
+        {
+          "ref": "Rom.11.33"
+        }
+      ]
+    }
+  ],
+  "note": "Takes all BDB keys under עמק: p.dm.aa (verb), p.dm.ab (עֵמֶק), p.dm.ac (עֹמֶק), p.dm.ad (עָמֵק), p.dm.ae (עָמֹק), p.dm.ag and the zero-token cross-reference m.cz.aj (מַעֲמַקִּים), and the Aramaic עַמִּיק of Dan 2:22 (xp.ah.ab, root key עמיק). The priest's name עָמוֹק (p.dm.af) is in names/amok.json. Place names inside עֵמֶק's count: בֵּית הָעֵמֶק (Jos 19:27) and עֵמֶק קְצִיץ (Jos 18:21). Open questions: (1) Akkadian emēqu/emqu/nēmequ “be wise, wise, wisdom” is recorded as possible; Akkadian emūqu “strength, army” (Oracc armep x000008620) and Ugaritic ʿmq “tough one” (Oracc-Ugarit x000005420) are not recorded: is there a second root ʿmq “strong”? Jer 47:5 שְׁאֵרִית עִמְקָם is read here as “the remnant of their valley”; “their strength” would fit that root, and Jer 49:4 זָב עִמְקֵךְ “your valley flows” is also hard. (2) Pro 9:18 בְּעִמְקֵי is filed by BDB under עָמֵק but may be עֹמֶק in the plural. (3) Ge'ez, Ugaritic and Punic rest on Anderson–Moser and Wiktionary; check Dillmann/Leslau, DULAT and Krahmalkov. (4) No New Testament Greek bridges עֵמֶק: the Septuagint renders it by κοιλάς, αὐλών, φάραγξ, πεδίον; φάραγξ in Luk 3:5 renders גַּיְא (Isa 40:4), not this word. (5) The Syriac pael ܥܡܩ (SEDRA lexeme 2356, form PAEL, Luk 6:48) and ܥܘܡܩܐ (2354), ܥܡܝܩܐ (2355) are from SEDRA's word table; their pointing here follows SEDRA's vocalisation."
+}
