@@ -1,0 +1,211 @@
+{
+  "id": "shav",
+  "root": "שוא",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "futility"
+  ],
+  "gloss": "falsehood, emptiness, futility",
+  "summary": "False speech presents as reliable something that has no substance. The same noun describes labour or help that fails to achieve its end.",
+  "words": [
+    {
+      "lemma": "שָׁוְא",
+      "bdb": [
+        "v.bl.ab"
+      ],
+      "pos": "noun",
+      "gloss": "falsehood, emptiness, futility",
+      "senses": [
+        {
+          "gloss": "false or empty speech",
+          "definition": "In Psalm 12 people speak to their neighbours with flattering lips and a divided heart. Exodus forbids circulating a false report, and Ezekiel challenges prophets who claim an oracle Yahweh never gave.",
+          "evidence": [
+            {
+              "ref": "Psa.12.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.23.1"
+            },
+            {
+              "ref": "Ezk.13.7"
+            }
+          ]
+        },
+        {
+          "gloss": "worthlessness or misuse",
+          "definition": "The commandment forbids taking up Yahweh’s name for an empty purpose. Jonah speaks of those who cling to worthless things.",
+          "evidence": [
+            {
+              "ref": "Exo.20.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.5.11"
+            },
+            {
+              "ref": "Jon.2.9"
+            }
+          ]
+        },
+        {
+          "gloss": "effort that achieves nothing",
+          "definition": "When Yahweh does not build or guard, the labourers or watchmen work in vain. Human help can likewise prove futile.",
+          "evidence": [
+            {
+              "ref": "Psa.127.1",
+              "to": "Psa.127.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.60.13"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שׁוֹא",
+      "bdb": [
+        "v.bm.ab"
+      ],
+      "pos": "noun",
+      "gloss": "ravages",
+      "senses": [
+        {
+          "gloss": "ravages",
+          "definition": "The speaker asks to be rescued from the ravages of attackers pictured as lions.",
+          "evidence": [
+            {
+              "ref": "Psa.35.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שׁוֹאָה",
+      "bdb": [
+        "v.bm.ac"
+      ],
+      "pos": "noun",
+      "gloss": "devastation, waste",
+      "senses": [
+        {
+          "gloss": "sudden devastation",
+          "definition": "Destruction from afar and unexpected disaster are both described by this noun. The psalmist asks that ruin come upon an attacker unawares.",
+          "evidence": [
+            {
+              "ref": "Isa.10.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.47.11"
+            },
+            {
+              "ref": "Psa.35.8"
+            }
+          ],
+          "id": "devastation"
+        },
+        {
+          "gloss": "wasteland",
+          "definition": "Rain makes even desolate ground put forth grass.",
+          "evidence": [
+            {
+              "ref": "Job.38.26",
+              "to": "Job.38.27",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מְשׁוֹאָה",
+      "bdb": [
+        "v.bm.ad"
+      ],
+      "pos": "noun",
+      "gloss": "desolation",
+      "senses": [
+        {
+          "gloss": "desolation",
+          "definition": "Zephaniah pairs destruction with desolation on the day of Yahweh. Job describes the waste where people seek food.",
+          "evidence": [
+            {
+              "ref": "Zep.1.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.30.3"
+            },
+            {
+              "ref": "Job.38.27"
+            }
+          ],
+          "kin": [
+            "devastation"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "תְּשֻׁאָה",
+      "bdb": [
+        "v.bm.ae"
+      ],
+      "pos": "noun",
+      "gloss": "shouting, din",
+      "senses": [
+        {
+          "gloss": "shouting, din",
+          "definition": "Isaiah hears a city filled with noise. Zechariah pictures shouts greeting the capstone, while Job speaks of the driver’s shouts.",
+          "evidence": [
+            {
+              "ref": "Isa.22.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Zec.4.7"
+            },
+            {
+              "ref": "Job.39.7"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-saw",
+      "lang": "ar",
+      "form": "سَوْءٌ",
+      "translit": "sawʾ",
+      "gloss": "evil, badness",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1457, سَوْءٌ, of a bad man or deed"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The consonants correspond to Hebrew שָׁוְא, but the Arabic denotes what is bad more broadly."
+    }
+  ],
+  "doctrine": [],
+  "note": "The neighbouring words for devastation and uproar have separate uses. The Hebrew of Psalm 12 specifically concerns deceitful speech. The similar Syriac words for equality and worthiness do not support that sense."
+}
