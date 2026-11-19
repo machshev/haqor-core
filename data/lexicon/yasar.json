@@ -1,0 +1,203 @@
+{
+  "id": "yasar",
+  "root": "יסר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "discipline",
+    "wisdom"
+  ],
+  "gloss": "correct, discipline, instruct",
+  "summary": "Correction is meant to teach a person how to act. A father’s instruction and Yahweh’s training of Israel give the verb and noun their clearest setting. Psalm 2 calls on rulers to accept such correction.",
+  "words": [
+    {
+      "lemma": "מוּסָר",
+      "bdb": [
+        "j.ca.ac",
+        "j.ca.ad",
+        "m.az.ai",
+        "m.az.al",
+        "m.ct.ac"
+      ],
+      "pos": "noun",
+      "gloss": "discipline, correction, instruction",
+      "senses": [
+        {
+          "gloss": "instruction that trains conduct",
+          "definition": "The son is to hear his father’s discipline alongside his mother’s teaching. Receiving correction is one way a person learns wisdom.",
+          "evidence": [
+            {
+              "ref": "Pro.1.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.12.1"
+            },
+            {
+              "ref": "Pro.15.32"
+            }
+          ],
+          "id": "training"
+        },
+        {
+          "gloss": "painful correction",
+          "definition": "Proverbs compares Yahweh’s correction of the one he loves to a father’s care for his son. Hebrews takes up that father-and-son relationship.",
+          "evidence": [
+            {
+              "ref": "Pro.3.11",
+              "to": "Pro.3.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Heb.12.5",
+              "to": "Heb.12.11"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יָסַר",
+      "bdb": [
+        "j.ca.aa"
+      ],
+      "pos": "verb",
+      "gloss": "discipline, instruct",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "instruct or admonish",
+          "senses": [
+            {
+              "gloss": "instruct or admonish",
+              "definition": "Yahweh warns Isaiah away from the path taken by the people. A warning to a scoffer may earn abuse for the instructor.",
+              "evidence": [
+                {
+                  "ref": "Isa.8.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.9.7"
+                }
+              ],
+              "kin": [
+                "training"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "discipline or train",
+          "senses": [
+            {
+              "gloss": "discipline or train",
+              "definition": "A father disciplines his son, and Israel is to recognize the same relationship in its wilderness training. The petitioner asks to be corrected with justice.",
+              "evidence": [
+                {
+                  "ref": "Deu.8.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.10.24"
+                },
+                {
+                  "ref": "Psa.6.2"
+                }
+              ],
+              "kin": [
+                "training"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "accept correction",
+          "senses": [
+            {
+              "gloss": "accept correction",
+              "definition": "The rulers are urged to receive warning and act wisely. Ephraim acknowledges both the discipline received and its effect.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.31.18"
+                },
+                {
+                  "ref": "Lev.26.23"
+                }
+              ],
+              "kin": [
+                "training"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring under discipline",
+          "senses": [
+            {
+              "gloss": "bring under discipline",
+              "definition": "Yahweh describes spreading a net and bringing the wandering people down for discipline.",
+              "evidence": [
+                {
+                  "ref": "Hos.7.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "nithpael",
+          "gloss": "take warning",
+          "senses": [
+            {
+              "gloss": "take warning",
+              "definition": "The judgment described becomes a warning to other women against repeating the conduct.",
+              "evidence": [
+                {
+                  "ref": "Ezk.23.48",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "training"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יִסּוֹר",
+      "bdb": [
+        "j.ca.ab"
+      ],
+      "pos": "noun",
+      "gloss": "one who reproves",
+      "senses": [
+        {
+          "gloss": "one who reproves",
+          "definition": "Yahweh challenges the one who finds fault with the Almighty to give an answer.",
+          "evidence": [
+            {
+              "ref": "Job.40.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Isaiah 17:1 is a passive form of סור, removal, despite overlap in the spelling of מוּסָר. The Aramaic noun יִסּוּרָא in Jastrow denotes a chain or prison, which does not establish the Hebrew sense of instruction."
+}
