@@ -1,0 +1,120 @@
+{
+  "id": "cheled",
+  "root": "חלד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "time",
+    "animals"
+  ],
+  "gloss": "lifetime, world; small land animal",
+  "summary": "The psalms use חֶלֶד of a person’s lifetime and the world inhabited by people. Leviticus has a differently vocalized animal name with the same consonants.",
+  "words": [
+    {
+      "lemma": "חֶלֶד",
+      "bdb": [
+        "h.cl.ab"
+      ],
+      "pos": "noun",
+      "gloss": "lifetime, inhabited world",
+      "senses": [
+        {
+          "gloss": "span of life",
+          "definition": "A speaker measures his lifetime against the handbreadth of his days. Another asks God to remember how brief human life is.",
+          "evidence": [
+            {
+              "ref": "Psa.39.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.89.48"
+            },
+            {
+              "ref": "Job.11.17"
+            }
+          ]
+        },
+        {
+          "gloss": "world of human life",
+          "definition": "The call to all inhabitants of the world opens Psalm 49. Psalm 17 describes people whose portion lies in their present life and whose goods pass to their children.",
+          "evidence": [
+            {
+              "ref": "Psa.49.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.17.14"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-khalada"
+      ]
+    },
+    {
+      "lemma": "חֹלֶד",
+      "bdb": [
+        "h.cm.ac"
+      ],
+      "pos": "noun",
+      "gloss": "small land animal",
+      "senses": [
+        {
+          "gloss": "small land animal",
+          "definition": "The animal heads a list of unclean creatures that move along the ground, immediately before the mouse. Arabic usage supports a burrowing mammal, though the verse gives no identifying description.",
+          "evidence": [
+            {
+              "ref": "Lev.11.29",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-khuld"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-khalada",
+      "lang": "ar",
+      "form": "خَلَدَ",
+      "translit": "ḫalada",
+      "gloss": "remain, abide for a long time",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "خَلَدَ, n11234, Book I, pp. 783–784"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    },
+    {
+      "id": "ar-khuld",
+      "lang": "ar",
+      "form": "خُلْد",
+      "translit": "ḫuld",
+      "gloss": "mole, blind rat",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "خُلْدٌ, n11238, Book I, p. 784, animal sense A3"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic parallels support both meanings independently. Neither the animal species nor a common origin for the duration and animal words can be determined from the biblical passages."
+}
