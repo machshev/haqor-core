@@ -1,0 +1,234 @@
+{
+  "id": "yashen",
+  "root": "ישנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "sleep",
+    "age",
+    "death"
+  ],
+  "gloss": "sleep, grow old",
+  "summary": "In Psalm 3 sleep ends when David wakes under Yahweh’s care. Psalm 13 calls death a sleep, and Daniel pictures sleepers in the dust awakening. Another set of forms describes age or long keeping.",
+  "words": [
+    {
+      "lemma": "יָשֵׁן",
+      "bdb": [
+        "j.dx.aa"
+      ],
+      "pos": "verb",
+      "gloss": "sleep, grow old",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sleep",
+          "senses": [
+            {
+              "gloss": "sleep",
+              "definition": "David lies down, sleeps and wakes again. He can sleep in peace because Yahweh keeps him safe.",
+              "evidence": [
+                {
+                  "ref": "Psa.3.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.4.9"
+                },
+                {
+                  "ref": "Gen.2.21"
+                }
+              ],
+              "cognate_ids": [
+                "arc-shenta"
+              ]
+            },
+            {
+              "gloss": "sleep in death",
+              "definition": "David asks for light for his eyes lest he sleep the sleep of death. Job pictures death as lying down to sleep.",
+              "evidence": [
+                {
+                  "ref": "Psa.13.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.3.13"
+                }
+              ],
+              "cognate_ids": [
+                "arc-shenta"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "put to sleep",
+          "senses": [
+            {
+              "gloss": "put to sleep",
+              "definition": "Delilah puts Samson to sleep on her knees.",
+              "evidence": [
+                {
+                  "ref": "Jdg.16.19",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-shenta"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "grow old, be long established",
+          "senses": [
+            {
+              "gloss": "grow old, be long established",
+              "definition": "Israel can live in the land for generations. The same stem describes a longstanding skin disease and produce kept in storage.",
+              "evidence": [
+                {
+                  "ref": "Deu.4.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.13.11"
+                },
+                {
+                  "ref": "Lev.26.10"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָשֵׁן",
+      "bdb": [
+        "j.dx.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "asleep",
+      "senses": [
+        {
+          "gloss": "asleep",
+          "definition": "David finds Saul asleep in the camp. Daniel uses the same adjective for those who sleep in the dust and will awake.",
+          "evidence": [
+            {
+              "ref": "1Sa.26.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.5.2"
+            },
+            {
+              "ref": "Dan.12.2"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-shenta"
+      ]
+    },
+    {
+      "lemma": "שֵׁנָה",
+      "bdb": [
+        "j.dx.af"
+      ],
+      "pos": "noun",
+      "gloss": "sleep",
+      "senses": [
+        {
+          "gloss": "sleep",
+          "definition": "Jacob wakes from his sleep at Bethel. Years later he recalls how sleep fled from his eyes while he guarded Laban’s flocks.",
+          "evidence": [
+            {
+              "ref": "Gen.28.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.31.40"
+            },
+            {
+              "ref": "Psa.132.4"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-shenta"
+      ]
+    },
+    {
+      "lemma": "יָשָׁן",
+      "bdb": [
+        "j.dx.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "old, stored from before",
+      "senses": [
+        {
+          "gloss": "old, stored from before",
+          "definition": "Stored produce from earlier years can feed the people until a new harvest comes in. Isaiah distinguishes an old pool.",
+          "evidence": [
+            {
+              "ref": "Lev.25.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.26.10"
+            },
+            {
+              "ref": "Isa.22.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְשָׁנָה",
+      "bdb": [
+        "j.dx.ae"
+      ],
+      "pos": "name",
+      "gloss": "Jeshanah",
+      "senses": [
+        {
+          "gloss": "Jeshanah",
+          "definition": "Abijah takes Jeshanah and its surrounding settlements from Jeroboam.",
+          "evidence": [
+            {
+              "ref": "2Ch.13.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-shenta",
+      "lang": "arc",
+      "form": "שֵׁינְתָא",
+      "translit": "šēntā",
+      "gloss": "sleep",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "שֵׁינְתָא, Onkelos on Genesis 15:12"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The construct of sleep resembles the construct of year. Only passages about sleep establish the noun here. The connection between sleeping and growing old is uncertain."
+}
