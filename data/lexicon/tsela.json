@@ -1,0 +1,515 @@
+{
+  "id": "tsela",
+  "root": "צלע",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "rib, side, side chamber, board, limp, stumbling",
+  "summary": "Yahweh God takes one of the man’s ribs and closes the flesh in its place. The word also describes the sides of the ark, rooms along the temple walls and boards lining its interior. A second word spelled with the same consonants describes Jacob limping after his hip is struck. Arabic preserves the difference between their initial consonants.",
+  "words": [
+    {
+      "lemma": "צֵלָע",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "r.cf.ab"
+      ],
+      "gloss": "rib, side, side chamber, board, door leaf",
+      "senses": [
+        {
+          "id": "rib",
+          "gloss": "rib",
+          "definition": "One of the bones in the side of the chest.",
+          "evidence": [
+            {
+              "ref": "Gen.2.21",
+              "role": "defining",
+              "note": "God takes one from the sleeping man's body and closes up the opening with flesh."
+            },
+            {
+              "ref": "Gen.2.22",
+              "role": "defining",
+              "note": "The same rib is what God builds into a woman."
+            }
+          ],
+          "cognate_ids": [
+            "akk-rib",
+            "ar-rib",
+            "uga-rib",
+            "imp-rib",
+            "jew-rib",
+            "syr-rib",
+            "mand-rib",
+            "meh-rib",
+            "jib-rib",
+            "soq-rib"
+          ],
+          "kin": [
+            "aram-rib"
+          ]
+        },
+        {
+          "id": "side",
+          "gloss": "side, flank",
+          "definition": "A lateral face of an object or structure, a hillside, or the space beside someone.",
+          "evidence": [
+            {
+              "ref": "Exo.25.12",
+              "role": "defining",
+              "note": "The ark has two rings on one side and two on the other."
+            },
+            {
+              "ref": "Exo.26.35",
+              "role": "defining",
+              "note": "The south and north sides of the dwelling are distinguished by their furnishings."
+            },
+            {
+              "ref": "2Sa.16.13",
+              "role": "defining",
+              "note": "Shimei walks along the side of the mountain opposite David."
+            },
+            {
+              "ref": "Job.18.12",
+              "role": "defining",
+              "note": "Disaster is ready at the wicked man's side."
+            }
+          ],
+          "cognate_ids": [
+            "akk-rib",
+            "ar-rib"
+          ]
+        },
+        {
+          "id": "chamber",
+          "gloss": "side chamber",
+          "definition": "A room added along an outside wall of the temple.",
+          "evidence": [
+            {
+              "ref": "1Ki.6.5",
+              "role": "defining",
+              "note": "Solomon builds around the outer walls of the main room and inner sanctuary."
+            },
+            {
+              "ref": "1Ki.6.8",
+              "role": "defining",
+              "note": "A door and stairs provide access to the chambers on successive levels."
+            },
+            {
+              "ref": "Ezk.41.5",
+              "role": "defining",
+              "note": "The measurement of the house wall is followed by the width of the rooms around it."
+            }
+          ],
+          "cognate_ids": [
+            "akk-rib"
+          ]
+        },
+        {
+          "id": "board",
+          "gloss": "board, plank, timber",
+          "definition": "One of the wooden pieces that line or support a building.",
+          "evidence": [
+            {
+              "ref": "1Ki.6.15",
+              "role": "defining",
+              "note": "Cedar boards line the interior walls and cypress boards cover the floor."
+            },
+            {
+              "ref": "1Ki.6.16",
+              "role": "defining",
+              "note": "Cedar boards enclose the inner sanctuary at the back of the house."
+            },
+            {
+              "ref": "1Ki.7.3",
+              "role": "defining",
+              "note": "The cedar roofing lies above the timbers carried on pillars."
+            }
+          ]
+        },
+        {
+          "id": "leaf",
+          "gloss": "door leaf",
+          "definition": "One of the folding sections of a door.",
+          "evidence": [
+            {
+              "ref": "1Ki.6.34",
+              "role": "defining",
+              "note": "Each cypress door is made of two folding parts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲלַע",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "xp.ag.ae"
+      ],
+      "gloss": "rib",
+      "senses": [
+        {
+          "id": "aram-rib",
+          "gloss": "rib",
+          "definition": "A rib between the teeth of a beast feeding on flesh.",
+          "evidence": [
+            {
+              "ref": "Dan.7.5",
+              "role": "defining",
+              "note": "The bear-like beast holds three ribs in its mouth before it is told to devour more flesh."
+            }
+          ],
+          "cognate_ids": [
+            "akk-rib",
+            "ar-rib",
+            "uga-rib",
+            "imp-rib",
+            "jew-rib",
+            "syr-rib",
+            "mand-rib",
+            "meh-rib",
+            "jib-rib",
+            "soq-rib"
+          ],
+          "kin": [
+            "rib"
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "עלע"
+    },
+    {
+      "lemma": "צָלַע",
+      "pos": "verb",
+      "bdb": [
+        "r.cg.aa"
+      ],
+      "gloss": "limp, be lame",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "limp, be lame",
+          "senses": [
+            {
+              "id": "limp",
+              "gloss": "limp, be lame",
+              "definition": "To walk unevenly because one leg or hip cannot bear weight normally. The participle can designate those who need gathering and rescue.",
+              "evidence": [
+                {
+                  "ref": "Gen.32.32",
+                  "role": "defining",
+                  "note": "Jacob limps because of his injured hip as he passes Penuel."
+                },
+                {
+                  "ref": "Mic.4.6",
+                  "role": "defining",
+                  "note": "Yahweh gathers the lame with those driven away."
+                },
+                {
+                  "ref": "Mic.4.7",
+                  "role": "defining",
+                  "note": "Those who limped will become a remnant."
+                },
+                {
+                  "ref": "Zep.3.19",
+                  "role": "defining",
+                  "note": "Saving the lame is paired with gathering those cast out."
+                }
+              ],
+              "cognate_ids": [
+                "ar-limp",
+                "arc-limp"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צֶלַע",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "r.cg.ab"
+      ],
+      "gloss": "stumbling, fall",
+      "senses": [
+        {
+          "id": "stumble",
+          "gloss": "stumbling, impending fall",
+          "definition": "A loss of footing, used of a setback that leaves a person exposed to enemies.",
+          "evidence": [
+            {
+              "ref": "Jer.20.10",
+              "role": "defining",
+              "note": "Jeremiah’s acquaintances watch for his fall, hoping to prevail against him."
+            },
+            {
+              "ref": "Psa.35.15",
+              "role": "defining",
+              "note": "The speaker’s enemies gather and rejoice at his stumbling."
+            },
+            {
+              "ref": "Psa.38.18",
+              "role": "defining",
+              "note": "The speaker feels ready to fall and speaks of unremitting pain."
+            }
+          ],
+          "kin": [
+            "limp"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צֵלַע",
+      "pos": "name",
+      "bdb": [
+        "r.cf.ac"
+      ],
+      "gloss": "Zelah",
+      "senses": [
+        {
+          "id": "zelah",
+          "gloss": "Zelah",
+          "definition": "A town in Benjamin where the family of Saul had its tomb.",
+          "evidence": [
+            {
+              "ref": "Jos.18.28",
+              "role": "defining",
+              "note": "The town appears in the allotment of Benjamin."
+            },
+            {
+              "ref": "2Sa.21.14",
+              "role": "defining",
+              "note": "Saul and Jonathan are buried there in the tomb of Kish."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-rib",
+      "lang": "akk",
+      "form": "ṣēlu",
+      "translit": "ṣēlu",
+      "gloss": "rib, side, wing of a house",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000019550"
+        }
+      ]
+    },
+    {
+      "id": "ar-rib",
+      "lang": "ar",
+      "form": "ضِلَعٌ",
+      "translit": "ḍilaʿ",
+      "gloss": "rib, side of a polygon, piece of wood",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n25963, p. 1800"
+        }
+      ]
+    },
+    {
+      "id": "uga-rib",
+      "lang": "uga",
+      "form": "𐎕𐎍𐎓",
+      "translit": "ṣlʿ",
+      "gloss": "rib of a bull",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "ṣlʕ, KTU 4.247:16"
+        }
+      ]
+    },
+    {
+      "id": "imp-rib",
+      "lang": "arc",
+      "form": "עלעי",
+      "translit": "ʿlʿy",
+      "gloss": "Imperial Aramaic ribs of",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ˁlˁ, ˁlˁˀ noun, Ahiqar, TAD C1.1 line 90"
+        }
+      ]
+    },
+    {
+      "id": "jew-rib",
+      "lang": "arc",
+      "form": "עִלְעָא",
+      "translit": "ʿilʿā",
+      "gloss": "Jewish Aramaic rib",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ˁlˁ, ˁlˁˀ noun, Targum Onkelos Genesis 2:21"
+        }
+      ]
+    },
+    {
+      "id": "syr-rib",
+      "lang": "syc",
+      "form": "ܐܠܥܐ",
+      "translit": "ʾelʿā",
+      "gloss": "rib",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ˁlˁ, ˁlˁˀ noun, Peshitta Genesis 2:21"
+        }
+      ]
+    },
+    {
+      "id": "mand-rib",
+      "lang": "arc",
+      "form": "ʿila",
+      "translit": "ʿila",
+      "gloss": "Mandaic rib",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ˁlˁ, ˁlˁˀ noun, MandAmulet 17:V54"
+        }
+      ]
+    },
+    {
+      "id": "meh-rib",
+      "lang": "sem",
+      "form": "ẑālaʿ",
+      "translit": "ẑālaʿ",
+      "gloss": "Mehri rib",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.1.12, Rib, SED I no. 272"
+        }
+      ]
+    },
+    {
+      "id": "jib-rib",
+      "lang": "sem",
+      "form": "ẓ̂alʿ",
+      "translit": "ẓ̂alʿ",
+      "gloss": "Jibbali rib",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.1.12, Rib, SED I no. 272"
+        }
+      ]
+    },
+    {
+      "id": "soq-rib",
+      "lang": "sem",
+      "form": "ẓ̂alḥ",
+      "translit": "ẓ̂alḥ",
+      "gloss": "Soqotri rib",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ́",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.1.12, Rib, SED I no. 272"
+        }
+      ]
+    },
+    {
+      "id": "ar-limp",
+      "lang": "ar",
+      "form": "ظَلَعَ",
+      "translit": "ẓalaʿa",
+      "gloss": "limp, be slightly lame",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṯ̣",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n27611, p. 1917"
+        }
+      ]
+    },
+    {
+      "id": "arc-limp",
+      "lang": "arc",
+      "form": "אַטְלַע",
+      "translit": "ʾaṭlaʿ",
+      "gloss": "limp, halt",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṯ̣",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "I00519, טְלַע I, afel, Targum Onkelos Genesis 32:32"
+        }
+      ]
+    }
+  ],
+  "note": "Arabic ḍ in the rib word and ẓ in the limping verb point to two older roots. The shared spelling of Zelah does not establish the town name’s meaning. The personal names Zelophehad, Zalaph and Zelek and the place name Zelzah are grouped nearby in the catalogue, but the passages give no derivation from either word."
+}
