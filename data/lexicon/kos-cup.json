@@ -1,0 +1,126 @@
+{
+  "id": "kos-cup",
+  "root": "כוס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "vessel",
+    "allotment"
+  ],
+  "gloss": "cup, allotted drink",
+  "summary": "The drinking vessel can stand for what is served in it. A cup supplied by God becomes an image for a person’s allotted experience, including blessing or judgment.",
+  "words": [
+    {
+      "lemma": "כּוֹס",
+      "bdb": [
+        "k.aw.am"
+      ],
+      "pos": "noun",
+      "gloss": "cup, allotted drink",
+      "senses": [
+        {
+          "gloss": "drinking vessel or its contents",
+          "definition": "Pharaoh’s cup is placed in his hand. The poor man’s lamb drinks from his cup.",
+          "evidence": [
+            {
+              "ref": "Gen.40.11",
+              "to": "Gen.40.13",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.12.3"
+            }
+          ],
+          "id": "cup"
+        },
+        {
+          "gloss": "allotted experience",
+          "definition": "Yahweh is the speaker’s portion and cup in Psalm 16. Psalm 11 pictures the wicked drinking their allotted judgment, and Isaiah pictures Jerusalem draining the cup of Yahweh’s wrath.",
+          "evidence": [
+            {
+              "ref": "Psa.16.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.11.6"
+            },
+            {
+              "ref": "Psa.23.5"
+            },
+            {
+              "ref": "Isa.51.17"
+            }
+          ],
+          "id": "lot"
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "syc-kasa"
+      ]
+    },
+    {
+      "lemma": "כָּסָא",
+      "pos": "noun",
+      "gloss": "cup",
+      "senses": [
+        {
+          "gloss": "cup to drink from",
+          "definition": "Jesus gives the disciples a cup and tells them to drink from it. Paul describes the cup of blessing shared by the assembly.",
+          "evidence": [
+            {
+              "ref": "Mat.26.27",
+              "role": "defining"
+            },
+            {
+              "ref": "1Co.10.16"
+            }
+          ],
+          "kin": [
+            "cup"
+          ]
+        },
+        {
+          "gloss": "appointed suffering",
+          "definition": "Jesus asks whether the cup may pass from him, and later speaks of drinking the cup his Father has given him.",
+          "evidence": [
+            {
+              "ref": "Mat.26.39",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.18.11"
+            }
+          ],
+          "kin": [
+            "lot"
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "cognate_ids": [
+        "syc-kasa"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-kasa",
+      "lang": "syc",
+      "form": "ܟܣܐ",
+      "translit": "kāsā",
+      "gloss": "cup",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1555, root 916, Matthew 26:27 and John 18:11"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The bird called כּוֹס in Leviticus 11:17 and Psalm 102:7 has a separate sense and no established derivation from the drinking vessel. No derivation from כון is assumed by the noun key כוס."
+}
