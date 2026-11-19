@@ -1,0 +1,143 @@
+{
+  "id": "anaq",
+  "root": "אנק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "voice",
+    "distress"
+  ],
+  "gloss": "groan, sigh",
+  "summary": "The verb can express bodily pain or distress at what someone witnesses. In Psalm 12 the groan of the needy is heard even before any words are reported.",
+  "words": [
+    {
+      "lemma": "אָנַק",
+      "bdb": [
+        "a.en.aa"
+      ],
+      "pos": "verb",
+      "gloss": "groan",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "groan in pain",
+          "senses": [
+            {
+              "gloss": "groan in pain",
+              "definition": "Jeremiah and Ezekiel describe the groaning of wounded people in the midst of slaughter.",
+              "evidence": [
+                {
+                  "ref": "Jer.51.52",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.26.15"
+                }
+              ],
+              "id": "groan"
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "sigh or groan in distress",
+          "senses": [
+            {
+              "gloss": "sigh or groan in distress",
+              "definition": "Ezekiel sees people marked because they groan over Jerusalem’s abominations. He himself is commanded to groan quietly in bereavement.",
+              "evidence": [
+                {
+                  "ref": "Ezk.9.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.24.17"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-anaq"
+      ]
+    },
+    {
+      "lemma": "אֲנָקָה",
+      "bdb": [
+        "a.en.ab"
+      ],
+      "pos": "noun",
+      "gloss": "groaning, sigh",
+      "senses": [
+        {
+          "gloss": "groan of distress",
+          "definition": "Yahweh declares that he will arise because of the devastation of the poor and the groaning of the needy. Two other psalms ask him to hear prisoners groan.",
+          "evidence": [
+            {
+              "ref": "Psa.12.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.79.11"
+            },
+            {
+              "ref": "Psa.102.21"
+            },
+            {
+              "ref": "Mal.2.13"
+            }
+          ],
+          "kin": [
+            "groan"
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-anaq"
+      ]
+    },
+    {
+      "lemma": "אֲנָקָה",
+      "bdb": [
+        "a.en.ac"
+      ],
+      "pos": "noun",
+      "gloss": "a creeping animal, possibly the gecko",
+      "senses": [
+        {
+          "gloss": "a creeping animal, possibly the gecko",
+          "definition": "The creature occurs in a list of small land animals whose carcasses convey uncleanness. Its precise species is uncertain.",
+          "evidence": [
+            {
+              "ref": "Lev.11.29",
+              "to": "Lev.11.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-anaq",
+      "lang": "arc",
+      "form": "אֲנַק",
+      "translit": "ʾănaq",
+      "gloss": "press, choke, grieve",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "אֲנַק, pael passive participle in Targum Ezekiel 9:4"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic participle expresses the grieved condition in the Ezekiel passage. The Levitical animal may have been named for a sound, but Leviticus supplies no such explanation."
+}
