@@ -1,0 +1,128 @@
+{
+  "id": "luz",
+  "root": "לוז",
+  "homograph": 1,
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "turn aside, be devious",
+  "summary": "Proverbs tells the pupil to keep sound judgement in sight and to put crooked speech far away. The verb describes both something slipping from view and someone straying from an upright path.",
+  "words": [
+    {
+      "lemma": "לוּז",
+      "pos": "verb",
+      "bdb": [
+        "l.av.aa"
+      ],
+      "gloss": "depart, be crooked",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "depart from sight",
+          "senses": [
+            {
+              "id": "depart",
+              "gloss": "depart from sight",
+              "definition": "Pass out of sight or attention.",
+              "evidence": [
+                {
+                  "ref": "Pro.3.21",
+                  "role": "defining",
+                  "note": "The pupil is to keep sound judgement and discretion before his eyes."
+                }
+              ],
+              "cognate_ids": []
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be crooked or devious",
+          "senses": [
+            {
+              "id": "crooked",
+              "gloss": "be crooked or devious",
+              "definition": "Turn away from an upright course in conduct.",
+              "evidence": [
+                {
+                  "ref": "Pro.2.15",
+                  "role": "defining",
+                  "note": "Crooked paths characterise those who leave upright ways."
+                },
+                {
+                  "ref": "Pro.3.32",
+                  "role": "defining",
+                  "note": "The devious person is contrasted with those whom Yahweh takes into his counsel."
+                },
+                {
+                  "ref": "Pro.14.2",
+                  "role": "defining",
+                  "note": "Crooked conduct expresses contempt for Yahweh."
+                },
+                {
+                  "ref": "Isa.30.12",
+                  "role": "defining",
+                  "note": "Oppression and crooked dealing have become objects of trust."
+                }
+              ],
+              "cognate_ids": [],
+              "kin": [
+                "speech"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "let slip from sight",
+          "senses": [
+            {
+              "id": "let-depart",
+              "gloss": "let slip from sight",
+              "definition": "Allow something to pass from view.",
+              "evidence": [
+                {
+                  "ref": "Pro.4.21",
+                  "role": "defining",
+                  "note": "The pupil is told to keep the words before his eyes and within his heart."
+                }
+              ],
+              "cognate_ids": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לָזוּת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "l.av.ab",
+        "l.bd.ad"
+      ],
+      "gloss": "crooked speech",
+      "senses": [
+        {
+          "id": "speech",
+          "gloss": "crooked speech",
+          "definition": "Deviousness in what a person says.",
+          "evidence": [
+            {
+              "ref": "Pro.4.24",
+              "role": "defining",
+              "note": "The crookedness of the lips is paired with perversity of the mouth."
+            }
+          ],
+          "cognate_ids": [],
+          "kin": [
+            "crooked"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The sound of Arabic lāḏa invites comparison, but Lane’s usual sense is seeking refuge or protection (p. 2680). That meaning gives little support for the Hebrew ethical sense."
+}

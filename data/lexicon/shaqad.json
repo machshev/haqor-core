@@ -1,0 +1,119 @@
+{
+  "id": "shaqad",
+  "root": "שקד",
+  "homograph": 1,
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "stay awake, keep watch",
+  "summary": "A guard keeps vigil over a city and a leopard watches its prey. Jeremiah applies the verb to Yahweh’s resolve to carry out his word, whether to uproot or to plant.",
+  "words": [
+    {
+      "lemma": "שָׁקַד",
+      "pos": "verb",
+      "bdb": [
+        "v.fn.aa"
+      ],
+      "gloss": "stay awake, keep watch",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "stay awake, keep watch, watch over, give sustained attention",
+          "senses": [
+            {
+              "id": "vigil",
+              "gloss": "stay awake, keep watch",
+              "definition": "Remain awake or attend closely to a place, person or thing.",
+              "evidence": [
+                {
+                  "ref": "Psa.102.8",
+                  "role": "defining",
+                  "note": "The psalmist lies awake like a lone bird on a rooftop."
+                },
+                {
+                  "ref": "Psa.127.1",
+                  "role": "defining",
+                  "note": "The city watchman stays awake through his watch."
+                },
+                {
+                  "ref": "Jer.5.6",
+                  "role": "defining",
+                  "note": "A leopard watches the cities for anyone coming out."
+                },
+                {
+                  "ref": "Pro.8.34",
+                  "role": "defining",
+                  "note": "The listener waits at Wisdom’s doors every day."
+                },
+                {
+                  "ref": "Ezr.8.29",
+                  "role": "defining",
+                  "note": "Those entrusted with the offerings must keep watch until they weigh them out."
+                }
+              ],
+              "cognate_ids": [
+                "arc-watch"
+              ]
+            },
+            {
+              "id": "purpose",
+              "gloss": "watch over, give sustained attention",
+              "definition": "Attend to a purpose so as to bring it about.",
+              "evidence": [
+                {
+                  "ref": "Jer.1.12",
+                  "role": "defining",
+                  "note": "Yahweh is watching over his word to perform it, echoing the almond branch in the preceding verse."
+                },
+                {
+                  "ref": "Jer.31.28",
+                  "role": "defining",
+                  "note": "The same vigilance attends the acts of uprooting and planting."
+                },
+                {
+                  "ref": "Jer.44.27",
+                  "role": "defining",
+                  "note": "Yahweh watches over the Judeans in Egypt to bring the announced harm."
+                },
+                {
+                  "ref": "Dan.9.14",
+                  "role": "defining",
+                  "note": "Daniel recalls that Yahweh watched over the threatened disaster and brought it about."
+                },
+                {
+                  "ref": "Isa.29.20",
+                  "role": "defining",
+                  "note": "People intent on wrongdoing are among those to be cut off."
+                }
+              ],
+              "cognate_ids": [
+                "arc-watch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-watch",
+      "lang": "arc",
+      "form": "שְׁקַד",
+      "translit": "šəqad",
+      "gloss": "watch, attend carefully",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "U01828, Targum Ps 102:8 and Prov 8:34"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Job.21.32 also uses the verb at a burial mound. The identity of the one keeping watch there is uncertain."
+}
