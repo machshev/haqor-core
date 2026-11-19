@@ -1,0 +1,412 @@
+{
+  "id": "shor",
+  "root": "שרר",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "navel, umbilical cord, muscle, stubbornness, bracelet, chain",
+  "summary": "Ezekiel pictures Jerusalem as an abandoned newborn whose cord still needs cutting. The Song compares the navel to a round bowl. The same consonants occur in words for bodily strength and for persisting in one’s own plans. Exodus describes gold chains worked like cords.",
+  "words": [
+    {
+      "lemma": "שֹׁר",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "v.ge.ab",
+        "v.fw.ae"
+      ],
+      "gloss": "navel, umbilical cord",
+      "senses": [
+        {
+          "id": "cord",
+          "gloss": "umbilical cord",
+          "definition": "The cord cut after a child is born.",
+          "evidence": [
+            {
+              "ref": "Ezk.16.4",
+              "role": "defining",
+              "note": "Cutting the cord is the first act of care the newborn lacked."
+            }
+          ],
+          "cognate_ids": [
+            "ar-cord",
+            "arc-cord",
+            "syr-navel"
+          ]
+        },
+        {
+          "id": "navel",
+          "gloss": "navel",
+          "definition": "The mark on the belly where the cord was attached.",
+          "evidence": [
+            {
+              "ref": "Sng.7.3",
+              "role": "defining",
+              "note": "The beloved’s navel is compared to a round bowl before the description moves to her belly."
+            },
+            {
+              "ref": "Pro.3.8",
+              "role": "defining",
+              "note": "Healing for the navel is paired with refreshment for the bones."
+            }
+          ],
+          "cognate_ids": [
+            "uga-navel",
+            "ar-navel",
+            "syr-navel",
+            "mand-navel",
+            "msa-navel"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁרִיר",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "v.ge.ae"
+      ],
+      "gloss": "muscle, sinew",
+      "senses": [
+        {
+          "id": "muscle",
+          "gloss": "muscles of the belly",
+          "definition": "The parts of the belly in which an animal’s strength is felt.",
+          "evidence": [
+            {
+              "ref": "Job.40.16",
+              "role": "defining",
+              "note": "The power of Behemoth’s belly muscles parallels the strength in its loins."
+            }
+          ],
+          "cognate_ids": [
+            "arc-firm"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁרִירוּת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "v.ge.af"
+      ],
+      "gloss": "stubbornness, self-will",
+      "senses": [
+        {
+          "id": "stubbornness",
+          "gloss": "stubbornness of heart",
+          "definition": "Persistence in one’s own purpose despite an instruction or warning.",
+          "evidence": [
+            {
+              "ref": "Deu.29.18",
+              "role": "defining",
+              "note": "The hearer of the curse expects peace while continuing to follow his own heart."
+            },
+            {
+              "ref": "Jer.7.24",
+              "role": "defining",
+              "note": "The people refuse to listen and follow the counsels of their own hearts."
+            },
+            {
+              "ref": "Jer.18.12",
+              "role": "defining",
+              "note": "The speakers explain their resolve by saying that they will carry out their own plans."
+            },
+            {
+              "ref": "Psa.81.13",
+              "role": "defining",
+              "note": "Walking in their own counsels explains what it means to be given over to their stubbornness."
+            }
+          ],
+          "cognate_ids": [
+            "arc-firm"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׁרָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "v.ge.ac"
+      ],
+      "gloss": "bracelet",
+      "senses": [
+        {
+          "id": "bracelet",
+          "gloss": "bracelet",
+          "definition": "An ornament listed among the finery of the daughters of Zion.",
+          "evidence": [
+            {
+              "ref": "Isa.3.19",
+              "role": "defining",
+              "note": "The plural occurs between pendants and veils. The list establishes its use as adornment but gives no description of its shape."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁרְשְׁרָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "v.ge.ah"
+      ],
+      "gloss": "chain",
+      "senses": [
+        {
+          "id": "chain",
+          "gloss": "ornamental chain",
+          "definition": "A length of metalwork used to join or decorate objects.",
+          "evidence": [
+            {
+              "ref": "Exo.28.14",
+              "role": "defining",
+              "note": "Two chains of pure gold are worked like cords and fastened to settings."
+            },
+            {
+              "ref": "Exo.39.15",
+              "role": "defining",
+              "note": "The completed breastpiece has twisted chains of pure gold."
+            },
+            {
+              "ref": "2Ch.3.16",
+              "role": "defining",
+              "note": "Chains at the tops of the pillars carry one hundred pomegranate ornaments."
+            }
+          ],
+          "cognate_ids": [
+            "akk-chain",
+            "akk-link",
+            "akk-chains"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁרְשָׁה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "v.gf.ae"
+      ],
+      "gloss": "chain",
+      "senses": [
+        {
+          "id": "short-chain",
+          "gloss": "chain",
+          "definition": "A shorter form of the word for the gold chains of the breastpiece.",
+          "evidence": [
+            {
+              "ref": "Exo.28.22",
+              "role": "defining",
+              "note": "The instructions describe the same material and cordlike workmanship as the fuller form in Exodus 39:15."
+            }
+          ],
+          "cognate_ids": [
+            "akk-chain",
+            "akk-link",
+            "akk-chains"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-cord",
+      "lang": "ar",
+      "form": "سُرٌّ",
+      "translit": "surr",
+      "gloss": "umbilical cord",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n19418, p. 1338"
+        }
+      ]
+    },
+    {
+      "id": "ar-navel",
+      "lang": "ar",
+      "form": "سُرَّةٌ",
+      "translit": "surra",
+      "gloss": "navel",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n19420, p. 1338"
+        }
+      ]
+    },
+    {
+      "id": "uga-navel",
+      "lang": "uga",
+      "form": "𐎌𐎗",
+      "translit": "šr",
+      "gloss": "navel",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "§2, šr, note 121, KTU 1.114:30"
+        }
+      ]
+    },
+    {
+      "id": "arc-cord",
+      "lang": "arc",
+      "form": "שורא",
+      "translit": "šūrrā",
+      "gloss": "Jewish Babylonian Aramaic umbilical cord",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "§2, šr, citing DJBA p. 1124"
+        }
+      ]
+    },
+    {
+      "id": "syr-navel",
+      "lang": "syc",
+      "form": "ܫܪܐ",
+      "translit": "šerrā",
+      "gloss": "navel, umbilical cord",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.1.14, p. 217, SED I no. 254"
+        }
+      ]
+    },
+    {
+      "id": "mand-navel",
+      "lang": "sem",
+      "form": "šura",
+      "translit": "šura",
+      "gloss": "Mandaic navel",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "šura 2, MG 105:5, Gy 83:20"
+        }
+      ]
+    },
+    {
+      "id": "msa-navel",
+      "lang": "sem",
+      "form": "šrʔ",
+      "translit": "šrʔ",
+      "gloss": "Modern South Arabian navel",
+      "relation": "possible",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "§2, šr, note 122, citing Leslau p. 236"
+        }
+      ]
+    },
+    {
+      "id": "arc-firm",
+      "lang": "arc",
+      "form": "שָׁרִיר",
+      "translit": "šārīr",
+      "gloss": "strong, firm",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "U01987, Shabbat 145b"
+        }
+      ]
+    },
+    {
+      "id": "akk-chain",
+      "lang": "akk",
+      "form": "šeršerratu",
+      "translit": "šeršerratu",
+      "gloss": "chain, string of beads",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000018580"
+        }
+      ]
+    },
+    {
+      "id": "akk-link",
+      "lang": "akk",
+      "form": "šeršerru",
+      "translit": "šeršerru",
+      "gloss": "link in a chain",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000147730"
+        }
+      ]
+    },
+    {
+      "id": "akk-chains",
+      "lang": "akk",
+      "form": "šuršurrātu",
+      "translit": "šuršurrātu",
+      "gloss": "chain",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tcma x000024510"
+        }
+      ]
+    }
+  ],
+  "note": "The evidence establishes separate comparisons for navel, firmness and chain. Their descent from a single root remains uncertain. The Aramaic adjective helps explain the idea of firmness, while the Hebrew passages establish the adverse sense of self-will. The pointer שֵׁרָשׁ has no independent occurrence here."
+}
