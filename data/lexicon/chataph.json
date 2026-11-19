@@ -1,0 +1,189 @@
+{
+  "id": "chataph",
+  "root": "חטפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "violence",
+    "animals"
+  ],
+  "gloss": "seize, snatch",
+  "summary": "The act is sudden and takes its object out of another’s control. Psalm 10 develops the image through a lurking lion and a net, applying it to predation on the poor.",
+  "words": [
+    {
+      "lemma": "חָטַף",
+      "bdb": [
+        "h.ca.aa"
+      ],
+      "pos": "verb",
+      "gloss": "seize, snatch",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "seize suddenly",
+          "senses": [
+            {
+              "gloss": "seize suddenly",
+              "definition": "Psalm 10 twice uses this verb as the predator lies in wait for an afflicted person and draws him into a net. In Judges the Benjaminites are instructed to seize women as they dance at Shiloh.",
+              "evidence": [
+                {
+                  "ref": "Psa.10.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.21.21"
+                }
+              ],
+              "id": "snatch"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-khatifa"
+      ]
+    },
+    {
+      "lemma": "חְטַף",
+      "pos": "verb",
+      "gloss": "snatch, seize",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "seize or snatch away",
+          "senses": [
+            {
+              "gloss": "seize or snatch away",
+              "definition": "The wolf snatches a sheep when the hired hand flees. Jesus says no one will snatch his sheep from his hand.",
+              "evidence": [
+                {
+                  "ref": "Jhn.10.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jhn.10.28",
+                  "to": "Jhn.10.29"
+                }
+              ],
+              "kin": [
+                "snatch"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be caught up or swept away",
+          "senses": [
+            {
+              "gloss": "be caught up or swept away",
+              "definition": "Paul describes being caught up to the third heaven. During the voyage the ship is caught by the wind.",
+              "evidence": [
+                {
+                  "ref": "2Co.12.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.27.15"
+                },
+                {
+                  "ref": "1Th.4.17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "take by force",
+          "senses": [
+            {
+              "gloss": "take by force",
+              "definition": "Jesus speaks of forceful people laying hold of the kingdom. The nature of that force is disputed.",
+              "evidence": [
+                {
+                  "ref": "Mat.11.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-khatifa"
+      ]
+    },
+    {
+      "lemma": "חָטוֹפָא",
+      "pos": "adjective",
+      "gloss": "rapacious, grasping",
+      "senses": [
+        {
+          "gloss": "rapacious, grasping",
+          "definition": "Jesus depicts false prophets as ravenous wolves. Paul uses the term of people who take others’ property.",
+          "evidence": [
+            {
+              "ref": "Mat.7.15",
+              "role": "defining"
+            },
+            {
+              "ref": "1Co.5.11"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-khatifa"
+      ]
+    },
+    {
+      "lemma": "חֲטוּפְיָא",
+      "pos": "noun",
+      "gloss": "plunder, seizure",
+      "senses": [
+        {
+          "gloss": "plunder, seizure",
+          "definition": "Hebrews recalls the hearers accepting the plundering of their possessions. Jesus condemns what fills the cup on the inside.",
+          "evidence": [
+            {
+              "ref": "Heb.10.34",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.23.25"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-khatifa"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-khatifa",
+      "lang": "ar",
+      "form": "خَطِفَ",
+      "translit": "ḫaṭifa",
+      "gloss": "snatch, seize quickly",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 765, خَطِفَهُ n11013"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Psalm 10 gives the same verb twice, first for the ambusher’s purpose and then for what he does. The name Hatipha resembles a passive formation, though the family lists do not explain it."
+}
