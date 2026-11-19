@@ -1,0 +1,109 @@
+{
+  "id": "latash",
+  "root": "לטש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "tools",
+    "work"
+  ],
+  "gloss": "sharpen, work metal",
+  "summary": "The sons of Israel take their tools to be sharpened. Psalm 7 speaks of a sharpened sword, while Psalm 52 compares a deceitful tongue to a razor with a keen edge.",
+  "words": [
+    {
+      "lemma": "לָטַשׁ",
+      "bdb": [
+        "l.bm.aa"
+      ],
+      "pos": "verb",
+      "gloss": "work metal, sharpen",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "work or sharpen a metal edge",
+          "senses": [
+            {
+              "gloss": "sharpen, work metal",
+              "definition": "Israelites bring agricultural tools to a smith to have their edges sharpened. Psalm 7 uses the same verb for a sword. Job describes an enemy fixing a sharp gaze on him.",
+              "evidence": [
+                {
+                  "ref": "1Sa.13.19",
+                  "to": "1Sa.13.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.4.22"
+                },
+                {
+                  "ref": "Psa.7.13"
+                },
+                {
+                  "ref": "Job.16.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be sharpened",
+          "senses": [
+            {
+              "gloss": "be sharpened",
+              "definition": "A deceitful tongue is compared to a sharpened razor. The danger lies in what its words can do.",
+              "evidence": [
+                {
+                  "ref": "Psa.52.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-letesh"
+      ]
+    },
+    {
+      "lemma": "לְטוּשִׁם",
+      "bdb": [
+        "l.bm.ab"
+      ],
+      "pos": "name",
+      "gloss": "Letushites",
+      "senses": [
+        {
+          "gloss": "Letushites",
+          "definition": "The Letushites are named with two other groups among the descendants of Dedan, in the line of Abraham through Keturah. The genealogy gives no meaning for the name.",
+          "evidence": [
+            {
+              "ref": "Gen.25.1",
+              "to": "Gen.25.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-letesh",
+      "lang": "arc",
+      "form": "לְטֵשׁ",
+      "translit": "ləṭēš",
+      "gloss": "polish, sharpen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לְטֵשׁ, Targum Genesis 4:22 and Targum Proverbs 27:17"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The ethnic name resembles the verb but the text gives no account of its origin. The night word already belongs to layil. The creature לִילִית has a different consonantal spelling and its own Akkadian comparison."
+}
