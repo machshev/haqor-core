@@ -1,0 +1,313 @@
+{
+  "id": "lechi",
+  "root": "לחה",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "jaw, jawbone, cheek",
+  "summary": "Samson picks up a donkey’s jawbone. The same Hebrew word names the part of a living animal that takes a hook or bridle, and the side of a person’s face where tears run or a blow lands.",
+  "words": [
+    {
+      "lemma": "לְחִי",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "l.be.ab",
+        "l.bf.ad"
+      ],
+      "gloss": "jaw, cheek",
+      "senses": [
+        {
+          "id": "jaw",
+          "gloss": "jaw, jawbone",
+          "definition": "The bony part of the mouth that bears the teeth, including the bone when detached.",
+          "evidence": [
+            {
+              "ref": "Jdg.15.15",
+              "role": "defining",
+              "note": "Samson finds a fresh donkey’s jawbone and takes it in his hand."
+            },
+            {
+              "ref": "Deu.18.3",
+              "role": "defining",
+              "note": "The two jaws of an ox or sheep are included with the shoulder and stomach in the priest’s portion."
+            },
+            {
+              "ref": "Ezk.29.4",
+              "role": "defining",
+              "note": "Yahweh pictures Pharaoh as a river creature drawn out by hooks set in its jaws."
+            }
+          ],
+          "cognate_ids": [
+            "akk-jaw",
+            "uga-jaw",
+            "ar-jaw",
+            "gez-jaw",
+            "tig-jaw",
+            "meh-jaw",
+            "jib-jaw"
+          ]
+        },
+        {
+          "id": "cheek",
+          "gloss": "cheek",
+          "definition": "The outer side of the face over the jaw.",
+          "evidence": [
+            {
+              "ref": "Lam.1.2",
+              "role": "defining",
+              "note": "Jerusalem weeps through the night with tears on her cheek."
+            },
+            {
+              "ref": "1Ki.22.24",
+              "role": "defining",
+              "note": "Zedekiah strikes Micaiah on the cheek as he challenges his prophecy."
+            },
+            {
+              "ref": "Sng.1.10",
+              "role": "defining",
+              "note": "The beloved’s adorned cheeks are paired with her necklace in a description of her beauty."
+            }
+          ],
+          "cognate_ids": [
+            "akk-cheek",
+            "uga-jaw",
+            "arc-cheek",
+            "ar-cheek",
+            "gez-jaw",
+            "soq-cheek"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְחִי",
+      "pos": "name",
+      "bdb": [
+        "l.be.ac"
+      ],
+      "gloss": "Lehi",
+      "senses": [
+        {
+          "id": "place",
+          "gloss": "Lehi",
+          "definition": "A place in Judah associated with Samson’s encounter with the Philistines.",
+          "evidence": [
+            {
+              "ref": "Jdg.15.9",
+              "role": "defining",
+              "note": "The Philistines camp in Judah and spread out at Lehi."
+            },
+            {
+              "ref": "Jdg.15.17",
+              "role": "defining",
+              "note": "After throwing away the jawbone, Samson calls the place Ramath-lehi."
+            },
+            {
+              "ref": "Jdg.15.19",
+              "role": "defining",
+              "note": "The narrator locates the spring En-hakkore in Lehi."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-jaw",
+      "lang": "akk",
+      "form": "laḫû",
+      "translit": "laḫû",
+      "gloss": "jaw",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178"
+        }
+      ]
+    },
+    {
+      "id": "akk-cheek",
+      "lang": "akk",
+      "form": "lētu",
+      "translit": "lētu",
+      "gloss": "cheek",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000021460, anatomical sense"
+        },
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178"
+        }
+      ]
+    },
+    {
+      "id": "uga-jaw",
+      "lang": "uga",
+      "form": "𐎍𐎈",
+      "translit": "lḥ",
+      "gloss": "cheek, jaw",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178; lḥm, compare KTU 1.5 VI 19 and 1.17 I 28"
+        }
+      ]
+    },
+    {
+      "id": "arc-cheek",
+      "lang": "arc",
+      "form": "לחי",
+      "translit": "lḥy",
+      "gloss": "Jewish Palestinian Aramaic cheek",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178"
+        }
+      ]
+    },
+    {
+      "id": "ar-jaw",
+      "lang": "ar",
+      "form": "لَحْىٌ",
+      "translit": "laḥy",
+      "gloss": "jawbone",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3009, n43268"
+        }
+      ]
+    },
+    {
+      "id": "ar-cheek",
+      "lang": "ar",
+      "form": "لَحًا",
+      "translit": "laḥan",
+      "gloss": "cheek",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178"
+        }
+      ]
+    },
+    {
+      "id": "gez-jaw",
+      "lang": "gez",
+      "form": "መልታሕት",
+      "translit": "maltāḥt",
+      "gloss": "jaw, cheek",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "s.v. መልታሕት, maxilla, Mt 5:39 and 3 Reg 22:24"
+        }
+      ]
+    },
+    {
+      "id": "tig-jaw",
+      "lang": "sem",
+      "form": "ləḥe",
+      "translit": "ləḥe",
+      "gloss": "Tigre jaw",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178"
+        }
+      ]
+    },
+    {
+      "id": "meh-jaw",
+      "lang": "sem",
+      "form": "məlḥāw",
+      "translit": "məlḥāw",
+      "gloss": "Mehri jaw",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178"
+        }
+      ]
+    },
+    {
+      "id": "jib-jaw",
+      "lang": "sem",
+      "form": "məẑḥét",
+      "translit": "məẑḥét",
+      "gloss": "Jibbali jaw",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178"
+        }
+      ]
+    },
+    {
+      "id": "soq-cheek",
+      "lang": "sem",
+      "form": "maláḥi",
+      "translit": "maláḥi",
+      "gloss": "Soqotri cheek",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 222 §6.2.3.2, SED I no. 178"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Judges 15 plays on the shared sound of the place name and the common noun. The narrative already calls the site Lehi before Samson finds the bone and explicitly connects his act with the longer name Ramath-lehi. The ancient name of the settlement before this episode is uncertain."
+}
