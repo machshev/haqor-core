@@ -1,0 +1,90 @@
+{
+  "id": "batseq",
+  "root": "בצק",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "dough; swell",
+  "summary": "The Israelites leave Egypt carrying dough before it has risen. A verb of the same spelling describes what their feet were spared during the wilderness journey.",
+  "words": [
+    {
+      "lemma": "בָּצֵק",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "b.co.ab"
+      ],
+      "gloss": "dough",
+      "senses": [
+        {
+          "id": "dough",
+          "gloss": "dough",
+          "definition": "Flour worked into a mass for baking, whether or not it has had time to rise.",
+          "evidence": [
+            {
+              "ref": "Exo.12.34",
+              "role": "defining",
+              "note": "The Israelites lift up the dough before it has leavened."
+            },
+            {
+              "ref": "Exo.12.39",
+              "role": "defining",
+              "note": "They bake the dough as unleavened cakes because they have been hurried out."
+            },
+            {
+              "ref": "2Sa.13.8",
+              "role": "defining",
+              "note": "Tamar kneads and shapes the dough before cooking it."
+            },
+            {
+              "ref": "Jer.7.18",
+              "role": "defining",
+              "note": "The women knead dough to make cakes for the queen of heaven."
+            },
+            {
+              "ref": "Hos.7.4",
+              "role": "defining",
+              "note": "The baker leaves the kneaded dough until it rises."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בָּצֵק",
+      "pos": "verb",
+      "bdb": [
+        "b.co.aa"
+      ],
+      "gloss": "swell",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "swell",
+          "senses": [
+            {
+              "id": "swell",
+              "gloss": "swell",
+              "definition": "Become swollen, said of feet during prolonged travel.",
+              "evidence": [
+                {
+                  "ref": "Deu.8.4",
+                  "role": "defining",
+                  "note": "Moses recalls that Israel’s feet did not swell during forty years of travel."
+                },
+                {
+                  "ref": "Neh.9.21",
+                  "role": "defining",
+                  "note": "The prayer recalls the same provision alongside clothing that endured."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Rising dough offers a possible link with swollen feet. Exodus applies the noun to dough before it rises, so rising is no condition of its use. The place Bozkath is named in Jos.15.39 and 2Ki.22.1. Neither passage explains its name. Arabic baṣqa refers to slightly elevated stony ground (Lane p. 212, n2669), too distant in meaning to establish a cognate for either sense."
+}
