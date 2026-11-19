@@ -1,0 +1,211 @@
+{
+  "id": "bachan",
+  "root": "בחנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "metals",
+    "judgment"
+  ],
+  "gloss": "test, examine, assay",
+  "summary": "A refiner tests gold, and Joseph tests a story by asking for evidence. In Psalms 7 and 11 Yahweh examines the righteous and the wicked, including what is hidden in the heart.",
+  "words": [
+    {
+      "lemma": "בָּחַן",
+      "bdb": [
+        "b.bf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "examine, put to the test",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "examine, assay",
+          "senses": [
+            {
+              "gloss": "test the quality of something",
+              "definition": "A refiner tests gold. Job pictures himself coming out of the test like gold, and Jeremiah must assay the people’s conduct as a metalworker would examine metal.",
+              "evidence": [
+                {
+                  "ref": "Zec.13.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.23.10"
+                },
+                {
+                  "ref": "Jer.6.27",
+                  "to": "Jer.6.30"
+                }
+              ],
+              "id": "assay",
+              "kin": [
+                "assayer",
+                "trial"
+              ]
+            },
+            {
+              "gloss": "examine a person or a claim",
+              "definition": "Yahweh tests hearts and kidneys to discover what moves people. Malachi invites the people to test Yahweh’s promise by bringing the tithe.",
+              "evidence": [
+                {
+                  "ref": "Jer.17.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.7.10"
+                },
+                {
+                  "ref": "Psa.11.4",
+                  "to": "Psa.11.5"
+                },
+                {
+                  "ref": "Mal.3.10"
+                },
+                {
+                  "ref": "Rev.2.23"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be put to the test",
+          "senses": [
+            {
+              "gloss": "be put to the test",
+              "definition": "Joseph requires Benjamin’s presence to test his brothers and determine whether their account is true.",
+              "evidence": [
+                {
+                  "ref": "Gen.42.15",
+                  "to": "Gen.42.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be tested",
+          "senses": [
+            {
+              "gloss": "be tested",
+              "definition": "A brief, difficult line in Ezekiel’s sword oracle speaks of testing. What precisely is put to the test is uncertain.",
+              "evidence": [
+                {
+                  "ref": "Ezk.21.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-bechan"
+      ]
+    },
+    {
+      "lemma": "בֹּחַן",
+      "bdb": [
+        "b.bf.ab"
+      ],
+      "pos": "noun",
+      "gloss": "testing, trial",
+      "senses": [
+        {
+          "gloss": "a test of quality",
+          "definition": "The foundation of Zion is called a stone of testing, a costly cornerstone on which one can rely. Peter applies the cornerstone passage to Jesus.",
+          "evidence": [
+            {
+              "ref": "Isa.28.16",
+              "role": "defining"
+            },
+            {
+              "ref": "1Pe.2.6"
+            }
+          ],
+          "id": "trial",
+          "kin": [
+            "assay"
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-bechan"
+      ]
+    },
+    {
+      "lemma": "בַּחַן",
+      "bdb": [
+        "b.bf.ac"
+      ],
+      "pos": "noun",
+      "gloss": "watchtower",
+      "senses": [
+        {
+          "gloss": "watchtower",
+          "definition": "Isaiah sets the tower beside the hill and the abandoned palace in a once busy city. The precise construction and its link with testing are uncertain.",
+          "evidence": [
+            {
+              "ref": "Isa.32.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "בָּחוֹן",
+      "bdb": [
+        "b.bf.ae"
+      ],
+      "pos": "noun",
+      "gloss": "assayer, tester",
+      "senses": [
+        {
+          "gloss": "one who examines",
+          "definition": "Jeremiah is appointed to know and test the people’s way. The following description of the furnace and rejected silver supplies the comparison.",
+          "evidence": [
+            {
+              "ref": "Jer.6.27",
+              "to": "Jer.6.30",
+              "role": "defining"
+            }
+          ],
+          "id": "assayer",
+          "kin": [
+            "assay"
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-bechan"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-bechan",
+      "lang": "arc",
+      "form": "בְּחַן",
+      "translit": "bəḥan",
+      "gloss": "examine, test",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בְּחַן, Jerusalem Talmud Maaser Sheni V, 55d"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The watchtower in Isaiah 32:14 has no demonstrated link to the refiner’s test. Ezekiel 21:18 is difficult in both syntax and reference. The unpointed index headings for siege equipment have no separately assigned occurrences."
+}
