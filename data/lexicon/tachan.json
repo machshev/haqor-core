@@ -1,0 +1,323 @@
+{
+  "id": "tachan",
+  "root": "טחנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "agriculture"
+  ],
+  "gloss": "grind, pulverize; grinding, hand mill",
+  "summary": "Manna is ground for food, and Moses grinds the golden calf until it is dust. Isaiah turns the same action into an accusation against leaders who grind the faces of the poor.",
+  "words": [
+    {
+      "lemma": "טָחַן",
+      "pos": "verb",
+      "bdb": [
+        "i.aq.ab"
+      ],
+      "gloss": "grind",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "grind",
+          "senses": [
+            {
+              "id": "grind",
+              "gloss": "grind, pulverize",
+              "definition": "Reduce material to small particles by grinding, or work at a mill.",
+              "evidence": [
+                {
+                  "ref": "Num.11.8",
+                  "role": "defining",
+                  "note": "The people grind manna before cooking it."
+                },
+                {
+                  "ref": "Exo.32.20",
+                  "role": "defining",
+                  "note": "Moses grinds the burned calf until it is fine enough to scatter in water."
+                },
+                {
+                  "ref": "Deu.9.21",
+                  "role": "defining",
+                  "note": "Moses recalls grinding the calf to dust."
+                },
+                {
+                  "ref": "Isa.47.2",
+                  "role": "defining",
+                  "note": "Daughter Babylon is told to take millstones and grind flour."
+                },
+                {
+                  "ref": "Jdg.16.21",
+                  "role": "defining",
+                  "note": "Grinding in prison becomes the captive Samson’s work."
+                },
+                {
+                  "ref": "Job.31.10",
+                  "role": "defining",
+                  "note": "Job invokes the prospect of his wife grinding for another man."
+                },
+                {
+                  "ref": "Ecc.12.3",
+                  "role": "defining",
+                  "note": "The women who grind cease their work as their numbers dwindle."
+                }
+              ],
+              "cognate_ids": [
+                "akk-grind",
+                "ug-grind",
+                "arc-grind",
+                "syc-grind",
+                "ar-grind",
+                "mt-grind"
+              ]
+            },
+            {
+              "id": "oppress",
+              "gloss": "grind down, oppress",
+              "definition": "Grinding a person’s face pictures the violent treatment of the powerless.",
+              "evidence": [
+                {
+                  "ref": "Isa.3.15",
+                  "role": "defining",
+                  "note": "Yahweh calls the leaders to account for crushing his people and grinding the faces of the poor."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טְחוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "i.aq.ac"
+      ],
+      "gloss": "grinding stone",
+      "senses": [
+        {
+          "id": "grinding-load",
+          "gloss": "grinding stone",
+          "definition": "A load associated with milling, carried by young men under forced labour.",
+          "evidence": [
+            {
+              "ref": "Lam.5.13",
+              "role": "defining",
+              "note": "The young men carry the grinding load while boys stagger under wood."
+            }
+          ],
+          "cognate_ids": [
+            "mt-grinder"
+          ],
+          "kin": [
+            "grind"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טַחֲנָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "i.aq.ad"
+      ],
+      "gloss": "grinding, milling",
+      "senses": [
+        {
+          "id": "milling",
+          "gloss": "grinding, milling",
+          "definition": "The work at the mill, heard in the image of a household growing quiet.",
+          "evidence": [
+            {
+              "ref": "Ecc.12.4",
+              "role": "defining",
+              "note": "The sound of grinding sinks low as the doors are shut."
+            }
+          ],
+          "cognate_ids": [
+            "mt-milling"
+          ],
+          "kin": [
+            "grind"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טְחַן",
+      "pos": "verb",
+      "gloss": "grind",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "grind",
+          "senses": [
+            {
+              "id": "syriac-grind",
+              "gloss": "grind",
+              "definition": "Work at grinding grain.",
+              "evidence": [
+                {
+                  "ref": "Mat.24.41",
+                  "role": "defining",
+                  "note": "Two women are grinding at the mill."
+                },
+                {
+                  "ref": "Luk.17.35",
+                  "role": "defining",
+                  "note": "Two women grind together before they are separated."
+                }
+              ],
+              "cognate_ids": [
+                "syc-grind"
+              ],
+              "kin": [
+                "grind"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-grind",
+      "lang": "akk",
+      "form": "ṭênu",
+      "translit": "ṭênu",
+      "gloss": "grind into flour, pulverize",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000010880 and x000132760"
+        }
+      ]
+    },
+    {
+      "id": "ug-grind",
+      "lang": "uga",
+      "form": "ṭḥn",
+      "translit": "ṭḥn",
+      "gloss": "grind",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "s.v. ṭḥn, KTU 1.6 II 34, grinding with millstones"
+        }
+      ]
+    },
+    {
+      "id": "arc-grind",
+      "lang": "arc",
+      "form": "טְחַן",
+      "translit": "ṭəḥan",
+      "gloss": "grind",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "I00271, Targum Jdg 16:21 and Sanhedrin 96a, grinding date-stones"
+        }
+      ]
+    },
+    {
+      "id": "syc-grind",
+      "lang": "syc",
+      "form": "ܛܚܢ",
+      "translit": "ṭḥan",
+      "gloss": "grind",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1221, Mat 24:41 and Luk 17:35"
+        }
+      ]
+    },
+    {
+      "id": "ar-grind",
+      "lang": "ar",
+      "form": "طَحَنَ",
+      "translit": "ṭaḥana",
+      "gloss": "grind",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1831, n26427, wheat being ground"
+        }
+      ]
+    },
+    {
+      "id": "mt-grind",
+      "lang": "sem",
+      "form": "taħan",
+      "translit": "taħan",
+      "gloss": "grind, pound to powder",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 5200a366e36f2379750013f9"
+        }
+      ]
+    },
+    {
+      "id": "mt-grinder",
+      "lang": "sem",
+      "form": "mitħan",
+      "translit": "mitħan",
+      "gloss": "implement for grinding",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 5634aa1fa3b6338b6f3915a0"
+        }
+      ]
+    },
+    {
+      "id": "mt-milling",
+      "lang": "sem",
+      "form": "tħin",
+      "translit": "tħin",
+      "gloss": "grinding",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "Maltese lexeme 520b9bb0e36f233900000aec"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Lam.5.13 leaves the load unnamed beyond its connection with grinding. The parallel burden of wood supports a millstone, though grain for grinding has also been proposed. Geʿez ጥሕን (Dillmann col. 1217) and Sabaic ṭḥn name the product, flour. Kogan, Proto-Semitic Lexicon §9.6.1, also records the grinding verb in Mehri, Jibbali and Soqotri and an early spelling in the Ebla vocabulary, VE 656. The index groups the Hebrew words with טחח, whose plastering forms belong to טוח."
+}
