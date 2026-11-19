@@ -1,0 +1,279 @@
+{
+  "id": "cherpah",
+  "root": "חרפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "shame",
+    "seasons"
+  ],
+  "gloss": "taunt, reproach, disgrace",
+  "summary": "Reproach may be spoken against another person or borne as public shame. Psalm 15 names the harm done by repeating a reproach against a neighbour.",
+  "words": [
+    {
+      "lemma": "חָרַף",
+      "bdb": [
+        "h.fz.aa"
+      ],
+      "pos": "verb",
+      "gloss": "reproach, taunt",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "reproach",
+          "senses": [
+            {
+              "gloss": "reproach",
+              "definition": "Job holds to his integrity so his own heart will not reproach him. The psalmist seeks an answer for the person taunting him.",
+              "evidence": [
+                {
+                  "ref": "Job.27.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.119.42"
+                }
+              ],
+              "id": "taunt"
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "taunt or defy",
+          "senses": [
+            {
+              "gloss": "taunt or defy",
+              "definition": "Goliath openly defies Israel’s ranks. David describes him as defying the armies of the living God.",
+              "evidence": [
+                {
+                  "ref": "1Sa.17.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.17.36"
+                },
+                {
+                  "ref": "2Ki.19.22"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-haraf"
+      ]
+    },
+    {
+      "lemma": "חֶרְפָּה",
+      "bdb": [
+        "h.fz.ab"
+      ],
+      "pos": "noun",
+      "gloss": "reproach, disgrace",
+      "senses": [
+        {
+          "gloss": "reproach directed at a person",
+          "definition": "The person fit to dwell with Yahweh does not take up a reproach against a neighbour. David hears the taunts of those who reproach God.",
+          "evidence": [
+            {
+              "ref": "Psa.15.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.69.10"
+            }
+          ],
+          "kin": [
+            "taunt"
+          ]
+        },
+        {
+          "gloss": "disgrace or public shame",
+          "definition": "Rachel says God has taken away her reproach at the birth of her son. Jerusalem’s broken walls expose its inhabitants to disgrace.",
+          "evidence": [
+            {
+              "ref": "Gen.30.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.2.17"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-haraf"
+      ]
+    },
+    {
+      "lemma": "חֹרֶף",
+      "bdb": [
+        "h.ga.ab"
+      ],
+      "pos": "noun",
+      "gloss": "cool season, winter",
+      "senses": [
+        {
+          "gloss": "cool season, winter",
+          "definition": "Summer and winter alternate in Noah’s promise. Jeremiah places the king in the winter house beside a brazier in the ninth month. Job applies the seasonal image to the prime of his life.",
+          "evidence": [
+            {
+              "ref": "Gen.8.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.36.22"
+            },
+            {
+              "ref": "Psa.74.17"
+            },
+            {
+              "ref": "Job.29.4"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-kharif"
+      ]
+    },
+    {
+      "lemma": "חָרַף",
+      "bdb": [
+        "h.ga.ac"
+      ],
+      "pos": "verb",
+      "gloss": "spend the winter",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "winter on something",
+          "senses": [
+            {
+              "gloss": "winter on something",
+              "definition": "In Isaiah’s harvest image birds spend the summer and wild animals spend the winter on what is left.",
+              "evidence": [
+                {
+                  "ref": "Isa.18.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-kharif"
+      ]
+    },
+    {
+      "lemma": "חָרַף",
+      "bdb": [
+        "h.gb.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be designated for a man",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be pledged or assigned",
+          "senses": [
+            {
+              "gloss": "be pledged or assigned",
+              "definition": "The law concerns an enslaved woman designated for a man whose redemption has not been completed.",
+              "evidence": [
+                {
+                  "ref": "Lev.19.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲרִיפָא",
+      "pos": "adjective",
+      "gloss": "sharp, incisive",
+      "senses": [
+        {
+          "gloss": "sharp, incisive",
+          "definition": "Hebrews compares the word of God to a sword that cuts and discerns the heart.",
+          "evidence": [
+            {
+              "ref": "Heb.4.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-haraf"
+      ]
+    },
+    {
+      "lemma": "חֲרִיפָאִית",
+      "pos": "adverb",
+      "gloss": "in an instant",
+      "senses": [
+        {
+          "gloss": "in an instant",
+          "definition": "Paul describes the change at the last trumpet as happening in an instant.",
+          "evidence": [
+            {
+              "ref": "1Co.15.52",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-haraf",
+      "lang": "arc",
+      "form": "חֲרַף",
+      "translit": "ḥărap",
+      "gloss": "sharpen, revile",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲרַף, pael, Targum 1 Samuel 13:20 on sharpening and Palestinian Targum Leviticus 24:11 on reviling"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "ar-kharif",
+      "lang": "ar",
+      "form": "خَرِيفٌ",
+      "translit": "ḫarīf",
+      "gloss": "autumn or harvest season",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 726, خَرِيفٌ, dates and their season"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic comparison with ḫ concerns the season. The sense of the woman’s designation in Leviticus 19:20 and its relationship to the other verbs are uncertain. The returning family also called Jorah already has a name record."
+}
