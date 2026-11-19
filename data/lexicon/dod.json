@@ -1,0 +1,247 @@
+{
+  "id": "dod",
+  "root": "דוד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "kinship",
+    "love",
+    "vessels"
+  ],
+  "gloss": "beloved, affection, uncle",
+  "summary": "The Song uses דּוֹד for a beloved man and the plural for expressions of love. In a family genealogy or land transaction the same noun can identify an uncle. David and several other personal names share the spelling.",
+  "words": [
+    {
+      "lemma": "דּוֹד",
+      "bdb": [
+        "d.as.ab",
+        "d.an.ac"
+      ],
+      "pos": "noun",
+      "gloss": "beloved, love, uncle",
+      "senses": [
+        {
+          "gloss": "beloved, expressions of love",
+          "definition": "The woman calls the man she loves her beloved. The plural describes affection she prizes above wine.",
+          "evidence": [
+            {
+              "ref": "Sng.2.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.1.2"
+            },
+            {
+              "ref": "Sng.4.10"
+            }
+          ],
+          "cognate_ids": [
+            "akk-dadu"
+          ]
+        },
+        {
+          "gloss": "uncle",
+          "definition": "Jeremiah identifies Hanamel as the son of his uncle Shallum. The law specifies the father’s brother in describing his wife.",
+          "evidence": [
+            {
+              "ref": "Jer.32.7",
+              "to": "Jer.32.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.20.20"
+            }
+          ],
+          "id": "kinsman"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "דּוּד",
+      "bdb": [
+        "d.as.ai"
+      ],
+      "pos": "noun",
+      "gloss": "pot, basket",
+      "senses": [
+        {
+          "gloss": "cooking vessel",
+          "definition": "The servant dips his fork into a vessel containing cooking meat.",
+          "evidence": [
+            {
+              "ref": "1Sa.2.14",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ch.35.13"
+            }
+          ]
+        },
+        {
+          "gloss": "basket",
+          "definition": "Jeremiah sees baskets holding different kinds of figs. A psalm recalls hands set free from the burden of a basket.",
+          "evidence": [
+            {
+              "ref": "Jer.24.1",
+              "to": "Jer.24.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.81.7"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The texts identify a receptacle. Its connection with love or kinship is unknown."
+    },
+    {
+      "lemma": "דּוּדַי",
+      "bdb": [
+        "d.as.ah"
+      ],
+      "pos": "noun",
+      "gloss": "mandrake",
+      "senses": [
+        {
+          "gloss": "mandrake",
+          "definition": "Reuben finds the plants in the field at wheat harvest. Rachel asks Leah for some, and the Song describes their fragrance.",
+          "evidence": [
+            {
+              "ref": "Gen.30.14",
+              "to": "Gen.30.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.7.14"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "Its association with lovers fits the Song. The derivation of the plant name is uncertain."
+    },
+    {
+      "lemma": "דֹּדָה",
+      "bdb": [
+        "d.as.ac"
+      ],
+      "pos": "noun",
+      "gloss": "aunt",
+      "senses": [
+        {
+          "gloss": "aunt",
+          "definition": "The law names a father’s brother’s wife as an aunt. Jochebed is called Amram’s aunt and elsewhere identified as a daughter of Levi.",
+          "evidence": [
+            {
+              "ref": "Lev.18.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.6.20"
+            },
+            {
+              "ref": "Num.26.59"
+            }
+          ],
+          "kin": [
+            "kinsman"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "דָּדָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "uncle",
+      "senses": [
+        {
+          "gloss": "uncle",
+          "definition": "The Syriac describes Mark’s relationship to Barnabas with a kinship phrase using the word for uncle.",
+          "evidence": [
+            {
+              "ref": "Col.4.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "root": "דדא"
+    },
+    {
+      "lemma": "דוד",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "trouble, disturb",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "disturb",
+          "senses": [
+            {
+              "gloss": "disturb",
+              "definition": "Paul asks who interfered with the Galatians as they were running well.",
+              "evidence": [
+                {
+                  "ref": "Gal.5.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Col.2.16"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be disturbed",
+          "senses": [
+            {
+              "gloss": "be disturbed",
+              "definition": "Jesus tells the disciples to keep their hearts from being troubled.",
+              "evidence": [
+                {
+                  "ref": "Jhn.14.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jhn.14.27"
+                },
+                {
+                  "ref": "Mat.24.6"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "summary": "The Syriac verb shares the spelling but its sense is distinct from the Hebrew family terms."
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-dadu",
+      "lang": "akk",
+      "form": "dādu",
+      "translit": "dādu",
+      "gloss": "darling, sexual attractiveness",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000078170, dādu [darling] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The etymologies of the vessel and plant terms are uncertain. The unpointed Syriac verb of disturbance is SEDRA 663. The separate adjective 664 has no attested New Testament occurrence in the database."
+}
