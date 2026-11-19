@@ -1,0 +1,143 @@
+{
+  "id": "baad",
+  "root": "בעד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "space",
+    "prayer",
+    "exchange"
+  ],
+  "gloss": "behind, around, through, on behalf of",
+  "summary": "The preposition can mark the door behind a person, the hedge around a household or the opening someone passes through. With prayer and sacrifice it marks the person who benefits.",
+  "words": [
+    {
+      "lemma": "בַּעַד",
+      "bdb": [
+        "b.ce.ab"
+      ],
+      "pos": "preposition",
+      "gloss": "behind, around, through, on behalf of",
+      "senses": [
+        {
+          "gloss": "behind, enclosing",
+          "definition": "Yahweh shuts Noah in. Elisha tells the widow to shut the door behind herself and her sons.",
+          "evidence": [
+            {
+              "ref": "Gen.7.16",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.4.4"
+            }
+          ],
+          "cognate_ids": [
+            "ar-bauda"
+          ]
+        },
+        {
+          "gloss": "around, protecting",
+          "definition": "Job’s accuser speaks of a hedge around Job and his household. David calls Yahweh a shield around him.",
+          "evidence": [
+            {
+              "ref": "Job.1.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.3.4"
+            }
+          ]
+        },
+        {
+          "gloss": "through an opening",
+          "definition": "Rahab lowers the men through a window, and Sisera’s mother looks out through one.",
+          "evidence": [
+            {
+              "ref": "Jos.2.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.5.28"
+            }
+          ]
+        },
+        {
+          "gloss": "on behalf of",
+          "definition": "Abraham is to pray for Abimelech. On the day of atonement the priest makes atonement for himself and his household.",
+          "evidence": [
+            {
+              "ref": "Gen.20.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.16.6"
+            },
+            {
+              "ref": "Job.42.8"
+            }
+          ]
+        },
+        {
+          "gloss": "in exchange for",
+          "definition": "The accuser claims that a man will give everything he has in exchange for his life.",
+          "evidence": [
+            {
+              "ref": "Job.2.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בעַד",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "go away",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "go away",
+          "senses": [
+            {
+              "gloss": "go away",
+              "definition": "The owner of the vineyard goes away for a long time after letting it to tenants.",
+              "evidence": [
+                {
+                  "ref": "Luk.20.9",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-bauda"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bauda",
+      "lang": "ar",
+      "form": "بَعُدَ",
+      "translit": "baʿuda",
+      "gloss": "be distant, go away",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 224, بعد, form I, n2861"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic and Syriac attest distance or departure. Their bearing on the Hebrew preposition is clearest with a separating barrier. They do not explain all its uses."
+}
