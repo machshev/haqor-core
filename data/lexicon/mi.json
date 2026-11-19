@@ -1,0 +1,183 @@
+{
+  "id": "mi",
+  "root": "מי",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "questions",
+    "people",
+    "speech"
+  ],
+  "gloss": "who? whoever",
+  "summary": "The pronoun asks for someone’s identity. It can introduce a challenge, an expression of wonder or a wish. Several personal names preserve the question “Who is like God?” or “Who is like Yahweh?”",
+  "words": [
+    {
+      "lemma": "מִי",
+      "bdb": [
+        "m.bu.aa"
+      ],
+      "pos": "pronoun",
+      "gloss": "who? whoever",
+      "senses": [
+        {
+          "gloss": "who?",
+          "definition": "Isaac asks the approaching son to identify himself. David quotes those asking who will show them good.",
+          "evidence": [
+            {
+              "ref": "Gen.27.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.4.7"
+            }
+          ],
+          "cognate_ids": [
+            "phn-my"
+          ]
+        },
+        {
+          "gloss": "who can? who is like?",
+          "definition": "A question can express wonder or press a claim. Moses asks who among the gods is like Yahweh. The psalmist asks who may dwell on Yahweh’s holy mountain.",
+          "evidence": [
+            {
+              "ref": "Exo.15.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.15.1"
+            },
+            {
+              "ref": "Psa.18.32"
+            },
+            {
+              "ref": "Mic.7.18"
+            }
+          ],
+          "cognate_ids": [
+            "phn-my"
+          ]
+        },
+        {
+          "gloss": "if only someone would",
+          "definition": "The question who will give can express a wish. Israel wishes it had died in Egypt, and David longs for wings like a dove’s.",
+          "evidence": [
+            {
+              "ref": "Exo.16.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.55.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַן",
+      "bdb": [
+        "xm.aj.aa"
+      ],
+      "pos": "pronoun",
+      "gloss": "who, whoever",
+      "senses": [
+        {
+          "gloss": "who?",
+          "definition": "The officials ask who authorized the rebuilding. The Babylonian king demands to know who could deliver the three men from him.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.3.15"
+            }
+          ],
+          "cognate_ids": [
+            "phn-my"
+          ]
+        },
+        {
+          "gloss": "whoever",
+          "definition": "The royal decree describes what will happen to anyone who fails to bow.",
+          "evidence": [
+            {
+              "ref": "Dan.3.6",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "phn-my"
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "מַן",
+      "bdb": [],
+      "pos": "pronoun",
+      "gloss": "whoever",
+      "senses": [
+        {
+          "gloss": "whoever",
+          "definition": "Jesus speaks of whoever wishes to follow him or to save his life.",
+          "evidence": [
+            {
+              "ref": "Mat.16.24",
+              "to": "Mat.16.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "phn-my"
+      ]
+    },
+    {
+      "lemma": "מַנוּ",
+      "bdb": [],
+      "pos": "pronoun",
+      "gloss": "who?",
+      "senses": [
+        {
+          "gloss": "who?",
+          "definition": "Jesus asks who people say he is, then puts the question directly to his disciples.",
+          "evidence": [
+            {
+              "ref": "Mat.16.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.16.15"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "phn-my"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-my",
+      "lang": "phn",
+      "form": "מי",
+      "translit": "my",
+      "gloss": "who? whoever",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 279–280, MY I, Poenulus 1010 and KAI 24.11–13"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Hebrew interrogative has no established derivation from a verb. The Aramaic and Syriac forms with final nun are distinct from the preposition meaning from. Michal’s derivation is uncertain."
+}
