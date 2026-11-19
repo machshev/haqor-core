@@ -6,8 +6,8 @@
   "tags": [
     "animals"
   ],
-  "gloss": "moth",
-  "summary": "Isaiah and Job describe the damage a moth does to a garment. Hosea uses that slow destruction to describe what Ephraim faces.",
+  "gloss": "moth, waste away",
+  "summary": "Isaiah and Job describe the damage a moth does to a garment. Hosea uses that slow destruction to describe what Ephraim faces. The verb describes a sufferer whose eyes and bones waste away.",
   "words": [
     {
       "lemma": "עָשׁ",
@@ -64,6 +64,43 @@
             "akk-moth",
             "ar-moth",
             "syc-moth"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָשֵׁשׁ",
+      "bdb": [
+        "p.gf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "waste away, grow weak",
+      "summary": "Grief takes its toll on the body. Its link with the noun for the insect is uncertain.",
+      "cognate_ids": [
+        "ar-ghaththa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "waste away",
+          "senses": [
+            {
+              "gloss": "waste away under distress",
+              "definition": "Lose strength or vitality under prolonged distress. The sufferer speaks first of an eye growing weak with grief, then of failing strength and wasting bones.",
+              "evidence": [
+                {
+                  "ref": "Psa.6.8",
+                  "role": "defining",
+                  "note": "The preceding verse describes the speaker weeping through the night."
+                },
+                {
+                  "ref": "Psa.31.10",
+                  "to": "Psa.31.11",
+                  "role": "defining",
+                  "note": "The same verb applies first to the eye and then to the bones, beside the failing of strength."
+                }
+              ]
+            }
           ]
         }
       ]
@@ -131,7 +168,27 @@
           "locator": "p. 213, §5.6.5, SED II no. 45"
         }
       ]
+    },
+    {
+      "id": "ar-ghaththa",
+      "lang": "ar",
+      "form": "غَثَّ",
+      "translit": "ġaṯṯa",
+      "gloss": "become lean or weak",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ",
+        "ש": "ṯ"
+      },
+      "note": "The sense of bodily decline fits the verb. The initial consonant differs from that of the Arabic word for moth.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2229, art. غث, form I (n31441)",
+          "note": "Said of flesh becoming lean and of a sheep or goat becoming weak."
+        }
+      ]
     }
   ],
-  "note": "Job 9:9 names a constellation alongside Orion and the Pleiades. The Aramaic grass in Daniel 4–5 belongs to a separate word. In Matthew 6:19 the Peshitta uses a different Syriac word for moth, ܣܣܐ."
+  "note": "Job 9:9 names a constellation alongside Orion and the Pleiades. The Aramaic grass in Daniel 4–5 belongs to a separate word. In Matthew 6:19 the Peshitta uses a different Syriac word for moth, ܣܣܐ. The Arabic comparison for the verb would distinguish its initial consonant from that of the moth. The Hebrew contexts establish wasting away but cannot decide the historical relationship."
 }
