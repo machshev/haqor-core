@@ -1,0 +1,329 @@
+{
+  "id": "tiqvah",
+  "root": "קוה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "hope",
+    "water",
+    "measurement"
+  ],
+  "gloss": "wait, hope, cord, gathering",
+  "summary": "Hoping looks toward an outcome that has yet to occur. Psalm 9 speaks of the afflicted person’s expectation of help. Elsewhere the same spelling designates the scarlet cord that Rahab ties to her window.",
+  "words": [
+    {
+      "lemma": "קָוָה",
+      "bdb": [
+        "s.aq.aa"
+      ],
+      "pos": "verb",
+      "gloss": "wait for, hope in",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "wait expectantly",
+          "senses": [
+            {
+              "gloss": "wait expectantly",
+              "definition": "Those who wait for Yahweh renew their strength. Isaiah promises that people who wait for him will not be put to shame.",
+              "evidence": [
+                {
+                  "ref": "Isa.40.31",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.49.23"
+                }
+              ],
+              "id": "hope"
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "look for an outcome",
+          "senses": [
+            {
+              "gloss": "look for an outcome",
+              "definition": "Jacob waits for Yahweh’s salvation. The vineyard owner looks for good grapes, and Isaiah uses that expectation to explain Yahweh’s search for justice.",
+              "evidence": [
+                {
+                  "ref": "Gen.49.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.5.2"
+                },
+                {
+                  "ref": "Isa.5.7"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-quu-wait"
+      ]
+    },
+    {
+      "lemma": "קָוָה",
+      "bdb": [
+        "s.ar.aa"
+      ],
+      "pos": "verb",
+      "gloss": "gather together",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be gathered",
+          "senses": [
+            {
+              "gloss": "be gathered",
+              "definition": "God commands the waters beneath the sky to gather in one place. Jeremiah pictures the nations gathering to Jerusalem.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.3.17"
+                }
+              ],
+              "id": "gather"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּקְוָה",
+      "bdb": [
+        "s.aq.ag",
+        "w.bn.af"
+      ],
+      "pos": "noun",
+      "gloss": "hope, ground for expectation",
+      "senses": [
+        {
+          "gloss": "hope, ground for expectation",
+          "definition": "Psalm 9 sets the hope of the afflicted beside the needy person whom God remembers. Even a tree cut down has hope of sprouting again.",
+          "evidence": [
+            {
+              "ref": "Psa.9.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.14.7"
+            },
+            {
+              "ref": "Pro.23.18"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-quu-wait"
+      ]
+    },
+    {
+      "lemma": "תִּקְוָה",
+      "bdb": [
+        "s.aq.af"
+      ],
+      "pos": "noun",
+      "gloss": "cord",
+      "senses": [
+        {
+          "gloss": "cord",
+          "definition": "The spies instruct Rahab to tie the scarlet cord at the window through which she lowered them. She fastens it there after they leave.",
+          "evidence": [
+            {
+              "ref": "Jos.2.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.2.21"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-qu-cord"
+      ]
+    },
+    {
+      "lemma": "קַו",
+      "bdb": [
+        "s.aq.ab",
+        "s.ap.al",
+        "s.aq.ac"
+      ],
+      "pos": "noun",
+      "gloss": "measuring line",
+      "senses": [
+        {
+          "gloss": "measuring line, marking cord",
+          "definition": "A craftsman stretches a line over timber. A builder’s line and plummet can also mark a city out for destruction.",
+          "evidence": [
+            {
+              "ref": "Isa.44.13",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.21.13"
+            }
+          ]
+        },
+        {
+          "gloss": "line extending over the earth",
+          "definition": "In Psalm 19 the heavens’ line reaches the whole earth and their words reach its ends. The Greek gives voice or sound, the form Paul quotes.",
+          "evidence": [
+            {
+              "ref": "Psa.19.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Rom.10.18"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-qu-cord"
+      ]
+    },
+    {
+      "lemma": "קַוְקָו",
+      "bdb": [
+        "s.aq.ad"
+      ],
+      "pos": "noun",
+      "gloss": "disputed epithet of a people",
+      "senses": [
+        {
+          "gloss": "disputed epithet of a people",
+          "definition": "Isaiah twice uses the repeated form to describe the people beyond the rivers of Cush. Readings range from a description of strength to measurement.",
+          "evidence": [
+            {
+              "ref": "Isa.18.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.18.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִקְוֶה",
+      "bdb": [
+        "s.aq.ae"
+      ],
+      "pos": "noun",
+      "gloss": "hope, one in whom hope is placed",
+      "senses": [
+        {
+          "gloss": "hope, one in whom hope is placed",
+          "definition": "Jeremiah calls Yahweh Israel’s hope, addressing him as the deliverer in a time of trouble.",
+          "evidence": [
+            {
+              "ref": "Jer.14.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.17.13"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-quu-wait"
+      ]
+    },
+    {
+      "lemma": "מִקְוֶה",
+      "bdb": [
+        "s.ar.ab",
+        "m.df.am"
+      ],
+      "pos": "noun",
+      "gloss": "collection of water",
+      "senses": [
+        {
+          "gloss": "collection of water",
+          "definition": "God calls the gathering of the waters Seas. A spring or cistern holding a collection of water is distinguished in the purity laws.",
+          "evidence": [
+            {
+              "ref": "Gen.1.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.11.36"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מִקְוָה",
+      "bdb": [
+        "s.ar.ac"
+      ],
+      "pos": "noun",
+      "gloss": "reservoir",
+      "senses": [
+        {
+          "gloss": "reservoir",
+          "definition": "Jerusalem’s defenders make a reservoir between the two walls for the waters of the old pool.",
+          "evidence": [
+            {
+              "ref": "Isa.22.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-quu-wait",
+      "lang": "akk",
+      "form": "quʾʾû",
+      "translit": "quʾʾû",
+      "gloss": "await, wait",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000053550, quʾʾû [await]"
+        }
+      ]
+    },
+    {
+      "id": "akk-qu-cord",
+      "lang": "akk",
+      "form": "qû",
+      "translit": "qû",
+      "gloss": "flax, cord, thread",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000015340, qû [flax]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The shared spelling does not establish that hoping derives from twisting a cord. The reading of Psalm 19:5 is especially important: Hebrew has their line, while Romans cites the Greek expression for their sound."
+}
