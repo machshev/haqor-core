@@ -1,0 +1,231 @@
+{
+  "id": "yatsar",
+  "root": "יצר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "creation",
+    "pottery",
+    "intention"
+  ],
+  "gloss": "form, fashion, shape a purpose",
+  "summary": "A potter forms a vessel with his hands. Genesis uses the same verb of Yahweh forming man from the dust, and the noun can describe either the resulting shape or a design taking shape in the heart.",
+  "words": [
+    {
+      "lemma": "יָצַר",
+      "bdb": [
+        "j.cv.aa"
+      ],
+      "pos": "verb",
+      "gloss": "form, fashion, plan",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "form or fashion",
+          "senses": [
+            {
+              "gloss": "shape material, as a potter",
+              "definition": "Yahweh forms a man from the dust. A potter reshapes a spoiled vessel while it is still in his hands. The potter in Psalm 2 is the maker of the vessel that can be shattered.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.18.3",
+                  "to": "Jer.18.6"
+                },
+                {
+                  "ref": "Psa.2.9"
+                },
+                {
+                  "ref": "Isa.45.9"
+                },
+                {
+                  "ref": "Rom.9.20",
+                  "to": "Rom.9.21"
+                }
+              ],
+              "cognate_ids": [
+                "arc-yetsar"
+              ]
+            },
+            {
+              "gloss": "frame a purpose",
+              "definition": "A plan takes shape before it is carried out. Yahweh announces that he is framing disaster and calls the people to turn.",
+              "evidence": [
+                {
+                  "ref": "Jer.18.11",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "design"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be formed",
+          "senses": [
+            {
+              "gloss": "be formed",
+              "definition": "Yahweh tells his witnesses that no god was formed before him and none will follow.",
+              "evidence": [
+                {
+                  "ref": "Isa.43.10",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-yetsar"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be fashioned or appointed",
+          "senses": [
+            {
+              "gloss": "be fashioned or appointed",
+              "definition": "The psalmist speaks of days formed for him while still describing God’s knowledge of his unformed body.",
+              "evidence": [
+                {
+                  "ref": "Psa.139.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be fashioned",
+          "senses": [
+            {
+              "gloss": "be fashioned",
+              "definition": "The promise to Zion describes a weapon fashioned against her that will fail.",
+              "evidence": [
+                {
+                  "ref": "Isa.54.17",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-yetsar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יֵצֶר",
+      "bdb": [
+        "j.cv.ab"
+      ],
+      "pos": "noun",
+      "gloss": "form, inclination, design",
+      "senses": [
+        {
+          "gloss": "what has been formed",
+          "definition": "God remembers what people are made of, that they are dust. The vessel in Isaiah is what the potter has made.",
+          "evidence": [
+            {
+              "ref": "Psa.103.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.29.16"
+            }
+          ],
+          "cognate_ids": [
+            "arc-yetsar"
+          ]
+        },
+        {
+          "gloss": "inclination or design",
+          "definition": "The inclination of the thoughts of the heart is what they continually tend toward. David asks God to preserve the people’s willing disposition.",
+          "evidence": [
+            {
+              "ref": "Gen.6.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.8.21"
+            },
+            {
+              "ref": "1Ch.29.18"
+            }
+          ],
+          "id": "design"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יְצֻרִים",
+      "bdb": [
+        "j.cv.ae"
+      ],
+      "pos": "noun",
+      "gloss": "bodily members",
+      "senses": [
+        {
+          "gloss": "bodily members",
+          "definition": "Job compares all his members to a shadow as grief dims his sight. The plural refers to the parts of his frame.",
+          "evidence": [
+            {
+              "ref": "Job.17.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יִצְרִי",
+      "bdb": [],
+      "pos": "adjective",
+      "gloss": "Jezerite",
+      "senses": [
+        {
+          "gloss": "Jezerite",
+          "definition": "The census names the clan formed by the descendants of Jezer, son of Naphtali.",
+          "evidence": [
+            {
+              "ref": "Num.26.48",
+              "to": "Num.26.49",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-yetsar",
+      "lang": "arc",
+      "form": "יְצַר",
+      "translit": "yəṣar",
+      "gloss": "form, create",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יְצַר, Targum Amos 4:13 and Yoma 85a"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The apparent hiphil cases in the brief are forms of the verb for constricting or besieging. They belong with tsarar. The gentilic and the musician Izri share a key, recorded on the name entry."
+}
