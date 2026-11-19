@@ -1,0 +1,173 @@
+{
+  "id": "az",
+  "root": "אז",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "time",
+    "sequence"
+  ],
+  "gloss": "then, at that time",
+  "summary": "אָז fixes an event in relation to one already in view. In Psalm 2 it marks the moment when Yahweh answers the rulers.",
+  "words": [
+    {
+      "lemma": "אָז",
+      "bdb": [
+        "a.ce.ac"
+      ],
+      "pos": "adverb",
+      "gloss": "then, at that time",
+      "senses": [
+        {
+          "gloss": "on that occasion",
+          "definition": "The word places a circumstance at the time in view. When Abram enters the land, the narrator says the Canaanite was then in the land.",
+          "evidence": [
+            {
+              "ref": "Gen.12.6",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "ar-idh"
+          ]
+        },
+        {
+          "gloss": "then, next",
+          "definition": "The word introduces what follows. After the crossing Moses and Israel sing, and after the kings’ defiance in Psalm 2 Yahweh addresses them.",
+          "evidence": [
+            {
+              "ref": "Exo.15.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.2.5"
+            },
+            {
+              "ref": "Psa.19.14"
+            }
+          ],
+          "cognate_ids": [
+            "ar-idh"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵאָז",
+      "bdb": [
+        "a.ce.ad"
+      ],
+      "pos": "adverb",
+      "gloss": "since then, from long ago",
+      "senses": [
+        {
+          "gloss": "since then, from long ago",
+          "definition": "With the preposition meaning from, the word sets a starting point. Moses dates the worsening of Israel’s treatment from his visit to Pharaoh.",
+          "evidence": [
+            {
+              "ref": "Exo.5.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.48.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲזַי",
+      "bdb": [
+        "a.ce.ae"
+      ],
+      "pos": "adverb",
+      "gloss": "then, in that case",
+      "senses": [
+        {
+          "gloss": "then, in that case",
+          "definition": "Psalm 124 repeats this form at the start of three lines, each describing what would have happened without Yahweh’s help.",
+          "evidence": [
+            {
+              "ref": "Psa.124.1",
+              "to": "Psa.124.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֱדַיִן",
+      "bdb": [
+        "xa.ac.ae"
+      ],
+      "pos": "adverb",
+      "gloss": "then, thereupon",
+      "senses": [
+        {
+          "gloss": "then, thereupon",
+          "definition": "The narrative moves from the king’s decree to Daniel’s response. Elsewhere the word introduces the next step taken by officials.",
+          "evidence": [
+            {
+              "ref": "Dan.2.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.3.13"
+            },
+            {
+              "ref": "Ezr.5.3"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "אדינ"
+    },
+    {
+      "lemma": "הָידֵּין",
+      "bdb": [],
+      "pos": "adverb",
+      "gloss": "then",
+      "senses": [
+        {
+          "gloss": "then",
+          "definition": "The Peshitta uses this adverb to introduce the next event, as when Jesus comes to John for baptism.",
+          "evidence": [
+            {
+              "ref": "Mat.3.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.4.1"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "הידינ"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-idh",
+      "lang": "ar",
+      "form": "إِذْ",
+      "translit": "ʾiḏ",
+      "gloss": "at the time when",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 38, n476"
+        }
+      ],
+      "sounds": {
+        "ז": "ḏ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The temporal particle has its own consonants and is separate from אוּת, hyssop and the name Ezbai filed nearby. The Aramaic and Syriac temporal adverbs have expanded forms. Lane’s example refers to past time, while Hebrew also uses אָז of what is to come."
+}
