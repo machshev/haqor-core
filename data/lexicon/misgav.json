@@ -1,0 +1,197 @@
+{
+  "id": "misgav",
+  "root": "שׂגב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "protection",
+    "height"
+  ],
+  "gloss": "be high, secure height",
+  "summary": "A height can lie beyond an attacker’s reach. The psalms draw on that fact when they call Yahweh a refuge and ask him to set someone on high.",
+  "words": [
+    {
+      "lemma": "שָׂגַב",
+      "bdb": [
+        "u.ah.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be high, lift out of reach",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be too high or inaccessible",
+          "senses": [
+            {
+              "gloss": "be too high or inaccessible",
+              "definition": "Israel reports that no city was too high for it to take on its advance from the Arnon.",
+              "evidence": [
+                {
+                  "ref": "Deu.2.36",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be exalted or beyond reach",
+          "senses": [
+            {
+              "gloss": "be exalted or beyond reach",
+              "definition": "Isaiah says that Yahweh alone will be exalted when human pride is brought down. In Proverbs a righteous person runs to a strong tower and reaches safety.",
+              "evidence": [
+                {
+                  "ref": "Isa.2.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.2.17"
+                },
+                {
+                  "ref": "Pro.18.10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "set on high, protect",
+          "senses": [
+            {
+              "gloss": "set on high, protect",
+              "definition": "Psalm 20 asks that the name of the God of Jacob set the petitioner safely on high. In Psalm 91 Yahweh promises this protection to one who knows his name.",
+              "evidence": [
+                {
+                  "ref": "Psa.20.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.91.14"
+                },
+                {
+                  "ref": "Isa.9.10"
+                }
+              ],
+              "id": "protect"
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be placed out of danger",
+          "senses": [
+            {
+              "gloss": "be placed out of danger",
+              "definition": "The person who trusts in Yahweh will be set safely beyond the snare that fear lays.",
+              "evidence": [
+                {
+                  "ref": "Pro.29.25",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "show exalted power",
+          "senses": [
+            {
+              "gloss": "show exalted power",
+              "definition": "Elihu describes God as exalted in power and asks who can teach as he does.",
+              "evidence": [
+                {
+                  "ref": "Job.36.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-segab"
+      ]
+    },
+    {
+      "lemma": "מִשְׂגָּב",
+      "bdb": [
+        "u.ah.ac",
+        "m.dr.aj"
+      ],
+      "pos": "noun",
+      "gloss": "secure height, stronghold",
+      "senses": [
+        {
+          "gloss": "secure height or refuge",
+          "definition": "Psalm 9 twice calls Yahweh a stronghold for the oppressed in times of trouble. In Psalm 18 the speaker calls him my stronghold alongside my rock, shield and deliverer.",
+          "evidence": [
+            {
+              "ref": "Psa.9.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.18.3"
+            },
+            {
+              "ref": "Psa.46.8"
+            },
+            {
+              "ref": "Isa.33.16"
+            }
+          ],
+          "kin": [
+            "protect"
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-segab"
+      ]
+    },
+    {
+      "lemma": "מִשְׂגָּב",
+      "bdb": [
+        "u.ah.ad"
+      ],
+      "pos": "noun",
+      "gloss": "the stronghold, possibly Misgab",
+      "senses": [
+        {
+          "gloss": "the stronghold, possibly Misgab",
+          "definition": "In the judgment on Moab this designation stands beside Nebo and Kiriathaim. It could name a place or describe a fortress.",
+          "evidence": [
+            {
+              "ref": "Jer.48.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-segab",
+      "lang": "arc",
+      "form": "שְׂגַב",
+      "translit": "śəgab",
+      "gloss": "raise, lift up, strengthen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "שְׂגַב, pael, Targum Psalms 20:2 and 91:14"
+        }
+      ],
+      "note": "Both forms are written with sin, transcribed ś."
+    }
+  ],
+  "doctrine": [],
+  "note": "In Jeremiah 48:1 the parallel place-names favour reading Misgab as a name, though the ordinary meaning stronghold also makes sense."
+}
