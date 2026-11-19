@@ -1,0 +1,179 @@
+{
+  "id": "zaqaq",
+  "root": "זקק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "purity",
+    "metalwork"
+  ],
+  "gloss": "refine, distil",
+  "summary": "Separating out impurities leaves clear wine or refined metal. Psalm 12 compares Yahweh’s words to silver purified seven times.",
+  "words": [
+    {
+      "lemma": "זָקַק",
+      "bdb": [
+        "g.cf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "refine, strain",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "refine or distil",
+          "senses": [
+            {
+              "gloss": "refine",
+              "definition": "Gold has a place where people refine it.",
+              "evidence": [
+                {
+                  "ref": "Job.28.1",
+                  "role": "defining"
+                }
+              ],
+              "id": "refine"
+            },
+            {
+              "gloss": "distil",
+              "definition": "Elihu describes the drops of water drawn up and distilled as rain.",
+              "evidence": [
+                {
+                  "ref": "Job.36.27",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "refine",
+          "senses": [
+            {
+              "gloss": "refine",
+              "definition": "Yahweh’s messenger refines the sons of Levi like gold and silver.",
+              "evidence": [
+                {
+                  "ref": "Mal.3.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be purified",
+          "senses": [
+            {
+              "gloss": "be refined",
+              "definition": "Silver purified seven times illustrates Yahweh’s words. Chronicles describes refined gold and silver for the temple.",
+              "evidence": [
+                {
+                  "ref": "Psa.12.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ch.28.18"
+                },
+                {
+                  "ref": "1Ch.29.4"
+                }
+              ]
+            },
+            {
+              "gloss": "be strained",
+              "definition": "Isaiah describes mature wines strained clear for a feast.",
+              "evidence": [
+                {
+                  "ref": "Isa.25.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-zeqaq"
+      ]
+    },
+    {
+      "lemma": "זֵק",
+      "bdb": [
+        "g.cg.ab"
+      ],
+      "pos": "noun",
+      "gloss": "fetter",
+      "senses": [
+        {
+          "gloss": "chain or shackle",
+          "definition": "Captive kings and nobles are bound with chains.",
+          "evidence": [
+            {
+              "ref": "Psa.149.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Nam.3.10"
+            },
+            {
+              "ref": "Job.36.8"
+            }
+          ],
+          "id": "chain"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "אֲזִקִּים",
+      "bdb": [
+        "g.cg.ac"
+      ],
+      "pos": "noun",
+      "gloss": "manacles",
+      "senses": [
+        {
+          "gloss": "bonds of a captive",
+          "definition": "Jeremiah is found bound among those being taken away. The captain releases him from the manacles on his hands.",
+          "evidence": [
+            {
+              "ref": "Jer.40.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.40.4"
+            }
+          ],
+          "kin": [
+            "chain"
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-zeqaq",
+      "lang": "arc",
+      "form": "זְקַק",
+      "translit": "zəqaq",
+      "gloss": "refine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "זְקַק, participle in Targum Psalms 12:7 and Song 1:11"
+        }
+      ],
+      "sounds": {
+        "ז": "z"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The fetter nouns denote restraints. Their historical relationship to the refining verb remains uncertain. The firebrands of Isaiah 50:11 are distinguished by context from the chains."
+}
