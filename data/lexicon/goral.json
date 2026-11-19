@@ -1,0 +1,80 @@
+{
+  "id": "goral",
+  "root": "גרל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "allotment",
+    "land"
+  ],
+  "gloss": "lot, allotted share",
+  "summary": "The same noun can designate the lot used to reach a decision and the share that decision gives a person. The second use explains the reference to inheritance in Psalm 16.",
+  "words": [
+    {
+      "lemma": "גּוֹרָל",
+      "bdb": [
+        "c.da.ab"
+      ],
+      "pos": "noun",
+      "gloss": "lot, allotted share",
+      "senses": [
+        {
+          "gloss": "lot cast to decide a matter",
+          "definition": "Aaron casts lots over the two goats. In Jonah the sailors cast lots to identify the person connected with the storm.",
+          "evidence": [
+            {
+              "ref": "Lev.16.8",
+              "to": "Lev.16.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Jon.1.7"
+            },
+            {
+              "ref": "Pro.16.33"
+            }
+          ]
+        },
+        {
+          "gloss": "share or territory allotted",
+          "definition": "Land is distributed by lot according to the ancestral tribes. The lot may therefore mean the resulting share: in Psalm 16 Yahweh holds the speaker’s lot secure.",
+          "evidence": [
+            {
+              "ref": "Num.26.55",
+              "to": "Num.26.56",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.18.10"
+            },
+            {
+              "ref": "Psa.16.5"
+            },
+            {
+              "ref": "Dan.12.13"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κλῆρος",
+          "gloss": "lot, allotted share",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Leviticus 16:8, the lots placed on the goats"
+            },
+            {
+              "ref": "Act.1.26"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "A derivation from a word for a pebble has been suggested, but the biblical texts do not specify the material of the lots. The written form in Proverbs 19:19 has a different context and an uncertain reading."
+}
