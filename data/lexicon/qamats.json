@@ -1,0 +1,141 @@
+{
+  "id": "qamats",
+  "root": "קמצ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "take a handful; handful",
+  "summary": "The priest takes a handful from the grain offering and burns that portion on the altar. Genesis uses the plural to describe the abundant yield of Egypt’s fields.",
+  "words": [
+    {
+      "lemma": "קָמַץ",
+      "pos": "verb",
+      "bdb": [
+        "s.by.aa"
+      ],
+      "gloss": "take a handful",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take a handful",
+          "senses": [
+            {
+              "id": "take-handful",
+              "gloss": "take a handful",
+              "definition": "Close the hand on part of an offering and lift out the portion to be burned.",
+              "evidence": [
+                {
+                  "ref": "Lev.2.2",
+                  "role": "defining",
+                  "note": "The priest takes a handful of flour and oil and burns the memorial portion with the frankincense."
+                },
+                {
+                  "ref": "Lev.5.12",
+                  "role": "defining",
+                  "note": "He takes a handful from the poor person’s flour offering for sin."
+                },
+                {
+                  "ref": "Num.5.26",
+                  "role": "defining",
+                  "note": "The priest takes the memorial portion of the jealousy offering before the woman drinks."
+                }
+              ],
+              "cognate_ids": [
+                "arc-take"
+              ],
+              "kin": [
+                "handful"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֹמֶץ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.by.ab"
+      ],
+      "gloss": "handful",
+      "senses": [
+        {
+          "id": "handful",
+          "gloss": "handful",
+          "definition": "The quantity held in a closed hand. In the offering instructions the measure is the priest’s own handful.",
+          "evidence": [
+            {
+              "ref": "Lev.2.2",
+              "role": "defining",
+              "note": "The verb for taking the portion is followed by ‘the fullness of his handful’."
+            },
+            {
+              "ref": "Lev.5.12",
+              "role": "defining",
+              "note": "One handful of the flour supplies the memorial portion."
+            },
+            {
+              "ref": "Lev.6.8",
+              "role": "defining",
+              "note": "The priest lifts out flour and oil with his handful."
+            },
+            {
+              "ref": "Gen.41.47",
+              "role": "defining",
+              "note": "During the seven plentiful years the land yields grain by handfuls."
+            }
+          ],
+          "cognate_ids": [
+            "arc-amount"
+          ],
+          "kin": [
+            "take-handful"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-take",
+      "lang": "arc",
+      "form": "קְמַץ",
+      "translit": "qəmaṣ",
+      "gloss": "take a fistful",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "S01484, Targum Lev 2:2 and 5:12, and Menahot 11a"
+        },
+        {
+          "source": "cal",
+          "locator": "Jewish Palestinian Aramaic, qmṣ verb, the comparison of taking a qomeṣ and a ḥofen"
+        }
+      ]
+    },
+    {
+      "id": "arc-amount",
+      "lang": "arc",
+      "form": "קוּמְצָא",
+      "translit": "qumṣā",
+      "gloss": "handful",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "S00402, Targum Lev 2:2 and Megillah 16a"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Leviticus measures the portion by the priest’s hand. The two cupped hands filled with incense in Lev.16.12 are called חָפְנָיו, under chofen. Häberl discusses Mandaic kmaṣ ‘confine, create’ and Akkadian kamāsu ‘gather’ in ‘Ethiopic’ in a Mandaic Dictionary, pp. 122–23. The consonant correspondences and the differences in meaning leave those comparisons uncertain."
+}
