@@ -1,0 +1,182 @@
+{
+  "id": "dam",
+  "root": "דמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "life",
+    "blood",
+    "covenant",
+    "justice"
+  ],
+  "gloss": "blood, bloodshed, bloodguilt",
+  "summary": "The blood of an animal can stain a garment. Shed human blood can bear witness against the killer. In the law the blood stands for life, which explains its use in offerings and the prohibition on eating it.",
+  "words": [
+    {
+      "lemma": "דָּם",
+      "bdb": [
+        "d.br.aa"
+      ],
+      "pos": "noun",
+      "gloss": "blood, bloodshed, bloodguilt",
+      "senses": [
+        {
+          "gloss": "blood of a living creature",
+          "definition": "Joseph’s brothers dip his garment in a goat’s blood. The law identifies the blood with the life of the flesh and forbids eating it.",
+          "evidence": [
+            {
+              "ref": "Gen.37.31",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.17.11",
+              "to": "Lev.17.14"
+            },
+            {
+              "ref": "Deu.12.23"
+            }
+          ],
+          "cognate_ids": [
+            "akk-damu",
+            "phn-dm"
+          ]
+        },
+        {
+          "gloss": "blood used in sacrifice or covenant",
+          "definition": "The blood on the doorposts is a sign at Passover. Moses sprinkles the blood of the covenant over the people.",
+          "evidence": [
+            {
+              "ref": "Exo.12.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.24.8"
+            },
+            {
+              "ref": "Lev.17.11"
+            }
+          ],
+          "cognate_ids": [
+            "akk-damu",
+            "phn-dm"
+          ]
+        },
+        {
+          "gloss": "bloodshed and responsibility for a death",
+          "definition": "Abel’s blood cries out from the ground. The psalmist calls a violent and deceitful man a man of bloodshed.",
+          "evidence": [
+            {
+              "ref": "Gen.4.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.5.7"
+            },
+            {
+              "ref": "Psa.9.13"
+            },
+            {
+              "ref": "Psa.51.16"
+            }
+          ],
+          "cognate_ids": [
+            "akk-damu",
+            "phn-dm"
+          ]
+        },
+        {
+          "gloss": "blood of grapes, wine",
+          "definition": "Jacob pictures garments washed in the blood of grapes. The song of Moses uses the same image for wine.",
+          "evidence": [
+            {
+              "ref": "Gen.49.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.32.14"
+            }
+          ],
+          "cognate_ids": [
+            "akk-damu",
+            "phn-dm"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "דְּמָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "blood",
+      "senses": [
+        {
+          "gloss": "blood",
+          "definition": "The woman who touches Jesus’ garment has suffered a flow of blood for twelve years.",
+          "evidence": [
+            {
+              "ref": "Mat.9.20",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "akk-damu",
+            "phn-dm"
+          ]
+        },
+        {
+          "gloss": "blood shed, responsibility for a death",
+          "definition": "Judas speaks of his guilt for betraying innocent blood. Jesus calls the cup his blood of the covenant, shed for the forgiveness of sins.",
+          "evidence": [
+            {
+              "ref": "Mat.27.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.26.28"
+            }
+          ],
+          "cognate_ids": [
+            "akk-damu",
+            "phn-dm"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-damu",
+      "lang": "akk",
+      "form": "dāmu",
+      "translit": "dāmu",
+      "gloss": "blood, blood money, red wine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000000360, dāmu [blood] N"
+        }
+      ]
+    },
+    {
+      "id": "phn-dm",
+      "lang": "phn",
+      "form": "דם",
+      "translit": "dm",
+      "gloss": "blood, also in blood of the vine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "DM and DM ʿṢ, Augustine edom and Poenulus 1142"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The plural דָּמִים can refer to violent bloodshed, as in Psalm 5:7. The pronoun or particle written דם in Syriac belongs to another word. No derivation from the Hebrew verb for being silent is assumed."
+}
