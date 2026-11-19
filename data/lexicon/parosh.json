@@ -1,0 +1,195 @@
+{
+  "id": "parosh",
+  "root": "פרעש",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "flea",
+  "summary": "Twice David asks Saul why the king of Israel has come after a single flea. By calling himself the flea, David makes the king’s pursuit seem out of all proportion to its quarry.",
+  "words": [
+    {
+      "lemma": "פַּרְעֹשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "q.dh.ac"
+      ],
+      "gloss": "flea",
+      "senses": [
+        {
+          "id": "flea",
+          "gloss": "flea",
+          "definition": "A small biting insect. David uses a single flea as an image of his own insignificance.",
+          "evidence": [
+            {
+              "ref": "1Sa.24.15",
+              "role": "defining",
+              "note": "David calls himself a dead dog and a single flea as he asks whom the king has come out to pursue."
+            },
+            {
+              "ref": "1Sa.26.20",
+              "role": "defining",
+              "note": "David again calls himself a single flea, then likens Saul’s search for him to hunting a partridge in the hills."
+            }
+          ],
+          "cognate_ids": [
+            "akk-flea",
+            "syc-flea",
+            "ar-flea",
+            "mlt-flea",
+            "phn-flea",
+            "uga-flea",
+            "xeb-flea"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-flea",
+      "lang": "akk",
+      "form": "peršaʾu",
+      "translit": "peršaʾu",
+      "gloss": "flea",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000002470"
+        },
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 212, §5.6.4, SED II no. 185"
+        }
+      ]
+    },
+    {
+      "id": "syc-flea",
+      "lang": "syc",
+      "form": "ܦܘܪܬܥܢܐ",
+      "translit": "purtaʿnā",
+      "gloss": "flea",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 212, §5.6.4, SED II no. 185"
+        },
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܦܘܪܬܥܢܐ, sense a"
+        }
+      ]
+    },
+    {
+      "id": "ar-flea",
+      "lang": "ar",
+      "form": "بُرْغُوث",
+      "translit": "burġūṯ",
+      "gloss": "flea",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 189, n2309"
+        },
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 212, §5.6.4, SED II no. 185"
+        }
+      ]
+    },
+    {
+      "id": "mlt-flea",
+      "lang": "sem",
+      "form": "bergħud",
+      "translit": "bergħud",
+      "gloss": "Maltese flea",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "5647d06ba4db05c30738e333, bergħud"
+        }
+      ]
+    },
+    {
+      "id": "phn-flea",
+      "lang": "phn",
+      "form": "𐤐𐤓𐤏𐤔",
+      "translit": "prʿš",
+      "gloss": "flea, as a personal name",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 407, PRʿŠ I"
+        },
+        {
+          "source": "minunno-2022",
+          "locator": "p. 154, note 189"
+        }
+      ]
+    },
+    {
+      "id": "uga-flea",
+      "lang": "uga",
+      "form": "𐎔𐎗𐎙𐎘",
+      "translit": "prġṯ",
+      "gloss": "flea, also used as a personal name",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "minunno-2022",
+          "locator": "p. 154, note 191"
+        }
+      ]
+    },
+    {
+      "id": "xeb-flea",
+      "lang": "sem",
+      "form": "pur-ha-sum₂",
+      "translit": "pur-ha-sum₂",
+      "gloss": "Eblaite flea",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ",
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "minunno-2022",
+          "locator": "p. 154, note 192"
+        }
+      ]
+    }
+  ],
+  "note": "The four-consonant insect name has parallels at Ebla and Ugarit. The Phoenician evidence comes from a name on a gemstone of unknown provenance. The initial b in Arabic and Maltese differs from Hebrew p. The two Hebrew occurrences of the insect are distinct from the identically spelled personal name Parosh in Ezra and Nehemiah."
+}
