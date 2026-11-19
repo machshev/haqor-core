@@ -1,0 +1,74 @@
+{
+  "id": "pen",
+  "root": "פנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "purpose"
+  ],
+  "gloss": "lest, for fear that",
+  "summary": "The event following פֶּן is a possibility the speaker wishes to prevent or fears may already be true. A warning, precaution or prayer often precedes it.",
+  "words": [
+    {
+      "lemma": "פֶּן",
+      "bdb": [
+        "q.bt.af"
+      ],
+      "pos": "conjunction",
+      "gloss": "lest, for fear that",
+      "senses": [
+        {
+          "gloss": "lest something happen",
+          "definition": "The speaker gives a reason to take care or act at once. Psalm 2 warns the rulers of the anger they might provoke. The petitioner in Psalm 13 asks for light lest he sleep in death.",
+          "evidence": [
+            {
+              "ref": "Psa.2.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.13.4",
+              "to": "Psa.13.5"
+            },
+            {
+              "ref": "Gen.3.3"
+            },
+            {
+              "ref": "Deu.8.11",
+              "to": "Deu.8.12"
+            }
+          ]
+        },
+        {
+          "gloss": "perhaps something has already happened",
+          "definition": "Job offers sacrifices because he fears his sons may already have sinned in their hearts.",
+          "evidence": [
+            {
+              "ref": "Job.1.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-pon",
+      "lang": "arc",
+      "form": "פּוֹן",
+      "translit": "pōn",
+      "gloss": "would, might",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פּוֹן, Onkelos Genesis 26:10"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The corpus files the conjunction near פלש. The short form does not establish a connection with that verb. Aramaic פּוֹן similarly marks a possibility but has a wider use than the Hebrew conjunction."
+}
