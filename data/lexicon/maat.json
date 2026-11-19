@@ -1,0 +1,165 @@
+{
+  "id": "maat",
+  "root": "מעט",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "quantity",
+    "time"
+  ],
+  "gloss": "be few, a little, reduce",
+  "summary": "The word measures a small amount of water, a small number of people or a short interval of time. The verb describes a decrease and the act of reducing a quantity.",
+  "words": [
+    {
+      "lemma": "מְעַט",
+      "bdb": [
+        "m.cx.ab"
+      ],
+      "pos": "noun",
+      "gloss": "a little, few",
+      "senses": [
+        {
+          "gloss": "a small quantity or number",
+          "definition": "A little water is enough to wash the guests’ feet. Jacob’s household is described as few in number before it became a nation.",
+          "evidence": [
+            {
+              "ref": "Gen.18.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.26.5"
+            },
+            {
+              "ref": "Hag.1.9"
+            }
+          ]
+        },
+        {
+          "gloss": "a little while, almost",
+          "definition": "A small interval can be all that separates the speaker from danger. The expression in Psalm 2 warns how quickly anger can flare.",
+          "evidence": [
+            {
+              "ref": "Psa.94.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.2.12"
+            },
+            {
+              "ref": "Job.24.24"
+            }
+          ]
+        },
+        {
+          "gloss": "a small matter",
+          "definition": "A rhetorical question challenges people who treat an honor or an offense as trivial.",
+          "evidence": [
+            {
+              "ref": "Num.16.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.7.13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָעַט",
+      "bdb": [
+        "m.cx.aa"
+      ],
+      "pos": "verb",
+      "gloss": "dwindle, reduce",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be few or grow fewer",
+          "senses": [
+            {
+              "gloss": "be few or grow fewer",
+              "definition": "If the household is too small to eat a lamb it shares one with its neighbor. Wealth can also dwindle.",
+              "evidence": [
+                {
+                  "ref": "Exo.12.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.13.11"
+                },
+                {
+                  "ref": "Psa.107.39"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "reduce or take little",
+          "senses": [
+            {
+              "gloss": "reduce or take little",
+              "definition": "The price of land is lowered when fewer harvests remain. Those gathering manna take different amounts, some much and some little.",
+              "evidence": [
+                {
+                  "ref": "Lev.25.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.16.17",
+                  "to": "Exo.16.18"
+                },
+                {
+                  "ref": "Num.26.54"
+                }
+              ],
+              "cognate_ids": [
+                "arc-maet"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "become few",
+          "senses": [
+            {
+              "gloss": "become few",
+              "definition": "The grinders cease their work because too few remain, in the poem about old age.",
+              "evidence": [
+                {
+                  "ref": "Ecc.12.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-maet",
+      "lang": "arc",
+      "form": "מַעֵט",
+      "translit": "maʿēṭ",
+      "gloss": "reduce, exclude",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְעַט I, pael, Yoma 74a"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Maai the musician has a final yod and no verse connects his name with מעט. The bodily noun מְעִי belongs with the word for inward parts. Psalm 2:12 allows a small measure of anger or a short time before it flares."
+}
