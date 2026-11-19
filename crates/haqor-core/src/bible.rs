@@ -3317,7 +3317,7 @@ impl Bible {
     }
 
     /// Return the browser-persistable progress schema as a SQLite snapshot.
-    pub fn progress_snapshot_bytes(&self) -> rusqlite::Result<Vec<u8>> {
+    pub fn progress_snapshot_bytes(&mut self) -> rusqlite::Result<Vec<u8>> {
         Ok(self.db.serialize("progress")?.to_vec())
     }
 
