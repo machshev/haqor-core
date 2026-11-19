@@ -1,0 +1,145 @@
+{
+  "id": "keruv",
+  "root": "כרב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "sanctuary",
+    "glory"
+  ],
+  "gloss": "cherub, winged guardian",
+  "summary": "Guardians stand at the approach to Eden, while the figures over the ark mark the place where Yahweh speaks to Moses. David depicts Yahweh riding on a cherub in response to his cry.",
+  "words": [
+    {
+      "lemma": "כְּרוּב",
+      "bdb": [
+        "k.da.ac"
+      ],
+      "pos": "noun",
+      "gloss": "cherub",
+      "senses": [
+        {
+          "gloss": "guardian",
+          "definition": "After the expulsion from Eden, God stations the cherubim to guard the way to the tree of life.",
+          "evidence": [
+            {
+              "ref": "Gen.3.24",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "winged figure at the sanctuary",
+          "definition": "The gold cherubim spread their wings over the cover of the ark and face it. Yahweh appoints the space between them as the place from which he will speak to Moses.",
+          "evidence": [
+            {
+              "ref": "Exo.25.18",
+              "to": "Exo.25.22",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.6.23",
+              "to": "1Ki.6.28"
+            },
+            {
+              "ref": "Heb.9.5"
+            }
+          ]
+        },
+        {
+          "gloss": "bearer of the divine presence",
+          "definition": "David sings of Yahweh riding a cherub on the wings of the wind. Ezekiel identifies the living creatures below the glory he saw as cherubim.",
+          "evidence": [
+            {
+              "ref": "Psa.18.11",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.22.11"
+            },
+            {
+              "ref": "Ezk.10.18",
+              "to": "Ezk.10.20"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-kuribu",
+        "syc-keruba"
+      ]
+    },
+    {
+      "lemma": "כְּרוּב",
+      "pos": "name",
+      "gloss": "Cherub",
+      "senses": [
+        {
+          "gloss": "Cherub",
+          "definition": "Ezra and Nehemiah include Cherub among the places from which people returned who could not establish their ancestral houses.",
+          "evidence": [
+            {
+              "ref": "Ezr.2.59",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.7.61"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּרוּבָא",
+      "pos": "noun",
+      "gloss": "cherub",
+      "senses": [
+        {
+          "gloss": "cherub",
+          "definition": "Hebrews recalls the cherubim overshadowing the cover of the ark. The Syriac plural is krūbē.",
+          "evidence": [
+            {
+              "ref": "Heb.9.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-kuribu",
+      "lang": "akk",
+      "form": "kurību",
+      "translit": "kurību",
+      "gloss": "a supernatural being, cherub",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "kurību [(an ethereal spirit)] N, Neo-Assyrian; armep x000046090"
+        }
+      ]
+    },
+    {
+      "id": "syc-keruba",
+      "lang": "syc",
+      "form": "ܟܪܘܒܐ",
+      "translit": "krūbā",
+      "gloss": "cherub",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1584, plural krūbē at Hebrews 9:5"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The return lists use the same spelling for a place. Their shared index key is attached to the common noun. The historical relationship of the Hebrew and Akkadian terms is clearer than the direction of borrowing."
+}
