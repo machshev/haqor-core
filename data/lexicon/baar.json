@@ -1,0 +1,358 @@
+{
+  "id": "baar",
+  "root": "בער",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "fire",
+    "livestock",
+    "understanding"
+  ],
+  "gloss": "burn, consume, be senseless",
+  "summary": "In Psalm 2 anger burns, as a bush burns before Moses. Other passages use these consonants for livestock eating a field bare and for a person who lacks understanding.",
+  "words": [
+    {
+      "lemma": "בָּעַר",
+      "bdb": [
+        "b.cj.aa"
+      ],
+      "pos": "verb",
+      "gloss": "burn, consume, clear away",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "burn",
+          "senses": [
+            {
+              "gloss": "be on fire",
+              "definition": "Moses sees the bush burning. In the song of David smoke rises and coals catch fire.",
+              "evidence": [
+                {
+                  "ref": "Exo.3.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.18.9"
+                }
+              ],
+              "cognate_ids": [
+                "arc-bear"
+              ]
+            },
+            {
+              "gloss": "burn with anger",
+              "definition": "Anger burns like a fire. Psalm 2 warns the kings how quickly it can flare up.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.79.5"
+                },
+                {
+                  "ref": "Jer.21.12"
+                }
+              ],
+              "cognate_ids": [
+                "arc-bear"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "kindle, consume, remove",
+          "senses": [
+            {
+              "gloss": "kindle",
+              "definition": "The keepers of the altar put wood on it each morning to keep its fire burning.",
+              "evidence": [
+                {
+                  "ref": "Lev.6.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.35.3"
+                }
+              ],
+              "cognate_ids": [
+                "arc-bear"
+              ]
+            },
+            {
+              "gloss": "consume by grazing",
+              "definition": "An animal turned loose eats what grows in another person’s field.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.4",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "clear away",
+              "definition": "Deuteronomy calls for the removal of evil from the community. Josiah clears the land of idols.",
+              "evidence": [
+                {
+                  "ref": "Deu.17.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.23.24"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "set alight, turn livestock out to graze",
+          "senses": [
+            {
+              "gloss": "set alight",
+              "definition": "The person who starts a fire must pay for the grain it consumes.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.15.5"
+                }
+              ],
+              "cognate_ids": [
+                "arc-bear"
+              ]
+            },
+            {
+              "gloss": "turn animals out to graze",
+              "definition": "The owner lets livestock feed in a field or vineyard.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be kept burning",
+          "senses": [
+            {
+              "gloss": "be kept burning",
+              "definition": "A lit brazier stands before the king in his winter quarters.",
+              "evidence": [
+                {
+                  "ref": "Jer.36.22",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-bear"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בָּעַר",
+      "bdb": [
+        "b.cj.ae"
+      ],
+      "pos": "verb",
+      "gloss": "be senseless",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be senseless",
+          "senses": [
+            {
+              "gloss": "be senseless",
+              "definition": "The psalmist challenges those who imagine the maker of the ear cannot hear them.",
+              "evidence": [
+                {
+                  "ref": "Psa.94.7",
+                  "to": "Psa.94.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.10.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "act without understanding",
+          "senses": [
+            {
+              "gloss": "act without understanding",
+              "definition": "Jeremiah describes shepherds who fail to seek Yahweh and artisans who put their trust in lifeless images.",
+              "evidence": [
+                {
+                  "ref": "Jer.10.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.10.21"
+                },
+                {
+                  "ref": "Jer.51.17"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּעִיר",
+      "bdb": [
+        "b.cj.ad"
+      ],
+      "pos": "noun",
+      "gloss": "livestock",
+      "senses": [
+        {
+          "gloss": "livestock",
+          "definition": "Pharaoh tells Joseph’s brothers to load their animals. In the wilderness the herds drink alongside the people.",
+          "evidence": [
+            {
+              "ref": "Gen.45.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.20.8"
+            },
+            {
+              "ref": "Num.20.11"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-beira"
+      ]
+    },
+    {
+      "lemma": "בַּעַר",
+      "bdb": [
+        "b.cj.af"
+      ],
+      "pos": "noun",
+      "gloss": "senseless person",
+      "senses": [
+        {
+          "gloss": "senseless person",
+          "definition": "The psalmist calls himself a brute when he remembers how little he understood, and compares himself to an animal.",
+          "evidence": [
+            {
+              "ref": "Psa.73.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.92.7"
+            },
+            {
+              "ref": "Pro.12.1"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "בְּעֵרָה",
+      "bdb": [
+        "b.cj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "fire",
+      "senses": [
+        {
+          "gloss": "fire",
+          "definition": "A fire spreads through thorns into crops. The one who lit it must pay for the loss.",
+          "evidence": [
+            {
+              "ref": "Exo.22.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-bear"
+      ]
+    },
+    {
+      "lemma": "תַּבְעֵרָה",
+      "bdb": [
+        "b.cj.ac"
+      ],
+      "pos": "name",
+      "gloss": "Taberah, burning",
+      "senses": [
+        {
+          "gloss": "Taberah, burning",
+          "definition": "Moses calls the place Taberah because Yahweh’s fire burned among the people there.",
+          "evidence": [
+            {
+              "ref": "Num.11.1",
+              "to": "Num.11.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.9.22"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-bear",
+      "lang": "arc",
+      "form": "בְּעַר",
+      "translit": "bəʿar",
+      "gloss": "burn, kindle",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "בְּעַר, Onkelos on Exodus 3:2"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "arc-beira",
+      "lang": "arc",
+      "form": "בְּעִירָא",
+      "translit": "bəʿīrā",
+      "gloss": "grazing animal, cattle",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "בְּעִיר, Targum on Genesis 1:24"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The shared spelling leaves the historical relationship between fire, grazing and ignorance open. Psalm 73:22 explicitly compares a senseless person to a beast. The names Beor and Baara have uncertain meanings. Baasha and Baaseiah contain another consonant."
+}
