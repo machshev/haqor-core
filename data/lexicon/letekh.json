@@ -1,0 +1,55 @@
+{
+  "id": "letekh",
+  "root": "לתכ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "lethek, a grain measure",
+  "summary": "Hosea pays fifteen pieces of silver, a homer of barley and a lethek of barley. The repeated word for barley identifies what each measure contains.",
+  "words": [
+    {
+      "lemma": "לֶתֶךְ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "l.cf.ab"
+      ],
+      "gloss": "lethek, a grain measure",
+      "senses": [
+        {
+          "id": "measure",
+          "gloss": "lethek, a grain measure",
+          "definition": "A measure of dry produce, used of barley in the only biblical occurrence.",
+          "evidence": [
+            {
+              "ref": "Hos.3.2",
+              "role": "defining",
+              "note": "The lethek is a second quantity of barley alongside the homer in the purchase price."
+            }
+          ],
+          "cognate_ids": [
+            "arc-grain"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-grain",
+      "lang": "arc",
+      "form": "לתך",
+      "translit": "lṯeḵ",
+      "gloss": "grain measure",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "s.v. ltk n.m., lṯeḵ, leṯkā"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The traditional reckoning makes the lethek half a kor. Hosea names the two grain quantities without giving their ratio. The Aramaic term may reflect borrowing."
+}

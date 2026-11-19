@@ -1,0 +1,90 @@
+{
+  "id": "log",
+  "root": "לג",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "log, a measure of oil",
+  "summary": "Leviticus specifies one log of oil for the cleansing rite. A person who can afford fewer animals still brings the same amount of oil.",
+  "words": [
+    {
+      "lemma": "לֹג",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "l.al.ae"
+      ],
+      "gloss": "log, a measure of oil",
+      "senses": [
+        {
+          "id": "measure",
+          "gloss": "log, a measure of oil",
+          "definition": "A unit of liquid capacity. In Leviticus it gives the quantity of oil presented with the guilt offering.",
+          "evidence": [
+            {
+              "ref": "Lev.14.10",
+              "role": "defining",
+              "note": "The list distinguishes the oil mixed into the flour from the additional log of oil."
+            },
+            {
+              "ref": "Lev.14.12",
+              "role": "defining",
+              "note": "The priest raises the lamb and the measured oil together."
+            },
+            {
+              "ref": "Lev.14.15",
+              "role": "defining",
+              "note": "The priest pours some of the oil from the log into his left palm."
+            },
+            {
+              "ref": "Lev.14.21",
+              "role": "defining",
+              "note": "The provision for a poor person still specifies a log of oil."
+            },
+            {
+              "ref": "Lev.14.24",
+              "role": "defining",
+              "note": "The priest raises the lamb and the log in this form of the rite as well."
+            }
+          ],
+          "cognate_ids": [
+            "uga-measure",
+            "arc-measure"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-measure",
+      "lang": "uga",
+      "form": "𐎍𐎂",
+      "translit": "lg",
+      "gloss": "measure for liquids",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc-ugarit",
+          "locator": "aemw/ugarit/uga x000000980, lg"
+        }
+      ]
+    },
+    {
+      "id": "arc-measure",
+      "lang": "arc",
+      "form": "לוּגָּא",
+      "translit": "luggā",
+      "gloss": "log, liquid measure",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "L00184 sense 2, Onkelos Lev 14:10 and Pesahim 109a"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Leviticus gives no conversion into other units. The Ugaritic comparison establishes earlier use of the term for liquid capacity. The route by which the term spread is uncertain."
+}
