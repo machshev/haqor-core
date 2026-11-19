@@ -1,0 +1,123 @@
+{
+  "id": "taphas",
+  "root": "תפשׂ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "action",
+    "capture"
+  ],
+  "gloss": "seize, grasp, handle",
+  "summary": "A hand closes on a garment or holds an instrument to use it. In a siege or pursuit the verb describes capture.",
+  "words": [
+    {
+      "lemma": "תָּפַשׂ",
+      "bdb": [
+        "w.bn.aa"
+      ],
+      "pos": "verb",
+      "gloss": "seize, grasp, handle",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take hold",
+          "senses": [
+            {
+              "gloss": "seize or capture",
+              "definition": "Joseph’s garment is caught in his flight. Joshua’s men seize the king of Ai alive, and the same verb can describe taking a whole city.",
+              "evidence": [
+                {
+                  "ref": "Gen.39.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jos.8.23"
+                },
+                {
+                  "ref": "Deu.20.19"
+                }
+              ]
+            },
+            {
+              "gloss": "handle or wield",
+              "definition": "The object identifies the skill. Jubal’s descendants play string and wind instruments, the sailor handles an oar, and the reaper grasps a sickle.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.21",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.27.29"
+                },
+                {
+                  "ref": "Jer.50.16"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be caught",
+          "senses": [
+            {
+              "gloss": "be caught",
+              "definition": "A king trying to escape will be taken captive. Psalm 10 speaks of being caught in schemes, with the identity of those caught supplied from the surrounding clause.",
+              "evidence": [
+                {
+                  "ref": "Jer.38.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.12.13"
+                },
+                {
+                  "ref": "Psa.10.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "catch or grasp with the hands",
+          "senses": [
+            {
+              "gloss": "catch or grasp with the hands",
+              "definition": "The proverb pictures a small lizard in a king’s palace. The verb can address someone able to catch it or describe the creature itself taking hold.",
+              "evidence": [
+                {
+                  "ref": "Pro.30.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-tephas"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-tephas",
+      "lang": "arc",
+      "form": "תְּפַס",
+      "translit": "təpas",
+      "gloss": "seize or catch",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "תְּפַס, Targum Psalms 10:9"
+        }
+      ],
+      "note": "Hebrew left-dotted sin corresponds here to Aramaic samekh."
+    }
+  ],
+  "doctrine": [],
+  "note": "Proverbs 30:28 permits two readings of the person of the verb. Topheth in the valley of Hinnom and the burning place in Isaiah 30:33 have no demonstrated derivation from the verb of capture."
+}
