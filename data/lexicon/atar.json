@@ -1,0 +1,189 @@
+{
+  "id": "atar",
+  "root": "עטר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "honour",
+    "royalty",
+    "protection"
+  ],
+  "gloss": "surround, crown, wreath",
+  "summary": "A crown surrounds the head and confers honour. Psalm 5 speaks of favour surrounding a person like a shield. Psalm 8 pictures glory and honour as a crown.",
+  "words": [
+    {
+      "lemma": "עָטַר",
+      "bdb": [
+        "p.ch.aa"
+      ],
+      "pos": "verb",
+      "gloss": "surround, crown",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "surround",
+          "senses": [
+            {
+              "gloss": "surround",
+              "definition": "Saul and his men close in on David. In Psalm 5 Yahweh surrounds the righteous person with favour as with a shield.",
+              "evidence": [
+                {
+                  "ref": "1Sa.23.26",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.5.13"
+                }
+              ],
+              "cognate_ids": [
+                "arc-atar"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "crown, adorn",
+          "senses": [
+            {
+              "gloss": "crown, adorn",
+              "definition": "Solomon wears the crown his mother placed on him. In Psalm 8 God crowns the human being with glory and honour.",
+              "evidence": [
+                {
+                  "ref": "Sng.3.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.8.6"
+                },
+                {
+                  "ref": "Psa.65.12"
+                },
+                {
+                  "ref": "Psa.103.4"
+                }
+              ],
+              "kin": [
+                "crown"
+              ],
+              "cognate_ids": [
+                "arc-atar"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bestow crowns",
+          "senses": [
+            {
+              "gloss": "bestow crowns",
+              "definition": "Isaiah calls Tyre the bestower of crowns and describes its merchants as princes.",
+              "evidence": [
+                {
+                  "ref": "Isa.23.8",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "crown"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲטָרָה",
+      "bdb": [
+        "p.ch.ab"
+      ],
+      "pos": "noun",
+      "gloss": "crown, wreath, honour",
+      "senses": [
+        {
+          "gloss": "crown",
+          "definition": "A crown is worn on the head as a mark of honour or royal authority. Jeremiah tells the king and queen mother that their crown has fallen.",
+          "evidence": [
+            {
+              "ref": "Sng.3.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.13.18"
+            },
+            {
+              "ref": "Ezk.21.31"
+            }
+          ],
+          "id": "crown",
+          "cognate_ids": [
+            "arc-atar"
+          ]
+        },
+        {
+          "gloss": "source of honour",
+          "definition": "Grandchildren are called the crown of the aged. Isaiah calls Yahweh a crown of splendour for his people.",
+          "evidence": [
+            {
+              "ref": "Pro.17.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.28.5"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "עֲטָרוֹת",
+      "bdb": [
+        "p.ch.ae"
+      ],
+      "pos": "name",
+      "gloss": "Ataroth",
+      "senses": [
+        {
+          "gloss": "Ataroth",
+          "definition": "Ataroth occurs among towns east of the Jordan and on the border of Joseph’s descendants. The name has the form of the plural of crown.",
+          "evidence": [
+            {
+              "ref": "Num.32.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.32.34"
+            },
+            {
+              "ref": "Jos.16.7"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-atar",
+      "lang": "arc",
+      "form": "עֲטַר",
+      "translit": "ʿăṭar",
+      "gloss": "wreathe, adorn, surround",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "עֲטַר, Targum on Psalm 73:6"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Both Hebrew verb keys return the same seven occurrences. The Syriac vapour word is a separate sense and gives no support for surrounding or crowning."
+}
