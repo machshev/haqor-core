@@ -1,0 +1,158 @@
+{
+  "id": "ramas",
+  "root": "רמס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "feet",
+    "land"
+  ],
+  "gloss": "trample, tread underfoot",
+  "summary": "A foot or a hoof presses down on what is beneath it. The pressure works clay, ruins pasture or crushes someone caught in a crowd. David pictures an enemy trampling his life to the ground.",
+  "words": [
+    {
+      "lemma": "רָמַס",
+      "bdb": [
+        "t.db.aa"
+      ],
+      "pos": "verb",
+      "gloss": "tread on, trample",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "tread on, trample down",
+          "senses": [
+            {
+              "gloss": "press with the feet",
+              "definition": "A potter works clay with his feet. What animals tread underfoot can be left unfit for grazing.",
+              "evidence": [
+                {
+                  "ref": "Isa.41.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Nam.3.14"
+                },
+                {
+                  "ref": "Ezk.34.18"
+                }
+              ],
+              "id": "tread",
+              "kin": [
+                "trampled"
+              ]
+            },
+            {
+              "gloss": "crush underfoot",
+              "definition": "The crowd tramples the officer at the gate until he dies. In Psalm 7 the speaker imagines his life trodden into the ground.",
+              "evidence": [
+                {
+                  "ref": "2Ki.7.17",
+                  "to": "2Ki.7.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.7.6"
+                },
+                {
+                  "ref": "Dan.8.7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be trampled",
+          "senses": [
+            {
+              "gloss": "be trampled",
+              "definition": "Ephraim’s proud crown will be trampled underfoot. The passive form places the crown beneath the conqueror’s feet.",
+              "evidence": [
+                {
+                  "ref": "Isa.28.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-remas"
+      ],
+      "greek": [
+        {
+          "lemma": "καταπατέω",
+          "gloss": "trample",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 7:6 word 5"
+            },
+            {
+              "ref": "Mat.7.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִרְמָס",
+      "bdb": [
+        "t.db.ab"
+      ],
+      "pos": "noun",
+      "gloss": "trampling, ground trodden down",
+      "senses": [
+        {
+          "gloss": "what is trampled",
+          "definition": "The other sheep must eat what the stronger animals have trodden down. A vineyard stripped of its wall becomes ground open to trampling.",
+          "evidence": [
+            {
+              "ref": "Ezk.34.18",
+              "to": "Ezk.34.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.5.5"
+            },
+            {
+              "ref": "Isa.7.25"
+            },
+            {
+              "ref": "Mic.7.10"
+            }
+          ],
+          "id": "trampled",
+          "kin": [
+            "tread"
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-remas"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-remas",
+      "lang": "arc",
+      "form": "רְמַס",
+      "translit": "rəmas",
+      "gloss": "tread, trample",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רְמַס, Targum Psalms 89:42"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The nominal redirect m.dm.ap has no separate occurrences."
+}
