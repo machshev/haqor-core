@@ -1,0 +1,98 @@
+{
+  "id": "tsiyon",
+  "root": "ציונ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "places",
+    "jerusalem",
+    "kings"
+  ],
+  "gloss": "Zion, the City of David",
+  "summary": "Zion is the stronghold David captures and the city where he settles. In the psalms it is Yahweh’s holy mountain, the seat of the king and the place from which help comes.",
+  "words": [
+    {
+      "lemma": "צִיּוֹן",
+      "bdb": [
+        "r.bt.ad"
+      ],
+      "pos": "name",
+      "gloss": "Zion",
+      "senses": [
+        {
+          "gloss": "the stronghold taken by David",
+          "definition": "The narrative expressly identifies the stronghold of Zion with the City of David. David takes up residence there.",
+          "evidence": [
+            {
+              "ref": "2Sa.5.7",
+              "to": "2Sa.5.9",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.8.1"
+            }
+          ]
+        },
+        {
+          "gloss": "Yahweh’s holy mountain and city",
+          "definition": "Yahweh names Zion as the mountain where he has installed his king. Worshippers bring praise and seek aid from there. Parallel lines name Zion beside Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Psa.2.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.9.12"
+            },
+            {
+              "ref": "Psa.14.7"
+            },
+            {
+              "ref": "Psa.20.3"
+            },
+            {
+              "ref": "Isa.2.3"
+            }
+          ]
+        },
+        {
+          "gloss": "Zion addressed as its people",
+          "definition": "The daughter of Zion is called to rejoice at the approach of her king. John quotes the address when Jesus enters Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Zec.9.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.12.14",
+              "to": "Jhn.12.16"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "Σιών",
+          "gloss": "Zion",
+          "relation": "loan",
+          "evidence": [
+            {
+              "ref": "Mat.21.5"
+            },
+            {
+              "ref": "Jhn.12.15"
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. Σιών, Hebrew צִיּוֹן"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The name is entered under its own consonants. Its location is fixed by 2 Samuel 5, but neither that narrative nor the Psalms derive it from צִיָּה “dryness.” Proposed derivations from a fortress or landmark remain uncertain."
+}
