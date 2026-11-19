@@ -1983,9 +1983,84 @@ pub fn entry_support_json(bible: &crate::bible::Bible, json: &str) -> Result<Str
     Ok(serde_json::to_string(&entry_support(&entry, &uses))?)
 }
 
+/// How often the entry written as `json` is used in the Hebrew Bible: the
+/// tokens of its `bdb` keys, all its words' together for a root entry, its
+/// own for a name entry. Zero when it names no keys or does not parse. The
+/// review page sorts by it.
+pub fn entry_uses(bible: &crate::bible::Bible, json: &str) -> usize {
+    uses_in(bible.conn(), "data.", json)
+}
+
+fn uses_in(db: &Connection, schema: &str, json: &str) -> usize {
+    // Only the keys are read, so an entry that fails the full schema still
+    // counts.
+    #[derive(Deserialize)]
+    struct Keys {
+        #[serde(default)]
+        root: String,
+        #[serde(default)]
+        bdb: Vec<String>,
+        #[serde(default)]
+        words: Vec<WordKeys>,
+    }
+    #[derive(Deserialize)]
+    struct WordKeys {
+        #[serde(default)]
+        root: Option<String>,
+        #[serde(default)]
+        bdb: Vec<String>,
+    }
+    let Ok(keys) = serde_json::from_str::<Keys>(json) else {
+        return 0;
+    };
+    let count = |key: &str, root: &str| bdb_tokens(db, schema, key, root).unwrap_or(0);
+    let own: usize = keys.bdb.iter().map(|key| count(key, &keys.root)).sum();
+    let words: usize = keys
+        .words
+        .iter()
+        .flat_map(|word| {
+            let root = word.root.as_deref().unwrap_or(&keys.root);
+            word.bdb.iter().map(move |key| (key, root))
+        })
+        .map(|(key, root)| count(key, root))
+        .sum();
+    own + words
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn entry_uses_counts_words_and_names_keys() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch(
+            "CREATE TABLE surface_entry (surface_id INTEGER, key TEXT);
+             CREATE TABLE word (surface_id INTEGER, ref INTEGER, info_id INTEGER);
+             CREATE TABLE word_info (info_id INTEGER, root TEXT, cell_id INTEGER);
+             CREATE TABLE morph_cell (cell_id INTEGER, part_of_speech TEXT);
+             CREATE TABLE lexicon_entry (key TEXT, root TEXT, pos TEXT);
+             INSERT INTO surface_entry VALUES (1, 'a.aa'), (2, 'a.ab'), (3, 'n.aa');
+             INSERT INTO word VALUES (1, 1, NULL), (1, 2, NULL), (1, 3, NULL),
+                                     (2, 4, NULL), (3, 5, NULL),
+                                     (1, 2621441, NULL);",
+        )
+        .unwrap();
+        let root = r#"{"id": "r", "root": "אמר", "words": [
+            {"lemma": "x", "bdb": ["a.aa"]},
+            {"lemma": "y", "bdb": ["a.ab"]},
+            {"lemma": "z"}
+        ]}"#;
+        // Only Old Testament tokens count: the last `a.aa` is in Matthew.
+        assert_eq!(uses_in(&db, "", root), 4);
+        let name = r#"{"id": "n", "root": "אמר", "bdb": ["n.aa"], "people": []}"#;
+        assert_eq!(uses_in(&db, "", name), 1);
+        assert_eq!(
+            uses_in(&db, "", r#"{"id": "q", "root": "q", "words": []}"#),
+            0
+        );
+        assert_eq!(uses_in(&db, "", "not json"), 0);
+    }
 
     fn verses() -> HashSet<i64> {
         [pack_ref(1, 2, 7), pack_ref(1, 2, 8), pack_ref(1, 1, 24)]
