@@ -1,0 +1,541 @@
+{
+  "id": "asar-bind",
+  "root": "אסר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "binding",
+    "imprisonment",
+    "vows"
+  ],
+  "gloss": "tie, bind, imprison, obligate",
+  "summary": "A rope can bind a person and an oath can bind the person who speaks it. Psalm 2 uses bands and cords for the rule the kings wish to throw off. Daniel uses a related Aramaic noun for the royal prohibition on prayer.",
+  "words": [
+    {
+      "lemma": "אָסַר",
+      "bdb": [
+        "a.ew.aa"
+      ],
+      "pos": "verb",
+      "gloss": "tie, harness, imprison, bind by a vow",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bind",
+          "senses": [
+            {
+              "gloss": "tie or harness",
+              "definition": "An animal can be tethered to a vine and horses harnessed to a chariot. Samson is tied with new ropes.",
+              "evidence": [
+                {
+                  "ref": "Gen.49.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.14.6"
+                },
+                {
+                  "ref": "Jdg.16.12"
+                }
+              ],
+              "kin": [
+                "bond"
+              ]
+            },
+            {
+              "gloss": "put in custody",
+              "definition": "Joseph binds Simeon before the brothers’ eyes. Those confined in the king’s prison are described as bound.",
+              "evidence": [
+                {
+                  "ref": "Gen.42.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.39.20"
+                }
+              ],
+              "cognate_ids": [
+                "arc-asar"
+              ]
+            },
+            {
+              "gloss": "bind oneself by a commitment",
+              "definition": "The speaker takes on a binding obligation by the words of a vow or oath.",
+              "evidence": [
+                {
+                  "ref": "Num.30.3",
+                  "to": "Num.30.5",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "obligation"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be bound or detained",
+          "senses": [
+            {
+              "gloss": "be held in bonds",
+              "definition": "One brother is to remain in custody while the others return home. Delilah asks how Samson can be bound.",
+              "evidence": [
+                {
+                  "ref": "Gen.42.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.16.6"
+                }
+              ],
+              "cognate_ids": [
+                "arc-asar"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be bound as captives",
+          "senses": [
+            {
+              "gloss": "be taken and bound",
+              "definition": "The leaders flee but are captured and bound together.",
+              "evidence": [
+                {
+                  "ref": "Isa.22.3",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-asar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָסִיר",
+      "bdb": [
+        "a.ew.ac"
+      ],
+      "pos": "noun",
+      "gloss": "prisoner",
+      "senses": [
+        {
+          "gloss": "prisoner",
+          "definition": "The prisoner is one held captive, whose groaning reaches Yahweh and whose freedom he can restore.",
+          "evidence": [
+            {
+              "ref": "Psa.102.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.79.11"
+            },
+            {
+              "ref": "Zec.9.11"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-asar"
+      ]
+    },
+    {
+      "lemma": "אִסָּר",
+      "bdb": [
+        "a.ew.af"
+      ],
+      "pos": "noun",
+      "gloss": "binding obligation",
+      "senses": [
+        {
+          "gloss": "obligation undertaken by oath",
+          "definition": "The oath puts an obligation upon the person who speaks it. The law says when the obligation stands or can be annulled.",
+          "evidence": [
+            {
+              "ref": "Num.30.3",
+              "to": "Num.30.6",
+              "role": "defining"
+            }
+          ],
+          "id": "obligation"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מוֹסֵר",
+      "bdb": [
+        "a.ew.ah",
+        "m.az.ak"
+      ],
+      "pos": "noun",
+      "gloss": "band, fetter",
+      "senses": [
+        {
+          "gloss": "bond that restrains",
+          "definition": "The bands about a captive’s neck can be loosened. In Psalm 2 the rulers speak of tearing bands apart and casting away cords to reject the rule imposed on them.",
+          "evidence": [
+            {
+              "ref": "Isa.52.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.2.3"
+            },
+            {
+              "ref": "Jer.30.8"
+            },
+            {
+              "ref": "Psa.116.16"
+            }
+          ],
+          "id": "bond"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "אֵסוּר",
+      "bdb": [
+        "a.ew.ab"
+      ],
+      "pos": "noun",
+      "gloss": "bond, place of confinement",
+      "senses": [
+        {
+          "gloss": "bond, place of confinement",
+          "definition": "Samson’s bonds fall from his hands. A house of bonds is a prison, as in the confinement of Jeremiah.",
+          "evidence": [
+            {
+              "ref": "Jdg.15.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.37.15"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "אַסִּיר",
+      "bdb": [
+        "a.ew.ad"
+      ],
+      "pos": "noun",
+      "gloss": "captive",
+      "senses": [
+        {
+          "gloss": "captive",
+          "definition": "A person confined in a pit or dungeon, who can be brought out into the light.",
+          "evidence": [
+            {
+              "ref": "Isa.42.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.24.22"
+            },
+            {
+              "ref": "Isa.10.4"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-asar"
+      ]
+    },
+    {
+      "lemma": "מָסֹרֶת",
+      "bdb": [
+        "a.ew.ag",
+        "m.ct.ab"
+      ],
+      "pos": "noun",
+      "gloss": "binding force",
+      "senses": [
+        {
+          "gloss": "binding force",
+          "definition": "Yahweh brings his people under the rod and into the bond of the covenant. The noun occurs only here.",
+          "evidence": [
+            {
+              "ref": "Ezk.20.37",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "אֱסָר",
+      "bdb": [
+        "xa.bd.ac"
+      ],
+      "pos": "noun",
+      "gloss": "binding prohibition",
+      "senses": [
+        {
+          "gloss": "binding prohibition",
+          "definition": "Daniel’s opponents ask the king to sign a prohibition on petitions to anyone except the king for thirty days.",
+          "evidence": [
+            {
+              "ref": "Dan.6.8",
+              "to": "Dan.6.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc"
+    },
+    {
+      "lemma": "אֱסוּר",
+      "bdb": [
+        "xa.bd.ab"
+      ],
+      "pos": "noun",
+      "gloss": "band, imprisonment",
+      "senses": [
+        {
+          "gloss": "band, imprisonment",
+          "definition": "An iron and bronze band encircles the stump in Nebuchadnezzar’s dream. In Ezra the plural describes confinement as a penalty.",
+          "evidence": [
+            {
+              "ref": "Dan.4.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.4.20"
+            },
+            {
+              "ref": "Ezr.7.26"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc",
+      "root": "אסור"
+    },
+    {
+      "lemma": "אֶסַר",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "bind, fasten",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "bind or fasten",
+          "senses": [
+            {
+              "gloss": "tie or put in bonds",
+              "definition": "The colt is tied where the disciples are sent to find it, and Agabus binds his feet and hands with Paul’s belt. Jesus also speaks of binding and loosing as acts of authority.",
+              "evidence": [
+                {
+                  "ref": "Mrk.11.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.21.11"
+                },
+                {
+                  "ref": "Mat.18.18"
+                }
+              ],
+              "kin": [
+                "bond"
+              ],
+              "cognate_ids": [
+                "arc-asar"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be bound",
+          "senses": [
+            {
+              "gloss": "be bound",
+              "definition": "Paul says he is ready to be bound in Jerusalem. Mark describes a man who had repeatedly been bound with chains.",
+              "evidence": [
+                {
+                  "ref": "Act.21.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mrk.5.4"
+                }
+              ],
+              "cognate_ids": [
+                "arc-asar"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "אַסוּרָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "chain, fetter",
+      "senses": [
+        {
+          "gloss": "chain, fetter",
+          "definition": "The jailer finds the doors open and the prisoners’ bonds loosened. Paul points to his bonds when addressing Agrippa.",
+          "evidence": [
+            {
+              "ref": "Act.16.26",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.26.29"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
+    },
+    {
+      "lemma": "אַסוּרְיָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "bondage",
+      "senses": [
+        {
+          "gloss": "bondage",
+          "definition": "Jesus asks whether the daughter of Abraham ought to be loosed from the bondage under which she has suffered.",
+          "evidence": [
+            {
+              "ref": "Luk.13.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
+    },
+    {
+      "lemma": "אַסִירָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "prisoner, place of custody",
+      "senses": [
+        {
+          "gloss": "a prisoner or one under arrest",
+          "definition": "Barabbas is called a notorious prisoner. Paul speaks of himself as a prisoner for the sake of others.",
+          "evidence": [
+            {
+              "ref": "Mat.27.15",
+              "to": "Mat.27.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Eph.3.1"
+            }
+          ],
+          "cognate_ids": [
+            "arc-asar"
+          ]
+        },
+        {
+          "gloss": "prison in the expression house of prisoners",
+          "definition": "Herod puts John in custody. Jesus speaks of visiting him in prison.",
+          "evidence": [
+            {
+              "ref": "Mat.14.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.25.36"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m"
+    },
+    {
+      "lemma": "אֶסָרָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "belt or binding",
+      "senses": [
+        {
+          "gloss": "belt or binding",
+          "definition": "John wears a leather belt. Mark uses the word in describing the binding of a man’s tongue coming loose.",
+          "evidence": [
+            {
+              "ref": "Mat.3.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Mrk.7.35"
+            },
+            {
+              "ref": "Rev.1.13"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
+    },
+    {
+      "lemma": "מֵאסַרְתָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "bundle",
+      "senses": [
+        {
+          "gloss": "bundle",
+          "definition": "Reapers are instructed to tie weeds into bundles for burning.",
+          "evidence": [
+            {
+              "ref": "Mat.13.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-asar",
+      "lang": "arc",
+      "form": "אֲסַר",
+      "translit": "ʾăsar",
+      "gloss": "chain, imprison",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲסַר, Targum 2 Kings 17:4"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Moserah and Moseroth are wilderness stations (Deuteronomy 10:6 and Numbers 33:30). Their derivation from a band is uncertain. Esarhaddon bears an Assyrian royal name and Esther’s longer name gives no evidence of this root. Neither is assigned here. The similar Syriac word for a copper coin in Matthew 10:29 is a loan corresponding to ἀσσάριον. The word for wood in the Aramaic index belongs to ets."
+}
