@@ -1,0 +1,127 @@
+{
+  "id": "yatom",
+  "root": "יתמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "family",
+    "justice"
+  ],
+  "gloss": "fatherless child, orphan",
+  "summary": "The law treats a child deprived of a father’s protection as particularly exposed to exploitation. Psalm 10 names Yahweh as that child’s helper and judge.",
+  "words": [
+    {
+      "lemma": "יָתוֹם",
+      "bdb": [
+        "j.ed.ab"
+      ],
+      "pos": "noun",
+      "gloss": "fatherless child, orphan",
+      "senses": [
+        {
+          "gloss": "child deprived of a father’s protection",
+          "definition": "The law forbids oppressing the widow or the fatherless. Gleanings remaining in the field are left for the stranger, the fatherless and the widow.",
+          "evidence": [
+            {
+              "ref": "Exo.22.21",
+              "to": "Exo.22.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.24.19",
+              "to": "Deu.24.21"
+            }
+          ]
+        },
+        {
+          "gloss": "one dependent on another for justice",
+          "definition": "The helpless person entrusts himself to Yahweh, who helps the fatherless. Psalm 10 asks him to judge the cause of the fatherless and oppressed.",
+          "evidence": [
+            {
+              "ref": "Psa.10.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.10.18"
+            },
+            {
+              "ref": "Psa.68.6"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-aytama"
+      ],
+      "greek": [
+        {
+          "lemma": "ὀρφανός",
+          "gloss": "orphan",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 24:19, fatherless children with widows"
+            },
+            {
+              "ref": "Jas.1.27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַתְמָא",
+      "pos": "noun",
+      "gloss": "orphan, one bereaved",
+      "senses": [
+        {
+          "gloss": "orphan",
+          "definition": "James names care for orphans and widows in their affliction.",
+          "evidence": [
+            {
+              "ref": "Jas.1.27",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "one left bereft",
+          "definition": "Jesus promises the disciples that he will not leave them bereft. Paul describes separation from the Thessalonians as a bereavement.",
+          "evidence": [
+            {
+              "ref": "Jhn.14.18",
+              "role": "defining"
+            },
+            {
+              "ref": "1Th.2.17"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-aytama"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-aytama",
+      "lang": "ar",
+      "form": "أَيْتَمَهُ",
+      "translit": "ʾaytamahu",
+      "gloss": "made him fatherless",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3063, يتـم, أَيْتَمَهُ n44784"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Fatherless captures the recurrent social setting of the Hebrew noun. The Syriac can also describe living people bereft of someone’s presence."
+}
