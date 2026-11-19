@@ -1,0 +1,187 @@
+{
+  "id": "ner-lamp",
+  "root": "נור",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "light",
+    "sanctuary"
+  ],
+  "gloss": "lamp, lampstand, fire",
+  "summary": "A lamp is a light kept burning with oil. This underlies the promises of a continuing lamp for David and his appeal to Yahweh as the one who lights his darkness.",
+  "words": [
+    {
+      "lemma": "נֵר",
+      "bdb": [
+        "n.ch.ab",
+        "n.ch.ad"
+      ],
+      "pos": "noun",
+      "gloss": "lamp, continuing light",
+      "senses": [
+        {
+          "gloss": "lamp",
+          "definition": "Oil supplies the light of the lamps in the sanctuary. In the psalm, Yahweh lights David’s lamp and dispels his darkness.",
+          "evidence": [
+            {
+              "ref": "Exo.27.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.18.29"
+            },
+            {
+              "ref": "1Sa.3.3"
+            }
+          ]
+        },
+        {
+          "gloss": "continuing life or dynasty",
+          "definition": "David’s men fear that his death will extinguish Israel’s lamp. The alternative form נִיר denotes a continuing line for David in Jerusalem.",
+          "evidence": [
+            {
+              "ref": "2Sa.21.17",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.11.36"
+            },
+            {
+              "ref": "1Ki.15.4"
+            },
+            {
+              "ref": "Psa.132.17"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-nuru"
+      ]
+    },
+    {
+      "lemma": "מְנוֹרָה",
+      "bdb": [
+        "n.ch.af"
+      ],
+      "pos": "noun",
+      "gloss": "lampstand",
+      "senses": [
+        {
+          "gloss": "lampstand",
+          "definition": "The tabernacle’s gold lampstand has branches, cups and seven lamps. The lampstand supports the lights.",
+          "evidence": [
+            {
+              "ref": "Exo.25.31",
+              "to": "Exo.25.37",
+              "role": "defining"
+            },
+            {
+              "ref": "Zec.4.2"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "נוּר",
+      "bdb": [
+        "xn.ae.ac"
+      ],
+      "pos": "noun",
+      "gloss": "fire",
+      "senses": [
+        {
+          "gloss": "fire",
+          "definition": "In Daniel the furnace burns with fire; another vision portrays a stream of fire issuing from before the throne.",
+          "evidence": [
+            {
+              "ref": "Dan.3.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.7.9",
+              "to": "Dan.7.10"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "syc-nura"
+      ]
+    },
+    {
+      "lemma": "נוּרָא",
+      "pos": "noun",
+      "gloss": "fire",
+      "senses": [
+        {
+          "gloss": "fire",
+          "definition": "A tree that bears no good fruit is cut down and thrown into the fire.",
+          "evidence": [
+            {
+              "ref": "Mat.3.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "מְנָרְתָא",
+      "pos": "noun",
+      "gloss": "lampstand",
+      "senses": [
+        {
+          "gloss": "lampstand",
+          "definition": "John sees seven golden lampstands and a figure standing among them.",
+          "evidence": [
+            {
+              "ref": "Rev.1.12",
+              "to": "Rev.1.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-nuru",
+      "lang": "akk",
+      "form": "nūru",
+      "translit": "nūru",
+      "gloss": "light",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "nūru [light] N, armep x000014390"
+        }
+      ]
+    },
+    {
+      "id": "syc-nura",
+      "lang": "syc",
+      "form": "ܢܘܪܐ",
+      "translit": "nūrā",
+      "gloss": "fire",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1939, Matthew 3:10; lampstand is lexeme 1938"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The context distinguishes the dynastic lamp נִיר from the homograph for newly broken ground."
+}
