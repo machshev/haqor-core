@@ -1,0 +1,153 @@
+{
+  "id": "heikhal",
+  "root": "היכל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "buildings",
+    "kings",
+    "worship"
+  ],
+  "gloss": "palace, temple",
+  "summary": "Ahab’s royal residence and Yahweh’s sanctuary are both called a heikhal. In Psalm 5 the worshipper directs himself toward the holy temple when he bows down.",
+  "words": [
+    {
+      "lemma": "הֵיכָל",
+      "bdb": [
+        "e.bh.aa"
+      ],
+      "pos": "noun",
+      "gloss": "palace, temple",
+      "senses": [
+        {
+          "gloss": "palace",
+          "definition": "Naboth’s vineyard lies beside Ahab’s palace. Isaiah speaks of the palace of the Babylonian king.",
+          "evidence": [
+            {
+              "ref": "1Ki.21.1",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.20.18"
+            }
+          ],
+          "cognate_ids": [
+            "akk-ekallu"
+          ]
+        },
+        {
+          "gloss": "temple, sanctuary",
+          "definition": "Hannah prays at Yahweh’s sanctuary, where Eli sits beside the doorpost. David turns toward the holy temple to worship.",
+          "evidence": [
+            {
+              "ref": "1Sa.1.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.5.8"
+            },
+            {
+              "ref": "Psa.11.4"
+            },
+            {
+              "ref": "Psa.18.7"
+            }
+          ],
+          "cognate_ids": [
+            "akk-ekallu"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "הֵיכַל",
+      "bdb": [
+        "xe.af.ab"
+      ],
+      "pos": "noun",
+      "gloss": "palace, temple",
+      "senses": [
+        {
+          "gloss": "royal palace",
+          "definition": "Nebuchadnezzar walks on the roof of the royal palace in Babylon.",
+          "evidence": [
+            {
+              "ref": "Dan.4.26",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "akk-ekallu"
+          ]
+        },
+        {
+          "gloss": "temple",
+          "definition": "The elders distinguish the temple in Jerusalem from the temple in Babylon where its vessels had been deposited.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezr.6.5"
+            }
+          ],
+          "cognate_ids": [
+            "akk-ekallu"
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc"
+    },
+    {
+      "lemma": "הַיְכְּלָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "temple",
+      "senses": [
+        {
+          "gloss": "temple",
+          "definition": "Jesus enters the Jerusalem temple, where he also teaches and receives the blind and lame.",
+          "evidence": [
+            {
+              "ref": "Mat.21.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.21.14"
+            },
+            {
+              "ref": "Mat.21.23"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-ekallu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ekallu",
+      "lang": "akk",
+      "form": "ekallu",
+      "translit": "ekallu",
+      "gloss": "palace",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000129030, ekallu [palace] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The word is entered under its own consonants. Akkadian ekallu supplies the palace comparison. A verse can describe a sanctuary or its main hall, depending on the extent of the building in view."
+}
