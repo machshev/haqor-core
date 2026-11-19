@@ -1,0 +1,115 @@
+{
+  "id": "oreph",
+  "root": "ערפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "body",
+    "movement"
+  ],
+  "gloss": "nape, break the neck",
+  "summary": "The nape is visible when someone turns away. Hebrew draws on this posture to describe both retreat from a pursuer and a refusal to listen.",
+  "words": [
+    {
+      "lemma": "עֹרֶף",
+      "bdb": [
+        "p.fp.ab"
+      ],
+      "pos": "noun",
+      "gloss": "nape, back of the neck",
+      "senses": [
+        {
+          "gloss": "nape or back turned in flight",
+          "definition": "Jacob pictures Judah’s hand on the neck of his enemies. David thanks Yahweh for giving him his enemies’ backs as they flee.",
+          "evidence": [
+            {
+              "ref": "Gen.49.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.18.41"
+            },
+            {
+              "ref": "2Sa.22.41"
+            }
+          ]
+        },
+        {
+          "gloss": "stiff neck",
+          "definition": "Israel is called stiff-necked after making the calf. Jeremiah joins stiffening the neck to refusing to listen.",
+          "evidence": [
+            {
+              "ref": "Exo.32.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.17.23"
+            },
+            {
+              "ref": "Isa.48.4"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-urf"
+      ]
+    },
+    {
+      "lemma": "עָרַף",
+      "bdb": [
+        "p.fp.ac"
+      ],
+      "pos": "verb",
+      "gloss": "break the neck",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "break the neck",
+          "senses": [
+            {
+              "gloss": "break the neck",
+              "definition": "The owner must break the neck of a firstborn donkey left unredeemed. The elders break a heifer’s neck in the prescribed inquiry into an unsolved killing. Hosea applies the verb to destroying altars.",
+              "evidence": [
+                {
+                  "ref": "Exo.13.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.21.4"
+                },
+                {
+                  "ref": "Hos.10.2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-urf",
+      "lang": "ar",
+      "form": "عُرْف",
+      "translit": "ʿurf",
+      "gloss": "mane growing along the neck",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 2014, n28734, mane or hair on the ridge of the neck"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic mane word names the hair along the neck and offers a possible comparison. The Hebrew noun itself designates the back of the neck.",
+  "homograph": 1
+}
