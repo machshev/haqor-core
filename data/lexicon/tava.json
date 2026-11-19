@@ -1,0 +1,254 @@
+{
+  "id": "tava",
+  "root": "טבע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "water",
+    "authority"
+  ],
+  "gloss": "sink, ring, seal",
+  "summary": "A foot sinks into mud and a stone embeds itself in a forehead. A signet makes an impression in a sealing material. The noun also names plain rings used as fittings.",
+  "words": [
+    {
+      "lemma": "טָבַע",
+      "bdb": [
+        "i.af.aa"
+      ],
+      "pos": "verb",
+      "gloss": "sink, be embedded",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sink into a pit, mud or another surface",
+          "senses": [
+            {
+              "gloss": "sink into a pit, mud or another surface",
+              "definition": "The nations sink into the pit they dug. Jeremiah sinks into the mud at the bottom of the cistern. David’s stone sinks into the Philistine’s forehead.",
+              "evidence": [
+                {
+                  "ref": "Psa.9.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.38.6"
+                },
+                {
+                  "ref": "1Sa.17.49"
+                }
+              ],
+              "id": "sink"
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be sunk beneath water",
+          "senses": [
+            {
+              "gloss": "be sunk beneath water",
+              "definition": "Pharaoh’s chosen officers go down into the sea in the song celebrating Israel’s escape.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be sunk or set deep",
+          "senses": [
+            {
+              "gloss": "be sunk or set deep",
+              "definition": "Job is asked what the earth’s bases were sunk into. The women in Jeremiah’s warning picture the king’s feet sunk in the mire.",
+              "evidence": [
+                {
+                  "ref": "Job.38.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.38.22"
+                },
+                {
+                  "ref": "Pro.8.25"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-tebu",
+        "arc-teba"
+      ]
+    },
+    {
+      "lemma": "טַבַּעַת",
+      "bdb": [
+        "i.af.ab"
+      ],
+      "pos": "noun",
+      "gloss": "ring, signet ring",
+      "senses": [
+        {
+          "gloss": "signet ring",
+          "definition": "Pharaoh takes the ring from his hand and gives it to Joseph. Ahasuerus gives his ring to Mordecai, and letters sealed with it bear royal authority.",
+          "evidence": [
+            {
+              "ref": "Gen.41.42",
+              "role": "defining"
+            },
+            {
+              "ref": "Est.8.2"
+            },
+            {
+              "ref": "Est.8.8"
+            }
+          ],
+          "id": "signet"
+        },
+        {
+          "gloss": "ring for holding a pole or fastening",
+          "definition": "Gold rings on the ark receive the poles by which it is carried.",
+          "evidence": [
+            {
+              "ref": "Exo.25.12",
+              "to": "Exo.25.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "טְבַע",
+      "pos": "verb",
+      "gloss": "sink, seal",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "sink or close with a seal",
+          "senses": [
+            {
+              "gloss": "sink into water",
+              "definition": "Peter begins to sink as he walks on the water. The boats are so full of fish that they begin to sink.",
+              "evidence": [
+                {
+                  "ref": "Mat.14.30",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.5.7"
+                }
+              ],
+              "kin": [
+                "sink"
+              ]
+            },
+            {
+              "gloss": "seal shut",
+              "definition": "The scroll in Revelation is sealed, and the entrance to the abyss is sealed shut.",
+              "evidence": [
+                {
+                  "ref": "Rev.5.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Rev.20.3"
+                }
+              ],
+              "kin": [
+                "signet"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "cause to sink, drown",
+          "senses": [
+            {
+              "gloss": "cause to sink, drown",
+              "definition": "The millstone saying pictures someone drowned in the sea. Harmful desires plunge people into ruin.",
+              "evidence": [
+                {
+                  "ref": "Mat.18.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ti.6.9"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "טַבְעָא",
+      "pos": "noun",
+      "gloss": "seal",
+      "senses": [
+        {
+          "gloss": "seal",
+          "definition": "The scroll is closed with seven seals. Each is opened in turn.",
+          "evidence": [
+            {
+              "ref": "Rev.5.1",
+              "to": "Rev.5.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.6.1"
+            },
+            {
+              "ref": "Rev.8.1"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-tebu",
+      "lang": "akk",
+      "form": "ṭebû",
+      "translit": "ṭebû",
+      "gloss": "sink, submerge",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000016770, ṭebû [sink]"
+        }
+      ]
+    },
+    {
+      "id": "arc-teba",
+      "lang": "arc",
+      "form": "טְבַע",
+      "translit": "ṭəbaʿ",
+      "gloss": "sink",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "טְבַע, Targum 1 Samuel 17:49 and Pesahim 40b"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The physical impression made by a signet offers a possible link to sinking into a surface. An ordinary carrying ring need not have been engraved."
+}
