@@ -1,0 +1,94 @@
+{
+  "id": "tokh-deceit",
+  "root": "תככ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "oppression",
+    "speech"
+  ],
+  "gloss": "oppression, injurious dealing",
+  "summary": "Psalm 72 places this noun beside violence, while Psalm 10 places it in the mouth of a man who preys on the poor.",
+  "words": [
+    {
+      "lemma": "תֹּךְ",
+      "bdb": [
+        "w.ap.ab"
+      ],
+      "pos": "noun",
+      "gloss": "oppression, harm, deceit",
+      "senses": [
+        {
+          "gloss": "oppressive dealing",
+          "definition": "The king rescues the poor from oppression and violence. In Psalm 55 such dealing fills the city alongside fraud.",
+          "evidence": [
+            {
+              "ref": "Psa.72.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.55.12"
+            }
+          ]
+        },
+        {
+          "gloss": "harmful or deceitful speech",
+          "definition": "The wicked man’s mouth is full of curses, deceit and oppressive speech, with trouble and mischief under his tongue.",
+          "evidence": [
+            {
+              "ref": "Psa.10.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-tekhakh"
+      ]
+    },
+    {
+      "lemma": "תְּכָכִים",
+      "bdb": [
+        "w.ap.ac"
+      ],
+      "pos": "noun",
+      "gloss": "oppressive dealings",
+      "senses": [
+        {
+          "gloss": "oppressive dealings",
+          "definition": "Proverbs sets the poor person beside a man characterized by these dealings. Both receive light for their eyes from Yahweh.",
+          "evidence": [
+            {
+              "ref": "Pro.29.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-tekhakh"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-tekhakh",
+      "lang": "arc",
+      "form": "תְּכַךְ",
+      "translit": "təḵaḵ",
+      "gloss": "press, squeeze, impose a penalty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "תְּכַךְ I, Targum Proverbs 17:26"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The extent to which deception rather than coercion is inherent in the noun remains uncertain. The middle or midst is covered by tavek. Blue-dyed fabric belongs to a separate lexical history."
+}
