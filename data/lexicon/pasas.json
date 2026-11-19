@@ -1,0 +1,126 @@
+{
+  "id": "pasas",
+  "root": "פסס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "absence",
+    "clothing"
+  ],
+  "gloss": "disappear, cease",
+  "summary": "Psalm 12 uses this verb alongside a statement that the faithful person has come to an end. It is the only biblical occurrence of the verb.",
+  "words": [
+    {
+      "lemma": "פָּסַס",
+      "bdb": [
+        "q.cc.aa"
+      ],
+      "pos": "verb",
+      "gloss": "disappear, cease",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "disappear",
+          "senses": [
+            {
+              "gloss": "disappear",
+              "definition": "The psalmist appeals to Yahweh because trustworthy people have disappeared from human society. The preceding clause uses גמר of the end of the faithful person.",
+              "evidence": [
+                {
+                  "ref": "Psa.12.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פַּס",
+      "bdb": [
+        "q.cb.ab"
+      ],
+      "pos": "noun",
+      "gloss": "distinctive feature of a tunic",
+      "senses": [
+        {
+          "gloss": "distinctive feature of a tunic",
+          "definition": "Joseph’s special tunic marks his father’s favour. Tamar wears the same kind of garment as a royal daughter. The narratives identify the wearers more securely than the garment’s construction.",
+          "evidence": [
+            {
+              "ref": "Gen.37.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.37.23"
+            },
+            {
+              "ref": "2Sa.13.18",
+              "to": "2Sa.13.19"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-pas"
+      ]
+    },
+    {
+      "lemma": "פִּסָּה",
+      "bdb": [
+        "q.cb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "abundance or quantity",
+      "senses": [
+        {
+          "gloss": "abundance or quantity",
+          "definition": "The psalm asks for grain in the land, even on mountain tops, where the harvest is pictured as waving like Lebanon.",
+          "evidence": [
+            {
+              "ref": "Psa.72.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-pasasu",
+      "lang": "akk",
+      "form": "pasāsu",
+      "translit": "pasāsu",
+      "gloss": "erase, obliterate",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep, x000010240, pasāsu [erase]"
+        }
+      ],
+      "note": "The sense of being blotted out offers a possible parallel for disappearing in Psalm 12."
+    },
+    {
+      "id": "arc-pas",
+      "lang": "arc",
+      "form": "פַּס",
+      "translit": "pas",
+      "gloss": "strip, stripe",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "פַּס, Targum Onkelos Genesis 37:3 and 37:23"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The garment word has been understood of stripes or of length reaching to the extremities. Neither its meaning nor the grain noun in Psalm 72 establishes a connection with disappearing. Pispa’s name is also unexplained."
+}
