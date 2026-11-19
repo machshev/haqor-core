@@ -1,0 +1,178 @@
+{
+  "id": "tsaaq",
+  "root": "צעק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "prayer"
+  ],
+  "gloss": "cry out, outcry",
+  "summary": "A cry makes distress or injustice heard. Its object may be a human listener or Yahweh. The same verb can describe a call that brings a group of people together.",
+  "words": [
+    {
+      "lemma": "צָעַק",
+      "bdb": [
+        "r.dc.aa"
+      ],
+      "pos": "verb",
+      "gloss": "cry out, summon",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cry aloud",
+          "senses": [
+            {
+              "gloss": "cry out for help",
+              "definition": "The Israelites cry to Yahweh when Pharaoh approaches. A widow or orphan may cry out to him against mistreatment.",
+              "evidence": [
+                {
+                  "ref": "Exo.14.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.22.21",
+                  "to": "Exo.22.23"
+                }
+              ],
+              "id": "cry"
+            },
+            {
+              "gloss": "make a loud protest or appeal",
+              "definition": "Esau cries bitterly when he hears that his brother has received the blessing.",
+              "evidence": [
+                {
+                  "ref": "Gen.27.34",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be summoned, assemble at a call",
+          "senses": [
+            {
+              "gloss": "be summoned, assemble at a call",
+              "definition": "When Gideon sends word, men assemble to pursue Midian. The Ephraimites likewise gather and cross over to confront Jephthah.",
+              "evidence": [
+                {
+                  "ref": "Jdg.7.23",
+                  "to": "Jdg.7.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.12.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "summon others",
+          "senses": [
+            {
+              "gloss": "summon others",
+              "definition": "Samuel calls the people together before Yahweh at Mizpah.",
+              "evidence": [
+                {
+                  "ref": "1Sa.10.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "cry out aloud",
+          "senses": [
+            {
+              "gloss": "cry out aloud",
+              "definition": "As Elijah departs, Elisha cries after him, calling him his father and Israel’s chariotry and horsemen.",
+              "evidence": [
+                {
+                  "ref": "2Ki.2.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-tseaq"
+      ]
+    },
+    {
+      "lemma": "צְעָקָה",
+      "bdb": [
+        "r.dc.ab"
+      ],
+      "pos": "noun",
+      "gloss": "cry, outcry",
+      "senses": [
+        {
+          "gloss": "appeal from distress",
+          "definition": "Psalm 9 says that the one who calls bloodshed to account remembers the cry of the afflicted. Yahweh tells Moses that Israel’s cry has reached him.",
+          "evidence": [
+            {
+              "ref": "Psa.9.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.3.7",
+              "to": "Exo.3.9"
+            }
+          ],
+          "kin": [
+            "cry"
+          ]
+        },
+        {
+          "gloss": "loud cry of grief or outrage",
+          "definition": "A great cry rises throughout Egypt on the night the firstborn die. The outcry against Sodom prompts investigation.",
+          "evidence": [
+            {
+              "ref": "Exo.12.30",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.18.20",
+              "to": "Gen.18.21"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-tseaq"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-tseaq",
+      "lang": "arc",
+      "form": "צעק",
+      "translit": "ṣʿq",
+      "gloss": "cry",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001303, Aramaic ARM025765 ṢʿQ [cry] and Hebrew HEB006358 ṣaʿaq"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ",
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Psalm 9 describes the outcry as heard and remembered. Other passages make the content explicit through the words of the speaker or the response to a summons."
+}
