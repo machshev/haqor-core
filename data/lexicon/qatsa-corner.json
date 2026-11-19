@@ -1,0 +1,79 @@
+{
+  "id": "qatsa-corner",
+  "root": "קצע",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [],
+  "homograph": 2,
+  "gloss": "corner, set in corners",
+  "summary": "The noun marks the angle where sides meet in a structure, including a city wall. Ezekiel uses a related passive form of the four small courts at the corners of the outer court.",
+  "words": [
+    {
+      "lemma": "מִקְצֹעַ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.cs.ab"
+      ],
+      "gloss": "corner, angle",
+      "senses": [
+        {
+          "id": "angle",
+          "gloss": "corner, angle",
+          "definition": "A place where sides meet or a wall changes direction.",
+          "evidence": [
+            {
+              "ref": "Exo.26.24",
+              "role": "defining",
+              "note": "The two paired frames are joined at the two corners of the dwelling."
+            },
+            {
+              "ref": "Neh.3.20",
+              "role": "defining",
+              "note": "Baruch’s section of wall starts at the angle and runs to the entrance of Eliashib’s house."
+            },
+            {
+              "ref": "Ezk.46.21",
+              "role": "defining",
+              "note": "Ezekiel finds a smaller court in each of the four corners of the outer court."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָצַע",
+      "pos": "verb",
+      "bdb": [
+        "s.cs.ac"
+      ],
+      "gloss": "set in corners",
+      "stems": [
+        {
+          "stem": "hophal",
+          "gloss": "set in corners",
+          "senses": [
+            {
+              "id": "cornered",
+              "gloss": "set in corners",
+              "definition": "Situated at the corners of a larger enclosure.",
+              "evidence": [
+                {
+                  "ref": "Ezk.46.22",
+                  "role": "defining",
+                  "note": "The description gives the same dimensions for all four courts just located at the corners."
+                }
+              ],
+              "kin": [
+                "angle"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The four-court arrangement gives the passive form its probable meaning. Its only occurrence is the final word of Ezekiel 46:22. A historical connection between the architectural and scraping terms remains uncertain."
+}
