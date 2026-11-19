@@ -1,0 +1,212 @@
+{
+  "id": "barach",
+  "root": "ברח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "flight",
+    "travel",
+    "construction"
+  ],
+  "gloss": "flee, pass through, crossbar",
+  "summary": "David flees when Absalom threatens him. Exodus uses the verb beside its related noun for a bar running through the frames of the dwelling.",
+  "words": [
+    {
+      "lemma": "בָּרַח",
+      "bdb": [
+        "b.dc.aa"
+      ],
+      "pos": "verb",
+      "gloss": "flee, pass through",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "flee or pass through",
+          "senses": [
+            {
+              "gloss": "flee",
+              "definition": "Hagar flees from Sarai, Moses from Pharaoh and David from his son Absalom. Job pictures his days fleeing faster than a runner.",
+              "evidence": [
+                {
+                  "ref": "Gen.16.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.2.15"
+                },
+                {
+                  "ref": "Psa.3.1"
+                },
+                {
+                  "ref": "Job.9.25"
+                }
+              ],
+              "cognate_ids": [
+                "ar-bariha"
+              ]
+            },
+            {
+              "gloss": "run through",
+              "definition": "The middle bar of the dwelling runs the full length of the frames.",
+              "evidence": [
+                {
+                  "ref": "Exo.36.33",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "crossbar"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "drive away, run through",
+          "senses": [
+            {
+              "gloss": "make someone flee",
+              "definition": "Nehemiah drives away a member of the high priest’s family. Proverbs describes a son driving his mother away.",
+              "evidence": [
+                {
+                  "ref": "Neh.13.28",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.19.26"
+                }
+              ],
+              "cognate_ids": [
+                "ar-bariha"
+              ]
+            },
+            {
+              "gloss": "pass through",
+              "definition": "The instructions specify a bar running through the middle of the frames from end to end.",
+              "evidence": [
+                {
+                  "ref": "Exo.26.28",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "crossbar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּרִיחַ",
+      "bdb": [
+        "b.dc.ad"
+      ],
+      "pos": "noun",
+      "gloss": "crossbar, gate bar",
+      "senses": [
+        {
+          "gloss": "crossbar",
+          "definition": "A long wooden bar joins the frames of the dwelling.",
+          "evidence": [
+            {
+              "ref": "Exo.26.26",
+              "to": "Exo.26.29",
+              "role": "defining"
+            }
+          ],
+          "id": "crossbar"
+        },
+        {
+          "gloss": "gate bar",
+          "definition": "Fortified cities have gates secured with bars. Jerusalem praises Yahweh for strengthening hers.",
+          "evidence": [
+            {
+              "ref": "Deu.3.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.147.13"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "בָּרִיחַ",
+      "bdb": [
+        "b.dc.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "fleeing",
+      "senses": [
+        {
+          "gloss": "fleeing",
+          "definition": "Isaiah and Job describe a fleeing serpent. Isaiah also applies the plural to fugitives from Babylon.",
+          "evidence": [
+            {
+              "ref": "Isa.27.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.26.13"
+            },
+            {
+              "ref": "Isa.43.14"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-bariha"
+      ]
+    },
+    {
+      "lemma": "מִבְרָח",
+      "bdb": [
+        "b.dc.ae"
+      ],
+      "pos": "noun",
+      "gloss": "fugitive",
+      "senses": [
+        {
+          "gloss": "fugitive",
+          "definition": "Ezekiel speaks of fugitives from the king’s divisions falling and the survivors scattering.",
+          "evidence": [
+            {
+              "ref": "Ezk.17.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-bariha"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bariha",
+      "lang": "ar",
+      "form": "بَرِحَ",
+      "translit": "bariḥa",
+      "gloss": "depart, quit a place",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 181, برح, form I, n2192"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Ezekiel 17:21 preserves both a written and a read form of the noun for fugitives. Barhumite and Berites have different consonantal forms. The Arabic comparison bears on departure."
+}
