@@ -1,0 +1,88 @@
+{
+  "id": "alats-rejoice",
+  "root": "עלצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "joy",
+    "praise"
+  ],
+  "gloss": "exult, rejoice",
+  "summary": "The person in whom one rejoices can follow the verb with ב. With עַל and an opponent the verb can express triumph at someone else’s expense.",
+  "words": [
+    {
+      "lemma": "עָלַץ",
+      "bdb": [
+        "p.dd.aa"
+      ],
+      "pos": "verb",
+      "gloss": "exult, rejoice",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "exult",
+          "senses": [
+            {
+              "gloss": "exult in someone or something",
+              "definition": "Hannah’s heart exults in Yahweh. David asks that those who love Yahweh’s name exult in him. A city can rejoice in the well-being of its righteous people.",
+              "evidence": [
+                {
+                  "ref": "1Sa.2.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.5.12"
+                },
+                {
+                  "ref": "Psa.9.3"
+                },
+                {
+                  "ref": "Pro.11.10"
+                }
+              ]
+            },
+            {
+              "gloss": "exult over someone",
+              "definition": "David asks that his enemies never have cause to exult over him.",
+              "evidence": [
+                {
+                  "ref": "Psa.25.2",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "exultation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲלִיצוּת",
+      "bdb": [
+        "p.dd.ab"
+      ],
+      "pos": "noun",
+      "gloss": "exultation",
+      "senses": [
+        {
+          "gloss": "exultation",
+          "definition": "Habakkuk describes the attackers’ exultation as the delight of those about to devour the poor in secret.",
+          "evidence": [
+            {
+              "ref": "Hab.3.14",
+              "role": "defining"
+            }
+          ],
+          "id": "exultation"
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The similar verb אלץ begins with aleph and means to urge. The Arabic comparisons examined do not establish a historical sound for either the ayin or the tsade of this verb."
+}
