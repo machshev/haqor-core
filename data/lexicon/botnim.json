@@ -1,0 +1,115 @@
+{
+  "id": "botnim",
+  "root": "בטנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "pistachio nuts",
+  "summary": "Jacob includes these nuts and almonds among the choice produce his sons are to take to Egypt as a gift.",
+  "words": [
+    {
+      "lemma": "בָּטְנִים",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "b.bm.ab"
+      ],
+      "gloss": "pistachio nuts",
+      "senses": [
+        {
+          "id": "nut",
+          "gloss": "pistachio nuts",
+          "definition": "Edible nuts from a Pistacia tree. The plural names one of the products carried from Canaan.",
+          "evidence": [
+            {
+              "ref": "Gen.43.11",
+              "role": "defining",
+              "note": "Jacob lists the nuts alongside almonds, honey and aromatic goods. The two kinds of nut are distinct."
+            }
+          ],
+          "cognate_ids": [
+            "arc-nut",
+            "syc-berry",
+            "akk-tree",
+            "uga-tree",
+            "ar-fruit"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-nut",
+      "lang": "arc",
+      "form": "בּוּטְנָא",
+      "translit": "buṭnā",
+      "gloss": "pistachio nut or tree",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "B00235, Palestinian Targum on Gen 43:11"
+        }
+      ]
+    },
+    {
+      "id": "syc-berry",
+      "lang": "syc",
+      "form": "ܒܛܡܬܐ",
+      "translit": "beṭmtā",
+      "gloss": "terebinth tree or berry",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܒܛܡܬܐ, plural of the berries"
+        }
+      ]
+    },
+    {
+      "id": "akk-tree",
+      "lang": "akk",
+      "form": "buṭumtu",
+      "translit": "buṭumtu",
+      "gloss": "terebinth",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000022970"
+        }
+      ]
+    },
+    {
+      "id": "uga-tree",
+      "lang": "uga",
+      "form": "𐎁𐎉𐎎",
+      "translit": "bṭm",
+      "gloss": "terebinth",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "watson-2004",
+          "locator": "section on trees, bṭm in RS 94.2276:10′"
+        }
+      ]
+    },
+    {
+      "id": "ar-fruit",
+      "lang": "ar",
+      "form": "بُطْم",
+      "translit": "buṭm",
+      "gloss": "terebinth fruit",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 219, n2798"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Hebrew spelling ends in n before the plural ending. The Akkadian, Ugaritic, Arabic and Syriac comparanda include forms with m. Their use for several members of the Pistacia genus leaves the species of Jacob’s gift open. The place Betonim in Jos.13.26 has its own lexical key."
+}

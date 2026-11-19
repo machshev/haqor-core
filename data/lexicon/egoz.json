@@ -1,0 +1,145 @@
+{
+  "id": "egoz",
+  "root": "אגוז",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "nut tree, probably walnut",
+  "summary": "The speaker descends to the nut orchard to look for fresh growth and see whether the vines and pomegranates have flowered.",
+  "words": [
+    {
+      "lemma": "אֱגוֹז",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "a.at.ac"
+      ],
+      "gloss": "nut tree, probably walnut",
+      "senses": [
+        {
+          "id": "nut",
+          "gloss": "nut tree, probably walnut",
+          "definition": "A nut-bearing tree, used collectively of the trees in an orchard. Related terms commonly designate the walnut.",
+          "evidence": [
+            {
+              "ref": "Sng.6.11",
+              "role": "defining",
+              "note": "The phrase ‘garden of nut trees’ names the place the speaker visits. The vine and pomegranate are named separately."
+            }
+          ],
+          "cognate_ids": [
+            "arc-tree",
+            "syc-nut",
+            "mand-walnut",
+            "ar-walnut",
+            "gez-nut",
+            "mt-walnut"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-tree",
+      "lang": "arc",
+      "form": "אֱגוּזָא",
+      "translit": "ʾĕgūzā",
+      "gloss": "nut or nut tree",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "A00261, Ketubot 77b on bark from the tree"
+        }
+      ]
+    },
+    {
+      "id": "syc-nut",
+      "lang": "syc",
+      "form": "ܓܘܙܐ",
+      "translit": "gawzā",
+      "gloss": "nut tree or fruit, especially walnut",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܓܘܙܐ, including the nut tree and its fruit"
+        }
+      ]
+    },
+    {
+      "id": "mand-walnut",
+      "lang": "arc",
+      "form": "amuza",
+      "translit": "amuza",
+      "gloss": "Mandaic walnut",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "s.v. amuza, SQ 8:23"
+        }
+      ]
+    },
+    {
+      "id": "ar-walnut",
+      "lang": "ar",
+      "form": "جَوْز",
+      "translit": "jawz",
+      "gloss": "walnuts",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 485, n6691, second head sense"
+        }
+      ]
+    },
+    {
+      "id": "gez-nut",
+      "lang": "gez",
+      "form": "ገውዝ",
+      "translit": "gawz",
+      "gloss": "nut",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "s.v. ገውዝ, nux"
+        }
+      ]
+    },
+    {
+      "id": "mt-walnut",
+      "lang": "sem",
+      "form": "ġewż",
+      "translit": "ġewż",
+      "gloss": "Maltese walnuts",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "lexeme 522d86356f3bad5137000f64"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Song supplies the orchard setting. The identification as walnut depends on comparisons, especially Syriac. Blažek, item 12, compares forms across West Semitic and Berber. The direction in which the crop name spread is uncertain."
+}
