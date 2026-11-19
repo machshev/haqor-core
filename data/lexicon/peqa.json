@@ -1,0 +1,154 @@
+{
+  "id": "peqa",
+  "root": "פקע",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "agriculture"
+  ],
+  "gloss": "wild gourds; gourd-shaped ornaments",
+  "summary": "A man gathering food for Elisha’s company finds gourds on a wild vine. In Solomon’s temple a related word describes ornaments carved into cedar and cast around the rim of the bronze basin.",
+  "words": [
+    {
+      "lemma": "פַּקֻּעֹת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "q.cq.ac"
+      ],
+      "gloss": "wild gourds",
+      "senses": [
+        {
+          "id": "wild-gourds",
+          "gloss": "wild gourds",
+          "definition": "Fruits picked from a trailing plant in the field and sliced into a communal stew.",
+          "evidence": [
+            {
+              "ref": "2Ki.4.39",
+              "role": "defining",
+              "note": "The gatherer fills his garment with the unfamiliar fruit and cuts it into the pot."
+            }
+          ],
+          "cognate_ids": [
+            "arc-gourd",
+            "syc-gourd"
+          ],
+          "kin": [
+            "ornaments"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּקָעִים",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "q.cq.ab"
+      ],
+      "gloss": "gourd-shaped ornaments",
+      "senses": [
+        {
+          "id": "ornaments",
+          "gloss": "gourd-shaped ornaments",
+          "definition": "A rounded plant motif used in both woodcarving and metalwork.",
+          "evidence": [
+            {
+              "ref": "1Ki.6.18",
+              "role": "defining",
+              "note": "The carved cedar inside the temple bears these shapes alongside open flowers."
+            },
+            {
+              "ref": "1Ki.7.24",
+              "role": "defining",
+              "note": "Two rows encircle the basin just below its lip, ten to the cubit, cast in one piece with it."
+            }
+          ],
+          "kin": [
+            "wild-gourds"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פַּקּוּעָא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "unripe figs",
+      "senses": [
+        {
+          "id": "unripe-figs",
+          "gloss": "unripe figs",
+          "definition": "Fruit that a fig tree drops under the shaking of a strong wind.",
+          "evidence": [
+            {
+              "ref": "Rev.6.13",
+              "role": "defining",
+              "note": "The falling stars are compared to unripe figs shaken from their tree."
+            }
+          ],
+          "cognate_ids": [
+            "syc-fig"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "פקועא"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-gourd",
+      "lang": "arc",
+      "form": "פִּיקְעִין",
+      "translit": "pīqʿīn",
+      "gloss": "wild gourds, bitter apples",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Q00818, Targum Jonathan on 2 Kings 4:39"
+        }
+      ]
+    },
+    {
+      "id": "syc-gourd",
+      "lang": "syc",
+      "form": "ܦܩܘܥܐ",
+      "translit": "paqūʿā",
+      "gloss": "wild cucumber or gourd",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "p. 455, ܦܩܘܥܐ, also used in the Peshitta of 2 Kings 4:39"
+        }
+      ]
+    },
+    {
+      "id": "syc-fig",
+      "lang": "syc",
+      "form": "ܦܩܘܥܐ",
+      "translit": "paqūʿā",
+      "gloss": "unripe fig",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2571, Rev 6:13, compare Payne Smith p. 455"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The diners cry out that there is death in the pot (2Ki.4.40). Colocynth is a traditional identification of the wild fruit. Neither the account of the meal nor the descriptions of the ornaments establish a particular species for the temple motif."
+}
