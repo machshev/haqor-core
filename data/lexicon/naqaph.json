@@ -1,0 +1,135 @@
+{
+  "id": "naqaph",
+  "root": "נקפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "warfare"
+  ],
+  "gloss": "go round, surround",
+  "summary": "A circuit can be a repeated passage round a city or the position of people gathered on every side. In Psalm 17 the people surrounding the speaker threaten his life.",
+  "words": [
+    {
+      "lemma": "נָקַף",
+      "bdb": [
+        "n.fi.aa"
+      ],
+      "pos": "verb",
+      "gloss": "go round, surround",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "come round",
+          "senses": [
+            {
+              "gloss": "come round",
+              "definition": "Isaiah describes the festivals returning as year succeeds year.",
+              "evidence": [
+                {
+                  "ref": "Isa.29.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "encircle",
+          "senses": [
+            {
+              "gloss": "go around",
+              "definition": "Israel’s fighting men make a circuit of Jericho. Worshippers are invited to walk around Zion and count its towers.",
+              "evidence": [
+                {
+                  "ref": "Jos.6.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jos.6.11"
+                },
+                {
+                  "ref": "Psa.48.13"
+                }
+              ]
+            },
+            {
+              "gloss": "surround or hem in",
+              "definition": "David says his enemies surround him. The verb also describes troops taking up positions around a city or a king.",
+              "evidence": [
+                {
+                  "ref": "Psa.17.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.6.14"
+                },
+                {
+                  "ref": "2Ki.11.8"
+                },
+                {
+                  "ref": "Psa.22.17"
+                }
+              ]
+            },
+            {
+              "gloss": "round off",
+              "definition": "The command about the hair at the sides of the head forbids rounding off its edges.",
+              "evidence": [
+                {
+                  "ref": "Lev.19.27",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-encircle"
+      ]
+    },
+    {
+      "lemma": "נִקְפָּה",
+      "bdb": [
+        "n.fi.ab"
+      ],
+      "pos": "noun",
+      "gloss": "rope about the waist",
+      "senses": [
+        {
+          "gloss": "rope about the waist",
+          "definition": "Isaiah pairs a rope with the belt it displaces as the women of Zion exchange ornaments for signs of distress.",
+          "evidence": [
+            {
+              "ref": "Isa.3.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-encircle",
+      "lang": "arc",
+      "form": "נְקַף",
+      "translit": "nəqap̄",
+      "gloss": "go round, encircle",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נְקַף II, Afel אַקֵּף, Targum Judges 11:18 on Israel going around Edom"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Syriac verb ܢܩܦ means to adhere or follow (SEDRA lexeme 2027; Acts 8:13). Its relationship to making a circuit is uncertain. The Hebrew striking verb has its own entry.",
+  "homograph": 2
+}
