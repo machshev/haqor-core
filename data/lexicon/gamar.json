@@ -1,0 +1,340 @@
+{
+  "id": "gamar",
+  "root": "גמר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "completion",
+    "work"
+  ],
+  "gloss": "end, complete",
+  "summary": "What comes to an end can disappear altogether, as when the godly vanish in Psalm 12. To finish a work can also mean bringing it to its intended result. The psalmist appeals to God to do this for him.",
+  "words": [
+    {
+      "lemma": "גָּמַר",
+      "bdb": [
+        "c.cm.aa"
+      ],
+      "pos": "verb",
+      "gloss": "end, bring to completion",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "come to an end or finish a work",
+          "senses": [
+            {
+              "gloss": "come to an end",
+              "definition": "The speaker asks for wickedness to end in Psalm 7. In Psalm 12 the godly have disappeared. Psalm 77 asks whether a promise can have ceased for all generations.",
+              "evidence": [
+                {
+                  "ref": "Psa.7.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.12.2"
+                },
+                {
+                  "ref": "Psa.77.9"
+                }
+              ],
+              "id": "end"
+            },
+            {
+              "gloss": "accomplish for someone",
+              "definition": "The speaker calls on God to accomplish his purpose for him. The prayer that Yahweh will continue the work of his hands supplies the sense of completion.",
+              "evidence": [
+                {
+                  "ref": "Psa.57.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.138.8"
+                }
+              ],
+              "id": "finish"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-gamaru"
+      ],
+      "greek": [
+        {
+          "lemma": "ἐκλείπω",
+          "gloss": "fail, come to an end",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 12:2 word 4"
+            },
+            {
+              "ref": "Luk.22.32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּמִיר",
+      "bdb": [
+        "xc.ah.aa"
+      ],
+      "pos": "adjective",
+      "gloss": "complete, fully",
+      "senses": [
+        {
+          "gloss": "complete, fully",
+          "definition": "Artaxerxes’ letter names Ezra as priest and scribe of the law of the God of heaven, followed by this word in the greeting. Whether it describes Ezra’s learning or completes the salutation is uncertain.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-gamaru"
+      ]
+    },
+    {
+      "lemma": "גְּמַר",
+      "pos": "verb",
+      "gloss": "complete, finish",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "make complete or reach the end",
+          "senses": [
+            {
+              "gloss": "make complete or reach the end",
+              "definition": "Paul aims to present every person mature in Christ. Hebrews describes Jesus completing the work of sanctification with one offering.",
+              "evidence": [
+                {
+                  "ref": "Col.1.28",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Heb.10.14"
+                },
+                {
+                  "ref": "Heb.2.10"
+                }
+              ],
+              "kin": [
+                "finish"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be perfected, reach maturity",
+          "senses": [
+            {
+              "gloss": "be perfected, reach maturity",
+              "definition": "Faith reaches its full expression in works. Paul says that he has yet to reach perfection.",
+              "evidence": [
+                {
+                  "ref": "Jas.2.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Php.3.12"
+                },
+                {
+                  "ref": "Heb.5.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "finish, spend in full",
+          "senses": [
+            {
+              "gloss": "finish, spend in full",
+              "definition": "The younger son spends everything. Paul plans to complete his service of carrying the collection before going on.",
+              "evidence": [
+                {
+                  "ref": "Luk.15.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Rom.15.28"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-gamaru"
+      ]
+    },
+    {
+      "lemma": "גָּמוֹרָא",
+      "pos": "noun",
+      "gloss": "finisher",
+      "senses": [
+        {
+          "gloss": "finisher",
+          "definition": "Jesus is called the one who brings faith to completion.",
+          "evidence": [
+            {
+              "ref": "Heb.12.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-gamaru"
+      ]
+    },
+    {
+      "lemma": "גְּמִירָא",
+      "pos": "adjective",
+      "gloss": "complete, mature",
+      "senses": [
+        {
+          "gloss": "complete, mature",
+          "definition": "Solid food belongs to the mature, who have learned discernment through practice.",
+          "evidence": [
+            {
+              "ref": "Heb.5.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Eph.4.13"
+            },
+            {
+              "ref": "Mat.5.48"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-gamaru"
+      ]
+    },
+    {
+      "lemma": "גְּמִירָאִית",
+      "pos": "adverb",
+      "gloss": "fully, completely",
+      "senses": [
+        {
+          "gloss": "fully, completely",
+          "definition": "Paul prays that the Thessalonians may be sanctified completely.",
+          "evidence": [
+            {
+              "ref": "1Th.5.23",
+              "role": "defining"
+            },
+            {
+              "ref": "1Pe.1.13"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-gamaru"
+      ]
+    },
+    {
+      "lemma": "גְּמִירוּתָא",
+      "pos": "noun",
+      "gloss": "perfection, maturity",
+      "senses": [
+        {
+          "gloss": "perfection, maturity",
+          "definition": "Hebrews urges its hearers to go on to maturity. Paul contrasts what is complete with knowledge in part.",
+          "evidence": [
+            {
+              "ref": "Heb.6.1",
+              "role": "defining"
+            },
+            {
+              "ref": "1Co.13.10"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-gamaru"
+      ]
+    },
+    {
+      "lemma": "גְּמָרָא",
+      "pos": "noun",
+      "gloss": "completion, full extent",
+      "senses": [
+        {
+          "gloss": "completion, full extent",
+          "definition": "The bent woman cannot straighten herself fully. In Ephesians the word describes the equipping of the saints.",
+          "evidence": [
+            {
+              "ref": "Luk.13.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Eph.4.12"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-gamaru"
+      ]
+    },
+    {
+      "lemma": "גְּמוּרְתָא",
+      "pos": "noun",
+      "gloss": "burning coal",
+      "senses": [
+        {
+          "gloss": "burning coal",
+          "definition": "The disciples see a charcoal fire with fish on it. Romans pictures coals of fire heaped on a person’s head. The relation of this noun to completion is uncertain.",
+          "evidence": [
+            {
+              "ref": "Jhn.21.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Rom.12.20"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-gamaru",
+      "lang": "akk",
+      "form": "gamāru",
+      "translit": "gamāru",
+      "gloss": "bring to a conclusion",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000067310, gamāru, also armep/x000003810 gamru [complete]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic letter greeting and the Syriac coal noun each present an unresolved question. Gomer may resemble the verb, but Genesis and Hosea do not derive the name from it."
+}
