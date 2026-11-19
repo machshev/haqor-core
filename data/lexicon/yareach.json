@@ -1,0 +1,170 @@
+{
+  "id": "yareach",
+  "root": "ירח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "sky",
+    "time"
+  ],
+  "gloss": "moon, month",
+  "summary": "The moon is visible beside the stars and marks appointed times. The related word for month measures a span of days and can name a particular division of the year.",
+  "words": [
+    {
+      "lemma": "יָרֵחַ",
+      "bdb": [
+        "j.dk.ab"
+      ],
+      "pos": "noun",
+      "gloss": "moon",
+      "senses": [
+        {
+          "gloss": "moon in the sky",
+          "definition": "The psalmist sees the moon beside the stars. The moon marks appointed times, and the sun knows when to set. In Joseph’s dream the moon joins the sun and eleven stars in bowing.",
+          "evidence": [
+            {
+              "ref": "Psa.8.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.104.19"
+            },
+            {
+              "ref": "Gen.37.9",
+              "to": "Gen.37.10"
+            }
+          ],
+          "id": "moon"
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-arhu"
+      ],
+      "greek": [
+        {
+          "lemma": "σελήνη",
+          "gloss": "moon",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 8:4, moon beside the stars"
+            },
+            {
+              "ref": "Luk.21.25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יֶרַח",
+      "bdb": [
+        "j.dk.ac"
+      ],
+      "pos": "noun",
+      "gloss": "month",
+      "senses": [
+        {
+          "gloss": "month",
+          "definition": "Moses’ mother hides him for three months. A captive woman is granted a full month to mourn her parents. Kings dates building work by the named month.",
+          "evidence": [
+            {
+              "ref": "Exo.2.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.21.13"
+            },
+            {
+              "ref": "1Ki.6.37",
+              "to": "1Ki.6.38"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-arhu"
+      ]
+    },
+    {
+      "lemma": "יְרַח",
+      "bdb": [
+        "xj.ak.af"
+      ],
+      "pos": "noun",
+      "gloss": "month",
+      "senses": [
+        {
+          "gloss": "month",
+          "definition": "The temple is completed on the third day of the month of Adar. Daniel counts an interval of twelve months.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.4.26"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-arhu"
+      ]
+    },
+    {
+      "lemma": "יַרְחָא",
+      "pos": "noun",
+      "gloss": "month",
+      "senses": [
+        {
+          "gloss": "month",
+          "definition": "Gabriel comes to Mary in the sixth month. In Revelation the tree of life yields fruit every month.",
+          "evidence": [
+            {
+              "ref": "Luk.1.26",
+              "role": "defining"
+            },
+            {
+              "ref": "Luk.1.36"
+            },
+            {
+              "ref": "Rev.22.2"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-arhu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-arhu",
+      "lang": "akk",
+      "form": "arḫu",
+      "translit": "arḫu",
+      "gloss": "month",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro/x000024290, arḫu [month]"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Jeroham already belongs to racham. Jarha, Sheshan’s Egyptian servant, bears an extra final ayin, and his name has no established connection with moon. The connection of Jaroah with the moon is also uncertain."
+}
