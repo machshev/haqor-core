@@ -1,0 +1,134 @@
+{
+  "id": "shachal",
+  "root": "שחל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "lion, onycha",
+  "summary": "Hosea compares Yahweh’s judgment to a lion seizing prey that no one can rescue. In Exodus a feminine noun with the same consonants names one of the ingredients measured out for holy incense.",
+  "words": [
+    {
+      "lemma": "שַׁחַל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "v.cj.ab"
+      ],
+      "gloss": "lion",
+      "senses": [
+        {
+          "id": "lion",
+          "gloss": "lion",
+          "definition": "A large predatory cat, named in poetry for its roar, its pursuit of prey and its power to tear and carry off.",
+          "evidence": [
+            {
+              "ref": "Hos.5.14",
+              "role": "defining",
+              "note": "The lion and the young lion introduce the threat to tear and carry off without rescue."
+            },
+            {
+              "ref": "Hos.13.7",
+              "role": "defining",
+              "note": "The lion is paired with a leopard that watches beside the way."
+            },
+            {
+              "ref": "Job.4.10",
+              "role": "defining",
+              "note": "Its voice stands beside the roar of a lion and the teeth of young lions."
+            },
+            {
+              "ref": "Pro.26.13",
+              "role": "defining",
+              "note": "The sluggard uses two words for lion in parallel as he explains why he cannot go out."
+            },
+            {
+              "ref": "Psa.91.13",
+              "role": "defining",
+              "note": "The lion and young lion are paired with serpents as dangers to be trampled."
+            },
+            {
+              "ref": "Job.10.16",
+              "role": "defining",
+              "note": "Job compares being hunted to pursuit by a lion."
+            },
+            {
+              "ref": "Job.28.8",
+              "role": "defining",
+              "note": "Even a lion has never trodden the hidden path."
+            }
+          ],
+          "cognate_ids": [
+            "arc-lion"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁחֵלֶת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "v.cj.ac"
+      ],
+      "gloss": "onycha, an incense ingredient",
+      "senses": [
+        {
+          "id": "incense",
+          "gloss": "onycha",
+          "definition": "An aromatic ingredient measured out with stacte, galbanum and pure frankincense for the sanctuary incense.",
+          "evidence": [
+            {
+              "ref": "Exo.30.34",
+              "role": "defining",
+              "note": "The recipe names four ingredients and specifies equal portions. It gives no description of the substance itself."
+            }
+          ],
+          "cognate_ids": [
+            "uga-seeds"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-lion",
+      "lang": "arc",
+      "form": "שחלא",
+      "translit": "šḥlʾ",
+      "gloss": "lion",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "šḥl, šḥlˀ noun no. 5"
+        }
+      ],
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "uga-seeds",
+      "lang": "uga",
+      "form": "𐎌𐎈𐎍𐎚",
+      "translit": "šḥlt",
+      "gloss": "cress seeds",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "watson-2004",
+          "locator": "§7, šḥlt"
+        }
+      ],
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "note": "The seven poetic passages identify the lion without establishing any particular age or sex. The Ugaritic seed name resembles the incense word, but its meaning does not identify the Exodus ingredient. The connection of either aromatic term with the lion is uncertain."
+}
