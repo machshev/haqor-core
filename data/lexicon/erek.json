@@ -1,0 +1,978 @@
+{
+  "id": "erek",
+  "root": "ערכ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "order",
+    "arrangement",
+    "battle",
+    "table",
+    "sanctuary",
+    "value",
+    "comparison",
+    "speech"
+  ],
+  "gloss": "set in order, arrange; draw up for battle; set beside, compare; value",
+  "summary": "To lay things out in order, one beside another: wood on the altar, the bread in its rows on the table, lamps on the lampstand, a table spread for a meal, an army drawn up in its lines, words and a case set out before a judge. What is set beside another is compared with it, so the qal also means to be equal to (“to whom will you liken God, what likeness will you set beside him?”), and the hiphil is to set a price, the priest's valuation of what is vowed to Yahweh. The nouns name what is so arranged: עֵרֶךְ an arrangement or a valuation, מַעֲרָכָה a battle line or a row, מַעֲרֶכֶת the rows of bread before Yahweh. Ugaritic ʿrk “prepare” and Arabic maʿraka “battlefield” share the root.",
+  "words": [
+    {
+      "lemma": "עָרַךְ",
+      "pos": "verb",
+      "gloss": "set in order, arrange; draw up for battle; set forth a case; compare, be equal to; (hiphil) value",
+      "bdb": [
+        "p.fj.aa"
+      ],
+      "summary": "About seventy-five times, nearly all qal. Its core is laying things out in order, side by side: the same act sets wood on an altar, bread on a table and soldiers in a line. Set beside something else, a thing is compared with it (Isa 40:18, with דָּמָה), and from comparing comes valuing, the hiphil of Lev 27. BDB files the hiphil as a second, denominative verb (p.fj.ac) whose tokens are the same as this one's; both are this verb.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "set in order, arrange, lay out; spread a table; draw up for battle; set forth words; compare, be equal to",
+          "senses": [
+            {
+              "id": "arrange-in-order",
+              "gloss": "set in order, lay in order",
+              "definition": "To lay things out in their order: wood on the altar and the pieces of the offering on the wood, the bread on the table before Yahweh, the lamps on the lampstand, altars built in a set, flax laid out to dry. The passive participle is what is set in order, made ready.",
+              "cognate_ids": [
+                "uga-rk"
+              ],
+              "kin": [
+                "erek-arrangement",
+                "row-arrangement",
+                "bread-rows"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.22.9",
+                  "role": "defining",
+                  "note": "Abraham “built the altar וַיַּעֲרֹךְ אֶת־הָעֵצִים”, and laid Isaac on the altar on top of the wood."
+                },
+                {
+                  "ref": "Lev.1.7",
+                  "role": "defining",
+                  "note": "“The sons of Aaron shall put fire on the altar וְעָרְכוּ עֵצִים עַל־הָאֵשׁ.”"
+                },
+                {
+                  "ref": "Lev.1.8",
+                  "note": "They shall lay in order the pieces, the head and the fat on the wood."
+                },
+                {
+                  "ref": "Lev.1.12"
+                },
+                {
+                  "ref": "Lev.6.5",
+                  "note": "The priest burns wood on the altar every morning “וְעָרַךְ עָלֶיהָ הָעֹלָה”."
+                },
+                {
+                  "ref": "1Ki.18.33",
+                  "note": "Elijah “arranged the wood, cut up the bull and laid it on the wood”."
+                },
+                {
+                  "ref": "Num.23.4",
+                  "note": "Balaam: “I have set in order the seven altars.”"
+                },
+                {
+                  "ref": "Exo.40.23",
+                  "role": "defining",
+                  "note": "“וַיַּעֲרֹךְ עָלָיו עֵרֶךְ לֶחֶם before Yahweh”: verb and noun together, the bread laid out in its order."
+                },
+                {
+                  "ref": "Exo.40.4",
+                  "note": "“Bring in the table וְעָרַכְתָּ אֶת־עֶרְכּוֹ.”"
+                },
+                {
+                  "ref": "Lev.24.8",
+                  "note": "“Every sabbath day he shall set it in order before Yahweh continually”: the bread of Lev 24:5–7 in its two rows (מַעֲרָכוֹת)."
+                },
+                {
+                  "ref": "Exo.27.21",
+                  "note": "Aaron and his sons “shall set it in order from evening to morning before Yahweh”: the lamp."
+                },
+                {
+                  "ref": "Lev.24.3"
+                },
+                {
+                  "ref": "Lev.24.4",
+                  "note": "“On the pure lampstand he shall set the lamps in order before Yahweh continually.”"
+                },
+                {
+                  "ref": "Psa.132.17",
+                  "note": "“I have set in order a lamp for my anointed.”"
+                },
+                {
+                  "ref": "Jos.2.6",
+                  "note": "Rahab hid the spies “in the stalks of flax הָעֲרֻכוֹת לָהּ on the roof”: laid out in order."
+                },
+                {
+                  "ref": "Isa.30.33",
+                  "note": "“Tophet עָרוּךְ from of old … its pile is fire and much wood”: the pyre laid ready."
+                },
+                {
+                  "ref": "2Sa.23.5",
+                  "role": "defining",
+                  "note": "“An everlasting covenant he has made with me, עֲרוּכָה בַכֹּל וּשְׁמֻרָה”: ordered in all things and kept."
+                }
+              ]
+            },
+            {
+              "id": "spread-table",
+              "gloss": "spread, prepare (a table)",
+              "definition": "With שֻׁלְחָן: to lay a table with food, to make ready a meal.",
+              "cognate_ids": [
+                "uga-rk"
+              ],
+              "kin": [
+                "bread-rows"
+              ],
+              "evidence": [
+                {
+                  "ref": "Psa.23.5",
+                  "role": "defining",
+                  "note": "“תַּעֲרֹךְ לְפָנַי שֻׁלְחָן in the presence of my enemies; you anoint my head with oil; my cup overflows.”"
+                },
+                {
+                  "ref": "Psa.78.19",
+                  "role": "defining",
+                  "note": "“Can God לַעֲרֹךְ שֻׁלְחָן in the wilderness?”: give bread and meat (Psa 78:20)."
+                },
+                {
+                  "ref": "Pro.9.2",
+                  "role": "defining",
+                  "note": "Wisdom “has slaughtered her beasts, mixed her wine, אַף עָרְכָה שֻׁלְחָנָהּ”."
+                },
+                {
+                  "ref": "Isa.21.5",
+                  "note": "“עָרֹךְ הַשֻּׁלְחָן, spread the rug, eat, drink.”"
+                },
+                {
+                  "ref": "Isa.65.11",
+                  "note": "Those who forsake Yahweh “הָעֹרְכִים לַגַּד שֻׁלְחָן” and fill mixed wine for Meni."
+                },
+                {
+                  "ref": "Ezk.23.41",
+                  "note": "“A table עָרוּךְ before it”, with incense and oil set on it."
+                }
+              ]
+            },
+            {
+              "id": "array-battle",
+              "gloss": "draw up (for battle), array",
+              "definition": "Of an army, often with מִלְחָמָה: to draw up its lines facing an enemy; of weapons, to put them in readiness. The participle is a man drawn up for war.",
+              "cognate_ids": [
+                "ar-maraka"
+              ],
+              "kin": [
+                "battle-line"
+              ],
+              "evidence": [
+                {
+                  "ref": "1Sa.17.21",
+                  "role": "defining",
+                  "note": "“וַתַּעֲרֹךְ Israel and the Philistines, מַעֲרָכָה לִקְרַאת מַעֲרָכָה”: line facing line."
+                },
+                {
+                  "ref": "1Sa.17.2",
+                  "role": "defining",
+                  "note": "Saul and the men of Israel camped in the valley of Elah “וַיַּעַרְכוּ מִלְחָמָה to meet the Philistines”."
+                },
+                {
+                  "ref": "1Sa.17.8",
+                  "note": "Goliath: “Why have you come out לַעֲרֹךְ מִלְחָמָה?”"
+                },
+                {
+                  "ref": "Jdg.20.20",
+                  "role": "defining",
+                  "note": "The men of Israel went out to battle against Benjamin “וַיַּעַרְכוּ אִתָּם … מִלְחָמָה”."
+                },
+                {
+                  "ref": "Jdg.20.22",
+                  "note": "“They again drew up the battle in the place where they had drawn it up on the first day.”"
+                },
+                {
+                  "ref": "Jdg.20.30"
+                },
+                {
+                  "ref": "Jdg.20.33"
+                },
+                {
+                  "ref": "Gen.14.8",
+                  "note": "The five kings “drew up battle” with the four in the valley of Siddim."
+                },
+                {
+                  "ref": "1Sa.4.2"
+                },
+                {
+                  "ref": "2Sa.10.8"
+                },
+                {
+                  "ref": "2Sa.10.9",
+                  "note": "Joab chose of the choice men of Israel “וַיַּעֲרֹךְ to meet Aram”."
+                },
+                {
+                  "ref": "2Sa.10.10"
+                },
+                {
+                  "ref": "2Sa.10.17"
+                },
+                {
+                  "ref": "1Ch.19.9"
+                },
+                {
+                  "ref": "1Ch.19.10"
+                },
+                {
+                  "ref": "1Ch.19.11"
+                },
+                {
+                  "ref": "1Ch.19.17"
+                },
+                {
+                  "ref": "2Ch.13.3",
+                  "note": "“Jeroboam drew up battle against him with eight hundred thousand chosen men.”"
+                },
+                {
+                  "ref": "2Ch.14.9"
+                },
+                {
+                  "ref": "1Ch.12.34",
+                  "note": "Of Zebulun, “עֹרְכֵי מִלְחָמָה with all weapons of war”."
+                },
+                {
+                  "ref": "1Ch.12.36"
+                },
+                {
+                  "ref": "1Ch.12.37"
+                },
+                {
+                  "ref": "1Ch.12.9",
+                  "role": "defining",
+                  "note": "Gadites “עֹרְכֵי צִנָּה וָרֹמַח”: weapons made ready."
+                },
+                {
+                  "ref": "Jer.46.3",
+                  "note": "“עִרְכוּ מָגֵן וְצִנָּה and draw near to battle.”"
+                },
+                {
+                  "ref": "Jer.6.23",
+                  "note": "The people from the north country (Jer 6:22), “עָרוּךְ like a man for war against you, daughter of Zion”."
+                },
+                {
+                  "ref": "Jer.50.42",
+                  "note": "The same words against the daughter of Babylon."
+                },
+                {
+                  "ref": "Jer.50.9",
+                  "note": "Nations from the north country “shall array themselves against her”."
+                },
+                {
+                  "ref": "Jer.50.14"
+                },
+                {
+                  "ref": "Jol.2.5",
+                  "note": "“Like a strong people עֱרוּךְ מִלְחָמָה.”"
+                },
+                {
+                  "ref": "Job.6.4",
+                  "note": "“The terrors of God יַעַרְכוּנִי”: draw up against me."
+                }
+              ]
+            },
+            {
+              "id": "set-forth-case",
+              "gloss": "set forth (words, a case)",
+              "definition": "With מִשְׁפָּט or מִלִּין, or alone: to lay out a case or an argument in order before a judge or an opponent.",
+              "kin": [
+                "heart-arrangements"
+              ],
+              "evidence": [
+                {
+                  "ref": "Job.13.18",
+                  "role": "defining",
+                  "note": "“Behold now, עָרַכְתִּי מִשְׁפָּט; I know that I shall be in the right.”"
+                },
+                {
+                  "ref": "Job.23.4",
+                  "role": "defining",
+                  "note": "“אֶעֶרְכָה לְפָנָיו מִשְׁפָּט, and fill my mouth with arguments (תוֹכָחוֹת).”"
+                },
+                {
+                  "ref": "Job.32.14",
+                  "note": "“He has not לֹא־עָרַךְ אֵלַי מִלִּין, and I will not answer him with your words.”"
+                },
+                {
+                  "ref": "Job.33.5",
+                  "note": "“If you can, answer me; עֶרְכָה before me, take your stand.”"
+                },
+                {
+                  "ref": "Job.37.19",
+                  "note": "“Teach us what we shall say to him; we cannot set it in order because of darkness.”"
+                },
+                {
+                  "ref": "Psa.50.21",
+                  "role": "defining",
+                  "note": "“I will reprove you (אוֹכִיחֲךָ) וְאֶעֶרְכָה before your eyes”: God lays out the charge."
+                },
+                {
+                  "ref": "Isa.44.7",
+                  "note": "“Who is like me? Let him proclaim it, declare it וְיַעְרְכֶהָ לִי”: set out in order what is to come."
+                },
+                {
+                  "ref": "Psa.5.4",
+                  "note": "“In the morning אֶעֱרָךְ־לְךָ and watch”: no object is named; a plea set out before Yahweh, or the morning offering laid out (as Lev 6:5)."
+                }
+              ],
+              "cognate_ids": [
+                "uga-rk"
+              ]
+            },
+            {
+              "id": "compare",
+              "gloss": "set beside, compare; be equal to",
+              "definition": "To set one thing beside another to measure them: to compare, and, intransitive, to be equal to, to match. Parallel to דָּמָה “be like”.",
+              "kin": [
+                "equal"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.40.18",
+                  "role": "defining",
+                  "note": "“To whom will you liken (תְּדַמְּיוּן) God, and what likeness תַּעַרְכוּ לוֹ?”"
+                },
+                {
+                  "ref": "Psa.89.7",
+                  "role": "defining",
+                  "note": "“Who in the sky יַעֲרֹךְ לַיַהְוֶה, is like (יִדְמֶה) Yahweh among the sons of the mighty?”"
+                },
+                {
+                  "ref": "Psa.40.6",
+                  "note": "“Your wonders and your thoughts toward us, אֵין עֲרֹךְ אֵלֶיךָ”: none can be set beside you."
+                },
+                {
+                  "ref": "Job.28.17",
+                  "role": "defining",
+                  "note": "Of wisdom: “gold and glass לֹא־יַעַרְכֶנָּה, nor its exchange vessels of fine gold.”"
+                },
+                {
+                  "ref": "Job.28.19",
+                  "note": "“The topaz of Cush לֹא־יַעַרְכֶנָּה; it is not valued (תְסֻלֶּה) with pure gold.”"
+                },
+                {
+                  "ref": "Job.36.19",
+                  "note": "“Will your riches הֲיַעֲרֹךְ … not gold, nor all the forces of strength?”: weigh, be of value."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "value, set a price on; assess (for tax)",
+          "senses": [
+            {
+              "id": "value",
+              "gloss": "value, set a price on",
+              "definition": "Of the priest: to set the price in silver of a person, beast or house vowed to Yahweh, which the one who vowed pays to redeem it; of a king, to assess a land for tribute.",
+              "kin": [
+                "valuation"
+              ],
+              "evidence": [
+                {
+                  "ref": "Lev.27.8",
+                  "role": "defining",
+                  "note": "If the vower is too poor for the set valuation, the priest “וְהֶעֱרִיךְ אֹתוֹ … according to what the hand of the vower can reach יַעֲרִיכֶנּוּ”."
+                },
+                {
+                  "ref": "Lev.27.12",
+                  "role": "defining",
+                  "note": "“The priest shall value it, whether good or bad; as you, the priest, value it (כְּעֶרְכְּךָ), so shall it be.”"
+                },
+                {
+                  "ref": "Lev.27.14",
+                  "note": "A house set apart to Yahweh: “as the priest values it, so shall it stand”."
+                },
+                {
+                  "ref": "2Ki.23.35",
+                  "role": "defining",
+                  "note": "Jehoiakim “הֶעֱרִיךְ אֶת־הָאָרֶץ to give the silver at Pharaoh's command; he exacted the silver from each man כְּעֶרְכּוֹ”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἑτοιμάζω",
+          "gloss": "make ready, prepare",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.23.5, תַּעֲרֹךְ → ἡτοίμασας; Psa.78.19, עֲרֹךְ → ἑτοιμάσαι; Pro.9.2, עָרְכָה → ἡτοιμάσατο; Isa.65.11, עֹרְכִים → ἑτοιμάζοντες"
+            },
+            {
+              "ref": "Mat.22.4",
+              "note": "The king sends his servants: “Behold, I have prepared (ἡτοίμασα) my dinner … come to the wedding”, as Wisdom spreads her table and sends out her maidens (Pro 9:2–3)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "דָּמָה",
+            "note": "“Be like, liken”: setting beside is comparing.",
+            "evidence": [
+              {
+                "ref": "Isa.40.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.89.7"
+              }
+            ]
+          },
+          {
+            "lemma": "סָלָה",
+            "note": "“Weigh, value”: beside “cannot be set beside it” of wisdom's price.",
+            "evidence": [
+              {
+                "ref": "Job.28.19",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יָכַח",
+            "note": "“Reprove, argue”: the case set out is a reproof.",
+            "evidence": [
+              {
+                "ref": "Psa.50.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.23.4"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָרַךְ מִלְחָמָה",
+            "gloss": "draw up battle",
+            "evidence": [
+              {
+                "ref": "1Sa.17.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.20.20"
+              },
+              {
+                "ref": "2Ch.13.3"
+              }
+            ]
+          },
+          {
+            "phrase": "עָרַךְ שֻׁלְחָן",
+            "gloss": "spread a table",
+            "evidence": [
+              {
+                "ref": "Psa.23.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.78.19"
+              },
+              {
+                "ref": "Pro.9.2"
+              }
+            ]
+          },
+          {
+            "phrase": "עָרַךְ מִשְׁפָּט",
+            "gloss": "set forth a case",
+            "evidence": [
+              {
+                "ref": "Job.13.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.23.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֵרֶךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "arrangement, set; valuation, value; equal",
+      "bdb": [
+        "p.fj.ab"
+      ],
+      "summary": "Thirty-three times, most in Lev 27, “your valuation” (עֶרְכְּךָ) of what is vowed to Yahweh, fixed in shekels of the sanctuary. Its other uses are the arrangement of the bread, a set of garments, and a man “according to my valuation”, my equal.",
+      "senses": [
+        {
+          "id": "erek-arrangement",
+          "gloss": "arrangement, set, array",
+          "definition": "What is laid out in order: the bread set on the table, a set of garments, the ordered frame of a creature.",
+          "evidence": [
+            {
+              "ref": "Exo.40.23",
+              "role": "defining",
+              "note": "“He set in order on it עֵרֶךְ לֶחֶם before Yahweh.”"
+            },
+            {
+              "ref": "Exo.40.4",
+              "role": "defining",
+              "note": "“וְעָרַכְתָּ אֶת־עֶרְכּוֹ”: set the table's arrangement in order."
+            },
+            {
+              "ref": "Jdg.17.10",
+              "note": "Micah offers the Levite ten silver pieces a year “וְעֵרֶךְ בְּגָדִים” and his keep."
+            },
+            {
+              "ref": "Job.41.4",
+              "note": "“The grace of עֶרְכּוֹ”: the ordered frame of Leviathan, beside his limbs and might."
+            }
+          ],
+          "kin": [
+            "arrange-in-order"
+          ]
+        },
+        {
+          "id": "valuation",
+          "gloss": "valuation, estimated value",
+          "definition": "The price set on a person, beast, house or field, or on a guilt offering, reckoned in shekels of the sanctuary; also an assessment for tax, and the worth of wisdom that man does not know.",
+          "evidence": [
+            {
+              "ref": "Lev.27.2",
+              "role": "defining",
+              "note": "“When a man makes a special vow, בְּעֶרְכְּךָ of persons to Yahweh”."
+            },
+            {
+              "ref": "Lev.27.3",
+              "role": "defining",
+              "note": "“Your valuation of a male from twenty to sixty years shall be fifty shekels of silver, by the shekel of the sanctuary.”"
+            },
+            {
+              "ref": "Lev.27.4"
+            },
+            {
+              "ref": "Lev.27.5"
+            },
+            {
+              "ref": "Lev.27.6"
+            },
+            {
+              "ref": "Lev.27.7"
+            },
+            {
+              "ref": "Lev.27.8",
+              "note": "“If he is poorer than your valuation (מֵעֶרְכֶּךָ)”, the priest values him."
+            },
+            {
+              "ref": "Lev.27.13",
+              "note": "To redeem it, “he shall add a fifth to your valuation”."
+            },
+            {
+              "ref": "Lev.27.18"
+            },
+            {
+              "ref": "Lev.27.23"
+            },
+            {
+              "ref": "Lev.27.25",
+              "note": "“All your valuation shall be by the shekel of the sanctuary.”"
+            },
+            {
+              "ref": "Lev.27.27"
+            },
+            {
+              "ref": "Lev.5.15",
+              "role": "defining",
+              "note": "The guilt offering, a ram without blemish “בְּעֶרְכְּךָ כֶּסֶף־שְׁקָלִים, by the shekel of the sanctuary”."
+            },
+            {
+              "ref": "Lev.5.18"
+            },
+            {
+              "ref": "Lev.5.25"
+            },
+            {
+              "ref": "Num.18.16",
+              "note": "The firstborn of man redeemed from a month old “בְּעֶרְכְּךָ, five shekels of silver”."
+            },
+            {
+              "ref": "2Ki.12.5",
+              "note": "“The silver of the persons of his valuation”, brought into the house of Yahweh."
+            },
+            {
+              "ref": "2Ki.23.35",
+              "note": "Jehoiakim exacted the silver “from each man כְּעֶרְכּוֹ”."
+            },
+            {
+              "ref": "Job.28.13",
+              "role": "defining",
+              "note": "Of wisdom: “man does not know עֶרְכָּהּ”, followed by what cannot buy it (Job 28:15–19)."
+            }
+          ],
+          "kin": [
+            "value"
+          ]
+        },
+        {
+          "id": "equal",
+          "gloss": "equal, one set beside",
+          "definition": "One reckoned at one's own value: an equal.",
+          "evidence": [
+            {
+              "ref": "Psa.55.14",
+              "role": "defining",
+              "note": "“But you, a man כְּעֶרְכִּי, my companion and my familiar friend”: the betrayer was David's equal."
+            }
+          ],
+          "kin": [
+            "compare"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲרָכָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "battle line, rank; row",
+      "bdb": [
+        "p.fj.ae",
+        "m.da.am"
+      ],
+      "senses": [
+        {
+          "id": "battle-line",
+          "gloss": "battle line, rank; (plural) the ranks, army",
+          "definition": "An army drawn up in its line facing the enemy; in the plural, the ranks of a people's army.",
+          "cognate_ids": [
+            "ar-maraka"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.17.21",
+              "role": "defining",
+              "note": "“Israel and the Philistines drew up, מַעֲרָכָה לִקְרַאת מַעֲרָכָה.”"
+            },
+            {
+              "ref": "1Sa.17.8",
+              "note": "Goliath “called to מַעַרְכֹת יִשְׂרָאֵל”."
+            },
+            {
+              "ref": "1Sa.17.10",
+              "note": "“I defy מַעַרְכוֹת יִשְׂרָאֵל this day.”"
+            },
+            {
+              "ref": "1Sa.17.20",
+              "note": "“The army going out to the battle line shouted for the battle.”"
+            },
+            {
+              "ref": "1Sa.17.22"
+            },
+            {
+              "ref": "1Sa.17.26",
+              "role": "defining",
+              "note": "“Who is this uncircumcised Philistine, that he should defy מַעַרְכוֹת אֱלֹהִים חַיִּים?”"
+            },
+            {
+              "ref": "1Sa.17.36"
+            },
+            {
+              "ref": "1Sa.17.45",
+              "role": "defining",
+              "note": "“I come to you in the name of Yahweh of armies, the God of מַעַרְכוֹת יִשְׂרָאֵל, whom you have defied.”"
+            },
+            {
+              "ref": "1Sa.17.48",
+              "note": "David “ran toward the battle line to meet the Philistine”."
+            },
+            {
+              "ref": "1Sa.4.2",
+              "note": "Israel was struck “in the battle line in the field”, about four thousand men."
+            },
+            {
+              "ref": "1Sa.4.12"
+            },
+            {
+              "ref": "1Sa.4.16",
+              "note": "“I am he who came from the battle line; I fled from the battle line today.”"
+            },
+            {
+              "ref": "1Sa.23.3",
+              "note": "“against מַעַרְכוֹת פְּלִשְׁתִּים”."
+            },
+            {
+              "ref": "1Ch.12.39",
+              "note": "“Men of war, עֹדְרֵי מַעֲרָכָה”: keeping rank."
+            }
+          ],
+          "kin": [
+            "array-battle"
+          ]
+        },
+        {
+          "id": "row-arrangement",
+          "gloss": "row, ordered setting",
+          "definition": "Things set in a row: the lamps on the lampstand; the stones or wood of an altar laid in order.",
+          "evidence": [
+            {
+              "ref": "Exo.39.37",
+              "role": "defining",
+              "note": "“The pure lampstand, its lamps, נֵרֹת הַמַּעֲרָכָה”: the lamps set in their row."
+            },
+            {
+              "ref": "Jdg.6.26",
+              "note": "“Build an altar to Yahweh your God on top of this stronghold בַּמַּעֲרָכָה”: in the ordered way, or with the wood laid in order (the next words: the wood of the Asherah)."
+            }
+          ],
+          "kin": [
+            "arrange-in-order"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲרֶכֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "row (of the bread before Yahweh)",
+      "bdb": [
+        "p.fj.af"
+      ],
+      "summary": "Only of the bread laid in two rows on the pure table in the holy place: לֶחֶם הַמַּעֲרֶכֶת, the bread of the row, and שֻׁלְחַן הַמַּעֲרֶכֶת, the table of the row. The same bread is לֶחֶם הַפָּנִים, the bread of the face (1Sa 21:7), which the New Testament calls the loaves of the setting forth.",
+      "senses": [
+        {
+          "id": "bread-rows",
+          "gloss": "row, the bread set in rows",
+          "definition": "The twelve loaves set out every sabbath in two rows of six on the table before Yahweh, with frankincense on each row.",
+          "evidence": [
+            {
+              "ref": "Lev.24.6",
+              "role": "defining",
+              "note": "“Set them in two rows (מַעֲרָכוֹת), six הַמַּעֲרָכֶת, on the pure table before Yahweh.”"
+            },
+            {
+              "ref": "Lev.24.7",
+              "role": "defining",
+              "note": "“Put pure frankincense on הַמַּעֲרֶכֶת, and it shall be for the bread as a memorial.”"
+            },
+            {
+              "ref": "1Ch.9.32",
+              "note": "Kohathites were over “לֶחֶם הַמַּעֲרָכֶת, to prepare it every sabbath”."
+            },
+            {
+              "ref": "1Ch.23.29"
+            },
+            {
+              "ref": "1Ch.28.16",
+              "note": "Gold by weight “for the tables of the row”."
+            },
+            {
+              "ref": "2Ch.2.3",
+              "note": "Solomon's house for the name of Yahweh, for incense “and the continual row” and burnt offerings."
+            },
+            {
+              "ref": "2Ch.13.11",
+              "role": "defining",
+              "note": "“וּמַעֲרֶכֶת לֶחֶם on the pure table”, beside the lampstand: “we keep the charge of Yahweh our God”."
+            },
+            {
+              "ref": "2Ch.29.18",
+              "note": "Hezekiah's cleansing: “the table of the row and all its vessels”."
+            },
+            {
+              "ref": "Neh.10.34",
+              "note": "The returned exiles' charge “for the bread of the row and the continual offering”."
+            }
+          ],
+          "kin": [
+            "arrange-in-order",
+            "spread-table"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πρόθεσις",
+          "gloss": "setting forth; (of bread) the loaves set out",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ch.9.32; 1Ch.23.29; 2Ch.29.18, הַמַּעֲרֶכֶת → προθέσεως; 2Ch.13.11, מַעֲרֶכֶת → προθέσεις"
+            },
+            {
+              "ref": "Heb.9.2",
+              "role": "defining",
+              "note": "The first tabernacle held “the lampstand, the table and ἡ πρόθεσις τῶν ἄρτων”: the table and its rows of Exo 40:23 and Lev 24:6."
+            },
+            {
+              "ref": "Mat.12.4",
+              "note": "David ate “τοὺς ἄρτους τῆς προθέσεως”, which only the priests might eat (1Sa 21:7; Lev 24:9)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲרָךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "arrangement, ordering (of the heart)",
+      "bdb": [
+        "p.fj.ad",
+        "m.da.ao"
+      ],
+      "summary": "Once only, and fixed by the verb's sense of setting words in order (Job 32:14; 33:5).",
+      "senses": [
+        {
+          "id": "heart-arrangements",
+          "gloss": "plans set in order",
+          "definition": "What a man lays out in his heart, the order of what he means to say, set against the answer that comes from Yahweh.",
+          "evidence": [
+            {
+              "ref": "Pro.16.1",
+              "role": "defining",
+              "note": "“לְאָדָם מַעַרְכֵי־לֵב, but from Yahweh is the answer of the tongue.”"
+            }
+          ],
+          "kin": [
+            "set-forth-case"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-rk",
+      "lang": "uga",
+      "form": "𐎓𐎗𐎋",
+      "translit": "ʿrk",
+      "gloss": "prepare, make ready",
+      "relation": "cognate",
+      "note": "Prepare, as Hebrew spreads a table or lays wood in order.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎓𐎗𐎋 (ʿrk), verb",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%93%F0%90%8E%97%F0%90%8E%8B",
+          "note": "“to prepare”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000613 ʿrk [prepare] V, UGC001016 ʿrk [prepare] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-maraka",
+      "lang": "ar",
+      "form": "مَعْرَكَةٌ",
+      "translit": "maʿraka",
+      "gloss": "place of battle, battlefield; (form III عَارَكَ ʿāraka) fight, contend in battle",
+      "relation": "cognate",
+      "note": "The noun of place has the same pattern as מַעֲרָכָה; the form III and VIII verbs are fighting, pressing and crowding one another in the battle.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2024, art. عرك, مَعْرَكٌ (n28821)",
+          "note": "“and مَعْرَكَةٌ … A place [or scene] of battle, or fight.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2023, art. عرك, عَارَكَهُ (n28804)",
+          "note": "“He fought him; contended with him in fight, or battle.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2023, art. عرك, اعتركوا (n28805)",
+          "note": "“They pressed, straitened, or crowded, one another … or strove together, and fought one another, in the place of fight, or battle.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic معركة (maʕraka), noun",
+          "url": "https://en.wiktionary.org/wiki/%D9%85%D8%B9%D8%B1%D9%83%D8%A9",
+          "note": "“battle; battlefield”; “Compare Hebrew מַעֲרָכָה.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-araka",
+      "lang": "ar",
+      "form": "عَرَكَ",
+      "translit": "ʿaraka",
+      "gloss": "rub, rub and press; knead; chafe",
+      "relation": "cognate",
+      "note": "The base verb of the root of مَعْرَكَة. Rubbing and pressing together shares no sense of the Hebrew; Lane's “pressed, crowded one another” of the battle verbs may be the bridge to the meeting of two lines, but that is not shown.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2023, art. عرك, عَرَكَهُ (n28803)",
+          "note": "“He rubbed it, or rubbed and pressed it, or did so well … such as a skin or hide.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-arak",
+      "lang": "arc",
+      "form": "עֲרַךְ",
+      "translit": "ʿărak",
+      "gloss": "work (dough), knead",
+      "relation": "cognate",
+      "note": "Jewish Aramaic; matches the Arabic “rub, knead”, not the Hebrew. The Targum of Isa 41:25 renders “as the potter treads clay” with this verb.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲרַךְ",
+          "note": "“to work, knead”: Targ. Isa. 41:25 דעָרֵיךְ (Hebrew text ירמס); Men. 56a; Y. Shebu. VI, 37a."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "one-god",
+      "statement": "No one can be set beside Yahweh. Isaiah asks to whom God may be likened and what likeness can be set beside him (Isa 40:18), and Yahweh himself asks the same (Isa 40:25); among the sons of the mighty none in the skies is set beside him (Psa 89:7), and his wonders and thoughts are beyond any match (Psa 40:6). His challenge is that any who claim to be like him should set out in order what is to come, as he does (Isa 44:6–7), for besides him there is no God. The word that compares things by setting them side by side finds nothing to set beside the one God.",
+      "evidence": [
+        {
+          "ref": "Isa.40.18",
+          "role": "defining"
+        },
+        {
+          "ref": "Isa.40.25"
+        },
+        {
+          "ref": "Psa.89.7",
+          "role": "defining"
+        },
+        {
+          "ref": "Psa.40.6"
+        },
+        {
+          "ref": "Isa.44.6",
+          "to": "Isa.44.7",
+          "role": "defining"
+        }
+      ]
+    }
+  ],
+  "note": "Verb takes p.fj.aa only: BDB's denominative p.fj.ac (“value; tax”) lists the same tokens, so it is not named again (README: name one); the hiphil “value” is the same verb. m.da.am (מערות) and m.da.ao (מַעֲרָךְ) are zero-token cross-references, filed on מַעֲרָכָה and מַעֲרָךְ. BDB files Lev 24:6 מַעֲרָכוֹת under מַעֲרָכָה and the singular under מַעֲרֶכֶת; both are cited under מַעֲרֶכֶת's sense. No personal names are formed from the root (TIPNR checked; Erech ארך is another root). Open: (1) Arabic عَرَكَ “rub, knead” and Aramaic עֲרַךְ “knead” are the same consonants with a sense not found in scripture's Hebrew; they are recorded but named on no word. Is “press together, lay side by side” the shared core, or are there two roots? Rabbinic Hebrew also uses עָרַךְ of working dough (Jastrow s.v. עָרַךְ), not cited. (2) Ugaritic ʿrk “prepare” is cited from Wiktionary and the Proto-Semitic list only; Segert's or DULAT's glossary entry not yet checked for the attesting texts. (3) Psa 5:4 has no object: a plea or the morning offering laid out; left under set-forth-case. (4) Jdg 6:26 בַּמַּעֲרָכָה is unclear. Syriac ܥܪܰܟ “knead” is reported but not in the Peshitta; Payne Smith not consulted. (5) No cognate found for “compare, be equal to” or the hiphil “value” (and עֵרֶךְ “valuation, equal”): their tie to the root rests on scripture alone, Job 28:17–19 setting “cannot be set beside it” parallel to “cannot be valued”; lexicon-support shows them at −6."
+}
