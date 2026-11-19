@@ -1,0 +1,205 @@
+{
+  "id": "qaras",
+  "root": "קרס",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "stoop, clasp, ankle",
+  "summary": "Isaiah portrays Bel and Nebo stooping as their images are carried away. Exodus names the clasps that fasten two sets of curtains together. David’s song uses the longer noun קַרְסֹל for the joint that keeps his footing steady.",
+  "words": [
+    {
+      "lemma": "קָרַס",
+      "pos": "verb",
+      "bdb": [
+        "s.dh.aa"
+      ],
+      "gloss": "stoop, bend down",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "stoop, bend down",
+          "senses": [
+            {
+              "id": "stoop",
+              "gloss": "stoop, bend down",
+              "definition": "To bend or sink low, here of gods depicted as powerless to save their images.",
+              "evidence": [
+                {
+                  "ref": "Isa.46.1",
+                  "role": "defining",
+                  "note": "Nebo stoops as Bel bows, and the idols become a load for weary animals."
+                },
+                {
+                  "ref": "Isa.46.2",
+                  "role": "defining",
+                  "note": "The two verbs recur together as the gods go into captivity."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֶרֶס",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.dh.ab"
+      ],
+      "gloss": "clasp",
+      "senses": [
+        {
+          "id": "clasp",
+          "gloss": "clasp",
+          "definition": "A metal fastener inserted into loops to join curtains edge to edge.",
+          "evidence": [
+            {
+              "ref": "Exo.26.6",
+              "role": "defining",
+              "note": "Fifty gold clasps join the two sets of curtains so the dwelling forms one whole."
+            },
+            {
+              "ref": "Exo.26.11",
+              "role": "defining",
+              "note": "Bronze clasps go into the loops of the outer tent covering."
+            },
+            {
+              "ref": "Exo.26.33",
+              "role": "defining",
+              "note": "The line of clasps gives the position for hanging the dividing curtain."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַרְסֹל",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "s.dh.ac"
+      ],
+      "gloss": "ankle",
+      "senses": [
+        {
+          "id": "ankle",
+          "gloss": "ankle",
+          "definition": "The joint above the foot that bears weight as a person steps.",
+          "evidence": [
+            {
+              "ref": "2Sa.22.37",
+              "role": "defining",
+              "note": "David describes room for his stride and says his ankles did not give way."
+            },
+            {
+              "ref": "Psa.18.37",
+              "role": "defining",
+              "note": "The parallel song repeats the widened step and the firm ankles."
+            }
+          ],
+          "cognate_ids": [
+            "arc-ankle",
+            "syc-ankle",
+            "akk-ankle",
+            "uga-ankle",
+            "tir-ankle",
+            "meh-knee"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-ankle",
+      "lang": "arc",
+      "form": "קַרְסוּלָּא",
+      "translit": "qarsullā",
+      "gloss": "ankle",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "S02115, with CAL qrswl, qrswlˀ, Jerusalem Talmud Sheqalim 50a"
+        }
+      ]
+    },
+    {
+      "id": "syc-ankle",
+      "lang": "syc",
+      "form": "ܩܘܪܨܠܐ",
+      "translit": "qurṣlā",
+      "gloss": "ankle",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qwrṣl, qwrṣlˀ, masculine noun"
+        }
+      ]
+    },
+    {
+      "id": "akk-ankle",
+      "lang": "akk",
+      "form": "kiṣallu",
+      "translit": "kiṣallu",
+      "gloss": "ankle, anklebone",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000045880 and btmao/x000036650"
+        },
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.3.2.2, SED I no. 169"
+        }
+      ]
+    },
+    {
+      "id": "uga-ankle",
+      "lang": "uga",
+      "form": "𐎖𐎕𐎗",
+      "translit": "qṣr",
+      "gloss": "anklebone",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "s.v. qṣr, KTU 1.103+1.145:10"
+        }
+      ]
+    },
+    {
+      "id": "tir-ankle",
+      "lang": "sem",
+      "form": "ḳarso",
+      "translit": "ḳarso",
+      "gloss": "Tigrinya anklebone, fetlock",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "s.v. qṣr, comparison with Akkadian kiṣallu"
+        }
+      ]
+    },
+    {
+      "id": "meh-knee",
+      "lang": "sem",
+      "form": "ḳərṣā́",
+      "translit": "ḳərṣā́",
+      "gloss": "Mehri kneecap",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "s.v. qṣr, comparative note 168"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Both occurrences of the ankle noun belong to versions of one song. Its Aramaic and Akkadian parallels identify the joint. Watson’s Ugaritic and South Semitic comparisons differ in their consonants or in which joint they denote. A common origin for the ankle, clasp and stooping terms is uncertain. Keros names a returning temple-servant family in Ezra 2:44 and Nehemiah 7:47; neither list connects the name with any of these meanings."
+}
