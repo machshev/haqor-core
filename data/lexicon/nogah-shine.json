@@ -1,0 +1,206 @@
+{
+  "id": "nogah-shine",
+  "root": "נגה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "light",
+    "time"
+  ],
+  "gloss": "shine, illuminate, brightness",
+  "summary": "Psalm 18 uses the noun for the radiance before Yahweh and the verb when David describes his own darkness being lit.",
+  "words": [
+    {
+      "lemma": "נָגַהּ",
+      "bdb": [
+        "n.as.aa"
+      ],
+      "pos": "verb",
+      "gloss": "shine, shed light",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "shine",
+          "senses": [
+            {
+              "gloss": "shine",
+              "definition": "Light shines on a people who have walked in darkness. Job speaks of light shining on a person’s paths.",
+              "evidence": [
+                {
+                  "ref": "Isa.9.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.22.28"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "illuminate",
+          "senses": [
+            {
+              "gloss": "illuminate",
+              "definition": "David addresses Yahweh as the one who lights his lamp and brightens his darkness. Isaiah pictures the moon withholding its light.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.29",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.22.29"
+                },
+                {
+                  "ref": "Isa.13.10"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "syc-ngah"
+      ]
+    },
+    {
+      "lemma": "נֹגַהּ",
+      "bdb": [
+        "n.as.ab"
+      ],
+      "pos": "noun",
+      "gloss": "brightness, radiance",
+      "senses": [
+        {
+          "gloss": "brightness, radiance",
+          "definition": "David sees brightness before Yahweh amid clouds, hail and fire. Ezekiel describes radiance surrounding the fire in his opening vision.",
+          "evidence": [
+            {
+              "ref": "Psa.18.13",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.22.13"
+            },
+            {
+              "ref": "Ezk.1.4"
+            },
+            {
+              "ref": "Isa.60.3"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "syc-ngah"
+      ]
+    },
+    {
+      "lemma": "נְגֹהָה",
+      "bdb": [
+        "n.as.ad"
+      ],
+      "pos": "noun",
+      "gloss": "brightness",
+      "senses": [
+        {
+          "gloss": "brightness",
+          "definition": "Those awaiting justice hope for brightness but find themselves walking in gloom.",
+          "evidence": [
+            {
+              "ref": "Isa.59.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "נֹגַהּ",
+      "bdb": [
+        "xn.ab.ac"
+      ],
+      "pos": "noun",
+      "gloss": "first light",
+      "senses": [
+        {
+          "gloss": "first light",
+          "definition": "At first light the king hurries to the lions’ den to learn what has happened to Daniel.",
+          "evidence": [
+            {
+              "ref": "Dan.6.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "arc",
+      "cognate_ids": [
+        "syc-ngah"
+      ]
+    },
+    {
+      "lemma": "נגה",
+      "pos": "verb",
+      "gloss": "dawn, pass the night",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "begin to dawn",
+          "senses": [
+            {
+              "gloss": "begin to dawn",
+              "definition": "Matthew locates the women’s visit as the first day of the week dawns.",
+              "evidence": [
+                {
+                  "ref": "Mat.28.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "spend the night",
+          "senses": [
+            {
+              "gloss": "spend the night",
+              "definition": "Jesus passes the night in prayer before choosing the twelve.",
+              "evidence": [
+                {
+                  "ref": "Luk.6.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-ngah",
+      "lang": "syc",
+      "form": "ܢܓܗ",
+      "translit": "ngah",
+      "gloss": "dawn, spend the night",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1902, glosses 3330–3331; Matthew 28:1 and Luke 6:12"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Biblical Aramaic uses the noun for the first light of day; the corresponding Hebrew noun can describe the radiance surrounding fire."
+}
