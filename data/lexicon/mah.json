@@ -1,0 +1,187 @@
+{
+  "id": "mah",
+  "root": "מה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "questions",
+    "speech"
+  ],
+  "gloss": "what, why, how",
+  "summary": "מָה asks what something is, and with לְ it asks why. It can also express wonder, as when Psalm 8 celebrates the majesty of Yahweh’s name.",
+  "words": [
+    {
+      "lemma": "מָה",
+      "bdb": [
+        "m.an.aa"
+      ],
+      "pos": "pronoun",
+      "gloss": "what, why, how",
+      "senses": [
+        {
+          "gloss": "what?",
+          "definition": "Ask for the identity, nature or significance of something. Moses asks what he should say when asked for God’s name. Psalm 8 asks what a mortal is that God remembers him.",
+          "evidence": [
+            {
+              "ref": "Exo.3.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.8.5"
+            },
+            {
+              "ref": "Gen.4.10"
+            }
+          ],
+          "cognate_ids": [
+            "arc-mah"
+          ]
+        },
+        {
+          "gloss": "why? for what purpose?",
+          "definition": "With the preposition לְ, the question asks for a reason. The psalm asks why the nations gather against Yahweh and why Yahweh seems to stand far off.",
+          "evidence": [
+            {
+              "ref": "Psa.2.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.10.1"
+            },
+            {
+              "ref": "Exo.5.22"
+            }
+          ]
+        },
+        {
+          "gloss": "how! how greatly!",
+          "definition": "The question word can introduce an exclamation of wonder or distress. Psalm 8 opens and closes by marveling at the majesty of Yahweh’s name.",
+          "evidence": [
+            {
+              "ref": "Psa.8.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.8.10"
+            },
+            {
+              "ref": "Psa.3.2"
+            }
+          ]
+        },
+        {
+          "gloss": "what or whatever",
+          "definition": "In an embedded question it introduces the thing to be discovered. Mordecai walks before the court to learn how Esther fares and what will happen to her.",
+          "evidence": [
+            {
+              "ref": "Est.2.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.2.19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָה",
+      "bdb": [
+        "xm.ab.aa"
+      ],
+      "pos": "pronoun",
+      "gloss": "what, why, how",
+      "senses": [
+        {
+          "gloss": "what, that which",
+          "definition": "The question asks what someone is doing. In a report the word introduces what will happen or what is needed.",
+          "evidence": [
+            {
+              "ref": "Dan.4.32",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.2.28"
+            },
+            {
+              "ref": "Ezr.6.9"
+            }
+          ],
+          "cognate_ids": [
+            "arc-mah"
+          ]
+        },
+        {
+          "gloss": "why?",
+          "definition": "With a prefixed preposition the word asks the reason for the urgency of a decree or for letting harm come to a king.",
+          "evidence": [
+            {
+              "ref": "Dan.2.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezr.4.22"
+            }
+          ]
+        },
+        {
+          "gloss": "how great!",
+          "definition": "With the comparison prefix it introduces a cry of admiration at God’s signs and wonders.",
+          "evidence": [
+            {
+              "ref": "Dan.3.33",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "מָא",
+      "bdb": [],
+      "pos": "pronoun",
+      "gloss": "what, when",
+      "senses": [
+        {
+          "gloss": "when, whenever",
+          "definition": "The Peshitta uses the pronoun in expressions introducing an occasion, such as giving to the poor, praying or fasting.",
+          "evidence": [
+            {
+              "ref": "Mat.6.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.6.5"
+            },
+            {
+              "ref": "Mat.6.17"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "מא"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-mah",
+      "lang": "arc",
+      "form": "מָה",
+      "translit": "mā",
+      "gloss": "what?",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מָה II, Jerusalem Talmud Gittin I, 43d",
+          "note": "The question asks what case is under discussion."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Hebrew interrogative is a rootless key in the corpus index. Many Aramaic-key surface matches occur in Hebrew contexts. SEDRA lexeme 1696 is the short Syriac form, while the longer interrogative מָנָא is filed under מנ."
+}
