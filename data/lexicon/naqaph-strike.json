@@ -1,0 +1,93 @@
+{
+  "id": "naqaph-strike",
+  "root": "נקפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "harvest",
+    "judgment"
+  ],
+  "gloss": "strike off, beat down",
+  "summary": "The action removes growth or fruit by a blow. Isaiah’s harvest image directs attention to the few olives still clinging to the branches.",
+  "words": [
+    {
+      "lemma": "נָקַף",
+      "bdb": [
+        "n.fh.aa"
+      ],
+      "pos": "verb",
+      "gloss": "strike or cut off",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "strike off",
+          "senses": [
+            {
+              "gloss": "strike off",
+              "definition": "Isaiah pictures an iron implement cutting down the dense growth of the forest. Job uses the verb of his own skin in a difficult description of its destruction.",
+              "evidence": [
+                {
+                  "ref": "Isa.10.34",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.19.26"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-strike"
+      ]
+    },
+    {
+      "lemma": "נֹקֶף",
+      "bdb": [
+        "n.fh.ab"
+      ],
+      "pos": "noun",
+      "gloss": "beating down olives",
+      "senses": [
+        {
+          "gloss": "beating down olives",
+          "definition": "Both passages compare the few who remain after judgment to the olives left on the tree after the branches have been beaten.",
+          "evidence": [
+            {
+              "ref": "Isa.17.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.24.13"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-strike"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-strike",
+      "lang": "arc",
+      "form": "נְקַף",
+      "translit": "nəqap̄",
+      "gloss": "strike, knock down",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נְקַף I, Targum Onkelos Exodus 34:20 and Eruvin 53b on a ladle striking a jug"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The striking and encircling verbs have identical written forms. The object and the action in each passage guide the choice between them.",
+  "homograph": 1
+}
