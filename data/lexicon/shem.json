@@ -1,0 +1,331 @@
+{
+  "id": "shem",
+  "root": "שמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "names",
+    "worship",
+    "memory",
+    "place"
+  ],
+  "gloss": "name, renown, there",
+  "summary": "A name identifies someone and can preserve their memory. In the Psalms, loving or praising Yahweh’s name expresses devotion to Yahweh himself. The consonants also write a place adverb distinguished by its vowel and its cognates.",
+  "words": [
+    {
+      "lemma": "שֵׁם",
+      "bdb": [
+        "v.dv.ab"
+      ],
+      "pos": "noun",
+      "gloss": "name, renown, remembered identity",
+      "senses": [
+        {
+          "gloss": "name by which someone is known",
+          "definition": "Names distinguish the animals Adam names. When Moses asks what to tell Israel, Yahweh gives a name to be remembered through the generations.",
+          "evidence": [
+            {
+              "ref": "Gen.2.19",
+              "to": "Gen.2.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.3.13",
+              "to": "Exo.3.15"
+            }
+          ],
+          "cognate_ids": [
+            "phn-shm",
+            "akk-shumu"
+          ]
+        },
+        {
+          "gloss": "renown, enduring remembrance",
+          "definition": "The builders at Babel want a name for themselves. A good name is valued above great riches.",
+          "evidence": [
+            {
+              "ref": "Gen.11.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.22.1"
+            },
+            {
+              "ref": "2Sa.7.9"
+            }
+          ],
+          "cognate_ids": [
+            "phn-shm",
+            "akk-shumu"
+          ]
+        },
+        {
+          "gloss": "the one named, particularly in worship or appeal",
+          "definition": "Those who love Yahweh’s name exult in him. David sings to the name of Yahweh Most High, and the congregation appeals to the name of Jacob’s God.",
+          "evidence": [
+            {
+              "ref": "Psa.5.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.7.18"
+            },
+            {
+              "ref": "Psa.20.2"
+            },
+            {
+              "ref": "Psa.20.8"
+            }
+          ],
+          "cognate_ids": [
+            "phn-shm",
+            "akk-shumu"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שָׁם",
+      "bdb": [
+        "v.dv.aa"
+      ],
+      "pos": "adverb",
+      "gloss": "there, to that place",
+      "senses": [
+        {
+          "gloss": "there, to that place",
+          "definition": "Yahweh plants a garden and places the man there. Abram builds an altar there and calls upon the name of Yahweh.",
+          "evidence": [
+            {
+              "ref": "Gen.2.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.12.8"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-thamma"
+      ]
+    },
+    {
+      "lemma": "שֻׁם",
+      "bdb": [
+        "xv.at.ac"
+      ],
+      "pos": "noun",
+      "gloss": "name",
+      "senses": [
+        {
+          "gloss": "personal name",
+          "definition": "The officials ask for the names of those responsible for rebuilding the temple.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezr.5.10"
+            },
+            {
+              "ref": "Dan.2.26"
+            }
+          ],
+          "cognate_ids": [
+            "phn-shm",
+            "akk-shumu"
+          ]
+        },
+        {
+          "gloss": "name invoked or blessed",
+          "definition": "Daniel blesses God’s name. The prophets address the Jews in the name of the God of Israel.",
+          "evidence": [
+            {
+              "ref": "Dan.2.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezr.5.1"
+            }
+          ],
+          "cognate_ids": [
+            "phn-shm",
+            "akk-shumu"
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc"
+    },
+    {
+      "lemma": "שְׁמָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "name",
+      "senses": [
+        {
+          "gloss": "name",
+          "definition": "Joseph is instructed to give the child the name Jesus. Jesus teaches his disciples to ask that their Father’s name be hallowed.",
+          "evidence": [
+            {
+              "ref": "Mat.1.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.1.25"
+            },
+            {
+              "ref": "Mat.6.9"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "cognate_ids": [
+        "phn-shm",
+        "akk-shumu"
+      ]
+    },
+    {
+      "lemma": "שַׁמִּי",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "give a name",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "name, call",
+          "senses": [
+            {
+              "gloss": "name, call",
+              "definition": "The family asks Zechariah what he wishes his child to be named.",
+              "evidence": [
+                {
+                  "ref": "Luk.1.62",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "phn-shm",
+                "akk-shumu"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "שַׁמַּה",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "be named",
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "be called or designated",
+          "senses": [
+            {
+              "gloss": "be called or designated",
+              "definition": "The Peshitta uses the verb in the account of Joseph called Barsabbas. Hebrews describes Jesus being designated a high priest by God.",
+              "evidence": [
+                {
+                  "ref": "Act.1.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Heb.5.10"
+                }
+              ],
+              "cognate_ids": [
+                "phn-shm",
+                "akk-shumu"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "שְׁמִידָעִי",
+      "bdb": [
+        "v.dv.ag"
+      ],
+      "pos": "adjective",
+      "gloss": "Shemidaite",
+      "senses": [
+        {
+          "gloss": "Shemidaite",
+          "definition": "The census names the clan descended from Shemida among the descendants of Manasseh.",
+          "evidence": [
+            {
+              "ref": "Num.26.32",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-shm",
+      "lang": "phn",
+      "form": "שמ",
+      "translit": "šm",
+      "gloss": "name",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "ŠM II, KAI 10.12–13 and 26 A III.13–14"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    },
+    {
+      "id": "akk-shumu",
+      "lang": "akk",
+      "form": "šumu",
+      "translit": "šumu",
+      "gloss": "name",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000006050, šumu [name] N"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    },
+    {
+      "id": "ar-thamma",
+      "lang": "ar",
+      "form": "ثَمَّ",
+      "translit": "ṯamma",
+      "gloss": "there",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 350, ثم, n4664"
+        }
+      ],
+      "sounds": {
+        "ש": "ṯ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic thamma distinguishes the historical initial consonant of there from that of name. The proper names have different degrees of transparency. Hannah herself explains Samuel’s name by her asking Yahweh for him."
+}
