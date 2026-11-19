@@ -1,0 +1,183 @@
+{
+  "id": "gaar",
+  "root": "גער",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "judgment"
+  ],
+  "gloss": "rebuke",
+  "summary": "To rebuke is to speak sharply against an action or its agent. Psalms also describe the waters yielding when Yahweh rebukes them.",
+  "words": [
+    {
+      "lemma": "גָּעַר",
+      "bdb": [
+        "c.cr.aa"
+      ],
+      "pos": "verb",
+      "gloss": "rebuke",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "address with a rebuke",
+          "senses": [
+            {
+              "gloss": "rebuke a person or nation",
+              "definition": "Jacob rebukes Joseph for his dream. Psalm 9 places Yahweh’s rebuke of nations beside the judgment of the wicked. In Zechariah a rebuke silences the adversary’s accusation.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.9.6"
+                },
+                {
+                  "ref": "Zec.3.2"
+                }
+              ],
+              "id": "rebuke"
+            },
+            {
+              "gloss": "rebuke the waters",
+              "definition": "The sea dries up at Yahweh’s rebuke, allowing his people to cross.",
+              "evidence": [
+                {
+                  "ref": "Psa.106.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Nam.1.4"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-gear"
+      ]
+    },
+    {
+      "lemma": "גְּעָרָה",
+      "bdb": [
+        "c.cr.ab"
+      ],
+      "pos": "noun",
+      "gloss": "rebuke",
+      "senses": [
+        {
+          "gloss": "sharp correction",
+          "definition": "A rebuke penetrates a discerning person more deeply than blows affect a fool.",
+          "evidence": [
+            {
+              "ref": "Pro.17.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.13.1"
+            }
+          ]
+        },
+        {
+          "gloss": "force of a divine rebuke",
+          "definition": "The channels of water and the foundations of the world are exposed at Yahweh’s rebuke.",
+          "evidence": [
+            {
+              "ref": "Psa.18.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.104.7"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-gear"
+      ]
+    },
+    {
+      "lemma": "מִגְעֶרֶת",
+      "bdb": [
+        "c.cr.ac",
+        "m.aj.an"
+      ],
+      "pos": "noun",
+      "gloss": "rebuke",
+      "senses": [
+        {
+          "gloss": "rebuke",
+          "definition": "Deuteronomy places rebuke beside curse and confusion among the consequences of forsaking Yahweh.",
+          "evidence": [
+            {
+              "ref": "Deu.28.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-gear"
+      ]
+    },
+    {
+      "lemma": "גְּעַר",
+      "pos": "verb",
+      "gloss": "rebuke, chide",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "address with a rebuke",
+          "senses": [
+            {
+              "gloss": "address with a rebuke",
+              "definition": "Jude records the appeal for Yahweh to rebuke the adversary. Paul instructs Timothy to appeal to an older man as to a father.",
+              "evidence": [
+                {
+                  "ref": "Jud.1.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ti.5.1"
+                }
+              ],
+              "kin": [
+                "rebuke"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-gear"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-gear",
+      "lang": "arc",
+      "form": "גְּעַר",
+      "translit": "gəʿar",
+      "gloss": "shout at, rebuke",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "גְּעַר, Targum Zechariah 3:2"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The sea’s response gives the divine rebuke its force in Psalm 106. Proverbs shows the ordinary interpersonal sense in the response of someone who heeds correction."
+}
