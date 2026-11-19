@@ -1,0 +1,181 @@
+{
+  "id": "paam",
+  "root": "פעמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "time",
+    "sound"
+  ],
+  "gloss": "footstep, stroke, occasion",
+  "summary": "The noun can designate a step taken or an act repeated and counted. In Psalm 17 the parallel images of feet and paths concern the course the speaker follows.",
+  "words": [
+    {
+      "lemma": "פַּעַם",
+      "bdb": [
+        "q.cf.ab"
+      ],
+      "pos": "noun",
+      "gloss": "footstep, stroke, occasion",
+      "senses": [
+        {
+          "gloss": "foot or step",
+          "definition": "The speaker asks that his steps remain steady on God’s paths. Another psalm describes righteousness going ahead and making a way for his steps.",
+          "evidence": [
+            {
+              "ref": "Psa.17.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.85.14"
+            }
+          ],
+          "id": "step"
+        },
+        {
+          "gloss": "occasion or repetition",
+          "definition": "“This time” marks a particular occasion, and a numeral with the word counts repetitions: a priest sprinkles seven times and Israel circles Jericho once each day.",
+          "evidence": [
+            {
+              "ref": "Gen.2.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.4.6"
+            },
+            {
+              "ref": "Jos.6.3"
+            }
+          ]
+        },
+        {
+          "gloss": "anvil",
+          "definition": "Isaiah pictures one craftsman striking the anvil while another smooths metal with a hammer.",
+          "evidence": [
+            {
+              "ref": "Isa.41.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "phn-paam"
+      ]
+    },
+    {
+      "lemma": "פָּעַם",
+      "bdb": [
+        "q.cf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "stir, disturb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "impel",
+          "senses": [
+            {
+              "gloss": "impel",
+              "definition": "The spirit of Yahweh begins to stir Samson in the camp of Dan.",
+              "evidence": [
+                {
+                  "ref": "Jdg.13.25",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be troubled",
+          "senses": [
+            {
+              "gloss": "be troubled",
+              "definition": "Pharaoh wakes disturbed by his dreams. The psalmist speaks of agitation that leaves him unable to speak.",
+              "evidence": [
+                {
+                  "ref": "Gen.41.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.77.5"
+                },
+                {
+                  "ref": "Dan.2.3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "be disturbed",
+          "senses": [
+            {
+              "gloss": "be disturbed",
+              "definition": "Nebuchadnezzar’s dreams disturb his spirit and interrupt his sleep.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פַּעֲמֹן",
+      "bdb": [
+        "q.cf.ac"
+      ],
+      "pos": "noun",
+      "gloss": "bell",
+      "senses": [
+        {
+          "gloss": "bell",
+          "definition": "Gold bells alternate with pomegranates along the hem of the priestly robe. Their sound is heard as Aaron enters and leaves the holy place.",
+          "evidence": [
+            {
+              "ref": "Exo.28.33",
+              "to": "Exo.28.35",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.39.25",
+              "to": "Exo.39.26"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-paam",
+      "lang": "phn",
+      "form": "𐤐𐤏𐤌",
+      "translit": "pʿm",
+      "gloss": "foot, step",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "PʿM, senses 1 and 2; KAI 26 A I 16–17, under my feet"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The anvil and bell occur in contexts of striking or sound. The relationship of those uses to the noun for a step is more inferential than the direct Phoenician parallel for foot."
+}
