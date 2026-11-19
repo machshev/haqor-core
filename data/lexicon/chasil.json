@@ -1,0 +1,204 @@
+{
+  "id": "chasil",
+  "root": "חסל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "consume, finish off, destroying locust",
+  "summary": "Deuteronomy says that locusts will consume what the farmer sows. Joel uses the related noun for the insects that eat the last of the crop. The same pest appears in prayers concerning famine and in the account of Egypt’s lost produce.",
+  "words": [
+    {
+      "lemma": "חָסַל",
+      "pos": "verb",
+      "bdb": [
+        "h.eg.aa"
+      ],
+      "gloss": "consume, finish off",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "consume",
+          "senses": [
+            {
+              "id": "consume",
+              "gloss": "consume a crop",
+              "definition": "To eat up what has been sown, leaving little for the harvest.",
+              "evidence": [
+                {
+                  "ref": "Deu.28.38",
+                  "role": "defining",
+                  "note": "The farmer sows much but gathers little because the locust consumes the crop."
+                }
+              ],
+              "cognate_ids": [
+                "arc-finish",
+                "uga-wipe"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָסִיל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "h.eg.ab"
+      ],
+      "gloss": "crop-devouring locust",
+      "senses": [
+        {
+          "id": "pest",
+          "gloss": "crop-devouring locust",
+          "definition": "An insect that strips a crop, often mentioned with other kinds of locust.",
+          "evidence": [
+            {
+              "ref": "Jol.1.4",
+              "role": "defining",
+              "note": "The ḥāsīl eats what the preceding insects have left."
+            },
+            {
+              "ref": "Jol.2.25",
+              "role": "defining",
+              "note": "Yahweh promises to restore the years lost to four named crop pests."
+            },
+            {
+              "ref": "Psa.78.46",
+              "role": "defining",
+              "note": "Egypt’s produce is given to the ḥāsīl and the fruit of its labour to the locust."
+            },
+            {
+              "ref": "1Ki.8.37",
+              "role": "defining",
+              "note": "Solomon includes invasion by these insects among the disasters that may bring a petitioner to the temple."
+            },
+            {
+              "ref": "2Ch.6.28",
+              "role": "defining",
+              "note": "The parallel prayer also names this pest beside the locust."
+            },
+            {
+              "ref": "Isa.33.4",
+              "role": "defining",
+              "note": "The rapid gathering of spoil is likened to the gathering of locusts."
+            }
+          ],
+          "cognate_ids": [
+            "uga-insects",
+            "gez-insect",
+            "tir-insect",
+            "amh-insect"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-finish",
+      "lang": "arc",
+      "form": "חֲסַל",
+      "translit": "ḥăsal",
+      "gloss": "finish, be exhausted, strip bare",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "H01396, Targum Onkelos Deuteronomy 28:38 and Palestinian Targum Genesis 47:15"
+        }
+      ]
+    },
+    {
+      "id": "uga-wipe",
+      "lang": "uga",
+      "form": "𐎈𐎒𐎍",
+      "translit": "ḥsl",
+      "gloss": "wipe",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000145, UGC001908"
+        }
+      ]
+    },
+    {
+      "id": "uga-insects",
+      "lang": "uga",
+      "form": "𐎈𐎒𐎐",
+      "translit": "ḥsn",
+      "gloss": "grasshoppers",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.6.6, Locust, cricket, SED II no. 105"
+        }
+      ]
+    },
+    {
+      "id": "gez-insect",
+      "lang": "gez",
+      "form": "ḥasen",
+      "translit": "ḥasen",
+      "gloss": "butterfly",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.6.6, Locust, cricket, SED II no. 105"
+        }
+      ]
+    },
+    {
+      "id": "tir-insect",
+      "lang": "sem",
+      "form": "ḥasen",
+      "translit": "ḥasen",
+      "gloss": "Tigrinya winged antlion",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.6.6, Locust, cricket, SED II no. 105"
+        }
+      ]
+    },
+    {
+      "id": "amh-insect",
+      "lang": "sem",
+      "form": "ašän",
+      "translit": "ašän",
+      "gloss": "Amharic winged termites or small locusts",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.6.6, Locust, cricket, SED II no. 105"
+        }
+      ]
+    }
+  ],
+  "note": "The Hebrew verb and the crop pest share a clear association with eating a harvest away. The insect names in Ugaritic and Ethiopic have final n where Hebrew has l. Kogan proposes a relationship, but the insects named differ across the languages. The Hebrew passages do not specify a species or a growth stage."
+}
