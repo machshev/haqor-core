@@ -1,0 +1,198 @@
+{
+  "id": "nadach",
+  "root": "נדח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "exile",
+    "movement",
+    "deception"
+  ],
+  "gloss": "drive away, draw aside, scatter",
+  "summary": "The verb can describe displacement from a land or departure from faithfulness. David asks that the rebels be driven out, while Jeremiah promises that Yahweh will gather the people he has scattered.",
+  "words": [
+    {
+      "lemma": "נָדַח",
+      "bdb": [
+        "n.bh.aa"
+      ],
+      "pos": "verb",
+      "gloss": "drive away, lead astray",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "drive away, turn aside",
+          "senses": [
+            {
+              "gloss": "drive away",
+              "definition": "David asks Yahweh to banish those who rebel against him. Jeremiah pictures the scattered flock being gathered from the lands to which it had been driven.",
+              "evidence": [
+                {
+                  "ref": "Psa.5.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.23.3"
+                },
+                {
+                  "ref": "Psa.62.5"
+                }
+              ],
+              "cognate_ids": [
+                "arc-nedah"
+              ]
+            },
+            {
+              "gloss": "lead someone astray",
+              "definition": "Deuteronomy describes people enticing fellow Israelites away from Yahweh to serve other gods.",
+              "evidence": [
+                {
+                  "ref": "Deu.13.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.13.14"
+                }
+              ],
+              "kin": [
+                "enticement"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be scattered, be drawn aside",
+          "senses": [
+            {
+              "gloss": "be driven away, be outcast",
+              "definition": "Even an exile at the ends of the heavens can be gathered again. The woman of Tekoa speaks of bringing home someone banished.",
+              "evidence": [
+                {
+                  "ref": "Deu.30.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.14.13",
+                  "to": "2Sa.14.14"
+                }
+              ]
+            },
+            {
+              "gloss": "be drawn aside",
+              "definition": "Israel is warned against being drawn into worshipping the heavenly bodies.",
+              "evidence": [
+                {
+                  "ref": "Deu.4.19",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "swing away",
+              "definition": "Deuteronomy pictures a woodcutter’s hand swinging as he strikes a tree.",
+              "evidence": [
+                {
+                  "ref": "Deu.19.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "wield, swing",
+          "senses": [
+            {
+              "gloss": "wield, swing",
+              "definition": "Deuteronomy forbids swinging an axe against the fruit trees that feed the people.",
+              "evidence": [
+                {
+                  "ref": "Deu.20.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be chased away",
+          "senses": [
+            {
+              "gloss": "be chased away",
+              "definition": "The fleeing people are compared to a hunted gazelle and a flock with no one to gather it.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be driven away",
+          "senses": [
+            {
+              "gloss": "be driven away",
+              "definition": "Isaiah describes someone driven into darkness amid distress.",
+              "evidence": [
+                {
+                  "ref": "Isa.8.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַדּוּחַ",
+      "bdb": [
+        "n.bh.ab"
+      ],
+      "pos": "noun",
+      "gloss": "enticement, misleading message",
+      "senses": [
+        {
+          "gloss": "enticement",
+          "definition": "The prophets have supplied false visions that lead the people astray and leave their wrongdoing unexposed.",
+          "evidence": [
+            {
+              "ref": "Lam.2.14",
+              "role": "defining"
+            }
+          ],
+          "id": "enticement"
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-nedah",
+      "lang": "arc",
+      "form": "נְדַח",
+      "translit": "nədaḥ",
+      "gloss": "make slip, dislodge",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נְדַח, Targum on Psalm 62:5, variant reading"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic comparison rests on a variant reading. The indexed nouns for a gift and a sheath end in nun rather than heth and are separate words."
+}
