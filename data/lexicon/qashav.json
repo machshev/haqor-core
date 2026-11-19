@@ -1,0 +1,185 @@
+{
+  "id": "qashav",
+  "root": "קשב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "listening",
+    "prayer",
+    "obedience"
+  ],
+  "gloss": "listen closely, pay attention",
+  "summary": "David asks Yahweh to listen to his cry. The same verb describes a person attending to instruction, and the noun can describe the response expected from someone who has heard.",
+  "words": [
+    {
+      "lemma": "קָשַׁב",
+      "bdb": [
+        "s.dr.aa"
+      ],
+      "pos": "verb",
+      "gloss": "listen closely, heed",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "listen, heed",
+          "senses": [
+            {
+              "gloss": "listen closely",
+              "definition": "David asks his king and God to listen to his cry. Isaiah calls listeners to give their attention to his words.",
+              "evidence": [
+                {
+                  "ref": "Psa.5.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.17.1"
+                },
+                {
+                  "ref": "Isa.28.23"
+                },
+                {
+                  "ref": "Psa.61.2"
+                }
+              ],
+              "cognate_ids": [
+                "arc-qeshav"
+              ]
+            },
+            {
+              "gloss": "heed a warning or instruction",
+              "definition": "Samuel says that heeding Yahweh is better than sacrifice. Jeremiah’s hearers refuse to heed the watchmen’s horn.",
+              "evidence": [
+                {
+                  "ref": "1Sa.15.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.6.17"
+                },
+                {
+                  "ref": "Pro.4.20"
+                }
+              ],
+              "cognate_ids": [
+                "arc-qeshav"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "pay attention",
+          "senses": [
+            {
+              "gloss": "pay attention",
+              "definition": "Isaiah pairs eyes that see with ears that listen attentively.",
+              "evidence": [
+                {
+                  "ref": "Isa.32.3",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-qeshav"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֶשֶׁב",
+      "bdb": [
+        "s.dr.ab"
+      ],
+      "pos": "noun",
+      "gloss": "attention, response",
+      "senses": [
+        {
+          "gloss": "attention",
+          "definition": "The lookout must pay very close attention to what he sees approaching. Isaiah repeats the noun for emphasis.",
+          "evidence": [
+            {
+              "ref": "Isa.21.7",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "arc-qeshav"
+          ]
+        },
+        {
+          "gloss": "sign of attention, response",
+          "definition": "Baal’s prophets call until the offering, yet nobody answers. Gehazi reports a similar absence of voice or response from the child.",
+          "evidence": [
+            {
+              "ref": "1Ki.18.29",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.4.31"
+            }
+          ],
+          "cognate_ids": [
+            "arc-qeshav"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "קַשָּׁב",
+      "bdb": [
+        "s.dr.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "attentive",
+      "senses": [
+        {
+          "gloss": "attentive",
+          "definition": "Nehemiah asks that God’s ear be attentive to the prayer he offers for Israel. In the plural the word describes ears attentive to supplication.",
+          "evidence": [
+            {
+              "ref": "Neh.1.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.1.11"
+            },
+            {
+              "ref": "Psa.130.2"
+            },
+            {
+              "ref": "2Ch.6.40"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-qeshav"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-qeshav",
+      "lang": "arc",
+      "form": "קְשַׁב",
+      "translit": "qəšab",
+      "gloss": "be attentive, watchful",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "קְשַׁב, Gittin 56a, Arukh reading"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The adjective occurs as feminine singular קַשֶּׁבֶת and feminine plural קַשֻּׁבוֹת. Both adjective keys return the same five occurrences. The Aramaic comparison rests on the variant reading cited by Jastrow."
+}
