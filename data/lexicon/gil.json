@@ -1,0 +1,198 @@
+{
+  "id": "gil",
+  "root": "גיל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "joy",
+    "age"
+  ],
+  "gloss": "rejoice, exult",
+  "summary": "Joy can break out in singing at harvest or in thanksgiving for deliverance. Psalm 2 joins rejoicing with the trembling proper to serving Yahweh.",
+  "words": [
+    {
+      "lemma": "גִּיל",
+      "bdb": [
+        "c.bw.aa",
+        "c.bb.ag"
+      ],
+      "pos": "verb",
+      "gloss": "rejoice",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rejoice, exult",
+          "senses": [
+            {
+              "gloss": "rejoice, exult",
+              "definition": "The psalmist rejoices in Yahweh’s deliverance. Isaiah likens the joy to the celebrations at harvest or the division of spoil. In Psalm 2 rejoicing is accompanied by trembling.",
+              "evidence": [
+                {
+                  "ref": "Psa.13.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.2.11"
+                },
+                {
+                  "ref": "Psa.9.15"
+                },
+                {
+                  "ref": "Psa.16.9"
+                },
+                {
+                  "ref": "Isa.9.2"
+                },
+                {
+                  "ref": "Hab.3.18"
+                }
+              ],
+              "kin": [
+                "joy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גִּיל",
+      "bdb": [
+        "c.bw.ab"
+      ],
+      "pos": "noun",
+      "gloss": "rejoicing",
+      "senses": [
+        {
+          "gloss": "joy made evident",
+          "definition": "When the vineyards are laid waste, the rejoicing and cries of the harvest workers fall silent.",
+          "evidence": [
+            {
+              "ref": "Isa.16.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.48.33"
+            }
+          ],
+          "id": "joy"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "גִּיל",
+      "bdb": [
+        "c.bw.ac"
+      ],
+      "pos": "noun",
+      "gloss": "age, generation",
+      "senses": [
+        {
+          "gloss": "age, generation",
+          "definition": "The official fears comparing Daniel and his companions with youths of their own age after their change of diet.",
+          "evidence": [
+            {
+              "ref": "Dan.1.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-jil"
+      ]
+    },
+    {
+      "lemma": "גִּילָה",
+      "bdb": [
+        "c.bw.ad"
+      ],
+      "pos": "noun",
+      "gloss": "rejoicing",
+      "senses": [
+        {
+          "gloss": "rejoicing",
+          "definition": "Isaiah describes the flowering desert rejoicing and singing. Jerusalem itself is made a cause for rejoicing.",
+          "evidence": [
+            {
+              "ref": "Isa.35.1",
+              "to": "Isa.35.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.65.18"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "גִּלֹה",
+      "bdb": [
+        "c.bw.ae"
+      ],
+      "pos": "name",
+      "gloss": "Giloh",
+      "senses": [
+        {
+          "gloss": "Giloh",
+          "definition": "A town of Judah in the hill country. Absalom summons Ahithophel from this town.",
+          "evidence": [
+            {
+              "ref": "Jos.15.51",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.15.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גִּילֹנִי",
+      "bdb": [
+        "c.bw.af"
+      ],
+      "pos": "adjective",
+      "gloss": "from Giloh",
+      "senses": [
+        {
+          "gloss": "from Giloh",
+          "definition": "Ahithophel is called the Gilonite in the same sentence that identifies Giloh as his city.",
+          "evidence": [
+            {
+              "ref": "2Sa.15.12",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.23.34"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-jil",
+      "lang": "ar",
+      "form": "جِيلٌ",
+      "translit": "jīl",
+      "gloss": "a generation of people",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 494, n6830"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Daniel’s age noun has the same spelling as the joy noun. Arabic confirms the age or generation sense but does not explain how the two Hebrew uses are related. The origin of the place name Giloh is uncertain."
+}
