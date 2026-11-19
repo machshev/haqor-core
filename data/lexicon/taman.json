@@ -1,0 +1,145 @@
+{
+  "id": "taman",
+  "root": "טמנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "concealment",
+    "wealth"
+  ],
+  "gloss": "hide, conceal",
+  "summary": "People hide possessions for safekeeping, a body to conceal a killing, or a net to ensnare another. The related noun designates something stored out of sight.",
+  "words": [
+    {
+      "lemma": "טָמַן",
+      "bdb": [
+        "i.ba.aa"
+      ],
+      "pos": "verb",
+      "gloss": "hide, conceal",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "conceal something",
+          "senses": [
+            {
+              "gloss": "put away out of sight",
+              "definition": "Jacob hides the foreign gods beneath the tree at Shechem. Moses hides the Egyptian’s body in the sand.",
+              "evidence": [
+                {
+                  "ref": "Gen.35.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.2.12"
+                }
+              ],
+              "id": "hide"
+            },
+            {
+              "gloss": "lay a concealed trap",
+              "definition": "Psalm 9 pictures the nations caught in the net they themselves hid. The trap in Psalm 31 is likewise concealed from the intended victim.",
+              "evidence": [
+                {
+                  "ref": "Psa.9.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.31.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "hide oneself",
+          "senses": [
+            {
+              "gloss": "hide oneself",
+              "definition": "Isaiah calls the hearer to enter the rock and hide in the dust before Yahweh’s splendour.",
+              "evidence": [
+                {
+                  "ref": "Isa.2.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "put away secretly",
+          "senses": [
+            {
+              "gloss": "put away secretly",
+              "definition": "The men entering the abandoned Aramean camp carry off silver, gold and garments and hide their finds.",
+              "evidence": [
+                {
+                  "ref": "2Ki.7.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-teman"
+      ]
+    },
+    {
+      "lemma": "מַטְמוֹן",
+      "bdb": [
+        "i.ba.ab",
+        "m.br.ac"
+      ],
+      "pos": "noun",
+      "gloss": "hidden treasure, stored goods",
+      "senses": [
+        {
+          "gloss": "hidden treasure, stored goods",
+          "definition": "The steward describes the silver in the brothers’ sacks as treasure given by God. A hidden store can contain food or oil as well as silver. Proverbs compares seeking wisdom to searching for such treasure.",
+          "evidence": [
+            {
+              "ref": "Gen.43.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.41.8"
+            },
+            {
+              "ref": "Pro.2.4"
+            },
+            {
+              "ref": "Isa.45.3"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-teman"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-teman",
+      "lang": "arc",
+      "form": "טְמַן",
+      "translit": "ṭəman",
+      "gloss": "hide",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "טְמַן, manuscript reading of Targum Job 14:13"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The psalm’s net is deliberately concealed. The noun for hidden treasure also applies to practical stores kept in a field, as in Jeremiah 41:8."
+}
