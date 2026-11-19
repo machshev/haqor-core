@@ -1,0 +1,207 @@
+{
+  "id": "mashakh",
+  "root": "משכ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "duration"
+  ],
+  "gloss": "draw, drag, extend",
+  "summary": "A person or object can be drawn along physically. A sound, an act of kindness or an interval of waiting can also be extended.",
+  "words": [
+    {
+      "lemma": "מָשַׁךְ",
+      "bdb": [
+        "m.du.aa"
+      ],
+      "pos": "verb",
+      "gloss": "draw, drag, extend",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "draw or extend",
+          "senses": [
+            {
+              "gloss": "pull or drag",
+              "definition": "Joseph is pulled up from the pit. In Psalm 10 the assailant catches the poor by drawing in his net.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.28",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.38.13"
+                },
+                {
+                  "ref": "Psa.10.9"
+                }
+              ],
+              "id": "pull"
+            },
+            {
+              "gloss": "draw someone along",
+              "definition": "Yahweh draws Sisera to the Kishon and speaks of leading Israel with cords of kindness.",
+              "evidence": [
+                {
+                  "ref": "Jdg.4.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hos.11.4"
+                }
+              ]
+            },
+            {
+              "gloss": "prolong or extend",
+              "definition": "A blast on the horn is drawn out. The psalmist asks God to extend his covenant faithfulness toward those who know him.",
+              "evidence": [
+                {
+                  "ref": "Exo.19.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jos.6.5"
+                },
+                {
+                  "ref": "Psa.36.11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be prolonged or delayed",
+          "senses": [
+            {
+              "gloss": "be prolonged or delayed",
+              "definition": "Babylon’s days will not be prolonged, and Yahweh declares that the fulfilment of his word will no longer be delayed.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.12.25"
+                },
+                {
+                  "ref": "Ezk.12.28"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be drawn out",
+          "senses": [
+            {
+              "gloss": "be deferred",
+              "definition": "Continuing to wait for what one hopes for makes the heart sick.",
+              "evidence": [
+                {
+                  "ref": "Pro.13.12",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "stretched out, tall",
+              "definition": "Isaiah twice applies this participle to a people described by their appearance, usually understood to be tall.",
+              "evidence": [
+                {
+                  "ref": "Isa.18.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.18.7"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-meshakh"
+      ]
+    },
+    {
+      "lemma": "מֶשֶׁךְ",
+      "bdb": [
+        "m.du.ab"
+      ],
+      "pos": "noun",
+      "gloss": "supply of seed, acquisition",
+      "senses": [
+        {
+          "gloss": "seed carried for sowing",
+          "definition": "The weeping sower carries seed out and returns rejoicing with sheaves. The expression may designate the seed supply or the bag from which it is drawn.",
+          "evidence": [
+            {
+              "ref": "Psa.126.6",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "acquisition or value",
+          "definition": "Job compares the acquisition of wisdom with costly stones.",
+          "evidence": [
+            {
+              "ref": "Job.28.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מֹשֶׁכֶת",
+      "bdb": [
+        "m.du.ad"
+      ],
+      "pos": "noun",
+      "gloss": "cord",
+      "senses": [
+        {
+          "gloss": "cord or binding",
+          "definition": "Yahweh asks Job whether he can loosen Orion’s cords, paired with binding the Pleiades.",
+          "evidence": [
+            {
+              "ref": "Job.38.31",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "pull"
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-meshakh",
+      "lang": "arc",
+      "form": "מְשַׁךְ",
+      "translit": "məšaḵ",
+      "gloss": "draw, carry along",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "מְשַׁךְ I, Palestinian Targum to Genesis 9:20"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The identical name Meshech designates a son of Japheth and a people associated with Tubal. Scripture supplies no derivation from this verb. Syriac ܡܫܟܐ “skin” is likewise distinct. The two passages with the common noun offer little basis for a single precise English equivalent."
+}
