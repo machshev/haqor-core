@@ -1,0 +1,1851 @@
+{
+  "id": "mashal",
+  "root": "משל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "rule",
+    "dominion",
+    "kingdom",
+    "proverb",
+    "parable",
+    "likeness",
+    "wisdom",
+    "mortality"
+  ],
+  "gloss": "rule, have dominion; be like, compare; proverb, parable, byword",
+  "summary": "One spelling with two sides. The verb מָשַׁל “rule” is to have power over people, a land or a house: Joseph over Egypt, a master over a servant, the sun over the day, Yahweh over the nations, and a man over his own spirit and over sin (Gen 4:7); its nouns מֶמְשָׁלָה, מִמְשָׁל and מֹשֶׁל are rule, dominion and the realm ruled, and the ruler from Bethlehem (Mic 5:1) and the king whose dominion reaches from sea to sea (Zec 9:10) are Christ's. The other מָשַׁל is to be like or to set one thing beside another, and its noun מָשָׁל is a saying built on that likeness: a proverb (the proverbs of Solomon), a parable or figure, a byword that a scattered people becomes, an oracle or discourse taken up. Arabic maṯal “likeness, proverb, parable”, Aramaic and Syriac matlā “parable” and Ge'ez məsl “likeness, parable” show ṯ behind the ש of the likeness words; Phoenician mšl “rule, ruler” is the only cognate of the rule words, and no cognate yet shows the older sound behind them.",
+  "words": [
+    {
+      "lemma": "מָשַׁל",
+      "pos": "verb",
+      "gloss": "rule, have dominion, reign; (hiphil) make rule",
+      "bdb": [
+        "m.dw.aa"
+      ],
+      "cognate_ids": [
+        "phn-mshl-rule"
+      ],
+      "summary": "About eighty times, almost all qal, with בְּ of what is ruled (“rule over”). The participle מֹשֵׁל is “ruler”. It is set beside מָלַךְ “reign” (Gen 37:8) and against being a servant or a borrower (Deu 15:6; Pro 22:7). The brief's ten verb tokens with no stem are the noun מָשָׁל, filed here by spelling (1Ch 6:59 is the town מָשָׁל, a place, not this word).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rule, have dominion over; (participle) ruler",
+          "senses": [
+            {
+              "id": "rule-over",
+              "gloss": "rule over, have dominion over",
+              "definition": "To hold power over people, a land or a household: a king or a foreign people over Israel, a master over a servant, a husband over his wife, the rich over the poor.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.8",
+                  "role": "defining",
+                  "note": "Joseph's brothers: “הֲמָלֹךְ תִּמְלֹךְ עָלֵינוּ, אִם־מָשׁוֹל תִּמְשֹׁל בָּנוּ?” — will you reign over us, will you rule over us? Parallel with מָלַךְ."
+                },
+                {
+                  "ref": "Jdg.8.22",
+                  "role": "defining",
+                  "note": "“מְשָׁל־בָּנוּ, both you and your son and your son's son, for you have saved us.”"
+                },
+                {
+                  "ref": "Jdg.8.23",
+                  "note": "Gideon: “I will not rule over you, nor will my son rule over you; Yahweh will rule over you.”"
+                },
+                {
+                  "ref": "Jdg.9.2",
+                  "note": "“Which is better for you, that seventy men rule over you, or that one man rule over you?”"
+                },
+                {
+                  "ref": "Jdg.14.4",
+                  "note": "“At that time the Philistines מֹשְׁלִים בְּיִשְׂרָאֵל.”"
+                },
+                {
+                  "ref": "Jdg.15.11",
+                  "note": "“Do you not know that the Philistines rule over us?”"
+                },
+                {
+                  "ref": "Deu.15.6",
+                  "role": "defining",
+                  "note": "“You shall lend to many nations but not borrow; וּמָשַׁלְתָּ בְּגוֹיִם רַבִּים, but they shall not rule over you.”"
+                },
+                {
+                  "ref": "Pro.22.7",
+                  "role": "defining",
+                  "note": "“The rich rules over the poor, and the borrower is servant (עֶבֶד) to the lender.”"
+                },
+                {
+                  "ref": "Gen.3.16",
+                  "role": "defining",
+                  "note": "To the woman: “your desire shall be to your husband, וְהוּא יִמְשָׁל־בָּךְ.”"
+                },
+                {
+                  "ref": "Pro.17.2",
+                  "note": "“A servant who acts wisely shall rule over a son who causes shame.”"
+                },
+                {
+                  "ref": "Pro.19.10",
+                  "note": "“How much less for a servant to rule over princes.”"
+                },
+                {
+                  "ref": "Pro.12.24",
+                  "note": "“The hand of the diligent shall rule, but the slack shall be put to forced labour.”"
+                },
+                {
+                  "ref": "Pro.29.2",
+                  "note": "“When the wicked rules, the people groan.”"
+                },
+                {
+                  "ref": "Isa.3.4",
+                  "note": "“I will give youths as their princes, and caprice shall rule over them.”"
+                },
+                {
+                  "ref": "Isa.3.12",
+                  "note": "“As for my people, … women rule over them.”"
+                },
+                {
+                  "ref": "Isa.19.4",
+                  "note": "“A fierce king shall rule over them.”"
+                },
+                {
+                  "ref": "Lam.5.8",
+                  "note": "“Servants rule over us; there is none to deliver from their hand.”"
+                },
+                {
+                  "ref": "Neh.9.37",
+                  "note": "The kings set over Israel for its sins “rule over our bodies and over our cattle as they please”."
+                },
+                {
+                  "ref": "Psa.106.41",
+                  "note": "“He gave them into the hand of the nations, and those who hated them ruled over them.”"
+                },
+                {
+                  "ref": "Exo.21.8",
+                  "note": "Of a bought maidservant: “to sell her to a foreign people לֹא־יִמְשֹׁל”, he has no right."
+                },
+                {
+                  "ref": "1Ki.5.1",
+                  "note": "“Solomon was ruling over all the kingdoms from the River to the land of the Philistines.”"
+                },
+                {
+                  "ref": "2Ch.9.26"
+                },
+                {
+                  "ref": "Jos.12.2",
+                  "note": "Sihon “ruled from Aroer”."
+                },
+                {
+                  "ref": "Jos.12.5"
+                },
+                {
+                  "ref": "Isa.63.19",
+                  "note": "“We have become like those over whom you never ruled, who were not called by your name.”"
+                },
+                {
+                  "ref": "Jol.2.17",
+                  "note": "“Do not give your inheritance to reproach, לִמְשָׁל־בָּם גּוֹיִם”: that nations should rule over them (or make a byword of them)."
+                },
+                {
+                  "ref": "Dan.11.3",
+                  "note": "“A mighty king shall stand, וּמָשַׁל מִמְשָׁל רַב, and do according to his will.”"
+                },
+                {
+                  "ref": "Dan.11.4"
+                },
+                {
+                  "ref": "Dan.11.5"
+                },
+                {
+                  "ref": "Dan.11.43",
+                  "note": "“He shall rule over the treasures of gold and silver.”"
+                }
+              ],
+              "kin": [
+                "memshalah-dominion",
+                "mimshal-dominion",
+                "moshel-dominion"
+              ]
+            },
+            {
+              "id": "ruler",
+              "gloss": "ruler, one in charge",
+              "definition": "The participle מֹשֵׁל as a noun: the one who holds rule, a king or governor, or a steward over a house.",
+              "evidence": [
+                {
+                  "ref": "Gen.45.8",
+                  "role": "defining",
+                  "note": "God made Joseph “father to Pharaoh, lord of all his house, וּמֹשֵׁל בְּכָל־אֶרֶץ מִצְרָיִם”."
+                },
+                {
+                  "ref": "Gen.45.26"
+                },
+                {
+                  "ref": "Psa.105.21",
+                  "note": "“He made him lord of his house and ruler of all his possessions.”"
+                },
+                {
+                  "ref": "Psa.105.20",
+                  "note": "“The ruler of peoples set him free.”"
+                },
+                {
+                  "ref": "Gen.24.2",
+                  "role": "defining",
+                  "note": "Abraham's servant, the eldest of his house, “הַמֹּשֵׁל בְּכָל־אֲשֶׁר־לוֹ”."
+                },
+                {
+                  "ref": "Mic.5.1",
+                  "role": "defining",
+                  "note": "“From you, Bethlehem Ephrathah, shall come out to me one to be מוֹשֵׁל in Israel.” Quoted at Mat 2:6."
+                },
+                {
+                  "ref": "Mat.2.6",
+                  "note": "“Out of you shall come a ruler (ἡγούμενος) who shall shepherd my people Israel.”"
+                },
+                {
+                  "ref": "Jer.30.21",
+                  "note": "“His majestic one shall be from himself, וּמֹשְׁלוֹ shall come out from his midst.”"
+                },
+                {
+                  "ref": "Jer.22.30",
+                  "note": "None of Coniah's seed shall prosper “sitting on the throne of David and ruling again in Judah”."
+                },
+                {
+                  "ref": "Jer.33.26",
+                  "note": "Yahweh will not cast off the seed of David “from taking of his seed rulers over the seed of Abraham, Isaac and Jacob”."
+                },
+                {
+                  "ref": "2Ch.7.18",
+                  "note": "“There shall not fail you a man ruling in Israel.”"
+                },
+                {
+                  "ref": "Zec.6.13",
+                  "role": "defining",
+                  "note": "The Branch “shall build the temple of Yahweh … and sit and rule on his throne, and be a priest on his throne”."
+                },
+                {
+                  "ref": "2Sa.23.3",
+                  "note": "“One ruling over men, righteous, ruling in the fear of God.”"
+                },
+                {
+                  "ref": "Pro.6.7",
+                  "note": "The ant “has no chief, officer or ruler”."
+                },
+                {
+                  "ref": "Pro.23.1",
+                  "note": "“When you sit to eat with a ruler.”"
+                },
+                {
+                  "ref": "Pro.28.15",
+                  "note": "“A roaring lion and a ranging bear is a wicked ruler over a poor people.”"
+                },
+                {
+                  "ref": "Pro.29.12"
+                },
+                {
+                  "ref": "Pro.29.26",
+                  "note": "“Many seek the ruler's face, but a man's judgment comes from Yahweh.”"
+                },
+                {
+                  "ref": "Ecc.9.17"
+                },
+                {
+                  "ref": "Ecc.10.4",
+                  "note": "“If the spirit of the ruler rises against you, do not leave your place.”"
+                },
+                {
+                  "ref": "Isa.14.5",
+                  "note": "“Yahweh has broken the staff of the wicked, the sceptre of rulers.”"
+                },
+                {
+                  "ref": "Isa.16.1"
+                },
+                {
+                  "ref": "Isa.28.14",
+                  "note": "“Scoffers, rulers of this people in Jerusalem.”"
+                },
+                {
+                  "ref": "Isa.49.7",
+                  "note": "To “a servant of rulers”: kings shall see and arise."
+                },
+                {
+                  "ref": "Jer.51.46",
+                  "note": "“Violence in the land, ruler against ruler.”"
+                },
+                {
+                  "ref": "Ezk.19.11",
+                  "note": "Strong rods “for sceptres of rulers”."
+                },
+                {
+                  "ref": "Ezk.19.14",
+                  "note": "“No strong rod in her, a sceptre לִמְשׁוֹל.”"
+                },
+                {
+                  "ref": "Hab.1.14",
+                  "note": "Men made “like creeping things that have no ruler over them”."
+                },
+                {
+                  "ref": "2Ch.23.20"
+                }
+              ]
+            },
+            {
+              "id": "god-rules",
+              "gloss": "(of God) rule over all",
+              "definition": "Yahweh's rule: over the nations, the sea, Jacob and all things; his kingdom rules over all.",
+              "evidence": [
+                {
+                  "ref": "Psa.103.19",
+                  "role": "defining",
+                  "note": "“Yahweh has established his throne in the heavens, וּמַלְכוּתוֹ בַּכֹּל מָשָׁלָה.”"
+                },
+                {
+                  "ref": "Psa.22.29",
+                  "role": "defining",
+                  "note": "“For the kingdom is Yahweh's, וּמֹשֵׁל בַּגּוֹיִם.”"
+                },
+                {
+                  "ref": "1Ch.29.12",
+                  "role": "defining",
+                  "note": "“You rule over all, and in your hand is power and might, and in your hand it is to make great and to give strength to all.”"
+                },
+                {
+                  "ref": "2Ch.20.6",
+                  "note": "“Are you not God in heaven, and do you not rule over all the kingdoms of the nations?”"
+                },
+                {
+                  "ref": "Psa.59.14",
+                  "note": "“Let them know that God rules in Jacob to the ends of the earth.”"
+                },
+                {
+                  "ref": "Psa.66.7",
+                  "note": "“He rules by his might for ever; his eyes watch the nations.”"
+                },
+                {
+                  "ref": "Psa.89.10",
+                  "note": "“You rule the raging of the sea.”"
+                },
+                {
+                  "ref": "Isa.40.10",
+                  "note": "“The Lord Yahweh will come with strength, and his arm rules for him.”"
+                },
+                {
+                  "ref": "Jdg.8.23",
+                  "role": "defining",
+                  "note": "“Yahweh shall rule over you”, said in refusing a human dynasty."
+                }
+              ]
+            },
+            {
+              "id": "lights-rule",
+              "gloss": "(of the sun and moon) rule over day and night",
+              "definition": "The lights made on the fourth day govern the day and the night.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.18",
+                  "role": "defining",
+                  "note": "“וְלִמְשֹׁל בַּיּוֹם וּבַלַּיְלָה, and to divide between the light and the darkness.”"
+                }
+              ],
+              "kin": [
+                "memshalah-lights"
+              ]
+            },
+            {
+              "id": "rule-self",
+              "gloss": "rule over oneself, master sin",
+              "definition": "To master what would master a man: sin crouching at the door, presumptuous sins, one's own spirit.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.7",
+                  "role": "defining",
+                  "note": "“Sin crouches at the door; its desire is for you, וְאַתָּה תִּמְשָׁל־בּוֹ.”"
+                },
+                {
+                  "ref": "Psa.19.14",
+                  "role": "defining",
+                  "note": "“Keep back your servant from presumptuous sins; אַל־יִמְשְׁלוּ־בִי; then I shall be blameless.”"
+                },
+                {
+                  "ref": "Pro.16.32",
+                  "role": "defining",
+                  "note": "“Better … וּמֹשֵׁל בְּרוּחוֹ than one who takes a city.”"
+                },
+                {
+                  "ref": "Rom.6.14",
+                  "note": "“Sin shall not have dominion (κυριεύσει) over you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make rule, give dominion; (infinitive) dominion",
+          "senses": [
+            {
+              "id": "make-rule",
+              "gloss": "make to rule, give dominion",
+              "definition": "To set someone over others or over things as ruler; the infinitive הַמְשֵׁל is “dominion” itself.",
+              "evidence": [
+                {
+                  "ref": "Psa.8.7",
+                  "role": "defining",
+                  "note": "“תַּמְשִׁילֵהוּ over the works of your hands; you have put all things under his feet.” Applied to Jesus at Heb 2:7–9 and 1Co 15:27."
+                },
+                {
+                  "ref": "Heb.2.7",
+                  "to": "Heb.2.8",
+                  "note": "“You set him over the works of your hands; you put all things in subjection under his feet.”"
+                },
+                {
+                  "ref": "Dan.11.39",
+                  "note": "“He will make them rule over many, and divide the land for a price.”"
+                },
+                {
+                  "ref": "Job.25.2",
+                  "role": "defining",
+                  "note": "“הַמְשֵׁל וָפַחַד are with him; he makes peace in his high places.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κυριεύω",
+          "gloss": "be lord, have dominion",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.3.16, יִמְשָׁל → κυριεύσει; Gen.37.8; Jdg.9.2; 14.4; 15.11; Psa.106.41; Isa.3.4, 12; 19.4; Lam.5.8; Dan.11.3; κυριεύω renders מָשַׁל ×15"
+            },
+            {
+              "ref": "Rom.6.14",
+              "note": "“Sin shall not have dominion over you, for you are not under law but under grace.”"
+            },
+            {
+              "ref": "Rom.6.9",
+              "note": "“Christ, raised from the dead, dies no more; death no longer has dominion over him.”"
+            },
+            {
+              "ref": "Luk.22.25",
+              "note": "“The kings of the nations exercise lordship over them … but not so with you.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἄρχων",
+          "gloss": "ruler",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.45.8; Psa.105.20, 21; Isa.14.5; 49.7; Jer.30.21; Mic.5.1, מוֹשֵׁל → ἄρχων; ἄρχων renders מָשַׁל ×14, ἄρχω ×9 (Gen.1.18, 4.7)"
+            },
+            {
+              "ref": "Rev.1.5",
+              "note": "Jesus Christ, “the firstborn from the dead and the ruler (ὁ ἄρχων) of the kings of the earth”."
+            },
+            {
+              "ref": "Mrk.10.42",
+              "note": "“Those who are accounted to rule (ἄρχειν) over the nations lord it over them.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἡγέομαι",
+          "gloss": "lead, rule; (participle) ruler",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ch.7.18, מוֹשֵׁל → ἡγούμενος; 2Ch.9.26; Pro.29.26; Ezk.19.11; Hab.1.14; ἡγέομαι renders מָשַׁל ×5"
+            },
+            {
+              "ref": "Mat.2.6",
+              "role": "defining",
+              "note": "Mic 5:1 quoted: “out of you shall come a ruler (ἡγούμενος)”; the Septuagint of Mic 5:1 has ἄρχοντα."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָלַךְ",
+            "note": "“Reign”: set beside מָשַׁל, and Yahweh's מַלְכוּת is what rules over all.",
+            "evidence": [
+              {
+                "ref": "Gen.37.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.103.19"
+              },
+              {
+                "ref": "Psa.22.29"
+              }
+            ]
+          },
+          {
+            "lemma": "אָדוֹן",
+            "note": "“Lord”: Joseph lord of Pharaoh's house and ruler in Egypt.",
+            "evidence": [
+              {
+                "ref": "Gen.45.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.105.21"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עֶבֶד",
+            "note": "The servant is the one ruled; it is unfitting for a servant to rule over princes.",
+            "evidence": [
+              {
+                "ref": "Pro.22.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.19.10"
+              },
+              {
+                "ref": "Lam.5.8"
+              }
+            ]
+          },
+          {
+            "lemma": "עָבַט",
+            "note": "To borrow, against ruling many nations.",
+            "evidence": [
+              {
+                "ref": "Deu.15.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מָשַׁל בְּ",
+            "gloss": "rule over",
+            "evidence": [
+              {
+                "ref": "Gen.3.16"
+              },
+              {
+                "ref": "Jdg.8.23"
+              },
+              {
+                "ref": "Deu.15.6"
+              }
+            ]
+          },
+          {
+            "phrase": "מֹשֵׁל בְּרוּחוֹ",
+            "gloss": "one who rules his spirit",
+            "evidence": [
+              {
+                "ref": "Pro.16.32"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָשָׁל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "proverb, saying; parable, figure; byword; oracle, discourse",
+      "bdb": [
+        "m.dv.ab"
+      ],
+      "cognate_ids": [
+        "ar-mathal",
+        "arc-mtl",
+        "gez-masala"
+      ],
+      "summary": "About forty times. A saying that sets one thing beside another: the wise man's proverb, the prophet's figure, the people's byword, the seer's or sufferer's discourse. Its partners are חִידָה “riddle” and מְלִיצָה “figure, satire”, and as a byword שְׁנִינָה “taunt” and חֶרְפָּה “reproach”. The phrase נָשָׂא מָשָׁל is “take up a discourse”.",
+      "senses": [
+        {
+          "id": "mashal-proverb",
+          "gloss": "proverb, wise saying",
+          "definition": "A short saying that holds wisdom or a common judgment, as Solomon's proverbs, or a popular saying current among the people.",
+          "evidence": [
+            {
+              "ref": "Pro.1.1",
+              "role": "defining",
+              "note": "“מִשְׁלֵי שְׁלֹמֹה son of David, king of Israel.”"
+            },
+            {
+              "ref": "Pro.1.6",
+              "role": "defining",
+              "note": "“To understand a proverb and a figure (מְלִיצָה), the words of the wise and their riddles.”"
+            },
+            {
+              "ref": "Pro.10.1"
+            },
+            {
+              "ref": "Pro.25.1",
+              "note": "“These also are proverbs of Solomon, which the men of Hezekiah copied.”"
+            },
+            {
+              "ref": "1Ki.5.12",
+              "note": "Solomon “spoke three thousand proverbs, and his songs were a thousand and five”."
+            },
+            {
+              "ref": "Ecc.12.9",
+              "note": "The preacher “weighed and searched out and set in order many proverbs”."
+            },
+            {
+              "ref": "1Sa.24.14",
+              "role": "defining",
+              "note": "“As says מְשַׁל הַקַּדְמֹנִי: From the wicked comes wickedness.”"
+            },
+            {
+              "ref": "1Sa.10.12",
+              "note": "“Therefore it became a proverb: Is Saul also among the prophets?”"
+            },
+            {
+              "ref": "Ezk.12.22",
+              "note": "“What is this proverb you have about the land of Israel, saying, The days are prolonged and every vision fails?”"
+            },
+            {
+              "ref": "Ezk.12.23"
+            },
+            {
+              "ref": "Ezk.18.2",
+              "role": "defining",
+              "note": "“The fathers have eaten sour grapes, and the children's teeth are set on edge.”"
+            },
+            {
+              "ref": "Ezk.18.3"
+            },
+            {
+              "ref": "Pro.26.7",
+              "note": "“Like legs that hang limp from the lame is a proverb in the mouth of fools.”"
+            },
+            {
+              "ref": "Pro.26.9"
+            },
+            {
+              "ref": "Job.13.12",
+              "note": "“Your memorials are proverbs of ashes.”"
+            },
+            {
+              "ref": "Luk.4.23",
+              "note": "“You will surely say to me this proverb (παραβολή; Peshitta מַתְלָא): Physician, heal yourself.”"
+            }
+          ],
+          "kin": [
+            "speak-mashal",
+            "syc-proverb"
+          ]
+        },
+        {
+          "id": "mashal-byword",
+          "gloss": "byword",
+          "definition": "A people or man become a by-word among others: a figure of ruin whom others name in comparison and taunt.",
+          "evidence": [
+            {
+              "ref": "Deu.28.37",
+              "role": "defining",
+              "note": "“You shall become a horror, לְמָשָׁל וְלִשְׁנִינָה, among all the peoples where Yahweh will lead you.”"
+            },
+            {
+              "ref": "1Ki.9.7",
+              "role": "defining",
+              "note": "“Israel shall be a byword and a taunt among all peoples”, and the house cast out of his sight."
+            },
+            {
+              "ref": "2Ch.7.20"
+            },
+            {
+              "ref": "Jer.24.9",
+              "note": "“A reproach and a byword, a taunt and a curse, in all the places where I shall drive them.”"
+            },
+            {
+              "ref": "Psa.44.15",
+              "note": "“You make us a byword among the nations, a shaking of the head among the peoples.”"
+            },
+            {
+              "ref": "Psa.69.12",
+              "note": "“I made sackcloth my clothing, and I became a byword to them.”"
+            },
+            {
+              "ref": "Ezk.14.8",
+              "note": "“I will make him a sign and bywords, and cut him off from the midst of my people.”"
+            }
+          ],
+          "kin": [
+            "meshol-byword"
+          ]
+        },
+        {
+          "id": "mashal-parable",
+          "gloss": "parable, figure",
+          "definition": "A story or figure that sets out one thing under the likeness of another, to be understood by those who will consider it.",
+          "evidence": [
+            {
+              "ref": "Ezk.17.2",
+              "role": "defining",
+              "note": "“Put forth a riddle and speak a parable (וּמְשֹׁל מָשָׁל) to the house of Israel”: the two eagles and the cedar, explained in 17:12."
+            },
+            {
+              "ref": "Ezk.24.3",
+              "role": "defining",
+              "note": "“Speak a parable to the rebellious house: Set on the pot.”"
+            },
+            {
+              "ref": "Psa.78.2",
+              "role": "defining",
+              "note": "“I will open my mouth בְמָשָׁל, I will pour out riddles of old”: then Israel's history. Quoted at Mat 13:35."
+            },
+            {
+              "ref": "Mat.13.35",
+              "note": "“That it might be fulfilled … I will open my mouth in parables.”"
+            },
+            {
+              "ref": "Psa.49.5",
+              "note": "“I will incline my ear to a parable; I will open my riddle on the lyre.”"
+            },
+            {
+              "ref": "Ezk.21.5",
+              "note": "“They say of me, Is he not a maker of parables?”"
+            }
+          ],
+          "kin": [
+            "speak-mashal",
+            "syc-parable"
+          ]
+        },
+        {
+          "id": "mashal-discourse",
+          "gloss": "discourse, oracle (taken up)",
+          "definition": "With נָשָׂא, the poetic discourse a man lifts up: Balaam's oracles, Job's discourses.",
+          "evidence": [
+            {
+              "ref": "Num.23.7",
+              "role": "defining",
+              "note": "“וַיִּשָּׂא מְשָׁלוֹ and said: From Aram Balak has brought me.”"
+            },
+            {
+              "ref": "Num.23.18"
+            },
+            {
+              "ref": "Num.24.3"
+            },
+            {
+              "ref": "Num.24.15"
+            },
+            {
+              "ref": "Num.24.20"
+            },
+            {
+              "ref": "Num.24.21"
+            },
+            {
+              "ref": "Num.24.23"
+            },
+            {
+              "ref": "Job.27.1",
+              "role": "defining",
+              "note": "“Job again took up his discourse and said.”"
+            },
+            {
+              "ref": "Job.29.1"
+            }
+          ]
+        },
+        {
+          "id": "mashal-taunt",
+          "gloss": "taunt-song",
+          "definition": "A mocking song taken up against a fallen oppressor or a ruined people.",
+          "evidence": [
+            {
+              "ref": "Isa.14.4",
+              "role": "defining",
+              "note": "“Take up this מָשָׁל against the king of Babylon: How the oppressor has ceased!”"
+            },
+            {
+              "ref": "Mic.2.4",
+              "note": "“In that day they shall take up a מָשָׁל against you and lament a lament.”"
+            },
+            {
+              "ref": "Hab.2.6",
+              "role": "defining",
+              "note": "“Shall not all these take up a מָשָׁל against him, and a satire (מְלִיצָה), riddles for him, and say, Woe…”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παραβολή",
+          "gloss": "parable, comparison, figure",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.78.2, בְמָשָׁל → ἐν παραβολαῖς; Deu.28.37; 1Sa.10.12; 1Ki.5.12; Psa.49.5; Ezk.17.2; 18.2; παραβολή renders מָשָׁל ×16"
+            },
+            {
+              "ref": "Mat.13.35",
+              "role": "defining",
+              "note": "Psa 78:2: “I will open my mouth in parables.”"
+            },
+            {
+              "ref": "Mat.13.34",
+              "note": "“Without a parable he did not speak to them.”"
+            },
+            {
+              "ref": "Heb.9.9",
+              "note": "The first tabernacle “a figure (παραβολή) for the time present”."
+            }
+          ]
+        },
+        {
+          "lemma": "παροιμία",
+          "gloss": "proverb; figure of speech",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.1.1, מִשְׁלֵי → παροιμίαι; Pro.26.7 → παροιμία"
+            },
+            {
+              "ref": "2Pe.2.22",
+              "role": "defining",
+              "note": "“The true proverb (παροιμίας): The dog returns to his own vomit”, from Pro 26:11."
+            },
+            {
+              "ref": "Jhn.16.25",
+              "note": "“These things I have spoken to you in figures (παροιμίαις).”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חִידָה",
+            "note": "“Riddle”: the dark saying beside the mashal.",
+            "evidence": [
+              {
+                "ref": "Ezk.17.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.49.5"
+              },
+              {
+                "ref": "Psa.78.2"
+              },
+              {
+                "ref": "Pro.1.6"
+              },
+              {
+                "ref": "Hab.2.6"
+              }
+            ]
+          },
+          {
+            "lemma": "מְלִיצָה",
+            "note": "“Figure, satire.”",
+            "evidence": [
+              {
+                "ref": "Pro.1.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Hab.2.6"
+              }
+            ]
+          },
+          {
+            "lemma": "שְׁנִינָה",
+            "note": "“Sharp saying, taunt”: the byword's partner.",
+            "evidence": [
+              {
+                "ref": "Deu.28.37",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.9.7"
+              },
+              {
+                "ref": "2Ch.7.20"
+              },
+              {
+                "ref": "Jer.24.9"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נָשָׂא מָשָׁל",
+            "gloss": "take up a discourse, oracle or taunt",
+            "evidence": [
+              {
+                "ref": "Num.23.7"
+              },
+              {
+                "ref": "Isa.14.4"
+              },
+              {
+                "ref": "Mic.2.4"
+              },
+              {
+                "ref": "Hab.2.6"
+              },
+              {
+                "ref": "Job.27.1"
+              }
+            ]
+          },
+          {
+            "phrase": "הָיָה לְמָשָׁל",
+            "gloss": "become a byword",
+            "evidence": [
+              {
+                "ref": "Deu.28.37"
+              },
+              {
+                "ref": "1Ki.9.7"
+              },
+              {
+                "ref": "1Sa.10.12"
+              },
+              {
+                "ref": "Psa.69.12"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁלֵי שְׁלֹמֹה",
+            "gloss": "the proverbs of Solomon",
+            "evidence": [
+              {
+                "ref": "Pro.1.1"
+              },
+              {
+                "ref": "Pro.10.1"
+              },
+              {
+                "ref": "Pro.25.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָשַׁל",
+      "pos": "verb",
+      "gloss": "be like, compare; speak a proverb or parable",
+      "bdb": [
+        "m.dv.aa"
+      ],
+      "cognate_ids": [
+        "ar-mathal",
+        "arc-mtl",
+        "akk-mashalu",
+        "gez-masala",
+        "phn-mshl-like"
+      ],
+      "summary": "About twenty times. The niphal, hiphil and hithpael are to be like, to liken; the qal and piel speak a mashal, a saying built on a likeness. BDB lists the qal and piel as a second verb from the noun (m.dv.ac); its tokens are the same as these, so only m.dv.aa is named. The parallels דָּמָה “be like” and שָׁוָה “be equal” fix the sense.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "speak a proverb, use a saying",
+          "senses": [
+            {
+              "id": "speak-mashal",
+              "gloss": "speak or use a proverb or parable",
+              "definition": "To say a mashal: to quote a proverb about something, or to put a parable before hearers.",
+              "evidence": [
+                {
+                  "ref": "Ezk.18.2",
+                  "role": "defining",
+                  "note": "“What do you mean, מֹשְׁלִים אֶת־הַמָּשָׁל הַזֶּה concerning the land of Israel?”"
+                },
+                {
+                  "ref": "Ezk.18.3"
+                },
+                {
+                  "ref": "Ezk.16.44",
+                  "role": "defining",
+                  "note": "“Everyone who uses proverbs shall use this proverb against you: As the mother, so her daughter.”"
+                },
+                {
+                  "ref": "Ezk.12.23",
+                  "note": "“I will make this proverb cease, and they shall no more use it as a proverb in Israel.”"
+                },
+                {
+                  "ref": "Ezk.17.2",
+                  "role": "defining",
+                  "note": "“וּמְשֹׁל מָשָׁל to the house of Israel.”"
+                },
+                {
+                  "ref": "Ezk.24.3"
+                },
+                {
+                  "ref": "Num.21.27",
+                  "note": "“Therefore הַמֹּשְׁלִים say, Come to Heshbon”: the makers of sayings, whose song follows."
+                }
+              ],
+              "kin": [
+                "mashal-proverb",
+                "mashal-parable"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be like, be made like",
+          "senses": [
+            {
+              "id": "be-likened",
+              "gloss": "be like, become like",
+              "definition": "To be made like, to be counted with: man like the beasts that perish, the sufferer like those who go down to the pit, the king of Babylon like the dead.",
+              "evidence": [
+                {
+                  "ref": "Psa.49.13",
+                  "role": "defining",
+                  "note": "“Man in honour does not abide; נִמְשַׁל כַּבְּהֵמוֹת נִדְמוּ”: like the beasts that perish. Parallel with דָּמָה."
+                },
+                {
+                  "ref": "Psa.49.21",
+                  "role": "defining",
+                  "note": "“Man in honour who does not understand is like the beasts that perish.”"
+                },
+                {
+                  "ref": "Psa.28.1",
+                  "note": "“Lest, if you are silent to me, וְנִמְשַׁלְתִּי עִם־יוֹרְדֵי בוֹר.”"
+                },
+                {
+                  "ref": "Psa.143.7",
+                  "note": "“Do not hide your face from me, lest I be like those who go down to the pit.”"
+                },
+                {
+                  "ref": "Isa.14.10",
+                  "role": "defining",
+                  "note": "The dead to the king of Babylon: “You also have become weak as we; אֵלֵינוּ נִמְשָׁלְתָּ.”"
+                }
+              ],
+              "kin": [
+                "moshel-like"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "compare, liken",
+          "senses": [
+            {
+              "id": "compare",
+              "gloss": "liken, compare",
+              "definition": "To set one beside another as its equal.",
+              "evidence": [
+                {
+                  "ref": "Isa.46.5",
+                  "role": "defining",
+                  "note": "“To whom will you liken me (תְדַמְיוּנִי), and make me equal (וְתַשְׁווּ), וְתַמְשִׁלוּנִי, that we may be alike?”"
+                }
+              ],
+              "kin": [
+                "syc-liken"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "become like",
+          "senses": [
+            {
+              "id": "become-like",
+              "gloss": "become like",
+              "definition": "To become like something, reduced to its likeness.",
+              "evidence": [
+                {
+                  "ref": "Job.30.19",
+                  "role": "defining",
+                  "note": "“He has cast me into the mire, וָאֶתְמַשֵּׁל כֶּעָפָר וָאֵפֶר.”"
+                }
+              ],
+              "kin": [
+                "moshel-like"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make parables",
+          "senses": [
+            {
+              "id": "maker-of-mashals",
+              "gloss": "maker of parables",
+              "definition": "The participle: one who is always speaking in figures, said in dismissal of the prophet.",
+              "evidence": [
+                {
+                  "ref": "Ezk.21.5",
+                  "role": "defining",
+                  "note": "“Ah, Lord Yahweh! They say of me, הֲלֹא מְמַשֵּׁל מְשָׁלִים הוּא?”"
+                }
+              ],
+              "kin": [
+                "mashal-parable"
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "דָּמָה",
+            "note": "“Be like”: beside the niphal and the hiphil.",
+            "evidence": [
+              {
+                "ref": "Psa.49.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.49.21"
+              },
+              {
+                "ref": "Isa.46.5"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁוָה",
+            "note": "“Be equal, make equal.”",
+            "evidence": [
+              {
+                "ref": "Isa.46.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מֶמְשָׁלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "rule, dominion; realm",
+      "bdb": [
+        "m.dw.ad",
+        "m.ck.ar"
+      ],
+      "cognate_ids": [
+        "phn-mshl-rule"
+      ],
+      "summary": "Seventeen times: the power of rule, and the land or the forces under it.",
+      "senses": [
+        {
+          "id": "memshalah-dominion",
+          "gloss": "rule, dominion",
+          "definition": "The power or office of rule: Yahweh's dominion through all generations, the office given to Eliakim, the former dominion to come to Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Psa.145.13",
+              "role": "defining",
+              "note": "“Your kingdom is a kingdom of all ages, וּמֶמְשַׁלְתְּךָ through all generations”: parallel with מַלְכוּת."
+            },
+            {
+              "ref": "Mic.4.8",
+              "role": "defining",
+              "note": "“To you shall come הַמֶּמְשָׁלָה הָרִאשֹׁנָה, the kingdom to the daughter of Jerusalem.”"
+            },
+            {
+              "ref": "Isa.22.21",
+              "note": "“I will commit your dominion into his hand, and he shall be a father to the inhabitants of Jerusalem.”"
+            },
+            {
+              "ref": "Psa.114.2",
+              "note": "“Judah became his sanctuary, Israel מַמְשְׁלוֹתָיו.”"
+            },
+            {
+              "ref": "Psa.103.22",
+              "note": "“Bless Yahweh, all his works, in all places of his dominion.”"
+            },
+            {
+              "ref": "Dan.11.5",
+              "note": "“His dominion shall be a great dominion.”"
+            }
+          ],
+          "kin": [
+            "rule-over",
+            "god-rules"
+          ]
+        },
+        {
+          "id": "memshalah-lights",
+          "gloss": "rule (of the lights over day and night)",
+          "definition": "The sun and moon made “for rule” of the day and the night.",
+          "evidence": [
+            {
+              "ref": "Gen.1.16",
+              "role": "defining",
+              "note": "“The greater light לְמֶמְשֶׁלֶת הַיּוֹם and the lesser light לְמֶמְשֶׁלֶת הַלַּיְלָה.”"
+            },
+            {
+              "ref": "Psa.136.8"
+            },
+            {
+              "ref": "Psa.136.9"
+            }
+          ],
+          "kin": [
+            "lights-rule"
+          ]
+        },
+        {
+          "id": "memshalah-realm",
+          "gloss": "realm, the land or forces under rule",
+          "definition": "What a king rules: his land, or the peoples and forces under his hand.",
+          "evidence": [
+            {
+              "ref": "2Ki.20.13",
+              "role": "defining",
+              "note": "“There was nothing in his house or in all his realm that Hezekiah did not show them.”"
+            },
+            {
+              "ref": "Isa.39.2"
+            },
+            {
+              "ref": "1Ki.9.19",
+              "note": "“In Lebanon and in all the land of his dominion.”"
+            },
+            {
+              "ref": "2Ch.8.6"
+            },
+            {
+              "ref": "Jer.34.1",
+              "role": "defining",
+              "note": "“All the kingdoms of the land of מֶמְשֶׁלֶת יָדוֹ.”"
+            },
+            {
+              "ref": "Jer.51.28"
+            },
+            {
+              "ref": "2Ch.32.9",
+              "note": "Sennacherib at Lachish “and all his dominion with him”: his forces."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐξουσία",
+          "gloss": "authority, dominion",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ki.20.13, מֶמְשַׁלְתּוֹ → ἐξουσίᾳ; Psa.114.2; 136.8, 9 → ἐξουσία, ἐξουσίαν"
+            },
+            {
+              "ref": "Mat.28.18",
+              "note": "“All authority (ἐξουσία) in heaven and on earth has been given to me.”"
+            },
+            {
+              "ref": "1Co.15.24",
+              "note": "“When he has abolished all rule and all authority and power.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִמְשָׁל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dominion; ruler",
+      "bdb": [
+        "m.dw.ac"
+      ],
+      "cognate_ids": [
+        "phn-mshl-rule"
+      ],
+      "summary": "Three times, all late: dominion in Daniel, rulers (leading men) in Chronicles. The brief also lists here the forms מֶמְשַׁלְתּוֹ, which are מֶמְשָׁלָה.",
+      "senses": [
+        {
+          "id": "mimshal-dominion",
+          "gloss": "dominion; ruler",
+          "definition": "Rule, as the object of מָשַׁל “rule a great dominion”; in the plural, men who ruled in their father's house.",
+          "evidence": [
+            {
+              "ref": "Dan.11.3",
+              "role": "defining",
+              "note": "“וּמָשַׁל מִמְשָׁל רַב”: he shall rule a great dominion."
+            },
+            {
+              "ref": "Dan.11.5"
+            },
+            {
+              "ref": "1Ch.26.6",
+              "note": "Sons of Shemaiah, “הַמִּמְשָׁלִים in their father's house, for they were mighty men of valour”."
+            }
+          ],
+          "kin": [
+            "rule-over"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֹשֶׁל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dominion",
+      "bdb": [
+        "m.dw.ab"
+      ],
+      "cognate_ids": [
+        "phn-mshl-rule"
+      ],
+      "summary": "Twice, with the suffix מָשְׁלוֹ “his dominion”.",
+      "senses": [
+        {
+          "id": "moshel-dominion",
+          "gloss": "dominion",
+          "definition": "The reach of a king's rule.",
+          "evidence": [
+            {
+              "ref": "Zec.9.10",
+              "role": "defining",
+              "note": "The king who comes riding on a donkey (9:9) “shall speak peace to the nations, וּמָשְׁלוֹ from sea to sea, and from the River to the ends of the earth”."
+            },
+            {
+              "ref": "Dan.11.4",
+              "note": "Not to his posterity “nor according to his dominion with which he ruled”."
+            }
+          ],
+          "kin": [
+            "rule-over"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֹשֶׁל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "likeness, equal",
+      "bdb": [
+        "m.dv.ad"
+      ],
+      "cognate_ids": [
+        "ar-mathal",
+        "akk-mashalu",
+        "phn-mshl-like",
+        "gez-masala"
+      ],
+      "summary": "Once, with the suffix: “its like”. Same spelling as מֹשֶׁל “dominion”; the sense rests on the one verse, and on Arabic miṯl “a like” and Phoenician mšl “likeness”.",
+      "senses": [
+        {
+          "id": "moshel-like",
+          "gloss": "its like, equal",
+          "definition": "One like it, an equal.",
+          "evidence": [
+            {
+              "ref": "Job.41.25",
+              "role": "defining",
+              "note": "Of Leviathan: “אֵין־עַל־עָפָר מָשְׁלוֹ, made without fear.”"
+            }
+          ],
+          "kin": [
+            "be-likened"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְשֹׁל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "byword",
+      "bdb": [
+        "m.dv.ae"
+      ],
+      "cognate_ids": [
+        "ar-mathal",
+        "arc-mtl"
+      ],
+      "summary": "Once. It may be the qal infinitive “to make a byword of”; either way the sense is the byword of מָשָׁל.",
+      "senses": [
+        {
+          "id": "meshol-byword",
+          "gloss": "byword",
+          "definition": "One whom the peoples name as a byword.",
+          "evidence": [
+            {
+              "ref": "Job.17.6",
+              "role": "defining",
+              "note": "“He has made me לִמְשֹׁל עַמִּים, and I am one in whose face they spit.”"
+            }
+          ],
+          "kin": [
+            "mashal-byword"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְתַל",
+      "lang": "syc",
+      "root": "מתל",
+      "pos": "verb",
+      "gloss": "liken; set forth a parable",
+      "summary": "The Peshitta's ܡܬܠ (aphel ʾamtel), three times, where the Greek has παρατίθημι and παραβάλλω of a parable.",
+      "cognate_ids": [
+        "ar-mathal",
+        "arc-mtl",
+        "akk-mashalu",
+        "gez-masala"
+      ],
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "set forth a parable, liken",
+          "senses": [
+            {
+              "id": "syc-liken",
+              "gloss": "liken; set forth (a parable)",
+              "definition": "To put a parable before hearers; to liken one thing to another in a parable.",
+              "evidence": [
+                {
+                  "ref": "Mrk.4.30",
+                  "role": "defining",
+                  "note": "“To what shall we liken the kingdom of God, or with what parable shall we liken it (נַמְתְּלִיה)?”"
+                },
+                {
+                  "ref": "Mat.13.24",
+                  "role": "defining",
+                  "note": "“Another parable he set forth (אַמְתֵּל) to them: The kingdom of heaven is like…”"
+                },
+                {
+                  "ref": "Mat.13.31"
+                }
+              ],
+              "kin": [
+                "compare",
+                "speak-mashal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַתְלָא",
+      "lang": "syc",
+      "root": "מתל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "parable; proverb; figure",
+      "summary": "The Peshitta's ܡܬܠܐ (matlā), about forty-five times, for παραβολή, and for παροιμία at 2Pe 2:22 and μῦθος at 2Pe 1:16.",
+      "cognate_ids": [
+        "ar-mathal",
+        "arc-mtl",
+        "gez-masala"
+      ],
+      "senses": [
+        {
+          "id": "syc-parable",
+          "gloss": "parable",
+          "definition": "Jesus' parables of the kingdom.",
+          "evidence": [
+            {
+              "ref": "Mat.13.18",
+              "role": "defining",
+              "note": "“Hear then the parable of the sower.”"
+            },
+            {
+              "ref": "Mat.13.35",
+              "role": "defining",
+              "note": "Psa 78:2 in the Peshitta: “I will open my mouth in parables (בְּמַתְלֵא).”"
+            },
+            {
+              "ref": "Mrk.4.11",
+              "note": "“To those outside all things come in parables.”"
+            },
+            {
+              "ref": "Mrk.4.33",
+              "to": "Mrk.4.34"
+            },
+            {
+              "ref": "Luk.8.9",
+              "to": "Luk.8.11"
+            }
+          ],
+          "kin": [
+            "mashal-parable"
+          ]
+        },
+        {
+          "id": "syc-proverb",
+          "gloss": "proverb, saying; fable",
+          "definition": "A current saying; also, of men's invented stories, a fable.",
+          "evidence": [
+            {
+              "ref": "Luk.4.23",
+              "role": "defining",
+              "note": "“You will say to me this proverb: Physician, heal yourself.”"
+            },
+            {
+              "ref": "2Pe.2.22",
+              "role": "defining",
+              "note": "“The true proverb: The dog returns to his own vomit” (Pro 26:11)."
+            },
+            {
+              "ref": "2Pe.1.16",
+              "note": "“We did not follow cunningly devised fables.”"
+            }
+          ],
+          "kin": [
+            "mashal-proverb"
+          ]
+        },
+        {
+          "id": "syc-figure",
+          "gloss": "figure, type",
+          "definition": "A thing that stands for another: the first tabernacle, Isaac received back from the dead.",
+          "evidence": [
+            {
+              "ref": "Heb.9.9",
+              "role": "defining",
+              "note": "The first tabernacle “a figure for the time present”."
+            },
+            {
+              "ref": "Heb.11.19",
+              "role": "defining",
+              "note": "Abraham received Isaac back from the dead “in a figure”."
+            }
+          ],
+          "kin": [
+            "mashal-parable",
+            "be-likened"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-mathal",
+      "lang": "ar",
+      "form": "مِثْلٌ، مَثَلٌ، مِثَالٌ، تَمَثَّلَ",
+      "translit": "miṯl, maṯal, miṯāl, tamaṯṯala",
+      "gloss": "a like, an equal, a likeness; a description by way of comparison, similitude; model, pattern; (tamaṯṯala) imitate; use a verse as a proverb",
+      "relation": "cognate",
+      "note": "Likeness, and the saying made from it: the same pair as Hebrew מָשַׁל “be like” and מָשָׁל “proverb, parable”. Arabic shows ṯ behind ש. Lane's art. مثل also has maṯala “stand erect” (before a person), which does not bear on “rule”.",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3017, art. مثل, مِثْلٌ (n43506)",
+          "note": "“A like; a similar person or thing; match; fellow; an analogue … A likeness, resemblance, or semblance.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3017, art. مثل, مَثَلٌ (n43507)",
+          "note": "“A description by way of comparison … The similitude of Zeyd is the similitude … of such a one.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 3017, art. مثل, تَمَثَّلَ (n43503)",
+          "note": "“He affected to be like, or imitated … He used, or applied, the verse as a proverb, or proverbially.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic مَثَل (maṯal), noun",
+          "note": "likeness; metaphor, simile, parable; proverb, adage; example."
+        }
+      ]
+    },
+    {
+      "id": "arc-mtl",
+      "lang": "arc",
+      "form": "מְתַל، מַתְלָא",
+      "translit": "mtal, matlā",
+      "gloss": "speak in a figure, recite a saying; compare; (matlā) parable, witty saying, riddle, comparison, by-word",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums: מַתְלָא renders מָשָׁל at Pro 1:6, Deu 28:37 and Num 23:7, and the verb renders the qal “use a proverb” at Ezk 12:23. Aramaic t answers to older ṯ.",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "M03073, מְתַל I, Targ. Ezk 12:23",
+          "note": "“To speak metaphorically, recite a mashal … to place beside, to compare.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "M03075, מָתְלָא (מַתְלָא), Targ. Pro 1:6; Targ. O. Deu 28:37; Num 23:7",
+          "note": "“Parable, witty saying, riddle, comparison; by-word.”"
+        },
+        {
+          "source": "sedra",
+          "locator": "root 1126 MTL; lexemes 1883 MTL (use parables), 1884 MTLA (parable, proverb, similitude)",
+          "note": "The Syriac of the Peshitta, given as words of the entry."
+        }
+      ]
+    },
+    {
+      "id": "akk-mashalu",
+      "lang": "akk",
+      "form": "mašālu, tamšīlu",
+      "translit": "mašālu, tamšīlu",
+      "gloss": "be(come) equal, resemble, imitate; (D) make equal; (tamšīlu) likeness, replica, equivalent",
+      "relation": "cognate",
+      "note": "Akkadian likeness and equality, the Hebrew niphal “be like” and the noun “its like”. Akkadian š stands for both older š and ṯ, so it does not show the sound.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000016960, mašālu [equal] V",
+          "note": "be(come) equal; be(come) similar; resemble; imitate; make equal; replicate."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000143170, tamšīlu [likeness] N",
+          "note": "likeness; replica; equivalent."
+        }
+      ]
+    },
+    {
+      "id": "gez-masala",
+      "lang": "gez",
+      "form": "መሰለ፡ ምስል፡",
+      "translit": "masala, məsl",
+      "gloss": "be like, seem; (məsl) likeness, form; parable, proverb; image, statue",
+      "relation": "cognate",
+      "note": "Ge'ez has both sides of the likeness words: the verb “be like” and the noun “parable, proverb”, which renders παραβολή in the Ethiopic Gospels (Mat 13:10, 13). Ge'ez s stands for both older š and ṯ.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 171, መሰለ፡",
+          "note": "“similem esse vel fieri”; Mat 18:23; 25:1."
+        },
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 173, ምስል፡",
+          "note": "“1) similitudo, forma, figura … 2) parabola, proverbium, simile: Koh. 12, 9; Matth. 13, 10. 13 … 3) effigies, imago, simulacrum, statua.”"
+        }
+      ]
+    },
+    {
+      "id": "phn-mshl-rule",
+      "lang": "phn",
+      "form": "𐤌𐤔𐤋، 𐤌𐤔𐤋𐤕",
+      "translit": "mšl, mšlt",
+      "gloss": "rule over (b-); ruler (an official's title); (mšlt) governing authority",
+      "relation": "cognate",
+      "note": "The one cognate of the rule words: the verb with b- as in Hebrew (Eshmunazor, “whichever powerful king is ruling over them”), the participle as a title, and mšlt beside Hebrew מֶמְשָׁלָה. Phoenician š stands for both older š and ṯ.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 315, M-Š-L I, KAI 14.9",
+          "note": "“v. qal RULE over (b-)”: ʾš mšl bnm “who is ruling over them”."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 316, MŠL II, CIS i 57; KAI 120.1",
+          "note": "“n.m. RULER (title of an official in Kition)”; “TRIBUNE”."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 316, MŠLT, KAI 120.1",
+          "note": "“n.f. GOVERNING AUTHORITY, POWER (Latin potestas).”"
+        }
+      ]
+    },
+    {
+      "id": "phn-mshl-like",
+      "lang": "phn",
+      "form": "𐤌𐤔𐤋",
+      "translit": "mšl",
+      "gloss": "likeness, resemblance (of a statue)",
+      "relation": "cognate",
+      "note": "Phoenician has the likeness word beside the rule word, as Hebrew does: “a good likeness is this image”.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 316, MŠL IV, KAI 43.1–2",
+          "note": "“n.m. LIKENESS, RESEMBLANCE”: mšl nʿm hsml z “a good likeness is this image”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Gideon refused to found a dynasty: “I will not rule over you … Yahweh shall rule over you” (Jdg 8:23). The psalms say the same of all the earth: “the kingdom is Yahweh's, and he rules over the nations” (Psa 22:29), “his kingdom rules over all” (Psa 103:19; 1Ch 29:12). The prophets name the man through whom that rule comes. “From you, Bethlehem Ephrathah, shall come out to me one to be ruler in Israel” (Mic 5:1), and Matthew says this was fulfilled in Jesus (Mat 2:6); “their ruler shall come out from their midst” (Jer 30:21); the Branch “shall sit and rule on his throne, and be a priest on his throne” (Zec 6:12–13); the king who comes to Zion on a donkey (Zec 9:9, fulfilled at Mat 21:5) “shall speak peace to the nations, and his dominion shall be from sea to sea, and from the River to the ends of the earth” (Zec 9:10); and to Zion “the former dominion shall come, the kingdom to the daughter of Jerusalem” (Mic 4:8). The angel promised Jesus the throne of his father David, to reign over the house of Jacob for ever (Luk 1:32–33), and after his resurrection the apostles asked whether he would now restore the kingdom to Israel; he did not deny it, but said the time was the Father's (Act 1:6–7). From the verses: Yahweh's rule over the nations will be exercised by a man born in Bethlehem of David's line, ruling from Jerusalem over the whole earth; that dominion is on the earth and is still to come.",
+      "evidence": [
+        {
+          "ref": "Jdg.8.23"
+        },
+        {
+          "ref": "Psa.22.29"
+        },
+        {
+          "ref": "Psa.103.19"
+        },
+        {
+          "ref": "1Ch.29.12"
+        },
+        {
+          "ref": "Mic.5.1"
+        },
+        {
+          "ref": "Mat.2.6"
+        },
+        {
+          "ref": "Jer.30.21"
+        },
+        {
+          "ref": "Zec.6.12",
+          "to": "Zec.6.13"
+        },
+        {
+          "ref": "Zec.9.9",
+          "to": "Zec.9.10"
+        },
+        {
+          "ref": "Mat.21.5"
+        },
+        {
+          "ref": "Mic.4.8"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        },
+        {
+          "ref": "Act.1.6",
+          "to": "Act.1.7"
+        }
+      ]
+    },
+    {
+      "topic": "son-of-man-dominion",
+      "statement": "Psalm 8 asks, “What is man, that you remember him, and the son of man, that you visit him?” and answers, “you made him rule (תַּמְשִׁילֵהוּ) over the works of your hands; you have put all things under his feet” (Psa 8:5–7). Hebrews quotes it and says, “now we do not yet see all things put under him, but we see Jesus, who was made a little lower than the angels … crowned with glory and honour”, made like his brothers in all things (Heb 2:6–9, 17). Paul quotes the same line: Christ must reign until he has put all enemies under his feet, the last being death; and “when he says all things are put under him, it is plain that he is excepted who put all things under him”, and the Son himself will then be subject to the Father, “that God may be all in all” (1Co 15:25–28). From the verses: the dominion of the psalm is given to a man, the son of man; Jesus received it from God as one made lower than the angels, and he rules under the God who gave it, who is not himself put under him.",
+      "evidence": [
+        {
+          "ref": "Psa.8.5",
+          "to": "Psa.8.7"
+        },
+        {
+          "ref": "Heb.2.6",
+          "to": "Heb.2.9"
+        },
+        {
+          "ref": "Heb.2.17"
+        },
+        {
+          "ref": "1Co.15.25",
+          "to": "1Co.15.28"
+        }
+      ]
+    },
+    {
+      "topic": "ruling-sin",
+      "statement": "Yahweh told Cain, “sin crouches at the door, and its desire is for you, but you must rule over it (וְאַתָּה תִּמְשָׁל־בּוֹ)” (Gen 4:7). David prayed, “keep back your servant from presumptuous sins; let them not rule over me, then I shall be blameless” (Psa 19:14), and the proverb says, “he who rules his spirit is better than he who takes a city” (Pro 16:32). Paul writes in the same terms: “let not sin reign in your mortal body, that you should obey it in its desires … for sin shall not have dominion over you” (Rom 6:12–14). From the verses: the power that seeks to rule a man is sin itself, working through his own desires and his mortal body; he is called to master it, and in Christ he is set free from its dominion.",
+      "evidence": [
+        {
+          "ref": "Gen.4.7"
+        },
+        {
+          "ref": "Psa.19.14"
+        },
+        {
+          "ref": "Pro.16.32"
+        },
+        {
+          "ref": "Rom.6.12",
+          "to": "Rom.6.14"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Psalm 49, which calls itself a מָשָׁל (Psa 49:5), says twice, “man in honour does not abide; he is like (נִמְשַׁל) the beasts that perish” (Psa 49:13, 21). It goes on: “like sheep they are laid in the grave (שְׁאוֹל); death shall shepherd them”, and then, “but God will redeem my soul from the hand of the grave, for he will receive me” (Psa 49:15–16). The psalmist fears being “like those who go down to the pit” if Yahweh is silent (Psa 28:1; 143:7), and the dead greet the fallen king of Babylon in the grave, “you also have become weak as we; you have been made like us” (Isa 14:9–11). Ecclesiastes says the same of man and beast: “as one dies, so dies the other … all go to one place; all are of the dust” (Ecc 3:19–20). From the verses: in death a man is no different from a beast; his hope is not an undying soul but God redeeming him from the grave.",
+      "evidence": [
+        {
+          "ref": "Psa.49.5"
+        },
+        {
+          "ref": "Psa.49.13"
+        },
+        {
+          "ref": "Psa.49.21"
+        },
+        {
+          "ref": "Psa.49.15",
+          "to": "Psa.49.16"
+        },
+        {
+          "ref": "Psa.28.1"
+        },
+        {
+          "ref": "Psa.143.7"
+        },
+        {
+          "ref": "Isa.14.9",
+          "to": "Isa.14.11"
+        },
+        {
+          "ref": "Ecc.3.19",
+          "to": "Ecc.3.20"
+        }
+      ]
+    },
+    {
+      "topic": "parables",
+      "statement": "A מָשָׁל sets one thing beside another. Ezekiel was told to “put forth a riddle and speak a parable to the house of Israel” (Ezk 17:2), and explained it (Ezk 17:12); the people answered, “Is he not a maker of parables?” (Ezk 21:5). Asaph opened his mouth “in a parable” to tell Israel's history (Psa 78:2), and Matthew says Jesus spoke in parables to fulfil that word (Mat 13:34–35). Jesus told the disciples that the parables opened the mysteries of the kingdom to them and closed them to those who “seeing do not see”, as Isaiah had said (Mat 13:10–15; Isa 6:9–10), and he explained everything to his disciples privately (Mrk 4:33–34). From the verses: a parable teaches those who will consider it and hides the meaning from those who will not hear; Jesus' parables of the kingdom were given to be understood by his disciples.",
+      "evidence": [
+        {
+          "ref": "Ezk.17.2"
+        },
+        {
+          "ref": "Ezk.17.12"
+        },
+        {
+          "ref": "Ezk.21.5"
+        },
+        {
+          "ref": "Psa.78.2"
+        },
+        {
+          "ref": "Mat.13.34",
+          "to": "Mat.13.35"
+        },
+        {
+          "ref": "Mat.13.10",
+          "to": "Mat.13.15"
+        },
+        {
+          "ref": "Isa.6.9",
+          "to": "Isa.6.10"
+        },
+        {
+          "ref": "Mrk.4.33",
+          "to": "Mrk.4.34"
+        }
+      ]
+    }
+  ],
+  "note": "Two older roots may stand behind ש: the likeness words show ṯ (Arabic مثل, Aramaic and Syriac מתל), but the rule words have only Phoenician mšl, whose š merges both, so their sound is unknown; no Arabic, Ugaritic or South Arabian “rule” cognate was found (Lane art. مسل has nothing; Ugaritic glossary has no mšl or mṯl). Open question: is “rule” a separate root, or does it grow from “be like” (a governor who stands for his lord)? Nothing yet shows the step. BDB m.dv.ac (the denominative “use a proverb”) lists the same tokens as m.dv.aa and is left unnamed; m.ck.ar (a zero-token cross-reference) is named on מֶמְשָׁלָה. m.dw.ah מִשֶּׁלָּנוּ is שֶׁ + לְ + suffix, not this root, and is left out. The brief's 1Ch 6:59 מָשָׁל is the town Mashal (= Mishal, TIPNR Mishal@Jos.19.26, root משאל); no personal name is formed from this root, so no name file. Jol 2:17 לִמְשָׁל־בָּם גּוֹיִם can be “that nations rule over them” or “make them a byword among the nations”; filed under rule. Job 17:6 מְשֹׁל may be the qal infinitive. Dillmann columns read from the OCR's column numbers (cols. 171, 173); check against the scan. The Septuagint of Psa 8:7 (κατέστησας) is not in the MACULA alignment; Heb 2:7 quotes it."
+}
