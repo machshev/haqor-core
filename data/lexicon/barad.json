@@ -1,0 +1,137 @@
+{
+  "id": "barad",
+  "root": "ברד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "weather",
+    "animals"
+  ],
+  "gloss": "hail, hail down; dappled",
+  "summary": "The hailstones in Psalm 18 are part of the storm in which Yahweh answers David. The related-looking adjective describes a pattern on animals’ coats.",
+  "words": [
+    {
+      "lemma": "בָּרָד",
+      "bdb": [
+        "b.cy.ab"
+      ],
+      "pos": "noun",
+      "gloss": "hail",
+      "senses": [
+        {
+          "gloss": "hail",
+          "definition": "In Egypt hail strikes people, livestock and crops left in the open, while Goshen is spared. In David’s song hail and burning coals break through the storm clouds.",
+          "evidence": [
+            {
+              "ref": "Exo.9.22",
+              "to": "Exo.9.26",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.18.13",
+              "to": "Psa.18.14"
+            },
+            {
+              "ref": "Psa.78.47"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-barad"
+      ]
+    },
+    {
+      "lemma": "בָּרַד",
+      "bdb": [
+        "b.cy.ac"
+      ],
+      "pos": "verb",
+      "gloss": "hail",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hail",
+          "senses": [
+            {
+              "gloss": "hail",
+              "definition": "Isaiah places the falling hail beside the felling of the forest and the lowering of the city.",
+              "evidence": [
+                {
+                  "ref": "Isa.32.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-barad"
+      ]
+    },
+    {
+      "lemma": "בָּרֹד",
+      "bdb": [
+        "b.cy.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "dappled, spotted",
+      "senses": [
+        {
+          "gloss": "dappled, spotted",
+          "definition": "Jacob describes the coloring of the male goats he saw in a dream. The same description distinguishes one team of horses in Zechariah’s vision.",
+          "evidence": [
+            {
+              "ref": "Gen.31.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.31.12"
+            },
+            {
+              "ref": "Zec.6.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֶּרֶד",
+      "pos": "name",
+      "gloss": "Bered",
+      "senses": [
+        {
+          "gloss": "Bered",
+          "definition": "Bered is a landmark named with Kadesh in the description of Hagar’s well.",
+          "evidence": [
+            {
+              "ref": "Gen.16.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-barad",
+      "lang": "ar",
+      "form": "بَرَد",
+      "translit": "barad",
+      "gloss": "hail, frozen rain",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 184, n2219, بَرَدٌ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The origin of the coat-color term is uncertain. The index assigns a shared key to the place Bered and the Ephraimite of the same name; the personal-name entry carries the key."
+}
