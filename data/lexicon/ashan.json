@@ -1,0 +1,187 @@
+{
+  "id": "ashan",
+  "root": "עשנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "fire",
+    "anger"
+  ],
+  "gloss": "smoke, give off smoke",
+  "summary": "Smoke rising from a burning city or mountain provides the concrete meaning. The psalms use the same sight to depict anger and, when smoke disperses, the passing away of enemies.",
+  "words": [
+    {
+      "lemma": "עָשָׁן",
+      "bdb": [
+        "p.gc.ab"
+      ],
+      "pos": "noun",
+      "gloss": "smoke",
+      "senses": [
+        {
+          "gloss": "smoke from fire",
+          "definition": "The smoke from Ai rises into the sky. When Yahweh descends on Sinai in fire, the smoke rises like smoke from a furnace.",
+          "evidence": [
+            {
+              "ref": "Jos.8.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.19.18"
+            }
+          ]
+        },
+        {
+          "gloss": "smoke as a sign of anger",
+          "definition": "David’s song pictures smoke rising from Yahweh’s nostrils and fire from his mouth as he comes to rescue the speaker.",
+          "evidence": [
+            {
+              "ref": "Psa.18.9",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.22.9"
+            }
+          ]
+        },
+        {
+          "gloss": "something that vanishes",
+          "definition": "The psalm compares the disappearance of enemies to smoke driven away.",
+          "evidence": [
+            {
+              "ref": "Psa.68.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Hos.13.3"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-athana"
+      ]
+    },
+    {
+      "lemma": "עָשַׁן",
+      "bdb": [
+        "p.gc.ac"
+      ],
+      "pos": "verb",
+      "gloss": "smoke, show anger",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "smoke",
+          "senses": [
+            {
+              "gloss": "give off smoke",
+              "definition": "The mountain smokes when Yahweh descends in fire. The psalmist asks him to touch the mountains so that they smoke.",
+              "evidence": [
+                {
+                  "ref": "Exo.19.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.144.5"
+                }
+              ]
+            },
+            {
+              "gloss": "show anger",
+              "definition": "The flock’s shepherd is asked why his anger smokes against his sheep.",
+              "evidence": [
+                {
+                  "ref": "Psa.74.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.29.19"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-athana"
+      ]
+    },
+    {
+      "lemma": "עָשֵׁן",
+      "bdb": [
+        "p.gc.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "smoking, smoldering",
+      "senses": [
+        {
+          "gloss": "smoking, smoldering",
+          "definition": "The people see the smoking mountain. Isaiah likens two threatening kings to the smoldering ends of firebrands.",
+          "evidence": [
+            {
+              "ref": "Exo.20.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.7.4"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-athana"
+      ]
+    },
+    {
+      "lemma": "עָשָׁן",
+      "bdb": [
+        "p.gc.ae"
+      ],
+      "pos": "name",
+      "gloss": "Ashan",
+      "senses": [
+        {
+          "gloss": "Ashan",
+          "definition": "Ashan appears among the towns of Judah and in Simeon’s allotment within Judah.",
+          "evidence": [
+            {
+              "ref": "Jos.15.42",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.19.7"
+            },
+            {
+              "ref": "1Ch.4.32"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-athana",
+      "lang": "ar",
+      "form": "عَثَنَ",
+      "translit": "ʿaṯana",
+      "gloss": "give off smoke",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 1954, n28061, fire sending up smoke"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ",
+        "ש": "ṯ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic form preserves the interdental consonant corresponding to Hebrew shin in this word. The town’s name shares the spelling but the accounts do not explain its origin."
+}
