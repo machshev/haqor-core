@@ -1,0 +1,1457 @@
+{
+  "id": "lavash",
+  "root": "לבש",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "clothing",
+    "priesthood",
+    "righteousness",
+    "shame",
+    "spirit",
+    "resurrection"
+  ],
+  "gloss": "put on, wear, be clothed; clothe; garment, clothing",
+  "summary": "To put on a garment and wear it, and in the hiphil to clothe another: Yahweh clothed Adam and his wife in garments of skin, Moses clothed Aaron and his sons in the holy garments, and Aaron's garments were stripped off and put on Eleazar. The opposite is פָּשַׁט “strip off”, and the one who has no לְבוּשׁ is naked. What is put on is also a quality that covers a man and is seen on him: righteousness, salvation, strength, majesty, or shame; the spirit of Yahweh “clothed itself with” Gideon, and Jesus told his disciples to wait until they were clothed with power from on high. The nouns לְבוּשׁ, מַלְבּוּשׁ and תִּלְבֹּשֶׁת are what is worn, and the Aramaic of Daniel has the same verb and noun. Arabic labisa, Akkadian labāšu, Ugaritic lbš, Ge'ez läbsä and Syriac lbeš all mean to put on clothing.",
+  "words": [
+    {
+      "lemma": "לָבֵשׁ",
+      "pos": "verb",
+      "gloss": "put on, wear, be clothed; (pual) be arrayed; (hiphil) clothe",
+      "bdb": [
+        "l.al.aa"
+      ],
+      "cognate_ids": [
+        "ar-labisa",
+        "akk-labashu",
+        "uga-lbsh",
+        "gez-labsa",
+        "syc-lbsh",
+        "arc-levash"
+      ],
+      "summary": "About 110 times, in the qal, pual and hiphil. The qal is to put a garment on oneself and to wear it; its passive participle לָבֻשׁ “clothed in” describes the man in linen of Ezekiel and Daniel. The hiphil is to put clothes on another, often as an act of appointment or honour. The opposite is פָּשַׁט “strip off” (Lev 16:23–24; Ezk 44:19; Sng 5:3; Num 20:26). The brief's ten tokens with no stem are the noun לְבוּשׁ and the participle לְבֻשֵׁי filed here by spelling; four of the brief's Aramaic qal tokens (Lev 6:3; Deu 22:5, 11; Ezk 7:27) are this Hebrew verb.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "put on, wear; be clothed; (fig.) put on righteousness, strength, shame; (of the spirit) clothe itself with a man",
+          "senses": [
+            {
+              "id": "put-on-wear",
+              "gloss": "put on, wear (a garment)",
+              "definition": "To put a garment on oneself, and to have it on: the opposite of stripping it off. Clothes are a need of life with bread, and what a man wears shows his office, his mourning or his state.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.20",
+                  "role": "defining",
+                  "note": "Jacob's vow: “if God will … give me bread to eat and clothes לִלְבֹּשׁ”."
+                },
+                {
+                  "ref": "Gen.38.19",
+                  "role": "defining",
+                  "note": "Tamar “took off her veil and put on (וַתִּלְבַּשׁ) the garments of her widowhood”."
+                },
+                {
+                  "ref": "Lev.16.23",
+                  "to": "Lev.16.24",
+                  "role": "defining",
+                  "note": "Aaron “shall strip off (וּפָשַׁט) the linen garments which he put on (לָבַשׁ) when he went into the holy place … and bathe and put on (וְלָבַשׁ) his garments”."
+                },
+                {
+                  "ref": "Sng.5.3",
+                  "role": "defining",
+                  "note": "“I have taken off (פָּשַׁטְתִּי) my robe; how shall I put it on (אֶלְבָּשֶׁנָּה)?”"
+                },
+                {
+                  "ref": "Ezk.44.19",
+                  "role": "defining",
+                  "note": "The priests “shall strip off their garments in which they minister … and put on other garments”."
+                },
+                {
+                  "ref": "Lev.16.4",
+                  "note": "“He shall put on the holy linen tunic … they are holy garments.”"
+                },
+                {
+                  "ref": "Lev.16.32"
+                },
+                {
+                  "ref": "Exo.29.30",
+                  "note": "The son who is priest after Aaron “shall wear them seven days”."
+                },
+                {
+                  "ref": "Lev.21.10",
+                  "note": "The high priest “whose hand is filled to wear the garments”."
+                },
+                {
+                  "ref": "Lev.6.3"
+                },
+                {
+                  "ref": "Ezk.42.14"
+                },
+                {
+                  "ref": "Ezk.44.17",
+                  "note": "In the inner court “they shall put on linen garments, and no wool shall come on them”."
+                },
+                {
+                  "ref": "Deu.22.5",
+                  "note": "“Nor shall a man put on a woman's garment.”"
+                },
+                {
+                  "ref": "Deu.22.11",
+                  "note": "“You shall not wear mixed stuff, wool and linen together.”"
+                },
+                {
+                  "ref": "1Sa.28.8",
+                  "note": "Saul disguised himself “and put on other garments”."
+                },
+                {
+                  "ref": "1Ki.22.30",
+                  "note": "“I will disguise myself … but you put on your robes”; also 2Ch 18:29."
+                },
+                {
+                  "ref": "2Ch.18.29"
+                },
+                {
+                  "ref": "2Sa.13.18",
+                  "note": "“With such robes the king's daughters who were virgins were clothed.”"
+                },
+                {
+                  "ref": "2Sa.14.2",
+                  "note": "“Put on mourning garments.”"
+                },
+                {
+                  "ref": "Jon.3.5",
+                  "note": "The men of Nineveh “proclaimed a fast and put on sackcloth”."
+                },
+                {
+                  "ref": "Est.4.1",
+                  "note": "Mordecai “tore his clothes and put on sackcloth and ashes”."
+                },
+                {
+                  "ref": "Est.5.1",
+                  "note": "“Esther put on royalty”: her royal apparel."
+                },
+                {
+                  "ref": "Est.6.8",
+                  "note": "“Royal apparel which the king has worn.”"
+                },
+                {
+                  "ref": "Isa.4.1",
+                  "note": "“We will eat our own bread and wear our own clothing.”"
+                },
+                {
+                  "ref": "Hag.1.6",
+                  "note": "“You clothe yourselves, but no one is warm.”"
+                },
+                {
+                  "ref": "Ezk.34.3",
+                  "note": "The shepherds “eat the fat and clothe yourselves with the wool”."
+                },
+                {
+                  "ref": "Job.27.17",
+                  "note": "What the wicked heaps up, “the righteous will put on”."
+                },
+                {
+                  "ref": "Zep.1.8",
+                  "note": "Yahweh will punish “all who are clothed in foreign apparel (מַלְבּוּשׁ)”."
+                },
+                {
+                  "ref": "Zec.13.4",
+                  "note": "The false prophets “will not put on a hairy cloak to deceive”."
+                },
+                {
+                  "ref": "Jer.4.30",
+                  "note": "“Though you clothe yourself in scarlet … in vain you make yourself beautiful.”"
+                },
+                {
+                  "ref": "Jer.46.4",
+                  "note": "“Put on the coats of mail”: armour as what is put on."
+                },
+                {
+                  "ref": "Isa.49.18",
+                  "note": "“You shall put them all on as an ornament, and bind them on as a bride”: the returning children of Zion."
+                }
+              ],
+              "kin": [
+                "garment"
+              ]
+            },
+            {
+              "id": "clothed-in",
+              "gloss": "clothed in, wearing (participle)",
+              "definition": "The passive participle לָבֻשׁ, construct לְבֻשׁ: one who has a garment on, described by what he wears.",
+              "evidence": [
+                {
+                  "ref": "Ezk.9.2",
+                  "role": "defining",
+                  "note": "“One man among them clothed in linen (לָבֻשׁ בַּדִּים), with a writer's inkhorn at his waist.”"
+                },
+                {
+                  "ref": "Dan.10.5",
+                  "role": "defining",
+                  "note": "“A man clothed in linen (לָבוּשׁ בַּדִּים), his loins girded with gold of Uphaz”; John sees one like a son of man “clothed (ἐνδεδυμένον) to the feet” (Rev 1:13)."
+                },
+                {
+                  "ref": "Ezk.9.3"
+                },
+                {
+                  "ref": "Ezk.9.11"
+                },
+                {
+                  "ref": "Ezk.10.2"
+                },
+                {
+                  "ref": "Ezk.10.6"
+                },
+                {
+                  "ref": "Ezk.10.7"
+                },
+                {
+                  "ref": "Dan.12.6"
+                },
+                {
+                  "ref": "Dan.12.7"
+                },
+                {
+                  "ref": "Rev.1.13",
+                  "note": "The Peshitta has וַלבִֿיש “and clothed”."
+                },
+                {
+                  "ref": "Zec.3.3",
+                  "role": "defining",
+                  "note": "“Joshua was clothed in filthy garments (לָבֻשׁ בְּגָדִים צוֹאִים) and standing before the angel.”"
+                },
+                {
+                  "ref": "1Sa.17.5",
+                  "note": "Goliath “was clothed with a coat of mail”."
+                },
+                {
+                  "ref": "Pro.31.21",
+                  "note": "“All her household are clothed with scarlet.”"
+                },
+                {
+                  "ref": "Ezk.23.6",
+                  "note": "“Clothed in blue (לְבֻשֵׁי תְכֵלֶת), governors and rulers.”"
+                },
+                {
+                  "ref": "Ezk.23.12"
+                },
+                {
+                  "ref": "Ezk.38.4",
+                  "note": "Gog's horsemen, “all of them clothed in full armour”."
+                },
+                {
+                  "ref": "Isa.14.19",
+                  "note": "The king of Babylon cast out “clothed with the slain (לְבוּשׁ הֲרֻגִים)”: the form could also be the noun, “a garment of slain men”."
+                }
+              ]
+            },
+            {
+              "id": "put-on-quality",
+              "gloss": "put on, be clothed with (a quality or state)",
+              "definition": "To put on righteousness, salvation, strength, majesty, shame or trembling as a garment: the quality covers the one who has it and is seen on him. Said of Yahweh, of Zion, of priests, of the righteous, and of enemies clothed with shame.",
+              "evidence": [
+                {
+                  "ref": "Job.29.14",
+                  "role": "defining",
+                  "note": "“I put on righteousness (צֶדֶק לָבַשְׁתִּי), and it clothed me; my justice was like a robe and a turban.”"
+                },
+                {
+                  "ref": "Isa.59.17",
+                  "role": "defining",
+                  "note": "Yahweh “put on righteousness as a breastplate, and a helmet of salvation on his head; he put on garments of vengeance for clothing, and wrapped himself (וַיַּעַט) with zeal as a robe”."
+                },
+                {
+                  "ref": "Psa.132.9",
+                  "role": "defining",
+                  "note": "“Let your priests be clothed with righteousness”; answered in v. 16, “her priests I will clothe with salvation”."
+                },
+                {
+                  "ref": "2Ch.6.41",
+                  "note": "“Let your priests, Yahweh God, be clothed with salvation.”"
+                },
+                {
+                  "ref": "Psa.109.29",
+                  "role": "defining",
+                  "note": "“Let my accusers be clothed with dishonour, and wrap themselves (וְיַעֲטוּ) in their shame as a robe.”"
+                },
+                {
+                  "ref": "Psa.35.26",
+                  "note": "“Let them be clothed with shame and dishonour who magnify themselves against me.”"
+                },
+                {
+                  "ref": "Job.8.22",
+                  "note": "“Those who hate you will be clothed with shame.”"
+                },
+                {
+                  "ref": "Psa.109.18",
+                  "note": "“He clothed himself with cursing as his garment, and it came into his inward parts like water.”"
+                },
+                {
+                  "ref": "Psa.93.1",
+                  "role": "defining",
+                  "note": "“Yahweh reigns, he is clothed with majesty; Yahweh is clothed, he has girded himself (הִתְאַזָּר) with strength.”"
+                },
+                {
+                  "ref": "Psa.104.1",
+                  "note": "“You are clothed with splendour and majesty.”"
+                },
+                {
+                  "ref": "Job.40.10",
+                  "note": "“Clothe yourself with glory and splendour.”"
+                },
+                {
+                  "ref": "Isa.51.9",
+                  "note": "“Awake, awake, put on strength, arm of Yahweh.”"
+                },
+                {
+                  "ref": "Isa.52.1",
+                  "role": "defining",
+                  "note": "“Awake, awake, put on your strength, Zion; put on your beautiful garments, Jerusalem, the holy city”: the quality and the garment side by side."
+                },
+                {
+                  "ref": "Ezk.7.27",
+                  "note": "“The prince will be clothed with desolation.”"
+                },
+                {
+                  "ref": "Ezk.26.16",
+                  "note": "The princes of the sea “will remove their robes and strip off (יִפְשֹׁטוּ) their embroidered garments; they will clothe themselves with trembling”."
+                },
+                {
+                  "ref": "Job.7.5",
+                  "note": "“My flesh is clothed with worms and clods of dust.”"
+                },
+                {
+                  "ref": "Psa.65.14",
+                  "note": "“The pastures are clothed with flocks, and the valleys are covered (יַעַטְפוּ) with grain.”"
+                }
+              ],
+              "kin": [
+                "garment-figurative"
+              ]
+            },
+            {
+              "id": "spirit-clothed",
+              "gloss": "(of the spirit) clothe itself with a man",
+              "definition": "The spirit of Yahweh is the subject and the man the object: the spirit takes hold of him as a garment is put on, and he at once acts or speaks for God.",
+              "evidence": [
+                {
+                  "ref": "Jdg.6.34",
+                  "role": "defining",
+                  "note": "“The spirit of Yahweh clothed itself with (לָבְשָׁה אֶת־) Gideon, and he blew the shofar, and Abiezer was gathered after him.”"
+                },
+                {
+                  "ref": "1Ch.12.19",
+                  "role": "defining",
+                  "note": "“The spirit clothed itself with Amasai”, and he spoke: “Yours are we, David … for your God helps you.”"
+                },
+                {
+                  "ref": "2Ch.24.20",
+                  "role": "defining",
+                  "note": "“The spirit of God clothed itself with Zechariah son of Jehoiada the priest, and he stood above the people and said to them, Thus says God …”"
+                },
+                {
+                  "ref": "Luk.24.49",
+                  "note": "“Stay in the city until you are clothed (ἐνδύσησθε; Peshitta דּתֵֿלבּשֻונ) with power from on high”: the spirit's coming named in the verb's own terms (Act 1:8)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be arrayed (participle)",
+          "senses": [
+            {
+              "gloss": "arrayed, in vestments",
+              "definition": "The participle מְלֻבָּשִׁים: kings in their robes, and priests and Levites in their vestments, dressed for an occasion of state or worship.",
+              "evidence": [
+                {
+                  "ref": "1Ki.22.10",
+                  "role": "defining",
+                  "note": "The two kings “sat each on his throne, arrayed in robes (מְלֻבָּשִׁים בְּגָדִים)”."
+                },
+                {
+                  "ref": "2Ch.18.9"
+                },
+                {
+                  "ref": "2Ch.5.12",
+                  "role": "defining",
+                  "note": "The Levite singers “arrayed in fine linen (מְלֻבָּשִׁים בּוּץ), with cymbals, harps and lyres”."
+                },
+                {
+                  "ref": "Ezr.3.10",
+                  "note": "At the founding of the temple “they set the priests in their vestments (מְלֻבָּשִׁים) with trumpets”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "clothe, put clothes on; (fig.) clothe with salvation, shame, darkness",
+          "senses": [
+            {
+              "id": "clothe-someone",
+              "gloss": "clothe (someone), put a garment on",
+              "definition": "To put garments on another: of Yahweh clothing the first man and woman, of Moses clothing the priests at their consecration, of a garment of office passed from one man to another, of honour given by a king, and of clothing the naked.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.21",
+                  "role": "defining",
+                  "note": "“Yahweh God made for Adam and his wife garments of skin, and clothed them (וַיַּלְבִּשֵׁם).”"
+                },
+                {
+                  "ref": "Exo.28.41",
+                  "role": "defining",
+                  "note": "“You shall clothe Aaron your brother with them, and his sons with him, and anoint them and fill their hand and set them apart.”"
+                },
+                {
+                  "ref": "Exo.29.5"
+                },
+                {
+                  "ref": "Exo.29.8"
+                },
+                {
+                  "ref": "Exo.40.13"
+                },
+                {
+                  "ref": "Exo.40.14"
+                },
+                {
+                  "ref": "Lev.8.7",
+                  "note": "Moses “put the tunic on him … and clothed him with the robe”."
+                },
+                {
+                  "ref": "Lev.8.13"
+                },
+                {
+                  "ref": "Num.20.26",
+                  "role": "defining",
+                  "note": "“Strip (וְהַפְשֵׁט) Aaron of his garments and clothe Eleazar his son with them”; done in v. 28."
+                },
+                {
+                  "ref": "Num.20.28"
+                },
+                {
+                  "ref": "Isa.22.21",
+                  "note": "Of Eliakim: “I will clothe him with your tunic and bind your sash on him, and give your rule into his hand.”"
+                },
+                {
+                  "ref": "Gen.41.42",
+                  "note": "Pharaoh “clothed him in garments of fine linen and put a gold chain on his neck”."
+                },
+                {
+                  "ref": "Est.6.9",
+                  "note": "“Let them clothe the man whom the king delights to honour.”"
+                },
+                {
+                  "ref": "Est.6.11"
+                },
+                {
+                  "ref": "Est.4.4",
+                  "note": "Esther “sent garments to clothe Mordecai, and to take his sackcloth off him”."
+                },
+                {
+                  "ref": "Zec.3.4",
+                  "role": "defining",
+                  "note": "“Remove the filthy garments from him … See, I have taken your iniquity away from you, and I will clothe you (וְהַלְבֵּשׁ) with festal robes”; v. 5, “they clothed him with garments”."
+                },
+                {
+                  "ref": "Zec.3.5"
+                },
+                {
+                  "ref": "Gen.27.15",
+                  "note": "Rebekah took Esau's best garments “and put them on Jacob her younger son”."
+                },
+                {
+                  "ref": "Gen.27.16",
+                  "note": "“The skins of the kids she put on his hands.”"
+                },
+                {
+                  "ref": "1Sa.17.38",
+                  "note": "“Saul clothed David with his garments … and clothed him with a coat of mail.”"
+                },
+                {
+                  "ref": "2Sa.1.24",
+                  "note": "Saul “clothed you in scarlet with delights”."
+                },
+                {
+                  "ref": "Ezk.16.10",
+                  "note": "Yahweh to Jerusalem: “I clothed you with embroidered cloth.”"
+                },
+                {
+                  "ref": "2Ch.28.15",
+                  "role": "defining",
+                  "note": "The captives of Judah: “all their naked ones they clothed from the spoil; they clothed them and shod them and gave them food and drink.”"
+                },
+                {
+                  "ref": "Luk.15.22",
+                  "note": "“Bring out the best robe and clothe him”; the Peshitta has אַלבֵּשֻוה_י, the same verb and stem."
+                }
+              ],
+              "kin": [
+                "arc-clothe"
+              ]
+            },
+            {
+              "id": "clothe-with-quality",
+              "gloss": "clothe with (salvation, shame, darkness)",
+              "definition": "To cover another with a quality or state as with a garment: Yahweh clothes his priests with salvation and his enemies with shame, and the heavens with blackness; of the body, to cover it with skin and flesh.",
+              "evidence": [
+                {
+                  "ref": "Isa.61.10",
+                  "role": "defining",
+                  "note": "“He has clothed me with garments of salvation, he has wrapped me (יְעָטָנִי) in a robe of righteousness, as a bridegroom … and as a bride adorns herself.”"
+                },
+                {
+                  "ref": "Psa.132.16",
+                  "role": "defining",
+                  "note": "“Her priests I will clothe with salvation.”"
+                },
+                {
+                  "ref": "Psa.132.18",
+                  "role": "defining",
+                  "note": "“His enemies I will clothe with shame, but on him his crown will flourish.”"
+                },
+                {
+                  "ref": "Isa.50.3",
+                  "note": "“I clothe the heavens with blackness, and make sackcloth their covering (כְּסוּתָם).”"
+                },
+                {
+                  "ref": "Job.10.11",
+                  "note": "“You clothed me with skin and flesh, and knit me together with bones and sinews.”"
+                },
+                {
+                  "ref": "Job.39.19",
+                  "note": "“Do you clothe his neck with a mane?”"
+                },
+                {
+                  "ref": "Pro.23.21",
+                  "note": "“Drowsiness will clothe a man with rags.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐνδύω",
+          "gloss": "put on, clothe; (mid.) clothe oneself",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.3.21, וַיַּלְבִּשׁ → ἐνέδυσεν; Isa.59.17, וַיִּלְבַּשׁ → ἐνεδύσατο; Zec.3.4, הַלְבֵּשׁ → ἐνδύσατε; Dan.10.5, לָבוּשׁ → ἐνδεδυμένος; forms of ἐνδύω render לָבֵשׁ about 63 of 95 aligned times"
+            },
+            {
+              "ref": "Luk.24.49",
+              "note": "“Until you are clothed (ἐνδύσησθε) with power from on high”: the spirit-clothing of Jdg 6:34."
+            },
+            {
+              "ref": "Eph.6.14",
+              "note": "“Having put on (ἐνδυσάμενοι) the breastplate of righteousness”: Isa 59:17."
+            },
+            {
+              "ref": "1Th.5.8",
+              "note": "“Putting on the breastplate of faith and love, and for a helmet the hope of salvation”: Isa 59:17."
+            },
+            {
+              "ref": "Eph.6.11"
+            },
+            {
+              "ref": "Rom.13.12",
+              "note": "“Let us put off the works of darkness and put on the armour of light”; the Peshitta has וְנֵלבַּש."
+            },
+            {
+              "ref": "Rom.13.14",
+              "note": "“Put on the Lord Jesus Christ.”"
+            },
+            {
+              "ref": "Gal.3.27",
+              "note": "“As many of you as were baptized into Christ have put on Christ”; the Peshitta has לבֵֿשתֻּונ."
+            },
+            {
+              "ref": "Eph.4.24",
+              "note": "“Put on the new man, created after God in righteousness and holiness of the truth.”"
+            },
+            {
+              "ref": "Col.3.10"
+            },
+            {
+              "ref": "Col.3.12"
+            },
+            {
+              "ref": "1Co.15.53",
+              "to": "1Co.15.54",
+              "note": "“This mortal must put on immortality”; the Peshitta has דּנֵלבַּש."
+            },
+            {
+              "ref": "Rev.1.13",
+              "note": "“Clothed (ἐνδεδυμένον) to the feet”: the man clothed in linen of Dan 10:5."
+            },
+            {
+              "ref": "Mat.22.11",
+              "note": "“A man not clothed with a wedding garment.”"
+            }
+          ]
+        },
+        {
+          "lemma": "περιβάλλω",
+          "gloss": "put around, clothe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.28.20, לִלְבֹּשׁ → περιβαλέσθαι; Isa.59.17 (second), Hag.1.6, 2Ch.28.15; nine times for לָבֵשׁ"
+            },
+            {
+              "ref": "Mat.6.31",
+              "note": "“What shall we eat, or what shall we drink, or what shall we wear (περιβαλώμεθα)?”: Jacob's bread to eat and clothes to wear (Gen 28:20)."
+            },
+            {
+              "ref": "Rev.3.18",
+              "note": "“White garments, that you may clothe yourself, and the shame of your nakedness not be seen.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עָטָה",
+            "note": "Wrap oneself: set beside “put on” of righteousness, zeal and shame.",
+            "evidence": [
+              {
+                "ref": "Isa.59.17"
+              },
+              {
+                "ref": "Psa.109.29"
+              },
+              {
+                "ref": "Isa.61.10"
+              }
+            ]
+          },
+          {
+            "lemma": "אָזַר",
+            "note": "Gird oneself: “clothed with majesty … girded with strength”.",
+            "evidence": [
+              {
+                "ref": "Psa.93.1"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "פָּשַׁט",
+            "note": "Strip off: the garment taken off before another is put on.",
+            "evidence": [
+              {
+                "ref": "Lev.16.23",
+                "to": "Lev.16.24"
+              },
+              {
+                "ref": "Ezk.44.19"
+              },
+              {
+                "ref": "Sng.5.3"
+              },
+              {
+                "ref": "Num.20.26"
+              },
+              {
+                "ref": "Ezk.26.16"
+              }
+            ]
+          },
+          {
+            "lemma": "סוּר",
+            "note": "Remove (hiphil): filthy garments taken off, festal robes put on.",
+            "evidence": [
+              {
+                "ref": "Zec.3.4"
+              },
+              {
+                "ref": "Gen.38.19"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לָבֻשׁ בַּדִּים",
+            "gloss": "clothed in linen",
+            "evidence": [
+              {
+                "ref": "Ezk.9.2"
+              },
+              {
+                "ref": "Dan.10.5"
+              },
+              {
+                "ref": "Dan.12.6"
+              }
+            ]
+          },
+          {
+            "phrase": "לָבַשׁ שַׂק",
+            "gloss": "put on sackcloth (in mourning or repentance)",
+            "evidence": [
+              {
+                "ref": "Jon.3.5"
+              },
+              {
+                "ref": "Est.4.1"
+              }
+            ]
+          },
+          {
+            "phrase": "לָבַשׁ בֹּשֶׁת",
+            "gloss": "be clothed with shame",
+            "evidence": [
+              {
+                "ref": "Psa.35.26"
+              },
+              {
+                "ref": "Job.8.22"
+              },
+              {
+                "ref": "Psa.132.18"
+              }
+            ]
+          },
+          {
+            "phrase": "רוּחַ יַהְוֶה לָבְשָׁה אֶת־",
+            "gloss": "the spirit of Yahweh clothed itself with (a man)",
+            "evidence": [
+              {
+                "ref": "Jdg.6.34"
+              },
+              {
+                "ref": "1Ch.12.19"
+              },
+              {
+                "ref": "2Ch.24.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "לְבוּשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "garment, clothing",
+      "bdb": [
+        "l.al.ab"
+      ],
+      "cognate_ids": [
+        "ar-labisa",
+        "akk-labashu",
+        "uga-lbsh",
+        "gez-labsa",
+        "syc-lbsh",
+        "arc-levash"
+      ],
+      "summary": "About thirty times, mostly in poetry, beside the commoner בֶּגֶד: what a man wears, and what he lacks when he is naked. The brief's six qal tokens filed under it (Ezk 9:11; 10:2, 6, 7; Dan 12:6, 7) are the verb's passive participle לְבֻשׁ “clothed in”.",
+      "senses": [
+        {
+          "id": "garment",
+          "gloss": "garment, clothing",
+          "definition": "What is worn on the body: a man's garments, the clothing the poor lack, royal apparel, mourning sackcloth.",
+          "evidence": [
+            {
+              "ref": "Job.24.7",
+              "role": "defining",
+              "note": "“They lie all night naked (עָרוֹם) without clothing (מִבְּלִי לְבוּשׁ), and have no covering (כְּסוּת) in the cold.”"
+            },
+            {
+              "ref": "Job.31.19",
+              "role": "defining",
+              "note": "“If I have seen anyone perish for lack of clothing, or the needy without covering.”"
+            },
+            {
+              "ref": "Job.24.10"
+            },
+            {
+              "ref": "Psa.22.19",
+              "role": "defining",
+              "note": "“They divide my garments (בְגָדַי) among them, and for my clothing (לְבוּשִׁי) they cast lots”: fulfilled at the cross (Jhn 19:24)."
+            },
+            {
+              "ref": "Jhn.19.24",
+              "note": "The soldiers cast lots for the seamless tunic, “that the scripture might be fulfilled”; the Peshitta has לבֻֿושי."
+            },
+            {
+              "ref": "Gen.49.11",
+              "role": "defining",
+              "note": "Judah “washes his garment (לְבֻשׁוֹ) in wine, and his robe (סוּתוֹ) in the blood of grapes”."
+            },
+            {
+              "ref": "Isa.63.1",
+              "note": "“Who is this … glorious in his apparel?”"
+            },
+            {
+              "ref": "Isa.63.2",
+              "note": "“Why is your apparel (לִלְבוּשֶׁךָ) red, and your garments (וּבְגָדֶיךָ) like one who treads in the winepress?”"
+            },
+            {
+              "ref": "2Sa.20.8",
+              "note": "Joab “was girded with his warrior's garment as his clothing”."
+            },
+            {
+              "ref": "2Ki.10.22",
+              "note": "“Bring out garments for all the servants of Baal.”"
+            },
+            {
+              "ref": "Est.6.8",
+              "note": "“Royal apparel (לְבוּשׁ מַלְכוּת) which the king has worn.”"
+            },
+            {
+              "ref": "Est.6.9"
+            },
+            {
+              "ref": "Est.6.10"
+            },
+            {
+              "ref": "Est.6.11"
+            },
+            {
+              "ref": "Est.8.15",
+              "note": "Mordecai “went out in royal apparel of blue and white”."
+            },
+            {
+              "ref": "Est.4.2",
+              "note": "“None might enter the king's gate clothed with sackcloth.”"
+            },
+            {
+              "ref": "Psa.35.13",
+              "note": "“When they were sick, my clothing was sackcloth.”"
+            },
+            {
+              "ref": "Psa.69.12",
+              "note": "“I made sackcloth my clothing.”"
+            },
+            {
+              "ref": "Psa.45.14",
+              "note": "The king's daughter: “her clothing is of woven gold”."
+            },
+            {
+              "ref": "Pro.31.22",
+              "note": "“Her clothing is fine linen and purple.”"
+            },
+            {
+              "ref": "Pro.27.26",
+              "note": "“The lambs are for your clothing.”"
+            },
+            {
+              "ref": "Jer.10.9",
+              "note": "The idols: “blue and purple are their clothing”."
+            },
+            {
+              "ref": "2Sa.1.24"
+            },
+            {
+              "ref": "Lam.4.14",
+              "note": "The priests defiled with blood, “so that none could touch their garments”."
+            },
+            {
+              "ref": "Job.30.18",
+              "note": "“By great force my garment is disfigured; it binds me about like the collar of my tunic.”"
+            },
+            {
+              "ref": "Mal.2.16",
+              "note": "Yahweh hates divorce, and him “who covers his garment with violence”."
+            }
+          ],
+          "kin": [
+            "put-on-wear",
+            "apparel",
+            "arc-garment"
+          ]
+        },
+        {
+          "id": "garment-figurative",
+          "gloss": "covering, (fig.) what clothes a thing",
+          "definition": "What covers a thing as a garment covers a man: the deep over the earth, the cloud over the sea, strength and dignity on a woman; and the garment that wears out, as heaven and earth will.",
+          "evidence": [
+            {
+              "ref": "Psa.104.6",
+              "role": "defining",
+              "note": "“You covered it with the deep as with a garment (כַּלְּבוּשׁ); the waters stood above the mountains.”"
+            },
+            {
+              "ref": "Job.38.9",
+              "role": "defining",
+              "note": "“When I made the cloud its garment, and thick darkness its swaddling band.”"
+            },
+            {
+              "ref": "Pro.31.25",
+              "role": "defining",
+              "note": "“Strength and dignity are her clothing.”"
+            },
+            {
+              "ref": "Psa.102.27",
+              "role": "defining",
+              "note": "“They will perish, but you will stand; all of them will wear out like a garment; like clothing (כַּלְּבוּשׁ) you will change them, and they will pass away”; quoted in Heb 1:11–12."
+            },
+            {
+              "ref": "Heb.1.12"
+            },
+            {
+              "ref": "Job.38.14",
+              "note": "The earth at dawn: “they stand out like a garment”."
+            },
+            {
+              "ref": "Job.41.5",
+              "note": "“Who can strip off his outer garment?”: the hide of the great beast."
+            }
+          ],
+          "kin": [
+            "put-on-quality"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἱμάτιον",
+          "gloss": "garment; (pl.) clothes",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.104.6, כַּלְּבוּשׁ → ἱμάτιον; Isa.63.2; Job.24.7"
+            },
+            {
+              "ref": "Mrk.9.3",
+              "note": "At the transfiguration “his garments (τὰ ἱμάτια) became shining, exceeding white”; the Peshitta has לבֻֿושֵה."
+            }
+          ]
+        },
+        {
+          "lemma": "ἱματισμός",
+          "gloss": "clothing",
+          "evidence": [
+            {
+              "ref": "Jhn.19.24",
+              "note": "“For my clothing (τὸν ἱματισμόν μου) they cast lots”: Psa 22:19's לְבוּשִׁי."
+            }
+          ]
+        },
+        {
+          "lemma": "στολή",
+          "gloss": "robe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Est.6.8, לְבוּשׁ מַלְכוּת → στολή; Est.6.11"
+            },
+            {
+              "ref": "Luk.15.22",
+              "note": "“Bring out the best robe (στολήν) and put it on him”: the father's honour to the son, as the king's to Mordecai."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בֶּגֶד",
+            "note": "The commoner word for a garment, in parallel.",
+            "evidence": [
+              {
+                "ref": "Psa.22.19"
+              },
+              {
+                "ref": "Isa.63.2"
+              }
+            ]
+          },
+          {
+            "lemma": "סוּת",
+            "note": "Robe, in Jacob's blessing of Judah.",
+            "evidence": [
+              {
+                "ref": "Gen.49.11"
+              }
+            ]
+          },
+          {
+            "lemma": "כְּסוּת",
+            "note": "Covering: what the naked poor lack.",
+            "evidence": [
+              {
+                "ref": "Job.24.7"
+              },
+              {
+                "ref": "Job.31.19"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עָרוֹם",
+            "note": "Naked: the state of one with no clothing.",
+            "evidence": [
+              {
+                "ref": "Job.24.7"
+              },
+              {
+                "ref": "Job.24.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מַלְבּוּשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "apparel, attire",
+      "bdb": [
+        "l.al.ac"
+      ],
+      "cognate_ids": [
+        "ar-labisa",
+        "uga-lbsh",
+        "akk-labashu",
+        "syc-lbsh"
+      ],
+      "summary": "Eight times: apparel as a household's or a court's store of garments, or a person's fine attire. The form with מ‑ matches Arabic malbas and Ugaritic mlbš.",
+      "senses": [
+        {
+          "id": "apparel",
+          "gloss": "apparel, attire",
+          "definition": "Clothing as a store or a mark of station: the livery of Solomon's servants, the vestments kept for the servants of Baal, the fine attire Yahweh gave Jerusalem.",
+          "evidence": [
+            {
+              "ref": "1Ki.10.5",
+              "role": "defining",
+              "note": "The queen of Sheba saw “the attendance of his servants and their apparel (וּמַלְבֻּשֵׁיהֶם), and his cupbearers”."
+            },
+            {
+              "ref": "2Ch.9.4"
+            },
+            {
+              "ref": "2Ki.10.22",
+              "role": "defining",
+              "note": "Jehu to the keeper of the wardrobe (הַמֶּלְתָּחָה): “Bring out garments (לְבוּשׁ) for all the servants of Baal”, and he brought out the vestments (הַמַּלְבּוּשׁ)."
+            },
+            {
+              "ref": "Ezk.16.13",
+              "role": "defining",
+              "note": "“Your attire (וּמַלְבּוּשֵׁךְ) was fine linen and silk and embroidered cloth.”"
+            },
+            {
+              "ref": "Zep.1.8",
+              "note": "“All who are clothed in foreign apparel.”"
+            },
+            {
+              "ref": "Isa.63.3",
+              "note": "“Their lifeblood is sprinkled on my garments, and I have stained all my apparel.”"
+            },
+            {
+              "ref": "Job.27.16",
+              "note": "“Though he heap up silver like dust, and pile up apparel like clay.”"
+            }
+          ],
+          "kin": [
+            "garment"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔνδυμα",
+          "gloss": "garment",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zep.1.8, מַלְבּוּשׁ → ἐνδύματα"
+            },
+            {
+              "ref": "Mat.22.11",
+              "note": "“A man who had no wedding garment (ἔνδυμα γάμου)”: the guest's attire for the king's feast."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּלְבֹּשֶׁת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "clothing",
+      "bdb": [
+        "l.al.ad"
+      ],
+      "cognate_ids": [
+        "ar-labisa",
+        "akk-labashu",
+        "syc-lbsh"
+      ],
+      "summary": "Once, in Yahweh's arming of himself for judgment; its meaning is fixed by the verb beside it.",
+      "senses": [
+        {
+          "gloss": "clothing",
+          "definition": "What is put on as clothing.",
+          "evidence": [
+            {
+              "ref": "Isa.59.17",
+              "role": "defining",
+              "note": "“He put on (וַיִּלְבַּשׁ) garments of vengeance for clothing (תִּלְבֹּשֶׁת).”"
+            }
+          ],
+          "kin": [
+            "garment"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְבֵשׁ",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "wear; (haphel) clothe",
+      "bdb": [
+        "xl.ae.aa"
+      ],
+      "cognate_ids": [
+        "arc-levash",
+        "syc-lbsh"
+      ],
+      "summary": "Three times in Daniel 5, of the purple promised and given to the one who read the writing. The brief's four Aramaic qal tokens outside Daniel (Lev 6:3; Deu 22:5, 11; Ezk 7:27) are the Hebrew verb.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "wear, be clothed in",
+          "senses": [
+            {
+              "id": "arc-wear",
+              "gloss": "wear",
+              "definition": "To be clothed in a garment of honour.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.7",
+                  "role": "defining",
+                  "note": "“Whoever reads this writing … shall be clothed with purple (אַרְגְּוָנָא יִלְבַּשׁ), with a chain of gold about his neck.”"
+                },
+                {
+                  "ref": "Dan.5.16"
+                }
+              ],
+              "kin": [
+                "put-on-wear"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "clothe",
+          "senses": [
+            {
+              "id": "arc-clothe",
+              "gloss": "clothe (someone)",
+              "definition": "To put a garment of honour on another.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.29",
+                  "role": "defining",
+                  "note": "“They clothed Daniel with purple (וְהַלְבִּישׁוּ לְדָנִיֵּאל אַרְגְּוָנָא) and put a chain of gold about his neck.”"
+                }
+              ],
+              "kin": [
+                "clothe-someone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְבוּשׁ",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "garment",
+      "bdb": [
+        "xl.ae.ab"
+      ],
+      "cognate_ids": [
+        "arc-levash",
+        "syc-lbsh"
+      ],
+      "summary": "Twice in Daniel's Aramaic: the garments of the three men cast into the furnace, and the white clothing of the Ancient of Days.",
+      "senses": [
+        {
+          "id": "arc-garment",
+          "gloss": "garment",
+          "definition": "What is worn on the body.",
+          "evidence": [
+            {
+              "ref": "Dan.3.21",
+              "role": "defining",
+              "note": "“These men were bound in their cloaks, their tunics, their caps and their other garments (וּלְבֻשֵׁיהוֹן), and cast into the burning fiery furnace”; v. 27, not even their cloaks were changed."
+            },
+            {
+              "ref": "Dan.7.9",
+              "role": "defining",
+              "note": "“The Ancient of Days sat; his clothing (לְבוּשֵׁהּ) was white as snow, and the hair of his head like pure wool”; compare Rev 1:14 and the transfiguration, Mrk 9:3."
+            }
+          ],
+          "kin": [
+            "garment"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-labisa",
+      "lang": "ar",
+      "form": "لَبِسَ، أَلْبَسَ، لِبَاسٌ، مَلْبَسٌ، لَبُوسٌ",
+      "translit": "labisa, ʾalbasa, libās, malbas, labūs",
+      "gloss": "put on, wear (a garment); (IV) clothe another, cover; clothing, apparel; a coat of mail",
+      "relation": "cognate",
+      "note": "The same verb and nouns as the Hebrew: form I is to put on or wear, form IV to clothe another (the hiphil), and it is used figuratively, “he put on modesty as a garment”, as the Hebrew puts on righteousness. مَلْبَسٌ matches מַלְבּוּשׁ, and لَبُوسٌ “coat of mail” the armour that is put on (Jer 46:4; 1Sa 17:5). A second Arabic sense, labasa “confuse, make obscure”, has no Hebrew counterpart. Arabic س shows š behind ש.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2647, art. لبس, لَبِسَ الثَّوْبَ (n37499)",
+          "note": "“He put on, or wore, the garment … He wore, or put on, the weapon … He put on pudency as a garment.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2647, art. لبس, أَلْبَسَهُ الثَّوْبَ (n37501)",
+          "note": "“He put on him, or clad or decked him with, the garment … He, or it, covered him.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2648, art. لبس, لِبَاسٌ (n37512) and لَبُوسٌ (n37513)",
+          "note": "“Clothing; dress; apparel; what is worn; as also … مَلْبَسٌ”; لَبُوسٌ “a coat of mail”."
+        }
+      ]
+    },
+    {
+      "id": "akk-labashu",
+      "lang": "akk",
+      "form": "labāšu, lubūšu, lubuštu",
+      "translit": "labāšu, lubūšu, lubuštu",
+      "gloss": "clothe oneself, put on, be clothed; (Š) clothe another; garment, clothing",
+      "relation": "cognate",
+      "note": "Common in every period. The verb has the Hebrew's two sides, putting on and (in the D and Š stems) clothing another, and also “be covered”; the nouns are garments and clothing allowances.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000031970, labāšu [clothe oneself] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000031970.html",
+          "note": "“be clothed; clothe; clothe oneself; don; dress; get dressed (in); overlay; provide with clothing; put on (a garment)”; forms ušalbiš, ulabbiš."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000012280, lubūšu [garment] N; armep x000021480, lubuštu [clothing] N",
+          "note": "“clothing allowance; garment; outfit”; “clothes; clothing; covering; garment; robe”."
+        }
+      ]
+    },
+    {
+      "id": "uga-lbsh",
+      "lang": "uga",
+      "form": "𐎍𐎁𐎌، 𐎎𐎍𐎁𐎌",
+      "translit": "lbš, mlbš",
+      "gloss": "garment, clothing; cloak; (vb) dress",
+      "relation": "cognate",
+      "note": "The noun lbš and the form with m‑, mlbš, as Hebrew לְבוּשׁ and מַלְבּוּשׁ. Ugaritic keeps š and ṯ apart, and shows š behind ש.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "oracc-ugarit",
+          "locator": "x000000970, lbš [clothing] N",
+          "note": "Forms lbš, lbšk, lbšm."
+        },
+        {
+          "source": "oracc-ugarit",
+          "locator": "x000001170, mlbš [cloak] N"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000200 lbš [clothe] V, UGC002467 lbš [dress] V"
+        }
+      ]
+    },
+    {
+      "id": "gez-labsa",
+      "lang": "gez",
+      "form": "ለብሰ، ልብስ",
+      "translit": "läbsä, ləbs",
+      "gloss": "put on, clothe oneself, dress; clothes, clothing, tunic",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ለብሰ (läbsä), verb; ልብስ (ləbs), noun",
+          "note": "“to clothe, dress”; “clothes, clothing, tunic, veil”; cognate with Hebrew לָבַשׁ, Arabic لَبِسَ."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000200 lbš [clothe] V, GEZ003033 labsa [clothe] V"
+        }
+      ]
+    },
+    {
+      "id": "syc-lbsh",
+      "lang": "syc",
+      "form": "ܠܒܫ، ܠܒܫܐ، ܠܒܘܫܐ",
+      "translit": "lbeš, lḇāšā, lḇūšā",
+      "gloss": "put on, be clothed; (aphel) clothe; clothes, garment, clothing",
+      "relation": "cognate",
+      "note": "The Peshitta's verb and nouns: “put on Christ” (Gal 3:27), “this mortal must put on immortality” (1Co 15:53), “until you are clothed with power from on high” (Luk 24:49), the aphel “clothe him” (Luk 15:22), and לבֻֿושָא “clothing” (Mat 6:25; Mrk 9:3; Jhn 19:24). Syriac, like Hebrew, keeps š from ṯ (which becomes t), so it shows š behind ש.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 953 LBW; lexemes 1626 LBW (put on; be clothed; clothe), 1627 LBWA (clothes; garment), 1625 LBOWA (clothing)"
+        }
+      ]
+    },
+    {
+      "id": "arc-levash",
+      "lang": "arc",
+      "form": "לְבֵשׁ، אַלְבֵּשׁ، לְבוּשָׁא",
+      "translit": "lbēš, ʾalbēš, lbūšāʾ",
+      "gloss": "put on, be clothed; (aphel) clothe; (trans.) take hold of, seize; garment",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud. The Targum keeps the verb for the Hebrew's (Targ. Gen 38:19; Psa 93:1; Job 29:14). The aphel is also used of a passion that “took hold of” someone, a use like the spirit clothing itself with Gideon (Jdg 6:34).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לְבַשׁ, לְבֵישׁ (ch.), citing Targ. Gen. XXXVIII, 19; Targ. Ps. XCIII, 1; Targ. Ps. CXXXII, 16; Targ. Job XXIX, 14; Kidd. 81b (Af. “seize”)"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לְבוּשׁ (ch.), לְבוּשָׁא, citing Targ. Esth. IV, 2; Targ. Gen. III, 21"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Paul writes, “this perishable must put on the imperishable, and this mortal must put on immortality; and when this mortal has put on immortality, then shall come to pass the saying that is written, Death is swallowed up in victory” (1Co 15:53–54, quoting Isa 25:8); the Peshitta uses the root's verb, נֵלבַּש. It happens “in a moment, at the last trumpet, and the dead will be raised imperishable” (1Co 15:52), and those raised are “those who are Christ's at his coming” (1Co 15:23). He longs “to be clothed with our dwelling from heaven … not that we would be unclothed, but clothed, so that what is mortal may be swallowed up by life” (2Co 5:2–4). Immortality is something believers are to “seek” (Rom 2:7). From the verses: a man does not now possess immortality; it is put on, like a garment not yet worn, by the mortal body at the resurrection when Christ returns.",
+      "evidence": [
+        {
+          "ref": "1Co.15.53",
+          "to": "1Co.15.54"
+        },
+        {
+          "ref": "Isa.25.8"
+        },
+        {
+          "ref": "1Co.15.52"
+        },
+        {
+          "ref": "2Co.5.2",
+          "to": "2Co.5.4"
+        },
+        {
+          "ref": "Rom.2.7"
+        },
+        {
+          "ref": "1Co.15.23"
+        }
+      ]
+    },
+    {
+      "topic": "clothed-by-god",
+      "statement": "When the man and woman sinned they knew they were naked and made themselves girdles of fig leaves (Gen 3:7); then “Yahweh God made for Adam and his wife garments of skin, and clothed them” (Gen 3:21). Joshua the high priest stood before the angel clothed in filthy garments; they were removed and he was told, “I have taken your iniquity away from you, and I will clothe you with festal robes” (Zec 3:3–4). The redeemed say, “he has clothed me with garments of salvation, he has wrapped me in a robe of righteousness” (Isa 61:10), and Yahweh promises, “her priests I will clothe with salvation” (Psa 132:16). In the New Testament, “as many of you as were baptized into Christ have put on Christ” (Gal 3:27); believers are to “put on the Lord Jesus Christ” (Rom 13:14) and “the new man, created after God in righteousness” (Eph 4:24), and to buy “white garments that you may clothe yourself, and the shame of your nakedness not be seen” (Rev 3:18). From the verses: the covering for sin is given by God, not made by man, and a man puts it on when he is baptized into Christ and goes on to put on his character.",
+      "evidence": [
+        {
+          "ref": "Gen.3.7"
+        },
+        {
+          "ref": "Gen.3.21"
+        },
+        {
+          "ref": "Zec.3.3",
+          "to": "Zec.3.4"
+        },
+        {
+          "ref": "Isa.61.10"
+        },
+        {
+          "ref": "Psa.132.16"
+        },
+        {
+          "ref": "Gal.3.27"
+        },
+        {
+          "ref": "Rom.13.14"
+        },
+        {
+          "ref": "Eph.4.24"
+        },
+        {
+          "ref": "Rev.3.18"
+        }
+      ]
+    },
+    {
+      "topic": "armour-of-yahweh",
+      "statement": "Seeing there was no man to intercede, Yahweh's own arm brought salvation: “he put on righteousness as a breastplate, and a helmet of salvation on his head; he put on garments of vengeance for clothing” (Isa 59:16–17), and the Redeemer comes to Zion (Isa 59:20). Paul tells believers to “put on the whole armour of God … having put on the breastplate of righteousness” and to take “the helmet of salvation” (Eph 6:11, 14, 17), and to put on “the breastplate of faith and love, and for a helmet the hope of salvation” (1Th 5:8). From the verses: the armour believers put on is the armour Yahweh himself is described as wearing, his righteousness and salvation, given to them to wear.",
+      "evidence": [
+        {
+          "ref": "Isa.59.16",
+          "to": "Isa.59.17"
+        },
+        {
+          "ref": "Isa.59.20"
+        },
+        {
+          "ref": "Eph.6.11"
+        },
+        {
+          "ref": "Eph.6.14"
+        },
+        {
+          "ref": "Eph.6.17"
+        },
+        {
+          "ref": "1Th.5.8"
+        }
+      ]
+    },
+    {
+      "topic": "holy-spirit",
+      "statement": "“The spirit of Yahweh clothed itself with Gideon, and he blew the shofar” (Jdg 6:34); “the spirit clothed itself with Amasai”, and he spoke (1Ch 12:19); “the spirit of God clothed itself with Zechariah”, and he said, “Thus says God” (2Ch 24:20). Each time the spirit comes upon a man and he at once acts or speaks for God. Jesus told the disciples to stay in Jerusalem “until you are clothed with power from on high” (Luk 24:49), and said, “you will receive power when the holy spirit has come upon you” (Act 1:8). From the verses: the spirit is God's power, put on a man as a garment for a work God gives him; the words “clothed with power” and “the holy spirit has come upon you” describe the same thing.",
+      "evidence": [
+        {
+          "ref": "Jdg.6.34"
+        },
+        {
+          "ref": "1Ch.12.19"
+        },
+        {
+          "ref": "2Ch.24.20"
+        },
+        {
+          "ref": "Luk.24.49"
+        },
+        {
+          "ref": "Act.1.8"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-19. Root key לבש (BDB l.al.aa); no existing entry used it, and no word of the root sits in another entry (bagad cites לְבוּשׁ only as a parallel). Assigned: l.al.aa verb, l.al.ab לְבוּשׁ, l.al.ac מַלְבּוּשׁ, l.al.ad תִּלְבֹּשֶׁת, xl.ae.aa Aramaic verb, xl.ae.ab Aramaic noun (Dan 3:21; 7:9, not in the brief's word list). Left out, as other roots filed next to this one in BDB's l.al section: l.al.ae לֹג (the log measure, root לג), l.al.af לֹד (Lod, place), l.al.ag לִדְבִר (place; its tokens are Debir), l.al.ai לֹה (see לֹא). The zero-token cross-references m.bz.al and w.ar.ae (“see לבשׁ”) are left unassigned. No personal name in TIPNR is formed from the root. Shared tokens: the verb's ten tokens with no stem are the noun and the participle לְבֻשֵׁי; the noun's six qal tokens are the participle; xl.ae.aa's four qal tokens are the Hebrew verb. Isa 14:19 לְבוּשׁ הֲרֻגִים is filed as the participle (“clothed with the slain”); it could be the noun. Coptic ⲗⲱⲃϣ “crown, coping” (Demotic lbš, from Egyptian rbꜣšꜣy “coat of mail”) is argued to be a Semitic loan into Egyptian; not recorded, as egy is only for loans into Hebrew. Arabic لبث (lbṯ, “tarry”), tried by sound correspondence, shares no sense and is not recorded. Leads not followed: Ugaritic verb lbš in DULAT (not vendored); Ge'ez in Dillmann (cols. not checked); CAD L for labāšu. Open questions: (1) the spirit-clothing idiom (Jdg 6:34; 1Ch 12:19; 2Ch 24:20) has the spirit as subject and the man as object, “the spirit put on Gideon”; the entry reads it as the spirit taking hold of the man (compare Jastrow's Aramaic aphel “seize”), not the man wearing the spirit, and Luk 24:49 turns it round (“until you are clothed with power”): check the wording; (2) the doctrine statements are reasoned conclusions to review."
+}
