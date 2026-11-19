@@ -1,0 +1,128 @@
+{
+  "id": "tsamath",
+  "root": "צמת",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "destruction",
+    "land"
+  ],
+  "gloss": "destroy, cut off, finality",
+  "summary": "The streams in Job cease to flow, defeated enemies cease to threaten the king, and a property sale can become final. Each passage specifies what comes to an end.",
+  "words": [
+    {
+      "lemma": "צָמַת",
+      "bdb": [
+        "r.cn.aa"
+      ],
+      "pos": "verb",
+      "gloss": "cut off, bring to an end",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cut off",
+          "senses": [
+            {
+              "gloss": "cut off",
+              "definition": "The speaker describes attackers cutting off his life in a pit and casting a stone upon him.",
+              "evidence": [
+                {
+                  "ref": "Lam.3.53",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be cut off, disappear",
+          "senses": [
+            {
+              "gloss": "be cut off, disappear",
+              "definition": "Seasonal streams disappear when the weather grows hot. Job also uses the verb in his difficult statement about darkness.",
+              "evidence": [
+                {
+                  "ref": "Job.6.17",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.23.17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "consume",
+          "senses": [
+            {
+              "gloss": "consume",
+              "definition": "The psalmist says that zeal consumes him because his adversaries forget God’s words.",
+              "evidence": [
+                {
+                  "ref": "Psa.119.139",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "destroy",
+          "senses": [
+            {
+              "gloss": "destroy",
+              "definition": "The king says that he has destroyed those who hated him. Elsewhere the psalmist asks God to bring enemies to an end.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.41",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.22.41"
+                },
+                {
+                  "ref": "Psa.54.7"
+                },
+                {
+                  "ref": "Psa.94.23"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צְמִיתֻת",
+      "bdb": [
+        "r.cn.ab"
+      ],
+      "pos": "noun",
+      "gloss": "permanence, finality",
+      "senses": [
+        {
+          "gloss": "permanence, finality",
+          "definition": "Land may not be sold in perpetuity because it belongs to Yahweh. The law treats a house in a walled town differently after its redemption period expires.",
+          "evidence": [
+            {
+              "ref": "Lev.25.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.25.30"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The Arabic verb ṣamata concerns silence. It supplies insufficient evidence for a historical link to the Hebrew verb of destruction. The place name Zin and the word for flocks have different consonants."
+}
