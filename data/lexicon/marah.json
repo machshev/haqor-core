@@ -1,0 +1,122 @@
+{
+  "id": "marah",
+  "root": "מרה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "obedience",
+    "rebellion"
+  ],
+  "gloss": "rebel, disobey, defiance",
+  "summary": "Israel’s refusal to carry out a command shows what it means to rebel. Psalm 5 names Yahweh as the one against whom the defiance is directed.",
+  "words": [
+    {
+      "lemma": "מָרָה",
+      "bdb": [
+        "m.dk.aa"
+      ],
+      "pos": "verb",
+      "gloss": "rebel, defy",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rebel against, disobey",
+          "senses": [
+            {
+              "gloss": "rebel against, disobey",
+              "definition": "David says that the people he describes have rebelled against Yahweh. At Meribah Yahweh says Moses and Aaron disobeyed his instruction.",
+              "evidence": [
+                {
+                  "ref": "Psa.5.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.20.24"
+                },
+                {
+                  "ref": "Psa.78.8"
+                }
+              ],
+              "cognate_ids": [
+                "ar-mara"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "defy a command, provoke by disobedience",
+          "senses": [
+            {
+              "gloss": "defy a command, provoke by disobedience",
+              "definition": "Israel refuses to enter the land when Yahweh commands it. The wilderness psalm pairs defiance with grieving him in the desert.",
+              "evidence": [
+                {
+                  "ref": "Deu.9.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.78.40"
+                },
+                {
+                  "ref": "Ezk.20.13"
+                }
+              ],
+              "cognate_ids": [
+                "ar-mara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרִי",
+      "bdb": [
+        "m.dk.ab"
+      ],
+      "pos": "noun",
+      "gloss": "rebellion, defiance",
+      "senses": [
+        {
+          "gloss": "rebellion, defiance",
+          "definition": "Samuel names rebellion as Saul’s offence after his refusal to obey. Ezekiel must listen to Yahweh even though the people around him are called a house of rebellion.",
+          "evidence": [
+            {
+              "ref": "1Sa.15.22",
+              "to": "1Sa.15.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.2.6",
+              "to": "Ezk.2.8"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-mara"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-mara",
+      "lang": "ar",
+      "form": "مَارَاهُ",
+      "translit": "mārāhu",
+      "gloss": "dispute with someone obstinately",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3019, مري, form III, n43563"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic gives a comparison for opposition in a dispute. The place Marah is named for bitter water in Exodus 15:23 and belongs with bitter. Merom and the word for a crushed testicle have different consonants."
+}
