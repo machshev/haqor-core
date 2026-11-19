@@ -1,0 +1,380 @@
+{
+  "id": "ramah",
+  "root": "רמה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "deception",
+    "conduct"
+  ],
+  "gloss": "throw, deceive, treachery",
+  "summary": "Exodus uses the verb of casting into the sea, while Genesis uses it of Laban’s deception. The noun in Psalm 5 describes conduct that others cannot trust.",
+  "words": [
+    {
+      "lemma": "רָמָה",
+      "bdb": [
+        "t.cv.aa"
+      ],
+      "pos": "verb",
+      "gloss": "throw, deceive",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "throw, shoot",
+          "senses": [
+            {
+              "gloss": "throw, shoot",
+              "definition": "The song at the sea says Yahweh threw horse and rider into the sea. Jeremiah uses a participle for an archer.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.15.21"
+                },
+                {
+                  "ref": "Jer.4.29"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rama"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "deceive, betray",
+          "senses": [
+            {
+              "gloss": "deceive, betray",
+              "definition": "Jacob asks why Laban deceived him by substituting Leah for Rachel. Joshua uses the same verb of the Gibeonites’ false account of their journey.",
+              "evidence": [
+                {
+                  "ref": "Gen.29.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jos.9.22"
+                },
+                {
+                  "ref": "1Sa.19.17"
+                }
+              ],
+              "kin": [
+                "deceit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִרְמָה",
+      "bdb": [
+        "t.cw.ac"
+      ],
+      "pos": "noun",
+      "gloss": "deceit, treachery",
+      "senses": [
+        {
+          "gloss": "deceit",
+          "definition": "Isaac tells Esau that his brother obtained the blessing by deceit. Psalm 5 describes someone characterized by bloodshed and deceit.",
+          "evidence": [
+            {
+              "ref": "Gen.27.35",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.5.7"
+            },
+            {
+              "ref": "Isa.53.9"
+            }
+          ],
+          "id": "deceit"
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "רְמִיָּה",
+      "bdb": [
+        "t.cw.ab"
+      ],
+      "pos": "noun",
+      "gloss": "deceit, unreliability, slackness",
+      "senses": [
+        {
+          "gloss": "deceit, unreliability",
+          "definition": "The psalmist calls the person with no deceit in his spirit happy. Elsewhere a bow that fails the archer illustrates an untrustworthy people.",
+          "evidence": [
+            {
+              "ref": "Psa.32.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.78.57"
+            },
+            {
+              "ref": "Hos.7.16"
+            }
+          ],
+          "kin": [
+            "deceit"
+          ]
+        },
+        {
+          "gloss": "slackness",
+          "definition": "Jeremiah condemns doing Yahweh’s work carelessly. Proverbs describes a slack hand bringing poverty.",
+          "evidence": [
+            {
+              "ref": "Jer.48.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.10.4"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "תָּרְמִית",
+      "bdb": [
+        "t.cw.af"
+      ],
+      "pos": "noun",
+      "gloss": "deception",
+      "senses": [
+        {
+          "gloss": "deception",
+          "definition": "Jeremiah describes a people clinging to deceit and prophets speaking what their own hearts invent.",
+          "evidence": [
+            {
+              "ref": "Jer.8.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.23.26"
+            },
+            {
+              "ref": "Zep.3.13"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "תָּרְמָה",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "stealth, treachery",
+      "senses": [
+        {
+          "gloss": "stealth, treachery",
+          "definition": "Zebul sends a warning to Abimelech about Gaal. The phrase describes the manner of sending in a common reading of the verse.",
+          "evidence": [
+            {
+              "ref": "Jdg.9.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "רְמָא",
+      "bdb": [
+        "xt.ak.aa"
+      ],
+      "pos": "verb",
+      "gloss": "throw, place",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "throw",
+          "senses": [
+            {
+              "gloss": "throw",
+              "definition": "Nebuchadnezzar asks whether three men were thrown into the fire.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.24",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rama"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpeel",
+          "gloss": "be thrown",
+          "senses": [
+            {
+              "gloss": "be thrown",
+              "definition": "The decree states that anyone refusing to worship the image is to be thrown into the furnace.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.3.11"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rama"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peil",
+          "gloss": "be set in place",
+          "senses": [
+            {
+              "gloss": "be set in place",
+              "definition": "Daniel sees thrones set in place before the Ancient of Days sits.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.9",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rama"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "רמָא",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "throw, lay down",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "cast or lie",
+          "senses": [
+            {
+              "gloss": "cast or lie",
+              "definition": "The fishermen cast their net into the sea. Peter’s mother-in-law lies ill with a fever.",
+              "evidence": [
+                {
+                  "ref": "Mat.4.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mat.8.14"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rama"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be thrown, yield",
+          "senses": [
+            {
+              "gloss": "be thrown, yield",
+              "definition": "The false accuser is thrown into the lake of fire. Paul uses the verb of yielding to pressure.",
+              "evidence": [
+                {
+                  "ref": "Rev.20.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gal.2.5"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rama"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "cast down",
+          "senses": [
+            {
+              "gloss": "cast down",
+              "definition": "Jesus speaks of throwing pearls before pigs. The tempter tells Jesus to throw himself down.",
+              "evidence": [
+                {
+                  "ref": "Mat.7.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.4.9"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rama"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "תַּרְמִיתָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "foundation, founding",
+      "senses": [
+        {
+          "gloss": "foundation, founding",
+          "definition": "The Peshitta uses this noun of the founding of the world in the sayings about the kingdom prepared from that time and the Father’s earlier love for the Son.",
+          "evidence": [
+            {
+              "ref": "Mat.25.34",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.17.24"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-rama",
+      "lang": "ar",
+      "form": "رَمَى",
+      "translit": "ramā",
+      "gloss": "throw, cast",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1161, رمى, n16727"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The two verb keys return the same Hebrew occurrences, as do the paired keys for deceit and slackness. Judges 9:31 has also been taken as a place name. Pomegranates, Rimmon and the word for a spear have other consonants. The name Jeremiah may instead be related to רום."
+}
