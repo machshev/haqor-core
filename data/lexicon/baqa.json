@@ -1,0 +1,555 @@
+{
+  "id": "baqa",
+  "root": "בקע",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "split open, break through",
+  "summary": "A woodcutter splits timber, water breaks from a rock, and soldiers break through a camp. A breach is the opening left behind. The beka names a half share of a shekel.",
+  "words": [
+    {
+      "lemma": "בָּקַע",
+      "pos": "verb",
+      "bdb": [
+        "b.cr.aa"
+      ],
+      "gloss": "split open, break through",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "split open, break through",
+          "senses": [
+            {
+              "id": "split",
+              "gloss": "split open",
+              "definition": "Open something by dividing it, from splitting timber to opening a passage through rock or water.",
+              "evidence": [
+                {
+                  "ref": "Exo.14.16",
+                  "role": "defining",
+                  "note": "Moses is told to divide the sea so Israel can cross."
+                },
+                {
+                  "ref": "Isa.48.21",
+                  "role": "defining",
+                  "note": "Water gushes out when the rock splits."
+                },
+                {
+                  "ref": "Ecc.10.9",
+                  "role": "defining",
+                  "note": "Splitting wood is named alongside quarrying stone."
+                },
+                {
+                  "ref": "Amo.1.13",
+                  "role": "defining",
+                  "note": "Ammon’s attack is described as ripping open pregnant women."
+                }
+              ],
+              "cognate_ids": [
+                "uga-split",
+                "arc-split",
+                "syc-split",
+                "mand-split"
+              ]
+            },
+            {
+              "id": "break-through",
+              "gloss": "break through",
+              "definition": "Force a passage through an obstacle or a defended position.",
+              "evidence": [
+                {
+                  "ref": "2Sa.23.16",
+                  "role": "defining",
+                  "note": "Three warriors break through the Philistine camp to reach the well."
+                },
+                {
+                  "ref": "2Ch.21.17",
+                  "role": "defining",
+                  "note": "Invaders penetrate Judah and carry off royal possessions."
+                }
+              ],
+              "cognate_ids": []
+            },
+            {
+              "id": "hatch",
+              "gloss": "hatch, break out",
+              "definition": "Come out through the shell of an egg.",
+              "evidence": [
+                {
+                  "ref": "Isa.59.5",
+                  "role": "defining",
+                  "note": "An adder emerges from the crushed egg."
+                }
+              ],
+              "cognate_ids": []
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be split, burst open",
+          "senses": [
+            {
+              "id": "burst",
+              "gloss": "be split, burst open",
+              "definition": "Come apart or open under pressure. The subject can be water, ground, a container or a besieged city.",
+              "evidence": [
+                {
+                  "ref": "Gen.7.11",
+                  "role": "defining",
+                  "note": "The fountains of the deep burst open as the flood begins."
+                },
+                {
+                  "ref": "Exo.14.21",
+                  "role": "defining",
+                  "note": "The waters divide as Yahweh drives back the sea."
+                },
+                {
+                  "ref": "Zec.14.4",
+                  "role": "defining",
+                  "note": "The Mount of Olives splits into two halves."
+                },
+                {
+                  "ref": "Job.32.19",
+                  "role": "defining",
+                  "note": "Unvented wine strains its container to bursting."
+                },
+                {
+                  "ref": "2Ki.25.4",
+                  "role": "defining",
+                  "note": "A breach in the city allows the defenders to leave."
+                },
+                {
+                  "ref": "1Ki.1.40",
+                  "role": "defining",
+                  "note": "The crowd’s rejoicing is so loud that the earth is said to split."
+                }
+              ],
+              "cognate_ids": [
+                "uga-split",
+                "arc-split",
+                "syc-split",
+                "mand-split"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "split, tear open",
+          "senses": [
+            {
+              "id": "cleave",
+              "gloss": "split or cut open",
+              "definition": "Split material apart, cut a channel through it or tear a living body open.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.3",
+                  "role": "defining",
+                  "note": "Abraham splits the wood for the burnt offering."
+                },
+                {
+                  "ref": "Job.28.10",
+                  "role": "defining",
+                  "note": "The miner cuts channels through rock."
+                },
+                {
+                  "ref": "2Ki.2.24",
+                  "role": "defining",
+                  "note": "The bears tear the youths."
+                },
+                {
+                  "ref": "Isa.59.5",
+                  "role": "defining",
+                  "note": "Hatching eggs opens their shells."
+                }
+              ],
+              "cognate_ids": [
+                "uga-split",
+                "arc-split",
+                "syc-split",
+                "mand-split"
+              ]
+            },
+            {
+              "id": "unleash",
+              "gloss": "break forth, unleash",
+              "definition": "Used of a storm wind breaking out or being let loose.",
+              "evidence": [
+                {
+                  "ref": "Ezk.13.11",
+                  "role": "defining",
+                  "note": "The wind breaks forth against the plastered wall."
+                },
+                {
+                  "ref": "Ezk.13.13",
+                  "role": "defining",
+                  "note": "Yahweh says he will unleash the wind in anger."
+                }
+              ],
+              "cognate_ids": []
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be torn or breached",
+          "senses": [
+            {
+              "id": "torn",
+              "gloss": "be torn or breached",
+              "definition": "Bear the result of being split or broken open.",
+              "evidence": [
+                {
+                  "ref": "Jos.9.4",
+                  "role": "defining",
+                  "note": "The travellers carry split wineskins that have been mended."
+                },
+                {
+                  "ref": "Ezk.26.10",
+                  "role": "defining",
+                  "note": "The invader enters as through a breached city."
+                },
+                {
+                  "ref": "Hos.14.1",
+                  "role": "defining",
+                  "note": "The passive describes the fate of Samaria’s pregnant women."
+                }
+              ],
+              "cognate_ids": [
+                "uga-split",
+                "arc-split",
+                "syc-split",
+                "mand-split"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "break through",
+          "senses": [
+            {
+              "id": "force-passage",
+              "gloss": "break through",
+              "definition": "Make a way through defenders or into the territory they hold.",
+              "evidence": [
+                {
+                  "ref": "2Ki.3.26",
+                  "role": "defining",
+                  "note": "Moab’s king tries to break through to the king of Edom."
+                },
+                {
+                  "ref": "Isa.7.6",
+                  "role": "defining",
+                  "note": "The attackers propose to breach Judah and install their own king."
+                }
+              ],
+              "cognate_ids": []
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be breached",
+          "senses": [
+            {
+              "id": "breached",
+              "gloss": "be breached",
+              "definition": "Be opened by a break in the defences.",
+              "evidence": [
+                {
+                  "ref": "Jer.39.2",
+                  "role": "defining",
+                  "note": "The narrator dates the breach of Jerusalem."
+                }
+              ],
+              "cognate_ids": []
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "split apart",
+          "senses": [
+            {
+              "id": "split-apart",
+              "gloss": "split apart",
+              "definition": "Crack or burst open, as worn containers do.",
+              "evidence": [
+                {
+                  "ref": "Jos.9.13",
+                  "role": "defining",
+                  "note": "The travellers say their wineskins split on the journey."
+                },
+                {
+                  "ref": "Mic.1.4",
+                  "role": "defining",
+                  "note": "The valleys split as Yahweh descends."
+                }
+              ],
+              "cognate_ids": [
+                "uga-split",
+                "arc-split",
+                "syc-split",
+                "mand-split"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּקִיעַ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "b.cr.ad"
+      ],
+      "gloss": "breach, fissure",
+      "senses": [
+        {
+          "id": "breach",
+          "gloss": "breach, fissure",
+          "definition": "A break in masonry or another solid structure.",
+          "evidence": [
+            {
+              "ref": "Isa.22.9",
+              "role": "defining",
+              "note": "Jerusalem’s defenders see many breaches in the City of David."
+            },
+            {
+              "ref": "Amo.6.11",
+              "role": "defining",
+              "note": "A blow opens fissures in the smaller house."
+            }
+          ],
+          "cognate_ids": [
+            "mand-cleft"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֶּקַע",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "b.cr.ab"
+      ],
+      "gloss": "beka, half a shekel",
+      "senses": [
+        {
+          "id": "half",
+          "gloss": "beka, half a shekel",
+          "definition": "A weight equal to one half of a shekel.",
+          "evidence": [
+            {
+              "ref": "Gen.24.22",
+              "role": "defining",
+              "note": "The gold nose ring weighs a beka. The two bracelets are weighed separately."
+            },
+            {
+              "ref": "Exo.38.26",
+              "role": "defining",
+              "note": "The census contribution is expressly reckoned as a beka per person, half the sanctuary shekel."
+            }
+          ],
+          "cognate_ids": []
+        }
+      ]
+    },
+    {
+      "lemma": "בִּקְעָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "b.cr.ac"
+      ],
+      "gloss": "plain, broad valley",
+      "senses": [
+        {
+          "id": "plain",
+          "gloss": "plain, broad valley",
+          "definition": "An open stretch of lower ground, often bounded by hills or mountains.",
+          "evidence": [
+            {
+              "ref": "Gen.11.2",
+              "role": "defining",
+              "note": "The migrants find a plain in Shinar and settle there."
+            },
+            {
+              "ref": "Deu.8.7",
+              "role": "defining",
+              "note": "Valleys and hills are paired as places where springs emerge."
+            },
+            {
+              "ref": "Jos.11.17",
+              "role": "defining",
+              "note": "Baal Gad lies in the valley of Lebanon below Mount Hermon."
+            },
+            {
+              "ref": "Ezk.37.1",
+              "role": "defining",
+              "note": "The spirit sets Ezekiel down in the middle of the valley full of bones."
+            },
+            {
+              "ref": "Isa.40.4",
+              "role": "defining",
+              "note": "Rugged places are to become level expanses."
+            }
+          ],
+          "cognate_ids": [
+            "arc-plain",
+            "ar-ground"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּקְעָא",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "xb.ak.ad"
+      ],
+      "gloss": "plain",
+      "senses": [
+        {
+          "id": "dura",
+          "gloss": "plain",
+          "definition": "A stretch of open ground.",
+          "evidence": [
+            {
+              "ref": "Dan.3.1",
+              "role": "defining",
+              "note": "Nebuchadnezzar erects his gold image on the plain of Dura in the province of Babylon."
+            }
+          ],
+          "cognate_ids": [
+            "arc-plain",
+            "ar-ground"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-split",
+      "lang": "uga",
+      "form": "𐎁𐎖𐎓",
+      "translit": "bqʿ",
+      "gloss": "split apart",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "s.v. bqʿ ‘split’ (compare KTU 1.6 II 32)"
+        }
+      ]
+    },
+    {
+      "id": "arc-split",
+      "lang": "arc",
+      "form": "פְּקַע",
+      "translit": "pəqaʿ",
+      "gloss": "burst, break open",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Q01503, Pesahim 85b"
+        }
+      ]
+    },
+    {
+      "id": "syc-split",
+      "lang": "syc",
+      "form": "ܦܩܥ",
+      "translit": "pqaʿ",
+      "gloss": "burst, split",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "pqʿ V, SyrAhiq 4 281:9 and Am6 373:5"
+        }
+      ]
+    },
+    {
+      "id": "mand-split",
+      "lang": "arc",
+      "form": "pqa",
+      "translit": "pqa",
+      "gloss": "Mandaic break open, split",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "s.v. PQA, DC 435, of mountains splitting"
+        }
+      ]
+    },
+    {
+      "id": "mand-cleft",
+      "lang": "arc",
+      "form": "piqa",
+      "translit": "piqa",
+      "gloss": "Mandaic fissure, split",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "s.v. piqa, MG 102:12"
+        }
+      ]
+    },
+    {
+      "id": "arc-plain",
+      "lang": "arc",
+      "form": "בַּקְעֲתָא",
+      "translit": "baqʿăṯā",
+      "gloss": "plain, valley",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "B01135, Targum Onkelos Gen 11:2"
+        }
+      ]
+    },
+    {
+      "id": "ar-ground",
+      "lang": "ar",
+      "form": "بُقْعَة",
+      "translit": "buqʿa",
+      "gloss": "distinct tract of ground",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 235, n3009"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The verb and the noun for a breach share the idea of an opening. The beka’s value is explicit in Exodus. A stone weight inscribed bqʿ in ancient Hebrew script was reported by the Israel Nature and Parks Authority in 2018 from the Emek Tzurim sifting project. The derivation of the word for a plain from the verb ‘split’ is less secure. Arabic buqʿa names a distinct piece of ground without specifying its elevation."
+}
