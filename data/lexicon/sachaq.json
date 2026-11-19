@@ -1,0 +1,178 @@
+{
+  "id": "sachaq",
+  "root": "שׂחק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "joy",
+    "speech"
+  ],
+  "gloss": "laugh, play, deride",
+  "summary": "Laughter accompanies the joy of restoration and the delight of play. The laughter of Psalm 2 expresses the contempt in which God holds the rulers’ defiance.",
+  "words": [
+    {
+      "lemma": "שָׂחַק",
+      "bdb": [
+        "u.av.aa"
+      ],
+      "pos": "verb",
+      "gloss": "laugh, play, make sport",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "laugh",
+          "senses": [
+            {
+              "gloss": "laugh for joy",
+              "definition": "Weeping has its time, and so does laughter. Those who return to Zion recall how their mouths filled with laughter.",
+              "evidence": [
+                {
+                  "ref": "Ecc.3.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.126.2"
+                }
+              ],
+              "kin": [
+                "laughter"
+              ]
+            },
+            {
+              "gloss": "laugh in derision",
+              "definition": "The one enthroned in heaven laughs at the rulers who challenge him. The next line calls the laughter mockery.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.37.13"
+                },
+                {
+                  "ref": "Hab.1.10"
+                }
+              ],
+              "kin": [
+                "derision"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "play, perform, celebrate",
+          "senses": [
+            {
+              "gloss": "play, perform, celebrate",
+              "definition": "Children play in the streets. Women sing at a celebration, while the Philistines summon Samson to entertain their assembled company.",
+              "evidence": [
+                {
+                  "ref": "Zec.8.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.18.7"
+                },
+                {
+                  "ref": "Jdg.16.25"
+                },
+                {
+                  "ref": "2Sa.6.21"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "ridicule",
+          "senses": [
+            {
+              "gloss": "ridicule",
+              "definition": "The messengers calling Israel to celebrate Passover are met with laughter and mockery.",
+              "evidence": [
+                {
+                  "ref": "2Ch.30.10",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "derision"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׂחֹק",
+      "bdb": [
+        "u.av.ab"
+      ],
+      "pos": "noun",
+      "gloss": "laughter, derision",
+      "senses": [
+        {
+          "gloss": "laughter",
+          "definition": "An audible expression of joy that can also betray foolishness or cover grief.",
+          "evidence": [
+            {
+              "ref": "Psa.126.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.14.13"
+            },
+            {
+              "ref": "Ecc.7.6"
+            }
+          ],
+          "id": "laughter"
+        },
+        {
+          "gloss": "derision",
+          "definition": "Jeremiah becomes a laughingstock when his hearers mock him throughout the day.",
+          "evidence": [
+            {
+              "ref": "Jer.20.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.48.26",
+              "to": "Jer.48.27"
+            }
+          ],
+          "id": "derision"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מִשְׂחַק",
+      "bdb": [
+        "u.av.ad",
+        "m.dr.ao"
+      ],
+      "pos": "noun",
+      "gloss": "object of derision",
+      "senses": [
+        {
+          "gloss": "object of derision",
+          "definition": "The invading people treat rulers as a laughingstock, just as they laugh at fortifications they can capture.",
+          "evidence": [
+            {
+              "ref": "Hab.1.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The name Isaac is explained by laughter using צחק in Genesis 21:6. Its occasional spelling יִשְׂחָק overlaps the verb here, but the name belongs with צחק. Akkadian ṣiāhu, Oracc armep/x000025400, likewise means laugh, though the sound correspondence with this spelling is uncertain. The Syriac root with shin means harass or wear down."
+}
