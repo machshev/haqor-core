@@ -1,0 +1,63 @@
+{
+  "id": "charag",
+  "root": "חרג",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "fear"
+  ],
+  "gloss": "come trembling from shelter",
+  "summary": "The single Hebrew occurrence describes foreigners leaving their strongholds after hearing of the king. In the parallel song a differently ordered verb describes their emergence.",
+  "words": [
+    {
+      "lemma": "חָרַג",
+      "bdb": [
+        "h.fl.aa"
+      ],
+      "pos": "verb",
+      "gloss": "come trembling",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "come trembling from shelter",
+          "senses": [
+            {
+              "gloss": "come trembling from shelter",
+              "definition": "The foreigners lose heart and emerge from their fortified places. The surrounding clauses describe their fear and submission to the victorious king.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.45",
+                  "to": "Psa.18.46",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-kharaja",
+      "lang": "ar",
+      "form": "خَرَجَ",
+      "translit": "ḫaraja",
+      "gloss": "go out, emerge",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 718, n10271, خَرَجَ"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic ḫaraja supports the possibility of outward movement; fear comes from the Hebrew context. With only one biblical use, the relative force of movement and trembling remains uncertain (compare 2Sa.22.46)."
+}
