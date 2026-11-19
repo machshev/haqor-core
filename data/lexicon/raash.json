@@ -1,0 +1,163 @@
+{
+  "id": "raash",
+  "root": "רעש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "earth",
+    "sound",
+    "movement"
+  ],
+  "gloss": "quake, shake, earthquake",
+  "summary": "The word can describe a bodily tremor, a movement of the earth, or the sound of objects set in motion. In Psalm 18 the earth’s shaking accompanies Yahweh’s intervention.",
+  "words": [
+    {
+      "lemma": "רָעַשׁ",
+      "bdb": [
+        "t.du.aa"
+      ],
+      "pos": "verb",
+      "gloss": "shake, quake",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "tremble or quake",
+          "senses": [
+            {
+              "gloss": "tremble or quake",
+              "definition": "The earth quakes and mountain foundations shake when Yahweh comes to deliver. Jeremiah pictures the mountains shaking when he looks out over a devastated land.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.22.8"
+                },
+                {
+                  "ref": "Jer.4.24"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be shaken",
+          "senses": [
+            {
+              "gloss": "be shaken",
+              "definition": "When the news of Babylon’s capture is heard, the earth is shaken.",
+              "evidence": [
+                {
+                  "ref": "Jer.50.46",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to shake",
+          "senses": [
+            {
+              "gloss": "cause to shake",
+              "definition": "Yahweh declares that he will shake heaven and earth, the sea and dry land.",
+              "evidence": [
+                {
+                  "ref": "Hag.2.6",
+                  "to": "Hag.2.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.13.13"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-raisha"
+      ]
+    },
+    {
+      "lemma": "רַעַשׁ",
+      "bdb": [
+        "t.du.ab"
+      ],
+      "pos": "noun",
+      "gloss": "earthquake, shaking, rattling",
+      "senses": [
+        {
+          "gloss": "earthquake",
+          "definition": "Amos dates his prophecy by an earthquake, and Zechariah recalls people fleeing in the earthquake in Uzziah’s days.",
+          "evidence": [
+            {
+              "ref": "Amo.1.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Zec.14.5"
+            },
+            {
+              "ref": "1Ki.19.11",
+              "to": "1Ki.19.12"
+            }
+          ]
+        },
+        {
+          "gloss": "rattling or rumbling",
+          "definition": "In Ezekiel’s vision the bones rattle as they come together. Jeremiah hears the rumble of chariot wheels.",
+          "evidence": [
+            {
+              "ref": "Ezk.37.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.47.3"
+            }
+          ]
+        },
+        {
+          "gloss": "trembling",
+          "definition": "Ezekiel must eat his bread with trembling as a sign to the people.",
+          "evidence": [
+            {
+              "ref": "Ezk.12.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-raisha"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-raisha",
+      "lang": "ar",
+      "form": "رَعِشَ",
+      "translit": "raʿiša",
+      "gloss": "tremble, quiver",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 1106, n15893, with n15894 for causing a tremor"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ",
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic provides a close parallel for trembling. The wider Hebrew uses, including the rumbling of vehicles, are attested directly in the biblical passages."
+}
