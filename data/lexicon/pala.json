@@ -1,0 +1,234 @@
+{
+  "id": "pala",
+  "root": "פלא",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "wonder",
+    "worship"
+  ],
+  "gloss": "be extraordinary, wonder",
+  "summary": "What is extraordinary may lie beyond a person’s ability to accomplish or understand. Psalm 9 uses the feminine plural participle as a noun for the remarkable deeds that the singer will recount.",
+  "words": [
+    {
+      "lemma": "פָּלָא",
+      "bdb": [
+        "q.bk.ac"
+      ],
+      "pos": "verb",
+      "gloss": "be extraordinary, do wonders",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be beyond ordinary expectation or ability",
+          "senses": [
+            {
+              "gloss": "extraordinary deeds",
+              "definition": "The singer promises to recount all Yahweh’s wonders. The psalms recall these deeds as evidence of his power to save.",
+              "evidence": [
+                {
+                  "ref": "Psa.9.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.78.4"
+                },
+                {
+                  "ref": "Psa.105.2"
+                }
+              ],
+              "id": "wonder"
+            },
+            {
+              "gloss": "be beyond someone’s ability",
+              "definition": "The visitor asks Abraham whether anything is too difficult for Yahweh. Deuteronomy describes a judicial case beyond the local judges’ competence.",
+              "evidence": [
+                {
+                  "ref": "Gen.18.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.17.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "do something extraordinary or make a special vow",
+          "senses": [
+            {
+              "gloss": "do something extraordinary or make a special vow",
+              "definition": "Isaiah announces that Yahweh will again act wondrously among the people. A person may undertake a special vow of consecration.",
+              "evidence": [
+                {
+                  "ref": "Isa.29.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.6.2"
+                },
+                {
+                  "ref": "Lev.27.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make or fulfil a special vow",
+          "senses": [
+            {
+              "gloss": "make or fulfil a special vow",
+              "definition": "The worshipper presents an unblemished animal in connection with a vow.",
+              "evidence": [
+                {
+                  "ref": "Lev.22.21",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.15.3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "display extraordinary power",
+          "senses": [
+            {
+              "gloss": "display extraordinary power",
+              "definition": "Job pictures God pursuing him like a lion and again showing extraordinary power against him.",
+              "evidence": [
+                {
+                  "ref": "Job.10.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-pele"
+      ]
+    },
+    {
+      "lemma": "פֶּלֶא",
+      "bdb": [
+        "q.bk.ab"
+      ],
+      "pos": "noun",
+      "gloss": "wonder",
+      "senses": [
+        {
+          "gloss": "wonder",
+          "definition": "The song at the sea asks who is like Yahweh in working wonders. Isaiah praises him for carrying out long-planned deeds of wonder.",
+          "evidence": [
+            {
+              "ref": "Exo.15.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.25.1"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-pele"
+      ]
+    },
+    {
+      "lemma": "פִּלְאִי",
+      "bdb": [
+        "q.bk.ag"
+      ],
+      "pos": "adjective",
+      "gloss": "wonderful, beyond understanding",
+      "senses": [
+        {
+          "gloss": "wonderful, beyond understanding",
+          "definition": "The angel answers Manoah’s request for his name by asking why he asks when the name is wonderful.",
+          "evidence": [
+            {
+              "ref": "Jdg.13.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-pele"
+      ]
+    },
+    {
+      "lemma": "מִפְלָאָה",
+      "bdb": [
+        "q.bk.aj",
+        "m.da.bc"
+      ],
+      "pos": "noun",
+      "gloss": "wondrous work",
+      "senses": [
+        {
+          "gloss": "wondrous work",
+          "definition": "Elihu asks Job about the balancing of the clouds, among the wonders of the one who is perfect in knowledge.",
+          "evidence": [
+            {
+              "ref": "Job.37.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-pele"
+      ]
+    },
+    {
+      "lemma": "פַּלֻּאִי",
+      "bdb": [
+        "q.bk.ae"
+      ],
+      "pos": "adjective",
+      "gloss": "Palluite",
+      "senses": [
+        {
+          "gloss": "Palluite",
+          "definition": "The census names the clan descended from Pallu among the descendants of Reuben.",
+          "evidence": [
+            {
+              "ref": "Num.26.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-pele",
+      "lang": "arc",
+      "form": "פֶּלֶא",
+      "translit": "peleʾ",
+      "gloss": "wonder",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "פֶּלֶא, plural פִּלְאִין, Targum Yerushalmi Exodus 8:18"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The vow formula can refer to expressly undertaking a vow or to carrying it out with an offering. Its precise force depends on the surrounding instructions."
+}
