@@ -1,0 +1,83 @@
+{
+  "id": "naatsuts",
+  "created": "2026-11-19",
+  "root": "נעצ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "thornbush",
+  "summary": "Isaiah includes thornbushes among the places where the fly and the bee will settle. Later he pictures the cypress growing where the thornbush once stood.",
+  "words": [
+    {
+      "lemma": "נַעֲצוּץ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "n.ef.ab"
+      ],
+      "gloss": "thornbush",
+      "senses": [
+        {
+          "id": "plant",
+          "gloss": "thornbush",
+          "definition": "A prickly bush growing in the open country.",
+          "evidence": [
+            {
+              "ref": "Isa.7.19",
+              "role": "defining",
+              "note": "The insects called from Egypt and Assyria settle among the thornbushes as well as in ravines and rock clefts."
+            },
+            {
+              "ref": "Isa.55.13",
+              "role": "defining",
+              "note": "The cypress replaces the thornbush, just as the myrtle replaces the sirpād."
+            }
+          ],
+          "cognate_ids": [
+            "arc-insert",
+            "sureth-sting"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-insert",
+      "lang": "arc",
+      "form": "נְעַץ",
+      "translit": "nəʿaṣ",
+      "gloss": "stick in, pierce",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ",
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "N01003, Targum Deuteronomy 15:17 and Genesis 30:38"
+        }
+      ]
+    },
+    {
+      "id": "sureth-sting",
+      "lang": "sem",
+      "form": "ܢܥܵܨܵܐ",
+      "translit": "nʿāṣā",
+      "gloss": "Sureth sting, prick painfully",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ",
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "sureth-dictionary",
+          "locator": "entry 9218, nʿāṣā, including the prick of a plant"
+        }
+      ]
+    }
+  ],
+  "note": "The repeated final ṣ may form a plant name from a verb meaning ‘stick in’ or ‘prick’. The Aramaic verbs support that possibility, though neither identifies a particular shrub."
+}

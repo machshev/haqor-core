@@ -1,0 +1,61 @@
+{
+  "id": "sirpad",
+  "created": "2026-11-19",
+  "root": "סרפד",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "brier or nettle",
+  "summary": "In Isaiah’s picture of the land’s renewal, a myrtle grows where the sirpād stood. The parallel line pictures the same change from thornbush to cypress.",
+  "words": [
+    {
+      "lemma": "סִרְפָּד",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "o.cn.ah"
+      ],
+      "gloss": "brier or nettle",
+      "senses": [
+        {
+          "id": "plant",
+          "gloss": "brier or nettle",
+          "definition": "An undesirable plant displaced by the myrtle.",
+          "evidence": [
+            {
+              "ref": "Isa.55.13",
+              "role": "defining",
+              "note": "The myrtle replaces the sirpād as part of an enduring sign for Yahweh."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "egy-lotus",
+      "lang": "egy",
+      "form": "sꜣp.t",
+      "translit": "sꜣpt",
+      "gloss": "lotus leaf",
+      "relation": "loan",
+      "note": "Proposed earlier Egyptian source of the Semitic plant name. The difference in plant meanings leaves the identification uncertain.",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla126740, Wb 4, 18.5–7"
+        },
+        {
+          "source": "kilani-2019",
+          "locator": "Catalogue I.17, lotus, discussion of the two directions of borrowing"
+        },
+        {
+          "source": "coptic-lexicon",
+          "locator": "C3721, ⲥⲁⲣⲡⲟⲧ, CD 356b"
+        }
+      ]
+    }
+  ],
+  "note": "The verse establishes the contrast with myrtle but gives no botanical description. Kilani proposes that a Middle Egyptian lotus name entered Semitic and was later borrowed back into Egyptian. Coptic ⲥⲁⲣⲡⲟⲧ means ‘lotus’. Neither that meaning nor the traditional rendering ‘nettle’ settles the species in Isaiah."
+}
