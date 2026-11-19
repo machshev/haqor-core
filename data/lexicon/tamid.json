@@ -1,0 +1,91 @@
+{
+  "id": "tamid",
+  "root": "מוד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "time",
+    "worship"
+  ],
+  "gloss": "continually, regularly",
+  "summary": "The context determines whether continuity means uninterrupted action or an established practice that recurs at appointed times. Psalm 16 describes the speaker’s constant attention to Yahweh.",
+  "words": [
+    {
+      "lemma": "תָּמִיד",
+      "bdb": [
+        "m.au.ab"
+      ],
+      "pos": "noun",
+      "gloss": "continuity, continually, regular offering",
+      "senses": [
+        {
+          "gloss": "continually or at all times",
+          "definition": "The speaker keeps Yahweh before him continually. The altar fire must be maintained without going out.",
+          "evidence": [
+            {
+              "ref": "Psa.16.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.6.6"
+            },
+            {
+              "ref": "Psa.34.2"
+            }
+          ]
+        },
+        {
+          "gloss": "at regular recurring times",
+          "definition": "The bread is set before God continually by being renewed each Sabbath. The regular burnt offering consists of a lamb offered each morning and another at twilight.",
+          "evidence": [
+            {
+              "ref": "Exo.25.30",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.24.8"
+            },
+            {
+              "ref": "Num.28.3",
+              "to": "Num.28.4"
+            }
+          ]
+        },
+        {
+          "gloss": "the regular offering",
+          "definition": "Daniel describes the taking away of the regular offering. Here the word stands on its own for the established service.",
+          "evidence": [
+            {
+              "ref": "Dan.8.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.12.11"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-madda",
+      "lang": "ar",
+      "form": "مَدَّ",
+      "translit": "madda",
+      "gloss": "stretch or prolong",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2695, مَدَّهُ, including prolonging the voice"
+        }
+      ],
+      "note": "The Arabic supplies a comparison for extension in time. A historical derivation of the Hebrew noun remains uncertain."
+    }
+  ],
+  "doctrine": [],
+  "note": "The lexicon indexes this noun under מוד. Its historical derivation is uncertain. Habakkuk 3:6 has a disputed verbal form and cannot independently establish the origin of תָּמִיד."
+}
