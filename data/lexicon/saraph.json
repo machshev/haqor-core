@@ -1,0 +1,1116 @@
+{
+  "id": "saraph",
+  "root": "שׂרפ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "fire",
+    "burning",
+    "destruction",
+    "judgment",
+    "sin-offering",
+    "idolatry",
+    "burial",
+    "serpent",
+    "seraphim",
+    "wilderness"
+  ],
+  "gloss": "burn (with fire), burn up; a burning; burning one (serpent, seraph)",
+  "summary": "To burn a thing with fire so that it is consumed: cities, chariots, idols, a scroll, the condemned, and the sin offering's carcass carried outside the camp. The verb is never used of burning an offering on the altar (that is הִקְטִיר); what is שָׂרַף is destroyed, disposed of, or put away. The nouns שְׂרֵפָה and מִשְׂרָפָה are the burning itself and what is left of it, including the great burning of spices made at a king's burial. שָׂרָף “burning one” names the serpents that bit Israel in the wilderness, and the six-winged ones Isaiah saw above the throne, one of whom took a burning coal from the altar to his lips. Akkadian šarāpu, Ugaritic šrp and Jewish Aramaic שְׂרַף all mean “burn”.",
+  "words": [
+    {
+      "lemma": "שָׂרַף",
+      "pos": "verb",
+      "gloss": "burn (with fire), burn up; be burned",
+      "bdb": [
+        "u.cj.aa"
+      ],
+      "cognate_ids": [
+        "akk-sarapu",
+        "uga-srp",
+        "arc-sraph"
+      ],
+      "summary": "About 117 times, nearly all qal and niphal, and usually with בָּאֵשׁ “with fire”. What is burned is destroyed or disposed of: the verb is never used of the offerings Yahweh accepts on the altar, which go up in smoke (הִקְטִיר).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "burn with fire, burn up; bake (bricks)",
+          "senses": [
+            {
+              "id": "burn-destroy",
+              "gloss": "burn up, destroy by fire",
+              "definition": "To set a thing on fire so that it is consumed: a captured city, houses, chariots, a scroll, a vine; what is burned is gone.",
+              "evidence": [
+                {
+                  "ref": "Jos.6.24",
+                  "role": "defining",
+                  "note": "“The city they burned with fire, and all that was in it.”"
+                },
+                {
+                  "ref": "Jos.11.6",
+                  "role": "defining",
+                  "note": "“Hamstring their horses, and their chariots תִּשְׂרֹף בָּאֵשׁ.”"
+                },
+                {
+                  "ref": "Jos.11.9"
+                },
+                {
+                  "ref": "Jos.11.11",
+                  "note": "Hazor alone of the northern cities he burned with fire (11:13)."
+                },
+                {
+                  "ref": "Jos.11.13"
+                },
+                {
+                  "ref": "Jos.8.28",
+                  "note": "“Joshua burned Ai and made it a mound for ever, a desolation.”"
+                },
+                {
+                  "ref": "Jdg.18.27"
+                },
+                {
+                  "ref": "1Sa.30.1",
+                  "note": "The Amalekites struck Ziklag “and burned it with fire”."
+                },
+                {
+                  "ref": "2Ki.25.9",
+                  "role": "defining",
+                  "note": "Nebuzaradan “burned the house of Yahweh and the house of the king and all the houses of Jerusalem; every great house he burned with fire”."
+                },
+                {
+                  "ref": "2Ch.36.19"
+                },
+                {
+                  "ref": "Jer.21.10",
+                  "note": "“It will be given into the hand of the king of Babylon, and he will burn it with fire.”"
+                },
+                {
+                  "ref": "Jer.38.17",
+                  "note": "The promise to Zedekiah if he surrenders: “this city will not be burned with fire”."
+                },
+                {
+                  "ref": "Jer.38.18"
+                },
+                {
+                  "ref": "Jer.39.8"
+                },
+                {
+                  "ref": "Jer.52.13"
+                },
+                {
+                  "ref": "Isa.1.7",
+                  "note": "“Your cities burned with fire, your land, strangers devour it.”"
+                },
+                {
+                  "ref": "Psa.46.10",
+                  "role": "defining",
+                  "note": "“He makes wars cease to the end of the earth … the wagons יִשְׂרֹף בָּאֵשׁ.”"
+                },
+                {
+                  "ref": "Psa.74.8",
+                  "note": "The enemy “burned all the meeting places of God in the land”."
+                },
+                {
+                  "ref": "Psa.80.17",
+                  "note": "The vine of Israel “burned with fire, cut down”."
+                },
+                {
+                  "ref": "Jer.36.27",
+                  "role": "defining",
+                  "note": "“After the king had burned the scroll”: Jehoiakim cut it and threw it into the fire of the brazier “until all the scroll was consumed” (36:23)."
+                },
+                {
+                  "ref": "Jer.36.29"
+                },
+                {
+                  "ref": "Jer.36.32",
+                  "note": "Jeremiah wrote another scroll with “all the words of the book which Jehoiakim … had burned in the fire”, and many like words were added."
+                },
+                {
+                  "ref": "Lev.13.52",
+                  "note": "A garment with a spreading plague: “he shall burn the garment … it shall be burned with fire”."
+                },
+                {
+                  "ref": "Jdg.12.1",
+                  "note": "The men of Ephraim to Jephthah: “we will burn your house over you with fire”."
+                },
+                {
+                  "ref": "Jer.51.32"
+                },
+                {
+                  "ref": "Isa.47.14",
+                  "note": "The astrologers of Babylon “are as stubble; fire burns them”."
+                }
+              ]
+            },
+            {
+              "id": "burn-idols",
+              "gloss": "burn (idols and their things)",
+              "definition": "To burn an idol, an Asherah, the calf or the things of false worship, as the law commanded, so that nothing of it is left to be worshipped.",
+              "evidence": [
+                {
+                  "ref": "Deu.7.5",
+                  "role": "defining",
+                  "note": "“Their Asherim you shall hew down, and their carved images תִּשְׂרְפוּן בָּאֵשׁ.”"
+                },
+                {
+                  "ref": "Deu.7.25",
+                  "note": "“The carved images of their gods you shall burn with fire; do not covet the silver or gold on them.”"
+                },
+                {
+                  "ref": "Deu.12.3"
+                },
+                {
+                  "ref": "Exo.32.20",
+                  "role": "defining",
+                  "note": "Moses took the calf “and burned it with fire, and ground it until it was fine”, and made Israel drink it."
+                },
+                {
+                  "ref": "Deu.9.21",
+                  "note": "“Your sin, the calf … I burned it with fire and crushed it … until it was fine as dust.”"
+                },
+                {
+                  "ref": "2Ki.10.26",
+                  "note": "Jehu's men brought out the pillars of the house of Baal and burned them."
+                },
+                {
+                  "ref": "1Ki.15.13",
+                  "note": "Asa cut down his mother's image “and burned it at the wadi Kidron”."
+                },
+                {
+                  "ref": "2Ch.15.16"
+                },
+                {
+                  "ref": "2Ki.23.4",
+                  "note": "Josiah burned the vessels made for Baal and Asherah outside Jerusalem."
+                },
+                {
+                  "ref": "2Ki.23.6",
+                  "role": "defining",
+                  "note": "He brought the Asherah out of the house of Yahweh, “burned it at the wadi Kidron and beat it to dust”."
+                },
+                {
+                  "ref": "2Ki.23.11",
+                  "note": "“The chariots of the sun he burned with fire.”"
+                },
+                {
+                  "ref": "2Ki.23.15"
+                },
+                {
+                  "ref": "1Ch.14.12",
+                  "note": "The Philistines left their gods, “and David commanded, and they were burned with fire”."
+                },
+                {
+                  "ref": "Jer.43.12",
+                  "note": "Nebuchadnezzar will burn the houses of the gods of Egypt."
+                },
+                {
+                  "ref": "Jer.43.13"
+                },
+                {
+                  "ref": "Mic.1.7",
+                  "note": "“All her wages shall be burned with fire, and all her idols I will make a desolation.”"
+                }
+              ]
+            },
+            {
+              "id": "burn-outside-camp",
+              "gloss": "burn (the sin offering's remains) outside the camp",
+              "definition": "In the law of offerings: to burn up what is not to be eaten or put on the altar: the carcass, skin and dung of the sin offering whose blood was taken into the holy place, carried outside the camp to a clean place; the red heifer; and what is left of a sacrifice past its time.",
+              "evidence": [
+                {
+                  "ref": "Lev.4.12",
+                  "role": "defining",
+                  "note": "“He shall carry all the bull outside the camp to a clean place, to the ash heap, וְשָׂרַף אֹתוֹ on wood with fire.”"
+                },
+                {
+                  "ref": "Lev.4.21"
+                },
+                {
+                  "ref": "Lev.16.27",
+                  "role": "defining",
+                  "note": "The bull and goat of the Day of Atonement, “whose blood was brought in to make atonement in the holy place, shall be carried outside the camp, and they shall burn with fire their skins, their flesh and their dung”."
+                },
+                {
+                  "ref": "Lev.16.28"
+                },
+                {
+                  "ref": "Exo.29.14",
+                  "note": "“The flesh of the bull … you shall burn with fire outside the camp; it is a sin offering.”"
+                },
+                {
+                  "ref": "Lev.8.17"
+                },
+                {
+                  "ref": "Lev.9.11"
+                },
+                {
+                  "ref": "Exo.29.34",
+                  "note": "What remains of the ordination flesh until morning “you shall burn with fire; it shall not be eaten, for it is holy”."
+                },
+                {
+                  "ref": "Lev.8.32"
+                },
+                {
+                  "ref": "Exo.12.10",
+                  "role": "defining",
+                  "note": "The Passover: “leave nothing of it until morning; what remains until morning, burn with fire”."
+                },
+                {
+                  "ref": "Num.19.5",
+                  "role": "defining",
+                  "note": "The red heifer is burned whole before the priest's eyes, “its skin, its flesh and its blood, with its dung”."
+                },
+                {
+                  "ref": "Num.19.8"
+                },
+                {
+                  "ref": "Ezk.43.21",
+                  "note": "In the house Ezekiel saw: “the bull of the sin offering … he shall burn it in the appointed place of the house, outside the sanctuary”."
+                },
+                {
+                  "ref": "Heb.13.11",
+                  "note": "“The bodies of those beasts whose blood is brought into the holy place by the high priest for sin κατακαίεται outside the camp”: Lev 16:27."
+                }
+              ]
+            },
+            {
+              "id": "burn-punishment",
+              "gloss": "burn (a person) as a penalty",
+              "definition": "To put to death by fire, or burn the body of one put to death: a penalty in the law for the gravest uncleanness and for taking what was devoted; also the vengeance of enemies.",
+              "evidence": [
+                {
+                  "ref": "Lev.20.14",
+                  "role": "defining",
+                  "note": "“A man who takes a woman and her mother, it is wickedness: בָּאֵשׁ יִשְׂרְפוּ אֹתוֹ וְאֶתְהֶן.”"
+                },
+                {
+                  "ref": "Jos.7.25",
+                  "role": "defining",
+                  "note": "Achan: “all Israel stoned him with stones, and burned them with fire, and stoned them with stones”."
+                },
+                {
+                  "ref": "Jdg.15.6",
+                  "note": "The Philistines “burned her and her father with fire”, Samson's wife."
+                },
+                {
+                  "ref": "Jdg.14.15",
+                  "note": "The threat that led to it: “lest we burn you and your father's house with fire”."
+                }
+              ]
+            },
+            {
+              "id": "burn-children",
+              "gloss": "burn (sons and daughters) in fire",
+              "definition": "The nations' worship that Israel copied: to burn their own children in the fire to their gods; Yahweh says he never commanded it, nor did it come into his heart.",
+              "evidence": [
+                {
+                  "ref": "Deu.12.31",
+                  "role": "defining",
+                  "note": "“Every abomination to Yahweh which he hates they have done for their gods, for even their sons and their daughters יִשְׂרְפוּ בָאֵשׁ to their gods.”"
+                },
+                {
+                  "ref": "Jer.7.31",
+                  "role": "defining",
+                  "note": "The high places of Topheth in the valley of the son of Hinnom, “to burn their sons and their daughters in the fire, which I did not command, nor did it come into my heart”."
+                },
+                {
+                  "ref": "Jer.19.5",
+                  "note": "“To burn their sons in the fire as burnt offerings to Baal, which I did not command or speak, nor did it come into my heart.”"
+                },
+                {
+                  "ref": "2Ki.17.31",
+                  "note": "The Sepharvites, settled in Samaria, “burned their children in the fire to Adrammelech and Anammelech”."
+                }
+              ]
+            },
+            {
+              "id": "burn-bones",
+              "gloss": "burn (bones, a body)",
+              "definition": "To burn the bones of the dead: on the altars of false worship to defile them, as the man of God foretold; or a king's bones in contempt; once, Saul's body by the men of Jabesh.",
+              "evidence": [
+                {
+                  "ref": "1Ki.13.2",
+                  "role": "defining",
+                  "note": "“O altar, altar … a son shall be born to the house of David, Josiah by name, and on you he shall sacrifice the priests of the high places … and men's bones יִשְׂרְפוּ עָלֶיךָ.”"
+                },
+                {
+                  "ref": "2Ki.23.16",
+                  "role": "defining",
+                  "note": "Josiah took the bones out of the tombs “and burned them on the altar and defiled it, according to the word of Yahweh which the man of God proclaimed”."
+                },
+                {
+                  "ref": "2Ki.23.20"
+                },
+                {
+                  "ref": "2Ch.34.5"
+                },
+                {
+                  "ref": "Amo.2.1",
+                  "role": "defining",
+                  "note": "Moab's transgression: “because he burned the bones of the king of Edom to lime (לַשִּׂיד)”."
+                },
+                {
+                  "ref": "1Sa.31.12",
+                  "note": "The men of Jabesh took the bodies of Saul and his sons from the wall of Beth-shan “and burned them there”, and buried the bones (31:13)."
+                }
+              ]
+            },
+            {
+              "id": "burn-at-burial",
+              "gloss": "make a burning (at a king's burial)",
+              "definition": "With the noun שְׂרֵפָה or מִשְׂרָפָה: to make a great burning in honour of a dead king, laid on a bed filled with spices; not the burning of the body, which was buried.",
+              "evidence": [
+                {
+                  "ref": "2Ch.16.14",
+                  "role": "defining",
+                  "note": "Asa was buried in his tomb, laid on a bed filled with spices, “וַיִּשְׂרְפוּ־לוֹ שְׂרֵפָה גְּדוֹלָה עַד־לִמְאֹד”."
+                },
+                {
+                  "ref": "Jer.34.5",
+                  "role": "defining",
+                  "note": "To Zedekiah: “you shall die in peace, and as the burnings of your fathers, the former kings … so they shall burn for you, and lament for you, Alas, lord!”"
+                }
+              ],
+              "kin": [
+                "funeral-burning"
+              ]
+            },
+            {
+              "id": "burn-fuel",
+              "gloss": "burn (wood) as fuel; bake (bricks)",
+              "definition": "To burn wood in a fire for warmth and cooking; with the noun, to fire bricks hard.",
+              "evidence": [
+                {
+                  "ref": "Isa.44.16",
+                  "role": "defining",
+                  "note": "“Half of it he burns in the fire; over half he eats flesh … and the rest he makes into a god.”"
+                },
+                {
+                  "ref": "Isa.44.19",
+                  "note": "“Half of it I burned in the fire … and shall I make the rest an abomination?”"
+                },
+                {
+                  "ref": "Gen.11.3",
+                  "role": "defining",
+                  "note": "At Babel: “Come, let us make bricks, וְנִשְׂרְפָה לִשְׂרֵפָה”: burn them thoroughly, and the brick was to them for stone."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be burned (up)",
+          "senses": [
+            {
+              "gloss": "be burned with fire",
+              "definition": "The passive of the qal: of what is to be destroyed (sacrificial flesh left over or made unclean, a plagued garment), of one condemned to burning, and of clothes that cannot escape the fire carried in the bosom.",
+              "evidence": [
+                {
+                  "ref": "Lev.7.17",
+                  "role": "defining",
+                  "note": "“What remains of the flesh of the sacrifice on the third day בָּאֵשׁ יִשָּׂרֵף.”"
+                },
+                {
+                  "ref": "Lev.7.19"
+                },
+                {
+                  "ref": "Lev.6.23",
+                  "note": "The sin offering whose blood is brought into the tent “shall not be eaten; it shall be burned with fire”."
+                },
+                {
+                  "ref": "Lev.4.12"
+                },
+                {
+                  "ref": "Lev.19.6"
+                },
+                {
+                  "ref": "Lev.13.52"
+                },
+                {
+                  "ref": "Gen.38.24",
+                  "role": "defining",
+                  "note": "Judah, of Tamar: “Bring her out, וְתִשָּׂרֵף.”"
+                },
+                {
+                  "ref": "Lev.21.9",
+                  "note": "A priest's daughter who profanes herself by harlotry “shall be burned with fire”."
+                },
+                {
+                  "ref": "Jos.7.15",
+                  "note": "“He who is taken with the devoted thing shall be burned with fire, he and all he has, because he transgressed the covenant of Yahweh.”"
+                },
+                {
+                  "ref": "2Sa.23.7",
+                  "note": "The worthless are like thorns: “with fire they shall be utterly burned in their place”."
+                },
+                {
+                  "ref": "Jer.38.17"
+                },
+                {
+                  "ref": "Mic.1.7"
+                },
+                {
+                  "ref": "1Ch.14.12"
+                },
+                {
+                  "ref": "Pro.6.27",
+                  "role": "defining",
+                  "note": "“Can a man take fire in his bosom and his clothes not be burned?”, of going in to a neighbour's wife."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "one who burns (for the dead)",
+          "senses": [
+            {
+              "gloss": "the one who burns (him)",
+              "definition": "Once, the participle מְסָרְפוֹ, written with ס: in a house where all have died, the one who comes with the kinsman to carry out the bones. Whether he burns the bodies or burns spices for the dead the verse does not say.",
+              "evidence": [
+                {
+                  "ref": "Amo.6.10",
+                  "role": "defining",
+                  "note": "“His kinsman וּמְסָרְפוֹ shall lift him up to bring the bones out of the house … Hush! for we must not make mention of the name of Yahweh.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be burned up",
+          "senses": [
+            {
+              "gloss": "be burned up (and gone)",
+              "definition": "Once: the goat of the sin offering, which should have been eaten in the holy place, had been burned instead.",
+              "evidence": [
+                {
+                  "ref": "Lev.10.16",
+                  "role": "defining",
+                  "note": "“Moses diligently sought the goat of the sin offering, and behold, שֹׂרָף”; he was angry that the priests had not eaten it (10:17–18)."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κατακαίω",
+          "gloss": "burn up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שָׂרַף → κατακαίω ×38 (MACULA alignment); Lev.16.27, שָׂרְפוּ → κατακαύσουσιν"
+            },
+            {
+              "ref": "Heb.13.11",
+              "note": "The bodies of the beasts whose blood is brought into the holy place “are burned outside the camp”: Lev 16:27."
+            },
+            {
+              "ref": "Mat.13.30",
+              "note": "“Gather the tares and bind them in bundles to burn them.”"
+            },
+            {
+              "ref": "Mat.3.12",
+              "note": "“The chaff he will burn with unquenchable fire.”"
+            },
+            {
+              "ref": "Act.19.19",
+              "note": "Those who practised magic brought their books together “and burned them before all”."
+            },
+            {
+              "ref": "Rev.18.8",
+              "note": "Babylon “shall be utterly burned with fire, for strong is the Lord God who judges her”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐμπρήθω",
+          "gloss": "set on fire, burn (a city)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שָׂרַף → ἐμπρήθω ×9 (MACULA alignment)"
+            },
+            {
+              "ref": "Mat.22.7",
+              "note": "The king “sent his armies, destroyed those murderers, and burned up their city”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָטַר",
+            "note": "Not a parallel but the contrast that defines the verb's use in the law: the fat and the parts on the altar are made to go up in smoke (הִקְטִיר), the carcass of the same sin offering is burned (שָׂרַף) outside the camp.",
+            "evidence": [
+              {
+                "ref": "Lev.4.10"
+              },
+              {
+                "ref": "Lev.4.12"
+              },
+              {
+                "ref": "Lev.4.19"
+              },
+              {
+                "ref": "Lev.4.21"
+              }
+            ]
+          },
+          {
+            "lemma": "גָּדַע",
+            "note": "Hewing down the Asherim beside burning the images.",
+            "evidence": [
+              {
+                "ref": "Deu.7.5"
+              },
+              {
+                "ref": "Deu.12.3"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "שָׂרַף בָּאֵשׁ",
+            "gloss": "burn with fire",
+            "evidence": [
+              {
+                "ref": "Jos.11.6"
+              },
+              {
+                "ref": "Deu.7.25"
+              },
+              {
+                "ref": "Lev.16.27"
+              },
+              {
+                "ref": "2Ki.25.9"
+              }
+            ]
+          },
+          {
+            "phrase": "מִחוּץ לַמַּחֲנֶה",
+            "gloss": "outside the camp (the place of the burning)",
+            "evidence": [
+              {
+                "ref": "Exo.29.14"
+              },
+              {
+                "ref": "Lev.4.12"
+              },
+              {
+                "ref": "Lev.9.11"
+              },
+              {
+                "ref": "Lev.16.27"
+              },
+              {
+                "ref": "Heb.13.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׂרֵפָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "burning, fire; what is burned",
+      "bdb": [
+        "u.cj.ae"
+      ],
+      "cognate_ids": [
+        "akk-suruptu",
+        "arc-sraph"
+      ],
+      "summary": "The verbal noun, thirteen times: the act of burning, a fire that destroys, and what is left of what was burned.",
+      "senses": [
+        {
+          "id": "a-burning",
+          "gloss": "a burning, a fire",
+          "definition": "A burning, often a fire Yahweh sends in judgment: the fire that consumed Nadab and Abihu and the two hundred and fifty, the burning of the land like Sodom, and what is given up to be fuel for fire.",
+          "evidence": [
+            {
+              "ref": "Lev.10.6",
+              "role": "defining",
+              "note": "“Your brothers, the whole house of Israel, shall weep for הַשְּׂרֵפָה אֲשֶׁר שָׂרַף יַהְוֶה”: Nadab and Abihu, consumed by fire from before Yahweh (10:2)."
+            },
+            {
+              "ref": "Num.17.2",
+              "role": "defining",
+              "note": "Eleazar is to take up the censers “from the midst of the burning”: the fire that consumed the two hundred and fifty (Num 16:35)."
+            },
+            {
+              "ref": "Num.17.4",
+              "note": "The censers “which those who were burned (הַשְּׂרֻפִים) had offered” were beaten into a covering for the altar."
+            },
+            {
+              "ref": "Deu.29.22",
+              "role": "defining",
+              "note": "“Brimstone and salt, a burning, all its land, not sown … like the overthrow of Sodom and Gomorrah.”"
+            },
+            {
+              "ref": "Amo.4.11",
+              "role": "defining",
+              "note": "“I overthrew some of you as God overthrew Sodom and Gomorrah, and you were like a brand plucked from the burning, yet you did not return to me.”"
+            },
+            {
+              "ref": "Isa.9.4",
+              "note": "The warrior's boot and the garment rolled in blood “shall be for burning, fuel for fire”, when the child is born (9:5)."
+            },
+            {
+              "ref": "Isa.64.10",
+              "note": "“Our holy and beautiful house, where our fathers praised you, has become a burning of fire.”"
+            },
+            {
+              "ref": "Jer.51.25",
+              "note": "To Babylon: “I will … make you a burnt mountain (הַר שְׂרֵפָה).”"
+            },
+            {
+              "ref": "Gen.11.3",
+              "note": "With the verb: bricks fired hard."
+            }
+          ],
+          "kin": [
+            "burn-destroy"
+          ]
+        },
+        {
+          "id": "ash-of-burning",
+          "gloss": "the burning (and its ash)",
+          "definition": "What is left of a burning: the ash of the red heifer, the sin offering, kept for the water of cleansing.",
+          "evidence": [
+            {
+              "ref": "Num.19.17",
+              "role": "defining",
+              "note": "“For the unclean they shall take מֵעֲפַר שְׂרֵפַת הַחַטָּאת and put living water on it in a vessel.”"
+            },
+            {
+              "ref": "Num.19.6",
+              "note": "Cedar, hyssop and scarlet are cast “into the midst of the burning of the heifer”."
+            },
+            {
+              "ref": "Heb.9.13",
+              "note": "“The ashes of a heifer sprinkling the unclean sanctifies to the purifying of the flesh”: how much more the blood of Christ (9:14)."
+            }
+          ],
+          "kin": [
+            "burn-outside-camp"
+          ]
+        },
+        {
+          "id": "funeral-burning",
+          "gloss": "burning (at a king's burial)",
+          "definition": "The great burning made in honour of a dead king, of spices, not of the body; withheld from Jehoram, whom his people did not honour.",
+          "evidence": [
+            {
+              "ref": "2Ch.16.14",
+              "role": "defining",
+              "note": "Asa on his bed of spices: “they made a very great burning for him”."
+            },
+            {
+              "ref": "2Ch.21.19",
+              "role": "defining",
+              "note": "Jehoram died of his disease, “and his people made no burning for him like the burning of his fathers”, and he departed with no one's regret (21:20)."
+            }
+          ],
+          "kin": [
+            "burn-at-burial"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πῦρ",
+          "gloss": "fire",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שְׂרֵפָה → πῦρ ×2; ἐκφορά ×3 (MACULA alignment)"
+            },
+            {
+              "ref": "Jud.1.23",
+              "note": "“Save others with fear, pulling them out of the fire”: the brand plucked from the burning of Amo 4:11 and Zec 3:2."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׂרָף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "burning one: a burning serpent; a seraph",
+      "bdb": [
+        "u.cj.ab"
+      ],
+      "summary": "A noun of the verb's form, “burning one”, seven times: five of serpents, twice of the beings Isaiah saw above the throne. Scripture does not say why either is called burning; the name is tied to the root by its spelling, and in Isaiah 6 by the coal of fire one of them carries. The serpent is a נָחָשׁ (Num 21:6, 9; Deu 8:15), and Isaiah's “flying saraph” (Isa 14:29; 30:6) shares the flying of the seraphim (Isa 6:2). No cognate in another language names a serpent or seraph from this root; the evidence table counts the root's cognates against it but for its kin sense in the verb.",
+      "senses": [
+        {
+          "id": "burning-serpent",
+          "gloss": "burning serpent",
+          "definition": "A venomous snake of the wilderness and the south, whose bite killed: the serpents Yahweh sent among Israel, and the image of one Moses set on a pole; in Isaiah, a “flying saraph” among the creatures of the Negev and as the fruit of a serpent's root.",
+          "evidence": [
+            {
+              "ref": "Num.21.6",
+              "role": "defining",
+              "note": "“Yahweh sent among the people הַנְּחָשִׁים הַשְּׂרָפִים, and they bit the people, and many people of Israel died.”"
+            },
+            {
+              "ref": "Num.21.8",
+              "role": "defining",
+              "note": "“Make for yourself a שָׂרָף and set it on a pole; everyone who is bitten, when he sees it, shall live.” Moses made a נְחַשׁ נְחֹשֶׁת (21:9)."
+            },
+            {
+              "ref": "Deu.8.15",
+              "role": "defining",
+              "note": "“The great and terrible wilderness, נָחָשׁ שָׂרָף and scorpion, and thirsty ground where there was no water.”"
+            },
+            {
+              "ref": "Isa.14.29",
+              "note": "To Philistia: “from the serpent's root will come out an adder, and its fruit will be שָׂרָף מְעוֹפֵף”."
+            },
+            {
+              "ref": "Isa.30.6",
+              "note": "“The land of trouble and anguish, of lioness and lion, viper and flying saraph”, through which Judah's envoys carried their treasure to Egypt."
+            },
+            {
+              "ref": "Jhn.3.14",
+              "note": "“As Moses lifted up the serpent in the wilderness, so must the Son of man be lifted up.”"
+            },
+            {
+              "ref": "1Co.10.9",
+              "note": "“Nor let us tempt Christ, as some of them tempted, and were destroyed by the serpents”: Num 21:6."
+            }
+          ],
+          "kin": [
+            "burn-destroy"
+          ]
+        },
+        {
+          "id": "seraphim",
+          "gloss": "seraph, “burning one” (Isaiah's vision)",
+          "definition": "The beings Isaiah saw in his vision of Adonai on a high throne: they stood above him, each with six wings, covering face and feet and flying; they cried to one another “Holy, holy, holy is Yahweh of armies; the fullness of all the earth is his glory”; and one flew with a burning coal taken from the altar, touched the prophet's lips, and declared his iniquity taken away. The text names them only here and says no more of what they are.",
+          "evidence": [
+            {
+              "ref": "Isa.6.2",
+              "role": "defining",
+              "note": "“שְׂרָפִים stood above him; six wings each: with two he covered his face, with two he covered his feet, and with two he flew.”"
+            },
+            {
+              "ref": "Isa.6.3",
+              "note": "“One called to another, Holy, holy, holy is Yahweh of armies; the fullness of all the earth is his glory.”"
+            },
+            {
+              "ref": "Isa.6.6",
+              "role": "defining",
+              "note": "“One of הַשְּׂרָפִים flew to me, and in his hand a burning coal (רִצְפָּה) which he had taken with tongs from the altar.”"
+            },
+            {
+              "ref": "Isa.6.7",
+              "role": "defining",
+              "note": "“He touched my mouth and said, Behold, this has touched your lips; your iniquity is taken away and your sin covered (תְּכֻפָּר).”"
+            },
+            {
+              "ref": "Rev.4.8",
+              "note": "The four living creatures, “each with six wings”, say day and night “Holy, holy, holy, Lord God Almighty”: Isa 6:2–3."
+            },
+            {
+              "ref": "Jhn.12.41",
+              "note": "After quoting Isa 6:10: “These things Isaiah said when he saw his glory and spoke of him.”"
+            }
+          ],
+          "kin": [
+            "burn-destroy"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὄφις",
+          "gloss": "serpent",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "שָׂרָף → ὄφις ×2, δάκνω ×1, θανατοῦντας ×1 (MACULA alignment); Num.21.8, שָׂרָף → ὄφιν; Isa.14.29, שָׂרָף → ὄφεις"
+            },
+            {
+              "ref": "Jhn.3.14"
+            },
+            {
+              "ref": "1Co.10.9"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָחָשׁ",
+            "note": "The serpent itself: the saraph is a kind of נָחָשׁ, or the נָחָשׁ described as burning.",
+            "evidence": [
+              {
+                "ref": "Num.21.6"
+              },
+              {
+                "ref": "Num.21.9"
+              },
+              {
+                "ref": "Deu.8.15"
+              },
+              {
+                "ref": "Isa.14.29"
+              }
+            ]
+          },
+          {
+            "lemma": "אֶפְעֶה",
+            "note": "The viper beside the flying saraph.",
+            "evidence": [
+              {
+                "ref": "Isa.30.6"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "שָׂרָף מְעוֹפֵף",
+            "gloss": "flying saraph",
+            "evidence": [
+              {
+                "ref": "Isa.14.29"
+              },
+              {
+                "ref": "Isa.30.6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִשְׂרָפָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "burning",
+      "bdb": [
+        "u.cj.af"
+      ],
+      "cognate_ids": [
+        "akk-suruptu"
+      ],
+      "summary": "Only in the plural construct מִשְׂרְפוֹת: twice of burnings, and in the place name Misrephoth-maim (Jos 11:8, filed under this key as well).",
+      "senses": [
+        {
+          "id": "burnings",
+          "gloss": "burnings",
+          "definition": "Burnings: of lime, to which peoples will be reduced; and the burnings made for the kings at their burial.",
+          "evidence": [
+            {
+              "ref": "Isa.33.12",
+              "role": "defining",
+              "note": "“The peoples shall be מִשְׂרְפוֹת שִׂיד, thorns cut down that are burned in the fire.”"
+            },
+            {
+              "ref": "Jer.34.5",
+              "role": "defining",
+              "note": "“As the burnings of your fathers, the former kings … so they shall burn for you.”"
+            }
+          ],
+          "kin": [
+            "funeral-burning",
+            "burn-bones"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׂרְפוֹת מַיִם",
+      "pos": "name",
+      "gloss": "Misrephoth-maim, a place near Sidon: “burnings of water”",
+      "summary": "A place on the coast toward Sidon, the limit of Joshua's pursuit after the battle at the waters of Merom and of the land still to be taken from the Sidonians. The name is the noun מִשְׂרְפוֹת “burnings” with מַיִם “water”; nothing in the text says why it was so called. A place, so it has no name entry.",
+      "senses": [
+        {
+          "gloss": "Misrephoth-maim",
+          "definition": "A place named with Great Sidon, on the northern border of the land.",
+          "evidence": [
+            {
+              "ref": "Jos.11.8",
+              "role": "defining",
+              "note": "Israel pursued the kings of the north “to Great Sidon and to מִשְׂרְפוֹת מַיִם and to the valley of Mizpeh eastward”."
+            },
+            {
+              "ref": "Jos.13.6",
+              "note": "“All the inhabitants of the hill country from Lebanon to Misrephoth-maim, all the Sidonians, I will drive them out before the sons of Israel.”"
+            }
+          ],
+          "kin": [
+            "burnings"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-sarapu",
+      "lang": "akk",
+      "form": "šarāpu",
+      "translit": "šarāpu",
+      "gloss": "burn; be burnt; ignite",
+      "relation": "cognate",
+      "note": "Over 1,100 attestations in the Oracc glossaries from Old Babylonian to Hellenistic times, with the adjective šarpu “burnt, combustible”: the Hebrew verb's sense. Akkadian š answers to Hebrew שׂ here, as the Proto-Semitic list sets out.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000025350, šarāpu [burn] V; armep x000057960, šarpu [burnt] AJ"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000443 śrp [burn] V, AKK010980 šarāpu [burn]"
+        }
+      ]
+    },
+    {
+      "id": "akk-suruptu",
+      "lang": "akk",
+      "form": "šuruptu",
+      "translit": "šuruptu",
+      "gloss": "burning; (funeral) burning; burnt offering",
+      "relation": "cognate",
+      "note": "The noun of šarāpu, with “burning” and “(funeral) burning” among its senses: the senses of שְׂרֵפָה and מִשְׂרָפָה, the burning made for a king at his burial among them (2Ch 16:14; Jer 34:5).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000057990, šuruptu [burning] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-srp",
+      "lang": "uga",
+      "form": "šrp",
+      "translit": "šrp",
+      "gloss": "burn",
+      "relation": "cognate",
+      "note": "Ugaritic šrp “burn”, in the Proto-Semitic root set with Akkadian and Hebrew. Not yet looked up in a Ugaritic dictionary for its contexts (a noun “burnt offering” is reported).",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000443 śrp [burn] V, UGC004140 šrp [burn]"
+        }
+      ]
+    },
+    {
+      "id": "arc-sraph",
+      "lang": "arc",
+      "form": "שְׂרַף",
+      "translit": "śəraf",
+      "gloss": "burn; (ithpaal) be burned",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the Targum of Onkelos uses it at Gen 11:3 for the Hebrew's “let us burn them thoroughly”, and the ithpaal is “be burned” in the Talmud. Jastrow also lists a שׂרף “sip, absorb” and a שְׂרָף “resin, acrid sap”, which do not bear on the scripture words.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׂרַף (ch.), citing Targ. O. Gen. XI, 3; Ithpa. Zeb. 16ᵃ, Gen. R. s. 38"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "burned-outside-the-camp",
+      "statement": "The law sets the burning of the sin offering apart from the altar: its fat goes up in smoke on the altar (הִקְטִיר), but when its blood has been carried into the holy place to make atonement, the rest of the bull, “its skin and all its flesh, with its head and legs, its entrails and its dung”, is carried “outside the camp to a clean place” and burned (שָׂרַף) with fire (Lev 4:8–12; 6:23); so on the Day of Atonement (Lev 16:27). The red heifer too was burned whole outside the camp, and its ashes put away uncleanness (Num 19:3–9, 17). Hebrews takes Lev 16:27: “the bodies of those beasts whose blood is brought into the holy place by the high priest for sin are burned outside the camp; therefore Jesus also, that he might sanctify the people with his own blood, suffered outside the gate. Let us go out to him outside the camp, bearing his reproach” (Heb 13:11–13), and sets the ashes of the heifer beside the blood of Christ “who through the eternal spirit offered himself without spot to God” (Heb 9:13–14). From the verses: the offering whose blood made atonement in the holy place was itself put out of the camp and burned; Jesus, whose blood is the atonement, died outside Jerusalem's gate, and those he sanctifies are called to go out to him and share his reproach.",
+      "evidence": [
+        {
+          "ref": "Lev.4.8",
+          "to": "Lev.4.12"
+        },
+        {
+          "ref": "Lev.6.23"
+        },
+        {
+          "ref": "Lev.16.27"
+        },
+        {
+          "ref": "Num.19.3",
+          "to": "Num.19.9"
+        },
+        {
+          "ref": "Num.19.17"
+        },
+        {
+          "ref": "Heb.13.11",
+          "to": "Heb.13.13"
+        },
+        {
+          "ref": "Heb.9.13",
+          "to": "Heb.9.14"
+        }
+      ]
+    },
+    {
+      "topic": "isaiah-saw-his-glory",
+      "statement": "Isaiah saw Adonai on a high throne, and the seraphim crying “Holy, holy, holy is Yahweh of armies; the fullness of all the earth is his glory” (Isa 6:1–3). He cried “Woe is me … for my eyes have seen the King, Yahweh of armies”, a man of unclean lips; a seraph touched his lips with a coal from the altar and said, “your iniquity is taken away and your sin covered”; then he heard “Whom shall I send?” and answered “Here am I, send me” (Isa 6:5–8). The fire from the altar cleansed the man before he was sent. John quotes the commission that follows (Isa 6:10) and says, “these things Isaiah said when he saw his glory and spoke of him” (Jhn 12:39–41): the vision showed the glory of Christ, as the prophets “searched what the spirit of Christ in them signified, when it testified beforehand the sufferings of Christ and the glory that should follow” (1Pe 1:11). The cry that all the earth is full of his glory answers Yahweh's oath, “as truly as I live, all the earth shall be filled with the glory of Yahweh” (Num 14:21), and the promise that “the earth shall be filled with the knowledge of the glory of Yahweh as the waters cover the sea” (Hab 2:14). In Revelation the four living creatures, each with six wings, give the seraphim's cry (Rev 4:8), and with the elders they sing to the Lamb, “you were slain and have redeemed us to God by your blood out of every kindred … and have made us kings and priests to our God, and we shall reign on the earth” (Rev 5:8–10). From the verses: Isaiah's vision is of Yahweh's glory in Christ, to fill the whole earth; those who give its cry in Revelation are men redeemed by his blood who will reign with him on the earth.",
+      "evidence": [
+        {
+          "ref": "Isa.6.1",
+          "to": "Isa.6.8"
+        },
+        {
+          "ref": "Jhn.12.39",
+          "to": "Jhn.12.41"
+        },
+        {
+          "ref": "1Pe.1.11"
+        },
+        {
+          "ref": "Num.14.21"
+        },
+        {
+          "ref": "Hab.2.14"
+        },
+        {
+          "ref": "Rev.4.8"
+        },
+        {
+          "ref": "Rev.5.8",
+          "to": "Rev.5.10"
+        }
+      ]
+    },
+    {
+      "topic": "burning-children-never-commanded",
+      "statement": "The law named the burning of sons and daughters in fire to their gods as the nations' worst abomination, “every abomination to Yahweh which he hates” (Deu 12:31), and Judah did it in the valley of the son of Hinnom; Yahweh says of it, “which I did not command, nor did it come into my heart” (Jer 7:31; 19:5), and for it the valley would be called the valley of slaughter, its dead unburied (Jer 7:32–33). From the verses: to burn the living in fire is wholly foreign to Yahweh's mind; the fire of the valley of Hinnom is the place of the dead bodies of those he judges, not a torment he devised for the living (Isa 66:24).",
+      "evidence": [
+        {
+          "ref": "Deu.12.31"
+        },
+        {
+          "ref": "Jer.7.31",
+          "to": "Jer.7.33"
+        },
+        {
+          "ref": "Jer.19.5",
+          "to": "Jer.19.6"
+        },
+        {
+          "ref": "Isa.66.24"
+        }
+      ]
+    }
+  ],
+  "note": "Words: BDB's u.cj.ab (serpent) and u.cj.ac (seraphim) list the same eight tokens (the spelling שָׂרָף), which are filed here as one word under u.cj.ab, with the two senses; the database also counts the name Saraph (1Ch 4:22) and Isa 30:6 under both, so the word's count is a spelling count, with seven true uses. The name Saraph has its own entry (names/saraph.json, u.cj.ad). Misrephoth-maim (u.cj.ag) is given no bdb key: the database files all 168 tokens of מַיִם under it, none of them the place; its two uses are Jos 11:8 (filed under u.cj.af) and Jos 13:6. The lemma מִשְׂרָפָה is written from the plural מִשְׂרְפוֹת; BDB's headword is מַשְׂרֵפָה. The piel at Amo 6:10 is spelled with ס. Lev 10:16 שֹׂרָף is filed as pual; it may be a qal passive. Cognates: Arabic š-r-f, the regular match for Hebrew śrp, means “be high, noble” in Lane (pp. 1536–1539) and shares no meaning; it is not recorded, and the seraph as a “noble one” is a guess no verse supports. Egyptian srf “be warm, warmth” (TLA 139380, 139390) is sometimes compared; Egyptian can only be a loan, and nothing shows a loan. Jastrow's שָׂרָף “burning, venomous serpent” and “seraph” are Rabbinic Hebrew, not cognates. Ugaritic šrp not yet followed into DULAT for contexts. The bronze serpent of Num 21:8–9 and its doctrine (Jhn 3:14) are written in nachash's entry (serpent-lifted-up) and not repeated here."
+}
