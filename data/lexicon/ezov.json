@@ -1,0 +1,194 @@
+{
+  "id": "ezov",
+  "created": "2026-11-19",
+  "root": "אזוב",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "hyssop",
+  "summary": "Hyssop grows from walls and can be gathered in a bunch. Israel uses it to apply the Passover blood and in rites of cleansing. The psalmist draws on that practice in asking to be made clean.",
+  "words": [
+    {
+      "lemma": "אֵזוֹב",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "a.ce.ag"
+      ],
+      "gloss": "hyssop",
+      "senses": [
+        {
+          "id": "herb",
+          "gloss": "hyssop",
+          "definition": "A small plant whose sprigs can hold liquid for daubing or sprinkling.",
+          "evidence": [
+            {
+              "ref": "Exo.12.22",
+              "role": "defining",
+              "note": "A bunch is dipped into the blood and used to mark the lintel and doorposts."
+            },
+            {
+              "ref": "Lev.14.4",
+              "role": "defining",
+              "note": "The priest orders hyssop, cedar, scarlet and two birds for cleansing a person."
+            },
+            {
+              "ref": "Lev.14.6",
+              "role": "defining",
+              "note": "The hyssop and the other materials are dipped in blood over fresh water."
+            },
+            {
+              "ref": "Lev.14.49",
+              "role": "defining",
+              "note": "The materials used to cleanse a house include hyssop."
+            },
+            {
+              "ref": "Lev.14.51",
+              "role": "defining",
+              "note": "The priest dips the hyssop with the other materials and sprinkles the house seven times."
+            },
+            {
+              "ref": "Lev.14.52",
+              "role": "defining",
+              "note": "Hyssop appears in the summary of the house-cleansing rite."
+            },
+            {
+              "ref": "Num.19.6",
+              "role": "defining",
+              "note": "The priest throws hyssop, cedar and scarlet into the fire where the cow is burning."
+            },
+            {
+              "ref": "Num.19.18",
+              "role": "defining",
+              "note": "A clean person dips hyssop into the water and sprinkles the tent, vessels and people."
+            },
+            {
+              "ref": "1Ki.5.13",
+              "role": "defining",
+              "note": "Solomon speaks of plants from the cedar of Lebanon down to the hyssop growing from a wall."
+            },
+            {
+              "ref": "Psa.51.9",
+              "role": "defining",
+              "note": "The psalmist asks to be purified with hyssop and washed clean."
+            }
+          ],
+          "cognate_ids": [
+            "uga-herb",
+            "arc-herb",
+            "gez-herb"
+          ],
+          "kin": [
+            "syc-herb"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ὕσσωπος",
+          "gloss": "hyssop",
+          "relation": "rendering",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. ὕσσωπος, Septuagint equivalent of אֵזוֹב"
+            },
+            {
+              "ref": "Jhn.19.29",
+              "role": "defining",
+              "note": "A sponge filled with sour wine is placed on hyssop and raised to Jesus’ mouth."
+            },
+            {
+              "ref": "Heb.9.19",
+              "role": "defining",
+              "note": "Moses takes hyssop with scarlet wool, water and blood to sprinkle the book and the people."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זופא",
+      "root": "זופא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "hyssop",
+      "senses": [
+        {
+          "id": "syc-herb",
+          "gloss": "hyssop",
+          "definition": "The plant used to hold the sponge at the crucifixion and in the account of covenant sprinkling.",
+          "evidence": [
+            {
+              "ref": "Jhn.19.29",
+              "role": "defining",
+              "note": "A sponge filled with sour wine is placed on hyssop and raised to Jesus’ mouth."
+            },
+            {
+              "ref": "Heb.9.19",
+              "role": "defining",
+              "note": "Moses takes hyssop with scarlet wool, water and blood to sprinkle the book and the people."
+            }
+          ],
+          "kin": [
+            "herb"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-herb",
+      "lang": "uga",
+      "form": "𐎜𐎇𐎁",
+      "translit": "uzb",
+      "gloss": "hyssop",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000590, UGC000786"
+        }
+      ],
+      "sounds": {
+        "ז": "z"
+      }
+    },
+    {
+      "id": "arc-herb",
+      "lang": "arc",
+      "form": "איזוב",
+      "translit": "ʾyzwb",
+      "gloss": "hyssop",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000590, ARM000989"
+        }
+      ],
+      "sounds": {
+        "ז": "z"
+      }
+    },
+    {
+      "id": "gez-herb",
+      "lang": "gez",
+      "form": "አዞብ",
+      "translit": "ʾazob",
+      "gloss": "hyssop, in biblical translation",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 791, s.v. አዘብ, Exodus 12:22 and Psalm 50:8"
+        }
+      ],
+      "sounds": {
+        "ז": "z"
+      }
+    }
+  ],
+  "note": "The passages describe the plant’s growth and use but leave its botanical species uncertain. The Aramaic and Geʿez forms occur in biblical traditions, where a plant name could have passed between languages. The Syriac noun is SEDRA lexeme 870."
+}
