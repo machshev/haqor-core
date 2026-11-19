@@ -1,0 +1,174 @@
+{
+  "id": "pach-snare",
+  "root": "פחח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "hunting",
+    "metalwork"
+  ],
+  "gloss": "snare, trap",
+  "summary": "The trap holds its prey until the trapper takes it or the mechanism breaks. The two appearances in the Psalms of a table becoming a snare and snares raining down extend the image to judgment.",
+  "words": [
+    {
+      "lemma": "פַּח",
+      "bdb": [
+        "q.bd.ab"
+      ],
+      "pos": "noun",
+      "gloss": "snare, bird trap",
+      "senses": [
+        {
+          "gloss": "trap for catching birds",
+          "definition": "Amos asks whether a trap springs from the ground without catching anything. The psalmist compares escape from enemies to a bird escaping when its trap breaks.",
+          "evidence": [
+            {
+              "ref": "Amo.3.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.124.7"
+            },
+            {
+              "ref": "Pro.7.23"
+            }
+          ],
+          "id": "snare"
+        },
+        {
+          "gloss": "hidden danger or means of capture",
+          "definition": "Enemies conceal traps for a person’s feet. Psalm 11 pictures snares raining on the wicked alongside fire and sulphur.",
+          "evidence": [
+            {
+              "ref": "Jer.18.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.141.9"
+            },
+            {
+              "ref": "Psa.11.6"
+            },
+            {
+              "ref": "Psa.69.23"
+            },
+            {
+              "ref": "Rom.11.9"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "syc-pahha"
+      ]
+    },
+    {
+      "lemma": "פָּחַח",
+      "bdb": [
+        "q.bd.ac"
+      ],
+      "pos": "verb",
+      "gloss": "ensnare",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "ensnare",
+          "senses": [
+            {
+              "gloss": "ensnare",
+              "definition": "Isaiah pictures a plundered people trapped in holes and shut away in prisons.",
+              "evidence": [
+                {
+                  "ref": "Isa.42.22",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "snare"
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "syc-pahha"
+      ]
+    },
+    {
+      "lemma": "פַּחָא",
+      "pos": "noun",
+      "gloss": "snare",
+      "senses": [
+        {
+          "gloss": "trap",
+          "definition": "Paul quotes the prayer that a table become a snare. The same noun describes the trap into which those bent on becoming rich fall.",
+          "evidence": [
+            {
+              "ref": "Rom.11.9",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ti.6.9"
+            }
+          ],
+          "kin": [
+            "snare"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "m",
+      "cognate_ids": [
+        "syc-pahha"
+      ]
+    },
+    {
+      "lemma": "פַּח",
+      "bdb": [
+        "q.bd.ad"
+      ],
+      "pos": "noun",
+      "gloss": "sheet or plate of metal",
+      "senses": [
+        {
+          "gloss": "sheet or plate of metal",
+          "definition": "Gold is beaten into thin sheets and cut into threads for weaving. The censers of Korah’s company are hammered into a covering for the altar.",
+          "evidence": [
+            {
+              "ref": "Exo.39.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.17.3",
+              "to": "Num.17.4"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-pahha",
+      "lang": "syc",
+      "form": "ܦܚܐ",
+      "translit": "paḥḥā",
+      "gloss": "snare",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2475, root 1467, Romans 11:9 and 1 Timothy 6:9"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The metal plate has a distinct material use. Its derivation from the bird trap is uncertain. The Masoretic reading of Psalm 11:6 is snares, though its association with fire has also suggested burning coals."
+}
