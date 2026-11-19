@@ -1,0 +1,101 @@
+{
+  "id": "qubbah",
+  "root": "קבב",
+  "homograph": 1,
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "tent, pavilion",
+  "summary": "Phinehas follows an Israelite man into a tent in the camp at Shittim.",
+  "words": [
+    {
+      "lemma": "קֻבָּה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "s.ab.ac"
+      ],
+      "gloss": "tent, pavilion",
+      "senses": [
+        {
+          "id": "thing",
+          "gloss": "tent, pavilion",
+          "definition": "A tent or enclosed pavilion that a person can enter.",
+          "evidence": [
+            {
+              "ref": "Num.25.8",
+              "role": "defining",
+              "note": "Phinehas enters after the Israelite and finds him with the Midianite woman inside."
+            }
+          ],
+          "cognate_ids": [
+            "ar-tent",
+            "arc-tent",
+            "syc-tent",
+            "mandaic-arch"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-tent",
+      "lang": "ar",
+      "form": "قُبَّة",
+      "translit": "qubba",
+      "gloss": "round tent or pavilion",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 2478, n35031"
+        }
+      ]
+    },
+    {
+      "id": "arc-tent",
+      "lang": "arc",
+      "form": "קוּבְתָא",
+      "translit": "qûḇtā",
+      "gloss": "pavilion",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qwbh, qwbtʾ, Targum Onkelos and Samaritan Targum at Num 25:8"
+        }
+      ]
+    },
+    {
+      "id": "syc-tent",
+      "lang": "syc",
+      "form": "ܩܘܒܬܐ",
+      "translit": "qūbtā",
+      "gloss": "pavilion",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qwbh, qwbtʾ, Am4 102:6"
+        }
+      ]
+    },
+    {
+      "id": "mandaic-arch",
+      "lang": "arc",
+      "form": "qumba",
+      "translit": "qumba",
+      "gloss": "Mandaic vault, dome",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "s.vv. qumba and quba, especially the contrast between the architectural and figurative uses"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic and Mandaic words suggest a rounded roof. Numbers gives no description of its shape. The nearby word for the woman’s belly is a separate noun."
+}
