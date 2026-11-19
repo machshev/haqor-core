@@ -1,0 +1,160 @@
+{
+  "id": "kara-bow",
+  "root": "כרע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "body",
+    "worship",
+    "movement"
+  ],
+  "gloss": "bend the knee, bring low",
+  "summary": "Bending the legs can express worship, describe an animal crouching, or mark the moment a person collapses. The causative verb in Psalm 17 is a plea for the attacker to be brought down.",
+  "words": [
+    {
+      "lemma": "כָּרַע",
+      "bdb": [
+        "k.de.aa"
+      ],
+      "pos": "verb",
+      "gloss": "kneel, crouch, bring low",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bend down",
+          "senses": [
+            {
+              "gloss": "kneel in homage",
+              "definition": "Solomon rises from kneeling before Yahweh’s altar. The call to worship in Psalm 95 invites the people to bend down together.",
+              "evidence": [
+                {
+                  "ref": "1Ki.8.54",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.95.6"
+                },
+                {
+                  "ref": "Est.3.2"
+                },
+                {
+                  "ref": "Isa.45.23"
+                }
+              ]
+            },
+            {
+              "gloss": "crouch or collapse",
+              "definition": "Judah crouches like a lion. Sisera sinks at Jael’s feet, and the defeated in Psalm 20 bend and fall.",
+              "evidence": [
+                {
+                  "ref": "Gen.49.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.5.27"
+                },
+                {
+                  "ref": "Psa.20.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring low",
+          "senses": [
+            {
+              "gloss": "bring low",
+              "definition": "The psalmist asks Yahweh to bring his attacker to the ground, and elsewhere gives thanks for bringing assailants low beneath him. Jephthah uses the same verb of the grief his daughter’s appearance causes him.",
+              "evidence": [
+                {
+                  "ref": "Psa.17.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.18.40"
+                },
+                {
+                  "ref": "Jdg.11.35"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-kera"
+      ]
+    },
+    {
+      "lemma": "כֶּרַע",
+      "bdb": [
+        "k.de.ab"
+      ],
+      "pos": "noun",
+      "gloss": "leg, shank",
+      "senses": [
+        {
+          "gloss": "leg, shank",
+          "definition": "The Passover lamb is roasted with its legs. The term also describes the jumping legs of insects and the remains of a sheep recovered from a lion.",
+          "evidence": [
+            {
+              "ref": "Exo.12.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.11.21"
+            },
+            {
+              "ref": "Amo.3.12"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-karaa"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-kera",
+      "lang": "arc",
+      "form": "כְּרַע",
+      "translit": "kəraʿ",
+      "gloss": "bow, bend the knee",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "כְּרַע 1, Targum Onkelos Genesis 24:26"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "arc-karaa",
+      "lang": "arc",
+      "form": "כַּרְעָא",
+      "translit": "karʿā",
+      "gloss": "leg",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "כַּרְעָא, Berakhot 7a, standing on one leg"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The connection between bodily posture and the leg noun is supported independently by the corresponding Aramaic verb and noun."
+}
