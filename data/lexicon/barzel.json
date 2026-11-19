@@ -1,0 +1,152 @@
+{
+  "id": "barzel",
+  "root": "ברזל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "metals",
+    "rule"
+  ],
+  "gloss": "iron",
+  "summary": "Iron can be mined and formed into tools, bars and rods. Psalm 2 contrasts an iron rod with breakable pottery, an image taken up in Revelation.",
+  "words": [
+    {
+      "lemma": "בַּרְזֶל",
+      "bdb": [
+        "b.db.ac"
+      ],
+      "pos": "noun",
+      "gloss": "iron",
+      "senses": [
+        {
+          "gloss": "iron as material",
+          "definition": "Iron is obtained from stone, made into tools and used to bind prisoners. A smith can sharpen one iron edge with another.",
+          "evidence": [
+            {
+              "ref": "Deu.8.9",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.6.5",
+              "to": "2Ki.6.6"
+            },
+            {
+              "ref": "Psa.105.18"
+            },
+            {
+              "ref": "Pro.27.17"
+            }
+          ],
+          "cognate_ids": [
+            "phn-brzl"
+          ]
+        },
+        {
+          "gloss": "iron as a figure of force or hardness",
+          "definition": "Psalm 2 sets a rod of iron against a fragile potter’s vessel. A yoke of iron similarly pictures subjection to a power one cannot throw off.",
+          "evidence": [
+            {
+              "ref": "Psa.2.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.28.48"
+            },
+            {
+              "ref": "Rev.2.27"
+            },
+            {
+              "ref": "Rev.19.15"
+            }
+          ],
+          "cognate_ids": [
+            "phn-brzl"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "פַּרְזֶל",
+      "bdb": [
+        "xq.ad.ac"
+      ],
+      "pos": "noun",
+      "gloss": "iron",
+      "senses": [
+        {
+          "gloss": "iron",
+          "definition": "In Daniel’s vision the iron breaks and crushes. Its strength and its failure to mix with clay explain two features of the kingdom portrayed by the statue.",
+          "evidence": [
+            {
+              "ref": "Dan.2.40",
+              "to": "Dan.2.43",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.7.7"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc",
+      "root": "פרזל",
+      "cognate_ids": [
+        "phn-brzl"
+      ]
+    },
+    {
+      "lemma": "פַּרְזְלָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "iron",
+      "senses": [
+        {
+          "gloss": "iron",
+          "definition": "The iron gate of the prison opens for Peter. Revelation describes the ruling rod as iron in its use of Psalm 2.",
+          "evidence": [
+            {
+              "ref": "Act.12.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.2.27"
+            },
+            {
+              "ref": "Rev.19.15"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "root": "פרזלא",
+      "cognate_ids": [
+        "phn-brzl"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-brzl",
+      "lang": "phn",
+      "form": "𐤁𐤓𐤆𐤋",
+      "translit": "brzl",
+      "gloss": "iron",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "s.v. BRZL, KAI 100.7 and CIS i 335.3–4"
+        }
+      ],
+      "sounds": {
+        "ז": "z"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The longer iron headword is independent of the shorter ברז heading. Berzoth is a disputed genealogy spelling in 1 Chronicles 7:31. No evidence ties it to iron. SEDRA lexeme 2583 is the Syriac metal name."
+}
