@@ -1,0 +1,114 @@
+{
+  "id": "temunah",
+  "root": "מינ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "creation",
+    "appearance"
+  ],
+  "gloss": "kind, form, likeness",
+  "summary": "Genesis distinguishes living things according to kind. In Psalm 17 the speaker addresses Yahweh, pairing the sight of his face with satisfaction at his likeness on waking.",
+  "words": [
+    {
+      "lemma": "מִין",
+      "bdb": [
+        "m.bv.ab"
+      ],
+      "pos": "noun",
+      "gloss": "kind, variety",
+      "senses": [
+        {
+          "gloss": "kind, variety",
+          "definition": "Fruit trees bear according to their kinds. The same expression distinguishes groups of birds, insects and fish.",
+          "evidence": [
+            {
+              "ref": "Gen.1.11",
+              "to": "Gen.1.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.11.15"
+            },
+            {
+              "ref": "Lev.11.22"
+            },
+            {
+              "ref": "Ezk.47.10"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-mina"
+      ]
+    },
+    {
+      "lemma": "תְּמוּנָה",
+      "bdb": [
+        "m.bv.ac"
+      ],
+      "pos": "noun",
+      "gloss": "form, likeness",
+      "senses": [
+        {
+          "gloss": "visible form",
+          "definition": "Israel heard a voice at Horeb but saw no form. Moses is said to behold Yahweh’s form, and the psalmist expects satisfaction at the sight of it on waking.",
+          "evidence": [
+            {
+              "ref": "Deu.4.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.12.8"
+            },
+            {
+              "ref": "Psa.17.15"
+            },
+            {
+              "ref": "Job.4.16"
+            }
+          ]
+        },
+        {
+          "gloss": "represented likeness",
+          "definition": "The command against making a carved image extends to the likeness of anything in the sky, on land or in the waters.",
+          "evidence": [
+            {
+              "ref": "Exo.20.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.4.15",
+              "to": "Deu.4.16"
+            },
+            {
+              "ref": "Deu.5.8"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-mina",
+      "lang": "arc",
+      "form": "מִינָא",
+      "translit": "mīnā",
+      "gloss": "kind, species",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "מִינָא I, Ḥullin 79a on the kind to which a mule’s mother belongs"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic parallel establishes the classificatory sense of מִין. The derivation of תְּמוּנָה remains uncertain; its biblical uses concern a perceived or represented form."
+}
