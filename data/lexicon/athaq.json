@@ -1,0 +1,376 @@
+{
+  "id": "athaq",
+  "root": "עתק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "time",
+    "movement",
+    "speech"
+  ],
+  "gloss": "move on, advance, grow old",
+  "summary": "A camp moves on and a rock shifts from its place. Someone who advances in years grows old, and in Psalm 6 grief has aged the speaker’s eye. Other words of the family describe ancient things, choice goods and arrogant speech.",
+  "words": [
+    {
+      "lemma": "עָתַק",
+      "bdb": [
+        "p.gl.aa"
+      ],
+      "pos": "verb",
+      "gloss": "move, advance, grow old",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "move away, advance in years",
+          "senses": [
+            {
+              "gloss": "move from a place",
+              "definition": "Job pictures a rock shifting out of its place when a mountain gives way.",
+              "evidence": [
+                {
+                  "ref": "Job.14.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.18.4"
+                }
+              ]
+            },
+            {
+              "gloss": "advance in age, wear out",
+              "definition": "The wicked live on and grow old. In Psalm 6 an eye worn by grief is said to have grown old.",
+              "evidence": [
+                {
+                  "ref": "Job.21.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.6.8"
+                }
+              ],
+              "id": "age",
+              "kin": [
+                "old"
+              ],
+              "cognate_ids": [
+                "arc-ataq",
+                "ar-atiq"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "move on, remove, transfer",
+          "senses": [
+            {
+              "gloss": "move on or remove",
+              "definition": "Abram moves his camp from one place to another. Job speaks of God moving mountains.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.26.22"
+                },
+                {
+                  "ref": "Job.9.5"
+                },
+                {
+                  "ref": "Job.32.15"
+                }
+              ]
+            },
+            {
+              "gloss": "transfer in writing",
+              "definition": "Hezekiah’s men copied the proverbs of Solomon which follow this heading.",
+              "evidence": [
+                {
+                  "ref": "Pro.25.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָתָק",
+      "bdb": [
+        "p.gl.ab"
+      ],
+      "pos": "noun",
+      "gloss": "insolent talk, arrogance",
+      "senses": [
+        {
+          "gloss": "arrogance",
+          "definition": "The speakers pour out proud words against the righteous. The parallel lines describe pride, contempt and self-praise.",
+          "evidence": [
+            {
+              "ref": "Psa.31.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.94.4"
+            },
+            {
+              "ref": "1Sa.2.3"
+            },
+            {
+              "ref": "Psa.75.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַתִּיק",
+      "bdb": [
+        "p.gl.ae"
+      ],
+      "pos": "adjective",
+      "gloss": "removed, ancient",
+      "senses": [
+        {
+          "gloss": "removed",
+          "definition": "The children in Isaiah’s question have been weaned, taken away from the breast.",
+          "evidence": [
+            {
+              "ref": "Isa.28.9",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "ancient",
+          "definition": "The chronicler says these accounts are ancient.",
+          "evidence": [
+            {
+              "ref": "1Ch.4.22",
+              "role": "defining"
+            }
+          ],
+          "id": "old",
+          "kin": [
+            "age"
+          ],
+          "cognate_ids": [
+            "ar-atiq",
+            "arc-ataq"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָתֵק",
+      "bdb": [
+        "p.gl.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "lasting or substantial",
+      "senses": [
+        {
+          "gloss": "lasting or substantial",
+          "definition": "Wisdom offers riches and honour. This adjective describes the wealth she has alongside righteousness. Its exact shade is uncertain.",
+          "evidence": [
+            {
+              "ref": "Pro.8.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָתִיק",
+      "bdb": [
+        "p.gl.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "choice, fine",
+      "senses": [
+        {
+          "gloss": "choice, fine",
+          "definition": "The proceeds of Tyre’s trade will provide abundant food and fine clothing for those who dwell before Yahweh. The term for the clothing occurs here alone.",
+          "evidence": [
+            {
+              "ref": "Isa.23.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-atiq"
+      ]
+    },
+    {
+      "lemma": "עַתִּיק",
+      "bdb": [
+        "xp.aq.af"
+      ],
+      "pos": "adjective",
+      "gloss": "ancient",
+      "senses": [
+        {
+          "gloss": "ancient",
+          "definition": "Daniel sees the Ancient of Days take his seat for judgment. His hair is like pure wool.",
+          "evidence": [
+            {
+              "ref": "Dan.7.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.7.13"
+            },
+            {
+              "ref": "Dan.7.22"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "עתיק",
+      "cognate_ids": [
+        "ar-atiq",
+        "arc-ataq"
+      ]
+    },
+    {
+      "lemma": "עֲתַק",
+      "pos": "verb",
+      "gloss": "grow old, make old",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "grow old",
+          "senses": [
+            {
+              "gloss": "grow old",
+              "definition": "What grows old is near disappearance in the discussion of the covenants.",
+              "evidence": [
+                {
+                  "ref": "Heb.8.13",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "age"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "make old",
+          "senses": [
+            {
+              "gloss": "make old",
+              "definition": "Calling a covenant new marks the first as old.",
+              "evidence": [
+                {
+                  "ref": "Heb.8.13",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "old"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-ataq",
+        "ar-atiq"
+      ]
+    },
+    {
+      "lemma": "עַתִּיקָא",
+      "pos": "adjective",
+      "gloss": "old",
+      "senses": [
+        {
+          "gloss": "old",
+          "definition": "A householder brings out new things and old. Paul contrasts the old person with the new.",
+          "evidence": [
+            {
+              "ref": "Mat.13.52",
+              "role": "defining"
+            },
+            {
+              "ref": "Eph.4.22",
+              "to": "Eph.4.24"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-atiq",
+        "arc-ataq"
+      ]
+    },
+    {
+      "lemma": "עַתִּיקוּתָא",
+      "pos": "noun",
+      "gloss": "oldness",
+      "senses": [
+        {
+          "gloss": "oldness",
+          "definition": "Paul contrasts the oldness of the letter with newness of spirit.",
+          "evidence": [
+            {
+              "ref": "Rom.7.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-atiq",
+        "arc-ataq"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-atiq",
+      "lang": "ar",
+      "form": "عَتِيقٌ",
+      "translit": "ʿatīq",
+      "gloss": "old, choice, excellent",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "pp. 1947–1948, عَتِيقٌ n27964, including an old bridge and choice goods"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "arc-ataq",
+      "lang": "arc",
+      "form": "עֲתַק",
+      "translit": "ʿătaq",
+      "gloss": "be old, worn out",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עֲתַק, Targum Lamentations 3:4"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The comparative evidence supports aged and choice. How insolent speech developed from this family is uncertain. The verb p.gl.aa is attested at nine positions in the text despite its absence from the brief’s table. SEDRA lexemes 2435–2437 supply the Syriac family."
+}
