@@ -10,7 +10,7 @@ repository.workspace = true
 anyhow = "1.0.81"
 clap = { version = "4.5.42", features = ["derive"] }
 getrandom = "0.4.3"
-haqor-core = { path = "../haqor-core", version = "0.9.20" }
+haqor-core = { path = "../haqor-core", version = "0.9.21" }
 qrcode = { version = "0.15.0", default-features = false, features = ["std"] }
 rcgen = { version = "0.14.5", default-features = false, features = ["crypto", "ring"] }
 ring = "0.17.14"
