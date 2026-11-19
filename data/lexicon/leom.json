@@ -75,7 +75,8 @@
         }
       ],
       "cognate_ids": [
-        "ar-laama"
+        "ar-laama",
+        "phn-lam"
       ]
     },
     {
@@ -115,8 +116,23 @@
         }
       ],
       "note": "Gathering people offers a possible verbal comparison. The Arabic verb describes an action and does not establish the origin of the Hebrew noun."
+    },
+    {
+      "id": "phn-lam",
+      "lang": "phn",
+      "form": "𐤋𐤀𐤌",
+      "translit": "lʾm",
+      "gloss": "people, nation",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "s.v. LʾM, Poenulus 940/44",
+          "note": "The speaker identifies the nation in which his former guest-friend lived."
+        }
+      ]
     }
   ],
   "doctrine": [],
-  "note": "TIPNR classifies Leummim as a group. The shared written plural gives the group key many common-noun matches. The particle בַּל, also returned for the common noun, is a separate word. Fisher p. 25 gives a Ugaritic comparison meaning people, but the consonantal spelling needs confirmation against the printed page."
+  "note": "TIPNR classifies Leummim as a group. The shared written plural gives the group key many common-noun matches. The particle בַּל, also returned for the common noun, is a separate word. Fisher p. 25 gives a Ugaritic comparison meaning people, but the consonantal spelling needs confirmation against the printed page. Krahmalkov independently documents Punic lʾm in the sense of a nation and compares Ugaritic liʾmu."
 }
