@@ -1,0 +1,186 @@
+{
+  "id": "laag",
+  "root": "לעג",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "contempt"
+  ],
+  "gloss": "mock, deride",
+  "summary": "Mockery treats its object with contempt, often through words, laughter or gestures. Isaiah also uses this spelling for speech whose sound a listener cannot understand.",
+  "words": [
+    {
+      "lemma": "לָעַג",
+      "bdb": [
+        "l.bs.aa"
+      ],
+      "pos": "verb",
+      "gloss": "mock, speak unintelligibly",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "mock",
+          "senses": [
+            {
+              "gloss": "hold someone up to ridicule",
+              "definition": "The one enthroned in heaven laughs at rulers who imagine they can cast off his rule. The parallel with laughter appears again in Psalm 59.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.59.9"
+                },
+                {
+                  "ref": "Job.11.3"
+                }
+              ],
+              "kin": [
+                "scorn"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make fun of someone",
+          "senses": [
+            {
+              "gloss": "express contempt",
+              "definition": "The onlookers at the afflicted man open their lips and shake their heads. Nehemiah’s opponents ridicule the rebuilding and question the builders’ motives.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Neh.2.19"
+                },
+                {
+                  "ref": "2Ch.30.10"
+                },
+                {
+                  "ref": "Mat.27.39",
+                  "to": "Mat.27.43"
+                }
+              ],
+              "kin": [
+                "scorn"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "speak unintelligibly",
+          "senses": [
+            {
+              "gloss": "speak in sounds the hearer cannot follow",
+              "definition": "Isaiah describes a people whose speech a hearer cannot understand. The tongues sound halting or strange to those listening.",
+              "evidence": [
+                {
+                  "ref": "Isa.33.19",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-laeg"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לַעַג",
+      "bdb": [
+        "l.bs.ab"
+      ],
+      "pos": "noun",
+      "gloss": "mockery",
+      "senses": [
+        {
+          "gloss": "derisive contempt",
+          "definition": "A people made a reproach to their neighbors endure their mockery. The psalmist pairs it with the contempt of the proud.",
+          "evidence": [
+            {
+              "ref": "Psa.79.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.44.14"
+            },
+            {
+              "ref": "Psa.123.4"
+            }
+          ],
+          "id": "scorn"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "לָעֵג",
+      "bdb": [
+        "l.bs.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "mocking, strange in speech",
+      "senses": [
+        {
+          "gloss": "mocking",
+          "definition": "The psalm describes mockers gnashing their teeth at the speaker. The phrase describing their company is difficult, but their hostility is clear.",
+          "evidence": [
+            {
+              "ref": "Psa.35.16",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "scorn"
+          ]
+        },
+        {
+          "gloss": "of unintelligible speech",
+          "definition": "The strange sounds of the speaker’s lips are paired with another tongue. Paul takes up Isaiah’s words in discussing tongues in the assembly.",
+          "evidence": [
+            {
+              "ref": "Isa.28.11",
+              "role": "defining"
+            },
+            {
+              "ref": "1Co.14.21"
+            }
+          ],
+          "cognate_ids": [
+            "arc-laeg"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-laeg",
+      "lang": "arc",
+      "form": "לַעֵיג",
+      "translit": "laʿēg",
+      "gloss": "speak indistinctly, stammer",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לְעַג, pael, Targum Isaiah 28:11"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The transition between strange-sounding speech and mockery is uncertain. Laadah and Ladan have ד in place of ג and no naming explanation connecting either with mocking. They belong under their own names."
+}
