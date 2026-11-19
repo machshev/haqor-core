@@ -1,0 +1,1035 @@
+{
+  "id": "shir",
+  "root": "שיר",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "song",
+    "worship",
+    "music",
+    "praise",
+    "temple",
+    "kingdom"
+  ],
+  "gloss": "sing; song",
+  "summary": "To sing, and the song sung: words lifted in the voice, above all to Yahweh for what he has done, as Moses and Israel sang at the sea (Exo 15:1) and the psalms call all the earth to sing a new song because he comes to judge the earth (Psa 96:1, 13). The qal sings, and its participle is the singer, man or woman, at court or feast; the polel's participle מְשֹׁרְרִים is the order of Levitical singers David set over the song of the house of Yahweh; the hophal is to be sung. The noun שִׁיר is song, a song (the psalms' heading “a song”, “a song of ascents”) and music (“instruments of song”); the feminine שִׁירָה is one song by name: the song of the sea, the song of the well, the song Moses wrote as a witness against Israel, David's song of deliverance. Ugaritic šr “sing” and šīru “song” are the same root.",
+  "words": [
+    {
+      "lemma": "שִׁיר",
+      "pos": "verb",
+      "gloss": "sing; (participle) singer; (hophal) be sung",
+      "bdb": [
+        "v.cv.ad"
+      ],
+      "cognate_ids": [
+        "uga-shr"
+      ],
+      "summary": "About eighty-five times: the qal and the polel, and once the hophal. With לְ it sings to Yahweh, with an object it sings a song or sings of his strength, faithfulness and ways. Its fixed partner is זִמֵּר “make music”. 1Sa 18:6, where the women came out “to sing (לָשִׁיר, written לשור) and dance” to meet Saul, is tagged by its written form under another root and not counted here.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sing; sing to, sing of; (participle) singer, singing man or woman",
+          "senses": [
+            {
+              "id": "sing-to-yahweh",
+              "gloss": "sing to Yahweh, sing his praise",
+              "definition": "To sing to Yahweh (לַיהוָה) for what he has done, or to sing of his strength, covenant faithfulness and ways: praise in the voice, often beside זִמֵּר “make music”.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.1",
+                  "role": "defining",
+                  "note": "“Then Moses and the sons of Israel sang (יָשִׁיר) this song to Yahweh … I will sing (אָשִׁירָה) to Yahweh, for he has triumphed gloriously; the horse and its rider he has thrown into the sea.”"
+                },
+                {
+                  "ref": "Exo.15.21",
+                  "note": "Miriam answers the women: “Sing (שִׁירוּ) to Yahweh.”"
+                },
+                {
+                  "ref": "Psa.106.12",
+                  "role": "defining",
+                  "note": "Of the sea: “They believed his words; they sang (יָשִׁירוּ) his praise”: the song answers the deliverance."
+                },
+                {
+                  "ref": "Jdg.5.3",
+                  "note": "Deborah: “I, to Yahweh I will sing; I will make music to Yahweh the God of Israel.”"
+                },
+                {
+                  "ref": "Psa.13.6",
+                  "note": "“I will sing to Yahweh, for he has dealt bountifully with me.”"
+                },
+                {
+                  "ref": "Psa.27.6",
+                  "note": "“I will sing and make music (אָשִׁירָה וַאֲזַמְּרָה) to Yahweh.”"
+                },
+                {
+                  "ref": "Psa.59.17",
+                  "role": "defining",
+                  "note": "“I will sing of your strength (אָשִׁיר עֻזֶּךָ), and shout for joy in the morning at your covenant faithfulness”: singing of what he is."
+                },
+                {
+                  "ref": "Psa.89.2",
+                  "note": "“Of the covenant faithfulness of Yahweh I will sing for ever.”"
+                },
+                {
+                  "ref": "Psa.101.1",
+                  "note": "“Of covenant faithfulness and justice I will sing; to you, Yahweh, I will make music.”"
+                },
+                {
+                  "ref": "Psa.104.33",
+                  "role": "defining",
+                  "note": "“I will sing to Yahweh while I live (בְּחַיָּי); I will make music to my God while I have being.”"
+                },
+                {
+                  "ref": "Psa.96.1",
+                  "to": "Psa.96.2",
+                  "note": "“Sing to Yahweh a new song; sing to Yahweh, all the earth. Sing to Yahweh, bless his name.”"
+                },
+                {
+                  "ref": "Psa.105.2",
+                  "note": "“Sing to him, make music to him; tell of all his wonders.”"
+                },
+                {
+                  "ref": "Psa.138.5",
+                  "note": "The kings of the earth “shall sing of the ways of Yahweh”."
+                },
+                {
+                  "ref": "Jer.20.13",
+                  "note": "“Sing to Yahweh, praise Yahweh, for he has delivered the soul of the needy from the hand of evildoers.”"
+                },
+                {
+                  "ref": "Psa.7.1",
+                  "note": "A shiggaion of David “which he sang to Yahweh”."
+                },
+                {
+                  "ref": "Psa.68.5",
+                  "note": "“Sing to God, make music to his name.”"
+                },
+                {
+                  "ref": "1Ch.16.23"
+                }
+              ],
+              "kin": [
+                "song-of-praise",
+                "named-song"
+              ]
+            },
+            {
+              "id": "sing-a-song",
+              "gloss": "sing (a song); sing at a feast, in grief or for another",
+              "definition": "To sing words with the voice, of any song and to anyone: a song of the well, a song for a friend, songs to a heavy heart, the songs of Zion asked for by captors.",
+              "evidence": [
+                {
+                  "ref": "Num.21.17",
+                  "role": "defining",
+                  "note": "“Then Israel sang this song: Spring up, O well; sing to it.”"
+                },
+                {
+                  "ref": "Isa.5.1",
+                  "role": "defining",
+                  "note": "“Let me sing (אָשִׁירָה) for my beloved a song (שִׁירַת) of my beloved touching his vineyard.”"
+                },
+                {
+                  "ref": "Psa.137.3",
+                  "to": "Psa.137.4",
+                  "role": "defining",
+                  "note": "“Sing us one of the songs of Zion. How shall we sing the song of Yahweh on foreign soil?”"
+                },
+                {
+                  "ref": "Pro.25.20",
+                  "note": "Like taking off a garment on a cold day, “so is one who sings songs (שָׁר בַּשִּׁרִים) to a heavy heart”."
+                },
+                {
+                  "ref": "Psa.65.14",
+                  "note": "The meadows and valleys “shout for joy, indeed they sing”: of the land itself, clothed with flocks and grain."
+                }
+              ]
+            },
+            {
+              "id": "singer",
+              "gloss": "(participle) singer, singing man, singing woman",
+              "definition": "The participle שָׁר, שָׁרָה as a noun: those who sing, at a king's court, at the temple, or in lament.",
+              "evidence": [
+                {
+                  "ref": "2Sa.19.36",
+                  "role": "defining",
+                  "note": "Barzillai at eighty: “Can I still hear the voice of singing men and singing women (שָׁרִים וְשָׁרוֹת)?”"
+                },
+                {
+                  "ref": "Ecc.2.8",
+                  "note": "“I got for myself singing men and singing women.”"
+                },
+                {
+                  "ref": "1Ki.10.12",
+                  "note": "Harps and lyres made of almug wood “for the singers”."
+                },
+                {
+                  "ref": "Psa.68.26",
+                  "note": "“The singers went before, the players after, among the young women playing tambourines.”"
+                },
+                {
+                  "ref": "Psa.87.7",
+                  "note": "“Singers as well as dancers: all my springs are in you.”"
+                },
+                {
+                  "ref": "Ezk.40.44",
+                  "note": "Chambers for the singers in the inner court of the house in Ezekiel's vision."
+                },
+                {
+                  "ref": "2Ch.35.25",
+                  "role": "defining",
+                  "note": "Jeremiah lamented Josiah, “and all the singing men and singing women spoke of Josiah in their laments (קִינוֹת) to this day”: singers of lament too."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "sing; (participle) singer, the Levitical singers",
+          "senses": [
+            {
+              "id": "temple-singers",
+              "gloss": "the singers (of the house of Yahweh)",
+              "definition": "The participle מְשֹׁרֵר, nearly always plural with the article: the order of Levites who sang in the service of the house of Yahweh, set up by David, named beside priests, Levites and gatekeepers in the lists of the return.",
+              "evidence": [
+                {
+                  "ref": "1Ch.15.16",
+                  "role": "defining",
+                  "note": "David told the chiefs of the Levites “to appoint their brothers the singers (הַמְשֹׁרְרִים) with instruments of song (כְלֵי־שִׁיר), harps and lyres and cymbals, sounding aloud with joy”."
+                },
+                {
+                  "ref": "1Ch.6.18",
+                  "note": "“Heman the singer (הַמְשׁוֹרֵר)”, of the sons of Kohath."
+                },
+                {
+                  "ref": "1Ch.9.33",
+                  "note": "“These are the singers, heads of fathers' houses of the Levites … they were on duty day and night.”"
+                },
+                {
+                  "ref": "2Ch.5.12",
+                  "to": "2Ch.5.13",
+                  "role": "defining",
+                  "note": "At the dedication the Levite singers, in fine linen with cymbals, harps and lyres, sang with the trumpeters “as one, to make one sound heard in praising and thanking Yahweh”, and the house was filled with a cloud."
+                },
+                {
+                  "ref": "2Ch.20.21",
+                  "note": "Jehoshaphat “appointed singers to Yahweh” to go before the army saying, “Give thanks to Yahweh, for his covenant faithfulness is for ever.”"
+                },
+                {
+                  "ref": "Ezr.2.41",
+                  "note": "“The singers: the sons of Asaph, a hundred and twenty-eight.”"
+                },
+                {
+                  "ref": "Neh.12.46",
+                  "role": "defining",
+                  "note": "“In the days of David and Asaph of old there was a chief of the singers, and songs of praise and thanksgiving to God.”"
+                },
+                {
+                  "ref": "Neh.13.10",
+                  "note": "The portions of the Levites had not been given, “and the Levites and the singers who did the work had fled each to his field”."
+                },
+                {
+                  "ref": "2Ch.35.15",
+                  "note": "“The singers, the sons of Asaph, were in their place, according to the command of David.”"
+                }
+              ],
+              "kin": [
+                "music-of-worship"
+              ]
+            },
+            {
+              "id": "polel-sing",
+              "gloss": "sing; (participle) singer, singing man or woman",
+              "definition": "To sing, of the song at the burnt offering and of men who have sung of God's work; the participle also of singing men and women outside the temple.",
+              "evidence": [
+                {
+                  "ref": "2Ch.29.28",
+                  "role": "defining",
+                  "note": "While the burnt offering was offered “all the assembly bowed down, and the song was singing (וְהַשִּׁיר מְשׁוֹרֵר) and the trumpets sounding”."
+                },
+                {
+                  "ref": "Job.36.24",
+                  "note": "“Remember that you magnify his work, of which men have sung (שֹׁרְרוּ).”"
+                },
+                {
+                  "ref": "Ezr.2.65",
+                  "role": "defining",
+                  "note": "Among the returning households, apart from their servants, “two hundred singing men and singing women (מְשֹׁרְרִים וּמְשֹׁרְרוֹת)”."
+                },
+                {
+                  "ref": "Zep.2.14",
+                  "note": "Of ruined Nineveh: “a voice shall sing (יְשׁוֹרֵר) in the window”: the cry of the birds that lodge there."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be sung",
+          "senses": [
+            {
+              "id": "be-sung",
+              "gloss": "be sung",
+              "definition": "Of a song: to be sung.",
+              "evidence": [
+                {
+                  "ref": "Isa.26.1",
+                  "role": "defining",
+                  "note": "“In that day this song shall be sung (יוּשַׁר הַשִּׁיר־הַזֶּה) in the land of Judah: We have a strong city; he sets up salvation as walls and rampart.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ᾄδω",
+          "gloss": "sing",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.15.1, אָשִׁירָה → ᾄσωμεν; Psa.96.1; 98.1; 149.1, שִׁירוּ → ᾄσατε; Isa.26.1, יוּשַׁר → ᾄσονται; ᾄδω renders שִׁיר ×62"
+            },
+            {
+              "ref": "Rev.15.3",
+              "role": "defining",
+              "note": "“They sing (ᾄδουσιν) the song of Moses the servant of God and the song of the Lamb”: the song of Exo 15 sung by those who have overcome."
+            },
+            {
+              "ref": "Rev.5.9",
+              "note": "“They sing a new song (ᾄδουσιν ᾠδὴν καινήν)”, the “sing a new song” of the psalms."
+            },
+            {
+              "ref": "Eph.5.19",
+              "note": "“Speaking to one another in psalms and hymns and spiritual songs, singing (ᾄδοντες) and making music in your heart to the Lord.”"
+            },
+            {
+              "ref": "Col.3.16"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זִמֵּר",
+            "note": "“Make music”: the fixed partner of the verb, sing and make music.",
+            "evidence": [
+              {
+                "ref": "Psa.27.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.5.3"
+              },
+              {
+                "ref": "Psa.57.8"
+              },
+              {
+                "ref": "Psa.101.1"
+              },
+              {
+                "ref": "Psa.104.33"
+              },
+              {
+                "ref": "Psa.105.2"
+              },
+              {
+                "ref": "Psa.144.9"
+              }
+            ]
+          },
+          {
+            "lemma": "הִלֵּל",
+            "note": "“Praise”: sing to Yahweh, praise Yahweh.",
+            "evidence": [
+              {
+                "ref": "Jer.20.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.106.12"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "שִׁירוּ לַיהוָה",
+            "gloss": "sing to Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.15.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.96.1"
+              },
+              {
+                "ref": "Psa.98.1"
+              },
+              {
+                "ref": "Psa.149.1"
+              },
+              {
+                "ref": "Isa.42.10"
+              },
+              {
+                "ref": "Jer.20.13"
+              },
+              {
+                "ref": "1Ch.16.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שִׁיר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "song; singing, music",
+      "bdb": [
+        "v.cv.ab"
+      ],
+      "cognate_ids": [
+        "uga-shr",
+        "arc-shira",
+        "akk-seru"
+      ],
+      "summary": "About seventy-seven times. A song, songs, and singing in general, in joy and at feasts, and to Yahweh; the heading of thirty psalms; and the temple's music, with “instruments of song”. The plural שִׁירוֹת at Amo 8:3 is tagged with this word. The brief counts the masculine and feminine nouns together (90 tokens under each key); the feminine has 13 of them.",
+      "senses": [
+        {
+          "id": "song-of-praise",
+          "gloss": "song, song of praise (to Yahweh)",
+          "definition": "A song sung to Yahweh: the new song for a new deliverance, his song in the night, the song of Yahweh that Israel sang in the land.",
+          "evidence": [
+            {
+              "ref": "Psa.40.4",
+              "role": "defining",
+              "note": "“He put a new song (שִׁיר חָדָשׁ) in my mouth, praise to our God; many will see and fear, and trust in Yahweh.”"
+            },
+            {
+              "ref": "Psa.33.3",
+              "note": "“Sing to him a new song; play skilfully with a shout of joy.”"
+            },
+            {
+              "ref": "Psa.96.1",
+              "role": "defining",
+              "note": "“Sing to Yahweh a new song; sing to Yahweh, all the earth”; the psalm ends, “for he comes, for he comes to judge the earth” (Psa 96:13)."
+            },
+            {
+              "ref": "Psa.98.1"
+            },
+            {
+              "ref": "Psa.144.9",
+              "note": "“O God, I will sing a new song to you; on a ten-stringed harp I will make music to you.”"
+            },
+            {
+              "ref": "Psa.149.1",
+              "note": "“Sing to Yahweh a new song, his praise in the assembly of the faithful.”"
+            },
+            {
+              "ref": "Isa.42.10",
+              "role": "defining",
+              "note": "“Sing to Yahweh a new song, his praise from the end of the earth”, after the servant is given as a light of the nations (Isa 42:6)."
+            },
+            {
+              "ref": "Psa.28.7",
+              "note": "“My heart exults, and with my song (וּמִשִּׁירִי) I will thank him.”"
+            },
+            {
+              "ref": "Psa.42.9",
+              "note": "“By day Yahweh commands his covenant faithfulness, and in the night his song is with me, a prayer to the God of my life.”"
+            },
+            {
+              "ref": "Psa.69.31",
+              "role": "defining",
+              "note": "“I will praise the name of God with a song (בְּשִׁיר), and magnify him with thanksgiving”: and it will please Yahweh more than an ox (Psa 69:32)."
+            },
+            {
+              "ref": "Psa.137.3",
+              "to": "Psa.137.4",
+              "note": "“The song of Yahweh (שִׁיר־יְהוָה)” that the exiles would not sing on foreign soil."
+            },
+            {
+              "ref": "Isa.26.1",
+              "note": "“In that day this song shall be sung in the land of Judah.”"
+            },
+            {
+              "ref": "Isa.30.29",
+              "note": "“You shall have a song as in the night when a feast is kept, and gladness of heart … to come to the mountain of Yahweh.”"
+            },
+            {
+              "ref": "Neh.12.46"
+            }
+          ],
+          "kin": [
+            "sing-to-yahweh"
+          ]
+        },
+        {
+          "id": "song-feast",
+          "gloss": "song, singing (at feasts and in joy)",
+          "definition": "Songs and singing in general: at a parting, a feast, wine and revelry; songs that the judgments of Yahweh bring to an end or turn to lament.",
+          "evidence": [
+            {
+              "ref": "Gen.31.27",
+              "role": "defining",
+              "note": "Laban: “I would have sent you away with joy and with songs (וּבְשִׁרִים), with tambourine and lyre.”"
+            },
+            {
+              "ref": "Isa.24.9",
+              "role": "defining",
+              "note": "“They do not drink wine with a song; strong drink is bitter to those who drink it.”"
+            },
+            {
+              "ref": "Amo.8.10",
+              "role": "defining",
+              "note": "“I will turn your feasts into mourning (אֵבֶל) and all your songs into lament (קִינָה).”"
+            },
+            {
+              "ref": "Amo.8.3",
+              "note": "“The songs (שִׁירוֹת) of the temple shall become wailings in that day.”"
+            },
+            {
+              "ref": "Amo.5.23",
+              "role": "defining",
+              "note": "“Take away from me the noise of your songs; I will not listen to the melody of your harps. But let justice roll down like waters” (Amo 5:24)."
+            },
+            {
+              "ref": "Ezk.26.13",
+              "note": "Of Tyre: “I will stop the noise of your songs, and the sound of your lyres shall be heard no more.”"
+            },
+            {
+              "ref": "Ezk.33.32",
+              "role": "defining",
+              "note": "“You are to them like a love song (כְּשִׁיר עֲגָבִים), one who has a beautiful voice and plays well; they hear your words, but they do not do them.”"
+            },
+            {
+              "ref": "Isa.23.16",
+              "note": "To Tyre the forgotten harlot: “sing many songs, that you may be remembered.”"
+            },
+            {
+              "ref": "Ecc.7.5",
+              "note": "“Better to hear the rebuke of the wise than to hear the song of fools.”"
+            },
+            {
+              "ref": "Ecc.12.4",
+              "note": "In old age “all the daughters of song are brought low”."
+            },
+            {
+              "ref": "Jdg.5.12",
+              "note": "“Awake, awake, Deborah; awake, awake, speak a song.”"
+            },
+            {
+              "ref": "1Ki.5.12",
+              "note": "Solomon “spoke three thousand proverbs, and his songs were a thousand and five”."
+            },
+            {
+              "ref": "Sng.1.1",
+              "role": "defining",
+              "note": "“The song of songs (שִׁיר הַשִּׁירִים), which is Solomon's.”"
+            }
+          ]
+        },
+        {
+          "id": "psalm-heading",
+          "gloss": "a song (in the heading of a psalm)",
+          "definition": "In the headings of psalms: “a song”, “a psalm, a song”, and in Psalms 120–134 “a song of ascents” (שִׁיר הַמַּעֲלוֹת).",
+          "evidence": [
+            {
+              "ref": "Psa.30.1",
+              "role": "defining",
+              "note": "“A psalm; a song at the dedication of the house; of David.”"
+            },
+            {
+              "ref": "Psa.45.1",
+              "note": "“A song of loves.”"
+            },
+            {
+              "ref": "Psa.46.1"
+            },
+            {
+              "ref": "Psa.92.1",
+              "note": "“A psalm, a song for the sabbath day.”"
+            },
+            {
+              "ref": "Psa.120.1",
+              "role": "defining",
+              "note": "“A song of ascents”, the heading of each of Psalms 120–134."
+            },
+            {
+              "ref": "Psa.134.1"
+            }
+          ]
+        },
+        {
+          "id": "music-of-worship",
+          "gloss": "song, music (of the house of Yahweh); instruments of song",
+          "definition": "The singing of the house of Yahweh as an ordered service, and in כְּלֵי שִׁיר the instruments that accompany it.",
+          "evidence": [
+            {
+              "ref": "1Ch.6.16",
+              "to": "1Ch.6.17",
+              "role": "defining",
+              "note": "“These are the men David set over the service of song (עַל־יְדֵי־שִׁיר) in the house of Yahweh, after the ark rested; they ministered with song before the dwelling place of the tent of meeting.”"
+            },
+            {
+              "ref": "1Ch.25.6",
+              "to": "1Ch.25.7",
+              "role": "defining",
+              "note": "Under their father “in the song of the house of Yahweh, with cymbals, harps and lyres”; their number, trained “in the song of Yahweh”, two hundred and eighty-eight."
+            },
+            {
+              "ref": "2Ch.29.27",
+              "role": "defining",
+              "note": "“When the burnt offering began, the song of Yahweh (שִׁיר־יְהוָה) began also, with the trumpets and the instruments of David king of Israel.”"
+            },
+            {
+              "ref": "1Ch.16.42",
+              "note": "Instruments “of the song of God”."
+            },
+            {
+              "ref": "2Ch.5.13"
+            },
+            {
+              "ref": "2Ch.7.6",
+              "note": "“The Levites with the instruments of song of Yahweh which David the king had made to thank Yahweh.”"
+            },
+            {
+              "ref": "2Ch.23.13",
+              "note": "“The singers with instruments of song leading the praise.”"
+            },
+            {
+              "ref": "Neh.12.36",
+              "note": "“With the instruments of song of David the man of God.”"
+            },
+            {
+              "ref": "Amo.6.5",
+              "note": "Those at ease in Zion “like David devise for themselves instruments of song”."
+            },
+            {
+              "ref": "1Ch.15.16"
+            },
+            {
+              "ref": "2Ch.34.12"
+            }
+          ],
+          "kin": [
+            "temple-singers"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ᾠδή",
+          "gloss": "song",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ch.5.13, שִׁיר → ᾠδῶν; Psa.137.3 → ᾠδῶν; ᾠδή renders שִׁיר ×23 and more in its other forms"
+            },
+            {
+              "ref": "Rev.5.9",
+              "to": "Rev.5.10",
+              "role": "defining",
+              "note": "“They sing a new song (ᾠδὴν καινήν): … you have made them kings and priests to our God, and they shall reign on the earth.”"
+            },
+            {
+              "ref": "Rev.14.3",
+              "note": "“They sing as it were a new song before the throne … the hundred and forty-four thousand, redeemed from the earth.”"
+            },
+            {
+              "ref": "Eph.5.19"
+            }
+          ]
+        },
+        {
+          "lemma": "ᾆσμα",
+          "gloss": "song",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.33.3; 40.4; 96.1; 98.1; 149.1, שִׁיר חָדָשׁ → ᾆσμα καινόν; Isa.26.1, הַשִּׁיר → ᾆσμα"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תְּהִלָּה",
+            "note": "“Praise”: the new song is his praise.",
+            "evidence": [
+              {
+                "ref": "Psa.40.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.42.10"
+              },
+              {
+                "ref": "Psa.149.1"
+              }
+            ]
+          },
+          {
+            "lemma": "תּוֹדָה",
+            "note": "“Thanksgiving”: praise with a song, magnify with thanksgiving.",
+            "evidence": [
+              {
+                "ref": "Psa.69.31",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.12.46"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קִינָה",
+            "note": "“Lament”: songs turned to lament.",
+            "evidence": [
+              {
+                "ref": "Amo.8.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "אֵבֶל",
+            "note": "“Mourning”, set against feasts and songs.",
+            "evidence": [
+              {
+                "ref": "Amo.8.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שִׁיר חָדָשׁ",
+            "gloss": "a new song",
+            "evidence": [
+              {
+                "ref": "Psa.40.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.33.3"
+              },
+              {
+                "ref": "Psa.96.1"
+              },
+              {
+                "ref": "Psa.98.1"
+              },
+              {
+                "ref": "Psa.144.9"
+              },
+              {
+                "ref": "Psa.149.1"
+              },
+              {
+                "ref": "Isa.42.10"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׁיר הַמַּעֲלוֹת",
+            "gloss": "a song of ascents",
+            "evidence": [
+              {
+                "ref": "Psa.120.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.122.1"
+              },
+              {
+                "ref": "Psa.134.1"
+              }
+            ]
+          },
+          {
+            "phrase": "כְּלֵי שִׁיר",
+            "gloss": "instruments of song",
+            "evidence": [
+              {
+                "ref": "1Ch.15.16",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.7.6"
+              },
+              {
+                "ref": "Neh.12.36"
+              },
+              {
+                "ref": "Amo.6.5"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׁיר הַשִּׁירִים",
+            "gloss": "the song of songs",
+            "evidence": [
+              {
+                "ref": "Sng.1.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שִׁירָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "song, a particular song",
+      "bdb": [
+        "v.cv.ac"
+      ],
+      "cognate_ids": [
+        "uga-shr"
+      ],
+      "summary": "Thirteen times, always one song by name or with “this”: the song of the sea, the song of the well, the song of Moses in Deuteronomy, David's song of deliverance, the song of the beloved's vineyard, the harlot's song. The brief's 90 tokens are the masculine and feminine counted together.",
+      "senses": [
+        {
+          "id": "named-song",
+          "gloss": "a song, this song",
+          "definition": "A single song, named by the occasion or by “this”: sung, written down, taught and spoken.",
+          "evidence": [
+            {
+              "ref": "Exo.15.1",
+              "role": "defining",
+              "note": "“Moses and the sons of Israel sang this song (הַשִּׁירָה הַזֹּאת) to Yahweh.”"
+            },
+            {
+              "ref": "Num.21.17",
+              "note": "“Then Israel sang this song: Spring up, O well.”"
+            },
+            {
+              "ref": "Deu.31.19",
+              "role": "defining",
+              "note": "“Write this song for yourselves and teach it to the sons of Israel; put it in their mouths, that this song may be a witness for me against the sons of Israel.”"
+            },
+            {
+              "ref": "Deu.31.21",
+              "role": "defining",
+              "note": "“This song shall testify before them as a witness, for it shall not be forgotten from the mouths of their seed.”"
+            },
+            {
+              "ref": "Deu.31.22"
+            },
+            {
+              "ref": "Deu.31.30",
+              "note": "“Moses spoke in the ears of all the assembly of Israel the words of this song, until they were finished.”"
+            },
+            {
+              "ref": "Deu.32.44"
+            },
+            {
+              "ref": "2Sa.22.1",
+              "role": "defining",
+              "note": "“David spoke to Yahweh the words of this song in the day Yahweh delivered him from the hand of all his enemies and from the hand of Saul.”"
+            },
+            {
+              "ref": "Psa.18.1"
+            },
+            {
+              "ref": "Isa.5.1",
+              "note": "“A song of my beloved (שִׁירַת דּוֹדִי) touching his vineyard.”"
+            },
+            {
+              "ref": "Isa.23.15",
+              "note": "“It shall be to Tyre as the song of the harlot (כְּשִׁירַת הַזּוֹנָה).”"
+            }
+          ],
+          "kin": [
+            "sing-to-yahweh",
+            "sing-a-song"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ᾠδή",
+          "gloss": "song",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.15.1, הַשִּׁירָה → τὴν ᾠδήν; Deu.31.19, 30, הַשִּׁירָה → τῆς ᾠδῆς, ἡ ᾠδή"
+            },
+            {
+              "ref": "Rev.15.3",
+              "to": "Rev.15.4",
+              "role": "defining",
+              "note": "“The song (ᾠδήν) of Moses the servant of God and the song of the Lamb … all the nations shall come and worship before you.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-shr",
+      "lang": "uga",
+      "form": "𐎌𐎗، ši-i-ru",
+      "translit": "šr (yšr, ašr); šīru",
+      "gloss": "sing; song",
+      "relation": "cognate",
+      "note": "Ugaritic has the verb in the alphabetic texts and the noun, written syllabically ši-i-ru, in the polyglot vocabulary from Ugarit: verb and noun together, as in Hebrew. Ugaritic keeps š and ṯ apart, and has š here.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 202, §93 Glossary, /š-y-r/",
+          "url": "https://archive.org/details/segert-a-basic-grammar-of-the-ugaritic-language-1984",
+          "note": "“yšr, ašr ‘to sing,’ cf. ši-i-ru U:V:137:III:7′ ‘song’ (H. š-y-r)”."
+        }
+      ]
+    },
+    {
+      "id": "arc-shira",
+      "lang": "arc",
+      "form": "שִׁירָא، שִׁירִין",
+      "translit": "šīrā, pl. šīrīn",
+      "gloss": "song",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums, rendering the Hebrew noun (Targum of Song 1:1; Psa 66:1; 137:3). With so close a match in the Targums it may have been taken from the Hebrew; scripture's own Aramaic (Daniel, Ezra) does not use the root, and the Peshitta sings with ܫܒܚ and ܙܡܪ.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שִׁירָא I (ch.)",
+          "note": "“= h. שִׁיר. Targ. Cant. I, 1. Targ. Ps. LXVI, 1 … Targ. Ps. CXXXVII, 3.”"
+        }
+      ]
+    },
+    {
+      "id": "akk-seru",
+      "lang": "akk",
+      "form": "šēru",
+      "translit": "šēru",
+      "gloss": "song; (a musical interval)",
+      "relation": "possible",
+      "note": "Rare, twice in Neo-Assyrian, as a musical term; the usual Akkadian “sing” is zamāru. It may be borrowed from Sumerian šir “song” rather than a Semitic word of the root. Akkadian merged š and ṯ, so it cannot show the sound behind ש.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000124510, šēru [song] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000124510.html",
+          "note": "Meaning “(a musical interval)”; ×2, Neo-Assyrian."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "kingdom-of-god",
+      "statement": "The psalms that call for “a new song” give its reason: “sing to Yahweh, all the earth … say among the nations, Yahweh reigns … for he comes, for he comes to judge the earth; he will judge the world in righteousness and the peoples in his faithfulness” (Psa 96:1, 10, 13; 98:1, 9). Psalm 149's new song is sung by his faithful, who are to execute on the nations the judgment written, “this honour have all his faithful ones” (Psa 149:1, 5–9). Isaiah's new song is sung from the end of the earth when Yahweh goes out against his enemies (Isa 42:10, 13). In Revelation the redeemed sing “a new song”: “you have made them kings and priests to our God, and they shall reign on the earth” (Rev 5:9–10), and those who overcome sing “the song of Moses the servant of God and the song of the Lamb … all the nations shall come and worship before you” (Rev 15:3–4). From the verses: the new song celebrates Yahweh's coming to judge and rule the earth, and his faithful reigning with him there.",
+      "evidence": [
+        {
+          "ref": "Psa.96.1"
+        },
+        {
+          "ref": "Psa.96.10"
+        },
+        {
+          "ref": "Psa.96.13"
+        },
+        {
+          "ref": "Psa.98.1"
+        },
+        {
+          "ref": "Psa.98.9"
+        },
+        {
+          "ref": "Psa.149.1"
+        },
+        {
+          "ref": "Psa.149.5",
+          "to": "Psa.149.9"
+        },
+        {
+          "ref": "Isa.42.10"
+        },
+        {
+          "ref": "Isa.42.13"
+        },
+        {
+          "ref": "Rev.5.9",
+          "to": "Rev.5.10"
+        },
+        {
+          "ref": "Rev.15.3",
+          "to": "Rev.15.4"
+        }
+      ]
+    },
+    {
+      "topic": "song-of-moses-witness",
+      "statement": "Yahweh told Moses to write a song and teach it to Israel “that this song may be a witness for me against the sons of Israel”, for he knew they would turn to other gods when brought into the land, and “this song shall testify before them as a witness, for it shall not be forgotten from the mouths of their seed” (Deu 31:19–21). The song foretells their turning away and the judgments that follow (Deu 32:15–25), and ends, “Rejoice, nations, with his people … he will avenge the blood of his servants … and atone for his land and his people” (Deu 32:43), which Paul quotes of the nations glorifying God (Rom 15:10). From the verses: the song was a standing witness of Israel's apostasy and its punishment, and of a final atonement for the land and the people together, in which the nations are to rejoice.",
+      "evidence": [
+        {
+          "ref": "Deu.31.19",
+          "to": "Deu.31.21"
+        },
+        {
+          "ref": "Deu.32.15",
+          "to": "Deu.32.25"
+        },
+        {
+          "ref": "Deu.32.43"
+        },
+        {
+          "ref": "Rom.15.10"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "The psalmist sings “to Yahweh while I live (בְּחַיָּי)” (Psa 104:33; 146:2), and the living are the ones who praise: “the grave (שְׁאוֹל) cannot thank you, death cannot praise you … the living, the living, he thanks you” (Isa 38:18–19); “in death there is no remembrance of you; in the grave who will thank you?” (Psa 6:6); “will the dust thank you?” in a psalm headed “a song” (Psa 30:1, 10). Isaiah's song to be sung “in that day in the land of Judah” (Isa 26:1) looks to the resurrection: “your dead shall live … awake and sing for joy, you who dwell in the dust” (Isa 26:19). From the verses: song belongs to the living; the dead are silent in the grave until they are raised, and then they sing.",
+      "evidence": [
+        {
+          "ref": "Psa.104.33"
+        },
+        {
+          "ref": "Psa.146.2"
+        },
+        {
+          "ref": "Isa.38.18",
+          "to": "Isa.38.19"
+        },
+        {
+          "ref": "Psa.6.6"
+        },
+        {
+          "ref": "Psa.30.1"
+        },
+        {
+          "ref": "Psa.30.10"
+        },
+        {
+          "ref": "Isa.26.1"
+        },
+        {
+          "ref": "Isa.26.19"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key שיר; no existing entry used it. BDB keys: v.cv.ab noun m., v.cv.ac noun f., v.cv.ad verb (v.cv.aa the root heading). The brief counts the two nouns' tokens together (90 under each); OSHB's lemma split (7892 a / b) gives שִׁירָה 13 tokens (Exo 15:1; Num 21:17; Deu 31:19 ×2, 21, 22, 30; 32:44; 2Sa 22:1; Isa 5:1; 23:15; Psa 18:1) and the rest to שִׁיר, including the plural שִׁירוֹת of Amo 8:3. The name אֲחִישָׁר (BDB a.ck.bc, filed under אָח) is in names/ahishar.json. 1Sa 18:6 (Kethiv לשור, Qere לָשִׁיר) is tagged under another root and not counted. Zep 2:14 יְשׁוֹרֵר “a voice shall sing in the window” and Job 36:24 שֹׁרְרוּ “men have sung” are tagged polel here; Job 36:24 may instead be the verb שׁוּר “behold”; open question. Cognates not recorded: Arabic شعر šiʿr “poetry” (linked by Wiktionary) has ʿ, which the Hebrew lacks, so it is not this root; Arabic سير/سور/ثور (go; leap; rise) share no sense. Sumerian šir₃ “song” (Wiktionary's etymology) is a possible source of Akkadian šēru and perhaps of the Semitic word itself; not followed. Ugaritic noun alphabetic šr “song/singer” (DULAT) not checked, DULAT not vendored; Phoenician not checked in Krahmalkov beyond a text search. Open questions: (1) Job 36:24, sing or behold; (2) whether the Akkadian šēru is the same word or a Sumerian loan; (3) the doctrine statements are reasoned conclusions to review."
+}
