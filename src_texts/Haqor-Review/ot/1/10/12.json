@@ -1,6 +1,65 @@
 {
   "book": 1,
   "chapter": 10,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Resen is the city located between Nineveh and Calah.",
+        "key": "Resen@Gen.10.12",
+        "position": 1
+      },
+      {
+        "evidence": "Nineveh, named in the preceding verse, is the first landmark used to locate Resen.",
+        "key": "Nineveh@Gen.10.11",
+        "position": 3
+      },
+      {
+        "evidence": "Calah, named in the preceding verse, is the second landmark used to locate Resen.",
+        "key": "Calah@Gen.10.11",
+        "position": 5
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and [direct-object marker]",
+        "position": 0
+      },
+      {
+        "gloss": "Resen",
+        "position": 1
+      },
+      {
+        "gloss": "between",
+        "position": 2
+      },
+      {
+        "gloss": "Nineveh",
+        "position": 3
+      },
+      {
+        "gloss": "and",
+        "position": 4
+      },
+      {
+        "gloss": "Calah",
+        "position": 5
+      },
+      {
+        "gloss": "it",
+        "position": 6
+      },
+      {
+        "gloss": "the city",
+        "position": 7
+      },
+      {
+        "gloss": "great",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[and|0] [Resen|1], [between|2] [Nineveh|3] [and|4] [Calah|5], [which|6] {is} [the|7] [great|8] [city|7]."
+  },
   "source": "ot",
   "verse": 12,
   "words": [
