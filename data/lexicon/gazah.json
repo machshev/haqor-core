@@ -2,7 +2,7 @@
   "id": "gazah",
   "root": "גזה",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "tags": [
     "cutting",
     "stone",
@@ -64,8 +64,49 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "גִּזוֹנִי",
+      "pos": "adjective",
+      "gloss": "Gizonite",
+      "bdb": [
+        "c.bj.ad"
+      ],
+      "summary": "The gentilic גִּזוֹנִי names a Gizonite. Its relation to גָּזָה is uncertain and may be a separate keyed gentilic.",
+      "senses": [
+        {
+          "gloss": "Gizonite",
+          "definition": "A person identified as belonging to Gizon.",
+          "evidence": [
+            {
+              "ref": "1Ch.11.34",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-gezi",
+      "lang": "arc",
+      "form": "גְּזֵי / גְּזָא",
+      "translit": "gəzē / gəza",
+      "gloss": "cut",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גְּזֵי, גְּזָא",
+          "note": "Jewish Aramaic for cut; Shabbat 150b:9."
+        }
+      ]
     }
   ],
   "doctrine": [],
-  "note": "The root's link between cutting and hewn stone is clear from the words' use. The gentilic גִּזוֹנִי is retained for later review. Psalm 71:6's image may be taking or cutting off, so the contextual nuance remains open. Drafted for Psalm 71:6 coverage."
+  "note": "The root's link between cutting and hewn stone is clear from the words' use. Jewish Aramaic גְּזֵי / גְּזָא means cut (Jastrow, Shabbat 150b:9), supporting the cutting sense and the z sound, but it does not decide whether Psalm 71:6 pictures taking or cutting the child from the womb. The gentilic גִּזוֹנִי may be a separately keyed Gizon gentilic; its relation is uncertain. Drafted for Psalm 71:6 coverage."
 }

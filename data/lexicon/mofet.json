@@ -3,7 +3,7 @@
   "root": "אפת",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "sign, wonder",
   "summary": "מוֹפֵת is a sign or wonder displaying Yahweh's power. In Psalm 71:7 the psalmist has become a portent to many because Yahweh is his strong refuge. The root assignment אפת follows the corpus analysis, while the noun's relation to the root's broader etymology remains uncertain.",
   "words": [
@@ -44,7 +44,23 @@
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-mofet",
+      "lang": "arc",
+      "form": "מוֹפֵתָא",
+      "translit": "mōpətā",
+      "gloss": "wonder, sign",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מוֹפֵתָא",
+          "note": "Jewish Aramaic form used in Targum Onkelos Deuteronomy 13:2 and related passages."
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalm 78:43 and Psalm 71:7 coverage. The noun's relation to root אפת remains uncertain. Greek τέρας is a Septuagint rendering and is not evidence for Hebrew meaning."
 }
