@@ -3,13 +3,13 @@
   "root": "נוע",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "tags": [
     "shaking",
     "movement"
   ],
-  "gloss": "shake, tremble",
-  "summary": "Shaking expresses instability or contempt. Psalm 22 portrays people shaking their heads at the sufferer.",
+  "gloss": "shake, sway, wander",
+  "summary": "Hannah’s lips move in silent prayer, trees sway in the wind, and wanderers keep moving from place to place. A shake of the head can also express contempt.",
   "words": [
     {
       "lemma": "נוּעַ",
@@ -33,6 +33,76 @@
                 },
                 {
                   "ref": "2Ki.19.21"
+                }
+              ]
+            },
+            {
+              "gloss": "make someone wander",
+              "definition": "Instead of asking that his enemies die, David asks that God scatter them so that his people will remember. Israel too was made to wander in the wilderness.",
+              "evidence": [
+                {
+                  "ref": "Psa.59.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.32.13"
+                }
+              ]
+            },
+            {
+              "gloss": "range about",
+              "definition": "The dogs roam about looking for food. The read form is hiphil, with the same searching motion as the written qal.",
+              "evidence": [
+                {
+                  "ref": "Psa.59.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "move, sway, wander",
+          "senses": [
+            {
+              "gloss": "move, sway, wander",
+              "definition": "Hannah’s lips move although her voice is inaudible. Cain must wander, and the psalm pictures dogs ranging about in search of food.",
+              "evidence": [
+                {
+                  "ref": "1Sa.1.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.4.12"
+                },
+                {
+                  "ref": "Psa.59.16"
+                },
+                {
+                  "ref": "Isa.24.20"
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "arc-nua"
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be shaken",
+          "senses": [
+            {
+              "gloss": "be shaken",
+              "definition": "The fruit drops when the tree is shaken, and grain is shaken in a sieve.",
+              "evidence": [
+                {
+                  "ref": "Nam.3.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Amo.9.9"
                 }
               ]
             }
@@ -60,9 +130,47 @@
         }
       ],
       "gender": "m"
+    },
+    {
+      "lemma": "נֵעָה",
+      "bdb": [
+        "n.cd.ab"
+      ],
+      "pos": "name",
+      "gloss": "Neah",
+      "senses": [
+        {
+          "gloss": "Neah",
+          "definition": "The boundary of Zebulun turns toward this place. The text gives its location without explaining the name.",
+          "evidence": [
+            {
+              "ref": "Jos.19.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-nua",
+      "lang": "arc",
+      "form": "נוּעַ",
+      "translit": "nūaʿ",
+      "gloss": "totter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נוּעַ II, N00385, Targum to Psalms 107:27"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
   "doctrine": [],
-  "note": " Noah is not this root; proper names Noadiah and Noa are outside this brief key set."
+  "note": "The ketiv and qere of Psalm 59:16 differ in stem. Both describe the restless search for food. Noah daughter of Zelophehad has a separate name entry."
 }

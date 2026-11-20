@@ -3,7 +3,7 @@
   "root": "מלל",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "tags": [
     "speech"
   ],
@@ -129,18 +129,22 @@
       "pos": "verb",
       "gloss": "crush, wither",
       "bdb": [
-        "m.ci.aa",
-        "m.ch.aa"
+        "m.ci.aa"
       ],
       "stems": [
         {
           "stem": "hithpael",
-          "gloss": "be crushed",
+          "gloss": "be blunted or cut off",
           "senses": [
             {
-              "gloss": "be crushed",
-              "definition": "The wicked are crushed and swept away.",
-              "evidence": [{"ref": "Psa.58.8", "role": "defining"}]
+              "gloss": "be blunted or cut off",
+              "definition": "The psalm speaks of drawing a bow and asks that its arrows lose their effect. The precise image may be broken shafts or blunted points.",
+              "evidence": [
+                {
+                  "ref": "Psa.58.8",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         },
@@ -151,7 +155,12 @@
             {
               "gloss": "wither",
               "definition": "The wicked wither quickly like grass and fade like green vegetation.",
-              "evidence": [{"ref": "Psa.37.2", "role": "defining"}]
+              "evidence": [
+                {
+                  "ref": "Psa.37.2",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }
@@ -175,5 +184,5 @@
     }
   ],
   "doctrine": [],
-  "note": "The similarly spelled verbs for rubbing, withering and circumcising have distinct uses."
+  "note": "The similarly spelled verbs for rubbing, withering and circumcising have distinct uses. The brief lists the same withering forms under m.ci.aa and m.ch.aa. The hithpael form at Psalm 58:8 has arrows as its immediate context."
 }
