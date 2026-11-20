@@ -4,12 +4,12 @@
   "review": {
     "entities": [
       {
-        "evidence": "The flood narrative identifies this Noah as Lamech’s son, the father of Shem, Ham, and Japheth, matching the source tag.",
+        "evidence": "The flood narrative identifies Noah as Lamech’s son and the father of Shem, Ham, and Japheth, matching the source tag.",
         "key": "Noah@Gen.5.29",
         "position": 0
       },
       {
-        "evidence": "The name יַהְוֶה identifies the God in whose eyes Noah found favor. The source tag LORD refers to the same bearer as the earlier Yahweh proposal.",
+        "evidence": "יַהְוֶה explicitly names Yahweh, the God in whose eyes Noah found favor, matching the LORD source tag.",
         "key": "LORD@Gen.1.1",
         "position": 4
       }
@@ -36,7 +36,35 @@
         "position": 4
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "evidence": "The flood narrative identifies this Noah as Lamech’s son, the father of Shem, Ham, and Japheth, matching the source tag.",
+        "key": "Noah@Gen.5.29",
+        "position": 0,
+        "surface": "וְנֹחַ"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "מָצָא"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "חֵן"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "בְּעֵינֵי"
+      },
+      {
+        "evidence": "The name יַהְוֶה identifies the God in whose eyes Noah found favor. The source tag LORD refers to the same bearer as the earlier Yahweh proposal.",
+        "key": "LORD@Gen.1.1",
+        "position": 4,
+        "surface": "יַהְוֶה"
+      }
+    ],
     "translation": "[But Noah|0] [found|1] [favor|2] [in the eyes of|3] [Yahweh|4]."
   },
   "source": "ot",
