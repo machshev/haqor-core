@@ -1,0 +1,44 @@
+{
+  "id": "qara-tear",
+  "root": "קרע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "tearing"
+  ],
+  "gloss": "tear; rip",
+  "summary": "קרע describes tearing or rending. Psalm 35:15 says the attackers gathered and tore themselves apart against David.",
+  "words": [
+    {
+      "lemma": "קָרַע",
+      "gloss": "tear",
+      "bdb": [
+        "s.di.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "tear",
+          "senses": [
+            {
+              "gloss": "tear",
+              "definition": "To tear or rip apart.",
+              "evidence": [
+                {
+                  "ref": "Psa.35.15",
+                  "role": "defining",
+                  "note": "They gather and tear themselves against David."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalm 35 coverage."
+}
