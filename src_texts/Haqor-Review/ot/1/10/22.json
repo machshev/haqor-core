@@ -1,6 +1,114 @@
 {
   "book": 1,
   "chapter": 10,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The heading בְּנֵי שֵׁם identifies Shem, Noah’s son, as the father of the five men listed.",
+        "key": "Shem@Gen.5.32",
+        "position": 1
+      },
+      {
+        "evidence": "Elam is the first son named under “the sons of Shem.”",
+        "key": "Elam@Gen.10.22",
+        "position": 2
+      },
+      {
+        "evidence": "Asshur follows Elam in the list of Shem’s sons.",
+        "key": "Asshur@Gen.10.22",
+        "position": 3
+      },
+      {
+        "evidence": "Arpachshad is named between Asshur and Lud among Shem’s sons.",
+        "key": "Arpachshad@Gen.10.22",
+        "position": 4
+      },
+      {
+        "evidence": "Lud is named between Arpachshad and Aram among Shem’s sons.",
+        "key": "Lud@Gen.10.22",
+        "position": 5
+      },
+      {
+        "evidence": "Aram follows Lud as the final son named in Shem’s list.",
+        "key": "Aram@Gen.10.22",
+        "position": 6
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "sons of",
+        "position": 0
+      },
+      {
+        "gloss": "Shem",
+        "position": 1
+      },
+      {
+        "gloss": "Elam",
+        "position": 2
+      },
+      {
+        "gloss": "and Asshur",
+        "position": 3
+      },
+      {
+        "gloss": "and Arpachshad",
+        "position": 4
+      },
+      {
+        "gloss": "and Lud",
+        "position": 5
+      },
+      {
+        "gloss": "and Aram",
+        "position": 6
+      }
+    ],
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "בְּנֵי"
+      },
+      {
+        "evidence": "The heading בְּנֵי שֵׁם identifies Shem, Noah’s son, as the father of the five men listed.",
+        "key": "Shem@Gen.5.32",
+        "position": 1,
+        "surface": "שֵׁם"
+      },
+      {
+        "evidence": "Elam is the first son named under “the sons of Shem.”",
+        "key": "Elam@Gen.10.22",
+        "position": 2,
+        "surface": "עֵילָם"
+      },
+      {
+        "evidence": "Asshur follows Elam in the list of Shem’s sons.",
+        "key": "Asshur@Gen.10.22",
+        "position": 3,
+        "surface": "וְאַשּׁוּר"
+      },
+      {
+        "evidence": "Arpachshad is named between Asshur and Lud among Shem’s sons.",
+        "key": "Arpachshad@Gen.10.22",
+        "position": 4,
+        "surface": "וְאַרְפַּכְשַׁד"
+      },
+      {
+        "evidence": "Lud is named between Arpachshad and Aram among Shem’s sons.",
+        "key": "Lud@Gen.10.22",
+        "position": 5,
+        "surface": "וְלוּד"
+      },
+      {
+        "evidence": "Aram follows Lud as the final son named in Shem’s list.",
+        "key": "Aram@Gen.10.22",
+        "position": 6,
+        "surface": "וַאֲרָם"
+      }
+    ],
+    "translation": "[The sons of|0] [Shem|1] [{were}|1] [Elam|2] [and Asshur|3] [and Arpachshad|4] [and Lud|5] [and Aram|6]."
+  },
   "source": "ot",
   "verse": 22,
   "words": [
@@ -61,26 +169,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-20",
-              "english": "Elam",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "עֵילָם follows בְּנֵי שֵׁם, “the sons of Shem,” as the first name in the list.",
-                  "ref": "Gen.10.22",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Elam",
-              "id": "3eeylaam",
-              "name": "עֵילָם",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Genesis names Elam among the sons of Shem. The meaning of his name is uncertain.",
-              "updated": "2026-11-20"
-            },
             "article_id": "3eeylaam",
             "base": null,
             "change": "Add a personal-name article for עֵילָם. Leave the root unassigned because the text gives no evidence connecting the name to עיט.",
@@ -107,26 +195,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-20",
-              "english": "Asshur",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "The heading בְּנֵי שֵׁם identifies Asshur and the others listed as sons of Shem.",
-                  "ref": "Gen.10.22",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Asshur",
-              "id": "2axxwwr",
-              "name": "אַשּׁוּר",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Genesis names Asshur as a son of Shem. The derivation of his name is uncertain.",
-              "updated": "2026-11-20"
-            },
             "article_id": "2axxwwr",
             "base": null,
             "change": "Add a personal-name article for Asshur. The existing geographical article documents the place named in Genesis 2:14.",
@@ -179,31 +247,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-20",
-              "english": "Lud",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "Lud appears between Arpachshad and Aram under the heading “the sons of Shem.”",
-                  "ref": "Gen.10.22",
-                  "role": "defining"
-                },
-                {
-                  "note": "The genealogy again names Lud between Arpachshad and Aram among Shem’s sons.",
-                  "ref": "1Ch.1.17",
-                  "role": "example"
-                }
-              ],
-              "gloss": "Lud",
-              "id": "lwwd",
-              "name": "לוּד",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Genesis names Lud among the sons of Shem. The meaning of his name is uncertain.",
-              "updated": "2026-11-20"
-            },
             "article_id": "lwwd",
             "base": null,
             "change": "Add a personal-name article for לוּד.",
