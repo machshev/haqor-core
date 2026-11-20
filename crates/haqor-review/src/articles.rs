@@ -153,7 +153,8 @@ fn apply_pending_locked(
         let row = db
             .query_row(
                 "SELECT a.source,a.ref,a.pos,a.id,a.name,a.base,a.body FROM article a
-            WHERE a.applied=0
+            JOIN job w ON w.source=a.source AND w.ref=a.ref AND w.pos=a.pos
+            WHERE a.applied=0 AND w.state='done'
             ORDER BY a.ref,a.source,a.pos LIMIT 1",
                 [],
                 |r| {
