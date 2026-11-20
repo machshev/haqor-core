@@ -5,33 +5,58 @@
   "created": "2026-11-19",
   "updated": "2026-11-19",
   "tags": [
-    "psalm-35"
+    "psalms"
   ],
   "gloss": "sackcloth",
-  "summary": "sackcloth in Psalm 35",
+  "summary": "Sackcloth is a coarse garment of mourning. The Greek σάκκος is a New Testament loan from this word.",
   "words": [
     {
       "lemma": "שַׂק",
-      "gloss": "sackcloth",
       "bdb": [
         "u.bz.ab"
       ],
       "pos": "noun",
+      "gloss": "sack, sackcloth",
       "senses": [
         {
-          "gloss": "sackcloth",
-          "definition": "sackcloth in Psalm 35",
+          "gloss": "sack, sackcloth",
+          "definition": "The psalmist removes sackcloth when Yahweh restores him.",
           "evidence": [
             {
-              "ref": "Psa.35.13",
+              "ref": "Psa.30.12",
               "role": "defining"
+            },
+            {
+              "ref": "Gen.37.34"
             }
           ]
+        }
+      ],
+      "gender": "m",
+      "greek": [
+        {
+          "lemma": "σάκκος",
+          "gloss": "sackcloth",
+          "evidence": [
+            {
+              "ref": "Mat.11.21"
+            },
+            {
+              "ref": "Luk.10.13"
+            },
+            {
+              "ref": "Rev.6.12"
+            },
+            {
+              "ref": "Rev.11.3"
+            }
+          ],
+          "relation": "loan"
         }
       ]
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalm 35 coverage."
+  "note": "The Greek loan σάκκος is recorded because the New Testament uses it for sackcloth. Its etymology is recorded in the brief."
 }

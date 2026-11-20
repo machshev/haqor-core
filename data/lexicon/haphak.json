@@ -5,12 +5,10 @@
   "created": "2026-11-19",
   "updated": "2026-11-19",
   "tags": [
-    "psalms",
-    "creation",
-    "worship"
+    "psalms"
   ],
-  "gloss": "turn, transform",
-  "summary": "To turn changes one state into another. Yahweh turns mourning into dancing.",
+  "gloss": "turn, overturn, perversity",
+  "summary": "To turn can transform, overturn or reverse a condition. The same family names overthrow, contrariness, crookedness and the stocks that turn a prisoner’s posture.",
   "words": [
     {
       "lemma": "הָפַךְ",
@@ -18,15 +16,15 @@
         "e.cb.aa"
       ],
       "pos": "verb",
-      "gloss": "turn, transform",
+      "gloss": "turn, overturn",
       "stems": [
         {
           "stem": "qal",
-          "gloss": "turn into",
+          "gloss": "turn, transform",
           "senses": [
             {
-              "gloss": "turn into",
-              "definition": "Yahweh turns mourning into dancing and sackcloth into gladness.",
+              "gloss": "turn, transform",
+              "definition": "Yahweh turns mourning into dancing and overturns cities.",
               "evidence": [
                 {
                   "ref": "Psa.30.12",
@@ -38,11 +36,218 @@
               ]
             }
           ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be turned",
+          "senses": [
+            {
+              "gloss": "be turned",
+              "definition": "The waters and circumstances are turned by Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Exo.7.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "turn oneself",
+          "senses": [
+            {
+              "gloss": "turn oneself",
+              "definition": "A person turns himself or changes course.",
+              "evidence": [
+                {
+                  "ref": "1Sa.10.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
         }
       ]
+    },
+    {
+      "lemma": "תַּהְפֻּכָה",
+      "bdb": [
+        "e.cb.ag"
+      ],
+      "pos": "noun",
+      "gloss": "perversity",
+      "senses": [
+        {
+          "gloss": "perversity",
+          "definition": "A perverse generation turns away from faithfulness.",
+          "evidence": [
+            {
+              "ref": "Deu.32.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.2.12"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַהְפֵּכָה",
+      "bdb": [
+        "e.cb.ae"
+      ],
+      "pos": "noun",
+      "gloss": "overthrow",
+      "senses": [
+        {
+          "gloss": "overthrow",
+          "definition": "The destruction of Sodom is the model for a land overthrown by judgment.",
+          "evidence": [
+            {
+              "ref": "Deu.29.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Amo.4.11"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַהְפֶּכֶת",
+      "bdb": [
+        "e.cb.af"
+      ],
+      "pos": "noun",
+      "gloss": "stocks",
+      "senses": [
+        {
+          "gloss": "stocks",
+          "definition": "Jeremiah is put in stocks that restrain the body.",
+          "evidence": [
+            {
+              "ref": "Jer.20.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "הֶפֶךְ",
+      "bdb": [
+        "e.cb.ab"
+      ],
+      "pos": "noun",
+      "gloss": "contrary, overturning",
+      "senses": [
+        {
+          "gloss": "contrary, overturning",
+          "definition": "The contrary or overturning opposes the expected order.",
+          "evidence": [
+            {
+              "ref": "Isa.29.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֲפֵכָה",
+      "bdb": [
+        "e.cb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "overthrow",
+      "senses": [
+        {
+          "gloss": "overthrow",
+          "definition": "An overthrow is a completed turning down.",
+          "evidence": [
+            {
+              "ref": "Ezk.21.32",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "הֲפַכְפַּךְ",
+      "bdb": [
+        "e.cb.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "crooked, perverse",
+      "senses": [
+        {
+          "gloss": "crooked, perverse",
+          "definition": "The guilty person’s way is crooked, while the pure person’s way is upright.",
+          "evidence": [
+            {
+              "ref": "Pro.21.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֹר",
+      "bdb": [
+        "e.cb.al"
+      ],
+      "pos": "name",
+      "gloss": "Hor",
+      "senses": [
+        {
+          "gloss": "Hor",
+          "definition": "Mount Hor is where Aaron dies and is a border landmark.",
+          "evidence": [
+            {
+              "ref": "Num.20.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.34.7"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "הָרָא",
+      "bdb": [
+        "e.cb.am"
+      ],
+      "pos": "name",
+      "gloss": "Hara",
+      "senses": [
+        {
+          "gloss": "Hara",
+          "definition": "Hara is a destination of exile for the eastern tribes.",
+          "evidence": [
+            {
+              "ref": "1Ch.5.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30."
+  "note": "The exact derivation of the proper names Hor and Hara remains open."
 }
