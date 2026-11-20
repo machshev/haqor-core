@@ -77,6 +77,16 @@ enum Action {
         chat_endpoint: Option<String>,
         #[arg(long, conflicts_with = "worker")]
         model: Option<String>,
+        /// Model for verse reviews; defaults to --model.
+        #[arg(long, conflicts_with = "worker")]
+        verse_model: Option<String>,
+        /// Codex reasoning effort for word jobs (e.g. low, medium, high, xhigh);
+        /// defaults to the Codex configuration.
+        #[arg(long, conflicts_with_all = ["worker", "chat_endpoint"])]
+        effort: Option<String>,
+        /// Codex reasoning effort for verse reviews; defaults to --effort.
+        #[arg(long, conflicts_with_all = ["worker", "chat_endpoint"])]
+        verse_effort: Option<String>,
         #[arg(long, default_value = "data/lexicon")]
         lexicon: PathBuf,
         #[arg(long, default_value = "data")]
@@ -263,6 +273,9 @@ fn main() -> Result<()> {
             data,
             src_texts,
             model,
+            verse_model,
+            effort,
+            verse_effort,
             lexicon,
         } => {
             ensure!(
@@ -283,15 +296,26 @@ fn main() -> Result<()> {
                 max_agents,
                 max_attempts,
                 &|packet| {
+                    let verse = packet["kind"] == "verse";
+                    let model = if verse {
+                        verse_model.as_deref().or(model.as_deref())
+                    } else {
+                        model.as_deref()
+                    };
+                    let effort = if verse {
+                        verse_effort.as_deref().or(effort.as_deref())
+                    } else {
+                        effort.as_deref()
+                    };
                     if let Some(endpoint) = &chat_endpoint {
                         return chat::review(
                             endpoint,
-                            model.as_deref().context("missing model")?,
+                            model.context("missing model")?,
                             packet,
                             &lexicon,
                         );
                     }
-                    invoke(worker.as_deref(), model.as_deref(), &jobs::prompt(packet))
+                    invoke(worker.as_deref(), model, effort, &jobs::prompt(packet))
                 },
             )
         }
@@ -653,7 +677,12 @@ fn bind_worker_lifetime(cmd: &mut Command) {
     let _ = cmd;
 }
 
-fn invoke(worker: Option<&Path>, model: Option<&str>, prompt: &str) -> Result<(Value, Value)> {
+fn invoke(
+    worker: Option<&Path>,
+    model: Option<&str>,
+    effort: Option<&str>,
+    prompt: &str,
+) -> Result<(Value, Value)> {
     let mut cmd = Command::new(worker.unwrap_or(Path::new("codex")));
     if worker.is_none() {
         cmd.args(["exec", "--ephemeral", "--sandbox", "read-only", "--json"]);
@@ -663,6 +692,9 @@ fn invoke(worker: Option<&Path>, model: Option<&str>, prompt: &str) -> Result<(V
         cmd.args(["--enable", "omit_skill_descriptions"]);
         if let Some(m) = model {
             cmd.args(["--model", m]);
+        }
+        if let Some(e) = effort {
+            cmd.args(["-c", &format!("model_reasoning_effort=\"{e}\"")]);
         }
         cmd.arg("-");
     }
