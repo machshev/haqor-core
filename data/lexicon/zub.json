@@ -32,9 +32,49 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "זָב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "discharge, bodily flow",
+      "bdb": [
+        "g.aq.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "bodily discharge",
+          "definition": "A man with a discharge is unclean until the flow stops and he is washed.",
+          "evidence": [
+            {
+              "ref": "Lev.15.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.15.13"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "ar-dhaba",
+      "lang": "ar",
+      "form": "ذاب",
+      "translit": "dhāba",
+      "gloss": "melt, dissolve, flow",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "art. ذوب",
+          "note": "Arabic root describes melting and flowing, a possible cognate for זוב."
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted from Psalm 78:20."
 }

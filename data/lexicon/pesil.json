@@ -27,9 +27,54 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "פָּסַל",
+      "pos": "verb",
+      "gloss": "carve, hew",
+      "bdb": [
+        "q.ca.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "carve",
+          "senses": [
+            {
+              "gloss": "carve",
+              "definition": "A craftsman carves wood or stone into an image, which the law forbids as an idol.",
+              "evidence": [
+                {
+                  "ref": "Exo.34.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.4.16"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "ar-fasala",
+      "lang": "ar",
+      "form": "فصل",
+      "translit": "faṣala",
+      "gloss": "separate, cut apart",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "art. فصل",
+          "note": "Arabic cutting/separation is a possible cognate of carving."
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted from Psalm 78:58."
 }
