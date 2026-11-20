@@ -166,75 +166,7 @@
             "base": "576656bfe9c8441182654160615e68bbf3c36547fc5941bce079346d385586dc",
             "change": "Revise the existing flood sense to define the inundation itself. Add the Genesis evidence and retain Psalm 29:10 as an example.",
             "definition": "An inundation in which rising waters cover the land.",
-            "evidence": "Genesis 7:7 calls the waters that drove Noah’s family into the ark “the waters of the flood.” Genesis 7:17 describes the flood as the waters rise and lift the ark.",
-            "reconciliation": {
-              "base": "576656bfe9c8441182654160615e68bbf3c36547fc5941bce079346d385586dc",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/mabbul.json",
-              "conflicts": [
-                "/summary",
-                "/words[]/senses[]/definition",
-                "/words[]/senses[]/evidence[]/note"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/summary",
-                  "value": "In Genesis, מַבּוּל names the flood whose rising waters lifted Noah’s ark. Psalm 29 speaks of Yahweh enthroned over the flood."
-                },
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/gender",
-                  "value": "m"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/definition",
-                  "value": "An inundation in which rising waters cover the land."
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/0/note",
-                  "value": "The flood lasts forty days, and the waters rise and lift the ark above the earth."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/0/ref",
-                  "value": "Gen.7.17"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/1/note",
-                  "value": "Noah and his family enter the ark because of מֵי הַמַּבּוּל, the waters of the flood."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/1/ref",
-                  "value": "Gen.7.7"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/-",
-                  "value": {
-                    "note": "God announces that he will bring the flood upon the earth.",
-                    "ref": "Gen.6.17"
-                  }
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/-",
-                  "value": {
-                    "note": "Yahweh sits enthroned over the flood.",
-                    "ref": "Psa.29.10"
-                  }
-                }
-              ]
-            }
+            "evidence": "Genesis 7:7 calls the waters that drove Noah’s family into the ark “the waters of the flood.” Genesis 7:17 describes the flood as the waters rise and lift the ark."
           }
         },
         "evidence": "In מֵי הַמַּבּוּל, “the waters of the flood,” מֵי is the construct form of מַיִם, and הַמַּבּוּל identifies the flood to which the waters belong. The whole phrase follows מִפְּנֵי and gives the reason Noah and his family entered the ark.",

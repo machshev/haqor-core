@@ -248,53 +248,7 @@
             "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
             "change": "Add Genesis 5:3 as an example of the first Hebrew noun sense in the existing shem article.",
             "definition": "The personal name by which someone is known.",
-            "evidence": "Genesis 5:3 supplies the child's name, שֵׁת, immediately after שְׁמוֹ, “his name.”",
-            "reconciliation": {
-              "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/shem.json",
-              "conflicts": [
-                "/words[]/senses"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/1/note",
-                  "value": "Adam calls his son's name Seth. The word שְׁמוֹ refers to the personal name he gives the child."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/1/ref",
-                  "value": "Gen.5.3"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/1/role",
-                  "value": "example"
-                },
-                {
-                  "op": "remove",
-                  "path": "/words/0/senses/0/evidence/1/to"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/-",
-                  "value": {
-                    "ref": "Exo.3.13",
-                    "to": "Exo.3.15"
-                  }
-                },
-                {
-                  "op": "remove",
-                  "path": "/words/6/senses/0/evidence/0/role"
-                }
-              ]
-            }
+            "evidence": "Genesis 5:3 supplies the child's name, שֵׁת, immediately after שְׁמוֹ, “his name.”"
           }
         },
         "evidence": "In וַיִּקְרָא אֶת שְׁמוֹ שֵׁת, Adam calls his son's name Seth. The suffix ־וֹ refers to the son just born, and שֵׁת gives the name Adam assigns him.",

@@ -130,65 +130,7 @@
             "base": "96f836dfd21f3d150d1252488b03345c3c1ecca2101743792946e2c251fb5649",
             "change": "Add Genesis 3:11 as evidence for the existing Hebrew sense le-to, illustrating a pronominal addressee.",
             "definition": "With a verb of telling, לְ marks the person who receives the message.",
-            "evidence": "Genesis 3:11 uses לְךָ after הִגִּיד to identify the man as the person told.",
-            "reconciliation": {
-              "base": "96f836dfd21f3d150d1252488b03345c3c1ecca2101743792946e2c251fb5649",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/le.json",
-              "conflicts": [
-                "/words"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/2/note",
-                  "value": "In מִי הִגִּיד לְךָ, “Who told you?”, לְךָ identifies the hearer and the following כִּי clause gives the message."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/2/ref",
-                  "value": "Gen.3.11"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/2/role",
-                  "value": "defining"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/3/note",
-                  "value": "\"Moses said לְחֹבָב, to Hobab\"; in the same verse the people go אֶל־הַמָּקוֹם \"to the place\": direction of travel takes אֶל, the one addressed takes לְ."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/3/ref",
-                  "value": "Num.10.29"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/4/note",
-                  "value": "The Aramaic: \"the king answered לְדָנִיֵּאל, to Daniel\"."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/4/ref",
-                  "value": "Dan.2.47"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/-",
-                  "value": {
-                    "note": "\"God called לָאוֹר, to the light, Day\": naming is calling to a thing.",
-                    "ref": "Gen.1.5"
-                  }
-                }
-              ]
-            }
+            "evidence": "Genesis 3:11 uses לְךָ after הִגִּיד to identify the man as the person told."
           }
         },
         "evidence": "In מִי הִגִּיד לְךָ, “Who told you?”, מִי asks who spoke, לְךָ identifies the hearer, and כִּי עֵירֹם אָתָּה gives the message, “that you are naked.”",
@@ -262,75 +204,7 @@
             "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
             "change": "Add Genesis 3:11 as an example of the existing min-source sense in the מִן article.",
             "definition": "מִן marks the source from which something is taken, here the tree from which the food came.",
-            "evidence": "Gen.3.11 places מִן before הָעֵץ and repeats the relation with מִמֶּנּוּ, “from it.”",
-            "reconciliation": {
-              "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/min.json",
-              "conflicts": [
-                "/words"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/greek/1/evidence/2/note",
-                  "value": "Hos 11:1 quoted: \"Out of (ἐκ) Egypt I called my son.\""
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/4/note",
-                  "value": "In הֲמִן הָעֵץ … אָכָלְתָּ, “Did you eat from the tree?”, מִן introduces the tree from which the food came. The intervening prohibition calls it מִמֶּנּוּ, “from it.”"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/4/ref",
-                  "value": "Gen.3.11"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/5/note",
-                  "value": "\"I am raining bread for you מִן־הַשָּׁמַיִם, from the heavens\"; Jhn 6:32 takes it up as \"the bread out of (ἐκ) heaven\"."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/5/ref",
-                  "value": "Exo.16.4"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/6/note",
-                  "value": "\"מִמּוֹשְׁבֹתֵיכֶם, from your dwellings, you shall bring two loaves of waving\": what the people bring comes from their own homes."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/6/ref",
-                  "value": "Lev.23.17"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/7/note",
-                  "value": "\"מֵיַהְוֶה, from Yahweh, the thing has gone out\": the one it comes from."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/7/ref",
-                  "value": "Gen.24.50"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/1/evidence/-",
-                  "value": {
-                    "note": "\"All came to be מִן־הֶעָפָר, from the dust, and all return to the dust.\"",
-                    "ref": "Ecc.3.20"
-                  }
-                }
-              ]
-            }
+            "evidence": "Gen.3.11 places מִן before הָעֵץ and repeats the relation with מִמֶּנּוּ, “from it.”"
           }
         },
         "evidence": "הֲמִן הָעֵץ opens the question answered by the final verb אָכָלְתָּ, “Did you eat from the tree?” Within the intervening command, מִמֶּנּוּ, “from it,” refers back to the same tree.",
@@ -438,86 +312,7 @@
             "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
             "change": "Add Genesis 3:11 as an example of the existing Hebrew source sense in the article min.",
             "definition": "Marks the source from which something is taken, here the tree from which food is eaten.",
-            "evidence": "In Genesis 3:11, אֲכָל מִמֶּנּוּ means “to eat from it.” The suffix refers back to the tree named at the start of the question.",
-            "reconciliation": {
-              "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/min.json",
-              "conflicts": [
-                "/doctrine",
-                "/words"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/doctrine/0/statement",
-                  "value": "Scripture uses מִן for what the first man was made from: \"dust from the ground\" (Gen 2:7). The same word gives the reason for his end: he returns to the ground \"for from it you were taken; for dust you are, and to dust you shall return\" (Gen 3:19). The Preacher says the same of every man and beast: \"all came to be from the dust, and all return to the dust\" (Ecc 3:20). What man is made of is earth, and life beyond death must come as a gift from God, not from anything in man."
-                },
-                {
-                  "op": "replace",
-                  "path": "/doctrine/2/statement",
-                  "value": "Isaiah gives the cause of the servant's sufferings with מִן, as \"he was pierced because of our transgressions (מִפְּשָׁעֵנוּ), crushed because of our iniquities (מֵעֲוֹנֹתֵינוּ)\" (Isa 53:5), and \"because of the transgression of my people, the stroke was his\" (Isa 53:8). Peter applies the passage to Jesus Christ (1Pe 2:24). The word says what his suffering came from, the sins of others; Hebrew's word for \"in place of\" is תַּחַת (the ram offered \"in place of his son\", Gen 22:13), and Isaiah does not use it here. In that same verse the outcome is for the many: \"the chastisement of our peace was upon him, and with his stripes we are healed\" (Isa 53:5)."
-                },
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/4/note",
-                  "value": "In אֲכָל מִמֶּנּוּ, “to eat from it,” the suffix resumes הָעֵץ, the tree from which the man was forbidden to eat."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/4/ref",
-                  "value": "Gen.3.11"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/1/evidence/4/role",
-                  "value": "example"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/5/note",
-                  "value": "\"I am raining bread for you מִן־הַשָּׁמַיִם, from the heavens\"; Jhn 6:32 takes it up as \"the bread out of (ἐκ) heaven\"."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/5/ref",
-                  "value": "Exo.16.4"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/6/note",
-                  "value": "\"מִמּוֹשְׁבֹתֵיכֶם, from your dwellings, you shall bring two loaves of waving\": what the people bring comes from their own homes."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/6/ref",
-                  "value": "Lev.23.17"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/7/note",
-                  "value": "\"מֵיַהְוֶה, from Yahweh, the thing has gone out\": the one it comes from."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/1/evidence/7/ref",
-                  "value": "Gen.24.50"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/1/evidence/-",
-                  "value": {
-                    "note": "\"All came to be מִן־הֶעָפָר, from the dust, and all return to the dust.\"",
-                    "ref": "Ecc.3.20"
-                  }
-                }
-              ]
-            }
+            "evidence": "In Genesis 3:11, אֲכָל מִמֶּנּוּ means “to eat from it.” The suffix refers back to the tree named at the start of the question."
           }
         },
         "evidence": "In הָעֵץ אֲשֶׁר צִוִּיתִיךָ לְבִלְתִּי אֲכָל מִמֶּנּוּ, “the tree that I commanded you not to eat from,” the suffix resumes הָעֵץ, “the tree,” inside the relative clause. This masculine singular antecedent resolves the form מִמֶּנּוּ, which in another context could also mean “from us.”",

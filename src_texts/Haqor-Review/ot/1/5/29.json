@@ -46,49 +46,7 @@
             "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
             "change": "Add Genesis 5:29 as an example of giving a child a name under the existing Hebrew noun sense.",
             "definition": "The personal name by which someone is known.",
-            "evidence": "Genesis 5:29 places the child's given name, נֹחַ, immediately after שְׁמוֹ, “his name.”",
-            "reconciliation": {
-              "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/shem.json",
-              "conflicts": [
-                "/words[]/senses"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/1/note",
-                  "value": "Lamech calls his son Noah. The child's given name follows שְׁמוֹ, “his name.”"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/1/ref",
-                  "value": "Gen.5.29"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/1/role",
-                  "value": "example"
-                },
-                {
-                  "op": "remove",
-                  "path": "/words/0/senses/0/evidence/1/to"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/-",
-                  "value": {
-                    "ref": "Exo.3.13",
-                    "to": "Exo.3.15"
-                  }
-                }
-              ]
-            }
+            "evidence": "Genesis 5:29 places the child's given name, נֹחַ, immediately after שְׁמוֹ, “his name.”"
           }
         },
         "evidence": "In וַיִּקְרָא אֶת שְׁמוֹ נֹחַ, “he called his name Noah,” אֶת marks שְׁמוֹ as the object of וַיִּקְרָא. The following word נֹחַ supplies the name given to the child.",
@@ -276,69 +234,7 @@
             "base": null,
             "change": "Broaden the proposed Qal definition to include a curse pronounced on a thing, and cite the feminine participle applied to the ground.",
             "definition": "To pronounce a curse on someone or something. The passive participle describes whoever or whatever is under the curse.",
-            "evidence": "In Gen.3.17 Yahweh addresses Adam, but the subject of אֲרוּרָה is הָאֲדָמָה, the ground. In Gen.3.14 the corresponding masculine form אָרוּר describes the serpent.",
-            "reconciliation": {
-              "article": {
-                "cognates": [],
-                "created": "2026-11-20",
-                "doctrine": [],
-                "gloss": "pronounce a curse",
-                "id": "arar",
-                "note": "",
-                "root": "ארר",
-                "status": "draft",
-                "summary": "אָרַר means to pronounce a curse on someone or something. In Genesis 3 Yahweh uses the passive participle when he declares first the serpent and then the ground cursed.",
-                "tags": [
-                  "speech",
-                  "curse"
-                ],
-                "updated": "2026-11-20",
-                "words": [
-                  {
-                    "gloss": "curse",
-                    "greek": [],
-                    "lemma": "אָרַר",
-                    "pos": "verb",
-                    "stems": [
-                      {
-                        "gloss": "pronounce a curse",
-                        "senses": [
-                          {
-                            "definition": "To pronounce a curse on someone or something. The passive participle describes whoever or whatever is under the curse.",
-                            "evidence": [
-                              {
-                                "note": "Yahweh addresses the serpent directly with אָרוּר אַתָּה, “cursed are you.”",
-                                "ref": "Gen.3.14",
-                                "role": "defining"
-                              },
-                              {
-                                "note": "In אֲרוּרָה הָאֲדָמָה, “cursed is the ground,” the feminine participle agrees with the ground. Adam will eat from it in toil all his life.",
-                                "ref": "Gen.3.17",
-                                "role": "defining"
-                              }
-                            ],
-                            "gloss": "curse"
-                          }
-                        ],
-                        "stem": "qal"
-                      }
-                    ],
-                    "usage": {
-                      "opposites": [],
-                      "parallels": [],
-                      "phrases": []
-                    }
-                  }
-                ]
-              },
-              "base": null,
-              "conflicts": [
-                "/gloss",
-                "/summary",
-                "/tags",
-                "/words[]/stems[]/senses"
-              ]
-            }
+            "evidence": "In Gen.3.17 Yahweh addresses Adam, but the subject of אֲרוּרָה is הָאֲדָמָה, the ground. In Gen.3.14 the corresponding masculine form אָרוּר describes the serpent."
           }
         },
         "evidence": "In הָאֲדָמָה אֲשֶׁר אֵרְרָהּ יַהְוֶה, “the ground that Yahweh had cursed,” יַהְוֶה is the subject. The object suffix ־הּ refers back to הָאֲדָמָה, the ground pronounced cursed in Genesis 3:17.",

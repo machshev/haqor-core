@@ -63,72 +63,7 @@
             "base": "576656bfe9c8441182654160615e68bbf3c36547fc5941bce079346d385586dc",
             "change": "Amend the mabbul article to define the noun directly and cite Genesis 7:10 alongside Genesis 6:17 and Psalm 29:10.",
             "definition": "A flood that overwhelms the land. In Genesis the noun names the deluge of Noah’s day.",
-            "evidence": "Genesis 7:10 calls the waters upon the earth מֵי הַמַּבּוּל, “the waters of the flood.”",
-            "reconciliation": {
-              "base": "576656bfe9c8441182654160615e68bbf3c36547fc5941bce079346d385586dc",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/mabbul.json",
-              "conflicts": [
-                "/summary",
-                "/words[]/senses[]/definition",
-                "/words[]/senses[]/evidence[]/note"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/summary",
-                  "value": "Genesis calls the deluge in Noah’s day מַבּוּל and speaks of its waters spreading over the earth. Psalm 29 depicts Yahweh enthroned over the flood."
-                },
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/gender",
-                  "value": "m"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/definition",
-                  "value": "A flood that overwhelms the land. In Genesis the noun names the deluge of Noah’s day."
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/0/note",
-                  "value": "God announces to Noah that he will bring a flood of water upon the earth."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/0/ref",
-                  "value": "Gen.6.17"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/1/note",
-                  "value": "After seven days מֵי הַמַּבּוּל, “the waters of the flood,” were upon the earth."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/1/ref",
-                  "value": "Gen.7.10"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/1/role",
-                  "value": "defining"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/-",
-                  "value": {
-                    "note": "Yahweh sits enthroned over the flood and reigns forever.",
-                    "ref": "Psa.29.10"
-                  }
-                }
-              ]
-            }
+            "evidence": "Genesis 7:10 calls the waters upon the earth מֵי הַמַּבּוּל, “the waters of the flood.”"
           }
         },
         "evidence": "In וּמֵי הַמַּבּוּל, “and the waters of the flood,” מֵי is the construct form of “waters,” and הַמַּבּוּל identifies the flood to which they belong. The plural verb הָיוּ agrees with “waters,” which the verse says were upon the earth after seven days.",

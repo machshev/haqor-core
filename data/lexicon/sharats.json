@@ -7,13 +7,43 @@
   "note": "",
   "root": "שרצ",
   "status": "draft",
-  "summary": "Genesis describes waters full of living creatures with this root. The command pairs the verb שָׁרַץ with the noun שֶׁרֶץ, a swarm.",
+  "summary": "Waters teem with living creatures in Genesis 1:20. In Genesis 7:21 the creatures themselves swarm on the ground, and the related noun names them collectively.",
   "tags": [
     "life",
     "creation"
   ],
   "updated": "2026-11-20",
   "words": [
+    {
+      "gender": "m",
+      "gloss": "swarming creatures",
+      "greek": [],
+      "lemma": "שֶׁרֶץ",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "Living creatures that swarm, taken collectively.",
+          "evidence": [
+            {
+              "note": "The noun names the living creatures with which the waters are to teem.",
+              "ref": "Gen.1.20",
+              "role": "defining"
+            },
+            {
+              "note": "The singular noun covers the creatures that swarm on the ground.",
+              "ref": "Gen.7.21",
+              "role": "defining"
+            }
+          ],
+          "gloss": "swarming creatures"
+        }
+      ],
+      "usage": {
+        "opposites": [],
+        "parallels": [],
+        "phrases": []
+      }
+    },
     {
       "gloss": "swarm, teem",
       "greek": [],
@@ -24,19 +54,31 @@
           "gloss": "swarm, teem",
           "senses": [
             {
-              "definition": "Of waters, to be full of living creatures moving in them.",
+              "definition": "Of living creatures, to swarm.",
               "evidence": [
                 {
-                  "note": "The waters are the subject of יִשְׁרְצוּ. The words שֶׁרֶץ נֶפֶשׁ חַיָּה describe the living swarm with which they are to teem.",
+                  "note": "The participle describes what the creatures do on the ground.",
+                  "ref": "Gen.7.21",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "swarm"
+            },
+            {
+              "definition": "Of waters, to teem with living creatures.",
+              "evidence": [
+                {
+                  "note": "The waters are commanded to teem with living creatures.",
                   "ref": "Gen.1.20",
                   "role": "defining"
                 },
                 {
-                  "note": "The account of the command's fulfillment uses שָׁרְצוּ of the waters and identifies the creatures moving in them.",
-                  "ref": "Gen.1.21"
+                  "note": "The verse describes the living creatures with which the waters teemed.",
+                  "ref": "Gen.1.21",
+                  "role": "example"
                 }
               ],
-              "gloss": "teem with living creatures"
+              "gloss": "teem with creatures"
             }
           ],
           "stem": "qal"

@@ -466,37 +466,7 @@
             "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
             "change": "Clarify the first Hebrew noun sense to include creatures explicitly and explain the naming clause in its defining citation.",
             "definition": "The designation by which a person or creature is called.",
-            "evidence": "In Gen.2.19, הוּא שְׁמוֹ identifies what the man called each creature as its name.",
-            "reconciliation": {
-              "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/shem.json",
-              "conflicts": [
-                "/words[]/senses"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/definition",
-                  "value": "A name identifies the person or creature who bears it. When Moses asks what to tell Israel, Yahweh gives a name to be remembered through the generations."
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/0/note",
-                  "value": "The man chooses what to call each creature. הוּא שְׁמוֹ identifies what he called it as its name."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/gloss",
-                  "value": "name by which someone or something is called"
-                }
-              ]
-            }
+            "evidence": "In Gen.2.19, הוּא שְׁמוֹ identifies what the man called each creature as its name."
           }
         },
         "evidence": "מַה יִּקְרָא לוֹ asks what the man will call each creature. הוּא שְׁמוֹ answers that whatever he called it was its name. The suffix ־וֹ refers to the creature.",

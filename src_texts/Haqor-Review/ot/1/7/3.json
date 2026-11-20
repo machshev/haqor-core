@@ -173,74 +173,7 @@
             "base": null,
             "change": "Include the animal use alongside the human use under a single sense of נְקֵבָה.",
             "definition": "A female, whether human or animal.",
-            "evidence": "Genesis 6:19 pairs נְקֵבָה with זָכָר for the animals entering the ark. Genesis 1:27 uses the same pair for humankind.",
-            "reconciliation": {
-              "article": {
-                "cognates": [],
-                "created": "2026-11-20",
-                "doctrine": [],
-                "gloss": "female",
-                "id": "naqav",
-                "note": "",
-                "root": "נקב",
-                "status": "draft",
-                "summary": "נְקֵבָה designates a female. Genesis pairs it with זָכָר, ‘male,’ both for humankind at creation and for the animals entering the ark.",
-                "tags": [
-                  "body"
-                ],
-                "updated": "2026-11-20",
-                "words": [
-                  {
-                    "gender": "f",
-                    "gloss": "female",
-                    "greek": [],
-                    "lemma": "נְקֵבָה",
-                    "pos": "noun",
-                    "senses": [
-                      {
-                        "definition": "A female human or animal.",
-                        "evidence": [
-                          {
-                            "note": "Two of each are to enter the ark. זָכָר וּנְקֵבָה specifies one male and one female.",
-                            "ref": "Gen.6.19",
-                            "role": "defining"
-                          },
-                          {
-                            "note": "God creates humankind זָכָר וּנְקֵבָה, ‘male and female.’",
-                            "ref": "Gen.1.27",
-                            "role": "defining"
-                          }
-                        ],
-                        "gloss": "female"
-                      }
-                    ],
-                    "usage": {
-                      "opposites": [
-                        {
-                          "evidence": [
-                            {
-                              "ref": "Gen.6.19"
-                            }
-                          ],
-                          "lemma": "זָכָר",
-                          "note": "The male is the other member of the pair."
-                        }
-                      ],
-                      "parallels": [],
-                      "phrases": []
-                    }
-                  }
-                ]
-              },
-              "base": null,
-              "conflicts": [
-                "/summary",
-                "/tags",
-                "/words[]/senses[]/definition",
-                "/words[]/senses[]/evidence[]/note",
-                "/words[]/usage/opposites[]/note"
-              ]
-            }
+            "evidence": "Genesis 6:19 pairs נְקֵבָה with זָכָר for the animals entering the ark. Genesis 1:27 uses the same pair for humankind."
           }
         },
         "evidence": "In Genesis 7:3, זָכָר וּנְקֵבָה ‘male and female’ describes the birds to be taken into the ark. נְקֵבָה identifies the female bird in the pair.",

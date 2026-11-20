@@ -114,75 +114,7 @@
             "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
             "change": "Add Genesis 3:5 as an example of the existing partitive sense, min-some-of.",
             "definition": "With a verb of eating, מִן marks the food of which someone eats a part.",
-            "evidence": "Genesis 3:5 repeats the suffixed preposition used with the same verb in Genesis 3:3.",
-            "reconciliation": {
-              "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/min.json",
-              "conflicts": [
-                "/words"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/doctrine/0/statement",
-                  "value": "Scripture uses מִן for what the first man was made from: \"dust from the ground\" (Gen 2:7). The same word gives the reason for his end: he returns to the ground \"for from it you were taken; for dust you are, and to dust you shall return\" (Gen 3:19). The Preacher says the same of every man and beast: \"all came to be from the dust, and all return to the dust\" (Ecc 3:20). What man is made of is earth, and nothing in these verses is made of anything else; his life is the breath God gave (Gen 2:7), and when that is gone he goes back to what he came from. Paul reads Gen 2:7 the same way: \"the first man is out of (ἐκ) the earth, made of dust\" (1Co 15:47). So man is mortal by what he is made of, and life beyond death must come as a gift from God, not from anything in man."
-                },
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/2/evidence/2/note",
-                  "value": "אֲכָלְכֶם מִמֶּנּוּ means “your eating of it.” The serpent repeats the woman’s words about eating some of the fruit."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/2/evidence/2/ref",
-                  "value": "Gen.3.5"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/2/evidence/2/role",
-                  "value": "example"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/2/evidence/3/note",
-                  "value": "\"When one of you (מִכֶּם) brings an offering … of the cattle, of the herd and of the flock (מִן־הַבָּקָר וּמִן־הַצֹּאן)\"."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/2/evidence/3/ref",
-                  "value": "Lev.1.2"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/2/evidence/3/role",
-                  "value": "defining"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/2/evidence/4/note",
-                  "value": "Abel brought \"of the firstborn of his flock and of their fat\"."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/2/evidence/4/ref",
-                  "value": "Gen.4.4"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/2/evidence/-",
-                  "value": {
-                    "note": "\"pull out for her some מִן־הַצְּבָתִים, from the bundles\".",
-                    "ref": "Rut.2.16"
-                  }
-                }
-              ]
-            }
+            "evidence": "Genesis 3:5 repeats the suffixed preposition used with the same verb in Genesis 3:3."
           }
         },
         "evidence": "בְּיוֹם אֲכָלְכֶם מִמֶּנּוּ means “when you eat of it.” The serpent repeats the woman’s לֹא תֹאכְלוּ מִמֶּנּוּ in Genesis 3:3. Her words identify what they would eat as the fruit of the tree.",

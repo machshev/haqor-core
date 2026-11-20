@@ -126,31 +126,7 @@
             "base": "f85cb8318776fca83f5afc393c2265ab6e8ce3987a85da46bfa01e5efbd30297",
             "change": "Add Gen.4.6 as an example of the existing Hebrew ‘why?’ sense.",
             "definition": "With לְ, מָה asks why something is so or why it happened.",
-            "evidence": "In Gen.4.6 Yahweh asks Cain why his face has fallen.",
-            "reconciliation": {
-              "base": "f85cb8318776fca83f5afc393c2265ab6e8ce3987a85da46bfa01e5efbd30297",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/mah.json",
-              "conflicts": [
-                "/words"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/1/evidence/-",
-                  "value": {
-                    "note": "In וְלָמָּה נָפְלוּ פָנֶיךָ Yahweh asks Cain why his face has fallen.",
-                    "ref": "Gen.4.6",
-                    "role": "example"
-                  }
-                }
-              ]
-            }
+            "evidence": "In Gen.4.6 Yahweh asks Cain why his face has fallen."
           }
         },
         "evidence": "In וְלָמָּה נָפְלוּ פָנֶיךָ, ‘and why has your face fallen?’, וְ joins this question to Yahweh’s preceding question about Cain’s anger. The repeated לָמָּה asks Cain to account for his fallen expression.",

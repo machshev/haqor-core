@@ -83,70 +83,7 @@
             "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
             "change": "Broaden the first Hebrew noun sense to include geographical names and cite Genesis 2:14 as defining evidence.",
             "definition": "A name identifies its bearer, including a geographical feature such as a river.",
-            "evidence": "Genesis 2:14 explicitly gives חִדֶּקֶל as the שֵׁם of the third river.",
-            "reconciliation": {
-              "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/shem.json",
-              "conflicts": [
-                "/summary",
-                "/words[]/senses[]/definition"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/summary",
-                  "value": "A name identifies its bearer and can preserve their memory. In the Psalms, loving or praising Yahweh’s name expresses devotion to Yahweh himself. The consonants also write a place adverb distinguished by its vowel and its cognates."
-                },
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/definition",
-                  "value": "A name identifies its bearer. Genesis gives Hiddekel as the name of the third river and recounts how Adam names the animals. When Moses asks what to tell Israel, Yahweh gives a name to be remembered through the generations."
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/0/ref",
-                  "value": "Gen.2.14"
-                },
-                {
-                  "op": "remove",
-                  "path": "/words/0/senses/0/evidence/0/to"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/1/ref",
-                  "value": "Gen.2.19"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/1/role",
-                  "value": "defining"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/1/to",
-                  "value": "Gen.2.20"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/0/evidence/-",
-                  "value": {
-                    "ref": "Exo.3.13",
-                    "to": "Exo.3.15"
-                  }
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/gloss",
-                  "value": "identifying name"
-                }
-              ]
-            }
+            "evidence": "Genesis 2:14 explicitly gives חִדֶּקֶל as the שֵׁם of the third river."
           }
         },
         "evidence": "שֵׁם governs הַנָּהָר הַשְּׁלִישִׁי ‘the third river’ in a construct chain. חִדֶּקֶל supplies the name in the verbless clause ‘and the name of the third river is Hiddekel.’",

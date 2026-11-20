@@ -233,47 +233,7 @@
             "base": "d8dce38f79549e3ae5a33b554106d9b697991b2bf1b18199b19be20e491dca9b",
             "change": "Assign this occurrence to the existing tavek-middle sense in tavek and clarify the construct phrase in its Gen.2.9 evidence note.",
             "definition": "The middle of a place. With prefixed בְּ and a following place name or noun, the phrase locates something in the middle of that place.",
-            "evidence": "In Gen.2.9, עֵץ הַחַיִּים בְּתוֹךְ הַגָּן locates the tree of life relative to the garden. The construct form תוֹךְ takes הַגָּן as its complement.",
-            "reconciliation": {
-              "base": "d8dce38f79549e3ae5a33b554106d9b697991b2bf1b18199b19be20e491dca9b",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/tavek.json",
-              "conflicts": [
-                "/note"
-              ],
-              "patch": [
-                {
-                  "op": "add",
-                  "path": "/created",
-                  "value": "2026-11-18"
-                },
-                {
-                  "op": "replace",
-                  "path": "/doctrine/1/statement",
-                  "value": "Those Yahweh dwells among are called out of the midst of what is unclean. Moses told Israel, “separate yourselves from the midst of this congregation” (Num 16:21); Isaiah, “go out from her midst, purify yourselves, you who bear the vessels of Yahweh” (Isa 52:11); Jeremiah, “flee from the midst of Babylon … go out from her midst, my people” (Jer 51:6, 45). Paul joins Isa 52:11 to the promise of Lev 26:12: “come out from their midst and be separate, says the Lord, and touch no unclean thing, and I will receive you, and you will be a Father to you” (2Co 6:16–18), and the voice from heaven repeats Jeremiah's call over Babylon the great: “come out of her, my people” (Rev 18:4). From the verses: the son stands in the midst of the congregation, and those who are God's separate themselves from that which he will judge."
-                },
-                {
-                  "op": "replace",
-                  "path": "/doctrine/2/statement",
-                  "value": "In Psalm 22 the sufferer, after his deliverance, says: “I will declare your name to my brothers; in the midst of the assembly (בְּתוֹךְ קָהָל) I will praise you” (Psa 22:23). Hebrews puts these words in the mouth of Jesus: “I will declare your name to my brothers; in the midst of the ecclesia (ἐν μέσῳ ἐκκλησίας) I will sing your praise” (Heb 2:12), because “he who sanctifies and those who are sanctified are all of one”, and so “he is not ashamed to call them brothers” (Heb 2:11). He shared their flesh and blood, and “had to be made like his brothers in all things” (Heb 2:14, 17). From the verses: the son stands in the midst of the ecclesia as one of the brothers, a man of their nature, praising his God and theirs."
-                },
-                {
-                  "op": "replace",
-                  "path": "/note",
-                  "value": "Root key: תוכ. BDB files תָּוֶךְ and תִּיכוֹן under תוה beside unrelated words, and the database keys these words' tokens with root תוה (word_info) and entry_root תוה for w.aj.ae and w.aj.af; the root table has a תוכ row, but its four forms are parses of other roots (הַמְתֻכָּן, לֶכְתֵּךְ, וְהִתַּכְתִּי, לְוָתָךְ). תוכ is chosen as the word's own consonants, as כי and אמ were chosen for ki.json and im.json, so that the root key תוה stays free for an entry on תָּו “mark” and its verb. No other entry has root תוכ. Because the tokens are keyed תוה, the app finds this entry through haqor_lexicon_bdb and entry_root (bdb keys w.aj.ae, w.aj.af); if a later entry takes root תוה, the lookup by root would send these tokens to that entry first, and the join should then be checked. Words: w.aj.ae (תָּוֶךְ) and w.aj.af (תִּיכוֹן); w.an.af is a cross-reference with no tokens. Left for an entry of their own (they share only BDB's page): תָּו “mark” (w.ai.ab, Ezk 9:4, 6; Job 31:35), the verb תָּוָה “make a mark” (w.ai.ad, Ezk 9:4, 6), תַּאֲוָה (w.ai.ac; its 9 tokens are the “desire” word of אוה filed here by spelling, Gen 49:26 apart), תָּוָה “pain” (w.aj.aa, Psa 78:41), תּוֹלָל (w.aj.ak, Psa 137:3), Aramaic תְּוַהּ “be startled” (xw.ac.aa, Dan 3:24) and the Peshitta's תוה “be amazed”, and the name תּוֹחַ / תֹּחוּ (w.aj.ab, w.am.ad), whose consonants differ (ח); no name is formed from תוכ, so no name entry. The place חֲצַר הַתִּיכוֹן (Ezk 47:16) is a place name. Uses: w.aj.ae counts 419 tokens by spelling; Psa 72:14 מִתּוֹךְ is תֹּךְ “oppression” (root תככ, w.ap.ab; parallel חָמָס), so the word's own count is 418. No Aramaic word: Biblical Aramaic and the Peshitta say “in the midst” with גּוֹא / ܓܘ (root גו), another word; SEDRA has no root tk. Cognates not found: no Arabic cognate in Lane (تك and تيك are unrelated), none in Oracc's Akkadian (Akkadian “midst” is qablu, qerbu), nothing in Anderson–Moser. Leads not followed: DULAT for the fuller Ugaritic attestation; Krahmalkov's TKT (p. 490, “?etym.”, an object in the temple, KAI 10.5 btkt ʾbn), which some read as “midst”, is not cited because he gives no etymology; Old Aramaic and Moabite for a t-k word (DNWSI not vendored). Krahmalkov's p. 319 and Segert's pp. 78, 102, 203 are from the text layers' running heads; check against the scans. Greek: μέσος is given on תָּוֶךְ only; the Septuagint renders תִּיכוֹן by μέσος too (Exo 26:28; Jdg 7:19; 1Ki 6:6, 8) but no New Testament verse quotes those, so no Greek is listed for it. Lev 26:11–12 is rendered ἐν ὑμῖν, not with μέσος, so 2Co 6:16 is cited in the sense and the doctrine, not under μέσος. Senses are illustrative, not exhaustive (418 uses); many verses could stand under “among” or “inside” alike."
-                },
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/0/evidence/3/note",
-                  "value": "After עֵץ הַחַיִּים, “the tree of life”, בְּתוֹךְ הַגָּן locates the tree “in the middle of the garden”. The prefix בְּ supplies “in”, and הַגָּן completes the construct תוֹךְ, “the middle of”."
-                }
-              ]
-            }
+            "evidence": "In Gen.2.9, עֵץ הַחַיִּים בְּתוֹךְ הַגָּן locates the tree of life relative to the garden. The construct form תוֹךְ takes הַגָּן as its complement."
           }
         },
         "evidence": "Gen.2.9 places בְּתוֹךְ הַגָּן immediately after עֵץ הַחַיִּים. The phrase locates the tree of life in the middle of the garden. הַגָּן supplies the place whose middle is meant.",

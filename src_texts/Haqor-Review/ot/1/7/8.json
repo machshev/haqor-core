@@ -130,42 +130,7 @@
             "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
             "change": "Add Genesis 7:8–9 as an example of the existing Hebrew partitive sense min-some-of.",
             "definition": "Introduces a group from which particular members are taken or identified.",
-            "evidence": "Genesis 7:8–9 identifies animals that came two by two from among the animals that were not clean.",
-            "reconciliation": {
-              "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/min.json",
-              "conflicts": [
-                "/words"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/cognates/7/note",
-                  "value": "Proposed as a root behind מִן, as \"cut off, separate\", and with it a Hebrew verb מנן not found in scripture. Not shown: the sense is attested in this source only, Lane's article (p. 3024) has only \"confer a favour\", \"reproach for a favour\", Ugaritic m-n-n is \"be weakened\", Ge'ez mannana \"reject\", and none of these languages uses the verb or a noun from it as \"from\". Recorded as the lead it is."
-                },
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/2/evidence/-",
-                  "value": {
-                    "note": "וּמִן הַבְּהֵמָה אֲשֶׁר אֵינֶנָּה טְהֹרָה introduces the class of unclean animals from among which individuals came two by two.",
-                    "ref": "Gen.7.8",
-                    "role": "example",
-                    "to": "Gen.7.9"
-                  }
-                },
-                {
-                  "op": "replace",
-                  "path": "/words/0/senses/4/evidence/4/note",
-                  "value": "\"I am saved\" at no point here: \"מִן־גַּעֲרָתְךָ, at your rebuke, they fled.\""
-                }
-              ]
-            }
+            "evidence": "Genesis 7:8–9 identifies animals that came two by two from among the animals that were not clean."
           }
         },
         "evidence": "In Genesis 7:8, וּמִן introduces הַבְּהֵמָה אֲשֶׁר אֵינֶנָּה טְהֹרָה, “the animals that are not clean.” The preceding phrase names clean animals in the same construction. Genesis 7:9 says they came two by two, so מִן marks the class from which those animals came.",
@@ -256,31 +221,7 @@
             "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
             "change": "Add Genesis 7:8 to the evidence for the Hebrew partitive sense min-some-of in the existing min article.",
             "definition": "Partitive מִן introduces a whole or group from which some members are taken.",
-            "evidence": "Genesis 7:8 uses וּמִן הָעוֹף to add birds to the groups represented, repeating the construction used for the clean and unclean animals.",
-            "reconciliation": {
-              "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
-              "base_commit": "69cd79e1",
-              "base_path": "data/lexicon/min.json",
-              "conflicts": [
-                "/words"
-              ],
-              "patch": [
-                {
-                  "op": "replace",
-                  "path": "/updated",
-                  "value": "2026-11-20"
-                },
-                {
-                  "op": "add",
-                  "path": "/words/0/senses/2/evidence/-",
-                  "value": {
-                    "note": "וּמִן הָעוֹף means “and from among the birds.” The repeated מִן introduces each group from which individual animals come.",
-                    "ref": "Gen.7.8",
-                    "role": "example"
-                  }
-                }
-              ]
-            }
+            "evidence": "Genesis 7:8 uses וּמִן הָעוֹף to add birds to the groups represented, repeating the construction used for the clean and unclean animals."
           }
         },
         "evidence": "In Genesis 7:8, וּמִן הָעוֹף means “and from among the birds.” The verse repeats מִן before each group of animals, first the clean animals, then the unclean animals, then the birds. The collective noun הָעוֹף names the group from which individual birds come.",
