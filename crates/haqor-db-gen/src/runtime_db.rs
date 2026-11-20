@@ -393,8 +393,6 @@ pub fn generate_runtime(
     db.execute_batch(INDEXES)?;
     db.execute_batch("DETACH DATABASE out")?;
 
-    import_review_occurrences(&Connection::open(output)?, src_texts)?;
-
     let quotations = crate::quotations::build_quotations(&Connection::open(output)?)?;
     info!("Found {quotations} cross references (OT/NT quotations and parallels)");
     crate::tsk::build_thematic_references(&Connection::open(output)?, src_texts)?;
@@ -407,18 +405,6 @@ pub fn generate_runtime(
         &data_dir.join(crate::events::EVENT_OVERRIDES),
         &data_dir.join(crate::sequences::EVENT_SEQUENCES),
     )?;
-    let existing: std::collections::HashSet<String> = db
-        .prepare("PRAGMA table_info(review_occurrence)")?
-        .query_map([], |row| row.get(1))?
-        .collect::<rusqlite::Result<_>>()?;
-    for column in ["language", "qualifier", "entry_id"] {
-        if !existing.contains(column) {
-            db.execute(
-                &format!("ALTER TABLE review_occurrence ADD COLUMN {column} TEXT"),
-                [],
-            )?;
-        }
-    }
     // After the names, whose people and places the finds name.
     crate::artifacts::build_artifacts(
         &Connection::open(output)?,
@@ -467,7 +453,10 @@ pub fn generate_runtime(
 /// Import per-verse review packets as an additive runtime overlay. Word
 /// analyses are imported as soon as they are published. Verse translations
 /// are imported separately only after the verse review is complete.
-pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Result<usize> {
+pub(crate) fn import_review_occurrences(
+    db: &rusqlite::Transaction,
+    src_texts: &Path,
+) -> Result<Vec<(String, i64, String)>> {
     db.execute_batch(
         "CREATE TABLE IF NOT EXISTS review_occurrence(\
         source TEXT NOT NULL, ref INTEGER NOT NULL, position INTEGER NOT NULL,\
@@ -475,9 +464,22 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
         language TEXT, qualifier TEXT, entry_id TEXT,\
         PRIMARY KEY(source, ref, position)) WITHOUT ROWID",
     )?;
+    let existing: std::collections::HashSet<String> = db
+        .prepare("PRAGMA table_info(review_occurrence)")?
+        .query_map([], |row| row.get(1))?
+        .collect::<rusqlite::Result<_>>()?;
+    for column in ["language", "qualifier", "entry_id"] {
+        if !existing.contains(column) {
+            db.execute(
+                &format!("ALTER TABLE review_occurrence ADD COLUMN {column} TEXT"),
+                [],
+            )?;
+        }
+    }
     let root = src_texts.join("Haqor-Review");
-    if !root.exists() {
-        return Ok(0);
+    db.execute("DELETE FROM review_occurrence", [])?;
+    if !root.try_exists()? {
+        return Ok(Vec::new());
     }
     let mut files = Vec::new();
     fn visit(dir: &Path, files: &mut Vec<std::path::PathBuf>) -> Result<()> {
@@ -492,9 +494,8 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
         Ok(())
     }
     visit(&root, &mut files)?;
-    let tx = db.unchecked_transaction()?;
-    tx.execute("DELETE FROM review_occurrence", [])?;
-    let mut insert = tx.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss,language,qualifier,entry_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)")?;
+    let mut translations = Vec::new();
+    let mut insert = db.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss,language,qualifier,entry_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)")?;
     let mut count = 0;
     for path in files {
         let packet: Value = serde_json::from_str(&std::fs::read_to_string(&path)?)
@@ -510,6 +511,32 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
                 .context("review packet chapter")?,
             packet["verse"].as_i64().context("review packet verse")?,
         );
+        let (book, chapter, verse) = (reference >> 16, (reference >> 8) & 255, reference & 255);
+        let expected_path = root
+            .join(source)
+            .join(book.to_string())
+            .join(chapter.to_string())
+            .join(format!("{verse}.json"));
+        ensure!(
+            path == expected_path
+                && chapter > 0
+                && verse > 0
+                && match source {
+                    "ot" => (1..40).contains(&book),
+                    "peshitta" | "greek" => (40..=66).contains(&book),
+                    _ => false,
+                },
+            "invalid review passage in {}",
+            path.display()
+        );
+        if !review.is_null() {
+            let english = review["translation"]
+                .as_str()
+                .context("missing reviewed translation")?;
+            haqor_core::translation::parse(english, chapter as u8, verse as u8)
+                .with_context(|| format!("invalid reviewed translation in {}", path.display()))?;
+            translations.push((source.to_owned(), reference, english.to_owned()));
+        }
         let glosses: HashMap<i64, &str> = review["glosses"]
             .as_array()
             .into_iter()
@@ -557,10 +584,8 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
             count += 1;
         }
     }
-    drop(insert);
-    tx.commit()?;
     info!("Imported {count} reviewed lexical occurrences");
-    Ok(count)
+    Ok(translations)
 }
 
 const SCHEMA: &str = "

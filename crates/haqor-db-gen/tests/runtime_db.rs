@@ -701,6 +701,26 @@ fn reviewed_translation_packets_round_trip_through_reader() {
             actual, expected,
             "review translation changed for {book}:{chapter}:{verse}"
         );
+        if chapter == 1 && verse == 1 && packet["source"] != "greek" {
+            let chapter_data = bible
+                .chapter_reader_metadata(book, chapter, true, true, false, true)
+                .unwrap();
+            let reader = &chapter_data[&verse];
+            for w in packet["words"].as_array().unwrap() {
+                let pos = w["position"].as_u64().unwrap() as usize;
+                let contextual = packet["review"]["glosses"]
+                    .as_array()
+                    .unwrap()
+                    .iter()
+                    .find(|g| g["position"] == w["position"])
+                    .unwrap();
+                assert_eq!(reader.glosses[pos], contextual["gloss"].as_str().unwrap());
+                assert_eq!(
+                    reader.morphologies[pos],
+                    w["analysis"]["morphology"].as_str().unwrap()
+                );
+            }
+        }
         checked += 1;
     }
     assert_eq!(

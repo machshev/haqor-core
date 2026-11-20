@@ -47,7 +47,6 @@ use anyhow::{Context, Result, bail};
 use haqor_core::data_support::bare_letters;
 use log::{debug, info};
 use rusqlite::{Connection, OptionalExtension, params};
-use serde_json::Value;
 
 use crate::runtime_db::pack_ref;
 
@@ -59,59 +58,6 @@ DROP TABLE IF EXISTS greek_translation_verse;
 CREATE TABLE translation_verse(ref INTEGER PRIMARY KEY, text BLOB NOT NULL);
 CREATE TABLE greek_translation_verse(ref INTEGER PRIMARY KEY, text BLOB NOT NULL);
 ";
-
-/// Read complete verse reviews published by `haqor-review`.  These packets
-/// are source-controlled per verse so a stopped run can resume without
-/// rebuilding a monolithic export.  Only completed packets carry `review`.
-fn read_review_overrides(src_texts: &Path) -> Result<Vec<(String, i64, String)>> {
-    let root = src_texts.join("Haqor-Review");
-    if !root.exists() {
-        return Ok(Vec::new());
-    }
-    fn visit(dir: &Path, out: &mut Vec<(String, i64, String)>) -> Result<()> {
-        for entry in fs::read_dir(dir).with_context(|| format!("reading {}", dir.display()))? {
-            let path = entry?.path();
-            if path.is_dir() {
-                visit(&path, out)?;
-                continue;
-            }
-            if path.extension().and_then(|s| s.to_str()) != Some("json") {
-                continue;
-            }
-            let raw =
-                fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))?;
-            let packet: Value = serde_json::from_str(&raw)
-                .with_context(|| format!("parsing {}", path.display()))?;
-            let Some(review) = packet.get("review") else {
-                continue;
-            };
-            let source = packet["source"].as_str().context("review packet source")?;
-            let Some(english) = review.get("translation").and_then(Value::as_str) else {
-                bail!("{}: review has no translation", path.display());
-            };
-            let book = packet["book"].as_i64().context("review packet book")?;
-            let chapter = packet["chapter"]
-                .as_i64()
-                .context("review packet chapter")?;
-            let verse = packet["verse"].as_i64().context("review packet verse")?;
-            let reference = pack_ref(book, chapter, verse);
-            if out.iter().any(|(s, r, _)| s == source && *r == reference) {
-                bail!(
-                    "{}: duplicate reviewed translation {reference:#x}",
-                    path.display()
-                );
-            }
-            // The source-position markup is shared by all three editions.
-            haqor_core::translation::parse(english, chapter as u8, verse as u8)
-                .with_context(|| format!("{}: translation does not parse", path.display()))?;
-            out.push((source.to_owned(), reference, english.to_owned()));
-        }
-        Ok(())
-    }
-    let mut result = Vec::new();
-    visit(&root, &mut result)?;
-    Ok(result)
-}
 
 /// The English Haqor gives ἐκκλησία whatever a translation says: the
 /// ecclesia, the assembly of those called out, not a "church". Applied to
@@ -2139,57 +2085,9 @@ pub fn build_translation(
         }
     }
     let new_testament = pack_ref(40, 0, 0);
-    // The review harness publishes each completed verse as a packet. Apply
-    // those packets after the edition-specific fallbacks so a live review is
-    // visible on the next normal runtime rebuild. The source TSVs remain the
-    // compact interchange files for older reviewed material.
-    let mut reviewed_references = HashSet::new();
-    let mut reviewed_texts: HashMap<(String, i64), String> = HashMap::new();
-    let mut greek_indices: HashMap<i64, usize> = greek
-        .iter()
-        .enumerate()
-        .map(|(index, (reference, _))| (*reference, index))
-        .collect();
-    for (source, reference, english) in read_review_overrides(src_texts)? {
-        if source == "ot" || source == "peshitta" {
-            reviewed_references.insert(reference);
-            reviewed_texts.insert((source.clone(), reference), english.clone());
-            if let Some(&index) = verse_indices.get(&reference) {
-                verses[index].1 = english;
-            } else {
-                verse_indices.insert(reference, verses.len());
-                verses.push((reference, english));
-            }
-        } else if source == "greek" {
-            reviewed_references.insert(reference);
-            reviewed_texts.insert((source.clone(), reference), english.clone());
-            if let Some(&index) = greek_indices.get(&reference) {
-                greek[index].1 = english;
-            } else {
-                greek_indices.insert(reference, greek.len());
-                greek.push((reference, english));
-            }
-        }
-    }
     by_verse(&mut greek, ADVERSARY, "the TR's English")?;
     by_verse(&mut greek, HINNOM, "the TR's English")?;
-    // Reapply packet text after edition-wide normalizations. A reviewed
-    // translation is authoritative, including its exact punctuation and
-    // lexical wording.
-    for ((source, reference), english) in &reviewed_texts {
-        let target = if source == "greek" {
-            &mut greek
-        } else {
-            &mut verses
-        };
-        if let Some(index) = target.iter().position(|(r, _)| r == reference) {
-            target[index].1 = english.clone();
-        }
-    }
     for (reference, english) in verses.iter_mut().chain(greek.iter_mut()) {
-        if reviewed_references.contains(reference) {
-            continue;
-        }
         let ecclesia = replace_words(english, &ECCLESIA);
         *english = if *reference < new_testament {
             replace_name(&replace_words(&ecclesia, &COVERING), SHEOL)
@@ -2198,6 +2096,27 @@ pub fn build_translation(
         };
     }
     by_verse(&mut greek, &IMPERSONAL, "the Spirit's pronouns")?;
+    // Apply reviewed text last, after all fallback editions have been normalized.
+    let mut greek_indices: HashMap<_, _> = greek
+        .iter()
+        .enumerate()
+        .map(|(i, (r, _))| (*r, i))
+        .collect();
+    for (source, reference, english) in
+        crate::runtime_db::import_review_occurrences(&tx, src_texts)?
+    {
+        let (rows, indices) = if source == "greek" {
+            (&mut greek, &mut greek_indices)
+        } else {
+            (&mut verses, &mut verse_indices)
+        };
+        let i = *indices.entry(reference).or_insert(rows.len());
+        if i == rows.len() {
+            rows.push((reference, english));
+        } else {
+            rows[i].1 = english;
+        }
+    }
     build.bytes = write_verses(
         &tx,
         &[
@@ -2325,7 +2244,6 @@ fn write_verses(db: &Connection, tables: &[(&str, &[(i64, String)])]) -> Result<
 pub fn gen_translation(path: &Path, src_texts: &Path, data_dir: &Path) -> Result<TranslationBuild> {
     let db = Connection::open(path).with_context(|| format!("opening {}", path.display()))?;
     let build = build_translation(&db, src_texts, data_dir)?;
-    crate::runtime_db::import_review_occurrences(&db, src_texts)?;
     crate::runtime_db::restamp_built(&db)?;
     Ok(build)
 }
@@ -2378,7 +2296,9 @@ mod tests {
             r#"{"source":"peshitta","book":40,"chapter":1,"verse":3,"words":[]}"#,
         )
         .unwrap();
-        let result = read_review_overrides(&src).unwrap();
+        let db = Connection::open_in_memory().unwrap();
+        let tx = db.unchecked_transaction().unwrap();
+        let result = crate::runtime_db::import_review_occurrences(&tx, &src).unwrap();
         assert_eq!(
             result,
             vec![(

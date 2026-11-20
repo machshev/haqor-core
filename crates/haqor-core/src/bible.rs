@@ -3747,9 +3747,9 @@ impl Bible {
         // bearable — for an answer that is now fixed at build time.
         let reviewed_overlay = self.has_table("review_occurrence")?;
         let columns = if reviewed_overlay {
-            "COALESCE(ro.verse_gloss, rg.text, ''), COALESCE(ro.root, wi.root), COALESCE(ro.gloss, g.text), c.part_of_speech, c.form, c.tense, c.person, c.gender, c.number, c.state, c.prefix, c.obj_suffix, wi.flags".to_owned()
+            "COALESCE(rg.text, ''), COALESCE(ro.root, wi.root), COALESCE(ro.gloss, g.text, ''), c.part_of_speech, c.form, c.tense, c.person, c.gender, c.number, c.state, c.prefix, c.obj_suffix, coalesce(wi.flags,0), coalesce(ro.verse_gloss,ro.gloss),ro.morphology".to_owned()
         } else {
-            format!("COALESCE(rg.text, ''), {WORD_INFO_COLUMNS}")
+            format!("COALESCE(rg.text, ''), {WORD_INFO_COLUMNS}, NULL, NULL")
         };
         let overlay_join = if reviewed_overlay {
             "LEFT JOIN data.review_occurrence ro ON ro.source='ot' AND ro.ref=w.ref AND ro.position=w.position"
@@ -3819,6 +3819,8 @@ impl Bible {
                     } else {
                         reader_gloss
                     }
+                } else if let Some(gloss) = row.get::<_, Option<String>>(17)? {
+                    gloss
                 } else if let Some(curated) = reader_override {
                     curated.gloss.to_string()
                 } else if !source_gloss.is_empty() {
@@ -3839,9 +3841,10 @@ impl Bible {
             }
 
             if include_glosses || include_morphology {
-                verse_metadata
-                    .morphologies
-                    .push(info.map(morph_summary).unwrap_or_default());
+                verse_metadata.morphologies.push(
+                    row.get::<_, Option<String>>(18)?
+                        .unwrap_or_else(|| info.map(morph_summary).unwrap_or_default()),
+                );
             }
 
             if include_names {
