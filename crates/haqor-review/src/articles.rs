@@ -142,6 +142,33 @@ pub fn apply_pending(db: &mut Connection, lexicon: &Path, data: &Path) -> Result
     apply_pending_locked(db, lexicon, &verses)
 }
 
+/// Result of attempting to publish one accepted word proposal.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PublishOutcome {
+    Applied,
+    NotPending,
+    Stale,
+}
+
+/// Publish exactly one accepted word proposal. This is the live-run API. It
+/// never scans unrelated queue rows, and a validator error belongs only to
+/// this proposal, so the coordinator can record it and continue dispatching.
+pub fn apply_one(
+    db: &mut Connection,
+    lexicon: &Path,
+    data: &Path,
+    job: &Job,
+) -> Result<PublishOutcome> {
+    let corpus =
+        Connection::open_with_flags(data.join("haqor.db"), OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    let verses = haqor_lexicon::verses_of(&corpus)?;
+    let writer = fs::File::open(lexicon.join("sources.json"))?;
+    writer
+        .try_lock()
+        .context("another review queue is applying lexicon articles")?;
+    apply_one_locked(db, lexicon, &verses, job)
+}
+
 fn apply_pending_locked(
     db: &mut Connection,
     lexicon: &Path,
@@ -172,61 +199,77 @@ fn apply_pending_locked(
                 },
             )
             .optional()?;
-        let Some((job, id, name, base, body)) = row else {
+        let Some((job, _, _, _, _)) = row else {
             break;
         };
-        let dir = if name {
-            lexicon.join("names")
-        } else {
-            lexicon.to_path_buf()
-        };
-        let path = dir.join(format!("{id}.json"));
-        let current = match fs::read_to_string(&path) {
-            Ok(s) => Some(s),
-            Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
-            Err(e) => return Err(e.into()),
-        };
-        let same = current
-            .as_ref()
-            .is_some_and(|s| s.trim_end() == body.trim_end());
-        // Also handles a crash between atomic file replacement and DB commit.
-        if !same {
-            if current.as_deref().map(revision) != base {
-                let tx = db.transaction()?;
-                let reason = format!(
-                    "Article {} changed. Read its current file and reconcile the proposed changes.",
-                    path.display()
-                );
-                tx.execute("UPDATE job SET state='ready',feedback=?,attempts=0,result=NULL WHERE source=? AND ref=? AND pos=?",
-                    params![reason,job.source,job.reference,job.pos])?;
-                tx.execute("UPDATE job SET state='waiting',attempts=0,result=NULL WHERE source=? AND ref=? AND pos=-1",params![job.source,job.reference])?;
-                tx.commit()?;
-                stale += 1;
-                continue;
-            }
-            haqor_lexicon::save_entry(lexicon, &body, &verses)
-                .with_context(|| format!("validating {id}"))?;
+        match apply_one_locked(db, lexicon, verses, &job)? {
+            PublishOutcome::Applied => applied += 1,
+            PublishOutcome::Stale => stale += 1,
+            PublishOutcome::NotPending => (),
         }
-        let tx = db.transaction()?;
-        tx.execute(
-            "INSERT OR REPLACE INTO dependency VALUES(?,?,?,?,?,?)",
-            params![
-                job.source,
-                job.reference,
-                job.pos,
-                id,
-                name,
-                revision(&fs::read_to_string(&path)?)
-            ],
-        )?;
-        tx.execute(
-            "UPDATE article SET applied=1 WHERE source=? AND ref=? AND pos=?",
-            job.key(),
-        )?;
-        tx.commit()?;
-        applied += 1;
     }
     Ok((applied, stale))
+}
+
+fn apply_one_locked(
+    db: &mut Connection,
+    lexicon: &Path,
+    verses: &HashSet<i64>,
+    job: &Job,
+) -> Result<PublishOutcome> {
+    let row = db.query_row(
+        "SELECT id,name,base,body FROM article WHERE source=? AND ref=? AND pos=? AND applied=0",
+        job.key(), |r| Ok((r.get::<_,String>(0)?, r.get::<_,bool>(1)?, r.get::<_,Option<String>>(2)?, r.get::<_,String>(3)?))).optional()?;
+    let Some((id, name, base, body)) = row else {
+        return Ok(PublishOutcome::NotPending);
+    };
+    let path = if name {
+        lexicon.join("names")
+    } else {
+        lexicon.to_path_buf()
+    }
+    .join(format!("{id}.json"));
+    let current = match fs::read_to_string(&path) {
+        Ok(s) => Some(s),
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
+        Err(e) => return Err(e.into()),
+    };
+    if current
+        .as_ref()
+        .is_none_or(|s| s.trim_end() != body.trim_end())
+    {
+        if current.as_deref().map(revision) != base {
+            let tx = db.transaction()?;
+            let reason = format!(
+                "Article {} changed. Read its current file and reconcile the proposed changes.",
+                path.display()
+            );
+            tx.execute("UPDATE job SET state='ready',feedback=?,attempts=0,result=NULL WHERE source=? AND ref=? AND pos=?", params![reason,job.source,job.reference,job.pos])?;
+            tx.execute("UPDATE job SET state='waiting',attempts=0,result=NULL WHERE source=? AND ref=? AND pos=-1", params![job.source,job.reference])?;
+            tx.commit()?;
+            return Ok(PublishOutcome::Stale);
+        }
+        haqor_lexicon::save_entry(lexicon, &body, verses)
+            .with_context(|| format!("validating {id}"))?;
+    }
+    let tx = db.transaction()?;
+    tx.execute(
+        "INSERT OR REPLACE INTO dependency VALUES(?,?,?,?,?,?)",
+        params![
+            job.source,
+            job.reference,
+            job.pos,
+            id,
+            name,
+            revision(&fs::read_to_string(&path)?)
+        ],
+    )?;
+    tx.execute(
+        "UPDATE article SET applied=1 WHERE source=? AND ref=? AND pos=?",
+        job.key(),
+    )?;
+    tx.commit()?;
+    Ok(PublishOutcome::Applied)
 }
 
 // Reopen only words that actually used a changed canonical article.
