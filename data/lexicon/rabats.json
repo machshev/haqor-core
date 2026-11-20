@@ -34,6 +34,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "akk-rabasu"
       ]
     },
     {
@@ -54,10 +57,28 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "akk-rabasu"
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "akk-rabasu",
+      "lang": "akk",
+      "form": "rabāṣu",
+      "translit": "rabāṣu",
+      "gloss": "lie down, rest",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000009730, rabāṣu [lie down]"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalms 21–30; some homographic names remain separate."
 }

@@ -29,7 +29,10 @@
           ]
         }
       ],
-      "gender": "m"
+      "gender": "m",
+      "cognate_ids": [
+        "akk-rimu"
+      ]
     },
     {
       "lemma": "רָאַם",
@@ -58,7 +61,22 @@
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "akk-rimu",
+      "lang": "akk",
+      "form": "rīmu",
+      "translit": "rīmu",
+      "gloss": "wild bull",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000377 rʾm[bull]N; AKK010007 rīmu[wild bull]N"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalms 21–30; some homographic names remain separate."
 }
