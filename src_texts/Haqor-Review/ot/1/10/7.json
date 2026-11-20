@@ -161,6 +161,52 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-20",
+              "english": "Sabteca",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "Sabteca is the last name in the list of Cush’s sons, immediately before the list of Raamah’s sons.",
+                  "ref": "Gen.10.7",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Sabteca",
+              "id": "sabettekaa2",
+              "name": "סַבְתְּכָא",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis names Sabteca among the sons of Cush. The meaning of his name is uncertain.",
+              "updated": "2026-11-20"
+            },
+            "article_id": "sabettekaa2",
+            "base": null,
+            "change": "Add a personal-name article for Sabteca. The verse gives no support for the supplied root סבל or the gloss “feel a loathing.”",
+            "definition": "Sabteca is the fifth son named in the list of Cush’s sons in Genesis 10:7.",
+            "evidence": "Genesis 10:7 places סַבְתְּכָא under בְנֵי כוּשׁ, “sons of Cush.”"
+          },
+          "word": 0
+        },
+        "evidence": "וּבְנֵי כוּשׁ introduces the sons of Cush. Sabteca follows Raamah and closes that list before וּבְנֵי רַעְמָה introduces Raamah’s sons. The verse identifies the bearer but gives no etymology for his name.",
+        "gloss": "and Sabteca",
+        "language": "he",
+        "lemma": "סַבְתְּכָא",
+        "morph": "HC/Np",
+        "morphology": "The conjunction וְ means “and” and introduces the personal name סַבְתְּכָא as the final member of the list.",
+        "qualifier": "",
+        "root": "",
+        "segments": "וְ/סַבְתְּכָא",
+        "sense": "Sabteca, a son of Cush"
+      },
+      "position": 6,
+      "surface": "וְסַבְתְּכָא"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "ra3emaah",
           "word": 0
         },
