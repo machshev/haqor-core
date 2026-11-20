@@ -70,6 +70,53 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-20",
+              "english": "Sidon",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "In אֶת צִידֹן בְּכֹרוֹ, “Sidon his firstborn,” the writer identifies Sidon as Canaan’s firstborn child.",
+                  "ref": "Gen.10.15",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Sidon",
+              "id": "9iydon",
+              "name": "צִידֹן",
+              "note": "",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis 10:15 names Sidon as Canaan’s firstborn son. The meaning of his name is uncertain.",
+              "updated": "2026-11-20"
+            },
+            "article_id": "9iydon",
+            "base": null,
+            "change": "Add a personal-name article for צִידֹן. The packet’s gloss “Levi” conflicts with the name in the verse, and the text gives no support for the proposed root צחר.",
+            "definition": "Sidon, Canaan’s firstborn son.",
+            "evidence": "Genesis 10:15 names צִידֹן as the child Canaan fathered and calls him בְּכֹרוֹ, “his firstborn.”"
+          },
+          "word": 0
+        },
+        "evidence": "In וּכְנַעַן יָלַד אֶת צִידֹן בְּכֹרוֹ, Canaan is the father, and בְּכֹרוֹ (“his firstborn”) identifies Sidon’s relationship to him. The verse gives no etymology for the name.",
+        "gloss": "Sidon",
+        "language": "he",
+        "lemma": "צִידֹן",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun with no prefix or suffix. The preceding אֶת is a separate word marking the direct object of יָלַד.",
+        "qualifier": "",
+        "root": "",
+        "segments": "צִידֹן",
+        "sense": "The personal name of Canaan’s firstborn son."
+      },
+      "position": 3,
+      "surface": "צִידֹן"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "bkr",
           "sense": "firstborn",
           "word": 0
