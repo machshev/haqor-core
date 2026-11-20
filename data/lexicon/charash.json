@@ -1,0 +1,58 @@
+{
+  "id": "charash",
+  "root": "חרש",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "be silent; deaf",
+  "summary": "חרש denotes silence and the condition of being deaf or unresponsive.",
+  "words": [
+    {
+      "lemma": "חָרֵשׁ",
+      "pos": "verb",
+      "gloss": "be silent",
+      "bdb": [
+        "h.gl.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "be silent",
+          "senses": [
+            {
+              "gloss": "be silent",
+              "definition": "To keep silence rather than confess or answer.",
+              "evidence": [
+                {
+                  "ref": "Psa.32.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֵרֵשׁ",
+      "pos": "adjective",
+      "gloss": "deaf",
+      "bdb": [
+        "h.gl.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "deaf",
+          "definition": "Unable or unwilling to hear and answer.",
+          "evidence": [
+            {
+              "ref": "Psa.38.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from Psalms 32–33 audit."
+}

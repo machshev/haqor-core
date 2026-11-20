@@ -1,0 +1,61 @@
+{
+  "id": "alam",
+  "root": "אלמ",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "be silent, mute",
+  "summary": "אלם describes silence or muteness, including silence imposed on people who oppose Yahweh.",
+  "words": [
+    {
+      "lemma": "אָלַם",
+      "pos": "verb",
+      "gloss": "be silent, mute",
+      "bdb": [
+        "a.dr.ab"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be silenced",
+          "senses": [
+            {
+              "gloss": "be silent",
+              "definition": "To be silent or unable to answer.",
+              "evidence": [
+                {
+                  "ref": "Psa.31.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.38.14"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אִלֵּם",
+      "pos": "adjective",
+      "gloss": "mute",
+      "bdb": [
+        "a.dr.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "mute",
+          "definition": "One who is silent and does not answer.",
+          "evidence": [
+            {
+              "ref": "Psa.38.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from the Psalms 31–33 coverage brief. The root's relationship to related forms remains to be reviewed."
+}

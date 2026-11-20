@@ -3,7 +3,7 @@
   "root": "מלל",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "speech"
   ],
@@ -123,6 +123,39 @@
       ],
       "gender": "f",
       "lang": "arc"
+    },
+    {
+      "lemma": "מָלַל",
+      "pos": "verb",
+      "gloss": "crush, wither",
+      "bdb": [
+        "m.ci.aa",
+        "m.ch.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hithpael",
+          "gloss": "be crushed",
+          "senses": [
+            {
+              "gloss": "be crushed",
+              "definition": "The wicked are crushed and swept away.",
+              "evidence": [{"ref": "Psa.58.8", "role": "defining"}]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "wither, fade",
+          "senses": [
+            {
+              "gloss": "wither",
+              "definition": "The wicked wither quickly like grass and fade like green vegetation.",
+              "evidence": [{"ref": "Psa.37.2", "role": "defining"}]
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [

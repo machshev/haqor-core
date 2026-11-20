@@ -2,10 +2,24 @@
   "id": "chaburah",
   "root": "חבר",
   "status": "draft",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "gloss": "stripe, wound",
   "summary": "A wound or stripe left by a blow.",
   "words": [
+    {
+      "lemma": "חָבֵר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "companion",
+      "bdb": ["h.ai.af"],
+      "senses": [
+        {
+          "gloss": "companion",
+          "definition": "The word names a companion or associate.",
+          "evidence": [{"ref": "Psa.45.8", "role": "defining"}]
+        }
+      ]
+    },
     {
       "lemma": "חַבּוּרָה",
       "pos": "noun",
@@ -21,6 +35,53 @@
           "evidence": [
             {
               "ref": "Psa.38.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָבַר",
+      "pos": "verb",
+      "gloss": "join, bind",
+      "bdb": [
+        "h.ai.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "join",
+          "senses": [
+            {
+              "gloss": "join",
+              "definition": "The charmer joins words or binds them in an incantation.",
+              "evidence": [
+                {
+                  "ref": "Psa.58.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶבֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "companion, society",
+      "bdb": [
+        "h.ai.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "companion",
+          "definition": "A companion or society is joined together.",
+          "evidence": [
+            {
+              "ref": "Pro.28.24",
               "role": "defining"
             }
           ]
