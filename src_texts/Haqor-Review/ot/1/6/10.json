@@ -96,19 +96,25 @@
     {
       "analysis": {
         "entry": {
-          "existing": "xeem",
+          "draft": {
+            "article_id": "xeem",
+            "base": "3f4e7236d3b88e25bd04902d6399602d3218f46a293b232d23bedbf274e6ee54",
+            "change": "Add Genesis 10:21 to the existing personal-name article as evidence identifying Shem.",
+            "definition": "Shem, one of Noah’s sons, brother of Japheth and ancestor of Eber’s descendants.",
+            "evidence": "Genesis 10:21 identifies Shem by his relationship to Japheth and to Eber’s descendants."
+          },
           "word": 0
         },
-        "evidence": "The verse says that Noah fathered three sons and names each after אֶת. שֵׁם is the first son listed, followed by חָם and יָפֶת.",
+        "evidence": "The verse says that Noah fathered three sons and names them in order, each with its own direct-object marker. שֵׁם is the first son listed, followed by חָם and יָפֶת.",
         "gloss": "Shem",
         "language": "he",
         "lemma": "שֵׁם",
         "morph": "HNp",
         "morphology": "Masculine singular proper noun without a prefix or suffix. The preceding אֶת is a separate direct-object marker.",
-        "qualifier": "name",
+        "qualifier": "personal name",
         "root": "שמ",
         "segments": "שֵׁם",
-        "sense": "Shem, son of Noah"
+        "sense": "Shem, son of Noah and brother of Japheth"
       },
       "position": 5,
       "surface": "שֵׁם"
