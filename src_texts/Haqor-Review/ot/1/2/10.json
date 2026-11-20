@@ -286,24 +286,20 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "r2x",
-            "base": "e7936d9a891da739767b2676d2d3943d805dac67a6140ebae13f22e88ebecd03",
-            "change": "Add the river-branch sense to the Hebrew noun רֹאשׁ ‘head’, with Gen.2.10 as its defining evidence.",
-            "definition": "A branch of a river, beginning where the river divides.",
-            "evidence": "In Gen.2.10 one river waters the garden and then divides. The numeral אַרְבָּעָה counts the resulting רָאשִׁים."
-          }
+          "existing": "r2x",
+          "sense": "river-branch",
+          "word": 0
         },
-        "evidence": "The subject is one river, נָהָר. וּמִשָּׁם יִפָּרֵד says that from there it divides, and וְהָיָה לְאַרְבָּעָה רָאשִׁים gives the result. The four ‘heads’ are the streams that begin at the division.",
+        "evidence": "The verse introduces one river, נָהָר. The verb יִפָּרֵד says that it divides, and לְאַרְבָּעָה רָאשִׁים identifies the four streams that result.",
         "gloss": "branches",
         "language": "he",
         "lemma": "רֹאשׁ",
         "morph": "HNcmpa",
-        "morphology": "Common noun, masculine plural absolute. The plural ending is ־ִים. The word has no prefix or pronominal suffix.",
+        "morphology": "Masculine plural absolute of the common noun רֹאשׁ, with the plural ending ־ִים and no prefix or pronominal suffix.",
         "qualifier": "head",
         "root": "ראש",
         "segments": "רָאשִׁים",
-        "sense": "A branch of a river where it divides into separate streams."
+        "sense": "A branch formed where a river divides."
       },
       "position": 10,
       "surface": "רָאשִׁים"
