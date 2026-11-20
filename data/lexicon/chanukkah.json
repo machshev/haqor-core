@@ -8,7 +8,7 @@
     "psalms"
   ],
   "gloss": "dedicate, train",
-  "summary": "To dedicate is to initiate a person or house for its appointed service. The related trained man is prepared for action, while the palate and hook are separate homographs retained by the word sheet.",
+  "summary": "A house or altar is dedicated when its appointed use begins. The verb also describes starting a child on a course of life, and Abram’s trained men are prepared for action.",
   "words": [
     {
       "lemma": "חֲנֻכָּה",
@@ -105,41 +105,28 @@
       "gender": "m"
     },
     {
-      "lemma": "חַכָּה",
+      "lemma": "חֲנֻכָּה",
       "bdb": [
-        "h.dy.af"
+        "xh.aj.ag"
       ],
+      "lang": "arc",
       "pos": "noun",
-      "gloss": "hook",
+      "gender": "f",
+      "gloss": "dedication",
       "senses": [
         {
-          "gloss": "hook",
-          "definition": "Fishermen cast hooks into the Nile.",
+          "gloss": "dedication",
+          "definition": "The returned exiles celebrate the dedication of the rebuilt house. In Daniel, officials are summoned to the dedication of the image.",
           "evidence": [
             {
-              "ref": "Isa.19.8",
+              "ref": "Ezr.6.16",
               "role": "defining"
-            }
-          ]
-        }
-      ],
-      "gender": "f"
-    },
-    {
-      "lemma": "חֲנָמֵל",
-      "bdb": [
-        "h.dy.ai"
-      ],
-      "pos": "noun",
-      "gloss": "instrument of destruction",
-      "senses": [
-        {
-          "gloss": "instrument of destruction",
-          "definition": "The word occurs as the instrument for destroying sycomores.",
-          "evidence": [
+            },
             {
-              "ref": "Amo.7.14",
-              "role": "defining"
+              "ref": "Ezr.6.17"
+            },
+            {
+              "ref": "Dan.3.2"
             }
           ]
         }
@@ -148,5 +135,5 @@
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Removed the redirect palate key h.dx.ab and h.cd.au, which belong elsewhere. Hanoch is linked by the existing enoch name entry, and Hanamel is linked separately; the instrument חֲנָמֵל h.dy.ai remains."
+  "note": "Ezra and Daniel also use the dedication noun in Aramaic. Hanoch and Enoch are linked in the name entry. The spellings of Hanamel and the word for frost in Psalm 78:47 lack the final kaph of this family."
 }
