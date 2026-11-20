@@ -1,1 +1,57 @@
-{"id":"yaor","root":"יאל","status":"draft","created":"2026-11-20","updated":"2026-11-20","gloss":"Nile channel","summary":"יְאֹר denotes the channels of the Nile in Egypt.","words":[{"lemma":"יְאֹר","pos":"noun","gender":"m","gloss":"Nile channel","bdb":["j.ae.ab"],"senses":[{"gloss":"Nile channel","definition":"Yahweh turned the Egyptians' channels into blood.","evidence":[{"ref":"Psa.78.44","role":"defining"}]}]}],"cognates":[],"doctrine":[],"note":"Drafted from Psalm 78:44."}
+{
+  "id": "yaor",
+  "root": "יאור",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-20",
+  "gloss": "Nile channel",
+  "summary": "יְאֹר denotes the channels of the Nile in Egypt. It is an Egyptian loanword retained in Hebrew for the river's artificial channels.",
+  "words": [
+    {
+      "lemma": "יְאֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "Nile channel",
+      "bdb": [
+        "j.ae.ab"
+      ],
+      "cognate_ids": [
+        "egy-ior"
+      ],
+      "senses": [
+        {
+          "gloss": "Nile channel",
+          "definition": "Yahweh turned the Egyptians' channels into blood.",
+          "evidence": [
+            {
+              "ref": "Psa.78.44",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "egy-ior"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "egy-ior",
+      "lang": "egy",
+      "form": "ỉtrw",
+      "translit": "iteru",
+      "gloss": "river channel, Nile",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "ỉtrw",
+          "note": "Egyptian river-name and channel term underlying Hebrew יְאֹר."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Egyptian loanword. The root is the word's own consonants, יאור."
+}

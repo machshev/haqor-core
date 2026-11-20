@@ -2,10 +2,10 @@
   "id": "mofet",
   "root": "אפת",
   "status": "draft",
-  "created": "2026-11-20",
+  "created": "2026-11-19",
   "updated": "2026-11-19",
-  "gloss": "sign, wonder",
-  "summary": "מוֹפֵת is a sign or wonder displaying Yahweh's power. In Psalm 71:7 the psalmist has become a portent to many because Yahweh is his strong refuge. The root assignment אפת follows the corpus analysis, while the noun's relation to the root's broader etymology remains uncertain.",
+  "gloss": "sign, wonder, portent",
+  "summary": "The wonders in Egypt made Yahweh’s power known. A person can also become a sign to those who see him, as the singer says in Psalm 71. Deuteronomy asks Israel to judge a prophet’s message even when his sign comes true.",
   "words": [
     {
       "lemma": "מוֹפֵת",
@@ -17,14 +17,9 @@
       ],
       "senses": [
         {
-          "gloss": "wonder, portent",
-          "definition": "An extraordinary event or person that serves as a sign and displays Yahweh's power.",
+          "gloss": "wonder, mighty deed",
+          "definition": "A remarkable deed that shows what someone can do. The wonders Yahweh worked in Egypt accompanied the signs he gave Pharaoh.",
           "evidence": [
-            {
-              "ref": "Psa.71.7",
-              "role": "defining",
-              "note": "The psalmist is a portent to many while Yahweh is his refuge and strength."
-            },
             {
               "ref": "Psa.78.43",
               "role": "defining",
@@ -32,6 +27,25 @@
             },
             {
               "ref": "Exo.4.21"
+            }
+          ]
+        },
+        {
+          "gloss": "portent, sign",
+          "definition": "A person, deed or event that observers take as a sign. Its significance depends on what it points to.",
+          "evidence": [
+            {
+              "ref": "Psa.71.7",
+              "role": "defining",
+              "note": "The psalmist is a portent to many while Yahweh is his refuge and strength."
+            },
+            {
+              "ref": "Isa.20.3",
+              "role": "defining",
+              "note": "Isaiah himself is a sign and portent concerning Egypt and Cush."
+            },
+            {
+              "ref": "1Ki.13.3"
             },
             {
               "ref": "Deu.13.2"
@@ -39,9 +53,25 @@
             {
               "ref": "Deu.13.3",
               "note": "A false prophet's sign or wonder may come to pass, yet the sign tests Israel's loyalty to Yahweh."
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-mofet"
+      ],
+      "greek": [
+        {
+          "lemma": "τέρας",
+          "gloss": "wonder, portent",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu 13:2"
             },
             {
-              "ref": "1Ki.13.3"
+              "ref": "Mat.24.24",
+              "note": "False prophets show signs and wonders."
             }
           ]
         }
