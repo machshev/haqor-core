@@ -4,12 +4,12 @@
   "review": {
     "entities": [
       {
-        "evidence": "The Noah who carries out the ark instructions is Lamech’s son. The source tag identifies this flood survivor.",
+        "evidence": "נֹחַ names the son of Lamech who carries out the ark instructions. The source tag identifies this flood survivor.",
         "key": "Noah@Gen.5.29",
         "position": 1
       },
       {
-        "evidence": "The name יַהְוֶה identifies the God who commanded Noah. The source tag LORD@Gen.1.1 supports the same divine identity as the previous Yahweh proposal.",
+        "evidence": "יַהְוֶה names the God who commanded Noah. The source tag identifies him as LORD@Gen.1.1.",
         "key": "LORD@Gen.1.1",
         "position": 5
       }
@@ -40,7 +40,40 @@
         "position": 5
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיַּעַשׂ"
+      },
+      {
+        "evidence": "The Noah who carries out the ark instructions is Lamech’s son. The source tag identifies this flood survivor.",
+        "key": "Noah@Gen.5.29",
+        "position": 1,
+        "surface": "נֹחַ"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "כְּכֹל"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "אֲשֶׁר"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "צִוָּהוּ"
+      },
+      {
+        "evidence": "The name יַהְוֶה identifies the God who commanded Noah. The source tag LORD@Gen.1.1 supports the same divine identity as the previous Yahweh proposal.",
+        "key": "LORD@Gen.1.1",
+        "position": 5,
+        "surface": "יַהְוֶה"
+      }
+    ],
     "translation": "[Then|0] [Noah|1] [did|0] [all|2] [that|3] [Yahweh|5] [had commanded him|4]."
   },
   "source": "ot",
