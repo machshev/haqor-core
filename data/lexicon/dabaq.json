@@ -11,7 +11,7 @@
   "summary": "To cling means to adhere closely, whether flesh to bone or person to person.",
   "words": [
     {
-      "lemma": "דָּבַק",
+      "lemma": "דָּבַק",
       "bdb": [
         "d.ah.aa"
       ],
@@ -20,11 +20,65 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "cling",
+          "gloss": "cling, remain attached",
           "senses": [
             {
-              "gloss": "cling",
-              "definition": "The bones cling together.",
+              "gloss": "cling, remain attached",
+              "definition": "A husband clings to his wife. Ruth clings to Naomi when Orpah departs.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Rut.1.14"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "overtake, cause to cling",
+          "senses": [
+            {
+              "gloss": "overtake, cause to cling",
+              "definition": "Laban follows until he catches up with Jacob. Yahweh can cause disease to cling to a person.",
+              "evidence": [
+                {
+                  "ref": "Gen.31.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.28.21"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be stuck together",
+          "senses": [
+            {
+              "gloss": "be stuck together",
+              "definition": "Clods of soil hold together after the dust has hardened.",
+              "evidence": [
+                {
+                  "ref": "Job.38.38",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be made to adhere",
+          "senses": [
+            {
+              "gloss": "be made to adhere",
+              "definition": "The sufferer’s dry tongue sticks to his jaws.",
               "evidence": [
                 {
                   "ref": "Psa.22.16",
@@ -45,15 +99,18 @@
         "d.ah.ab"
       ],
       "pos": "adjective",
-      "gloss": "clinging",
+      "gloss": "holding fast, closely attached",
       "senses": [
         {
-          "gloss": "clinging",
-          "definition": "Clinging",
+          "gloss": "holding fast, closely attached",
+          "definition": "Moses addresses those holding fast to Yahweh. Proverbs describes a friend closer than a brother.",
           "evidence": [
             {
-              "ref": "Psa.22.16",
+              "ref": "Deu.4.4",
               "role": "defining"
+            },
+            {
+              "ref": "Pro.18.24"
             }
           ]
         }
@@ -68,15 +125,18 @@
         "d.ah.ac"
       ],
       "pos": "noun",
-      "gloss": "joining",
+      "gloss": "joint, soldering",
       "senses": [
         {
-          "gloss": "joining",
-          "definition": "Joining",
+          "gloss": "joint, soldering",
+          "definition": "An arrow passes between pieces of armour. Isaiah pictures a workman pronouncing a soldered joint sound.",
           "evidence": [
             {
-              "ref": "Exo.26.17",
+              "ref": "1Ki.22.34",
               "role": "defining"
+            },
+            {
+              "ref": "Isa.41.7"
             }
           ]
         }
@@ -85,6 +145,76 @@
       "cognate_ids": [
         "sem-dabaq"
       ]
+    },
+    {
+      "lemma": "דְּבֵק",
+      "bdb": [
+        "xd.ac.aa"
+      ],
+      "pos": "verb",
+      "gloss": "adhere",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "adhere",
+          "senses": [
+            {
+              "gloss": "adhere",
+              "definition": "The parts of the kingdom fail to adhere to each other, as iron fails to mix with clay.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.43",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "דבק",
+      "pos": "verb",
+      "gloss": "follow closely",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "follow",
+          "senses": [
+            {
+              "gloss": "follow",
+              "definition": "Two blind men follow Jesus, asking for mercy.",
+              "evidence": [
+                {
+                  "ref": "Mat.9.27",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "דביקא",
+      "pos": "noun",
+      "gloss": "attendant",
+      "senses": [
+        {
+          "gloss": "attendant",
+          "definition": "The proconsul has a man attached to him who tries to turn him from the faith.",
+          "evidence": [
+            {
+              "ref": "Act.13.7",
+              "to": "Act.13.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
     }
   ],
   "cognates": [
@@ -104,5 +234,5 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "The hophal participle in Psalm 22:16 describes the tongue sticking to the jaws. The Peshitta also uses the root of a person following another."
 }

@@ -40,15 +40,31 @@
       "gloss": "sprout",
       "stems": [
         {
-          "stem": "qal",
-          "gloss": "sprout",
+          "stem": "hiphil",
+          "gloss": "cause to sprout",
           "senses": [
             {
-              "gloss": "sprout",
-              "definition": "The earth sprouts vegetation.",
+              "gloss": "cause to sprout",
+              "definition": "God commands the earth to bring forth vegetation. The command pairs the verb with its related noun.",
               "evidence": [
                 {
                   "ref": "Gen.1.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "turn green, sprout",
+          "senses": [
+            {
+              "gloss": "turn green, sprout",
+              "definition": "Joel tells the animals to put fear aside because the wilderness pastures have turned green.",
+              "evidence": [
+                {
+                  "ref": "Jol.2.22",
                   "role": "defining"
                 }
               ]
@@ -60,5 +76,5 @@
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "Genesis 1:11 supplies both verb and noun. The green growth in Psalm 23:2 is the sheep’s pasture."
 }

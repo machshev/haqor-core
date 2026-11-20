@@ -20,7 +20,7 @@
       "senses": [
         {
           "gloss": "dog",
-          "definition": "Dogs surround me.",
+          "definition": "Dogs roam in a pack and threaten the speaker. Another proverb pictures a dog returning to its vomit.",
           "evidence": [
             {
               "ref": "Psa.22.17",
@@ -28,6 +28,15 @@
             },
             {
               "ref": "Psa.22.21"
+            },
+            {
+              "ref": "Psa.59.7"
+            },
+            {
+              "ref": "Pro.26.11"
+            },
+            {
+              "ref": "2Pe.2.22"
             }
           ]
         }
@@ -60,6 +69,25 @@
       "cognate_ids": [
         "akk-kalbu"
       ]
+    },
+    {
+      "lemma": "כלבא",
+      "pos": "noun",
+      "gloss": "dog",
+      "senses": [
+        {
+          "gloss": "dog",
+          "definition": "A dog returns to what it vomited, an image applied to turning back from known righteousness.",
+          "evidence": [
+            {
+              "ref": "2Pe.2.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
     }
   ],
   "cognates": [
@@ -79,5 +107,5 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "A dog may guard or threaten. Whether the similar-sounding cage or basket is historically related remains open. See Caleb for the personal name."
 }

@@ -20,15 +20,37 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "lie down",
+          "gloss": "lie or crouch",
           "senses": [
             {
-              "gloss": "lie down",
-              "definition": "He makes me lie down in green pasture.",
+              "gloss": "lie or crouch",
+              "definition": "A flock lies down in good grazing land. Sin is pictured crouching at the door.",
+              "evidence": [
+                {
+                  "ref": "Ezk.34.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.4.7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make lie down",
+          "senses": [
+            {
+              "gloss": "make lie down",
+              "definition": "The shepherd brings the sheep to green pasture and settles them there to rest.",
               "evidence": [
                 {
                   "ref": "Psa.23.2",
                   "role": "defining"
+                },
+                {
+                  "ref": "Ezk.34.15"
                 }
               ]
             }
@@ -49,10 +71,10 @@
       "senses": [
         {
           "gloss": "resting place",
-          "definition": "Resting place",
+          "definition": "Isaiah pictures a resting place for jackals in a land transformed by springs of water.",
           "evidence": [
             {
-              "ref": "Psa.23.2",
+              "ref": "Isa.35.7",
               "role": "defining"
             }
           ]
@@ -61,6 +83,30 @@
       "cognate_ids": [
         "akk-rabasu"
       ]
+    },
+    {
+      "lemma": "מַרְבֵּץ",
+      "bdb": [
+        "t.an.ac"
+      ],
+      "pos": "noun",
+      "gloss": "resting place for a flock",
+      "senses": [
+        {
+          "gloss": "resting place for a flock",
+          "definition": "Rabbah will become pasture for camels and Ammon a resting place for flocks.",
+          "evidence": [
+            {
+              "ref": "Ezk.25.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Zep.2.15"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [
@@ -80,5 +126,5 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "Psalm 23:2 uses the causative form. The shepherd brings about the rest of the flock."
 }

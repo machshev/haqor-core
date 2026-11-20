@@ -20,15 +20,37 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "hasten",
+          "gloss": "make haste",
           "senses": [
             {
-              "gloss": "hasten",
-              "definition": "The psalmist asks Yahweh to hurry to help.",
+              "gloss": "make haste",
+              "definition": "The psalmist asks Yahweh to come quickly to help. Jonathan calls to the boy to hurry without stopping.",
               "evidence": [
                 {
                   "ref": "Psa.22.20",
                   "role": "defining"
+                },
+                {
+                  "ref": "1Sa.20.38"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "hurry, act quickly",
+          "senses": [
+            {
+              "gloss": "hurry, act quickly",
+              "definition": "Men waiting in ambush hurry to attack Gibeah. Isaiah quotes those demanding that Yahweh hasten his work.",
+              "evidence": [
+                {
+                  "ref": "Jdg.20.37",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.5.19"
                 }
               ]
             }
@@ -46,17 +68,63 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "feel",
+          "gloss": "experience enjoyment",
           "senses": [
             {
-              "gloss": "feel",
-              "definition": "The sense is distinct from haste.",
+              "gloss": "experience enjoyment",
+              "definition": "The speaker asks who can eat and enjoy, in a passage about receiving the enjoyment of one’s labour from God.",
               "evidence": [
                 {
-                  "ref": "Job.4.5",
+                  "ref": "Ecc.2.25",
                   "role": "defining"
+                },
+                {
+                  "ref": "Ecc.2.24"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חִישׁ",
+      "bdb": [
+        "h.bn.ab"
+      ],
+      "pos": "adverb",
+      "gloss": "quickly",
+      "senses": [
+        {
+          "gloss": "quickly",
+          "definition": "The years pass quickly and the speakers fly away.",
+          "evidence": [
+            {
+              "ref": "Psa.90.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֻשָׁתִי",
+      "bdb": [
+        "h.bo.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "Hushathite",
+      "senses": [
+        {
+          "gloss": "Hushathite",
+          "definition": "The epithet identifies Sibbecai in battle against the Philistines.",
+          "evidence": [
+            {
+              "ref": "2Sa.21.18",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ch.20.4"
             }
           ]
         }
@@ -65,5 +133,5 @@
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "The verb associated with eating in Ecclesiastes 2:25 has been understood as “enjoy”. The language of haste in Psalm 22:20 is clear."
 }

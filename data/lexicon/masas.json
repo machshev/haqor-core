@@ -19,15 +19,37 @@
       "gloss": "melt",
       "stems": [
         {
-          "stem": "qal",
-          "gloss": "melt",
+          "stem": "niphal",
+          "gloss": "melt, lose courage",
           "senses": [
             {
-              "gloss": "melt",
-              "definition": "The heart melts like wax.",
+              "gloss": "melt, lose courage",
+              "definition": "Manna melts when the sun grows hot. The sufferer compares his heart losing strength to wax melting inside him.",
               "evidence": [
                 {
-                  "ref": "Psa.22.15",
+                  "ref": "Exo.16.21",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.22.15"
+                },
+                {
+                  "ref": "Jos.5.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make someone lose courage",
+          "senses": [
+            {
+              "gloss": "make someone lose courage",
+              "definition": "The people blame their brothers for melting their hearts with alarming reports of the land.",
+              "evidence": [
+                {
+                  "ref": "Deu.1.28",
                   "role": "defining"
                 }
               ]
@@ -35,15 +57,15 @@
           ]
         },
         {
-          "stem": "niphal",
-          "gloss": "be dissolved",
+          "stem": "qal",
+          "gloss": "melt away",
           "senses": [
             {
-              "gloss": "be dissolved",
-              "definition": "The mountains dissolve before Yahweh.",
+              "gloss": "melt away",
+              "definition": "The wasting of forest and fruitful land is likened to a sick person wasting away.",
               "evidence": [
                 {
-                  "ref": "Psa.68.3",
+                  "ref": "Isa.10.18",
                   "role": "defining"
                 }
               ]
@@ -58,14 +80,14 @@
         "m.cs.ac"
       ],
       "pos": "noun",
-      "gloss": "melting",
+      "gloss": "despair, collapse",
       "senses": [
         {
-          "gloss": "melting",
-          "definition": "Melting",
+          "gloss": "despair, collapse",
+          "definition": "Job speaks of the innocent collapsing under a sudden scourge. The same spelling also represents a test in Deuteronomy.",
           "evidence": [
             {
-              "ref": "Psa.22.15",
+              "ref": "Job.9.23",
               "role": "defining"
             }
           ]
@@ -79,14 +101,14 @@
         "m.cs.ab"
       ],
       "pos": "adjective",
-      "gloss": "melting",
+      "gloss": "despairing",
       "senses": [
         {
-          "gloss": "melting",
-          "definition": "Melting",
+          "gloss": "despairing",
+          "definition": "Job says that a person near collapse should receive loyalty from a friend.",
           "evidence": [
             {
-              "ref": "Psa.22.15",
+              "ref": "Job.6.14",
               "role": "defining"
             }
           ]
@@ -117,5 +139,5 @@
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "Physical melting supplies the image of failing courage. The similar noun for testing has separate evidence under nasah."
 }

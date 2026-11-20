@@ -20,15 +20,56 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "be satisfied",
+          "gloss": "drink one’s fill",
           "senses": [
             {
-              "gloss": "be satisfied",
-              "definition": "The cup is overflowing.",
+              "gloss": "drink one’s fill",
+              "definition": "Those who take refuge with God drink their fill from his house. The lovers are urged to drink deeply of love.",
               "evidence": [
                 {
-                  "ref": "Psa.23.5",
+                  "ref": "Psa.36.9",
                   "role": "defining"
+                },
+                {
+                  "ref": "Pro.7.18"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "drench, water",
+          "senses": [
+            {
+              "gloss": "drench, water",
+              "definition": "Rain waters the furrows of the ground; the speaker in Isaiah drenches a vine with tears.",
+              "evidence": [
+                {
+                  "ref": "Psa.65.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.16.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "give enough to drink, saturate",
+          "senses": [
+            {
+              "gloss": "give enough to drink, saturate",
+              "definition": "Rain and snow soak the soil, enabling it to produce seed and bread. Yahweh promises to refresh the weary.",
+              "evidence": [
+                {
+                  "ref": "Isa.55.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.31.25"
                 }
               ]
             }
@@ -56,9 +97,53 @@
         }
       ],
       "gender": "f"
+    },
+    {
+      "lemma": "רָוֶה",
+      "bdb": [
+        "t.bj.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "well watered",
+      "senses": [
+        {
+          "gloss": "well watered",
+          "definition": "Isaiah and Jeremiah compare restored people to a garden whose water does not fail.",
+          "evidence": [
+            {
+              "ref": "Isa.58.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.31.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִי",
+      "bdb": [
+        "t.bj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "moisture",
+      "senses": [
+        {
+          "gloss": "moisture",
+          "definition": "The cloud is loaded with moisture before its lightning is scattered.",
+          "evidence": [
+            {
+              "ref": "Job.37.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "The psalm uses the noun רְוָיָה for abundant provision in the cup. Proverbs 31:2 has Aramaic bar “son” with a suffix, rather than the noun for moisture."
 }

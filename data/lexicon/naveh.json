@@ -16,18 +16,18 @@
         "n.bx.ab"
       ],
       "pos": "noun",
-      "gloss": "pasture, abode",
+      "gloss": "abode, pasture",
       "senses": [
         {
-          "gloss": "pasture, abode",
-          "definition": "Yahweh makes the sheep lie in green pasture.",
+          "gloss": "abode, pasture",
+          "definition": "The song at the sea calls the holy dwelling the destination of the redeemed people. A camel’s grazing place can likewise be called its abode.",
           "evidence": [
             {
-              "ref": "Psa.23.2",
+              "ref": "Exo.15.13",
               "role": "defining"
-              },
-              {
-                "ref": "Psa.68.13"
+            },
+            {
+              "ref": "Ezk.25.5"
             }
           ]
         }
@@ -43,15 +43,18 @@
         "n.bx.ae"
       ],
       "pos": "noun",
-      "gloss": "pasture",
+      "gloss": "pasture, meadow",
       "senses": [
         {
-          "gloss": "pasture",
-          "definition": "Pasture",
+          "gloss": "pasture, meadow",
+          "definition": "The shepherd settles the flock in grassy pastures. Jeremiah pictures the wilderness pastures burned up and empty of livestock.",
           "evidence": [
             {
               "ref": "Psa.23.2",
               "role": "defining"
+            },
+            {
+              "ref": "Jer.9.9"
             }
           ]
         }
@@ -71,14 +74,14 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "dwell",
+          "gloss": "settle, stay at rest",
           "senses": [
             {
-              "gloss": "dwell",
-              "definition": "The verb means to abide.",
+              "gloss": "settle, stay at rest",
+              "definition": "Habakkuk describes an arrogant man who cannot settle and whose appetite keeps expanding.",
               "evidence": [
                 {
-                  "ref": "Psa.23.6",
+                  "ref": "Hab.2.5",
                   "role": "defining"
                 }
               ]
@@ -88,6 +91,32 @@
       ],
       "cognate_ids": [
         "akk-nawu"
+      ]
+    },
+    {
+      "lemma": "נָוָה",
+      "bdb": [
+        "n.bw.aa"
+      ],
+      "pos": "verb",
+      "gloss": "adorn or glorify",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "glorify",
+          "senses": [
+            {
+              "gloss": "glorify",
+              "definition": "Israel sings that it will glorify its God. The parallel clause promises to exalt him.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
@@ -108,5 +137,5 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "In Psalm 23:2 the feminine plural names pastures. The verb form in Exodus 15:2 is variously understood as glorifying God or preparing a habitation; the parallel is “I will exalt him”."
 }

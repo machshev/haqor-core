@@ -19,18 +19,84 @@
       "gloss": "lead",
       "stems": [
         {
-          "stem": "hiphil",
-          "gloss": "lead, guide",
+          "stem": "piel",
+          "gloss": "guide, lead gently, sustain",
           "senses": [
             {
-              "gloss": "lead, guide",
-              "definition": "He leads me beside still waters.",
+              "gloss": "guide, lead gently, sustain",
+              "definition": "The shepherd leads the flock beside waters of rest. Isaiah depicts the one who carries the lambs gently leading nursing ewes. Joseph sustains the Egyptians with bread.",
               "evidence": [
                 {
                   "ref": "Psa.23.2",
                   "role": "defining"
+                },
+                {
+                  "ref": "Isa.40.11"
+                },
+                {
+                  "ref": "Gen.47.17"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "travel at an easy pace",
+          "senses": [
+            {
+              "gloss": "travel at an easy pace",
+              "definition": "Jacob offers to travel slowly at the pace the children and livestock can manage.",
+              "evidence": [
+                {
+                  "ref": "Gen.33.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נַהֲלֹל",
+      "bdb": [
+        "n.bn.ac"
+      ],
+      "pos": "noun",
+      "gloss": "watering place, pasture",
+      "senses": [
+        {
+          "gloss": "watering place, pasture",
+          "definition": "Isaiah describes insects settling throughout the ravines, rock crevices, thornbushes and watering places. The precise terrain is uncertain.",
+          "evidence": [
+            {
+              "ref": "Isa.7.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נַהֲלֹל",
+      "bdb": [
+        "n.bn.ad"
+      ],
+      "pos": "name",
+      "gloss": "Nahalal",
+      "senses": [
+        {
+          "gloss": "Nahalal",
+          "definition": "A town assigned to Zebulun also appears in the list of Levitical cities.",
+          "evidence": [
+            {
+              "ref": "Jos.19.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.21.35"
             }
           ]
         }
@@ -39,5 +105,5 @@
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "The Psalm 23 verb is piel. Nahalal resembles the noun for a watered place; Joshua does not explain its name."
 }
