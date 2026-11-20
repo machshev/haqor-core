@@ -55,13 +55,17 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "blood-of-a-living",
           "cognate_ids": [
             "akk-damu",
             "phn-dm"
           ],
           "definition": "Joseph’s brothers dip his garment in a goat’s blood. The law identifies the blood with the life of the flesh and forbids eating it.",
           "evidence": [
+            {
+              "note": "In the prohibition on eating flesh with its life, דָמוֹ, “its blood,” identifies what בְּנַפְשׁוֹ, “with its life,” refers to.",
+              "ref": "Gen.9.4",
+              "role": "defining"
+            },
             {
               "ref": "Gen.37.31",
               "role": "defining"
@@ -74,10 +78,10 @@
               "ref": "Deu.12.23"
             }
           ],
-          "gloss": "blood of a living creature"
+          "gloss": "blood of a living creature",
+          "id": "blood-of-a-living"
         },
         {
-          "id": "blood-used-in-sacrifice",
           "cognate_ids": [
             "akk-damu",
             "phn-dm"
@@ -95,10 +99,10 @@
               "ref": "Lev.17.11"
             }
           ],
-          "gloss": "blood used in sacrifice or covenant"
+          "gloss": "blood used in sacrifice or covenant",
+          "id": "blood-used-in-sacrifice"
         },
         {
-          "id": "bloodshed-and-responsibility-for",
           "cognate_ids": [
             "akk-damu",
             "phn-dm"
@@ -123,10 +127,10 @@
               "ref": "Psa.51.16"
             }
           ],
-          "gloss": "bloodshed and responsibility for a death"
+          "gloss": "bloodshed and responsibility for a death",
+          "id": "bloodshed-and-responsibility-for"
         },
         {
-          "id": "blood-of-grapes-wine",
           "cognate_ids": [
             "akk-damu",
             "phn-dm"
@@ -141,7 +145,8 @@
               "ref": "Deu.32.14"
             }
           ],
-          "gloss": "blood of grapes, wine"
+          "gloss": "blood of grapes, wine",
+          "id": "blood-of-grapes-wine"
         }
       ]
     },
@@ -154,7 +159,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "blood",
           "cognate_ids": [
             "akk-damu",
             "phn-dm"
@@ -166,10 +170,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "blood"
+          "gloss": "blood",
+          "id": "blood"
         },
         {
-          "id": "blood-shed-responsibility-for",
           "cognate_ids": [
             "akk-damu",
             "phn-dm"
@@ -184,7 +188,8 @@
               "ref": "Mat.26.28"
             }
           ],
-          "gloss": "blood shed, responsibility for a death"
+          "gloss": "blood shed, responsibility for a death",
+          "id": "blood-shed-responsibility-for"
         }
       ]
     }
