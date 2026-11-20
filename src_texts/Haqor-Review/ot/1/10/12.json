@@ -7,6 +7,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "raesaen",
+            "base": "cceef466729aed7d3d9cebc710030a6e83fbdfd4b93b10882cf62aa6678bc262",
+            "change": "Append the place name רֶסֶן at word index 1 with the sense city-of-resen. Its relationship to the homographic noun meaning “rein” is unknown.",
+            "definition": "Resen, a city between Nineveh and Calah.",
+            "evidence": "Genesis 10:12 names Resen as an object of the building verb in Genesis 10:11 and gives its location."
+          },
+          "sense": "city-of-resen",
+          "word": 1
+        },
+        "evidence": "Genesis 10:12 locates רֶסֶן with בֵּין נִינְוֵה וּבֵין כָּלַח, “between Nineveh and Calah.” Its place in the list of cities built in Genesis 10:11–12 identifies it as a city name.",
+        "gloss": "Resen",
+        "language": "he",
+        "lemma": "רֶסֶן",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun with no prefix or suffix. The preceding וְאֶת marks it as a further direct object of וַיִּבֶן, “he built,” in Genesis 10:11.",
+        "qualifier": "place name",
+        "root": "רסנ",
+        "segments": "רֶסֶן",
+        "sense": "The city between Nineveh and Calah."
+      },
+      "position": 1,
+      "surface": "רֶסֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "byn",
           "sense": "bein-space",
           "word": 0

@@ -1,51 +1,70 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "רִסְנָא, T00858, Second Targum Esther 6:11",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "רִסְנָא",
+      "gloss": "bridle, reins",
+      "id": "arc-t00858",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "risnā"
+    }
+  ],
+  "doctrine": [],
+  "gloss": "rein, bridle; Resen",
   "id": "raesaen",
+  "note": "Drafted from Psalms 32–33 audit.",
   "root": "רסנ",
   "status": "draft",
-  "updated": "2026-11-19",
-  "gloss": "rein, bridle",
-  "summary": "רסן is a rein or bridle by which an animal is directed.",
+  "summary": "רסן is a rein or bridle by which an animal is directed. Genesis 10:12 uses the same spelling for the city of Resen. The relationship between the two words is unknown.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "רֶסֶן",
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "rein, bridle",
       "bdb": [
         "t.df.ab"
       ],
+      "cognate_ids": [
+        "arc-t00858"
+      ],
+      "gender": "m",
+      "gloss": "rein, bridle",
+      "lemma": "רֶסֶן",
+      "pos": "noun",
       "senses": [
         {
-          "id": "rein",
-          "gloss": "rein",
           "definition": "A rein or bridle used to guide an animal.",
           "evidence": [
             {
               "ref": "Psa.32.9",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "rein",
+          "id": "rein"
         }
-      ],
-      "cognate_ids": [
-        "arc-t00858"
       ]
-    }
-  ],
-  "doctrine": [],
-  "note": "Drafted from Psalms 32–33 audit.",
-  "cognates": [
+    },
     {
-      "id": "arc-t00858",
-      "lang": "arc",
-      "form": "רִסְנָא",
-      "translit": "risnā",
-      "gloss": "bridle, reins",
-      "relation": "cognate",
-      "evidence": [
+      "gloss": "Resen",
+      "lemma": "רֶסֶן",
+      "pos": "name",
+      "senses": [
         {
-          "source": "jastrow-1903",
-          "locator": "רִסְנָא, T00858, Second Targum Esther 6:11"
+          "definition": "A city between Nineveh and Calah.",
+          "evidence": [
+            {
+              "note": "The phrase בֵּין נִינְוֵה וּבֵין כָּלַח gives Resen’s location between the two named cities.",
+              "ref": "Gen.10.12",
+              "role": "defining"
+            }
+          ],
+          "gloss": "Resen",
+          "id": "city-of-resen"
         }
       ]
     }
