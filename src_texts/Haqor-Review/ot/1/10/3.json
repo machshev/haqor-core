@@ -1,6 +1,54 @@
 {
   "book": 1,
   "chapter": 10,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Genesis 10:2 names Gomer as a son of Japheth. This verse names Gomer’s three sons.",
+        "key": "Gomer@Gen.10.2",
+        "position": 1
+      },
+      {
+        "evidence": "Ashkenaz is the first person listed among Gomer’s sons.",
+        "key": "Ashkenaz@Gen.10.3",
+        "position": 2
+      },
+      {
+        "evidence": "Riphath is named between Ashkenaz and Togarmah in the list of Gomer’s sons.",
+        "key": "Riphath@Gen.10.3",
+        "position": 3
+      },
+      {
+        "evidence": "Togarmah is the third person listed among Gomer’s sons.",
+        "key": "Togarmah@Gen.10.3",
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and the sons of",
+        "position": 0
+      },
+      {
+        "gloss": "Gomer",
+        "position": 1
+      },
+      {
+        "gloss": "Ashkenaz",
+        "position": 2
+      },
+      {
+        "gloss": "and Riphath",
+        "position": 3
+      },
+      {
+        "gloss": "and Togarmah",
+        "position": 4
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And the sons of|0] [Gomer|1] {were} [Ashkenaz|2] [and Riphath|3] [and Togarmah|4]."
+  },
   "source": "ot",
   "verse": 3,
   "words": [
@@ -107,26 +155,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-20",
-              "english": "Togarmah",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "וְתֹגַרְמָה closes the list introduced by וּבְנֵי גֹּמֶר, “and the sons of Gomer.”",
-                  "ref": "Gen.10.3",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Togarmah",
-              "id": "togarmah",
-              "name": "תֹּגַרְמָה",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Genesis names Togarmah as a son of Gomer alongside Ashkenaz and Riphath. The meaning of his name is uncertain.",
-              "updated": "2026-11-20"
-            },
             "article_id": "togarmah",
             "base": null,
             "change": "Add a Hebrew personal-name article for Togarmah. The genealogy supports the name and its bearer. It supplies no basis for the source root תבנ or the gloss “ships; fleet.”",
