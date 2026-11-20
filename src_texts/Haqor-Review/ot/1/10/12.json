@@ -8,6 +8,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "ec15da6f5ee153e772d83c0d74f01bbe09735bf9f5850f89ac262bcb21f53b2f",
+            "change": "Add Genesis 10:12 as evidence for definite-object on the Hebrew particle at word index 0.",
+            "definition": "Introduces a definite direct object, here a city identified by name.",
+            "evidence": "Genesis 10:12 continues the list begun in 10:11. וְאֶת רֶסֶן introduces the last city built."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "וְאֶת רֶסֶן adds Resen to the cities governed by וַיִּבֶן, “he built,” in Genesis 10:11. The following phrase בֵּין נִינְוֵה וּבֵין כָּלַח locates Resen between Nineveh and Calah.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "וְ is the coordinating conjunction “and.” אֶת is the unsuffixed form of the direct-object particle אֵת.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks the named city רֶסֶן as a definite direct object."
+      },
+      "position": 0,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "raesaen",
             "base": "cceef466729aed7d3d9cebc710030a6e83fbdfd4b93b10882cf62aa6678bc262",
             "change": "Append the place name רֶסֶן at word index 1 with the sense city-of-resen. Its relationship to the homographic noun meaning “rein” is unknown.",
