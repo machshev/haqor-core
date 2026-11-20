@@ -3,7 +3,7 @@
   "root": "שפכ",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "pour",
     "out"
@@ -39,9 +39,54 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "שֶׁפֶךְ",
+      "bdb": [
+        "v.fh.ab"
+      ],
+      "pos": "noun",
+      "gloss": "pouring",
+      "senses": [
+        {
+          "gloss": "pouring",
+          "definition": "The pouring out of blood is used in judgments and sacrifices.",
+          "evidence": [
+            {
+              "ref": "Lev.4.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.24.8"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שָׁפְכָה",
+      "bdb": [
+        "v.fh.ac"
+      ],
+      "pos": "noun",
+      "gloss": "male organ",
+      "senses": [
+        {
+          "gloss": "male organ",
+          "definition": "The word is a bodily term in the legal text.",
+          "evidence": [
+            {
+              "ref": "Deu.23.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": ""
+  "note": " Added both noun keys listed in the brief; the bodily sense is retained with an open-note distinction."
 }

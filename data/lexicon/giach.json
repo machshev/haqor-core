@@ -3,7 +3,7 @@
   "root": "גיח",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "emerge",
     "birth"
@@ -39,9 +39,51 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "גִּיחוֹן",
+      "bdb": [
+        "c.bv.ac"
+      ],
+      "pos": "noun",
+      "gloss": "Gihon",
+      "senses": [
+        {
+          "gloss": "Gihon",
+          "definition": "Gihon is the river said to go around Cush.",
+          "evidence": [
+            {
+              "ref": "Gen.2.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "גִּיחַ",
+      "bdb": [
+        "c.bv.ab"
+      ],
+      "pos": "noun",
+      "gloss": "Gihon spring",
+      "senses": [
+        {
+          "gloss": "Gihon spring",
+          "definition": "Gihon is the spring where Solomon is anointed king.",
+          "evidence": [
+            {
+              "ref": "1Ki.1.33",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": ""
+  "note": " Added both proper-name senses. Gihon names a river and a spring in the text."
 }

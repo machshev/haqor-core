@@ -3,7 +3,7 @@
   "root": "פטר",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "open",
     "release"
@@ -56,9 +56,72 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "פִּטְרָה",
+      "bdb": [
+        "q.bg.ac"
+      ],
+      "pos": "noun",
+      "gloss": "first opening",
+      "senses": [
+        {
+          "gloss": "first opening",
+          "definition": "This feminine form names the same first opening.",
+          "evidence": [
+            {
+              "ref": "Num.18.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "פִּי הַחִירֹת",
+      "bdb": [
+        "q.bg.ag"
+      ],
+      "pos": "noun",
+      "gloss": "Pi-hahiroth",
+      "senses": [
+        {
+          "gloss": "Pi-hahiroth",
+          "definition": "Israel camps at Pi-hahiroth before crossing the sea.",
+          "evidence": [
+            {
+              "ref": "Exo.14.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "פִּי־בֶסֶת",
+      "bdb": [
+        "q.bg.af"
+      ],
+      "pos": "noun",
+      "gloss": "Pi-beseth",
+      "senses": [
+        {
+          "gloss": "Pi-beseth",
+          "definition": "Pi-beseth is an Egyptian place named by the prophet.",
+          "evidence": [
+            {
+              "ref": "Ezk.30.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": ""
+  "note": " Added the noun, its feminine counterpart and the two place names listed in the brief."
 }

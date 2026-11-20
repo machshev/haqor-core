@@ -3,7 +3,7 @@
   "root": "אבר",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "strength",
     "bull"
@@ -34,9 +34,104 @@
         }
       ],
       "gender": "m"
+    },
+    {
+      "lemma": "אָבִיר",
+      "bdb": [
+        "a.aq.ae"
+      ],
+      "pos": "adjective",
+      "gloss": "strong one, the Strong",
+      "senses": [
+        {
+          "gloss": "strong one, the Strong",
+          "definition": "The Strong One is a title of Yahweh in the poetic texts.",
+          "evidence": [
+            {
+              "ref": "Gen.49.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.1.24"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "אֶבְרָה",
+      "bdb": [
+        "a.aq.ac"
+      ],
+      "pos": "noun",
+      "gloss": "pinion",
+      "senses": [
+        {
+          "gloss": "pinion",
+          "definition": "A bird’s pinion supplies the image of protective wings.",
+          "evidence": [
+            {
+              "ref": "Psa.68.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.39.13"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "אֵבֶר",
+      "bdb": [
+        "a.aq.ab"
+      ],
+      "pos": "noun",
+      "gloss": "wing, pinion",
+      "senses": [
+        {
+          "gloss": "wing, pinion",
+          "definition": "The pinions of the dove are compared with silver and gold.",
+          "evidence": [
+            {
+              "ref": "Psa.68.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "אָבַר",
+      "bdb": [
+        "a.aq.ad"
+      ],
+      "pos": "verb",
+      "gloss": "move the pinions",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "move the wings",
+          "senses": [
+            {
+              "gloss": "move the wings",
+              "definition": "The bird moves its pinions in flight.",
+              "evidence": [
+                {
+                  "ref": "Isa.40.31",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": ""
+  "note": " Added every ordinary word in the brief; the divine title and wing senses remain distinct."
 }

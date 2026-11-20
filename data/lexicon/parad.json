@@ -3,7 +3,7 @@
   "root": "פרד",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "separation",
     "scattering"
@@ -39,9 +39,120 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "פֶרֶד",
+      "bdb": [
+        "q.cu.ab"
+      ],
+      "pos": "noun",
+      "gloss": "mule",
+      "senses": [
+        {
+          "gloss": "mule",
+          "definition": "A mule is a cross-bred riding animal.",
+          "evidence": [
+            {
+              "ref": "2Sa.13.29",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.1.33"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "פִּרְדָּה",
+      "bdb": [
+        "q.cu.ac"
+      ],
+      "pos": "noun",
+      "gloss": "she-mule",
+      "senses": [
+        {
+          "gloss": "she-mule",
+          "definition": "The feminine form names a she-mule.",
+          "evidence": [
+            {
+              "ref": "Zec.14.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "פַּרְדֵּס",
+      "bdb": [
+        "q.cu.ad"
+      ],
+      "pos": "noun",
+      "gloss": "park, orchard",
+      "senses": [
+        {
+          "gloss": "park, orchard",
+          "definition": "A pardes is a planted enclosure or orchard.",
+          "evidence": [
+            {
+              "ref": "Neh.2.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.4.13"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "פְּרוּדָא",
+      "bdb": [
+        "q.ct.ac"
+      ],
+      "pos": "noun",
+      "gloss": "Peruda",
+      "senses": [
+        {
+          "gloss": "Peruda",
+          "definition": "Peruda is listed among the returned families.",
+          "evidence": [
+            {
+              "ref": "Ezr.2.55",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "פְּרֻדָה",
+      "bdb": [
+        "q.ct.ab"
+      ],
+      "pos": "noun",
+      "gloss": "grain, separated kernel",
+      "senses": [
+        {
+          "gloss": "grain, separated kernel",
+          "definition": "Separated grain is used as an image of scattered seed.",
+          "evidence": [
+            {
+              "ref": "2Sa.17.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": ""
+  "note": " Added the mule and orchard words and the post-exilic proper name from the brief."
 }
