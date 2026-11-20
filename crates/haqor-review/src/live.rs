@@ -97,6 +97,10 @@ impl Live {
                 .map(|w| w["analysis"].clone())
                 .unwrap_or(Value::Null)
         };
+        if let Some(pending)=packet["published"].pointer_mut("/entry/draft/reconciliation").and_then(Value::as_object_mut) {
+            pending.remove("article");
+            pending.insert("source_file".into(),json!(self.path(j)?));
+        }
         Ok(())
     }
     // Journal the precise allowed write set before touching files. Only a replay of this
@@ -148,7 +152,7 @@ impl Live {
             out["review"] = answer.clone();
         } else {
             let raw: String = db.query_row(
-                "SELECT packet FROM verse WHERE source=? AND ref=?",
+                "SELECT review_input(source,ref,packet) FROM verse WHERE source=? AND ref=?",
                 params![j.source, j.reference],
                 |r| r.get(0),
             )?;
@@ -229,6 +233,13 @@ impl Live {
             return Ok(false);
         }
         let mut paths = BTreeSet::from([self.path(j)?]);
+        let greek_draft = j.source == "greek" && j.pos >= 0 && answer["entry"]["draft"].is_object();
+        if greek_draft {
+            paths.insert(crate::greek::path(
+                &self.lexicon,
+                &crate::greek::id(&answer)?,
+            )?);
+        }
         let article: Option<(String, bool)> = db
             .query_row(
                 "SELECT id,name FROM article WHERE source=? AND ref=? AND pos=? AND applied=0",
@@ -236,11 +247,40 @@ impl Live {
                 |r| Ok((r.get(0)?, r.get(1)?)),
             )
             .optional()?;
+        let pending_verse_articles: Vec<(Job, String, bool)> = if j.pos < 0 {
+            let mut q = db.prepare(
+                "SELECT source,ref,pos,id,name FROM article WHERE source=? AND ref=? AND applied=0",
+            )?;
+            q.query_map(params![j.source, j.reference], |r| {
+                Ok((
+                    Job {
+                        source: r.get(0)?,
+                        reference: r.get(1)?,
+                        pos: r.get(2)?,
+                    },
+                    r.get(3)?,
+                    r.get(4)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?
+        } else {
+            Vec::new()
+        };
         if let Some((id, name)) = &article {
             ensure!(
                 !id.is_empty() && id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
                 "invalid article id"
             );
+            paths.insert(
+                if *name {
+                    self.lexicon.join("names")
+                } else {
+                    self.lexicon.clone()
+                }
+                .join(format!("{id}.json")),
+            );
+        }
+        for (_, id, name) in &pending_verse_articles {
             paths.insert(
                 if *name {
                     self.lexicon.join("names")
@@ -279,7 +319,23 @@ impl Live {
                 j.reference,
                 &self.refs,
             )?;
+            // Name drafts may have been waiting for this verse's bearer
+            // decision. Apply them after people publication has merged the
+            // bearer keys into their staged articles.
+            for (word, _, _) in &pending_verse_articles {
+                match articles::apply_one(db, &self.lexicon, &self.refs, word)? {
+                    articles::PublishOutcome::Stale | articles::PublishOutcome::Rejected => {
+                        self.finish(db, j)?;
+                        return Ok(true);
+                    }
+                    articles::PublishOutcome::Deferred
+                    | articles::PublishOutcome::Applied
+                    | articles::PublishOutcome::NotPending => {}
+                }
+            }
         }
+        let greek_changed =
+            greek_draft && crate::greek::publish(&self.lexicon, &answer, j.reference, j.pos)?;
         self.merge(db, j, &answer)?;
         self.finish(db, j)?;
         result_store::compact(db, j, &self.root())?;
@@ -287,7 +343,7 @@ impl Live {
             "UPDATE article SET body='' WHERE source=? AND ref=? AND pos=? AND applied=1",
             j.key(),
         )?;
-        Ok(article.is_some() || j.pos < 0)
+        Ok(greek_changed || article.is_some() || j.pos < 0)
     }
     pub fn recover(&self, db: &mut Connection) -> Result<()> {
         db.execute_batch(
@@ -329,5 +385,51 @@ impl Live {
         let mut c = Catalog::load(&self.lexicon)?;
         c.people = Some(people::People::load(&self.src, &self.data)?);
         Ok(c)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn out_of_order_words_share_one_tracked_verse() -> Result<()> {
+        let src = std::env::temp_dir().join(format!("haqor-live-{}", std::process::id()));
+        fs::create_dir_all(&src)?;
+        let db = Connection::open_in_memory()?;
+        crate::inventory::register(&db, &src)?;
+        db.execute_batch(crate::jobs::SCHEMA)?;
+        let reference = 0x280102;
+        let inventory =
+            json!({"words":[{"position":0,"surface":"A"},{"position":1,"surface":"B"}]});
+        db.execute(
+            "INSERT INTO verse VALUES('peshitta',?,?)",
+            params![reference, inventory.to_string()],
+        )?;
+        let live = Live {
+            src: src.clone(),
+            lexicon: src.clone(),
+            data: src.clone(),
+            refs: HashSet::from([reference]),
+            _lock: fs::File::open(&src)?,
+        };
+        let mut job = Job {
+            source: "peshitta".into(),
+            reference,
+            pos: 1,
+        };
+        live.merge(&db, &job, &json!({"lemma":"B"}))?;
+        let mut packet = json!({});
+        live.context(&job, &mut packet)?;
+        assert_eq!(packet["published"]["lemma"], "B");
+        job.pos = 0;
+        live.merge(&db, &job, &json!({"lemma":"A"}))?;
+        job.pos = -1;
+        live.merge(&db, &job, &json!({"translation":"[A|0] [B|1]"}))?;
+        let edition = live.packet(&job)?;
+        assert_eq!(edition["words"][0]["analysis"]["lemma"], "A");
+        assert_eq!(edition["words"][1]["analysis"]["lemma"], "B");
+        assert_eq!(edition["review"]["translation"], "[A|0] [B|1]");
+        fs::remove_dir_all(src)?;
+        Ok(())
     }
 }

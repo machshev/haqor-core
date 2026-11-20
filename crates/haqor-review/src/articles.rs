@@ -106,10 +106,16 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
         ],
     )?;
     let article_id = id.to_owned();
-    answer["entry"]["draft"]
-        .as_object_mut()
-        .unwrap()
-        .remove("article");
+    let await_bearer = name
+        && article["people"]
+            .as_array()
+            .is_some_and(|people| people.is_empty());
+    if !await_bearer {
+        answer["entry"]["draft"]
+            .as_object_mut()
+            .unwrap()
+            .remove("article");
+    }
     answer["entry"]["draft"]["article_id"] = json!(article_id);
     Ok(())
 }
@@ -127,21 +133,6 @@ pub fn apply(db: &mut Connection, lexicon: &Path, data: &Path) -> Result<()> {
     Ok(())
 }
 
-/// Publish word-level article proposals as soon as their word result is
-/// accepted. The caller owns the `sources.json` lock for the duration of this
-/// operation. A proposal whose base has become stale is returned to the word
-/// queue so the next worker reads the current article.
-pub fn apply_pending(db: &mut Connection, lexicon: &Path, data: &Path) -> Result<(usize, usize)> {
-    let corpus =
-        Connection::open_with_flags(data.join("haqor.db"), OpenFlags::SQLITE_OPEN_READ_ONLY)?;
-    let verses = haqor_lexicon::verses_of(&corpus)?;
-    let writer = fs::File::open(lexicon.join("sources.json"))?;
-    writer
-        .try_lock()
-        .context("another review queue is applying lexicon articles")?;
-    apply_pending_locked(db, lexicon, &verses)
-}
-
 /// Result of attempting to publish one accepted word proposal.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum PublishOutcome {
@@ -149,6 +140,7 @@ pub enum PublishOutcome {
     NotPending,
     Stale,
     Rejected,
+    Deferred,
 }
 
 /// Publish exactly one accepted word proposal. This is the live-run API. It
@@ -204,6 +196,15 @@ fn apply_pending_locked(
             Ok(PublishOutcome::Applied) => applied += 1,
             Ok(PublishOutcome::Stale) => stale += 1,
             Ok(PublishOutcome::Rejected) => (),
+            Ok(PublishOutcome::Deferred) => {
+                // Keep the complete draft in `article.body`, but remove this
+                // row from the manual apply loop. The verse reviewer must
+                // identify a bearer before the validator can accept it.
+                db.execute(
+                    "UPDATE job SET state='unresolved',feedback='Personal-name article has no identified bearer; review its verse entities before applying it.' WHERE source=? AND ref=? AND pos=?",
+                    job.key(),
+                )?;
+            }
             Ok(PublishOutcome::NotPending) => (),
             Err(error) => {
                 if !is_validation_error(&error) {
@@ -258,6 +259,14 @@ fn apply_one_locked(
         Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
         Err(e) => return Err(e.into()),
     };
+    let draft: Value = serde_json::from_str(&body)?;
+    if name
+        && draft["people"]
+            .as_array()
+            .is_some_and(|people| people.is_empty())
+    {
+        return Ok(PublishOutcome::Deferred);
+    }
     if current
         .as_ref()
         .is_none_or(|s| s.trim_end() != body.trim_end())
@@ -354,4 +363,52 @@ pub fn refresh_dependencies(
     }
     tx.commit()?;
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use rusqlite::Connection;
+    use std::time::{SystemTime, UNIX_EPOCH};
+
+    #[test]
+    fn empty_name_article_waits_for_verse_bearer() -> Result<()> {
+        let root = std::env::temp_dir().join(format!(
+            "haqor-review-name-stage-{}",
+            SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos()
+        ));
+        fs::create_dir_all(root.join("names"))?;
+        fs::write(root.join("sources.json"), "{}")?;
+        let body = json!({
+            "id":"new-name", "name":"שֵׁם", "english":"Name", "root":"שם",
+            "entry":"shem", "status":"draft", "updated":"2026-11-20",
+            "people":[], "gloss":"name", "summary":"a name", "evidence":[]
+        });
+        let mut db = Connection::open_in_memory()?;
+        db.execute_batch(crate::jobs::SCHEMA)?;
+        db.execute("INSERT INTO verse VALUES('ot',1,'{}')", [])?;
+        db.execute(
+            "INSERT INTO job(source,ref,pos,state,result) VALUES('ot',1,0,'done','{}')",
+            [],
+        )?;
+        db.execute(
+            "INSERT INTO article VALUES('ot',1,0,'new-name',1,NULL,?,0)",
+            [body.to_string()],
+        )?;
+        let job = Job {
+            source: "ot".into(),
+            reference: 1,
+            pos: 0,
+        };
+        assert_eq!(
+            apply_one(&mut db, &root, &HashSet::new(), &job)?,
+            PublishOutcome::Deferred
+        );
+        assert_eq!(
+            db.query_row("SELECT applied FROM article", [], |r| r.get::<_, i64>(0))?,
+            0
+        );
+        fs::remove_dir_all(root)?;
+        Ok(())
+    }
 }

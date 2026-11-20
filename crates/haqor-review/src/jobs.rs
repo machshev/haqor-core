@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS job(source TEXT, ref INTEGER, pos INTEGER, state TEXT
 CREATE TABLE IF NOT EXISTS article(source TEXT,ref INTEGER,pos INTEGER,id TEXT NOT NULL,name INTEGER NOT NULL,
  base TEXT,body TEXT NOT NULL,applied INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(source,ref,pos),
  FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
+CREATE TABLE IF NOT EXISTS corrected_headword(source TEXT,ref INTEGER,pos INTEGER,lemma TEXT NOT NULL,PRIMARY KEY(source,ref,pos),FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
 CREATE TABLE IF NOT EXISTS retired(language TEXT,lemma TEXT,qualifier TEXT,reason TEXT NOT NULL,
  PRIMARY KEY(language,lemma,qualifier)) WITHOUT ROWID;
 CREATE INDEX IF NOT EXISTS pending_articles ON article(ref,source,pos) WHERE applied=0;
@@ -87,6 +88,28 @@ impl Catalog {
                 }
             }
         }
+        let greek = path.join("greek");
+        if greek.try_exists()? {
+            for entry in std::fs::read_dir(&greek)? {
+                let file = entry?.path();
+                if file.extension().and_then(|x| x.to_str()) != Some("json") {
+                    continue;
+                }
+                let raw = std::fs::read_to_string(&file)?;
+                let a: Value = serde_json::from_str(&raw)?;
+                let key = crate::greek::id(&a)?;
+                ensure!(
+                    a["id"] == key && crate::greek::path(path, &key)? == file,
+                    "misfiled Greek article {}",
+                    file.display()
+                );
+                let revision = crate::articles::revision(&raw);
+                catalog
+                    .revisions
+                    .insert((key.clone(), false), revision.clone());
+                catalog.words.entry(a["lemma"].as_str().unwrap().into()).or_default().push(json!({"entry":key,"name":false,"language":"grc","lemma":a["lemma"],"qualifier":a["qualifier"],"root":a["root"],"revision":revision,"senses":a["senses"].as_object().context("Greek dictionary senses missing")?.iter().map(|(sense,d)|json!({"sense":sense,"gloss":d["gloss"],"definition":d["definition"]})).collect::<Vec<_>>()}));
+            }
+        }
         Ok(catalog)
     }
 }
@@ -116,7 +139,7 @@ pub fn next(db: &Connection) -> Result<Option<Job>> {
 
 pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
     let (raw, feedback, error): (String, Option<String>, Option<String>) = db.query_row(
-        "SELECT packet,feedback,error FROM verse JOIN job USING(source,ref)
+        "SELECT review_input(verse.source,verse.ref,packet),feedback,error FROM verse JOIN job USING(source,ref)
       WHERE source=? AND ref=? AND pos=?",
         j.key(),
         |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
@@ -139,16 +162,28 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
                 .collect::<Vec<_>>()
         );
         p["word"] = word.clone();
+        let corrected: Option<String> = db
+            .query_row(
+                "SELECT lemma FROM corrected_headword WHERE source=? AND ref=? AND pos=?",
+                j.key(),
+                |r| r.get(0),
+            )
+            .optional()?;
+        let corrected = json!(corrected);
         let mut candidates = Vec::new();
         for key in [
+            &corrected,
             &word["source_analysis"]["root"],
             &word["source_analysis"]["lemma"],
             &word["surface"],
         ] {
-            if let Some(items) = key
-                .as_str()
-                .and_then(|k| catalog.words.get(&fold_consonants(k)))
-            {
+            if let Some(items) = key.as_str().and_then(|k| {
+                catalog.words.get(&if j.source == "greek" {
+                    k.nfc().collect::<String>()
+                } else {
+                    fold_consonants(k)
+                })
+            }) {
                 for item in items {
                     if !candidates.contains(item) {
                         candidates.push(item.clone());
@@ -172,6 +207,7 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
         candidates.sort_by_key(|c| {
             let head = c["lemma"].as_str().unwrap_or("");
             (
+                c["lemma"] != corrected,
                 c["language"] != language,
                 head != lemma && head != surface,
                 fold_consonants(head) != fold_consonants(lemma),
@@ -244,7 +280,7 @@ pub struct Word {
     evidence: String,
     entry: Value,
 }
-const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id"} when the candidate covers this word and sense. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."}} proposing the new or corrected lexical content. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek the SQLite lexical draft is the entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
+const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id"} when the candidate covers this word and sense. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."}} proposing the new or corrected lexical content. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
 const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name. Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
 pub fn prompt(packet: &Value) -> String {
     format!(
@@ -381,7 +417,10 @@ pub fn accept(
                     .into_iter()
                     .flatten()
                     .find(|r| {
-                        if r["entry"] != id || r["root"] != answer["root"] {
+                        if r["entry"] != id
+                            || r["root"] != answer["root"]
+                            || (word.language == "grc" && r["qualifier"] != answer["qualifier"])
+                        {
                             return false;
                         }
                         let Some(head) = r["lemma"].as_str() else {
@@ -414,6 +453,9 @@ pub fn accept(
                 }
             }
             crate::articles::stage(&tx, j, &mut answer, packet)?;
+            if j.source=="greek" && answer["entry"]["draft"].is_object() {
+                answer["entry"]["draft"]["article_id"]=json!(crate::greek::id(&answer)?);
+            }
         }
     } else {
         let positions = j.positions(&tx)?;

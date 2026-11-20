@@ -1,6 +1,7 @@
 //! One Rust process coordinates independent, read-only word and verse agents.
 mod articles;
 mod chat;
+mod greek;
 mod inventory;
 mod jobs;
 mod live;
@@ -201,6 +202,33 @@ fn main() -> Result<()> {
         .or_else(|| configured.map(PathBuf::from))
         .unwrap_or_else(|| PathBuf::from("src_texts"));
     result_store::register(&db, &src.join("Haqor-Review"))?;
+    let explicit_data = match &cli.command {
+        Action::Seed { data, .. }
+        | Action::Publish { data, .. }
+        | Action::Run { data, .. }
+        | Action::ApplyNames { data, .. } => Some(data),
+        _ => None,
+    };
+    if writing && let Some(data) = explicit_data {
+        db.execute(
+            "INSERT OR REPLACE INTO review_config VALUES('data',?)",
+            [data.to_str().context("invalid data path")?],
+        )?;
+    }
+    let data: String = db
+        .query_row(
+            "SELECT value FROM review_config WHERE key='data'",
+            [],
+            |r| r.get(0),
+        )
+        .unwrap_or_else(|_| "data".into());
+    inventory::register(&db, Path::new(&data))?;
+    if matches!(
+        cli.command,
+        Action::Seed { .. } | Action::Publish { .. } | Action::Run { .. }
+    ) {
+        inventory::compact(&db)?;
+    }
     match cli.command {
         Action::Seed {
             data,
@@ -348,7 +376,7 @@ fn main() -> Result<()> {
 }
 
 fn export(db: &Connection) -> Result<()> {
-    let mut q=db.prepare("SELECT source,ref,review_result(result),packet FROM job JOIN verse USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
+    let mut q=db.prepare("SELECT source,ref,review_result(result),review_input(verse.source,verse.ref,packet) FROM job JOIN verse USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
     let mut rows = q.query([])?;
     let mut stdout = io::BufWriter::new(io::stdout().lock());
     while let Some(r) = rows.next()? {
@@ -375,23 +403,6 @@ fn export(db: &Connection) -> Result<()> {
     Ok(())
 }
 
-#[cfg(test)]
-fn run(
-    db: &mut Connection,
-    _catalog: &Catalog,
-    limit: usize,
-    max_attempts: u32,
-    worker: &(impl Fn(&Value) -> Result<(Value, Value)> + Sync),
-) -> Result<()> {
-    schedule(
-        db,
-        &mut Catalog::default(),
-        None,
-        limit,
-        max_attempts,
-        worker,
-    )
-}
 fn schedule(
     db: &mut Connection,
     catalog: &mut Catalog,
@@ -486,7 +497,7 @@ fn schedule(
             }
             let usage = result.as_ref().ok().map(|(_, u)| u.to_string());
             if let Some(live) = live
-                && result.is_ok()
+                && let Ok((answer, _)) = &result
             {
                 let running: bool = db.query_row(
                     "SELECT state='running' FROM job WHERE source=? AND ref=? AND pos=?",
@@ -499,9 +510,26 @@ fn schedule(
                 }
                 let mut current = jobs::packet(db, &job, catalog)?;
                 live.context(&job, &mut current)?;
-                let changed = ["candidates", "words", "people_and_places", "published"]
-                    .iter()
-                    .any(|k| current[*k] != packet[*k]);
+                let unseen_greek = job.source == "greek"
+                    && answer["entry"]["draft"].is_object()
+                    && crate::greek::id(answer).ok().is_some_and(|id| {
+                        catalog.revisions.contains_key(&(id.clone(), false))
+                            && !packet["candidates"]
+                                .as_array()
+                                .into_iter()
+                                .flatten()
+                                .any(|c| c["entry"] == id)
+                    });
+                if unseen_greek {
+                    db.execute(
+                        "INSERT OR REPLACE INTO corrected_headword VALUES(?,?,?,?)",
+                        params![job.source, job.reference, job.pos, answer["lemma"].as_str()],
+                    )?;
+                }
+                let changed = unseen_greek
+                    || ["candidates", "words", "people_and_places", "published"]
+                        .iter()
+                        .any(|k| current[*k] != packet[*k]);
                 if changed {
                     db.execute("UPDATE job SET state='ready',attempts=max(0,attempts-1),feedback='Published source changed while reviewing. Reconcile the current packet.' WHERE source=? AND ref=? AND pos=?",job.key())?;
                     progress.log(&format!("Requeued {label} after a source change"));
@@ -684,6 +712,7 @@ mod tests {
 
     fn fixture(counts: &[usize]) -> Connection {
         let db = Connection::open_in_memory().unwrap();
+        inventory::register(&db, Path::new(".")).unwrap();
         result_store::register(&db, Path::new(".")).unwrap();
         db.execute_batch(jobs::SCHEMA).unwrap();
         for (i, count) in counts.iter().enumerate() {
@@ -730,7 +759,7 @@ mod tests {
         let active = AtomicUsize::new(0);
         let peak = AtomicUsize::new(0);
         let gate = (Mutex::new(false), Condvar::new());
-        run(&mut db, &Catalog::default(), 2, 1, &|p| {
+        schedule(&mut db, &mut Catalog::default(), None, 2, 1, &|p| {
             let n = active.fetch_add(1, Ordering::SeqCst) + 1;
             peak.fetch_max(n, Ordering::SeqCst);
             let answer = if p["kind"] == "word" {
@@ -769,7 +798,7 @@ mod tests {
                 .unwrap(),
             9
         );
-        run(&mut db, &Catalog::default(), 2, 1, &|_| {
+        schedule(&mut db, &mut Catalog::default(), None, 2, 1, &|_| {
             bail!("completed work redispatched")
         })
         .unwrap();
@@ -777,7 +806,7 @@ mod tests {
     #[test]
     fn failed_word_blocks_only_its_verse_and_rework_targets_one_position() {
         let mut db = fixture(&[2, 1]);
-        let result = run(&mut db, &Catalog::default(), 2, 1, &|p| {
+        let result = schedule(&mut db, &mut Catalog::default(), None, 2, 1, &|p| {
             let answer = if p["kind"] == "word" {
                 if p["verse"] == 1 && p["position"] == 1 {
                     json!({})
@@ -796,7 +825,7 @@ mod tests {
             [],
         )
         .unwrap();
-        run(&mut db, &Catalog::default(), 2, 3, &|p| {
+        schedule(&mut db, &mut Catalog::default(), None, 2, 3, &|p| {
             assert_eq!(p["verse"], 1);
             let answer = if p["kind"] == "word" {
                 if p["position"] == 0 {
@@ -851,7 +880,7 @@ mod tests {
             [],
         )
         .unwrap();
-        let error = run(&mut db, &Catalog::default(), 1, 1, &|_| {
+        let error = schedule(&mut db, &mut Catalog::default(), None, 1, 1, &|_| {
             Ok((word(), Value::Null))
         });
         assert!(error.is_err());
@@ -865,7 +894,7 @@ mod tests {
         )
         .unwrap();
         assert!(
-            run(&mut db, &Catalog::default(), 1, 1, &|p| {
+            schedule(&mut db, &mut Catalog::default(), None, 1, 1, &|p| {
                 assert_eq!(p["kind"], "word");
                 Ok((
                     json!({"unresolved":"Two possible analyses need further evidence."}),

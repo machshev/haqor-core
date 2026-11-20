@@ -345,7 +345,7 @@ pub fn publish(queue: &Connection, src: &Path, data: &Path, lexicon: &Path) -> R
     let mut index = catalog.reviewed;
     let mut add_to_article: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
     let mut n = 0;
-    let mut verses=queue.prepare("SELECT j.source,j.ref,review_result(j.result),v.packet FROM job j JOIN verse v USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
+    let mut verses=queue.prepare("SELECT j.source,j.ref,review_result(j.result),review_input(v.source,v.ref,v.packet) FROM job j JOIN verse v USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
     let mut rows = verses.query([])?;
     let mut analysis = queue.prepare_cached(
         "SELECT review_result(result) FROM job WHERE source=? AND ref=? AND pos=?",
@@ -482,26 +482,6 @@ pub fn publish(queue: &Connection, src: &Path, data: &Path, lexicon: &Path) -> R
     Ok(())
 }
 
-/// Publish one completed verse while the review coordinator is running.
-///
-/// The records file is locked for the whole read/merge/write operation. This
-/// makes a verse the publication boundary and means that two worker results
-/// cannot overwrite each other's people or place assignments. The operation is
-/// idempotent, so a coordinator restart may safely retry it.
-pub fn publish_one(
-    queue: &Connection,
-    src: &Path,
-    data: &Path,
-    lexicon: &Path,
-    edition: &str,
-    reference: i64,
-) -> Result<()> {
-    let corpus =
-        Connection::open_with_flags(data.join("haqor.db"), OpenFlags::SQLITE_OPEN_READ_ONLY)?;
-    let refs = haqor_lexicon::verses_of(&corpus)?;
-    publish_one_with_refs(queue, src, data, lexicon, edition, reference, &refs)
-}
-
 /// Variant for a coordinator that has cached the immutable corpus verse set.
 /// Caching this set avoids scanning the runtime database for every completed
 /// verse in a long review run.
@@ -527,7 +507,7 @@ pub fn publish_one_with_refs(
         .map(|s| serde_json::from_str(&s))??;
     let packet: Value = queue
         .query_row(
-            "SELECT packet FROM verse WHERE source=? AND ref=?",
+            "SELECT review_input(source,ref,packet) FROM verse WHERE source=? AND ref=?",
             params![edition, reference],
             |r| r.get::<_, String>(0),
         )
@@ -592,11 +572,9 @@ pub fn publish_one_with_refs(
     }
     let current = index.verses.entry(edition.to_owned()).or_default();
     let old = current.get(&reference);
-    // Most verses contain no explicit name. Avoid adding and rewriting the
-    // growing overlay for those verses. An existing entry is still updated
-    // when an explicit review clears its prior identities.
-    let needs_overlay = old.is_some() || words.iter().any(|mention| mention.key.is_some());
-    if needs_overlay && accept_published_mentions(old, &review["name_review_base"], &words)? {
+    // An explicit empty review is still published. It can be the overlay that
+    // clears a name tag supplied by the source runtime database.
+    if accept_published_mentions(old, &review["name_review_base"], &words)? {
         current.insert(reference, words);
         let path = src.join(PATH);
         fs::create_dir_all(path.parent().unwrap())?;

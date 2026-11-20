@@ -1,4 +1,4 @@
-//! Snapshot the actual reader positions and English into the review queue.
+//! Track inventory fingerprints and load current reader inputs by chapter.
 use anyhow::{Context, Result, ensure};
 use haqor_core::bible::Bible;
 use rusqlite::{Connection, OpenFlags, params};
@@ -36,10 +36,27 @@ pub fn seed(
     low: i64,
     high: i64,
 ) -> Result<()> {
+    let tx = state.transaction()?;
+    let total = visit(dir, sources, low, high, |source, r, words, english| {
+        save(&tx, source, r, words, english)
+    })?;
+    ensure!(total > 0, "no source verses matched this selection");
+    tx.commit()?;
+    println!("Inventoried {total} source verses.");
+    Ok(())
+}
+
+fn visit(
+    dir: &Path,
+    sources: &[Source],
+    low: i64,
+    high: i64,
+    mut emit: impl FnMut(Source, i64, &[Value], Option<&Value>) -> Result<()>,
+) -> Result<usize> {
     let corpus =
         Connection::open_with_flags(dir.join("haqor.db"), OpenFlags::SQLITE_OPEN_READ_ONLY)?;
     let bible = Bible::open(dir)?;
-    let tx = state.transaction()?;
+
     let mut total = 0;
     for &source in sources {
         if (matches!(source, Source::Ot) && low >> 16 >= 40)
@@ -70,7 +87,7 @@ pub fn seed(
             let r: i64 = row.get(0)?;
             if previous != Some(r) {
                 if let Some(last) = previous {
-                    save(&tx, source, last, &words, english.get(&(last as u8)))?;
+                    emit(source, last, &words, english.get(&(last as u8)))?;
                     words.clear();
                 }
                 if chapter != Some(r >> 8) {
@@ -93,12 +110,103 @@ pub fn seed(
             );
         }
         if let Some(last) = previous {
-            save(&tx, source, last, &words, english.get(&(last as u8)))?;
+            emit(source, last, &words, english.get(&(last as u8)))?;
         }
     }
-    ensure!(total > 0, "no source verses matched this selection");
-    tx.commit()?;
-    println!("Inventoried {total} source verses.");
+    Ok(total)
+}
+
+// The full hash detects explicit reseeds with changed context. The surface hash
+// protects positional identity when rebuilding the packet for an existing job.
+fn fingerprint(packet: &Value) -> Result<String> {
+    let words = packet["words"]
+        .as_array()
+        .context("inventory missing words")?;
+    let positions: Vec<_> = words
+        .iter()
+        .map(|w| (&w["position"], &w["surface"]))
+        .collect();
+    Ok(format!(
+        "@{}:{}",
+        crate::articles::revision(&packet.to_string()),
+        crate::articles::revision(&serde_json::to_string(&positions)?)
+    ))
+}
+
+pub fn register(db: &Connection, dir: &Path) -> Result<()> {
+    use rusqlite::functions::FunctionFlags;
+    let dir = dir.to_owned();
+    let cached = std::sync::Mutex::new(std::collections::VecDeque::<(
+        String,
+        i64,
+        HashMap<i64, (String, String)>,
+    )>::new());
+    let direct = FunctionFlags::SQLITE_UTF8 | FunctionFlags::SQLITE_DIRECTONLY;
+    db.create_scalar_function("inventory_fingerprint", 1, direct, |ctx| {
+        let raw: String = ctx.get(0)?;
+        let f = || -> Result<String> { fingerprint(&serde_json::from_str(&raw)?) };
+        f().map_err(|e| rusqlite::Error::UserFunctionError(e.into()))
+    })?;
+    db.create_scalar_function("review_input", 3, direct, move |ctx| {
+        let raw: String = ctx.get(2)?;
+        if !raw.starts_with('@') {
+            return Ok(raw);
+        }
+        let edition: String = ctx.get(0)?;
+        let reference: i64 = ctx.get(1)?;
+        let read = || -> Result<String> {
+            let mut cache = cached
+                .lock()
+                .map_err(|_| anyhow::anyhow!("inventory cache unavailable"))?;
+            let ch = reference >> 8;
+            if !cache.iter().any(|(s, c, _)| s == &edition && *c == ch) {
+                let source = match edition.as_str() {
+                    "ot" => Source::Ot,
+                    "peshitta" => Source::Peshitta,
+                    "greek" => Source::Greek,
+                    _ => anyhow::bail!("unknown edition"),
+                };
+                let mut rows = HashMap::new();
+                visit(
+                    &dir,
+                    &[source],
+                    ch << 8,
+                    (ch << 8) + 255,
+                    |_, r, words, english| {
+                        let packet = json!({"words":words,"english":english});
+                        rows.insert(r, (fingerprint(&packet)?, packet.to_string()));
+                        Ok(())
+                    },
+                )?;
+                if cache.len() == 4 {
+                    cache.pop_front();
+                }
+                cache.push_back((edition.clone(), ch, rows));
+            }
+            let (signature, packet) = cache
+                .iter()
+                .find(|(s, c, _)| s == &edition && *c == ch)
+                .and_then(|(_, _, rows)| rows.get(&reference))
+                .context("seeded verse missing from current source database")?;
+            ensure!(
+                signature.split_once(':').map(|s| s.1) == raw.split_once(':').map(|s| s.1),
+                "source word positions changed; reseed {edition} {}:{}:{}",
+                reference >> 16,
+                ch & 255,
+                reference & 255
+            );
+            Ok(packet.clone())
+        };
+        read().map_err(|e| rusqlite::Error::UserFunctionError(e.into()))
+    })?;
+    Ok(())
+}
+
+pub fn compact(db: &Connection) -> Result<()> {
+    db.execute(
+        "UPDATE verse SET packet=inventory_fingerprint(packet) WHERE substr(packet,1,1)<>'@'",
+        [],
+    )?;
     Ok(())
 }
 
@@ -110,7 +218,7 @@ fn save(
     english: Option<&Value>,
 ) -> Result<()> {
     let source = source.name();
-    let packet = serde_json::to_string(&json!({"words":words,"english":english}))?;
+    let packet = fingerprint(&json!({"words":words,"english":english}))?;
     // Re-seeding an identical packet preserves its completed work. A source
     // edit can change the context even for unchanged positions in this verse.
     let changed = db

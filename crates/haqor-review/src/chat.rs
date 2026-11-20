@@ -35,16 +35,21 @@ pub fn review(
             .flatten()
             .find(|r| r["entry"] == id)
             .context("requested article absent from candidates")?;
-        ensure!(
-            id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
-            "invalid article id"
-        );
-        let folder = if candidate["name"] == true {
-            lexicon.join("names")
+        let path = if candidate["language"] == "grc" {
+            crate::greek::path(lexicon, id)?
         } else {
-            lexicon.to_path_buf()
+            ensure!(
+                id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
+                "invalid article id"
+            );
+            let dir = if candidate["name"] == true {
+                lexicon.join("names")
+            } else {
+                lexicon.to_path_buf()
+            };
+            dir.join(format!("{id}.json"))
         };
-        let article = fs::read_to_string(folder.join(format!("{id}.json")))?;
+        let article = fs::read_to_string(path)?;
         ensure!(
             crate::articles::revision(&article) == candidate["revision"],
             "requested article changed"

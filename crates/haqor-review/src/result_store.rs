@@ -76,11 +76,7 @@ pub fn register(db: &Connection, root: &Path) -> Result<()> {
             let verse: Value = serde_json::from_str(&raw)
                 .map_err(|e| rusqlite::Error::UserFunctionError(e.into()))?;
             if pos < 0 {
-                return Ok(verse
-                    .get("review")
-                    .cloned()
-                    .or(Some(verse))
-                    .map(|v| v.to_string()));
+                return Ok(verse.get("review").cloned().map(|v| v.to_string()));
             }
             Ok(verse["words"]
                 .as_array()
@@ -114,7 +110,10 @@ pub fn compact(db: &mut Connection, job: &Job, root: &Path) -> Result<()> {
         .with_context(|| format!("canonical review missing: {}", path.display()))?;
     let verse: Value = serde_json::from_str(&raw).context("invalid canonical review")?;
     let canonical = if job.pos < 0 {
-        verse.get("review").cloned().unwrap_or(verse)
+        verse
+            .get("review")
+            .cloned()
+            .context("canonical verse lacks review")?
     } else {
         verse["words"]
             .as_array()
@@ -150,7 +149,11 @@ mod tests {
         fs::create_dir_all(&root).unwrap();
         let p = root.join("peshitta/40/1/2.json");
         fs::create_dir_all(p.parent().unwrap()).unwrap();
-        fs::write(&p, "{\"ok\":true}").unwrap();
+        fs::write(
+            &p,
+            r#"{"review":{"ok":true},"words":[{"position":3,"analysis":{"lemma":"test"}}]}"#,
+        )
+        .unwrap();
         let db = Connection::open_in_memory().unwrap();
         register(&db, &root).unwrap();
         let raw: String = db
@@ -165,7 +168,14 @@ mod tests {
             .query_row("SELECT review_result(?)", ["{\"raw\":1}"], |r| r.get(0))
             .unwrap();
         assert_eq!(same, "{\"raw\":1}");
-        let _ = fs::remove_file(p);
-        let _ = fs::remove_dir(root);
+        let word: String = db
+            .query_row(
+                "SELECT review_result(?)",
+                [r#"{"_published":["peshitta",2621698,3]}"#],
+                |r| r.get(0),
+            )
+            .unwrap();
+        assert_eq!(word, r#"{"lemma":"test"}"#);
+        fs::remove_dir_all(root).unwrap();
     }
 }
