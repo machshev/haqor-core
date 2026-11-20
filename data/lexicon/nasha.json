@@ -1,0 +1,30 @@
+{
+  "id": "nasha",
+  "root": "נשא",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "deceive; entice",
+  "summary": "נָשָׁא describes deceptive or enticing conduct. Psalm 55 uses it for the enemies' enticement and violence.",
+  "words": [
+    {
+      "lemma": "נָשָׁא",
+      "pos": "verb",
+      "gloss": "deceive; entice",
+      "bdb": ["n.fq.aa"],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "deceive",
+          "senses": [
+            {
+              "gloss": "deceive",
+              "definition": "To deceive or entice someone through misleading conduct.",
+              "evidence": [{"ref": "Psa.55.16", "role": "defining"}]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 55 coverage. Kept distinct from נשׂא, the lift/bear root."
+}
