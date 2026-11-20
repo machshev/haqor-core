@@ -32,9 +32,69 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "מִמְכָּר",
+      "bdb": [
+        "m.by.af"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sale, merchandise",
+      "senses": [
+        {
+          "gloss": "sale",
+          "definition": "A thing or transaction sold.",
+          "evidence": [
+            {
+              "ref": "Lev.25.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.44.13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֶכֶר",
+      "bdb": [
+        "m.by.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "merchandise, value",
+      "senses": [
+        {
+          "gloss": "merchandise",
+          "definition": "Goods or their value in a sale.",
+          "evidence": [
+            {
+              "ref": "Ezk.27.27",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "ar-baa",
+      "lang": "ar",
+      "form": "بَاعَ",
+      "translit": "bāʿa",
+      "gloss": "sell",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "بيع, pp. 273-274"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for coverage of Psa.44.13; cognate research remains open."
 }

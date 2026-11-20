@@ -32,9 +32,51 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "מִזְרֶה",
+      "bdb": [
+        "g.ci.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "winnowing fork",
+      "senses": [
+        {
+          "gloss": "winnowing fork",
+          "definition": "A tool used to scatter and winnow grain.",
+          "evidence": [
+            {
+              "ref": "Isa.30.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.15.7"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "ar-dhara",
+      "lang": "ar",
+      "form": "ذَرَى",
+      "translit": "dharā",
+      "gloss": "scatter, disperse",
+      "relation": "cognate",
+      "sounds": {
+        "ז": "ḏ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "ذرو, pp. 968-969"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for coverage of Psa.44.12; cognate research remains open."
 }
