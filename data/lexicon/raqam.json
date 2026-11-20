@@ -1,0 +1,121 @@
+{
+  "id": "raqam",
+  "root": "רקמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "embroider, work in colours",
+  "summary": "The embroiderer makes the entrance screen of coloured yarn and fine linen. Similar patterning appears on garments, on the feathers of an eagle and in the psalmist’s description of his own formation.",
+  "words": [
+    {
+      "lemma": "רִקְמָה",
+      "pos": "noun",
+      "gloss": "embroidery, variegated colour",
+      "bdb": [
+        "t.en.ab"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "gloss": "embroidered fabric",
+          "definition": "The bride comes to the king dressed in embroidered work. Ezekiel names embroidered cloth among a city’s finery and its merchandise.",
+          "evidence": [
+            {
+              "ref": "Psa.45.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.16.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.27.7",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "variegated marking",
+          "definition": "The great eagle has many colours in its plumage.",
+          "evidence": [
+            {
+              "ref": "Ezk.17.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-embroidery"
+      ]
+    },
+    {
+      "lemma": "רָקַם",
+      "pos": "verb",
+      "gloss": "work an embroidered design",
+      "bdb": [
+        "t.en.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "embroider",
+          "senses": [
+            {
+              "gloss": "embroider",
+              "definition": "The embroiderer works in blue, purple, scarlet and fine linen.",
+              "evidence": [
+                {
+                  "ref": "Exo.26.36",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.35.35",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be intricately worked",
+          "senses": [
+            {
+              "gloss": "be intricately worked",
+              "definition": "The speaker compares his hidden formation to the construction of patterned fabric.",
+              "evidence": [
+                {
+                  "ref": "Psa.139.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-embroidery"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-embroidery",
+      "lang": "arc",
+      "form": "רְקָם",
+      "translit": "rəqām",
+      "gloss": "embroidered garment",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "רְקָם II T01043, Targum Ezekiel 27:16"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The town Rekem in Joshua 18:27 shares a key with the men named Rekem. The personal uses are filed under names/rekem."
+}
