@@ -40,13 +40,21 @@
           "relation": "loan",
           "evidence": [
             {
-              "ref": "Mrk.6.12",
-              "note": "The New Testament uses σάκκος for sackcloth."
+              "ref": "Mat.11.21"
+            },
+            {
+              "ref": "Luk.10.13"
+            },
+            {
+              "ref": "Rev.6.12"
+            },
+            {
+              "ref": "Rev.11.3"
             },
             {
               "source": "abbott-smith",
               "locator": "σάκκος",
-              "note": "Loan etymology."
+              "note": "Greek loan from Hebrew שַׂק."
             }
           ]
         }
@@ -90,5 +98,5 @@
     }
   ],
   "doctrine": [],
-  "note": "The Greek loan σάκκος is recorded because the New Testament uses it for sackcloth. Its etymology is recorded in the brief."
+  "note": "The Greek loan σάκκος is represented both as a grc loan cognate and as the Greek word used in New Testament sackcloth passages; the Greek language placement is intentional."
 }
