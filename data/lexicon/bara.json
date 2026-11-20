@@ -3,13 +3,13 @@
   "root": "ברא",
   "status": "draft",
   "updated": "2026-11-19",
-  "gloss": "create",
-  "summary": "To create or bring into being by Yahweh's power.",
+  "gloss": "create, cut out, grow fat",
+  "summary": "Yahweh creates the heavens and the earth. Joshua speaks of clearing forest, while the adjective describes well-fed cattle and people. Scripture leaves the relationship between these uses open.",
   "words": [
     {
       "lemma": "בָּרָא",
       "pos": "verb",
-      "gloss": "create",
+      "gloss": "create, cut out, grow fat",
       "bdb": [
         "b.cw.aa"
       ],
@@ -25,13 +25,247 @@
                 {
                   "ref": "Psa.51.12",
                   "role": "defining"
+                },
+                {
+                  "ref": "Gen.1.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "arc-create"
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be created",
+          "senses": [
+            {
+              "gloss": "be created",
+              "definition": "The heavens and earth are spoken of as having been created.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.104.30",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "cut down, clear",
+          "senses": [
+            {
+              "gloss": "cut down, clear",
+              "definition": "Joshua tells Joseph’s descendants to clear room for themselves by cutting into the forest.",
+              "evidence": [
+                {
+                  "ref": "Jos.17.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jos.17.18",
+                  "role": "example"
+                },
+                {
+                  "ref": "Ezk.23.47",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "fatten oneself",
+          "senses": [
+            {
+              "gloss": "fatten oneself",
+              "definition": "Eli and his sons fatten themselves on the choicest parts of Israel’s offerings.",
+              "evidence": [
+                {
+                  "ref": "1Sa.2.29",
+                  "role": "defining"
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "arc-healthy"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בָּרִיא",
+      "bdb": [
+        "b.cx.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "fat, well nourished",
+      "senses": [
+        {
+          "gloss": "fat, well nourished",
+          "definition": "The full-bodied cows in Pharaoh’s dream stand opposite thin cows. Asaph sees the same outward prosperity in the wicked.",
+          "evidence": [
+            {
+              "ref": "Gen.41.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.41.4",
+              "role": "example"
+            },
+            {
+              "ref": "Psa.73.4",
+              "role": "example"
+            },
+            {
+              "ref": "Dan.1.15",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-healthy"
+      ]
+    },
+    {
+      "lemma": "בְּרִיאָה",
+      "bdb": [
+        "b.cw.ab"
+      ],
+      "pos": "noun",
+      "gloss": "a new creation",
+      "senses": [
+        {
+          "gloss": "a new creation",
+          "definition": "Moses describes the unprecedented opening of the earth to swallow the rebels as something Yahweh creates.",
+          "evidence": [
+            {
+              "ref": "Num.16.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "בְּרָא",
+      "pos": "verb",
+      "gloss": "create",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "create",
+          "senses": [
+            {
+              "gloss": "create",
+              "definition": "Paul speaks of the man and woman being created.",
+              "evidence": [
+                {
+                  "ref": "1Co.11.9",
+                  "role": "defining"
                 }
               ]
             }
           ]
         }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "בָּרוֹיָא",
+      "pos": "noun",
+      "gloss": "creator",
+      "senses": [
+        {
+          "gloss": "creator",
+          "definition": "Peter calls on sufferers to entrust themselves to a faithful Creator.",
+          "evidence": [
+            {
+              "ref": "1Pe.4.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "בָּרְיָא",
+      "pos": "noun",
+      "gloss": "creator",
+      "senses": [
+        {
+          "gloss": "creator",
+          "definition": "The new person is renewed in the image of the one who created him.",
+          "evidence": [
+            {
+              "ref": "Col.3.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "בְּרִיתָא",
+      "pos": "noun",
+      "gloss": "creation",
+      "senses": [
+        {
+          "gloss": "creation",
+          "definition": "Jesus speaks of the beginning of the creation which God created.",
+          "evidence": [
+            {
+              "ref": "Mrk.13.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-healthy",
+      "lang": "arc",
+      "form": "בְּרִי",
+      "translit": "bərî",
+      "gloss": "healthy, strong",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בְּרִי, citing Ketubot 60b"
+        }
+      ]
+    },
+    {
+      "id": "arc-create",
+      "lang": "arc",
+      "form": "בְּרָא",
+      "translit": "bərā",
+      "gloss": "create",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. ברי, citing Targum Genesis 1:1"
+        }
       ]
     }
   ],
-  "note": "Drafted for Psalm 51 coverage."
+  "note": "The Psalm verb is qal. Arabic بَرَأَ shares the creation sense, while the same Hebrew root also has health and clearing senses elsewhere. The two verb keys return identical surfaces. The single verb records the stems under b.cw.aa. Ezk 34:20 has the contracted adjective בִרְיָה. SEDRA distinguishes two agent nouns."
 }
