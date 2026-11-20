@@ -758,7 +758,9 @@ fn schedule(
                 "DELETE FROM review_inflight WHERE source=? AND ref=? AND pos=?",
                 job.key(),
             )?;
-            if let Err(error) = &result {
+            if let Err(error) = &result
+                && error.downcast_ref::<MalformedAnswer>().is_none()
+            {
                 worker_failure = Some(format!("{error:#}"));
             }
             let usage = result.as_ref().ok().map(|(_, u)| u.to_string());
@@ -954,7 +956,10 @@ fn invoke(
     );
     sent?;
     if worker.is_some() {
-        return Ok((serde_json::from_slice(&output.stdout)?, Value::Null));
+        return Ok((
+            serde_json::from_slice(&output.stdout).map_err(MalformedAnswer)?,
+            Value::Null,
+        ));
     }
     let mut last = None;
     let mut usage = Value::Null;
@@ -970,10 +975,24 @@ fn invoke(
         }
     }
     Ok((
-        serde_json::from_str(&last.context("Codex returned no final answer")?)?,
+        serde_json::from_str(&last.context("Codex returned no final answer")?)
+            .map_err(MalformedAnswer)?,
         usage,
     ))
 }
+
+/// The worker ran but its answer was not JSON. That is one bad reply for one
+/// job, retried like any rejected answer, not a reason to stop the run.
+#[derive(Debug)]
+pub struct MalformedAnswer(pub serde_json::Error);
+
+impl std::fmt::Display for MalformedAnswer {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "malformed worker answer: {}", self.0)
+    }
+}
+
+impl std::error::Error for MalformedAnswer {}
 
 #[cfg(test)]
 mod tests {
@@ -1208,6 +1227,32 @@ mod tests {
                 .get::<_, i64>(0))
                 .unwrap(),
             5
+        );
+    }
+
+    #[test]
+    fn malformed_answer_retries_its_job_without_stopping_the_run() {
+        let mut db = fixture(&[2, 1]);
+        let bad = AtomicUsize::new(0);
+        schedule(&mut db, &mut Catalog::default(), None, 2, 3, &|p| {
+            if p["kind"] == "word" && p["position"] == 0 && bad.fetch_add(1, Ordering::SeqCst) == 0
+            {
+                let e = serde_json::from_str::<Value>("{\"a\":\"\\q\"}").unwrap_err();
+                return Err(MalformedAnswer(e).into());
+            }
+            let answer = if p["kind"] == "word" {
+                word()
+            } else {
+                verse(p)
+            };
+            Ok((answer, Value::Null))
+        })
+        .unwrap();
+        assert_eq!(
+            db.query_row("SELECT count(*) FROM job WHERE state<>'done'", [], |r| r
+                .get::<_, i64>(0))
+                .unwrap(),
+            0
         );
     }
 

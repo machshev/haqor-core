@@ -121,7 +121,7 @@ fn complete(endpoint: &str, model: &str, messages: &[Value]) -> Result<(Value, V
         .context("chat response lacks message content")?;
     let usage = &response["usage"];
     Ok((
-        serde_json::from_str(content).context("invalid worker JSON")?,
+        serde_json::from_str(content).map_err(crate::MalformedAnswer)?,
         json!({"input_tokens":usage["prompt_tokens"],"output_tokens":usage["completion_tokens"]}),
     ))
 }
