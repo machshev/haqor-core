@@ -24,9 +24,6 @@
             }
           ]
         }
-      ],
-      "cognate_ids": [
-        "ar-haruma"
       ]
     },
     {
@@ -34,8 +31,7 @@
       "pos": "verb",
       "gloss": "ban, devote; mutilate",
       "bdb": [
-        "h.fv.aa",
-        "h.fw.aa"
+        "h.fv.aa"
       ],
       "stems": [
         {
@@ -48,6 +44,38 @@
               "evidence": [
                 {
                   "ref": "Lev.27.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "devote, exterminate",
+          "senses": [
+            {
+              "gloss": "devote to destruction",
+              "definition": "To devote people or things to destruction under the ban.",
+              "evidence": [
+                {
+                  "ref": "Jos.10.40",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be devoted",
+          "senses": [
+            {
+              "gloss": "be devoted to destruction",
+              "definition": "To be placed under the ban and devoted to destruction.",
+              "evidence": [
+                {
+                  "ref": "Lev.27.29",
                   "role": "defining"
                 }
               ]
@@ -104,6 +132,32 @@
       ],
       "cognate_ids": [
         "ar-haruma"
+      ]
+    },
+    {
+      "lemma": "חָרַם",
+      "pos": "verb",
+      "gloss": "slit, mutilate",
+      "bdb": [
+        "h.fw.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "mutilate",
+          "senses": [
+            {
+              "gloss": "mutilate",
+              "definition": "To mutilate or make a disfiguring cut.",
+              "evidence": [
+                {
+                  "ref": "Lev.21.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
