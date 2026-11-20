@@ -14,6 +14,11 @@
         "position": 3
       },
       {
+        "evidence": "In “Noah walked with God,” הָאֱלֹהִים designates the God of Genesis, matching the אֱלֹהִים designation in this record.",
+        "key": "LORD@Gen.1.1",
+        "position": 10
+      },
+      {
         "evidence": "The final occurrence names the same Noah as the subject of “walked with God.”",
         "key": "Noah@Gen.5.29",
         "position": 12
@@ -73,7 +78,76 @@
         "position": 12
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "אֵלֶּה"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "תּוֹלְדֹת"
+      },
+      {
+        "evidence": "The heading introduces the family of Noah, Lamech’s son, whose sons Shem, Ham, and Japheth are named in Genesis 6:10.",
+        "key": "Noah@Gen.5.29",
+        "position": 2,
+        "surface": "נֹחַ"
+      },
+      {
+        "evidence": "The repeated name identifies the Noah of the family heading as the righteous man.",
+        "key": "Noah@Gen.5.29",
+        "position": 3,
+        "surface": "נֹחַ"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "אִישׁ"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "צַדִּיק"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "תָּמִים"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "הָיָה"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "בְּדֹרֹתָיו"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "אֶת"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "הָאֱלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "הִתְהַלֶּךְ"
+      },
+      {
+        "evidence": "The final occurrence names the same Noah as the subject of “walked with God.”",
+        "key": "Noah@Gen.5.29",
+        "position": 12,
+        "surface": "נֹחַ"
+      }
+    ],
     "translation": "[These|0] {are} [the generations of|1] [Noah|2]. [Noah|3] {was} [a|4] [righteous|5] [man|4]. [He was|7] [blameless|6] [among his contemporaries|8]. [Noah|12] [walked|11] [with|9] [God|10]."
   },
   "source": "ot",
