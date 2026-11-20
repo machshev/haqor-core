@@ -1,1 +1,22 @@
-{"id":"athah","root":"אתה","status":"draft","updated":"2026-11-20","gloss":"come","summary":"אתה means to come or arrive.","words":[{"lemma":"אָתָה","bdb":["a.go.aa"],"pos":"verb","gloss":"come","stems":[{"stem":"qal","gloss":"come","senses":[{"gloss":"come","definition":"Nobles come from Egypt and Cush stretches out its hands to God.","evidence":[{"ref":"Psa.68.32","role":"defining"}]}]}]}],"note":"Drafted for Psalm 68 coverage."}
+{
+  "id":"athah",
+  "root":"אתה",
+  "status":"draft",
+  "created":"2026-11-20",
+  "updated":"2026-11-20",
+  "gloss":"come, bring, entrance",
+  "summary":"אתה means to come or arrive, and in a causative stem to bring. Biblical Aramaic uses the same root for coming and bringing. The noun אִיתוֹן names an entrance or entryway.",
+  "words":[
+    {"lemma":"אָתָה","bdb":["a.go.aa"],"pos":"verb","gloss":"come","stems":[
+      {"stem":"qal","gloss":"come, arrive","senses":[{"gloss":"come","definition":"People, events and appointed things come or arrive, including the coming of Yahweh's kingdom and the nations to his worship.","evidence":[{"ref":"Psa.68.32","role":"defining"},{"ref":"Isa.21.12"},{"ref":"Mic.4.8"}]}]},
+      {"stem":"hiphil","gloss":"bring","senses":[{"gloss":"bring","definition":"A person brings water or brings animals for food.","evidence":[{"ref":"Isa.21.14","role":"defining"},{"ref":"Jer.12.9"}]}]}
+    ]},
+    {"lemma":"אֲתָה","lang":"arc","root":"אתה","pos":"verb","gloss":"come, bring","stems":[
+      {"stem":"haphel","gloss":"bring","senses":[{"gloss":"bring","definition":"People are brought before the king or brought to judgment.","evidence":[{"ref":"Dan.3.13","role":"defining"},{"ref":"Dan.6.25"}]}]},
+      {"stem":"peal","gloss":"come","senses":[{"gloss":"come","definition":"People come to an appointed place, and the son of man comes with the clouds.","evidence":[{"ref":"Dan.3.2","role":"defining"},{"ref":"Dan.7.13"}]}]},
+      {"stem":"hophal","gloss":"be brought","senses":[{"gloss":"be brought","definition":"A person or object is brought and set before a ruler.","evidence":[{"ref":"Dan.6.18","role":"defining"}]}]}
+    ]},
+    {"lemma":"אִיתוֹן","bdb":["a.go.ab"],"pos":"noun","gender":"m","gloss":"entrance","senses":[{"gloss":"entrance","definition":"An entrance is a way into a place.","evidence":[{"ref":"Ezk.40.15","role":"defining"}]}]}
+  ],
+  "note":"אֵתָם is a place name and is omitted for separate name handling. אִתַּי is a preposition cross-reference and is omitted. The Aramaic words are Biblical Aramaic, not signs or omens."
+}

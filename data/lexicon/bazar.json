@@ -1,1 +1,16 @@
-{"id":"bazar","root":"בזר","status":"draft","updated":"2026-11-20","gloss":"scatter","summary":"בזר means to scatter or disperse.","words":[{"lemma":"בָּזַר","bdb":["b.bc.aa"],"pos":"verb","gloss":"scatter","stems":[{"stem":"piel","gloss":"scatter","senses":[{"gloss":"scatter","definition":"Yahweh scatters peoples who delight in battle.","evidence":[{"ref":"Psa.68.31","role":"defining"}]}]}]}],"note":"Drafted for Psalm 68 coverage."}
+{
+  "id":"bazar",
+  "root":"בזר",
+  "status":"draft",
+  "created":"2026-11-20",
+  "updated":"2026-11-20",
+  "gloss":"scatter, disperse",
+  "summary":"בזר means to scatter or disperse people or goods. Its qal and piel uses show spreading things apart, while the unrelated Persian royal name בִּזְּתָא is excluded.",
+  "words":[
+    {"lemma":"בָּזַר","bdb":["b.bc.aa"],"pos":"verb","gloss":"scatter","stems":[
+      {"stem":"piel","gloss":"scatter","senses":[{"gloss":"scatter","definition":"A ruler scatters peoples who delight in battles.","evidence":[{"ref":"Psa.68.31","role":"defining"}]}]},
+      {"stem":"qal","gloss":"scatter","senses":[{"gloss":"scatter","definition":"A conqueror scatters plunder, spoil and wealth among his followers.","evidence":[{"ref":"Dan.11.24","role":"defining"}]}]}
+    ]}
+  ],
+  "note":"בִּזְּתָא (b.bc.ab), the Persian royal name in Esther, is a proper name and is not a word of the scatter root. Arabic Lane supports scattering seed under بذر."
+}
