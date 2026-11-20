@@ -1,1 +1,93 @@
-{"id":"amas","root":"עמס","status":"draft","updated":"2026-11-20","gloss":"carry","summary":"עמס means to load or carry a burden.","words":[{"lemma":"עָמַס","bdb":["p.dl.aa"],"pos":"verb","gloss":"carry","stems":[{"stem":"qal","gloss":"carry","senses":[{"gloss":"carry","definition":"The blessed God daily carries our burden and is our salvation.","evidence":[{"ref":"Psa.68.20","role":"defining"}]}]}]}],"note":"Drafted for Psalm 68 coverage."}
+{
+  "id": "amas",
+  "root": "עמס",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "load, carry a burden",
+  "summary": "A person loads a donkey or takes up a burden. Isaiah uses the image of carrying to describe God’s care for his people, and the psalm blesses him for bearing day by day.",
+  "words": [
+    {
+      "lemma": "עָמַס",
+      "pos": "verb",
+      "gloss": "load, bear",
+      "bdb": [
+        "p.dl.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "load or carry",
+          "senses": [
+            {
+              "gloss": "load or carry",
+              "definition": "Joseph’s brothers load their donkeys. Isaiah contrasts burdens carried by animals with the people God carries. The psalm blesses the God who bears for us day by day.",
+              "evidence": [
+                {
+                  "ref": "Gen.44.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.46.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.46.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.68.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "impose a load",
+          "senses": [
+            {
+              "gloss": "impose a load",
+              "definition": "Rehoboam describes the heavy yoke that his father put on the people.",
+              "evidence": [
+                {
+                  "ref": "1Ki.12.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ch.10.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲמָסָה",
+      "pos": "noun",
+      "gloss": "heavy load",
+      "gender": "f",
+      "bdb": [
+        "p.dl.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "heavy load",
+          "definition": "Jerusalem is compared to a stone too heavy to lift safely. Those who take it up injure themselves.",
+          "evidence": [
+            {
+              "ref": "Zec.12.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Psalm 68 leaves the object of “bear” unstated. The scriptural parallel in Isaiah 46 makes bearing the people a possible reading. The unrelated Asherite place Amad has a different final consonant.",
+  "cognates": [],
+  "created": "2026-11-19",
+  "doctrine": []
+}

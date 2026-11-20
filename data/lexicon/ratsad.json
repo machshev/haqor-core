@@ -1,1 +1,80 @@
-{"id":"ratsad","root":"רצד","status":"draft","updated":"2026-11-20","gloss":"leap","summary":"רצד describes a mountain’s leaping or bounding movement.","words":[{"lemma":"רָצַד","bdb":["t.ed.aa"],"pos":"verb","gloss":"leap","stems":[{"stem":"piel","gloss":"leap","senses":[{"gloss":"leap","definition":"The humped mountains leap when Yahweh chooses his dwelling.","evidence":[{"ref":"Psa.68.17","role":"defining"}]}]}]}],"note":"Drafted for Psalm 68 coverage."}
+{
+  "id": "ratsad",
+  "root": "רצד",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "watch intently",
+  "summary": "The psalm imagines the many peaks of Bashan looking toward the mountain God chose for his dwelling. The setting suggests rivalry between the mountains.",
+  "words": [
+    {
+      "lemma": "רָצַד",
+      "pos": "verb",
+      "gloss": "watch intently",
+      "cognate_ids": [
+        "ar-watch",
+        "arc-watch"
+      ],
+      "bdb": [
+        "t.ed.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "look intently, look with envy",
+          "senses": [
+            {
+              "gloss": "look intently, look with envy",
+              "definition": "The poet asks the peaks why they gaze at the mountain where God desires to dwell. The question supplies the nuance of envy.",
+              "evidence": [
+                {
+                  "ref": "Psa.68.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.68.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The Hebrew verb occurs only here. Watching has comparative support. The emotional colouring comes from the two mountains in the verse.",
+  "cognates": [
+    {
+      "id": "ar-watch",
+      "lang": "ar",
+      "form": "رَصَدَ",
+      "translit": "raṣada",
+      "gloss": "watch, lie in wait",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1092, n15651"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    },
+    {
+      "id": "arc-watch",
+      "lang": "arc",
+      "form": "רְצַד",
+      "translit": "rəṣaḏ",
+      "gloss": "lie in wait, watch",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רְצַד, Leviticus Rabbah 26"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": []
+}

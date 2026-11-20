@@ -53,7 +53,8 @@
         }
       ],
       "cognate_ids": [
-        "ar-snow"
+        "arc-talg",
+        "ar-thalj"
       ]
     },
     {
@@ -89,21 +90,35 @@
   "note": "The initial consonant in the Arabic word identifies an older ṯ behind Hebrew ש. The snow verb has only this one biblical occurrence.",
   "cognates": [
     {
-      "id": "ar-snow",
-      "lang": "ar",
-      "form": "ثَلْجٌ",
-      "translit": "ṯalj",
+      "id": "arc-talg",
+      "lang": "arc",
+      "form": "תַּלְגָּא",
+      "translit": "talgā",
       "gloss": "snow",
       "relation": "cognate",
       "evidence": [
         {
-          "source": "lane",
-          "locator": "p. 350, n4648"
+          "source": "jastrow-1903",
+          "locator": "s.v. תַּלְגָּא"
         }
-      ],
+      ]
+    },
+    {
+      "id": "ar-thalj",
+      "lang": "ar",
+      "form": "ثَلْج",
+      "translit": "thalj",
+      "gloss": "snow",
+      "relation": "cognate",
       "sounds": {
         "ש": "ṯ"
-      }
+      },
+      "evidence": [
+        {
+          "source": "lane-1863",
+          "locator": "n21234"
+        }
+      ]
     }
   ],
   "created": "2026-11-19",

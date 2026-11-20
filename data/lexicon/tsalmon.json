@@ -1,1 +1,38 @@
-{"id":"tsalmon","root":"צלמ","status":"draft","updated":"2026-11-20","gloss":"shadowy","summary":"צַלְמוֹן is a shadowy mountain name.","words":[{"lemma":"צַלְמוֹן","bdb":["r.ce.ac"],"pos":"name","gloss":"shadowy","senses":[{"gloss":"shadowy","definition":"Snow falls on Zalmon when kings are scattered.","evidence":[{"ref":"Psa.68.15","role":"defining"}]}]}],"note":"Drafted for Psalm 68 coverage."}
+{
+  "id": "tsalmon",
+  "root": "צלמונ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "Zalmon",
+  "summary": "Abimelech cuts a tree on Mount Zalmon during the fighting at Shechem. Psalm 68 pictures snow on Zalmon when the Almighty scatters kings.",
+  "words": [
+    {
+      "lemma": "צַלְמוֹן",
+      "pos": "name",
+      "gloss": "Zalmon",
+      "bdb": [
+        "r.ce.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "a named mountain",
+          "definition": "Judges identifies Zalmon as a mountain reached from Shechem. The psalm names Zalmon without locating it.",
+          "evidence": [
+            {
+              "ref": "Jdg.9.48",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.68.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The psalm does not establish that its Zalmon is the same mountain as in Judges, or explain its name. Retain the full consonants. צֶלֶם “image” is under tselem. A warrior in David’s retinue bears the same name.",
+  "cognates": [],
+  "created": "2026-11-19",
+  "doctrine": []
+}

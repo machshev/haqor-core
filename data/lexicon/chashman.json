@@ -1,1 +1,61 @@
-{"id":"chashman","root":"חשל","status":"draft","updated":"2026-11-20","gloss":"noble","summary":"חַשְׁמַן names a noble or wealthy person.","words":[{"lemma":"חַשְׁמַן","bdb":["h.gu.ad"],"pos":"noun","gender":"m","gloss":"noble","senses":[{"gloss":"noble","definition":"Nobles come from Egypt in the praise of God.","evidence":[{"ref":"Psa.68.32","role":"defining"}]}]}],"note":"Drafted for Psalm 68 coverage. Root assignment is uncertain."}
+{
+  "id": "chashman",
+  "root": "חשמנ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "dignitary, envoy",
+  "summary": "These visitors come from Egypt as Cush stretches out its hands to God. The surrounding invitation to kings and kingdoms gives them a public role, though it leaves their rank open.",
+  "words": [
+    {
+      "lemma": "חַשְׁמַן",
+      "pos": "noun",
+      "gloss": "dignitary, envoy",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-retinue"
+      ],
+      "bdb": [
+        "h.gu.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "dignitary, envoy",
+          "definition": "The plural names those coming from Egypt in the scene of nations approaching God. This verse supplies the only Hebrew example.",
+          "evidence": [
+            {
+              "ref": "Psa.68.32",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.68.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The noun is keyed by its own consonants. Arabic ḥašam provides a possible comparison for persons attached to a household, but does not settle the Hebrew title.",
+  "cognates": [
+    {
+      "id": "ar-retinue",
+      "lang": "ar",
+      "form": "حَشَمٌ",
+      "translit": "ḥašam",
+      "gloss": "a person’s dependants or retinue",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 577, n8122"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ",
+        "ש": "š"
+      }
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": []
+}
