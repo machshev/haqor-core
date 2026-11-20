@@ -453,8 +453,8 @@ pub fn accept(
                 }
             }
             crate::articles::stage(&tx, j, &mut answer, packet)?;
-            if j.source=="greek" && answer["entry"]["draft"].is_object() {
-                answer["entry"]["draft"]["article_id"]=json!(crate::greek::id(&answer)?);
+            if j.source == "greek" && answer["entry"]["draft"].is_object() {
+                answer["entry"]["draft"]["article_id"] = json!(crate::greek::id(&answer)?);
             }
         }
     } else {

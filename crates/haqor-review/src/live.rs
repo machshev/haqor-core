@@ -97,9 +97,13 @@ impl Live {
                 .map(|w| w["analysis"].clone())
                 .unwrap_or(Value::Null)
         };
-        if let Some(pending)=packet["published"].pointer_mut("/entry/draft/reconciliation").and_then(Value::as_object_mut) {
+        if let Some(pending) = packet["published"]
+            .pointer_mut("/entry/draft/reconciliation")
+            .and_then(Value::as_object_mut)
+        {
             pending.remove("article");
-            pending.insert("source_file".into(),json!(self.path(j)?));
+            pending.remove("patch");
+            pending.insert("source_file".into(), json!(self.path(j)?));
         }
         Ok(())
     }
@@ -149,6 +153,19 @@ impl Live {
     fn merge(&self, db: &Connection, j: &Job, answer: &Value) -> Result<()> {
         let mut out = self.packet(j)?;
         if j.pos < 0 {
+            for w in out["words"]
+                .as_array_mut()
+                .context("invalid tracked words")?
+            {
+                let applied:bool=db.query_row("SELECT EXISTS(SELECT 1 FROM article WHERE source=? AND ref=? AND pos=? AND applied=1)", params![j.source,j.reference,w["position"].as_i64()], |r|r.get(0))?;
+                if applied
+                    && let Some(draft) = w
+                        .pointer_mut("/analysis/entry/draft")
+                        .and_then(Value::as_object_mut)
+                {
+                    draft.remove("article");
+                }
+            }
             out["review"] = answer.clone();
         } else {
             let raw: String = db.query_row(
@@ -220,9 +237,12 @@ impl Live {
                 |r| r.get(0),
             )
             .optional()?;
-        if !prior["published"].is_null()
-            && prior["published"] != answer
-            && base.as_deref() != Some(&articles::revision(&prior["published"].to_string()))
+        if prior["published"] != answer
+            && base
+                .as_deref()
+                .map_or(!prior["published"].is_null(), |digest| {
+                    digest != articles::revision(&prior["published"].to_string())
+                })
         {
             let tx = db.transaction()?;
             tx.execute("UPDATE job SET state='ready',attempts=0,result=NULL,feedback='The tracked review changed. Reconcile the latest published result.' WHERE source=? AND ref=? AND pos=?",j.key())?;
@@ -328,9 +348,15 @@ impl Live {
                         self.finish(db, j)?;
                         return Ok(true);
                     }
-                    articles::PublishOutcome::Deferred
-                    | articles::PublishOutcome::Applied
-                    | articles::PublishOutcome::NotPending => {}
+                    articles::PublishOutcome::Deferred => {
+                        let tx = db.transaction()?;
+                        tx.execute("UPDATE job SET state='ready',result=NULL,feedback='The verse could not identify a bearer for this proposed personal-name article. Reconcile the lexical assignment.' WHERE source=? AND ref=? AND pos=?",word.key())?;
+                        tx.execute("UPDATE job SET state='waiting',result=NULL WHERE source=? AND ref=? AND pos=?",j.key())?;
+                        tx.commit()?;
+                        self.finish(db, j)?;
+                        return Ok(true);
+                    }
+                    articles::PublishOutcome::Applied | articles::PublishOutcome::NotPending => {}
                 }
             }
         }
@@ -339,9 +365,14 @@ impl Live {
         self.merge(db, j, &answer)?;
         self.finish(db, j)?;
         result_store::compact(db, j, &self.root())?;
+        if j.pos < 0 {
+            for (word, _, _) in pending_verse_articles {
+                result_store::compact(db, &word, &self.root())?;
+            }
+        }
         db.execute(
-            "UPDATE article SET body='' WHERE source=? AND ref=? AND pos=? AND applied=1",
-            j.key(),
+            "UPDATE article SET body='' WHERE source=? AND ref=? AND (?=-1 OR pos=?) AND applied=1",
+            params![j.source, j.reference, j.pos, j.pos],
         )?;
         Ok(greek_changed || article.is_some() || j.pos < 0)
     }

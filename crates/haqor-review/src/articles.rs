@@ -166,66 +166,13 @@ fn apply_pending_locked(
 ) -> Result<(usize, usize)> {
     let mut applied = 0;
     let mut stale = 0;
-    loop {
-        let row = db
-            .query_row(
-                "SELECT a.source,a.ref,a.pos,a.id,a.name,a.base,a.body FROM article a
-            JOIN job w ON w.source=a.source AND w.ref=a.ref AND w.pos=a.pos
-            WHERE a.applied=0 AND w.state='done'
-            ORDER BY a.ref,a.source,a.pos LIMIT 1",
-                [],
-                |r| {
-                    Ok((
-                        Job {
-                            source: r.get(0)?,
-                            reference: r.get(1)?,
-                            pos: r.get(2)?,
-                        },
-                        r.get::<_, String>(3)?,
-                        r.get::<_, bool>(4)?,
-                        r.get::<_, Option<String>>(5)?,
-                        r.get::<_, String>(6)?,
-                    ))
-                },
-            )
-            .optional()?;
-        let Some((job, _, _, _, _)) = row else {
-            break;
-        };
-        match apply_one_locked(db, lexicon, verses, &job) {
-            Ok(PublishOutcome::Applied) => applied += 1,
-            Ok(PublishOutcome::Stale) => stale += 1,
-            Ok(PublishOutcome::Rejected) => (),
-            Ok(PublishOutcome::Deferred) => {
-                // Keep the complete draft in `article.body`, but remove this
-                // row from the manual apply loop. The verse reviewer must
-                // identify a bearer before the validator can accept it.
-                db.execute(
-                    "UPDATE job SET state='unresolved',feedback='Personal-name article has no identified bearer; review its verse entities before applying it.' WHERE source=? AND ref=? AND pos=?",
-                    job.key(),
-                )?;
-            }
-            Ok(PublishOutcome::NotPending) => (),
-            Err(error) => {
-                if !is_validation_error(&error) {
-                    return Err(error);
-                }
-                // Preserve the draft for inspection while allowing unrelated
-                // legacy proposals to be recovered in this pass.
-                db.execute(
-                    "UPDATE job SET state='failed',error=? WHERE source=? AND ref=? AND pos=?",
-                    params![
-                        format!("article publication: {error:#}"),
-                        job.source,
-                        job.reference,
-                        job.pos
-                    ],
-                )?;
-                eprintln!(
-                    "{} {} position {}: article not published: {error:#}",
-                    job.source, job.reference, job.pos
-                );
-            }
+    let jobs=db.prepare("SELECT a.source,a.ref,a.pos FROM article a JOIN job w USING(source,ref,pos) WHERE a.applied=0 AND w.state='done' ORDER BY a.ref,a.source,a.pos")?
+        .query_map([],|r|Ok(Job{source:r.get(0)?, reference:r.get(1)?,pos:r.get(2)?}))?.collect::<rusqlite::Result<Vec<_>>>()?;
+    for job in jobs {
+        match apply_one_locked(db, lexicon, verses, &job)? {
+            PublishOutcome::Applied => applied += 1,
+            PublishOutcome::Stale | PublishOutcome::Rejected => stale += 1,
+            PublishOutcome::Deferred | PublishOutcome::NotPending => (),
         }
     }
     Ok((applied, stale))

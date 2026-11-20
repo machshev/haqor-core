@@ -127,11 +127,11 @@ pub fn compact(db: &mut Connection, job: &Job, root: &Path) -> Result<()> {
             .context("canonical review lacks word analysis")?
     };
     ensure!(
-        canonical == value,
+        canonical == value || value["_published"] == json!([job.source, job.reference, job.pos]),
         "canonical review differs from accepted result"
     );
     let text = canonical.to_string();
-    let published = json!({"_published":[job.source,job.reference,job.pos],"language":value["language"],"lemma":value["lemma"],"root":value["root"],"qualifier":value["qualifier"],"digest":digest(&text)});
+    let published = json!({"_published":[job.source,job.reference,job.pos],"language":canonical["language"],"lemma":canonical["lemma"],"root":canonical["root"],"qualifier":canonical["qualifier"],"digest":digest(&text)});
     db.execute(
         "UPDATE job SET result=? WHERE source=? AND ref=? AND pos=?",
         params![published.to_string(), job.source, job.reference, job.pos],
