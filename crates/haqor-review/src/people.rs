@@ -345,10 +345,11 @@ pub fn publish(queue: &Connection, src: &Path, data: &Path, lexicon: &Path) -> R
     let mut index = catalog.reviewed;
     let mut add_to_article: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
     let mut n = 0;
-    let mut verses=queue.prepare("SELECT j.source,j.ref,j.result,v.packet FROM job j JOIN verse v USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
+    let mut verses=queue.prepare("SELECT j.source,j.ref,review_result(j.result),v.packet FROM job j JOIN verse v USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
     let mut rows = verses.query([])?;
-    let mut analysis =
-        queue.prepare_cached("SELECT result FROM job WHERE source=? AND ref=? AND pos=?")?;
+    let mut analysis = queue.prepare_cached(
+        "SELECT review_result(result) FROM job WHERE source=? AND ref=? AND pos=?",
+    )?;
     while let Some(row) = rows.next()? {
         let edition: String = row.get(0)?;
         let reference: i64 = row.get(1)?;
@@ -519,7 +520,7 @@ pub fn publish_one_with_refs(
     let catalog = People::load(src, data)?;
     let review: Value = queue
         .query_row(
-            "SELECT result FROM job WHERE source=? AND ref=? AND pos=-1 AND state='done'",
+            "SELECT review_result(result) FROM job WHERE source=? AND ref=? AND pos=-1 AND state='done'",
             params![edition, reference],
             |r| r.get::<_, String>(0),
         )
@@ -538,7 +539,7 @@ pub fn publish_one_with_refs(
     let mut next = catalog.ids.keys().copied().max().unwrap_or(0).max(100_000);
     let mut add_to_article: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
     let mut analysis = queue.prepare_cached(
-        "SELECT result FROM job WHERE source=? AND ref=? AND pos=? AND state='done'",
+        "SELECT review_result(result) FROM job WHERE source=? AND ref=? AND pos=? AND state='done'",
     )?;
     let mut words = Vec::new();
     for w in packet["words"].as_array().context("invalid verse")? {
@@ -649,13 +650,13 @@ pub fn publication_paths(
     let mut paths = BTreeSet::from([src.join(PATH)]);
     let entities: Value = queue
         .query_row(
-            "SELECT result FROM job WHERE source=? AND ref=? AND pos=-1 AND state='done'",
+        "SELECT review_result(result) FROM job WHERE source=? AND ref=? AND pos=-1 AND state='done'",
             params![edition, reference],
             |r| r.get::<_, String>(0),
         )
         .map(|s| serde_json::from_str(&s))??;
     let mut analysis = queue.prepare_cached(
-        "SELECT result FROM job WHERE source=? AND ref=? AND pos=? AND state='done'",
+        "SELECT review_result(result) FROM job WHERE source=? AND ref=? AND pos=? AND state='done'",
     )?;
     for mention in entities["entities"].as_array().into_iter().flatten() {
         let position = mention["position"]
@@ -705,12 +706,13 @@ impl People {
             }
         }
 
-        tx.execute("UPDATE job SET state='ready',attempts=0,feedback=json_object('instruction','Review people and places, preserving prior approved English where sound.','prior_review',json(result)),result=NULL
-            WHERE pos=-1 AND state='done' AND json_type(result,'$.entities') IS NULL",[])?;
+        tx.execute("UPDATE job SET state='ready',attempts=0,feedback=json_object('instruction','Review people and places, preserving prior approved English where sound.','prior_review',json(review_result(result))),result=NULL
+            WHERE pos=-1 AND state='done' AND json_type(review_result(result),'$.entities') IS NULL",[])?;
         let mut stale = Vec::new();
         {
-            let mut stmt =
-                tx.prepare("SELECT source,ref,result FROM job WHERE pos=-1 AND state='done'")?;
+            let mut stmt = tx.prepare(
+                "SELECT source,ref,review_result(result) FROM job WHERE pos=-1 AND state='done'",
+            )?;
             let mut rows = stmt.query([])?;
             while let Some(row) = rows.next()? {
                 let edition: String = row.get(0)?;
@@ -741,7 +743,7 @@ impl People {
             }
         }
         for (edition, reference) in stale {
-            tx.execute("UPDATE job SET state='ready',attempts=0,feedback=json_object('instruction','Published identities changed. Reconcile this verse.','prior_review',json(result)),result=NULL WHERE source=? AND ref=? AND pos=-1",params![edition,reference])?;
+            tx.execute("UPDATE job SET state='ready',attempts=0,feedback=json_object('instruction','Published identities changed. Reconcile this verse.','prior_review',json(review_result(result))),result=NULL WHERE source=? AND ref=? AND pos=-1",params![edition,reference])?;
         }
         tx.commit()?;
         Ok(())
