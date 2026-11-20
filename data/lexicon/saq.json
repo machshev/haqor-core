@@ -37,21 +37,18 @@
         {
           "lemma": "σάκκος",
           "gloss": "sackcloth",
+          "relation": "loan",
           "evidence": [
             {
-              "ref": "Mat.11.21"
+              "ref": "Mrk.6.12",
+              "note": "The New Testament uses σάκκος for sackcloth."
             },
             {
-              "ref": "Luk.10.13"
-            },
-            {
-              "ref": "Rev.6.12"
-            },
-            {
-              "ref": "Rev.11.3"
+              "source": "abbott-smith",
+              "locator": "σάκκος",
+              "note": "Loan etymology."
             }
-          ],
-          "relation": "loan"
+          ]
         }
       ],
       "cognate_ids": [
@@ -72,7 +69,7 @@
         {
           "source": "oracc",
           "locator": "sakku",
-          "note": "Akkadian sackcloth term."
+          "note": "Akkadian sackcloth lexeme."
         }
       ]
     },
@@ -87,7 +84,7 @@
         {
           "source": "abbott-smith",
           "locator": "σάκκος",
-          "note": "Greek loan from Semitic sackcloth."
+          "note": "Greek loan from Hebrew שַׂק."
         }
       ]
     }
