@@ -8,6 +8,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "662b35cd4e35983f52ece337d7bfebc9654033af5d67a8456f569fbc832175d7",
+            "change": "Append Genesis 10:18 to the evidence for definite-object in word 0.",
+            "definition": "Introduces the particular person or thing a verb acts on, ordinarily a definite noun identified by the article, a name or a possessive suffix.",
+            "evidence": "In Genesis 10:18 the first וְאֶת marks הָאַרְוָדִי as another object of יָלַד in Genesis 10:15."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "The list governed by יָלַד in Genesis 10:15 continues with וְאֶת הָאַרְוָדִי, “and the Arvadite.” The article הָ־ makes the gentilic definite. The list ends before וְאַחַר נָפֹצוּ introduces the next clause.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The conjunction וְ joins the next descendant to the list. The unsuffixed direct-object particle אֶת introduces הָאַרְוָדִי.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks the Arvadite as a definite direct object of יָלַד, “fathered.”"
+      },
+      "position": 0,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "2arewaadiy",
             "base": null,
             "change": "Add a noun entry for the gentilic אַרְוָדִי. Its form derives from the place name אַרְוָד, and its use in the clan list supports the gloss “Arvadites.”",
