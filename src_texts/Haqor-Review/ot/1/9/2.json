@@ -28,6 +28,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "7at",
+            "base": null,
+            "change": "Create the חתת root article with the masculine noun חַת and its sense of dread.",
+            "definition": "חַת is dread inspired by someone.",
+            "evidence": "In Genesis 9:2 the dread of Noah and his sons is paired with the fear of them and is said to come upon the animals."
+          },
+          "sense": "dread",
+          "word": 0
+        },
+        "evidence": "וְחִתְּכֶם stands beside וּמוֹרַאֲכֶם, “the fear of you.” Both nouns share יִהְיֶה עַל, “will be upon,” which identifies the animals as those who experience the fear and dread. The parallel rules out the source gloss “watering-trough.”",
+        "gloss": "and the dread of you",
+        "language": "he",
+        "lemma": "חַת",
+        "morph": "HC/Ncmsc/Sp2mp",
+        "morphology": "וְ is the conjunction “and.” חִתְּ is the masculine singular construct form of חַת before the second-person masculine plural suffix כֶם, which refers to Noah and his sons.",
+        "qualifier": "noun",
+        "root": "חתת",
+        "segments": "וְ/חִתְּ/כֶם",
+        "sense": "Dread that the animals feel toward Noah and his sons."
+      },
+      "position": 1,
+      "surface": "וְחִתְּכֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "hyh",
           "word": 0
         },
