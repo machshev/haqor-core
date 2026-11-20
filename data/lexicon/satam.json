@@ -1,0 +1,69 @@
+{
+  "id": "satam",
+  "root": "שׂטמ",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "bear a grudge; persecute",
+  "summary": "שׂטם is hostile resentment expressed in attack or persecution. מַשְׂטֵמָה names the resulting hostility.",
+  "words": [
+    {
+      "lemma": "שָׂטַם",
+      "pos": "verb",
+      "gloss": "bear a grudge; attack",
+      "bdb": [
+        "u.ax.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hate; persecute",
+          "senses": [
+            {
+              "gloss": "hostile attack",
+              "definition": "To hate, attack or persecute another out of hostility.",
+              "evidence": [
+                {
+                  "ref": "Gen.27.41",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.55.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.16.9"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשְׂטֵמָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "hostility",
+      "bdb": [
+        "u.ax.ab",
+        "m.dr.ap"
+      ],
+      "senses": [
+        {
+          "gloss": "hostility",
+          "definition": "Hostility or animosity held against another.",
+          "evidence": [
+            {
+              "ref": "Zec.3.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.55.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 55 coverage."
+}

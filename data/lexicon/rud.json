@@ -1,0 +1,111 @@
+{
+  "id": "rud",
+  "root": "רוד",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "wander restlessly",
+  "summary": "רוד describes restless wandering or roaming. Its hiphil appears in David's restless complaint (Psa.55.3), while the noun מָרוֹד names wandering and straying.",
+  "words": [
+    {
+      "lemma": "רוּד",
+      "pos": "verb",
+      "gloss": "wander restlessly; roam",
+      "bdb": [
+        "t.bi.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "roam",
+          "senses": [
+            {
+              "gloss": "roam",
+              "definition": "To wander or roam without settling.",
+              "evidence": [
+                {
+                  "ref": "Jer.2.31",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hos.12.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "be restless",
+          "senses": [
+            {
+              "gloss": "be restless",
+              "definition": "To become restless or express restless agitation.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.27.40"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָרוֹד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wandering; straying",
+      "bdb": [
+        "t.bi.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "wandering",
+          "definition": "A state or experience of wandering and affliction.",
+          "evidence": [
+            {
+              "ref": "Isa.58.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Lam.1.7"
+            },
+            {
+              "ref": "Lam.3.19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָרוּד",
+      "pos": "verb",
+      "gloss": "wander",
+      "bdb": [
+        "m.dk.af"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "wander",
+          "senses": [
+            {
+              "gloss": "wander",
+              "definition": "A verbal form related to restless wandering.",
+              "evidence": [
+                {
+                  "ref": "Isa.58.7"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 55 coverage."
+}

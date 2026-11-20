@@ -1,0 +1,40 @@
+{
+  "id": "shaqaf",
+  "root": "שאפ",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "pant; desire",
+  "summary": "שׁאף describes panting after or eagerly pursuing another person.",
+  "words": [
+    {
+      "lemma": "שָׁאַף",
+      "pos": "verb",
+      "gloss": "pant after; pursue",
+      "bdb": [
+        "v.aj.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pursue",
+          "senses": [
+            {
+              "gloss": "pursue",
+              "definition": "To pursue or pant after a person with hostile intent.",
+              "evidence": [
+                {
+                  "ref": "Psa.56.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.57.4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 56 coverage."
+}

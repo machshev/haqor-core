@@ -1,0 +1,40 @@
+{
+  "id": "lahat",
+  "root": "להט",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "flame; burn",
+  "summary": "להט describes a burning flame or blazing weapon.",
+  "words": [
+    {
+      "lemma": "לָהַט",
+      "pos": "verb",
+      "gloss": "burn; blaze",
+      "bdb": [
+        "l.ap.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "burn",
+          "senses": [
+            {
+              "gloss": "burn",
+              "definition": "To burn or blaze fiercely, as weapons prepared for violence.",
+              "evidence": [
+                {
+                  "ref": "Psa.57.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.3.24"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 57 coverage."
+}
