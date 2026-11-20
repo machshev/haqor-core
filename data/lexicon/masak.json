@@ -8,25 +8,106 @@
   "words": [
     {
       "lemma": "מֶ֫סֶךְ",
-      "pos": "noun",
+      "pos": "verb",
       "gloss": "mixture, mixed drink",
       "bdb": [
         "m.cr.ab"
       ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "mix, cover",
+          "senses": [
+            {
+              "id": "mix",
+              "gloss": "mix or cover",
+              "definition": "To mix substances or spread a covering.",
+              "evidence": [
+                {
+                  "ref": "Psa.75.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.9.2"
+                },
+                {
+                  "ref": "Isa.5.22"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָסַךְ",
+      "pos": "verb",
+      "gloss": "mix, produce by mixing",
+      "bdb": [
+        "m.cr.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "mix",
+          "senses": [
+            {
+              "id": "mix",
+              "gloss": "mix",
+              "definition": "To mix wine or substances.",
+              "evidence": [
+                {
+                  "ref": "Pro.9.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִמְסָךְ",
+      "pos": "noun",
+      "gloss": "mixed drink",
+      "bdb": [
+        "m.cr.ac"
+      ],
       "senses": [
         {
-          "gloss": "mixture, mixed drink",
-          "definition": "The noun names the mixed wine offered in the Psalm's cup imagery.",
+          "id": "drink",
+          "gloss": "mixed drink",
+          "definition": "A drink prepared by mixing wine and spices.",
           "evidence": [
             {
-              "ref": "Psa.75.9",
+              "ref": "Pro.9.2",
               "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִסְכֵּן",
+      "pos": "adjective",
+      "gloss": "poor",
+      "bdb": [
+        "m.cr.ag"
+      ],
+      "senses": [
+        {
+          "id": "poor",
+          "gloss": "poor",
+          "definition": "Poor or lacking resources.",
+          "evidence": [
+            {
+              "ref": "Ecc.4.13"
             }
           ]
         }
       ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Expand cognate and full-root evidence during review.",
+  "note": "The root family includes the verb מָסַךְ, mixed drink מִמְסָךְ and the related adjective מִסְכֵּן. Psalm 75.9 uses מֶסֶךְ in the cup image, with Pro.9.2 and Isa.5.22 defining the mixed drink sense.",
   "created": "2026-11-20"
 }

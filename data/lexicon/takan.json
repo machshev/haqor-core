@@ -15,24 +15,91 @@
       ],
       "stems": [
         {
-          "stem": "qal",
+          "stem": "piel",
           "gloss": "measure, establish",
           "senses": [
             {
-              "gloss": "measure, establish",
-              "definition": "The verb describes Yahweh establishing the earth's pillars.",
+              "id": "measure",
+              "gloss": "measure or establish",
+              "definition": "To measure, regulate, or establish a thing in a fixed order.",
               "evidence": [
                 {
                   "ref": "Psa.75.4",
                   "role": "defining"
+                },
+                {
+                  "ref": "Pro.16.2"
+                },
+                {
+                  "ref": "Isa.40.12"
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "lemma": "מַתְכֹ֫נֶת",
+      "pos": "noun",
+      "gloss": "measurement, proportion",
+      "bdb": [
+        "w.aq.ae"
+      ],
+      "senses": [
+        {
+          "id": "measurement",
+          "gloss": "measurement",
+          "definition": "A measured proportion or appointed measure.",
+          "evidence": [
+            {
+              "ref": "Exo.5.18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תֹּ֫כֶן",
+      "pos": "noun",
+      "gloss": "measurement",
+      "bdb": [
+        "w.aq.ab"
+      ],
+      "senses": [
+        {
+          "id": "measurement",
+          "gloss": "measurement",
+          "definition": "The measured content or proportion of a thing.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תׇכְנִית",
+      "pos": "noun",
+      "gloss": "pattern, measurement",
+      "bdb": [
+        "w.aq.ad"
+      ],
+      "senses": [
+        {
+          "id": "pattern",
+          "gloss": "pattern",
+          "definition": "A measured plan or pattern.",
+          "evidence": [
+            {
+              "ref": "Ezk.43.10"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Expand cognate and full-root evidence during review.",
+  "note": "The Psalm verb is piel תִּכַּנְתִּי, with niphal and piel senses of measuring and establishing. Sibling nouns תֹּכֶן, מַתְכֹּנֶת and תָּכְנִית remain in this root family.",
   "created": "2026-11-20"
 }
