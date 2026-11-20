@@ -1,6 +1,72 @@
 {
   "book": 1,
   "chapter": 1,
+  "review": {
+    "entities": [
+      {
+        "evidence": "אֱלֹהִים is the subject of the singular verb וַיַּרְא. The Creator sees that the light is good.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "אֱלֹהִים is again the subject, this time of וַיַּבְדֵּל. The same God separates the light from the darkness.",
+        "key": "LORD@Gen.1.1",
+        "position": 7
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and saw",
+        "position": 0
+      },
+      {
+        "gloss": "God",
+        "position": 1
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 2
+      },
+      {
+        "gloss": "the light",
+        "position": 3
+      },
+      {
+        "gloss": "that",
+        "position": 4
+      },
+      {
+        "gloss": "good",
+        "position": 5
+      },
+      {
+        "gloss": "then separated",
+        "position": 6
+      },
+      {
+        "gloss": "God",
+        "position": 7
+      },
+      {
+        "gloss": "between",
+        "position": 8
+      },
+      {
+        "gloss": "the light",
+        "position": 9
+      },
+      {
+        "gloss": "from",
+        "position": 10
+      },
+      {
+        "gloss": "the darkness",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [God|1] [saw|0] [that|4] [the light|3,2] {was} [good|5]. [Then|6] [God|7] [separated|6,8] [the light|9] [from|10] [the darkness|11]."
+  },
   "source": "ot",
   "verse": 4,
   "words": [
