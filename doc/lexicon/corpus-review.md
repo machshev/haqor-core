@@ -19,6 +19,10 @@ Use the global `--state PATH` on each command to select a different queue. Stop 
 
 ## Dispatch and review
 
+`run` writes progress to stderr. Each start and finish shows active agents against the shared limit, completed source verses against the seeded total, the passage, and the zero-based word position or verse review. After 30 seconds without a completion it lists the active jobs and their elapsed times. The verse count includes completed reviews from previous runs.
+
+With the default Codex backend, the harness reads the signed-in account's weekly percentage remaining at startup and every five minutes using `codex app-server`. This background check uses the `timeout` command. If the check cannot obtain a weekly window, it reports usage as unavailable and review continues.
+
 `--max-agents` limits the combined number of word and verse workers. The default is four. Each word job sees its marked position, verse text, source analysis, candidate articles and examples of earlier analyses. The worker returns a dictionary form, language, homograph qualifier where needed, root, morphology, sense, contextual gloss and evidence. Semitic keys use Hebrew script. The harness normalizes keys to Unicode NFC. Imported lemma numbers can inform a decision.
 
 A verse becomes ready when every word result has passed validation and been saved. It gets the next free slot, so other slots can continue word work on later verses. The reviewer sees the word results and existing English. The harness checks that the reviewed glosses cover every position exactly once and that the English spans link to every source position in that verse. A reviewer can send specific words back with reasons. Their verse waits again. Lexical and translation judgments remain the reviewers' responsibility.

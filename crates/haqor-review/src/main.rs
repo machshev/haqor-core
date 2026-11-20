@@ -4,6 +4,8 @@ mod chat;
 mod inventory;
 mod jobs;
 mod people;
+mod progress;
+mod quota;
 use anyhow::{Context, Result, bail, ensure};
 use clap::{Parser, Subcommand, ValueEnum};
 use jobs::Catalog;
@@ -191,6 +193,8 @@ fn main() -> Result<()> {
                 max_agents > 0 && max_attempts > 0,
                 "limits must be positive"
             );
+            eprintln!("Preparing review queue {}…", cli.state.display());
+            let _quota = (worker.is_none() && chat_endpoint.is_none()).then(quota::monitor);
             let mut catalog = Catalog::load(&lexicon)?;
             let people = people::People::load(&src_texts, &data)?;
             people.refresh(&mut db)?;
@@ -326,11 +330,22 @@ fn run(
     worker: &(impl Fn(&Value) -> Result<(Value, Value)> + Sync),
 ) -> Result<()> {
     let (tx, rx) = mpsc::channel();
-    let mut active = 0;
+    let (done, total) = db.query_row(
+        "SELECT count(*) FILTER (WHERE state='done'), count(*) FROM job WHERE pos=-1",
+        [],
+        |r| Ok((r.get(0)?, r.get(1)?)),
+    )?;
+    let mut progress = progress::Progress {
+        active: Default::default(),
+        done,
+        total,
+        limit,
+    };
+    progress.log("Starting review");
     let mut worker_failure = None;
     thread::scope(|scope| -> Result<()> {
         loop {
-            while active < limit && worker_failure.is_none() {
+            while progress.active.len() < limit && worker_failure.is_none() {
                 let Some(job) = jobs::next(db)? else { break };
                 let attempts: u32 = db.query_row(
                     "SELECT attempts FROM job WHERE source=? AND ref=? AND pos=?",
@@ -339,11 +354,23 @@ fn run(
                 )?;
                 if attempts >= max_attempts {
                     db.execute("UPDATE job SET state='failed', error=coalesce(error,'review attempt limit reached') WHERE source=? AND ref=? AND pos=?",job.key())?;
+                    progress.log(&format!(
+                        "Failed {} (attempt limit reached)",
+                        progress::label(&job)
+                    ));
                     continue;
                 }
                 let packet = jobs::packet(db, &job, catalog)?;
                 db.execute("UPDATE job SET state='running',attempts=attempts+1 WHERE source=? AND ref=? AND pos=?",job.key())?;
                 let tx = tx.clone();
+                let label = progress::label(&job);
+                progress
+                    .active
+                    .insert(label.clone(), std::time::Instant::now());
+                progress.log(&format!(
+                    "Started {label} (attempt {}/{max_attempts})",
+                    attempts + 1
+                ));
                 scope.spawn(move || {
                     let start = std::time::Instant::now();
                     let result =
@@ -351,13 +378,21 @@ fn run(
                             .unwrap_or_else(|_| Err(anyhow::anyhow!("review worker panicked")));
                     let _ = tx.send((job, packet, result, start.elapsed()));
                 });
-                active += 1;
             }
-            if active == 0 {
+            if progress.active.is_empty() {
                 break;
             }
-            let (job, packet, result, elapsed) = rx.recv()?;
-            active -= 1;
+            let (job, packet, result, elapsed) =
+                match rx.recv_timeout(std::time::Duration::from_secs(30)) {
+                    Ok(result) => result,
+                    Err(mpsc::RecvTimeoutError::Timeout) => {
+                        progress.heartbeat();
+                        continue;
+                    }
+                    Err(e) => return Err(e.into()),
+                };
+            let label = progress::label(&job);
+            progress.active.remove(&label);
             if let Err(error) = &result {
                 worker_failure = Some(format!("{error:#}"));
             }
@@ -375,17 +410,28 @@ fn run(
                     outcome.as_ref().err().map(|e| format!("{e:#}"))
                 ],
             )?;
-            if let Err(e) = outcome {
-                eprintln!(
-                    "{} {} position {}: {e:#}",
-                    job.source, job.reference, job.pos
-                );
+            if let Err(e) = &outcome {
                 db.execute("UPDATE job SET state=iif(attempts>=?,'failed','ready'), error=? WHERE source=? AND ref=? AND pos=?",
                     params![max_attempts,format!("{e:#}"),job.source,job.reference,job.pos])?;
             }
+            let state: String = db.query_row(
+                "SELECT state FROM job WHERE source=? AND ref=? AND pos=?",
+                job.key(),
+                |r| r.get(0),
+            )?;
+            progress.done += i64::from(job.pos < 0 && state == "done");
+            let detail = outcome
+                .err()
+                .map(|e| format!(": {e:#}"))
+                .unwrap_or_default();
+            progress.log(&format!(
+                "{label} → {state} ({}s){detail}",
+                elapsed.as_secs()
+            ));
         }
         Ok(())
     })?;
+    progress.log("Dispatch finished");
     if let Some(reason) = worker_failure {
         bail!("worker stopped: {reason}. Remaining jobs are checkpointed.");
     }
