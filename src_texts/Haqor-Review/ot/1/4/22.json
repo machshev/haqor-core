@@ -112,45 +112,19 @@
         "entry": {
           "draft": {
             "article_id": "ttwwbal-qayin",
-            "base": null,
-            "change": "Add a personal-name article for תּוּבַל קַיִן. The proposed תהמ root belongs to תְּהוֹם and has no support here.",
+            "base": "1556e979342dc0ca197f01a7606ce4809090550f815a5812378c1215f0c14182",
+            "change": "Link the marked occurrence to the bearer already recorded in the Tubal-cain article.",
             "definition": "Tubal-cain is the personal name of Zillah’s son, whom Genesis associates with work in bronze and iron.",
-            "evidence": "Genesis 4:22 gives the full name twice, first in the birth notice and again when naming his sister.",
-            "reconciliation": {
-              "article": {
-                "created": "2026-11-20",
-                "english": "Tubal-cain",
-                "entry": "",
-                "evidence": [
-                  {
-                    "note": "The birth notice gives the name תּוּבַל קַיִן, and the same two words recur when Naamah is identified as his sister.",
-                    "ref": "Gen.4.22",
-                    "role": "defining"
-                  }
-                ],
-                "gloss": "meaning unknown",
-                "id": "ttwwbal-qayin",
-                "name": "תּוּבַל קַיִן",
-                "note": "The verse identifies the bearer and his occupation. It gives no explanation of the name’s meaning or root.",
-                "people": [],
-                "root": "",
-                "status": "draft",
-                "summary": "Zillah bore Tubal-cain, whom Genesis associates with work in bronze and iron. The verse names Naamah as his sister.",
-                "updated": "2026-11-20"
-              },
-              "base": null,
-              "conflicts": [
-                "resolve the bearer and validate its name article against the current lexicon"
-              ]
-            }
-          }
+            "evidence": "Genesis 4:22 gives the full name in the birth notice and repeats it when naming his sister Naamah."
+          },
+          "word": 0
         },
-        "evidence": "Zillah bore אֶת תּוּבַל קַיִן. The verse repeats both components in וַאֲחוֹת תּוּבַל קַיִן נַעֲמָה, identifying Naamah as Tubal-cain’s sister. The repetition establishes the full name. The verse gives no derivation for it.",
+        "evidence": "Zillah bears אֶת תּוּבַל קַיִן. The verse repeats both components in וַאֲחוֹת תּוּבַל קַיִן נַעֲמָה, identifying Naamah as Tubal-cain’s sister. This establishes the full name. Its derivation is uncertain.",
         "gloss": "Tubal-cain",
         "language": "he",
         "lemma": "תּוּבַל קַיִן",
         "morph": "HNp",
-        "morphology": "Masculine singular proper name. תּוּבַל is the first component and has no prefix or suffix. אֶת marks the full name as the direct object of יָלְדָה.",
+        "morphology": "תּוּבַל is the first component of a masculine singular personal name. It has no prefix or suffix. The preceding אֶת marks the full name as the direct object of יָלְדָה.",
         "qualifier": "",
         "root": "",
         "segments": "תּוּבַל",
