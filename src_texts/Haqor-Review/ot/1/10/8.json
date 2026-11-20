@@ -52,7 +52,55 @@
         "position": 8
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "evidence": "Cush fathers Nimrod in Ham’s genealogy, identifying him as the son of Ham named in Genesis 10:6.",
+        "key": "Cush@Gen.10.6",
+        "position": 0,
+        "surface": "וְכוּשׁ"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "יָלַד"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "אֶת"
+      },
+      {
+        "evidence": "The direct-object marker identifies Nimrod as the son Cush fathered. The following clause describes him as a mighty man on the earth.",
+        "key": "Nimrod@Gen.10.8",
+        "position": 3,
+        "surface": "נִמְרֹד"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "הוּא"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "הֵחֵל"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "לִהְיוֹת"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "גִּבֹּר"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "בָּאָרֶץ"
+      }
+    ],
     "translation": "[Cush also|0] [fathered|1] [Nimrod|3,2], [who|4] [began|5] [to be|6] [a mighty man|7] [on the earth|8]."
   },
   "source": "ot",
