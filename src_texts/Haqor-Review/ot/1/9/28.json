@@ -1,6 +1,55 @@
 {
   "book": 1,
   "chapter": 9,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The verse counts the years Noah lived after the flood, identifying him as the flood survivor and son of Lamech.",
+        "key": "Noah@Gen.5.29",
+        "position": 1
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Noah",
+        "position": 1
+      },
+      {
+        "gloss": "after",
+        "position": 2
+      },
+      {
+        "gloss": "the flood",
+        "position": 3
+      },
+      {
+        "gloss": "three",
+        "position": 4
+      },
+      {
+        "gloss": "hundred",
+        "position": 5
+      },
+      {
+        "gloss": "years",
+        "position": 6
+      },
+      {
+        "gloss": "and fifty",
+        "position": 7
+      },
+      {
+        "gloss": "years",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [after|2] [the flood|3], [Noah|1] [lived|0] [350|4,5,7] [years|6,8]."
+  },
   "source": "ot",
   "verse": 28,
   "words": [
