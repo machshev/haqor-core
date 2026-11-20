@@ -1,1 +1,87 @@
-{"id":"ratsats","root":"רצצ","status":"draft","updated":"2026-11-20","gloss":"run","summary":"רַץ is a runner or swift movement.","words":[{"lemma":"רַץ","bdb":["t.ej.ab"],"pos":"verb","gloss":"run","stems":[{"stem":"piel","gloss":"run","senses":[{"gloss":"run","definition":"The enemy runs in paths of silver while the people scatter them.","evidence":[{"ref":"Psa.68.31","role":"defining"}]}]}]}],"note":"Drafted for Psalm 68 coverage."}
+{
+  "id": "ratsats",
+  "root": "רצצ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "run",
+  "summary": "רַץ is a runner or swift movement.",
+  "words": [
+    {
+      "lemma": "רַץ",
+      "bdb": [
+        "t.ej.ab"
+      ],
+      "pos": "verb",
+      "gloss": "run",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "run",
+          "senses": [
+            {
+              "gloss": "run",
+              "definition": "The enemy runs in paths of silver while the people scatter them.",
+              "evidence": [
+                {
+                  "ref": "Psa.68.31",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רָצַץ",
+      "pos": "verb",
+      "gloss": "crush",
+      "bdb": [
+        "t.ej.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "crush",
+          "senses": [
+            {
+              "gloss": "crush",
+              "definition": "Crush, break, or oppress.",
+              "evidence": [
+                {
+                  "ref": "Isa.42.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.74.14"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְרוּצָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "crushing, oppression",
+      "bdb": [
+        "t.ej.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "oppression",
+          "definition": "Crushing oppression or extortion.",
+          "evidence": [
+            {
+              "ref": "Jer.22.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 68 coverage."
+}
