@@ -149,20 +149,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "2lh",
+          "draft": {
+            "article_id": "2lh",
+            "base": "84119deda156c77350d0003ba00ebf14817a39d3f66915fa33a75264c98af78a",
+            "change": "Add Gen.9.8 as evidence for the existing addressee sense of אֶל at word index 0.",
+            "definition": "With a verb of speaking, אֶל introduces the addressee.",
+            "evidence": "In Gen.9.8, וְאֶל בָּנָיו adds Noah’s sons to the hearers already introduced by אֶל נֹחַ."
+          },
           "sense": "to-a-person-speaking",
           "word": 0
         },
-        "evidence": "In וַיֹּאמֶר יַהְוֶה אֶל לִבּוֹ, אֶל marks the addressee of וַיֹּאמֶר. Yahweh speaks “to his heart,” that is, to himself.",
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֶל לִבּוֹ, אֶל introduces לִבּוֹ, “his heart,” as the addressee of וַיֹּאמֶר. Yahweh speaks to himself.",
         "gloss": "to",
         "language": "he",
         "lemma": "אֶל",
         "morph": "HR",
-        "morphology": "Hebrew preposition without prefix or suffix.",
+        "morphology": "Hebrew preposition without a prefix or suffix.",
         "qualifier": "",
         "root": "אלה",
         "segments": "אֶל",
-        "sense": "to (a person: speaking, sending, bringing)"
+        "sense": "Marks the person or people addressed."
       },
       "position": 7,
       "surface": "אֶל"
