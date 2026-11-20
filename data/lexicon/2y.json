@@ -37,7 +37,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "island-coastland",
           "definition": "Land approached by sea, also its inhabitants. Ezekiel describes the islands in the sea trembling at Tyre’s fall. Isaiah calls on the distant coastlands to listen.",
           "evidence": [
             {
@@ -55,9 +54,15 @@
             {
               "ref": "Psa.72.10",
               "role": "example"
+            },
+            {
+              "note": "אִיֵּי הַגּוֹיִם, “the coastlands of the nations,” names the inhabitants by their lands. They spread out, each according to his language.",
+              "ref": "Gen.10.5",
+              "role": "example"
             }
           ],
-          "gloss": "island, coastland"
+          "gloss": "island, coastland",
+          "id": "island-coastland"
         }
       ]
     },
@@ -67,7 +72,6 @@
       "pos": "particle",
       "senses": [
         {
-          "id": "where",
           "definition": "Introduces a question asking where someone or something is.",
           "evidence": [
             {
@@ -76,7 +80,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "where?"
+          "gloss": "where?",
+          "id": "where"
         }
       ],
       "summary": "This particle asks about location. Its historical relationship to the noun אִי is unclear."
@@ -90,7 +95,6 @@
       "pos": "adverb",
       "senses": [
         {
-          "id": "ask-where-someone-is",
           "definition": "Ask the location of a person identified by name or by a pronominal suffix.",
           "evidence": [
             {
@@ -104,7 +108,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "ask where someone is"
+          "gloss": "ask where someone is",
+          "id": "ask-where-someone-is"
         }
       ]
     }
