@@ -1,0 +1,189 @@
+{
+  "id": "rachats",
+  "root": "רחצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "water",
+    "cleansing"
+  ],
+  "gloss": "wash, bathe, washing",
+  "summary": "Water cleans a person’s feet or body. The psalmist invokes clean hands as a sign of innocence before Yahweh’s altar.",
+  "words": [
+    {
+      "lemma": "רָחַץ",
+      "bdb": [
+        "t.ce.aa"
+      ],
+      "pos": "verb",
+      "gloss": "wash, bathe",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "wash",
+          "senses": [
+            {
+              "gloss": "wash or bathe with water",
+              "definition": "Abraham offers his guests water for their feet. Naaman is instructed to bathe in the Jordan.",
+              "evidence": [
+                {
+                  "ref": "Gen.18.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.5.10"
+                }
+              ]
+            },
+            {
+              "gloss": "wash as an expression of innocence",
+              "definition": "The psalmist washes his palms in innocence and goes round Yahweh’s altar.",
+              "evidence": [
+                {
+                  "ref": "Psa.26.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.73.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be washed",
+          "senses": [
+            {
+              "gloss": "be washed",
+              "definition": "Ezekiel describes the infant abandoned before being washed with water.",
+              "evidence": [
+                {
+                  "ref": "Ezk.16.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "wash oneself",
+          "senses": [
+            {
+              "gloss": "wash oneself",
+              "definition": "Job imagines washing himself in snow water to become clean.",
+              "evidence": [
+                {
+                  "ref": "Job.9.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רַחַץ",
+      "bdb": [
+        "t.ce.ab"
+      ],
+      "pos": "noun",
+      "gloss": "washing",
+      "senses": [
+        {
+          "gloss": "washing",
+          "definition": "Moab is compared to a basin used for washing.",
+          "evidence": [
+            {
+              "ref": "Psa.60.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.108.10"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "רַחְצָה",
+      "bdb": [
+        "t.ce.ac"
+      ],
+      "pos": "noun",
+      "gloss": "washing, bathing",
+      "senses": [
+        {
+          "gloss": "washing, bathing",
+          "definition": "The beloved’s teeth are compared with white sheep coming up from washing.",
+          "evidence": [
+            {
+              "ref": "Sng.4.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.6.6"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "רְחַץ",
+      "bdb": [
+        "xt.ai.aa"
+      ],
+      "pos": "verb",
+      "gloss": "trust",
+      "stems": [
+        {
+          "stem": "hithpeel",
+          "gloss": "put one’s trust in",
+          "senses": [
+            {
+              "gloss": "put one’s trust in",
+              "definition": "Nebuchadnezzar says the men trusted in their God and gave up their bodies rather than worship another god.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-rechets"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-rechets",
+      "lang": "arc",
+      "form": "רְחֵץ",
+      "translit": "rəḥēṣ",
+      "gloss": "rely on, trust",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "רְחֵץ, Targum Psalms 118:8 and Job 12:6"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic verb of trust has support in the Targums. Whether it is historically related to Hebrew washing is uncertain."
+}
