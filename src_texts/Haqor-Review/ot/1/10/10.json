@@ -1,6 +1,75 @@
 {
   "book": 1,
   "chapter": 10,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Babel is the Hebrew name of Babylon, the first city listed in Nimrod’s kingdom in Shinar.",
+        "key": "Babylon@Gen.10.10",
+        "position": 3
+      },
+      {
+        "evidence": "Erech is the city named between Babel and Akkad in Shinar.",
+        "key": "Erech@Gen.10.10",
+        "position": 4
+      },
+      {
+        "evidence": "Akkad and Accad are spellings of אַכַּד, the city named between Erech and Calneh in Shinar.",
+        "key": "Accad@Gen.10.10",
+        "position": 5
+      },
+      {
+        "evidence": "Calneh is the fourth city listed in Nimrod’s kingdom, located here in Shinar.",
+        "key": "Calneh@Gen.10.10",
+        "position": 6
+      },
+      {
+        "evidence": "The phrase בְּאֶרֶץ שִׁנְעָר names Shinar as the land containing all four cities.",
+        "key": "Shinar@Gen.10.10",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and was",
+        "position": 0
+      },
+      {
+        "gloss": "the beginning of",
+        "position": 1
+      },
+      {
+        "gloss": "his kingdom",
+        "position": 2
+      },
+      {
+        "gloss": "Babel",
+        "position": 3
+      },
+      {
+        "gloss": "and Erech",
+        "position": 4
+      },
+      {
+        "gloss": "and Akkad",
+        "position": 5
+      },
+      {
+        "gloss": "and Calneh",
+        "position": 6
+      },
+      {
+        "gloss": "in the land of",
+        "position": 7
+      },
+      {
+        "gloss": "Shinar",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [the beginning of|1] [his kingdom|2] [was|0] [Babel|3] [and Erech|4] [and Akkad|5] [and Calneh|6], [in the land of|7] [Shinar|8]."
+  },
   "source": "ot",
   "verse": 10,
   "words": [
