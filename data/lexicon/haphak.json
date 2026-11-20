@@ -69,6 +69,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-e00741"
       ]
     },
     {
@@ -170,10 +173,10 @@
       "senses": [
         {
           "gloss": "overthrow",
-          "definition": "An overthrow is a completed turning down.",
+          "definition": "God remembers Abraham when he overthrows the cities where Lot lived.",
           "evidence": [
             {
-              "ref": "Ezk.21.32",
+              "ref": "Gen.19.29",
               "role": "defining"
             }
           ]
@@ -202,7 +205,22 @@
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-e00741",
+      "lang": "arc",
+      "form": "הֲפַךְ",
+      "translit": "hăpak",
+      "gloss": "turn, change",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "הֲפַךְ, E00741, Targum Psalms 105:29"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "The proper place names Hor and Hara are not derivatives of the turning root and are omitted. The remaining lexical forms and verbal stems are retained."
 }

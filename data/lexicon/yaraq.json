@@ -27,6 +27,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-j00658"
       ]
     },
     {
@@ -48,7 +51,124 @@
       "bdb": [
         "j.do.ag"
       ]
+    },
+    {
+      "lemma": "יָרָק",
+      "bdb": [
+        "j.do.ac"
+      ],
+      "pos": "noun",
+      "gloss": "green vegetables",
+      "senses": [
+        {
+          "gloss": "green vegetables",
+          "definition": "Ahab wants Naboth’s vineyard for a vegetable garden. Proverbs compares a meal of greens shared in love to a richer meal eaten in hatred.",
+          "evidence": [
+            {
+              "ref": "1Ki.21.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.15.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יָרוֹק",
+      "bdb": [
+        "j.do.ae"
+      ],
+      "pos": "noun",
+      "gloss": "green growth",
+      "senses": [
+        {
+          "gloss": "green growth",
+          "definition": "The wild donkey searches the mountains for anything green to eat.",
+          "evidence": [
+            {
+              "ref": "Job.39.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יֵרָקוֹן",
+      "bdb": [
+        "j.do.af"
+      ],
+      "pos": "noun",
+      "gloss": "blight, pallor",
+      "senses": [
+        {
+          "gloss": "blight, pallor",
+          "definition": "Blight threatens the crops alongside mildew and drought. Jeremiah uses the word for the pallor of faces in terror.",
+          "evidence": [
+            {
+              "ref": "1Ki.8.37",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.30.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יָרַק",
+      "bdb": [
+        "j.dp.aa"
+      ],
+      "pos": "verb",
+      "gloss": "spit",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "spit",
+          "senses": [
+            {
+              "gloss": "spit",
+              "definition": "The widow spits before a man who declines his duty to his brother. The same action appears in the rebuke concerning Miriam.",
+              "evidence": [
+                {
+                  "ref": "Deu.25.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.12.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "note": "Drafted for Psalm 37 coverage."
+  "note": "Drafted for Psalm 37 coverage.",
+  "cognates": [
+    {
+      "id": "arc-j00658",
+      "lang": "arc",
+      "form": "יַרְקָא",
+      "translit": "yarqā",
+      "gloss": "green herb",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "יַרְקָא, J00658, Targum 1 Kings 21:2"
+        }
+      ]
+    }
+  ]
 }

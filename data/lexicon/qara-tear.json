@@ -35,10 +35,53 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-s02129"
+      ]
+    },
+    {
+      "lemma": "קֶרַע",
+      "bdb": [
+        "s.di.ab"
+      ],
+      "pos": "noun",
+      "gloss": "torn piece",
+      "senses": [
+        {
+          "gloss": "torn piece",
+          "definition": "Ahijah tears his new cloak into twelve pieces and tells Jeroboam to take ten.",
+          "evidence": [
+            {
+              "ref": "1Ki.11.30",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.11.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-s02129",
+      "lang": "arc",
+      "form": "קְרַע",
+      "translit": "qəraʿ",
+      "gloss": "tear a garment",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "קְרַע, S02129, Moed Katan 20b"
+        }
       ]
     }
   ],
-  "cognates": [],
   "doctrine": [],
   "note": "Drafted for Psalm 35 coverage."
 }

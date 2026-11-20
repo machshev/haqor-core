@@ -7,8 +7,29 @@
   "summary": "Anger or wrath.",
   "words": [
     {
-      "lemma": "קָצַף", "pos": "verb", "gloss": "be angry", "bdb": ["s.ct.aa"],
-      "stems": [{"stem":"qal","gloss":"be angry","senses":[{"gloss":"be angry","definition":"To burn with anger.","evidence":[{"ref":"Exo.16.20"}]}]}]
+      "lemma": "קָצַף",
+      "pos": "verb",
+      "gloss": "be angry",
+      "bdb": [
+        "s.ct.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be angry",
+          "senses": [
+            {
+              "gloss": "be angry",
+              "definition": "To burn with anger.",
+              "evidence": [
+                {
+                  "ref": "Exo.16.20"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "lemma": "קֶ֫צֶף",
@@ -32,12 +53,95 @@
       ]
     },
     {
-      "lemma": "קֶ֫צֶף", "pos": "noun", "gender": "m", "gloss": "splinter", "bdb": ["s.cu.ac"],
-      "senses": [{"gloss":"splinter","definition":"A fragment or splinter.","evidence":[{"ref":"Ezk.17.10"}]}]
+      "lemma": "קֶ֫צֶף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "splinter",
+      "bdb": [
+        "s.cu.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "chip on the water",
+          "definition": "Samaria’s king comes to nothing like a fragment carried on water. The precise object in this comparison is uncertain.",
+          "evidence": [
+            {
+              "ref": "Hos.10.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     },
     {
-      "lemma": "קְצָפָה", "pos": "noun", "gender": "f", "gloss": "splintering", "bdb": ["s.cu.ab"],
-      "senses": [{"gloss":"splintering","definition":"Splintering or snapping.","evidence":[{"ref":"Hos.8.5"}]}]
+      "lemma": "קְצָפָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "splintering",
+      "bdb": [
+        "s.cu.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "stripping, splintering",
+          "definition": "The vine is ruined and bark is stripped from the fig tree until its branches stand white. This single occurrence describes the damage to the tree.",
+          "evidence": [
+            {
+              "ref": "Jol.1.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְצַף",
+      "bdb": [
+        "xs.ai.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be angry",
+      "lang": "arc",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be angry",
+          "senses": [
+            {
+              "gloss": "be angry",
+              "definition": "Nebuchadnezzar reacts to his advisers with fury and orders the wise men killed.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְצַף",
+      "bdb": [
+        "xs.ai.ab"
+      ],
+      "pos": "noun",
+      "gloss": "wrath",
+      "lang": "arc",
+      "senses": [
+        {
+          "gloss": "wrath",
+          "definition": "The decree calls for obedience in the temple to avert wrath against the king and his sons.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.23",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "note": "Drafted for Psalm 38 coverage."

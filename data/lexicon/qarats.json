@@ -20,14 +20,22 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "wink",
+          "gloss": "signal by a pinch or wink",
           "senses": [
             {
-              "gloss": "wink",
-              "definition": "wink in Psalm 35",
+              "gloss": "signal by a pinch or wink",
+              "definition": "A secret wink links the conspirators, and Proverbs describes one who signals with his eyes and feet. Job says he was pinched off from clay.",
               "evidence": [
                 {
-                  "ref": "Psa.35.13",
+                  "ref": "Psa.35.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.6.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.33.6",
                   "role": "defining"
                 }
               ]
@@ -35,6 +43,53 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "קֶרֶץ",
+      "bdb": [
+        "s.dj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "biting insect",
+      "senses": [
+        {
+          "gloss": "biting insect",
+          "definition": "A biting pest from the north comes against Egypt, depicted as a beautiful heifer. The specific insect is uncertain.",
+          "evidence": [
+            {
+              "ref": "Jer.46.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "קְרַץ",
+      "bdb": [
+        "xs.ak.ae"
+      ],
+      "pos": "noun",
+      "gloss": "accusation",
+      "lang": "arc",
+      "senses": [
+        {
+          "gloss": "accusation",
+          "definition": "In the expression literally involving eating pieces of someone, the speakers denounce others before the king.",
+          "evidence": [
+            {
+              "ref": "Dan.3.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.6.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [],

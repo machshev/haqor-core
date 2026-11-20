@@ -20,17 +20,102 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "be dark",
+          "gloss": "grow dark, go in mourning",
           "senses": [
             {
-              "gloss": "be dark",
-              "definition": "be dark in Psalm 35",
+              "gloss": "grow dark, go in mourning",
+              "definition": "David bows down in grief as one mourning his mother. Jeremiah describes the heavens themselves growing dark.",
               "evidence": [
                 {
-                  "ref": "Psa.35.13",
+                  "ref": "Psa.35.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.38.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.4.28",
                   "role": "defining"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make dark",
+          "senses": [
+            {
+              "gloss": "make dark",
+              "definition": "Yahweh covers the heavens and darkens the stars in the lament over Pharaoh.",
+              "evidence": [
+                {
+                  "ref": "Ezk.32.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.31.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "grow dark",
+          "senses": [
+            {
+              "gloss": "grow dark",
+              "definition": "Clouds and wind darken the sky before the rain falls.",
+              "evidence": [
+                {
+                  "ref": "1Ki.18.45",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַדְרוּת",
+      "bdb": [
+        "s.am.ab"
+      ],
+      "pos": "noun",
+      "gloss": "darkness",
+      "senses": [
+        {
+          "gloss": "darkness",
+          "definition": "Yahweh clothes the heavens in darkness and makes sackcloth their covering.",
+          "evidence": [
+            {
+              "ref": "Isa.50.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "קְדֹרַנִּית",
+      "bdb": [
+        "s.am.ac"
+      ],
+      "pos": "adverb",
+      "gloss": "in mourning",
+      "senses": [
+        {
+          "gloss": "in mourning",
+          "definition": "Those who question the value of serving God describe themselves as walking mournfully before him.",
+          "evidence": [
+            {
+              "ref": "Mal.3.14",
+              "role": "defining"
             }
           ]
         }

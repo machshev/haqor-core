@@ -35,6 +35,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-t00273"
       ]
     },
     {
@@ -110,7 +113,8 @@
         }
       ],
       "cognate_ids": [
-        "arc-proud"
+        "arc-proud",
+        "arc-t00273"
       ]
     },
     {
@@ -314,6 +318,20 @@
         {
           "source": "lane",
           "locator": "Book I, p. 1168, رهب, form IV"
+        }
+      ]
+    },
+    {
+      "id": "arc-t00273",
+      "lang": "arc",
+      "form": "רַהְבָּא",
+      "translit": "rahbā",
+      "gloss": "pride, the proud",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "רַהְבָּא, T00273, Targum Psalms 89:11"
         }
       ]
     }

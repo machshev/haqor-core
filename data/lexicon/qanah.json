@@ -2,7 +2,7 @@
   "id": "qanah",
   "root": "קנה",
   "status": "draft",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "tags": [
     "acquiring",
     "buying",
@@ -1311,6 +1311,38 @@
             "measuring-reed"
           ]
         }
+      ]
+    },
+    {
+      "lemma": "קְנָא",
+      "lang": "arc",
+      "root": "קנא",
+      "pos": "verb",
+      "gloss": "buy",
+      "bdb": [
+        "xs.ag.aa"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "buy",
+          "senses": [
+            {
+              "gloss": "buy",
+              "definition": "Ezra is to buy bulls, rams and lambs with the money entrusted to him.",
+              "evidence": [
+                {
+                  "ref": "Ezr.7.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-qena",
+        "akk-qanu-v"
       ]
     }
   ],

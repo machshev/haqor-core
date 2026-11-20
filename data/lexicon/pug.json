@@ -16,11 +16,31 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "grow numb",
+          "gloss": "grow numb, lose force",
           "senses": [
             {
-              "gloss": "grow numb",
-              "definition": "The Psalmist's strength fails and his heart throbs.",
+              "gloss": "grow numb, lose force",
+              "definition": "Jacob’s heart goes numb at news he cannot believe. Habakkuk says the law has lost its force.",
+              "evidence": [
+                {
+                  "ref": "Gen.45.26",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hab.1.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be benumbed",
+          "senses": [
+            {
+              "gloss": "be benumbed",
+              "definition": "The speaker describes himself as numb and terribly crushed, groaning from the turmoil in his heart.",
               "evidence": [
                 {
                   "ref": "Psa.38.9",
@@ -31,6 +51,48 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "פּוּגַת",
+      "bdb": [
+        "q.an.ab"
+      ],
+      "pos": "noun",
+      "gloss": "respite",
+      "senses": [
+        {
+          "gloss": "respite",
+          "definition": "Jerusalem is called to let tears flow day and night and give herself no rest.",
+          "evidence": [
+            {
+              "ref": "Lam.2.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "הֲפוּגָה",
+      "bdb": [
+        "q.an.ac"
+      ],
+      "pos": "noun",
+      "gloss": "interruption",
+      "senses": [
+        {
+          "gloss": "interruption",
+          "definition": "The lament describes an eye pouring down tears continuously, without a break.",
+          "evidence": [
+            {
+              "ref": "Lam.3.49",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
     }
   ],
   "note": "Drafted for Psalm 38 coverage."

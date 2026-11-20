@@ -3,7 +3,7 @@
   "root": "שקה",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "tags": [
     "drink"
   ],
@@ -69,15 +69,22 @@
       "gender": "m",
       "senses": [
         {
-          "gloss": "watering",
-          "definition": "Water supplied for drinking.",
+          "gloss": "refreshment, drink",
+          "definition": "The body receives refreshment like moisture reaching the bones. Elsewhere the speaker mixes his drink with tears.",
           "evidence": [
             {
-              "ref": "Isa.35.7",
+              "ref": "Pro.3.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.102.10",
               "role": "defining"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-m02964"
       ]
     },
     {
@@ -102,7 +109,22 @@
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-m02964",
+      "lang": "arc",
+      "form": "מַשְׁקֵי",
+      "translit": "mašqē",
+      "gloss": "drink",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "מַשְׁקֵי, M02964, Targum Leviticus 11:34"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalm 36 coverage."
 }

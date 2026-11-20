@@ -62,7 +62,7 @@
         }
       ],
       "cognate_ids": [
-        "arc-regard"
+        "akk-seek"
       ]
     },
     {
@@ -89,21 +89,42 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-hour"
       ]
     }
   ],
   "cognates": [
     {
-      "id": "arc-regard",
+      "id": "akk-seek",
+      "lang": "akk",
+      "form": "šeʾû",
+      "translit": "šeʾû",
+      "gloss": "seek out",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000017920, šeʾû [seek (out)]"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "šʿy[seek]V"
+        }
+      ]
+    },
+    {
+      "id": "arc-hour",
       "lang": "arc",
-      "form": "שעי",
-      "translit": "šʿy",
-      "gloss": "look, pay attention",
+      "form": "שַׁעְתָּא",
+      "translit": "šaʿtā",
+      "gloss": "while, hour",
       "relation": "cognate",
       "evidence": [
         {
           "source": "jastrow-1903",
-          "locator": "שעי, U01652, Sifre Deuteronomy 318"
+          "locator": "שַׁעְתָּא, U01699, Targum 2 Kings 5:26"
         }
       ]
     }

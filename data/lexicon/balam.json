@@ -2,7 +2,7 @@
   "id": "balam",
   "root": "בלמ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "restrain",
   "summary": "בלם means to restrain or hold back.",
   "words": [
@@ -30,9 +30,28 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-b00883"
       ]
     }
   ],
   "doctrine": [],
-  "note": "Drafted from Psalms 32–33 audit."
+  "note": "Drafted from Psalms 32–33 audit.",
+  "cognates": [
+    {
+      "id": "arc-b00883",
+      "lang": "arc",
+      "form": "בְּלַם",
+      "translit": "bəlam",
+      "gloss": "bind, tie",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "בְּלַם, B00883, Targum Isaiah 32:4"
+        }
+      ]
+    }
+  ]
 }

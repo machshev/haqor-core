@@ -2,7 +2,7 @@
   "id": "charash",
   "root": "חרש",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "be silent; deaf",
   "summary": "חרש denotes silence and the condition of being deaf or unresponsive.",
   "words": [
@@ -29,6 +29,46 @@
               ]
             }
           ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "be deaf, keep silent",
+          "senses": [
+            {
+              "gloss": "be deaf, keep silent",
+              "definition": "David asks Yahweh to hear him and to answer his tears. Micah describes ears becoming deaf.",
+              "evidence": [
+                {
+                  "ref": "Psa.35.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.39.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mic.7.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "keep quiet",
+          "senses": [
+            {
+              "gloss": "keep quiet",
+              "definition": "The men lie in wait through the night at Gaza, saying they will act at dawn.",
+              "evidence": [
+                {
+                  "ref": "Jdg.16.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -50,6 +90,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-h01785"
       ]
     },
     {
@@ -61,14 +104,244 @@
       ],
       "senses": [
         {
-          "gloss": "silently",
-          "definition": "Without speaking or openly revealing the action.",
+          "gloss": "secretly",
+          "definition": "Joshua sends two men secretly to spy out the land near Jericho.",
           "evidence": [
             {
-              "ref": "Psa.35.15"
+              "ref": "Jos.2.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָרַשׁ",
+      "bdb": [
+        "h.gk.aa"
+      ],
+      "pos": "verb",
+      "gloss": "plough, work a material",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "plough, work a material",
+          "senses": [
+            {
+              "gloss": "plough, work a material",
+              "definition": "Elisha is ploughing when Elijah finds him. The same verb is used of skilled work in bronze and of devising harm.",
+              "evidence": [
+                {
+                  "ref": "1Ki.19.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ki.7.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.3.29",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be ploughed",
+          "senses": [
+            {
+              "gloss": "be ploughed",
+              "definition": "Micah’s warning, recalled in Jeremiah, pictures Zion ploughed like a field.",
+              "evidence": [
+                {
+                  "ref": "Mic.3.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.26.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "devise",
+          "senses": [
+            {
+              "gloss": "devise",
+              "definition": "David becomes aware of Saul’s plan against him at Keilah.",
+              "evidence": [
+                {
+                  "ref": "1Sa.23.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָרָשׁ",
+      "bdb": [
+        "h.gk.ab"
+      ],
+      "pos": "noun",
+      "gloss": "craftsman",
+      "senses": [
+        {
+          "gloss": "craftsman",
+          "definition": "David receives workers in wood and stone to build a house. Another skilled worker fashions an image.",
+          "evidence": [
+            {
+              "ref": "1Ch.14.1",
+              "role": "defining"
             },
             {
-              "ref": "1Sa.23.9"
+              "ref": "Isa.44.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "חֲרֹשֶׁת",
+      "bdb": [
+        "h.gk.ac"
+      ],
+      "pos": "noun",
+      "gloss": "carving, craftsmanship",
+      "senses": [
+        {
+          "gloss": "carving, craftsmanship",
+          "definition": "Bezalel is equipped to cut stones for settings and carve wood for the sanctuary.",
+          "evidence": [
+            {
+              "ref": "Exo.31.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.35.33",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "חָרִישׁ",
+      "bdb": [
+        "h.gk.ad"
+      ],
+      "pos": "noun",
+      "gloss": "ploughing season",
+      "senses": [
+        {
+          "gloss": "ploughing season",
+          "definition": "Even at ploughing time and harvest the seventh day is a day of rest.",
+          "evidence": [
+            {
+              "ref": "Exo.34.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מַחֲרֵשָׁה",
+      "bdb": [
+        "h.gk.ae"
+      ],
+      "pos": "noun",
+      "gloss": "ploughing implement",
+      "senses": [
+        {
+          "gloss": "ploughing implement",
+          "definition": "The Israelites go to the Philistines to sharpen their agricultural tools. The precise distinction between the two similar names for implements is uncertain.",
+          "evidence": [
+            {
+              "ref": "1Sa.13.20",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.13.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "חֹרֶשׁ",
+      "bdb": [
+        "h.gm.ab"
+      ],
+      "pos": "noun",
+      "gloss": "woodland",
+      "senses": [
+        {
+          "gloss": "woodland",
+          "definition": "David stays in the wooded country in the wilderness of Ziph, where Jonathan comes to him. Its connection to working wood is uncertain.",
+          "evidence": [
+            {
+              "ref": "1Sa.23.15",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.23.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "חֶרֶשׁ",
+      "bdb": [
+        "h.gn.ab"
+      ],
+      "pos": "noun",
+      "gloss": "magic art",
+      "senses": [
+        {
+          "gloss": "magic art",
+          "definition": "Isaiah includes the expert in charms among those on whom Jerusalem relies. This use may refer to skilled work or to an incantation spoken quietly.",
+          "evidence": [
+            {
+              "ref": "Isa.3.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "חֲרִישִׁי",
+      "bdb": [
+        "h.gn.ag"
+      ],
+      "pos": "adjective",
+      "gloss": "sultry, still",
+      "senses": [
+        {
+          "gloss": "sultry, still",
+          "definition": "The wind comes from the east as the sun beats on Jonah. The adjective occurs only here, and the precise quality of the wind is uncertain.",
+          "evidence": [
+            {
+              "ref": "Jon.4.8",
+              "role": "defining"
             }
           ]
         }
@@ -76,5 +349,21 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted from Psalms 32–33 audit."
+  "note": "Drafted from Psalms 32–33 audit.",
+  "cognates": [
+    {
+      "id": "arc-h01785",
+      "lang": "arc",
+      "form": "חַרְשָׁא",
+      "translit": "ḥaršā",
+      "gloss": "deaf",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חַרְשָׁא, H01785, Targum Exodus 4:11"
+        }
+      ]
+    }
+  ]
 }

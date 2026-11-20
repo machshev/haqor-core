@@ -34,6 +34,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-h01029"
       ]
     },
     {
@@ -91,11 +94,15 @@
       ],
       "senses": [
         {
-          "gloss": "sickness",
-          "definition": "A sickness or disease.",
+          "gloss": "illness",
+          "definition": "The human spirit can sustain a person through illness, while Jehoram is told of the illness that will affect his bowels.",
           "evidence": [
             {
-              "ref": "Deu.28.61",
+              "ref": "Pro.18.14",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ch.21.15",
               "role": "defining"
             }
           ]
@@ -111,11 +118,15 @@
       ],
       "senses": [
         {
-          "gloss": "sickness",
-          "definition": "A sickness or disease.",
+          "gloss": "disease",
+          "definition": "In Solomon’s prayer, disease appears alongside famine and pestilence among the afflictions that bring a person to prayer.",
           "evidence": [
             {
-              "ref": "Pro.13.12",
+              "ref": "1Ki.8.37",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ch.6.28",
               "role": "defining"
             }
           ]
@@ -152,10 +163,14 @@
       "senses": [
         {
           "gloss": "ornament",
-          "definition": "An ornament or jewel.",
+          "definition": "The comparison is to gold jewelry worn on the ear. The Song compares the curves of the thighs to ornaments made by a craftsman.",
           "evidence": [
             {
-              "ref": "Isa.3.19",
+              "ref": "Pro.25.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.7.2",
               "role": "defining"
             }
           ]
@@ -181,9 +196,45 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "מַחֲלוּי",
+      "bdb": [
+        "h.cn.ae"
+      ],
+      "pos": "noun",
+      "gloss": "illness, injuries",
+      "senses": [
+        {
+          "gloss": "illness, injuries",
+          "definition": "Joash’s attackers leave him suffering severely before his servants conspire against him in his bed.",
+          "evidence": [
+            {
+              "ref": "2Ch.24.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-h01029",
+      "lang": "arc",
+      "form": "חֲלִי",
+      "translit": "ḥălî",
+      "gloss": "be sick, grieve",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲלִי, H01029, Yoma 22b"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalm 35 coverage."
 }

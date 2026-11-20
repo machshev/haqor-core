@@ -11,8 +11,21 @@
       "pos": "noun",
       "gender": "m",
       "gloss": "razor",
-      "bdb": ["p.fi.ag"],
-      "senses": [{"gloss":"razor","definition":"A deceitful tongue is like a sharpened razor.","evidence":[{"ref":"Psa.52.4","role":"defining"}]}]
+      "bdb": [
+        "p.fi.ag"
+      ],
+      "senses": [
+        {
+          "gloss": "razor",
+          "definition": "A deceitful tongue is like a sharpened razor.",
+          "evidence": [
+            {
+              "ref": "Psa.52.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     },
     {
       "lemma": "עָרָה",
@@ -39,6 +52,98 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "עָרָה",
+      "bdb": [
+        "p.fi.ab"
+      ],
+      "pos": "noun",
+      "gloss": "bare ground",
+      "senses": [
+        {
+          "gloss": "bare ground",
+          "definition": "The noun appears in Isaiah’s account of the Nile drying up. The ground or growth at its mouth is laid bare as what was sown disappears.",
+          "evidence": [
+            {
+              "ref": "Isa.19.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "עֶרְוָה",
+      "bdb": [
+        "p.fi.ac"
+      ],
+      "pos": "noun",
+      "gloss": "nakedness",
+      "senses": [
+        {
+          "gloss": "nakedness",
+          "definition": "The brothers walk backward with a covering so that they do not see their father’s nakedness.",
+          "evidence": [
+            {
+              "ref": "Gen.9.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.9.23",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "עֶרְיָה",
+      "bdb": [
+        "p.fi.ad"
+      ],
+      "pos": "noun",
+      "gloss": "nakedness, exposure",
+      "senses": [
+        {
+          "gloss": "nakedness, exposure",
+          "definition": "Ezekiel describes an exposed child growing up without clothing. Nakedness is again recalled when Jerusalem forgets her youth.",
+          "evidence": [
+            {
+              "ref": "Ezk.16.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.16.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַעֲרֶה",
+      "bdb": [
+        "p.fi.ae"
+      ],
+      "pos": "noun",
+      "gloss": "exposed space",
+      "senses": [
+        {
+          "gloss": "exposed space",
+          "definition": "On the bronze stands, carvings fill the space left available on each panel. The reading of the related place description near Gibeah is uncertain.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.36",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [
@@ -49,8 +154,16 @@
       "translit": "ʿariya",
       "gloss": "be naked, bare",
       "relation": "possible",
-      "sounds": {"ע": "ʿ"},
-      "evidence": [{"source":"lane","locator":"pp. 2029–2030","note":"عَرِيَ, be or become naked or bare; the Arabic sense parallels stripping bare."}]
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "pp. 2029–2030",
+          "note": "عَرِيَ, be or become naked or bare; the Arabic sense parallels stripping bare."
+        }
+      ]
     }
   ],
   "note": "Drafted for Psalm 37 coverage."

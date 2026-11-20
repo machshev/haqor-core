@@ -2,7 +2,7 @@
   "id": "kanas",
   "root": "כנס",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "gather, collect",
   "summary": "כנס is to gather or collect into one place.",
   "words": [
@@ -30,6 +30,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-k00861"
       ]
     },
     {
@@ -58,5 +61,21 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted from Psalms 32–33 audit."
+  "note": "Drafted from Psalms 32–33 audit.",
+  "cognates": [
+    {
+      "id": "arc-k00861",
+      "lang": "arc",
+      "form": "כְּנַס",
+      "translit": "kənas",
+      "gloss": "collect, gather",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "כְּנַס, K00861, Targum Esther 4:16"
+        }
+      ]
+    }
+  ]
 }

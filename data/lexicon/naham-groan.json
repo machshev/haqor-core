@@ -25,8 +25,82 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-n00272"
       ]
+    },
+    {
+      "lemma": "נָהַם",
+      "bdb": [
+        "n.bo.aa"
+      ],
+      "pos": "verb",
+      "gloss": "roar, groan",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "roar, groan",
+          "senses": [
+            {
+              "gloss": "roar, groan",
+              "definition": "Isaiah compares an army to a lion roaring over its prey. Ezekiel describes people groaning to one another in grief.",
+              "evidence": [
+                {
+                  "ref": "Isa.5.29",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.24.23",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נַהַם",
+      "bdb": [
+        "n.bo.ab"
+      ],
+      "pos": "noun",
+      "gloss": "growl",
+      "senses": [
+        {
+          "gloss": "growl",
+          "definition": "The wrath of a king is compared to the growling of a young lion.",
+          "evidence": [
+            {
+              "ref": "Pro.19.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.20.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
-  "note": "Drafted for Psalm 38 coverage."
+  "note": "Drafted for Psalm 38 coverage.",
+  "cognates": [
+    {
+      "id": "arc-n00272",
+      "lang": "arc",
+      "form": "נְהַם",
+      "translit": "nəham",
+      "gloss": "groan, roar",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נְהַם, N00272, Targum Proverbs 5:11"
+        }
+      ]
+    }
+  ]
 }

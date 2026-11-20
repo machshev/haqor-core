@@ -2,7 +2,7 @@
   "id": "otsar",
   "root": "אצר",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "store, treasury",
   "summary": "אוצר denotes a storehouse or treasury where things are kept.",
   "words": [
@@ -25,6 +25,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-a00826"
       ]
     },
     {
@@ -41,13 +44,47 @@
           "senses": [
             {
               "gloss": "store up",
-              "definition": "To gather and store possessions in a treasury.",
+              "definition": "The treasures stored by Hezekiah’s ancestors will be carried to Babylon. Amos speaks of storing plunder in palaces.",
               "evidence": [
                 {
-                  "ref": "Psa.33.7"
+                  "ref": "2Ki.20.17",
+                  "role": "defining"
                 },
                 {
-                  "ref": "Deu.28.12"
+                  "ref": "Amo.3.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be hoarded",
+          "senses": [
+            {
+              "gloss": "be hoarded",
+              "definition": "The proceeds of Tyre’s trade are to feed and clothe those who serve Yahweh rather than be hoarded.",
+              "evidence": [
+                {
+                  "ref": "Isa.23.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "put in charge of stores",
+          "senses": [
+            {
+              "gloss": "put in charge of stores",
+              "definition": "Nehemiah appoints trustworthy people to oversee the storehouses and distribute supplies.",
+              "evidence": [
+                {
+                  "ref": "Neh.13.13",
+                  "role": "defining"
                 }
               ]
             }
@@ -57,5 +94,21 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted from Psalms 32–33 audit."
+  "note": "Drafted from Psalms 32–33 audit.",
+  "cognates": [
+    {
+      "id": "arc-a00826",
+      "lang": "arc",
+      "form": "אוֹצָרָא",
+      "translit": "ʾōṣārā",
+      "gloss": "storehouse",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "אוֹצָרָא, A00826, Targum Genesis 41:56"
+        }
+      ]
+    }
+  ]
 }

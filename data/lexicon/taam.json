@@ -3,7 +3,7 @@
   "root": "טעמ",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "tags": [
     "taste",
     "judgment"
@@ -20,18 +20,24 @@
       "gender": "m",
       "senses": [
         {
-          "gloss": "taste; discernment",
-          "definition": "Taste, or the discernment by which a person judges.",
+          "gloss": "taste, judgment, behaviour",
+          "definition": "The palate discriminates food. Abigail’s discernment earns David’s blessing. In the superscription David changes his behaviour, as in the account before Achish.",
           "evidence": [
             {
-              "ref": "Psa.34.1",
-              "role": "defining",
-              "note": "David says his praise will continually be in his mouth."
+              "ref": "Job.12.11",
+              "role": "defining"
             },
             {
-              "ref": "Psa.34.9",
-              "role": "defining",
-              "note": "Taste and see that Yahweh is good."
+              "ref": "1Sa.25.33",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.34.1",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.21.14",
+              "role": "defining"
             }
           ]
         }
@@ -62,7 +68,10 @@
           ]
         }
       ],
-      "gloss": "taste"
+      "gloss": "taste",
+      "cognate_ids": [
+        "arc-i00610"
+      ]
     },
     {
       "lemma": "טְעֵם",
@@ -74,11 +83,15 @@
       "gender": "m",
       "senses": [
         {
-          "gloss": "taste",
-          "definition": "Taste or judgment.",
+          "gloss": "judgment, order",
+          "definition": "Daniel addresses the officer with discretion. The decree of the king commands those assembled to worship the image.",
           "evidence": [
             {
-              "ref": "Dan.3.27",
+              "ref": "Dan.2.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.3.10",
               "role": "defining"
             }
           ]
@@ -117,14 +130,18 @@
       "stems": [
         {
           "stem": "pael",
-          "gloss": "taste; decree",
+          "gloss": "feed",
           "senses": [
             {
-              "gloss": "decree",
-              "definition": "To issue a decree or command.",
+              "gloss": "feed",
+              "definition": "The king is made to eat grass like cattle during the period of his humiliation.",
               "evidence": [
                 {
-                  "ref": "Ezr.5.17",
+                  "ref": "Dan.4.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.4.29",
                   "role": "defining"
                 }
               ]
@@ -134,7 +151,22 @@
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-i00610",
+      "lang": "arc",
+      "form": "טְעַם",
+      "translit": "ṭəʿam",
+      "gloss": "taste",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "טְעַם, I00610, Targum 1 Samuel 14:24"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalm 34 coverage."
 }

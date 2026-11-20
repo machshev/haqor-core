@@ -2,7 +2,7 @@
   "id": "yachal",
   "root": "יחל",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "hope, wait",
   "summary": "יחל is to wait with hope and expectation, especially for Yahweh's deliverance.",
   "words": [
@@ -32,6 +32,42 @@
               ]
             }
           ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "wait expectantly",
+          "senses": [
+            {
+              "gloss": "wait expectantly",
+              "definition": "David waits for Yahweh to answer. Samuel tells Saul to wait until he comes.",
+              "evidence": [
+                {
+                  "ref": "Psa.38.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.10.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "wait",
+          "senses": [
+            {
+              "gloss": "wait",
+              "definition": "The lioness waits before taking another cub when she sees her hope has failed.",
+              "evidence": [
+                {
+                  "ref": "Ezk.19.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -50,6 +86,46 @@
           "evidence": [
             {
               "ref": "Psa.39.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָחִיל",
+      "bdb": [
+        "j.bf.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "waiting",
+      "senses": [
+        {
+          "gloss": "waiting",
+          "definition": "Lamentations calls it good to wait quietly for Yahweh’s deliverance. The adjectival or verbal analysis of this unusual form is uncertain.",
+          "evidence": [
+            {
+              "ref": "Lam.3.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַחְלְאֵלִי",
+      "bdb": [
+        "j.bf.ae"
+      ],
+      "pos": "adjective",
+      "gloss": "Jahleelite",
+      "senses": [
+        {
+          "gloss": "Jahleelite",
+          "definition": "The census names the descendants of Jahleel as a clan of Zebulun.",
+          "evidence": [
+            {
+              "ref": "Num.26.26",
               "role": "defining"
             }
           ]
