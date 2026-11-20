@@ -3,14 +3,15 @@
   "root": "מחח",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "fatling, marrow",
-  "summary": "The root entry keeps the related spellings מֵחַ and מֹחַ together. מֵחַ is a fattened animal used in offerings, while מֹחַ is marrow inside bones. מַחְמָאוֹת belongs to חמאה and is excluded.",
+  "summary": "The fattened animals in the psalm are brought as burnt offerings. Job locates marrow inside the bones, and Isaiah pictures a feast of rich, marrow-filled food.",
   "words": [
     {
       "lemma": "מֵחַ",
       "bdb": [
-        "m.bn.ab"
+        "m.bn.ab",
+        "m.bu.al"
       ],
       "pos": "noun",
       "gender": "m",
@@ -43,27 +44,6 @@
           "evidence": [
             {
               "ref": "Job.21.24",
-              "role": "defining"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "lemma": "מֵיחִים",
-      "bdb": [
-        "m.bu.al"
-      ],
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "fatlings",
-      "senses": [
-        {
-          "gloss": "fatlings",
-          "definition": "The plural names fattened animals, following מֵחַ.",
-          "evidence": [
-            {
-              "ref": "Psa.66.15",
               "role": "defining"
             }
           ]

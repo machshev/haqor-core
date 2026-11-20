@@ -3,7 +3,7 @@
   "root": "אתה",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "come, bring, entrance",
   "summary": "אתה means to come or arrive, and in a causative stem to bring. Biblical Aramaic uses the same root for coming and bringing. The noun אִיתוֹן names an entrance or entryway.",
   "words": [
@@ -35,7 +35,7 @@
                 }
               ],
               "cognate_ids": [
-                "syc-ata"
+                "ar-come"
               ]
             }
           ]
@@ -57,7 +57,7 @@
                 }
               ],
               "cognate_ids": [
-                "syc-ata"
+                "ar-come"
               ]
             }
           ]
@@ -88,7 +88,7 @@
                 }
               ],
               "cognate_ids": [
-                "syc-ata"
+                "ar-come"
               ]
             }
           ]
@@ -110,8 +110,7 @@
                 }
               ],
               "cognate_ids": [
-                "syc-ata",
-                "syc-matta"
+                "ar-come"
               ]
             }
           ]
@@ -130,11 +129,14 @@
                 }
               ],
               "cognate_ids": [
-                "syc-ata"
+                "ar-come"
               ]
             }
           ]
         }
+      ],
+      "bdb": [
+        "xa.bj.aa"
       ]
     },
     {
@@ -159,11 +161,11 @@
       ]
     },
     {
-      "lemma": "אֲתָה",
+      "lemma": "אֱתָא",
       "lang": "syc",
-      "root": "אתה",
+      "root": "אתא",
       "cognate_ids": [
-        "syc-ata"
+        "ar-come"
       ],
       "pos": "verb",
       "gloss": "come, arrive",
@@ -186,16 +188,30 @@
               ]
             }
           ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "bring",
+          "senses": [
+            {
+              "gloss": "bring",
+              "definition": "Jesus asks the disciples to bring the loaves and fish to him.",
+              "evidence": [
+                {
+                  "ref": "Mat.14.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "lemma": "מַתָּא",
+      "lemma": "מֵאתִיתָא",
       "lang": "syc",
-      "root": "אתה",
-      "cognate_ids": [
-        "syc-matta"
-      ],
+      "root": "אתא",
+      "cognate_ids": [],
       "pos": "noun",
       "gloss": "coming, arrival",
       "senses": [
@@ -213,35 +229,40 @@
           ]
         }
       ]
-    }
-  ],
-  "note": "אֵתָם is a place name and is omitted for separate name handling. אִתַּי is a preposition cross-reference and is omitted. The Aramaic words are Biblical Aramaic, not signs or omens.",
-  "cognates": [
-    {
-      "id": "syc-ata",
-      "lang": "syc",
-      "form": "ܐܬܐ",
-      "translit": "ʾātā",
-      "gloss": "come, bring",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "sedra",
-          "locator": "lexeme 316, ATA (root 234): come; bring"
-        }
-      ]
     },
     {
-      "id": "syc-matta",
+      "lemma": "מֵאתְיָא",
+      "pos": "noun",
+      "gloss": "presence, arrival",
       "lang": "syc",
-      "form": "ܡܬܐ",
-      "translit": "mātā",
-      "gloss": "coming",
+      "root": "אתא",
+      "senses": [
+        {
+          "gloss": "presence, arrival",
+          "definition": "Paul’s critics contrast his weighty letters with his weak bodily presence.",
+          "evidence": [
+            {
+              "ref": "2Co.10.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The Syriac verb and both nouns are words of the Peshitta (SEDRA root 234, lexemes 316–318). The similarly spelled sign and letter are separate lexemes. Etham is an Egyptian place name of uncertain origin.",
+  "cognates": [
+    {
+      "id": "ar-come",
+      "lang": "ar",
+      "form": "أَتَى",
+      "translit": "ʾatā",
+      "gloss": "come, arrive",
       "relation": "cognate",
       "evidence": [
         {
-          "source": "sedra",
-          "locator": "lexeme 318, MAT;TA (root 234): coming"
+          "source": "lane",
+          "locator": "p. 15, n159, أَتَى"
         }
       ]
     }
