@@ -5,6 +5,7 @@ use haqor_core::haqor_lexicon::{self, Entry, NameEntry};
 use rusqlite::{Connection, OpenFlags, OptionalExtension, params};
 use serde_json::{Value, json};
 use sha2::{Digest, Sha256};
+use std::collections::HashSet;
 use std::{fs, path::Path};
 
 use crate::jobs::Job;
@@ -121,13 +122,55 @@ pub fn apply(db: &mut Connection, lexicon: &Path, data: &Path) -> Result<()> {
     writer
         .try_lock()
         .context("another review queue is applying lexicon articles")?;
+    let (applied, stale) = apply_pending_locked(db, lexicon, &verses)?;
+    println!("Applied {applied} reviewed article drafts. Requeued {stale} stale proposals.");
+    Ok(())
+}
+
+/// Publish word-level article proposals as soon as their word result is
+/// accepted. The caller owns the `sources.json` lock for the duration of this
+/// operation. A proposal whose base has become stale is returned to the word
+/// queue so the next worker reads the current article.
+pub fn apply_pending(db: &mut Connection, lexicon: &Path, data: &Path) -> Result<(usize, usize)> {
+    let corpus =
+        Connection::open_with_flags(data.join("haqor.db"), OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    let verses = haqor_lexicon::verses_of(&corpus)?;
+    let writer = fs::File::open(lexicon.join("sources.json"))?;
+    writer
+        .try_lock()
+        .context("another review queue is applying lexicon articles")?;
+    apply_pending_locked(db, lexicon, &verses)
+}
+
+fn apply_pending_locked(
+    db: &mut Connection,
+    lexicon: &Path,
+    verses: &HashSet<i64>,
+) -> Result<(usize, usize)> {
     let mut applied = 0;
     let mut stale = 0;
     loop {
-        let row=db.query_row("SELECT a.source,a.ref,a.pos,a.id,a.name,a.base,a.body FROM article a
-            JOIN job j ON j.source=a.source AND j.ref=a.ref AND j.pos=-1 WHERE j.state='done' AND a.applied=0
-            ORDER BY a.ref,a.source,a.pos LIMIT 1",[],|r|Ok((Job{source:r.get(0)?,reference:r.get(1)?,pos:r.get(2)?},
-            r.get::<_,String>(3)?,r.get::<_,bool>(4)?,r.get::<_,Option<String>>(5)?,r.get::<_,String>(6)?))).optional()?;
+        let row = db
+            .query_row(
+                "SELECT a.source,a.ref,a.pos,a.id,a.name,a.base,a.body FROM article a
+            WHERE a.applied=0
+            ORDER BY a.ref,a.source,a.pos LIMIT 1",
+                [],
+                |r| {
+                    Ok((
+                        Job {
+                            source: r.get(0)?,
+                            reference: r.get(1)?,
+                            pos: r.get(2)?,
+                        },
+                        r.get::<_, String>(3)?,
+                        r.get::<_, bool>(4)?,
+                        r.get::<_, Option<String>>(5)?,
+                        r.get::<_, String>(6)?,
+                    ))
+                },
+            )
+            .optional()?;
         let Some((job, id, name, base, body)) = row else {
             break;
         };
@@ -182,8 +225,7 @@ pub fn apply(db: &mut Connection, lexicon: &Path, data: &Path) -> Result<()> {
         tx.commit()?;
         applied += 1;
     }
-    println!("Applied {applied} reviewed article drafts. Requeued {stale} stale proposals.");
-    Ok(())
+    Ok((applied, stale))
 }
 
 // Reopen only words that actually used a changed canonical article.
