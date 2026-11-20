@@ -10,7 +10,9 @@
       "lemma": "נָשָׁא",
       "pos": "verb",
       "gloss": "deceive; entice",
-      "bdb": ["n.fq.aa"],
+      "bdb": [
+        "n.fq.aa"
+      ],
       "stems": [
         {
           "stem": "hiphil",
@@ -19,12 +21,47 @@
             {
               "gloss": "deceive",
               "definition": "To deceive or entice someone through misleading conduct.",
-              "evidence": [{"ref": "Psa.55.16", "role": "defining"}]
+              "evidence": [
+                {
+                  "ref": "Psa.55.16",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }
       ]
+    },
+    {
+      "lemma": "מַשּׁוּאָה",
+      "bdb": [
+        "n.fq.ac"
+      ],
+      "pos": "noun",
+      "gloss": "ruin, devastation",
+      "senses": [
+        {
+          "gloss": "ruin, devastation",
+          "definition": "The wicked are cast down into ruin and perish in a moment. In the sanctuary the damage done by the enemy can still be seen.",
+          "evidence": [
+            {
+              "ref": "Psa.73.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.73.19",
+              "role": "example"
+            },
+            {
+              "ref": "Psa.74.3",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "summary": "The psalms support ruin or devastation. The relationship to the verb for deception is uncertain."
     }
   ],
-  "note": "Drafted for Psalm 55 coverage. Kept distinct from נשׂא, the lift/bear root."
+  "note": "Drafted for Psalm 55 coverage. Kept distinct from נשׂא, the lift/bear root. The plural מַשּׁוּאוֹת in these psalms approaches מְשׁוֹאָה in shav. The form and the different sets of occurrences are retained for comparison."
 }

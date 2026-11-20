@@ -1,0 +1,93 @@
+{
+  "id": "matsah-drain",
+  "root": "מצה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "drain, wring out",
+  "summary": "Gideon wrings a bowlful of water from a fleece. Draining a cup down to its sediment gives the psalms and prophets an image of drinking judgment in full.",
+  "words": [
+    {
+      "lemma": "מָצָה",
+      "bdb": [
+        "m.dc.aa"
+      ],
+      "pos": "verb",
+      "gloss": "drain, be drained",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "drain out",
+          "senses": [
+            {
+              "gloss": "drain out",
+              "definition": "Gideon wrings the dew from a fleece. The wicked must drain the dregs of the cup.",
+              "evidence": [
+                {
+                  "ref": "Jdg.6.38",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.75.9",
+                  "role": "example"
+                },
+                {
+                  "ref": "Isa.51.17",
+                  "role": "example"
+                },
+                {
+                  "ref": "Ezk.23.34",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be drained out",
+          "senses": [
+            {
+              "gloss": "be drained out",
+              "definition": "The bird’s blood is drained against the altar. The psalm uses the passive form of water.",
+              "evidence": [
+                {
+                  "ref": "Lev.1.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.5.9",
+                  "role": "example"
+                },
+                {
+                  "ref": "Psa.73.10",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-wring"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-wring",
+      "lang": "arc",
+      "form": "מְצִי",
+      "translit": "məṣî",
+      "gloss": "wring out, suck",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְצִי II, Zebahim 65b"
+        }
+      ]
+    }
+  ],
+  "note": "The bread word belongs to matsah (מצצ), and the word for strife to natsah (נצה). The precise image of the waters in Psa 73:10 is disputed."
+}

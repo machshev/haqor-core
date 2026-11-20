@@ -1,0 +1,321 @@
+{
+  "id": "chalam",
+  "root": "חלמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "dream, recover strength",
+  "summary": "Joseph dreams of sheaves and stars, and describes what he saw to his family. Asaph compares the apparent substance of the wicked to a dream after waking. The verb also describes animals growing strong.",
+  "words": [
+    {
+      "lemma": "חָלַם",
+      "bdb": [
+        "h.cv.aa"
+      ],
+      "pos": "verb",
+      "gloss": "dream, grow strong",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "dream",
+          "senses": [
+            {
+              "gloss": "dream",
+              "definition": "Joseph tells the dream he saw in sleep and his brothers understand its claim.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.37.9",
+                  "role": "example"
+                },
+                {
+                  "ref": "Gen.41.1",
+                  "role": "example"
+                }
+              ],
+              "cognate_ids": [
+                "ar-dream",
+                "arc-dream"
+              ]
+            },
+            {
+              "gloss": "grow strong",
+              "definition": "The young of the wild animals grow strong before they leave.",
+              "evidence": [
+                {
+                  "ref": "Job.39.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "restore to health, cause to dream",
+          "senses": [
+            {
+              "gloss": "restore to health, cause to dream",
+              "definition": "Hezekiah asks for recovery and life. Jeremiah warns of dreams the hearers cause to be dreamed.",
+              "evidence": [
+                {
+                  "ref": "Isa.38.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.29.8",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲלוֹם",
+      "bdb": [
+        "h.cv.ab"
+      ],
+      "pos": "noun",
+      "gloss": "dream",
+      "senses": [
+        {
+          "gloss": "dream",
+          "definition": "Pharaoh awakes and discovers that the scene with the cattle was a dream. Asaph compares the fate of the wicked to an image that vanishes on waking.",
+          "evidence": [
+            {
+              "ref": "Gen.41.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.73.20",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.29.8",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-dream",
+        "arc-dream"
+      ]
+    },
+    {
+      "lemma": "חֵלֶם",
+      "bdb": [
+        "xh.ai.ac"
+      ],
+      "pos": "noun",
+      "gloss": "dream",
+      "senses": [
+        {
+          "gloss": "dream",
+          "definition": "Nebuchadnezzar asks to know the dream as well as its interpretation.",
+          "evidence": [
+            {
+              "ref": "Dan.2.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.2.9",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc",
+      "cognate_ids": [
+        "ar-dream",
+        "arc-dream"
+      ]
+    },
+    {
+      "lemma": "חַלָּמוּת",
+      "bdb": [
+        "h.cv.ac"
+      ],
+      "pos": "noun",
+      "gloss": "an insipid food or substance",
+      "senses": [
+        {
+          "gloss": "an insipid food or substance",
+          "definition": "Job asks whether its liquid has any taste, beside the question of eating bland food without salt. The identity of the food is uncertain.",
+          "evidence": [
+            {
+              "ref": "Job.6.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "חֲלַם",
+      "pos": "verb",
+      "gloss": "dream",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "dream",
+          "senses": [
+            {
+              "gloss": "dream",
+              "definition": "Peter quotes Joel’s promise that old men will dream dreams.",
+              "evidence": [
+                {
+                  "ref": "Act.2.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-dream"
+      ]
+    },
+    {
+      "lemma": "חֶלְמָא",
+      "pos": "noun",
+      "gloss": "dream",
+      "senses": [
+        {
+          "gloss": "dream",
+          "definition": "An angel speaks to Joseph in a dream as he considers what to do about Mary.",
+          "evidence": [
+            {
+              "ref": "Mat.1.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-dream"
+      ]
+    },
+    {
+      "lemma": "חֲלִימָא",
+      "pos": "adjective",
+      "gloss": "healthy, well",
+      "senses": [
+        {
+          "gloss": "healthy, well",
+          "definition": "Jesus contrasts healthy people with those who need a physician.",
+          "evidence": [
+            {
+              "ref": "Mat.9.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "חֲלִימוּתָא",
+      "pos": "noun",
+      "gloss": "soundness, health",
+      "senses": [
+        {
+          "gloss": "soundness, health",
+          "definition": "Peter points to the complete health of the man who had been lame.",
+          "evidence": [
+            {
+              "ref": "Act.3.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "חֲלַם",
+      "pos": "verb",
+      "gloss": "be healed, make well",
+      "stems": [
+        {
+          "stem": "ethpeel",
+          "gloss": "be healed",
+          "senses": [
+            {
+              "gloss": "be healed",
+              "definition": "The crowd sees the injured restored to health.",
+              "evidence": [
+                {
+                  "ref": "Mat.15.31",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "make well",
+          "senses": [
+            {
+              "gloss": "make well",
+              "definition": "Jesus recalls making a whole man well on the sabbath.",
+              "evidence": [
+                {
+                  "ref": "Jhn.7.23",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-dream",
+      "lang": "ar",
+      "form": "حُلْمٌ",
+      "translit": "ḥulm",
+      "gloss": "dream, vision in sleep",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 632, art. حلم, n8933"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "arc-dream",
+      "lang": "arc",
+      "form": "חֶלְמָא",
+      "translit": "ḥelmā",
+      "gloss": "dream",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֶלְמָא, Targum Genesis 37:6"
+        }
+      ]
+    }
+  ],
+  "note": "The database gives both verb headings the same surfaces. The Hebrew uses of dreaming and health are distinguishable. The food in Job is grouped by spelling and may have another origin."
+}
