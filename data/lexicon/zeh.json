@@ -73,7 +73,7 @@
       "evidence": [
         {
           "locator": "§ 51.3, p. 49, the determinative/relative pronoun",
-          "note": "\"that of/which\"; \"Like the Arabic cognate, the older Ugaritic form is ḏ (1.24:45), but Standard Ugaritic uses forms in d\"; § 57.3: \"can also be used as a conjunction\".",
+          "note": "\"Like the Arabic cognate, the older Ugaritic form is ḏ (1.24:45), but Standard Ugaritic uses forms in d\"; § 57.3: \"can also be used as a conjunction\".",
           "source": "segert-1984"
         },
         {
@@ -209,8 +209,9 @@
         },
         {
           "locator": "Aramaic ד־",
-          "note": "\"who, which, that, what\"; \"From דִּי, ultimately from Proto-Semitic *ḏV- ('this')\".",
-          "source": "wiktionary"
+          "note": "\"the relative pronoun\". \"From דִּי, ultimately from Proto-Semitic *ḏV- ('this')\".",
+          "source": "wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%D7%93%D6%BE"
         }
       ],
       "form": "דִּי",
@@ -423,13 +424,18 @@
             {
               "note": "לֵךְ וְאָמַרְתָּ לָעָם הַזֶּה: \"go and say to this people\"; quoted as τῷ λαῷ τούτῳ (Act 28:26).",
               "ref": "Isa.6.9"
+            },
+            {
+              "note": "In בַּדּוֹר הַזֶּה, “in this generation,” the demonstrative follows דּוֹר and points to Noah's own generation.",
+              "ref": "Gen.7.1",
+              "role": "example"
             }
           ],
           "gloss": "this (with a noun)",
           "id": "this-with-noun"
         },
         {
-          "definition": "Stands alone for someone or something present or just spoken of, often as the subject of a clause with no verb: \"this is …\". The feminine זֹאת stands for a matter, a deed or a word as a whole, where English says \"this\" or \"it\".",
+          "definition": "Stands alone for someone or something present or just spoken of, or points forward to what the speaker is about to specify. It often serves as the subject of a clause with no verb, “this is …”. The feminine זֹאת stands for a matter, a deed or a word as a whole, where English says “this” or “it”.",
           "evidence": [
             {
               "note": "זֶה הַדָּבָר אֲשֶׁר צִוָּה יַהְוֶה: \"this is the thing which Yahweh commanded\".",
@@ -469,6 +475,11 @@
             {
               "note": "אֵין זֶה כִּי אִם־בֵּית אֱלֹהִים וְזֶה שַׁעַר הַשָּׁמָיִם: \"this is none other than the house of God, and this is the gate of heaven\".",
               "ref": "Gen.28.17"
+            },
+            {
+              "note": "וְזֶה אֲשֶׁר תַּעֲשֶׂה אֹתָהּ means ‘and this is how you shall make it.’ The dimensions that follow specify what זֶה points to.",
+              "ref": "Gen.6.15",
+              "role": "defining"
             }
           ],
           "gloss": "this (one), this (thing); this is …",
@@ -1374,8 +1385,7 @@
             },
             {
               "note": "שָׁנְיָן דָּא מִן־דָּא: \"different one from another\".",
-              "ref": "Dan.7.3",
-              "role": "defining"
+              "ref": "Dan.7.3"
             }
           ],
           "gloss": "one … another"
@@ -1410,7 +1420,7 @@
               "ref": "Ezr.4.15"
             },
             {
-              "note": "שֵׁשְׁבַּצַּר דֵּךְ: \"that Sheshbazzar\".",
+              "note": "שֵׁשְׁבַצַּר דֵּךְ: \"that Sheshbazzar\".",
               "ref": "Ezr.5.16"
             },
             {
@@ -1447,7 +1457,7 @@
               "role": "defining"
             },
             {
-              "note": "וְקַרְנָא דִכֵּן וְעַיְנִין לַהּ: \"and that horn which had eyes\".",
+              "note": "וְקַרְנָא דִכֵּן וְעַיְנִין לַהּ: \"that horn which had eyes\".",
               "ref": "Dan.7.20"
             },
             {
@@ -1590,9 +1600,6 @@
               },
               {
                 "ref": "Dan.4.29"
-              },
-              {
-                "ref": "Dan.2.9"
               }
             ],
             "gloss": "until",
@@ -1673,7 +1680,7 @@
               "ref": "Mrk.12.11"
             },
             {
-              "note": "הָדֵא דֵּין דִּיַתִקִא: \"this is the covenant\", Jer 31:33's זֹאת הַבְּרִית.",
+              "note": "הָדֵא דִּיַתִקִא: \"this is the covenant\", Jer 31:33's זֹאת הַבְּרִית.",
               "ref": "Heb.8.10",
               "role": "defining"
             },

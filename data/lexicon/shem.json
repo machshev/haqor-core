@@ -59,7 +59,7 @@
   "note": "Arabic thamma distinguishes the historical initial consonant of there from that of name. The proper names have different degrees of transparency. Hannah herself explains Samuel’s name by her asking Yahweh for him.",
   "root": "שמ",
   "status": "draft",
-  "summary": "A name identifies someone and can preserve their memory. In the Psalms, loving or praising Yahweh’s name expresses devotion to Yahweh himself. The consonants also write a place adverb distinguished by its vowel and its cognates.",
+  "summary": "A name identifies a person, animal, or place and can preserve a person’s memory. In the Psalms, loving or praising Yahweh’s name expresses devotion to Yahweh himself. The consonants also write a place adverb distinguished by its vowel and its cognates.",
   "tags": [
     "names",
     "worship",
@@ -82,8 +82,13 @@
             "phn-shm",
             "akk-shumu"
           ],
-          "definition": "Names distinguish the animals Adam names. When Moses asks what to tell Israel, Yahweh gives a name to be remembered through the generations.",
+          "definition": "A name identifies a person, animal, or place. Gihon identifies the second river, Adam gives names to the animals, and Yahweh gives Moses a name for Israel to remember through the generations.",
           "evidence": [
+            {
+              "note": "גִּיחוֹן supplies the name in שֵׁם הַנָּהָר הַשֵּׁנִי, ‘the name of the second river’.",
+              "ref": "Gen.2.13",
+              "role": "defining"
+            },
             {
               "ref": "Gen.2.19",
               "role": "defining",
@@ -92,9 +97,13 @@
             {
               "ref": "Exo.3.13",
               "to": "Exo.3.15"
+            },
+            {
+              "ref": "Gen.2.14",
+              "role": "defining"
             }
           ],
-          "gloss": "name by which someone is known"
+          "gloss": "identifying name"
         },
         {
           "cognate_ids": [
@@ -153,7 +162,7 @@
       "pos": "adverb",
       "senses": [
         {
-          "definition": "Yahweh plants a garden and places the man there. Abram builds an altar there and calls upon the name of Yahweh.",
+          "definition": "The adverb points to a place identified in context, as when Yahweh plants a garden and places the man there. With מִן it means ‘from there’.",
           "evidence": [
             {
               "ref": "Gen.2.8",
@@ -166,6 +175,11 @@
             },
             {
               "ref": "Gen.12.8"
+            },
+            {
+              "note": "In אֲשֶׁר לֻקַּח מִשָּׁם, שָׁם points back to the ground and מִן identifies it as the place from which the man was taken.",
+              "ref": "Gen.3.23",
+              "role": "defining"
             }
           ],
           "gloss": "there, to that place"
@@ -210,11 +224,11 @@
           "definition": "Daniel blesses God’s name. The prophets address the Jews in the name of the God of Israel.",
           "evidence": [
             {
-              "ref": "Dan.2.20",
-              "role": "defining"
+              "ref": "Ezr.5.1"
             },
             {
-              "ref": "Ezr.5.1"
+              "ref": "Dan.2.20",
+              "role": "defining"
             }
           ],
           "gloss": "name invoked or blessed"
@@ -324,8 +338,7 @@
           "definition": "The census names the clan descended from Shemida among the descendants of Manasseh.",
           "evidence": [
             {
-              "ref": "Num.26.32",
-              "role": "defining"
+              "ref": "Num.26.32"
             }
           ],
           "gloss": "Shemidaite"
