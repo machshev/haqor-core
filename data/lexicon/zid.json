@@ -1,0 +1,155 @@
+{
+  "id": "zid",
+  "root": "זיד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "pride",
+    "food"
+  ],
+  "gloss": "act presumptuously, boil",
+  "summary": "The law distinguishes deliberate defiance from error. The same consonants occur in a kitchen setting when Jacob cooks a stew.",
+  "words": [
+    {
+      "lemma": "זֵד",
+      "bdb": [
+        "g.be.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "insolent, presumptuous",
+      "senses": [
+        {
+          "gloss": "insolent, presumptuous",
+          "definition": "The psalmist asks to be restrained from the presumptuous lest they rule over him. Isaiah speaks of bringing arrogant people low.",
+          "evidence": [
+            {
+              "ref": "Psa.19.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.13.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זִיד",
+      "bdb": [
+        "g.be.aa"
+      ],
+      "pos": "verb",
+      "gloss": "act arrogantly, cook",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "act arrogantly",
+          "senses": [
+            {
+              "gloss": "act arrogantly",
+              "definition": "Jethro recalls how the Egyptians acted against Israel.",
+              "evidence": [
+                {
+                  "ref": "Exo.18.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "act deliberately, cook",
+          "senses": [
+            {
+              "gloss": "act deliberately, cook",
+              "definition": "The law describes a man acting deliberately against his neighbour. In the account of Jacob and Esau the verb describes cooking a stew.",
+              "evidence": [
+                {
+                  "ref": "Exo.21.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.25.29"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זָדוֹן",
+      "bdb": [
+        "g.be.ac"
+      ],
+      "pos": "noun",
+      "gloss": "presumption",
+      "senses": [
+        {
+          "gloss": "presumption",
+          "definition": "Refusal to heed the priest or judge constitutes an act of presumption.",
+          "evidence": [
+            {
+              "ref": "Deu.17.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.11.2"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "זֵידוֹן",
+      "bdb": [
+        "g.be.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "raging, turbulent",
+      "senses": [
+        {
+          "gloss": "raging, turbulent",
+          "definition": "The psalm imagines raging waters sweeping over the people.",
+          "evidence": [
+            {
+              "ref": "Psa.124.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָזִיד",
+      "bdb": [
+        "g.be.ae"
+      ],
+      "pos": "noun",
+      "gloss": "stew",
+      "senses": [
+        {
+          "gloss": "stew",
+          "definition": "Esau asks for the red food Jacob has cooked. Elisha’s disciples also prepare stew in a pot.",
+          "evidence": [
+            {
+              "ref": "Gen.25.29",
+              "to": "Gen.25.34",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.4.38"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The source of the connection between cooking and presumption is uncertain. Psalm 19 uses a masculine plural which can refer to insolent people or, in context, presumptuous acts."
+}
