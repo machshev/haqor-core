@@ -1,1 +1,54 @@
-{"id":"nun","root":"נונ","status":"draft","created":"2026-11-20","updated":"2026-11-20","gloss":"continue","summary":"נונ describes continuing or enduring.","words":[{"lemma":"נוּן","pos":"verb","gloss":"continue","bdb":["n.cb.aa"],"stems":[{"stem":"hiphil","gloss":"continue","senses":[{"gloss":"continue","definition":"Continue or endure through generations.","evidence":[{"ref":"Psa.72.17","role":"defining"}]}]}]}],"note":"The form in Psalm 72.17 is read יִנּוֹן and has a disputed analysis. This draft follows the runtime root assignment."}
+{
+  "id": "nun",
+  "root": "נונ",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "continue",
+  "summary": "נונ describes continuing or enduring.",
+  "words": [
+    {
+      "lemma": "נוּן",
+      "pos": "verb",
+      "gloss": "continue",
+      "bdb": [
+        "n.cb.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "continue",
+          "senses": [
+            {
+              "gloss": "continue",
+              "definition": "Continue or endure through generations.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be continued",
+          "senses": [
+            {
+              "gloss": "be continued",
+              "definition": "Endure through generations.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The form in Psalm 72.17 is read יִנּוֹן and has a disputed analysis. This draft follows the runtime root assignment."
+}

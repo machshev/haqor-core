@@ -3,8 +3,11 @@
   "root": "גזז",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
-  "tags": ["work", "animals"],
+  "updated": "2026-11-19",
+  "tags": [
+    "work",
+    "animals"
+  ],
   "gloss": "shear; fleece",
   "summary": "גזז describes cutting wool or hair from an animal or person. Its nouns name the act of shearing and the fleece produced.",
   "words": [
@@ -12,17 +15,44 @@
       "lemma": "גָּזַז",
       "pos": "verb",
       "gloss": "shear",
-      "bdb": ["c.bk.aa"],
+      "bdb": [
+        "c.bk.aa"
+      ],
       "stems": [
         {
           "stem": "qal",
           "gloss": "shear",
-          "senses": [{"gloss": "shear", "definition": "Cut wool or hair from a sheep or person.", "evidence": [{"ref": "Gen.31.19", "role": "defining"}, {"ref": "Isa.53.7"}]}]
+          "senses": [
+            {
+              "gloss": "shear",
+              "definition": "Cut wool or hair from a sheep or person.",
+              "evidence": [
+                {
+                  "ref": "Gen.31.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.53.7"
+                }
+              ]
+            }
+          ]
         },
         {
           "stem": "niphal",
           "gloss": "be shorn",
-          "senses": [{"gloss": "be shorn", "definition": "Be cut or shorn.", "evidence": [{"ref": "Job.1.20", "role": "defining"}]}]
+          "senses": [
+            {
+              "gloss": "be shorn",
+              "definition": "Be cut or shorn.",
+              "evidence": [
+                {
+                  "ref": "Job.1.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -31,17 +61,63 @@
       "pos": "noun",
       "gender": "f",
       "gloss": "fleece",
-      "bdb": ["c.bk.ac"],
-      "senses": [{"gloss": "fleece", "definition": "Wool shorn from a sheep.", "evidence": [{"ref": "Jdg.6.37", "role": "defining"}]}]
+      "bdb": [
+        "c.bk.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "fleece",
+          "definition": "Wool shorn from a sheep.",
+          "evidence": [
+            {
+              "ref": "Jdg.6.37",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     },
     {
       "lemma": "גֵּז",
       "pos": "noun",
       "gender": "m",
       "gloss": "shearing",
-      "bdb": ["c.bk.ab"],
-      "senses": [{"gloss": "shearing", "definition": "The shearing or mowing of wool or vegetation.", "evidence": [{"ref": "Psa.72.6", "role": "defining"}, {"ref": "2Ki.10.1"}]}]
+      "bdb": [
+        "c.bk.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "shearing",
+          "definition": "Mown grass or the fleece of sheep after shearing.",
+          "evidence": [
+            {
+              "ref": "Psa.72.6",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.10.1"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "note": "גָּזֵז is a personal name in the source word list and needs a separate name entry after TIPNR verification. The zero-token spelling variants are retained by the runtime under the same root."
+  "note": "גָּזֵז is a personal name in the source word list and needs a separate name entry after TIPNR verification. The zero-token spelling variants are retained by the runtime under the same root.",
+  "cognates": [
+    {
+      "id": "ar-jazz",
+      "lang": "ar",
+      "form": "جَزَّ",
+      "translit": "jazza",
+      "gloss": "cut, shear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "root جزز",
+          "note": "Arabic jazza means to cut or shear."
+        }
+      ]
+    }
+  ]
 }

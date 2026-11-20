@@ -1,1 +1,74 @@
-{"id":"parach","root":"פרח","status":"draft","created":"2026-11-20","updated":"2026-11-20","gloss":"blossom","summary":"פרח describes flowering and blossoming.","words":[{"lemma":"פָּרַח","pos":"verb","gloss":"blossom","bdb":["q.cx.aa"],"stems":[{"stem":"qal","gloss":"blossom","senses":[{"gloss":"blossom","definition":"Put forth flowers and flourish.","evidence":[{"ref":"Psa.72.7","role":"defining"}]}]}]}]}
+{
+  "id": "parach",
+  "root": "פרח",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "blossom",
+  "summary": "פרח describes flowering and blossoming.",
+  "words": [
+    {
+      "lemma": "פָּרַח",
+      "pos": "verb",
+      "gloss": "blossom",
+      "bdb": [
+        "q.cx.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "blossom",
+          "senses": [
+            {
+              "gloss": "blossom",
+              "definition": "Put forth flowers and flourish.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פֶּרַח",
+      "pos": "noun",
+      "gloss": "flower",
+      "bdb": [
+        "q.cx.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "flower",
+          "definition": "A flower or blossom.",
+          "evidence": [
+            {
+              "ref": "Isa.18.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-farh",
+      "lang": "ar",
+      "form": "فَرَحَ",
+      "translit": "faraḥa",
+      "gloss": "flourish",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "root فرح",
+          "note": "Arabic root describing flourishing."
+        }
+      ]
+    }
+  ]
+}
