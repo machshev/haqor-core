@@ -301,20 +301,25 @@
     {
       "analysis": {
         "entry": {
-          "existing": "2lh",
-          "sense": "to-a-person-speaking",
+          "draft": {
+            "article_id": "2lh",
+            "base": "cad803eb7db2b131b61fb3b93a576d63e0cc55ff679e4a05bef3c89da4d37113",
+            "change": "Add Gen 6:21 as an example under the existing personal-goal sense of אֶל in elah.",
+            "definition": "אֶל marks the person to whom something is brought or gathered.",
+            "evidence": "In Gen 6:21 the suffix of אֵלֶיךָ refers to Noah, who is told to gather the food to himself."
+          },
           "word": 0
         },
-        "evidence": "In וַיְבִאֶהָ אֶל הָאָדָם, “he brought her to the man,” אֶל introduces the person to whom she was brought.",
+        "evidence": "In וַיְבִאֶהָ אֶל הָאָדָם, “he brought her to the man,” אֶל introduces הָאָדָם, the person to whom she was brought.",
         "gloss": "to",
         "language": "he",
         "lemma": "אֶל",
         "morph": "HR",
-        "morphology": "Preposition without prefix or suffix.",
+        "morphology": "Hebrew preposition without a prefix or suffix.",
         "qualifier": "",
         "root": "אלה",
         "segments": "אֶל",
-        "sense": "to (a person: speaking, sending, bringing)"
+        "sense": "Marks the person to whom something is brought or gathered."
       },
       "position": 11,
       "surface": "אֶל"
