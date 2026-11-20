@@ -1,6 +1,68 @@
 {
   "book": 1,
   "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Yahweh is the personal name of the God who made the earth and the heavens, the creator already identified in Genesis 1:1.",
+        "key": "LORD@Gen.1.1",
+        "position": 7
+      },
+      {
+        "evidence": "God stands in apposition to Yahweh. Both words identify the same creator.",
+        "key": "LORD@Gen.1.1",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "these",
+        "position": 0
+      },
+      {
+        "gloss": "the generations of",
+        "position": 1
+      },
+      {
+        "gloss": "the heavens",
+        "position": 2
+      },
+      {
+        "gloss": "and the earth",
+        "position": 3
+      },
+      {
+        "gloss": "when they were created",
+        "position": 4
+      },
+      {
+        "gloss": "in the day when",
+        "position": 5
+      },
+      {
+        "gloss": "made",
+        "position": 6
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 7
+      },
+      {
+        "gloss": "God",
+        "position": 8
+      },
+      {
+        "gloss": "the earth",
+        "position": 9
+      },
+      {
+        "gloss": "and the heavens",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[These|0] [{are}|0] [the generations of|1] [the heavens|2] [and the earth|3] [when they were created|4], [in the day|5] [{when}|5] [Yahweh|7] [God|8] [made|6] [the earth|9] [and the heavens|10],"
+  },
   "source": "ot",
   "verse": 4,
   "words": [
