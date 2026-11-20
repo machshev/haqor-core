@@ -1,0 +1,283 @@
+{
+  "id": "charar",
+  "root": "חרר",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "burn, grow parched",
+  "summary": "Wood chars in the fire and a throat grows dry with crying. Other words with these consonants designate a noble or a hole. Each has independent parallels in other Semitic languages.",
+  "words": [
+    {
+      "lemma": "חָרַר",
+      "pos": "verb",
+      "gloss": "burn, grow parched",
+      "cognate_ids": [
+        "ar-hot"
+      ],
+      "bdb": [
+        "h.gg.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "burn",
+          "senses": [
+            {
+              "gloss": "burn",
+              "definition": "The bronze pot grows hot on the coals. Job compares the heat in his bones to burning.",
+              "evidence": [
+                {
+                  "ref": "Ezk.24.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.30.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be scorched, become parched",
+          "senses": [
+            {
+              "gloss": "be scorched, become parched",
+              "definition": "Fire chars the wood. The singer’s throat is parched from calling out. Anger burns in the speaker’s brothers.",
+              "evidence": [
+                {
+                  "ref": "Ezk.15.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.69.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Sng.1.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pilpel",
+          "gloss": "kindle",
+          "senses": [
+            {
+              "gloss": "kindle",
+              "definition": "A quarrelsome man kindles a dispute as fuel feeds a fire.",
+              "evidence": [
+                {
+                  "ref": "Pro.26.21",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָרֵר",
+      "pos": "noun",
+      "gloss": "parched place",
+      "cognate_ids": [
+        "ar-hot"
+      ],
+      "bdb": [
+        "h.gg.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "parched place",
+          "definition": "The shrub grows in the salt wilderness where there is no water or settlement.",
+          "evidence": [
+            {
+              "ref": "Jer.17.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַרְחֻר",
+      "pos": "noun",
+      "gloss": "burning heat",
+      "cognate_ids": [
+        "ar-hot"
+      ],
+      "bdb": [
+        "h.gg.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "burning heat",
+          "definition": "The curse puts this burning alongside fever and inflammation. The verse leaves the precise ailment open.",
+          "evidence": [
+            {
+              "ref": "Deu.28.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹר",
+      "pos": "noun",
+      "gloss": "noble",
+      "cognate_ids": [
+        "ar-free"
+      ],
+      "bdb": [
+        "h.gh.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "noble",
+          "definition": "Ahab’s letter is sent to the elders and nobles. In Nehemiah nobles correspond with Tobiah.",
+          "evidence": [
+            {
+              "ref": "1Ki.21.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.6.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹר",
+      "pos": "noun",
+      "gloss": "hole, opening",
+      "cognate_ids": [
+        "arc-hole"
+      ],
+      "bdb": [
+        "h.gi.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "hole, opening",
+          "definition": "A hole bored in the lid admits money to the chest. Ezekiel sees a hole in the wall.",
+          "evidence": [
+            {
+              "ref": "2Ki.12.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.8.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֻר",
+      "pos": "noun",
+      "gloss": "den, hole",
+      "cognate_ids": [
+        "arc-hole"
+      ],
+      "bdb": [
+        "h.gi.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "den, hole",
+          "definition": "The child plays beside the snake’s hole, in parallel with a viper’s den.",
+          "evidence": [
+            {
+              "ref": "Isa.11.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹרִי",
+      "pos": "adjective",
+      "gloss": "Horite",
+      "bdb": [
+        "h.gi.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "Horite",
+          "definition": "The designation identifies Seir’s people, the former inhabitants of the land later held by Esau. Its derivation from a word for cave is uncertain.",
+          "evidence": [
+            {
+              "ref": "Gen.36.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.2.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hot",
+      "lang": "ar",
+      "form": "حَرَّ",
+      "translit": "ḥarra",
+      "gloss": "be hot",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 538, n7498"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "ar-free",
+      "lang": "ar",
+      "form": "حُرّ",
+      "translit": "ḥurr",
+      "gloss": "freeborn",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 538, n7505"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "arc-hole",
+      "lang": "arc",
+      "form": "חוֹרָא",
+      "translit": "ḥōrā",
+      "gloss": "hole",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "H00450, Targum 2 Kings 12:10"
+        }
+      ]
+    }
+  ],
+  "note": "The two Hebrew hole nouns differ in vocalization. Horite and the personal name Hori share one index key. That key is retained with the ethnic adjective. The origin of both names is open.",
+  "created": "2026-11-19",
+  "doctrine": []
+}

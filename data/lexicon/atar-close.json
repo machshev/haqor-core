@@ -1,0 +1,86 @@
+{
+  "id": "atar-close",
+  "root": "אטר",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "close, restrict",
+  "summary": "The pit is pictured as a mouth that can close over a man. In Judges the adjective describes men who use their left hand.",
+  "words": [
+    {
+      "lemma": "אָטַר",
+      "pos": "verb",
+      "gloss": "close",
+      "cognate_ids": [
+        "ar-bend"
+      ],
+      "bdb": [
+        "a.ct.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "close over",
+          "senses": [
+            {
+              "gloss": "close over",
+              "definition": "The singer asks to escape the deep before the mouth of the pit closes over him.",
+              "evidence": [
+                {
+                  "ref": "Psa.69.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אִטֵּר",
+      "pos": "adjective",
+      "gloss": "restricted in the right hand",
+      "bdb": [
+        "a.ct.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "left-handed",
+          "definition": "Ehud draws his sword with his left hand. The same expression describes expert slingers among the Benjaminites.",
+          "evidence": [
+            {
+              "ref": "Jdg.3.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.3.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.20.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bend",
+      "lang": "ar",
+      "form": "أَطَرَ",
+      "translit": "ʾaṭara",
+      "gloss": "bend, curve",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 66, n901, a bow or stick"
+        }
+      ]
+    }
+  ],
+  "note": "The Arabic parallel suggests a bending or enclosing movement. Judges describes how the men use their hands without explaining the cause.",
+  "created": "2026-11-19",
+  "doctrine": []
+}

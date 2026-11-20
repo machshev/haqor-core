@@ -3,28 +3,89 @@
   "root": "זור",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
-  "gloss": "strange",
-  "summary": "The root is associated with strange.",
+  "updated": "2026-11-19",
+  "gloss": "be a stranger, turn aside, press",
+  "summary": "A stranger can be a foreigner or someone outside a particular household or priestly office. Psalm 69 describes estrangement within a family. Other words of this spelling describe squeezing out liquid, a rim and a sense of revulsion.",
   "words": [
     {
       "lemma": "זוּר",
+      "pos": "verb",
+      "gloss": "be a stranger, become estranged",
+      "cognate_ids": [
+        "arc-turn"
+      ],
       "bdb": [
         "g.ay.aa"
       ],
-      "pos": "verb",
-      "gloss": "strange",
       "stems": [
         {
           "stem": "qal",
-          "gloss": "strange",
+          "gloss": "turn aside, be estranged",
           "senses": [
             {
-              "gloss": "strange",
-              "definition": "Scripture uses this word in the sense of strange.",
+              "gloss": "turn aside, be estranged",
+              "definition": "Job’s acquaintances draw away from him. The psalm compares those who speak lies to people who have strayed from birth.",
               "evidence": [
                 {
-                  "ref": "Psa.44.21",
+                  "ref": "Job.19.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.58.4",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "outsider, unauthorized",
+              "definition": "Used substantivally, the participle names an outsider. A person outside Aaron’s line may not offer incense. In the psalm, strangers rise against the singer.",
+              "evidence": [
+                {
+                  "ref": "Num.17.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.29.33",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.54.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "become estranged",
+          "senses": [
+            {
+              "gloss": "become estranged",
+              "definition": "Israel turns away from Yahweh and is estranged from him by idols.",
+              "evidence": [
+                {
+                  "ref": "Isa.1.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.14.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be made a stranger",
+          "senses": [
+            {
+              "gloss": "be made a stranger",
+              "definition": "The singer has become a stranger even to his brothers, an outsider to the sons of his own mother.",
+              "evidence": [
+                {
+                  "ref": "Psa.69.9",
                   "role": "defining"
                 }
               ]
@@ -32,9 +93,189 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "זוּר",
+      "pos": "verb",
+      "gloss": "be offensive",
+      "bdb": [
+        "g.az.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be repulsive",
+          "senses": [
+            {
+              "gloss": "be repulsive",
+              "definition": "Job says his breath has become offensive to his wife. Estrangement is also possible in this setting.",
+              "evidence": [
+                {
+                  "ref": "Job.19.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זוּר",
+      "pos": "verb",
+      "gloss": "press, squeeze",
+      "bdb": [
+        "g.ba.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "squeeze out",
+          "senses": [
+            {
+              "gloss": "squeeze out",
+              "definition": "Gideon squeezes the dew from a fleece. Isaiah lists the pressing of wounds with binding and soothing them.",
+              "evidence": [
+                {
+                  "ref": "Jdg.6.38",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.1.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זֵר",
+      "pos": "noun",
+      "gloss": "rim, border",
+      "cognate_ids": [
+        "arc-rim"
+      ],
+      "bdb": [
+        "g.ba.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "rim, border",
+          "definition": "A gold rim runs around the ark and around the table.",
+          "evidence": [
+            {
+              "ref": "Exo.25.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.25.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָזוֹר",
+      "pos": "noun",
+      "gloss": "wound, sore",
+      "bdb": [
+        "g.ba.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "wound, sore",
+          "definition": "Judah looks abroad for help with a wound, but the king cannot heal it.",
+          "evidence": [
+            {
+              "ref": "Hos.5.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.30.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זָרָא",
+      "pos": "noun",
+      "gloss": "loathing",
+      "bdb": [
+        "g.az.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "loathing",
+          "definition": "The people demand meat and are told they will eat it until they find it revolting.",
+          "evidence": [
+            {
+              "ref": "Num.11.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זַרְזִיר",
+      "pos": "adjective",
+      "gloss": "girt about the loins",
+      "bdb": [
+        "g.ba.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "striding creature",
+          "definition": "The expression describes one of several creatures stately in their walk. The verse leaves the animal’s identity uncertain.",
+          "evidence": [
+            {
+              "ref": "Pro.30.29",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.30.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-turn",
+      "lang": "arc",
+      "form": "זוּר",
+      "translit": "zūr",
+      "gloss": "turn away",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. זוּר, Aramaic, Targum Numbers 16:26"
+        }
+      ]
+    },
+    {
+      "id": "arc-rim",
+      "lang": "arc",
+      "form": "זִירָא",
+      "translit": "zīrā",
+      "gloss": "wreath, rim",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. זִירָא, Onkelos Exodus 25:11"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
-  "note": "Drafted for coverage of Psa.44.21; cognate research remains open."
+  "note": "The catalog assigns the same set of forms to several keys. Psalm 69:9 is the Hophal participle of estrangement. The pressing of wounds in Isaiah 1:6 belongs to the squeezing verb. How the rim, the wound and the striding creature relate historically is uncertain."
 }

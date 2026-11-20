@@ -1,0 +1,89 @@
+{
+  "id": "ramas-creep",
+  "root": "רמשׂ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "move about, creep",
+  "summary": "The verb describes the movement of living creatures on land and in water. The collective noun gathers such creatures together, sometimes alongside livestock and wild beasts.",
+  "words": [
+    {
+      "lemma": "רָמַשׂ",
+      "pos": "verb",
+      "gloss": "move about, creep",
+      "bdb": [
+        "t.dc.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "move about",
+          "senses": [
+            {
+              "gloss": "move about",
+              "definition": "Animals move over the earth, and living things move through the sea. Psalm 69 calls on everything moving in the seas to praise God.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.21",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.1.26",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.69.35",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.104.25",
+                  "role": "defining"
+                }
+              ],
+              "id": "move",
+              "kin": [
+                "moving-creature"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֶמֶשׂ",
+      "pos": "noun",
+      "gloss": "moving creatures",
+      "gender": "m",
+      "bdb": [
+        "t.dc.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "moving creatures",
+          "definition": "The creatures moving along the ground are named alongside livestock and wild animals. The sea also teems with creatures great and small.",
+          "evidence": [
+            {
+              "ref": "Gen.1.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.1.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.104.25",
+              "role": "defining"
+            }
+          ],
+          "id": "moving-creature",
+          "kin": [
+            "move"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "note": "The final consonant is sin. רמס “trample” belongs to ramas. The Arabic touch and Syriac gentleness proposed as parallels do not establish a cognate for animal movement.",
+  "created": "2026-11-19",
+  "doctrine": []
+}
