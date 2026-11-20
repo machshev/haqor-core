@@ -2,25 +2,25 @@
   "cognates": [],
   "created": "2026-11-20",
   "doctrine": [],
-  "gloss": "small, lesser",
+  "gloss": "small, lesser, younger",
   "id": "qaa6on",
   "note": "",
   "root": "קטנ",
   "status": "draft",
-  "summary": "קָטֹן describes something as small in relation to another. Genesis 1:16 uses it to distinguish the lesser of the two great lights.",
+  "summary": "קָטֹן describes something as small in relation to another. Genesis 1:16 uses it to distinguish the lesser of the two great lights. In Genesis 9:24 it identifies Noah’s youngest son.",
   "tags": [
-    "size"
+    "size",
+    "age"
   ],
   "updated": "2026-11-20",
   "words": [
     {
-      "gloss": "small, lesser",
+      "gloss": "small, lesser, younger",
       "greek": [],
       "lemma": "קָטֹן",
       "pos": "adjective",
       "senses": [
         {
-          "id": "small-lesser",
           "definition": "Small in comparison with another of the same kind.",
           "evidence": [
             {
@@ -29,7 +29,20 @@
               "role": "defining"
             }
           ],
-          "gloss": "small, lesser"
+          "gloss": "small, lesser",
+          "id": "small-lesser"
+        },
+        {
+          "definition": "Younger or youngest in relation to others in a family or group.",
+          "evidence": [
+            {
+              "note": "The phrase בְּנוֹ הַקָּטָן singles out Noah’s youngest son by his age among his brothers.",
+              "ref": "Gen.9.24",
+              "role": "defining"
+            }
+          ],
+          "gloss": "younger, youngest",
+          "id": "younger-youngest"
         }
       ],
       "usage": {
