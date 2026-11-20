@@ -4,7 +4,12 @@
   "review": {
     "entities": [
       {
-        "evidence": "Yahweh is the personal name of the God who commanded Noah and then shut him in the ark. Both clauses carry the same source bearer tag, supporting reuse of the previously proposed Yahweh key.",
+        "evidence": "אֱלֹהִים is the subject of the singular verb צִוָּה and identifies the God who commanded Noah. The source tag assigns this mention to LORD@Gen.1.1.",
+        "key": "LORD@Gen.1.1",
+        "position": 9
+      },
+      {
+        "evidence": "יַהְוֶה names the God who shut Noah in the ark. The source tag matches the bearer of אֱלֹהִים in the preceding clause.",
         "key": "LORD@Gen.1.1",
         "position": 11
       }
@@ -63,7 +68,74 @@
         "position": 12
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וְהַבָּאִים"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "זָכָר"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "וּנְקֵבָה"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "מִכָּל"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "בָּשָׂר"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "בָּאוּ"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "כַּאֲשֶׁר"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "צִוָּה"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "אֹתוֹ"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "אֱלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "וַיִּסְגֹּר"
+      },
+      {
+        "evidence": "Yahweh is the personal name of the God who commanded Noah and then shut him in the ark. Both clauses carry the same source bearer tag, supporting reuse of the previously proposed Yahweh key.",
+        "key": "LORD@Gen.1.1",
+        "position": 11,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "בַּעֲדוֹ"
+      }
+    ],
     "translation": "[And those who went in|0], [male|1] [and female|2] [from all|3] [flesh|4], [went in|5] [just as|6] [God|9] [had commanded|7] [him|8]. [Then|10] [Yahweh|11] [shut|10] [him in|12]."
   },
   "source": "ot",
