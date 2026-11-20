@@ -3,7 +3,7 @@
   "root": "יקר",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "tags": [
     "value"
   ],
@@ -29,7 +29,10 @@
           ]
         }
       ],
-      "gloss": "precious"
+      "gloss": "precious",
+      "cognate_ids": [
+        "arc-dear"
+      ]
     },
     {
       "lemma": "יְקָר",
@@ -41,15 +44,30 @@
       "gender": "m",
       "senses": [
         {
-          "gloss": "preciousness",
-          "definition": "Value or honour assigned to something precious.",
+          "gloss": "honour, splendour",
+          "definition": "The king displays his splendour and the decree calls for honour. A human being may live in honour, yet in Psalm 49 even this distinction cannot preserve life.",
           "evidence": [
             {
-              "ref": "Psa.36.8",
+              "ref": "Est.1.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Est.1.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.49.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.49.21",
               "role": "defining"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-dear"
       ]
     },
     {
@@ -78,20 +96,27 @@
         },
         {
           "stem": "hiphil",
-          "gloss": "make precious",
+          "gloss": "make rare",
           "senses": [
             {
-              "gloss": "make precious",
-              "definition": "To make or regard as precious.",
+              "gloss": "make rare",
+              "definition": "People become scarcer than fine gold. Proverbs applies the verb to limiting one’s visits to a neighbour.",
               "evidence": [
                 {
-                  "ref": "Psa.116.15",
+                  "ref": "Isa.13.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.25.17",
                   "role": "defining"
                 }
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-dear"
       ]
     },
     {
@@ -105,14 +130,21 @@
       "senses": [
         {
           "gloss": "honour",
-          "definition": "Honour or esteem.",
+          "definition": "The king promises gifts and honour to whoever explains his dream. Daniel tells him that God has given him power and glory.",
           "evidence": [
             {
-              "ref": "Psa.21.6",
+              "ref": "Dan.2.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.2.37",
               "role": "defining"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-dear"
       ]
     },
     {
@@ -133,10 +165,28 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-dear"
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-dear",
+      "lang": "arc",
+      "form": "יְקַר",
+      "translit": "yəqar",
+      "gloss": "be precious, hold in honour",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "יְקַר J00581, Targum 1 Samuel 26:21 and Isaiah 58:13"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalm 36 coverage."
 }

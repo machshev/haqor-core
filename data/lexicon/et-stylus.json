@@ -1,11 +1,11 @@
 {
   "id": "et-stylus",
-  "root": "עזר",
+  "root": "עט",
   "status": "draft",
-  "created": "2026-11-20",
-  "updated": "2026-11-20",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
   "gloss": "stylus, writing tool",
-  "summary": "עֵט is a writing instrument. It is distinct from the עזר entry's help-root despite the corpus's shared spelling index.",
+  "summary": "A scribe writes with a pen, and an iron stylus cuts a lasting inscription. In the wedding song the speaker compares his fluent tongue to a ready writer’s pen.",
   "words": [
     {
       "lemma": "עֵט",
@@ -23,28 +23,25 @@
             {
               "ref": "Psa.45.2",
               "role": "defining"
+            },
+            {
+              "ref": "Jer.17.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.19.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.8.8",
+              "role": "defining"
             }
           ]
         }
       ]
     }
   ],
-  "cognates": [
-    {
-      "id": "arc-eta",
-      "lang": "arc",
-      "form": "עֵיטָא",
-      "translit": "eṭā",
-      "gloss": "stylus",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "עיטא, stylus"
-        }
-      ]
-    }
-  ],
+  "cognates": [],
   "doctrine": [],
-  "note": "The BDB key p.ca.ad is indexed beside עזר, but the letters ע־ט and the writing sense keep this as a separate homograph."
+  "note": "The writing implement is filed under its own consonants. Jastrow’s Aramaic עֵיטָא means counsel or advice. Its spelling supplies no evidence for the pen."
 }

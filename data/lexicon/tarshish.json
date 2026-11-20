@@ -1,16 +1,15 @@
 {
   "id": "tarshish",
-  "created": "2026-11-20",
+  "created": "2026-11-19",
   "root": "תרשיש",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "Tarshish",
   "summary": "תַּרְשִׁישׁ is a named distant place associated with seafaring ships and maritime trade. Psalm 48 invokes its ships as an image of power broken by Yahweh's east wind.",
   "words": [
     {
       "lemma": "תַּרְשִׁישׁ",
-      "pos": "noun",
-      "gender": "m",
+      "pos": "name",
       "gloss": "Tarshish, a maritime place",
       "bdb": [
         "w.bq.ay"
@@ -34,7 +33,18 @@
               "note": "Tarshish traded silver, iron, tin and lead."
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "lemma": "תַּרְשִׁישׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a precious stone",
+      "bdb": [
+        "w.bq.ax"
+      ],
+      "senses": [
         {
           "gloss": "a precious stone",
           "definition": "The name of a precious stone used in the high priest's breastpiece and in descriptions of splendid ornament.",
@@ -58,14 +68,17 @@
           "gloss": "chrysolite",
           "evidence": [
             {
-              "source": "thayer",
-              "locator": "Ex. 28:20; Ezk. 28:13; Sng. 5:14",
-              "note": "Greek rendering of תַּרְשִׁישׁ as a precious stone."
+              "source": "macula-lxx",
+              "locator": "EXO 28:20, word 3, תַּרְשִׁישׁ rendered χρυσόλιθος"
+            },
+            {
+              "ref": "Rev.21.20",
+              "note": "The seventh foundation stone is called χρυσόλιθος."
             }
           ]
         }
       ]
     }
   ],
-  "note": "The same spelling is borne by people in Gen 10.4, 1Ch 7.10 and Est 1.14, recorded separately in names/tarshish.json."
+  "note": "The port, the name used by three people and the stone share a spelling. The city’s location, the mineral’s identification and a possible connection through trade remain uncertain. The people are recorded in names/tarshish."
 }
