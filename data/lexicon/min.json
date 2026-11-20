@@ -1,9 +1,9 @@
 {
   "id": "min",
-  "created": "2026-11-13",
+  "created": "2026-11-19",
   "root": "מנ",
   "status": "draft",
-  "updated": "2026-11-13",
+  "updated": "2026-11-19",
   "tags": [
     "grammar",
     "separation",
@@ -837,6 +837,52 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "מָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "manna",
+      "bdb": [
+        "m.ck.au"
+      ],
+      "senses": [
+        {
+          "gloss": "manna",
+          "definition": "Yahweh rained down manna for Israel to eat, food from heaven.",
+          "evidence": [
+            {
+              "ref": "Psa.78.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵן",
+      "bdb": [
+        "m.ck.aw"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "strings of a musical instrument",
+      "senses": [
+        {
+          "gloss": "string or cord",
+          "definition": "The final psalm calls for praise with strings and a pipe alongside other instruments. In the wedding song strings may bring joy from the ivory palaces. מִנִּי also has the spelling of a poetic form of “from”, so that reading is less certain.",
+          "evidence": [
+            {
+              "ref": "Psa.150.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.45.9",
+              "note": "The musical reading supplies a subject for “they gladden you”."
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [
@@ -1049,5 +1095,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-13 for Leviticus 23 and Numbers 10 (מִן, and מֵעִם, which is am.json's word p.dj.ab and is entered here only as a phrase). Root investigated, as asked for a function word, and keyed by its own consonants מנ (the database keys the Aramaic xm.ak.aa so); no root is viable. (1) The preposition is West Semitic: Hebrew, Aramaic, Syriac, Phoenician, Ugaritic, Arabic, Sabaean (one dialect), Ge'ez, Tigre; Akkadian has none (ina, ištu instead) and Ugaritic and standard Sabaean use it little (b-, l-; bn). Everywhere it has two consonants and an i-vowel; no language shows a third radical or a verb with its sense. (2) Leads weighed: (a) מָנָה \"portion\" (root מנה, count, assign; Ugaritic mnt \"portion\", Segert p. 192), for \"some of\": the partitive is one sense among several and the separative \"from\" is the commonest and the one shared in every language; the vowel and the missing third radical are against it. (b) A verb מנן \"cut off, separate\": no such verb in scripture; Arabic مَنَّ \"cut off\" rests on Wiktionary (Lane's article lacks it), Ugaritic m-n-n is \"be weakened\" (recorded as ar-manna-cut, possible). (c) The indefinite *man / *mīn \"who, what\" (Aramaic מַן Dan 3:6, Ugaritic mnm \"whatever\"), for a partitive \"something of\": not followed by any source. So no root is shown; the entry says so. BDB keys: m.cl.aa named (1,405 uses, the free-standing and suffixed forms only; the prefixed מִ־/מֵ־, thousands more, are counted under the joined noun). m.co.ab (BDB's hypothetical noun מֵן \"portion\" under מנן) has exactly the same tokens and is left unnamed so they are not counted twice; m.co.aa (the root מנן, no tokens), m.ck.ax and m.cn.ah (cross-references, no tokens) left unclaimed. xm.ak.aa (Aramaic) shares the Hebrew surface מִן, so its count (863) includes Hebrew; scripture's Aramaic uses are about a hundred. m.cn.ag (40 tokens of the spelling מִנִּי, BDB's land Minni, Jer 51:27) left unclaimed as a place (minchah.json leaves it too); the poetic מִנִּי is counted under m.cl.aa. Left out, as other words of the same consonants: מָן \"manna\" and מָן \"what?\" (m.ck.au, m.ck.av; Exo 16:15, 31); מֵן \"string\" (m.ck.aw, Psa 150:4 בְּמִנִּים, perhaps Psa 45:9 מִנִּי; its key also catches all 40 מִנִּי tokens); Aramaic מַן \"who?\" (xm.aj.aa, Dan 3:6; Ezr 5:3), which the database files under מנ but which answers to Hebrew מִי; the place Minnith (m.co.ac). These need their own entries (a homograph number if keyed מנ). Lane's article من (p. 3024) is in the incomplete part of the lexicon; Lane's url not given. Ge'ez rests on Wiktionary only; Dillmann/Leslau, Payne Smith for ܡܢ, CAL and DULAT not checked. Doctrine: \"sufferings-of-christ\" contrasts מִן with תַּחַת; reviewer to check the framing."
+  "note": "Drafted 2026-11-13 for Leviticus 23 and Numbers 10 (מִן, and מֵעִם, which is am.json's word p.dj.ab and is entered here only as a phrase). Root investigated, as asked for a function word, and keyed by its own consonants מנ (the database keys the Aramaic xm.ak.aa so); no root is viable. (1) The preposition is West Semitic: Hebrew, Aramaic, Syriac, Phoenician, Ugaritic, Arabic, Sabaean (one dialect), Ge'ez, Tigre; Akkadian has none (ina, ištu instead) and Ugaritic and standard Sabaean use it little (b-, l-; bn). Everywhere it has two consonants and an i-vowel; no language shows a third radical or a verb with its sense. (2) Leads weighed: (a) מָנָה \"portion\" (root מנה, count, assign; Ugaritic mnt \"portion\", Segert p. 192), for \"some of\": the partitive is one sense among several and the separative \"from\" is the commonest and the one shared in every language; the vowel and the missing third radical are against it. (b) A verb מנן \"cut off, separate\": no such verb in scripture; Arabic مَنَّ \"cut off\" rests on Wiktionary (Lane's article lacks it), Ugaritic m-n-n is \"be weakened\" (recorded as ar-manna-cut, possible). (c) The indefinite *man / *mīn \"who, what\" (Aramaic מַן Dan 3:6, Ugaritic mnm \"whatever\"), for a partitive \"something of\": not followed by any source. So no root is shown; the entry says so. BDB keys: m.cl.aa named (1,405 uses, the free-standing and suffixed forms only; the prefixed מִ־/מֵ־, thousands more, are counted under the joined noun). m.co.ab (BDB's hypothetical noun מֵן \"portion\" under מנן) has exactly the same tokens and is left unnamed so they are not counted twice; m.co.aa (the root מנן, no tokens), m.ck.ax and m.cn.ah (cross-references, no tokens) left unclaimed. xm.ak.aa (Aramaic) shares the Hebrew surface מִן, so its count (863) includes Hebrew; scripture's Aramaic uses are about a hundred. m.cn.ag (40 tokens of the spelling מִנִּי, BDB's land Minni, Jer 51:27) left unclaimed as a place (minchah.json leaves it too); the poetic מִנִּי is counted under m.cl.aa. Left out, as other words of the same consonants: מָן \"manna\" and מָן \"what?\" (m.ck.au, m.ck.av; Exo 16:15, 31); מֵן \"string\" (m.ck.aw, Psa 150:4 בְּמִנִּים, perhaps Psa 45:9 מִנִּי; its key also catches all 40 מִנִּי tokens); Aramaic מַן \"who?\" (xm.aj.aa, Dan 3:6; Ezr 5:3), which the database files under מנ but which answers to Hebrew מִי; the place Minnith (m.co.ac). These need their own entries (a homograph number if keyed מנ). Lane's article من (p. 3024) is in the incomplete part of the lexicon; Lane's url not given. Ge'ez rests on Wiktionary only; Dillmann/Leslau, Payne Smith for ܡܢ, CAL and DULAT not checked. Doctrine: \"sufferings-of-christ\" contrasts מִן with תַּחַת; reviewer to check the framing. The separate noun מֵן for musical strings is now included under this spelling. Psalm 150:4 establishes the musical sense. Its historical relationship to the preposition is uncertain."
 }
