@@ -8,7 +8,7 @@
     "psalms-21-30"
   ],
   "gloss": "set, place",
-  "summary": "The Psalm 22 form is uncertain and the brief has no indexed tokens.",
+  "summary": "To set or place, especially beside fire. Psalm 22 pictures the sufferer being set in the dust of death, while Ezekiel and Isaiah use the root for what Yahweh establishes.",
   "words": [
     {
       "lemma": "שָׁפַת",
@@ -20,15 +20,27 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "set",
+          "gloss": "set, place",
           "senses": [
             {
-              "gloss": "set",
-              "definition": "The form in Psalm 22:16 is read as setting the feet.",
+              "gloss": "set in place",
+              "definition": "The speaker says that he is set in the dust of death.",
               "evidence": [
                 {
                   "ref": "Psa.22.16",
                   "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "set a pot",
+              "definition": "Ezekiel commands the pot to be set on the fire, and Isaiah attributes established works to Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Ezk.24.3"
+                },
+                {
+                  "ref": "Isa.26.12"
                 }
               ]
             }
@@ -39,5 +51,5 @@
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "The source index files this form under a different root; Psalm 22:16 requires later morphological review."
+  "note": "The Psalm 22 form תִּשְׁפְּתֵנִי is a Qal imperfect with object suffix, “you set/place me”. Ezekiel 24:3 uses the same root for setting a cooking pot, and Isaiah 26:12 uses the related passive placement idea. The earlier morphology warning is resolved."
 }
