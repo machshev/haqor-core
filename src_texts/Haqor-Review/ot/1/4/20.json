@@ -56,7 +56,60 @@
         "position": 9
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַתֵּלֶד"
+      },
+      {
+        "evidence": "Genesis 4:19 names Adah as one of Lamech’s wives. Here she bears Jabal.",
+        "key": "Adah@Gen.4.19",
+        "position": 1,
+        "surface": "עָדָה"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "אֶת"
+      },
+      {
+        "evidence": "Jabal is the son Adah bears here. The verse calls him the father of those who live in tents and keep livestock.",
+        "key": "Jabal@Gen.4.20",
+        "position": 3,
+        "surface": "יָבָל"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "הוּא"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "הָיָה"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "אֲבִי"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "יֹשֵׁב"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "אֹהֶל"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "וּמִקְנֶה"
+      }
+    ],
     "translation": "[And|0] [Adah|1] [bore|0] [Jabal|3,2]. [He|4] [was|5] [the father of|6] {those} [who live|7] {in} [tents|8] [and|9] {keep} [livestock|9]."
   },
   "source": "ot",
