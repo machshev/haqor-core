@@ -495,6 +495,24 @@ pub fn publish_one(
     edition: &str,
     reference: i64,
 ) -> Result<()> {
+    let corpus =
+        Connection::open_with_flags(data.join("haqor.db"), OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+    let refs = haqor_lexicon::verses_of(&corpus)?;
+    publish_one_with_refs(queue, src, data, lexicon, edition, reference, &refs)
+}
+
+/// Variant for a coordinator that has cached the immutable corpus verse set.
+/// Caching this set avoids scanning the runtime database for every completed
+/// verse in a long review run.
+pub fn publish_one_with_refs(
+    queue: &Connection,
+    src: &Path,
+    data: &Path,
+    lexicon: &Path,
+    edition: &str,
+    reference: i64,
+    refs: &std::collections::HashSet<i64>,
+) -> Result<()> {
     let lock = fs::File::open(src.join(haqor_lexicon::PEOPLE_RECORDS))?;
     lock.try_lock()
         .context("another process is publishing people and places")?;
@@ -573,11 +591,7 @@ pub fn publish_one(
     }
     let current = index.verses.entry(edition.to_owned()).or_default();
     let old = current.get(&reference);
-    if old != Some(&words) {
-        ensure!(
-            serde_json::to_value(old)? == review["name_review_base"] || old == Some(&words),
-            "another process changed {edition} {reference}; the verse needs reconciliation"
-        );
+    if accept_published_mentions(old, &review["name_review_base"], &words)? {
         current.insert(reference, words);
         let path = src.join(PATH);
         fs::create_dir_all(path.parent().unwrap())?;
@@ -587,7 +601,6 @@ pub fn publish_one(
     }
     let writer = fs::File::open(lexicon.join("sources.json"))?;
     writer.try_lock().context("lexicon is being edited")?;
-    let refs = haqor_lexicon::verses_of(&catalog.corpus)?;
     for (id, keys) in add_to_article {
         ensure!(
             id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
@@ -607,6 +620,63 @@ pub fn publish_one(
         }
     }
     Ok(())
+}
+
+fn accept_published_mentions(
+    current: Option<&Vec<Mention>>,
+    base: &Value,
+    proposed: &Vec<Mention>,
+) -> Result<bool> {
+    if current == Some(proposed) {
+        return Ok(false);
+    }
+    ensure!(
+        serde_json::to_value(current)? == *base,
+        "another process changed the verse's identities; the verse needs reconciliation"
+    );
+    Ok(true)
+}
+
+/// Return the tracked paths that a verse publication may modify. This is
+/// useful to a coordinator that commits each accepted verse immediately.
+pub fn publication_paths(
+    queue: &Connection,
+    src: &Path,
+    lexicon: &Path,
+    edition: &str,
+    reference: i64,
+) -> Result<BTreeSet<std::path::PathBuf>> {
+    let mut paths = BTreeSet::from([src.join(PATH)]);
+    let entities: Value = queue
+        .query_row(
+            "SELECT result FROM job WHERE source=? AND ref=? AND pos=-1 AND state='done'",
+            params![edition, reference],
+            |r| r.get::<_, String>(0),
+        )
+        .map(|s| serde_json::from_str(&s))??;
+    let mut analysis = queue.prepare_cached(
+        "SELECT result FROM job WHERE source=? AND ref=? AND pos=? AND state='done'",
+    )?;
+    for mention in entities["entities"].as_array().into_iter().flatten() {
+        let position = mention["position"]
+            .as_i64()
+            .context("entity needs position")?;
+        let word: Value = serde_json::from_str(
+            &analysis.query_row(params![edition, reference, position], |r| {
+                r.get::<_, String>(0)
+            })?,
+        )?;
+        let id = word["entry"]["existing"]
+            .as_str()
+            .or(word["entry"]["draft"]["article_id"].as_str());
+        if let Some(id) = id {
+            let path = lexicon.join("names").join(format!("{id}.json"));
+            if path.try_exists()? {
+                paths.insert(path);
+            }
+        }
+    }
+    Ok(paths)
 }
 
 fn add_bearers(article: &mut Value, keys: &BTreeSet<String>) -> Result<bool> {
@@ -706,6 +776,34 @@ mod tests {
         assert!(validate(&db, &job, &mut invalid, &packet).is_err());
         let mut unknown = json!({"entities":[{"position":0,"key":"Unknown","evidence":"fixture"}]});
         assert!(validate(&db, &job, &mut unknown, &packet).is_err());
+        Ok(())
+    }
+
+    #[test]
+    fn live_publication_is_idempotent_and_rejects_stale_base() -> Result<()> {
+        let proposed = vec![Mention {
+            position: 0,
+            surface: "David".into(),
+            key: Some("David@1Sam.17.1".into()),
+            evidence: Some("the named king".into()),
+        }];
+        assert!(!accept_published_mentions(
+            Some(&proposed),
+            &json!(proposed),
+            &proposed
+        )?);
+        assert!(accept_published_mentions(None, &Value::Null, &proposed)?);
+        assert!(accept_published_mentions(Some(&vec![]), &Value::Null, &proposed).is_err());
+        Ok(())
+    }
+
+    #[test]
+    fn bearer_article_merge_is_idempotent() -> Result<()> {
+        let mut article = json!({"people":["David@1Sam.17.1"]});
+        let keys = BTreeSet::from(["David@1Sam.17.1".to_owned(), "David@2Sam.5.1".to_owned()]);
+        assert!(add_bearers(&mut article, &keys)?);
+        assert!(!add_bearers(&mut article, &keys)?);
+        assert_eq!(article["people"].as_array().map(Vec::len), Some(2));
         Ok(())
     }
 }
