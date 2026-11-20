@@ -83,6 +83,7 @@ pub const STEMS: &[&str] = &[
     "pilpel",
     "pilpal",
     "hithpalpel",
+    "pealal",
     "piel-passive",
     "hishtaphel",
     "tiphil",
