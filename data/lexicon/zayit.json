@@ -17,16 +17,41 @@
       "senses": [
         {
           "gloss": "olive tree",
-          "definition": "The righteous is like a green olive tree in Yahweh's house.",
+          "definition": "The olive is a fruit-bearing tree, counted among the good produce of the land and used as a picture of the flourishing righteous person.",
           "evidence": [
             {
               "ref": "Psa.52.10",
               "role": "defining"
+            },
+            {
+              "ref": "Deu.8.8"
+            },
+            {
+              "ref": "Jdg.9.8"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-zayt"
       ]
     }
   ],
-  "note": "Separated from זיד. The BDB key g.be.ao files olive by spelling near זיד, but its concrete tree and oil senses belong to the independent root זית."
+  "note": "Separated from זיד. The BDB key g.be.ao files olive by spelling near זיד, but its concrete tree and oil senses belong to the independent root זית.",
+  "cognates": [
+    {
+      "id": "ar-zayt",
+      "lang": "ar",
+      "form": "زَيْتُون",
+      "translit": "zaytūn",
+      "gloss": "olive tree, olives",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1268, زتن, زَيْتُون"
+        }
+      ]
+    }
+  ]
 }

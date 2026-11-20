@@ -1,7 +1,6 @@
 {
   "id": "zif",
   "root": "זיד",
-  "homograph": 2,
   "status": "draft",
   "updated": "2026-11-19",
   "gloss": "Ziphite",
@@ -28,5 +27,6 @@
       ]
     }
   ],
-  "note": "Separated into its own entry by sense. The corpus root key is זיד because the BDB bridge files this gentilic there, but the adjective is a gentilic from the place-name Ziph, not the root of presumptuousness or boiling."
+  "note": "The corpus has no accepted זיף root key, so this separate homograph entry retains the BDB bridge root זיד while its sense is the Ziph place-name and must not be read as the presumptuousness root.",
+  "homograph": 2
 }
