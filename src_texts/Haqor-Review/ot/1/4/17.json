@@ -259,13 +259,8 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "xm",
-            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
-            "change": "Extend the first Hebrew noun sense in shem to include geographical names and cite Genesis 2:13.",
-            "definition": "A name identifies a person, animal, or place. Here it identifies a river.",
-            "evidence": "Genesis 2:13 explicitly gives Gihon as the name of the second river."
-          },
+          "existing": "xm",
+          "sense": "identifying-name",
           "word": 0
         },
         "evidence": "In שֵׁם הָעִיר, “the name of the city,” הָעִיר identifies the city as the bearer of the name. The following phrase כְּשֵׁם בְּנוֹ חֲנוֹךְ explains that Cain named the city after his son Enoch.",
@@ -273,11 +268,11 @@
         "language": "he",
         "lemma": "שֵׁם",
         "morph": "HNcmsc",
-        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "morphology": "Masculine singular noun in the construct state before הָעִיר, with no prefix or suffix.",
         "qualifier": "noun",
         "root": "שמ",
         "segments": "שֵׁם",
-        "sense": "The name by which a person, animal, or place is known."
+        "sense": "The name by which a place is known."
       },
       "position": 12,
       "surface": "שֵׁם"
