@@ -38,6 +38,75 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "טוּחַ",
+      "pos": "verb",
+      "gloss": "plaster, overlay",
+      "bdb": [
+        "i.ak.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "plaster, overlay",
+          "senses": [
+            {
+              "gloss": "plaster",
+              "definition": "A wall or house is plastered or overlaid, and false prophets smear a wall with whitewash.",
+              "evidence": [
+                {
+                  "ref": "Lev.14.42",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.13.10"
+                },
+                {
+                  "ref": "1Ch.29.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be plastered",
+          "senses": [
+            {
+              "gloss": "be plastered",
+              "definition": "A house is inspected after its plastering.",
+              "evidence": [
+                {
+                  "ref": "Lev.14.43",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טִיחַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "coating, plaster",
+      "bdb": [
+        "i.ak.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "coating",
+          "definition": "The coating smeared on a wall is exposed when the wall falls.",
+          "evidence": [
+            {
+              "ref": "Ezk.13.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ],
   "note": "Drafted for Psalm 51 coverage."
