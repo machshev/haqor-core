@@ -4,7 +4,7 @@
   "review": {
     "entities": [
       {
-        "evidence": "יַהְוֶה names the speaker who asks Cain about Abel. The LORD source tag identifies the same God as the earlier Yahweh proposal.",
+        "evidence": "יַהְוֶה names the God who speaks to Cain, matching the LORD source tag.",
         "key": "LORD@Gen.1.1",
         "position": 1
       },
@@ -14,7 +14,7 @@
         "position": 3
       },
       {
-        "evidence": "“Your brother” identifies Abel as the brother of Cain introduced in Genesis 4:2.",
+        "evidence": "The phrase “your brother” identifies Abel as Cain’s brother, introduced in Genesis 4:2.",
         "key": "Abel@Gen.4.2",
         "position": 5
       }
@@ -73,8 +73,77 @@
         "position": 12
       }
     ],
-    "name_review_base": null,
-    "translation": "[Then|0] [Yahweh|1] [said|0] [to|2] [Cain|3], “ [Where|4] {is} [Abel|5] [your brother|6]?” [And he replied|7], “[I do|9] [not|8] [know|9]. [Am|10] [I|12] [my brother’s|11] [keeper|10]?”"
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיֹּאמֶר"
+      },
+      {
+        "evidence": "יַהְוֶה names the speaker who asks Cain about Abel. The LORD source tag identifies the same God as the earlier Yahweh proposal.",
+        "key": "LORD@Gen.1.1",
+        "position": 1,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "אֶל"
+      },
+      {
+        "evidence": "Yahweh addresses Cain and calls Abel his brother, identifying the son born to Eve in Genesis 4:1.",
+        "key": "Cain@Gen.4.1",
+        "position": 3,
+        "surface": "קַיִן"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "אֵי"
+      },
+      {
+        "evidence": "“Your brother” identifies Abel as the brother of Cain introduced in Genesis 4:2.",
+        "key": "Abel@Gen.4.2",
+        "position": 5,
+        "surface": "הֶבֶל"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "אָחִיךָ"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "וַיֹּאמֶר"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "לֹא"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "יָדַעְתִּי"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "הֲשֹׁמֵר"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "אָחִי"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "אָנֹכִי"
+      }
+    ],
+    "translation": "[Then|0] [Yahweh|1] [said|0] [to|2] [Cain|3], “[Where|4] {is} [Abel|5], [your brother|6]?” [And he replied|7], “[I do|9] [not|8] [know|9]. [Am|10] [I|12] [my brother’s|11] [keeper|10]?”"
   },
   "source": "ot",
   "verse": 9,
