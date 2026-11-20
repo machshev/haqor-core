@@ -172,6 +172,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "f88c1101879571fe3e1e68e1e837a7700dff7636f3173002336821866f188154",
+            "change": "Add Genesis 10:26 as evidence for the existing definite-object sense of word 0.",
+            "definition": "Introduces a definite direct object, here a personal name in a coordinated list.",
+            "evidence": "In Genesis 10:26, וְאֶת חֲצַרְמָוֶת adds Hazarmaveth to the named objects of יָלַד."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "In וְאֶת חֲצַרְמָוֶת, וְ adds Hazarmaveth after Sheleph in the list of sons Joktan fathered. אֶת introduces his name as the third object of יָלַד, “fathered.”",
+        "gloss": "and (direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The prefixed conjunction וְ means “and.” אֶת is the unsuffixed direct-object particle.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks Hazarmaveth as a definite direct object of יָלַד."
+      },
+      "position": 6,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "7ea9aremaawaet",
           "word": 0
         },
