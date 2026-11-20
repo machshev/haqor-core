@@ -153,43 +153,20 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "bdb": [
-                "a.fw.af"
-              ],
-              "created": "2026-11-20",
-              "english": "Arpachshad",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "The list headed בְּנֵי שֵׁם names Arpachshad between Asshur and Lud.",
-                  "ref": "Gen.10.22",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Arpachshad",
-              "id": "2areppakexad",
-              "name": "אַרְפַּכְשַׁד",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Arpachshad is named among the sons of Shem. The meaning of his name is uncertain.",
-              "updated": "2026-11-20"
-            },
             "article_id": "2areppakexad",
-            "base": null,
-            "change": "Add a personal-name article for אַרְפַּכְשַׁד. The genealogy supports the identification and gives no basis for assigning the root ארנ or the gloss “remain over.”",
-            "definition": "Arpachshad, a son of Shem.",
-            "evidence": "Genesis 10:22 lists Arpachshad among the sons of Shem."
+            "base": "cf7f76a020c1db97a5765dd7da7e92c0e971ed8b9e7473c1a205764d8351d64a",
+            "change": "Add Genesis 10:22 as evidence for Arpachshad’s relationship to Shem and include that relationship in the summary.",
+            "definition": "Arpachshad, a son of Shem and the father of Shelah.",
+            "evidence": "Genesis 10:22 lists Arpachshad among Shem’s sons. Genesis 10:24 identifies him as Shelah’s father and Eber’s grandfather."
           },
           "word": 0
         },
-        "evidence": "בְּנֵי שֵׁם (“the sons of Shem”) introduces the list. Arpachshad follows Asshur and precedes Lud. The verse identifies the bearer of the name but gives no etymology.",
+        "evidence": "בְּנֵי שֵׁם (“the sons of Shem”) introduces the list. Arpachshad follows Asshur and precedes Lud. The verse gives no etymology for the name.",
         "gloss": "and Arpachshad",
         "language": "he",
         "lemma": "אַרְפַּכְשַׁד",
         "morph": "HC/Np",
-        "morphology": "The prefixed conjunction וְ means “and” and joins the personal name אַרְפַּכְשַׁד to the preceding names.",
+        "morphology": "The prefixed conjunction וְ means “and” and joins the personal name אַרְפַּכְשַׁד to the list.",
         "qualifier": "",
         "root": "",
         "segments": "וְ/אַרְפַּכְשַׁד",
