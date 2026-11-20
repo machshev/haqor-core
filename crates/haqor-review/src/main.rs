@@ -4,6 +4,7 @@ mod chat;
 mod greek;
 mod inventory;
 mod jobs;
+mod lexemes;
 mod live;
 mod people;
 mod progress;
@@ -128,6 +129,12 @@ enum Action {
         /// Reject this obsolete spelling in subsequent word results.
         #[arg(long)]
         retire: bool,
+    },
+    /// Record the lexeme index on occurrences reviewed before it was required;
+    /// reopen those whose lexeme cannot be decided from the article.
+    LinkLexemes {
+        #[arg(long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
     },
     /// Write reviewed verse packets including lexical drafts and contextual glosses to stdout as JSONL.
     Export,
@@ -372,6 +379,9 @@ fn main() -> Result<()> {
             lexicon,
         } => people::publish(&db, &src_texts, &data, &lexicon),
         Action::Export => export(&db),
+        Action::LinkLexemes { lexicon } => {
+            lexemes::link(&mut db, &src.join("Haqor-Review"), &lexicon)
+        }
     }
 }
 
