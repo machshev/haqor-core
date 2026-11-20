@@ -1,0 +1,97 @@
+{
+  "id": "chema",
+  "root": "חמא",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "curds, butter",
+  "summary": "Abraham offers curds and milk with the calf he has prepared. The psalm uses the smoothness of a milk product to describe soothing words that conceal hostility.",
+  "words": [
+    {
+      "lemma": "חֶמְאָה",
+      "bdb": [
+        "h.dd.ab"
+      ],
+      "pos": "noun",
+      "gloss": "curds, butter",
+      "senses": [
+        {
+          "gloss": "curds, butter",
+          "definition": "Working milk produces butter. Together with milk or honey, the thickened milk appears as food set before a guest.",
+          "evidence": [
+            {
+              "ref": "Pro.30.33",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.18.8"
+            },
+            {
+              "ref": "Jdg.5.25"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "uga-hmat",
+        "akk-himetu"
+      ]
+    },
+    {
+      "lemma": "מַחֲמָאֹת",
+      "bdb": [
+        "m.bn.ay"
+      ],
+      "pos": "noun",
+      "gloss": "buttery words",
+      "senses": [
+        {
+          "gloss": "buttery words",
+          "definition": "The man’s mouth is smooth while his heart is at war. The parallel calls his words softer than oil yet drawn swords. The form occurs only here and has also been read as an explicit comparison with butter.",
+          "evidence": [
+            {
+              "ref": "Psa.55.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-hmat",
+      "lang": "uga",
+      "form": "𐎃𐎎𐎀𐎚",
+      "translit": "ḫmʾt",
+      "gloss": "butter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000127, Ugaritic UGC002042"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    },
+    {
+      "id": "akk-himetu",
+      "lang": "akk",
+      "form": "ḫimētu",
+      "translit": "ḫimētu",
+      "gloss": "butter, clarified butter",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "asbp/x000043550, ḫimētu [butter] N"
+        }
+      ]
+    }
+  ],
+  "note": "The comparison in Psalm 55 points to dairy fat. The Aramaic word for fury with a similar spelling is in yacham. The Hebrew word for marrow is in moach."
+}

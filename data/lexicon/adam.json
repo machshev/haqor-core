@@ -1,9 +1,8 @@
 {
   "id": "adam",
   "root": "אדמ",
-  "status": "reviewed",
-  "reviewed": "2026-11-20",
-  "updated": "2026-11-15",
+  "status": "draft",
+  "updated": "2026-11-19",
   "tags": [
     "man",
     "people",
@@ -1360,6 +1359,35 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "אֲדֹמִי",
+      "bdb": [
+        "a.bd.ag"
+      ],
+      "pos": "adjective",
+      "gloss": "Edomite",
+      "senses": [
+        {
+          "gloss": "Edomite",
+          "definition": "Doeg, a servant of Saul, is identified by the people he belongs to. Deuteronomy calls the Edomite Israel’s brother, and Genesis traces the Edomites to Esau.",
+          "evidence": [
+            {
+              "ref": "1Sa.22.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.52.2"
+            },
+            {
+              "ref": "Deu.23.8"
+            },
+            {
+              "ref": "Gen.36.9"
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [
@@ -1850,5 +1878,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-15. Root key אדמ, as the brief and the database key it; no other entry has it. One spelling, three groups (man, ground, red), kept together: scripture joins אָדָם and אֲדָמָה in Gen 2:7; 3:19, 23, and the cognates join ground and colour (Akkadian adamatu “dark red earth”, Arabic أُدْمَة “the colour of the earth”, أَدِيم “red hide; surface of the ground”). Scripture does not itself say that the man or the ground is named from the colour, and the summary says so; the reviewer should check that wording. There is no merged letter in the root, so no `sounds`. דָּם “blood” is NOT taken into this entry: it is filed under its own key, every language has it without the א (Akkadian dāmu, Phoenician dm, Krahmalkov p. 149), and the Aramaic אֲדָם / אַדְמָא “blood” is דְּמָא with a helping vowel (recorded as cognate arc-adma, possible). What ties blood to this root is only the likeness of 2Ki 3:22 and the sound play of Gen 9:6, and Akkadian adamatu “dark blood”. Names and places left to name entries or left out: אֱדוֹם (a.bd.af) and the gentilic אֲדֹמִי (a.bd.ag) are in names/edom.json; Adam the man has names/adam.json, with no bdb key of its own because a.bc.ab is the noun’s (the name’s tokens, Gen 4:25; 5:1–5; 1Ch 1:1 and the unpointed-article forms לְאָדָם in Gen 2:20; 3:17, 21, are counted here). Places, not drafted: אַדְמָה Admah (a.bc.ad), אֲדָמִי הַנֶּקֶב (a.bc.ae), the town אָדָם (Jos 3:16, inside a.bc.ab), אֲדָמָה in Naphtali (Jos 19:36, inside a.bc.ac), Adummim (Jos 15:7; 18:17, inside a.bd.ac). אַדְמָתָא (a.bd.ak, Est 1:14) is a Persian prince’s name with nothing in scripture tying it to this root; not drafted. עֹבֵד אֱדוֹם is a person’s name (Obed-edom@2Sa.6.10) made of עבד and Edom, filed under עבד (p.ac.af); not drafted here. a.bd.ae (אֱדֹם, 11 tokens) is the same tokens as a.bd.ac filed a second time as a noun for the red stew of Gen 25:30; only a.bd.ac is named, as the README directs. Hos 6:7 (כְּאָדָם “like Adam” or “like men”) and Job 31:33 are not cited for a sense because either reading fits. The son-of-man doctrine is already in ben.json and enosh.json and is not repeated; בֶּן־אָדָם is given here as a phrase. No Aramaic word: Daniel and Ezra use אֱנָשׁ, and the Peshitta New Testament has from this root only the names ܐܕܡ (SEDRA lexeme 32) and ܐܕܘܡ Idumaea (lexeme 30, Mrk 3:8), which are in the name entries. Greek: Ἀδάμ is a loan (Abbott-Smith); σάρδιον is cited from the Septuagint’s rendering, though the TR at Rev 21:20 reads σάρδιος and at Rev 4:3 σάρδινος. Act 15:17 (Amo 9:12, Edom read as “men”) is recorded under ἄνθρωπος as scripture’s own reading of the consonants. Page checks: Krahmalkov pp. 32–34 and Biella p. 5 from the scans’ text and running heads; Segert pp. 93, 166, 178 from the scan’s text (the section number of the Keret extract was not legible, so only the page and KTU reference are given, and “El” as the bearer of ab adm is from the Keret text itself, not from a gloss of Segert’s). Leads not followed: DULAT for Ugaritic adm (noun and verb) and its ab adm; Akkadian adamu / adammu “blood; red garment; important person” (Wiktionary’s list; CAD A/1 not checked; Oracc has only a Sumerian-glossary adamum “a red garment”, Ur III); Akkadian Udumu and Egyptian jdwmꜥ for Edom (TLA lemma not found); Geʿez ʾadama in Dillmann or Leslau (recorded as possible from the root list only); Syriac ܐܕܡܬܐ in Payne Smith (cited from Wiktionary only); Edomite and Moabite ʾdm “man” (Wiktionary only); the proposed link of Arabic أَنَام “creatures” with אָדָם; Akkadian adnātu “world, people”. Open questions for review: (1) whether the red words’ cognates are rightly named on אֲדַמְדָּם, אַדְמוֹנִי and אֹדֶם, which have no cognate of their own form; (2) the kin link between “the man” and “earth as stuff”, which rests on Gen 2:7 alone; (3) the Sabaean ʾdm “servants” as possible; (4) the wording of the doctrine statements, especially image-of-god and kingdom-of-god."
+  "note": "Drafted 2026-11-15. Root key אדמ, as the brief and the database key it; no other entry has it. One spelling, three groups (man, ground, red), kept together: scripture joins אָדָם and אֲדָמָה in Gen 2:7; 3:19, 23, and the cognates join ground and colour (Akkadian adamatu “dark red earth”, Arabic أُدْمَة “the colour of the earth”, أَدِيم “red hide; surface of the ground”). Scripture does not itself say that the man or the ground is named from the colour, and the summary says so; the reviewer should check that wording. There is no merged letter in the root, so no `sounds`. דָּם “blood” is NOT taken into this entry: it is filed under its own key, every language has it without the א (Akkadian dāmu, Phoenician dm, Krahmalkov p. 149), and the Aramaic אֲדָם / אַדְמָא “blood” is דְּמָא with a helping vowel (recorded as cognate arc-adma, possible). What ties blood to this root is only the likeness of 2Ki 3:22 and the sound play of Gen 9:6, and Akkadian adamatu “dark blood”. Names and places left to name entries or left out: אֱדוֹם (a.bd.af) is in names/edom.json. Its gentilic אֲדֹמִי (a.bd.ag) is a word here; Adam the man has names/adam.json, with no bdb key of its own because a.bc.ab is the noun’s (the name’s tokens, Gen 4:25; 5:1–5; 1Ch 1:1 and the unpointed-article forms לְאָדָם in Gen 2:20; 3:17, 21, are counted here). Places, not drafted: אַדְמָה Admah (a.bc.ad), אֲדָמִי הַנֶּקֶב (a.bc.ae), the town אָדָם (Jos 3:16, inside a.bc.ab), אֲדָמָה in Naphtali (Jos 19:36, inside a.bc.ac), Adummim (Jos 15:7; 18:17, inside a.bd.ac). אַדְמָתָא (a.bd.ak, Est 1:14) is a Persian prince’s name with nothing in scripture tying it to this root; not drafted. עֹבֵד אֱדוֹם is a person’s name (Obed-edom@2Sa.6.10) made of עבד and Edom, filed under עבד (p.ac.af); not drafted here. a.bd.ae (אֱדֹם, 11 tokens) is the same tokens as a.bd.ac filed a second time as a noun for the red stew of Gen 25:30; only a.bd.ac is named, as the README directs. Hos 6:7 (כְּאָדָם “like Adam” or “like men”) and Job 31:33 are not cited for a sense because either reading fits. The son-of-man doctrine is already in ben.json and enosh.json and is not repeated; בֶּן־אָדָם is given here as a phrase. No Aramaic word: Daniel and Ezra use אֱנָשׁ, and the Peshitta New Testament has from this root only the names ܐܕܡ (SEDRA lexeme 32) and ܐܕܘܡ Idumaea (lexeme 30, Mrk 3:8), which are in the name entries. Greek: Ἀδάμ is a loan (Abbott-Smith); σάρδιον is cited from the Septuagint’s rendering, though the TR at Rev 21:20 reads σάρδιος and at Rev 4:3 σάρδινος. Act 15:17 (Amo 9:12, Edom read as “men”) is recorded under ἄνθρωπος as scripture’s own reading of the consonants. Page checks: Krahmalkov pp. 32–34 and Biella p. 5 from the scans’ text and running heads; Segert pp. 93, 166, 178 from the scan’s text (the section number of the Keret extract was not legible, so only the page and KTU reference are given, and “El” as the bearer of ab adm is from the Keret text itself, not from a gloss of Segert’s). Leads not followed: DULAT for Ugaritic adm (noun and verb) and its ab adm; Akkadian adamu / adammu “blood; red garment; important person” (Wiktionary’s list; CAD A/1 not checked; Oracc has only a Sumerian-glossary adamum “a red garment”, Ur III); Akkadian Udumu and Egyptian jdwmꜥ for Edom (TLA lemma not found); Geʿez ʾadama in Dillmann or Leslau (recorded as possible from the root list only); Syriac ܐܕܡܬܐ in Payne Smith (cited from Wiktionary only); Edomite and Moabite ʾdm “man” (Wiktionary only); the proposed link of Arabic أَنَام “creatures” with אָדָם; Akkadian adnātu “world, people”. Open questions for review: (1) whether the red words’ cognates are rightly named on אֲדַמְדָּם, אַדְמוֹנִי and אֹדֶם, which have no cognate of their own form; (2) the kin link between “the man” and “earth as stuff”, which rests on Gen 2:7 alone; (3) the Sabaean ʾdm “servants” as possible; (4) the wording of the doctrine statements, especially image-of-god and kingdom-of-god."
 }
