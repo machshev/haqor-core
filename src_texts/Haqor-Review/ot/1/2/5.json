@@ -153,20 +153,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "3eecaeb",
-          "sense": "grass",
+          "draft": {
+            "article_id": "3eecaeb",
+            "base": "c8f221c1795c8533d299f7d70bb9ac66d3e62ddd5b082e700c136663f723f779",
+            "change": "Add the broader sense “herbaceous plant” to word 0 and use “herbage” as the article and word gloss. Retain the existing grass sense.",
+            "definition": "An herbaceous plant, or such plants collectively as herbage.",
+            "evidence": "Genesis 1:12 pairs seed-bearing herbage with fruit-bearing trees, echoing the command in Genesis 1:11."
+          },
+          "sense": "herbaceous-plant",
           "word": 0
         },
-        "evidence": "In עֵשֶׂב הַשָּׂדֶה, “grass of the field,” הַשָּׂדֶה completes the construct phrase. טֶרֶם יִצְמָח says that the grass had yet to sprout.",
-        "gloss": "grass",
+        "evidence": "כָל עֵשֶׂב הַשָּׂדֶה means “all the herbage of the field.” It parallels שִׂיחַ הַשָּׂדֶה, “shrub of the field.” The verse says this herbage had yet to sprout and mentions both the lack of rain and the absence of anyone to till the soil. The broader sense includes grass and other herbaceous plants.",
+        "gloss": "herbage",
         "language": "he",
         "lemma": "עֵשֶׂב",
         "morph": "HNcmsc",
-        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "morphology": "Masculine singular common noun in construct with הַשָּׂדֶה, used collectively. It has no prefix or suffix.",
         "qualifier": "",
         "root": "עשׂב",
         "segments": "עֵשֶׂב",
-        "sense": "grass"
+        "sense": "herbaceous plant"
       },
       "position": 7,
       "surface": "עֵשֶׂב"
