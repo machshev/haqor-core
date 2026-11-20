@@ -455,7 +455,13 @@ pub fn generate_runtime(
 /// Import per-verse review packets as an additive runtime overlay. Word
 /// analyses are imported as soon as they are published. Verse translations
 /// are imported separately only after the verse review is complete.
-fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Result<usize> {
+pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Result<usize> {
+    db.execute_batch(
+        "CREATE TABLE IF NOT EXISTS review_occurrence(\
+        source TEXT NOT NULL, ref INTEGER NOT NULL, position INTEGER NOT NULL,\
+        lemma TEXT, root TEXT, morphology TEXT, gloss TEXT, sense TEXT, verse_gloss TEXT,\
+        PRIMARY KEY(source, ref, position)) WITHOUT ROWID",
+    )?;
     let root = src_texts.join("Haqor-Review");
     if !root.exists() {
         return Ok(0);
@@ -474,6 +480,7 @@ fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Result<usize>
     }
     visit(&root, &mut files)?;
     let tx = db.unchecked_transaction()?;
+    tx.execute("DELETE FROM review_occurrence", [])?;
     let mut insert = tx.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss) VALUES(?,?,?,?,?,?,?,?,?)")?;
     let mut count = 0;
     for path in files {

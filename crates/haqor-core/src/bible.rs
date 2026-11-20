@@ -3745,16 +3745,30 @@ impl Bible {
         // stored rendering with it. This used to be a four-table join per
         // chapter plus a resolution — and a cache to make the repeats
         // bearable — for an answer that is now fixed at build time.
+        let reviewed_overlay = self.has_table("review_occurrence")?;
+        let columns = if reviewed_overlay {
+            "COALESCE(rg.text, ''), COALESCE(ro.root, wi.root), COALESCE(ro.gloss, g.text), c.part_of_speech, c.form, c.tense, c.person, c.gender, c.number, c.state, c.prefix, c.obj_suffix, wi.flags".to_owned()
+        } else {
+            format!("COALESCE(rg.text, ''), {WORD_INFO_COLUMNS}")
+        };
+        let overlay_join = if reviewed_overlay {
+            "LEFT JOIN data.review_occurrence ro ON ro.source='ot' AND ro.ref=w.ref AND ro.position=w.position"
+        } else {
+            ""
+        };
         let sql = format!(
             "SELECT w.ref & 255, w.position, w.surface_id, s.text, \
-                    COALESCE(rg.text, ''), {WORD_INFO_COLUMNS} \
+                    {columns} \
              FROM data.word w \
              JOIN data.surface s ON s.surface_id = w.surface_id \
              LEFT JOIN data.reader_gloss rg ON rg.gloss_id = w.gloss_id \
              {joins} \
+             {overlay_join} \
              WHERE w.ref BETWEEN ?1 AND ?2 \
              ORDER BY w.ref, w.position",
             joins = WORD_INFO_JOINS.replace('%', "w"),
+            columns = columns,
+            overlay_join = overlay_join,
         );
         let mut stmt = self.db.prepare(&sql)?;
         let (first, last) = chapter_range(book, chapter);

@@ -2287,6 +2287,7 @@ fn write_verses(db: &Connection, tables: &[(&str, &[(i64, String)])]) -> Result<
 pub fn gen_translation(path: &Path, src_texts: &Path, data_dir: &Path) -> Result<TranslationBuild> {
     let db = Connection::open(path).with_context(|| format!("opening {}", path.display()))?;
     let build = build_translation(&db, src_texts, data_dir)?;
+    crate::runtime_db::import_review_occurrences(&db, src_texts)?;
     crate::runtime_db::restamp_built(&db)?;
     Ok(build)
 }
