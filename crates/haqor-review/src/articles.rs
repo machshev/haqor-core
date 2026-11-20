@@ -148,6 +148,7 @@ pub enum PublishOutcome {
     Applied,
     NotPending,
     Stale,
+    Rejected,
 }
 
 /// Publish exactly one accepted word proposal. This is the live-run API. It
@@ -156,17 +157,14 @@ pub enum PublishOutcome {
 pub fn apply_one(
     db: &mut Connection,
     lexicon: &Path,
-    data: &Path,
+    verses: &std::collections::HashSet<i64>,
     job: &Job,
 ) -> Result<PublishOutcome> {
-    let corpus =
-        Connection::open_with_flags(data.join("haqor.db"), OpenFlags::SQLITE_OPEN_READ_ONLY)?;
-    let verses = haqor_lexicon::verses_of(&corpus)?;
     let writer = fs::File::open(lexicon.join("sources.json"))?;
     writer
         .try_lock()
         .context("another review queue is applying lexicon articles")?;
-    apply_one_locked(db, lexicon, &verses, job)
+    apply_one_locked(db, lexicon, verses, job)
 }
 
 fn apply_pending_locked(
@@ -205,6 +203,7 @@ fn apply_pending_locked(
         match apply_one_locked(db, lexicon, verses, &job) {
             Ok(PublishOutcome::Applied) => applied += 1,
             Ok(PublishOutcome::Stale) => stale += 1,
+            Ok(PublishOutcome::Rejected) => (),
             Ok(PublishOutcome::NotPending) => (),
             Err(error) => {
                 if !is_validation_error(&error) {
@@ -274,8 +273,23 @@ fn apply_one_locked(
             tx.commit()?;
             return Ok(PublishOutcome::Stale);
         }
-        haqor_lexicon::save_entry(lexicon, &body, verses)
-            .with_context(|| format!("validating {id}"))?;
+        if let Err(error) = haqor_lexicon::save_entry(lexicon, &body, verses)
+            .with_context(|| format!("validating {id}"))
+        {
+            if !is_validation_error(&error) {
+                return Err(error);
+            }
+            let tx = db.transaction()?;
+            let reason = format!("{error:#}");
+            tx.execute("UPDATE job SET state='ready',feedback=?,result=NULL WHERE source=? AND ref=? AND pos=?",
+                params![reason,job.source,job.reference,job.pos])?;
+            tx.execute(
+                "UPDATE job SET state='waiting',result=NULL WHERE source=? AND ref=? AND pos=-1",
+                params![job.source, job.reference],
+            )?;
+            tx.commit()?;
+            return Ok(PublishOutcome::Rejected);
+        }
     }
     let tx = db.transaction()?;
     tx.execute(
