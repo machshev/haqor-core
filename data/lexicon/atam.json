@@ -3,7 +3,7 @@
   "root": "אטמ",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "shut, stop",
   "summary": "אטם means to shut or stop an opening or an ear. Psalm 58 applies it to the deaf adder that shuts its ears to the charmer.",
   "words": [
@@ -41,33 +41,43 @@
                   "ref": "Pro.21.13"
                 }
               ]
+            },
+            {
+              "gloss": "close an opening",
+              "definition": "A fool who closes his lips may pass for wise. Ezekiel also uses the participle of windows in the sanctuary.",
+              "evidence": [
+                {
+                  "ref": "Pro.17.28",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.40.16"
+                }
+              ]
             }
           ]
         }
-      ]
-    },
-    {
-      "lemma": "אֵטוּן",
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "linen",
-      "bdb": [
-        "a.cs.ab"
       ],
-      "senses": [
+      "cognate_ids": [
+        "uga-atm"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-atm",
+      "lang": "uga",
+      "form": "𐎀𐎉𐎎",
+      "translit": "ʾṭm",
+      "gloss": "stop",
+      "relation": "cognate",
+      "evidence": [
         {
-          "gloss": "linen",
-          "definition": "Fine linen is spread on a bed.",
-          "evidence": [
-            {
-              "ref": "Pro.7.16",
-              "role": "defining"
-            }
-          ]
+          "source": "anderson-moser-2024",
+          "locator": "SEM000584, Ugaritic UGC000698"
         }
       ]
     }
   ],
-  "cognates": [],
-  "note": "Drafted for Psalm 58 coverage. The related linen noun אֵטוּן remains in this root's source grouping but is not evidenced in Psalms."
+  "note": "The Egyptian textile in Proverbs 7:16 is filed under etun."
 }

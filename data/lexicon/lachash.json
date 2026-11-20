@@ -3,7 +3,7 @@
   "root": "לחש",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "whisper, charm",
   "summary": "לחש covers whispering and the quiet utterance of a charm or prayer. Psalm 58 speaks of charmers whose voice the deaf adder does not hear.",
   "words": [
@@ -21,11 +21,11 @@
           "definition": "A charmer's quiet utterance is powerless against the deaf adder.",
           "evidence": [
             {
-              "ref": "Psa.58.6",
+              "ref": "Ecc.10.11",
               "role": "defining"
             },
             {
-              "ref": "Ecc.10.11"
+              "ref": "Jer.8.17"
             }
           ]
         },
@@ -38,7 +38,30 @@
               "role": "defining"
             }
           ]
+        },
+        {
+          "gloss": "amulets",
+          "definition": "Isaiah includes these objects with the perfume containers and ornaments the women wear. Their association with charms explains the use of the noun.",
+          "evidence": [
+            {
+              "ref": "Isa.3.20",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "an amulet",
+          "definition": "The list of Jerusalem’s ornaments puts these objects beside armlets. The connection to the spoken charm probably lies in what the ornament was worn for.",
+          "evidence": [
+            {
+              "ref": "Isa.3.20",
+              "role": "defining"
+            }
+          ]
         }
+      ],
+      "cognate_ids": [
+        "arc-whisper"
       ]
     },
     {
@@ -76,35 +99,90 @@
                 {
                   "ref": "Psa.41.8",
                   "role": "defining"
+                },
+                {
+                  "ref": "2Sa.12.19",
+                  "note": "David sees his servants whispering together."
                 }
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-whisper"
       ]
     },
     {
-      "lemma": "לֹט",
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "myrrh",
-      "bdb": [
-        "l.bk.ae"
-      ],
-      "senses": [
+      "lemma": "לְחַשׁ",
+      "pos": "verb",
+      "gloss": "whisper",
+      "stems": [
         {
-          "gloss": "myrrh",
-          "definition": "Myrrh is carried as a choice produce and spice.",
-          "evidence": [
+          "stem": "peal",
+          "gloss": "whisper",
+          "senses": [
             {
-              "ref": "Gen.37.25",
-              "role": "defining"
+              "gloss": "whisper",
+              "definition": "What was whispered in the ear behind closed doors will be proclaimed from the roofs.",
+              "evidence": [
+                {
+                  "ref": "Luk.12.3",
+                  "role": "defining"
+                }
+              ]
             }
           ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-whisper"
+      ]
+    },
+    {
+      "lemma": "לְחֵשׁ",
+      "pos": "verb",
+      "gloss": "whisper",
+      "lang": "syc",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "speak quietly",
+          "senses": [
+            {
+              "gloss": "speak quietly",
+              "definition": "Words whispered in an inner room will be proclaimed openly.",
+              "evidence": [
+                {
+                  "ref": "Luk.12.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-whisper"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-whisper",
+      "lang": "arc",
+      "form": "לְחַשׁ",
+      "translit": "ləḥaš",
+      "gloss": "whisper, charm",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "לְחַשׁ L00373, Targum Pseudo-Jonathan Genesis 11:28"
         }
       ]
     }
   ],
-  "cognates": [],
-  "note": "Hallohesh is a proper name and remains separate. Drafted for Psalm 58 coverage."
+  "note": "SEDRA 1666 attests whispering in Luke 12:3. The traded resin לֹט is under lot-resin. Hallohesh is the participial personal name, with the article."
 }

@@ -3,7 +3,7 @@
   "root": "פתנ",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "adder, viper",
   "summary": "פֶּתֶן is a venomous snake, used in Scripture as an image of deadly poison and danger.",
   "words": [
@@ -32,6 +32,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-patan"
       ]
     },
     {
@@ -59,6 +62,21 @@
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-patan",
+      "lang": "arc",
+      "form": "פָּתָן",
+      "translit": "pātān",
+      "gloss": "venomous serpent",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "פֶּתֶן II, Q02191, Targum to Isaiah 11:8"
+        }
+      ]
+    }
+  ],
   "note": "The threshold noun מִפְתָּן is kept in the same root entry as the database groups it, though its connection is unclear. Drafted for Psalm 58 coverage."
 }
