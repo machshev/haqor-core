@@ -1,0 +1,42 @@
+{
+  "id": "tarshish",
+  "created": "2026-11-20",
+  "root": "תרשיש",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "Tarshish",
+  "summary": "תַּרְשִׁישׁ is a named distant place associated with seafaring ships and maritime trade. Psalm 48 invokes its ships as an image of power broken by Yahweh's east wind.",
+  "words": [
+    {
+      "lemma": "תַּרְשִׁישׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "Tarshish, a maritime place",
+      "bdb": [
+        "w.bq.ay"
+      ],
+      "senses": [
+        {
+          "gloss": "Tarshish",
+          "definition": "A named maritime place whose ships carried valuable cargo and were known throughout the ancient world.",
+          "evidence": [
+            {
+              "ref": "Psa.48.8",
+              "role": "defining",
+              "note": "The ships of Tarshish are broken by the east wind."
+            },
+            {
+              "ref": "1Ki.10.22",
+              "note": "Solomon's fleet of ships of Tarshish brought wealth."
+            },
+            {
+              "ref": "Ezk.27.12",
+              "note": "Tarshish traded silver, iron, tin and lead."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The same spelling is borne by people in Gen 10.4, 1Ch 7.10 and Est 1.14, recorded separately in names/tarshish.json."
+}
