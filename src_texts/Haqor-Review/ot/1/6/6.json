@@ -4,7 +4,7 @@
   "review": {
     "entities": [
       {
-        "evidence": "יַהְוֶה explicitly names the God who made humankind. The source tag LORD@Gen.1.1 identifies the same bearer as the existing Yahweh proposal.",
+        "evidence": "יַהְוֶה explicitly names the God who made humankind. The source tag identifies this bearer as LORD@Gen.1.1.",
         "key": "LORD@Gen.1.1",
         "position": 1
       }
@@ -51,7 +51,59 @@
         "position": 9
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיִּנָּחֶם"
+      },
+      {
+        "evidence": "יַהְוֶה explicitly names the God who made humankind. The source tag LORD@Gen.1.1 identifies the same bearer as the existing Yahweh proposal.",
+        "key": "LORD@Gen.1.1",
+        "position": 1,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "כִּי"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "עָשָׂה"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "אֶת"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "הָאָדָם"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "בָּאָרֶץ"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "וַיִּתְעַצֵּב"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "אֶל"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "לִבּוֹ"
+      }
+    ],
     "translation": "[So|0] [Yahweh|1] [regretted|0] [that|2] [he had made|3] [humankind|5,4] [on the earth|6], [and he grieved|7] [in|8] [his heart|9]."
   },
   "source": "ot",
