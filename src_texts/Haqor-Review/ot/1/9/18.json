@@ -149,10 +149,16 @@
     {
       "analysis": {
         "entry": {
-          "existing": "xeem",
+          "draft": {
+            "article_id": "xeem",
+            "base": "3f4e7236d3b88e25bd04902d6399602d3218f46a293b232d23bedbf274e6ee54",
+            "change": "Add Genesis 10:21 to the existing personal-name article as evidence identifying Shem.",
+            "definition": "Shem, one of Noah’s sons, brother of Japheth and ancestor of Eber’s descendants.",
+            "evidence": "Genesis 10:21 identifies Shem by his relationship to Japheth and to Eber’s descendants."
+          },
           "word": 0
         },
-        "evidence": "After בְנֵי נֹחַ introduces Noah’s sons who came out of the ark, שֵׁם וְחָם וָיָפֶת lists them by name. שֵׁם is the first son named, alongside Ham and Japheth. The source gloss “Paran” is incorrect.",
+        "evidence": "The verse names the בְנֵי נֹחַ (“sons of Noah”) who came out of the ark. שֵׁם is the first name in the list שֵׁם וְחָם וָיָפֶת (“Shem, Ham, and Japheth”).",
         "gloss": "Shem",
         "language": "he",
         "lemma": "שֵׁם",
@@ -161,7 +167,7 @@
         "qualifier": "personal name",
         "root": "שמ",
         "segments": "שֵׁם",
-        "sense": "Shem, son of Noah."
+        "sense": "Shem, son of Noah and brother of Japheth"
       },
       "position": 6,
       "surface": "שֵׁם"
