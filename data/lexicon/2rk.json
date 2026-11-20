@@ -1,8 +1,247 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "armep x000017310, arāku [be(come) long] V",
+          "source": "oracc",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000017310.html"
+        },
+        {
+          "locator": "armep x000007210, arku [long] AJ",
+          "source": "oracc",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000007210.html"
+        },
+        {
+          "locator": "SEM000511 urk [length] N, AKK014251 urku [length] N; SEM000576 ʾrk [long] V, AKK000740 arāku [be(come) long] V",
+          "source": "anderson-moser-2024"
+        }
+      ],
+      "form": "arāku, arku, urku",
+      "gloss": "be(come) long, last long, be protracted, linger; lengthen, prolong; (arku) long; (urku) length",
+      "id": "akk-araku",
+      "lang": "akk",
+      "note": "The verb, adjective and noun answer to אָרַךְ, אָרֹךְ and אֹרֶךְ, in space and in time, including “linger, be protracted” as the Hebrew hiphil “continue long”.",
+      "relation": "cognate",
+      "translit": "arāku, arku, urku"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "x000004340, ʾurk [length] N",
+          "source": "oracc-ugarit"
+        },
+        {
+          "locator": "SEM000576 ʾrk [long] V, UGC000552 ʾrk [be] V; SEM000511 urk [length] N, UGC000554 urk [length] N",
+          "source": "anderson-moser-2024"
+        }
+      ],
+      "form": "𐎀𐎗𐎋",
+      "gloss": "be long; length",
+      "id": "uga-ark",
+      "lang": "uga",
+      "relation": "cognate",
+      "translit": "ʾrk, ʾurk"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "p. 71, ʾ-R-K I (yiphil, KAI 7.4–5; KAI 10.9), ʾRK II (KAI 26 A III 4–5, ʾrk ymm), ʾRK III (long, tall)",
+          "source": "krahmalkov-2000"
+        },
+        {
+          "locator": "p. 72, ʾRKRḤ I–II, “patience”, a personal name (CIS i 97a.2; 2434.3)",
+          "source": "krahmalkov-2000"
+        }
+      ],
+      "form": "𐤀𐤓𐤊",
+      "gloss": "(yiphil) make long (days); length (of days); long, tall; (ʾrk rḥ) patience",
+      "id": "phn-ark",
+      "lang": "phn",
+      "note": "The kings of Byblos pray that the Lady of Byblos “prolong the days and years” of the king over Byblos, as Deu 17:20 of the king who “prolongs days over his kingdom”; Azatiwada asks “length of days (ʾrk ymm) and many years”, as אֹרֶךְ יָמִים; and the personal name ʾrkrḥ, “Patience”, is Hebrew אֶרֶךְ־רוּחַ (Ecc 7:8).",
+      "relation": "cognate",
+      "translit": "ʾrk"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "s.v. אֲרִיךְ I (A03095), citing Targ. I Kings VIII, 8 and (Af.) Targ. Ex. XX, 12; s.v. אֲרִיךְ II 1) (A03096), Targ. Ezek. XVII, 3",
+          "source": "jastrow-1903"
+        },
+        {
+          "locator": "s.v. אוּרְכָּא (A00900), Targ. O. Gen. VI, 15; s.v. אַרְכָא II (A03129), Targ. Gen. VI, 3",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "אֲרִיךְ، אוֹרֵיךְ، אוּרְכָּא، אַרְכָא",
+      "gloss": "be long, project; (aphel) prolong, lengthen; long; length; duration, extension of time",
+      "id": "arc-arikh",
+      "lang": "arc",
+      "note": "Jewish Aramaic of the Targums: the same range as the Hebrew, of poles that project (Targ. 1Ki 8:8), days prolonged (Targ. Exo 20:12), length (Targ. Gen 6:15) and a span of time (Targ. Gen 6:3).",
+      "relation": "cognate",
+      "translit": "ʾărīk, ʾōrēk, ʾūrkā, ʾarkā"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "s.v. אֲרִיךְ II 2) (A03096), citing Succ. 4ᵇ; s.v. ארך (A03124)",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "אֲרִיךְ",
+      "gloss": "right, befitting",
+      "id": "arc-arikh-fitting",
+      "lang": "arc",
+      "note": "The sense of Ezr 4:14 in the Talmud's Aramaic (“is it right or not right?”). Jastrow takes it as the passive participle of a verb “arrange”, not of “be long”.",
+      "relation": "cognate",
+      "translit": "ʾărīk"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "s.v. אַרְכָא III (A03130), citing Targ. II Chr. XXIV, 13; Targ. Ps. CXLVII, 3",
+          "source": "jastrow-1903"
+        },
+        {
+          "locator": "s.v. אֲרוּכָה II (A03029), citing Ḥull. 77ᵃ; 125ᵃ; B. Kam. 91ᵇ",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "אַרְכָא، אֲרוּכִין",
+      "gloss": "healing, restoration",
+      "id": "arc-arkha-healing",
+      "lang": "arc",
+      "note": "Jewish Aramaic, in the Targum of Psa 147:3 (“he heals the broken in heart and binds up their wounds”) as well as for the Hebrew of 2Ch 24:13. Rabbinic Hebrew uses אֲרוּכָה of the web of new flesh on a healing wound, with the same verb as scripture, הֶעֱלָה אֲרוּכָה “bring up healing”.",
+      "relation": "cognate",
+      "translit": "ʾarkā, ʾărūkīn"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Book I, p. 50, art. ارك, أَرَكَ (n614)",
+          "note": "“He remained, continued, or abode, in the place, not quitting it … He persisted, or persevered … He held back, or drew back, in an affair.”",
+          "source": "lane"
+        }
+      ],
+      "form": "أَرَكَ",
+      "gloss": "remain, abide in a place, not quitting it; persist; hold back, be slow (in an affair)",
+      "id": "ar-araka",
+      "lang": "ar",
+      "note": "Staying long in one place and holding back answer to the hiphil “continue long, tarry” (the cloud that stayed long on the tabernacle, Num 9:19); but Lane gives no sense of length in space, and the senses he gives may all come from camels staying among arāk trees, so the tie is uncertain.",
+      "relation": "possible",
+      "translit": "ʾaraka"
+    }
+  ],
+  "doctrine": [
+    {
+      "evidence": [
+        {
+          "ref": "Exo.34.6",
+          "to": "Exo.34.7"
+        },
+        {
+          "ref": "Num.14.18"
+        },
+        {
+          "ref": "Nam.1.3"
+        },
+        {
+          "ref": "Jol.2.13"
+        },
+        {
+          "ref": "Jon.3.10"
+        },
+        {
+          "ref": "Jon.4.2"
+        },
+        {
+          "ref": "Isa.48.9"
+        },
+        {
+          "ref": "Dan.4.24"
+        },
+        {
+          "ref": "Rom.2.4"
+        },
+        {
+          "ref": "2Pe.3.9"
+        },
+        {
+          "ref": "2Pe.3.15"
+        }
+      ],
+      "statement": "When Yahweh proclaims his name he calls himself אֶרֶךְ אַפַּיִם, long of nostrils, and in the same breath says he “will by no means acquit” the guilty (Exo 34:6–7); Moses and Nahum repeat both halves (Num 14:18; Nam 1:3). His patience is time given, not guilt overlooked: Joel calls Judah to “return to Yahweh your God, for he is … long of nostrils” (Jol 2:13), and Jonah knew that for this reason Nineveh, when it turned from its evil, would be spared (Jon 3:10; 4:2). Yahweh makes his anger long “for my name's sake … so as not to cut you off” (Isa 48:9), and Daniel's counsel to Nebuchadnezzar was to break off his sins, “if there may be a lengthening of your prosperity” (Dan 4:24). The apostles draw the same conclusion: the riches of God's long-suffering are meant to lead to repentance (Rom 2:4), and the Lord's delay in keeping his promise to return is long-suffering, “not wishing that any should perish, but that all should come to repentance” (2Pe 3:9, 15). So the time before judgment is mercy to be used, not a sign that judgment will not come.",
+      "topic": "repentance"
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Exo.20.12"
+        },
+        {
+          "ref": "Deu.5.16"
+        },
+        {
+          "ref": "Deu.4.40"
+        },
+        {
+          "ref": "Deu.11.9"
+        },
+        {
+          "ref": "Deu.30.20"
+        },
+        {
+          "ref": "Act.7.5"
+        },
+        {
+          "ref": "Heb.11.13"
+        },
+        {
+          "ref": "Eph.6.2",
+          "to": "Eph.6.3"
+        }
+      ],
+      "statement": "The hiphil's commonest use is the promise that Israel would “prolong days on the land”, and the land is named each time: the land “Yahweh your God is giving you” (Exo 20:12; Deu 5:16), “for ever” (Deu 4:40), the land “which Yahweh swore to your fathers to give to them and to their seed” (Deu 11:9). Moses ties length of days to the oath to the fathers by name: Yahweh “is your life and the length of your days, to dwell on the land which Yahweh swore to your fathers, to Abraham, to Isaac and to Jacob, to give them” (Deu 30:20). The fathers themselves died without receiving it: Abraham was given “not so much as to set his foot on”, though it was promised “to him for a possession, and to his seed after him” (Act 7:5), and they “died in faith, not having received the promises” (Heb 11:13). Paul quotes the fifth commandment's promise as still standing, “that you may be long-lived on the earth” (Eph 6:2–3). A promise made to dead men of a land they never held, and of long days on it, can be kept only when they live again; the promise of the land is literal and still to come.",
+      "topic": "land-promise"
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Isa.53.8"
+        },
+        {
+          "ref": "Isa.53.9"
+        },
+        {
+          "ref": "Isa.53.10"
+        },
+        {
+          "ref": "Isa.53.12"
+        },
+        {
+          "ref": "Act.8.32",
+          "to": "Act.8.35"
+        },
+        {
+          "ref": "Psa.21.5"
+        },
+        {
+          "ref": "Rom.6.9"
+        },
+        {
+          "ref": "Rev.1.18"
+        }
+      ],
+      "statement": "The servant of Isaiah 53 is “cut off from the land of the living” (Isa 53:8), his grave is made with the wicked (53:9), and he “poured out his soul to death” (53:12); yet of the same servant, once his soul is made a guilt offering, it is said, “he will see seed, he will prolong days (יַאֲרִיךְ יָמִים), and the pleasure of Yahweh will prosper in his hand” (53:10). Days prolonged after death are life given back from the dead. Philip read this passage to the Ethiopian and preached Jesus from it (Act 8:32–35); the king of Psa 21 “asked life of you; you gave it to him, length of days for ever and ever” (Psa 21:5), and Christ, “being raised from the dead, dies no more” (Rom 6:9): “I was dead, and behold, I am alive for evermore” (Rev 1:18). The servant had no life to carry on through death; his length of days came by resurrection.",
+      "topic": "resurrection"
+    }
+  ],
+  "gloss": "be long; prolong, lengthen; length; long, slow (to anger)",
   "id": "2rk",
+  "note": "Root key ארכ, as the brief keys it; no other entry claims its BDB keys. aph.json has a sense for the phrase אֶרֶךְ אַפַּיִם under אַף; the adjective אָרֵךְ itself (a.fs.ac) is here. Aramaic אֲרִיךְ “fitting” (xa.bi.ab, Ezr 4:14) is keyed by the database under root אריכ and kept here as a word of the same spelling; Jastrow derives it from a verb “arrange” (cf. ערך), not from “be long”, so it may belong to another root: open question. The place name אֶרֶךְ (a.fs.af, Gen 10:10) names the Sumerian city Uruk and shares the consonantal filing key ארכ. The city name has its own origin. Left out as proper names: Aramaic אַרְכְּוָיֵא “men of Erech” (xa.bi.ad, Ezr 4:9); and the gentilic אַרְכִּי “Archite” (a.fs.ag; Hushai, 2Sa 15:32, and the border of the Archites at Ataroth, Jos 16:2; TIPNR Archites@Jos.16.2), whose derivation is unknown. No personal name in scripture is formed from the root, so no name file. xa.bi.ak (אֻשֹּׁהִי) is a cross-reference to אשׁ filed here by the alphabet, left out. The healing noun אֲרוּכָה: its link to “be long” is not shown by any verse or cognate; Lane's Book I has no Arabic ʾarika “(a wound) began to heal” (a lead from other lexicons, not found, not cited). Leads not yet followed: Ge'ez ʾarga “grow old” and Old South Arabian ʾrkn (would need Dillmann/Leslau and SabaWeb; the g for k is irregular); Ugaritic ʾrk in DULAT; Akkadian ūmū arkūtu “long days” as a royal blessing (CAD A/2 s.v. arku), which would parallel אֹרֶךְ יָמִים. Peshitta: ܐܘܪܟܐ (Eph 3:18; Rev 21:16) and the aphel of ܐܪܟ (Mat 23:5; 23:13 in the Peshitta's numbering, 23:14 in the Greek; Mrk 12:40; Luk 20:47), from SEDRA root 210 ARC. The Greek μακροχρόνιος of Eph 6:3 is not aligned by MACULA in Exo 20:12 / Deu 5:16, so it is only cited as a verse, not as a rendering.",
   "root": "ארכ",
   "status": "draft",
-  "updated": "2026-11-19",
+  "summary": "To be long and to make long, in space and above all in time. The noun אֹרֶךְ is the length of the ark, the tabernacle, the temple and Ezekiel's measured house, and “length of days”, long life, which Yahweh gives (Psa 21:5; 91:16) and wisdom holds in her right hand (Pro 3:16); the hiphil prolongs days, the promise attached to honouring father and mother and keeping the commandments “on the land that Yahweh your God is giving you” (Exo 20:12; Deu 4:40). Long of nostrils, אֶרֶךְ אַפַּיִם, is slow to anger: the word Yahweh proclaims of himself (Exo 34:6), and the wise man's patience (Pro 14:29). Akkadian arāku, Ugaritic and Phoenician ʾrk (“prolong the days” of a king) and Aramaic and Syriac ʾrk all mean “be long”.",
   "tags": [
     "length",
     "time",
@@ -12,14 +251,9 @@
     "healing",
     "measurement"
   ],
-  "gloss": "be long; prolong, lengthen; length; long, slow (to anger)",
-  "summary": "To be long and to make long, in space and above all in time. The noun אֹרֶךְ is the length of the ark, the tabernacle, the temple and Ezekiel's measured house, and “length of days”, long life, which Yahweh gives (Psa 21:5; 91:16) and wisdom holds in her right hand (Pro 3:16); the hiphil prolongs days, the promise attached to honouring father and mother and keeping the commandments “on the land that Yahweh your God is giving you” (Exo 20:12; Deu 4:40). Long of nostrils, אֶרֶךְ אַפַּיִם, is slow to anger: the word Yahweh proclaims of himself (Exo 34:6), and the wise man's patience (Pro 14:29). Akkadian arāku, Ugaritic and Phoenician ʾrk (“prolong the days” of a king) and Aramaic and Syriac ʾrk all mean “be long”.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "אֹרֶךְ",
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "length; length (of days); patience",
       "bdb": [
         "a.fs.ab"
       ],
@@ -29,163 +263,165 @@
         "phn-ark",
         "arc-arikh"
       ],
-      "summary": "About ninety-five times. Most are measurements, beside רֹחַב “width” and קוֹמָה “height”, from the ark (Gen 6:15) through the tabernacle and Solomon's temple to Ezekiel's house and the portion of the land (Ezk 40–48). The rest are length of time, almost always אֹרֶךְ יָמִים “length of days”, and once length of nostrils, patience.",
+      "gender": "m",
+      "gloss": "length; length (of days); patience",
+      "greek": [
+        {
+          "evidence": [
+            {
+              "locator": "Gen.6.15; 1Ki.6.20; Ezk.40.47; Zec.5.2; Pro.3.16, אֹרֶךְ → μῆκος; μῆκος renders אֹרֶךְ ×58",
+              "source": "macula-lxx"
+            },
+            {
+              "note": "The holy city is measured with a reed and “lies foursquare, and its length (μῆκος) is as great as its width … the length and the width and the height of it are equal”: as the inner sanctuary of 1Ki 6:20, and the measured Jerusalem of Zec 2:6 and Ezk 48.",
+              "ref": "Rev.21.16",
+              "role": "defining"
+            },
+            {
+              "note": "“To comprehend with all the saints what is the breadth and length (μῆκος) and depth and height.”",
+              "ref": "Eph.3.18"
+            }
+          ],
+          "gloss": "length",
+          "lemma": "μῆκος"
+        }
+      ],
+      "lemma": "אֹרֶךְ",
+      "pos": "noun",
       "senses": [
         {
-          "id": "length-measure",
-          "gloss": "length (in space)",
           "definition": "The longer dimension of a thing measured, named with its width and often its height: of the ark, the furnishings and courts of the tabernacle, the temple and its rooms, Ezekiel's gates and courts, a sword, a bed, a scroll, a city, the land.",
           "evidence": [
             {
+              "note": "“The length (אֹרֶךְ) of the ark three hundred cubits, its width fifty cubits, and its height thirty cubits.”",
               "ref": "Gen.6.15",
-              "role": "defining",
-              "note": "“The length (אֹרֶךְ) of the ark three hundred cubits, its width fifty cubits, and its height thirty cubits.”"
+              "role": "defining"
             },
             {
-              "ref": "Exo.25.10",
-              "note": "The ark of the testimony, “two cubits and a half its length”."
+              "note": "The ark of the testimony, “two cubits and a half its length”.",
+              "ref": "Exo.25.10"
             },
             {
-              "ref": "Exo.27.18",
-              "note": "The court of the tabernacle, “the length a hundred cubits and the width fifty”."
+              "note": "The court of the tabernacle, “the length a hundred cubits and the width fifty”.",
+              "ref": "Exo.27.18"
             },
             {
+              "note": "The inner sanctuary “twenty cubits in length and twenty cubits in width and twenty cubits its height”: length, width and height equal.",
               "ref": "1Ki.6.20",
-              "role": "defining",
-              "note": "The inner sanctuary “twenty cubits in length and twenty cubits in width and twenty cubits its height”: length, width and height equal."
+              "role": "defining"
             },
             {
-              "ref": "Ezk.40.47",
-              "note": "The court measured, “in length a hundred cubits, and in width a hundred cubits, square”."
+              "note": "The court measured, “in length a hundred cubits, and in width a hundred cubits, square”.",
+              "ref": "Ezk.40.47"
             },
             {
-              "ref": "Ezk.48.8",
-              "note": "The contribution of the land: twenty-five thousand in width “and the length like one of the portions”."
+              "note": "The contribution of the land: twenty-five thousand in width “and the length like one of the portions”.",
+              "ref": "Ezk.48.8"
             },
             {
+              "note": "To Abram: “Arise, walk through the land לְאָרְכָּהּ וּלְרָחְבָּהּ, for to you I will give it.”",
               "ref": "Gen.13.17",
-              "role": "defining",
-              "note": "To Abram: “Arise, walk through the land לְאָרְכָּהּ וּלְרָחְבָּהּ, for to you I will give it.”"
+              "role": "defining"
             },
             {
-              "ref": "Zec.2.6",
-              "note": "The man with the measuring line goes “to measure Jerusalem, to see how much is its width and how much its length”."
+              "note": "The man with the measuring line goes “to measure Jerusalem, to see how much is its width and how much its length”.",
+              "ref": "Zec.2.6"
             },
             {
-              "ref": "Zec.5.2",
-              "note": "A flying scroll, “its length twenty cubits and its width ten cubits”."
+              "note": "A flying scroll, “its length twenty cubits and its width ten cubits”.",
+              "ref": "Zec.5.2"
             },
             {
-              "ref": "Deu.3.11",
-              "note": "Og's iron bed, “nine cubits its length and four cubits its width”."
+              "note": "Og's iron bed, “nine cubits its length and four cubits its width”.",
+              "ref": "Deu.3.11"
             },
             {
-              "ref": "Jdg.3.16",
-              "note": "Ehud's two-edged sword, “a gomed its length”."
+              "note": "Ehud's two-edged sword, “a gomed its length”.",
+              "ref": "Jdg.3.16"
             },
             {
-              "ref": "Ezk.31.7",
-              "note": "The cedar “was beautiful in its greatness, in the length of its branches, for its root was by many waters”."
+              "note": "The cedar “was beautiful in its greatness, in the length of its branches, for its root was by many waters”.",
+              "ref": "Ezk.31.7"
             }
           ],
+          "gloss": "length (in space)",
+          "id": "length-measure",
           "kin": [
             "syc-length",
             "arok-long"
           ]
         },
         {
-          "id": "length-of-days",
-          "gloss": "length of days, long life",
           "definition": "אֹרֶךְ יָמִים: a long life, or a long time without end in view. It is Yahweh's gift, set beside life itself, and the fruit of wisdom and of keeping his law.",
           "evidence": [
             {
+              "note": "“To love Yahweh your God, to listen to his voice and to cleave to him, for he is your life and the length of your days (וְאֹרֶךְ יָמֶיךָ), to dwell on the land which Yahweh swore to your fathers, to Abraham, to Isaac and to Jacob, to give them.”",
               "ref": "Deu.30.20",
-              "role": "defining",
-              "note": "“To love Yahweh your God, to listen to his voice and to cleave to him, for he is your life and the length of your days (וְאֹרֶךְ יָמֶיךָ), to dwell on the land which Yahweh swore to your fathers, to Abraham, to Isaac and to Jacob, to give them.”"
+              "role": "defining"
             },
             {
+              "note": "Of the king: “He asked life (חַיִּים) of you; you gave it to him, length of days for ever and ever.”",
               "ref": "Psa.21.5",
-              "role": "defining",
-              "note": "Of the king: “He asked life (חַיִּים) of you; you gave it to him, length of days for ever and ever.”"
+              "role": "defining"
             },
             {
-              "ref": "Psa.91.16",
-              "note": "“With length of days I will satisfy him, and show him my salvation.”"
+              "note": "“With length of days I will satisfy him, and show him my salvation.”",
+              "ref": "Psa.91.16"
             },
             {
+              "note": "“Length of days and years of life (שְׁנוֹת חַיִּים) and peace they will add to you”: the parallel fixes it as long life.",
               "ref": "Pro.3.2",
-              "role": "defining",
-              "note": "“Length of days and years of life (שְׁנוֹת חַיִּים) and peace they will add to you”: the parallel fixes it as long life."
+              "role": "defining"
             },
             {
-              "ref": "Pro.3.16",
-              "note": "Wisdom: “length of days is in her right hand, in her left riches and honour.”"
+              "note": "Wisdom: “length of days is in her right hand, in her left riches and honour.”",
+              "ref": "Pro.3.16"
             },
             {
-              "ref": "Job.12.12",
-              "note": "“With the aged is wisdom, and length of days is understanding.”"
+              "note": "“With the aged is wisdom, and length of days is understanding.”",
+              "ref": "Job.12.12"
             },
             {
-              "ref": "Psa.23.6",
-              "note": "“I will dwell in the house of Yahweh לְאֹרֶךְ יָמִים.”"
+              "note": "“I will dwell in the house of Yahweh לְאֹרֶךְ יָמִים.”",
+              "ref": "Psa.23.6"
             },
             {
-              "ref": "Psa.93.5",
-              "note": "“Holiness befits your house, Yahweh, לְאֹרֶךְ יָמִים”: for all time to come."
+              "note": "“Holiness befits your house, Yahweh, לְאֹרֶךְ יָמִים”: for all time to come.",
+              "ref": "Psa.93.5"
             },
             {
-              "ref": "Lam.5.20",
-              "note": "“Why do you forget us for ever, forsake us לְאֹרֶךְ יָמִים?”: parallel to לָנֶצַח."
+              "note": "“Why do you forget us for ever, forsake us לְאֹרֶךְ יָמִים?”: parallel to לָנֶצַח.",
+              "ref": "Lam.5.20"
             }
           ],
+          "gloss": "length of days, long life",
+          "id": "length-of-days",
           "kin": [
             "prolong-days",
             "arc-arkah-prolonging"
           ]
         },
         {
-          "id": "length-of-nostrils",
-          "gloss": "length of nostrils: patience",
           "definition": "אֹרֶךְ אַפַּיִם: patience, anger held back long.",
           "evidence": [
             {
+              "note": "“By length of nostrils (בְּאֹרֶךְ אַפַּיִם) a ruler is persuaded, and a soft tongue breaks a bone”: patience set beside gentle speech.",
               "ref": "Pro.25.15",
-              "role": "defining",
-              "note": "“By length of nostrils (בְּאֹרֶךְ אַפַּיִם) a ruler is persuaded, and a soft tongue breaks a bone”: patience set beside gentle speech."
+              "role": "defining"
             }
           ],
+          "gloss": "length of nostrils: patience",
+          "id": "length-of-nostrils",
           "kin": [
             "slow-to-anger",
             "make-long-anger"
           ]
         }
       ],
-      "greek": [
-        {
-          "lemma": "μῆκος",
-          "gloss": "length",
-          "evidence": [
-            {
-              "source": "macula-lxx",
-              "locator": "Gen.6.15; 1Ki.6.20; Ezk.40.47; Zec.5.2; Pro.3.16, אֹרֶךְ → μῆκος; μῆκος renders אֹרֶךְ ×58"
-            },
-            {
-              "ref": "Rev.21.16",
-              "role": "defining",
-              "note": "The holy city is measured with a reed and “lies foursquare, and its length (μῆκος) is as great as its width … the length and the width and the height of it are equal”: as the inner sanctuary of 1Ki 6:20, and the measured Jerusalem of Zec 2:6 and Ezk 48."
-            },
-            {
-              "ref": "Eph.3.18",
-              "note": "“To comprehend with all the saints what is the breadth and length (μῆκος) and depth and height.”"
-            }
-          ]
-        }
-      ],
+      "summary": "About ninety-five times. Most are measurements, beside רֹחַב “width” and קוֹמָה “height”, from the ark (Gen 6:15) through the tabernacle and Solomon's temple to Ezekiel's house and the portion of the land (Ezk 40–48). The rest are length of time, almost always אֹרֶךְ יָמִים “length of days”, and once length of nostrils, patience.",
       "usage": {
         "parallels": [
           {
-            "lemma": "רֹחַב",
-            "note": "“Width”: the fixed partner of length in every measurement.",
             "evidence": [
               {
                 "ref": "Gen.6.15",
@@ -197,11 +433,11 @@
               {
                 "ref": "Zec.2.6"
               }
-            ]
+            ],
+            "lemma": "רֹחַב",
+            "note": "“Width”: the fixed partner of length in every measurement."
           },
           {
-            "lemma": "חַיִּים",
-            "note": "“Life”: length of days is life prolonged.",
             "evidence": [
               {
                 "ref": "Deu.30.20",
@@ -213,13 +449,13 @@
               {
                 "ref": "Pro.3.2"
               }
-            ]
+            ],
+            "lemma": "חַיִּים",
+            "note": "“Life”: length of days is life prolonged."
           }
         ],
         "phrases": [
           {
-            "phrase": "אֹרֶךְ יָמִים",
-            "gloss": "length of days, long life",
             "evidence": [
               {
                 "ref": "Deu.30.20",
@@ -249,15 +485,14 @@
               {
                 "ref": "Lam.5.20"
               }
-            ]
+            ],
+            "gloss": "length of days, long life",
+            "phrase": "אֹרֶךְ יָמִים"
           }
         ]
       }
     },
     {
-      "lemma": "אָרַךְ",
-      "pos": "verb",
-      "gloss": "be long; prolong (days), lengthen; continue long; make (anger) long",
       "bdb": [
         "a.fs.aa"
       ],
@@ -267,226 +502,242 @@
         "phn-ark",
         "arc-arikh"
       ],
-      "summary": "Thirty-four times, almost all in the hiphil. Its commonest object is “days”: Israel's days prolonged on the land if they keep Yahweh's commandments, cut short if they do not (Deu 4:26, 40). The opposite is אָבַד “perish”.",
+      "gloss": "be long; prolong (days), lengthen; continue long; make (anger) long",
+      "lemma": "אָרַךְ",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "qal",
           "gloss": "be long, grow long",
           "senses": [
             {
-              "id": "qal-be-long",
-              "gloss": "be long (of days); grow long (of branches)",
               "definition": "Of days, to pass long; of boughs, to grow long.",
               "evidence": [
                 {
+                  "note": "“When the days אָרְכוּ for him there”: when Isaac had been in Gerar a long time.",
                   "ref": "Gen.26.8",
-                  "role": "defining",
-                  "note": "“When the days אָרְכוּ for him there”: when Isaac had been in Gerar a long time."
+                  "role": "defining"
                 },
                 {
+                  "note": "The proverb in Israel: “The days יַאַרְכוּ, and every vision perishes”: time drags on and prophecy fails; Yahweh answers that the days are near (Ezk 12:23).",
                   "ref": "Ezk.12.22",
-                  "role": "defining",
-                  "note": "The proverb in Israel: “The days יַאַרְכוּ, and every vision perishes”: time drags on and prophecy fails; Yahweh answers that the days are near (Ezk 12:23)."
+                  "role": "defining"
                 },
                 {
-                  "ref": "Ezk.31.5",
-                  "note": "The cedar's height was lofty, “its boughs multiplied and its branches וַתֶּאֱרַכְנָה from many waters”."
+                  "note": "The cedar's height was lofty, “its boughs multiplied and its branches וַתֶּאֱרַכְנָה from many waters”.",
+                  "ref": "Ezk.31.5"
                 }
               ],
+              "gloss": "be long (of days); grow long (of branches)",
+              "id": "qal-be-long",
               "kin": [
                 "arok-long",
                 "length-measure"
               ]
             }
-          ]
+          ],
+          "stem": "qal"
         },
         {
-          "stem": "hiphil",
           "gloss": "prolong (days); continue long, tarry; lengthen, make long; make (anger) long, be patient",
           "senses": [
             {
-              "id": "prolong-days",
-              "gloss": "prolong (days), live long",
               "definition": "With יָמִים: to make one's days long, to live long, above all on the land Yahweh gives, as the promised fruit of obedience; once of the servant of Yahweh after his death (Isa 53:10).",
               "evidence": [
                 {
+                  "note": "“Honour your father and your mother, that your days may be long (יַאֲרִכוּן) on the land that Yahweh your God is giving you.”",
                   "ref": "Exo.20.12",
-                  "role": "defining",
-                  "note": "“Honour your father and your mother, that your days may be long (יַאֲרִכוּן) on the land that Yahweh your God is giving you.”"
+                  "role": "defining"
                 },
                 {
+                  "note": "Paul quotes the commandment, “the first commandment with a promise”: “that it may be well with you and you may be long-lived on the earth.”",
                   "ref": "Eph.6.2",
-                  "to": "Eph.6.3",
                   "role": "defining",
-                  "note": "Paul quotes the commandment, “the first commandment with a promise”: “that it may be well with you and you may be long-lived on the earth.”"
+                  "to": "Eph.6.3"
                 },
                 {
-                  "ref": "Deu.5.16",
-                  "note": "“That your days may be prolonged and that it may go well with you on the land.”"
+                  "note": "“That your days may be prolonged and that it may go well with you on the land.”",
+                  "ref": "Deu.5.16"
                 },
                 {
+                  "note": "“Keep his statutes and his commandments … that you may prolong days on the land which Yahweh your God gives you for ever.”",
                   "ref": "Deu.4.40",
-                  "role": "defining",
-                  "note": "“Keep his statutes and his commandments … that you may prolong days on the land which Yahweh your God gives you for ever.”"
+                  "role": "defining"
                 },
                 {
+                  "note": "The opposite: “you will surely perish quickly from the land … לֹא־תַאֲרִיכֻן יָמִים upon it, but will be utterly destroyed.”",
                   "ref": "Deu.4.26",
-                  "role": "defining",
-                  "note": "The opposite: “you will surely perish quickly from the land … לֹא־תַאֲרִיכֻן יָמִים upon it, but will be utterly destroyed.”"
+                  "role": "defining"
                 },
                 {
-                  "ref": "Deu.30.18",
-                  "note": "“You will surely perish; you will not prolong days on the land.”"
+                  "note": "“You will surely perish; you will not prolong days on the land.”",
+                  "ref": "Deu.30.18"
                 },
                 {
-                  "ref": "Deu.5.33",
-                  "note": "“That you may live, and it be well with you, and you may prolong days in the land.”"
+                  "note": "“That you may live, and it be well with you, and you may prolong days in the land.”",
+                  "ref": "Deu.5.33"
                 },
                 {
                   "ref": "Deu.6.2"
                 },
                 {
-                  "ref": "Deu.11.9",
-                  "note": "“That you may prolong days on the land which Yahweh swore to your fathers to give to them and to their seed.”"
+                  "note": "“That you may prolong days on the land which Yahweh swore to your fathers to give to them and to their seed.”",
+                  "ref": "Deu.11.9"
                 },
                 {
-                  "ref": "Deu.17.20",
-                  "note": "The king who does not turn aside from the commandment “will prolong days over his kingdom, he and his sons”."
+                  "note": "The king who does not turn aside from the commandment “will prolong days over his kingdom, he and his sons”.",
+                  "ref": "Deu.17.20"
                 },
                 {
-                  "ref": "Deu.22.7",
-                  "note": "Letting the mother bird go, “that it may go well with you and you may prolong days”."
+                  "note": "Letting the mother bird go, “that it may go well with you and you may prolong days”.",
+                  "ref": "Deu.22.7"
                 },
                 {
-                  "ref": "Deu.25.15",
-                  "note": "A full and just weight and measure, “that your days may be long on the land”."
+                  "note": "A full and just weight and measure, “that your days may be long on the land”.",
+                  "ref": "Deu.25.15"
                 },
                 {
-                  "ref": "Deu.32.47",
-                  "note": "“It is not an empty word for you, for it is your life, and by this word you will prolong days on the land.”"
+                  "note": "“It is not an empty word for you, for it is your life, and by this word you will prolong days on the land.”",
+                  "ref": "Deu.32.47"
                 },
                 {
-                  "ref": "1Ki.3.14",
-                  "note": "To Solomon: “If you walk in my ways … then I will lengthen your days.”"
+                  "note": "To Solomon: “If you walk in my ways … then I will lengthen your days.”",
+                  "ref": "1Ki.3.14"
                 },
                 {
-                  "ref": "Jos.24.31",
-                  "note": "The elders “who prolonged days after Joshua” (also Jdg 2:7)."
+                  "note": "The elders “who prolonged days after Joshua” (also Jdg 2:7).",
+                  "ref": "Jos.24.31"
                 },
                 {
                   "ref": "Jdg.2.7"
                 },
                 {
-                  "ref": "Pro.28.16",
-                  "note": "“He who hates unjust gain will prolong days.”"
+                  "note": "“He who hates unjust gain will prolong days.”",
+                  "ref": "Pro.28.16"
                 },
                 {
+                  "note": "A sinner does evil a hundred times “and prolongs (his days)”, yet “it will not be well with the wicked, and he will not prolong days, like a shadow”.",
                   "ref": "Ecc.8.12",
-                  "to": "Ecc.8.13",
-                  "note": "A sinner does evil a hundred times “and prolongs (his days)”, yet “it will not be well with the wicked, and he will not prolong days, like a shadow”."
+                  "to": "Ecc.8.13"
                 },
                 {
-                  "ref": "Ecc.7.15",
-                  "note": "“There is a wicked man who prolongs (his life) in his evil.”"
+                  "note": "“There is a wicked man who prolongs (his life) in his evil.”",
+                  "ref": "Ecc.7.15"
                 },
                 {
+                  "note": "Of the servant whose soul is made a guilt offering: “he will see seed, he will prolong days (יַאֲרִיךְ יָמִים), and the pleasure of Yahweh will prosper in his hand.”",
                   "ref": "Isa.53.10",
-                  "role": "defining",
-                  "note": "Of the servant whose soul is made a guilt offering: “he will see seed, he will prolong days (יַאֲרִיךְ יָמִים), and the pleasure of Yahweh will prosper in his hand.”"
+                  "role": "defining"
                 }
               ],
+              "gloss": "prolong (days), live long",
+              "id": "prolong-days",
               "kin": [
                 "length-of-days",
                 "arc-arkah-prolonging"
               ]
             },
             {
-              "id": "continue-long",
-              "gloss": "continue long, tarry; be long",
+              "cognate_ids": [
+                "ar-araka"
+              ],
               "definition": "Intransitive: to stay long, last, or reach out long.",
               "evidence": [
                 {
+                  "note": "“When the cloud prolonged (בְּהַאֲרִיךְ) upon the tabernacle many days, the sons of Israel kept the charge of Yahweh and did not set out.”",
                   "ref": "Num.9.19",
-                  "role": "defining",
-                  "note": "“When the cloud prolonged (בְּהַאֲרִיךְ) upon the tabernacle many days, the sons of Israel kept the charge of Yahweh and did not set out.”"
+                  "role": "defining"
                 },
                 {
-                  "ref": "Num.9.22",
-                  "note": "“Whether two days or a month or days, when the cloud prolonged upon the tabernacle … they camped and did not set out.”"
+                  "note": "“Whether two days or a month or days, when the cloud prolonged upon the tabernacle … they camped and did not set out.”",
+                  "ref": "Num.9.22"
                 },
                 {
-                  "ref": "Pro.28.2",
-                  "note": "“By a man of understanding and knowledge it (the land) will long continue.”"
+                  "note": "“By a man of understanding and knowledge it (the land) will long continue.”",
+                  "ref": "Pro.28.2"
                 },
                 {
+                  "note": "“The poles were long (וַיַּאֲרִכוּ), so that the ends of the poles were seen from the holy place” (also 2Ch 5:9).",
                   "ref": "1Ki.8.8",
-                  "role": "defining",
-                  "note": "“The poles were long (וַיַּאֲרִכוּ), so that the ends of the poles were seen from the holy place” (also 2Ch 5:9)."
+                  "role": "defining"
                 },
                 {
                   "ref": "2Ch.5.9"
                 }
               ],
-              "cognate_ids": [
-                "ar-araka"
-              ]
+              "gloss": "continue long, tarry; be long",
+              "id": "continue-long"
             },
             {
-              "id": "lengthen",
-              "gloss": "lengthen, make long",
               "definition": "Transitive, of things in space: to lengthen ropes, draw out furrows, stick out the tongue.",
               "evidence": [
                 {
+                  "note": "“Enlarge the place of your tent … הַאֲרִיכִי מֵיתָרַיִךְ, and strengthen your stakes.”",
                   "ref": "Isa.54.2",
-                  "role": "defining",
-                  "note": "“Enlarge the place of your tent … הַאֲרִיכִי מֵיתָרַיִךְ, and strengthen your stakes.”"
+                  "role": "defining"
                 },
                 {
-                  "ref": "Psa.129.3",
-                  "note": "“The ploughers ploughed on my back; they made long their furrows.”"
+                  "note": "“The ploughers ploughed on my back; they made long their furrows.”",
+                  "ref": "Psa.129.3"
                 },
                 {
-                  "ref": "Isa.57.4",
-                  "note": "“Against whom do you open wide the mouth and make long the tongue?”"
+                  "note": "“Against whom do you open wide the mouth and make long the tongue?”",
+                  "ref": "Isa.57.4"
                 }
               ],
+              "gloss": "lengthen, make long",
+              "id": "lengthen",
               "kin": [
                 "syc-make-long"
               ]
             },
             {
-              "id": "make-long-anger",
-              "gloss": "make (anger) long, be patient",
               "definition": "With אַף “nostril, anger” or נֶפֶשׁ: to hold back anger long, to be patient.",
               "evidence": [
                 {
+                  "note": "“For my name's sake I make long my anger (אַאֲרִיךְ אַפִּי), and for my praise I restrain it for you, so as not to cut you off.”",
                   "ref": "Isa.48.9",
-                  "role": "defining",
-                  "note": "“For my name's sake I make long my anger (אַאֲרִיךְ אַפִּי), and for my praise I restrain it for you, so as not to cut you off.”"
+                  "role": "defining"
                 },
                 {
+                  "note": "“A man's insight makes his anger long, and his glory is to pass over a transgression.”",
                   "ref": "Pro.19.11",
-                  "role": "defining",
-                  "note": "“A man's insight makes his anger long, and his glory is to pass over a transgression.”"
+                  "role": "defining"
                 },
                 {
-                  "ref": "Job.6.11",
-                  "note": "“What is my strength, that I should wait (אֲיַחֵל)? And what is my end, that I should make my soul long (אַאֲרִיךְ נַפְשִׁי)?”: be patient."
+                  "note": "“What is my strength, that I should wait (אֲיַחֵל)? And what is my end, that I should make my soul long (אַאֲרִיךְ נַפְשִׁי)?”: be patient.",
+                  "ref": "Job.6.11"
                 }
               ],
+              "gloss": "make (anger) long, be patient",
+              "id": "make-long-anger",
               "kin": [
                 "slow-to-anger",
                 "length-of-nostrils"
               ]
             }
-          ]
+          ],
+          "stem": "hiphil"
         }
       ],
+      "summary": "Thirty-four times, almost all in the hiphil. Its commonest object is “days”: Israel's days prolonged on the land if they keep Yahweh's commandments, cut short if they do not (Deu 4:26, 40). The opposite is אָבַד “perish”.",
       "usage": {
+        "opposites": [
+          {
+            "evidence": [
+              {
+                "ref": "Deu.4.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.30.18"
+              }
+            ],
+            "lemma": "אָבַד",
+            "note": "“Perish” from the land, instead of prolonging days on it."
+          }
+        ],
         "parallels": [
           {
-            "lemma": "יָטַב",
-            "note": "“That it may go well with you”: the companion promise.",
             "evidence": [
               {
                 "ref": "Deu.5.16",
@@ -498,38 +749,23 @@
               {
                 "ref": "Deu.4.40"
               }
-            ]
+            ],
+            "lemma": "יָטַב",
+            "note": "“That it may go well with you”: the companion promise."
           },
           {
-            "lemma": "חָיָה",
-            "note": "“That you may live”.",
             "evidence": [
               {
                 "ref": "Deu.5.33",
                 "role": "defining"
               }
-            ]
-          }
-        ],
-        "opposites": [
-          {
-            "lemma": "אָבַד",
-            "note": "“Perish” from the land, instead of prolonging days on it.",
-            "evidence": [
-              {
-                "ref": "Deu.4.26",
-                "role": "defining"
-              },
-              {
-                "ref": "Deu.30.18"
-              }
-            ]
+            ],
+            "lemma": "חָיָה",
+            "note": "“That you may live”."
           }
         ],
         "phrases": [
           {
-            "phrase": "הֶאֱרִיךְ יָמִים",
-            "gloss": "prolong days, live long",
             "evidence": [
               {
                 "ref": "Deu.4.40",
@@ -562,11 +798,11 @@
               {
                 "ref": "Ecc.8.13"
               }
-            ]
+            ],
+            "gloss": "prolong days, live long",
+            "phrase": "הֶאֱרִיךְ יָמִים"
           },
           {
-            "phrase": "הֶאֱרִיךְ אַף",
-            "gloss": "make anger long, be patient",
             "evidence": [
               {
                 "ref": "Isa.48.9",
@@ -575,15 +811,14 @@
               {
                 "ref": "Pro.19.11"
               }
-            ]
+            ],
+            "gloss": "make anger long, be patient",
+            "phrase": "הֶאֱרִיךְ אַף"
           }
         ]
       }
     },
     {
-      "lemma": "אָרֵךְ",
-      "pos": "adjective",
-      "gloss": "long (in the construct): long of nostrils, slow to anger",
       "bdb": [
         "a.fs.ac"
       ],
@@ -592,48 +827,73 @@
         "phn-ark",
         "arc-arikh"
       ],
-      "summary": "Fifteen times, only in the construct אֶרֶךְ: once of a feather, once of spirit, and thirteen times of nostrils, אֶרֶךְ אַפַּיִם “long of nostrils”, slow to anger. The phrase is first heard from Yahweh himself when he proclaims his name to Moses (Exo 34:6), and is repeated as Israel's confession of him (Num 14:18; Psa 86:15; 103:8; 145:8; Jol 2:13; Jon 4:2; Nam 1:3; Neh 9:17). אַף is treated in its own entry (aph).",
+      "gloss": "long (in the construct): long of nostrils, slow to anger",
+      "greek": [
+        {
+          "evidence": [
+            {
+              "locator": "Pro.15.18, אֶרֶךְ אַפַּיִם → μακρόθυμος; Exo.34.6 and Num.14.18 → μακρόθυμος (aligned to אַפַּיִם)",
+              "source": "macula-lxx"
+            },
+            {
+              "note": "“Do you despise the riches of his kindness and forbearance and long-suffering (μακροθυμίας), not knowing that the kindness of God leads you to repentance?”: as Jol 2:13, return, for he is long of nostrils.",
+              "ref": "Rom.2.4",
+              "role": "defining"
+            },
+            {
+              "note": "“The Lord is not slow about his promise … but is long-suffering (μακροθυμεῖ) toward us, not wishing that any should perish, but that all should come to repentance.”",
+              "ref": "2Pe.3.9"
+            },
+            {
+              "note": "“Count the long-suffering of our Lord as salvation.”",
+              "ref": "2Pe.3.15"
+            }
+          ],
+          "gloss": "long-suffering, slow to anger",
+          "lemma": "μακρόθυμος"
+        }
+      ],
+      "lemma": "אָרֵךְ",
+      "pos": "adjective",
       "senses": [
         {
-          "id": "long-of-feather",
-          "gloss": "long",
           "definition": "Long of a part of the body: the great eagle's long pinion.",
           "evidence": [
             {
+              "note": "“The great eagle, great of wings, אֶרֶךְ הָאֵבֶר, full of plumage.”",
               "ref": "Ezk.17.3",
-              "role": "defining",
-              "note": "“The great eagle, great of wings, אֶרֶךְ הָאֵבֶר, full of plumage.”"
+              "role": "defining"
             }
-          ]
+          ],
+          "gloss": "long",
+          "id": "long-of-feather"
         },
         {
-          "id": "slow-to-anger",
-          "gloss": "long of nostrils, slow to anger; long of spirit, patient",
           "definition": "אֶרֶךְ אַפַּיִם, of one whose anger is slow to rise and long held back: of Yahweh, who bears with sinners and gives time to turn, yet does not leave the guilty unpunished; and of the wise man, who quiets strife. אֶרֶךְ־רוּחַ, “long of spirit”, is the same patience.",
           "evidence": [
             {
+              "note": "Yahweh proclaims: “Yahweh, Yahweh, a God compassionate and gracious, אֶרֶךְ אַפַּיִם, and abounding in covenant love and truth.”",
               "ref": "Exo.34.6",
-              "role": "defining",
-              "note": "Yahweh proclaims: “Yahweh, Yahweh, a God compassionate and gracious, אֶרֶךְ אַפַּיִם, and abounding in covenant love and truth.”"
+              "role": "defining"
             },
             {
+              "note": "Moses pleads the words after the spies: “Yahweh is long of nostrils and great in covenant love, forgiving iniquity and transgression, but he will by no means acquit.”",
               "ref": "Num.14.18",
-              "role": "defining",
-              "note": "Moses pleads the words after the spies: “Yahweh is long of nostrils and great in covenant love, forgiving iniquity and transgression, but he will by no means acquit.”"
+              "role": "defining"
             },
             {
+              "note": "“Yahweh is long of nostrils and great in power, and will by no means acquit”: patience is not acquittal.",
               "ref": "Nam.1.3",
-              "role": "defining",
-              "note": "“Yahweh is long of nostrils and great in power, and will by no means acquit”: patience is not acquittal."
+              "role": "defining"
             },
             {
+              "note": "“Return to Yahweh your God, for he is gracious and compassionate, long of nostrils and great in covenant love, and relents over the evil.”",
               "ref": "Jol.2.13",
-              "role": "defining",
-              "note": "“Return to Yahweh your God, for he is gracious and compassionate, long of nostrils and great in covenant love, and relents over the evil.”"
+              "role": "defining"
             },
             {
-              "ref": "Jon.4.2",
-              "note": "Jonah: “I knew that you are a gracious and compassionate God, long of nostrils … and relenting from evil”: why Nineveh was spared."
+              "note": "Jonah: “I knew that you are a gracious and compassionate God, long of nostrils … and relenting from evil”: why Nineveh was spared.",
+              "ref": "Jon.4.2"
             },
             {
               "ref": "Psa.86.15"
@@ -645,69 +905,73 @@
               "ref": "Psa.145.8"
             },
             {
-              "ref": "Neh.9.17",
-              "note": "“You are a God of forgiveness, gracious and compassionate, long of nostrils … and did not forsake them.”"
+              "note": "“You are a God of forgiveness, gracious and compassionate, long of nostrils … and did not forsake them.”",
+              "ref": "Neh.9.17"
             },
             {
-              "ref": "Jer.15.15",
-              "note": "Jeremiah: “Do not, in your long-suffering (לְאֶרֶךְ אַפְּךָ), take me away”: do not be so patient with my persecutors that I perish."
+              "note": "Jeremiah: “Do not, in your long-suffering (לְאֶרֶךְ אַפְּךָ), take me away”: do not be so patient with my persecutors that I perish.",
+              "ref": "Jer.15.15"
             },
             {
+              "note": "“One long of nostrils is great in understanding, but one short of spirit (קְצַר־רוּחַ) exalts folly.”",
               "ref": "Pro.14.29",
-              "role": "defining",
-              "note": "“One long of nostrils is great in understanding, but one short of spirit (קְצַר־רוּחַ) exalts folly.”"
+              "role": "defining"
             },
             {
+              "note": "“A man of heat stirs up strife, but one long of nostrils quiets contention.”",
               "ref": "Pro.15.18",
-              "role": "defining",
-              "note": "“A man of heat stirs up strife, but one long of nostrils quiets contention.”"
+              "role": "defining"
             },
             {
-              "ref": "Pro.16.32",
-              "note": "“Better is one long of nostrils than a mighty man, and one who rules his spirit than one who takes a city.”"
+              "note": "“Better is one long of nostrils than a mighty man, and one who rules his spirit than one who takes a city.”",
+              "ref": "Pro.16.32"
             },
             {
+              "note": "“Better is the end of a thing than its beginning; better is אֶרֶךְ־רוּחַ than height of spirit (גְּבַהּ־רוּחַ)”: patience set against pride.",
               "ref": "Ecc.7.8",
-              "role": "defining",
-              "note": "“Better is the end of a thing than its beginning; better is אֶרֶךְ־רוּחַ than height of spirit (גְּבַהּ־רוּחַ)”: patience set against pride."
+              "role": "defining"
             }
           ],
-          "kin": [
-            "length-of-nostrils",
-            "make-long-anger"
-          ]
+          "gloss": "long of nostrils, slow to anger; long of spirit, patient",
+          "id": "slow-to-anger"
         }
       ],
-      "greek": [
-        {
-          "lemma": "μακρόθυμος",
-          "gloss": "long-suffering, slow to anger",
-          "evidence": [
-            {
-              "source": "macula-lxx",
-              "locator": "Pro.15.18, אֶרֶךְ אַפַּיִם → μακρόθυμος; Exo.34.6 and Num.14.18 → μακρόθυμος (aligned to אַפַּיִם)"
-            },
-            {
-              "ref": "Rom.2.4",
-              "role": "defining",
-              "note": "“Do you despise the riches of his kindness and forbearance and long-suffering (μακροθυμίας), not knowing that the kindness of God leads you to repentance?”: as Jol 2:13, return, for he is long of nostrils."
-            },
-            {
-              "ref": "2Pe.3.9",
-              "note": "“The Lord is not slow about his promise … but is long-suffering (μακροθυμεῖ) toward us, not wishing that any should perish, but that all should come to repentance.”"
-            },
-            {
-              "ref": "2Pe.3.15",
-              "note": "“Count the long-suffering of our Lord as salvation.”"
-            }
-          ]
-        }
-      ],
+      "summary": "Fifteen times, only in the construct אֶרֶךְ: once of a feather, once of spirit, and thirteen times of nostrils, אֶרֶךְ אַפַּיִם “long of nostrils”, slow to anger. The phrase is first heard from Yahweh himself when he proclaims his name to Moses (Exo 34:6), and is repeated as Israel's confession of him (Num 14:18; Psa 86:15; 103:8; 145:8; Jol 2:13; Jon 4:2; Nam 1:3; Neh 9:17). אַף is treated in its own entry (aph).",
       "usage": {
+        "opposites": [
+          {
+            "evidence": [
+              {
+                "ref": "Pro.14.29",
+                "role": "defining"
+              }
+            ],
+            "lemma": "קְצַר־רוּחַ",
+            "note": "“Short of spirit”, quick-tempered."
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Pro.15.18",
+                "role": "defining"
+              }
+            ],
+            "lemma": "אִישׁ חֵמָה",
+            "note": "“A man of heat”, who stirs up strife."
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Ecc.7.8",
+                "role": "defining"
+              }
+            ],
+            "lemma": "גְּבַהּ־רוּחַ",
+            "note": "“Height of spirit”, pride, against length of spirit."
+          }
+        ],
         "parallels": [
           {
-            "lemma": "רַחוּם וְחַנּוּן",
-            "note": "“Compassionate and gracious”: the words beside it in the proclamation of the name and its echoes.",
             "evidence": [
               {
                 "ref": "Exo.34.6",
@@ -722,11 +986,11 @@
               {
                 "ref": "Jon.4.2"
               }
-            ]
+            ],
+            "lemma": "רַחוּם וְחַנּוּן",
+            "note": "“Compassionate and gracious”: the words beside it in the proclamation of the name and its echoes."
           },
           {
-            "lemma": "רַב־חֶסֶד",
-            "note": "“Great in covenant love”.",
             "evidence": [
               {
                 "ref": "Exo.34.6",
@@ -738,45 +1002,13 @@
               {
                 "ref": "Psa.86.15"
               }
-            ]
-          }
-        ],
-        "opposites": [
-          {
-            "lemma": "קְצַר־רוּחַ",
-            "note": "“Short of spirit”, quick-tempered.",
-            "evidence": [
-              {
-                "ref": "Pro.14.29",
-                "role": "defining"
-              }
-            ]
-          },
-          {
-            "lemma": "אִישׁ חֵמָה",
-            "note": "“A man of heat”, who stirs up strife.",
-            "evidence": [
-              {
-                "ref": "Pro.15.18",
-                "role": "defining"
-              }
-            ]
-          },
-          {
-            "lemma": "גְּבַהּ־רוּחַ",
-            "note": "“Height of spirit”, pride, against length of spirit.",
-            "evidence": [
-              {
-                "ref": "Ecc.7.8",
-                "role": "defining"
-              }
-            ]
+            ],
+            "lemma": "רַב־חֶסֶד",
+            "note": "“Great in covenant love”."
           }
         ],
         "phrases": [
           {
-            "phrase": "אֶרֶךְ אַפַּיִם",
-            "gloss": "long of nostrils, slow to anger",
             "evidence": [
               {
                 "ref": "Exo.34.6",
@@ -815,82 +1047,81 @@
               {
                 "ref": "Pro.16.32"
               }
-            ]
+            ],
+            "gloss": "long of nostrils, slow to anger",
+            "phrase": "אֶרֶךְ אַפַּיִם"
           },
           {
-            "phrase": "אֶרֶךְ־רוּחַ",
-            "gloss": "long of spirit, patient",
             "evidence": [
               {
                 "ref": "Ecc.7.8",
                 "role": "defining"
               }
-            ]
+            ],
+            "gloss": "long of spirit, patient",
+            "phrase": "אֶרֶךְ־רוּחַ"
           }
         ]
       }
     },
     {
-      "lemma": "אֲרוּכָה",
-      "pos": "noun",
-      "gender": "f",
-      "gloss": "healing, new flesh; repair",
       "bdb": [
         "a.fs.ae"
       ],
       "cognate_ids": [
         "arc-arkha-healing"
       ],
-      "summary": "Six times, always as what “goes up” (עָלָה) or “springs up” over a wound or a breach: healing of the people, and the repair of a wall or of the temple. Later Hebrew and Aramaic use it of the new flesh that grows over a wound. How it comes from “be long” is not clear: one guess is the new growth stretching across the wound, but no verse or cognate shows that, and only Aramaic, the same word, shares its meaning.",
+      "gender": "f",
+      "gloss": "healing, new flesh; repair",
+      "lemma": "אֲרוּכָה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "healing",
-          "gloss": "healing (of a wound)",
           "definition": "The healing that grows over a wound, of the people of Yahweh: it “goes up” or “springs up”, and Yahweh brings it up.",
           "evidence": [
             {
+              "note": "“I will bring up healing (אֲרֻכָה) for you, and from your wounds (מַכּוֹתַיִךְ) I will heal you (אֶרְפָּאֵךְ).”",
               "ref": "Jer.30.17",
-              "role": "defining",
-              "note": "“I will bring up healing (אֲרֻכָה) for you, and from your wounds (מַכּוֹתַיִךְ) I will heal you (אֶרְפָּאֵךְ).”"
+              "role": "defining"
             },
             {
+              "note": "“Behold, I bring up for it אֲרֻכָה and cure (מַרְפֵּא), and I will heal them.”",
               "ref": "Jer.33.6",
-              "role": "defining",
-              "note": "“Behold, I bring up for it אֲרֻכָה and cure (מַרְפֵּא), and I will heal them.”"
+              "role": "defining"
             },
             {
+              "note": "“Is there no balm in Gilead? Is there no physician there? Why then has the healing of the daughter of my people not gone up?”",
               "ref": "Jer.8.22",
-              "role": "defining",
-              "note": "“Is there no balm in Gilead? Is there no physician there? Why then has the healing of the daughter of my people not gone up?”"
+              "role": "defining"
             },
             {
-              "ref": "Isa.58.8",
-              "note": "“Then your light will break forth like the dawn, and your healing will spring up (תִצְמָח) quickly.”"
+              "note": "“Then your light will break forth like the dawn, and your healing will spring up (תִצְמָח) quickly.”",
+              "ref": "Isa.58.8"
             }
-          ]
+          ],
+          "gloss": "healing (of a wound)",
+          "id": "healing"
         },
         {
-          "id": "repair",
-          "gloss": "repair, restoration (of a wall, a building)",
           "definition": "The same word of a broken wall or house made whole: the breaches closing up.",
           "evidence": [
             {
+              "note": "Sanballat heard “that אֲרוּכָה had gone up for the walls of Jerusalem, that the breaches had begun to be stopped”.",
               "ref": "Neh.4.1",
-              "role": "defining",
-              "note": "Sanballat heard “that אֲרוּכָה had gone up for the walls of Jerusalem, that the breaches had begun to be stopped”."
+              "role": "defining"
             },
             {
-              "ref": "2Ch.24.13",
-              "note": "“The workmen worked, and אֲרוּכָה went up for the work by their hand, and they set up the house of God in its measure and strengthened it.”"
+              "note": "“The workmen worked, and אֲרוּכָה went up for the work by their hand, and they set up the house of God in its measure and strengthened it.”",
+              "ref": "2Ch.24.13"
             }
-          ]
+          ],
+          "gloss": "repair, restoration (of a wall, a building)",
+          "id": "repair"
         }
-      ]
+      ],
+      "summary": "Six times, always as what “goes up” (עָלָה) or “springs up” over a wound or a breach: healing of the people, and the repair of a wall or of the temple. Later Hebrew and Aramaic use it of the new flesh that grows over a wound. How it comes from “be long” is not clear: one guess is the new growth stretching across the wound, but no verse or cognate shows that, and only Aramaic, the same word, shares its meaning."
     },
     {
-      "lemma": "אָרֹךְ",
-      "pos": "adjective",
-      "gloss": "long",
       "bdb": [
         "a.fs.ad"
       ],
@@ -899,41 +1130,39 @@
         "phn-ark",
         "arc-arikh"
       ],
-      "summary": "Three times, all in the feminine אֲרֻכָּה: twice of time, once of measure.",
+      "gloss": "long",
+      "lemma": "אָרֹךְ",
+      "pos": "adjective",
       "senses": [
         {
-          "id": "arok-long",
-          "gloss": "long (of time, of measure)",
           "definition": "Lasting long, of a war or an exile; greater in length, of a measure.",
           "evidence": [
             {
+              "note": "“The war was long between the house of Saul and the house of David.”",
               "ref": "2Sa.3.1",
-              "role": "defining",
-              "note": "“The war was long between the house of Saul and the house of David.”"
+              "role": "defining"
             },
             {
+              "note": "Jeremiah's letter to the exiles in Babylon: “It is long (אֲרֻכָּה הִיא); build houses and dwell in them.”",
               "ref": "Jer.29.28",
-              "role": "defining",
-              "note": "Jeremiah's letter to the exiles in Babylon: “It is long (אֲרֻכָּה הִיא); build houses and dwell in them.”"
+              "role": "defining"
             },
             {
-              "ref": "Job.11.9",
-              "note": "Of the deep things of God: “its measure is longer than the earth, and wider (רְחָבָה) than the sea.”"
+              "note": "Of the deep things of God: “its measure is longer than the earth, and wider (רְחָבָה) than the sea.”",
+              "ref": "Job.11.9"
             }
           ],
+          "gloss": "long (of time, of measure)",
+          "id": "arok-long",
           "kin": [
             "length-measure",
             "qal-be-long"
           ]
         }
-      ]
+      ],
+      "summary": "Three times, all in the feminine אֲרֻכָּה: twice of time, once of measure."
     },
     {
-      "lemma": "אַרְכָה",
-      "lang": "arc",
-      "pos": "noun",
-      "gender": "f",
-      "gloss": "prolonging, lengthening (of time)",
       "bdb": [
         "xa.bh.ab"
       ],
@@ -941,376 +1170,166 @@
         "arc-arikh",
         "akk-araku"
       ],
-      "summary": "Twice in Daniel's Aramaic.",
+      "gender": "f",
+      "gloss": "prolonging, lengthening (of time)",
+      "lang": "arc",
+      "lemma": "אַרְכָה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "arc-arkah-prolonging",
-          "gloss": "prolonging, a lengthening of time",
           "definition": "More time granted: of a king's prosperity, if he repents; of the beasts' lives after their dominion is taken.",
           "evidence": [
             {
+              "note": "Daniel to Nebuchadnezzar: “Break off your sins by righteousness … if there may be a lengthening (אַרְכָה) of your prosperity.”",
               "ref": "Dan.4.24",
-              "role": "defining",
-              "note": "Daniel to Nebuchadnezzar: “Break off your sins by righteousness … if there may be a lengthening (אַרְכָה) of your prosperity.”"
+              "role": "defining"
             },
             {
+              "note": "“As for the rest of the beasts, their dominion was taken away, but a lengthening in life was given them for a season and a time.”",
               "ref": "Dan.7.12",
-              "role": "defining",
-              "note": "“As for the rest of the beasts, their dominion was taken away, but a lengthening in life was given them for a season and a time.”"
+              "role": "defining"
             }
           ],
+          "gloss": "prolonging, a lengthening of time",
+          "id": "arc-arkah-prolonging",
           "kin": [
             "length-of-days",
             "prolong-days"
           ]
         }
-      ]
+      ],
+      "summary": "Twice in Daniel's Aramaic."
     },
     {
-      "lemma": "אֲרִיךְ",
-      "lang": "arc",
-      "root": "אריכ",
-      "pos": "adjective",
-      "gloss": "fitting, proper",
       "bdb": [
         "xa.bi.ab"
       ],
       "cognate_ids": [
         "arc-arikh-fitting"
       ],
-      "summary": "Once, in the letter to Artaxerxes. Spelt as Aramaic “long”, but the sense “fitting” has no evident tie to length; Jewish Aramaic has the same word and sense. Whether it is the same root is not clear (see the note).",
+      "gloss": "fitting, proper",
+      "lang": "arc",
+      "lemma": "אֲרִיךְ",
+      "pos": "adjective",
+      "root": "אריכ",
       "senses": [
         {
-          "id": "arc-fitting",
-          "gloss": "fitting, proper",
           "definition": "Right or seemly for someone to do.",
           "evidence": [
             {
+              "note": "“Because we eat the salt of the palace, and it is not אֲרִיךְ for us to see the king's dishonour, therefore we have sent.”",
               "ref": "Ezr.4.14",
-              "role": "defining",
-              "note": "“Because we eat the salt of the palace, and it is not אֲרִיךְ for us to see the king's dishonour, therefore we have sent.”"
+              "role": "defining"
             }
-          ]
+          ],
+          "gloss": "fitting, proper",
+          "id": "arc-fitting"
         }
-      ]
+      ],
+      "summary": "Once, in the letter to Artaxerxes. Spelt as Aramaic “long”, but the sense “fitting” has no evident tie to length; Jewish Aramaic has the same word and sense. Whether it is the same root is not clear (see the note)."
     },
     {
-      "lemma": "אוּרְכָּא",
-      "lang": "syc",
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "length",
       "cognate_ids": [
         "arc-arikh",
         "akk-araku"
       ],
-      "summary": "The Peshitta's word for μῆκος in its two New Testament places (SEDRA lexeme 283).",
+      "gender": "m",
+      "gloss": "length",
+      "lang": "syc",
+      "lemma": "אוּרְכָּא",
+      "pos": "noun",
       "senses": [
         {
-          "id": "syc-length",
-          "gloss": "length",
           "definition": "The length of a thing measured.",
           "evidence": [
             {
+              "note": "The holy city: “its length as its width … its length and width and height equal.”",
               "ref": "Rev.21.16",
-              "role": "defining",
-              "note": "The holy city: “its length as its width … its length and width and height equal.”"
+              "role": "defining"
             },
             {
-              "ref": "Eph.3.18",
-              "note": "“The breadth and length and depth and height.”"
+              "note": "“The breadth and length and depth and height.”",
+              "ref": "Eph.3.18"
             }
           ],
+          "gloss": "length",
+          "id": "syc-length",
           "kin": [
             "length-measure"
           ]
         }
-      ]
+      ],
+      "summary": "The Peshitta's word for μῆκος in its two New Testament places (SEDRA lexeme 283)."
     },
     {
-      "lemma": "אֲרַךְ",
-      "lang": "syc",
-      "pos": "verb",
-      "gloss": "(aphel) lengthen, make long",
       "cognate_ids": [
         "arc-arikh",
         "akk-araku"
       ],
-      "summary": "In the Peshitta's Gospels only in the aphel, of the scribes who “make long” their fringes and their prayers (SEDRA lexeme 285, “prolong; enlarge”).",
+      "gloss": "(aphel) lengthen, make long",
+      "lang": "syc",
+      "lemma": "אֲרַךְ",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "aphel",
           "gloss": "lengthen, make long",
           "senses": [
             {
-              "id": "syc-make-long",
-              "gloss": "lengthen, make long",
               "definition": "To make long, of the borders of a garment and of prayers made long for show.",
               "evidence": [
                 {
+                  "note": "The scribes “devour widows' houses and for a pretence make long prayers”.",
                   "ref": "Mrk.12.40",
-                  "role": "defining",
-                  "note": "The scribes “devour widows' houses and for a pretence make long prayers”."
+                  "role": "defining"
                 },
                 {
-                  "ref": "Luk.20.47",
-                  "note": "The same of the scribes."
+                  "note": "The same of the scribes.",
+                  "ref": "Luk.20.47"
                 },
                 {
-                  "ref": "Mat.23.13",
-                  "note": "The same; this is the Peshitta's verse 13, the Greek's 23:14."
+                  "note": "The same; this is the Peshitta's verse 13, the Greek's 23:14.",
+                  "ref": "Mat.23.13"
                 },
                 {
+                  "note": "“They make broad their phylacteries and lengthen the borders of their garments” (Greek μεγαλύνουσιν, enlarge).",
                   "ref": "Mat.23.5",
-                  "role": "defining",
-                  "note": "“They make broad their phylacteries and lengthen the borders of their garments” (Greek μεγαλύνουσιν, enlarge)."
+                  "role": "defining"
                 }
               ],
+              "gloss": "lengthen, make long",
+              "id": "syc-make-long",
               "kin": [
                 "lengthen"
               ]
             }
-          ]
+          ],
+          "stem": "aphel"
         }
-      ]
+      ],
+      "summary": "In the Peshitta's Gospels only in the aphel, of the scribes who “make long” their fringes and their prayers (SEDRA lexeme 285, “prolong; enlarge”)."
+    },
+    {
+      "bdb": [
+        "a.fs.af"
+      ],
+      "gloss": "Erech",
+      "lemma": "אֶרֶךְ",
+      "pos": "name",
+      "senses": [
+        {
+          "definition": "A city in the land of Shinar named among the first centers of Nimrod’s kingdom.",
+          "evidence": [
+            {
+              "note": "Erech follows Babel and precedes Akkad in the list of places that formed the beginning of his kingdom. The list closes with בְּאֶרֶץ שִׁנְעָר, “in the land of Shinar.”",
+              "ref": "Gen.10.10",
+              "role": "defining"
+            }
+          ],
+          "gloss": "Erech in Shinar",
+          "id": "erech-in-shinar"
+        }
+      ],
+      "summary": "The Hebrew name of the city Uruk. Genesis lists it among the first centers of Nimrod’s kingdom."
     }
-  ],
-  "cognates": [
-    {
-      "id": "akk-araku",
-      "lang": "akk",
-      "form": "arāku, arku, urku",
-      "translit": "arāku, arku, urku",
-      "gloss": "be(come) long, last long, be protracted, linger; lengthen, prolong; (arku) long; (urku) length",
-      "relation": "cognate",
-      "note": "The verb, adjective and noun answer to אָרַךְ, אָרֹךְ and אֹרֶךְ, in space and in time, including “linger, be protracted” as the Hebrew hiphil “continue long”.",
-      "evidence": [
-        {
-          "source": "oracc",
-          "locator": "armep x000017310, arāku [be(come) long] V",
-          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000017310.html"
-        },
-        {
-          "source": "oracc",
-          "locator": "armep x000007210, arku [long] AJ",
-          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000007210.html"
-        },
-        {
-          "source": "anderson-moser-2024",
-          "locator": "SEM000511 urk [length] N, AKK014251 urku [length] N; SEM000576 ʾrk [long] V, AKK000740 arāku [be(come) long] V"
-        }
-      ]
-    },
-    {
-      "id": "uga-ark",
-      "lang": "uga",
-      "form": "𐎀𐎗𐎋",
-      "translit": "ʾrk, ʾurk",
-      "gloss": "be long; length",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "oracc-ugarit",
-          "locator": "x000004340, ʾurk [length] N"
-        },
-        {
-          "source": "anderson-moser-2024",
-          "locator": "SEM000576 ʾrk [long] V, UGC000552 ʾrk [be] V; SEM000511 urk [length] N, UGC000554 urk [length] N"
-        }
-      ]
-    },
-    {
-      "id": "phn-ark",
-      "lang": "phn",
-      "form": "𐤀𐤓𐤊",
-      "translit": "ʾrk",
-      "gloss": "(yiphil) make long (days); length (of days); long, tall; (ʾrk rḥ) patience",
-      "relation": "cognate",
-      "note": "The kings of Byblos pray that the Lady of Byblos “prolong the days and years” of the king over Byblos, as Deu 17:20 of the king who “prolongs days over his kingdom”; Azatiwada asks “length of days (ʾrk ymm) and many years”, as אֹרֶךְ יָמִים; and the personal name ʾrkrḥ, “Patience”, is Hebrew אֶרֶךְ־רוּחַ (Ecc 7:8).",
-      "evidence": [
-        {
-          "source": "krahmalkov-2000",
-          "locator": "p. 71, ʾ-R-K I (yiphil, KAI 7.4–5; KAI 10.9), ʾRK II (KAI 26 A III 4–5, ʾrk ymm), ʾRK III (long, tall)"
-        },
-        {
-          "source": "krahmalkov-2000",
-          "locator": "p. 72, ʾRKRḤ I–II, “patience”, a personal name (CIS i 97a.2; 2434.3)"
-        }
-      ]
-    },
-    {
-      "id": "arc-arikh",
-      "lang": "arc",
-      "form": "אֲרִיךְ، אוֹרֵיךְ، אוּרְכָּא، אַרְכָא",
-      "translit": "ʾărīk, ʾōrēk, ʾūrkā, ʾarkā",
-      "gloss": "be long, project; (aphel) prolong, lengthen; long; length; duration, extension of time",
-      "relation": "cognate",
-      "note": "Jewish Aramaic of the Targums: the same range as the Hebrew, of poles that project (Targ. 1Ki 8:8), days prolonged (Targ. Exo 20:12), length (Targ. Gen 6:15) and a span of time (Targ. Gen 6:3).",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "s.v. אֲרִיךְ I (A03095), citing Targ. I Kings VIII, 8 and (Af.) Targ. Ex. XX, 12; s.v. אֲרִיךְ II 1) (A03096), Targ. Ezek. XVII, 3"
-        },
-        {
-          "source": "jastrow-1903",
-          "locator": "s.v. אוּרְכָּא (A00900), Targ. O. Gen. VI, 15; s.v. אַרְכָא II (A03129), Targ. Gen. VI, 3"
-        }
-      ]
-    },
-    {
-      "id": "arc-arikh-fitting",
-      "lang": "arc",
-      "form": "אֲרִיךְ",
-      "translit": "ʾărīk",
-      "gloss": "right, befitting",
-      "relation": "cognate",
-      "note": "The sense of Ezr 4:14 in the Talmud's Aramaic (“is it right or not right?”). Jastrow takes it as the passive participle of a verb “arrange”, not of “be long”.",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "s.v. אֲרִיךְ II 2) (A03096), citing Succ. 4ᵇ; s.v. ארך (A03124)"
-        }
-      ]
-    },
-    {
-      "id": "arc-arkha-healing",
-      "lang": "arc",
-      "form": "אַרְכָא، אֲרוּכִין",
-      "translit": "ʾarkā, ʾărūkīn",
-      "gloss": "healing, restoration",
-      "relation": "cognate",
-      "note": "Jewish Aramaic, in the Targum of Psa 147:3 (“he heals the broken in heart and binds up their wounds”) as well as for the Hebrew of 2Ch 24:13. Rabbinic Hebrew uses אֲרוּכָה of the web of new flesh on a healing wound, with the same verb as scripture, הֶעֱלָה אֲרוּכָה “bring up healing”.",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "s.v. אַרְכָא III (A03130), citing Targ. II Chr. XXIV, 13; Targ. Ps. CXLVII, 3"
-        },
-        {
-          "source": "jastrow-1903",
-          "locator": "s.v. אֲרוּכָה II (A03029), citing Ḥull. 77ᵃ; 125ᵃ; B. Kam. 91ᵇ"
-        }
-      ]
-    },
-    {
-      "id": "ar-araka",
-      "lang": "ar",
-      "form": "أَرَكَ",
-      "translit": "ʾaraka",
-      "gloss": "remain, abide in a place, not quitting it; persist; hold back, be slow (in an affair)",
-      "relation": "possible",
-      "note": "Staying long in one place and holding back answer to the hiphil “continue long, tarry” (the cloud that stayed long on the tabernacle, Num 9:19); but Lane gives no sense of length in space, and the senses he gives may all come from camels staying among arāk trees, so the tie is uncertain.",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Book I, p. 50, art. ارك, أَرَكَ (n614)",
-          "note": "“He remained, continued, or abode, in the place, not quitting it … He persisted, or persevered … He held back, or drew back, in an affair.”"
-        }
-      ]
-    }
-  ],
-  "doctrine": [
-    {
-      "topic": "repentance",
-      "statement": "When Yahweh proclaims his name he calls himself אֶרֶךְ אַפַּיִם, long of nostrils, and in the same breath says he “will by no means acquit” the guilty (Exo 34:6–7); Moses and Nahum repeat both halves (Num 14:18; Nam 1:3). His patience is time given, not guilt overlooked: Joel calls Judah to “return to Yahweh your God, for he is … long of nostrils” (Jol 2:13), and Jonah knew that for this reason Nineveh, when it turned from its evil, would be spared (Jon 3:10; 4:2). Yahweh makes his anger long “for my name's sake … so as not to cut you off” (Isa 48:9), and Daniel's counsel to Nebuchadnezzar was to break off his sins, “if there may be a lengthening of your prosperity” (Dan 4:24). The apostles draw the same conclusion: the riches of God's long-suffering are meant to lead to repentance (Rom 2:4), and the Lord's delay in keeping his promise to return is long-suffering, “not wishing that any should perish, but that all should come to repentance” (2Pe 3:9, 15). So the time before judgment is mercy to be used, not a sign that judgment will not come.",
-      "evidence": [
-        {
-          "ref": "Exo.34.6",
-          "to": "Exo.34.7"
-        },
-        {
-          "ref": "Num.14.18"
-        },
-        {
-          "ref": "Nam.1.3"
-        },
-        {
-          "ref": "Jol.2.13"
-        },
-        {
-          "ref": "Jon.3.10"
-        },
-        {
-          "ref": "Jon.4.2"
-        },
-        {
-          "ref": "Isa.48.9"
-        },
-        {
-          "ref": "Dan.4.24"
-        },
-        {
-          "ref": "Rom.2.4"
-        },
-        {
-          "ref": "2Pe.3.9"
-        },
-        {
-          "ref": "2Pe.3.15"
-        }
-      ]
-    },
-    {
-      "topic": "land-promise",
-      "statement": "The hiphil's commonest use is the promise that Israel would “prolong days on the land”, and the land is named each time: the land “Yahweh your God is giving you” (Exo 20:12; Deu 5:16), “for ever” (Deu 4:40), the land “which Yahweh swore to your fathers to give to them and to their seed” (Deu 11:9). Moses ties length of days to the oath to the fathers by name: Yahweh “is your life and the length of your days, to dwell on the land which Yahweh swore to your fathers, to Abraham, to Isaac and to Jacob, to give them” (Deu 30:20). The fathers themselves died without receiving it: Abraham was given “not so much as to set his foot on”, though it was promised “to him for a possession, and to his seed after him” (Act 7:5), and they “died in faith, not having received the promises” (Heb 11:13). Paul quotes the fifth commandment's promise as still standing, “that you may be long-lived on the earth” (Eph 6:2–3). A promise made to dead men of a land they never held, and of long days on it, can be kept only when they live again; the promise of the land is literal and still to come.",
-      "evidence": [
-        {
-          "ref": "Exo.20.12"
-        },
-        {
-          "ref": "Deu.5.16"
-        },
-        {
-          "ref": "Deu.4.40"
-        },
-        {
-          "ref": "Deu.11.9"
-        },
-        {
-          "ref": "Deu.30.20"
-        },
-        {
-          "ref": "Act.7.5"
-        },
-        {
-          "ref": "Heb.11.13"
-        },
-        {
-          "ref": "Eph.6.2",
-          "to": "Eph.6.3"
-        }
-      ]
-    },
-    {
-      "topic": "resurrection",
-      "statement": "The servant of Isaiah 53 is “cut off from the land of the living” (Isa 53:8), his grave is made with the wicked (53:9), and he “poured out his soul to death” (53:12); yet of the same servant, once his soul is made a guilt offering, it is said, “he will see seed, he will prolong days (יַאֲרִיךְ יָמִים), and the pleasure of Yahweh will prosper in his hand” (53:10). Days prolonged after death are life given back from the dead. Philip read this passage to the Ethiopian and preached Jesus from it (Act 8:32–35); the king of Psa 21 “asked life of you; you gave it to him, length of days for ever and ever” (Psa 21:5), and Christ, “being raised from the dead, dies no more” (Rom 6:9): “I was dead, and behold, I am alive for evermore” (Rev 1:18). The servant had no life to carry on through death; his length of days came by resurrection.",
-      "evidence": [
-        {
-          "ref": "Isa.53.8"
-        },
-        {
-          "ref": "Isa.53.9"
-        },
-        {
-          "ref": "Isa.53.10"
-        },
-        {
-          "ref": "Isa.53.12"
-        },
-        {
-          "ref": "Act.8.32",
-          "to": "Act.8.35"
-        },
-        {
-          "ref": "Psa.21.5"
-        },
-        {
-          "ref": "Rom.6.9"
-        },
-        {
-          "ref": "Rev.1.18"
-        }
-      ]
-    }
-  ],
-  "note": "Root key ארכ, as the brief keys it; no other entry claims its BDB keys. aph.json has a sense for the phrase אֶרֶךְ אַפַּיִם under אַף; the adjective אָרֵךְ itself (a.fs.ac) is here. Aramaic אֲרִיךְ “fitting” (xa.bi.ab, Ezr 4:14) is keyed by the database under root אריכ and kept here as a word of the same spelling; Jastrow derives it from a verb “arrange” (cf. ערך), not from “be long”, so it may belong to another root: open question. Left out as proper names: אֶרֶךְ Erech (a.fs.af, Gen 10:10), the Sumerian city Uruk, not formed from this root; Aramaic אַרְכְּוָיֵא “men of Erech” (xa.bi.ad, Ezr 4:9); and the gentilic אַרְכִּי “Archite” (a.fs.ag; Hushai, 2Sa 15:32, and the border of the Archites at Ataroth, Jos 16:2; TIPNR Archites@Jos.16.2), whose derivation is unknown. No personal name in scripture is formed from the root, so no name file. xa.bi.ak (אֻשֹּׁהִי) is a cross-reference to אשׁ filed here by the alphabet, left out. The healing noun אֲרוּכָה: its link to “be long” is not shown by any verse or cognate; Lane's Book I has no Arabic ʾarika “(a wound) began to heal” (a lead from other lexicons, not found, not cited). Leads not yet followed: Ge'ez ʾarga “grow old” and Old South Arabian ʾrkn (would need Dillmann/Leslau and SabaWeb; the g for k is irregular); Ugaritic ʾrk in DULAT; Akkadian ūmū arkūtu “long days” as a royal blessing (CAD A/2 s.v. arku), which would parallel אֹרֶךְ יָמִים. Peshitta: ܐܘܪܟܐ (Eph 3:18; Rev 21:16) and the aphel of ܐܪܟ (Mat 23:5; 23:13 in the Peshitta's numbering, 23:14 in the Greek; Mrk 12:40; Luk 20:47), from SEDRA root 210 ARC. The Greek μακροχρόνιος of Eph 6:3 is not aligned by MACULA in Exo 20:12 / Deu 5:16, so it is only cited as a verse, not as a rendering."
+  ]
 }
