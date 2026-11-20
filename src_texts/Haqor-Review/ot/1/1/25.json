@@ -350,20 +350,25 @@
     {
       "analysis": {
         "entry": {
-          "existing": "ky",
-          "sense": "ki-that",
+          "draft": {
+            "article_id": "ky",
+            "base": "e10232573d92c89ba24529df0f1715249a78d5ca8a4fa4713bc7e3e66e302614",
+            "change": "Clarify the existing Gen.3.6 citation under ki-that by identifying the role of the second כִּי.",
+            "definition": "After a verb of perception, כִּי introduces what is perceived.",
+            "evidence": "In Gen.3.6 the repeated כִּי introduces a second clause governed by וַתֵּרֶא, and the prefixed וְ coordinates it with the first."
+          },
           "word": 0
         },
-        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, כִּי introduces what God saw: “that it was good.”",
+        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, כִּי introduces the judgment God perceived, “that it was good.”",
         "gloss": "that",
         "language": "he",
         "lemma": "כִּי",
         "morph": "HC",
-        "morphology": "Uninflected conjunction with no prefix or suffix",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
         "qualifier": "conjunction",
         "root": "כי",
         "segments": "כִּי",
-        "sense": "that (what is seen, known or said)"
+        "sense": "Introduces the content of what is seen."
       },
       "position": 16,
       "surface": "כִּי"
