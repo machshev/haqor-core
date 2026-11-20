@@ -134,6 +134,32 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "7aam",
+            "base": "bd3185e4ed4c7870bbc0d430cbea010e707e8af611cf9903a096f47533550fb9",
+            "change": "Add a note to the existing Genesis 9:18 citation explaining how the repeated name identifies Canaan’s father.",
+            "definition": "Ham, son of Noah and father of Canaan.",
+            "evidence": "Genesis 9:18 names Ham among Noah’s sons and then explicitly identifies him as Canaan’s father."
+          },
+          "word": 0
+        },
+        "evidence": "After listing Noah’s sons, the verse repeats Ham’s name in וְחָם הוּא אֲבִי כְנָעַן, “and Ham was the father of Canaan.”",
+        "gloss": "and Ham",
+        "language": "he",
+        "lemma": "חָם",
+        "morph": "HC/Np",
+        "morphology": "The conjunction וְ introduces a new clause. The personal name חָם is its subject, resumed by the masculine singular pronoun הוּא.",
+        "qualifier": "personal name",
+        "root": "חמ",
+        "segments": "וְ/חָם",
+        "sense": "Ham, son of Noah and father of Canaan"
+      },
+      "position": 9,
+      "surface": "וְחָם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "hw2",
           "sense": "hu-is",
           "word": 0
