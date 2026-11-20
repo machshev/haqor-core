@@ -1,1 +1,61 @@
-{"id":"otsar","root":"אצר","status":"draft","updated":"2026-11-20","gloss":"store, treasury","summary":"אוצר denotes a storehouse or treasury where things are kept.","words":[{"lemma":"אוֹצָר","pos":"noun","gender":"m","gloss":"treasury, storehouse","bdb":["a.fl.ac"],"senses":[{"gloss":"treasury","definition":"A place where valuable things are stored.","evidence":[{"ref":"Psa.33.7","role":"defining"}]}]}],"doctrine":[],"note":"Drafted from Psalms 32–33 audit."}
+{
+  "id": "otsar",
+  "root": "אצר",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "store, treasury",
+  "summary": "אוצר denotes a storehouse or treasury where things are kept.",
+  "words": [
+    {
+      "lemma": "אוֹצָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "treasury, storehouse",
+      "bdb": [
+        "a.fl.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "treasury",
+          "definition": "A place where valuable things are stored.",
+          "evidence": [
+            {
+              "ref": "Psa.33.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָצַר",
+      "pos": "verb",
+      "gloss": "store up",
+      "bdb": [
+        "a.fl.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "store up",
+          "senses": [
+            {
+              "gloss": "store up",
+              "definition": "To gather and store possessions in a treasury.",
+              "evidence": [
+                {
+                  "ref": "Psa.33.7"
+                },
+                {
+                  "ref": "Deu.28.12"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from Psalms 32–33 audit."
+}
