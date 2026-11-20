@@ -7,8 +7,26 @@
   "summary": "To be anxious or worried.",
   "words": [
     {
-      "lemma": "דְּאָגָה", "pos": "noun", "gender": "f", "gloss": "anxiety", "bdb": ["d.ac.ac"],
-      "senses": [{"gloss":"anxiety","definition":"Anxiety weighs down the heart.","evidence":[{"ref":"Pro.12.25","role":"defining"}]}]
+      "lemma": "דְּאָגָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "anxiety",
+      "bdb": [
+        "d.ac.ac"
+      ],
+      "senses": [
+        {
+          "id": "anxiety",
+          "gloss": "anxiety",
+          "definition": "Anxiety weighs down the heart.",
+          "evidence": [
+            {
+              "ref": "Pro.12.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     },
     {
       "lemma": "דָּאַג",
@@ -23,6 +41,7 @@
           "gloss": "be anxious",
           "senses": [
             {
+              "id": "be-anxious",
               "gloss": "be anxious",
               "definition": "The Psalmist confesses his iniquity and is anxious because of it.",
               "evidence": [

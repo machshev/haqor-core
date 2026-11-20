@@ -688,6 +688,7 @@
       "summary": "The Aramaic of Ezra and Daniel has the Hebrew’s word with its own vowels: מְאָה a hundred, dual מָאתַיִן two hundred, and for four hundred the digit with the singular, אַרְבַּע מְאָה, where Hebrew has the plural אַרְבַּע מֵאוֹת.",
       "senses": [
         {
+          "id": "a-hundred",
           "gloss": "a hundred",
           "definition": "The number a hundred, of animals offered, of talents and measures, and with twenty of Darius’ satraps.",
           "kin": [
@@ -711,6 +712,7 @@
           ],
           "senses": [
             {
+              "id": "two-hundred-dual",
               "gloss": "two hundred (dual)",
               "definition": "The dual מָאתַיִן, as Hebrew מָאתַיִם.",
               "kin": [
@@ -725,6 +727,7 @@
               ]
             },
             {
+              "id": "four-hundred",
               "gloss": "four hundred (אַרְבַּע מְאָה)",
               "definition": "A digit before the singular for the higher hundreds.",
               "kin": [
@@ -770,6 +773,7 @@
       "summary": "The Peshitta’s ܡܐܐ (mā), a hundred, with ܡܐܬܝܢ (mātēn) two hundred. “A hundredfold” is חַד בַּמָאא, “one in a hundred”, and “by hundreds” is the word doubled, מָאא מָאא. SEDRA files the higher hundreds as lexemes under their digits: תְּלָתמָאא three hundred, אַרְבַּעמָאא four hundred, חַמֵשׁמָאא five hundred, שֵׁתמָאא six hundred.",
       "senses": [
         {
+          "id": "a-hundred-2",
           "gloss": "a hundred",
           "definition": "The number a hundred.",
           "kin": [
@@ -817,6 +821,7 @@
           ],
           "senses": [
             {
+              "id": "two-hundred-2",
               "gloss": "two hundred (מַאתֵין)",
               "definition": "The dual, two hundred.",
               "kin": [
@@ -847,6 +852,7 @@
               ]
             },
             {
+              "id": "three-hundred-and-upward",
               "gloss": "three hundred and upward (compounds)",
               "definition": "The digit joined to מָאא in one word for the higher hundreds.",
               "kin": [
@@ -881,6 +887,7 @@
               ]
             },
             {
+              "id": "by-hundreds",
               "gloss": "by hundreds (מָאא מָאא)",
               "definition": "The word doubled for companies of a hundred each, as the Hebrew’s “by hundreds”.",
               "kin": [
@@ -897,6 +904,7 @@
           ]
         },
         {
+          "id": "a-hundredfold",
           "gloss": "a hundredfold (חַד בַּמָאא)",
           "definition": "“One in a hundred”: a hundred for one, of a harvest and of what is repaid to one who leaves all.",
           "kin": [

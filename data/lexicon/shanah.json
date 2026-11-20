@@ -693,6 +693,7 @@
               ]
             },
             {
+              "id": "move-transfer",
               "gloss": "move, transfer",
               "definition": "To move someone to another place.",
               "evidence": [
@@ -713,6 +714,7 @@
           "gloss": "be changed",
           "senses": [
             {
+              "id": "be-changed",
               "gloss": "be changed",
               "definition": "To be made other.",
               "evidence": [
@@ -730,6 +732,7 @@
           "gloss": "disguise oneself",
           "senses": [
             {
+              "id": "change-oneself-disguise-oneself",
               "gloss": "change oneself, disguise oneself",
               "definition": "To make oneself look other than one is, so as not to be known.",
               "evidence": [
@@ -1338,6 +1341,7 @@
       "summary": "Once only, of God’s chariots at Sinai, “thousands of שִׁנְאָן”: thousands upon thousands, thousands repeated. The sense rests on the parallel “twice ten thousand” and on the root “repeat”; the א in the spelling is unexplained.",
       "senses": [
         {
+          "id": "repetition-thousands-upon-thousands",
           "gloss": "repetition (thousands upon thousands)",
           "definition": "Thousands repeated, matching “two myriads” in the same line.",
           "evidence": [
@@ -1373,6 +1377,7 @@
           "gloss": "recount, rehearse",
           "senses": [
             {
+              "id": "recount-rehearse-in-song",
               "gloss": "recount, rehearse (in song or lament)",
               "definition": "To tell over again, in song or lament, what was done.",
               "evidence": [
@@ -1425,6 +1430,7 @@
       "summary": "Biblical Aramaic for “year”, construct שְׁנַת, plural שְׁנִין, used as the Hebrew is for age and for the years of kings. BDB’s key also counts the many Hebrew שְׁנַת tokens by spelling; the Aramaic uses are the verses cited.",
       "senses": [
         {
+          "id": "year-of-age-of",
           "gloss": "year (of age; of a reign)",
           "definition": "A year of a life or of a king’s reign.",
           "evidence": [
@@ -1481,6 +1487,7 @@
           "gloss": "be changed; be different",
           "senses": [
             {
+              "id": "be-changed-participle-different",
               "gloss": "be changed; (participle) different",
               "definition": "To become other; in the participle, unlike the rest.",
               "evidence": [
@@ -1521,6 +1528,7 @@
           "gloss": "change; set aside",
           "senses": [
             {
+              "id": "change-alter-set-aside",
               "gloss": "change, alter; set aside (a command)",
               "definition": "To make other, or to set aside a word.",
               "evidence": [
@@ -1585,6 +1593,7 @@
           "gloss": "be changed",
           "senses": [
             {
+              "id": "be-changed-2",
               "gloss": "be changed",
               "definition": "To be changed, of a time, a face or a look.",
               "evidence": [
@@ -1627,6 +1636,7 @@
       "summary": "Biblical Aramaic for “second”, the Aramaic form of שֵׁנִי, with ת for the older ṯ.",
       "senses": [
         {
+          "id": "second-2",
           "gloss": "second",
           "definition": "The second in a series.",
           "evidence": [
@@ -1658,6 +1668,7 @@
       "summary": "Biblical Aramaic, the adverb formed from תִּנְיָן: a second time, again.",
       "senses": [
         {
+          "id": "a-second-time",
           "gloss": "a second time",
           "definition": "Again, once more.",
           "evidence": [
@@ -1691,6 +1702,7 @@
       "summary": "Biblical Aramaic for “two”, feminine תַּרְתֵּין: the Aramaic of שְׁנַיִם, with ת for the older ṯ and r for the n (Arabic iṯnān, Ugaritic ṯn). With עֲשַׂר it makes twelve.",
       "senses": [
         {
+          "id": "two-with-twelve",
           "gloss": "two; (with עֲשַׂר) twelve",
           "definition": "The number two, alone or in twelve and sixty-two.",
           "evidence": [
@@ -1731,6 +1743,7 @@
       "summary": "The Peshitta’s ܫܢܬܐ (šantā), plural ܫܢܝܢ (šnīn): its New Testament keeps the Hebrew’s years, the yearly feasts and the high priest’s “once a year”, and reads Isa 61:2 as “the acceptable year of the Lord”.",
       "senses": [
         {
+          "id": "year",
           "gloss": "year",
           "definition": "A year: of the feasts, of a life, of the Hebrew’s appointed year.",
           "evidence": [
@@ -1830,6 +1843,7 @@
           "gloss": "be removed",
           "senses": [
             {
+              "id": "be-removed-be-carried",
               "gloss": "be removed, be carried over",
               "definition": "To be moved from one place to another.",
               "evidence": [
@@ -1851,6 +1865,7 @@
           "gloss": "be out of one’s mind",
           "senses": [
             {
+              "id": "be-out-of-one",
               "gloss": "be out of one’s mind, be mad",
               "definition": "To be gone from one’s right mind.",
               "evidence": [
@@ -1889,6 +1904,7 @@
       "summary": "The Peshitta’s ܬܢܝܢܐ, the Syriac of שֵׁנִי, with ת for the older ṯ; in its New Testament only of “the second death”.",
       "senses": [
         {
+          "id": "second-3",
           "gloss": "second",
           "definition": "The second, after a first.",
           "evidence": [
@@ -1927,6 +1943,7 @@
       "summary": "The Peshitta’s ܬܢܝܢܘܬ, the adverb of ܬܢܝܢܐ, as Biblical Aramaic תִּנְיָנוּת.",
       "senses": [
         {
+          "id": "twice",
           "gloss": "twice",
           "definition": "A second time.",
           "evidence": [
@@ -1955,6 +1972,7 @@
       "summary": "The Peshitta’s ܬܪܝܢ, feminine ܬܪܬܝܢ, as Biblical Aramaic תְּרֵין: the two witnesses of the law, the two made one flesh, the two made one new man.",
       "senses": [
         {
+          "id": "two",
           "gloss": "two",
           "definition": "The number two; with a suffix, the two of them.",
           "evidence": [

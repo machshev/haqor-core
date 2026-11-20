@@ -1,12 +1,37 @@
 {
-  "id":"kapash",
-  "root":"כפש",
-  "status":"draft",
-  "updated":"2026-11-19",
-  "gloss":"press, bend",
-  "summary":"To press or bend together. The pasture noun כַּר is kept under its own root because the connection is uncertain.",
-  "words":[
-    {"lemma":"כָּפַשׁ","pos":"verb","gloss":"press, bend","bdb":["k.cx.aa"],"stems":[{"stem":"qal","gloss":"bend","senses":[{"gloss":"bend","definition":"The verb's wider uses describe pressing or bending, while the Psalm's pasture noun is a distinct sibling word.","evidence":[{"ref":"Psa.37.20"}]}]}]}
+  "id": "kapash",
+  "root": "כפש",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "press, bend",
+  "summary": "To press or bend together. The pasture noun כַּר is kept under its own root because the connection is uncertain.",
+  "words": [
+    {
+      "lemma": "כָּפַשׁ",
+      "pos": "verb",
+      "gloss": "press, bend",
+      "bdb": [
+        "k.cx.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bend",
+          "senses": [
+            {
+              "id": "bend",
+              "gloss": "bend",
+              "definition": "The verb's wider uses describe pressing or bending, while the Psalm's pasture noun is a distinct sibling word.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.20"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "note":"The pasture noun כַּר is kept in the separate kar-pasture entry because its root connection is uncertain. Other sibling words and cognate support need review."
+  "note": "The pasture noun כַּר is kept in the separate kar-pasture entry because its root connection is uncertain. Other sibling words and cognate support need review."
 }
