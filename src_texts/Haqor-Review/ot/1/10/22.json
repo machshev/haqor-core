@@ -125,6 +125,57 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-20",
+              "english": "Lud",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "Lud appears between Arpachshad and Aram under the heading “the sons of Shem.”",
+                  "ref": "Gen.10.22",
+                  "role": "defining"
+                },
+                {
+                  "note": "The genealogy again names Lud between Arpachshad and Aram among Shem’s sons.",
+                  "ref": "1Ch.1.17",
+                  "role": "example"
+                }
+              ],
+              "gloss": "Lud",
+              "id": "lwwd",
+              "name": "לוּד",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis names Lud among the sons of Shem. The meaning of his name is uncertain.",
+              "updated": "2026-11-20"
+            },
+            "article_id": "lwwd",
+            "base": null,
+            "change": "Add a personal-name article for לוּד.",
+            "definition": "Lud, a son of Shem.",
+            "evidence": "Genesis 10:22 names Lud as the fourth of Shem’s five sons. The parallel list in 1 Chronicles 1:17 gives the same sequence."
+          },
+          "word": 0
+        },
+        "evidence": "The heading בְּנֵי שֵׁם (“the sons of Shem”) identifies Lud, listed between Arpachshad and Aram, as a son of Shem. Genesis 10:13 uses the distinct plural form לוּדִים in Mizraim’s genealogy. Neither passage explains the name’s etymology.",
+        "gloss": "and Lud",
+        "language": "he",
+        "lemma": "לוּד",
+        "morph": "HC/Np",
+        "morphology": "The conjunction וְ means “and” and joins the personal name לוּד to the list of Shem’s sons.",
+        "qualifier": "",
+        "root": "",
+        "segments": "וְ/לוּד",
+        "sense": "Lud, son of Shem."
+      },
+      "position": 5,
+      "surface": "וְלוּד"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2earaam",
           "word": 0
         },
