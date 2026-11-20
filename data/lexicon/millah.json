@@ -1,0 +1,146 @@
+{
+  "id": "millah",
+  "root": "מלל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech"
+  ],
+  "gloss": "speak, word",
+  "summary": "Psalm 19 says that the heavens’ words reach the end of the world. Job repeatedly asks his hearers to attend to his words.",
+  "words": [
+    {
+      "lemma": "מִלָּה",
+      "bdb": [
+        "m.cf.ab"
+      ],
+      "pos": "noun",
+      "gloss": "word, utterance",
+      "senses": [
+        {
+          "gloss": "word, utterance",
+          "definition": "A word may still be on the tongue, or it may already have reached a hearer.",
+          "evidence": [
+            {
+              "ref": "Psa.19.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.139.4"
+            },
+            {
+              "ref": "Job.21.2"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-comparison"
+      ]
+    },
+    {
+      "lemma": "מָלַל",
+      "bdb": [
+        "m.cf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "utter",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "say, recount",
+          "senses": [
+            {
+              "gloss": "say, recount",
+              "definition": "Sarah asks who would have told Abraham that she would nurse children.",
+              "evidence": [
+                {
+                  "ref": "Gen.21.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.106.2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְלַל",
+      "bdb": [
+        "xm.ai.aa"
+      ],
+      "pos": "verb",
+      "gloss": "speak",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "speak",
+          "senses": [
+            {
+              "gloss": "speak",
+              "definition": "Daniel speaks to the king from the lions’ pit.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.7.8"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "מִלָּה",
+      "bdb": [
+        "xm.ai.ab"
+      ],
+      "pos": "noun",
+      "gloss": "word, matter",
+      "senses": [
+        {
+          "gloss": "word, matter",
+          "definition": "The king demands an answer concerning the matter he has made known to the wise men.",
+          "evidence": [
+            {
+              "ref": "Dan.2.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.2.10"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "arc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-comparison",
+      "lang": "arc",
+      "form": "מִילְּתָא",
+      "translit": "millətā",
+      "gloss": "word, affair",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "מִילְּתָא, Targum Proverbs 25:15"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The similarly spelled verbs for rubbing, withering and circumcising have distinct uses."
+}
