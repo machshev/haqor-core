@@ -94,8 +94,98 @@
         "position": 16
       }
     ],
-    "name_review_base": null,
-    "translation": "[And|0] [Lamech|1] [said|0] [to his wives|2], “​[Adah|3] [and Zillah|4], [hear|5] [my voice|6]. [Wives of|7] [Lamech|8], [give ear to|9] [my word|10]: [For|11] [I killed|13] [a man|12] [for my wound|14], [even a young man|15] [for my bruise|16]."
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיֹּאמֶר"
+      },
+      {
+        "evidence": "The speaker addresses his wives Adah and Zillah, the pair named in Genesis 4:19.",
+        "key": "Lamech@Gen.4.18",
+        "position": 1,
+        "surface": "לֶמֶךְ"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "לְנָשָׁיו"
+      },
+      {
+        "evidence": "Lamech addresses Adah alongside Zillah as one of his wives, matching Genesis 4:19.",
+        "key": "Adah@Gen.4.19",
+        "position": 3,
+        "surface": "עָדָה"
+      },
+      {
+        "evidence": "Lamech addresses Zillah alongside Adah as one of his wives, matching Genesis 4:19.",
+        "key": "Zillah@Gen.4.19",
+        "position": 4,
+        "surface": "וְצִלָּה"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "שְׁמַעַן"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "קוֹלִי"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "נְשֵׁי"
+      },
+      {
+        "evidence": "The speaker calls Adah and Zillah “wives of Lamech,” repeating his own name.",
+        "key": "Lamech@Gen.4.18",
+        "position": 8,
+        "surface": "לֶמֶךְ"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "הַאְזֵנָּה"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "אִמְרָתִי"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "כִּי"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "אִישׁ"
+      },
+      {
+        "key": null,
+        "position": 13,
+        "surface": "הָרַגְתִּי"
+      },
+      {
+        "key": null,
+        "position": 14,
+        "surface": "לְפִצְעִי"
+      },
+      {
+        "key": null,
+        "position": 15,
+        "surface": "וְיֶלֶד"
+      },
+      {
+        "key": null,
+        "position": 16,
+        "surface": "לְחַבֻּרָתִי"
+      }
+    ],
+    "translation": "[And|0] [Lamech|1] [said|0] [to his wives|2], “​[Adah|3] [and Zillah|4], [hear|5] [my voice|6]. [Wives of|7] [Lamech|8], [give ear to|9] [my word|10], [for|11] [I killed|13] [a man|12] [for my wound|14], [even a young man|15] [for my bruise|16]."
   },
   "source": "ot",
   "verse": 23,
