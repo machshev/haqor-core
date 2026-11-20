@@ -481,6 +481,134 @@ pub fn publish(queue: &Connection, src: &Path, data: &Path, lexicon: &Path) -> R
     Ok(())
 }
 
+/// Publish one completed verse while the review coordinator is running.
+///
+/// The records file is locked for the whole read/merge/write operation. This
+/// makes a verse the publication boundary and means that two worker results
+/// cannot overwrite each other's people or place assignments. The operation is
+/// idempotent, so a coordinator restart may safely retry it.
+pub fn publish_one(
+    queue: &Connection,
+    src: &Path,
+    data: &Path,
+    lexicon: &Path,
+    edition: &str,
+    reference: i64,
+) -> Result<()> {
+    let lock = fs::File::open(src.join(haqor_lexicon::PEOPLE_RECORDS))?;
+    lock.try_lock()
+        .context("another process is publishing people and places")?;
+    let catalog = People::load(src, data)?;
+    let review: Value = queue
+        .query_row(
+            "SELECT result FROM job WHERE source=? AND ref=? AND pos=-1 AND state='done'",
+            params![edition, reference],
+            |r| r.get::<_, String>(0),
+        )
+        .map(|s| serde_json::from_str(&s))??;
+    let packet: Value = queue
+        .query_row(
+            "SELECT packet FROM verse WHERE source=? AND ref=?",
+            params![edition, reference],
+            |r| r.get::<_, String>(0),
+        )
+        .map(|s| serde_json::from_str(&s))??;
+    let identified = review["entities"]
+        .as_array()
+        .context("legacy verse: run its identity review first")?;
+    let mut index = catalog.reviewed;
+    let mut next = catalog.ids.keys().copied().max().unwrap_or(0).max(100_000);
+    let mut add_to_article: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
+    let mut analysis = queue.prepare_cached(
+        "SELECT result FROM job WHERE source=? AND ref=? AND pos=? AND state='done'",
+    )?;
+    let mut words = Vec::new();
+    for w in packet["words"].as_array().context("invalid verse")? {
+        let position = w["position"].as_u64().context("invalid position")? as u32;
+        let mention = identified.iter().find(|m| m["position"] == position);
+        let key = mention.and_then(|m| m["key"].as_str());
+        if let Some((m, key)) = mention.zip(key) {
+            let word: Value = serde_json::from_str(
+                &analysis.query_row(params![edition, reference, position], |r| {
+                    r.get::<_, String>(0)
+                })?,
+            )?;
+            if let Some(proposal) = m.get("new") {
+                let b: Bearer = serde_json::from_value(proposal.clone())?;
+                index.add_record(
+                    key,
+                    &b,
+                    word["lemma"].as_str().context("missing lemma")?,
+                    &mut next,
+                )?;
+            }
+            let b = catalog
+                .records
+                .get(key)
+                .or_else(|| index.records.get(key).map(|r| &r.bearer))
+                .with_context(|| format!("unknown identity {key}"))?;
+            let name_article: bool = queue.query_row(
+                "SELECT EXISTS(SELECT 1 FROM dependency WHERE source=?1 AND ref=?2 AND pos=?3 AND name=1 UNION ALL SELECT 1 FROM article WHERE source=?1 AND ref=?2 AND pos=?3 AND name=1)",
+                params![edition, reference, position], |r| r.get(0))?;
+            if b.kind == "person" && name_article {
+                if let Some(id) = word["entry"]["existing"]
+                    .as_str()
+                    .or(word["entry"]["draft"]["article_id"].as_str())
+                {
+                    add_to_article
+                        .entry(id.into())
+                        .or_default()
+                        .insert(key.into());
+                }
+            }
+        }
+        words.push(Mention {
+            position,
+            surface: w["surface"].as_str().context("missing surface")?.into(),
+            key: key.map(str::to_owned),
+            evidence: mention
+                .and_then(|m| m["evidence"].as_str())
+                .map(str::to_owned),
+        });
+    }
+    let current = index.verses.entry(edition.to_owned()).or_default();
+    let old = current.get(&reference);
+    if old != Some(&words) {
+        ensure!(
+            serde_json::to_value(old)? == review["name_review_base"] || old == Some(&words),
+            "another process changed {edition} {reference}; the verse needs reconciliation"
+        );
+        current.insert(reference, words);
+        let path = src.join(PATH);
+        fs::create_dir_all(path.parent().unwrap())?;
+        let tmp = path.with_extension(format!("{}.tmp", std::process::id()));
+        fs::write(&tmp, serde_json::to_string_pretty(&index)? + "\n")?;
+        fs::rename(tmp, path)?;
+    }
+    let writer = fs::File::open(lexicon.join("sources.json"))?;
+    writer.try_lock().context("lexicon is being edited")?;
+    let refs = haqor_lexicon::verses_of(&catalog.corpus)?;
+    for (id, keys) in add_to_article {
+        ensure!(
+            id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
+            "invalid article id"
+        );
+        let path = lexicon.join("names").join(format!("{id}.json"));
+        if !path.try_exists()? {
+            continue;
+        }
+        let mut article: Value = serde_json::from_slice(&fs::read(&path)?)?;
+        if add_bearers(&mut article, &keys)? {
+            article["status"] = json!("draft");
+            article.as_object_mut().unwrap().remove("reviewed");
+            article["updated"] =
+                json!(queue.query_row("SELECT date('now')", [], |r| r.get::<_, String>(0))?);
+            haqor_lexicon::save_entry(lexicon, &serde_json::to_string_pretty(&article)?, &refs)?;
+        }
+    }
+    Ok(())
+}
+
 fn add_bearers(article: &mut Value, keys: &BTreeSet<String>) -> Result<bool> {
     let people = article["people"]
         .as_array_mut()
