@@ -3,7 +3,7 @@
   "root": "יקר",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "value"
   ],
@@ -30,6 +30,110 @@
         }
       ],
       "gloss": "precious"
+    },
+    {
+      "lemma": "יְקָר",
+      "gloss": "preciousness",
+      "bdb": [
+        "j.dd.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "preciousness",
+          "definition": "Value or honour assigned to something precious.",
+          "evidence": [
+            {
+              "ref": "Psa.36.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָקַר",
+      "gloss": "be precious",
+      "bdb": [
+        "j.dd.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be precious",
+          "senses": [
+            {
+              "gloss": "be precious",
+              "definition": "To be valued as precious.",
+              "evidence": [
+                {
+                  "ref": "Psa.49.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make precious",
+          "senses": [
+            {
+              "gloss": "make precious",
+              "definition": "To make or regard as precious.",
+              "evidence": [
+                {
+                  "ref": "Psa.116.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְקָר",
+      "gloss": "honour",
+      "bdb": [
+        "xj.ak.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "honour",
+          "definition": "Honour or esteem.",
+          "evidence": [
+            {
+              "ref": "Psa.21.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַקִּיר",
+      "gloss": "dear",
+      "bdb": [
+        "j.dd.ad"
+      ],
+      "pos": "adjective",
+      "senses": [
+        {
+          "gloss": "dear",
+          "definition": "Highly valued and dear.",
+          "evidence": [
+            {
+              "ref": "Jer.31.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [],
