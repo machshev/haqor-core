@@ -1,0 +1,294 @@
+{
+  "id": "ganab",
+  "root": "גנב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "steal, thief",
+  "summary": "The law distinguishes a thief caught breaking in from the stolen property found in his possession. The verb also describes kidnapping and the stealth with which one person can gain another’s trust.",
+  "words": [
+    {
+      "lemma": "גָּנַב",
+      "pos": "verb",
+      "gloss": "steal, take secretly",
+      "bdb": [
+        "c.cn.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take what belongs to another",
+          "senses": [
+            {
+              "gloss": "take what belongs to another",
+              "definition": "The command forbids theft. Kidnapping for sale takes a person, and Laban accuses Jacob of stealing his gods.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.24.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.31.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "steal away",
+          "senses": [
+            {
+              "gloss": "steal away",
+              "definition": "Absalom wins the people’s hearts by securing their loyalty to himself. Jeremiah denounces prophets who steal one another’s words.",
+              "evidence": [
+                {
+                  "ref": "2Sa.15.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.23.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be stolen",
+          "senses": [
+            {
+              "gloss": "be stolen",
+              "definition": "Joseph says he was stolen away from the land of the Hebrews. A word comes to Job’s companion by stealth.",
+              "evidence": [
+                {
+                  "ref": "Gen.40.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.4.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be stolen",
+          "senses": [
+            {
+              "gloss": "be stolen",
+              "definition": "The law considers livestock stolen from the care of the person entrusted with it.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "steal away",
+          "senses": [
+            {
+              "gloss": "steal away",
+              "definition": "Ashamed after the king mourns for Absalom, the soldiers slip into the city like people fleeing battle.",
+              "evidence": [
+                {
+                  "ref": "2Sa.19.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-steal"
+      ]
+    },
+    {
+      "lemma": "גַּנָּב",
+      "pos": "noun",
+      "gloss": "thief",
+      "bdb": [
+        "c.cn.ac"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "thief",
+          "definition": "A housebreaker can be caught in the act. Psalm 50 addresses someone who sees a thief and willingly sides with him.",
+          "evidence": [
+            {
+              "ref": "Exo.22.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.2.26",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.50.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-thief"
+      ]
+    },
+    {
+      "lemma": "גְּנֵבָה",
+      "pos": "noun",
+      "gloss": "stolen property",
+      "bdb": [
+        "c.cn.ab"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "gloss": "stolen property",
+          "definition": "The thief makes restitution for what he took. If the animal is found alive in his possession, he pays double.",
+          "evidence": [
+            {
+              "ref": "Exo.22.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.22.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-steal"
+      ]
+    },
+    {
+      "lemma": "גְּנַב",
+      "pos": "verb",
+      "gloss": "steal",
+      "lang": "syc",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "steal",
+          "senses": [
+            {
+              "gloss": "steal",
+              "definition": "Jesus recites the command against stealing. The thief comes to steal and destroy.",
+              "evidence": [
+                {
+                  "ref": "Mat.19.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jhn.10.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-steal"
+      ]
+    },
+    {
+      "lemma": "גַּנָּבָא",
+      "pos": "noun",
+      "gloss": "thief",
+      "lang": "syc",
+      "senses": [
+        {
+          "gloss": "thief",
+          "definition": "Judas held the money bag and took what was put into it.",
+          "evidence": [
+            {
+              "ref": "Jhn.12.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.24.43",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-thief"
+      ]
+    },
+    {
+      "lemma": "גַּנָּבוּתָא",
+      "pos": "noun",
+      "gloss": "theft",
+      "lang": "syc",
+      "senses": [
+        {
+          "gloss": "theft",
+          "definition": "Jesus includes thefts among the evils that come from within a person.",
+          "evidence": [
+            {
+              "ref": "Mat.15.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Mrk.7.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-steal"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-steal",
+      "lang": "arc",
+      "form": "גְּנַב",
+      "translit": "gənab",
+      "gloss": "steal",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "גְּנַב C01079, Targum Genesis 40:15"
+        }
+      ]
+    },
+    {
+      "id": "arc-thief",
+      "lang": "arc",
+      "form": "גַּנָּב",
+      "translit": "gannāb",
+      "gloss": "thief",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "גַּנָּב C01081, Targum Exodus 22:1"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "SEDRA 598–600 attest the Syriac words. Genubath, the son of an Edomite father and an Egyptian mother, has a final ת. The account supplies no basis for reading his name as an instance of the Hebrew verb."
+}

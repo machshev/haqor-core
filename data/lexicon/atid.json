@@ -1,2 +1,285 @@
 {
-  "id":"atid","root":"עתד","status":"draft","created":"2026-11-20","updated":"2026-11-19","gloss":"prepare, ready","summary":"עתד concerns readiness and preparation. An עתּוּד is a prepared he-goat for sacrifice or leadership, while the verb and adjective describe being ready.","words":[{"lemma":"עַתּוּד","bdb":["p.gi.ac"],"pos":"noun","gender":"m","gloss":"he-goat","senses":[{"gloss":"he-goat","definition":"He-goats are counted among flocks and can represent leaders of a people.","evidence":[{"ref":"Isa.14.9","role":"defining"},{"ref":"Psa.50.13"}]}]},{"lemma":"עָתִיד","bdb":["p.gi.ab"],"pos":"adjective","gloss":"ready, prepared","senses":[{"gloss":"ready","definition":"What is ready has been prepared for its appointed use or time.","evidence":[{"ref":"Pro.24.27","role":"defining"}]}]},{"lemma":"עָתֹד","bdb":["p.gi.aa"],"pos":"verb","gloss":"be ready","stems":[{"stem":"qal","gloss":"be ready","senses":[{"gloss":"prepare","definition":"People prepare themselves and prepare offerings for appointed purposes.","evidence":[{"ref":"Psa.65.10","role":"defining"}]}]}]}],"note":"Proper names עֲתָיָה and עֲתָךְ are left for name review."}
+  "id": "atid",
+  "root": "עתד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "ready, prepare, he-goat",
+  "summary": "The farmer makes his field ready and a king stands ready for battle. An animal noun with the same consonants names male goats in flocks and sacrifices. Yahweh asks whether he drinks the blood of such goats.",
+  "words": [
+    {
+      "lemma": "עַתּוּד",
+      "pos": "noun",
+      "gloss": "he-goat, leader",
+      "bdb": [
+        "p.gi.ac"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "he-goat",
+          "definition": "Jacob sees male goats mounting the flock. They are distinguished from rams and lambs in offerings.",
+          "evidence": [
+            {
+              "ref": "Gen.31.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.7.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.50.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.50.13",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "leader of a people",
+          "definition": "The kings of the nations rise in the underworld scene. The goats at the head of a flock also picture people taking the lead in departure.",
+          "evidence": [
+            {
+              "ref": "Isa.14.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.50.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-goat"
+      ]
+    },
+    {
+      "lemma": "עָתִיד",
+      "pos": "adjective",
+      "gloss": "ready, destined",
+      "bdb": [
+        "p.gi.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "ready, destined",
+          "definition": "The king is ready for battle. The proclamation orders peoples to be ready for the appointed day.",
+          "evidence": [
+            {
+              "ref": "Job.15.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Est.3.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.32.35",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ready"
+      ]
+    },
+    {
+      "lemma": "עָתַד",
+      "pos": "verb",
+      "gloss": "make ready",
+      "bdb": [
+        "p.gi.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "prepare",
+          "senses": [
+            {
+              "gloss": "prepare",
+              "definition": "Work the land and get it ready before building a house.",
+              "evidence": [
+                {
+                  "ref": "Pro.24.27",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "be destined for",
+          "senses": [
+            {
+              "gloss": "be destined for",
+              "definition": "The houses where the wicked man settles are destined to become heaps.",
+              "evidence": [
+                {
+                  "ref": "Job.15.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ready"
+      ]
+    },
+    {
+      "lemma": "עֲתִיד",
+      "pos": "adjective",
+      "gloss": "ready",
+      "bdb": [
+        "xp.aq.ae"
+      ],
+      "lang": "arc",
+      "senses": [
+        {
+          "gloss": "ready",
+          "definition": "Nebuchadnezzar asks whether the men are ready to fall down at the sound of the music.",
+          "evidence": [
+            {
+              "ref": "Dan.3.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ready"
+      ]
+    },
+    {
+      "lemma": "עֲתַד",
+      "pos": "verb",
+      "gloss": "prepare, be about to",
+      "lang": "syc",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be about to",
+          "senses": [
+            {
+              "gloss": "be about to",
+              "definition": "Jesus begins to show his disciples what is to happen to him at Jerusalem.",
+              "evidence": [
+                {
+                  "ref": "Mat.16.21",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "prepare",
+          "senses": [
+            {
+              "gloss": "prepare",
+              "definition": "The commander orders soldiers prepared for Paul’s escort.",
+              "evidence": [
+                {
+                  "ref": "Act.23.23",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ready"
+      ]
+    },
+    {
+      "lemma": "עֲתִידָא",
+      "pos": "adjective",
+      "gloss": "things to come",
+      "lang": "syc",
+      "senses": [
+        {
+          "gloss": "things to come",
+          "definition": "Jesus promises that the Spirit will announce things to come.",
+          "evidence": [
+            {
+              "ref": "Jhn.16.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ready"
+      ]
+    },
+    {
+      "lemma": "עֲתִידָאִית",
+      "pos": "adverb",
+      "gloss": "readily",
+      "lang": "syc",
+      "senses": [
+        {
+          "gloss": "readily",
+          "definition": "Peter says he came promptly when summoned.",
+          "evidence": [
+            {
+              "ref": "Act.10.29",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ready"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-goat",
+      "lang": "ar",
+      "form": "عَتُودٌ",
+      "translit": "ʿatūd",
+      "gloss": "young goat strong enough to pasture",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1945, عتد n27949"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "arc-ready",
+      "lang": "arc",
+      "form": "עֲתִיד",
+      "translit": "ʿăṯīd",
+      "gloss": "ready, destined",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "עֲתִיד P01531, Targum Deuteronomy 32:35"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic goat name directly supports the animal sense. Scripture offers no comparable explanation connecting the goat to readiness. SEDRA 2432–2434 attest the Syriac words. The personal name Athaiah lacks the root’s final daleth and the account in Nehemiah 11:4 gives no naming explanation."
+}

@@ -1,0 +1,145 @@
+{
+  "id": "naaph",
+  "root": "נאפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "commit adultery",
+  "summary": "Adultery violates a marriage by taking someone else’s spouse. The prophets apply the charge to Israel’s worship of other gods, and Psalm 50 reproaches one who keeps company with adulterers.",
+  "words": [
+    {
+      "lemma": "נָאַף",
+      "pos": "verb",
+      "gloss": "commit adultery",
+      "bdb": [
+        "n.ae.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "violate the marriage bond",
+          "senses": [
+            {
+              "gloss": "violate the marriage bond",
+              "definition": "The command forbids adultery. Leviticus specifies a man lying with his neighbour’s wife. Jesus cites the command and addresses the desire behind the act.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.20.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mat.5.27",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mat.5.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "commit adultery, engage in unfaithfulness",
+          "senses": [
+            {
+              "gloss": "commit adultery, engage in unfaithfulness",
+              "definition": "The psalm censures sharing the company of adulterers. Ezekiel portrays Jerusalem taking strangers in place of her husband.",
+              "evidence": [
+                {
+                  "ref": "Psa.50.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.16.32",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.23.37",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-adultery"
+      ]
+    },
+    {
+      "lemma": "נִאֻף",
+      "pos": "noun",
+      "gloss": "acts of adultery",
+      "bdb": [
+        "n.ae.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "acts of adultery",
+          "definition": "Jeremiah sets the city’s adulteries beside shameless conduct and its unclean worship.",
+          "evidence": [
+            {
+              "ref": "Jer.13.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.23.43",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-adultery"
+      ]
+    },
+    {
+      "lemma": "נַאֲפוּף",
+      "pos": "noun",
+      "gloss": "adulterous conduct",
+      "bdb": [
+        "n.ae.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "adulterous conduct",
+          "definition": "The children are told to plead with their mother to remove the signs of infidelity.",
+          "evidence": [
+            {
+              "ref": "Hos.2.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-adultery"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-adultery",
+      "lang": "arc",
+      "form": "נְאַף",
+      "translit": "nəʾaf",
+      "gloss": "commit adultery",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נְאַף N00026, Targum Isaiah 57:3"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Peshitta commonly uses the root גור for adultery. The Aramaic Targum also has a verb corresponding in form to the Hebrew."
+}

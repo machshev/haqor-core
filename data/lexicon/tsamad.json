@@ -1,0 +1,204 @@
+{
+  "id": "tsamad",
+  "root": "צמד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "bind together, pair, fitting",
+  "summary": "A pair of oxen pull together and a bracelet fastens around an arm. Israel binds itself to Baal Peor. Psalm 50 accuses a speaker whose tongue couples words of deceit.",
+  "words": [
+    {
+      "lemma": "צֶמֶד",
+      "pos": "noun",
+      "gloss": "yoked pair, land ploughed by a team",
+      "bdb": [
+        "r.ci.ab"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "yoked pair, land ploughed by a team",
+          "definition": "Elisha is ploughing behind twelve pairs of oxen. The same measure of working capacity describes an area of cultivated land.",
+          "evidence": [
+            {
+              "ref": "1Ki.19.19",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.19.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.5.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-yoke",
+        "arc-join"
+      ]
+    },
+    {
+      "lemma": "צָמִיד",
+      "pos": "noun",
+      "gloss": "bracelet",
+      "bdb": [
+        "r.ci.ac"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "bracelet",
+          "definition": "The servant places two gold bands on Rebekah’s arms. The ornaments are distinguished from the ring put on her nose.",
+          "evidence": [
+            {
+              "ref": "Gen.24.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.24.47",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.16.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צָמַד",
+      "pos": "verb",
+      "gloss": "attach, fasten",
+      "bdb": [
+        "r.ci.aa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "attach oneself",
+          "senses": [
+            {
+              "gloss": "attach oneself",
+              "definition": "Israel attaches itself to Baal Peor, eating the sacrifices and bowing down.",
+              "evidence": [
+                {
+                  "ref": "Num.25.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.25.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.106.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be fastened",
+          "senses": [
+            {
+              "gloss": "be fastened",
+              "definition": "Joab’s sword is fastened at his waist.",
+              "evidence": [
+                {
+                  "ref": "2Sa.20.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "frame, join together",
+          "senses": [
+            {
+              "gloss": "frame, join together",
+              "definition": "In the accusation of Psalm 50 the mouth gives itself to evil and the tongue puts deceit together.",
+              "evidence": [
+                {
+                  "ref": "Psa.50.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-yoke",
+        "arc-join"
+      ]
+    },
+    {
+      "lemma": "צָמִיד",
+      "pos": "noun",
+      "gloss": "fastened cover",
+      "bdb": [
+        "r.ci.ad"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "fastened cover",
+          "definition": "A vessel without a cover bound down upon it stands open to defilement.",
+          "evidence": [
+            {
+              "ref": "Num.19.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-yoke",
+        "arc-join"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-yoke",
+      "lang": "akk",
+      "form": "ṣamādu",
+      "translit": "ṣamādu",
+      "gloss": "harness, tie up",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000039870"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    },
+    {
+      "id": "arc-join",
+      "lang": "arc",
+      "form": "צְמַד",
+      "translit": "ṣəmad",
+      "gloss": "join, attach, harness",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "צְמַד R00559, Targum 1 Kings 19:19"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The fastened cover and the bracelet share an apparent idea of binding. Psalm 50 supplies the only hiphil use and its exact image is less certain."
+}
