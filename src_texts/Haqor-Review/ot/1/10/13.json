@@ -66,6 +66,60 @@
       },
       "position": 2,
       "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article": {
+              "bdb": [
+                "p.dx.ai"
+              ],
+              "created": "2026-11-20",
+              "english": "Anamim",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "The Anamim are among the peoples Mizraim fathered.",
+                  "ref": "Gen.10.13",
+                  "role": "defining"
+                },
+                {
+                  "note": "The genealogy repeats the name in the same position among Mizraim's descendants.",
+                  "ref": "1Ch.1.11",
+                  "role": "example"
+                }
+              ],
+              "gloss": "Anamim",
+              "id": "3eanaamiym",
+              "name": "עֲנָמִים",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "The Anamim are a people descended from Mizraim. Both genealogies list them between the Ludim and the Lehabim.",
+              "updated": "2026-11-20"
+            },
+            "article_id": "3eanaamiym",
+            "base": null,
+            "change": "Add a name entry for the Anamim. Leave the root unassigned because neither genealogy establishes a derivation.",
+            "definition": "Anamim, a people descended from Mizraim.",
+            "evidence": "Genesis 10:13 lists the Anamim among Mizraim's descendants. The parallel genealogy in 1 Chronicles 1:11 gives the same sequence."
+          },
+          "word": 0
+        },
+        "evidence": "Mizraim is the subject of יָלַד, “fathered.” The repeated object marker וְאֶת introduces עֲנָמִים between לוּדִים and לְהָבִים, identifying the Anamim as one of the peoples descended from Mizraim. The verse gives no etymology for the name.",
+        "gloss": "the Anamim",
+        "language": "he",
+        "lemma": "עֲנָמִים",
+        "morph": "HNgmpa",
+        "morphology": "Hebrew gentilic noun, masculine plural absolute. The ending ־ִים marks the plural. The word has no prefix or pronominal suffix.",
+        "qualifier": "",
+        "root": "",
+        "segments": "עֲנָמִים",
+        "sense": "The people listed among the descendants of Mizraim."
+      },
+      "position": 5,
+      "surface": "עֲנָמִים"
     }
   ]
 }
