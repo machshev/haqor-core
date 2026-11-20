@@ -389,6 +389,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "yd",
+            "base": "4f31a2b028b8722075962ce08428ac0de7bd30ff1ca534e4510511df892bd49e",
+            "change": "Link the occurrence to word 0 of yd and clarify its existing Genesis 9:2 evidence note with the Hebrew clause.",
+            "definition": "To give something into someone’s hand is to place it under that person’s control.",
+            "evidence": "Genesis 9:2 uses בְּיֶדְכֶם with נִתָּנוּ for the transfer of the creatures into human control. The Hebrew sense hand-power already cites this verse as defining evidence."
+          },
+          "sense": "hand-power",
+          "word": 0
+        },
+        "evidence": "בְּיֶדְכֶם נִתָּנוּ means “into your hand they have been given.” The plural verb refers back to the creatures of land, sky, and sea. Giving them into the addressees’ hand places them under their control.",
+        "gloss": "into your hand",
+        "language": "he",
+        "lemma": "יָד",
+        "morph": "HR/Ncbsc/Sp2mp",
+        "morphology": "The preposition בְּ introduces the singular construct form of יָד, a common noun tagged for both genders. The second-person masculine plural suffix כֶם supplies the possessor, “your.”",
+        "qualifier": "",
+        "root": "יד",
+        "segments": "בְּ/יֶדְ/כֶם",
+        "sense": "power or control over what is given into someone’s hand"
+      },
+      "position": 18,
+      "surface": "בְּיֶדְכֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "ntn",
           "sense": "be-given-into-the",
           "word": 0
