@@ -1,0 +1,187 @@
+{
+  "id": "chadah-rejoice",
+  "root": "חדה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "joy",
+    "worship"
+  ],
+  "gloss": "rejoice, gladden, joy",
+  "summary": "Jethro rejoices at news of Israel’s deliverance. The king’s gladness comes from being in Yahweh’s presence.",
+  "words": [
+    {
+      "lemma": "חָדָה",
+      "bdb": [
+        "h.as.aa"
+      ],
+      "pos": "verb",
+      "gloss": "rejoice, gladden",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rejoice",
+          "senses": [
+            {
+              "gloss": "rejoice",
+              "definition": "Jethro rejoices when he hears how Yahweh delivered Israel from Egypt.",
+              "evidence": [
+                {
+                  "ref": "Exo.18.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.3.6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "gladden",
+          "senses": [
+            {
+              "gloss": "gladden",
+              "definition": "Yahweh makes the king glad with the joy of his presence.",
+              "evidence": [
+                {
+                  "ref": "Psa.21.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶדְוָה",
+      "bdb": [
+        "h.as.ab"
+      ],
+      "pos": "noun",
+      "gloss": "joy",
+      "senses": [
+        {
+          "gloss": "joy",
+          "definition": "Nehemiah tells the people to stop grieving and speaks of the joy of Yahweh as their strength.",
+          "evidence": [
+            {
+              "ref": "Neh.8.10",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ch.16.27"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-chedwetha"
+      ]
+    },
+    {
+      "lemma": "חֶדְוָה",
+      "bdb": [
+        "xh.ab.ae"
+      ],
+      "pos": "noun",
+      "gloss": "joy",
+      "senses": [
+        {
+          "gloss": "joy",
+          "definition": "The returned exiles celebrate the dedication of God’s house with joy.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-chedwetha"
+      ]
+    },
+    {
+      "lemma": "חדי",
+      "pos": "verb",
+      "gloss": "rejoice",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "rejoice",
+          "senses": [
+            {
+              "gloss": "rejoice",
+              "definition": "The shepherd rejoices over finding the lost sheep. Paul tells those who rejoice to share that joy.",
+              "evidence": [
+                {
+                  "ref": "Mat.18.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Rom.12.15"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "חדי"
+    },
+    {
+      "lemma": "חדותא",
+      "pos": "noun",
+      "gloss": "joy",
+      "senses": [
+        {
+          "gloss": "joy",
+          "definition": "Jesus speaks so that his joy may be in the disciples and their joy made full.",
+          "evidence": [
+            {
+              "ref": "Jhn.15.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.13.20"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "syc",
+      "root": "חדי",
+      "cognate_ids": [
+        "arc-chedwetha"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-chedwetha",
+      "lang": "arc",
+      "form": "חֶדְוְתָא",
+      "translit": "ḥeḏwəṯā",
+      "gloss": "joy, rejoicing",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֶדְוְתָא, Targum Psalms 4:8; Targum Deuteronomy 16:10"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The forms filed under the verb meaning “be sharp” require separate analysis. Biblical Aramaic at Ezra 6:16 and the Peshitta furnish independent noun uses."
+}
