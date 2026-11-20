@@ -35,8 +35,14 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "ar-qanasa"
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-qanasa"
       ]
     },
     {
@@ -101,5 +107,22 @@
     }
   ],
   "note": "The Psalm verb is piel תִּכַּנְתִּי, with niphal and piel senses of measuring and establishing. Sibling nouns תֹּכֶן, מַתְכֹּנֶת and תָּכְנִית remain in this root family.",
-  "created": "2026-11-20"
+  "created": "2026-11-20",
+  "cognates": [
+    {
+      "id": "ar-qanasa",
+      "lang": "ar",
+      "form": "قنن",
+      "translit": "qanana",
+      "gloss": "set in order, measure",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book VIII, art. قنن",
+          "note": "Arabic denotes setting a rule or measure."
+        }
+      ]
+    }
+  ]
 }

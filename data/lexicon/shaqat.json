@@ -28,11 +28,31 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "ar-sakata"
           ]
         }
       ]
     }
   ],
   "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20"
+  "created": "2026-11-20",
+  "cognates": [
+    {
+      "id": "ar-sakata",
+      "lang": "ar",
+      "form": "سكت",
+      "translit": "sakata",
+      "gloss": "be silent, still",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book IV, art. سكت",
+          "note": "Arabic denotes silence and stillness."
+        }
+      ]
+    }
+  ]
 }

@@ -28,11 +28,31 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "ar-radima"
           ]
         }
       ]
     }
   ],
   "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20"
+  "created": "2026-11-20",
+  "cognates": [
+    {
+      "id": "ar-radima",
+      "lang": "ar",
+      "form": "ردم",
+      "translit": "radima",
+      "gloss": "sleep heavily",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book III, art. ردم",
+          "note": "Arabic evidence preserves the root consonants and deep-rest sense."
+        }
+      ]
+    }
+  ]
 }

@@ -28,11 +28,31 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "ar-batara"
           ]
         }
       ]
     }
   ],
   "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20"
+  "created": "2026-11-20",
+  "cognates": [
+    {
+      "id": "ar-batara",
+      "lang": "ar",
+      "form": "بتر",
+      "translit": "batara",
+      "gloss": "cut off, sever",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, art. بتر",
+          "note": "Arabic cutting-off sense supports separation."
+        }
+      ]
+    }
+  ]
 }

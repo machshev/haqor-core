@@ -35,6 +35,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "ar-sakaba"
           ]
         }
       ]
@@ -109,5 +112,22 @@
     }
   ],
   "note": "The root family includes the verb מָסַךְ, mixed drink מִמְסָךְ and the related adjective מִסְכֵּן. Psalm 75.9 uses מֶסֶךְ in the cup image, with Pro.9.2 and Isa.5.22 defining the mixed drink sense.",
-  "created": "2026-11-20"
+  "created": "2026-11-20",
+  "cognates": [
+    {
+      "id": "ar-sakaba",
+      "lang": "ar",
+      "form": "سكب",
+      "translit": "sakaba",
+      "gloss": "pour out",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book IV, art. سكب",
+          "note": "Arabic pouring sense bears on poured drink."
+        }
+      ]
+    }
+  ]
 }
