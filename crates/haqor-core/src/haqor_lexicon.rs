@@ -1120,19 +1120,34 @@ impl Checker<'_> {
             self.fault(&at, format_args!("name `{}` must be Hebrew", name.name));
         }
         self.text(&at, "english", &name.english);
-        if !is_root(&name.root) {
-            self.fault(&at, format_args!("root `{}` must be a root key", name.root));
-        }
-        let mut roots = HashSet::from([name.root.as_str()]);
-        for root in &name.additional_roots {
-            if !is_root(root) {
-                self.fault(
-                    &at,
-                    format_args!("additional root `{root}` must be a root key"),
-                );
+        // A draft can record a real name and its bearers before etymology is
+        // established. Empty `root` and `entry` are the explicit unknown-
+        // etymology marker. Do not allow partial links or inherited root
+        // metadata in that form.
+        let unassigned =
+            name.status == Status::Draft && name.root.is_empty() && name.entry.is_empty();
+        if unassigned {
+            if !name.additional_roots.is_empty()
+                || name.word.is_some()
+                || !name.cognate_ids.is_empty()
+            {
+                self.fault(&at, "an unassigned name draft cannot contain root links");
             }
-            if !roots.insert(root) {
-                self.fault(&at, format_args!("root `{root}` listed twice"));
+        } else {
+            if !is_root(&name.root) {
+                self.fault(&at, format_args!("root `{}` must be a root key", name.root));
+            }
+            let mut roots = HashSet::from([name.root.as_str()]);
+            for root in &name.additional_roots {
+                if !is_root(root) {
+                    self.fault(
+                        &at,
+                        format_args!("additional root `{root}` must be a root key"),
+                    );
+                }
+                if !roots.insert(root) {
+                    self.fault(&at, format_args!("root `{root}` listed twice"));
+                }
             }
         }
         self.status(&at, name.status, &name.reviewed, &name.updated);
@@ -1141,40 +1156,45 @@ impl Checker<'_> {
         }
         self.text(&at, "gloss", &name.gloss);
         self.text(&at, "summary", &name.summary);
-        match entries.iter().find(|e| e.id == name.entry) {
-            None => self.fault(
-                &at,
-                format_args!("`entry` names no root entry `{}`", name.entry),
-            ),
-            Some(entry) => {
-                let roots_match = entry.root == name.root
-                    || entry
-                        .words
-                        .iter()
-                        .any(|w| w.root.as_deref() == Some(&name.root));
-                if !roots_match {
-                    self.fault(
-                        &at,
-                        format_args!(
-                            "root `{}` is not the root of entry `{}`",
-                            name.root, entry.id
-                        ),
-                    );
-                }
-                if let Some(word) = &name.word
-                    && !entry.words.iter().any(|w| &w.lemma == word)
-                {
-                    self.fault(
-                        &at,
-                        format_args!("`word` `{word}` is no word of `{}`", entry.id),
-                    );
-                }
-                for id in &name.cognate_ids {
-                    if !entry.cognates.iter().any(|c| c.id.as_deref() == Some(id)) {
+        if unassigned {
+            // There is no root entry to cross-check until the etymology is
+            // researched. The name, bearer and evidence checks still apply.
+        } else {
+            match entries.iter().find(|e| e.id == name.entry) {
+                None => self.fault(
+                    &at,
+                    format_args!("`entry` names no root entry `{}`", name.entry),
+                ),
+                Some(entry) => {
+                    let roots_match = entry.root == name.root
+                        || entry
+                            .words
+                            .iter()
+                            .any(|w| w.root.as_deref() == Some(&name.root));
+                    if !roots_match {
                         self.fault(
                             &at,
-                            format_args!("names no cognate `{id}` of `{}`", entry.id),
+                            format_args!(
+                                "root `{}` is not the root of entry `{}`",
+                                name.root, entry.id
+                            ),
                         );
+                    }
+                    if let Some(word) = &name.word
+                        && !entry.words.iter().any(|w| &w.lemma == word)
+                    {
+                        self.fault(
+                            &at,
+                            format_args!("`word` `{word}` is no word of `{}`", entry.id),
+                        );
+                    }
+                    for id in &name.cognate_ids {
+                        if !entry.cognates.iter().any(|c| c.id.as_deref() == Some(id)) {
+                            self.fault(
+                                &at,
+                                format_args!("names no cognate `{id}` of `{}`", entry.id),
+                            );
+                        }
                     }
                 }
             }
@@ -2166,6 +2186,17 @@ mod tests {
         assert!(is_name_entry(NAME));
         assert!(!is_name_entry(ENTRY));
         assert_eq!(check_name(NAME).unwrap().names, 1);
+    }
+
+    #[test]
+    fn accepts_a_draft_name_with_explicitly_unknown_etymology() {
+        let json = NAME
+            .replace(r#""root": "נפש""#, r#""root": """#)
+            .replace(r#""entry": "nephesh""#, r#""entry": """#)
+            .replace("        \"word\": \"נֶפֶשׁ\",\n", "")
+            .replace(r#", "additional_roots": ["צדק"]"#, "")
+            .replace(r#", "cognate_ids": ["lane"]"#, "");
+        assert_eq!(check_name(&json).unwrap().names, 1);
     }
 
     #[test]

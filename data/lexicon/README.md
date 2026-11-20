@@ -148,9 +148,9 @@ cites what ties the name to it.
 | `id` | Kebab case ASCII (`shiphrah`). The file is `names/<id>.json`. |
 | `name` | The pointed name as the text spells it (`שִׁפְרָה`). |
 | `english` | The name in English (`Shiphrah`). |
-| `root` | The root key it is formed from: the root entry's own, or one of its words' `root`s. |
+| `root` | The root key it is formed from: the root entry's own, or one of its words' `root`s. A draft whose etymology is unknown leaves this and `entry` empty. |
 | `additional_roots` | Other root keys in a compound name, in name order. These need not have entries yet; `root` and `entry` identify the linked root entry. |
-| `entry` | The `id` of that root's entry, which must exist. |
+| `entry` | The `id` of that root's entry, which must exist. An unassigned draft leaves it empty and also omits `word`, `additional_roots` and `cognate_ids`. |
 | `word` | Optional: the `lemma` of the root entry's word the name is, where it is one (Shiphrah is the noun שִׁפְרָה, "fairness"). |
 | `status`, `reviewed`, `updated` | As for an entry. |
 | `bdb` | Optional: the BDB keys whose tokens are the name. A key is in one entry or name only. |
